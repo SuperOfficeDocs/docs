@@ -1,0 +1,94 @@
+### YamlMime:SubCategory
+
+title: Cloud document integrations
+summary: ""
+
+metadata:
+  title: Cloud document integrations
+  description: ""
+  ms.topic: landing-page
+  ms.date: 06.20.2022
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Learn about cloud integrations
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Introduction
+            url: overview.md
+            
+  # Card
+  - title: SharePoint documents
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Introduction
+            url: sharepoint-documents/index.md
+          - text: Permissions
+            url: sharepoint-documents/permissions-in-sharepoint.md
+      - linkListType: reference
+        links:
+          - text: Requirements
+            url: sharepoint-documents/requirements.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up SharePoint site and libraries
+            url: sharepoint-documents/set-up.md
+          - text: Configure settings in SuperOffice Admin
+            url: sharepoint-documents/configure-superoffice.md
+          - text: Set up SharePoint permissions for documents
+            url: sharepoint-documents/configure-permissions-documents.md
+          - text: Set up SharePoint permissions for templates
+            url: sharepoint-documents/configure-permissions-templates.md
+          - text: Permissions for SuperOffice integration application
+            url: sharepoint-documents/permissions-app.md
+          - text: Troubleshooting
+            url: sharepoint-documents/troubleshooting.md
+
+  # Card
+  - title: Google Workspace document integration
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Introduction
+            url: g-suite/index.md
+          - text: Security
+            url: g-suite/security.md
+      - linkListType: reference
+        links:
+          - text: Requirements
+            url: g-suite/requirements.md
+      - linkListType: how-to-guide
+        links:
+          - text: Quick start
+            url: g-suite/getting-started.md
+          - text: Set up
+            url: g-suite/set-up.md
+          - text: Configure
+            url: g-suite/configure.md
+
+# Card
+  - title: Microsoft 365 document integration (legacy)
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Introduction
+            url: legacy/office-365/index.md
+          - text: Security
+            url: legacy/office-365/security.md
+      - linkListType: reference
+        links:
+          - text: Requirements
+            url: legacy/office-365/requirements.md
+      - linkListType: how-to-guide
+        links:
+          - text: Prepare SharePoint for set-up
+            url: legacy/office-365/prepare-sharepoint.md
+          - text: Set up
+            url: legacy/office-365/set-up.md
+          - text: Troubleshooting
+            url: legacy/office-365/troubleshooting.md
