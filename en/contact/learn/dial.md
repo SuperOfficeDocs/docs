@@ -1,24 +1,36 @@
 ---
-uid: help-en-phone-preferences
-title: Phone preferences
-description: Phone preferences
+uid: help-en-contact-dial
+title: Dialling contacts
+description: Dialling contacts; Phone preferences
 author: SuperOffice RnD
-so.date: 06.29.2022
+so.date: 09.22.2023
 keywords: diary, follow-up, phone, call, dial
 so.topic: howto
 language: en
 ---
 
-# Phone preferences
+# Dial contacts
 
-You can dial out from SuperOffice CRM in one of the following ways:
+If your IP phone solution is correctly configured, you can call a contact directly from SuperOffice CRM in one of the following ways:
 
 * Click a telephone number in the Company screen
 * Click ![icon][img1] in a dialog.
 * Right-click a person in a section tab and selecting **Call *name***.
-* [Dial contacts][1].
+* Dial contacts.
 
-Phone preferences are handled differently in the Windows and Web clients. Learn about phone preferences for Windows and Web below.
+## Dial a contact from the Follow-up and Document dialogs
+
+You do this using the telephone button in, for example, the **Follow-up** and **Document** dialogs:
+
+1. Open a follow-up or document.
+2. Select the required contact in the **Contact** field in the dialog.
+3. Click the button next to the contact field ![icon][img1]. A list of numbers for the selected contact is displayed.
+4. Select the number you want to call. The contact is then dialled.
+
+## Call from section tabs (to contacts, selection members, stakeholders, participants)
+
+1. Go to a section tab containing contacts.
+2. Click a phone number in a column containing phone numbers. The contact is then dialled.
 
 ## Technical requirements
 
@@ -43,8 +55,7 @@ If IP phone, Skype or FaceTime is installed, you can make phone calls from Super
 [Template variables][2] can also be used in the phone parameters.
 
 <!-- Referenced links -->
-[1]: dial.md
-[2]: ../../../document/learn/template-variables.md
+[2]: ../../document/learn/template-variables.md
 
 <!-- Referenced images -->
-[img1]: ../../../../../common/icons/phone.png
+[img1]: ../../../../common/icons/phone.png
