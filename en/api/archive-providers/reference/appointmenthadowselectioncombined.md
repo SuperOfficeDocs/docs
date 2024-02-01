@@ -1,30 +1,29 @@
 ---
-uid: ConfigurableArchiveAppointment
-title: ConfigurableArchiveAppointment
-description: This is the archive Provider for the Configurable appointment Archive.
-keywords: ConfigurableArchiveAppointment archive provider
+uid: AppointmenthadowSelectionCombined
+title: AppointmenthadowSelectionCombined
+description: Implementation of the provider for the combined selection
+keywords: AppointmenthadowSelectionCombined archive provider
 so.generated: true
 so.topic: reference
 so.envir: onsite, online
 ---
 
-# "ConfigurableArchiveAppointment"
+# "AppointmenthadowSelectionCombined"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ConfigurableArchiveAppointmentProvider">SuperOffice.CRM.ArchiveLists.ConfigurableArchiveAppointmentProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
-This is the archive Provider for the Configurable appointment Archive.
+Implementation of the provider for the combined selection
 
 ## Supported Entities
 | Name | Description |
 | ---- | ----- |
-|"appointment"|Follow-ups|
+|"appointment"|Appointment|
 
 ## Supported Columns
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|participating|bool|Participating?: Am I among the participants in a meeting?|  |
 |completed|bool|Completed: Displays a checkbox showing if an appointment is completed| x |
 |icon|listAny|Category: Displays the icon for an activity type| x |
 |date|date|Date: Displays start date of a follow-up / sale date of a sale| x |
@@ -121,11 +120,11 @@ This is the archive Provider for the Configurable appointment Archive.
 |contact/postAddress/city|string|Postal address - City: This criterion corresponds to the City field on the Company card.| x |
 |contact/postAddress/zip|string|Postal address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
 |contact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
+|contact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
-|contact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |contact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
 |contact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
 |contact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
@@ -225,11 +224,11 @@ This is the archive Provider for the Configurable appointment Archive.
 |contact/NumberOfSales|int|Number of sales|  |
 |contact/NumberOfSalesInPeriod|int|Number of sales in last 90 days|  |
 |contact/NumberOfNotCompletedSales|int|Number of non-completed sales|  |
+|contact/NumberOfNotCompletedSalesInPeriod|int|Number of non-completed sales in last 90 days|  |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
-|contact/NumberOfNotCompletedSalesInPeriod|int|Number of non-completed sales in last 90 days|  |
 |contact/LastSale|date|Date of last sale|  |
 |contact/LastCompletedSale|date|Date of last completed sale|  |
 |contact/LastDoBySale|date|Date of last non-completed sale|  |
@@ -329,11 +328,11 @@ This is the archive Provider for the Configurable appointment Archive.
 |person/personAddress/city|string|Contact address - City: This criterion corresponds to the City field on the Company card.| x |
 |person/personAddress/zip|string|Contact address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
 |person/personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
+|person/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
-|person/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |person/personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
 |person/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
 |person/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
@@ -433,11 +432,11 @@ This is the archive Provider for the Configurable appointment Archive.
 |person/correspondingAssociate/assocTooltip|string|Description : Description|  |
 |person/correspondingAssociate/assocType|listAny|Type: Type of user: associate, external user, system user, anonymous account| x |
 |person/correspondingAssociate/ejUserId|int|Service user ID: The database ID of a Service user|  |
+|person/correspondingAssociate/simultaneousEjUser|bool|Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
-|person/correspondingAssociate/simultaneousEjUser|bool|Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
 |person/correspondingAssociate/ejDisplayName|string|Nick name: User's nick name in Service| x |
 |person/correspondingAssociate/ejStatus|int|Service status: Status for Service user: Normal; Unavailable / holiday; Deleted; Read-only|  |
 |person/correspondingAssociate/credentialType| *None* |Auth. type: What type of credentials to use when this user logs in| x |
@@ -537,11 +536,11 @@ This is the archive Provider for the Configurable appointment Archive.
 |project/projectUdef/SuperOffice:6|bool|projectcheckbox| x |
 |project/projectUdef/SuperOffice:7|listAny|projectdropdownlistbox| x |
 |project/projectUdef/SuperOffice:8|decimal|projectdecimal| x |
+|project/projectUdef/SuperOffice:9|int|page1saleandmarketing| x |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
-|project/projectUdef/SuperOffice:9|int|page1saleandmarketing| x |
 |project/projectUdef/SuperOffice:10|int|page1saleandadmin| x |
 |project/NumberOfActivities|int|Number of activities|  |
 |project/NumberOfActivitiesInPeriod|int|Number of activities in last 90 days|  |
@@ -641,11 +640,11 @@ This is the archive Provider for the Configurable appointment Archive.
 |sale/associate/assocTooltip|string|Description : Description|  |
 |sale/associate/assocType|listAny|Type: Type of user: associate, external user, system user, anonymous account| x |
 |sale/associate/ejUserId|int|Service user ID: The database ID of a Service user|  |
+|sale/associate/simultaneousEjUser|bool|Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
-|sale/associate/simultaneousEjUser|bool|Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
 |sale/associate/ejDisplayName|string|Nick name: User's nick name in Service| x |
 |sale/associate/ejStatus|int|Service status: Status for Service user: Normal; Unavailable / holiday; Deleted; Read-only|  |
 |sale/associate/credentialType| *None* |Auth. type: What type of credentials to use when this user logs in| x |
@@ -700,11 +699,16 @@ This is the archive Provider for the Configurable appointment Archive.
 |appointment/agenda|positiveString|Agenda| x |
 |appointment/agendaHtml| *None* |!!Agenda Html| x |
 |appointment/isConverted| *None* |!!Is Converted|  |
+|selectionId|int|Selection ID: The database ID of the selection|  |
+|selectionMemberId|int|Selection member ID: The database ID of the selection member record|  |
+|rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
+|targetTableNumber|int|TargetTableNumber: TargetTableNumber| x |
+|targetRecordId|int|TargetRecordId: TargetRecordId| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveAppointment?$select=duration,contact/category,contact/email/emailLastBounce,contact/contactUdef/SuperOffice:9,contact/contactExtra/x_contact_dropdown
+GET /api/v1/archive/AppointmenthadowSelectionCombined?$select=associateId,contact/updatedBy,contact/NumberOfNotCompletedTicketsInPeriod,person/personDirectFax/description,person/isMailingRecipient
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
