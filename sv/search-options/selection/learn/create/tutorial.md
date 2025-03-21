@@ -1,5 +1,4 @@
 ---
-uid: help-sv-using-status-monitors-in-dynamic-selections-redirect
-date: 03.21.2025
+uid: help-sv-tutorial-selection-create-redirect
 redirect_url: https://docs.superoffice.com/sv/search-options/selection/learn/create.html
 ---
