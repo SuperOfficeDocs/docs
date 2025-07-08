@@ -67,11 +67,11 @@ After version 8.1, WebTools and MacLink are no longer bundled with the actual in
 * Offers advice about WebTools and MacLink upgrades available to the Web users
 
 <!-- Referenced links -->
-[1]: ../onsite/install/iis/index.md
+[1]: ../../onsite/install/iis/index.md
 [2]: system-requirements.md
 
 <!-- Referenced images -->
-[img1]: ../../media/loc/en/webtools/diagram-open-document-10.2.11.png
-[img2]: ../../media/loc/en/webtools/diagram-open-document-10.2.10.png
-[img3]: ../../media/loc/en/webtools/diagram-start-webtools-10.2.11.png
-[img4]: ../../media/loc/en/webtools/diagram-start-webtools-10.2.10.png
+[img1]: ../../../media/loc/en/webtools/diagram-open-document-10.2.11.png
+[img2]: ../../../media/loc/en/webtools/diagram-open-document-10.2.10.png
+[img3]: ../../../media/loc/en/webtools/diagram-start-webtools-10.2.11.png
+[img4]: ../../../media/loc/en/webtools/diagram-start-webtools-10.2.10.png

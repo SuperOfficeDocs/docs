@@ -71,7 +71,7 @@ Since SuperOffice 9 it is possible to suppress the WebTools installation and upg
 ![Install and upgrade dialog -screenshot][img5]
 
 <!-- Referenced links -->
-[1]: ../api/config/downloads.md
+[1]: ../../api/config/downloads.md
 
 <!-- Referenced images -->
 [img1]: media/2018-06-11.png
