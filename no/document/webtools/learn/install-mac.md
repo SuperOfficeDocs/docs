@@ -63,10 +63,10 @@ Konfigurer innstillingene slik at de passer til dine behov:
 * [Connect your email, document and diary][2]
 
 <!-- Referenced links -->
-[1]: ../../email/inbox/learn/setup.md
-[2]: ../../learn/getting-started/connect-email-doc/index.md
+[1]: ../../../email/inbox/learn/setup.md
+[2]: ../../../learn/getting-started/connect-email-doc/index.md
 
 <!-- Referenced images -->
-[img2]: ../../../media/loc/en/webtools/webtools-mac-install.jpg
-[img3]: ../../../media/loc/en/webtools/webtools-mac-login-items.jpg
-[img4]: ../../../media/loc/en/webtools/webtools-mac-preferences.jpg
+[img2]: ../../../../media/loc/en/webtools/webtools-mac-install.jpg
+[img3]: ../../../../media/loc/en/webtools/webtools-mac-login-items.jpg
+[img4]: ../../../../media/loc/en/webtools/webtools-mac-preferences.jpg
