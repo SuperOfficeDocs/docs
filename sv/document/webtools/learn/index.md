@@ -86,11 +86,11 @@ Dubbelklicka på SuperOffice-ugglan i din verktygsfält för att öppna WebTools
 <!-- Referenced links -->
 [2]: install.md
 [3]: https://community.superoffice.com/no/support-faqs/faq/what-to-do-when-superoffice-archiving-button-has-disappeared-from-outlook/
-[4]: ../../email/learn/index.md
-[5]: ../../document/learn/create.md
-[7]: ../../email/inbox/learn/index.md
-[8]: ../../learn/getting-started/connect-email-doc/index.md
+[4]: ../../../email/learn/index.md
+[5]: ../../../document/learn/create.md
+[7]: ../../../email/inbox/learn/index.md
+[8]: ../../../learn/getting-started/connect-email-doc/index.md
 [9]: https://community.superoffice.com/en/product-releases/nyheter/produkt/document-locking/
-[10]: ../../../en/ui/soprotocol/index.md
-[11]: ../../admin/lists/learn/create-email-template.md
+[10]: ../../../../en/ui/soprotocol/index.md
+[11]: ../../../admin/lists/learn/create-email-template.md
 [12]: https://cs.superoffice.com/scripts/customer.fcgi?_sf=0&custSessionKey=&customerLang=en&noCookies=true&action=viewKbEntry&id=112136

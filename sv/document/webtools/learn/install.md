@@ -63,6 +63,6 @@ Vi arbetar ständigt med att förbättra våra program, inklusive WebTools. När
 [1]: install-mac.md
 
 <!-- Referenced images -->
-[img2]: ../../../media/loc/en/webtools/download-webtools.png
-[img3]: ../../../media/loc/en/webtools/webtools-pc.png
-[img4]: ../../../media/loc/en/webtools/webtools-email-client.png
+[img2]: ../../../../media/loc/en/webtools/download-webtools.png
+[img3]: ../../../../media/loc/en/webtools/webtools-pc.png
+[img4]: ../../../../media/loc/en/webtools/webtools-email-client.png
