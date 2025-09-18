@@ -1,13 +1,17 @@
 ---
 uid: help-de-managing-external-users
 title: Externe Benutzer verwalten
-description: Externe Benutzer verwalten
-author: SuperOffice RnD
+description: Externe Benutzer in Einstellungen und Verwaltung oder in Verbindung mit Audience oder Anwendungen von Drittanbietern hinzufügen und entfernen.
+keywords: externer Benutzer
+author: SuperOffice Product and engineering
 date: 06.29.2022
-keywords: Firma
 content_type: howto
-language: de
+functional_right: Verwaltung externer Benutzer zulassen
+audience: settings
+audience_tooltip: Einstellungen und Verwaltung
 deployment: onsite
+language: de
+redirect_from: /de/onsite/win-client/learn/managing-external-users
 ---
 
 # Externe Benutzer verwalten
@@ -24,7 +28,7 @@ Wenn Ihnen in SuperOffice Einstellungen und Verwaltung die Berechtigung **Verwal
     * Verwenden Sie dazu die [Verlaufsliste][1] oder die Navigatorsuche.
     * Doppelklicken Sie auf eine Firma in einem Suchergebnis oder in einer Selektion.
 
-2. Klicken Sie auf ![Symbol][img1] **Aufgabe** > **Externe Benutzer**. Das Dialogfeld **Externe Benutzer** wird geöffnet.
+2. Klicken Sie auf **Aufgabe** > **Externe Benutzer**. Das Dialogfeld **Externe Benutzer** wird geöffnet.
 
 3. Befolgen Sie eine der folgenden Verfahren.
 
@@ -50,6 +54,3 @@ Mit dem Listenfeld **Anzeigen** im unteren Teil rechts im Dialogfeld können Sie
 
 <!-- Referenced links -->
 [1]: ../../../learn/basics/history.md
-
-<!-- Referenced images -->
-[img1]: ../../../../media/icons/btn-menu.png
