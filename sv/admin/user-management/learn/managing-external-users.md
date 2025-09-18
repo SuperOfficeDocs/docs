@@ -1,13 +1,17 @@
 ---
 uid: help-sv-managing-external-users
-title: hantera externa användare
-description: hantera externa användare
-author: SuperOffice RnD
+title: Hantera externa användare
+description: Lägga till och ta bort externa användare i Inställningar och underhåll eller i samband med Audience eller program från tredje part.
+keywords: extern användare
+author: SuperOffice Product and engineering
 date: 06.29.2022
-keywords: företag
 content_type: howto
-language: sv
+functional_right: Tillåt administration av externa användare
+audience: settings
+audience_tooltip: Inställningar och underhåll
 deployment: onsite
+language: sv
+redirect_from: /sv/onsite/win-client/learn/managing-external-users
 ---
 
 # Hantera externa användare
@@ -24,7 +28,7 @@ Om du har tilldelats behörigheten **Tillåt administration av externa användar
     * Genom att använda [historiklistan][1] eller navigatorsök.
     * Genom att dubbelklicka på ett företag i ett sökresultat eller i ett urval.
 
-2. Klicka på ![ikon][img1] **Uppgift** > **Externa användare**. Dialogrutan **Externa användare** öppnas.
+2. Klicka på **Uppgift** > **Externa användare**. Dialogrutan **Externa användare** öppnas.
 
 3. Använd en av metoderna nedan.
 
@@ -50,6 +54,3 @@ I listrutan **Visa** nede till höger i dialogrutan kan du filtrera listan över
 
 <!-- Referenced links -->
 [1]: ../../../learn/basics/history.md
-
-<!-- Referenced images -->
-[img1]: ../../../../media/icons/btn-menu.png

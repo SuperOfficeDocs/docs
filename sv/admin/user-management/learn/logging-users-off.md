@@ -2,18 +2,22 @@
 uid: help-sv-logging-users-off
 title: Logga ut användare
 description: Logga ut användare
-author: SuperOffice RnD
-date: 06.29.2022
-keywords: Inställningar och underhåll, user
+keywords: logga ut, Logga ut användaren, Inloggad på Windowsklient
+author: SuperOffice Product and Engineering
+date: 09.17.2025
 content_type: howto
+audience: settings
+audience_tooltip: Inställningar och underhåll
+deployment: onsite
 language: sv
+redirect_from: /sv/onsite/win-client/learn/logging-users-off
 ---
 
 # Logga ut användare (lokalt)
 
 Om en användare nekas åtkomst till SuperOffice CRM, till exempel efter en programkrasch, kan administratören logga ut användaren i Inställningar och underhåll, så att användaren kan logga in igen som vanligt.
 
-1. [!include[Click Users](../../../admin/user-management/learn/includes/goto-users.md)]
+1. [!include[Click Users](includes/goto-users.md)]
 
 2. Välj fliken **Medarbetare**.
 
@@ -21,13 +25,9 @@ Om en användare nekas åtkomst till SuperOffice CRM, till exempel efter en prog
 
 4. Välj **Inloggad på Windowsklient** i listrutan under listan över användare.
 
-5. [!include[Select user](../../../admin/user-management/learn/includes/select-user.md)]
+5. [!include[Select user](includes/select-user.md)]
 
 6. Klicka på knappen **Uppgift** och välj **Logga ut användaren**. Användaren loggas ut.
 
 > [!NOTE]
 > Om användaren inte är inloggad eller om något annat än **Inloggad på Windowsklient** är markerat i listrutan **Visa** inaktiveras den här knappen.
-
-<!-- Referenced links -->
-
-<!-- Referenced images -->
