@@ -1,13 +1,17 @@
 ---
 uid: help-no-managing-external-users
-title: håndtere eksterne brukere
-description: håndtere eksterne brukere
-author: SuperOffice RnD
+title: Håndtere eksterne brukere
+description: Legge til og fjerne eksterne brukere i Innstillinger og vedlikehold eller i forbindelse med bruk av Audience eller tredjepartsapplikasjoner.
+keywords: ekstern bruker
+author: SuperOffice Product and engineering
 date: 06.29.2022
-keywords: firma
 content_type: howto
-language: no
+functional_right: Tillat administrasjon av eksterne brukere
+audience: settings
+audience_tooltip: Innstillinger og vedlikehold
 deployment: onsite
+language: no
+redirect_from: /no/onsite/win-client/learn/managing-external-users
 ---
 
 # Håndtere eksterne brukere
@@ -24,7 +28,7 @@ Hvis du er tildelt rettigheten **Tillat administrasjon av eksterne brukere** i I
     * Ved hjelp av [historikklisten][1] eller navigatorsøk.
     * Ved å dobbeltklikke på et firma i et søkeresultat eller i et utvalg.
 
-2. Klikk på ![ikon][img1] **Oppgave** > **Eksterne brukere**. Dialogboksen **Eksterne brukere** vises.
+2. Klikk på **Oppgave** > **Eksterne brukere**. Dialogboksen **Eksterne brukere** vises.
 
 3. Følg en av fremgangsmåtene nedenfor.
 
@@ -50,6 +54,3 @@ Med listeboksen **Vis** nede til høyre i dialogboksen kan du filtrere listen ov
 
 <!-- Referenced links -->
 [1]: ../../../learn/basics/history.md
-
-<!-- Referenced images -->
-[img1]: ../../../../media/icons/btn-menu.png
