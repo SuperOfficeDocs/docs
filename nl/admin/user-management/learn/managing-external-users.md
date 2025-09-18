@@ -1,13 +1,17 @@
 ---
 uid: help-nl-managing-external-users
-title: externe gebruikers beheren
-description: externe gebruikers beheren
-author: SuperOffice RnD
+title: Externe gebruikers beheren
+description: Externe gebruikers toevoegen en verwijderen in Instellingen en onderhoud of in combinatie met Audience of toepassingen van derden.
+keywords: externe gebruiker
+author: SuperOffice Product and engineering
 date: 06.29.2022
-keywords: bedrijf
 content_type: howto
-language: nl
+functional_right: Beheren van externe gebruikers toestaan
+audience: settings
+audience_tooltip: Instellingen en onderhoud
 deployment: onsite
+language: nl
+redirect_from: /nl/onsite/win-client/learn/managing-external-users
 ---
 
 # Externe gebruikers beheren
@@ -24,7 +28,7 @@ Als in Instellingen en onderhoud het recht **Beheren van externe gebruikers toes
     * Door de [historielijst][1] of navigator zoeken te gebruiken.
     * Dubbelklik op een bedrijf in een zoekresultaat of in een selectie.
 
-2. Klik op ![pictogram][img1] **Taak** > **Externe gebruikers**. Het dialoogvenster **Externe gebruikers** wordt weergegeven.
+2. Klik op **Taak** > **Externe gebruikers**. Het dialoogvenster **Externe gebruikers** wordt weergegeven.
 
 3. Volg een van de onderstaande procedures.
 
@@ -50,6 +54,3 @@ Door middel van de keuzelijst **Weergeven** rechtsonder in het dialoogvenster ku
 
 <!-- Referenced links -->
 [1]: ../../../learn/basics/history.md
-
-<!-- Referenced images -->
-[img1]: ../../../../media/icons/btn-menu.png
