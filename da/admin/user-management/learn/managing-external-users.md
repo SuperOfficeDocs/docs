@@ -1,13 +1,17 @@
 ---
 uid: help-da-managing-external-users
-title: håndtering af eksterne brugere
-description: håndtering af eksterne brugere
-author: SuperOffice RnD
+title: Håndtering af eksterne brugere
+description: Tilføj og fjern eksterne brugere i Indstillinger og vedligeholdelse eller i forbindelse med Audience eller tredjepartsprogrammer.
+keywords: ekstern bruger
+author: SuperOffice Product and engineering
 date: 06.29.2022
-keywords: firma
 content_type: howto
-language: da
+functional_right: Tillad administration af eksterne brugere
+audience: settings
+audience_tooltip: Indstillinger og vedligeholdelse
 deployment: onsite
+language: da
+redirect_from: /da/onsite/win-client/learn/managing-external-users
 ---
 
 # Håndtering af eksterne brugere
@@ -24,7 +28,7 @@ Hvis du er tildelt rettigheden **Tillad administration af eksterne brugere** i I
     * Ved at bruge [historiklisten][1] eller navigatorsøg.
     * Ved at dobbeltklikke på et firma i et søgeresultat eller i et udvalg.
 
-2. Klik på ![ikonet][img1] **Opgave** > **Eksterne brugere**. Dialogboksen **Eksterne brugere** vises.
+2. Klik på **Opgave** > **Eksterne brugere**. Dialogboksen **Eksterne brugere** vises.
 
 3. Følg en af fremgangsmåderne nedenfor.
 
@@ -50,6 +54,3 @@ Med rullemenuen **Vis** nederst til højre i dialogboksen kan du filtrere listen
 
 <!-- Referenced links -->
 [1]: ../../../learn/basics/history.md
-
-<!-- Referenced images -->
-[img1]: ../../../../media/icons/btn-menu.png
