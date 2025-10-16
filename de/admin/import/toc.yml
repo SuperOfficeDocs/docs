@@ -1,19 +1,19 @@
 items:
-  - name: Überblick
+  - name: Einführung
     href: index.md
   - name: Aus Excel importieren
-    href: import-from-excel.md
+    href: from-excel.md
   - name: Aus Outlook importieren
-    href: import-from-outlook.md
+    href: from-outlook.md
   - name: Von Mac-Adressbuch importieren
-    href: import-from-mac-address-book.md
+    href: from-mac-address-book.md
   - name: Aus Gmail importieren
-    href: import-from-gmail.md
+    href: from-gmail.md
   - name: Aus ERP importieren
-    href: import-from-erp.md
+    href: from-erp.md
   - name: Produkte aus Excel importieren
-    href: import-products-from-excel.md
+    href: products-from-excel.md
   - name: Importdatei erstellen
-    href: create-import-file.md
+    href: create-spreadsheet.md
   - name: Importeinstellungen konfigurieren
-    href: configure-import-settings.md
+    href: settings.md

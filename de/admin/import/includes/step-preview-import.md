@@ -12,7 +12,7 @@
     | leer | Keine Aktualisierung. |
 
 <!-- Referenced images -->
-[img1]: ../../../../../media/icons/admin/import-preview-icon-company-new.png
-[img2]: ../../../../../media/icons/admin/import-preview-icon-company-changed.png
-[img3]: ../../../../../media/icons/admin/import-preview-icon-person-new.png
-[img4]: ../../../../../media/icons/admin/import-preview-icon-person-changed.png
+[img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
+[img2]: ../../../../media/icons/admin/import-preview-icon-company-changed.png
+[img3]: ../../../../media/icons/admin/import-preview-icon-person-new.png
+[img4]: ../../../../media/icons/admin/import-preview-icon-person-changed.png

@@ -2,4 +2,4 @@
 Klicken Sie auf **Importeinstellungen konfigurieren** und [Importeinstellungen anpassen][1].
 
 <!-- Referenced links -->
-[1]: ../configure-import-settings.md
+[1]: ../settings.md
