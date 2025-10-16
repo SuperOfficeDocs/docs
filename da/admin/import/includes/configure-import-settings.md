@@ -2,4 +2,4 @@
 Klik på **Konfigurer importindstillinger**, og [juster importindstillingerne][1].
 
 <!-- Referenced links -->
-[1]: ../configure-import-settings.md
+[1]: ../settings.md
