@@ -2,12 +2,17 @@
 uid: help-sv-import
 title: Import
 description: Import
-author: SuperOffice RnD
-date: 02.22.2023
 keywords: importera
+author: SuperOffice Product and Engineering
+date: 02.22.2023
+version: 10.5
 content_type: concept
+category: Settings and maintenance
+topic: Import
 audience: settings
 audience_tooltip: Settings and maintenance
+index: true
+redirect_from: /sv/admin/import/learn/index
 language: sv
 ---
 
@@ -53,12 +58,12 @@ Om SuperOffice innehåller föråldrad information och du vill uppdatera dessa f
 Om du saknar mycket information om kunder och kontakter i SuperOffice kan du använda åtgärden **Slå ihop - uppdatera tomma fält** när du importerar företag och kontakter. Då uppdateras endast tomma fält utan att de befintliga uppgifterna skrivs över.
 
 <!-- Referenced links -->
-[1]: import-from-excel.md
-[2]: import-from-outlook.md
-[3]: import-from-gmail.md
-[4]: import-from-erp.md
-[5]: import-products-from-excel.md
-[6]: configure-import-settings.md
+[1]: from-excel.md
+[2]: from-outlook.md
+[3]: from-gmail.md
+[4]: from-erp.md
+[5]: products-from-excel.md
+[6]: settings.md
 [7]: https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/index.html
 
 <!-- Referenced images -->
