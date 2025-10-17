@@ -1,10 +1,10 @@
 items:
-- name: Overzicht
-  href: system.md
+- name: Inleiding
+  href: index.md
+- name: Werken met voorkeuren
+  href: update.md
 - name: SuperOffice Service-systeeminstellingen
-  href: settings.md
-- name: Wachtwoordbeleid Customer Centre
-  href: password.md
+  href: service-settings.md
 - name: SMS-configuratie
   href: sms.md
 - name: SMTP (LOKAAL)
