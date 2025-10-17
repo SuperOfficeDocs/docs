@@ -1,10 +1,10 @@
 items:
-- name: Oversigt
-  href: system.md
+- name: Introduktion
+  href: index.md
+- name: Arbejd med præferencer
+  href: update.md
 - name: SuperOffice Service-systemindstillinger
-  href: settings.md
-- name: Adgangskodepolitik for Customer Centre
-  href: password.md
+  href: service-settings.md
 - name: SMS-konfiguration
   href: sms.md
 - name: SMTP (ONSITE)
