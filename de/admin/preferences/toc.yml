@@ -1,10 +1,10 @@
 items:
-- name: Überblick
-  href: system.md
+- name: Einleitung
+  href: index.md
+- name: Mit Einstellungen arbeiten
+  href: update.md
 - name: Benutzereinstellungen für SuperOffice Service
-  href: settings.md
-- name: Richtlinie für Customer Centre-Passwörter
-  href: password.md
+  href: service-settings.md
 - name: SMS-Konfiguration
   href: sms.md
 - name: SMTP (VOR ORT)
