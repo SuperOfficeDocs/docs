@@ -20,4 +20,8 @@ items:
   href: ../../ui/blogic/learn/toc.yml
   topicHref: ../../ui/blogic/learn/index.md
 - name: Egenskaper for pakke
-  href: ../admin/package-properties.md
+  href: package-properties.md
+- name: Oppgave-meny
+  href: add-items-to-task-menu.md
+- name: Legge til applikasjon
+  href: other-applications.md
