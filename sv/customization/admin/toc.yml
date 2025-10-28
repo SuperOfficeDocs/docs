@@ -20,4 +20,8 @@ items:
   href: ../../ui/blogic/learn/toc.yml
   topicHref: ../../ui/blogic/learn/index.md
 - name: Egenskaper för paket
-  href: ../admin/package-properties.md
+  href: package-properties.md
+- name: Uppgiftsmeny
+  href: add-items-to-task-menu.md
+- name: Lägga till applikation
+  href: other-applications.md
