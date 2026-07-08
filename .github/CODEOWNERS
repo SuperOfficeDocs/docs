@@ -1,0 +1,5 @@
+# See https://docs.github.com/articles/about-codeowners
+# This file controls whose approval counts once "Require review from Code
+# Owners" is enabled on the main branch protection rule.
+
+* @digitaldiina
