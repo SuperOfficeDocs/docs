@@ -1,0 +1,1372 @@
+/* ─── FONT FACES ───────────────────────────────────────────── */
+/* True italic variants — prevents browser synthetic italic (skewed glyphs) */
+@font-face {
+  font-family: "SuperOffice Sans";
+  src: url("/fonts/SuperOfficeSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SuperOfficeSans Bold";
+  src: url("/fonts/SuperOfficeSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ─── CSS CUSTOM PROPERTIES ───────────────────────────────── */
+:root {
+  /* Primary */
+  --so-green:                #06423E;
+  --coast-blue:              #B2C7EB;
+  --dune-white:              #F2EFEA;
+
+  /* Secondary */
+  --so-green-hover:          #0F5C57;
+  --so-green-dark:           #002420;
+  --meadow-green:            #B7DEA9;
+  --heather-lilac:           #C5BAF8;
+  --plum-red:                #712F4A;
+  --coral-orange:            #F48A6D;
+  --charcoal:                #1C1C1E;
+
+  /* Tertiary – tints and shades */
+  --dune-white-darker-1:     #E7E4E0;
+  --dune-white-darker-2:     #D2CFCB;
+  --coast-blue-darker-1:     #6A8CB9;
+  --coast-blue-darker-2:     #395D9C;
+  --meadow-green-darker-1:   #61974E;
+  --meadow-green-darker-2:   #286712;
+  --heather-lilac-darker-1:  #8B7BD5;
+  --heather-lilac-darker-2:  #5C4BA9;
+  --plum-red-lighter:        #A4517A;
+  --plum-red-darker:         #491028;
+  --coral-orange-lighter:    #FFA88B;
+  --coral-orange-darker:     #DA6849;
+  --white:                   #FFFFFF;
+}
+
+/* ─── DARK MODE PRIMARY COLOR — INTENTIONAL DESIGN CHOICE ─── */
+/*
+ * colors.dark in docs.json is set to Coast blue (#B2C7EB), not Coral orange
+ * (#F48A6D) as the brand guide recommends for links and CTAs.
+ *
+ * Rationale: docs pages have high link density. The brand color hierarchy
+ * places Coral as the least-used color (narrowest bar in the hierarchy chart).
+ * Applying it to every link would invert that hierarchy and create visual noise.
+ * Coast blue is calm, readable, and appropriate for functional navigation at
+ * scale. Coral orange is intentionally reserved for primary CTA buttons only
+ * (e.g. "Book a demo" in the navbar).
+ */
+
+/* ─── BODY TEXT COLOR ─────────────────────────────────────── */
+body {
+  color: var(--charcoal);
+}
+
+.dark body {
+  color: var(--dune-white);
+}
+
+/* ─── ON THIS PAGE (right TOC) ────────────────────────────── */
+
+/* DM active TOC item: coast blue text + left border bar.
+ * data-active is on the <li>; border/text classes are on the child <a>. */
+.dark #table-of-contents-content [data-active="true"] > a {
+  color: var(--coast-blue) !important;
+  border-color: var(--coast-blue) !important;
+}
+
+/* DM subsection TOC items: active <li> elements at depth>0 carry
+ * border-primary / dark:border-primary-light directly on the <li> itself
+ * (classes like "border-1 pl-4 border-primary dark:border-primary-light").
+ * Override both the active deepest item and its parent active <li>. */
+.dark #table-of-contents-content li[data-active="true"],
+.dark #table-of-contents-content li[data-active-deepest="true"] {
+  border-color: var(--coast-blue) !important;
+}
+
+/* Heading scroll offset: compensate for sticky navbar (~56px) so the
+ * intersection observer activates the correct TOC item on scroll */
+#content h1, #content h2, #content h3, #content h4 {
+  scroll-margin-top: 5rem;
+}
+
+/* ─── SIDEBAR NAV ─────────────────────────────────────────── */
+
+/* ── Link icons (mask-image SVGs above the tree): match text color ── */
+#sidebar-content a svg[style*="mask-image"] {
+  background-color: currentColor !important;
+}
+
+/* ── Hover: SO green text on all sidebar links ── */
+#sidebar-content a:hover {
+  color: var(--so-green) !important;
+}
+
+/* ── Top utility links (Contact us, Log in) only: pill bg on hover.
+ * Scoped to links NOT inside .sidebar-group to avoid overriding nav item hover. ── */
+#sidebar-content a:not([class*="rounded"]):hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 6px !important;
+}
+
+/* ── Active/selected page: SO green in LM + dune-white-darker-1 bg
+ *    (same pill bg as version chip and filter pills for consistency) ── */
+#sidebar-content a[data-active="true"],
+#sidebar-content a[aria-current="page"] {
+  color: var(--so-green) !important;
+  background-color: var(--dune-white-darker-1) !important;
+}
+
+/* ── Dark mode hover: coast blue ── */
+.dark #sidebar-content a:hover {
+  color: var(--coast-blue) !important;
+}
+
+/* ── Dark mode selected: coast blue text + tint bg.
+ * data-active is on the <li>, so target the <a> child. ── */
+.dark #sidebar-content [data-active="true"] > a {
+  color: var(--coast-blue) !important;
+  background-color: rgba(178, 199, 235, 0.1) !important;
+}
+
+/* ─── NAVBAR ──────────────────────────────────────────────── */
+
+/* Light mode: SO green background */
+#navbar [class*="bg-background-light"] {
+  background-color: var(--so-green) !important;
+}
+
+/* Navbar logo: swap to white version in light mode (green bg needs white logo;
+ * docs.json light logo is the green version used by the footer) */
+#navbar img[src*="light.svg"] {
+  content: url("/logo/dark.svg");
+}
+
+/* Dark mode: charcoal */
+.dark #navbar [class*="bg-background-light"] {
+  background-color: var(--charcoal) !important;
+}
+
+/* All text/icons inside the navbar: white on green (LM) and charcoal (DM).
+ * Specificity (1,0,0) — intentionally lower than .nav-tabs-item rules
+ * which follow. Covers language selector, search trigger, theme toggle. */
+#navbar * {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Nav icons: bridge both fill-based (FontAwesome) and stroke-based (Lucide)
+ * SVG icons to currentColor so they inherit the white from the rule above. */
+#navbar svg {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Nav tab icons specifically: higher specificity (1,2,1) to beat any Mintlify
+ * rule that forces primary color on nav icons. Targets SVG, FA <i>, Phosphor <i>. */
+#navbar .nav-tabs-item svg,
+#navbar .nav-tabs-item svg path,
+#navbar .nav-tabs-item i {
+  color: rgba(255, 255, 255, 0.85) !important;
+  fill: rgba(255, 255, 255, 0.85) !important;
+  stroke: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Mask-image icons: DOM inspection shows nav icons use CSS mask-image technique
+ * (SVG has bg-gray-600 as ink color + mask-image in style attr for the shape).
+ * fill/stroke/color are irrelevant here — background-color is the visible ink. */
+#navbar svg[style*="mask-image"] {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* No bottom border or shadow — navbar and green hero/category header
+ * blend seamlessly (same SO green). Green↔white contrast on content
+ * pages provides sufficient separation without a border. */
+#navbar .border-b {
+  border-color: transparent !important;
+}
+
+#navbar {
+  box-shadow: none !important;
+}
+
+/* Nav tabs: increase spacing between items */
+#navbar .nav-tabs {
+  gap: 2rem;
+}
+
+/* Nav item: 80% white at rest; position:relative + overflow:visible anchor
+ * the ::after underline without it being clipped by the container. */
+#navbar .nav-tabs-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+  cursor: pointer;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: relative;
+  overflow: visible !important;
+}
+
+/* Nav item hover: full white */
+#navbar .nav-tabs-item:hover {
+  color: var(--white) !important;
+}
+
+/* Active nav item: full white */
+#navbar .nav-tabs-item[data-active="true"] {
+  color: var(--white) !important;
+}
+
+/* Active/hover underline via ::after — fully under our control, not reliant
+ * on Mintlify's bg-primary div rendering. Hover shows a dim indicator;
+ * active shows the full brand line. */
+#navbar .nav-tabs-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.15s ease;
+}
+
+#navbar .nav-tabs-item:hover::after {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#navbar .nav-tabs-item[data-active="true"]::after {
+  background-color: var(--white);
+}
+
+.dark #navbar .nav-tabs-item[data-active="true"]::after {
+  background-color: var(--coast-blue);
+}
+
+/* Belt-and-suspenders: if Mintlify does render a bg-primary div, keep it
+ * positioned and sized consistently. */
+#navbar .nav-tabs-item > div[class*="bg-primary"] {
+  background-color: var(--white) !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 2px !important;
+  min-height: 2px !important;
+}
+
+.dark #navbar .nav-tabs-item > div[class*="bg-primary"] {
+  background-color: var(--coast-blue) !important;
+}
+
+/* Cursor pointer on all navbar interactive elements */
+#navbar a,
+#navbar button {
+  cursor: pointer;
+}
+
+/* Search trigger: pinned by DOM id (id="search-bar-entry").
+ * Darker inset + reduced radius so it reads as a distinct input field
+ * against the green nav rather than blending in. */
+#search-bar-entry {
+  background-color: rgba(0, 0, 0, 0.22) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18) !important;
+  border-radius: 6px !important;
+}
+
+/* Search icon: outline/regular style — fill:none renders the magnifying-glass
+ * glyph as a stroke-only shape. stroke-width 1.5 matches the .com icon weight. */
+#search-bar-entry svg {
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.5 !important;
+}
+
+/* ─── NAVBAR DROPDOWNS ────────────────────────────────────── */
+/* Dropdown menus render as Radix portals outside #navbar in the DOM,
+ * so they don't inherit the white-text rule above.
+ *
+ * Radix uses [data-highlighted] for the focused/hovered item (keyboard
+ * and mouse) and [data-state="checked"] / [aria-selected="true"] for the
+ * selected item. These are NOT <a> tags, so :hover on <a> is not enough. */
+
+/* ── Light mode ── */
+[data-radix-popper-content-wrapper] a,
+[data-radix-popper-content-wrapper] a:visited,
+[data-radix-popper-content-wrapper] [role="menuitem"],
+[data-radix-popper-content-wrapper] [role="option"] {
+  color: var(--charcoal) !important;
+}
+
+[data-radix-popper-content-wrapper] a:hover,
+[data-radix-popper-content-wrapper] [data-highlighted] {
+  color: var(--so-green) !important;
+  background-color: rgba(6, 66, 62, 0.1) !important;
+}
+
+[data-radix-popper-content-wrapper] [data-state="checked"],
+[data-radix-popper-content-wrapper] [aria-selected="true"] {
+  color: var(--so-green) !important;
+}
+
+/* ── Dark mode ── */
+.dark [data-radix-popper-content-wrapper] a,
+.dark [data-radix-popper-content-wrapper] a:visited,
+.dark [data-radix-popper-content-wrapper] [role="menuitem"],
+.dark [data-radix-popper-content-wrapper] [role="option"] {
+  color: var(--dune-white) !important;
+}
+
+.dark [data-radix-popper-content-wrapper] a:hover,
+.dark [data-radix-popper-content-wrapper] [data-highlighted] {
+  color: var(--coast-blue) !important;
+  background-color: rgba(178, 199, 235, 0.12) !important;
+}
+
+/* DM selected item: coast blue text + subtle coast-blue row tint.
+ * The * child selector is required because Mintlify puts explicit
+ * "text-primary dark:text-primary-light" on the <p> label and checkmark <svg>
+ * inside the item — inherited color alone is overridden by those classes.
+ * background-color: transparent removes any green bg Mintlify applies. */
+.dark [data-radix-popper-content-wrapper] [data-state="checked"],
+.dark [data-radix-popper-content-wrapper] [data-state="checked"] *,
+.dark [data-radix-popper-content-wrapper] [aria-selected="true"],
+.dark [data-radix-popper-content-wrapper] [aria-selected="true"] *,
+.dark [data-radix-popper-content-wrapper] [data-selected="true"],
+.dark [data-radix-popper-content-wrapper] [data-selected="true"] * {
+  color: var(--coast-blue) !important;
+  background-color: transparent !important;
+}
+
+/* Dropdown panels: reduce corner radius to ~4 px to match .com */
+[data-radix-popper-content-wrapper] > div {
+  border-radius: 4px !important;
+}
+
+[data-radix-popper-content-wrapper] [class*="rounded"] {
+  border-radius: 4px !important;
+}
+
+/* ─── HOME PAGE ───────────────────────────────────────────── */
+
+#home-hero {
+  height: 20rem;
+  overflow: hidden;
+}
+
+#home-hero-bg {
+  background-color: var(--so-green);
+}
+
+#home-hero-content {
+  position: absolute;
+  text-align: center;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 70rem;
+}
+
+#home-hero-content p {
+  font-weight: 500;
+  max-width: 40rem;
+  margin: 0.5rem auto 0;
+}
+
+#home-content {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+#home-content h2 {
+  color: var(--charcoal);
+}
+
+.dark #home-content h2 {
+  color: var(--dune-white);
+}
+
+/* Card border radius */
+#home-content .card {
+  border-radius: 8px;
+}
+
+/* Dark mode card icons: coast blue instead of SO green.
+ * Covers both FontAwesome <i> and mask-image SVG rendering paths. */
+.dark #home-content i {
+  color: var(--coast-blue) !important;
+}
+
+.dark #home-content svg[style*="mask-image"] {
+  background-color: var(--coast-blue) !important;
+}
+
+/* "What type of user are you?" — dune white bg, transparent border, shadow lift on hover */
+#home-user-types .card {
+  background-color: var(--dune-white);
+  border-color: transparent !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#home-user-types .card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Dark mode CTA: use coast blue on hover instead of green */
+.dark #home-user-types [data-component-part="card-cta"]:hover,
+.dark #home-user-types .card:hover [data-component-part="card-cta"] {
+  color: var(--coast-blue) !important;
+}
+
+/* Dark mode: no bg override (avoids transition blip), green border on hover only */
+.dark #home-user-types .card {
+  background-color: unset;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark #home-user-types .card:hover {
+  box-shadow: none;
+  transform: none;
+  border-color: var(--so-green) !important;
+}
+
+/* Quick access shortcuts section — no background, blends into page */
+#home-quick-access a,
+#home-quick-access a:visited {
+  color: var(--so-green);
+  text-decoration: none;
+}
+
+#home-quick-access a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.dark #home-quick-access a,
+.dark #home-quick-access a:visited {
+  color: var(--coast-blue);
+}
+
+.dark #home-quick-access a:hover {
+  opacity: 0.85;
+}
+
+
+/* SubCategory landing pages */
+#subcategory {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+#subcategory h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--so-green);
+}
+
+.dark #subcategory h1 {
+  color: var(--coast-blue);
+}
+
+/* linklist-header icon: inherit the text color so it matches the span beside it */
+#subcategory .linklist-header svg[style*="mask-image"] {
+  background-color: currentColor !important;
+}
+
+.dark #subcategory .linklist-header svg[style*="mask-image"] {
+  background-color: currentColor !important;
+}
+
+#subcategory p.description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+#subcategory .linklist {
+  margin-top: 1rem;
+}
+
+#subcategory .linklist-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+#subcategory .linklist-header span {
+  font-weight: 600;
+}
+
+/* Shared list reset for all link lists */
+#subcategory .linklist ul,
+.conceptual-content .concept-links,
+.additional-content .additional-links {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#subcategory .linklist ul {
+  margin-top: 0.2rem;
+}
+
+#subcategory .linklist ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0 !important;
+  padding-inline-start: 0 !important;
+  margin-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+#subcategory .linklist li::marker,
+#subcategory .linklist li::before,
+.conceptual-content .concept-links li::marker,
+.conceptual-content .concept-links li::before,
+.additional-content .additional-links li::marker,
+.additional-content .additional-links li::before {
+  content: none !important;
+}
+
+/* Shared link styling for category sections */
+#subcategory .linklist a,
+#subcategory .linklist a:visited {
+  color: var(--so-green);
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+#subcategory .linklist a:hover,
+#subcategory .linklist a:focus-visible {
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--so-green);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+/* Subcategory links: coast blue in dark mode */
+.dark #subcategory .linklist a,
+.dark #subcategory .linklist a:visited {
+  color: var(--coast-blue);
+}
+
+.dark #subcategory .linklist a:hover,
+.dark #subcategory .linklist a:focus-visible {
+  text-decoration-color: var(--coast-blue);
+}
+
+.conceptual-content .concept-links a,
+.additional-content .additional-links a {
+  color: var(--so-green);
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+.conceptual-content .concept-links a:hover,
+.additional-content .additional-links a:hover {
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--so-green-hover);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+#subcategory hr {
+  border: none;
+  border-top: 1px solid var(--border, rgba(127, 127, 127, 0.35));
+  margin: 1rem 0;
+}
+
+.dark #subcategory hr {
+  border: none;
+  border-top: 1px solid rgba(242, 239, 234, 0.2);
+}
+
+/* Category landing pages with hero section */
+#category-hero {
+  background-color: var(--so-green);
+  color: white;
+  padding: 3rem 1.25rem;
+  margin-bottom: 3rem;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+#category-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0;
+}
+
+#category-hero p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0.75rem auto 0;
+  max-width: 80rem;
+  opacity: 0.95;
+}
+
+#category-landing {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 8rem;
+}
+
+#category-landing .card-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Highlighted content cards with frames */
+.highlighted-content [class*="CardGroup"] > div > a {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: block;
+  height: 100%;
+}
+
+.highlighted-content [class*="CardGroup"] > div > a:hover {
+  border-color: var(--so-green);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.highlighted-content [class*="card-title"],
+.highlighted-content h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.highlighted-content i {
+  flex-shrink: 0;
+  color: var(--so-green);
+}
+
+/* Dark mode for category */
+.dark #category-landing .card-label {
+  color: #9ca3af;
+}
+
+.dark .highlighted-content [class*="CardGroup"] > div > a {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+}
+
+.dark .highlighted-content [class*="CardGroup"] > div > a:hover {
+  border-color: var(--coast-blue);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon color in highlighted cards: coast blue in dark mode.
+ * Mintlify card icons can render as <i> (FontAwesome) or mask-image SVGs.
+ * Both color and background-color are set to cover both rendering paths. */
+.dark .highlighted-content i {
+  color: var(--coast-blue) !important;
+}
+
+.dark .highlighted-content svg[style*="mask-image"] {
+  background-color: var(--coast-blue) !important;
+}
+
+/* Conceptual content section */
+.conceptual-content {
+  margin-top: 3rem;
+  background-color: var(--coast-blue);
+  padding: 2.5rem 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.conceptual-content h2 {
+  font-size: 1.075rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  color: var(--so-green);
+}
+
+.conceptual-content [class*="CardGroup"] {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.conceptual-content [class*="Card"] {
+  background: white;
+  border-radius: 8px;
+}
+
+.conceptual-content [data-component-part="card-content"] {
+  margin-top: 1.25rem;
+}
+
+.conceptual-content .concept-links li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0 !important;
+  padding-inline-start: 0 !important;
+  margin-left: 0 !important;
+}
+
+.conceptual-content .concept-links i {
+  flex-shrink: 0;
+  margin-top: 0.2em;
+  color: var(--so-green);
+}
+
+/* Dark mode: no special bg — inherit charcoal page background */
+.dark .conceptual-content {
+  background-color: transparent;
+}
+
+.dark .conceptual-content h2,
+.dark .additional-content h2 {
+  color: var(--dune-white);
+}
+
+.dark .conceptual-content .concept-links i {
+  color: var(--coast-blue);
+}
+
+/* Keep link text in its own flex column so wrapping lines don't bleed under the icon */
+.conceptual-content .concept-links a {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Concept links: coast blue in dark mode.
+ * text-decoration/background-image/border-bottom must be re-asserted here
+ * (specificity 0,3,1) because .dark .prose a at line ~968 injects a
+ * background-image gradient underline at equal specificity (0,2,1) and
+ * later source order — so it would win without an explicit reset here. */
+.dark .conceptual-content .concept-links a,
+.dark .conceptual-content .concept-links a:visited {
+  color: var(--coast-blue);
+  text-decoration: none !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.dark .conceptual-content .concept-links a:hover,
+.dark .conceptual-content .concept-links a:focus-visible {
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--coast-blue);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  opacity: 0.85;
+}
+
+/* Additional content section */
+.additional-content {
+  margin-top: 3rem;
+}
+
+/* Match card title size to conceptual-content cards */
+.additional-content [data-component-part="card-title"] {
+  font-size: 0.9375rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+
+.additional-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--so-green);
+}
+
+.additional-content .additional-links li {
+  margin-bottom: 0.5rem;
+  padding-left: 0 !important;
+  padding-inline-start: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Additional links: coast blue in dark mode. Same specificity fix as concept-links above. */
+.dark .additional-content .additional-links a,
+.dark .additional-content .additional-links a:visited {
+  color: var(--coast-blue);
+  text-decoration: none !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.dark .additional-content .additional-links a:hover,
+.dark .additional-content .additional-links a:focus-visible {
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--coast-blue);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  opacity: 0.85;
+}
+
+/* Hide description (from metadata) under page title */
+#header > div.prose,
+#header > div[class*="prose"] {
+  display: none !important;
+}
+
+/* Hide H1 in content area (title already shown in header) */
+#content > h1 {
+  display: none !important;
+}
+
+/* ─── PROSE CONTENT CARDS ─────────────────────────────────── */
+/* Scoped to cards inside prose (e.g. Related content sections).
+ * Does NOT affect category/home/subcategory card areas. */
+
+/* DM card icons in prose: override dark:bg-primary-light (green) with coast blue */
+.dark .prose svg[class*="bg-primary"] {
+  background-color: var(--coast-blue) !important;
+}
+
+/* External link arrow: give title enough right padding to not overlap the absolute arrow */
+.prose #card-link-arrow-icon {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.prose [data-component-part="card-title"] {
+  padding-right: 1.75rem;
+}
+
+
+/* ─── INLINE CODE & CODE BLOCKS ───────────────────────────── */
+/* LM: warm dune-white-darker-2 bg — on-brand against dune-white page.
+ * DM: subtle white tint on charcoal. */
+
+.prose code:not(pre code) {
+  background-color: var(--dune-white-darker-1) !important;
+  color: var(--so-green) !important;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+
+.dark .prose code:not(pre code) {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--dune-white) !important;
+}
+
+/* ─── TABLES ───────────────────────────────────────────────── */
+/* LM only: alternating row colours + green header.
+ * DM: explicit resets so none of the LM rules bleed through. */
+
+/* Spacing: applies in both LM and DM */
+.prose th,
+.prose td {
+  padding-left: 0.875rem !important;
+  padding-right: 0.875rem !important;
+}
+
+.prose thead th {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* LM only — html:not(.dark) pins the selector to the <html> root,
+ * so none of these rules fire when Mintlify adds .dark to <html>. */
+
+/* Header row: SO green bg + white text */
+html:not(.dark) .prose thead tr {
+  background-color: var(--so-green) !important;
+}
+
+html:not(.dark) .prose thead th {
+  color: var(--white) !important;
+  border-bottom-color: var(--so-green-hover) !important;
+}
+
+/* Body rows: odd = white, even = dune-white tint */
+html:not(.dark) .prose tbody tr:nth-child(odd) {
+  background-color: var(--white) !important;
+}
+
+html:not(.dark) .prose tbody tr:nth-child(even) {
+  background-color: var(--dune-white) !important;
+}
+
+/* Row + cell dividers */
+html:not(.dark) .prose tbody tr,
+html:not(.dark) .prose th,
+html:not(.dark) .prose td {
+  border-color: var(--dune-white-darker-1) !important;
+}
+
+/* ─── IMAGES ──────────────────────────────────────────────── */
+/* Ported from prod docs CSS. Alt text suffix drives styling:
+ * -screenshot : desktop/browser screenshot, full prose width, bordered
+ * -app-screen : mobile screenshot, height-constrained, bordered */
+
+.prose img[alt$="-screenshot"] {
+  border: 2px solid var(--so-green);
+  padding: 4px;
+  height: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.prose img[alt$="-app-screen"] {
+  border: 2px solid var(--so-green);
+  padding: 4px;
+  max-height: 498px;
+  width: auto;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+/* DM: soften border — coast blue, 1px on app screens, full width on screenshots */
+.dark .prose img[alt$="-screenshot"] {
+  border-color: var(--coast-blue-darker-1);
+}
+
+.dark .prose img[alt$="-app-screen"] {
+  border-width: 1px;
+  border-color: var(--coast-blue-darker-1);
+}
+
+/* Inside a Mintlify <Frame>: strip our border — Frame provides its own container */
+[data-name="frame"] img[alt$="-screenshot"],
+[data-name="frame"] img[alt$="-app-screen"] {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ─── RELEASE NOTES ───────────────────────────────────────── */
+
+/* Version chip (e.g. "11.8") — aligned with active TOC and filter pill treatment.
+ * LM: SO green text + same dune-white-darker-1 bg as filter pills.
+ * DM: coast blue text + same coast-blue tint as active TOC item. */
+[data-component-part="update-label"] {
+  color: var(--so-green) !important;
+  background-color: var(--dune-white-darker-1) !important;
+}
+
+.dark [data-component-part="update-label"] {
+  color: var(--coast-blue) !important;
+  background-color: rgba(178, 199, 235, 0.12) !important;
+}
+
+/* Badges — mapped to same brand color families as callouts for consistency.
+ * green  (Service)                → Meadow green  (same as Tip/Check)
+ * blue   (Core CRM, Sales)        → Coast blue    (same as Note)
+ * purple (Marketing)              → Heather lilac (same as Info)
+ * orange (Settings/maintenance)   → Coral orange  (same as Warning)
+ * Override Mintlify's --color-bg / --color-text CSS custom properties. */
+
+[data-badge="true"][data-color="green"] {
+  --color-bg: rgba(183, 222, 169, 0.3) !important;
+  --color-text: var(--meadow-green-darker-2) !important;
+}
+.dark [data-badge="true"][data-color="green"] {
+  --color-bg: rgba(183, 222, 169, 0.12) !important;
+  --color-text: var(--meadow-green) !important;
+}
+
+[data-badge="true"][data-color="blue"] {
+  --color-bg: rgba(178, 199, 235, 0.3) !important;
+  --color-text: var(--coast-blue-darker-2) !important;
+}
+.dark [data-badge="true"][data-color="blue"] {
+  --color-bg: rgba(178, 199, 235, 0.12) !important;
+  --color-text: var(--coast-blue) !important;
+}
+
+[data-badge="true"][data-color="purple"] {
+  --color-bg: rgba(197, 186, 248, 0.3) !important;
+  --color-text: var(--heather-lilac-darker-2) !important;
+}
+.dark [data-badge="true"][data-color="purple"] {
+  --color-bg: rgba(197, 186, 248, 0.12) !important;
+  --color-text: var(--heather-lilac) !important;
+}
+
+[data-badge="true"][data-color="orange"] {
+  --color-bg: rgba(218, 104, 73, 0.15) !important;
+  --color-text: var(--coral-orange-darker) !important;
+}
+.dark [data-badge="true"][data-color="orange"] {
+  --color-bg: rgba(244, 138, 109, 0.1) !important;
+  --color-text: var(--coral-orange-lighter) !important;
+}
+
+/* Filter pills — brand-aligned rest/hover states.
+ * LM: dune-white bg, charcoal text. DM: subtle white tint, dune-white text. */
+#changelog-filters-content button {
+  background-color: var(--dune-white-darker-1) !important;
+  color: var(--charcoal) !important;
+}
+
+#changelog-filters-content button:hover {
+  background-color: var(--dune-white-darker-2) !important;
+}
+
+.dark #changelog-filters-content button {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  color: var(--dune-white) !important;
+}
+
+.dark #changelog-filters-content button:hover {
+  background-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+/* ─── PROSE CONTENT LINKS ─────────────────────────────────── */
+/* Scoped to .prose to avoid touching nav, sidebar, cards, etc.
+ * LM: SO green + underline, no bold (matches .com style)
+ * DM: coast blue + underline */
+
+.prose a,
+.prose a:visited {
+  color: var(--so-green) !important;
+  font-weight: inherit !important;
+}
+
+.prose a:hover {
+  opacity: 0.75;
+}
+
+.dark .prose a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a),
+.dark .prose a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):visited {
+  color: var(--coast-blue) !important;
+  background-image: linear-gradient(var(--coast-blue), var(--coast-blue)) !important;
+  background-size: 100% 1px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+.dark .prose a:hover {
+  opacity: 0.8;
+}
+
+/* Heading anchor links — no underline at rest, reveal on hover.
+ * LM: SO green (inherited from .prose a), no underline at rest.
+ * DM: coast blue (not green), no underline at rest. */
+.prose h1 a, .prose h2 a, .prose h3 a, .prose h4 a, .prose h5 a, .prose h6 a,
+.prose h1 a:visited, .prose h2 a:visited, .prose h3 a:visited,
+.prose h4 a:visited, .prose h5 a:visited, .prose h6 a:visited {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+.prose h1 a:hover, .prose h2 a:hover, .prose h3 a:hover,
+.prose h4 a:hover, .prose h5 a:hover, .prose h6 a:hover {
+  text-decoration: underline !important;
+  opacity: 0.75;
+}
+
+.dark .prose h1 a, .dark .prose h2 a, .dark .prose h3 a,
+.dark .prose h4 a, .dark .prose h5 a, .dark .prose h6 a,
+.dark .prose h1 a:visited, .dark .prose h2 a:visited, .dark .prose h3 a:visited,
+.dark .prose h4 a:visited, .dark .prose h5 a:visited, .dark .prose h6 a:visited {
+  color: var(--coast-blue) !important;
+}
+
+.dark .prose h1 a:hover, .dark .prose h2 a:hover, .dark .prose h3 a:hover,
+.dark .prose h4 a:hover, .dark .prose h5 a:hover, .dark .prose h6 a:hover {
+  text-decoration: none !important;
+  background-image: linear-gradient(var(--coast-blue), var(--coast-blue)) !important;
+  background-size: 100% 1px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+  opacity: 0.8;
+}
+
+/* Links inside admonitions: inherit callout text color, 1px underline only, no bold.
+ * Targets a.link (Mintlify's class on callout <a> tags) inside data-callout-type elements. */
+[data-callout-type] a.link,
+[data-callout-type] a.link:visited {
+  color: inherit !important;
+  font-weight: inherit !important;
+  text-decoration: none !important;
+  background-size: 100% 1px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+.dark [data-callout-type] a.link,
+.dark [data-callout-type] a.link:visited {
+  text-decoration: none !important;
+  background-image: linear-gradient(currentColor, currentColor) !important;
+  background-size: 100% 1px !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+/* ─── ADMONITIONS ──────────────────────────────────────────── */
+/* Scoped via :has(svg[aria-label="..."]) — Mintlify sets aria-label on the icon SVG.
+ * LM: tinted bg + colored border + icon/title in matching brand shade.
+ * DM: low-opacity bg tint + muted border. */
+
+/* ── Note → Coast blue ── */
+[class*="callout"]:has(svg[aria-label="Note"]) {
+  background-color: rgba(178, 199, 235, 0.18) !important;
+  border-color: var(--coast-blue-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Note"]) svg {
+  color: var(--coast-blue-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Note"]) {
+  background-color: rgba(178, 199, 235, 0.08) !important;
+  border-color: rgba(178, 199, 235, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Note"]) svg {
+  color: var(--coast-blue) !important;
+}
+
+/* ── Tip → Meadow green ── */
+[class*="callout"]:has(svg[aria-label="Tip"]) {
+  background-color: rgba(183, 222, 169, 0.2) !important;
+  border-color: var(--meadow-green-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Tip"]) svg {
+  color: var(--meadow-green-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Tip"]) {
+  background-color: rgba(183, 222, 169, 0.08) !important;
+  border-color: rgba(183, 222, 169, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Tip"]) svg {
+  color: var(--meadow-green) !important;
+}
+
+/* ── Warning → Coral orange ──
+ * LM icon/text: coral-orange-darker (#DA6849) — passes WCAG AA on light bg.
+ * coral-orange (#F48A6D) fails AA on light; darker variant required.
+ * DM icon: coral-orange-lighter (#FFA88B) — passes AA on charcoal, more legible. */
+[class*="callout"]:has(svg[aria-label="Warning"]) {
+  background-color: rgba(218, 104, 73, 0.1) !important;
+  border-color: var(--coral-orange-darker) !important;
+}
+[class*="callout"]:has(svg[aria-label="Warning"]) svg,
+[class*="callout"]:has(svg[aria-label="Warning"]) [data-component-part="callout-content"] {
+  color: var(--coral-orange-darker) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Warning"]) {
+  background-color: rgba(244, 138, 109, 0.08) !important;
+  border-color: rgba(255, 168, 139, 0.3) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Warning"]) svg {
+  color: var(--coral-orange) !important;
+}
+
+/* ── Info → Heather lilac ── */
+[class*="callout"]:has(svg[aria-label="Info"]) {
+  background-color: rgba(197, 186, 248, 0.18) !important;
+  border-color: var(--heather-lilac-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Info"]) svg {
+  color: var(--heather-lilac-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Info"]) {
+  background-color: rgba(197, 186, 248, 0.08) !important;
+  border-color: rgba(197, 186, 248, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Info"]) svg {
+  color: var(--heather-lilac) !important;
+}
+
+/* ── Check → Meadow green (same family as Tip) ── */
+[class*="callout"]:has(svg[aria-label="Check"]) {
+  background-color: rgba(183, 222, 169, 0.2) !important;
+  border-color: var(--meadow-green-darker-1) !important;
+}
+[class*="callout"]:has(svg[aria-label="Check"]) svg {
+  color: var(--meadow-green-darker-1) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Check"]) {
+  background-color: rgba(183, 222, 169, 0.08) !important;
+  border-color: rgba(183, 222, 169, 0.25) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Check"]) svg {
+  color: var(--meadow-green) !important;
+}
+
+/* Metadata display in callouts */
+.metadata-display {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Add border to bottom of callout containing metadata */
+[class*="callout"]:has(.metadata-display) {
+  border-bottom: 1px solid var(--charcoal);
+}
+
+.dark [class*="callout"]:has(.metadata-display) {
+  border-bottom: 1px solid var(--dune-white);
+}
+
+.metadata-display ul {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  list-style: none !important;
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--charcoal) !important;
+}
+
+.dark .metadata-display ul {
+  color: var(--dune-white) !important;
+}
+
+.metadata-display li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
+.metadata-display li::before {
+  display: none !important;
+}
+
+.metadata-display i.ph {
+  font-size: 1.1rem;
+}
+
+/* ─── CUSTOM MODE FOOTER ───────────────────────────────────────── */
+/* Mirrors the native Mintlify footer (minus the "Powered by" bar).
+ * Used on mode:"custom" pages (home, category) that don't get the native footer.
+ * Full-width breakout matches the technique used by #category-hero so the
+ * footer spans the viewport even when inside a max-width content wrapper. */
+
+#custom-mode-footer {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 4rem;
+  padding: 3rem 1.25rem;
+  border-top: 1px solid rgba(127, 127, 127, 0.18);
+}
+
+.dark #custom-mode-footer {
+  border-top-color: rgba(242, 239, 234, 0.12);
+}
+
+#custom-mode-footer-inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Logo: green version on dune-white (LM), white version on charcoal (DM).
+ * Note: these intentionally differ from docs.json logo config, which uses
+ * dark.svg in LM because the navbar background is SO green. */
+#custom-mode-footer-brand { display: flex; }
+
+.cmf-logo-light { display: block; height: 1.75rem; width: auto; }
+.cmf-logo-dark  { display: none;  height: 1.75rem; width: auto; }
+.dark .cmf-logo-light { display: none; }
+.dark .cmf-logo-dark  { display: block; }
+
+/* Link columns */
+#custom-mode-footer-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.cmf-link-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.cmf-link-col a {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.dark .cmf-link-col a { color: #9ca3af; }
+
+.cmf-link-col a:hover       { color: var(--charcoal); }
+.dark .cmf-link-col a:hover { color: var(--dune-white); }
+
+/* Social icon circles */
+#custom-mode-footer-socials {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.cmf-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+
+.cmf-social:hover { opacity: 0.75; }
+
+.cmf-social img {
+  display: block;
+}
+
+.dark .cmf-social img {
+  opacity: 0.65;
+}
+
+.dark .cmf-social:hover img {
+  opacity: 1;
+}
