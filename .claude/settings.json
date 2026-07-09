@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "PowerShell(*)",
+      "Bash(gh api:*)"
+    ]
+  }
+}

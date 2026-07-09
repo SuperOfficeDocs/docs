@@ -1,0 +1,4 @@
+# Personal AI configuration (private repo, not for all contributors)
+ai-agents/
+AGENTS.md
+.github/copilot-instructions.md
