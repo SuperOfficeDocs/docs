@@ -58,6 +58,7 @@
     "languages": [
       {
         "language": "en",
+        "default": true,
         "tabs": [
           {
             "tab": "Home",
@@ -116,6 +117,70 @@
                 "groups": []
               }
             ]
+          },
+          {
+            "tab": "Contribute",
+            "icon": "hand-holding-heart",
+            "groups": [
+              {
+                "group": "Contribute",
+                "pages": [
+                  "contribute/index",
+                  "contribute/overview",
+                  "contribute/getting-started",
+                  "contribute/files-and-folders",
+                  "contribute/how-to-edit-an-article",
+                  "contribute/how-to-write-tutorials"
+                ]
+              },
+              {
+                "group": "Git",
+                "pages": [
+                  "contribute/branch-strategy",
+                  "contribute/git-cheat-sheet",
+                  "contribute/git-workflows"
+                ]
+              },
+              {
+                "group": "Review",
+                "pages": [
+                  "contribute/review/index",
+                  "contribute/review/request-review",
+                  "contribute/review/incorporate-feedback",
+                  "contribute/review/check-changes"
+                ]
+              },
+              {
+                "group": "Markdown guide",
+                "pages": [
+                  "contribute/markdown-guide/index",
+                  "contribute/markdown-guide/links-in-docs",
+                  "contribute/markdown-guide/metadata",
+                  "contribute/markdown-guide/code-in-docs",
+                  "contribute/markdown-guide/markdownlint",
+                  "contribute/markdown-guide/using-blueprint-templates"
+                ]
+              },
+              {
+                "group": "Information architecture",
+                "pages": [
+                  "contribute/ia"
+                ]
+              },
+              {
+                "group": "Content reuse",
+                "pages": [
+                  "contribute/reuse"
+                ]
+              },
+              {
+                "group": "Style guide",
+                "pages": [
+                  "contribute/style-guide/index",
+                  "contribute/style-guide/formatting"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -166,6 +231,70 @@
             "icon": "bullhorn",
             "pages": [
               "release-notes/11/index"
+            ]
+          },
+          {
+            "tab": "Contribute",
+            "icon": "hand-holding-heart",
+            "groups": [
+              {
+                "group": "Contribute",
+                "pages": [
+                  "contribute/index",
+                  "contribute/overview",
+                  "contribute/getting-started",
+                  "contribute/files-and-folders",
+                  "contribute/how-to-edit-an-article",
+                  "contribute/how-to-write-tutorials"
+                ]
+              },
+              {
+                "group": "Git",
+                "pages": [
+                  "contribute/branch-strategy",
+                  "contribute/git-cheat-sheet",
+                  "contribute/git-workflows"
+                ]
+              },
+              {
+                "group": "Review",
+                "pages": [
+                  "contribute/review/index",
+                  "contribute/review/request-review",
+                  "contribute/review/incorporate-feedback",
+                  "contribute/review/check-changes"
+                ]
+              },
+              {
+                "group": "Markdown guide",
+                "pages": [
+                  "contribute/markdown-guide/index",
+                  "contribute/markdown-guide/links-in-docs",
+                  "contribute/markdown-guide/metadata",
+                  "contribute/markdown-guide/code-in-docs",
+                  "contribute/markdown-guide/markdownlint",
+                  "contribute/markdown-guide/using-blueprint-templates"
+                ]
+              },
+              {
+                "group": "Information architecture",
+                "pages": [
+                  "contribute/ia"
+                ]
+              },
+              {
+                "group": "Content reuse",
+                "pages": [
+                  "contribute/reuse"
+                ]
+              },
+              {
+                "group": "Style guide",
+                "pages": [
+                  "contribute/style-guide/index",
+                  "contribute/style-guide/formatting"
+                ]
+              }
             ]
           }
         ]
@@ -335,6 +464,11 @@
           "anchor": "Log in to SuperOffice",
           "href": "https://online.superoffice.com/login",
           "icon": "arrow-right-to-bracket"
+        },
+        {
+          "anchor": "About",
+          "href": "/about",
+          "icon": "circle-info"
         }
       ]
     }

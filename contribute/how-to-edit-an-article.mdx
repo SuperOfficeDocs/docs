@@ -1,11 +1,12 @@
 ---
-uid: how_to_edit_an_article
-language: en
+uid: how-to-edit-an-article
 title: Edit an article
-description: Edit an article
-topic: howto
-date: 04.19.2021
-author: Tony Yates
+description: How to fork the repository, make edits locally, preview your changes, and open a pull request.
+keywords: fork, clone, local edit, pull request, mint dev
+author: digitaldiina
+date: 07.09.2026
+content_type: howto
+language: en
 ---
 
 # Edit an article
@@ -14,7 +15,7 @@ author: Tony Yates
 
   1. [Get SuperOfficeDocs running locally][1]: To edit an article, you need to get SuperOfficeDocs running locally on your machine.
 
-  2. **Markdown**: Docs uses markdown syntax to format content. Markdown is simple to pick up on. Familiarize yourself with the [Markdown Guide to DocFx][2] before making updates to content.
+  2. **Markdown**: Docs uses markdown syntax to format content. Markdown is simple to pick up on. Familiarize yourself with the [Markdown guide][2] before making updates to content.
 
 Now that you've gotten SuperOfficeDocs running locally (congrats BTW!), we will talk through the steps for making an edit, previewing the edit, pushing it to your forked repo, then creating a pull request.
 
@@ -26,10 +27,11 @@ Now that you've gotten SuperOfficeDocs running locally (congrats BTW!), we will 
 
 2. Set your remote repositories. We will use the terms **upstream** and **origin**. When you originally cloned the repo (in the pre-requisites), the `origin` was added for you implicitly.
 
-    Type `git remote add upstream https://github.com/SuperOfficeDocs/superoffice-docs` to add the main SuperOffice Docs repo as your upstream repo.
+    Type `git remote add upstream https://github.com/SuperOfficeDocs/docs` to add the main SuperOffice Docs repo as your upstream repo.
 
-    > [!NOTE]
-    > Remotes can be named anything you like. Find out your remotes by typing `git remote -v`.
+    <Note>
+    Remotes can be named anything you like. Find out your remotes by typing `git remote -v`.
+    </Note>
 
     Type `git remote -v` to list your remotes. If you are new to Git, you should have 2 remotes:
 
@@ -42,15 +44,15 @@ Now that you've gotten SuperOfficeDocs running locally (congrats BTW!), we will 
 
     ![GitHub issue screenshot][img2]
 
-4. Create a new branch for your work. Typically branch names align with the issue number for ease of tracking.
+4. Create a new branch for your work. Branch names start with the issue number, for ease of tracking.
 
-   **Example branch name**: `issue-107`
+   **Example branch name**: `107-fix-broken-link`
 
-   **Example Git command to create new branch**: `git checkout -b issue-107`
+   **Example Git command to create new branch**: `git switch -c 107-fix-broken-link`
 
 5. Make your edits.
 
-6. Preview your work locally by invoking the `docfx --serve` in your terminal (in VS Code, Powershell, or similar). This will run SuperOfficeDocs locally on your machine at a URL similar to this `localhost:8080`. Click the link or copy and paste it into your browser.
+6. Preview your work locally by running `mint dev` in your terminal (in VS Code, PowerShell, or similar). This will run SuperOfficeDocs locally on your machine at a URL similar to this `localhost:3000`. Click the link or copy and paste it into your browser.
 
 When you are happy with your changes, you can move on to pushing it to your forked repo and creating a pull request.
 
@@ -60,7 +62,7 @@ When you are happy with your changes, you can move on to pushing it to your fork
 
 2. Use `git add [INSERT FILE NAME]` to stage a single file or `git add .` to stage **all** modified files to be committed.
 
-3. Use `git commit -m [INSERT YOUR COMMIT MESSAGE HERE]` to commit your files. The `-m` stands for *message*. Replace the *INSERT YOUR COMMIT MESSAGE HERE* text with brief and relevant text summarizing your commit. Remember to include the issue ID!
+3. Use `git commit -m "[INSERT YOUR COMMIT MESSAGE HERE] (#[INSERT ISSUE NUMBER HERE])"` to commit your files. The `-m` stands for *message*. Replace the placeholders with a brief, relevant summary and your issue number - end the message with the issue ID in parentheses, so GitHub links it automatically.
 
 4. Use `git push origin [INSERT A NEW BRANCH NAME HERE]` to push your updated files to your repo. Replace the *INSERT A NEW BRANCH NAME HERE* with the name of your new branch.
 
@@ -68,16 +70,15 @@ When you are happy with your changes, you can move on to pushing it to your fork
 
 6. Create a pull request by clicking the **Compare and create pull request** button. In the description or comments section be sure to include the text "Resolves `#[INSERT ISSUE NUMBER HERE]` where your previously created issue number is associated with this pull request.
 
-> [!TIP]
-> Want more info on Git? Check out the free, online [GitBook][5].
+<Tip>
+Want more info on Git? Check out the free, online [GitBook][5].
+</Tip>
 
-<!-- Referenced links-->
-[1]: get-superoffice-docs-running-locally.md
-[2]: markdown-guide/index.md
-[3]: https://github.com/SuperofficeDocs/superoffice-docs
-[4]: https://github.com/SuperOfficeDocs/superoffice-docs/issues
+[1]: ./getting-started
+[2]: ./markdown-guide/index
+[3]: https://github.com/SuperOfficeDocs/docs
+[4]: https://github.com/SuperOfficeDocs/docs/issues
 [5]: https://git-scm.com/book/en/v2
 
-<!-- Referenced images-->
-[img1]: media/fork-repo-on-github.png
-[img2]: media/create-issue-on-github.png
+[img1]: ../media/loc/en/contribute/fork-repo-on-github.png
+[img2]: ../media/loc/en/contribute/create-issue-on-github.png

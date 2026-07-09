@@ -68,6 +68,104 @@ $foldersDeleted = 0
 $redirectsAdded = 0
 $warnings = @()
 
+# Windows PowerShell 5.1's ConvertTo-Json indentation is not reliably tied to
+# structural depth (verified: two keys at the same real nesting depth can come
+# out with different indent widths), so a line-based "divide leading spaces by
+# 4" normalizer produces inconsistent results. This walks the token stream
+# directly - bracket/string-aware - and re-emits a clean 2-space-per-depth
+# format regardless of what ConvertTo-Json produced.
+function Format-JsonIndent {
+    param([Parameter(Mandatory=$true)][string]$Json)
+
+    $sb = [System.Text.StringBuilder]::new()
+    $depth = 0
+    $inString = $false
+    $escapeNext = $false
+    $len = $Json.Length
+
+    function Get-NextSignificantChar {
+        param([string]$Text, [int]$StartIndex)
+        $j = $StartIndex
+        while ($j -lt $Text.Length -and ($Text[$j] -eq ' ' -or $Text[$j] -eq "`t" -or $Text[$j] -eq "`r" -or $Text[$j] -eq "`n")) {
+            $j++
+        }
+        if ($j -lt $Text.Length) { return $Text[$j] }
+        return $null
+    }
+
+    for ($i = 0; $i -lt $len; $i++) {
+        $ch = $Json[$i]
+
+        if ($inString) {
+            [void]$sb.Append($ch)
+            if ($escapeNext) {
+                $escapeNext = $false
+            } elseif ($ch -eq '\') {
+                $escapeNext = $true
+            } elseif ($ch -eq '"') {
+                $inString = $false
+            }
+            continue
+        }
+
+        if ($ch -eq '"') {
+            [void]$sb.Append($ch)
+            $inString = $true
+            continue
+        }
+
+        if ($ch -eq ' ' -or $ch -eq "`t" -or $ch -eq "`r" -or $ch -eq "`n") {
+            continue
+        }
+
+        switch ($ch) {
+            '{' {
+                $depth++
+                [void]$sb.Append('{')
+                $next = Get-NextSignificantChar -Text $Json -StartIndex ($i + 1)
+                if ($next -ne '}') {
+                    [void]$sb.Append("`n").Append('  ' * $depth)
+                }
+            }
+            '[' {
+                $depth++
+                [void]$sb.Append('[')
+                $next = Get-NextSignificantChar -Text $Json -StartIndex ($i + 1)
+                if ($next -ne ']') {
+                    [void]$sb.Append("`n").Append('  ' * $depth)
+                }
+            }
+            '}' {
+                $prevAppended = $sb[$sb.Length - 1]
+                $depth--
+                if ($prevAppended -ne '{') {
+                    [void]$sb.Append("`n").Append('  ' * $depth)
+                }
+                [void]$sb.Append('}')
+            }
+            ']' {
+                $prevAppended = $sb[$sb.Length - 1]
+                $depth--
+                if ($prevAppended -ne '[') {
+                    [void]$sb.Append("`n").Append('  ' * $depth)
+                }
+                [void]$sb.Append(']')
+            }
+            ',' {
+                [void]$sb.Append(',').Append("`n").Append('  ' * $depth)
+            }
+            ':' {
+                [void]$sb.Append(': ')
+            }
+            default {
+                [void]$sb.Append($ch)
+            }
+        }
+    }
+
+    return $sb.ToString()
+}
+
 # Load docs.json - use System.IO.File to preserve UTF-8 encoding
 $docsJsonText = [System.IO.File]::ReadAllText($docsJsonPath)
 $docsJson = $docsJsonText | ConvertFrom-Json
@@ -224,7 +322,7 @@ if ($SkipReference) {
 }
 
 foreach ($file in $files) {
-    $content = Get-Content $file.FullName -Raw
+    $content = Get-Content $file.FullName -Raw -Encoding UTF8
 
     # Check for frontmatter (handle both \r\n and \n)
     if ($content -notmatch '(?s)^---\s*[\r\n]+(.*?)[\r\n]+---') {
@@ -366,28 +464,27 @@ if ($hasRedirects) {
 }
 
 # Convert to JSON with proper depth
-if ($PSVersionTable.PSVersion.Major -ge 6) {
-    $docsJsonContent = $docsJson | ConvertTo-Json -Depth 100 -EscapeHandling EscapeNonAscii
-} else {
-    # PS 5.1 - use large depth value
-    $docsJsonContent = $docsJson | ConvertTo-Json -Depth 100
-    # Fix Unicode escapes for PS 5.1
-    $docsJsonContent = $docsJsonContent -replace '\\u0027', "'"
-}
+$docsJsonContent = $docsJson | ConvertTo-Json -Depth 100
 
-# Normalize indentation to 2 spaces
-$lines = $docsJsonContent -split "`n"
-$docsJsonContent = ($lines | ForEach-Object {
-    if ($_ -match '^( +)(.*)$') {
-        $indent = $matches[1]
-        $content = $matches[2]
-        # Convert groups of 4 spaces to 2 spaces
-        $newIndent = '  ' * ($indent.Length / 4)
-        "$newIndent$content"
-    } else {
-        $_
+# Defensive pass: if ConvertTo-Json escaped any non-ASCII character to \uXXXX
+# (older Windows PowerShell 5.1 builds have done this with no opt-out, and
+# this script used to force the same behavior on PS 7+ via -EscapeHandling
+# EscapeNonAscii), restore the literal character wherever JSON doesn't
+# require the escape - control characters, the quote, and the backslash
+# must stay escaped; everything else (accented/non-Latin text, apostrophes)
+# should round-trip as raw UTF-8. No-op if nothing was escaped to begin with.
+$unescapeMatch = [System.Text.RegularExpressions.MatchEvaluator] {
+    param($match)
+    $code = [Convert]::ToInt32($match.Groups[1].Value, 16)
+    if ($code -lt 0x20 -or $code -eq 0x22 -or $code -eq 0x5C) {
+        return $match.Value
     }
-}) -join "`n"
+    return [string][char]$code
+}
+$docsJsonContent = [regex]::Replace($docsJsonContent, '\\u([0-9a-fA-F]{4})', $unescapeMatch)
+
+# Normalize indentation to a clean 2-space-per-depth format
+$docsJsonContent = Format-JsonIndent -Json $docsJsonContent
 
 # Write with UTF-8 encoding without BOM
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false

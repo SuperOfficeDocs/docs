@@ -1,0 +1,33 @@
+{
+    "cSpell.words": [
+        "blogic",
+        "core",
+        "crmscript",
+        "iarchiveagent",
+        "ifindagent",
+        "index",
+        "mailgun",
+        "markdig",
+        "md",
+        "Mintlify",
+        "netserver",
+        "odata",
+        "osql",
+        "SCIM",
+        "soap",
+        "SoSession",
+        "SuperOffice",
+        "Watchcom",
+        "web form",
+        "web services",
+        "webapi",
+        "webpage",
+        "webshop",
+        "website",
+        "webtools",
+        "Romnes"
+    ],
+    "markdown.styles": [
+        "./.vscode/markdown.css"
+    ]
+}

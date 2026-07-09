@@ -1,11 +1,12 @@
 ---
 uid: content-reuse
-language: en
 title: Content reuse
-description: Introduction to content reuse and singlesourcing
-topic: concept
-date: 08.1.2022
-author: Bergfrid Dias
+description: Introduction to content reuse and single-sourcing
+keywords: content reuse, single-sourcing, fragments, includes, duplicate content
+author: digitaldiina
+date: 07.09.2026
+content_type: concept
+language: en
 ---
 
 # Content reuse
@@ -113,7 +114,4 @@ Reusable content should be easy to find. Use **domain modelling**: have all topi
 
 **After** optimizing content for reuse, you can perform **targeted searches** to find content to reuse in a given topic. You probably need to comb through the results to decide what is suitable and what's not. Sorry, but there is no magic button. If you want to become efficient in reuse, learn how to search your source.
 
-<!-- Referenced links -->
 [1]: https://developers.google.com/search/docs/advanced/guidelines/duplicate-content
-
-<!-- Referenced images -->

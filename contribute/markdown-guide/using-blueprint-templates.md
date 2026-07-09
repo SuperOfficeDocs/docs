@@ -1,12 +1,12 @@
 ---
-uid: using_blueprint_templates
-language: en
+uid: using-blueprint-templates
 title: Using Blueprint templates
 description: How to use Blueprint templates in Visual Studio Code
-topic: reference
-date: 04.19.2021
-author: Bergfrid Dias
 keywords: template, Blueprint, VS Code, Visual Studio Code, authoring, tools, contribution
+author: digitaldiina
+date: 07.09.2026
+content_type: reference
+language: en
 ---
 
 # Using Blueprint templates in Visual Studio Code
@@ -40,6 +40,5 @@ This will create the folder and add file *index.md* to it. The name you enter be
 3. Select **docfx-subfolder** from the list and enter a folder name.
 4. Optionally add additional Markdown files to the new folder.
 
-<!-- Referenced links-->
 [1]: https://github.com/SuperOfficeDocs
 [2]: https://marketplace.visualstudio.com/items?itemName=teamchilla.blueprint

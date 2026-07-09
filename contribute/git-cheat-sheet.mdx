@@ -1,0 +1,122 @@
+---
+uid: git-commands
+title: Git commands
+description: A quick-reference cheat sheet of common Git Bash commands for checking status, pulling updates, and committing and pushing changes.
+keywords: git cheat sheet, git commands, git pull, git status, git commit, git push
+author: digitaldiina
+date: 07.09.2026
+content_type: reference
+language: en
+---
+
+# Git commands
+
+Here we are using the Git Bash command line.
+
+<Note>
+Paths are relative to your current directory
+</Note>
+
+## Get the latest updates from GitHub
+
+```sh
+git pull
+```
+
+Unless you are working on your fork, make it a habit to pull:
+
+* before you start every morning
+* frequent during the day
+* before you start a commit
+
+Resolve any merge conflicts.
+
+<Tip>
+Plain `git pull` merges by default, which can add noisy merge commits to a feature branch if your local and remote copies have diverged. `git pull --rebase` replays your local commits on top instead, keeping history linear. Make it permanent with `git config --global pull.rebase true`.
+</Tip>
+
+## Check local changes
+
+```sh
+git status
+```
+
+See exactly what changed, not just which files:
+
+```sh
+git diff
+```
+
+Checking status "all the time"? Create a convenient shorthand:
+
+```sh
+git config --global alias.st status
+```
+
+The next time you can just type `git st`. (Don't worry, `git status` will still work.)
+
+## Inspect commit log
+
+```sh
+git log
+```
+
+## Saving changes to your repository
+
+1. Tell Git what you want to save.
+
+    * Everything in the repository, regardless of your current directory:
+
+    ```sh
+    git add --all
+    ```
+
+    * Everything in your current directory and below only — not the same as `--all` if you're sitting in a subfolder:
+
+    ```sh
+    git add .
+    ```
+
+    * A specific folder (recursive):
+
+    ```sh
+    git add contribute
+    ```
+
+    * A specific file:
+
+    ```sh
+    git add contribute/overview.md
+    ```
+
+    <Note>
+    If you have moved or renamed a file without using `git mv`, you must add both the old and the new file or folder name!
+    </Note>
+
+2. Commit your saved changes to your local repository. End the message with the issue ID in parentheses — see [branch strategy][1] for why.
+
+    ```sh
+    git commit -m "Short description of changes (#[ISSUE ID])"
+    ```
+
+3. Send your changes to GitHub.
+
+    ```sh
+    git push
+    ```
+
+    * If you didn't set the upstream when you created the branch, you need to do it now:
+
+    ```sh
+    git push --set-upstream origin <branchname>
+    ```
+
+    <Tip>
+    Git 2.37 and later can do this automatically: `git config --global push.autoSetupRemote true`. Set it once and you won't need `--set-upstream` again.
+    </Tip>
+
+You've done it! Your code is now up in your GitHub repository!
+
+Need to fix something you submitted? No problem! Just make your changes in the same branch and then commit and push again.
+
+[1]: ./branch-strategy
