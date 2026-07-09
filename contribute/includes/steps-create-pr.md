@@ -12,5 +12,5 @@
 
     ![Create PR on GitHub -screenshot][img11]
 
-[img10]: ../media/github-open-pr.png
-[img11]: ../media/github-create-pr.png
+[img10]: ../../media/loc/en/contribute/github-open-pr.png
+[img11]: ../../media/loc/en/contribute/github-create-pr.png
