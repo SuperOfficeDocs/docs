@@ -1,17 +1,17 @@
 ---
 uid: formatting
-language: en
 title: Text formatting guidelines
-description: Text formatting guidelines
-topic: reference
-date: 04.19.2021
-author: Bergfrid Dias
+description: Guidelines for using bold, italics, and code style consistently for text elements, headings, and keyboard shortcuts.
+keywords: bold, italics, code style, formatting, keyboard shortcuts
+author: digitaldiina
+date: 07.09.2026
+content_type: reference
+language: en
 ---
 
 # Text formatting guidelines
 
-Using bold, italic, and code style for text elements consistently and appropriately improves the
-readability and helps to avoid misunderstandings.
+Using bold, italic, and code style for text elements consistently and appropriately improves the readability and helps to avoid misunderstandings.
 
 ## Bold
 
@@ -52,5 +52,4 @@ Don't use italics, bold, or code in headings or link text.
 * Don't use italics, bold, or code.
 * Use "+" to join keys that are pressed at the same time.
 
-<!-- Referenced links-->
-[1]: ../markdown-guide/code-in-docs.md
+[1]: ../markdown-guide/code-in-docs

@@ -1,0 +1,44 @@
+---
+uid: request-review
+title: Request a review
+description: How to request a review before merging a contribution to main
+keywords: review, PR, pull request
+author: digitaldiina
+date: 07.09.2026
+content_type: howto
+language: en
+---
+
+import StepsCreatePr from "../includes/steps-create-pr.md";
+
+# How to request a review
+
+How to initiate the review process depends on where you updated the content.
+
+## Edited single file in browser
+
+If you followed the instructions to [edit a file on GitHub][1], you've already created the pull request.
+
+Wait for a notification from the reviewer. Then [view and incorporate feedback on the pull request][5].
+
+## Worked on a local branch
+
+* If you worked on a branch from a [clone][2], go directly to [the public superoffice-docs repo][4].
+* If you worked on a [fork][3], go to your **forked GitHub repo** on GitHub.com instead.
+
+<StepsCreatePr />
+
+<Note>
+There are extensions for creating PRs directly from VS Code, however, authentication (especially with enterprise accounts) is not trivial. Creating PRs on GitHub is strongly recommended.
+</Note>
+
+## What happens now?
+
+* Follow the discussion in the **Conversation** tab.
+* Look for GitHub notifications on the PR and be prepared to [implement the requested changes][5] (if any).
+
+[1]: ../how-to-edit-an-article-in-browser
+[2]: ../get-superoffice-docs-running-locally#setting-up-the-superofficedocs-project
+[3]: ../how-to-edit-an-article#how-to-edit-and-preview-content
+[4]: https://github.com/SuperOfficeDocs/superoffice-docs
+[5]: ./incorporate-feedback

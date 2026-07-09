@@ -1,12 +1,12 @@
 ---
-title: Reviewing a PR
 uid: review-check-changes
+title: Reviewing a PR
 description: How to check proposed changes in a PR
-author: Bergfrid Dias
-date: 11.14.2022
-keywords: review, PR
-topic: howto
-
+keywords: review, PR, comment, suggestion
+author: digitaldiina
+date: 07.09.2026
+content_type: howto
+language: en
 ---
 
 # Reviewing a PR
@@ -69,14 +69,12 @@ Anyone with access can comment on a PR. The ability to request changes or submit
 * If you requested changes, follow up on those.
 * If you approved and all checks are green, you can merge the PR and delete the branch.
 
-<!-- Referenced links -->
 [1]: https://github.com/SuperOfficeDocs/superoffice-docs
 
-<!-- Referenced images -->
-[img1]: media/comment.png
-[img2]: media/line-comment.png
-[img3]: media/preview-suggestion.png
-[img4]: media/enter-suggestion.png
-[img5]: media/add-suggestion-icon.png
-[img6]: media/review-changes.png
-[img7]: media/submit-review.png
+[img1]: .//media/loc/en/contribute/comment.png
+[img2]: .//media/loc/en/contribute/line-comment.png
+[img3]: .//media/loc/en/contribute/preview-suggestion.png
+[img4]: .//media/loc/en/contribute/enter-suggestion.png
+[img5]: .//media/loc/en/contribute/add-suggestion-icon.png
+[img6]: .//media/loc/en/contribute/review-changes.png
+[img7]: .//media/loc/en/contribute/submit-review.png

@@ -1,11 +1,12 @@
 ---
-uid: files_and_folders
-language: en
+uid: files-and-folders
 title: Organization of repositories
-description: 
-topic: reference
-date: 04.19.2021
-author: Bergfrid Dias
+description: How SuperOfficeDocs repositories are organized into files and folders, including naming conventions and UID rules.
+keywords: file names, folder structure, naming conventions, UID, repository organization
+author: digitaldiina
+date: 07.09.2026
+content_type: reference
+language: en
 ---
 
 # Organization of repositories
@@ -41,13 +42,11 @@ If there are multiple features or contexts in a single folder, you need to speci
 
 ### Example
 
-<!-- markdownlint-disable MD044 -->
 A file named *create-company* has UID **crmscript-create-company** and is located in the *superoffice-docs/docs/company/howto/crmscript* folder.
 
 Here, the filename follows the \<crud>-\<item>.md pattern and the parent folders *company/howto/crmscript* provide the context.
 
 We need to add 'crmscript' to the UID to make it unique. However, there is no need to repeat the word 'company' and that it is a how-to is implied by the verb.
-<!-- markdownlint-restore -->
 
 ## Folder organization
 
@@ -67,6 +66,5 @@ All major folders have an */includes* subfolder for reusable content in that sec
 
 We use the [Blueprint extension][2] for Visual Studio Code. Available templates are located in the *blueprint-templates* folder at the root of the repo.
 
-<!-- Referenced links-->
-[1]: markdown-guide/index.md
-[2]: markdown-guide/using-blueprint-templates.md
+[1]: ./markdown-guide/index
+[2]: ./markdown-guide/using-blueprint-templates
