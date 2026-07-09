@@ -2,7 +2,7 @@
 uid: docs-review-process
 title: Review process in SuperOfficeDocs
 description: Explanation of how to request a review, to handle feedback and suggested changes, and to review someone else's contributions on SuperOfficeDocs.
-keywords: review, pull request, contributor, reviewer
+keywords: review, pull request, contributor, reviewer, code owners
 author: digitaldiina
 date: 07.09.2026
 content_type: concept
@@ -39,6 +39,14 @@ As a reviewer, you'll do one or more of the following tasks:
 
 [How to comment or start a review][4]
 
+## Merge requirements
+
+A PR into `main` needs at least 1 approving review from a Code Owner before it can merge. [`.github/CODEOWNERS`][6] currently lists a single owner for the whole repo, so every PR - including translations and small fixes - needs that owner's approval.
+
+<Note>
+GitHub blocks self-approval of your own PR at the API level, so the Code Owner can't satisfy this requirement on their own PRs. See [the branch strategy page][7] for the rest of the branch protection restrictions that apply here, and how the Code Owner's own PRs get merged in the meantime.
+</Note>
+
 ## What to check
 
 * [Markdown formatting][3] - no linting errors
@@ -54,3 +62,5 @@ As a reviewer, you'll do one or more of the following tasks:
 [3]: ../markdown-guide/index
 [4]: ./check-changes
 [5]: ./incorporate-feedback
+[6]: https://github.com/SuperOfficeDocs/docs/blob/main/.github/CODEOWNERS
+[7]: ../branch-strategy

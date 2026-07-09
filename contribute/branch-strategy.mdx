@@ -2,7 +2,7 @@
 uid: branch-strategy
 title: Branch strategy for SuperOfficeDocs
 description: We use feature branches to isolate work in progress from the completed work in the main branch.
-keywords: branch strategy, feature branch, main branch, pull request, naming conventions
+keywords: branch strategy, feature branch, main branch, pull request, naming conventions, code owners, branch protection
 author: digitaldiina
 date: 07.09.2026
 content_type: concept
@@ -63,7 +63,16 @@ Each Git client is different, so consult the help for your preferred client.
 ## Pull requests
 
 * **main** is protected — you cannot push to it directly. All changes go through a pull request.
+* At least 1 approving review from a Code Owner is required before a PR can merge. See [the review process][1] for what this means in practice.
+* All review conversations must be resolved before a PR can merge.
+* Force-pushes and branch deletion are blocked on **main**.
 * Code merged into the main branch should build cleanly.
 * Squash merge, so history on **main** stays one commit per change.
-  * **Exception:** a PR that exists specifically to preserve multi-commit history (for example, a repo forklift that keeps per-file authorship) should be merged with a merge commit or rebase-merge instead — squashing would collapse exactly the history it's meant to preserve.
+  * **Exception:** a PR that exists specifically to preserve multi-commit history (for example, a repo forklift that keeps per-file authorship) needs a merge commit or rebase-merge instead of squashing — squashing would collapse exactly the history it's meant to preserve. **main** requires a linear history, though, which blocks merge commits through the normal PR merge button. In practice this means a direct admin-bypass push rather than a standard PR merge.
 * End your commit message with the issue ID in parentheses, for example `Fix broken link in onboarding guide (#1234)`. GitHub links this automatically in the PR's commit list. On squash-merge, GitHub also appends the **pull request** number the same way — the two numbers are often different, and both can legitimately appear.
+
+<Note>
+The live rule is under **Settings** > **Branches** on GitHub. Admin enforcement is currently off, so the one non-owner repo admin can bypass the Code Owner requirement on their own PRs — intentional for the pre-launch period, not permanent. Org owners of `SuperOfficeDocs` bypass all branch protection unconditionally, on every repo in the org; that isn't configurable per-repo.
+</Note>
+
+[1]: ./review/index
