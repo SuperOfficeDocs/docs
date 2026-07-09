@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 1. Go to the repo on GitHub.com. GitHub should detect the updated code and prompt you to make a pull request.
 
 2. Click the **Compare and create pull request** button.
@@ -13,7 +12,5 @@
 
     ![Create PR on GitHub -screenshot][img11]
 
-<!-- Referenced links -->
-<!-- Referenced images -->
 [img10]: ../media/github-open-pr.png
 [img11]: ../media/github-create-pr.png
