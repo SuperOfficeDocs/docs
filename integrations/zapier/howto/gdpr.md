@@ -1,4 +1,4 @@
-﻿---
+---
 uid: zapier-gdpr
 title: How to maintain GDPR configuration
 description: Guide to maintaining GDPR configuration in Zapier.
@@ -26,8 +26,6 @@ If no value is provided for one or more of these fields, SuperOffice automatical
 
 ![Create new contact information -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: ../../../docs/en/security/privacy/index.md
+[1]: ../../../docs/en/security/privacy/index
 
-<!-- Referenced images -->
-[img1]: media/contact-consents-gdpr.png
+[img1]: /media/loc/en/integrations/zapier/contact-consents-gdpr.png

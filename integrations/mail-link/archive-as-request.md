@@ -1,4 +1,4 @@
-﻿---
+---
 uid: mail-link-archive-as-request
 title: Create request from an email
 description: Learn how to archive emails as requests in SuperOffice CRM using Mail Link.
@@ -70,5 +70,4 @@ You can archive an email in your mail client inbox as a request in SuperOffice s
 
 * [Archive attachments][1]
 
-<!-- Referenced links -->
-[1]: archive-attachment.md
+[1]: ./archive-attachment

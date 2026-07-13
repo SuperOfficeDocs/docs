@@ -11,7 +11,7 @@ topic: video meetings
 deployment: online
 platform: web
 language: en
-redirect_from: 
+redirect_from:
   - /en/diary/video-meetings/howto/configure-email-invitations
   - /en/admin/preferences/learn/video-meetings/email-setup-in-superoffice
   - /da/admin/preferences/learn/video-meetings/email-setup-in-superoffice
@@ -29,7 +29,7 @@ To be able to send and receive email invitations to video meetings (to/from atte
 ## With SuperOffice Inbox
 
 1. Configure your email setup in [SuperOffice Inbox][2].
-2. To be able to send the Video Meeting URL to external users, we recommend to [edit your invitation template][3] to add the new variable {burl}.
+2. To be able to send the Video Meeting URL to external users, we recommend to [edit your invitation template][3] to add the new variable \{burl\}.
 
 ## With SuperOffice Mail Link
 
@@ -37,8 +37,7 @@ To be able to send and receive email invitations to video meetings (to/from atte
 
 This feature is currently not supported if you use [Synchronizer for SuperOffice][1] - as they don't support this yet.
 
-<!-- Referenced links -->
 [1]: https://online.superoffice.com/appstore/infobridge-software-b-v-/synchronizer-for-superoffice
-[2]: ../../../docs/en/email/inbox/learn/index.md
-[3]: ../../../docs/en/email/admin/add-email-template.md
-[4]: ../../mail-link/index.md
+[2]: ../../../docs/en/email/inbox/learn/index
+[3]: ../../../docs/en/email/admin/add-email-template
+[4]: ../../mail-link/index

@@ -49,8 +49,5 @@ Inform your team members about the upcoming migration and provide them with the 
 
 * [Troubleshooting][2]
 
-<!-- Referenced links -->
-[1]: index.md#requirements
-[2]: troubleshooting.md
-
-<!-- Referenced images -->
+[1]: ./index#requirements
+[2]: ./troubleshooting

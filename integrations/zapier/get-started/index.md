@@ -1,4 +1,4 @@
-﻿---
+---
 uid: zapier-get-started
 title: Get started
 description: How to get started with SuperOffice CRM and Zapier.
@@ -25,7 +25,6 @@ You can start with SuperOffice CRM by choosing an existing Zap template from our
 
 * [Available triggers, actions, and pre-defined Zaps][1]
 
-<!-- Referenced links -->
-[1]: ../reference.md
-[2]: set-up-account.md
-[3]: create-zap.md
+[1]: ../reference
+[2]: ./set-up-account
+[3]: ./create-zap

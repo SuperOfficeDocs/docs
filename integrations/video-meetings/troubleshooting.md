@@ -18,7 +18,7 @@ index: true
 
 ## Something went wrong reserving your video meeting. Please try again later
 
-**Problem:** If SuperOffice Online is not able to provide video meetings with a valid Customer ID when a user logs in to SuperOffice Online, the user will get an error in the client when creating the video meeting:
+**Problem:** If SuperOffice Online is not able to provide video meetings with a valid Customer ID when a user logs in to SuperOffice Online, the user will get an error in the client when creating the video meeting:
 
 ![imagen1s5.png -screenshot][img1]
 
@@ -32,9 +32,7 @@ index: true
 
 **Solution:** To resolve this, the [user has to remove the video-meetings configuration in SuperOffice][1].
 
-<!-- Referenced links -->
-[1]: howto/disconnect-user.md
+[1]: ./howto/disconnect-user
 
-<!-- Referenced images -->
-[img1]: media/imagen1s5.png
-[img2]: media/image761z.png
+[img1]: /media/loc/en/integrations/video-meetings/imagen1s5.png
+[img2]: /media/loc/en/integrations/video-meetings/image761z.png

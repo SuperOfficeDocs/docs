@@ -1,4 +1,4 @@
-﻿---
+---
 uid: mail-link-archive
 title: Archive email to SuperOffice
 description: Learn how to archive emails to SuperOffice CRM using Mail Link.
@@ -52,14 +52,12 @@ If you open an email that has already been archived, the **Archive email** butto
 * [Archive when creating emails from Outlook][6]
 * [Archive when creating emails from SuperOffice CRM (legacy)][8]
 
-<!-- Referenced links -->
-[1]: archive-as-activity.md
-[2]: archive-on-contact.md
-[3]: archive-attachment.md
-[4]: archive-as-request.md
-[5]: settings.md
-[6]: create-in-outlook.md
-[8]: create-in-superoffice.md#archive
+[1]: ./archive-as-activity
+[2]: ./archive-on-contact
+[3]: ./archive-attachment
+[4]: ./archive-as-request
+[5]: ./settings
+[6]: ./create-in-outlook
+[8]: ./create-in-superoffice#archive
 
-<!-- Referenced images -->
-[img1]: media/already-archived.png
+[img1]: /media/loc/en/integrations/mail-link/already-archived.png

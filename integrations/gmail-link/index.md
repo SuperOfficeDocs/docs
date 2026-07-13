@@ -41,14 +41,11 @@ SuperOffice Gmail Link is a plug-in that links the Google Gmail client with Supe
 * [Look up sender in SuperOffice][7]
 * [Edit Gmail Link settings][8]
 
-<!-- Referenced links -->
-[1]: install.md
-[2]: archive-attachments.md
-[3]: email-archive-incoming.md
-[4]: email-archive-outgoing.md
-[5]: archive-emails-as-activities.md
-[6]: archive-emails-as-requests.md
-[7]: manage-senders.md
-[8]: settings.md
-
-<!-- Referenced images -->
+[1]: ./install
+[2]: ./archive-attachments
+[3]: ./email-archive-incoming
+[4]: ./email-archive-outgoing
+[5]: ./archive-emails-as-activities
+[6]: ./archive-emails-as-requests
+[7]: ./manage-senders
+[8]: ./settings

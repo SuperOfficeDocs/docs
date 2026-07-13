@@ -1,4 +1,4 @@
-﻿---
+---
 uid: zapier-reference
 title: SuperOffice triggers and actions
 description: Overview of SuperOffice triggers and actions supported by Zapier. List of Zap templates.
@@ -122,29 +122,28 @@ Zap templates are ready-made Zaps to use as-is or amend to fit a particular work
 
 * Add new leads from **Facebook Lead AS** (trigger) as new contacts in SuperOffice (action).
 
-<!-- Referenced links -->
-[1]: howto/triggers/new.md
-[9]: howto/triggers/changed.md
-[16]: howto/actions/create-appointment.md
-[17]: howto/actions/create-company.md
-[18]: howto/actions/create-contact.md
-[19]: howto/actions/create-document.md
-[20]: howto/actions/create-project-member.md
-[21]: howto/actions/create-project.md
-[22]: howto/actions/create-request-message-attachment.md
-[23]: howto/actions/create-request-message.md
-[24]: howto/actions/create-request.md
-[25]: howto/actions/create-sale.md
-[26]: howto/actions/remove-project-member.md
-[27]: howto/actions/search-company.md
-[28]: howto/actions/search-contact.md
-[29]: howto/actions/search-project.md
-[30]: howto/actions/search-request.md
-[31]: howto/actions/search-sale.md
-[32]: howto/actions/update-appointment.md
-[33]: howto/actions/update-company.md
-[34]: howto/actions/update-contact.md
-[35]: howto/actions/update-document-content.md
-[36]: howto/actions/update-project.md
-[37]: howto/actions/update-request.md
-[38]: howto/actions/update-sale.md
+[1]: ./howto/triggers/new
+[9]: ./howto/triggers/changed
+[16]: ./howto/actions/create-appointment
+[17]: ./howto/actions/create-company
+[18]: ./howto/actions/create-contact
+[19]: ./howto/actions/create-document
+[20]: ./howto/actions/create-project-member
+[21]: ./howto/actions/create-project
+[22]: ./howto/actions/create-request-message-attachment
+[23]: ./howto/actions/create-request-message
+[24]: ./howto/actions/create-request
+[25]: ./howto/actions/create-sale
+[26]: ./howto/actions/remove-project-member
+[27]: ./howto/actions/search-company
+[28]: ./howto/actions/search-contact
+[29]: ./howto/actions/search-project
+[30]: ./howto/actions/search-request
+[31]: ./howto/actions/search-sale
+[32]: ./howto/actions/update-appointment
+[33]: ./howto/actions/update-company
+[34]: ./howto/actions/update-contact
+[35]: ./howto/actions/update-document-content
+[36]: ./howto/actions/update-project
+[37]: ./howto/actions/update-request
+[38]: ./howto/actions/update-sale

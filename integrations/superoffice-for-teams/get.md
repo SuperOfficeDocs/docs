@@ -24,8 +24,8 @@ If your admin has uploaded and approved SuperOffice for Teams but hasn't pushed 
 1. Find SuperOffice for Teams under **Built for your org** (during the pilot) or by searching in the app store.
 1. Click **Open**.
 1. A dialog appears asking how you'd like to use the app. You have two options:
-   * Select **Open** to add the app to your personal scope – this sets up the bot chat and lets you use SuperOffice for Teams in your 1:1 and group chats.
-   * Select a **channel** from the list below to add the app to that channel – this lets you archive messages and files in that channel.
+   * Select **Open** to add the app to your personal scope - this sets up the bot chat and lets you use SuperOffice for Teams in your 1:1 and group chats.
+   * Select a **channel** from the list below to add the app to that channel - this lets you archive messages and files in that channel.
 1. You'll see a welcome message from the bot. From here, you can sign in with SuperOffice for Teams to get started.
 
 You can come back to this dialog at any time to add SuperOffice for Teams to more channels.
@@ -51,7 +51,7 @@ Once added, SuperOffice for Teams becomes available in the channel you previousl
 
 ## Already have the app?
 
-If your admin has pushed SuperOffice for Teams to you via a setup policy, you'll find it already installed – either in your app bar on the left or under **Added by your org** in Manage your apps. You don't need to do anything to install it. Just open it and sign in.
+If your admin has pushed SuperOffice for Teams to you via a setup policy, you'll find it already installed - either in your app bar on the left or under **Added by your org** in Manage your apps. You don't need to do anything to install it. Just open it and sign in.
 
 ## Uninstalling the app
 
@@ -75,7 +75,7 @@ After the app is added, you can find SuperOffice for Teams from the **...** menu
 
 You can also access the bot chat from your chat list. If you lose your bot chat, start a new conversation by selecting the **New message** icon and typing **teams** in the **To:** box. Then select **SuperOffice for Teams** from your contact list.
 
-As soon as the app is installed, the bot automatically opens a conversation and invites you to get started. You don't need to go looking for it – it comes to you. The welcome message reads:
+As soon as the app is installed, the bot automatically opens a conversation and invites you to get started. You don't need to go looking for it - it comes to you. The welcome message reads:
 
 "Hello [your name]. Welcome to SuperOffice for Teams! You can use the buttons below to log in, or choose Help if you want to know more."
 
@@ -108,11 +108,8 @@ If you try to use **SuperOffice for Teams** while signed out, you will see a mes
 
 Select **Open Chat** to go to the **SuperOffice for Teams** bot, then select **Sign In**.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/teams-app-store-built-for-your-org.png
-[img2]: media/teams-app-added-successfully-open-or-select-channel.png
-[img3]: media/teams-select-channel-and-go-dialog.png
-[img4]: media/teams-uninstall-superoffice-for-teams-app.png
-[img5]: media/teams-pin-superoffice-for-teams-bot.png
+[img1]: /media/loc/en/integrations/superoffice-for-teams/teams-app-store-built-for-your-org.png
+[img2]: /media/loc/en/integrations/superoffice-for-teams/teams-app-added-successfully-open-or-select-channel.png
+[img3]: /media/loc/en/integrations/superoffice-for-teams/teams-select-channel-and-go-dialog.png
+[img4]: /media/loc/en/integrations/superoffice-for-teams/teams-uninstall-superoffice-for-teams-app.png
+[img5]: /media/loc/en/integrations/superoffice-for-teams/teams-pin-superoffice-for-teams-bot.png

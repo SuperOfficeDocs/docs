@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 * **Subject**: The subject is automatically inserted in this field. However, you can edit the text.
 * **Company**: Search for a company by starting to type the company name or select a company in the list.
 * **Contact**: Select a contact in the list. You can also search by starting to type the contact name.

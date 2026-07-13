@@ -79,14 +79,14 @@ Although Google Workspace and Google Accounts allow you to access several of the
 
 ### Not sure what kind of account you have?
 
-If you're able to [edit your account recovery options][3], then you have a Google Account. If you sign in to your account to the [account recovery options page][4] and receive a message with details to contact your administrator, then you have a Google Workspace account.
+If you're able to [edit your account recovery options][3], then you have a Google Account. If you sign in to your account to the [account recovery options page][4] and receive a message with details to contact your administrator, then you have a Google Workspace account.
 
-You may also check the domain name via Google Workspace Toolbox Dig (Google MX record lookup tool):
+You may also check the domain name via Google Workspace Toolbox Dig (Google MX record lookup tool):
 
 1. [Go to Dig][5].
 2. Type in your domain.
 3. Choose **MX**.
-4. Identify if it includes "ANSWER" and what this answer redirects to. If the answer includes "Google" – you should be good to go!
+4. Identify if it includes "ANSWER" and what this answer redirects to. If the answer includes "Google" - you should be good to go!
 
 ## How to log in to CRM Online with Google authentication activated
 
@@ -98,10 +98,9 @@ You may also check the domain name via Google Workspace Toolbox Dig (Google MX 
 
 The **Forgot password** feature is now handled by Google - since Google is activated as the authentication method for this site.
 
-<!-- Referenced links -->
 [2]: https://online.superoffice.com/AppStore/superoffice-as/g-suite-integration
 [3]: https://www.google.com/accounts/UpdateAccountRecoveryOptions
 [4]: http://www.google.com/accounts/UpdateAccountRecoveryOptions
 [5]: https://toolbox.googleapps.com/apps/dig/
 [6]: https://online.superoffice.com/
-[7]: ../../docs/en/document/library/it/index.md
+[7]: ../../docs/en/document/library/it/index

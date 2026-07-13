@@ -45,11 +45,11 @@ index: true
 * [How to disconnect a user][6]
 * [Troubleshooting][7]
 
-<a href="../../docs/assets/downloads/video-meetings-in-SuperOffice---quick-start-v2.pdf" download>Download our Quick Start Guide – Video Meetings in SuperOffice​</a>
+<a href="../../docs/assets/downloads/video-meetings-in-SuperOffice---quick-start-v2.pdf" download>Download our Quick Start Guide - Video Meetings in SuperOffice</a>
 
 ## New template variable for Video Meeting URL
 
-{burl}
+\{burl\}
 
 **New Meeting - example:**
 ![image99xdi.png -screenshot][img1]
@@ -61,15 +61,13 @@ With SuperOffice Inbox, you need to update the invitation template.
 
 ![imageloql6.png -screenshot][img2]
 
-<!-- Referenced links -->
-[1]: howto/create.md
-[2]: howto/join.md
-[3]: howto/disconnect-provider.md
-[4]: howto/configure-email-invitations.md
-[5]: howto/connect-provider.md
-[6]: howto/disconnect-user.md
-[7]: troubleshooting.md
+[1]: ./howto/create
+[2]: ./howto/join
+[3]: ./howto/disconnect-provider
+[4]: ./howto/configure-email-invitations
+[5]: ./howto/connect-provider
+[6]: ./howto/disconnect-user
+[7]: ./troubleshooting
 
-<!-- Referenced images -->
-[img1]: media/image99xdi.png
-[img2]: media/imageloql6.png
+[img1]: /media/loc/en/integrations/video-meetings/image99xdi.png
+[img2]: /media/loc/en/integrations/video-meetings/imageloql6.png

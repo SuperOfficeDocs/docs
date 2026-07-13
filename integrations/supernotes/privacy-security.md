@@ -89,8 +89,7 @@ CO2 emissions per hour of transcription: 5-20 grams, depending on the data cente
 * [Settings][2] - Configuration options
 * [Workspaces][3] - Team collaboration and workspace management
 
-<!-- Referenced links -->
-[1]: getting-started.md
-[2]: settings.md
-[3]: workspaces.md
-[4]: settings.md#retention-options
+[1]: ./getting-started
+[2]: ./settings
+[3]: ./workspaces
+[4]: ./settings#retention-options
