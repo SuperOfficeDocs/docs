@@ -5904,6 +5904,18 @@
     {
       "source": "/sv/search-options/selection/learn/howto/mass-delete",
       "destination": "/sv/security/privacy/learn/mass-delete"
+    },
+    {
+      "source": "/sv/admin/learn/screen/package-properties",
+      "destination": "/sv/customization/admin/package-properties"
+    },
+    {
+      "source": "/sv/admin/learn/package-properties",
+      "destination": "/sv/customization/admin/package-properties"
+    },
+    {
+      "source": "/sv/customization/admin/index",
+      "destination": "/sv/customization/admin/package-properties"
     }
   ]
 }

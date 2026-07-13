@@ -14,9 +14,9 @@ index: true
 tier: core
 language: sv
 redirect_from:
-  - /no/admin/learn/screen/package-properties
-  - /no/admin/learn/package-properties
-  - /no/customization/admin/index
+  - /sv/admin/learn/screen/package-properties
+  - /sv/admin/learn/package-properties
+  - /sv/customization/admin/index
 ---
 
 # Egenskaper för paket
