@@ -1,0 +1,32 @@
+items:
+- name: Überblick
+  href: index.md
+- name: Registerkarte Mehr
+  href: more-tab.md
+- name: Benutzerdefinierte Felder
+  topicHref: udef.md
+  items:
+  - name: Überblick
+    href: udef.md
+  - name: Feld hinzufügen
+    href: ../admin/add-udef.md
+  - name: Feld bearbeiten
+    href: ../admin/edit-udef.md
+  - name: Benutzeroberfläche anpassen
+    href: ../admin/edit-udef-layout.md
+- name: Zusatztabellen
+  topicHref: extra-table.md
+  items:
+  - name: Überblick
+    href: extra-table.md
+  - name: Zusatztabellen hinzufügen
+    href: ../admin/create-extra-table.md
+- name: Zusatzfelder
+  topicHref: extra-field.md
+  items:
+  - name: Oversikt
+    href: extra-field.md
+  - name: Zusatzfelder hinzufügen
+    href: ../admin/create-extra-field.md
+  - name: Zusatzfelder im Tab Details anzeigen
+    href: ../admin/show-extra-field-on-request-details.md

@@ -1,0 +1,11 @@
+items:
+- name: Überblick
+  href: index.md
+- name: Antwortvorlage erstellen
+  href: create.md
+- name: Antwortvorlage übersetzen
+  href: new-language.md
+- name: Antwortvorlage bearbeiten oder löschen
+  href: edit.md
+- name: Vorlagenvariablen antworten
+  href: template-variables.md

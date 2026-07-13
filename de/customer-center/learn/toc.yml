@@ -1,0 +1,20 @@
+items:
+- name: Überblick
+  href: index.md
+- name: Konfiguration
+  href: config.md
+- name: Quelldateien
+  href: edit.md
+- name: Kennwörter an Personen senden
+  href: send-credentials.md
+- name: Chat aktivieren
+  href: enable-chat.md
+- name: Web-Formular verknüpfen
+  href: link-form.md
+- name: Für Administratoren
+  topicHref: ../admin/style-subscription-page.md
+  items:
+  - name: Design der Abonnement-Seite
+    href: ../admin/style-subscription-page.md
+  - name: Richtlinie für Customer Centre-Passwörter
+    href: ../admin/password-policy.md

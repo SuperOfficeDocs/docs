@@ -1,0 +1,16 @@
+items:
+- name: Überblick
+  href: index.md
+- name: Ansicht Suchen
+  href: find-screen.md
+- name: Suchkriterien
+  href: search-criteria.md
+- name: Volltextsuche
+  href: freetext-search.md
+- name: Suche aus dem Navigator
+  href: in-navigator.md
+- name: Suche in Dialogfelder
+  href: in-dialogs.md
+- name: Für Administratoren
+  href: ../admin/toc.yml
+  topicHref: ../admin/configure-free-text-search.md

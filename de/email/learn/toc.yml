@@ -1,0 +1,18 @@
+items:
+- name: Überblick
+  href: ../index.yml
+- name: Einführung
+  href: index.md
+- name: Standard-E-Mail-Client in SuperOffice ändern
+  href: change-default-mail-client.md
+- name: SuperOffice Posteingang
+  href: ../inbox/learn/toc.yml
+  topicHref: ../inbox/learn/index.md
+- name: Für Admins
+  topicHref: ../admin/add-email-template.md
+  items:
+  - name: E-Mail-Vorlage hinzufügen
+    href: ../admin/add-email-template.md
+  - name: Postfachverwaltung
+    href: ../admin/mailbox/toc.yml
+    topicHref: ../admin/mailbox/index.md

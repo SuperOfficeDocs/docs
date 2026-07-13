@@ -1,0 +1,25 @@
+items:
+- name: Überblick
+  href: index.md
+- name: Neues Formular erstellen
+  href: create.md
+- name: Feldoptionen
+  href: field-options.md
+- name: Formularaktionen definieren
+  href: define-form-actions.md
+- name: Formularvorlagen
+  href: form-templates.md
+- name: Formulare veröffentlichen
+  href: publish.md
+- name: Formularstatistiken anzeigen
+  href: view-statistics.md
+- name: Formularübermittlungen verarbeiten
+  href: process-submissions.md
+- name: Anleitung - Kontaktieren-Formular
+  href: tutorial-contact-me.md
+- name: Anleitung - Anmeldung zum Newsletter
+  href: tutorial-sign-up.md
+- name: Schriftarten für Formulare verwalten
+  href: ../admin/manage-fonts.md
+- name: Einschränkungen für Formularfelder
+  href: ../admin/form-field-restrictions.md

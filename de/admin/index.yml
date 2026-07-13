@@ -1,0 +1,114 @@
+### YamlMime:SubCategory
+
+yamlMime: SubCategory
+
+title: Benutzerverwaltung und Systemeinstellungen
+summary: "Erfahren Sie mehr über Lizenzen, Rollen und Benutzer, Sprachen und Lokalisierungen, den Import externer Inhalte und die Funktionsweise unserer KI-Dienste."
+language: de
+
+metadata:
+  title: Benutzerverwaltung und Systemeinstellungen
+  description: "Lizenzen, Benutzerverwaltung, Sprachen und Lokalisierung, Import"
+  so.product: administration
+  so.topic: landing-page
+  author: Help and Learn
+  so.author: Kirsti A.
+  so.date: 11.29.2022
+
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+
+landingContent:
+
+  # Card
+  - title: Lizenzen
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Überblick über Lizenzen
+          url: license/index.md
+        - text: Die Ansicht Lizenzen
+          url: license/index.md
+        - text: Lizenz aktivieren
+          url: license/activate.md
+
+  # Card
+  - title: "Listen, Voreinstellungen, Optionen und Einstellungen"
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Listen
+          url: lists/index.md
+        - text: Einstellungen
+          url: preferences/index.md
+        - text: Optionen
+          url: options/index.md
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: Globale Einstellungen
+          url: preferences/index.md#global
+
+  # Card
+  - title: Benutzerverwaltung
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Rollen
+          url: user-management/role/index.md
+        - text: Rolle erstellen
+          url: user-management/role/create-role.md
+        - text: Benutzer
+          url: user-management/index.md
+        - text: Benutzer hinzufügen
+          url: user-management/add-associate.md
+        - text: Benutzerinformationen aktualisieren
+          url: user-management/update-user.md
+        - text: Benutzergruppen verwalten
+          url: user-management/user-groups.md
+        - text: Unsere Firmen verwalten
+          url: user-management/our-companies.md
+
+  # Card
+  - title: Importieren
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Importeinstellungen konfigurieren
+          url: import/settings.md
+        - text: Aus Excel importieren
+          url: import/from-excel.md
+        - text: Produkte aus Excel importieren
+          url: import/products-from-excel.md
+        - text: Aus Gmail importieren
+          url: import/from-gmail.md
+        - text: Aus Outlook importieren
+          url: import/from-outlook.md
+        - text: Aus ERP importieren
+          url: import/from-erp.md
+
+  # Card
+  - title: AI
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Kategorisierung
+          url: ../ai/learn/categorization.md
+        - text: Textanalyse
+          url: ../ai/learn/text-analysis.md
+
+ # Card
+  - title: ERP
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Mit ERP verbinden
+          url: ../erp/learn/connect.md
+        - text: Synchronisierung deaktivieren
+          url: ../erp/learn/disconnect.md

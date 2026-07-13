@@ -1,0 +1,11 @@
+items:
+- name: Einführung
+  href: index.md
+- name: Statusüberwachung einrichten
+  href: set-up.md
+- name: Statusüberwachung aktualisieren
+  href: update.md
+- name: Zählereinstellungen (Zeitraum)
+  href: counter-settings.md
+- name: Verkauf - Betragsklasse hinzufügen
+  href: sale-amount-class.md

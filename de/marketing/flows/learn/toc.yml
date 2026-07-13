@@ -1,0 +1,21 @@
+items:
+- name: Überblick
+  href: index.md
+- name: Neuen Flow erstellen
+  href: create.md
+- name: Flow aktualisieren
+  href: update.md
+- name: Flow aufteilen
+  href: split.md
+- name: Flowaktionen definieren
+  href: define-flow-actions.md
+- name: Inhalt erstellen
+  href: content.md
+- name: Feldoptionen
+  href: step-settings.md
+- name: Ausführen, pausieren
+  href: run-pause-end.md
+- name: Teilnehmer
+  href: participants.md
+- name: Statistik anzeigen
+  href: view-statistics.md

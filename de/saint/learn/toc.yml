@@ -1,0 +1,6 @@
+items:
+- name: Einführung - Statuskontrollen
+  href: index.md
+- name: Für Admins
+  href: ../admin/toc.yml
+  topicHref: ../admin/index.md

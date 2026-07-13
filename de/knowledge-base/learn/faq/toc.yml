@@ -1,0 +1,11 @@
+items:
+- name: Überblick
+  href: index.md
+- name: FAQ-Eintrag erstellen
+  href: create.md
+- name: FAQ-Einträge bearbeiten oder löschen
+  href: edit.md
+- name: FAQ-Einträge veröffentlichen
+  href: publish.md
+- name: Workflowstufen
+  href: workflow.md

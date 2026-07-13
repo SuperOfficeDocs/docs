@@ -1,0 +1,26 @@
+items:
+- name: Überblick
+  href: index.md
+- name: Neue Kampagne erstellen
+  topicHref: create/index.md
+  items:
+  - name: Überblick
+    href: create/index.md
+  - name: Neue Kampagne - E-Mail
+    href: create/tutorial-email-mailing.md
+  - name: Neue Kampagne - SMS
+    href: create/tutorial-sms-mailing.md
+  - name: Neue Kampagne - Dokument
+    href: create/tutorial-document-mailing.md
+  - name: Neue Kampagne - Formularantwort
+    href: create/tutorial-form-mailing.md
+  - name: Test-E-Mail senden an
+    href: create/send-test-email.md
+- name: Statistik anzeigen
+  href: view-statistics.md
+- name: Kampagne erneut versenden
+  href: resend.md
+- name: Einstellungen für Kampagnen
+  href: ../admin/define-settings-for-mailings.md
+- name: Kampagnen-Domain
+  href: ../admin/add-domain.md

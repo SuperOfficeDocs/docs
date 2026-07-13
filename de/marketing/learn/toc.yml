@@ -1,0 +1,40 @@
+items:
+- name: Überblick
+  href: index.md
+  
+- name: Ordner erstellen
+  href: create-folder.md
+- name: Nachrichtenvorlagen
+  href: message-templates.md
+- name: Bilder hinzufügen
+  href: add-images.md
+- name: Beste Praktiken
+  href: best-practices.md
+
+- name: Kampagnen
+  href: ../mailing/learn/toc.yml
+  topicHref: ../mailing/learn/index.md
+
+- name: Drag-and-Drop-Editor
+  href: ../editor/learn/toc.yml
+  topicHref: ../editor/learn/index.md
+
+- name: Empfänger (Zielliste)
+  href: ../recipients/learn/toc.yml
+  topicHref: ../recipients/learn/index.md
+  
+- name: Überwachten Links
+  href: ../tracked-links/learn/toc.yml
+  topicHref: ../tracked-links/learn/index.md
+
+- name: Formulare
+  href: ../forms/learn/toc.yml
+  topicHref: ../forms/learn/index.md
+
+- name: Flows
+  href: ../flows/learn/toc.yml
+  topicHref: ../flows/learn/index.md
+
+- name: Conversion-Tracking
+  href: ../utm/learn/toc.yml
+  topicHref: ../utm/learn/index.md

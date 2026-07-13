@@ -1,0 +1,25 @@
+items:
+- name: Überblick
+  href: ../index.yml
+- name: Erste Schritte
+  href: ../getting-started.md
+- name: Ansichten anpassen
+  href: ../adjusting-views.md
+- name: Lizenzen
+  href: ../license/toc.yml
+  topicHref: ../license/index.md
+- name: Einstellungen
+  href: ../preferences/toc.yml
+  topicHref: ../preferences/index.md
+- name: Optionen
+  href: ../options/toc.yml
+  topicHref: ../options/index.md
+- name: Listen
+  href: ../lists/toc.yml
+  topicHref: ../lists/index.md
+- name: Benutzerverwaltung
+  href: ../user-management/toc.yml
+  topicHref: ../user-management/index.md
+- name: Importieren
+  href: ../import/toc.yml
+  topicHref: ../import/index.md

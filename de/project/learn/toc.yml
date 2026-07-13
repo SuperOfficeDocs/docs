@@ -1,0 +1,25 @@
+items:
+- name: Überblick
+  href: ../index.yml
+- name: Einführung
+  href: index.md
+- name: Projekt erstellen
+  href: create.md
+- name: Projektbild hinzufügen
+  href: add-image.md
+- name: Projekt bearbeiten
+  href: edit.md
+- name: Projekte zusammenführen
+  href: merge-projects.md
+- name: Projekt löschen
+  href: delete.md
+- name: Projektmitglieder
+  href: project-members/toc.yml
+  topicHref: project-members/index.md
+- name: Projektleitfaden
+  href: project-guides.md
+- name: Tutorial
+  href: tutorial.md
+- name: Für Admins
+  href: ../admin/toc.yml
+  topicHref: ../admin/index.md
