@@ -1,4 +1,4 @@
-﻿---
+---
 uid: whats-new-70-osql
 title: OSQL meets Sentry
 description: NetServer 7.0
@@ -33,7 +33,7 @@ T0."assignedBy", T0."registered",
 T0."registered_associate_id",
 T0."mother_id", T1."forAll",
 T1."forAssocId", T1."forGroupId"
-FROM CRM5."APPOINTMENT" T0 
+FROM CRM5."APPOINTMENT" T0
 INNER JOIN CRM5."VISIBLEFOR" T1
 ON (T0."appointment_id" = T1."appointmentId")
 WHERE DATEPART(year, T0."do_by") = 2010

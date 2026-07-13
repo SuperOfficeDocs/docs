@@ -110,7 +110,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `GetPossibleDashQuickFiltersAsync(Int32, CancellationToken)`
   * Method `SaveDashQuickFiltersAsync(Int32, QuickFilterInfo[], CancellationToken)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -279,7 +278,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `LockReader<T>(SoDataReader, Func<T>)`
 
-#### SuperOffice.Data.SQL.TargetedLeftOuterJoin<TargetTableInfo> is Modified
+#### SuperOffice.Data.SQL.TargetedLeftOuterJoin\<TargetTableInfo\> is Modified
 
 * New items
   * Method `TargetedLeftOuterJoin(Equal, Restriction)`
@@ -289,7 +288,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `GetQuickFilterInfoTableInfo()`
   * Method `GetTimeKeepingTableInfo()`
-
 
 ### Assembly: SoDatabase.BusinessLogic
 
@@ -364,5 +362,3 @@ The following represent changes to SuperOffice database schema.
 * `SuperOffice.CD.DSL.Database.Steps_UserPreference.UserPreference_03_Flags_Migration`
 * `SuperOffice.CD.DSL.Database.T_QuickFilterInfo`
 * `SuperOffice.CD.DSL.Database.T_TimeKeeping`
-
-

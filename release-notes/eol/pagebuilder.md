@@ -25,6 +25,5 @@ This message is a heads up for those who have used this possibility to keep Page
 
 You are recommended to switch to the [Screen Designer][1].
 
-<!-- Referenced links -->
-[1]: ../../docs/en/customization/screen-designer/admin/index.md
-[2]: ../../docs/en/ui/web-app/pagebuilder/index.md
+[1]: ../../docs/en/customization/screen-designer/admin/index
+[2]: ../../docs/en/ui/web-app/pagebuilder/index

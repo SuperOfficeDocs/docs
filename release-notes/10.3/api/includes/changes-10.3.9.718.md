@@ -3,7 +3,6 @@ uid: version_10.3.9.718_changes
 date: 09.15.2024
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.3.8.2017 and v10.3.9.718
 
 ## Web Services
@@ -81,7 +80,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `SR_WORKFLOW_ADDEDTOFLOW`
   * Field `SR_WORKFLOWS_COPY_FLOW`
 
-#### SuperOffice.Util.ThreadedQueueProcessor<T> is Modified
+#### SuperOffice.Util.ThreadedQueueProcessor\<T\> is Modified
 
 * New items
   * Property `QueueLength`
@@ -97,7 +96,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.ArchiveLists.SaleExtenderBase is Modified
 
-#### SuperOffice.CRM.Entities.EntityDetailsHelper<TParent, TChild> is Modified
+#### SuperOffice.CRM.Entities.EntityDetailsHelper\<TParent, TChild\> is Modified
 
 * New items
   * Method `Edit(TChild)`

@@ -21,7 +21,7 @@ In SuperOffice 8.1, the dictionary has been changed. The new [CDD (Continuous Da
 
 There are several changes in the 8.1 database. Five new tables are added during the upgrade.
 
-* There is a new table that will support a generic "favorite" (yellow star) functionality across clients.
+* There is a new table that will support a generic "favorite" (yellow star) functionality across clients.
 
 * We have planned new functionality and there are 4 new tables created for this:
   * `Ticket_Type`
@@ -37,6 +37,5 @@ We have also added new fields on several tables and increased field length on ot
 
 Read more about changes in the database from [7.5 to 8.0][2].
 
-<!-- Referenced links -->
-[1]: ../../docs/en/database/dictionary/index.md
-[2]: changes-75-80.md
+[1]: ../../docs/en/database/dictionary/index
+[2]: ./changes-75-80

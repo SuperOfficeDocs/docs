@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD013-->
 ## Web Services
 
 These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
@@ -9255,7 +9254,7 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `ExecuteCommandAsync<TPluginType, TEntity>(String, CommandActionResult, TEntity, CancellationToken)`
   * Method `GetCommandsAsync<TPluginType, TEntity>(TEntity, CancellationToken)`
 
-#### SuperOffice.CRM.Services.Implementation.CustomCommands.ICustomCommandPlugin<TEntity> is Modified
+#### SuperOffice.CRM.Services.Implementation.CustomCommands.ICustomCommandPlugin\<TEntity\> is Modified
 
 * Deleted items
   * Method `ExecuteCommand(String, CommandActionResult, TEntity)`

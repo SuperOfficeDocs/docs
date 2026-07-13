@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD024 MD013-->
 ## Changes from v10.1.2.1565 to v10.1.5.2031
 
 ### Web Services

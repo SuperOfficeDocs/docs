@@ -3,7 +3,6 @@ uid: version_10.3.5.599_changes
 date: 04.30.2024
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD013 -->
 Changes from v10.3.4.448 and v10.3.5.599
 
 ## Web Services
@@ -211,7 +210,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `ContactPersonAsEntityExtenderBase(Features, String)`
 
-#### SuperOffice.CRM.ArchiveLists.ContactWithPersonExtenderBase<PersonExtenderClass> is Modified
+#### SuperOffice.CRM.ArchiveLists.ContactWithPersonExtenderBase\<PersonExtenderClass\> is Modified
 
 * New items
   * Method `ContactWithPersonExtenderBase(Features, String)`

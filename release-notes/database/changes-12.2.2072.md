@@ -1094,7 +1094,7 @@ Update document template to sync emailmode with privacytype
 
 **Step 24**
 
-Improve GDPR field descriptions: adopt the more meaningful list-specific text for LegalBase and ConsentSource (name/rank/tooltip/key), and fix the copy/paste ConsentPerson.consentPurpose_id description ('Legal base' -> 'Consent purpose').
+Improve GDPR field descriptions: adopt the more meaningful list-specific text for LegalBase and ConsentSource (name/rank/tooltip/key), and fix the copy/paste ConsentPerson.consentPurpose_id description ('Legal base' -\> 'Consent purpose').
 
 * Modify table LegalBase
 name, tooltip, rank, key

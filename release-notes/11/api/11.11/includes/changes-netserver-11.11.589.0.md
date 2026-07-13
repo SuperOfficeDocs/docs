@@ -41,7 +41,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `GetProjectEntityWithoutMembersAsync(Int32, CancellationToken)`
   * Method `SaveProjectEntityWithoutMembersAsync(ProjectEntity, CancellationToken)`
 
-
 ### Assembly: SuperOffice.Services.Implementation
 
 ### New Types
@@ -98,7 +97,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `GetProjectEntityWithoutMembersAsync(Int32, CancellationToken)`
   * Method `SaveProjectEntityWithoutMembersAsync(ProjectEntity, CancellationToken)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -125,20 +123,16 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.ExplicitAnonymousAllowed`
   * Property `.ExplicitCommonDBConnection`
 
-
-
 ##### SuperOffice.Configuration.ConfigFile.IDataExplicitConfiguration is Modified
 
 * Deleted items
   * Property `.IDataExplicitConfigurationAnonymousAllowed`
   * Property `.IDataExplicitConfigurationCommonDBConnection`
 
-
 ##### SuperOffice.Configuration.ConfigFile.TelemetryRoleName is Modified
 
 * New items
   * Field `.TelemetryRoleNameWebApi`
-
 
 #### SuperOffice.Configuration.VersionPropertyNames is Modified
 
@@ -216,7 +210,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `ActivityBoard`
   * Field `ContractManager`
   * Field `Map4You`
-
 
 ### Assembly: SoDatabase
 
@@ -296,7 +289,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `TicketCreated`
   * Field `TicketRelationDeleted`
 
-
 ### Assembly: SoDatabase.BusinessLogic
 
 ### New Types
@@ -323,9 +315,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.ArchiveLists.PersonProjectsExtender is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.PersonProjectsFindExtender is Modified
-
 
 #### SuperOffice.CRM.ArchiveLists.RestrictionStorageFactory is Modified
 
@@ -340,7 +330,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.ArchiveLists.TicketExtenderBase is Modified
 
-
 #### SuperOffice.Util.RagAIHelper is Modified
 
 * Deleted items
@@ -350,7 +339,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `CreateFormsDesignSessionFromUrl(String, String, CancellationToken)`
   * Method `NextFormsDesignSessionCssRule(String, String, CancellationToken)`
   * Method `PutDocument(String, String, String, String, RagType, Dictionary<String, Object>)`
-
 
 ## Continuous Database
 
@@ -369,6 +357,3 @@ The following represent changes to SuperOffice database schema.
 * New items
   * Field `API`
   * Field `Flow`
-
-
-

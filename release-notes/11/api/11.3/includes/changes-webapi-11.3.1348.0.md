@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD012 MD013-->
 Changes from v11.2.487.0 and v11.3.1348.0
 
 ### Assembly: SuperOffice.WebApi

@@ -3,7 +3,6 @@ uid: version_10.3.4.448_changes
 date: 04.02.2024
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD013-->
 Changes from v10.3.3.610 and v10.3.4.448
 
 ## Web Services
@@ -140,7 +139,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `CreateDictionaryFromEnumerable<KeyType, ValueType>(IEnumerable<ValueType>, GetKeyFromValueItem<KeyType, ValueType>, IEqualityComparer<KeyType>, Predicate<ValueType>)`
   * Method `CreateDictionaryFromEnumerable<KeyType, ValueType>(IEnumerable<ValueType>, GetKeyFromValueItem<KeyType, ValueType>, Predicate<ValueType>)`
 
-##### SuperOffice.Util.CollectionOps.GetKeyFromValueItem<KeyType, ValueType> is Modified
+##### SuperOffice.Util.CollectionOps.GetKeyFromValueItem\<KeyType, ValueType\> is Modified
 
 ### Assembly: SoDatabase
 
@@ -317,7 +316,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `NextStepId(Int32, Int32)`
   * Method `TryAddPersonsToWorkFlow(Int32, Int32[])`
 
-#### SuperOffice.Data.SQL.TargetedSelect<MainTableInfo> is Modified
+#### SuperOffice.Data.SQL.TargetedSelect\<MainTableInfo\> is Modified
 
 * New items
   * Method `Count()`

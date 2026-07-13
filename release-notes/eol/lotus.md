@@ -39,5 +39,4 @@ You are recommended to switch to [SuperOffice Inbox][1]. The inbox in SuperOffic
 
 * Security issues due to legacy libraries used in the software create a high business risk.
 
-<!-- Referenced links -->
-[1]: ../../docs/en/email/inbox/learn/index.md
+[1]: ../../docs/en/email/inbox/learn/index

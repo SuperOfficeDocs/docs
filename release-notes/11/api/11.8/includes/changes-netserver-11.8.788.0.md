@@ -48,7 +48,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `DeleteTicketRelationEntityAsync(Int32, CancellationToken)`
   * Method `SaveTicketRelationEntityAsync(TicketRelationEntity, CancellationToken)`
 
-
 ### Assembly: SuperOffice.Services.Implementation
 
 ### New Types
@@ -111,7 +110,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `DeleteTicketRelationEntityAsync(Int32, CancellationToken)`
   * Method `SaveTicketRelationEntityAsync(TicketRelationEntity, CancellationToken)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -140,7 +138,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Deleted items
   * Field `.TelemetryRoleNameCrmWebCore`
 
-
 #### SuperOffice.CRM.UserPreferenceStrings is Modified
 
 * Modified items
@@ -150,7 +147,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `.CopilotServiceProcedure`
   * Field `.CopilotServiceSystemPrompt`
-
 
 #### SuperOffice.Globalization.RC is Modified
 
@@ -200,7 +196,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Deleted items
   * Field `AccountId`
   * Field `SoClaimsPrincipal`
-
 
 ### Assembly: SoDatabase
 
@@ -320,7 +315,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Modified items
   * Method `.PersonSentryQueryInfoUpdateTypedMembers(PrivateSelect)`
 
-
 #### SuperOffice.CRM.Security.ProjectSentryQueryInfo is Modified
 
 * Modified items
@@ -416,13 +410,13 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `CreateSentries(Select, SoCommand)`
   * Method `SetParentSentryLookups(ISoDataLookup)`
 
-#### SuperOffice.CRM.Security.Sentry<TMainTable> is Modified
+#### SuperOffice.CRM.Security.Sentry\<TMainTable\> is Modified
 
 * New items
   * Method `ComputeGhostTableRights()`
   * Method `ModifySameDayRights(ETableRight&, String&)`
 
-#### SuperOffice.CRM.Security.SentryQueryInfo<TMainTable> is Modified
+#### SuperOffice.CRM.Security.SentryQueryInfo\<TMainTable\> is Modified
 
 * Deleted items
   * Method `UpdateRelatedTableInfo<T>(PrivateSelect, T&)`
@@ -491,7 +485,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `TrackEventSender(IOptions<OnlineConfiguration>, ILogger<TrackEventSender>, IAsyncQueue<TrackEventItem>)`
   * Method `ProcessItemAsync(IAsyncQueueProcessItemContext<TrackEventItem>, CancellationToken)`
 
-
 ### Assembly: SoDatabase.BusinessLogic
 
 ### New Types
@@ -520,12 +513,10 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.FieldValueStorageValues`
   * Method `.FieldValueStorageFieldValueStorage()`
 
-
 #### SuperOffice.CRM.Sale.QuoteData is Modified
 
 * Modified items
   * Method `CreateQuoteLine(Int32)`
-
 
 ### Assembly: SuperOffice.Plugins
 
@@ -543,5 +534,3 @@ The following represent changes to SuperOffice database schema.
 * `SuperOffice.CD.DSL.Database.SuperOffice_135_PrimaryKeys`
 * `SuperOffice.CD.DSL.Database.SuperOffice_136_AvailableFonts`
 * `SuperOffice.CD.DSL.Database.T_AvailableFonts`
-
-

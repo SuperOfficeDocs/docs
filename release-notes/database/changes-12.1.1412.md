@@ -32,7 +32,7 @@ In addition, this step will give these two rights to all roles with the general 
 
 **Step 14**
 
-<b>NB: Due to a Merge/RedAlert f...up, the functionality in this step has been moved to the Optimization name; and should properly live there!</b>
+**NB: Due to a Merge/RedAlert f...up, the functionality in this step has been moved to the Optimization name; and should properly live there!**
 Modify indexes that have a major impact on performance in Online
 
 **Step 18**

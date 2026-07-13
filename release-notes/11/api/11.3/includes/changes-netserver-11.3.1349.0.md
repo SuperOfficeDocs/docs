@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD012 MD013-->
 Changes from v11.2.664.0 and v11.3.1349.0
 
 ## Web Services
@@ -97,7 +96,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 * New items
   * Field `CustomObjects`
-
 
 ### Assembly: SuperOffice.Services.Implementation
 
@@ -861,7 +859,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Method `WorkflowAgent(IEmailFlowImplementation, IWorkflowEventImplementation, IWorkflowEventResultImplementation, IWorkflowFilterImplementation, IWorkflowGoalImplementation, IWorkflowStepBaseImplementation, IWorkflowStepOptionBaseImplementation, IWorkflowTriggerImplementation, IWorkflowWaitForActionImplementation, ISoRequestItemsAccessor, IDebugUser, IServiceCallsRepository, IScriptingConfiguration, IOnlineConfiguration)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -892,7 +889,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * Deleted items
   * Property `.DiagnosticsLogEventRecorder`
-
 
 ##### SuperOffice.Configuration.ConfigFile.IDiagnosticsConfiguration is Modified
 
@@ -1027,7 +1023,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `UtmSaving`
 
-#### SuperOffice.Threading.AsyncQueueProcessor<TQueue, TItem> is Modified
+#### SuperOffice.Threading.AsyncQueueProcessor\<TQueue, TItem\> is Modified
 
 * Deleted items
   * Method `AsyncQueueProcessor(TQueue)`
@@ -1048,7 +1044,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `GetImageTypeFromBytes(Byte[], String)`
   * Method `ResolveUrlOrBase64ImageNoReductionAsync(String, CancellationToken)`
-
 
 ### Assembly: SoDatabase
 
@@ -1114,18 +1109,15 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `.CategoryFieldsCategoryGroup`
   * Field `.CategoryFieldsEnableLeadStatus`
 
-
 ##### SuperOffice.CRM.Data.DBC.EjscriptFields is Modified
 
 * New items
   * Field `.EjscriptFieldsBlockedVerbs`
 
-
 ##### SuperOffice.CRM.Data.DBC.ExtraTablesFields is Modified
 
 * New items
   * Field `.ExtraTablesFieldsTableNumber`
-
 
 ##### SuperOffice.CRM.Data.DBC.NotifyFields is Modified
 
@@ -1211,7 +1203,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `CategoryGroup`
   * Property `EnableLeadStatus`
 
-#### SuperOffice.CRM.Rows.CustomTableRow<TTableInfo> is Modified
+#### SuperOffice.CRM.Rows.CustomTableRow\<TTableInfo\> is Modified
 
 * New items
   * Method `GetFromPrimaryKeyAsync(TTableInfo, Int32, CancellationToken)`
@@ -1284,8 +1276,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ##### SuperOffice.CRM.Security.Sentry.DataRightCache is Modified
 
-
-
 #### SuperOffice.CRM.Services.Implementation.ServiceFacades.ServiceFacade is Modified
 
 * Modified items
@@ -1310,8 +1300,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ##### SuperOffice.Data.Dialect.Dialect.NonParameterizedInt is Modified
 
-
-
 #### SuperOffice.Data.ServicePreferenceMapper is Modified
 
 * New items
@@ -1327,7 +1315,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `GetBoardViewSettingsTableInfo()`
   * Method `GetUtmParametersTableInfo()`
-
 
 ### Assembly: SoDatabase.BusinessLogic
 
@@ -1362,15 +1349,11 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.ArchiveLists.ExtraFieldExtenderBase is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.TicketMessageExtenderBase is Modified
-
 
 #### SuperOffice.CRM.ArchiveLists.TicketPriorityExtenderBase is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.TicketStatusExtenderBase is Modified
-
 
 #### SuperOffice.CRM.Entities.AppointmentMatrix is Modified
 
@@ -1407,7 +1390,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `GetHistoryIconHint(ListTableRow)`
 
 #### SuperOffice.CRM.Lists.ProjectStatusProvider is Modified
-
 
 #### SuperOffice.CRM.Notification.PushNotificationServiceManager is Modified
 
@@ -1452,10 +1434,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ##### SuperOffice.Data.Dialect.MassOperations.ERowStatus is Modified
 
-
-
 ##### SuperOffice.Data.Dialect.MassOperations.RowInfo is Modified
-
 
 * New items
   * Method `GetUpdateTargetFromTempSql(SoTable, SoTable, SoField, SoField, SoField, IEnumerable<String>)`
@@ -1506,7 +1485,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `RagAIHelper(IOptions<RagAIConfiguration>, ILogger<RagAIHelper>, ICacheManager)`
 
-
 ### Assembly: SoLicense
 
 ### Modified Types
@@ -1524,7 +1502,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `SignatureValidator(SignedPublicKey, ILogger)`
 * New items
   * Method `SignatureValidator(SignedPublicKey, ILogger<SignatureValidator>)`
-
 
 ## Continuous Database
 
@@ -1592,6 +1569,3 @@ The following represent changes to SuperOffice database schema.
 * New items
   * Field `ContactId`
   * Field `PersonId`
-
-
-

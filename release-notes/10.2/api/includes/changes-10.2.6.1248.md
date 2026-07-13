@@ -3,7 +3,6 @@ uid: version_10.2.6.1248_changes
 date: 06.16.2023
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.2.5.1175 and v10.2.6.1248
 
 ## Web Services

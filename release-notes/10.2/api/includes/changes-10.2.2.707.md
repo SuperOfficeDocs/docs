@@ -4,7 +4,6 @@ date: 02.15.2023
 generated: true
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.2.1.1698 and v10.2.2.706
 
 ## Web Services
@@ -292,7 +291,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `AdditionalInfo`
 
-#### SuperOffice.Data.SQL.TargetedSelect<MainTableInfo> is Modified
+#### SuperOffice.Data.SQL.TargetedSelect\<MainTableInfo\> is Modified
 
 * Modified items
   * Method `SetIgnoreSentry(Boolean)`

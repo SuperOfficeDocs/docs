@@ -2,7 +2,7 @@
 uid: news-core-10.3
 title: What's new in SuperOffice Core CRM 10.3
 description: Release notes. What's new in SuperOffice Core CRM 10.3
-author: SuperOffice AS – Product and Engineering
+author: SuperOffice AS - Product and Engineering
 date: 11.19.2024
 version: 10.3
 content_type: release-note
@@ -26,11 +26,10 @@ audience_tooltip: SuperOffice CRM
 * [Dashboard - New standard request tiles (10.3.2)][2]
 * [Dashboard - Request tiles (10.3.1)][1]
 
-<!-- Referenced links-->
-[1]: 10.3.1-update.md
-[2]: 10.3.2-update.md
-[6]: 10.3.6-update.md
-[9]: 10.3.9-update.md
-[10]: 10.3.10-update.md
-[11]: 10.3.11-update.md
-[12]: 10.3.12-update.md
+[1]: ./10.3.1-update
+[2]: ./10.3.2-update
+[6]: ./10.3.6-update
+[9]: ./10.3.9-update
+[10]: ./10.3.10-update
+[11]: ./10.3.11-update
+[12]: ./10.3.12-update

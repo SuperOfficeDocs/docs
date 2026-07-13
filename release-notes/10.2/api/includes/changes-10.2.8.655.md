@@ -3,7 +3,6 @@ uid: version_10.2.8.655_changes
 date: 09.25.2023
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.2.6.1248 and v10.2.8.655
 
 ## Web Services
@@ -820,7 +819,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `ColFavouritePersonAssociateId`
 
-#### SuperOffice.CRM.ArchiveLists.NotificationNotificationExtender<Info> is Modified
+#### SuperOffice.CRM.ArchiveLists.NotificationNotificationExtender\<Info\> is Modified
 
 * New items
   * Field `OriginatorFullNameColumnName`

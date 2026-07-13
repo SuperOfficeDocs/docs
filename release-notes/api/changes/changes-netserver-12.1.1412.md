@@ -784,19 +784,19 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `AuthenticateAsync(ClaimsIdentity, CancellationToken, Claim[])`
   * Method `SignInToCurrentContext()`
 
-#### SuperOffice.Threading.AsyncQueue<TItem> is Modified
+#### SuperOffice.Threading.AsyncQueue\<TItem\> is Modified
 
 * New items
   * Property `Count`
   * Method `DrainQueue()`
 
-#### SuperOffice.Threading.AsyncQueueBase<TItem> is Modified
+#### SuperOffice.Threading.AsyncQueueBase\<TItem\> is Modified
 
 * New items
   * Property `Count`
   * Method `DrainQueue()`
 
-#### SuperOffice.Threading.IAsyncQueueBase<TItem> is Modified
+#### SuperOffice.Threading.IAsyncQueueBase\<TItem\> is Modified
 
 * New items
   * Property `Count`

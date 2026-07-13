@@ -3,7 +3,6 @@ uid: version_10.2.5.1175_changes
 date: 05.26.2023
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.2.4.796 and v10.2.5.1175
 
 ## Web Services
@@ -294,7 +293,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `ColumnHierarchyName`
   * Field `ColumnHierarchyParentId`
 
-#### SuperOffice.CRM.ArchiveLists.NotificationNotificationExtender<Info> is Modified
+#### SuperOffice.CRM.ArchiveLists.NotificationNotificationExtender\<Info\> is Modified
 
 * New items
   * Field `UpdateTypeColumnName`

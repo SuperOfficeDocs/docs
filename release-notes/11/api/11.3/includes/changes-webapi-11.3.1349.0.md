@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD012 MD013-->
 Changes from v11.2.664.0 and v11.3.1349.0
 
 ### Assembly: SuperOffice.WebApi
@@ -209,6 +208,3 @@ Changes from v11.2.664.0 and v11.3.1349.0
 * New items
 
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.Mailing is New
-
-
-

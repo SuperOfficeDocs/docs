@@ -116,7 +116,6 @@ Changes from v11.8.788 and v11.9.1204.0
 * New items
   * Field `.AssociatesFirstLoginSession`
 
-
 ##### SuperOffice.WebApi.Data.UserPreferenceStrings.NetServices is Modified
 
 * New items
@@ -130,6 +129,3 @@ Changes from v11.8.788 and v11.9.1204.0
 
 * New items
   * Property `CustomObjectEntity`
-
-
-

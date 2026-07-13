@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD012 MD013-->
 Changes from v11.1.447 and v11.2.487.0
 
 ## Web Services
@@ -35,7 +34,6 @@ These changes are observed in NetServer web services.
 
 * New items
   * Method `GetNextTableNumberAsync(CancellationToken)`
-
 
 ### Assembly: SuperOffice.Services.Implementation
 

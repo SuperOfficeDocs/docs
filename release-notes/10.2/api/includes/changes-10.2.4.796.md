@@ -4,7 +4,6 @@ date: 03.30.2023
 generated: true
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD013-->
 Changes from v10.2.3.544 and v10.2.4.796
 
 ## Web Services
@@ -479,7 +478,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Deleted items
   * Method `CreateAsyncWrapped(String, String)`
 
-#### SuperOffice.CRM.ArchiveLists.NotificationNotificationExtender<Info> is Modified
+#### SuperOffice.CRM.ArchiveLists.NotificationNotificationExtender\<Info\> is Modified
 
 * Deleted items
 * New items

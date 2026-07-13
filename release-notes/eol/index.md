@@ -52,26 +52,23 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 * [Support & FAQs][4]
 * [Contact us][3]
 
-<!-- Referenced links -->
 [1]: https://community.superoffice.com/en/technical/
 [2]: https://community.superoffice.com/en/technical/forums/product-forums/
 [3]: https://community.superoffice.com/en/about/contact-us/
 [4]: https://community.superoffice.com/en/support-faqs/
 [5]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/-have-you-created-web-customizations-breaking-changes-ahead/
 [6]: https://appstore.superoffice.com/superoffice-as/synchronizer-for-superoffice
-[11]: lotus.md
-[12]: pagebuilder.md
-[13]: soap.md
-[14]: sharepoint-app.md
-[15]: reports.md
-[16]: service-compact-mode.md
+[11]: ./lotus
+[12]: ./pagebuilder
+[13]: ./soap
+[14]: ./sharepoint-app
+[15]: ./reports
+[16]: ./service-compact-mode
 [17]: https://appstore.superoffice.com/superoffice-as/superoffice-mobile-crm
-[21]: ../../docs/en/email/inbox/learn/index.md
-[22]: ../../docs/en/customization/screen-designer/admin/index.md
-[23]: ../../docs/en/api/web-services/endpoints/rest-webapi/index.md
-[24]: ../../docs/en/online/identity/superid/sign-in-services.md
-[25]: ../../integrations/sharepoint-documents/migrate/index.md
-[26]: ../../docs/en/search-options/selection/learn/index.md
-[27]: ../../docs/en/dashboard/learn/index.md
-
-<!-- Referenced images -->
+[21]: ../../docs/en/email/inbox/learn/index
+[22]: ../../docs/en/customization/screen-designer/admin/index
+[23]: ../../docs/en/api/web-services/endpoints/rest-webapi/index
+[24]: ../../docs/en/online/identity/superid/sign-in-services
+[25]: ../../integrations/sharepoint-documents/migrate/index
+[26]: ../../docs/en/search-options/selection/learn/index
+[27]: ../../docs/en/dashboard/learn/index

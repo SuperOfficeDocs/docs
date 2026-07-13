@@ -3,8 +3,7 @@ uid: version_10.5.2.332_changes
 date: 10.02.2025
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
-<- [Back](../10.5.2-update.md)
+\<- [Back](../10.5.2-update)
 
 Changes from v10.5.1.871 and v10.5.2.332
 
@@ -443,7 +442,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `.PreferenceMappingInfoDefaultValue`
 
-#### SuperOffice.Data.SQL.TargetedSelect<MainTableInfo> is Modified
+#### SuperOffice.Data.SQL.TargetedSelect\<MainTableInfo\> is Modified
 
 * New items
   * Method `SetOriginText(String)`

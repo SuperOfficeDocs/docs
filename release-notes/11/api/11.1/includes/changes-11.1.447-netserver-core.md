@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD013-->
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -1329,7 +1328,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Modified items
   * Property `Principal`
 
-#### SuperOffice.Threading.AsynchronousHandlerProcessor<TAsynchronousArgument> is Modified
+#### SuperOffice.Threading.AsynchronousHandlerProcessor\<TAsynchronousArgument\> is Modified
 
 * Deleted items
   * Property `ThreadName`
@@ -1337,7 +1336,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `ExecuteWorkAsync(CancellationToken)`
 
-#### SuperOffice.Threading.ParallelConsumerQueue<T> is Modified
+#### SuperOffice.Threading.ParallelConsumerQueue\<T\> is Modified
 
 * Deleted items
   * Property `Count`
@@ -1347,7 +1346,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `StartConsumers(Int32, Action<T>)`
   * Method `StopConsumers()`
 
-##### SuperOffice.Threading.ParallelConsumerQueue<T>.ConsumerContext is Deleted
+##### SuperOffice.Threading.ParallelConsumerQueue\<T\>.ConsumerContext is Deleted
 
 * Modified items
   * Method `Dequeue()`
@@ -1405,7 +1404,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `ResolveUrlOrBase64ImageAsync(String, Int32, CancellationToken)`
 
-#### SuperOffice.Util.KeyedMatrix<TKeyColumn, TKeyRow, TItem> is Modified
+#### SuperOffice.Util.KeyedMatrix\<TKeyColumn, TKeyRow, TItem\> is Modified
 
 * Deleted items
   * Method `MoveItems(KeyedMatrix<TKeyColumn, TKeyRow, TItem>, IEnumerable<MatrixItem<TKeyColumn, TKeyRow, TItem>>, Predicate<MatrixItem<TKeyColumn, TKeyRow, TItem>>)`
@@ -3670,7 +3669,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Deleted items
   * Method `GetCurrent()`
 
-#### SuperOffice.CRM.Cache.MDOListTableCacheTypedBase<T> is Modified
+#### SuperOffice.CRM.Cache.MDOListTableCacheTypedBase\<T\> is Modified
 
 * New items
   * Method `OnLoadAsync(CancellationToken)`
@@ -4604,7 +4603,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `ParseAsync(StringDictionary, String)`
   * Method `SetValueAsync(String, Object, Boolean)`
 
-#### SuperOffice.CRM.Entities.EntityDetailsHelper<TParent, TChild> is Modified
+#### SuperOffice.CRM.Entities.EntityDetailsHelper\<TParent, TChild\> is Modified
 
 * Deleted items
   * Method `LoadChildItems(TParent)`
@@ -5463,7 +5462,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `GetProviderAsync(String, CancellationToken)`
 
-#### SuperOffice.CRM.Lists.ListBase<TListSelect, TListItem> is Modified
+#### SuperOffice.CRM.Lists.ListBase\<TListSelect, TListItem\> is Modified
 
 * Deleted items
   * Method `OnLoad(TListSelect, SoDataReader)`
@@ -9683,13 +9682,13 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `GetFromIdxKbRootAsync(Int32, CancellationToken)`
   * Method `GetFromReaderAsync(SoDataReader, CustLangTableInfo, CancellationToken)`
 
-#### SuperOffice.CRM.Rows.CustomTableRow<TTableInfo> is Modified
+#### SuperOffice.CRM.Rows.CustomTableRow\<TTableInfo\> is Modified
 
 * Deleted items
   * Method `SetDefaults(DefaulterStrategy)`
 * Modified items
 
-##### SuperOffice.CRM.Rows.CustomTableRow<TTableInfo>.CustomTableRowIdxBase is Modified
+##### SuperOffice.CRM.Rows.CustomTableRow\<TTableInfo\>.CustomTableRowIdxBase is Modified
 
 * Deleted items
   * Method `.CustomTableRowIdxBaseop_Implicit(CustomTableRowIdxBase<TTableInfo>)`
@@ -34068,7 +34067,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `SetPreferenceAsync(String, String, String, Int32, PreferenceLevel, Boolean, Boolean, CancellationToken)`
   * Method `SetPreferenceAsync(String, String, String, CancellationToken)`
 
-#### SuperOffice.Data.SQL.TargetedSelect<MainTableInfo> is Modified
+#### SuperOffice.Data.SQL.TargetedSelect\<MainTableInfo\> is Modified
 
 * Deleted items
   * Method `Count()`
@@ -34190,7 +34189,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `RemoveLicenseFromDBAsync(String, CancellationToken)`
   * Method `UpgradeToNewPricelistAsync(String, String, String, ProgressEstimateCallback, ProgressStepCallback, CancellationToken)`
 
-#### SuperOffice.License.ModuleLicenseOwnerBase<TLink, TLinkRow> is Modified
+#### SuperOffice.License.ModuleLicenseOwnerBase\<TLink, TLinkRow\> is Modified
 
 * Deleted items
   * Method `OnPreIdUpdate()`

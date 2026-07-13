@@ -30,13 +30,12 @@ language: en
 * [Preferences - Global preference to anonymise user on reply (11.3)][3]
 * [System design - Setting a field as read-only (11.1)][1]
 
-<!-- Referenced links-->
-[1]: 11.1-update.md
-[3]: 11.3-update.md
-[6]: 11.6-update.md
-[8]: 11.8-update.md
-[9]: 11.9-update.md
-[10]: 11.10-update.md
-[11]: 11.11-update.md
-[12]: 11.12-update.md
-[13]: 11.13-update.md
+[1]: ./11.1-update
+[3]: ./11.3-update
+[6]: ./11.6-update
+[8]: ./11.8-update
+[9]: ./11.9-update
+[10]: ./11.10-update
+[11]: ./11.11-update
+[12]: ./11.12-update
+[13]: ./11.13-update

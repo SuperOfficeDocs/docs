@@ -1,9 +1,9 @@
-﻿---
+---
 uid: whats-new-70
 title: NetServer 7 enhancements
 description: NetServer 7.0
 keywords: API changes
-author: SuperOffice AS â€“ Product and engineering
+author: SuperOffice AS â€" Product and engineering
 date: 11.05.2016
 version: 7.0
 content_type: release-note
@@ -29,18 +29,17 @@ Lots of improvements to NetServer core functionality:
 * [ArchiveRestrictions][13]
 * [Dynamic archive provider][14]
 
-<!-- Referenced links -->
-[1]: real-dates.md
-[2]: aliasing-on-argumentfunctions.md
-[3]: queryexecutionhelper.md
-[4]: osql-meets-sentry.md
-[5]: groupby-and-sentry.md
-[6]: commenting-queries.md
-[7]: softtriggers.md
-[8]: fieldinfo-comments.md
-[9]: row-improvements.md
-[10]: collectionops.md
-[11]: culturedataformatter.md
-[12]: multithreading.md
-[13]: archiverestrictions.md
-[14]: dynamic-archive-provider.md
+[1]: ./real-dates
+[2]: ./aliasing-on-argumentfunctions
+[3]: ./queryexecutionhelper
+[4]: ./osql-meets-sentry
+[5]: ./groupby-and-sentry
+[6]: ./commenting-queries
+[7]: ./softtriggers
+[8]: ./fieldinfo-comments
+[9]: ./row-improvements
+[10]: ./collectionops
+[11]: ./culturedataformatter
+[12]: ./multithreading
+[13]: ./archiverestrictions
+[14]: ./dynamic-archive-provider

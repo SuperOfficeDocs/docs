@@ -2,8 +2,8 @@
 uid: news-service-10.2
 title: New and improved Service
 description: Release notes. What's new in SuperOffice Service 10.2
-keywords: 
-author: SuperOffice AS – Product and Engineering
+keywords:
+author: SuperOffice AS - Product and Engineering
 date: 12.12.2023
 version: 10.2
 content_type: release-note
@@ -32,10 +32,9 @@ category: service
 * [Search in the Find request tab gives both selections and requests (10.2.6)][6]
 * [Service/Request inside the CRM module (10.2.5)][5]
 
-<!-- Referenced links-->
-[5]: 10.2.5-update.md
-[6]: 10.2.6-update.md
-[8]: 10.2.8-update.md
-[9]: 10.2.9-update.md
-[10]: 10.2.10-update.md
-[11]: 10.2.11-update.md
+[5]: ./10.2.5-update
+[6]: ./10.2.6-update
+[8]: ./10.2.8-update
+[9]: ./10.2.9-update
+[10]: ./10.2.10-update
+[11]: ./10.2.11-update
