@@ -1,0 +1,17 @@
+items:
+- name: Introduksjon
+  href: index.md
+- name: Opprette/dupliser dashbord
+  href: create.md
+- name: Rediger/slett dashbord
+  href: update.md
+- name: Arbeide med figurer
+  href: working-with-tiles.md
+- name: Figurer med emner og UTM-data
+  href: show-leads.md
+- name: Bruke salgsmål i figurer
+  href: show-sales-targets.md
+- name: Bruke utsendelse og skjemaer i figurer
+  href: show-marketing.md
+- name: Bruke saker i figurer
+  href: show-requests.md

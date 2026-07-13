@@ -1,0 +1,3 @@
+---
+redirect_url: https://docs.superoffice.com/no/email/admin/mailbox/create-email-filter.html#delete
+---

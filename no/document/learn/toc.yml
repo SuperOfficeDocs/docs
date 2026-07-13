@@ -1,0 +1,22 @@
+items:
+- name: Oversikt
+  href: ../index.yml
+- name: Introduksjon
+  href: index.md
+- name: Dokumentbibliotek
+  href: ../library/learn/index.md
+- name: Arbeide med dokument
+  topicHref: create.md
+  items:
+  - name: Opprett nytt dokument
+    href: create.md
+  - name: Sjekke inn/ut dokument
+    href: lock.md
+  - name: Redigere eller slette dokument
+    href: edit.md
+  - name: Sende dokument som e-post
+    href: send-as-email.md
+
+- name: Dokumentmaler
+  href: ../templates/learn/toc.yml
+  topicHref: ../templates/learn/index.md

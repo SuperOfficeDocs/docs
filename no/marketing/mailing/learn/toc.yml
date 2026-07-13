@@ -1,0 +1,26 @@
+items:
+- name: Oversikt
+  href: index.md
+- name: Opprette ny utsendelse
+  topicHref: create/index.md
+  items:
+  - name: Oversikt
+    href: create/index.md
+  - name: Ny utsendelse - e-post
+    href: create/tutorial-email-mailing.md
+  - name: Ny utsendelse - SMS
+    href: create/tutorial-sms-mailing.md
+  - name: Ny utsendelse - dokument
+    href: create/tutorial-document-mailing.md
+  - name: Ny utsendelse - skjemarespons
+    href: create/tutorial-form-mailing.md
+  - name: Sende test-e-post
+    href: create/send-test-email.md
+- name: Vise statistikk
+  href: view-statistics.md
+- name: Sende utsendelse på nytt
+  href: resend.md
+- name: Innstillinger for utsendelser
+  href: ../admin/define-settings-for-mailings.md
+- name: Domene for utsendelse
+  href: ../admin/add-domain.md

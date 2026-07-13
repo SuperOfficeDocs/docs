@@ -1,0 +1,34 @@
+---
+uid: help-no-request-category-delete
+title: Slett sakskategori
+description: Slett sakskategori
+author: digitaldiina
+date: 06.10.2026
+version: 12.0
+keywords: slett sakskategori, overfør saker til, sakskategori, sak, kategori
+content_type: howto
+license: serviceessentials
+tier: starter
+audience: settings
+audience_tooltip: Innstillinger og vedlikehold
+language: no
+redirect_from: /no/request/learn/category/delete
+index: true
+---
+
+# Slett sakskategori
+
+1. I **Innstillinger og vedlikehold**, klikk på **Saker** i navigatoren og velg fanen **Kategorier**.
+
+1. Klikk på kategorinavnet du vil slette.
+
+    > [!TIP]
+    > Hvis kategorien er en underkategori, klikk på pilen til venstre for den overordnede kategorien for å vise underkategoriene.
+
+1. Klikk på **Slett** nederst i bildet.
+
+1. Klikk **OK**.
+
+1. Hvis kategorien inneholder saker, velg en ny kategori i **Overfør saker til**-listen.
+
+1. Klikk **OK**. Kategorien slettes, og sakene flyttes til den valgte kategorien.

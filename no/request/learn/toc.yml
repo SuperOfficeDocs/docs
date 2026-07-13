@@ -1,0 +1,44 @@
+items:
+- name: Oversikt
+  href: ../index.yml
+- name: Introduksjon
+  href: index.md
+- name: Håndter saker med AI
+  href: handle-request-ai.md
+- name: Finn sak
+  href: find.md
+- name: Opprette sak
+  href: create.md
+- name: Redigere melding
+  href: edit-message.md
+- name: Automatisk tilordning
+  href: assign.md
+- name: Merk sak som spam
+  href: spam.md
+- name: Ta ansvar for sak
+  href: accept.md
+- name: Be en annen saksbehandler om hjelp
+  href: transfer.md
+- name: Videresende til ekstern kontakt
+  href: forward.md
+- name: Svare kunde
+  href: reply.md
+- name: Saksrelasjoner
+  href: request-relations.md
+- name: Emneknagger
+  href: tags.md
+- name: Holde oversikt over meldinger
+  href: flag-message.md
+- name: Del sak
+  href: split-request.md
+- name: Slå sammen saker
+  href: merge.md
+- name: Dele melding
+  href: split-message.md
+- name: Avslutt sak
+  href: close.md
+- name: Slette sak
+  href: delete.md
+- name: For administratorer
+  href: ../admin/toc.yml
+  topicHref: ../admin/index.md
