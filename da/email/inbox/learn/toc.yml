@@ -1,0 +1,19 @@
+items:
+- name: Oversigt
+  href: index.md
+- name: Opsæt indbakke
+  href: setup.md
+- name: Vis e-mail-meddelelse
+  href: preview.md
+- name: Skriv e-mail
+  href: compose.md
+- name: Vedligehold afsendere
+  href: manage-senders.md
+- name: Acceptér invitation
+  href: invitations.md
+- name: Arkivér e-mail
+  href: archive.md
+- name: Opret opgave
+  href: create-task.md
+- name: Opret sag
+  href: create-request.md

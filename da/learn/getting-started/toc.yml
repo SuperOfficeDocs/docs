@@ -1,0 +1,16 @@
+items:
+- name: Oversigt
+  href: index.md
+- name: Layoutelementerne
+  href: main-screen/toc.yml
+  topicHref: main-screen/index.md
+- name: Logon
+  href: login.md
+- name: Præferencer
+  href: preferences.md
+- name: Tilslut dine konti
+  href: connect-your-accounts.md
+- name: Rediger e-mailsignatur
+  href: edit-email-signature.md
+- name: Skift aktivt sprog
+  href: change-language.md

@@ -1,0 +1,151 @@
+### YamlMime:SubCategory
+
+yamlMime: SubCategory
+title: Tilpasning
+summary: "Få mere at vide om forskellige tilpasninger af alle dine lister, muligheder for at tilføje felter og layout til de forskellige hovedkort i skærmdesigneren, opsætning af makroer og script og al anden finjustering af dit system"
+language: da
+
+metadata:
+  title: Tilpasning
+  description: "Få mere at vide om, hvordan du kan tilpasse SuperOffice."
+  so.product: customisation
+  so.topic: landing-page
+  author: digitaldiina
+  so.author: digitaldiina
+  so.date: 11.25.2025
+
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+
+landingContent:
+
+  # Card
+  - title: Brugerdefinerede objekter
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Brugerdefinerede felter
+          url: ../custom-objects/learn/udef.md
+        - text: Ekstra felter
+          url: ../custom-objects/admin/create-extra-field.md
+        - text: Ekstra tabeller
+          url: ../custom-objects/admin/create-extra-table.md
+      
+  # Card
+  - title: Skærmdesigner
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Intro
+          url: screen-designer/admin/index.md
+        - text: Tilføj layout
+          url: screen-designer/admin/add-layout.md
+        - text: Rediger layout af et kort
+          url: screen-designer/admin/edit-layout.md
+        - text: Arbejde med felter
+          url: screen-designer/admin/working-with-fields.md
+        - text: Tilføj en knap eller et link
+          url: screen-designer/admin/add-button.md
+        - text: Arbejde med faner
+          url: screen-designer/admin/working-with-tabs.md
+        - text: Tildel layout til gruppe, type eller skabelon
+          url: screen-designer/admin/assign-layout.md
+
+  # Card
+  - title: Makroer og CRMScript
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Makroer og scripts
+          url: macros-and-scripts/admin/index.md
+        - text: Opret en makro
+          url: macros-and-scripts/admin/create-macro.md
+        - text: Opret et script
+          url: macros-and-scripts/admin/create-script.md
+        - text: Fejlfindingssessioner
+          url: ../../en/automation/crmscript/debugging/built-in-debugger.md
+        - text: Opret en planlagt opgave
+          url: macros-and-scripts/admin/schedule-task.md
+        - text: Sporing
+          url: ../../en/automation/crmscript/debugging/using-trace.md
+        - text: Udløsere
+          url: macros-and-scripts/admin/trigger.md
+
+  # Card
+  - title: Webpaneler
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Oversigt
+          url: web-panels/admin/index.md
+        - text: Tilføj webpanel
+          url: web-panels/admin/add-web-panel.md
+        - text: URL-kodning
+          url: web-panels/admin/url-encoding.md
+        - text: Overfør data med skabelonvariabler
+          url: ../../en/customization/web-panels/dev/index.md#variables
+        - text: Opret link til
+          url: ../../en/customization/web-panels/dev/index.md
+
+  # Card
+  - title: SOProtocol
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Oversigt
+          url: ../../en/customization/soprotocol/index.md
+        - text: Navigationspunkter
+          url: ../../en/customization/soprotocol/navigation-points.md
+        - text: Sidekontrol og cache
+          url: ../../en/customization/soprotocol/page-control-and-cache.md
+        - text: I CRMScript
+          url: ../../en/customization/soprotocol/in-crmscript.md
+        - text: I webpaneler
+          url: ../../en/customization/soprotocol/used-in-webpanels-web.md
+        - text: Sådan henter du en person
+          url: ../../en/customization/soprotocol/howto/open-contact.md
+
+  # Card
+  - title: Brugerdefinerede skærme (Service)
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Intro
+          url: ../../en/ui/blogic/custom-screens/index.md
+        - text: bLogic forespørgselssyntaks
+          url: ../../en/ui/blogic/custom-screens/blogic-query-syntax.md
+        - text: Layoutelementer
+          url: ../../en/ui/blogic/custom-screens/layout-elements.md
+        - text: Visningselementer
+          url: ../../en/ui/blogic/custom-screens/view-elements.md
+        - text: Formular elementer
+          url: ../../en/ui/blogic/custom-screens/form-elements.md
+        - text: Sådan tilføjes et skærmelement
+          url: ../../en/ui/blogic/custom-screens/add-screen-element.md
+        - text: Elementreference
+          url: ../../en/ui/blogic/reference/index.md
+        - text: Skærmhændelser
+          url: ../../en/ui/blogic/screen-events.md
+        - text: Skærmvælgere
+          url: ../../en/ui/blogic/screen-choosers.md
+        - text: Ekstra menuer
+          url: ../../en/ui/blogic/extra-menus.md
+
+  # Card
+  - title: Kundecenter
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Konfiguration af kundecenter
+          url: ../customer-center/learn/config.md
+        - text: Kundecenter-kildefiler
+          url: ../customer-center/learn/edit.md
+        - text: Send adgangskoder til personer
+          url: ../customer-center/learn/send-credentials.md

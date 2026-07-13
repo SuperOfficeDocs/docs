@@ -1,0 +1,16 @@
+items:
+- name: Oversigt
+  href: index.md
+- name: Find skærm
+  href: find-screen.md
+- name: Søgekriterier
+  href: search-criteria.md
+- name: Fritekstsøgning
+  href: freetext-search.md
+- name: Søg fra navigator
+  href: in-navigator.md
+- name: Søg i dialogbokse
+  href: in-dialogs.md
+- name: For administratorer
+  href: ../admin/toc.yml
+  topicHref: ../admin/configure-free-text-search.md

@@ -1,0 +1,113 @@
+### YamlMime:SubCategory
+
+yamlMime: SubCategory
+title: Brugeradministration og systemindstillinger
+summary: "Få mere at vide om licenser, roller og brugere, sprog og lokaliseringer, hvordan du importerer eksternt indhold, og hvordan vores AI-tjenester fungerer."
+language: da
+
+metadata:
+  title: Brugeradministration og systemindstillinger
+  description: "Licenser, brugerstyring, sprog og lokalisering, import"
+  so.product: administration
+  so.topic: landing-page
+  author: Help and Learn
+  so.author: Kirsti A.
+  so.date: 10.24.2025
+
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+
+landingContent:
+
+  # Card
+  - title: Licenser
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Licensoversigt
+          url: license/index.md
+        - text: Skærmbilledet licenser
+          url: license/index.md
+        - text: Aktivér licens
+          url: license/activate.md
+
+  # Card
+  - title: "Lister, præferencer, muligheder og indstillinger"
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Lister
+          url: lists/index.md
+        - text: Præferencer
+          url: preferences/index.md
+        - text: Muligheder
+          url: options/index.md
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: Globale præferencer
+          url: preferences/index.md#global
+
+  # Card
+  - title: Brugerstyring
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Roller
+          url: user-management/role/index.md
+        - text: Opret en rolle
+          url: user-management/role/create-role.md
+        - text: Brugere
+          url: user-management/index.md
+        - text: Tilføj brugere
+          url: user-management/add-associate.md
+        - text: Opdater brugerinformation
+          url: user-management/update-user.md
+        - text: Vedligehold brugergrupper
+          url: user-management/user-groups.md
+        - text: Vedligehold 'Vores firmaer'
+          url: user-management/our-companies.md
+
+  # Card
+  - title: Import
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Konfigurer importindstillinger
+          url: import/settings.md
+        - text: Importér fra Excel
+          url: import/from-excel.md
+        - text: Importér produkter fra Excel
+          url: import/products-from-excel.md
+        - text: Importér fra Gmail
+          url: import/from-gmail.md
+        - text: Importér fra Outlook
+          url: import/from-outlook.md
+        - text: Importér fra ERP
+          url: import/from-erp.md
+
+  # Card
+  - title: AI
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Kategorisering
+          url: ../ai/learn/categorization.md
+        - text: Tekstanalyse
+          url: ../ai/learn/text-analysis.md
+
+ # Card
+  - title: ERP
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Tilknyt ERP
+          url: ../erp/learn/connect.md
+        - text: Deaktiver synkronisering
+          url: ../erp/learn/disconnect.md

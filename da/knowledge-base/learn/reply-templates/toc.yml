@@ -1,0 +1,11 @@
+items:
+- name: Oversigt
+  href: index.md
+- name: Opret svarskabelon
+  href: create.md
+- name: Oversæt en svarskabelon
+  href: new-language.md
+- name: Rediger eller slet svarskabelon
+  href: edit.md
+- name: Variabler for svarskabeloner
+  href: template-variables.md

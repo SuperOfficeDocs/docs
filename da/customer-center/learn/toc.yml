@@ -1,0 +1,20 @@
+items:
+- name: Oversigt
+  href: index.md
+- name: Konfiguration
+  href: config.md
+- name: Kildefiler
+  href: edit.md
+- name: Send adgangskoder til personer
+  href: send-credentials.md
+- name: Aktivér chat
+  href: enable-chat.md
+- name: Link en webformular
+  href: link-form.md
+- name: For administratorer
+  topicHref: ../admin/style-subscription-page.md
+  items:
+  - name: Styling af abonnementssiden
+    href: ../admin/style-subscription-page.md
+  - name: Adgangskodepolitik for Customer Centre
+    href: ../admin/password-policy.md
