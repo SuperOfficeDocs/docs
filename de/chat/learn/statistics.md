@@ -55,11 +55,9 @@ Doppelklicken Sie auf eine Zeile in der Liste Eingehender Chat, damit Sie [auf d
 
 Doppelklicken Sie auf eine Zeile in der Liste **Laufende Chat-Sitzungen**, um einen laufenden Chat mitzuhören (zu beobachten). Der Mitarbeiter wird nicht benachrichtigt, dass Sie den Chat mitlesen. Sie können nicht am Chat teilnehmen.
 
-<!-- Referenced links -->
-[1]: respond.md
-[2]: ../../dashboard/learn/create.md
-[3]: ../../dashboard/learn/add-tile.md
+[1]: ./respond
+[2]: ../../dashboard/learn/create
+[3]: ../../dashboard/learn/add-tile
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-dashboard-statistics.png
 [img2]: ../../../media/loc/en/chat/chat-dashboard.png

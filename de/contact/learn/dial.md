@@ -31,7 +31,6 @@ Zu diesem Zweck verwenden Sie die Telefon-Schaltfläche, die z. B. in den Dialog
 3. Klicken Sie auf die Anruf-Schaltfläche neben dem Feld Person. Eine Liste von Nummern, die mit der ausgewählten Person verknüpft sind, wird angezeigt.
 4. Wählen Sie die Telefonnummer, die Sie anrufen möchten. Die Person wird daraufhin angerufen.
 
-<!-- markdownlint-disable-next-line MD013 -->
 ## Anruf von Bereichsregisterkarten (Personen, Selektionsmitglieder, Beteiligte und Teilnehmer)
 
 1. Wechseln Sie zu einer Bereichsregisterkarte, die Personen enthält.
@@ -71,5 +70,4 @@ Computer\HKEY_CLASSES_ROOT\domycall\shell\open\command
 
 Der Registrierungseintrag muss auf die ausführbare Datei zeigen, die die eingehende Anrufanforderung verarbeitet. Das Argument `%1` enthält die Telefonnummer, die SuperOffice CRM über das benutzerdefinierte Protokoll übergibt.
 
-<!-- Referenced links -->
-[2]: ../../document/templates/learn/template-variables.md
+[2]: ../../document/templates/learn/template-variables

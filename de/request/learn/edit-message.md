@@ -31,5 +31,4 @@ Nur Benutzer mit dem Funktionsrecht *general administrator* können die Eigensch
 
 1. Klicken Sie auf **Speichern**, wenn Sie fertig sind, oder auf **Abbrechen**, um die Änderungen zu verwerfen. Sie können die gesamte Nachricht auch löschen, indem Sie auf **Löschen** und dann auf **OK** klicken.
 
-<!-- Referenced links -->
-[1]: index.md#open
+[1]: ./index#open

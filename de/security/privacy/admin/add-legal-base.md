@@ -41,7 +41,4 @@ Die Liste **Datenschutz - Rechtsgrundlage** enthält Optionen, die Benutzer ausw
 
 * [Objekte zur Liste Datenschutz - Nachweis hinzufügen][1]
 
-<!-- Referenced links -->
-[1]: add-source.md
-
-<!-- Referenced images -->
+[1]: ./add-source

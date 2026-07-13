@@ -52,10 +52,8 @@ Nachdem die Kampagne versendet wurde, können Sie in die Kampagne gehen und die 
 
 SuperOffice Marketing versendet Ihre Kampagne nun an alle ausgewählten Empfänger.
 
-<!-- Referenced links -->
-[1]: ../../recipients/learn/manage-bounces.md
+[1]: ../../recipients/learn/manage-bounces
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/reload-resend.png
 [img2]: ../../../../media/loc/en/marketing/filter-recipients.png
 [img3]: ../../../../media/loc/en/marketing/resend-to-selected.png

@@ -50,9 +50,7 @@ language: de
 
 ![Eine Vorlage auf der Grundlage eines vorhandenen Formulars erstellen -screenshot][img3]
 
-<!-- Referenced links -->
-[1]: create.md
-[19]: ../../learn/create-folder.md
+[1]: ./create
+[19]: ../../learn/create-folder
 
-<!-- Referenced images -->
 [img3]: ../../../../media/loc/en/marketing/form-template-edit-overview.png

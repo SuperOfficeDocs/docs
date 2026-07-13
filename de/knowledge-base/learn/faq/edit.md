@@ -43,5 +43,4 @@ redirect_from:
 1. Klicken Sie in der Anzeige **Eigenschaften des FAQ-Eintrags** auf die Schaltfläche **Löschen** am unteren Rand der Ansicht.
 1. Klicken Sie zur Bestätigung auf **OK**. Der FAQ-Eintrag wird von SuperOffice Service entfernt.
 
-<!-- Referenced links -->
-[1]: create.md
+[1]: ./create

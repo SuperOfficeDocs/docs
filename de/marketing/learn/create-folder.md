@@ -38,5 +38,3 @@ Führen Sie eine der folgenden Aktionen aus:
 * Öffnen Sie einen bestehenden Ordner, bevor Sie auf **Ordner hinzufügen** klicken. Möglicherweise müssen Sie zuerst auf die Schaltfläche **Alle ...** klicken.
 
 * Klicken Sie zuerst auf **Ordner hinzufügen** und wählen Sie dann einen übergeordneten Ordner aus der Liste **Erstellen als Unterordner von**.
-
-<!-- Referenced images -->

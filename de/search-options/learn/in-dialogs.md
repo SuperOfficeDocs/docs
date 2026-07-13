@@ -35,8 +35,5 @@ Wenn Sie zum Beispiel alle in SuperOffice CRM verfügbaren Dokumentvorlagen sehe
 
 ![Geben Sie zwei Prozentzeichen in die Schnellsuche ein, um alle Datensätze anzuzeigen -screenshot][img4]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img3]: ../../../media/loc/en/search-options/quicksearch-dialog.png
 [img4]: ../../../media/loc/en/search-options/getstarted-document-fastsearcher.png

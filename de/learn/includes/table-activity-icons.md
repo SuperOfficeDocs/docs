@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Symbol | Beschreibung |
 |:-:|---|
 | ![Symbol](../../../../common/icons/appointment.png ) | Besprechung |

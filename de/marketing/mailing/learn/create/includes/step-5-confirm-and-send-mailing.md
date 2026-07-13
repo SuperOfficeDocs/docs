@@ -1,7 +1,6 @@
-<!-- markdownlint-disable-file MD041 -->
-Nachdem Sie Ihre Zielliste erstellt, die Kampagne vorbereitet und getestet haben, kommen Sie endlich zum spannenden Teil – es ist an der Zeit, Ihre Kampagne zu versenden.
+Nachdem Sie Ihre Zielliste erstellt, die Kampagne vorbereitet und getestet haben, kommen Sie endlich zum spannenden Teil - es ist an der Zeit, Ihre Kampagne zu versenden.
 
-Im letzten Schritt – **Bestätigen** – können Sie sich eine Zusammenfassung der Kampagne anzeigen lassen und deren Richtigkeit überprüfen. Alle in dieser Ansicht angezeigten Fehlermeldungen müssen vor dem Senden der Kampagne beseitigt werden. Die Sendeoptionen sind deaktiviert, falls noch nicht alle Schritte vollständig sind oder Informationen in der Kampagne fehlen. Diese werden in Rot angezeigt.
+Im letzten Schritt - **Bestätigen** - können Sie sich eine Zusammenfassung der Kampagne anzeigen lassen und deren Richtigkeit überprüfen. Alle in dieser Ansicht angezeigten Fehlermeldungen müssen vor dem Senden der Kampagne beseitigt werden. Die Sendeoptionen sind deaktiviert, falls noch nicht alle Schritte vollständig sind oder Informationen in der Kampagne fehlen. Diese werden in Rot angezeigt.
 
 Sie können wählen, ob Sie Ihre Kampagne sofort versenden oder die Kampagne planen möchten. Der Vorteil bei der Planung Ihrer Kampagne besteht darin, dass Sie den Tag und die Uhrzeit für den Versand Ihrer Kampagne selbst bestimmen können. Das bedeutet, dass Sie sie versenden können, wenn Sie wissen, dass die meisten Ihrer Empfänger Ihre Kampagne öffnen und lesen werden.
 
@@ -31,8 +30,6 @@ Durch einen Klick auf die Kampagne in der Liste können sich den [Sendestatus un
 
 Klicken Sie auf **Stopp** oder **Start**, um die geplante Kampagne anzuhalten oder vorzeitig zu starten.
 
-<!-- Referenced links -->
-[1]: ../../view-statistics.md
+[1]: ../../view-statistics
 
-<!-- Referenced images -->
 [img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png

@@ -18,7 +18,7 @@ index: true
 
 # URL-Codierung
 
-Browser fordern Seiten von Webservern über eine URL an – **die Adresse einer Webseite**.
+Browser fordern Seiten von Webservern über eine URL an - **die Adresse einer Webseite**.
 
 Diese URLs können nur als ASCII-Zeichen über das Internet gesendet werden. Sie enthalten jedoch häufig Nicht-ASCII-Zeichen, zum Beispiel *Leerzeichen*.
 
@@ -33,4 +33,4 @@ Die Konvertierung ersetzt unsichere Zeichen durch ein Prozentzeichen (%) gefolgt
 
 ## Unicode
 
-Die Konvertierung wandelt alle Zeichen in UTF-8 um und setzt dann vor jede 1–3 Byte lange hexadezimale Zeichenfolge ein % gemäß RFC 2279.
+Die Konvertierung wandelt alle Zeichen in UTF-8 um und setzt dann vor jede 1-3 Byte lange hexadezimale Zeichenfolge ein % gemäß RFC 2279.

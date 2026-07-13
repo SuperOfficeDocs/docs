@@ -11,7 +11,7 @@ language: de
 
 # Eigenschaften der Ansichten
 
-Hier können Sie die Eigenschaften einer Ansicht bearbeiten. Sie können ein Skript zur Vorausberechnung von Variablen erstellen, z. B. basierend auf CGI-Variablen, die die Ansicht über eine URL erhält, oder basierend auf einem Formulareintrag in der aktuellen oder einer anderen Ansicht.
+Hier können Sie die Eigenschaften einer Ansicht bearbeiten. Sie können ein Skript zur Vorausberechnung von Variablen erstellen, z. B. basierend auf CGI-Variablen, die die Ansicht über eine URL erhält, oder basierend auf einem Formulareintrag in der aktuellen oder einer anderen Ansicht.
 
 ## Eigenschaften
 
@@ -29,5 +29,4 @@ Hier können Sie die Eigenschaften einer Ansicht bearbeiten. Sie können ein Skr
 * **Ladeskript (nach allem anderen ausführen)**: Dieses Skript wird zum Schluss ausgeführt, nachdem der Code und die Skripts aller Schaltflächen ausgeführt wurden.
 * **Verborgene Variablen**: Die hier definierten Variablen werden beim Senden der Ansicht gespeichert, sodass die nächste Ansicht auf sie zugreifen kann.
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/create.md
+[1]: ../../../request/learn/create

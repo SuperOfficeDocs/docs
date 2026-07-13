@@ -54,8 +54,5 @@ Wenn Sie eine Einladung versenden, kann der Empfänger sie annehmen oder ablehne
 * [Teilnehmer zu Folgeaufgaben hinzufügen][2]
 * [Gruppenansichten erstellen][1]
 
-<!-- Referenced links -->
-[1]: ../group-view.md
-[2]: add-attendee.md
-
-<!-- Referenced images -->
+[1]: ../group-view
+[2]: ./add-attendee

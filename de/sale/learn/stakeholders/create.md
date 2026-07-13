@@ -68,14 +68,12 @@ Eine Firma/Person kann mehrfach als Interessent hinzugefügt werden, vorausgeset
 
     Wenn ein Kommentar hinzugefügt wird, erscheint ein Büroklammer-Symbol (<i class="ph ph-paperclip" aria-hidden="true"></i>) neben der Spalte **Verkaufsrolle** in der **Beteiligte**-Bereichsregisterkarte. Bewegen Sie den Mauszeiger über die Büroklammer, um das Tooltip mit dem Kommentar anzuzeigen.
 
-<!-- Referenced links -->
-[1]: ../../../search-options/learn/find-screen.md
-[2]: ../../../project/learn/project-members/add.md
-[3]: ../../../contact/learn/create.md
-[4]: ../../admin/sale-type.md
-[5]: ../../../admin/lists/update-items.md
+[1]: ../../../search-options/learn/find-screen
+[2]: ../../../project/learn/project-members/add
+[3]: ../../../contact/learn/create
+[4]: ../../admin/sale-type
+[5]: ../../../admin/lists/update-items
 
-<!-- Referenced images -->
 [img5]: ../../../../media/loc/en/sale/add-stakeholders-from-history.png
 [img6]: ../../../../media/loc/en/sale/add-stakeholders-from-group.png
 [img7]: ../../../../media/loc/en/sale/add-stakeholders-from-company.png

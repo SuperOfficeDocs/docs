@@ -51,12 +51,10 @@ Um effizienter zu arbeiten, können Sie die Datensätze filtern, um eine oder me
 
 Mit einem [Dashboard für die Formularübermittlung][3] können Daten auf einfache Weise gemessen und visualisiert werden. Mit dem Dashboard können Sie Leistung, Trends und Produktivität im Auge zu behalten.
 
-<!-- Referenced links -->
-[1]: process-submissions.md
-[2]: ../../mailing/learn/view-statistics.md
-[3]: ../../../dashboard/learn/show-marketing.md
+[1]: ./process-submissions
+[2]: ../../mailing/learn/view-statistics
+[3]: ../../../dashboard/learn/show-marketing
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/form-submissions-filter.png
 [img3]: ../../../../media/loc/en/marketing/view-form-screen.png
 [img2]: ../../../../media/loc/en/marketing/form-report-dx.png

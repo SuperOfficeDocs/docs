@@ -37,7 +37,7 @@ Wenn eine Nachricht zwei verschiedene Anliegen enthält, die getrennt bearbeitet
     * **(Nicht zugeordnet)**: Die Mitglieder der gewählten Kategorie sind gemeinsam für die Bearbeitung der Anfrage verantwortlich.
 
 1. Wählen Sie im Feld **Priorität** eine der folgenden Optionen:
-    * **Niedrig**, **Mittel** oder **Hoch** – je nach Dringlichkeit der Anfrage.
+    * **Niedrig**, **Mittel** oder **Hoch** - je nach Dringlichkeit der Anfrage.
     * Die Priorität kann auch automatisch anhand definierter Eskalationsstufen für Kunden festgelegt werden.
 
 1. Wählen Sie im Feld **Zugriffsstufe** eine der folgenden Optionen:
@@ -60,7 +60,6 @@ Wenn eine Nachricht zwei verschiedene Anliegen enthält, die getrennt bearbeitet
 * [Anfrage aufteilen][2]
 * [Anfragen zusammenführen][3]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: split-request.md
-[3]: merge.md
+[1]: ./index#open
+[2]: ./split-request
+[3]: ./merge

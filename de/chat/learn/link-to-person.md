@@ -49,7 +49,5 @@ Wenn eine Person in SuperOffice nicht gefunden wird, können Sie in der Seitenle
 
 ![Sie können eine neue Person zu SuperOffice CRM über die Seitenleiste hinzufügen -screenshot][img2]
 
-<!-- Referenced links -->
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-link-to-contact.png
 [img2]: ../../../media/loc/en/chat/chat-add-new-to-contact.png

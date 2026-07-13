@@ -38,6 +38,5 @@ Sie können neue Links auch während der Bearbeitung des Inhalts erstellen.
 
 Ein kleiner Punkt auf den Registerkarten für Verknüpfungsaktionen gibt an, welche Verknüpfungsaktionen aktiv sind. Für einen Link können mehrere Verknüpfungsaktionen aktiv sein.
 
-<!-- Referenced links -->
-[1]: define-link-actions.md
-[2]: ../../learn/create-folder.md
+[1]: ./define-link-actions
+[2]: ../../learn/create-folder

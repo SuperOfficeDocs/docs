@@ -60,7 +60,7 @@ Die Feldzuordnung definiert, wie ERP-Felder SuperOffice-Feldern zugeordnet werde
 
 1. Klicken Sie auf **Fertig**, wenn Sie fertig sind.
 
-Sie können jetzt mit Listenzuordnung, Standardwerten oder Sortierung der Felder fortfahren – oder die Verbindung aktivieren, wenn keine weitere Konfiguration erforderlich ist.
+Sie können jetzt mit Listenzuordnung, Standardwerten oder Sortierung der Felder fortfahren - oder die Verbindung aktivieren, wenn keine weitere Konfiguration erforderlich ist.
 
 ## <a id="list-mapping"></a>Listenzuordnung
 
@@ -100,7 +100,7 @@ Standardwerte helfen dabei, die manuelle Dateneingabe für Felder zu reduzieren,
 
     * **Standardwert festlegen:** Automatisch einen bestimmten Wert bei der Synchronisation verwenden. Diese Option erfordert die Eingabe eines Wertes.
     * **Benutzer nach Wert fragen:** Der Benutzer gibt den Wert manuell ein.
-    * **Obligatorisch – Benutzer muss einen Wert angeben:** Ein Wert muss zwingend angegeben werden. Wenn diese Option ausgewählt ist, müssen Sie zusätzlich eine der beiden obigen Optionen auswählen.
+    * **Obligatorisch - Benutzer muss einen Wert angeben:** Ein Wert muss zwingend angegeben werden. Wenn diese Option ausgewählt ist, müssen Sie zusätzlich eine der beiden obigen Optionen auswählen.
 
     ![Sync-Standardwert hinzufügen -screenshot][img4]
 
@@ -157,9 +157,6 @@ Wenn die Richtungspfeile ausgegraut bleiben, obwohl ein SuperOffice-Feld ausgew�
 
 Fahren Sie mit der Maus über den Pfeil, um eine Erläuterung anzuzeigen.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/erp/erp-connection-settings.png
 [img2]: ../../../media/loc/en/erp/configure-field-mapping.png
 [img3]: ../../../media/loc/en/erp/list-of-default-values.png

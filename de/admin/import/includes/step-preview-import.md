@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 1. Klicken Sie auf **Next** (Weiter). Das Fenster **Vorschau des Imports anzeigen** erscheint.
 
 1. In **Vorschau des Imports anzeigen** können Sie die Importdaten durchsuchen, bevor der Import beginnt.
@@ -11,7 +10,6 @@
     | ![Symbol - Person geändert][img4] | Die Person ist bereits vorhanden und wird aktualisiert. |
     | leer | Keine Aktualisierung. |
 
-<!-- Referenced images -->
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
 [img2]: ../../../../media/icons/admin/import-preview-icon-company-changed.png
 [img3]: ../../../../media/icons/admin/import-preview-icon-person-new.png

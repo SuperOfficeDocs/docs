@@ -47,9 +47,7 @@ Sie können eine wiederkehrende Folgeaufgabe auch direkt im Kalender auswählen 
 * [Regelmäßige Folgeaufgabe erstellen][1]
 * [Regelmäßige Folgeaufgabe bearbeiten][2]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../edit-follow-up.md#repeat
+[1]: ./create
+[2]: ../edit-follow-up#repeat
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

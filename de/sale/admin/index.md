@@ -24,10 +24,10 @@ Nutzen Sie die Bildschirme **Workflow** und **Listen** in Einstellungen und Verw
 
 | Begriff | Definition | Position in Einstellungen und Verwaltung |
 |---|---|---|
-| Verkaufstyp | Kategorisiert Verkäufe (z. B. "Neukunde" oder "Verlängerung") und verknüpft sie mit Stufen und Leitfäden. | **Listen** > **Verkauf – Typ, Stufen, Angebot** |
-| Verkaufsstufe | Verfolgt die Phase eines Verkaufs (z. B. "Angebot" oder "Vertragsunterzeichnung"). Wird pro Verkaufstyp definiert. | **Listen** > **Verkauf – Stufe** |
+| Verkaufstyp | Kategorisiert Verkäufe (z. B. "Neukunde" oder "Verlängerung") und verknüpft sie mit Stufen und Leitfäden. | **Listen** > **Verkauf - Typ, Stufen, Angebot** |
+| Verkaufsstufe | Verfolgt die Phase eines Verkaufs (z. B. "Angebot" oder "Vertragsunterzeichnung"). Wird pro Verkaufstyp definiert. | **Listen** > **Verkauf - Stufe** |
 | Verkaufsleitfaden | Ein Workflow-Tool, das Stufen mit bestimmten Folgeaufgaben und Dokumenten verknüpft. | **Workflow** > **Verkaufsleitfaden** |
-| Währung | Ein Listeneintrag, der verfügbare Währungen für Verkaufsbeträge mit Wechselkurs und Einheit definiert. | **Listen** > **Allgemein – Währung** |
+| Währung | Ein Listeneintrag, der verfügbare Währungen für Verkaufsbeträge mit Wechselkurs und Einheit definiert. | **Listen** > **Allgemein - Währung** |
 | Basiswährung | Die Hauptwährung für systemweite Berechnungen und Wechselkurse. | **Einstellungen** > **Globale Einstellungen** > **System** > **Basiswährung** |
 
 ## Ihre Verkaufslisten anpassen
@@ -53,9 +53,8 @@ Schauen Sie sich die folgenden Listen an, um zu sehen, ob Sie sie ändern möcht
 
 Diese Werkzeuge ermöglichen es Administratoren, Verkaufsprozesse individuell anzupassen und so Effizienz und Konsistenz im gesamten Team sicherzustellen.
 
-<!-- Referenced links -->
-[1]: create-sales-guide.md
-[2]: edit-sales-guide.md
-[3]: sale-stage.md
-[4]: sale-type.md
-[5]: add-currency.md
+[1]: ./create-sales-guide
+[2]: ./edit-sales-guide
+[3]: ./sale-stage
+[4]: ./sale-type
+[5]: ./add-currency

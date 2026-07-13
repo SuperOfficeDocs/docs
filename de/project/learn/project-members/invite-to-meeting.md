@@ -20,5 +20,4 @@ language: de
 3. Klicken Sie mit der rechten Maustaste und wählen Sie **Eine Besprechung anfordern**.
 4. [Geben Sie die erforderlichen Informationen in das Feld ein][1].
 
-<!-- Referenced links -->
-[1]: ../../../diary/learn/create-follow-up.md#fields
+[1]: ../../../diary/learn/create-follow-up#fields

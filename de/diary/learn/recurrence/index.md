@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Regelmäßige Folgeaufgaben <i class="ph ph-arrows-clockwise" aria-hidden="true"></i>
+# Regelmäßige Folgeaufgaben \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
 
 Es kann vorkommen, dass Sie eine Reihe von Terminen in regelmäßigen Abständen erstellen möchten, zum Beispiel ein wöchentlich stattfindendes Statusmeeting. Statt diese Besprechungen eine nach der anderen zu erstellen, können Sie die Funktion für regelmäßige Folgeaufgaben verwenden.
 
@@ -52,7 +52,7 @@ Wenn Sie **Monatlich** auswählen, können Sie den Tag auswählen, an dem die Fo
 
 ## Jährlich
 
-Wenn Sie **Jährlich** auswählen, können Sie festlegen, an welchem Tag und in welchem Monat die Folgeaufgabe wiederholt werden soll, wie zum Beispiel jedes Jahr am 23. September.
+Wenn Sie **Jährlich** auswählen, können Sie festlegen, an welchem Tag und in welchem Monat die Folgeaufgabe wiederholt werden soll, wie zum Beispiel jedes Jahr am 23. September.
 
 | Option | Beschreibung | Beispiel |
 |---|---|---|
@@ -65,9 +65,6 @@ Wenn Sie **Jährlich** auswählen, können Sie festlegen, an welchem Tag und in 
 * [Regelmäßige Folgeaufgabe bearbeiten][1]
 * [Regelmäßige Folgeaufgabe stoppen][3]
 
-<!-- Referenced links -->
-[1]: ../edit-follow-up.md#repeat
-[3]: stop.md
-[4]: create.md
-
-<!-- Referenced images -->
+[1]: ../edit-follow-up#repeat
+[3]: ./stop
+[4]: ./create

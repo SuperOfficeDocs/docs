@@ -41,10 +41,8 @@ Sie müssen Ihr [Chat-Widget einrichten][3], bevor Sie es zu Ihrem Kundenzentrum
 * [Kundenzentrum konfigurieren][2]
 * [Kundensprachen][1]
 
-<!-- Referenced links -->
-[1]: ../../localization/learn/customer-languages.md
-[3]: ../../chat/admin/channel-create.md
-[2]: config.md
+[1]: ../../localization/learn/customer-languages
+[3]: ../../chat/admin/channel-create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/connecting-widget.png
