@@ -17,7 +17,7 @@ redirect_from: /no/globalization-and-localization/learn/translate-fields
 language: no
 ---
 
-# Oversettelse <i class="ph ph-translate" aria-hidden="true"></i>
+# Oversettelse \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
 
 Standardfeltene og andre UI-tekster er tilgjengelige på alle SuperOffice-språk. Hvis du oppretter dine egne felt eller tekster (slik som dashbord- og figurnavn), kan du legge til oversettelser for de relevante språkene i din organisasjon.
 
@@ -36,5 +36,4 @@ Ikonet **Oversett** (<i class="ph ph-translate" aria-hidden="true"></i>) ved sid
 
 [Endre språkinnstillingene][1] under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** og kontroller at oversettelsen vises for de relevante språkene.
 
-<!-- Referenced links -->
-[1]: ../../learn/getting-started/change-language.md
+[1]: ../../learn/getting-started/change-language

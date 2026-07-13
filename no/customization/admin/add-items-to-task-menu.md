@@ -52,12 +52,9 @@ Når du legger til en URL-adresse, kan det være nyttig å bruke for eksempel ma
 * [Legge til en oversettelse][7]
 * [Spesialiserte lister][3]
 
-<!-- Referenced links -->
-[1]: ../web-panels/admin/add-web-panel.md
-[3]: ../../admin/lists/specialized-lists.md
-[4]: ../web-panels/admin/url-encoding.md
-[5]: ../macros-and-scripts/admin/index.md
-[6]: ../../../en/customization/soprotocol/index.md
-[7]: ../../localization/learn/translate-fields.md
-
-<!-- Referenced images -->
+[1]: ../web-panels/admin/add-web-panel
+[3]: ../../admin/lists/specialized-lists
+[4]: ../web-panels/admin/url-encoding
+[5]: ../macros-and-scripts/admin/index
+[6]: ../../../en/customization/soprotocol/index
+[7]: ../../localization/learn/translate-fields

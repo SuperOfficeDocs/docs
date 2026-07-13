@@ -42,8 +42,5 @@ Dette er trinnene for å konfigurere chatwidgeten og deretter legge den til på 
 * [Trinn 1: Konfigurere chatwidgeten][1]
 * [Trinn 2: Legge til chat på websiden din][2]
 
-<!-- Referenced links -->
-[1]: channel-create.md
-[2]: add-javascript.md
-
-<!-- Referenced images -->
+[1]: ./channel-create
+[2]: ./add-javascript

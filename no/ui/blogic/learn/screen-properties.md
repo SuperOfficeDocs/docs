@@ -29,5 +29,4 @@ Her kan du redigere egenskapene for et bilde. Du kan opprette et skript for å f
 * **Innlastingsskript (kjørt etter alt annet)**: Dette skriptet kjøres på slutten, etter at kode og skript for eventuelle knapper er blitt kjørt.
 * **Skjult variabel**: Variablene som defineres her, lagres når bildet sendes inn, slik at neste bilde har tilgang til dem.
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/create.md
+[1]: ../../../request/learn/create

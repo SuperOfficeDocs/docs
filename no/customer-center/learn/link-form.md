@@ -21,7 +21,7 @@ Ved å legge til chatwidgeten i Kundesenter kan du gjøre det enklere for kunden
 
 ## Før du begynner
 
-Du må [opprette et webskjema][3] før du kan legge det til i kundesenteret. Når du oppretter et nytt webskjema, må du legge til ett av de tre sakselementene – tittel, kategori og melding. Ellers kan du ikke legge til skjemaet i kundesenteret.
+Du må [opprette et webskjema][3] før du kan legge det til i kundesenteret. Når du oppretter et nytt webskjema, må du legge til ett av de tre sakselementene - tittel, kategori og melding. Ellers kan du ikke legge til skjemaet i kundesenteret.
 
 ![Hvis du vil legge til et nytt webskjema i kundesenteret, legger du til ett av disse sakselementene. -screenshot][img1]
 
@@ -50,12 +50,10 @@ Når en kunde fyller ut dette skjemaet, blir informasjonen og detaljene automati
 * [Konfigurere kundesenter][2]
 * [Arbeide med skjemaer][1]
 
-<!-- Referenced links -->
-[1]: ../../marketing/forms/learn/index.md
-[3]: ../../marketing/forms/learn/create.md
-[2]: config.md
+[1]: ../../marketing/forms/learn/index
+[3]: ../../marketing/forms/learn/create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png
 [img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png

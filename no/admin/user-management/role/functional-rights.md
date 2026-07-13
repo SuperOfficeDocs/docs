@@ -1,5 +1,5 @@
 ---
-uid: help-no-functional-right 
+uid: help-no-functional-right
 title: Functional rights in SuperOffice
 description: What are all available functional rights in SuperOffice and what each of them mean?
 keywords: user management, role, access, rights
@@ -21,7 +21,6 @@ language: no
 
 Using [role-based security][3], we can [customize roles][2] to give access to different functions of SuperOffice CRM.
 
-<!-- Sort alphabetical -->
 | Functional right | Description | Comment |
 |---|---|---|
 | Administrate FAQ | The user may publish FAQ entries. | They will also be notified of unpublished and expired FAQ entries. |
@@ -94,7 +93,6 @@ Using [role-based security][3], we can [customize roles][2] to give access to di
 * [Opprett rolle][1]
 * [Angi datarettigheter for rolle][2]
 
-<!-- Referenced links -->
-[1]: create-role.md
-[2]: set-data-rights-for-role.md
-[3]: index.md
+[1]: ./create-role
+[2]: ./set-data-rights-for-role
+[3]: ./index

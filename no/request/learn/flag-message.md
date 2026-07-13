@@ -41,11 +41,9 @@ For å gjøre det enklere å finne og sortere flere meldinger i en sak, kan du f
 * [Svare kunde][3]
 * [Redigere melding][4]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: create.md
-[3]: reply.md
-[4]: edit-message.md
+[1]: ./index#open
+[2]: ./create
+[3]: ./reply
+[4]: ./edit-message
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/request/filter-messages.png

@@ -46,11 +46,9 @@ Du kan raskt opprette en oppgave basert på en e-postmelding i SuperOffice-innbo
 * [Opprett sak][2]
 * [Om oppfølginger][4]
 
-<!-- Refererte lenker -->
-[1]: archive.md
-[2]: create-request.md
-[3]: ../../../diary/learn/create-follow-up.md#fields
-[4]: ../../../diary/learn/follow-ups.md
+[1]: ./archive
+[2]: ./create-request
+[3]: ../../../diary/learn/create-follow-up#fields
+[4]: ../../../diary/learn/follow-ups
 
-<!-- Refererte bilder -->
 [img1]: ../../../../media/loc/en/email/inbox-create-task.png

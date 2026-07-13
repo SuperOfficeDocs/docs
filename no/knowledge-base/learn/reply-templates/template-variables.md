@@ -109,7 +109,7 @@ Når du redigerer svarmaler og utsendelser, kan du sette inn malvariabler ved å
 | customer.ourContact | ID-en (ejuser) for agenten som er merket som den primære brukerstøttekontakten for denne kunden |
 | customer.password | Passord i SuperOffice Kundesenter |
 | customer.phone | Telefonnummer |
-| customer.salutation | Åpning – hele navnet hvis tilgjengelig, eller e-postadressen hvis navnet ikke er kjent |
+| customer.salutation | Åpning - hele navnet hvis tilgjengelig, eller e-postadressen hvis navnet ikke er kjent |
 | customer.title | Tittel |
 | customer.username | Brukernavn i SuperOffice Kundesenter |
 | makeSalutation(customer.id) | Åpning |

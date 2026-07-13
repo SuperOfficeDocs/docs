@@ -24,10 +24,10 @@ Bruk skjermbildene **Arbeidsflyt** og **Lister** i **Innstillinger og vedlikehol
 
 | Begrep | Definisjon | Plassering i Innstillinger og vedlikehold |
 |---|---|---|
-| Salgstype | Kategoriserer salg (for eksempel "Ny kunde" eller "Fornyelse") og kobler dem til faser og guider. | **Lister** > **Salg – Type, Faser, Tilbud** |
-| Salgsfase | Sporer fasen et salg befinner seg i (for eksempel "Tilbud" eller "Kontraktsignering"). Defineres per salgstype. | **Lister** > **Salg – Fase** |
+| Salgstype | Kategoriserer salg (for eksempel "Ny kunde" eller "Fornyelse") og kobler dem til faser og guider. | **Lister** > **Salg - Type, Faser, Tilbud** |
+| Salgsfase | Sporer fasen et salg befinner seg i (for eksempel "Tilbud" eller "Kontraktsignering"). Defineres per salgstype. | **Lister** > **Salg - Fase** |
 | Salgsguide | Et arbeidsflytverktøy som kobler faser til spesifikke oppfølginger og dokumenter. | **Arbeidsflyt** > **Salgsguide** |
-| Valuta | En listeforekomst som definerer tilgjengelige valutaer for salgsbeløp, inkludert valutakurs og enhet. | **Lister** > **Generelt – Valuta** |
+| Valuta | En listeforekomst som definerer tilgjengelige valutaer for salgsbeløp, inkludert valutakurs og enhet. | **Lister** > **Generelt - Valuta** |
 | Basisvaluta | Standardvalutaen som brukes til beregninger og valutakurser i hele systemet. | **Preferanser** > **Globale preferanser** > **System** > **Ledende valuta** |
 
 ## Tilpasse salgslistene dine
@@ -53,9 +53,8 @@ Ta en titt på disse listene for å se om du vil endre dem:
 
 Disse verktøyene gir administratorer muligheten til å skreddersy salgsprosessene for å sikre effektivitet og enhetlighet i hele organisasjonen.
 
-<!-- Refererte lenker -->
-[1]: create-sales-guide.md
-[2]: edit-sales-guide.md
-[3]: sale-stage.md
-[4]: sale-type.md
-[5]: add-currency.md
+[1]: ./create-sales-guide
+[2]: ./edit-sales-guide
+[3]: ./sale-stage
+[4]: ./sale-type
+[5]: ./add-currency

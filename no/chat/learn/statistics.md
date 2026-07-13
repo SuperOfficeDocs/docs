@@ -35,7 +35,7 @@ Som standard vises statistikk for alle tilgjengelige kanaler, men du kan velge e
 
 Du kan visualisere statistikk fra chatsamtaler i et dashbord for å få en informativ oversikt over dataene. Når du har [opprettet et dashbord][2], kan du [legge til og redigere figurer][3].
 
-### Eksempler – figurer du kan legge til på dashbordet for chatsamtaler
+### Eksempler - figurer du kan legge til på dashbordet for chatsamtaler
 
 * Bruk **figuren Agenter med den beste gjennomsnittlige vurderingen denne måneden** for å se hvilken agent som har høyest gjennomsnittlig vurdering den aktuelle måneden. Figuren kan brukes til motivasjon, eller til intern konkurranse.
 
@@ -55,11 +55,9 @@ Dobbeltklikk på en rad i listen Innkommende chat for å [svare på den chatsamt
 
 Dobbeltklikk på en rad i listen **Aktive chatsesjoner** for å lytte til (overvåke) en pågående chatsamtale. Agenten vil ikke bli varslet om at du overvåker chatsamtalen. Du kan ikke delta i samtalen.
 
-<!-- Referenced links -->
-[1]: respond.md
-[2]: ../../dashboard/learn/create.md
-[3]: ../../dashboard/learn/add-tile.md
+[1]: ./respond
+[2]: ../../dashboard/learn/create
+[3]: ../../dashboard/learn/add-tile
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-dashboard-statistics.png
 [img2]: ../../../media/loc/en/chat/chat-dashboard.png

@@ -37,8 +37,5 @@ Hvis du for eksempel vil se alle dokumentmalene som er tilgjengelige i SuperOffi
 
 ![Skriv inn to prosenttegn i hurtigsøk for å se alle postene -screenshot][img4]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img3]: ../../../media/loc/en/search-options/quicksearch-dialog.png
 [img4]: ../../../media/loc/en/search-options/getstarted-document-fastsearcher.png

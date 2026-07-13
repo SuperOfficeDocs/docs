@@ -1,0 +1,59 @@
+---
+uid: help-no-import-from-gmail
+title: Importere fra Gmail
+description: Importere fra Gmail
+keywords: Innstillinger og vedlikehold, importere
+author: SuperOffice Product and Engineering
+date: 06.29.2022
+version: 10.5
+content_type: howto
+category: Settings and maintenance
+topic: Import
+audience: settings
+audience_tooltip: Settings and maintenance
+index: true
+redirect_from: /no/admin/import/learn/import-from-gmail
+tier: starter
+language: no
+---
+
+import CautionBackupBeforeImport from "./includes/caution-backup-before-import.mdx";
+import OpenImport from "./includes/open-import.md";
+import AdjustEmailOnly from "./includes/adjust-email-only.md";
+import TroubleshootImport from "./includes/troubleshoot-import.md";
+import ImportComplete from "./includes/import-complete.mdx";
+
+# Importere fra Gmail
+
+<CautionBackupBeforeImport />
+
+## Importer firmaer/personer fra Gmail
+
+1. <OpenImport />
+
+2. Klikk på ![ikon][img2] Gmail-ikonet under **Velg en importkilde**.
+
+3. Gi tilgang. Dialogboksen som vises, avhenger av om du allerede er logget på Gmail
+
+    * Hvis dialogboksen **Forespørsel om tillatelse** vises, er du allerede logget på Gmail. Klikk på **Tillat**.
+
+    * Hvis dialogboksen **Google-kontoer** vises, er du ikke logget på Gmail. Skriv inn brukernavn og passord, og logg på Gmail. Klikk på **Tillat**.
+        Gmail-firmaene dine vises i Innstillinger og vedlikehold.
+
+    <Note>
+    Firmaene fra Gmail blir ikke importert til SuperOffice-databasen ennå. SuperOffice laster bare inn firmalisten fra Gmail, slik at du kan angi importinnstillingene.
+    </Note>
+
+## Tilpasse importen
+
+<AdjustEmailOnly />
+
+### Feilsøking
+
+<TroubleshootImport />
+
+## Ferdigstille importen
+
+<ImportComplete />
+
+[img2]: ../../../media/icons/admin/import-gmail-small.png

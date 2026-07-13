@@ -34,5 +34,4 @@ Kun brukere med funksjonsrettigheten **general administrator** kan redigere egen
 
 1. Klikk på **Lagre** når du er ferdig, eller **Avbryt** hvis du vil forkaste endringene. Du kan også slette hele meldingen ved å klikke på **Slett** og deretter **OK**.
 
-<!-- Referenced links -->
-[1]: index.md#open
+[1]: ./index#open

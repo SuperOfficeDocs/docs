@@ -68,14 +68,12 @@ Et firma/en person kan legges til som en interessent flere ganger, forutsatt at 
 
     Hvis en kommentar er lagt til, vises en binders (<i class="ph ph-paperclip" aria-hidden="true"></i>) ved siden av **Salgsrolle**-kolonnen i **Interessenter**-detaljkortet. Hold musepekeren over bindersen for å se kommentartipset.
 
-<!-- Referenced links -->
-[1]: ../../../search-options/learn/find-screen.md
-[2]: ../../../project/learn/project-members/add.md
-[3]: ../../../contact/learn/create.md
-[4]: ../../admin/sale-type.md
-[5]: ../../../admin/lists/update-items.md
+[1]: ../../../search-options/learn/find-screen
+[2]: ../../../project/learn/project-members/add
+[3]: ../../../contact/learn/create
+[4]: ../../admin/sale-type
+[5]: ../../../admin/lists/update-items
 
-<!-- Referenced images -->
 [img5]: ../../../../media/loc/en/sale/add-stakeholders-from-history.png
 [img6]: ../../../../media/loc/en/sale/add-stakeholders-from-group.png
 [img7]: ../../../../media/loc/en/sale/add-stakeholders-from-company.png

@@ -54,6 +54,5 @@ Når du sender en invitasjon, kan mottakeren av invitasjonen enten godta eller a
 * [Legge til deltakere i oppfølginger][2]
 * [Opprett gruppeoversikter][1]
 
-<!-- Referenced links -->
-[1]: ../group-view.md
-[2]: add-attendee.md
+[1]: ../group-view
+[2]: ./add-attendee

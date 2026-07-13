@@ -22,7 +22,7 @@ Hvis du etter å ha sett på resultatene av utsendelsen oppdager at mange av e-p
 
 Det er to måter du kan sende utsendelsen på nytt på.
 
-## Alternativ 1 – Last inn og send på nytt
+## Alternativ 1 - Last inn og send på nytt
 
 Du kan laste inn utsendelsen igjen og sende den på nytt i fanen **Utsendelser**. Finn utsendelsen du vil sende på nytt ved å søke etter den, eller ved å gå gjennom fanen **Nylige** eller **Alle**.
 
@@ -36,7 +36,7 @@ Systemet vil bare sende utsendelsen til de mottakerne som ikke har mottatt den e
 
 Etter at utsendelsen er sendt, kan du gå inn i utsendelsen og se de nye resultatene i fanen **Sammendrag** og **Mottakere**.
 
-## Alternativ 2 – Send på nytt til valgte
+## Alternativ 2 - Send på nytt til valgte
 
 1. Start med å åpne utsendelsen du vil sende på nytt, og gå til fanen **Mottakere**.
 
@@ -52,10 +52,8 @@ Etter at utsendelsen er sendt, kan du gå inn i utsendelsen og se de nye resulta
 
 SuperOffice Marketing vil nå sende utsendelsen din til alle de valgte mottakerne.
 
-<!-- Referenced links -->
-[1]: ../../recipients/learn/manage-bounces.md
+[1]: ../../recipients/learn/manage-bounces
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/reload-resend.png
 [img2]: ../../../../media/loc/en/marketing/filter-recipients.png
 [img3]: ../../../../media/loc/en/marketing/resend-to-selected.png

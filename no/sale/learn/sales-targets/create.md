@@ -32,7 +32,7 @@ Det er valgfritt å legge til firmamålet og ha brukerspesifikke mål (gå til M
 
 ## Krav
 
-Hvis du bare har en **Sales Premium**-lisens eller **Growth**-planen, kan du legge til en gruppe for måltypen **Alle salg – beløp**. For å legge til mer enn en brukergruppe, trenger du også lisensen **Unlimited sales targets** eller **Super**-planen.
+Hvis du bare har en **Sales Premium**-lisens eller **Growth**-planen, kan du legge til en gruppe for måltypen **Alle salg - beløp**. For å legge til mer enn en brukergruppe, trenger du også lisensen **Unlimited sales targets** eller **Super**-planen.
 
 ## Før du begynner
 
@@ -139,10 +139,8 @@ For å vise revisjonshistorikken for et salgsmål (rad), klikk <i class="ph ph-l
 
 * [Bruke salgsmål i figurer][2]
 
-<!-- Referenced links -->
-[2]: ../../../dashboard/learn/show-sales-targets.md
+[2]: ../../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png
 [img3]: ../../../../media/loc/en/sale/target-adjust-number.png

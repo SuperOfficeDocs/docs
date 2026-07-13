@@ -22,7 +22,7 @@ SuperOffice CRM Suite gir én samlet CRM-plattform som dekker salg, markedsføri
 
 ## <a id="plans"></a>Planer
 
-Fem planer er tilgjengelige. Planene er kumulative — hver plan inkluderer alt i planene under den.
+Fem planer er tilgjengelige. Planene er kumulative - hver plan inkluderer alt i planene under den.
 
 | Plan | Beskrivelse |
 | --- | --- |
@@ -76,9 +76,9 @@ Indikatoren **Begrensninger** i **Innstillinger og vedlikehold** > **Lisenser** 
 
 | Forbruk | Indikator | Betydning |
 | --- | --- | --- |
-| Under 85 % | Antall vises i svart | Normalt — ingen tiltak nødvendig |
+| Under 85 % | Antall vises i svart | Normalt - ingen tiltak nødvendig |
 | 85 % eller mer | <i class="ph ph-warning" aria-label="Warning"></i> Antall vises i rødt | Nærmer seg grensen |
-| 100 % | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Antall vises i rødt | Grensen nådd — funksjonen er begrenset |
+| 100 % | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Antall vises i rødt | Grensen nådd - funksjonen er begrenset |
 
 ![Licences Status tab showing a plan limit warning with an Upgrade button -screenshot][img1]
 
@@ -86,7 +86,7 @@ Hvis du er administrator, vises en **Oppgrader**-knapp ved siden av en advarsel 
 
 ## Overgang fra SuperOffice CRM Online
 
-Organisasjoner som migrerer fra **SuperOffice CRM Online** (det modulbaserte abonnementet), plasseres i CRM Suite-planen som samsvarer med gjeldende lisens. Hvis du hadde flere lisenser, er planen din basert på lisensen med høyest nivå. Tidspunktet for overgangen fastsettes individuelt per konto — du vil bli kontaktet.
+Organisasjoner som migrerer fra **SuperOffice CRM Online** (det modulbaserte abonnementet), plasseres i CRM Suite-planen som samsvarer med gjeldende lisens. Hvis du hadde flere lisenser, er planen din basert på lisensen med høyest nivå. Tidspunktet for overgangen fastsettes individuelt per konto - du vil bli kontaktet.
 
 | Gjeldende lisens | CRM Suite-plan |
 | --- | --- |
@@ -103,9 +103,8 @@ Organisasjoner som migrerer fra **SuperOffice CRM Online** (det modulbaserte abo
 * [Brukerplaner for SuperOffice CRM Online][2]
 * [Aktivere lisens][3]
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: user-plans.md
-[3]: activate.md
+[1]: ./index
+[2]: ./user-plans
+[3]: ./activate
 
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

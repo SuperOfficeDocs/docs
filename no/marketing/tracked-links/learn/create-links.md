@@ -38,6 +38,5 @@ Du kan også opprette nye koblinger mens du redigerer innholdet.
 
 En liten prikk på fanene for koblingshandlinger indikerer hvilke handlinger som er aktive. Flere koblingshandlinger kan være aktive for en kobling.
 
-<!-- Referenced links -->
-[1]: define-link-actions.md
-[2]: ../../learn/create-folder.md
+[1]: ./define-link-actions
+[2]: ../../learn/create-folder

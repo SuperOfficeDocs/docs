@@ -16,7 +16,7 @@ redirect_from: /no/contact/learn/screen/index
 
 # Person
 
-**Skjermbildet Person** gir et øyeblikksbilde av all kommunikasjon og samhandling med en person. Her kan du administrere kontaktopplysninger, spore aktiviteter og få tilgang til GDPR-relatert dokumentasjon – alt samlet på ett sted.
+**Skjermbildet Person** gir et øyeblikksbilde av all kommunikasjon og samhandling med en person. Her kan du administrere kontaktopplysninger, spore aktiviteter og få tilgang til GDPR-relatert dokumentasjon - alt samlet på ett sted.
 
 ![Skjermbildet Person som viser nøkkelinformasjon, detaljkort og navigasjonsknapper -screenshot][img3]
 
@@ -59,25 +59,23 @@ Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon so
 * [Slette personer][6]
 * [Sende e-post til en person][7]
 
-<!-- Referenced links -->
-[2]: create.md
-[3]: ../../security/privacy/learn/edit-legal-base.md
-[4]: move.md
-[5]: merge-contacts.md
-[6]: delete.md
-[7]: send-email.md
-[8]: ../../company/learn/index.md
+[2]: ./create
+[3]: ../../security/privacy/learn/edit-legal-base
+[4]: ./move
+[5]: ./merge-contacts
+[6]: ./delete
+[7]: ./send-email
+[8]: ../../company/learn/index
 
-[11]: ../../learn/section-tabs/activities-tab.md
-[12]: ../../learn/section-tabs/sales-tab.md
-[13]: ../../learn/section-tabs/requests-tab.md
-[14]: ../../learn/section-tabs/projects-tab.md
-[15]: ../../learn/section-tabs/relations-tab.md
-[16]: ../../learn/section-tabs/index.md
-[19]: ../../custom-objects/learn/more-tab.md
-[20]: ../../learn/basics/notes.md
-[21]: ../../customization/web-panels/admin/index.md#www
-[22]: ../../erp/learn/index.md
+[11]: ../../learn/section-tabs/activities-tab
+[12]: ../../learn/section-tabs/sales-tab
+[13]: ../../learn/section-tabs/requests-tab
+[14]: ../../learn/section-tabs/projects-tab
+[15]: ../../learn/section-tabs/relations-tab
+[16]: ../../learn/section-tabs/index
+[19]: ../../custom-objects/learn/more-tab
+[20]: ../../learn/basics/notes
+[21]: ../../customization/web-panels/admin/index#www
+[22]: ../../erp/learn/index
 
-<!-- Referenced images -->
 [img3]: ../../../media/loc/en/contact/contact-screen.png

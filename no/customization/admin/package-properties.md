@@ -13,7 +13,7 @@ category: customization
 index: true
 tier: core
 language: no
-redirect_from: 
+redirect_from:
   - /no/admin/learn/screen/package-properties
   - /no/admin/learn/package-properties
   - /no/customization/admin/index
