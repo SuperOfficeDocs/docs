@@ -1,4 +1,4 @@
-﻿---
+---
 uid: whats-new-70-softtriggers
 title: SoftTriggers
 description: NetServer 7.0
@@ -12,7 +12,7 @@ category: api
 
 # SoftTriggers
 
-NetServer has its own OSQL interception system. Used by Sentry, travel transaction logging, free-text index, ... You can have one too – on insert/update/delete.
+NetServer has its own OSQL interception system. Used by Sentry, travel transaction logging, free-text index, ... You can have one too - on insert/update/delete.
 
 **SoftTrigger** defines a way to set a pre- or post-execution callback, for a specific table.
 
@@ -26,6 +26,5 @@ Your delegate is called before or after execution:
 
 * "After" is, well, after. That would probably be just to log it.
 
-<!-- Referenced images -->
-[img1]: media/image002.jpg
-[img2]: media/image003.jpg
+[img1]: /media/loc/en/release-notes/api/ns-70/image002.jpg
+[img2]: /media/loc/en/release-notes/api/ns-70/image003.jpg

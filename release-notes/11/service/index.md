@@ -27,13 +27,12 @@ language: en
 * [Request - Show all linked contacts (11.2)][2]
 * [Request - Search will give same result as in navigator search (11.1)][1]
 
-<!-- Referenced links-->
-[1]: 11.1-update.md
-[2]: 11.2-update.md
-[3]: 11.3-update.md
-[4]: 11.4-update.md
-[5]: 11.5-update.md
-[7]: 11.7-update.md
-[8]: 11.8-update.md
-[11]: 11.11-update.md
-[12]: 11.12-update.md
+[1]: ./11.1-update
+[2]: ./11.2-update
+[3]: ./11.3-update
+[4]: ./11.4-update
+[5]: ./11.5-update
+[7]: ./11.7-update
+[8]: ./11.8-update
+[11]: ./11.11-update
+[12]: ./11.12-update

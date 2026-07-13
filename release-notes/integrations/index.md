@@ -88,16 +88,15 @@ See all the [new or updated apps][2]
 * [SalesScreen Integration][34] from SalesScreen (12.12.2025)
 * [Activity folders for SuperOffice][39] from SuperOffice AS (01.12.2025)
 
-<!-- Referenced links -->
 [2]: https://appstore.superoffice.com/Category/new-and-updated
-[3]: sofo/6.3-update.md
+[3]: ./sofo/6.3-update
 [6]: https://community.superoffice.com/en/product-releases/release-notes/
-[13]: video-meetings/2.9-update.md
+[13]: ./video-meetings/2.9-update
 [15]: https://community.superoffice.com/en/support-faqs/faq/zapier-integration-version-3.5-changes-in-request-properties?utm_medium=docs&utm_source=release%20notes&utm_campaign=integration
 [16]: https://appstore.superoffice.com/superoffice-as/connecterp-for-visma-net
 [17]: https://appstore.superoffice.com/superoffice-as/connecterp-for-businessnxt
 [19]: https://appstore.superoffice.com/superoffice-as/connecterp-for-tripletex
-[21]: ../../integrations/webtools/index.md
+[21]: ../../integrations/webtools/index
 [26]: ../../integrations/index.yml
 [33]: https://appstore.superoffice.com/oneflow-ab/oneflow-for-superoffice?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
 [34]: https://appstore.superoffice.com/salesscreen/salesscreen-integration?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
@@ -109,7 +108,7 @@ See all the [new or updated apps][2]
 [40]: https://appstore.superoffice.com/syncify-ab/xledger-by-syncify
 [41]: https://appstore.superoffice.com/superoffice-as/supernotes
 [42]: https://appstore.superoffice.com/leadx/leadx-360
-[43]: ../../integrations/supernotes/index.md
+[43]: ../../integrations/supernotes/index
 [44]: https://appstore.superoffice.com/superoffice-as/connecterp-for-fortnox
 [45]: https://appstore.superoffice.com/superoffice-as/databridge-for-superoffice
 [46]: https://appstore.superoffice.com/superoffice-as/sharepoint-documents
@@ -131,5 +130,3 @@ See all the [new or updated apps][2]
 [63]: https://appstore.superoffice.com/superoffice-as/superoffice-for-outlook
 [64]: https://appstore.superoffice.com/superoffice-as/superoffice-for-teams
 [65]: https://appstore.superoffice.com/inzynk/inzynk-for-superoffice
-
-<!-- Referenced images -->

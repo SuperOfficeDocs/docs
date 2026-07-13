@@ -83,7 +83,3 @@ Changes from v11.7.727 and v11.8.788.0
 * New items
   * Field `.CopilotServiceProcedure`
   * Field `.CopilotServiceSystemPrompt`
-
-
-
-

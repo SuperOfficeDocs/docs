@@ -21,7 +21,6 @@ Version 12 of the API reference includes changes from the v11.13 release, listed
 
 * [(12.2)][3]
 
-<!-- Referenced links-->
-[1]: 12.0/12.0-update.md
-[2]: 12.1/12.1-update.md
-[3]: 12.2/12.2-update.md
+[1]: ./12.0/12.0-update
+[2]: ./12.1/12.1-update
+[3]: ./12.2/12.2-update

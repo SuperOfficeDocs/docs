@@ -1,4 +1,4 @@
-﻿---
+---
 uid: whats-new-70-collectionops
 title: CollectionOps
 description: NetServer 7.0
@@ -54,7 +54,7 @@ This can be done quite smoothly:
 
 ## Dictionaries
 
-CreateDictionaryFromXXX( ... ) – many overloads
+CreateDictionaryFromXXX( ... ) - many overloads
 
 * Take some kind of collection of items
 * Apply a delegate to each item, to extract/make a key
@@ -90,10 +90,9 @@ Since `ArchiveRestrictionInfo` has an overridden `ToString` method, meant for de
 
 ![ALT][img6]
 
-<!-- Referenced images -->
-[img1]: media/image008.jpg
-[img2]: media/image009.jpg
-[img3]: media/image010.jpg
-[img4]: media/image011.jpg
-[img5]: media/image012.jpg
-[img6]: media/image013.jpg
+[img1]: /media/loc/en/release-notes/api/ns-70/image008.jpg
+[img2]: /media/loc/en/release-notes/api/ns-70/image009.jpg
+[img3]: /media/loc/en/release-notes/api/ns-70/image010.jpg
+[img4]: /media/loc/en/release-notes/api/ns-70/image011.jpg
+[img5]: /media/loc/en/release-notes/api/ns-70/image012.jpg
+[img6]: /media/loc/en/release-notes/api/ns-70/image013.jpg

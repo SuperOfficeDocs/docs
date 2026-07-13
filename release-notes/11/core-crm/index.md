@@ -16,7 +16,7 @@ language: en
 # New and improved Core CRM and Sales
 
 * [User setup to configure email and document management (11.11)][11]
-* [Dashboards – Visualize time spent in each sales stage (11.10)][10]
+* [Dashboards - Visualize time spent in each sales stage (11.10)][10]
 * [Notifications for re‑assigned follow‑ups (11.10)][10]
 * [Dashboard - Quick filter in dashboard (11.7)][7]
 * [Dashboard - Load a tile again on time outs (11.7)][7]
@@ -42,11 +42,10 @@ language: en
 * [Side panel - Preview email with attachments, recipients and reply/forward (11.3)][3]
 * [Selection - Board view for sales (11.2)][2]
 
-<!-- Referenced links-->
-[2]: 11.2-update.md
-[3]: 11.3-update.md
-[4]: 11.4-update.md
-[6]: 11.6-update.md
-[7]: 11.7-update.md
-[10]: 11.10-update.md
-[11]: 11.11-update.md
+[2]: ./11.2-update
+[3]: ./11.3-update
+[4]: ./11.4-update
+[6]: ./11.6-update
+[7]: ./11.7-update
+[10]: ./11.10-update
+[11]: ./11.11-update

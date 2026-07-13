@@ -3,8 +3,6 @@ uid: version_10.1.9.1223_changes
 date: 12.07.2022
 ---
 
-<!-- markdownlint-disable-file MD013 MD024-->
-
 # Changes from v10.1.8.583 and v10.1.9.1223
 
 ## Web Services
@@ -171,7 +169,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `SetLeftOuterJoin(Equal)`
   * Method `SetLeftOuterJoin(Equal, Restriction)`
 
-#### SuperOffice.CRM.ArchiveLists.QueryProviderBase&lt;RowType> is Modified
+#### SuperOffice.CRM.ArchiveLists.QueryProviderBase&lt;RowType\> is Modified
 
 * New items
   * Method `GetAllExtenders()`

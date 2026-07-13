@@ -132,17 +132,16 @@ Delivery of outgoing messages to message plugins, updated with status asynchrono
 | `session_key` | varchar(256) | The reference used for identifying a session, like in-reply-to and message ID |
 | `outgoing_message_id` | int | Reference to the outgoing message entry created by NetServer for sending and status update |
 
-<!-- Referenced links -->
-[1]: ../../docs/en/database/tables/outgoing-message.md
-[2]: ../../docs/en/database/tables/appointment.md
-[3]: ../../docs/en/database/tables/project.md
-[4]: ../../docs/en/database/tables/projtype.md
-[5]: ../../docs/en/database/tables/suggestedappointment.md
-[6]: ../../docs/en/database/tables/saletype.md
-[7]: ../../docs/en/database/tables/ticket.md
-[8]: ../../docs/en/database/tables/extra-menus.md
-[9]: ../../docs/en/database/tables/s-link.md
-[10]: ../../docs/en/database/tables/s-shipment-addr.md
-[11]: ../../docs/en/database/tables/s-list-shipment.md
-[12]: ../../docs/en/database/tables/inbox.md
-[13]: ../../docs/en/database/tables/sms.md
+[1]: ../../docs/en/database/tables/outgoing-message
+[2]: ../../docs/en/database/tables/appointment
+[3]: ../../docs/en/database/tables/project
+[4]: ../../docs/en/database/tables/projtype
+[5]: ../../docs/en/database/tables/suggestedappointment
+[6]: ../../docs/en/database/tables/saletype
+[7]: ../../docs/en/database/tables/ticket
+[8]: ../../docs/en/database/tables/extra-menus
+[9]: ../../docs/en/database/tables/s-link
+[10]: ../../docs/en/database/tables/s-shipment-addr
+[11]: ../../docs/en/database/tables/s-list-shipment
+[12]: ../../docs/en/database/tables/inbox
+[13]: ../../docs/en/database/tables/sms

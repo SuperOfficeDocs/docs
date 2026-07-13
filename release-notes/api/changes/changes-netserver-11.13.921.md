@@ -1,4 +1,4 @@
-﻿---
+---
 uid: version_11.13.921_changes
 date: 29.04.2026
 ---
@@ -298,14 +298,14 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `ConnectErpStandard`
   * Field `Map4YouPro`
 
-#### SuperOffice.Threading.AsyncQueue<TItem> is Modified
+#### SuperOffice.Threading.AsyncQueue\<TItem\> is Modified
 
 * Deleted items
   * Method `AsyncQueue(INSPrincipalAccessor, ILogger<AsyncQueue<TItem>>)`
 * New items
   * Method `AsyncQueue(INSPrincipalAccessor, ILogger<AsyncQueue<TItem>>, AsyncQueueTracker)`
 
-#### SuperOffice.Threading.AsyncQueueBase<TItem> is Modified
+#### SuperOffice.Threading.AsyncQueueBase\<TItem\> is Modified
 
 * Deleted items
   * Method `AsyncQueueBase(INSPrincipalAccessor, ILogger<AsyncQueueBase<TItem>>)`

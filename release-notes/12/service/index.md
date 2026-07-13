@@ -17,5 +17,4 @@ language: en
 
 * [Spam classification on requests (12.0)][0]
 
-<!-- Referenced links-->
-[0]: 12.0-update.md
+[0]: ./12.0-update

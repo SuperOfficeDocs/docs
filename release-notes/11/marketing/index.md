@@ -18,19 +18,18 @@ language: en
 * [Forms - Add custom contact and company fields (11.13)][13]
 * [Forms - Custom styling of your form (11.11)][11]
 * [Form - Use Google fonts in your forms (11.9)][9]
-* [Settings and maintenance – Marketing screen with conversion tracking (UTM) (11.6)][6]
+* [Settings and maintenance - Marketing screen with conversion tracking (UTM) (11.6)][6]
 * [Marketing Form - Use UTM tracking when publishing the form (11.6)][6]
-* [Dashboard – Lead management tiles (11.6)][6]
+* [Dashboard - Lead management tiles (11.6)][6]
 * [Contact selections - Use board view to get overview of leads (11.6)][6]
 * [Company - Category list (11.6)][6]
 * [Contact - Lead status list (11.6)][6]
-* [Marketing Form – Pre-populate fields linked from a mailing (11.5)][5]
-* [Marketing Flow – distribute to owner step (11.3)][3]
+* [Marketing Form - Pre-populate fields linked from a mailing (11.5)][5]
+* [Marketing Flow - distribute to owner step (11.3)][3]
 
-<!-- Referenced links-->
-[3]: 11.3-update.md
-[5]: 11.5-update.md
-[6]: 11.6-update.md
-[9]: 11.9-update.md
-[11]: 11.11-update.md
-[13]: 11.13-update.md
+[3]: ./11.3-update
+[5]: ./11.5-update
+[6]: ./11.6-update
+[9]: ./11.9-update
+[11]: ./11.11-update
+[13]: ./11.13-update

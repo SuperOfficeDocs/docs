@@ -10,7 +10,6 @@ deployment: onsite, online
 category: database
 ---
 
-<!-- markdownlint-disable-file MD036 -->
 # Released database changes in version 10.3.7.452
 
 ## SuperOffice

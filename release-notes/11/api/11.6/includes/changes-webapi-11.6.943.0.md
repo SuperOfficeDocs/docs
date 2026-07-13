@@ -24,11 +24,7 @@ Changes from v11.5.755 and v11.6.943.0
 
 #### SuperOffice.WebApi.Data.BoardViewSettingsBase is Modified
 
-
 #### SuperOffice.WebApi.Data.RagType is Modified
 
 * New items
   * Field `Website`
-
-
-

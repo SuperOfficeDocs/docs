@@ -3,7 +3,6 @@ uid: version_10.5.3.711_changes
 date: 27.03.2025
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.5.2.435 and v10.5.3.711
 
 ## Web Services

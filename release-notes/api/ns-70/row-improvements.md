@@ -1,4 +1,4 @@
-﻿---
+---
 uid: whats-new-70-rows
 title: Row improvements
 description: NetServer 7.0
@@ -44,7 +44,6 @@ We have improved the documentation on the Row/Rows objects
 
 ![ALT][img3]
 
-<!-- Referenced images -->
-[img1]: media/image005.jpg
-[img2]: media/image006.jpg
-[img3]: media/image007.jpg
+[img1]: /media/loc/en/release-notes/api/ns-70/image005.jpg
+[img2]: /media/loc/en/release-notes/api/ns-70/image006.jpg
+[img3]: /media/loc/en/release-notes/api/ns-70/image007.jpg

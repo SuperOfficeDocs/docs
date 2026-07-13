@@ -3,7 +3,7 @@ uid: release-notes-10.5
 title: What's new in SuperOffice CRM 10.5
 description: Release notes. What's new in SuperOffice CRM 10.5
 keywords: AI copilot, new user interface, updated diary
-author: SuperOffice AS – Product and Engineering
+author: SuperOffice AS - Product and Engineering
 date: 05.05.2025
 version: 10.5
 content_type: release-note
@@ -18,7 +18,7 @@ category: crm
 
 We've listened closely to your feedback and are happy to present a refreshed SuperOffice experience that's designed to make every interaction simpler, faster, and more meaningful.
 
-* **AI-powered Copilot**: Meet your new sidekick, ready to make you more efficient and help you focus on what matters most—your relationships.
+* **AI-powered Copilot**: Meet your new sidekick, ready to make you more efficient and help you focus on what matters most-your relationships.
 * **A fresh new look and feel**: to start the year with a new SuperOffice interface.
 * **New ways to interact with your information**: a different Diary experience and click-saving actions.
 
@@ -61,7 +61,7 @@ Check out our **Product release** overview for more details in our [Community][1
 * 10.5.3 (11.03.2025):
   * [Dashboard - Export to Excel from tile drill down][20] in Core CRM
   * [Requests - Quickly add a request from the section tab][21] in Service
-  * [Requests – Preference for expanded messages][21] in Service
+  * [Requests - Preference for expanded messages][21] in Service
 
 * 10.5.2 (11.02.2025):
   * [Diary - The context menu on Follow-up includes Create new based on this][19] in Core CRM
@@ -88,7 +88,7 @@ Check out our **Product release** overview for more details in our [Community][1
 
 ### Office integrations
 
-* [SuperOffice for Outlook update – Action required (6.0)][13]
+* [SuperOffice for Outlook update - Action required (6.0)][13]
 
 Latest released versions:
 
@@ -134,27 +134,26 @@ We use **pilot programs** to assess how well the features and functions meet our
 * [SuperOffice CRM - AI Lab][8] (available from 10.3.2 - 20.02.2024)
 * [SuperOffice Service - New Service Request][9] (available on demand from 10.2.1 - 27.01.2023)
 
-<!-- Referenced links -->
-[1]: admin/10.5.1-update.md
-[2]: core-crm/10.5.1-update.md
-[5]: ../mobile/index.md
+[1]: ./admin/10.5.1-update
+[2]: ./core-crm/10.5.1-update
+[5]: ../mobile/index
 [6]: https://appstore.superoffice.com/Category/new-and-updated
 [7]: https://community.superoffice.com/en/product-releases/pilot-programs/
 [8]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/
 [9]: https://community.superoffice.com/en/product-releases/whats-new/product/
 [10]: https://community.superoffice.com/en/product-releases/release-notes/
-[11]: ../../integrations/superoffice-for-outlook/index.md
-[12]: ../../docs/en/mobile/index.md
-[13]: ../integrations/sofo/6.0-update.md
+[11]: ../../integrations/superoffice-for-outlook/index
+[12]: ../../docs/en/mobile/index
+[13]: ../integrations/sofo/6.0-update
 [14]: ../../docs/en/learn/index.yml
-[16]: ../../docs/en/developer-portal/analytics/logs.md
-[17]: admin/10.5.2-update.md#split-request
-[18]: admin/10.5.2-update.md#close-request
-[19]: core-crm/10.5.2-update.md
-[20]: core-crm/10.5.3-update.md
-[21]: service/10.5.3-update.md
-[22]: admin/10.5.5-update.md
-[23]: core-crm/10.5.5-update.md
-[24]: service/10.5.5-update.md
-[25]: ../../docs/en/developer-portal/widgets/index.md#publish-status
+[16]: ../../docs/en/developer-portal/analytics/logs
+[17]: ./admin/10.5.2-update#split-request
+[18]: ./admin/10.5.2-update#close-request
+[19]: ./core-crm/10.5.2-update
+[20]: ./core-crm/10.5.3-update
+[21]: ./service/10.5.3-update
+[22]: ./admin/10.5.5-update
+[23]: ./core-crm/10.5.5-update
+[24]: ./service/10.5.5-update
+[25]: ../../docs/en/developer-portal/widgets/index#publish-status
 [26]: https://appstore.superoffice.com/superoffice-as/activity-folders-for-superoffice

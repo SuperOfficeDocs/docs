@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 MD033 MD024 MD012 MD013-->
 Changes from v11.3.1349 and v11.4.1157.0
 
 ## Web Services
@@ -75,7 +74,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 * New items
   * Method `ConvertToStream(Image)`
-
 
 ### Assembly: SuperOffice.Services.Implementation
 
@@ -178,7 +176,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Method `CrmConnectionHandlerFacade(IServiceScopeFactory)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -212,7 +209,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Property `.OnlineConfigurationUserflowApiKey`
 
-
 #### SuperOffice.Configuration.VersionPropertyNames is Modified
 
 * New items
@@ -234,14 +230,12 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Deleted items
   * Field `.DiaryViewSecretaryMode`
 
-
 ##### SuperOffice.CRM.UserPreferenceStrings.SalesNotification is Modified
 
 * Deleted items
   * Field `.SalesNotificationNotifyCompanyAssignment`
 * New items
   * Field `.SalesNotificationNotifyContactOwnership`
-
 
 #### SuperOffice.Data.RagType is Modified
 
@@ -368,8 +362,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Property `.HttpServiceJwtConfigNumberOfAttempts`
 
-
-
 ### Assembly: SoDatabase
 
 ### Deleted Types
@@ -474,7 +466,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `TrackEventSender(IOptions<OnlineConfiguration>, ILogger<TrackEventSender>, IAsyncQueue<TrackEvent>)`
 
-
 ### Assembly: SoDatabase.BusinessLogic
 
 ### New Types
@@ -555,7 +546,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.ArchiveLists.ExtensibleColumnsBase is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.PersonExtenderBase is Modified
 
 * Modified items
@@ -565,12 +555,9 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `.FeaturesUtmParameters`
 
-
 #### SuperOffice.CRM.ArchiveLists.ProjectMemberExtenderBase is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.UtmParametersExtenderBase is Modified
-
 
 #### SuperOffice.Data.UdefPublishHelper is Modified
 
@@ -602,7 +589,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `WebAppUsageRecorder()`
   * Method `RecordUsageAsync(String, DateTime, Int32, UInt32)`
 
-
 ## Continuous Database
 
 The following represent changes to SuperOffice database schema.
@@ -622,6 +608,3 @@ The following represent changes to SuperOffice database schema.
 
 * New items
   * Field `LeadstatusId`
-
-
-

@@ -4011,7 +4011,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * Modified items
   * Property `Type`
 
-
 ### Assembly: SuperOffice.Services.Implementation
 
 ### Deleted Types
@@ -9262,7 +9261,7 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `ExecuteCommandAsync<TPluginType, TEntity>(String, CommandActionResult, TEntity, CancellationToken)`
   * Method `GetCommandsAsync<TPluginType, TEntity>(TEntity, CancellationToken)`
 
-#### SuperOffice.CRM.Services.Implementation.CustomCommands.ICustomCommandPlugin<TEntity> is Modified
+#### SuperOffice.CRM.Services.Implementation.CustomCommands.ICustomCommandPlugin\<TEntity\> is Modified
 
 * Deleted items
   * Method `ExecuteCommand(String, CommandActionResult, TEntity)`
@@ -9642,6 +9641,7 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `SaveStatusMonitor(StatusMonitor)`
 
 ##### SuperOffice.CRM.Services.Implementation.Util.StatusMonitorHelper.ProgressCallback is Deleted
+
 * New items
   * Method `GetActiveStatusMonitorAsync(Int32, TableInfo, CancellationToken)`
   * Method `GetActiveStatusMonitorIdAsync(Int32, TableInfo, CancellationToken)`

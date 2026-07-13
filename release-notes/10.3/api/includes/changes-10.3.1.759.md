@@ -3,7 +3,6 @@ uid: version_10.3.1.759_changes
 date: 01.20.2024
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.2.11.1228 and v10.3.1.759
 
 ## Web Services
@@ -443,7 +442,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `GetAllCategories(Boolean)`
 
-#### SuperOffice.CRM.Cache.MDOListTableCacheTypedBase<T> is Modified
+#### SuperOffice.CRM.Cache.MDOListTableCacheTypedBase\<T\> is Modified
 
 * New items
   * Method `GetAllItems(Boolean)`

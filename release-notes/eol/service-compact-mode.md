@@ -12,7 +12,7 @@ topic: # within the category
 platform: # web win mobile api integration
 deployment: # onsite or online
 license: serviceessentials, servicepremium
-functional_right: 
+functional_right:
 audience: person
 audience_tooltip: SuperOffice CRM
 lang: en
@@ -30,7 +30,4 @@ You can access our **SuperOffice Mobile CRM** app in our [Appstore][1]. This app
 
 The CompactMode has been replaced by our Mobile CRM app. We would like to emphasize that the app is far richer in functionality and gives you 360-degree customer overview because of the inclusion of all standard entities in the Mobile CRM app.
 
-<!-- Referenced links -->
 [1]: https://appstore.superoffice.com/superoffice-as/superoffice-mobile-crm
-
-<!-- Referenced images -->

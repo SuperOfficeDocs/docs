@@ -1,4 +1,4 @@
-﻿---
+---
 uid: version_12.0.342.0_changes
 date: 05.06.2026
 ---
@@ -597,7 +597,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `GetCachedMailItemAsync(Int32, String, String, String, String, Boolean, CancellationToken)`
   * Method `GetMinimalMailEnvelope(Int32, String, EMailFlags)`
 
-#### SuperOffice.CRM.Mail.MailSession<TMailInterface> is Modified
+#### SuperOffice.CRM.Mail.MailSession\<TMailInterface\> is Modified
 
 * Deleted items
   * Method `MailSession(String, String, String, Boolean)`

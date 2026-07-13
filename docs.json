@@ -10808,6 +10808,638 @@
     {
       "source": "/en/automation/zapier/reference",
       "destination": "/integrations/zapier/reference"
+    },
+    {
+      "source": "/en/reports/learn/create",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/cross-tables",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/delete-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/filter",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/open-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/preview",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/print",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/properties",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/run",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/save",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/standard-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/working-with-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/favorites/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/favorites/delete",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/favorites/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/favorites/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/labels/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/screen/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/search-criteria/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/search-criteria/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/reports/learn/search-criteria/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/en/admin/options/learn/reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/create",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/cross-tables",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/delete-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/filter",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/open-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/preview",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/print",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/properties",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/run",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/save",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/standard-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/working-with-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/favorites/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/favorites/delete",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/favorites/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/favorites/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/labels/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/screen/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/search-criteria/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/search-criteria/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/da/reports/learn/search-criteria/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/create",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/cross-tables",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/delete-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/filter",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/open-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/preview",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/print",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/properties",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/run",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/save",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/standard-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/working-with-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/favorites/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/favorites/delete",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/favorites/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/favorites/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/labels/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/screen/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/search-criteria/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/search-criteria/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/de/reports/learn/search-criteria/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/create",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/cross-tables",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/delete-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/filter",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/open-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/preview",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/print",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/properties",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/run",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/save",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/standard-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/working-with-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/favorites/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/favorites/delete",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/favorites/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/favorites/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/labels/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/screen/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/search-criteria/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/search-criteria/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/no/reports/learn/search-criteria/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/create",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/cross-tables",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/delete-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/filter",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/open-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/preview",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/print",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/properties",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/run",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/save",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/standard-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/working-with-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/favorites/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/favorites/delete",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/favorites/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/favorites/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/labels/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/screen/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/search-criteria/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/search-criteria/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/sv/reports/learn/search-criteria/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/create",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/cross-tables",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/delete-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/filter",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/open-from-archive",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/preview",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/print",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/properties",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/run",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/save",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/standard-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/working-with-reports",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/favorites/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/favorites/delete",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/favorites/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/favorites/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/labels/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/screen/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/search-criteria/add",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/search-criteria/edit",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/nl/reports/learn/search-criteria/index",
+      "destination": "/release-notes/eol/reports"
+    },
+    {
+      "source": "/release-notes/8.5/office-integrations/8.5-R11-update",
+      "destination": "/release-notes/integrations/mail-link/8.5-R11-update"
+    },
+    {
+      "source": "/release-notes/8.5/office-integrations/8.5-R14-update",
+      "destination": "/release-notes/integrations/mail-link/8.5-R14-update"
+    },
+    {
+      "source": "/release-notes/8.5/office-integrations/",
+      "destination": "/release-notes/integrations/mail-link/index"
+    },
+    {
+      "source": "/release-notes/10.1/office-integrations/10.1.4-update",
+      "destination": "/release-notes/integrations/sharepoint/10.1.4-update"
+    },
+    {
+      "source": "/release-notes/10.2/office-integrations/3.2-update",
+      "destination": "/release-notes/integrations/sharepoint/3.2-update"
+    },
+    {
+      "source": "/release-notes/10.1/office-integrations/",
+      "destination": "/release-notes/integrations/sharepoint/index"
+    },
+    {
+      "source": "/release-notes/10.3/office-integrations/3.1-update",
+      "destination": "/release-notes/integrations/sofo/3.1-update"
+    },
+    {
+      "source": "/release-notes/10.5/office-integrations/6.0-update",
+      "destination": "/release-notes/integrations/sofo/6.0-update"
+    },
+    {
+      "source": "/release-notes/10.5/office-integrations/",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/10.0/office-integrations/",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/10.0/office-integrations/10.0.6-update",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/9.2/office-integrations/",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/9.2/office-integrations/2.5-update",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/9.2/office-integrations/2.4-update",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/9.1/office-integrations/",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/9.1/office-integrations/9.1-R01-update",
+      "destination": "/release-notes/integrations/sofo/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.1.6-update",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.1.5-update",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.1.4-update",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.1.1-update",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.0.9-update",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.0.7-update",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.0.5-update",
+      "destination": "/release-notes/pocket-crm/index"
+    },
+    {
+      "source": "/release-notes/pocket-crm/9.0.4-update",
+      "destination": "/release-notes/pocket-crm/index"
     }
   ]
 }

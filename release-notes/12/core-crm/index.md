@@ -19,5 +19,4 @@ language: en
 * [Find - Sale cycle as criteria and column (12.2)][2]
 * [Email and Document - Download the email or document file (12.2)][2]
 
-<!-- Referenced links-->
-[2]: 12.2-update.md
+[2]: ./12.2-update

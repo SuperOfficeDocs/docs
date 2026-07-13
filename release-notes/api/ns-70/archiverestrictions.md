@@ -1,4 +1,4 @@
-﻿---
+---
 uid: whats-new-70-archiverestrictions
 title: ArchiveRestrictions
 description: NetServer 7.0
@@ -25,5 +25,4 @@ This is almost universally supported. Some very special "restrictions", like tho
 
 ![ALT][img1]
 
-<!-- Referenced images -->
-[img1]: media/image019.jpg
+[img1]: /media/loc/en/release-notes/api/ns-70/image019.jpg

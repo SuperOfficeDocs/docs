@@ -19,7 +19,6 @@ transform-*.ps1
 # Exclude specific files
 private-notes.md
 bergfrid-tmp/
-release-notes/poc
 redirects.json
 
 # Exclude selected content folders to keep mint dev below 5000 pages
@@ -45,9 +44,8 @@ redirects.json
 
 # Newly forklifted from superoffice-docs (2026-07-13), not yet reformatted for Mintlify
 # (raw DocFx md/mdx, will break mint dev) — blanket-ignored for now, no exceptions.
-# de, no, sv, and nl are deliberately NOT ignored (converted to Mintlify, excluded from this batch). downloads is also NOT ignored — its one real content file (api/index.md) is converted; the other 84 files are static assets, not pages. integrations is also NOT ignored — converted to Mintlify (#52). media is static assets, not pages.
+# de, no, sv, and nl are deliberately NOT ignored (converted to Mintlify, excluded from this batch). downloads is also NOT ignored — its one real content file (api/index.md) is converted; the other 84 files are static assets, not pages. integrations is also NOT ignored — converted to Mintlify (#52). release-notes is also NOT ignored — converted to Mintlify (#53). media is static assets, not pages.
 da/**
-release-notes/**
 
 # Ignore database except index files
 en/database/**

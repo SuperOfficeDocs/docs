@@ -16,7 +16,7 @@ language: en
 
 SuperOffice 12 introduces a new way to license SuperOffice for new customers, bringing Sales, Marketing, and Service together across [five plans - Starter, Core, Growth, Plus, and Super][23]. Sales, Marketing, and Service functionality is included in all plans. AI capabilities are also available across all areas of SuperOffice, included in the different plans.
 
-At SuperOffice, relationships are at the heart of everything we do — and we believe the right tools should make those relationships easier to build and maintain. We look forward to sharing what's ahead.
+At SuperOffice, relationships are at the heart of everything we do - and we believe the right tools should make those relationships easier to build and maintain. We look forward to sharing what's ahead.
 
 ## SuperOffice CRM versions
 
@@ -97,26 +97,24 @@ We use **pilot programs** to assess how well the features and functions meet our
 
     ![filter toc -screenshot][img3]
 
-<!-- Referenced links-->
-[7]: mobile/index.md
-[9]: 12/index.md
-[10]: 10.5/index.md
-[11]: 11/index.md
-[12]: integrations/index.md
-[13]: ../integrations/superoffice-for-outlook/index.md
-[14]: ../docs/en/mobile/index.md
+[7]: ./mobile/index
+[9]: ./12/index
+[10]: ./10.5/index
+[11]: ./11/index
+[12]: ./integrations/index
+[13]: ../integrations/superoffice-for-outlook/index
+[14]: ../docs/en/mobile/index
 [15]: ../docs/en/learn/index.yml
 [16]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [17]: https://community.superoffice.com/en/product-releases/pilot-programs/
-[18]: ../docs/en/developer-portal/widgets/index.md#publish-status
-[19]: ../docs/en/onsite/version-history.md
-[20]: ../integrations/supernotes/index.md
+[18]: ../docs/en/developer-portal/widgets/index#publish-status
+[19]: ../docs/en/onsite/version-history
+[20]: ../integrations/supernotes/index
 [21]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [22]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [23]: https://www.superoffice.com/pricing/?utm_medium=docs&utm_source=release%20notes&utm_campaign=crmsuites
 
-<!-- Referenced images-->
-[img1]: media/expand-toc.png
-[img2]: media/in-this-article.png
-[img3]: media/filter-toc.png
-[img4]: media/whats-new.png
+[img1]: /media/loc/en/release-notes/expand-toc.png
+[img2]: /media/loc/en/release-notes/in-this-article.png
+[img3]: /media/loc/en/release-notes/filter-toc.png
+[img4]: /media/loc/en/release-notes/whats-new.png

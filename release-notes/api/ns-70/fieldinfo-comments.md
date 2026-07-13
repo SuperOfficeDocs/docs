@@ -1,4 +1,4 @@
-﻿---
+---
 uid: whats-new-70-fieldinfo
 title: FieldInfo comments
 description: NetServer 7.0
@@ -16,7 +16,6 @@ category: api
 
 Now contains declared length (for strings), and the .NET type. Therefore you know which Reader.GetXXX method to use.
 
-Also includes the description of the field from the dictionary – feedback on these always accepted.
+Also includes the description of the field from the dictionary - feedback on these always accepted.
 
-<!-- Referenced images -->
-[img1]: media/image004.jpg
+[img1]: /media/loc/en/release-notes/api/ns-70/image004.jpg

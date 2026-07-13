@@ -16,7 +16,7 @@ SuperOffice 7 introduced a lot of changes to the database as we merged CS and SM
 
 * Contact name & department are extended to 220 characters
 * Project.name, selection.name, document.header
-* Address fields  \[80\]
+* Address fields  \[80\]
 * Phone number - The search algorithm has been changed to handle arbitrarily long numbers, with more-or-less the same results. There is no practical limit to the phone number length anymore.
 * Userpreference section, key, value -
   * preference values are now 2k, so the old hack that put long values into the text table is gone. Existing rows are converted during upgrade.
@@ -31,7 +31,7 @@ A unicode string consumes 2 bytes/char.
 
 A multi-field index creates nodes from the sum of all fields.
 
-And – so – if name + department (which have a combined index) become more than 900 bytes of actual content, save fails.
+And - so - if name + department (which have a combined index) become more than 900 bytes of actual content, save fails.
 For the most popular field combinations, we have limited the size; and it does not happen on Oracle.
 If you introduce new combined indexes as part of some optimization, bear this in mind. The 900-byte limit is there.
 
@@ -108,13 +108,12 @@ eJournal can insert person records with `contact_id` = 0; these are invisible in
 
 A Customer Service user is an associate but has an extra record in the table `ejuser`.
 
-<!-- Referenced links -->
-[1]: ../../docs/en/database/tables/saletypecat.md
-[2]: ../../docs/en/database/tables/saletype.md
-[3]: ../../docs/en/database/tables/reasonstalled.md
-[4]: ../../docs/en/database/tables/reasonsold.md
-[5]: ../../docs/en/database/tables/salestakeholder.md
-[6]: ../../docs/en/database/tables/saletypestagelink.md
-[7]: ../../docs/en/database/tables/stakeholderrole.md
-[8]: ../../docs/en/database/tables/suggestedappointment.md
-[9]: ../../docs/en/database/tables/suggesteddocument.md
+[1]: ../../docs/en/database/tables/saletypecat
+[2]: ../../docs/en/database/tables/saletype
+[3]: ../../docs/en/database/tables/reasonstalled
+[4]: ../../docs/en/database/tables/reasonsold
+[5]: ../../docs/en/database/tables/salestakeholder
+[6]: ../../docs/en/database/tables/saletypestagelink
+[7]: ../../docs/en/database/tables/stakeholderrole
+[8]: ../../docs/en/database/tables/suggestedappointment
+[9]: ../../docs/en/database/tables/suggesteddocument

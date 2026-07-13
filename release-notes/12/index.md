@@ -48,13 +48,12 @@ Some features are available to selected customers as part of ongoing pilots. See
 * [New or updated App Store apps][5]
 * [Release notes in the Community][6]
 
-<!-- Referenced links -->
-[1]: ../index.md#pilot
-[2]: ../mobile/index.md
-[3]: ../integrations/index.md
+[1]: ../index#pilot
+[2]: ../mobile/index
+[3]: ../integrations/index
 [4]: https://appstore.superoffice.com/
 [5]: https://appstore.superoffice.com/Category/new-and-updated
 [6]: https://community.superoffice.com/en/product-releases/release-notes/
-[10]: service/12.0-update.md
-[11]: admin/12.1-update.md
-[12]: core-crm/12.2-update.md
+[10]: ./service/12.0-update
+[11]: ./admin/12.1-update
+[12]: ./core-crm/12.2-update

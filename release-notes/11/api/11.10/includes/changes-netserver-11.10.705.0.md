@@ -67,7 +67,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `GetFlattenedList(ICollection<SelectableMDOListItem>)`
   * Method `GetFlattenedListFull(ICollection<SelectableMDOListItem>)`
 
-
 ### Assembly: SuperOffice.Services.Implementation
 
 ### Deleted Types
@@ -109,7 +108,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Method `GetTicketRelationEntityAsync(Int32, CancellationToken)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -137,6 +135,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 ##### SuperOffice.Configuration.ConfigFile.IReporterConfiguration is Deleted
 
 ##### SuperOffice.Configuration.ConfigFile.Reporter is Deleted
+
 * Modified items
 
 ##### SuperOffice.Configuration.ConfigFile.BatchService is Modified
@@ -145,13 +144,11 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.BatchServiceImpersonateReporterPlugin`
   * Property `.BatchServiceReporterPath`
 
-
 ##### SuperOffice.Configuration.ConfigFile.IBatchServiceConfiguration is Modified
 
 * Deleted items
   * Property `.IBatchServiceConfigurationImpersonateReporterPlugin`
   * Property `.IBatchServiceConfigurationReporterPath`
-
 
 #### SuperOffice.CRM.ArchiveLists.ArchiveColumnInfo is Modified
 
@@ -390,7 +387,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * Deleted items
   * Method `Execute(Func<Task>)`
-
 
 ### Assembly: SoDatabase
 
@@ -646,6 +642,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 ##### SuperOffice.CRM.Data.DBC.SORSectionFields is Deleted
 
 ##### SuperOffice.CRM.Data.DBC.SORTemplateFields is Deleted
+
 * Modified items
 
 ##### SuperOffice.CRM.Data.DBC.ProjectFields is Modified
@@ -654,12 +651,10 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `.ProjectFieldsEventId`
   * Field `.ProjectFieldsStartDate`
 
-
 ##### SuperOffice.CRM.Data.DBC.ProjectMemberFields is Modified
 
 * New items
   * Field `.ProjectMemberFieldsEventParticipantStatus`
-
 
 #### SuperOffice.CRM.Data.ProjectMemberTableInfo is Modified
 
@@ -772,7 +767,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Property `.QueryDataIsRelationLog`
 
-
 #### SuperOffice.Data.S is Modified
 
 * Modified items
@@ -784,7 +778,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.ArgumentFunctionsDateAdd(DatePart, Argument, Argument)`
   * Method `.ArgumentFunctionsDateDiff(DatePart, Argument, Argument)`
-
 
 #### SuperOffice.Data.SQL.DateAdd is Modified
 
@@ -822,7 +815,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `GetSORSectionTableInfo()`
   * Method `GetSORTemplateTableInfo()`
 
-
 ### Assembly: SoDatabase.BusinessLogic
 
 ### Deleted Types
@@ -852,12 +844,9 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.ArchiveLists.Archive.Combinator is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.ProjectExtenderBase is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.ProjectMemberExtenderBase is Modified
-
 
 #### SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider is Modified
 
@@ -906,7 +895,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `GetFormsDesignCssFromImage(Stream, String[], CancellationToken)`
   * Method `GetFormsDesignCssFromUrl(String, String[], CancellationToken)`
-
 
 ### Assembly: SuperOffice.Plugins
 
@@ -972,6 +960,3 @@ The following represent changes to SuperOffice database schema.
 
 * New items
   * Field `EventParticipantStatus`
-
-
-

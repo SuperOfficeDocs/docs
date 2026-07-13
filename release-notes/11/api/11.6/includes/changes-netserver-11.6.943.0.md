@@ -22,7 +22,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Method `GetRawPersonImageAsync(Int32, CancellationToken)`
 
-
 ### Assembly: SuperOffice.Services.Implementation
 
 ### Modified Types
@@ -41,7 +40,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 * New items
   * Property `FlagHidden`
-
 
 ## NetServer Core
 
@@ -113,7 +111,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `SR_SELECTION_QUESTION_DELETE_NUMBEROF_RECORDS`
   * Field `SR_SELECTION_WARNING_PERMANENT_DELETE_RECORDS`
 
-
 ### Assembly: SoDatabase
 
 ### Deleted Types
@@ -156,7 +153,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * New items
   * Field `.SaleFieldsStageWhenClosedId`
-
 
 ##### SuperOffice.CRM.Data.DBC.SaleHistFields is Modified
 
@@ -284,7 +280,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `RenewSoCredentialsAsync(Int32, String, DateTime, SoConnection, CancellationToken)`
 
-
 ### Assembly: SoDatabase.BusinessLogic
 
 ### New Types
@@ -302,12 +297,9 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `.FeaturesUtmParameters`
 
-
 #### SuperOffice.CRM.ArchiveLists.PersonExtenderBase is Modified
 
-
 #### SuperOffice.CRM.ArchiveLists.SaleHistorySaleHistoryExtender is Modified
-
 
 #### SuperOffice.CRM.BulkUpdate.BulkUpdateSystem is Modified
 
@@ -318,9 +310,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `.PersonFieldValueKeysLeadStatus`
 
-
 #### SuperOffice.CRM.Lists.DashboardProvider is Modified
-
 
 #### SuperOffice.CRM.Lists.ServiceAssociateMDOProvider is Modified
 
@@ -352,8 +342,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `UpdateAssociateNameAndLastUsed(SoConnection, Int32, String)`
 
 #### SuperOffice.Util.RagAIHelper is Modified
-
-
 
 ## Continuous Database
 
@@ -392,6 +380,3 @@ The following represent changes to SuperOffice database schema.
 
 * New items
   * Field `StageWhenClosedId`
-
-
-

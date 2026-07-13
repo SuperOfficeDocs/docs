@@ -139,7 +139,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.AccessGatewaySectionAccessGatewaySection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.BatchServiceSection is Modified
 
 * Deleted items
@@ -157,7 +156,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.BatchServiceSectionBatchServiceSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.ClientConfigurationProviderSection is Modified
 
 * Deleted items
@@ -170,7 +168,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.ClientConfigurationProviderSectionValidateConfigurations`
 * New items
   * Method `.ClientConfigurationProviderSectionClientConfigurationProviderSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.ClientSection is Modified
 
@@ -207,7 +204,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.ClientSectionClientSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.CloudSection is Modified
 
 * Deleted items
@@ -228,7 +224,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.CloudSectionCloudSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.CssSpriteSection is Modified
 
 * Deleted items
@@ -242,7 +237,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.CssSpriteSectionRootPath`
 * New items
   * Method `.CssSpriteSectionCssSpriteSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.CustomerServiceSection is Modified
 
@@ -260,7 +254,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.CustomerServiceSectionCustomerServiceSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.CustomProxySection is Modified
 
 * Deleted items
@@ -274,7 +267,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.CustomProxySectionUseCustomProxyForWebhooks`
 * New items
   * Method `.CustomProxySectionCustomProxySection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.Data is Modified
 
@@ -303,7 +295,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.DatabaseSectionDatabaseSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### .Data.ExplicitSection is Modified
 
 * Deleted items
@@ -319,7 +310,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.ExplicitSectionExplicitSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### .Data.SessionSection is Modified
 
 * Deleted items
@@ -328,8 +318,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.SessionSectionReauthenticateOnDeserialization`
 * New items
   * Method `.SessionSectionSessionSection(ConfigFileFacade, IConfiguration)`
-
-
 
 ##### SuperOffice.Configuration.ConfigFile.DiagnosticsSection is Modified
 
@@ -366,7 +354,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.DiagnosticsSectionDiagnosticsSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.DocumentsSection is Modified
 
 * Deleted items
@@ -398,7 +385,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.DocumentsSectionDocumentsSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.DownloadsSection is Modified
 
 * Deleted items
@@ -408,7 +394,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.DownloadsSectionWebToolVersion`
 * New items
   * Method `.DownloadsSectionDownloadsSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.FactorySection is Modified
 
@@ -420,7 +405,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.FactorySectionFactorySection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.FeatureTogglesSection is Modified
 
 * Deleted items
@@ -429,7 +413,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.FeatureTogglesSectionState`
 * New items
   * Method `.FeatureTogglesSectionFeatureTogglesSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.GlobalizationSection is Modified
 
@@ -442,7 +425,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.GlobalizationSectionGlobalizationSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.GoogleRecaptchaSection is Modified
 
 * Deleted items
@@ -454,7 +436,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.GoogleRecaptchaSectionGoogleRecaptchaSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.InfrastructureSection is Modified
 
 * Deleted items
@@ -464,7 +445,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.InfrastructureSectionIsDebugModeActivated`
 * New items
   * Method `.InfrastructureSectionInfrastructureSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.IntellisyncConnectorSection is Modified
 
@@ -478,7 +458,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.IntellisyncConnectorSectionIntellisyncConnectorSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.Mail is Modified
 
 * Modified items
@@ -491,8 +470,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.ComponentSectionNumberOfDaysToDownload`
 * New items
   * Method `.ComponentSectionComponentSection(ConfigFileFacade, IConfiguration)`
-
-
 
 ##### SuperOffice.Configuration.ConfigFile.MessagingSection is Modified
 
@@ -521,7 +498,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.MessagingSectionMessagingSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.OidcLoginSection is Modified
 
 * Deleted items
@@ -534,7 +510,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.OidcLoginSectionOidcLoginSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.PocketSection is Modified
 
 * Deleted items
@@ -544,7 +519,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.PocketSectionAzureNotificationHubName`
 * New items
   * Method `.PocketSectionPocketSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.ReporterSection is Modified
 
@@ -557,7 +531,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.ReporterSectionReporterSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.ScriptingSection is Modified
 
 * Deleted items
@@ -569,7 +542,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.ScriptingSectionTimeoutLimit`
 * New items
   * Method `.ScriptingSectionScriptingSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.Security is Modified
 
@@ -589,7 +561,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.ActiveDirectoryCredentialPluginSectionActiveDirectoryCredentialPluginSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### .Security.CryptographySection is Modified
 
 * Deleted items
@@ -601,7 +572,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.CryptographySectionCryptographySection(ConfigFileFacade, IConfiguration)`
 
-
 ##### .Security.SentrySection is Modified
 
 * Deleted items
@@ -610,7 +580,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.SentrySectionIgnore`
 * New items
   * Method `.SentrySectionSentrySection(ConfigFileFacade, IConfiguration)`
-
 
 ##### .Security.SoPasswordCredentialPluginSection is Modified
 
@@ -624,8 +593,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.SoPasswordCredentialPluginSectionSoPasswordCredentialPluginSection(ConfigFileFacade, IConfiguration)`
 
-
-
 ##### SuperOffice.Configuration.ConfigFile.ServicesSection is Modified
 
 * Deleted items
@@ -635,7 +602,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.ServicesSectionRemoteBaseURL`
 * New items
   * Method `.ServicesSectionServicesSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.SmtpSection is Modified
 
@@ -648,7 +614,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.SmtpSectionSmtpSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.SoFormsAuthenticationSection is Modified
 
 * Deleted items
@@ -659,7 +624,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.SoFormsAuthenticationSectionSoFormsAuthenticationSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.SoJavaScriptSection is Modified
 
 * Deleted items
@@ -669,7 +633,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.SoJavaScriptSectionSoJavaScriptSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.SubClientsSection is Modified
 
 * Deleted items
@@ -678,7 +641,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.SubClientsSectionClients`
 * New items
   * Method `.SubClientsSectionSubClientsSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.SuperIdSection is Modified
 
@@ -692,7 +654,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.SuperIdSectionSuperIdSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.SuspendedSiteSection is Modified
 
 * Deleted items
@@ -703,7 +664,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.SuspendedSiteSectionSuspendedSiteSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.SyncSection is Modified
 
 * Deleted items
@@ -713,7 +673,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.SyncSectionSettingsSlidingExpiration`
 * New items
   * Method `.SyncSectionSyncSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.TestEnvironmentSection is Modified
 
@@ -731,7 +690,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.TestEnvironmentSectionTestEnvironmentSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.ThreadingSection is Modified
 
 * Deleted items
@@ -743,7 +701,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.ThreadingSectionThreadingSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.TimeZoneSection is Modified
 
 * Deleted items
@@ -752,7 +709,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.TimeZoneSectionServiceUrl`
 * New items
   * Method `.TimeZoneSectionTimeZoneSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.WebApiSection is Modified
 
@@ -768,7 +724,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.WebApiSectionWebApiSection(ConfigFileFacade, IConfiguration)`
 
-
 ##### SuperOffice.Configuration.ConfigFile.WebhooksSection is Modified
 
 * Deleted items
@@ -781,7 +736,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Property `.WebhooksSectionValidateHttps`
 * New items
   * Method `.WebhooksSectionWebhooksSection(ConfigFileFacade, IConfiguration)`
-
 
 ##### SuperOffice.Configuration.ConfigFile.WebServicesSection is Modified
 
@@ -947,7 +901,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * New items
   * Field `.ExtraFieldAttribHidden`
-
 
 #### SuperOffice.CRM.INextDueDatePlugin is Modified
 
@@ -1359,6 +1312,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `TryResolveContext(IContextResolver&, String&, String)`
 
 ##### SuperOffice.SoDatabaseContext.DatabaseContext is Deleted
+
 * Modified items
   * Method `EnterDatabaseContext(String)`
 * New items
@@ -1374,7 +1328,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Modified items
   * Property `Principal`
 
-#### SuperOffice.Threading.AsynchronousHandlerProcessor<TAsynchronousArgument> is Modified
+#### SuperOffice.Threading.AsynchronousHandlerProcessor\<TAsynchronousArgument\> is Modified
 
 * Deleted items
   * Property `ThreadName`
@@ -1382,7 +1336,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `ExecuteWorkAsync(CancellationToken)`
 
-#### SuperOffice.Threading.ParallelConsumerQueue<T> is Modified
+#### SuperOffice.Threading.ParallelConsumerQueue\<T\> is Modified
 
 * Deleted items
   * Property `Count`
@@ -1392,7 +1346,8 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `StartConsumers(Int32, Action<T>)`
   * Method `StopConsumers()`
 
-##### SuperOffice.Threading.ParallelConsumerQueue<T>.ConsumerContext is Deleted
+##### SuperOffice.Threading.ParallelConsumerQueue\<T\>.ConsumerContext is Deleted
+
 * Modified items
   * Method `Dequeue()`
 * New items
@@ -1449,7 +1404,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `ResolveUrlOrBase64ImageAsync(String, Int32, CancellationToken)`
 
-#### SuperOffice.Util.KeyedMatrix<TKeyColumn, TKeyRow, TItem> is Modified
+#### SuperOffice.Util.KeyedMatrix\<TKeyColumn, TKeyRow, TItem\> is Modified
 
 * Deleted items
   * Method `MoveItems(KeyedMatrix<TKeyColumn, TKeyRow, TItem>, IEnumerable<MatrixItem<TKeyColumn, TKeyRow, TItem>>, Predicate<MatrixItem<TKeyColumn, TKeyRow, TItem>>)`
@@ -1468,7 +1423,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * New items
   * Property `ClientSecret`
-
 
 ### Assembly: SoDatabase
 
@@ -3715,7 +3669,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * Deleted items
   * Method `GetCurrent()`
 
-#### SuperOffice.CRM.Cache.MDOListTableCacheTypedBase<T> is Modified
+#### SuperOffice.CRM.Cache.MDOListTableCacheTypedBase\<T\> is Modified
 
 * New items
   * Method `OnLoadAsync(CancellationToken)`
@@ -4330,7 +4284,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.Entities.BookingManagerModified is Modified
 
-
 #### SuperOffice.CRM.Entities.ConsentManagement is Modified
 
 * Deleted items
@@ -4650,7 +4603,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `ParseAsync(StringDictionary, String)`
   * Method `SetValueAsync(String, Object, Boolean)`
 
-#### SuperOffice.CRM.Entities.EntityDetailsHelper<TParent, TChild> is Modified
+#### SuperOffice.CRM.Entities.EntityDetailsHelper\<TParent, TChild\> is Modified
 
 * Deleted items
   * Method `LoadChildItems(TParent)`
@@ -5509,7 +5462,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `GetProviderAsync(String, CancellationToken)`
 
-#### SuperOffice.CRM.Lists.ListBase<TListSelect, TListItem> is Modified
+#### SuperOffice.CRM.Lists.ListBase\<TListSelect, TListItem\> is Modified
 
 * Deleted items
   * Method `OnLoad(TListSelect, SoDataReader)`
@@ -5547,7 +5500,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.TableRowsIdxToTableRowsAsync(ITableRowLoadHandlerFactory, CancellationToken)`
   * Method `.TableRowsIdxToTableRowsAsync(CancellationToken)`
-
 
 #### SuperOffice.CRM.Lists.ListWithLiteralItemsBase is Modified
 
@@ -9730,13 +9682,13 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `GetFromIdxKbRootAsync(Int32, CancellationToken)`
   * Method `GetFromReaderAsync(SoDataReader, CustLangTableInfo, CancellationToken)`
 
-#### SuperOffice.CRM.Rows.CustomTableRow<TTableInfo> is Modified
+#### SuperOffice.CRM.Rows.CustomTableRow\<TTableInfo\> is Modified
 
 * Deleted items
   * Method `SetDefaults(DefaulterStrategy)`
 * Modified items
 
-##### SuperOffice.CRM.Rows.CustomTableRow<TTableInfo>.CustomTableRowIdxBase is Modified
+##### SuperOffice.CRM.Rows.CustomTableRow\<TTableInfo\>.CustomTableRowIdxBase is Modified
 
 * Deleted items
   * Method `.CustomTableRowIdxBaseop_Implicit(CustomTableRowIdxBase<TTableInfo>)`
@@ -31437,6 +31389,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `IsPageOneMDO(UDefType)`
 
 ##### SuperOffice.CRM.Rows.UDefFieldCacheBase.PageOneFieldInfo is Deleted
+
 * Modified items
   * Method `GetAllPageOneFieldsFromType(UDefType)`
   * Method `GetPageOneFieldsFromType(UDefType)`
@@ -33614,7 +33567,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `.DataRightCacheOnLoadAsync(CancellationToken)`
 
-
 #### SuperOffice.CRM.Security.SentryPreferenceCache is Modified
 
 * Deleted items
@@ -34115,7 +34067,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `SetPreferenceAsync(String, String, String, Int32, PreferenceLevel, Boolean, Boolean, CancellationToken)`
   * Method `SetPreferenceAsync(String, String, String, CancellationToken)`
 
-#### SuperOffice.Data.SQL.TargetedSelect<MainTableInfo> is Modified
+#### SuperOffice.Data.SQL.TargetedSelect\<MainTableInfo\> is Modified
 
 * Deleted items
   * Method `Count()`
@@ -34205,6 +34157,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `RemoveLicenseFromDB(String)`
 
 ##### SuperOffice.License.LicenseManager.LicenseManagerNonAutoUpdate is Deleted
+
 * Modified items
   * Property `AllowAutoUpdate`
   * Method `GetGrantedModuleLicenses(Int32)`
@@ -34236,7 +34189,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `RemoveLicenseFromDBAsync(String, CancellationToken)`
   * Method `UpgradeToNewPricelistAsync(String, String, String, ProgressEstimateCallback, ProgressStepCallback, CancellationToken)`
 
-#### SuperOffice.License.ModuleLicenseOwnerBase<TLink, TLinkRow> is Modified
+#### SuperOffice.License.ModuleLicenseOwnerBase\<TLink, TLinkRow\> is Modified
 
 * Deleted items
   * Method `OnPreIdUpdate()`
@@ -34372,7 +34325,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Method `TrackEventDispatcher(IAsyncQueue<TrackEvent>, ILogger<TrackEventDispatcher>)`
   * Method `WaitForTrackersToCompleteAsync(CancellationToken)`
-
 
 No changes detected.
 
@@ -34574,7 +34526,6 @@ No changes detected.
 * New items
   * Method `Create(IServiceProvider)`
   * Method `Create(IServiceProvider, Object)`
-
 
 ### Assembly: SoLicense
 

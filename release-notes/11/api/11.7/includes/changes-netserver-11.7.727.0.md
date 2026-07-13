@@ -99,7 +99,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `GetNeedCategoryUpdateForSaleAsync(SaleStatus, Int32, Int32, Int32, CancellationToken)`
   * Method `SaveAllAutomatedCategoryUpdatesAsync(AutomatedCategoryUpdate[], CancellationToken)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -134,12 +133,10 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Property `.ClientDashboardTileTimeoutSeconds`
 
-
 ##### SuperOffice.Configuration.ConfigFile.IClientConfiguration is Modified
 
 * New items
   * Property `.IClientConfigurationDashboardTileTimeoutSeconds`
-
 
 #### SuperOffice.Configuration.VersionPropertyNames is Modified
 
@@ -159,7 +156,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * New items
   * Field `.DataCollectionTimeKeeping`
-
 
 #### SuperOffice.Data.Registry is Modified
 
@@ -239,7 +235,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `SR_TICKETREL_RELDEF_TOOLTIP1`
   * Field `SR_TICKETREL_RELDEF_TOOLTIP2`
   * Field `SR_TICKETREL_RELDEF_TOOLTIP3`
-
 
 ### Assembly: SoDatabase
 
@@ -331,7 +326,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * New items
   * Field `.SShipmentAddrFieldsOwnerLock`
-
 
 ##### SuperOffice.CRM.Data.DBC.TimeKeepingFields is Modified
 
@@ -510,7 +504,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 #### SuperOffice.CRM.ArchiveLists.SaleExtenderBase is Modified
 
-
 #### SuperOffice.Data.Cache.CacheFlusher is Modified
 
 * Modified items
@@ -527,7 +520,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `GetFormsDesignFromImage(Stream, CancellationToken)`
   * Method `GetFormsDesignFromUrl(String, CancellationToken)`
 
-
 ### Assembly: SoLicense
 
 ### Modified Types
@@ -538,7 +530,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `SaveLicenseAsImportFile(LicenseInfo, String)`
   * Method `SaveLicenseAsXml(LicenseInfo, String)`
   * Method `WriteToXml(LicenseInfo)`
-
 
 ## Continuous Database
 
@@ -585,6 +576,3 @@ The following represent changes to SuperOffice database schema.
 * New items
   * Field `OwnerRecord`
   * Field `OwnerTable`
-
-
-

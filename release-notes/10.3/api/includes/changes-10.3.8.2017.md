@@ -3,7 +3,6 @@ uid: version_10.3.8.2017_changes
 date: 08.23.2024
 ---
 
-<!-- markdownlint-disable-file MD041 MD033 MD024-->
 Changes from v10.3.7.352 and v10.3.8.2017
 
 ## Web Services

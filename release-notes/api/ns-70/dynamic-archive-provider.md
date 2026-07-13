@@ -1,4 +1,4 @@
-﻿---
+---
 uid: whats-new-70-dynamic-archive-provider
 title: Dynamic archive provider
 description: NetServer 7.0
@@ -12,7 +12,7 @@ category: api
 
 # Dynamic archive provider
 
-The **dynamic** archive provider supports searches across the relationships defined in the dictionary without having to do any programming. Each field name specifies the query – the table relationships to traverse to read the field.
+The **dynamic** archive provider supports searches across the relationships defined in the dictionary without having to do any programming. Each field name specifies the query - the table relationships to traverse to read the field.
 
 You can fetch the name and department properties on the contact table like this:
 
@@ -45,7 +45,7 @@ string[] archiveColumns = new string[] {
    "contact.name", "contact:business_idx.name" };
 ```
 
-This will inner-join contact and business – so contacts without a business value will be skipped.
+This will inner-join contact and business - so contacts without a business value will be skipped.
 
 Right-outer joins can also be constructed:
 

@@ -20,7 +20,7 @@ language: en
 
 Much of the work in this release has focused on cleaning up outdated and unnecessary code, paving the way for a faster, more reliable, and future-ready solution.
 
-At SuperOffice, relationships are at the heart of everything we do — and strong relationships begin with open, honest communication. That's why we're excited to share this new experience with you as we prepare to roll it out to our cloud customers.
+At SuperOffice, relationships are at the heart of everything we do - and strong relationships begin with open, honest communication. That's why we're excited to share this new experience with you as we prepare to roll it out to our cloud customers.
 
 See our [Product Roundup 2025][31]: Highlights across Marketing, Sales, Service, and Integrations.
 
@@ -45,7 +45,7 @@ See our [Product Roundup 2025][31]: Highlights across Marketing, Sales, Service,
 
 ### 11.10 (17.02.2026)
 
-* [Dashboards – Visualize time spent in each sales stage][29] in Core CRM and Sales
+* [Dashboards - Visualize time spent in each sales stage][29] in Core CRM and Sales
 * [Notifications for re‑assigned follow‑ups][29] in Core CRM and Sales
 * [Marketing - Subscription page styling][28] in Settings and maintenance
 
@@ -79,9 +79,9 @@ See our [Product Roundup 2025][31]: Highlights across Marketing, Sales, Service,
 * [Contact - Lead status list connected to the Category][18] in Core CRM
 * [Search criteria - Lead creation and first touch on companies and contacts][18] in Core CRM
 * [Dashboard - Tiles for lead information][18] in Core CRM
-* [Settings and maintenance – Marketing screen with conversion tracking (UTM)][19] in Marketing
+* [Settings and maintenance - Marketing screen with conversion tracking (UTM)][19] in Marketing
 * [Marketing Form - Add UTM parameters to your campaign links][19] in Marketing
-* [Dashboard – Lead management tiles][19] in Marketing
+* [Dashboard - Lead management tiles][19] in Marketing
 * [Contact selections - Use board view to get overview of leads][19] in Marketing
 * [Company - Category list][19] in Marketing
 * [Contact - Lead status list][19] in Marketing
@@ -94,7 +94,7 @@ See our [Product Roundup 2025][31]: Highlights across Marketing, Sales, Service,
 
 ### 11.5 (16.10.2025)
 
-* [Marketing Form – Pre-populate fields linked from a mailing][14] in Marketing
+* [Marketing Form - Pre-populate fields linked from a mailing][14] in Marketing
 * [Request - Differentiate request types with icons][16] in Service
 * [Reply Tools - Add icon for FAQ/Reply template underneath editor][16] in Service
 
@@ -112,7 +112,7 @@ See our [Product Roundup 2025][31]: Highlights across Marketing, Sales, Service,
 * [Company/Contact - Keep Our contact empty][6] in Core CRM and Sales
 * [Dashboard - Copy dashboard link][6] in Core CRM and Sales
 * [Side panel - Preview email with attachments, recipients and reply/forward][6] in Core CRM and Sales
-* [Marketing Flow – distribute to owner step][7] in Marketing
+* [Marketing Flow - distribute to owner step][7] in Marketing
 * [Request - Anonymise support agent][8] in Service and Settings and maintenance
 * [Preferences - Global preference to anonymise user on reply][9] in Settings and maintenance
 * [CRMScript - Trigger for Load request][9] in Settings and maintenance
@@ -141,44 +141,41 @@ Some features are available to selected customers as part of ongoing pilots. See
 * [New or updated App Store apps][35]
 * [Release notes in the Community][30]
 
-<!-- Referenced links -->
-[1]: admin/11.1-update.md
-[3]: service/11.1-update.md
-[4]: core-crm/11.2-update.md
-[5]: service/11.2-update.md
-[6]: core-crm/11.3-update.md
-[7]: marketing/11.3-update.md
-[8]: service/11.3-update.md
-[9]: admin/11.3-update.md
-[10]: core-crm/11.4-update.md
-[11]: service/11.4-update.md
-[13]: ../integrations/index.md
-[14]: marketing/11.5-update.md
-[15]: ../mobile/index.md
-[16]: service/11.5-update.md
-[17]: ../index.md#pilot
-[18]: core-crm/11.6-update.md
-[19]: marketing/11.6-update.md
-[20]: admin/11.6-update.md
-[21]: core-crm/11.7-update.md
-[22]: service/11.7-update.md
-[23]: service/11.8-update.md
-[24]: admin/11.8-update.md
-[25]: marketing/11.9-update.md
-[26]: admin/11.9-update.md
-[28]: admin/11.10-update.md
-[29]: core-crm/11.10-update.md
+[1]: ./admin/11.1-update
+[3]: ./service/11.1-update
+[4]: ./core-crm/11.2-update
+[5]: ./service/11.2-update
+[6]: ./core-crm/11.3-update
+[7]: ./marketing/11.3-update
+[8]: ./service/11.3-update
+[9]: ./admin/11.3-update
+[10]: ./core-crm/11.4-update
+[11]: ./service/11.4-update
+[13]: ../integrations/index
+[14]: ./marketing/11.5-update
+[15]: ../mobile/index
+[16]: ./service/11.5-update
+[17]: ../index#pilot
+[18]: ./core-crm/11.6-update
+[19]: ./marketing/11.6-update
+[20]: ./admin/11.6-update
+[21]: ./core-crm/11.7-update
+[22]: ./service/11.7-update
+[23]: ./service/11.8-update
+[24]: ./admin/11.8-update
+[25]: ./marketing/11.9-update
+[26]: ./admin/11.9-update
+[28]: ./admin/11.10-update
+[29]: ./core-crm/11.10-update
 [30]: https://community.superoffice.com/en/product-releases/release-notes/
 [31]: https://community.superoffice.com/en/product-releases/whats-new/product/product-roundup---2025-highlights/?utm_medium=docs&utm_source=release%20notes&utm_campaign=11
 [34]: https://appstore.superoffice.com/
 [35]: https://appstore.superoffice.com/Category/new-and-updated
-[36]: core-crm/11.11-update.md
-[37]: marketing/11.11-update.md
-[38]: service/11.11-update.md
-[39]: admin/11.11-update.md
-[40]: admin/11.12-update.md
-[41]: service/11.12-update.md
-[42]: marketing/11.13-update.md
-[43]: admin/11.13-update.md
-
-<!-- Referenced images -->
+[36]: ./core-crm/11.11-update
+[37]: ./marketing/11.11-update
+[38]: ./service/11.11-update
+[39]: ./admin/11.11-update
+[40]: ./admin/11.12-update
+[41]: ./service/11.12-update
+[42]: ./marketing/11.13-update
+[43]: ./admin/11.13-update

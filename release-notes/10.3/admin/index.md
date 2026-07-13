@@ -2,7 +2,7 @@
 uid: news-admin-10.3
 title: What's new in SuperOffice 10.3
 description: Release notes. What's new in SuperOffice 10.3
-author: SuperOffice AS – Product and Engineering
+author: SuperOffice AS - Product and Engineering
 date: 08.27.2024
 version: 10.3
 content_type: release-note
@@ -20,8 +20,7 @@ audience_tooltip: Settings and maintenance
 * [Lists - Web panel setting for reload on navigation (10.3.1)][1]
 * [System design - Creating new field gives option to show in Properties panel (10.3.1)][1]
 
-<!-- Referenced links-->
-[1]: 10.3.1-update.md
-[2]: 10.3.2-update.md
-[7]: 10.3.7-update.md
-[8]: 10.3.8-update.md
+[1]: ./10.3.1-update
+[2]: ./10.3.2-update
+[7]: ./10.3.7-update
+[8]: ./10.3.8-update

@@ -66,7 +66,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Property `CustomObjectEntity`
 
-
 ### Assembly: SuperOffice.Services.Implementation
 
 ### New Types
@@ -108,7 +107,6 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
   * Method `SaveAvailableFontAsync(AvailableFont, CancellationToken)`
   * Method `SetFontRankAsync(Int32, Int32, CancellationToken)`
 
-
 ## NetServer Core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
@@ -149,7 +147,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * New items
   * Field `.AssociatesFirstLoginSession`
-
 
 ##### SuperOffice.CRM.UserPreferenceStrings.NetServices is Modified
 
@@ -292,7 +289,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Property `PreserveProgress`
 
-
 ### Assembly: SoDatabase
 
 ### New Types
@@ -322,12 +318,10 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `.AppointmentFieldsExternalParticipants`
 
-
 ##### SuperOffice.CRM.Data.DBC.AvailableFontsFields is Modified
 
 * New items
   * Field `.AvailableFontsFieldsDeleted`
-
 
 #### SuperOffice.CRM.Rows.AppointmentRecordData is Modified
 
@@ -377,7 +371,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * New items
   * Field `.ExecutionTypeScalar`
 
-
 #### SuperOffice.Data.S is Modified
 
 * Modified items
@@ -386,7 +379,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 * New items
   * Method `.ArgumentFunctionsDateAdd(DatePart, Argument, Argument)`
-
 
 #### SuperOffice.Data.SoConnection is Modified
 
@@ -400,7 +392,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `CopilotMessaged`
   * Field `TextSummarized`
   * Field `TextTransformed`
-
 
 ### Assembly: SoDatabase.BusinessLogic
 
@@ -438,6 +429,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 ##### SuperOffice.CallHome.PeriodicCallHomeBase.CollectionLockInfo is Deleted
 
 ##### SuperOffice.CallHome.PeriodicCallHomeBase.CollectionResult is Deleted
+
 * Modified items
   * Method `PeriodicCallHomeBase(String, String, Int32)`
 * New items
@@ -523,7 +515,6 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `IndexingStarted(String, String)`
   * Method `IndexingStatus(String, CancellationToken)`
 
-
 ## Continuous Database
 
 The following represent changes to SuperOffice database schema.
@@ -555,6 +546,3 @@ The following represent changes to SuperOffice database schema.
 
 * New items
   * Field `Deleted`
-
-
-
