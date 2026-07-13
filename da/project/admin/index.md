@@ -25,8 +25,8 @@ Brug skærmene **Workflow** og **Lister** i **Indstillinger og vedligeholdelse**
 
 | Begreb | Definition | Placering i Indstillinger og vedligeholdelse |
 |---|---|---|
-| Projekttype | Kategoriserer projekter (f.eks. "Konference" eller "Kampagne") og knytter dem til statuser og guider. | **Lister** > **Projekt – Type, status** |
-| Projektstatus | Sporer fasen af et projekt (f.eks. "Planlagt" eller "I gang"). Defineres per projekttype. | **Lister** > **Projekt – Status** |
+| Projekttype | Kategoriserer projekter (f.eks. "Konference" eller "Kampagne") og knytter dem til statuser og guider. | **Lister** > **Projekt - Type, status** |
+| Projektstatus | Sporer fasen af et projekt (f.eks. "Planlagt" eller "I gang"). Defineres per projekttype. | **Lister** > **Projekt - Status** |
 | Projektguide | Et arbejdsgangsværktøj, der knytter statuser til specifikke opfølgninger, dokumenter og milepæle. | **Workflow** > **Projektguide** |
 
 ## Hvad vil du gøre?
@@ -38,8 +38,7 @@ Brug skærmene **Workflow** og **Lister** i **Indstillinger og vedligeholdelse**
 
 Disse værktøjer gør det muligt for administratorer at tilpasse projektarworkflow, hvilket sikrer effektivitet og ensartethed på tværs af organisationen.
 
-<!-- Referenced links -->
-[1]: create-project-guide.md
-[2]: edit-project-guide.md
-[3]: project-status.md
-[4]: project-type.md
+[1]: ./create-project-guide
+[2]: ./edit-project-guide
+[3]: ./project-status
+[4]: ./project-type

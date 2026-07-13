@@ -50,7 +50,4 @@ Du kan oprette en opfølgning, som for eksempel vises på aktivitetslisten for a
 
 ![Udvalg-opgave: Generering af opfølgninger -screenshot][img1]
 
-<!-- Referencerede links -->
-
-<!-- Referencerede billeder -->
 [img1]: ../../../../../media/loc/en/search-options/generate-follow-ups-from-selection.png

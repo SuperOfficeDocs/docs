@@ -41,7 +41,7 @@ Når du redigerer en svarskabelon, kan det enten betyde:
 
 ## <a id="delete"></a>Slet en svarskabelon
 
-1. Følg trin 1–3 i **Rediger en svarskabelon** for at åbne skærmbilledet **Egenskaber for svarskabelon**.
+1. Følg trin 1-3 i **Rediger en svarskabelon** for at åbne skærmbilledet **Egenskaber for svarskabelon**.
 1. Klik på **Slet**-knappen nederst i skærmbilledet.
 1. Bekræft sletningen, når du bliver bedt om det. Svarskabelonen slettes med det samme.
 
@@ -50,8 +50,7 @@ Når du redigerer en svarskabelon, kan det enten betyde:
 * [Opret en ny sprogversion af en svarskabelon][3]
 * [Kopier svarskabeloner][4]
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/reply.md
-[2]: create.md
-[4]: create.md#copy
-[3]: new-language.md
+[1]: ../../../request/learn/reply
+[2]: ./create
+[4]: ./create#copy
+[3]: ./new-language

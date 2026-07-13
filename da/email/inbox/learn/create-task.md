@@ -46,11 +46,9 @@ Du kan hurtigt oprette en opfølgningsopgave baseret på en e-mail i SuperOffice
 * [Opret sag][2]
 * [Om opfølginger][4]
 
-<!-- Referenced links -->
-[1]: archive.md
-[2]: create-request.md
-[3]: ../../../diary/learn/create-follow-up.md#fields
-[4]: ../../../diary/learn/follow-ups.md
+[1]: ./archive
+[2]: ./create-request
+[3]: ../../../diary/learn/create-follow-up#fields
+[4]: ../../../diary/learn/follow-ups
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/email/inbox-create-task.png

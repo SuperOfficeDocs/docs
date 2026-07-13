@@ -51,12 +51,10 @@ For at arbejde mere effektivt kan du filtrere posterne for at vise en eller fler
 
 At have et [dashboard til formularindsendelse][3] gør det nemt at måle og visualisere deres data. Dashboardet giver dig mulighed for at holde styr på ydeevne, tendenser og produktivitet.
 
-<!-- Referenced links -->
-[1]: process-submissions.md
-[2]: ../../mailing/learn/view-statistics.md
-[3]: ../../../dashboard/learn/show-marketing.md
+[1]: ./process-submissions
+[2]: ../../mailing/learn/view-statistics
+[3]: ../../../dashboard/learn/show-marketing
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/form-submissions-filter.png
 [img3]: ../../../../media/loc/en/marketing/view-form-screen.png
 [img2]: ../../../../media/loc/en/marketing/form-report-dx.png

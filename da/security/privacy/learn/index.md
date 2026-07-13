@@ -14,7 +14,7 @@ tier: starter
 language: da
 ---
 
-# Beskyttelse af personlige oplysninger <i class="ph ph-shield" aria-label="Shield icon"></i>
+# Beskyttelse af personlige oplysninger \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
 
 Funktionen **Privacy** i SuperOffice hjælper dig med at beskytte dine kunders data-privacy og overholde EU's generelle forordning om databeskyttelse (GDPR).
 
@@ -71,10 +71,7 @@ Hvis du *ikke* vælger denne indstilling, vil kun personer med **E-markedsførin
 * [Tilføjelse af forekomster på listen Personbeskyttelse - Kilde][4]
 * [Konverteringssporing (UTM)][5]
 
-<!-- Referenced links -->
-[2]: ../admin/add-purpose.md
-[3]: ../admin/add-legal-base.md
-[4]: ../admin/add-source.md
-[5]: ../../../marketing/utm/learn/index.md
-
-<!-- Referenced images -->
+[2]: ../admin/add-purpose
+[3]: ../admin/add-legal-base
+[4]: ../admin/add-source
+[5]: ../../../marketing/utm/learn/index

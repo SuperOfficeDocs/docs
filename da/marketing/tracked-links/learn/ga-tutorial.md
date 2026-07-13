@@ -19,7 +19,6 @@ translation_type: MT
 
 # Vejledning - simpel Google Analytics e-mail sporing
 
-<!-- markdownlint-disable-next-line MD036 -->
 *Blogindlæg af Alex Pelan*
 
 E-mail marketing er blevet en vigtig del af virksomheders marketingstrategier, men der er utallige måder at udføre digital marketing på i disse dage. E-mail marketing er kun en del af det store billede. Når man skal analysere resultaterne af for eksempel en kampagne, er det nyttigt at samle data fra alle marketingkanaler i ét system for at få det overordnede billede.
@@ -87,11 +86,9 @@ Du vil nu se trafikken genereret af dit e-mail-nyhedsbrev. Som du ser på billed
 
 Begynd at udforske mulighederne!
 
-<!-- Referenced links -->
 [1]: http://analytics.google.com
 [2]: https://support.google.com/analytics/answer/1033867
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/marketing/new-account.png
 [img3]: ../../../../media/loc/en/marketing/setting-up-property.png
 [img4]: ../../../../media/loc/en/marketing/tracking-id.png

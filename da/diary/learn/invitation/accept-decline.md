@@ -44,8 +44,6 @@ Deltagere, der er blevet inviteret til en opfølgning, modtager en advarsel på 
 
 * Hvis du modtager en invitation til et tidspunkt, hvor du allerede er optaget, vises et udråbstegn (<i class="ph ph-warning" aria-label="Warning icon"></i>). Dette henleder din opmærksomhed på konflikten.
 
-<!-- Referenced links -->
-[1]: ../../../learn/basics/notifications.md#activity
+[1]: ../../../learn/basics/notifications#activity
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/learn/core-notifications.png

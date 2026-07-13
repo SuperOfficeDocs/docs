@@ -30,10 +30,7 @@ redirect_from: /da/request/learn/screen/knowledge-base
 
 * **E-mailadresser**: Hér kan du [oprette en liste over e-mailadresser][4], som du ofte bruger, for eksempel e-mailadresser på personer, der ikke er bruger eller registreret som personer i SuperOffice CRM. Disse adresser vil derefter være tilgængelige de fleste steder, hvor du har behov for at sende en e-mail.
 
-<!-- Referenced links -->
-[1]: external-document.md
-[2]: faq/index.md
-[3]: reply-templates/index.md
-[4]: email-addresses.md
-
-<!-- Referenced images -->
+[1]: ./external-document
+[2]: ./faq/index
+[3]: ./reply-templates/index
+[4]: ./email-addresses

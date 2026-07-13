@@ -70,5 +70,4 @@ Computer\HKEY_CLASSES_ROOT\domycall\shell\open\command
 
 Registreringsposten skal pege på den eksekverbare fil, der behandler den indgående opkaldsanmodning. Argumentet `%1` indeholder det telefonnummer, som SuperOffice CRM sender gennem den brugerdefinerede protokol.
 
-<!-- Referenced links -->
-[2]: ../../document/templates/learn/template-variables.md
+[2]: ../../document/templates/learn/template-variables

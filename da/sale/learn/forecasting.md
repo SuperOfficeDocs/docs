@@ -81,13 +81,11 @@ For at demonstrere, hvordan du kan bruge funktionen Find til salgsprognoser, er 
 * [Vis et udvalg som et diagram][6]
 * [Brug af skærmbilledet Find][5]
 
-<!-- Referenced links -->
-[1]: create.md
-[5]: ../../search-options/learn/find-screen.md
-[6]: ../../search-options/selection/learn/howto/display-as-charts.md
-[7]: ../../dashboard/learn/show-sales-targets.md
+[1]: ./create
+[5]: ../../search-options/learn/find-screen
+[6]: ../../search-options/selection/learn/howto/display-as-charts
+[7]: ../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Kolonne | Beskrivelse  |
 |---|---|
 | Fra - fuldt navn | Viser navnet på firmaet eller personen, som er den aktive part i relationen. |

@@ -50,5 +50,4 @@ index: true
 
 * [Sådan konfigurerer du Hent næste sag i køen][1]
 
-<!-- Referenced links -->
-[1]: ../next-in-queue.md
+[1]: ../next-in-queue

@@ -20,7 +20,7 @@ Ved at tilføje chatwidgetten til kundecenteret kan du gøre det lettere for din
 
 ## Før du starter
 
-Du skal [oprette en webformular][3], før du føjer den til dit kundecenter. Husk, at når du opretter en ny webformular, skal du tilføje et af de tre anmodningselementer – titel, kategori og meddelelse. Ellers kan du ikke føje formularen til dit kundecenter.
+Du skal [oprette en webformular][3], før du føjer den til dit kundecenter. Husk, at når du opretter en ny webformular, skal du tilføje et af de tre anmodningselementer - titel, kategori og meddelelse. Ellers kan du ikke føje formularen til dit kundecenter.
 
 ![Hvis du vil føje en ny webformular til kundecenteret, skal du tilføje et af disse anmodningselementer. -screenshot][img1]
 
@@ -49,12 +49,10 @@ Når en kunde udfylder denne formular, gemmes oplysningerne og detaljerne automa
 * [Konfigurer kundecenter][2]
 * [Arbejde med formularer][1]
 
-<!-- Referenced links -->
-[1]: ../../marketing/forms/learn/index.md
-[3]: ../../marketing/forms/learn/create.md
-[2]: config.md
+[1]: ../../marketing/forms/learn/index
+[3]: ../../marketing/forms/learn/create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png
 [img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png

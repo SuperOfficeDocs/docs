@@ -53,7 +53,4 @@ Fanen **Billede** giver dig mulighed for at uploade og administrere billeder for
     * Klikke på **OK** og **Gem** for at nulstille til standardbilledet.
     * Eller uploade/vælge et nyt billede, derefter klikke på **OK** og **Gem** for at anvende ændringerne.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/project/project-image.png

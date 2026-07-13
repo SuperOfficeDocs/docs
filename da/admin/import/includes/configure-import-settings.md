@@ -1,5 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 Klik på **Konfigurer importindstillinger**, og [juster importindstillingerne][1].
 
-<!-- Referenced links -->
-[1]: ../settings.md
+[1]: ../settings

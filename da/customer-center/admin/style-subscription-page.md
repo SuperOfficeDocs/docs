@@ -86,10 +86,8 @@ Du kan også fjerne sprog, som du ikke bruger. Dette begrænser de sprog, der er
 * [Send e-mail med bekræftelse om personbeskyttelse][2]
 * [Oversigt over Customer Centre][1]
 
-<!-- Referenced links -->
-[1]: ../learn/index.md
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email.md
+[1]: ../learn/index
+[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

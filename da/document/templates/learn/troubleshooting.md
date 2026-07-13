@@ -16,7 +16,7 @@ language: da
 
 Når vi opretter et dokument i SuperOffice, udtrækker vi alt indhold af dokumentet som almindelig tekst, som vores skabelon erstatningssystem bruger til at identificere og erstatte skabelonvariabler.
 
-Vi søger efter en starttag ( `{` eller `<`) og derefter en sluttag (`}` eller `>`). Teksten mellem taggene kontrolleres derefter for at se, om det er en skabelonvariabel. For eksempel {**atit**} vil blive genkendt som skabelonvariablen **atit,** mens **{thisisnotatag}** ikke genkendes som et gyldigt tag og vil ikke blive erstattet.
+Vi søger efter en starttag ( `{` eller `<`) og derefter en sluttag (`}` eller `>`). Teksten mellem taggene kontrolleres derefter for at se, om det er en skabelonvariabel. For eksempel \{**atit**\} vil blive genkendt som skabelonvariablen **atit,** mens **\{thisisnotatag\}** ikke genkendes som et gyldigt tag og vil ikke blive erstattet.
 
 Hvis en skabelonvariabel genkendes, vil den blive erstattet med sin respektive værdi, selv når den er tom. Hvis en skabelonvariabel stadig er synlig i det færdige oprettede dokument, betyder det, at vores system ikke har genkendt det som en gyldig skabelonvariabel.
 
@@ -94,7 +94,7 @@ Men af en eller anden grund kan xml omkring vores skabelonvariabler ende med at 
 {</a:t><a:rPr lang="en-US" dirty="0" smtClean="0"/><a:t>onam</a:t></a:r><a:r><a:rPr lang="en-US" smtClean="0"/><a:t>}
 ```
 
-Som du kan se, er start "{" og slut "}" taggene placeret langt fra skabelonvariabelidentifikatoren "onam", så vores system vil ikke genkende dette som en gyldig skabelonvariabel. Slutresultatet er, at dokumentet efter oprettelse stadig vil vise teksten {onam}.
+Som du kan se, er start "\{" og slut "\}" taggene placeret langt fra skabelonvariabelidentifikatoren "onam", så vores system vil ikke genkende dette som en gyldig skabelonvariabel. Slutresultatet er, at dokumentet efter oprettelse stadig vil vise teksten \{onam\}.
 
 ## Hvad kan jeg gøre, når dette sker?
 
@@ -118,7 +118,7 @@ Det er ekstremt sjældent, at en skabelonvariabel skulle virke i dokumenter af e
 
 Hvis dette sker, er det sandsynligvis et andet tilfælde af genereret xml, der forstyrrer taggene.
 
-* For at verificere filer af typen .pptx, .docx eller .xlsx, kan du simpelthen omdøbe filtypen til .zip (sørg for at tage en sikkerhedskopi af filen først).
+* For at verificere filer af typen .pptx, .docx eller .xlsx, kan du simpelthen omdøbe filtypen til .zip (sørg for at tage en sikkerhedskopi af filen først).
 
 * Efter udpakning kan du åbne den relevante xml-fil for at verificere. Brug Notepad eller lignende, da du vil have, at hele filen vises i sin helhed uden nogen parsning af xml-tags.
 
@@ -128,22 +128,20 @@ Hvis dette sker, er det sandsynligvis et andet tilfælde af genereret xml, der f
 
 ## Interne strukturer
 
-Sådan ser en PowerPoint .pptx ud efter udpakning (den slide1.xml er den faktiske slide 1):
+Sådan ser en PowerPoint .pptx ud efter udpakning (den slide1.xml er den faktiske slide 1):
 
 ![PowerPoint -screenshot][img4]
 
-Word .docx (document.xml er det faktiske dokument, når det vises for brugeren):
+Word .docx (document.xml er det faktiske dokument, når det vises for brugeren):
 
 ![Word -screenshot][img5]
 
-Excel .xlsx (sheet1.xml er det faktiske ark 1):
+Excel .xlsx (sheet1.xml er det faktiske ark 1):
 
 ![Excel -screenshot][img6]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
+[1]: ../variables/index
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/document/troubleshoot-tempvar.png
 [img2]: ../../../../media/loc/en/document/troubleshoot-tempvar-1.png
 [img4]: ../../../../media/loc/en/document/troubleshoot-tempvar-2.png

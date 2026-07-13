@@ -71,7 +71,7 @@ En af de vigtigste aspekter af disse tekniske dele er **[SPF-posten i dit domæn
 
 ## Brug e-mail-domænevalidering
 
-Forhåbentlig bruger du allerede de fleksible muligheder for at personalisere og specificere Fra- og Svar-til-felterne, når du opsætter en udsendelse i SuperOffice. Dette er fantastisk, når du vil tilføje brugerdefineret tekst som **< Jeanette fra SuperOffice >** for at blive vist som afsender. Eller hvis du sender en e-mail på vegne af din kollega eller chef.
+Forhåbentlig bruger du allerede de fleksible muligheder for at personalisere og specificere Fra- og Svar-til-felterne, når du opsætter en udsendelse i SuperOffice. Dette er fantastisk, når du vil tilføje brugerdefineret tekst som **\< Jeanette fra SuperOffice >** for at blive vist som afsender. Eller hvis du sender en e-mail på vegne af din kollega eller chef.
 
 Men hvis du tilføjer en ikke-validerbar eller stavefejl e-mailadresse, kan det skade din e-mail-leverbarhed.
 
@@ -97,15 +97,12 @@ Klik på **Mobil** (<i class="ph ph-device-mobile" aria-hidden="true"></i>) i de
 
 Hvis du vil justere mobilspecifikke indstillinger for en meddelelse, skal du vælge et afsnit i meddelelsen og klikke på **Mobil** i sidepanelet. Du kan nu definere formateringen for visning af meddelelsen på mobilenheder og også vælge, hvilke elementer (f.eks. billeder) der skal udelades fra mobilenheder.
 
-<!-- Referenced links -->
-[1]: ../recipients/learn/index.md#selections
-[2]: ../recipients/learn/manage-bounces.md
-[3]: ../editor/learn/add-unsubscribe-link.md
-[4]: ../mailing/learn/create/send-test-email.md
-[5]: ../../security/privacy/admin/add-legal-base.md
-[6]: ../mailing/admin/add-domain.md
-[7]: ../../../en/online/mail-services/mailgun/spf/index.md
+[1]: ../recipients/learn/index#selections
+[2]: ../recipients/learn/manage-bounces
+[3]: ../editor/learn/add-unsubscribe-link
+[4]: ../mailing/learn/create/send-test-email
+[5]: ../../security/privacy/admin/add-legal-base
+[6]: ../mailing/admin/add-domain
+[7]: ../../../en/online/mail-services/mailgun/spf/index
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/
-
-<!-- Referenced images -->

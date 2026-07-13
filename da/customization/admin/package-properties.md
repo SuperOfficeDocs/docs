@@ -13,7 +13,7 @@ category: customization
 index: true
 tier: core
 language: da
-redirect_from: 
+redirect_from:
   - /da/admin/learn/screen/package-properties
   - /da/admin/learn/package-properties
   - /da/customization/admin/index
@@ -21,7 +21,7 @@ redirect_from:
 
 # Egenskaber for pakke
 
-I <i class="ph ph-selection-all" aria-hidden="true"></i> **Systemdesign** og under fanen **Pakker** kan du redigere egenskaberne og indholdet af en pakke. Hvis det er en ulåst installeret pakke, kan du også angive, hvad der skal være installeret. Hvis pakken er oprettet i dette system, kan du tilføje og fjerne elementer i systemet, afhængigt af hvad du ønsker at inkludere i pakken. Hvis pakken er oprettet i et andet system, men uploadet til dette system, kan du i dette skærmbillede vælge, hvilke dele der skal være installeret – hvis ikke pakken er låst.
+I <i class="ph ph-selection-all" aria-hidden="true"></i> **Systemdesign** og under fanen **Pakker** kan du redigere egenskaberne og indholdet af en pakke. Hvis det er en ulåst installeret pakke, kan du også angive, hvad der skal være installeret. Hvis pakken er oprettet i dette system, kan du tilføje og fjerne elementer i systemet, afhængigt af hvad du ønsker at inkludere i pakken. Hvis pakken er oprettet i et andet system, men uploadet til dette system, kan du i dette skærmbillede vælge, hvilke dele der skal være installeret - hvis ikke pakken er låst.
 
 * **Navn**: Navnet på pakken.
 * **SuperOffice Service-version**: Pakken kan kun installeres på systemer med en SuperOffice Service-version, der er nyere end angivet her.

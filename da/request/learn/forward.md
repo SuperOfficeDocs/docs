@@ -17,7 +17,7 @@ redirect_from: /da/request/learn/howto/forward
 
 # Videresend sag til ekstern kontakt
 
-Som sagsbehandler kan du ikke altid selv besvare en sag – heller ikke med hjælp fra dine kolleger. Nogle gange har du måske brug for assistance fra eksterne personer, såsom en underleverandør, en partner eller en forretningsspecialist.
+Som sagsbehandler kan du ikke altid selv besvare en sag - heller ikke med hjælp fra dine kolleger. Nogle gange har du måske brug for assistance fra eksterne personer, såsom en underleverandør, en partner eller en forretningsspecialist.
 
 Du kan videresende en kompleks eller problematisk sag til en ekstern kontakt via e-mail. Når personen svarer, bliver deres e-mail automatisk gemt i sagen i SuperOffice. Kunden modtager naturligvis ikke nogen af disse e-mails. Når du har en løsning til kunden, kan du besvare sagen direkte.
 
@@ -57,11 +57,9 @@ Du kan videresende en kompleks eller problematisk sag til en ekstern kontakt via
 
 ![Tilføj modtager til massevideresendelse -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: create.md#fields
+[1]: ./index#open
+[2]: ./create#fields
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/request/forward-multiple-requests.png
 [img2]: ../../../media/loc/en/request/forward-add-recipient.png
 [img3]: ../../../media/loc/en/request/forward-a-request.png

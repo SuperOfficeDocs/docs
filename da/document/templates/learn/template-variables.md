@@ -28,7 +28,7 @@ kan du sende denne:
 
 Teksten du skriver ser således ud:
 
-"Hej **{atfn}** Vil du vide mere om, hvordan vores produkt kan hjælpe **{name}** med at skaffe nye kunder? Så skal du endelige ringer til os **{cont}** på **{onam}**."
+"Hej **\{atfn\}** Vil du vide mere om, hvordan vores produkt kan hjælpe **\{name\}** med at skaffe nye kunder? Så skal du endelige ringer til os **\{cont\}** på **\{onam\}**."
 
 ## Sådan bruger du skabelonvariabler
 
@@ -40,7 +40,7 @@ Teksten du skriver ser således ud:
 
 * Dato og klokkeslæt i skabelonvariabler styres af systemuret på pc'en.
 
-* I dokumenter med filtypen .doc i Office 2003 og ældre skal du bruge klammer – &lt; &gt; – rundt om variablerne i stedet for krøllede parenteser – {} –.
+* I dokumenter med filtypen .doc i Office 2003 og ældre skal du bruge klammer - &lt; &gt; - rundt om variablerne i stedet for krøllede parenteser - \{\} -.
 
 ### Eksempel: mødereferater (overskrift)
 
@@ -112,7 +112,4 @@ Når du genererer mailskabeloner til anmodninger og forsendelser (og meddelelses
 
 Referencen er grupperet efter område. [Gå til reference][1]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
-
-<!-- Referenced images -->
+[1]: ../variables/index

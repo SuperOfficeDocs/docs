@@ -31,5 +31,4 @@ Kun brugere med den funktionelle rettighed *general administrator* kan redigere 
 
 1. Klik på **Gem**, når du er færdig, eller **Afbryd**, hvis du vil annullere ændringerne. Du kan også slette hele meddelelsen ved at klikke på **Slet** og derefter **OK**.
 
-<!-- Referenced links -->
-[1]: index.md#open
+[1]: ./index#open

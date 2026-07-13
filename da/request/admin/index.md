@@ -37,25 +37,22 @@ I denne del af SuperOffice Service kan du konfigurere indstillingerne for Servic
 * [Kundecenterkonfiguration og kildefiler][21]
 * [Chat][23]
 * [Systemdesign][15]
-* [Profil][16] – ændringer her vises ingen steder i SuperOffice CRM-modulet (kun i Servicemodulet)
+* [Profil][16] - ændringer her vises ingen steder i SuperOffice CRM-modulet (kun i Servicemodulet)
 
-<!-- Referenced links -->
-[4]: category/index.md
-[5]: priority/index.md
-[6]: status/index.md
-[8]: system-templates.md
-[9]: type/index.md
-[17]: relation-rules.md
-[10]: ../../localization/learn/customer-languages.md
-[11]: ../../admin/preferences/service-settings.md
-[12]: ../../admin/user-management/role/index.md
-[13]: ../../admin/user-management/index.md
-[7]: ../learn/index.md#available
-[15]: ../../ui/blogic/learn/index.md
-[16]: ../../ui/blogic/learn/profiles/index.md
+[4]: ./category/index
+[5]: ./priority/index
+[6]: ./status/index
+[8]: ./system-templates
+[9]: ./type/index
+[17]: ./relation-rules
+[10]: ../../localization/learn/customer-languages
+[11]: ../../admin/preferences/service-settings
+[12]: ../../admin/user-management/role/index
+[13]: ../../admin/user-management/index
+[7]: ../learn/index#available
+[15]: ../../ui/blogic/learn/index
+[16]: ../../ui/blogic/learn/profiles/index
 
-[21]: ../../customer-center/learn/index.md
-[22]: ../../email/admin/mailbox/index.md
-[23]: ../../chat/admin/index.md
-
-<!-- Referenced images -->
+[21]: ../../customer-center/learn/index
+[22]: ../../email/admin/mailbox/index
+[23]: ../../chat/admin/index

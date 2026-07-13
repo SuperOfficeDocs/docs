@@ -1,5 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
-Når du har oprettet din målliste, forberedt mailen og testet den, er du endelig nået til den spændende del – det er tid til at få udsendelsen afsendt.
+Når du har oprettet din målliste, forberedt mailen og testet den, er du endelig nået til den spændende del - det er tid til at få udsendelsen afsendt.
 
 Under det afsluttende trin, **Bekræftelse**, kan du se en sammenfatning af udsendelsen og bekræfte, at alt er korrekt. Alle fejlmeddelelser, der vises på dette skærmbillede, skal løses inden udsendelsen kan afsendes. Sendeindstillingerne er deaktiveret, hvis der er ufuldstændige trin eller manglende oplysninger i din mailudsendelse. De er angivet med rødt.
 
@@ -31,8 +30,6 @@ Klik på udsendelsen på listen for at [se status og statistik for din afsendels
 
 For at standse udsendelsen eller påbegynde en planlagt udsendelse før planlagt tid, skal du klikke på de respektive **Stop** eller **Start** - knapper.
 
-<!-- Referenced links -->
-[1]: ../../view-statistics.md
+[1]: ../../view-statistics
 
-<!-- Referenced images -->
 [img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png
