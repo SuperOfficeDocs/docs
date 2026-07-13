@@ -1,0 +1,36 @@
+---
+uid: news-marketing-11
+title: What's new in SuperOffice Marketing 11
+description: Release notes. What's new in SuperOffice Marketing 11
+keywords: lead management, forms
+author: kirstiaa
+date: 05.04.2026
+version: 11
+content_type: release-note
+category: marketing
+audience: person
+audience_tooltip: SuperOffice CRM
+language: en
+---
+
+# New and improved Marketing
+
+* [Forms - Add custom contact and company fields (11.13)][13]
+* [Forms - Custom styling of your form (11.11)][11]
+* [Form - Use Google fonts in your forms (11.9)][9]
+* [Settings and maintenance – Marketing screen with conversion tracking (UTM) (11.6)][6]
+* [Marketing Form - Use UTM tracking when publishing the form (11.6)][6]
+* [Dashboard – Lead management tiles (11.6)][6]
+* [Contact selections - Use board view to get overview of leads (11.6)][6]
+* [Company - Category list (11.6)][6]
+* [Contact - Lead status list (11.6)][6]
+* [Marketing Form – Pre-populate fields linked from a mailing (11.5)][5]
+* [Marketing Flow – distribute to owner step (11.3)][3]
+
+<!-- Referenced links-->
+[3]: 11.3-update.md
+[5]: 11.5-update.md
+[6]: 11.6-update.md
+[9]: 11.9-update.md
+[11]: 11.11-update.md
+[13]: 11.13-update.md
