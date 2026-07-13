@@ -1,4 +1,4 @@
-﻿---
+---
 uid: mail-link
 title: Mail Link
 description: SuperOffice Mail Link is a plug-in that links the Microsoft Outlook mail client with SuperOffice CRM.
@@ -55,15 +55,13 @@ SuperOffice Mail Link (latest version) is compatible with SuperOffice CRM Online
 * [Create emails from SuperOffice CRM (legacy)][5]
 * [Set options][4]
 
-<!-- Referenced links -->
-[2]: archive.md
-[3]: manage-senders.md
-[7]: archive-on-contact.md
-[4]: settings.md
-[5]: create-in-superoffice.md
-[6]: create-in-outlook.md
+[2]: ./archive
+[3]: ./manage-senders
+[7]: ./archive-on-contact
+[4]: ./settings
+[5]: ./create-in-superoffice
+[6]: ./create-in-outlook
 
-<!-- Referenced images -->
-[img3]: media/superoffice-button.png
-[img4]: media/archive-to-superoffice-crm.png
-[img5]: media/search-for-sender-in-superoffice-crm.png
+[img3]: /media/loc/en/integrations/mail-link/superoffice-button.png
+[img4]: /media/loc/en/integrations/mail-link/archive-to-superoffice-crm.png
+[img5]: /media/loc/en/integrations/mail-link/search-for-sender-in-superoffice-crm.png

@@ -22,5 +22,4 @@ Before you start, make sure the following requirements are met:
 
 See [Deploy SuperOffice for Teams][1] for the full setup steps.
 
-<!-- Referenced links -->
-[1]: deploy.md
+[1]: ./deploy

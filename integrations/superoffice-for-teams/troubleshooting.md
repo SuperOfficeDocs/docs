@@ -42,6 +42,5 @@ Ask your Microsoft 365 administrator to verify that tenant-level consent was gra
 
 AI Labs must be activated for your SuperOffice tenant. Contact your SuperOffice administrator.
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: deploy.md
+[1]: ./index
+[2]: ./deploy

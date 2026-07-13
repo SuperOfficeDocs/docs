@@ -25,7 +25,7 @@ The file picker lists files found based on the above, each with a status icon:
 * **File icon:** Not yet archived. Ready to save.
 * **Red warning:** File is too large to archive.
 
-The file picker is single-select – you can choose one file at a time. Saving a file with the same name always creates a new document in SuperOffice (overwriting is not supported yet).
+The file picker is single-select - you can choose one file at a time. Saving a file with the same name always creates a new document in SuperOffice (overwriting is not supported yet).
 
 There is a file size limit of 94 MB.
 
@@ -33,5 +33,4 @@ There is a file size limit of 94 MB.
 
 Whether you're saving a chat or a file, you'll fill in a few details so the archive lands in the correct place. See [Archive a conversation][1] for a full description of these fields.
 
-<!-- Referenced links -->
-[1]: archive-conversation.md
+[1]: ./archive-conversation

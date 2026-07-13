@@ -49,12 +49,11 @@ SuperNotes is an AI-powered meeting assistant that integrates with SuperOffice t
 * GDPR compliant.
 * Your data is never used to train AI models.
 
-<!-- Reference links -->
-[1]: getting-started.md#connect-calendar
-[2]: workspaces.md
-[3]: settings.md
-[4]: getting-started.md
-[6]: teams.md
-[7]: before-meeting.md
-[8]: summaries.md
-[9]: privacy-security.md
+[1]: ./getting-started#connect-calendar
+[2]: ./workspaces
+[3]: ./settings
+[4]: ./getting-started
+[6]: ./teams
+[7]: ./before-meeting
+[8]: ./summaries
+[9]: ./privacy-security

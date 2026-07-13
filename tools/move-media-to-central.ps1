@@ -37,8 +37,15 @@
 param(
     [Parameter(Mandatory=$true, Position=0)]
     [string]$Path,
-    
-    [switch]$SkipReference
+
+    [switch]$SkipReference,
+
+    # Overrides Get-TopicFromPath's derived topic (which is parts[0] for any
+    # non-language-prefixed folder). Needed when the folder passed as -Path is
+    # itself a container of multiple distinct topics (e.g. integrations/, with
+    # g-suite/zapier/video-meetings/etc as its real sub-topics) rather than a
+    # single cohesive topic (e.g. contribute/, correctly bucketed as one).
+    [string]$Topic
 )
 
 # Resolve path
@@ -150,10 +157,15 @@ $totalMoved = 0
 foreach ($mediaFolder in $mediaFolders) {
     Write-Host "`nProcessing media folder: $($mediaFolder.FullName)" -ForegroundColor Yellow
 
-    # Extract topic from path
-    $topicInfo = Get-TopicFromPath $mediaFolder.FullName
-    $lang = $topicInfo.Lang
-    $topic = $topicInfo.Topic
+    # Extract topic from path (or use the explicit override)
+    if ($Topic) {
+        $lang = 'en'
+        $topic = $Topic
+    } else {
+        $topicInfo = Get-TopicFromPath $mediaFolder.FullName
+        $lang = $topicInfo.Lang
+        $topic = $topicInfo.Topic
+    }
 
     # Create target directory
     $targetDir = Join-Path $repoRoot "media\loc\$lang\$topic"
@@ -209,10 +221,15 @@ foreach ($mdFile in $markdownFiles) {
     $modified = $false
     $newContent = @()
 
-    # Extract topic for this file
-    $topicInfo = Get-TopicFromPath $mdFile.FullName
-    $lang = $topicInfo.Lang
-    $topic = $topicInfo.Topic
+    # Extract topic for this file (or use the explicit override)
+    if ($Topic) {
+        $lang = 'en'
+        $topic = $Topic
+    } else {
+        $topicInfo = Get-TopicFromPath $mdFile.FullName
+        $lang = $topicInfo.Lang
+        $topic = $topicInfo.Topic
+    }
 
     # Use absolute path from repo root for Mintlify
     $absolutePath = "/media/loc/$lang/$topic"

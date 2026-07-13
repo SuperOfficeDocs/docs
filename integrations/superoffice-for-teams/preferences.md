@@ -22,11 +22,10 @@ Select **Preferences** in the lower-left of the pop-up window to access your def
 * Default document template for files.
 * Include deleted message notices (yes or no).
 * Include emoji reactions (yes or no).
-* Include files – attach to .EML (yes or no).
+* Include files - attach to .EML (yes or no).
 * Mark as completed by default.
 * Generate AI summary by default (requires AI Labs).
 
 ![The Preferences screen showing all available default settings -screenshot][img1]
 
-<!-- Referenced images -->
-[img1]: media/teams-preferences.png
+[img1]: /media/loc/en/integrations/superoffice-for-teams/teams-preferences.png

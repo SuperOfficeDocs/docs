@@ -1,4 +1,4 @@
-﻿---
+---
 uid: zapier-list-fields
 title: Look up lists between Source and SuperOffice CRM
 description: Guide for looking up lists
@@ -23,7 +23,7 @@ In the **Create a Sale** action, the **Amount** field includes a **Currency** fi
 
 ![Zapier: currency field -screenshot][img1]
 
-However, if the currency varies between records, a specific currency name must be provided instead. The name must exactly match the value in the SuperOffice currency list — for example, "GBP" will match, but "British Pounds" will not, since the list entry is "GBP".
+However, if the currency varies between records, a specific currency name must be provided instead. The name must exactly match the value in the SuperOffice currency list - for example, "GBP" will match, but "British Pounds" will not, since the list entry is "GBP".
 
 To provide the name manually, select **Use a Custom Value** at the bottom of the list.
 
@@ -39,6 +39,6 @@ As a result, the sale is created with the correct currency in SuperOffice.
 
 This lookup behavior applies to all drop-down lists in SuperOffice actions, including: Owners, Companies, Projects, Contacts, as well as category-based fields such as Business, Category, and Type.
 
-[img1]: media/create-sale-amount-currency-fields.png
-[img2]: media/currency-pick-custom-value.png
-[img3]: media/currency-custom-value.png
+[img1]: /media/loc/en/integrations/zapier/create-sale-amount-currency-fields-1.png
+[img2]: /media/loc/en/integrations/zapier/currency-pick-custom-value.png
+[img3]: /media/loc/en/integrations/zapier/currency-custom-value.png

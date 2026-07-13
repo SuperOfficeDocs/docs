@@ -1,4 +1,4 @@
-﻿---
+---
 uid: zapier-datetime
 title: Formatting date and time
 description: How to format date and time when working with Zapier.
@@ -33,15 +33,15 @@ The Formatter in Zapier provides three transformation options for handling date 
 
 ![Add/Subtract Time -screenshot][img3]
 
-1. **Add/Subtract Time** – Manipulates a date or time value by adding or subtracting days, months, years, hours, minutes, or seconds.
+1. **Add/Subtract Time** - Manipulates a date or time value by adding or subtracting days, months, years, hours, minutes, or seconds.
 
     ![Add/Subtract Time -screenshot][img4]
 
-1. **Compare Dates** – Calculates the duration between two dates in days, hours, minutes, and seconds, and determines whether the dates are identical.
+1. **Compare Dates** - Calculates the duration between two dates in days, hours, minutes, and seconds, and determines whether the dates are identical.
 
     ![Compare Dates -screenshot][img5]
 
-1. **Format** – Converts a date or time value into a different format or style.
+1. **Format** - Converts a date or time value into a different format or style.
 
     ![Format -screenshot][img6]
 
@@ -49,13 +49,11 @@ The Formatter in Zapier provides three transformation options for handling date 
 
 * [Insert the time your Zap runs into a field][1]
 
-<!-- Referenced links -->
 [1]: https://help.zapier.com/hc/en-us/articles/8496275717261#adjusting-dates-and-times
 
-<!-- Referenced images -->
-[img1]: media/formatter-step.png
-[img2]: media/select-formatter.png
-[img3]: media/tranform-date-configure.png
-[img4]: media/add-subtract-option-date.png
-[img5]: media/compare-dates.png
-[img6]: media/format-date.png
+[img1]: /media/loc/en/integrations/zapier/formatter-step.png
+[img2]: /media/loc/en/integrations/zapier/select-formatter.png
+[img3]: /media/loc/en/integrations/zapier/tranform-date-configure.png
+[img4]: /media/loc/en/integrations/zapier/add-subtract-option-date.png
+[img5]: /media/loc/en/integrations/zapier/compare-dates.png
+[img6]: /media/loc/en/integrations/zapier/format-date.png

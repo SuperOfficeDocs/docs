@@ -1,4 +1,4 @@
-﻿---
+---
 uid: mail-link-add-attachment
 title: Add SuperOffice document as attachment
 description: Learn how to attach documents from SuperOffice CRM when creating an email in Microsoft Outlook.
@@ -43,9 +43,7 @@ When [creating an email from Microsoft Outlook][1] you can add documents from Su
 
 7. After selecting documents, click **OK** to attach them to your email.
 
-<!-- Referenced links -->
-[1]: create-in-outlook.md
+[1]: ./create-in-outlook
 
-<!-- Referenced images -->
-[img1]: media/add-document.png
-[img2]: media/arrow.png
+[img1]: /media/loc/en/integrations/mail-link/add-document.png
+[img2]: /media/loc/en/integrations/mail-link/arrow.png

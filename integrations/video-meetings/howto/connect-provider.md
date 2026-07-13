@@ -11,7 +11,7 @@ topic: video meetings
 deployment: online
 platform: web
 language: en
-redirect_from: 
+redirect_from:
   - /en/diary/video-meetings/howto/connect-provider
   - /en/admin/preferences/learn/video-meetings/configure-video-meetings
   - /da/admin/preferences/learn/video-meetings/configure-video-meetings
@@ -40,10 +40,7 @@ index: true
 
 6. Verify configurations is active in SuperOffice. For example, "Your SuperOffice installation is configured with the following meeting service ..."
 
-You may now start using Video Meetings in SuperOffice​!
+You may now start using Video Meetings in SuperOffice!
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img2]: media/imagekb02n.png
-[img3]: media/imageaos3n.png
+[img2]: /media/loc/en/integrations/video-meetings/imagekb02n.png
+[img3]: /media/loc/en/integrations/video-meetings/imageaos3n.png

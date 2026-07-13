@@ -9516,6 +9516,1298 @@
     {
       "source": "/da/search-options/selection/learn/howto/mass-delete",
       "destination": "/da/security/privacy/learn/mass-delete"
+    },
+    {
+      "source": "/en/document/cloud/g-suite/getting-started",
+      "destination": "/integrations/g-suite/getting-started"
+    },
+    {
+      "source": "/de/document/cloud/g-suite/learn/index",
+      "destination": "/integrations/g-suite/index"
+    },
+    {
+      "source": "/da/document/cloud/g-suite/learn/index",
+      "destination": "/integrations/g-suite/index"
+    },
+    {
+      "source": "/no/document/cloud/g-suite/learn/index",
+      "destination": "/integrations/g-suite/index"
+    },
+    {
+      "source": "/sv/document/cloud/g-suite/learn/index",
+      "destination": "/integrations/g-suite/index"
+    },
+    {
+      "source": "/nl/document/cloud/g-suite/learn/index",
+      "destination": "/integrations/g-suite/index"
+    },
+    {
+      "source": "/en/document/cloud/g-suite/learn/index",
+      "destination": "/integrations/g-suite/index"
+    },
+    {
+      "source": "/en/document/cloud/g-suite/index",
+      "destination": "/integrations/g-suite/index"
+    },
+    {
+      "source": "/en/document/cloud/g-suite/requirements",
+      "destination": "/integrations/g-suite/requirements"
+    },
+    {
+      "source": "/en/document/cloud/g-suite/security",
+      "destination": "/integrations/g-suite/security"
+    },
+    {
+      "source": "/en/document/cloud/g-suite/set-up",
+      "destination": "/integrations/g-suite/set-up"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/archive-attachments",
+      "destination": "/integrations/gmail-link/archive-attachments"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/archive-attachments",
+      "destination": "/integrations/gmail-link/archive-attachments"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/archive-attachments",
+      "destination": "/integrations/gmail-link/archive-attachments"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/archive-attachments",
+      "destination": "/integrations/gmail-link/archive-attachments"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/archive-attachments",
+      "destination": "/integrations/gmail-link/archive-attachments"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/archive-attachments",
+      "destination": "/integrations/gmail-link/archive-attachments"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/archive-emails-as-activities",
+      "destination": "/integrations/gmail-link/archive-emails-as-activities"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/archive-emails-as-activities",
+      "destination": "/integrations/gmail-link/archive-emails-as-activities"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/archive-emails-as-activities",
+      "destination": "/integrations/gmail-link/archive-emails-as-activities"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/archive-emails-as-activities",
+      "destination": "/integrations/gmail-link/archive-emails-as-activities"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/archive-emails-as-activities",
+      "destination": "/integrations/gmail-link/archive-emails-as-activities"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/archive-emails-as-activities",
+      "destination": "/integrations/gmail-link/archive-emails-as-activities"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/archive-emails-as-requests",
+      "destination": "/integrations/gmail-link/archive-emails-as-requests"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/archive-emails-as-requests",
+      "destination": "/integrations/gmail-link/archive-emails-as-requests"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/archive-emails-as-requests",
+      "destination": "/integrations/gmail-link/archive-emails-as-requests"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/archive-emails-as-requests",
+      "destination": "/integrations/gmail-link/archive-emails-as-requests"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/archive-emails-as-requests",
+      "destination": "/integrations/gmail-link/archive-emails-as-requests"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/archive-emails-as-requests",
+      "destination": "/integrations/gmail-link/archive-emails-as-requests"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/email-archive-incoming",
+      "destination": "/integrations/gmail-link/email-archive-incoming"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/email-archive-incoming",
+      "destination": "/integrations/gmail-link/email-archive-incoming"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/email-archive-incoming",
+      "destination": "/integrations/gmail-link/email-archive-incoming"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/email-archive-incoming",
+      "destination": "/integrations/gmail-link/email-archive-incoming"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/email-archive-incoming",
+      "destination": "/integrations/gmail-link/email-archive-incoming"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/email-archive-incoming",
+      "destination": "/integrations/gmail-link/email-archive-incoming"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/email-archive-outgoing",
+      "destination": "/integrations/gmail-link/email-archive-outgoing"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/email-archive-outgoing",
+      "destination": "/integrations/gmail-link/email-archive-outgoing"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/email-archive-outgoing",
+      "destination": "/integrations/gmail-link/email-archive-outgoing"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/email-archive-outgoing",
+      "destination": "/integrations/gmail-link/email-archive-outgoing"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/email-archive-outgoing",
+      "destination": "/integrations/gmail-link/email-archive-outgoing"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/email-archive-outgoing",
+      "destination": "/integrations/gmail-link/email-archive-outgoing"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/index",
+      "destination": "/integrations/gmail-link/index"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/index",
+      "destination": "/integrations/gmail-link/index"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/index",
+      "destination": "/integrations/gmail-link/index"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/index",
+      "destination": "/integrations/gmail-link/index"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/index",
+      "destination": "/integrations/gmail-link/index"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/index",
+      "destination": "/integrations/gmail-link/index"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/install",
+      "destination": "/integrations/gmail-link/install"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/install",
+      "destination": "/integrations/gmail-link/install"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/install",
+      "destination": "/integrations/gmail-link/install"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/install",
+      "destination": "/integrations/gmail-link/install"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/install",
+      "destination": "/integrations/gmail-link/install"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/install",
+      "destination": "/integrations/gmail-link/install"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/manage-senders",
+      "destination": "/integrations/gmail-link/manage-senders"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/manage-senders",
+      "destination": "/integrations/gmail-link/manage-senders"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/manage-senders",
+      "destination": "/integrations/gmail-link/manage-senders"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/manage-senders",
+      "destination": "/integrations/gmail-link/manage-senders"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/manage-senders",
+      "destination": "/integrations/gmail-link/manage-senders"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/manage-senders",
+      "destination": "/integrations/gmail-link/manage-senders"
+    },
+    {
+      "source": "/en/email/gmail-link/learn/settings",
+      "destination": "/integrations/gmail-link/settings"
+    },
+    {
+      "source": "/da/email/gmail-link/learn/settings",
+      "destination": "/integrations/gmail-link/settings"
+    },
+    {
+      "source": "/de/email/gmail-link/learn/settings",
+      "destination": "/integrations/gmail-link/settings"
+    },
+    {
+      "source": "/nl/email/gmail-link/learn/settings",
+      "destination": "/integrations/gmail-link/settings"
+    },
+    {
+      "source": "/no/email/gmail-link/learn/settings",
+      "destination": "/integrations/gmail-link/settings"
+    },
+    {
+      "source": "/sv/email/gmail-link/learn/settings",
+      "destination": "/integrations/gmail-link/settings"
+    },
+    {
+      "source": "/en/email/mail-link/learn/add-attachment",
+      "destination": "/integrations/mail-link/add-attachment"
+    },
+    {
+      "source": "/da/email/mail-link/learn/add-attachment",
+      "destination": "/integrations/mail-link/add-attachment"
+    },
+    {
+      "source": "/de/email/mail-link/learn/add-attachment",
+      "destination": "/integrations/mail-link/add-attachment"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/add-attachment",
+      "destination": "/integrations/mail-link/add-attachment"
+    },
+    {
+      "source": "/no/email/mail-link/learn/add-attachment",
+      "destination": "/integrations/mail-link/add-attachment"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/add-attachment",
+      "destination": "/integrations/mail-link/add-attachment"
+    },
+    {
+      "source": "/en/email/mail-link/learn/archive-as-activity",
+      "destination": "/integrations/mail-link/archive-as-activity"
+    },
+    {
+      "source": "/da/email/mail-link/learn/archive-as-activity",
+      "destination": "/integrations/mail-link/archive-as-activity"
+    },
+    {
+      "source": "/de/email/mail-link/learn/archive-as-activity",
+      "destination": "/integrations/mail-link/archive-as-activity"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/archive-as-activity",
+      "destination": "/integrations/mail-link/archive-as-activity"
+    },
+    {
+      "source": "/no/email/mail-link/learn/archive-as-activity",
+      "destination": "/integrations/mail-link/archive-as-activity"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/archive-as-activity",
+      "destination": "/integrations/mail-link/archive-as-activity"
+    },
+    {
+      "source": "/en/email/mail-link/learn/archive-as-request",
+      "destination": "/integrations/mail-link/archive-as-request"
+    },
+    {
+      "source": "/da/email/mail-link/learn/archive-as-request",
+      "destination": "/integrations/mail-link/archive-as-request"
+    },
+    {
+      "source": "/de/email/mail-link/learn/archive-as-request",
+      "destination": "/integrations/mail-link/archive-as-request"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/archive-as-request",
+      "destination": "/integrations/mail-link/archive-as-request"
+    },
+    {
+      "source": "/no/email/mail-link/learn/archive-as-request",
+      "destination": "/integrations/mail-link/archive-as-request"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/archive-as-request",
+      "destination": "/integrations/mail-link/archive-as-request"
+    },
+    {
+      "source": "/en/email/mail-link/learn/archive-attachment",
+      "destination": "/integrations/mail-link/archive-attachment"
+    },
+    {
+      "source": "/da/email/mail-link/learn/archive-attachment",
+      "destination": "/integrations/mail-link/archive-attachment"
+    },
+    {
+      "source": "/de/email/mail-link/learn/archive-attachment",
+      "destination": "/integrations/mail-link/archive-attachment"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/archive-attachment",
+      "destination": "/integrations/mail-link/archive-attachment"
+    },
+    {
+      "source": "/no/email/mail-link/learn/archive-attachment",
+      "destination": "/integrations/mail-link/archive-attachment"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/archive-attachment",
+      "destination": "/integrations/mail-link/archive-attachment"
+    },
+    {
+      "source": "/en/email/mail-link/learn/archive-on-contact",
+      "destination": "/integrations/mail-link/archive-on-contact"
+    },
+    {
+      "source": "/da/email/mail-link/learn/archive-on-contact",
+      "destination": "/integrations/mail-link/archive-on-contact"
+    },
+    {
+      "source": "/de/email/mail-link/learn/archive-on-contact",
+      "destination": "/integrations/mail-link/archive-on-contact"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/archive-on-contact",
+      "destination": "/integrations/mail-link/archive-on-contact"
+    },
+    {
+      "source": "/no/email/mail-link/learn/archive-on-contact",
+      "destination": "/integrations/mail-link/archive-on-contact"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/archive-on-contact",
+      "destination": "/integrations/mail-link/archive-on-contact"
+    },
+    {
+      "source": "/en/email/mail-link/learn/archive",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/da/email/mail-link/learn/archive",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/de/email/mail-link/learn/archive",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/archive",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/no/email/mail-link/learn/archive",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/archive",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/en/email/mail-link/learn/settings/archive-by-default",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/da/email/mail-link/learn/settings/archive-by-default",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/de/email/mail-link/learn/settings/archive-by-default",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/settings/archive-by-default",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/no/email/mail-link/learn/settings/archive-by-default",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/settings/archive-by-default",
+      "destination": "/integrations/mail-link/archive"
+    },
+    {
+      "source": "/en/email/mail-link/learn/create-in-outlook",
+      "destination": "/integrations/mail-link/create-in-outlook"
+    },
+    {
+      "source": "/da/email/mail-link/learn/create-in-outlook",
+      "destination": "/integrations/mail-link/create-in-outlook"
+    },
+    {
+      "source": "/de/email/mail-link/learn/create-in-outlook",
+      "destination": "/integrations/mail-link/create-in-outlook"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/create-in-outlook",
+      "destination": "/integrations/mail-link/create-in-outlook"
+    },
+    {
+      "source": "/no/email/mail-link/learn/create-in-outlook",
+      "destination": "/integrations/mail-link/create-in-outlook"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/create-in-outlook",
+      "destination": "/integrations/mail-link/create-in-outlook"
+    },
+    {
+      "source": "/en/email/mail-link/learn/create-in-superoffice",
+      "destination": "/integrations/mail-link/create-in-superoffice"
+    },
+    {
+      "source": "/da/email/mail-link/learn/create-in-superoffice",
+      "destination": "/integrations/mail-link/create-in-superoffice"
+    },
+    {
+      "source": "/de/email/mail-link/learn/create-in-superoffice",
+      "destination": "/integrations/mail-link/create-in-superoffice"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/create-in-superoffice",
+      "destination": "/integrations/mail-link/create-in-superoffice"
+    },
+    {
+      "source": "/no/email/mail-link/learn/create-in-superoffice",
+      "destination": "/integrations/mail-link/create-in-superoffice"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/create-in-superoffice",
+      "destination": "/integrations/mail-link/create-in-superoffice"
+    },
+    {
+      "source": "/en/email/mail-link/debug",
+      "destination": "/integrations/mail-link/debug"
+    },
+    {
+      "source": "/en/email/mail-link/index",
+      "destination": "/integrations/mail-link/index"
+    },
+    {
+      "source": "/en/email/mail-link/learn/index",
+      "destination": "/integrations/mail-link/index"
+    },
+    {
+      "source": "/da/email/mail-link/learn/index",
+      "destination": "/integrations/mail-link/index"
+    },
+    {
+      "source": "/de/email/mail-link/learn/index",
+      "destination": "/integrations/mail-link/index"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/index",
+      "destination": "/integrations/mail-link/index"
+    },
+    {
+      "source": "/no/email/mail-link/learn/index",
+      "destination": "/integrations/mail-link/index"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/index",
+      "destination": "/integrations/mail-link/index"
+    },
+    {
+      "source": "/en/email/mail-link/learn/install",
+      "destination": "/integrations/mail-link/install"
+    },
+    {
+      "source": "/da/email/mail-link/learn/install",
+      "destination": "/integrations/mail-link/install"
+    },
+    {
+      "source": "/de/email/mail-link/learn/install",
+      "destination": "/integrations/mail-link/install"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/install",
+      "destination": "/integrations/mail-link/install"
+    },
+    {
+      "source": "/no/email/mail-link/learn/install",
+      "destination": "/integrations/mail-link/install"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/install",
+      "destination": "/integrations/mail-link/install"
+    },
+    {
+      "source": "/en/email/mail-link/learn/manage-senders",
+      "destination": "/integrations/mail-link/manage-senders"
+    },
+    {
+      "source": "/da/email/mail-link/learn/manage-senders",
+      "destination": "/integrations/mail-link/manage-senders"
+    },
+    {
+      "source": "/de/email/mail-link/learn/manage-senders",
+      "destination": "/integrations/mail-link/manage-senders"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/manage-senders",
+      "destination": "/integrations/mail-link/manage-senders"
+    },
+    {
+      "source": "/no/email/mail-link/learn/manage-senders",
+      "destination": "/integrations/mail-link/manage-senders"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/manage-senders",
+      "destination": "/integrations/mail-link/manage-senders"
+    },
+    {
+      "source": "/en/email/mail-link/learn/select-recipients",
+      "destination": "/integrations/mail-link/select-recipients"
+    },
+    {
+      "source": "/da/email/mail-link/learn/select-recipients",
+      "destination": "/integrations/mail-link/select-recipients"
+    },
+    {
+      "source": "/de/email/mail-link/learn/select-recipients",
+      "destination": "/integrations/mail-link/select-recipients"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/select-recipients",
+      "destination": "/integrations/mail-link/select-recipients"
+    },
+    {
+      "source": "/no/email/mail-link/learn/select-recipients",
+      "destination": "/integrations/mail-link/select-recipients"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/select-recipients",
+      "destination": "/integrations/mail-link/select-recipients"
+    },
+    {
+      "source": "/en/email/mail-link/learn/settings/index",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/da/email/mail-link/learn/settings/index",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/de/email/mail-link/learn/settings/index",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/settings/index",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/no/email/mail-link/learn/settings/index",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/settings/index",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/en/email/mail-link/learn/settings/default",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/da/email/mail-link/learn/settings/default",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/de/email/mail-link/learn/settings/default",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/settings/default",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/no/email/mail-link/learn/settings/default",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/settings/default",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/en/email/mail-link/learn/settings/general",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/da/email/mail-link/learn/settings/general",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/de/email/mail-link/learn/settings/general",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/settings/general",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/no/email/mail-link/learn/settings/general",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/settings/general",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/en/email/mail-link/learn/settings/invitations",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/da/email/mail-link/learn/settings/invitations",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/de/email/mail-link/learn/settings/invitations",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/settings/invitations",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/no/email/mail-link/learn/settings/invitations",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/settings/invitations",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/en/email/mail-link/learn/settings/superoffice-account",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/da/email/mail-link/learn/settings/superoffice-account",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/de/email/mail-link/learn/settings/superoffice-account",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/nl/email/mail-link/learn/settings/superoffice-account",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/no/email/mail-link/learn/settings/superoffice-account",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/sv/email/mail-link/learn/settings/superoffice-account",
+      "destination": "/integrations/mail-link/settings"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/migrate/best-practices",
+      "destination": "/integrations/sharepoint-documents/migrate/best-practices"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/migrate/index",
+      "destination": "/integrations/sharepoint-documents/migrate/index"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/migrate/reference",
+      "destination": "/integrations/sharepoint-documents/migrate/reference"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/migrate/steps",
+      "destination": "/integrations/sharepoint-documents/migrate/steps"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/migrate/troubleshooting",
+      "destination": "/integrations/sharepoint-documents/migrate/troubleshooting"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/configure-permissions-documents",
+      "destination": "/integrations/sharepoint-documents/configure-permissions-documents"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/configure-permissions-templates",
+      "destination": "/integrations/sharepoint-documents/configure-permissions-templates"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/configure-superoffice",
+      "destination": "/integrations/sharepoint-documents/configure-superoffice"
+    },
+    {
+      "source": "/en/document/cloud/legacy/office-365/",
+      "destination": "/integrations/sharepoint-documents/index"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/index",
+      "destination": "/integrations/sharepoint-documents/index"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/permissions-app",
+      "destination": "/integrations/sharepoint-documents/permissions-app"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/permissions-in-sharepoint",
+      "destination": "/integrations/sharepoint-documents/permissions-in-sharepoint"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/requirements",
+      "destination": "/integrations/sharepoint-documents/requirements"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/set-up",
+      "destination": "/integrations/sharepoint-documents/set-up"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/troubleshooting",
+      "destination": "/integrations/sharepoint-documents/troubleshooting"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/add-crm-data-to-event",
+      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/create-follow-up",
+      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/create-follow-up",
+      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/create-follow-up",
+      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/create-follow-up",
+      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/create-follow-up",
+      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/create-follow-up",
+      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/create-request",
+      "destination": "/integrations/superoffice-for-outlook/create-request"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/create-request",
+      "destination": "/integrations/superoffice-for-outlook/create-request"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/create-request",
+      "destination": "/integrations/superoffice-for-outlook/create-request"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/create-request",
+      "destination": "/integrations/superoffice-for-outlook/create-request"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/create-request",
+      "destination": "/integrations/superoffice-for-outlook/create-request"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/create-request",
+      "destination": "/integrations/superoffice-for-outlook/create-request"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/create-sale",
+      "destination": "/integrations/superoffice-for-outlook/create-sale"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/create-sale",
+      "destination": "/integrations/superoffice-for-outlook/create-sale"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/create-sale",
+      "destination": "/integrations/superoffice-for-outlook/create-sale"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/create-sale",
+      "destination": "/integrations/superoffice-for-outlook/create-sale"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/create-sale",
+      "destination": "/integrations/superoffice-for-outlook/create-sale"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/create-sale",
+      "destination": "/integrations/superoffice-for-outlook/create-sale"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/deploy-centrally",
+      "destination": "/integrations/superoffice-for-outlook/deploy"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/it/deploy",
+      "destination": "/integrations/superoffice-for-outlook/deploy"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/it/deploy",
+      "destination": "/integrations/superoffice-for-outlook/deploy"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/it/deploy",
+      "destination": "/integrations/superoffice-for-outlook/deploy"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/it/deploy",
+      "destination": "/integrations/superoffice-for-outlook/deploy"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/it/deploy",
+      "destination": "/integrations/superoffice-for-outlook/deploy"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/it/deploy",
+      "destination": "/integrations/superoffice-for-outlook/deploy"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/deploy-office-add-in",
+      "destination": "/integrations/superoffice-for-outlook/get"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/get",
+      "destination": "/integrations/superoffice-for-outlook/get"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/get",
+      "destination": "/integrations/superoffice-for-outlook/get"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/get",
+      "destination": "/integrations/superoffice-for-outlook/get"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/get",
+      "destination": "/integrations/superoffice-for-outlook/get"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/get",
+      "destination": "/integrations/superoffice-for-outlook/get"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/get",
+      "destination": "/integrations/superoffice-for-outlook/get"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/index",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/index",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/index",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/index",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/index",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/index",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/index",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "destination": "/integrations/superoffice-for-outlook/index"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/requirements",
+      "destination": "/integrations/superoffice-for-outlook/requirements"
+    },
+    {
+      "source": "/en/email/superoffice-for-outlook/learn/requirements",
+      "destination": "/integrations/superoffice-for-outlook/requirements"
+    },
+    {
+      "source": "/da/email/superoffice-for-outlook/learn/requirements",
+      "destination": "/integrations/superoffice-for-outlook/requirements"
+    },
+    {
+      "source": "/de/email/superoffice-for-outlook/learn/requirements",
+      "destination": "/integrations/superoffice-for-outlook/requirements"
+    },
+    {
+      "source": "/nl/email/superoffice-for-outlook/learn/requirements",
+      "destination": "/integrations/superoffice-for-outlook/requirements"
+    },
+    {
+      "source": "/no/email/superoffice-for-outlook/learn/requirements",
+      "destination": "/integrations/superoffice-for-outlook/requirements"
+    },
+    {
+      "source": "/sv/email/superoffice-for-outlook/learn/requirements",
+      "destination": "/integrations/superoffice-for-outlook/requirements"
+    },
+    {
+      "source": "/en/diary/video-meetings/google-meet/index",
+      "destination": "/integrations/video-meetings/google-meet/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/configure-email-invitations",
+      "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+    },
+    {
+      "source": "/en/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+      "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+    },
+    {
+      "source": "/da/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+      "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+    },
+    {
+      "source": "/sv/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+      "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+    },
+    {
+      "source": "/no/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+      "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+      "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+    },
+    {
+      "source": "/de/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
+      "destination": "/integrations/video-meetings/howto/configure-email-invitations"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/connect-provider",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/en/admin/preferences/learn/video-meetings/configure-video-meetings",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/da/admin/preferences/learn/video-meetings/configure-video-meetings",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/sv/admin/preferences/learn/video-meetings/configure-video-meetings",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/no/admin/preferences/learn/video-meetings/configure-video-meetings",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/video-meetings/configure-video-meetings",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/de/admin/preferences/learn/video-meetings/configure-video-meetings",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/create",
+      "destination": "/integrations/video-meetings/howto/create"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/disconnect-provider",
+      "destination": "/integrations/video-meetings/howto/disconnect-provider"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/disconnect-user",
+      "destination": "/integrations/video-meetings/howto/disconnect-user"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/join",
+      "destination": "/integrations/video-meetings/howto/join"
+    },
+    {
+      "source": "/en/diary/video-meetings/jitsi/index",
+      "destination": "/integrations/video-meetings/jitsi/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/ms-teams/index",
+      "destination": "/integrations/video-meetings/ms-teams/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/webex/index",
+      "destination": "/integrations/video-meetings/webex/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/zoom/index",
+      "destination": "/integrations/video-meetings/zoom/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/index",
+      "destination": "/integrations/video-meetings/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/troubleshooting",
+      "destination": "/integrations/video-meetings/troubleshooting"
+    },
+    {
+      "source": "/en/document/webtools/config",
+      "destination": "/integrations/webtools/config"
+    },
+    {
+      "source": "/en/document/webtools/deploy",
+      "destination": "/integrations/webtools/deploy"
+    },
+    {
+      "source": "/en/document/webtools/index",
+      "destination": "/integrations/webtools/index"
+    },
+    {
+      "source": "/en/document/webtools/learn/index",
+      "destination": "/integrations/webtools/index"
+    },
+    {
+      "source": "/da/document/webtools/learn/index",
+      "destination": "/integrations/webtools/index"
+    },
+    {
+      "source": "/de/document/webtools/learn/index",
+      "destination": "/integrations/webtools/index"
+    },
+    {
+      "source": "/nl/document/webtools/learn/index",
+      "destination": "/integrations/webtools/index"
+    },
+    {
+      "source": "/no/document/webtools/learn/index",
+      "destination": "/integrations/webtools/index"
+    },
+    {
+      "source": "/sv/document/webtools/learn/index",
+      "destination": "/integrations/webtools/index"
+    },
+    {
+      "source": "/en/document/webtools/install",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/en/document/webtools/learn/install",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/da/document/webtools/learn/install",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/de/document/webtools/learn/install",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/nl/document/webtools/learn/install",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/no/document/webtools/learn/install",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/sv/document/webtools/learn/install",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/en/document/webtools/learn/install-mac",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/da/document/webtools/learn/install-mac",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/de/document/webtools/learn/install-mac",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/nl/document/webtools/learn/install-mac",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/no/document/webtools/learn/install-mac",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/sv/document/webtools/learn/install-mac",
+      "destination": "/integrations/webtools/install"
+    },
+    {
+      "source": "/en/document/webtools/system-requirements",
+      "destination": "/integrations/webtools/system-requirements"
+    },
+    {
+      "source": "/en/document/webtools/technical-overview",
+      "destination": "/integrations/webtools/technical-overview"
+    },
+    {
+      "source": "/en/document/webtools/troubleshooting",
+      "destination": "/integrations/webtools/troubleshooting"
+    },
+    {
+      "source": "/en/document/webtools/debug",
+      "destination": "/integrations/webtools/troubleshooting"
+    },
+    {
+      "source": "/integrations/webtools/debug",
+      "destination": "/integrations/webtools/troubleshooting"
+    },
+    {
+      "source": "/en/document/webtools/upgrade",
+      "destination": "/integrations/webtools/upgrade"
+    },
+    {
+      "source": "/en/automation/zapier/get-started/create-zap",
+      "destination": "/integrations/zapier/get-started/create-zap"
+    },
+    {
+      "source": "/en/automation/zapier/get-started/index",
+      "destination": "/integrations/zapier/get-started/index"
+    },
+    {
+      "source": "/en/automation/zapier/get-started/set-up-account",
+      "destination": "/integrations/zapier/get-started/set-up-account"
+    },
+    {
+      "source": "/integrations/zapier/howto/find-company",
+      "destination": "/integrations/zapier/howto/actions/search-company"
+    },
+    {
+      "source": "/integrations/zapier/howto/find-request",
+      "destination": "/integrations/zapier/howto/actions/search-request"
+    },
+    {
+      "source": "/integrations/zapier/howto/appointment-updated-action",
+      "destination": "/integrations/zapier/howto/actions/update-appointment"
+    },
+    {
+      "source": "/integrations/zapier/howto/update-project",
+      "destination": "/integrations/zapier/howto/actions/update-project"
+    },
+    {
+      "source": "/integrations/zapier/howto/appointment-updated-trigger",
+      "destination": "/integrations/zapier/howto/triggers/changed"
+    },
+    {
+      "source": "/integrations/zapier/howto/project-member-changed",
+      "destination": "/integrations/zapier/howto/triggers/changed"
+    },
+    {
+      "source": "/integrations/zapier/howto/triggers/index",
+      "destination": "/integrations/zapier/howto/triggers/new"
+    },
+    {
+      "source": "/en/automation/zapier/howto/datetime",
+      "destination": "/integrations/zapier/howto/datetime"
+    },
+    {
+      "source": "/en/automation/zapier/howto/gdpr",
+      "destination": "/integrations/zapier/howto/gdpr"
+    },
+    {
+      "source": "en/automation/zapier/howto/index",
+      "destination": "/integrations/zapier/howto/index"
+    },
+    {
+      "source": "/en/automation/zapier/howto/listsource",
+      "destination": "/integrations/zapier/howto/listsource"
+    },
+    {
+      "source": "/en/automation/zapier/index",
+      "destination": "/integrations/zapier/index"
+    },
+    {
+      "source": "/en/automation/zapier/reference",
+      "destination": "/integrations/zapier/reference"
     }
   ]
 }

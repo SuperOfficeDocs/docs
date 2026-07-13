@@ -13,7 +13,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 index: true
-redirect_from: 
+redirect_from:
   - /en/email/superoffice-for-outlook/learn/add-contact-to-superoffice
   - /da/email/superoffice-for-outlook/learn/add-contact-to-superoffice
   - /de/email/superoffice-for-outlook/learn/add-contact-to-superoffice
@@ -30,7 +30,7 @@ You can easily add new contacts to SuperOffice CRM if the email address is unkno
 
 1. Open the email from the person you want to add as a contact.
 
-1. [Open SuperOffice for Outlook][1] (if not pinned)​.
+1. [Open SuperOffice for Outlook][1] (if not pinned).
 
 1. In the SuperOffice sidebar, select **Click to add new contact**.
 
@@ -40,7 +40,7 @@ You can easily add new contacts to SuperOffice CRM if the email address is unkno
 
     * **Add email to an existing contact**: Select from the **This contact could be** list to link the email to an existing contact in SuperOffice.
 
-    * **Add contact to an existing company**: From the **​Or add contact to company** list, associate the new contact with an existing company in SuperOffice.
+    * **Add contact to an existing company**: From the **Or add contact to company** list, associate the new contact with an existing company in SuperOffice.
 
     * **Create a new company and contact**: If the contact's company does not exist in your database, create both the company and the contact.
 
@@ -63,9 +63,7 @@ The **People** tab displays all contacts mentioned in the email. If the sender o
     * Save the contact to an existing company, or
     * Create a new company and contact.
 
-<!-- Referenced links -->
-[1]: get.md#open
+[1]: ./get#open
 
-<!-- Referenced images -->
-[img1]: media/outlook-add-contact.png
-[img2]: media/outlook-unknown-contact.png
+[img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-add-contact.png
+[img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-unknown-contact.png

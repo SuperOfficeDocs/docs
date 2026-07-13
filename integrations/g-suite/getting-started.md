@@ -42,7 +42,7 @@ This guide explains in short terms how you can get Google Workspace document int
 
     * If yes, go to step 5. Otherwise, go to step 6.
 
-5. **Create a Google Workspace with a "Google Service Account"**
+5. **Create a Google Workspace with a "Google Service Account"**
 
     1. Log in to Google Workspace admin panel.
     2. Create a normal Google user, ie. "SuperOffice archive user".
@@ -58,9 +58,8 @@ This guide explains in short terms how you can get Google Workspace document int
 
 Now, you need to [link templates][6] in SuperOffice Settings and maintenance to start using the integration. Remember to set both **Store template in** and **Document stored in** to "Google".
 
-<!-- Referenced links -->
 [2]: https://id.superoffice.com/identityprovider/register
-[3]: ../../docs/en/online/identity/superid/howto/register-idp.md
+[3]: ../../docs/en/online/identity/superid/howto/register-idp
 [4]: https://cloudintegration.superoffice.com/app
-[5]: set-up.md
-[6]: ../../docs/en/document/templates/index.md
+[5]: ./set-up
+[6]: ../../docs/en/document/templates/index

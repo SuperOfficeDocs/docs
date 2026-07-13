@@ -37,7 +37,7 @@ index: true
 | Status | Description |
 |---|---|
 | Not started | The job is preparing and has not started yet. |
-| Templates started  | Currently moving templates. |
+| Templates started  | Currently moving templates. |
 | Documents started | Currently moving documents. |
 | Completed | All documents (and templates) were successfully migrated. |
 | Partially completed | Unable to move some documents (missing CRM documents). |
@@ -89,10 +89,8 @@ The **Status** section shows a detailed status of ongoing and completed jobs. It
 
 * [Steps][1]
 
-<!-- Referenced links -->
-[1]: steps.md
+[1]: ./steps
 
-<!-- Referenced images -->
 [img1]: ../media/migration-completed-with-failures.png
 [img3]: ../media/migration-job-details.png
 [img4]: ../media/documents-omitted.png
