@@ -90,9 +90,9 @@ Since `ArchiveRestrictionInfo` has an overridden `ToString` method, meant for de
 
 ![ALT][img6]
 
-[img1]: /media/loc/en/release-notes/api/ns-70/image008.jpg
-[img2]: /media/loc/en/release-notes/api/ns-70/image009.jpg
-[img3]: /media/loc/en/release-notes/api/ns-70/image010.jpg
-[img4]: /media/loc/en/release-notes/api/ns-70/image011.jpg
-[img5]: /media/loc/en/release-notes/api/ns-70/image012.jpg
-[img6]: /media/loc/en/release-notes/api/ns-70/image013.jpg
+[img1]: /media/loc/en/release-notes/7/image008.jpg
+[img2]: /media/loc/en/release-notes/7/image009.jpg
+[img3]: /media/loc/en/release-notes/7/image010.jpg
+[img4]: /media/loc/en/release-notes/7/image011.jpg
+[img5]: /media/loc/en/release-notes/7/image012.jpg
+[img6]: /media/loc/en/release-notes/7/image013.jpg

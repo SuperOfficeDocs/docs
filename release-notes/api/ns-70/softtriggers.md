@@ -26,5 +26,5 @@ Your delegate is called before or after execution:
 
 * "After" is, well, after. That would probably be just to log it.
 
-[img1]: /media/loc/en/release-notes/api/ns-70/image002.jpg
-[img2]: /media/loc/en/release-notes/api/ns-70/image003.jpg
+[img1]: /media/loc/en/release-notes/7/image002.jpg
+[img2]: /media/loc/en/release-notes/7/image003.jpg

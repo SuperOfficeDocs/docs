@@ -25,4 +25,4 @@ This is almost universally supported. Some very special "restrictions", like tho
 
 ![ALT][img1]
 
-[img1]: /media/loc/en/release-notes/api/ns-70/image019.jpg
+[img1]: /media/loc/en/release-notes/7/image019.jpg

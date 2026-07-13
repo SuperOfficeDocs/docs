@@ -44,6 +44,6 @@ We have improved the documentation on the Row/Rows objects
 
 ![ALT][img3]
 
-[img1]: /media/loc/en/release-notes/api/ns-70/image005.jpg
-[img2]: /media/loc/en/release-notes/api/ns-70/image006.jpg
-[img3]: /media/loc/en/release-notes/api/ns-70/image007.jpg
+[img1]: /media/loc/en/release-notes/7/image005.jpg
+[img2]: /media/loc/en/release-notes/7/image006.jpg
+[img3]: /media/loc/en/release-notes/7/image007.jpg

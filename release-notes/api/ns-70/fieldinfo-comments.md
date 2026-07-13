@@ -18,4 +18,4 @@ Now contains declared length (for strings), and the .NET type. Therefore you kno
 
 Also includes the description of the field from the dictionary - feedback on these always accepted.
 
-[img1]: /media/loc/en/release-notes/api/ns-70/image004.jpg
+[img1]: /media/loc/en/release-notes/7/image004.jpg

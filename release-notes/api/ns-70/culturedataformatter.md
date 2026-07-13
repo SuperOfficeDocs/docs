@@ -40,5 +40,5 @@ localInt = 1234
 
 localDate2 = 12.11.2010 9:49 AM
 
-[img1]: /media/loc/en/release-notes/api/ns-70/image014.jpg
-[img2]: /media/loc/en/release-notes/api/ns-70/image015.jpg
+[img1]: /media/loc/en/release-notes/7/image014.jpg
+[img2]: /media/loc/en/release-notes/7/image015.jpg
