@@ -158,8 +158,10 @@ function Convert-LinksInFile {
                 }
             }
 
-            # Add ./ prefix if not present and not starting with ../
-            if ($path -notmatch '^\.\.?/') {
+            # Add ./ prefix if not present, not starting with ../, and not
+            # already root-absolute (e.g. /media/loc/en/... written by
+            # move-media-to-central.ps1) - otherwise this produces ".//"
+            if ($path -notmatch '^\.\.?/' -and $path -notmatch '^/') {
                 $path = './' + $path
             }
 
