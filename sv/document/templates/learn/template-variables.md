@@ -28,7 +28,7 @@ kan du skicka denna text:
 
 Den text du anger ser ut så här:
 
-"Hej **{atfn}**, Vill du veta mer om hur vår produkt kan hjälpa **{name}** att skaffa nya kunder? Ring **{cont}** på **{onam}**."
+"Hej **\{atfn\}**, Vill du veta mer om hur vår produkt kan hjälpa **\{name\}** att skaffa nya kunder? Ring **\{cont\}** på **\{onam\}**."
 
 ## Använda mallvariabler
 
@@ -40,7 +40,7 @@ Den text du anger ser ut så här:
 
 * Datum och klockslag i mallvariablerna styrs av systemklockan på datorn.
 
-* I dokument med filtypen .doc i Office 2003 och äldre måste du använda vinkelparenteser – &lt; &gt; – runt variablerna i stället för klammerparenteser – { } –.
+* I dokument med filtypen .doc i Office 2003 och äldre måste du använda vinkelparenteser - &lt; &gt; - runt variablerna i stället för klammerparenteser - \{ \} -.
 
 ### Exempel: mötesprotokoll (rubrik)
 
@@ -59,7 +59,7 @@ Mötessekreterare: {auth} ({auem})
 **Resultat:**
 
 ```text
-Sommarkampanj – planering
+Sommarkampanj - planering
 Daum/Plats: 2019-12-15, London
 Närvarande: Sara Miller (Liberty Ltd.), Johan Jonsson (SuperShop)
 Frånvarande:
@@ -114,7 +114,4 @@ När du skapar e-postmallar för ärenden och utskick (och meddelandemallar) i M
 
 Referensen är grupperad efter område. [Gå till referens][1]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
-
-<!-- Referenced images -->
+[1]: ../variables/index

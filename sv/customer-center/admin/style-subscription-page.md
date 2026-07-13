@@ -86,10 +86,8 @@ Du kan också ta bort språk som du inte använder. Detta begränsar de språk s
 * [Skicka e-postbekräftelse om personskydd][2]
 * [Översikt Kundportal][1]
 
-<!-- Referenced links -->
-[1]: ../learn/index.md
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email.md
+[1]: ../learn/index
+[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

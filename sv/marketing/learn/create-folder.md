@@ -34,5 +34,3 @@ Gör ett av följande:
 
 * Öppna en befintlig mapp innan du klickar på **Lägg till mapp**. Du kan behöva välja fliken **Alla ...** först.
 * Klicka först på **Lägg till mapp** och välj sedan en huvudmapp från listan **Skapa som undermapp till**.
-
-<!-- Referenced images -->

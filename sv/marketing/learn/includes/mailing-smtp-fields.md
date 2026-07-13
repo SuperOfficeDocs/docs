@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 * **Värd**: IP-adress eller värdnamn för den e-postserver som används för att skicka e-post. Servern måste vara tillgänglig från den SMTP-port som SuperOffice-programmen kör på.
 
 * **Port**: Ange vilken SMTP-port SuperOffice-programmen kör på. Standardporten är 25.

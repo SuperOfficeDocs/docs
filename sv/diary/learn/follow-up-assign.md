@@ -48,7 +48,6 @@ Om den andra personen avvisar inbjudan får du en Inbjudan avvisades-avisering.
 
 2. Om så önskas, upprepa stegen för att tilldela händelse till någon annan.
 
-<!-- Referenced links -->
-[1]: create-follow-up.md
-[2]: create-follow-up.md#associate
-[3]: invitation/accept-decline.md
+[1]: ./create-follow-up
+[2]: ./create-follow-up#associate
+[3]: ./invitation/accept-decline

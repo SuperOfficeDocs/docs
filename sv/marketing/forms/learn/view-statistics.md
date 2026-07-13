@@ -51,12 +51,10 @@ För att arbeta mer effektivt kan du filtrera posterna för att visa en eller fl
 
 Att ha en [dashboard för formulärinlämning][3] gör det enkelt att mäta och visualisera deras data. Med hjälp av dashboarden kan du hålla koll på resultat, trender och produktivitet.
 
-<!-- Referenced links -->
-[1]: process-submissions.md
-[2]: ../../mailing/learn/view-statistics.md
-[3]: ../../../dashboard/learn/show-marketing.md
+[1]: ./process-submissions
+[2]: ../../mailing/learn/view-statistics
+[3]: ../../../dashboard/learn/show-marketing
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/form-submissions-filter.png
 [img3]: ../../../../media/loc/en/marketing/view-form-screen.png
 [img2]: ../../../../media/loc/en/marketing/form-report-dx.png

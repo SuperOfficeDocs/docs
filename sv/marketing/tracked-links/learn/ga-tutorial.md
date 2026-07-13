@@ -19,7 +19,6 @@ translation_type: MT
 
 # Guide - enkel spårning av Google Analytics e-post
 
-<!-- markdownlint-disable-next-line MD036 -->
 *Blogginlägg av Alex Pelan*
 
 E-postmarknadsföring har blivit en viktig del av företagens marknadsföringsstrategier, men det finns otaliga sätt att utföra digital marknadsföring på dessa dagar. E-postmarknadsföring är bara en del av den stora bilden. När man ska analysera resultaten av till exempel en kampanj, är det användbart att samla data från alla marknadsföringskanaler i ett system för att få den övergripande bilden.
@@ -87,11 +86,9 @@ Du kommer nu att se trafiken som genereras av ditt e-postnyhetsbrev. Som du ser 
 
 Börja utforska möjligheterna!
 
-<!-- Referenced links -->
 [1]: http://analytics.google.com
 [2]: https://support.google.com/analytics/answer/1033867
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/marketing/new-account.png
 [img3]: ../../../../media/loc/en/marketing/setting-up-property.png
 [img4]: ../../../../media/loc/en/marketing/tracking-id.png

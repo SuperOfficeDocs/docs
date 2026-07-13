@@ -24,8 +24,8 @@ Använd skärmarna **Arbetsflöde** och **Listor** i **Inställningar och underh
 
 | Begrepp | Definition | Plats i Inställningar och underhåll |
 |---|---|---|
-| Projekttyp | Kategoriserar projekt (till exempel "Konferens" eller "Kampanj") och kopplar dem till statusar och guider. | **Listor** > **Projekt – Typ, status** |
-| Projektstatus | Spårar projektets fas (till exempel "Planerat" eller "Pågående"). Definieras per projekttyp. | **Listor** > **Projekt – Status** |
+| Projekttyp | Kategoriserar projekt (till exempel "Konferens" eller "Kampanj") och kopplar dem till statusar och guider. | **Listor** > **Projekt - Typ, status** |
+| Projektstatus | Spårar projektets fas (till exempel "Planerat" eller "Pågående"). Definieras per projekttyp. | **Listor** > **Projekt - Status** |
 | Projektguide | Ett arbetsflödesverktyg som kopplar statusar till specifika händelser, dokument och milstolpar. | **Arbetsflöde** > **Projektguide** |
 
 ## Vad vill du göra?
@@ -37,8 +37,7 @@ Använd skärmarna **Arbetsflöde** och **Listor** i **Inställningar och underh
 
 Dessa verktyg gör det möjligt för administratörer att anpassa projektarbetsflöden och säkerställa effektivitet och konsekvens i hela organisationen.
 
-<!-- Referenced links -->
-[1]: create-project-guide.md
-[2]: edit-project-guide.md
-[3]: project-status.md
-[4]: project-type.md
+[1]: ./create-project-guide
+[2]: ./edit-project-guide
+[3]: ./project-status
+[4]: ./project-type

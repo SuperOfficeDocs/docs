@@ -50,7 +50,4 @@ Du kan skapa en händelse som till exempel visas på aktivitetslistan för alla 
 
 ![Urvalsuppgift: Generera händelser -screenshot][img1]
 
-<!-- Refererade länkar -->
-
-<!-- Refererade bilder -->
 [img1]: ../../../../../media/loc/en/search-options/generate-follow-ups-from-selection.png

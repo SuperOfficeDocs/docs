@@ -43,5 +43,4 @@ redirect_from:
 1. Klicka på knappen **Ta bort** längst ned i fönstret **Egenskaper för FAQ-post**.
 1. Bekräfta genom att klicka på **OK**. FAQ-posten tas bort från SuperOffice.
 
-<!-- Referenced links -->
-[1]: create.md
+[1]: ./create

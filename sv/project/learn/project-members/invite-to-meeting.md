@@ -20,5 +20,4 @@ language: sv
 3. Högerklicka och välj **Förfrågan om möte**.
 4. [Fyll i nödvändiga uppgifter i fälten][1].
 
-<!-- Referenced links -->
-[1]: ../../../diary/learn/create-follow-up.md#fields
+[1]: ../../../diary/learn/create-follow-up#fields

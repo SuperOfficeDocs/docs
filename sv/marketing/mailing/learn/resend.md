@@ -22,7 +22,7 @@ Om du, efter att ha tittat på resultatet av ditt utskick, märker att många e-
 
 Det finns två sätt att skicka ditt utskick på nytt.
 
-## Alternativ 1 – Ladda om och skicka på nytt
+## Alternativ 1 - Ladda om och skicka på nytt
 
 Du kan ladda om och skicka om utskick på nytt under fliken **Utskick**. Hitta det utskick du vill skicka på nytt genom att söka efter det eller genom att gå via fliken **Senaste** eller **Alla** .
 
@@ -36,7 +36,7 @@ Systemet skickar endast utskicket till de mottagare som ännu inte har fått det
 
 Efter att utskicket är skickat kan du gå in i utskicket och se de nya resultaten under fliken **Sammanfattning** och **Mottagare**.
 
-## Alternativ 2 – Skicka på nytt till valda
+## Alternativ 2 - Skicka på nytt till valda
 
 1. Börja med att öppna det utskick du vill skicka igen och gå till fliken **Mottagare**.
 
@@ -52,10 +52,8 @@ Efter att utskicket är skickat kan du gå in i utskicket och se de nya resultat
 
 SuperOffice Marknadsföring skickar nu ditt utskick till alla valda mottagare.
 
-<!-- Referenced links -->
-[1]: ../../recipients/learn/manage-bounces.md
+[1]: ../../recipients/learn/manage-bounces
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/reload-resend.png
 [img2]: ../../../../media/loc/en/marketing/filter-recipients.png
 [img3]: ../../../../media/loc/en/marketing/resend-to-selected.png

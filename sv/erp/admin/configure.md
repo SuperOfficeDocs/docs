@@ -21,7 +21,6 @@ redirect_from:
 index: true
 ---
 
-
 # Konfigurera ERP-koppling
 
 När du har lagt till en ERP-koppling måste du konfigurera hur data ska synkroniseras mellan SuperOffice och ERP-systemet. Du gör detta med hjälp av knapparna längst ned på fliken **Synk** i fönstret Offert/Synk.
@@ -101,7 +100,7 @@ Standardvärden minskar behovet av manuell inmatning i fält som vanligtvis har 
 
     * **Ange standardvärde:** Tillämpa automatiskt ett specifikt värde vid synkronisering. Du måste ange ett värde.
     * **Fråga användaren om värde:** Tillåt att användaren anger ett värde manuellt.
-    * **Krävs – användaren måste fylla i ett värde:** Kräver att ett värde anges. Om detta är valt måste du också välja ett av de två alternativen ovan.
+    * **Krävs - användaren måste fylla i ett värde:** Kräver att ett värde anges. Om detta är valt måste du också välja ett av de två alternativen ovan.
 
     ![Lägg till standardvärde -screenshot][img4]
 
@@ -158,7 +157,6 @@ Om riktningspilarna är grå även efter att du valt ett SuperOffice-fält kan d
 
 Håll muspekaren över pilen för att se en förklaring i ett verktygstips.
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/erp/erp-connection-settings.png
 [img2]: ../../../media/loc/en/erp/configure-field-mapping.png
 [img3]: ../../../media/loc/en/erp/list-of-default-values.png

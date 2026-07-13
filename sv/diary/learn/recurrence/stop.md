@@ -47,9 +47,7 @@ Du kan också stoppa en upprepande uppföljning genom att välja den i dagboken 
 * [Skapa återkommande händelse][1]
 * [Redigera återkommande händelse][2]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../edit-follow-up.md#repeat
+[1]: ./create
+[2]: ../edit-follow-up#repeat
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

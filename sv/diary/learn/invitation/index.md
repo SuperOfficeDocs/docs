@@ -54,8 +54,5 @@ När du skickar en förfrågan kan mottagaren välja att acceptera eller avböja
 * [Lägga till deltagare i händelser][2]
 * [Skapa gruppöversikter][1]
 
-<!-- Referenced links -->
-[1]: ../group-view.md
-[2]: add-attendee.md
-
-<!-- Referenced images -->
+[1]: ../group-view
+[2]: ./add-attendee

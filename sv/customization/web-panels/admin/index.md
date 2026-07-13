@@ -14,7 +14,7 @@ topic: web panel
 tier: core
 language: sv
 index: true
-redirect_from: 
+redirect_from:
   - /sv/ui/web-panels/learn/index
   - /sv/admin/lists/learn/web-panel
 ---
@@ -38,20 +38,20 @@ Webbpaneler stöder en rad innehållstyper:
 
 **Visningsplatsen** definieras när du konfigurerar panelen. Detta styr var i SuperOffice panelen visas.
 
-* **Sidopanel** – Visas i den hopfällbara panelen på sidan av många CRM-skärmar.
-* **Verktygsfält** – Lägger till en knapp till verktygsfältet.
-* **Navigatorknapp** – Lägger till en knapp till huvudmenyn.
+* **Sidopanel** - Visas i den hopfällbara panelen på sidan av många CRM-skärmar.
+* **Verktygsfält** - Lägger till en knapp till verktygsfältet.
+* **Navigatorknapp** - Lägger till en knapp till huvudmenyn.
 * **Paneler:**
-  * **Företags-, Kontakt-, Projekt-, Försäljnings- och Urvalskort** – Lägger till en genväg i **www**-fliken för varje skärm.
-  * **Webbpanel på SuperOffice-knapp** – Öppnas från SuperOffice-logotypen (övre vänstra hörnet). Flera URL:er visas som flikar till höger.
-  * **Sektionsflikar (i Företags-, Kontakt-, Projekt- och Försäljningsskärmar)** – Lägger till en separat flik som öppnar panelinnehållet.
+  * **Företags-, Kontakt-, Projekt-, Försäljnings- och Urvalskort** - Lägger till en genväg i **www**-fliken för varje skärm.
+  * **Webbpanel på SuperOffice-knapp** - Öppnas från SuperOffice-logotypen (övre vänstra hörnet). Flera URL:er visas som flikar till höger.
+  * **Sektionsflikar (i Företags-, Kontakt-, Projekt- och Försäljningsskärmar)** - Lägger till en separat flik som öppnar panelinnehållet.
 * **Dialogrutor:**
-  * **Uppföljningsdialog** – Lägger till en genväg i **www**-fliken för uppföljningsdialogen.
-  * **Dokument-, Produkt- och Offertdialoger** – Lägger till en genväg i **www**-fliken för varje dialog.
+  * **Uppföljningsdialog** - Lägger till en genväg i **www**-fliken för uppföljningsdialogen.
+  * **Dokument-, Produkt- och Offertdialoger** - Lägger till en genväg i **www**-fliken för varje dialog.
 * **Menyer:**
-  * **Verktygsmenyn** – Visas under **Andra applikationer** när du klickar på **Verktyg**-knappen i Navigatorn.
-  * **Visa-menyn** – Visas i menyalternativet **Andra applikationer**.
-* **Dashboard-paneler** – Tillgängliga i panelinnehållsväljaren för dashboard-widgets.
+  * **Verktygsmenyn** - Visas under **Andra applikationer** när du klickar på **Verktyg**-knappen i Navigatorn.
+  * **Visa-menyn** - Visas i menyalternativet **Andra applikationer**.
+* **Dashboard-paneler** - Tillgängliga i panelinnehållsväljaren för dashboard-widgets.
 
 ### I Service (föråldrad)
 
@@ -65,7 +65,7 @@ Webbpaneler stöder en rad innehållstyper:
 
 På platser som Företag, Kontakt, Projekt och Försäljning visas webbpaneler ofta under **www**-fliken.
 
-Du kan byta namn på fliken i **Inställningar och underhåll** > **Systemval** > **Etiketter**. För att flytta fliken inom CRM-gränssnittet använder du listan **GUI – Webbpanel**.
+Du kan byta namn på fliken i **Inställningar och underhåll** > **Systemval** > **Etiketter**. För att flytta fliken inom CRM-gränssnittet använder du listan **GUI - Webbpanel**.
 
 ### Öppna i eget fönster
 
@@ -87,8 +87,5 @@ Webbpaneler laddar innehåll dynamiskt baserat på CRM-kontext och URL:en som ä
 * [Lägg till webbpanel][1]
 * [Bygga webbpaneler][2]
 
-<!-- Referenced links -->
-[1]: add-web-panel.md
-[2]: ../../../../en/customization/web-panels/dev/index.md
-
-<!-- Referenced images -->
+[1]: ./add-web-panel
+[2]: ../../../../en/customization/web-panels/dev/index

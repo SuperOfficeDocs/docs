@@ -82,8 +82,5 @@ I en delning följer deltagare den första (vänstermost) grenen där de uppfyll
 * Lägg till i flöde: Indikerar att denna kontakt föreslås för registrering i ett annat flöde.
 * Ta bort från flöde: Tar bort all information om kontaktens deltagande i det aktuella flödet.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/flow-participants.png
 [img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png

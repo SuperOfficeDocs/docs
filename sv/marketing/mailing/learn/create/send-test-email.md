@@ -48,8 +48,6 @@ När du har skickat ett testutskick måste du nollställa räknarna för länkar
 1. Gå till fliken **Spårade länkar**
 2. Klicka på menyknappen bredvid den aktuella länken och välj **Nollställ**. Kolumnen **Klick** sätts då på **0**. Informationen om vilka kunder som klickat på länken tas också bort.
 
-<!-- Referenced links -->
-[1]: ../../../learn/best-practices.md#mobile
+[1]: ../../../learn/best-practices#mobile
 
-<!-- Referenced images -->
 [img2]: ../../../../../media/loc/en/marketing/test-mailing.png

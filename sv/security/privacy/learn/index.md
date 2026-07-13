@@ -14,7 +14,7 @@ tier: starter
 language: sv
 ---
 
-# Integritet <i class="ph ph-shield" aria-label="Shield icon"></i>
+# Integritet \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
 
 Med **Integritet**-funktionen i SuperOffice kan du skydda kundens personliga data och följa EU:s nya dataskyddsförordning (GDPR).
 
@@ -57,7 +57,7 @@ När en kontakt skapas i SuperOffice CRM anges inte rättslig grund för syftet 
 
 Välj alternativet **Ange standard för rättslig grund** och välj rättslig grund i listan. Den rättsliga grunden anges för alla nya kontakter för syftet **Försäljning och tjänster**.
 
-[Lägga till poster i listan Integritet – Rättslig grund][3]
+[Lägga till poster i listan Integritet - Rättslig grund][3]
 
 ## Filtrera mottagare utifrån medgivande till e-marknadsföring och aktiva prenumerationer
 
@@ -67,12 +67,11 @@ Om du *inte* väljer det här alternativet kommer bara personer med **E-marknads
 
 ## Relaterat innehåll
 
-* [Lägga till poster i listan Integritet – Rättslig grund][3]
-* [Lägga till poster i listan Integritet – Källa][4]
+* [Lägga till poster i listan Integritet - Rättslig grund][3]
+* [Lägga till poster i listan Integritet - Källa][4]
 * [Konverteringsspårning (UTM)][5]
 
-<!-- Referenced links -->
-[2]: ../admin/add-purpose.md
-[3]: ../admin/add-legal-base.md
-[4]: ../admin/add-source.md
-[5]: ../../../marketing/utm/learn/index.md
+[2]: ../admin/add-purpose
+[3]: ../admin/add-legal-base
+[4]: ../admin/add-source
+[5]: ../../../marketing/utm/learn/index

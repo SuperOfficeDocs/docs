@@ -63,8 +63,8 @@ Högst upp på fliken **Nummertilldelning** finns en tabell som visar alla räkn
 | Endast läsbart | Anger om användarna kan skriva in värden i räknarfälten själva. |
 | Tillåt tomma | Anger om ett tomt räknarfält är ett tillåtet värde. Det är praktiskt om räknarvärdena måste vara unika. Om **Tillåt tomma** markeras betyder det att kravet på unika värden inte tillämpas på tomma fält. |
 | Senast använd | Visar när räknarfältet senast användes. |
-| Av – Användar-ID | Visar vem som använde räknarfältet senast. |
-| Av – Porträtt | Visar en miniatyrbild av den användare som senast använde räknarfältet. |
+| Av - Användar-ID | Visar vem som använde räknarfältet senast. |
+| Av - Porträtt | Visar en miniatyrbild av den användare som senast använde räknarfältet. |
 
 ## Resultat av nummertilldelning
 
@@ -88,5 +88,4 @@ Tabellen nedan visar resultaten av olika kombinationer av värdena **Tilldela** 
 
 * [Ange standardvärden för nya dokumentmallar][3]
 
-<!-- Referenced links -->
-[3]: ../../document/templates/admin/document-template-defaults.md
+[3]: ../../document/templates/admin/document-template-defaults

@@ -2,7 +2,7 @@
 uid: help-sv-add-items-to-resource-list
 title: Lägg till resurs
 description: Lägga till poster i listan Resurs
-keywords: resurs, listan Allmänt – Resurs
+keywords: resurs, listan Allmänt - Resurs
 author: digitaldiina
 date: 10.27.2025
 version: 10.5
@@ -19,7 +19,7 @@ language: sv
 
 # Lägg till resurs
 
-Resurser som mötesrum och projektorer definieras i fönstret **Listor** under Inställningar och underhåll. Typerna visas som poster i listan **Allmänt – Resurs**.
+Resurser som mötesrum och projektorer definieras i fönstret **Listor** under Inställningar och underhåll. Typerna visas som poster i listan **Allmänt - Resurs**.
 
 Resurser visas i händelsedialogrutan i SuperOffice CRM och här kan användare lägga till resurser från fliken **Deltagare**.
 
@@ -27,7 +27,7 @@ Resurser visas i händelsedialogrutan i SuperOffice CRM och här kan användare 
 
 1. Välj <i class="ph ph-list-bullets" aria-hidden="true"></i> **Listor** i navigatorn.
 
-1. Välj **Allmänt – Resurs** från rullgardinsmenyn. Fliken **Poster** visar alla befintliga resurser.
+1. Välj **Allmänt - Resurs** från rullgardinsmenyn. Fliken **Poster** visar alla befintliga resurser.
 
 1. Klicka på **Lägg till** för att öppna dialogrutan **Redigera listpost**.
 

@@ -1,6 +1,6 @@
 ---
 uid: help-sv-privacy-add-legal-base
-title: Lägga till poster i listan Integritet – Rättslig grund
+title: Lägga till poster i listan Integritet - Rättslig grund
 description: Den här guiden beskriver hur du ändrar integritetslistorna.
 keywords: Integritet rättslig grund lista, Lägg till rättslig grund
 author: SuperOffice Product and Engineering
@@ -17,15 +17,15 @@ index: true
 redirect_from: /sv/admin/lists/learn/privacy-legal-base-add
 ---
 
-# Lägga till poster i listan Integritet – Rättslig grund
+# Lägga till poster i listan Integritet - Rättslig grund
 
-Listan **Integritet – Rättslig grund** innehåller alternativ som användare väljer för att dokumentera den rättsliga grunden för behandling av en kontakts personuppgifter.
+Listan **Integritet - Rättslig grund** innehåller alternativ som användare väljer för att dokumentera den rättsliga grunden för behandling av en kontakts personuppgifter.
 
 ## Steg
 
 1. Välj <i class="ph ph-list-bullets" aria-hidden="true"></i> **Listor** i navigatorn.
 
-1. Välj **Integritet – Rättslig grund** från rullgardinsmenyn. Fliken **Poster** visar alla befintliga rättsliga grunder.
+1. Välj **Integritet - Rättslig grund** från rullgardinsmenyn. Fliken **Poster** visar alla befintliga rättsliga grunder.
 
 1. Klicka på **Lägg till** för att öppna dialogrutan **Redigera listobjekt**.
 
@@ -39,9 +39,6 @@ Listan **Integritet – Rättslig grund** innehåller alternativ som användare 
 
 ## Relaterat innehåll
 
-* [Lägga till poster i listan Integritet – Källa][1]
+* [Lägga till poster i listan Integritet - Källa][1]
 
-<!-- Referenced links -->
-[1]: add-source.md
-
-<!-- Referenced images -->
+[1]: ./add-source

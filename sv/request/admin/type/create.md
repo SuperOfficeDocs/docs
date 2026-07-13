@@ -48,11 +48,9 @@ index: true
 
 1. Klicka på **Spara**. Ärendetypen har nu skapats.
 
-<!-- Refererade länkar -->
-[3]: ../priority/index.md
-[4]: ../status/index.md
-[5]: ../../../knowledge-base/learn/reply-templates/index.md
+[3]: ../priority/index
+[4]: ../status/index
+[5]: ../../../knowledge-base/learn/reply-templates/index
 
-<!-- Refererade bilder -->
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img3]: ../../../../media/loc/en/request/edit-request-type-values.png
