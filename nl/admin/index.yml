@@ -1,0 +1,113 @@
+### YamlMime:SubCategory
+
+yamlMime: SubCategory
+title: Gebruikersbeheer en systeeminstellingen
+summary: "Meer informatie over licenties, rollen en gebruikers, talen en lokalisaties, hoe u externe inhoud importeert en hoe onze AI-services werken."
+language: nl
+
+metadata:
+  title: Gebruikersbeheer en systeeminstellingen
+  description: "Licenties, gebruikersbeheer, talen en lokalisatie, importeren"
+  so.product: administration
+  so.topic: landing-page
+  author: Help and Learn
+  so.author: Kirsti A.
+  so.date: 11.29.2022
+
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+
+landingContent:
+
+  # Card
+  - title: Licenties
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Licentie-overzicht
+          url: license/index.md
+        - text: Het scherm Licenties
+          url: license/index.md
+        - text: Licentie activeren
+          url: license/activate.md
+
+  # Card
+  - title: "Lijsten, voorkeuren, opties en instellingen"
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Lijsten
+          url: lists/index.md
+        - text: Voorkeuren
+          url: preferences/index.md
+        - text: Opties
+          url: options/index.md
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: Algemene voorkeuren
+          url: preferences/index.md#global
+
+  # Card
+  - title: Gebruikersbeheer
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Rollen
+          url: user-management/role/index.md
+        - text: Een rol maken
+          url: user-management/role/create-role.md
+        - text: Gebruikers
+          url: user-management/index.md
+        - text: Gebruikers toevoegen
+          url: user-management/add-associate.md
+        - text: Gebruikersgegevens bijwerken
+          url: user-management/update-user.md
+        - text: Gebruikersgroepen beheren
+          url: user-management/user-groups.md
+        - text: Onze bedrijven beheren
+          url: user-management/our-companies.md
+
+  # Card
+  - title: Import
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Importinstellingen configureren
+          url: import/settings.md
+        - text: Importeren uit Excel
+          url: import/from-excel.md
+        - text: Producten importeren uit Excel
+          url: import/products-from-excel.md
+        - text: Importeren uit Gmail
+          url: import/from-gmail.md
+        - text: Importeren uit Outlook
+          url: import/from-outlook.md
+        - text: Importeren uit ERP
+          url: import/from-erp.md
+
+  # Card
+  - title: AI
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Categorisatie
+          url: ../ai/learn/categorization.md
+        - text: Tekstanalyse
+          url: ../ai/learn/text-analysis.md
+
+ # Card
+  - title: ERP
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Verbinding maken met ERP
+          url: ../erp/learn/connect.md
+        - text: Synchronisatie uitschakelen
+          url: ../erp/learn/disconnect.md

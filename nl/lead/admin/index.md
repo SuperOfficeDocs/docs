@@ -1,0 +1,87 @@
+---
+uid: help-nl-lead-admin
+title: Leadbeheer instellen
+description: Leer hoe u leadbeheer in SuperOffice CRM activeert, configureert en uitbreidt.
+keywords: leadbeheer, leadinstelling, leadstatus, potentiële klant, verkoopproces
+author: digitaldiina
+date: 06.10.2026
+version: 12.0
+content_type: concept
+category: sale
+topic: lead
+license: salesessentials
+tier: core
+audience: settings
+audience_tooltip: Instellingen en onderhoud
+index: true
+language: nl
+---
+
+# Leadbeheer instellen
+
+Leadbeheer in SuperOffice CRM helpt u potentiële klanten te volgen vanaf het eerste contact, via kwalificatie tot in het verkoopproces. Beheerders moeten configureren welke bedrijfscategorieën **Leadstatus** gebruiken, de beschikbare statuswaarden controleren en desgewenst de tracking uitbreiden met marketinggegevens.
+
+> [!NOTE]
+> De standaardcategorieën *Lead*, *Marketinggekwalificeerde lead*, *Kans* en *Verloren kans* zijn alleen opgenomen in nieuwe databases.
+> Bestaande klanten moeten categorieën handmatig toevoegen of bijwerken om de leadstatus te activeren.
+
+## Stap 1: Leadstatus inschakelen voor een bedrijfscategorie
+
+Leadstatus kan alleen worden gebruikt voor categorieën die behoren tot de groep **Potentiële klant**. Zorg ervoor dat er ten minste één categorie op deze manier is ingesteld voordat u leadbeheer activeert.
+
+1. Ga naar **Instellingen en onderhoud** > **Lijsten** > **Bedrijf – Categorie**.
+1. Maak een nieuwe categorie of bewerk een bestaande.
+1. Stel **Categoriegroep** in op *Potentiële klant*.
+1. Selecteer **Leadstatus voor deze categorie inschakelen**.
+1. Klik **OK** om de wijzigingen op te slaan.
+
+![Leadstatus inschakelen voor een categorie in de Bedrijf – Categorie-lijst, met de geselecteerde groep Potentiële klant. -screenshot][img1]
+
+Zie voor meer informatie [Bedrijfscategorie en categoriegroep][1].
+
+## Stap 2: De lijst met leadstatussen aanpassen
+
+De lijst **Persoon – Leadstatus** definieert de kwalificatiestadia die in uw organisatie worden gebruikt. Standaard bevat SuperOffice statussen zoals *Open*, *Contact opnemen*, *Gekwalificeerd*, *Gediskwalificeerd* en *Opnieuw benaderen*.
+
+1. Ga naar **Instellingen en onderhoud** > **Lijsten** > **Persoon – Leadstatus**.
+1. Controleer de vooraf gedefinieerde items.
+1. Voeg statussen toe, bewerk of verwijder ze om uw eigen kwalificatieproces aan te passen.
+
+Zie [Leadstatus beheren][2] voor gedetailleerde stappen.
+
+## Stap 3: (Optioneel) Categorie-automatisering configureren
+
+Categorie-automatisering vermindert handmatig werk door bedrijfscategorieën automatisch bij te werken wanneer de verkoopstatus verandert of de leadstatus wordt bijgewerkt. Bijvoorbeeld, verplaats een lead automatisch naar *Klant* wanneer een verkoop als gewonnen wordt gemarkeerd.
+
+1. Ga naar **Instellingen en onderhoud** > **Workflow** > **Lead-categorisatie**.
+1. Schakel de automatiseringsregels in die u wilt gebruiken.
+1. Geef voor elke regel de doelcategorie op en of gebruikersbevestiging vereist is.
+
+Zie [Lead-categorisatie automatiseren][6] voor gedetailleerde stappen.
+
+## Stap 4: (Optioneel) Uitbreiden met **Marketing Premium**
+
+Als u de **Marketing Premium**-licentie of het **Plus**-plan heeft, kunt u extra tracking- en automatiseringsfuncties benutten in uw leadproces:
+
+* **UTM-tracking:** Leg de bron van nieuwe leads vast via online formulieren.
+  Zie [Formulier-UTM-gegevens volgen][5].
+* **Lead-nurturingflow:** Verdeel nieuwe leads automatisch over gebruikers.
+  Zie [Nieuwe leads verdelen][4].
+
+## Gerelateerde inhoud
+
+* [Overzicht van leadbeheer][3]
+* [Bedrijfscategorie en categoriegroep][1]
+* [Leadstatus beheren][2]
+* [Lead-categorisatie automatiseren][6]
+
+<!-- Referenced links -->
+[1]: add-company-category.md
+[2]: add-lead-status.md
+[3]: ../learn/index.md
+[4]: ../../marketing/flows/learn/define-flow-actions.md#distribute
+[5]: ../../marketing/utm/admin/set-up.md
+[6]: category-automation.md
+
+<!-- Referenced images -->
+[img1]: ../../../media/loc/en/lead/enable-lead-status.png

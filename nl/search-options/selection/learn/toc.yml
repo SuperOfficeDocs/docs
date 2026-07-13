@@ -1,0 +1,18 @@
+items:
+- name: Overzicht
+  href: index.md
+- name: Selectie maken
+  href: create.md
+- name: Selectie bewerken of verwijderen
+  href: update.md
+- name: Selecties combineren
+  href: combine.md
+- name: Leden toevoegen en verwijderen (statisch)
+  href: add-remove-members-static.md
+- name: Leden naar een andere selectie kopiëren
+  href: copy-members-to.md
+- name: Boardweergave
+  href: board-view.md
+- name: Taken uitvoeren met selecties
+  href: howto/toc.yml
+  topicHref: howto/index.md

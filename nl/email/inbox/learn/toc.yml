@@ -1,0 +1,19 @@
+items:
+- name: Overzicht
+  href: index.md
+- name: Postvak IN instellen
+  href: setup.md
+- name: E-mailbericht weergeven
+  href: preview.md
+- name: E-mail opstellen
+  href: compose.md
+- name: Afzenders beheren
+  href: manage-senders.md
+- name: Uitnodiging accepteren
+  href: invitations.md
+- name: E-mail archiveren
+  href: archive.md
+- name: Taak maken
+  href: create-task.md
+- name: Verzoek maken
+  href: create-request.md

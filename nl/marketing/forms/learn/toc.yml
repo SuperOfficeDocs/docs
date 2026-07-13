@@ -1,0 +1,25 @@
+items:
+- name: Overzicht
+  href: index.md
+- name: Nieuw formulier maken
+  href: create.md
+- name: Veldopties
+  href: field-options.md
+- name: Formulieracties definiëren
+  href: define-form-actions.md
+- name: Formuliersjablonen
+  href: form-templates.md
+- name: Formulieren publiceren
+  href: publish.md
+- name: Formulierstatistieken weergeven
+  href: view-statistics.md
+- name: Formulierverzendingen verwerken
+  href: process-submissions.md
+- name: Handleiding - Neem contact met mij op
+  href: tutorial-contact-me.md
+- name: Handleiding - Aanmelden nieuwsbrief
+  href: tutorial-sign-up.md
+- name: Lettertypen voor formulieren beheren
+  href: ../admin/manage-fonts.md
+- name: Restricties voor formuliervelden
+  href: ../admin/form-field-restrictions.md

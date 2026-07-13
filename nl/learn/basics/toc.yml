@@ -1,0 +1,32 @@
+items:
+  - name: Overzicht
+    href: index.md
+  - name: Meldingen
+    href: notifications.md
+  - name: Favorieten
+    href: fav.md
+  - name: Historielijst
+    href: history.md
+  - name: Koppelingen
+    href: links.md
+  - name: Notities maken
+    href: notes.md
+  - name: Records afdrukken
+    href: print.md
+  - name: Controle op duplicaten
+    href: duplicates.md
+  - name: Verwijderen en herstellen
+    href: deleting-elements.md
+  - name: Bulksgewijs bijwerken
+    href: bulk-update.md
+  - name: Werken met sectietabbladen
+    href: ../section-tabs/toc.yml
+    topicHref: ../section-tabs/index.md
+  - name: Activiteiten
+    href: activity.md
+  - name: Bedrijfs- en persoonsrelaties
+    href: relations.md
+  - name: Externe toepassingen en URL-adressen
+    href: external-applications-and-url-addresses.md
+  - name: Snelkoppeling maken/kopiëren
+    href: creating-shortcuts-to-entries-in-crm.md

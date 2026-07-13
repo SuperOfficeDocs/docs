@@ -1,0 +1,20 @@
+items:
+- name: Overzicht
+  href: index.md
+- name: Configuratie
+  href: config.md
+- name: Bronbestanden
+  href: edit.md
+- name: Wachtwoorden naar personen verzenden
+  href: send-credentials.md
+- name: Chat inschakelen
+  href: enable-chat.md
+- name: Een webformulier koppelen
+  href: link-form.md
+- name: Voor beheerders
+  topicHref: ../admin/style-subscription-page.md
+  items:
+  - name: Stijl van abonnementspagina
+    href: ../admin/style-subscription-page.md
+  - name: Wachtwoordbeleid Customer Centre
+    href: ../admin/password-policy.md

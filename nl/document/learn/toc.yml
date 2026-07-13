@@ -1,0 +1,22 @@
+items:
+- name: Overzicht
+  href: ../index.yml
+- name: Inleiding
+  href: index.md
+- name: Documentbibliotheek
+  href: ../library/learn/index.md
+- name: Werken met document
+  topicHref: create.md
+  items:
+  - name: Nieuw document maken
+    href: create.md
+  - name: Document aan/afmelden
+    href: lock.md
+  - name: Document bewerken of verwijderen
+    href: edit.md
+  - name: Document als e-mailbericht verzenden
+    href: send-as-email.md
+
+- name: Documentsjablonen
+  href: ../templates/learn/toc.yml
+  topicHref: ../templates/learn/index.md

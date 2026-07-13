@@ -1,0 +1,11 @@
+items:
+- name: Introductie
+  href: index.md
+- name: Statusmonitor instellen
+  href: set-up.md
+- name: Statusmonitor bijwerken
+  href: update.md
+- name: Tellerinstellingen (periode)
+  href: counter-settings.md
+- name: Verkoopbedragklasse toevoegen
+  href: sale-amount-class.md
