@@ -26,5 +26,4 @@ Nogle gange er man nødt til at nulstille antallet af klik. Det kan f.eks. være
 
 3. Klik på <i class="ph ph-list" aria-label="Task menu"></i> ved siden af linket, og vælg **Nulstil**. Tælleren i kolonnen **Klik** skifter til 0. Data om hvilke kunder der har klikket på linket fjernes også.
 
-<!-- Referenced links -->
-[6]: ../../mailing/learn/create/send-test-email.md
+[6]: ../../mailing/learn/create/send-test-email

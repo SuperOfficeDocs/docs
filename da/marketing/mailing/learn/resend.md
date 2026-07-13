@@ -36,7 +36,7 @@ Systemet sender kun mailen til de modtagere, der endnu ikke har modtaget den.
 
 Når mailudsendelsen er sendt afsted, kan du gå ind i den og se de nye resultater under fanerne**Oversigt** og **Modtagere**.
 
-## Mulighed 2 – Genudsende til udvalgte
+## Mulighed 2 - Genudsende til udvalgte
 
 1. Start med at åbne den mail, du vil sende ud igen, og gå til fanen **Modtagere**.
 
@@ -52,10 +52,8 @@ Når mailudsendelsen er sendt afsted, kan du gå ind i den og se de nye resultat
 
 SuperOffice Marketing sender nu din mail til alle de udvalgte modtagere.
 
-<!-- Referenced links -->
-[1]: ../../recipients/learn/manage-bounces.md
+[1]: ../../recipients/learn/manage-bounces
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/reload-resend.png
 [img2]: ../../../../media/loc/en/marketing/filter-recipients.png
 [img3]: ../../../../media/loc/en/marketing/resend-to-selected.png

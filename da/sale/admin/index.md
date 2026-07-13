@@ -27,7 +27,7 @@ Brug skærmene **Arbejdsgang** og **Lister** i **Indstillinger og vedligeholdels
 | Salgstype | Kategoriserer salg (f.eks. "Ny kunde" eller "Fornyelse") og knytter dem til faser og guider. | **Lister** > **Salg - Type, Faser, Tilbud** |
 | Salgsfase | Sporer salgets fase (f.eks. "Tilbud" eller "Kontraktskrivning"). Defineres pr. salgstype. | **Lister** > **Salg - Fase** |
 | Salgsguide | Et arbejdsgangsværktøj, der knytter faser til specifikke opfølgninger og dokumenter. | **Arbejdsgang** > **Salgsguide** |
-| Valuta | En listeforekomst, der definerer tilgængelige valutaer for salgsbeløb, inklusive valutakurs og enhed. | **Lister** > **Generelt – Valuta** |
+| Valuta | En listeforekomst, der definerer tilgængelige valutaer for salgsbeløb, inklusive valutakurs og enhed. | **Lister** > **Generelt - Valuta** |
 | Basisvaluta | Den primære valuta, der bruges til systemberegninger og valutakurser. | **Præferencer** > **Globale præferencer** > **System** > **Ledende valuta** |
 
 ## Tilpasning af dine salgslister
@@ -38,10 +38,10 @@ Afhængigt af hvilken type branche dit firma er i, kan du skræddersy systemet v
 
 Se på følgende lister for at se, om du vil ændre dem eller ej:
 
-* Salg – Kilde
-* Salg – Fase
-* Salg – Typekategori
-* Salg – Type, Faser, Tilbud
+* Salg - Kilde
+* Salg - Fase
+* Salg - Typekategori
+* Salg - Type, Faser, Tilbud
 
 ## Hvad vil du gøre?
 
@@ -53,9 +53,8 @@ Se på følgende lister for at se, om du vil ændre dem eller ej:
 
 Disse værktøjer giver administratorer mulighed for at tilpasse salgsarbejdsgange og sikre effektivitet og konsistens på tværs af teamet.
 
-<!-- Referenced links -->
-[1]: create-sales-guide.md
-[2]: edit-sales-guide.md
-[3]: sale-stage.md
-[4]: sale-type.md
-[5]: add-currency.md
+[1]: ./create-sales-guide
+[2]: ./edit-sales-guide
+[3]: ./sale-stage
+[4]: ./sale-type
+[5]: ./add-currency

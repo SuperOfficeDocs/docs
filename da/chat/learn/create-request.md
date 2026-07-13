@@ -32,9 +32,6 @@ Hvis du ikke kan løse problemet via chatten, kan du oprette en sag, der skal h�
 * [Svare på en chatsamtale][3]
 * [Få mere at vide om sager][4]
 
-<!-- Referenced links -->
-[1]: link-to-person.md
-[3]: respond.md
-[4]: ../../request/learn/index.md
-
-<!-- Referenced images -->
+[1]: ./link-to-person
+[3]: ./respond
+[4]: ../../request/learn/index

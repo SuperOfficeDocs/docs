@@ -37,7 +37,6 @@ Du kan f.eks. oprette en ny status, der hedder "Venter på svar", og som er en m
 * [Slet sagsstatus][2]
 * [Opsæt Svar næste sag i køen][3]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: delete.md
-[3]: ../next-in-queue.md
+[1]: ./create
+[2]: ./delete
+[3]: ../next-in-queue

@@ -1,0 +1,54 @@
+---
+uid: help-da-import-from-mac-address-book
+title: Import fra Mac-adressebog
+description: Import fra Mac-adressebog
+keywords: Indstillinger og vedligeholdelse, importer
+author: SuperOffice Product and Engineering
+date: 06.29.2022
+version: 10.5
+content_type: howto
+index: true
+redirect_from: /da/admin/import/learn/import-from-mac-address-book
+tier: starter
+language: da
+---
+
+import CautionBackupBeforeImport from "./includes/caution-backup-before-import.mdx";
+import OpenImport from "./includes/open-import.md";
+import AdjustEmailOnly from "./includes/adjust-email-only.md";
+import TroubleshootImport from "./includes/troubleshoot-import.md";
+import ImportComplete from "./includes/import-complete.mdx";
+
+# Import fra Mac-adressebog
+
+<CautionBackupBeforeImport />
+
+## Import af firmaer/personer fra Mac-adressebog
+
+Ikonet i Importer vises, hvis brugeren har WebTools til Mac installeret og åbner Indstillinger og vedligeholdelse.
+
+1. <OpenImport />
+
+2. Klik på Mac-ikonet under **Vælg en importkilde**. Mac-adressebog åbnes, og der vises en dialogboks, mens eksporten fra adressebogen kører.
+
+    <Note>
+    Firmaerne/personerne fra Outlook bliver ikke importeret i SuperOffice-databasen endnu. SuperOffice indlæser blot firma-/personlisten fra Outlook, så du kan angive importindstillingerne.
+    </Note>
+
+    Når importen fra Outlook er fuldført, vises firmaerne/personerne i skærmbilledet **Importer**.
+
+### Vises der en fejlmeddelelse?
+
+Du skal installere og konfigurere SuperOffice WebTools for at importere firmaer fra Outlook. I SuperOffice CRM skal du gå til **Filer** > **Hent** > **SuperOffice WebTools**. Kontakt brugersupport, hvis du oplever problemer.
+
+## Tilpas importen
+
+<AdjustEmailOnly />
+
+### Fejlfinding
+
+<TroubleshootImport />
+
+## Fuldfør importen
+
+<ImportComplete />

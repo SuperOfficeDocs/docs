@@ -35,7 +35,7 @@ Som standard vises statistikker for alle tilgængelige kanaler, men du kan vælg
 
 Du kan visualisere statistik fra chatsamtaler i et dashboard for at få et informativt overblik over dataene. Når du har [oprettet et dashboard][2], kan du [tilføje og redigere felter][3].
 
-### Eksempler – felter, du kan føje til dit dashboard til chatsamtaler
+### Eksempler - felter, du kan føje til dit dashboard til chatsamtaler
 
 * Brug ruden **Repræsentant med den bedste gennemsnitlige bedømmelse i denne måned** til at se, hvilken repræsentant der i gennemsnit klarede sig bedst den pågældende måned. Ruden kan bruges til motivation eller til intern konkurrence.
 
@@ -55,11 +55,9 @@ Dobbeltklik på en række på listen Indgående chat for at [svare på chatten][
 
 Dobbeltklik på en række på listen **Igangværende chatsessioner** for at lytte til (se) en igangværende chat. Repræsentanten får ikke besked om, at du overvåger chatten. Du kan ikke deltage i chatten.
 
-<!-- Referenced links -->
-[1]: respond.md
-[2]: ../../dashboard/learn/create.md
-[3]: ../../dashboard/learn/add-tile.md
+[1]: ./respond
+[2]: ../../dashboard/learn/create
+[3]: ../../dashboard/learn/add-tile
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-dashboard-statistics.png
 [img2]: ../../../media/loc/en/chat/chat-dashboard.png

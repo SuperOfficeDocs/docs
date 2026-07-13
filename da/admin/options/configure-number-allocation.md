@@ -63,8 +63,8 @@ I den øverste del af fanen **Nummertildeling** er der en tabel, der viser de de
 | Skrivebeskyttet | Angiver, om brugerne selv kan skrive værdier i tællerfelterne. |
 | Tillad tomt | Angiver, om et tomt tællerfelt er en tilladt værdi. Det er nyttigt, når tællerværdierne skal være unikke. Hvis **Tillad tomt**er markeret, betyder det, at kravet om unikke værdier ikke gælder for tomme felter. |
 | Sidst brugt | Viser, hvornår tællerfeltet sidst blev brugt. |
-| Af – Bruger-ID | Viser, hvem der sidst brugte tællerfeltet. |
-| Af – Portræt | Viser et miniaturebillede af den bruger, der sidst brugte tællerfeltet. |
+| Af - Bruger-ID | Viser, hvem der sidst brugte tællerfeltet. |
+| Af - Portræt | Viser et miniaturebillede af den bruger, der sidst brugte tællerfeltet. |
 
 ## Resultater af nummertildeling
 
@@ -88,5 +88,4 @@ Tabellen nedenfor viser konsekvenserne af forskellige kombinationer af værdiern
 
 * [Angivelse af standardværdier for nye dokumentskabeloner][3]
 
-<!-- Referenced links -->
-[3]: ../../document/templates/admin/document-template-defaults.md
+[3]: ../../document/templates/admin/document-template-defaults

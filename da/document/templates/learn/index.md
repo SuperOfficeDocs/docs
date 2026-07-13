@@ -61,13 +61,10 @@ For at sikre, at du kan kommunikere med dine kunder på deres eget sprog (hvor d
 * [Skabelonvariabler (Service)][8]
 * [Tilbudsskabeloner][7]
 
-<!-- Referenced links -->
-[1]: template-variables.md
-[4]: create.md
-[2]: ../admin/update-template.md
-[6]: ../admin/link-template.md
-[5]: ../../../admin/lists/user-group-filtering.md
-[7]: quote-templates.md
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables.md
-
-<!-- Referenced images -->
+[1]: ./template-variables
+[4]: ./create
+[2]: ../admin/update-template
+[6]: ../admin/link-template
+[5]: ../../../admin/lists/user-group-filtering
+[7]: ./quote-templates
+[8]: ../../../knowledge-base/learn/reply-templates/template-variables

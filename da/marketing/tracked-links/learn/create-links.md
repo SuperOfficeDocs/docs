@@ -38,6 +38,5 @@ Du kan også oprette nye links, mens du redigerer indholdet.
 
 En lille prik på fanen linkhandlinger viser, hvilke linkhandlinger der er aktive. Flere linkhandlinger kan være aktive for det samme link.
 
-<!-- Referenced links -->
-[1]: define-link-actions.md
-[2]: ../../learn/create-folder.md
+[1]: ./define-link-actions
+[2]: ../../learn/create-folder

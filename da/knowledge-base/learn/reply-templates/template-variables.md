@@ -109,7 +109,7 @@ Når du redigerer svarskabeloner og udsendelser, kan du indsætte skabelonvariab
 | customer.ourContact | Id'et (ejuser) for agenten, som er markeret som den primære supportkontakt for denne kunde |
 | customer.password | Adgangskode i SuperOffice Kundecenter |
 | customer.phone | Telefonnummer |
-| customer.salutation | Hilsen – fulde navn hvis tilgængelig, eller e-mailadresse, hvis navnet ikke er kendt |
+| customer.salutation | Hilsen - fulde navn hvis tilgængelig, eller e-mailadresse, hvis navnet ikke er kendt |
 | customer.title | Titel |
 | customer.username | Brugernavn i SuperOffice Kundecenter |
 | makeSalutation(customer.id) | Tiltale |

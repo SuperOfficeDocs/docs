@@ -49,7 +49,5 @@ Hvis kunden ikke findes i SuperOffice CRM-database, kan du oprette en ny person 
 
 ![Du kan tilføje en ny person til SuperOffice CRM via sidepanelet -screenshot][img2]
 
-<!-- Referenced links -->
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-link-to-contact.png
 [img2]: ../../../media/loc/en/chat/chat-add-new-to-contact.png

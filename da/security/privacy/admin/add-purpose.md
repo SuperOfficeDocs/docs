@@ -57,7 +57,6 @@ Find ud af, hvordan du tilføjer og redigerer formål med behandling af personop
 * [Personbeskyttelse - Retsgrundlag][2]
 * [Personbeskyttelse - Kilde][3]
 
-<!-- Referenced links -->
-[1]: ../../../localization/learn/translate-fields.md
-[2]: ../learn/index.md#legal-basis
-[3]: ../learn/index.md#source
+[1]: ../../../localization/learn/translate-fields
+[2]: ../learn/index#legal-basis
+[3]: ../learn/index#source

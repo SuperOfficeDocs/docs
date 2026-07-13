@@ -54,15 +54,15 @@ For alle trin-typer:
 3. Er personen markeret som fratrådt?
 4. Er personen tilføjet til udelukkelseslisten?
 
-​Yderligere for e-mail trin:​
+Yderligere for e-mail trin:
 
-1. Er deres samtykke gyldigt?​
+1. Er deres samtykke gyldigt?
 2. Er personen abonneret på flow-abonnementstypen?
-3. Har personen en registreret e-mailadresse?​
-4. Er e-mailadressen allerede aktiv i flowet?​
-5. Er e-mailadressen ikke blokeret?​
+3. Har personen en registreret e-mailadresse?
+4. Er e-mailadressen allerede aktiv i flowet?
+5. Er e-mailadressen ikke blokeret?
 
-Yderligere for SMS trin:​
+Yderligere for SMS trin:
 
 1. Har personen et registreret mobilnummer til SMS?
 
@@ -82,8 +82,5 @@ I en opdeling følger deltagerne den første (venstre) gren, hvor de opfylder de
 * Tilføj til flow: Angiver, at denne person foreslås til tilmelding i et andet flow.
 * Fjern fra flow: Fjerner alle registreringer af personens deltagelse i det nuværende flow.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/flow-participants.png
 [img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png

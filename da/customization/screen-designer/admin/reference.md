@@ -324,24 +324,23 @@ For detaljer om værdien af hvert felt, se [databasereferencen][23].
 * [Læs mere om aftaler][16]
 * [Læs mere om dokument][21]
 
-<!-- Referenced links -->
-[1]: working-with-fields.md
-[2]: ../../../../en/database/tables/contact.md
-[3]: ../../../../en/database/tables/person.md
-[4]: ../../../../en/database/tables/sale.md
-[5]: ../../../../en/database/tables/project.md
-[6]: ../../../../en/database/tables/ticket.md
-[7]: ../../../../en/database/tables/appointment.md
-[11]: ../../../../en/sale/dev/index.md
-[10]: ../../../../en/project/dev/index.md
-[13]: ../../../request/admin/type/index.md
-[14]: ../../../../en/request/dev/index.md
-[15]: ../../../diary/learn/invitation/add-attendee.md#availability
-[16]: ../../../diary/learn/follow-ups.md
-[17]: ../../../../en/company/dev/index.md#interests
-[18]: ../../../../en/company/dev/index.md#categorylist
-[20]: ../../../../en/api/localization/address/index.md
-[21]: ../../../document/learn/index.md
-[22]: ../../../document/templates/learn/index.md
-[23]: ../../../../en/database/tables/document.md
-[24]: ../../../marketing/utm/learn/index.md
+[1]: ./working-with-fields
+[2]: ../../../../en/database/tables/contact
+[3]: ../../../../en/database/tables/person
+[4]: ../../../../en/database/tables/sale
+[5]: ../../../../en/database/tables/project
+[6]: ../../../../en/database/tables/ticket
+[7]: ../../../../en/database/tables/appointment
+[11]: ../../../../en/sale/dev/index
+[10]: ../../../../en/project/dev/index
+[13]: ../../../request/admin/type/index
+[14]: ../../../../en/request/dev/index
+[15]: ../../../diary/learn/invitation/add-attendee#availability
+[16]: ../../../diary/learn/follow-ups
+[17]: ../../../../en/company/dev/index#interests
+[18]: ../../../../en/company/dev/index#categorylist
+[20]: ../../../../en/api/localization/address/index
+[21]: ../../../document/learn/index
+[22]: ../../../document/templates/learn/index
+[23]: ../../../../en/database/tables/document
+[24]: ../../../marketing/utm/learn/index

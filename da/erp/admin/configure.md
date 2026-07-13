@@ -60,7 +60,7 @@ Felttilknytninger definerer, hvordan ERP-felter svarer til SuperOffice-felter, o
 
 1. Klik på **Udfør**, når du er færdig.
 
-Du kan nu fortsætte med listetilknytning, standardværdier eller felt-rangering – *eller* aktivere linket, hvis der ikke er behov for yderligere konfiguration.
+Du kan nu fortsætte med listetilknytning, standardværdier eller felt-rangering - *eller* aktivere linket, hvis der ikke er behov for yderligere konfiguration.
 
 ## <a id="list-mapping"></a>Listetilknytning
 
@@ -82,7 +82,7 @@ Hvis du har tilknyttet lister, såsom kategori eller status, skal du også knytt
 
 ## <a id="defaults"></a>Standardværdier for synkronisering
 
-Standardværdier hjælper med at reducere manuel dataindtastning for felter, som typisk har en fast eller forudsigelig værdi. Dette er især nyttigt ved masseimport eller hvis brugerne ikke skal angive den samme værdi gentagne gange – eller markere et felt, der altid skal være valgt.
+Standardværdier hjælper med at reducere manuel dataindtastning for felter, som typisk har en fast eller forudsigelig værdi. Dette er især nyttigt ved masseimport eller hvis brugerne ikke skal angive den samme værdi gentagne gange - eller markere et felt, der altid skal være valgt.
 
 1. Markér ERP-linket, og klik på **Standardværdier** nederst i venstre hjørne.
 
@@ -100,7 +100,7 @@ Standardværdier hjælper med at reducere manuel dataindtastning for felter, som
 
     * **Angiv standardværdi:** Anvend automatisk en specifik værdi under synkronisering. Denne mulighed kræver, at du indtaster en værdi.
     * **Bed brugeren om værdi:** Brugeren kan manuelt indtaste en værdi.
-    * **Obligatorisk – Brugeren skal udfylde værdi:** En værdi skal angives. Hvis dette er valgt, skal du også vælge en af de to muligheder ovenfor.
+    * **Obligatorisk - Brugeren skal udfylde værdi:** En værdi skal angives. Hvis dette er valgt, skal du også vælge en af de to muligheder ovenfor.
 
     ![Tilføj synkroniseringsstandardværdi -screenshot][img4]
 
@@ -116,7 +116,7 @@ Angiv rækkefølgen for de felter, der vises på fanen **ERP** i skærmbilledern
 
 1. I dialogboksen, vælg fanen for den aktør, du vil konfigurere.
 
-    Alle tilgængelige felter vises – både de, der er markeret til visning på ERP-fanen, og de, der ikke er.
+    Alle tilgængelige felter vises - både de, der er markeret til visning på ERP-fanen, og de, der ikke er.
 
     ![Rangér felter vist på ERP-fanen -screenshot][img5]
 
@@ -157,9 +157,6 @@ Hvis retningspile forbliver nedtonede, selv efter at du har valgt et SuperOffice
 
 Hold musen over pilen for at se en forklarende besked.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/erp/erp-connection-settings.png
 [img2]: ../../../media/loc/en/erp/configure-field-mapping.png
 [img3]: ../../../media/loc/en/erp/list-of-default-values.png

@@ -29,5 +29,4 @@ Her kan du redigere egenskaberne for et skærmbillede. Du kan blandt andet opret
 * **Indlæs script (køres efter alt andet)**: Dette script køres helt til sidst, efter at script og kode for eventuelle knapper er kørt.
 * **Skjult variabel**: Variablerne, der er defineret her, gemmes, når skærmbilledet tilføjes, således at det næste skærmbillede har adgang til disse variabler.
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/create.md
+[1]: ../../../request/learn/create

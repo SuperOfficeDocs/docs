@@ -54,6 +54,5 @@ Når du sender en invitation, kan modtageren af invitationen enten acceptere ell
 * [Tilføjelse af deltagere i opfølgninger][2]
 * [Oprettelse af gruppeoversigter][1]
 
-<!-- Referenced links -->
-[1]: ../group-view.md
-[2]: add-attendee.md
+[1]: ../group-view
+[2]: ./add-attendee

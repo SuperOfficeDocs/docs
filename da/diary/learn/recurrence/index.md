@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Gentagelse af opfølgninger <i class="ph ph-arrows-clockwise" aria-hidden="true"></i>
+# Gentagelse af opfølgninger \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
 
 Det kan ske, at du vil oprette en række aftaler, der skal forekomme med jævne mellemrum, for eksempel et ugentligt statusmøde. I stedet for at optage disse møder et ad gangen, kan du bruge den gentagne opfølgningsfunktion.
 
@@ -65,9 +65,6 @@ Hvis du vælger **Årligt**, kan du angive, hvilken dag og måned opfølgningen 
 * [Rediger en gentagen opfølgning][1]
 * [Stop en gentagen opfølgning][3]
 
-<!-- Referenced links -->
-[1]: ../edit-follow-up.md#repeat
-[3]: stop.md
-[4]: create.md
-
-<!-- Referenced images -->
+[1]: ../edit-follow-up#repeat
+[3]: ./stop
+[4]: ./create

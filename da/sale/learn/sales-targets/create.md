@@ -32,7 +32,7 @@ Det er valgfrit at tilføje virksomhedens mål og have brugerspecifikke mål (g�
 
 ## Krav
 
-Hvis du kun har en **Sales Premium**-licens eller **Growth**-planen, kan du tilføje én gruppe for måltypen **Alle salg – Beløb**. For at tilføje mere end én brugergruppe skal du også have licensen Ubegrænsede salgsmål.
+Hvis du kun har en **Sales Premium**-licens eller **Growth**-planen, kan du tilføje én gruppe for måltypen **Alle salg - Beløb**. For at tilføje mere end én brugergruppe skal du også have licensen Ubegrænsede salgsmål.
 
 ## Før du starter
 
@@ -127,7 +127,7 @@ Hvis du vil have vist revisionshistorik for et salgsmål (række), skal du klikk
 
 * Du kan også oprette mål for tidligere år for at oprette budgetstatistikker tilbage i tiden.
 
-* Standardmåltypen er **Alle salg – Beløb**. Hvis du har licensen Sales Targets Unlimited, kan du oprette yderligere måltyper.
+* Standardmåltypen er **Alle salg - Beløb**. Hvis du har licensen Sales Targets Unlimited, kan du oprette yderligere måltyper.
 
 * Brug feltet **Fritekstsøgning** til at finde salgsmål for bestemte grupper og brugere i et bestemt år.
 
@@ -139,10 +139,8 @@ Hvis du vil have vist revisionshistorik for et salgsmål (række), skal du klikk
 
 * [Brug af salgsmål i ruder][2]
 
-<!-- Referenced links -->
-[2]: ../../../dashboard/learn/show-sales-targets.md
+[2]: ../../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png
 [img3]: ../../../../media/loc/en/sale/target-adjust-number.png

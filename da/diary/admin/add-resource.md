@@ -2,7 +2,7 @@
 uid: help-da-add-items-to-resource-list
 title: Tilføj ressource
 description: Tilføjelse af forekomster på listen Ressource
-keywords: ressource, listen Generelt – Ressource
+keywords: ressource, listen Generelt - Ressource
 author: digitaldiina
 date: 10.27.2025
 version: 10.5
@@ -19,7 +19,7 @@ language: da
 
 # Tilføj ressource
 
-Ressourcer som mødelokaler og projektorer er defineret på skærmbilledet **Lister** i Indstillinger og vedligeholdelse. Typerne vises som forekomster på listen **Generelt – Ressource**.
+Ressourcer som mødelokaler og projektorer er defineret på skærmbilledet **Lister** i Indstillinger og vedligeholdelse. Typerne vises som forekomster på listen **Generelt - Ressource**.
 
 Ressourcer vises i dialogboksen for opfølgning i SuperOffice CRM, og det er her, brugere kan tilføje ressourcer fra fanen **Deltagere**.
 
@@ -27,7 +27,7 @@ Ressourcer vises i dialogboksen for opfølgning i SuperOffice CRM, og det er her
 
 1. Vælg <i class="ph ph-list-bullets" aria-hidden="true"></i> **Lister** i Navigator.
 
-1. Vælg **Generelt – Ressource** fra rullemenuen. Fanen **Forekomster** viser alle eksisterende ressourcer.
+1. Vælg **Generelt - Ressource** fra rullemenuen. Fanen **Forekomster** viser alle eksisterende ressourcer.
 
 1. Klik på **Tilføj** for at åbne dialogboksen **Rediger listeforekomst**.
 

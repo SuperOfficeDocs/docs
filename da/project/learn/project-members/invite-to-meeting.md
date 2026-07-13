@@ -20,5 +20,4 @@ language: da
 3. Højreklik, og vælg **Aftal et møde**.
 4. [Indtast de ønskede oplysninger i felterne][1].
 
-<!-- Referenced links -->
-[1]: ../../../diary/learn/create-follow-up.md#fields
+[1]: ../../../diary/learn/create-follow-up#fields

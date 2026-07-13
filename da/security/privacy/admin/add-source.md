@@ -49,8 +49,5 @@ Listen **Personbeskyttelse - Kilde** indeholder muligheder, som brugerne vælger
 
 * [Sådan tilføjes forekomster på listen Personbeskyttelse - Retsgrundlag][2]
 
-<!-- Referenced links -->
-[1]: ../../../document/templates/admin/link-template.md
-[2]: add-legal-base.md
-
-<!-- Referenced images -->
+[1]: ../../../document/templates/admin/link-template
+[2]: ./add-legal-base

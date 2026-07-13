@@ -17,7 +17,7 @@ redirect_from: /da/globalization-and-localization/learn/translate-fields
 language: da
 ---
 
-# Oversættelse <i class="ph ph-translate" aria-hidden="true"></i>
+# Oversættelse \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
 
 Standardfelterne og andre brugergrænsefladetekster er tilgængelige på alle SuperOffice-sprog. Hvis du opretter dine egne felter eller tekster (for eksempel navne på dashboards og ruder), kan du tilføje oversættelser for de relevante sprog i din organisation.
 
@@ -36,5 +36,4 @@ Ikonet **Oversæt** (<i class="ph ph-translate" aria-hidden="true"></i>) ved sid
 
 [Skift sprogindstillingerne][1] under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger**, og kontroller, at oversættelsen vises for de relevante sprog.
 
-<!-- Referenced links -->
-[1]: ../../learn/getting-started/change-language.md
+[1]: ../../learn/getting-started/change-language

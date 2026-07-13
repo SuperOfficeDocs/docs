@@ -25,7 +25,7 @@ Hvis modtageren har problemer med at vise hele meddelelsen i e-mailprogrammet (d
 
 2. Indtast og vælg den tekst, som modtageren skal klikke på, f.eks. "Klik her for at se denne meddelelse i en browser".
 
-3. Klik på knappen **Indsæt/rediger link** (<i class="ph ph-link" aria-hidden="true"></i>) på værktøjslinjen.
+3. Klik på knappen **Indsæt/rediger link** (<i class="ph ph-link" aria-hidden="true"></i>) på værktøjslinjen.
 
 4. Klik på **Særlige link**, og vælg **Link til onlinevisning af meddelelse**.
 

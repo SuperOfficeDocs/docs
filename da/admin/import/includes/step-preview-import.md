@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 1. Klik på **Next**. Vinduet **Forhåndsvisning** vises.
 
 1. I **Forhåndsvisning** kan du gennemse importdataene, før importen starter.
@@ -11,7 +10,6 @@
     | ![Ikon - person ændret][img4] | Personen findes allerede og vil blive opdateret. |
     | tom | Ingen opdatering. |
 
-<!-- Referenced images -->
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
 [img2]: ../../../../media/icons/admin/import-preview-icon-company-changed.png
 [img3]: ../../../../media/icons/admin/import-preview-icon-person-new.png

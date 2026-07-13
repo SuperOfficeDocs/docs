@@ -33,5 +33,4 @@ En prik på fanen **Bemærkning** angiver, at der er tilføjet en bemærkning.
 
 For at slette en bemærkning skal du blot fjerne al teksten i feltet. Prikken forsvinder fra fanen **Bemærkning**.
 
-<!-- Referenced links -->
-[1]: ../../search-options/learn/freetext-search.md
+[1]: ../../search-options/learn/freetext-search

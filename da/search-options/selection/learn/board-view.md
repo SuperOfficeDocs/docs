@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Brug tavlevisning i udvalg <i class="ph ph-kanban" aria-hidden="true"></i>
+# Brug tavlevisning i udvalg \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
 
 Tavlevisning viser dit [udvalg][2] i et kolonnebaseret layout med kort. Du kan gruppere og filtrere udvalgsmedlemmerne (de poster, der vises på tavlen), og bruge træk-og-slip til at flytte kort mellem grupper.
 
@@ -47,7 +47,7 @@ Funktionaliteten er den samme på tværs af understøttede poster: Du kan trækk
 
     ![Sidepanel, der viser projektdetaljer -screenshot][img12]
 
-* For at redigere et kort, peg på det og vælg knappen **Rediger** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dette åbner den samme redigeringsdialog som andre steder i SuperOffice CRM – uden at forlade tavlevisningen.
+* For at redigere et kort, peg på det og vælg knappen **Rediger** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dette åbner den samme redigeringsdialog som andre steder i SuperOffice CRM - uden at forlade tavlevisningen.
 
   ![Markør peger på redigeringsknappen på et salgskort -screenshot][img4]
 
@@ -61,8 +61,7 @@ Funktionaliteten er den samme på tværs af understøttede poster: Du kan trækk
 
   ![Åben opgavemenu på salg i tavlevisning med tilgængelige handlinger -screenshot][img5]
 
-<!-- markdownlint-disable-next-line MD013 -->
-## Tilpas tavlelayout <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
+## Tilpas tavlelayout \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
 
 ### Gruppér og undergrupper
 
@@ -142,7 +141,7 @@ Totalværdien vises **ved siden af hvert kolonnenavn**, hvilket hjælper dig med
 
 ### Salgsdato-badge (kun salg)
 
-Du kan styre, hvad det **grå badge** på hvert salgskort viser i tavlevisningen. Dette hjælper dig med at forstå alder med et øjekast – enten hvor længe et salg har været åbent, eller hvor længe det har været i sin nuværende fase.
+Du kan styre, hvad det **grå badge** på hvert salgskort viser i tavlevisningen. Dette hjælper dig med at forstå alder med et øjekast - enten hvor længe et salg har været åbent, eller hvor længe det har været i sin nuværende fase.
 
 1. Vælg <i class="ph ph-gear-six" aria-hidden="true"></i> for at åbne panelet **Indstillinger**.
 
@@ -240,20 +239,18 @@ Brug gruppering kreativt for effektiv databehandling.
 * [Konfigurér projektstatus][18]
 * [Konfigurér projekttyper][19]
 
-<!-- Refererede links -->
-[1]: create.md
-[2]: index.md
-[11]: ../../../learn/getting-started/main-screen/side-panel.md
-[12]: ../../../sale/learn/create.md
-[13]: ../../../sale/admin/sale-stage.md
-[14]: ../../../request/learn/create.md
-[15]: ../../../request/admin/status/create.md
-[16]: ../../../request/admin/category/create.md
-[17]: ../../../project/learn/create.md
-[18]: ../../../project/admin/project-status.md
-[19]: ../../../project/admin/project-type.md
+[1]: ./create
+[2]: ./index
+[11]: ../../../learn/getting-started/main-screen/side-panel
+[12]: ../../../sale/learn/create
+[13]: ../../../sale/admin/sale-stage
+[14]: ../../../request/learn/create
+[15]: ../../../request/admin/status/create
+[16]: ../../../request/admin/category/create
+[17]: ../../../project/learn/create
+[18]: ../../../project/admin/project-status
+[19]: ../../../project/admin/project-type
 
-<!-- Refererede billeder -->
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

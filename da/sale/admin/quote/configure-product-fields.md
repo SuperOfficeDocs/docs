@@ -69,9 +69,7 @@ Disse indstillinger gælder globalt for alle ERP-links via quote connector og p�
 * [Føj produkt til en prisliste][1]
 * [Tilføj/rediger et produkt i tilbuddet][2]
 
-<!-- Referenced links -->
-[1]: price-list-and-products.md
-[2]: ../../learn/quote/create.md#add-products
+[1]: ./price-list-and-products
+[2]: ../../learn/quote/create#add-products
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

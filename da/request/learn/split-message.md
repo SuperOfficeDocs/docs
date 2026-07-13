@@ -56,7 +56,6 @@ Hvis en meddelelse indeholder to problemer, som skal håndteres særskilt, kan d
 * [Opdel en sag][2]
 * [Flet sager][3]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: split-request.md
-[3]: merge.md
+[1]: ./index#open
+[2]: ./split-request
+[3]: ./merge

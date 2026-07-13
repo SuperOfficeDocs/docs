@@ -88,15 +88,13 @@ Hvis kunden findes i SuperOffice, kan du vise kontaktinformation, sager, salg, o
 * [Bruge chatfunktionen som en kunde][6]
 * [Tilknytning af chatsamtale til person i SuperOffice][7]
 
-<!-- Referenced links -->
-[1]: ../../faq/learn/index.md
-[3]: ../../knowledge-base/learn/reply-templates/index.md
-[4]: respond.md
-[5]: statistics.md
-[6]: as-customer.md
-[7]: link-to-person.md
-[11]: create-request.md
-[12]: transfer-to-agent.md
+[1]: ../../faq/learn/index
+[3]: ../../knowledge-base/learn/reply-templates/index
+[4]: ./respond
+[5]: ./statistics
+[6]: ./as-customer
+[7]: ./link-to-person
+[11]: ./create-request
+[12]: ./transfer-to-agent
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/10-chat-mainpage.png

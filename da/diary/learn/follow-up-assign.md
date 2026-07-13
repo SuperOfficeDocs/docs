@@ -48,7 +48,6 @@ Hvis den anden person afviser invitationen, modtager du en Invitation afslået-m
 
 1. Valgfrit, gentag trinnene for at tildele opfølgningen til en anden.
 
-<!-- Referenced links -->
-[1]: create-follow-up.md
-[2]: create-follow-up.md#associate
-[3]: invitation/accept-decline.md
+[1]: ./create-follow-up
+[2]: ./create-follow-up#associate
+[3]: ./invitation/accept-decline

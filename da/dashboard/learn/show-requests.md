@@ -67,13 +67,11 @@ Her vises de sager, som ingen er tildelt ansvaret for. Hvis du vil [overtage ans
 * [Sagshåndtering][6]
 * [Find anmodninger][5]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../request/learn/accept.md
-[4]: ../../request/learn/create.md
-[5]: ../../request/learn/find.md
-[6]: ../../request/learn/index.md#request-mgt
-[7]: working-with-tiles.md
+[1]: ./create
+[2]: ../../request/learn/accept
+[4]: ../../request/learn/create
+[5]: ../../request/learn/find
+[6]: ../../request/learn/index#request-mgt
+[7]: ./working-with-tiles
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/request/service-dashboard.png

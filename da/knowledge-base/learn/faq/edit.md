@@ -43,5 +43,4 @@ redirect_from:
 1. På skærmbilledet **Egenskaber for FAQ-post** skal du klikke på knappen **Slet** nederst på skærmen.
 1. Klik på **OK** for at bekræfte. FAQ-posten fjernes fra SuperOffice.
 
-<!-- Referenced links -->
-[1]: create.md
+[1]: ./create

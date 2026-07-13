@@ -51,8 +51,6 @@ Når du har afsendt en testudsendelse, skal du nulstille links-tællerne i medde
 1. Gå til fanebladet **Sporede links**
 2. Klik på menuknappen ud for det relevante link og vælg **Nulstil**. Kolonnen **Klik** indstilles på **0**. Oplysninger om hvilke kunder, der har klikket på linket, bliver også slettet.
 
-<!-- Referenced links -->
-[1]: ../../../learn/best-practices.md#mobile
+[1]: ../../../learn/best-practices#mobile
 
-<!-- Referenced images -->
 [img2]: ../../../../../media/loc/en/marketing/test-mailing.png

@@ -18,7 +18,7 @@ index: true
 
 # Url-kodning
 
-Browsere anmoder om sider fra webservere ved hjælp af en URL – **adressen på en webside**.
+Browsere anmoder om sider fra webservere ved hjælp af en URL - **adressen på en webside**.
 
 Disse URL'er kan kun sendes over internettet som ASCII-tegn. De vil dog ofte indeholde ikke-ASCII-tegn, for eksempel *mellemrum*.
 
@@ -33,4 +33,4 @@ Konverteringen erstatter usikre tegn med et procenttegn (%) efterfulgt af 2 hexa
 
 ## Unicode
 
-Konverteringen transformerer alle tegn til UTF-8 og præfikser derefter hver tegns 1–3 byte hexadecimale værdi med % i henhold til RFC 2279.
+Konverteringen transformerer alle tegn til UTF-8 og præfikser derefter hver tegns 1-3 byte hexadecimale værdi med % i henhold til RFC 2279.

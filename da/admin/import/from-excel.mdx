@@ -1,0 +1,131 @@
+---
+uid: help-da-import-from-excel
+title: Import fra Excel
+description: I denne guide lærer du, hvordan du kan importere alle dine kundeemner, kunder og deres personer.
+keywords: importer, Excel, firma, contact, regneark
+author: digitaldiina
+date: 02.22.2023
+version: 10.5
+content_type: howto
+category: Settings and maintenance
+topic: Import
+audience: settings
+audience_tooltip: Settings and maintenance
+index: true
+redirect_from: /da/admin/import/learn/import-from-excel
+tier: starter
+language: da
+---
+
+import CautionBackupBeforeImport from "./includes/caution-backup-before-import.mdx";
+import OpenImport from "./includes/open-import.md";
+import ConfigureImportSettings from "./includes/configure-import-settings.md";
+import StepConcentComment from "./includes/step-concent-comment.md";
+import StepPreviewImport from "./includes/step-preview-import.md";
+import TroubleshootImport from "./includes/troubleshoot-import.md";
+import ImportComplete from "./includes/import-complete.mdx";
+
+# Import fra Excel
+
+Du kan [importere dine kundedata][2] på én gang ved hjælp af Excel, Outlook, Gmail eller din ERP Synchronizer i SuperOffice CRM.
+
+Excel-regnearket kan f.eks. indeholde:
+
+* En liste over leads/prospekter, som du vil tilføje til SuperOffice.
+
+    <Tip>
+    Sørg for at tilføje en kolonne med for eksempel teksten "prospekt" for alle firmaerne, så de nemt kan kobles til den rigtige kategori i SuperOffice CRM.
+    </Tip>
+
+* En firma-/personliste med "rensede" data (eksporteres og kontrolleres for kvalitet og importeres igen).
+
+* Firmaer og personer fra andre programmer og formater, for eksempel økonomisystemer, andre CRM-klienter, e-mailklienter (andre end Gmail og Outlook) og Windows-installationer af SuperOffice CRM.
+
+## Før du starter
+
+<CautionBackupBeforeImport />
+
+Før du starter importen, skal du [forberede Excel-filen][1]. Tjekliste:
+
+* Excel-regnearket bør som minimum indeholde kolonner med firmanavn og personnavn (fornavn og efternavn).
+
+* Kontroller, at dataene er opdaterede. Er postadresser og telefonnumre f.eks. korrekte?
+
+## Eksport af firmaer/personer fra en Excel-fil
+
+<Frame caption="Se denne video, eller følg nedenstående trin for at lære, hvordan du importerer dine personer til SuperOffice CRM ved hjælp af vores importskabelon (videolængde - 4:02)">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube-nocookie.com/embed/dVkCfpOkNl8"
+    title="Se denne video, eller følg nedenstående trin for at lære, hvordan du importerer dine personer til SuperOffice CRM ved hjælp af vores importskabelon (videolængde - 4:02)"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+### Trin
+
+1. <OpenImport />
+
+2. Kontroller, at **Personer** er valgt under **Vælg en importkilde**, og klik derefter på Excel-ikonet ![icon][img1].
+
+3. Klik på **Upload fil** i dialogboksen **Upload fil** for at vælge det Excel-regneark, du vil importere.
+
+4. Find det ønskede Excel-regneark, og klik på **Åbn**. Dataene fra regnearket vises i tabellen.
+
+<Note>
+Firmaer/personer fra Excel bliver ikke importeret i SuperOffice-databasen endnu. SuperOffice indlæser blot firma-/personlisten fra regnearket, så du kan angive importindstillingerne.
+</Note>
+
+## Tilpas importen
+
+Da Excel-regnearket kan indeholde alt fra nogle få kolonner til et meget stort antal kolonner, er det vigtigt, at kolonnerne med data, du vil importere, knyttes til det rigtige SuperOffice-felt.
+
+<Note>
+Hvis Excel-regnearket havde en titellinje øverst, vises denne også på listen. Du kan fjerne den, når du forhåndsviser dataene i næste trin.
+</Note>
+
+1. Find kolonnen, der indeholder navnet på firmaerne, klik på kolonnetitlen **(Ingen valgt)**, og vælg **Firma: Navn**.
+
+1. Find de kolonner, der indeholder fornavn og efternavn på personer, klik på kolonnetitlen **(Ingen valgt)**, og vælg **Person: Fornavn** og **Person: Efternavn**. Hvis der kun er én kolonne med både fornavn og efternavn, vælger du **Person: Fulde navn**.
+
+1. Vælg SuperOffice-felterne for resten af kolonnerne i tabellen. Spring over de kolonner, du ikke vil importere.
+
+1. <ConfigureImportSettings />
+
+1. <StepConcentComment />
+
+<StepPreviewImport />
+
+1. Fjern markeringen af de rækker, du IKKE vil importere. Hvis Excel-regnearket indeholdt en overskriftsrække, kan du fjerne den her.
+
+1. Når du har kontrolleret, at dette rent faktisk er de data, du ønsker at importere, skal du klikke på **Importér**.
+
+### Fejlfinding
+
+<TroubleshootImport />
+
+**Jeg kan ikke komme videre!**
+
+Du skal knytte alle de påkrævede SuperOffice-felter til hver sin kolonne for at kunne fortsætte. De påkrævede felter vises over tabellen. Hvis du har angivet, at personer uden firmaer skal tilføjes som nyt firma, ser du kun SuperOffice-feltet **Firma: Navn** obligatorisk.
+
+## Fuldfør importen
+
+<ImportComplete />
+
+## Relateret indhold
+
+* [Konfiguration af importindstillinger][3]
+* [Import fra Gmail][5]
+* [Import fra ERP][6]
+
+[1]: ./create-spreadsheet
+[2]: ./index
+[3]: ./settings
+[5]: ./from-gmail
+[6]: ./from-erp
+
+[img1]: ../../../media/icons/admin/import-excel-small.png

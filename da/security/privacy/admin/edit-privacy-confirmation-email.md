@@ -44,8 +44,5 @@ E-mailskabelonen med bekræftelse om personbeskyttelse er en **e-mailskabelon**,
 * [Sådan tilføjer du en e-mailskabelon][1]
 * [Send en privacy-e-mail om dine personers ret til at blive informeret][2]
 
-<!-- Referenced links -->
-[1]: ../../../email/admin/add-email-template.md
-[2]: ../learn/send-privacy-confirmation-email.md
-
-<!-- Referenced images -->
+[1]: ../../../email/admin/add-email-template
+[2]: ../learn/send-privacy-confirmation-email

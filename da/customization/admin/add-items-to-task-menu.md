@@ -2,7 +2,7 @@
 uid: help-da-task-menu-add
 title: Tilføjelse af forekomster til listen for menuen Opgave
 description: Tilføjelse af forekomster til listen for menuen Opgave
-keywords: Opgavemenuen 
+keywords: Opgavemenuen
 author: digitaldiina
 date: 05.04.2026
 version: 11.13
@@ -52,12 +52,9 @@ Når du tilføjer en URL-adresse, kan det være nyttigt at bruge f.eks. skabelon
 * [Tilføjelse af en oversættelse][7]
 * [Specialiserede lister][3]
 
-<!-- Referenced links -->
-[1]: ../web-panels/admin/add-web-panel.md
-[4]: ../web-panels/admin/url-encoding.md
-[3]: ../../admin/lists/specialized-lists.md
-[5]: ../macros-and-scripts/admin/index.md
-[6]: ../../../en/customization/soprotocol/index.md
-[7]: ../../localization/learn/translate-fields.md
-
-<!-- Referenced images -->
+[1]: ../web-panels/admin/add-web-panel
+[4]: ../web-panels/admin/url-encoding
+[3]: ../../admin/lists/specialized-lists
+[5]: ../macros-and-scripts/admin/index
+[6]: ../../../en/customization/soprotocol/index
+[7]: ../../localization/learn/translate-fields

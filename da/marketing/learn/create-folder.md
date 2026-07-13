@@ -38,5 +38,3 @@ Gør ét af følgende:
 * Åbn en eksisterende mappe, før du klikker på **Tilføj mappe**. Du skal muligvis først vælge fanen **Alle ...**.
 
 * Klik først på **Tilføj mappe** og vælg derefter en overordnet mappe fra listen **Opret som undermappe af**.
-
-<!-- Referenced images -->
