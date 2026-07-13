@@ -1,5 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
-Nadat u uw doellijst hebt gemaakt, de mailing hebt voorbereid en getest, hebt u eindelijk het spannende deel bereikt – het is tijd om uw mailing te verzenden.
+Nadat u uw doellijst hebt gemaakt, de mailing hebt voorbereid en getest, hebt u eindelijk het spannende deel bereikt - het is tijd om uw mailing te verzenden.
 
 Bij de laatste stap, **Bevestigen** kunt u een overzicht van de mailing weergeven en controleren of alles juist is. Als er in dit scherm foutberichten worden weergegeven, moeten deze worden opgelost voordat de mailing kan worden verzonden. De verzendopties zijn uitgeschakeld als er stappen niet voltooid zijn of als er informatie ontbreekt aan uw mailing. Dit wordt in rood aangegeven.
 
@@ -31,8 +30,6 @@ U kunt klikken op de mailing in de lijst om de [verzendstatus en de statistieken
 
 Als u de mailing wilt stoppen of een geplande mailing eerder dan gepland wilt starten, klikt u respectievelijk op de knop **Stoppen** of **Starten**.
 
-<!-- Referenced links -->
-[1]: ../../view-statistics.md
+[1]: ../../view-statistics
 
-<!-- Referenced images -->
 [img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png

@@ -56,7 +56,6 @@ Ontdek hoe u doeleinden voor het verwerken van persoonsgegevens kunt toevoegen e
 * [Privacy - Rechtsgrondslag][2]
 * [Privacy - Bron][3]
 
-<!-- Referenced links -->
-[1]: ../../../localization/learn/translate-fields.md
-[2]: ../learn/index.md#legal-basis
-[3]: ../learn/index.md#source
+[1]: ../../../localization/learn/translate-fields
+[2]: ../learn/index#legal-basis
+[3]: ../learn/index#source

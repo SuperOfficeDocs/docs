@@ -19,7 +19,6 @@ translation_type: MT
 
 # Handleiding - eenvoudige Google Analytics e-mailtracking
 
-<!-- markdownlint-disable-next-line MD036 -->
 *Blogpost door Alex Pelan*
 
 E-mailmarketing is een belangrijk onderdeel geworden van de marketingstrategieën van bedrijven, maar er zijn talloze manieren om tegenwoordig digitale marketing uit te voeren. E-mailmarketing is slechts een deel van het grote geheel. Wanneer men bijvoorbeeld de resultaten van een campagne wil analyseren, is het nuttig om gegevens van alle marketingkanalen in één systeem te verzamelen om het totaalbeeld te krijgen.
@@ -87,11 +86,9 @@ Je zult nu het verkeer zien dat door je e-mailnieuwsbrief is gegenereerd. Zoals 
 
 Begin met het verkennen van de mogelijkheden!
 
-<!-- Referenced links -->
 [1]: http://analytics.google.com
 [2]: https://support.google.com/analytics/answer/1033867
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/marketing/new-account.png
 [img3]: ../../../../media/loc/en/marketing/setting-up-property.png
 [img4]: ../../../../media/loc/en/marketing/tracking-id.png

@@ -62,7 +62,6 @@ Als er meer dan twee externe prioriteiten beschikbaar zijn, kan de klant de prio
 * [Prioriteiten verwijderen][2]
 * [Escalatieniveaus maken][3]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: delete.md
-[3]: escalation-levels.md
+[1]: ./create
+[2]: ./delete
+[3]: ./escalation-levels

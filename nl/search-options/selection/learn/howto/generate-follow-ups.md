@@ -50,7 +50,4 @@ U kunt een vervolgactiviteit maken die bijvoorbeeld in de activiteitenlijst van 
 
 ![Selectietaak: Vervolgactiviteiten genereren -screenshot][img1]
 
-<!-- Referentielinks -->
-
-<!-- Referentieafbeeldingen -->
 [img1]: ../../../../../media/loc/en/search-options/generate-follow-ups-from-selection.png

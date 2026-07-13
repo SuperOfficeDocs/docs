@@ -32,9 +32,6 @@ Als u het probleem niet kunt oplossen via de chat, kunt u een verzoek maken dat 
 * [Antwoorden op een chat][3]
 * [Meer informatie over verzoeken][4]
 
-<!-- Referenced links -->
-[1]: link-to-person.md
-[3]: respond.md
-[4]: ../../request/learn/index.md
-
-<!-- Referenced images -->
+[1]: ./link-to-person
+[3]: ./respond
+[4]: ../../request/learn/index

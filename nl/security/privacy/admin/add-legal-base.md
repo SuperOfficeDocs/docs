@@ -41,7 +41,4 @@ De lijst **Privacy - Rechtsgrondslag** bevat opties die gebruikers selecteren om
 
 * [Items toevoegen aan de lijst Privacy - Bron][1]
 
-<!-- Referenced links -->
-[1]: add-source.md
-
-<!-- Referenced images -->
+[1]: ./add-source

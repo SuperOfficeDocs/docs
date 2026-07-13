@@ -54,8 +54,5 @@ Wanneer u een uitnodiging verzendt, kan de ontvanger deze accepteren of weigeren
 * [Deelnemers toevoegen aan vervolgactiviteiten][2]
 * [Groepsweergaven maken][1]
 
-<!-- Referenced links -->
-[1]: ../group-view.md
-[2]: add-attendee.md
-
-<!-- Referenced images -->
+[1]: ../group-view
+[2]: ./add-attendee

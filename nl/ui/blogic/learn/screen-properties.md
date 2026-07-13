@@ -29,5 +29,4 @@ Hier kunt u de eigenschappen van een scherm bewerken. U kunt een script maken om
 * **Script laden (als laatste uitvoeren)**: dit script wordt aan het eind uitgevoerd, nadat code en scripts van eventuele knoppen zijn uitgevoerd.
 * **Verborgen variabelen**: de variabelen die hier worden gedefinieerd, worden opgeslagen wanneer het scherm wordt verzonden, zodat het volgende scherm er toegang toe heeft.
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/create.md
+[1]: ../../../request/learn/create

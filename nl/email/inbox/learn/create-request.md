@@ -42,11 +42,9 @@ U kunt een nieuw verzoek maken in SuperOffice Service op basis van de afzender e
 * [Taak maken][2]
 * [Over verzoeken][3]
 
-<!-- Referenced links -->
-[1]: archive.md
-[2]: create-task.md
-[3]: ../../../request/learn/index.md
-[4]: ../../../request/learn/create.md#fields
+[1]: ./archive
+[2]: ./create-task
+[3]: ../../../request/learn/index
+[4]: ../../../request/learn/create#fields
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

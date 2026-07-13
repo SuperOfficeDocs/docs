@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Herhalende vervolgactiviteiten <i class="ph ph-arrows-clockwise" aria-hidden="true"></i>
+# Herhalende vervolgactiviteiten \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
 
 Het kan gebeuren dat u een reeks afspraken wilt maken die met regelmatige tussenpozen moeten plaatsvinden, bijvoorbeeld een wekelijkse statusvergadering. In plaats van deze vergadering één voor één vast te leggen kunt u hiervoor de functie voor herhalende vervolgactiviteiten gebruiken.
 
@@ -65,9 +65,6 @@ Wanneer u **Jaarlijks** selecteert, kunt u opgeven op welke dag in welke maand d
 * [Een herhalende vervolgactiviteit bewerken][1]
 * [Een herhalende vervolgactiviteit stoppen][3]
 
-<!-- Referenced links -->
-[1]: ../edit-follow-up.md#repeat
-[3]: stop.md
-[4]: create.md
-
-<!-- Referenced images -->
+[1]: ../edit-follow-up#repeat
+[3]: ./stop
+[4]: ./create

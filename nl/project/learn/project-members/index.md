@@ -28,9 +28,6 @@ Projectleden zijn de deelnemers aan een project. Voor elk lid heeft u toegang to
 * [Een projectlid bewerken of verwijderen][3]
 * [E-mail versturen naar projectleden][4]
 
-<!-- Referenced links -->
-[1]: add.md
-[3]: edit.md
-[4]: send-email-to.md
-
-<!-- Referenced images -->
+[1]: ./add
+[3]: ./edit
+[4]: ./send-email-to

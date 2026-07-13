@@ -32,5 +32,4 @@ Alleen gebruikers met de functionele rechten *general administrator* kunnen de e
 
 1. Klik op **Opslaan** om de wijzigingen op te slaan of op **Annuleren** om ze te negeren. U kunt ook het hele bericht verwijderen door op **Verwijderen** en vervolgens op **OK** te klikken.
 
-<!-- Referenced links -->
-[1]: index.md#open
+[1]: ./index#open

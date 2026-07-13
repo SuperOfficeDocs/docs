@@ -37,7 +37,6 @@ U kunt bijvoorbeeld een nieuwe status maken met de naam 'Wacht op antwoord', als
 * [Verzoekstatus verwijderen][2]
 * [Instellen van Volgende verzoek in wachtrij ophalen][3].
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: delete.md
-[3]: ../next-in-queue.md
+[1]: ./create
+[2]: ./delete
+[3]: ../next-in-queue

@@ -16,7 +16,7 @@ redirect_from: /nl/contact/learn/screen/index
 
 # Persoon
 
-Het **scherm Persoon** biedt een overzicht van alle communicatie en interactie met een persoon. Hier beheert u contactgegevens, volgt u activiteiten en hebt u toegang tot AVG-gerelateerde documentatie—alles vanuit één scherm.
+Het **scherm Persoon** biedt een overzicht van alle communicatie en interactie met een persoon. Hier beheert u contactgegevens, volgt u activiteiten en hebt u toegang tot AVG-gerelateerde documentatie-alles vanuit één scherm.
 
 ![Het scherm Persoon met kerninformatie over een contactpersoon, sectietabbladen en navigatieknoppen. -screenshot][img3]
 
@@ -35,7 +35,7 @@ Gebruik de functie **Zoeken** om specifieke personen te vinden of records te fil
 | [Meer][19] | Aangepaste velden voor het invoeren van extra contactspecifieke informatie. |
 | [Interesses][2] | Contactinteresses opgeven voor selecties of campagnes. Een punt verschijnt wanneer interesses zijn geselecteerd. |
 | [Opmerking][20] | Vrij tekstveld om notities over de contactpersoon toe te voegen. Notities worden gemarkeerd met een punt als ze zijn ingevuld. |
-| [www][21] | Snelkoppeling naar een URL voor toegang tot externe gegevens of webpagina’s over de contactpersoon. |
+| [www][21] | Snelkoppeling naar een URL voor toegang tot externe gegevens of webpagina's over de contactpersoon. |
 | [ERP][22] | Verbindt de contactpersoon met het ERP-systeem voor integratie of synchronisatie. |
 
 ## <a id="section-tabs"></a>Sectietabbladen op het scherm Persoon
@@ -59,25 +59,23 @@ Onder de persoonskaart bieden [sectietabbladen][16] snelle toegang tot informati
 * [Contactpersonen verwijderen][6]
 * [E-mail verzenden naar een contactpersoon][7]
 
-<!-- Referenced links -->
-[2]: create.md
-[3]: ../../security/privacy/learn/edit-legal-base.md
-[4]: move.md
-[5]: merge-contacts.md
-[6]: delete.md
-[7]: send-email.md
-[8]: ../../company/learn/index.md
+[2]: ./create
+[3]: ../../security/privacy/learn/edit-legal-base
+[4]: ./move
+[5]: ./merge-contacts
+[6]: ./delete
+[7]: ./send-email
+[8]: ../../company/learn/index
 
-[11]: ../../learn/section-tabs/activities-tab.md
-[12]: ../../learn/section-tabs/sales-tab.md
-[13]: ../../learn/section-tabs/requests-tab.md
-[14]: ../../learn/section-tabs/projects-tab.md
-[15]: ../../learn/section-tabs/relations-tab.md
-[16]: ../../learn/section-tabs/index.md
-[19]: ../../custom-objects/learn/more-tab.md
-[20]: ../../learn/basics/notes.md
-[21]: ../../customization/web-panels/admin/index.md#www
-[22]: ../../erp/learn/index.md
+[11]: ../../learn/section-tabs/activities-tab
+[12]: ../../learn/section-tabs/sales-tab
+[13]: ../../learn/section-tabs/requests-tab
+[14]: ../../learn/section-tabs/projects-tab
+[15]: ../../learn/section-tabs/relations-tab
+[16]: ../../learn/section-tabs/index
+[19]: ../../custom-objects/learn/more-tab
+[20]: ../../learn/basics/notes
+[21]: ../../customization/web-panels/admin/index#www
+[22]: ../../erp/learn/index
 
-<!-- Referenced images -->
 [img3]: ../../../media/loc/en/contact/contact-screen.png

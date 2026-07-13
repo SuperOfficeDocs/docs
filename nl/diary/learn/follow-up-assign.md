@@ -48,7 +48,6 @@ Als de andere persoon de uitnodiging weigert, ontvangt u een melding van uitnodi
 
 2. Optioneel, herhaal de stapen om de vervolgactiviteit aan iemand anders toe te wijzen.
 
-<!-- Referenced links -->
-[1]: create-follow-up.md
-[2]: create-follow-up.md#associate
-[3]: invitation/accept-decline.md
+[1]: ./create-follow-up
+[2]: ./create-follow-up#associate
+[3]: ./invitation/accept-decline

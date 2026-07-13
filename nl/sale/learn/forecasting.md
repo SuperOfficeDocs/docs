@@ -18,7 +18,7 @@ language: nl
 
 Om je verkoopdoelen te bereiken is het belangrijk om een gezonde pijplijn te hebben. SuperOffice CRM biedt twee hoofd­methoden om verkoop te prognosticeren en voortgang te volgen: **dashboardtegels** en **selecties (Zoeken)**.
 
-Met deze hulpmiddelen kun je hiaten identificeren, vastgelopen deals benadrukken en je werkelijke verkoop vergelijken met je doelen – of je nu individueel werkt of in een groep.
+Met deze hulpmiddelen kun je hiaten identificeren, vastgelopen deals benadrukken en je werkelijke verkoop vergelijken met je doelen - of je nu individueel werkt of in een groep.
 
 ## Bewaak je pijplijn met dashboards
 
@@ -64,7 +64,7 @@ Om te laten zien hoe je de Zoekfunctie kunt gebruiken voor verkoopprognoses, vol
 
 3. Wanneer je op **Toevoegen** klikt, verschijnt een vervolgkeuzemenu. Klik in het menu op **Verkoop** en selecteer vervolgens het veld **Bedrag**.
 
-4. Klik op het tweede veld dat nu het =-teken toont. Kies het teken **>**.
+4. Klik op het tweede veld dat nu het =-teken toont. Kies het teken **\>**.
 
 5. Voeg de waarde toe die moet worden gehaald. In dit geval groter dan € 5000. Klik in het derde veld en voeg 5000 toe.
 
@@ -81,13 +81,11 @@ Om te laten zien hoe je de Zoekfunctie kunt gebruiken voor verkoopprognoses, vol
 * [Een selectie weergeven als grafiek][6]
 * [Het Zoekscherm gebruiken][5]
 
-<!-- Referenced links -->
-[1]: create.md
-[5]: ../../search-options/learn/find-screen.md
-[6]: ../../search-options/selection/learn/howto/display-as-charts.md
-[7]: ../../dashboard/learn/show-sales-targets.md
+[1]: ./create
+[5]: ../../search-options/learn/find-screen
+[6]: ../../search-options/selection/learn/howto/display-as-charts
+[7]: ../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

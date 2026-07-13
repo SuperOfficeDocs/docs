@@ -18,7 +18,7 @@ index: true
 
 # Url-codering
 
-Browsers vragen pagina's op van webservers met behulp van een URL – **het adres van een webpagina**.
+Browsers vragen pagina's op van webservers met behulp van een URL - **het adres van een webpagina**.
 
 Deze URL's kunnen alleen als ASCII-tekens via het internet worden verzonden. Ze bevatten echter vaak niet-ASCII-tekens, bijvoorbeeld *spatie*.
 
@@ -33,4 +33,4 @@ De conversie vervangt onveilige tekens door een procentteken (%) gevolgd door 2 
 
 ## Unicode
 
-De conversie zet alle tekens om naar UTF-8 en voegt vervolgens % toe voor de hexadecimale waarde (1–3 bytes) van elk teken volgens RFC 2279.
+De conversie zet alle tekens om naar UTF-8 en voegt vervolgens % toe voor de hexadecimale waarde (1-3 bytes) van elk teken volgens RFC 2279.

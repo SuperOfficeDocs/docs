@@ -25,7 +25,7 @@ Wanneer u uw favoriete e-mailclient hebt [geïntegreerd met SuperOffice][13], ku
 De functie Postvak IN in SuperOffice CRM hangt af van de client van SuperOffice en de e-mailclient die u gebruikt. Klik op een koppeling hieronder om naar het relevante hoofdstuk te gaan in het Help-systeem:
 
 * [SuperOffice Postvak IN][1]
-* [Gmail Link][2] – SuperOffice Gmail Link
+* [Gmail Link][2] - SuperOffice Gmail Link
 * [SuperOffice Mail Link][6] - SuperOffice Mail Link (integratie met Outlook)
 
 ## Een e-mail verzenden
@@ -72,21 +72,19 @@ Klik op een e-mail in het [sectietabblad Activiteiten][14] om de details te beki
 
 ![E-mailvoorbeeld met gemarkeerde taakmenuopties -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: ../inbox/learn/index.md
-[2]: ../../../../integrations/gmail-link/index.md
-[3]: ../../../../integrations/gmail-link/email-archive-incoming.md
-[4]: ../../../../integrations/gmail-link/archive-emails-as-activities.md
-[5]: ../../../../integrations/gmail-link/archive-attachments.md
-[6]: ../../../../integrations/mail-link/index.md
-[7]: ../../../../integrations/mail-link/archive-as-activity.md
-[8]: ../../../../integrations/mail-link/archive-on-contact.md
-[9]: ../../../../integrations/mail-link/archive-attachment.md
-[11]: ../../contact/learn/send-email.md
-[12]: ../../document/learn/send-as-email.md
-[13]: ../../learn/getting-started/connect-your-accounts.md
-[14]: ../../learn/section-tabs/activities-tab.md
-[15]: ../../learn/getting-started/main-screen/side-panel.md
+[1]: ../inbox/learn/index
+[2]: ../../../../integrations/gmail-link/index
+[3]: ../../../../integrations/gmail-link/email-archive-incoming
+[4]: ../../../../integrations/gmail-link/archive-emails-as-activities
+[5]: ../../../../integrations/gmail-link/archive-attachments
+[6]: ../../../../integrations/mail-link/index
+[7]: ../../../../integrations/mail-link/archive-as-activity
+[8]: ../../../../integrations/mail-link/archive-on-contact
+[9]: ../../../../integrations/mail-link/archive-attachment
+[11]: ../../contact/learn/send-email
+[12]: ../../document/learn/send-as-email
+[13]: ../../learn/getting-started/connect-your-accounts
+[14]: ../../learn/section-tabs/activities-tab
+[15]: ../../learn/getting-started/main-screen/side-panel
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/learn/side-panel-preview-email-tasks.png

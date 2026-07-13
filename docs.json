@@ -5916,6 +5916,1802 @@
     {
       "source": "/sv/customization/admin/index",
       "destination": "/sv/customization/admin/package-properties"
+    },
+    {
+      "source": "/nl/admin/import/learn/create-import-file",
+      "destination": "/nl/admin/import/create-spreadsheet"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-import-from-erp",
+      "destination": "/nl/admin/import/from-erp"
+    },
+    {
+      "source": "/nl/admin/import/learn/import-from-excel",
+      "destination": "/nl/admin/import/from-excel"
+    },
+    {
+      "source": "/nl/admin/import/learn/import-from-gmail",
+      "destination": "/nl/admin/import/from-gmail"
+    },
+    {
+      "source": "/nl/admin/import/learn/import-from-mac-address-book",
+      "destination": "/nl/admin/import/from-mac-address-book"
+    },
+    {
+      "source": "/nl/admin/import/learn/index",
+      "destination": "/nl/admin/import/index"
+    },
+    {
+      "source": "/nl/admin/import/learn/import-from-outlook",
+      "destination": "/nl/admin/import/index"
+    },
+    {
+      "source": "/nl/admin/import/import-from-outlook",
+      "destination": "/nl/admin/import/index"
+    },
+    {
+      "source": "/nl/admin/import/learn/import-products-from-excel",
+      "destination": "/nl/admin/import/products-from-excel"
+    },
+    {
+      "source": "/nl/admin/import/learn/configure-import-settings",
+      "destination": "/nl/admin/import/settings"
+    },
+    {
+      "source": "/nl/admin/learn/screen/soap-config",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/configure-soap.html"
+    },
+    {
+      "source": "/nl/admin/learn/add-system-event",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/add-system-event.html"
+    },
+    {
+      "source": "/nl/admin/learn/configure-soap",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/configure-soap.html"
+    },
+    {
+      "source": "/nl/admin/learn/system-events",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/add-system-event.html"
+    },
+    {
+      "source": "/nl/admin/license/learn/activate",
+      "destination": "/nl/admin/license/activate"
+    },
+    {
+      "source": "/nl/admin/license/learn/screen/index",
+      "destination": "/nl/admin/license/index"
+    },
+    {
+      "source": "/nl/admin/license/learn/index",
+      "destination": "/nl/admin/license/index"
+    },
+    {
+      "source": "/nl/learn/administration",
+      "destination": "/nl/admin/license/index"
+    },
+    {
+      "source": "/nl/admin/license/change-user-plan",
+      "destination": "/nl/admin/license/user-plans"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/change-user-plan",
+      "destination": "/nl/admin/license/user-plans"
+    },
+    {
+      "source": "/nl/admin/lists/learn/adding-items",
+      "destination": "/nl/admin/lists/add-items"
+    },
+    {
+      "source": "/nl/admin/lists/learn/organize/index",
+      "destination": "/nl/admin/lists/headings"
+    },
+    {
+      "source": "/nl/admin/lists/learn/organize/headings",
+      "destination": "/nl/admin/lists/headings"
+    },
+    {
+      "source": "/nl/admin/lists/learn/organize/adding-headings",
+      "destination": "/nl/admin/lists/headings"
+    },
+    {
+      "source": "/nl/admin/lists/learn/organize/headings-editing-and-deleting",
+      "destination": "/nl/admin/lists/headings"
+    },
+    {
+      "source": "/nl/admin/lists/learn/organize/grouping-items-under-headings",
+      "destination": "/nl/admin/lists/headings"
+    },
+    {
+      "source": "/nl/admin/lists/learn/index",
+      "destination": "/nl/admin/lists/index"
+    },
+    {
+      "source": "/nl/admin/lists/learn/items",
+      "destination": "/nl/admin/lists/index"
+    },
+    {
+      "source": "/nl/admin/lists/learn/duplicates",
+      "destination": "/nl/admin/lists/index"
+    },
+    {
+      "source": "/nl/admin/lists/learn/organize/deleted-items-and-headings",
+      "destination": "/nl/admin/lists/restore"
+    },
+    {
+      "source": "/nl/admin/lists/learn/specialized-lists",
+      "destination": "/nl/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/nl/admin/lists/learn/adding-items-to-relation-list",
+      "destination": "/nl/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/nl/admin/lists/learn/add-items-to-country-list",
+      "destination": "/nl/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/nl/admin/lists/learn/country",
+      "destination": "/nl/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/nl/admin/lists/learn/editing-items",
+      "destination": "/nl/admin/lists/update-items"
+    },
+    {
+      "source": "/nl/admin/lists/learn/deleting-items",
+      "destination": "/nl/admin/lists/update-items"
+    },
+    {
+      "source": "/nl/admin/lists/learn/adding-user-defined-lists",
+      "destination": "/nl/admin/lists/user-defined-lists"
+    },
+    {
+      "source": "/nl/admin/lists/learn/deleting-user-defined-lists",
+      "destination": "/nl/admin/lists/user-defined-lists"
+    },
+    {
+      "source": "/nl/admin/lists/learn/editing-lists-name-and-description",
+      "destination": "/nl/admin/lists/user-defined-lists"
+    },
+    {
+      "source": "/nl/admin/lists/learn/organize/user-group-filtering",
+      "destination": "/nl/admin/lists/user-group-filtering"
+    },
+    {
+      "source": "/nl/admin/onsite/add-system-event",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/add-system-event.html"
+    },
+    {
+      "source": "/nl/admin/onsite/configure-soap",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/configure-soap.html"
+    },
+    {
+      "source": "/nl/admin/onsite/data-exchange",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/data-exchange.html"
+    },
+    {
+      "source": "/nl/admin/options/learn/freetext-search/regenerate-index",
+      "destination": "https://help.superoffice.com/docs/11/nl/search-options/admin/regenerate-index.html"
+    },
+    {
+      "source": "/nl/admin/options/learn/labels/index",
+      "destination": "/nl/admin/options/change-ui-labels"
+    },
+    {
+      "source": "/nl/admin/options/learn/labels/change",
+      "destination": "/nl/admin/options/change-ui-labels"
+    },
+    {
+      "source": "/nl/admin/options/learn/labels/reset",
+      "destination": "/nl/admin/options/change-ui-labels"
+    },
+    {
+      "source": "/nl/admin/options/learn/number-allocation/index",
+      "destination": "/nl/admin/options/configure-number-allocation"
+    },
+    {
+      "source": "/nl/admin/options/learn/number-allocation/configure",
+      "destination": "/nl/admin/options/configure-number-allocation"
+    },
+    {
+      "source": "/nl/admin/options/learn/index",
+      "destination": "/nl/admin/options/index"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/global-preferences/smtp",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/preferences/smtp.html"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/index",
+      "destination": "/nl/admin/preferences/index"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/global-preferences/system",
+      "destination": "/nl/admin/preferences/index"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/global-preferences/settings",
+      "destination": "/nl/admin/preferences/service-settings"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/global-preferences/sms",
+      "destination": "/nl/admin/preferences/sms"
+    },
+    {
+      "source": "/nl/admin/preferences/smtp",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/preferences/smtp.html"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/update-preferences",
+      "destination": "/nl/admin/preferences/update"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/role/edit-rights-for-anonymous-users",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/other-users.html#rights"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/import-users",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/import-users.html"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/logging-users-off",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/logging-users-off.html"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/managing-external-users",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/managing-external-users.html"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/other-users",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/other-users.html"
+    },
+    {
+      "source": "/nl/admin/user-management/onsite/import-users",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/import-users.html"
+    },
+    {
+      "source": "/nl/admin/user-management/onsite/index",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/other-users.html"
+    },
+    {
+      "source": "/nl/admin/user-management/onsite/logging-users-off",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/logging-users-off.html"
+    },
+    {
+      "source": "/nl/admin/user-management/onsite/managing-external-users",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/managing-external-users.html"
+    },
+    {
+      "source": "/nl/admin/user-management/onsite/other-users",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/user-management/onsite/other-users.html"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/role/create-role",
+      "destination": "/nl/admin/user-management/role/create-role"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/role/functional-rights",
+      "destination": "/nl/admin/user-management/role/functional-rights"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/role/index",
+      "destination": "/nl/admin/user-management/role/index"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/role/set-data-rights-for-role",
+      "destination": "/nl/admin/user-management/role/set-data-rights-for-role"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/role/editing-role",
+      "destination": "/nl/admin/user-management/role/update-role"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/role/deleting-role",
+      "destination": "/nl/admin/user-management/role/update-role"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/add-associate",
+      "destination": "/nl/admin/user-management/add-associate"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/index",
+      "destination": "/nl/admin/user-management/index"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/screen/index",
+      "destination": "/nl/admin/user-management/index"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/visibility",
+      "destination": "/nl/admin/user-management/index"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/associates-filter-group",
+      "destination": "/nl/admin/user-management/index"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/move-user",
+      "destination": "/nl/admin/user-management/our-companies"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/our-companies",
+      "destination": "/nl/admin/user-management/our-companies"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/delete-user",
+      "destination": "/nl/admin/user-management/update-user"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/update-user",
+      "destination": "/nl/admin/user-management/update-user"
+    },
+    {
+      "source": "/nl/admin/user-management/learn/user-groups",
+      "destination": "/nl/admin/user-management/user-groups"
+    },
+    {
+      "source": "/nl/admin/learn/adjusting-views",
+      "destination": "/nl/admin/adjusting-views"
+    },
+    {
+      "source": "/nl/admin/learn/index",
+      "destination": "/nl/admin/getting-started"
+    },
+    {
+      "source": "/nl/admin/learn/onboard-users",
+      "destination": "/nl/admin/getting-started"
+    },
+    {
+      "source": "/nl/admin/getting-started/index",
+      "destination": "/nl/admin/getting-started"
+    },
+    {
+      "source": "/nl/admin/getting-started/onboard-users",
+      "destination": "/nl/admin/getting-started"
+    },
+    {
+      "source": "/nl/ai/admin/index",
+      "destination": "/nl/ai/admin/set-up-categorization"
+    },
+    {
+      "source": "/nl/ai/index",
+      "destination": "/nl/ai/learn/index"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/screen/data-exchange",
+      "destination": "https://help.superoffice.com/docs/11/nl/admin/onsite/data-exchange.html"
+    },
+    {
+      "source": "/nl/chat/learn/admin/add-javascript",
+      "destination": "/nl/chat/admin/add-javascript"
+    },
+    {
+      "source": "/nl/chat/learn/admin/channel-create",
+      "destination": "/nl/chat/admin/channel-create"
+    },
+    {
+      "source": "/nl/chat/learn/admin/",
+      "destination": "/nl/chat/admin/index"
+    },
+    {
+      "source": "/nl/chat/admin/",
+      "destination": "/nl/chat/learn/admin/index"
+    },
+    {
+      "source": "/nl/chat/learn/screen/",
+      "destination": "/nl/chat/learn/index"
+    },
+    {
+      "source": "/nl/chat/learn/create-contact",
+      "destination": "/nl/chat/learn/link-to-person"
+    },
+    {
+      "source": "/nl/chat/learn/send-files",
+      "destination": "/nl/chat/learn/respond"
+    },
+    {
+      "source": "/nl/chat/learn/send-faq-or-reply-template",
+      "destination": "/nl/chat/learn/respond"
+    },
+    {
+      "source": "/nl/chat/learn/create-quick-reply",
+      "destination": "/nl/chat/learn/respond"
+    },
+    {
+      "source": "/nl/company/learn/screen/index",
+      "destination": "/nl/company/learn/index"
+    },
+    {
+      "source": "/nl/contact/learn/screen/index",
+      "destination": "/nl/contact/learn/index"
+    },
+    {
+      "source": "/nl/custom-objects/learn/udef/add",
+      "destination": "/nl/custom-objects/admin/add-udef"
+    },
+    {
+      "source": "/nl/custom-objects/learn/extra-field/create",
+      "destination": "/nl/custom-objects/admin/create-extra-field"
+    },
+    {
+      "source": "/nl/custom-objects/learn/extra-table/create",
+      "destination": "/nl/custom-objects/admin/create-extra-table"
+    },
+    {
+      "source": "/nl/custom-objects/learn/extra-table/index",
+      "destination": "/nl/custom-objects/learn/extra-table"
+    },
+    {
+      "source": "/nl/custom-objects/learn/udef/index",
+      "destination": "/nl/custom-objects/learn/udef"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/global-preferences/password",
+      "destination": "/nl/customer-center/admin/password-policy"
+    },
+    {
+      "source": "/nl/customer-center/admin/index",
+      "destination": "/nl/customer-center/admin/style-subscription-page"
+    },
+    {
+      "source": "/nl/admin/lists/learn/add-items-to-task-menu",
+      "destination": "/nl/customization/admin/add-items-to-task-menu"
+    },
+    {
+      "source": "/nl/admin/lists/learn/applications",
+      "destination": "/nl/customization/admin/other-applications"
+    },
+    {
+      "source": "/nl/admin/lists/learn/adding-external-applications-to-application-list",
+      "destination": "/nl/customization/admin/other-applications"
+    },
+    {
+      "source": "/nl/admin/learn/screen/package-properties",
+      "destination": "/nl/customization/admin/package-properties"
+    },
+    {
+      "source": "/nl/admin/learn/package-properties",
+      "destination": "/nl/customization/admin/package-properties"
+    },
+    {
+      "source": "/nl/customization/admin/index",
+      "destination": "/nl/customization/admin/package-properties"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/create-macro",
+      "destination": "/nl/customization/macros-and-scripts/admin/create-macro"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/create-folder",
+      "destination": "/nl/customization/macros-and-scripts/admin/create-script"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/create-script",
+      "destination": "/nl/customization/macros-and-scripts/admin/create-script"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/macro-script",
+      "destination": "/nl/customization/macros-and-scripts/admin/index"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/screen/index",
+      "destination": "/nl/customization/macros-and-scripts/admin/index"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/index",
+      "destination": "/nl/customization/macros-and-scripts/admin/index"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/schedule-task",
+      "destination": "/nl/customization/macros-and-scripts/admin/schedule-task"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/trigger",
+      "destination": "/nl/customization/macros-and-scripts/admin/trigger"
+    },
+    {
+      "source": "/nl/customization/screen-designer/add-button",
+      "destination": "/nl/customization/screen-designer/admin/add-button"
+    },
+    {
+      "source": "/nl/ui/screen-designer/learn/add-new-layout",
+      "destination": "/nl/customization/screen-designer/admin/add-layout"
+    },
+    {
+      "source": "/nl/customization/screen-designer/add-layout",
+      "destination": "/nl/customization/screen-designer/admin/add-layout"
+    },
+    {
+      "source": "/nl/customization/screen-designer/assign-layout",
+      "destination": "/nl/customization/screen-designer/admin/assign-layout"
+    },
+    {
+      "source": "/nl/ui/screen-designer/learn/elements",
+      "destination": "/nl/customization/screen-designer/admin/edit-layout"
+    },
+    {
+      "source": "/nl/customization/screen-designer/edit-layout",
+      "destination": "/nl/customization/screen-designer/admin/edit-layout"
+    },
+    {
+      "source": "/nl/customization/screen-designer/index",
+      "destination": "/nl/customization/screen-designer/admin/index"
+    },
+    {
+      "source": "/nl/customization/screen-designer/reference",
+      "destination": "/nl/customization/screen-designer/admin/reference"
+    },
+    {
+      "source": "/nl/customization/screen-designer/tutorial-move-country",
+      "destination": "/nl/customization/screen-designer/admin/tutorial-move-country"
+    },
+    {
+      "source": "/nl/ui/screen-designer/learn/edit-layout-archives",
+      "destination": "/nl/customization/screen-designer/admin/working-with-archives"
+    },
+    {
+      "source": "/nl/customization/screen-designer/working-with-archives",
+      "destination": "/nl/customization/screen-designer/admin/working-with-archives"
+    },
+    {
+      "source": "/nl/customization/screen-designer/working-with-fields",
+      "destination": "/nl/customization/screen-designer/admin/working-with-fields"
+    },
+    {
+      "source": "/nl/customization/screen-designer/working-with-grids",
+      "destination": "/nl/customization/screen-designer/admin/working-with-grids"
+    },
+    {
+      "source": "/nl/customization/screen-designer/working-with-tabs",
+      "destination": "/nl/customization/screen-designer/admin/working-with-tabs"
+    },
+    {
+      "source": "/nl/admin/lists/learn/web-panel-add-item",
+      "destination": "/nl/customization/web-panels/admin/add-web-panel"
+    },
+    {
+      "source": "/nl/ui/web-panels/learn/index",
+      "destination": "/nl/customization/web-panels/admin/index"
+    },
+    {
+      "source": "/nl/admin/lists/learn/web-panel",
+      "destination": "/nl/customization/web-panels/admin/index"
+    },
+    {
+      "source": "/nl/dashboard/learn/copy",
+      "destination": "/nl/dashboard/learn/create"
+    },
+    {
+      "source": "/nl/dashboard/learn/delete",
+      "destination": "/nl/dashboard/learn/update"
+    },
+    {
+      "source": "/nl/dashboard/learn/add-tile",
+      "destination": "/nl/dashboard/learn/working-with-tiles"
+    },
+    {
+      "source": "/nl/dashboard/learn/edit-tile",
+      "destination": "/nl/dashboard/learn/working-with-tiles"
+    },
+    {
+      "source": "/nl/dashboard/learn/remove-tile",
+      "destination": "/nl/dashboard/learn/working-with-tiles"
+    },
+    {
+      "source": "/nl/admin/lists/learn/follow-up-type",
+      "destination": "/nl/diary/admin/add-follow-up-type"
+    },
+    {
+      "source": "/nl/admin/lists/learn/adding-items-to-follow-up-type-list",
+      "destination": "/nl/diary/admin/add-follow-up-type"
+    },
+    {
+      "source": "/nl/admin/lists/learn/resource",
+      "destination": "/nl/diary/admin/add-resource"
+    },
+    {
+      "source": "/nl/admin/lists/learn/adding-items-to-resource-list",
+      "destination": "/nl/diary/admin/add-resource"
+    },
+    {
+      "source": "/nl/diary/learn/invitation/add-participant",
+      "destination": "/nl/diary/learn/invitation/add-attendee"
+    },
+    {
+      "source": "/nl/diary/learn/screen/dialog-for-followups",
+      "destination": "https://help.superoffice.com/Documentation/Help/NL/CRM/UserHelp/index.htm#t=StandardCRM%2Fchap02%2FDialog_for_followups.htm"
+    },
+    {
+      "source": "/nl/diary/learn/screen",
+      "destination": "/nl/diary/learn/index"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/video-meetings/index",
+      "destination": "/nl/diary/learn/video-meetings"
+    },
+    {
+      "source": "/nl/document/learn/upload",
+      "destination": "/nl/document/learn/create"
+    },
+    {
+      "source": "/nl/document/learn/screen/index",
+      "destination": "/nl/document/learn/create"
+    },
+    {
+      "source": "/nl/document/learn/delete",
+      "destination": "/nl/document/learn/edit"
+    },
+    {
+      "source": "/nl/document/learn/open",
+      "destination": "/nl/document/learn/index"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/document-library/change-to-sharepoint",
+      "destination": "/nl/document/library/learn/index"
+    },
+    {
+      "source": "/nl/admin/preferences/learn/document-library/index",
+      "destination": "/nl/document/library/learn/index"
+    },
+    {
+      "source": "/nl/document/cloud/sharepoint-documents/learn/index",
+      "destination": "/nl/document/library/learn/index"
+    },
+    {
+      "source": "/nl/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "destination": "/nl/document/library/learn/index"
+    },
+    {
+      "source": "/nl/admin/options/learn/number-allocation/document-template-defaults",
+      "destination": "/nl/document/templates/admin/document-template-defaults"
+    },
+    {
+      "source": "/nl/admin/lists/learn/add-template",
+      "destination": "/nl/document/templates/admin/link-template"
+    },
+    {
+      "source": "/nl/admin/lists/learn/replace-existing-template",
+      "destination": "/nl/document/templates/admin/update-template"
+    },
+    {
+      "source": "/nl/admin/lists/learn/using-standard-templates",
+      "destination": "/nl/document/templates/admin/update-template"
+    },
+    {
+      "source": "/nl/document/templates/admin/using-document-templates-for-multiple-languages",
+      "destination": "https://help.superoffice.com/docs/11/nl/document/templates/admin/using-document-templates-for-multiple-languages.html"
+    },
+    {
+      "source": "/nl/admin/lists/learn/creating-template-document",
+      "destination": "/nl/document/templates/learn/create"
+    },
+    {
+      "source": "/nl/admin/lists/learn/document-template",
+      "destination": "/nl/document/templates/learn/index"
+    },
+    {
+      "source": "/nl/document/learn/template-variables",
+      "destination": "/nl/document/templates/learn/template-variables"
+    },
+    {
+      "source": "/nl/email/service/learn/email-filters/delete-email-filter",
+      "destination": "/nl/email/admin/mailbox/create-email-filter"
+    },
+    {
+      "source": "/nl/email/service/learn/email-filters/create-email-filter",
+      "destination": "/nl/email/admin/mailbox/create-email-filter"
+    },
+    {
+      "source": "/nl/email/service/learn/create-sms-mailbox",
+      "destination": "/nl/email/admin/mailbox/create-sms-mailbox"
+    },
+    {
+      "source": "/nl/email/service/learn/delete-mailbox",
+      "destination": "/nl/email/admin/mailbox/delete-mailbox"
+    },
+    {
+      "source": "/nl/email/service/learn/index",
+      "destination": "/nl/email/admin/mailbox/index"
+    },
+    {
+      "source": "/nl/email/service/learn/screen/tab-inbox-for-email",
+      "destination": "/nl/email/admin/mailbox/index"
+    },
+    {
+      "source": "/nl/email/service/learn/screen/tab-outbox-for-email",
+      "destination": "/nl/email/admin/mailbox/index"
+    },
+    {
+      "source": "/nl/email/service/learn/screen/tab-blocked-email",
+      "destination": "/nl/email/admin/mailbox/index"
+    },
+    {
+      "source": "/nl/email/service/learn/screen/sms-inbox",
+      "destination": "/nl/email/admin/mailbox/index"
+    },
+    {
+      "source": "/nl/email/service/learn/screen/sms-outbox",
+      "destination": "/nl/email/admin/mailbox/index"
+    },
+    {
+      "source": "/nl/email/service/learn/email-filters/index",
+      "destination": "/nl/email/admin/mailbox/index"
+    },
+    {
+      "source": "/nl/admin/lists/learn/email-template",
+      "destination": "/nl/email/admin/add-email-template"
+    },
+    {
+      "source": "/nl/admin/lists/learn/add-email-template",
+      "destination": "/nl/email/admin/add-email-template"
+    },
+    {
+      "source": "/nl/admin/lists/learn/create-email-template",
+      "destination": "/nl/email/admin/add-email-template"
+    },
+    {
+      "source": "/nl/email/admin/index",
+      "destination": "/nl/email/admin/add-email-template"
+    },
+    {
+      "source": "/nl/email/learn/compose",
+      "destination": "/nl/email/inbox/learn/compose"
+    },
+    {
+      "source": "/nl/email/inbox/learn/inbox-options",
+      "destination": "/nl/email/inbox/learn/index"
+    },
+    {
+      "source": "/nl/email/inbox/learn/mark-as-read",
+      "destination": "/nl/email/inbox/learn/preview"
+    },
+    {
+      "source": "/nl/email/inbox/learn/move-email-to-folder",
+      "destination": "/nl/email/inbox/learn/preview"
+    },
+    {
+      "source": "/nl/email/inbox/learn/print",
+      "destination": "/nl/email/inbox/learn/preview"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-add-erp-connection",
+      "destination": "/nl/erp/admin/add-connection"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-connector-add",
+      "destination": "/nl/erp/admin/add-connection"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-configure-default-values",
+      "destination": "/nl/erp/admin/configure"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-configure-field-allocation",
+      "destination": "/nl/erp/admin/configure"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-configure-list-mapping",
+      "destination": "/nl/erp/admin/configure"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
+      "destination": "/nl/erp/admin/configure"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-set-sync-priority",
+      "destination": "/nl/erp/admin/configure"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/index",
+      "destination": "/nl/erp/admin/index"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-resync-from-crm",
+      "destination": "/nl/erp/admin/resync-from-crm"
+    },
+    {
+      "source": "/nl/quote/learn/admin/sync/sync-edit-erp-connection",
+      "destination": "/nl/erp/admin/update-connection"
+    },
+    {
+      "source": "/nl/admin/erp/learn/erp-connect",
+      "destination": "/nl/erp/learn/connect"
+    },
+    {
+      "source": "/nl/admin/erp/learn/erp-create-new-actor",
+      "destination": "/nl/erp/learn/connect"
+    },
+    {
+      "source": "/nl/admin/erp/learn/erp-sync-disconnect",
+      "destination": "/nl/erp/learn/disconnect"
+    },
+    {
+      "source": "/nl/admin/erp/learn/index",
+      "destination": "/nl/erp/learn/index"
+    },
+    {
+      "source": "/nl/admin/erp/learn/screen/erp-tab",
+      "destination": "/nl/erp/learn/index"
+    },
+    {
+      "source": "/nl/faq/learn/create",
+      "destination": "/nl/knowledge-base/learn/faq/create"
+    },
+    {
+      "source": "/nl/faq/learn/edit",
+      "destination": "/nl/knowledge-base/learn/faq/edit"
+    },
+    {
+      "source": "/nl/faq/learn/delete",
+      "destination": "/nl/knowledge-base/learn/faq/edit"
+    },
+    {
+      "source": "/nl/faq/learn/index",
+      "destination": "/nl/knowledge-base/learn/faq/index"
+    },
+    {
+      "source": "/nl/faq/learn/view-entry",
+      "destination": "/nl/knowledge-base/learn/faq/index"
+    },
+    {
+      "source": "/nl/faq/learn/search-for",
+      "destination": "/nl/knowledge-base/learn/faq/index"
+    },
+    {
+      "source": "/nl/faq/learn/publish",
+      "destination": "/nl/knowledge-base/learn/faq/publish"
+    },
+    {
+      "source": "/nl/faq/learn/workflow",
+      "destination": "/nl/knowledge-base/learn/faq/workflow"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/copy",
+      "destination": "/nl/knowledge-base/learn/reply-templates/create"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/create",
+      "destination": "/nl/knowledge-base/learn/reply-templates/create"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/delete",
+      "destination": "/nl/knowledge-base/learn/reply-templates/edit"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/edit",
+      "destination": "/nl/knowledge-base/learn/reply-templates/edit"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/find",
+      "destination": "/nl/knowledge-base/learn/reply-templates/index"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/index",
+      "destination": "/nl/knowledge-base/learn/reply-templates/index"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/new-language",
+      "destination": "/nl/knowledge-base/learn/reply-templates/new-language"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/template-variables",
+      "destination": "/nl/knowledge-base/learn/reply-templates/template-variables"
+    },
+    {
+      "source": "/nl/email/service/learn/kb-aliases/index",
+      "destination": "/nl/knowledge-base/learn/email-addresses"
+    },
+    {
+      "source": "/nl/email/service/learn/kb-aliases/add-email-address",
+      "destination": "/nl/knowledge-base/learn/email-addresses"
+    },
+    {
+      "source": "/nl/request/learn/external-document",
+      "destination": "/nl/knowledge-base/learn/external-document"
+    },
+    {
+      "source": "/nl/request/learn/screen/knowledge-base",
+      "destination": "/nl/knowledge-base/learn/index"
+    },
+    {
+      "source": "/nl/email/service/learn/kb-aliases/manage-folders",
+      "destination": "/nl/knowledge-base/learn/manage-folders"
+    },
+    {
+      "source": "/nl/faq/learn/manage-folders",
+      "destination": "/nl/knowledge-base/learn/manage-folders"
+    },
+    {
+      "source": "/nl/request/reply-templates/learn/manage-folders",
+      "destination": "/nl/knowledge-base/learn/manage-folders"
+    },
+    {
+      "source": "/nl/lead/index",
+      "destination": "/nl/lead/learn/index"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/howto/bulk-update",
+      "destination": "/nl/learn/basics/bulk-update"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
+      "destination": "/nl/learn/basics/creating-shortcuts-to-entries-in-crm"
+    },
+    {
+      "source": "/nl/marketing/learn/add-fav",
+      "destination": "/nl/learn/basics/fav"
+    },
+    {
+      "source": "/nl/request/learn/howto/fav",
+      "destination": "/nl/learn/basics/fav"
+    },
+    {
+      "source": "/nl/diary/learn/linking-documents-to-follow-ups",
+      "destination": "/nl/learn/basics/links"
+    },
+    {
+      "source": "/nl/project/learn/add-links",
+      "destination": "/nl/learn/basics/links"
+    },
+    {
+      "source": "/nl/company/learn/print",
+      "destination": "/nl/learn/basics/print"
+    },
+    {
+      "source": "/nl/contact/learn/print",
+      "destination": "/nl/learn/basics/print"
+    },
+    {
+      "source": "/nl/diary/learn/print",
+      "destination": "/nl/learn/basics/print"
+    },
+    {
+      "source": "/nl/admin/lists/learn/relation",
+      "destination": "/nl/learn/basics/relations"
+    },
+    {
+      "source": "/nl/company/learn/add-relation",
+      "destination": "/nl/learn/basics/relations"
+    },
+    {
+      "source": "/nl/company/learn/delete-relation",
+      "destination": "/nl/learn/basics/relations"
+    },
+    {
+      "source": "/nl/contact/learn/add-relation",
+      "destination": "/nl/learn/basics/relations"
+    },
+    {
+      "source": "/nl/contact/learn/delete-relation",
+      "destination": "/nl/learn/basics/relations"
+    },
+    {
+      "source": "/nl/learn/getting-started/connect-email-doc/default-mac",
+      "destination": "https://help.superoffice.com/docs/11/nl/learn/getting-started/connect-email-doc/default-mac.html"
+    },
+    {
+      "source": "/nl/learn/getting-started/connect-email-doc/default-win",
+      "destination": "https://help.superoffice.com/docs/11/nl/learn/getting-started/connect-email-doc/default-win.html"
+    },
+    {
+      "source": "/nl/learn/getting-started/connect-email-doc/google-workspace",
+      "destination": "https://help.superoffice.com/docs/11/nl/learn/getting-started/connect-email-doc/google-workspace.html"
+    },
+    {
+      "source": "/nl/learn/getting-started/connect-email-doc/index",
+      "destination": "https://help.superoffice.com/docs/11/nl/learn/getting-started/connect-email-doc/index.html"
+    },
+    {
+      "source": "/nl/learn/getting-started/connect-email-doc/microsoft-365",
+      "destination": "https://help.superoffice.com/docs/11/nl/learn/getting-started/connect-email-doc/microsoft-365.html"
+    },
+    {
+      "source": "/nl/globalization-and-localization/learn/change-language",
+      "destination": "/nl/learn/getting-started/change-language"
+    },
+    {
+      "source": "/nl/company/learn/screen/activities-tab",
+      "destination": "/nl/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/nl/contact/learn/screen/activities-tab",
+      "destination": "/nl/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/nl/diary/learn/screen/activities-tab",
+      "destination": "/nl/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/nl/project/learn/screen/activities-project",
+      "destination": "/nl/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/nl/sale/learn/screen/activities-sale",
+      "destination": "/nl/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/nl/company/learn/screen/contacts-tab",
+      "destination": "/nl/learn/section-tabs/contacts-tab"
+    },
+    {
+      "source": "/nl/company/learn/screen/projects-tab",
+      "destination": "/nl/learn/section-tabs/projects-tab"
+    },
+    {
+      "source": "/nl/contact/learn/screen/projects-tab",
+      "destination": "/nl/learn/section-tabs/projects-tab"
+    },
+    {
+      "source": "/nl/company/learn/screen/relations-tab",
+      "destination": "/nl/learn/section-tabs/relations-tab"
+    },
+    {
+      "source": "/nl/contact/learn/screen/relations-tab",
+      "destination": "/nl/learn/section-tabs/relations-tab"
+    },
+    {
+      "source": "/nl/company/learn/screen/requests-tab",
+      "destination": "/nl/learn/section-tabs/requests-tab"
+    },
+    {
+      "source": "/nl/contact/learn/screen/requests-tab",
+      "destination": "/nl/learn/section-tabs/requests-tab"
+    },
+    {
+      "source": "/nl/company/learn/screen/sales-tab",
+      "destination": "/nl/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/nl/contact/learn/screen/sales-tab",
+      "destination": "/nl/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/nl/diary/learn/screen/sales-tab",
+      "destination": "/nl/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/nl/project/learn/screen/sale",
+      "destination": "/nl/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/nl/admin/options/learn/custlang/update",
+      "destination": "/nl/localization/admin/add-customer-language"
+    },
+    {
+      "source": "/nl/admin/options/learn/time-zones/enable",
+      "destination": "/nl/localization/admin/enable-time-zones"
+    },
+    {
+      "source": "/nl/localization/admin/index",
+      "destination": "/nl/localization/admin/enable-time-zones"
+    },
+    {
+      "source": "/nl/admin/options/learn/time-zones/select",
+      "destination": "/nl/localization/admin/select-time-zones"
+    },
+    {
+      "source": "/nl/admin/options/learn/custlang/index",
+      "destination": "/nl/localization/learn/customer-languages"
+    },
+    {
+      "source": "/nl/globalization-and-localization/learn/time-zones",
+      "destination": "/nl/localization/learn/time-zones"
+    },
+    {
+      "source": "/nl/localization/learn/index",
+      "destination": "/nl/localization/learn/time-zones"
+    },
+    {
+      "source": "/nl/localization/index",
+      "destination": "/nl/localization/learn/time-zones"
+    },
+    {
+      "source": "/nl/globalization-and-localization/learn/translate-fields",
+      "destination": "/nl/localization/learn/translate-fields"
+    },
+    {
+      "source": "/nl/marketing/tracked-links/learn/add-tracked-link-to-msg",
+      "destination": "/nl/marketing/editor/learn/add-tracked-link-to-msg"
+    },
+    {
+      "source": "/nl/marketing/learn/editor",
+      "destination": "/nl/marketing/editor/learn/index"
+    },
+    {
+      "source": "/nl/marketing/forms/admin/",
+      "destination": "/nl/marketing/forms/admin/manage-fonts"
+    },
+    {
+      "source": "/nl/marketing/forms/index",
+      "destination": "/nl/marketing/forms/learn/index"
+    },
+    {
+      "source": "/nl/marketing/forms/learn/examples",
+      "destination": "/nl/marketing/forms/learn/index"
+    },
+    {
+      "source": "/nl/marketing/forms/learn/view",
+      "destination": "/nl/marketing/forms/learn/index"
+    },
+    {
+      "source": "/nl/marketing/forms/learn/submissions/index",
+      "destination": "/nl/marketing/forms/learn/index"
+    },
+    {
+      "source": "/nl/marketing/forms/learn/submissions/process",
+      "destination": "/nl/marketing/forms/learn/process-submissions"
+    },
+    {
+      "source": "/nl/marketing/forms/learn/form-prefilled",
+      "destination": "/nl/marketing/forms/learn/publish"
+    },
+    {
+      "source": "/nl/marketing/forms/learn/submissions/track",
+      "destination": "/nl/marketing/forms/learn/view-statistics"
+    },
+    {
+      "source": "/nl/marketing/learn/customize-for-mobile",
+      "destination": "/nl/marketing/learn/best-practices"
+    },
+    {
+      "source": "/nl/marketing/learn/screen/index",
+      "destination": "/nl/marketing/learn/index"
+    },
+    {
+      "source": "/nl/marketing/learn/work-with-messages-and-templates",
+      "destination": "/nl/marketing/learn/message-templates"
+    },
+    {
+      "source": "/nl/admin/lists/learn/add-items-to-mailing-domain",
+      "destination": "/nl/marketing/mailing/admin/add-domain"
+    },
+    {
+      "source": "/nl/marketing/mailing/learn/admin/define-settings-for-mailings",
+      "destination": "/nl/marketing/mailing/admin/define-settings-for-mailings"
+    },
+    {
+      "source": "/nl/marketing/mailing/learn/follow-up/index",
+      "destination": "/nl/marketing/mailing/learn/index"
+    },
+    {
+      "source": "/nl/marketing/mailing/learn/follow-up/view-statistics",
+      "destination": "/nl/marketing/mailing/learn/view-statistics"
+    },
+    {
+      "source": "/nl/marketing/mailing/learn/follow-up/manage-bounces",
+      "destination": "/nl/marketing/recipients/learn/manage-bounces"
+    },
+    {
+      "source": "/nl/marketing/tracked-links/learn/examples",
+      "destination": "/nl/marketing/tracked-links/learn/index"
+    },
+    {
+      "source": "/nl/marketing/utm/index",
+      "destination": "/nl/marketing/utm/learn/index"
+    },
+    {
+      "source": "/nl/marketing/utm/admin/index",
+      "destination": "/nl/marketing/utm/learn/index"
+    },
+    {
+      "source": "/nl/mobile/superoffice-mobile/index",
+      "destination": "/nl/mobile/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/ansi-files",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/ansi-files.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/creating-import-descriptions",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/creating-import-descriptions.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/deleting-field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/deleting-field-mapping.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/duplicates-import",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/duplicates-import.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/editing-import-descriptions",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/editing-import-descriptions.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/field-mapping.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/import-descriptions",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/import-descriptions.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/import-routines",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/import-routines.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/importing-files",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/importing-files.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/index",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/index.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/resetting-field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/resetting-field-mapping.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/specifying-advanced-import-settings",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/specifying-field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/specifying-field-mapping.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/backup-routines",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/backup-routines.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/export",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/export.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/index",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/parameter-examples",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/parameter-examples.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/status-screen",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/status-screen.html"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/using-document-templates-for-multiple-languages",
+      "destination": "https://help.superoffice.com/docs/11/nl/document/templates/admin/using-document-templates-for-multiple-languages.html"
+    },
+    {
+      "source": "/nl/project/learn/project-guide/create",
+      "destination": "/nl/project/admin/create-project-guide"
+    },
+    {
+      "source": "/nl/project/learn/screen/project-guide-admin",
+      "destination": "/nl/project/admin/create-project-guide"
+    },
+    {
+      "source": "/nl/project/learn/project-guide/deactivate",
+      "destination": "/nl/project/admin/edit-project-guide"
+    },
+    {
+      "source": "/nl/project/learn/project-guide/edit",
+      "destination": "/nl/project/admin/edit-project-guide"
+    },
+    {
+      "source": "/nl/admin/lists/learn/project-status",
+      "destination": "/nl/project/admin/project-status"
+    },
+    {
+      "source": "/nl/project/learn/screen/project-status-admin",
+      "destination": "/nl/project/admin/project-status"
+    },
+    {
+      "source": "/nl/admin/lists/learn/project-type",
+      "destination": "/nl/project/admin/project-type"
+    },
+    {
+      "source": "/nl/project/learn/screen/project-type-admin",
+      "destination": "/nl/project/admin/project-type"
+    },
+    {
+      "source": "/nl/project/learn/screen/project-members-tab",
+      "destination": "/nl/project/learn/project-members/index"
+    },
+    {
+      "source": "/nl/project/learn/screen/index",
+      "destination": "/nl/project/learn/index"
+    },
+    {
+      "source": "/nl/project/learn/project-guide/index",
+      "destination": "/nl/project/learn/project-guides"
+    },
+    {
+      "source": "/nl/project/learn/project-guide/project-guide-tab",
+      "destination": "/nl/project/learn/project-guides"
+    },
+    {
+      "source": "/nl/project/learn/project-guide/view-followups-and-documents",
+      "destination": "/nl/project/learn/project-guides"
+    },
+    {
+      "source": "/nl/project/learn/project-guide/working-with",
+      "destination": "/nl/project/learn/project-guides"
+    },
+    {
+      "source": "/nl/request/learn/category/create",
+      "destination": "/nl/request/admin/category/create"
+    },
+    {
+      "source": "/nl/request/learn/category/delete",
+      "destination": "/nl/request/admin/category/delete"
+    },
+    {
+      "source": "/nl/admin/options/learn/custlang/external-categories",
+      "destination": "/nl/request/admin/category/external-categories"
+    },
+    {
+      "source": "/nl/request/learn/category/index",
+      "destination": "/nl/request/admin/category/index"
+    },
+    {
+      "source": "/nl/request/learn/priority/create",
+      "destination": "/nl/request/admin/priority/create"
+    },
+    {
+      "source": "/nl/request/learn/priority/delete",
+      "destination": "/nl/request/admin/priority/delete"
+    },
+    {
+      "source": "/nl/request/learn/priority/escalation-levels",
+      "destination": "/nl/request/admin/priority/escalation-levels"
+    },
+    {
+      "source": "/nl/request/learn/priority/index",
+      "destination": "/nl/request/admin/priority/index"
+    },
+    {
+      "source": "/nl/request/learn/status/create",
+      "destination": "/nl/request/admin/status/create"
+    },
+    {
+      "source": "/nl/request/learn/status/delete",
+      "destination": "/nl/request/admin/status/delete"
+    },
+    {
+      "source": "/nl/request/learn/status/index",
+      "destination": "/nl/request/admin/status/index"
+    },
+    {
+      "source": "/nl/request/learn/type/create",
+      "destination": "/nl/request/admin/type/create"
+    },
+    {
+      "source": "/nl/request/learn/type/delete",
+      "destination": "/nl/request/admin/type/delete"
+    },
+    {
+      "source": "/nl/request/learn/type/index",
+      "destination": "/nl/request/admin/type/index"
+    },
+    {
+      "source": "/nl/request/learn/admin/index",
+      "destination": "/nl/request/admin/index"
+    },
+    {
+      "source": "/nl/request/learn/next-in-queue",
+      "destination": "/nl/request/admin/next-in-queue"
+    },
+    {
+      "source": "/nl/request/learn/screen/system-templates",
+      "destination": "/nl/request/admin/system-templates"
+    },
+    {
+      "source": "/nl/request/learn/howto/accept",
+      "destination": "/nl/request/learn/accept"
+    },
+    {
+      "source": "/nl/request/learn/howto/assign",
+      "destination": "/nl/request/learn/assign"
+    },
+    {
+      "source": "/nl/request/learn/howto/close",
+      "destination": "/nl/request/learn/close"
+    },
+    {
+      "source": "/nl/request/learn/howto/create",
+      "destination": "/nl/request/learn/create"
+    },
+    {
+      "source": "/nl/request/learn/howto/delete",
+      "destination": "/nl/request/learn/delete"
+    },
+    {
+      "source": "/nl/request/learn/howto/edit-message",
+      "destination": "/nl/request/learn/edit-message"
+    },
+    {
+      "source": "/nl/request/learn/howto/flag-message",
+      "destination": "/nl/request/learn/flag-message"
+    },
+    {
+      "source": "/nl/request/learn/howto/forward",
+      "destination": "/nl/request/learn/forward"
+    },
+    {
+      "source": "/nl/request/learn/screen/index",
+      "destination": "/nl/request/learn/index"
+    },
+    {
+      "source": "/nl/request/learn/screen/ticket-log",
+      "destination": "/nl/request/learn/index"
+    },
+    {
+      "source": "/nl/request/learn/howto/merge",
+      "destination": "/nl/request/learn/merge"
+    },
+    {
+      "source": "/nl/request/learn/howto/reply",
+      "destination": "/nl/request/learn/reply"
+    },
+    {
+      "source": "/nl/faq/learn/add-to-request",
+      "destination": "/nl/request/learn/reply"
+    },
+    {
+      "source": "/nl/request/learn/howto/split-message",
+      "destination": "/nl/request/learn/split-message"
+    },
+    {
+      "source": "/nl/request/learn/howto/split-request",
+      "destination": "/nl/request/learn/split-request"
+    },
+    {
+      "source": "/nl/request/learn/howto/transfer",
+      "destination": "/nl/request/learn/transfer"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/select-period-length",
+      "destination": "/nl/saint/admin/counter-settings"
+    },
+    {
+      "source": "/nl/saint/admin/select-period-length",
+      "destination": "/nl/saint/admin/counter-settings"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/index",
+      "destination": "/nl/saint/admin/index"
+    },
+    {
+      "source": "/nl/admin/lists/learn/sale-amount-class",
+      "destination": "/nl/saint/admin/sale-amount-class"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/create-status",
+      "destination": "/nl/saint/admin/set-up"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/select-image-for-status",
+      "destination": "/nl/saint/admin/set-up"
+    },
+    {
+      "source": "/nl/saint/admin/select-image-for-status",
+      "destination": "/nl/saint/admin/set-up"
+    },
+    {
+      "source": "/nl/saint/admin/create-status",
+      "destination": "/nl/saint/admin/set-up"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/edit-status",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/saint/admin/edit-status",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/select-default-follow-up-type-for-status",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/saint/admin/select-default-follow-up-type-for-status",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/restore-status",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/saint/admin/restore-status",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/sale/saint/learn/admin/select-status-criteria",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/saint/admin/select-status-criteria",
+      "destination": "/nl/saint/admin/update"
+    },
+    {
+      "source": "/nl/sale/saint/learn/index",
+      "destination": "/nl/saint/learn/index"
+    },
+    {
+      "source": "/nl/sale/saint/learn/status-dialog",
+      "destination": "/nl/saint/learn/index"
+    },
+    {
+      "source": "/nl/saint/learn/status-dialog",
+      "destination": "/nl/saint/learn/index"
+    },
+    {
+      "source": "/nl/quote/learn/admin/product/configure",
+      "destination": "/nl/sale/admin/quote/configure-product-fields"
+    },
+    {
+      "source": "/nl/quote/learn/admin/index",
+      "destination": "/nl/sale/admin/quote/index"
+    },
+    {
+      "source": "/nl/quote/learn/admin/quotesync-tab-erp-connections",
+      "destination": "/nl/sale/admin/quote/index"
+    },
+    {
+      "source": "/nl/quote/learn/admin/quotesync-tab-settings",
+      "destination": "/nl/sale/admin/quote/index"
+    },
+    {
+      "source": "/nl/quote/learn/admin/product/add-price-list",
+      "destination": "/nl/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/nl/quote/learn/admin/product/add-product-to-price-list",
+      "destination": "/nl/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/nl/quote/learn/admin/product/index",
+      "destination": "/nl/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/nl/quote/learn/admin/product/quote-delete-deactivate-price-list-or-product",
+      "destination": "/nl/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/nl/quote/learn/admin/product/select-product-image",
+      "destination": "/nl/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/nl/quote/learn/admin/erp-connection-add",
+      "destination": "/nl/sale/admin/quote/set-up-quote-connector"
+    },
+    {
+      "source": "/nl/admin/lists/learn/adding-items-to-currency-list",
+      "destination": "/nl/sale/admin/add-currency"
+    },
+    {
+      "source": "/nl/admin/lists/learn/currency",
+      "destination": "/nl/sale/admin/add-currency"
+    },
+    {
+      "source": "/nl/sale/learn/sales-guide/create",
+      "destination": "/nl/sale/admin/create-sales-guide"
+    },
+    {
+      "source": "/nl/sale/learn/sales-guide/deactivate",
+      "destination": "/nl/sale/admin/edit-sales-guide"
+    },
+    {
+      "source": "/nl/sale/learn/sales-guide/edit",
+      "destination": "/nl/sale/admin/edit-sales-guide"
+    },
+    {
+      "source": "/nl/admin/lists/learn/sale-stage",
+      "destination": "/nl/sale/admin/sale-stage"
+    },
+    {
+      "source": "/nl/sale/learn/screen/sale-stage",
+      "destination": "/nl/sale/admin/sale-stage"
+    },
+    {
+      "source": "/nl/admin/lists/learn/sale-type",
+      "destination": "/nl/sale/admin/sale-type"
+    },
+    {
+      "source": "/nl/sale/learn/screen/sales-type-for-stages",
+      "destination": "/nl/sale/admin/sale-type"
+    },
+    {
+      "source": "/nl/quote/learn/add-alternative",
+      "destination": "/nl/sale/learn/quote/add-alternative"
+    },
+    {
+      "source": "/nl/quote/learn/create-quote-document",
+      "destination": "/nl/sale/learn/quote/create-quote-document"
+    },
+    {
+      "source": "/nl/quote/learn/add-product",
+      "destination": "/nl/sale/learn/quote/create"
+    },
+    {
+      "source": "/nl/quote/learn/copy",
+      "destination": "/nl/sale/learn/quote/create"
+    },
+    {
+      "source": "/nl/quote/learn/create",
+      "destination": "/nl/sale/learn/quote/create"
+    },
+    {
+      "source": "/nl/quote/learn/screen/edit-quote-dialog",
+      "destination": "/nl/sale/learn/quote/create"
+    },
+    {
+      "source": "/nl/quote/learn/index",
+      "destination": "/nl/sale/learn/quote/index"
+    },
+    {
+      "source": "/nl/quote/learn/quote-tab",
+      "destination": "/nl/sale/learn/quote/index"
+    },
+    {
+      "source": "/nl/sale/learn/screen/quote-tab",
+      "destination": "/nl/sale/learn/quote/index"
+    },
+    {
+      "source": "/nl/quote/learn/create-order",
+      "destination": "/nl/sale/learn/quote/place-order"
+    },
+    {
+      "source": "/nl/quote/learn/approve",
+      "destination": "/nl/sale/learn/quote/send"
+    },
+    {
+      "source": "/nl/quote/learn/send",
+      "destination": "/nl/sale/learn/quote/send"
+    },
+    {
+      "source": "/nl/quote/learn/versions",
+      "destination": "/nl/sale/learn/quote/send"
+    },
+    {
+      "source": "/nl/sale/learn/stages",
+      "destination": "/nl/sale/learn/index"
+    },
+    {
+      "source": "/nl/sale/learn/use-side-panel",
+      "destination": "/nl/sale/learn/index"
+    },
+    {
+      "source": "/nl/sale/learn/screen/index",
+      "destination": "/nl/sale/learn/index"
+    },
+    {
+      "source": "/nl/sale/learn/sales-guide/index",
+      "destination": "/nl/sale/learn/sales-guides"
+    },
+    {
+      "source": "/nl/sale/learn/sales-guide/sales-guide-tab",
+      "destination": "/nl/sale/learn/sales-guides"
+    },
+    {
+      "source": "/nl/sale/learn/sales-guide/working-with-sales-guide",
+      "destination": "/nl/sale/learn/sales-guides"
+    },
+    {
+      "source": "/nl/sale/learn/screen/sales-guide-admin",
+      "destination": "/nl/sale/learn/sales-guides"
+    },
+    {
+      "source": "/nl/sale/learn/screen/sales-guide-tab",
+      "destination": "/nl/sale/learn/sales-guides"
+    },
+    {
+      "source": "/nl/sale/learn/delete",
+      "destination": "/nl/sale/learn/update"
+    },
+    {
+      "source": "/nl/admin/options/learn/freetext-search/enable",
+      "destination": "/nl/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/nl/admin/options/learn/freetext-search/configure",
+      "destination": "/nl/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/nl/admin/options/learn/freetext-search/index",
+      "destination": "/nl/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/nl/search-options/admin/index",
+      "destination": "/nl/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/nl/search-options/admin/regenerate-index",
+      "destination": "https://help.superoffice.com/docs/11/nl/search-options/admin/regenerate-index.html"
+    },
+    {
+      "source": "/nl/admin/options/learn/freetext-search/stopwords",
+      "destination": "/nl/search-options/admin/stopwords"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/howto/print-company-reports",
+      "destination": "/nl/search-options/selection/learn/howto/print"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/update/add-remove-members-static",
+      "destination": "/nl/search-options/selection/learn/add-remove-members-static"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/create/combine",
+      "destination": "/nl/search-options/selection/learn/combine"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/update/copy-members-to",
+      "destination": "/nl/search-options/selection/learn/copy-members-to"
+    },
+    {
+      "source": "/nl/sale/saint/learn/using-status-monitors-in-dynamic-selections",
+      "destination": "/nl/search-options/selection/learn/create"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/create/copy",
+      "destination": "/nl/search-options/selection/learn/create"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/create/index",
+      "destination": "/nl/search-options/selection/learn/create"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/create/tutorial",
+      "destination": "/nl/search-options/selection/learn/create"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/combined-selections",
+      "destination": "/nl/search-options/selection/learn/index"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/dynamic-selections",
+      "destination": "/nl/search-options/selection/learn/index"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/static-selections",
+      "destination": "/nl/search-options/selection/learn/index"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/screen/index",
+      "destination": "/nl/search-options/selection/learn/index"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/update/delete",
+      "destination": "/nl/search-options/selection/learn/update"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/update/index",
+      "destination": "/nl/search-options/selection/learn/update"
+    },
+    {
+      "source": "/nl/admin/lists/learn/privacy-legal-base-add",
+      "destination": "/nl/security/privacy/admin/add-legal-base"
+    },
+    {
+      "source": "/nl/security/privacy/learn/admin/add-consent-purpose",
+      "destination": "/nl/security/privacy/admin/add-purpose"
+    },
+    {
+      "source": "/nl/admin/lists/learn/privacy-source-add",
+      "destination": "/nl/security/privacy/admin/add-source"
+    },
+    {
+      "source": "/nl/security/privacy/learn/edit-privacy-confirmation-email",
+      "destination": "/nl/security/privacy/admin/edit-privacy-confirmation-email"
+    },
+    {
+      "source": "/nl/security/privacy/learn/implementation-guide",
+      "destination": "/nl/security/privacy/admin/index"
+    },
+    {
+      "source": "/nl/search-options/selection/learn/howto/mass-delete",
+      "destination": "/nl/security/privacy/learn/mass-delete"
     }
   ]
 }

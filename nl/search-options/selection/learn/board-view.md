@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Boardweergave gebruiken in selecties <i class="ph ph-kanban" aria-hidden="true"></i>
+# Boardweergave gebruiken in selecties \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
 
 De boardweergave toont je [selectie][2] in een kolomindeling met kaarten. Je kunt de selectieleden (records op het board) groeperen en filteren en kaarten verplaatsen tussen groepen via drag-and-drop.
 
@@ -47,7 +47,7 @@ De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarte
 
     ![Zijpaneel met projectdetails -screenshot][img12]
 
-* Om een kaart te bewerken, wijs deze aan en klik op **Bewerken** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dezelfde bewerkdialoog wordt gebruikt als elders in SuperOffice CRM – zonder de boardweergave te verlaten.
+* Om een kaart te bewerken, wijs deze aan en klik op **Bewerken** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dezelfde bewerkdialoog wordt gebruikt als elders in SuperOffice CRM - zonder de boardweergave te verlaten.
 
   ![Cursor wijst naar de knop Bewerken op een verkoopkaart -screenshot][img4]
 
@@ -61,8 +61,7 @@ De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarte
 
   ![Geopend taakmenu op een verkoop in boardweergave met beschikbare acties -screenshot][img5]
 
-<!-- markdownlint-disable-next-line MD013 -->
-## Boardindeling aanpassen <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
+## Boardindeling aanpassen \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
 
 ### Groeperen en subgroeperen
 
@@ -142,7 +141,7 @@ De totale waarde wordt **naast elke kolomtitel** weergegeven, zodat je eenvoudig
 
 ### Verkoopdatum badge (alleen verkopen)
 
-Je kunt bepalen wat de **grijze badge** op elke verkoopkaart toont in de boardweergave. Dit helpt je om de leeftijd in één oogopslag te begrijpen – of hoe lang een verkoop open staat of hoe lang deze in de huidige fase zit.
+Je kunt bepalen wat de **grijze badge** op elke verkoopkaart toont in de boardweergave. Dit helpt je om de leeftijd in één oogopslag te begrijpen - of hoe lang een verkoop open staat of hoe lang deze in de huidige fase zit.
 
 1. Klik op <i class="ph ph-gear-six" aria-hidden="true"></i> om het **Instellingen**-paneel te openen.
 
@@ -240,20 +239,18 @@ Gebruik groepering creatief om efficiënt met gegevens te werken.
 * [Projectstatus configureren][18]
 * [Projecttypen configureren][19]
 
-<!-- Verwijzingen -->
-[1]: create.md
-[2]: index.md
-[11]: ../../../learn/getting-started/main-screen/side-panel.md
-[12]: ../../../sale/learn/create.md
-[13]: ../../../sale/admin/sale-stage.md
-[14]: ../../../request/learn/create.md
-[15]: ../../../request/admin/status/create.md
-[16]: ../../../request/admin/category/create.md
-[17]: ../../../project/learn/create.md
-[18]: ../../../project/admin/project-status.md
-[19]: ../../../project/admin/project-type.md
+[1]: ./create
+[2]: ./index
+[11]: ../../../learn/getting-started/main-screen/side-panel
+[12]: ../../../sale/learn/create
+[13]: ../../../sale/admin/sale-stage
+[14]: ../../../request/learn/create
+[15]: ../../../request/admin/status/create
+[16]: ../../../request/admin/category/create
+[17]: ../../../project/learn/create
+[18]: ../../../project/admin/project-status
+[19]: ../../../project/admin/project-type
 
-<!-- Afbeeldingen -->
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

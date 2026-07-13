@@ -43,9 +43,7 @@ Als u de [functie Google Analytics][2] wilt gebruiken, heeft u een Google Analyt
 
 Zodra uw ontvangers op de koppelingen naar uw website klikken, kunt u hun bezoeken aan uw website volgen in Google Analytics.
 
-<!-- Referenced links -->
-[1]: ../../mailing/learn/create/tutorial-email-mailing.md
-[2]: index.md#google
+[1]: ../../mailing/learn/create/tutorial-email-mailing
+[2]: ./index#google
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/google-analytics-tag.png

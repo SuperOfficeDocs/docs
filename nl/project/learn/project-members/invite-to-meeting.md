@@ -20,5 +20,4 @@ language: nl
 3. Klik met de rechtermuisknop en selecteer **Vergadering aanvragen**.
 4. [Geef de juiste gegevens op in de velden][1].
 
-<!-- Referenced links -->
-[1]: ../../../diary/learn/create-follow-up.md#fields
+[1]: ../../../diary/learn/create-follow-up#fields

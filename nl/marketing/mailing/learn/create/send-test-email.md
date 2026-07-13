@@ -50,8 +50,6 @@ Wanneer u een testmailing hebt verzonden, moet u de tellers voor de koppeling(en
 1. ga naar het koppelingentabblad **Gevolgde koppelingen**.
 2. klik op de menuknop naast de desbetreffende koppeling en selecteer **Opnieuw instellen**. De kolom **Klikken** is op **0** gezet. Informatie over klanten die op de koppeling hebben geklikt, wordt ook verwijderd.
 
-<!-- Referenced links -->
-[1]: ../../../learn/best-practices.md#mobile
+[1]: ../../../learn/best-practices#mobile
 
-<!-- Referenced images -->
 [img2]: ../../../../../media/loc/en/marketing/test-mailing.png

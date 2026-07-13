@@ -22,7 +22,7 @@ SuperOffice CRM Suite biedt één geïntegreerd CRM-platform voor verkoop, marke
 
 ## <a id="plans"></a>Plannen
 
-Er zijn vijf plannen beschikbaar. Plannen zijn cumulatief — elk plan bevat alles uit de plannen eronder.
+Er zijn vijf plannen beschikbaar. Plannen zijn cumulatief - elk plan bevat alles uit de plannen eronder.
 
 | Plan | Beschrijving |
 | --- | --- |
@@ -76,9 +76,9 @@ De indicator **Beperkingen** in **Instellingen en onderhoud** > **Licenties** > 
 
 | Gebruik | Indicator | Betekenis |
 | --- | --- | --- |
-| Onder 85 % | Aantal weergegeven in zwart | Normaal — geen actie vereist |
+| Onder 85 % | Aantal weergegeven in zwart | Normaal - geen actie vereist |
 | 85 % of meer | <i class="ph ph-warning" aria-label="Warning"></i> Aantal weergegeven in rood | Nadert de limiet |
-| 100 % | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Aantal weergegeven in rood | Limiet bereikt — de functie is beperkt |
+| 100 % | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Aantal weergegeven in rood | Limiet bereikt - de functie is beperkt |
 
 ![Licences Status tab showing a plan limit warning with an Upgrade button -screenshot][img1]
 
@@ -86,7 +86,7 @@ Als u beheerder bent, verschijnt er een knop **Upgrade** naast een waarschuwings
 
 ## Overgang van SuperOffice CRM Online
 
-Organisaties die migreren van **SuperOffice CRM Online** (het modulaire abonnement) worden geplaatst in het CRM Suite-plan dat overeenkomt met hun huidige licentie. Als u meerdere licenties had, wordt uw plan gebaseerd op de hoogste licentietier. De overgangstiming wordt per account bepaald — u wordt gecontacteerd.
+Organisaties die migreren van **SuperOffice CRM Online** (het modulaire abonnement) worden geplaatst in het CRM Suite-plan dat overeenkomt met hun huidige licentie. Als u meerdere licenties had, wordt uw plan gebaseerd op de hoogste licentietier. De overgangstiming wordt per account bepaald - u wordt gecontacteerd.
 
 | Huidige licentie | CRM Suite-plan |
 | --- | --- |
@@ -103,9 +103,8 @@ Organisaties die migreren van **SuperOffice CRM Online** (het modulaire abonneme
 * [Gebruikersplannen voor SuperOffice CRM Online][2]
 * [Licentie activeren][3]
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: user-plans.md
-[3]: activate.md
+[1]: ./index
+[2]: ./user-plans
+[3]: ./activate
 
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

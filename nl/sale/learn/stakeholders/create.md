@@ -68,14 +68,12 @@ Een bedrijf/contactpersoon kan meerdere keren als belanghebbende worden toegevoe
 
     Als er een opmerking is toegevoegd, verschijnt er een paperclip (<i class="ph ph-paperclip" aria-hidden="true"></i>) naast de kolom **Verkooprol** in het tabblad **Belanghebbenden**. Beweeg de muis over de paperclip om de tooltip met de opmerking weer te geven.
 
-<!-- Referenced links -->
-[1]: ../../../search-options/learn/find-screen.md
-[2]: ../../../project/learn/project-members/add.md
-[3]: ../../../contact/learn/create.md
-[4]: ../../admin/sale-type.md
-[5]: ../../../admin/lists/update-items.md
+[1]: ../../../search-options/learn/find-screen
+[2]: ../../../project/learn/project-members/add
+[3]: ../../../contact/learn/create
+[4]: ../../admin/sale-type
+[5]: ../../../admin/lists/update-items
 
-<!-- Referenced images -->
 [img5]: ../../../../media/loc/en/sale/add-stakeholders-from-history.png
 [img6]: ../../../../media/loc/en/sale/add-stakeholders-from-group.png
 [img7]: ../../../../media/loc/en/sale/add-stakeholders-from-company.png

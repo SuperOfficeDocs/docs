@@ -56,11 +56,9 @@ U kunt een complex of problematisch verzoek doorsturen naar een externe contactp
 
 ![Ontvanger toevoegen bij bulk doorsturen van verzoeken - screenshot][img1]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: create.md#fields
+[1]: ./index#open
+[2]: ./create#fields
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/request/forward-multiple-requests.png
 [img2]: ../../../media/loc/en/request/forward-add-recipient.png
 [img3]: ../../../media/loc/en/request/forward-a-request.png

@@ -38,5 +38,3 @@ Doe een van de volgende dingen:
 * Open een bestaande map voordat je op **Map toevoegen** klikt. Mogelijk moet je eerst het tabblad **Alle ...** selecteren.
 
 * Klik eerst op **Map toevoegen** en selecteer vervolgens een bovenliggende map uit de lijst **Maak als submap van**.
-
-<!-- Referenced images -->

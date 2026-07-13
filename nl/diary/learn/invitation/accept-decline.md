@@ -44,8 +44,6 @@ Deelnemers die worden uitgenodigd voor een vervolgactiviteit ontvangen een meldi
 
 * Wanneer u een uitnodiging ontvangt voor een tijdstip waarop u al bezet bent, wordt een uitroepteken (<i class="ph ph-warning" aria-label="Warning icon"></i>) weergegeven. Dit vestigt uw aandacht op het conflict.
 
-<!-- Referenced links -->
-[1]: ../../../learn/basics/notifications.md#activity
+[1]: ../../../learn/basics/notifications#activity
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/learn/core-notifications.png

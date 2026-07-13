@@ -43,6 +43,6 @@ Bronnen worden weergegeven in het dialoogvenster voor vervolgactiviteiten in Sup
 
 ## Brontype
 
-* **Locatie:** Bronnen van dit type (vergaderruimtes bijvoorbeeld) zijn beschikbaar in de lijst **Locatie** in de vervolgdialoogschermen in SuperOffice CRM, naast de lijst **Bron** in het dialoogvenster **Uitnodiging**.
+* **Locatie:** Bronnen van dit type (vergaderruimtes bijvoorbeeld) zijn beschikbaar in de lijst **Locatie** in de vervolgdialoogschermen in SuperOffice CRM, naast de lijst **Bron** in het dialoogvenster **Uitnodiging**.
 
 * **Anders:** Bronnen van dit type (projectors, speakers, of andere apparatuur) zijn beschikbaar in de lijst **Bron** in het dialoogscherm **Uitnodiging**.

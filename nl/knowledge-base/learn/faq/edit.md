@@ -15,7 +15,7 @@ functional_right: knowledge-base
 audience: person
 audience_tooltip: SuperOffice Service
 language: nl
-redirect_from: 
+redirect_from:
   - /nl/faq/learn/edit
   - /nl/faq/learn/delete
 ---
@@ -43,5 +43,4 @@ redirect_from:
 1. Klik in het scherm **Eigenschappen Item in Veelgestelde vragen** op de knop **Verwijderen** onder aan het scherm.
 1. Klik ter bevestiging op **OK**. Het item in Veelgestelde vragen wordt verwijderd uit SuperOffice.
 
-<!-- Referenced links -->
-[1]: create.md
+[1]: ./create

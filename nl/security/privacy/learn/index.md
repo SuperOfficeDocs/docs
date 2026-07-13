@@ -14,7 +14,7 @@ tier: starter
 language: nl
 ---
 
-# Privacy <i class="ph ph-shield" aria-label="Shield icon"></i>
+# Privacy \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
 
 De functie **Privacy** in SuperOffice helpt u de gegevensprivacy van uw klanten te beschermen en te voldoen aan de General Data Protection Regulation (GDPR) (Algemene verordening gegevensbescherming, AVG) van de EU.
 
@@ -71,8 +71,7 @@ Als u deze optie *niet* selecteert, worden alleen personen die **E-marketing** h
 * [Items toevoegen aan de lijst Privacy - Bron][4]
 * [Conversietracking (UTM)][5]
 
-<!-- Referenced links -->
-[2]: ../admin/add-purpose.md
-[3]: ../admin/add-legal-base.md
-[4]: ../admin/add-source.md
-[5]: ../../../marketing/utm/learn/index.md
+[2]: ../admin/add-purpose
+[3]: ../admin/add-legal-base
+[4]: ../admin/add-source
+[5]: ../../../marketing/utm/learn/index

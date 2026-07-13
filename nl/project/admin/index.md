@@ -24,8 +24,8 @@ Gebruik de schermen **Workflow** en **Lijsten** in **Instellingen en onderhoud**
 
 | Term | Definitie | Locatie in Instellingen en onderhoud |
 |---|---|---|
-| Projecttype | Categoriseert projecten (bijv. "Conferentie" of "Campagne") en koppelt ze aan statussen en gidsen. | **Lijsten** > **Project – Type, status** |
-| Projectstatus | Houdt de fase van een project bij (bijv. "Gepland" of "Lopend"). Gedefinieerd per projecttype. | **Lijsten** > **Project – Status** |
+| Projecttype | Categoriseert projecten (bijv. "Conferentie" of "Campagne") en koppelt ze aan statussen en gidsen. | **Lijsten** > **Project - Type, status** |
+| Projectstatus | Houdt de fase van een project bij (bijv. "Gepland" of "Lopend"). Gedefinieerd per projecttype. | **Lijsten** > **Project - Status** |
 | Projectgids | Een workflowtool die statussen koppelt aan specifieke opvolgingen, documenten en mijlpalen. | **Workflow** > **Projectgids** |
 
 ## Wat wilt u doen?
@@ -37,8 +37,7 @@ Gebruik de schermen **Workflow** en **Lijsten** in **Instellingen en onderhoud**
 
 Deze tools stellen beheerders in staat om projectworkflows aan te passen en efficiëntie en consistentie binnen de organisatie te waarborgen.
 
-<!-- Referenced links -->
-[1]: create-project-guide.md
-[2]: edit-project-guide.md
-[3]: project-status.md
-[4]: project-type.md
+[1]: ./create-project-guide
+[2]: ./edit-project-guide
+[3]: ./project-status
+[4]: ./project-type

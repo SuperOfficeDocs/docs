@@ -38,6 +38,5 @@ U kunt ook nieuwe links maken op het moment dat u de inhoud bewerkt.
 
 Een kleine stip op de linkactietabbladen geeft aan welke linkacties actief zijn. Er kunnen meerdere linkacties actief zijn voor een link.
 
-<!-- Referenced links -->
-[1]: define-link-actions.md
-[2]: ../../learn/create-folder.md
+[1]: ./define-link-actions
+[2]: ../../learn/create-folder

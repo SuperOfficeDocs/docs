@@ -62,18 +62,16 @@ Ontdek de volledige mogelijkheden van SuperOffice CRM. Gebruik onze stapsgewijze
 * [Meer informatie over activiteiten (vervolgactiviteiten, documenten en e-mails)][13]
 * [Mobile CRM: Onderweg toegang tot uw CRM][9]
 
-<!-- Referenced links -->
-[1]: main-screen/navigator.md
-[2]: main-screen/index.md
-[6]: login.md
-[7]: preferences.md
-[8]: connect-your-accounts.md
-[9]: ../../../en/mobile/index.md
+[1]: ./main-screen/navigator
+[2]: ./main-screen/index
+[6]: ./login
+[7]: ./preferences
+[8]: ./connect-your-accounts
+[9]: ../../../en/mobile/index
 
-[11]: ../basics/fav.md
-[13]: ../basics/activity.md
-[14]: ../../search-options/learn/index.md
-[15]: change-language.md
+[11]: ../basics/fav
+[13]: ../basics/activity
+[14]: ../../search-options/learn/index
+[15]: ./change-language
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/learn/contact-screen-with-week.png

@@ -1,7 +1,7 @@
 ---
 uid: help-nl-fastsearcher-navigator
 title: De functie Snel zoeken gebruiken in de navigator
-description: De functie Snel zoeken gebruiken 
+description: De functie Snel zoeken gebruiken
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2
@@ -35,9 +35,7 @@ The Navigator FastSearcher runs two parallel searches:
 
 * U kunt zoeken naar een contactpersoon in het veld Snel zoeken voor **Bedrijven** in de navigator.
 
-<!-- Referenced links -->
-[1]: ../../learn/basics/history.md
-[2]: ../../../en/api/osql/soundx.md
+[1]: ../../learn/basics/history
+[2]: ../../../en/api/osql/soundx
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png
