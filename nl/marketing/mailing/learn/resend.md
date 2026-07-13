@@ -22,7 +22,7 @@ Als u na het bekijken van de resultaten van uw mailing merkt dat veel van de e-m
 
 Er zijn twee manieren waarop u uw mailing opnieuw kunt verzenden.
 
-## Optie 1 – Opnieuw laden en verzenden
+## Optie 1 - Opnieuw laden en verzenden
 
 U kunt uw mailing opnieuw laden en verzenden op het tabblad **Mailings**. Zoek de mailing die u opnieuw wilt verzenden door ernaar te zoeken of door het tabblad **Recent** of **Alles** te doorlopen.
 
@@ -36,7 +36,7 @@ Het systeem stuurt de mailing alleen naar de ontvangers die deze nog niet hebben
 
 Nadat de mailing is verzonden, kunt u naar de mailing gaan en de nieuwe resultaten bekijken op het tabblad **Overzicht** en **Ontvangers**.
 
-## Optie 2 – Opnieuw verzenden naar geselecteerden
+## Optie 2 - Opnieuw verzenden naar geselecteerden
 
 1. Begin met het openen van de mailing die u opnieuw wilt verzenden en ga naar het tabblad **Ontvangers**.
 
@@ -52,10 +52,8 @@ Nadat de mailing is verzonden, kunt u naar de mailing gaan en de nieuwe resultat
 
 SuperOffice Marketing stuurt nu uw mailing naar alle geselecteerde ontvangers.
 
-<!-- Referenced links -->
-[1]: ../../recipients/learn/manage-bounces.md
+[1]: ../../recipients/learn/manage-bounces
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/reload-resend.png
 [img2]: ../../../../media/loc/en/marketing/filter-recipients.png
 [img3]: ../../../../media/loc/en/marketing/resend-to-selected.png

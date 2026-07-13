@@ -32,7 +32,7 @@ Het is optioneel om het bedrijfstarget toe te voegen en om gebruikersspecifieke 
 
 ## Vereisten
 
-Als u alleen een **Sales Premium**-licentie of het **Growth**-plan heeft, kunt u één groep toevoegen voor het targettype **Alle verkopen – Bedrag**. Om meer dan één gebruikersgroep toe te voegen, heeft u ook de licentie **Unlimited sales targets** of het **Super**-plan nodig.
+Als u alleen een **Sales Premium**-licentie of het **Growth**-plan heeft, kunt u één groep toevoegen voor het targettype **Alle verkopen - Bedrag**. Om meer dan één gebruikersgroep toe te voegen, heeft u ook de licentie **Unlimited sales targets** of het **Super**-plan nodig.
 
 ## Voor u begint
 
@@ -127,7 +127,7 @@ Om de revisiegeschiedenis van een verkooptarget (rij) te bekijken, klikt u op <i
 
 * U kunt targets instellen voor voorgaande jaren om statistieken achteraf te creëren.
 
-* Het standaardtargettype is **Alle verkopen – Bedrag**. Met de **Unlimited sales targets**-licentie kunt u extra targettypen aanmaken.
+* Het standaardtargettype is **Alle verkopen - Bedrag**. Met de **Unlimited sales targets**-licentie kunt u extra targettypen aanmaken.
 
 * Gebruik het veld **Vrije-tekst zoeken** om verkooptargets voor specifieke groepen en gebruikers in een bepaald jaar te vinden.
 
@@ -139,10 +139,8 @@ Om de revisiegeschiedenis van een verkooptarget (rij) te bekijken, klikt u op <i
 
 * [Verkooptargets gebruiken in tegels][2]
 
-<!-- Referenced links -->
-[2]: ../../../dashboard/learn/show-sales-targets.md
+[2]: ../../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png
 [img3]: ../../../../media/loc/en/sale/target-adjust-number.png

@@ -37,9 +37,9 @@ Gebruik het tandwielpictogram (<i class="ph ph-gear" aria-hidden="true"></i>) in
 
 | Status | Beschrijving |
 |---|---|
-| Actief | Deelnemer is actief in de flow​. |
-| Voltooid | Deelnemer heeft alle stappen in de flow voltooid​. |
-| Voltooid met succes | Deelnemer heeft de flow voltooid en het succescriterium vervuld. Opgenomen in het succespercentage van de flow​. |
+| Actief | Deelnemer is actief in de flow. |
+| Voltooid | Deelnemer heeft alle stappen in de flow voltooid. |
+| Voltooid met succes | Deelnemer heeft de flow voltooid en het succescriterium vervuld. Opgenomen in het succespercentage van de flow. |
 | Dropout | Deelnemer is uitgevallen, altijd met een gespecificeerde reden voor uitval. |
 | Geannuleerd | Deelnemer zal de flow niet voltooien omdat een beheerder de flow heeft beëindigd. |
 
@@ -56,11 +56,11 @@ Voor alle soorten stappen:
 
 Extra voor e-mailstap:
 
-1. Is hun toestemming geldig?​
+1. Is hun toestemming geldig?
 1. Is het persoon geabonneerd op het type flowabonnement?
-1. Heeft het persoon een geregistreerd e-mailadres?​
-1. Is het e-mailadres al actief binnen de flow?​
-1. Is het e-mailadres gedeblokkeerd?​
+1. Heeft het persoon een geregistreerd e-mailadres?
+1. Is het e-mailadres al actief binnen de flow?
+1. Is het e-mailadres gedeblokkeerd?
 
 Extra voor SMS-stap:
 
@@ -82,8 +82,5 @@ In een splitsing volgen deelnemers de eerste (meest linkse) tak waar ze aan de g
 * Toevoegen aan flow: Geeft aan dat dit persoon wordt voorgesteld voor inschrijving in een andere flow.
 * Verwijderen uit flow: Verwijdert alle registraties van de deelname van het persoon aan de huidige flow.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/flow-participants.png
 [img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png

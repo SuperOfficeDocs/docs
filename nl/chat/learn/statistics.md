@@ -55,11 +55,9 @@ Dubbelklik op een rij in de lijst Binnenkomende chat om [op die chat te antwoord
 
 Dubbelklik op een rij in de lijst **Lopende chatsessies** om mee te luisteren (kijken) met een lopende chat. De agent wordt niet gewaarschuwd dat u de chat controleert. U kunt niet deelnemen aan de chat.
 
-<!-- Referenced links -->
-[1]: respond.md
-[2]: ../../dashboard/learn/create.md
-[3]: ../../dashboard/learn/add-tile.md
+[1]: ./respond
+[2]: ../../dashboard/learn/create
+[3]: ../../dashboard/learn/add-tile
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-dashboard-statistics.png
 [img2]: ../../../media/loc/en/chat/chat-dashboard.png

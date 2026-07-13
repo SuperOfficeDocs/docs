@@ -49,12 +49,10 @@ Wanneer een klant dit formulier invult, worden de informatie en details automati
 * [Klantportaal configureren][2]
 * [Werken met formulieren][1]
 
-<!-- Referenced links -->
-[1]: ../../marketing/forms/learn/index.md
-[3]: ../../marketing/forms/learn/create.md
-[2]: config.md
+[1]: ../../marketing/forms/learn/index
+[3]: ../../marketing/forms/learn/create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png
 [img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png

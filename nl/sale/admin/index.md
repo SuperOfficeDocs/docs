@@ -27,7 +27,7 @@ Gebruik de schermen **Workflow** en **Lijsten** in **Instellingen en onderhoud**
 | Verkooptype | Categoriseert verkopen (bijvoorbeeld "Nieuwe klant" of "Verlenging") en koppelt deze aan fasen en gidsen. | **Lijsten** > **Verkoop - Type, Fasen, Offerte** |
 | Verkoopfase | Houdt de fase van een verkoop bij (bijvoorbeeld "Offerte" of "Contractondertekening"). Gedefinieerd per verkooptype. | **Lijsten** > **Verkoop - Fase** |
 | Verkoopgids | Een workflowtool die fasen koppelt aan specifieke opvolgtaken en documenten. | **Workflow** > **Verkoopgids** |
-| Valuta | Een lijstitem dat de beschikbare valuta's voor verkoopbedragen definieert, inclusief wisselkoers en eenheid. | **Lijsten** > **Algemeen – Valuta** |
+| Valuta | Een lijstitem dat de beschikbare valuta's voor verkoopbedragen definieert, inclusief wisselkoers en eenheid. | **Lijsten** > **Algemeen - Valuta** |
 | Basisvaluta | De primaire valuta die wordt gebruikt voor systeemwijde berekeningen en wisselkoersen. | **Voorkeuren** > **Globale voorkeuren** > **Systeem** > **Basisvaluta** |
 
 ## Uw verkooplijsten aanpassen
@@ -53,9 +53,8 @@ Bekijk de volgende lijsten om te zien of u ze wilt wijzigen of niet:
 
 Deze tools stellen beheerders in staat om verkoopprocessen op maat te maken, wat efficiëntie en consistentie binnen teams waarborgt.
 
-<!-- Referenced links -->
-[1]: create-sales-guide.md
-[2]: edit-sales-guide.md
-[3]: sale-stage.md
-[4]: sale-type.md
-[5]: add-currency.md
+[1]: ./create-sales-guide
+[2]: ./edit-sales-guide
+[3]: ./sale-stage
+[4]: ./sale-type
+[5]: ./add-currency

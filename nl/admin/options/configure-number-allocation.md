@@ -88,5 +88,4 @@ De volgende tabel laat de gevolgen zien van de verschillende combinaties van de 
 
 * [Standaardwaarden voor nieuwe documentsjablonen opgeven][3]
 
-<!-- Referenced links -->
-[3]: ../../document/templates/admin/document-template-defaults.md
+[3]: ../../document/templates/admin/document-template-defaults

@@ -83,15 +83,13 @@ Bij het maken of bewerken van een taak of document kunt u koppelingen toevoegen 
 * [Tabblad Verzoeken][6]
 * [Tabblad Personen][7]
 
-<!-- Referenced links -->
-[1]: ../../project/learn/index.md
-[2]: ../../sale/learn/index.md
-[3]: ../../diary/learn/create-follow-up.md
-[4]: ../../document/learn/create.md
-[5]: ../section-tabs/relations-tab.md
-[6]: ../section-tabs/activities-tab.md
-[7]: ../section-tabs/contacts-tab.md
-[8]: ../../search-options/learn/find-screen.md
+[1]: ../../project/learn/index
+[2]: ../../sale/learn/index
+[3]: ../../diary/learn/create-follow-up
+[4]: ../../document/learn/create
+[5]: ../section-tabs/relations-tab
+[6]: ../section-tabs/activities-tab
+[7]: ../section-tabs/contacts-tab
+[8]: ../../search-options/learn/find-screen
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/diary/links.png

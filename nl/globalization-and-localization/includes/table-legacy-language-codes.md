@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | ID | Taal |
 |:-:|---|
 | NO | Noors |

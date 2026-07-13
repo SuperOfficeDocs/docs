@@ -49,8 +49,5 @@ De lijst **Privacy - Bron** bevat opties die gebruikers selecteren om aan te ton
 
 * [Items toevoegen aan de lijst Privacy - Rechtsgrondslag][2]
 
-<!-- Referenced links -->
-[1]: ../../../document/templates/admin/link-template.md
-[2]: add-legal-base.md
-
-<!-- Referenced images -->
+[1]: ../../../document/templates/admin/link-template
+[2]: ./add-legal-base

@@ -49,7 +49,5 @@ Als een contactpersoon niet wordt gevonden in SuperOffice, kunt een nieuwe perso
 
 ![U kunt een nieuwe contactpersoon toevoegen aan SuperOffice CRM via het zijpaneel -screenshot][img2]
 
-<!-- Referenced links -->
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-link-to-contact.png
 [img2]: ../../../media/loc/en/chat/chat-add-new-to-contact.png

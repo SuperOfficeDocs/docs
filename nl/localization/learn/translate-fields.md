@@ -17,7 +17,7 @@ redirect_from: /nl/globalization-and-localization/learn/translate-fields
 language: nl
 ---
 
-# Vertaling <i class="ph ph-translate" aria-hidden="true"></i>
+# Vertaling \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
 
 De standaardvelden en andere UI-teksten zijn beschikbaar in alle SuperOffice-talen. Als u uw eigen velden of teksten maakt (zoals namen van dashboards en tegels), kunt u vertalingen toevoegen voor de relevante talen binnen uw organisatie.
 
@@ -36,5 +36,4 @@ Het pictogram **Vertalen** (<i class="ph ph-translate" aria-hidden="true"></i>) 
 
 [Wijzig de taalinstellingen][1] onder <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** en controleer of uw vertaling in de relevante taal (talen) wordt weergegeven.
 
-<!-- Referenced links -->
-[1]: ../../learn/getting-started/change-language.md
+[1]: ../../learn/getting-started/change-language

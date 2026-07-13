@@ -26,5 +26,4 @@ Soms moet u het aantal klikken terugzetten op nul. Dit is bijvoorbeeld het geval
 
 3. Klik op <i class="ph ph-list" aria-label="Task menu"></i> naast de koppeling en selecteer **Opnieuw instellen**. De teller in de kolom **Klikken** gaat naar 0. Informatie over klanten die op de link hebben geklikt, wordt ook verwijderd.
 
-<!-- Referenced links -->
-[6]: ../../mailing/learn/create/send-test-email.md
+[6]: ../../mailing/learn/create/send-test-email

@@ -109,7 +109,7 @@ Bij het bewerken van antwoordsjablonen en mailings kunt u sjabloonvariabelen inv
 | customer.ourContact | ID (ejuser) van de agent gemarkeerd als de primaire ondersteuningscontact voor deze klant |
 | customer.password | Wachtwoord in SuperOffice Customer Centre |
 | customer.phone | Telefoonnummer |
-| customer.salutation | Begroeting – volledige naam indien beschikbaar, of e-mailadres als naam onbekend is |
+| customer.salutation | Begroeting - volledige naam indien beschikbaar, of e-mailadres als naam onbekend is |
 | customer.title | Titel |
 | customer.username | Gebruikersnaam in SuperOffice Customer Centre |
 | makeSalutation(customer.id) | Begroeting |

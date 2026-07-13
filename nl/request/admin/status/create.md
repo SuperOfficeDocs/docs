@@ -49,5 +49,4 @@ index: true
 
 * [Hoe 'Volgende verzoek in wachtrij ophalen' instellen][1]
 
-<!-- Referenced links -->
-[1]: ../next-in-queue.md
+[1]: ../next-in-queue

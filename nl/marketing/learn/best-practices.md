@@ -71,7 +71,7 @@ Een van de belangrijkste aspecten van deze technische delen is de **[SPF-record 
 
 ## Gebruik e-mail domein validatie
 
-Hopelijk gebruikt u al de flexibele opties om de From- en Reply-to-velden aan te passen bij het instellen van een mailing in SuperOffice. Dit is geweldig als u aangepaste tekst zoals **< Jeanette van SuperOffice >** wilt toevoegen om als afzender te worden weergegeven. Of als u een e-mail namens uw collega of baas verstuurt.
+Hopelijk gebruikt u al de flexibele opties om de From- en Reply-to-velden aan te passen bij het instellen van een mailing in SuperOffice. Dit is geweldig als u aangepaste tekst zoals **\< Jeanette van SuperOffice >** wilt toevoegen om als afzender te worden weergegeven. Of als u een e-mail namens uw collega of baas verstuurt.
 
 Maar als u een niet-gevalideerd of verkeerd gespelde e-mail toevoegt, kan dat uw e-mail bezorgbaarheid schaden.
 
@@ -81,13 +81,13 @@ Auteurs zien een bericht als ze een niet-gevalideerd e-mailadres in het From-vel
 
 ## Automatisering
 
-* Specificeer een maximale wachttijd om te voorkomen dat deelnemers voor altijd actief blijven in een flow.​
+* Specificeer een maximale wachttijd om te voorkomen dat deelnemers voor altijd actief blijven in een flow.
 
-* Werk deelnemers bij met nieuwe informatie tijdens de flow. Bijvoorbeeld, stel een nieuwe interesse of een nieuwe categorie in terwijl het contact zich ontwikkelt; voeg toe en verwijder ze uit lijsten​.
+* Werk deelnemers bij met nieuwe informatie tijdens de flow. Bijvoorbeeld, stel een nieuwe interesse of een nieuwe categorie in terwijl het contact zich ontwikkelt; voeg toe en verwijder ze uit lijsten.
 
 * Om dubbele of tegenstrijdige acties te voorkomen: Neem alle acties op één plaats op, hetzij in het formulier of in de flow.
 
-* Je kunt dezelfde ervaring bereiken door één flow te splitsen of de communicatie in twee verschillende flows te organiseren. Of je één flow moet splitsen of meerdere flows moet definiëren, hangt af van het scenario en welk resultaat je wilt volgen. Hoe meer twee communicatiepaden gemeen hebben, hoe efficiënter het voor de gebruiker is om ze binnen dezelfde flow te organiseren.​
+* Je kunt dezelfde ervaring bereiken door één flow te splitsen of de communicatie in twee verschillende flows te organiseren. Of je één flow moet splitsen of meerdere flows moet definiëren, hangt af van het scenario en welk resultaat je wilt volgen. Hoe meer twee communicatiepaden gemeen hebben, hoe efficiënter het voor de gebruiker is om ze binnen dezelfde flow te organiseren.
 
 ## <a id="mobile"></a>Het bericht aanpassen voor weergave op mobiele apparaten
 
@@ -97,15 +97,12 @@ Klik op **Mobiel** (<i class="ph ph-device-mobile" aria-hidden="true"></i>) in h
 
 Als u de mobielspecifieke instellingen voor een bericht wilt aanpassen, selecteert u een sectie in het bericht en klikt u op **Mobiel** in het zijpaneel. U kunt nu de opmaak definiëren voor de weergave van het bericht op mobiele apparaten en ook selecteren welke elementen (zoals afbeeldingen) u wilt uitsluiten van mobiele apparaten.
 
-<!-- Referenced links -->
-[1]: ../recipients/learn/index.md#selections
-[2]: ../recipients/learn/manage-bounces.md
-[3]: ../editor/learn/add-unsubscribe-link.md
-[4]: ../mailing/learn/create/send-test-email.md
-[5]: ../../security/privacy/admin/add-legal-base.md
-[6]: ../mailing/admin/add-domain.md
-[7]: ../../../en/online/mail-services/mailgun/spf/index.md
+[1]: ../recipients/learn/index#selections
+[2]: ../recipients/learn/manage-bounces
+[3]: ../editor/learn/add-unsubscribe-link
+[4]: ../mailing/learn/create/send-test-email
+[5]: ../../security/privacy/admin/add-legal-base
+[6]: ../mailing/admin/add-domain
+[7]: ../../../en/online/mail-services/mailgun/spf/index
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/
-
-<!-- Referenced images -->

@@ -55,7 +55,6 @@ Als een bericht twee kwesties bevat die afzonderlijk moeten worden behandeld, ku
 * [Verzoeken splitsen][2]
 * [Verzoeken samenvoegen][3]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: split-request.md
-[3]: merge.md
+[1]: ./index#open
+[2]: ./split-request
+[3]: ./merge

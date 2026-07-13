@@ -14,7 +14,7 @@ topic: web panel
 tier: core
 language: nl
 index: true
-redirect_from: 
+redirect_from:
   - /nl/ui/web-panels/learn/index
   - /nl/admin/lists/learn/web-panel
 ---
@@ -38,20 +38,20 @@ Webpanelen ondersteunen een reeks inhoudstypen:
 
 De **weergavelocatie** wordt gedefinieerd wanneer u het paneel configureert. Dit bepaalt waar in SuperOffice het paneel verschijnt.
 
-* **Zijpaneel** – Verschijnt in het inklapbare paneel aan de zijkant van vele CRM-schermen.
-* **Werkbalk** – Voegt een knop toe aan de werkbalk.
-* **Navigatorknop** – Voegt een knop toe aan het hoofdmenu.
+* **Zijpaneel** - Verschijnt in het inklapbare paneel aan de zijkant van vele CRM-schermen.
+* **Werkbalk** - Voegt een knop toe aan de werkbalk.
+* **Navigatorknop** - Voegt een knop toe aan het hoofdmenu.
 * **Panelen:**
-  * **Bedrijfs-, Persoons-, Project-, Verkoop- en Selectiekaarten** – Voegt een snelkoppeling toe in het **www**-tabblad voor elk scherm.
-  * **Webpaneel op SuperOffice-knop** – Opent vanuit het SuperOffice-logo (linkerbovenhoek). Meerdere URL's verschijnen als tabbladen rechts.
-  * **Sectietabbladen (in Bedrijfs-, Persoons-, Project- en Verkoopschermen)** – Voegt een apart tabblad toe dat de panelinhoud opent.
+  * **Bedrijfs-, Persoons-, Project-, Verkoop- en Selectiekaarten** - Voegt een snelkoppeling toe in het **www**-tabblad voor elk scherm.
+  * **Webpaneel op SuperOffice-knop** - Opent vanuit het SuperOffice-logo (linkerbovenhoek). Meerdere URL's verschijnen als tabbladen rechts.
+  * **Sectietabbladen (in Bedrijfs-, Persoons-, Project- en Verkoopschermen)** - Voegt een apart tabblad toe dat de panelinhoud opent.
 * **Dialoogvensters:**
-  * **Vervolgactiviteitdialoogvenster** – Voegt een snelkoppeling toe in het **www**-tabblad van het vervolgactiviteitdialoogvenster.
-  * **Document-, Product- en Offertedialoogvensters** – Voegt een snelkoppeling toe in het **www**-tabblad van elk dialoogvenster.
+  * **Vervolgactiviteitdialoogvenster** - Voegt een snelkoppeling toe in het **www**-tabblad van het vervolgactiviteitdialoogvenster.
+  * **Document-, Product- en Offertedialoogvensters** - Voegt een snelkoppeling toe in het **www**-tabblad van elk dialoogvenster.
 * **Menu's:**
-  * **Werkzeugmenu** – Verschijnt onder **Andere toepassingen** bij het klikken op de **Tools**-knop in de Navigator.
-  * **Weergavemenu** – Verschijnt in de menuoptie **Andere toepassingen**.
-* **Dashboard-tegels** – Beschikbaar in de tegelinhoudskiezer voor dashboard-widgets.
+  * **Werkzeugmenu** - Verschijnt onder **Andere toepassingen** bij het klikken op de **Tools**-knop in de Navigator.
+  * **Weergavemenu** - Verschijnt in de menuoptie **Andere toepassingen**.
+* **Dashboard-tegels** - Beschikbaar in de tegelinhoudskiezer voor dashboard-widgets.
 
 ### In Service (verouderd)
 
@@ -87,8 +87,5 @@ Webpanelen laden dynamisch inhoud op basis van CRM-context en de URL die is gede
 * [Webpaneel toevoegen][1]
 * [Webpanelen bouwen][2]
 
-<!-- Referenced links -->
-[1]: add-web-panel.md
-[2]: ../../../../en/customization/web-panels/dev/index.md
-
-<!-- Referenced images -->
+[1]: ./add-web-panel
+[2]: ../../../../en/customization/web-panels/dev/index

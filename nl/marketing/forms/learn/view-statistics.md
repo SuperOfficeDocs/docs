@@ -51,12 +51,10 @@ Om efficiënter te werken, kunt u de records filteren om één of meer formulier
 
 Met een [dashboard voor formulierverzending][3] is het eenvoudig om de bijbehorende gegevens te meten en te visualiseren. Met het dashboard kunt u prestaties, trends en productiviteit bijhouden.
 
-<!-- Referenced links -->
-[1]: process-submissions.md
-[2]: ../../mailing/learn/view-statistics.md
-[3]: ../../../dashboard/learn/show-marketing.md
+[1]: ./process-submissions
+[2]: ../../mailing/learn/view-statistics
+[3]: ../../../dashboard/learn/show-marketing
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/form-submissions-filter.png
 [img3]: ../../../../media/loc/en/marketing/view-form-screen.png
 [img2]: ../../../../media/loc/en/marketing/form-report-dx.png

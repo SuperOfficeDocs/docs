@@ -100,7 +100,7 @@ Standaardwaarden helpen om handmatige gegevensinvoer te verminderen voor velden 
 
     * **Standaardwaarde instellen:** Pas automatisch een specifieke waarde toe tijdens de synchronisatie. U moet een waarde invoeren.
     * **Gebruiker om waarde vragen:** Laat de gebruiker handmatig een waarde invoeren.
-    * **Verplicht – gebruiker moet waarde invullen:** Vereist dat een waarde wordt opgegeven. U moet hierbij ook een van bovenstaande opties kiezen.
+    * **Verplicht - gebruiker moet waarde invullen:** Vereist dat een waarde wordt opgegeven. U moet hierbij ook een van bovenstaande opties kiezen.
 
     ![Standaardwaarde voor synchronisatie toevoegen -screenshot][img4]
 
@@ -157,9 +157,6 @@ Als de richtingspijlen grijs blijven, zelfs na het selecteren van een SuperOffic
 
 Wijs met de muis op de pijl om een tooltip met uitleg te bekijken.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/erp/erp-connection-settings.png
 [img2]: ../../../media/loc/en/erp/configure-field-mapping.png
 [img3]: ../../../media/loc/en/erp/list-of-default-values.png

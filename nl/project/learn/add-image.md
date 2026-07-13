@@ -53,7 +53,4 @@ Op het tabblad **Afbeelding** kunt u een afbeelding voor een project uploaden en
     * Klikken op **OK** en **Opslaan** om terug te keren naar de standaardafbeelding.
     * Of een nieuwe afbeelding uploaden/selecteren en vervolgens op **OK** en **Opslaan** klikken om de wijzigingen toe te passen.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/project/project-image.png

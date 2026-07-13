@@ -69,9 +69,7 @@ Deze instellingen zijn van toepassing op alle ERP-verbindingen van de Quote Conn
 * [Een product toevoegen aan een prijslijst][1]
 * [Een product toevoegen/bewerken in een offerte][2]
 
-<!-- Referenced links -->
-[1]: price-list-and-products.md
-[2]: ../../learn/quote/create.md#add-products
+[1]: ./price-list-and-products
+[2]: ../../learn/quote/create#add-products
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

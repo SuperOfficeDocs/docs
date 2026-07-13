@@ -27,10 +27,8 @@ Uw klanten hebben zelfs toegang tot deze veelgestelde vragen via het klantportaa
 * [Klantportaal configureren][2]
 * [Veelgestelde vragen publiceren][3]
 
-<!-- Referenced links -->
-[1]: ../../knowledge-base/learn/faq/create.md
-[3]: ../../knowledge-base/learn/faq/publish.md
-[2]: config.md
+[1]: ../../knowledge-base/learn/faq/create
+[3]: ../../knowledge-base/learn/faq/publish
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/set-up-a-faq.png

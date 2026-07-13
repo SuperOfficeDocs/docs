@@ -30,10 +30,7 @@ De **kennisdatabase** is toegankelijk vanuit het **Hoofdmenu** in de bovenste ba
 
 * **E-mailadressen**: hier kunt u een [lijst met e-mailadressen maken][4] die u vaak gebruikt, bijvoorbeeld van personen die geen gebruikers zijn en niet als persoon zijn vastgelegd in SuperOffice CRM. Deze adressen zijn vervolgens toegankelijk op de meeste locaties in het programma waar u e-mailberichten kunt versturen.
 
-<!-- Referenced links -->
-[1]: external-document.md
-[2]: faq/index.md
-[3]: reply-templates/index.md
-[4]: email-addresses.md
-
-<!-- Referenced images -->
+[1]: ./external-document
+[2]: ./faq/index
+[3]: ./reply-templates/index
+[4]: ./email-addresses

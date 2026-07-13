@@ -47,11 +47,9 @@ index: true
 
 1. Klik op **Opslaan**. Het verzoektype is aangemaakt.
 
-<!-- Referenced links -->
-[3]: ../priority/index.md
-[4]: ../status/index.md
-[5]: ../../../knowledge-base/learn/reply-templates/index.md
+[3]: ../priority/index
+[4]: ../status/index
+[5]: ../../../knowledge-base/learn/reply-templates/index
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/request/add-request-type.png
 [img3]: ../../../../media/loc/en/request/edit-request-type-values.png

@@ -1,0 +1,67 @@
+---
+uid: help-nl-request-type
+title: Verzoektypen
+description: Verzoektypen
+keywords: verzoek, type, verzoektype, tabblad Verzoektypen
+author: digitaldiina
+date: 06.10.2026
+version: 12.0
+content_type: concept
+audience: settings
+audience_tooltip: Settings and maintenance
+tier: growth
+language: nl
+redirect_from: /nl/request/learn/type/index
+index: true
+---
+
+import NoteInsufficientRights from "../../../learn/includes/note-insufficient-rights.mdx";
+
+# Verzoektypen
+
+Alle verzoeken die zijn geregistreerd in SuperOffice hebben een type. De standaardtype is "Request". Om verzoektypes te bekijken, toe te voegen, bij te werken en te verwijderen, ga naar **Instellingen en onderhoud**.
+
+<Note>
+Deze functie vereist een **Service Premium**-licentie of het **Growth**-plan. Om schermindelingen te definiëren op basis van verzoektypes in de Screen Designer, hebben **Service Premium**-gebruikers ook de **Development Tools**-licentie nodig (inbegrepen bij het **Core**-plan en hoger).
+</Note>
+
+## Waarom verzoektypen gebruiken?
+
+Het belangrijkste voordeel van verzoektypes is efficiënte ondersteuning. Een specifiek verzoektype richt zich op een reeks attributen die nodig zijn voor een specifiek proces.
+
+## Voorbeeld
+
+Het financiële team gebruikt verzoeken om inkomende factuurclaims te beheren, waarbij de zichtbaarheid van het factuurnummer als aangewezen veld noodzakelijk is. Daarentegen gebruikt het verkoopteam verzoeken om inkomende leads aan te pakken. In gevallen waarin een verzoek betrekking heeft op een lead, heeft het factuurnummer geen relevantie en moet volledig worden weggelaten uit het zicht.
+
+## Waar kan ik de verzoektypen vinden?
+
+* In **Instellingen en onderhoud**, selecteer **Verzoeken** in de navigator en vervolgens het tabblad **Verzoektypen**.
+
+<NoteInsufficientRights />
+
+## Instellingen
+
+| Instelling | Beschrijving |
+|---|---|
+| Naam | De naam van het verzoektype. |
+| Beschrijving | Legt het doel van het verzoektype uit. |
+| Pictogram | Wordt gebruikt als visueel label om het type aan te geven. Kies uit een set vooraf gedefinieerde opties. Standaard: ticketpictogram. |
+| Als standaard gebruiken | Geeft aan of dit het standaardtype is voor nieuwe verzoeken. |
+| Beschikbare statussen | Een subset van verzoekstatussen die relevant zijn voor dit type. Gebruikt om de keuzelijst in de gebruikersinterface te filteren. Een leeg veld betekent dat alle statussen beschikbaar zijn. |
+| Standaardstatus | De [status][4] die wordt ingesteld wanneer een agent een nieuw verzoek creëert. Heeft voorrang op andere voorkeuren. Verplicht als **Beschikbare statussen** zijn ingesteld. |
+| Beschikbare prioriteiten | Een subset van verzoekprioriteiten die relevant zijn voor dit type. Gebruikt om de keuzelijst in de gebruikersinterface te filteren. Een leeg veld betekent dat alle prioriteiten beschikbaar zijn. |
+| Standaardprioriteit | De [prioriteit][3] die wordt ingesteld wanneer een agent een nieuw verzoek creëert. Heeft voorrang op andere voorkeuren. Verplicht als **Beschikbare prioriteiten** zijn ingesteld. |
+| Antwoordsjabloon | Het [antwoordsjabloon][5] dat wordt gebruikt wanneer een agent antwoordt op een verzoek van dit type. |
+
+## Gerelateerde inhoud
+
+* [Verzoektype aanmaken][1]
+* [Verzoektype verwijderen][2]
+* [Relatieregels][6]
+
+[1]: ./create
+[2]: ./delete
+[6]: ../relation-rules
+[3]: ../priority/index
+[4]: ../status/index
+[5]: ../../../knowledge-base/learn/reply-templates/index

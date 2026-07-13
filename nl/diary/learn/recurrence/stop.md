@@ -47,9 +47,7 @@ Je kunt ook een herhalende vervolgactiviteit stoppen door deze te selecteren in 
 * [Herhalende vervolgactiviteit maken][1]
 * [Herhalende vervolgactiviteit bewerken][2]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../edit-follow-up.md#repeat
+[1]: ./create
+[2]: ../edit-follow-up#repeat
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

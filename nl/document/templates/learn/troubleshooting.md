@@ -16,7 +16,7 @@ language: nl
 
 Wanneer we een document in SuperOffice maken, halen we alle inhoud van het document als platte tekst op, die ons sjabloonvervangingssysteem gebruikt om sjabloonvariabelen te identificeren en te vervangen.
 
-We zoeken naar een starttag ( `{` of `<`) en vervolgens naar een eindtag (`}` of `>`). De tekst tussen de tags wordt vervolgens gecontroleerd om te zien of het een sjabloonvariabele is. Bijvoorbeeld {**atit**} zal worden herkend als de sjabloonvariabele **atit**, terwijl **{thisisnotatag}** niet wordt herkend als een geldige tag en niet zal worden vervangen.
+We zoeken naar een starttag ( `{` of `<`) en vervolgens naar een eindtag (`}` of `>`). De tekst tussen de tags wordt vervolgens gecontroleerd om te zien of het een sjabloonvariabele is. Bijvoorbeeld \{**atit**\} zal worden herkend als de sjabloonvariabele **atit**, terwijl **\{thisisnotatag\}** niet wordt herkend als een geldige tag en niet zal worden vervangen.
 
 Als een sjabloonvariabele wordt herkend, wordt deze vervangen door de respectieve waarde, zelfs als deze leeg is. Als een sjabloonvariabele nog steeds zichtbaar is in het voltooide gemaakte document, betekent dit dat ons systeem deze niet als een geldige sjabloonvariabele heeft herkend.
 
@@ -94,7 +94,7 @@ Maar om een of andere reden kan de xml rond onze sjabloonvariabelen er uiteindel
 {</a:t><a:rPr lang="en-US" dirty="0" smtClean="0"/><a:t>onam</a:t></a:r><a:r><a:rPr lang="en-US" smtClean="0"/><a:t>}
 ```
 
-Zoals je kunt zien, zijn de start- "{" en eind- "}" tags ver van de sjabloonvariabele-identificatie "onam" geplaatst, dus ons systeem zal dit niet als een geldige sjabloonvariabele herkennen. Het eindresultaat is dat het document na het maken nog steeds de tekst {onam} laat zien.
+Zoals je kunt zien, zijn de start- "\{" en eind- "\}" tags ver van de sjabloonvariabele-identificatie "onam" geplaatst, dus ons systeem zal dit niet als een geldige sjabloonvariabele herkennen. Het eindresultaat is dat het document na het maken nog steeds de tekst \{onam\} laat zien.
 
 ## Wat kan ik doen als dit gebeurt?
 
@@ -128,22 +128,20 @@ Als dit gebeurt, is het hoogstwaarschijnlijk een ander geval van gegenereerde xm
 
 ## Interne structuren
 
-Zo ziet een PowerPoint .pptx eruit na het uitpakken (de slide1.xml is de eigenlijke dia 1):
+Zo ziet een PowerPoint .pptx eruit na het uitpakken (de slide1.xml is de eigenlijke dia 1):
 
 ![PowerPoint -screenshot][img4]
 
-Word .docx (document.xml is het eigenlijke document wanneer het aan de gebruiker wordt getoond):
+Word .docx (document.xml is het eigenlijke document wanneer het aan de gebruiker wordt getoond):
 
 ![Word -screenshot][img5]
 
-Excel .xlsx (sheet1.xml is het eigenlijke blad 1):
+Excel .xlsx (sheet1.xml is het eigenlijke blad 1):
 
 ![Excel -screenshot][img6]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
+[1]: ../variables/index
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/document/troubleshoot-tempvar.png
 [img2]: ../../../../media/loc/en/document/troubleshoot-tempvar-1.png
 [img4]: ../../../../media/loc/en/document/troubleshoot-tempvar-2.png

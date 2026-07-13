@@ -41,11 +41,9 @@ Om het gemakkelijker te maken om meerdere berichten in een verzoek te vinden en 
 * [Klant beantwoorden][3]
 * [Bericht bewerken][4]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: create.md
-[3]: reply.md
-[4]: edit-message.md
+[1]: ./index#open
+[2]: ./create
+[3]: ./reply
+[4]: ./edit-message
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/request/filter-messages.png

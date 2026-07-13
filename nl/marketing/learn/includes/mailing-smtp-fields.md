@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 * **Host**: Het IP-adres of de hostnaam van de e-mailserver die gebruikt wordt voor het verzenden van e-mailberichten. De server moet toegankelijk zijn vanaf de SMTP-poort waarop de SuperOffice-toepassingen worden uitgevoerd.
 
 * **Poort**: Geef aan op welke SMTP-poort de SuperOffice-toepassingen worden uitgevoerd. De standaardpoort is 25.

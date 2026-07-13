@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Kolom | Beschrijving |
 |---|---|
 | Bron - volledige naam | Toont de naam van het bedrijf of de persoon die de actieve partij in de relatie is. |

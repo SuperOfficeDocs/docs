@@ -41,7 +41,7 @@ Het bewerken van een antwoordsjabloon kan betrekking hebben op een van twee ding
 
 ## <a id="delete"></a>Antwoordsjabloon verwijderen
 
-1. Volg stappen 1–3 van **Antwoordsjabloon bewerken** om het scherm **Eigenschappen antwoordsjabloon** te openen.
+1. Volg stappen 1-3 van **Antwoordsjabloon bewerken** om het scherm **Eigenschappen antwoordsjabloon** te openen.
 1. Klik op **Verwijderen** onder in het scherm.
 1. Bevestig de verwijdering wanneer hierom wordt gevraagd. De antwoordsjabloon wordt direct verwijderd.
 
@@ -50,8 +50,7 @@ Het bewerken van een antwoordsjabloon kan betrekking hebben op een van twee ding
 * [Antwoordsjabloon in een nieuwe taal maken][3]
 * [Antwoordsjablonen kopiëren][4]
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/reply.md
-[2]: create.md
-[3]: new-language.md
-[4]: create.md#copy
+[1]: ../../../request/learn/reply
+[2]: ./create
+[3]: ./new-language
+[4]: ./create#copy

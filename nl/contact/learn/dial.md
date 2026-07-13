@@ -70,5 +70,4 @@ Computer\HKEY_CLASSES_ROOT\domycall\shell\open\command
 
 De registervermelding moet verwijzen naar het uitvoerbare bestand dat het binnenkomende belverzoek verwerkt. Het argument `%1` bevat het telefoonnummer dat SuperOffice CRM doorgeeft via het aangepaste protocol.
 
-<!-- Referenced links -->
-[2]: ../../document/templates/learn/template-variables.md
+[2]: ../../document/templates/learn/template-variables
