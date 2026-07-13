@@ -24,10 +24,10 @@ Använd skärmarna **Arbetsflöde** och **Listor** i **Inställningar och underh
 
 | Term | Definition | Plats i Inställningar och underhåll |
 |---|---|---|
-| Försäljningstyp | Kategoriserar försäljningar (till exempel "Ny kund" eller "Förnyelse") och länkar dem till faser och guider. | **Listor** > **Försäljning – Typ, Faser, Offert** |
-| Försäljningsfas | Spårar en försäljnings fas (till exempel "Offert" eller "Kontraktsskrivning"). Definieras per försäljningstyp. | **Listor** > **Försäljning – Fas** |
+| Försäljningstyp | Kategoriserar försäljningar (till exempel "Ny kund" eller "Förnyelse") och länkar dem till faser och guider. | **Listor** > **Försäljning - Typ, Faser, Offert** |
+| Försäljningsfas | Spårar en försäljnings fas (till exempel "Offert" eller "Kontraktsskrivning"). Definieras per försäljningstyp. | **Listor** > **Försäljning - Fas** |
 | Säljguide | Ett arbetsflödesverktyg som länkar faser till specifika händelser och dokument. | **Arbetsflöde** > **Säljguide** |
-| Valuta | Ett listelement som definierar tillgängliga valutor för försäljningsbelopp, inklusive växelkurs och enhet. | **Listor** > **Allmänt – Valuta** |
+| Valuta | Ett listelement som definierar tillgängliga valutor för försäljningsbelopp, inklusive växelkurs och enhet. | **Listor** > **Allmänt - Valuta** |
 | Basvaluta | Den primära valuta som används för systemövergripande beräkningar och växelkurser. | **Inställningar** > **Globala inställningar** > **System** > **Ledvaluta** |
 
 ## Anpassa dina försäljningslistor
@@ -38,10 +38,10 @@ Beroende på vilken bransch ditt företag verkar i kan du skräddarsy systemet g
 
 Ta en titt på de här listorna för att se om du vill ändra dem eller inte:
 
-* Försäljning – Källa
-* Försäljning – Fas
-* Försäljning – Typkategori
-* Försäljning – Typ, Faser, Offert
+* Försäljning - Källa
+* Försäljning - Fas
+* Försäljning - Typkategori
+* Försäljning - Typ, Faser, Offert
 
 ## Vad vill du göra?
 
@@ -53,9 +53,8 @@ Ta en titt på de här listorna för att se om du vill ändra dem eller inte:
 
 Dessa verktyg ger administratörer möjlighet att anpassa försäljningsarbetsflöden, vilket säkerställer effektivitet och konsekvens i hela teamet.
 
-<!-- Referenced links -->
-[1]: create-sales-guide.md
-[2]: edit-sales-guide.md
-[3]: sale-stage.md
-[4]: sale-type.md
-[5]: add-currency.md
+[1]: ./create-sales-guide
+[2]: ./edit-sales-guide
+[3]: ./sale-stage
+[4]: ./sale-type
+[5]: ./add-currency

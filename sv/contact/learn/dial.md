@@ -70,5 +70,4 @@ Computer\HKEY_CLASSES_ROOT\domycall\shell\open\command
 
 Registerposten måste peka på den körbara filen som bearbetar den inkommande samtalsförfrågan. Argumentet `%1` innehåller telefonnumret som SuperOffice CRM skickar genom det anpassade protokollet.
 
-<!-- Referenced links -->
-[2]: ../../document/templates/learn/template-variables.md
+[2]: ../../document/templates/learn/template-variables

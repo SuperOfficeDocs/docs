@@ -1,5 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
-När du har skapat din mållista, förberett utskicket och testat det har du äntligen kommit till den spännande delen – det är dags att skicka ditt utskick.
+När du har skapat din mållista, förberett utskicket och testat det har du äntligen kommit till den spännande delen - det är dags att skicka ditt utskick.
 
 I det sista steget, **Bekräfta**, kan du se en sammanfattning för utskicket och kontrollera att allt stämmer. Eventuella felmeddelanden som visas på denna skärm måste lösas innan utskicket kan skickas. Utskicksalternativen är inaktiverade om några steg är ofullständiga eller information saknas i utskicket. Dessa anges i rött.
 
@@ -31,8 +30,6 @@ Du kan klicka på utskicket i listan om du vill [visa sändningsstatus och stati
 
 Om du vill stoppa utskicket eller starta ett schemalagt utskick före den planerade tidpunkten kan du klicka på knappen **Stopp** respektive **Start**.
 
-<!-- Referenced links -->
-[1]: ../../view-statistics.md
+[1]: ../../view-statistics
 
-<!-- Referenced images -->
 [img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png

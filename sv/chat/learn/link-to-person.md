@@ -48,7 +48,5 @@ Om du inte hittar kontakten i SuperOffice kan du skapa en ny kontakt och nytt f√
 
 ![Du kan l√§gga till en ny kontakt till SuperOffice CRM via sidopanelen -screenshot][img2]
 
-<!-- Referenced links -->
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-link-to-contact.png
 [img2]: ../../../media/loc/en/chat/chat-add-new-to-contact.png

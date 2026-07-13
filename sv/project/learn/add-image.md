@@ -53,7 +53,4 @@ Fliken **Bild** gör det möjligt att ladda upp och hantera bilder för ett proj
     * Klicka på **OK** och **Spara** för att återställa till standardbilden.
     * Eller ladda upp/välja en ny bild och sedan klicka på **OK** och **Spara** för att spara ändringarna.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/project/project-image.png

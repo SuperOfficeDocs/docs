@@ -71,7 +71,7 @@ En av de viktigaste aspekterna av dessa tekniska delar är **[SPF-posten i din d
 
 ## Använd e-postdomänvalidering
 
-Förhoppningsvis använder du redan de flexibla alternativen för att anpassa och specificera Från- och Svar-till-fälten när du ställer in en utskick i SuperOffice. Det är bra när du vill lägga till anpassad text som **< Jeanette från SuperOffice >** för att visas som avsändare. Eller om du skickar ett e-postmeddelande på uppdrag av din kollega eller chef.
+Förhoppningsvis använder du redan de flexibla alternativen för att anpassa och specificera Från- och Svar-till-fälten när du ställer in en utskick i SuperOffice. Det är bra när du vill lägga till anpassad text som **\< Jeanette från SuperOffice >** för att visas som avsändare. Eller om du skickar ett e-postmeddelande på uppdrag av din kollega eller chef.
 
 Men om du lägger till en ej validerad eller felstavad e-postadress kan det skada din e-postleverbarhet.
 
@@ -97,15 +97,12 @@ Du kan klicka på **Mobil** (<i class="ph ph-device-mobile" aria-hidden="true"><
 
 Om du vill justera de mobilspecifika inställningarna för ett meddelande, väljer du ett avsnitt och klickar på **Mobil** i sidopanelen. Du kan nu definiera formateringen för visning av meddelandet på mobila enheter, och även välja vilka element (såsom bilder) som ska exkluderas från mobila enheter.
 
-<!-- Referenced links -->
-[1]: ../recipients/learn/index.md#selections
-[2]: ../recipients/learn/manage-bounces.md
-[3]: ../editor/learn/add-unsubscribe-link.md
-[4]: ../mailing/learn/create/send-test-email.md
-[5]: ../../security/privacy/admin/add-legal-base.md
-[6]: ../mailing/admin/add-domain.md
-[7]: ../../../en/online/mail-services/mailgun/spf/index.md
+[1]: ../recipients/learn/index#selections
+[2]: ../recipients/learn/manage-bounces
+[3]: ../editor/learn/add-unsubscribe-link
+[4]: ../mailing/learn/create/send-test-email
+[5]: ../../security/privacy/admin/add-legal-base
+[6]: ../mailing/admin/add-domain
+[7]: ../../../en/online/mail-services/mailgun/spf/index
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/
-
-<!-- Referenced images -->

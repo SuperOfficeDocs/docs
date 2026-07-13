@@ -44,8 +44,6 @@ Deltagare som har bjudits in till en händelse får ett varningsmeddelande på t
 
 * Om du får en förfrågan för en tidpunkt när du redan är upptagen visas ett utropstecken (<i class="ph ph-warning" aria-label="Warning icon"></i>). Det uppmärksammar dig på konflikten.
 
-<!-- Referenced links -->
-[1]: ../../../learn/basics/notifications.md#activity
+[1]: ../../../learn/basics/notifications#activity
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/learn/core-notifications.png

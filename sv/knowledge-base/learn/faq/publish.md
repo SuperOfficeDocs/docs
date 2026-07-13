@@ -41,8 +41,7 @@ När en ärendhandläggare [skapar ett förslag på en FAQ-post][1] avpubliceras
 * [Skapa en FAQ][1]
 * [Konfigurera flera språk][4]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../../request/learn/index.md
-[3]: workflow.md
-[4]: ../../../localization/learn/customer-languages.md
+[1]: ./create
+[2]: ../../../request/learn/index
+[3]: ./workflow
+[4]: ../../../localization/learn/customer-languages

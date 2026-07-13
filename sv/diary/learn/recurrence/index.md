@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Upprepa händelser <i class="ph ph-arrows-clockwise" aria-hidden="true"></i>
+# Upprepa händelser \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
 
 Det kan hända att du vill skapa en serie bokningar som återkommer med jämna mellanrum, till exempel ett veckomöte för statusuppdatering. Istället för att lägga in dessa möten ett i taget kan du använda funktionen för återkommande händelser.
 
@@ -28,8 +28,8 @@ Om du väljer **Daglig** kan du ange att händelsen ska upprepas varje arbetsdag
 
 | Alternativ | Beskrivning | Exempel |
 |---|---|---|
-| Alla vardagar (mån–fre) | Händelsen upprepas vid samma tidpunkt varje arbetsdag. | |
-| Alla veckodagar (mån–sön) | Händelsen upprepas vid samma tidpunkt varje dag i veckan, inklusive helgen. | |
+| Alla vardagar (mån-fre) | Händelsen upprepas vid samma tidpunkt varje arbetsdag. | |
+| Alla veckodagar (mån-sön) | Händelsen upprepas vid samma tidpunkt varje dag i veckan, inklusive helgen. | |
 | Var &lt;number&gt; dag | Antalet dagar mellan varje möte. | Var 6:e dag. |
 
 ### Veckovis
@@ -65,9 +65,6 @@ Om du väljer **Årlig** kan du ange vilken dag och månad händelsen ska upprep
 * [Redigera en återkommande händelse][1]
 * [Stoppa en återkommande händelse][3]
 
-<!-- Referenced links -->
-[1]: ../edit-follow-up.md#repeat
-[3]: stop.md
-[4]: create.md
-
-<!-- Referenced images -->
+[1]: ../edit-follow-up#repeat
+[3]: ./stop
+[4]: ./create

@@ -38,7 +38,6 @@ Du kan exempelvis skapa en ny status kallad "Väntar på svar" som en mer detalj
 * [Ta bort ärendestatus][2]
 * [Konfigurera Hämta nästa ärende i kön][3]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: delete.md
-[3]: ../next-in-queue.md
+[1]: ./create
+[2]: ./delete
+[3]: ../next-in-queue

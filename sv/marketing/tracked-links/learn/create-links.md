@@ -38,6 +38,5 @@ Du kan även skapa nya länkar medan du redigerar innehållet.
 
 En liten prick på flikarna för länkningsåtgärderna anger vilka länkningsåtgärder som är aktiva. Flera länkningsåtgärder kan vara aktiva för en länk.
 
-<!-- Referenced links -->
-[1]: define-link-actions.md
-[2]: ../../learn/create-folder.md
+[1]: ./define-link-actions
+[2]: ../../learn/create-folder

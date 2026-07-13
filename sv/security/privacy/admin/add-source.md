@@ -1,6 +1,6 @@
 ---
 uid: help-sv-privacy-add-source
-title: Lägga till poster i listan Integritet – Källa
+title: Lägga till poster i listan Integritet - Källa
 description: Den här guiden beskriver hur du ändrar integritetslistorna.
 keywords: Integritet källa lista, Lägg till integritet källa
 author: SuperOffice Product and Engineering
@@ -17,15 +17,15 @@ index: true
 redirect_from: /sv/admin/lists/learn/privacy-source-add
 ---
 
-# Lägga till poster i listan Integritet – Källa
+# Lägga till poster i listan Integritet - Källa
 
-Listan **Integritet – Källa** innehåller alternativ som användare väljer för att visa hur och var de fick samtycke från en kontakt.
+Listan **Integritet - Källa** innehåller alternativ som användare väljer för att visa hur och var de fick samtycke från en kontakt.
 
 ## Steg
 
 1. Välj <i class="ph ph-list-bullets" aria-hidden="true"></i> **Listor** i navigatorn.
 
-1. Välj **Integritet – Källa** från rullgardinsmenyn. Fliken **Poster** visar alla befintliga källor.
+1. Välj **Integritet - Källa** från rullgardinsmenyn. Fliken **Poster** visar alla befintliga källor.
 
 1. Klicka på **Lägg till** för att öppna dialogrutan **Redigera listobjekt**.
 
@@ -47,10 +47,7 @@ Listan **Integritet – Källa** innehåller alternativ som användare väljer f
 
 ## Relaterat innehåll
 
-* [Så lägger du till poster i listan Integritet – Rättslig grund][2]
+* [Så lägger du till poster i listan Integritet - Rättslig grund][2]
 
-<!-- Referenced links -->
-[1]: ../../../document/templates/admin/link-template.md
-[2]: add-legal-base.md
-
-<!-- Referenced images -->
+[1]: ../../../document/templates/admin/link-template
+[2]: ./add-legal-base

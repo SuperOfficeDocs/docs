@@ -18,7 +18,7 @@ index: true
 
 # Url-kodning
 
-Webbläsare begär sidor från webbservrar med hjälp av en URL – **adressen till en webbsida**.
+Webbläsare begär sidor från webbservrar med hjälp av en URL - **adressen till en webbsida**.
 
 Dessa URL:er kan endast skickas över internet som ASCII-tecken. De innehåller dock ofta tecken som inte är ASCII, till exempel *mellanslag*.
 
@@ -33,4 +33,4 @@ Konverteringen ersätter osäkra tecken med ett procenttecken (%) följt av 2 he
 
 ## Unicode
 
-Konverteringen omvandlar alla tecken till UTF-8 och lägger till ett % före varje teckens 1–3 byte långa hexadecimala värde enligt RFC 2279.
+Konverteringen omvandlar alla tecken till UTF-8 och lägger till ett % före varje teckens 1-3 byte långa hexadecimala värde enligt RFC 2279.

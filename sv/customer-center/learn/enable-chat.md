@@ -41,10 +41,8 @@ Du måste [konfigurera chattwidgeten][3] innan du lägger till den i ditt Kundce
 * [Konfigurera Kundcenter][2]
 * [Kundspråk][1]
 
-<!-- Referenced links -->
-[1]: ../../localization/learn/customer-languages.md
-[3]: ../../chat/admin/channel-create.md
-[2]: config.md
+[1]: ../../localization/learn/customer-languages
+[3]: ../../chat/admin/channel-create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/connecting-widget.png

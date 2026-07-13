@@ -31,5 +31,4 @@ Endast användare med den funktionella rättigheten *general administrator* kan 
 
 1. Klicka på **Spara** när du är klar, eller **Avbryt** om du vill ignorera ändringarna.  Du kan också ta bort hela meddelandet genom att klicka på **Ta bort** och sedan **OK**.
 
-<!-- Referenced links -->
-[1]: index.md#open
+[1]: ./index#open

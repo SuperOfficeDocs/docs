@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Använd tavlevy i urval <i class="ph ph-kanban" aria-hidden="true"></i>
+# Använd tavlevy i urval \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
 
 Tavlevy visar ditt [urval][2] i ett kolumnbaserat layout med kort. Du kan gruppera och filtrera urvalsmedlemmarna (posterna som visas i tavlan), samt använda dra-och-släpp för att flytta kort mellan grupper.
 
@@ -47,7 +47,7 @@ Funktionen är densamma för alla stödda urvalstyper: Du kan dra kort, öppna u
 
     ![Sidopanel som visar projektdetaljer -screenshot][img12]
 
-* För att redigera ett kort, peka på det och välj knappen **Redigera** (<i class="ph ph-pencil" aria-hidden="true"></i>). Detta öppnar samma redigeringsdialog som används på andra ställen i SuperOffice CRM – utan att lämna tavlevyn.
+* För att redigera ett kort, peka på det och välj knappen **Redigera** (<i class="ph ph-pencil" aria-hidden="true"></i>). Detta öppnar samma redigeringsdialog som används på andra ställen i SuperOffice CRM - utan att lämna tavlevyn.
 
   ![Markör pekar på redigeringsknappen på ett försäljningskort -screenshot][img4]
 
@@ -61,8 +61,7 @@ Funktionen är densamma för alla stödda urvalstyper: Du kan dra kort, öppna u
 
   ![Uppgiftsmeny i tavlevy för en försäljning med tillgängliga alternativ -screenshot][img5]
 
-<!-- markdownlint-disable-next-line MD013 -->
-## Anpassa tavlelayout <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
+## Anpassa tavlelayout \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
 
 ### Grupper och undergrupper
 
@@ -142,7 +141,7 @@ Det totala värdet visas **bredvid varje kolumnnamn**, vilket hjälper dig att f
 
 ### Försäljningsdatum märke (endast försäljning)
 
-Du kan kontrollera vad det **grå märket** på varje försäljningskort visar i tavlevyn. Detta hjälper dig att förstå ålder vid ett ögonkast – antingen hur länge en försäljning har varit öppen eller hur länge den har varit i sin nuvarande fas.
+Du kan kontrollera vad det **grå märket** på varje försäljningskort visar i tavlevyn. Detta hjälper dig att förstå ålder vid ett ögonkast - antingen hur länge en försäljning har varit öppen eller hur länge den har varit i sin nuvarande fas.
 
 1. Klicka på <i class="ph ph-gear-six" aria-hidden="true"></i> för att öppna **Inställningar**-panelen.
 
@@ -240,20 +239,18 @@ Använd gruppering kreativt för effektiv datahantering.
 * [Konfigurera projektstatus][18]
 * [Konfigurera projekttyper][19]
 
-<!-- Refererade länkar -->
-[1]: create.md
-[2]: index.md
-[11]: ../../../learn/getting-started/main-screen/side-panel.md
-[12]: ../../../sale/learn/create.md
-[13]: ../../../sale/admin/sale-stage.md
-[14]: ../../../request/learn/create.md
-[15]: ../../../request/admin/status/create.md
-[16]: ../../../request/admin/category/create.md
-[17]: ../../../project/learn/create.md
-[18]: ../../../project/admin/project-status.md
-[19]: ../../../project/admin/project-type.md
+[1]: ./create
+[2]: ./index
+[11]: ../../../learn/getting-started/main-screen/side-panel
+[12]: ../../../sale/learn/create
+[13]: ../../../sale/admin/sale-stage
+[14]: ../../../request/learn/create
+[15]: ../../../request/admin/status/create
+[16]: ../../../request/admin/category/create
+[17]: ../../../project/learn/create
+[18]: ../../../project/admin/project-status
+[19]: ../../../project/admin/project-type
 
-<!-- Refererade bilder -->
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

@@ -61,7 +61,6 @@ Om fler än två prioriteter är tillgängliga externt kan kunden välja vilken 
 * [Ta bort prioriteter][2]
 * [Skapa eskaleringsnivåer][3]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: delete.md
-[3]: escalation-levels.md
+[1]: ./create
+[2]: ./delete
+[3]: ./escalation-levels

@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Kolumn | Beskrivning |
 |---|---|
 | Från - fullständigt namn | Visar namnet på företaget eller kontakten som är den aktiva parten i relationen. |

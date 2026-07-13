@@ -16,7 +16,7 @@ language: sv
 
 När vi skapar ett dokument i SuperOffice extraherar vi allt innehåll i dokumentet som vanlig text som vårt mallutbytesystem använder för att identifiera och ersätta mallvariabler.
 
-Vi söker efter en starttagg ( `{` eller `<`) och sedan efter en sluttagg (`}` eller `>`). Texten mellan taggarna kontrolleras sedan för att se om det är en mallvariabel. Till exempel kommer {**atit**} att erkännas som mallvariabeln **atit**, medan **{thisisnotatag}** inte erkänns som en giltig tagg och kommer inte att ersättas.
+Vi söker efter en starttagg ( `{` eller `<`) och sedan efter en sluttagg (`}` eller `>`). Texten mellan taggarna kontrolleras sedan för att se om det är en mallvariabel. Till exempel kommer \{**atit**\} att erkännas som mallvariabeln **atit**, medan **\{thisisnotatag\}** inte erkänns som en giltig tagg och kommer inte att ersättas.
 
 Om en mallvariabel känns igen kommer den att ersättas med sitt respektive värde, även när den är tom. Om en mallvariabel fortfarande är synlig i det färdiga skapade dokumentet betyder det att vårt system inte har känt igen det som en giltig mallvariabel.
 
@@ -94,7 +94,7 @@ Men av någon anledning kan xml runt våra mallvariabler sluta se ut så här:
 {</a:t><a:rPr lang="en-US" dirty="0" smtClean="0"/><a:t>onam</a:t></a:r><a:r><a:rPr lang="en-US" smtClean="0"/><a:t>}
 ```
 
-Som du kan se är start- "{" och slut- "}" taggarna placerade långt från mallvariabelidentifieraren "onam", så vårt system kommer inte att känna igen detta som en giltig mallvariabel. Slutresultatet är att dokumentet efter skapandet fortfarande visar texten {onam}.
+Som du kan se är start- "\{" och slut- "\}" taggarna placerade långt från mallvariabelidentifieraren "onam", så vårt system kommer inte att känna igen detta som en giltig mallvariabel. Slutresultatet är att dokumentet efter skapandet fortfarande visar texten \{onam\}.
 
 ## Vad kan jag göra när detta händer?
 
@@ -128,22 +128,20 @@ Om detta händer är det högst troligt ett annat fall av genererad xml som stö
 
 ## Interna strukturer
 
-Så här ser en PowerPoint .pptx ut efter uppackning (den slide1.xml är den faktiska bilden 1):
+Så här ser en PowerPoint .pptx ut efter uppackning (den slide1.xml är den faktiska bilden 1):
 
 ![PowerPoint -screenshot][img4]
 
-Word .docx (document.xml är det faktiska dokumentet när det visas för användaren):
+Word .docx (document.xml är det faktiska dokumentet när det visas för användaren):
 
 ![Word -screenshot][img5]
 
-Excel .xlsx (sheet1.xml är det faktiska blad 1):
+Excel .xlsx (sheet1.xml är det faktiska blad 1):
 
 ![Excel -screenshot][img6]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
+[1]: ../variables/index
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/document/troubleshoot-tempvar.png
 [img2]: ../../../../media/loc/en/document/troubleshoot-tempvar-1.png
 [img4]: ../../../../media/loc/en/document/troubleshoot-tempvar-2.png

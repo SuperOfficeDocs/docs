@@ -1,0 +1,59 @@
+---
+uid: help-sv-import-from-gmail
+title: Importera från Gmail
+description: Importera från Gmail
+keywords: importera från Gmail
+author: SuperOffice Product and Engineering
+date: 06.29.2022
+version: 10.5
+content_type: howto
+category: Settings and maintenance
+topic: Import
+audience: settings
+audience_tooltip: Settings and maintenance
+index: true
+redirect_from: /sv/admin/import/learn/import-from-gmail
+tier: starter
+language: sv
+---
+
+import CautionBackupBeforeImport from "./includes/caution-backup-before-import.mdx";
+import OpenImport from "./includes/open-import.md";
+import AdjustEmailOnly from "./includes/adjust-email-only.md";
+import TroubleshootImport from "./includes/troubleshoot-import.md";
+import ImportComplete from "./includes/import-complete.mdx";
+
+# Importera från Gmail
+
+<CautionBackupBeforeImport />
+
+## Importera företag/kontakter från Gmail
+
+1. <OpenImport />
+
+2. Klicka på ![ikon][img2] Gmail-ikonen under **Välj en importkälla**.
+
+3. Bevilja åtkomst. Vilken dialogruta som visas beror på om du redan är inloggad i Gmail eller inte
+
+    * Om dialogrutan **Begär åtkomst** visas är du redan inloggad i Gmail. Klicka på **Bevilja åtkomst**.
+
+    * Om dialogrutan **Google-konton** visas är du inte inloggad i Gmail. Ange användarnamn och lösenord och logga in i Gmail. Klicka på **Bevilja åtkomst**.
+        Dina Gmail-företag visas under Inställningar och underhåll.
+
+    <Note>
+    Företagen/kontakterna från Gmail importeras inte till SuperOffice-databasen än. SuperOffice läser bara in företagslistan från Gmail så att du kan ange importinställningar.
+    </Note>
+
+## Anpassa importen
+
+<AdjustEmailOnly />
+
+### Felsökning
+
+<TroubleshootImport />
+
+## Slutför importen
+
+<ImportComplete />
+
+[img2]: ../../../media/icons/admin/import-gmail-small.png

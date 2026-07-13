@@ -42,8 +42,5 @@ Så här konfigurerar du chattwidgeten och lägger till den på webbplatsen:
 * [Steg 1: Konfigurera chattwidgeten][1]
 * [Steg 2: Lägg till chattfunktionen på webbplatsen][2]
 
-<!-- Referenced links -->
-[1]: channel-create.md
-[2]: add-javascript.md
-
-<!-- Referenced images -->
+[1]: ./channel-create
+[2]: ./add-javascript

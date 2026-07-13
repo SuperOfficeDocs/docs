@@ -33,5 +33,4 @@ En punkt på fliken **Anteckning** indikerar att en anteckning har lagts till.
 
 För att ta bort en anteckning raderar du helt enkelt all text i fältet. Punkten försvinner då från fliken **Anteckning**.
 
-<!-- Referenced links -->
-[1]: ../../search-options/learn/freetext-search.md
+[1]: ../../search-options/learn/freetext-search

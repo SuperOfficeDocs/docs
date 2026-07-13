@@ -41,7 +41,7 @@ Att redigera en svarsmall kan innebära två olika saker:
 
 ## <a id="delete"></a>Ta bort svarsmall
 
-1. Följ steg 1–3 från **Redigera svarsmall** för att öppna skärmen **Egenskaper för svarsmall**.
+1. Följ steg 1-3 från **Redigera svarsmall** för att öppna skärmen **Egenskaper för svarsmall**.
 1. Klicka på **Ta bort** längst ned på skärmen.
 1. Bekräfta borttagningen när du uppmanas till det. Svarsmallen raderas omedelbart.
 
@@ -50,8 +50,7 @@ Att redigera en svarsmall kan innebära två olika saker:
 * [Skapa ny språkversion av svarsmall][3]
 * [Kopiera svarsmallar][4]
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/reply.md
-[2]: create.md
-[4]: create.md#copy
-[3]: new-language.md
+[1]: ../../../request/learn/reply
+[2]: ./create
+[4]: ./create#copy
+[3]: ./new-language

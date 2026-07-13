@@ -54,7 +54,6 @@ Om ett meddelande innehåller två frågor som bör hanteras separat, kan du del
 * [Dela ett ärende][2]
 * [Slå ihop ärenden][3]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: split-request.md
-[3]: merge.md
+[1]: ./index#open
+[2]: ./split-request
+[3]: ./merge

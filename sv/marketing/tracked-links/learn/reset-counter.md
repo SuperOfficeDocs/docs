@@ -26,5 +26,4 @@ Ibland kan du behöva nollställa antalet klick. Detta kan t.ex. vara aktuellt o
 
 3. Klicka på <i class="ph ph-list" aria-label="Task menu"></i> bredvid länken och välj **Återställ**. Räknaren i kolumnen **Klick** ändras till 0. Informationen om vilka kunder som har klickat på länken tas också bort.
 
-<!-- Referenced links -->
-[6]: ../../mailing/learn/create/send-test-email.md
+[6]: ../../mailing/learn/create/send-test-email

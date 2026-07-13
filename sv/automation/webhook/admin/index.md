@@ -94,9 +94,7 @@ Aviseringsmottagare ser en avisering i SuperOffice när en webhook automatiskt i
 * [Skapa webhook][1]
 * [Webhooks utvecklarguide][2]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../../../en/automation/webhook/dev/index.md
+[1]: ./create
+[2]: ../../../../en/automation/webhook/dev/index
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png

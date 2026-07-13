@@ -1,0 +1,59 @@
+---
+uid: help-sv-contact-move
+title: Flytta en kontakt
+description: Flytta en kontakt till ett annat företag.
+keywords: flytta kontakt, underhåll kontakter, utför på kontakt, koppla från, kontakt
+author: Bergfrid Dias
+date: 02.25.2025
+version: 10.5.2
+content_type: howto
+audience: person
+audience_tooltip: SuperOffice CRM
+tier: starter
+language: sv
+---
+
+import NoteReqManageEntities from "../../learn/includes/note-req-manage-entities.mdx";
+import SelectActionOnActivity from "../../learn/includes/select-action-on-activity.md";
+
+# Flytta en kontakt till ett annat företag
+
+<NoteReqManageEntities />
+
+Använd den här funktionen när en kontakt byter avdelning eller företag, eller om de har registrerats under fel företag. Alternativt kan du koppla bort en kontakt för att ta bort länken till ett företag utan att flytta dem.
+
+<Note>
+Du kan inte flytta kontakter (SuperOffice-användare) på ditt eget företag.
+</Note>
+
+## Steg
+
+1. Öppna dialogrutan **Flytta kontakt**:
+
+    * I fönstret **Kontakt**: Klicka på knappen **Uppgift** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) och välj **Underhåll kontakter** > **Flytta kontakt**.
+    * I fönstret **Företag**: Gå till detaljkortet **Kontakter**, högerklicka på en kontakt och välj **Underhåll kontakter** > **Flytta kontakt**.
+
+2. Under **Utför på kontakt**, välj ett av följande alternativ:
+
+    * **Flytta till**: Ange eller välj det företag kontakten ska flyttas till.
+    * **Koppla från**: Ta bort kontaktens länk till det aktuella företaget.
+
+3. Under **Åtgärd för alla befintliga aktiviteter och försäljningar**, välj ett alternativ:
+
+    <SelectActionOnActivity />
+
+4. Klicka på **Flytta**. Kontakten flyttas till det valda företaget eller kopplas bort, och aktiviteter uppdateras enligt ditt val.
+
+![Dialogrutan Flytta kontakt med alternativ för att flytta eller koppla bort en kontakt och hantera befintliga aktiviteter och försäljningar. -screenshot][img1]
+
+## Relaterat innehåll
+
+* [Slå ihop kontakter][1]
+* [Ta bort en kontakt][2]
+* [Återskapa borttagna företag och kontakter][3]
+
+[1]: ./merge-contacts
+[2]: ./delete
+[3]: ../../learn/basics/deleting-elements#restore
+
+[img1]: ../../../media/loc/en/contact/move-contact.png

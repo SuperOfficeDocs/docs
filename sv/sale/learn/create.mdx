@@ -1,0 +1,114 @@
+---
+uid: help-sv-sale-create
+title: Registrera en försäljning
+description: Registrera försäljningar i SuperOffice Sales för att samla alla affärsmöjligheter och kunduppgifter på ett ställe. Den här guiden visar hur du registrerar en försäljning.
+keywords: skapa försäljning, ny försäljning, lägg till försäljning, registrera försäljning, försäljning
+author: digitaldiina
+date: 06.10.2026
+version: 12.0
+content_type: howto
+license: salesessentials
+tier: starter
+audience: person
+audience_tooltip: SuperOffice CRM
+language: sv
+---
+
+import MoreUdef from "../../learn/includes/more-udef.md";
+
+# Registrera en försäljning
+
+Du kan skapa en försäljning i SuperOffice CRM med hjälp av knappen **Nytt** i toppraden.
+
+## Steg
+
+1. Klicka på **Nytt** i toppraden och välj **Försäljning**.
+
+1. Ange en **försäljningstitel** (obligatoriskt, markeras i rött). Detta är den primära identifieraren för försäljningen.
+
+    ![Fliken Försäljning visar grundläggande fält i försäljningskortet -screenshot][img1]
+
+1. Ange **belopp och valuta** för att uppskatta försäljningens värde.
+
+1. Välj **Försäljningstyp** i rullgardinsmenyn (obligatoriskt). Försäljningstyper definierar processen och kan inkludera faser eller guider. Värdena är fördefinierade i **Inställningar och underhåll**.
+
+1. *(Valfritt)* Lägg till mer information på fliken **Försäljning**, såsom:
+    * Koppla försäljningen till ett **Företag**.
+    * Associera försäljningen med ett pågående **Projekt**.
+    * Justera förväntat avslutsdatum för försäljningen.
+    * Använd den stora textrutan för att ge en valfri beskrivning av försäljningen.
+    * Välj aktuell **Fas** för försäljningen (om tillämpligt). Faser spårar försäljningens framsteg.
+
+    <Note>
+    Om försäljningstypen inte har några kopplade faser har försäljningen statusen **Öppen**.
+    </Note>
+
+1. Välj fliken **Detaljer** för att lägga till finansiell information, såsom kostnad, vinst och konkurrenter.
+
+1. **Lägg till fler detaljer:**
+    * Gå till fliken **Mer** för att [ange anpassade fält][12].
+    * Gå till fliken **Anteckning** för att [lägga till anteckningar][11].
+    * Gå till fliken **Länkar** för att [koppla aktiviteter, dokument eller webbplatser][10] till försäljningen.
+
+1. Klicka på **Spara** för att lagra försäljningen. Försäljningskortet är nu skapat.
+
+## <a id="fields"></a>Viktiga fält förklarade
+
+Följande fält är tillgängliga i fönstret Försäljning. Vissa fält fylls i automatiskt, medan andra kräver manuell inmatning.
+
+<Note>
+Vilka fält som visas kan variera beroende på inställningar i **Skärmdesignern** och andra UI-anpassningar.
+</Note>
+
+<Tabs>
+<Tab title="Fliken Försäljning">
+* **Titel:** Ett obligatoriskt fält för att identifiera försäljningen.
+* **Beskrivning:** Valfritt textfält för att sammanfatta försäljningen.
+* **Försäljningstyp:** Fördefinierade typer som styr processen och kan vara kopplade till faser eller säljguider. Definieras i **Inställningar och underhåll**.
+* **Fas:** Spårar försäljningens framsteg. Tillgängliga faser beror på vald försäljningstyp.
+* **Belopp och valuta:** Uppskattat värde av försäljningen. *(Valuta måste vara aktiverat i Inställningar och underhåll för att använda detta alternativ.)*
+* **Sannolikhet:** Sannolikheten för att försäljningen lyckas (ett procenttal). Baserad på aktuell fas men kan uppdateras manuellt.
+* **Företag:** Det företag som försäljningen är kopplad till.
+* **Kontakt:** Kontaktpersonen på företaget som är kopplad till försäljningen.
+* **Projekt:** Kopplar försäljningen till ett pågående projekt.
+* **Ägare:** Den användare som ansvarar för försäljningen. Standard är den inloggade användaren men kan ändras.
+* **Försäljningsdatum:** Förväntat avslutsdatum för försäljningen.
+* **Nästa aktivitet:** Fylls automatiskt med den äldsta oavslutade händelsen. Datum före dagens datum markeras i rött.
+* **Kryssruta för uppskjuten försäljning:** Markerar försäljningen som pausad och aktiverar fält för **Återöppningsdatum** och **Orsak (uppskjuten)**.
+
+<MoreUdef />
+</Tab>
+
+<Tab title="Fliken Detaljer">
+Fliken **Detaljer** fokuserar på försäljningens finansiella uppgifter.
+
+* **Nummer:** Automatiskt genererat försäljnings-ID.
+* **Källa:** Visar försäljningens källa.
+* **Konkurrent:** Välj en fördefinierad konkurrent kopplad till försäljningen. Du kan bara välja en konkurrent.
+* **Total kostnad:** Kostnad kopplad till försäljningen. Uppdaterar automatiskt vinsten.
+* **Vinst:** Vinst beräknad baserat på försäljningsbelopp och kostnad.
+* **Tillfaller:** Anger vilken avdelning som ansvarar för försäljningen.
+
+Värden för *Konkurrent* och *Tillfaller* definieras i Inställningar och underhåll.
+</Tab>
+
+<Tab title="Flikarna Länkar och Anteckning">
+* **Fliken Länkar**: Bifoga relevanta aktiviteter, dokument eller andra försäljningar.
+* **Fliken Anteckning**: Lägg till fritextanteckningar för att spåra ytterligare information.
+</Tab>
+</Tabs>
+
+## Relaterat innehåll
+
+* [Skapa en offert][4]
+* [Uppdatera en försäljning][1]
+* [Arbeta med säljguider][2]
+
+[1]: ./update
+[2]: ./sales-guides
+[4]: ./quote/create
+[10]: ../../learn/basics/links
+[11]: ../../learn/basics/notes
+[12]: ../../custom-objects/learn/more-tab
+
+[img1]: ../../../media/loc/en/sale/create-sale.png

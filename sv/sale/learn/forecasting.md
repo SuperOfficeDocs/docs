@@ -18,7 +18,7 @@ language: sv
 
 För att nå dina försäljningsmål är det viktigt att ha en hälsosam pipeline. SuperOffice CRM erbjuder två huvudmetoder för att prognostisera försäljning och följa upp resultat: **instrumentpanelsbrickor** och **urval (Sök)**.
 
-Dessa verktyg hjälper dig att identifiera luckor, lyfta fram stillastående affärer och jämföra din faktiska försäljning med dina mål – oavsett om du arbetar individuellt eller i grupp.
+Dessa verktyg hjälper dig att identifiera luckor, lyfta fram stillastående affärer och jämföra din faktiska försäljning med dina mål - oavsett om du arbetar individuellt eller i grupp.
 
 ## Övervaka din pipeline med instrumentpaneler
 
@@ -64,7 +64,7 @@ För att visa hur du kan använda Sök-funktionen för försäljningsprognoser �
 
 3. När du klickar på **Lägg till** visas en rullgardinsmeny. Klicka på **Försäljning** i menyn och välj sedan fältet **Belopp**.
 
-4. Klicka på det andra fältet som för närvarande visar =-tecknet. Välj tecknet **>**.
+4. Klicka på det andra fältet som för närvarande visar =-tecknet. Välj tecknet **\>**.
 
 5. Ange värdet som ska uppfyllas. I detta fall större än 5 000 €. Klicka i det tredje fältet och skriv in 5000.
 
@@ -81,13 +81,11 @@ För att visa hur du kan använda Sök-funktionen för försäljningsprognoser �
 * [Visa ett urval som ett diagram][6]
 * [Använda Sök-skärmen][5]
 
-<!-- Referenced links -->
-[1]: create.md
-[5]: ../../search-options/learn/find-screen.md
-[6]: ../../search-options/selection/learn/howto/display-as-charts.md
-[7]: ../../dashboard/learn/show-sales-targets.md
+[1]: ./create
+[5]: ../../search-options/learn/find-screen
+[6]: ../../search-options/selection/learn/howto/display-as-charts
+[7]: ../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

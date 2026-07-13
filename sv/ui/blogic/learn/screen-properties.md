@@ -29,5 +29,4 @@ Här kan du redigera egenskaperna för en skärm. Du kan skapa ett skript för f
 * **Inläsningsskript (kört efter allt annat)**: Detta skript körs allra sist, efter att kod och skripter för knappar har körts.
 * **Dold variabel**: De variabler som definieras här sparas när skärmen skickas in så att nästa skärm har åtkomst till variablerna.
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/create.md
+[1]: ../../../request/learn/create

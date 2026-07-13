@@ -36,7 +36,7 @@ Du kan även skapa egna mallar i de applikationer du har valt att använda tills
 
 ## Så väljer SuperOffice CRM rätt språkmall
 
-SuperOffice CRM har flera standardmallar på 12–16 språk beroende på malltyp. Bland annat e-postmallar och GDPR-mallar (12 språk).
+SuperOffice CRM har flera standardmallar på 12-16 språk beroende på malltyp. Bland annat e-postmallar och GDPR-mallar (12 språk).
 
 För att säkerställa att du kan kommunicera med dina kunder på deras eget språk (om möjligt) gör SuperOffice CRM automatiskt en språkkontroll för att avgöra vilken språkmall som ska användas. Detta är relevant när du skickar förfrågningar via e-post och när du informerar nya kontakter om att deras uppgifter har sparats. Detta är också ett krav för GDPR-relaterad kommunikation.
 
@@ -61,13 +61,10 @@ För att säkerställa att du kan kommunicera med dina kunder på deras eget spr
 * [Mallvariabler (Service)][8]
 * [Offertmallar][7]
 
-<!-- Referenced links -->
-[1]: template-variables.md
-[4]: create.md
-[2]: ../admin/update-template.md
-[6]: ../admin/link-template.md
-[5]: ../../../admin/lists/user-group-filtering.md
-[7]: quote-templates.md
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables.md
-
-<!-- Referenced images -->
+[1]: ./template-variables
+[4]: ./create
+[2]: ../admin/update-template
+[6]: ../admin/link-template
+[5]: ../../../admin/lists/user-group-filtering
+[7]: ./quote-templates
+[8]: ../../../knowledge-base/learn/reply-templates/template-variables

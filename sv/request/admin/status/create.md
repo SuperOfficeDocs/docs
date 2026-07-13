@@ -49,5 +49,4 @@ redirect_from: /sv/request/learn/status/create
 
 * [Så här konfigurerar du Hämta nästa ärende i kön][1]
 
-<!-- Refererade länkar -->
-[1]: ../next-in-queue.md
+[1]: ../next-in-queue

@@ -57,7 +57,6 @@ Lär dig hur du lägger till och redigerar syften för behandling av personuppgi
 * [Integritet - Rättslig grund][2]
 * [Integritet - Källa][3]
 
-<!-- Referenced links -->
-[1]: ../../../localization/learn/translate-fields.md
-[2]: ../learn/index.md#legal-basis
-[3]: ../learn/index.md#source
+[1]: ../../../localization/learn/translate-fields
+[2]: ../learn/index#legal-basis
+[3]: ../learn/index#source

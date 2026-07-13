@@ -69,9 +69,7 @@ Dessa inställningar gäller globalt för alla ERP-kopplingar via Quote Connecto
 * [Lägg till produkt i en prislista][1]
 * [Lägg till/redigera produkt i offert][2]
 
-<!-- Referenced links -->
-[1]: price-list-and-products.md
-[2]: ../../learn/quote/create.md#add-products
+[1]: ./price-list-and-products
+[2]: ../../learn/quote/create#add-products
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

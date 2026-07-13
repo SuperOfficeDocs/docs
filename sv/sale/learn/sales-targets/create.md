@@ -32,7 +32,7 @@ Det är valfritt att lägga till företagets mål och att ha användarspecifika 
 
 ## Krav
 
-Om du bara har en **Sales Premium**-licens eller **Growth**-planen kan du lägga till en grupp för måltypen **Alla försäljningar – Belopp**. För att lägga till mer än en användargrupp behöver du även licensen *Obegränsade försäljningsmål*.
+Om du bara har en **Sales Premium**-licens eller **Growth**-planen kan du lägga till en grupp för måltypen **Alla försäljningar - Belopp**. För att lägga till mer än en användargrupp behöver du även licensen *Obegränsade försäljningsmål*.
 
 ## Innan du börjar
 
@@ -70,7 +70,7 @@ Innan du börjar använda funktionen för försäljningsmål måste du konfigure
 
 1. Klicka på **Spara**.
 
-    * Upprepa steg 3–10 för att lägga till fler grupper eller företag. Detta kräver licensen *Obegränsade försäljningsmål*.
+    * Upprepa steg 3-10 för att lägga till fler grupper eller företag. Detta kräver licensen *Obegränsade försäljningsmål*.
 
     * Gå tillbaka till steg 2 för att lägga till mål för ett annat år eller klicka på **Spara och stäng** för att avsluta skärmen.
 
@@ -127,7 +127,7 @@ För att visa ändringshistoriken för ett försäljningsmål (rad), klicka på 
 
 * Du kan ställa in mål för tidigare år för att skapa statistik bakåt i tiden.
 
-* Standardmåltypen är **Alla försäljningar – Belopp**. Med licensen *Obegränsade försäljningsmål* kan du skapa fler måltyper.
+* Standardmåltypen är **Alla försäljningar - Belopp**. Med licensen *Obegränsade försäljningsmål* kan du skapa fler måltyper.
 
 * Använd fältet **Fritextsökning** för att hitta försäljningsmål för specifika grupper och användare i ett visst år.
 
@@ -139,10 +139,8 @@ För att visa ändringshistoriken för ett försäljningsmål (rad), klicka på 
 
 * [Använda försäljningsmål i paneler][2]
 
-<!-- Referenced links -->
-[2]: ../../../dashboard/learn/show-sales-targets.md
+[2]: ../../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png
 [img3]: ../../../../media/loc/en/sale/target-adjust-number.png

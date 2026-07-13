@@ -15,7 +15,7 @@ language: sv
 
 # Använda snabbsökning i dialogrutor
 
-![Snabbsökning –screenshot][img3]
+![Snabbsökning -screenshot][img3]
 
 ## Steg
 
@@ -35,8 +35,5 @@ Om du till exempel vill se alla dokumentmallar som finns tillgängliga i SuperOf
 
 ![Skriv in två procenttecken i snabbsökningen för att se alla poster -screenshot][img4]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img3]: ../../../media/loc/en/search-options/quicksearch-dialog.png
 [img4]: ../../../media/loc/en/search-options/getstarted-document-fastsearcher.png
