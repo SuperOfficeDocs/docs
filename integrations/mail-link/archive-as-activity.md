@@ -1,0 +1,67 @@
+﻿---
+uid: mail-link-create-activity
+title: Create activity from email
+description: Saving an email directly in your SuperOffice diary will ensure that you never forget to follow up on a customer or query.
+keywords: archive email, create activity in SuperOffice
+author: digitaldiina
+date: 03.17.2026
+content_type: howto
+category: integration
+topic: Mail Link
+audience: person
+audience_tooltip: SuperOffice CRM
+language: en
+redirect_from:
+  - /en/email/mail-link/learn/archive-as-activity
+  - /da/email/mail-link/learn/archive-as-activity
+  - /de/email/mail-link/learn/archive-as-activity
+  - /nl/email/mail-link/learn/archive-as-activity
+  - /no/email/mail-link/learn/archive-as-activity
+  - /sv/email/mail-link/learn/archive-as-activity
+index: true
+---
+
+# Create activity from email
+
+If you receive an email requesting you to take action, you can convert the email into a follow-up in SuperOffice CRM.
+
+## Steps
+
+1. Select the emails you want to archive.
+
+1. Click the **Archive email** button on the toolbar, and select **Create activity**.
+
+1. If the sender of the email is not listed in SuperOffice CRM, a warning will appear at the top of the dialog. [How to handle unlisted senders][1]
+
+1. In the **Company** field, start typing to search for a company and select from the matches.
+
+1. In the **Contact** field, select a contact from the selected company, or start typing to search.
+
+1. Optionally, select a project and/or sale that you want to link the follow-up to.
+
+1. Use the **Type** dropdown menu to select a follow-up type.
+
+1. Click to select a **Date** and enter a **Time** of day. Today's date is automatically inserted, but can be changed.
+
+1. In the **Visible for** field, click the arrow next to the field. From the list, choose if the activity should be visible to all users, private (visible only to the user defined as owner), or visible to all users in the user group that the owner belongs to.
+
+    > [!NOTE]
+    > The **Visible for** field is available only if this right is assigned to you in Settings and maintenance.
+
+1. In the **Description** field, the email subject and body are automatically inserted. Edit the text as needed.
+
+1. Check the **Remove from inbox** box to remove the email from the inbox and move it to the **Deleted items** folder after it is successfully archived.
+
+1. Click **OK**. The selected emails are archived to SuperOffice CRM as meetings.
+
+## Related content
+
+* [Archive emails on companies/contacts][2]
+* [Archive attachments][3]
+* [Archive emails as requests][4]
+
+<!-- Referenced links -->
+[1]: manage-senders.md
+[2]: archive-on-contact.md
+[3]: archive-attachment.md
+[4]: archive-as-request.md

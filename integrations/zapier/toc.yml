@@ -1,0 +1,15 @@
+items:
+- name: Introduction
+  href: index.md
+- name: Get started
+  href: get-started/index.md
+  items:
+  - name: Connect account
+    href: get-started/set-up-account.md
+  - name: Make a Zap
+    href: get-started/create-zap.md
+- name: How to...
+  href: howto/toc.yml
+  topicHref: howto/index.md
+- name: Triggers, actions, templates
+  href: reference.md
