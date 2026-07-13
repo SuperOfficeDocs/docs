@@ -1,11 +1,14 @@
 ---
-title: downloads
+uid: downloads-api
+title: Online sample and reference downloads
 description: Online sample and reference downloads
-author: SuperOffice Product and Engineering
-keywords:
+keywords: downloads, samples, API examples, integration examples, SuperOffice Online
+author: digitaldiina
+date: 07.13.2026
 content_type: reference
-deployment: online
 platform: web
+deployment: online
+language: en
 ---
 
 # Online sample and reference downloads
@@ -18,9 +21,9 @@ These are example integration applications that target our SuperOffice Online en
 
 [Read here to learn more about programming your first online application][1].
 
-## Most .NET Examples Moved to Github
+## Most .NET Examples Moved to GitHub
 
-[SuperOffice Github][2]
+[SuperOffice GitHub][2]
 
 Database Mirroring Example is a [NuGet package][3].
 
@@ -41,9 +44,8 @@ These examples assume you understand what SuperOffice CRM Online is, and that 
 
 [PartnerSystemUserService.zip][7], 14 Feb 2020, Size: 0.00mb
 
-<!-- Referenced links -->
-[1]: ../../../en/developer-portal/getting-started/index.md
+[1]: ../../en/developer-portal/getting-started/index
 [2]: https://github.com/SuperOffice/SuperOffice.DevNet.Online
-[3]: ../../../en/online/mirroring/overview.md
+[3]: ../../en/online/mirroring/overview
 [4]: https://github.com/SuperOffice/devnet-php-oidc-soap
 [7]: partnersystemuserservice.zip
