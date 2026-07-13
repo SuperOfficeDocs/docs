@@ -1,0 +1,11 @@
+items:
+- name: Översikt
+  href: index.md
+- name: Skapa svarsmall
+  href: create.md
+- name: Översätta en svarsmall
+  href: new-language.md
+- name: Redigera eller ta bort svarsmall
+  href: edit.md
+- name: Svarsmallsvariabler
+  href: template-variables.md

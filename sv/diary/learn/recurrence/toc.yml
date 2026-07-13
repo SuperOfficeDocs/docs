@@ -1,0 +1,7 @@
+items:
+  - name: Översikt
+    href: index.md
+  - name: Skapa en återkommande händelse
+    href: create.md
+  - name: Stoppa en återkommande händelse
+    href: stop.md

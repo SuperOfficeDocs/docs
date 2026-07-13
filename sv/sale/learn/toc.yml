@@ -1,0 +1,31 @@
+items:
+- name: Översikt
+  href: ../index.yml
+- name: Introduktion
+  href: index.md
+- name: Skapa försäljning
+  href: create.md
+- name: Redigera eller ta bort försäljning
+  href: update.md
+- name: Säljguider
+  href: sales-guides.md
+- name: Tutorial
+  href: tutorial.md
+- name: Intressenter
+  href: stakeholders/index.md
+  items:
+  - name: Lägga till intressenter
+    href: stakeholders/create.md
+  - name: Redigera eller ta bort intressenter
+    href: stakeholders/edit.md
+- name: Prognoser
+  href: forecasting.md
+- name: Försäljningsmål
+  href: sales-targets/toc.yml
+  topicHref: sales-targets/index.md
+- name: Offert
+  href: quote/toc.yml
+  topicHref: quote/index.md
+- name: För administratörer
+  href: ../admin/toc.yml
+  topicHref: ../admin/index.md

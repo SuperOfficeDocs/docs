@@ -1,0 +1,113 @@
+### YamlMime:SubCategory
+
+yamlMime: SubCategory
+title: Användaradministration och systeminställningar
+summary: "Lär dig mer om licenser, roller och användare, språk och lokaliseringar, hur du importerar externt innehåll och hur våra AI-tjänster fungerar."
+language: sv
+
+metadata:
+  title: Användaradministration och systeminställningar
+  description: "Licenser, administrering av användare, språk och lokalisering, import"
+  so.product: administration
+  so.topic: landing-page
+  author: Help and Learn
+  so.author: Kirsti A.
+  so.date: 11.29.2022
+
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+
+landingContent:
+
+  # Card
+  - title: Licenser
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Översikt över licens
+          url: license/index.md
+        - text: Fönstret Licenser
+          url: license/index.md
+        - text: Aktivera licens
+          url: license/activate.md
+
+  # Card
+  - title: "Listor, preferenser, alternativ och inställningar"
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Listor
+          url: lists/index.md
+        - text: Preferenser
+          url: preferences/index.md
+        - text: Alternativ
+          url: options/index.md
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: Globala inställningar
+          url: preferences/index.md#global
+
+  # Card
+  - title: Administrering av användare
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Roller
+          url: user-management/role/index.md
+        - text: Skapa en roll
+          url: user-management/role/create-role.md
+        - text: Användare
+          url: user-management/index.md
+        - text: Lägga till användare
+          url: user-management/add-associate.md
+        - text: Uppdatera användarinformation
+          url: user-management/update-user.md
+        - text: Hantera användargrupper
+          url: user-management/user-groups.md
+        - text: Hantera 'Våra företag'
+          url: user-management/our-companies.md
+
+  # Card
+  - title: Import
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Konfigurera importinställningar
+          url: import/settings.md
+        - text: Importera från Excel
+          url: import/from-excel.md
+        - text: Importera produkter från Excel
+          url: import/products-from-excel.md
+        - text: Importera från Gmail
+          url: import/from-gmail.md
+        - text: Importera från Outlook
+          url: import/from-outlook.md
+        - text: Importera från ERP
+          url: import/from-erp.md
+
+  # Card
+  - title: AI
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Kategorisering
+          url: ../ai/learn/categorization.md
+        - text: Textanalys
+          url: ../ai/learn/text-analysis.md
+
+ # Card
+  - title: ERP
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Ansluta till ERP
+          url: ../erp/learn/connect.md
+        - text: Inaktivera synkronisering
+          url: ../erp/learn/disconnect.md

@@ -1,0 +1,11 @@
+items:
+- name: Översikt
+  href: index.md
+- name: Skapa FAQ-post
+  href: create.md
+- name: Redigera eller ta bort FAQ-poster
+  href: edit.md
+- name: Publicera FAQ-poster
+  href: publish.md
+- name: Arbetsflödesfaser
+  href: workflow.md

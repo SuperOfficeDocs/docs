@@ -1,0 +1,311 @@
+### YamlMime:Category
+
+yamlMime: Category
+title: Välkommen
+summary: Är du redo att upptäcka kraften i SuperOffice CRM och lära dig mer? Börja från allra första början och låt oss ta dig med på en spännande CRM-resa med hjälp av våra instruktionsguider, eller hoppa direkt till ett specifikt ämne i menyn.
+brand: devdocs
+language: sv
+
+metadata:
+  title: Välkommen till Learn | SuperOfficeDocs
+  description: "Är du redo att upptäcka kraften i SuperOffice CRM och lära dig mer? Börja från allra första början och låt oss ta dig med på en spännande CRM-resa med hjälp av våra instruktionsguider, eller hoppa direkt till ett specifikt ämne i menyn."
+  so.product: superoffice
+  so.topic: hub-page
+  so.collection: collection
+  author: Bergfrid Dias
+  so.author: digitaldiina
+  so.date: 08.25.2025
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+  items:
+    # Card
+    - title: Kalender
+      itemType: /media/common/calendar.png
+      isImage: "true"
+      url: ../diary/learn/index.md
+    # Card
+    - title: Dashboards
+      itemType: /media/common/gauge.png
+      isImage: "true"
+      url: ../dashboard/learn/index.md
+    # Card
+    - title: Dokument
+      itemType: /media/common/file-text.png
+      isImage: "true"
+      url: ../document/learn/index.md
+    # Card
+    - title: Ärenden
+      itemType: /media/common/ticket.png
+      isImage: "true"
+      url: ../request/learn/index.md
+    # Card
+    - title: Projekt
+      itemType: /media/common/clipboard-text.png
+      isImage: "true"
+      url: ../project/learn/index.md
+    # Card
+    - title: Försäljning
+      itemType: /media/common/currency-circle-dollar.png
+      isImage: "true"
+      url: ../sale/learn/index.md
+    # Card
+    - title: Marknadsföring
+      itemType: /media/common/target.png
+      isImage: "true"
+      url: ../marketing/learn/index.md
+    # Card
+    - title: Mobile CRM
+      itemType: /media/common/device-mobile.png
+      isImage: "true"
+      url: ../../en/mobile/index.md
+
+# conceptualContent section (optional)
+conceptualContent:
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+  title: "" # < 60 chars (optional)
+  summary: ""
+  items:
+  # Card
+    - title: Komma igång
+      summary: ""
+      links:
+      - text: Introduktion
+        itemType: school
+        typeDesc: learn
+        url: getting-started/login.md
+      - text: Lär dig grunderna
+        itemType: school
+        typeDesc: learn
+        url: basics/index.md
+      - text: Demo
+        itemType: video_library
+        typeDesc: video
+        url: https://www.youtube.com/embed/10VQCTgxODc
+      - text: Logga in
+        itemType: list
+        typeDesc: how-to-guide
+        url: getting-started/login.md
+      - text: Preferenser
+        itemType: list
+        typeDesc: how-to-guide
+        url: getting-started/preferences.md
+      - text: Anslut dina konton
+        itemType: list
+        typeDesc: how-to-guide
+        url: getting-started/connect-your-accounts.md
+      - text: Redigera e-postsignatur
+        itemType: list
+        typeDesc: how-to-guide
+        url: getting-started/edit-email-signature.md
+      - text: Layoutobjekten
+        itemType: library_books
+        typeDesc: reference
+        url: getting-started/main-screen/index.md
+
+    # Card
+    - title: Senaste uppdateringar
+      summary: ""
+      links:
+      - text: Versionshistorik
+        itemType: new_releases
+        typeDesc: whats-new
+        url: ../../../release-notes/index.md
+      - text: Ny hanteringen av förfrågningar
+        itemType: explore
+        typeDesc: concept
+        url: ../request/learn/index.md
+      - text: Anpassningsbara skärmar - arkiv
+        itemType: explore
+        typeDesc: concept
+        url: ../customization/screen-designer/admin/working-with-archives.md
+
+    # Card
+    - title: Sökfunktioner
+      summary: ""
+      links:
+      - text: Introduktion
+        itemType: school
+        typeDesc: learn
+        url: ../search-options/learn/index.md
+      - text: Urval
+        itemType: explore
+        typeDesc: concept
+        url: ../search-options/selection/learn/index.md
+      - text: Fritextsökning
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../search-options/learn/freetext-search.md
+      - text: Söka från navigator
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../search-options/learn/in-navigator.md
+      - text: Söka i dialogrutor
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../search-options/learn/in-dialogs.md
+      - text: Fönstret Sök
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../search-options/learn/find-screen.md
+      - text: Sökkriterier
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../search-options/learn/search-criteria.md
+      - text: Nytt urval
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../search-options/selection/learn/create.md
+
+    # Card
+    - title: Företag och kontakt
+      summary: ""
+      links:
+      - text: Introduktion
+        itemType: school
+        typeDesc: learn
+        url: ../contact/learn/index.md
+      - text: Skapa nytt företag
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../company/learn/create.md
+      - text: Skapa ny kontakt
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../contact/learn/create.md
+      - text: Skicka e-post till en kontakt
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../contact/learn/send-email.md
+      - text: Detaljkort för företag
+        itemType: library_books
+        typeDesc: reference
+        url: ../company/learn/index.md
+      - text: Detaljkort under Kontakt
+        itemType: library_books
+        typeDesc: reference
+        url: ../contact/learn/index.md
+
+    # Card
+    - title: E-post och kalender
+      summary: ""
+      links:
+      - text: Introduktion till e-post
+        itemType: school
+        typeDesc: learn
+        url: ../email/learn/index.md
+      - text: Introduktion till kalender
+        itemType: school
+        typeDesc: learn
+        url: ../diary/learn/index.md
+      - text: Ändra standardklienten för e-post i SuperOffice
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../email/learn/change-default-mail-client.md
+      - text: Skriva e-post
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../email/inbox/learn/compose.md
+      - text: Lägg till händelse
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../diary/learn/create-follow-up.md
+      - text: Videomöten
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../diary/learn/video-meetings.md
+      - text: Navigera i fönstret Kalender
+        itemType: library_books
+        typeDesc: reference
+        url: ../diary/learn/index.md
+
+    # Card
+    - title: Dokument
+      summary: ""
+      links:
+      - text: Introduktion
+        itemType: school
+        typeDesc: learn
+        url: ../document/learn/index.md
+      - text: Skapa ett nytt dokument
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../document/learn/create.md
+      - text: Mallvariabler
+        itemType: library_books
+        typeDesc: reference
+        url: ../document/templates/variables/index.md
+
+    # Card
+    - title: Ärenden
+      summary: ""
+      links:
+      - text: Introduktion
+        itemType: school
+        typeDesc: learn
+        url: ../request/learn/index.md
+      - text: Skapa ärende
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../request/learn/create.md
+      - text: Ta över ansvaret för ärende
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../request/learn/accept.md
+      - text: Svara kund
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../request/learn/reply.md
+      - text: Arbeta med svarsmallar
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../knowledge-base/learn/reply-templates/create.md
+      - text: Ärendeskärm
+        itemType: library_books
+        typeDesc: reference
+        url: ../request/learn/index.md
+
+    # Card
+    - title: Försäljning och dashboard
+      summary: ""
+      links:
+      - text: Introduktion
+        itemType: school
+        typeDesc: learn
+        url: ../sale/learn/index.md
+      - text: Prognoser
+        itemType: explore
+        typeDesc: concept
+        url: ../sale/learn/forecasting.md
+      - text: Försäljningsmål
+        itemType: explore
+        typeDesc: concept
+        url: ../sale/learn/sales-targets/index.md
+      - text: Dashboard
+        itemType: explore
+        typeDesc: concept
+        url: ../dashboard/learn/index.md
+      - text: Skapa försäljning
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../sale/learn/create.md
+      - text: Lägga till intressenter
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../sale/learn/stakeholders/create.md
+      - text: Försäljningsguide
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../sale/learn/sales-guides.md
+      - text: Skapa en ny dashboard
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../dashboard/learn/create.md
+      - text: Arbeta med figurer
+        itemType: list
+        typeDesc: how-to-guide
+        url: ../dashboard/learn/working-with-tiles.md

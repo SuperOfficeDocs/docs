@@ -1,0 +1,21 @@
+items:
+- name: Översikt
+  href: index.md
+- name: Skapa nytt flöde
+  href: create.md
+- name: Redigera flöde
+  href: update.md
+- name: Dela flöde
+  href: split.md
+- name: Definiera flödesåtgärder
+  href: define-flow-actions.md
+- name: Skapa innehåll
+  href: content.md
+- name: Fältalternativ
+  href: step-settings.md
+- name: Kör, pausa och avsluta flöde
+  href: run-pause-end.md
+- name: Deltagare
+  href: participants.md
+- name: Visa statistik
+  href: view-statistics.md

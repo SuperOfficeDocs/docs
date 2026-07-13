@@ -1,0 +1,25 @@
+items:
+- name: Översikt
+  href: index.md
+- name: Skapa nytt formulär
+  href: create.md
+- name: Fältalternativ
+  href: field-options.md
+- name: Definera formuläråtgärder
+  href: define-form-actions.md
+- name: Form templates
+  href: form-templates.md
+- name: Publicera formulär
+  href: publish.md
+- name: Visa statistik
+  href: view-statistics.md
+- name: Behandla formulärinlämningar
+  href: process-submissions.md
+- name: Guide - Kontakta mig
+  href: tutorial-contact-me.md
+- name: Guide - Anmälning till nyhetsbrev
+  href: tutorial-sign-up.md
+- name: Hantera typsnitt för formulär
+  href: ../admin/manage-fonts.md
+- name: Begränsningar för formulärfält
+  href: ../admin/form-field-restrictions.md
