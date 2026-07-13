@@ -51,12 +51,10 @@ For å jobbe mer effektivt, kan du filtrere oppføringene for å vise en eller f
 
 Når du har et [dashbord for skjemainnsending][3], blir det enkelt å måle og visualisere dataene. Dashbordet lar deg følge med på ytelse, trender og produktivitet.
 
-<!-- Referenced links -->
-[1]: process-submissions.md
-[2]: ../../mailing/learn/view-statistics.md
-[3]: ../../../dashboard/learn/show-marketing.md
+[1]: ./process-submissions
+[2]: ../../mailing/learn/view-statistics
+[3]: ../../../dashboard/learn/show-marketing
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/form-submissions-filter.png
 [img3]: ../../../../media/loc/en/marketing/view-form-screen.png
 [img2]: ../../../../media/loc/en/marketing/form-report-dx.png

@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Bruk tavlevisning i utvalg <i class="ph ph-kanban" aria-hidden="true"></i>
+# Bruk tavlevisning i utvalg \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
 
 Tavlevisning viser ditt [utvalg][2] i et kolonnebasert oppsett med kort. Du kan gruppere og filtrere utvalgsmedlemmene (postene som vises på tavlen), og bruke dra-og-slipp for å flytte kort mellom grupper.
 
@@ -47,7 +47,7 @@ Funksjonaliteten er lik på tvers av støttede posttyper: Du kan dra kort, åpne
 
     ![Sidepanel som viser prosjektdetaljer -screenshot][img12]
 
-* For å redigere et kort, pek på det og velg knappen **Rediger** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dette åpner samme redigeringsdialog som brukes andre steder i SuperOffice CRM – uten å forlate tavlevisningen.
+* For å redigere et kort, pek på det og velg knappen **Rediger** (<i class="ph ph-pencil" aria-hidden="true"></i>). Dette åpner samme redigeringsdialog som brukes andre steder i SuperOffice CRM - uten å forlate tavlevisningen.
 
   ![Markør som peker på redigeringsknapp på et salg i tavlevisning -screenshot][img4]
 
@@ -61,8 +61,7 @@ Funksjonaliteten er lik på tvers av støttede posttyper: Du kan dra kort, åpne
 
   ![Åpen oppgavemeny for et salg i tavlevisning som viser tilgjengelige alternativer -screenshot][img5]
 
-<!-- markdownlint-disable-next-line MD013 -->
-## Tilpass tavleoppsett <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
+## Tilpass tavleoppsett \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
 
 ### Grupper og undergrupper
 
@@ -142,7 +141,7 @@ Totalverdien vises **ved siden av hvert kolonnenavn**, og hjelper deg med å fø
 
 ### Salgsdato-merke (kun salg)
 
-Du kan kontrollere hva det **grå merket** på hvert salgskort viser i tavlevisningen. Dette hjelper deg å forstå alder med et øyekast – enten hvor lenge et salg har vært åpent eller hvor lenge det har vært i sin nåværende fase.
+Du kan kontrollere hva det **grå merket** på hvert salgskort viser i tavlevisningen. Dette hjelper deg å forstå alder med et øyekast - enten hvor lenge et salg har vært åpent eller hvor lenge det har vært i sin nåværende fase.
 
 1. Velg <i class="ph ph-gear-six" aria-hidden="true"></i> for å åpne **Innstillinger**-panelet.
 
@@ -240,20 +239,18 @@ Bruk gruppering kreativt for å organisere og handle effektivt på data.
 * [Konfigurer prosjektstatus][18]
 * [Konfigurer prosjekttyper][19]
 
-<!-- Refererte lenker -->
-[1]: create.md
-[2]: index.md
-[11]: ../../../learn/getting-started/main-screen/side-panel.md
-[12]: ../../../sale/learn/create.md
-[13]: ../../../sale/admin/sale-stage.md
-[14]: ../../../request/learn/create.md
-[15]: ../../../request/admin/status/create.md
-[16]: ../../../request/admin/category/create.md
-[17]: ../../../project/learn/create.md
-[18]: ../../../project/admin/project-status.md
-[19]: ../../../project/admin/project-type.md
+[1]: ./create
+[2]: ./index
+[11]: ../../../learn/getting-started/main-screen/side-panel
+[12]: ../../../sale/learn/create
+[13]: ../../../sale/admin/sale-stage
+[14]: ../../../request/learn/create
+[15]: ../../../request/admin/status/create
+[16]: ../../../request/admin/category/create
+[17]: ../../../project/learn/create
+[18]: ../../../project/admin/project-status
+[19]: ../../../project/admin/project-type
 
-<!-- Refererte bilder -->
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

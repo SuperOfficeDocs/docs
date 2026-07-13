@@ -48,8 +48,6 @@ Når du har sendt en testutsendelse, må du nullstille tellerne for koblingen(e)
 1. Gå til koblingene i fanen **Sporede koblinger**
 2. Klikk på menyknappen ved siden av den aktuelle koblingen, og velg **Nullstill**. Kolonnen **Klikk** angis til **0**. Informasjonen om hvilke kunder som har klikket på koblingen, fjernes også.
 
-<!-- Referenced links -->
-[1]: ../../../learn/best-practices.md#mobile
+[1]: ../../../learn/best-practices#mobile
 
-<!-- Referenced images -->
 [img2]: ../../../../../media/loc/en/marketing/test-mailing.png

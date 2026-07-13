@@ -53,12 +53,10 @@ Hvis du senere bestemmer deg for å spore disse lenkene også, velg alternativet
 * [Administrere abonnementer][3]
 * [Avslutte abonnement (GDPR)][4]
 
-<!-- Referenced links -->
-[1]: add-link-to-display-message-in-browser.md
-[4]: add-unsubscribe-link.md
-[3]: ../../recipients/learn/manage-email-subscriptions.md
-[5]: ../../tracked-links/learn/create-links.md
-[6]: ../../tracked-links/learn/define-link-actions.md
+[1]: ./add-link-to-display-message-in-browser
+[4]: ./add-unsubscribe-link
+[3]: ../../recipients/learn/manage-email-subscriptions
+[5]: ../../tracked-links/learn/create-links
+[6]: ../../tracked-links/learn/define-link-actions
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png

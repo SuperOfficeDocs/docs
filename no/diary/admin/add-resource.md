@@ -43,6 +43,6 @@ Ressurser vises i dialogboksen for oppfølginger i SuperOffice CRM, og her kan b
 
 ## Ressurstype
 
-* **Sted:** Ressurser av denne typen (for eksempel møterom) finnes på listen **Sted** i oppfølgingsdialogboksene i SuperOffice CRM i tillegg til på listen **Ressurs** i dialogboksen **Invitasjon**.
+* **Sted:** Ressurser av denne typen (for eksempel møterom) finnes på listen **Sted** i oppfølgingsdialogboksene i SuperOffice CRM i tillegg til på listen **Ressurs** i dialogboksen **Invitasjon**.
 
 * **Andre:** Ressurser av denne typen (for eksempel en projektor eller andre typer utstyr) finnes på listen **Ressurs** i dialogboksen **Invitasjon**.

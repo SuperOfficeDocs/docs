@@ -1,5 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
-Etter at du har opprettet mållisten din, forberedt utsendelsen og testet den, har du endelig kommet til den spennende delen – det er på tide å sende utsendelsen.
+Etter at du har opprettet mållisten din, forberedt utsendelsen og testet den, har du endelig kommet til den spennende delen - det er på tide å sende utsendelsen.
 
 I det siste trinnet, **Bekreft**, kan du vise et sammendrag av utsendelsen og bekrefte at den er korrekt. Eventuelle feilmeldinger som vises i dette bildet, må løses før utsendelsen kan sendes. Alternativene for sending deaktiveres hvis det er ufullstendige trinn eller manglende informasjon i utsendelsen. Disse indikeres med rødt.
 
@@ -31,8 +30,6 @@ Du kan klikke på utsendelsen i listen for å [vise sendestatus og statistikk][1
 
 Hvis du vil stoppe utsendelsen eller starte en planlagt utsendelse før planen, klikker du på henholdsvis **Stopp**- eller **Start**-knappen.
 
-<!-- Referenced links -->
-[1]: ../../view-statistics.md
+[1]: ../../view-statistics
 
-<!-- Referenced images -->
 [img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png

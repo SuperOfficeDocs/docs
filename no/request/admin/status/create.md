@@ -50,5 +50,4 @@ index: true
 
 * [Sett opp Hent neste sak i køen][1]
 
-<!-- Refererte lenker -->
-[1]: ../next-in-queue.md
+[1]: ../next-in-queue

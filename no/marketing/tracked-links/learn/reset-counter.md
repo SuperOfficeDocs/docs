@@ -26,5 +26,4 @@ Noen ganger er det behov for å nullstille antall klikk. Dette kan f.eks. være 
 
 3. Klikk på <i class="ph ph-list" aria-label="Task menu"></i> ved siden av koblingen og velg **Nullstill**. Telleren i **Klikk**-kolonnen endres til 0. Informasjonen om hvilke kunder som har klikket på koblingen, blir også fjernet.
 
-<!-- Referenced links -->
-[6]: ../../mailing/learn/create/send-test-email.md
+[6]: ../../mailing/learn/create/send-test-email

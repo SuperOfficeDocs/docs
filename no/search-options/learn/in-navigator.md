@@ -34,9 +34,7 @@ Navigatorens hurtigsøk utfører to parallelle søk.
 
 * Du kan søke etter en person i hurtigsøkfeltet for **Firma** i navigatoren.
 
-<!-- Referenced links -->
-[1]: ../../learn/basics/history.md
-[2]: ../../../en/api/osql/soundx.md
+[1]: ../../learn/basics/history
+[2]: ../../../en/api/osql/soundx
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

@@ -37,9 +37,9 @@ Bruk tannhjulikonet (<i class="ph ph-gear" aria-hidden="true"></i>) i listens to
 
 | Status | Beskrivelse |
 |---|---|
-| Aktiv | Deltakeren er aktiv i flyten​. |
-| Fullført | Deltakeren har fullført alle trinnene i flyten​. |
-| Fullført med suksess | Deltakeren har fullført flyten og oppfylt suksesskriteriet. Inkludert i flytens suksessrate​. |
+| Aktiv | Deltakeren er aktiv i flyten. |
+| Fullført | Deltakeren har fullført alle trinnene i flyten. |
+| Fullført med suksess | Deltakeren har fullført flyten og oppfylt suksesskriteriet. Inkludert i flytens suksessrate. |
 | Dropout | Deltakeren har trukket seg ut, alltid med en spesifisert avbruddsårsak. |
 | Avbrutt | Deltakeren vil ikke fullføre flyten fordi en administrator avsluttet den. |
 
@@ -54,15 +54,15 @@ For alle trinnetyper:
 1. Er personen merket som tidligere ansatt?
 1. Er personen lagt til i unntakslisten?
 
-​Ekstra for e-posttrinn:​
+Ekstra for e-posttrinn:
 
-1. Er samtykket deres gyldig?​
+1. Er samtykket deres gyldig?
 1. Abonnerer personen på flytabonnementstypen?
-1. Har personen registrert e-postadresse?​
-1. Er e-postadressen allerede aktiv innenfor flyten?​
-1. Er e-postadressen ublokkert?​
+1. Har personen registrert e-postadresse?
+1. Er e-postadressen allerede aktiv innenfor flyten?
+1. Er e-postadressen ublokkert?
 
-Ekstra for SMS-trinn:​
+Ekstra for SMS-trinn:
 
 1. Har personen registrert et mobilnummer for SMS?
 
@@ -82,8 +82,5 @@ I et grensesnitt følger deltakerne den første (venstre) grenen der de oppfylle
 * Legg til i flyt: Indikerer at denne personen er foreslått for påmelding i en annen flyt.
 * Fjern fra flyt: Fjerner all registrering av deltakelsen til personen i gjeldende flyt.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/flow-participants.png
 [img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png

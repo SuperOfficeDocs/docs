@@ -19,7 +19,6 @@ translation_type: MT
 
 # Veiledning - enkel sporing av Google Analytics e-post
 
-<!-- markdownlint-disable-next-line MD036 -->
 *Blogginnlegg av Alex Pelan*
 
 E-postmarkedsføring har blitt en viktig del av bedrifters markedsføringsstrategier, men det er utallige måter å utføre digital markedsføring på i disse dager. E-postmarkedsføring er bare en del av det store bildet. Når man skal analysere resultatene av for eksempel en kampanje, er det nyttig å samle data fra alle markedsføringskanaler i ett system for å få det overordnede bildet.
@@ -87,11 +86,9 @@ Du vil nå se trafikken generert av e-postnyhetsbrevet ditt. Som du ser på bild
 
 Begynn å utforske mulighetene!
 
-<!-- Referenced links -->
 [1]: http://analytics.google.com
 [2]: https://support.google.com/analytics/answer/1033867
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/marketing/new-account.png
 [img3]: ../../../../media/loc/en/marketing/setting-up-property.png
 [img4]: ../../../../media/loc/en/marketing/tracking-id.png

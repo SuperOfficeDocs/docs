@@ -49,7 +49,5 @@ Hvis du ikke finner en person i SuperOffice, kan du opprette en ny person og et 
 
 ![Du kan legge til en ny person i SuperOffice CRM fra sidepanelet -screenshot][img2]
 
-<!-- Referenced links -->
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-link-to-contact.png
 [img2]: ../../../media/loc/en/chat/chat-add-new-to-contact.png

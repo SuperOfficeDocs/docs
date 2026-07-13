@@ -44,8 +44,6 @@ Deltakere som er blitt invitert til en oppfølging, får et varsel.
 
 * Hvis du mottar en invitasjon til et tidspunkt der du allerede er opptatt, vises det et utropstegn (<i class="ph ph-warning" aria-label="Warning icon"></i>). Dette gjør deg oppmerksom på konflikten.
 
-<!-- Referenced links -->
-[1]: ../../../learn/basics/notifications.md#activity
+[1]: ../../../learn/basics/notifications#activity
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/learn/core-notifications.png

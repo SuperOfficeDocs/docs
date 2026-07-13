@@ -14,7 +14,7 @@ tier: starter
 language: no
 ---
 
-# Personvern <i class="ph ph-shield" aria-label="Shield icon"></i>
+# Personvern \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
 
 **Personvern**-funksjonen i SuperOffice hjelper deg å beskytte personvernet til kundene dine og overholde EUs personvernforordning (GDPR).
 
@@ -71,10 +71,7 @@ Hvis du *ikke* velger dette alternativet, vil bare personer med **E-markedsføri
 * [Legge til elementer i listen Personvern - Kilde][4]
 * [Konverteringssporing (UTM)][5]
 
-<!-- Referenced links -->
-[2]: ../admin/add-purpose.md
-[3]: ../admin/add-legal-base.md
-[4]: ../admin/add-source.md
-[5]: ../../../marketing/utm/learn/index.md
-
-<!-- Referenced images -->
+[2]: ../admin/add-purpose
+[3]: ../admin/add-legal-base
+[4]: ../admin/add-source
+[5]: ../../../marketing/utm/learn/index

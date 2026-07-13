@@ -60,7 +60,7 @@ Felttilordning definerer hvordan ERP-felter tilsvarer SuperOffice-felter, og hvo
 
 1. Klikk på **Fullført** når du er ferdig.
 
-Du kan nå fortsette med listetilordning, standardverdier eller rangering av felter – *eller* aktivere koblingen hvis ingen videre konfigurasjon er nødvendig.
+Du kan nå fortsette med listetilordning, standardverdier eller rangering av felter - *eller* aktivere koblingen hvis ingen videre konfigurasjon er nødvendig.
 
 ## <a id="list-mapping"></a>Listetilordning
 
@@ -100,7 +100,7 @@ Standardverdier bidrar til å redusere manuell registrering av data for felt som
 
     * **Angi standardverdi:** Bruk alltid en spesifikk verdi under synkronisering. Dette krever at du angir en verdi.
     * **Spør bruker om verdi:** Tillat brukeren å fylle inn en verdi manuelt.
-    * **Påkrevd – bruker må fylle inn verdi:** Feltet må ha en verdi. Hvis du velger dette, må du også angi en av de to alternativene ovenfor.
+    * **Påkrevd - bruker må fylle inn verdi:** Feltet må ha en verdi. Hvis du velger dette, må du også angi en av de to alternativene ovenfor.
 
     ![Legg til standardverdi for synkronisering -screenshot][img4]
 
@@ -157,9 +157,6 @@ Hvis retningspilene forblir nedtonet etter at du har valgt et SuperOffice-felt, 
 
 Hold musepekeren over pilen for å vise en forklaring.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/erp/erp-connection-settings.png
 [img2]: ../../../media/loc/en/erp/configure-field-mapping.png
 [img3]: ../../../media/loc/en/erp/list-of-default-values.png

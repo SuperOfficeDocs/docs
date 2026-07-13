@@ -15,7 +15,7 @@ functional_right: knowledge-base
 audience: person
 audience_tooltip: SuperOffice Service
 language: no
-redirect_from: 
+redirect_from:
   - /no/request/reply-templates/learn/delete
   - /no/request/reply-templates/learn/edit
 ---
@@ -41,7 +41,7 @@ Redigering av en svarmal kan bety to forskjellige ting:
 
 ## <a id="delete"></a>Slett svarmal
 
-1. Følg trinn 1–3 i **Rediger svarmal** for å åpne bildet **Egenskaper for svarmal**.
+1. Følg trinn 1-3 i **Rediger svarmal** for å åpne bildet **Egenskaper for svarmal**.
 1. Klikk på **Slett**-knappen nederst i bildet.
 1. Bekreft slettingen når du blir bedt om det. Svarmalen slettes umiddelbart.
 
@@ -50,8 +50,7 @@ Redigering av en svarmal kan bety to forskjellige ting:
 * [Opprette ny språkversjon av svarmal][3]
 * [Kopiere svarmaler][4]
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/reply.md
-[2]: create.md
-[4]: create.md#copy
-[3]: new-language.md
+[1]: ../../../request/learn/reply
+[2]: ./create
+[4]: ./create#copy
+[3]: ./new-language

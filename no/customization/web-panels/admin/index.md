@@ -14,7 +14,7 @@ topic: web panel
 tier: core
 language: no
 index: true
-redirect_from: 
+redirect_from:
   - /no/ui/web-panels/learn/index
   - /no/admin/lists/learn/web-panel
 ---
@@ -38,20 +38,20 @@ Nettleserfaner støtter en rekke innholdstyper:
 
 **Visningsplasseringen** defineres når du konfigurerer panelet. Dette styrer hvor i SuperOffice panelet vises.
 
-* **Sidepanel** – Vises i det sammenleggbare panelet på siden av mange CRM-skjermbilder.
-* **Verktøylinje** – Legger til en knapp på verktøylinjen.
-* **Navigatorknapp** – Legger til en knapp på hovedmenyen.
+* **Sidepanel** - Vises i det sammenleggbare panelet på siden av mange CRM-skjermbilder.
+* **Verktøylinje** - Legger til en knapp på verktøylinjen.
+* **Navigatorknapp** - Legger til en knapp på hovedmenyen.
 * **Paneler:**
-  * **Firma-, Person-, Prosjekt-, Salg- og Utvalgskort** – Legger til en snarvei i **www**-fanen for hvert skjermbilde.
-  * **Webpanel på SuperOffice-knapp** – Åpnes fra SuperOffice-logoen (øvre venstre hjørne). Flere URL-er vises som faner til høyre.
-  * **Seksjonstabber (i Firma-, Person-, Prosjekt- og Salgsskjermbilder)** – Legger til en separat fane som åpner panelinnholdet.
+  * **Firma-, Person-, Prosjekt-, Salg- og Utvalgskort** - Legger til en snarvei i **www**-fanen for hvert skjermbilde.
+  * **Webpanel på SuperOffice-knapp** - Åpnes fra SuperOffice-logoen (øvre venstre hjørne). Flere URL-er vises som faner til høyre.
+  * **Seksjonstabber (i Firma-, Person-, Prosjekt- og Salgsskjermbilder)** - Legger til en separat fane som åpner panelinnholdet.
 * **Dialogbokser:**
-  * **Oppfølgingsdialogboks** – Legger til en snarvei i **www**-fanen av oppfølgingsdialogboksen.
-  * **Dokument-, Produkt- og Tilbudsdialogbokser** – Legger til en snarvei i **www**-fanen av hver dialogboks.
+  * **Oppfølgingsdialogboks** - Legger til en snarvei i **www**-fanen av oppfølgingsdialogboksen.
+  * **Dokument-, Produkt- og Tilbudsdialogbokser** - Legger til en snarvei i **www**-fanen av hver dialogboks.
 * **Menyer:**
-  * **Verktøymeny** – Vises under **Andre applikasjoner** når du klikker på **Verktøy**-knappen i Navigatoren.
-  * **Vis-meny** – Vises i menyalternativet **Andre applikasjoner**.
-* **Dashbord-fliser** – Tilgjengelige i fliseinnholdsvelgeren for dashbord-widgets.
+  * **Verktøymeny** - Vises under **Andre applikasjoner** når du klikker på **Verktøy**-knappen i Navigatoren.
+  * **Vis-meny** - Vises i menyalternativet **Andre applikasjoner**.
+* **Dashbord-fliser** - Tilgjengelige i fliseinnholdsvelgeren for dashbord-widgets.
 
 ### I Service (foreldet)
 
@@ -87,8 +87,5 @@ Webpaneler laster innhold dynamisk basert på CRM-kontekst og URL-en som er defi
 * [Legg til webpanel][1]
 * [Bygge webpaneler][2]
 
-<!-- Referenced links -->
-[1]: add-web-panel.md
-[2]: ../../../../en/customization/web-panels/dev/index.md
-
-<!-- Referenced images -->
+[1]: ./add-web-panel
+[2]: ../../../../en/customization/web-panels/dev/index

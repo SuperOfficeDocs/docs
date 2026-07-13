@@ -18,7 +18,7 @@ index: true
 
 # Url-koding
 
-Nettlesere ber om sider fra webservere ved hjelp av en URL – **adressen til en nettside**.
+Nettlesere ber om sider fra webservere ved hjelp av en URL - **adressen til en nettside**.
 
 Disse URL-ene kan kun sendes over Internett som ASCII-tegn. De inneholder imidlertid ofte tegn som ikke er ASCII, for eksempel *mellomrom*.
 
@@ -33,4 +33,4 @@ Konverteringen erstatter usikre tegn med et prosenttegn (%) etterfulgt av 2 heks
 
 ## Unicode
 
-Konverteringen gjør om alle tegn til UTF-8 og setter et % foran hver tegns 1–3 byte lange heksadesimale verdi i henhold til RFC 2279.
+Konverteringen gjør om alle tegn til UTF-8 og setter et % foran hver tegns 1-3 byte lange heksadesimale verdi i henhold til RFC 2279.

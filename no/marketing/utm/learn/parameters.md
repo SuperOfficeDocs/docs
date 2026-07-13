@@ -56,8 +56,8 @@ For å lære hvordan disse parameterne brukes til å måle lead-kilder i SuperOf
 * [Google Analytics Campaign URL Builder][4]
 * [UTM Builder][5]
 
-[1]: index.md
-[2]: ../admin/set-up.md
-[3]: ../../forms/learn/publish.md
+[1]: ./index
+[2]: ../admin/set-up
+[3]: ../../forms/learn/publish
 [4]: https://ga-dev-tools.google/campaign-url-builder
 [5]: https://utmbuilder.net

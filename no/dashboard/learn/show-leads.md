@@ -80,14 +80,12 @@ Hvis du bruker UTM-sporing (krever **Marketing Premium** eller **Growth**-planen
 * [Konverteringssporing (UTM-data)][8]
 * [Les mer om kriterier][2]
 
-<!-- Referenced links -->
-[2]: ../../search-options/learn/search-criteria.md
-[5]: create.md
-[6]: working-with-tiles.md
-[7]: ../../lead/learn/index.md
-[8]: ../../marketing/utm/learn/index.md
+[2]: ../../search-options/learn/search-criteria
+[5]: ./create
+[6]: ./working-with-tiles
+[7]: ../../lead/learn/index
+[8]: ../../marketing/utm/learn/index
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/dashboard/lead-qualification.png
 [img2]: ../../../media/loc/en/dashboard/conversion-dashboard.png
 [img3]: ../../../media/loc/en/dashboard/new-leads-ytd.png

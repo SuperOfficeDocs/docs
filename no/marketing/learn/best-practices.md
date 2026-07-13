@@ -71,7 +71,7 @@ En av de viktigste aspektene av disse tekniske delene er **[SPF-posten i domenet
 
 ## Bruk e-postdomenevalidering
 
-Forhåpentligvis bruker du allerede de fleksible alternativene for å tilpasse og spesifisere Fra- og Svar-til-feltene når du setter opp en utsendelse i SuperOffice. Dette er flott når du vil legge til egendefinert tekst som **< Jeanette fra SuperOffice >** for å vises som avsender. Eller hvis du sender en e-post på vegne av kollegaen din eller sjefen din.
+Forhåpentligvis bruker du allerede de fleksible alternativene for å tilpasse og spesifisere Fra- og Svar-til-feltene når du setter opp en utsendelse i SuperOffice. Dette er flott når du vil legge til egendefinert tekst som **\< Jeanette fra SuperOffice >** for å vises som avsender. Eller hvis du sender en e-post på vegne av kollegaen din eller sjefen din.
 
 Men hvis du legger til en ikke-validerbar eller feilstavet e-postadresse, kan det skade e-postleverbarheten din.
 
@@ -81,13 +81,13 @@ Forfattere vil se en melding hvis de bruker en ikke-validerbar e-postadresse i F
 
 ## Automatisering
 
-* Spesifiser en maksimal ventetid for å unngå at deltakere forblir aktive i en flyt for alltid.​
+* Spesifiser en maksimal ventetid for å unngå at deltakere forblir aktive i en flyt for alltid.
 
-* Oppdater deltakere med ny informasjon under flyten​. For eksempel, sett en ny interesse eller en ny kategori mens kontakten utvikler seg; legg til og fjern dem fra lister​.
+* Oppdater deltakere med ny informasjon under flyten. For eksempel, sett en ny interesse eller en ny kategori mens kontakten utvikler seg; legg til og fjern dem fra lister.
 
 * For å unngå dupliserte eller motstridende handlinger: Inkluder alle handlinger ett sted, enten i skjemaet eller i flyten.
 
-* Du kan oppnå den samme opplevelsen ved å dele én flyt eller arrangere kommunikasjonen i to forskjellige flyter.​ Om du skal dele eller definere flere flyter avhenger av scenarioet og hvilket resultat du vil spore. ​Jo mer to kommunikasjonsspor har til felles, jo mer effektivt er det for brukeren å arrangere det innenfor samme flyt.​
+* Du kan oppnå den samme opplevelsen ved å dele én flyt eller arrangere kommunikasjonen i to forskjellige flyter. Om du skal dele eller definere flere flyter avhenger av scenarioet og hvilket resultat du vil spore. Jo mer to kommunikasjonsspor har til felles, jo mer effektivt er det for brukeren å arrangere det innenfor samme flyt.
 
 ## <a id="mobile"></a>Tilpass meldingen for visning på mobile enheter
 
@@ -97,15 +97,12 @@ Klikk på **Mobil** (<i class="ph ph-device-mobile" aria-hidden="true"></i>) i d
 
 Hvis du vil justere mobilspesifikke innstillinger for en melding, velger du en seksjon i meldingen og klikker **Mobil** i sidepanelet. Du kan nå definere formateringen for visning av meldingen på mobile enheter, og velge hvilke elementer (for eksempel bilder) som skal utelates fra mobile enheter.
 
-<!-- Referenced links -->
-[1]: ../recipients/learn/index.md#selections
-[2]: ../recipients/learn/manage-bounces.md
-[3]: ../editor/learn/add-unsubscribe-link.md
-[4]: ../mailing/learn/create/send-test-email.md
-[5]: ../../security/privacy/admin/add-legal-base.md
-[6]: ../mailing/admin/add-domain.md
-[7]: ../../../en/online/mail-services/mailgun/spf/index.md
+[1]: ../recipients/learn/index#selections
+[2]: ../recipients/learn/manage-bounces
+[3]: ../editor/learn/add-unsubscribe-link
+[4]: ../mailing/learn/create/send-test-email
+[5]: ../../security/privacy/admin/add-legal-base
+[6]: ../mailing/admin/add-domain
+[7]: ../../../en/online/mail-services/mailgun/spf/index
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/
-
-<!-- Referenced images -->

@@ -47,7 +47,4 @@ Fanen **Bilde** lar deg laste opp og administrere bilder for et prosjekt.
     * Klikk **OK** og **Lagre** for å tilbakestille til standardbildet.
     * Eller, last opp/velg et nytt bilde, klikk **OK** og **Lagre** for å lagre endringen.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/project/project-image.png

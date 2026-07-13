@@ -70,5 +70,4 @@ Computer\HKEY_CLASSES_ROOT\domycall\shell\open\command
 
 Registeroppføringen må peke til den kjørbare filen som behandler den innkommende anropsforespørselen. Argumentet `%1` inneholder telefonnummeret som SuperOffice CRM sender gjennom den egendefinerte protokollen.
 
-<!-- Referenced links -->
-[2]: ../../document/templates/learn/template-variables.md
+[2]: ../../document/templates/learn/template-variables

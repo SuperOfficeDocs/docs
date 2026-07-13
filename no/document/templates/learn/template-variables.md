@@ -28,7 +28,7 @@ Kan du sende denne:
 
 Teksten du skriver inn vil se slik ut:
 
-"Hei **{atfn}**. Vil du vite mer om hvordan vårt produkt kan hjelpe **{name}** til å vinne nye kunder? Ring **{cont}** på **{onam}**stedet."
+"Hei **\{atfn\}**. Vil du vite mer om hvordan vårt produkt kan hjelpe **\{name\}** til å vinne nye kunder? Ring **\{cont\}** på **\{onam\}**stedet."
 
 ## Hvordan bruke malvariabler
 
@@ -40,7 +40,7 @@ Teksten du skriver inn vil se slik ut:
 
 * Dato og klokkeslett i malvariabler styres av systemklokken på PC-en.
 
-* I dokumenter med filtype .doc i Office 2003 og eldre må du bruke vinklede hakeparenteser – < > – rundt variabler i stedet for klammeparenteser – { } –.
+* I dokumenter med filtype .doc i Office 2003 og eldre må du bruke vinklede hakeparenteser - \< > - rundt variabler i stedet for klammeparenteser - \{ \} -.
 
 ### Eksempel: møtereferater (topptekst)
 
@@ -112,7 +112,4 @@ Når du genererer e-postmaler for forespørsler og utsendelser (og meldingsmaler
 
 Referansen er gruppert etter område. [Gå til referanse][1]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
-
-<!-- Referenced images -->
+[1]: ../variables/index
