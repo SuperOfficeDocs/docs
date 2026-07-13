@@ -41,8 +41,7 @@ Wenn ein Bearbeiter die Funktion [Vorschlag für einen FAQ-Eintrag erstellen][1]
 * [FAQ erstellen][1]
 * [Mehrere Sprachen einrichten][4]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../../request/learn/index.md
-[3]: workflow.md
-[4]: ../../../localization/learn/customer-languages.md
+[1]: ./create
+[2]: ../../../request/learn/index
+[3]: ./workflow
+[4]: ../../../localization/learn/customer-languages

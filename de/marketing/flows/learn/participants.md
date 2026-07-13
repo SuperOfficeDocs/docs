@@ -82,8 +82,5 @@ In einer Aufteilung folgen Teilnehmer dem ersten (linken) Zweig, in dem sie die 
 * Zum Flow hinzufügen: Gibt an, dass dieser Person zur Einschreibung in einen anderen Flow vorgeschlagen wird.
 * Aus dem Flow entfernen: Entfernt alle Aufzeichnungen über die Teilnahme des Persons am aktuellen Flow.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/flow-participants.png
 [img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png

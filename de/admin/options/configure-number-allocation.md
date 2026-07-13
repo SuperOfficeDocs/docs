@@ -88,5 +88,4 @@ Die nachfolgende Tabelle gibt an, wie sich die verschiedenen Kombinationen der a
 
 * [Standardwerte für neue Dokumentvorlagen festlegen][3]
 
-<!-- Referenced links -->
-[3]: ../../document/templates/admin/document-template-defaults.md
+[3]: ../../document/templates/admin/document-template-defaults

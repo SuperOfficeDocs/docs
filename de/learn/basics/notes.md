@@ -33,5 +33,4 @@ Ein Punkt auf der Registerkarte **Notiz** zeigt an, dass eine Notiz hinzugefügt
 
 Um eine Notiz zu löschen, entfernen Sie einfach den gesamten Text im Feld. Der Punkt verschwindet von der Registerkarte **Notiz**.
 
-<!-- Referenced links -->
-[1]: ../../search-options/learn/freetext-search.md
+[1]: ../../search-options/learn/freetext-search

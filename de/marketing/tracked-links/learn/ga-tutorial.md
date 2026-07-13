@@ -19,7 +19,6 @@ translation_type: MT
 
 # Anleitung - einfaches Google Analytics E-Mail-Tracking
 
-<!-- markdownlint-disable-next-line MD036 -->
 *Blogbeitrag von Alex Pelan*
 
 E-Mail-Marketing ist zu einem wichtigen Bestandteil der Marketingstrategien von Unternehmen geworden, aber es gibt unzählige Möglichkeiten, digitales Marketing heutzutage durchzuführen. E-Mail-Marketing ist nur ein Teil des großen Ganzen. Wenn man zum Beispiel die Ergebnisse einer Kampagne analysieren möchte, ist es hilfreich, Daten aus allen Marketingkanälen in einem System zu sammeln, um das Gesamtbild zu erhalten.
@@ -87,11 +86,9 @@ Sie werden nun den Traffic sehen, der durch Ihren E-Mail-Newsletter generiert wu
 
 Beginnen Sie mit der Erkundung der Möglichkeiten!
 
-<!-- Referenced links -->
 [1]: http://analytics.google.com
 [2]: https://support.google.com/analytics/answer/1033867
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/marketing/new-account.png
 [img3]: ../../../../media/loc/en/marketing/setting-up-property.png
 [img4]: ../../../../media/loc/en/marketing/tracking-id.png

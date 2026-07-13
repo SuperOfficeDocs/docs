@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 * **Host**: Die IP-Adresse oder der Hostname des E-Mail-Servers zum Senden von E-Mails. Auf den Server muss vom SMTP-Port aus, auf dem die SuperOffice-Anwendungen ausgeführt werden, Zugriff bestehen.
 
 * **Port**: Geben Sie an, auf welchem SMTP-Port die SuperOffice-Anwendungen ausgeführt werden. Der Standardport lautet 25.

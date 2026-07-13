@@ -43,9 +43,7 @@ Um die [Google Analytics-Funktion][2] nutzen zu können, benötigen Sie ein Goog
 
 Sobald Ihre Empfänger auf die Links zu Ihrer Website klicken, können Sie deren Besuche auf Ihrer Website in Google Analytics verfolgen.
 
-<!-- Referenced links -->
-[1]: ../../mailing/learn/create/tutorial-email-mailing.md
-[2]: index.md#google
+[1]: ../../mailing/learn/create/tutorial-email-mailing
+[2]: ./index#google
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/google-analytics-tag.png

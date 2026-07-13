@@ -14,7 +14,7 @@ tier: starter
 language: de
 ---
 
-# Datenschutz <i class="ph ph-shield" aria-label="Shield icon"></i>
+# Datenschutz \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
 
 Die Funktion **Datenschutz** in SuperOffice hilft Ihnen, die Daten Ihrer Kunden zu schützen und die Datenschutz-Grundverordnung (DSGVO) der EU einzuhalten.
 
@@ -71,10 +71,7 @@ Wenn Sie diese Option *nicht* wählen, werden nur Personen, bei denen **E-Market
 * [Objekte zur Liste Datenschutz - Nachweis hinzufügen][4]
 * [Conversion-Tracking (UTM)][5]
 
-<!-- Referenced links -->
-[2]: ../admin/add-purpose.md
-[3]: ../admin/add-legal-base.md
-[4]: ../admin/add-source.md
-[5]: ../../../marketing/utm/learn/index.md
-
-<!-- Referenced images -->
+[2]: ../admin/add-purpose
+[3]: ../admin/add-legal-base
+[4]: ../admin/add-source
+[5]: ../../../marketing/utm/learn/index

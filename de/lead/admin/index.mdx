@@ -1,0 +1,86 @@
+---
+uid: help-de-lead-admin
+title: Lead-Management einrichten
+description: Erfahren Sie, wie Sie Lead-Management in SuperOffice CRM aktivieren, konfigurieren und erweitern.
+keywords: Lead-Management, Lead-Einrichtung, Lead-Status, potenzieller Kunde, Verkaufsprozess
+author: digitaldiina
+date: 06.10.2026
+version: 12.0
+content_type: concept
+category: sale
+topic: lead
+license: salesessentials
+tier: core
+audience: settings
+audience_tooltip: Einstellungen und Verwaltung
+index: true
+language: de
+---
+
+# Lead-Management einrichten
+
+Das Lead-Management in SuperOffice CRM hilft Ihnen, potenzielle Kunden vom ersten Kontakt über die Qualifizierung bis in den Verkaufsprozess zu verfolgen. Administratoren müssen festlegen, welche Firmenkategorien **Lead-Status** verwenden, die verfügbaren Statuswerte überprüfen und optional die Nachverfolgung mit Marketingdaten erweitern.
+
+<Note>
+Die Standardkategorien *Lead*, *Marketingqualifiziertes Lead*, *Verkaufschance* und *Verlorene Chance* sind nur in neuen Datenbanken enthalten.
+Bestehende Kunden müssen Kategorien manuell hinzufügen oder aktualisieren, um den Lead-Status zu aktivieren.
+</Note>
+
+## Schritt 1: Lead-Status für eine Firmenkategorie aktivieren
+
+Der Lead-Status kann nur für Kategorien verwendet werden, die zur Gruppe **Potenzieller Kunde** gehören. Stellen Sie sicher, dass mindestens eine Kategorie auf diese Weise eingerichtet ist, bevor Sie das Lead-Management aktivieren.
+
+1. Gehen Sie zu **Einstellungen und Verwaltung** > **Listen** > **Firma - Kategorie**.
+1. Erstellen Sie eine neue Kategorie oder bearbeiten Sie eine vorhandene.
+1. Setzen Sie **Kategoriengruppe** auf *Potenzieller Kunde*.
+1. Wählen Sie **Lead-Status für diese Kategorie aktivieren**.
+1. Klicken Sie **OK**, um die Änderungen zu speichern.
+
+![Aktivieren des Lead-Status für eine Kategorie in der Firma - Kategorie-Liste, mit ausgewählter Gruppe "Potenzieller Kunde". -screenshot][img1]
+
+Weitere Informationen finden Sie unter [Firmenkategorie und Kategoriengruppe][1].
+
+## Schritt 2: Lead-Status-Liste anpassen
+
+Die Liste **Person - Lead-Status** definiert die Qualifizierungsstufen, die in Ihrer Organisation verwendet werden. Standardmäßig enthält SuperOffice Status wie *Offen*, *Kontaktaufnahme*, *Qualifiziert*, *Disqualifiziert* und *Erneut bearbeiten*.
+
+1. Gehen Sie zu **Einstellungen und Verwaltung** > **Listen** > **Person - Lead-Status**.
+1. Überprüfen Sie die vordefinierten Elemente.
+1. Fügen Sie Status hinzu, bearbeiten oder entfernen Sie sie, um Ihren Qualifizierungsprozess anzupassen.
+
+Detaillierte Schritte finden Sie unter [Lead-Status verwalten][2].
+
+## Schritt 3: (Optional) Kategorieautomatisierung konfigurieren
+
+Die Kategorieautomatisierung reduziert die manuelle Arbeit, indem Firmenkategorien automatisch aktualisiert werden, wenn sich der Verkaufsstatus ändert oder der Lead-Status aktualisiert wird. Zum Beispiel können Sie einen Lead automatisch zu *Kunde* verschieben, wenn ein Verkauf als gewonnen markiert wird.
+
+1. Gehen Sie zu **Einstellungen und Verwaltung** > **Workflow** > **Lead-Kategorisierung**.
+1. Aktivieren Sie die Automatisierungsregeln, die Sie verwenden möchten.
+1. Geben Sie für jede Regel die Zielkategorie an und ob eine Benutzerbestätigung erforderlich ist.
+
+Detaillierte Schritte finden Sie unter [Lead-Kategorisierung automatisieren][6].
+
+## Schritt 4: (Optional) Mit **Marketing Premium** erweitern
+
+Wenn Sie die **Marketing Premium**-Lizenz oder den **Plus**-Plan haben, können Sie zusätzliche Nachverfolgungs- und Automatisierungsfunktionen in Ihrem Lead-Prozess nutzen:
+
+* **UTM-Tracking:** Erfassen Sie die Quelle neuer Leads aus Onlineformularen.
+  Siehe [UTM-Daten aus Formularen verfolgen][5].
+* **Lead-Nurturing-Flow:** Neue Leads automatisch an Benutzer verteilen.
+  Siehe [Neue Leads verteilen][4].
+
+## Verwandte Inhalte
+
+* [Übersicht über das Lead-Management][3]
+* [Firmenkategorie und Kategoriengruppe][1]
+* [Lead-Status verwalten][2]
+* [Lead-Kategorisierung automatisieren][6]
+
+[1]: ./add-company-category
+[2]: ./add-lead-status
+[3]: ../learn/index
+[4]: ../../marketing/flows/learn/define-flow-actions#distribute
+[5]: ../../marketing/utm/admin/set-up
+[6]: ./category-automation
+
+[img1]: ../../../media/loc/en/lead/enable-lead-status.png

@@ -26,5 +26,4 @@ Manchmal ist es erforderlich, die Anzahl der Klicks auf null zurückzusetzen. Di
 
 3. Klicken Sie auf <i class="ph ph-list" aria-label="Aufgabe"></i> neben dem Link und wählen Sie **Zurücksetzen** aus. Der Zählerwert in der Zeile **Klicks** wird auf 0 geändert. Außerdem werden die Daten zu den Kunden gelöscht, die auf diesen Link geklickt haben.
 
-<!-- Referenced links -->
-[6]: ../../mailing/learn/create/send-test-email.md
+[6]: ../../mailing/learn/create/send-test-email

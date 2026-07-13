@@ -69,9 +69,7 @@ Diese Einstellungen gelten global für alle ERP-Verbindungen des Quote Connector
 * [Produkt zu einer Preisliste hinzufügen][1]
 * [Produkt in einem Angebot hinzufügen/bearbeiten][2]
 
-<!-- Referenced links -->
-[1]: price-list-and-products.md
-[2]: ../../learn/quote/create.md#add-products
+[1]: ./price-list-and-products
+[2]: ../../learn/quote/create#add-products
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

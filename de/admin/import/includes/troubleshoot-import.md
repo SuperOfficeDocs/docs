@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 **Viele Kontakte werden ohne Symbol angezeigt. Bedeutet das, dass diese Personen nicht importiert werden?**
 
 Zeilen ohne Symbole werden nicht importiert. Wenn Sie feststellen, dass viele Personen nicht importiert werden, liegt das vielleicht daran, dass diese Personen nicht mit einer Firma verbunden sind. Gehen Sie in diesem Fall  folgendermaßen vor:
@@ -13,5 +12,4 @@ Zeilen ohne Symbole werden nicht importiert. Wenn Sie feststellen, dass viele Pe
     4. Klicken Sie auf **Speichern**.
     5. Klicken Sie auf **Weiter** und prüfen Sie, dass das Symbol [Neue Firma][img1] neben der Person angezeigt wird. Die Person wird in SuperOffice CRM als Firma mit ihr selbst als einzige Person erfasst.
 
-<!-- Referenced images -->
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png

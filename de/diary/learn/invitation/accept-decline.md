@@ -44,8 +44,6 @@ Teilnehmer, die zu einer Folgeaufgabe eingeladen sind, werden eine Benachrichtig
 
 * Wenn Sie eine Einladung erhalten und zum angegebenen Zeitpunkt bereits ein Termin ansteht, wird ein Ausrufezeichen (<i class="ph ph-warning" aria-label="Warning icon"></i>) angezeigt. Dies lenkt Ihre Aufmerksamkeit auf den Konflikt.
 
-<!-- Referenced links -->
-[1]: ../../../learn/basics/notifications.md#activity
+[1]: ../../../learn/basics/notifications#activity
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/learn/core-notifications.png

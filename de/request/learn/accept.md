@@ -51,13 +51,11 @@ Falls Sie vor der Annahme mehr Informationen benötigen oder die Funktion [Näch
 * [Nachrichten an externe Parteien weiterleiten][4]
 * [Anfrage schließen][5]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: reply.md
-[3]: transfer.md
-[4]: forward.md
-[5]: close.md
-[6]: ../admin/next-in-queue.md
+[1]: ./index#open
+[2]: ./reply
+[3]: ./transfer
+[4]: ./forward
+[5]: ./close
+[6]: ../admin/next-in-queue
 
-<!-- Referenced images -->
 [img2]: ../../../media/loc/en/request/requests-accept.png

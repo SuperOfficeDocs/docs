@@ -94,9 +94,7 @@ Benachrichtigungsempfänger sehen eine Benachrichtigung in SuperOffice, wenn ein
 * [Webhook erstellen][1]
 * [Webhooks-Entwicklerhandbuch][2]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../../../en/automation/webhook/dev/index.md
+[1]: ./create
+[2]: ../../../../en/automation/webhook/dev/index
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png

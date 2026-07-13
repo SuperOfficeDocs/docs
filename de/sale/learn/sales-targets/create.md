@@ -137,10 +137,8 @@ Zum Anzeigen des Revisionsverlaufs für ein Vertriebsziel (Zeile) klicken Sie au
 
 * [Verwenden von Vertriebszielen in Kacheln][2]
 
-<!-- Referenced links -->
-[2]: ../../../dashboard/learn/show-sales-targets.md
+[2]: ../../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png
 [img3]: ../../../../media/loc/en/sale/target-adjust-number.png

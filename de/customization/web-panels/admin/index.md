@@ -14,7 +14,7 @@ topic: web panel
 tier: core
 language: de
 index: true
-redirect_from: 
+redirect_from:
   - /de/ui/web-panels/learn/index
   - /de/admin/lists/learn/web-panel
 ---
@@ -38,20 +38,20 @@ Web-Bildschirme unterstützen eine Reihe von Inhaltstypen:
 
 Der **Anzeigeort** wird beim Konfigurieren des Panels definiert. Dies steuert, wo in SuperOffice das Panel erscheint.
 
-* **Seitenpanel** – Erscheint im aufklappbaren Panel an der Seite vieler CRM-Ansichten.
-* **Symbolleiste** – Fügt eine Schaltfläche zur Symbolleiste hinzu.
-* **Navigator-Schaltfläche** – Fügt eine Schaltfläche zum Hauptmenü hinzu.
+* **Seitenpanel** - Erscheint im aufklappbaren Panel an der Seite vieler CRM-Ansichten.
+* **Symbolleiste** - Fügt eine Schaltfläche zur Symbolleiste hinzu.
+* **Navigator-Schaltfläche** - Fügt eine Schaltfläche zum Hauptmenü hinzu.
 * **Panels:**
-  * **Firma-, Person-, Projekt-, Verkaufs- und Selektionskarten** – Fügt eine Verknüpfung in der **www**-Registerkarte für jede Ansicht hinzu.
-  * **Web-Panel auf SuperOffice-Schaltfläche** – Öffnet sich vom SuperOffice-Logo (obere linke Ecke). Mehrere URLs erscheinen als Registerkarten rechts.
-  * **Abschnitt-Registerkarten (in Firma-, Person-, Projekt- und Verkaufsansichten)** – Fügt eine separate Registerkarte hinzu, die den Panel-Inhalt öffnet.
+  * **Firma-, Person-, Projekt-, Verkaufs- und Selektionskarten** - Fügt eine Verknüpfung in der **www**-Registerkarte für jede Ansicht hinzu.
+  * **Web-Panel auf SuperOffice-Schaltfläche** - Öffnet sich vom SuperOffice-Logo (obere linke Ecke). Mehrere URLs erscheinen als Registerkarten rechts.
+  * **Abschnitt-Registerkarten (in Firma-, Person-, Projekt- und Verkaufsansichten)** - Fügt eine separate Registerkarte hinzu, die den Panel-Inhalt öffnet.
 * **Dialoge:**
-  * **Folgeaufgabendialog** – Fügt eine Verknüpfung in der **www**-Registerkarte des Folgeaufgabendialogs hinzu.
-  * **Dokument-, Produkt- und Angebotsdialoge** – Fügt eine Verknüpfung in der **www**-Registerkarte jedes Dialogs hinzu.
+  * **Folgeaufgabendialog** - Fügt eine Verknüpfung in der **www**-Registerkarte des Folgeaufgabendialogs hinzu.
+  * **Dokument-, Produkt- und Angebotsdialoge** - Fügt eine Verknüpfung in der **www**-Registerkarte jedes Dialogs hinzu.
 * **Menüs:**
-  * **Werkzeugmenü** – Erscheint unter **Andere Anwendungen** beim Klicken auf die **Tools**-Schaltfläche im Navigator.
-  * **Ansichtsmenü** – Erscheint in der Menüoption **Andere Anwendungen**.
-* **Dashboard-Kacheln** – Verfügbar im Kachel-Inhaltsauswahl für Dashboard-Widgets.
+  * **Werkzeugmenü** - Erscheint unter **Andere Anwendungen** beim Klicken auf die **Tools**-Schaltfläche im Navigator.
+  * **Ansichtsmenü** - Erscheint in der Menüoption **Andere Anwendungen**.
+* **Dashboard-Kacheln** - Verfügbar im Kachel-Inhaltsauswahl für Dashboard-Widgets.
 
 ### In Service (veraltet)
 
@@ -87,8 +87,5 @@ Web-Bildschirme laden Inhalte dynamisch basierend auf dem CRM-Kontext und der f�
 * [Web-Panel hinzufügen][1]
 * [Web-Panels erstellen][2]
 
-<!-- Referenced links -->
-[1]: add-web-panel.md
-[2]: ../../../../en/customization/web-panels/dev/index.md
-
-<!-- Referenced images -->
+[1]: ./add-web-panel
+[2]: ../../../../en/customization/web-panels/dev/index

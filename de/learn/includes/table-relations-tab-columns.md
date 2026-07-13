@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Spalte | Beschreibung |
 |---|---|
 | Quelle - vollständiger Name | Zeigt den Namen der Firma oder Person, die die aktive Partei der Beziehung ist. |

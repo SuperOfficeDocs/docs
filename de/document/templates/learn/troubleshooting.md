@@ -16,7 +16,7 @@ language: de
 
 Wenn wir ein Dokument in SuperOffice erstellen, extrahieren wir den gesamten Inhalt des Dokuments als Klartext, den unser Vorlagenersatzsystem verwendet, um Vorlagenvariablen zu identifizieren und zu ersetzen.
 
-Wir suchen nach einem Start-Tag ( `{` oder `<`) und dann nach einem End-Tag (`}` oder `>`). Der Text zwischen den Tags wird dann überprüft, ob es sich um eine Vorlagenvariable handelt. Zum Beispiel wird {**atit**} als Vorlagenvariable **atit** erkannt, während **{thisisnotatag}** nicht als gültiges Tag erkannt wird und nicht ersetzt wird.
+Wir suchen nach einem Start-Tag ( `{` oder `<`) und dann nach einem End-Tag (`}` oder `>`). Der Text zwischen den Tags wird dann überprüft, ob es sich um eine Vorlagenvariable handelt. Zum Beispiel wird \{**atit**\} als Vorlagenvariable **atit** erkannt, während **\{thisisnotatag\}** nicht als gültiges Tag erkannt wird und nicht ersetzt wird.
 
 Wenn eine Vorlagenvariable erkannt wird, wird sie durch ihren jeweiligen Wert ersetzt, auch wenn sie leer ist. Wenn eine Vorlagenvariable im fertig erstellten Dokument noch sichtbar ist, bedeutet dies, dass unser System sie nicht als gültige Vorlagenvariable erkannt hat.
 
@@ -94,7 +94,7 @@ Aber aus irgendeinem Grund kann das XML um unsere Vorlagenvariablen am Ende so a
 {</a:t><a:rPr lang="en-US" dirty="0" smtClean="0"/><a:t>onam</a:t></a:r><a:r><a:rPr lang="en-US" smtClean="0"/><a:t>}
 ```
 
-Wie Sie sehen können, sind die Start- "{" und End- "}" Tags weit entfernt vom Vorlagenvariablen-Identifier "onam" platziert, so dass unser System dies nicht als gültige Vorlagenvariable erkennt. Das Endergebnis ist, dass das Dokument nach der Erstellung immer noch den Text {onam} anzeigt.
+Wie Sie sehen können, sind die Start- "\{" und End- "\}" Tags weit entfernt vom Vorlagenvariablen-Identifier "onam" platziert, so dass unser System dies nicht als gültige Vorlagenvariable erkennt. Das Endergebnis ist, dass das Dokument nach der Erstellung immer noch den Text \{onam\} anzeigt.
 
 ## Was kann ich tun, wenn das passiert?
 
@@ -118,7 +118,7 @@ Es ist äußerst selten, dass eine Vorlagenvariable in Dokumenten eines Typs fun
 
 Wenn dies passiert, handelt es sich höchstwahrscheinlich um einen weiteren Fall von generiertem XML, das die Tags durcheinander bringt.
 
-* Um Dateien vom Typ .pptx, .docx oder .xlsx zu überprüfen, können Sie einfach die Erweiterung der Datei in .zip umbenennen (stellen Sie sicher, dass Sie zuerst eine Sicherungskopie der Datei erstellen).
+* Um Dateien vom Typ .pptx, .docx oder .xlsx zu überprüfen, können Sie einfach die Erweiterung der Datei in .zip umbenennen (stellen Sie sicher, dass Sie zuerst eine Sicherungskopie der Datei erstellen).
 
 * Nach dem Entpacken können Sie die relevante XML-Datei öffnen, um sie zu überprüfen. Verwenden Sie Notepad oder ähnliches, da Sie möchten, dass die gesamte Datei in ihrer Gesamtheit ohne Parsen der XML-Tags angezeigt wird.
 
@@ -128,22 +128,20 @@ Wenn dies passiert, handelt es sich höchstwahrscheinlich um einen weiteren Fall
 
 ## Interne Strukturen
 
-So sieht eine PowerPoint .pptx nach dem Entpacken aus (die slide1.xml ist die eigentliche Folie 1):
+So sieht eine PowerPoint .pptx nach dem Entpacken aus (die slide1.xml ist die eigentliche Folie 1):
 
 ![PowerPoint -screenshot][img4]
 
-Word .docx (document.xml ist das eigentliche Dokument, wenn es dem Benutzer angezeigt wird):
+Word .docx (document.xml ist das eigentliche Dokument, wenn es dem Benutzer angezeigt wird):
 
 ![Word -screenshot][img5]
 
-Excel .xlsx (sheet1.xml ist das eigentliche Blatt 1):
+Excel .xlsx (sheet1.xml ist das eigentliche Blatt 1):
 
 ![Excel -screenshot][img6]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
+[1]: ../variables/index
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/document/troubleshoot-tempvar.png
 [img2]: ../../../../media/loc/en/document/troubleshoot-tempvar-1.png
 [img4]: ../../../../media/loc/en/document/troubleshoot-tempvar-2.png

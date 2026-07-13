@@ -20,7 +20,7 @@ Gehen Sie im Navigator zum <i class="ph ph-gear" aria-hidden="true"></i> **Einst
 * **Kennwort der Person bei der Anfragenverwaltung verbergen**: Wenn die Option aktiviert ist, werden Kennwörter beim Anzeigen von Personen als Punkte dargestellt.
 * **Komplexes Kennwort für Person erforderlich, wenn Kundenkennwort festgelegt ist**: Wenn diese Option aktiviert ist, müssen die Passwörter der Personen den unten aufgeführten Mindestanforderungen entsprechen.
 * **Mindestanzahl der Zeichen in Kennwörtern**: In diesem Feld wird die kleinste in einem Kennwort zulässige Anzahl von Zeichen eingegeben.
-* **Mindestanzahl der Ziffern in Kennwörtern**: In diesem Feld wird die kleinste in einem Kennwort zulässige Anzahl von Ziffern (0–9) eingegeben.
+* **Mindestanzahl der Ziffern in Kennwörtern**: In diesem Feld wird die kleinste in einem Kennwort zulässige Anzahl von Ziffern (0-9) eingegeben.
 * **Mindestanzahl der Kleinbuchstaben in Kennwörtern**: In diesem Feld wird die kleinste in einem Kennwort zulässige Anzahl von Kleinbuchstaben eingegeben.
 * **Mindestanzahl der Großbuchstaben in Kennwörtern**: In diesem Feld wird die kleinste in einem Kennwort zulässige Anzahl von Großbuchstaben eingegeben.
 * **Mindestanzahl der Sonderzeichen in Kennwörtern**: In diesem Feld wird die kleinste in einem Kennwort zulässige Anzahl von Sonderzeichen eingegeben. Sonderzeichen sind keine Ziffern oder Buchstaben, sondern z. B. Sternchen und Fragezeichen.

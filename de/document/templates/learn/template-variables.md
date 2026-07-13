@@ -28,7 +28,7 @@ können Sie diesen abgeänderten Text senden:
 
 Der Text, den Sie eingeben, sieht folgendermaßen aus:
 
-"Hallo **{atfn}**. möchten Sie gerne mehr darüber erfahren, wie unser Produkt **{name}** bei der Gewinnung von Neukunden unterstützen kann? Bitte rufen Sie **{cont}** unter **{onam}** an."
+"Hallo **\{atfn\}**. möchten Sie gerne mehr darüber erfahren, wie unser Produkt **\{name\}** bei der Gewinnung von Neukunden unterstützen kann? Bitte rufen Sie **\{cont\}** unter **\{onam\}** an."
 
 ## Vorlagenvariablen verwenden
 
@@ -40,7 +40,7 @@ Der Text, den Sie eingeben, sieht folgendermaßen aus:
 
 * Das Datum und die Uhrzeit in den Vorlagenvariablen werden von der Systemuhr des PC gesteuert.
 
-* In Dokumenten des Dateityps .doc (Office 2003 und älter) müssen Sie die Variablen anstelle von geschweiften Klammern – { } – in spitze Klammern – &lt; &gt; – setzen.
+* In Dokumenten des Dateityps .doc (Office 2003 und älter) müssen Sie die Variablen anstelle von geschweiften Klammern - \{ \} - in spitze Klammern - &lt; &gt; - setzen.
 
 ### Beispiel: Besprechungsnotizen (Kopfzeile)
 
@@ -114,7 +114,4 @@ Beim Erstellen von E-Mail-Vorlagen für Anfragen und Kampagnen (und Nachrichtenv
 
 Die Referenz ist nach Bereich gruppiert. [Gehen Sie zu Referenz][1]
 
-<!-- Referenced links -->
-[1]: ../variables/index.md
-
-<!-- Referenced images -->
+[1]: ../variables/index

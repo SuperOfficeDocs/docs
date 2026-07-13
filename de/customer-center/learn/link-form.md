@@ -20,7 +20,7 @@ Wenn Sie das Chat-Widget zum Kundenzentrum hinzufügen, können Ihre Kunden leic
 
 ## Bevor Sie beginnen
 
-Sie müssen ein [Web-Formular erstellen][3], bevor Sie es zu Ihrem Kundenzentrum hinzufügen. Denken Sie daran, dass Sie beim Erstellen eines neuen Web-Formulars eines der drei Anfrageelemente hinzufügen müssen – Titel, Kategorie und Mitteilung. Andernfalls können Sie das Formular nicht zu Ihrem Kundenzentrum hinzufügen.
+Sie müssen ein [Web-Formular erstellen][3], bevor Sie es zu Ihrem Kundenzentrum hinzufügen. Denken Sie daran, dass Sie beim Erstellen eines neuen Web-Formulars eines der drei Anfrageelemente hinzufügen müssen - Titel, Kategorie und Mitteilung. Andernfalls können Sie das Formular nicht zu Ihrem Kundenzentrum hinzufügen.
 
 ![Um dem Kundenzentrum ein neues Web-Formular hinzuzufügen, fügen Sie eines dieser Anfrageelemente hinzu. -screenshot][img1]
 
@@ -49,12 +49,10 @@ Wenn ein Kunde dieses Formular ausfüllt, werden die Informationen und Details a
 * [Kundenzentrum konfigurieren][2]
 * [Mit Formularen arbeiten][1]
 
-<!-- Referenced links -->
-[1]: ../../marketing/forms/learn/index.md
-[3]: ../../marketing/forms/learn/create.md
-[2]: config.md
+[1]: ../../marketing/forms/learn/index
+[3]: ../../marketing/forms/learn/create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png
 [img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png

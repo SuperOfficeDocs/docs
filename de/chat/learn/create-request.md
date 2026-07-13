@@ -32,9 +32,6 @@ Wenn Sie das Problem nicht über den Chat lösen können, können Sie eine Anfra
 * [Chat beantworten][3]
 * [Informationen über Anfragen][4]
 
-<!-- Referenced links -->
-[1]: link-to-person.md
-[3]: respond.md
-[4]: ../../request/learn/index.md
-
-<!-- Referenced images -->
+[1]: ./link-to-person
+[3]: ./respond
+[4]: ../../request/learn/index

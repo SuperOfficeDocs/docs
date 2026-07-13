@@ -68,10 +68,7 @@ Die allgemeinen Schritte zum Drucken eines Datensatzes in SuperOffice CRM sind a
 * [Etiketten drucken][3]
 * [E-Mail drucken][4]
 
-<!-- Referenced links -->
-[1]: ../getting-started/main-screen/navigator.md
-[2]: ../../search-options/selection/learn/howto/print.md
-[3]: ../../search-options/selection/learn/howto/print-labels.md
-[4]: ../../email/inbox/learn/preview.md#print
-
-<!-- Referenced images -->
+[1]: ../getting-started/main-screen/navigator
+[2]: ../../search-options/selection/learn/howto/print
+[3]: ../../search-options/selection/learn/howto/print-labels
+[4]: ../../email/inbox/learn/preview#print

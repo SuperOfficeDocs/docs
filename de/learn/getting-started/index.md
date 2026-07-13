@@ -15,13 +15,13 @@ language: de
 
 # Erste Schritte mit SuperOffice CRM
 
-Willkommen bei SuperOffice CRM! Egal, ob Sie ein neuer Benutzer sind oder von einer früheren Version wechseln – dieser Leitfaden hilft Ihnen, sich im System zurechtzufinden und das Beste aus seinen Funktionen herauszuholen.
+Willkommen bei SuperOffice CRM! Egal, ob Sie ein neuer Benutzer sind oder von einer früheren Version wechseln - dieser Leitfaden hilft Ihnen, sich im System zurechtzufinden und das Beste aus seinen Funktionen herauszuholen.
 
 ![Personenkarte mit Aktivitäten und Wochenansicht in SuperOffice CRM -screenshot][img1]
 
 ## Überblick
 
-SuperOffice CRM zentralisiert alle Kundeninteraktionen – sei es im Vertrieb, Marketing oder Kundenservice – und stellt sicher, dass Sie organisiert und effizient arbeiten. Die Kernfunktionen umfassen:
+SuperOffice CRM zentralisiert alle Kundeninteraktionen - sei es im Vertrieb, Marketing oder Kundenservice - und stellt sicher, dass Sie organisiert und effizient arbeiten. Die Kernfunktionen umfassen:
 
 * **Firmen- und Personenkarten:** Verwalten Sie alle Kundeninformationen an einem zentralen Ort.
 * **Bereichsregisterkarten:** Zeigen Sie Aktivitäten, Verkäufe, Projekte und Anfragen zu jedem Kontakt an.
@@ -60,18 +60,16 @@ Entdecken Sie das volle Potenzial von SuperOffice CRM! Nutzen Sie unsere Anleitu
 * [Mehr über Aktivitäten erfahren (Folgeaufgaben, Dokumente und E-Mails)][13]
 * [Mobile CRM: Zugriff auf Ihr CRM von unterwegs][9]
 
-<!-- Referenced links -->
-[1]: main-screen/navigator.md
-[2]: main-screen/index.md
-[6]: login.md
-[7]: preferences.md
-[8]: connect-your-accounts.md
-[9]: ../../../en/mobile/index.md
+[1]: ./main-screen/navigator
+[2]: ./main-screen/index
+[6]: ./login
+[7]: ./preferences
+[8]: ./connect-your-accounts
+[9]: ../../../en/mobile/index
 
-[11]: ../basics/fav.md
-[13]: ../basics/activity.md
-[14]: ../../search-options/learn/index.md
-[15]: change-language.md
+[11]: ../basics/fav
+[13]: ../basics/activity
+[14]: ../../search-options/learn/index
+[15]: ./change-language
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/learn/contact-screen-with-week.png

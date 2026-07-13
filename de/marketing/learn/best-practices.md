@@ -71,7 +71,7 @@ Einer der wichtigsten Aspekte dieser technischen Teile ist der **[SPF-Eintrag in
 
 ## Verwenden Sie die E-Mail-Domänenvalidierung
 
-Hoffentlich verwenden Sie bereits die flexiblen Optionen, um die From- und Reply-to-Felder anzupassen, wenn Sie eine Aussendung in SuperOffice einrichten. Dies ist großartig, wenn Sie benutzerdefinierten Text wie **< Jeanette von SuperOffice >** hinzufügen möchten, um als Absender angezeigt zu werden. Oder wenn Sie eine E-Mail im Auftrag Ihres Kollegen oder Chefs senden.
+Hoffentlich verwenden Sie bereits die flexiblen Optionen, um die From- und Reply-to-Felder anzupassen, wenn Sie eine Aussendung in SuperOffice einrichten. Dies ist großartig, wenn Sie benutzerdefinierten Text wie **\< Jeanette von SuperOffice >** hinzufügen möchten, um als Absender angezeigt zu werden. Oder wenn Sie eine E-Mail im Auftrag Ihres Kollegen oder Chefs senden.
 
 Aber wenn Sie eine nicht validierte oder falsch geschriebene E-Mail-Adresse hinzufügen, kann dies Ihre E-Mail-Zustellbarkeit beeinträchtigen.
 
@@ -97,15 +97,12 @@ Klicken Sie im globalen Menü auf **Mobil** (<i class="ph ph-device-mobile" aria
 
 Um die mobil-spezifischen Einstellungen für eine Nachricht anzupassen, wählen Sie einen Bereich der Nachricht aus und klicken in der Seitenleiste auf **Mobil**. Sie können nun die Formatierung für die Anzeige der Nachricht auf mobilen Geräten definieren und auch auswählen, welche Elemente (z. B. Bilder) von mobilen Geräten ausgeschlossen werden sollen.
 
-<!-- Referenced links -->
-[1]: ../recipients/learn/index.md#selections
-[2]: ../recipients/learn/manage-bounces.md
-[3]: ../editor/learn/add-unsubscribe-link.md
-[4]: ../mailing/learn/create/send-test-email.md
-[5]: ../../security/privacy/admin/add-legal-base.md
-[6]: ../mailing/admin/add-domain.md
-[7]: ../../../en/online/mail-services/mailgun/spf/index.md
+[1]: ../recipients/learn/index#selections
+[2]: ../recipients/learn/manage-bounces
+[3]: ../editor/learn/add-unsubscribe-link
+[4]: ../mailing/learn/create/send-test-email
+[5]: ../../security/privacy/admin/add-legal-base
+[6]: ../mailing/admin/add-domain
+[7]: ../../../en/online/mail-services/mailgun/spf/index
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/
-
-<!-- Referenced images -->

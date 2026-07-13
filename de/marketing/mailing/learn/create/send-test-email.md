@@ -51,8 +51,6 @@ Wenn Sie eine Testkampagne verschickt haben, müssen Sie die Zähler für die in
 1. Wechseln Sie zur Links-Registerkarte **Überwachte Links**.
 2. Klicken Sie auf die Menüschaltfläche neben dem entsprechenden Link und wählen Sie **Zurücksetzen** aus. Die Spalte **Klicks** wird auf **0** gesetzt. Außerdem werden die Daten zu den Kunden gelöscht, die auf diesen Link geklickt haben.
 
-<!-- Referenced links -->
-[1]: ../../../learn/best-practices.md#mobile
+[1]: ../../../learn/best-practices#mobile
 
-<!-- Referenced images -->
 [img2]: ../../../../../media/loc/en/marketing/test-mailing.png

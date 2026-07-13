@@ -50,5 +50,4 @@ index: true
 
 * [So richten Sie "Nächste Anfrage in der Warteschlange abrufen" ein][1]
 
-<!-- Referenced links -->
-[1]: ../next-in-queue.md
+[1]: ../next-in-queue

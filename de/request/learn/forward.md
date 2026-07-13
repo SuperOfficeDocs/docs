@@ -17,7 +17,7 @@ redirect_from: /de/request/learn/howto/forward
 
 # Anfrage an externen Kontakt weiterleiten
 
-Als Bearbeiter einer Anfrage können Sie nicht immer selbst eine Antwort geben – selbst mit der Unterstützung Ihrer Kollegen. In manchen Fällen müssen Sie externe Hilfe einholen, z. B. von einem Lieferanten, Partner oder Branchenspezialisten.
+Als Bearbeiter einer Anfrage können Sie nicht immer selbst eine Antwort geben - selbst mit der Unterstützung Ihrer Kollegen. In manchen Fällen müssen Sie externe Hilfe einholen, z. B. von einem Lieferanten, Partner oder Branchenspezialisten.
 
 Sie können eine komplexe oder problematische Anfrage per E-Mail an eine externe Person weiterleiten. Die Antwort dieser Person wird automatisch in der Anfrage in SuperOffice gespeichert. Der Kunde erhält keine dieser E-Mail-Kommunikationen. Sobald Sie die Lösung haben, können Sie dem Kunden direkt in der Anfrage antworten.
 
@@ -63,13 +63,11 @@ Sie können eine komplexe oder problematische Anfrage per E-Mail an eine externe
 * [Antwort an Kunde senden][3]
 * [Mitteilung bearbeiten][4]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: create.md#message
-[3]: reply.md
-[4]: edit-message.md
+[1]: ./index#open
+[2]: ./create#message
+[3]: ./reply
+[4]: ./edit-message
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/request/forward-multiple-requests.png
 [img2]: ../../../media/loc/en/request/forward-add-recipient.png
 [img3]: ../../../media/loc/en/request/forward-a-request.png

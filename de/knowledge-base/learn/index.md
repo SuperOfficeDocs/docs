@@ -30,10 +30,7 @@ Die **Wissensdatenbank** ist vom **Hauptmenü** in der oberen Leiste zugreifbar 
 
 * **E-Mail-Adressen**: Hier können Sie eine [Liste mit E-Mail-Adressen erstellen][4], die Sie häufig verwenden, wie zum Beispiel von Personen, die weder Benutzer noch erfasste Personen in SuperOffice CRM sind. Diese Adressen sind dann in den meisten Situationen verfügbar, in denen Sie eine E-Mail senden müssen.
 
-<!-- Referenced links -->
-[1]: external-document.md
-[2]: faq/index.md
-[3]: reply-templates/index.md
-[4]: email-addresses.md
-
-<!-- Referenced images -->
+[1]: ./external-document
+[2]: ./faq/index
+[3]: ./reply-templates/index
+[4]: ./email-addresses

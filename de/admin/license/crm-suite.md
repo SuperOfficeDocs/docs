@@ -22,7 +22,7 @@ SuperOffice CRM Suite stellt eine einheitliche, integrierte CRM-Plattform bereit
 
 ## <a id="plans"></a>Pläne
 
-Es stehen fünf Pläne zur Verfügung. Die Pläne sind kumulativ — jeder Plan enthält alles aus den Plänen darunter.
+Es stehen fünf Pläne zur Verfügung. Die Pläne sind kumulativ - jeder Plan enthält alles aus den Plänen darunter.
 
 | Plan | Beschreibung |
 | --- | --- |
@@ -76,9 +76,9 @@ Der Indikator **Einschränkungen** unter **Einstellungen und Verwaltung** > **Li
 
 | Verbrauch | Indikator | Bedeutung |
 | --- | --- | --- |
-| Unter 85 % | Anzahl in Schwarz angezeigt | Normal — keine Maßnahme erforderlich |
+| Unter 85 % | Anzahl in Schwarz angezeigt | Normal - keine Maßnahme erforderlich |
 | 85 % oder mehr | <i class="ph ph-warning" aria-label="Warning"></i> Anzahl in Rot angezeigt | Nähert sich dem Limit |
-| 100 % | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Anzahl in Rot angezeigt | Limit erreicht — die Funktion ist eingeschränkt |
+| 100 % | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Anzahl in Rot angezeigt | Limit erreicht - die Funktion ist eingeschränkt |
 
 ![Licences Status tab showing a plan limit warning with an Upgrade button -screenshot][img1]
 
@@ -86,7 +86,7 @@ Wenn Sie Administrator sind, wird neben einem Warn- oder Stoppindikator eine Sch
 
 ## Migration von SuperOffice CRM Online
 
-Organisationen, die von **SuperOffice CRM Online** (dem modulbasierten Abonnement) migrieren, werden dem CRM Suite-Plan zugeordnet, der ihrer aktuellen Lizenz entspricht. Wenn Sie mehrere Lizenzen hatten, basiert Ihr Plan auf der höchsten Lizenzstufe. Der Übergangszeitpunkt wird individuell pro Konto festgelegt — Sie werden kontaktiert.
+Organisationen, die von **SuperOffice CRM Online** (dem modulbasierten Abonnement) migrieren, werden dem CRM Suite-Plan zugeordnet, der ihrer aktuellen Lizenz entspricht. Wenn Sie mehrere Lizenzen hatten, basiert Ihr Plan auf der höchsten Lizenzstufe. Der Übergangszeitpunkt wird individuell pro Konto festgelegt - Sie werden kontaktiert.
 
 | Aktuelle Lizenz | CRM Suite-Plan |
 | --- | --- |
@@ -103,9 +103,8 @@ Organisationen, die von **SuperOffice CRM Online** (dem modulbasierten Abonnemen
 * [SuperOffice CRM Online-Benutzerpläne][2]
 * [Lizenz aktivieren][3]
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: user-plans.md
-[3]: activate.md
+[1]: ./index
+[2]: ./user-plans
+[3]: ./activate
 
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png
