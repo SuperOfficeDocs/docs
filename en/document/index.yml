@@ -1,0 +1,232 @@
+### YamlMime:SubCategory
+
+yamlMime: SubCategory
+title: Document
+summary: Welcome to the document area where you can find relevant links to all things related to documents.
+
+metadata:
+  title: Document
+  description: "Documents, document integrations, and document handling"
+  ms.topic: landing-page
+  author: Bergfrid Dias
+  so.author: digitaldiina
+  so.date: 08.02.2024
+
+# typeDesc: architecture | concept | deploy       | download      | get-started        | how-to-guide | learn  | overview | quickstart | reference     | tutorial | video              | whats-new
+# itemType: architecture | explore | cloud_upload | file_download | power_settings_new | list         | school | map      | place      | library_books | dvr      | video_library      | new_releases
+
+# PLEASE PAY ATTENTION TO INDENTATION
+
+landingContent:
+  - title: Introduction
+    linkLists:
+      - itemType: explore
+        typeDesc: concept
+        links:
+        - text: Introduction to documents
+          url: learn/index.md
+        - text: Document library
+          url: library/learn/index.md
+        - text: Cloud integrations
+          url: library/it/index.md
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Connect your accounts
+          url: ../learn/getting-started/connect-your-accounts.md
+        - text: WebTools
+          url: webtools/index.md
+        - text: How to create a document
+          url: learn/create.md
+        - text: Edit or delete documents
+          url: learn/edit.md
+        - text: Check in/out documents
+          url: learn/lock.md
+        - text: Send email attachments from SuperOffice
+          url: learn/send-as-email.md
+        - text: Save email attachment to SuperOffice
+          url: ../../../integrations/mail-link/archive.md
+      - itemType: video_library
+        typeDesc: video
+        links:
+        - text: Guided tour
+          url: https://www.youtube.com/watch?v=IUhlGOwXp0o
+        - text: Create a document and link it to your project
+          url: https://www.youtube.com/watch?v=TtgfQ8RO9fw
+
+  - title: Document templates
+    linkLists:
+      - itemType: explore
+        typeDesc: concept
+        links:
+        - text: Overview
+          url: templates/learn/index.md
+        - text: Document types
+          url: templates/learn/document-types.md
+        - text: About template variables
+          url: templates/learn/template-variables.md
+        - text: Quote templates and merge fields
+          url: templates/learn/quote-templates.md
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Create document template
+          url: templates/learn/create.md
+        - text: Link template (in Settings and maintenance)
+          url: templates/admin/link-template.md
+        - text: Document templates in multiple languages
+          url: https://help.superoffice.com/docs/11/en/document/templates/admin/using-document-templates-for-multiple-languages.html
+      - itemType: video_library
+        typeDesc: video
+        links:
+        - text: Edit document template
+          url: https://www.youtube.com/watch?v=FnhcmjP-TgE
+        - text: Add document template
+          url: https://www.youtube.com/watch?v=XcTN1wZPJGY
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: Template variable reference
+          url: templates/variables/index.md
+        - text: Merge field reference
+          url: templates/merge-fields/index.md
+
+  - title: SharePoint documents
+    linkLists:
+      - itemType: explore
+        typeDesc: concept
+        links:
+        - text: Overview
+          url: ../../../integrations/sharepoint-documents/index.md
+        - text: Requirements
+          url: ../../../integrations/sharepoint-documents/requirements.md
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Set up SharePoint
+          url: ../../../integrations/sharepoint-documents/set-up.md
+        - text: Set up SuperOffice
+          url: ../../../integrations/sharepoint-documents/configure-superoffice.md
+        - text: Troubleshooting
+          url: ../../../integrations/sharepoint-documents/troubleshooting.md
+        - text: Migration
+          url: ../../../integrations/sharepoint-documents/migrate/index.md
+      - itemType: video_library
+        typeDesc: video
+        links:
+        - text: Getting started with SharePoint for documents storage
+          url: https://www.youtube.com/watch?v=9QHJKkqDlzY 
+
+  - title: Google Workspace
+    linkLists:
+      - itemType: explore
+        typeDesc: concept
+        links:
+        - text: Overview
+          url: ../../../integrations/g-suite/index.md
+        - text: Requirements
+          url: ../../../integrations/g-suite/requirements.md
+        - text: Security
+          url: ../../../integrations/g-suite/security.md
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Quick start
+          url: ../../../integrations/g-suite/getting-started.md
+        - text: Set up
+          url: ../../../integrations/g-suite/set-up.md
+
+  - title: UI customization
+    linkLists:
+      - itemType: explore
+        typeDesc: concept
+        links:
+        - text: Screen Designer
+          url: ../customization/screen-designer/admin/index.md
+        - text: Web panels
+          url: ../customization/web-panels/admin/index.md
+        - text: SoProtocol
+          url: ../customization/soprotocol/index.md
+        - text: Custom screens (bLogic)
+          url: ../ui/blogic/custom-screens/index.md
+        - text: Task menu items
+          url: ../customization/admin/add-items-to-task-menu.md
+        - text: Custom fields
+          url: ../custom-objects/overview.md
+
+  - title: Automation
+    linkLists:
+      - itemType: explore
+        typeDesc: concept
+        links:
+        - text: Overview
+          url: ../automation/index.yml
+        - text: Triggers
+          url: ../automation/trigger/index.md
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: Webhooks - project events
+          url: ../automation/webhook/reference/project-events.md
+        - text: Webhooks - project member events
+          url: ../automation/webhook/reference/project-member-events.md
+        - text: Zapier
+          url: ../../../integrations/zapier/index.md
+
+  - title: CRMScript
+    linkLists:
+      - itemType: explore
+        typeDesc: concept
+        links:
+        - text: Overview
+          url: ../automation/crmscript/howto/document/index.md
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: Document properties
+          url: ../automation/crmscript/howto/document/properties.md
+        - text: Document files
+          url: ../automation/crmscript/howto/document/file.md
+        - text: Document templates
+          url: ../automation/crmscript/howto/document/templates.md
+
+  - title: API
+    linkLists:
+      - itemType: list
+        typeDesc: how-to-guide
+        links:
+        - text: REST
+          url: ../api/web-services/howto/document/rest-generate-document.md
+        - text: Services
+          url: ../api/web-services/howto/document/services-create.md
+        - text: SO_Arc document plugin
+          url: ../api/plugins/document/soarc-document-plugin.md
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: REST
+          url: ../api/reference/restful/rest/Document/index.md
+        - text: SOAP (services88)
+          url: ../api/reference/soap/Services88/Document/index.md
+
+  - title: Database tables
+    linkLists:
+      - itemType: library_books
+        typeDesc: reference
+        links:
+        - text: Document
+          url: ../database/tables/document.md
+        - text: SuggestedDocument
+          url: ../database/tables/suggesteddocument.md
+        - text: DocTmpl
+          url: ../database/tables/doctmpl.md
+        - text: Quote table
+          url: ../database/tables/quote.md
+        - text: Associate
+          url: ../database/tables/associate.md
+        - text: Appointment
+          url: ../database/tables/appointment.md
+        - text: UddocSmall table
+          url: ../database/tables/uddocsmall.md
+        - text: UddocLarge table
+          url: ../database/tables/uddoclarge.md

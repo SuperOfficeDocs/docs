@@ -1,0 +1,17 @@
+items:
+  - name: Overview
+    href: index.md
+  - name: Create mailing
+    href: create-mailings.md
+  - name: Send email to multiple recipients
+    href: send-email.md
+  - name: Generate follow-ups
+    href: generate-follow-ups.md
+  - name: Display selection as chart
+    href: display-as-charts.md
+  - name: Print labels
+    href: print-labels.md
+  - name: Print selection
+    href: print.md
+  - name: Export to Excel or file
+    href: export.md

@@ -1,0 +1,9 @@
+items:
+- name: Set up lead management
+  href: index.md
+- name: Company category and category group
+  href: add-company-category.md
+- name: Manage lead statuses
+  href: add-lead-status.md
+- name: Automate lead categorization
+  href: category-automation.md

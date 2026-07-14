@@ -1,0 +1,3 @@
+---
+redirect_url: https://docs.superoffice.com/en/automation/crmscript/howto/custom-objects/udef.html
+---

@@ -1,0 +1,24 @@
+items:
+- name: Overview
+  href: index.md
+- name: View chat statistics
+  href: statistics.md
+- name: Respond to a chat
+  href: respond.md
+- name: Link chat to person
+  href: link-to-person.md
+- name: Create request in chat
+  href: create-request.md
+- name: Transfer chat to another agent
+  href: transfer-to-agent.md
+- name: Using the chat function from the customer's perspective
+  href: as-customer.md
+- name: For administrators
+  topicHref: ../admin/index.md
+  items:
+  - name: Overview
+    href: ../admin/index.md
+  - name: Create a chat channel
+    href: ../admin/channel-create.md
+  - name: Add JavaScript for your website
+    href: ../admin/add-javascript.md

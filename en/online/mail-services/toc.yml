@@ -1,0 +1,13 @@
+items:
+- name: Mailgun
+  href: mailgun/toc.yml
+  topicHref: mailgun/index.md
+- name: MailKit (SuperOffice Inbox)
+  href: ../../email/inbox/it/index.md
+- name: Service and Marketing (cUrl)
+  href: curl/index.md
+  items:
+  - name: Migrate mailboxes
+    href: curl/migrate.md
+  - name: OAuth 2.0 with Microsoft 365
+    href: curl/oauth-microsoft365.md

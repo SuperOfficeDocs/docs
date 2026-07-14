@@ -1,0 +1,27 @@
+items:
+- name: Overview
+  href: ../index.yml
+- name: Screen designer
+  href: ../screen-designer/admin/toc.yml
+  topicHref: ../screen-designer/admin/index.md
+- name: Web panels
+  href: ../web-panels/admin/toc.yml
+  topicHref: ../web-panels/admin/index.md
+- name: Macros and scripts
+  href: ../macros-and-scripts/admin/toc.yml
+  topicHref: ../macros-and-scripts/admin/index.md
+- name: Customer center
+  href: ../../customer-center/learn/toc.yml
+  topicHref: ../../customer-center/learn/index.md
+- name: System design
+  href: ../../ui/blogic/learn/toc.yml
+  topicHref: ../../ui/blogic/learn/index.md
+- name: Package properties
+  href: package-properties.md
+- name: Task menu
+  href: add-items-to-task-menu.md
+- name: Add application
+  href: other-applications.md
+- name: Webhooks
+  href: ../../automation/webhook/admin/toc.yml
+  topicHref: ../../automation/webhook/admin/index.md

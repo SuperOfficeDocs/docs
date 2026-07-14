@@ -1,0 +1,16 @@
+items:
+- name: Overview
+  href: index.md
+- name: The layout elements
+  href: main-screen/toc.yml
+  topicHref: main-screen/index.md
+- name: Log in
+  href: login.md
+- name: Preferences
+  href: preferences.md
+- name: Connect your accounts
+  href: connect-your-accounts.md
+- name: Edit email signature
+  href: edit-email-signature.md
+- name: Change active language
+  href: change-language.md

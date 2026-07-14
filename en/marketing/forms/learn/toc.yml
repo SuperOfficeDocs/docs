@@ -1,0 +1,27 @@
+items:
+- name: Overview
+  href: index.md
+- name: Create new form
+  href: create.md
+- name: Field options
+  href: field-options.md
+- name: Google reCAPTCHA
+  href: recaptcha.md
+- name: Define form actions
+  href: define-form-actions.md
+- name: Form templates
+  href: form-templates.md
+- name: Publish forms
+  href: publish.md
+- name: View statistics
+  href: view-statistics.md
+- name: Process form submissions
+  href: process-submissions.md
+- name: Tutorial - Contact me
+  href: tutorial-contact-me.md
+- name: Tutorial - Newsletter sign-up
+  href: tutorial-sign-up.md
+- name: Manage fonts for forms
+  href: ../admin/manage-fonts.md
+- name: Form field restrictions
+  href: ../admin/form-field-restrictions.md

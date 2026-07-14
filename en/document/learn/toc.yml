@@ -1,0 +1,27 @@
+items:
+- name: Overview
+  href: ../index.yml
+- name: Introduction
+  href: index.md
+- name: Document library
+  href: ../library/learn/index.md
+- name: Work with documents
+  topicHref: create.md
+  items:
+  - name: Create new document
+    href: create.md
+  - name: Check in/out document
+    href: lock.md
+  - name: Edit or delete document
+    href: edit.md
+  - name: Send document as email
+    href: send-as-email.md
+
+- name: Document templates
+  href: ../templates/learn/toc.yml
+  topicHref: ../templates/learn/index.md
+- name: Technical reference
+  href: ../library/it/index.md
+  items:
+  - name: Open Document Format
+    href: ../library/it/odf.md

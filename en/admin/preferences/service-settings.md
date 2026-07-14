@@ -1,0 +1,82 @@
+---
+uid: help-en-service-settings-system-settings
+title: SuperOffice Service system settings
+description: Global preferences for SuperOffice Service system settings
+keywords: Service settings
+author: digitaldiina
+date: 05.04.2026
+version: 11.13
+content_type: reference
+category: Settings and maintenance
+topic: preferences
+license: serviceessentials
+tier: core
+functional_right: Service administration, General Administrator
+audience: settings
+audience_tooltip: Settings and maintenance
+index: true
+redirect_from: /en/admin/preferences/learn/global-preferences/settings
+language: en
+---
+
+# Global preferences for SuperOffice Service system settings
+
+Go to <i class="ph ph-gear" aria-hidden="true"></i> **Preferences** in the navigator and select the tab **Global Preferences**. The section for **SuperOffice Service system settings** contains the following options:
+
+* **Default font in editor**: Select which font, font size and formatting to use as default for message registration.
+
+* **Default font size**: Size of the default font in the Request editor.
+
+* **Default font weight**: Weight (thickness) of the default font in the Request editor.
+
+* **New status when accepting a request**: Select which status to use when a request is accepted by a user.
+
+* **Send email notification of open requests**: Specifies if email about open requests is sent to the users. If you select **User can choose**, users can activate or deactivate email notification from <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Preferences** > **Notification via e-mail & SMS**.
+
+* **Number of days before notification**: Specifies how many days must pass before email notification about old requests is sent to the users. You can also specify the time of day that the notification should be sent.
+
+* **Time of day**: The time of day for sending notifications.
+
+* **System administrator**: The email address of the person who is responsible for operation of SuperOffice Service. This must be an email address that is not imported/processed by SuperOffice Service.
+
+* **Default From address**: The system's default email sender address. This address will normally be overridden by the addresses entered into mailboxes. This must be an email address that is imported into SuperOffice Service. For example, `support@company.com`.
+
+* **Email tag**: The name used as the tag key in outbound email subjects. The default value is `ejTag`. Combined with the request number, it creates a unique identifier — for example, `ejTag: 12345` — that Service uses to match incoming replies to the correct request.
+
+    When an email arrives, Service first checks the standard `In-Reply-To` email header to match it to an existing request. The email tag in the subject line is used as a fallback. Do not change this value unless you understand the consequences — changing the name breaks the match for any emails that still reference the old tag.
+
+    > [!NOTE]
+    > Two registry settings modify this behavior:
+    >
+    > * **reg_id=72** (value `1`): Service searches only the email header (subject) for the tag, not the message body.
+    > * **reg_id=175** (value `1`): Service checks the subject for the email tag *before* checking the `In-Reply-To` header, reversing the default priority.
+
+* **System clock**: Select if to use a 24-hour or 12-hour (am/pm) clock in the system. User-specific clocks (for example, display of requests) are controlled by each individual user's settings, and not by this value.
+
+* **Default style for outbound email**: Here you can define a default style to be used for emails in HTML format. For example: &lt;p style='font-family:Verdana'&gt; &lt;/p&gt;
+
+* **Minimum score for FAQ search result (in percent)**: In reply templates that are sent to customers, you can add [automatic suggestions for FAQ entries][1] to help the customer to resolve the request themselves. In this field you can define how high a degree of correlation there must be between the customer's request and an FAQ entry for an FAQ entry to be added to the reply to the customer. If you define too low a value here, it is likely that the customer will receive many FAQs that are not relevant to the request. If a customer's requests correlates to a key word in an FAQ entry, the FAQ entry will always be included.
+
+* **Cross-post time frame in minutes**: Here you enter a number of minutes and if two or more emails arrive from the same contact within this period, the requests will be sent to the same request handler, if possible.
+
+* **Anonymise users on reply**: If checked, the agent's name will be masked in outbound communication.
+
+* **User inactivity limit (hours)**: After the specified number of hours without user activity, the user is considered inactive (default 2 hours). This is for example used in request delegation.
+
+* **External access level as default**: If checked, external access level will be the default for new requests and messages. The alternative is internal access level as default.
+
+* **Do not send email to new contacts**: If checked, email will not be sent to newly registered contacts.
+
+* **Automatically create contact for new inbound request**: If checked, SuperOffice will automatically create a new person if it does not recognize an email address in an inbound request. This option can be disabled for GDPR compliance.
+
+* **Enable editing of messages**: If checked, the user will be allowed to edit messages.
+
+* **Track all links**: Check here to track all links in mailings.
+
+## Related content
+
+* [Service settings (onsite)][2]
+
+<!-- Referenced links -->
+[1]: ../../knowledge-base/learn/reply-templates/create.md#faq
+[2]: https://help.superoffice.com/docs/11/en/admin/preferences/service-settings.html
