@@ -706,15 +706,7 @@
       "destination": "https://help.superoffice.com/docs/11/de/search-options/admin/regenerate-index.html"
     },
     {
-      "source": "/de/admin/options/learn/labels/index",
-      "destination": "/de/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/de/admin/options/learn/labels/change",
-      "destination": "/de/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/de/admin/options/learn/labels/reset",
+      "source": "/de/admin/options/learn/labels/*",
       "destination": "/de/admin/options/change-ui-labels"
     },
     {
@@ -1154,19 +1146,11 @@
       "destination": "/de/document/learn/index"
     },
     {
-      "source": "/de/admin/preferences/learn/document-library/change-to-sharepoint",
+      "source": "/de/admin/preferences/learn/document-library/*",
       "destination": "/de/document/library/learn/index"
     },
     {
-      "source": "/de/admin/preferences/learn/document-library/index",
-      "destination": "/de/document/library/learn/index"
-    },
-    {
-      "source": "/de/document/cloud/sharepoint-documents/learn/index",
-      "destination": "/de/document/library/learn/index"
-    },
-    {
-      "source": "/de/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "source": "/de/document/cloud/sharepoint-documents/learn/*",
       "destination": "/de/document/library/learn/index"
     },
     {
@@ -1702,72 +1686,16 @@
       "destination": "/de/mobile/index"
     },
     {
-      "source": "/de/onsite/win-client/learn/import/ansi-files",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/ansi-files.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/creating-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/creating-import-descriptions.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/deleting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/deleting-field-mapping.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/duplicates-import",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/duplicates-import.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/editing-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/editing-import-descriptions.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/field-mapping.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/import-descriptions.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/import-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/import-routines.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/importing-files",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/importing-files.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/index",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/resetting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/resetting-field-mapping.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/specifying-advanced-import-settings",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/specifying-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/specifying-field-mapping.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
+      "source": "/de/onsite/win-client/learn/import/*",
+      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
     },
     {
       "source": "/de/onsite/win-client/learn/backup-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/backup-routines.html"
+      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
     },
     {
       "source": "/de/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/export.html"
+      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
     },
     {
       "source": "/de/onsite/win-client/learn/index",
@@ -1775,11 +1703,11 @@
     },
     {
       "source": "/de/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/parameter-examples.html"
+      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
     },
     {
       "source": "/de/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/status-screen.html"
+      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
     },
     {
       "source": "/de/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -2502,15 +2430,7 @@
       "destination": "https://help.superoffice.com/docs/11/no/search-options/admin/regenerate-index.html"
     },
     {
-      "source": "/no/admin/options/learn/labels/index",
-      "destination": "/no/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/no/admin/options/learn/labels/change",
-      "destination": "/no/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/no/admin/options/learn/labels/reset",
+      "source": "/no/admin/options/learn/labels/*",
       "destination": "/no/admin/options/change-ui-labels"
     },
     {
@@ -2950,19 +2870,11 @@
       "destination": "/no/document/learn/index"
     },
     {
-      "source": "/no/admin/preferences/learn/document-library/change-to-sharepoint",
+      "source": "/no/admin/preferences/learn/document-library/*",
       "destination": "/no/document/library/learn/index"
     },
     {
-      "source": "/no/admin/preferences/learn/document-library/index",
-      "destination": "/no/document/library/learn/index"
-    },
-    {
-      "source": "/no/document/cloud/sharepoint-documents/learn/index",
-      "destination": "/no/document/library/learn/index"
-    },
-    {
-      "source": "/no/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "source": "/no/document/cloud/sharepoint-documents/learn/*",
       "destination": "/no/document/library/learn/index"
     },
     {
@@ -3498,72 +3410,16 @@
       "destination": "/no/mobile/index"
     },
     {
-      "source": "/no/onsite/win-client/learn/import/ansi-files",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/ansi-files.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/creating-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/creating-import-descriptions.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/deleting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/deleting-field-mapping.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/duplicates-import",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/duplicates-import.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/editing-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/editing-import-descriptions.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/field-mapping.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/import-descriptions.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/import-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/import-routines.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/importing-files",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/importing-files.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/index",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/resetting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/resetting-field-mapping.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/specifying-advanced-import-settings",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/specifying-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/specifying-field-mapping.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
+      "source": "/no/onsite/win-client/learn/import/*",
+      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
     },
     {
       "source": "/no/onsite/win-client/learn/backup-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/backup-routines.html"
+      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
     },
     {
       "source": "/no/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/export.html"
+      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
     },
     {
       "source": "/no/onsite/win-client/learn/index",
@@ -3571,11 +3427,11 @@
     },
     {
       "source": "/no/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/parameter-examples.html"
+      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
     },
     {
       "source": "/no/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/status-screen.html"
+      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
     },
     {
       "source": "/no/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -4298,15 +4154,7 @@
       "destination": "https://help.superoffice.com/docs/11/sv/search-options/admin/regenerate-index.html"
     },
     {
-      "source": "/sv/admin/options/learn/labels/index",
-      "destination": "/sv/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/sv/admin/options/learn/labels/change",
-      "destination": "/sv/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/sv/admin/options/learn/labels/reset",
+      "source": "/sv/admin/options/learn/labels/*",
       "destination": "/sv/admin/options/change-ui-labels"
     },
     {
@@ -4730,19 +4578,11 @@
       "destination": "/sv/document/learn/index"
     },
     {
-      "source": "/sv/admin/preferences/learn/document-library/change-to-sharepoint",
+      "source": "/sv/admin/preferences/learn/document-library/*",
       "destination": "/sv/document/library/learn/index"
     },
     {
-      "source": "/sv/admin/preferences/learn/document-library/index",
-      "destination": "/sv/document/library/learn/index"
-    },
-    {
-      "source": "/sv/document/cloud/sharepoint-documents/learn/index",
-      "destination": "/sv/document/library/learn/index"
-    },
-    {
-      "source": "/sv/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "source": "/sv/document/cloud/sharepoint-documents/learn/*",
       "destination": "/sv/document/library/learn/index"
     },
     {
@@ -5282,72 +5122,16 @@
       "destination": "/sv/mobile/index"
     },
     {
-      "source": "/sv/onsite/win-client/learn/import/ansi-files",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/ansi-files.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/creating-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/creating-import-descriptions.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/deleting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/deleting-field-mapping.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/duplicates-import",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/duplicates-import.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/editing-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/editing-import-descriptions.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/field-mapping.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/import-descriptions.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/import-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/import-routines.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/importing-files",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/importing-files.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/index",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/resetting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/resetting-field-mapping.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/specifying-advanced-import-settings",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/specifying-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/specifying-field-mapping.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
+      "source": "/sv/onsite/win-client/learn/import/*",
+      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
     },
     {
       "source": "/sv/onsite/win-client/learn/backup-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/backup-routines.html"
+      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
     },
     {
       "source": "/sv/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/export.html"
+      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
     },
     {
       "source": "/sv/onsite/win-client/learn/index",
@@ -5355,11 +5139,11 @@
     },
     {
       "source": "/sv/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/parameter-examples.html"
+      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
     },
     {
       "source": "/sv/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/status-screen.html"
+      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
     },
     {
       "source": "/sv/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -6094,15 +5878,7 @@
       "destination": "https://help.superoffice.com/docs/11/nl/search-options/admin/regenerate-index.html"
     },
     {
-      "source": "/nl/admin/options/learn/labels/index",
-      "destination": "/nl/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/nl/admin/options/learn/labels/change",
-      "destination": "/nl/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/nl/admin/options/learn/labels/reset",
+      "source": "/nl/admin/options/learn/labels/*",
       "destination": "/nl/admin/options/change-ui-labels"
     },
     {
@@ -6546,19 +6322,11 @@
       "destination": "/nl/document/learn/index"
     },
     {
-      "source": "/nl/admin/preferences/learn/document-library/change-to-sharepoint",
+      "source": "/nl/admin/preferences/learn/document-library/*",
       "destination": "/nl/document/library/learn/index"
     },
     {
-      "source": "/nl/admin/preferences/learn/document-library/index",
-      "destination": "/nl/document/library/learn/index"
-    },
-    {
-      "source": "/nl/document/cloud/sharepoint-documents/learn/index",
-      "destination": "/nl/document/library/learn/index"
-    },
-    {
-      "source": "/nl/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "source": "/nl/document/cloud/sharepoint-documents/learn/*",
       "destination": "/nl/document/library/learn/index"
     },
     {
@@ -7098,72 +6866,16 @@
       "destination": "/nl/mobile/index"
     },
     {
-      "source": "/nl/onsite/win-client/learn/import/ansi-files",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/ansi-files.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/creating-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/creating-import-descriptions.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/deleting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/deleting-field-mapping.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/duplicates-import",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/duplicates-import.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/editing-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/editing-import-descriptions.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/field-mapping.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/import-descriptions.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/import-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/import-routines.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/importing-files",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/importing-files.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/index",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/resetting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/resetting-field-mapping.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/specifying-advanced-import-settings",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/specifying-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/specifying-field-mapping.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
+      "source": "/nl/onsite/win-client/learn/import/*",
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
     },
     {
       "source": "/nl/onsite/win-client/learn/backup-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/backup-routines.html"
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
     },
     {
       "source": "/nl/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/export.html"
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
     },
     {
       "source": "/nl/onsite/win-client/learn/index",
@@ -7171,11 +6883,11 @@
     },
     {
       "source": "/nl/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/parameter-examples.html"
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
     },
     {
       "source": "/nl/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/status-screen.html"
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
     },
     {
       "source": "/nl/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -7894,15 +7606,7 @@
       "destination": "https://help.superoffice.com/docs/11/da/search-options/admin/regenerate-index.html"
     },
     {
-      "source": "/da/admin/options/learn/labels/index",
-      "destination": "/da/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/da/admin/options/learn/labels/change",
-      "destination": "/da/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/da/admin/options/learn/labels/reset",
+      "source": "/da/admin/options/learn/labels/*",
       "destination": "/da/admin/options/change-ui-labels"
     },
     {
@@ -8342,19 +8046,11 @@
       "destination": "/da/document/learn/index"
     },
     {
-      "source": "/da/admin/preferences/learn/document-library/change-to-sharepoint",
+      "source": "/da/admin/preferences/learn/document-library/*",
       "destination": "/da/document/library/learn/index"
     },
     {
-      "source": "/da/admin/preferences/learn/document-library/index",
-      "destination": "/da/document/library/learn/index"
-    },
-    {
-      "source": "/da/document/cloud/sharepoint-documents/learn/index",
-      "destination": "/da/document/library/learn/index"
-    },
-    {
-      "source": "/da/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "source": "/da/document/cloud/sharepoint-documents/learn/*",
       "destination": "/da/document/library/learn/index"
     },
     {
@@ -8894,72 +8590,16 @@
       "destination": "/da/mobile/index"
     },
     {
-      "source": "/da/onsite/win-client/learn/import/ansi-files",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/ansi-files.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/creating-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/creating-import-descriptions.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/deleting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/deleting-field-mapping.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/duplicates-import",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/duplicates-import.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/editing-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/editing-import-descriptions.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/field-mapping.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/import-descriptions.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/import-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/import-routines.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/importing-files",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/importing-files.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/index",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/resetting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/resetting-field-mapping.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/specifying-advanced-import-settings",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/specifying-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/specifying-field-mapping.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
+      "source": "/da/onsite/win-client/learn/import/*",
+      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
     },
     {
       "source": "/da/onsite/win-client/learn/backup-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/backup-routines.html"
+      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
     },
     {
       "source": "/da/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/export.html"
+      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
     },
     {
       "source": "/da/onsite/win-client/learn/index",
@@ -8967,11 +8607,11 @@
     },
     {
       "source": "/da/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/parameter-examples.html"
+      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
     },
     {
       "source": "/da/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/status-screen.html"
+      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
     },
     {
       "source": "/da/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -9562,220 +9202,28 @@
       "destination": "/integrations/g-suite/set-up"
     },
     {
-      "source": "/en/email/gmail-link/learn/archive-attachments",
-      "destination": "/integrations/gmail-link/archive-attachments"
+      "source": "/en/email/gmail-link/learn/*",
+      "destination": "/integrations/gmail-link/*"
     },
     {
-      "source": "/da/email/gmail-link/learn/archive-attachments",
-      "destination": "/integrations/gmail-link/archive-attachments"
+      "source": "/da/email/gmail-link/learn/*",
+      "destination": "/integrations/gmail-link/*"
     },
     {
-      "source": "/de/email/gmail-link/learn/archive-attachments",
-      "destination": "/integrations/gmail-link/archive-attachments"
+      "source": "/de/email/gmail-link/learn/*",
+      "destination": "/integrations/gmail-link/*"
     },
     {
-      "source": "/nl/email/gmail-link/learn/archive-attachments",
-      "destination": "/integrations/gmail-link/archive-attachments"
+      "source": "/nl/email/gmail-link/learn/*",
+      "destination": "/integrations/gmail-link/*"
     },
     {
-      "source": "/no/email/gmail-link/learn/archive-attachments",
-      "destination": "/integrations/gmail-link/archive-attachments"
+      "source": "/no/email/gmail-link/learn/*",
+      "destination": "/integrations/gmail-link/*"
     },
     {
-      "source": "/sv/email/gmail-link/learn/archive-attachments",
-      "destination": "/integrations/gmail-link/archive-attachments"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/archive-emails-as-activities",
-      "destination": "/integrations/gmail-link/archive-emails-as-activities"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/archive-emails-as-activities",
-      "destination": "/integrations/gmail-link/archive-emails-as-activities"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/archive-emails-as-activities",
-      "destination": "/integrations/gmail-link/archive-emails-as-activities"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/archive-emails-as-activities",
-      "destination": "/integrations/gmail-link/archive-emails-as-activities"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/archive-emails-as-activities",
-      "destination": "/integrations/gmail-link/archive-emails-as-activities"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/archive-emails-as-activities",
-      "destination": "/integrations/gmail-link/archive-emails-as-activities"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/archive-emails-as-requests",
-      "destination": "/integrations/gmail-link/archive-emails-as-requests"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/archive-emails-as-requests",
-      "destination": "/integrations/gmail-link/archive-emails-as-requests"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/archive-emails-as-requests",
-      "destination": "/integrations/gmail-link/archive-emails-as-requests"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/archive-emails-as-requests",
-      "destination": "/integrations/gmail-link/archive-emails-as-requests"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/archive-emails-as-requests",
-      "destination": "/integrations/gmail-link/archive-emails-as-requests"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/archive-emails-as-requests",
-      "destination": "/integrations/gmail-link/archive-emails-as-requests"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/email-archive-incoming",
-      "destination": "/integrations/gmail-link/email-archive-incoming"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/email-archive-incoming",
-      "destination": "/integrations/gmail-link/email-archive-incoming"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/email-archive-incoming",
-      "destination": "/integrations/gmail-link/email-archive-incoming"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/email-archive-incoming",
-      "destination": "/integrations/gmail-link/email-archive-incoming"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/email-archive-incoming",
-      "destination": "/integrations/gmail-link/email-archive-incoming"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/email-archive-incoming",
-      "destination": "/integrations/gmail-link/email-archive-incoming"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/email-archive-outgoing",
-      "destination": "/integrations/gmail-link/email-archive-outgoing"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/email-archive-outgoing",
-      "destination": "/integrations/gmail-link/email-archive-outgoing"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/email-archive-outgoing",
-      "destination": "/integrations/gmail-link/email-archive-outgoing"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/email-archive-outgoing",
-      "destination": "/integrations/gmail-link/email-archive-outgoing"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/email-archive-outgoing",
-      "destination": "/integrations/gmail-link/email-archive-outgoing"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/email-archive-outgoing",
-      "destination": "/integrations/gmail-link/email-archive-outgoing"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/index",
-      "destination": "/integrations/gmail-link/index"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/index",
-      "destination": "/integrations/gmail-link/index"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/index",
-      "destination": "/integrations/gmail-link/index"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/index",
-      "destination": "/integrations/gmail-link/index"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/index",
-      "destination": "/integrations/gmail-link/index"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/index",
-      "destination": "/integrations/gmail-link/index"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/install",
-      "destination": "/integrations/gmail-link/install"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/install",
-      "destination": "/integrations/gmail-link/install"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/install",
-      "destination": "/integrations/gmail-link/install"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/install",
-      "destination": "/integrations/gmail-link/install"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/install",
-      "destination": "/integrations/gmail-link/install"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/install",
-      "destination": "/integrations/gmail-link/install"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/manage-senders",
-      "destination": "/integrations/gmail-link/manage-senders"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/manage-senders",
-      "destination": "/integrations/gmail-link/manage-senders"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/manage-senders",
-      "destination": "/integrations/gmail-link/manage-senders"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/manage-senders",
-      "destination": "/integrations/gmail-link/manage-senders"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/manage-senders",
-      "destination": "/integrations/gmail-link/manage-senders"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/manage-senders",
-      "destination": "/integrations/gmail-link/manage-senders"
-    },
-    {
-      "source": "/en/email/gmail-link/learn/settings",
-      "destination": "/integrations/gmail-link/settings"
-    },
-    {
-      "source": "/da/email/gmail-link/learn/settings",
-      "destination": "/integrations/gmail-link/settings"
-    },
-    {
-      "source": "/de/email/gmail-link/learn/settings",
-      "destination": "/integrations/gmail-link/settings"
-    },
-    {
-      "source": "/nl/email/gmail-link/learn/settings",
-      "destination": "/integrations/gmail-link/settings"
-    },
-    {
-      "source": "/no/email/gmail-link/learn/settings",
-      "destination": "/integrations/gmail-link/settings"
-    },
-    {
-      "source": "/sv/email/gmail-link/learn/settings",
-      "destination": "/integrations/gmail-link/settings"
+      "source": "/sv/email/gmail-link/learn/*",
+      "destination": "/integrations/gmail-link/*"
     },
     {
       "source": "/en/email/mail-link/learn/add-attachment",
@@ -10542,6 +9990,50 @@
       "destination": "/integrations/video-meetings/howto/configure-email-invitations"
     },
     {
+      "source": "/en/diary/video-meetings/howto/connect-provider",
+      "destination": "/integrations/video-meetings/howto/connect-provider"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/create",
+      "destination": "/integrations/video-meetings/howto/create"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/disconnect-provider",
+      "destination": "/integrations/video-meetings/howto/disconnect-provider"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/disconnect-user",
+      "destination": "/integrations/video-meetings/howto/disconnect-user"
+    },
+    {
+      "source": "/en/diary/video-meetings/howto/join",
+      "destination": "/integrations/video-meetings/howto/join"
+    },
+    {
+      "source": "/en/diary/video-meetings/index",
+      "destination": "/integrations/video-meetings/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/jitsi/index",
+      "destination": "/integrations/video-meetings/jitsi/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/ms-teams/index",
+      "destination": "/integrations/video-meetings/ms-teams/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/troubleshooting",
+      "destination": "/integrations/video-meetings/troubleshooting"
+    },
+    {
+      "source": "/en/diary/video-meetings/webex/index",
+      "destination": "/integrations/video-meetings/webex/index"
+    },
+    {
+      "source": "/en/diary/video-meetings/zoom/index",
+      "destination": "/integrations/video-meetings/zoom/index"
+    },
+    {
       "source": "/en/admin/preferences/learn/video-meetings/email-setup-in-superoffice",
       "destination": "/integrations/video-meetings/howto/configure-email-invitations"
     },
@@ -10566,10 +10058,6 @@
       "destination": "/integrations/video-meetings/howto/configure-email-invitations"
     },
     {
-      "source": "/en/diary/video-meetings/howto/connect-provider",
-      "destination": "/integrations/video-meetings/howto/connect-provider"
-    },
-    {
       "source": "/en/admin/preferences/learn/video-meetings/configure-video-meetings",
       "destination": "/integrations/video-meetings/howto/connect-provider"
     },
@@ -10592,46 +10080,6 @@
     {
       "source": "/de/admin/preferences/learn/video-meetings/configure-video-meetings",
       "destination": "/integrations/video-meetings/howto/connect-provider"
-    },
-    {
-      "source": "/en/diary/video-meetings/howto/create",
-      "destination": "/integrations/video-meetings/howto/create"
-    },
-    {
-      "source": "/en/diary/video-meetings/howto/disconnect-provider",
-      "destination": "/integrations/video-meetings/howto/disconnect-provider"
-    },
-    {
-      "source": "/en/diary/video-meetings/howto/disconnect-user",
-      "destination": "/integrations/video-meetings/howto/disconnect-user"
-    },
-    {
-      "source": "/en/diary/video-meetings/howto/join",
-      "destination": "/integrations/video-meetings/howto/join"
-    },
-    {
-      "source": "/en/diary/video-meetings/jitsi/index",
-      "destination": "/integrations/video-meetings/jitsi/index"
-    },
-    {
-      "source": "/en/diary/video-meetings/ms-teams/index",
-      "destination": "/integrations/video-meetings/ms-teams/index"
-    },
-    {
-      "source": "/en/diary/video-meetings/webex/index",
-      "destination": "/integrations/video-meetings/webex/index"
-    },
-    {
-      "source": "/en/diary/video-meetings/zoom/index",
-      "destination": "/integrations/video-meetings/zoom/index"
-    },
-    {
-      "source": "/en/diary/video-meetings/index",
-      "destination": "/integrations/video-meetings/index"
-    },
-    {
-      "source": "/en/diary/video-meetings/troubleshooting",
-      "destination": "/integrations/video-meetings/troubleshooting"
     },
     {
       "source": "/en/document/webtools/config",
@@ -10674,51 +10122,27 @@
       "destination": "/integrations/webtools/install"
     },
     {
-      "source": "/en/document/webtools/learn/install",
+      "source": "/en/document/webtools/learn/install*",
       "destination": "/integrations/webtools/install"
     },
     {
-      "source": "/da/document/webtools/learn/install",
+      "source": "/da/document/webtools/learn/install*",
       "destination": "/integrations/webtools/install"
     },
     {
-      "source": "/de/document/webtools/learn/install",
+      "source": "/de/document/webtools/learn/install*",
       "destination": "/integrations/webtools/install"
     },
     {
-      "source": "/nl/document/webtools/learn/install",
+      "source": "/nl/document/webtools/learn/install*",
       "destination": "/integrations/webtools/install"
     },
     {
-      "source": "/no/document/webtools/learn/install",
+      "source": "/no/document/webtools/learn/install*",
       "destination": "/integrations/webtools/install"
     },
     {
-      "source": "/sv/document/webtools/learn/install",
-      "destination": "/integrations/webtools/install"
-    },
-    {
-      "source": "/en/document/webtools/learn/install-mac",
-      "destination": "/integrations/webtools/install"
-    },
-    {
-      "source": "/da/document/webtools/learn/install-mac",
-      "destination": "/integrations/webtools/install"
-    },
-    {
-      "source": "/de/document/webtools/learn/install-mac",
-      "destination": "/integrations/webtools/install"
-    },
-    {
-      "source": "/nl/document/webtools/learn/install-mac",
-      "destination": "/integrations/webtools/install"
-    },
-    {
-      "source": "/no/document/webtools/learn/install-mac",
-      "destination": "/integrations/webtools/install"
-    },
-    {
-      "source": "/sv/document/webtools/learn/install-mac",
+      "source": "/sv/document/webtools/learn/install*",
       "destination": "/integrations/webtools/install"
     },
     {
@@ -10758,6 +10182,30 @@
       "destination": "/integrations/zapier/get-started/set-up-account"
     },
     {
+      "source": "/en/automation/zapier/howto/datetime",
+      "destination": "/integrations/zapier/howto/datetime"
+    },
+    {
+      "source": "/en/automation/zapier/howto/gdpr",
+      "destination": "/integrations/zapier/howto/gdpr"
+    },
+    {
+      "source": "/en/automation/zapier/howto/listsource",
+      "destination": "/integrations/zapier/howto/listsource"
+    },
+    {
+      "source": "/en/automation/zapier/index",
+      "destination": "/integrations/zapier/index"
+    },
+    {
+      "source": "/en/automation/zapier/reference",
+      "destination": "/integrations/zapier/reference"
+    },
+    {
+      "source": "/en/automation/zapier/howto/index",
+      "destination": "/integrations/zapier/howto/index"
+    },
+    {
       "source": "/integrations/zapier/howto/find-company",
       "destination": "/integrations/zapier/howto/actions/search-company"
     },
@@ -10786,115 +10234,7 @@
       "destination": "/integrations/zapier/howto/triggers/new"
     },
     {
-      "source": "/en/automation/zapier/howto/datetime",
-      "destination": "/integrations/zapier/howto/datetime"
-    },
-    {
-      "source": "/en/automation/zapier/howto/gdpr",
-      "destination": "/integrations/zapier/howto/gdpr"
-    },
-    {
-      "source": "en/automation/zapier/howto/index",
-      "destination": "/integrations/zapier/howto/index"
-    },
-    {
-      "source": "/en/automation/zapier/howto/listsource",
-      "destination": "/integrations/zapier/howto/listsource"
-    },
-    {
-      "source": "/en/automation/zapier/index",
-      "destination": "/integrations/zapier/index"
-    },
-    {
-      "source": "/en/automation/zapier/reference",
-      "destination": "/integrations/zapier/reference"
-    },
-    {
-      "source": "/en/reports/learn/create",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/cross-tables",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/delete-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/filter",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/open-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/preview",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/print",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/properties",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/run",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/save",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/standard-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/working-with-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/favorites/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/favorites/delete",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/favorites/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/favorites/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/labels/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/screen/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/search-criteria/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/search-criteria/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/en/reports/learn/search-criteria/index",
+      "source": "/en/reports/learn/*",
       "destination": "/release-notes/eol/reports"
     },
     {
@@ -10902,544 +10242,68 @@
       "destination": "/release-notes/eol/reports"
     },
     {
-      "source": "/da/reports/learn/create",
+      "source": "/da/reports/learn/*",
       "destination": "/release-notes/eol/reports"
     },
     {
-      "source": "/da/reports/learn/cross-tables",
+      "source": "/de/reports/learn/*",
       "destination": "/release-notes/eol/reports"
     },
     {
-      "source": "/da/reports/learn/delete-from-archive",
+      "source": "/no/reports/learn/*",
       "destination": "/release-notes/eol/reports"
     },
     {
-      "source": "/da/reports/learn/filter",
+      "source": "/sv/reports/learn/*",
       "destination": "/release-notes/eol/reports"
     },
     {
-      "source": "/da/reports/learn/index",
+      "source": "/nl/reports/learn/*",
       "destination": "/release-notes/eol/reports"
     },
     {
-      "source": "/da/reports/learn/open-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/preview",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/print",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/properties",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/run",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/save",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/standard-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/working-with-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/favorites/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/favorites/delete",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/favorites/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/favorites/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/labels/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/screen/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/search-criteria/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/search-criteria/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/da/reports/learn/search-criteria/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/create",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/cross-tables",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/delete-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/filter",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/open-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/preview",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/print",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/properties",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/run",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/save",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/standard-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/working-with-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/favorites/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/favorites/delete",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/favorites/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/favorites/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/labels/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/screen/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/search-criteria/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/search-criteria/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/de/reports/learn/search-criteria/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/create",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/cross-tables",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/delete-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/filter",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/open-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/preview",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/print",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/properties",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/run",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/save",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/standard-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/working-with-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/favorites/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/favorites/delete",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/favorites/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/favorites/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/labels/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/screen/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/search-criteria/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/search-criteria/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/no/reports/learn/search-criteria/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/create",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/cross-tables",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/delete-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/filter",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/open-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/preview",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/print",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/properties",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/run",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/save",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/standard-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/working-with-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/favorites/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/favorites/delete",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/favorites/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/favorites/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/labels/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/screen/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/search-criteria/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/search-criteria/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/sv/reports/learn/search-criteria/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/create",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/cross-tables",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/delete-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/filter",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/open-from-archive",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/preview",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/print",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/properties",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/run",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/save",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/standard-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/working-with-reports",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/favorites/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/favorites/delete",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/favorites/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/favorites/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/labels/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/screen/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/search-criteria/add",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/search-criteria/edit",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/nl/reports/learn/search-criteria/index",
-      "destination": "/release-notes/eol/reports"
-    },
-    {
-      "source": "/release-notes/8.5/office-integrations/8.5-R11-update",
-      "destination": "/release-notes/integrations/mail-link/8.5-R11-update"
-    },
-    {
-      "source": "/release-notes/8.5/office-integrations/8.5-R14-update",
-      "destination": "/release-notes/integrations/mail-link/8.5-R14-update"
+      "source": "/release-notes/8.5/office-integrations/*",
+      "destination": "/release-notes/integrations/mail-link/*"
     },
     {
-      "source": "/release-notes/8.5/office-integrations/",
-      "destination": "/release-notes/integrations/mail-link/index"
+      "source": "/release-notes/10.1/office-integrations/*",
+      "destination": "/release-notes/integrations/sharepoint/*"
     },
     {
-      "source": "/release-notes/10.1/office-integrations/10.1.4-update",
-      "destination": "/release-notes/integrations/sharepoint/10.1.4-update"
+      "source": "/release-notes/10.2/office-integrations/",
+      "destination": "/release-notes/integrations/index"
     },
     {
       "source": "/release-notes/10.2/office-integrations/3.2-update",
       "destination": "/release-notes/integrations/sharepoint/3.2-update"
     },
     {
-      "source": "/release-notes/10.1/office-integrations/",
-      "destination": "/release-notes/integrations/sharepoint/index"
-    },
-    {
-      "source": "/release-notes/10.3/office-integrations/3.1-update",
+      "source": "/release-notes/10.2/office-integrations/3.1-update",
       "destination": "/release-notes/integrations/sofo/3.1-update"
-    },
-    {
-      "source": "/release-notes/10.5/office-integrations/6.0-update",
-      "destination": "/release-notes/integrations/sofo/6.0-update"
     },
     {
       "source": "/release-notes/10.5/office-integrations/",
       "destination": "/release-notes/integrations/sofo/index"
     },
     {
-      "source": "/release-notes/10.0/office-integrations/",
+      "source": "/release-notes/10.5/office-integrations/sofo-6.0-update",
+      "destination": "/release-notes/integrations/sofo/6.0-update"
+    },
+    {
+      "source": "/release-notes/10.0/office-integrations/*",
       "destination": "/release-notes/integrations/sofo/index"
     },
     {
-      "source": "/release-notes/10.0/office-integrations/10.0.6-update",
+      "source": "/release-notes/9.2/office-integrations/*",
       "destination": "/release-notes/integrations/sofo/index"
     },
     {
-      "source": "/release-notes/9.2/office-integrations/",
+      "source": "/release-notes/9.1/office-integrations/*",
       "destination": "/release-notes/integrations/sofo/index"
     },
     {
-      "source": "/release-notes/9.2/office-integrations/2.5-update",
-      "destination": "/release-notes/integrations/sofo/index"
-    },
-    {
-      "source": "/release-notes/9.2/office-integrations/2.4-update",
-      "destination": "/release-notes/integrations/sofo/index"
-    },
-    {
-      "source": "/release-notes/9.1/office-integrations/",
-      "destination": "/release-notes/integrations/sofo/index"
-    },
-    {
-      "source": "/release-notes/9.1/office-integrations/9.1-R01-update",
-      "destination": "/release-notes/integrations/sofo/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.1.6-update",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.1.5-update",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.1.4-update",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.1.1-update",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.0.9-update",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.0.7-update",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.0.5-update",
-      "destination": "/release-notes/pocket-crm/index"
-    },
-    {
-      "source": "/release-notes/pocket-crm/9.0.4-update",
-      "destination": "/release-notes/pocket-crm/index"
+      "source": "/release-notes/8.5/pocket-crm/*",
+      "destination": "/release-notes/pocket-crm/*"
     }
   ]
 }

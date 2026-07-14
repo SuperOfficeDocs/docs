@@ -12,8 +12,7 @@ topic: SharePoint integration
 platform: sharepoint
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from:
-  - /release-notes/10.1/office-integrations/
+redirect_from: /release-notes/10.1/office-integrations/
 ---
 
 # What's new in SuperOffice SharePoint integrations

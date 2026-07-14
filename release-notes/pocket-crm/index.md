@@ -12,16 +12,7 @@ topic: Pocket CRM
 platform: pocket
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from:
-  - /release-notes/pocket-crm/
-  - /release-notes/pocket-crm/9.1.6-update
-  - /release-notes/pocket-crm/9.1.5-update
-  - /release-notes/pocket-crm/9.1.4-update
-  - /release-notes/pocket-crm/9.1.1-update
-  - /release-notes/pocket-crm/9.0.9-update
-  - /release-notes/pocket-crm/9.0.7-update
-  - /release-notes/pocket-crm/9.0.5-update
-  - /release-notes/pocket-crm/9.0.4-update
+redirect_from: /release-notes/8.5/pocket-crm/
 ---
 
 # Pocket CRM

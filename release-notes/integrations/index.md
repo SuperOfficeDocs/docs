@@ -8,6 +8,7 @@ date: 07.09.2026
 content_type: release-note
 audience: person
 audience_tooltip: SuperOffice CRM
+redirect_from: /release-notes/10.2/office-integrations/
 language: en
 ---
 
