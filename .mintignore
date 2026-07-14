@@ -46,6 +46,12 @@ redirects.json
 #!sv/**/index.md
 #!sv/**/index.mdx
 
+# en forklifted with full DocFx content, not yet reformatted for Mintlify
+en/**
+!en/**/
+!en/**/index.md
+!en/**/index.mdx
+
 # Ignore database except index files
 en/database/**
 !en/database/**/
