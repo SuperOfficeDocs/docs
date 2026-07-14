@@ -1,0 +1,132 @@
+---
+uid: redirects
+title: Redirects and redirect_from
+description: What redirect_from is for, how it becomes a live redirect in docs.json, and when it's safe to compact a group of redirects into a wildcard.
+keywords: redirect_from, redirects, docs.json, wildcard, permanent redirect, moved page, deleted page, URL migration
+author: digitaldiina
+date: 07.14.2026
+content_type: concept
+language: en
+---
+
+# Redirects and redirect_from
+
+Whenever a page moves, gets renamed, is merged into another page, or is deleted outright, its old URL still needs to go somewhere. Get this wrong and either a real visitor lands on a 404, or - just as bad - a wildcard silently swallows a page that's still supposed to be live. This page covers both sides: the `redirect_from` property you add to a content file, and how that turns into a live redirect through `docs.json`.
+
+## Why redirect_from exists
+
+`redirect_from` lives in the frontmatter of the file that **now** owns a piece of content, and lists every old URL that used to point to it.
+
+```yaml
+redirect_from: /da/admin/import/learn/create-import-file
+```
+
+Use a plain string for one old path. Once a file has two or more, switch to array format:
+
+```yaml
+redirect_from:
+  - /da/admin/import/learn/create-import-file
+  - /da/admin/import/learn/create-import-file-legacy
+```
+
+It's the second-to-last frontmatter property, only followed by `language`.
+
+During the Mintlify migration, `redirect_from` declarations across the repo are what generated `docs.json`'s `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one.
+
+<Warning>
+**Going forward, `docs.json`'s `redirects` array is the actual source of truth - `redirect_from` is informative only.** Adding it to a file's frontmatter does **not** by itself create a working redirect. To make a redirect happen, add the entry to `docs.json` directly (see below).
+
+Still add `redirect_from` too - it costs little, documents the page's history for whoever reads the frontmatter later, and means nothing needs backfilling if a script ever gets built to keep the two in sync. Just don't rely on it alone.
+</Warning>
+
+<Note>
+If you've worked in the old `superoffice-docs` (DocFx) repo, you'll remember a second mechanism there: a `redirect_url` stub file left behind at the old path. This repo doesn't use that.
+</Note>
+
+## Common scenarios
+
+Every row below means: add the entry to `docs.json`, and add the matching `redirect_from` to the content file too.
+
+| Situation | Redirect entry |
+|---|---|
+| Renamed or moved a file | old path -> new file's path |
+| Deleted a file, content lives elsewhere on this site | old path -> the page that now covers it |
+| Deleted a file, no replacement on this site | old path -> the most relevant external page (for example, the [EOL archive][1]) instead of leaving a dead link |
+| Merged file A into file B | A's old path -> B. If the merged content got its own section, give that heading an explicit `<a id="...">` - anchor text varies by language, so never rely on the auto-generated one. |
+| Restructured a whole folder, filenames unchanged | See [wildcards][2] below - this is the one case a single rule can replace many entries |
+| First file in a new folder isn't `index` | `/old/section/index` -> the new file, so the folder's own URL still resolves |
+
+## How this becomes a live redirect
+
+`docs.json`'s `redirects` array is what Mintlify's hosting layer reads:
+
+```json
+{
+  "source": "/da/admin/import/learn/create-import-file",
+  "destination": "/da/admin/import/create-spreadsheet"
+}
+```
+
+Redirects default to permanent (308 - search engines transfer ranking, browsers cache it). Add `"permanent": false` for a temporary (307) one. Sources can't include an anchor or query string; destinations can include an anchor.
+
+A trailing `/` on a source is equivalent to `/index` - `/release-notes/8.5/pocket-crm/` and `/release-notes/8.5/pocket-crm/index` are the same rule. Don't add both; it's dead weight.
+
+### <a id="external-destinations-need-html"></a>External destinations need `.html`
+
+A redirect to our own site uses a plain path (`/da/admin/import/create-spreadsheet`). A redirect to the legacy help archive needs the full URL **including `.html`** to actually resolve:
+
+```json
+{
+  "source": "/da/onsite/win-client/learn/backup-routines",
+  "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/backup-routines.html"
+}
+```
+
+Easy to miss since every other destination in this file is a bare path.
+
+## <a id="wildcards"></a>Wildcards
+
+A `*` in the source matches one or more path segments, letting one rule stand in for many literal entries. Two shapes, both used in our own `docs.json`:
+
+**Many sources, one fixed destination** - for content that got consolidated, not just moved:
+
+```json
+{
+  "source": "/da/reports/learn/*",
+  "destination": "/release-notes/eol/reports"
+}
+```
+
+**Capture and reuse** - source and destination both end in `*`, for a clean folder rename where filenames carried over unchanged:
+
+```json
+{
+  "source": "/release-notes/8.5/pocket-crm/*",
+  "destination": "/release-notes/pocket-crm/*"
+}
+```
+
+`/release-notes/8.5/pocket-crm/9.0.4-update` redirects to `/release-notes/pocket-crm/9.0.4-update` - same trailing segment, different folder.
+
+<Warning>
+Whether `*` also matches a **zero-length** value (so a bare folder path matches too, not just paths with something after it) isn't documented anywhere by Mintlify - it's only inferred from `:slug*`'s resemblance to standard path-to-regexp convention, where `*` conventionally means "zero or more." We've relied on this once (merging `.../install` and `.../install-mac` into one `.../install*` rule) as an accepted, deliberate risk, not a confirmed fact. If you're relying on it too, spot-check the bare-path case in `mint dev`.
+</Warning>
+
+## When to compact a group into a wildcard
+
+Multiple redirects sharing a destination are tempting to collapse, but a wildcard is a routing rule, not a label - get the scope wrong and it silently hijacks something it shouldn't. Compact only when **all** of these hold:
+
+1. **The sources share a real literal prefix** - not just the same destination. Two paths that happen to end up on the same page but look nothing alike can't be expressed as a wildcard at all, no matter how many of them there are.
+2. **Nothing else in the whole array shares that prefix but points elsewhere.** Check the full file, not just the group you're looking at - a prefix that looks like it belongs to one topic can quietly fan out to several unrelated destinations (we found a real one: a single folder-level prefix that, unchecked, would have fanned out to 9 different pages).
+3. **The prefix doesn't shadow a page that's live today.** Check the actual file tree, not just the redirects array. A wildcard matches on URL shape alone - if real content sits under that path, the rule redirects requests to it too.
+4. **If using the capture-and-reuse form, confirm the filename genuinely carried over unchanged.** Don't assume it from the folder move alone - verify against the real files. We found one case where a prefix got dropped during a move (`sofo-6.0-update` became `6.0-update`), which would have silently sent that one visitor to a page that doesn't exist.
+5. **Check whether the content was actually merged into one page, or just relocated.** If several old pages' content now lives as sections on one consolidated page, a many-to-one collapse is correct. If each old page has its own matching new page, use the capture-and-reuse form instead - collapsing those to one destination loses the specific page every visitor was actually looking for. (We found a real bug of exactly this shape - a set of dated pages that should each redirect to their own matching page were all funneling to one index instead.)
+
+**Don't** compact when the sources don't share a literal prefix at all - most "several old pages now land on one new page" groups are content consolidations with no structural relationship, and can't be expressed as a wildcard regardless of how many sources point at that destination. And don't compact a group with a handful of exceptions by relying on a literal entry to "win" over a broader wildcard - which one takes precedence isn't documented by Mintlify either. Keep the exceptions as their own literal entries instead.
+
+## Verify
+
+After editing `docs.json`, spot-check in `mint dev`: visit the old URL and confirm it lands where you expect, including any edge case you're relying on (a bare folder path, an external `.html` link, a capture-and-reuse filename).
+
+[1]: #external-destinations-need-html
+[2]: #wildcards
