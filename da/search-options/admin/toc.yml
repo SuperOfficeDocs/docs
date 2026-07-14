@@ -1,5 +1,0 @@
-items:
-- name: Konfigurer fritekstsøgning
-  href: configure-free-text-search.md
-- name: Stopord
-  href: stopwords.md

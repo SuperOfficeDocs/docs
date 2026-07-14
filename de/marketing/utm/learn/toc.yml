@@ -1,8 +1,0 @@
-items:
-- name: Einführung
-  href: index.md
-- name: UTM-Parameter
-  href: parameters.md
-- name: Für Admins
-  href: ../admin/toc.yml
-  topicHref: ../admin/set-up.md
