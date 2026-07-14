@@ -1,9 +1,0 @@
-items:
-  - name: Oversikt
-    href: index.md
-  - name: Personlige profiler
-    href: personal.md
-  - name: Felles profiler
-    href: common.md
-  - name: Globale profiler
-    href: global.md

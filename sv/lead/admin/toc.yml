@@ -1,9 +1,0 @@
-items:
-- name: Konfigurera leadhantering
-  href: index.md
-- name: Företagskategori och kategorigrupp
-  href: add-company-category.md
-- name: Hantera lead-statuser
-  href: add-lead-status.md
-- name: Automatisera lead-kategorisering
-  href: category-automation.md

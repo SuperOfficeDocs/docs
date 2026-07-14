@@ -1,5 +1,0 @@
-items:
-- name: Webhooks-panel
-  href: index.md
-- name: Skapa webhook
-  href: create.md

@@ -25,6 +25,10 @@ redirects.json
 ### Do not commit changes to this section without approval ###
 
 # Ignore translations except index files
+#da/**
+#!da/**/
+#!da/**/index.md
+#!da/**/index.mdx
 #de/**
 #!de/**/
 #!de/**/index.md
@@ -41,11 +45,6 @@ redirects.json
 #!sv/**/
 #!sv/**/index.md
 #!sv/**/index.mdx
-
-# Newly forklifted from superoffice-docs (2026-07-13), not yet reformatted for Mintlify
-# (raw DocFx md/mdx, will break mint dev) — blanket-ignored for now, no exceptions.
-# de, no, sv, and nl are deliberately NOT ignored (converted to Mintlify, excluded from this batch). downloads is also NOT ignored — its one real content file (api/index.md) is converted; the other 84 files are static assets, not pages. integrations is also NOT ignored — converted to Mintlify (#52). release-notes is also NOT ignored — converted to Mintlify (#53). media is static assets, not pages.
-da/**
 
 # Ignore database except index files
 en/database/**

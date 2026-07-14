@@ -1,6 +1,0 @@
-items:
-- name: Innføring - statusovervåking
-  href: index.md
-- name: For administratorer
-  href: ../admin/toc.yml
-  topicHref: ../admin/index.md
