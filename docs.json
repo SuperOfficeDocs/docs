@@ -210,6 +210,935 @@
                 "pages": [
                   "de/learn/intro"
                 ]
+              },
+              {
+                "group": "Erste Schritte",
+                "pages": [
+                  "de/learn/getting-started/index",
+                  {
+                    "group": "Die Layout-Elemente",
+                    "pages": [
+                      "de/learn/getting-started/main-screen/index",
+                      "de/learn/getting-started/main-screen/navigator",
+                      "de/learn/getting-started/main-screen/buttons-in-menu-bar",
+                      "de/learn/getting-started/main-screen/side-panel",
+                      "de/learn/getting-started/main-screen/in-app-help"
+                    ]
+                  },
+                  "de/learn/getting-started/login",
+                  "de/learn/getting-started/preferences",
+                  "de/learn/getting-started/connect-your-accounts",
+                  "de/learn/getting-started/edit-email-signature",
+                  "de/learn/getting-started/change-language"
+                ]
+              },
+              {
+                "group": "Lernen Sie die Grundlagen",
+                "pages": [
+                  "de/learn/basics/index",
+                  "de/learn/basics/notifications",
+                  "de/learn/basics/fav",
+                  "de/learn/basics/history",
+                  "de/learn/basics/links",
+                  "de/learn/basics/notes",
+                  "de/learn/basics/print",
+                  "de/learn/basics/duplicates",
+                  "de/learn/basics/deleting-elements",
+                  "de/learn/basics/bulk-update",
+                  {
+                    "group": "Mit Bereichsregisterkarten arbeiten",
+                    "pages": [
+                      "de/learn/section-tabs/index",
+                      "de/learn/section-tabs/activities-tab",
+                      "de/learn/section-tabs/contacts-tab",
+                      "de/learn/section-tabs/relations-tab",
+                      "de/learn/section-tabs/sales-tab",
+                      "de/learn/section-tabs/projects-tab",
+                      "de/learn/section-tabs/requests-tab",
+                      "de/learn/section-tabs/configure-columns",
+                      "de/learn/section-tabs/filter",
+                      "de/learn/section-tabs/group",
+                      "de/learn/section-tabs/export-archives",
+                      "de/learn/section-tabs/send-email"
+                    ]
+                  },
+                  "de/learn/basics/activity",
+                  "de/learn/basics/relations",
+                  "de/learn/basics/external-applications-and-url-addresses",
+                  "de/learn/basics/creating-shortcuts-to-entries-in-crm"
+                ]
+              },
+              {
+                "group": "Suchoptionen",
+                "pages": [
+                  "de/search-options/learn/index",
+                  "de/search-options/learn/find-screen",
+                  "de/search-options/learn/search-criteria",
+                  "de/search-options/learn/freetext-search",
+                  "de/search-options/learn/in-navigator",
+                  "de/search-options/learn/in-dialogs",
+                  {
+                    "group": "Für Administratoren",
+                    "pages": [
+                      "de/search-options/admin/configure-free-text-search",
+                      "de/search-options/admin/stopwords"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Dashboard",
+                "pages": [
+                  "de/dashboard/learn/index",
+                  "de/dashboard/learn/create",
+                  "de/dashboard/learn/update",
+                  "de/dashboard/learn/working-with-tiles",
+                  "de/dashboard/learn/show-leads",
+                  "de/dashboard/learn/show-sales-targets",
+                  "de/dashboard/learn/show-marketing",
+                  "de/dashboard/learn/show-requests"
+                ]
+              },
+              {
+                "group": "Firma",
+                "pages": [
+                  "de/company/index",
+                  "de/company/learn/index",
+                  "de/company/learn/create",
+                  "de/company/learn/edit",
+                  "de/company/learn/copy",
+                  "de/company/learn/merge-companies",
+                  "de/company/learn/delete",
+                  "de/company/learn/address-formats"
+                ]
+              },
+              {
+                "group": "Person",
+                "pages": [
+                  "de/contact/index",
+                  "de/contact/learn/index",
+                  "de/contact/learn/create",
+                  "de/contact/learn/edit",
+                  "de/contact/learn/move",
+                  "de/contact/learn/merge-contacts",
+                  "de/contact/learn/delete",
+                  "de/contact/learn/send-email",
+                  "de/contact/learn/dial"
+                ]
+              },
+              {
+                "group": "Kalender",
+                "pages": [
+                  "de/diary/index",
+                  "de/diary/learn/index",
+                  "de/diary/learn/follow-ups",
+                  "de/diary/learn/video-meetings",
+                  "de/diary/learn/create-follow-up",
+                  "de/diary/learn/edit-follow-up",
+                  "de/diary/learn/move-follow-up",
+                  "de/diary/learn/change-completed-status",
+                  "de/diary/learn/other-diaries",
+                  "de/diary/learn/group-view",
+                  "de/diary/learn/follow-up-assign",
+                  "de/diary/learn/set-alarm",
+                  "de/diary/learn/send-as-email",
+                  {
+                    "group": "Wiederholung",
+                    "pages": [
+                      "de/diary/learn/recurrence/index",
+                      "de/diary/learn/recurrence/create",
+                      "de/diary/learn/recurrence/stop"
+                    ]
+                  },
+                  {
+                    "group": "Einladungen",
+                    "pages": [
+                      "de/diary/learn/invitation/index",
+                      "de/diary/learn/invitation/add-attendee",
+                      "de/diary/learn/invitation/accept-decline"
+                    ]
+                  },
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/diary/admin/add-follow-up-type",
+                      "de/diary/admin/add-resource"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Dokument",
+                "pages": [
+                  "de/document/index",
+                  "de/document/learn/index",
+                  "de/document/library/learn/index",
+                  {
+                    "group": "Mit Dokument arbeiten",
+                    "pages": [
+                      "de/document/learn/create",
+                      "de/document/learn/lock",
+                      "de/document/learn/edit",
+                      "de/document/learn/send-as-email"
+                    ]
+                  },
+                  {
+                    "group": "Dokumentvorlagen",
+                    "pages": [
+                      "de/document/templates/learn/index",
+                      "de/document/templates/learn/document-types",
+                      {
+                        "group": "Vorlagenvariablen",
+                        "pages": [
+                          {
+                            "group": "Referenz",
+                            "pages": [
+                              "de/document/templates/variables/from-company-card",
+                              "de/document/templates/variables/from-senders-company-card",
+                              "de/document/templates/variables/for-selected-contact",
+                              "de/document/templates/variables/for-sender-contact-dialog",
+                              "de/document/templates/variables/from-doc-dialog-or-system",
+                              "de/document/templates/variables/for-appointments",
+                              "de/document/templates/variables/for-ical",
+                              "de/document/templates/variables/for-int-address",
+                              "de/document/templates/variables/for-mail-gateway",
+                              "de/document/templates/variables/for-pocket",
+                              "de/document/templates/variables/from-project-card",
+                              "de/document/templates/variables/for-quote-alternative",
+                              "de/document/templates/variables/for-quote-info",
+                              "de/document/templates/variables/for-quote-line",
+                              "de/document/templates/variables/for-quote-line-with-subscription",
+                              "de/document/templates/variables/for-request",
+                              "de/document/templates/variables/for-sales",
+                              "de/document/templates/variables/for-selections",
+                              "de/document/templates/variables/for-service",
+                              "de/document/templates/variables/for-web-app",
+                              "de/document/templates/variables/misc"
+                            ]
+                          },
+                          "de/document/templates/learn/troubleshooting"
+                        ]
+                      },
+                      {
+                        "group": "Merge fields (Angebotsvorlagen)",
+                        "pages": [
+                          {
+                            "group": "Referenz",
+                            "pages": [
+                              "de/document/templates/merge-fields/index",
+                              "de/document/templates/merge-fields/quote",
+                              "de/document/templates/merge-fields/alternative",
+                              "de/document/templates/merge-fields/group",
+                              "de/document/templates/merge-fields/line"
+                            ]
+                          },
+                          "de/document/templates/admin/tutorial"
+                        ]
+                      },
+                      "de/document/templates/learn/create",
+                      "de/document/templates/admin/link-template",
+                      "de/document/templates/admin/update-template",
+                      "de/document/templates/admin/document-template-defaults"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "E-Mail",
+                "pages": [
+                  "de/email/index",
+                  "de/email/learn/index",
+                  "de/email/learn/change-default-mail-client",
+                  {
+                    "group": "SuperOffice Posteingang",
+                    "pages": [
+                      "de/email/inbox/learn/index",
+                      "de/email/inbox/learn/setup",
+                      "de/email/inbox/learn/preview",
+                      "de/email/inbox/learn/compose",
+                      "de/email/inbox/learn/manage-senders",
+                      "de/email/inbox/learn/invitations",
+                      "de/email/inbox/learn/archive",
+                      "de/email/inbox/learn/create-task",
+                      "de/email/inbox/learn/create-request"
+                    ]
+                  },
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/email/admin/add-email-template",
+                      {
+                        "group": "Postfachverwaltung",
+                        "pages": [
+                          "de/email/admin/mailbox/index",
+                          "de/email/admin/mailbox/create-mailbox",
+                          "de/email/admin/mailbox/create-sms-mailbox",
+                          "de/email/admin/mailbox/create-email-filter",
+                          "de/email/admin/mailbox/delete-mailbox"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Verkauf",
+                "pages": [
+                  "de/sale/index",
+                  "de/sale/learn/index",
+                  "de/sale/learn/create",
+                  "de/sale/learn/update",
+                  "de/sale/learn/sales-guides",
+                  "de/sale/learn/tutorial",
+                  {
+                    "group": "Beteiligte",
+                    "pages": [
+                      "de/sale/learn/stakeholders/create",
+                      "de/sale/learn/stakeholders/edit"
+                    ]
+                  },
+                  "de/sale/learn/forecasting",
+                  {
+                    "group": "Vertriebsziele",
+                    "pages": [
+                      "de/sale/learn/sales-targets/index",
+                      "de/sale/learn/sales-targets/create",
+                      "de/sale/learn/sales-targets/target-types"
+                    ]
+                  },
+                  {
+                    "group": "Angebot",
+                    "pages": [
+                      "de/sale/learn/quote/index",
+                      "de/sale/learn/quote/create",
+                      "de/sale/learn/quote/add-alternative",
+                      "de/sale/learn/quote/create-quote-document",
+                      "de/sale/learn/quote/send",
+                      "de/sale/learn/quote/place-order"
+                    ]
+                  },
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/sale/admin/index",
+                      "de/sale/admin/sale-stage",
+                      "de/sale/admin/sale-type",
+                      "de/sale/admin/create-sales-guide",
+                      "de/sale/admin/edit-sales-guide",
+                      "de/sale/admin/add-currency",
+                      {
+                        "group": "Angebote",
+                        "pages": [
+                          "de/sale/admin/quote/price-list-and-products",
+                          "de/sale/admin/quote/configure-product-fields",
+                          "de/sale/admin/quote/set-up-quote-connector"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Projekt",
+                "pages": [
+                  "de/project/index",
+                  "de/project/learn/index",
+                  "de/project/learn/create",
+                  "de/project/learn/add-image",
+                  "de/project/learn/edit",
+                  "de/project/learn/merge-projects",
+                  "de/project/learn/delete",
+                  {
+                    "group": "Projektmitglieder",
+                    "pages": [
+                      "de/project/learn/project-members/index",
+                      "de/project/learn/project-members/add",
+                      "de/project/learn/project-members/edit",
+                      "de/project/learn/project-members/invite-to-meeting",
+                      "de/project/learn/project-members/send-email-to",
+                      "de/project/learn/project-members/create-mailing"
+                    ]
+                  },
+                  "de/project/learn/project-guides",
+                  "de/project/learn/tutorial",
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/project/admin/index",
+                      "de/project/admin/project-status",
+                      "de/project/admin/project-type",
+                      "de/project/admin/create-project-guide",
+                      "de/project/admin/edit-project-guide"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Anfragen",
+                "pages": [
+                  "de/request/index",
+                  "de/request/learn/index",
+                  "de/request/learn/handle-request-ai",
+                  "de/request/learn/find",
+                  "de/request/learn/create",
+                  "de/request/learn/edit-message",
+                  "de/request/learn/assign",
+                  "de/request/learn/spam",
+                  "de/request/learn/accept",
+                  "de/request/learn/transfer",
+                  "de/request/learn/forward",
+                  "de/request/learn/reply",
+                  "de/request/learn/request-relations",
+                  "de/request/learn/tags",
+                  "de/request/learn/flag-message",
+                  "de/request/learn/split-request",
+                  "de/request/learn/merge",
+                  "de/request/learn/split-message",
+                  "de/request/learn/close",
+                  "de/request/learn/delete",
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/request/admin/index",
+                      {
+                        "group": "Anfragetypen",
+                        "pages": [
+                          "de/request/admin/type/index",
+                          "de/request/admin/type/create",
+                          "de/request/admin/type/delete"
+                        ]
+                      },
+                      "de/request/admin/relation-rules",
+                      {
+                        "group": "Kategorien",
+                        "pages": [
+                          "de/request/admin/category/index",
+                          "de/request/admin/category/create",
+                          "de/request/admin/category/delete",
+                          "de/request/admin/category/external-categories"
+                        ]
+                      },
+                      {
+                        "group": "Prioritäten",
+                        "pages": [
+                          "de/request/admin/priority/index",
+                          "de/request/admin/priority/create",
+                          "de/request/admin/priority/delete",
+                          "de/request/admin/priority/escalation-levels"
+                        ]
+                      },
+                      {
+                        "group": "Anfragestatus",
+                        "pages": [
+                          "de/request/admin/status/index",
+                          "de/request/admin/status/create",
+                          "de/request/admin/status/delete"
+                        ]
+                      },
+                      "de/request/admin/next-in-queue",
+                      "de/request/admin/system-templates"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Benutzerdefinierte Objekte",
+                "pages": [
+                  "de/custom-objects/learn/index",
+                  "de/custom-objects/learn/more-tab",
+                  {
+                    "group": "Benutzerdefinierte Felder",
+                    "pages": [
+                      "de/custom-objects/learn/udef",
+                      "de/custom-objects/admin/add-udef",
+                      "de/custom-objects/admin/edit-udef",
+                      "de/custom-objects/admin/edit-udef-layout"
+                    ]
+                  },
+                  {
+                    "group": "Zusatztabellen",
+                    "pages": [
+                      "de/custom-objects/learn/extra-table",
+                      "de/custom-objects/admin/create-extra-table"
+                    ]
+                  },
+                  {
+                    "group": "Zusatzfelder",
+                    "pages": [
+                      "de/custom-objects/learn/extra-field",
+                      "de/custom-objects/admin/create-extra-field",
+                      "de/custom-objects/admin/show-extra-field-on-request-details"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Selektion",
+                "pages": [
+                  "de/search-options/selection/learn/index",
+                  "de/search-options/selection/learn/create",
+                  "de/search-options/selection/learn/update",
+                  "de/search-options/selection/learn/combine",
+                  "de/search-options/selection/learn/add-remove-members-static",
+                  "de/search-options/selection/learn/copy-members-to",
+                  "de/search-options/selection/learn/board-view",
+                  {
+                    "group": "Aufgaben in der Ansicht Selektion ausführen",
+                    "pages": [
+                      "de/search-options/selection/learn/howto/index",
+                      "de/search-options/selection/learn/howto/create-mailings",
+                      "de/search-options/selection/learn/howto/send-email",
+                      "de/search-options/selection/learn/howto/generate-follow-ups",
+                      "de/search-options/selection/learn/howto/display-as-charts",
+                      "de/search-options/selection/learn/howto/print-labels",
+                      "de/search-options/selection/learn/howto/print",
+                      "de/search-options/selection/learn/howto/export"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Chat",
+                "pages": [
+                  "de/chat/learn/index",
+                  "de/chat/learn/statistics",
+                  "de/chat/learn/respond",
+                  "de/chat/learn/link-to-person",
+                  "de/chat/learn/create-request",
+                  "de/chat/learn/transfer-to-agent",
+                  "de/chat/learn/as-customer",
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/chat/admin/index",
+                      "de/chat/admin/channel-create",
+                      "de/chat/admin/add-javascript"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Marketing",
+                "pages": [
+                  "de/marketing/learn/index",
+                  "de/marketing/learn/create-folder",
+                  "de/marketing/learn/message-templates",
+                  "de/marketing/learn/add-images",
+                  "de/marketing/learn/best-practices",
+                  {
+                    "group": "Kampagnen",
+                    "pages": [
+                      "de/marketing/mailing/learn/index",
+                      {
+                        "group": "Neue Kampagne erstellen",
+                        "pages": [
+                          "de/marketing/mailing/learn/create/index",
+                          "de/marketing/mailing/learn/create/tutorial-email-mailing",
+                          "de/marketing/mailing/learn/create/tutorial-sms-mailing",
+                          "de/marketing/mailing/learn/create/tutorial-document-mailing",
+                          "de/marketing/mailing/learn/create/tutorial-form-mailing",
+                          "de/marketing/mailing/learn/create/send-test-email"
+                        ]
+                      },
+                      "de/marketing/mailing/learn/view-statistics",
+                      "de/marketing/mailing/learn/resend",
+                      "de/marketing/mailing/admin/define-settings-for-mailings",
+                      "de/marketing/mailing/admin/add-domain"
+                    ]
+                  },
+                  {
+                    "group": "Drag-and-Drop-Editor",
+                    "pages": [
+                      "de/marketing/editor/learn/index",
+                      "de/marketing/editor/learn/add-content",
+                      "de/marketing/editor/learn/edit-paragraph",
+                      "de/marketing/editor/learn/insert-images-in-message",
+                      "de/marketing/editor/learn/add-merge-tag",
+                      "de/marketing/editor/learn/add-link-to-display-message-in-browser",
+                      "de/marketing/editor/learn/add-unsubscribe-link",
+                      "de/marketing/editor/learn/add-tracked-link-to-msg"
+                    ]
+                  },
+                  {
+                    "group": "Empfänger (Zielliste)",
+                    "pages": [
+                      "de/marketing/recipients/learn/index",
+                      "de/marketing/recipients/learn/manage-email-subscriptions",
+                      "de/marketing/recipients/learn/look-at-recipient-list",
+                      "de/marketing/recipients/learn/manage-bounces",
+                      "de/marketing/recipients/learn/spam-complaints"
+                    ]
+                  },
+                  {
+                    "group": "Überwachten Links",
+                    "pages": [
+                      "de/marketing/tracked-links/learn/index",
+                      "de/marketing/tracked-links/learn/create-links",
+                      "de/marketing/tracked-links/learn/define-link-actions",
+                      "de/marketing/tracked-links/learn/add-google-analytics-tag",
+                      "de/marketing/tracked-links/learn/explore-clicks",
+                      "de/marketing/tracked-links/learn/reset-counter",
+                      "de/marketing/tracked-links/learn/ga-tutorial"
+                    ]
+                  },
+                  {
+                    "group": "Formulare",
+                    "pages": [
+                      "de/marketing/forms/learn/index",
+                      "de/marketing/forms/learn/create",
+                      "de/marketing/forms/learn/field-options",
+                      "de/marketing/forms/learn/define-form-actions",
+                      "de/marketing/forms/learn/form-templates",
+                      "de/marketing/forms/learn/publish",
+                      "de/marketing/forms/learn/view-statistics",
+                      "de/marketing/forms/learn/process-submissions",
+                      "de/marketing/forms/learn/tutorial-contact-me",
+                      "de/marketing/forms/learn/tutorial-sign-up",
+                      "de/marketing/forms/admin/manage-fonts",
+                      "de/marketing/forms/admin/form-field-restrictions"
+                    ]
+                  },
+                  {
+                    "group": "Flows",
+                    "pages": [
+                      "de/marketing/flows/learn/index",
+                      "de/marketing/flows/learn/create",
+                      "de/marketing/flows/learn/update",
+                      "de/marketing/flows/learn/split",
+                      "de/marketing/flows/learn/define-flow-actions",
+                      "de/marketing/flows/learn/content",
+                      "de/marketing/flows/learn/step-settings",
+                      "de/marketing/flows/learn/run-pause-end",
+                      "de/marketing/flows/learn/participants",
+                      "de/marketing/flows/learn/view-statistics"
+                    ]
+                  },
+                  {
+                    "group": "Conversion-Tracking",
+                    "pages": [
+                      "de/marketing/utm/learn/index",
+                      "de/marketing/utm/learn/parameters",
+                      {
+                        "group": "Für Admins",
+                        "pages": [
+                          "de/marketing/utm/admin/set-up"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Lead-Management",
+                "pages": [
+                  "de/lead/learn/index",
+                  "de/lead/learn/work-with-leads",
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/lead/admin/index",
+                      "de/lead/admin/add-company-category",
+                      "de/lead/admin/add-lead-status",
+                      "de/lead/admin/category-automation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Mobile CRM",
+                "pages": [
+                  "de/mobile/index"
+                ]
+              },
+              {
+                "group": "Wissensdatenbank",
+                "pages": [
+                  "de/knowledge-base/learn/index",
+                  "de/knowledge-base/learn/manage-folders",
+                  {
+                    "group": "Antwortvorlagen",
+                    "pages": [
+                      "de/knowledge-base/learn/reply-templates/index",
+                      "de/knowledge-base/learn/reply-templates/create",
+                      "de/knowledge-base/learn/reply-templates/new-language",
+                      "de/knowledge-base/learn/reply-templates/edit",
+                      "de/knowledge-base/learn/reply-templates/template-variables"
+                    ]
+                  },
+                  {
+                    "group": "FAQ",
+                    "pages": [
+                      "de/knowledge-base/learn/faq/index",
+                      "de/knowledge-base/learn/faq/create",
+                      "de/knowledge-base/learn/faq/edit",
+                      "de/knowledge-base/learn/faq/publish",
+                      "de/knowledge-base/learn/faq/workflow"
+                    ]
+                  },
+                  "de/knowledge-base/learn/email-addresses",
+                  "de/knowledge-base/learn/external-document"
+                ]
+              },
+              {
+                "group": "Datenschutzeinstellungen und DSGVO",
+                "pages": [
+                  "de/security/privacy/learn/index",
+                  "de/security/privacy/learn/edit-legal-base",
+                  "de/security/privacy/learn/send-privacy-confirmation-email",
+                  "de/security/privacy/learn/generate-personal-data-report",
+                  "de/security/privacy/learn/mass-delete",
+                  {
+                    "group": "Für Administratoren",
+                    "pages": [
+                      "de/security/privacy/admin/index",
+                      "de/security/privacy/admin/add-purpose",
+                      "de/security/privacy/admin/add-legal-base",
+                      "de/security/privacy/admin/add-source",
+                      "de/security/privacy/admin/edit-privacy-confirmation-email"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "KI-Services",
+                "pages": [
+                  "de/ai/learn/index",
+                  "de/ai/learn/text-analysis",
+                  "de/ai/learn/categorization",
+                  "de/ai/learn/copilot",
+                  {
+                    "group": "Für Administratoren",
+                    "pages": [
+                      "de/ai/admin/set-up-categorization"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "SAINT (Sales Intelligence)",
+                "pages": [
+                  "de/saint/learn/index",
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/saint/admin/index",
+                      "de/saint/admin/set-up",
+                      "de/saint/admin/update",
+                      "de/saint/admin/counter-settings",
+                      "de/saint/admin/sale-amount-class"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "ERP",
+                "pages": [
+                  "de/erp/learn/index",
+                  "de/erp/learn/connect",
+                  "de/erp/learn/disconnect",
+                  {
+                    "group": "Für Admins",
+                    "pages": [
+                      "de/erp/admin/index",
+                      "de/erp/admin/add-connection",
+                      "de/erp/admin/configure",
+                      "de/erp/admin/update-connection",
+                      "de/erp/admin/resync-from-crm"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Anpassung",
+                "pages": [
+                  "de/customization/index",
+                  {
+                    "group": "Ansichtsdesigner",
+                    "pages": [
+                      "de/customization/screen-designer/admin/index",
+                      "de/customization/screen-designer/admin/add-layout",
+                      "de/customization/screen-designer/admin/edit-layout",
+                      "de/customization/screen-designer/admin/working-with-fields",
+                      "de/customization/screen-designer/admin/working-with-grids",
+                      "de/customization/screen-designer/admin/working-with-tabs",
+                      "de/customization/screen-designer/admin/working-with-archives",
+                      "de/customization/screen-designer/admin/add-button",
+                      "de/customization/screen-designer/admin/assign-layout",
+                      "de/customization/screen-designer/admin/reference",
+                      "de/customization/screen-designer/admin/tutorial-move-country"
+                    ]
+                  },
+                  {
+                    "group": "Web-Bildschirme",
+                    "pages": [
+                      "de/customization/web-panels/admin/index",
+                      "de/customization/web-panels/admin/add-web-panel",
+                      "de/customization/web-panels/admin/url-encoding"
+                    ]
+                  },
+                  {
+                    "group": "Makros und Skripts",
+                    "pages": [
+                      "de/customization/macros-and-scripts/admin/index",
+                      "de/customization/macros-and-scripts/admin/create-script",
+                      "de/customization/macros-and-scripts/admin/create-macro",
+                      "de/customization/macros-and-scripts/admin/trigger",
+                      "de/customization/macros-and-scripts/admin/schedule-task"
+                    ]
+                  },
+                  {
+                    "group": "Kundenzentrum",
+                    "pages": [
+                      "de/customer-center/learn/index",
+                      "de/customer-center/learn/config",
+                      "de/customer-center/learn/edit",
+                      "de/customer-center/learn/send-credentials",
+                      "de/customer-center/learn/enable-chat",
+                      "de/customer-center/learn/link-form",
+                      {
+                        "group": "Für Administratoren",
+                        "pages": [
+                          "de/customer-center/admin/style-subscription-page",
+                          "de/customer-center/admin/password-policy"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Systemdesign",
+                    "pages": [
+                      "de/ui/blogic/learn/index",
+                      {
+                        "group": "Profile",
+                        "pages": [
+                          "de/ui/blogic/learn/profiles/index",
+                          "de/ui/blogic/learn/profiles/personal",
+                          "de/ui/blogic/learn/profiles/common",
+                          "de/ui/blogic/learn/profiles/global"
+                        ]
+                      },
+                      "de/ui/blogic/learn/screen-chooser",
+                      "de/ui/blogic/learn/screen-definition",
+                      "de/ui/blogic/learn/screen-properties",
+                      {
+                        "group": "Zusatzmenüs",
+                        "pages": [
+                          "de/ui/blogic/learn/extra-menus/index",
+                          "de/ui/blogic/learn/extra-menus/actions",
+                          "de/ui/blogic/learn/extra-menus/navigator",
+                          "de/ui/blogic/learn/extra-menus/properties"
+                        ]
+                      }
+                    ]
+                  },
+                  "de/customization/admin/package-properties",
+                  "de/customization/admin/add-items-to-task-menu",
+                  "de/customization/admin/other-applications",
+                  {
+                    "group": "Webhooks",
+                    "pages": [
+                      "de/automation/webhook/admin/index",
+                      "de/automation/webhook/admin/create"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Einstellungen und Verwaltung",
+                "pages": [
+                  "de/admin/index",
+                  "de/admin/getting-started",
+                  "de/admin/adjusting-views",
+                  {
+                    "group": "Lizenzen",
+                    "pages": [
+                      "de/admin/license/index",
+                      "de/admin/license/crm-suite",
+                      "de/admin/license/user-plans",
+                      "de/admin/license/activate",
+                      "de/admin/license/expander-services"
+                    ]
+                  },
+                  {
+                    "group": "Einstellungen",
+                    "pages": [
+                      "de/admin/preferences/index",
+                      "de/admin/preferences/update",
+                      "de/admin/preferences/service-settings",
+                      "de/admin/preferences/sms"
+                    ]
+                  },
+                  {
+                    "group": "Optionen",
+                    "pages": [
+                      "de/admin/options/index",
+                      "de/admin/options/configure-number-allocation",
+                      "de/admin/options/change-ui-labels"
+                    ]
+                  },
+                  {
+                    "group": "Listen",
+                    "pages": [
+                      "de/admin/lists/index",
+                      "de/admin/lists/add-items",
+                      "de/admin/lists/update-items",
+                      "de/admin/lists/restore",
+                      "de/admin/lists/headings",
+                      "de/admin/lists/user-group-filtering",
+                      "de/admin/lists/specialized-lists",
+                      "de/admin/lists/user-defined-lists"
+                    ]
+                  },
+                  {
+                    "group": "Benutzerverwaltung",
+                    "pages": [
+                      "de/admin/user-management/index",
+                      "de/admin/user-management/add-associate",
+                      "de/admin/user-management/update-user",
+                      "de/admin/user-management/our-companies",
+                      "de/admin/user-management/user-groups",
+                      {
+                        "group": "Rolle",
+                        "pages": [
+                          "de/admin/user-management/role/index",
+                          "de/admin/user-management/role/create-role",
+                          "de/admin/user-management/role/update-role",
+                          "de/admin/user-management/role/set-data-rights-for-role",
+                          "de/admin/user-management/role/functional-rights"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Importieren",
+                    "pages": [
+                      "de/admin/import/index",
+                      "de/admin/import/from-excel",
+                      "de/admin/import/from-mac-address-book",
+                      "de/admin/import/from-gmail",
+                      "de/admin/import/from-erp",
+                      "de/admin/import/products-from-excel",
+                      "de/admin/import/create-spreadsheet",
+                      "de/admin/import/settings"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Sprache, Übersetzung und Zeitzonen",
+                "pages": [
+                  "de/localization/learn/customer-languages",
+                  "de/localization/learn/translate-fields",
+                  "de/localization/learn/time-zones",
+                  {
+                    "group": "Für Administratoren",
+                    "pages": [
+                      "de/localization/admin/enable-time-zones",
+                      "de/localization/admin/select-time-zones",
+                      "de/localization/admin/add-customer-language"
+                    ]
+                  }
+                ]
               }
             ]
           },
