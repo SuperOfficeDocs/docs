@@ -22,7 +22,7 @@ SuperOffice CRM Suite provides a single, integrated CRM platform that covers sal
 
 ## <a id="plans"></a>Plans
 
-Five plans are available. Plans are cumulative — each plan includes everything in the plans below it.
+Five plans are available. Plans are cumulative - each plan includes everything in the plans below it.
 
 | Plan | Description |
 | --- | --- |
@@ -76,9 +76,9 @@ The **Restrictions** indicator in **Settings and maintenance** > **Licences** > 
 
 | Usage | Indicator | Meaning |
 | --- | --- | --- |
-| Below 85% | Count shown in black | Normal — no action needed |
+| Below 85% | Count shown in black | Normal - no action needed |
 | 85% or more | <i class="ph ph-warning" aria-label="Warning"></i> Count shown in yellow | Approaching the limit |
-| 100% | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Count shown in red | Limit reached — the feature is restricted |
+| 100% | <i class="ph ph-prohibit" aria-label="Limit reached"></i> Count shown in red | Limit reached - the feature is restricted |
 
 ![Licences Status tab showing a plan limit warning with an Upgrade button -screenshot][img1]
 
@@ -86,7 +86,7 @@ If you are an administrator, an **Upgrade** button appears next to a warning or 
 
 ## Transition from SuperOffice CRM Online
 
-Organizations migrating from **SuperOffice CRM Online** (the module-based subscription) are placed on the CRM Suite plan that matches their current license. If you held multiple licenses, your plan is based on your highest-tier license. Transition timing is determined on a per-account basis — you will be contacted.
+Organizations migrating from **SuperOffice CRM Online** (the module-based subscription) are placed on the CRM Suite plan that matches their current license. If you held multiple licenses, your plan is based on your highest-tier license. Transition timing is determined on a per-account basis - you will be contacted.
 
 | Current license | CRM Suite plan |
 | --- | --- |
@@ -103,9 +103,8 @@ Organizations migrating from **SuperOffice CRM Online** (the module-based subscr
 * [SuperOffice CRM Online user plans][2]
 * [Activate license][3]
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: user-plans.md
-[3]: activate.md
+[1]: ./index
+[2]: ./user-plans
+[3]: ./activate
 
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

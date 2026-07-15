@@ -15021,6 +15021,390 @@
     {
       "source": "/en/ui/web-app/pagebuilder/usercontrols/sotextbox/index",
       "destination": "/en/ui/web-app/pagebuilder/usercontrols/sotextbox/add-textbox-to-navigator"
+    },
+    {
+      "source": "/en/admin/import/learn/create-import-file",
+      "destination": "/en/admin/import/create-spreadsheet"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-import-from-erp",
+      "destination": "/en/admin/import/from-erp"
+    },
+    {
+      "source": "/en/admin/import/learn/import-from-erp",
+      "destination": "/en/admin/import/from-erp"
+    },
+    {
+      "source": "/en/admin/import/learn/import-from-excel",
+      "destination": "/en/admin/import/from-excel"
+    },
+    {
+      "source": "/en/admin/import/learn/import-from-gmail",
+      "destination": "/en/admin/import/from-gmail"
+    },
+    {
+      "source": "/en/admin/import/learn/import-from-mac-address-book",
+      "destination": "/en/admin/import/from-mac-address-book"
+    },
+    {
+      "source": "/en/admin/import/learn/index",
+      "destination": "/en/admin/import/index"
+    },
+    {
+      "source": "/en/admin/import/learn/import-from-outlook",
+      "destination": "/en/admin/import/index"
+    },
+    {
+      "source": "/en/admin/import/import-from-outlook",
+      "destination": "/en/admin/import/index"
+    },
+    {
+      "source": "/en/admin/import/learn/import-products-from-excel",
+      "destination": "/en/admin/import/products-from-excel"
+    },
+    {
+      "source": "/en/admin/import/learn/configure-import-settings",
+      "destination": "/en/admin/import/settings"
+    },
+    {
+      "source": "/en/admin/learn/screen/soap-config",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/configure-soap.html"
+    },
+    {
+      "source": "/en/admin/learn/add-system-event",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/add-system-event.html"
+    },
+    {
+      "source": "/en/admin/learn/configure-soap",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/configure-soap.html"
+    },
+    {
+      "source": "/en/admin/learn/system-events",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/add-system-event.html"
+    },
+    {
+      "source": "/en/admin/license/learn/activate",
+      "destination": "/en/admin/license/activate"
+    },
+    {
+      "source": "/en/admin/license/expander-services/index",
+      "destination": "/en/admin/license/expander-services"
+    },
+    {
+      "source": "/en/admin/license/expander-services/tool-box",
+      "destination": "/en/admin/license/expander-services"
+    },
+    {
+      "source": "/en/admin/license/learn/screen/index",
+      "destination": "/en/admin/license/index"
+    },
+    {
+      "source": "/en/admin/license/learn/index",
+      "destination": "/en/admin/license/index"
+    },
+    {
+      "source": "/en/admin/overview",
+      "destination": "/en/admin/license/index"
+    },
+    {
+      "source": "/en/learn/administration",
+      "destination": "/en/admin/license/index"
+    },
+    {
+      "source": "/en/admin/license/change-user-plan",
+      "destination": "/en/admin/license/user-plans"
+    },
+    {
+      "source": "/en/admin/user-management/learn/change-user-plan",
+      "destination": "/en/admin/license/user-plans"
+    },
+    {
+      "source": "/en/admin/lists/learn/adding-items",
+      "destination": "/en/admin/lists/add-items"
+    },
+    {
+      "source": "/en/admin/lists/learn/organize/index",
+      "destination": "/en/admin/lists/headings"
+    },
+    {
+      "source": "/en/admin/lists/learn/organize/headings",
+      "destination": "/en/admin/lists/headings"
+    },
+    {
+      "source": "/en/admin/lists/learn/organize/adding-headings",
+      "destination": "/en/admin/lists/headings"
+    },
+    {
+      "source": "/en/admin/lists/learn/organize/headings-editing-and-deleting",
+      "destination": "/en/admin/lists/headings"
+    },
+    {
+      "source": "/en/admin/lists/learn/organize/grouping-items-under-headings",
+      "destination": "/en/admin/lists/headings"
+    },
+    {
+      "source": "/en/admin/lists/learn/index",
+      "destination": "/en/admin/lists/index"
+    },
+    {
+      "source": "/en/admin/lists/learn/items",
+      "destination": "/en/admin/lists/index"
+    },
+    {
+      "source": "/en/admin/lists/learn/duplicates",
+      "destination": "/en/admin/lists/index"
+    },
+    {
+      "source": "/en/admin/lists/learn/organize/deleted-items-and-headings",
+      "destination": "/en/admin/lists/restore"
+    },
+    {
+      "source": "/en/admin/lists/learn/specialized-lists",
+      "destination": "/en/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/en/admin/lists/learn/adding-items-to-relation-list",
+      "destination": "/en/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/en/admin/lists/learn/add-items-to-country-list",
+      "destination": "/en/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/en/admin/lists/learn/country",
+      "destination": "/en/admin/lists/specialized-lists"
+    },
+    {
+      "source": "/en/admin/lists/learn/editing-items",
+      "destination": "/en/admin/lists/update-items"
+    },
+    {
+      "source": "/en/admin/lists/learn/deleting-items",
+      "destination": "/en/admin/lists/update-items"
+    },
+    {
+      "source": "/en/admin/lists/learn/adding-user-defined-lists",
+      "destination": "/en/admin/lists/user-defined-lists"
+    },
+    {
+      "source": "/en/admin/lists/learn/deleting-user-defined-lists",
+      "destination": "/en/admin/lists/user-defined-lists"
+    },
+    {
+      "source": "/en/admin/lists/learn/editing-lists-name-and-description",
+      "destination": "/en/admin/lists/user-defined-lists"
+    },
+    {
+      "source": "/en/admin/lists/learn/organize/user-group-filtering",
+      "destination": "/en/admin/lists/user-group-filtering"
+    },
+    {
+      "source": "/en/admin/onsite/add-system-event",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/add-system-event.html"
+    },
+    {
+      "source": "/en/admin/onsite/configure-soap",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/configure-soap.html"
+    },
+    {
+      "source": "/en/admin/onsite/data-exchange",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/data-exchange.html"
+    },
+    {
+      "source": "/en/admin/options/learn/freetext-search/regenerate-index",
+      "destination": "https://help.superoffice.com/docs/11/en/search-options/admin/regenerate-index.html"
+    },
+    {
+      "source": "/en/admin/options/learn/labels/index",
+      "destination": "/en/admin/options/change-ui-labels"
+    },
+    {
+      "source": "/en/admin/options/learn/labels/change",
+      "destination": "/en/admin/options/change-ui-labels"
+    },
+    {
+      "source": "/en/admin/options/learn/labels/reset",
+      "destination": "/en/admin/options/change-ui-labels"
+    },
+    {
+      "source": "/en/admin/options/learn/number-allocation/index",
+      "destination": "/en/admin/options/configure-number-allocation"
+    },
+    {
+      "source": "/en/admin/options/learn/number-allocation/configure",
+      "destination": "/en/admin/options/configure-number-allocation"
+    },
+    {
+      "source": "/en/admin/options/learn/index",
+      "destination": "/en/admin/options/index"
+    },
+    {
+      "source": "/en/admin/preferences/learn/global-preferences/smtp",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/preferences/smtp.html"
+    },
+    {
+      "source": "/en/admin/preferences/learn/index",
+      "destination": "/en/admin/preferences/index"
+    },
+    {
+      "source": "/en/admin/preferences/learn/global-preferences/system",
+      "destination": "/en/admin/preferences/index"
+    },
+    {
+      "source": "/en/admin/preferences/learn/global-preferences/settings",
+      "destination": "/en/admin/preferences/service-settings"
+    },
+    {
+      "source": "/en/admin/preferences/learn/global-preferences/sms",
+      "destination": "/en/admin/preferences/sms"
+    },
+    {
+      "source": "/en/admin/preferences/smtp",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/preferences/smtp.html"
+    },
+    {
+      "source": "/en/admin/preferences/learn/update-preferences",
+      "destination": "/en/admin/preferences/update"
+    },
+    {
+      "source": "/en/admin/user-management/learn/role/edit-rights-for-anonymous-users",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/other-users.html#rights"
+    },
+    {
+      "source": "/en/admin/user-management/learn/import-users",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/import-users.html"
+    },
+    {
+      "source": "/en/admin/user-management/learn/logging-users-off",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/logging-users-off.html"
+    },
+    {
+      "source": "/en/admin/user-management/learn/managing-external-users",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/managing-external-users.html"
+    },
+    {
+      "source": "/en/admin/user-management/learn/other-users",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/other-users.html"
+    },
+    {
+      "source": "/en/admin/user-management/onsite/import-users",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/import-users.html"
+    },
+    {
+      "source": "/en/admin/user-management/onsite/index",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/other-users.html"
+    },
+    {
+      "source": "/en/admin/user-management/onsite/logging-users-off",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/logging-users-off.html"
+    },
+    {
+      "source": "/en/admin/user-management/onsite/managing-external-users",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/managing-external-users.html"
+    },
+    {
+      "source": "/en/admin/user-management/onsite/other-users",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/user-management/onsite/other-users.html"
+    },
+    {
+      "source": "/en/admin/user-management/learn/role/create-role",
+      "destination": "/en/admin/user-management/role/create-role"
+    },
+    {
+      "source": "/en/admin/user-preferences/reference/cripple",
+      "destination": "/en/admin/user-management/role/functional-rights"
+    },
+    {
+      "source": "/en/admin/user-management/learn/role/functional-rights",
+      "destination": "/en/admin/user-management/role/functional-rights"
+    },
+    {
+      "source": "/en/online/identity/role/index",
+      "destination": "/en/admin/user-management/role/index"
+    },
+    {
+      "source": "/en/admin/user-management/learn/role/index",
+      "destination": "/en/admin/user-management/role/index"
+    },
+    {
+      "source": "/en/admin/user-management/learn/role/set-data-rights-for-role",
+      "destination": "/en/admin/user-management/role/set-data-rights-for-role"
+    },
+    {
+      "source": "/en/admin/user-management/learn/role/editing-role",
+      "destination": "/en/admin/user-management/role/update-role"
+    },
+    {
+      "source": "/en/admin/user-management/learn/role/deleting-role",
+      "destination": "/en/admin/user-management/role/update-role"
+    },
+    {
+      "source": "/en/admin/user-management/learn/add-associate",
+      "destination": "/en/admin/user-management/add-associate"
+    },
+    {
+      "source": "/en/admin/user-management/learn/index",
+      "destination": "/en/admin/user-management/index"
+    },
+    {
+      "source": "/en/admin/user-management/learn/screen/index",
+      "destination": "/en/admin/user-management/index"
+    },
+    {
+      "source": "/en/admin/user-management/learn/visibility",
+      "destination": "/en/admin/user-management/index"
+    },
+    {
+      "source": "/en/admin/user-management/learn/associates-filter-group",
+      "destination": "/en/admin/user-management/index"
+    },
+    {
+      "source": "/en/admin/user-management/learn/move-user",
+      "destination": "/en/admin/user-management/our-companies"
+    },
+    {
+      "source": "/en/admin/user-management/learn/our-companies",
+      "destination": "/en/admin/user-management/our-companies"
+    },
+    {
+      "source": "/en/admin/user-management/learn/delete-user",
+      "destination": "/en/admin/user-management/update-user"
+    },
+    {
+      "source": "/en/admin/user-management/learn/update-user",
+      "destination": "/en/admin/user-management/update-user"
+    },
+    {
+      "source": "/en/admin/user-management/learn/user-groups",
+      "destination": "/en/admin/user-management/user-groups"
+    },
+    {
+      "source": "/en/admin/user-preferences/reference/index",
+      "destination": "/en/admin/user-preferences/reference/appointment-dialog"
+    },
+    {
+      "source": "/en/admin/user-preferences/howto/index",
+      "destination": "/en/admin/user-preferences/index"
+    },
+    {
+      "source": "/en/admin/learn/adjusting-views",
+      "destination": "/en/admin/adjusting-views"
+    },
+    {
+      "source": "/en/admin/learn/index",
+      "destination": "/en/admin/getting-started"
+    },
+    {
+      "source": "/en/admin/learn/onboard-users",
+      "destination": "/en/admin/getting-started"
+    },
+    {
+      "source": "/en/admin/getting-started/index",
+      "destination": "/en/admin/getting-started"
+    },
+    {
+      "source": "/en/admin/getting-started/onboard-users",
+      "destination": "/en/admin/getting-started"
     }
   ]
 }

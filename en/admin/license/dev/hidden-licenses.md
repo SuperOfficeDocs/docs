@@ -100,11 +100,9 @@ As you can see, some licenses are hidden, and some are not. The hidden licenses 
 
 The ModuleNames can be referenced from [SoLicenseNames][2].
 
-<!-- Referenced links-->
-[1]: user-plans.md
+[1]: ./user-plans
 [2]: <xref:SuperOffice.License.SoLicenseNames>
-[3]: module-licenses.md
+[3]: ./module-licenses
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/admin/licenses-admin.png
 [img2]: ../../../../media/loc/en/admin/licenses-list.png

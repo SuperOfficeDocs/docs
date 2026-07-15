@@ -13,7 +13,7 @@ topic: options
 audience: settings
 audience_tooltip: Settings and maintenance
 index: true
-redirect_from: 
+redirect_from:
   - /en/admin/options/learn/number-allocation/index
   - /en/admin/options/learn/number-allocation/configure
 language: en
@@ -90,5 +90,4 @@ The table below shows the consequences of different combinations of the values *
 
 * [Specify default values for new document templates][3]
 
-<!-- Referenced links -->
-[3]: ../../document/templates/admin/document-template-defaults.md
+[3]: ../../document/templates/admin/document-template-defaults
