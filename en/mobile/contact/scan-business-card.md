@@ -48,9 +48,6 @@ Do you receive many business cards from prospects and customers? The fastest way
 
 1. Tap **Save** to store information both in the app and in SuperOffice CRM.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img2]: ../../../media/loc/en/mobile/new-company.png
 [img3]: ../../../media/loc/en/mobile/contact-details-from-business-card.png
 [img4]: ../../../media/loc/en/mobile/new-contact.png

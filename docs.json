@@ -16589,6 +16589,234 @@
     {
       "source": "/en/search-options/selection/learn/update/index",
       "destination": "/en/search-options/selection/learn/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company/create",
+      "destination": "/en/mobile/company/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company/index",
+      "destination": "/en/mobile/company/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/copy-contact-to-address-book",
+      "destination": "/en/mobile/contact/copy-to-contact-list"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/contact/copy-to-contact-list",
+      "destination": "/en/mobile/contact/copy-to-contact-list"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/create",
+      "destination": "/en/mobile/contact/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/contact/create",
+      "destination": "/en/mobile/contact/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/",
+      "destination": "/en/mobile/contact/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/contact/index",
+      "destination": "/en/mobile/contact/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/scan-business-card",
+      "destination": "/en/mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/de/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/da/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/no/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/sv/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/nl/mobile/superoffice-mobile/scan-business-card",
+      "destination": "/en/mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/contact/scan-business-card",
+      "destination": "/en/mobile/contact/scan-business-card"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/show-address-in-map",
+      "destination": "/en/mobile/contact/show-address-in-map"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/contact/show-address-in-map",
+      "destination": "/en/mobile/contact/show-address-in-map"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/company-contact/update",
+      "destination": "/en/mobile/contact/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/contact/update",
+      "destination": "/en/mobile/contact/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/dashboard/drill-down",
+      "destination": "/en/mobile/dashboard/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/dashboard/index",
+      "destination": "/en/mobile/dashboard/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/diary/create-appointment",
+      "destination": "/en/mobile/diary/create-appointment"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/diary/index",
+      "destination": "/en/mobile/diary/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/diary/invitations",
+      "destination": "/en/mobile/diary/invitations"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/diary/join-video-meeting",
+      "destination": "/en/mobile/diary/join-video-meeting"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/diary/update-appointment",
+      "destination": "/en/mobile/diary/update-appointment"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/document/create",
+      "destination": "/en/mobile/document/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/document/index",
+      "destination": "/en/mobile/document/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/document/update",
+      "destination": "/en/mobile/document/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/project/create",
+      "destination": "/en/mobile/project/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/project/index",
+      "destination": "/en/mobile/project/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/project/update",
+      "destination": "/en/mobile/project/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/request/create",
+      "destination": "/en/mobile/request/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/request/index",
+      "destination": "/en/mobile/request/index"
+    },
+    {
+      "source": "/de/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/request/respond"
+    },
+    {
+      "source": "/da/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/request/respond"
+    },
+    {
+      "source": "/no/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/request/respond"
+    },
+    {
+      "source": "/sv/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/request/respond"
+    },
+    {
+      "source": "/nl/mobile/superoffice-mobile/reply-to-request",
+      "destination": "/en/mobile/request/respond"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/request/respond",
+      "destination": "/en/mobile/request/respond"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/request/update",
+      "destination": "/en/mobile/request/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/sale/approve-quote",
+      "destination": "/en/mobile/sale/approve-quote"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/sale/create",
+      "destination": "/en/mobile/sale/create"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/sale/index",
+      "destination": "/en/mobile/sale/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/sale/update",
+      "destination": "/en/mobile/sale/update"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/caller-id",
+      "destination": "/en/mobile/caller-id"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/client-requirements",
+      "destination": "/en/mobile/client-requirements"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/customization",
+      "destination": "/en/mobile/customization"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/index",
+      "destination": "/en/mobile/index"
+    },
+    {
+      "source": "/en/mobile/overview",
+      "destination": "/en/mobile/index"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/interface-guide",
+      "destination": "/en/mobile/interface-guide"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/login",
+      "destination": "/en/mobile/login"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/manage-notifications",
+      "destination": "/en/mobile/manage-notifications"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/security",
+      "destination": "/en/mobile/security"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/send-email-sms",
+      "destination": "/en/mobile/send-email-sms"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/set-up-email",
+      "destination": "/en/mobile/set-up-email"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/settings",
+      "destination": "/en/mobile/settings"
     }
   ]
 }

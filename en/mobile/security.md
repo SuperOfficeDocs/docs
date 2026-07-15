@@ -23,7 +23,7 @@ SuperOffice Mobile CRM is written in C# using .NET MAUI and is available for iOS
 
 Mobile CRM client application is signed using various certificates from various vendors (Apple iOS Developer Certificate, Google Android Developer Certificate). A signed client application provides the end-user with a trust that the application is not altered in any way. It also provides a mechanism for giving trusted access to various features and APIs on the phone.
 
-Mobile CRM uses local caching to speed up data access – this data is stored locally in the phone, but not commonly accessible on the mobile phone's file memory/file system.
+Mobile CRM uses local caching to speed up data access - this data is stored locally in the phone, but not commonly accessible on the mobile phone's file memory/file system.
 
 ### Local storage
 
@@ -53,9 +53,9 @@ The Mobile CRM also has:
 
 * 2-way communication to SuperOffice Central Services (Microsoft Azure) for mobile services (currently used for business card scanner and push notifications functionality)
 
-* 1-way communication to Microsoft App Center: crash logs and diagnostics data (Mobile CRM -> MS App Center)
+* 1-way communication to Microsoft App Center: crash logs and diagnostics data (Mobile CRM -\> MS App Center)
 
-* 1-way communication from Google and Apple: Push notifications (-> Mobile CRM, not sending, only receiving)
+* 1-way communication from Google and Apple: Push notifications (-\> Mobile CRM, not sending, only receiving)
 
 If IdP is set up towards a user's user account, the user will be forwarded to the IdP service to validate the user.
 
@@ -148,18 +148,16 @@ Q: My Enterprise Security team will not allow any software on mobile clients tha
 
 A: Enable IdP for all users, and enable 2FA for the IdP provider. No option to support VPN to CRM Online.
 
-<!-- Referenced links -->
 [1]:https://www.apple.com/business/docs/iOS_Security_Guide.pdf
 [2]: https://source.android.com/security/encryption/full-disk
-[4]: ../api/authentication/online/index.md
+[4]: ../api/authentication/online/index
 [5]: https://www.superoffice.com/trust-center/cloud-security/
-[6]: ../online/identity/superid/user-accounts-and-passwords.md
-[7]: ../online/identity/superid/sign-in-services.md
-[8]: ../online/identity/superid/howto/federated-sign-in-guide.md
+[6]: ../online/identity/superid/user-accounts-and-passwords
+[7]: ../online/identity/superid/sign-in-services
+[8]: ../online/identity/superid/howto/federated-sign-in-guide
 [9]: https://tools.ietf.org/html/rfc5282
 [10]: https://online2.superoffice.com/Cust1990/CS/scripts/customer.fcgi?_sf=0&custSessionKey=&customerLang=en&noCookies=true&action=viewKbEntry&id=112935#2
 
-<!-- Referenced images -->
-[img1]: media/imagevq62n.png
+[img1]: /media/loc/en/mobile/imagevq62n.png
 [img2]: ../../media/loc/en/mobile/global-preferences-mobile.png
 [img3]: ../../media/loc/en/mobile/log-in.png
