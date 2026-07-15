@@ -26,7 +26,7 @@ Any application for SuperOffice CRM Online must indicate what it wants to achiev
 * The application must be based on SaaS principles for pricing and billing.
 * The application must be based on the Online Partner SDK.
   * We will not host any partner DLL assembly in the website's *bin* directory.
-* The application must be a [standard application][4] that fits the many rather than customized to just one company *if you want to list it in the App Store*.
+* The application must be a [standard application][4] that fits the many rather than customized to just one company *if you want to list it in the App Store*.
 
 ## Documentation
 
@@ -43,7 +43,7 @@ Proper product documentation will help the user help themselves.
 
 The installation guide should contain a troubleshooting section to help customers, administrators, and consultants handle common issues.
 
-Create screenshots, presentations, screencasts, or YouTube videos that we may link to from our App Store. During [provisioning][5], these may also be easily available for the administrator who sets up the solution.
+Create screenshots, presentations, screencasts, or YouTube videos that we may link to from our App Store. During [provisioning][5], these may also be easily available for the administrator who sets up the solution.
 
 ## Support
 
@@ -57,9 +57,8 @@ Customers can get help from someone who can fix the problem.
 
 We recommend using tracking software, for example, Customer Service, Trac, or Bugzilla, but it is not required.
 
-<!-- Referenced links -->
-[4]: ../index.md
-[1]: ../../getting-started/index.md
-[2]: ../../getting-started/app-envir.md
-[5]: ../../provisioning/index.md
+[4]: ../index
+[1]: ../../getting-started/index
+[2]: ../../getting-started/app-envir
+[5]: ../../provisioning/index
 [3]: https://www.superoffice.com/trust-center/agreements/dpa/

@@ -8,7 +8,7 @@ keywords: App Store
 content_type: howto
 deployment: online
 platform: web
---- 
+---
 
 # Publish standard app in CRM Online environment
 
@@ -22,7 +22,7 @@ Congratulations, your standard application is ready!
 **Process:**
 
 1. We will publish your application from stage to production environment and list it in the public App Store with beta status.
-2. A customer clicks the green button for **Sign up** on your application listing and get redirected to your sign up.
+2. A customer clicks the green button for **Sign up** on your application listing and get redirected to your sign up.
 3. The customer's administrator must sign in to SuperOffice and [give their consent][5] to allow your application to access their database tenant.
 4. After the beta period, your application will transition to full status if everything is OK.
 
@@ -42,7 +42,7 @@ During this time, we watch performance and customer behavior. Customers benefit 
 
 ### How long is the beta period?
 
-The standard application stays in beta until it meets the following conditions:
+The standard application stays in beta until it meets the following conditions:
 
 * At least 3 customers are running the application for 30 days with no major incidents, such as performance or other faults appearing, or
 * One customer is running the application for 60 days with no major incidents.
@@ -61,7 +61,6 @@ Customers running the application must be informed about the beta status.
 * Terms and conditions apply
 * The application is free of charge
 
-<!-- Referenced links -->
 [1]: certification/certify-app.md
 [2]: app-store/update-app-page.md
 [4]: requirements/index.md

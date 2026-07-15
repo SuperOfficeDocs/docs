@@ -36,7 +36,7 @@ The Tenant Manager provides a set of tools and features that help you effectivel
 
 * Begin by selecting an environment (SOD, Stage, Production) to view relevant tenant statistics.
 
-* **Tenant listing:** Click on a specific tenant to open the **Tenant listing** page, which provides a detailed view of the tenant’s information, including licenses, state, and more.
+* **Tenant listing:** Click on a specific tenant to open the **Tenant listing** page, which provides a detailed view of the tenant's information, including licenses, state, and more.
 
 * **Tenant details:** To access more granular details, select a tenant from the Insights page. Depending on your access rights, you can request authorizations, consultant access, or order a production sandbox.
 
@@ -56,13 +56,11 @@ The **partner page** provides an overview of how many tenants that have authoriz
 
 4. Optional, switch environments to explore further.
 
-<!-- Referenced links -->
-[1]: info.md
-[2]: info.md#license
-[3]: info.md#state
-[4]: authorization.md
-[5]: get.md
-[9]: ../getting-started/app-envir.md
+[1]: ./info
+[2]: ./info#license
+[3]: ./info#state
+[4]: ./authorization
+[5]: ./get
+[9]: ../getting-started/app-envir
 
-<!-- Referenced images -->
-[img1]: media/tenants.png
+[img1]: /media/loc/en/developer-portal/tenants.png

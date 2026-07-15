@@ -16885,6 +16885,42 @@
     {
       "source": "/en/online/version-history",
       "destination": "https://community.superoffice.com/en/product-releases/release-notes/"
+    },
+    {
+      "source": "/en/ui/design/index",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/error-removal",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/info-hinting",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/readiness-to-hand",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/reading-list",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/ui/design/whitespace",
+      "destination": "/en/developer-portal/best-practices/index"
+    },
+    {
+      "source": "/en/security/manage-permissions",
+      "destination": "/en/developer-portal/partner/manage-permissions"
+    },
+    {
+      "source": "/en/developer-portal/standard-app/certification/initial-watchcom-eval",
+      "destination": "/en/developer-portal/standard-app/certification/initial-security-eval"
+    },
+    {
+      "source": "/en/developer-portal/analytics/customers",
+      "destination": "/en/developer-portal/tenants/index"
     }
   ]
 }

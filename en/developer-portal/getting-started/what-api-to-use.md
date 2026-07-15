@@ -97,7 +97,7 @@ Therefore the results of an interactive authentication for a normal user are ver
 
 Once authenticated, the interactive user is redirected to the applications `redirect_url` and the application can provision anything necessary for that user, and/or redirect the user back to SuperOffice.
 
-It’s not uncommon for users to interactively sign in to an app when it is exposed in SuperOffice through a web panel. In that case, and when using OAuth 2.0, include the `<uctx>` template variable in the web panel URL to get the customer's context identifier and include that in the endpoint.
+It's not uncommon for users to interactively sign in to an app when it is exposed in SuperOffice through a web panel. In that case, and when using OAuth 2.0, include the `<uctx>` template variable in the web panel URL to get the customer's context identifier and include that in the endpoint.
 
 `https://sod.superoffice.com/login/{contextIdentifier}/oauth/authorize?...`
 
@@ -113,19 +113,18 @@ This will ensure the web panel application provides the user with a seamless SSO
 
 Most people who chose to use OpenID Connect, use one of the available OpenID Connect [frameworks provided][9] depending on their technology stack.
 
-While nearly impossible to cover homegrown solutions, SuperOffice has successfully tested OpenID Connect friendly frameworks; including [Microsoft ASPNET authentication services][10], as well as Identity Server’s [oidc-client][11]. In fact, the SuperOffice Online [Angular example][12] uses the `oidc-client-js` npm package.
+While nearly impossible to cover homegrown solutions, SuperOffice has successfully tested OpenID Connect friendly frameworks; including [Microsoft ASPNET authentication services][10], as well as Identity Server's [oidc-client][11]. In fact, the SuperOffice Online [Angular example][12] uses the `oidc-client-js` npm package.
 
 SuperOffice supports interactive [OpenID Connect workflows][6], such as Authorization Code, Implicit, and Hybrid Flow, but there is no support for non-interactive OAuth2 workflows; such as Client Credentials.
 
-SuperOffice does, however, issue refresh tokens, and in that way does support a non-interactive flow once the user has interactively signed in. Since it does require the user to first interactively authenticate to receive a refresh token, we refer to this as **Semi-Interactive**. From that point on, each users’ refresh token can be securely stored and used toward the **tokens** endpoint to obtain an access token, which is then used as a credential to perform API calls on behalf of a particular user.
+SuperOffice does, however, issue refresh tokens, and in that way does support a non-interactive flow once the user has interactively signed in. Since it does require the user to first interactively authenticate to receive a refresh token, we refer to this as **Semi-Interactive**. From that point on, each users' refresh token can be securely stored and used toward the **tokens** endpoint to obtain an access token, which is then used as a credential to perform API calls on behalf of a particular user.
 
 [Read more about user context][13]
 
-<!-- Referenced links -->
-[13]: user-contexts.md
-[2]: ../../api/reference/restful/rest/index.md
-[3]: ../../api/reference/soap/index.md
-[6]: ../../api/authentication/online/index.md
+[13]: ./user-contexts
+[2]: ../../api/reference/restful/rest/index
+[3]: ../../api/reference/soap/index
+[6]: ../../api/authentication/online/index
 
 [1]: https://stackoverflow.com/questions/19884295/soap-vs-rest-differences
 [4]: https://www.nuget.org/packages/SuperOffice.NetServer.Services/
@@ -139,5 +138,4 @@ SuperOffice does, however, issue refresh tokens, and in that way does support a 
 [9]: http://openid.net/developers/certified/
 [10]: https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/?view=aspnetcore-2.1
 
-<!-- Referenced images -->
-[img1]: media/onlineauthentication.png
+[img1]: /media/loc/en/developer-portal/onlineauthentication.png

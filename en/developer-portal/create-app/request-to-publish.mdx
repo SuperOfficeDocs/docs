@@ -1,0 +1,91 @@
+---
+title: Request to publish
+uid: dp-request-publish
+description: How to request to publish App Store Information and application configuration the SuperOffice Developer Portal.
+keywords: Developer Portal, publish
+author: Bergfrid Dias
+date: 02.26.2025
+version: 2.0
+version_devportal: 2.0
+content_type: howto
+deployment: online
+platform: web
+---
+
+import ReadyToPublish from "./includes/ready-to-publish.md";
+import WhatToPublish from "./includes/what-to-publish.md";
+
+# Request to publish
+
+<ReadyToPublish />
+
+![Request to publish in the Development Portal -screenshot][img1]
+
+<WhatToPublish />
+
+In all three cases, after you click the **Request to Publish** button we create a support ticket and follow up with you via email. The workflow is different for standard and custom applications.
+
+<Tip>
+If you don't see the version you want to publish, click **More versions**.
+
+Confused about versions? [Check out our in-depth guide.][1]
+</Tip>
+
+<Frame caption="Watch the walk-through">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube-nocookie.com/embed/kqEpAw7qQEY"
+    title="Watch the walk-through"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+## Application - Configuration
+
+1. In the [Developer Portal][9], go to your application page.
+2. Select **Configuration** from the left menu.
+3. Click the **Request to Publish** button.
+4. The version is now listed as pending. Look for the support email from us. The configuration cannot be used in the requested environment before it is approved.
+
+Need to update something?
+
+* [Client secret][4]
+* [Certificate (RSA private key)][5]
+* [CORS and redirection URLs][6]
+* [Notifications][7]
+* [Mirroring, ERP sync, or quote endpoints][8]
+* For any other values, contact the App Manager via our chat.
+
+## Application - App Store information
+
+1. In the Developer Portal, go to your application page.
+2. Select **App Store information** from the left menu.
+3. Click the **Request to Publish** button.
+4. The version is now listed as pending. Look for the support email from us.
+
+Need to update something? [Follow these steps][3].
+
+## Partner - App Store information
+
+1. In the Developer Portal, go to your partner page.
+2. Select **App Store information** from the left menu.
+3. Click the **Request to Publish** button.
+4. The version is now listed as pending. Look for the support email from us.
+
+Need to update something? [Follow these steps][2].
+
+[1]: ./versioning
+[2]: ../standard-app/app-store/update-partner-profile
+[3]: ../standard-app/app-store/update-app-page
+[4]: ./config/get-client-secret
+[5]: ./config/new-certificate
+[6]: ./config/cors-and-redirection-urls
+[8]: ./config/update-endpoints
+[9]: https://dev.superoffice.com/
+[7]: ../best-practices/tenant-status/get-notifications
+
+[img1]: ../media/request-to-publish.png

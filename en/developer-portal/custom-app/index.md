@@ -30,7 +30,7 @@ Custom applications require a subscription to [Development Tools][7] (formerly E
 * Add extra tables to customize Service
 * Create custom screens to fit your specific processes
 * Create tailored workflows and automation with CRMScript
-* Create custom integrations that link your SuperOffice CRM Online solution with another system
+* Create custom integrations that link your SuperOffice CRM Online solution with another system
   * Either a **new** integration to a solution you currently use and that is specific to you.
   * Or, a **customized version** of a standard application available in the App Store.
 
@@ -44,7 +44,7 @@ When it is time to develop your application idea, you have 3 options:
 
 ## <a id="validate"></a>About our validation process for custom apps
 
-Unlike standard applications, custom applications don't have to go through certification and Telenor Cyberdefense security testing. Instead, we do light-weight testing called **validation**.
+Unlike standard applications, custom applications don't have to go through certification and Telenor Cyberdefense security testing. Instead, we do light-weight testing called **validation**.
 
 We run the validation tests in [SOD][4] before we deploy your application to a production environment. These tests are **free of charge**.
 
@@ -62,10 +62,9 @@ We are checking logs in Application Insight and our Operation Center.
 
 Follow our [step-by-step guide][5], started by sending a request to publish in the Developer Portal.
 
-<!-- Referenced links -->
-[2]: ../standard-app/index.md
-[1]: ../standard-app/requirements/index.md
-[3]: ../getting-started/index.md#tenant
-[4]: ../getting-started/app-envir.md
-[5]: validate.md
-[7]: ../../admin/license/expander-services.md
+[2]: ../standard-app/index
+[1]: ../standard-app/requirements/index
+[3]: ../getting-started/index#tenant
+[4]: ../getting-started/app-envir
+[5]: ./validate
+[7]: ../../admin/license/expander-services

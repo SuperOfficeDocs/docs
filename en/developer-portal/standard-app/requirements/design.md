@@ -30,5 +30,4 @@ Check out our [best practices][1].
 
 GUI elements that don't have a SuperOffice CRM graphical look are permitted as long as the host application is visible outside SuperOffice CRM Online.
 
-<!-- Referenced links -->
-[1]: ../../best-practices/index.md
+[1]: ../../best-practices/index

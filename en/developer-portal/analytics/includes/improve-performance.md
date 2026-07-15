@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 Leverage our [best practices for online app development][2] to both boost your application's performance and reduce its API usage. Both [caching][3] and [search][4] have a huge impact.
 
 Additional columns from SuperOffice version 10.5.1
@@ -15,8 +14,7 @@ Additional columns from SuperOffice version 10.5.1
 | itemCount | Number of similar API calls made in the past 24 hours. Can be used to identify high-traffic endpoints and optimize caching or batching strategies. |
 | url | The full URL of the API request. Useful for debugging and reproducing queries. |
 
-<!-- Referenced links -->
-[2]: ../../best-practices/index.md
-[3]: ../../best-practices/index.md#caching
-[4]: ../../best-practices/index.md#searching
-[5]: ../../../api/netserver/archive-providers/reference/index.md
+[2]: ../../best-practices/index
+[3]: ../../best-practices/index#caching
+[4]: ../../best-practices/index#searching
+[5]: ../../../api/netserver/archive-providers/reference/index

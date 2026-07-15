@@ -19,11 +19,9 @@ deployment: online
 1. [How to run website on IIS localhost.][5]
 1. [How to unable to approve app.][6]
 
-<!-- link reference -->
-
-[1]: format-text.md
-[2]: update-contact-person.md
-[3]: update-app.md
-[4]: turn-off-mirroring.md
-[5]: run-website-on-iis-localhost.md
-[6]: unable-to-approve-app.md
+[1]: ./format-text
+[2]: ./update-contact-person
+[3]: ./update-app
+[4]: ./turn-off-mirroring
+[5]: ./run-website-on-iis-localhost
+[6]: ./unable-to-approve-app
