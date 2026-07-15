@@ -8,7 +8,6 @@ keywords: ede, dbi
 content_type: tutorial
 ---
 
-
 # Creating a custom Data Exchange agent
 
 This tutorial will demonstrate how to create your own custom [data exchange agent][1].
@@ -52,7 +51,46 @@ The parameters will contain some default parameters we always add, as well as an
 
 A very simple platform that can be used to create an agent is ASP.NET. By writing a simple ASPX page and placing it under an IIS Application folder, we have essentially created a web service. Here is the example code for such an agent:
 
-[!code-html[HTML](includes/myagent.aspx)]
+```html HTML
+<%@ Page Language="C#" AutoEventWireup="true" Debug="true"%>
+<% Response.ContentType = "text/xml"; %>
+<%
+// INPUT: Read parameters we receive from Expander Data Exchange
+if (Request.ContentLength > 0)
+{
+  byte[] buffer = new byte[Request.ContentLength];
+  Request.InputStream.Read(buffer, 0, Request.ContentLength);
+  System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
+  doc.InnerXml = System.Text.Encoding.ASCII.GetString(buffer);
+  System.Xml.XmlNode parameters = doc.DocumentElement.ChildNodes[0];
+  foreach (System.Xml.XmlElement parameter in parameters.ChildNodes)
+  {
+    String name = parameter.GetAttribute("name");
+    String value = parameter.InnerText;
+
+    // Get parameters here, e.g. if (name == "sql")
+  }
+}
+// OUTPUT: Send output back to Expander Data Exchange
+Response.Write("<?xml version='1.0' encoding='ISO-8859-1'?>");
+Response.Write("<response version=\"1.1\">\r\n");
+Response.Write("  <parameters>\r\n");
+Response.Write("  </parameters>\r\n");
+Response.Write("  <object>\r\n");
+Response.Write("    <string name=\"column.size\">3</string>\r\n");
+Response.Write("    <string name=\"column.0\">1</string>\r\n");
+Response.Write("    <string name=\"column.1\">SuperHjelms Incorporated</string>\r\n");
+Response.Write("    <string name=\"column.2\">+47 90 99 41 48</string>\r\n");
+Response.Write("  </object>\r\n");
+Response.Write("  <object>\r\n");
+Response.Write("    <string name=\"column.size\">3</string>\r\n");
+Response.Write("    <string name=\"column.0\">2</string>\r\n");
+Response.Write("    <string name=\"column.1\">ACME Software</string>\r\n");
+Response.Write("    <string name=\"column.2\">+1 555 428-1234</string>\r\n");
+Response.Write("  </object>\r\n");
+Response.Write("</response>\r\n");
+%>
+```
 
 As you can see, this agent will return 2 companies, each with a primary key, name, and phone number. By placing this code in the file *myagent.aspx* and placing it in an IIS folder with script execution rights, you should be able to access it with a regular browser:
 
@@ -122,12 +160,10 @@ Your output should (hopefully) look something like this:
 
 ![05 -screenshot][img5]
 
-<!-- Referenced links -->
-[1]: ../../index.md
+[1]: ../../index
 
-<!-- Referenced images -->
-[img1]: media/image001.jpg
-[img2]: media/image002.jpg
-[img3]: media/image003.jpg
-[img4]: media/image004.jpg
-[img5]: media/image005.jpg
+[img1]: /media/loc/en/service/image001.jpg
+[img2]: /media/loc/en/service/image002.jpg
+[img3]: /media/loc/en/service/image003.jpg
+[img4]: /media/loc/en/service/image004.jpg
+[img5]: /media/loc/en/service/image005.jpg

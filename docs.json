@@ -18061,6 +18061,10 @@
     {
       "source": "/en/search-options/selection/learn/howto/mass-delete",
       "destination": "/en/security/privacy/learn/mass-delete"
+    },
+    {
+      "source": "/en/service/config/set-up-facebook-integration",
+      "destination": "https://community.superoffice.com/en/technical/forums/api-forums/service-crmscript/our-facebook-integration-and-cambridge-analytica/"
     }
   ]
 }
