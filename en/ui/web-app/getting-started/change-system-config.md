@@ -79,7 +79,7 @@ Currents are set using a SoProtocol:
 
 ## ObjectMapping
 
-The *ObjectMapping.config* file maps the type used in page configuration files to actual object types defined in assemblies. It is also possible to use merge files to extend or replace object definitions in the ObjectMapping configuration.
+The *ObjectMapping.config* file maps the type used in page configuration files to actual object types defined in assemblies. It is also possible to use merge files to extend or replace object definitions in the ObjectMapping configuration.
 
 **A typical entry:**
 

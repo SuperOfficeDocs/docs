@@ -15001,6 +15001,26 @@
     {
       "source": "/release-notes/8.5/pocket-crm/*",
       "destination": "/release-notes/pocket-crm/*"
+    },
+    {
+      "source": "/en/ui/blogic/tutorials/index",
+      "destination": "/en/ui/blogic/tutorials/custom-db-and-ui"
+    },
+    {
+      "source": "/en/ui/web-app/pagebuilder/config/howto/index",
+      "destination": "/en/ui/web-app/pagebuilder/config/howto/add-custom-control"
+    },
+    {
+      "source": "/en/ui/web-app/pagebuilder/usercontrols/solabel/index",
+      "destination": "/en/ui/web-app/pagebuilder/usercontrols/solabel/add-label"
+    },
+    {
+      "source": "/en/ui/web-app/pagebuilder/usercontrols/solistbox/index",
+      "destination": "/en/ui/web-app/pagebuilder/usercontrols/solistbox/data-binding"
+    },
+    {
+      "source": "/en/ui/web-app/pagebuilder/usercontrols/sotextbox/index",
+      "destination": "/en/ui/web-app/pagebuilder/usercontrols/sotextbox/add-textbox-to-navigator"
     }
   ]
 }

@@ -38,14 +38,13 @@ When creating your own controls and assemblies to be used by the application, yo
 
 [Learn more][9]
 
-<!-- Referenced links -->
 [1]: https://www.nuget.org/packages/SuperOffice.Crm.Web/
 [2]: https://www.nuget.org/packages/SuperOffice.NetServer.Services/
 [3]: https://www.nuget.org/packages/SuperOffice.NetServer.Core/
-[4]: pagebuilder/index.md
-[5]: pagebuilder/config/index.md
-[6]: custom-ajax-methods.md
-[7]: strategic-goals.md
-[8]: technical-info.md
-[9]: getting-started/index.md
-[10]: ../../api/config/index.md
+[4]: ./pagebuilder/index
+[5]: ./pagebuilder/config/index
+[6]: ./custom-ajax-methods
+[7]: ./strategic-goals
+[8]: ./technical-info
+[9]: ./getting-started/index
+[10]: ../../api/config/index

@@ -24,8 +24,5 @@ The PageBuilder framework uses a slightly different form of data-binding since i
 
 The data binding is handled by the PageBuilder [data handler][2], which binds all the controls that implement the `IDataBound` interface in the card.
 
-<!-- Referenced links -->
 [1]: http://www.startvbdotnet.com/aspsite/ado/databinding.aspx
-[2]: datahandlers/index.md
-
-<!-- Referenced images -->
+[2]: ./datahandlers/index

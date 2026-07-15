@@ -32,5 +32,4 @@ This is a **group element**. It defines the beginning of a group of elements and
 
 Padding was introduced in v. 8.0.
 
-<!-- Referenced links -->
-[1]: pane.md
+[1]: ./pane

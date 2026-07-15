@@ -16,7 +16,7 @@ deployment: onsite
 
 As with other SuperOffice pages, if we need to update a particular archive, we must update the panel, card, or view the particular archive is contained in. For example, if we need to modify the Person Archive, we are required to change the *SoCantactPanel.config* page.
 
-**Archives** are tables of rows and columns that contain de-normalized and processed data relating to Persons, Activities, and many more. SuperOffice uses archive services and archive providers in NetServer to retrieve search results, multi-column archive lists, selection members’ lists, and so on. Custom provider plugins that have been added to NetServer show up automatically in the archive control.
+**Archives** are tables of rows and columns that contain de-normalized and processed data relating to Persons, Activities, and many more. SuperOffice uses archive services and archive providers in NetServer to retrieve search results, multi-column archive lists, selection members' lists, and so on. Custom provider plugins that have been added to NetServer show up automatically in the archive control.
 
 ## Archive services vs. archive providers
 
@@ -28,7 +28,70 @@ As with other SuperOffice pages, if we need to update a particular archive, we m
 
 The following code segment explains the standard structure of an `archive` setting in the config file.
 
-[!code-xml[XML](includes/archive-settings.xml)]
+```xml XML
+<?xml version="1.0" encoding="utf-8"?>
+<panel id="Contact" type="SplitterPanel" soprotocol="Contact" paneltype="Main" placeholderid="MainPlaceHolder">
+  <caption>[SR_COMMON_CONTACT]: [current:contact_name]</caption>
+  <cards>
+    <!--Some other Code -->
+    <!--Code relating to the Archive Card Begins here -->
+    <card id="ContactArchives" placeholderid="bottom" type="SoTabbedCard" cardtype="ArchiveCard">
+      <views>
+        <!--Begining of the ContactPersonArchiveView -->
+        <view id="ContactPersonArchiveView" type="SoView" soprotocol="personarchive" >
+          <caption>[SR_PL_PERSONS]</caption>
+          <tooltip></tooltip>
+          <controlgroups>
+            <controlgroup id="mainpersongroup" type="SoControlGroup" position="absolute" left="0px" right="0px" top="0px" bottom="0px">
+              <controls>
+                <control id="ContactPersonArchive" type="SoArchiveControl" width="100%" top="0px" left="0px" height="100%" position="absolute" >
+                  <menu>
+                    <context>archive</context>
+                    <subcontext>header</subcontext>
+                    <id binding="none">0</id>
+                    <position>belowcursor</position>
+                    <click>right</click>
+                  </menu>
+                  <config>
+                    <restriction-mappings>
+                      <restriction-mapping source="person_id" target="personId"/>"
+                    </restriction-mappings>
+                    <toolbar>
+                      <button <!--Code relating to the Button -->/>
+                      <button <!--Code relating to the Button -->/>
+                    </toolbar>
+                    <restrictions>
+                      <restriction name="contactId" operator="=" binding="current">contact</restriction>
+                    </restrictions>
+                    <!--Calling the Provider -->
+                    <providername>person</providername>
+                    <archivecolumninfo-datasourcename>ArchiveColumnConfigDataHandler.ContactPersonArchive</archivecolumninfo-datasourcename>
+                    <showheader>true</showheader>
+                    <showtoolbar>true</showtoolbar>
+                    <defaultsort>rank</defaultsort>
+                    <current>person</current>
+                    <linkhint-prefix>personarchive:</linkhint-prefix>
+                    <dblclick-action>javascript:Dialog.open('Person','person[dialog=stop].main[mode=edit;new=true]?person_id=0','ContactPersonArchiveArchiveControl.RefreshList()');</dblclick-action>
+                  </config>
+                </control>
+              </controls>
+            </controlgroup>
+          </controlgroups>
+          <triggers>
+            <trigger type="current">contact</trigger>
+            <trigger type="current">person</trigger>
+          </triggers>
+        </view>
+        <!--End of the ContactPersonArchiveView -->
+        <!--Some other Archive Views -->
+      </views>
+      <!--Some other Code -->
+    </card>
+    <!--Code relating to the Archive Card Ends here -->
+  </cards>
+  <!--Some other Code -->
+</panel>
+```
 
 When going through the above code, we can identify some of the main keywords relating to the archive controls.
 
@@ -36,11 +99,137 @@ When going through the above code, we can identify some of the main keywords rel
 
 Below, `type="SoArchiveControl"` indicates that it is an archive control.
 
-[!code-xml[XML](includes/archive-settings.xml?range=16)]
+```xml XML
+<?xml version="1.0" encoding="utf-8"?>
+<panel id="Contact" type="SplitterPanel" soprotocol="Contact" paneltype="Main" placeholderid="MainPlaceHolder">
+  <caption>[SR_COMMON_CONTACT]: [current:contact_name]</caption>
+  <cards>
+    <!--Some other Code -->
+    <!--Code relating to the Archive Card Begins here -->
+    <card id="ContactArchives" placeholderid="bottom" type="SoTabbedCard" cardtype="ArchiveCard">
+      <views>
+        <!--Begining of the ContactPersonArchiveView -->
+        <view id="ContactPersonArchiveView" type="SoView" soprotocol="personarchive" >
+          <caption>[SR_PL_PERSONS]</caption>
+          <tooltip></tooltip>
+          <controlgroups>
+            <controlgroup id="mainpersongroup" type="SoControlGroup" position="absolute" left="0px" right="0px" top="0px" bottom="0px">
+              <controls>
+                <control id="ContactPersonArchive" type="SoArchiveControl" width="100%" top="0px" left="0px" height="100%" position="absolute" >
+                  <menu>
+                    <context>archive</context>
+                    <subcontext>header</subcontext>
+                    <id binding="none">0</id>
+                    <position>belowcursor</position>
+                    <click>right</click>
+                  </menu>
+                  <config>
+                    <restriction-mappings>
+                      <restriction-mapping source="person_id" target="personId"/>"
+                    </restriction-mappings>
+                    <toolbar>
+                      <button <!--Code relating to the Button -->/>
+                      <button <!--Code relating to the Button -->/>
+                    </toolbar>
+                    <restrictions>
+                      <restriction name="contactId" operator="=" binding="current">contact</restriction>
+                    </restrictions>
+                    <!--Calling the Provider -->
+                    <providername>person</providername>
+                    <archivecolumninfo-datasourcename>ArchiveColumnConfigDataHandler.ContactPersonArchive</archivecolumninfo-datasourcename>
+                    <showheader>true</showheader>
+                    <showtoolbar>true</showtoolbar>
+                    <defaultsort>rank</defaultsort>
+                    <current>person</current>
+                    <linkhint-prefix>personarchive:</linkhint-prefix>
+                    <dblclick-action>javascript:Dialog.open('Person','person[dialog=stop].main[mode=edit;new=true]?person_id=0','ContactPersonArchiveArchiveControl.RefreshList()');</dblclick-action>
+                  </config>
+                </control>
+              </controls>
+            </controlgroup>
+          </controlgroups>
+          <triggers>
+            <trigger type="current">contact</trigger>
+            <trigger type="current">person</trigger>
+          </triggers>
+        </view>
+        <!--End of the ContactPersonArchiveView -->
+        <!--Some other Archive Views -->
+      </views>
+      <!--Some other Code -->
+    </card>
+    <!--Code relating to the Archive Card Ends here -->
+  </cards>
+  <!--Some other Code -->
+</panel>
+```
 
 ### Provider name
 
-[!code-xml[XML](includes/archive-settings.xml?range=36)]
+```xml XML
+<?xml version="1.0" encoding="utf-8"?>
+<panel id="Contact" type="SplitterPanel" soprotocol="Contact" paneltype="Main" placeholderid="MainPlaceHolder">
+  <caption>[SR_COMMON_CONTACT]: [current:contact_name]</caption>
+  <cards>
+    <!--Some other Code -->
+    <!--Code relating to the Archive Card Begins here -->
+    <card id="ContactArchives" placeholderid="bottom" type="SoTabbedCard" cardtype="ArchiveCard">
+      <views>
+        <!--Begining of the ContactPersonArchiveView -->
+        <view id="ContactPersonArchiveView" type="SoView" soprotocol="personarchive" >
+          <caption>[SR_PL_PERSONS]</caption>
+          <tooltip></tooltip>
+          <controlgroups>
+            <controlgroup id="mainpersongroup" type="SoControlGroup" position="absolute" left="0px" right="0px" top="0px" bottom="0px">
+              <controls>
+                <control id="ContactPersonArchive" type="SoArchiveControl" width="100%" top="0px" left="0px" height="100%" position="absolute" >
+                  <menu>
+                    <context>archive</context>
+                    <subcontext>header</subcontext>
+                    <id binding="none">0</id>
+                    <position>belowcursor</position>
+                    <click>right</click>
+                  </menu>
+                  <config>
+                    <restriction-mappings>
+                      <restriction-mapping source="person_id" target="personId"/>"
+                    </restriction-mappings>
+                    <toolbar>
+                      <button <!--Code relating to the Button -->/>
+                      <button <!--Code relating to the Button -->/>
+                    </toolbar>
+                    <restrictions>
+                      <restriction name="contactId" operator="=" binding="current">contact</restriction>
+                    </restrictions>
+                    <!--Calling the Provider -->
+                    <providername>person</providername>
+                    <archivecolumninfo-datasourcename>ArchiveColumnConfigDataHandler.ContactPersonArchive</archivecolumninfo-datasourcename>
+                    <showheader>true</showheader>
+                    <showtoolbar>true</showtoolbar>
+                    <defaultsort>rank</defaultsort>
+                    <current>person</current>
+                    <linkhint-prefix>personarchive:</linkhint-prefix>
+                    <dblclick-action>javascript:Dialog.open('Person','person[dialog=stop].main[mode=edit;new=true]?person_id=0','ContactPersonArchiveArchiveControl.RefreshList()');</dblclick-action>
+                  </config>
+                </control>
+              </controls>
+            </controlgroup>
+          </controlgroups>
+          <triggers>
+            <trigger type="current">contact</trigger>
+            <trigger type="current">person</trigger>
+          </triggers>
+        </view>
+        <!--End of the ContactPersonArchiveView -->
+        <!--Some other Archive Views -->
+      </views>
+      <!--Some other Code -->
+    </card>
+    <!--Code relating to the Archive Card Ends here -->
+  </cards>
+  <!--Some other Code -->
+</panel>
+```
 
 The above line indicates from where the archive data has been retrieved (the name of the provider used).
 
@@ -50,7 +239,13 @@ An `archivecolumninfo-datasourcename` element tells us about the [data handler][
 
 Elements such as `showheader`, `showtoolbar`, and `default sort` are related to how the retrieved output should be displayed.
 
-[!code-xml[XML](includes/archive-settings.xml?range=37-41)]
+```xml XML
+                    <archivecolumninfo-datasourcename>ArchiveColumnConfigDataHandler.ContactPersonArchive</archivecolumninfo-datasourcename>
+                    <showheader>true</showheader>
+                    <showtoolbar>true</showtoolbar>
+                    <defaultsort>rank</defaultsort>
+                    <current>person</current>
+```
 
 The above code is related to the following area of the SuperOffice.
 
@@ -62,11 +257,9 @@ The above code is related to the following area of the SuperOffice.
 * [How to add a button to the archive footer][3]
 * [Create a custom archive control][4] (tutorial)
 
-<!-- Referenced links -->
-[1]: ../../datahandlers/index.md
-[2]: change-default-columns.md
-[3]: add-button-to-footer.md
-[4]: ../../../tutorials/custom-archive-control/index.md
+[1]: ../../datahandlers/index
+[2]: ./change-default-columns
+[3]: ./add-button-to-footer
+[4]: ../../../tutorials/custom-archive-control/index
 
-<!-- Referenced images -->
-[img1]: media/image001.jpg
+[img1]: /media/loc/en/ui/image001-8.jpg

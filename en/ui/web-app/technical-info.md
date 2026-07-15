@@ -18,6 +18,5 @@ SuperOffice can be configured to run everything on the web server. This requires
 
 Please read about [Server][1] and [Web client][2] system requirements for SuperOffice Web.
 
-<!-- Referenced links -->
-[1]: ../../onsite/requirements/iis.md
-[2]: ../../onsite/requirements/web-client.md
+[1]: ../../onsite/requirements/iis
+[2]: ../../onsite/requirements/web-client

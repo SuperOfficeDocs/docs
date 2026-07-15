@@ -20,5 +20,4 @@ A pane must be placed directly inside [`Panes`][1].
 |:--------|:---------------------|
 | title   | The title of the tab |
 
-<!-- Referenced links -->
-[1]: panes.md
+[1]: ./panes

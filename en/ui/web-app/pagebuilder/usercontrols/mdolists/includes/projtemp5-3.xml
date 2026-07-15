@@ -1,8 +1,0 @@
-<control id="projtemp5_3" type="SoMDOControl" column="2" row="4" width="120px">
-  <caption></caption>
-  <datasource>FindDataHandler.associateId.Operator</datasource>
-  <config>
-    <list-datasource>OperatorListDataHandler.staticlistany</list-datasource>
-    <propertykey>Type</propertykey>
-  </config>
-</control>

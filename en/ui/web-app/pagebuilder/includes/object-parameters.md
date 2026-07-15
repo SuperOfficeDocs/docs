@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Parameter | Description |
 |--|---|
 | type | the type of the object |

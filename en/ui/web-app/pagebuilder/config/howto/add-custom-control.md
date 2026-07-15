@@ -15,16 +15,13 @@ redirect_from: /en/ui/web-app/pagebuilder/config/howto/index
 
 **Custom controls** are controls that have been made using tools provided by Visual Studio, such as SoTextBox, SoLable, SoCheckBox, and SoRadioButton.
 
-In this example, we will make changes to the **Contact** main in a way that it displays the contact’s **Interests** information as well. To do this, we must modify the *SoMainviewView.config* file since the *SoContactPanel.config* file calls it to display the **Contact** view. The reason for using a separate config file for the Contact view is that the view is used in multiple places and this reduces the number of redundant code.
+In this example, we will make changes to the **Contact** main in a way that it displays the contact's **Interests** information as well. To do this, we must modify the *SoMainviewView.config* file since the *SoContactPanel.config* file calls it to display the **Contact** view. The reason for using a separate config file for the Contact view is that the view is used in multiple places and this reduces the number of redundant code.
 
 ```XML
 <view id="MainView" type="SoView" soprotocol="main" current="contact">
   <caption>[SR_COMMON_CONTACT]</caption>
   <tooltip>The main one</tooltip>
   <controlgroups>
-    <!--Some other Code -->
-    <!--Our Code Begins here -->
-    <!--First controlgroup -->
     <controlgroup id="newInterestHeadergroup" type="SoControlGroup" position="absolute" top="205px" left="5px" right="20px">
       <controls>
         <control id="newContactInterestHeaderControl" type="ContactHeader">
@@ -34,7 +31,6 @@ In this example, we will make changes to the **Contact** main in a way that it d
         </control>
       </controls>
     </controlgroup>
-    <!--Seconds controlgroup -->
     <controlgroup id="newMaininterestgroup" type="SoControlGroup" position="absolute" top="229px" left="5px" right="20px">
       <controls>
         <control id="newContactInterestCommonHead" type="ContactCommonHeaderView">
@@ -43,8 +39,6 @@ In this example, we will make changes to the **Contact** main in a way that it d
        </controls>
     </controlgroup>>
   </controlgroups>
-  <!--Our Code Ends here -->
-  <!--Some other Code -->
 </view>
 ```
 
@@ -56,7 +50,4 @@ The second control group determines where the interest data should be shown on t
 
 ![04][img1]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image004.jpg
+[img1]: /media/loc/en/ui/image004-6.jpg

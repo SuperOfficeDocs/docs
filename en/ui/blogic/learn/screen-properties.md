@@ -29,5 +29,4 @@ Here you can edit the properties of a screen. You can create a script to precalc
 * **Load script (run after everything else)**: This script is run at the end, after code and scripts for any buttons have been run.
 * **Hidden variables**: The variables defined here are saved when the screen is submitted, so the next screen has access to them.
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/create.md
+[1]: ../../../request/learn/create

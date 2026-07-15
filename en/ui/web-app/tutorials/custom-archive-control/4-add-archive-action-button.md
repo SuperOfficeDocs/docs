@@ -50,7 +50,6 @@ The following example is an excerpt of the `ConactPersonArchive` control. It dem
         onrowselect="DisableOnEmpty"
         linkhint="nav=deletePerson"/>
     </toolbar>
-    <!-- Remaining config items removed for brevity-->
     ...
   </config>
 </control>
@@ -67,7 +66,4 @@ The delete button is more discrete and uses the `linkhint` attribute to specify 
 </linkinfo>
 ```
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/web-archive-control-action-buttons.png
+[img1]: /media/loc/en/ui/web-archive-control-action-buttons.png

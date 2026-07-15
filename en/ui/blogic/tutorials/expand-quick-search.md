@@ -36,7 +36,7 @@ if(s.find("sport:") >= 0) {
 
 While searching for people who have football as their favorite sport might not be something everyone is craving to have as a new search functionality, I'll quickly explain how to edit a couple of the parts to make it work with something else:
 
-**"**if(s.find("**sport:**") >=0) {"
+**"**if(s.find("**sport:**") >=0) \{"
 
 The bold text defines the search keyword and can be replaced by anything as long as it doesn't interfere with any of the other search keywords, but alone this doesn't define what you will be searching for, other than implying it.
 
@@ -56,5 +56,4 @@ This would result in a search for the parameter provided on the Norwegian Yellow
 
 As long as you know the query string for a website you can use this functionality towards pretty much any page.
 
-<!-- Referenced images -->
-[img1]: media/5438-8684.jpg
+[img1]: /media/loc/en/ui/5438-8684.jpg

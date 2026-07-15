@@ -52,7 +52,7 @@ All config variables are available using `getVariable()`.
 |:----------------------------|:---------|:-----------------------------------------------------|
 | element_getJsIncludes       | String[] | Adds a list of JavaScript include files for the page |
 | element_getCssIncludes      | String[] | Adds a list of CSS include files for the page        |
-| element_getSetSizeStatement | String   | Returns the opening part of a JavaScript statement that will be executed by the resizing model.<br>The available width, height, and closing parenthesis will be appended to this statement before it is evaluated (executed). |
+| element_getSetSizeStatement | String   | Returns the opening part of a JavaScript statement that will be executed by the resizing model.<br />The available width, height, and closing parenthesis will be appended to this statement before it is evaluated (executed). |
 
 ### Values
 
@@ -65,5 +65,4 @@ All config variables are available using `getVariable()`.
 | element_getFieldValue          | String |             | Returns a value or attribute from your element |
 | element_toString               | String |             | Converts a simple value to a string            |
 
-<!-- Referenced links -->
 [1]: ../../../automation/crmscript/reference/CRMScript.Native.HtmlElement.yml

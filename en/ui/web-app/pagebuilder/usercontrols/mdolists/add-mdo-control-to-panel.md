@@ -64,7 +64,6 @@ Important settings:
   <controlgroups>
     <controlgroup id="FindProjectGroup" type="SoControlGroup" position="absolute" left="15px" top="0px" width="100%" >
       <controls>
-        <!--Some other Code-->
         <control id="projtemp5_1" type="SoCheckBox" column="0" row="4">
           <caption>[SR_PROJECT_CARD_RESPONSIBLE]</caption>
           <datasource>FindDataHandler.associateId.IsActive</datasource>
@@ -86,7 +85,6 @@ Important settings:
           </config>
         </control>
 
-        <!-- Our Code Starts Here -->
         <control id="newLabel" type="SoLabel" context-style="Normal" row="5" column="2">
           <caption>New Control</caption>
         </control>
@@ -98,9 +96,7 @@ Important settings:
             <listname>Category</listname>
           </config>
         </control>
-         <!-- Our Code Ends Here --> 
 
-         <!--Some other Code -->
         <control id="ProjectListLabel" type="SoLabel" column="0" row="6">
           <caption>[SR_FIND_MATCH]</caption>
         </control>
@@ -122,8 +118,5 @@ Important settings:
 
 We can observe that we have adhered to all the rules given above and the controls appear smoothly on the page.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image001.jpg
-[img2]: media/image002.jpg
+[img1]: /media/loc/en/ui/image001-8.jpg
+[img2]: /media/loc/en/ui/image002-9.jpg

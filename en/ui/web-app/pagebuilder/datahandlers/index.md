@@ -16,7 +16,7 @@ DataHandler is the layer between the GUI and the web service. The handlers expos
 
 For example, if we require contact details, the data handler gets a request from the PageBuilder for the Contact entity and has to call the web service to get the answer.
 
-A data handler handles the population and storing of data within a card. The controls can bind to this data through the `datasource` property. It’s the glue between the UI and NetServer.
+A data handler handles the population and storing of data within a card. The controls can bind to this data through the `datasource` property. It's the glue between the UI and NetServer.
 
 In the *SoContactPage.config* file, it states the `datahandlers` and the `panels` it is using.
 
@@ -24,10 +24,8 @@ In the *SoContactPage.config* file, it states the `datahandlers` and the `panels
 <page id="ContactPage">
   <data>
     <datahandlers>
-      <!-- Some other code-->
       <datahandler id="ContactEntityDataHandler"
       type="ContactEntityDataHandler"></datahandler>
-      <!-- Some other code-->
     </datahandlers>
   </data>
   <panels>
@@ -43,11 +41,81 @@ In the *SoContactPage.config* file, it states the `datahandlers` and the `panels
 
 The `ContactEntityDataHandler` data handler is called in the **Contact** panel. The following code segment shows the *SoContactPanel.config* file.
 
-[!code-xml[XML](../includes/socontactpanel-config.xml)]
+```xml XML
+<?xml version="1.0" encoding="utf-8"?>
+<panel id="Contact" type="SplitterPanel" soprotocol="Contact" paneltype="Main" placeholderid="MainPlaceHolder">
+  <caption>[SR_COMMON_CONTACT]: [current:contact_name]</caption>
+  <cards>
+    <card id="ContactMainCard" type="SoTabbedCard" placeholderid="leftpanel" cardtype="MainCard">
+      <views>
+        <!-- Some other code-->
+        <view id="more" type="SoView" soprotocol="udef" current="contact">
+          <caption>[SR_MORE_CONTACT]</caption>
+          <tooltip>More...</tooltip>
+          <controlgroups>
+              <!-- Data Handler-->
+            <controlgroup id="moreHeadergroup" type="SoControlGroup" position="absolute" top="5px" left="5px" right="20px">
+              <controls>
+                <control id="ContactMoreHeaderControl" type="ContactHeader">
+                  <datasource>ContactEntityDataHandler.ContactEntity</datasource>
+                  <config>
+                  </config>
+                </control>
+              </controls>
+            </controlgroup>
+            <!--End of Data Handler-->
+            <!-- Some other code-->
+          </controlgroups>
+          <!-- Some other code-->
+        </view>
+        <!-- Some other code-->
+      </views>
+      <!-- Some other code-->
+    </card>
+    <!-- Some other code-->
+  </cards>
+  <!-- Some other code-->
+</panel>
+```
 
 The `ContactEntityDataHandler` will fetch the ContactEntity from the web service. With the statement below, we use the name of the handler to retrieve the data (create object) from the carrier.
 
-[!code-xml[XML](../includes/socontactpanel-config.xml?range=16)]
+```xml XML
+<?xml version="1.0" encoding="utf-8"?>
+<panel id="Contact" type="SplitterPanel" soprotocol="Contact" paneltype="Main" placeholderid="MainPlaceHolder">
+  <caption>[SR_COMMON_CONTACT]: [current:contact_name]</caption>
+  <cards>
+    <card id="ContactMainCard" type="SoTabbedCard" placeholderid="leftpanel" cardtype="MainCard">
+      <views>
+        <!-- Some other code-->
+        <view id="more" type="SoView" soprotocol="udef" current="contact">
+          <caption>[SR_MORE_CONTACT]</caption>
+          <tooltip>More...</tooltip>
+          <controlgroups>
+              <!-- Data Handler-->
+            <controlgroup id="moreHeadergroup" type="SoControlGroup" position="absolute" top="5px" left="5px" right="20px">
+              <controls>
+                <control id="ContactMoreHeaderControl" type="ContactHeader">
+                  <datasource>ContactEntityDataHandler.ContactEntity</datasource>
+                  <config>
+                  </config>
+                </control>
+              </controls>
+            </controlgroup>
+            <!--End of Data Handler-->
+            <!-- Some other code-->
+          </controlgroups>
+          <!-- Some other code-->
+        </view>
+        <!-- Some other code-->
+      </views>
+      <!-- Some other code-->
+    </card>
+    <!-- Some other code-->
+  </cards>
+  <!-- Some other code-->
+</panel>
+```
 
 The PageBuilder framework rendering mechanism gets the data onto the page by using data handlers.
 
@@ -57,7 +125,6 @@ The PageBuilder framework rendering mechanism gets the data onto the page by usi
 * [How to add a custom data handler][2]
 * [Sale foreign-keys tutorial][3] (uses a custom data handler)
 
-<!-- Referenced links -->
-[1]: add-custom-datahandler.md
-[2]: use-builtin-datahandler.md
-[3]: ../../tutorials/sale-foreignkeys/index.md
+[1]: ./add-custom-datahandler
+[2]: ./use-builtin-datahandler
+[3]: ../../tutorials/sale-foreignkeys/index

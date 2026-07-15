@@ -75,7 +75,7 @@ These lines will construct the following SQL:
 | where.n.critPriority | The indent of the row              |
 | order.length         | The number of order fields         |
 | order.n.field        | The field to order by              |
-| order.n.direction    | The sort order<br>"asc" or "desc" |
+| order.n.direction    | The sort order<br />"asc" or "desc" |
 | limit                | Limits the number of found rows    |
 
 ### Indents
@@ -133,5 +133,4 @@ order.length = 1
 order.0.direction = asc
 ```
 
-<!-- Referenced links -->
-[1]: ../../../automation/crmscript/searchengine/dot-syntax.md
+[1]: ../../../automation/crmscript/searchengine/dot-syntax

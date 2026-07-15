@@ -36,5 +36,4 @@ No settings.
 
 Returns a comma-separated list of the IDs of the customers.
 
-<!-- Referenced links -->
-[1]: select-customers.md
+[1]: ./select-customers

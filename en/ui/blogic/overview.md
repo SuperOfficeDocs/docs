@@ -66,20 +66,19 @@ With scripts, you can:
 * [HtmlElement][15]
 * [MainMenu][16]
 
-<!-- Referenced links -->
-[1]: screen-events.md
-[2]: extra-menus.md
-[3]: button-scripts.md
-[4]: custom-screens/index.md
-[5]: custom-screens/add-screen-element.md
-[6]: custom-screens/view-elements.md
-[7]: custom-screens/form-elements.md
-[8]: custom-screens/layout-elements.md
-[9]: reference/index.md
-[10]: screen-choosers.md
-[11]: url-parameters.md
-[12]: ../../customization/web-panels/admin/index.md
-[13]: ../../customization/soprotocol/index.md
+[1]: ./screen-events
+[2]: ./extra-menus
+[3]: ./button-scripts
+[4]: ./custom-screens/index
+[5]: ./custom-screens/add-screen-element
+[6]: ./custom-screens/view-elements
+[7]: ./custom-screens/form-elements
+[8]: ./custom-screens/layout-elements
+[9]: ./reference/index
+[10]: ./screen-choosers
+[11]: ./url-parameters
+[12]: ../../customization/web-panels/admin/index
+[13]: ../../customization/soprotocol/index
 [14]: <xref:CRMScript.Native.EventData>
 [15]: <xref:CRMScript.Native.HtmlElement>
 [16]: <xref:CRMScript.Native.MainMenu>
