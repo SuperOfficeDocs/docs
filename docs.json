@@ -1649,24 +1649,6 @@
                 "pages": [
                   "release-notes/12/index",
                   {
-                    "group": "Core CRM",
-                    "pages": [
-                      "release-notes/12/core-crm/12.2-update"
-                    ]
-                  },
-                  {
-                    "group": "Service",
-                    "pages": [
-                      "release-notes/12/service/12.0-update"
-                    ]
-                  },
-                  {
-                    "group": "Settings and Maintenance",
-                    "pages": [
-                      "release-notes/12/admin/12.1-update"
-                    ]
-                  },
-                  {
                     "group": "API",
                     "pages": [
                       {
@@ -7920,6 +7902,30 @@
     ]
   },
   "redirects": [
+    {
+      "source": "/release-notes/12/admin/12.1-update",
+      "destination": "/release-notes/12#12.1"
+    },
+    {
+      "source": "/release-notes/12/core-crm/12.2-update",
+      "destination": "/release-notes/12#12.2"
+    },
+    {
+      "source": "/release-notes/12/service/12.0-update",
+      "destination": "/release-notes/12#12.0"
+    },
+    {
+      "source": "/release-notes/12/admin/index",
+      "destination": "/release-notes/12"
+    },
+    {
+      "source": "/release-notes/12/core-crm/index",
+      "destination": "/release-notes/12"
+    },
+    {
+      "source": "/release-notes/12/service/index",
+      "destination": "/release-notes/12"
+    },
     {
       "source": "/de/admin/import/learn/create-import-file",
       "destination": "/de/admin/import/create-spreadsheet"
