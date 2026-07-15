@@ -14,7 +14,7 @@ category: customization
 topic: web panel
 language: en
 index: true
-redirect_from: 
+redirect_from:
   - /en/ui/web-panels/learn/index
   - /en/ui/web-panels/index
   - /en/admin/lists/learn/web-panel
@@ -39,20 +39,20 @@ Web panels support a range of content types:
 
 The **display location** is defined when you configure the panel. This controls where in SuperOffice the panel appears.
 
-* **Side panel** – Appears in the collapsible panel on the side of many CRM screens.
-* **Toolbar** – Adds a button to the toolbar.
-* **Navigator button** – Adds a button to the main menu.
+* **Side panel** - Appears in the collapsible panel on the side of many CRM screens.
+* **Toolbar** - Adds a button to the toolbar.
+* **Navigator button** - Adds a button to the main menu.
 * **Panels:**
-  * **Company, Contact, Project, Sale, and Selection cards** – Adds a shortcut in the **www** tab for each screen.
-  * **Web panel on SuperOffice button** – Opens from the SuperOffice logo (upper left corner). Multiple URLs appear as tabs on the right.
-  * **Section tabs (in Company, Contact, Project, Sale screens)** – Adds a separate tab that opens the panel content.
+  * **Company, Contact, Project, Sale, and Selection cards** - Adds a shortcut in the **www** tab for each screen.
+  * **Web panel on SuperOffice button** - Opens from the SuperOffice logo (upper left corner). Multiple URLs appear as tabs on the right.
+  * **Section tabs (in Company, Contact, Project, Sale screens)** - Adds a separate tab that opens the panel content.
 * **Dialogs:**
-  * **Follow-up dialog** – Adds a shortcut in the **www** tab of the follow-up dialog.
-  * **Document, Product, and Quote dialogs** – Adds a shortcut in the **www** tab of each dialog.
+  * **Follow-up dialog** - Adds a shortcut in the **www** tab of the follow-up dialog.
+  * **Document, Product, and Quote dialogs** - Adds a shortcut in the **www** tab of each dialog.
 * **Menus:**
-  * **Toolbox menu** – Appears under **Other Applications** when clicking the **Tools** button in the Navigator.
-  * **View menu** – Appears in the **Other Applications** menu option.
-* **Dashboard tiles** – Available in the tile content selector for dashboard widgets.
+  * **Toolbox menu** - Appears under **Other Applications** when clicking the **Tools** button in the Navigator.
+  * **View menu** - Appears in the **Other Applications** menu option.
+* **Dashboard tiles** - Available in the tile content selector for dashboard widgets.
 
 ### In Service (legacy)
 
@@ -66,7 +66,7 @@ The **display location** is defined when you configure the panel. This controls 
 
 In places like Company, Contact, Project, and Sale, web panels are often displayed under the **www** tab.
 
-You can rename the tab in **Settings and maintenance** > **Options** > **Labels**. To reposition the tab within the CRM interface, use the **GUI – Web panel** list.
+You can rename the tab in **Settings and maintenance** > **Options** > **Labels**. To reposition the tab within the CRM interface, use the **GUI - Web panel** list.
 
 ### Open in separate window
 
@@ -88,8 +88,5 @@ Web panels dynamically load content based on CRM context and the URL defined for
 * [Add web panel][1]
 * [Building web panels][2]
 
-<!-- Referenced links -->
-[1]: add-web-panel.md
-[2]: ../../../../en/customization/web-panels/dev/index.md
-
-<!-- Referenced images -->
+[1]: ./add-web-panel
+[2]: ../../../../en/customization/web-panels/dev/index

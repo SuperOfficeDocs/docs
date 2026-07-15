@@ -55,10 +55,8 @@ Double-click a row in the Incoming chat list to [respond to that chat][1]. The c
 
 Double-click a row in the **Ongoing chat sessions** list to listen in on (watch) an ongoing chat. The agent will not be notified that you are monitoring to the chat. You cannot participate in the chat.
 
-<!-- Referenced links -->
-[1]: respond.md
-[2]: ../../dashboard/learn/create.md
+[1]: ./respond
+[2]: ../../dashboard/learn/create
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-dashboard-statistics.png
 [img2]: ../../../media/loc/en/chat/chat-dashboard.png

@@ -32,9 +32,6 @@ If you cannot solve the issue via the chat, you can create a request to be handl
 * [Respond to a chat][3]
 * [Learn about requests][4]
 
-<!-- Referenced links -->
-[1]: link-to-person.md
-[3]: respond.md
-[4]: ../../request/learn/index.md
-
-<!-- Referenced images -->
+[1]: ./link-to-person
+[3]: ./respond
+[4]: ../../request/learn/index

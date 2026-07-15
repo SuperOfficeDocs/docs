@@ -34,6 +34,4 @@ Conversion replaces unsafe characters with a percent (%) followed by 2 hexadecim
 
 ## Unicode
 
-Conversion transforms all characters to UTF-8 and then prefixes each character's 1–3 byte hexadecimal value with % according to RFC 2279.
-
-<!-- Referenced links -->
+Conversion transforms all characters to UTF-8 and then prefixes each character's 1-3 byte hexadecimal value with % according to RFC 2279.

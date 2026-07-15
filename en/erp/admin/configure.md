@@ -100,7 +100,7 @@ Default values help reduce manual data entry for fields that typically have a fi
 
     * **Set default value:** Automatically apply a specific value during synchronization. This option requires you to enter a value.
     * **Ask user for value:** Allow the user to enter a value manually.
-    * **Mandatory – User must fill in value:** Require that a value is provided. If this is selected, you must also choose one of the two options above.
+    * **Mandatory - User must fill in value:** Require that a value is provided. If this is selected, you must also choose one of the two options above.
 
     ![Add sync default value -screenshot][img4]
 
@@ -157,9 +157,6 @@ If the direction arrows remain dimmed even after selecting a SuperOffice field, 
 
 Hover over the arrow to see a tooltip explaining why it is unavailable.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/erp/erp-connection-settings.png
 [img2]: ../../../media/loc/en/erp/configure-field-mapping.png
 [img3]: ../../../media/loc/en/erp/list-of-default-values.png

@@ -90,24 +90,22 @@ To simplify executing `soprotocol` through a webpanel hosted inside of SuperOffi
 * [Open existing project][11]
 * [Create new project][12]
 
-<!-- Referenced links -->
-[1]: ../../ui/web-app/pagebuilder/superstate/index.md
-[2]: navigation-points.md
-[4]: in-crmscript.md
+[1]: ../../ui/web-app/pagebuilder/superstate/index
+[2]: ./navigation-points
+[4]: ./in-crmscript
 
-[5]: howto/open-contact.md
-[6]: howto/create-contact.md
+[5]: ./howto/open-contact
+[6]: ./howto/create-contact
 
-[7]: howto/open-follow-up.md
-[8]: howto/create-follow-up.md
+[7]: ./howto/open-follow-up
+[8]: ./howto/create-follow-up
 
-[9]: howto/open-document.md
-[10]: howto/create-document.md
+[9]: ./howto/open-document
+[10]: ./howto/create-document
 
-[11]: howto/open-project.md
-[12]: howto/create-project.md
+[11]: ./howto/open-project
+[12]: ./howto/create-project
 
 [13]: https://github.com/SuperOffice/DevNet/tree/master/CrossMessaging
 
-<!-- Referenced images -->
 [img3]: ../../../media/loc/en/customization/soprotocol-copy-shortcut.png

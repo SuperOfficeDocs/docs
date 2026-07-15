@@ -49,8 +49,5 @@ The **Privacy - Source** list contains options that users select to show how and
 
 * [How to add items to the Privacy - Legal base list][2]
 
-<!-- Referenced links -->
-[1]: ../../../document/templates/admin/link-template.md
-[2]: add-legal-base.md
-
-<!-- Referenced images -->
+[1]: ../../../document/templates/admin/link-template
+[2]: ./add-legal-base

@@ -16,7 +16,7 @@ language: en
 
 # SoProtocol targets reference
 
-SoProtocol targets define the `{{WHERE}}` part of an SoProtocol URL — which screen to open and which tabs to activate. The `{{WHAT}}` query parameters are covered in the [Query parameters](#query-parameters) section below.
+SoProtocol targets define the `{{WHERE}}` part of an SoProtocol URL - which screen to open and which tabs to activate. The `{{WHAT}}` query parameters are covered in the [Query parameters](#query-parameters) section below.
 
 ## Main screen targets
 
@@ -36,11 +36,11 @@ SoProtocol targets define the `{{WHERE}}` part of an SoProtocol URL — which sc
 | Project | project | main, udef, info, image, links | guide, projectmembersarchive, activityarchive, salearchive, ticketarchive | |
 | Requests | ticket | main, findticket | - | Requires NewServiceRequest feature toggle |
 | Sale | sale | main, details, udef, links, info | guide, quote, saleactivityarchive, stakeholderarchive, ticketarchive | |
-| Selection | selection | - | - | Auto-rewrites — [see below](#selection-auto-rewriting) |
-| Selection — board/kanban | selectionboard | main | - | Requires BoardView feature toggle |
-| Selection — browse view | selectionbrowse | main | - | |
-| Selection — find view | selectionfind | main | - | For new selections (`selection_id=0`) |
-| Selection — search view | selectionsearch | main, findpane, detailspane, newchartspane, selmailingspane, webpanelpane | - | For existing selections |
+| Selection | selection | - | - | Auto-rewrites - [see below](#selection-auto-rewriting) |
+| Selection - board/kanban | selectionboard | main | - | Requires BoardView feature toggle |
+| Selection - browse view | selectionbrowse | main | - | |
+| Selection - find view | selectionfind | main | - | For new selections (`selection_id=0`) |
+| Selection - search view | selectionsearch | main, findpane, detailspane, newchartspane, selmailingspane, webpanelpane | - | For existing selections |
 | Simple iframe | simpleiframe | main | - | |
 | Web panel browser | browser | main | - | |
 

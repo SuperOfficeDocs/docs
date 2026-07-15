@@ -69,14 +69,12 @@ and in Sales & Marketing
 
 * [How to create a custom Data Exchange agent][1]
 
-<!-- Referenced links -->
-[1]: tutorials/custom-data-exchange-agent/index.md
+[1]: ./tutorials/custom-data-exchange-agent/index
 
-<!-- Referenced images -->
-[img1]: media/image014.jpg
-[img2]: media/image015.jpg
-[img3]: media/image016.jpg
-[img4]: media/image017.jpg
-[img5]: media/image018.jpg
-[img6]: media/image019.jpg
-[img7]: media/image020.jpg
+[img1]: /media/loc/en/service/image014.jpg
+[img2]: /media/loc/en/service/image015.jpg
+[img3]: /media/loc/en/service/image016.jpg
+[img4]: /media/loc/en/service/image017.jpg
+[img5]: /media/loc/en/service/image018.jpg
+[img6]: /media/loc/en/service/image019.jpg
+[img7]: /media/loc/en/service/image020.jpg

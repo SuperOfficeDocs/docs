@@ -24,7 +24,7 @@ index: true
 
 CRMScript is a feature that allows you to automate tasks in or modify the behavior of SuperOffice. Automating tasks and processes will help you to save time and will make you and your colleague more productive.
 
-The different tools, macros and scripts, triggers and scheduled tasks, have different capabilities and are used for different purposes. The following is an introduction to the flexible and powerful embedded scripting tool – CRMScript.
+The different tools, macros and scripts, triggers and scheduled tasks, have different capabilities and are used for different purposes. The following is an introduction to the flexible and powerful embedded scripting tool - CRMScript.
 
 ## Access CRMScript
 
@@ -90,13 +90,12 @@ When you click a script or macro in the **Macros and scripts** tab, the **Script
 * [Learn the CRMScript language][6]
 * [CRMScript API reference][7]
 
-<!-- Referenced links -->
-[2]: trigger.md
-[3]: schedule-task.md
-[4]: ../../../../en/automation/crmscript/debugging/built-in-debugger.md
-[5]: ../../../../en/automation/crmscript/debugging/using-trace.md
-[6]: ../../../../en/automation/crmscript/overview/index.md
-[7]: ../../../../en/automation/crmscript/reference/index.md
-[8]: create-script.md
-[9]: create-macro.md
-[10]: create-script.md#folder
+[2]: ./trigger
+[3]: ./schedule-task
+[4]: ../../../../en/automation/crmscript/debugging/built-in-debugger
+[5]: ../../../../en/automation/crmscript/debugging/using-trace
+[6]: ../../../../en/automation/crmscript/overview/index
+[7]: ../../../../en/automation/crmscript/reference/index
+[8]: ./create-script
+[9]: ./create-macro
+[10]: ./create-script#folder

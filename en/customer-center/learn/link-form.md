@@ -20,7 +20,7 @@ By adding the chat widget to the Customer centre, you can facilitate your custom
 
 ## Before you begin
 
-You need to [create a web form][3] before you add it to your Customer centre. Remember that when you create a new web form, you need to add one of the three request elements – title, category, and message. Otherwise, you will not be able to add the form to your Customer centre.
+You need to [create a web form][3] before you add it to your Customer centre. Remember that when you create a new web form, you need to add one of the three request elements - title, category, and message. Otherwise, you will not be able to add the form to your Customer centre.
 
 ![To add a new web form to the Customer centre, add one of these request elements. -screenshot][img1]
 
@@ -49,12 +49,10 @@ When a customer completes this form, the information and details will automatica
 * [Configure customer center][2]
 * [Work with forms][1]
 
-<!-- Referenced links -->
-[1]: ../../marketing/forms/learn/index.md
-[3]: ../../marketing/forms/learn/create.md
-[2]: config.md
+[1]: ../../marketing/forms/learn/index
+[3]: ../../marketing/forms/learn/create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png
 [img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png

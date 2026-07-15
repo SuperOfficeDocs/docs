@@ -19,7 +19,7 @@ The `NSStream` object is normally used for binary data, and in CRMScript this is
 
 ## Example
 
-We will now look at an example where we use the `NSStream` object to get a person’s image. We will also display this image in the Customer Centre.
+We will now look at an example where we use the `NSStream` object to get a person's image. We will also display this image in the Customer Centre.
 
 ```crmscript
 #setLanguageLevel 3;

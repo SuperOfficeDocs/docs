@@ -17,7 +17,7 @@ redirect_from: /en/globalization-and-localization/learn/translate-fields
 language: en
 ---
 
-# Translation <i class="ph ph-translate" aria-hidden="true"></i>
+# Translation \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
 
 The default fields and other UI texts are available in all SuperOffice languages. If you create your own fields or texts (such as names of dashboards and tiles), you can add translations for the relevant languages in your organization.
 
@@ -36,5 +36,4 @@ The **Translate** icon (<i class="ph ph-translate" aria-hidden="true"></i>) next
 
 [Change the language settings][1] under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** and check that your translation shows for the relevant languages.
 
-<!-- Referenced links -->
-[1]: ../../learn/getting-started/change-language.md
+[1]: ../../learn/getting-started/change-language

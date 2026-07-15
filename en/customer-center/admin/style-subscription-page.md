@@ -86,10 +86,8 @@ Changes are not applied until you click **Save**.
 * [Send privacy confirmation email][2]
 * [Customer center overview][1]
 
-<!-- Referenced links -->
-[1]: ../learn/index.md
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email.md
+[1]: ../learn/index
+[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

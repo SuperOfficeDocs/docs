@@ -73,6 +73,17 @@ en/**
 !en/online/**
 !en/developer-portal/**
 !en/onsite/**
+!en/ai/**
+!en/chat/**
+!en/customer-center/**
+!en/customization/**
+!en/erp/**
+!en/globalization-and-localization/**
+!en/localization/**
+!en/lead/**
+!en/saint/**
+!en/security/**
+!en/service/**
 
 # Ignore database except index files
 en/database/**

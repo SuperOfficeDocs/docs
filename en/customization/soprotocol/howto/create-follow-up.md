@@ -58,7 +58,7 @@ The following arguments are supported when creating a new follow-up
 | `appointmentdescription_name`| Description of the new appointment (plain text).                                               |
 | `doby`                       | Start date when creating new appointment. Format: YYYY.MM.DD HH:mm. Can be without time information. |
 | `enddate`                    | End date when creating new appointment. Format: YYYY.MM.DD HH:mm.                              |
-| `length`                     | Duration when creating new appointment – set instead of enddate. If both are set, length wins. |
+| `length`                     | Duration when creating new appointment - set instead of enddate. If both are set, length wins. |
 | `usedefaulttime`             | Indicates that the `doby`/`enddate` parameters above are missing the time component, and the default time should be used. |
 | `calendarassociate_id`       | The owner when creating a new appointment.                                                     |
 | `useprojectcurrent`          | If true, sets ''current'' project on the new appointment. For example, when creating an appointment from the project activity archive. |

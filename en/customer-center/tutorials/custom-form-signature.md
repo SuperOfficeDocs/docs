@@ -41,7 +41,7 @@ if (printForm)
 <form method="post" action='<%print(getParserVariable("AuthProgram"));%>&action=safeParse&includeId=sig_form&key=TLJM31BqZA1iiStQ'>
 <table>
  <tr><td>Name:</td></tr>
- <tr><td><input type='text' name='name' value='<% print(name); %>'></td></tr> 
+ <tr><td><input type='text' name='name' value='<% print(name); %>'></td></tr>
  <tr><td>Ordered units:</td></tr>
  <tr><td><input type='text' name='units' value='<% print(units); %>'></td></tr>
  <tr><td colspan='2'><input type='submit' name='ok' value='Ok'></td></tr>
@@ -85,17 +85,178 @@ Getting the correct coordinates inside the drawing area is in fact a bit tricky 
 
 ### Getting the signature drawing and posting it
 
-There is no standard way in HTML to post an image to the server. So, in order to make the signature a part of the post, we will get the image as a text string (base64 encoding of the image as a png image file), and store this in a `input type=”hidden”` tag. This needs to be done just before we post, and is managed by the function `copyCanvasToHidden()`
+There is no standard way in HTML to post an image to the server. So, in order to make the signature a part of the post, we will get the image as a text string (base64 encoding of the image as a png image file), and store this in a `input type="hidden"` tag. This needs to be done just before we post, and is managed by the function `copyCanvasToHidden()`
 
 ### Processing the Post
 
-The section where the post is processed on the server is inside the `if (getCgiVariable(“ok”) != “”)`-section. Here we make sure that supplied form data (retrieved by getCgiVariable) are valid. Then we save a new request, save a new message, and save a new attachment. The method `saveBase64()` on the attachment-class takes care of saving the image.
+The section where the post is processed on the server is inside the `if (getCgiVariable("ok") != "")`-section. Here we make sure that supplied form data (retrieved by getCgiVariable) are valid. Then we save a new request, save a new message, and save a new attachment. The method `saveBase64()` on the attachment-class takes care of saving the image.
 
 ### Complete code
 
 Here is the complete code. Just create this as a CRMScript under **System design > Scripts**, set the include ID to "sig_form" and the key to "TLJM31BqZA1iiStQ", and it should work out of the box.
 
-[!code-text[HTML](includes/custom-form.html)]
+```text HTML
+<html>
+  <head>
+  <meta name = "viewport" content = "initial-scale = 1.0">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<!-- Referenced image -->
-[img1]: media/image011.png
+  %EJSCRIPT_START%
+  <script>
+NSMa
+  var pos = null;
+  var context = null;
+
+function getPositionInElement(p_event, p_isTouch)
+{
+  var x = (p_isTouch ? p_event.touches[0].pageX : p_event.clientX);
+  var y = (p_isTouch ? p_event.touches[0].pageY : p_event.clientY);
+  p_event.preventDefault();
+  var element = p_event.srcElement;
+  do
+  {
+    x -= element.offsetLeft;
+    y -= element.offsetTop;
+    element = element.offsetParent;
+  }
+  while (element != null)
+    return {'x': x, 'y': y};
+}
+
+function canvas_onmousedown(p_event, p_isTouch)
+{
+  pos = getPositionInElement(p_event, p_isTouch);
+  var canvas = document.getElementById("canvas");
+  context = canvas.getContext("2d");
+  context.beginPath();
+  context.moveTo(pos.x, pos.y);
+}
+
+function canvas_onmouseup(p_event, p_isTouch)
+{
+  pos = null;
+}
+
+function canvas_onmousemove(p_event, p_isTouch)
+{
+  if (pos != null)
+  {
+    pos = getPositionInElement(p_event, p_isTouch);
+    context.lineTo(pos.x, pos.y);
+    context.stroke();
+  }
+}
+
+function copyCanvasToHidden()
+{
+  var canvas = document.getElementById("canvas");
+  var signature = document.getElementById("signature");
+  signature.value = canvas.toDataURL();
+}
+
+function clearCanvas()
+{
+  var canvas = document.getElementById("canvas");
+  context = canvas.getContext("2d");
+  context.clearRect(0, 0, canvas.width, canvas.height);
+}
+function resize_canvas(){
+    canvas = document.getElementById("canvas");
+    if (canvas.width  < window.innerWidth)
+    {
+        canvas.width  = window.innerWidth;
+    }
+}
+
+</script>
+  </head>
+  <body onresize='resize_canvas()'>
+  <div class='container'>
+  <%
+  #setLanguageLevel 3;
+
+String name = getCgiVariable("name");
+String units = getCgiVariable("units");
+String signature = getCgiVariable("signature");
+String ticketId = getCgiVariable("ticketId");
+Bool printForm = true;
+
+if (getCgiVariable("ok") != "") // Got posted
+{
+  if (name == "" || units == "" || signature == "") // One of the fields are empty
+  {
+    print("<em>You must fill out all fields!</em>");
+  }
+  else if (signature.beginsWith("data:image/png;base64,") == false)
+  {
+    print("<em>Signature format invalid</em>");
+  }
+  else
+  {
+    signature = signature.after("data:image/png;base64,");
+    Ticket myTicket;
+    myTicket.setValue("title", "Order");
+    myTicket.setValue("category", "1");
+    myTicket.setValue("priority", "1");
+    Integer ticketId = myTicket.save();
+
+    Attachment attachment;
+    attachment.setValue("contentType", "image/png");
+    attachment.save(); // Must save first to get ID
+    attachment.saveBase64(signature);
+
+    Message myMessage;
+    myMessage.setValue("ticketId", ticketId.toString());
+    myMessage.setValue("body", "Name: " + name + "\r\nUnits: " + units + "\r\n");
+    myMessage.save();
+
+    Vector attachmentIds;
+    attachmentIds.pushBack(attachment.getValue("id"));
+    myMessage.setAttachments(attachmentIds);
+    print("<i>Ticket saved with id " + ticketId.toString() + "</i><p>");
+    printForm = false;
+  }
+}
+
+if (printForm)
+{
+
+  %>
+    <form method="post" action='<%print(getParserVariable("AuthProgram"));%>&action=safeParse&includeId=sig_form&key=TLJM31BqZA1iiStQ'>
+    <div class="mb-3">
+    <label for="name" class='form-label'>Name:</label><input type='text' class='form-control' name='name' value='<% print(name); %>'></div>
+
+      <div class="mb-3">
+    <label for="units" class='form-label'>Ordered units:</label><input class='form-control' type='text' name='units' value='<% print(units); %>'></div>
+
+        <div class="mb-3">
+    <label for="signature" class='form-label'>Signature:
+          <canvas
+          onmousedown='canvas_onmousedown(event, false);'
+          onmousemove='canvas_onmousemove(event, false);'
+          onmouseup='canvas_onmouseup(event, false);'
+
+          ontouchstart='canvas_onmousedown(event, true);'
+          ontouchmove='canvas_onmousemove(event, true);'
+          ontouchend='canvas_onmouseup(event, true);'
+
+          id='canvas' class='form-control'  style='border: black solid 1px;width:100%'>Sorry, your browser does not support canvas</canvas>
+            <input id='signature' type='hidden' name='signature'></div>
+
+            <input  type='submit' class="btn btn-primary" onclick='copyCanvasToHidden();' name='ok' value='Ok'>
+            <input type='button' class='btn btn-light' onclick='javascript:window.history.back();' name='cancel' value='Cancel'>
+            <input  type='button' class="btn" onclick='clearCanvas();' value='Clear signature'>
+
+            </form>
+            <%
+}
+%>
+  %EJSCRIPT_END%
+  </div>
+  </body>
+</html>
+```
+
+[img1]: /media/loc/en/customer-center/image011.png

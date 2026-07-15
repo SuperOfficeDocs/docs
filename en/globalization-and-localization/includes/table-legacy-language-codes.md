@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | ID | Language |
 |:-:|---|
 | NO | Norwegian |
