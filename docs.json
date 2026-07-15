@@ -16245,6 +16245,26 @@
     {
       "source": "/en/project/learn/project-guide/working-with",
       "destination": "/en/project/learn/project-guides"
+    },
+    {
+      "source": "/en/dashboard/learn/copy",
+      "destination": "/en/dashboard/learn/create"
+    },
+    {
+      "source": "/en/dashboard/learn/delete",
+      "destination": "/en/dashboard/learn/update"
+    },
+    {
+      "source": "/en/dashboard/learn/add-tile",
+      "destination": "/en/dashboard/learn/working-with-tiles"
+    },
+    {
+      "source": "/en/dashboard/learn/edit-tile",
+      "destination": "/en/dashboard/learn/working-with-tiles"
+    },
+    {
+      "source": "/en/dashboard/learn/remove-tile",
+      "destination": "/en/dashboard/learn/working-with-tiles"
     }
   ]
 }
