@@ -12,7 +12,7 @@ audience: settings
 audience_tooltip: Settings and maintenance
 language: en
 index: true
-redirect_from: 
+redirect_from:
   - /en/sale/saint/learn/admin/edit-status
   - /en/saint/admin/edit-status
   - /en/sale/saint/learn/admin/select-default-follow-up-type-for-status
@@ -25,9 +25,11 @@ redirect_from:
   - /en/saint/admin/manage-status-monitors
 ---
 
+import NoteReqSaint from "../../includes/note-req-saint.md";
+
 # Update activity monitors
 
-[!include[Requirement](../../includes/note-req-saint.md)]
+<NoteReqSaint />
 
 ## Open the SAINT screen
 
@@ -70,8 +72,9 @@ Each status must have at least one criterion. The [criteria][2] determine which 
 
 1. Repeat to add more criteria.
 
-    > [!NOTE]
-    > You can add only one of each criterion type. For example, you cannot add the **Postcode** criterion twice.
+    <Note>
+    You can add only one of each criterion type. For example, you cannot add the **Postcode** criterion twice.
+    </Note>
 
 1. Select <i class="ph ph-arrow-circle-right" aria-hidden="true"></i> **Regenerate selected status monitor** to apply the changes.
 
@@ -100,7 +103,7 @@ You can restore a previously deleted status and regenerate it.
 
 1. Select **Regenerate selected status monitor** to update the restored status.
 
-## <a id="regen"></a>Regenerate statuses and counters <i class="ph ph-arrow-circle-right" aria-hidden="true"></i>
+## <a id="regen"></a>Regenerate statuses and counters \<i class="ph ph-arrow-circle-right" aria-hidden="true"\>\</i\>
 
 At the bottom of the **Status monitors** tab, indicators show the date of the most recent update. A red cross in the status list means the status is not active until you regenerate it. If an item has never been generated, or the last generation was a long time ago, the results may be outdated.
 
@@ -119,11 +122,9 @@ Statuses and counters that are not updated remain visible in SuperOffice CRM, bu
 |---|---|
 | Regenerate all counters | Updates all counters |
 
-<!-- Referenced links -->
-[1]: set-up.md
-[2]: ../../search-options/learn/search-criteria.md
+[1]: ./set-up
+[2]: ../../search-options/learn/search-criteria
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/saint/saint-create-follow-up-tab.png
 [img2]: ../../../media/loc/en/saint/delete-restore-status-monitor.png
 [img3]: ../../../media/loc/en/saint/criteria.png

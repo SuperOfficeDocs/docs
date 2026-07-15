@@ -15,6 +15,8 @@ index: true
 redirect_from: /en/sale/saint/learn/admin/index
 ---
 
+import NoteReqSaint from "../../includes/note-req-saint.md";
+
 # SAINT in Settings and maintenance
 
 SAINT (Sales Intelligence) helps you monitor companies, contacts, and projects so you can follow up at the right time. An **activity monitor** (also known as status monitor) combines criteria, counters, and optional properties to highlight records that need attention.
@@ -25,7 +27,7 @@ Before implementing SAINT, it is important to know what you want to improve and 
 * Call all customers in the SAINT selection
 * Follow up on all requests
 
-[!include[Requirement](../../includes/note-req-saint.md)]
+<NoteReqSaint />
 
 ![SAINT screen with status list, description, image, and criteria -screenshot][img1]
 
@@ -76,14 +78,12 @@ SAINT **values** are simple binary values (on or off) that determine the look an
 * [Update, delete, and restore status monitors][7]
 * [Regenerate status monitors and counters][8]
 
-<!-- Referenced links -->
-[1]: set-up.md
-[2]: set-up.md#image
-[5]: counter-settings.md
-[7]: update.md
-[8]: update.md#regen
-[13]: ../../../en/database/tables/countervalue.md
-[14]: ../../../en/database/tables/statusvalue.md
+[1]: ./set-up
+[2]: ./set-up#image
+[5]: ./counter-settings
+[7]: ./update
+[8]: ./update#regen
+[13]: ../../../en/database/tables/countervalue
+[14]: ../../../en/database/tables/statusvalue
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/saint/status-monitors-company-tab.png

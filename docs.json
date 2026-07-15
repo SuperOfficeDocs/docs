@@ -17949,6 +17949,94 @@
     {
       "source": "/en/lead/index",
       "destination": "/en/lead/learn/index"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/select-period-length",
+      "destination": "/en/saint/admin/counter-settings"
+    },
+    {
+      "source": "/en/saint/admin/select-period-length",
+      "destination": "/en/saint/admin/counter-settings"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/index",
+      "destination": "/en/saint/admin/index"
+    },
+    {
+      "source": "/en/admin/lists/learn/sale-amount-class",
+      "destination": "/en/saint/admin/sale-amount-class"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/create-status",
+      "destination": "/en/saint/admin/set-up"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/select-image-for-status",
+      "destination": "/en/saint/admin/set-up"
+    },
+    {
+      "source": "/en/saint/admin/select-image-for-status",
+      "destination": "/en/saint/admin/set-up"
+    },
+    {
+      "source": "/en/saint/admin/create-status",
+      "destination": "/en/saint/admin/set-up"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/edit-status",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/saint/admin/edit-status",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/select-default-follow-up-type-for-status",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/saint/admin/select-default-follow-up-type-for-status",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/restore-status",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/saint/admin/restore-status",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/select-status-criteria",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/saint/admin/select-status-criteria",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/sale/saint/learn/admin/manage-status-monitors",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/saint/admin/manage-status-monitors",
+      "destination": "/en/saint/admin/update"
+    },
+    {
+      "source": "/en/sale/saint/",
+      "destination": "/en/saint/learn/index"
+    },
+    {
+      "source": "/en/sale/saint/learn/",
+      "destination": "/en/saint/learn/index"
+    },
+    {
+      "source": "/en/sale/saint/learn/status-dialog",
+      "destination": "/en/saint/learn/index"
+    },
+    {
+      "source": "/en/saint/learn/status-dialog",
+      "destination": "/en/saint/learn/index"
     }
   ]
 }

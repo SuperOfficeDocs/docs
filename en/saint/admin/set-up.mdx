@@ -12,16 +12,19 @@ audience: settings
 audience_tooltip: Settings and maintenance
 language: en
 index: true
-redirect_from: 
+redirect_from:
   - /en/sale/saint/learn/admin/create-status
   - /en/sale/saint/learn/admin/select-image-for-status
   - /en/saint/admin/select-image-for-status
   - /en/saint/admin/create-status
 ---
 
+import NoteReqSaint from "../../includes/note-req-saint.md";
+import ImageTypeAndSize from "../../learn/includes/image-type-and-size.md";
+
 # Set up a new activity monitor
 
-[!include[Requirement](../../includes/note-req-saint.md)]
+<NoteReqSaint />
 
 With an activity monitor, you easily see all the customers who need attention.
 
@@ -81,10 +84,11 @@ Adding an image is optional. It can help draw attention and symbolize the type o
     * Select **Add**, upload a file, enter a description, and select **Save**.
 1. Select **OK** to confirm.
 
-[!include[File type and size](../../learn/includes/image-type-and-size.md)]
+<ImageTypeAndSize />
 
-> [!TIP]
-> Use simple, light-colored images that represent the status meaningfully. For example, a spider's web can symbolize inactivity.
+<Tip>
+Use simple, light-colored images that represent the status meaningfully. For example, a spider's web can symbolize inactivity.
+</Tip>
 
 ## Use template variables in descriptions
 
@@ -117,14 +121,12 @@ In this example, the following template variables are used:
 * [Counters and counter settings (period)][7]
 * [Regenerate status monitors and counters][4]
 
-<!-- Referenced links -->
-[2]: update.md
-[4]: update.md#regen
-[7]: counter-settings.md
-[8]: ../../localization/learn/translate-fields.md
-[9]: ../../document/templates/variables/index.md
+[2]: ./update
+[4]: ./update#regen
+[7]: ./counter-settings
+[8]: ../../localization/learn/translate-fields
+[9]: ../../document/templates/variables/index
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/saint/new-status-monitor.png
 [img2]: ../../../media/loc/en/saint/status-list-priority.png
 [img3]: ../../../media/loc/en/saint/criteria.png
