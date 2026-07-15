@@ -15405,6 +15405,150 @@
     {
       "source": "/en/admin/getting-started/onboard-users",
       "destination": "/en/admin/getting-started"
+    },
+    {
+      "source": "/en/search-options/selection/learn/howto/bulk-update",
+      "destination": "/en/learn/basics/bulk-update"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
+      "destination": "/en/learn/basics/creating-shortcuts-to-entries-in-crm"
+    },
+    {
+      "source": "/en/marketing/learn/add-fav",
+      "destination": "/en/learn/basics/fav"
+    },
+    {
+      "source": "/en/request/learn/howto/fav",
+      "destination": "/en/learn/basics/fav"
+    },
+    {
+      "source": "/en/project/learn/add-links",
+      "destination": "/en/learn/basics/links"
+    },
+    {
+      "source": "/en/diary/learn/linking-documents-to-follow-ups",
+      "destination": "/en/learn/basics/links"
+    },
+    {
+      "source": "/en/contact/learn/print",
+      "destination": "/en/learn/basics/print"
+    },
+    {
+      "source": "/en/company/learn/print",
+      "destination": "/en/learn/basics/print"
+    },
+    {
+      "source": "/en/diary/learn/print",
+      "destination": "/en/learn/basics/print"
+    },
+    {
+      "source": "/en/contact/learn/add-relation",
+      "destination": "/en/learn/basics/relations"
+    },
+    {
+      "source": "/en/contact/learn/delete-relation",
+      "destination": "/en/learn/basics/relations"
+    },
+    {
+      "source": "/en/company/learn/add-relation",
+      "destination": "/en/learn/basics/relations"
+    },
+    {
+      "source": "/en/company/learn/delete-relation",
+      "destination": "/en/learn/basics/relations"
+    },
+    {
+      "source": "/en/admin/lists/learn/relation",
+      "destination": "/en/learn/basics/relations"
+    },
+    {
+      "source": "/en/learn/getting-started/connect-email-doc/default-mac",
+      "destination": "https://help.superoffice.com/docs/11/en/learn/getting-started/connect-email-doc/default-mac.html"
+    },
+    {
+      "source": "/en/learn/getting-started/connect-email-doc/default-win",
+      "destination": "https://help.superoffice.com/docs/11/en/learn/getting-started/connect-email-doc/default-win.html"
+    },
+    {
+      "source": "/en/learn/getting-started/connect-email-doc/google-workspace",
+      "destination": "https://help.superoffice.com/docs/11/en/learn/getting-started/connect-email-doc/google-workspace.html"
+    },
+    {
+      "source": "/en/learn/getting-started/connect-email-doc/index",
+      "destination": "https://help.superoffice.com/docs/11/en/learn/getting-started/connect-email-doc/index.html"
+    },
+    {
+      "source": "/en/learn/getting-started/connect-email-doc/microsoft-365",
+      "destination": "https://help.superoffice.com/docs/11/en/learn/getting-started/connect-email-doc/microsoft-365.html"
+    },
+    {
+      "source": "/en/globalization-and-localization/learn/change-language",
+      "destination": "/en/learn/getting-started/change-language"
+    },
+    {
+      "source": "/en/contact/learn/screen/activities-tab",
+      "destination": "/en/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/en/company/learn/screen/activities-tab",
+      "destination": "/en/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/en/sale/learn/screen/activities-sale",
+      "destination": "/en/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/en/project/learn/screen/activities-project",
+      "destination": "/en/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/en/diary/learn/screen/activities-tab",
+      "destination": "/en/learn/section-tabs/activities-tab"
+    },
+    {
+      "source": "/en/company/learn/screen/contacts-tab",
+      "destination": "/en/learn/section-tabs/contacts-tab"
+    },
+    {
+      "source": "/en/contact/learn/screen/projects-tab",
+      "destination": "/en/learn/section-tabs/projects-tab"
+    },
+    {
+      "source": "/en/company/learn/screen/projects-tab",
+      "destination": "/en/learn/section-tabs/projects-tab"
+    },
+    {
+      "source": "/en/contact/learn/screen/relations-tab",
+      "destination": "/en/learn/section-tabs/relations-tab"
+    },
+    {
+      "source": "/en/company/learn/screen/relations-tab",
+      "destination": "/en/learn/section-tabs/relations-tab"
+    },
+    {
+      "source": "/en/contact/learn/screen/requests-tab",
+      "destination": "/en/learn/section-tabs/requests-tab"
+    },
+    {
+      "source": "/en/company/learn/screen/requests-tab",
+      "destination": "/en/learn/section-tabs/requests-tab"
+    },
+    {
+      "source": "/en/contact/learn/screen/sales-tab",
+      "destination": "/en/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/en/company/learn/screen/sales-tab",
+      "destination": "/en/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/en/project/learn/screen/sale",
+      "destination": "/en/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/en/diary/learn/screen/sales-tab",
+      "destination": "/en/learn/section-tabs/sales-tab"
     }
   ]
 }

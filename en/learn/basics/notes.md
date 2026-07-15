@@ -33,5 +33,4 @@ A dot on the **Note** tab indicates that a note has been added.
 
 To delete a note, simply delete all the text in the box. The dot will disappear from the **Note** tab.
 
-<!-- Referenced links -->
-[1]: ../../search-options/learn/freetext-search.md
+[1]: ../../search-options/learn/freetext-search
