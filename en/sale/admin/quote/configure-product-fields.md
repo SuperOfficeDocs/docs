@@ -71,9 +71,7 @@ These settings apply globally to all quote connector ERP connections and affect 
 * [Add product to a price list][1]
 * [Add/edit a product in the quote][2]
 
-<!-- Referenced links -->
-[1]: price-list-and-products.md
-[2]: ../../learn/quote/create.md#add-products
+[1]: ./price-list-and-products
+[2]: ../../learn/quote/create#add-products
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

@@ -27,7 +27,7 @@ Use the **Workflow** and **Lists** screens in **Settings and maintenance** to co
 | Sale type | Categorizes sales (for example, "New Customer" or "Renewal") and links them to stages and guides. | **Lists** > **Sale - Type, Stages, Quote** |
 | Sale stage | Tracks the phase of a sale (for example, "Quotation" or "Contract Signing"). Defined per sale type. | **Lists** > **Sale - Stage** |
 | Sales guide | A workflow tool linking stages to specific follow-ups and documents. | **Workflow** > **Sales guide** |
-| Currency | A list item defining available currencies for sales amounts, including exchange rate and unit. | **Lists** > **General – Currency** |
+| Currency | A list item defining available currencies for sales amounts, including exchange rate and unit. | **Lists** > **General - Currency** |
 | Base currency | The primary currency used for system-wide calculations and exchange rates. | **Preferences** > **Global preferences** > **System** > **Base currency** |
 
 ## Customize your sales lists
@@ -53,9 +53,8 @@ Have a look at the following lists, to see whether you want to change them or no
 
 These tools empower administrators to tailor sales workflows, ensuring efficiency and consistency across teams.
 
-<!-- Referenced links -->
-[1]: create-sales-guide.md
-[2]: edit-sales-guide.md
-[3]: sale-stage.md
-[4]: sale-type.md
-[5]: add-currency.md
+[1]: ./create-sales-guide
+[2]: ./edit-sales-guide
+[3]: ./sale-stage
+[4]: ./sale-type
+[5]: ./add-currency

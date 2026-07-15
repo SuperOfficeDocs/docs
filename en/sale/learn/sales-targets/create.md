@@ -32,7 +32,7 @@ It is optional to add the company target and to have user specific targets (go t
 
 ## Requirements
 
-If you only have a **Sales Premium** license or the **Growth** plan, you can add one group for the **All sales – Amount** target type. To add more than one user group, you also need the **Unlimited sales targets** license or the **Super** plan.
+If you only have a **Sales Premium** license or the **Growth** plan, you can add one group for the **All sales - Amount** target type. To add more than one user group, you also need the **Unlimited sales targets** license or the **Super** plan.
 
 ## Before you start
 
@@ -139,10 +139,8 @@ To view the revision history for a sales target (row), click <i class="ph ph-lis
 
 * [Using sales targets in tiles][2]
 
-<!-- Referenced links -->
-[2]: ../../../dashboard/learn/show-sales-targets.md
+[2]: ../../../dashboard/learn/show-sales-targets
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png
 [img3]: ../../../../media/loc/en/sale/target-adjust-number.png

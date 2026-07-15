@@ -15597,6 +15597,178 @@
     {
       "source": "/en/contact/learn/screen/index",
       "destination": "/en/contact/learn/index"
+    },
+    {
+      "source": "/en/quote/learn/admin/product/configure",
+      "destination": "/en/sale/admin/quote/configure-product-fields"
+    },
+    {
+      "source": "/en/quote/learn/admin/index",
+      "destination": "/en/sale/admin/quote/index"
+    },
+    {
+      "source": "/en/quote/learn/admin/quotesync-tab-erp-connections",
+      "destination": "/en/sale/admin/quote/index"
+    },
+    {
+      "source": "/en/quote/learn/admin/quotesync-tab-settings",
+      "destination": "/en/sale/admin/quote/index"
+    },
+    {
+      "source": "/en/quote/learn/admin/product/add-price-list",
+      "destination": "/en/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/en/quote/learn/admin/product/add-product-to-price-list",
+      "destination": "/en/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/en/quote/learn/admin/product/index",
+      "destination": "/en/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/en/quote/learn/admin/product/quote-delete-deactivate-price-list-or-product",
+      "destination": "/en/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/en/quote/learn/admin/product/select-product-image",
+      "destination": "/en/sale/admin/quote/price-list-and-products"
+    },
+    {
+      "source": "/en/quote/learn/admin/erp-connection-add",
+      "destination": "/en/sale/admin/quote/set-up-quote-connector"
+    },
+    {
+      "source": "/en/admin/lists/learn/adding-items-to-currency-list",
+      "destination": "/en/sale/admin/add-currency"
+    },
+    {
+      "source": "/en/admin/lists/learn/currency",
+      "destination": "/en/sale/admin/add-currency"
+    },
+    {
+      "source": "/en/sale/learn/sales-guide/create",
+      "destination": "/en/sale/admin/create-sales-guide"
+    },
+    {
+      "source": "/en/sale/learn/sales-guide/deactivate",
+      "destination": "/en/sale/admin/edit-sales-guide"
+    },
+    {
+      "source": "/en/sale/learn/sales-guide/edit",
+      "destination": "/en/sale/admin/edit-sales-guide"
+    },
+    {
+      "source": "/en/sale/learn/screen/sale-stage",
+      "destination": "/en/sale/admin/sale-stage"
+    },
+    {
+      "source": "/en/admin/lists/learn/sale-stage",
+      "destination": "/en/sale/admin/sale-stage"
+    },
+    {
+      "source": "/en/sale/learn/screen/sales-type-for-stages",
+      "destination": "/en/sale/admin/sale-type"
+    },
+    {
+      "source": "/en/admin/lists/learn/sale-type",
+      "destination": "/en/sale/admin/sale-type"
+    },
+    {
+      "source": "/en/quote/index",
+      "destination": "/en/sale/dev/index"
+    },
+    {
+      "source": "/en/sale/overview",
+      "destination": "/en/sale/dev/index"
+    },
+    {
+      "source": "/en/quote/learn/add-alternative",
+      "destination": "/en/sale/learn/quote/add-alternative"
+    },
+    {
+      "source": "/en/quote/learn/create-quote-document",
+      "destination": "/en/sale/learn/quote/create-quote-document"
+    },
+    {
+      "source": "/en/quote/learn/add-product",
+      "destination": "/en/sale/learn/quote/create"
+    },
+    {
+      "source": "/en/quote/learn/copy",
+      "destination": "/en/sale/learn/quote/create"
+    },
+    {
+      "source": "/en/quote/learn/create",
+      "destination": "/en/sale/learn/quote/create"
+    },
+    {
+      "source": "/en/quote/learn/screen/edit-quote-dialog",
+      "destination": "/en/sale/learn/quote/create"
+    },
+    {
+      "source": "/en/sale/learn/screen/quote-tab",
+      "destination": "/en/sale/learn/quote/index"
+    },
+    {
+      "source": "/en/quote/learn/index",
+      "destination": "/en/sale/learn/quote/index"
+    },
+    {
+      "source": "/en/quote/learn/quote-tab",
+      "destination": "/en/sale/learn/quote/index"
+    },
+    {
+      "source": "/en/quote/learn/create-order",
+      "destination": "/en/sale/learn/quote/place-order"
+    },
+    {
+      "source": "/en/quote/learn/approve",
+      "destination": "/en/sale/learn/quote/send"
+    },
+    {
+      "source": "/en/quote/learn/send",
+      "destination": "/en/sale/learn/quote/send"
+    },
+    {
+      "source": "/en/quote/learn/versions",
+      "destination": "/en/sale/learn/quote/send"
+    },
+    {
+      "source": "/en/sale/learn/stages",
+      "destination": "/en/sale/learn/index"
+    },
+    {
+      "source": "/en/sale/learn/use-side-panel",
+      "destination": "/en/sale/learn/index"
+    },
+    {
+      "source": "/en/sale/learn/screen/index",
+      "destination": "/en/sale/learn/index"
+    },
+    {
+      "source": "/en/sale/learn/sales-guide/index",
+      "destination": "/en/sale/learn/sales-guides"
+    },
+    {
+      "source": "/en/sale/learn/sales-guide/sales-guide-tab",
+      "destination": "/en/sale/learn/sales-guides"
+    },
+    {
+      "source": "/en/sale/learn/sales-guide/working-with-sales-guide",
+      "destination": "/en/sale/learn/sales-guides"
+    },
+    {
+      "source": "/en/sale/learn/screen/sales-guide-admin",
+      "destination": "/en/sale/learn/sales-guides"
+    },
+    {
+      "source": "/en/sale/learn/screen/sales-guide-tab",
+      "destination": "/en/sale/learn/sales-guides"
+    },
+    {
+      "source": "/en/sale/learn/delete",
+      "destination": "/en/sale/learn/update"
     }
   ]
 }
