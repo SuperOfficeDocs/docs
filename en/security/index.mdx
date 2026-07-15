@@ -1,0 +1,173 @@
+---
+mode: "custom"
+title: Security
+sidebarTitle: "Overview"
+description: "Welcome to the Security area where you can find relevant links to all things related to security."
+author: Bergfrid Dias
+date: 07.15.2026
+language: en
+---
+
+import CustomFooter from '/components/custom-mode-footer.mdx'
+
+<div id="category-hero">
+  <h1>Security</h1>
+  <p>Welcome to the Security area where you can find relevant links to all things related to security.</p>
+</div>
+
+<div id="category-landing">
+
+<div className="highlighted-content">
+
+<CardGroup cols={4}>
+<Card title="Reset password" icon="list" href="../online/identity/user/reset-password">
+  <span className="card-label">How-to guide</span>
+</Card>
+
+<Card title="Identity management" icon="map" href="../online/identity/index">
+  <span className="card-label">Overview</span>
+</Card>
+
+<Card title="SuperID" icon="map" href="../online/identity/superid/index">
+  <span className="card-label">Overview</span>
+</Card>
+
+<Card title="System for Cross-domain Identity Management (SCIM)" icon="map" href="../online/identity/scim/index">
+  <span className="card-label">Overview</span>
+</Card>
+
+<Card title="Authentication" icon="map" href="../api/authentication/overview">
+  <span className="card-label">Overview</span>
+</Card>
+
+<Card title="OAuth 2.0" icon="compass" href="../api/authentication/online/index">
+  <span className="card-label">Concept</span>
+</Card>
+
+<Card title="OpenID Connect" icon="compass" href="../api/authentication/online/index">
+  <span className="card-label">Concept</span>
+</Card>
+
+</CardGroup>
+
+</div>
+
+<div className="conceptual-content">
+
+<CardGroup cols={4}>
+<Card title="Sign-in services">
+
+<ul className="concept-links">
+  <li><Icon icon="compass" /> <a href="/en/online/identity/federated-id-and-identity-providers">Federated ID and identity providers</a></li>
+  <li><Icon icon="compass" /> <a href="/en/online/identity/multi-factor-authentication">Multi-factor authentication</a></li>
+  <li><Icon icon="compass" /> <a href="/en/online/identity/single-sign-on/index">Single sign-on</a></li>
+  <li><Icon icon="compass" /> <a href="/en/online/identity/user/index">User accounts and role-based access control</a></li>
+  <li><Icon icon="list" /> <a href="/en/online/identity/user/enforce-password-policy">Enforce password policy</a></li>
+</ul>
+
+</Card>
+
+<Card title="Privacy">
+
+<ul className="concept-links">
+  <li><Icon icon="compass" /> <a href="privacy/index">Introduction</a></li>
+  <li><Icon icon="compass" /> <a href="privacy/consent-management">Consent management</a></li>
+  <li><Icon icon="compass" /> <a href="privacy/e-marketing-consent">E-marketing consent</a></li>
+  <li><Icon icon="compass" /> <a href="privacy/soft-delete">Soft-delete</a></li>
+</ul>
+
+</Card>
+
+<Card title="Online applications">
+
+<ul className="concept-links">
+  <li><Icon icon="book" /> <a href="/en/developer-portal/standard-app/requirements/security">Security requirements</a></li>
+  <li><Icon icon="book" /> <a href="/en/developer-portal/standard-app/certification/checklist">Checklist</a></li>
+  <li><Icon icon="compass" /> <a href="/en/developer-portal/standard-app/certification/index">Certification</a></li>
+  <li><Icon icon="compass" /> <a href="/en/developer-portal/standard-app/certification/initial-security-eval">Telenor Cyberdefense evaluation</a></li>
+  <li><Icon icon="list" /> <a href="/en/developer-portal/provisioning/get-consent">Obtain consent to access a customer's tenant</a></li>
+  <li><Icon icon="compass" /> <a href="privacy/gdpr-for-app-developer">GDPR for app developer</a></li>
+</ul>
+
+</Card>
+
+<Card title="Online authentication">
+
+<ul className="concept-links">
+  <li><Icon icon="compass" /> <a href="/en/api/authentication/online/index">SuperOffice Online and SuperID</a></li>
+  <li><Icon icon="compass" /> <a href="/en/api/authentication/online/index">OpenID Connect</a></li>
+  <li><Icon icon="compass" /> <a href="/en/api/authentication/online/sign-in-user/auth-code-flow">Authorization code flow</a></li>
+  <li><Icon icon="compass" /> <a href="/en/api/authentication/online/sign-in-user/hybrid-flow">Hybrid Flow</a></li>
+  <li><Icon icon="compass" /> <a href="/en/api/authentication/online/sign-in-user/implicit-flow">Implicit Flow</a></li>
+  <li><Icon icon="compass" /> <a href="/en/api/authentication/online/sign-in-user/native-apps">Native Apps</a></li>
+  <li><Icon icon="compass" /> <a href="/en/api/authentication/online/auth-application/index">System User (Back-channel)</a></li>
+</ul>
+
+</Card>
+
+<Card title="Onsite deployment">
+
+<ul className="concept-links">
+  <li><Icon icon="map" /> <a href="/en/onsite/security/index">Intro</a></li>
+  <li><Icon icon="list" /> <a href="/en/onsite/security/secure-deployment-guide">Secure deployment guide</a></li>
+  <li><Icon icon="cloud-arrow-up" /> <a href="/en/onsite/security/deployment-scenarios">Deployment scenarios</a></li>
+  <li><Icon icon="book" /> <a href="/en/onsite/security/network-firewall-config">Network and firewall config</a></li>
+  <li><Icon icon="list" /> <a href="/en/onsite/security/secure-https">Securing HTTPS configuration</a></li>
+  <li><Icon icon="list" /> <a href="/en/onsite/security/set-up-emet">Set up EMET</a></li>
+  <li><Icon icon="list" /> <a href="/en/onsite/security/set-up-modsecurity">Set up ModSecurity</a></li>
+</ul>
+
+</Card>
+
+</CardGroup>
+
+</div>
+
+<div className="additional-content">
+
+<CardGroup cols={4}>
+<Card title="Security measures in...">
+
+<ul className="additional-links">
+  <li><a href="/en/online/security">CRM Online</a></li>
+  <li><a href="/en/mobile/security">SuperOffice Mobile</a></li>
+  <li><a href="/en/email/mailgun/security">Mailgun</a></li>
+  <li><a href="/en/ui/web-app/technical-info.md#security">Web application</a></li>
+  <li><a href="/en/ui/web-app/pagebuilder/rights-system">Pagebuilder (sentry rights)</a></li>
+</ul>
+
+</Card>
+
+<Card title="Database">
+
+<ul className="additional-links">
+  <li><a href="/en/database/tables/credentials">The credentials database table</a></li>
+  <li><a href="/en/database/security/single-database-user">Single database user</a></li>
+  <li><a href="/en/online/mirroring/skip-tables">Mirroring blacklisted tables</a></li>
+</ul>
+
+</Card>
+
+<Card title="Documents">
+
+<ul className="additional-links">
+  <li><a href="/integrations/g-suite/security">Google Workspace documents</a></li>
+</ul>
+
+</Card>
+
+<Card title="Cookies">
+
+<ul className="additional-links">
+  <li><a href="/en/online/cookies">Cookies</a></li>
+</ul>
+
+</Card>
+
+</CardGroup>
+
+</div>
+
+</div>
+
+<CustomFooter />

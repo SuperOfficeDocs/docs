@@ -18037,6 +18037,30 @@
     {
       "source": "/en/saint/learn/status-dialog",
       "destination": "/en/saint/learn/index"
+    },
+    {
+      "source": "/en/admin/lists/learn/privacy-legal-base-add",
+      "destination": "/en/security/privacy/admin/add-legal-base"
+    },
+    {
+      "source": "/en/security/privacy/learn/admin/add-consent-purpose",
+      "destination": "/en/security/privacy/admin/add-purpose"
+    },
+    {
+      "source": "/en/admin/lists/learn/privacy-source-add",
+      "destination": "/en/security/privacy/admin/add-source"
+    },
+    {
+      "source": "/en/security/privacy/learn/edit-privacy-confirmation-email",
+      "destination": "/en/security/privacy/admin/edit-privacy-confirmation-email"
+    },
+    {
+      "source": "/en/security/privacy/learn/implementation-guide",
+      "destination": "/en/security/privacy/admin/index"
+    },
+    {
+      "source": "/en/search-options/selection/learn/howto/mass-delete",
+      "destination": "/en/security/privacy/learn/mass-delete"
     }
   ]
 }

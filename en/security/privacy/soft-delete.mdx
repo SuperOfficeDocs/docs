@@ -13,18 +13,19 @@ index: true
 
 Soft delete means that instead of deleting a record physically from the database, it is marked as deleted instead. Rows that have NULL or our beginning-of-time value (which in SuperOffice is 1.1.1760) are considered active; rows that have a different date are considered deleted.
 
-When a **contact** or **person** is deleted in SuperOffice it gets the **deletedDate** set, and when a **request** is deleted it sets the [status of the ticket to Deleted][5] and updates last_changed. This removes it from the UI and puts it in the [Recycle Bin][1]. What happens behind the scenes is that when the application code searches for a record in for example the person-table, this code will appendAND (deletedDate IS NULL OR deletedDate = 1.1.1760) to the query (for each table that has soft-delete). As a result, such rows disappear from the results and are never given back to the application – which in practice is the same as deleting them.
+When a **contact** or **person** is deleted in SuperOffice it gets the **deletedDate** set, and when a **request** is deleted it sets the [status of the ticket to Deleted][5] and updates last_changed. This removes it from the UI and puts it in the [Recycle Bin][1]. What happens behind the scenes is that when the application code searches for a record in for example the person-table, this code will appendAND (deletedDate IS NULL OR deletedDate = 1.1.1760) to the query (for each table that has soft-delete). As a result, such rows disappear from the results and are never given back to the application - which in practice is the same as deleting them.
 
 ## GDPR
 
-GDPR places limits on keeping irrelevant information, and soft-deleted records are no exception. Therefore, after a time – which will default to 14 days unless specifically set in [System preference][2] >> **Retain deleted data** – a periodic background process will *really* delete soft-deleted records that are older than the "retention time".
+GDPR places limits on keeping irrelevant information, and soft-deleted records are no exception. Therefore, after a time - which will default to 14 days unless specifically set in [System preference][2] >\> **Retain deleted data** - a periodic background process will *really* delete soft-deleted records that are older than the "retention time".
 
 Directly dependent records such as email or phone are deleted. Other tables have independent reasons to exist: a meeting still happened, even if no longer have a valid person reference, so there we just zero the appointment.person_id.
 
 For those using the APIs at any level, the interception code will change it into an Update automatically. Search for something through the API, and the filtering conditions will be appended. For those who work directly with the database, it's recommended switching to an API approach for this reason.
 
->[!TIP]
-> If the incoming request includes select for deletedDate > 1.1.176, this will switch off the automatic filtering conditions for all tables in the query.
+<Tip>
+If the incoming request includes select for deletedDate > 1.1.176, this will switch off the automatic filtering conditions for all tables in the query.
+</Tip>
 
 ## Searching for soft-deleted records
 
@@ -91,7 +92,7 @@ When a hard-delete occurs there is a lot of information that gets edited based o
 | form_submission        | contact_id                  |                                                         |
 | invoice                | company_id                  |                                                         |
 | invoice_sum            | company_id                  |                                                         |
-| person                 | contact_id                  | contact -> person cascade is handled elsewhere          |
+| person                 | contact_id                  | contact -\> person cascade is handled elsewhere          |
 | projectmember          | contact_id                  |                                                         |
 | sale                   | contact_id                  |                                                         |
 | salehist               | contact_id                  |                                                         |
@@ -114,8 +115,9 @@ When a hard-delete occurs there is a lot of information that gets edited based o
 | sl_vendor              | contact_id                  | contact records are never deleted; deleting is a mistake |
 | traveltransactionlog   | tablenumber                 |                                                         |
 
->[!NOTE]
-> CustomFields and ExtraTables also gets cleaned up.
+<Note>
+CustomFields and ExtraTables also gets cleaned up.
+</Note>
 
 ### Hard-delete of Person
 
@@ -201,8 +203,9 @@ When a hard-delete occurs there is a lot of information that gets edited based o
 | relationtarget         | source_table                  |                                           |
 | traveltransactionlog   | tablenumber                   |                                           |
 
->[!NOTE]
-> CustomFields and ExtraTables also gets cleaned up.
+<Note>
+CustomFields and ExtraTables also gets cleaned up.
+</Note>
 
 ### Hard-delete Request
 
@@ -227,24 +230,23 @@ For the person, contact and ticket tables, a delete through any API becomes an u
 
 For users, it means that delete operations can be undone. For DBAs, the deep delete means a more consistent database.
 
-<!--Reference links-->
-[1]: ../../learn/basics/deleting-elements.md#restore
-[2]: ../../admin/preferences/service-settings.md
-[3]: ../../online/mirroring/overview.md
-[4]: ../../onsite/travel/index.md
-[5]: ../../database/tables/enums/ticketbasestatus.md
-[6]: ../../database/tables/ticket.md
-[7]: ../../database/tables/ej-message.md
-[8]: ../../database/tables/ticket-log.md
-[9]: ../../database/tables/ticket-log-action.md
-[10]: ../../database/tables/ticket-log-action.md
-[11]: ../../database/tables/ticket-customers.md
-[12]: ../../database/tables/favourite.md
-[13]: ../../database/tables/message-header.md
-[14]: ../../database/tables/ticket-attachment.md
-[15]: ../../database/tables/attachment.md
-[16]: ../../database/tables/invoice-entry.md
-[17]: ../../database/tables/message-customers.md
-[18]: ../../api/archive-providers/reference/recyclecontact.md
-[19]: ../../api/archive-providers/reference/recycleperson.md
-[20]: ../../api/archive-providers/reference/recycleticket.md
+[1]: ../../learn/basics/deleting-elements#restore
+[2]: ../../admin/preferences/service-settings
+[3]: ../../online/mirroring/overview
+[4]: ../../onsite/travel/index
+[5]: ../../database/tables/enums/ticketbasestatus
+[6]: ../../database/tables/ticket
+[7]: ../../database/tables/ej-message
+[8]: ../../database/tables/ticket-log
+[9]: ../../database/tables/ticket-log-action
+[10]: ../../database/tables/ticket-log-action
+[11]: ../../database/tables/ticket-customers
+[12]: ../../database/tables/favourite
+[13]: ../../database/tables/message-header
+[14]: ../../database/tables/ticket-attachment
+[15]: ../../database/tables/attachment
+[16]: ../../database/tables/invoice-entry
+[17]: ../../database/tables/message-customers
+[18]: ../../api/archive-providers/reference/recyclecontact
+[19]: ../../api/archive-providers/reference/recycleperson
+[20]: ../../api/archive-providers/reference/recycleticket

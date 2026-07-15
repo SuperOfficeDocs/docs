@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Privacy <i class="ph ph-shield" aria-label="Shield icon"></i>
+# Privacy \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
 
 The **Privacy** feature in SuperOffice will assist you in protecting the data privacy of your customers and complying with the EU's General Data Protection Regulation (GDPR).
 
@@ -71,10 +71,7 @@ If you do *not* select this option, only persons with **E-marketing** set to **O
 * [Add items to the Privacy - Source list][4]
 * [Conversion tracking (UTM)][5]
 
-<!-- Referenced links -->
-[2]: ../admin/add-purpose.md
-[3]: ../admin/add-legal-base.md
-[4]: ../admin/add-source.md
-[5]: ../../../marketing/utm/learn/index.md
-
-<!-- Referenced images -->
+[2]: ../admin/add-purpose
+[3]: ../admin/add-legal-base
+[4]: ../admin/add-source
+[5]: ../../../marketing/utm/learn/index

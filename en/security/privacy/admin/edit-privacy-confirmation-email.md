@@ -44,8 +44,5 @@ The privacy confirmation email template is an **email template**, which is creat
 * [How to add an email template][1]
 * [Send a privacy email for your contacts right to be informed][2]
 
-<!-- Referenced links -->
-[1]: ../../../email/admin/add-email-template.md
-[2]: ../learn/send-privacy-confirmation-email.md
-
-<!-- Referenced images -->
+[1]: ../../../email/admin/add-email-template
+[2]: ../learn/send-privacy-confirmation-email
