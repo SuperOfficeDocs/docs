@@ -16265,6 +16265,58 @@
     {
       "source": "/en/dashboard/learn/remove-tile",
       "destination": "/en/dashboard/learn/working-with-tiles"
+    },
+    {
+      "source": "/en/admin/lists/learn/follow-up-type",
+      "destination": "/en/diary/admin/add-follow-up-type"
+    },
+    {
+      "source": "/en/admin/lists/learn/adding-items-to-follow-up-type-list",
+      "destination": "/en/diary/admin/add-follow-up-type"
+    },
+    {
+      "source": "/en/admin/lists/learn/resource",
+      "destination": "/en/diary/admin/add-resource"
+    },
+    {
+      "source": "/en/admin/lists/learn/adding-items-to-resource-list",
+      "destination": "/en/diary/admin/add-resource"
+    },
+    {
+      "source": "/en/diary/howto/index",
+      "destination": "/en/diary/dev/index"
+    },
+    {
+      "source": "/en/diary/reference/index",
+      "destination": "/en/diary/dev/index"
+    },
+    {
+      "source": "/en/diary/learn/invitation/add-participant",
+      "destination": "/en/diary/learn/invitation/add-attendee"
+    },
+    {
+      "source": "/en/diary/invitations",
+      "destination": "/en/diary/learn/invitation/index"
+    },
+    {
+      "source": "/en/diary/recurring-appointments",
+      "destination": "/en/diary/learn/recurrence/index"
+    },
+    {
+      "source": "/en/diary/learn/screen/dialog-for-followups",
+      "destination": "https://help.superoffice.com/Documentation/Help/EN/CRM/UserHelp/index.htm#t=StandardCRM%2Fchap02%2FDialog_for_followups.htm"
+    },
+    {
+      "source": "/en/diary/learn/screen/",
+      "destination": "/en/diary/learn/index"
+    },
+    {
+      "source": "/en/diary/overview",
+      "destination": "/en/diary/learn/index"
+    },
+    {
+      "source": "/en/admin/preferences/learn/video-meetings/index",
+      "destination": "/en/diary/learn/video-meetings"
     }
   ]
 }
