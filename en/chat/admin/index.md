@@ -45,8 +45,5 @@ These are the steps to how to configure the chat widget and then add it to your 
 * [Step 1: Configure the chat widget][1]
 * [Step 2: Add Chat to your website][2]
 
-<!-- Referenced links -->
-[1]: channel-create.md
-[2]: add-javascript.md
-
-<!-- Referenced images -->
+[1]: ./channel-create
+[2]: ./add-javascript

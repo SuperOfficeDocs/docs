@@ -49,7 +49,5 @@ If a contact is not found in SuperOffice, you can create a new contact and compa
 
 ![You can add a new contact to SuperOffice CRM through the side panel -screenshot][img2]
 
-<!-- Referenced links -->
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/chat/chat-link-to-contact.png
 [img2]: ../../../media/loc/en/chat/chat-add-new-to-contact.png
