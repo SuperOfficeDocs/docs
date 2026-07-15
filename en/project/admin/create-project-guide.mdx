@@ -18,9 +18,11 @@ redirect_from:
   - /en/project/learn/screen/project-guide-admin
 ---
 
+import ReqAdmin from "../../learn/includes/req-admin.md";
+
 # Create a new project guide
 
-[!include[Must be admin](../../learn/includes/req-admin.md)]
+<ReqAdmin />
 
 In Settings and maintenance, you define which project types are to be assigned a project guide and which statuses and activities the project guides are to contain. What a project guide looks like can therefore vary.
 
@@ -68,17 +70,19 @@ After you create statuses and specify a project type for the project guide, you 
 
 3. In the **Project type** list, select the project type you want to create a project guide for. The statuses selected for this project type are displayed in the list above.
 
-    > [!NOTE]
-    > If the project type is not set up to have a project guide, click **Click here to enable guide** at the bottom of the screen.
-    >
-    > If there are no statuses defined for the project type, click **Click here to add statuses** at the bottom of the screen. You can also edit the project type by clicking the **Edit** button at the top.
+    <Note>
+    If the project type is not set up to have a project guide, click **Click here to enable guide** at the bottom of the screen.
+
+    If there are no statuses defined for the project type, click **Click here to add statuses** at the bottom of the screen. You can also edit the project type by clicking the **Edit** button at the top.
+    </Note>
 
 4. Select the required status in the list. The status's details are shown at the bottom of the screen.
 
 5. [Add one or more follow-ups for the selected status](#add-fo-status).
 
-    > [!NOTE]
-    > You do not have to add a document for each status, but you should add at least one follow-up for each status.
+    <Note>
+    You do not have to add a document for each status, but you should add at least one follow-up for each status.
+    </Note>
 
 6. [Add one or more documents for the selected status](#add-doc-status).
 
@@ -96,8 +100,9 @@ The changes are saved automatically. The project guide will now be displayed in 
 
 4. Enter the purpose of the follow-up, in the **The purpose of this follow-up** field. This text is displayed when you hold the mouse-pointer over the follow-up in the **Project guide** section tab in SuperOffice CRM.
 
-    > [!NOTE]
-    > Some of the options before are, for logical reasons, not relevant for the first follow-up in a project guide.
+    <Note>
+    Some of the options before are, for logical reasons, not relevant for the first follow-up in a project guide.
+    </Note>
 
 5. Check **Assign follow-up to project member** to make it possible to assign this follow-up to one of the project participants. When the project owner creates this follow-up in SuperOffice CRM, they can choose one of their associates to be the owner of the follow-up.
 
@@ -111,8 +116,9 @@ The changes are saved automatically. The project guide will now be displayed in 
 
 10. In the **Default text in follow-up** field, enter a description for the follow-up.
 
-    > [!TIP]
-    > The user can change the above information as required.
+    <Tip>
+    The user can change the above information as required.
+    </Tip>
 
 11. Click **Save**.
 
@@ -160,12 +166,10 @@ Planning meeting:
 
 * [Edit or deactivate a project guide][5]
 
-<!-- Referenced links -->
-[1]: ../../document/templates/variables/from-project-card.md
-[4]: ../../document/templates/learn/index.md
-[2]: project-status.md
-[3]: project-type.md
-[5]: edit-project-guide.md
+[1]: ../../document/templates/variables/from-project-card
+[4]: ../../document/templates/learn/index
+[2]: ./project-status
+[3]: ./project-type
+[5]: ./edit-project-guide
 
-<!-- Referenced images -->
 [img2]: ../../../media/loc/en/project/create-project-guide.png

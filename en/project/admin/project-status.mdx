@@ -18,9 +18,11 @@ redirect_from:
   - /en/admin/lists/learn/project-status
 ---
 
+import ReqAdmin from "../../learn/includes/req-admin.md";
+
 # Project status
 
-[!include[Must be admin](../../learn/includes/req-admin.md)]
+<ReqAdmin />
 
 The **Status** field in the Project card helps categorize and track a project's progress. These statuses are predefined in the **Project - Status** list, which you can manage in **Settings and maintenance** under **Lists**.
 
@@ -44,7 +46,7 @@ Statuses can be linked to [project types][1], specifying which statuses are avai
 
 ## Edit or delete a status
 
-1. Follow steps 1–2 in **Add a Status** to access the **Project - Status** list.
+1. Follow steps 1-2 in **Add a Status** to access the **Project - Status** list.
 
 1. To edit:
     1. Double-click the required status to open the **Edit list item** dialog.
@@ -53,8 +55,9 @@ Statuses can be linked to [project types][1], specifying which statuses are avai
 1. To delete:
    1. Select the status in the list and click **Delete**.
 
-    > [!CAUTION]
-    > Deleting a status removes it from all linked project types and project guides. Ensure it is not in active use before proceeding.
+    <Caution>
+    Deleting a status removes it from all linked project types and project guides. Ensure it is not in active use before proceeding.
+    </Caution>
 
 ## Restore a deleted project status
 
@@ -69,11 +72,8 @@ The steps are similar to [restoring a deleted project type][2].
 * [Edit a project guide][4]
 * [Move project to next status][5]
 
-<!-- Referenced links -->
-[1]: project-type.md
-[2]: project-type.md#restore
-[3]: create-project-guide.md
-[4]: edit-project-guide.md
-[5]: ../learn/project-guides.md#change-status
-
-<!-- Referenced images -->
+[1]: ./project-type
+[2]: ./project-type#restore
+[3]: ./create-project-guide
+[4]: ./edit-project-guide
+[5]: ../learn/project-guides#change-status

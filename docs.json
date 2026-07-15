@@ -16173,6 +16173,78 @@
     {
       "source": "/en/custom-objects/overview",
       "destination": "/en/custom-objects/reference/index"
+    },
+    {
+      "source": "/en/project/learn/project-guide/create",
+      "destination": "/en/project/admin/create-project-guide"
+    },
+    {
+      "source": "/en/project/learn/screen/project-guide-admin",
+      "destination": "/en/project/admin/create-project-guide"
+    },
+    {
+      "source": "/en/project/learn/project-guide/deactivate",
+      "destination": "/en/project/admin/edit-project-guide"
+    },
+    {
+      "source": "/en/project/learn/project-guide/edit",
+      "destination": "/en/project/admin/edit-project-guide"
+    },
+    {
+      "source": "/en/project/learn/screen/project-status-admin",
+      "destination": "/en/project/admin/project-status"
+    },
+    {
+      "source": "/en/admin/lists/learn/project-status",
+      "destination": "/en/project/admin/project-status"
+    },
+    {
+      "source": "/en/project/learn/screen/project-type-admin",
+      "destination": "/en/project/admin/project-type"
+    },
+    {
+      "source": "/en/admin/lists/learn/project-type",
+      "destination": "/en/project/admin/project-type"
+    },
+    {
+      "source": "/en/project/overview",
+      "destination": "/en/project/dev/index"
+    },
+    {
+      "source": "/en/project/howto/index",
+      "destination": "/en/project/dev/index"
+    },
+    {
+      "source": "/en/project/reference/index",
+      "destination": "/en/project/dev/index"
+    },
+    {
+      "source": "/en/project/learn/screen/project-members-tab",
+      "destination": "/en/project/learn/project-members/index"
+    },
+    {
+      "source": "/en/project/learn/screen/",
+      "destination": "/en/project/learn/index"
+    },
+    {
+      "source": "/en/project/learn/screen/index",
+      "destination": "/en/project/learn/index"
+    },
+    {
+      "source": "/en/project/learn/project-guide/index",
+      "destination": "/en/project/learn/project-guides"
+    },
+    {
+      "source": "/en/project/learn/project-guide/project-guide-tab",
+      "destination": "/en/project/learn/project-guides"
+    },
+    {
+      "source": "/en/project/learn/project-guide/view-followups-and-documents",
+      "destination": "/en/project/learn/project-guides"
+    },
+    {
+      "source": "/en/project/learn/project-guide/working-with",
+      "destination": "/en/project/learn/project-guides"
     }
   ]
 }

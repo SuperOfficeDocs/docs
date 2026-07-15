@@ -53,7 +53,4 @@ The **Image** tab allows you to upload and manage images for a project.
     * Click **OK** and **Save** to reset to the default image.
     * Or, upload/select a new image, then click **OK** and **Save** to apply the changes.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/project/project-image.png

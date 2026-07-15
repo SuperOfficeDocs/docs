@@ -20,5 +20,4 @@ language: en
 3. Right-click and select **Request a meeting**.
 4. [Enter the required information in the fields.][1]
 
-<!-- Referenced links -->
-[1]: ../../../diary/learn/create-follow-up.md#fields
+[1]: ../../../diary/learn/create-follow-up#fields
