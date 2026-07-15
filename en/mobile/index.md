@@ -18,7 +18,7 @@ index: true
 
 # Mobile CRM - Access your CRM on the go
 
-SuperOffice Mobile CRM has been redesigned to give you faster access, better navigation, and a cleaner interface—while still offering all the powerful tools you need to work from anywhere.
+SuperOffice Mobile CRM has been redesigned to give you faster access, better navigation, and a cleaner interface-while still offering all the powerful tools you need to work from anywhere.
 
 Whether you're meeting a customer, following up on a sale, or responding to service requests, Mobile CRM puts the full power of SuperOffice in your pocket.
 
@@ -32,7 +32,7 @@ Cleaner, more intuitive design with thumb-friendly navigation and faster access 
 
 ### Compressed views
 
-See contacts, activities, documents, sales, and projects in a single scrollable view—no need to tap through tabs.
+See contacts, activities, documents, sales, and projects in a single scrollable view-no need to tap through tabs.
 
 ### Real-time notifications
 
@@ -97,18 +97,16 @@ Already logged in? [Explore the interface][4] or [customize your settings][5].
 * [Responding to requests][8]
 * [Create documents and log meetings][9]
 
-<!-- Referenced links -->
-[1]: login.md
-[2]: set-up-email.md
-[3]: caller-id.md
-[4]: interface-guide.md
-[5]: settings.md
-[6]: diary/index.md
-[7]: sale/index.md
-[8]: request/index.md
-[9]: document/index.md
+[1]: ./login
+[2]: ./set-up-email
+[3]: ./caller-id
+[4]: ./interface-guide
+[5]: ./settings
+[6]: ./diary/index
+[7]: ./sale/index
+[8]: ./request/index
+[9]: ./document/index
 [16]: https://apps.apple.com/us/app/superoffice-mobile-crm/id1516435957
 [17]: https://play.google.com/store/apps/details?id=no.superoffice.mobile&hl=no&gl=US&pli=1
 
-<!-- Referenced images -->
 [img1]: ../../media/loc/en/mobile/3-screens.png

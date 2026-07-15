@@ -38,9 +38,7 @@ If you have configured **notifications** for meetings, a **pop-up alert** will a
 * [Manage notifications][1]
 * [About video meetings][2]
 
-<!-- Referenced links -->
-[1]: ../manage-notifications.md
-[2]: ../../diary/learn/video-meetings.md
+[1]: ../manage-notifications
+[2]: ../../diary/learn/video-meetings
 
-<!-- Referenced images -->
 [img3]: ../../../../release-notes/mobile/media/92-6.png

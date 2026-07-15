@@ -41,8 +41,7 @@ Updating company information is similar to [editing a contact][3]. Simply, tap t
 * [Scan a business card][2]
 * [Merge companies][4]
 
-<!-- Referenced links -->
-[1]: ../contact/create.md
-[2]: ../contact/scan-business-card.md
-[3]: ../contact/update.md
-[4]: ../../company/learn/merge-companies.md
+[1]: ../contact/create
+[2]: ../contact/scan-business-card
+[3]: ../contact/update
+[4]: ../../company/learn/merge-companies

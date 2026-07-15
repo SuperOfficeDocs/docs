@@ -50,10 +50,7 @@ language: en
 * [Move a contact to another company][3]
 * [Merge contacts][4]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../contact/learn/delete.md
-[3]: ../../contact/learn/move.md
-[4]: ../../contact/learn/merge-contacts.md
-
-<!-- Referenced images -->
+[1]: ./create
+[2]: ../../contact/learn/delete
+[3]: ../../contact/learn/move
+[4]: ../../contact/learn/merge-contacts

@@ -69,6 +69,7 @@ en/**
 !en/email/**
 !en/document/**
 !en/search-options/**
+!en/mobile/**
 
 # Ignore database except index files
 en/database/**

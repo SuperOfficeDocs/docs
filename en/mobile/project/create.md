@@ -42,10 +42,7 @@ After saving, you can:
 * [Create follow-up][2]
 * [Create document][5]
 
-<!-- Referenced links -->
-[1]: update.md
-[4]: update.md#add-project-member
-[2]: ../diary/create-appointment.md
-[5]: ../document/create.md
-
-<!-- Referenced images -->
+[1]: ./update
+[4]: ./update#add-project-member
+[2]: ../diary/create-appointment
+[5]: ../document/create

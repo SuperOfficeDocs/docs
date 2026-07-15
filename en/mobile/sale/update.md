@@ -72,11 +72,9 @@ When available, you will be able to link a sale to an **incoming request** for b
 * [Delete a sale (in SuperOffice CRM)][2]
 * [Update a request][4]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../../en/sale/learn/delete.md
-[3]: ../../../en/sale/learn/stages.md
-[4]: ../request/update.md
+[1]: ./create
+[2]: ../../../en/sale/learn/delete
+[3]: ../../../en/sale/learn/stages
+[4]: ../request/update
 
-<!-- Referenced images -->
 [img2]: ../../../media/loc/en/mobile/sale-details.png
