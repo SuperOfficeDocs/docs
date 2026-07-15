@@ -1,0 +1,164 @@
+---
+uid: notify-customer-state-change
+title: Tenant status webhook
+description: Get notifications when tenant status changes
+keywords: state, tenant
+author: Eivind Fasting, Bergfrid Dias
+date: 09.06.2024
+version_devportal: 1.25
+content_type: howto
+deployment: online
+platform: web
+---
+
+import HasIntegration from "../../includes/has-integration.md";
+
+# Tenant status webhook
+
+1. Set up a web service listening for state changes. For example:
+
+    `https://www.awesomeapp.com/NotifyCustomerStateChange`
+
+1. In the Developer Portal, go to your app page.
+
+1. Select **Configuration**.
+
+1. Select **Integration settings**.
+
+    ![Configure notifications -screenshot][img1]
+
+1. Scroll down to the **Customer state change** section and enter the URL of your endpoint that SuperOffice should push notifications to when a tenant changes status.
+
+    `https://www.awesomeapp.com/NotifyCustomerStateChange`
+
+    Optionally, turn on **Configure per Environment** to set different URLs for SOD, Stage, and Production.
+
+    ![Configure notifications per environment -screenshot][img2]
+
+1. <HasIntegration />
+
+1. Click **Save Settings** or **OK**.
+
+1. [Request to publish the new configuration.][1]
+
+You are now set to parse notifications when you get them.
+
+## Parse notifications
+
+The application **must** take advantage of these notifications to ensure their environments are kept up-to-date with the status of SuperOffice CRM Online tenants.
+
+While there are several ways to process tenant status changes notification, the following is a short example of what that might look like using .NET and C#.
+
+### Payload
+
+The JSON payload contains the following information:
+
+* Tenant context identifier
+* The change type
+* A text representation of the installation version
+* The version of the file set
+* A JWT to verify it was sent by SuperOffice
+* The current public endpoint
+
+**Upgrade:**
+
+```json
+{
+  "ChangeType": 0,
+  "ContextIdentifier": "Cust12345",
+  "VersionName": "Release 8.4 R08",
+  "FileVersion": "8.4.12.1234",
+  "Token": "eyJ234ASD...1234#"
+}
+```
+
+**Move endpoint:**
+
+```json
+{
+  "ChangeType":5,
+  "ContextIdentifier":"Cust12345",
+  "VersionName":"Release_10.3.8_2024.08.30-01",
+  "FileVersion":"10.3.8.2024",
+  "Token":"eyJ....",
+  "PublicEndpoint":"sod3.superoffice.com"
+}
+```
+
+### CustomerStateChangeNotificationType enumeration
+
+```csharp CS
+public enum CustomerStateChangeNotificationType
+{
+  Upgrade = 0,
+  BackupRestored = 1,
+  Suspend = 2,
+  Resume = 3,
+  Delete = 4,
+  Move = 5
+}
+```
+
+#### NotificationMessage
+
+```csharp CS
+public class NotificationMessage
+{
+  public CustomerStateChangeNotificationType ChangeType { get; set; }
+  public string ContextIdentifier { get; set; }
+  public string VersionName { get; set; }
+  public string FileVersion { get; set; }
+  public string Token { get; set; }
+  public string PublicEndpoint { get; set; }
+}
+```
+
+#### API Controller and JWT validation
+
+```csharp CS
+public class NotifyCustomerStateChangeController : ApiController
+{
+  public void Post([FromBody]NotificationMessage message)
+  {
+    try
+    {
+      // SuperIdTokenHandler is available in NuGet package: SuperOffice.Crm.Online.Core
+      SuperIdToken validated = ValidateToken(message.Token);
+      // process accordingly...
+    }
+    catch (Exception ex)
+    {
+      // handle invalid token...
+      throw;
+    }
+  }
+  public static SuperIdToken ValidateToken(string token)
+  {
+    var path = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/") + "SOD_SuperOfficeFederatedLogin.crt";
+    var tokenHandler = new SuperIdTokenHandler();
+    tokenHandler.JwtIssuerSigningCertificate = new X509Certificate2(path);
+    tokenHandler.CertificateValidator = X509CertificateValidator.ChainTrust;
+    tokenHandler.ValidIssuer = "https://sod.superoffice.com";
+
+    return tokenHandler.ValidateToken(token, TokenType.Jwt);
+  }
+}
+```
+
+### Change type
+
+The **change type** is a number value that corresponds to the operation performed on the tenant. The possible change types are:
+
+| Type | Name | Description |
+|:----:|------|-------------|
+| 0 | Upgrade | Occurs when a tenant installation is upgraded to a new version of SuperOffice. |
+| 1 | BackupRestored | Occurs when a tenant installation is restored from a backup. |
+| 2 | Suspend | Occurs when a tenant installation is placed in suspension. |
+| 3 | Resume | Occurs when a tenant installation is resumed from another operation. |
+| 4 | Delete | Occurs when a tenant installation is deleted. |
+| 5 | Move | Occurs when a tenant is moved to another public endpoint. Check the `PublicEndpoint` value. |
+
+[1]: ../../create-app/request-to-publish
+
+[img1]: ../../media/integration-settings.png
+[img2]: ../media/endpoint-per-envir.png

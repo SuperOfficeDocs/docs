@@ -102,30 +102,28 @@ The [steps to update all App Store information][3] are the same.
 * [Partner settings][23]
 * [User settings][24]
 
-<!-- Referenced links -->
-[1]: seo.md
-[2]: update-partner-profile.md
-[3]: update-app-page.md
-[4]: user-guide.md#how-to-install
-[5]: user-guide.md#links
-[6]: prices-and-terms.md
+[1]: ./seo
+[2]: ./update-partner-profile
+[3]: ./update-app-page
+[4]: ./user-guide#how-to-install
+[5]: ./user-guide#links
+[6]: ./prices-and-terms
 
-[7]: ../requirements/marketing.md#application-description
-[8]: ../requirements/marketing.md#application-name
-[9]: ../publish.md#beta
-[10]: ../publish.md
+[7]: ../requirements/marketing#application-description
+[8]: ../requirements/marketing#application-name
+[9]: ../publish#beta
+[10]: ../publish
 
-[12]: ../../create-app/config/app-config.md
-[13]: ../../create-app/index.md
-[16]: ../../custom-app/index.md
+[12]: ../../create-app/config/app-config
+[13]: ../../create-app/index
+[16]: ../../custom-app/index
 
-[21]: ../../faq/update-contact-person.md
-[22]: ../../partner/manage-technical-contacts.md
-[23]: ../../partner/partner-settings.md
-[24]: ../../partner/user-settings.md
-[26]: ../../best-practices/tenant-status/get-notifications.md
-[27]: ../../best-practices/tenant-status/index.md
-[28]: ../../best-practices/error-emails.md
+[21]: ../../faq/update-contact-person
+[22]: ../../partner/manage-technical-contacts
+[23]: ../../partner/partner-settings
+[24]: ../../partner/user-settings
+[26]: ../../best-practices/tenant-status/get-notifications
+[27]: ../../best-practices/tenant-status/index
+[28]: ../../best-practices/error-emails
 
-<!-- Referenced images -->
 [img1]: ../../media/app-overview.png

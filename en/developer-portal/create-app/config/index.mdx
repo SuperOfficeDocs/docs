@@ -1,0 +1,61 @@
+---
+uid: dp-app-config-intro
+title: Application configuration
+description: Overview of application configuration in the SuperOffice Developer Portal.
+keywords: Developer Portal, app, security
+author: Bergfrid Dias
+date: 02.26.2025
+version: 2.0
+version_devportal: 2.0
+content_type: concept
+deployment: online
+---
+
+# Application configuration
+
+## Get keys
+
+If you have registered the application but lost the keys, you need to [look up your ID][7] and [create a new secret][8].
+
+## Authentication
+
+* [Check what your client ID is][7]
+* [Create a new client secret][8]
+* [Add a certificate][10]
+* [About user contexts][4]
+
+<Caution>
+SuperOffice doesn't store the **client secret and certificate private key** in the database. When you create a new secret or certificate, copy and store this information. You can't go back and look it up in the Developer Portal later.
+</Caution>
+
+<Frame caption="Watch the walk-through">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube-nocookie.com/embed/kqEpAw7qQEY"
+    title="Watch the walk-through"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+## URLs
+
+* [View or change CORS and redirection URLs][9]
+* [About redirects][6]
+
+## User management
+
+* [Manage permissions within the organization][3]
+* [Add a user][1]
+
+[1]: ../../partner/add-user
+[3]: ../../partner/manage-permissions
+[4]: ../../getting-started/user-contexts
+[6]: ./redirects
+[7]: ./find-clientid
+[8]: ./get-client-secret
+[9]: ./cors-and-redirection-urls
+[10]: ./new-certificate

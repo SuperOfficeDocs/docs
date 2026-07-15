@@ -37,10 +37,8 @@ To resolve this issue:
 1. Sign in to the Developer Portal and [verify that the redirect URL is correct and valid][2].
 1. If this setting is correct, copy the complete **Request ID** from the error dialog and send it in an email to `appdev AT superoffice.com`.
 
-<!-- Referenced links -->
-[1]: ../create-app/config/redirects.md
-[2]: ../create-app/config/cors-and-redirection-urls.md
+[1]: ../create-app/config/redirects
+[2]: ../create-app/config/cors-and-redirection-urls
 
-<!-- Referenced images -->
-[img1]: media/redirect-consent-error.png
-[img2]: media/no-access-error-page.png
+[img1]: /media/loc/en/developer-portal/redirect-consent-error.png
+[img2]: /media/loc/en/developer-portal/no-access-error-page.png

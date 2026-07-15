@@ -40,8 +40,5 @@ Each partner and application has a designated technical contact who receives ema
 
 * Or, follow the steps above, but select a smaller subset in step 2. After saving, repeat the steps with another subset. This allows you to quickly distribute responsibility among several users. Useful if the partner has numerous applications.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/technical-contacts.png
-[img2]: media/edit-technical-contact.png
+[img1]: /media/loc/en/developer-portal/technical-contacts.png
+[img2]: /media/loc/en/developer-portal/edit-technical-contact.png

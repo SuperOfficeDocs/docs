@@ -12,14 +12,14 @@ platform: web
 
 # Security requirements
 
-It is paramount that you keep data secure. Security is our topmost concern.
+It is paramount that you keep data secure. Security is our topmost concern.
 
 If needed, we may go back in time to see when and by whom an operation was performed.
 
 ## Requirements
 
 * [Standard applications][1] must pass [certification by SuperOffice][2].
-* Standard applications must pass a [security audit by Telenor Cyberdefense][3].
+* Standard applications must pass a [security audit by Telenor Cyberdefense][3].
 * All red flags reported by Telenor Cyberdefense must be fixed before the application is published as a [beta][4].
 * [Custom applications][5] must pass [validation by SuperOffice][6]
 
@@ -38,11 +38,11 @@ If needed, we may go back in time to see when and by whom an operation was perfo
 ### Data access
 
 * Use the SuperOffice APIs to read from and write to the database to ensure data consistency.
-* Ensure **role, group, and user permissions** are adhered to.
-  * Ensure that **sentry rules** are followed.
+* Ensure **role, group, and user permissions** are adhered to.
+  * Ensure that **sentry rules** are followed.
   * Give the user feedback when sentry denies access.
-  * Using the web services in the application user's context will ensure this happens automatically, however, be aware when running in [system user context][10].
-* Use the existing **Preference tables**, **ForeignKey, ForeignDevice, ForeignApp tables** to store extra information. If you need more tables, they must be hosted in your cloud.
+  * Using the web services in the application user's context will ensure this happens automatically, however, be aware when running in [system user context][10].
+* Use the existing **Preference tables**, **ForeignKey, ForeignDevice, ForeignApp tables** to store extra information. If you need more tables, they must be hosted in your cloud.
 
 ### Endpoints and application environment
 
@@ -69,17 +69,16 @@ If needed, we may go back in time to see when and by whom an operation was perfo
 * Always keep in mind the [OWASP top ten list][13].
 * Center for Internet Security Controls [CIS controls list][14]
 
-<!-- Referenced links -->
-[1]: ../index.md
-[2]: ../certification/certify-app.md
-[3]: ../certification/initial-security-eval.md
-[4]: ../publish.md#beta
-[5]: ../../custom-app/index.md
-[6]: ../../custom-app/validate.md
-[11]: ../../create-app/config/redirects.md
-[9]: ../../getting-started/index.md#client-secret
-[10]: ../../getting-started/user-contexts.md
-[12]: ../../getting-started/app-envir.md
-[17]: ../../../online/identity/federated-auth.md
+[1]: ../index
+[2]: ../certification/certify-app
+[3]: ../certification/initial-security-eval
+[4]: ../publish#beta
+[5]: ../../custom-app/index
+[6]: ../../custom-app/validate
+[11]: ../../create-app/config/redirects
+[9]: ../../getting-started/index#client-secret
+[10]: ../../getting-started/user-contexts
+[12]: ../../getting-started/app-envir
+[17]: ../../../online/identity/federated-auth
 [13]: https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 [14]: https://www.cisecurity.org/controls/cis-controls-list/

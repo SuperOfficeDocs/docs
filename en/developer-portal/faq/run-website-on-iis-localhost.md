@@ -22,5 +22,4 @@ To make it easier on yourself:
 
 If you open a solution and notice that the project has failed to load, this is probably because your Visual Studio is not run as an administrator. Restart the application and select **Run as administrator**.
 
-<!-- Referenced images -->
-[img1]: media/image014.png
+[img1]: /media/loc/en/developer-portal/image014.png

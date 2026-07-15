@@ -1,0 +1,131 @@
+---
+uid: dp-tenant-authorization
+title: Tenant authorization
+description: The Tenant Manager makes it easier to oversee and edit authorization records related to employees and tenants.
+keywords: tenant, authorization, authorize app
+author: Bergfrid Dias
+date: 07.13.2026
+version_devportal: 2.16
+content_type: concept
+deployment: online
+platform: web
+---
+
+import GoToAppPage from "../includes/go-to-app-page.md";
+
+# Tenant authorization
+
+The Tenant Manager makes it easier to oversee and update authorization records related to employees and tenants. The information is organized per environment. We do not yet show you if they are actively using the app.
+
+## Who has authorized this app?
+
+The **app page** shows how many tenants that have authorized one specific application in each environment.
+
+<GoToAppPage />
+
+2. Select **Overview** and locate the **Tenants** section. The table shows the number of tenants per environment.
+
+3. Click one of the environments (SOD, Stage, Production) to open the **Tenant listing** page. This page will show detailed tenant names and IDs for each environment. To know who authorized the app and when the authorization is valid, you need to select a specific tenant to open the **Tenant details** page.
+
+    <Note>
+    The tenants listed are filtered to show only those associated with the specific application if you accessed the tenant overview from the app page.
+    </Note>
+
+4. Optional, switch environments to explore further.
+
+## Authorization status
+
+Each authorization on the **Tenant details** page has a **Status** that tells you whether the app can still access that tenant:
+
+| Status | Meaning |
+|---|---|
+| **Active** | The authorization is in place and the app can access the tenant. |
+| **Expired** | The authorization's validity period has ended - the **To** date has passed. The app can no longer access the tenant until the authorization is renewed. |
+| **Revoked** | The authorization has been revoked. The connection between the app and the tenant's database is severed and the app can no longer access it. Data in the database is not removed. [Contact us][5] if you are unsure why the authorization was revoked. |
+
+To review authorization status for a tenant:
+
+1. On the **Tenant listing** page, open a tenant to see its **Tenant details** page.
+
+1. Select the **Authorizations** tab.
+
+1. Check the **Status** column. Each authorization is **Active**, **Expired**, or **Revoked**. Use the **Status** filter above the column to show only one status.
+
+![Tenant details Authorizations tab showing Active, Expired, and Revoked status -screenshot][img4]
+
+### See authorization status on the Tenant listing
+
+You don't have to open each tenant to find revoked or expired authorizations. The **Tenant listing** has an **Authorizations** column that summarizes how many of a tenant's app authorizations are **active**, **expired**, and **revoked**, so you can spot affected customers across all your apps at a glance.
+
+Open a tenant and go to the **Authorizations** tab to see the status of each individual authorization.
+
+![Tenant listing Authorizations column summarizing active, expired, and revoked authorizations -screenshot][img5]
+
+## Request authorization
+
+Apps require [customer consent][3] to access customer data.
+
+1. Navigate to your partner page in the Developer Portal and select **Tenants**.
+
+1. On the **Tenant listing** page, go to the **Production** tab and click **Request Authorization**.
+
+1. Select an application from the list.
+
+1. Enter customer name and Cust ID in production.
+
+1. Provide the email address of the customer's contact person.
+
+1. Optionally, add additional info.
+
+1. Click **Send**. An email will be sent to the customer for confirmation. Access is granted upon approval.
+
+![Request tenant authorization dialog in SuperOffice Developer portal -screenshot][img1]
+
+## Edit tenant authorization
+
+1. Go to the **Tenant listing** page.
+
+1. Select an environment tab (SOD, Stage, Production) and choose the tenant you wish to update.
+
+1. On the **Tenant details** page, open the **Authorizations** tab.
+
+1. Locate the application in the list and click **Edit**.
+
+1. Enter who you submit this request on behalf of.
+
+1. Complete the form and click **Send**.
+
+![Request edit tenant authorization in SuperOffice Developer portal -screenshot][img2]
+
+## Remove tenant authorization
+
+Revoking access severs the connection between the application and the tenant's database but does not remove data from the database.
+
+1. On the **Tenant details** page, go to the **Authorizations** tab.
+
+1. Locate the application in the list and click **Remove**.
+
+1. Enter the customer contact's email address.
+
+1. Provide a reason for removing the authorization.
+
+1. Click **Send**.
+
+![Request remove tenant authorization in SuperOffice Developer portal -screenshot][img3]
+
+## Related content
+
+* [Provisioning][2]
+* [About consent][3]
+* [How to get consent][4]
+
+[5]: https://dev.superoffice.com/contact-us
+[2]: ../provisioning/index
+[3]: ../provisioning/consent
+[4]: ../provisioning/get-consent
+
+[img1]: /media/loc/en/developer-portal/request-authorization.png
+[img2]: /media/loc/en/developer-portal/edit-authorization.png
+[img3]: /media/loc/en/developer-portal/remove-authorization.png
+[img4]: /media/loc/en/developer-portal/tenant-details-authorization-revoked.png
+[img5]: /media/loc/en/developer-portal/tenants-revoked-indication.png

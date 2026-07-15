@@ -1,0 +1,64 @@
+---
+uid: dp-new-certificate
+title: New certificate
+description: How to create a new certificate for an app in the SuperOffice Developer Portal.
+keywords: Developer Portal, app, certificate
+author: Bergfrid Dias
+date: 10.02.2025
+version: 2.0
+version_devportal: 2.0
+content_type: howto
+deployment: online
+---
+
+import NoteClearToReplace from "./includes/note-clear-to-replace.mdx";
+import GoToAppPage from "../../includes/go-to-app-page.md";
+import NoteExpiration from "./includes/note-expiration.mdx";
+import ReadyToPublish from "../includes/ready-to-publish.md";
+
+# New certificate
+
+The certificates in your application configuration are **RSA encryption keys**. You need the private key to [sign system user tokens][2] in server-to-server applications and database mirroring.
+
+The Developer Portal stores your public key. However, you must store the private key.
+
+<NoteClearToReplace />
+
+## How to
+
+<GoToAppPage />
+2. Select **Configuration** > **Authentication**.
+
+    ![Secrets and Certificates -screenshot][img1]
+
+3. Click **New Certificate**.
+
+    ![New Certificate dialog -screenshot][img2]
+
+4. Enter a description and expiration, and then click **Add**.
+
+    ![Certificates -screenshot][img3]
+
+    <NoteExpiration />
+
+5. Store the **private key** somewhere safe! You can't look it up in the Developer Portal later.
+
+6. Click **Save Settings**.
+
+    * If the new certificate is for **SOD only:** No further action is needed.
+    * If the certificate is for **stage, production, or all environments:** You must request publishing.
+
+<ReadyToPublish />
+
+## Related content
+
+* [Application environments][3]
+* [SuperID certificates][1]
+
+[3]: ../../getting-started/app-envir
+[1]: ../../../api/authentication/online/certificates/index
+[2]: ../../../api//authentication/online/auth-application/sign-system-user-token
+
+[img1]: /media/loc/en/developer-portal/secrets-and-certificates.png
+[img2]: /media/loc/en/developer-portal/add-certificate.png
+[img3]: /media/loc/en/developer-portal/certificate.png

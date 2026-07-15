@@ -71,6 +71,7 @@ en/**
 !en/search-options/**
 !en/mobile/**
 !en/online/**
+!en/developer-portal/**
 
 # Ignore database except index files
 en/database/**

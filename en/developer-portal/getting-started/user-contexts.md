@@ -14,7 +14,7 @@ platform: web
 
 An application can have three types of interaction with a tenant: interactive user sessions; non-interactive background services; or hybrid.
 
-SuperOffice CRM Online supports both types of interactions. The first as an **application user** context and the second as a **system user** context.
+SuperOffice CRM Online supports both types of interactions. The first as an **application user** context and the second as a **system user** context.
 
 **Internal applications** have tight integration with user interface components inside SuperOffice. Applications that add a navigator button, a menu button, or a web panel commonly follow this model.
 
@@ -28,7 +28,7 @@ SuperOffice CRM Online supports both types of interactions. The first as an **a
 
 ## Application user (interactive)
 
-This is the typical case when a **person** is signed in to SuperOffice.
+This is the typical case when a **person** is signed in to SuperOffice.
 
 **Requirements:**
 
@@ -37,13 +37,13 @@ This is the typical case when a **person** is signed in to SuperOffice.
 * Users have their own sign-in credentials
 * Users have their own options
 
-Applications are **not allowed to directly ask users for their credentials**, and therefore must use SuperOffice [federated authentication][1] to sign SuperOffice CRM Online users into their applications.
+Applications are **not allowed to directly ask users for their credentials**, and therefore must use SuperOffice [federated authentication][1] to sign SuperOffice CRM Online users into their applications.
 
 Interactive authentication is facilitated by the [SuperOffice Online sign-in page][10]. This is discussed in the [Authentication section][3].
 
 ## System user (non-interactive)
 
-All applications that run as background tasks, without user interaction, must receive a [system user token][2] and use the [system-user flow][2] for interacting with our web services. None of the [OpenID Connect flows][4] are supported.
+All applications that run as background tasks, without user interaction, must receive a [system user token][2] and use the [system-user flow][2] for interacting with our web services. None of the [OpenID Connect flows][4] are supported.
 
 The system user has unlimited access to the [tenant][6] and is not restricted by functional rights or data rights.
 
@@ -138,11 +138,10 @@ Supported in version **Services86** and higher, when used in SOAP requests, the 
 </SOAP-ENV:Envelope>
 ```
 
-<!-- Referenced links -->
-[6]: index.md#tenant
-[3]: what-api-to-use.md#authentication-scenarios
-[1]: ../../online/identity/federated-auth.md
-[2]: ../../api/authentication/online/auth-application/index.md
-[4]: ../../api/authentication/online/index.md
-[7]: ../../api/tutorials/minimal-csharp-app/overview.md
+[6]: ./index#tenant
+[3]: ./what-api-to-use#authentication-scenarios
+[1]: ../../online/identity/federated-auth
+[2]: ../../api/authentication/online/auth-application/index
+[4]: ../../api/authentication/online/index
+[7]: ../../api/tutorials/minimal-csharp-app/overview
 [10]: https://online.superoffice.com/login/

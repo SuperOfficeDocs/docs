@@ -1,0 +1,75 @@
+---
+title: Register a web app
+uid: dp-register-web-app
+description: Describes how to register a new web application in the SuperOffice Developer Portal.
+keywords: Developer Portal, app
+author: digitaldiina
+date: 07.07.2026
+version: 2.0
+version_devportal: 2.15
+content_type: howto
+deployment: online
+---
+
+import CustAppReqLicense from "./includes/cust-app-req-license.md";
+import NoteAppName from "./includes/note-app-name.mdx";
+import SetTechnicalContact from "./includes/set-technical-contact.md";
+
+# Register a web app
+
+## About this template
+
+This template creates a web app configuration that uses [interactive OIDC authentication][5].
+
+* Enables the [WebApi API endpoint][1]
+* Enables access to the [Webhook agent][4]
+
+<CustAppReqLicense />
+
+## Create app
+
+1. In the Developer Portal, go to your partner page and select **Applications** in the left menu.
+
+2. Click **Create App**.
+
+3. Choose the **Web app** template. Then select whether this is a custom or standard application. Click **Next**.
+
+4. Enter the name of your application. Click **Next**.
+
+    <NoteAppName />
+
+5. Enter one or more redirect URLs - one per line. Click **Next**.
+
+    ![Enter redirect URL -screenshot][img4]
+
+6. <SetTechnicalContact />
+
+    ![Developer Portal set technical contact when creating app -screenshot][img5]
+
+7. Click **Create Application**.
+
+## What would you like to do next?
+
+* [Check what your client ID is][7]
+* [Create a new client secret][8]
+* [View or change CORS and redirection URLs][9]
+* [Add a certificate][6]
+* [Manage notifications][18]
+* [Get error emails][13]
+* [Start working on the App Store information][11]
+* [Request to publish the configuration][2]
+
+[1]: ../../api/reference/restful/index
+[4]: ../../api/reference/restful/agent/Webhook_Agent/index
+[5]: ../../api/authentication/online/index#oidc
+[6]: ./config/new-certificate
+[7]: ./config/find-clientid
+[8]: ./config/get-client-secret
+[9]: ./config/cors-and-redirection-urls
+[2]: ./request-to-publish
+[13]: ../best-practices/error-emails
+[11]: ../standard-app/app-store/update-app-page
+[18]: ../best-practices/tenant-status/get-notifications
+
+[img4]: /media/loc/en/developer-portal/enter-redirect-urls.png
+[img5]: /media/loc/en/developer-portal/select-technical-contact.png
