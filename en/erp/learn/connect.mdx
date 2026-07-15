@@ -17,9 +17,11 @@ redirect_from:
   - /en/admin/erp/learn/erp-create-new-actor
 ---
 
+import ReqDevToolsTransition from "../../includes/req-dev-tools-transition.md";
+
 # Connect to ERP
 
-[!include[Requirement](../../includes/req-dev-tools-transition.md)]
+<ReqDevToolsTransition />
 
 You can connect a SuperOffice company to a customer/supplier in the ERP system. Contacts who are registered on the SuperOffice company can then be linked to individuals in the ERP system. Similarly, SuperOffice projects can be linked to projects in the ERP system. Data will then be synchronized between SuperOffice and the ERP system.
 
@@ -46,8 +48,9 @@ You can connect a SuperOffice company to a customer/supplier in the ERP system. 
 
 If for example customer does not exist in the ERP system, you can create the customer in the ERP system based on the data from SuperOffice.
 
-> [!NOTE]
-> The **Create** button is disabled if SuperOffice is not allowed to create actors in the ERP system.
+<Note>
+The **Create** button is disabled if SuperOffice is not allowed to create actors in the ERP system.
+</Note>
 
 1. In the **Connect to ERP** dialog, select **Can't find match in ERP** at the bottom and click **Create**. The **Create in ERP** dialog appears.
 1. Enter the values as required.
@@ -58,8 +61,5 @@ If for example customer does not exist in the ERP system, you can create the cus
 
 * [Disable synchronization][3]
 
-<!-- Referenced links -->
-[1]: ../../search-options/learn/find-screen.md
-[3]: disconnect.md
-
-<!-- Referenced images -->
+[1]: ../../search-options/learn/find-screen
+[3]: ./disconnect

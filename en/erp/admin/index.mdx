@@ -16,11 +16,13 @@ index: true
 redirect_from: /en/quote/learn/admin/sync/index
 ---
 
+import ReqDevToolsTransition from "../../includes/req-dev-tools-transition.md";
+
 # Manage ERP synchronization
 
 The **Sync** tab in the Quote/Sync screen in Settings and maintenance lists Sync Connectors and ERP connections that enable integration between SuperOffice CRM and external ERP systems.
 
-[!include[Requirement](../../includes/req-dev-tools-transition.md)]
+<ReqDevToolsTransition />
 
 ## Terminology
 
@@ -29,7 +31,7 @@ The **Sync** tab in the Quote/Sync screen in Settings and maintenance lists Sync
 | **Sync connector** | The *integration* component that connects SuperOffice CRM to an external ERP system. Each connector points to a specific ERP system. |
 | **ERP connection** | A *configuration* that uses a sync connector to define what to sync, how to authenticate, and which ERP client to target. You can have multiple connections per connector. |
 | **ERP actor** | A record in the ERP system that can be linked to a SuperOffice CRM entity. |
-| **CRM entity** | A record in SuperOffice CRM—typically a company, contact, or project—that can be linked to an ERP actor. |
+| **CRM entity** | A record in SuperOffice CRM-typically a company, contact, or project-that can be linked to an ERP actor. |
 
 You can use the **Sync** tab to add, configure, and prioritize connections.
 
@@ -44,8 +46,9 @@ From this tab, users can:
 
 This helps reduce duplicate data entry and improves data consistency across systems.
 
-> [!NOTE]
-> The **ERP** tab only appears for users who have the correct license and access to an active ERP connection.
+<Note>
+The **ERP** tab only appears for users who have the correct license and access to an active ERP connection.
+</Note>
 
 ## Related content
 
@@ -55,9 +58,8 @@ This helps reduce duplicate data entry and improves data consistency across syst
 * [Set sync priority][3]
 * [Import from ERP][9]
 
-<!-- Referenced links -->
-[1]: add-connection.md
-[3]: configure.md#priority
-[4]: configure.md
-[7]: update-connection.md
-[9]: ../../admin/import/from-erp.md
+[1]: ./add-connection
+[3]: ./configure#priority
+[4]: ./configure
+[7]: ./update-connection
+[9]: ../../admin/import/from-erp
