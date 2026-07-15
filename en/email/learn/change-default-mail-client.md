@@ -27,8 +27,6 @@ language: en
 
 * [SuperOffice Inbox][1]
 
-<!-- Referenced links -->
-[1]: ../inbox/learn/setup.md
+[1]: ../inbox/learn/setup
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/email/local-settings-email-client.png

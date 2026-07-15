@@ -42,11 +42,9 @@ You can create a new request in SuperOffice Service based on the sender and cont
 * [Create task][2]
 * [About requests][3]
 
-<!-- Referenced links -->
-[1]: archive.md
-[2]: create-task.md
-[3]: ../../../request/learn/index.md
-[4]: ../../../request/learn/create.md#fields
+[1]: ./archive
+[2]: ./create-task
+[3]: ../../../request/learn/index
+[4]: ../../../request/learn/create#fields
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

@@ -16317,6 +16317,198 @@
     {
       "source": "/en/admin/preferences/learn/video-meetings/index",
       "destination": "/en/diary/learn/video-meetings"
+    },
+    {
+      "source": "/en/email/service/learn/email-filters/delete-email-filter",
+      "destination": "/en/email/admin/mailbox/create-email-filter"
+    },
+    {
+      "source": "/en/email/service/learn/email-filters/create-email-filter",
+      "destination": "/en/email/admin/mailbox/create-email-filter"
+    },
+    {
+      "source": "/en/email/service/learn/create-sms-mailbox",
+      "destination": "/en/email/admin/mailbox/create-sms-mailbox"
+    },
+    {
+      "source": "/en/email/service/learn/delete-mailbox",
+      "destination": "/en/email/admin/mailbox/delete-mailbox"
+    },
+    {
+      "source": "/en/email/service/learn/index",
+      "destination": "/en/email/admin/mailbox/index"
+    },
+    {
+      "source": "/en/email/service/learn/screen/tab-inbox-for-email",
+      "destination": "/en/email/admin/mailbox/index"
+    },
+    {
+      "source": "/en/email/service/learn/screen/tab-outbox-for-email",
+      "destination": "/en/email/admin/mailbox/index"
+    },
+    {
+      "source": "/en/email/service/learn/screen/tab-blocked-email",
+      "destination": "/en/email/admin/mailbox/index"
+    },
+    {
+      "source": "/en/email/service/learn/screen/sms-inbox",
+      "destination": "/en/email/admin/mailbox/index"
+    },
+    {
+      "source": "/en/email/service/learn/screen/sms-outbox",
+      "destination": "/en/email/admin/mailbox/index"
+    },
+    {
+      "source": "/en/email/service/learn/email-filters/index",
+      "destination": "/en/email/admin/mailbox/index"
+    },
+    {
+      "source": "/en/admin/lists/learn/email-template",
+      "destination": "/en/email/admin/add-email-template"
+    },
+    {
+      "source": "/en/admin/lists/learn/add-email-template",
+      "destination": "/en/email/admin/add-email-template"
+    },
+    {
+      "source": "/en/admin/lists/learn/create-email-template",
+      "destination": "/en/email/admin/add-email-template"
+    },
+    {
+      "source": "/en/email/admin/index",
+      "destination": "/en/email/admin/add-email-template"
+    },
+    {
+      "source": "/en/email/inbox/index",
+      "destination": "/en/email/inbox/it/index"
+    },
+    {
+      "source": "/en/email/learn/compose",
+      "destination": "/en/email/inbox/learn/compose"
+    },
+    {
+      "source": "/en/email/inbox/learn/inbox-options",
+      "destination": "/en/email/inbox/learn/index"
+    },
+    {
+      "source": "/en/email/inbox/learn/mark-as-read",
+      "destination": "/en/email/inbox/learn/preview"
+    },
+    {
+      "source": "/en/email/inbox/learn/move-email-to-folder",
+      "destination": "/en/email/inbox/learn/preview"
+    },
+    {
+      "source": "/en/email/inbox/learn/print",
+      "destination": "/en/email/inbox/learn/preview"
+    },
+    {
+      "source": "/en/document/learn/upload",
+      "destination": "/en/document/learn/create"
+    },
+    {
+      "source": "/en/document/learn/screen/index",
+      "destination": "/en/document/learn/create"
+    },
+    {
+      "source": "/en/document/learn/delete",
+      "destination": "/en/document/learn/edit"
+    },
+    {
+      "source": "/en/document/learn/open",
+      "destination": "/en/document/learn/index"
+    },
+    {
+      "source": "/en/document/cloud/overview",
+      "destination": "/en/document/library/it/index"
+    },
+    {
+      "source": "/en/document/cloud/index",
+      "destination": "/en/document/library/it/index"
+    },
+    {
+      "source": "/en/document/odf",
+      "destination": "/en/document/library/it/odf"
+    },
+    {
+      "source": "/en/admin/preferences/learn/document-library/change-to-sharepoint",
+      "destination": "/en/document/library/learn/index"
+    },
+    {
+      "source": "/en/admin/preferences/learn/document-library/index",
+      "destination": "/en/document/library/learn/index"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/learn/index",
+      "destination": "/en/document/library/learn/index"
+    },
+    {
+      "source": "/en/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "destination": "/en/document/library/learn/index"
+    },
+    {
+      "source": "/en/admin/options/learn/number-allocation/document-template-defaults",
+      "destination": "/en/document/templates/admin/document-template-defaults"
+    },
+    {
+      "source": "/en/admin/lists/learn/add-template",
+      "destination": "/en/document/templates/admin/link-template"
+    },
+    {
+      "source": "/en/document/cloud/g-suite/configure",
+      "destination": "/en/document/templates/admin/link-template"
+    },
+    {
+      "source": "/en/admin/lists/learn/replace-existing-template",
+      "destination": "/en/document/templates/admin/update-template"
+    },
+    {
+      "source": "/en/admin/lists/learn/using-standard-templates",
+      "destination": "/en/document/templates/admin/update-template"
+    },
+    {
+      "source": "/en/document/templates/admin/using-document-templates-for-multiple-languages",
+      "destination": "https://help.superoffice.com/docs/11/en/document/templates/admin/using-document-templates-for-multiple-languages.html"
+    },
+    {
+      "source": "/en/admin/lists/learn/creating-template-document",
+      "destination": "/en/document/templates/learn/create"
+    },
+    {
+      "source": "/en/document/templates/quote/add-template-var",
+      "destination": "/en/document/templates/learn/create"
+    },
+    {
+      "source": "/en/document/templates/document-types",
+      "destination": "/en/document/templates/learn/document-types"
+    },
+    {
+      "source": "/en/admin/lists/learn/document-template",
+      "destination": "/en/document/templates/learn/index"
+    },
+    {
+      "source": "/en/document/templates/quote/index",
+      "destination": "/en/document/templates/learn/quote-templates"
+    },
+    {
+      "source": "/en/document/templates/quote/lang-culture",
+      "destination": "/en/document/templates/learn/quote-templates"
+    },
+    {
+      "source": "/en/document/learn/template-variables",
+      "destination": "/en/document/templates/learn/template-variables"
+    },
+    {
+      "source": "/en/document/templates/troubleshooting",
+      "destination": "/en/document/templates/learn/troubleshooting"
+    },
+    {
+      "source": "/en/document/templates/quote/mergefields",
+      "destination": "/en/document/templates/merge-fields/quote"
+    },
+    {
+      "source": "/en/document/templates/index",
+      "destination": "/en/document/templates/variables/index"
     }
   ]
 }
