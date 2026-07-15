@@ -636,7 +636,989 @@
           {
             "tab": "Release Notes",
             "icon": "bullhorn",
-            "groups": []
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "release-notes/index"
+                ]
+              },
+              {
+                "group": "SuperOffice 12",
+                "pages": [
+                  "release-notes/12/index",
+                  {
+                    "group": "Core CRM",
+                    "pages": [
+                      "release-notes/12/core-crm/12.2-update"
+                    ]
+                  },
+                  {
+                    "group": "Service",
+                    "pages": [
+                      "release-notes/12/service/12.0-update"
+                    ]
+                  },
+                  {
+                    "group": "Settings and Maintenance",
+                    "pages": [
+                      "release-notes/12/admin/12.1-update"
+                    ]
+                  },
+                  {
+                    "group": "API",
+                    "pages": [
+                      {
+                        "group": "12.2 update",
+                        "pages": [
+                          "release-notes/12/api/12.2/12.2-netserver-update",
+                          "release-notes/12/api/12.2/12.2-webapi-update",
+                          "release-notes/database/changes-12.2.2072"
+                        ]
+                      },
+                      {
+                        "group": "12.1 update",
+                        "pages": [
+                          "release-notes/12/api/12.1/12.1-netserver-update",
+                          "release-notes/12/api/12.1/12.1-webapi-update",
+                          "release-notes/database/changes-12.1.1412"
+                        ]
+                      },
+                      {
+                        "group": "12.0 update",
+                        "pages": [
+                          "release-notes/12/api/12.0/12.0-netserver-update",
+                          "release-notes/12/api/12.0/12.0-webapi-update",
+                          "release-notes/database/changes-12.0.342"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "SuperOffice 11",
+                "pages": [
+                  "release-notes/11/index",
+                  {
+                    "group": "Core CRM",
+                    "pages": [
+                      "release-notes/11/core-crm/11.11-update",
+                      "release-notes/11/core-crm/11.10-update",
+                      "release-notes/11/core-crm/11.7-update",
+                      "release-notes/11/core-crm/11.6-update",
+                      "release-notes/11/core-crm/11.4-update",
+                      "release-notes/11/core-crm/11.3-update",
+                      "release-notes/11/core-crm/11.2-update"
+                    ]
+                  },
+                  {
+                    "group": "Settings and Maintenance",
+                    "pages": [
+                      "release-notes/11/admin/11.13-update",
+                      "release-notes/11/admin/11.12-update",
+                      "release-notes/11/admin/11.11-update",
+                      "release-notes/11/admin/11.10-update",
+                      "release-notes/11/admin/11.9-update",
+                      "release-notes/11/admin/11.8-update",
+                      "release-notes/11/admin/11.6-update",
+                      "release-notes/11/admin/11.3-update",
+                      "release-notes/11/admin/11.1-update"
+                    ]
+                  },
+                  {
+                    "group": "Service",
+                    "pages": [
+                      "release-notes/11/service/11.12-update",
+                      "release-notes/11/service/11.11-update",
+                      "release-notes/11/service/11.8-update",
+                      "release-notes/11/service/11.7-update",
+                      "release-notes/11/service/11.5-update",
+                      "release-notes/11/service/11.4-update",
+                      "release-notes/11/service/11.3-update",
+                      "release-notes/11/service/11.2-update",
+                      "release-notes/11/service/11.1-update"
+                    ]
+                  },
+                  {
+                    "group": "Marketing",
+                    "pages": [
+                      "release-notes/11/marketing/11.13-update",
+                      "release-notes/11/marketing/11.11-update",
+                      "release-notes/11/marketing/11.9-update",
+                      "release-notes/11/marketing/11.6-update",
+                      "release-notes/11/marketing/11.5-update",
+                      "release-notes/11/marketing/11.3-update"
+                    ]
+                  },
+                  {
+                    "group": "API",
+                    "pages": [
+                      {
+                        "group": "11.13 update",
+                        "pages": [
+                          "release-notes/11/api/11.13/11.13-netserver-update",
+                          "release-notes/11/api/11.13/11.13-webapi-update",
+                          "release-notes/database/changes-11.13.921"
+                        ]
+                      },
+                      {
+                        "group": "11.12 update",
+                        "pages": [
+                          "release-notes/11/api/11.12/11.12-netserver-update",
+                          "release-notes/11/api/11.12/11.12-webapi-update",
+                          "release-notes/database/changes-11.12.675"
+                        ]
+                      },
+                      {
+                        "group": "11.11 update",
+                        "pages": [
+                          "release-notes/11/api/11.11/11.11-netserver-update",
+                          "release-notes/11/api/11.11/11.11-webapi-update",
+                          "release-notes/database/changes-11.11.589"
+                        ]
+                      },
+                      {
+                        "group": "11.10 update",
+                        "pages": [
+                          "release-notes/11/api/11.10/11.10-netserver-update",
+                          "release-notes/11/api/11.10/11.10-webapi-update",
+                          "release-notes/database/changes-11.10.705"
+                        ]
+                      },
+                      {
+                        "group": "11.9 update",
+                        "pages": [
+                          "release-notes/11/api/11.9/11.9-netserver-update",
+                          "release-notes/11/api/11.9/11.9-webapi-update",
+                          "release-notes/database/changes-11.9.1204"
+                        ]
+                      },
+                      {
+                        "group": "11.8 update",
+                        "pages": [
+                          "release-notes/11/api/11.8/11.8-netserver-update",
+                          "release-notes/11/api/11.8/11.8-webapi-update",
+                          "release-notes/database/changes-11.8.788"
+                        ]
+                      },
+                      {
+                        "group": "11.7 update",
+                        "pages": [
+                          "release-notes/11/api/11.7/11.7-netserver-update",
+                          "release-notes/11/api/11.7/11.7-webapi-update",
+                          "release-notes/database/changes-11.7.727"
+                        ]
+                      },
+                      {
+                        "group": "11.6 update",
+                        "pages": [
+                          "release-notes/11/api/11.6/11.6-netserver-update",
+                          "release-notes/11/api/11.6/11.6-webapi-update",
+                          "release-notes/database/changes-11.6.943"
+                        ]
+                      },
+                      {
+                        "group": "11.5 update",
+                        "pages": [
+                          "release-notes/11/api/11.5/11.5-netserver-update",
+                          "release-notes/11/api/11.5/11.5-webapi-update",
+                          "release-notes/database/changes-11.5.755"
+                        ]
+                      },
+                      {
+                        "group": "11.4 update",
+                        "pages": [
+                          "release-notes/11/api/11.4/11.4-netserver-update",
+                          "release-notes/11/api/11.4/11.4-webapi-update",
+                          "release-notes/database/changes-11.4.1157"
+                        ]
+                      },
+                      {
+                        "group": "11.3 update",
+                        "pages": [
+                          "release-notes/11/api/11.3/11.3-netserver-update",
+                          "release-notes/11/api/11.3/11.3-webapi-update",
+                          "release-notes/database/changes-11.3.1348"
+                        ]
+                      },
+                      {
+                        "group": "11.2 update",
+                        "pages": [
+                          "release-notes/11/api/11.2/11.2-netserver-update",
+                          "release-notes/11/api/11.2/11.2-webapi-update",
+                          "release-notes/database/changes-11.2.664"
+                        ]
+                      },
+                      {
+                        "group": "11.1 update",
+                        "pages": [
+                          "release-notes/11/api/11.1/11.1-cdd-update",
+                          "release-notes/11/api/11.1/11.1-core-update",
+                          "release-notes/11/api/11.1/11.1-services-update",
+                          "release-notes/11/api/11.1/11.1-webapi-update",
+                          "release-notes/database/changes-11.1.447"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Mobile CRM (app)",
+                "pages": [
+                  "release-notes/mobile/index",
+                  "release-notes/mobile/11.1.13-update",
+                  "release-notes/mobile/11.1.12-update",
+                  "release-notes/mobile/11.1.11-update",
+                  "release-notes/mobile/11.1.10-update",
+                  "release-notes/mobile/11.1.9-update",
+                  "release-notes/mobile/11.1.7-update",
+                  "release-notes/mobile/11.1.5-update",
+                  "release-notes/mobile/11.1.3-update",
+                  "release-notes/mobile/11.1.2-update",
+                  "release-notes/mobile/11.1.0-update",
+                  "release-notes/mobile/11.0.3-update",
+                  {
+                    "group": "Version 10.2",
+                    "pages": [
+                      "release-notes/mobile/10.2.19-update",
+                      "release-notes/mobile/10.2.18-update",
+                      "release-notes/mobile/10.2.16-update",
+                      "release-notes/mobile/10.2.12-update",
+                      "release-notes/mobile/10.2.11-update",
+                      "release-notes/mobile/10.2.10-update",
+                      "release-notes/mobile/10.2.8-update",
+                      "release-notes/mobile/10.2.7-update",
+                      "release-notes/mobile/10.2.2-update"
+                    ]
+                  },
+                  {
+                    "group": "Version 10.1",
+                    "pages": [
+                      "release-notes/mobile/10.1.9-update",
+                      "release-notes/mobile/10.1.8-update",
+                      "release-notes/mobile/10.1.7-update",
+                      "release-notes/mobile/10.1.5-update",
+                      "release-notes/mobile/10.1.4-update"
+                    ]
+                  },
+                  {
+                    "group": "Version 10.0",
+                    "pages": [
+                      "release-notes/mobile/10.0.9-update",
+                      "release-notes/mobile/10.0.7-update",
+                      "release-notes/mobile/10.0.6-update",
+                      "release-notes/mobile/10.0.4-update",
+                      "release-notes/mobile/10.0.3-update",
+                      "release-notes/mobile/10.0.2-update",
+                      "release-notes/mobile/10.0.1-update"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Integrations",
+                "pages": [
+                  "release-notes/integrations/index",
+                  {
+                    "group": "Video Meetings",
+                    "pages": [
+                      "release-notes/integrations/video-meetings/2.9-update"
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice for Outlook",
+                    "pages": [
+                      "release-notes/integrations/sofo/6.3-update",
+                      "release-notes/integrations/sofo/6.0-update",
+                      "release-notes/integrations/sofo/3.1-update"
+                    ]
+                  },
+                  {
+                    "group": "SharePoint integrations",
+                    "pages": [
+                      "release-notes/integrations/sharepoint/3.2-update",
+                      "release-notes/integrations/sharepoint/10.1.4-update"
+                    ]
+                  },
+                  {
+                    "group": "Mail Link",
+                    "pages": [
+                      "release-notes/integrations/mail-link/8.5-R11-update",
+                      "release-notes/integrations/mail-link/8.5-R14-update"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Older",
+                "pages": [
+                  {
+                    "group": "SuperOffice 10.5",
+                    "pages": [
+                      "release-notes/10.5/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.5/core-crm/10.5.5-update",
+                          "release-notes/10.5/core-crm/10.5.3-update",
+                          "release-notes/10.5/core-crm/10.5.2-update",
+                          "release-notes/10.5/core-crm/10.5.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and maintenance",
+                        "pages": [
+                          "release-notes/10.5/admin/10.5.5-update",
+                          "release-notes/10.5/admin/10.5.2-update",
+                          "release-notes/10.5/admin/10.5.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.5/service/10.5.5-update",
+                          "release-notes/10.5/service/10.5.3-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          {
+                            "group": "10.5.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.5"
+                            ]
+                          },
+                          {
+                            "group": "10.5.4 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.4"
+                            ]
+                          },
+                          {
+                            "group": "10.5.3 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.3"
+                            ]
+                          },
+                          {
+                            "group": "10.5.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.2"
+                            ]
+                          },
+                          {
+                            "group": "10.5.1 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.3",
+                    "pages": [
+                      "release-notes/10.3/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.3/core-crm/10.3.12-update",
+                          "release-notes/10.3/core-crm/10.3.11-update",
+                          "release-notes/10.3/core-crm/10.3.10-update",
+                          "release-notes/10.3/core-crm/10.3.9-update",
+                          "release-notes/10.3/core-crm/10.3.6-update",
+                          "release-notes/10.3/core-crm/10.3.2-update",
+                          "release-notes/10.3/core-crm/10.3.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.3/admin/10.3.8-update",
+                          "release-notes/10.3/admin/10.3.7-update",
+                          "release-notes/10.3/admin/10.3.2-update",
+                          "release-notes/10.3/admin/10.3.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.3/service/10.3.11-update",
+                          "release-notes/10.3/service/10.3.8-update",
+                          "release-notes/10.3/service/10.3.6-update",
+                          "release-notes/10.3/service/10.3.5-update",
+                          "release-notes/10.3/service/10.3.3-update",
+                          "release-notes/10.3/service/10.3.2-update",
+                          "release-notes/10.3/service/10.3.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.3/marketing/10.3.12-update",
+                          "release-notes/10.3/marketing/10.3.10-update",
+                          "release-notes/10.3/marketing/10.3.9-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          {
+                            "group": "10.3.13 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.13"
+                            ]
+                          },
+                          {
+                            "group": "10.3.12 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.12"
+                            ]
+                          },
+                          {
+                            "group": "10.3.11 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.11"
+                            ]
+                          },
+                          {
+                            "group": "10.3.10 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.10"
+                            ]
+                          },
+                          {
+                            "group": "10.3.9 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.9"
+                            ]
+                          },
+                          {
+                            "group": "10.3.8 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.8"
+                            ]
+                          },
+                          {
+                            "group": "10.3.7 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.7"
+                            ]
+                          },
+                          {
+                            "group": "10.3.6 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.6"
+                            ]
+                          },
+                          {
+                            "group": "10.3.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.5"
+                            ]
+                          },
+                          {
+                            "group": "10.3.4 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.4"
+                            ]
+                          },
+                          {
+                            "group": "10.3.3 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.3"
+                            ]
+                          },
+                          {
+                            "group": "10.3.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.2"
+                            ]
+                          },
+                          {
+                            "group": "10.3.1 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.2",
+                    "pages": [
+                      "release-notes/10.2/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.2/core-crm/10.2.11-update",
+                          "release-notes/10.2/core-crm/10.2.8-update",
+                          "release-notes/10.2/core-crm/10.2.4-update",
+                          "release-notes/10.2/core-crm/10.2.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.2/admin/10.2.11-update",
+                          "release-notes/10.2/admin/10.2.10-update",
+                          "release-notes/10.2/admin/10.2.3-update",
+                          "release-notes/10.2/admin/10.2.2-update",
+                          "release-notes/10.2/admin/10.2.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Requests / Service",
+                        "pages": [
+                          "release-notes/10.2/service/10.2.11-update",
+                          "release-notes/10.2/service/10.2.10-update",
+                          "release-notes/10.2/service/10.2.9-update",
+                          "release-notes/10.2/service/10.2.8-update",
+                          "release-notes/10.2/service/10.2.6-update",
+                          "release-notes/10.2/service/10.2.5-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.2/marketing/10.2.3-update",
+                          "release-notes/10.2/marketing/10.2.2-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          {
+                            "group": "10.2.11 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.11"
+                            ]
+                          },
+                          {
+                            "group": "10.2.10 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.10"
+                            ]
+                          },
+                          {
+                            "group": "10.2.9 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.9"
+                            ]
+                          },
+                          {
+                            "group": "10.2.8 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.8"
+                            ]
+                          },
+                          {
+                            "group": "10.2.6 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.6"
+                            ]
+                          },
+                          {
+                            "group": "10.2.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.5"
+                            ]
+                          },
+                          {
+                            "group": "10.2.4 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.4"
+                            ]
+                          },
+                          {
+                            "group": "10.2.3 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.3"
+                            ]
+                          },
+                          {
+                            "group": "10.2.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.2"
+                            ]
+                          },
+                          {
+                            "group": "10.2.1 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.1",
+                    "pages": [
+                      "release-notes/10.1/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.1/core-crm/10.1.3-update",
+                          "release-notes/10.1/core-crm/10.1.4-update",
+                          "release-notes/10.1/core-crm/10.1.5-update",
+                          "release-notes/10.1/core-crm/10.1.6-update",
+                          "release-notes/10.1/core-crm/10.1.9-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.1/admin/10.1.1-update",
+                          "release-notes/10.1/admin/10.1.3-update",
+                          "release-notes/10.1/admin/10.1.5-update",
+                          "release-notes/10.1/admin/10.1.6-update",
+                          "release-notes/10.1/admin/10.1.9-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.1/service/10.1.4-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.1/marketing/10.1.6-update",
+                          "release-notes/10.1/marketing/10.1.3-update"
+                        ]
+                      },
+                      {
+                        "group": "CEP",
+                        "pages": [
+                          "release-notes/10.1/cep/10.1.5-update",
+                          "release-notes/10.1/cep/10.1.3-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          "release-notes/10.1/api/10.1.9-update",
+                          "release-notes/10.1/api/10.1.8-update",
+                          "release-notes/10.1/api/10.1.6-update",
+                          {
+                            "group": "10.1.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.1.5"
+                            ]
+                          },
+                          "release-notes/10.1/api/10.1.4-update",
+                          "release-notes/10.1/api/10.1.3-update",
+                          {
+                            "group": "10.1.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.1.2"
+                            ]
+                          },
+                          "release-notes/10.1/api/10.1.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Development Products",
+                        "pages": [
+                          "release-notes/10.1/development-products/10.1.2-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.0",
+                    "pages": [
+                      "release-notes/10.0/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.0/core-crm/10.0.7-update",
+                          "release-notes/10.0/core-crm/10.0.6-update",
+                          "release-notes/10.0/core-crm/10.0.4-update",
+                          "release-notes/10.0/core-crm/10.0.3-update",
+                          "release-notes/10.0/core-crm/10.0.2-update",
+                          "release-notes/10.0/core-crm/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.0/admin/10.0.7-update",
+                          "release-notes/10.0/admin/10.0.6-update",
+                          "release-notes/10.0/admin/10.0.4-update",
+                          "release-notes/10.0/admin/10.0.3-update",
+                          "release-notes/10.0/admin/10.0.2-update",
+                          "release-notes/10.0/admin/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.0/service/10.0.6-update",
+                          "release-notes/10.0/service/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.0/marketing/10.0.6-update",
+                          "release-notes/10.0/marketing/10.0.5-update",
+                          "release-notes/10.0/marketing/10.0.4-update"
+                        ]
+                      },
+                      {
+                        "group": "CEP",
+                        "pages": [
+                          "release-notes/10.0/cep/10.0.6-update",
+                          "release-notes/10.0/cep/10.0.5-update",
+                          "release-notes/10.0/cep/10.0.4-update",
+                          "release-notes/10.0/cep/10.0.3-update",
+                          "release-notes/10.0/cep/10.0.2-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          "release-notes/10.0/api/10.0.7-update",
+                          "release-notes/10.0/api/10.0.6-update",
+                          "release-notes/10.0/api/10.0.5-update",
+                          "release-notes/10.0/api/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Development Products",
+                        "pages": [
+                          "release-notes/10.0/development-products/10.0.1-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 9.2",
+                    "pages": [
+                      "release-notes/9.2/index",
+                      {
+                        "group": "Standard CRM",
+                        "pages": [
+                          "release-notes/9.2/standard-crm/9.2-R09-update",
+                          "release-notes/9.2/standard-crm/9.2-R08-update",
+                          "release-notes/9.2/standard-crm/9.2-R07-update",
+                          "release-notes/9.2/standard-crm/9.2-R06-update",
+                          "release-notes/9.2/standard-crm/9.2-R05-update",
+                          "release-notes/9.2/standard-crm/9.2-R04-update",
+                          "release-notes/9.2/standard-crm/9.2-R03-update",
+                          "release-notes/9.2/standard-crm/9.2-R02-update",
+                          "release-notes/9.2/standard-crm/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Customer Engagement Portal",
+                        "pages": [
+                          "release-notes/9.2/cep/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/9.2/marketing/9.2-R11-update",
+                          "release-notes/9.2/marketing/9.2-R10-update",
+                          "release-notes/9.2/marketing/9.2-R09-update",
+                          "release-notes/9.2/marketing/9.2-R08-update",
+                          "release-notes/9.2/marketing/9.2-R06-update",
+                          "release-notes/9.2/marketing/9.2-R05-update",
+                          "release-notes/9.2/marketing/9.2-R04-update",
+                          "release-notes/9.2/marketing/9.2-R03-update",
+                          "release-notes/9.2/marketing/9.2-R02-update",
+                          "release-notes/9.2/marketing/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/9.2/service/9.2-R12-update",
+                          "release-notes/9.2/service/9.2-R11-update",
+                          "release-notes/9.2/service/9.2-R07-update",
+                          "release-notes/9.2/service/9.2-R06-update",
+                          "release-notes/9.2/service/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          "release-notes/9.2/api/9.2-R11-update",
+                          "release-notes/9.2/api/9.2-R09-update",
+                          "release-notes/9.2/api/9.2-R08-update",
+                          "release-notes/9.2/api/9.2-R06-update",
+                          "release-notes/9.2/api/9.2-R03-update",
+                          "release-notes/9.2/api/9.2-R01-update"
+                        ]
+                      },
+                      "release-notes/database/changes-9.2"
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 9.1",
+                    "pages": [
+                      "release-notes/9.1/index",
+                      {
+                        "group": "Standard crm",
+                        "pages": [
+                          "release-notes/9.1/standard-crm/9.1-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/9.1/service/9.1-R01-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 8.5",
+                    "pages": [
+                      "release-notes/8.5/index",
+                      {
+                        "group": "Standard crm",
+                        "pages": [
+                          "release-notes/8.5/standard-crm/8.5-R01-update",
+                          "release-notes/8.5/standard-crm/8.5-R02-update",
+                          "release-notes/8.5/standard-crm/8.5-R05-update",
+                          "release-notes/8.5/standard-crm/8.5-R06-update",
+                          "release-notes/8.5/standard-crm/8.5-R07-update",
+                          "release-notes/8.5/standard-crm/8.5-R10-update",
+                          "release-notes/8.5/standard-crm/8.5-R11-update",
+                          "release-notes/8.5/standard-crm/8.5-R14-update",
+                          "release-notes/8.5/standard-crm/8.5-R16-update",
+                          "release-notes/8.5/standard-crm/8.5-R17-update"
+                        ]
+                      },
+                      {
+                        "group": "Windows client",
+                        "pages": [
+                          "release-notes/8.5/win-client/8.5-R01-update",
+                          "release-notes/8.5/win-client/8.5-R11-update",
+                          "release-notes/8.5/win-client/8.5-R16-update",
+                          "release-notes/8.5/win-client/8.5-R17-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/8.5/admin/8.5-R02-update",
+                          "release-notes/8.5/admin/8.5-R04-update",
+                          "release-notes/8.5/admin/8.5-R10-update",
+                          "release-notes/8.5/admin/8.5-R11-update",
+                          "release-notes/8.5/admin/8.5-R12-update",
+                          "release-notes/8.5/admin/8.5-R13-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/8.5/marketing/8.5-R02-update",
+                          "release-notes/8.5/marketing/8.5-R04-update",
+                          "release-notes/8.5/marketing/8.5-R05-update",
+                          "release-notes/8.5/marketing/8.5-R08-update",
+                          "release-notes/8.5/marketing/8.5-R16-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/8.5/service/8.5-R01-update",
+                          "release-notes/8.5/service/8.5-R02-update",
+                          "release-notes/8.5/service/8.5-R03-update",
+                          "release-notes/8.5/service/8.5-R04-update",
+                          "release-notes/8.5/service/8.5-R05-update",
+                          "release-notes/8.5/service/8.5-R06-update",
+                          "release-notes/8.5/service/8.5-R07-update",
+                          "release-notes/8.5/service/8.5-R08-update",
+                          "release-notes/8.5/service/8.5-R10-update",
+                          "release-notes/8.5/service/8.5-R11-update",
+                          "release-notes/8.5/service/8.5-R16-update",
+                          "release-notes/8.5/service/8.5-R17-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Pocket CRM",
+                    "pages": [
+                      "release-notes/pocket-crm/index",
+                      "release-notes/pocket-crm/9.1.6-update",
+                      "release-notes/pocket-crm/9.1.5-update",
+                      "release-notes/pocket-crm/9.1.4-update",
+                      "release-notes/pocket-crm/9.1.1-update",
+                      "release-notes/pocket-crm/9.0.9-update",
+                      "release-notes/pocket-crm/9.0.7-update",
+                      "release-notes/pocket-crm/9.0.5-update",
+                      "release-notes/pocket-crm/9.0.4-update"
+                    ]
+                  },
+                  {
+                    "group": "Database legacy",
+                    "pages": [
+                      "release-notes/database/changes-81",
+                      "release-notes/database/changes-75-80",
+                      "release-notes/database/changes-71-75",
+                      "release-notes/database/changes-70-71",
+                      "release-notes/database/changes-7",
+                      "release-notes/database/changes-6-7"
+                    ]
+                  },
+                  {
+                    "group": "API legacy",
+                    "pages": [
+                      "release-notes/api/ns-80",
+                      "release-notes/api/ns-75",
+                      "release-notes/api/ns-71",
+                      {
+                        "group": "SuperOffice 7.0",
+                        "pages": [
+                          "release-notes/api/ns-70/aliasing-on-argumentfunctions",
+                          "release-notes/api/ns-70/archiverestrictions",
+                          "release-notes/api/ns-70/collectionops",
+                          "release-notes/api/ns-70/commenting-queries",
+                          "release-notes/api/ns-70/culturedataformatter",
+                          "release-notes/api/ns-70/datetime",
+                          "release-notes/api/ns-70/dynamic-archive-provider",
+                          "release-notes/api/ns-70/fieldinfo-comments",
+                          "release-notes/api/ns-70/groupby-and-sentry",
+                          "release-notes/api/ns-70/multithreading",
+                          "release-notes/api/ns-70/osql-meets-sentry",
+                          "release-notes/api/ns-70/queryexecutionhelper",
+                          "release-notes/api/ns-70/real-dates",
+                          "release-notes/api/ns-70/row-improvements",
+                          "release-notes/api/ns-70/softtriggers"
+                        ]
+                      },
+                      "release-notes/api/ns-31",
+                      "release-notes/api/ns-30"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "End of life",
+                "pages": [
+                  "release-notes/eol/index",
+                  "release-notes/eol/lotus",
+                  "release-notes/eol/sharepoint-app",
+                  "release-notes/eol/pagebuilder",
+                  "release-notes/eol/reports",
+                  "release-notes/eol/service-compact-mode",
+                  "release-notes/eol/soap"
+                ]
+              }
+            ]
           },
           {
             "tab": "Developer guide",
