@@ -17485,6 +17485,430 @@
     {
       "source": "/en/onsite/win-client/learn/using-document-templates-for-multiple-languages",
       "destination": "https://help.superoffice.com/docs/11/en/document/templates/admin/using-document-templates-for-multiple-languages.html"
+    },
+    {
+      "source": "/en/ai/configuration-ai/getting-started",
+      "destination": "/en/ai/admin/set-up-categorization"
+    },
+    {
+      "source": "/en/ai/admin/index",
+      "destination": "/en/ai/admin/set-up-categorization"
+    },
+    {
+      "source": "/en/ai/configuration-ai/index",
+      "destination": "/en/ai/learn/categorization"
+    },
+    {
+      "source": "/en/ai/copilot/index",
+      "destination": "/en/ai/learn/copilot"
+    },
+    {
+      "source": "/en/ai/index",
+      "destination": "/en/ai/learn/index"
+    },
+    {
+      "source": "/en/ai/text-analysis/index",
+      "destination": "/en/ai/learn/text-analysis"
+    },
+    {
+      "source": "/en/chat/learn/admin/add-javascript",
+      "destination": "/en/chat/admin/add-javascript"
+    },
+    {
+      "source": "/en/chat/learn/admin/channel-create",
+      "destination": "/en/chat/admin/channel-create"
+    },
+    {
+      "source": "/en/chat/learn/admin/index",
+      "destination": "/en/chat/admin/index"
+    },
+    {
+      "source": "/en/chat/learn/screen/index",
+      "destination": "/en/chat/learn/index"
+    },
+    {
+      "source": "/en/chat/learn/create-contact",
+      "destination": "/en/chat/learn/link-to-person"
+    },
+    {
+      "source": "/en/chat/learn/send-files",
+      "destination": "/en/chat/learn/respond"
+    },
+    {
+      "source": "/en/chat/learn/send-faq-or-reply-template",
+      "destination": "/en/chat/learn/respond"
+    },
+    {
+      "source": "/en/chat/learn/create-quick-reply.md",
+      "destination": "/en/chat/learn/respond"
+    },
+    {
+      "source": "/en/admin/preferences/learn/global-preferences/password",
+      "destination": "/en/customer-center/admin/password-policy"
+    },
+    {
+      "source": "/en/customer-center/admin/index",
+      "destination": "/en/customer-center/admin/style-subscription-page"
+    },
+    {
+      "source": "/en/customer-center/tutorials/index",
+      "destination": "/en/customer-center/tutorials/call-script-in-cs-with-ajax"
+    },
+    {
+      "source": "/en/admin/lists/learn/add-items-to-task-menu",
+      "destination": "/en/customization/admin/add-items-to-task-menu"
+    },
+    {
+      "source": "/en/admin/lists/learn/applications",
+      "destination": "/en/customization/admin/other-applications"
+    },
+    {
+      "source": "/en/admin/lists/learn/adding-external-applications-to-application-list",
+      "destination": "/en/customization/admin/other-applications"
+    },
+    {
+      "source": "/en/admin/learn/screen/package-properties",
+      "destination": "/en/customization/admin/package-properties"
+    },
+    {
+      "source": "/en/admin/learn/package-properties",
+      "destination": "/en/customization/admin/package-properties"
+    },
+    {
+      "source": "/en/customization/admin/index",
+      "destination": "/en/customization/admin/package-properties"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/create-macro",
+      "destination": "/en/customization/macros-and-scripts/admin/create-macro"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/create-folder",
+      "destination": "/en/customization/macros-and-scripts/admin/create-script"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/create-script",
+      "destination": "/en/customization/macros-and-scripts/admin/create-script"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/macro-script",
+      "destination": "/en/customization/macros-and-scripts/admin/index"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/screen/index",
+      "destination": "/en/customization/macros-and-scripts/admin/index"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/index",
+      "destination": "/en/customization/macros-and-scripts/admin/index"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/schedule-task",
+      "destination": "/en/customization/macros-and-scripts/admin/schedule-task"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/trigger",
+      "destination": "/en/customization/macros-and-scripts/admin/trigger"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/add-button",
+      "destination": "/en/customization/screen-designer/admin/add-button"
+    },
+    {
+      "source": "/en/customization/screen-designer/add-button",
+      "destination": "/en/customization/screen-designer/admin/add-button"
+    },
+    {
+      "source": "/en/customization/screen-designer/add-layout",
+      "destination": "/en/customization/screen-designer/admin/add-layout"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/add-layout",
+      "destination": "/en/customization/screen-designer/admin/add-layout"
+    },
+    {
+      "source": "/en/ui/screen-designer/learn/add-new-layout",
+      "destination": "/en/customization/screen-designer/admin/add-layout"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/assign-layout",
+      "destination": "/en/customization/screen-designer/admin/assign-layout"
+    },
+    {
+      "source": "/en/customization/screen-designer/assign-layout",
+      "destination": "/en/customization/screen-designer/admin/assign-layout"
+    },
+    {
+      "source": "/en/customization/screen-designer/edit-layout",
+      "destination": "/en/customization/screen-designer/admin/edit-layout"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/edit-card-layout",
+      "destination": "/en/customization/screen-designer/admin/edit-layout"
+    },
+    {
+      "source": "/en/ui/screen-designer/learn/elements",
+      "destination": "/en/customization/screen-designer/admin/edit-layout"
+    },
+    {
+      "source": "/en/customization/screen-designer/index",
+      "destination": "/en/customization/screen-designer/admin/index"
+    },
+    {
+      "source": "/en/ui/screen-designer/index",
+      "destination": "/en/customization/screen-designer/admin/index"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/index",
+      "destination": "/en/customization/screen-designer/admin/index"
+    },
+    {
+      "source": "/en/ui/screen-designer/element-reference",
+      "destination": "/en/customization/screen-designer/admin/reference"
+    },
+    {
+      "source": "/en/customization/screen-designer/reference",
+      "destination": "/en/customization/screen-designer/admin/reference"
+    },
+    {
+      "source": "/en/ui/screen-designer/tutorial-move-country",
+      "destination": "/en/customization/screen-designer/admin/tutorial-move-country"
+    },
+    {
+      "source": "/en/customization/screen-designer/tutorial-move-country",
+      "destination": "/en/customization/screen-designer/admin/tutorial-move-country"
+    },
+    {
+      "source": "/en/ui/screen-designer/learn/edit-layout-archives",
+      "destination": "/en/customization/screen-designer/admin/working-with-archives"
+    },
+    {
+      "source": "/en/customization/screen-designer/working-with-archives",
+      "destination": "/en/customization/screen-designer/admin/working-with-archives"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/working-with-fields",
+      "destination": "/en/customization/screen-designer/admin/working-with-fields"
+    },
+    {
+      "source": "/en/customization/screen-designer/working-with-fields",
+      "destination": "/en/customization/screen-designer/admin/working-with-fields"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/working-with-grids",
+      "destination": "/en/customization/screen-designer/admin/working-with-grids"
+    },
+    {
+      "source": "/en/customization/screen-designer/working-with-grids",
+      "destination": "/en/customization/screen-designer/admin/working-with-grids"
+    },
+    {
+      "source": "/en/ui/screen-designer/configurable-screens/working-with-tabs",
+      "destination": "/en/customization/screen-designer/admin/working-with-tabs"
+    },
+    {
+      "source": "/en/customization/screen-designer/working-with-tabs",
+      "destination": "/en/customization/screen-designer/admin/working-with-tabs"
+    },
+    {
+      "source": "/en/ui/soprotocol/create-contact",
+      "destination": "/en/customization/soprotocol/howto/create-contact"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/create-contact",
+      "destination": "/en/customization/soprotocol/howto/create-contact"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/create-document",
+      "destination": "/en/customization/soprotocol/howto/create-document"
+    },
+    {
+      "source": "/en/ui/soprotocol/create-appointment",
+      "destination": "/en/customization/soprotocol/howto/create-follow-up"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/create-follow-up",
+      "destination": "/en/customization/soprotocol/howto/create-follow-up"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/create-project",
+      "destination": "/en/customization/soprotocol/howto/create-project"
+    },
+    {
+      "source": "/en/ui/soprotocol/custom-object",
+      "destination": "/en/customization/soprotocol/howto/custom-object"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/custom-object",
+      "destination": "/en/customization/soprotocol/howto/custom-object"
+    },
+    {
+      "source": "/en/ui/soprotocol/edit-contact",
+      "destination": "/en/customization/soprotocol/howto/open-contact"
+    },
+    {
+      "source": "/en/ui/soprotocol/get-contact",
+      "destination": "/en/customization/soprotocol/howto/open-contact"
+    },
+    {
+      "source": "/en/ui/soprotocol/show-persons-for-contact",
+      "destination": "/en/customization/soprotocol/howto/open-contact"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/open-contact",
+      "destination": "/en/customization/soprotocol/howto/open-contact"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/open-document",
+      "destination": "/en/customization/soprotocol/howto/open-document"
+    },
+    {
+      "source": "/en/ui/soprotocol/open-appointment-dialog",
+      "destination": "/en/customization/soprotocol/howto/open-follow-up"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/open-follow-up",
+      "destination": "/en/customization/soprotocol/howto/open-follow-up"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/open-project",
+      "destination": "/en/customization/soprotocol/howto/open-project"
+    },
+    {
+      "source": "/en/ui/soprotocol/requests",
+      "destination": "/en/customization/soprotocol/howto/requests"
+    },
+    {
+      "source": "/en/ui/soprotocol/howto/requests",
+      "destination": "/en/customization/soprotocol/howto/requests"
+    },
+    {
+      "source": "/en/ui/soprotocol/in-crmscript",
+      "destination": "/en/customization/soprotocol/in-crmscript"
+    },
+    {
+      "source": "/en/ui/soprotocol/index",
+      "destination": "/en/customization/soprotocol/index"
+    },
+    {
+      "source": "/en/ui/soprotocol/navigation-points",
+      "destination": "/en/customization/soprotocol/navigation-points"
+    },
+    {
+      "source": "/en/ui/soprotocol/page-control-and-cache",
+      "destination": "/en/customization/soprotocol/page-control-and-cache"
+    },
+    {
+      "source": "/en/ui/soprotocol/used-in-webpanels-mobile",
+      "destination": "/en/customization/soprotocol/used-in-webpanels-mobile"
+    },
+    {
+      "source": "/en/ui/soprotocol/used-in-webpanels-web",
+      "destination": "/en/customization/soprotocol/used-in-webpanels-web"
+    },
+    {
+      "source": "/en/ui/soprotocol/used-in-webpanels-win",
+      "destination": "/en/customization/soprotocol/used-in-webpanels-win"
+    },
+    {
+      "source": "/en/ui/soprotocol/using-soprotocol",
+      "destination": "/en/customization/soprotocol/using-soprotocol"
+    },
+    {
+      "source": "/en/admin/lists/learn/web-panel-add-item",
+      "destination": "/en/customization/web-panels/admin/add-web-panel"
+    },
+    {
+      "source": "/en/ui/web-panels/add-web-panel",
+      "destination": "/en/customization/web-panels/admin/add-web-panel"
+    },
+    {
+      "source": "/en/ui/web-panels/learn/index",
+      "destination": "/en/customization/web-panels/admin/index"
+    },
+    {
+      "source": "/en/ui/web-panels/index",
+      "destination": "/en/customization/web-panels/admin/index"
+    },
+    {
+      "source": "/en/admin/lists/learn/web-panel",
+      "destination": "/en/customization/web-panels/admin/index"
+    },
+    {
+      "source": "/en/ui/web-panels/url-encoding.html",
+      "destination": "/en/customization/web-panels/admin/url-encoding"
+    },
+    {
+      "source": "/en/ui/web-panels/create-link-to",
+      "destination": "/en/customization/web-panels/dev/index"
+    },
+    {
+      "source": "/en/ui/web-panels/passing-data",
+      "destination": "/en/customization/web-panels/dev/index"
+    },
+    {
+      "source": "/en/ui/web-panels/detect-superoffice",
+      "destination": "/en/customization/web-panels/dev/index"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-add-erp-connection",
+      "destination": "/en/erp/admin/add-connection"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-connector-add",
+      "destination": "/en/erp/admin/add-connection"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-configure-default-values",
+      "destination": "/en/erp/admin/configure"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-configure-field-allocation",
+      "destination": "/en/erp/admin/configure"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-configure-list-mapping",
+      "destination": "/en/erp/admin/configure"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
+      "destination": "/en/erp/admin/configure"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-set-sync-priority",
+      "destination": "/en/erp/admin/configure"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/index",
+      "destination": "/en/erp/admin/index"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-resync-from-crm",
+      "destination": "/en/erp/admin/resync-from-crm"
+    },
+    {
+      "source": "/en/quote/learn/admin/sync/sync-edit-erp-connection",
+      "destination": "/en/erp/admin/update-connection"
+    },
+    {
+      "source": "/en/admin/erp/learn/erp-connect",
+      "destination": "/en/erp/learn/connect"
+    },
+    {
+      "source": "/en/admin/erp/learn/erp-create-new-actor",
+      "destination": "/en/erp/learn/connect"
+    },
+    {
+      "source": "/en/admin/erp/learn/erp-sync-disconnect",
+      "destination": "/en/erp/learn/disconnect"
+    },
+    {
+      "source": "/en/admin/erp/learn/index",
+      "destination": "/en/erp/learn/index"
+    },
+    {
+      "source": "/en/admin/erp/learn/screen/erp-tab",
+      "destination": "/en/erp/learn/index"
     }
   ]
 }
