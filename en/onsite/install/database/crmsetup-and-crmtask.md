@@ -23,7 +23,7 @@ Document templates are installed when creating new and upgrading current install
 
 ## Online argument generators
 
-The HTML-based argument generators are also available online – no download required:
+The HTML-based argument generators are also available online - no download required:
 
 * [CrmSetup argument generator](https://fbhub2.github.io/so11configgenerators/so11config_gen_crmsetup.html)
 * [CrmTask argument generator](https://fbhub2.github.io/so11configgenerators/so11config_gen_crmtask.html)
@@ -274,7 +274,6 @@ free-text indexes, and ERP sync, ensuring that your CRM data is up-to-date and o
 
 More information about each command can be found by referencing the command's specific help section.
 
-
 Commands:
   regenerate-saint-counters     Regenerate Saint counters
   regenerate-status-monitors    Regenerate status monitors
@@ -310,8 +309,5 @@ To run **CrmTask** automatically, you can use the Windows task scheduler to sche
 
 ![Scheduled Task -screenshot][img2]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/scheduledcrmtask1.png
-[img2]: media/scheduledcrmtask2.png
+[img1]: /media/loc/en/onsite/scheduledcrmtask1.png
+[img2]: /media/loc/en/onsite/scheduledcrmtask2.png

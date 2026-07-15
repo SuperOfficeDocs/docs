@@ -9,10 +9,9 @@ deployment: onsite
 platform: web
 ---
 
-<!-- markdownlint-disable-file DOCSMD008 -->
 # Install and configure ModSecurity on proxy server
 
-The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection rules for use with [ModSecurity][1] or compatible web application firewalls. The CRS aims to protect web applications from a wide range of attacks, including the OWASP Top Ten, with a minimum of false alerts.
+The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection rules for use with [ModSecurity][1] or compatible web application firewalls. The CRS aims to protect web applications from a wide range of attacks, including the OWASP Top Ten, with a minimum of false alerts.
 
 The linked configuration files are tested with ModSecurity v.2.9.2-1 for IIS and the OWASP CRS 2.2.9 configured for SuperOffice 8.1. Other versions may affect false positives, and the configuration file may need to be changed accordingly.
 
@@ -63,17 +62,15 @@ By default, the rule-set will trigger some false positives. We are going to disa
 
 5. Open up the **Event viewer** in Windows to see that ModSecurity loaded correctly and to see potential attacks that are triggering our Web Application firewall rules. Try browsing through the SuperOffice application and then refresh the **Application** log view to see if there are any warnings. If there are warnings at this stage it indicates that the Web Application Firewall has encountered a false positive.
 
-    We should remove this rule’s ID to avoid false positives. In the **Event Viewer**, click on the event and view the **Details** tab. Note the ID of the event and add it to the configuration file we placed at: *C:\Program Files\ModSecurity IIS\owasp_crs\base_rules\modsecurity_crs_70_superoffice.conf*.
+    We should remove this rule's ID to avoid false positives. In the **Event Viewer**, click on the event and view the **Details** tab. Note the ID of the event and add it to the configuration file we placed at: *C:\Program Files\ModSecurity IIS\owasp_crs\base_rules\modsecurity_crs_70_superoffice.conf*.
 
     ![Event viewer information -screenshot][img5]
 
-<!-- Referenced links -->
 [1]: https://www.modsecurity.org/
 [2]: https://www.modsecurity.org/download.html
 [3]: http://www.microsoft.com/en-us/download/details.aspx?id=40784
 
-<!-- Referenced images -->
-[img1]: media/modsecurityevent.jpg
-[img2]: media/configurationeditor.jpg
-[img4]: media/configurationeditorso.jpg
-[img5]: media/eventviewerlog.jpg
+[img1]: /media/loc/en/onsite/modsecurityevent.jpg
+[img2]: /media/loc/en/onsite/configurationeditor.jpg
+[img4]: /media/loc/en/onsite/configurationeditorso.jpg
+[img5]: /media/loc/en/onsite/eventviewerlog.jpg

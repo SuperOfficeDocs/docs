@@ -14,9 +14,9 @@ deployment: onsite
 
 ![Move Sales web client to Service domain -screenshot][img4]
 
-1. Run the **SuperOffice SM.win** **SetupExe.exe** installer to upgrade the server and the database.
+1. Run the **SuperOffice SM.win** **SetupExe.exe** installer to upgrade the server and the database.
 
-2. Run **SuperOffice.CustomerService.exe** to upgrade Service software.
+2. Run **SuperOffice.CustomerService.exe** to upgrade Service software.
 
 3. Run the **SuperOffice Web client** **Setup.exe** to install the SuperOffice Sales web client on the existing Service domain.
 
@@ -30,8 +30,5 @@ deployment: onsite
 
 7. Run **Upgrade.exe** (as administrator) located in *Service programfolder\bin*. The upgrade.exe will among other things also update the config file found in the Service program folder with the new Services endpoint, **Services84**.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img4]: media/salestoservice.png
-[img5]: media/exposenetserverwebservices.png
+[img4]: /media/loc/en/onsite/salestoservice.png
+[img5]: /media/loc/en/onsite/exposenetserverwebservices.png

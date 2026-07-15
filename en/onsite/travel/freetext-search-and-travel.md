@@ -9,7 +9,7 @@ content_type: concept
 platform: win
 deployment: onsite
 language: en
-redirect_from: 
+redirect_from:
   - /en/onsite/win-client/learn/freetext-search-and-travel
   - /da/onsite/win-client/learn/freetext-search-and-travel
   - /de/onsite/win-client/learn/freetext-search-and-travel

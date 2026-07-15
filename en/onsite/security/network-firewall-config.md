@@ -20,9 +20,9 @@ No matter what deployment scenario your company is facing, there is some general
 * DMZ for internet-accessible servers
 * Management network for administrative tasks
 
-This is a simplified view and suits our purpose for this document. The point of this segmentation is to limit the attack surface of the company’s network and isolate internal servers where valuable company information resides. The border between each of these networks is a potential attack surface, and there is a security reward in minimizing the exposed services across each border.
+This is a simplified view and suits our purpose for this document. The point of this segmentation is to limit the attack surface of the company's network and isolate internal servers where valuable company information resides. The border between each of these networks is a potential attack surface, and there is a security reward in minimizing the exposed services across each border.
 
-SuperOffice consists of several components, which need to be fitted into your company’s network infrastructure. A list of the most central components follows:
+SuperOffice consists of several components, which need to be fitted into your company's network infrastructure. A list of the most central components follows:
 
 * SuperOffice NetServer
 * Database server
@@ -40,5 +40,4 @@ We also recommend placing a Web Application Firewall (WAF) such as the open-sour
 
 Keep in mind that this does introduce a single point of failure, which can be remediated by setting up multiple of these Web Application Firewalls in a cluster. There are also commercial WAFs that can do the same job and may require less work to set up.
 
-<!-- Referenced links -->
-[1]: set-up-modsecurity.md
+[1]: ./set-up-modsecurity

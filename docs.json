@@ -16921,6 +16921,570 @@
     {
       "source": "/en/developer-portal/analytics/customers",
       "destination": "/en/developer-portal/tenants/index"
+    },
+    {
+      "source": "/en/service/automated-tasks/dbi",
+      "destination": "/en/onsite/automated-tasks/dbi"
+    },
+    {
+      "source": "/en/service/automated-tasks/ejournalcron",
+      "destination": "/en/onsite/automated-tasks/ejournalcron"
+    },
+    {
+      "source": "/en/service/automated-tasks/ejoutbox",
+      "destination": "/en/onsite/automated-tasks/ejoutbox"
+    },
+    {
+      "source": "/en/service/automated-tasks/ejsender",
+      "destination": "/en/onsite/automated-tasks/ejsender"
+    },
+    {
+      "source": "/en/service/automated-tasks/ejtermsetup",
+      "destination": "/en/onsite/automated-tasks/ejtermsetup"
+    },
+    {
+      "source": "/en/service/automated-tasks/importmail",
+      "destination": "/en/onsite/automated-tasks/importmail"
+    },
+    {
+      "source": "/en/service/automated-tasks/",
+      "destination": "/en/onsite/automated-tasks/index"
+    },
+    {
+      "source": "/en/service/automated-tasks/upgrade",
+      "destination": "/en/onsite/automated-tasks/upgrade"
+    },
+    {
+      "source": "/en/service/config/split-attachment-location",
+      "destination": "/en/onsite/config/service/attachment-location"
+    },
+    {
+      "source": "/en/service/config/update-attachment-location",
+      "destination": "/en/onsite/config/service/attachment-location"
+    },
+    {
+      "source": "/en/service/config/",
+      "destination": "/en/onsite/config/service/index"
+    },
+    {
+      "source": "/en/service/reports/index",
+      "destination": "/en/onsite/config/service/report-parameters"
+    },
+    {
+      "source": "/en/service/reports/parameters",
+      "destination": "/en/onsite/config/service/report-parameters"
+    },
+    {
+      "source": "/en/service/log-files",
+      "destination": "/en/onsite/debug/service-log-files"
+    },
+    {
+      "source": "/en/service/install/",
+      "destination": "/en/onsite/install/service/index"
+    },
+    {
+      "source": "/en/service/install/manual-steps",
+      "destination": "/en/onsite/install/service/manual-steps"
+    },
+    {
+      "source": "/en/service/install/prepare",
+      "destination": "/en/onsite/install/service/prepare"
+    },
+    {
+      "source": "/en/document/ribbons/index",
+      "destination": "/en/onsite/install/win-client/win8-client"
+    },
+    {
+      "source": "/en/document/ribbons/enable-debug",
+      "destination": "/en/onsite/install/win-client/win8-client"
+    },
+    {
+      "source": "/en/document/ribbons/troubleshooting",
+      "destination": "/en/onsite/install/win-client/win8-client"
+    },
+    {
+      "source": "/en/onsite/integrate/index",
+      "destination": "/en/onsite/integrate/web-client/index"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/client-requirements",
+      "destination": "/en/onsite/pocket-crm/client-requirements"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/compression",
+      "destination": "/en/onsite/pocket-crm/compression"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/configure",
+      "destination": "/en/onsite/pocket-crm/configure"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/deploy",
+      "destination": "/en/onsite/pocket-crm/deploy"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/index",
+      "destination": "/en/onsite/pocket-crm/index"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/install",
+      "destination": "/en/onsite/pocket-crm/install"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/system-requirements",
+      "destination": "/en/onsite/pocket-crm/system-requirements"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/upgrade-to-8",
+      "destination": "/en/onsite/pocket-crm/upgrade-to-8"
+    },
+    {
+      "source": "/en/onsite/reporter/index",
+      "destination": "/en/onsite/reporter/config"
+    },
+    {
+      "source": "/en/onsite/travel/built-in/index",
+      "destination": "/en/onsite/travel/built-in/set-up"
+    },
+    {
+      "source": "/en/onsite/travel/sql-express/index",
+      "destination": "/en/onsite/travel/sql-express/set-up"
+    },
+    {
+      "source": "/en/onsite/travel/sybase/index",
+      "destination": "/en/onsite/travel/sybase/set-up"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/freetext-search-and-travel",
+      "destination": "/en/onsite/travel/freetext-search-and-travel"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/freetext-search-and-travel",
+      "destination": "/en/onsite/travel/freetext-search-and-travel"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/freetext-search-and-travel",
+      "destination": "/en/onsite/travel/freetext-search-and-travel"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/freetext-search-and-travel",
+      "destination": "/en/onsite/travel/freetext-search-and-travel"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/freetext-search-and-travel",
+      "destination": "/en/onsite/travel/freetext-search-and-travel"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/freetext-search-and-travel",
+      "destination": "/en/onsite/travel/freetext-search-and-travel"
+    },
+    {
+      "source": "/en/service/upgrade/",
+      "destination": "/en/onsite/upgrade/service/index"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/ansi-files",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/ansi-files.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/creating-import-descriptions",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/creating-import-descriptions.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/deleting-field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/deleting-field-mapping.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/duplicates-import",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/duplicates-import.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/editing-import-descriptions",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/editing-import-descriptions.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/field-mapping.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/import-descriptions",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/import-descriptions.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/import-routines",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/import-routines.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/importing-files",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/importing-files.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/index",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/index.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/resetting-field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/resetting-field-mapping.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/specifying-advanced-import-settings",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/specifying-field-mapping",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/specifying-field-mapping.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/backup-routines",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/backup-routines.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/export",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/export.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/parameter-examples",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/parameter-examples.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/status-screen",
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/status-screen.html"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/update-database",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/update-database",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/ansi-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/creating-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/deleting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/duplicates-import",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/editing-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/import-routines",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/importing-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/index",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/resetting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/specifying-advanced-import-settings",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/specifying-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/da/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/update-database",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/ansi-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/creating-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/deleting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/duplicates-import",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/editing-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/import-routines",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/importing-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/index",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/resetting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/specifying-advanced-import-settings",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/specifying-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/de/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/update-database",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/ansi-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/creating-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/deleting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/duplicates-import",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/editing-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/import-routines",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/importing-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/index",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/resetting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/specifying-advanced-import-settings",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/specifying-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/nl/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/update-database",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/ansi-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/creating-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/deleting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/duplicates-import",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/editing-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/import-routines",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/importing-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/index",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/resetting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/specifying-advanced-import-settings",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/specifying-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/no/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/update-database",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/ansi-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/creating-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/deleting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/duplicates-import",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/editing-import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/import-descriptions",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/import-routines",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/importing-files",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/index",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/resetting-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/specifying-advanced-import-settings",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/specifying-field-mapping",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/sv/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
+      "destination": "/en/onsite/win-client/learn/index"
+    },
+    {
+      "source": "/en/onsite/win-client/learn/using-document-templates-for-multiple-languages",
+      "destination": "https://help.superoffice.com/docs/11/en/document/templates/admin/using-document-templates-for-multiple-languages.html"
     }
   ]
 }

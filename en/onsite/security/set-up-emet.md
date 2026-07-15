@@ -1,7 +1,7 @@
 ---
 title: Set up EMET
 uid: set_up_emet
-description: Installing Enhanced Mitigation Experience Toolkit (EMET)
+description: Installing Enhanced Mitigation Experience Toolkit (EMET)
 author: SuperOffice Product and Engineering
 keywords: security, emet
 content_type: howto
@@ -11,7 +11,7 @@ platform: web
 
 # Installing EMET
 
-**E**nhanced **M**itigation **E**xperience **T**oolkit (EMET) can be downloaded from [technet.microsoft.com][1].
+**E**nhanced **M**itigation **E**xperience **T**oolkit (EMET) can be downloaded from [technet.microsoft.com][1].
 
 The installation is straightforward, continue through the install wizard to complete the installation. Once EMET is installed it can be accessed from the lower-right corner. Double-click the icon to open the graphical user interface.
 
@@ -25,7 +25,6 @@ The following changes should be made to the settings:
 Next, we want to use EMET to protect some more applications than those that are protected by default. Depending on which sort of server this is, different settings should be applied. There are setting files available on the website that will protect SuperOffice executables. There are 2 different files at the moment:
 
 * <a href="../../../assets/downloads/emet_config_CS_v0.2.zip" download>emet_config_CS_v0.2.xml</a>
-<!-- markdownlint-disable-next-line MD044 -->
 * <a href="../../../assets/downloads/emet_config_superoffice_general_including_netserver_v0.1.zip" download>emet_config_superoffice_general_including_netserver_v0.1.xml</a>
 
 This is because Customer Service is packaged into executables and all of these need to be configured to be protected by EMET, the first file addresses this. The second file can be used on web servers in general including the NetServer. It configures EMET to protect IIS in addition to all the default EMET protection rules.
@@ -40,10 +39,8 @@ After setting up the rules, the applications must be restarted for the protectio
 
 Repeat this process for the servers that are involved in the SuperOffice installation, for example, file server, database server, NetServer, and proxy server.
 
-<!-- Referenced links -->
 [1]: https://technet.microsoft.com/en-us/security/jj653751
 
-<!-- Referenced images -->
-[img1]: media/emeticon.jpg
-[img2]: media/emetenhancedmitigation.jpg
-[img3]: media/emetrunningprocesses.jpg
+[img1]: /media/loc/en/onsite/emeticon.jpg
+[img2]: /media/loc/en/onsite/emetenhancedmitigation.jpg
+[img3]: /media/loc/en/onsite/emetrunningprocesses.jpg

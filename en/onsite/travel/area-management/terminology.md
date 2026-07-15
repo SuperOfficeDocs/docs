@@ -32,6 +32,6 @@ To fully understand how Area Management works, you should read the definitions b
 
 **Local DB Type:** If the area is used as a satellite, what is the default database type for travel.
 
-**Available associates:** Lists all users who can be assigned login access rights.
+**Available associates:** Lists all users who can be assigned login access rights.
 
-**Assigned associates:** Displays the users who have login access rights to the area. A user can only have sign-on rights to one area at a time.
+**Assigned associates:** Displays the users who have login access rights to the area. A user can only have sign-on rights to one area at a time.

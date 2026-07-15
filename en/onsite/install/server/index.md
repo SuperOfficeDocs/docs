@@ -14,7 +14,7 @@ deployment: onsite
 
 ## Prerequisites
 
-The server where you install SuperOffice CRM Server needs to have an internet connection and access to our License server on [https://license.superoffice.com][4].
+The server where you install SuperOffice CRM Server needs to have an internet connection and access to our License server on [https://license.superoffice.com][4].
 
 ## Install
 
@@ -47,36 +47,35 @@ Example argument file for new installation:
 # replace the values
 new-installation
 --database-server SQL-server
---database-name SOnew11.6 
---db-user crm7 
---db-password xxx 
---table-prefix crm7 
+--database-name SOnew11.6
+--db-user crm7
+--db-password xxx
+--table-prefix crm7
 --odbc-dsn SO116
 --so-arc C:\soserver\SO_ARC
 --email-client Outlook2007
 --company-name Super ASA
 --serial-number 161xxxxxxx
---license-url https://license.superoffice.com/LicenseSvc/LicenseService.svc 
-#--license-from-file c:\temp\license.xml 
---first-name Admin 
---last-name User 
---user-id au 
+--license-url https://license.superoffice.com/LicenseSvc/LicenseService.svc
+#--license-from-file c:\temp\license.xml
+--first-name Admin
+--last-name User
+--user-id au
 --user-name SOadmin@socrm.mailinator.com
---password au 
---user-plan ten-salesservicemarketing 
---system-user crm8 
---system-password xxx 
+--password au
+--user-plan ten-salesservicemarketing
+--system-user crm8
+--system-password xxx
 --language NO
---country NO  
+--country NO
 ```
 
 ***
 
 [Previous][11] | [Next][12] | [Back to guide][13]
 
-<!-- Referenced links -->
-[2]: ../../install/database/crmsetup-and-crmtask.md
+[2]: ../../install/database/crmsetup-and-crmtask
 [4]: https://license.superoffice.com
-[11]: ../service/prepare.md
-[12]: ../service/index.md
-[13]: ../guide.md
+[11]: ../service/prepare
+[12]: ../service/index
+[13]: ../guide

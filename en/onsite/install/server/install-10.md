@@ -24,7 +24,7 @@ A warning will be given when installing prerequisites if the installation of the
 
 The reason is the prerequisites installation program on the installation package contains only the boot-strapper for the .NET installation and not the entire setup program (approx 2.5 MB versus 250 MB).
 
-The server where you install SuperOffice CRM Server needs to have an internet connection and access to our License server on [https://license.superoffice.com][4].
+The server where you install SuperOffice CRM Server needs to have an internet connection and access to our License server on [https://license.superoffice.com][4].
 
 ## Install
 
@@ -45,20 +45,19 @@ The automatic client update feature replaces the use of SoLoader in earlier vers
 
 Automated updates for client installations will ask the user if she wants to update SuperOffice CRM client if the client setup files have been updated by ServerSetup. The check is done by comparing the version of SuperOffice CRM client with the highest version of ServerSetup installation on this database.
 
-The user can select to not update, the question will then be asked again next time she starts SuperOffice CRM client.
+The user can select to not update, the question will then be asked again next time she starts SuperOffice CRM client.
 
-If the user selects to update, the SuperOffice CRM client will exit and the client setup file will be run. When the installation is finished, SuperOffice CRM client must be started again.
+If the user selects to update, the SuperOffice CRM client will exit and the client setup file will be run. When the installation is finished, SuperOffice CRM client must be started again.
 
 ### Install with several languages
 
-You can choose to install SuperOffice CRM  in one or more languages.
+You can choose to install SuperOffice CRM  in one or more languages.
 
 In a new installation, only the main language is used for most of the translated texts that are installed in the database. This will remain the same even if you install with several languages, and later select to run SuperOffice CRM in another language than the main language. This will cause some of the text in the application to be in the main language and most in the selected language. (Seen in dropdown lists for example.)
 
 If you are upgrading from an earlier version of SuperOffice, make sure to select the same main language as in the last installation, or you risk getting a mix of languages in the database/program.
 
-<!-- Referenced links -->
-[1]: ../../requirements/crm-server.md
-[2]: silent-serversetup.md
-[3]: install-on-citrix.md
+[1]: ../../requirements/crm-server
+[2]: ./silent-serversetup
+[3]: ./install-on-citrix
 [4]: https://license.superoffice.com

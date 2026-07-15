@@ -3,7 +3,7 @@ title: SuperOffice username and password
 uid: webapi_auth_basic
 description: Web API authentication anon
 author: SuperOffice Product and Engineering
-date: 
+date:
 keywords: authentication, basic
 content_type: concept
 ---
@@ -98,15 +98,13 @@ This returns the contact info
   "Emails": [],
 ```
 
-<!-- Referenced links -->
 [1]: https://www.getpostman.com/
-[2]: ../../../api/config/webapi.md
+[2]: ../../../api/config/webapi
 
-<!-- Referenced images -->
-[img1]: media/iis-config-site.png
-[img2]: media/iis-authentication-anonymous.png
-[img3]: media/login-page.png
-[img4]: media/api-page.png
-[img5]: media/api-error.png
-[img6]: media/api-postman-basic.png
-[img7]: media/api-postman-header.png
+[img1]: /media/loc/en/onsite/iis-config-site.png
+[img2]: /media/loc/en/onsite/iis-authentication-anonymous.png
+[img3]: /media/loc/en/onsite/login-page.png
+[img4]: /media/loc/en/onsite/api-page.png
+[img5]: /media/loc/en/onsite/api-error.png
+[img6]: /media/loc/en/onsite/api-postman-basic.png
+[img7]: /media/loc/en/onsite/api-postman-header.png
