@@ -5,7 +5,7 @@ description: Parameters for Service reports
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 content_type: reference
-redirect_from: 
+redirect_from:
   - /en/service/reports/index
   - /en/service/reports/parameters
 ---

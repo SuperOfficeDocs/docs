@@ -15,12 +15,12 @@ redirect_from: /en/service/automated-tasks/ejoutbox
 
 Responsible for connecting to the SMTP server and sending messages from Service.
 
-**Usage:** `ejOutbox [OPTION] domain`
+**Usage:** `ejOutbox [OPTION] domain`
 
 **Options**:
 
-* **-force** Try to send all mails
-* **-debug** Display debug information.
-* **-maxDebug** Display all debug information (enables debug).
-* **-smtpDebug** Display SMTP session information.
-* **-about** Show about.
+* **-force** Try to send all mails
+* **-debug** Display debug information.
+* **-maxDebug** Display all debug information (enables debug).
+* **-smtpDebug** Display SMTP session information.
+* **-about** Show about.

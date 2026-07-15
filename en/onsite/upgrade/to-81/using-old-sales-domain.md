@@ -13,13 +13,13 @@ deployment: onsite
 
 ![Move Service to Sales web client domain -screenshot][img6]
 
-1. Run **SuperOffice SM.win** **SetupExe.exe** installer to upgrade the server and the database.
+1. Run **SuperOffice SM.win** **SetupExe.exe** installer to upgrade the server and the database.
 
-2. Run **SuperOffice Web client** **Setup.exe** to upgrade SuperOffice Sales web client. Remember to tick **Expose NetServer web services** if Service should use the same web services as the Web client.
+2. Run **SuperOffice Web client** **Setup.exe** to upgrade SuperOffice Sales web client. Remember to tick **Expose NetServer web services** if Service should use the same web services as the Web client.
 
 3. Start the Web client and set the new Web Base URL preference in Settings and Maintenance client.
 
-4. Run **SuperOffice.CustomerService.exe** to install Service software on the same server as Web. You must **untick** the "Create IIS website" or you will get an error since it already exists.
+4. Run **SuperOffice.CustomerService.exe** to install Service software on the same server as Web. You must **untick** the "Create IIS website" or you will get an error since it already exists.
 
     ![x -screenshot][img7]
 
@@ -31,9 +31,7 @@ deployment: onsite
     * Consider if a redirect should be added so customers using old URLs will be redirected correctly to the new.
     * Run `upgrade.exe -d newdomain` to make sure Service is upgraded as well.
 
-<!-- Referenced links -->
-[2]: move-crm-server.md
+[2]: ./move-crm-server
 
-<!-- Referenced images -->
-[img6]: media/servicetosales.png
-[img7]: media/servicenoiis.png
+[img6]: /media/loc/en/onsite/servicetosales.png
+[img7]: /media/loc/en/onsite/servicenoiis.png

@@ -17,5 +17,4 @@ The file is automatically created when the client first clicks the Travel icon w
 
 ![x -screenshot][img1]
 
-<!-- Referenced links -->
-[img1]: media/remotetravelini.png
+[img1]: /media/loc/en/onsite/remotetravelini.png

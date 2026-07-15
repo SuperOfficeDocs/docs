@@ -55,4 +55,4 @@ As with most other executables, **ejournalCron** can be executed with parameters
 * **-noOutbox** Will not start the job sending out emails
 * **-noDBI** Will not start the DBI sync job
 
-**Example:** `ejournalCron -maxdebug -noSender support.yourdomain.com`
+**Example:** `ejournalCron -maxdebug -noSender support.yourdomain.com`

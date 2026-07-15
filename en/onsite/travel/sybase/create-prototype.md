@@ -22,8 +22,5 @@ When this data source is set up, you may now generate the prototype.
 
 Clients need to have the Sybase client installed. SOLoader.exe will set up the local data source for the client.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/crm5sybaseodbcprototype1.jpg
-[img2]: media/crm5sybaseodbcprototype2.jpg
+[img1]: /media/loc/en/onsite/crm5sybaseodbcprototype1.jpg
+[img2]: /media/loc/en/onsite/crm5sybaseodbcprototype2.jpg

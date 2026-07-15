@@ -26,7 +26,7 @@ To be able to use IIS dynamic compression, you will need:
 
 Basic Authentication needs to be disabled on the IIS website. SuperOffice Web installer will do it for you since 8.1 R02.
 
-These new features work as long as the site is correctly configured, and minimum versions are met.
+These new features work as long as the site is correctly configured, and minimum versions are met.
 
 ## How to enable Json compression on web servers
 
@@ -50,7 +50,6 @@ These new features work as long as the site is correctly configured, and minimu
 
 Now the REST calls will be compressed.
 
-<!-- Referenced links -->
-[img1]: media/image0yyx.png
-[img2]: media/imagehqgzohc.png
-[img3]: media/imageeahwm.png
+[img1]: /media/loc/en/onsite/image0yyx.png
+[img2]: /media/loc/en/onsite/imagehqgzohc.png
+[img3]: /media/loc/en/onsite/imageeahwm.png

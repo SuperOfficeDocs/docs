@@ -1,0 +1,180 @@
+---
+mode: "custom"
+title: CRM Onsite
+sidebarTitle: "Overview"
+description: "Welcome to the area where you can find relevant links to all things related to installation, upgrade, and migration."
+author: Bergfrid Dias
+date: 07.15.2026
+language: en
+---
+
+import CustomFooter from '/components/custom-mode-footer.mdx'
+
+<div id="category-hero">
+  <h1>CRM Onsite</h1>
+  <p>Welcome to the area where you can find relevant links to all things related to installation, upgrade, and migration.</p>
+</div>
+
+<div id="category-landing">
+
+<div className="highlighted-content">
+
+<CardGroup cols={4}>
+<Card title="System requirements" icon="book" href="requirements/index">
+  <span className="card-label">Reference</span>
+</Card>
+
+<Card title="Setup guide" icon="book" href="install/guide">
+  <span className="card-label">Reference</span>
+</Card>
+
+<Card title="Installation guide (Web)" icon="map" href="install/index">
+  <span className="card-label">Overview</span>
+</Card>
+
+<Card title="Customer Service" icon="map" href="../service/index">
+  <span className="card-label">Overview</span>
+</Card>
+
+<Card title="SuperOffice mobile" icon="graduation-cap" href="../mobile/index">
+  <span className="card-label">Learn</span>
+</Card>
+
+<Card title="Release notes" icon="bell" href="../../../release-notes/index">
+  <span className="card-label">What's new</span>
+</Card>
+
+<Card title="Software downloads" icon="download" href="https://community.superoffice.com/en/product-releases/release-notes/">
+  <span className="card-label">Download</span>
+</Card>
+
+<Card title="Automation" icon="map" href="../automation/index">
+  <span className="card-label">Overview</span>
+</Card>
+
+</CardGroup>
+
+</div>
+
+<div className="conceptual-content">
+
+<h2>Get SuperOffice up and running</h2>
+
+<p className="section-summary">Regardless of whether this is your first installation or an upgrade, security is essential.</p>
+
+<CardGroup cols={4}>
+<Card title="Security">
+
+<ul className="concept-links">
+  <li><Icon icon="map" /> <a href="security/index">Intro</a></li>
+  <li><Icon icon="list" /> <a href="security/secure-deployment-guide">Secure deployment guide</a></li>
+  <li><Icon icon="cloud-arrow-up" /> <a href="security/deployment-scenarios">Deployment scenarios</a></li>
+</ul>
+
+</Card>
+
+<Card title="Install">
+
+<ul className="concept-links">
+  <li><Icon icon="list" /> <a href="install/guide">Setup guide</a></li>
+  <li><Icon icon="power-off" /> <a href="install/iis/index">IIS web server</a></li>
+  <li><Icon icon="list" /> <a href="install/database/create-ms-sql-server-db">Create MS SQL Server database</a></li>
+  <li><Icon icon="list" /> <a href="install/server/index">Install SuperOffice server</a></li>
+  <li><Icon icon="list" /> <a href="install/web-client/index">Web client</a></li>
+  <li><Icon icon="list" /> <a href="install/service/index">Service</a></li>
+</ul>
+
+</Card>
+
+<Card title="Upgrade">
+
+<ul className="concept-links">
+  <li><Icon icon="list" /> <a href="upgrade/to-11/index">To version 11</a></li>
+  <li><Icon icon="list" /> <a href="upgrade/to-9/index">To version 9 or 10</a></li>
+  <li><Icon icon="list" /> <a href="upgrade/to-81/index">To version 8.1 - 8.5</a></li>
+  <li><Icon icon="list" /> <a href="upgrade/75-to-8/index">To version 8.0</a></li>
+</ul>
+
+</Card>
+
+<Card title="Migrate to CRM online">
+
+<ul className="concept-links">
+  <li><Icon icon="list" /> <a href="/en/online/migrate/index">Migration guide</a></li>
+  <li><Icon icon="compass" /> <a href="/en/email/service/migrate">Migrating Service mailboxes</a></li>
+  <li><Icon icon="book" /> <a href="/en/online/system-requirements">System requirements for SuperOffice CRM Online</a></li>
+</ul>
+
+</Card>
+
+</CardGroup>
+
+</div>
+
+<div className="additional-content">
+
+<h2>Resources</h2>
+
+<p className="section-summary">System requirements, compatibility, config, and debug</p>
+
+<CardGroup cols={4}>
+<Card title="System requirements">
+
+<ul className="additional-links">
+  <li><a href="requirements/index">Intro</a></li>
+  <li><a href="requirements/crm-server">CRM Server</a></li>
+  <li><a href="requirements/iis">IIS web server</a></li>
+  <li><a href="requirements/web-client">Web client</a></li>
+</ul>
+
+</Card>
+
+<Card title="Compatibility">
+
+<ul className="additional-links">
+  <li><a href="compatibility/index">Intro</a></li>
+  <li><a href="compatibility/server-os">Server OS</a></li>
+  <li><a href="compatibility/client-os">Client OS</a></li>
+  <li><a href="compatibility/database">Database</a></li>
+  <li><a href="compatibility/browser">Browser</a></li>
+  <li><a href="compatibility/ms-office">MS Office</a></li>
+</ul>
+
+</Card>
+
+<Card title="Config and ini files">
+
+<ul className="additional-links">
+  <li><a href="travel/travel-gateway/remotetravel-ini">Remotetravel.ini</a></li>
+  <li><a href="config/service/index">Service config</a></li>
+  <li><a href="install/database/sotables-ini">Sotables.ini</a></li>
+  <li><a href="install/win-client/souser-ini">Souser.ini</a></li>
+  <li><a href="install/win-client/superoffice-config">Superoffice.config</a></li>
+  <li><a href="install/win-client/superoffice-ini">Superoffice.ini</a></li>
+  <li><a href="travel/travel-gateway/username-ini">Username.ini</a></li>
+  <li><a href="/en/api/config/index">Web.config</a></li>
+  <li><a href="/en/online/cookies">Cookies</a></li>
+</ul>
+
+</Card>
+
+<Card title="Debug">
+
+<ul className="additional-links">
+  <li><a href="debug/web-client">Web client</a></li>
+  <li><a href="debug/service-log-files">Service (log files)</a></li>
+  <li><a href="reporter/debug">Reporter</a></li>
+  <li><a href="debug/win-client">Windows client</a></li>
+  <li><a href="/integrations/webtools/troubleshooting.md#logging">WebTools</a></li>
+  <li><a href="/integrations/mail-link/debug">Outlook Mail Link</a></li>
+</ul>
+
+</Card>
+
+</CardGroup>
+
+</div>
+
+</div>
+
+<CustomFooter />

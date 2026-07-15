@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 Windows Registry Editor Version 5.00
 
 ```text
