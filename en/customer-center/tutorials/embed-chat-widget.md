@@ -23,7 +23,7 @@ data-topicId='1' data-title='Standard chatchannel' data-theme='classic' data-col
 
 ## Scenario
 
-Let’s expand this a bit with a real-life scenario:
+Let's expand this a bit with a real-life scenario:
 
 Your customer has an external website that allows their customers to log in and they want to add SuperOffice chat to this page. This website exists outside our ecosystem, so you know that our authentication mechanism will not work, but you would prefer that customers would not have to manually fill out the pre-chat form as they already have authenticated.
 
@@ -31,7 +31,6 @@ Your customer has an external website that allows their customers to log in and 
 
 It is possible to expand the script tag with data-attributes to pass values into the pre-chat form. The following 4 attributes are supported:
 
-<!-- markdownlint-disable-file MD034 -->
 * Name: **data-customerName** = "John Rowling"
 * Email: **data-customerEmail** = "john@mailinator.com"
 * Phone: **data-customerPhone** = "12345678"
@@ -58,6 +57,5 @@ The pre-chat form would automatically populate based on present cookie values:
 
 ![cookies -screenshot][img2]
 
-<!-- Referenced images -->
-[img1]: media/how-can-we-help.png
-[img2]: media/cookies.png
+[img1]: /media/loc/en/customer-center/how-can-we-help.png
+[img2]: /media/loc/en/customer-center/cookies.png

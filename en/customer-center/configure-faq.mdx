@@ -13,8 +13,9 @@ index: true
 
 To enable the comment field inside the Customer Center for your FAQ entries, you need to change the REGISTRY table in the SuperOffice CRM database.
 
-> [!NOTE]
-> It is not recommended to make changes directly on the database without a backup available. If you make a mistake, this backup must be restored.
+<Note>
+It is not recommended to make changes directly on the database without a backup available. If you make a mistake, this backup must be restored.
+</Note>
 
 To enable comments:
 
@@ -24,7 +25,7 @@ If nothing is returned by this query, first go to your Customer center and FAQs 
     ![Configure FAQ entries -screenshot][img1]
 
 1. Now you can change comment field access. Below are possible options:
-    * 0 = none
+    * 0 = none
     * 1 = customer (these are people that are logged in to the customer portal)
     * 2 = all - also anonymous users
 
@@ -32,8 +33,9 @@ If nothing is returned by this query, first go to your Customer center and FAQs 
 
 ![x -screenshot][img2]
 
-> [!NOTE]
-> If you use SuperOffice Online you need to contact [support][1].
+<Note>
+If you use SuperOffice Online you need to contact [support][1].
+</Note>
 
 ## More access control on FAQ entries
 
@@ -81,9 +83,7 @@ For example, a boolean field is created on the customer, called `x_access`. When
 %ENDIF%
 ```
 
-<!-- Referenced links -->
 [1]: http://support.superoffice.com/
 
-<!-- Referenced images -->
-[img1]: media/regid-198-199.png
-[img2]: media/comments.png
+[img1]: /media/loc/en/customer-center/regid-198-199.png
+[img2]: /media/loc/en/customer-center/comments.png

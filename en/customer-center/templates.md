@@ -61,7 +61,7 @@ You can also create your own custom templates, which for example can make a requ
 
 ## How can I create category drop-downs on the customer pages?
 
-Customer Center is default shipped with templates that lists the categories in a single drop-down. If you want these to show the categories in a hierarchy, you have to make some small changes to the templates.
+Customer Center is default shipped with templates that lists the categories in a single drop-down. If you want these to show the categories in a hierarchy, you have to make some small changes to the templates.
 
 In *framework.html* you have to add the following between the `<head>` tags:
 
@@ -77,8 +77,7 @@ To use the category drop-down, you enter the following into the right templates:
 * [How do I sort messages in the Customer Center?][3]
 * [Update extra table][4]
 
-<!-- Referenced links -->
-[1]: config.md
-[2]: create-webform-with-template.md
-[3]: overview.md
-[4]: update-extra-table.md
+[1]: ./config
+[2]: ./create-webform-with-template
+[3]: ./overview
+[4]: ./update-extra-table

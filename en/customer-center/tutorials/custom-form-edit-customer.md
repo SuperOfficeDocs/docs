@@ -87,8 +87,7 @@ It's just a copy of another menu line with the modified URL. This is how it look
 
 ![form 2 -screenshot][img3]
 
-<!-- Referenced image -->
-[img1]: media/script.png
-[img2]: media/form1.png
-[img3]: media/form2.png
-[img4]: media/menuitem.png
+[img1]: /media/loc/en/customer-center/script.png
+[img2]: /media/loc/en/customer-center/form1.png
+[img3]: /media/loc/en/customer-center/form2.png
+[img4]: /media/loc/en/customer-center/menuitem.png

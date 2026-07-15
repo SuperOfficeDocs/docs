@@ -27,7 +27,7 @@ In the Customer Centre, it will show up like this:
 
 ![x -screenshot][img7]
 
-To simplify the code, I’ve left out CSS, tables, and similar, which would make this look a bit nicer. This form works, but currently lacks 2 features:
+To simplify the code, I've left out CSS, tables, and similar, which would make this look a bit nicer. This form works, but currently lacks 2 features:
 
 * The form does not keep its data. When you click the **Post form** button, you are returned to the form with the fields cleared.
 
@@ -51,9 +51,8 @@ Finally, we can implement our business logic. In this case, I will use NetServer
 
 As can be seen from this snippet, we use `NSAppointmentAgent` and `NSAppointmentEntity` to create the appointments. These are standard methods from NetServer. A better implementation would perhaps use a dropdown to choose the associate, or find the first available time and return the chosen time to the user.
 
-<!-- Referenced images -->
-[img6]: media/image006.png
-[img7]: media/image007.png
-[img8]: media/image008.png
-[img9]: media/image009.png
-[img10]: media/image010.png
+[img6]: /media/loc/en/customer-center/image006.png
+[img7]: /media/loc/en/customer-center/image007.png
+[img8]: /media/loc/en/customer-center/image008.png
+[img9]: /media/loc/en/customer-center/image009.png
+[img10]: /media/loc/en/customer-center/image010.png

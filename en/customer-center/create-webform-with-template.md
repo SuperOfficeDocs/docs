@@ -34,17 +34,17 @@ deployment: onsite
 <input type="hidden" name="message.body" value="">
 
 When posted <input type="text" name="whenposted" size="18" value="%datetimenow%">
-<br>
-First name <input type="text" name="customer.firstname" size="45" value="">
-<br>
-Last Name <input type="text" name="customer.lastname" size="45" value="">
-<br>
-Email <input type="text" name="customer.email" size="45" value="">
-<br>
-Message <input type="text" name="message" size="45" value="">
+<br />
+First name <input type="text" name="customer.firstname" size="45" value="">
+<br />
+Last Name <input type="text" name="customer.lastname" size="45" value="">
+<br />
+Email <input type="text" name="customer.email" size="45" value="">
+<br />
+Message <input type="text" name="message" size="45" value="">
 
-<input type="hidden" name="message.alterbody" 
-       value="This is a example web form created at %%whenposted%% by %%customer.firstname%% %%customer.lastname%% with email address %%customer.email%% Message from this person: %%message%%">
+<input type="hidden" name="message.alterbody"
+       value="This is a example web form created at %%whenposted%% by %%customer.firstname%% %%customer.lastname%% with email address %%customer.email%% Message from this person: %%message%%">
 
 <input type="hidden" name="oktemplate" value="special/ok.html">
 
@@ -72,7 +72,7 @@ Message <input type="text" name="message" size="45" value="">
 "ticket.title" title of request
 "ticket.category" which category to insert the ticket to (number, not name)
 "message.body" body of the message in request (not used if message.alterbody exists)
-"message.alterbody" if you wish to insert values from form in message use this also, remember to use an empty message.body
+"message.alterbody" if you wish to insert values from form in message use this also, remember to use an empty message.body
 "message.author" author of the message
 ```
 

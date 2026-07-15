@@ -41,10 +41,8 @@ You need to [set up your chat widget][3] before you add it to your Customer cent
 * [Configure customer center][2]
 * [Customer languages][1]
 
-<!-- Referenced links -->
-[1]: ../../localization/learn/customer-languages.md
-[3]: ../../chat/admin/channel-create.md
-[2]: config.md
+[1]: ../../localization/learn/customer-languages
+[3]: ../../chat/admin/channel-create
+[2]: ./config
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/customer-center/connecting-widget.png
