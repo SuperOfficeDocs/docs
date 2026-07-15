@@ -27,9 +27,9 @@ The Identity Manager is a clean, web-based user interface for SCIM identity mana
 
 ### Configurations tab
 
-* **User Sync Rules** pane - the rules wizard
-* **SCIM users** pane - a list of users that **can** be synchronized
-* **Preview** pane - details for the currently selected user
+* **User Sync Rules** pane - the rules wizard
+* **SCIM users** pane - a list of users that **can** be synchronized
+* **Preview** pane - details for the currently selected user
 
 ![SCIM UI configurations tab -screenshot][img2]
 
@@ -51,13 +51,11 @@ The Identity Manager is a clean, web-based user interface for SCIM identity mana
 
 To access the Identity Manager, you will need:
 
-* **Tenant** configured with **SuperID** - register to [get a developer account in SOD][1]
+* **Tenant** configured with **SuperID** - register to [get a developer account in SOD][1]
 * A SuperOffice admin account for that tenant linked to a Microsoft Entra account (Microsoft Entra admin not required)
 
-<!-- Referenced links -->
-[1]: ../../../developer-portal/getting-started/get-access-to-sod.md
+[1]: ../../../developer-portal/getting-started/get-access-to-sod
 
-<!-- Referenced images-->
-[img1]: media/scim-flow-ui.png
-[img2]: media/scim-config-tab.png
-[img3]: media/scim-preview-tab.png
+[img1]: /media/loc/en/online/scim-flow-ui.png
+[img2]: /media/loc/en/online/scim-config-tab.png
+[img3]: /media/loc/en/online/scim-preview-tab.png

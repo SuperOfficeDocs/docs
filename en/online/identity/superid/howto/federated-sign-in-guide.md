@@ -55,17 +55,15 @@ Does the user's browser session **have an active session** from the identity pro
 * [Sign-in services][9]
 * [Federated identity][10]
 
-<!-- Referenced links -->
-[1]: check-idp-domain.md
-[2]: map-idp-usernames.md
-[3]: register-idp.md
-[4]: complete-user-transition.md
-[5]: ../overview.md
-[6]: ../../user/add-user-in-admin-client.md
-[7]: ../../user/reset-password.md
-[8]: ../../user/index.md
-[9]: ../sign-in-services.md
-[10]: ../../federated-id-and-identity-providers.md
+[1]: ./check-idp-domain
+[2]: ./map-idp-usernames
+[3]: ./register-idp
+[4]: ./complete-user-transition
+[5]: ../overview
+[6]: ../../user/add-user-in-admin-client
+[7]: ../../user/reset-password
+[8]: ../../user/index
+[9]: ../sign-in-services
+[10]: ../../federated-id-and-identity-providers
 
-<!-- Referenced images -->
-[img1]: media/superidlogin.png
+[img1]: /media/loc/en/online/superidlogin.png

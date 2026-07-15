@@ -20,11 +20,11 @@ Enable automatic welcome emails from SuperOffice **if you don't plan to handle i
 
 1. Sign in to the SuperOffice Admin client.
 
-2. Go to the **Preferences** page and select the **Global preferences** tab.
+2. Go to the **Preferences** page and select the **Global preferences** tab.
 
-3. Scroll down to the **System** settings group and set **Send login emails to new users** to *Yes*.
+3. Scroll down to the **System** settings group and set **Send login emails to new users** to *Yes*.
 
-4. Click **Save**.
+4. Click **Save**.
 
     ![Send welcome email - admin client -screenshot][img1]
 
@@ -32,7 +32,7 @@ Enable automatic welcome emails from SuperOffice **if you don't plan to handle i
 
 1. Sign in to the [SuperOffice Identity Manager][1].
 
-2. Turn on the **Send Welcome Email** setting in the upper right corner.
+2. Turn on the **Send Welcome Email** setting in the upper right corner.
 
     ![Send welcome email - SCIM -screenshot][img2]
 
@@ -46,11 +46,11 @@ The sign-in link in the welcome email can only be used once. If the user has not
 
 1. Sign in to the SuperOffice Admin client.
 
-2. Go to the **Users** page.
+2. Go to the **Users** page.
 
-3. Select the user from the **Associates** list.
+3. Select the user from the **Associates** list.
 
-4. Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) and then select **Send welcome email**.
+4. Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) and then select **Send welcome email**.
 
     ![Send welcome email -screenshot][img3]
 
@@ -60,11 +60,9 @@ The sign-in link in the welcome email can only be used once. If the user has not
 
 * The user didn't see the email in their inbox, either because they skipped it or it was labeled as spam.
 
-<!-- Referenced links -->
-[1]: ../scim/sign-in-to-scim.md
-[2]: reset-password.md
+[1]: ../scim/sign-in-to-scim
+[2]: ./reset-password
 
-<!-- Referenced images -->
-[img1]: media/soadm-send-welcome-email.png
-[img2]: media/scim-send-welcome-email.png
-[img3]: media/task-send-welcome-email.png
+[img1]: /media/loc/en/online/soadm-send-welcome-email.png
+[img2]: /media/loc/en/online/scim-send-welcome-email.png
+[img3]: /media/loc/en/online/task-send-welcome-email.png

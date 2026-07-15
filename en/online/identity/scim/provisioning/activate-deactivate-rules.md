@@ -16,19 +16,19 @@ You can turn SCIM rules on and off and also rearrange the order in which they ar
 
 ## Pre-requisites
 
-* You are [signed in to the SuperOffice Identity Manager][1] and have opened the **Configurations** tab.
+* You are [signed in to the SuperOffice Identity Manager][1] and have opened the **Configurations** tab.
 
 ## Activate a SCIM rule
 
-* Locate the rule in the **User sync rules** pane and select the checkbox.
+* Locate the rule in the **User sync rules** pane and select the checkbox.
 
 ## Deactivate a SCIM rule
 
-* Locate the rule in the User sync rules pane and clear the checkbox.
+* Locate the rule in the User sync rules pane and clear the checkbox.
 
 ## Change the order of the rules
 
-1. Locate the rule in the **User sync rules** pane.
+1. Locate the rule in the **User sync rules** pane.
 
 2. If the rule is expanded, click the arrow to collapse it.
 
@@ -38,8 +38,6 @@ You can turn SCIM rules on and off and also rearrange the order in which they ar
 
     ![user sync rules -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: ../sign-in-to-scim.md
+[1]: ../sign-in-to-scim
 
-<!-- Referenced images -->
 [img1]: ../media/image84sls.png

@@ -21,5 +21,5 @@ You can manually synchronize all users that match the current SCIM rule set.
 ## Procedure
 
 1. Optionally preview what will be synchronized.
-2. Open the **Configurations** tab.
-3. Click **Sync company** in the **SCIM users** pane.
+2. Open the **Configurations** tab.
+3. Click **Sync company** in the **SCIM users** pane.

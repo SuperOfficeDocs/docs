@@ -36,8 +36,7 @@ The system is largely self-bootstrapping. The table below summarises what happen
 * [Change tracking][3]
 * [Troubleshooting][4]
 
-<!-- Referenced links -->
-[1]: setup-guide.md
-[2]: force-resync.md
-[3]: change-tracking.md
-[4]: troubleshooting.md
+[1]: ./setup-guide
+[2]: ./force-resync
+[3]: ./change-tracking
+[4]: ./troubleshooting

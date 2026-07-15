@@ -55,11 +55,9 @@ Use scopes to control how multiple rules interact when setting the same property
 * [Get started with SCIM][3]
 * [Add SCIM rules][4]
 
-<!-- Referenced links -->
-[1]: identity-management-gw.md
-[2]: ../superid/user-accounts-and-passwords.md
-[3]: overview.md
-[4]: provisioning/add-scim-rule.md
+[1]: ./identity-management-gw
+[2]: ../superid/user-accounts-and-passwords
+[3]: ./overview
+[4]: ./provisioning/add-scim-rule
 
-<!-- Referenced images -->
-[img1]: media/scim-marketing-rule.png
+[img1]: /media/loc/en/online/scim-marketing-rule.png

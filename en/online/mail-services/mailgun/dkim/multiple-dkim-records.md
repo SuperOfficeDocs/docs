@@ -53,9 +53,6 @@ A new tenant in SuperOffice Online always uses DKIM signing by default. It uses 
 
 If a customer has a strict policy that states that only DKIM signatures pointing to a domain that is also the sender's email address domain, sending emails from another sender's domains will report the email as invalid.
 
-<!-- Referenced links -->
 [1]: https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail
 [2]: https://dmarc.org/
 [3]: https://en.wikipedia.org/wiki/Sender_Policy_Framework
-
-<!-- Referenced images -->

@@ -31,15 +31,14 @@ You can send larger volumes of emails from SuperOffice Mailing if needed, but th
 
 Example: if you want to send out 160 000 emails, you should first divide them into a few selections and check the number of campaign email volume per month you have at your disposal. There is also a possibility to purchase an extra email package since SuperOffice has a very favorable price to offer.
 
-However, we would recommend that our customers who need to send large volumes of emails per month (>50,000 per month) consider other, more specialized mailing services such as MailChimp, eMarketeer, or others.
+However, we would recommend that our customers who need to send large volumes of emails per month (\>50,000 per month) consider other, more specialized mailing services such as MailChimp, eMarketeer, or others.
 
 ## Articles
 
-* [Successful Email Marketing – you'll reap what you sow][2]
+* [Successful Email Marketing - you'll reap what you sow][2]
 * [Are you spamming your customers?][3]
 * [89% of Businesses Make the Same Email Marketing Mistake][4]
 
-<!-- Referenced links -->
 [2]: https://www.superoffice.com/blog/successful-email-marketing-youll-reap-what-you-sow/
 [3]: https://www.superoffice.com/blog/are-you-spamming-your-customers/
 [4]: https://www.superoffice.com/blog/email-marketing-segmentation-mistake/

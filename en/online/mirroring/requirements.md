@@ -59,7 +59,6 @@ Back those up using your normal SQL Server backup process.
 * [Overview][2]
 * [SQL Server schema][3]
 
-<!-- Referenced links -->
-[1]: setup-guide.md
-[2]: overview.md
-[3]: sql-server-schema.md
+[1]: ./setup-guide
+[2]: ./overview
+[3]: ./sql-server-schema

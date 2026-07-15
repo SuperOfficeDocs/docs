@@ -42,12 +42,10 @@ You need to sign in to our Identity Manager to set up and to update the mapping 
 
     ![x -screenshot][img3]
 
-<!-- Referenced links -->
 [1]: https://cloudintegration-sod.superoffice.com/app/scim-config
 [2]: https://cloudintegration-stage.superoffice.com/app/scim-config
 [3]: https://cloudintegration.superoffice.com/app/scim-config
 
-<!-- Referenced images -->
-[img1]: media/im-sign-in-dialog.png
-[img2]: media/im-federation-dialog.png
-[img3]: media/1st-im-sign-in-ok.png
+[img1]: /media/loc/en/online/im-sign-in-dialog.png
+[img2]: /media/loc/en/online/im-federation-dialog.png
+[img3]: /media/loc/en/online/1st-im-sign-in-ok.png

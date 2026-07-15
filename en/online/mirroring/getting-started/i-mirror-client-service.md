@@ -25,10 +25,10 @@ SuperOffice NuGet implementation of `IMirrorClientService` interface for Microso
 The `MirroringClientService` class file is the [database mirroring][1] web service that SuperOffice will call to synchronize databases. The class inherits from the `MirroringClientImplementation` class, which resides in the `SuperOffice.Online.Mirroring` assembly.
 
 * `MirroringClientImplementation` contains almost everything a database mirroring service needs to synchronize an online tenant database with a local SQL Server database server.
-* `MirroringClientImplementation` must:
+* `MirroringClientImplementation` must:
   * resolve a tenants context identifier to a particular database
   * create the database if necessary
-  * discover and provide the service's ApplicationToken and the private certificate key required to sign the token
+  * discover and provide the service's ApplicationToken and the private certificate key required to sign the token
 
 Luckily for you, these 3 tasks are implemented in the *MirroringClientService.cs* file. However, you still must provide those key pieces of information in the project's *web.config* file.
 
@@ -51,7 +51,7 @@ The NuGet implementation is for Microsoft SQL Server only!
 No state is carried over from a call to the next. However, multiple calls may be active at the same time, for multiple customers, tables, or both. The only guarantee is that:
 
 * There will not be multiple active calls for a specific combination of customer and table
-* Each customer’s [mirroring cycle][2] will run in a linear timeline from start to end
+* Each customer's [mirroring cycle][2] will run in a linear timeline from start to end
 
 All implementations of `IMirrorClientService` **must be multi-tenant and fully re-entrant**.
 
@@ -63,7 +63,7 @@ It is used to exchange and validate signed tokens by both the Mirroring Task and
 
 No session or state on the Mirroring Client is established.
 
-Authenticate must return the application token and a timestamped signed with the application’s private key.
+Authenticate must return the application token and a timestamped signed with the application's private key.
 
 ### ReplicationCompleted
 
@@ -81,11 +81,11 @@ This method is called once for each [batch][2] of data sent.
 
 Each row is tagged with an operation: insert, update, or delete.
 
-If a row has changed multiple times since the last time it was mirrored, then only the final state is transmitted. For example, if the row was inserted and then updated, then the row will be tagged with *insert* but only the final state will be sent.
+If a row has changed multiple times since the last time it was mirrored, then only the final state is transmitted. For example, if the row was inserted and then updated, then the row will be tagged with *insert* but only the final state will be sent.
 
 Only the final batch for a table will have a valid LSN because intermediate rows may or may not have LSNs. If tracking was turned on recently, all rows existing before that time will not have an LSN.
 
-The SuperOffice NuGet implementation saves the data and updates the LSN stored in the mirror’s metadata table. Insert operations are accumulated and committed through the Bulk Copy mechanism for speed.
+The SuperOffice NuGet implementation saves the data and updates the LSN stored in the mirror's metadata table. Insert operations are accumulated and committed through the Bulk Copy mechanism for speed.
 
 ### TableSchema
 
@@ -98,11 +98,11 @@ This method is called once before any data is sent.
 
 The mirror database is the only place where the LSN from the last update is known.
 
-`TableSchema()` updates the mirror’s physical schema for the table if needed.
+`TableSchema()` updates the mirror's physical schema for the table if needed.
 
-One way to trigger a schema update is by dropping the table and recreating it with the new schema. In that case,  the client should return an LSN of -1 to force a full repopulation.
+One way to trigger a schema update is by dropping the table and recreating it with the new schema. In that case,  the client should return an LSN of -1 to force a full repopulation.
 
-`IMirrorAdmin.OnBeforeReplicateTable()` is called after each schema update, with parameters specifying the table and whether the schema is altered. It takes an array of table schemas so that the communication is more efficient. Tables not present are assumed to be deleted from the source database and should be deleted from the mirror.
+`IMirrorAdmin.OnBeforeReplicateTable()` is called after each schema update, with parameters specifying the table and whether the schema is altered. It takes an array of table schemas so that the communication is more efficient. Tables not present are assumed to be deleted from the source database and should be deleted from the mirror.
 
 The processing of each table is individual and in principle independent of other tables. It can be parallelized if desired.
 
@@ -110,25 +110,23 @@ The processing of each table is individual and in principle independent of other
 
 This method is called during the initial mirroring and subsequently whenever the Mirroring Task has detected that a table needs to be fully repopulated.
 
-There is no separate call to drop tables. This is handled by the absence of a table from the TableSchema request.
+There is no separate call to drop tables. This is handled by the absence of a table from the TableSchema request.
 
-The SuperOffice NuGet implementation performs a truncate table command that removes all data but keeps all schema structures (such as indexes). `IMirrorAdmin.OnWipe()` is called after the truncate command has run.
+The SuperOffice NuGet implementation performs a truncate table command that removes all data but keeps all schema structures (such as indexes). `IMirrorAdmin.OnWipe()` is called after the truncate command has run.
 
 ## Overriding default functionality
 
-You can choose to override any of the methods of the base class. For example, to inspect the parameters in detail, call the base implementation, and perform other related functions. This is useful if the existing `IMirrorAdmin` interface events are insufficient.
+You can choose to override any of the methods of the base class. For example, to inspect the parameters in detail, call the base implementation, and perform other related functions. This is useful if the existing `IMirrorAdmin` interface events are insufficient.
 
 ![x -screenshot][img3]
 
 Partner code can use this call when it needs to adjust its data, remove indexes, or perform other preparatory functions.
 
-<!-- Referenced links -->
-[1]: ../overview.md
-[2]: ../mirroring-task.md
-[3]: ../setup-guide.md
-[4]: ../migrate.md
+[1]: ../overview
+[2]: ../mirroring-task
+[3]: ../setup-guide
+[4]: ../migrate
 
-<!-- Referenced images -->
-[img1]: media/imirroringclientservice.png
-[img2]: media/imirroradmininterface.png
-[img3]: media/interface-implementation-classview.png
+[img1]: /media/loc/en/online/imirroringclientservice.png
+[img2]: /media/loc/en/online/imirroradmininterface.png
+[img3]: /media/loc/en/online/interface-implementation-classview.png

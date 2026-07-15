@@ -1,0 +1,117 @@
+---
+mode: "custom"
+title: Database mirroring
+sidebarTitle: "Overview"
+description: "Keep a customer-managed SQL Server replica in sync with your SuperOffice Online tenant for reporting, analytics, and offline processing."
+author: SuperOffice Product and Engineering
+date: 07.15.2026
+language: en
+---
+
+<div id="subcategory">
+
+<h1>Database mirroring</h1>
+
+<p className="description">Keep a customer-managed SQL Server replica in sync with your SuperOffice Online tenant for reporting, analytics, and offline processing.</p>
+
+<CardGroup cols={3}>
+<Card title="Get started">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="power-off" />
+    <span>Get started</span>
+  </div>
+  <ul>
+    <li><a href="overview">What is Database Mirroring?</a></li>
+    <li><a href="requirements">Requirements</a></li>
+    <li><a href="order-database-mirroring">Order Database Mirroring</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="cloud-arrow-up" />
+    <span>Deploy</span>
+  </div>
+  <ul>
+    <li><a href="setup-guide">Set up the client (step-by-step)</a></li>
+  </ul>
+</div>
+
+</Card>
+
+<Card title="Migrate from legacy mirroring">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>How-to guide</span>
+  </div>
+  <ul>
+    <li><a href="migrate">Migration guide (parallel run + database rename)</a></li>
+    <li><a href="migrate.md#schema-alignment-dbo-vs-crm7">Schema alignment (dbo vs crm7)</a></li>
+    <li><a href="migrate.md#rollback">Rollback</a></li>
+  </ul>
+</div>
+
+</Card>
+
+<Card title="How-to">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>How-to guide</span>
+  </div>
+  <ul>
+    <li><a href="force-resync">Force re-sync</a></li>
+    <li><a href="troubleshooting">Troubleshooting</a></li>
+  </ul>
+</div>
+
+</Card>
+
+<Card title="Reference">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Reference</span>
+  </div>
+  <ul>
+    <li><a href="setup-guide.md#command-reference">Command reference</a></li>
+    <li><a href="setup-guide.md#configuration-reference">Configuration reference (appsettings.json)</a></li>
+    <li><a href="scenarios">Scenarios</a></li>
+    <li><a href="sql-server-schema">SQL Server schema</a></li>
+    <li><a href="change-tracking">Change tracking (CDC)</a></li>
+    <li><a href="blocked-tables">Blocked tables</a></li>
+  </ul>
+</div>
+
+</Card>
+
+<Card title="Legacy (WCF) mirroring">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Reference</span>
+  </div>
+  <ul>
+    <li><a href="conceptual-overview-2016">Conceptual overview (2016)</a></li>
+    <li><a href="mirroring-task">Mirroring Task (legacy)</a></li>
+    <li><a href="getting-started/index">Getting started (legacy)</a></li>
+    <li><a href="getting-started/create-wfc">Create a WCF service (legacy)</a></li>
+    <li><a href="getting-started/i-mirror-client-service">IMirrorClientService interface (legacy)</a></li>
+    <li><a href="skip-tables">Skipped tables (obsolete from 10.1.8)</a></li>
+  </ul>
+</div>
+
+</Card>
+
+</CardGroup>
+
+</div>

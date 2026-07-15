@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 1. Log in to Google with your Google Administrators account, and open your Google **Admin** section.
 
     ![Google Admin -screenshot][img2]
@@ -21,7 +20,6 @@
 
 5. Click **Sign in to DNS console** to open the DNS console window. You may have to sign into this DNS console with a separate DNS account.
 
-<!-- Referenced images -->
 [img2]: ../media/image.png
 [img3]: ../media/open-domains.png
 [img4]: ../media/add-domain.png

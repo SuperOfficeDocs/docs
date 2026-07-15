@@ -20,7 +20,7 @@ language: en
 
 Database Mirroring presents a new API capability for partners building online integrations. By mirroring a customer's database, it gives partners a tremendous about of flexibility to perform deep analysis on customer data; all without having to rely on web services subjected to latency or throughput issues.
 
-We believe there are many scenarios where this capability will be extremely beneficial to partner applications and those customers who consume them. We also realize that this capability poses a potential problem where partners will try to create solutions that don't fit any of the ideal scenarios. In most of these cases, they will be filtered and vetted through the certification process, so perhaps in the future, there will be more best-case scenario guidance for application vendors to follow.
+We believe there are many scenarios where this capability will be extremely beneficial to partner applications and those customers who consume them. We also realize that this capability poses a potential problem where partners will try to create solutions that don't fit any of the ideal scenarios. In most of these cases, they will be filtered and vetted through the certification process, so perhaps in the future, there will be more best-case scenario guidance for application vendors to follow.
 
 ## Database mirror options
 
@@ -66,7 +66,7 @@ In principle, any change to any table should be mirrored. This includes Insert/U
 
 Since there is no GUI to look at data in a mirror, SQL Server Management Studio must be used. Generally, it should be possible to do `select * from <sometable>` in both the customer table and the mirror and get the same result.
 
-Backup/restore is a special case. If the sequence of events is mirror – backup – change – mirror – restore – mirror, then the system will detect that the mirror is "ahead" of the original and trigger a full repopulation. However, if the scenario is mirror – backup – change – mirror – restore – change – change – mirror then the sum of changes since the restore may be enough to camouflage the fact that a restore happened. In that case, the mirror must be manually invalidated at the partner-side, which can be done by setting the LSN of all tables to -1 in the mirror database’s `<context_id>_mirroring` table. Whether we need a way to force this from OC is something we’ll have to find out.
+Backup/restore is a special case. If the sequence of events is mirror - backup - change - mirror - restore - mirror, then the system will detect that the mirror is "ahead" of the original and trigger a full repopulation. However, if the scenario is mirror - backup - change - mirror - restore - change - change - mirror then the sum of changes since the restore may be enough to camouflage the fact that a restore happened. In that case, the mirror must be manually invalidated at the partner-side, which can be done by setting the LSN of all tables to -1 in the mirror database's `<context_id>_mirroring` table. Whether we need a way to force this from OC is something we'll have to find out.
 
 ## Restrictions
 
@@ -74,15 +74,14 @@ It does not make business sense to provide a complete database mirror to partner
 
 If you believe you have a great case for an application, navigate to the [application registration page][10] (for existing partners) and get started today! If you are not yet an online application partner, get started today by filling our [developer registration form][6].
 
-<!-- Referenced links -->
-[1]: ../../../api/authentication/online/certificates/override-resolver.md
-[2]: ../../../api/authentication/online/certificates/index.md
-[3]: ../blocked-tables.md
+[1]: ../../../api/authentication/online/certificates/override-resolver
+[2]: ../../../api/authentication/online/certificates/index
+[3]: ../blocked-tables
 [4]: https://www.nuget.org/packages/SuperOffice.Online.Mirroring
-[7]: ../order-database-mirroring.md
-[6]: ../../../developer-portal/getting-started/get-access-to-sod.md
-[8]: ../../../developer-portal/faq/update-app.md
-[10]: ../../../developer-portal/create-app/index.md
+[7]: ../order-database-mirroring
+[6]: ../../../developer-portal/getting-started/get-access-to-sod
+[8]: ../../../developer-portal/faq/update-app
+[10]: ../../../developer-portal/create-app/index
 [11]: https://github.com/SuperOffice/devnet-database-mirroring
-[12]: ../setup-guide.md
-[13]: ../migrate.md
+[12]: ../setup-guide
+[13]: ../migrate

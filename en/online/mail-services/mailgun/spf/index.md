@@ -39,16 +39,13 @@ The SPF 'mailgun.org' includes:
 * '_spf.mailgun.org' (all Mailgun US IP addresses)
 * '_spf.eu.mailgun.org' (all Mailgun EU IP addresses)
 
-<!-- markdownlint-disable MD044 -->
 The SPF '_spf.online.superoffice.com' includes:
 
 * 3 IP addresses (or ranges) of a Mailgun US cluster (the IP addresses we used to use while we were using Mailgun US)
 * shortcut to SPF range '_spf.eu.mailgun.org' (all Mailgun EU IP addresses)
 
 **All SuperOffice Online customers should add SPF '_spf.online.superoffice.com' for the domains they use as sender's email or in custom DKIM.**
-<!-- markdownlint-restore -->
 
-<!-- Referenced links -->
 [1]: https://en.wikipedia.org/wiki/Domain_Name_System
 [2]: https://en.wikipedia.org/wiki/MX_record
 [3]: https://support.google.com/a/answer/33786?hl=en
