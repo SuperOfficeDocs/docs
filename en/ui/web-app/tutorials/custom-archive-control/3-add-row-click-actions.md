@@ -68,7 +68,7 @@ A linkhint prefix is then used in the `linkinfo` element, prefixing the type wit
 ```xml
 <linkinfos>
   <!-- *********************************************
-  create archive separation using a linkhint prefix  
+  create archive separation using a linkhint prefix
   ***********************************************-->
 
   <linkinfo type="personarchive:person" subtype="click">
@@ -115,7 +115,4 @@ There is **no** override capability for the single-click event. Single click act
 </control>
 ```
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/web-archive-row-click-action.png
+[img1]: /media/loc/en/ui/web-archive-row-click-action.png

@@ -28,7 +28,7 @@ you can send this one:
 
 The text you enter will look like this:
 
-"Hi **{atfn}**. Would you like to know more about how our product can help **{name}** win new customers? Please call **{cont}** at **{onam}**."
+"Hi **\{atfn\}**. Would you like to know more about how our product can help **\{name\}** win new customers? Please call **\{cont\}** at **\{onam\}**."
 
 ## How to use template variables
 
@@ -40,7 +40,7 @@ The text you enter will look like this:
 
 * The date and time in template variables are controlled by the PC's system clock.
 
-* In documents of file type .doc in Office 2003 and older, you must use angled brackets – &lt; &gt; – around variables instead of curly brackets – { } –.
+* In documents of file type .doc in Office 2003 and older, you must use angled brackets - &lt; &gt; - around variables instead of curly brackets - \{ \} -.
 
 ### Example: meeting minutes (header)
 
@@ -112,7 +112,4 @@ When generating email templates for requests and mailings (and message templates
 
 The reference is grouped by area. [Go to reference][1]
 
-<!-- Referenced links -->
-[1]: ../../../document/templates/variables/index.md
-
-<!-- Referenced images -->
+[1]: ../../../document/templates/variables/index

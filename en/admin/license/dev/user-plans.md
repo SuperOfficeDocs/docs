@@ -131,9 +131,8 @@ You should keep this flexibility in mind when integrating with specific features
 
 * [SuperOffice CRM Suite plans][3]
 
-<!-- References -->
-[1]: hidden-licenses.md
-[2]: module-licenses.md
-[3]: ../crm-suite.md
+[1]: ./hidden-licenses
+[2]: ./module-licenses
+[3]: ../crm-suite
 
 [img1]: ../../../../media/loc/en/admin/licenses-prereq.png

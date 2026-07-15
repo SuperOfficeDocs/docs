@@ -38,9 +38,6 @@ For example, you can create a new status called "Waiting for reply" as a more de
 * [Delete request status][2]
 * [Set up Get next request in queue][3].
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: delete.md
-[3]: ../next-in-queue.md
-
-<!-- Referenced images -->
+[1]: ./create
+[2]: ./delete
+[3]: ../next-in-queue

@@ -37,9 +37,7 @@ The Navigator FastSearcher runs two parallel searches:
 
 * You can search for a contact in the FastSearcher field for **Companies** in the Navigator.
 
-<!-- Referenced links -->
-[1]: ../../learn/basics/history.md
-[2]: ../../../en/api/osql/soundx.md
+[1]: ../../learn/basics/history
+[2]: ../../../en/api/osql/soundx
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

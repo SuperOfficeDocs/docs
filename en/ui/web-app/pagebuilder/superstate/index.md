@@ -51,12 +51,10 @@ All the functionality are provided from 2 different classes:
 
 ![03][img3]
 
-<!-- Referenced links -->
-[1]: ../config/index.md
-[2]: state-changes.md
-[3]: role-of-soprotocol.md
+[1]: ../config/index
+[2]: ./state-changes
+[3]: ./role-of-soprotocol
 
-<!-- Referenced images -->
-[img1]: media/image001.gif
-[img2]: media/image002.jpg
-[img3]: media/image003.jpg
+[img1]: /media/loc/en/ui/image001-1.gif
+[img2]: /media/loc/en/ui/image002-9.jpg
+[img3]: /media/loc/en/ui/image003-6.jpg

@@ -63,7 +63,6 @@ Inspecting the contents of the *SoContactPage.config* file, the SOML is:
   <panels>
     <panel reference="Menu" />
     <panel reference="ButtonBar" />
-    <!--panel reference="Navigation" /-->
     <panel reference="Navigator" />
     <panel layout-position="center" reference="Contact" />
   </panels>
@@ -125,7 +124,6 @@ The first example is a **view** with `id` value MainView. The `reference` attrib
       </views>
       ...
     </card>
-    <!-- prefkey="MiniPanel": Need to explicitly mark the minipanel card, because settings are stored differently in database -->
     <card id="ContactMiniCard" reference="MiniCard"></card>
     ...
   </cards>
@@ -180,8 +178,6 @@ With the code below, the config data for a view will appear as a separate config
 
 The reference *MainView* in the `view` element means that the definition can be found in the `SoMainViewconfig` file.
 
-<!-- Referenced links -->
-[1]: panel.md
+[1]: ./panel
 
-<!-- Referenced images -->
-[img1]: media/web-client-company-main-card.png
+[img1]: /media/loc/en/ui/web-client-company-main-card.png

@@ -1,7 +1,7 @@
 ---
 title: Adding a labelwebapp_add_label
 uid: Adding a label
-description: How to add a label 
+description: How to add a label
 author: Tony Yates
 date: 06.24.2016
 keywords: gui
@@ -26,13 +26,9 @@ In this example, we will add a new label called **Quick Links** to the navigator
           <controlgroups>
             <controlgroup id="ButtonGroup" type="SoControlGroup" position="relative" left="16px" top="10px">
               <controls>
-                <!--Some other Code -->
-                <!--Our Code Begins here -->
                 <control id="newLabel" type="SoLabel" context-style="Heading" row="0" column="0">
                   <caption>Quick Links</caption>
                 </control>
-                <!-- Our Code Ends here -->
-                <!--Some other Code -->
               </controls>
             </controlgroup>
           </controlgroups>
@@ -60,18 +56,13 @@ Depending on the place we use the control we can change the position of the disp
           <controlgroups>
             <controlgroup id="ButtonGroup" type="SoControlGroup" position="relative" left="16px" top="10px">
               <controls>
-              <!--Some other Code -->
                 <control id="contactButton" type="SoToolButton">
                 <caption>[SR_COMMON_CONTACT]</caption>
                 <tooltip>{button_id=TooltipOnLContact}</tooltip>
-                <!--Some other Code --> 
               </control>
-              <!--Our Code Begins here -->
                 <control id="newLabel" type="SoLabel" context-style="Heading" row="0" column="0">
                   <caption>Quick Links</caption>
                 </control>
-              <!-- Our Code Ends here -->
-              <!--Some other Code -->
               </controls>
             </controlgroup>
           </controlgroups>
@@ -84,8 +75,5 @@ Depending on the place we use the control we can change the position of the disp
 
 ![02][img2]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image001.jpg
-[img2]: media/image002.jpg
+[img1]: /media/loc/en/ui/image001-8.jpg
+[img2]: /media/loc/en/ui/image002-9.jpg

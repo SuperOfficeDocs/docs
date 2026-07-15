@@ -28,9 +28,6 @@ Project members are the participants in a project. For each member, you can acce
 * [Edit or delete a project member][3]
 * [Send email to project members][4]
 
-<!-- Referenced links -->
-[1]: add.md
-[3]: edit.md
-[4]: send-email-to.md
-
-<!-- Referenced images -->
+[1]: ./add
+[3]: ./edit
+[4]: ./send-email-to

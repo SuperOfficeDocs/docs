@@ -12,9 +12,35 @@ deployment: onsite
 
 # Card config files
 
-What appears inside the `card` element is the config data for the many views that a card can have. Let’s take the below config section from the card config file that was referenced in [SoContactPanel][1], *MiniCard*.
+What appears inside the `card` element is the config data for the many views that a card can have. Let's take the below config section from the card config file that was referenced in [SoContactPanel][1], *MiniCard*.
 
-[!code-xml[XML](includes/minicard.xml)]
+```xml XML
+<card id="MiniCard" placeholderid="rightpanel" type="SoTabbedCard" cardtype="MiniPanelCard">
+  <views>
+    <view id="MiniMonthView" type="SoView" soprotocol="minimonth" current="month" renderonlywhenselected="true">
+      <caption>[SR_MINICARD_MONTH]</caption>
+      <tooltip></tooltip>
+      <controlgroups>
+        <controlgroup id="mainminimonthgroup" type="SoControlGroup" position="absolute" left="0px " top="10px" bottom="5px" right="0px">
+          <controls>
+            <control id="minimonth" type="SoMonthCollection" width="100%" position="absolute"  top="0px" bottom="0px">
+              <config>
+                <onaftersplitterresize>CalendarManager.ResizeMiniMonth(\"{0}\")</onaftersplitterresize>
+              </config>
+            </control>
+          </controls>
+        </controlgroup>
+      </controlgroups>
+      <triggers>
+        <trigger type="current">month</trigger>
+        <trigger type="current">day</trigger>
+        <trigger type="current">week</trigger>
+        <trigger type="current">diaryowner</trigger>
+      </triggers>
+    </view>
+  </views>
+</card>
+```
 
 The **outer** element in the config file is `card`, just like the `panel` element was in the panel config file. This element holds the config data for the different views that can appear on a card.
 
@@ -25,7 +51,6 @@ Cards are placeholders inside panels and use layout positioning, and are respons
 ![PageFramework][img1]
 
 ```xml
-<!-- SoExampleCard.config -->
 <card id="ExampleCard" type="Card"
        placeholderid="OnePanePlaceHolder"
        cardtype="SoTabbedCard">
@@ -60,7 +85,33 @@ Cards are placeholders inside panels and use layout positioning, and are respons
 
 ## Attributes
 
-[!code-xml[XML](includes/minicard.xml?range=1)]
+```xml XML
+<card id="MiniCard" placeholderid="rightpanel" type="SoTabbedCard" cardtype="MiniPanelCard">
+  <views>
+    <view id="MiniMonthView" type="SoView" soprotocol="minimonth" current="month" renderonlywhenselected="true">
+      <caption>[SR_MINICARD_MONTH]</caption>
+      <tooltip></tooltip>
+      <controlgroups>
+        <controlgroup id="mainminimonthgroup" type="SoControlGroup" position="absolute" left="0px " top="10px" bottom="5px" right="0px">
+          <controls>
+            <control id="minimonth" type="SoMonthCollection" width="100%" position="absolute"  top="0px" bottom="0px">
+              <config>
+                <onaftersplitterresize>CalendarManager.ResizeMiniMonth(\"{0}\")</onaftersplitterresize>
+              </config>
+            </control>
+          </controls>
+        </controlgroup>
+      </controlgroups>
+      <triggers>
+        <trigger type="current">month</trigger>
+        <trigger type="current">day</trigger>
+        <trigger type="current">week</trigger>
+        <trigger type="current">diaryowner</trigger>
+      </triggers>
+    </view>
+  </views>
+</card>
+```
 
 The above line explains the config for the card. It says the card ID is *MiniCard* and the place holder is the right panel. The `placeholderid` refers to the pane ID defined in the panel config.
 
@@ -80,9 +131,8 @@ The config data for a view can appear in 2 ways: within the views tag or in a se
 
 **Next:** [view config files][2]
 
-<!-- Referenced links -->
-[1]: panel.md
-[2]: view.md
+[1]: ./panel
+[2]: ./view
 [3]: <xref:SuperOffice.CRM.Web.UI.Controls.DialogCard>
 [4]: <xref:SuperOffice.CRM.Web.UI.Cards_and_Views.DialogSimpleCard>
 [5]: <xref:SuperOffice.CRM.Web.UI.Controls.DiaryCard>
@@ -90,9 +140,8 @@ The config data for a view can appear in 2 ways: within the views tag or in a se
 [7]: <xref:SuperOffice.CRM.Web.UI.Controls.FindCard>
 [8]: <xref:SuperOffice.CRM.Web.UI.Controls.TabbedCard>
 [9]: <xref:SuperOffice.CRM.Web.UI.Controls.WizardCard>
-[10]: ../../../../customization/soprotocol/index.md
-[11]: soml.md
+[10]: ../../../../customization/soprotocol/index
+[11]: ./soml
 
-<!-- Referenced images -->
-[img1]: media/web-client-pagebuilder-framework2.png
-[img2]: media/image002.jpg
+[img1]: /media/loc/en/ui/web-client-pagebuilder-framework2-1.png
+[img2]: /media/loc/en/ui/image002-9.jpg

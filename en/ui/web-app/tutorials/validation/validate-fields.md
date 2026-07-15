@@ -123,14 +123,12 @@ Add the following key to the [ClientConfigurationProvider section][1]:
 In your *SO_WEB_CUSTOMPATH_VALIDATION\WebClient\Web\Sale\SaleMainViewView.config* add the following in the `<controlgroup id="SaleMainDetailsGroup" type="SoControlGroup">` section:
 
 ```xml
-<!--VALIDATIONRULE-->
 <control id="AlwaysShowErrorId" type="ValidationControl">
   <datasource>EntityDataHandler.SaleEntity</datasource>
   <validations>
     <validation id="AlwaysShowError" type="ValidationRules"></validation>
   </validations>
 </control>
-<!--END VALIDATIONRULE-->
 ```
 
 If you log in, try to create a new sale, and do not select a project you will see that you cannot save the sale. You will get the following message:
@@ -139,9 +137,7 @@ If you log in, try to create a new sale, and do not select a project you will se
 
 You can use this method on every entity in SuperOffice by editing the config files and adding rules to your DLL file.
 
-<!-- Referenced links -->
-[1]: ../../../../api/config/clientconfigurationprovider.md
-[2]: ../../../../api/config/factory.md
+[1]: ../../../../api/config/clientconfigurationprovider
+[2]: ../../../../api/config/factory
 
-<!-- Referenced images -->
-[img1]: media/7237_12447.jpg
+[img1]: /media/loc/en/ui/7237_12447.jpg

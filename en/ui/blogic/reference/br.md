@@ -13,5 +13,5 @@ topic: reference
 The `br` element prints an HTML line-break on the screen.
 
 ```html
-<br>
+<br />
 ```

@@ -44,8 +44,6 @@ Attendees who are invited to a follow-up will receive a notification.
 
 * If you receive an invitation for a time when you are already occupied, an exclamation mark (<i class="ph ph-warning" aria-label="Warning icon"></i>) is displayed. This draws your attention to the conflict.
 
-<!-- Referenced links -->
-[1]: ../../../learn/basics/notifications.md#activity
+[1]: ../../../learn/basics/notifications#activity
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/learn/core-notifications.png

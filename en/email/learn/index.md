@@ -18,14 +18,14 @@ language: en
 
 Email is the most popular form of communication between businesses. With SuperOffice CRM you can choose to save and share your emails in various ways that will make you and your team work more productively.
 
-When you have [integrated your preferred email client with SuperOffice][13], you can save email dialogues and attachments under any company, contact, sale or project in your CRM system. You can also save emails directly as follow-ups or activities – so you never forget to follow up and follow through.
+When you have [integrated your preferred email client with SuperOffice][13], you can save email dialogues and attachments under any company, contact, sale or project in your CRM system. You can also save emails directly as follow-ups or activities - so you never forget to follow up and follow through.
 
 ## Email clients
 
 The inbox feature in SuperOffice CRM will depend on the SuperOffice client and email client you are using. Click a link below to go to the relevant chapter in the help system:
 
 * [SuperOffice Inbox][1]
-* [Gmail Link][2] – SuperOffice Gmail Link
+* [Gmail Link][2] - SuperOffice Gmail Link
 * [SuperOffice Mail Link][6] - SuperOffice Mail Link (Outlook integration)
 
 ## Send an email
@@ -72,21 +72,19 @@ Click an email in the [Activities section tab][14] to view its details in the [s
 
 ![Email preview with task menu options highlighted -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: ../inbox/learn/index.md
-[2]: ../../../../integrations/gmail-link/index.md
-[3]: ../../../../integrations/gmail-link/email-archive-incoming.md
-[4]: ../../../../integrations/gmail-link/archive-emails-as-activities.md
-[5]: ../../../../integrations/gmail-link/archive-attachments.md
-[6]: ../../../../integrations/mail-link/index.md
-[7]: ../../../../integrations/mail-link/archive-as-activity.md
-[8]: ../../../../integrations/mail-link/archive-on-contact.md
-[9]: ../../../../integrations/mail-link/archive-attachment.md
-[11]: ../../contact/learn/send-email.md
-[12]: ../../document/learn/send-as-email.md
-[13]: ../../learn/getting-started/connect-your-accounts.md
-[14]: ../../learn/section-tabs/activities-tab.md
-[15]: ../../learn/getting-started/main-screen/side-panel.md
+[1]: ../inbox/learn/index
+[2]: ../../../../integrations/gmail-link/index
+[3]: ../../../../integrations/gmail-link/email-archive-incoming
+[4]: ../../../../integrations/gmail-link/archive-emails-as-activities
+[5]: ../../../../integrations/gmail-link/archive-attachments
+[6]: ../../../../integrations/mail-link/index
+[7]: ../../../../integrations/mail-link/archive-as-activity
+[8]: ../../../../integrations/mail-link/archive-on-contact
+[9]: ../../../../integrations/mail-link/archive-attachment
+[11]: ../../contact/learn/send-email
+[12]: ../../document/learn/send-as-email
+[13]: ../../learn/getting-started/connect-your-accounts
+[14]: ../../learn/section-tabs/activities-tab
+[15]: ../../learn/getting-started/main-screen/side-panel
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/learn/side-panel-preview-email-tasks.png

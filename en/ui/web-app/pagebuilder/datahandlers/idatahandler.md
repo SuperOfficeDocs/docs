@@ -24,4 +24,4 @@ The interface is located in the *SuperOffice.CRM.Web.Data* namespace and include
 * Delete()
 * Clear()
 
-We can take any `DataHandler` class from the namespace and inherit from the `DataHandlerBase` class. Mainly we are not going to override the methods in the base class. We override the `Initialize` method by calling the base class’s `initialize()` and then adding a data carrier to it.
+We can take any `DataHandler` class from the namespace and inherit from the `DataHandlerBase` class. Mainly we are not going to override the methods in the base class. We override the `Initialize` method by calling the base class's `initialize()` and then adding a data carrier to it.

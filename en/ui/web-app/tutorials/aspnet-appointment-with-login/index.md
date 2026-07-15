@@ -32,15 +32,133 @@ Once the GUI state of the site is complete we need to have certain DLLs that ena
 
 When creating any website, it is necessary to have a *web.config* file. Here, we copy it from the SuperOffice application and modify it as required. The SuperOffice [Services][1] and [Database][2] sections need to remain in the config file so that we can talk to the database:
 
-[!code-xml[XML](includes/webconfig.xml)]
+```xml XML
+<SuperOffice>
+  <Security>
+  </Security>
+  <Factory>
+    <DynamicLoad>
+    </DynamicLoad>
+  </Factory>
+  <Diagnostics>
+  </Diagnostics>
+  <Data>
+    <Session>
+      <add key="Mode" value="Thread"/>
+    </Session>
+    <Database>
+      <add key="DatabaseMajor" value="MSSQL"/>
+      <add key="DatabaseMinor" value="8"/>
+      <add key="Server" value="dbserver"/>
+      <add key="Database" value="superdb"/>
+      <add key="CommandTimeOut" value="300" />
+      <add key="TablePrefix" value="CRM5" />
+      <add key="ConnectionString"
+           value="Server=[@Server];Database=[@Database];User ID=[@User];Password=[@Password]"/>
+    </Database>
+    <ImplicitAnonymous>
+      <add key="Allowed" value="True"/>
+      <add key="DBUser" value="user"/>
+      <add key="DBPassword" value="pass"/>
+      <add key="CommonDBConnection" value="True"/>
+      <add key="SoUser" value="Anonymous1" />
+      <add key="SoPassword" value="" />
+    </ImplicitAnonymous>
+    <Explicit>
+      <add key="ExternalPersonAllowed" value="True"/>
+      <add key="EmployeeAllowed" value="True"/>
+      <add key="SystemAllowed" value = "True"/>
+      <add key="DBUser" value="user"/>
+      <add key="DBPassword" value="pass"/>
+      <add key="CommonDBConnection" value="True"/>
+    </Explicit>
+  </Data>
+  <Globalization>
+  </Globalization>
+  <Services>
+    <!-- Mode can be Local, Remote, Switch -->
+    <add key="DefaultMode" value="Local" />
+  </Services>
+  <Documents>
+  </Documents>
+  <Client>
+    <Application name="TestWeb" instance="User"/>
+    <Globalization>
+      <ResourceProviders>
+        <add name="ResourceDllProvider"
+             rank="3"
+             assemblyname="SuperOffice.DCF"
+             objecttype="SuperOffice.Globalization.ResourceDllProvider"
+             params="SuperOffice.Web.Globalization.ResourceStrings;SuperOffice.Web.Globalization"/>
+      </ResourceProviders>
+    </Globalization>
+  </Client>
+</SuperOffice>
+```
 
-Since we are not using the SuperOffice and PageBuilder features, we don’t need their sections in the config file:
+Since we are not using the SuperOffice and PageBuilder features, we don't need their sections in the config file:
 
-[!code-xml[XML](includes/webconfig-exclude.xml?range=1-12)]
+```xml XML
+<configSections>
+  <sectionGroup name="Client">
+    <section name="ClientConfigurationProvider"
+             type="System.Configuration.NameValueSectionHandler, System,
+                   Version=1.0.5000.0, Culture=neutral,
+                   PublicKeyToken=b77a5c561934e089" />
+  </sectionGroup>
+</configSections>
+
+<ClientConfigurationProvider>
+  <add key="FilePath" value="C:\Program Files\SuperOffice\SuperOffice SIX.web\2817\App_Data" />
+</ClientConfigurationProvider>
+```
 
 We can also clean out a lot of ASP.net config that is specific to SuperOffice
 
-[!code-xml[XML](includes/webconfig-exclude.xml?range=14-55)]
+```xml XML
+<ajaxNet>
+  <ajaxSettings>
+    <urlNamespaceMappings useAssemblyQualifiedName="false">
+   </urlNamespaceMappings>
+    <jsonConverters>
+      <add type="SuperOffice.CRM.Web.AjaxMethods.ArchiveOrderByConverter,SuperOffice.CRMWeb" />
+    </jsonConverters>
+  </ajaxSettings>
+</ajaxNet>
+<location path="ajaxpro">
+  <system.web>
+    <httpHandlers>
+      <add verb="*" path="*.ashx" type="AjaxPro.AjaxHandlerFactory,AjaxPro" />
+    </httpHandlers>
+   <authorization>
+      <allow users="*" />
+   </authorization>
+  </system.web>
+</location>
+<!-- ... -->
+<system.web>
+  <httpRuntime/>
+    <compilation debug="false">
+      <assemblies>
+       <add assembly="System.Design, Version=2.0.0.0, Culture=neutral,
+                      PublicKeyToken=B03F5F7F11D50A3A" />
+      </assemblies>
+    </compilation>
+    <authentication mode="Forms">
+      <forms name="Handshake" loginUrl="Security/Login.aspx" timeout="20" />
+    </authentication>
+   <authorization>
+      <deny users="?" />
+    </authorization>
+    <xhtmlConformance mode="Legacy" />
+    <httpModules>
+      <add name="SoProtocolModule" type="SuperOffice.CRM.Web.Protocol.SoProtocolModule, SuperOffice.CRMWeb" />
+    </httpModules>
+</system.web>
+<location path="Services">
+  <!-- ... -->
+</location>
+```
 
 The resulting config file has the settings necessary for SODatabase to talk to the database via the web service API, and for the DCF to talk to the resource DLLs.
 
@@ -61,7 +179,7 @@ Add the *IMAGES* folder to the website to complete the look:
 
 ## Login page
 
-This is the page that is used by us to authenticate users – denying access to users we don’t recognize. The page consists of SO controls such as SoTextBoxes and a SoButton. Following is the source code for the Login.aspx page.
+This is the page that is used by us to authenticate users - denying access to users we don't recognize. The page consists of SO controls such as SoTextBoxes and a SoButton. Following is the source code for the Login.aspx page.
 
 [!code-html[HTML](includes/login.cshtml)]
 
@@ -83,15 +201,62 @@ The **Submit** button is an SoButton. It gets the SuperOffice look but is otherw
 
 The code behind *Login.aspx* is as follows.
 
-[!code-csharp[CS](includes/login.aspx.cs)]
+```csharp CS
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.mdControls;
+
+using SuperOffice;
+using SuperOffice.CRM.Services;
+
+public partial class Login : System.Web.UI.Page
+{
+  protected void Page_Load(object sender, EventArgs e)
+  {
+
+  }
+  protected void LoginBtn_Click(object sender, EventArgs e)
+  {
+    //Retriving the user name and password and assigning them to Session variables
+    //UserName
+    TextBox un = soLogin.FindControl("UserName") as TextBox;
+    Session["UserName"] = un.Text;
+
+    //Password
+    TextBox pw = soLogin.FindControl("Password") as TextBox;
+    Session["passWord"] = pw.Text;
+
+    using (SoSession mySession = SoSession.Authenticate(Session["UserName"].ToString(), Session["passWord"].ToString()))
+    {
+      //Transfering to the Appointments page
+      Server.Transfer("Appointments.aspx");
+    }
+  }
+}
+```
 
 Since we just want to show how we can use SO controls in an ASP.Net website we have not made a special effort in our code behind the file to make any un-necessary validations and make the code lengthy.
 
 What we have done once the **Submit** button is clicked is to retrieve the user-entered user name and password and stored them in session variables as shown below.
 
-[!code-csharp[CS](includes/login.aspx.cs?range=24-30)]
+```csharp CS
+    //UserName
+    TextBox un = soLogin.FindControl("UserName") as TextBox;
+    Session["UserName"] = un.Text;
 
-Next, we have used the Session class’s `Session.Authenticate` method to validate the entered user name and password. And if the entered data is correct the user will be directed to the *Appointments.aspx* page. This is shown below.
+    //Password
+    TextBox pw = soLogin.FindControl("Password") as TextBox;
+    Session["passWord"] = pw.Text;
+```
+
+Next, we have used the Session class's `Session.Authenticate` method to validate the entered user name and password. And if the entered data is correct the user will be directed to the *Appointments.aspx* page. This is shown below.
 
 [!code-csharp[CS](includes/login.aspx.cs?range=32,33,35,36)]
 
@@ -244,14 +409,12 @@ The appointments retrieve from the agent are stored in an array of type `Activit
 
 <a href="../../../../../assets/downloads/ui/testwebsite.zip" download>Click to download website source code</a>
 
-<!-- Referenced links -->
-[1]: ../../../../api/config/services.md
-[2]: ../../../../api/config/data.md#database
+[1]: ../../../../api/config/services
+[2]: ../../../../api/config/data#database
 
-<!-- Referenced images -->
-[img1]: media/image014.jpg
-[img2]: media/image011.jpg
-[img3]: media/image012.jpg
-[img4]: media/image013.jpg
-[img5]: media/image015.jpg
-[img6]: media/image016.jpg
+[img1]: /media/loc/en/ui/image014-1.jpg
+[img2]: /media/loc/en/ui/image011-1.jpg
+[img3]: /media/loc/en/ui/image012-1.jpg
+[img4]: /media/loc/en/ui/image013-1.jpg
+[img5]: /media/loc/en/ui/image015.jpg
+[img6]: /media/loc/en/ui/image016.jpg

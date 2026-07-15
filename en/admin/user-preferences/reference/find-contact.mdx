@@ -1,0 +1,34 @@
+---
+title: FindContact
+uid: pref_findcontact
+description: Preference section FindContact
+author: SuperOffice Product and Engineering
+keywords: database
+topic: reference
+---
+
+import ToViewPref from "./includes/to-view-pref.md";
+import PrefFilter from "./includes/pref-filter.md";
+
+# Preference section FindContact
+
+<ToViewPref />
+
+```SQL
+SELECT * FROM UserPreference WHERE prefsection='FindContact'
+```
+
+Finds companies dialog.
+
+| Preference | Description | Control type | Access |
+|---|---|---|---|
+| Code | <PrefFilter /> | Text | Wizard |
+| Email | <PrefFilter /> | Text | Wizard |
+| Expanded | <PrefFilter /> | Bool | Wizard |
+| FirstName | <PrefFilter /> | Text | Wizard |
+| LastName | <PrefFilter /> | Text | Wizard |
+| Name | <PrefFilter /> | Text | Wizard |
+| Number | <PrefFilter /> | Text | Wizard |
+| OrgNr | <PrefFilter /> | Text | Wizard |
+| Phone | <PrefFilter /> | Text | Wizard |
+| SearchType | <PrefFilter /> | Number | Wizard |

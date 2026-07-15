@@ -50,7 +50,4 @@ You can create a follow-up to appear, for example, on the activities list of all
 
 ![Selection task: Generate follow-ups -screenshot][img1]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../../media/loc/en/search-options/generate-follow-ups-from-selection.png

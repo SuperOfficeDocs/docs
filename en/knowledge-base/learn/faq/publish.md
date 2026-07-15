@@ -41,8 +41,7 @@ When a request handler [creates a suggestion for an FAQ entry][1], it is unpubli
 * [Create a FAQ][1]
 * [Set up multiple languages][4]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../../../request/learn/index.md
-[3]: workflow.md
-[4]: ../../../localization/learn/customer-languages.md
+[1]: ./create
+[2]: ../../../request/learn/index
+[3]: ./workflow
+[4]: ../../../localization/learn/customer-languages

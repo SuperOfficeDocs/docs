@@ -47,9 +47,7 @@ You can also stop a repeating follow-up by selecting it in the diary and deletin
 * [Create repeating follow-up][1]
 * [Edit repeating follow-up][2]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: ../edit-follow-up.md#repeat
+[1]: ./create
+[2]: ../edit-follow-up#repeat
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

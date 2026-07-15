@@ -22,7 +22,7 @@ If, after looking at the results of your mailing, you notice that a lot of the e
 
 There are two ways you can resend your mailing.
 
-## Option 1 – Reload and resend
+## Option 1 - Reload and resend
 
 You can reload and resend your mailing in the **Mailings** tab. Find the mailing you wish to resend by searching for it or by going through the **Recent** or **All** tab.
 
@@ -36,7 +36,7 @@ The system will only send the mailing to those recipients who haven't received i
 
 After the mailing is sent, you can go into the mailing and see the new results in the **Summary** and **Recipients** tab.
 
-## Option 2 – Resend to selected
+## Option 2 - Resend to selected
 
 1. Start by opening the mailing you wish to resend and go to the **Recipients** tab.
 
@@ -52,10 +52,8 @@ After the mailing is sent, you can go into the mailing and see the new results i
 
 SuperOffice Marketing will now send your mailing to all the selected recipients.
 
-<!-- Referenced links -->
-[1]: ../../recipients/learn/manage-bounces.md
+[1]: ../../recipients/learn/manage-bounces
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/reload-resend.png
 [img2]: ../../../../media/loc/en/marketing/filter-recipients.png
 [img3]: ../../../../media/loc/en/marketing/resend-to-selected.png

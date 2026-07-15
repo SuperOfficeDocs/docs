@@ -53,8 +53,8 @@ It is important to keep in mind that there's not a 1:1 mapping of labels and tha
 
 | Real-world term | UI label | Database table | CRMScript class |
 |---|---|---|---|
-| company<br>organization | company | contact  | Company |
-| person | contact<br>associate | | |
+| company<br />organization | company | contact  | Company |
+| person | contact<br />associate | | |
 | customer | contact | person | Customer |
 | employee | associate | associate | |
 | user account | user | ejuser | User |
@@ -73,12 +73,12 @@ You may think of associates as the missing link that connects people.
 | Value | Type | Description |
 |:-:|---|---|
 | 0 | Employee | Internal person |
-| 1 | Resource | Not a person<br>Disregard `personId` |
+| 1 | Resource | Not a person<br />Disregard `personId` |
 | 2 | Anonymous | Not authenticated for SuperOffice |
-| 4 | ExternalPerson | External person<br>No calendar |
-| 7 | Anonymous | Unknown<br>no person (1) + not authenticated (2) + no calendar (4) |
-| 8 | NoSentry | Has full access rights<br>The Sentry mechanism is bypassed |
-| 13 | System | System user<br>no person (1) + no calendar (4) + full access/bypass sentry (8) |
+| 4 | ExternalPerson | External person<br />No calendar |
+| 7 | Anonymous | Unknown<br />no person (1) + not authenticated (2) + no calendar (4) |
+| 8 | NoSentry | Has full access rights<br />The Sentry mechanism is bypassed |
+| 13 | System | System user<br />no person (1) + no calendar (4) + full access/bypass sentry (8) |
 
 ### Frequently used values
 
@@ -88,7 +88,7 @@ You may think of associates as the missing link that connects people.
 | person_id | The person |
 | name | Initials, sign-in name, database user name |
 | group_idx | Primary group membership |
-| ejuserId | ID of the user account<br>0 if not connected to an account |
+| ejuserId | ID of the user account<br />0 if not connected to an account |
 
 ### Important timestamps
 
@@ -155,30 +155,28 @@ Without the link record, the picture will not appear.
 * [Raw SQL queries][29]
 * [Addresses][6]
 
-<!-- Referenced links -->
 [1]: ../../document/index.yml
 [2]: ../../diary/index.yml
 [3]: ../../project/index.yml
 [4]: ../../sale/index.yml
 [5]: ../../company/index.yml
-[6]: ../../api/localization/address/index.md
+[6]: ../../api/localization/address/index
 
-[10]: ../../automation/crmscript/howto/contact/index.md
-[11]: ../../database/getting-started/main-tables.md
-[12]: ../../database/tables/associate.md
-[13]: ../../database/tables/binaryobject.md
-[14]: ../../database/tables/binaryobjectlink.md
+[10]: ../../automation/crmscript/howto/contact/index
+[11]: ../../database/getting-started/main-tables
+[12]: ../../database/tables/associate
+[13]: ../../database/tables/binaryobject
+[14]: ../../database/tables/binaryobjectlink
 
-[19]: ../../api/caching/associate-cache.md
-[21]: ../../api/web-services/howto/contact/get-person-image-rest.md
-[22]: ../../api/web-services/howto/contact/update-person-image-rest.md
-[23]: ../../api/web-services/howto/contact/display-person-image-ws.md
-[24]: ../../api/web-services/howto/contact/display-image-from-blob-table-services.md
-[25]: ../../api/web-services/howto/contact/index.md
-[26]: ../../api/entities/howto/contact/index.md
-[27]: ../../api/rows/howto/contact/index.md
-[28]: ../../api/osql/howto/contact/index.md
-[29]: ../../api/sql/howto/contact/index.md
+[19]: ../../api/caching/associate-cache
+[21]: ../../api/web-services/howto/contact/get-person-image-rest
+[22]: ../../api/web-services/howto/contact/update-person-image-rest
+[23]: ../../api/web-services/howto/contact/display-person-image-ws
+[24]: ../../api/web-services/howto/contact/display-image-from-blob-table-services
+[25]: ../../api/web-services/howto/contact/index
+[26]: ../../api/entities/howto/contact/index
+[27]: ../../api/rows/howto/contact/index
+[28]: ../../api/osql/howto/contact/index
+[29]: ../../api/sql/howto/contact/index
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/contact/edit-person.png

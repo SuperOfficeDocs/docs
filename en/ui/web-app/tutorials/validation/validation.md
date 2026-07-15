@@ -24,13 +24,13 @@ Today there are three well-defined ways to enforce validation. They are:
 
 The JavaScript solution, which I'm not going to talk anymore about in this article, is discussed in further detail in this [override sample][1].
 
-NetServer web service event handing is discussed in further detail in the [Scripting in NetServer services article][2], and will not be discussed here.
+NetServer web service event handing is discussed in further detail in the [Scripting in NetServer services article][2], and will not be discussed here.
 
-Validation components, which I am going to be discussing in this article, are well documented in the SDK. Read more about them reviewing the [documentation covering the ValidationBase class][3].
+Validation components, which I am going to be discussing in this article, are well documented in the SDK. Read more about them reviewing the [documentation covering the ValidationBase class][3].
 
-Probably the most widely used validation component is the MandatoryValidator. The validator component in the code below is used by appending an element as a child in the element declaration.
+Probably the most widely used validation component is the MandatoryValidator. The validator component in the code below is used by appending an element as a child in the element declaration.
 
-`Datasource` is an important element because the data source defined here gets passed into the validator and is used to determine if the control is valid or not.
+`Datasource` is an important element because the data source defined here gets passed into the validator and is used to determine if the control is valid or not.
 
 **Snippet of SuperOffice Markup Language (SOML) from SoAppointmentPanel.config:**
 
@@ -44,7 +44,7 @@ So how do we take advantage of this for our own benefit towards complex rule-bas
 
 ## The conceptual overview
 
-In ASP.NET, control validation is a recursive process. This means that when a page checks its `IsValid` property, the page recursively iterates over, and calls `IsValid` on each and every child control on that page. Each child control on that page will then also recursively iterate over each child control it contains and checks the `IsValid` property for each child control as well.
+In ASP.NET, control validation is a recursive process. This means that when a page checks its `IsValid` property, the page recursively iterates over, and calls `IsValid` on each and every child control on that page. Each child control on that page will then also recursively iterate over each child control it contains and checks the `IsValid` property for each child control as well.
 
 As each control validates, the validation results of the collective ultimately determine the validation state of the entire page.
 
@@ -52,13 +52,13 @@ As each control validates, the validation results of the collective ultimately d
 
 ![x][img2]
 
-Under many common scenarios, such as wanting to run custom validation on user-defined fields,  it's impossible to append an element because user-defined fields, and their layouts, are dynamic and build at runtime. It's also true when trying to validate child control on a built-in user-control that doesn't have a validation check on a child control value.
+Under many common scenarios, such as wanting to run custom validation on user-defined fields,  it's impossible to append an element because user-defined fields, and their layouts, are dynamic and build at runtime. It's also true when trying to validate child control on a built-in user-control that doesn't have a validation check on a child control value.
 
 ## Enter the code
 
-I will write a simple generic control with the sole purpose of validating a data source and notify the user if any business rules are violated. The control is not going to display any content to a page.
+I will write a simple generic control with the sole purpose of validating a data source and notify the user if any business rules are violated. The control is not going to display any content to a page.
 
-To get started, open Visual Studio and create a new Class library project and call whatever you like - I called mine ValidationControls. In the project reference the following assemblies:
+To get started, open Visual Studio and create a new Class library project and call whatever you like - I called mine ValidationControls. In the project reference the following assemblies:
 
 * SoCore.dll
 * SuperOffice.CRMWeb.dll
@@ -68,13 +68,13 @@ To get started, open Visual Studio and create a new Class library project and c
 
 ### Class ValidationControl
 
-Rename the Class1 file `ValidationControl` and type in the code shown below. This control is going to be declared in an element in a configuration file. The base class, `ControlBase`, takes care of usual databinding chores and allows me to focus on what I want the control to do.
+Rename the Class1 file `ValidationControl` and type in the code shown below. This control is going to be declared in an element in a configuration file. The base class, `ControlBase`, takes care of usual databinding chores and allows me to focus on what I want the control to do.
 
-In this case, I want the control to output and run a block of JavaScript *if* validation for my control fails for any reason.
+In this case, I want the control to output and run a block of JavaScript *if* validation for my control fails for any reason.
 
 I do two things to ensure this validation is only invoked once. First I subscript to the `Page.PreRender` method to output the JavaScript when the control is invalid. Next, I override the default `IsValid` property to set a flag telling me this control has already been validated - which happens when the controls `PreRender` method is called.
 
-The flag ensures the message box is only displayed when a user clicks the Save button and validation fails. If the data source is not valid, the save will not complete, the dialog or panel will stay in edit mode and the message box will display the reason why.
+The flag ensures the message box is only displayed when a user clicks the Save button and validation fails. If the data source is not valid, the save will not complete, the dialog or panel will stay in edit mode and the message box will display the reason why.
 
 **Validation Control written in C#:**
 
@@ -90,7 +90,7 @@ Now create a new class file and call it `ValidationRules`, then write the code b
 
 The purpose of the ValidationRules class is to carry out the validation logic, the business rules, for the page or dialog the ValidationControl is placed on.
 
-The data source defined in the controls SOML declaration is passed into the overridden `_validate` method. The value argument is that data source. Although not shown in this example, you will need to cast the object to the same datatype as the actual data source.
+The data source defined in the controls SOML declaration is passed into the overridden `_validate` method. The value argument is that data source. Although not shown in this example, you will need to cast the object to the same datatype as the actual data source.
 
 **Listing 3** is an example control element defined in the SoSalePage.config with the data source element pointing to the SaleEntity, which is used to populate all the controls on the Sale page.
 
@@ -102,9 +102,9 @@ The data source defined in the controls SOML declaration is passed into the over
 
 ![x][img6]
 
-The control element ID can be any unique ID value. Just ensure it's not already used somewhere else on the page, otherwise, your page may not display properly.
+The control element ID can be any unique ID value. Just ensure it's not already used somewhere else on the page, otherwise, your page may not display properly.
 
-The data source element can point to any datahandler data source currently defined in context. So what data sources are defined in context? For that, you need to look at the datahandlers section, found at the top of the page definition.
+The data source element can point to any datahandler data source currently defined in context. So what data sources are defined in context? For that, you need to look at the datahandlers section, found at the top of the page definition.
 
 For each datahandler listed in the datahandlers section, there is any number of data sources defined inside each datahandlers `DataCarriers` collection. Each data source is defined as "object", so you will have to cast the argument named value to the appropriate datatype inside the `ValidationRules` `_validate` method.
 
@@ -122,15 +122,15 @@ Now, like any `SoControl` element, the figure below demonstrates how I can place
 
 Hopefully, this will help make it all clearer. `ValidationControl` is responsible for displaying a message to the user, while the `ValidationRules` validator is responsible for running my business rules and returning whether the page is valid or not.
 
-The `ValidationMessage` property becomes the control's tooltip, which is normally displayed when hovering the cursor over the Save button to inform the user about an error when something is wrong.
+The `ValidationMessage` property becomes the control's tooltip, which is normally displayed when hovering the cursor over the Save button to inform the user about an error when something is wrong.
 
-The `Tooltip` property is used by the `ValidationControl` as the text to display in a SuperOffice web client dialog message box.
+The `Tooltip` property is used by the `ValidationControl` as the text to display in a SuperOffice web client dialog message box.
 
 Finally, compile the project and place the DLL inside the website *bin* directory.
 
 This example demonstrates how to validate a SaleEntity on the Sale panel for version 7 and the Sale dialog for 6.
 
-Now go ahead and place the control markup in the `SalePage` configuration somewhere. It's best to place it in a control group that you know is only loaded once for that page, for example, the same control group as the header control. Do NOT place it inside any of the tab view control groups.
+Now go ahead and place the control markup in the `SalePage` configuration somewhere. It's best to place it in a control group that you know is only loaded once for that page, for example, the same control group as the header control. Do NOT place it inside any of the tab view control groups.
 
 For SuperOffice 6.3, the best place for this control is in the *SoSalePage.config* file, as the last control element in the following controls element path: ../..
 
@@ -182,29 +182,27 @@ Using the `MandatoryFieldValidator` control, the error message will display the 
 
 ## Conclusion
 
-In this tutorial, I have shown you how to create a control and use it to validate any data source on any given page in the SuperOffice web client and display a message to the user if necessary.
+In this tutorial, I have shown you how to create a control and use it to validate any data source on any given page in the SuperOffice web client and display a message to the user if necessary.
 
-This technique should be used when you want to add business logic to a page, and need to interact with the user when those business rules do not fulfill the business requirements.
+This technique should be used when you want to add business logic to a page, and need to interact with the user when those business rules do not fulfill the business requirements.
 
 <a href="../../../../../assets/downloads/ui/webvalidation.zip" download>Click to download examples</a>
 
-<!-- Referenced links -->
-[1]: ../override-default-save-button/index.md
-[2]: ../../../../automation/netserver-scripting/index.md
+[1]: ../override-default-save-button/index
+[2]: ../../../../automation/netserver-scripting/index
 [3]: <xref:SuperOffice.DCF.Web.UI.Validations.ValidationBase>
-[4]: ../../../../api/config/clientconfigurationprovider.md
+[4]: ../../../../api/config/clientconfigurationprovider
 
-<!-- Referenced images -->
-[img1]: media/image001.jpg
-[img2]: media/image002.jpg
-[img3]: media/validationcontrol.png
-[img4]: media/validationcontrol-vb.png
-[img5]: media/validationvalidator.png
-[img6]: media/validationvalidator-vb.png
-[img7]: media/image007.jpg
-[img8]: media/validationmarkup.png
-[img9]: media/persondialogpersonname.png
-[img10]: media/personnamescontrol.png
-[img11]: media/mandatoryfieldvalidator.png
-[img12]: media/personnamevalidation.png
-[img13]: media/errordialog.png
+[img1]: /media/loc/en/ui/image001-8.jpg
+[img2]: /media/loc/en/ui/image002-9.jpg
+[img3]: /media/loc/en/ui/validationcontrol.png
+[img4]: /media/loc/en/ui/validationcontrol-vb.png
+[img5]: /media/loc/en/ui/validationvalidator.png
+[img6]: /media/loc/en/ui/validationvalidator-vb.png
+[img7]: /media/loc/en/ui/image007-2.jpg
+[img8]: /media/loc/en/ui/validationmarkup.png
+[img9]: /media/loc/en/ui/persondialogpersonname.png
+[img10]: /media/loc/en/ui/personnamescontrol.png
+[img11]: /media/loc/en/ui/mandatoryfieldvalidator.png
+[img12]: /media/loc/en/ui/personnamevalidation.png
+[img13]: /media/loc/en/ui/errordialog.png

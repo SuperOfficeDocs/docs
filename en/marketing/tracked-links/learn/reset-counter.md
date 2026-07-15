@@ -26,5 +26,4 @@ Sometimes, you need to reset the number of clicks back to zero. This would be th
 
 3. Click <i class="ph ph-list" aria-label="Task menu"></i> next to the link and select **Reset**. The counter in the **Clicks** column changes to 0. Data about which customers have clicked the link are also removed.
 
-<!-- Referenced links -->
-[6]: ../../mailing/learn/create/send-test-email.md
+[6]: ../../mailing/learn/create/send-test-email

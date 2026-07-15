@@ -22,17 +22,14 @@ To remove an existing card, all you have to do is **delete the card config from 
 
 ![11][img1]
 
-If we were to remove the code section for the Project’s main section, the card would disappear from the screen. In the code below (*SoProjectPanel.config*), the `ProjectMainCard` card has been commented out.
+If we were to remove the code section for the Project's main section, the card would disappear from the screen. In the code below (*SoProjectPanel.config*), the `ProjectMainCard` card has been commented out.
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
   <panel id="Project" type="SplitterPanel" soprotocol="project" paneltype="Main" placeholderid="MainPlaceHolder" width="100%" height="100%">
     <caption>[SR_COMMON_PROJECT]: [current:project_name]</caption>
     <cards>
-      <!--The project Main card section which has been commented-->
-      <!--<card id="ProjectMainCard" type="SoTabbedCard" placeholderid="leftpanel" cardtype="MainCard" width="100%" height="100%"> -->
       <views>
-        <!--Some other code-->
       <card id="ProjectMiniCard" reference="MiniCard"></card>
 
       <card id="ProjectArchives" placeholderid="bottom" type="SoTabbedCard" cardtype="ArchiveCard">
@@ -65,12 +62,9 @@ If we wish to remove a view from a card, we must remove the view element from th
         <view id="ProjectMainView" type="SoView" soprotocol="main" current="project"></view>
         <view id="ProjectMoreView" type="SoView" soprotocol="udef" current="project"></view>
         <view id="ProjectImageView" type="SoView" soprotocol="image" current="project"></view>
-        <!--Project Event view, This view has been removed from the Project card-->
-        <!--<view id="ProjectEventView" type="SoView" soprotocol="event" current="project"></view>-->
         <view id="ProjectSystemView" type="SoView" rendermode="always"></view>
         <view id="WWW" type="SoView" soprotocol="www" current="project"></view>
       </views>
-      <!--Some other codes-->
     </card>
     <card id="ProjectMiniCard" reference="MiniCard"></card>
     <card id="ProjectArchives" placeholderid="bottom" type="SoTabbedCard" cardtype="ArchiveCard"></card>
@@ -93,10 +87,7 @@ There is one limitation since we are only removing the card and not replacing th
 
 As we can see above, the company exists on the project page. Except for the company card, all the other cards that appear on the page belong to the project page. This is a scenario we have to avoid in a real-life situation if we are removing a card we must a have card that will replace it.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image011.jpg
-[img2]: media/image012.jpg
-[img3]: media/image013.jpg
-[img4]: media/image014.jpg
+[img1]: /media/loc/en/ui/image011-1.jpg
+[img2]: /media/loc/en/ui/image012-1.jpg
+[img3]: /media/loc/en/ui/image013-1.jpg
+[img4]: /media/loc/en/ui/image014-1.jpg

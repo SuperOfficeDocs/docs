@@ -33,7 +33,7 @@ Let's look at the controlgroup that contains the Save button logic. Opening the 
 
 Changing this changes the behavior of the save operation. For example, you can, instead of calling the `closeWithCallback` method, you can replace it with your own JavaScript method. However, doing it this way will have unexpected results, i.e. the **Sale** dialog will not close, the archives in the main page will not refresh, and so on.
 
-So, what’s the correct way to do this? Modify the `okonclick` element by adding the callback attribute and setting it to false, and then specify your JavaScript method to call.
+So, what's the correct way to do this? Modify the `okonclick` element by adding the callback attribute and setting it to false, and then specify your JavaScript method to call.
 
 ```XML
 <controlgroup id="DlgButtonBar" type="OkCancelButtonBar" bottom="10px" height="30px" … >

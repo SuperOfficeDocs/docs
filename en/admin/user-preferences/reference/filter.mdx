@@ -1,0 +1,31 @@
+---
+title: Filter
+uid: pref_filter
+description: Preference section Filter
+author: SuperOffice Product and Engineering
+keywords: database
+topic: reference
+---
+
+import ToViewPref from "./includes/to-view-pref.md";
+import PrefFilter from "./includes/pref-filter.md";
+
+# Preference section Filter
+
+<ToViewPref />
+
+```SQL
+SELECT * FROM UserPreference WHERE prefsection='Filter'
+```
+
+Filter dialog settings
+
+| Preference | Description | Control type | Access |
+|---|---|---|---|
+| All | <PrefFilter /> | Bool | Wizard |
+| Associate | <PrefFilter /> | Text | Wizard |
+| DaysAfter | <PrefFilter /> | Number | Wizard |
+| DaysBefore | <PrefFilter /> | Number | Wizard |
+| Group | <PrefFilter /> | Text | Wizard |
+| NumAssociates | <PrefFilter /> | Number | Wizard |
+| NumGroups | <PrefFilter /> | Number | Wizard |

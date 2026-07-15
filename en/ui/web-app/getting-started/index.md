@@ -52,18 +52,16 @@ Nearly all customizations involve changing at least one of the configuration fil
 
 To debug, use the developer tools of your browser and the SuperOffice [Diagnostics viewer and Debug window][2]
 
-<!-- Referenced links -->
-[1]: folder-structure.md
-[2]: debug.md
-[3]: architecture.md
-[4]: set-up-custom-folder.md
-[5]: ../pagebuilder/config/soml.md
-[6]: ../tutorials/sale-foreignkeys/index.md
-[7]: ../pagebuilder/datahandlers/index.md
-[8]: ../tutorials/sale-foreignkeys/3-create-custom-mdo-control.md
-[9]: ../tutorials/custom-archive-control/index.md
-[10]: ../custom-ajax-methods.md
-[11]: change-system-config.md
+[1]: ./folder-structure
+[2]: ./debug
+[3]: ./architecture
+[4]: ./set-up-custom-folder
+[5]: ../pagebuilder/config/soml
+[6]: ../tutorials/sale-foreignkeys/index
+[7]: ../pagebuilder/datahandlers/index
+[8]: ../tutorials/sale-foreignkeys/3-create-custom-mdo-control
+[9]: ../tutorials/custom-archive-control/index
+[10]: ../custom-ajax-methods
+[11]: ./change-system-config
 
-<!-- Referenced images -->
-[img6]: media/web-client-custom-code.png
+[img6]: /media/loc/en/ui/web-client-custom-code.png

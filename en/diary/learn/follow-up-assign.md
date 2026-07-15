@@ -48,7 +48,6 @@ If the other person declines the invitation, you get an **Invitation declined** 
 
 2. Optionally, repeat the steps to re-assign the follow-up to someone else.
 
-<!-- Referenced links -->
-[1]: create-follow-up.md
-[2]: create-follow-up.md#associate
-[3]: invitation/accept-decline.md
+[1]: ./create-follow-up
+[2]: ./create-follow-up#associate
+[3]: ./invitation/accept-decline

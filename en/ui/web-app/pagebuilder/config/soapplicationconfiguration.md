@@ -25,7 +25,34 @@ The *SoApplicationConfiguration.config* file can contain declarations for:
 * jsincludes
 * cssincludes
 
-[!code-xml[xml](includes/soapplicationconfiguration.xml)]
+```xml xml
+<?xml version="1.0" encoding="utf-8" ?>
+<applicationsettings defaultprefsection="SuperMode">
+  <pages prefsection="SuperMode" prefkey="MainPanel">
+    <page id="contact" type="mainpage"  function-right="hide-company" />
+    <page id="project" type="mainpage"  function-right="hide-project" />
+    <page id="selection" type="mainpage" function-right="hide-selection" />
+    <page id="diary" type="mainpage" />
+    <page id="mail" type="mainpage"  function-right="hide-mail" />
+    <page id="maillogin" type="mainpage"  function-right="hide-mail" />
+    <page id="browser" type="mainpage" />
+    <page id="sale" type="dialog" height="500px" width="650px" />
+  </pages>
+  <currents>
+    <current id="appointment" type="history" providername="SoProtocolProvider" />
+    <current id="day" type="preference" providername="SoProtocolProvider" />
+    <current id="week" type="preference" providername="SoProtocolProvider" />
+    <current id="month" type="preference" providername="SoProtocolProvider" />
+    <current id="associate" type="history" providername="SoProtocolProvider" />
+    <current id="contact" type="history" providername="SoProtocolProvider" />
+    <current id="person" type="history" providername="SoProtocolProvider" />
+    <current id="previewcontact" type="none" providername="SoProtocolProvider" />
+    <current id="previewperson" type="none" providername="SoProtocolProvider" />
+    <current id="project" type="history" providername="SoProtocolProvider" />
+    <current id="sale" type="history" providername="SoProtocolProvider" />
+  </currents>
+</applicationsettings>
+```
 
 In the above file, we can see that the pages are listed inside the `pages` element. The user preference data for all the pages will be stored under the *SuperMode* section and the key will be *MainPanel*.
 
@@ -33,7 +60,34 @@ When we go into the individual pages, it gives the page ID, the type of the page
 
 In the `currents` section, it gives details about where the application has stored the current data for a given page. For example, the below line says that the current appointment is stored in the `history` table and the provider that will retrieve the data for us is the *SoProtocolProvider*. Likewise, it will list all the current values of the application.
 
-[!code-xml[xml](includes/soapplicationconfiguration.xml?range=14)]
+```xml xml
+<?xml version="1.0" encoding="utf-8" ?>
+<applicationsettings defaultprefsection="SuperMode">
+  <pages prefsection="SuperMode" prefkey="MainPanel">
+    <page id="contact" type="mainpage"  function-right="hide-company" />
+    <page id="project" type="mainpage"  function-right="hide-project" />
+    <page id="selection" type="mainpage" function-right="hide-selection" />
+    <page id="diary" type="mainpage" />
+    <page id="mail" type="mainpage"  function-right="hide-mail" />
+    <page id="maillogin" type="mainpage"  function-right="hide-mail" />
+    <page id="browser" type="mainpage" />
+    <page id="sale" type="dialog" height="500px" width="650px" />
+  </pages>
+  <currents>
+    <current id="appointment" type="history" providername="SoProtocolProvider" />
+    <current id="day" type="preference" providername="SoProtocolProvider" />
+    <current id="week" type="preference" providername="SoProtocolProvider" />
+    <current id="month" type="preference" providername="SoProtocolProvider" />
+    <current id="associate" type="history" providername="SoProtocolProvider" />
+    <current id="contact" type="history" providername="SoProtocolProvider" />
+    <current id="person" type="history" providername="SoProtocolProvider" />
+    <current id="previewcontact" type="none" providername="SoProtocolProvider" />
+    <current id="previewperson" type="none" providername="SoProtocolProvider" />
+    <current id="project" type="history" providername="SoProtocolProvider" />
+    <current id="sale" type="history" providername="SoProtocolProvider" />
+  </currents>
+</applicationsettings>
+```
 
 ## Example merge file
 
@@ -44,19 +98,15 @@ To override *SoApplicationConfiguration*, create a new file named *MyApplication
 ```xml
 <applicationsettings>
   <pages>
-    <!-- new feature !!! -->
     <page id="customfeature" type="mainpage" />
   </pages>
   <currents>
-    <!-- new current !!! -->
     <current id="customfeature" type="none" providername="SoProtocolProvider" />
   </currents>
   <jsincludes>
-    <!-- new feature script dependency !!! -->
     <jsinclude path="~/scripts/customfeature.js" />
   </jsincludes>
   <cssincludes>
-    <!-- new feature styles dependency !!! -->
     <cssinclude path="~/styles/customfeature.css" />
   </cssincludes>
 </applicationsettings>

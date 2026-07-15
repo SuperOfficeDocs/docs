@@ -26,8 +26,8 @@ For example, the `DiaryActivity` archive provider supplies the `document`, `appo
 With this format, regardless of what archive provider an archive control uses, each row entity will have the same menu item.
 
 ``` xml
-<!-- 
-context = "archivelist" to mark this menu as an archivecontrol rows context menu 
+<!--
+context = "archivelist" to mark this menu as an archivecontrol rows context menu
 
 subcontext = "entityname" of the entity defined in the archive provider
 -->
@@ -41,12 +41,8 @@ subcontext = "entityname" of the entity defined in the archive provider
         <sentry-right tableright="HasInsert" type="disable">relation</sentry-right>
       </sentry-rights>
     </menuitem>
-    <!-- Remaining default context menu items removed for brevity-->
   </menuitems>
 </menu>
 ```
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/web-archive-control-row-context-menu.png
+[img1]: /media/loc/en/ui/web-archive-control-row-context-menu.png

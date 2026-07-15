@@ -47,7 +47,7 @@ Crafting a good message that is relevant to your audience is where it should all
 
 **Avoid:**
 
-* **Avoid using just images**. One big-image email can be considered SPAM. Other email solutions – like Outlook - may block images at first, so your message will be lost.
+* **Avoid using just images**. One big-image email can be considered SPAM. Other email solutions - like Outlook - may block images at first, so your message will be lost.
 
 * **Avoid looking (and sounding) like SPAM**. Expressions like "Earn money quickly", "Cash bonus" or "Risk-free investment" will make your email look suspicious. Avoid these spam-trigger words. Treat your email like a conversation with your audience, be real with them.
 
@@ -71,7 +71,7 @@ One of the most important aspects of these technical parts is the **[SPF record 
 
 ## Use email domain validation
 
-Hopefully, you are already using the flexible options to personalize and specify the From and Reply to fields when you set up a mailing in SuperOffice. This is great when you want to add custom text like **< Jeanette from SuperOffice >** to be displayed as the sender. Or if you are sending an email on behalf of your colleague or boss.
+Hopefully, you are already using the flexible options to personalize and specify the From and Reply to fields when you set up a mailing in SuperOffice. This is great when you want to add custom text like **\< Jeanette from SuperOffice >** to be displayed as the sender. Or if you are sending an email on behalf of your colleague or boss.
 
 But if you add an un-validated or misspelled email address, that might hurt your email deliverability.
 
@@ -81,13 +81,13 @@ Content authors will see a message if they are using an un-validated email addre
 
 ## Automation
 
-* Specify a maximum waiting time to avoid participants remaining active in a flow forever.​
+* Specify a maximum waiting time to avoid participants remaining active in a flow forever.
 
-* Update participants with new information during the flow​. For example, set a new interest or a new category as the contact is maturing; add and remove them from lists​.
+* Update participants with new information during the flow. For example, set a new interest or a new category as the contact is maturing; add and remove them from lists.
 
 * To avoid duplicate or conflicting actions: Include all actions one place, either in the form or in the flow.
 
-* You can achieve the same experience by having a split in one flow or arrange the communication in two different flows.​ Whether to split or define several flows depends on the scenario, and what outcome you would like to track. ​The more two communication tracks have in common, the more effective it is for the user to arrange it within the same flow.​
+* You can achieve the same experience by having a split in one flow or arrange the communication in two different flows. Whether to split or define several flows depends on the scenario, and what outcome you would like to track. The more two communication tracks have in common, the more effective it is for the user to arrange it within the same flow.
 
 ## <a id="mobile"></a>Customize the message for display on mobile devices
 
@@ -97,15 +97,12 @@ When editing, click **Mobile** (<i class="ph ph-device-mobile" aria-hidden="true
 
 To adjust mobile-specific settings for a message, select a section in the message and click **Mobile** in the side-panel. You can now define the formatting for displaying the message on mobile devices, and also select which elements (such as images) to exclude from mobile devices.
 
-<!-- Referenced links -->
-[1]: ../recipients/learn/index.md#selections
-[2]: ../recipients/learn/manage-bounces.md
-[3]: ../editor/learn/add-unsubscribe-link.md
-[4]: ../mailing/learn/create/send-test-email.md
-[5]: ../../security/privacy/admin/add-legal-base.md
-[6]: ../mailing/admin/add-domain.md
-[7]: ../../../en/online/mail-services/mailgun/spf/index.md
+[1]: ../recipients/learn/index#selections
+[2]: ../recipients/learn/manage-bounces
+[3]: ../editor/learn/add-unsubscribe-link
+[4]: ../mailing/learn/create/send-test-email
+[5]: ../../security/privacy/admin/add-legal-base
+[6]: ../mailing/admin/add-domain
+[7]: ../../../en/online/mail-services/mailgun/spf/index
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/
-
-<!-- Referenced images -->

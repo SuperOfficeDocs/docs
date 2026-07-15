@@ -52,6 +52,24 @@ en/**
 !en/**/index.md
 !en/**/index.mdx
 
+# en subfolders converted to Mintlify (issues #15, #18, #19, #23-31)
+!en/ui/**
+!en/admin/**
+!en/learn/**
+!en/company/**
+!en/contact/**
+!en/sale/**
+!en/marketing/**
+!en/request/**
+!en/knowledge-base/**
+!en/custom-objects/**
+!en/project/**
+!en/dashboard/**
+!en/diary/**
+!en/email/**
+!en/document/**
+!en/search-options/**
+
 # Ignore database except index files
 en/database/**
 !en/database/**/

@@ -1,5 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
-After you have created your target list, prepared the mailing and tested it, you have finally made it to the exciting part – it is time to send your mailing.
+After you have created your target list, prepared the mailing and tested it, you have finally made it to the exciting part - it is time to send your mailing.
 
 In the final step, **Confirm**, you can view a summary of the mailing and verify that these are correct. Any error messages displayed in this screen must be solved before the mailing can be sent. The send options are disabled if there are incomplete steps or missing information in your mailing. These are indicated in red.
 
@@ -31,8 +30,6 @@ You can click the mailing in the list to [view sending status and statistics][1]
 
 To stop the mailing or start a planned mailing ahead of schedule, click the **Stop** or **Start** button respectively.
 
-<!-- Referenced links -->
-[1]: ../../view-statistics.md
+[1]: ../../view-statistics
 
-<!-- Referenced images -->
 [img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png

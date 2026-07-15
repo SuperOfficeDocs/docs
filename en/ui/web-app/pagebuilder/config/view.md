@@ -16,7 +16,40 @@ A view represents the many faces a card in SuperOffice can take. The different v
 
 Looking at the view config file below, you can see that there is only one view defined.
 
-[!code-xml[XML](includes/mainview.xml)]
+```xml XML
+<view id="MainView" type="SoView" soprotocol="main" current="contact">
+  <caption>[SR_COMMON_CONTACT]</caption>
+  <tooltip>The main one</tooltip>
+  <controlgroups>
+    <controlgroup id="mainHeadergroup" type="SoControlGroup" position="absolute" top="5px" left="5px" right="20px" >
+      <controls>
+        <control id="ContactMainHeaderControl" type="ContactHeader">
+          <datasource>ContactEntityDataHandler.ContactEntity</datasource>
+          <config>
+          </config>
+        </control>
+      </controls>
+    </controlgroup>
+    <controlgroup id="maingroup" type="SoControlGroup" position="absolute" top="29px" bottom="54px" left="5px" right="20px" overflow="hidden">
+      <controls>
+        <control id="ContactMainControl" type="ContactMainView">
+          <datasource>ContactEntityDataHandler.ContactEntity</datasource>
+          <config>
+          </config>
+        </control>
+      </controls>
+    </controlgroup>
+    <controlgroup id="contactmainpageoneudefgroup" type="SoHookedControlGroup" width="100%" udeftype="contact" udefview="more">
+      <controls>
+      </controls>
+      <config>
+        <grouptype>alternatinggrid</grouptype>
+        <controlhookid>PageOneFields</controlhookid>
+      </config>
+    </controlgroup>
+  </controlgroups>
+</view>
+```
 
 The above config file represents only one view of the main card of the **Contact** page in SuperOffice.
 
@@ -25,7 +58,6 @@ A view configuration file defines the UI structure of a view and contains the la
 ![PageFramework][img1]
 
 ```xml
-<!-- SoExampleView.config -->
 <view id="ExampleView" type="SoView" soprotocol="example"
       current="example" rendermode="display"
       minwidth="##MAINCARD.MINWIDTH##">
@@ -87,7 +119,17 @@ A view config contains config data of the control groups and, within the control
 
 **A typical config of a control group:**
 
-[!code-xml[XML](includes/mainview.xml?range=14-22)]
+```xml XML
+    <controlgroup id="maingroup" type="SoControlGroup" position="absolute" top="29px" bottom="54px" left="5px" right="20px" overflow="hidden">
+      <controls>
+        <control id="ContactMainControl" type="ContactMainView">
+          <datasource>ContactEntityDataHandler.ContactEntity</datasource>
+          <config>
+          </config>
+        </control>
+      </controls>
+    </controlgroup>
+```
 
 Here we can see that there are controls in a given control group section. The config data for the control is used to customize the control. For example, an *ArchiveList* control uses the config section to specify which columns to display as default.
 
@@ -125,9 +167,8 @@ You can use SoProtocol strings in the URL to force a switch to a particular view
 
 These links show us a direct way to open a page with wanted tabs. The SoProtocol name is declared on the view using an element in the config file. Otherwise, we can log in to the contact page, and then by clicking or by selecting the wanted views, we can get the same result.
 
-<!-- Referenced links -->
-[1]: panel.md
-[2]: card.md
+[1]: ./panel
+[2]: ./card
 [3]: <xref:SuperOffice.CRM.Web.UI.Controls.DialogView>
 [4]: <xref:SuperOffice.CRM.Web.UI.Controls.DialogAbsoluteView>
 [5]: <xref:SuperOffice.CRM.Web.UI.Controls.DialogHeaderView>
@@ -138,5 +179,4 @@ These links show us a direct way to open a page with wanted tabs. The SoProtocol
 [10]: <xref:SuperOffice.CRM.Web.UI.Controls.SystemView>
 [11]: <xref:SuperOffice.CRM.Web.UI.Controls.TabbedView>
 
-<!-- Referenced images -->
-[img1]: media/web-client-pagebuilder-framework2.png
+[img1]: /media/loc/en/ui/web-client-pagebuilder-framework2-1.png

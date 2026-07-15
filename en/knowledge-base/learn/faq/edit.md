@@ -43,5 +43,4 @@ redirect_from:
 1. In the **FAQ entry properties** screen, click the **Delete** button at the bottom of the screen.
 1. Click **OK** to confirm. The FAQ entry is removed from SuperOffice.
 
-<!-- Referenced links -->
-[1]: create.md
+[1]: ./create

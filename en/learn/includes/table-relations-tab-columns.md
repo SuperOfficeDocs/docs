@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Column | Description |
 |---|---|
 | Source - full name | Shows the name of the company or contact that is the active part of the relationship. |

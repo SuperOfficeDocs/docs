@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 **Many contacts are shown without an icon. Does this mean they will not be imported?**
 
 Rows without icons are not imported. If you see that many contacts are not being imported, this may be because they are not linked to a company. In that case, you can do one of the following:
@@ -13,5 +12,4 @@ Rows without icons are not imported. If you see that many contacts are not being
     4. Click **Save**.
     5. Click **Next**, and check that the [New company icon][img1] icon is displayed next to the contact. The person is registered as a company in SuperOffice CRM with themselves as the only contact.
 
-<!-- Referenced images -->
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png

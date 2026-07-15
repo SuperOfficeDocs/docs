@@ -47,16 +47,12 @@ It can declare **Content controls** that specifically override content placehold
 
 <asp:Content ID="Content1" ContentPlaceHolderID="WebClientPlaceHolder" Runat="Server">
 
-<!--ClientScripts-->
 <div id="scripts"></div>
 
-<!--Initialize scripts are added here-->
 <div id="InitializeScripts" visible="false"></div>
 
-<!--Dialog Scripts are added here-->
 <div id="DialogScripts" visible="false"></div>
 
-<!-- This is the placeholder for the pagebuilder, do not remove -->
 <so2:PageBuilder ID="PageContent" runat="server">
 
 </so2:PageBuilder>

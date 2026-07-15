@@ -37,10 +37,6 @@ We can create a new view as shown in the *SoContactPanel.config*.
       <views>
         <view id="MainView" reference="MainView" current="contact"></view>
 
-        <!-- some other code for another view-->
-        <!-- some other code for another view-->
-
-        <!-- My View Start-->
         <view id="test" type="SoView" soprotocol="udef2" current="contact">
           <caption>My View</caption>
 
@@ -63,7 +59,6 @@ We can create a new view as shown in the *SoContactPanel.config*.
             <trigger type="current">contact</trigger>
           </triggers>
         </view>
-        <!-- My View End-->
 
       </views>
       <functional-rights>
@@ -77,8 +72,6 @@ We can create a new view as shown in the *SoContactPanel.config*.
         </datahandlers-to-save>
       </config>
     </card>
-    <!-- some other code for another card-->
-    <!-- some other code for another card-->
   </cards>
   <config>
     <panes>
@@ -112,8 +105,6 @@ In the above view, control ContactHeader is added to the controlgroup. ContactHe
 
 In CRM.web we now see another tab is added to the ContactArchive card called "My View". In that view, SoLabel and SoTextBox are used to bind the data. The SO Protocol value is set to "udef1". There are two controls called "SoLabel" and "SoTextBox" bounded to the controlgroup. The "SoLabel" caption is set by the "SR\_COMPANY\_NAME". To fetch the real value for this label the pagebuilder will use the resource manager.
 
-<!-- TODO link to the strings internationalization doc -->
-
 "SoTextBox" is bounded to the ContactEntityDataHandler.ContactEntity.Name. It shows the current company name fetched from the database.
 
 ```xml
@@ -122,15 +113,8 @@ In CRM.web we now see another tab is added to the ContactArchive card called "My
 <panel id="Contact" type="SplitterPanel" soprotocol="Contact" paneltype="Main" placeholderid="MainPlaceHolder">
   <caption>[SR_COMMON_CONTACT]: [current:contact_name]</caption>
   <cards>
-    <!-- some other code for another card-->
-    <!-- some other code for another card-->
     <card id="ContactArchives" placeholderid="bottom" type="SoTabbedCard" cardtype="ArchiveCard">
       <views>
-        <!-- some other code for another view-->
-        <!-- some other code for another view-->
-        <!-- some other code for another view-->
-        <!-- some other code for another view-->
-        <!-- My View Start-->
         <view id="test1" type="SoView" soprotocol="udef1" >
           <caption>My View</caption>
           <tooltip>More...</tooltip>
@@ -155,7 +139,6 @@ In CRM.web we now see another tab is added to the ContactArchive card called "My
             <trigger type="current">contact</trigger>
           </triggers>
         </view>
-        <!-- My View End-->
       </views>
       <config>
         <only-visible-views>true</only-visible-views>
@@ -179,7 +162,4 @@ This is the output of the contact page after adding two views (tabs) for maincar
 
 ![01][img1]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image001.jpg
+[img1]: /media/loc/en/ui/image001-8.jpg

@@ -9,5 +9,4 @@ date: 04.30.2021
 * [Validation controls][1]
 * [Validation in SuperOffice WEB][1]
 
-<!-- Referenced links-->
-[1]: validation.md
+[1]: ./validation

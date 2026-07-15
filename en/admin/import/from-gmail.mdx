@@ -1,0 +1,55 @@
+---
+uid: help-en-import-from-gmail
+title: Import from Gmail
+description: Import from Gmail
+keywords: Settings and maintenance, import
+author: SuperOffice Product and Engineering
+date: 06.29.2022
+version: 10.5
+content_type: howto
+tier: starter
+index: true
+redirect_from: /en/admin/import/learn/import-from-gmail
+language: en
+---
+
+import CautionBackupBeforeImport from "./includes/caution-backup-before-import.mdx";
+import OpenImport from "./includes/open-import.md";
+import AdjustEmailOnly from "./includes/adjust-email-only.md";
+import TroubleshootImport from "./includes/troubleshoot-import.md";
+import ImportComplete from "./includes/import-complete.mdx";
+
+# Import from Gmail
+
+<CautionBackupBeforeImport />
+
+## Import companies/contacts from Gmail
+
+1. <OpenImport />
+
+2. Click the ![icon][img2] Gmail icon under **Select an import source**.
+
+3. Give access. The dialog shown depends on if you are already logged in to Gmail
+
+    * If the **Request for permission** dialog appears, you are already logged in to Gmail. Click **Give access**.
+
+    * If the **Google accounts** dialog appears, you are not logged in to Gmail. Type in the user name and password, and log in to Gmail. Click **Give access**.
+        Your Gmail companies will be displayed in Settings and maintenance.
+
+    <Note>
+    The companies from Gmail will not be imported into the SuperOffice database yet. SuperOffice will only upload the company list from Gmail, so that you can specify the import settings.
+    </Note>
+
+## Adjust the import
+
+<AdjustEmailOnly />
+
+### Troubleshooting
+
+<TroubleshootImport />
+
+## Complete the import
+
+<ImportComplete />
+
+[img2]: ../../../media/icons/admin/import-gmail-small.png

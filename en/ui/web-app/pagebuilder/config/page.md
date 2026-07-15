@@ -21,7 +21,6 @@ Below is a diagram that shows all the components of a page.
 The top-most level of the design of the page is the `page` element itself. All other elements that make up a page must be inside it.
 
 ```xml
-<!-- SoExamplePage.config -->
 <page id="UniquePageIdentifier">
   <title>Page Title</title>
   <data>
@@ -40,7 +39,42 @@ The top-most level of the design of the page is the `page` element itself. All o
 
 **The actual config file for the SuperOffice contact page:**
 
-[!code-xml[XML](includes/socontactpage.xml)]
+```xml XML
+<page id="ContactPage">
+  <data>
+    <datahandlers>
+      <datahandler id="NavigatorDataHandler" type="NavigatorDataHandler"></datahandler>
+      <datahandler id="ContactEntityDataHandler" type="ContactEntityDataHandler"></datahandler>
+      <datahandler id="PersonEntityDataHandler" type="PersonEntityDataHandler"></datahandler>
+      <datahandler id="DiaryDataHandler" type="DiaryDataHandler"></datahandler>
+      <datahandler id="MiniCardDataHandler" type="MiniCardDataHandler">
+        <config>
+          <archivecolumninfos>
+            <archivecolumninfo guiname="SelectionMemberMiniCardArchive" providername="contactselection"/>
+            <archivecolumninfo guiname="ProjectMemberMiniCardArchive" providername="projectmember"/>
+          </archivecolumninfos>
+        </config>
+      </datahandler>
+      <datahandler id="ArchiveColumnConfigDataHandler" type="ArchiveColumnConfigDataHandler">
+        <config>
+          <archivecolumninfos>
+            <archivecolumninfo guiname="ContactPersonArchive" providername="person"/>
+            <archivecolumninfo guiname="ContactRelationArchive" providername="relation"/>
+            <archivecolumninfo guiname="ContactActivityArchive" providername="contactactivity"/>
+            <archivecolumninfo guiname="ContactProjectsArchive" providername="contactprojects"/>
+          </archivecolumninfos>
+        </config>
+      </datahandler>
+    </datahandlers>
+  </data>
+  <panels>
+    <panel reference="Menu" />
+    <panel reference="ButtonBar" />
+    <panel reference="Navigator" />
+    <panel reference="Contact" />
+  </panels>
+</page>
+```
 
 The config file contains some config on data and some references to a few panels. Looking at the diagram, we can see that the second element of a page is a panel and inside the panel only the elements of a page exists. The `data` section of the file tells us where the data for this page is fetched from. The section of the config file shown below says which data handlers will be used to fetch the data for the archive panel.
 
@@ -58,7 +92,18 @@ Each panel initializes itself and loads each card, then each card initializes it
 
 ## Data handler
 
-[!code-xml[XML](includes/socontactpage.xml?range=16-25)]
+```xml XML
+      <datahandler id="ArchiveColumnConfigDataHandler" type="ArchiveColumnConfigDataHandler">
+        <config>
+          <archivecolumninfos>
+            <archivecolumninfo guiname="ContactPersonArchive" providername="person"/>
+            <archivecolumninfo guiname="ContactRelationArchive" providername="relation"/>
+            <archivecolumninfo guiname="ContactActivityArchive" providername="contactactivity"/>
+            <archivecolumninfo guiname="ContactProjectsArchive" providername="contactprojects"/>
+          </archivecolumninfos>
+        </config>
+      </datahandler>
+```
 
 The XML fragment above says the [data handler][1] for the archive panel is `ArchiveColumnConfigDataHandler`. The **Contact** page archive panel consists of 4 different tabs showing 4 different types of data. The `ArchiveColumnInfos` section tells us which providers the data for the different tabs are fetched from.
 
@@ -68,15 +113,20 @@ So the `data` section tells us how the data is fetched for a page.
 
 So now where does the config info of the rest of the elements of the page exist? That is where the below bit of code of the above config file comes in.
 
-[!code-xml[XML](includes/socontactpage.xml?range=28-33)]
+```xml XML
+  <panels>
+    <panel reference="Menu" />
+    <panel reference="ButtonBar" />
+    <panel reference="Navigator" />
+    <panel reference="Contact" />
+  </panels>
+```
 
 Here it tells us the config data for the rest of the page exists in the files that are referenced here. For example, the config data for the main panel of the contact page exists in the *SoContactPanel* config file. But here it has only referenced *Contact* and the system knows through its **config file naming convention** that it has to look in the *SoContactPanel.config* for the config data of the contact main panel.
 
 **Next:** [panel config files][2]
 
-<!-- Referenced links -->
-[1]: ../data-binding.md
-[2]: panel.md
+[1]: ../data-binding
+[2]: ./panel
 
-<!-- Referenced images -->
 [img1]: ../media/image001.gif

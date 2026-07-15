@@ -23,7 +23,7 @@ The main reason for using the MailKit library is a wider range of supported prot
 
 MailKit is used by SuperOffice NetServer, for example, Inbox in the Sales client.
 
-MailKit is enabled for CRM Online from version 8.0 (R23) and can be enabled manually on Onsite from version SuperOffice 8.0 SR3.
+MailKit is enabled for CRM Online from version 8.0 (R23) and can be enabled manually on Onsite from version SuperOffice 8.0 SR3.
 
 ## How to enable MailKit
 
@@ -48,7 +48,7 @@ SuperOffice Inbox downloads emails from your mailbox and stores them in the Supe
 
 **Online:**
 
-[Submit a support request][3] to your local support team. They can change the value for your tenant.
+[Submit a support request][3] to your local support team. They can change the value for your tenant.
 
 **Onsite:**
 
@@ -151,20 +151,18 @@ Yet to be completed, please submit your experiences
 
 **Online:**
 
-[Submit a support request][3] to your local support team. They can get in contact with our Online Operations team to activate the debug logging for email.
+[Submit a support request][3] to your local support team. They can get in contact with our Online Operations team to activate the debug logging for email.
 
 **Onsite:**
 
 Read section [Mail logging][1].
 
-<!-- Referenced links -->
-[1]: ../../../onsite/debug/web-client.md
+[1]: ../../../onsite/debug/web-client
 [2]: https://cs.superoffice.com/scripts/customer.fcgi?_sf=0&custSessionKey=&customerLang=en&noCookies=true&action=viewKbEntry&id=166
 [3]: https://cs.superoffice.com/
-[4]: ../../../api/config/mail.md
-[5]: ../learn/index.md
+[4]: ../../../api/config/mail
+[5]: ../learn/index
 [6]: https://www.codetwo.com/kb/upn/#exchange
 [7]: https://www.codetwo.com/kb/upn/#office-365
 
-<!-- Referenced images -->
-[img1]: media/mailkit.jpg
+[img1]: /media/loc/en/email/mailkit.jpg

@@ -72,11 +72,9 @@ The basic difference between ASPX and ASCX pages is that ASCX pages may not have
 * InitializeDataHandler
 * ...
 
-<!-- Referenced links -->
-[1]: superstate/index.md
-[2]: usercontrols/index.md
-[4]: datahandlers/index.md
-[5]: config/index.md
+[1]: ./superstate/index
+[2]: ./usercontrols/index
+[4]: ./datahandlers/index
+[5]: ./config/index
 
-<!-- Referenced images -->
-[img1]: media/image002.jpg
+[img1]: /media/loc/en/ui/image002-9.jpg
