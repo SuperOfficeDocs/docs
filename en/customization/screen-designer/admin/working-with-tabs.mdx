@@ -20,9 +20,11 @@ redirect_from:
   - /en/customization/screen-designer/working-with-tabs
 ---
 
+import ReqDevToolsTransition from "../../../includes/req-dev-tools-transition.md";
+
 # Working with tabs
 
-[!include[Requirement](../../../includes/req-dev-tools-transition.md)]
+<ReqDevToolsTransition />
 
 This guide assumes you are already [editing the layout][2]. The following sections explain how to organize and customize tabs in SuperOffice CRM, helping you tailor the interface to meet your organization's needs.
 
@@ -48,8 +50,9 @@ If you need to rename the tab later, select the tab and go to **Tab layout**. Yo
 
 To streamline the interface, you may want to remove tabs that are no longer necessary. A layout must have at least one tab. If only one tab remains, it cannot be removed.
 
-> [!NOTE]
-> If the tab contains mandatory fields, you must move those fields to another tab before deleting the current one.
+<Note>
+If the tab contains mandatory fields, you must move those fields to another tab before deleting the current one.
+</Note>
 
 **Steps:**
 
@@ -64,8 +67,9 @@ If you remove a tab and later decide you need it, you can easily restore it.
 1. Open the layout in edit mode.
 1. Click <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i> and select **Restore tabs**.
 
-> [!NOTE]
-> This action restores **all** previously removed tabs.
+<Note>
+This action restores **all** previously removed tabs.
+</Note>
 
 ## <a id="label"></a>Add heading or divider
 
@@ -86,8 +90,9 @@ Labels and dividers help to organize fields within a tab, making the information
 
 By default, tabs have two columns, but you can adjust this to meet your needs. Each tab can have 1, 2, 3, or 4 columns, depending on the amount of information you want to display.
 
-> [!NOTE]
-> Tabs with specific functions, such as **ERP** and **Note**, do not support column customization. Go to **Settings and maintenance** > **ERP** to configure the contents of the ERP tab.
+<Note>
+Tabs with specific functions, such as **ERP** and **Note**, do not support column customization. Go to **Settings and maintenance** > **ERP** to configure the contents of the ERP tab.
+</Note>
 
 **Steps:**
 
@@ -101,8 +106,9 @@ Columns will stack vertically when the screen is too small to display them horiz
 
 If you have a wide screen, using more columns allows you to view more data simultaneously. However, be cautious. Using four columns might reduce the visibility of some fields. Hiding field labels can help create more space.
 
-> [!TIP]
-> If a tab becomes too crowded, consider adding additional tabs to better organize the information.
+<Tip>
+If a tab becomes too crowded, consider adding additional tabs to better organize the information.
+</Tip>
 
 ## <a id="more"></a>The More tab
 
@@ -114,13 +120,11 @@ The **More** tab automatically contains all [custom fields][3], arranged by rank
 
 * [Working with fields][1]
 
-<!-- Referenced links -->
-[1]: working-with-fields.md
-[2]: edit-layout.md
-[3]: ../../../custom-objects/learn/index.md
-[4]: ../../../custom-objects/admin/create-extra-field.md
-[5]: ../../../custom-objects/admin/add-udef.md
-[9]: ../../../localization/learn/translate-fields.md
+[1]: ./working-with-fields
+[2]: ./edit-layout
+[3]: ../../../custom-objects/learn/index
+[4]: ../../../custom-objects/admin/create-extra-field
+[5]: ../../../custom-objects/admin/add-udef
+[9]: ../../../localization/learn/translate-fields
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/customization/field-settings.png

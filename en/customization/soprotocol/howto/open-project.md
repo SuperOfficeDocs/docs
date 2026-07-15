@@ -38,6 +38,5 @@ This link opens the Project page displaying the Links tab above and the project 
 
 ![02 -screenshot][img2]
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/customization/soprotocol-project-udef.png
 [img2]: ../../../../media/loc/en/customization/soprotocol-project-note-projectmembersarchive.png

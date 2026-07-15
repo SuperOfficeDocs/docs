@@ -30,7 +30,7 @@ customobject?customobject_name=y_car
 
 ## Add new custom object with prefilled values
 
-For new entries, we can pass any value to a field or prefill it with currents. Just add `&<custom_field_name>=<value>` to SOProtocol. Current is referred by "{current_id}".
+For new entries, we can pass any value to a field or prefill it with currents. Just add `&<custom_field_name>=<value>` to SOProtocol. Current is referred by "\{current_id\}".
 
 ```http
 // Prefilling current
@@ -46,7 +46,4 @@ customobject?customobject_name=y_car?<custom_field_name>=blue
 customobject?customobject_name=y_car&customobject_id=1520
 ```
 
-<!-- Referenced links -->
-[1]: ../../../custom-objects/learn/extra-table.md
-
-<!-- Referenced images -->
+[1]: ../../../custom-objects/learn/extra-table

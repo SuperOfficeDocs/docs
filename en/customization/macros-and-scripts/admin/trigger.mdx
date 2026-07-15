@@ -17,9 +17,12 @@ language: en
 index: true
 ---
 
+import ReqDevToolsTransition from "../../../includes/req-dev-tools-transition.md";
+import GotoSm from "../../../learn/includes/goto-sm.md";
+
 # Triggers
 
-[!include[Requirement](../../../includes/req-dev-tools-transition.md)]
+<ReqDevToolsTransition />
 
 Triggers are scripts that are executed for specific events in the system, such as when a new sale is created or a request gets closed. Triggers can react silently to what happens, or block the operation and show an explanation back to the user.
 
@@ -33,7 +36,7 @@ This is an example of a very simple trigger. You can for instance add conditions
 
 We will now create a series of actions based on the example above.
 
-1. [!include[Go to](../../../learn/includes/goto-sm.md)]
+1. <GotoSm />
 1. Click <i class="ph ph-code-block" aria-hidden="true"></i> **CRMScript** and select the **Triggers** tab.
 1. Click the **New trigger (macro)** button. The **Choose trigger** screen displays the available triggers. These are events in the system that can be used to set off actions/macros. In our example we select **Request closed**, so that the macro is run when a request is closed in SuperOffice.
 1. Type "request" in the search field and select the trigger called **Request closed**.

@@ -9,7 +9,7 @@ version: 10.3.4
 content_type: howto
 category: customization
 topic: soprotocol
-redirect_from: 
+redirect_from:
   - /en/ui/soprotocol/create-contact
   - /en/ui/soprotocol/howto/create-contact
 language: en
@@ -33,8 +33,9 @@ NEW mode is just editing a blank contact, so this is equivalent to
 contact.main[mode=edit]?contact_id=0
 ```
 
-> [!NOTE]
-> `contact.main` is not supported in onsite versions 10.0.x-10.2.x.
+<Note>
+`contact.main` is not supported in onsite versions 10.0.x-10.2.x.
+</Note>
 
 There are 2 direct ways to open a new contact by using the URLs containing SOProtocol:
 
@@ -52,7 +53,4 @@ The following example shows how we can create a new contact using the URL. `cont
 
 ```http://localhost/SuperOfficeWeb/default.aspx?contact.main[mode=edit&new=true]?contact_id=0```
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/customization/soprotocol-contact-new.png

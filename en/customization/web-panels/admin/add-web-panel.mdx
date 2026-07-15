@@ -19,9 +19,12 @@ redirect_from:
   - /en/ui/web-panels/add-web-panel
 ---
 
+import ReqAdmin from "../../../learn/includes/req-admin.md";
+import WebPanelsAndHttps from "../../includes/web-panels-and-https.md";
+
 # Add web panel
 
-[!include[Must be admin](../../../learn/includes/req-admin.md)]
+<ReqAdmin />
 
 Web panels are defined in the **GUI - Web panel** list, which you can manage in **Settings and maintenance** under **Lists**. Where your web panel appears is determined by the display location. The content of your web panel is determined by the URL.
 
@@ -83,7 +86,7 @@ Once the item is saved, you can:
 
 ### <a id="https"></a>Using HTTP vs HTTPS URLs
 
-[!include[HTTPS restriction](../../includes/web-panels-and-https.md)]
+<WebPanelsAndHttps />
 
 ### Using template variables
 
@@ -111,15 +114,12 @@ In Service, web panels are called **extra browser tabs**. You can add the same t
 * [Add a task menu item][1]
 * [Base programs and URL parameters][5]
 
-<!-- Referenced links -->
-[1]: ../../admin/add-items-to-task-menu.md
-[2]: url-encoding.md
-[3]: ../../../localization/learn/translate-fields.md
-[4]: ../../../ui/blogic/learn/extra-menus/index.md
-[5]: ../../../../en/ui/blogic/url-parameters.md
-[6]: ../../../admin/lists/headings.md
-[7]: ../../../admin/lists/user-group-filtering.md
-[8]: index.md
-[9]: ../../../document/templates/variables/for-service.md
-
-<!-- Referenced images -->
+[1]: ../../admin/add-items-to-task-menu
+[2]: ./url-encoding
+[3]: ../../../localization/learn/translate-fields
+[4]: ../../../ui/blogic/learn/extra-menus/index
+[5]: ../../../../en/ui/blogic/url-parameters
+[6]: ../../../admin/lists/headings
+[7]: ../../../admin/lists/user-group-filtering
+[8]: ./index
+[9]: ../../../document/templates/variables/for-service

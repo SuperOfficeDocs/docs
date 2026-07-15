@@ -32,6 +32,5 @@ To view the follow-up in the context of the diary, use SoProtocol to navigate to
 
 ![diary-context-screenshot][img2]
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/customization/soprotocol-appointment-default.png
 [img2]: ../../../../media/loc/en/customization/soprotocol-appointment-diary.png

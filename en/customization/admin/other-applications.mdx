@@ -12,7 +12,7 @@ category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
 index: true
-redirect_from: 
+redirect_from:
   - /en/admin/lists/learn/applications
   - /en/admin/lists/learn/adding-external-applications-to-application-list
 language: en
@@ -22,8 +22,9 @@ language: en
 
 You can have shortcuts to external applications in SuperOffice CRM, so that you can open them directly from within SuperOffice CRM for Windows. You define which URL addresses will be available to users in the **Lists** screen in Settings and maintenance.
 
-> [!NOTE]
-> Files or applications that must be run locally (for example exe files) are not accessible in SuperOffice CRM for Web.
+<Note>
+Files or applications that must be run locally (for example exe files) are not accessible in SuperOffice CRM for Web.
+</Note>
 
 ## Steps
 
@@ -42,7 +43,7 @@ You can have shortcuts to external applications in SuperOffice CRM, so that you 
     * **Event**: the application is run when SuperOffice CRM opens or closes or on a local update (Travel). See step 8. You could, for example, run a synchronization program for a PDA when SuperOffice CRM closes.
     * **Task**: select an option in this list box to make the application accessible from the **Task** tab in the Selection screen or the **Task** buttons.
 
-        <details><summary>Find out more about the different options.</summary>
+        <Accordion title="Find out more about the different options.">
 
         The names in parenthesis indicate the section tab where the application is available.
 
@@ -60,10 +61,11 @@ You can have shortcuts to external applications in SuperOffice CRM, so that you 
 
         * **Document dialog**: the application is displayed as an option under the **Task** button in the selected dialog. The same option is available for the Contact, Quote, and Product screens.
 
-        </details>
+        </Accordion>
 
-    > [!NOTE]
-    > Options you choose under **Add as** determine which options are available in the rest of the dialog.
+    <Note>
+    Options you choose under **Add as** determine which options are available in the rest of the dialog.
+    </Note>
 
 1. Under **Available on**, choose where the application is available. You can select several of these options simultaneously.
 
@@ -90,7 +92,7 @@ You can have shortcuts to external applications in SuperOffice CRM, so that you 
 
 1. Check **Wait for application to finish** if you want SuperOffice CRM to wait for the external application to quit before closing. If you do not check this box, you can close SuperOffice CRM without closing the external application. This list box appears only if you selected **Event** under **Add as**.
 
-1. Under **Start-up mode**, specify the type of window the application will start in – Maximized, Minimized or Restored.
+1. Under **Start-up mode**, specify the type of window the application will start in - Maximized, Minimized or Restored.
 
 1. In the **Icon** field, choose the icon to display for the application in the Navigator in SuperOffice CRM (see step 7 concerning the **Show** list box). This list box appears only if you selected **Button** under **Add as**.
 
@@ -101,8 +103,9 @@ You can have shortcuts to external applications in SuperOffice CRM, so that you 
 
 1. Click **Save**. The item is added to the **Items** list. Repeat this procedure to add more items.
 
-> [!NOTE]
-> Users must log in to SuperOffice CRM again to display the application.
+<Note>
+Users must log in to SuperOffice CRM again to display the application.
+</Note>
 
 ## After saving
 
@@ -113,6 +116,5 @@ After adding items, you can specify details for each individual item. You can sp
 
 The items are displayed in the order you entered them. To change the order, select an item and move it up or down using the arrow buttons to the left of the list (<i class="ph ph-arrow-circle-up" aria-hidden="true"></i> <i class="ph ph-arrow-circle-down" aria-hidden="true"></i>).
 
-<!-- Referenced links -->
-[1]: ../../admin/lists/headings.md
-[2]: ../../admin/lists/user-group-filtering.md
+[1]: ../../admin/lists/headings
+[2]: ../../admin/lists/user-group-filtering

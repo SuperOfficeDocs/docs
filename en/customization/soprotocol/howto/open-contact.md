@@ -48,17 +48,14 @@ In SuperOffice, a place where a list of persons is shown using the PersonArchive
 
 * **`http://localhost/SuperOfficeWeb/Default.aspx`** - This is the default URL for all SuperOffice pages.
 
-* **contact.main.minimoth.personarchive** – This indicates that the page consists of 4 panels. Since the Contact Card consists of four views we have identified the main view to be shown. `udef`, `interest`, and `www` can be used to replace main since these are the other views available on the Contact page. Similarly, minimonth indicates the card to the right of the Contact card and there also we can call the page using the different views available under this card. "personarchive" refers to the card below the Contact card and the minimonth card. Here also we could replace the personarchive with the names of the other views available under this card.
+* **contact.main.minimoth.personarchive** - This indicates that the page consists of 4 panels. Since the Contact Card consists of four views we have identified the main view to be shown. `udef`, `interest`, and `www` can be used to replace main since these are the other views available on the Contact page. Similarly, minimonth indicates the card to the right of the Contact card and there also we can call the page using the different views available under this card. "personarchive" refers to the card below the Contact card and the minimonth card. Here also we could replace the personarchive with the names of the other views available under this card.
 
-* **contact\_id=2&person\_id=10** – `contact_id=10` indicates which Contact's details should be shown on the page. person\_id that the person whose person\_id is 10 of the Contact whose Id is 10 will be highlighted.
+* **contact\_id=2&person\_id=10** - `contact_id=10` indicates which Contact's details should be shown on the page. person\_id that the person whose person\_id is 10 of the Contact whose Id is 10 will be highlighted.
 
 Following is a screenshot of the web page that will be shown when the above URL is passed on the address bar.
 
 ![12][img3]
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/customization/soprotocol-contact-contact_id.png
 [img2]: ../../../../media/loc/en/customization/soprotocol-contact-edit-mode.png
 [img3]: ../../../../media/loc/en/customization/soprotocol-contact.png
