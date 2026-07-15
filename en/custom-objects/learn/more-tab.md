@@ -63,12 +63,10 @@ Click <i class="ph ph-pencil-simple" aria-label="Edit"></i> to update the inform
 * [Add extra fields][3]
 * [Managing custom layouts with the Screen Designer][4]
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: ../admin/add-udef.md
-[3]: ../admin/create-extra-field.md
-[4]: ../../customization/screen-designer/admin/add-layout.md
+[1]: ./index
+[2]: ../admin/add-udef
+[3]: ../admin/create-extra-field
+[4]: ../../customization/screen-designer/admin/add-layout
 
-<!-- Referenced images -->
 [img6]: ../../../media/loc/en/sale/sale-more.png
 [img4]: ../../../media/loc/en/project/project-more.png

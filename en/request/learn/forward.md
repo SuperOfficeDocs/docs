@@ -57,11 +57,9 @@ You can forward a complex or problematic request to an external contact in an em
 
 ![Add recipient to bulk forward requests to an external contact - screenshot][img1]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: create.md#fields
+[1]: ./index#open
+[2]: ./create#fields
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/request/forward-multiple-requests.png
 [img2]: ../../../media/loc/en/request/forward-add-recipient.png
 [img3]: ../../../media/loc/en/request/forward-a-request.png

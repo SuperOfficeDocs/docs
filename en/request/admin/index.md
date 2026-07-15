@@ -39,23 +39,20 @@ In this section, you can configure the settings for Service to tailor it to your
 * [System design][15]
 * [Profile][16] - changes here will not show anywhere in SuperOffice CRM module (only in the Service module)
 
-<!-- Referenced links -->
-[4]: category/index.md
-[5]: priority/index.md
-[6]: status/index.md
-[8]: system-templates.md
-[9]: type/index.md
-[7]: ../learn/index.md#available
-[10]: ../../localization/learn/customer-languages.md
-[11]: ../../admin/preferences/service-settings.md
-[12]: ../../admin/user-management/role/index.md
-[13]: ../../admin/user-management/index.md
-[15]: ../../ui/blogic/learn/index.md
-[16]: ../../ui/blogic/learn/profiles/index.md
+[4]: ./category/index
+[5]: ./priority/index
+[6]: ./status/index
+[8]: ./system-templates
+[9]: ./type/index
+[7]: ../learn/index#available
+[10]: ../../localization/learn/customer-languages
+[11]: ../../admin/preferences/service-settings
+[12]: ../../admin/user-management/role/index
+[13]: ../../admin/user-management/index
+[15]: ../../ui/blogic/learn/index
+[16]: ../../ui/blogic/learn/profiles/index
 
-[21]: ../../customer-center/learn/index.md
-[22]: ../../email/admin/mailbox/index.md
-[23]: ../../chat/admin/index.md
-[17]: relation-rules.md
-
-<!-- Referenced images -->
+[21]: ../../customer-center/learn/index
+[22]: ../../email/admin/mailbox/index
+[23]: ../../chat/admin/index
+[17]: ./relation-rules

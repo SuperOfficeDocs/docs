@@ -30,10 +30,7 @@ The **Knowledge base** is accessible from the **Main menu** in the top bar and g
 
 * **Email addresses**: Here you can [create a list of email addresses][4] that you use frequently so that they are accessible in most places you send emails. These addresses can for example be a group email address or people who are neither users nor registered as contacts in SuperOffice.
 
-<!-- Referenced links -->
-[1]: external-document.md
-[2]: faq/index.md
-[3]: reply-templates/index.md
-[4]: email-addresses.md
-
-<!-- Referenced images -->
+[1]: ./external-document
+[2]: ./faq/index
+[3]: ./reply-templates/index
+[4]: ./email-addresses

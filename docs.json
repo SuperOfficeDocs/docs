@@ -15909,6 +15909,270 @@
     {
       "source": "/en/marketing/utm/admin/index",
       "destination": "/en/marketing/utm/learn/index"
+    },
+    {
+      "source": "/en/request/learn/category/create",
+      "destination": "/en/request/admin/category/create"
+    },
+    {
+      "source": "/en/request/learn/category/delete",
+      "destination": "/en/request/admin/category/delete"
+    },
+    {
+      "source": "/en/admin/options/learn/custlang/external-categories",
+      "destination": "/en/request/admin/category/external-categories"
+    },
+    {
+      "source": "/en/request/learn/category/index",
+      "destination": "/en/request/admin/category/index"
+    },
+    {
+      "source": "/en/request/learn/priority/create",
+      "destination": "/en/request/admin/priority/create"
+    },
+    {
+      "source": "/en/request/learn/priority/delete",
+      "destination": "/en/request/admin/priority/delete"
+    },
+    {
+      "source": "/en/request/learn/priority/escalation-levels",
+      "destination": "/en/request/admin/priority/escalation-levels"
+    },
+    {
+      "source": "/en/request/learn/priority/index",
+      "destination": "/en/request/admin/priority/index"
+    },
+    {
+      "source": "/en/request/learn/status/create",
+      "destination": "/en/request/admin/status/create"
+    },
+    {
+      "source": "/en/request/learn/status/delete",
+      "destination": "/en/request/admin/status/delete"
+    },
+    {
+      "source": "/en/request/learn/status/index",
+      "destination": "/en/request/admin/status/index"
+    },
+    {
+      "source": "/en/request/learn/type/create",
+      "destination": "/en/request/admin/type/create"
+    },
+    {
+      "source": "/en/request/learn/type/delete",
+      "destination": "/en/request/admin/type/delete"
+    },
+    {
+      "source": "/en/request/learn/type/index",
+      "destination": "/en/request/admin/type/index"
+    },
+    {
+      "source": "/en/request/learn/admin/index",
+      "destination": "/en/request/admin/index"
+    },
+    {
+      "source": "/en/request/learn/next-in-queue",
+      "destination": "/en/request/admin/next-in-queue"
+    },
+    {
+      "source": "/en/request/learn/screen/system-templates",
+      "destination": "/en/request/admin/system-templates"
+    },
+    {
+      "source": "/en/request/overview",
+      "destination": "/en/request/dev/index"
+    },
+    {
+      "source": "/en/request/learn/howto/accept",
+      "destination": "/en/request/learn/accept"
+    },
+    {
+      "source": "/en/request/learn/howto/assign",
+      "destination": "/en/request/learn/assign"
+    },
+    {
+      "source": "/en/request/learn/howto/close",
+      "destination": "/en/request/learn/close"
+    },
+    {
+      "source": "/en/request/learn/howto/create",
+      "destination": "/en/request/learn/create"
+    },
+    {
+      "source": "/en/request/learn/howto/delete",
+      "destination": "/en/request/learn/delete"
+    },
+    {
+      "source": "/en/request/learn/howto/edit-message",
+      "destination": "/en/request/learn/edit-message"
+    },
+    {
+      "source": "/en/request/learn/howto/flag-message",
+      "destination": "/en/request/learn/flag-message"
+    },
+    {
+      "source": "/en/request/learn/howto/forward",
+      "destination": "/en/request/learn/forward"
+    },
+    {
+      "source": "/en/request/learn/screen/index",
+      "destination": "/en/request/learn/index"
+    },
+    {
+      "source": "/en/request/learn/screen/ticket-log",
+      "destination": "/en/request/learn/index"
+    },
+    {
+      "source": "/en/request/learn/howto/merge",
+      "destination": "/en/request/learn/merge"
+    },
+    {
+      "source": "/en/request/learn/howto/reply",
+      "destination": "/en/request/learn/reply"
+    },
+    {
+      "source": "/en/faq/learn/add-to-request",
+      "destination": "/en/request/learn/reply"
+    },
+    {
+      "source": "/en/request/learn/howto/split-message",
+      "destination": "/en/request/learn/split-message"
+    },
+    {
+      "source": "/en/request/learn/howto/split-request",
+      "destination": "/en/request/learn/split-request"
+    },
+    {
+      "source": "/en/request/learn/howto/transfer",
+      "destination": "/en/request/learn/transfer"
+    },
+    {
+      "source": "/en/faq/learn/create",
+      "destination": "/en/knowledge-base/learn/faq/create"
+    },
+    {
+      "source": "/en/faq/learn/delete",
+      "destination": "/en/knowledge-base/learn/faq/edit"
+    },
+    {
+      "source": "/en/faq/learn/edit",
+      "destination": "/en/knowledge-base/learn/faq/edit"
+    },
+    {
+      "source": "/en/faq/learn/view-entry",
+      "destination": "/en/knowledge-base/learn/faq/index"
+    },
+    {
+      "source": "/en/faq/learn/search-for",
+      "destination": "/en/knowledge-base/learn/faq/index"
+    },
+    {
+      "source": "/en/faq/learn/index",
+      "destination": "/en/knowledge-base/learn/faq/index"
+    },
+    {
+      "source": "/en/faq/learn/publish",
+      "destination": "/en/knowledge-base/learn/faq/publish"
+    },
+    {
+      "source": "/en/faq/learn/workflow",
+      "destination": "/en/knowledge-base/learn/faq/workflow"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/copy",
+      "destination": "/en/knowledge-base/learn/reply-templates/create"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/create",
+      "destination": "/en/knowledge-base/learn/reply-templates/create"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/delete",
+      "destination": "/en/knowledge-base/learn/reply-templates/edit"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/edit",
+      "destination": "/en/knowledge-base/learn/reply-templates/edit"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/find",
+      "destination": "/en/knowledge-base/learn/reply-templates/index"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/index",
+      "destination": "/en/knowledge-base/learn/reply-templates/index"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/new-language",
+      "destination": "/en/knowledge-base/learn/reply-templates/new-language"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/template-variables",
+      "destination": "/en/knowledge-base/learn/reply-templates/template-variables"
+    },
+    {
+      "source": "/en/email/service/learn/kb-aliases/index",
+      "destination": "/en/knowledge-base/learn/email-addresses"
+    },
+    {
+      "source": "/en/email/service/learn/kb-aliases/add-email-address",
+      "destination": "/en/knowledge-base/learn/email-addresses"
+    },
+    {
+      "source": "/en/request/learn/external-document",
+      "destination": "/en/knowledge-base/learn/external-document"
+    },
+    {
+      "source": "/en/request/learn/screen/knowledge-base",
+      "destination": "/en/knowledge-base/learn/index"
+    },
+    {
+      "source": "/en/email/service/learn/kb-aliases/manage-folders",
+      "destination": "/en/knowledge-base/learn/manage-folders"
+    },
+    {
+      "source": "/en/faq/learn/manage-folders",
+      "destination": "/en/knowledge-base/learn/manage-folders"
+    },
+    {
+      "source": "/en/request/reply-templates/learn/manage-folders",
+      "destination": "/en/knowledge-base/learn/manage-folders"
+    },
+    {
+      "source": "/en/custom-objects/learn/udef/add",
+      "destination": "/en/custom-objects/admin/add-udef"
+    },
+    {
+      "source": "/en/custom-objects/learn/extra-field/create",
+      "destination": "/en/custom-objects/admin/create-extra-field"
+    },
+    {
+      "source": "/en/custom-objects/learn/extra-table/create",
+      "destination": "/en/custom-objects/admin/create-extra-table"
+    },
+    {
+      "source": "/en/custom-objects/extra-field/index",
+      "destination": "/en/custom-objects/learn/extra-field"
+    },
+    {
+      "source": "/en/custom-objects/extra-table/index",
+      "destination": "/en/custom-objects/learn/extra-table"
+    },
+    {
+      "source": "/en/custom-objects/learn/extra-table/index",
+      "destination": "/en/custom-objects/learn/extra-table"
+    },
+    {
+      "source": "/en/custom-objects/learn/udef/index",
+      "destination": "/en/custom-objects/learn/udef"
+    },
+    {
+      "source": "/en/custom-objects/udef/index",
+      "destination": "/en/custom-objects/learn/udef"
+    },
+    {
+      "source": "/en/custom-objects/overview",
+      "destination": "/en/custom-objects/reference/index"
     }
   ]
 }

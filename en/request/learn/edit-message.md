@@ -31,5 +31,4 @@ Only users with the *general administrator* functional right can edit the proper
 
 1. Click **Save** when you are finished, or **Cancel** if you want to discard the changes. You can also delete the entire message by clicking **Delete** and then **OK**.
 
-<!-- Referenced links -->
-[1]: index.md#open
+[1]: ./index#open

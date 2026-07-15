@@ -41,7 +41,7 @@ Editing a reply template can mean one of two things:
 
 ## <a id="delete"></a>Delete reply template
 
-1. Follow steps 1–3 from **Edit reply template** to open the **Reply template properties** screen.
+1. Follow steps 1-3 from **Edit reply template** to open the **Reply template properties** screen.
 1. Click the **Delete** button at the bottom of the screen.
 1. Confirm the deletion when prompted. The reply template is deleted immediately.
 
@@ -50,8 +50,7 @@ Editing a reply template can mean one of two things:
 * [Create new language version of reply template][3]
 * [Copy reply templates][4]
 
-<!-- Referenced links -->
-[1]: ../../../request/learn/reply.md
-[2]: create.md
-[4]: create.md#copy
-[3]: new-language.md
+[1]: ../../../request/learn/reply
+[2]: ./create
+[4]: ./create#copy
+[3]: ./new-language

@@ -56,7 +56,6 @@ If a message contains two issues that should be handled separately, you can spli
 * [Split a requests][2]
 * [Merge requests][3]
 
-<!-- Referenced links -->
-[1]: index.md#open
-[2]: split-request.md
-[3]: merge.md
+[1]: ./index#open
+[2]: ./split-request
+[3]: ./merge

@@ -50,7 +50,4 @@ index: true
 
 * [How to set up Get next request in queue][1]
 
-<!-- Referenced links -->
-[1]: ../next-in-queue.md
-
-<!-- Referenced images -->
+[1]: ../next-in-queue
