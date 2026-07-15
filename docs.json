@@ -17909,6 +17909,42 @@
     {
       "source": "/en/admin/erp/learn/screen/erp-tab",
       "destination": "/en/erp/learn/index"
+    },
+    {
+      "source": "/en/admin/options/learn/custlang/update",
+      "destination": "/en/localization/admin/add-customer-language"
+    },
+    {
+      "source": "/en/admin/options/learn/time-zones/enable",
+      "destination": "/en/localization/admin/enable-time-zones"
+    },
+    {
+      "source": "/en/localization/admin/index",
+      "destination": "/en/localization/admin/enable-time-zones"
+    },
+    {
+      "source": "/en/admin/options/learn/time-zones/select",
+      "destination": "/en/localization/admin/select-time-zones"
+    },
+    {
+      "source": "/en/admin/options/learn/custlang/index",
+      "destination": "/en/localization/learn/customer-languages"
+    },
+    {
+      "source": "/en/globalization-and-localization/learn/time-zones",
+      "destination": "/en/localization/learn/time-zones"
+    },
+    {
+      "source": "/en/localization/learn/index",
+      "destination": "/en/localization/learn/time-zones"
+    },
+    {
+      "source": "/en/localization/index",
+      "destination": "/en/localization/learn/time-zones"
+    },
+    {
+      "source": "/en/globalization-and-localization/learn/translate-fields",
+      "destination": "/en/localization/learn/translate-fields"
     }
   ]
 }
