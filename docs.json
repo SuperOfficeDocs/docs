@@ -15769,6 +15769,146 @@
     {
       "source": "/en/sale/learn/delete",
       "destination": "/en/sale/learn/update"
+    },
+    {
+      "source": "/en/marketing/tracked-links/learn/add-tracked-link-to-msg",
+      "destination": "/en/marketing/editor/learn/add-tracked-link-to-msg"
+    },
+    {
+      "source": "/en/marketing/learn/editor",
+      "destination": "/en/marketing/editor/learn/index"
+    },
+    {
+      "source": "/en/marketing/forms/admin/index",
+      "destination": "/en/marketing/forms/admin/manage-fonts"
+    },
+    {
+      "source": "/en/marketing/forms/index",
+      "destination": "/en/marketing/forms/learn/index"
+    },
+    {
+      "source": "/en/marketing/forms/learn/examples",
+      "destination": "/en/marketing/forms/learn/index"
+    },
+    {
+      "source": "/en/marketing/forms/learn/view",
+      "destination": "/en/marketing/forms/learn/index"
+    },
+    {
+      "source": "/en/marketing/forms/learn/submissions/index",
+      "destination": "/en/marketing/forms/learn/index"
+    },
+    {
+      "source": "/en/marketing/forms/learn/submissions/process",
+      "destination": "/en/marketing/forms/learn/process-submissions"
+    },
+    {
+      "source": "/en/marketing/forms/learn/form-prefilled",
+      "destination": "/en/marketing/forms/learn/publish"
+    },
+    {
+      "source": "/de/marketing/forms/learn/recaptcha",
+      "destination": "/en/marketing/forms/learn/recaptcha"
+    },
+    {
+      "source": "/da/marketing/forms/learn/recaptcha",
+      "destination": "/en/marketing/forms/learn/recaptcha"
+    },
+    {
+      "source": "/no/marketing/forms/learn/recaptcha",
+      "destination": "/en/marketing/forms/learn/recaptcha"
+    },
+    {
+      "source": "/sv/marketing/forms/learn/recaptcha",
+      "destination": "/en/marketing/forms/learn/recaptcha"
+    },
+    {
+      "source": "/nl/marketing/forms/learn/recaptcha",
+      "destination": "/en/marketing/forms/learn/recaptcha"
+    },
+    {
+      "source": "/en/marketing/forms/recaptcha",
+      "destination": "/en/marketing/forms/learn/recaptcha"
+    },
+    {
+      "source": "/en/marketing/forms/learn/submissions/track",
+      "destination": "/en/marketing/forms/learn/view-statistics"
+    },
+    {
+      "source": "/en/marketing/learn/customize-for-mobile",
+      "destination": "/en/marketing/learn/best-practices"
+    },
+    {
+      "source": "/en/marketing/learn/screen/index",
+      "destination": "/en/marketing/learn/index"
+    },
+    {
+      "source": "/en/marketing/learn/work-with-messages-and-templates",
+      "destination": "/en/marketing/learn/message-templates"
+    },
+    {
+      "source": "/en/admin/lists/learn/add-items-to-mailing-domain",
+      "destination": "/en/marketing/mailing/admin/add-domain"
+    },
+    {
+      "source": "/en/marketing/mailing/learn/admin/define-settings-for-mailings",
+      "destination": "/en/marketing/mailing/admin/define-settings-for-mailings"
+    },
+    {
+      "source": "/en/marketing/mailing/learn/follow-up/index",
+      "destination": "/en/marketing/mailing/learn/index"
+    },
+    {
+      "source": "/en/marketing/mailing/learn/follow-up/view-statistics",
+      "destination": "/en/marketing/mailing/learn/view-statistics"
+    },
+    {
+      "source": "/en/marketing/mailing/learn/follow-up/manage-bounces",
+      "destination": "/en/marketing/recipients/learn/manage-bounces"
+    },
+    {
+      "source": "/en/service/sms/index",
+      "destination": "/en/marketing/sms/it/index"
+    },
+    {
+      "source": "/en/service/sms/cm",
+      "destination": "/en/marketing/sms/it/set-up"
+    },
+    {
+      "source": "/en/service/sms/compaya",
+      "destination": "/en/marketing/sms/it/set-up"
+    },
+    {
+      "source": "/en/service/sms/intelecom",
+      "destination": "/en/marketing/sms/it/set-up"
+    },
+    {
+      "source": "/en/service/sms/linkmobility",
+      "destination": "/en/marketing/sms/it/set-up"
+    },
+    {
+      "source": "/en/service/sms/smsteknik",
+      "destination": "/en/marketing/sms/it/set-up"
+    },
+    {
+      "source": "/en/service/sms/twilio",
+      "destination": "/en/marketing/sms/it/set-up"
+    },
+    {
+      "source": "/en/service/sms/txtlocal",
+      "destination": "/en/marketing/sms/it/set-up"
+    },
+    {
+      "source": "/en/marketing/tracked-links/learn/examples",
+      "destination": "/en/marketing/tracked-links/learn/index"
+    },
+    {
+      "source": "/en/marketing/utm/index",
+      "destination": "/en/marketing/utm/learn/index"
+    },
+    {
+      "source": "/en/marketing/utm/admin/index",
+      "destination": "/en/marketing/utm/learn/index"
     }
   ]
 }

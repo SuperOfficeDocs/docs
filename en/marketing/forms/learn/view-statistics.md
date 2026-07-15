@@ -51,12 +51,10 @@ To work more efficient, you can filter the records to show one or more form stat
 
 Having a [dashboard for form submissions][3] simplifies the process of measuring and visualizing data. With this dashboard, you can easily track performance, identify trends, and monitor productivity.
 
-<!-- Referenced links -->
-[1]: process-submissions.md
-[2]: ../../mailing/learn/view-statistics.md
-[3]: ../../../dashboard/learn/show-marketing.md
+[1]: ./process-submissions
+[2]: ../../mailing/learn/view-statistics
+[3]: ../../../dashboard/learn/show-marketing
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/form-submissions-filter.png
 [img3]: ../../../../media/loc/en/marketing/view-form-screen.png
 [img2]: ../../../../media/loc/en/marketing/form-report-dx.png

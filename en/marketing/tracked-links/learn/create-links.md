@@ -38,6 +38,5 @@ You can also create new links while editing the content.
 
 A small dot on the link action tabs indicates which actions are active. Multiple link actions can be active for a link.
 
-<!-- Referenced links -->
-[1]: define-link-actions.md
-[2]: ../../learn/create-folder.md
+[1]: ./define-link-actions
+[2]: ../../learn/create-folder

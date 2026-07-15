@@ -37,9 +37,9 @@ Use the cogwheel (<i class="ph ph-gear" aria-hidden="true"></i>) in the list's h
 
 | Status | Description |
 |---|---|
-| Active | Participant is active in the flow​. |
-| Finished | Participant finished all steps in the flow​. |
-| Finished with success | Participant finished the flow and fulfilled the success criterion. Included in the flows success rate​. |
+| Active | Participant is active in the flow. |
+| Finished | Participant finished all steps in the flow. |
+| Finished with success | Participant finished the flow and fulfilled the success criterion. Included in the flows success rate. |
 | Dropped out | Participant dropped out, always with a specified drop-out reason. |
 | Cancelled | Participant will not complete the flow because an admin ended the flow. |
 
@@ -54,15 +54,15 @@ For all step types:
 1. Is the contact marked as a former employee?
 1. Is the contact added to the exclusion list?
 
-​Additional for email step:​
+Additional for email step:
 
-1. Is their consent valid?​
+1. Is their consent valid?
 1. Is the contact subscribed to the flow subscription type?
-1. Does contact have registered email address?​
-1. Is the email address already active within the flow?​
-1. Is the email address unblocked?​
+1. Does contact have registered email address?
+1. Is the email address already active within the flow?
+1. Is the email address unblocked?
 
-Additional for SMS step:​
+Additional for SMS step:
 
 1. Does the contact have a registered mobile phone for SMS?
 
@@ -82,8 +82,5 @@ In a split, participants follow the first (leftmost) branch where they meet the 
 * Add to flow: Indicates that this contact is proposed for enrollment in another flow.
 * Remove from flow: Removes all record of the contact's participation in the current flow.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/marketing/flow-participants.png
 [img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png

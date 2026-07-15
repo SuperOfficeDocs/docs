@@ -38,5 +38,3 @@ Do one of the following:
 * Open an existing folder before you click **Add folder**. You may have to select the **All ...** tab first.
 
 * First, click **Add folder** and then select a parent folder from the **Create as subfolder of** list.
-
-<!-- Referenced images -->

@@ -52,12 +52,10 @@ If you later decide you want to track these links also, select the **Track all l
 * [Manage subscriptions][3]
 * [Unsubscribe][4]
 
-<!-- Referenced links -->
-[1]: add-link-to-display-message-in-browser.md
-[4]: add-unsubscribe-link.md
-[3]: ../../recipients/learn/manage-email-subscriptions.md
-[5]: ../../tracked-links/learn/create-links.md
-[6]: ../../tracked-links/learn/define-link-actions.md
+[1]: ./add-link-to-display-message-in-browser
+[4]: ./add-unsubscribe-link
+[3]: ../../recipients/learn/manage-email-subscriptions
+[5]: ../../tracked-links/learn/create-links
+[6]: ../../tracked-links/learn/define-link-actions
 
-<!-- Referenced images -->
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png

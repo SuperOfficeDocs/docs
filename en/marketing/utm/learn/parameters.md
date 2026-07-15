@@ -61,9 +61,8 @@ To learn how these parameters are used to measure lead sources in SuperOffice CR
 * [Google Analytics Campaign URL Builder][4]
 * [UTM Builder][5]
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: ../admin/set-up.md
-[3]: ../../forms/learn/publish.md
+[1]: ./index
+[2]: ../admin/set-up
+[3]: ../../forms/learn/publish
 [4]: https://ga-dev-tools.google/campaign-url-builder
 [5]: https://utmbuilder.net
