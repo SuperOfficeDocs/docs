@@ -413,7 +413,172 @@
               {
                 "item": "Developer Portal",
                 "icon": "laptop-code",
-                "groups": []
+                "groups": [
+                  {
+                    "group": "Developer portal",
+                    "pages": [
+                      "en/developer-portal/about",
+                      "en/developer-portal/widgets/index",
+                      {
+                        "group": "Getting started",
+                        "pages": [
+                          "en/developer-portal/getting-started/get-access-to-sod",
+                          "en/developer-portal/getting-started/quickstart",
+                          "en/developer-portal/getting-started/app-envir",
+                          "en/developer-portal/getting-started/user-contexts",
+                          "en/developer-portal/getting-started/what-api-to-use"
+                        ]
+                      },
+                      {
+                        "group": "Create a new app",
+                        "pages": [
+                          "en/developer-portal/create-app/index",
+                          {
+                            "group": "Register the app",
+                            "pages": [
+                              "en/developer-portal/create-app/web-app",
+                              "en/developer-portal/create-app/native-app",
+                              "en/developer-portal/create-app/server-to-server-app",
+                              "en/developer-portal/create-app/sync-app",
+                              "en/developer-portal/create-app/empty-app"
+                            ]
+                          },
+                          "en/developer-portal/create-app/versioning",
+                          {
+                            "group": "Configuration",
+                            "pages": [
+                              "en/developer-portal/create-app/config/find-clientid",
+                              "en/developer-portal/create-app/config/get-client-secret",
+                              "en/developer-portal/create-app/config/cors-and-redirection-urls",
+                              "en/developer-portal/create-app/config/new-certificate",
+                              "en/developer-portal/create-app/config/redirects",
+                              "en/developer-portal/create-app/config/update-endpoints",
+                              "en/developer-portal/create-app/config/update-app-config",
+                              "en/developer-portal/create-app/config/app-config"
+                            ]
+                          },
+                          "en/developer-portal/create-app/request-to-publish",
+                          "en/developer-portal/create-app/message-center",
+                          "en/developer-portal/create-app/helper-application"
+                        ]
+                      },
+                      {
+                        "group": "Custom app",
+                        "pages": [
+                          "en/developer-portal/custom-app/checklist",
+                          "en/developer-portal/custom-app/validate",
+                          "en/developer-portal/custom-app/activate"
+                        ]
+                      },
+                      {
+                        "group": "Standard app",
+                        "pages": [
+                          "en/developer-portal/standard-app/index",
+                          {
+                            "group": "Requirements",
+                            "pages": [
+                              "en/developer-portal/standard-app/requirements/business",
+                              "en/developer-portal/standard-app/requirements/design",
+                              "en/developer-portal/standard-app/requirements/localization",
+                              "en/developer-portal/standard-app/requirements/marketing",
+                              "en/developer-portal/standard-app/requirements/partner-brand-guidelines",
+                              "en/developer-portal/standard-app/requirements/security",
+                              "en/developer-portal/standard-app/requirements/technical"
+                            ]
+                          },
+                          {
+                            "group": "Certification",
+                            "pages": [
+                              "en/developer-portal/standard-app/certification/initial-security-eval",
+                              "en/developer-portal/standard-app/certification/checklist",
+                              "en/developer-portal/standard-app/certification/certify-app",
+                              "en/developer-portal/standard-app/certification/watchcom-testimonials"
+                            ]
+                          },
+                          {
+                            "group": "App store",
+                            "pages": [
+                              "en/developer-portal/standard-app/app-store/app-store-info",
+                              "en/developer-portal/standard-app/app-store/update-partner-profile",
+                              "en/developer-portal/standard-app/app-store/update-app-page",
+                              "en/developer-portal/standard-app/app-store/seo",
+                              "en/developer-portal/standard-app/app-store/prices-and-terms",
+                              "en/developer-portal/standard-app/app-store/user-guide",
+                              "en/developer-portal/standard-app/app-store/images-and-videos",
+                              "en/developer-portal/standard-app/app-store/app-settings"
+                            ]
+                          },
+                          "en/developer-portal/standard-app/publish"
+                        ]
+                      },
+                      {
+                        "group": "Best practices",
+                        "pages": [
+                          {
+                            "group": "Tenant status",
+                            "pages": [
+                              "en/developer-portal/best-practices/tenant-status/check-status",
+                              "en/developer-portal/best-practices/tenant-status/get-notifications"
+                            ]
+                          },
+                          "en/developer-portal/best-practices/error-emails",
+                          "en/developer-portal/best-practices/system-messages"
+                        ]
+                      },
+                      {
+                        "group": "Partners and users",
+                        "pages": [
+                          "en/developer-portal/partner/update-profile",
+                          "en/developer-portal/partner/update-partner-settings",
+                          "en/developer-portal/partner/manage-technical-contacts",
+                          "en/developer-portal/partner/partner-settings",
+                          "en/developer-portal/partner/add-user",
+                          "en/developer-portal/partner/edit-user",
+                          "en/developer-portal/partner/remove-user",
+                          "en/developer-portal/partner/user-settings",
+                          "en/developer-portal/partner/manage-permissions"
+                        ]
+                      },
+                      {
+                        "group": "Provisioning",
+                        "pages": [
+                          "en/developer-portal/provisioning/consent",
+                          "en/developer-portal/provisioning/get-consent",
+                          "en/developer-portal/provisioning/revoke",
+                          "en/developer-portal/provisioning/update-consent-text"
+                        ]
+                      },
+                      {
+                        "group": "Tenant management",
+                        "pages": [
+                          "en/developer-portal/tenants/info",
+                          "en/developer-portal/tenants/authorization",
+                          "en/developer-portal/tenants/get"
+                        ]
+                      },
+                      {
+                        "group": "Analytics",
+                        "pages": [
+                          "en/developer-portal/analytics/logs",
+                          "en/developer-portal/analytics/metered-services",
+                          "en/developer-portal/analytics/failures",
+                          "en/developer-portal/analytics/metrics-performance"
+                        ]
+                      },
+                      {
+                        "group": "FAQ",
+                        "pages": [
+                          "en/developer-portal/faq/format-text",
+                          "en/developer-portal/faq/update-contact-person",
+                          "en/developer-portal/faq/update-app",
+                          "en/developer-portal/faq/turn-off-mirroring",
+                          "en/developer-portal/faq/run-website-on-iis-localhost",
+                          "en/developer-portal/faq/unable-to-approve-app"
+                        ]
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "item": "API",
