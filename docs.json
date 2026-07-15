@@ -70,27 +70,2556 @@
           {
             "tab": "Guides",
             "icon": "book-open",
-            "pages": []
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "en/learn/index"
+                ]
+              },
+              {
+                "group": "Introduction",
+                "pages": [
+                  "en/learn/intro"
+                ]
+              },
+              {
+                "group": "Get started",
+                "pages": [
+                  "en/learn/getting-started/index",
+                  {
+                    "group": "The layout elements",
+                    "pages": [
+                      "en/learn/getting-started/main-screen/index",
+                      "en/learn/getting-started/main-screen/navigator",
+                      "en/learn/getting-started/main-screen/buttons-in-menu-bar",
+                      "en/learn/getting-started/main-screen/side-panel",
+                      "en/learn/getting-started/main-screen/in-app-help"
+                    ]
+                  },
+                  "en/learn/getting-started/login",
+                  "en/learn/getting-started/preferences",
+                  "en/learn/getting-started/connect-your-accounts",
+                  "en/learn/getting-started/edit-email-signature",
+                  "en/learn/getting-started/change-language"
+                ]
+              },
+              {
+                "group": "Learn the basics",
+                "pages": [
+                  "en/learn/basics/index",
+                  "en/learn/basics/notifications",
+                  "en/learn/basics/fav",
+                  "en/learn/basics/history",
+                  "en/learn/basics/links",
+                  "en/learn/basics/notes",
+                  "en/learn/basics/print",
+                  "en/learn/basics/duplicates",
+                  "en/learn/basics/deleting-elements",
+                  "en/learn/basics/bulk-update",
+                  {
+                    "group": "Work with section tabs (archives)",
+                    "pages": [
+                      "en/learn/section-tabs/index",
+                      "en/learn/section-tabs/activities-tab",
+                      "en/learn/section-tabs/contacts-tab",
+                      "en/learn/section-tabs/relations-tab",
+                      "en/learn/section-tabs/sales-tab",
+                      "en/learn/section-tabs/projects-tab",
+                      "en/learn/section-tabs/requests-tab",
+                      "en/learn/section-tabs/configure-columns",
+                      "en/learn/section-tabs/filter",
+                      "en/learn/section-tabs/group",
+                      "en/learn/section-tabs/export-archives",
+                      "en/learn/section-tabs/send-email"
+                    ]
+                  },
+                  "en/learn/basics/activity",
+                  "en/learn/basics/relations",
+                  "en/learn/basics/external-applications-and-url-addresses",
+                  "en/learn/basics/creating-shortcuts-to-entries-in-crm"
+                ]
+              },
+              {
+                "group": "Search options",
+                "pages": [
+                  "en/search-options/learn/index",
+                  "en/search-options/learn/find-screen",
+                  "en/search-options/learn/search-criteria",
+                  "en/search-options/learn/freetext-search",
+                  "en/search-options/learn/in-navigator",
+                  "en/search-options/learn/in-dialogs",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/search-options/admin/configure-free-text-search",
+                      "en/search-options/admin/stopwords"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Dashboard",
+                "pages": [
+                  "en/dashboard/learn/index",
+                  "en/dashboard/learn/create",
+                  "en/dashboard/learn/update",
+                  "en/dashboard/learn/working-with-tiles",
+                  "en/dashboard/learn/show-leads",
+                  "en/dashboard/learn/show-sales-targets",
+                  "en/dashboard/learn/show-marketing",
+                  "en/dashboard/learn/show-requests"
+                ]
+              },
+              {
+                "group": "Company",
+                "pages": [
+                  "en/company/index",
+                  "en/company/learn/index",
+                  "en/company/learn/create",
+                  "en/company/learn/edit",
+                  "en/company/learn/copy",
+                  "en/company/learn/merge-companies",
+                  "en/company/learn/delete",
+                  "en/company/learn/address-formats",
+                  "en/company/dev/index"
+                ]
+              },
+              {
+                "group": "Contact",
+                "pages": [
+                  "en/contact/index",
+                  "en/contact/learn/index",
+                  "en/contact/learn/create",
+                  "en/contact/learn/edit",
+                  "en/contact/learn/move",
+                  "en/contact/learn/merge-contacts",
+                  "en/contact/learn/delete",
+                  "en/contact/learn/send-email",
+                  "en/contact/learn/dial",
+                  "en/contact/dev/index"
+                ]
+              },
+              {
+                "group": "Diary",
+                "pages": [
+                  "en/diary/index",
+                  "en/diary/learn/index",
+                  "en/diary/learn/follow-ups",
+                  "en/diary/learn/video-meetings",
+                  "en/diary/learn/create-follow-up",
+                  "en/diary/learn/edit-follow-up",
+                  "en/diary/learn/move-follow-up",
+                  "en/diary/learn/change-completed-status",
+                  "en/diary/learn/other-diaries",
+                  "en/diary/learn/group-view",
+                  "en/diary/learn/follow-up-assign",
+                  "en/diary/learn/set-alarm",
+                  "en/diary/learn/send-as-email",
+                  {
+                    "group": "Recurrence",
+                    "pages": [
+                      "en/diary/learn/recurrence/index",
+                      "en/diary/learn/recurrence/create",
+                      "en/diary/learn/recurrence/stop"
+                    ]
+                  },
+                  {
+                    "group": "Invitations",
+                    "pages": [
+                      "en/diary/learn/invitation/index",
+                      "en/diary/learn/invitation/add-attendee",
+                      "en/diary/learn/invitation/accept-decline"
+                    ]
+                  },
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/diary/admin/add-follow-up-type",
+                      "en/diary/admin/add-resource"
+                    ]
+                  },
+                  "en/diary/dev/index"
+                ]
+              },
+              {
+                "group": "Document",
+                "pages": [
+                  "en/document/index",
+                  "en/document/learn/index",
+                  "en/document/library/learn/index",
+                  {
+                    "group": "Work with documents",
+                    "pages": [
+                      "en/document/learn/create",
+                      "en/document/learn/lock",
+                      "en/document/learn/edit",
+                      "en/document/learn/send-as-email"
+                    ]
+                  },
+                  {
+                    "group": "Document templates",
+                    "pages": [
+                      "en/document/templates/learn/index",
+                      "en/document/templates/learn/document-types",
+                      {
+                        "group": "Template variables",
+                        "pages": [
+                          {
+                            "group": "Reference",
+                            "pages": [
+                              "en/document/templates/variables/from-company-card",
+                              "en/document/templates/variables/from-senders-company-card",
+                              "en/document/templates/variables/for-selected-contact",
+                              "en/document/templates/variables/for-sender-contact-dialog",
+                              "en/document/templates/variables/from-doc-dialog-or-system",
+                              "en/document/templates/variables/for-appointments",
+                              "en/document/templates/variables/for-ical",
+                              "en/document/templates/variables/for-int-address",
+                              "en/document/templates/variables/for-mail-gateway",
+                              "en/document/templates/variables/for-pocket",
+                              "en/document/templates/variables/from-project-card",
+                              "en/document/templates/variables/for-quote-alternative",
+                              "en/document/templates/variables/for-quote-info",
+                              "en/document/templates/variables/for-quote-line",
+                              "en/document/templates/variables/for-quote-line-with-subscription",
+                              "en/document/templates/variables/for-request",
+                              "en/document/templates/variables/for-sales",
+                              "en/document/templates/variables/for-selections",
+                              "en/document/templates/variables/for-service",
+                              "en/document/templates/variables/for-web-app",
+                              "en/document/templates/variables/misc"
+                            ]
+                          },
+                          "en/document/templates/learn/troubleshooting"
+                        ]
+                      },
+                      {
+                        "group": "Merge fields (quote templates)",
+                        "pages": [
+                          {
+                            "group": "Reference",
+                            "pages": [
+                              "en/document/templates/merge-fields/index",
+                              "en/document/templates/merge-fields/quote",
+                              "en/document/templates/merge-fields/alternative",
+                              "en/document/templates/merge-fields/group",
+                              "en/document/templates/merge-fields/line"
+                            ]
+                          },
+                          "en/document/templates/admin/tutorial"
+                        ]
+                      },
+                      "en/document/templates/learn/create",
+                      "en/document/templates/admin/link-template",
+                      "en/document/templates/admin/update-template",
+                      "en/document/templates/admin/document-template-defaults"
+                    ]
+                  },
+                  {
+                    "group": "Technical reference",
+                    "pages": [
+                      "en/document/library/it/odf"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Email",
+                "pages": [
+                  "en/email/index",
+                  "en/email/learn/index",
+                  "en/email/learn/change-default-mail-client",
+                  {
+                    "group": "Inbox",
+                    "pages": [
+                      "en/email/inbox/learn/index",
+                      "en/email/inbox/learn/setup",
+                      "en/email/inbox/learn/preview",
+                      "en/email/inbox/learn/compose",
+                      "en/email/inbox/learn/manage-senders",
+                      "en/email/inbox/learn/invitations",
+                      "en/email/inbox/learn/archive",
+                      "en/email/inbox/learn/create-task",
+                      "en/email/inbox/learn/create-request"
+                    ]
+                  },
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/email/admin/add-email-template",
+                      {
+                        "group": "Mailbox administration",
+                        "pages": [
+                          "en/email/admin/mailbox/index",
+                          "en/email/admin/mailbox/create-mailbox",
+                          "en/email/admin/mailbox/create-sms-mailbox",
+                          "en/email/admin/mailbox/create-email-filter",
+                          "en/email/admin/mailbox/delete-mailbox"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Sale",
+                "pages": [
+                  "en/sale/index",
+                  "en/sale/learn/index",
+                  "en/sale/learn/create",
+                  "en/sale/learn/update",
+                  "en/sale/learn/sales-guides",
+                  "en/sale/learn/tutorial",
+                  {
+                    "group": "Stakeholders",
+                    "pages": [
+                      "en/sale/learn/stakeholders/create",
+                      "en/sale/learn/stakeholders/edit"
+                    ]
+                  },
+                  "en/sale/learn/forecasting",
+                  {
+                    "group": "Sales targets",
+                    "pages": [
+                      "en/sale/learn/sales-targets/index",
+                      "en/sale/learn/sales-targets/create",
+                      "en/sale/learn/sales-targets/target-types"
+                    ]
+                  },
+                  {
+                    "group": "Quote",
+                    "pages": [
+                      "en/sale/learn/quote/index",
+                      "en/sale/learn/quote/create",
+                      "en/sale/learn/quote/add-alternative",
+                      "en/sale/learn/quote/create-quote-document",
+                      "en/sale/learn/quote/send",
+                      "en/sale/learn/quote/place-order"
+                    ]
+                  },
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/sale/admin/index",
+                      "en/sale/admin/sale-stage",
+                      "en/sale/admin/sale-type",
+                      "en/sale/admin/create-sales-guide",
+                      "en/sale/admin/edit-sales-guide",
+                      "en/sale/admin/add-currency",
+                      {
+                        "group": "Quote",
+                        "pages": [
+                          "en/sale/admin/quote/price-list-and-products",
+                          "en/sale/admin/quote/configure-product-fields",
+                          "en/sale/admin/quote/set-up-quote-connector"
+                        ]
+                      }
+                    ]
+                  },
+                  "en/sale/dev/index"
+                ]
+              },
+              {
+                "group": "Project",
+                "pages": [
+                  "en/project/index",
+                  "en/project/learn/index",
+                  "en/project/learn/create",
+                  "en/project/learn/add-image",
+                  "en/project/learn/edit",
+                  "en/project/learn/merge-projects",
+                  "en/project/learn/delete",
+                  {
+                    "group": "Project members",
+                    "pages": [
+                      "en/project/learn/project-members/index",
+                      "en/project/learn/project-members/add",
+                      "en/project/learn/project-members/edit",
+                      "en/project/learn/project-members/invite-to-meeting",
+                      "en/project/learn/project-members/send-email-to",
+                      "en/project/learn/project-members/create-mailing"
+                    ]
+                  },
+                  "en/project/learn/project-guides",
+                  "en/project/learn/tutorial",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/project/admin/index",
+                      "en/project/admin/project-status",
+                      "en/project/admin/project-type",
+                      "en/project/admin/create-project-guide",
+                      "en/project/admin/edit-project-guide"
+                    ]
+                  },
+                  "en/project/dev/index"
+                ]
+              },
+              {
+                "group": "Requests",
+                "pages": [
+                  "en/request/index",
+                  "en/request/learn/index",
+                  "en/request/learn/handle-request-ai",
+                  "en/request/learn/find",
+                  "en/request/learn/create",
+                  "en/request/learn/edit-message",
+                  "en/request/learn/assign",
+                  "en/request/learn/spam",
+                  "en/request/learn/accept",
+                  "en/request/learn/transfer",
+                  "en/request/learn/forward",
+                  "en/request/learn/reply",
+                  "en/request/learn/request-relations",
+                  "en/request/learn/tags",
+                  "en/request/learn/flag-message",
+                  "en/request/learn/split-request",
+                  "en/request/learn/merge",
+                  "en/request/learn/split-message",
+                  "en/request/learn/close",
+                  "en/request/learn/delete",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/request/admin/index",
+                      {
+                        "group": "Request types",
+                        "pages": [
+                          "en/request/admin/type/index",
+                          "en/request/admin/type/create",
+                          "en/request/admin/type/delete"
+                        ]
+                      },
+                      "en/request/admin/relation-rules",
+                      {
+                        "group": "Categories",
+                        "pages": [
+                          "en/request/admin/category/index",
+                          "en/request/admin/category/create",
+                          "en/request/admin/category/delete",
+                          "en/request/admin/category/external-categories"
+                        ]
+                      },
+                      {
+                        "group": "Priorities",
+                        "pages": [
+                          "en/request/admin/priority/index",
+                          "en/request/admin/priority/create",
+                          "en/request/admin/priority/delete",
+                          "en/request/admin/priority/escalation-levels"
+                        ]
+                      },
+                      {
+                        "group": "Request status",
+                        "pages": [
+                          "en/request/admin/status/index",
+                          "en/request/admin/status/create",
+                          "en/request/admin/status/delete"
+                        ]
+                      },
+                      "en/request/admin/next-in-queue",
+                      "en/request/admin/system-templates"
+                    ]
+                  },
+                  "en/request/dev/index"
+                ]
+              },
+              {
+                "group": "Custom objects",
+                "pages": [
+                  "en/custom-objects/learn/index",
+                  "en/custom-objects/learn/more-tab",
+                  {
+                    "group": "User-defined fields",
+                    "pages": [
+                      "en/custom-objects/learn/udef",
+                      "en/custom-objects/admin/add-udef",
+                      "en/custom-objects/admin/edit-udef",
+                      "en/custom-objects/admin/edit-udef-layout"
+                    ]
+                  },
+                  {
+                    "group": "Extra tables",
+                    "pages": [
+                      "en/custom-objects/learn/extra-table",
+                      "en/custom-objects/admin/create-extra-table"
+                    ]
+                  },
+                  {
+                    "group": "Extra fields",
+                    "pages": [
+                      "en/custom-objects/learn/extra-field",
+                      "en/custom-objects/admin/create-extra-field",
+                      "en/custom-objects/admin/show-extra-field-on-request-details"
+                    ]
+                  },
+                  "en/custom-objects/reference/index"
+                ]
+              },
+              {
+                "group": "Selection",
+                "pages": [
+                  "en/search-options/selection/learn/index",
+                  "en/search-options/selection/learn/create",
+                  "en/search-options/selection/learn/update",
+                  "en/search-options/selection/learn/combine",
+                  "en/search-options/selection/learn/add-remove-members-static",
+                  "en/search-options/selection/learn/copy-members-to",
+                  "en/search-options/selection/learn/board-view",
+                  {
+                    "group": "Perform tasks using selection",
+                    "pages": [
+                      "en/search-options/selection/learn/howto/index",
+                      "en/search-options/selection/learn/howto/create-mailings",
+                      "en/search-options/selection/learn/howto/send-email",
+                      "en/search-options/selection/learn/howto/generate-follow-ups",
+                      "en/search-options/selection/learn/howto/display-as-charts",
+                      "en/search-options/selection/learn/howto/print-labels",
+                      "en/search-options/selection/learn/howto/print",
+                      "en/search-options/selection/learn/howto/export"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Chat",
+                "pages": [
+                  "en/chat/learn/index",
+                  "en/chat/learn/statistics",
+                  "en/chat/learn/respond",
+                  "en/chat/learn/link-to-person",
+                  "en/chat/learn/create-request",
+                  "en/chat/learn/transfer-to-agent",
+                  "en/chat/learn/as-customer",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/chat/admin/index",
+                      "en/chat/admin/channel-create",
+                      "en/chat/admin/add-javascript"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Marketing",
+                "pages": [
+                  "en/marketing/learn/index",
+                  "en/marketing/learn/create-folder",
+                  "en/marketing/learn/add-images",
+                  "en/marketing/learn/message-templates",
+                  "en/marketing/learn/best-practices",
+                  {
+                    "group": "Mailings",
+                    "pages": [
+                      "en/marketing/mailing/learn/index",
+                      {
+                        "group": "Create new mailing",
+                        "pages": [
+                          "en/marketing/mailing/learn/create/index",
+                          "en/marketing/mailing/learn/create/tutorial-email-mailing",
+                          "en/marketing/mailing/learn/create/tutorial-sms-mailing",
+                          "en/marketing/mailing/learn/create/tutorial-document-mailing",
+                          "en/marketing/mailing/learn/create/tutorial-form-mailing",
+                          "en/marketing/mailing/learn/create/send-test-email"
+                        ]
+                      },
+                      "en/marketing/mailing/learn/view-statistics",
+                      "en/marketing/mailing/learn/resend",
+                      "en/marketing/mailing/admin/define-settings-for-mailings",
+                      "en/marketing/mailing/admin/add-domain"
+                    ]
+                  },
+                  {
+                    "group": "Drag and drop editor",
+                    "pages": [
+                      "en/marketing/editor/learn/index",
+                      "en/marketing/editor/learn/add-content",
+                      "en/marketing/editor/learn/edit-paragraph",
+                      "en/marketing/editor/learn/insert-images-in-message",
+                      "en/marketing/editor/learn/add-merge-tag",
+                      "en/marketing/editor/learn/add-link-to-display-message-in-browser",
+                      "en/marketing/editor/learn/add-unsubscribe-link",
+                      "en/marketing/editor/learn/add-tracked-link-to-msg"
+                    ]
+                  },
+                  {
+                    "group": "Recipients (target group)",
+                    "pages": [
+                      "en/marketing/recipients/learn/index",
+                      "en/marketing/recipients/learn/manage-email-subscriptions",
+                      "en/marketing/recipients/learn/look-at-recipient-list",
+                      "en/marketing/recipients/learn/manage-bounces",
+                      "en/marketing/recipients/learn/spam-complaints"
+                    ]
+                  },
+                  {
+                    "group": "Tracked links",
+                    "pages": [
+                      "en/marketing/tracked-links/learn/index",
+                      "en/marketing/tracked-links/learn/create-links",
+                      "en/marketing/tracked-links/learn/define-link-actions",
+                      "en/marketing/tracked-links/learn/add-google-analytics-tag",
+                      "en/marketing/tracked-links/learn/explore-clicks",
+                      "en/marketing/tracked-links/learn/reset-counter",
+                      "en/marketing/tracked-links/learn/ga-tutorial"
+                    ]
+                  },
+                  {
+                    "group": "Forms",
+                    "pages": [
+                      "en/marketing/forms/learn/index",
+                      "en/marketing/forms/learn/create",
+                      "en/marketing/forms/learn/field-options",
+                      "en/marketing/forms/learn/recaptcha",
+                      "en/marketing/forms/learn/define-form-actions",
+                      "en/marketing/forms/learn/form-templates",
+                      "en/marketing/forms/learn/publish",
+                      "en/marketing/forms/learn/view-statistics",
+                      "en/marketing/forms/learn/process-submissions",
+                      "en/marketing/forms/learn/tutorial-contact-me",
+                      "en/marketing/forms/learn/tutorial-sign-up",
+                      "en/marketing/forms/admin/manage-fonts",
+                      "en/marketing/forms/admin/form-field-restrictions"
+                    ]
+                  },
+                  {
+                    "group": "Flows",
+                    "pages": [
+                      "en/marketing/flows/learn/index",
+                      "en/marketing/flows/learn/create",
+                      "en/marketing/flows/learn/update",
+                      "en/marketing/flows/learn/split",
+                      "en/marketing/flows/learn/define-flow-actions",
+                      "en/marketing/flows/learn/content",
+                      "en/marketing/flows/learn/step-settings",
+                      "en/marketing/flows/learn/run-pause-end",
+                      "en/marketing/flows/learn/participants",
+                      "en/marketing/flows/learn/view-statistics"
+                    ]
+                  },
+                  {
+                    "group": "SMS",
+                    "pages": [
+                      "en/marketing/sms/it/index",
+                      "en/marketing/sms/it/set-up"
+                    ]
+                  },
+                  {
+                    "group": "Conversion tracking",
+                    "pages": [
+                      "en/marketing/utm/learn/index",
+                      "en/marketing/utm/learn/parameters",
+                      {
+                        "group": "For administrators",
+                        "pages": [
+                          "en/marketing/utm/admin/set-up"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Lead management",
+                "pages": [
+                  "en/lead/learn/index",
+                  "en/lead/learn/work-with-leads",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/lead/admin/index",
+                      "en/lead/admin/add-company-category",
+                      "en/lead/admin/add-lead-status",
+                      "en/lead/admin/category-automation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Mobile CRM",
+                "pages": []
+              },
+              {
+                "group": "Knowledge base",
+                "pages": [
+                  "en/knowledge-base/learn/index",
+                  "en/knowledge-base/learn/manage-folders",
+                  {
+                    "group": "Reply templates",
+                    "pages": [
+                      "en/knowledge-base/learn/reply-templates/index",
+                      "en/knowledge-base/learn/reply-templates/create",
+                      "en/knowledge-base/learn/reply-templates/new-language",
+                      "en/knowledge-base/learn/reply-templates/edit",
+                      "en/knowledge-base/learn/reply-templates/template-variables"
+                    ]
+                  },
+                  {
+                    "group": "FAQ",
+                    "pages": [
+                      "en/knowledge-base/learn/faq/index",
+                      "en/knowledge-base/learn/faq/create",
+                      "en/knowledge-base/learn/faq/edit",
+                      "en/knowledge-base/learn/faq/publish",
+                      "en/knowledge-base/learn/faq/workflow"
+                    ]
+                  },
+                  "en/knowledge-base/learn/email-addresses",
+                  "en/knowledge-base/learn/external-document"
+                ]
+              },
+              {
+                "group": "Privacy settings and GDPR",
+                "pages": [
+                  "en/security/privacy/learn/index",
+                  "en/security/privacy/learn/edit-legal-base",
+                  "en/security/privacy/learn/send-privacy-confirmation-email",
+                  "en/security/privacy/learn/generate-personal-data-report",
+                  "en/security/privacy/learn/mass-delete",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/security/privacy/admin/index",
+                      "en/security/privacy/admin/add-purpose",
+                      "en/security/privacy/admin/add-legal-base",
+                      "en/security/privacy/admin/add-source",
+                      "en/security/privacy/admin/edit-privacy-confirmation-email"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "AI services",
+                "pages": [
+                  "en/ai/learn/index",
+                  "en/ai/learn/text-analysis",
+                  "en/ai/learn/categorization",
+                  "en/ai/learn/copilot",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/ai/admin/set-up-categorization"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "SAINT (Sales intelligence)",
+                "pages": [
+                  "en/saint/learn/index",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/saint/admin/index",
+                      "en/saint/admin/set-up",
+                      "en/saint/admin/update",
+                      "en/saint/admin/counter-settings",
+                      "en/saint/admin/sale-amount-class"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "ERP",
+                "pages": [
+                  "en/erp/learn/index",
+                  "en/erp/learn/connect",
+                  "en/erp/learn/disconnect",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/erp/admin/index",
+                      "en/erp/admin/add-connection",
+                      "en/erp/admin/configure",
+                      "en/erp/admin/update-connection",
+                      "en/erp/admin/resync-from-crm"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "en/customization/index",
+                  {
+                    "group": "Screen designer",
+                    "pages": [
+                      "en/customization/screen-designer/admin/index",
+                      "en/customization/screen-designer/admin/add-layout",
+                      "en/customization/screen-designer/admin/edit-layout",
+                      "en/customization/screen-designer/admin/working-with-fields",
+                      "en/customization/screen-designer/admin/working-with-grids",
+                      "en/customization/screen-designer/admin/working-with-tabs",
+                      "en/customization/screen-designer/admin/working-with-archives",
+                      "en/customization/screen-designer/admin/add-button",
+                      "en/customization/screen-designer/admin/assign-layout",
+                      "en/customization/screen-designer/admin/reference",
+                      "en/customization/screen-designer/admin/tutorial-move-country"
+                    ]
+                  },
+                  {
+                    "group": "Web panels",
+                    "pages": [
+                      "en/customization/web-panels/admin/index",
+                      "en/customization/web-panels/admin/add-web-panel",
+                      "en/customization/web-panels/admin/url-encoding",
+                      {
+                        "group": "For consultants",
+                        "pages": [
+                          "en/customization/web-panels/dev/index"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Macros and scripts",
+                    "pages": [
+                      "en/customization/macros-and-scripts/admin/index",
+                      "en/customization/macros-and-scripts/admin/create-script",
+                      "en/customization/macros-and-scripts/admin/create-macro",
+                      "en/customization/macros-and-scripts/admin/trigger",
+                      "en/customization/macros-and-scripts/admin/schedule-task"
+                    ]
+                  },
+                  {
+                    "group": "Customer center",
+                    "pages": [
+                      "en/customer-center/learn/index",
+                      "en/customer-center/learn/config",
+                      "en/customer-center/learn/edit",
+                      "en/customer-center/learn/send-credentials",
+                      "en/customer-center/learn/enable-chat",
+                      "en/customer-center/learn/link-form",
+                      {
+                        "group": "For administrators",
+                        "pages": [
+                          "en/customer-center/admin/style-subscription-page",
+                          "en/customer-center/admin/password-policy"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "System design",
+                    "pages": [
+                      "en/ui/blogic/learn/index",
+                      {
+                        "group": "Profiles",
+                        "pages": [
+                          "en/ui/blogic/learn/profiles/index",
+                          "en/ui/blogic/learn/profiles/personal",
+                          "en/ui/blogic/learn/profiles/common",
+                          "en/ui/blogic/learn/profiles/global"
+                        ]
+                      },
+                      "en/ui/blogic/learn/screen-chooser",
+                      "en/ui/blogic/learn/screen-definition",
+                      "en/ui/blogic/learn/screen-properties",
+                      {
+                        "group": "Extra menus",
+                        "pages": [
+                          "en/ui/blogic/learn/extra-menus/index",
+                          "en/ui/blogic/learn/extra-menus/actions",
+                          "en/ui/blogic/learn/extra-menus/navigator",
+                          "en/ui/blogic/learn/extra-menus/properties"
+                        ]
+                      }
+                    ]
+                  },
+                  "en/customization/admin/package-properties",
+                  "en/customization/admin/add-items-to-task-menu",
+                  "en/customization/admin/other-applications"
+                ]
+              },
+              {
+                "group": "Settings and maintenance",
+                "pages": [
+                  "en/admin/index",
+                  "en/admin/getting-started",
+                  "en/admin/adjusting-views",
+                  {
+                    "group": "Licenses",
+                    "pages": [
+                      "en/admin/license/index",
+                      "en/admin/license/crm-suite",
+                      "en/admin/license/user-plans",
+                      "en/admin/license/activate",
+                      "en/admin/license/expander-services",
+                      {
+                        "group": "Technical details",
+                        "pages": [
+                          "en/admin/license/dev/index",
+                          "en/admin/license/dev/user-plans",
+                          "en/admin/license/dev/module-licenses",
+                          "en/admin/license/dev/hidden-licenses",
+                          "en/admin/license/dev/partner-licenses"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Preferences",
+                    "pages": [
+                      "en/admin/preferences/index",
+                      "en/admin/preferences/update",
+                      "en/admin/preferences/service-settings",
+                      "en/admin/preferences/sms"
+                    ]
+                  },
+                  {
+                    "group": "Options",
+                    "pages": [
+                      "en/admin/options/index",
+                      "en/admin/options/configure-number-allocation",
+                      "en/admin/options/change-ui-labels"
+                    ]
+                  },
+                  {
+                    "group": "User preferences",
+                    "pages": [
+                      "en/admin/user-preferences/index",
+                      {
+                        "group": "Reference",
+                        "pages": [
+                          "en/admin/user-preferences/reference/appointment-dialog",
+                          "en/admin/user-preferences/reference/associates",
+                          "en/admin/user-preferences/reference/defaults",
+                          "en/admin/user-preferences/reference/diary-view",
+                          "en/admin/user-preferences/reference/field-labels",
+                          "en/admin/user-preferences/reference/field-replication",
+                          "en/admin/user-preferences/reference/filter",
+                          "en/admin/user-preferences/reference/find-contact",
+                          "en/admin/user-preferences/reference/freetext",
+                          "en/admin/user-preferences/reference/functions",
+                          "en/admin/user-preferences/reference/mail",
+                          "en/admin/user-preferences/reference/netservices",
+                          "en/admin/user-preferences/reference/numbering",
+                          "en/admin/user-preferences/reference/phone",
+                          "en/admin/user-preferences/reference/pocket-tasks",
+                          "en/admin/user-preferences/reference/scripting",
+                          "en/admin/user-preferences/reference/sorting",
+                          "en/admin/user-preferences/reference/system",
+                          "en/admin/user-preferences/reference/travel",
+                          "en/admin/user-preferences/reference/visual"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Lists",
+                    "pages": [
+                      "en/admin/lists/index",
+                      "en/admin/lists/add-items",
+                      "en/admin/lists/update-items",
+                      "en/admin/lists/restore",
+                      "en/admin/lists/headings",
+                      "en/admin/lists/user-group-filtering",
+                      "en/admin/lists/specialized-lists",
+                      "en/admin/lists/user-defined-lists"
+                    ]
+                  },
+                  {
+                    "group": "User management",
+                    "pages": [
+                      "en/admin/user-management/index",
+                      "en/admin/user-management/add-associate",
+                      "en/admin/user-management/update-user",
+                      "en/admin/user-management/our-companies",
+                      "en/admin/user-management/user-groups",
+                      {
+                        "group": "Role",
+                        "pages": [
+                          "en/admin/user-management/role/index",
+                          "en/admin/user-management/role/create-role",
+                          "en/admin/user-management/role/update-role",
+                          "en/admin/user-management/role/set-data-rights-for-role",
+                          "en/admin/user-management/role/functional-rights"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Import",
+                    "pages": [
+                      "en/admin/import/index",
+                      "en/admin/import/create-spreadsheet",
+                      "en/admin/import/from-excel",
+                      "en/admin/import/from-mac-address-book",
+                      "en/admin/import/from-gmail",
+                      "en/admin/import/from-erp",
+                      "en/admin/import/products-from-excel",
+                      "en/admin/import/settings"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Language, translation, and timezones",
+                "pages": [
+                  "en/localization/learn/customer-languages",
+                  "en/localization/learn/translate-fields",
+                  "en/localization/learn/time-zones",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/localization/admin/enable-time-zones",
+                      "en/localization/admin/select-time-zones",
+                      "en/localization/admin/add-customer-language"
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "tab": "Mobile",
             "icon": "mobile-screen",
-            "groups": []
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "en/mobile/index"
+                ]
+              },
+              {
+                "group": "First time use/log in",
+                "pages": [
+                  "en/mobile/login"
+                ]
+              },
+              {
+                "group": "Set up email account",
+                "pages": [
+                  "en/mobile/set-up-email"
+                ]
+              },
+              {
+                "group": "Enable caller ID",
+                "pages": [
+                  "en/mobile/caller-id"
+                ]
+              },
+              {
+                "group": "Interface guide",
+                "pages": [
+                  "en/mobile/interface-guide"
+                ]
+              },
+              {
+                "group": "Companies",
+                "pages": [
+                  "en/mobile/company/index",
+                  "en/mobile/company/create"
+                ]
+              },
+              {
+                "group": "Contacts",
+                "pages": [
+                  "en/mobile/contact/index",
+                  "en/mobile/contact/create",
+                  "en/mobile/contact/update",
+                  "en/mobile/contact/scan-business-card",
+                  "en/mobile/contact/copy-to-contact-list",
+                  "en/mobile/contact/show-address-in-map"
+                ]
+              },
+              {
+                "group": "Diary",
+                "pages": [
+                  "en/mobile/diary/index",
+                  "en/mobile/diary/create-appointment",
+                  "en/mobile/diary/update-appointment",
+                  "en/mobile/diary/invitations",
+                  "en/mobile/diary/join-video-meeting"
+                ]
+              },
+              {
+                "group": "Sales",
+                "pages": [
+                  "en/mobile/sale/index",
+                  "en/mobile/sale/create",
+                  "en/mobile/sale/update",
+                  "en/mobile/sale/approve-quote"
+                ]
+              },
+              {
+                "group": "Projects",
+                "pages": [
+                  "en/mobile/project/index",
+                  "en/mobile/project/create",
+                  "en/mobile/project/update"
+                ]
+              },
+              {
+                "group": "Requests",
+                "pages": [
+                  "en/mobile/request/index",
+                  "en/mobile/request/create",
+                  "en/mobile/request/update",
+                  "en/mobile/request/respond"
+                ]
+              },
+              {
+                "group": "Documents",
+                "pages": [
+                  "en/mobile/document/index",
+                  "en/mobile/document/create",
+                  "en/mobile/document/update"
+                ]
+              },
+              {
+                "group": "Dashboards",
+                "pages": [
+                  "en/mobile/dashboard/index"
+                ]
+              },
+              {
+                "group": "Send messages (email or SMS)",
+                "pages": [
+                  "en/mobile/send-email-sms"
+                ]
+              },
+              {
+                "group": "Manage notifications",
+                "pages": [
+                  "en/mobile/manage-notifications"
+                ]
+              },
+              {
+                "group": "Settings",
+                "pages": [
+                  "en/mobile/settings"
+                ]
+              },
+              {
+                "group": "Customizing the app",
+                "pages": [
+                  "en/mobile/customization"
+                ]
+              },
+              {
+                "group": "Security",
+                "pages": [
+                  "en/mobile/security"
+                ]
+              },
+              {
+                "group": "Client requirements",
+                "pages": [
+                  "en/mobile/client-requirements"
+                ]
+              }
+            ]
           },
           {
             "tab": "Integrations",
             "icon": "plus",
-            "groups": []
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "integrations/index"
+                ]
+              },
+              {
+                "group": "Gmail Link",
+                "pages": [
+                  "integrations/gmail-link/index",
+                  "integrations/gmail-link/install",
+                  "integrations/gmail-link/settings",
+                  "integrations/gmail-link/manage-senders",
+                  "integrations/gmail-link/email-archive-incoming",
+                  "integrations/gmail-link/archive-attachments",
+                  "integrations/gmail-link/archive-emails-as-activities",
+                  "integrations/gmail-link/archive-emails-as-requests",
+                  "integrations/gmail-link/email-archive-outgoing"
+                ]
+              },
+              {
+                "group": "Google Workspace document integration",
+                "pages": [
+                  "integrations/g-suite/index",
+                  "integrations/g-suite/requirements",
+                  "integrations/g-suite/security",
+                  "integrations/g-suite/getting-started",
+                  "integrations/g-suite/set-up"
+                ]
+              },
+              {
+                "group": "Mail Link",
+                "pages": [
+                  "integrations/mail-link/index",
+                  "integrations/mail-link/install",
+                  "integrations/mail-link/archive",
+                  "integrations/mail-link/create-in-outlook",
+                  "integrations/mail-link/create-in-superoffice",
+                  "integrations/mail-link/select-recipients",
+                  "integrations/mail-link/manage-senders",
+                  "integrations/mail-link/add-attachment",
+                  "integrations/mail-link/archive-on-contact",
+                  "integrations/mail-link/archive-as-activity",
+                  "integrations/mail-link/archive-as-request",
+                  "integrations/mail-link/archive-attachment",
+                  "integrations/mail-link/settings",
+                  "integrations/mail-link/debug"
+                ]
+              },
+              {
+                "group": "SharePoint documents",
+                "pages": [
+                  "integrations/sharepoint-documents/index",
+                  "integrations/sharepoint-documents/requirements",
+                  {
+                    "group": "Set up SharePoint",
+                    "pages": [
+                      "integrations/sharepoint-documents/permissions-in-sharepoint",
+                      "integrations/sharepoint-documents/configure-permissions-documents",
+                      "integrations/sharepoint-documents/configure-permissions-templates"
+                    ]
+                  },
+                  "integrations/sharepoint-documents/configure-superoffice",
+                  "integrations/sharepoint-documents/permissions-app",
+                  "integrations/sharepoint-documents/troubleshooting",
+                  {
+                    "group": "Migration",
+                    "pages": [
+                      "integrations/sharepoint-documents/migrate/index",
+                      "integrations/sharepoint-documents/migrate/best-practices",
+                      "integrations/sharepoint-documents/migrate/steps",
+                      "integrations/sharepoint-documents/migrate/troubleshooting",
+                      "integrations/sharepoint-documents/migrate/reference"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "SuperNotes",
+                "pages": [
+                  "integrations/supernotes/index",
+                  "integrations/supernotes/getting-started",
+                  "integrations/supernotes/workspaces",
+                  "integrations/supernotes/teams",
+                  "integrations/supernotes/before-meeting",
+                  "integrations/supernotes/summaries",
+                  "integrations/supernotes/settings",
+                  "integrations/supernotes/privacy-security"
+                ]
+              },
+              {
+                "group": "SuperOffice for Outlook",
+                "pages": [
+                  "integrations/superoffice-for-outlook/index",
+                  "integrations/superoffice-for-outlook/requirements",
+                  "integrations/superoffice-for-outlook/get",
+                  "integrations/superoffice-for-outlook/deploy",
+                  "integrations/superoffice-for-outlook/settings",
+                  "integrations/superoffice-for-outlook/add-contact-to-superoffice",
+                  "integrations/superoffice-for-outlook/view-contact-details",
+                  {
+                    "group": "Archive emails to SuperOffice",
+                    "pages": [
+                      "integrations/superoffice-for-outlook/archive-email",
+                      "integrations/superoffice-for-outlook/send-and-archive",
+                      "integrations/superoffice-for-outlook/save-attachments",
+                      "integrations/superoffice-for-outlook/shared-mailboxes"
+                    ]
+                  },
+                  "integrations/superoffice-for-outlook/add-crm-data-to-event",
+                  "integrations/superoffice-for-outlook/archive-reminder",
+                  "integrations/superoffice-for-outlook/create-follow-up",
+                  "integrations/superoffice-for-outlook/create-request",
+                  "integrations/superoffice-for-outlook/create-sale"
+                ]
+              },
+              {
+                "group": "SuperOffice for Teams",
+                "pages": [
+                  "integrations/superoffice-for-teams/index",
+                  "integrations/superoffice-for-teams/requirements",
+                  "integrations/superoffice-for-teams/deploy",
+                  "integrations/superoffice-for-teams/get",
+                  "integrations/superoffice-for-teams/archive-conversation",
+                  "integrations/superoffice-for-teams/archive-file",
+                  "integrations/superoffice-for-teams/ai-summary",
+                  "integrations/superoffice-for-teams/preferences",
+                  "integrations/superoffice-for-teams/security",
+                  "integrations/superoffice-for-teams/troubleshooting",
+                  "integrations/superoffice-for-teams/limitations"
+                ]
+              },
+              {
+                "group": "Video meetings",
+                "pages": [
+                  "integrations/video-meetings/index",
+                  "integrations/video-meetings/google-meet/index",
+                  "integrations/video-meetings/jitsi/index",
+                  "integrations/video-meetings/ms-teams/index",
+                  "integrations/video-meetings/webex/index",
+                  "integrations/video-meetings/zoom/index",
+                  {
+                    "group": "How to...",
+                    "pages": [
+                      "integrations/video-meetings/howto/create",
+                      "integrations/video-meetings/howto/join",
+                      "integrations/video-meetings/howto/configure-email-invitations",
+                      "integrations/video-meetings/howto/connect-provider",
+                      "integrations/video-meetings/howto/disconnect-provider",
+                      "integrations/video-meetings/howto/disconnect-user"
+                    ]
+                  },
+                  "integrations/video-meetings/troubleshooting"
+                ]
+              },
+              {
+                "group": "WebTools",
+                "pages": [
+                  "integrations/webtools/index",
+                  "integrations/webtools/technical-overview",
+                  "integrations/webtools/system-requirements",
+                  {
+                    "group": "Set up",
+                    "pages": [
+                      "integrations/webtools/install",
+                      "integrations/webtools/deploy",
+                      "integrations/webtools/config",
+                      "integrations/webtools/upgrade"
+                    ]
+                  },
+                  "integrations/webtools/troubleshooting"
+                ]
+              },
+              {
+                "group": "Zapier",
+                "pages": [
+                  "integrations/zapier/index",
+                  {
+                    "group": "Get started",
+                    "pages": [
+                      "integrations/zapier/get-started/set-up-account",
+                      "integrations/zapier/get-started/create-zap"
+                    ]
+                  },
+                  {
+                    "group": "How to...",
+                    "pages": [
+                      "integrations/zapier/howto/index",
+                      "integrations/zapier/howto/gdpr",
+                      "integrations/zapier/howto/listsource",
+                      "integrations/zapier/howto/datetime",
+                      {
+                        "group": "Actions",
+                        "pages": [
+                          "integrations/zapier/howto/actions/create-appointment",
+                          "integrations/zapier/howto/actions/create-company",
+                          "integrations/zapier/howto/actions/create-contact",
+                          "integrations/zapier/howto/actions/create-document",
+                          "integrations/zapier/howto/actions/create-project-member",
+                          "integrations/zapier/howto/actions/create-project",
+                          "integrations/zapier/howto/actions/create-request-message-attachment",
+                          "integrations/zapier/howto/actions/create-request-message",
+                          "integrations/zapier/howto/actions/create-request",
+                          "integrations/zapier/howto/actions/create-sale",
+                          "integrations/zapier/howto/actions/remove-project-member",
+                          "integrations/zapier/howto/actions/search-company",
+                          "integrations/zapier/howto/actions/search-contact",
+                          "integrations/zapier/howto/actions/search-project",
+                          "integrations/zapier/howto/actions/search-request",
+                          "integrations/zapier/howto/actions/search-sale",
+                          "integrations/zapier/howto/actions/update-appointment",
+                          "integrations/zapier/howto/actions/update-company",
+                          "integrations/zapier/howto/actions/update-contact",
+                          "integrations/zapier/howto/actions/update-document-content",
+                          "integrations/zapier/howto/actions/update-project",
+                          "integrations/zapier/howto/actions/update-request",
+                          "integrations/zapier/howto/actions/update-sale"
+                        ]
+                      },
+                      {
+                        "group": "Triggers",
+                        "pages": [
+                          "integrations/zapier/howto/triggers/new",
+                          "integrations/zapier/howto/triggers/changed"
+                        ]
+                      }
+                    ]
+                  },
+                  "integrations/zapier/reference"
+                ]
+              }
+            ]
           },
           {
             "tab": "Online",
             "icon": "book",
-            "groups": []
+            "groups": [
+              {
+                "group": "SuperOffice CRM Online",
+                "pages": [
+                  "en/online/overview",
+                  "en/online/system-requirements",
+                  "en/online/cookies",
+                  "en/online/security",
+                  {
+                    "group": "Migrate to Online",
+                    "pages": [
+                      "en/online/migrate/documents-migration"
+                    ]
+                  },
+                  "en/online/migrate/troubleshooting",
+                  "en/online/integrate/index",
+                  {
+                    "group": "Production sandbox",
+                    "pages": [
+                      "en/online/sandbox/order-sandbox",
+                      "en/online/sandbox/replace",
+                      "en/online/sandbox/clone-to"
+                    ]
+                  },
+                  {
+                    "group": "Identity Management",
+                    "pages": [
+                      "en/online/identity/overview",
+                      "en/online/identity/federated-auth",
+                      "en/online/identity/federated-id-and-identity-providers",
+                      "en/online/identity/id-transfer-tickets",
+                      "en/online/identity/multi-factor-authentication",
+                      {
+                        "group": "Single sign-on",
+                        "pages": [
+                          "en/online/identity/single-sign-on/onsite-sso"
+                        ]
+                      },
+                      {
+                        "group": "SuperID",
+                        "pages": [
+                          "en/online/identity/superid/sign-in-services",
+                          "en/online/identity/superid/user-accounts-and-passwords",
+                          "en/online/identity/superid/primary-tenant",
+                          "en/online/identity/superid/superid-webtools-maillink-pocket",
+                          "en/online/identity/superid/known-challenges",
+                          "en/online/identity/superid/terms-and-conditions",
+                          {
+                            "group": "How-to",
+                            "pages": [
+                              "en/online/identity/superid/howto/federated-sign-in-guide",
+                              "en/online/identity/superid/howto/check-idp-domain",
+                              "en/online/identity/superid/howto/register-idp",
+                              "en/online/identity/superid/howto/map-idp-usernames",
+                              "en/online/identity/superid/howto/complete-user-transition",
+                              "en/online/identity/superid/howto/custom-domains-registration-form"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "User",
+                        "pages": [
+                          "en/online/identity/user/add-user-in-admin-client",
+                          "en/online/identity/user/enforce-password-policy",
+                          "en/online/identity/user/reset-password",
+                          "en/online/identity/user/send-welcome-emails"
+                        ]
+                      },
+                      {
+                        "group": "Active Directory",
+                        "pages": [
+                          "en/online/identity/ad/set-up-ad-auth",
+                          "en/online/identity/ad/mapping-so-user-to-ad-v-7-1"
+                        ]
+                      },
+                      {
+                        "group": "SCIM",
+                        "pages": [
+                          "en/online/identity/scim/sign-in-to-scim",
+                          "en/online/identity/scim/identity-management-gw",
+                          "en/online/identity/scim/scim-rules",
+                          {
+                            "group": "User provisioning",
+                            "pages": [
+                              "en/online/identity/scim/provisioning/add-scim-rule",
+                              "en/online/identity/scim/provisioning/activate-deactivate-rules",
+                              "en/online/identity/scim/provisioning/preview-sync",
+                              "en/online/identity/scim/provisioning/sync-company",
+                              "en/online/identity/scim/provisioning/sync-user",
+                              "en/online/identity/scim/provisioning/restart-sync"
+                            ]
+                          },
+                          {
+                            "group": "Setup",
+                            "pages": [
+                              "en/online/identity/scim/setup/setup-guide",
+                              "en/online/identity/scim/setup/create-azure-enterprise-app",
+                              "en/online/identity/scim/setup/enable-auto-sync",
+                              "en/online/identity/scim/setup/get-scim-config",
+                              "en/online/identity/scim/setup/get-sync-error-messages"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Mirroring",
+                    "pages": [
+                      "en/online/mirroring/overview",
+                      "en/online/mirroring/requirements",
+                      "en/online/mirroring/order-database-mirroring",
+                      "en/online/mirroring/setup-guide",
+                      "en/online/mirroring/migrate",
+                      "en/online/mirroring/force-resync",
+                      "en/online/mirroring/troubleshooting",
+                      {
+                        "group": "Reference",
+                        "pages": [
+                          "en/online/mirroring/scenarios",
+                          "en/online/mirroring/sql-server-schema",
+                          "en/online/mirroring/change-tracking",
+                          "en/online/mirroring/blocked-tables"
+                        ]
+                      },
+                      {
+                        "group": "Legacy (WCF) mirroring",
+                        "pages": [
+                          "en/online/mirroring/conceptual-overview-2016",
+                          "en/online/mirroring/mirroring-task",
+                          "en/online/mirroring/getting-started/index",
+                          "en/online/mirroring/getting-started/create-wfc",
+                          "en/online/mirroring/getting-started/i-mirror-client-service",
+                          "en/online/mirroring/skip-tables"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Mail services",
+                    "pages": [
+                      {
+                        "group": "Mailgun",
+                        "pages": [
+                          "en/online/mail-services/mailgun/index",
+                          "en/online/mail-services/mailgun/amount-speed",
+                          "en/online/mail-services/mailgun/reasons-to-customize",
+                          "en/online/mail-services/mailgun/security",
+                          "en/online/mail-services/mailgun/sub-processor-info",
+                          {
+                            "group": "DKIM",
+                            "pages": [
+                              "en/online/mail-services/mailgun/dkim/set-up",
+                              "en/online/mail-services/mailgun/dkim/order-key",
+                              "en/online/mail-services/mailgun/dkim/multiple-dkim-records",
+                              "en/online/mail-services/mailgun/dkim/change-us-to-eu"
+                            ]
+                          },
+                          {
+                            "group": "SPF",
+                            "pages": [
+                              "en/online/mail-services/mailgun/spf/set-up"
+                            ]
+                          }
+                        ]
+                      },
+                      "en/email/inbox/it/index",
+                      {
+                        "group": "Service and Marketing (cUrl)",
+                        "pages": [
+                          "en/online/mail-services/curl/migrate",
+                          "en/online/mail-services/curl/oauth-microsoft365"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "tab": "Release Notes",
             "icon": "bullhorn",
-            "groups": []
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "release-notes/index"
+                ]
+              },
+              {
+                "group": "SuperOffice 12",
+                "pages": [
+                  "release-notes/12/index",
+                  {
+                    "group": "Core CRM",
+                    "pages": [
+                      "release-notes/12/core-crm/12.2-update"
+                    ]
+                  },
+                  {
+                    "group": "Service",
+                    "pages": [
+                      "release-notes/12/service/12.0-update"
+                    ]
+                  },
+                  {
+                    "group": "Settings and Maintenance",
+                    "pages": [
+                      "release-notes/12/admin/12.1-update"
+                    ]
+                  },
+                  {
+                    "group": "API",
+                    "pages": [
+                      {
+                        "group": "12.2 update",
+                        "pages": [
+                          "release-notes/12/api/12.2/12.2-netserver-update",
+                          "release-notes/12/api/12.2/12.2-webapi-update",
+                          "release-notes/database/changes-12.2.2072"
+                        ]
+                      },
+                      {
+                        "group": "12.1 update",
+                        "pages": [
+                          "release-notes/12/api/12.1/12.1-netserver-update",
+                          "release-notes/12/api/12.1/12.1-webapi-update",
+                          "release-notes/database/changes-12.1.1412"
+                        ]
+                      },
+                      {
+                        "group": "12.0 update",
+                        "pages": [
+                          "release-notes/12/api/12.0/12.0-netserver-update",
+                          "release-notes/12/api/12.0/12.0-webapi-update",
+                          "release-notes/database/changes-12.0.342"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "SuperOffice 11",
+                "pages": [
+                  "release-notes/11/index",
+                  {
+                    "group": "Core CRM",
+                    "pages": [
+                      "release-notes/11/core-crm/11.11-update",
+                      "release-notes/11/core-crm/11.10-update",
+                      "release-notes/11/core-crm/11.7-update",
+                      "release-notes/11/core-crm/11.6-update",
+                      "release-notes/11/core-crm/11.4-update",
+                      "release-notes/11/core-crm/11.3-update",
+                      "release-notes/11/core-crm/11.2-update"
+                    ]
+                  },
+                  {
+                    "group": "Settings and Maintenance",
+                    "pages": [
+                      "release-notes/11/admin/11.13-update",
+                      "release-notes/11/admin/11.12-update",
+                      "release-notes/11/admin/11.11-update",
+                      "release-notes/11/admin/11.10-update",
+                      "release-notes/11/admin/11.9-update",
+                      "release-notes/11/admin/11.8-update",
+                      "release-notes/11/admin/11.6-update",
+                      "release-notes/11/admin/11.3-update",
+                      "release-notes/11/admin/11.1-update"
+                    ]
+                  },
+                  {
+                    "group": "Service",
+                    "pages": [
+                      "release-notes/11/service/11.12-update",
+                      "release-notes/11/service/11.11-update",
+                      "release-notes/11/service/11.8-update",
+                      "release-notes/11/service/11.7-update",
+                      "release-notes/11/service/11.5-update",
+                      "release-notes/11/service/11.4-update",
+                      "release-notes/11/service/11.3-update",
+                      "release-notes/11/service/11.2-update",
+                      "release-notes/11/service/11.1-update"
+                    ]
+                  },
+                  {
+                    "group": "Marketing",
+                    "pages": [
+                      "release-notes/11/marketing/11.13-update",
+                      "release-notes/11/marketing/11.11-update",
+                      "release-notes/11/marketing/11.9-update",
+                      "release-notes/11/marketing/11.6-update",
+                      "release-notes/11/marketing/11.5-update",
+                      "release-notes/11/marketing/11.3-update"
+                    ]
+                  },
+                  {
+                    "group": "API",
+                    "pages": [
+                      {
+                        "group": "11.13 update",
+                        "pages": [
+                          "release-notes/11/api/11.13/11.13-netserver-update",
+                          "release-notes/11/api/11.13/11.13-webapi-update",
+                          "release-notes/database/changes-11.13.921"
+                        ]
+                      },
+                      {
+                        "group": "11.12 update",
+                        "pages": [
+                          "release-notes/11/api/11.12/11.12-netserver-update",
+                          "release-notes/11/api/11.12/11.12-webapi-update",
+                          "release-notes/database/changes-11.12.675"
+                        ]
+                      },
+                      {
+                        "group": "11.11 update",
+                        "pages": [
+                          "release-notes/11/api/11.11/11.11-netserver-update",
+                          "release-notes/11/api/11.11/11.11-webapi-update",
+                          "release-notes/database/changes-11.11.589"
+                        ]
+                      },
+                      {
+                        "group": "11.10 update",
+                        "pages": [
+                          "release-notes/11/api/11.10/11.10-netserver-update",
+                          "release-notes/11/api/11.10/11.10-webapi-update",
+                          "release-notes/database/changes-11.10.705"
+                        ]
+                      },
+                      {
+                        "group": "11.9 update",
+                        "pages": [
+                          "release-notes/11/api/11.9/11.9-netserver-update",
+                          "release-notes/11/api/11.9/11.9-webapi-update",
+                          "release-notes/database/changes-11.9.1204"
+                        ]
+                      },
+                      {
+                        "group": "11.8 update",
+                        "pages": [
+                          "release-notes/11/api/11.8/11.8-netserver-update",
+                          "release-notes/11/api/11.8/11.8-webapi-update",
+                          "release-notes/database/changes-11.8.788"
+                        ]
+                      },
+                      {
+                        "group": "11.7 update",
+                        "pages": [
+                          "release-notes/11/api/11.7/11.7-netserver-update",
+                          "release-notes/11/api/11.7/11.7-webapi-update",
+                          "release-notes/database/changes-11.7.727"
+                        ]
+                      },
+                      {
+                        "group": "11.6 update",
+                        "pages": [
+                          "release-notes/11/api/11.6/11.6-netserver-update",
+                          "release-notes/11/api/11.6/11.6-webapi-update",
+                          "release-notes/database/changes-11.6.943"
+                        ]
+                      },
+                      {
+                        "group": "11.5 update",
+                        "pages": [
+                          "release-notes/11/api/11.5/11.5-netserver-update",
+                          "release-notes/11/api/11.5/11.5-webapi-update",
+                          "release-notes/database/changes-11.5.755"
+                        ]
+                      },
+                      {
+                        "group": "11.4 update",
+                        "pages": [
+                          "release-notes/11/api/11.4/11.4-netserver-update",
+                          "release-notes/11/api/11.4/11.4-webapi-update",
+                          "release-notes/database/changes-11.4.1157"
+                        ]
+                      },
+                      {
+                        "group": "11.3 update",
+                        "pages": [
+                          "release-notes/11/api/11.3/11.3-netserver-update",
+                          "release-notes/11/api/11.3/11.3-webapi-update",
+                          "release-notes/database/changes-11.3.1348"
+                        ]
+                      },
+                      {
+                        "group": "11.2 update",
+                        "pages": [
+                          "release-notes/11/api/11.2/11.2-netserver-update",
+                          "release-notes/11/api/11.2/11.2-webapi-update",
+                          "release-notes/database/changes-11.2.664"
+                        ]
+                      },
+                      {
+                        "group": "11.1 update",
+                        "pages": [
+                          "release-notes/11/api/11.1/11.1-cdd-update",
+                          "release-notes/11/api/11.1/11.1-core-update",
+                          "release-notes/11/api/11.1/11.1-services-update",
+                          "release-notes/11/api/11.1/11.1-webapi-update",
+                          "release-notes/database/changes-11.1.447"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Mobile CRM (app)",
+                "pages": [
+                  "release-notes/mobile/index",
+                  "release-notes/mobile/11.1.13-update",
+                  "release-notes/mobile/11.1.12-update",
+                  "release-notes/mobile/11.1.11-update",
+                  "release-notes/mobile/11.1.10-update",
+                  "release-notes/mobile/11.1.9-update",
+                  "release-notes/mobile/11.1.7-update",
+                  "release-notes/mobile/11.1.5-update",
+                  "release-notes/mobile/11.1.3-update",
+                  "release-notes/mobile/11.1.2-update",
+                  "release-notes/mobile/11.1.0-update",
+                  "release-notes/mobile/11.0.3-update",
+                  {
+                    "group": "Version 10.2",
+                    "pages": [
+                      "release-notes/mobile/10.2.19-update",
+                      "release-notes/mobile/10.2.18-update",
+                      "release-notes/mobile/10.2.16-update",
+                      "release-notes/mobile/10.2.12-update",
+                      "release-notes/mobile/10.2.11-update",
+                      "release-notes/mobile/10.2.10-update",
+                      "release-notes/mobile/10.2.8-update",
+                      "release-notes/mobile/10.2.7-update",
+                      "release-notes/mobile/10.2.2-update"
+                    ]
+                  },
+                  {
+                    "group": "Version 10.1",
+                    "pages": [
+                      "release-notes/mobile/10.1.9-update",
+                      "release-notes/mobile/10.1.8-update",
+                      "release-notes/mobile/10.1.7-update",
+                      "release-notes/mobile/10.1.5-update",
+                      "release-notes/mobile/10.1.4-update"
+                    ]
+                  },
+                  {
+                    "group": "Version 10.0",
+                    "pages": [
+                      "release-notes/mobile/10.0.9-update",
+                      "release-notes/mobile/10.0.7-update",
+                      "release-notes/mobile/10.0.6-update",
+                      "release-notes/mobile/10.0.4-update",
+                      "release-notes/mobile/10.0.3-update",
+                      "release-notes/mobile/10.0.2-update",
+                      "release-notes/mobile/10.0.1-update"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Integrations",
+                "pages": [
+                  "release-notes/integrations/index",
+                  {
+                    "group": "Video Meetings",
+                    "pages": [
+                      "release-notes/integrations/video-meetings/2.9-update"
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice for Outlook",
+                    "pages": [
+                      "release-notes/integrations/sofo/6.3-update",
+                      "release-notes/integrations/sofo/6.0-update",
+                      "release-notes/integrations/sofo/3.1-update"
+                    ]
+                  },
+                  {
+                    "group": "SharePoint integrations",
+                    "pages": [
+                      "release-notes/integrations/sharepoint/3.2-update",
+                      "release-notes/integrations/sharepoint/10.1.4-update"
+                    ]
+                  },
+                  {
+                    "group": "Mail Link",
+                    "pages": [
+                      "release-notes/integrations/mail-link/8.5-R11-update",
+                      "release-notes/integrations/mail-link/8.5-R14-update"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Older",
+                "pages": [
+                  {
+                    "group": "SuperOffice 10.5",
+                    "pages": [
+                      "release-notes/10.5/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.5/core-crm/10.5.5-update",
+                          "release-notes/10.5/core-crm/10.5.3-update",
+                          "release-notes/10.5/core-crm/10.5.2-update",
+                          "release-notes/10.5/core-crm/10.5.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and maintenance",
+                        "pages": [
+                          "release-notes/10.5/admin/10.5.5-update",
+                          "release-notes/10.5/admin/10.5.2-update",
+                          "release-notes/10.5/admin/10.5.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.5/service/10.5.5-update",
+                          "release-notes/10.5/service/10.5.3-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          {
+                            "group": "10.5.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.5"
+                            ]
+                          },
+                          {
+                            "group": "10.5.4 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.4"
+                            ]
+                          },
+                          {
+                            "group": "10.5.3 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.3"
+                            ]
+                          },
+                          {
+                            "group": "10.5.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.2"
+                            ]
+                          },
+                          {
+                            "group": "10.5.1 update",
+                            "pages": [
+                              "release-notes/database/changes-10.5.1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.3",
+                    "pages": [
+                      "release-notes/10.3/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.3/core-crm/10.3.12-update",
+                          "release-notes/10.3/core-crm/10.3.11-update",
+                          "release-notes/10.3/core-crm/10.3.10-update",
+                          "release-notes/10.3/core-crm/10.3.9-update",
+                          "release-notes/10.3/core-crm/10.3.6-update",
+                          "release-notes/10.3/core-crm/10.3.2-update",
+                          "release-notes/10.3/core-crm/10.3.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.3/admin/10.3.8-update",
+                          "release-notes/10.3/admin/10.3.7-update",
+                          "release-notes/10.3/admin/10.3.2-update",
+                          "release-notes/10.3/admin/10.3.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.3/service/10.3.11-update",
+                          "release-notes/10.3/service/10.3.8-update",
+                          "release-notes/10.3/service/10.3.6-update",
+                          "release-notes/10.3/service/10.3.5-update",
+                          "release-notes/10.3/service/10.3.3-update",
+                          "release-notes/10.3/service/10.3.2-update",
+                          "release-notes/10.3/service/10.3.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.3/marketing/10.3.12-update",
+                          "release-notes/10.3/marketing/10.3.10-update",
+                          "release-notes/10.3/marketing/10.3.9-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          {
+                            "group": "10.3.13 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.13"
+                            ]
+                          },
+                          {
+                            "group": "10.3.12 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.12"
+                            ]
+                          },
+                          {
+                            "group": "10.3.11 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.11"
+                            ]
+                          },
+                          {
+                            "group": "10.3.10 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.10"
+                            ]
+                          },
+                          {
+                            "group": "10.3.9 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.9"
+                            ]
+                          },
+                          {
+                            "group": "10.3.8 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.8"
+                            ]
+                          },
+                          {
+                            "group": "10.3.7 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.7"
+                            ]
+                          },
+                          {
+                            "group": "10.3.6 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.6"
+                            ]
+                          },
+                          {
+                            "group": "10.3.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.5"
+                            ]
+                          },
+                          {
+                            "group": "10.3.4 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.4"
+                            ]
+                          },
+                          {
+                            "group": "10.3.3 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.3"
+                            ]
+                          },
+                          {
+                            "group": "10.3.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.2"
+                            ]
+                          },
+                          {
+                            "group": "10.3.1 update",
+                            "pages": [
+                              "release-notes/database/changes-10.3.1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.2",
+                    "pages": [
+                      "release-notes/10.2/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.2/core-crm/10.2.11-update",
+                          "release-notes/10.2/core-crm/10.2.8-update",
+                          "release-notes/10.2/core-crm/10.2.4-update",
+                          "release-notes/10.2/core-crm/10.2.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.2/admin/10.2.11-update",
+                          "release-notes/10.2/admin/10.2.10-update",
+                          "release-notes/10.2/admin/10.2.3-update",
+                          "release-notes/10.2/admin/10.2.2-update",
+                          "release-notes/10.2/admin/10.2.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Requests / Service",
+                        "pages": [
+                          "release-notes/10.2/service/10.2.11-update",
+                          "release-notes/10.2/service/10.2.10-update",
+                          "release-notes/10.2/service/10.2.9-update",
+                          "release-notes/10.2/service/10.2.8-update",
+                          "release-notes/10.2/service/10.2.6-update",
+                          "release-notes/10.2/service/10.2.5-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.2/marketing/10.2.3-update",
+                          "release-notes/10.2/marketing/10.2.2-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          {
+                            "group": "10.2.11 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.11"
+                            ]
+                          },
+                          {
+                            "group": "10.2.10 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.10"
+                            ]
+                          },
+                          {
+                            "group": "10.2.9 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.9"
+                            ]
+                          },
+                          {
+                            "group": "10.2.8 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.8"
+                            ]
+                          },
+                          {
+                            "group": "10.2.6 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.6"
+                            ]
+                          },
+                          {
+                            "group": "10.2.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.5"
+                            ]
+                          },
+                          {
+                            "group": "10.2.4 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.4"
+                            ]
+                          },
+                          {
+                            "group": "10.2.3 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.3"
+                            ]
+                          },
+                          {
+                            "group": "10.2.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.2"
+                            ]
+                          },
+                          {
+                            "group": "10.2.1 update",
+                            "pages": [
+                              "release-notes/database/changes-10.2.1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.1",
+                    "pages": [
+                      "release-notes/10.1/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.1/core-crm/10.1.3-update",
+                          "release-notes/10.1/core-crm/10.1.4-update",
+                          "release-notes/10.1/core-crm/10.1.5-update",
+                          "release-notes/10.1/core-crm/10.1.6-update",
+                          "release-notes/10.1/core-crm/10.1.9-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.1/admin/10.1.1-update",
+                          "release-notes/10.1/admin/10.1.3-update",
+                          "release-notes/10.1/admin/10.1.5-update",
+                          "release-notes/10.1/admin/10.1.6-update",
+                          "release-notes/10.1/admin/10.1.9-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.1/service/10.1.4-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.1/marketing/10.1.6-update",
+                          "release-notes/10.1/marketing/10.1.3-update"
+                        ]
+                      },
+                      {
+                        "group": "CEP",
+                        "pages": [
+                          "release-notes/10.1/cep/10.1.5-update",
+                          "release-notes/10.1/cep/10.1.3-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          "release-notes/10.1/api/10.1.9-update",
+                          "release-notes/10.1/api/10.1.8-update",
+                          "release-notes/10.1/api/10.1.6-update",
+                          {
+                            "group": "10.1.5 update",
+                            "pages": [
+                              "release-notes/database/changes-10.1.5"
+                            ]
+                          },
+                          "release-notes/10.1/api/10.1.4-update",
+                          "release-notes/10.1/api/10.1.3-update",
+                          {
+                            "group": "10.1.2 update",
+                            "pages": [
+                              "release-notes/database/changes-10.1.2"
+                            ]
+                          },
+                          "release-notes/10.1/api/10.1.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Development Products",
+                        "pages": [
+                          "release-notes/10.1/development-products/10.1.2-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 10.0",
+                    "pages": [
+                      "release-notes/10.0/index",
+                      {
+                        "group": "Core CRM",
+                        "pages": [
+                          "release-notes/10.0/core-crm/10.0.7-update",
+                          "release-notes/10.0/core-crm/10.0.6-update",
+                          "release-notes/10.0/core-crm/10.0.4-update",
+                          "release-notes/10.0/core-crm/10.0.3-update",
+                          "release-notes/10.0/core-crm/10.0.2-update",
+                          "release-notes/10.0/core-crm/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/10.0/admin/10.0.7-update",
+                          "release-notes/10.0/admin/10.0.6-update",
+                          "release-notes/10.0/admin/10.0.4-update",
+                          "release-notes/10.0/admin/10.0.3-update",
+                          "release-notes/10.0/admin/10.0.2-update",
+                          "release-notes/10.0/admin/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/10.0/service/10.0.6-update",
+                          "release-notes/10.0/service/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/10.0/marketing/10.0.6-update",
+                          "release-notes/10.0/marketing/10.0.5-update",
+                          "release-notes/10.0/marketing/10.0.4-update"
+                        ]
+                      },
+                      {
+                        "group": "CEP",
+                        "pages": [
+                          "release-notes/10.0/cep/10.0.6-update",
+                          "release-notes/10.0/cep/10.0.5-update",
+                          "release-notes/10.0/cep/10.0.4-update",
+                          "release-notes/10.0/cep/10.0.3-update",
+                          "release-notes/10.0/cep/10.0.2-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          "release-notes/10.0/api/10.0.7-update",
+                          "release-notes/10.0/api/10.0.6-update",
+                          "release-notes/10.0/api/10.0.5-update",
+                          "release-notes/10.0/api/10.0.1-update"
+                        ]
+                      },
+                      {
+                        "group": "Development Products",
+                        "pages": [
+                          "release-notes/10.0/development-products/10.0.1-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 9.2",
+                    "pages": [
+                      "release-notes/9.2/index",
+                      {
+                        "group": "Standard CRM",
+                        "pages": [
+                          "release-notes/9.2/standard-crm/9.2-R09-update",
+                          "release-notes/9.2/standard-crm/9.2-R08-update",
+                          "release-notes/9.2/standard-crm/9.2-R07-update",
+                          "release-notes/9.2/standard-crm/9.2-R06-update",
+                          "release-notes/9.2/standard-crm/9.2-R05-update",
+                          "release-notes/9.2/standard-crm/9.2-R04-update",
+                          "release-notes/9.2/standard-crm/9.2-R03-update",
+                          "release-notes/9.2/standard-crm/9.2-R02-update",
+                          "release-notes/9.2/standard-crm/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Customer Engagement Portal",
+                        "pages": [
+                          "release-notes/9.2/cep/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/9.2/marketing/9.2-R11-update",
+                          "release-notes/9.2/marketing/9.2-R10-update",
+                          "release-notes/9.2/marketing/9.2-R09-update",
+                          "release-notes/9.2/marketing/9.2-R08-update",
+                          "release-notes/9.2/marketing/9.2-R06-update",
+                          "release-notes/9.2/marketing/9.2-R05-update",
+                          "release-notes/9.2/marketing/9.2-R04-update",
+                          "release-notes/9.2/marketing/9.2-R03-update",
+                          "release-notes/9.2/marketing/9.2-R02-update",
+                          "release-notes/9.2/marketing/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/9.2/service/9.2-R12-update",
+                          "release-notes/9.2/service/9.2-R11-update",
+                          "release-notes/9.2/service/9.2-R07-update",
+                          "release-notes/9.2/service/9.2-R06-update",
+                          "release-notes/9.2/service/9.2-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "API",
+                        "pages": [
+                          "release-notes/9.2/api/9.2-R11-update",
+                          "release-notes/9.2/api/9.2-R09-update",
+                          "release-notes/9.2/api/9.2-R08-update",
+                          "release-notes/9.2/api/9.2-R06-update",
+                          "release-notes/9.2/api/9.2-R03-update",
+                          "release-notes/9.2/api/9.2-R01-update"
+                        ]
+                      },
+                      "release-notes/database/changes-9.2"
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 9.1",
+                    "pages": [
+                      "release-notes/9.1/index",
+                      {
+                        "group": "Standard crm",
+                        "pages": [
+                          "release-notes/9.1/standard-crm/9.1-R01-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/9.1/service/9.1-R01-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SuperOffice 8.5",
+                    "pages": [
+                      "release-notes/8.5/index",
+                      {
+                        "group": "Standard crm",
+                        "pages": [
+                          "release-notes/8.5/standard-crm/8.5-R01-update",
+                          "release-notes/8.5/standard-crm/8.5-R02-update",
+                          "release-notes/8.5/standard-crm/8.5-R05-update",
+                          "release-notes/8.5/standard-crm/8.5-R06-update",
+                          "release-notes/8.5/standard-crm/8.5-R07-update",
+                          "release-notes/8.5/standard-crm/8.5-R10-update",
+                          "release-notes/8.5/standard-crm/8.5-R11-update",
+                          "release-notes/8.5/standard-crm/8.5-R14-update",
+                          "release-notes/8.5/standard-crm/8.5-R16-update",
+                          "release-notes/8.5/standard-crm/8.5-R17-update"
+                        ]
+                      },
+                      {
+                        "group": "Windows client",
+                        "pages": [
+                          "release-notes/8.5/win-client/8.5-R01-update",
+                          "release-notes/8.5/win-client/8.5-R11-update",
+                          "release-notes/8.5/win-client/8.5-R16-update",
+                          "release-notes/8.5/win-client/8.5-R17-update"
+                        ]
+                      },
+                      {
+                        "group": "Settings and Maintenance",
+                        "pages": [
+                          "release-notes/8.5/admin/8.5-R02-update",
+                          "release-notes/8.5/admin/8.5-R04-update",
+                          "release-notes/8.5/admin/8.5-R10-update",
+                          "release-notes/8.5/admin/8.5-R11-update",
+                          "release-notes/8.5/admin/8.5-R12-update",
+                          "release-notes/8.5/admin/8.5-R13-update"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "release-notes/8.5/marketing/8.5-R02-update",
+                          "release-notes/8.5/marketing/8.5-R04-update",
+                          "release-notes/8.5/marketing/8.5-R05-update",
+                          "release-notes/8.5/marketing/8.5-R08-update",
+                          "release-notes/8.5/marketing/8.5-R16-update"
+                        ]
+                      },
+                      {
+                        "group": "Service",
+                        "pages": [
+                          "release-notes/8.5/service/8.5-R01-update",
+                          "release-notes/8.5/service/8.5-R02-update",
+                          "release-notes/8.5/service/8.5-R03-update",
+                          "release-notes/8.5/service/8.5-R04-update",
+                          "release-notes/8.5/service/8.5-R05-update",
+                          "release-notes/8.5/service/8.5-R06-update",
+                          "release-notes/8.5/service/8.5-R07-update",
+                          "release-notes/8.5/service/8.5-R08-update",
+                          "release-notes/8.5/service/8.5-R10-update",
+                          "release-notes/8.5/service/8.5-R11-update",
+                          "release-notes/8.5/service/8.5-R16-update",
+                          "release-notes/8.5/service/8.5-R17-update"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Pocket CRM",
+                    "pages": [
+                      "release-notes/pocket-crm/index",
+                      "release-notes/pocket-crm/9.1.6-update",
+                      "release-notes/pocket-crm/9.1.5-update",
+                      "release-notes/pocket-crm/9.1.4-update",
+                      "release-notes/pocket-crm/9.1.1-update",
+                      "release-notes/pocket-crm/9.0.9-update",
+                      "release-notes/pocket-crm/9.0.7-update",
+                      "release-notes/pocket-crm/9.0.5-update",
+                      "release-notes/pocket-crm/9.0.4-update"
+                    ]
+                  },
+                  {
+                    "group": "Database legacy",
+                    "pages": [
+                      "release-notes/database/changes-81",
+                      "release-notes/database/changes-75-80",
+                      "release-notes/database/changes-71-75",
+                      "release-notes/database/changes-70-71",
+                      "release-notes/database/changes-7",
+                      "release-notes/database/changes-6-7"
+                    ]
+                  },
+                  {
+                    "group": "API legacy",
+                    "pages": [
+                      "release-notes/api/ns-80",
+                      "release-notes/api/ns-75",
+                      "release-notes/api/ns-71",
+                      {
+                        "group": "SuperOffice 7.0",
+                        "pages": [
+                          "release-notes/api/ns-70/aliasing-on-argumentfunctions",
+                          "release-notes/api/ns-70/archiverestrictions",
+                          "release-notes/api/ns-70/collectionops",
+                          "release-notes/api/ns-70/commenting-queries",
+                          "release-notes/api/ns-70/culturedataformatter",
+                          "release-notes/api/ns-70/datetime",
+                          "release-notes/api/ns-70/dynamic-archive-provider",
+                          "release-notes/api/ns-70/fieldinfo-comments",
+                          "release-notes/api/ns-70/groupby-and-sentry",
+                          "release-notes/api/ns-70/multithreading",
+                          "release-notes/api/ns-70/osql-meets-sentry",
+                          "release-notes/api/ns-70/queryexecutionhelper",
+                          "release-notes/api/ns-70/real-dates",
+                          "release-notes/api/ns-70/row-improvements",
+                          "release-notes/api/ns-70/softtriggers"
+                        ]
+                      },
+                      "release-notes/api/ns-31",
+                      "release-notes/api/ns-30"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "End of life",
+                "pages": [
+                  "release-notes/eol/index",
+                  "release-notes/eol/lotus",
+                  "release-notes/eol/sharepoint-app",
+                  "release-notes/eol/pagebuilder",
+                  "release-notes/eol/reports",
+                  "release-notes/eol/service-compact-mode",
+                  "release-notes/eol/soap"
+                ]
+              }
+            ]
           },
           {
             "tab": "Developer guide",
@@ -99,7 +2628,172 @@
               {
                 "item": "Developer Portal",
                 "icon": "laptop-code",
-                "groups": []
+                "groups": [
+                  {
+                    "group": "Developer portal",
+                    "pages": [
+                      "en/developer-portal/about",
+                      "en/developer-portal/widgets/index",
+                      {
+                        "group": "Getting started",
+                        "pages": [
+                          "en/developer-portal/getting-started/get-access-to-sod",
+                          "en/developer-portal/getting-started/quickstart",
+                          "en/developer-portal/getting-started/app-envir",
+                          "en/developer-portal/getting-started/user-contexts",
+                          "en/developer-portal/getting-started/what-api-to-use"
+                        ]
+                      },
+                      {
+                        "group": "Create a new app",
+                        "pages": [
+                          "en/developer-portal/create-app/index",
+                          {
+                            "group": "Register the app",
+                            "pages": [
+                              "en/developer-portal/create-app/web-app",
+                              "en/developer-portal/create-app/native-app",
+                              "en/developer-portal/create-app/server-to-server-app",
+                              "en/developer-portal/create-app/sync-app",
+                              "en/developer-portal/create-app/empty-app"
+                            ]
+                          },
+                          "en/developer-portal/create-app/versioning",
+                          {
+                            "group": "Configuration",
+                            "pages": [
+                              "en/developer-portal/create-app/config/find-clientid",
+                              "en/developer-portal/create-app/config/get-client-secret",
+                              "en/developer-portal/create-app/config/cors-and-redirection-urls",
+                              "en/developer-portal/create-app/config/new-certificate",
+                              "en/developer-portal/create-app/config/redirects",
+                              "en/developer-portal/create-app/config/update-endpoints",
+                              "en/developer-portal/create-app/config/update-app-config",
+                              "en/developer-portal/create-app/config/app-config"
+                            ]
+                          },
+                          "en/developer-portal/create-app/request-to-publish",
+                          "en/developer-portal/create-app/message-center",
+                          "en/developer-portal/create-app/helper-application"
+                        ]
+                      },
+                      {
+                        "group": "Custom app",
+                        "pages": [
+                          "en/developer-portal/custom-app/checklist",
+                          "en/developer-portal/custom-app/validate",
+                          "en/developer-portal/custom-app/activate"
+                        ]
+                      },
+                      {
+                        "group": "Standard app",
+                        "pages": [
+                          "en/developer-portal/standard-app/index",
+                          {
+                            "group": "Requirements",
+                            "pages": [
+                              "en/developer-portal/standard-app/requirements/business",
+                              "en/developer-portal/standard-app/requirements/design",
+                              "en/developer-portal/standard-app/requirements/localization",
+                              "en/developer-portal/standard-app/requirements/marketing",
+                              "en/developer-portal/standard-app/requirements/partner-brand-guidelines",
+                              "en/developer-portal/standard-app/requirements/security",
+                              "en/developer-portal/standard-app/requirements/technical"
+                            ]
+                          },
+                          {
+                            "group": "Certification",
+                            "pages": [
+                              "en/developer-portal/standard-app/certification/initial-security-eval",
+                              "en/developer-portal/standard-app/certification/checklist",
+                              "en/developer-portal/standard-app/certification/certify-app",
+                              "en/developer-portal/standard-app/certification/watchcom-testimonials"
+                            ]
+                          },
+                          {
+                            "group": "App store",
+                            "pages": [
+                              "en/developer-portal/standard-app/app-store/app-store-info",
+                              "en/developer-portal/standard-app/app-store/update-partner-profile",
+                              "en/developer-portal/standard-app/app-store/update-app-page",
+                              "en/developer-portal/standard-app/app-store/seo",
+                              "en/developer-portal/standard-app/app-store/prices-and-terms",
+                              "en/developer-portal/standard-app/app-store/user-guide",
+                              "en/developer-portal/standard-app/app-store/images-and-videos",
+                              "en/developer-portal/standard-app/app-store/app-settings"
+                            ]
+                          },
+                          "en/developer-portal/standard-app/publish"
+                        ]
+                      },
+                      {
+                        "group": "Best practices",
+                        "pages": [
+                          {
+                            "group": "Tenant status",
+                            "pages": [
+                              "en/developer-portal/best-practices/tenant-status/check-status",
+                              "en/developer-portal/best-practices/tenant-status/get-notifications"
+                            ]
+                          },
+                          "en/developer-portal/best-practices/error-emails",
+                          "en/developer-portal/best-practices/system-messages"
+                        ]
+                      },
+                      {
+                        "group": "Partners and users",
+                        "pages": [
+                          "en/developer-portal/partner/update-profile",
+                          "en/developer-portal/partner/update-partner-settings",
+                          "en/developer-portal/partner/manage-technical-contacts",
+                          "en/developer-portal/partner/partner-settings",
+                          "en/developer-portal/partner/add-user",
+                          "en/developer-portal/partner/edit-user",
+                          "en/developer-portal/partner/remove-user",
+                          "en/developer-portal/partner/user-settings",
+                          "en/developer-portal/partner/manage-permissions"
+                        ]
+                      },
+                      {
+                        "group": "Provisioning",
+                        "pages": [
+                          "en/developer-portal/provisioning/consent",
+                          "en/developer-portal/provisioning/get-consent",
+                          "en/developer-portal/provisioning/revoke",
+                          "en/developer-portal/provisioning/update-consent-text"
+                        ]
+                      },
+                      {
+                        "group": "Tenant management",
+                        "pages": [
+                          "en/developer-portal/tenants/info",
+                          "en/developer-portal/tenants/authorization",
+                          "en/developer-portal/tenants/get"
+                        ]
+                      },
+                      {
+                        "group": "Analytics",
+                        "pages": [
+                          "en/developer-portal/analytics/logs",
+                          "en/developer-portal/analytics/metered-services",
+                          "en/developer-portal/analytics/failures",
+                          "en/developer-portal/analytics/metrics-performance"
+                        ]
+                      },
+                      {
+                        "group": "FAQ",
+                        "pages": [
+                          "en/developer-portal/faq/format-text",
+                          "en/developer-portal/faq/update-contact-person",
+                          "en/developer-portal/faq/update-app",
+                          "en/developer-portal/faq/turn-off-mirroring",
+                          "en/developer-portal/faq/run-website-on-iis-localhost",
+                          "en/developer-portal/faq/unable-to-approve-app"
+                        ]
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "item": "API",
