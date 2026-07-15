@@ -19,9 +19,9 @@ Administrators can add users one by one in the Admin client.
 **Procedure:**
 
 1. Sign in to the SuperOffice Admin client
-2. Select **Users** from the Navigator and then select the **Associates** tab.
+2. Select **Users** from the Navigator and then select the **Associates** tab.
 
-3. Click **Add** to open the **Contact** dialog and enter information:
+3. Click **Add** to open the **Contact** dialog and enter information:
 
     * Make sure the SuperOffice **User name** is equal to the username (UPN) in your IdP system if using [federated sign-in][1]] for this domain.
 
@@ -31,15 +31,14 @@ Administrators can add users one by one in the Admin client.
 
         ![Add user -screenshot][img1]
 
-4. Click **Save**. Users will receive an invitation email in their inbox and need to click the activation link to enable the account.
+4. Click **Save**. Users will receive an invitation email in their inbox and need to click the activation link to enable the account.
 
     ![invite Google -screenshot][img2]
     ![invite Microsoft 365 -screenshot][img3]
 
-<!-- Referenced links -->
-[1]: ../superid/sign-in-services.md
-[2]: index.md
+[1]: ../superid/sign-in-services
+[2]: ./index
 
-[img1]: media/soadm-add-user.png
-[img2]: media/googleinvite.png
-[img3]: media/o365invite.png
+[img1]: /media/loc/en/online/soadm-add-user.png
+[img2]: /media/loc/en/online/googleinvite.png
+[img3]: /media/loc/en/online/o365invite.png

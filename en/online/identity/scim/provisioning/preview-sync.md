@@ -13,7 +13,7 @@ index: true
 
 # Preview what will be synced
 
-Use the **Preview** tab to review the result of the current SCIM rule set.
+Use the **Preview** tab to review the result of the current SCIM rule set.
 
 Previewing synchronization is useful when you are defining your rules to explore the effect of a rule. It also gives you a clear view of how the provisioned users will appear in SuperOffice CRM Online.
 
@@ -23,11 +23,11 @@ Previewing synchronization is useful when you are defining your rules to explore
 
 ## Preview all users
 
-Open the **Preview** tab.
+Open the **Preview** tab.
 
 * At the top, you can see the total number of users received from Microsoft Entra ID (formerly AAD) and how many of those will be synced to SuperOffice.
 
-* The table shows the result of applying the mapping currently set in the **User sync rules** pane.
+* The table shows the result of applying the mapping currently set in the **User sync rules** pane.
 
 You can filter, sort, and reorder the information shown in the table.
 
@@ -80,10 +80,8 @@ A filter consists of a string and an operator and is located directly below the 
 
 1. Click the stroked-through funnel icon.
 
-<!-- Referenced links -->
-[1]: ../sign-in-to-scim.md
+[1]: ../sign-in-to-scim
 
-<!-- Referenced images -->
-[img1]: media/scim-preview-sync-company.png
-[img2]: media/scim-preview-sort.png
-[img3]: media/scim-preview-filter.png
+[img1]: /media/loc/en/online/scim-preview-sync-company.png
+[img2]: /media/loc/en/online/scim-preview-sort.png
+[img3]: /media/loc/en/online/scim-preview-filter.png

@@ -21,11 +21,11 @@ To add tables to the mirroring service blocked list, create a user preference wi
 
 The `prefValue` is where you store a comma-separated string of table names that are added to the blocked list during the replication phase.
 
-Adding a user preference **affects all database mirroring jobs for that tenant**. If another application also using mirroring, it too will be affected by this setting.
+Adding a user preference **affects all database mirroring jobs for that tenant**. If another application also using mirroring, it too will be affected by this setting.
 
 ## Adding a user preference
 
-You must use the API to add a user preference. There is no built-in **Preference** section for managing settings for database mirroring.
+You must use the API to add a user preference. There is no built-in **Preference** section for managing settings for database mirroring.
 
 ### REST API
 
@@ -58,5 +58,4 @@ using (PreferenceAgent prefAgent = new PreferenceAgent())
 }
 ```
 
-<!-- Referenced links -->
-[1]: blocked-tables.md
+[1]: ./blocked-tables

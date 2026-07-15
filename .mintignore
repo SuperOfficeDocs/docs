@@ -70,6 +70,7 @@ en/**
 !en/document/**
 !en/search-options/**
 !en/mobile/**
+!en/online/**
 
 # Ignore database except index files
 en/database/**

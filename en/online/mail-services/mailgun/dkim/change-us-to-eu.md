@@ -48,6 +48,5 @@ Please plan and schedule for this change as soon as possible, and no later than 
 
 More information on setting up DKIM in this [article][2].
 
-<!-- Referenced links -->
 [1]: https://community.superoffice.com/change-dkim/
-[2]: order-key.md
+[2]: ./order-key

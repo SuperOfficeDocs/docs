@@ -24,21 +24,21 @@ Imagine you are an online application vendor who has created the world's best tr
 
 SuperOffice Database Mirroring provides a way for online partners to have access to a tenants database. Partners do not get an exact copy of a tenant database, but a subset that contains more than enough data for what partner applications need for offline processing.
 
-A lot of data in the database is irrelevant and would not make sense to replicate. Data, such as last know window positions, criteria information, and things of that nature are not relevant for processing customer data. User credentials and sensitive information are also removed, and as a result **you will not be able to connect to the mirror database using any SuperOffice client or APIs**.
+A lot of data in the database is irrelevant and would not make sense to replicate. Data, such as last know window positions, criteria information, and things of that nature are not relevant for processing customer data. User credentials and sensitive information are also removed, and as a result **you will not be able to connect to the mirror database using any SuperOffice client or APIs**.
 
-It's important to note that Database Mirroring is not itself an application. Similar to how a window is a property of a house, Database Mirroring is a property of an application. It's an option that can be enabled or disabled for any online application. The primary components that make up Database Mirroring are:
+It's important to note that Database Mirroring is not itself an application. Similar to how a window is a property of a house, Database Mirroring is a property of an application. It's an option that can be enabled or disabled for any online application. The primary components that make up Database Mirroring are:
 
 * The registered application inside SuperOffice Operations Center (OC).
 * The Mirroring Task, which is a background service in OC
-* A web service that implements both the IMirrorClientService and IMirrorAdmin interfaces.
+* A web service that implements both the IMirrorClientService and IMirrorAdmin interfaces.
 
-The [registered application][1] contains all of the information provided by the partner about the application: description, contact information, technical contact, and so on. It also contains the application id and application token, which was generated when the partner registered the application, as well as whether Database Mirroring is enabled or not. When enabled, the application definition must also contain the Mirroring URL; which is where the Mirroring Task will send the data.
+The [registered application][1] contains all of the information provided by the partner about the application: description, contact information, technical contact, and so on. It also contains the application id and application token, which was generated when the partner registered the application, as well as whether Database Mirroring is enabled or not. When enabled, the application definition must also contain the Mirroring URL; which is where the Mirroring Task will send the data.
 
-The Mirroring Task is the responsibility of SuperOffice. It represents the background process that transfers data from a tenant database to a partner's registered application. It resides inside OC, and is responsible for provisioning the change tracking in the customer database as necessary.
+The Mirroring Task is the responsibility of SuperOffice. It represents the background process that transfers data from a tenant database to a partner's registered application. It resides inside OC, and is responsible for provisioning the change tracking in the customer database as necessary.
 
 ![x -screenshot][img2]
 
-Partners must create and host the web service that receives the data. Their web service must implement the IMirroringClient interface. The IMirrorClientService interface is responsible for establishing a trusted connection, receiving the data, and performing the actual mirroring, such as provisioning of tables and performing schema updates.
+Partners must create and host the web service that receives the data. Their web service must implement the IMirroringClient interface. The IMirrorClientService interface is responsible for establishing a trusted connection, receiving the data, and performing the actual mirroring, such as provisioning of tables and performing schema updates.
 
 ## Implementation Overview
 
@@ -73,15 +73,13 @@ If an older original is restored from backup, then the mirror should be thrown a
 
 ![x -screenshot][img4]
 
-<!-- Referenced links -->
-[1]: ../../developer-portal/create-app/index.md
-[2]: ../../api/authentication/online/auth-application/sign-system-user-token.md
-[3]: overview.md
-[4]: setup-guide.md
-[5]: migrate.md
+[1]: ../../developer-portal/create-app/index
+[2]: ../../api/authentication/online/auth-application/sign-system-user-token
+[3]: ./overview
+[4]: ./setup-guide
+[5]: ./migrate
 
-<!-- Referenced images -->
-[img1]: media/trendsyapp.png
-[img2]: media/trendsy.png
-[img3]: media/authenticationsequencediagram.png
-[img4]: media/mirroringprinciplessequencediagram.png
+[img1]: /media/loc/en/online/trendsyapp.png
+[img2]: /media/loc/en/online/trendsy.png
+[img3]: /media/loc/en/online/authenticationsequencediagram.png
+[img4]: /media/loc/en/online/mirroringprinciplessequencediagram.png

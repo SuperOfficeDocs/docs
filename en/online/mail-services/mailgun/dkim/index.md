@@ -38,8 +38,7 @@ Not all receiving mail servers support the DKIM standard.
 
 Read more about DKIM in  [Mail - Options and security][4].
 
-<!-- Referenced links -->
 [1]: https://en.wikipedia.org/wiki/Domain_Name_System
 [2]: https://en.wikipedia.org/wiki/MX_record
 [3]: https://support.google.com/a/answer/4536026
-[4]: ../security.md
+[4]: ../security

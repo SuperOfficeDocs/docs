@@ -45,7 +45,6 @@ Note that this is not the same as using the same username and password to sign i
 
 [Read more about our sign-in services][3]
 
-<!-- Referenced links -->
-[1]: ../federated-id-and-identity-providers.md
-[2]: onsite-sso.md
-[3]: ../superid/overview.md
+[1]: ../federated-id-and-identity-providers
+[2]: ./onsite-sso
+[3]: ../superid/overview

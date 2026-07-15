@@ -23,14 +23,12 @@ When setting up a Microsoft Entra (formerly AAD) enterprise application for SCIM
 
 1. [Sign in to the SuperOffice Identity Manager][1].
 
-2. Click **SCIM Sync Config** in the upper right corner.
+2. Click **SCIM Sync Config** in the upper right corner.
 
 3. Copy the tenant URL and token from the dialog box.
 
     ![SCIM sync config -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: ../sign-in-to-scim.md
+[1]: ../sign-in-to-scim
 
-<!-- Referenced images -->
-[img1]: media/scim-sync-config.png
+[img1]: /media/loc/en/online/scim-sync-config.png

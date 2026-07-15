@@ -38,7 +38,6 @@ The 1st time an existing password user tries to sign in after an [identity provi
 
 **This completes the transition of the user account.**
 
-<!-- Referenced links -->
-[1]: ../../federated-id-and-identity-providers.md
-[2]: map-idp-usernames.md
-[3]: register-idp.md
+[1]: ../../federated-id-and-identity-providers
+[2]: ./map-idp-usernames
+[3]: ./register-idp

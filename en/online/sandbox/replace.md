@@ -31,7 +31,7 @@ In the following example, cust34506 is the sandbox environment, cust21513 is the
 
     ![OC select tenant -screenshot][img1]
 
-2. Locate the **Test Environment Info** tile and click anywhere marked as yellow in the screenshot below.
+2. Locate the **Test Environment Info** tile and click anywhere marked as yellow in the screenshot below.
 
     ![OC Test Environment Info tile -screenshot][img2]
 
@@ -45,7 +45,7 @@ In the following example, cust34506 is the sandbox environment, cust21513 is the
 
     ![OC Replace sandbox, map users and licenses -screenshot][img4]
 
-5. To reduce the risk of sending emails from the sandbox, we invalidate all email addresses by default. For example, `jenny@company.com` is change to `jenny_company.com@mailinator.com`. You may specify another email domain, **default is mailinator.com**.
+5. To reduce the risk of sending emails from the sandbox, we invalidate all email addresses by default. For example, `jenny@company.com` is change to `jenny_company.com@mailinator.com`. You may specify another email domain, **default is mailinator.com**.
 
     ![OC Replace sandbox, invalidate email addresses -screenshot][img5]
 
@@ -75,20 +75,18 @@ In the following example, cust34506 is the sandbox environment, cust21513 is the
 
 12. When the dialog disappears, your production sandbox is ready with a fresh new copy from the source.
 
-<!-- Referenced links -->
 [1]: https://online.superoffice.com/oc2
-[2]: index.md
-[3]: clone-to.md
+[2]: ./index
+[3]: ./clone-to
 
-<!-- Referenced images -->
-[img1]: media/imaget39w.png
-[img2]: media/imagezzpup.png
-[img3]: media/imageclhp.png
-[img4]: media/replace1.png
-[img5]: media/replace2.png
-[img6]: media/replace3.png
-[img7]: media/replace4.png
-[img8]: media/replace5.png
-[img9]: media/replace6.png
-[img10]: media/replace7.png
-[img11]: media/image9vgqg.png
+[img1]: /media/loc/en/online/imaget39w.png
+[img2]: /media/loc/en/online/imagezzpup.png
+[img3]: /media/loc/en/online/imageclhp.png
+[img4]: /media/loc/en/online/replace1.png
+[img5]: /media/loc/en/online/replace2.png
+[img6]: /media/loc/en/online/replace3.png
+[img7]: /media/loc/en/online/replace4.png
+[img8]: /media/loc/en/online/replace5.png
+[img9]: /media/loc/en/online/replace6.png
+[img10]: /media/loc/en/online/replace7.png
+[img11]: /media/loc/en/online/image9vgqg.png

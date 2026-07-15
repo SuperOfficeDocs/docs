@@ -17,7 +17,7 @@ Both SuperOffice onsite installations and CRM Online applications use the same N
 
 **Federated authentication** is a way SuperOffice can provide a single-sign-in experience for multi-tenant users and applications that serve multi-tenant installations.
 
-The SuperOffice CRM Online environment hosts an app store with several partner integrations. These integrations are comprised of Business to Consumer (B2C) applications. Most applications expose functionality inside SuperOffice by adding web panels in relevant areas, while others add a button that opens a web page to the application. All application vendors have their own cloud platforms to manage customers and tenant users.
+The SuperOffice CRM Online environment hosts an app store with several partner integrations. These integrations are comprised of Business to Consumer (B2C) applications. Most applications expose functionality inside SuperOffice by adding web panels in relevant areas, while others add a button that opens a web page to the application. All application vendors have their own cloud platforms to manage customers and tenant users.
 
 ## Integration points (online)
 
@@ -32,8 +32,5 @@ The SuperOffice CRM Online environment hosts an app store with several partner i
 
 * [CRM Online SDK][9]
 
-<!-- Referenced links -->
-[8]: ../identity/federated-auth.md
-[9]: ../../../api/reference/webapi/index.md
-
-<!-- Referenced images -->
+[8]: ../identity/federated-auth
+[9]: ../../../api/reference/webapi/index

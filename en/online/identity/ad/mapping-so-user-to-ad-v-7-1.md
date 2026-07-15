@@ -12,7 +12,7 @@ index: true
 
 # Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
 
-The new implementation is based on searching in the Active Directory – rather than first looking up all groups and then loading all users in the selected group. A set of additional configuration options has been added as well. This configuration is required when the user executing SoAdmin has limited rights to the domain or if there is a complex domain infrastructure in place. This will typically be the case in large organizations, organizations with multiple domain controllers, when using hosting providers or in Citrix environments.
+The new implementation is based on searching in the Active Directory - rather than first looking up all groups and then loading all users in the selected group. A set of additional configuration options has been added as well. This configuration is required when the user executing SoAdmin has limited rights to the domain or if there is a complex domain infrastructure in place. This will typically be the case in large organizations, organizations with multiple domain controllers, when using hosting providers or in Citrix environments.
 
 This advanced configuration has to be tweaked manually in the SuperOffice.config file. These settings are not added by default when installing the Windows client, so they have to be added manually.
 
@@ -68,7 +68,7 @@ Logging warnings to a file must be turned on to see the warnings produced by Net
 
     ![image -screenshot][img7]
 
-If something goes wrong like if an invalid user is specified, a log file with today’s date will be produced.
+If something goes wrong like if an invalid user is specified, a log file with today's date will be produced.
 
 ![image -screenshot][img8]
 
@@ -81,7 +81,7 @@ Element:
 Message: Logon failure: unknown user name or bad password.
 ```
 
-Customers have experienced situations with complex domain infrastructures where the Container property has to be specified as well – even if the user is to access the domain at the root level. The Container can also be used to limit the surface area of Active Directory made available to SoAdmin.
+Customers have experienced situations with complex domain infrastructures where the Container property has to be specified as well - even if the user is to access the domain at the root level. The Container can also be used to limit the surface area of Active Directory made available to SoAdmin.
 
 Limiting users to a particular organization unit can be an example of this.
 
@@ -91,17 +91,15 @@ By specifying the full name of this Organization Unit in the SuperOffice.config 
 
 ![image][img10]
 
-<!-- Referenced links -->
-[1]: ../../../api/config/security.md
+[1]: ../../../api/config/security
 
-<!-- Referenced images -->
-[img1]: media/1642-1987.jpg
-[img2]: media/1644-1989.jpg
-[img3]: media/1646-1991.jpg
-[img4]: media/1648-1993.jpg
-[img5]: media/1650-1995.jpg
-[img6]: media/1652-1997.jpg
-[img7]: media/1654-1999.jpg
-[img8]: media/1656-2001.jpg
-[img9]: media/1658-2003.jpg
-[img10]: media/1660-2005.jpg
+[img1]: /media/loc/en/online/1642-1987.jpg
+[img2]: /media/loc/en/online/1644-1989.jpg
+[img3]: /media/loc/en/online/1646-1991.jpg
+[img4]: /media/loc/en/online/1648-1993.jpg
+[img5]: /media/loc/en/online/1650-1995.jpg
+[img6]: /media/loc/en/online/1652-1997.jpg
+[img7]: /media/loc/en/online/1654-1999.jpg
+[img8]: /media/loc/en/online/1656-2001.jpg
+[img9]: /media/loc/en/online/1658-2003.jpg
+[img10]: /media/loc/en/online/1660-2005.jpg

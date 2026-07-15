@@ -30,16 +30,14 @@ Automatic sync is a powerful tool for when you have set up your mapping.
 
 4. [Rearrange or activate/deactivate][5] rules if necessary.
 
-5. Slide **User sync active** to *on*.
+5. Slide **User sync active** to *on*.
 
     ![user sync active slider -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: create-azure-enterprise-app.md
-[2]: ../sign-in-to-scim.md
-[3]: ../provisioning/add-scim-rule.md
-[4]: ../provisioning/preview-sync.md
-[5]: ../provisioning/activate-deactivate-rules.md
+[1]: ./create-azure-enterprise-app
+[2]: ../sign-in-to-scim
+[3]: ../provisioning/add-scim-rule
+[4]: ../provisioning/preview-sync
+[5]: ../provisioning/activate-deactivate-rules
 
-<!-- Referenced images -->
-[img1]: media/user-sync-active.png
+[img1]: /media/loc/en/online/user-sync-active.png
