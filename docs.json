@@ -16509,6 +16509,86 @@
     {
       "source": "/en/document/templates/index",
       "destination": "/en/document/templates/variables/index"
+    },
+    {
+      "source": "/en/admin/options/learn/freetext-search/enable",
+      "destination": "/en/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/en/admin/options/learn/freetext-search/configure",
+      "destination": "/en/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/en/admin/options/learn/freetext-search/index",
+      "destination": "/en/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/en/search-options/admin/index",
+      "destination": "/en/search-options/admin/configure-free-text-search"
+    },
+    {
+      "source": "/en/search-options/admin/regenerate-index",
+      "destination": "https://help.superoffice.com/docs/11/en/search-options/admin/regenerate-index.html"
+    },
+    {
+      "source": "/en/admin/options/learn/freetext-search/stopwords",
+      "destination": "/en/search-options/admin/stopwords"
+    },
+    {
+      "source": "/en/search-options/selection/learn/howto/print-company-reports",
+      "destination": "/en/search-options/selection/learn/howto/print"
+    },
+    {
+      "source": "/en/search-options/selection/learn/update/add-remove-members-static",
+      "destination": "/en/search-options/selection/learn/add-remove-members-static"
+    },
+    {
+      "source": "/en/search-options/selection/learn/create/combine",
+      "destination": "/en/search-options/selection/learn/combine"
+    },
+    {
+      "source": "/en/search-options/selection/learn/update/copy-members-to",
+      "destination": "/en/search-options/selection/learn/copy-members-to"
+    },
+    {
+      "source": "/en/sale/saint/learn/using-status-monitors-in-dynamic-selections",
+      "destination": "/en/search-options/selection/learn/create"
+    },
+    {
+      "source": "/en/search-options/selection/learn/create/copy",
+      "destination": "/en/search-options/selection/learn/create"
+    },
+    {
+      "source": "/en/search-options/selection/learn/create/index",
+      "destination": "/en/search-options/selection/learn/create"
+    },
+    {
+      "source": "/en/search-options/selection/learn/create/tutorial",
+      "destination": "/en/search-options/selection/learn/create"
+    },
+    {
+      "source": "/en/search-options/selection/learn/combined-selections",
+      "destination": "/en/search-options/selection/learn/index"
+    },
+    {
+      "source": "/en/search-options/selection/learn/dynamic-selections",
+      "destination": "/en/search-options/selection/learn/index"
+    },
+    {
+      "source": "/en/search-options/selection/learn/static-selections",
+      "destination": "/en/search-options/selection/learn/index"
+    },
+    {
+      "source": "/en/search-options/selection/learn/screen/index",
+      "destination": "/en/search-options/selection/learn/index"
+    },
+    {
+      "source": "/en/search-options/selection/learn/update/delete",
+      "destination": "/en/search-options/selection/learn/update"
+    },
+    {
+      "source": "/en/search-options/selection/learn/update/index",
+      "destination": "/en/search-options/selection/learn/update"
     }
   ]
 }
