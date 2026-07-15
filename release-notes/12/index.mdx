@@ -1,0 +1,170 @@
+---
+uid: release-notes-12
+title: What's new in SuperOffice 12
+description: Release notes. What's new in SuperOffice 12
+keywords: SuperOffice CRM 12
+author: kirstiaa
+date: 07.09.2026
+version: 12
+content_type: release-notes
+audience: person
+audience_tooltip: SuperOffice CRM
+redirect_from:
+  - /release-notes/12/admin/12.1-update
+  - /release-notes/12/admin/index
+  - /release-notes/12/core-crm/12.2-update
+  - /release-notes/12/core-crm/index
+  - /release-notes/12/service/12.0-update
+  - /release-notes/12/service/index
+language: en
+---
+
+# What's new in SuperOffice 12
+
+## Summary of highlights
+
+**SuperOffice 12** - a new main version of SuperOffice CRM where we focus on AI to become part of how you work every day.
+
+From this version, all feature updates are available to SuperOffice Online customers only. Onsite installations will receive security updates only.
+
+## Feature updates
+
+<Update label="12.2" description="09.07.2026" tags={["Core CRM"]}>
+<a id="12.2"></a>
+
+### <a id="12.2-core-1"></a><Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Measure sale cycles
+
+Understanding how long deals take to close helps you spot what's working and where deals stall. The **Sale cycle** field shows the number of days from when a sale is created until it's set to **Sold** or **Lost** - the count appears once the sale reaches one of these statuses, rather than running while it's still open. For open sales, use the **Days in stage** field instead.
+
+Without this, tracking cycle length across reps, teams, and segments means piecing information together by hand. The **Sale cycle** field puts this on the dashboard, so the pattern is visible at a glance rather than something you have to dig for.
+
+You'll find it in the **Dashboard** module, as a filter in **Find**, and as a column in archives.
+
+Two ready-made tile templates in the **Library** make it easy to get started:
+
+* My average sale cycle per sale type this and previous year
+* My group's average sale cycle per sale type this and previous year
+
+For example, a sales manager could add the group tile to compare how cycle length trends across teams and use that to sharpen forecasting.
+
+![Dashboard with My average and my groups sale cycle -screenshot][img1]
+
+![Dashboard tile edit for sale cycle -screenshot][img2]
+
+#### Find - Sale cycle as criteria and column
+
+The **Sale cycle** criteria and column let you see how long a sale has been open. Because the field shows a number of days, you can search between, above, or below any figure you choose.
+
+Adding **Sale cycle** as a column in your sale selections gives you a quick view of how long each sale has been in progress, right alongside the rest of your results.
+
+![Use Sale cycle as criteria to set up sale selections -screenshot][img3]
+
+<Note>
+The **Sale cycle** shows 0 days until the sale is set to **Sold** or **Lost**. For **open** sales, use the **Days in stage** field instead.
+</Note>
+
+### <a id="12.2-core-2"></a><Badge icon="user" color="blue">Core CRM</Badge> Email and Document - Download the email or document file
+
+Sometimes you need a copy of an email or document outside SuperOffice - to forward it another way, archive it locally, or open it in a different tool. You can now **download** the email or document file from any archive where you see it, and from the document dialog.
+
+Downloading an email lets you open the stored message in your local email client. As **Outlook Mail Link (OML)** is phased out, this gives you a straightforward way to keep working with emails in your local Outlook installation.
+
+In any archive that shows documents and emails, the context menu includes a **Download** option. Multi-select isn't supported.
+
+![Context menu on Activities archive for Contact -screenshot][img4]
+
+Opening an email inside SuperOffice shows the **Download** option in the **Task** menu.
+
+![Task menu on an email -screenshot][img5]
+
+An email in the **Inbox** also has the **Download** option in the **Task** menu.
+
+![Inbox shows Task menu with Download item -screenshot][img6]
+
+![Download the email or document from Task button -screenshot][img7]
+
+</Update>
+
+<Update label="12.1" description="16.06.2026" tags={["Settings and maintenance"]}>
+<a id="12.1"></a>
+
+### <a id="12.1-admin-1"></a><Badge icon="gear" color="orange">Settings and maintenance</Badge> System design - Webhooks management panel
+
+The **Webhooks** panel gives administrators a visual way to manage, monitor, and recover webhooks without writing code or using the API.
+
+Go to **Settings and maintenance** > **System design** > **Webhooks** to see all configured webhooks in a sortable, filterable overview. Each row shows the webhook name, health status, target, subscribed events, last delivery time, last event, and consecutive errors for the last 24 hours.
+
+![Settings - Webhooks panel overview -screenshot][img8]
+
+Health status is color-coded: green for healthy, amber for active with failures, grey for manually stopped, and red for automatically deactivated.
+
+To **create and edit webhooks** you get a guided form. Select the events to subscribe to by entity type, set the destination as an external HTTPS URL or a CRMScript, and test the connection inline before saving. A primary error notification email address is required - the form cannot be submitted without one. Additional CRM users (in your company) and external email addresses can be added as recipients, and you can choose whether to be notified by email, in-app, or both.
+
+The **context menu** gives you options to edit, copy, toggle the active/stopped state, restart, or delete a webhook. Copying a webhook creates a duplicate with a "(copy)" suffix in stopped state.
+
+![Settings - Webhook details and settings -screenshot][img9]
+
+<Note>
+After 9 consecutive delivery failures, the system automatically deactivates the webhook. A red banner on the webhook shows the failure count and last error in plain language. Use the **Restart** button to re-enable it.
+</Note>
+
+When a webhook is automatically deactivated, all users configured to receive notifications for that webhook get an in-app banner notification with a direct link to the delivery log for that webhook.
+
+The **Events** tab shows the full delivery history - timestamp, status, attempt count, and error code. Failed events can be retried individually. The list can be exported to CSV.
+
+Read more about [managing webhooks][7].
+
+</Update>
+
+<Update label="12.0" description="01.06.2026" tags={["Service"]}>
+<a id="12.0"></a>
+
+### <a id="12.0-service-1"></a><Badge icon="ticket" color="green">Service</Badge> Spam classification on requests
+
+The **Mark as Spam** action lets users classify fraudulent or unwanted requests. Spam requests are excluded from all views, searches, reports, and selections.
+
+You'll see **Mark as Spam** in the context menu for requests in your lists, in the **Task** menu on one request, and in the Task menu on request selections.
+
+Once you select **Mark as Spam**, a confirmation dialog (Yes/No) appears to confirm that you want to set the request(s) as spam.
+
+![Request list showing the Mark as spam context menu -screenshot][img10]
+
+* Only users with the **Can mark requests as SPAM** functional right can classify requests. The right is configured by an administrator per [role][8] in Settings and maintenance.
+
+* Requests marked as spam move to the **Recycle bin**, where you can **restore** them if needed. Find the **Recycle bin** in your **Personal settings** menu.
+
+* The spam requests are **permanently deleted** from the Recycle bin after a configurable period. The default is 14 days.
+
+</Update>
+
+## Pilot programs
+
+Some features are available to selected customers as part of ongoing pilots. See the [pilot program overview][1] for more details.
+
+## Related content
+
+* [Mobile CRM version 11.1][2]
+* [Product integrations release overview][3]
+* [SuperOffice App Store][4]
+* [New or updated App Store apps][5]
+* [Release notes in the Community][6]
+
+[1]: ../index#pilot
+[2]: ../mobile/index
+[3]: ../integrations/index
+[4]: https://appstore.superoffice.com/
+[5]: https://appstore.superoffice.com/Category/new-and-updated
+[6]: https://community.superoffice.com/en/product-releases/release-notes/
+[7]: ../../docs/en/automation/webhook/index
+[8]: ../../docs/en/admin/user-management/role/functional-rights
+
+[img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
+[img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
+[img3]: /media/loc/en/search-options/selection-column-settings-sale-cycle.png
+[img4]: /media/loc/en/contact/contact-activites-email-context-menu-download.png
+[img5]: /media/loc/en/email/email-dialog-download.png
+[img6]: /media/loc/en/email/inbox-email-task-button-download.png
+[img7]: /media/loc/en/document/document-email-dialog-task-download.png
+[img8]: /media/loc/en/admin/admin-system-design-webhook-overview.png
+[img9]: /media/loc/en/admin/admin-system-design-webhook-edit.png
+[img10]: /media/loc/en/request/requests-list-mark-spam-context-menu.png
