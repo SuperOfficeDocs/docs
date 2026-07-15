@@ -75,7 +75,142 @@
           {
             "tab": "Mobile",
             "icon": "mobile-screen",
-            "groups": []
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "en/mobile/index"
+                ]
+              },
+              {
+                "group": "First time use/log in",
+                "pages": [
+                  "en/mobile/login"
+                ]
+              },
+              {
+                "group": "Set up email account",
+                "pages": [
+                  "en/mobile/set-up-email"
+                ]
+              },
+              {
+                "group": "Enable caller ID",
+                "pages": [
+                  "en/mobile/caller-id"
+                ]
+              },
+              {
+                "group": "Interface guide",
+                "pages": [
+                  "en/mobile/interface-guide"
+                ]
+              },
+              {
+                "group": "Companies",
+                "pages": [
+                  "en/mobile/company/index",
+                  "en/mobile/company/create"
+                ]
+              },
+              {
+                "group": "Contacts",
+                "pages": [
+                  "en/mobile/contact/index",
+                  "en/mobile/contact/create",
+                  "en/mobile/contact/update",
+                  "en/mobile/contact/scan-business-card",
+                  "en/mobile/contact/copy-to-contact-list",
+                  "en/mobile/contact/show-address-in-map"
+                ]
+              },
+              {
+                "group": "Diary",
+                "pages": [
+                  "en/mobile/diary/index",
+                  "en/mobile/diary/create-appointment",
+                  "en/mobile/diary/update-appointment",
+                  "en/mobile/diary/invitations",
+                  "en/mobile/diary/join-video-meeting"
+                ]
+              },
+              {
+                "group": "Sales",
+                "pages": [
+                  "en/mobile/sale/index",
+                  "en/mobile/sale/create",
+                  "en/mobile/sale/update",
+                  "en/mobile/sale/approve-quote"
+                ]
+              },
+              {
+                "group": "Projects",
+                "pages": [
+                  "en/mobile/project/index",
+                  "en/mobile/project/create",
+                  "en/mobile/project/update"
+                ]
+              },
+              {
+                "group": "Requests",
+                "pages": [
+                  "en/mobile/request/index",
+                  "en/mobile/request/create",
+                  "en/mobile/request/update",
+                  "en/mobile/request/respond"
+                ]
+              },
+              {
+                "group": "Documents",
+                "pages": [
+                  "en/mobile/document/index",
+                  "en/mobile/document/create",
+                  "en/mobile/document/update"
+                ]
+              },
+              {
+                "group": "Dashboards",
+                "pages": [
+                  "en/mobile/dashboard/index"
+                ]
+              },
+              {
+                "group": "Send messages (email or SMS)",
+                "pages": [
+                  "en/mobile/send-email-sms"
+                ]
+              },
+              {
+                "group": "Manage notifications",
+                "pages": [
+                  "en/mobile/manage-notifications"
+                ]
+              },
+              {
+                "group": "Settings",
+                "pages": [
+                  "en/mobile/settings"
+                ]
+              },
+              {
+                "group": "Customizing the app",
+                "pages": [
+                  "en/mobile/customization"
+                ]
+              },
+              {
+                "group": "Security",
+                "pages": [
+                  "en/mobile/security"
+                ]
+              },
+              {
+                "group": "Client requirements",
+                "pages": [
+                  "en/mobile/client-requirements"
+                ]
+              }
+            ]
           },
           {
             "tab": "Integrations",
