@@ -17945,6 +17945,10 @@
     {
       "source": "/en/globalization-and-localization/learn/translate-fields",
       "destination": "/en/localization/learn/translate-fields"
+    },
+    {
+      "source": "/en/lead/index",
+      "destination": "/en/lead/learn/index"
     }
   ]
 }

@@ -1,6 +1,7 @@
 ---
 uid: help-en-lead-management
 title: Lead management
+sidebarTitle: "Overview"
 description: Learn how to understand and work with leads in SuperOffice CRM.
 keywords: lead status, lead, potential customer, qualification, mql, sales process
 author: digitaldiina
@@ -31,11 +32,11 @@ A lead typically moves through several stages before becoming a sales opportunit
 
 ```mermaid
 flowchart LR
-    A[Initial interest<br>Lead] --> B[MQL<br>Marketing qualified lead]
-    B --> C[SQL / Qualified<br>Sales-ready lead]
-    C --> D[Opportunity<br>Active sales process]
-    C --> E[Disqualified<br>Not a good fit]
-    B --> F[Re-nurture<br>Follow-up later]
+    A[Initial interest<br />Lead] --> B[MQL<br />Marketing qualified lead]
+    B --> C[SQL / Qualified<br />Sales-ready lead]
+    C --> D[Opportunity<br />Active sales process]
+    C --> E[Disqualified<br />Not a good fit]
+    B --> F[Re-nurture<br />Follow-up later]
     D --> G[Sale]
 ```
 
@@ -49,8 +50,9 @@ When this setting is active, the field appears directly below the **Category** f
 
 When a new contact is created for a company with lead status enabled, the field is automatically set to *Open*. If the company's category later changes to one that does not use lead status, the field disappears from view but the last recorded value is retained. This ensures that lead information remains searchable and available in dashboards, even when it is no longer editable in the UI.
 
-> [!TIP]
-> If you do not see the **Lead status** field on a contact, its category is not part of the *Potential customer* group.
+<Tip>
+If you do not see the **Lead status** field on a contact, its category is not part of the *Potential customer* group.
+</Tip>
 
 ### Predefined statuses
 
@@ -114,14 +116,12 @@ Lead information is shown in several places in SuperOffice CRM, making it easy t
 * [Manage lead statuses][2]
 * [Automate lead categorization][6]
 
-<!-- Referenced links -->
-[1]: ../admin/add-company-category.md
-[2]: ../admin/add-lead-status.md
-[3]: ../admin/index.md
-[4]: work-with-leads.md
-[5]: ../../marketing/utm/learn/index.md
-[6]: ../admin/category-automation.md
+[1]: ../admin/add-company-category
+[2]: ../admin/add-lead-status
+[3]: ../admin/index
+[4]: ./work-with-leads
+[5]: ../../marketing/utm/learn/index
+[6]: ../admin/category-automation
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/lead/company-lead-with-contacts-section-tab.png
 [img2]: ../../../media/loc/en/lead/contact-card-open-lead.png

@@ -17,9 +17,11 @@ index: true
 language: en
 ---
 
+import ReqAdmin from "../../learn/includes/req-admin.md";
+
 # Automate lead categorization
 
-[!include[Must be admin](../../learn/includes/req-admin.md)]
+<ReqAdmin />
 
 Automating company category updates helps reduce manual work and ensures your data stays accurate. When the [status of a sale][6] changes or a [lead status][4] is updated, the related company can automatically be updated with the correct category.
 
@@ -67,8 +69,9 @@ You can enable any or all of the following automation rules:
 
 1. Click **Save** to apply your changes, or click **Cancel** to discard them.
 
-    > [!NOTE]
-    > The **Save** button is enabled only after you have selected a category in the **Set category to** field for all enabled toggles.
+    <Note>
+    The **Save** button is enabled only after you have selected a category in the **Set category to** field for all enabled toggles.
+    </Note>
 
 ## When to use user confirmation
 
@@ -102,14 +105,12 @@ Now, whenever a sale linked to a company in the *Potential customer* group is ma
 * [Update a sale][7]
 * [Sales guides][5]
 
-<!-- Referenced links -->
-[1]: add-company-category.md
-[2]: add-lead-status.md
-[3]: ../learn/index.md
-[4]: ../learn/index.md#status
-[5]: ../../sale/learn/sales-guides.md
-[6]: ../../sale/learn/index.md
-[7]: ../../sale/learn/update.md
+[1]: ./add-company-category
+[2]: ./add-lead-status
+[3]: ../learn/index
+[4]: ../learn/index#status
+[5]: ../../sale/learn/sales-guides
+[6]: ../../sale/learn/index
+[7]: ../../sale/learn/update
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/lead/lead-categorization.png

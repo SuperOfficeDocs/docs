@@ -17,14 +17,16 @@ index: true
 language: en
 ---
 
+import ReqAdmin from "../../learn/includes/req-admin.md";
+
 # Company category and category group
 
-[!include[Must be admin](../../learn/includes/req-admin.md)]
+<ReqAdmin />
 
-The **Company – Category** list defines the types of companies in your database, such as *Customer*, *Partner*, or *Lead*.
+The **Company - Category** list defines the types of companies in your database, such as *Customer*, *Partner*, or *Lead*.
 Each category can belong to a **Category group** that determines how it behaves in searches, automations, and lead management.
 
-You manage company categories in **Settings and maintenance** under **Lists** > **Company – Category**.
+You manage company categories in **Settings and maintenance** under **Lists** > **Company - Category**.
 
 ## About category groups
 
@@ -42,7 +44,7 @@ Category groups provide a way to classify categories by purpose and prevent unwa
 
 1. Select <i class="ph ph-list-bullets" aria-hidden="true"></i> **Lists** in the Navigator.
 
-1. From the dropdown menu, choose **Company – Category**. The **Items** tab displays all existing categories.
+1. From the dropdown menu, choose **Company - Category**. The **Items** tab displays all existing categories.
 
 1. Click **Add** to open the **Edit list item** dialog.
 
@@ -62,16 +64,17 @@ Category groups provide a way to classify categories by purpose and prevent unwa
 
 1. Click **OK** to save the new category or **Cancel** to discard your changes.
 
-![Editing a company category in the Company – Category list, showing the Potential Customer group selected and the option to enable lead status for the category. -screenshot][img1]
+![Editing a company category in the Company - Category list, showing the Potential Customer group selected and the option to enable lead status for the category. -screenshot][img1]
 
 ## Edit or delete company categories
 
-> [!NOTE]
-> Editing or deleting categories in use can lead to inconsistent data.
-> Changing a category group or disabling lead status can leave companies and contacts with lead information that can no longer be updated.
-> Review category usage carefully before making changes.
+<Note>
+Editing or deleting categories in use can lead to inconsistent data.
+Changing a category group or disabling lead status can leave companies and contacts with lead information that can no longer be updated.
+Review category usage carefully before making changes.
+</Note>
 
-1. Open the **Company – Category** list.
+1. Open the **Company - Category** list.
 
 1. To edit:
 
@@ -86,7 +89,7 @@ Category groups provide a way to classify categories by purpose and prevent unwa
 
 ## Restore deleted company categories
 
-1. Open the **Company – Category** list.
+1. Open the **Company - Category** list.
 
 1. Select **Show deleted items and headings**.
 
@@ -102,11 +105,9 @@ Category groups provide a way to classify categories by purpose and prevent unwa
 * [Automate lead categorization][4]
 * [User group filtering][4]
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: ../learn/index.md
-[3]: add-lead-status.md
-[4]: ../../admin/lists/user-group-filtering.md
+[1]: ./index
+[2]: ../learn/index
+[3]: ./add-lead-status
+[4]: ../../admin/lists/user-group-filtering
 
-<!-- Referenced images -->
 [img1]: ../../../media/loc/en/lead/add-company-category.png
