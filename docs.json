@@ -15549,6 +15549,54 @@
     {
       "source": "/en/diary/learn/screen/sales-tab",
       "destination": "/en/learn/section-tabs/sales-tab"
+    },
+    {
+      "source": "/en/company/howto/index",
+      "destination": "/en/company/dev/index"
+    },
+    {
+      "source": "/en/company/category-list",
+      "destination": "/en/company/dev/index"
+    },
+    {
+      "source": "/en/company/interests",
+      "destination": "/en/company/dev/index"
+    },
+    {
+      "source": "/en/company/overview",
+      "destination": "/en/company/dev/index"
+    },
+    {
+      "source": "/en/company/reference/index",
+      "destination": "/en/company/dev/index"
+    },
+    {
+      "source": "/en/company/learn/screen/index",
+      "destination": "/en/company/learn/index"
+    },
+    {
+      "source": "/en/contact/associate",
+      "destination": "/en/contact/dev/index"
+    },
+    {
+      "source": "/en/contact/blob-pictures",
+      "destination": "/en/contact/dev/index"
+    },
+    {
+      "source": "/en/contact/overview",
+      "destination": "/en/contact/dev/index"
+    },
+    {
+      "source": "/en/contact/howto/index",
+      "destination": "/en/contact/dev/index"
+    },
+    {
+      "source": "/en/contact/reference/index",
+      "destination": "/en/contact/dev/index"
+    },
+    {
+      "source": "/en/contact/learn/screen/index",
+      "destination": "/en/contact/learn/index"
     }
   ]
 }

@@ -70,5 +70,4 @@ Computer\HKEY_CLASSES_ROOT\domycall\shell\open\command
 
 The registry entry must point to the executable that processes the incoming call request. The `%1` argument contains the phone number that SuperOffice CRM passes through the custom protocol.
 
-<!-- Referenced links -->
-[2]: ../../document/templates/learn/template-variables.md
+[2]: ../../document/templates/learn/template-variables
