@@ -2802,12 +2802,6 @@
                         ]
                       },
                       {
-                        "group": "Security",
-                        "pages": [
-                          "en/database/security/single-database-user"
-                        ]
-                      },
-                      {
                         "group": "Dictionary",
                         "pages": [
                           "en/database/dictionary/dictionary-steps",
@@ -21511,6 +21505,10 @@
     {
       "source": "/en/service/config/set-up-facebook-integration",
       "destination": "https://community.superoffice.com/en/technical/forums/api-forums/service-crmscript/our-facebook-integration-and-cambridge-analytica/"
+    },
+    {
+      "source": "/en/database/security/single-database-user",
+      "destination": "/en/database/security#single-database-user"
     }
   ]
 }

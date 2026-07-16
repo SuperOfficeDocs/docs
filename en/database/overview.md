@@ -1,10 +1,12 @@
 ---
+uid: database-documentation-overview
 title: database
 description: SuperOffice database documentation
+keywords: database
 author: SuperOffice Product and Engineering
-keywords:
+date: 07.16.2026
 content_type: concept
-date: 05.11.2016
+language: en
 ---
 
 # Expander SDK: database documentation
@@ -44,5 +46,5 @@ It is also important to know basic SQL.
 [1]: ../../release-notes/database/index
 [2]: ./getting-started/index
 [3]: ./dictionary/index
-[4]: ./security/index
+[4]: ./security
 [5]: ./transaction-log/index

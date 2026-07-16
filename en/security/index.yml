@@ -225,7 +225,7 @@ additionalContent:
         - text: The credentials database table
           url: ../database/tables/credentials.md
         - text: Single database user
-          url: ../database/security/single-database-user.md
+          url: ../database/security.md#single-database-user
         - text: Mirroring blacklisted tables
           url: ../online/mirroring/skip-tables.md
       # Card
