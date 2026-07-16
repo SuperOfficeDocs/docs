@@ -46,44 +46,17 @@ redirects.json
 #!sv/**/index.md
 #!sv/**/index.mdx
 
-# en forklifted with full DocFx content, not yet reformatted for Mintlify
-en/**
-!en/**/
-!en/**/index.md
-!en/**/index.mdx
+# en folder 
+#en/**
+#!en/**/
+#!en/**/index.md
+#!en/**/index.mdx
 
-# en subfolders converted to Mintlify (issues #15, #18, #19, #23-31)
-!en/ui/**
-!en/admin/**
-!en/learn/**
-!en/company/**
-!en/contact/**
-!en/sale/**
-!en/marketing/**
-!en/request/**
-!en/knowledge-base/**
-!en/custom-objects/**
-!en/project/**
-!en/dashboard/**
-!en/diary/**
-!en/email/**
-!en/document/**
-!en/search-options/**
-!en/mobile/**
-!en/online/**
-!en/developer-portal/**
-!en/onsite/**
-!en/ai/**
-!en/chat/**
-!en/customer-center/**
-!en/customization/**
-!en/erp/**
-!en/globalization-and-localization/**
-!en/localization/**
-!en/lead/**
-!en/saint/**
-!en/security/**
-!en/service/**
+# Ignore database except index files
+#en/database/**
+#!en/database/**/
+#!en/database/**/index.md
+#!en/database/**/index.mdx
 
 # Ignore all reference folders except index files (but not agents-webapi reference with OpenAPI specs)
 #**/reference/**
