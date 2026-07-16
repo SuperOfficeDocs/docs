@@ -2813,13 +2813,6 @@
                         ]
                       },
                       {
-                        "group": "Transaction log",
-                        "pages": [
-                          "en/database/transaction-log/format",
-                          "en/database/transaction-log/query-log"
-                        ]
-                      },
-                      {
                         "group": "Reference",
                         "pages": [
                           "en/database/tables/access-script",
@@ -21509,6 +21502,14 @@
     {
       "source": "/en/database/security/single-database-user",
       "destination": "/en/database/security#single-database-user"
+    },
+    {
+      "source": "/en/database/transaction-log/format",
+      "destination": "/en/database/transaction-log#format"
+    },
+    {
+      "source": "/en/database/transaction-log/query-log",
+      "destination": "/en/database/transaction-log#inspecting-the-log"
     }
   ]
 }

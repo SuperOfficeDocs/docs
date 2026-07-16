@@ -47,4 +47,4 @@ It is also important to know basic SQL.
 [2]: ./getting-started/index
 [3]: ./dictionary/index
 [4]: ./security
-[5]: ./transaction-log/index
+[5]: ./transaction-log
