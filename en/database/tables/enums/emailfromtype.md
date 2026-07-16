@@ -20,4 +20,4 @@ Email/Mailing From field address algorithm
 
 ## Usage
 
-* [email_flow](../email-flow.md).from_type - A set of properties related to the email workflow.
+* [email_flow](../email-flow).from_type - A set of properties related to the email workflow.

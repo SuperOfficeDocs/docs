@@ -22,4 +22,4 @@ Period type for editing this set of targets (Year, Quarter...)
 
 ## Usage
 
-* [target_group](../target-group.md).period_type - Info about a set of (sales, project, selection...) targets
+* [target_group](../target-group).period_type - Info about a set of (sales, project, selection...) targets

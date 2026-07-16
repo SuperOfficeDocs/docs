@@ -17,4 +17,4 @@ Link type, AND or OR
 
 ## Usage
 
-* [SearchCriterion](../searchcriterion.md).linkType - Criteria storage for Selection and other Find mechanisms
+* [SearchCriterion](../searchcriterion).linkType - Criteria storage for Selection and other Find mechanisms

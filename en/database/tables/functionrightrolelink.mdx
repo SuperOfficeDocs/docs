@@ -1,0 +1,59 @@
+---
+uid: table-FunctionRightRoleLink
+title: FunctionRightRoleLink table
+description: Functional right definition
+generated: true
+keywords: database table FunctionRightRoleLink
+content_type: reference
+envir: onsite, online
+---
+
+import Functionrightrolelink from "./includes/functionrightrolelink.md";
+
+# FunctionRightRoleLink Table (194)
+
+Functional right definition
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|FunctionRightRoleLink\_id|Primary key|PK| |
+|roleId|Role id|FK [Role](./role)| |
+|functionRightId|Functional right id|FK [FunctionRight](./functionright)| |
+|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![FunctionRightRoleLink table relationship diagram](./media/FunctionRightRoleLink.png)
+
+<Functionrightrolelink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|roleId |FK |Index |
+|functionRightId |FK |Index |
+|roleId, functionRightId |FK, FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[FunctionRight](./functionright)  |Functional right definition |
+|[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

@@ -20,4 +20,4 @@ The status of this authentication entry
 
 ## Usage
 
-* [service_auth](../service-auth.md).auth_status - Authentication for a service (imap, smtp...)
+* [service_auth](../service-auth).auth_status - Authentication for a service (imap, smtp...)

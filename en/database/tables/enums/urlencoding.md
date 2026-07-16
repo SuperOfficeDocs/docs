@@ -21,4 +21,4 @@ Encoding for url
 
 ## Usage
 
-* [TaskMenu](../taskmenu.md).encoding - List items to merge into menues
+* [TaskMenu](../taskmenu).encoding - List items to merge into menues

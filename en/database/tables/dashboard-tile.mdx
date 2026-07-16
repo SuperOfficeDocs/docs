@@ -1,0 +1,57 @@
+---
+uid: table-dashboard_tile
+title: dashboard_tile table
+description: Represents one tile in the dashboard
+generated: true
+keywords: database table dashboard_tile
+content_type: reference
+envir: onsite, online
+---
+
+import DashboardTile from "./includes/dashboard-tile.md";
+
+# dashboard\_tile Table (484)
+
+Represents one tile in the dashboard
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|dashboard\_tile\_id|Primary key|PK| |
+|width|Width used by this tile in the dashboard|Int|&#x25CF;|
+|height|Height used by this tile in the dashboard|Int|&#x25CF;|
+|dashboard\_id|The associated dashboard|FK [dashboard](./dashboard)|&#x25CF;|
+|dashboard\_tile\_definition\_id|The associated tile definition|FK [dashboard_tile_definition](./dashboard-tile-definition)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+|rank|Rank order|UShort|&#x25CF;|
+
+![dashboard_tile table relationship diagram](./media/dashboard_tile.png)
+
+<DashboardTile />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|dashboard\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[dashboard](./dashboard)  |Describes a dashboard |
+|[dashboard\_tile\_definition](./dashboard-tile-definition)  |Describes the contents of a tile |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.

@@ -20,4 +20,4 @@ The type of action
 
 ## Usage
 
-* [workflow_wait_for_action](../workflow-wait-for-action.md).ActionType - Some steps wait for actions, this is info about those actions
+* [workflow_wait_for_action](../workflow-wait-for-action).ActionType - Some steps wait for actions, this is info about those actions

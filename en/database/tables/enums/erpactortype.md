@@ -25,5 +25,5 @@ The actor type within the ERP system of this synchronized record
 
 ## Usage
 
-* [ErpConnectionActorType](../erpconnectionactortype.md).ActorTypeErp - Data about the configuration of one Erp Actor on one ErpConnection
-* [ErpExternalKey](../erpexternalkey.md).ActorType - The external (ERP-facing) key related to a synchronized record / connection
+* [ErpConnectionActorType](../erpconnectionactortype).ActorTypeErp - Data about the configuration of one Erp Actor on one ErpConnection
+* [ErpExternalKey](../erpexternalkey).ActorType - The external (ERP-facing) key related to a synchronized record / connection

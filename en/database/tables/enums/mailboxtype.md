@@ -27,4 +27,4 @@ Enum indicating the protocol to use (POP/IMAP).
 
 ## Usage
 
-* [mail_in_filter](../mail-in-filter.md).server_type - This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP).
+* [mail_in_filter](../mail-in-filter).server_type - This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP).

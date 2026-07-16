@@ -21,4 +21,4 @@ Webhook status - should we post events to the URL? 1=Active, 2=Stopped or 3=TooM
 
 ## Usage
 
-* [Webhook](../webhook.md).state - Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.
+* [Webhook](../webhook).state - Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.

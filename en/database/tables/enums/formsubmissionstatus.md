@@ -23,4 +23,4 @@ What is the status of this submission
 
 ## Usage
 
-* [form_submission](../form-submission.md).status - A form submission
+* [form_submission](../form-submission).status - A form submission

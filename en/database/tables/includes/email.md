@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | emailType | ID | Comment |
 |---|---|---|
 | Email | 0 | This is a conventional email |

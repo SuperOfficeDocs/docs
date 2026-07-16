@@ -1,0 +1,40 @@
+---
+uid: table-snapshot
+title: snapshot table
+description: Snapshots taken of the system database and attachments via soap
+generated: true
+keywords: database table snapshot
+content_type: reference
+envir: onsite, online
+---
+
+import Snapshot from "./includes/snapshot.md";
+
+# snapshot Table (369)
+
+Snapshots taken of the system database and attachments via soap
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|Primary key|PK| |
+|created\_at|Snapshot file created at|DateTime|&#x25CF;|
+|user\_comment|Comment from the user|String(255)|&#x25CF;|
+
+![snapshot table relationship diagram](./media/snapshot.png)
+
+<Snapshot />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

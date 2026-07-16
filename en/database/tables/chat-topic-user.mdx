@@ -1,0 +1,53 @@
+---
+uid: table-chat_topic_user
+title: chat_topic_user table
+description: This table connected the chat topics with the users (i.e. the membership).
+generated: true
+keywords: database table chat_topic_user
+content_type: reference
+envir: onsite, online
+---
+
+import ChatTopicUser from "./includes/chat-topic-user.md";
+
+# chat\_topic\_user Table (331)
+
+This table connected the chat topics with the users (i.e. the membership).
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|user\_id|The reference to the associated user|FK [ejuser](./ejuser)| |
+|topic\_id|The reference to the associated chat topic.|FK [chat_topic](./chat-topic)| |
+|can\_respond|True if the user can respond to chats in this topic|Bool|&#x25CF;|
+|notifications|True if the user should receive notifications for this topic|Bool|&#x25CF;|
+|can\_listen|True of a user can listen in on this topic|Bool|&#x25CF;|
+|manager|True if the user is a manager for this topic|Bool|&#x25CF;|
+
+![chat_topic_user table relationship diagram](./media/chat_topic_user.png)
+
+<ChatTopicUser />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|user\_id |FK |Index |
+|topic\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[chat\_topic](./chat-topic)  |This table contains chat topics. |
+|[ejuser](./ejuser)  |This table contains entries for the users of the system. |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

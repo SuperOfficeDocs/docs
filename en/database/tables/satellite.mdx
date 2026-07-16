@@ -1,0 +1,57 @@
+---
+uid: table-satellite
+title: satellite table
+description: Definition of Satellites
+generated: true
+keywords: database table satellite
+content_type: reference
+envir: onsite, online
+---
+
+import Satellite from "./includes/satellite.md";
+
+# satellite Table (42)
+
+Definition of Satellites
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|satellite\_id|Primary key|PK| |
+|area\_id|Area this satellite is based on (mandatory != 0)|FK [area](./area)| |
+|contact\_id|Contact card that owns this satellite|FK [contact](./contact)| |
+|encryptedComm|Use encryption for this Satellite?|UShort|&#x25CF;|
+|DSN|Data source name last used for this satellite|String(254)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![satellite table relationship diagram](./media/satellite.png)
+
+<Satellite />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[area](./area)  |Definition of an Area (database subset for satellite and travel) |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contact](./contact)  |Companies and Organizations. |
+|[LicenseSatlLink](./licensesatllink)  |Link between License and Satellite, for per-database licenses |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix.

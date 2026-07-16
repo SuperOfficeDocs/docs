@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Calendar information regarding which days are to be set in red is stored in a single table
 
 This table is used to mark specific days in the calendar as red. The format of some columns in this table needs further explanation. For every month there will be a row with reddate = month 1st midnight. This should contain a bitmap of all red days for this month in the reds column. This 32-bit bitmap is computed using least significant bit as 1st of month and 1 as red, 0 as not red.
@@ -7,7 +6,7 @@ This table is used to mark specific days in the calendar as red. The format of s
 
 September 1995. Sundays are 3rd, 10th, 17th and 24th.
 
-Let’s say that the 15th and 23rd are to be marked red in addition to Sundays. This results in the following:
+Let's say that the 15th and 23rd are to be marked red in addition to Sundays. This results in the following:
 
 ```text
 Sundays
@@ -33,7 +32,7 @@ Now LSB is to the left, and we split this into 8-bit portions to make it easier 
 00000100 01000010 11000001 00000000
 ```
 
-Then type this number in Windows Calculator’s scientific mode using binary numbers. Then click decimal mode to get the value
+Then type this number in Windows Calculator's scientific mode using binary numbers. Then click decimal mode to get the value
 
 ```text
 12665348

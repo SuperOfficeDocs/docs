@@ -26,5 +26,5 @@ Associate type
 
 ## Usage
 
-* [associate](../associate.md).type - Employees, resources and other users - except for External persons
-* [AssociateHistory](../associatehistory.md).type - Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database
+* [associate](../associate).type - Employees, resources and other users - except for External persons
+* [AssociateHistory](../associatehistory).type - Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database

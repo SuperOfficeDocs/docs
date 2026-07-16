@@ -43,5 +43,4 @@ Also, in the future, we may break the Person-contact relation, allowing consumer
 
 Whenever a user enters an appointment, it will have a non-zero `associate_id`, an `activeDate`, and one of the other two IDs set (contact, or project). The person ID can be zero even if the user has set a contact (selected a company, but no person).
 
-<!-- Referenced images -->
-[img1]: media/so-table-structure.gif
+[img1]: /media/loc/en/database/so-table-structure.gif

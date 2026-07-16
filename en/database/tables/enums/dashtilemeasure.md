@@ -24,4 +24,4 @@ Dashboard measure type (Count, Sum, Avg, etc.)
 
 ## Usage
 
-* [dashboard_tile_definition](../dashboard-tile-definition.md).measure - Describes the contents of a tile
+* [dashboard_tile_definition](../dashboard-tile-definition).measure - Describes the contents of a tile

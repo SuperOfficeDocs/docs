@@ -18,4 +18,4 @@ Bitmask of flags for a service login session
 
 ## Usage
 
-* [login](../login.md).flags - This table contains entries for the user sessions. 
+* [login](../login).flags - This table contains entries for the user sessions.

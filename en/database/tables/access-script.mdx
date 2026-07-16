@@ -1,0 +1,40 @@
+---
+uid: table-access_script
+title: access_script table
+description: Scripts to implement row-based access rules (sentry light)
+generated: true
+keywords: database table access_script
+content_type: reference
+envir: onsite, online
+---
+
+import AccessScript from "./includes/access-script.md";
+
+# access\_script Table (406)
+
+Scripts to implement row-based access rules (sentry light)
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|access\_table\_name|The name of the table that the access_script is connected to|String(255)| |
+|body|The ejscript that limits the access to the according table|Clob|&#x25CF;|
+
+![access_script table relationship diagram](./media/access_script.png)
+
+<AccessScript />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

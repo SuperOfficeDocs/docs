@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Record Type
 
  | Task Type | ID |
@@ -26,7 +25,7 @@ The saint counters with the corresponding record type (and the ALL type) are upd
 
  | Direction | ID |
  |---|---|
- | Unknown |  0 |
+ | Unknown |  0 |
  | Incoming | 1 |
  | Outcoing | 2 |
  | All | 3 |
@@ -35,7 +34,7 @@ The saint counters with the corresponding record type (and the ALL type) are upd
 
  | Sale status | ID |
  |---|---|
- | Unknown |  0 |
+ | Unknown |  0 |
  | Open | 1 |
  | Sold | 2 |
  | Lost | 3 |
@@ -52,6 +51,6 @@ The saint counters with the corresponding record type (and the ALL type) are upd
 
 ### See Also
 
-[task Table](../task.md)
-[doctmpl Table](../doctmpl.md)
-[countervalue Table](../countervalue.md)
+[task Table](../task)
+[doctmpl Table](../doctmpl)
+[countervalue Table](../countervalue)

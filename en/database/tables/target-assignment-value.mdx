@@ -1,0 +1,54 @@
+---
+uid: table-target_assignment_value
+title: target_assignment_value table
+description: A set of values linked to assignment info and a period in a target group.
+generated: true
+keywords: database table target_assignment_value
+content_type: reference
+envir: onsite, online
+---
+
+import TargetAssignmentValue from "./includes/target-assignment-value.md";
+
+# target\_assignment\_value Table (517)
+
+A set of values linked to assignment info and a period in a target group.
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|target\_assignment\_value\_id|Primary key|PK| |
+|target\_assignment\_info\_id|Who or what this value is assigned to|FK [target_assignment_info](./target-assignment-info)|&#x25CF;|
+|target\_period\_id|The group this target belongs to|FK [target_period](./target-period)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+|target\_value|Target value|Double|&#x25CF;|
+
+![target_assignment_value table relationship diagram](./media/target_assignment_value.png)
+
+<TargetAssignmentValue />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[target\_assignment\_info](./target-assignment-info)  |Linking associate, company or user group target and other information with target values |
+|[target\_period](./target-period)  |A set of periods linked with target amounts for users/usergroups and the target groups/years. |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix.

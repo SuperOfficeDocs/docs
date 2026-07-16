@@ -1,0 +1,57 @@
+---
+uid: table-PaymentTermsHeadingLink
+title: PaymentTermsHeadingLink table
+description: Heading link table for PaymentTerms, for MDO item headings
+generated: true
+keywords: database table PaymentTermsHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Paymenttermsheadinglink from "./includes/paymenttermsheadinglink.md";
+
+# PaymentTermsHeadingLink Table (429)
+
+Heading link table for PaymentTerms, for MDO item headings
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|paymenttermsheadinglink\_id|Primary key|PK| |
+|paymentterms\_id|Link to PaymentTerms list table|FK [PaymentTerms](./paymentterms)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![PaymentTermsHeadingLink table relationship diagram](./media/PaymentTermsHeadingLink.png)
+
+<Paymenttermsheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|paymentterms\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[PaymentTerms](./paymentterms)  |The list of payment terms, in the internal product register |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

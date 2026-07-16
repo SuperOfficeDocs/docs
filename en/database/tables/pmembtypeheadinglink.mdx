@@ -1,0 +1,57 @@
+---
+uid: table-PMembTypeHeadingLink
+title: PMembTypeHeadingLink table
+description: Heading link table for PMembType, for MDO headers
+generated: true
+keywords: database table PMembTypeHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Pmembtypeheadinglink from "./includes/pmembtypeheadinglink.md";
+
+# PMembTypeHeadingLink Table (93)
+
+Heading link table for PMembType, for MDO headers
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|pmembtypeheadinglink\_id|Primary key|PK| |
+|pmembtype\_id|Link to PMembType list table|FK [PMembType](./pmembtype)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![PMembTypeHeadingLink table relationship diagram](./media/PMembTypeHeadingLink.png)
+
+<Pmembtypeheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|pmembtype\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[PMembType](./pmembtype)  |PMembType list table. List text of titles (member types) for project members. |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

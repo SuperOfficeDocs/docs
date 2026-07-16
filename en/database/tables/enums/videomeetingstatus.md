@@ -20,4 +20,4 @@ Default video-meeting status for meetings created in SuperOffice CRM.
 
 ## Usage
 
-* [Task](../task.md).default_videomeeting_status - Task list table, activity types, like Phone, Meeting
+* [Task](../task).default_videomeeting_status - Task list table, activity types, like Phone, Meeting

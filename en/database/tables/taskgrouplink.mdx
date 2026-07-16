@@ -1,0 +1,57 @@
+---
+uid: table-TaskGroupLink
+title: TaskGroupLink table
+description: User group link table for Task, for MDO item hiding
+generated: true
+keywords: database table TaskGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Taskgrouplink from "./includes/taskgrouplink.md";
+
+# TaskGroupLink Table (68)
+
+User group link table for Task, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|taskgrouplink\_id|Primary key|PK| |
+|task\_id|Link to Task list table|FK [Task](./task)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![TaskGroupLink table relationship diagram](./media/TaskGroupLink.png)
+
+<Taskgrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|task\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Task](./task)  |Task list table, activity types, like Phone, Meeting |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

@@ -41,9 +41,8 @@ It is also important to know basic SQL.
 * [Travel transaction log][5]
 * [What's new][1]
 
-<!-- Referenced links -->
-[1]: ../../../release-notes/database/index.md
-[2]: getting-started/index.md
-[3]: dictionary/index.md
-[4]: security/index.md
-[5]: transaction-log/index.md
+[1]: ../../../release-notes/database/index
+[2]: ./getting-started/index
+[3]: ./dictionary/index
+[4]: ./security/index
+[5]: ./transaction-log/index

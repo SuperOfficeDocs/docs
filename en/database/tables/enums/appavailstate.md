@@ -23,4 +23,4 @@ When should this application be available from SO: 0=always, 1=on central db, 2=
 
 ## Usage
 
-* [ExtApp](../extapp.md).availableInState - ExtApp list table. Applications startable from SuperOffice
+* [ExtApp](../extapp).availableInState - ExtApp list table. Applications startable from SuperOffice

@@ -20,4 +20,4 @@ The type/language of this script
 
 ## Usage
 
-* [ejscript](../ejscript.md).type - ejscript
+* [ejscript](../ejscript).type - ejscript

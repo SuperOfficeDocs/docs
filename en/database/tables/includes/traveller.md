@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Database type
 
 | Databasetype | ID | Comment |
@@ -12,5 +11,5 @@
 | encryptedComm | ID | Comment |
 |---|---|---|
 | None | 0 | Transmitted travel data are not encrypted (only ZIPed) |
-| Serial |  1 | Transmitted travel data are encrypted using licence serial number as key |
+| Serial |  1 | Transmitted travel data are encrypted using licence serial number as key |
 | BF128 | 2 | Transmitted travel data are encrypted using a 128-bit key |

@@ -1,0 +1,55 @@
+---
+uid: table-QuoteConnectionAccess
+title: QuoteConnectionAccess table
+description: Access control for Quote Connections
+generated: true
+keywords: database table QuoteConnectionAccess
+content_type: reference
+envir: onsite, online
+---
+
+import Quoteconnectionaccess from "./includes/quoteconnectionaccess.md";
+
+# QuoteConnectionAccess Table (27)
+
+Access control for Quote Connections
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|quoteconnectionaccess\_id|Primary key|PK| |
+|QuoteConnectionId|Link to quote connection we&apos;re granting access for|FK [QuoteConnection](./quoteconnection)| |
+|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate)|&#x25CF;|
+|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![QuoteConnectionAccess table relationship diagram](./media/QuoteConnectionAccess.png)
+
+<Quoteconnectionaccess />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[QuoteConnection](./quoteconnection)  |Primary key in the CRM database. Definition of a connection to an external system, for the Quote system. |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

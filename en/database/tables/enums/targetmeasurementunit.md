@@ -21,4 +21,4 @@ What to measure (Amount, Count, Profit...
 
 ## Usage
 
-* [target_dimension](../target-dimension.md).measurement_unit - Defining target dimension
+* [target_dimension](../target-dimension).measurement_unit - Defining target dimension

@@ -1,0 +1,57 @@
+---
+uid: table-ProductFamilyHeadingLink
+title: ProductFamilyHeadingLink table
+description: Heading link table for ProductFamily, for MDO item headings
+generated: true
+keywords: database table ProductFamilyHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Productfamilyheadinglink from "./includes/productfamilyheadinglink.md";
+
+# ProductFamilyHeadingLink Table (413)
+
+Heading link table for ProductFamily, for MDO item headings
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|productfamilyheadinglink\_id|Primary key|PK| |
+|productfamily\_id|Link to ProductFamily list table|FK [ProductFamily](./productfamily)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![ProductFamilyHeadingLink table relationship diagram](./media/ProductFamilyHeadingLink.png)
+
+<Productfamilyheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|productfamily\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[ProductFamily](./productfamily)  |List for the ProductFamily field of the Product table (Quote Management) |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

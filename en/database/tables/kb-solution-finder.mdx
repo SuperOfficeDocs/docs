@@ -1,0 +1,49 @@
+---
+uid: table-kb_solution_finder
+title: kb_solution_finder table
+description: Knowledge base problem solving wizard, categories and subcategories for drilling down
+generated: true
+keywords: database table kb_solution_finder
+content_type: reference
+envir: onsite, online
+---
+
+import KbSolutionFinder from "./includes/kb-solution-finder.md";
+
+# kb\_solution\_finder Table (294)
+
+Knowledge base problem solving wizard, categories and subcategories for drilling down
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|parent\_id|The parent of this solution finder.|FK [kb_solution_finder](./kb-solution-finder)| |
+|name||String(255)|&#x25CF;|
+|body|The body for the solution finder. HTML format.|Clob|&#x25CF;|
+
+![kb_solution_finder table relationship diagram](./media/kb_solution_finder.png)
+
+<KbSolutionFinder />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|parent\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[kb\_solution\_finder](./kb-solution-finder)  |Knowledge base problem solving wizard, categories and subcategories for drilling down |
+|[kb\_solution\_finder\_entry](./kb-solution-finder-entry)  |Knowledge base problem solving wizard, items in a category linking to a knowledge base entry |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

@@ -13,7 +13,6 @@
 | 128 | TableKbEntry     |
 | 256 | TableKbCategory  |
 
-
 ## Type Values
 
 | ID | Name                   |

@@ -1,0 +1,57 @@
+---
+uid: table-ProbGroupLink
+title: ProbGroupLink table
+description: User group link table for Prob, for MDO item hiding
+generated: true
+keywords: database table ProbGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Probgrouplink from "./includes/probgrouplink.md";
+
+# ProbGroupLink Table (83)
+
+User group link table for Prob, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|probgrouplink\_id|Primary key|PK| |
+|prob\_id|Link to Prob list table|FK [Prob](./prob)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![ProbGroupLink table relationship diagram](./media/ProbGroupLink.png)
+
+<Probgrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|prob\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Prob](./prob)  |Prob list table. Probability, used in  sales . |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

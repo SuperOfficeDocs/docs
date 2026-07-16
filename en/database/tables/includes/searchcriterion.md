@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Operator | ID | Comment |
 |---|---|---|
 | enInvalidOperator | 0 | Invalid |

@@ -21,4 +21,4 @@ Status of the metering event
 
 ## Usage
 
-* [metering_log](../metering-log.md).status - Metering log table
+* [metering_log](../metering-log).status - Metering log table

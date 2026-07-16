@@ -28,4 +28,4 @@ A bitmask representing flags for this category.
 
 ## Usage
 
-* [ej_category](../ej-category.md).flags - This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.
+* [ej_category](../ej-category).flags - This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.

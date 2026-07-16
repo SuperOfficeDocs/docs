@@ -20,4 +20,4 @@ Defines what kind of message this is.
 
 ## Usage
 
-* [ej_message](../ej-message.md).message_category - This table contains the messages listed under tickets.
+* [ej_message](../ej-message).message_category - This table contains the messages listed under tickets.

@@ -22,4 +22,4 @@ The actor type (CRM side)
 
 ## Usage
 
-* [ErpConnectionActorType](../erpconnectionactortype.md).ActorTypeCrm - Data about the configuration of one Erp Actor on one ErpConnection
+* [ErpConnectionActorType](../erpconnectionactortype).ActorTypeCrm - Data about the configuration of one Erp Actor on one ErpConnection

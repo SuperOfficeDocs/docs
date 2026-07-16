@@ -27,4 +27,4 @@ envir: onsite, online
 
 ## Usage
 
-* [DocTmpl](../doctmpl.md).record_type - DocTmpl list table. Describes templates available for writing new documents.
+* [DocTmpl](../doctmpl).record_type - DocTmpl list table. Describes templates available for writing new documents.

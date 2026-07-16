@@ -19,4 +19,4 @@ Status of shipment list
 
 ## Usage
 
-* [s_list_shipment](../s-list-shipment.md).status - A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments
+* [s_list_shipment](../s-list-shipment).status - A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments

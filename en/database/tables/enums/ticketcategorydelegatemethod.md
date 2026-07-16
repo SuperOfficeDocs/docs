@@ -22,4 +22,4 @@ An integer indicating the delegation method for this category.
 
 ## Usage
 
-* [ej_category](../ej-category.md).delegate_method - This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.
+* [ej_category](../ej-category).delegate_method - This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.

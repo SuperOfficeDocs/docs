@@ -21,4 +21,4 @@ A bitmask of flags.
 
 ## Usage
 
-* [ticket_priority](../ticket-priority.md).flags - This table contains the ticket priorities.
+* [ticket_priority](../ticket-priority).flags - This table contains the ticket priorities.

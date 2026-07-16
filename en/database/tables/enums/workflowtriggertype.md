@@ -31,4 +31,4 @@ What kind of trigger is this
 
 ## Usage
 
-* [workflow_trigger](../workflow-trigger.md).trigger_type - A set of triggers related to a workflow.
+* [workflow_trigger](../workflow-trigger).trigger_type - A set of triggers related to a workflow.

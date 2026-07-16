@@ -1,0 +1,47 @@
+---
+uid: table-dictionary_base
+title: dictionary_base table
+description: Language catalog for the ejournal dictionaries (automatic proof reading of message text etc)
+generated: true
+keywords: database table dictionary_base
+content_type: reference
+envir: onsite, online
+---
+
+import DictionaryBase from "./includes/dictionary-base.md";
+
+# dictionary\_base Table (359)
+
+Language catalog for the ejournal dictionaries (automatic proof reading of message text etc)
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|Primary key|PK| |
+|name|The name of the language|String(32)| |
+|code|Language code name (no, en)|String(8)| |
+|flags|A bitmask of dictionary flags|Int| |
+
+![dictionary_base table relationship diagram](./media/dictionary_base.png)
+
+<DictionaryBase />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[dictionary](./dictionary)  |User added dictionary words |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

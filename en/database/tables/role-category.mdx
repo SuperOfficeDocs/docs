@@ -1,0 +1,52 @@
+---
+uid: table-role_category
+title: role_category table
+description: Category membership associated with a role
+generated: true
+keywords: database table role_category
+content_type: reference
+envir: onsite, online
+---
+
+import RoleCategory from "./includes/role-category.md";
+
+# role\_category Table (325)
+
+Category membership associated with a role
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)| |
+|category|The id of the category.|FK [ej_category](./ej-category)| |
+|crm\_role|Link to Role|FK [Role](./role)|&#x25CF;|
+
+![role_category table relationship diagram](./media/role_category.png)
+
+<RoleCategory />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|role |FK |Index |
+|category |FK |Index |
+|crm\_role |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
+|[ej\_role](./ej-role)  |Define access rights, memberships and other properties for role user members |
+|[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

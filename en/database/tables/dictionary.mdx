@@ -1,0 +1,53 @@
+---
+uid: table-dictionary
+title: dictionary table
+description: User added dictionary words
+generated: true
+keywords: database table dictionary
+content_type: reference
+envir: onsite, online
+---
+
+import Dictionary from "./includes/dictionary.md";
+
+# dictionary Table (358)
+
+User added dictionary words
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|base\_id|The reference to the dictionary base.|FK [dictionary_base](./dictionary-base)| |
+|user\_id|The reference to the user.|FK [ejuser](./ejuser)| |
+|include|Include/Exclude word.|Int| |
+|word|User word|String(32)| |
+
+![dictionary table relationship diagram](./media/dictionary.png)
+
+<Dictionary />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|base\_id |FK |Index |
+|user\_id |FK |Index |
+|include |Int |Index |
+|word |String(32) |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[dictionary\_base](./dictionary-base)  |Language catalog for the ejournal dictionaries (automatic proof reading of message text etc) |
+|[ejuser](./ejuser)  |This table contains entries for the users of the system. |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

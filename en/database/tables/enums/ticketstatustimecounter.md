@@ -10,7 +10,7 @@ envir: onsite, online
 
 # TicketStatusTimeCounter Enum
 
-Which field in ticket we count time spent on (queue, internal, external) 
+Which field in ticket we count time spent on (queue, internal, external)
 
 | Name | Value | Description |
 |------|-------|-------------|
@@ -21,4 +21,4 @@ Which field in ticket we count time spent on (queue, internal, external)
 
 ## Usage
 
-* [ticket_status](../ticket-status.md).time_counter - This table user defined ticket status values.
+* [ticket_status](../ticket-status).time_counter - This table user defined ticket status values.

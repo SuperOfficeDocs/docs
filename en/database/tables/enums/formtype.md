@@ -19,4 +19,4 @@ What kind of form is this? Indicates if this is a normal form or a template
 
 ## Usage
 
-* [form](../form.md).type - A form which can be published on a webpage and submitted by visitors
+* [form](../form).type - A form which can be published on a webpage and submitted by visitors

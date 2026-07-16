@@ -19,4 +19,4 @@ What kind of template is in this row
 
 ## Usage
 
-* [cc_template](../cc-template.md).type - This table contains templates for the customer center
+* [cc_template](../cc-template).type - This table contains templates for the customer center

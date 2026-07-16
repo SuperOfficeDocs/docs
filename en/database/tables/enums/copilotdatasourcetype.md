@@ -23,4 +23,4 @@ Type of copilot data source
 
 ## Usage
 
-* [copilot_data_source](../copilot-data-source.md).copilot_data_source_type - Stores data sources for each copilot
+* [copilot_data_source](../copilot-data-source).copilot_data_source_type - Stores data sources for each copilot

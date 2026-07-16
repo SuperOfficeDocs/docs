@@ -1,5 +1,4 @@
-<!-- markdownlint-disable-file MD041 -->
-###  Access restrictions and mandatory status, if any
+###  Access restrictions and mandatory status, if any
 
 |---| |
 |---|---|

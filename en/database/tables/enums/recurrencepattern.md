@@ -23,4 +23,4 @@ Recurrence pattern (daily, weekly etc)
 
 ## Usage
 
-* [RecurrenceRule](../recurrencerule.md).pattern - The recurrency pattern for a recurring event. Each recurring event has an appointment.recurrenceRuleId pointing to its pattern.
+* [RecurrenceRule](../recurrencerule).pattern - The recurrency pattern for a recurring event. Each recurring event has an appointment.recurrenceRuleId pointing to its pattern.

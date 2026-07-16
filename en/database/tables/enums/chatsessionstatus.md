@@ -12,7 +12,6 @@ envir: onsite, online
 
 Enum indicating the status for the session (pending, active, closed, etc).
 
-
 ## Usage
 
-* [chat_session](../chat-session.md).status - This table contains chat sessions.
+* [chat_session](../chat-session).status - This table contains chat sessions.

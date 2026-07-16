@@ -27,5 +27,5 @@ State that this quote version had, right before it was changed to Archived; in t
 
 ## Usage
 
-* [QuoteVersion](../quoteversion.md).State - There may be multiple Versions of a Quote, with one of them active
-* [QuoteVersion](../quoteversion.md).ArchivedState - There may be multiple Versions of a Quote, with one of them active
+* [QuoteVersion](../quoteversion).State - There may be multiple Versions of a Quote, with one of them active
+* [QuoteVersion](../quoteversion).ArchivedState - There may be multiple Versions of a Quote, with one of them active

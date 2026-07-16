@@ -17,4 +17,4 @@ envir: onsite, online
 
 ## Usage
 
-* [SearchCriteriaGroup](../searchcriteriagroup.md).direction - Criteria storage for Selection and other Find mechanisms
+* [SearchCriteriaGroup](../searchcriteriagroup).direction - Criteria storage for Selection and other Find mechanisms

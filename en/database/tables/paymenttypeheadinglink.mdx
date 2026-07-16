@@ -1,0 +1,57 @@
+---
+uid: table-PaymentTypeHeadingLink
+title: PaymentTypeHeadingLink table
+description: Heading link table for PaymentType, for MDO item headings
+generated: true
+keywords: database table PaymentTypeHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Paymenttypeheadinglink from "./includes/paymenttypeheadinglink.md";
+
+# PaymentTypeHeadingLink Table (432)
+
+Heading link table for PaymentType, for MDO item headings
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|paymenttypeheadinglink\_id|Primary key|PK| |
+|paymenttype\_id|Link to PaymentType list table|FK [PaymentType](./paymenttype)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![PaymentTypeHeadingLink table relationship diagram](./media/PaymentTypeHeadingLink.png)
+
+<Paymenttypeheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|paymenttype\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[PaymentType](./paymenttype)  |The list of payment types, in the internal product register |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

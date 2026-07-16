@@ -1,0 +1,68 @@
+---
+uid: table-projectmember
+title: projectmember table
+description: Project members. Link-table between person and project
+generated: true
+keywords: database table projectmember
+content_type: reference
+envir: onsite, online
+---
+
+import Projectmember from "./includes/projectmember.md";
+
+# projectmember Table (12)
+
+Project members. Link-table between person and project
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|projectmember\_id|Primary key|PK| |
+|project\_id|Parent project|FK [project](./project)|&#x25CF;|
+|contact\_id|Contact ID of person who is the project member (slight denormalization)|FK [contact](./contact)|&#x25CF;|
+|person\_id|Person ID of person who is the project member|FK [person](./person)|&#x25CF;|
+|rank|Rank in list|UShort|&#x25CF;|
+|mtype\_idx|Member type link|FK [PMembType](./pmembtype)|&#x25CF;|
+|text\_id|Optional comment|FK [text](./text)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+|event\_participant\_status|Reserved field for Lyyti event participants.|Enum [ProjectMemberEventParticipantStatus](./enums/projectmembereventparticipantstatus)| |
+
+![projectmember table relationship diagram](./media/projectmember.png)
+
+<Projectmember />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|contact\_id |FK |Index |
+|person\_id |FK |Index |
+|project\_id, rank |FK, UShort |Index |
+|project\_id, event\_participant\_status |FK, Enum |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[contact](./contact)  |Companies and Organizations. |
+|[person](./person)  |Persons |
+|[PMembType](./pmembtype)  |PMembType list table. List text of titles (member types) for project members. |
+|[project](./project)  |Projects |
+|[text](./text)  |Long text fields from all over the system |
+
+## Replication Flags
+
+* Area Management controlled table. Contents replicated to satellites and traveller databases.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+* Cache table during filtering.
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.

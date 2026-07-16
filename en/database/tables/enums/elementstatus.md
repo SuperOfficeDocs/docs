@@ -12,7 +12,6 @@ envir: onsite, online
 
 Status for the statical list element
 
-
 ## Usage
 
-* [s_list_element](../s-list-element.md).status - Elements in a static list.
+* [s_list_element](../s-list-element).status - Elements in a static list.

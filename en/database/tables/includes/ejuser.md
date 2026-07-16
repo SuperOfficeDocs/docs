@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | ejuser status type | DD |
 |---|---|
 | None | 0 |

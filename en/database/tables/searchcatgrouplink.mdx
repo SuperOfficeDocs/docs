@@ -1,0 +1,57 @@
+---
+uid: table-SearchCatGroupLink
+title: SearchCatGroupLink table
+description: User group link table for SearchCat, for MDO item hiding
+generated: true
+keywords: database table SearchCatGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Searchcatgrouplink from "./includes/searchcatgrouplink.md";
+
+# SearchCatGroupLink Table (107)
+
+User group link table for SearchCat, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|searchcatgrouplink\_id|Primary key|PK| |
+|searchcat\_id|Link to SearchCat list table|FK [SearchCat](./searchcat)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![SearchCatGroupLink table relationship diagram](./media/SearchCatGroupLink.png)
+
+<Searchcatgrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|searchcat\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SearchCat](./searchcat)  |SearchCat list table |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

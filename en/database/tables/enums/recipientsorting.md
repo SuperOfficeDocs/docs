@@ -22,4 +22,4 @@ Which sorting should be used on the document mailing recipient list, used when g
 
 ## Usage
 
-* [s_shipment](../s-shipment.md).sorting - Contains info about one shipment. The addresses are stored in s_shipment_addr
+* [s_shipment](../s-shipment).sorting - Contains info about one shipment. The addresses are stored in s_shipment_addr

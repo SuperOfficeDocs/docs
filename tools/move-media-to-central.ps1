@@ -242,16 +242,16 @@ foreach ($mdFile in $markdownFiles) {
             $newFileName = $fileMappings[$oldPath]
             $newPath = "$absolutePath/$newFileName"
 
-            # Handle reference-style: [img1]: media/file.png
-            if ($updatedLine -match "\[([^\]]+)\]:\s*$([regex]::Escape($oldPath))") {
-                $updatedLine = $updatedLine -replace ":\s*$([regex]::Escape($oldPath))", ": $newPath"
+            # Handle reference-style: [img1]: media/file.png or ./media/file.png
+            if ($updatedLine -match "\[([^\]]+)\]:\s*(?:\./)?$([regex]::Escape($oldPath))") {
+                $updatedLine = $updatedLine -replace ":\s*(?:\./)?$([regex]::Escape($oldPath))", ": $newPath"
                 $modified = $true
                 $referencesUpdated++
             }
 
-            # Handle inline: ![alt](media/file.png)
-            if ($updatedLine -match "!\[([^\]]*)\]\($([regex]::Escape($oldPath))\)") {
-                $updatedLine = $updatedLine -replace "\($([regex]::Escape($oldPath))\)", "($newPath)"
+            # Handle inline: ![alt](media/file.png) or ![alt](./media/file.png)
+            if ($updatedLine -match "!\[([^\]]*)\]\((?:\./)?$([regex]::Escape($oldPath))\)") {
+                $updatedLine = $updatedLine -replace "\((?:\./)?$([regex]::Escape($oldPath))\)", "($newPath)"
                 $modified = $true
                 $referencesUpdated++
             }

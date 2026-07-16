@@ -23,4 +23,4 @@ Reserved field for Lyyti event participants.
 
 ## Usage
 
-* [projectmember](../projectmember.md).event_participant_status - Project members. Link-table between person and project
+* [projectmember](../projectmember).event_participant_status - Project members. Link-table between person and project

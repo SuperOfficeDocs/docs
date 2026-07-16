@@ -20,4 +20,4 @@ What kind of usage are these credentials for; see enum CredentialUsage for detai
 
 ## Usage
 
-* [Credentials](../credentials.md).isActive - Alternative credentials
+* [Credentials](../credentials).isActive - Alternative credentials

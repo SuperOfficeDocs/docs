@@ -20,4 +20,4 @@ Enum containing the type of the design
 
 ## Usage
 
-* [s_message](../s-message.md).designtype - A message used in a shipment. Can be html and/or plain text
+* [s_message](../s-message).designtype - A message used in a shipment. Can be html and/or plain text

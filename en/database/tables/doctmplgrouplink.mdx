@@ -1,0 +1,57 @@
+---
+uid: table-DocTmplGroupLink
+title: DocTmplGroupLink table
+description: User group link table for DocTmpl, for MDO item hiding
+generated: true
+keywords: database table DocTmplGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Doctmplgrouplink from "./includes/doctmplgrouplink.md";
+
+# DocTmplGroupLink Table (131)
+
+User group link table for DocTmpl, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|doctmplgrouplink\_id|Primary key|PK| |
+|doctmpl\_id|Link to DocTmpl list table|FK [DocTmpl](./doctmpl)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![DocTmplGroupLink table relationship diagram](./media/DocTmplGroupLink.png)
+
+<Doctmplgrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|doctmpl\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[DocTmpl](./doctmpl)  |DocTmpl list table. Describes templates available for writing new documents. |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

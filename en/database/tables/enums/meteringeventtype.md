@@ -19,4 +19,4 @@ Type of the metering event
 
 ## Usage
 
-* [metering_log](../metering-log.md).event_type - Metering log table
+* [metering_log](../metering-log).event_type - Metering log table

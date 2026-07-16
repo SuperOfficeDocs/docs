@@ -1,0 +1,57 @@
+---
+uid: table-PersIntGroupLink
+title: PersIntGroupLink table
+description: User group link table for PersInt, for MDO item hiding
+generated: true
+keywords: database table PersIntGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Persintgrouplink from "./includes/persintgrouplink.md";
+
+# PersIntGroupLink Table (74)
+
+User group link table for PersInt, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|persintgrouplink\_id|Primary key|PK| |
+|persint\_id|Link to PersInt list table|FK [PersInt](./persint)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![PersIntGroupLink table relationship diagram](./media/PersIntGroupLink.png)
+
+<Persintgrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|persint\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[PersInt](./persint)  |PersInt list table. List of Person interests. |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

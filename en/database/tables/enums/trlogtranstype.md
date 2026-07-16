@@ -38,4 +38,4 @@ Type of event
 
 ## Usage
 
-* [traveltransactionlog](../traveltransactionlog.md).type - Log of all updates made to the database, that need to be replicated.
+* [traveltransactionlog](../traveltransactionlog).type - Log of all updates made to the database, that need to be replicated.

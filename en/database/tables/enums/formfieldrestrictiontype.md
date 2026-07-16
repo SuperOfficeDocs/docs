@@ -20,4 +20,4 @@ The restriction set on the field
 
 ## Usage
 
-* [form_field_restriction](../form-field-restriction.md).field_restriction - This table contains all form fields restrictions
+* [form_field_restriction](../form-field-restriction).field_restriction - This table contains all form fields restrictions

@@ -25,4 +25,4 @@ Field type
 
 ## Usage
 
-* [ErpField](../erpfield.md).FieldType - Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector
+* [ErpField](../erpfield).FieldType - Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector

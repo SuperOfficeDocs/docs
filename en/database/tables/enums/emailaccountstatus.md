@@ -22,4 +22,4 @@ The status of this email account
 
 ## Usage
 
-* [email_account](../email-account.md).account_status - Email account information
+* [email_account](../email-account).account_status - Email account information

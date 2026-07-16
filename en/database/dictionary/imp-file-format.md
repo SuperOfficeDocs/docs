@@ -135,12 +135,12 @@ Line 8:  0      Room4   0         0       0      0         0       0      0
 Line 9:  0      Room5
 ```
 
-While you can let the priming engine automatically assign ID values, there may be cases where it’s preferred to hard-code the ID values instead. In that case, you could simply type the desired ID values directly inline. The ID values do not have to be in an ordered sequence.
+While you can let the priming engine automatically assign ID values, there may be cases where it's preferred to hard-code the ID values instead. In that case, you could simply type the desired ID values directly inline. The ID values do not have to be in an ordered sequence.
 
 Also, notice how lines 7 and 9 contain tab-delimited null values. This is completely legal and the priming engine will insert default values based on the field data type.
 
 ```text
-Line 1:  ;This is a comment line, describe your table, intentions, etc.
+Line 1:  ;This is a comment line, describe your table, intentions, etc.
 Line 2:  [UnoRoom]
 Line 3:  ;room_id nm creatr Registered regby updated updatedby updated count
 Line 4:  0      Room1   0         0       0      0         0       0      0
@@ -152,11 +152,11 @@ Line 8:  0      Room5   0         0       0      0         0       0      0
 
 In the simple example above, the column data will be imported into the `UnoRoom` table, and the rows are assigned the ID values defined inline.
 
-This is useful when you need to reference these rows by ID in other IMP files. Below is an example that does just that – it hard codes the ID values defined in the room IMP file above.
+This is useful when you need to reference these rows by ID in other IMP files. Below is an example that does just that - it hard codes the ID values defined in the room IMP file above.
 
 ```text
 Line 1:  [UnoGroup]
-Line 2:  ;group_id nm rm_id Registered regby updated updatedby updated count
+Line 2:  ;group_id nm rm_id Registered regby updated updatedby updated count
 Line 3:  0        Grp1   1       0       0       0        0        0     0
 Line 4:  0        Grp2   1       0       0       0        0        0     0
 Line 5:  0        Grp3   2       0       0       0        0        0     0
@@ -172,7 +172,7 @@ The following IMP files declare three tables: `unogroup`, `unoroom` and a relati
 
 ```text
 Line 1:  [UnoGroup]
-Line 2:  ;group_id name Registered regby  updated updatedby updated count
+Line 2:  ;group_id name Registered regby  updated updatedby updated count
 Line 3:  #GRP1     Grp1      0       0        0       0        0      0
 Line 4:  #GRP2     Grp2      0       0        0       0        0      0
 Line 5:  #GRP3     Grp3      0       0        0       0        0      0
@@ -180,7 +180,7 @@ Line 6:  #GRP4     Grp4      0       0        0       0        0      0
 Line 7:  #GRP5     Grp5      0       0        0       0        0      0
 
 Line 1:  [UnoRoom]
-Line 2:  ;rm_id nm  creatr Registered regby updated  updatedby updated count
+Line 2:  ;rm_id nm  creatr Registered regby updated  updatedby updated count
 Line 3:  #RM1   Room1  0        0       0      0         0         0     0
 Line 4:  #RM2   Room2  0        0       0      0         0         0     0
 Line 5:  #RM3   Room3  0        0       0      0         0         0     0
@@ -188,7 +188,7 @@ Line 6:  #RM4   Room4  0        0       0      0         0         0     0
 Line 7:  #RM5   Room5  0        0       0      0         0         0     0
 
 Line 1:  [UnoGroupRooms]
-Line 2:  ;grouproom_id group_id room_id
+Line 2:  ;grouproom_id group_id room_id
 Line 3:  0               #GRP1    #RM1
 Line 4:  0               #GRP2    #RM2
 Line 5:  0               #GRP3    #RM3
@@ -196,4 +196,4 @@ Line 6:  0               #GRP4    #RM4
 Line 7:  0               #GRP5    #RM5
 ```
 
-It’s important to note that variables must be declared and resolved before they can be referenced. While primarily for referencing primary keys, they can also be used to reference foreign key columns of type int, short, and long.
+It's important to note that variables must be declared and resolved before they can be referenced. While primarily for referencing primary keys, they can also be used to reference foreign key columns of type int, short, and long.

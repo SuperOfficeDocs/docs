@@ -1,0 +1,55 @@
+---
+uid: table-EjCategoryGroupLink
+title: EjCategoryGroupLink table
+description: User group link table for EjCategory, for mass handling ej_category members
+generated: true
+keywords: database table EjCategoryGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Ejcategorygrouplink from "./includes/ejcategorygrouplink.md";
+
+# EjCategoryGroupLink Table (450)
+
+User group link table for EjCategory, for mass handling ej_category members
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|ej\_categorygrouplink\_id|Primary key|PK| |
+|ej\_category\_id|Link to EjCategory list table|FK [ej_category](./ej-category)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![EjCategoryGroupLink table relationship diagram](./media/EjCategoryGroupLink.png)
+
+<Ejcategorygrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|ej\_category\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

@@ -45,4 +45,4 @@ Text type, enum that specifies owning table and role
 
 ## Usage
 
-* [text](../text.md).type - Long text fields from all over the system
+* [text](../text).type - Long text fields from all over the system

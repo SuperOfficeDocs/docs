@@ -24,7 +24,7 @@ Highest override level allowed
 
 ## Usage
 
-* [UserPreference](../userpreference.md).deflevel - Preference system. If deflevel is set to 5; the user may change the preferences
-* [UserPreference](../userpreference.md).maxlevel - Preference system. If deflevel is set to 5; the user may change the preferences
-* [PrefDesc](../prefdesc.md).maxLevel - Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice. You find an overview off all standard preference on http://techdoc.superoffice.com.  May be used by third-party developers to add system preferences to be updated from SuperOffice Maintenance client, instead of ini-files. 
-* [PrefDesc](../prefdesc.md).sysMaxLevel - Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice. You find an overview off all standard preference on http://techdoc.superoffice.com.  May be used by third-party developers to add system preferences to be updated from SuperOffice Maintenance client, instead of ini-files. 
+* [UserPreference](../userpreference).deflevel - Preference system. If deflevel is set to 5; the user may change the preferences
+* [UserPreference](../userpreference).maxlevel - Preference system. If deflevel is set to 5; the user may change the preferences
+* [PrefDesc](../prefdesc).maxLevel - Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice. You find an overview off all standard preference on http://techdoc.superoffice.com.  May be used by third-party developers to add system preferences to be updated from SuperOffice Maintenance client, instead of ini-files.
+* [PrefDesc](../prefdesc).sysMaxLevel - Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice. You find an overview off all standard preference on http://techdoc.superoffice.com.  May be used by third-party developers to add system preferences to be updated from SuperOffice Maintenance client, instead of ini-files.

@@ -21,4 +21,4 @@ What level this dimension can be assigned to (Company, Group, Associate)
 
 ## Usage
 
-* [target_dimension](../target-dimension.md).assignment_level - Defining target dimension
+* [target_dimension](../target-dimension).assignment_level - Defining target dimension

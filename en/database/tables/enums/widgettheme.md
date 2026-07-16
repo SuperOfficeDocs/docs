@@ -19,4 +19,4 @@ Predefined themes for the chat widget
 
 ## Usage
 
-* [chat_topic](../chat-topic.md).widget_theme - This table contains chat topics.
+* [chat_topic](../chat-topic).widget_theme - This table contains chat topics.

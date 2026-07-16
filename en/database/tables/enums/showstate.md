@@ -24,4 +24,4 @@ Maximized / minimized / restored
 
 ## Usage
 
-* [ExtApp](../extapp.md).showState - ExtApp list table. Applications startable from SuperOffice
+* [ExtApp](../extapp).showState - ExtApp list table. Applications startable from SuperOffice

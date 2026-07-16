@@ -1,0 +1,57 @@
+---
+uid: table-CategoryGroupLink
+title: CategoryGroupLink table
+description: User group link table for Category, for MDO item hiding
+generated: true
+keywords: database table CategoryGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Categorygrouplink from "./includes/categorygrouplink.md";
+
+# CategoryGroupLink Table (65)
+
+User group link table for Category, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|categorygrouplink\_id|Primary key|PK| |
+|category\_id|Link to Category list table|FK [Category](./category)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![CategoryGroupLink table relationship diagram](./media/CategoryGroupLink.png)
+
+<Categorygrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|category\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Category](./category)  |Category list table |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

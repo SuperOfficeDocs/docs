@@ -1,0 +1,41 @@
+---
+uid: table-registry
+title: registry table
+description: System settings
+generated: true
+keywords: database table registry
+content_type: reference
+envir: onsite, online
+---
+
+import Registry from "./includes/registry.md";
+
+# registry Table (253)
+
+System settings
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|reg\_id|The enum used as identificator|Int| |
+|name|A descriptive string for the entry|String(255)| |
+|value|The value for the registry entry.|String(255)|&#x25CF;|
+
+![registry table relationship diagram](./media/registry.png)
+
+<Registry />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

@@ -21,4 +21,4 @@ Type of sender email setting. Always use senderEmailAddress = 0, Use Our contact
 
 ## Usage
 
-* [DocTmpl](../doctmpl.md).senderEmailMode - DocTmpl list table. Describes templates available for writing new documents.
+* [DocTmpl](../doctmpl).senderEmailMode - DocTmpl list table. Describes templates available for writing new documents.

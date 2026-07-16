@@ -92,4 +92,4 @@ envir: onsite, online
 
 ## Usage
 
-* [ExtApp](../extapp.md).navigation - ExtApp list table. Applications startable from SuperOffice
+* [ExtApp](../extapp).navigation - ExtApp list table. Applications startable from SuperOffice

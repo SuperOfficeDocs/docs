@@ -19,4 +19,4 @@ Various chat statuses for an agent
 
 ## Usage
 
-* [ejuser](../ejuser.md).chat_status - This table contains entries for the users of the system.
+* [ejuser](../ejuser).chat_status - This table contains entries for the users of the system.

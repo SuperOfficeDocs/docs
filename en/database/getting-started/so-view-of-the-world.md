@@ -39,12 +39,11 @@ The appointment table contains foreign keys to all the other important tables, p
 
 | Real-world term | UI        | Database table |
 |-----------------|-----------|----------------|
-| company<br>organization | company | contact  |
-| person          | contact<br>associate |     |
+| company<br />organization | company | contact  |
+| person          | contact<br />associate |     |
 | customer        | contact   | person         |
 | employee        | associate | associate      |
 | user account    | user      | ejuser         |
 | database owner  | tenant    | Company        |
 
-<!-- Referenced links -->
-[1]: main-tables.md
+[1]: ./main-tables

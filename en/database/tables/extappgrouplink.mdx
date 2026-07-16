@@ -1,0 +1,57 @@
+---
+uid: table-ExtAppGroupLink
+title: ExtAppGroupLink table
+description: User group link table for ExtApp, for MDO item hiding
+generated: true
+keywords: database table ExtAppGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Extappgrouplink from "./includes/extappgrouplink.md";
+
+# ExtAppGroupLink Table (134)
+
+User group link table for ExtApp, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|extappgrouplink\_id|Primary key|PK| |
+|extapp\_id|Link to ExtApp list table|FK [ExtApp](./extapp)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![ExtAppGroupLink table relationship diagram](./media/ExtAppGroupLink.png)
+
+<Extappgrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|extapp\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ExtApp](./extapp)  |ExtApp list table. Applications startable from SuperOffice |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

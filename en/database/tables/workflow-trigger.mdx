@@ -1,0 +1,52 @@
+---
+uid: table-workflow_trigger
+title: workflow_trigger table
+description: A set of triggers related to a workflow.
+generated: true
+keywords: database table workflow_trigger
+content_type: reference
+envir: onsite, online
+---
+
+import WorkflowTrigger from "./includes/workflow-trigger.md";
+
+# workflow\_trigger Table (530)
+
+A set of triggers related to a workflow.
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|workflow\_trigger\_id|Primary key|PK| |
+|workflow\_id|The flow this trigger belongs to|FK [workflow](./workflow)|&#x25CF;|
+|trigger\_type|What kind of trigger is this|Enum [WorkflowTriggerType](./enums/workflowtriggertype)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![workflow_trigger table relationship diagram](./media/workflow_trigger.png)
+
+<WorkflowTrigger />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[workflow](./workflow)  |SuperOffice specific info about a workflow |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.

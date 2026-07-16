@@ -20,4 +20,4 @@ Normal = 0, Maximized = 1, Minimized = 2
 
 ## Usage
 
-* [WinPosSize](../winpossize.md).state - Stores the position and size of each window, so they can be shown in the same place again
+* [WinPosSize](../winpossize).state - Stores the position and size of each window, so they can be shown in the same place again
