@@ -21523,6 +21523,14 @@
     {
       "source": "/en/database/getting-started/overview",
       "destination": "/en/database/getting-started#overview-of-tables"
+    },
+    {
+      "source": "/en/api/reference/soap/customer-service/*",
+      "destination": "/en/api/web-services/endpoints/rest-webapi"
+    },
+    {
+      "source": "/en/api/reference/soap/Services88/*",
+      "destination": "/downloads/api/wsdl.zip"
     }
   ]
 }
