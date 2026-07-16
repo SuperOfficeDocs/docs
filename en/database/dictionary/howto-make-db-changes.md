@@ -1,11 +1,12 @@
 ---
-title: How to create tables
 uid: create_cdd_tables
+title: How to create tables
 description: How to create tables in the SuperOffice database for version 8.1 and higher
-author: Tony Yates
-date: 06.23.2017, 11.02.2017
-keywords:
-content_type: tutorial
+keywords: database, dictionary step, CDD
+author: AnthonyYates
+date: 07.16.2026
+content_type: howto
+language: en
 ---
 
 # How to create tables in the SuperOffice database (CDD)
@@ -48,11 +49,11 @@ In the example below, `MovieStep1` implements the `Structure` method where two n
 
 Each method in the `Structure` method will be translated into a command. `CreateTable`, for instance, is transformed into a create table command, and each of the Add methods is transformed into an **add field** command.
 
-![x][img1]
+![MovieStep1 example showing the Structure method defining two new tables][img1]
 
 Individually, each command is known as a **BuilderCommand**. Even the `Dictionary` attribute and any defined indexes are transformed into respective commands.
 
-![x][img2]
+![BuilderCommand list generated from a DictionaryStep's attributes, tables, and indexes][img2]
 
 There are several types of command builders, where each builder knows how to access and build a list of commands from each unique resource.
 
@@ -60,13 +61,13 @@ For example, a `CommandFromStepBuilder` knows how to build a command list from a
 
 **Applicators** then use the command lists to perform various tasks. For example, the `DatabaseModelApplicator` is responsible for both command validation and transforming the command list into database model types - such as `TableModel`, `FieldModel`, `IndexMode`, `RelationModel`.
 
-![x][img3]
+![DatabaseModelApplicator transforming a command list into TableModel, FieldModel, IndexModel, and RelationModel types][img3]
 
 Once the in-memory database model has been checked and validated, the physical applicators perform all physical changes to the database.
 
 ## Typical workflow
 
-![x][img5]
+![Typical Continuous Database workflow from integration idea to DictionaryStep creation][img5]
 
 As a third-party developer, the typical workflow begins when you have an integration idea that needs to either extend or create a table in the SuperOffice database. Detailed in the [Continuous Database article][1], this begins with the creation of a new Dictionary Step.
 
@@ -80,7 +81,7 @@ Before presenting how a DictionaryStep is applied to a physical database, this s
 
 **Example DictionaryStep - DemoFeature, StepNumber 1:**
 
-```csharp CS
+```csharp
 using SuperOffice.CD.DSL.V1.StepModel;
 
 namespace ExampleDictionaryStep
@@ -119,7 +120,7 @@ If you are still wondering why more than nine fields are created, `AddRegistered
 
 **Example DictionaryStep - DemoFeature, StepNumber int.MaxValue:**
 
-```csharp CS
+```csharp
 using SuperOffice.CD.DSL.V1.StepModel;
 
 namespace ExampleDictionaryStep
@@ -147,7 +148,7 @@ The following code example resides in a new project - a console application, wit
 * *SuperOffice.CD.DSL.dll*
 * *SuperOffice.CD.DSL.Implementation.dll*
 
-```csharp CS
+```csharp
 private void ApplySteps()
 {
   // populate database connection properties
@@ -187,7 +188,7 @@ While it's not necessary to know how `ApplyDictionarySteps` works, it's interest
 
 The diagram below lists - in sequence - the actions that occur when a `DictionaryStep` is applied to a database.
 
-![x][img6]
+![Sequence diagram of how a DictionaryStep is applied to the database, from CommandBuilder to database applicators][img6]
 
 This shows how a `DictionaryStep` is transformed into a command list by the `CommandBuilder`, and how the applicators use the command list to apply changes to the database. The diagram also details when priming actions occur, when and where changes are logged to the database and the database model is persisted.
 

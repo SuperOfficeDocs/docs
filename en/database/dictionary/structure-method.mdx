@@ -1,11 +1,12 @@
 ---
-title: Structure method
 uid: cdd_structure
+title: Structure method
 description: Continuous database structure method
-author: Tony Yates
-date: 06.23.2017
 keywords: database
+author: AnthonyYates
+date: 07.16.2026
 content_type: concept
+language: en
 ---
 
 # Structure method
@@ -18,7 +19,7 @@ Changing the database schema is facilitated by 3 methods in the base class:
 
 Each method is a **fluent** interface, and therefore easy-to-read and easy-to-use. This simple example illustrates this point:
 
-```csharp CS
+```csharp
 public override void Structure()
 {
   CreateTable("Movie", "Movie table for movie buffs")
@@ -142,7 +143,7 @@ public enum AppointmentPrivate : short
   Public = 0,
   [DbEnumMember("This appointment can only be read/seen by the owner")]
   PrivateUser = 1,
-  [DbEnumMember("This appointment can only be read by members of theowners group")]
+  [DbEnumMember("This appointment can only be read by members of the owners group")]
   PrivateGroup = 2,
 }
 ```

@@ -1,12 +1,12 @@
 ---
-title: CustomPriming method
 uid: custompriming_method
+title: CustomPriming method
 description: CustomPriming method
-author: Tony Yates
-date: 06.23.2017
 keywords: database
+author: AnthonyYates
+date: 07.16.2026
 content_type: concept
-# Optional fields. Don't forget to remove # if you need a field.
+language: en
 ---
 
 # CustomPriming method
@@ -21,7 +21,7 @@ Let's begin with a simple Insert statement example.
 
 In the following code, two datetime variables are declared for use as parameters to the `Insert` statement. Then the `ExecuteSql` method is invoked with two parameters: the SQL statement performing the INSERT, and then the anonymous type containing the parameter values.
 
-```csharp CS
+```csharp
 public override void CustomPriming()
 {
   var utcNow = DateTime.UtcNow;
@@ -72,7 +72,7 @@ Continuous Database will look up the table and field names, do quoting and case 
 
 A handy helper method `GetNextId`('tableName') is useful when you want to get a table's next ID value from the `sequence` table.
 
-```csharp CS
+```csharp
 public override void CustomPriming()
 {
   var utcNow = DateTime.UtcNow;
@@ -109,7 +109,7 @@ public override void CustomPriming()
 
 Another useful trick is to use **$nextId** to automatically obtain the next ID value from the `sequence` table.
 
-```csharp CS
+```csharp
 public override void CustomPriming()
 {
   var utcNow = DateTime.UtcNow;
@@ -148,7 +148,7 @@ The explicit type can use public or private fields or properties that map to par
 
 `ExplicitParameters` is a class that contains 5 fields:
 
-```csharp CS
+```csharp
 private class ExplicitParams
 {
   internal int id;
@@ -161,7 +161,7 @@ private class ExplicitParams
 
 All fields in this example are pre-populated except ID. In that case, the field is populated in the constructor of the class as seen in the following example.
 
-```csharp CS
+```csharp
 public override void CustomPriming()
 {
   var nextIdValue = GetNextId("abc");
@@ -199,11 +199,11 @@ One more common scenario is when new columns are introduced and the pre-existing
 
 The following code snippet is an example of a new field added to an existing table. Then the CustomPriming method executes an UPDATE statement that transfers the data from the old field into the new field and sets the updated field.
 
-```csharp CS
+```csharp
 public override void Structure()
 {
   ModifyTable("abc")
-    .AddString("def", "Descrition", 100, notNull: false)
+    .AddString("def", "Description", 100, notNull: false)
   ;
 }
 
@@ -224,7 +224,7 @@ When there is data in the database that needs to be obtained during the Dictiona
 
 A useful place for `ExecuteSelect` is in the `ImpFileName` method, to first check if priming data exists, and potentially only set it by returning the name of the imp file if the tables don't contain any data.
 
-```csharp CS
+```csharp
 public override List<string> ImpFileNames()
 {
   var abcData = ExecuteSelect(@"SELECT {abc.abc_id} FROM {abc}");
