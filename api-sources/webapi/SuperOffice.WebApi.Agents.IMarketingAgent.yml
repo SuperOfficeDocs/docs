@@ -1,0 +1,1963 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent
+  commentId: T:SuperOffice.WebApi.Agents.IMarketingAgent
+  id: IMarketingAgent
+  parent: SuperOffice.WebApi.Agents
+  children:
+  - SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync(SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync(SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync(SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync(SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync(SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync(System.Int32,SuperOffice.WebApi.Data.FormSubmissionStatus,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync(System.Int32,System.String,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync(SuperOffice.WebApi.Data.AvailableFont,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync(SuperOffice.WebApi.Data.FormEntity,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync(SuperOffice.WebApi.Data.FormSubmissionEntity,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageBlockEntity,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageEntity,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync(SuperOffice.WebApi.Data.FormFieldRestriction[],SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync(System.Int32,System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync(System.String,System.String,SuperOffice.WebApi.RequestOptions)
+  langs:
+  - csharp
+  - vb
+  name: IMarketingAgent
+  nameWithType: IMarketingAgent
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent
+  type: Interface
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Agent used for Marketing functions, such as Forms
+  example: []
+  syntax:
+    content: 'public interface IMarketingAgent : IAgentBase, IDisposable'
+    content.vb: Public Interface IMarketingAgent Inherits IAgentBase, IDisposable
+  inheritedMembers:
+  - SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+  - SuperOffice.WebApi.Agents.IAgentBase.Configuration
+  - SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+  - SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+  - SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+  - System.IDisposable.Dispose
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync(SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync(SuperOffice.WebApi.RequestOptions)
+  id: CreateDefaultFormEntityAsync(SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultFormEntityAsync(RequestOptions)
+  nameWithType: IMarketingAgent.CreateDefaultFormEntityAsync(RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync(SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: >-
+    Set default values into a new FormEntity.
+
+    NetServer calculates default values on the entity, which is required when creating/storing a new instance
+  example: []
+  syntax:
+    content: Task<FormEntity> CreateDefaultFormEntityAsync(RequestOptions requestOptions = null)
+    parameters:
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormEntity}
+      description: A blank FormEntity
+    content.vb: Function CreateDefaultFormEntityAsync(requestOptions As RequestOptions = Nothing) As Task(Of FormEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync(SuperOffice.WebApi.Data.FormEntity,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync(SuperOffice.WebApi.Data.FormEntity,SuperOffice.WebApi.RequestOptions)
+  id: SaveFormEntityAsync(SuperOffice.WebApi.Data.FormEntity,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: SaveFormEntityAsync(FormEntity, RequestOptions)
+  nameWithType: IMarketingAgent.SaveFormEntityAsync(FormEntity, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync(SuperOffice.WebApi.Data.FormEntity, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Updates the existing FormEntity or creates a new FormEntity if the id parameter is 0.
+  example: []
+  syntax:
+    content: Task<FormEntity> SaveFormEntityAsync(FormEntity formEntity, RequestOptions requestOptions = null)
+    parameters:
+    - id: formEntity
+      type: SuperOffice.WebApi.Data.FormEntity
+      description: The FormEntity that is saved.
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormEntity}
+      description: New or updated FormEntity
+    content.vb: Function SaveFormEntityAsync(formEntity As FormEntity, requestOptions As RequestOptions = Nothing) As Task(Of FormEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: DeleteFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: DeleteFormEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.DeleteFormEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Deletes the FormEntity
+  example: []
+  syntax:
+    content: Task DeleteFormEntityAsync(int formEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: formEntityId
+      type: System.Int32
+      description: The identity of the FormEntity
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteFormEntityAsync(formEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync*
+  nameWithType.vb: IMarketingAgent.DeleteFormEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: DeleteFormEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync(SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync(SuperOffice.WebApi.RequestOptions)
+  id: CreateDefaultFormSubmissionEntityAsync(SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultFormSubmissionEntityAsync(RequestOptions)
+  nameWithType: IMarketingAgent.CreateDefaultFormSubmissionEntityAsync(RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync(SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: >-
+    Set default values into a new FormSubmissionEntity.
+
+    NetServer calculates default values on the entity, which is required when creating/storing a new instance
+  example: []
+  syntax:
+    content: Task<FormSubmissionEntity> CreateDefaultFormSubmissionEntityAsync(RequestOptions requestOptions = null)
+    parameters:
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormSubmissionEntity}
+      description: A blank FormSubmissionEntity
+    content.vb: Function CreateDefaultFormSubmissionEntityAsync(requestOptions As RequestOptions = Nothing) As Task(Of FormSubmissionEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync(SuperOffice.WebApi.Data.FormSubmissionEntity,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync(SuperOffice.WebApi.Data.FormSubmissionEntity,SuperOffice.WebApi.RequestOptions)
+  id: SaveFormSubmissionEntityAsync(SuperOffice.WebApi.Data.FormSubmissionEntity,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: SaveFormSubmissionEntityAsync(FormSubmissionEntity, RequestOptions)
+  nameWithType: IMarketingAgent.SaveFormSubmissionEntityAsync(FormSubmissionEntity, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync(SuperOffice.WebApi.Data.FormSubmissionEntity, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Updates the existing FormSubmissionEntity or creates a new FormSubmissionEntity if the id parameter is 0.
+  example: []
+  syntax:
+    content: Task<FormSubmissionEntity> SaveFormSubmissionEntityAsync(FormSubmissionEntity formSubmissionEntity, RequestOptions requestOptions = null)
+    parameters:
+    - id: formSubmissionEntity
+      type: SuperOffice.WebApi.Data.FormSubmissionEntity
+      description: The FormSubmissionEntity that is saved.
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormSubmissionEntity}
+      description: New or updated FormSubmissionEntity
+    content.vb: Function SaveFormSubmissionEntityAsync(formSubmissionEntity As FormSubmissionEntity, requestOptions As RequestOptions = Nothing) As Task(Of FormSubmissionEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: DeleteFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: DeleteFormSubmissionEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.DeleteFormSubmissionEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Deletes the FormSubmissionEntity
+  example: []
+  syntax:
+    content: Task DeleteFormSubmissionEntityAsync(int formSubmissionEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: formSubmissionEntityId
+      type: System.Int32
+      description: The identity of the FormSubmissionEntity
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteFormSubmissionEntityAsync(formSubmissionEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync*
+  nameWithType.vb: IMarketingAgent.DeleteFormSubmissionEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: DeleteFormSubmissionEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync(SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync(SuperOffice.WebApi.RequestOptions)
+  id: CreateDefaultShipmentMessageBlockEntityAsync(SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultShipmentMessageBlockEntityAsync(RequestOptions)
+  nameWithType: IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync(RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync(SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: >-
+    Set default values into a new ShipmentMessageBlockEntity.
+
+    NetServer calculates default values on the entity, which is required when creating/storing a new instance
+  example: []
+  syntax:
+    content: Task<ShipmentMessageBlockEntity> CreateDefaultShipmentMessageBlockEntityAsync(RequestOptions requestOptions = null)
+    parameters:
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity}
+      description: A blank ShipmentMessageBlockEntity
+    content.vb: Function CreateDefaultShipmentMessageBlockEntityAsync(requestOptions As RequestOptions = Nothing) As Task(Of ShipmentMessageBlockEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageBlockEntity,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageBlockEntity,SuperOffice.WebApi.RequestOptions)
+  id: SaveShipmentMessageBlockEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageBlockEntity,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: SaveShipmentMessageBlockEntityAsync(ShipmentMessageBlockEntity, RequestOptions)
+  nameWithType: IMarketingAgent.SaveShipmentMessageBlockEntityAsync(ShipmentMessageBlockEntity, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageBlockEntity, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Updates the existing ShipmentMessageBlockEntity or creates a new ShipmentMessageBlockEntity if the id parameter is 0.
+  example: []
+  syntax:
+    content: Task<ShipmentMessageBlockEntity> SaveShipmentMessageBlockEntityAsync(ShipmentMessageBlockEntity shipmentMessageBlockEntity, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentMessageBlockEntity
+      type: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+      description: The ShipmentMessageBlockEntity that is saved.
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity}
+      description: New or updated ShipmentMessageBlockEntity
+    content.vb: Function SaveShipmentMessageBlockEntityAsync(shipmentMessageBlockEntity As ShipmentMessageBlockEntity, requestOptions As RequestOptions = Nothing) As Task(Of ShipmentMessageBlockEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: DeleteShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: DeleteShipmentMessageBlockEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.DeleteShipmentMessageBlockEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Deletes the ShipmentMessageBlockEntity
+  example: []
+  syntax:
+    content: Task DeleteShipmentMessageBlockEntityAsync(int shipmentMessageBlockEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentMessageBlockEntityId
+      type: System.Int32
+      description: The identity of the ShipmentMessageBlockEntity
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteShipmentMessageBlockEntityAsync(shipmentMessageBlockEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync*
+  nameWithType.vb: IMarketingAgent.DeleteShipmentMessageBlockEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: DeleteShipmentMessageBlockEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync(SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync(SuperOffice.WebApi.RequestOptions)
+  id: CreateDefaultShipmentMessageEntityAsync(SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultShipmentMessageEntityAsync(RequestOptions)
+  nameWithType: IMarketingAgent.CreateDefaultShipmentMessageEntityAsync(RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync(SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: >-
+    Set default values into a new ShipmentMessageEntity.
+
+    NetServer calculates default values on the entity, which is required when creating/storing a new instance
+  example: []
+  syntax:
+    content: Task<ShipmentMessageEntity> CreateDefaultShipmentMessageEntityAsync(RequestOptions requestOptions = null)
+    parameters:
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageEntity}
+      description: A blank ShipmentMessageEntity
+    content.vb: Function CreateDefaultShipmentMessageEntityAsync(requestOptions As RequestOptions = Nothing) As Task(Of ShipmentMessageEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageEntity,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageEntity,SuperOffice.WebApi.RequestOptions)
+  id: SaveShipmentMessageEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageEntity,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: SaveShipmentMessageEntityAsync(ShipmentMessageEntity, RequestOptions)
+  nameWithType: IMarketingAgent.SaveShipmentMessageEntityAsync(ShipmentMessageEntity, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync(SuperOffice.WebApi.Data.ShipmentMessageEntity, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Updates the existing ShipmentMessageEntity or creates a new ShipmentMessageEntity if the id parameter is 0.
+  example: []
+  syntax:
+    content: Task<ShipmentMessageEntity> SaveShipmentMessageEntityAsync(ShipmentMessageEntity shipmentMessageEntity, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentMessageEntity
+      type: SuperOffice.WebApi.Data.ShipmentMessageEntity
+      description: The ShipmentMessageEntity that is saved.
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageEntity}
+      description: New or updated ShipmentMessageEntity
+    content.vb: Function SaveShipmentMessageEntityAsync(shipmentMessageEntity As ShipmentMessageEntity, requestOptions As RequestOptions = Nothing) As Task(Of ShipmentMessageEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: DeleteShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: DeleteShipmentMessageEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.DeleteShipmentMessageEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Deletes the ShipmentMessageEntity
+  example: []
+  syntax:
+    content: Task DeleteShipmentMessageEntityAsync(int shipmentMessageEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentMessageEntityId
+      type: System.Int32
+      description: The identity of the ShipmentMessageEntity
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteShipmentMessageEntityAsync(shipmentMessageEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync*
+  nameWithType.vb: IMarketingAgent.DeleteShipmentMessageEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: DeleteShipmentMessageEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync(SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync(SuperOffice.WebApi.RequestOptions)
+  id: CreateDefaultAvailableFontAsync(SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultAvailableFontAsync(RequestOptions)
+  nameWithType: IMarketingAgent.CreateDefaultAvailableFontAsync(RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync(SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Create an return an empty font
+  example: []
+  syntax:
+    content: Task<AvailableFont> CreateDefaultAvailableFontAsync(RequestOptions requestOptions = null)
+    parameters:
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.AvailableFont}
+      description: Returns the created default font
+    content.vb: Function CreateDefaultAvailableFontAsync(requestOptions As RequestOptions = Nothing) As Task(Of AvailableFont)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync(SuperOffice.WebApi.Data.AvailableFont,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync(SuperOffice.WebApi.Data.AvailableFont,SuperOffice.WebApi.RequestOptions)
+  id: SaveAvailableFontAsync(SuperOffice.WebApi.Data.AvailableFont,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: SaveAvailableFontAsync(AvailableFont, RequestOptions)
+  nameWithType: IMarketingAgent.SaveAvailableFontAsync(AvailableFont, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync(SuperOffice.WebApi.Data.AvailableFont, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Saves the font and returns it with correct rank
+  example: []
+  syntax:
+    content: Task<AvailableFont> SaveAvailableFontAsync(AvailableFont font, RequestOptions requestOptions = null)
+    parameters:
+    - id: font
+      type: SuperOffice.WebApi.Data.AvailableFont
+      description: The font to save
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.AvailableFont}
+      description: Returns the saved font with correct rank
+    content.vb: Function SaveAvailableFontAsync(font As AvailableFont, requestOptions As RequestOptions = Nothing) As Task(Of AvailableFont)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync*
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: DeleteAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: DeleteAvailableFontAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.DeleteAvailableFontAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Delete the font with the provided id
+  example: []
+  syntax:
+    content: Task<bool> DeleteAvailableFontAsync(int availableFontId, RequestOptions requestOptions = null)
+    parameters:
+    - id: availableFontId
+      type: System.Int32
+      description: The id of the font to delete
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns true if the font was deleted
+    content.vb: Function DeleteAvailableFontAsync(availableFontId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of Boolean)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync*
+  nameWithType.vb: IMarketingAgent.DeleteAvailableFontAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: DeleteAvailableFontAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetAvailableFontAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableFontAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetAvailableFontAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Get an available font by id
+  example: []
+  syntax:
+    content: Task<AvailableFont> GetAvailableFontAsync(int availableFontId, RequestOptions requestOptions = null)
+    parameters:
+    - id: availableFontId
+      type: System.Int32
+      description: The id of the font to retrieve
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.AvailableFont}
+      description: Returns the requested font or null if it does not exist
+    content.vb: Function GetAvailableFontAsync(availableFontId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of AvailableFont)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync*
+  nameWithType.vb: IMarketingAgent.GetAvailableFontAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetAvailableFontAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync(System.Int32,System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync(System.Int32,System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: SetFontRankAsync(System.Int32,System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: SetFontRankAsync(int, int, RequestOptions)
+  nameWithType: IMarketingAgent.SetFontRankAsync(int, int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync(int, int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Set the rank on the font and reorder the rest of the fonts accordingly
+  example: []
+  syntax:
+    content: Task<bool> SetFontRankAsync(int availableFontId, int rank, RequestOptions requestOptions = null)
+    parameters:
+    - id: availableFontId
+      type: System.Int32
+      description: The id of the available font to set the rank on
+    - id: rank
+      type: System.Int32
+      description: The new rank to set on the font
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns true if the new rank on the font and surrounding reranks went well
+    content.vb: Function SetFontRankAsync(availableFontId As Integer, rank As Integer, requestOptions As RequestOptions = Nothing) As Task(Of Boolean)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync*
+  nameWithType.vb: IMarketingAgent.SetFontRankAsync(Integer, Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync(Integer, Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: SetFontRankAsync(Integer, Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetFormEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetFormEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetFormEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Gets a specific FormEntity object.
+  example: []
+  syntax:
+    content: Task<FormEntity> GetFormEntityAsync(int formEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: formEntityId
+      type: System.Int32
+      description: The identifier of the FormEntity object
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormEntity}
+      description: FormEntity
+    content.vb: Function GetFormEntityAsync(formEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of FormEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync*
+  nameWithType.vb: IMarketingAgent.GetFormEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetFormEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync(System.String,System.String,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync(System.String,System.String,SuperOffice.WebApi.RequestOptions)
+  id: VerifyGoogleRecaptchaAsync(System.String,System.String,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: VerifyGoogleRecaptchaAsync(string, string, RequestOptions)
+  nameWithType: IMarketingAgent.VerifyGoogleRecaptchaAsync(string, string, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync(string, string, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: This method will try to verify a Google recaptcha token. The token is gained from the recaptcha frontend component
+  example: []
+  syntax:
+    content: Task<bool> VerifyGoogleRecaptchaAsync(string token, string optionalSecretKey, RequestOptions requestOptions = null)
+    parameters:
+    - id: token
+      type: System.String
+      description: The token to be verified
+    - id: optionalSecretKey
+      type: System.String
+      description: Use an optional secret key instead of the system wide
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns true if the recaptcha token verified successfully
+    content.vb: Function VerifyGoogleRecaptchaAsync(token As String, optionalSecretKey As String, requestOptions As RequestOptions = Nothing) As Task(Of Boolean)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync*
+  nameWithType.vb: IMarketingAgent.VerifyGoogleRecaptchaAsync(String, String, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync(String, String, SuperOffice.WebApi.RequestOptions)
+  name.vb: VerifyGoogleRecaptchaAsync(String, String, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync(SuperOffice.WebApi.Data.FormFieldRestriction[],SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync(SuperOffice.WebApi.Data.FormFieldRestriction[],SuperOffice.WebApi.RequestOptions)
+  id: SetAllFormFieldRestrictionsAsync(SuperOffice.WebApi.Data.FormFieldRestriction[],SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: SetAllFormFieldRestrictionsAsync(FormFieldRestriction[], RequestOptions)
+  nameWithType: IMarketingAgent.SetAllFormFieldRestrictionsAsync(FormFieldRestriction[], RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync(SuperOffice.WebApi.Data.FormFieldRestriction[], SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: 'Sets the list of form field restrictions. Note: This list is the conclusion of what should exist in the table. Restrictions that already exists in the table are edited, new ones are added, and if they are not in this list, they will be deleted'
+  example: []
+  syntax:
+    content: Task SetAllFormFieldRestrictionsAsync(FormFieldRestriction[] formFieldRestrictions, RequestOptions requestOptions = null)
+    parameters:
+    - id: formFieldRestrictions
+      type: SuperOffice.WebApi.Data.FormFieldRestriction[]
+      description: All the restrictions to set. Restrictions not included, will be deleted
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function SetAllFormFieldRestrictionsAsync(formFieldRestrictions As FormFieldRestriction(), requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync*
+  nameWithType.vb: IMarketingAgent.SetAllFormFieldRestrictionsAsync(FormFieldRestriction(), RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync(SuperOffice.WebApi.Data.FormFieldRestriction(), SuperOffice.WebApi.RequestOptions)
+  name.vb: SetAllFormFieldRestrictionsAsync(FormFieldRestriction(), RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetFormSubmissionEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetFormSubmissionEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetFormSubmissionEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Gets a specific FormSubmissionEntity object.
+  example: []
+  syntax:
+    content: Task<FormSubmissionEntity> GetFormSubmissionEntityAsync(int formSubmissionEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: formSubmissionEntityId
+      type: System.Int32
+      description: The identifier of the FormSubmissionEntity object
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormSubmissionEntity}
+      description: FormSubmissionEntity
+    content.vb: Function GetFormSubmissionEntityAsync(formSubmissionEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of FormSubmissionEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync*
+  nameWithType.vb: IMarketingAgent.GetFormSubmissionEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetFormSubmissionEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: CalculateMailingStatisticsAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: CalculateMailingStatisticsAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.CalculateMailingStatisticsAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Calculate open and click rates for one or more mailings
+  example: []
+  syntax:
+    content: Task<int> CalculateMailingStatisticsAsync(int shipmentId, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentId
+      type: System.Int32
+      description: If 0, calculate rates for all dirty (are_statistics_dirty) shipments
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: Number of shipments updated with calculated statistics
+    content.vb: Function CalculateMailingStatisticsAsync(shipmentId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of Integer)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync*
+  nameWithType.vb: IMarketingAgent.CalculateMailingStatisticsAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: CalculateMailingStatisticsAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync(System.Int32,SuperOffice.WebApi.Data.FormSubmissionStatus,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync(System.Int32,SuperOffice.WebApi.Data.FormSubmissionStatus,SuperOffice.WebApi.RequestOptions)
+  id: GetFormSubmissionsCountAsync(System.Int32,SuperOffice.WebApi.Data.FormSubmissionStatus,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetFormSubmissionsCountAsync(int, FormSubmissionStatus, RequestOptions)
+  nameWithType: IMarketingAgent.GetFormSubmissionsCountAsync(int, FormSubmissionStatus, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync(int, SuperOffice.WebApi.Data.FormSubmissionStatus, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Get counnt of submissions for given form and status. Count for all forms is returned if negative formId is given
+  example: []
+  syntax:
+    content: Task<int> GetFormSubmissionsCountAsync(int formId, FormSubmissionStatus status, RequestOptions requestOptions = null)
+    parameters:
+    - id: formId
+      type: System.Int32
+      description: If 0 or less, return count for all forms
+    - id: status
+      type: SuperOffice.WebApi.Data.FormSubmissionStatus
+      description: Which status the submissions should have. If Unknown, return count of all statuses
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: Number of formsubmissions
+    content.vb: Function GetFormSubmissionsCountAsync(formId As Integer, status As FormSubmissionStatus, requestOptions As RequestOptions = Nothing) As Task(Of Integer)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync*
+  nameWithType.vb: IMarketingAgent.GetFormSubmissionsCountAsync(Integer, FormSubmissionStatus, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync(Integer, SuperOffice.WebApi.Data.FormSubmissionStatus, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetFormSubmissionsCountAsync(Integer, FormSubmissionStatus, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetPreviewMailingAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetPreviewMailingAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetPreviewMailingAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Get a shipment message from its shipment address id
+  example: []
+  syntax:
+    content: Task<PreviewMailing> GetPreviewMailingAsync(int shipmentAddrId, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentAddrId
+      type: System.Int32
+      description: Shipment address id
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.PreviewMailing}
+      description: PreviewMailing
+    content.vb: Function GetPreviewMailingAsync(shipmentAddrId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of PreviewMailing)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync*
+  nameWithType.vb: IMarketingAgent.GetPreviewMailingAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetPreviewMailingAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetPreviewMailingHeaderAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetPreviewMailingHeaderAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetPreviewMailingHeaderAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Get a shipment from its shipment id
+  example: []
+  syntax:
+    content: Task<PreviewMailingHeader> GetPreviewMailingHeaderAsync(int shipmentId, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentId
+      type: System.Int32
+      description: Shipment id
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.PreviewMailingHeader}
+      description: PreviewMailingHeader
+    content.vb: Function GetPreviewMailingHeaderAsync(shipmentId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of PreviewMailingHeader)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync*
+  nameWithType.vb: IMarketingAgent.GetPreviewMailingHeaderAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetPreviewMailingHeaderAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetShipmentMessageBlockEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetShipmentMessageBlockEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetShipmentMessageBlockEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Gets a specific ShipmentMessageBlockEntity object.
+  example: []
+  syntax:
+    content: Task<ShipmentMessageBlockEntity> GetShipmentMessageBlockEntityAsync(int shipmentMessageBlockEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentMessageBlockEntityId
+      type: System.Int32
+      description: The identifier of the ShipmentMessageBlockEntity object
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity}
+      description: ShipmentMessageBlockEntity
+    content.vb: Function GetShipmentMessageBlockEntityAsync(shipmentMessageBlockEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of ShipmentMessageBlockEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync*
+  nameWithType.vb: IMarketingAgent.GetShipmentMessageBlockEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetShipmentMessageBlockEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetUserBlocksAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetUserBlocksAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetUserBlocksAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Get the saved user blocks to be used in a shipment/mailing message
+  example: []
+  syntax:
+    content: Task<ShipmentMessageBlockEntity[]> GetUserBlocksAsync(int associateId, RequestOptions requestOptions = null)
+    parameters:
+    - id: associateId
+      type: System.Int32
+      description: The associate id to get the user blocks. 0 will get all saved blocks
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity[]}
+      description: An array of user blocks
+    content.vb: Function GetUserBlocksAsync(associateId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of ShipmentMessageBlockEntity())
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync*
+  nameWithType.vb: IMarketingAgent.GetUserBlocksAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetUserBlocksAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetShipmentMessageEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: GetShipmentMessageEntityAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.GetShipmentMessageEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Gets a specific ShipmentMessageEntity object.
+  example: []
+  syntax:
+    content: Task<ShipmentMessageEntity> GetShipmentMessageEntityAsync(int shipmentMessageEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: shipmentMessageEntityId
+      type: System.Int32
+      description: The identifier of the ShipmentMessageEntity object
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageEntity}
+      description: ShipmentMessageEntity
+    content.vb: Function GetShipmentMessageEntityAsync(shipmentMessageEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of ShipmentMessageEntity)
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync*
+  nameWithType.vb: IMarketingAgent.GetShipmentMessageEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetShipmentMessageEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync(System.Int32,System.String,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync(System.Int32,System.String,SuperOffice.WebApi.RequestOptions)
+  id: RenameMailingByMessageIdAsync(System.Int32,System.String,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: RenameMailingByMessageIdAsync(int, string, RequestOptions)
+  nameWithType: IMarketingAgent.RenameMailingByMessageIdAsync(int, string, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync(int, string, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Change the mailing name (shipment description) that the given message (MessageId) belongs to
+  example: []
+  syntax:
+    content: Task RenameMailingByMessageIdAsync(int messageId, string name, RequestOptions requestOptions = null)
+    parameters:
+    - id: messageId
+      type: System.Int32
+      description: Message id
+    - id: name
+      type: System.String
+      description: The new name
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function RenameMailingByMessageIdAsync(messageId As Integer, name As String, requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync*
+  nameWithType.vb: IMarketingAgent.RenameMailingByMessageIdAsync(Integer, String, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync(Integer, String, SuperOffice.WebApi.RequestOptions)
+  name.vb: RenameMailingByMessageIdAsync(Integer, String, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: DeleteMessageAndShipmentAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IMarketingAgent
+  langs:
+  - csharp
+  - vb
+  name: DeleteMessageAndShipmentAsync(int, RequestOptions)
+  nameWithType: IMarketingAgent.DeleteMessageAndShipmentAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Delete the message and the shipment the message (MessageId) belongs to
+  example: []
+  syntax:
+    content: Task DeleteMessageAndShipmentAsync(int messageId, RequestOptions requestOptions = null)
+    parameters:
+    - id: messageId
+      type: System.Int32
+      description: Message id
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function DeleteMessageAndShipmentAsync(messageId As Integer, requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync*
+  nameWithType.vb: IMarketingAgent.DeleteMessageAndShipmentAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: DeleteMessageAndShipmentAsync(Integer, RequestOptions)
+references:
+- uid: SuperOffice.WebApi.Agents
+  commentId: N:SuperOffice.WebApi.Agents
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi.Agents
+  nameWithType: SuperOffice.WebApi.Agents
+  fullName: SuperOffice.WebApi.Agents
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Agents
+    name: Agents
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Agents
+    name: Agents
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.html
+- uid: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+  commentId: M:SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_CancelRequest
+  name: CancelRequest()
+  nameWithType: IAgentBase.CancelRequest()
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest()
+  spec.csharp:
+  - uid: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+    name: CancelRequest
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_CancelRequest
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+    name: CancelRequest
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_CancelRequest
+  - name: (
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IAgentBase.Configuration
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.Configuration
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_Configuration
+  name: Configuration
+  nameWithType: IAgentBase.Configuration
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.Configuration
+- uid: SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_HasRunningRequest
+  name: HasRunningRequest
+  nameWithType: IAgentBase.HasRunningRequest
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+- uid: SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_ProgressListener
+  name: ProgressListener
+  nameWithType: IAgentBase.ProgressListener
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+- uid: SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_UploadProgressListener
+  name: UploadProgressListener
+  nameWithType: IAgentBase.UploadProgressListener
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IAgentBase
+  commentId: T:SuperOffice.WebApi.Agents.IAgentBase
+  parent: SuperOffice.WebApi.Agents
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html
+  name: IAgentBase
+  nameWithType: IAgentBase
+  fullName: SuperOffice.WebApi.Agents.IAgentBase
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultFormEntityAsync_SuperOffice_WebApi_RequestOptions_
+  name: CreateDefaultFormEntityAsync
+  nameWithType: IMarketingAgent.CreateDefaultFormEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormEntityAsync
+- uid: SuperOffice.WebApi.RequestOptions
+  commentId: T:SuperOffice.WebApi.RequestOptions
+  parent: SuperOffice.WebApi
+  isExternal: true
+  href: SuperOffice.WebApi.RequestOptions.html
+  name: RequestOptions
+  nameWithType: RequestOptions
+  fullName: SuperOffice.WebApi.RequestOptions
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormEntity}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormEntity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<FormEntity>
+  nameWithType: Task<FormEntity>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.FormEntity>
+  nameWithType.vb: Task(Of FormEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.FormEntity)
+  name.vb: Task(Of FormEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.FormEntity
+    name: FormEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.FormEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.FormEntity
+    name: FormEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.FormEntity.html
+  - name: )
+- uid: SuperOffice.WebApi
+  commentId: N:SuperOffice.WebApi
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi
+  nameWithType: SuperOffice.WebApi
+  fullName: SuperOffice.WebApi
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_SaveFormEntityAsync_SuperOffice_WebApi_Data_FormEntity_SuperOffice_WebApi_RequestOptions_
+  name: SaveFormEntityAsync
+  nameWithType: IMarketingAgent.SaveFormEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormEntityAsync
+- uid: SuperOffice.WebApi.Data.FormEntity
+  commentId: T:SuperOffice.WebApi.Data.FormEntity
+  parent: SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.WebApi.Data.FormEntity.html
+  name: FormEntity
+  nameWithType: FormEntity
+  fullName: SuperOffice.WebApi.Data.FormEntity
+- uid: SuperOffice.WebApi.Data
+  commentId: N:SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi.Data
+  nameWithType: SuperOffice.WebApi.Data
+  fullName: SuperOffice.WebApi.Data
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Data
+    name: Data
+    isExternal: true
+    href: SuperOffice.WebApi.Data.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Data
+    name: Data
+    isExternal: true
+    href: SuperOffice.WebApi.Data.html
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteFormEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: DeleteFormEntityAsync
+  nameWithType: IMarketingAgent.DeleteFormEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormEntityAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultFormSubmissionEntityAsync_SuperOffice_WebApi_RequestOptions_
+  name: CreateDefaultFormSubmissionEntityAsync
+  nameWithType: IMarketingAgent.CreateDefaultFormSubmissionEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultFormSubmissionEntityAsync
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormSubmissionEntity}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.FormSubmissionEntity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<FormSubmissionEntity>
+  nameWithType: Task<FormSubmissionEntity>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.FormSubmissionEntity>
+  nameWithType.vb: Task(Of FormSubmissionEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.FormSubmissionEntity)
+  name.vb: Task(Of FormSubmissionEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.FormSubmissionEntity
+    name: FormSubmissionEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.FormSubmissionEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.FormSubmissionEntity
+    name: FormSubmissionEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.FormSubmissionEntity.html
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_SaveFormSubmissionEntityAsync_SuperOffice_WebApi_Data_FormSubmissionEntity_SuperOffice_WebApi_RequestOptions_
+  name: SaveFormSubmissionEntityAsync
+  nameWithType: IMarketingAgent.SaveFormSubmissionEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveFormSubmissionEntityAsync
+- uid: SuperOffice.WebApi.Data.FormSubmissionEntity
+  commentId: T:SuperOffice.WebApi.Data.FormSubmissionEntity
+  parent: SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.WebApi.Data.FormSubmissionEntity.html
+  name: FormSubmissionEntity
+  nameWithType: FormSubmissionEntity
+  fullName: SuperOffice.WebApi.Data.FormSubmissionEntity
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteFormSubmissionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: DeleteFormSubmissionEntityAsync
+  nameWithType: IMarketingAgent.DeleteFormSubmissionEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteFormSubmissionEntityAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultShipmentMessageBlockEntityAsync_SuperOffice_WebApi_RequestOptions_
+  name: CreateDefaultShipmentMessageBlockEntityAsync
+  nameWithType: IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageBlockEntityAsync
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ShipmentMessageBlockEntity>
+  nameWithType: Task<ShipmentMessageBlockEntity>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.ShipmentMessageBlockEntity>
+  nameWithType.vb: Task(Of ShipmentMessageBlockEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.ShipmentMessageBlockEntity)
+  name.vb: Task(Of ShipmentMessageBlockEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+    name: ShipmentMessageBlockEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+    name: ShipmentMessageBlockEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.html
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_SaveShipmentMessageBlockEntityAsync_SuperOffice_WebApi_Data_ShipmentMessageBlockEntity_SuperOffice_WebApi_RequestOptions_
+  name: SaveShipmentMessageBlockEntityAsync
+  nameWithType: IMarketingAgent.SaveShipmentMessageBlockEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageBlockEntityAsync
+- uid: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+  commentId: T:SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+  parent: SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.html
+  name: ShipmentMessageBlockEntity
+  nameWithType: ShipmentMessageBlockEntity
+  fullName: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteShipmentMessageBlockEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: DeleteShipmentMessageBlockEntityAsync
+  nameWithType: IMarketingAgent.DeleteShipmentMessageBlockEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageBlockEntityAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultShipmentMessageEntityAsync_SuperOffice_WebApi_RequestOptions_
+  name: CreateDefaultShipmentMessageEntityAsync
+  nameWithType: IMarketingAgent.CreateDefaultShipmentMessageEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultShipmentMessageEntityAsync
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageEntity}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageEntity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ShipmentMessageEntity>
+  nameWithType: Task<ShipmentMessageEntity>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.ShipmentMessageEntity>
+  nameWithType.vb: Task(Of ShipmentMessageEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.ShipmentMessageEntity)
+  name.vb: Task(Of ShipmentMessageEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.ShipmentMessageEntity
+    name: ShipmentMessageEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ShipmentMessageEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.ShipmentMessageEntity
+    name: ShipmentMessageEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ShipmentMessageEntity.html
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_SaveShipmentMessageEntityAsync_SuperOffice_WebApi_Data_ShipmentMessageEntity_SuperOffice_WebApi_RequestOptions_
+  name: SaveShipmentMessageEntityAsync
+  nameWithType: IMarketingAgent.SaveShipmentMessageEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveShipmentMessageEntityAsync
+- uid: SuperOffice.WebApi.Data.ShipmentMessageEntity
+  commentId: T:SuperOffice.WebApi.Data.ShipmentMessageEntity
+  parent: SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.WebApi.Data.ShipmentMessageEntity.html
+  name: ShipmentMessageEntity
+  nameWithType: ShipmentMessageEntity
+  fullName: SuperOffice.WebApi.Data.ShipmentMessageEntity
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteShipmentMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: DeleteShipmentMessageEntityAsync
+  nameWithType: IMarketingAgent.DeleteShipmentMessageEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteShipmentMessageEntityAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_CreateDefaultAvailableFontAsync_SuperOffice_WebApi_RequestOptions_
+  name: CreateDefaultAvailableFontAsync
+  nameWithType: IMarketingAgent.CreateDefaultAvailableFontAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CreateDefaultAvailableFontAsync
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.AvailableFont}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.AvailableFont}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AvailableFont>
+  nameWithType: Task<AvailableFont>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.AvailableFont>
+  nameWithType.vb: Task(Of AvailableFont)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.AvailableFont)
+  name.vb: Task(Of AvailableFont)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.AvailableFont
+    name: AvailableFont
+    isExternal: true
+    href: SuperOffice.WebApi.Data.AvailableFont.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.AvailableFont
+    name: AvailableFont
+    isExternal: true
+    href: SuperOffice.WebApi.Data.AvailableFont.html
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_SaveAvailableFontAsync_SuperOffice_WebApi_Data_AvailableFont_SuperOffice_WebApi_RequestOptions_
+  name: SaveAvailableFontAsync
+  nameWithType: IMarketingAgent.SaveAvailableFontAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SaveAvailableFontAsync
+- uid: SuperOffice.WebApi.Data.AvailableFont
+  commentId: T:SuperOffice.WebApi.Data.AvailableFont
+  parent: SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.WebApi.Data.AvailableFont.html
+  name: AvailableFont
+  nameWithType: AvailableFont
+  fullName: SuperOffice.WebApi.Data.AvailableFont
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteAvailableFontAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: DeleteAvailableFontAsync
+  nameWithType: IMarketingAgent.DeleteAvailableFontAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteAvailableFontAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetAvailableFontAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetAvailableFontAsync
+  nameWithType: IMarketingAgent.GetAvailableFontAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetAvailableFontAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_SetFontRankAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: SetFontRankAsync
+  nameWithType: IMarketingAgent.SetFontRankAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SetFontRankAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetFormEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetFormEntityAsync
+  nameWithType: IMarketingAgent.GetFormEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormEntityAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_VerifyGoogleRecaptchaAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_
+  name: VerifyGoogleRecaptchaAsync
+  nameWithType: IMarketingAgent.VerifyGoogleRecaptchaAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.VerifyGoogleRecaptchaAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_SetAllFormFieldRestrictionsAsync_SuperOffice_WebApi_Data_FormFieldRestriction___SuperOffice_WebApi_RequestOptions_
+  name: SetAllFormFieldRestrictionsAsync
+  nameWithType: IMarketingAgent.SetAllFormFieldRestrictionsAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.SetAllFormFieldRestrictionsAsync
+- uid: SuperOffice.WebApi.Data.FormFieldRestriction[]
+  isExternal: true
+  href: SuperOffice.WebApi.Data.FormFieldRestriction.html
+  name: FormFieldRestriction[]
+  nameWithType: FormFieldRestriction[]
+  fullName: SuperOffice.WebApi.Data.FormFieldRestriction[]
+  nameWithType.vb: FormFieldRestriction()
+  fullName.vb: SuperOffice.WebApi.Data.FormFieldRestriction()
+  name.vb: FormFieldRestriction()
+  spec.csharp:
+  - uid: SuperOffice.WebApi.Data.FormFieldRestriction
+    name: FormFieldRestriction
+    isExternal: true
+    href: SuperOffice.WebApi.Data.FormFieldRestriction.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SuperOffice.WebApi.Data.FormFieldRestriction
+    name: FormFieldRestriction
+    isExternal: true
+    href: SuperOffice.WebApi.Data.FormFieldRestriction.html
+  - name: (
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetFormSubmissionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetFormSubmissionEntityAsync
+  nameWithType: IMarketingAgent.GetFormSubmissionEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionEntityAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_CalculateMailingStatisticsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: CalculateMailingStatisticsAsync
+  nameWithType: IMarketingAgent.CalculateMailingStatisticsAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.CalculateMailingStatisticsAsync
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetFormSubmissionsCountAsync_System_Int32_SuperOffice_WebApi_Data_FormSubmissionStatus_SuperOffice_WebApi_RequestOptions_
+  name: GetFormSubmissionsCountAsync
+  nameWithType: IMarketingAgent.GetFormSubmissionsCountAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetFormSubmissionsCountAsync
+- uid: SuperOffice.WebApi.Data.FormSubmissionStatus
+  commentId: T:SuperOffice.WebApi.Data.FormSubmissionStatus
+  parent: SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.WebApi.Data.FormSubmissionStatus.html
+  name: FormSubmissionStatus
+  nameWithType: FormSubmissionStatus
+  fullName: SuperOffice.WebApi.Data.FormSubmissionStatus
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetPreviewMailingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetPreviewMailingAsync
+  nameWithType: IMarketingAgent.GetPreviewMailingAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingAsync
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.PreviewMailing}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.PreviewMailing}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PreviewMailing>
+  nameWithType: Task<PreviewMailing>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.PreviewMailing>
+  nameWithType.vb: Task(Of PreviewMailing)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.PreviewMailing)
+  name.vb: Task(Of PreviewMailing)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.PreviewMailing
+    name: PreviewMailing
+    isExternal: true
+    href: SuperOffice.WebApi.Data.PreviewMailing.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.PreviewMailing
+    name: PreviewMailing
+    isExternal: true
+    href: SuperOffice.WebApi.Data.PreviewMailing.html
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetPreviewMailingHeaderAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetPreviewMailingHeaderAsync
+  nameWithType: IMarketingAgent.GetPreviewMailingHeaderAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetPreviewMailingHeaderAsync
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.PreviewMailingHeader}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.PreviewMailingHeader}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PreviewMailingHeader>
+  nameWithType: Task<PreviewMailingHeader>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.PreviewMailingHeader>
+  nameWithType.vb: Task(Of PreviewMailingHeader)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.PreviewMailingHeader)
+  name.vb: Task(Of PreviewMailingHeader)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.PreviewMailingHeader
+    name: PreviewMailingHeader
+    isExternal: true
+    href: SuperOffice.WebApi.Data.PreviewMailingHeader.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.PreviewMailingHeader
+    name: PreviewMailingHeader
+    isExternal: true
+    href: SuperOffice.WebApi.Data.PreviewMailingHeader.html
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetShipmentMessageBlockEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetShipmentMessageBlockEntityAsync
+  nameWithType: IMarketingAgent.GetShipmentMessageBlockEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageBlockEntityAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetUserBlocksAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetUserBlocksAsync
+  nameWithType: IMarketingAgent.GetUserBlocksAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetUserBlocksAsync
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity[]}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ShipmentMessageBlockEntity[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ShipmentMessageBlockEntity[]>
+  nameWithType: Task<ShipmentMessageBlockEntity[]>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.ShipmentMessageBlockEntity[]>
+  nameWithType.vb: Task(Of ShipmentMessageBlockEntity())
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.ShipmentMessageBlockEntity())
+  name.vb: Task(Of ShipmentMessageBlockEntity())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+    name: ShipmentMessageBlockEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity
+    name: ShipmentMessageBlockEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ShipmentMessageBlockEntity.html
+  - name: (
+  - name: )
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_GetShipmentMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetShipmentMessageEntityAsync
+  nameWithType: IMarketingAgent.GetShipmentMessageEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.GetShipmentMessageEntityAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_RenameMailingByMessageIdAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_
+  name: RenameMailingByMessageIdAsync
+  nameWithType: IMarketingAgent.RenameMailingByMessageIdAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.RenameMailingByMessageIdAsync
+- uid: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IMarketingAgent.html#SuperOffice_WebApi_Agents_IMarketingAgent_DeleteMessageAndShipmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: DeleteMessageAndShipmentAsync
+  nameWithType: IMarketingAgent.DeleteMessageAndShipmentAsync
+  fullName: SuperOffice.WebApi.Agents.IMarketingAgent.DeleteMessageAndShipmentAsync

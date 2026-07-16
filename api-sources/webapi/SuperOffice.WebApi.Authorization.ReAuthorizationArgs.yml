@@ -1,0 +1,597 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  commentId: T:SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  id: ReAuthorizationArgs
+  parent: SuperOffice.WebApi.Authorization
+  children:
+  - SuperOffice.WebApi.Authorization.ReAuthorizationArgs.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpClient,SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException,System.String)
+  - SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl
+  - SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client
+  - SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception
+  - SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage
+  langs:
+  - csharp
+  - vb
+  name: ReAuthorizationArgs
+  nameWithType: ReAuthorizationArgs
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  type: Class
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: Used to contain required types when authorization is refreshed.
+  example: []
+  syntax:
+    content: public class ReAuthorizationArgs
+    content.vb: Public Class ReAuthorizationArgs
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpClient,SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException,System.String)
+  commentId: M:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpClient,SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException,System.String)
+  id: '#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpClient,SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException,System.String)'
+  parent: SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  langs:
+  - csharp
+  - vb
+  name: ReAuthorizationArgs(HttpRequestMessage, HttpClient, SuperOfficeWebApiUnauthorizedException, string)
+  nameWithType: ReAuthorizationArgs.ReAuthorizationArgs(HttpRequestMessage, HttpClient, SuperOfficeWebApiUnauthorizedException, string)
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.ReAuthorizationArgs(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpClient, SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException, string)
+  type: Constructor
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: Constructor
+  example: []
+  syntax:
+    content: public ReAuthorizationArgs(HttpRequestMessage requestMessage, HttpClient client, SuperOfficeWebApiUnauthorizedException exception, string baseUrl)
+    parameters:
+    - id: requestMessage
+      type: System.Net.Http.HttpRequestMessage
+      description: Originating request.
+    - id: client
+      type: System.Net.Http.HttpClient
+      description: HttpClient for backchannel communications.
+    - id: exception
+      type: SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException
+      description: Exception that triggered the refresh event.
+    - id: baseUrl
+      type: System.String
+      description: Base URL of Netserver WebApi.
+    content.vb: Public Sub New(requestMessage As HttpRequestMessage, client As HttpClient, exception As SuperOfficeWebApiUnauthorizedException, baseUrl As String)
+  overload: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.#ctor*
+  nameWithType.vb: ReAuthorizationArgs.New(HttpRequestMessage, HttpClient, SuperOfficeWebApiUnauthorizedException, String)
+  fullName.vb: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.New(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpClient, SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException, String)
+  name.vb: New(HttpRequestMessage, HttpClient, SuperOfficeWebApiUnauthorizedException, String)
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage
+  commentId: P:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage
+  id: RequestMessage
+  parent: SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  langs:
+  - csharp
+  - vb
+  name: RequestMessage
+  nameWithType: ReAuthorizationArgs.RequestMessage
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage
+  type: Property
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: Originating request.
+  example: []
+  syntax:
+    content: public HttpRequestMessage RequestMessage { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Http.HttpRequestMessage
+    content.vb: Public Property RequestMessage As HttpRequestMessage
+  overload: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage*
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client
+  commentId: P:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client
+  id: Client
+  parent: SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: ReAuthorizationArgs.Client
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client
+  type: Property
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: HttpClient for backchannel communications.
+  example: []
+  syntax:
+    content: public HttpClient Client { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Http.HttpClient
+    content.vb: Public Property Client As HttpClient
+  overload: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client*
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception
+  commentId: P:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception
+  id: Exception
+  parent: SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: ReAuthorizationArgs.Exception
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception
+  type: Property
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: Exception that triggered the refresh event.
+  example: []
+  syntax:
+    content: public SuperOfficeWebApiUnauthorizedException Exception { get; set; }
+    parameters: []
+    return:
+      type: SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException
+    content.vb: Public Property Exception As SuperOfficeWebApiUnauthorizedException
+  overload: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception*
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl
+  commentId: P:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl
+  id: BaseUrl
+  parent: SuperOffice.WebApi.Authorization.ReAuthorizationArgs
+  langs:
+  - csharp
+  - vb
+  name: BaseUrl
+  nameWithType: ReAuthorizationArgs.BaseUrl
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl
+  type: Property
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: Base URL of Netserver
+  example: []
+  syntax:
+    content: public string BaseUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BaseUrl As String
+  overload: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl*
+references:
+- uid: SuperOffice.WebApi.Authorization
+  commentId: N:SuperOffice.WebApi.Authorization
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi.Authorization
+  nameWithType: SuperOffice.WebApi.Authorization
+  fullName: SuperOffice.WebApi.Authorization
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization
+    name: Authorization
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization
+    name: Authorization
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.#ctor*
+  commentId: Overload:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.#ctor
+  isExternal: true
+  href: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.html#SuperOffice_WebApi_Authorization_ReAuthorizationArgs__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpClient_SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiUnauthorizedException_System_String_
+  name: ReAuthorizationArgs
+  nameWithType: ReAuthorizationArgs.ReAuthorizationArgs
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.ReAuthorizationArgs
+  nameWithType.vb: ReAuthorizationArgs.New
+  fullName.vb: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.New
+  name.vb: New
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException
+  commentId: T:SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException
+  parent: SuperOffice.WebApi.Authorization.Exceptions
+  isExternal: true
+  href: SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException.html
+  name: SuperOfficeWebApiUnauthorizedException
+  nameWithType: SuperOfficeWebApiUnauthorizedException
+  fullName: SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: SuperOffice.WebApi.Authorization.Exceptions
+  commentId: N:SuperOffice.WebApi.Authorization.Exceptions
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi.Authorization.Exceptions
+  nameWithType: SuperOffice.WebApi.Authorization.Exceptions
+  fullName: SuperOffice.WebApi.Authorization.Exceptions
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization
+    name: Authorization
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization.Exceptions
+    name: Exceptions
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.Exceptions.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization
+    name: Authorization
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization.Exceptions
+    name: Exceptions
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.Exceptions.html
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage*
+  commentId: Overload:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage
+  isExternal: true
+  href: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.html#SuperOffice_WebApi_Authorization_ReAuthorizationArgs_RequestMessage
+  name: RequestMessage
+  nameWithType: ReAuthorizationArgs.RequestMessage
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.RequestMessage
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client*
+  commentId: Overload:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client
+  isExternal: true
+  href: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.html#SuperOffice_WebApi_Authorization_ReAuthorizationArgs_Client
+  name: Client
+  nameWithType: ReAuthorizationArgs.Client
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Client
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception*
+  commentId: Overload:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception
+  isExternal: true
+  href: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.html#SuperOffice_WebApi_Authorization_ReAuthorizationArgs_Exception
+  name: Exception
+  nameWithType: ReAuthorizationArgs.Exception
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.Exception
+- uid: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl*
+  commentId: Overload:SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl
+  isExternal: true
+  href: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.html#SuperOffice_WebApi_Authorization_ReAuthorizationArgs_BaseUrl
+  name: BaseUrl
+  nameWithType: ReAuthorizationArgs.BaseUrl
+  fullName: SuperOffice.WebApi.Authorization.ReAuthorizationArgs.BaseUrl

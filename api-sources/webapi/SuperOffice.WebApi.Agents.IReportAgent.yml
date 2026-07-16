@@ -1,0 +1,522 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperOffice.WebApi.Agents.IReportAgent
+  commentId: T:SuperOffice.WebApi.Agents.IReportAgent
+  id: IReportAgent
+  parent: SuperOffice.WebApi.Agents
+  children:
+  - SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync(SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  - SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync(SuperOffice.WebApi.Data.ReportLabelLayoutEntity,SuperOffice.WebApi.RequestOptions)
+  langs:
+  - csharp
+  - vb
+  name: IReportAgent
+  nameWithType: IReportAgent
+  fullName: SuperOffice.WebApi.Agents.IReportAgent
+  type: Interface
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Run reports, set favourites, labels
+  example: []
+  syntax:
+    content: 'public interface IReportAgent : IAgentBase, IDisposable'
+    content.vb: Public Interface IReportAgent Inherits IAgentBase, IDisposable
+  inheritedMembers:
+  - SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+  - SuperOffice.WebApi.Agents.IAgentBase.Configuration
+  - SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+  - SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+  - SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+  - System.IDisposable.Dispose
+- uid: SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync(SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync(SuperOffice.WebApi.RequestOptions)
+  id: CreateDefaultReportLabelLayoutEntityAsync(SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IReportAgent
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultReportLabelLayoutEntityAsync(RequestOptions)
+  nameWithType: IReportAgent.CreateDefaultReportLabelLayoutEntityAsync(RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync(SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: >-
+    Set default values into a new ReportLabelLayoutEntity.
+
+    NetServer calculates default values on the entity, which is required when creating/storing a new instance
+  example: []
+  syntax:
+    content: Task<ReportLabelLayoutEntity> CreateDefaultReportLabelLayoutEntityAsync(RequestOptions requestOptions = null)
+    parameters:
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ReportLabelLayoutEntity}
+      description: A blank ReportLabelLayoutEntity
+    content.vb: Function CreateDefaultReportLabelLayoutEntityAsync(requestOptions As RequestOptions = Nothing) As Task(Of ReportLabelLayoutEntity)
+  overload: SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync(SuperOffice.WebApi.Data.ReportLabelLayoutEntity,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync(SuperOffice.WebApi.Data.ReportLabelLayoutEntity,SuperOffice.WebApi.RequestOptions)
+  id: SaveReportLabelLayoutEntityAsync(SuperOffice.WebApi.Data.ReportLabelLayoutEntity,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IReportAgent
+  langs:
+  - csharp
+  - vb
+  name: SaveReportLabelLayoutEntityAsync(ReportLabelLayoutEntity, RequestOptions)
+  nameWithType: IReportAgent.SaveReportLabelLayoutEntityAsync(ReportLabelLayoutEntity, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync(SuperOffice.WebApi.Data.ReportLabelLayoutEntity, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Updates the existing ReportLabelLayoutEntity or creates a new ReportLabelLayoutEntity if the id parameter is 0.
+  example: []
+  syntax:
+    content: Task<ReportLabelLayoutEntity> SaveReportLabelLayoutEntityAsync(ReportLabelLayoutEntity reportLabelLayoutEntity, RequestOptions requestOptions = null)
+    parameters:
+    - id: reportLabelLayoutEntity
+      type: SuperOffice.WebApi.Data.ReportLabelLayoutEntity
+      description: The ReportLabelLayoutEntity that is saved.
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ReportLabelLayoutEntity}
+      description: New or updated ReportLabelLayoutEntity
+    content.vb: Function SaveReportLabelLayoutEntityAsync(reportLabelLayoutEntity As ReportLabelLayoutEntity, requestOptions As RequestOptions = Nothing) As Task(Of ReportLabelLayoutEntity)
+  overload: SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync*
+- uid: SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: DeleteReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IReportAgent
+  langs:
+  - csharp
+  - vb
+  name: DeleteReportLabelLayoutEntityAsync(int, RequestOptions)
+  nameWithType: IReportAgent.DeleteReportLabelLayoutEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Deletes the ReportLabelLayoutEntity
+  example: []
+  syntax:
+    content: Task DeleteReportLabelLayoutEntityAsync(int reportLabelLayoutEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: reportLabelLayoutEntityId
+      type: System.Int32
+      description: The identity of the ReportLabelLayoutEntity
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteReportLabelLayoutEntityAsync(reportLabelLayoutEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task
+  overload: SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync*
+  nameWithType.vb: IReportAgent.DeleteReportLabelLayoutEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: DeleteReportLabelLayoutEntityAsync(Integer, RequestOptions)
+- uid: SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  commentId: M:SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  id: GetReportLabelLayoutEntityAsync(System.Int32,SuperOffice.WebApi.RequestOptions)
+  parent: SuperOffice.WebApi.Agents.IReportAgent
+  langs:
+  - csharp
+  - vb
+  name: GetReportLabelLayoutEntityAsync(int, RequestOptions)
+  nameWithType: IReportAgent.GetReportLabelLayoutEntityAsync(int, RequestOptions)
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync(int, SuperOffice.WebApi.RequestOptions)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi
+  namespace: SuperOffice.WebApi.Agents
+  summary: Gets a specific ReportLabelLayoutEntity object.
+  example: []
+  syntax:
+    content: Task<ReportLabelLayoutEntity> GetReportLabelLayoutEntityAsync(int reportLabelLayoutEntityId, RequestOptions requestOptions = null)
+    parameters:
+    - id: reportLabelLayoutEntityId
+      type: System.Int32
+      description: The identifier of the ReportLabelLayoutEntity object
+    - id: requestOptions
+      type: SuperOffice.WebApi.RequestOptions
+      description: Override language/culture codes on this request.
+    return:
+      type: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ReportLabelLayoutEntity}
+      description: ReportLabelLayoutEntity
+    content.vb: Function GetReportLabelLayoutEntityAsync(reportLabelLayoutEntityId As Integer, requestOptions As RequestOptions = Nothing) As Task(Of ReportLabelLayoutEntity)
+  overload: SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync*
+  nameWithType.vb: IReportAgent.GetReportLabelLayoutEntityAsync(Integer, RequestOptions)
+  fullName.vb: SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync(Integer, SuperOffice.WebApi.RequestOptions)
+  name.vb: GetReportLabelLayoutEntityAsync(Integer, RequestOptions)
+references:
+- uid: SuperOffice.WebApi.Agents
+  commentId: N:SuperOffice.WebApi.Agents
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi.Agents
+  nameWithType: SuperOffice.WebApi.Agents
+  fullName: SuperOffice.WebApi.Agents
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Agents
+    name: Agents
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Agents
+    name: Agents
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.html
+- uid: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+  commentId: M:SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_CancelRequest
+  name: CancelRequest()
+  nameWithType: IAgentBase.CancelRequest()
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest()
+  spec.csharp:
+  - uid: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+    name: CancelRequest
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_CancelRequest
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SuperOffice.WebApi.Agents.IAgentBase.CancelRequest
+    name: CancelRequest
+    isExternal: true
+    href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_CancelRequest
+  - name: (
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IAgentBase.Configuration
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.Configuration
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_Configuration
+  name: Configuration
+  nameWithType: IAgentBase.Configuration
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.Configuration
+- uid: SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_HasRunningRequest
+  name: HasRunningRequest
+  nameWithType: IAgentBase.HasRunningRequest
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.HasRunningRequest
+- uid: SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_ProgressListener
+  name: ProgressListener
+  nameWithType: IAgentBase.ProgressListener
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.ProgressListener
+- uid: SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+  commentId: P:SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+  parent: SuperOffice.WebApi.Agents.IAgentBase
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html#SuperOffice_WebApi_Agents_IAgentBase_UploadProgressListener
+  name: UploadProgressListener
+  nameWithType: IAgentBase.UploadProgressListener
+  fullName: SuperOffice.WebApi.Agents.IAgentBase.UploadProgressListener
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SuperOffice.WebApi.Agents.IAgentBase
+  commentId: T:SuperOffice.WebApi.Agents.IAgentBase
+  parent: SuperOffice.WebApi.Agents
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IAgentBase.html
+  name: IAgentBase
+  nameWithType: IAgentBase
+  fullName: SuperOffice.WebApi.Agents.IAgentBase
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IReportAgent.html#SuperOffice_WebApi_Agents_IReportAgent_CreateDefaultReportLabelLayoutEntityAsync_SuperOffice_WebApi_RequestOptions_
+  name: CreateDefaultReportLabelLayoutEntityAsync
+  nameWithType: IReportAgent.CreateDefaultReportLabelLayoutEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.CreateDefaultReportLabelLayoutEntityAsync
+- uid: SuperOffice.WebApi.RequestOptions
+  commentId: T:SuperOffice.WebApi.RequestOptions
+  parent: SuperOffice.WebApi
+  isExternal: true
+  href: SuperOffice.WebApi.RequestOptions.html
+  name: RequestOptions
+  nameWithType: RequestOptions
+  fullName: SuperOffice.WebApi.RequestOptions
+- uid: System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ReportLabelLayoutEntity}
+  commentId: T:System.Threading.Tasks.Task{SuperOffice.WebApi.Data.ReportLabelLayoutEntity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ReportLabelLayoutEntity>
+  nameWithType: Task<ReportLabelLayoutEntity>
+  fullName: System.Threading.Tasks.Task<SuperOffice.WebApi.Data.ReportLabelLayoutEntity>
+  nameWithType.vb: Task(Of ReportLabelLayoutEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of SuperOffice.WebApi.Data.ReportLabelLayoutEntity)
+  name.vb: Task(Of ReportLabelLayoutEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SuperOffice.WebApi.Data.ReportLabelLayoutEntity
+    name: ReportLabelLayoutEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ReportLabelLayoutEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SuperOffice.WebApi.Data.ReportLabelLayoutEntity
+    name: ReportLabelLayoutEntity
+    isExternal: true
+    href: SuperOffice.WebApi.Data.ReportLabelLayoutEntity.html
+  - name: )
+- uid: SuperOffice.WebApi
+  commentId: N:SuperOffice.WebApi
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi
+  nameWithType: SuperOffice.WebApi
+  fullName: SuperOffice.WebApi
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IReportAgent.html#SuperOffice_WebApi_Agents_IReportAgent_SaveReportLabelLayoutEntityAsync_SuperOffice_WebApi_Data_ReportLabelLayoutEntity_SuperOffice_WebApi_RequestOptions_
+  name: SaveReportLabelLayoutEntityAsync
+  nameWithType: IReportAgent.SaveReportLabelLayoutEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.SaveReportLabelLayoutEntityAsync
+- uid: SuperOffice.WebApi.Data.ReportLabelLayoutEntity
+  commentId: T:SuperOffice.WebApi.Data.ReportLabelLayoutEntity
+  parent: SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.WebApi.Data.ReportLabelLayoutEntity.html
+  name: ReportLabelLayoutEntity
+  nameWithType: ReportLabelLayoutEntity
+  fullName: SuperOffice.WebApi.Data.ReportLabelLayoutEntity
+- uid: SuperOffice.WebApi.Data
+  commentId: N:SuperOffice.WebApi.Data
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi.Data
+  nameWithType: SuperOffice.WebApi.Data
+  fullName: SuperOffice.WebApi.Data
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Data
+    name: Data
+    isExternal: true
+    href: SuperOffice.WebApi.Data.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Data
+    name: Data
+    isExternal: true
+    href: SuperOffice.WebApi.Data.html
+- uid: SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IReportAgent.html#SuperOffice_WebApi_Agents_IReportAgent_DeleteReportLabelLayoutEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: DeleteReportLabelLayoutEntityAsync
+  nameWithType: IReportAgent.DeleteReportLabelLayoutEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.DeleteReportLabelLayoutEntityAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync*
+  commentId: Overload:SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync
+  isExternal: true
+  href: SuperOffice.WebApi.Agents.IReportAgent.html#SuperOffice_WebApi_Agents_IReportAgent_GetReportLabelLayoutEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_
+  name: GetReportLabelLayoutEntityAsync
+  nameWithType: IReportAgent.GetReportLabelLayoutEntityAsync
+  fullName: SuperOffice.WebApi.Agents.IReportAgent.GetReportLabelLayoutEntityAsync

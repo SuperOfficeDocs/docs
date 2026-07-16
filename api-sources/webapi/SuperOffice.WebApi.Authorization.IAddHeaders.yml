@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperOffice.WebApi.Authorization.IAddHeaders
+  commentId: T:SuperOffice.WebApi.Authorization.IAddHeaders
+  id: IAddHeaders
+  parent: SuperOffice.WebApi.Authorization
+  children:
+  - SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders(System.Net.Http.Headers.HttpRequestHeaders)
+  langs:
+  - csharp
+  - vb
+  name: IAddHeaders
+  nameWithType: IAddHeaders
+  fullName: SuperOffice.WebApi.Authorization.IAddHeaders
+  type: Interface
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: Used by IAuthorization implementations to add headers for each request.
+  example: []
+  syntax:
+    content: public interface IAddHeaders
+    content.vb: Public Interface IAddHeaders
+- uid: SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders(System.Net.Http.Headers.HttpRequestHeaders)
+  commentId: M:SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders(System.Net.Http.Headers.HttpRequestHeaders)
+  id: AddHeaders(System.Net.Http.Headers.HttpRequestHeaders)
+  parent: SuperOffice.WebApi.Authorization.IAddHeaders
+  langs:
+  - csharp
+  - vb
+  name: AddHeaders(HttpRequestHeaders)
+  nameWithType: IAddHeaders.AddHeaders(HttpRequestHeaders)
+  fullName: SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders(System.Net.Http.Headers.HttpRequestHeaders)
+  type: Method
+  assemblies:
+  - SuperOffice.WebApi.Authorization
+  namespace: SuperOffice.WebApi.Authorization
+  summary: Called by the AgentBase to add headers to IAuthorization implementation.
+  example: []
+  syntax:
+    content: void AddHeaders(HttpRequestHeaders headers)
+    parameters:
+    - id: headers
+      type: System.Net.Http.Headers.HttpRequestHeaders
+      description: HttpRequestMessage headers.
+    content.vb: Sub AddHeaders(headers As HttpRequestHeaders)
+  overload: SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders*
+references:
+- uid: SuperOffice.WebApi.Authorization
+  commentId: N:SuperOffice.WebApi.Authorization
+  isExternal: true
+  href: SuperOffice.html
+  name: SuperOffice.WebApi.Authorization
+  nameWithType: SuperOffice.WebApi.Authorization
+  fullName: SuperOffice.WebApi.Authorization
+  spec.csharp:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization
+    name: Authorization
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.html
+  spec.vb:
+  - uid: SuperOffice
+    name: SuperOffice
+    isExternal: true
+    href: SuperOffice.html
+  - name: .
+  - uid: SuperOffice.WebApi
+    name: WebApi
+    isExternal: true
+    href: SuperOffice.WebApi.html
+  - name: .
+  - uid: SuperOffice.WebApi.Authorization
+    name: Authorization
+    isExternal: true
+    href: SuperOffice.WebApi.Authorization.html
+- uid: SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders*
+  commentId: Overload:SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders
+  isExternal: true
+  href: SuperOffice.WebApi.Authorization.IAddHeaders.html#SuperOffice_WebApi_Authorization_IAddHeaders_AddHeaders_System_Net_Http_Headers_HttpRequestHeaders_
+  name: AddHeaders
+  nameWithType: IAddHeaders.AddHeaders
+  fullName: SuperOffice.WebApi.Authorization.IAddHeaders.AddHeaders
+- uid: System.Net.Http.Headers.HttpRequestHeaders
+  commentId: T:System.Net.Http.Headers.HttpRequestHeaders
+  parent: System.Net.Http.Headers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.headers.httprequestheaders
+  name: HttpRequestHeaders
+  nameWithType: HttpRequestHeaders
+  fullName: System.Net.Http.Headers.HttpRequestHeaders
+- uid: System.Net.Http.Headers
+  commentId: N:System.Net.Http.Headers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http.Headers
+  nameWithType: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  - name: .
+  - uid: System.Net.Http.Headers
+    name: Headers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.headers
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  - name: .
+  - uid: System.Net.Http.Headers
+    name: Headers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.headers
