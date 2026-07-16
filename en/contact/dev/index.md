@@ -163,7 +163,7 @@ Without the link record, the picture will not appear.
 [6]: ../../api/localization/address/index
 
 [10]: ../../automation/crmscript/howto/contact/index
-[11]: ../../database/getting-started/main-tables
+[11]: ../../database/getting-started#the-main-tables
 [12]: ../../database/tables/associate
 [13]: ../../database/tables/binaryobject
 [14]: ../../database/tables/binaryobjectlink
