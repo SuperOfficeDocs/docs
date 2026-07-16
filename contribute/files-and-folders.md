@@ -4,7 +4,7 @@ title: Organization of repositories
 description: How SuperOfficeDocs repositories are organized into files and folders, including naming conventions and UID rules.
 keywords: file names, folder structure, naming conventions, UID, repository organization
 author: digitaldiina
-date: 07.09.2026
+date: 07.16.2026
 content_type: reference
 language: en
 ---
@@ -48,15 +48,23 @@ Here, the filename follows the \<crud>-\<item>.md pattern and the parent folders
 
 We need to add 'crmscript' to the UID to make it unique. However, there is no need to repeat the word 'company' and that it is a how-to is implied by the verb.
 
+### Markdown (.md) vs MDX (.mdx)
+
+Most content pages use the `.mdx` extension, since they use Mintlify's JSX components (`<Note>`, `<Tabs>`, and so on — see the [Markdown guide][1]). Plain `.md` is reserved for files with no JSX/component syntax at all — mainly includes/snippets and a handful of pages that haven't needed a component yet.
+
+If you add a component to a `.md` file, rename it to `.mdx` in the same change.
+
+See [What is MDX?][3] for background on the underlying format.
+
 ## Folder organization
 
 We use sub-folders to group similar content, images, and reusable snippets. The organization on GitHub only loosely resembles the structure on `docs.superoffice.com`.
 
 At the root of the repo, there is a folder named *docs*. In it, you can find general pages that relate to the overall website and a set of sub-folders that match the features/APIs or common scenarios.
 
-## Media subfolder
+## Media folder
 
-All major folders have a */media* subfolder for the corresponding media files.
+Media files aren't split per-folder. They live in one centralized location at the repository root, */media/loc/en/\<topic>/*, shared across all languages (there's no per-language split). Reference an image with a root-absolute path, for example `/media/loc/en/diary/open-diary.png`, regardless of which language folder the page itself lives in.
 
 ## Includes subfolder
 
@@ -68,3 +76,4 @@ We use the [Blueprint extension][2] for Visual Studio Code. Available templates 
 
 [1]: ./markdown-guide/index
 [2]: ./markdown-guide/using-blueprint-templates
+[3]: https://mdxjs.com/docs/what-is-mdx/

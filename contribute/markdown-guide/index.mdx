@@ -1,10 +1,10 @@
 ---
-uid: markdown-guide-to-docfx
+uid: markdown-guide-to-mintlify
 title: Markdown guide for docs.superoffice.com
 description: This Markdown style guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
 keywords: markdown guide, callouts, headings, links, lists, tables, metadata, includes
 author: digitaldiina
-date: 07.09.2026
+date: 07.16.2026
 content_type: reference
 language: en
 ---
@@ -13,7 +13,7 @@ language: en
 
 Once you start investigating the new SuperOfficeDocs files, you'll notice a different style of syntax. This is something called **markdown** and it's the commonly accepted format and syntax for tasks just like this. Markdown is simple and easy to use. You can find links to help you get started with Markdown at the bottom of this page.
 
-For example, you'll do things like `**A BOLDED WORD**` instead of typing `**A BOLDED WORD**` just to **bold some text**, which saves you multiple keystrokes.
+For example, you'll do things like `**A BOLDED WORD**` instead of typing `<strong>A BOLDED WORD</strong>` just to **bold some text**, which saves you multiple keystrokes.
 
 This guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
 
@@ -66,7 +66,7 @@ Start the line with a \>
 
 ## Call-outs (alerts, admonitions)
 
-One thing you may see in the documentation is the use of **call-outs**. These show up in the form of light-colored boxes with words such as **NOTE**, **IMPORTANT**, or **WARNING** in them.
+One thing you may see in the documentation is the use of **call-outs**. These show up in the form of light-colored boxes with words such as **NOTE** or **WARNING** in them.
 
 They look like this:
 
@@ -84,7 +84,7 @@ This is important.
 
 ```
 
-If you want to include a call-out in your docs content, the following types are currently supported:
+If you want to include a call-out in your docs content, the following types are currently supported (see [Mintlify's callout components][8] for the full reference):
 
 ```markdown
 
@@ -112,7 +112,7 @@ And here is something to note about call-outs!
 You cannot include a call-out inside a table.
 </Note>
 
-To insert a line break in a call-out, separate the text before and after with a line containing only \> like this:
+To insert a line break in a call-out, separate paragraphs with blank lines like this:
 
 ```markdown
 
@@ -128,10 +128,6 @@ Don't use the HTML `<br />` tag to split call-outs.
 
 Don't stack multiple call-outs directly after each other.
 
-## Columns
-
-TBD
-
 ## Headings
 
 * Start the line with 1 or more \#. The number of hashes determines the heading level. For example, \#\# means H2.
@@ -144,15 +140,14 @@ Even though Markdown supports inline HTML, we (generally) don't use it on `docs.
 
 **Exceptions:**
 
-* Use `<br />` to break a line in table cells.
-* Download links, for example, `<a href="../assets/downloads/mirroredtables.docx" download>Mirrored Tables document</a>`.
-* You may use `<see>` and `<seealso>` in yml-formatted API reference.
+* Use `<br />` to break a line in table cells. Do not force line breaks within paragraphs.
+* Download links, for example, `<a href="../downloads/mirroredtables.docx" download>Mirrored Tables document</a>`.
 * Use `<details>` and `<summary>` to create drop-down content.
 * Use `<script>` to bring in SuperOffice forms.
 
 ## Images
 
-You can use either *.jpg* or *.png* images. Place images in the appropriate *media* folder.
+You can use either *.png* or *.jpg* images. Image files must be less than 20 MB. Place images in the appropriate *media* sub folder.
 
 **Format:**
 
@@ -200,32 +195,45 @@ To produce this effect, add the string " -screenshot" at the end of the alt tag:
 
 ### Icons
 
-Reusable icons are placed in the repository's top-level *media/icons/* folder. Don't set alt text for icons.
+We use Phosphor icons in the documentation.
+
+### Videos
+
+Embed a YouTube video by wrapping an `<iframe>` in a `<Frame>` component, using the no-cookie embed URL:
+
+```mdx
+<Frame caption="Watch the walk-through">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+    title="Watch the walk-through"
+    allowfullscreen
+  ></iframe>
+</Frame>
+```
+
+See [Mintlify's video embed docs][9] for the full reference, including hosting your own video files instead of YouTube.
 
 ## Included Markdown files
 
 When the same content should be repeated on multiple pages, you can use includes.
 
-Reusable content snippets are placed in their own Markdown files in the */includes* subfolder and referenced from where they should be inserted. The reference is replaced at build time by the extensions.
-
-<Note>
-Includes are not rendered in the GitHub preview.
-</Note>
+Reusable content snippets are placed in their own Markdown files in the */includes* subfolder (or in the repository-wide */snippets* folder for content shared across many pages) and imported as a component where they should be inserted.
 
 ### Includes syntax
 
-* \<title> is the name of the file
-* \<filepath> is the relative path to the file
-* INCLUDE must be capitalized
-* there must be a space before the \<title>
+Import the file at the top of the page, below the front matter, then reference it as a component wherever it should appear:
 
-**Block include (on a separate line):**
+```mdx
+import Foo from "./includes/foo.md";
 
-`[!INCLUDE [<title>](<filepath>)]`
+Text before <Foo /> and after.
+```
 
-**Inline include (within a line):**
-
-Text before `[!INCLUDE [<title>](<filepath>)]` and after.
+* The import path is the relative path to the file.
+* The component name (`Foo` above) can be anything [valid as a JSX identifier][10] — pick something that describes the content.
+* You can import and use the same component more than once on a page.
 
 Here are requirements and considerations for include files:
 
@@ -235,13 +243,13 @@ Here are requirements and considerations for include files:
 
 * Don't nest includes.
 
-* Place images used by includes in a */includes/media* subfolder.
+* Place images used by includes in the */media/includes* folder.
 
-* Don't add metadata at the top of include files.
+* Don't add metadata or HTML comments at the top of include files.
 
 * Relative links within an include file are relative to that file, not where it is included.
 
-* You can use reference-style links within the file, but not to set the path for the \[!INCLUDE\]
+* You can use reference-style links within the file, but the import path itself must be a literal relative path.
 
 ## Links
 
@@ -254,12 +262,14 @@ For information about the syntax for links, see [How to use links in docs][6].
 
 To include an image, a call-out, a new paragraph, or a child list (without breaking the continuity of the list), indent that content **4** spaces relative to the list item it belongs to.
 
+**Exception:** if the child list is the *same type* as its parent — numbered inside numbered, or bulleted inside bulleted — indent it **2** spaces instead.
+
 ## Metadata (front-matter)
 
 We [use Yaml key-value front-matter syntax to embed metadata][5] in Markdown files.
 
 <Note>
-The date format is MM.DD.YYYY. For example, `date: 11.30.2021`
+The frontmatter date format is MM.DD.YYYY. For example, `date: 11.30.2025`
 </Note>
 
 ## Source code
@@ -298,14 +308,14 @@ Markdown treats the following characters as ordinary text if there is a backslas
 * You can align the columns by using colons.
 
 | default (left) | centered | right |
-|--------|:------:|-------:|
+|---|:---:|---:|
 | corn | (winter) squash | beans |
 
 The table above would look like this in markdown:
 
 ```markdown
 | default (left) | centered | right |
-|--------|:------:|-------:|
+|---|:---:|---|
 | corn | (winter) squash | beans |
 ```
 
@@ -336,5 +346,8 @@ Here are a few resources to help with Markdown to help get you started:
 [5]: ./metadata
 [6]: ./links-in-docs
 [7]: ./code-in-docs
+[8]: https://www.mintlify.com/docs/components/callouts
+[9]: https://www.mintlify.com/docs/create/image-embeds#youtube-embeds
+[10]: https://developer.mozilla.org/en-US/docs/Glossary/Identifier
 
-[img1]: ../../media/loc/en/contribute/plain-action-buttons.png
+[img1]: /media/loc/en/contribute/plain-action-buttons.png

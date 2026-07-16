@@ -4,7 +4,7 @@ title: Linting Markdown for docs.superoffice.com
 description: Introduction to markdownlint and how we use it for SuperOfficeDocs.
 keywords: markdownlint, linting, VS Code, MD029, MD013, MD041
 author: digitaldiina
-date: 07.09.2026
+date: 07.16.2026
 content_type: howto
 language: en
 ---
@@ -32,7 +32,7 @@ Don't alter the rules without discussing it with the DX team.
 
 ## Use
 
-When you edit a Markdown (.md) file in VS Code with this extension installed, you get visual warnings in the editor for lines that violate a rule.
+When you edit a Markdown or MDX (.md/.mdx) file in VS Code with this extension installed, you get visual warnings in the editor for lines that violate a rule.
 
 **Example:**
 
@@ -57,40 +57,11 @@ You now have a few options for how to proceed:
 Click the first link in the **Quick Fix** dialog to read more about the rule.
 </Tip>
 
-### Special cases
+### HTML comments aren't supported in MDX
 
-In some cases, we deliberately deviate from the rules by manually turning a rule off for a single line, a group of lines, or an entire file.
+Don't use HTML comments (`<!-- like this -->`) to turn off a rule for a single line, a group of lines, or a file. That was a DocFx-era pattern — in `.mdx` files an HTML comment can break the build, since MDX parses the page as JSX rather than plain Markdown.
 
-You will see this as HTML comments inside the Markdown files like this:
-
-```html
-```
-
-Leave these comments as is. We need them to establish a valid baseline for the repo.
-
-**Noteworthy exceptions:**
-
-* Because all include files are fragments, the first line must be `<!-- markdownlint-disable-file MD041`
-
-* Because tabbed content uses a specific syntax, rule MD051 must be disabled like this:
-
-    ```markdown
-    ### [NetServer Core](#tab/core)
-
-    Contents of core tab
-
-    ### [NetServer Web Services](#tab/ws)
-
-    Contents of ws tab
-
-    ***
-    ```
-
-* Excessively long headings that can't be shortened must be prefixed with `<!-- markdownlint-disable-next-line MD013 -->`
-
-* When list numbering is part of an include, you might need to handle numbering before/after the included file yourself. `<!-- markdownlint-disable-file MD029 -->`
-
-There are a few more, mostly pertaining to API documentation and code examples. If in doubt, search for the rule ID (such as MD029) in the repo source and you'll find examples of how to handle it. Ask if you have questions.
+`.markdownlint.yaml` is already tuned to avoid needing most per-file overrides (for example, `MD013`'s line-length limits are generous and `MD041` doesn't require a specific front-matter title). If you hit a rule that genuinely needs a one-off exception, check with the DX team first rather than reaching for an HTML comment — the current MDX-safe mechanism for disabling a rule inline hasn't been established yet.
 
 ## Command-line linting
 
@@ -122,6 +93,6 @@ See [GitHub issue 373][7] regarding why we exclude rules MD013 and MD041.
 [6]: https://github.com/igorshubovych/markdownlint-cli
 [7]: https://github.com/SuperOfficeDocs/superoffice-docs/issues/373
 
-[img1]: ../../media/loc/en/contribute/mdlint-list-warning.png
-[img2]: ../../media/loc/en/contribute/mdlint-list-hover.png
-[img3]: ../../media/loc/en/contribute/mdlint-list-quickfix.png
+[img1]: /media/loc/en/contribute/mdlint-list-warning.png
+[img2]: /media/loc/en/contribute/mdlint-list-hover.png
+[img3]: /media/loc/en/contribute/mdlint-list-quickfix.png

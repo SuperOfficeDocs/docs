@@ -4,7 +4,7 @@ title: How to include code in docs
 description: How to include inline code, fenced code blocks, tabbed content, and native source-code includes in a docs page.
 keywords: inline code, fenced code block, code snippet, tabbed content, source code include
 author: digitaldiina
-date: 07.09.2026
+date: 07.16.2026
 content_type: reference
 language: en
 ---
@@ -73,94 +73,67 @@ for(Integer i = 1; i < 10; i++) {
 
 Avoid IDE screenshots with code, unless you want to illustrate something specific about the IDE.
 
-Fenced code blocks can be copied and pasted and they're indexed by search engines.
+Fenced code blocks can be copied and pasted and they're indexed by search engines. They can also be syntax-highlighted, which makes them easier to read and understand. It's also easier to maintain the code in a fenced code block than in a screenshot.
 
 ## Include native source code
 
-DocFX Flavoured Markdown supports [code snippets][3].
+Mintlify doesn't support DocFX's line/range-sliced code snippets (`[!code-csharp[CS](file.cs?range=1,3)]`) — there's no equivalent that pulls just part of a source file into a code block. See [Mintlify's code component docs][3] for what's actually supported.
 
-1. Place the source code file in the *includes* folder.
-2. Include it in the Markdown file like this:
+A raw source file (like a `.cs` file) can't be imported directly as a component — only Markdown/MDX can. For a whole reusable code sample, wrap it in a fenced code block inside a `.md`/`.mdx` file in the *includes* folder, then import it the same way as [Markdown includes][4]:
 
-**Markdown:**
+**`includes/hello-world.mdx`:**
 
-```markdown
-
-```csharp CS
+````mdx
+```csharp
 Console.WriteLine("Hello World!");
+```
+````
 
-string greeting = "      Hello World!       ";
-Console.WriteLine($"[\{greeting\}]");
+**Referencing it:**
+
+```mdx
+import HelloWorld from "./includes/hello-world.mdx";
+
+<HelloWorld />
 ```
 
-```
-
-**Rendered:**
-
-```csharp CS
-Console.WriteLine("Hello World!");
-
-string greeting = "      Hello World!       ";
-Console.WriteLine($"[{greeting}]");
-```
-
-**To pick parts of the file:**
-
-```markdown
-
-```csharp CS
-Console.WriteLine("Hello World!");
-
-string greeting = "      Hello World!       ";
-Console.WriteLine($"[\{greeting\}]");
-```
-
-[!code-csharp[CS](includes/hello-world.cs?range=1,3)]
-
-```csharp CS
-string greeting = "      Hello World!       ";
-Console.WriteLine($"[\{greeting\}]");
-```
-
-```
+If you only need to show a snippet once (not reuse it), just paste the code directly into a fenced code block instead — see [fenced code blocks](#fenced-code-blocks) above.
 
 ### When to use code includes
 
-* Large blocks of code.
 * Code you want to reuse in multiple Markdown files.
-* Code you want to reference line-by-line or in chunks.
-* Source files you might want to validate or update without altering the content file. (Think samples and config.)
+* Code you might want to validate or update from one place, without altering every content file that shows it.
+
+<Note>
+Whole-file includes only. If you need to highlight just part of a larger sample, paste that portion directly into a fenced code block instead.
+</Note>
 
 ## Tabbed content
 
-You can create tabbed content in markdown.
+Use the `<Tabs>` and `<Tab>` components to create tabbed content.
 
 ### Syntax
 
-* Start a tab with a special markdown title (any level).
-  * Title content should be a markdown link.
-  * Link target is #tab/\{tabid\} or #tab/\{tabid\}/\{condition\}
-* Continue by any other content.
-* End by a markdown hr.
+* Wrap the whole group in `<Tabs>`.
+* Each tab is a `<Tab title="...">` with any content inside — text, code blocks, images, lists.
 
 #### Example
 
-Tab group 1:
-
-```markdown
-# [Tab Text 1](#tab/tabid-1)
-
+```mdx
+<Tabs>
+<Tab title="Tab Text 1">
 Tab content-1-1.
+</Tab>
 
-# [Tab Text 2](#tab/tabid-2)
-
+<Tab title="Tab Text 2">
 Tab content-2-1.
-
-***
+</Tab>
+</Tabs>
 ```
 
-Read about it, and more advanced options, in the [DocFX specification][2].
+Read about it, and more advanced options, in [Mintlify's Tabs component docs][2].
 
 [1]: ../style-guide/formatting
-[2]: https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html?tabs=tabid-1%2Ctabid-a#tabbed-content
-[3]: https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html?tabs=tabid-1%2Ctabid-a#code-snippet
+[2]: https://www.mintlify.com/docs/create/content-components/tabs
+[3]: https://www.mintlify.com/docs/create/code
+[4]: ./index#included-markdown-files
