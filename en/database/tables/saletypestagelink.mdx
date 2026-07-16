@@ -1,0 +1,60 @@
+---
+uid: table-SaleTypeStageLink
+title: SaleTypeStageLink table
+description: Many-many link table between sale type and stage; and an anchor point for guide items
+generated: true
+keywords: database table SaleTypeStageLink
+content_type: reference
+envir: onsite, online
+---
+
+import Saletypestagelink from "./includes/saletypestagelink.md";
+
+# SaleTypeStageLink Table (160)
+
+Many-many link table between sale type and stage; and an anchor point for guide items
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|SaleTypeStageLink\_id|Primary key|PK| |
+|saleType\_id|Link to sale type|FK [SaleType](./saletype)| |
+|stageId|Link to prob, aka Stage|FK [Prob](./prob)| |
+|rank|Rank order |UShort|&#x25CF;|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![SaleTypeStageLink table relationship diagram](/media/loc/en/database/tables/SaleTypeStageLink.png)
+
+<Saletypestagelink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|saleType\_id, stageId |FK, FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Prob](./prob)  |Prob list table. Probability, used in  sales . |
+|[SaleType](./saletype)  |Type of sale - large solution, incremental, whatever fits the organization |
+|[SuggestedAppointment](./suggestedappointment)  |Defines a suggested appointment for use in a Sale Guide or Project Guide |
+|[SuggestedDocument](./suggesteddocument)  |Unique owner of a set of licensed modules |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

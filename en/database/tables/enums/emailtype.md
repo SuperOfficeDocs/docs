@@ -20,4 +20,4 @@ envir: onsite, online
 
 ## Usage
 
-* [Email](../email.md).type - Email addresses for contacts, projects and persons
+* [Email](../email).type - Email addresses for contacts, projects and persons

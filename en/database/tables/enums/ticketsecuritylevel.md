@@ -20,5 +20,5 @@ The securitylevel of the ticket.
 
 ## Usage
 
-* [ej_message](../ej-message.md).slevel - This table contains the messages listed under tickets.
-* [ticket](../ticket.md).slevel - This table contains the tickets (requests) of the system. Its purpose should be evident.
+* [ej_message](../ej-message).slevel - This table contains the messages listed under tickets.
+* [ticket](../ticket).slevel - This table contains the tickets (requests) of the system. Its purpose should be evident.

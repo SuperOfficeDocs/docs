@@ -19,4 +19,4 @@ Various flags for the chat session
 
 ## Usage
 
-* [chat_session](../chat-session.md).flags - This table contains chat sessions.
+* [chat_session](../chat-session).flags - This table contains chat sessions.

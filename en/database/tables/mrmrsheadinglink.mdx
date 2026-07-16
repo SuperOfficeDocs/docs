@@ -1,0 +1,57 @@
+---
+uid: table-MrMrsHeadingLink
+title: MrMrsHeadingLink table
+description: Heading link table for MrMrs, for MDO headers
+generated: true
+keywords: database table MrMrsHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Mrmrsheadinglink from "./includes/mrmrsheadinglink.md";
+
+# MrMrsHeadingLink Table (96)
+
+Heading link table for MrMrs, for MDO headers
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|mrmrsheadinglink\_id|Primary key|PK| |
+|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](./mrmrs)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![MrMrsHeadingLink table relationship diagram](/media/loc/en/database/tables/MrMrsHeadingLink.png)
+
+<Mrmrsheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|mrmrs\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[MrMrs](./mrmrs)  |MrMrs list table. List of salutations. |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

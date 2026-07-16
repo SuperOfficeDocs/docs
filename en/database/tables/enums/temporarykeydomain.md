@@ -25,4 +25,4 @@ The domain this is a key for
 
 ## Usage
 
-* [TemporaryKey](../temporarykey.md).domain - Temporary keys for lightweight authentications such as changing ones subscriptions
+* [TemporaryKey](../temporarykey).domain - Temporary keys for lightweight authentications such as changing ones subscriptions

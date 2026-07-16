@@ -10,7 +10,7 @@ content_type: tutorial
 
 # How to create tables in the SuperOffice database (CDD)
 
-Evolutionary database design is the way forward. The implementation development, tested and used by SuperOffice in its’ own environment has proven to be very useful and a powerful tool for ensuring database integrity, flexibility, and longevity.
+Evolutionary database design is the way forward. The implementation development, tested and used by SuperOffice in its' own environment has proven to be very useful and a powerful tool for ensuring database integrity, flexibility, and longevity.
 
 We believe that once you begin to leverage it, you will be impressed and assured that SuperOffice Continuous Database is the correct decision and direction for living in an agile world.
 
@@ -20,15 +20,15 @@ First, read the [intro][1] and [DictionarySteps][2].
 
 ## Overview
 
-***Structure*** is where all database table, field, and index changes must be made. There are several intuitive methods in the base class to make such actions easy and are explored more thoroughly in the next section.
+***Structure*** is where all database table, field, and index changes must be made. There are several intuitive methods in the base class to make such actions easy and are explored more thoroughly in the next section.
 
-Once a table is created, and populating the table with priming data is desired, the class need only implement `ImpFieldNames`. This returns a list of IMP file names to the Continuous Database library which iterates over the list and begins to import data.
+Once a table is created, and populating the table with priming data is desired, the class need only implement `ImpFieldNames`. This returns a list of IMP file names to the Continuous Database library which iterates over the list and begins to import data.
 
-When more flexibility is required, such as calculated fields or transforming data from existing tables, the dictionary step should override the `CustomPriming` method.
+When more flexibility is required, such as calculated fields or transforming data from existing tables, the dictionary step should override the `CustomPriming` method.
 
-Methods declared in the base class, `ExecuteSelect` and `ExecuteSql`, can issue SQL statements to the database to performing queries or perform actions, respectively. However, these methods should be used sparingly. Issuing SQL statements using these methods is covered in a later section.
+Methods declared in the base class, `ExecuteSelect` and `ExecuteSql`, can issue SQL statements to the database to performing queries or perform actions, respectively. However, these methods should be used sparingly. Issuing SQL statements using these methods is covered in a later section.
 
-Finally, it’s important to understand that all schema changes should be done in a small, compact, and isolated manner. Changes should be done in such a way that makes it easy to understand and manage. Evolutionary database design benefits from small incremental changes.
+Finally, it's important to understand that all schema changes should be done in a small, compact, and isolated manner. Changes should be done in such a way that makes it easy to understand and manage. Evolutionary database design benefits from small incremental changes.
 
 Once a dictionary step is committed to the database, it is final. It cannot be undone. The only way to change the last dictionary step is to create a new dictionary step that makes yet another change to the database!
 
@@ -58,7 +58,7 @@ There are several types of command builders, where each builder knows how to acc
 
 For example, a `CommandFromStepBuilder` knows how to build a command list from a `DictionaryStep`, such as in the `MovieStep1` class. Another command builder called `CommandFromEjExtraBuilder`, knows how to build a command list from all SuperOffice Customer Service `Extra_Table` and `Extra_Field` tables.
 
-**Applicators** then use the command lists to perform various tasks. For example, the `DatabaseModelApplicator` is responsible for both command validation and transforming the command list into database model types – such as `TableModel`, `FieldModel`, `IndexMode`, `RelationModel`.
+**Applicators** then use the command lists to perform various tasks. For example, the `DatabaseModelApplicator` is responsible for both command validation and transforming the command list into database model types - such as `TableModel`, `FieldModel`, `IndexMode`, `RelationModel`.
 
 ![x][img3]
 
@@ -74,15 +74,42 @@ Make sure that the assembly created is done so without any unnecessary assembly 
 
 ## DictionaryStep life-cycle
 
-Before presenting how a DictionaryStep is applied to a physical database, this section defines two classes that represent the different stages of a `DictionaryStep` life. The lifecycle of a `DictionaryStep` is determined by its `StepNumber`, and is normally given a name that aligns with the feature. The `DictionaryStep` in this section is called **DemoFeature**, and like all DictionarySteps, must begin with a `StepNumber` set to 1.
+Before presenting how a DictionaryStep is applied to a physical database, this section defines two classes that represent the different stages of a `DictionaryStep` life. The lifecycle of a `DictionaryStep` is determined by its `StepNumber`, and is normally given a name that aligns with the feature. The `DictionaryStep` in this section is called **DemoFeature**, and like all DictionarySteps, must begin with a `StepNumber` set to 1.
 
 `DemoClass1` class creates one new table called `Demo`, sets table properties for replication, and finally defines 9 add field methods. More than nine fields will be created, however. Can you spot the reason why?
 
 **Example DictionaryStep - DemoFeature, StepNumber 1:**
 
-[!code-csharp[CS](includes/democlass1.cs)]
+```csharp CS
+using SuperOffice.CD.DSL.V1.StepModel;
 
-With the assumption that you are a partner building a product integration, which probably contains an uninstall routine, a new class with the same `Dictionary` attribute is required to remove all changes. The `DemoClassUninstall` class is written to remove changes created by all previous **DemoFeature** DictionarySteps.
+namespace ExampleDictionaryStep
+{
+  [Dictionary("DemoFeature", 1, ReleaseState.Released)]
+  public class DemoClass1 : DictionaryStep
+  {
+    public override void Structure()
+    {
+      CreateTable("Demo", "Description of demo table", false, true)
+        .TableProperties.Replication(ReplicationFlags.Up   |
+                                     ReplicationFlags.Down |
+                                     ReplicationFlags.Prototype)
+        .AddBlob("BlobField", "Blogb field description")
+        .AddBool("BoolField", "Boolean field description")
+        .AddDateTime("DateTimeField", "Datetime field description")
+        .AddDouble("DoubleField", "Double field description")
+        .AddForeignKey("ForeignKeyField", "Foreign key field description", "contact")
+        .AddInt("IntField", "Integer field description")
+        .AddRegisteredUpdated()
+        .AddString("StringField", "String field description", 256)
+        .AddUShort("UIntField", "UintField description")
+        ;
+    }
+  }
+}
+```
+
+With the assumption that you are a partner building a product integration, which probably contains an uninstall routine, a new class with the same `Dictionary` attribute is required to remove all changes. The `DemoClassUninstall` class is written to remove changes created by all previous **DemoFeature** DictionarySteps.
 
 The way this `DictionaryStep` is distinguished from all other DemoFeature DictionarySteps is the **StepNumber** in the Dictionary Attribute. The `StepNumber` must be set to 2147483647, or in C# `int.MaxValue`.
 
@@ -92,29 +119,71 @@ If you are still wondering why more than nine fields are created, `AddRegistered
 
 **Example DictionaryStep - DemoFeature, StepNumber int.MaxValue:**
 
-[!code-csharp[CS](includes/democlassuninstall.cs)]
+```csharp CS
+using SuperOffice.CD.DSL.V1.StepModel;
 
-The only requirements to apply the DemoFeature StepNumber 1, and add the new table to the database, is:
+namespace ExampleDictionaryStep
+{
+  [Dictionary("DemoFeature", int.MaxValue, ReleaseState.Released)]
+  public class DemoClassUninstall : DictionaryStep
+  {
+    public override void Structure()
+    {
+      DropTable("Demo");
+    }
+  }
+}
+```
+
+The only requirements to apply the DemoFeature StepNumber 1, and add the new table to the database, is:
 
 1. Create a connection to the database,
 2. Create an instance of the `DatabaseManagement` class,
 3. Pass the `DictionaryStep` into the `DatabaseManagement.ApplyDictionarySteps` method.
 
-The following code example resides in a new project - a console application, with the following assembly references:
+The following code example resides in a new project - a console application, with the following assembly references:
 
 * the DictionaryStep assembly containing DemoClass1 and DemoClassUninstall - *ExampleDictionaryStep.dll*
 * *SuperOffice.CD.DSL.dll*
 * *SuperOffice.CD.DSL.Implementation.dll*
 
-[!code-csharp[CS](includes/apply-steps.cs)]
+```csharp CS
+private void ApplySteps()
+{
+  // populate database connection properties
+  var ConnectionString = "Server=localhost;Database=SuperOffice81R;USER ID=crm7;Password=crm7myd";
+  var Major = "MSSQL";
+  var Minor = "14";
+  var Prefix = "CRM7";
+  // create connection to the database
+  using (var connection = DbConnectionProvider.GetConnection(ConnectionString, Major, Minor))
+  {
+    // create a DatabaseManagement instance
+    using (var dbm = DatabaseManagement.CreateInstance(Prefix, connection))
+    {
+      // ensure this is a version 8.1 or higher database
+      var dbState = dbm.InspectDatabase();
+      if (dbState == DatabaseManagement.DatabaseContent.SuperOfficeCdd)
+      {
+        // get the database model - passed to DatabaseManagement for validation
+        var model = dbm.ReadDatabaseModel();
+        //prepare the list of DictionarySteps as a LinkedList
+        var steps = new LinkedList<DictionaryStep>(new[] { new ExampleDictionaryStep.DemoClass1() });
+        // apply the dictionary steps to the database model and physical database
+        var result = dbm.ApplyDictionarySteps(steps, model);
+      }
+    }
+  }
+}
+```
 
-It’s that easy!
+It's that easy!
 
 To remove the table, execute the same code but instantiate the `DemoClassUninstall` class and pass that into the `LinkedList` constructor instead.
 
 ## Inside DatabaseManagement ApplyDictionarySteps
 
-While it's not necessary to know how `ApplyDictionarySteps` works, it’s interesting to know what's going on under the hood to gain a better understanding of the architecture.
+While it's not necessary to know how `ApplyDictionarySteps` works, it's interesting to know what's going on under the hood to gain a better understanding of the architecture.
 
 The diagram below lists - in sequence - the actions that occur when a `DictionaryStep` is applied to a database.
 
@@ -130,18 +199,16 @@ I hope this article has helped you learn how to apply your DictionarySteps and c
 
 To try this out for yourself, we have provided [an example on GitHub][7].
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: dictionary-steps.md
-[3]: structure-method.md
-[4]: impfilenames-method.md
-[5]: custompriming-method.md
+[1]: ./index
+[2]: ./dictionary-steps
+[3]: ./structure-method
+[4]: ./impfilenames-method
+[5]: ./custompriming-method
 [6]: https://github.com/Superoffice
 [7]: https://github.com/SuperOffice/DevNet/tree/master/ContinuousDatabase
 
-<!-- Referenced images -->
-[img1]: media/moviestep1.png
-[img2]: media/buildercommands.jpg
-[img3]: media/commandbuilders.png
-[img5]: media/cdd-workflow.jpg
-[img6]: media/apply-dictionarysteps-workflow.png
+[img1]: /media/loc/en/database/moviestep1.png
+[img2]: /media/loc/en/database/buildercommands.jpg
+[img3]: /media/loc/en/database/commandbuilders.png
+[img5]: /media/loc/en/database/cdd-workflow.jpg
+[img6]: /media/loc/en/database/apply-dictionarysteps-workflow.png

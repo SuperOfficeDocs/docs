@@ -31,4 +31,4 @@ Bitmask defining what action should be taken
 
 ## Usage
 
-* [s_link](../s-link.md).action_flags - Links in messages to measure success rate of a campaign.
+* [s_link](../s-link).action_flags - Links in messages to measure success rate of a campaign.

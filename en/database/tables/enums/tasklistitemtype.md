@@ -21,4 +21,4 @@ Type of task item Url, SoProtocol or CRMScript.
 
 ## Usage
 
-* [TaskMenu](../taskmenu.md).taskType - List items to merge into menues
+* [TaskMenu](../taskmenu).taskType - List items to merge into menues

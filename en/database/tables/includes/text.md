@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 
 This table must contain special values that would be difficult to guess correctly. These are listed below with a description of how to use them.
 
@@ -7,7 +6,7 @@ This table must contain special values that would be difficult to guess correctl
 | Type | ID | Comment |
 |---|---|---|
 | Unknown | 0 | Unknown - used when initializing |
-| ContactInfo | 1 | A Post-it (paperclip) on the  contact card |
+| ContactInfo | 1 | A Post-it (paperclip) on the  contact card |
 | PersonInfo | 2 | A Post-it in the person dialog, shown as a descriptive text box in the info panel |
 | Reserved1 | 3 | PersonEmail - currently not in use (4.5 legacy, removed by conversion program) |
 | AppointmentText | 4 | Descriptive text area in the appointment dialog. |

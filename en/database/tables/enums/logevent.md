@@ -23,4 +23,4 @@ Log event class (create, edit, delete, lock, unlock...
 
 ## Usage
 
-* [target_revision](../target-revision.md).log_event - One batch of changes made to targets
+* [target_revision](../target-revision).log_event - One batch of changes made to targets

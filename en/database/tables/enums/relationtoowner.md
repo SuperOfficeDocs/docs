@@ -17,4 +17,4 @@ How is the owner related to the target -  0 = Owner, 1 = Primary group, 2 = Othe
 
 ## Usage
 
-* [DataRight](../dataright.md).relationToOwner - Data right definition
+* [DataRight](../dataright).relationToOwner - Data right definition

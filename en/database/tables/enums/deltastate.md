@@ -20,4 +20,4 @@ State of the delta, like draft or published
 
 ## Usage
 
-* [ConfigurableScreenDelta](../configurablescreendelta.md).deltaState - Parts of recipes in SCIL to insert or remove in given recipes
+* [ConfigurableScreenDelta](../configurablescreendelta).deltaState - Parts of recipes in SCIL to insert or remove in given recipes

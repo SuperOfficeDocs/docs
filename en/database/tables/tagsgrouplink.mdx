@@ -1,0 +1,57 @@
+---
+uid: table-TagsGroupLink
+title: TagsGroupLink table
+description: User group link table for Tags, for MDO item hiding
+generated: true
+keywords: database table TagsGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Tagsgrouplink from "./includes/tagsgrouplink.md";
+
+# TagsGroupLink Table (459)
+
+User group link table for Tags, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|tagsgrouplink\_id|Primary key|PK| |
+|tags\_id|Link to Tags list table|FK [Tags](./tags)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![TagsGroupLink table relationship diagram](/media/loc/en/database/tables/TagsGroupLink.png)
+
+<Tagsgrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|tags\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Tags](./tags)  |MDO List of tags for Service entities |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

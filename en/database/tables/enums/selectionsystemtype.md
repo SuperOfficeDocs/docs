@@ -23,4 +23,4 @@ Selection system type - defines if this selection is one that is managed by the 
 
 ## Usage
 
-* [selection](../selection.md).SystemType - Selections
+* [selection](../selection).SystemType - Selections

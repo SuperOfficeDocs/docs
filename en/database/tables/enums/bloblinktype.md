@@ -36,4 +36,4 @@ The link type
 
 ## Usage
 
-* [BinaryObjectLink](../binaryobjectlink.md).linkType - Link table, connects a BinaryObject with one or more owners
+* [BinaryObjectLink](../binaryobjectlink).linkType - Link table, connects a BinaryObject with one or more owners

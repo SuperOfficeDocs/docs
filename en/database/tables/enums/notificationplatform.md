@@ -23,4 +23,4 @@ Device platform. Apple, Google, Microsoft, etc.
 
 ## Usage
 
-* [PushNotificationService](../pushnotificationservice.md).DevicePlatform - Used for storing handles to user devices that should receive push notifications
+* [PushNotificationService](../pushnotificationservice).DevicePlatform - Used for storing handles to user devices that should receive push notifications

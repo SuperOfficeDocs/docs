@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Values needed to access the DocTmpl tables
 
 This table must contain special values that would be difficult to guess correctly. These are listed below with a description of how to use them.
@@ -12,7 +11,7 @@ This table must contain special values that would be difficult to guess correctl
  | Fax | 4 | Facsimile |
  | Phone | 5 | (not used for document templates) |
  | To Do | 6 | (not used for document templates) |
- | Mail merge draft document | 7 | Template for mail merge operations |
+ | Mail merge draft document | 7 | Template for mail merge operations |
  | Mail merge final document | 8 | Result of a mail merge operation |
  | Saved report | 9 | Saved result of running a report (output from Reporter) |
 

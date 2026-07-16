@@ -1,0 +1,66 @@
+---
+uid: table-dashboard
+title: dashboard table
+description: Describes a dashboard
+generated: true
+keywords: database table dashboard
+content_type: reference
+envir: onsite, online
+---
+
+import Dashboard from "./includes/dashboard.md";
+
+# dashboard Table (481)
+
+Describes a dashboard
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|dashboard\_id|Primary key|PK| |
+|associate\_id|Associate who owns this dashboard|FK [associate](./associate)|&#x25CF;|
+|name|The name of this dashboard|String(4000)|&#x25CF;|
+|description|Detailed description|String(4000)|&#x25CF;|
+|dashboard\_theme\_id|The theme belongs to set of slyle rules for the dashboard|FK [dashboard_theme](./dashboard-theme)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+|visible\_for\_all|True if visible for all|Bool|&#x25CF;|
+|visible\_for\_associates|Array of references to the visible for associates|FKArray|&#x25CF;|
+|visible\_for\_groups|Array of references to the visible for groups|FKArray|&#x25CF;|
+|pin\_for\_all|True if pinned for all|Bool|&#x25CF;|
+|pin\_for\_associates|Array of references to the pinned associates|FKArray|&#x25CF;|
+|pin\_for\_groups|Array of references to the pinned groups|FKArray|&#x25CF;|
+|columns|How many columns there will be in the dashboard.|Int|&#x25CF;|
+|guid|GUID identifying a default dashboard from SuperOffice|String(36)|&#x25CF;|
+
+![dashboard table relationship diagram](/media/loc/en/database/tables/dashboard.png)
+
+<Dashboard />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|associate\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[dashboard\_theme](./dashboard-theme)  |A set of style rules for the Dashboard |
+|[dashboard\_tile](./dashboard-tile)  |Represents one tile in the dashboard |
+|[quick\_filter\_info](./quick-filter-info)  |Connect quick filter info from a specific provider to a dashboard |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix.

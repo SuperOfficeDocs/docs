@@ -30,5 +30,5 @@ Units for the duration (day, week, whatever)
 
 ## Usage
 
-* [ProjType](../projtype.md).durationUnit - ProjType list table. List of valid Project types.
-* [SaleType](../saletype.md).durationUnit - Type of sale - large solution, incremental, whatever fits the organization
+* [ProjType](../projtype).durationUnit - ProjType list table. List of valid Project types.
+* [SaleType](../saletype).durationUnit - Type of sale - large solution, incremental, whatever fits the organization

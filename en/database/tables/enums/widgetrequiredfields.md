@@ -23,5 +23,5 @@ Fields required to start a chat
 
 ## Usage
 
-* [chat_topic](../chat-topic.md).widget_offline_fields - This table contains chat topics.
-* [chat_topic](../chat-topic.md).widget_required_fields - This table contains chat topics.
+* [chat_topic](../chat-topic).widget_offline_fields - This table contains chat topics.
+* [chat_topic](../chat-topic).widget_required_fields - This table contains chat topics.

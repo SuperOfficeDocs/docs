@@ -1,0 +1,57 @@
+---
+uid: table-ErpConnectionActorType
+title: ErpConnectionActorType table
+description: Data about the configuration of one Erp Actor on one ErpConnection
+generated: true
+keywords: database table ErpConnectionActorType
+content_type: reference
+envir: onsite, online
+---
+
+import Erpconnectionactortype from "./includes/erpconnectionactortype.md";
+
+# ErpConnectionActorType Table (419)
+
+Data about the configuration of one Erp Actor on one ErpConnection
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|erpconnectionactortype\_id|Primary key|PK| |
+|ErpConnectionId|The connection this actor is configured for|FK [ErpConnection](./erpconnection)| |
+|ActorTypeErp|The actor type (ERP side)|Enum [ErpActorType](./enums/erpactortype)| |
+|ActorTypeCrm|The actor type (CRM side)|Enum [CrmActorType](./enums/crmactortype)|&#x25CF;|
+|IsActive|Is this mapping/synchronization configuration currently active|Bool| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![ErpConnectionActorType table relationship diagram](/media/loc/en/database/tables/ErpConnectionActorType.png)
+
+<Erpconnectionactortype />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|ErpConnectionId, ActorTypeErp |FK, Enum |Unique |
+|ErpConnectionId, ActorTypeCrm |FK, Enum |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ErpConnection](./erpconnection)  |One connection to an ERP connector, specifying Client and other required information |
+|[ErpField](./erpfield)  |Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

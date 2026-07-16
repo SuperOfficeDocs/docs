@@ -1,0 +1,54 @@
+---
+uid: table-cust_category
+title: cust_category table
+description: This table contains entries for categories exposed through a customer language.
+generated: true
+keywords: database table cust_category
+content_type: reference
+envir: onsite, online
+---
+
+import CustCategory from "./includes/cust-category.md";
+
+# cust\_category Table (321)
+
+This table contains entries for categories exposed through a customer language.
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|name|The external name for this category.|String(255)|&#x25CF;|
+|language\_id|The reference to the associated customer language.|FK [cust_lang](./cust-lang)|&#x25CF;|
+|category\_id|The reference to the associated category.|FK [ej_category](./ej-category)|&#x25CF;|
+|parent\_id|The parent category for this cust_category. -1 if this is a toplevel cust_category.|FK [cust_category](./cust-category)|&#x25CF;|
+|fullname|The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.|String(255)|&#x25CF;|
+
+![cust_category table relationship diagram](/media/loc/en/database/tables/cust_category.png)
+
+<CustCategory />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|language\_id |FK |Index |
+|category\_id |FK |Index |
+|parent\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[cust\_category](./cust-category)  |This table contains entries for categories exposed through a customer language. |
+|[cust\_lang](./cust-lang)  |This table contains entries for customer languages. |
+|[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

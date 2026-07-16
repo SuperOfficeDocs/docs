@@ -20,4 +20,4 @@ Show task list item in which clients (web, mobile)
 
 ## Usage
 
-* [TaskMenu](../taskmenu.md).showInClient - List items to merge into menues
+* [TaskMenu](../taskmenu).showInClient - List items to merge into menues

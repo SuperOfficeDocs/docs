@@ -21,4 +21,4 @@ Status of the workflow definition
 
 ## Usage
 
-* [workflow](../workflow.md).status - SuperOffice specific info about a workflow
+* [workflow](../workflow).status - SuperOffice specific info about a workflow

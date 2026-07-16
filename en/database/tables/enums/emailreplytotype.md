@@ -21,4 +21,4 @@ Email/Mailing Reply-To field address algorithm
 
 ## Usage
 
-* [email_flow](../email-flow.md).reply_to_type - A set of properties related to the email workflow.
+* [email_flow](../email-flow).reply_to_type - A set of properties related to the email workflow.

@@ -1,10 +1,9 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Value for the encryptedComm field in travelcurrent
 
 | encryptedComm | ID | Comment |
 |---|---|---|
 | None | 0 | Received travel data are not encrypted (only ZIPed) |
-| Serial |  1 | Received travel data are encrypted using license serial number as key |
+| Serial |  1 | Received travel data are encrypted using license serial number as key |
 | BF128 | 2 | Received travel data are encrypted using a 128-bit key |
 
 ### Database type

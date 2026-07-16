@@ -20,4 +20,4 @@ The type of the message (plaintext/html).
 
 ## Usage
 
-* [ej_message](../ej-message.md).type - This table contains the messages listed under tickets.
+* [ej_message](../ej-message).type - This table contains the messages listed under tickets.

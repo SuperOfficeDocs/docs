@@ -21,4 +21,4 @@ Flags that control how the task is created
 
 ## Usage
 
-* [s_link](../s-link.md).task_flags - Links in messages to measure success rate of a campaign.
+* [s_link](../s-link).task_flags - Links in messages to measure success rate of a campaign.

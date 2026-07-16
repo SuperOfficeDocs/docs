@@ -23,4 +23,4 @@ Category group
 
 ## Usage
 
-* [Category](../category.md).category_group - Category list table
+* [Category](../category).category_group - Category list table

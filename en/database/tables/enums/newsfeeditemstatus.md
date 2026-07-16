@@ -20,4 +20,4 @@ Indicates if the item is being handled by a CTA. (normal, processing, processed)
 
 ## Usage
 
-* [NewsFeedItem](../newsfeeditem.md).Status - Contains news feed items - published to one or more users, with one or more language descriptions
+* [NewsFeedItem](../newsfeeditem).Status - Contains news feed items - published to one or more users, with one or more language descriptions

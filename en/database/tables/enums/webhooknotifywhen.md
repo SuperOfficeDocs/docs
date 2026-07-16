@@ -20,4 +20,4 @@ When to notify recipients. Bitflag: 1=FirstFailure, 2=Disabling.
 
 ## Usage
 
-* [Webhook](../webhook.md).notify_when - Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.
+* [Webhook](../webhook).notify_when - Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.

@@ -1,0 +1,57 @@
+---
+uid: table-QuoteApprReasonGroupLink
+title: QuoteApprReasonGroupLink table
+description: User group link table for QuoteApprReason, for MDO item hiding
+generated: true
+keywords: database table QuoteApprReasonGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Quoteapprreasongrouplink from "./includes/quoteapprreasongrouplink.md";
+
+# QuoteApprReasonGroupLink Table (541)
+
+User group link table for QuoteApprReason, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|quoteapprreasongrouplink\_id|Primary key|PK| |
+|quoteapprreason\_id|Link to QuoteApprReason list table|FK [QuoteApprReason](./quoteapprreason)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![QuoteApprReasonGroupLink table relationship diagram](/media/loc/en/database/tables/QuoteApprReasonGroupLink.png)
+
+<Quoteapprreasongrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|quoteapprreason\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[QuoteApprReason](./quoteapprreason)  |Predefined reasons for quote approval |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

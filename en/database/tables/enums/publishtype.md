@@ -19,6 +19,6 @@ Should this field be published by default?
 
 ## Usage
 
-* [Task](../task.md).defaultPublishType - Task list table, activity types, like Phone, Meeting
-* [DocTmpl](../doctmpl.md).defaultPublishType - DocTmpl list table. Describes templates available for writing new documents.
-* [Publish](../publish.md).publishType - Publishing system for external users
+* [Task](../task).defaultPublishType - Task list table, activity types, like Phone, Meeting
+* [DocTmpl](../doctmpl).defaultPublishType - DocTmpl list table. Describes templates available for writing new documents.
+* [Publish](../publish).publishType - Publishing system for external users

@@ -32,5 +32,5 @@ The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/dele
 
 ## Usage
 
-* [ticket](../ticket.md).status - This table contains the tickets (requests) of the system. Its purpose should be evident.
-* [ticket_status](../ticket-status.md).status - This table user defined ticket status values.
+* [ticket](../ticket).status - This table contains the tickets (requests) of the system. Its purpose should be evident.
+* [ticket_status](../ticket-status).status - This table user defined ticket status values.

@@ -21,4 +21,4 @@ What kind of data is in this row
 
 ## Usage
 
-* [cust_config](../cust-config.md).type - This table contains JSON structures used for customizing the customer center
+* [cust_config](../cust-config).type - This table contains JSON structures used for customizing the customer center

@@ -32,4 +32,4 @@ What is the origin of this ticket
 
 ## Usage
 
-* [ticket](../ticket.md).origin - This table contains the tickets (requests) of the system. Its purpose should be evident.
+* [ticket](../ticket).origin - This table contains the tickets (requests) of the system. Its purpose should be evident.

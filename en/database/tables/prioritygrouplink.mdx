@@ -1,0 +1,57 @@
+---
+uid: table-PriorityGroupLink
+title: PriorityGroupLink table
+description: User group link table for Priority, for MDO item hiding
+generated: true
+keywords: database table PriorityGroupLink
+content_type: reference
+envir: onsite, online
+---
+
+import Prioritygrouplink from "./includes/prioritygrouplink.md";
+
+# PriorityGroupLink Table (80)
+
+User group link table for Priority, for MDO item hiding
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|prioritygrouplink\_id|Primary key|PK| |
+|priority\_id|Link to Priority list table|FK [Priority](./priority)| |
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![PriorityGroupLink table relationship diagram](/media/loc/en/database/tables/PriorityGroupLink.png)
+
+<Prioritygrouplink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|priority\_id |FK |Index |
+|group\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Priority](./priority)  |Priority list table. Used with appointments: low, high. |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

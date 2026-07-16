@@ -20,4 +20,4 @@ None, rightclick on, multiselect
 
 ## Usage
 
-* [TaskMenu](../taskmenu.md).archiveBehaviour - List items to merge into menues
+* [TaskMenu](../taskmenu).archiveBehaviour - List items to merge into menues

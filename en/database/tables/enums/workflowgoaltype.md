@@ -28,4 +28,4 @@ A goal that will conclude the workflow
 
 ## Usage
 
-* [workflow_goal](../workflow-goal.md).goal_type - A set of goals related to a workflow. Some goals will have search criterias associated with it to determine if the goal has been reached.
+* [workflow_goal](../workflow-goal).goal_type - A set of goals related to a workflow. Some goals will have search criterias associated with it to determine if the goal has been reached.

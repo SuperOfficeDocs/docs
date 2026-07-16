@@ -1,0 +1,53 @@
+---
+uid: table-role_workflow
+title: role_workflow table
+description: Knowledge base workflow access rights associated with a role
+generated: true
+keywords: database table role_workflow
+content_type: reference
+envir: onsite, online
+---
+
+import RoleWorkflow from "./includes/role-workflow.md";
+
+# role\_workflow Table (327)
+
+Knowledge base workflow access rights associated with a role
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)| |
+|workflow\_id|The id of the workflow.|FK [kb_workflow](./kb-workflow)| |
+|workflow\_access|The access level.|Int|&#x25CF;|
+|crm\_role|Link to Role|FK [Role](./role)|&#x25CF;|
+
+![role_workflow table relationship diagram](/media/loc/en/database/tables/role_workflow.png)
+
+<RoleWorkflow />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|role |FK |Index |
+|workflow\_id |FK |Index |
+|crm\_role |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[ej\_role](./ej-role)  |Define access rights, memberships and other properties for role user members |
+|[kb\_workflow](./kb-workflow)  |Knowledge base workflow steps |
+|[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

@@ -17,4 +17,4 @@ envir: onsite, online
 
 ## Usage
 
-* [FunctionRight](../functionright.md).rightType - Functional right definition
+* [FunctionRight](../functionright).rightType - Functional right definition

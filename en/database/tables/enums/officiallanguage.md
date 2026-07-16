@@ -17,4 +17,4 @@ envir: onsite, online
 
 ## Usage
 
-* [LanguageInfoCountry](../languageinfocountry.md).official - Many-many link between countries and languages, to give intelligent choices for language
+* [LanguageInfoCountry](../languageinfocountry).official - Many-many link between countries and languages, to give intelligent choices for language

@@ -1,0 +1,56 @@
+---
+uid: table-ErpConnectionAccess
+title: ErpConnectionAccess table
+description: Access control for Erp Connections
+generated: true
+keywords: database table ErpConnectionAccess
+content_type: reference
+envir: onsite, online
+---
+
+import Erpconnectionaccess from "./includes/erpconnectionaccess.md";
+
+# ErpConnectionAccess Table (420)
+
+Access control for Erp Connections
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|erpconnectionaccess\_id|Primary key|PK| |
+|ErpConnectionId|Link to Erp connection we&apos;re granting access for|FK [ErpConnection](./erpconnection)| |
+|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate)|&#x25CF;|
+|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup)|&#x25CF;|
+|CanConnect|If set, then this user/group is allowed to create and break connections between EXISTING actors in ERP and CRM|Bool|&#x25CF;|
+|CanCreateERP|If set, then this user/group is allowed to create NEW actors in ERP and connect them to CRM|Bool|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![ErpConnectionAccess table relationship diagram](/media/loc/en/database/tables/ErpConnectionAccess.png)
+
+<Erpconnectionaccess />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ErpConnection](./erpconnection)  |One connection to an ERP connector, specifying Client and other required information |
+|[UserGroup](./usergroup)  |Secondary user groups |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

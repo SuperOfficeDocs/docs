@@ -1,0 +1,56 @@
+---
+uid: table-target_group
+title: target_group table
+description: Info about a set of (sales, project, selection...) targets
+generated: true
+keywords: database table target_group
+content_type: reference
+envir: onsite, online
+---
+
+import TargetGroup from "./includes/target-group.md";
+
+# target\_group Table (514)
+
+Info about a set of (sales, project, selection...) targets
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|target\_group\_id|Primary key|PK| |
+|year|The year this set of targets are associated with (2020, 2021...)|Int|&#x25CF;|
+|entity\_type|Entity type for this set of targets (Sale, Project, Selection, Appointment...)|Enum [TargetEntityType](./enums/targetentitytype)|&#x25CF;|
+|period\_type|Period type for editing this set of targets (Year, Quarter...)|Enum [TargetPeriodType](./enums/targetperiodtype)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+|target\_dimension\_id|Dimension this target is in|FK [target_dimension](./target-dimension)|&#x25CF;|
+
+![target_group table relationship diagram](/media/loc/en/database/tables/target_group.png)
+
+<TargetGroup />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[target\_dimension](./target-dimension)  |Defining target dimension |
+|[target\_period](./target-period)  |A set of periods linked with target amounts for users/usergroups and the target groups/years. |
+|[target\_revision\_history](./target-revision-history)  |Revision history info in case the original target group or assignment info was deleted |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix.

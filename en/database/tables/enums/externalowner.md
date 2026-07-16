@@ -19,4 +19,4 @@ The owner of this row
 
 ## Usage
 
-* [external_owner](../external-owner.md).owner - Owner of external data imported into the system
+* [external_owner](../external-owner).owner - Owner of external data imported into the system

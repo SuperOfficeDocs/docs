@@ -25,4 +25,4 @@ Selected days (flags, so several days can be selected) for time frame
 
 ## Usage
 
-* [email_flow](../email-flow.md).selected_days - A set of properties related to the email workflow.
+* [email_flow](../email-flow).selected_days - A set of properties related to the email workflow.

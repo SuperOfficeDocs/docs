@@ -1,0 +1,61 @@
+---
+uid: table-dbi_agent
+title: dbi_agent table
+description: DBI agent settings
+generated: true
+keywords: database table dbi_agent
+content_type: reference
+envir: onsite, online
+---
+
+import DbiAgent from "./includes/dbi-agent.md";
+
+# dbi\_agent Table (381)
+
+DBI agent settings
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|Primary key|PK| |
+|name|Agent name|String(255)|&#x25CF;|
+|id\_string|A field for an id_string which may be used to access the dbi agent|String(255)| |
+|protocol|Agent communcication protocol |protocol|&#x25CF;|
+|path|Path to agent URL or file path|String(255)|&#x25CF;|
+
+![dbi_agent table relationship diagram](/media/loc/en/database/tables/dbi_agent.png)
+
+<DbiAgent />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[attachment](./attachment)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
+|[contact](./contact)  |Companies and Organizations. |
+|[dbi\_agent\_field](./dbi-agent-field)  |DBI agent fields |
+|[dbi\_agent\_schedule](./dbi-agent-schedule)  |DBI agent schedule settings |
+|[eab\_entry](./eab-entry)  |This table contains eab (email address book) entries, i.e. an alias (&amp;apos;Ola Hansen&amp;apos;) and an address (&amp;apos;ola@hansen.as&amp;apos;). |
+|[ejuser](./ejuser)  |This table contains entries for the users of the system. |
+|[Email](./email)  |Email addresses for contacts, projects and persons |
+|[kb\_category](./kb-category)  |Knowledge base folder hierarchy |
+|[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
+|[kb\_entry\_comment](./kb-entry-comment)  |Comments to entries in the knowledge base, typically made by customers |
+|[kb\_group](./kb-group)  |This table contains FAQ groups. A group is a cluster of entries (potentially located anywhere in the FAQ hierarchy). A group is located in a certain category. |
+|[person](./person)  |Persons |
+|[s\_list](./s-list)  |A list, dynamic or static |
+|[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

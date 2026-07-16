@@ -21,4 +21,4 @@ Whether the owner has read the ticket or not (red, yellow, green).
 
 ## Usage
 
-* [ticket](../ticket.md).read_status - This table contains the tickets (requests) of the system. Its purpose should be evident.
+* [ticket](../ticket).read_status - This table contains the tickets (requests) of the system. Its purpose should be evident.

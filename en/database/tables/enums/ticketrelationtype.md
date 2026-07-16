@@ -20,4 +20,4 @@ Type of the relation (Related, Parent, Child)
 
 ## Usage
 
-* [ticket_relation_def](../ticket-relation-def.md).relation_type - Ticket relation definition
+* [ticket_relation_def](../ticket-relation-def).relation_type - Ticket relation definition

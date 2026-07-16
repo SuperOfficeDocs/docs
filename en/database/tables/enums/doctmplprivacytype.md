@@ -19,4 +19,4 @@ Indicator that this document template has a functional role, related to privacy/
 
 ## Usage
 
-* [DocTmpl](../doctmpl.md).privacyDocType - DocTmpl list table. Describes templates available for writing new documents.
+* [DocTmpl](../doctmpl).privacyDocType - DocTmpl list table. Describes templates available for writing new documents.

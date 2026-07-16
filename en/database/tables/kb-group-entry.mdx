@@ -1,0 +1,50 @@
+---
+uid: table-kb_group_entry
+title: kb_group_entry table
+description: This table contains group entries for FAQ groups.
+generated: true
+keywords: database table kb_group_entry
+content_type: reference
+envir: onsite, online
+---
+
+import KbGroupEntry from "./includes/kb-group-entry.md";
+
+# kb\_group\_entry Table (287)
+
+This table contains group entries for FAQ groups.
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|kb\_group\_id|The id of the group in which this entry is located.|FK [kb_group](./kb-group)| |
+|kb\_entry\_id|The id of the kb_entry this entry references.|FK [kb_entry](./kb-entry)| |
+|sort\_pos|A number (strictly ascending) indicating the sorted position for this element.|Int|&#x25CF;|
+
+![kb_group_entry table relationship diagram](/media/loc/en/database/tables/kb_group_entry.png)
+
+<KbGroupEntry />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|kb\_group\_id |FK |Index |
+|kb\_entry\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
+|[kb\_group](./kb-group)  |This table contains FAQ groups. A group is a cluster of entries (potentially located anywhere in the FAQ hierarchy). A group is located in a certain category. |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

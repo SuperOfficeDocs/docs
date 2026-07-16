@@ -21,4 +21,4 @@ Type for sending email meeting invitation. Not an invitation type template = 0, 
 
 ## Usage
 
-* [DocTmpl](../doctmpl.md).invitationDocType - DocTmpl list table. Describes templates available for writing new documents.
+* [DocTmpl](../doctmpl).invitationDocType - DocTmpl list table. Describes templates available for writing new documents.

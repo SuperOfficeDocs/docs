@@ -21,4 +21,4 @@ The kind of board view entity these settings belong to
 
 ## Usage
 
-* [board_view_settings](../board-view-settings.md).entity_type - Settings for selection board view
+* [board_view_settings](../board-view-settings).entity_type - Settings for selection board view

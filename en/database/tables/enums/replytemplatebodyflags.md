@@ -21,4 +21,4 @@ Identifies the status of the template body. Default, not default etc.
 
 ## Usage
 
-* [reply_template_body](../reply-template-body.md).flags - Contains the body of the reply templates in different languages
+* [reply_template_body](../reply-template-body).flags - Contains the body of the reply templates in different languages

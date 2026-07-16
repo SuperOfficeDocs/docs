@@ -1,0 +1,55 @@
+---
+uid: table-s_sent_message
+title: s_sent_message table
+description: Emarketeer message control
+generated: true
+keywords: database table s_sent_message
+content_type: reference
+envir: onsite, online
+---
+
+import SSentMessage from "./includes/s-sent-message.md";
+
+# s\_sent\_message Table (405)
+
+Emarketeer message control
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|The primary key (auto-incremented)|PK| |
+|shipment\_id|Which shipment the customer received.|FK [s_shipment](./s-shipment)| |
+|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message)| |
+|customer\_id|The id of the customer that received the message|FK [person](./person)| |
+|email|The email-adresse the received the message|String(255)|&#x25CF;|
+|when\_sent|When the email was sent.|DateTime|&#x25CF;|
+|when\_read|When the email was read or link was clicked.|DateTime|&#x25CF;|
+
+![s_sent_message table relationship diagram](/media/loc/en/database/tables/s_sent_message.png)
+
+<SSentMessage />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|shipment\_id |FK |Index |
+|message\_id |FK |Index |
+|customer\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[person](./person)  |Persons |
+|[s\_message](./s-message)  |A message used in a shipment. Can be html and/or plain text |
+|[s\_shipment](./s-shipment)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

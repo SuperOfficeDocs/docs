@@ -21,4 +21,4 @@ envir: onsite, online
 
 ## Usage
 
-* [Task](../task.md).direction - Task list table, activity types, like Phone, Meeting
+* [Task](../task).direction - Task list table, activity types, like Phone, Meeting

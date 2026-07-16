@@ -1,0 +1,58 @@
+---
+uid: table-target_dimension
+title: target_dimension table
+description: Defining target dimension
+generated: true
+keywords: database table target_dimension
+content_type: reference
+envir: onsite, online
+---
+
+import TargetDimension from "./includes/target-dimension.md";
+
+# target\_dimension Table (521)
+
+Defining target dimension
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|target\_dimension\_id|Primary key|PK| |
+|entity\_type|Entity type for this set of targets (Sale, Project, Selection, Appointment...)|Enum [TargetEntityType](./enums/targetentitytype)|&#x25CF;|
+|measurement\_unit|What to measure (Amount, Count, Profit...|Enum [TargetMeasurementUnit](./enums/targetmeasurementunit)|&#x25CF;|
+|assignment\_level|What level this dimension can be assigned to (Company, Group, Associate)|Enum [TargetAssignementLevel](./enums/targetassignementlevel)|&#x25CF;|
+|dimension\_list\_field|List that defines the dimensions for this target matrix (ex: Sale type, source, partner, business, udef or extrafield lists...)|String(255)|&#x25CF;|
+|selected\_dimensions|id&apos;s of the selected/wanted dimensions (what sale types or udef list lines that should be target dimensions)|FKArray|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![target_dimension table relationship diagram](/media/loc/en/database/tables/target_dimension.png)
+
+<TargetDimension />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|entity\_type |Enum |Index |
+|selected\_dimensions |FKArray |Full text |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[SaleType](./saletype)  |Type of sale - large solution, incremental, whatever fits the organization |
+|[target\_group](./target-group)  |Info about a set of (sales, project, selection...) targets |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* Sentry controls access to items in this table using user's Role and data rights matrix.

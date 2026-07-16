@@ -22,4 +22,4 @@ Identifies if HTML or plain message is included in message.
 
 ## Usage
 
-* [s_message](../s-message.md).flags - A message used in a shipment. Can be html and/or plain text
+* [s_message](../s-message).flags - A message used in a shipment. Can be html and/or plain text

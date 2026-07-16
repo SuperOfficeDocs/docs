@@ -25,4 +25,4 @@ Bit mask, combines phone type (EPhoneType) and owner type (EOwnerType)
 
 ## Usage
 
-* [phone](../phone.md).ptype_idx - Contact and Person phonenumbers (+fax)
+* [phone](../phone).ptype_idx - Contact and Person phonenumbers (+fax)

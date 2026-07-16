@@ -20,4 +20,4 @@ Extra information about the operation, as a bit-masked field
 
 ## Usage
 
-* [traveltransactionlog](../traveltransactionlog.md).flags - Log of all updates made to the database, that need to be replicated.
+* [traveltransactionlog](../traveltransactionlog).flags - Log of all updates made to the database, that need to be replicated.

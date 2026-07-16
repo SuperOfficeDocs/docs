@@ -23,4 +23,4 @@ The role this document plays in the Quote system, if any
 
 ## Usage
 
-* [DocTmpl](../doctmpl.md).quoteDocType - DocTmpl list table. Describes templates available for writing new documents.
+* [DocTmpl](../doctmpl).quoteDocType - DocTmpl list table. Describes templates available for writing new documents.

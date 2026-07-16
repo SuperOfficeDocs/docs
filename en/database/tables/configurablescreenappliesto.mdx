@@ -1,0 +1,51 @@
+---
+uid: table-ConfigurableScreenAppliesTo
+title: ConfigurableScreenAppliesTo table
+description: Mapping between recipes in scil and chosen type of data (appliesToKey) to differ layouts on
+generated: true
+keywords: database table ConfigurableScreenAppliesTo
+content_type: reference
+envir: onsite, online
+---
+
+import Configurablescreenappliesto from "./includes/configurablescreenappliesto.md";
+
+# ConfigurableScreenAppliesTo Table (464)
+
+Mapping between recipes in scil and chosen type of data (appliesToKey) to differ layouts on
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|configurablescreenappliesto\_id|Primary key|PK| |
+|recipeId|The recipe in scil that might be modified|String(255)|&#x25CF;|
+|appliesToKey|Which data will be used to differ on layouts for this recipe|String(255)|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![ConfigurableScreenAppliesTo table relationship diagram](/media/loc/en/database/tables/ConfigurableScreenAppliesTo.png)
+
+<Configurablescreenappliesto />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

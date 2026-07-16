@@ -20,4 +20,4 @@ How to notify recipients when this webhook changes state. 1=Email, 2=InApp.
 
 ## Usage
 
-* [Webhook](../webhook.md).notify_via - Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.
+* [Webhook](../webhook).notify_via - Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.

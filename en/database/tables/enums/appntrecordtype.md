@@ -17,4 +17,4 @@ Same as task.record_type: 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = t
 
 ## Usage
 
-* [CounterValue](../countervalue.md).record_type - Visible for rights
+* [CounterValue](../countervalue).record_type - Visible for rights

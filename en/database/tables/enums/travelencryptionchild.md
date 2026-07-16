@@ -20,4 +20,4 @@ Use encrypted communication for this traveller: 0 = no, 1 = serial no as key, 2 
 
 ## Usage
 
-* [traveller](../traveller.md).encryptedComm - Associates traveling out from this database
+* [traveller](../traveller).encryptedComm - Associates traveling out from this database

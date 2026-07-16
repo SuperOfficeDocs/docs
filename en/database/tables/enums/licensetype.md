@@ -21,4 +21,4 @@ Entire system, per database, or per associate
 
 ## Usage
 
-* [ModuleLicense](../modulelicense.md).licenseType - Module licenses, belonging to one single owner
+* [ModuleLicense](../modulelicense).licenseType - Module licenses, belonging to one single owner

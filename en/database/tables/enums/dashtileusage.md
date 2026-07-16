@@ -20,4 +20,4 @@ Where this tile can be used
 
 ## Usage
 
-* [dashboard_tile_definition](../dashboard-tile-definition.md).usage - Describes the contents of a tile
+* [dashboard_tile_definition](../dashboard-tile-definition).usage - Describes the contents of a tile

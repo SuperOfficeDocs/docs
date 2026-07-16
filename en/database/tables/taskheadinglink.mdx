@@ -1,0 +1,57 @@
+---
+uid: table-TaskHeadingLink
+title: TaskHeadingLink table
+description: Heading link table for Task, for MDO headers
+generated: true
+keywords: database table TaskHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Taskheadinglink from "./includes/taskheadinglink.md";
+
+# TaskHeadingLink Table (69)
+
+Heading link table for Task, for MDO headers
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|taskheadinglink\_id|Primary key|PK| |
+|task\_id|Link to Task list table|FK [Task](./task)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![TaskHeadingLink table relationship diagram](/media/loc/en/database/tables/TaskHeadingLink.png)
+
+<Taskheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|task\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[Task](./task)  |Task list table, activity types, like Phone, Meeting |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

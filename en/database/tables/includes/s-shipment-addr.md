@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Status | ID | Comment |
 |---|---|---|
 | Unknown | 0 | Default value for empty rows |

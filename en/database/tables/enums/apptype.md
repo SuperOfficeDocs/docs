@@ -17,4 +17,4 @@ Application type: 1 = exe, 2 = integrated html, 3 = integrated url, 4 = browser 
 
 ## Usage
 
-* [ExtApp](../extapp.md).appType - ExtApp list table. Applications startable from SuperOffice
+* [ExtApp](../extapp).appType - ExtApp list table. Applications startable from SuperOffice

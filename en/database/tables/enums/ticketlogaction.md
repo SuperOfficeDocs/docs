@@ -93,4 +93,4 @@ An enum indicating what kind of log-entry this is.
 
 ## Usage
 
-* [ticket_log_action](../ticket-log-action.md).log_action - This table contains actions for the tickets.
+* [ticket_log_action](../ticket-log-action).log_action - This table contains actions for the tickets.

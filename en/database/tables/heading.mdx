@@ -1,0 +1,105 @@
+---
+uid: table-Heading
+title: Heading table
+description: Heading items for all MDO lists, lists that are grouped and filtered.
+generated: true
+keywords: database table Heading
+content_type: reference
+envir: onsite, online
+---
+
+import Heading from "./includes/heading.md";
+
+# Heading Table (58)
+
+Heading items for all MDO lists, lists that are grouped and filtered.
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|heading\_id|Primary key|PK| |
+|name|The visible heading|String(239)| |
+|rank|Rank order |UShort|&#x25CF;|
+|tooltip|Tooltip or other description|String(254)|&#x25CF;|
+|deleted|0 -&gt; record is active 1 -&gt; record is deleted and should not be shown in lists|UShort|&#x25CF;|
+|listTableId|Which List is this heading connected to? (table ID)|TableNumber| |
+|extraId|Extra ID for refining the list id|Id|&#x25CF;|
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![Heading table relationship diagram](/media/loc/en/database/tables/Heading.png)
+
+<Heading />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|name |String(239) |Index |
+|listTableId |TableNumber |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[AmountClassHeadingLink](./amountclassheadinglink)  |Heading link table for AmountClass, for MDO headers |
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[AssociateHeadingLink](./associateheadinglink)  |Heading link table for associate for display only. Supportive table, used for grouping and filtering on lists.  |
+|[BusinessHeadingLink](./businessheadinglink)  |Heading link table for Business, for MDO headers |
+|[CategoryHeadingLink](./categoryheadinglink)  |Heading link table for Category, for MDO headers |
+|[ComptrHeadingLink](./comptrheadinglink)  |Heading link table for Comptr, for MDO headers |
+|[ContIntHeadingLink](./contintheadinglink)  |Heading link table for ContInt, for MDO headers |
+|[CountryHeadingLink](./countryheadinglink)  |Heading link table for Country, for MDO headers |
+|[CreditedHeadingLink](./creditedheadinglink)  |Heading link table for Credited, for MDO headers |
+|[CurrencyHeadingLink](./currencyheadinglink)  |Heading link table for Currency, for MDO headers |
+|[DeliveryTermsHeadingLink](./deliverytermsheadinglink)  |Heading link table for DeliveryTerms, for MDO item headings |
+|[DeliveryTypeHeadingLink](./deliverytypeheadinglink)  |Heading link table for DeliveryType, for MDO item headings |
+|[DocTmplHeadingLink](./doctmplheadinglink)  |Heading link table for DocTmpl, for MDO headers |
+|[ExtAppHeadingLink](./extappheadinglink)  |Heading link table for ExtApp, for MDO headers |
+|[IntentHeadingLink](./intentheadinglink)  |Heading link table for Intent, for MDO headers |
+|[MrMrsHeadingLink](./mrmrsheadinglink)  |Heading link table for MrMrs, for MDO headers |
+|[PaymentTermsHeadingLink](./paymenttermsheadinglink)  |Heading link table for PaymentTerms, for MDO item headings |
+|[PaymentTypeHeadingLink](./paymenttypeheadinglink)  |Heading link table for PaymentType, for MDO item headings |
+|[PersIntHeadingLink](./persintheadinglink)  |Heading link table for PersInt, for MDO headers |
+|[PersPosHeadingLink](./persposheadinglink)  |Heading link table for PersPos, for MDO headers |
+|[PMembTypeHeadingLink](./pmembtypeheadinglink)  |Heading link table for PMembType, for MDO headers |
+|[PriceUnitHeadingLink](./priceunitheadinglink)  |Heading link table for PriceUnit, for MDO item headings |
+|[PriorityHeadingLink](./priorityheadinglink)  |Heading link table for Priority, for MDO headers |
+|[ProbHeadingLink](./probheadinglink)  |Heading link table for Prob, for MDO headers |
+|[ProductCategoryHeadingLink](./productcategoryheadinglink)  |Heading link table for ProductCategory, for MDO item headings |
+|[ProductFamilyHeadingLink](./productfamilyheadinglink)  |Heading link table for ProductFamily, for MDO item headings |
+|[ProductTypeHeadingLink](./producttypeheadinglink)  |Heading link table for ProductType, for MDO item headings |
+|[ProjStatusHeadingLink](./projstatusheadinglink)  |Heading link table for ProjStatus, for MDO headers |
+|[ProjTypeHeadingLink](./projtypeheadinglink)  |Heading link table for ProjType, for MDO headers |
+|[QuoteApprReasonHeadingLink](./quoteapprreasonheadinglink)  |Heading link table for QuoteApprReason, for MDO headers |
+|[QuoteDenyReasonHeadingLink](./quotedenyreasonheadinglink)  |Heading link table for QuoteDenyReason, for MDO headers |
+|[ReasonHeadingLink](./reasonheadinglink)  |Heading link table for Reason, for MDO headers |
+|[ReasonSoldHeadingLink](./reasonsoldheadinglink)  |Heading link table for ReasonSold, for MDO headers |
+|[ReasonStalledHeadingLink](./reasonstalledheadinglink)  |Heading link table for ReasonStalled, for MDO headers |
+|[RejectReasonHeadingLink](./rejectreasonheadinglink)  |Heading link table for RejectReason, for MDO headers |
+|[RelDefHeadingLink](./reldefheadinglink)  |Heading link table for RelDef, for MDO headers |
+|[SaleTypeCatHeadingLink](./saletypecatheadinglink)  |Heading link table for SaleTypeCat, for MDO headers |
+|[SaleTypeHeadingLink](./saletypeheadinglink)  |Heading link table for SaleType, for MDO headers |
+|[SalutationHeadingLink](./salutationheadinglink)  |Heading link table for Salutation, for MDO headers |
+|[SearchCatHeadingLink](./searchcatheadinglink)  |Heading link table for SearchCat, for MDO headers |
+|[SourceHeadingLink](./sourceheadinglink)  |Heading link table for Source, for MDO headers |
+|[StakeholderRoleHeadingLink](./stakeholderroleheadinglink)  |Heading link table for StakeholderRole, for MDO headers |
+|[SubscriptionUnitHeadingLink](./subscriptionunitheadinglink)  |Heading link table for SubscriptionUnit, for MDO item headings |
+|[TagsHeadingLink](./tagsheadinglink)  |Heading link table for Source, for MDO headers |
+|[TaskHeadingLink](./taskheadinglink)  |Heading link table for Task, for MDO headers |
+|[TaskMenuHeadingLink](./taskmenuheadinglink)  |Heading link table for TaskMenu, for MDO headers |
+|[UDListHeadingLink](./udlistheadinglink)  |Heading link table for UDList, for MDO headers. Note - MDO mode for userdefinede lists are either turned on or off, you may not have it on for one userdefined list and off for the others. |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

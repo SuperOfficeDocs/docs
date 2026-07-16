@@ -21,4 +21,4 @@ The type of the CTA, which determines how the CTA button renders. Primary/Second
 
 ## Usage
 
-* [NewsFeedItemCta](../newsfeeditemcta.md).CtaType - List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).
+* [NewsFeedItemCta](../newsfeeditemcta).CtaType - List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).

@@ -23,4 +23,4 @@ Type of delta lik webpanel, but also system, customized.
 
 ## Usage
 
-* [ConfigurableScreenDelta](../configurablescreendelta.md).deltaType - Parts of recipes in SCIL to insert or remove in given recipes
+* [ConfigurableScreenDelta](../configurablescreendelta).deltaType - Parts of recipes in SCIL to insert or remove in given recipes

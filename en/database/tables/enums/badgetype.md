@@ -23,4 +23,4 @@ Badge to explicitly determine how a message was generated
 
 ## Usage
 
-* [ej_message](../ej-message.md).badge - This table contains the messages listed under tickets.
+* [ej_message](../ej-message).badge - This table contains the messages listed under tickets.

@@ -14,7 +14,7 @@ platform: win
 
 When you create/modify/delete a row, the change is logged in the [travel transaction log][2] so that travelers and satellites can be synchronized.
 
-Let’s take a look at what was stored in the log when we create the project *Client SDK Work*.
+Let's take a look at what was stored in the log when we create the project *Client SDK Work*.
 
 First, we need the project ID for the project we created:
 
@@ -47,7 +47,7 @@ The table IDs are listed in the reference section.
 
 These are the ones relevant to the new project
 
-* Project table  = 11
+* Project table  = 11
 * Text table = 18
 * UDProjectSmall = 142
 
@@ -57,7 +57,7 @@ First, we see the project being created (`table=11`, `type=4352`). Then the text
 
 You might also see the user-def table having a record inserted (`table=142`, `type=4352`)
 
-This table is very useful if you want to monitor updates to the database or replicate changes to another system. You create a database trigger to replicate changes. SuperOffice does not use triggers or stored procedures because of its database independence. There is nothing to prevent you from adding your own, as long as they do not affect SuperOffice’s access to the tables. Adding constraints or throwing exceptions at SuperOffice will cause the CRM client to stop working.
+This table is very useful if you want to monitor updates to the database or replicate changes to another system. You create a database trigger to replicate changes. SuperOffice does not use triggers or stored procedures because of its database independence. There is nothing to prevent you from adding your own, as long as they do not affect SuperOffice's access to the tables. Adding constraints or throwing exceptions at SuperOffice will cause the CRM client to stop working.
 
 When a traveler returns, all his updates are added to the end of the transaction log, but the timestamps are maintained. The timestamps should be kept in UTC/GMT - the same as the registered and updated fields on the records themselves. This makes conflict resolution easier to handle.
 
@@ -73,10 +73,8 @@ When the user leaves on travel, his transactions are logged in a separate range 
 
 * [traveltransactionlog table][1]
 
-<!-- Referenced links -->
-[1]: ../tables/traveltransactionlog.md
-[2]: index.md
+[1]: ../tables/traveltransactionlog
+[2]: ./index
 
-<!-- Referenced images -->
-[img1]: media/transactionlog.png
-[img2]: media/screencap3.png
+[img1]: /media/loc/en/database/transactionlog.png
+[img2]: /media/loc/en/database/screencap3.png

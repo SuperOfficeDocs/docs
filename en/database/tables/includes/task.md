@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Values needed to access the Task table
 
 This table must contain special values that would be difficult to guess correctly. These are listed below with a description of how to use them.
@@ -32,5 +31,5 @@ The Record Type is used to classify the Task - The classification is used by the
 
 ### See also
 
-[{CounterValue Table}](../countervalue.md))
-[task Table](../task.md)
+[\{CounterValue Table\}](../countervalue))
+[task Table](../task)

@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Value for field 'accessflags' in table 'prefdesc'
 
 This enumeration consists of flag values that can be combined
@@ -6,7 +5,7 @@ This enumeration consists of flag values that can be combined
 | accessflags | ID | Comment |
 |---|---|---|
 | Unknown | 0 | Unknown - used when initializing |
-| WizardMode |  1 | Wizard mode is password-protected and only accessible to SuperOffice personnel. |
+| WizardMode |  1 | Wizard mode is password-protected and only accessible to SuperOffice personnel. |
 | Level0 | 2 | Preference settable only by CRM superuser |
 | adminGUI | 4 | Show preference in SOADMIN GUI |
 | CRMGUI | 8 | Show preference in CRM GUI |
@@ -16,7 +15,7 @@ This enumeration consists of flag values that can be combined
 | valueType | ID | Comment |
 |---|---|---|
 | Unknown | 0 | Unknown - used when initializing |
-| Number |  1 | Preference value is a number |
+| Number |  1 | Preference value is a number |
 | Text | 2 | Preference value is a text (max len 99 characters) |
 | Bool | 3 | Preference value is Boolean |
 | ListOfValues | 4 | Preference value is a list of separate value |

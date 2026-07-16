@@ -1,22 +1,21 @@
-<!-- markdownlint-disable-file MD041 -->
-### Value for the availableInState field in table ExtApp
+### Value for the availableInState field in table ExtApp
 
 The enums here may be combined.
 
 | availableInState | ID | Comment |
 |---|---|
 | Always | 0 | This application is always available |
-| Central db |  1 | This application is only available on the Central database |
+| Central db |  1 | This application is only available on the Central database |
 | Satellite db | 2 | This application is only available on a Satellite database |
 | Travel db | 4 | This application is only available on a Travel database |
-| Sales &amp; Marketing web | 8 | This application is available on Sales &amp; Marketing Web |
+| Sales &amp; Marketing web | 8 | This application is available on Sales &amp; Marketing Web |
 
 ### Value for the executeOnEvent field in table ExtApp
 
 | executeOnEvent | ID | Comment |
 |---|---|---|
 | Never | 0 | This application is never executed automatically |
-| Log on |  1 | Execute this application during logon |
+| Log on |  1 | Execute this application during logon |
 | Log off | 2 | Execute this application before logoff |
 | LocalUpdate | 3 | Execute this application before a local update (start travelling) |
 | Wait | 16384 | When executing this application, wait for it to start |
@@ -36,18 +35,18 @@ The enums here may be combined.
 | navigation | ID | Comment |
 |---|---|---|
 | Invisible | 0 | This application is always available |
-| ToolboxMenu |  1 | This application is only available on the Central database |
+| ToolboxMenu |  1 | This application is only available on the Central database |
 | NavigatorButton | 2 | This application is only available on a Satellite database |
 | ViewMenu | 3 | This application is only available on a Travel database |
 | SelectionTaskCard | 4 | (not yet implemented) This application appears as a Task in the Selection Task |
 | ContactCard | 5 | This application (type IntegratedHTML or IntegratedURL) appears as a tab on |
-| ContactArchive | 6 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab on |
-| ProjectCard | 7 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab on |
-| ProjectArchive | 8 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab on the Project Archive |
-| SaleCard | 9 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
-| PersonDialog | 10 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
-| ActivityDialog | 11 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
-| DocumentDialog | 12 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
+| ContactArchive | 6 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab on |
+| ProjectCard | 7 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab on |
+| ProjectArchive | 8 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab on the Project Archive |
+| SaleCard | 9 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
+| PersonDialog | 10 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
+| ActivityDialog | 11 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
+| DocumentDialog | 12 | This application (type IntegratedHTML or IntegratedURL)  appears as a tab in |
 | BrowserPanel | 13 | In the Browser panel |
 | ContSelectionTask | 14 | Task button visible on the Contact Selection task panel |
 | AppntSelectionTask | 15 | Task button visible on the Appointment Selection task panel |

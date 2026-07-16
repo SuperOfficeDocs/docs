@@ -19,4 +19,4 @@ What we are keeping time of
 
 ## Usage
 
-* [time_keeping](../time-keeping.md).time_keeping_type - Time keeping for how much time a sale or project or other entity has spent in a given stage or other state
+* [time_keeping](../time-keeping).time_keeping_type - Time keeping for how much time a sale or project or other entity has spent in a given stage or other state

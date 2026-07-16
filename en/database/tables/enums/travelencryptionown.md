@@ -20,4 +20,4 @@ Use encrypted communication back to parent: 0 = no, 1 = serial no as key, 2 = ta
 
 ## Usage
 
-* [travelcurrent](../travelcurrent.md).encryptedComm - Information about this database and its place in the hierarchy
+* [travelcurrent](../travelcurrent).encryptedComm - Information about this database and its place in the hierarchy

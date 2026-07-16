@@ -21,4 +21,4 @@ Dashboard currency mode
 
 ## Usage
 
-* [dashboard_tile_definition](../dashboard-tile-definition.md).currency_mode - Describes the contents of a tile
+* [dashboard_tile_definition](../dashboard-tile-definition).currency_mode - Describes the contents of a tile

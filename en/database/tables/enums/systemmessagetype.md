@@ -21,4 +21,4 @@ Type of message, example: info, warning, error
 
 ## Usage
 
-* [Message](../message.md).type - Definition of a message, corresponding to the header of a protocol
+* [Message](../message).type - Definition of a message, corresponding to the header of a protocol

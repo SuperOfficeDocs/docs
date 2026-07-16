@@ -47,11 +47,10 @@ You are going to start by interacting with a SuperOffice database that is either
 * SuperOffice 8.1 or higher with third-party tables.
 * SuperOffice 8.1 or higher without third-party tables.
 
-For pre-8.1 scenarios, we recommend using **ServerSetup** to upgrade customer installations. This will upgrade both the customers’ installation and database to the latest continuous database process.
+For pre-8.1 scenarios, we recommend using **ServerSetup** to upgrade customer installations. This will upgrade both the customers' installation and database to the latest continuous database process.
 
 If customers do not upgrade to SuperOffice 8.1, the only available option for third-party tables is the continued use of the legacy Dictionary SDK to create new or modified existing third-party tables.
 
 For SuperOffice 8.1 and later, all third-parties must come to accept, understand and adopt the continuous database processes.
 
-<!-- Referenced images -->
-[img1]: media/swimminlane-description.png
+[img1]: /media/loc/en/database/swimminlane-description.png

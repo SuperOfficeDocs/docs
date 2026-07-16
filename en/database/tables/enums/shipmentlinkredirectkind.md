@@ -20,4 +20,4 @@ Enum defining the redirect kind (show text, url, etc) of the link
 
 ## Usage
 
-* [s_link](../s-link.md).redirect_kind - Links in messages to measure success rate of a campaign.
+* [s_link](../s-link).redirect_kind - Links in messages to measure success rate of a campaign.

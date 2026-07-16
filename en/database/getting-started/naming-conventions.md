@@ -27,7 +27,7 @@ All fields selecting an entry from any one of the special lists for business, co
 
 ### Inconsistencies
 
-Some other things to note – areas where consistency has suffered due to the way the schema was defined in earlier versions of the product.
+Some other things to note - areas where consistency has suffered due to the way the schema was defined in earlier versions of the product.
 
 * Email and URL have separate fields that point to `contact_id`
 

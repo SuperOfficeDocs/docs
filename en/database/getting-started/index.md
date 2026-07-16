@@ -31,9 +31,8 @@ The SuperOffice database schema is intended to be flexible while being understan
 * [Naming conventions][4]
 * [Special tables][5]
 
-<!-- Referenced links -->
-[1]: so-view-of-the-world.md
-[2]: main-tables.md
-[3]: overview.md
-[4]: naming-conventions.md
-[5]: special-tables.md
+[1]: ./so-view-of-the-world
+[2]: ./main-tables
+[3]: ./overview
+[4]: ./naming-conventions
+[5]: ./special-tables

@@ -21,4 +21,4 @@ Set if an external system owns this appointment.
 
 ## Usage
 
-* [appointment](../appointment.md).owned_externally - Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this. 
+* [appointment](../appointment).owned_externally - Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this.

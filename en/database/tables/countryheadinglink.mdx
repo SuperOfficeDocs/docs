@@ -1,0 +1,57 @@
+---
+uid: table-CountryHeadingLink
+title: CountryHeadingLink table
+description: Heading link table for Country, for MDO headers
+generated: true
+keywords: database table CountryHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Countryheadinglink from "./includes/countryheadinglink.md";
+
+# CountryHeadingLink Table (21)
+
+Heading link table for Country, for MDO headers
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|countryheadinglink\_id|Primary key|PK| |
+|country\_id|Link to Country list table|FK [country](./country)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![CountryHeadingLink table relationship diagram](/media/loc/en/database/tables/CountryHeadingLink.png)
+
+<Countryheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|country\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[country](./country)  |Country information |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

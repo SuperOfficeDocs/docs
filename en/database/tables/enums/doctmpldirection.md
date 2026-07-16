@@ -21,4 +21,4 @@ envir: onsite, online
 
 ## Usage
 
-* [DocTmpl](../doctmpl.md).direction - DocTmpl list table. Describes templates available for writing new documents.
+* [DocTmpl](../doctmpl).direction - DocTmpl list table. Describes templates available for writing new documents.

@@ -22,4 +22,4 @@ The type of change to trigger the auto update
 
 ## Usage
 
-* [AutomatedCategoryUpdate](../automatedcategoryupdate.md).trigger_type - Info on how to autoupdate category when changing sale or leadstatus on person
+* [AutomatedCategoryUpdate](../automatedcategoryupdate).trigger_type - Info on how to autoupdate category when changing sale or leadstatus on person

@@ -29,4 +29,4 @@ The verbs that are blocked when calling a ejscript over HTTP
 
 ## Usage
 
-* [ejscript](../ejscript.md).blocked_verbs - ejscript
+* [ejscript](../ejscript).blocked_verbs - ejscript

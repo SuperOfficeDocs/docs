@@ -12,7 +12,6 @@ envir: onsite, online
 
 Enum indicating if it is a special message, such as an URL redirection, etc.
 
-
 ## Usage
 
-* [chat_message](../chat-message.md).special_type - This table contains messages in a chat session.
+* [chat_message](../chat-message).special_type - This table contains messages in a chat session.

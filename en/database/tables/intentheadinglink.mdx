@@ -1,0 +1,57 @@
+---
+uid: table-IntentHeadingLink
+title: IntentHeadingLink table
+description: Heading link table for Intent, for MDO headers
+generated: true
+keywords: database table IntentHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Intentheadinglink from "./includes/intentheadinglink.md";
+
+# IntentHeadingLink Table (218)
+
+Heading link table for Intent, for MDO headers
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|intentheadinglink\_id|Primary key|PK| |
+|intent\_id|Link to Intent list table|FK [Intent](./intent)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![IntentHeadingLink table relationship diagram](/media/loc/en/database/tables/IntentHeadingLink.png)
+
+<Intentheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|intent\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[Intent](./intent)  |Intent list for SAINT. More information regarding SuperOffice Sales Intelligence on http://techdoc.superoffice.com  |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Use of the Sequence table
 
 The sequence table contains the next unallocated ID for each SuperOffice table.
@@ -22,5 +21,4 @@ SELECT next_id - 1 FROM Sequence WHERE id = 15;
 COMMIT TRANSACTION
 ```
 
-<!-- Referenced links -->
-[1]: ../contact.md
+[1]: ../contact

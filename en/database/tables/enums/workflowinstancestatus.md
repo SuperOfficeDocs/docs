@@ -24,4 +24,4 @@ Status of the workflow instance
 
 ## Usage
 
-* [workflow_instance](../workflow-instance.md).status - A set of properties related to the workflow instance of one participant going through the flow
+* [workflow_instance](../workflow-instance).status - A set of properties related to the workflow instance of one participant going through the flow

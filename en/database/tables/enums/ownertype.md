@@ -17,4 +17,4 @@ Selection, Reporter, FindProject, ...
 
 ## Usage
 
-* [SearchCriteria](../searchcriteria.md).ownerType - Criteria storage for Selection and other Find mechanisms
+* [SearchCriteria](../searchcriteria).ownerType - Criteria storage for Selection and other Find mechanisms

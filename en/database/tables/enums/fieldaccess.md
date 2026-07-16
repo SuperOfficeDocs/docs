@@ -20,4 +20,4 @@ Access restrictions for the field
 
 ## Usage
 
-* [ErpField](../erpfield.md).Access - Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector
+* [ErpField](../erpfield).Access - Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector

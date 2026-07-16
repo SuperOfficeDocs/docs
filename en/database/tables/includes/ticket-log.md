@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 The field `ticket_log.log_code` has an enum from this list:
 
 ### enum LogMessages

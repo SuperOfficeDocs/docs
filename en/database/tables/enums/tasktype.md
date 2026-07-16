@@ -28,4 +28,4 @@ envir: onsite, online
 
 ## Usage
 
-* [Task](../task.md).record_type - Task list table, activity types, like Phone, Meeting
+* [Task](../task).record_type - Task list table, activity types, like Phone, Meeting

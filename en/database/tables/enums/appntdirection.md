@@ -17,4 +17,4 @@ Same as task.direction: Direction: 0 = none, 1 = incoming, 2 = outgoing
 
 ## Usage
 
-* [CounterValue](../countervalue.md).direction - Visible for rights
+* [CounterValue](../countervalue).direction - Visible for rights

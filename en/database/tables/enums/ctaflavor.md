@@ -23,4 +23,4 @@ The flavor of the CTA, which determines the style the CTA button renders its typ
 
 ## Usage
 
-* [NewsFeedItemCta](../newsfeeditemcta.md).CtaFlavor - List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).
+* [NewsFeedItemCta](../newsfeeditemcta).CtaFlavor - List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).

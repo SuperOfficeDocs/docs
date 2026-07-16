@@ -23,4 +23,4 @@ How should the inputs of a combined selection be combined
 
 ## Usage
 
-* [selection](../selection.md).combinationType - Selections
+* [selection](../selection).combinationType - Selections

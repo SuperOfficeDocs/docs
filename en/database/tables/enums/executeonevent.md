@@ -22,4 +22,4 @@ Events that cause automatic execution of this app
 
 ## Usage
 
-* [ExtApp](../extapp.md).executeOnEvent - ExtApp list table. Applications startable from SuperOffice
+* [ExtApp](../extapp).executeOnEvent - ExtApp list table. Applications startable from SuperOffice

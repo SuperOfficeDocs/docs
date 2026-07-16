@@ -30,4 +30,4 @@ Status for sending to this particular recipient
 
 ## Usage
 
-* [s_shipment_addr](../s-shipment-addr.md).status - Addresses that are ready to be sent in a shipment.
+* [s_shipment_addr](../s-shipment-addr).status - Addresses that are ready to be sent in a shipment.

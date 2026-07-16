@@ -31,4 +31,4 @@ Dashboard tile type
 
 ## Usage
 
-* [dashboard_tile_definition](../dashboard-tile-definition.md).tile_type - Describes the contents of a tile
+* [dashboard_tile_definition](../dashboard-tile-definition).tile_type - Describes the contents of a tile

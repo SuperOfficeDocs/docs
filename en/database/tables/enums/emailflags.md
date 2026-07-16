@@ -24,4 +24,4 @@ Email flags - answered, deleted, seen, flagged, draft, recent...
 
 ## Usage
 
-* [email_item](../email-item.md).flags - Email data
+* [email_item](../email-item).flags - Email data

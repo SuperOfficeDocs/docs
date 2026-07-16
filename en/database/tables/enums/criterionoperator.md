@@ -17,4 +17,4 @@ Operator ID
 
 ## Usage
 
-* [SearchCriterion](../searchcriterion.md).operatorId - Criteria storage for Selection and other Find mechanisms
+* [SearchCriterion](../searchcriterion).operatorId - Criteria storage for Selection and other Find mechanisms

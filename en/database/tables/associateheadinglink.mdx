@@ -1,0 +1,56 @@
+---
+uid: table-AssociateHeadingLink
+title: AssociateHeadingLink table
+description: Heading link table for associate for display only. Supportive table, used for grouping and filtering on lists.
+generated: true
+keywords: database table AssociateHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Associateheadinglink from "./includes/associateheadinglink.md";
+
+# AssociateHeadingLink Table (4)
+
+Heading link table for associate for display only. Supportive table, used for grouping and filtering on lists.
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|associateheadinglink\_id|Primary key|PK| |
+|associate\_id|Link to Associate list table|FK [associate](./associate)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![AssociateHeadingLink table relationship diagram](/media/loc/en/database/tables/AssociateHeadingLink.png)
+
+<Associateheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|associate\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

@@ -1,0 +1,57 @@
+---
+uid: table-PersIntHeadingLink
+title: PersIntHeadingLink table
+description: Heading link table for PersInt, for MDO headers
+generated: true
+keywords: database table PersIntHeadingLink
+content_type: reference
+envir: onsite, online
+---
+
+import Persintheadinglink from "./includes/persintheadinglink.md";
+
+# PersIntHeadingLink Table (75)
+
+Heading link table for PersInt, for MDO headers
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|persintheadinglink\_id|Primary key|PK| |
+|persint\_id|Link to PersInt list table|FK [PersInt](./persint)| |
+|heading\_id|Link to Heading table|FK [Heading](./heading)| |
+|registered|Registered when|UtcDateTime| |
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
+|updated|Last updated when|UtcDateTime| |
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|updatedCount|Number of updates made to this record|UShort| |
+
+![PersIntHeadingLink table relationship diagram](/media/loc/en/database/tables/PersIntHeadingLink.png)
+
+<Persintheadinglink />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|persint\_id |FK |Index |
+|heading\_id |FK |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
+|[PersInt](./persint)  |PersInt list table. List of Person interests. |
+
+## Replication Flags
+
+* Replicate changes DOWN from central to satellites and travellers.
+* Replicate changes UP from satellites and travellers back to central.
+* Copy to satellite and travel prototypes.
+
+## Security Flags
+
+* No access control via user's Role.

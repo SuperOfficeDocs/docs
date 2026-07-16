@@ -23,4 +23,4 @@ Dashboard entity type
 
 ## Usage
 
-* [dashboard_tile_definition](../dashboard-tile-definition.md).entity_type - Describes the contents of a tile
+* [dashboard_tile_definition](../dashboard-tile-definition).entity_type - Describes the contents of a tile

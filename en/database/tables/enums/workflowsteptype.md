@@ -33,4 +33,4 @@ Step type
 
 ## Usage
 
-* [workflow_step](../workflow-step.md).step_type - A set of steps related to a workflow.
+* [workflow_step](../workflow-step).step_type - A set of steps related to a workflow.

@@ -31,4 +31,4 @@ Sending/stopped/failed etc.
 
 ## Usage
 
-* [s_shipment](../s-shipment.md).status - Contains info about one shipment. The addresses are stored in s_shipment_addr
+* [s_shipment](../s-shipment).status - Contains info about one shipment. The addresses are stored in s_shipment_addr

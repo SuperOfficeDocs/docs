@@ -1,0 +1,49 @@
+---
+uid: table-user_candidate
+title: user_candidate table
+description: This table will hold user candidate secrets
+generated: true
+keywords: database table user_candidate
+content_type: reference
+envir: onsite, online
+---
+
+import UserCandidate from "./includes/user-candidate.md";
+
+# user\_candidate Table (389)
+
+This table will hold user candidate secrets
+
+## Fields
+
+| Name | Description | Type | Null |
+|------|-------------|------|:----:|
+|id|Primary key|PK| |
+|person\_id|Foreign key. Id of a person representing Customer Center User.|FK [person](./person)| |
+|secret\_key|Username of a Customer Centre User.|String(255)|&#x25CF;|
+|secret\_value|Password of a Customer Centre User.|String(255)|&#x25CF;|
+
+![user_candidate table relationship diagram](/media/loc/en/database/tables/user_candidate.png)
+
+<UserCandidate />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|person\_id |FK |Index |
+|secret\_key |String(255) |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[person](./person)  |Persons |
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.

@@ -1,10 +1,9 @@
-<!-- markdownlint-disable-file MD041 -->
 ### Values for the 'done' field in the sale table
 
 | done | ID | Comment |
 |---|---|---|
 | Unknown | 0 | Sale Done/Not done state is unknown |
-| NotDone |  1 | Sale is not done |
+| NotDone |  1 | Sale is not done |
 | Done | 2 | Sale is done |
 
 ### Value for the 'status' field in the sale table

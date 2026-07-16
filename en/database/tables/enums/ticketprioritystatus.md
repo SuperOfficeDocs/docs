@@ -20,4 +20,4 @@ The status (normal/deleted) of the priority.
 
 ## Usage
 
-* [ticket_priority](../ticket-priority.md).status - This table contains the ticket priorities.
+* [ticket_priority](../ticket-priority).status - This table contains the ticket priorities.
