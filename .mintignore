@@ -85,12 +85,6 @@ en/**
 !en/security/**
 !en/service/**
 
-# Ignore database except index files
-en/database/**
-!en/database/**/
-!en/database/**/index.md
-!en/database/**/index.mdx
-
 # Ignore all reference folders except index files (but not agents-webapi reference with OpenAPI specs)
 #**/reference/**
 #!**/reference/**/
