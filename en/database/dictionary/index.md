@@ -1,10 +1,12 @@
 ---
-title: Continuous Database (CD)
 uid: cdd
+title: Continuous Database (CD)
 description: Continuous Database (CD)
-author: SuperOffice Product and Engineering
 keywords: database
+author: SuperOffice Product and Engineering
+date: 07.16.2026
 content_type: concept
+language: en
 ---
 
 # Data dictionary
@@ -32,7 +34,7 @@ So how does SuperOffice isolate itself from unpredictable database changes? From
 
 CD defines database variations in two dimensions. Individual features refer to step names. Each feature, or step name, will have individual steps for each version of the feature. Teams can work in parallel on their features and produce steps in numbered series.
 
-![x][img1]
+![Features developed in parallel as independently numbered series of dictionary steps][img1]
 
 SuperOffice CRM demonstrates multiple features being developed in parallel. Even though this is not exposed for customizations by partners, the concept of features being developed in parallel is verified, the same way as if it were partners developing customizations in different versions in parallel. The current version of SuperOffice CRM Online consist of 9 different features with 35+ steps.
 

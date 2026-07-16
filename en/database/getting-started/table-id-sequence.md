@@ -1,11 +1,12 @@
 ---
-title: Sequence
 uid: ids_in_sequence
+title: Sequence
 description: Sequence - where do IDs come from
-author:
-date:
 keywords: database
+author: SuperOffice Product and Engineering
+date: 07.16.2026
 content_type: concept
+language: en
 ---
 
 # Sequence - where do IDs come from

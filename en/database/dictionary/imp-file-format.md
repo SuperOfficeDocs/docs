@@ -1,11 +1,12 @@
 ---
-title: IMP file format
 uid: imp_file_format
+title: IMP file format
 description: IMP file format
-author: Tony Yates
-date: 06.23.2017
 keywords: database
+author: AnthonyYates
+date: 07.16.2026
 content_type: reference
+language: en
 ---
 
 # IMP file format

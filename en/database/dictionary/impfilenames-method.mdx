@@ -1,11 +1,12 @@
 ---
-title: ImpFileNames method
 uid: impfilenames_method
+title: ImpFileNames method
 description: Continuous database ImpFileNames method
-author: Tony Yates
-date: 06.23.2017
 keywords: database
+author: AnthonyYates
+date: 07.16.2026
 content_type: concept
+language: en
 ---
 
 # ImpFileNames method
@@ -32,11 +33,11 @@ Dictionary steps can provide IMP files is one of two ways:
 
 If using the physical file means, understand the resource resolver will begin in the executing directory, and then look for a folder called *ImpFiles*. It expects to find your imp files inside this folder. That said, Embedded resource files are the preferred method, and must be structured in the following way.
 
-![x][img1]
+![Recommended folder structure for embedding IMP files as resources][img1]
 
 To ensure your IMP files are embedded as a resource select the file to display the IMP file properties, then set the Build Action property to Embedded Resource.
 
-![x][img2]
+![Setting the Build Action property to Embedded Resource for an IMP file][img2]
 
 When compiled, the embedded resource file is a structure in the following format:
 
@@ -44,7 +45,7 @@ When compiled, the embedded resource file is a structure in the following format
 
 In a de-compiler, the embedded resource will appear in the assembly *Resources* folder.
 
-![x][img3]
+![Embedded IMP file resource shown in a decompiled assembly's Resources folder][img3]
 
 While embedded resource files are the preferred way to supply priming data, it's also possible to discover IMP files that exist in the current directory from which the application applying the step resides. The advantage of embedded resources is easy deployment: there is only one file, the compiled assembly, that is needed; and thus the chance of deployment failures due to missing IMP files is eliminated.
 
@@ -56,23 +57,23 @@ Below is an image of a Visual Basic project with an embedded resource with the s
 
 **Visual Basic *Project* folder structure:**
 
-![x][img4]
+![Visual Basic project folder structure with an embedded IMP file resource][img4]
 
 When compiled, the Visual Basic compiler writes the resources differently than the C# compiler.
 
 **Compiled Visual Basic resources:**
 
-![x][img5]
+![Compiled Visual Basic resource naming, differing from the C# compiler's output][img5]
 
 To solve this, if you are using Visual Basic projects to manage your dictionary steps, you must change the filename so that it is written in such a way that Continuous Database can discover it.
 
 By changing the name of the file, regardless of the folder structure, the embedded resource will be named accordingly.
 
-![x][img6]
+![Renamed IMP file so its embedded resource name no longer depends on folder structure][img6]
 
 As seen in the following image, the folder structure didn't matter and the filename matches that which the Continuous Database resource resolver can find.
 
-![x][img7]
+![Compiled resource name matching the Continuous Database resource resolver after renaming the file][img7]
 
 As stated earlier, we believe embedded resources are the best way to manage your import files.
 
@@ -86,7 +87,7 @@ The language-specific file structure becomes:
 
 `ProjectName.ImpFiles.DictionaryName._StepNumber.Files.LangCode.Filename.imp`
 
-![x][img8]
+![Language-specific IMP file folders for Danish and US English][img8]
 
 Looking at the image with language folders, you can see two language-specific folders with two IMP files in each, one for Danish and one for US English.
 

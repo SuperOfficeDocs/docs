@@ -65,8 +65,9 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 17 | `audience` | If present | Target audience |
 | 18 | `audience_tooltip` | If present | Audience tooltip |
 | 19 | `redirect_from` | If present | Old URL(s) that should redirect here |
-| 20 | `index` | If present | `true` if the page is outside a *learn* folder and should be indexed |
-| 21 | `language` | Always | Language code — always last |
+| 20 | `hidden` | If present | `true` to remove the page from sidebar navigation (still reachable by URL, not search-indexed). Used when consolidating several pages into one — pair with `redirect_from` and a `docs.json` redirect. Never set to `false`. |
+| 21 | `index` | If present | `true` if the page is outside a *learn* folder and should be indexed |
+| 22 | `language` | Always | Language code — always last |
 
 <Note>
 `contribute/` pages (like this one) only use `uid`/`title`/`description`/`keywords`/`author`/`date`/`content_type`/`language` — the rest describe product features and don't apply here.

@@ -1,10 +1,12 @@
 ---
-title: Dictionary steps
 uid: cdd_steps
+title: Dictionary steps
 description: Dictionary steps
-date: 06.23.2017
 keywords: database
+author: SuperOffice Product and Engineering
+date: 07.16.2026
 content_type: concept
+language: en
 ---
 
 # Dictionary steps
@@ -21,11 +23,11 @@ The dictionary step **description** should represent a general description of wh
 
 Let's look at an example: Suppose a vendor called Uno creates a dictionary step that adds a string field to the contact table that is to be 25 characters in length. As seen in the figure below, the initial dictionary step number to perform that action is defined as having a `StepNumber` set to 1. Next, suppose Uno decides to change the string field property to support 255 characters in length. The third-party must then define a new dictionary step that sets the `StepNumber` to 2.
 
-![x][img2]
+![Example dictionary step named Uno with StepNumber set to 1][img2]
 
 A second example is when there are 2 third-party integrations that make database schema changes. In addition to the previously mentioned Uno, third-party Duo comes along and adds a field to the contact table. Duo's dictionary step must be uniquely named and the step number is then 1.
 
-![x][img3]
+![Example dictionary step named Duo, also starting at StepNumber 1 in its own dictionary][img3]
 
 The dictionary step state property is used to indicate whether this dictionary step is an *InDevelopment* or *Released* state.
 
@@ -56,7 +58,7 @@ In terms of API dependencies, third-parties must **create a .NET assembly** that
 * *SuperOffice.CD.DSL.dll*
 * *SuperOffice.CD.DSL.Implementation.dll*
 
-![x][img6]
+![Continuous Database assembly architecture, showing SuperOffice.CD.DSL.dll and SuperOffice.CD.DSL.Implementation.dll dependencies][img6]
 
 Soon, there will be a NuGet package called `SuperOffice.ContinuousDatabase` to obtain these assemblies. Until then, just get them from the `SuperOffice.NetServer.Core` package, or any installation of SuperOffice (Win, Web, or web services).
 
@@ -70,7 +72,7 @@ A third-party is expected to override and implement at least one of three primar
 | `ImpFileNames` | performs priming data import after Structure is complete. |
 | `CustomPriming` | performs unique priming data actions or data transformations after `ImpFileNames` is complete, using direct SQL statements. |
 
-![x][img4]
+![Diagram of the three DictionaryStep pipeline methods: Structure, ImpFileNames, and CustomPriming][img4]
 
 <Note>
 Only implement the methods that have actual content: don't create empty overrides as that leads to degraded performance during upgrades.
@@ -80,7 +82,7 @@ Only implement the methods that have actual content: don't create empty override
 
 Below is an example DictionaryStep that overrides the `Structure` and `ImpFileNames`.
 
-```csharp CS
+```csharp
 using SuperOffice.CD.DSL.V1.StepModel;
 using System.Collections.Generic;
 namespace SuperOffice.DevNetCddLib.DictionarySteps
@@ -131,7 +133,7 @@ The DictionaryStep is conceptually a pipeline to:
 * Add priming data.
 * Transform table data.
 
-![x][img5]
+![Diagram of the DictionaryStep pipeline: schema changes, priming data, and data transformation][img5]
 
 While none of the methods are required, each routine presents an opportunity to make database changes. Whether physical schema changes, priming data-related, or simply data transformation in the database, actions done in the pipeline are a means to ensure an agile and evolutionary database design.
 

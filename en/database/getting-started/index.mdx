@@ -1,0 +1,151 @@
+---
+uid: db_getting_started
+title: Getting started
+description: Getting started with SuperOffice database
+keywords: database
+author: SuperOffice Product and Engineering
+date: 07.16.2026
+content_type: concept
+redirect_from:
+  - /en/database/getting-started/so-view-of-the-world
+  - /en/database/getting-started/main-tables
+  - /en/database/getting-started/overview
+language: en
+---
+
+# Getting started
+
+This section will give you an overview of the SuperOffice Database and explain the basic elements that you need to get started.
+
+We are now going to look at how the database is put together, and how the different tables in the database relate to the user interface. This should make it easier to understand what the components are doing for you.
+
+## General principle
+
+As a general principle, the SuperOffice database is very lax. There are no declared constraints on tables. Referential integrity is not enforced strictly, and the structure would make a computer science professor or system administrator shudder.
+
+However, there is a reason for this lax design.
+
+People are not strict or formal. A CRM system is mainly about people, what they do, and when. It is not an accounting system. It is not subject to the rigors of accounts auditing. People delete things and then want them back. People change things around and merge in partial data from external sources.
+
+The SuperOffice database schema is intended to be flexible while being understandable and efficient.
+
+## SuperOffice view of the world
+
+SuperOffice has 5 important things:
+
+* **Companies** in code and database references referred to as *contact*.
+* **Associates** are SuperOffice users - employees of the company.
+* **Projects** are a type of activity that usually involves several stakeholders and various types of other activities.
+* **Activities** are things employees do with companies, contacts, projects, diary, and sales.
+  * appointments of various task types
+  * documents
+  * mailings and form submissions
+  * chat sessions
+* **Tickets** from Service are linked to persons who may or may not belong to a company.
+
+See [the main tables](#the-main-tables) below for more detail.
+
+### Business rules
+
+* Activities happen at a particular point in time.
+* Sales are expected to be closed on a date in the future.
+* Appointments are scheduled for a particular date and time.
+* Documents are written on a specific day.
+* Activities start on one day and finish on another.
+* Time is important for activities.
+* Companies and projects are not time-specific, but linked to activities in time.
+
+The appointment table contains foreign keys to all the other important tables, plus a date field (ActiveDate).
+
+### Context-sensitive labels
+
+| Real-world term | UI        | Database table |
+|-----------------|-----------|----------------|
+| company<br />organization | company | contact  |
+| person          | contact<br />associate |     |
+| customer        | contact   | person         |
+| employee        | associate | associate      |
+| user account    | user      | ejuser         |
+| database owner  | tenant    | Company        |
+
+## The main tables
+
+The main tables in the system are:
+
+| Table | Contains |
+|---|---|
+| [Contact][1] | The companies |
+| [Person][2] | The contact persons |
+| [Associate][3] | The users - these are linked to contact persons |
+| [Appointment][4] | Meetings, to-do activities |
+| [Document][5] | Document activities |
+| [Sale][6] | Sale activities |
+| [Project][7] | Projects |
+| [ProjectMember][8] | Persons who are part of a project |
+| [Selection][9] | Selections |
+| [SelectionMember][10] | Link table for Contact+Person who are selection members |
+| [Ticket][11] | Service tickets |
+
+<Note>
+The [Company][12] table is used to store the ID of the company that owns the license. It has nothing to do with the company display in the user interface.
+</Note>
+
+Unfortunately, not all table names and UI labels match. If in doubt, see [SuperOffice view of the world](#superoffice-view-of-the-world) above.
+
+## Overview of tables
+
+The database has quite a few tables in it. About 456 tables in total. Nothing like a Siebel or SAP system, but still enough to be confusing at first look.
+
+The main objects in the system are:
+
+* Activities (`Appointment` table) - including the date and time the activity happened
+* Companies (`Contact` table)
+* Projects
+* Users (`Associate` table)
+* Tickets
+
+In the database, these relationships are expressed using the following set of tables and fields.
+
+![Table structure showing how Appointment, Contact, Person, Project, and Associate relate to each other][img1]
+
+This gives us the following join conditions we can use:
+
+```SQL
+Appointment.contact_id = Contact.contact_id
+Appointment.person_id = Person.person_id
+Appointment.project_id = Project.project_id
+Appointment.associate_id = Associate.associate_id
+Person.contact_id = Contact.contact_id
+Associate.person_id = Person.person_id
+Ticket.cust_id = person.person_id
+```
+
+The `appointment` table contains foreign keys to all the other important tables, plus a date field (`ActiveDate`).
+
+Because the people working for your customers are often important too, we keep track of them as well. We break 3rd normal form (a database design principle) by storing both the `contact_id` and the `person_id` in the appointment to make the database more efficient.
+
+Also, in the future, we may break the Person-contact relation, allowing consumers to be registered: person records without a corresponding company.
+
+Whenever a user enters an appointment, it will have a non-zero `associate_id`, an `activeDate`, and one of the other two IDs set (contact, or project). The person ID can be zero even if the user has set a contact (selected a company, but no person).
+
+## Continue reading
+
+* [Naming conventions][13]
+* [Special tables][14]
+
+[1]: ../tables/contact
+[2]: ../tables/person
+[3]: ../tables/associate
+[4]: ../tables/appointment
+[5]: ../tables/document
+[6]: ../tables/sale
+[7]: ../tables/project
+[8]: ../tables/projectmember
+[9]: ../tables/selection
+[10]: ../tables/selectionmember
+[11]: ../tables/ticket
+[12]: ../tables/company
+[13]: ./naming-conventions
+[14]: ./special-tables
+
+[img1]: /media/loc/en/database/so-table-structure.gif
