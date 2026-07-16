@@ -2,16 +2,16 @@
 uid: markdown-metadata
 title: Metadata (Yaml front-matter)
 description: Introduction to the Yaml key-value front-matter metadata used at the top of SuperOfficeDocs markdown files.
-keywords: metadata, front matter, yaml, uid, topic
+keywords: metadata, front matter, yaml, uid
 author: digitaldiina
-date: 07.09.2026
+date: 07.16|.2026
 content_type: concept
 language: en
 ---
 
 # Metadata (Yaml front-matter)
 
-While you're editing SuperOfficeDocs, you'll see some lines at the very top of the document with things such as `uid`, `topic`, `locale`, and `title`. These items are referred to as **metadata** and use Yaml key-value front-matter syntax. They help the system properly create cross-referenced hyperlinks, related content links, and they help with language/edition filtering and sorting.
+While you're editing SuperOfficeDocs, you'll see some lines at the very top of the document with things such as `uid`, `title`, and `description`. These items are referred to as **metadata** and use Yaml key-value front-matter syntax. They help the system properly create cross-referenced hyperlinks, related content links, and they help with language filtering and sorting.
 
 <Note>
 The section begins and ends with 3 dashes.
@@ -25,23 +25,71 @@ The section begins and ends with 3 dashes.
 
 ## Example
 
+Content under `contribute/` (like this page) documents the contribution process itself, not a product feature, so it only uses this reduced property set:
+
 ```yml
 ---
-uid: join_video_meeting
-title: Join a video meeting
-description: There are several ways in which you can join a video meeting in SuperOffice. Learn how.
-author: Tony Yates
-date: 04.19.2021
-keywords: video
-topic: howto
-envir: cloud
-client: online
+uid: contribute-review-checklist
+title: Review checklist
+description: What reviewers check before merging a contribution to SuperOfficeDocs.
+keywords: review, checklist, pull request
+author: digitaldiina
+date: 07.09.2026
+content_type: concept
+language: en
 ---
 ```
 
+## Property reference
+
+Product content pages (everything outside `contribute/`) use a larger property set than the example above. Write properties in this order — omit any that don't apply, and never leave one empty:
+
+| # | Property | Required | Notes |
+|---|---|---|---|
+| 1 | `uid` | Always | Unique identifier, hyphenated lowercase |
+| 2 | `title` | Always | Same text as the H1 heading |
+| 3 | `description` | Always | Plain sentence, no quotes |
+| 4 | `keywords` | Always | Comma-separated search terms |
+| 5 | `author` | Always | GitHub alias — default `digitaldiina` |
+| 6 | `date` | Always | Last modified, format `MM.DD.YYYY` |
+| 7 | `version` | Handcrafted docs | Product version — see defaults below; omit in generated files |
+| 8 | `content_type` | Always | `concept`, `howto`, or `reference` — omit in generated files |
+| 9 | `functional_right` | If present | Required functional right |
+| 10 | `license` | If present | Required license |
+| 11 | `tier` | If present | `starter`, `core`, `growth`, `plus`, or `super` — never translated |
+| 12 | `category` | If present | Content category |
+| 13 | `topic` | If present | Specific topic |
+| 14 | `platform` | If present | Target platform |
+| 15 | `deployment` | If present | Deployment type |
+| 16 | `pilot` | If present | Pilot status |
+| 17 | `audience` | If present | Target audience |
+| 18 | `audience_tooltip` | If present | Audience tooltip |
+| 19 | `redirect_from` | If present | Old URL(s) that should redirect here |
+| 20 | `index` | If present | `true` if the page is outside a *learn* folder and should be indexed |
+| 21 | `language` | Always | Language code — always last |
+
+<Note>
+`contribute/` pages (like this one) only use `uid`/`title`/`description`/`keywords`/`author`/`date`/`content_type`/`language` — the rest describe product features and don't apply here.
+</Note>
+
+### Default version by section
+
+`version` is required in handcrafted docs, omitted in generated ones (the `reference/` and `table/` folders).
+
+| Section | Default version |
+|---|---|
+| User guide (learn) | `12.3` |
+| Developer portal | `2.15` |
+| Mobile CRM | `11.1.13` |
+| Integrations | Ask — uses its own versioning |
+
+If you're writing release-notes content, or don't know which version or date applies, ask the technical writer rather than guessing.
+
 ## What to do
 
-If you are editing a currently existing document, you won't likely have to update much in the front matter section. Though, if you are creating a new document, please fill in as much as possible.
+If you're creating a new document, fill in as much of the metadata as you can.
+
+If you're editing an existing document, update `date` to the day you made the change, and update `author` if you're not the original author (list multiple contributors comma-separated). If your edit changes which product version the content applies to, update `version` too — don't leave these stale.
 
 <Tip>
 To get a prompt for what metadata to add, we recommend [Blueprint templates for VS Code][1].
