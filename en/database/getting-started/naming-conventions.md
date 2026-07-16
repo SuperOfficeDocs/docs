@@ -1,10 +1,12 @@
 ---
-title: Naming conventions
 uid: naming_conventions
+title: Naming conventions
 description: SuperOffice database naming conventions
-author: SuperOffice Product and Engineering
 keywords: database
+author: SuperOffice Product and Engineering
+date: 07.16.2026
 content_type: reference
+language: en
 ---
 
 # Naming conventions

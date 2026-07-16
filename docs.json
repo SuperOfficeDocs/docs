@@ -2793,9 +2793,7 @@
                       {
                         "group": "Getting started",
                         "pages": [
-                          "en/database/getting-started/overview",
-                          "en/database/getting-started/so-view-of-the-world",
-                          "en/database/getting-started/main-tables",
+                          "en/database/getting-started/index",
                           "en/database/getting-started/special-tables",
                           "en/database/getting-started/naming-conventions",
                           "en/database/getting-started/table-id-sequence"
@@ -21513,6 +21511,18 @@
     {
       "source": "/en/database/transaction-log/query-log",
       "destination": "/en/database/transaction-log#inspecting-the-log"
+    },
+    {
+      "source": "/en/database/getting-started/so-view-of-the-world",
+      "destination": "/en/database/getting-started#superoffice-view-of-the-world"
+    },
+    {
+      "source": "/en/database/getting-started/main-tables",
+      "destination": "/en/database/getting-started#the-main-tables"
+    },
+    {
+      "source": "/en/database/getting-started/overview",
+      "destination": "/en/database/getting-started#overview-of-tables"
     }
   ]
 }
