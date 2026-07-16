@@ -2814,7 +2814,10 @@
                       },
                       {
                         "group": "Reference",
+                        "root": "en/database/tables/index",
+                        "directory": "accordion",
                         "pages": [
+                          "en/database/tables/index",
                           "en/database/tables/access-script",
                           "en/database/tables/activeuser",
                           "en/database/tables/address",
