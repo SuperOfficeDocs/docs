@@ -127,6 +127,6 @@ Response:
 }
 ```
 
-[dashboard-page]: /media/loc/en/api/dashboard-page.png
+[dashboard-page]: /media/loc/en/api/web-services/dashboard-page.png
 
 [0]: ../../../../database/tables/dashboard

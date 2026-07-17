@@ -48,4 +48,4 @@ The SuperOffice connector is built on top of the QuoteConnectorBase, but it is t
 
 ![42][img1]
 
-[img1]: /media/loc/en/api/image042.png
+[img1]: /media/loc/en/api/plugins/image042.png

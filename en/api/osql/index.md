@@ -97,4 +97,4 @@ In the [syntax][1] section, we will be comparing SuperOffice Objectified SQL wit
 [1]: ./and-clause
 [2]: ../overview/netserver
 
-[img1]: /media/loc/en/api/intro-osql2.png
+[img1]: /media/loc/en/api/osql/intro-osql2.png

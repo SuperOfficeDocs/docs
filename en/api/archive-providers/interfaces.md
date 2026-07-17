@@ -38,4 +38,4 @@ There are several points to make about this diagram (which, incidentally, is som
 
 [1]: ./data-classes
 
-[img1]: /media/loc/en/api/image001-8.jpg
+[img1]: /media/loc/en/api/web-services/image001-8.jpg

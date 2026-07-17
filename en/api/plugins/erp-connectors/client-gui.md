@@ -33,7 +33,7 @@ GUI operations are beyond the scope here, but for understanding's sake, we have 
 
 [1]: ./default-values
 
-[img1]: /media/loc/en/api/image011-1.png
-[img2]: /media/loc/en/api/image012.png
-[img3]: /media/loc/en/api/image013.png
-[img4]: /media/loc/en/api/image014.png
+[img1]: /media/loc/en/api/tutorials/image011-1.png
+[img2]: /media/loc/en/api/plugins/image012.png
+[img3]: /media/loc/en/api/plugins/image013.png
+[img4]: /media/loc/en/api/plugins/image014.png

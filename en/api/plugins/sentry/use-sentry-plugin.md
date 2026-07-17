@@ -110,6 +110,6 @@ So now we can see that our logic is working and we can add our own sentry mechan
 
 [1]: ./create-sentry-plugin
 
-[img1]: /media/loc/en/api/image001-8.jpg
-[img2]: /media/loc/en/api/image002-6.jpg
-[img3]: /media/loc/en/api/image003-4.jpg
+[img1]: /media/loc/en/api/web-services/image001-8.jpg
+[img2]: /media/loc/en/api/web-services/image002-6.jpg
+[img3]: /media/loc/en/api/web-services/image003-4.jpg

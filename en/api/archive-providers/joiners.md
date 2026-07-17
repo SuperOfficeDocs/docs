@@ -48,4 +48,4 @@ There are about 30 `ExtenderBase` classes, that each cover one particular table.
 [1]: ./extenders
 [2]: ./base-and-helper-classes
 
-[img1]: /media/loc/en/api/image004-2.gif
+[img1]: /media/loc/en/api/web-services/image004-2.gif

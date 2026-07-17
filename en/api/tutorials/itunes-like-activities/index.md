@@ -273,4 +273,4 @@ When we're done, it should look like this:
 
 [1]: ../so-ical-feed/index
 
-[img1]: /media/loc/en/api/image023-1.jpg
+[img1]: /media/loc/en/api/tutorials/image023-1.jpg

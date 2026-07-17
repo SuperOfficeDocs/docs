@@ -98,4 +98,4 @@ using(SoSession.Authenticate("SAL1" , ""))
 [2]: ../../database/tables/foreigndevice
 [3]: ../../database/tables/foreignkey
 
-[img1]: /media/loc/en/api/foreign-keys.gif
+[img1]: /media/loc/en/api/foreign-keys/foreign-keys.gif

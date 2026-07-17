@@ -41,6 +41,6 @@ So what is an application identifier? An application identifier is a unique ID t
 [1]: ../../../../online/mirroring/index.yml
 [2]: https://en.wikipedia.org/wiki/Public_key_infrastructure
 
-[img1]: /media/loc/en/api/authenticationsequencediagram.png
-[img2]: /media/loc/en/api/editsyncconnector-new.png
-[img3]: /media/loc/en/api/autherpsyncconnector-600px.png
+[img1]: /media/loc/en/api/plugins/authenticationsequencediagram.png
+[img2]: /media/loc/en/api/plugins/editsyncconnector-new.png
+[img3]: /media/loc/en/api/plugins/autherpsyncconnector-600px.png

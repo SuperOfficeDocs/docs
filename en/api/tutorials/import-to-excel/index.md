@@ -74,13 +74,13 @@ To obtain a Bearer access token, you'll need a registered application that can g
 [4]: https://www.base64encode.org/
 [5]: https://community.superoffice.com/register-as-developer
 
-[img1]: /media/loc/en/api/odata-1.png
-[img2]: /media/loc/en/api/odata-2.png
-[img3]: /media/loc/en/api/odata-3.png
-[img4]: /media/loc/en/api/odata-4.png
-[img5]: /media/loc/en/api/odata-5.png
-[img6]: /media/loc/en/api/odata-6.png
-[img7]: /media/loc/en/api/odata-7.png
-[img8]: /media/loc/en/api/odata-8.png
-[img9]: /media/loc/en/api/odata-9.png
-[img10]: /media/loc/en/api/odata-10.png
+[img1]: /media/loc/en/api/tutorials/odata-1.png
+[img2]: /media/loc/en/api/tutorials/odata-2.png
+[img3]: /media/loc/en/api/tutorials/odata-3.png
+[img4]: /media/loc/en/api/tutorials/odata-4.png
+[img5]: /media/loc/en/api/tutorials/odata-5.png
+[img6]: /media/loc/en/api/tutorials/odata-6.png
+[img7]: /media/loc/en/api/tutorials/odata-7.png
+[img8]: /media/loc/en/api/tutorials/odata-8.png
+[img9]: /media/loc/en/api/tutorials/odata-9.png
+[img10]: /media/loc/en/api/tutorials/odata-10.png

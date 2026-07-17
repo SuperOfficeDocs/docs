@@ -138,6 +138,6 @@ You can fetch [metadata - information about archives][13] to do "reflection" on 
 [15]: ../../archive-providers/reference/findsale
 [16]: ../../reference/restful/rest/Archive/index
 
-[img1]: /media/loc/en/api/get-sale.png
-[img2]: /media/loc/en/api/find-sale.png
-[img3]: /media/loc/en/api/find-sale-supported-columns.png
+[img1]: /media/loc/en/api/search/get-sale.png
+[img2]: /media/loc/en/api/search/find-sale.png
+[img3]: /media/loc/en/api/search/find-sale-supported-columns.png

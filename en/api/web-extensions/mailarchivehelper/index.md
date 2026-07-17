@@ -56,4 +56,4 @@ documentInfo.Direction = DocDirection.kIncoming;
 mah.ArchiveDocument(archiveInfo, documentInfo);
 ```
 
-[img1]: /media/loc/en/api/diagram.jpg
+[img1]: /media/loc/en/api/web-extensions/diagram.jpg

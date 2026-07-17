@@ -115,5 +115,5 @@ As these methods are more optimal, we recommend you chose to use these over the 
 [1]: ../../archive-providers/index
 [2]: ../../bulk-operations/mass-operations/index
 
-[img1]: /media/loc/en/api/mdolistitemdialog.png
-[img2]: /media/loc/en/api/mdolistitemdatabaserow.png
+[img1]: /media/loc/en/api/localization/mdolistitemdialog.png
+[img2]: /media/loc/en/api/localization/mdolistitemdatabaserow.png

@@ -114,4 +114,4 @@ public class MySaleTablelSystem : TableExtenderBase<TableInfo>
 
 [1]: ./index
 
-[img1]: /media/loc/en/api/extenderextender.png
+[img1]: /media/loc/en/api/archive-providers/extenderextender.png

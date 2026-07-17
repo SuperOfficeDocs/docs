@@ -94,4 +94,4 @@ There are several implementations of the INestedPersist interface:
 
 * NestedCollectionPersist: This is the default implementation for making a collection of INestedPersist implementations.
 
-[img1]: /media/loc/en/api/nestedpersist.png
+[img1]: /media/loc/en/api/entities/nestedpersist.png

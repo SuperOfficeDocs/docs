@@ -52,5 +52,5 @@ The host running this example must have the [public certificates installed][2] f
 [1]: ../../authentication/online/auth-application/index
 [2]: ../../authentication/online/certificates/configure
 
-[img1]: /media/loc/en/api/image001-1.png
-[img2]: /media/loc/en/api/image003-2.png
+[img1]: /media/loc/en/api/tutorials/image001-1.png
+[img2]: /media/loc/en/api/tutorials/image003-2.png

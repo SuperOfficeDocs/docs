@@ -58,4 +58,4 @@ Members of a specific selection can be retrieved in multiple ways:
 [2]: ./archive/get-selection-members-provider
 [3]: ./services/get-selection-members-services
 
-[img1]: /media/loc/en/api/selection-task-menu.png
+[img1]: /media/loc/en/api/search/selection-task-menu.png

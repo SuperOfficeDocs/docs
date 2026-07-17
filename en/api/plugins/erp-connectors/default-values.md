@@ -48,4 +48,4 @@ There are also different ways of generating the value that will be used for the 
 
 [1]: ./api/field-meta-data-carrier
 
-[img1]: /media/loc/en/api/create-in-erp.png
+[img1]: /media/loc/en/api/plugins/create-in-erp.png

@@ -42,4 +42,4 @@ The SuperOffice client will call the `WSSaveConnection` SOAP web-service end-poi
 
 The `request` parameter contains the `ConnectionGuid` property, which identifies this connection. The method must save the configuration values for the connection (passed via the `ConnectionInfo` dictionary) somewhere it can find it again later. Subsequent calls to the web service will not pass in the `ConnectionInfo` dictionary, just the `ConnectionGuid`.
 
-[img1]: /media/loc/en/api/slide2.png
+[img1]: /media/loc/en/api/plugins/slide2.png

@@ -128,11 +128,11 @@ var queryResult = GetData(string.Concat(webApiUrl, uri), "Bearer", result.Access
 [3]: ../../developer-portal/getting-started/index#terminology
 [4]: https://github.com/SuperOffice/SuperOffice.DevNet.OpenIDConnectNativeApp
 
-[img2]: /media/loc/en/api/imageybe5d.png
-[img3]: /media/loc/en/api/imageyxfai.png
-[img4]: /media/loc/en/api/imagec4a0q.png
-[img5]: /media/loc/en/api/imagey4igu.png
-[img6]: /media/loc/en/api/imagel1y3j.png
-[img7]: /media/loc/en/api/imageppiks.png
-[img8]: /media/loc/en/api/imagergmjd.png
-[img9]: /media/loc/en/api/image6agno.png
+[img2]: /media/loc/en/api/tutorials/imageybe5d.png
+[img3]: /media/loc/en/api/tutorials/imageyxfai.png
+[img4]: /media/loc/en/api/tutorials/imagec4a0q.png
+[img5]: /media/loc/en/api/tutorials/imagey4igu.png
+[img6]: /media/loc/en/api/tutorials/imagel1y3j.png
+[img7]: /media/loc/en/api/tutorials/imageppiks.png
+[img8]: /media/loc/en/api/tutorials/imagergmjd.png
+[img9]: /media/loc/en/api/tutorials/image6agno.png

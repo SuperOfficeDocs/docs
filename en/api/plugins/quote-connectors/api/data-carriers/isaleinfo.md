@@ -92,4 +92,4 @@ Total cost
 
 Total profit (Amount - Cost)
 
-[img1]: /media/loc/en/api/image025.png
+[img1]: /media/loc/en/api/plugins/image025.png

@@ -53,4 +53,4 @@ The date (inclusive) the pricelist ends to be valid. This can be DateTime.MaxVal
 
 Is the list active (as opposed to being worked on, suddenly canceled, etc.)
 
-[img1]: /media/loc/en/api/image039.png
+[img1]: /media/loc/en/api/plugins/image039.png

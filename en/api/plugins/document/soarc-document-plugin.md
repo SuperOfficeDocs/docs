@@ -106,10 +106,10 @@ I want to thank Jose Aparicio (Scarp) for kicking off the experimentation, and c
 * [SuperOffice.TestDocPlugin-v8.zip](../../../../downloads/api/superoffice.testdocplugin-v8.zip)
 * [SuperOffice.TestDocPlugin-v8SR3.zip (with CheckInCheckOutLocking)](../../../../downloads/api/superoffice.testdocplugin_withcheckincheckout.zip)
 
-[img1]: /media/loc/en/api/a-createkeyfile.png
-[img2]: /media/loc/en/api/b-createmanageddocinterface.png
-[img3]: /media/loc/en/api/c-addreference.gif
-[img4]: /media/loc/en/api/d-csharpclass.png
-[img5]: /media/loc/en/api/e-addtogac.png
-[img6]: /media/loc/en/api/f-createdocplugintlb.png
-[img7]: /media/loc/en/api/g-preferences.png
+[img1]: /media/loc/en/api/plugins/a-createkeyfile.png
+[img2]: /media/loc/en/api/plugins/b-createmanageddocinterface.png
+[img3]: /media/loc/en/api/plugins/c-addreference.gif
+[img4]: /media/loc/en/api/plugins/d-csharpclass.png
+[img5]: /media/loc/en/api/plugins/e-addtogac.png
+[img6]: /media/loc/en/api/plugins/f-createdocplugintlb.png
+[img7]: /media/loc/en/api/plugins/g-preferences.png

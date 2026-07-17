@@ -246,4 +246,4 @@ I had to update the dependent versions from 4.1.2.0 to 4.0.3.
 [4]: ../../developer-portal/getting-started/index#terminology
 [5]: ../authentication/online/api
 
-[img1]: /media/loc/en/api/exception.png
+[img1]: /media/loc/en/api/tutorials/exception.png

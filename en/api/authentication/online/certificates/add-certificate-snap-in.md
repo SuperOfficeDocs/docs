@@ -43,8 +43,8 @@ You can now proceed to [configure certificates][1].
 
 [1]: ./configure
 
-[img1]: /media/loc/en/api/rundialog.png
-[img2]: /media/loc/en/api/addremovesnapin.png
-[img3]: /media/loc/en/api/mmc-certs-snapin.png
-[img4]: /media/loc/en/api/selectlocalcomputer.png
-[img5]: /media/loc/en/api/addremoveadded.png
+[img1]: /media/loc/en/api/authentication/rundialog.png
+[img2]: /media/loc/en/api/authentication/addremovesnapin.png
+[img3]: /media/loc/en/api/authentication/mmc-certs-snapin.png
+[img4]: /media/loc/en/api/authentication/selectlocalcomputer.png
+[img5]: /media/loc/en/api/authentication/addremoveadded.png

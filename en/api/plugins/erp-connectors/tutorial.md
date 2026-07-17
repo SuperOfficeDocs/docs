@@ -215,10 +215,10 @@ We do not delete information from the ERP system, just because we have stopped s
 [1]: ./setup-connection
 [2]: ./import
 
-[img1]: /media/loc/en/api/connecting.png
-[img2]: /media/loc/en/api/connect-search.png
-[img3]: /media/loc/en/api/select-field-values.png
-[img4]: /media/loc/en/api/connect-create.png
-[img5]: /media/loc/en/api/connect-defaults.png
-[img6]: /media/loc/en/api/viewing.png
-[img7]: /media/loc/en/api/disconnect.png
+[img1]: /media/loc/en/api/plugins/connecting.png
+[img2]: /media/loc/en/api/plugins/connect-search.png
+[img3]: /media/loc/en/api/plugins/select-field-values.png
+[img4]: /media/loc/en/api/plugins/connect-create.png
+[img5]: /media/loc/en/api/plugins/connect-defaults.png
+[img6]: /media/loc/en/api/plugins/viewing.png
+[img7]: /media/loc/en/api/plugins/disconnect.png

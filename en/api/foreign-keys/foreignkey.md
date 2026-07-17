@@ -187,7 +187,7 @@ Do you have any different ideas? I'm interested in hearing them.
 
 [1]: http://en.wikipedia.org/wiki/Fluent_interface
 
-[img1]: /media/loc/en/api/foreignkey-1095.jpg
-[img2]: /media/loc/en/api/foreignkey-1096.jpg
-[img3]: /media/loc/en/api/foreignkey-1097.jpg
-[img4]: /media/loc/en/api/foreignkey-1098.jpg
+[img1]: /media/loc/en/api/foreign-keys/foreignkey-1095.jpg
+[img2]: /media/loc/en/api/foreign-keys/foreignkey-1096.jpg
+[img3]: /media/loc/en/api/foreign-keys/foreignkey-1097.jpg
+[img4]: /media/loc/en/api/foreign-keys/foreignkey-1098.jpg

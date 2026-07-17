@@ -32,4 +32,4 @@ Here we extend the SuperOffice quote connector, but we override the default impl
 
 Because the `QuoteConnectorExtender` class lives in the Plugins DLL, the `MyQuoteConnector` avoids taking direct dependency on the SoCore and SoDatabase DLLs, so it won't be affected when a version change updates the SoCore assembly.
 
-[img1]: /media/loc/en/api/image043.png
+[img1]: /media/loc/en/api/plugins/image043.png

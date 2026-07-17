@@ -119,6 +119,6 @@ This sequence represents a common scenario where a service exists that communica
 [1]: ./overview
 [2]: ../../authentication/online/auth-application/index
 
-[img1]: /media/loc/en/api/image005-1.png
-[img2]: /media/loc/en/api/image007-1.png
-[img3]: /media/loc/en/api/image009-2.png
+[img1]: /media/loc/en/api/tutorials/image005-1.png
+[img2]: /media/loc/en/api/tutorials/image007-1.png
+[img3]: /media/loc/en/api/tutorials/image009-2.png

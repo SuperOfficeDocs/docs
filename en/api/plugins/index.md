@@ -99,4 +99,4 @@ All that remains is to tell NetServer about our DLL using the config file:
 
 NetServer will load the assembly. The TooltipProviderFactory will scan it for compatible plugins, and pick it up. Whenever a tooltip request comes in with the key that our plugin has declared, it will be called and is then running in process, authenticated, with all of NetServer available.
 
-[img1]: /media/loc/en/api/image001-8.jpg
+[img1]: /media/loc/en/api/web-services/image001-8.jpg

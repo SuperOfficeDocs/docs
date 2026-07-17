@@ -66,4 +66,4 @@ In addition to the required operators, there are a couple of special values that
 [1]: ./search-operators
 [2]: ../api/field-value-formats-and-conventions
 
-[img1]: /media/loc/en/api/image002.png
+[img1]: /media/loc/en/api/plugins/image002.png

@@ -27,4 +27,4 @@ Although both the connector host and Erp Sync has exception handling, we ask tha
 
 Certain errors and situations require specific handling, such as if a connector cannot find the configuration data belonging to a given connection ID. In these cases, the connector will need to send back a specific error code so that Erp Sync can take steps to set things right. In the case of missing configuration data, Erp Sync can resend the latest copy of the data and then try to call the failed method once more.
 
-[img1]: /media/loc/en/api/image010-1.png
+[img1]: /media/loc/en/api/plugins/image010-1.png

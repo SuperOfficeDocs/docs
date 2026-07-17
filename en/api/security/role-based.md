@@ -66,5 +66,5 @@ SELECT * FROM dataright WHERE roleid = 4
 [2]: ../../database/tables/functionright
 [3]: ../../database/tables/role
 
-[img1]: /media/loc/en/api/admin-role.png
-[img3]: /media/loc/en/api/role-diagram.png
+[img1]: /media/loc/en/api/security/admin-role.png
+[img3]: /media/loc/en/api/security/role-diagram.png

@@ -82,5 +82,5 @@ Only a few of the existing providers have typed interfaces, and it is by no mean
 [1]: http://en.wikipedia.org/wiki/Template_method_pattern
 [2]: http://www.dofactory.com/Patterns/PatternTemplate.aspx
 
-[img1]: /media/loc/en/api/image005-3.jpg
-[img2]: /media/loc/en/api/image006-2.jpg
+[img1]: /media/loc/en/api/tutorials/image005-3.jpg
+[img2]: /media/loc/en/api/plugins/image006-2.jpg

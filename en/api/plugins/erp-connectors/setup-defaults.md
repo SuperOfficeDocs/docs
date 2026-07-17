@@ -34,4 +34,4 @@ The admin client wants to know the display value for the list item, so it asks t
 [1]: ./default-values
 [2]: ./api/erp-actor-carrier
 
-[img1]: /media/loc/en/api/image006-1.png
+[img1]: /media/loc/en/api/plugins/image006-1.png

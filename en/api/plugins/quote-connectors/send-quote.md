@@ -29,5 +29,5 @@ Called after a quote version is sent to the customer. Can return a URL or SO Pro
 
 ![20][img2]
 
-[img1]: /media/loc/en/api/send-quote.png
-[img2]: /media/loc/en/api/image020.jpg
+[img1]: /media/loc/en/api/plugins/send-quote.png
+[img2]: /media/loc/en/api/plugins/image020.jpg

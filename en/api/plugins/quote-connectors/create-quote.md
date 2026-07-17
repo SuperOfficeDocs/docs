@@ -55,8 +55,8 @@ Currently not used.
 
 [1]: http://www.currency-iso.org/dl_iso_table_a1.xls
 
-[img1]: /media/loc/en/api/create-quote.png
-[img2]: /media/loc/en/api/image008-2.jpg
-[img3]: /media/loc/en/api/image009-2.png
-[img4]: /media/loc/en/api/image010-1.png
-[img5]: /media/loc/en/api/image011-1.jpg
+[img1]: /media/loc/en/api/plugins/create-quote.png
+[img2]: /media/loc/en/api/plugins/image008-2.jpg
+[img3]: /media/loc/en/api/tutorials/image009-2.png
+[img4]: /media/loc/en/api/plugins/image010-1.png
+[img5]: /media/loc/en/api/tutorials/image011-1.jpg

@@ -389,4 +389,4 @@ The final step before running the site is to add the following references:
 
 <a href="../../../assets/downloads/api/graphicreportusingexcel.zip" download>Click to download source code (zip)</a>
 
-[img1]: /media/loc/en/api/image022-1.jpg
+[img1]: /media/loc/en/api/tutorials/image022-1.jpg

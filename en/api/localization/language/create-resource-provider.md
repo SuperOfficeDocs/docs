@@ -94,4 +94,4 @@ The idea behind `CanInitialize` is that some providers may need database access,
 
 [1]: ./resource-providers
 
-[img1]: /media/loc/en/api/netserver-resource-provider.png
+[img1]: /media/loc/en/api/localization/netserver-resource-provider.png

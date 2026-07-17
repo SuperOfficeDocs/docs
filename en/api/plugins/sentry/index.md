@@ -37,4 +37,4 @@ The diagram shows what happens when your client code causes a database access.
 [2]: ./create-sentry-plugin
 [3]: ./tutorial-sentry-plugin-with-ext-table
 
-[img1]: /media/loc/en/api/sentry-plugin.png
+[img1]: /media/loc/en/api/plugins/sentry-plugin.png

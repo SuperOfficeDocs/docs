@@ -67,4 +67,4 @@ This enum describes access restrictions and mandatory status.
 | Mandatory | This field is mandatory (see section "Default value setup") |
 | ReadOnly | This field is read-only |
 
-[img1]: /media/loc/en/api/image003-2.png
+[img1]: /media/loc/en/api/tutorials/image003-2.png

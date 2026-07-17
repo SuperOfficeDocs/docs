@@ -21,4 +21,4 @@ After the sale and quote have been written to the database, the `OnAfterSaveQuot
 
 [1]: ./send-quote
 
-[img1]: /media/loc/en/api/image018.jpg
+[img1]: /media/loc/en/api/plugins/image018.jpg

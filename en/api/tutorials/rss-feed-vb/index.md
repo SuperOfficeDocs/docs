@@ -262,7 +262,7 @@ By clicking on the link in the feed contents, the appropriate dialog in SuperOff
 
 [1]: http://www.w3.org/TR/REC-xml
 
-[img1]: /media/loc/en/api/image035.jpg
-[img2]: /media/loc/en/api/image032.jpg
-[img3]: /media/loc/en/api/image033.jpg
-[img4]: /media/loc/en/api/image034.jpg
+[img1]: /media/loc/en/api/tutorials/image035.jpg
+[img2]: /media/loc/en/api/tutorials/image032.jpg
+[img3]: /media/loc/en/api/tutorials/image033.jpg
+[img4]: /media/loc/en/api/tutorials/image034.jpg

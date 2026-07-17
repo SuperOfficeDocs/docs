@@ -69,4 +69,4 @@ See also: [intro to cache][1]
 
 [1]: ../../../caching/index
 
-[img1]: /media/loc/en/api/start-week-sunday.png
+[img1]: /media/loc/en/api/entities/start-week-sunday.png

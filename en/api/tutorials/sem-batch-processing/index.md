@@ -306,9 +306,9 @@ The OnSampleEvent method iterates over the returned status of results of each ba
 
 This article has covered the full breadth of SuperOffice Background Computing. You have been introduced to the Server Event Manager, and explained how intricate of a role it plays in the execution of batch tasks. You have been given insight into how a client action begins the series of steps required to successfully create a batch task, monitor the task's progress, as well as invoke a callback on the client when the batch task has been completed. Finally, you have seen code that can be used to successfully execute a custom batch task through the web application.
 
-[img1]: /media/loc/en/api/servereventmanager4-initial.png
-[img2]: /media/loc/en/api/servereventmanagerillustrated-sm.png
-[img3]: /media/loc/en/api/batchservereventplugin2sm.png
-[img4]: /media/loc/en/api/batchprocessing1.png
-[img5]: /media/loc/en/api/batchprocessing2.png
-[img6]: /media/loc/en/api/tables-500.png
+[img1]: /media/loc/en/api/tutorials/servereventmanager4-initial.png
+[img2]: /media/loc/en/api/tutorials/servereventmanagerillustrated-sm.png
+[img3]: /media/loc/en/api/tutorials/batchservereventplugin2sm.png
+[img4]: /media/loc/en/api/tutorials/batchprocessing1.png
+[img5]: /media/loc/en/api/tutorials/batchprocessing2.png
+[img6]: /media/loc/en/api/tutorials/tables-500.png

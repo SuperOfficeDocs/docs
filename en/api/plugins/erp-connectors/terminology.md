@@ -35,4 +35,4 @@ A **connection** is a connector + config information
 * Authentication
 * Other config info that might be needed to connect
 
-[img1]: /media/loc/en/api/components.png
+[img1]: /media/loc/en/api/plugins/components.png

@@ -103,4 +103,4 @@ Next, the `Save` method of the `Contact` entity is used to update the contact en
 
 <a href="../../../../../assets/downloads/api/setudefinedlistitemonudeffield.zip" download>Click to download source code (zip)</a>
 
-[img1]: /media/loc/en/api/image001-8.jpg
+[img1]: /media/loc/en/api/web-services/image001-8.jpg

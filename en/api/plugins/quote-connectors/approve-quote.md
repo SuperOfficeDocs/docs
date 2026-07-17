@@ -37,6 +37,6 @@ The approver is notified in Mobile, and clicks **Approved** or **Reject**.
 
 [1]: ./send-quote
 
-[img1]: /media/loc/en/api/needs-approval.png
-[img2]: /media/loc/en/api/request-approval.png
-[img3]: /media/loc/en/api/request-approved.png
+[img1]: /media/loc/en/api/plugins/needs-approval.png
+[img2]: /media/loc/en/api/plugins/request-approval.png
+[img3]: /media/loc/en/api/plugins/request-approved.png

@@ -196,4 +196,4 @@ For some of the above currency codes, web service does not support,  mainly due 
 
 [1]: http://www.webservicex.net/CurrencyConvertor.asmx
 
-[img1]: /media/loc/en/api/image021-1.jpg
+[img1]: /media/loc/en/api/tutorials/image021-1.jpg

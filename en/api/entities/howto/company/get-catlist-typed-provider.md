@@ -73,4 +73,4 @@ The `RootItems` are defined by the records in the `category` table only if the M
 [4]: ../../../../database/tables/category
 [5]: ../../../../database/tables/heading
 
-[img1]: /media/loc/en/api/image002-6.jpg
+[img1]: /media/loc/en/api/web-services/image002-6.jpg

@@ -143,4 +143,4 @@ For example, in the `Sale` Entity, the `Associate` property would refer to the `
 [10]: ./delete-row-from-entity
 [11]: ../overview/netserver
 
-[img5]: /media/loc/en/api/personrowsobject.gif
+[img5]: /media/loc/en/api/rows/personrowsobject.gif

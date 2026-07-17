@@ -49,6 +49,6 @@ And in the client:
 
 [1]: ../../../../database/tables/prefdesc
 
-[img1]: /media/loc/en/api/prefdesc.jpg
-[img2]: /media/loc/en/api/prefadmin.jpg
-[img3]: /media/loc/en/api/prefclient.jpg
+[img1]: /media/loc/en/api/sql/prefdesc.jpg
+[img2]: /media/loc/en/api/sql/prefadmin.jpg
+[img3]: /media/loc/en/api/sql/prefclient.jpg

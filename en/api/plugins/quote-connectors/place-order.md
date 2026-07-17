@@ -45,6 +45,6 @@ This new version will be displayed in the GUI.
 If nothing has changed it should return null.
 Requires that the Order-Status capability is true.
 
-[img1]: /media/loc/en/api/image021-1.jpg
-[img2]: /media/loc/en/api/image022-1.jpg
-[img3]: /media/loc/en/api/image023-1.jpg
+[img1]: /media/loc/en/api/tutorials/image021-1.jpg
+[img2]: /media/loc/en/api/tutorials/image022-1.jpg
+[img3]: /media/loc/en/api/tutorials/image023-1.jpg

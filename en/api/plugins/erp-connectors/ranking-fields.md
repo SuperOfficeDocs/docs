@@ -16,5 +16,5 @@ Ranking fields. This will affect the order fields are displayed in search result
 Example of a company card where three different fields are marked with "Show In ERP Tab"
 The order the fields are shown in is defined in the **Ranking** dialog in Admin.
 
-[img1]: /media/loc/en/api/image008-2.jpg
-[img2]: /media/loc/en/api/image009-2.png
+[img1]: /media/loc/en/api/plugins/image008-2.jpg
+[img2]: /media/loc/en/api/tutorials/image009-2.png

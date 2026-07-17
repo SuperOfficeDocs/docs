@@ -113,6 +113,6 @@ If a quote list is NULL, then the GUI will fall back to a text input field, wher
 
 The Quote configuration API may also refer to custom list names which will be filled in by asking here. You will be asked for more lists than just the ones mentioned here if you have added custom lists to the configuration dialog.
 
-[img1]: /media/loc/en/api/image012-2.jpg
-[img2]: /media/loc/en/api/image013.jpg
-[img3]: /media/loc/en/api/image014.jpg
+[img1]: /media/loc/en/api/tutorials/image012-2.jpg
+[img2]: /media/loc/en/api/plugins/image013.jpg
+[img3]: /media/loc/en/api/plugins/image014.jpg

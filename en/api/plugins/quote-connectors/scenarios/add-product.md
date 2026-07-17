@@ -74,5 +74,5 @@ redirect_from:
 
 The system calls the ERP Connector: `IQuoteConnector.RecalculateAlternative()` to update all the quote alternative total.
 
-[img1]: /media/loc/en/api/image040.jpg
-[img2]: /media/loc/en/api/image041.jpg
+[img1]: /media/loc/en/api/plugins/image040.jpg
+[img2]: /media/loc/en/api/plugins/image041.jpg

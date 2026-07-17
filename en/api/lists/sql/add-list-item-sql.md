@@ -75,5 +75,5 @@ INSERT INTO CRM."categoryheadinglink" ("categoryheadinglink_id", "category_id", 
 INSERT INTO CRM."traveltransactionlog" ("traveltransactionlog_id", "ttime", "prev_record_id", "type", "associate_id", "tablenumber", "record_id") VALUES (110593, 1164911169, 0, 4352, 11, 66, 11)
 ```
 
-[img1]: /media/loc/en/api/edit-category.png
-[img2]: /media/loc/en/api/edit-list-item.png
+[img1]: /media/loc/en/api/lists/edit-category.png
+[img2]: /media/loc/en/api/lists/edit-list-item.png
