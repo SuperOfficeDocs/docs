@@ -2778,6 +2778,362 @@
                 ]
               },
               {
+                "item": "Automation",
+                "icon": "gears",
+                "groups": [
+                  {
+                    "group": "Automation",
+                    "pages": [
+                      "en/automation/overview",
+                      {
+                        "group": "Chatbot",
+                        "pages": [
+                          "en/automation/chatbot/registration",
+                          "en/automation/chatbot/sessions",
+                          "en/automation/chatbot/messages",
+                          "en/automation/chatbot/reference"
+                        ]
+                      },
+                      {
+                        "group": "CRMScript",
+                        "pages": [
+                          {
+                            "group": "Introduction",
+                            "pages": [
+                              "en/automation/crmscript/overview/index",
+                              "en/automation/crmscript/overview/crmscript-usage",
+                              "en/automation/crmscript/overview/envir-and-tools",
+                              "en/automation/crmscript/overview/getting-started"
+                            ]
+                          },
+                          {
+                            "group": "Fundamentals",
+                            "pages": [
+                              "en/automation/crmscript/fundamentals/index",
+                              "en/automation/crmscript/fundamentals/syntax",
+                              "en/automation/crmscript/fundamentals/reserved",
+                              "en/automation/crmscript/fundamentals/variables",
+                              "en/automation/crmscript/fundamentals/operators",
+                              "en/automation/crmscript/fundamentals/datatypes-intro",
+                              "en/automation/crmscript/fundamentals/functions",
+                              "en/automation/crmscript/fundamentals/structs",
+                              "en/automation/crmscript/fundamentals/arrays",
+                              {
+                                "group": "Control",
+                                "pages": [
+                                  "en/automation/crmscript/fundamentals/conditions",
+                                  "en/automation/crmscript/fundamentals/try-catch"
+                                ]
+                              },
+                              {
+                                "group": "Loops",
+                                "pages": [
+                                  "en/automation/crmscript/fundamentals/for-loops",
+                                  "en/automation/crmscript/fundamentals/foreach-loops",
+                                  "en/automation/crmscript/fundamentals/while-loops",
+                                  "en/automation/crmscript/fundamentals/loop-control"
+                                ]
+                              },
+                              "en/automation/crmscript/fundamentals/output"
+                            ]
+                          },
+                          {
+                            "group": "Code quality",
+                            "pages": [
+                              "en/automation/crmscript/code-quality/index",
+                              "en/automation/crmscript/code-quality/coding-conventions",
+                              "en/automation/crmscript/code-quality/best-practices",
+                              "en/automation/crmscript/code-quality/intellisense"
+                            ]
+                          },
+                          "en/automation/crmscript/security/index",
+                          {
+                            "group": "Data types",
+                            "pages": [
+                              "en/automation/crmscript/datatypes/index",
+                              "en/automation/crmscript/datatypes/bool-type",
+                              "en/automation/crmscript/datatypes/integer-type",
+                              "en/automation/crmscript/datatypes/float-type",
+                              "en/automation/crmscript/datatypes/map-type",
+                              "en/automation/crmscript/datatypes/string-type",
+                              "en/automation/crmscript/datatypes/date-type",
+                              "en/automation/crmscript/datatypes/time-type",
+                              "en/automation/crmscript/datatypes/datetime-type",
+                              "en/automation/crmscript/datatypes/generic-type",
+                              "en/automation/crmscript/datatypes/eventdata-type"
+                            ]
+                          },
+                          {
+                            "group": "Debugging",
+                            "pages": [
+                              "en/automation/crmscript/debugging/built-in-debugger",
+                              "en/automation/crmscript/debugging/log-messages",
+                              "en/automation/crmscript/debugging/print-debug",
+                              "en/automation/crmscript/debugging/development-mode",
+                              "en/automation/crmscript/debugging/using-trace",
+                              "en/automation/crmscript/debugging/helper-functions-for-logging",
+                              "en/automation/crmscript/debugging/troubleshooting"
+                            ]
+                          },
+                          {
+                            "group": "Working with ...",
+                            "pages": [
+                              {
+                                "group": "NetServer",
+                                "pages": [
+                                  "en/automation/crmscript/netserver/ns-agents-and-carriers",
+                                  "en/automation/crmscript/netserver/ns-classes",
+                                  "en/automation/crmscript/netserver/crmscript-archiveagent"
+                                ]
+                              },
+                              "en/automation/crmscript/parser",
+                              {
+                                "group": "SearchEngine",
+                                "pages": [
+                                  "en/automation/crmscript/searchengine/index",
+                                  "en/automation/crmscript/searchengine/db-basics",
+                                  "en/automation/crmscript/searchengine/dot-syntax",
+                                  "en/automation/crmscript/searchengine/se-select",
+                                  "en/automation/crmscript/searchengine/se-run",
+                                  "en/automation/crmscript/searchengine/se-results",
+                                  "en/automation/crmscript/searchengine/se-insert-update-delete",
+                                  "en/automation/crmscript/searchengine/using-the-searchengine-class-blog-post"
+                                ]
+                              },
+                              {
+                                "group": "Addresses",
+                                "pages": [
+                                  "en/automation/crmscript/howto/address/get-address",
+                                  "en/automation/crmscript/howto/address/set-address"
+                                ]
+                              },
+                              {
+                                "group": "Company",
+                                "pages": [
+                                  "en/automation/crmscript/howto/company/create-company",
+                                  "en/automation/crmscript/howto/company/get-company",
+                                  "en/automation/crmscript/howto/company/get-activities"
+                                ]
+                              },
+                              {
+                                "group": "Contact (customer, person, user)",
+                                "pages": [
+                                  "en/automation/crmscript/howto/contact/create-customer",
+                                  "en/automation/crmscript/howto/contact/get-customer",
+                                  "en/automation/crmscript/howto/contact/find-customer",
+                                  "en/automation/crmscript/howto/contact/get-interests",
+                                  "en/automation/crmscript/howto/contact/create-user",
+                                  "en/automation/crmscript/howto/contact/get-user"
+                                ]
+                              },
+                              {
+                                "group": "Custom objects",
+                                "pages": [
+                                  "en/automation/crmscript/howto/custom-objects/udef",
+                                  "en/automation/crmscript/howto/custom-objects/extra-field",
+                                  "en/automation/crmscript/howto/custom-objects/sort-extra-field-values",
+                                  "en/automation/crmscript/howto/custom-objects/extra-table"
+                                ]
+                              },
+                              {
+                                "group": "Diary and follow-ups",
+                                "pages": [
+                                  "en/automation/crmscript/howto/diary/get-appointment",
+                                  "en/automation/crmscript/howto/diary/create-appointment",
+                                  "en/automation/crmscript/howto/diary/update-appointment",
+                                  "en/automation/crmscript/howto/diary/register-incoming-call",
+                                  "en/automation/crmscript/howto/diary/plan-outgoing-call",
+                                  "en/automation/crmscript/howto/diary/task",
+                                  "en/automation/crmscript/howto/diary/get-recurrence-info",
+                                  "en/automation/crmscript/howto/diary/get-appointments-in-series",
+                                  "en/automation/crmscript/howto/diary/create-recurring-appointment",
+                                  "en/automation/crmscript/howto/diary/update-recurrence",
+                                  "en/automation/crmscript/howto/diary/stop-recurrence",
+                                  "en/automation/crmscript/howto/diary/create-invitation",
+                                  "en/automation/crmscript/howto/diary/book-resource",
+                                  "en/automation/crmscript/howto/diary/track-responses",
+                                  "en/automation/crmscript/howto/diary/accept-invitation"
+                                ]
+                              },
+                              {
+                                "group": "Documents",
+                                "pages": [
+                                  "en/automation/crmscript/howto/document/properties",
+                                  "en/automation/crmscript/howto/document/file",
+                                  "en/automation/crmscript/howto/document/templates"
+                                ]
+                              },
+                              {
+                                "group": "Interests",
+                                "pages": [
+                                  "en/automation/crmscript/howto/interests/index",
+                                  "en/automation/crmscript/howto/interests/company-interests",
+                                  "en/automation/crmscript/howto/interests/contact-interests"
+                                ]
+                              },
+                              {
+                                "group": "Marketing",
+                                "pages": [
+                                  "en/automation/crmscript/howto/marketing/forms"
+                                ]
+                              },
+                              {
+                                "group": "Projects",
+                                "pages": [
+                                  "en/automation/crmscript/howto/project/create",
+                                  "en/automation/crmscript/howto/project/get",
+                                  "en/automation/crmscript/howto/project/update",
+                                  "en/automation/crmscript/howto/project/members",
+                                  "en/automation/crmscript/howto/project/guides",
+                                  "en/automation/crmscript/howto/project/samples"
+                                ]
+                              },
+                              {
+                                "group": "Quote",
+                                "pages": [
+                                  "en/automation/crmscript/howto/quote/create",
+                                  "en/automation/crmscript/howto/quote/add-alternative",
+                                  "en/automation/crmscript/howto/quote/add-quote-line",
+                                  "en/automation/crmscript/howto/quote/get",
+                                  "en/automation/crmscript/howto/quote/update",
+                                  "en/automation/crmscript/howto/quote/products",
+                                  "en/automation/crmscript/howto/quote/price-list",
+                                  "en/automation/crmscript/howto/quote/quote-document",
+                                  "en/automation/crmscript/howto/quote/place-order",
+                                  "en/automation/crmscript/howto/quote/samples"
+                                ]
+                              },
+                              {
+                                "group": "Request",
+                                "pages": [
+                                  "en/automation/crmscript/howto/request/create",
+                                  "en/automation/crmscript/howto/request/add-message",
+                                  "en/automation/crmscript/howto/request/get-ticket-info",
+                                  "en/automation/crmscript/howto/request/get-message-info",
+                                  "en/automation/crmscript/howto/request/accept",
+                                  "en/automation/crmscript/howto/request/reply",
+                                  "en/automation/crmscript/howto/request/delegate",
+                                  "en/automation/crmscript/howto/request/escalate",
+                                  "en/automation/crmscript/howto/request/split-merge",
+                                  "en/automation/crmscript/howto/request/request-logs",
+                                  "en/automation/crmscript/howto/request/samples",
+                                  "en/automation/crmscript/howto/request/reply-templates"
+                                ]
+                              },
+                              {
+                                "group": "Sale",
+                                "pages": [
+                                  "en/automation/crmscript/howto/sale/create",
+                                  "en/automation/crmscript/howto/sale/get",
+                                  "en/automation/crmscript/howto/sale/update",
+                                  "en/automation/crmscript/howto/sale/stakeholders",
+                                  "en/automation/crmscript/howto/sale/guides",
+                                  "en/automation/crmscript/howto/sale/currency",
+                                  "en/automation/crmscript/howto/sale/lost-or-sold",
+                                  "en/automation/crmscript/howto/sale/samples"
+                                ]
+                              },
+                              "en/automation/crmscript/howto/inline-crmscript"
+                            ]
+                          },
+                          {
+                            "group": "Tutorials",
+                            "pages": [
+                              "en/automation/crmscript/tutorials/creating-lots-of-random-requests",
+                              "en/automation/crmscript/tutorials/script-based-selections",
+                              "en/automation/crmscript/tutorials/udef-agent",
+                              "en/automation/crmscript/tutorials/build-custom-rest-api-methods",
+                              "en/automation/crmscript/tutorials/using-crmscript-statlib-for-reporting",
+                              "en/automation/crmscript/tutorials/waiting-for-customer-status-with-reminders",
+                              "en/automation/crmscript/tutorials/using-dialogs-in-triggers",
+                              "en/automation/crmscript/tutorials/crmscript-trigger-outbox",
+                              "en/automation/crmscript/tutorials/closing-request-tabs-in-triggers",
+                              "en/automation/crmscript/tutorials/open-external-company-from-task-menu"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Event model",
+                        "pages": [
+                          "en/automation/event-model/email-filter",
+                          "en/automation/event-model/mailbox-after-save",
+                          "en/automation/event-model/mailbox-before-save",
+                          "en/automation/event-model/saving-a-request"
+                        ]
+                      },
+                      {
+                        "group": "NetServer Script Engine",
+                        "pages": [
+                          "en/automation/netserver-scripting/configure",
+                          "en/automation/netserver-scripting/basic-scripting",
+                          "en/automation/netserver-scripting/run-scripts"
+                        ]
+                      },
+                      {
+                        "group": "Trigger",
+                        "pages": [
+                          "en/automation/trigger/create-trigger-macro",
+                          "en/automation/trigger/create-trigger-script",
+                          "en/automation/trigger/set-validation-rules",
+                          "en/automation/trigger/update-value",
+                          "en/automation/trigger/reference/index"
+                        ]
+                      },
+                      {
+                        "group": "Webhook",
+                        "pages": [
+                          "en/automation/webhook/index",
+                          {
+                            "group": "For administrators",
+                            "pages": [
+                              "en/automation/webhook/admin/index",
+                              "en/automation/webhook/admin/create"
+                            ]
+                          },
+                          {
+                            "group": "For developers",
+                            "pages": [
+                              "en/automation/webhook/dev/event-details",
+                              "en/automation/webhook/dev/subscription",
+                              "en/automation/webhook/dev/notification",
+                              "en/automation/webhook/dev/security",
+                              "en/automation/webhook/dev/crmscript-handlers",
+                              "en/automation/webhook/dev/register",
+                              "en/automation/webhook/dev/troubleshooting",
+                              "en/automation/webhook/dev/tutorials/add-msg-to-ticket/index"
+                            ]
+                          },
+                          {
+                            "group": "Event reference",
+                            "pages": [
+                              "en/automation/webhook/reference/activity-events",
+                              "en/automation/webhook/reference/associate-events",
+                              "en/automation/webhook/reference/chat-events",
+                              "en/automation/webhook/reference/contact-events",
+                              "en/automation/webhook/reference/document-events",
+                              "en/automation/webhook/reference/extratable-events",
+                              "en/automation/webhook/reference/list-events",
+                              "en/automation/webhook/reference/person-events",
+                              "en/automation/webhook/reference/project-events",
+                              "en/automation/webhook/reference/project-member-events",
+                              "en/automation/webhook/reference/quote-events",
+                              "en/automation/webhook/reference/relation-events",
+                              "en/automation/webhook/reference/sale-events",
+                              "en/automation/webhook/reference/sale-stakeholder-events",
+                              "en/automation/webhook/reference/state-events",
+                              "en/automation/webhook/reference/test-event",
+                              "en/automation/webhook/reference/ticket-events"
+                            ]
+                          }
+                        ]
+                      },
+                      "en/automation/windows/win-script-event-system"
+                    ]
+                  }
+                ]
+              },
+              {
                 "item": "API",
                 "icon": "brackets-curly",
                 "groups": []
