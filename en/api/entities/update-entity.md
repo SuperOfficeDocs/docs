@@ -7,6 +7,7 @@ date: 11.05.2016
 keywords:
 content_type: howto
 redirect_from: /en/api/netserver/entities/update-entity
+hidden: true
 ---
 
 # Update a basic property of an Entity

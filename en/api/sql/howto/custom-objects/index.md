@@ -11,6 +11,7 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/sql/index
   - /en/api/netserver/sql/howto/custom-objects/index
+hidden: true
 ---
 
 # Udef - raw SQL

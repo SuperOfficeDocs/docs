@@ -8,6 +8,7 @@ keywords:
 content_type: howto
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/document/soarc-document-plugin
+hidden: true
 ---
 
 # How to create a managed document plugin

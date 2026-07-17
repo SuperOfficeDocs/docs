@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/entity/appointment-matrix
   - /en/api/netserver/entities/howto/diary/appointment-matrix
+hidden: true
 ---
 
 # AppointmentMatrix

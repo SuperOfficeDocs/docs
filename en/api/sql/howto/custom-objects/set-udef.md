@@ -11,6 +11,7 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/sql/set-udef
   - /en/api/netserver/sql/howto/custom-objects/set-udef
+hidden: true
 ---
 
 # Set a user-defined field

@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/row/get-persons-from-contact-rows
   - /en/api/netserver/rows/howto/contact/get-persons-from-contact-rows
+hidden: true
 ---
 
 # Retrieve a list of people using rows

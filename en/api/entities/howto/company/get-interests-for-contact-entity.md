@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/entity/get-interests-for-contact-entity
   - /en/api/netserver/entities/howto/company/get-interests-for-contact-entity
+hidden: true
 ---
 
 # How to list all selected interests for a contact

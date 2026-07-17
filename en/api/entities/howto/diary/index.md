@@ -9,6 +9,7 @@ content_type: reference
 redirect_from:
   - /en/diary/howto/entity/index
   - /en/api/netserver/entities/howto/diary/index
+hidden: true
 ---
 
 # Diary - entity

@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/entity/get-catlist-generic-provider
   - /en/api/netserver/entities/howto/company/get-catlist-generic-provider
+hidden: true
 ---
 
 # Get a CategoryList through generic list providers

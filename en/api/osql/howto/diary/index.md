@@ -9,6 +9,7 @@ content_type: reference
 redirect_from:
   - /en/diary/howto/osql/index
   - /en/api/netserver/osql/howto/diary/index
+hidden: true
 ---
 
 # Diary - OSQL

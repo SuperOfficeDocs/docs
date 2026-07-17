@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/project/howto/sql/create
   - /en/api/netserver/sql/howto/project/create
+hidden: true
 ---
 
 # Adding a project

@@ -10,6 +10,7 @@ content_type: howto
 redirect_from:
   - /en/sale/saint/howto/row/index
   - /en/api/netserver/rows/howto/saint/index
+hidden: true
 ---
 
 # SAINT - row

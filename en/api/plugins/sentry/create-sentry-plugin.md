@@ -8,6 +8,7 @@ keywords:
 content_type: howto
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/sentry/create-sentry-plugin
+hidden: true
 ---
 
 # Create your own Sentry plugin

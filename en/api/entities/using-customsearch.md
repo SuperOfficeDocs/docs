@@ -6,6 +6,7 @@ author: SuperOffice Product and Engineering
 keywords:
 content_type: howto
 redirect_from: /en/api/netserver/entities/using-customsearch
+hidden: true
 ---
 
 # CustomSearch

@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/row/create-apt-rows
   - /en/api/netserver/rows/howto/diary/create-apt-rows
+hidden: true
 ---
 
 # Create an appointment through row collection (Rows)

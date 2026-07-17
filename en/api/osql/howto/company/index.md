@@ -11,6 +11,7 @@ redirect_from:
   - /en/api/netserver/osql/howto/index
   - /en/api/netserver/osql/howto/company/index
   - /en/api/osql/howto/index
+hidden: true
 ---
 
 # Contact - OSQL

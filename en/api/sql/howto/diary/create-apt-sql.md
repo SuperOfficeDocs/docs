@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/sql/create-apt-sql
   - /en/api/netserver/sql/howto/diary/create-apt-sql
+hidden: true
 ---
 
 # Create appointment

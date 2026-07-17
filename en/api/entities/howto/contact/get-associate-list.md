@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/entity/get-associate-list
   - /en/api/netserver/entities/howto/contact/get-associate-list
+hidden: true
 ---
 
 # Get the associate list

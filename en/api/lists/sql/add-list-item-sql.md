@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/api/lists/sql/index
   - /en/api/netserver/lists/sql/add-list-item-sql
+hidden: true
 ---
 
 # Adding a list item

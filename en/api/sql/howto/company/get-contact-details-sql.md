@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/sql/get-contact-details-sql
   - /en/api/netserver/sql/howto/company/get-contact-details-sql
+hidden: true
 ---
 
 # Get contact details

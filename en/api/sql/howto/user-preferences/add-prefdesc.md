@@ -13,6 +13,7 @@ topic: user preferences
 index: true
 language: en
 redirect_from: /en/admin/user-preferences/add-prefdesc
+hidden: true
 ---
 
 # Add user preference

@@ -7,6 +7,7 @@ date: 11.05.2016
 keywords:
 content_type: concept
 redirect_from: /en/api/netserver/osql/in-enum
+hidden: true
 ---
 
 # Enum values with IN

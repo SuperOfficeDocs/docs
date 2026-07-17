@@ -11,6 +11,7 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/set-udef-listitem-value
   - /en/api/netserver/entities/howto/custom-objects/set-udef-listitem-value
+hidden: true
 ---
 
 # How to set a user-defined list item on a Udef field

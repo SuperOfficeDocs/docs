@@ -8,6 +8,7 @@ keywords:
 content_type: concept
 area: api-core
 redirect_from: /en/api/netserver/lists/entity/index
+hidden: true
 ---
 
 # SoListProviders

@@ -38,6 +38,7 @@ def find_page_strings(node, out):
 
 
 def resolves(repo_root, page_path):
+    page_path = page_path.split("#")[0]  # strip anchor fragment, e.g. wcf-host#multi-hosting
     p = os.path.join(repo_root, page_path)
     candidates = [p, p + ".md", p + ".mdx",
                   os.path.join(p, "index.md"), os.path.join(p, "index.mdx")]

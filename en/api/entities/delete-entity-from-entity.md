@@ -7,6 +7,7 @@ date: 11.05.2016
 keywords:
 content_type: howto
 redirect_from: /en/api/netserver/entities/delete-entity-from-entity
+hidden: true
 ---
 
 # Delete an Entity through an Entity

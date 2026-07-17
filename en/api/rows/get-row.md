@@ -7,6 +7,7 @@ date: 11.05.2016
 keywords:
 content_type: howto
 redirect_from: /en/api/netserver/rows/get-row
+hidden: true
 ---
 
 # Retrieve a Row with basic properties

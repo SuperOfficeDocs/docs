@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/row/get-catlist-categoryrows
   - /en/api/netserver/rows/howto/company/get-catlist-categoryrows
+hidden: true
 ---
 
 # Get the CategoryList via CategoryRows object

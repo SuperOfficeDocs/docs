@@ -179,8 +179,9 @@ function Convert-YamlPath {
         }
     }
 
-    # Clean up path - remove file extensions, normalize slashes
-    $path = $href -replace '\.(md|mdx|yml)$', '' -replace '^/', '' -replace '\\', '/'
+    # Clean up path - remove file extensions (even when followed by an anchor
+    # fragment, e.g. wcf-host.md#multi-hosting), normalize slashes
+    $path = $href -replace '\.(md|mdx|yml)(?=#|$)', '' -replace '^/', '' -replace '\\', '/'
 
     # Add base path if provided
     if ($BasePath) {

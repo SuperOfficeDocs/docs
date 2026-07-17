@@ -6,6 +6,7 @@ author: SuperOffice Product and Engineering
 date: 11.05.2016
 keywords: netserver, security, sentry, rows
 content_type: concept
+hidden: true
 ---
 
 # Sentry

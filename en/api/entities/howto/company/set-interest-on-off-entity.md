@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/entity/set-interest-on-off-entity
   - /en/api/netserver/entities/howto/company/set-interest-on-off-entity
+hidden: true
 ---
 
 # How to set an interest on or off for a contact (data layer)

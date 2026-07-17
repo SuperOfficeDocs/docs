@@ -7,6 +7,7 @@ date: 11.05.2016
 keywords: hook
 content_type: concept
 redirect_from: /en/api/netserver/entities/events
+hidden: true
 ---
 
 # Events in Entity objects

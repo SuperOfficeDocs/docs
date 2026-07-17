@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/entity/create-apt-entity-in-collection
   - /en/api/netserver/entities/howto/diary/create-apt-entity-in-collection
+hidden: true
 ---
 
 # Create an Appointment entity through an entity collection

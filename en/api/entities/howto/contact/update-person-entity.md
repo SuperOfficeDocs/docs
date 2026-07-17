@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/entity/update-person-entity
   - /en/api/netserver/entities/howto/contact/update-person-entity
+hidden: true
 ---
 
 # Update a person with a new name, address, position using entities

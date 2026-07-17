@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/entity/create-contact-entity
   - /en/api/netserver/entities/howto/company/create-contact-entity
+hidden: true
 ---
 
 # Create a Contact entity

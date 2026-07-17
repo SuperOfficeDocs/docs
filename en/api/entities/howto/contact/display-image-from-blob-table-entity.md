@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/entity/display-image-from-blob-table-entity
   - /en/api/netserver/entities/howto/contact/display-image-from-blob-table-entity
+hidden: true
 ---
 
 # How to display an image from the Blob table (data layer)

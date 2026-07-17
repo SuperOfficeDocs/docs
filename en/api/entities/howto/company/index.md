@@ -9,6 +9,7 @@ content_type: concept
 redirect_from:
   - /en/company/howto/entity/index
   - /en/api/netserver/entities/howto/company/index
+hidden: true
 ---
 
 # Contact - entity

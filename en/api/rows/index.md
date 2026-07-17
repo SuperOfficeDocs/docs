@@ -8,6 +8,7 @@ content_type: concept
 deployment: online, onsite
 platform: web, win
 redirect_from: /en/api/netserver/rows/index
+hidden: true
 ---
 
 # High-level database layer (Rows)

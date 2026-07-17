@@ -10,6 +10,7 @@ content_type: howto
 redirect_from:
   - /en/sale/howto/entity/link-sale-to-appointment
   - /en/api/netserver/entities/howto/sale/link-sale-to-appointment
+hidden: true
 ---
 
 # How to link a sale to a follow-up (data layer)

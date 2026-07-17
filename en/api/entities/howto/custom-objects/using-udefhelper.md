@@ -11,6 +11,7 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/using-udefhelper
   - /en/api/netserver/entities/howto/custom-objects/using-udefhelper
+hidden: true
 ---
 
 # How to use the UDFHelper class

@@ -7,6 +7,7 @@ date:
 keywords:
 content_type: howto
 redirect_from: /en/api/netserver/foreign-keys/set-and-get
+hidden: true
 ---
 
 # How to set and get foreign keys

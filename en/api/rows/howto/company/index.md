@@ -9,6 +9,7 @@ content_type: concept
 redirect_from:
   - /en/company/howto/row/index
   - /en/api/netserver/rows/howto/company/index
+hidden: true
 ---
 
 # Contact - row

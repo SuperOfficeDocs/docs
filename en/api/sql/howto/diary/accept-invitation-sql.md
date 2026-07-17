@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/sql/accept-invitation-sql
   - /en/api/netserver/sql/howto/diary/accept-invitation-sql
+hidden: true
 ---
 
 # Accept invitation

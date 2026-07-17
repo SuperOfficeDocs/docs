@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/sql/get-persons-from-contact-sql
   - /en/api/netserver/sql/howto/contact/get-persons-from-contact-sql
+hidden: true
 ---
 
 # List persons in a company

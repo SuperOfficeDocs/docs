@@ -10,6 +10,7 @@ content_type: howto
 redirect_from:
   - /en/sale/howto/entity/index
   - /en/api/netserver/entities/howto/sale/index
+hidden: true
 ---
 
 # Sale - entity
