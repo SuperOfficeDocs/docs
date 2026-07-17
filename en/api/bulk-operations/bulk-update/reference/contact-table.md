@@ -8,7 +8,6 @@ keywords: bulk update, contact
 content_type: reference
 envir: cloud
 client: online
-hidden: true
 ---
 
 # Contact Table

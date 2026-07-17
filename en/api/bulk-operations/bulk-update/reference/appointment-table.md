@@ -8,7 +8,6 @@ keywords: bulk update, appointment
 content_type: reference
 envir: cloud
 client: online
-hidden: true
 ---
 
 # Appointment table

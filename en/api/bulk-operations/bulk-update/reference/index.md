@@ -7,7 +7,6 @@ keywords: bulk update
 content_type: reference
 envir: cloud
 client: online
-hidden: true
 ---
 
 # Bulk Update API reference

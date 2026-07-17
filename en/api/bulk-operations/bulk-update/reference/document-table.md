@@ -8,7 +8,6 @@ keywords: bulk update, document
 content_type: reference
 envir: cloud
 client: online
-hidden: true
 ---
 
 # Document table

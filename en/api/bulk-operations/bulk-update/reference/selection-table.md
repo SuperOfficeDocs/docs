@@ -8,7 +8,6 @@ keywords: bulk update, selection
 content_type: reference
 envir: cloud
 client: online
-hidden: true
 ---
 
 # Selection table
