@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/globalization-and-localization/address/howto/crmscript/get-address
 ---
 
-<!-- markdownlint-disable-file MD013 -->
-
 # Get address info
 
 ## NSLocalizedField[][] getFormattedAddress()
@@ -43,5 +41,3 @@ NSLocalizedField[][] fields = address.GetLocalizedAddress();
 ```
 
 Then you can use a double for-loop to iterate and print fields (as we did in the previous example).
-
-<!-- Referenced links -->

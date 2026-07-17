@@ -35,15 +35,14 @@ To develop applications and scripts in our SOD environment is free. [Required li
 
 * [Regular expression tool][6]
 
-<!-- Referenced links -->
-[1]: ../fundamentals/index.md
-[2]: ../datatypes/index.md
-[3]: ../code-quality/coding-conventions.md
-[4]: ../code-quality/best-practices.md
-[5]: ../debugging/index.md
+[1]: ../fundamentals/index
+[2]: ../datatypes/index
+[3]: ../code-quality/coding-conventions
+[4]: ../code-quality/best-practices
+[5]: ../debugging/index
 [6]: https://regex101.com/
-[7]: ../../../admin/license/index.md
-[8]: ../../../developer-portal/getting-started/get-access-to-sod.md
-[9]: ../../../database/tables/index.md
+[7]: ../../../admin/license/index
+[8]: ../../../developer-portal/getting-started/get-access-to-sod
+[9]: ../../../database/tables/index
 [10]: https://community.superoffice.com/en/technical/forums/api-forums/service-crmscript/
 [11]: xref:SuperOffice.CRM.Services

@@ -30,5 +30,3 @@ It might be necessary to delete a sale if it is no longer appropriate to store i
 NSSaleAgent saleAgent;
 Void DeleteSaleEntity(123);
 ```
-
-<!-- Referenced links -->

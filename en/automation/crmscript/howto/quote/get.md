@@ -122,5 +122,3 @@ NSQuoteLine line = qa.GetQuoteLine(3);
 
 printLine(line.GetUnitCost().toString(2));
 ```
-
-<!-- Referenced links -->

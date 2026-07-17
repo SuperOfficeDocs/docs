@@ -96,5 +96,4 @@ Counts the occurrences of a named variable in the parser instance.
 print(p.getVariableCount("firstName").toString());
 ```
 
-<!-- Referenced links -->
-[1]: ../../request/dev/index.md#reply-templates
+[1]: ../../request/dev/index#reply-templates

@@ -61,5 +61,4 @@ if (r.GetIsRecurrence()) {
 }
 ```
 
-<!-- Referenced links -->
-[1]: ../../../../diary/learn/recurrence/index.md
+[1]: ../../../../diary/learn/recurrence/index

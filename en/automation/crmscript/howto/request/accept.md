@@ -44,5 +44,4 @@ t.save();
 t.notifyEmail(8);
 ```
 
-<!-- Referenced links -->
-[4]: reply-templates.md
+[4]: ./reply-templates

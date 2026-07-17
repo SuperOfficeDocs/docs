@@ -91,5 +91,4 @@ qa.RemoveProduct(productId);
 
 For a complete list of fields, see the [database reference][1].
 
-<!-- Referenced links -->
-[1]: ../../../../database/tables/product.md
+[1]: ../../../../database/tables/product

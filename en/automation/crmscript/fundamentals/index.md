@@ -24,15 +24,14 @@ A guide to CRMScript basics.
 * [Try catch][10]
 * [Loops][11]
 
-<!-- Referenced links -->
-[1]: syntax.md
-[2]: reserved.md
-[3]: variables.md
-[4]: operators.md
-[5]: datatypes-intro.md
-[6]: functions.md
-[7]: structs.md
-[8]: arrays.md
-[9]: conditions.md
-[10]: try-catch.md
-[11]: for-loops.md
+[1]: ./syntax
+[2]: ./reserved
+[3]: ./variables
+[4]: ./operators
+[5]: ./datatypes-intro
+[6]: ./functions
+[7]: ./structs
+[8]: ./arrays
+[9]: ./conditions
+[10]: ./try-catch
+[11]: ./for-loops

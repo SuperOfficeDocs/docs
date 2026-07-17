@@ -102,5 +102,4 @@ plainBody = p.parseString(plainBody);
 htmlBody = p.parseString(htmlBody);
 ```
 
-<!-- Referenced links -->
-[4]: ../../parser.md
+[4]: ../../parser

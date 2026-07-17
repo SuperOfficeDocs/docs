@@ -298,12 +298,11 @@ X-Superoffice-Signature: X1FmmRIXuzH8o0MDanva1lnuNZXoix6M0US1S64s+e8=
 }
 ```
 
-<!-- Reference links -->
-[1]: ../../../database/tables/udlistdefinition.md
-[2]: ../../../database/tables/ej-category.md
-[3]: ../../../database/tables/ticket-priority.md
-[4]: ../../../database/tables/ticket-status.md
-[5]: ../../../database/tables/ticket-type.md
-[6]: ../../../database/tables/consentpurpose.md
-[7]: ../../../database/tables/consentsource.md
-[8]: ../../../database/tables/pricelist.md
+[1]: ../../../database/tables/udlistdefinition
+[2]: ../../../database/tables/ej-category
+[3]: ../../../database/tables/ticket-priority
+[4]: ../../../database/tables/ticket-status
+[5]: ../../../database/tables/ticket-type
+[6]: ../../../database/tables/consentpurpose
+[7]: ../../../database/tables/consentsource
+[8]: ../../../database/tables/pricelist

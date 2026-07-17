@@ -50,5 +50,4 @@ String action = getEventData().getInputValue("action");
 log("Echobot registered called: " + action);
 ```
 
-<!-- Referenced images -->
-[img1]: media/chatbot-channel-admin.png
+[img1]: /media/loc/en/automation/chatbot-channel-admin.png

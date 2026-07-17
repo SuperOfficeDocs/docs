@@ -18,7 +18,7 @@ The `try` statement contains the code you want to run but acknowledge might fail
 The definition has 2 parts:
 
 * keyword **try**
-* 1 or more statements, enclosed in curly brackets - {} must always be used
+* 1 or more statements, enclosed in curly brackets - \{\} must always be used
 
 ```crmscript
 try {
@@ -33,7 +33,7 @@ The `catch` statement contains the code to run if an exception is thrown from th
 The definition has 2 parts:
 
 * keyword **catch**
-* 1 or more statements, enclosed in curly brackets - {} must always be used
+* 1 or more statements, enclosed in curly brackets - \{\} must always be used
 
 ```crmscript
 catch {

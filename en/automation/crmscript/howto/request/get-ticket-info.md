@@ -31,5 +31,4 @@ t.load(2);
 print(t.getValue("ticketStatus"));
 ```
 
-<!-- Referenced links -->
-[3]: <xref:CRMScript.Native.Ticket.getValue(String)>
+[3]: <xref:CRMScript.Native.Ticket.getValue(String)\>

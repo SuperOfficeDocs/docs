@@ -20,13 +20,12 @@ content_type: howto
 * [Creating a trigger for the outbox][8]
 * [Open new browser window from task menu][9]
 
-<!-- Referenced links -->
-[1]: creating-lots-of-random-requests.md
-[2]: script-based-selections.md
-[3]: udef-agent.md
-[4]: build-custom-rest-api-methods.md
-[5]: using-crmscript-statlib-for-reporting.md
-[6]: waiting-for-customer-status-with-reminders.md
-[7]: using-dialogs-in-triggers.md
-[8]: crmscript-trigger-outbox.md
-[9]: open-external-company-from-task-menu.md
+[1]: ./creating-lots-of-random-requests
+[2]: ./script-based-selections
+[3]: ./udef-agent
+[4]: ./build-custom-rest-api-methods
+[5]: ./using-crmscript-statlib-for-reporting
+[6]: ./waiting-for-customer-status-with-reminders
+[7]: ./using-dialogs-in-triggers
+[8]: ./crmscript-trigger-outbox
+[9]: ./open-external-company-from-task-menu

@@ -23,7 +23,7 @@ Void log( Integer id, Integer eventType, String var1, String var2, String var3, 
     se.addData( "log_events.target_id", id.toString() );
     se.addData( "log_events.var1", var1 );
     se.addData( "log_events.var2", var2 );
-    
+
     if( !var3.isEmpty() )
         se.addData( "log_events.var3", var3 );
     if( !var4.isEmpty() )
@@ -95,6 +95,5 @@ where target_id='1544244' and var1 like '%Request feedback%'
 order by time_of_event
 ```
 
-<!-- Reference links -->
-[1]: log-messages.md
-[2]: ../../../database/tables/log-events.md
+[1]: ./log-messages
+[2]: ../../../database/tables/log-events

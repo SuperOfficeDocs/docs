@@ -48,7 +48,7 @@ Bool hasOpenSales(Integer contactId) {
   DateTime to;
 
   NSSaleSummary summary = saleAgent.GetSummaryByContact(contactId, from.addDay(-30), to);
-  
+
   return summary.GetOpen() > 0;
 }
 
@@ -131,5 +131,3 @@ while (!se.eof()) {
 NSSaleAgent saleAgent;
 NSSale[] saleList = saleAgent.GetSaleList(saleIds);
 ```
-
-<!-- Referenced links -->

@@ -16,7 +16,7 @@ language: en
 
 SuperOffice webhooks let your systems react to events as they happen. Instead of polling for changes, your application or integration receives a notification automatically when a contact is created, a sale is updated, a ticket is closed, or any other supported event occurs.
 
-A webhook delivers a payload to a target URL. The payload contains the event name, the affected entity, and a list of changed fields — everything a subscriber needs to take action without a follow-up request to SuperOffice.
+A webhook delivers a payload to a target URL. The payload contains the event name, the affected entity, and a list of changed fields - everything a subscriber needs to take action without a follow-up request to SuperOffice.
 
 Webhooks are available to both administrators managing integrations in SuperOffice and developers building custom applications on the SuperOffice platform.
 
@@ -32,6 +32,5 @@ Developers can register webhooks via the REST API or CRMScript, configure shared
 
 * [Webhooks developer guide][2]
 
-<!-- Referenced links -->
-[1]: admin/index.md
-[2]: dev/index.md
+[1]: ./admin/index
+[2]: ./dev/index

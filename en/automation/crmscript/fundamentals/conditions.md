@@ -79,5 +79,4 @@ else
   print("Adding to waiting list.\n");
 ```
 
-<!-- Referenced links -->
-[1]: operators.md
+[1]: ./operators

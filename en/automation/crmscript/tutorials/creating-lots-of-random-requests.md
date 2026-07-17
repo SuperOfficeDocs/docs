@@ -97,4 +97,4 @@ for (Integer i = 0; i < numTickets; i++)
 }
 ```
 
-[img1]: media/random-requests.png
+[img1]: /media/loc/en/automation/random-requests.png

@@ -32,5 +32,3 @@ newProject = agent.SaveProjectEntity(newProject);
 
 print(newProject.GetProjectId().toString());
 ```
-
-<!-- Referenced links -->

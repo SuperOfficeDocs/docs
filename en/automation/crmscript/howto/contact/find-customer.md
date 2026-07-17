@@ -50,5 +50,3 @@ Looks up a customer in an external data source (`ext_table.id`) based on its pri
 Looks up a customer that is owned by the agent and matches the external key.
 
 Returns the ID of the customer from the database, or -1 if not found.
-
-<!-- Referenced links -->

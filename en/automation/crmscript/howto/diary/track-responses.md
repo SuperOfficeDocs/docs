@@ -55,5 +55,4 @@ for (Integer i = 0; i < invites.length(); i++) {
 }
 ```
 
-<!-- Referenced links -->
-[1]: ../../../../diary/learn/invitation/index.md
+[1]: ../../../../diary/learn/invitation/index

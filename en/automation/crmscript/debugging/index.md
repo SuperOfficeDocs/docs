@@ -20,11 +20,10 @@ There are several ways to debug CRMScripts.
 * [Helper functions for logging][6]
 * [Troubleshooting][7]
 
-<!-- Referenced links -->
-[1]: built-in-debugger.md
-[2]: log-messages.md
-[3]: print-debug.md
-[4]: development-mode.md
-[5]: using-trace.md
-[6]: helper-functions-for-logging.md
-[7]: troubleshooting.md
+[1]: ./built-in-debugger
+[2]: ./log-messages
+[3]: ./print-debug
+[4]: ./development-mode
+[5]: ./using-trace
+[6]: ./helper-functions-for-logging
+[7]: ./troubleshooting

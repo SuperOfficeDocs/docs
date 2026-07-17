@@ -8,7 +8,6 @@ keywords: CRMScript
 content_type: tutorial
 ---
 
-<!-- markdownlint-disable-file MD044 -->
 # Creating a trigger for the outbox
 
 This event is called when an email or SMS outbox item is created. All emails or SMSes sent from SuperOffice Service will pass through the outbox. The event is named [Outbound email or SMS created][1]. The `EventData` instance will contain several input values relevant to the context.
@@ -76,7 +75,7 @@ This example will block outbound emails sent as replies to a request, and instea
 #setLanguageLevel 4;
 if (ed.getInputValue("outbox.eventName") == "addMessage") {
   // Block the original message
-  ed.setBlockExecution(true); 
+  ed.setBlockExecution(true);
 
   // Send an alternative message
   Email e;
@@ -85,7 +84,7 @@ if (ed.getInputValue("outbox.eventName") == "addMessage") {
   e.setValue("bcc", ed.getInputValue("outbox.bcc"));
   e.setValue("subject", ed.getInputValue("outbox.subject"));
   e.setValue("body", "A new message has been added to your ticket: " + ed.getInputValue("outbox.ticketId") + ". Please log in to the Customer Centre to view it.");
-  e.send();  
+  e.send();
 }
 ```
 
@@ -98,5 +97,4 @@ ed.setOutputValue("outbox.header.0.name", "X-our-header");
 ed.setOutputValue("outbox.header.0.value", "Email processed by CRMScript");
 ```
 
-<!-- Referenced links -->
 [1]: ../../trigger/reference/CRMScript.Event.Trigger.yml#CRMScript_Event_Trigger_OutboxItemCreated

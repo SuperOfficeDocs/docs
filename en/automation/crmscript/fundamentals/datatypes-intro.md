@@ -51,5 +51,4 @@ String myCompany = "Super" + "Office";
 
 The logical or boolean data type of CRMScript is **Bool**. Variables of this type can only have 2 values: **true** or **false** and are commonly used in comparisons and conditional statements.
 
-<!-- Referenced links -->
-[1]: operators.md
+[1]: ./operators

@@ -63,9 +63,9 @@ Comparison operators are used to test for true or false. They are typically used
 |:--------:|-----------------------|
 | ==       | equal                 |
 | !=       | not equal             |
-| <        | less than             |
+| \<        | less than             |
 | >        | greater than          |
-| <=       | less than or equal    |
+| \<=       | less than or equal    |
 | >=       | greater than or equal |
 
 ## CRMScript logical operators

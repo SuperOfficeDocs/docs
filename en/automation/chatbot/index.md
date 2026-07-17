@@ -103,10 +103,8 @@ A full set of chatbot examples can be found on [GitHub SuperOffice/devnet-CRMScr
 * **Azure bot:** uses the Azure bot platform to analyze messages and respond with intents.
 * **Google Dialogflow bot:** uses Google's bot platform to analyze messages and respond with intents.
 
-<!-- Referenced links -->
 [1]: https://github.com/SuperOffice/devnet-crmscript-chatbot
 
-<!-- Referenced links -->
-[img1]: media/chatbot-channel-admin.png
-[img2]: media/chatbot-scripts-folder.png
-[img3]: media/chatbot-scripts-sequence.png
+[img1]: /media/loc/en/automation/chatbot-channel-admin.png
+[img2]: /media/loc/en/automation/chatbot-scripts-folder.png
+[img3]: /media/loc/en/automation/chatbot-scripts-sequence.png
