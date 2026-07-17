@@ -15081,15 +15081,7 @@
       "destination": "/en/admin/options/index"
     },
     {
-      "source": "/en/admin/options/learn/labels/change",
-      "destination": "/en/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/en/admin/options/learn/labels/index",
-      "destination": "/en/admin/options/change-ui-labels"
-    },
-    {
-      "source": "/en/admin/options/learn/labels/reset",
+      "source": "/en/admin/options/learn/labels/*",
       "destination": "/en/admin/options/change-ui-labels"
     },
     {
@@ -15121,11 +15113,7 @@
       "destination": "/en/admin/license/index"
     },
     {
-      "source": "/en/admin/preferences/learn/document-library/change-to-sharepoint",
-      "destination": "/en/document/library/learn/index"
-    },
-    {
-      "source": "/en/admin/preferences/learn/document-library/index",
+      "source": "/en/admin/preferences/learn/document-library/*",
       "destination": "/en/document/library/learn/index"
     },
     {
@@ -18405,11 +18393,7 @@
       "destination": "/integrations/sharepoint-documents/index"
     },
     {
-      "source": "/en/document/cloud/sharepoint-documents/learn/index",
-      "destination": "/en/document/library/learn/index"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/learn/set-up-folders",
+      "source": "/en/document/cloud/sharepoint-documents/learn/*",
       "destination": "/en/document/library/learn/index"
     },
     {
