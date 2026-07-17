@@ -8,7 +8,6 @@ date: 03.03.2022
 category: list
 area: api-services
 redirect_from: /en/api/netserver/lists/services/how-to/index
-hidden: true
 ---
 
 # How-to work with lists
