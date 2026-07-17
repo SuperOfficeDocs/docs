@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "workflowtriggertype" MDO List
+
 MDO provider for the WorkflowTriggerType enum
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.WorkflowTriggerTypeProvider">WorkflowTriggerTypeProvider</see> class.
+Implemented by the `WorkflowTriggerTypeProvider` class.
 The name of the MDO list is 'workflowtriggertype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("workflowtriggertype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -55,7 +52,6 @@ foreach (var item in listProvider.RootItems) {
 |13|RC.SR_WORKFLOWTRIGGERTYPE_SALELOST|||
 |12|RC.SR_WORKFLOWTRIGGERTYPE_SALESOLD|||
 |9|RC.SR_WORKFLOWTRIGGERTYPE_STARTEDCHAT|||
-
 
 ## Related MDO Lists
 

@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "emailreplytotype" MDO List
+
 MDO provider for the EmailReplyToType enum
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.EmailReplyToTypeProvider">EmailReplyToTypeProvider</see> class.
+Implemented by the `EmailReplyToTypeProvider` class.
 The name of the MDO list is 'emailreplytotype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("emailreplytotype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -46,7 +43,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Use our contact where specified, otherwise use:|||
 |2|Use our support contact where specified, otherwise use:|||
 |3|Use 'From' as 'Reply' address|||
-
 
 ## Related MDO Lists
 

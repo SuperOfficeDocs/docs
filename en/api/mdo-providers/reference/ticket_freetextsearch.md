@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "ticket_freetextsearch" MDO List
+
 Provider for selecting a Ticket - with contact and person search.
 Does keyword matching and scoring across multiple
 string fields. Checks ticket heading, from, author as well as contact, person and project tables.
@@ -17,12 +18,11 @@ Supports cross-table matching: "Guttorm Teacup" will find tickets from person "G
 User's own tickets, recently added + modified tickets, contacts modified or created by user as scored higher.
 Matches on word boundaries or at start of field are scored extra highly.
 
-
 Returns ticket items only: Id = ticket id.
 ExtraInfo = person_id, Type = "Ticket", IconHint = "Ticket"
 StyleHint = "deleted_item" or "ticketUnread"
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TicketListFreetextSearchProvider">TicketListFreetextSearchProvider</see> class.
+Implemented by the `TicketListFreetextSearchProvider` class.
 The name of the MDO list is 'ticket_freetextsearch'.
 
 ## Additional Attributes
@@ -31,10 +31,6 @@ The name of the MDO list is 'ticket_freetextsearch'.
 |-----|-----|------|
 |Indicates how to format item name| nameformat|includePersonAndCompany|
 |If true, merged tickets are excluded from ID search results| excludeMerged|false|
-
-
-
-
 
 ## Sample Request
 
@@ -47,10 +43,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ticket_freetextsearch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -70,7 +67,6 @@ foreach (var item in listProvider.RootItems) {
 |9|The second email (Arnt Arntsen (Amadeus AS, AAvdeling))|deleted_item|20|
 |10|Stian Andre, a few Google+ posts you may like (Arnhild Arvestad (Arne'S Kebab, AAvdeling))|deleted_item|21|
 |13|Test FAQ relation|ticketUnread|-1|
-
 
 ## Related MDO Lists
 

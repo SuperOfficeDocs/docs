@@ -68,11 +68,9 @@ The `RootItems` are defined by the records in the `category` table only if the M
 
 ![Get a CategoryList through typed list providers -screenshot][img1]
 
-<!-- Referenced links -->
-[1]: ../../../lists/entity/typed-list.md
-[2]: ../../../../company/dev/index.md#categorylist
-[4]: ../../../../database/tables/category.md
-[5]: ../../../../database/tables/heading.md
+[1]: ../../../lists/entity/typed-list
+[2]: ../../../../company/dev/index#categorylist
+[4]: ../../../../database/tables/category
+[5]: ../../../../database/tables/heading
 
-<!-- Referenced images -->
-[img1]: media/image002.jpg
+[img1]: /media/loc/en/api/web-services/image002-6.jpg

@@ -1,7 +1,7 @@
 ---
 uid: LinksSelection
 title: LinksSelection
-description: 
+description:
 keywords: LinksSelection archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "LinksSelection"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksSelectionProvider">SuperOffice.CRM.ArchiveLists.LinksSelectionProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.LinksSelectionProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"Selection"|Selection|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -69,5 +71,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

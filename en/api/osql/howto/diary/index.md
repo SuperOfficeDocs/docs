@@ -17,5 +17,4 @@ redirect_from:
 
 * [Create appointment][1]
 
-<!-- Referenced links -->
-[1]: create-apt-osql.md
+[1]: ./create-apt-osql

@@ -46,8 +46,6 @@ There are also different ways of generating the value that will be used for the 
 
 * A **combination** of both, where a default value is set but the user can choose to set a different value.
 
-<!-- Referenced links -->
-[1]: api/field-meta-data-carrier.md
+[1]: ./api/field-meta-data-carrier
 
-<!-- Referenced images -->
-[img1]: media/create-in-erp.png
+[img1]: /media/loc/en/api/plugins/create-in-erp.png

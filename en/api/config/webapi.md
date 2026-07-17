@@ -45,9 +45,8 @@ Configuration values related to the [WebAPI][2] web services.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.WebApi>
-[2]: ../reference/restful/index.md
-[3]: ../../onsite/install/netserver/setup-rest.md#integrated-with-active-directory
-[4]: ../../onsite/install/netserver/setup-rest.md#configure-basic-authentication-iis
+[2]: ../reference/restful/index
+[3]: ../../onsite/install/netserver/setup-rest#integrated-with-active-directory
+[4]: ../../onsite/install/netserver/setup-rest#configure-basic-authentication-iis
 [9]: https://online.superoffice.com/AppStore/superoffice-as/superoffice-gmail-link

@@ -10,13 +10,14 @@ envir: onsite, online
 
 # "Mail"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailItemSearchProvider">SuperOffice.CRM.ArchiveLists.MailItemSearchProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.MailItemSearchProvider` inside NetServer's SODatabase assembly.
 
 Provides populated mail envelope rows as an archive based on a query string
 This subclass filter envelopes based on a provided string, only envelopes containing
 the string in either subject, sender, recipient or date are returned
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"companies"|Companies|
@@ -24,6 +25,7 @@ the string in either subject, sender, recipient or date are returned
 |"others"|Others|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |id| *None* |ID: ID of the e-mail|  |
@@ -49,5 +51,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

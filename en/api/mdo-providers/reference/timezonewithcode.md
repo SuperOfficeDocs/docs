@@ -9,16 +9,12 @@ envir: onsite, online
 ---
 
 # "timezonewithcode" MDO List
+
 Provides the timezone list. The country code is given in the type field.
 If no search value is passed in the list is restricted to 'available' timezones
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TimeZoneWithCodeProvider">TimeZoneWithCodeProvider</see> class.
+Implemented by the `TimeZoneWithCodeProvider` class.
 The name of the MDO list is 'timezonewithcode'.
-
-
-
 
 ## Sample Request
 
@@ -31,10 +27,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("timezonewithcode", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -64,7 +61,6 @@ foreach (var item in listProvider.RootItems) {
 |16|Corrientes (GMT-03.00)||32|
 |17|Entre Rios (GMT-03.00)||32|
 |18|Formosa (GMT-03.00)||32|
-
 
 ## Related MDO Lists
 

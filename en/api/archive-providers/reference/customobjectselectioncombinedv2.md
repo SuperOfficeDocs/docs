@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "CustomObjectSelectionCombinedV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionCombinedProviderV2` inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 

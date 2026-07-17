@@ -49,10 +49,8 @@ Each application must also validate each token received by SuperID when exchangi
 
 The host running this example must have the [public certificates installed][2] for this example to work.
 
-<!-- Referenced links -->
-[1]: ../../authentication/online/auth-application/index.md
-[2]: ../../authentication/online/certificates/configure.md
+[1]: ../../authentication/online/auth-application/index
+[2]: ../../authentication/online/certificates/configure
 
-<!-- Referenced images -->
-[img1]: media/image001.png
-[img2]: media/image003.png
+[img1]: /media/loc/en/api/tutorials/image001-1.png
+[img2]: /media/loc/en/api/tutorials/image003-2.png

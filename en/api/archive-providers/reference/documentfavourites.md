@@ -1,7 +1,7 @@
 ---
 uid: documentfavourites
 title: documentfavourites
-description: 
+description:
 keywords: documentfavourites archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "documentfavourites"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.DocumentFavouritesProvider">SuperOffice.CRM.ArchiveLists.DocumentFavouritesProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.DocumentFavouritesProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"document"|Favourite document|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -116,5 +118,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

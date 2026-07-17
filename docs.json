@@ -21963,6 +21963,2738 @@
     {
       "source": "/en/automation/windows/index",
       "destination": "/en/automation/windows/win-script-event-system"
+    },
+    {
+      "source": "/en/diary/howto/archive/index",
+      "destination": "/en/api/archive-providers/howto/diary/index"
+    },
+    {
+      "source": "/en/diary/howto/archive/invitation-archive",
+      "destination": "/en/api/archive-providers/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/howto/diary/index",
+      "destination": "/en/api/archive-providers/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/howto/diary/invitation-archive",
+      "destination": "/en/api/archive-providers/howto/diary/invitation-archive"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/add-columns",
+      "destination": "/en/api/archive-providers/add-columns"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/aggregate-groupby",
+      "destination": "/en/api/archive-providers/aggregate-groupby"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/architecture",
+      "destination": "/en/api/archive-providers/architecture"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/base-and-helper-classes",
+      "destination": "/en/api/archive-providers/base-and-helper-classes"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/create-plugin",
+      "destination": "/en/api/archive-providers/create-plugin"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/data-aggregation",
+      "destination": "/en/api/archive-providers/data-aggregation"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/data-classes",
+      "destination": "/en/api/archive-providers/data-classes"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/encoded-values",
+      "destination": "/en/api/archive-providers/encoded-values"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/extenders",
+      "destination": "/en/api/archive-providers/extenders"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/how-to-query",
+      "destination": "/en/api/archive-providers/how-to-query"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/index",
+      "destination": "/en/api/archive-providers/index"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/interfaces",
+      "destination": "/en/api/archive-providers/interfaces"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/joiners",
+      "destination": "/en/api/archive-providers/joiners"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/metadata",
+      "destination": "/en/api/archive-providers/metadata"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/nested-aggregate-functions",
+      "destination": "/en/api/archive-providers/nested-aggregate-functions"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/providers",
+      "destination": "/en/api/archive-providers/providers"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/restriction-types",
+      "destination": "/en/api/archive-providers/restriction-types"
+    },
+    {
+      "source": "/en/api/netserver/archive-providers/scenarios",
+      "destination": "/en/api/archive-providers/scenarios"
+    },
+    {
+      "source": "/en/authentication/online/auth-application/get-system-user-ticket",
+      "destination": "/en/api/authentication/online/auth-application/get-system-user-ticket"
+    },
+    {
+      "source": "/en/authentication/online/auth-application/index",
+      "destination": "/en/api/authentication/online/auth-application/index"
+    },
+    {
+      "source": "/en/authentication/online/auth-application/sign-system-user-token",
+      "destination": "/en/api/authentication/online/auth-application/sign-system-user-token"
+    },
+    {
+      "source": "/en/authentication/online/certificates/add-certificate-snap-in",
+      "destination": "/en/api/authentication/online/certificates/add-certificate-snap-in"
+    },
+    {
+      "source": "/en/authentication/online/certificates/configure",
+      "destination": "/en/api/authentication/online/certificates/configure"
+    },
+    {
+      "source": "/en/authentication/online/certificates/index",
+      "destination": "/en/api/authentication/online/certificates/index"
+    },
+    {
+      "source": "/en/authentication/online/certificates/override-resolver",
+      "destination": "/en/api/authentication/online/certificates/override-resolver"
+    },
+    {
+      "source": "/en/authentication/online/sign-in-user/auth-code-flow",
+      "destination": "/en/api/authentication/online/sign-in-user/auth-code-flow"
+    },
+    {
+      "source": "/en/authentication/online/sign-in-user/hybrid-flow",
+      "destination": "/en/api/authentication/online/sign-in-user/hybrid-flow"
+    },
+    {
+      "source": "/en/authentication/online/sign-in-user/implicit-flow",
+      "destination": "/en/api/authentication/online/sign-in-user/implicit-flow"
+    },
+    {
+      "source": "/en/authentication/online/sign-in-user/index",
+      "destination": "/en/api/authentication/online/sign-in-user/index"
+    },
+    {
+      "source": "/en/authentication/online/sign-in-user/legacy",
+      "destination": "/en/api/authentication/online/sign-in-user/legacy"
+    },
+    {
+      "source": "/en/authentication/online/sign-in-user/native-apps",
+      "destination": "/en/api/authentication/online/sign-in-user/native-apps"
+    },
+    {
+      "source": "/en/authentication/online/troubleshooting/iframe-idp-auth",
+      "destination": "/en/api/authentication/online/troubleshooting/iframe-idp-auth"
+    },
+    {
+      "source": "/en/authentication/online/troubleshooting/index",
+      "destination": "/en/api/authentication/online/troubleshooting/index"
+    },
+    {
+      "source": "/en/authentication/online/api",
+      "destination": "/en/api/authentication/online/api"
+    },
+    {
+      "source": "/en/authentication/online/index",
+      "destination": "/en/api/authentication/online/index"
+    },
+    {
+      "source": "/en/authentication/online/validate-security-tokens",
+      "destination": "/en/api/authentication/online/validate-security-tokens"
+    },
+    {
+      "source": "/en/authentication/online/which-flow-to-use",
+      "destination": "/en/api/authentication/online/which-flow-to-use"
+    },
+    {
+      "source": "/en/authentication/onsite/com/index",
+      "destination": "/en/api/authentication/onsite/com/index"
+    },
+    {
+      "source": "/en/authentication/onsite/custom-proxies/index",
+      "destination": "/en/api/authentication/onsite/custom-proxies/index"
+    },
+    {
+      "source": "/en/authentication/onsite/sosession/index",
+      "destination": "/en/api/authentication/onsite/sosession/index"
+    },
+    {
+      "source": "/en/authentication/onsite/sosession/switch",
+      "destination": "/en/api/authentication/onsite/sosession/switch"
+    },
+    {
+      "source": "/en/authentication/onsite/sosession/using-soap",
+      "destination": "/en/api/authentication/onsite/sosession/using-soap"
+    },
+    {
+      "source": "/en/authentication/onsite/config-anonymous-user",
+      "destination": "/en/api/authentication/onsite/config-anonymous-user"
+    },
+    {
+      "source": "/en/authentication/onsite/config-external-user",
+      "destination": "/en/api/authentication/onsite/config-external-user"
+    },
+    {
+      "source": "/en/authentication/onsite/from-secret-to-ticket",
+      "destination": "/en/api/authentication/onsite/from-secret-to-ticket"
+    },
+    {
+      "source": "/en/authentication/onsite/index",
+      "destination": "/en/api/authentication/onsite/index"
+    },
+    {
+      "source": "/en/authentication/onsite/pipeline",
+      "destination": "/en/api/authentication/onsite/pipeline"
+    },
+    {
+      "source": "/en/authentication/onsite/terminology",
+      "destination": "/en/api/authentication/onsite/terminology"
+    },
+    {
+      "source": "/en/authentication/onsite/users-and-associates",
+      "destination": "/en/api/authentication/onsite/users-and-associates"
+    },
+    {
+      "source": "/en/authentication/index",
+      "destination": "/en/api/authentication/overview"
+    },
+    {
+      "source": "/en/authentication/overview",
+      "destination": "/en/api/authentication/overview"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/bulk-update/entities-field-types",
+      "destination": "/en/api/bulk-operations/bulk-update/entities-field-types"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/bulk-update/field-value-info",
+      "destination": "/en/api/bulk-operations/bulk-update/field-value-info"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/bulk-update/index",
+      "destination": "/en/api/bulk-operations/bulk-update/index"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/bulk-update/ns-core-examples",
+      "destination": "/en/api/bulk-operations/bulk-update/ns-core-examples"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/bulk-update/operations-and-values",
+      "destination": "/en/api/bulk-operations/bulk-update/operations-and-values"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/bulk-update/using-bulk-update",
+      "destination": "/en/api/bulk-operations/bulk-update/using-bulk-update"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/mass-operations/delete",
+      "destination": "/en/api/bulk-operations/mass-operations/delete"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/mass-operations/index",
+      "destination": "/en/api/bulk-operations/mass-operations/index"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/mass-operations/insert",
+      "destination": "/en/api/bulk-operations/mass-operations/insert"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/mass-operations/protected-tables",
+      "destination": "/en/api/bulk-operations/mass-operations/protected-tables"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/mass-operations/truncate",
+      "destination": "/en/api/bulk-operations/mass-operations/truncate"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/mass-operations/upsert",
+      "destination": "/en/api/bulk-operations/mass-operations/upsert"
+    },
+    {
+      "source": "/en/api/netserver/bulk-operations/index",
+      "destination": "/en/api/bulk-operations/index"
+    },
+    {
+      "source": "/en/api/netserver/caching/associate-cache",
+      "destination": "/en/api/caching/associate-cache"
+    },
+    {
+      "source": "/en/api/netserver/caching/cached-tables",
+      "destination": "/en/api/caching/cached-tables"
+    },
+    {
+      "source": "/en/api/netserver/caching/category-cache",
+      "destination": "/en/api/caching/category-cache"
+    },
+    {
+      "source": "/en/api/netserver/caching/flush-cache",
+      "destination": "/en/api/caching/flush-cache"
+    },
+    {
+      "source": "/en/api/netserver/caching/index",
+      "destination": "/en/api/caching/index"
+    },
+    {
+      "source": "/en/api/netserver/caching/superoffice-crm-cache",
+      "destination": "/en/api/caching/superoffice-crm-cache"
+    },
+    {
+      "source": "/en/api/netserver/caching/superoffice-crm-security",
+      "destination": "/en/api/caching/superoffice-crm-security"
+    },
+    {
+      "source": "/en/api/netserver/config/accessgateway",
+      "destination": "/en/api/config/accessgateway"
+    },
+    {
+      "source": "/en/api/netserver/config/batchservice",
+      "destination": "/en/api/config/batchservice"
+    },
+    {
+      "source": "/en/api/netserver/config/client",
+      "destination": "/en/api/config/client"
+    },
+    {
+      "source": "/en/api/netserver/config/clientconfigurationprovider",
+      "destination": "/en/api/config/clientconfigurationprovider"
+    },
+    {
+      "source": "/en/api/netserver/config/cloud",
+      "destination": "/en/api/config/cloud"
+    },
+    {
+      "source": "/en/api/netserver/config/csssprite",
+      "destination": "/en/api/config/csssprite"
+    },
+    {
+      "source": "/en/api/netserver/config/customerservice",
+      "destination": "/en/api/config/customerservice"
+    },
+    {
+      "source": "/en/api/netserver/config/customproxy",
+      "destination": "/en/api/config/customproxy"
+    },
+    {
+      "source": "/en/api/netserver/config/data",
+      "destination": "/en/api/config/data"
+    },
+    {
+      "source": "/en/api/netserver/config/diagnostics",
+      "destination": "/en/api/config/diagnostics"
+    },
+    {
+      "source": "/en/api/netserver/config/documents",
+      "destination": "/en/api/config/documents"
+    },
+    {
+      "source": "/en/api/netserver/config/downloads",
+      "destination": "/en/api/config/downloads"
+    },
+    {
+      "source": "/en/api/netserver/config/factory",
+      "destination": "/en/api/config/factory"
+    },
+    {
+      "source": "/en/api/netserver/config/featuretoggles",
+      "destination": "/en/api/config/featuretoggles"
+    },
+    {
+      "source": "/en/api/netserver/config/globalization",
+      "destination": "/en/api/config/globalization"
+    },
+    {
+      "source": "/en/api/netserver/config/googlerecaptcha",
+      "destination": "/en/api/config/googlerecaptcha"
+    },
+    {
+      "source": "/en/api/netserver/config/index",
+      "destination": "/en/api/config/index"
+    },
+    {
+      "source": "/en/api/netserver/config/infrastructure",
+      "destination": "/en/api/config/infrastructure"
+    },
+    {
+      "source": "/en/api/netserver/config/intellisyncconnector",
+      "destination": "/en/api/config/intellisyncconnector"
+    },
+    {
+      "source": "/en/api/netserver/config/mail",
+      "destination": "/en/api/config/mail"
+    },
+    {
+      "source": "/en/api/netserver/config/messaging",
+      "destination": "/en/api/config/messaging"
+    },
+    {
+      "source": "/en/api/netserver/config/oidclogin",
+      "destination": "/en/api/config/oidclogin"
+    },
+    {
+      "source": "/en/api/netserver/config/pocket",
+      "destination": "/en/api/config/pocket"
+    },
+    {
+      "source": "/en/api/netserver/config/reporter",
+      "destination": "/en/api/config/reporter"
+    },
+    {
+      "source": "/en/api/netserver/config/scripting",
+      "destination": "/en/api/config/scripting"
+    },
+    {
+      "source": "/en/api/netserver/config/security",
+      "destination": "/en/api/config/security"
+    },
+    {
+      "source": "/en/api/netserver/config/services",
+      "destination": "/en/api/config/services"
+    },
+    {
+      "source": "/en/api/netserver/config/soformsauthentication",
+      "destination": "/en/api/config/soformsauthentication"
+    },
+    {
+      "source": "/en/api/netserver/config/subclients",
+      "destination": "/en/api/config/subclients"
+    },
+    {
+      "source": "/en/api/netserver/config/superid",
+      "destination": "/en/api/config/superid"
+    },
+    {
+      "source": "/en/api/netserver/config/suspendedsite",
+      "destination": "/en/api/config/suspendedsite"
+    },
+    {
+      "source": "/en/api/netserver/config/sync",
+      "destination": "/en/api/config/sync"
+    },
+    {
+      "source": "/en/api/netserver/config/threading",
+      "destination": "/en/api/config/threading"
+    },
+    {
+      "source": "/en/api/netserver/config/timezone",
+      "destination": "/en/api/config/timezone"
+    },
+    {
+      "source": "/en/api/netserver/config/webapi",
+      "destination": "/en/api/config/webapi"
+    },
+    {
+      "source": "/en/api/netserver/config/webhooks",
+      "destination": "/en/api/config/webhooks"
+    },
+    {
+      "source": "/en/api/netserver/config/webservices",
+      "destination": "/en/api/config/webservices"
+    },
+    {
+      "source": "/en/company/howto/entity/create-contact-entity-in-collection",
+      "destination": "/en/api/entities/howto/company/create-contact-entity-in-collection"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/create-contact-entity-in-collection",
+      "destination": "/en/api/entities/howto/company/create-contact-entity-in-collection"
+    },
+    {
+      "source": "/en/company/howto/entity/create-contact-entity-in-entity",
+      "destination": "/en/api/entities/howto/company/create-contact-entity-in-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/create-contact-entity-in-entity",
+      "destination": "/en/api/entities/howto/company/create-contact-entity-in-entity"
+    },
+    {
+      "source": "/en/company/howto/entity/create-contact-entity",
+      "destination": "/en/api/entities/howto/company/create-contact-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/create-contact-entity",
+      "destination": "/en/api/entities/howto/company/create-contact-entity"
+    },
+    {
+      "source": "/en/company/howto/entity/get-catlist-generic-provider",
+      "destination": "/en/api/entities/howto/company/get-catlist-generic-provider"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/get-catlist-generic-provider",
+      "destination": "/en/api/entities/howto/company/get-catlist-generic-provider"
+    },
+    {
+      "source": "/en/company/howto/entity/get-catlist-typed-provider",
+      "destination": "/en/api/entities/howto/company/get-catlist-typed-provider"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/get-catlist-typed-provider",
+      "destination": "/en/api/entities/howto/company/get-catlist-typed-provider"
+    },
+    {
+      "source": "/en/company/howto/entity/get-contact-via-entities-layer",
+      "destination": "/en/api/entities/howto/company/get-contact-via-entities-layer"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/get-contact-via-entities-layer",
+      "destination": "/en/api/entities/howto/company/get-contact-via-entities-layer"
+    },
+    {
+      "source": "/en/company/howto/entity/get-interests-for-contact-entity",
+      "destination": "/en/api/entities/howto/company/get-interests-for-contact-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/get-interests-for-contact-entity",
+      "destination": "/en/api/entities/howto/company/get-interests-for-contact-entity"
+    },
+    {
+      "source": "/en/company/howto/entity/index",
+      "destination": "/en/api/entities/howto/company/index"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/index",
+      "destination": "/en/api/entities/howto/company/index"
+    },
+    {
+      "source": "/en/company/howto/entity/set-interest-on-off-entity",
+      "destination": "/en/api/entities/howto/company/set-interest-on-off-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/company/set-interest-on-off-entity",
+      "destination": "/en/api/entities/howto/company/set-interest-on-off-entity"
+    },
+    {
+      "source": "/en/contact/howto/entity/display-image-from-blob-table-entity",
+      "destination": "/en/api/entities/howto/contact/display-image-from-blob-table-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/contact/display-image-from-blob-table-entity",
+      "destination": "/en/api/entities/howto/contact/display-image-from-blob-table-entity"
+    },
+    {
+      "source": "/en/contact/howto/entity/get-associate-list",
+      "destination": "/en/api/entities/howto/contact/get-associate-list"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/contact/get-associate-list",
+      "destination": "/en/api/entities/howto/contact/get-associate-list"
+    },
+    {
+      "source": "/en/contact/howto/entity/get-persons-from-contact-entities",
+      "destination": "/en/api/entities/howto/contact/get-persons-from-contact-entities"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/contact/get-persons-from-contact-entities",
+      "destination": "/en/api/entities/howto/contact/get-persons-from-contact-entities"
+    },
+    {
+      "source": "/en/contact/howto/entity/index",
+      "destination": "/en/api/entities/howto/contact/index"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/contact/index",
+      "destination": "/en/api/entities/howto/contact/index"
+    },
+    {
+      "source": "/en/contact/howto/entity/update-person-entity",
+      "destination": "/en/api/entities/howto/contact/update-person-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/contact/update-person-entity",
+      "destination": "/en/api/entities/howto/contact/update-person-entity"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/entity/get-udef-field-value",
+      "destination": "/en/api/entities/howto/custom-objects/get-udef-field-value"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/custom-objects/get-udef-field-value",
+      "destination": "/en/api/entities/howto/custom-objects/get-udef-field-value"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/entity/index",
+      "destination": "/en/api/entities/howto/custom-objects/index"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/custom-objects/index",
+      "destination": "/en/api/entities/howto/custom-objects/index"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/entity/set-udef-listitem-value",
+      "destination": "/en/api/entities/howto/custom-objects/set-udef-listitem-value"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/custom-objects/set-udef-listitem-value",
+      "destination": "/en/api/entities/howto/custom-objects/set-udef-listitem-value"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/entity/udef-on-contact",
+      "destination": "/en/api/entities/howto/custom-objects/udef-on-contact"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/custom-objects/udef-on-contact",
+      "destination": "/en/api/entities/howto/custom-objects/udef-on-contact"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/entity/udefhelper-class",
+      "destination": "/en/api/entities/howto/custom-objects/udefhelper-class"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/custom-objects/udefhelper-class",
+      "destination": "/en/api/entities/howto/custom-objects/udefhelper-class"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/entity/update-udef",
+      "destination": "/en/api/entities/howto/custom-objects/update-udef"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/custom-objects/update-udef",
+      "destination": "/en/api/entities/howto/custom-objects/update-udef"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/entity/using-udefhelper",
+      "destination": "/en/api/entities/howto/custom-objects/using-udefhelper"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/custom-objects/using-udefhelper",
+      "destination": "/en/api/entities/howto/custom-objects/using-udefhelper"
+    },
+    {
+      "source": "/en/diary/howto/entity/accept-invitation-entity",
+      "destination": "/en/api/entities/howto/diary/accept-invitation-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/accept-invitation-entity",
+      "destination": "/en/api/entities/howto/diary/accept-invitation-entity"
+    },
+    {
+      "source": "/en/diary/howto/entity/appointment-matrix",
+      "destination": "/en/api/entities/howto/diary/appointment-matrix"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/appointment-matrix",
+      "destination": "/en/api/entities/howto/diary/appointment-matrix"
+    },
+    {
+      "source": "/en/diary/howto/entity/create-apt-entity-in-collection",
+      "destination": "/en/api/entities/howto/diary/create-apt-entity-in-collection"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/create-apt-entity-in-collection",
+      "destination": "/en/api/entities/howto/diary/create-apt-entity-in-collection"
+    },
+    {
+      "source": "/en/diary/howto/entity/create-apt-entity-in-entity",
+      "destination": "/en/api/entities/howto/diary/create-apt-entity-in-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/create-apt-entity-in-entity",
+      "destination": "/en/api/entities/howto/diary/create-apt-entity-in-entity"
+    },
+    {
+      "source": "/en/diary/howto/entity/create-apt-entity",
+      "destination": "/en/api/entities/howto/diary/create-apt-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/create-apt-entity",
+      "destination": "/en/api/entities/howto/diary/create-apt-entity"
+    },
+    {
+      "source": "/en/diary/howto/entity/create-invitation-entity",
+      "destination": "/en/api/entities/howto/diary/create-invitation-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/create-invitation-entity",
+      "destination": "/en/api/entities/howto/diary/create-invitation-entity"
+    },
+    {
+      "source": "/en/diary/howto/entity/create-recurring-appointment-entity",
+      "destination": "/en/api/entities/howto/diary/create-recurring-appointment-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/create-recurring-appointment-entity",
+      "destination": "/en/api/entities/howto/diary/create-recurring-appointment-entity"
+    },
+    {
+      "source": "/en/diary/howto/entity/index",
+      "destination": "/en/api/entities/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/diary/index",
+      "destination": "/en/api/entities/howto/diary/index"
+    },
+    {
+      "source": "/en/sale/howto/entity/index",
+      "destination": "/en/api/entities/howto/sale/index"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/sale/index",
+      "destination": "/en/api/entities/howto/sale/index"
+    },
+    {
+      "source": "/en/sale/howto/entity/link-sale-to-appointment",
+      "destination": "/en/api/entities/howto/sale/link-sale-to-appointment"
+    },
+    {
+      "source": "/en/api/netserver/entities/howto/sale/link-sale-to-appointment",
+      "destination": "/en/api/entities/howto/sale/link-sale-to-appointment"
+    },
+    {
+      "source": "/en/admin/user-preferences/howto/get-preferences-sopreference",
+      "destination": "/en/api/entities/howto/user-preferences/get-preferences-sopreference"
+    },
+    {
+      "source": "/en/admin/user-preferences/howto/set-preferences-sopreference",
+      "destination": "/en/api/entities/howto/user-preferences/set-preferences-sopreference"
+    },
+    {
+      "source": "/en/api/netserver/entities/activity-links",
+      "destination": "/en/api/entities/activity-links"
+    },
+    {
+      "source": "/en/api/netserver/entities/collections",
+      "destination": "/en/api/entities/collections"
+    },
+    {
+      "source": "/en/api/netserver/entities/create-entity-in-entity",
+      "destination": "/en/api/entities/create-entity-in-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/create-entity",
+      "destination": "/en/api/entities/create-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/delete-entity-from-entity",
+      "destination": "/en/api/entities/delete-entity-from-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/delete-entity",
+      "destination": "/en/api/entities/delete-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/events",
+      "destination": "/en/api/entities/events"
+    },
+    {
+      "source": "/en/api/netserver/entities/get-entity-from-entity",
+      "destination": "/en/api/entities/get-entity-from-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/get-entity",
+      "destination": "/en/api/entities/get-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/index",
+      "destination": "/en/api/entities/index"
+    },
+    {
+      "source": "/en/api/netserver/entities/nested-persist",
+      "destination": "/en/api/entities/nested-persist"
+    },
+    {
+      "source": "/en/api/netserver/entities/setdefaults",
+      "destination": "/en/api/entities/setdefaults"
+    },
+    {
+      "source": "/en/api/netserver/entities/update-entity-in-entity",
+      "destination": "/en/api/entities/update-entity-in-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/update-entity",
+      "destination": "/en/api/entities/update-entity"
+    },
+    {
+      "source": "/en/api/netserver/entities/using-collections",
+      "destination": "/en/api/entities/using-collections"
+    },
+    {
+      "source": "/en/api/netserver/entities/using-customsearch",
+      "destination": "/en/api/entities/using-customsearch"
+    },
+    {
+      "source": "/en/api/netserver/foreign-keys/erp-integration",
+      "destination": "/en/api/foreign-keys/erp-integration"
+    },
+    {
+      "source": "/en/api/netserver/foreign-keys/foreignkey",
+      "destination": "/en/api/foreign-keys/foreignkey"
+    },
+    {
+      "source": "/en/api/netserver/foreign-keys/index",
+      "destination": "/en/api/foreign-keys/index"
+    },
+    {
+      "source": "/en/api/netserver/foreign-keys/set-and-get",
+      "destination": "/en/api/foreign-keys/set-and-get"
+    },
+    {
+      "source": "/en/api/netserver/lists/entity/how-to/create-list-plugin",
+      "destination": "/en/api/lists/entity/how-to/create-list-plugin"
+    },
+    {
+      "source": "/en/api/netserver/lists/entity/how-to/get-list",
+      "destination": "/en/api/lists/entity/how-to/get-list"
+    },
+    {
+      "source": "/en/api/netserver/lists/entity/generic-list",
+      "destination": "/en/api/lists/entity/generic-list"
+    },
+    {
+      "source": "/en/api/netserver/lists/entity/group-view",
+      "destination": "/en/api/lists/entity/group-view"
+    },
+    {
+      "source": "/en/api/netserver/lists/entity/index",
+      "destination": "/en/api/lists/entity/index"
+    },
+    {
+      "source": "/en/api/netserver/lists/entity/typed-list",
+      "destination": "/en/api/lists/entity/typed-list"
+    },
+    {
+      "source": "/en/api/netserver/lists/entity/udef-list",
+      "destination": "/en/api/lists/entity/udef-list"
+    },
+    {
+      "source": "/en/api/lists/row/index",
+      "destination": "/en/api/lists/row/how-to/add-list-item"
+    },
+    {
+      "source": "/en/api/netserver/lists/row/how-to/add-list-item",
+      "destination": "/en/api/lists/row/how-to/add-list-item"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/create-list-item",
+      "destination": "/en/api/lists/services/how-to/create-list-item"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/create-list",
+      "destination": "/en/api/lists/services/how-to/create-list"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/delete-list-item",
+      "destination": "/en/api/lists/services/how-to/delete-list-item"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/delete-list",
+      "destination": "/en/api/lists/services/how-to/delete-list"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/get-all-lists",
+      "destination": "/en/api/lists/services/how-to/get-all-lists"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/get-list-entity",
+      "destination": "/en/api/lists/services/how-to/get-list-entity"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/get-list-item",
+      "destination": "/en/api/lists/services/how-to/get-list-item"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/get-list-items",
+      "destination": "/en/api/lists/services/how-to/get-list-items"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/how-to/index",
+      "destination": "/en/api/lists/services/how-to/index"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/listagent/index",
+      "destination": "/en/api/lists/services/listagent/index"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/listagent/show-countrylist-in-combobox",
+      "destination": "/en/api/lists/services/listagent/show-countrylist-in-combobox"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/mdoagent/index",
+      "destination": "/en/api/lists/services/mdoagent/index"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/mdoagent/mdo-how-to",
+      "destination": "/en/api/lists/services/mdoagent/mdo-how-to"
+    },
+    {
+      "source": "/en/api/netserver/lists/services/index",
+      "destination": "/en/api/lists/services/index"
+    },
+    {
+      "source": "/en/api/lists/sql/index",
+      "destination": "/en/api/lists/sql/add-list-item-sql"
+    },
+    {
+      "source": "/en/api/netserver/lists/sql/add-list-item-sql",
+      "destination": "/en/api/lists/sql/add-list-item-sql"
+    },
+    {
+      "source": "/en/api/netserver/lists/index",
+      "destination": "/en/api/lists/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/addressformatter",
+      "destination": "/en/api/localization/address/addressformatter"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/addresshelper",
+      "destination": "/en/api/localization/address/addresshelper"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/index",
+      "destination": "/en/api/localization/address/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/index",
+      "destination": "/en/api/localization/address/index"
+    },
+    {
+      "source": "/en/api/localization/culture/index",
+      "destination": "/en/api/localization/culture/culturedataformatter"
+    },
+    {
+      "source": "/en/globalization-and-localization/culture/index",
+      "destination": "/en/api/localization/culture/culturedataformatter"
+    },
+    {
+      "source": "/en/globalization-and-localization/culture/culturedataformatter",
+      "destination": "/en/api/localization/culture/culturedataformatter"
+    },
+    {
+      "source": "/en/globalization-and-localization/culture/culturesettinghelper",
+      "destination": "/en/api/localization/culture/culturesettinghelper"
+    },
+    {
+      "source": "/en/globalization-and-localization/culture/display-in-current-culture",
+      "destination": "/en/api/localization/culture/display-in-current-culture"
+    },
+    {
+      "source": "/en/globalization-and-localization/culture/parse-values",
+      "destination": "/en/api/localization/culture/parse-values"
+    },
+    {
+      "source": "/en/api/localization/language/index",
+      "destination": "/en/api/localization/language/create-resource-provider"
+    },
+    {
+      "source": "/en/globalization-and-localization/language/index",
+      "destination": "/en/api/localization/language/create-resource-provider"
+    },
+    {
+      "source": "/en/globalization-and-localization/language/create-resource-provider",
+      "destination": "/en/api/localization/language/create-resource-provider"
+    },
+    {
+      "source": "/en/globalization-and-localization/language/create-resx-file",
+      "destination": "/en/api/localization/language/create-resx-file"
+    },
+    {
+      "source": "/en/globalization-and-localization/language/resource-providers",
+      "destination": "/en/api/localization/language/resource-providers"
+    },
+    {
+      "source": "/en/globalization-and-localization/language/translate-strings",
+      "destination": "/en/api/localization/language/translate-strings"
+    },
+    {
+      "source": "/en/globalization-and-localization/index",
+      "destination": "/en/api/localization/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/personnameformatter",
+      "destination": "/en/api/localization/personnameformatter"
+    },
+    {
+      "source": "/en/globalization-and-localization/phoneformatter",
+      "destination": "/en/api/localization/phoneformatter"
+    },
+    {
+      "source": "/en/globalization-and-localization/superoffice-crm-globalization",
+      "destination": "/en/api/localization/superoffice-crm-globalization"
+    },
+    {
+      "source": "/en/globalization-and-localization/superoffice-globalization",
+      "destination": "/en/api/localization/superoffice-globalization"
+    },
+    {
+      "source": "/en/api/netserver/logging/configure-serilog",
+      "destination": "/en/api/logging/configure-serilog"
+    },
+    {
+      "source": "/en/api/netserver/logging/create-custom-logger",
+      "destination": "/en/api/logging/create-custom-logger"
+    },
+    {
+      "source": "/en/api/netserver/logging/filter-logs",
+      "destination": "/en/api/logging/filter-logs"
+    },
+    {
+      "source": "/en/api/netserver/logging/index",
+      "destination": "/en/api/logging/index"
+    },
+    {
+      "source": "/en/api/netserver/logging/serilog",
+      "destination": "/en/api/logging/serilog"
+    },
+    {
+      "source": "/en/api/netserver/logging/standard-netserver-log",
+      "destination": "/en/api/logging/standard-netserver-log"
+    },
+    {
+      "source": "/en/api/netserver/mdo-providers/index",
+      "destination": "/en/api/mdo-providers/index"
+    },
+    {
+      "source": "/en/company/howto/osql/create-contact-osql",
+      "destination": "/en/api/osql/howto/company/create-contact-osql"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/company/create-contact-osql",
+      "destination": "/en/api/osql/howto/company/create-contact-osql"
+    },
+    {
+      "source": "/en/company/howto/osql/get-catlist-sodatareader",
+      "destination": "/en/api/osql/howto/company/get-catlist-sodatareader"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/company/get-catlist-sodatareader",
+      "destination": "/en/api/osql/howto/company/get-catlist-sodatareader"
+    },
+    {
+      "source": "/en/company/howto/osql/index",
+      "destination": "/en/api/osql/howto/company/index"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/index",
+      "destination": "/en/api/osql/howto/company/index"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/company/index",
+      "destination": "/en/api/osql/howto/company/index"
+    },
+    {
+      "source": "/en/api/osql/howto/index",
+      "destination": "/en/api/osql/howto/company/index"
+    },
+    {
+      "source": "/en/contact/howto/osql/get-persons-from-contact-sodatareader",
+      "destination": "/en/api/osql/howto/contact/get-persons-from-contact-sodatareader"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/contact/get-persons-from-contact-sodatareader",
+      "destination": "/en/api/osql/howto/contact/get-persons-from-contact-sodatareader"
+    },
+    {
+      "source": "/en/contact/howto/osql/index",
+      "destination": "/en/api/osql/howto/contact/index"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/contact/index",
+      "destination": "/en/api/osql/howto/contact/index"
+    },
+    {
+      "source": "/en/contact/howto/osql/update-person-osql",
+      "destination": "/en/api/osql/howto/contact/update-person-osql"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/contact/update-person-osql",
+      "destination": "/en/api/osql/howto/contact/update-person-osql"
+    },
+    {
+      "source": "/en/diary/howto/osql/create-apt-osql",
+      "destination": "/en/api/osql/howto/diary/create-apt-osql"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/diary/create-apt-osql",
+      "destination": "/en/api/osql/howto/diary/create-apt-osql"
+    },
+    {
+      "source": "/en/diary/howto/osql/index",
+      "destination": "/en/api/osql/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/diary/index",
+      "destination": "/en/api/osql/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/add-numbers",
+      "destination": "/en/api/osql/howto/add-numbers"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/add-strings",
+      "destination": "/en/api/osql/howto/add-strings"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/create-connection",
+      "destination": "/en/api/osql/howto/create-connection"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/using-delete",
+      "destination": "/en/api/osql/howto/using-delete"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/using-insert",
+      "destination": "/en/api/osql/howto/using-insert"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/using-select",
+      "destination": "/en/api/osql/howto/using-select"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/using-sentry",
+      "destination": "/en/api/osql/howto/using-sentry"
+    },
+    {
+      "source": "/en/api/netserver/osql/howto/using-update",
+      "destination": "/en/api/osql/howto/using-update"
+    },
+    {
+      "source": "/en/api/netserver/osql/alias",
+      "destination": "/en/api/osql/alias"
+    },
+    {
+      "source": "/en/api/netserver/osql/and-clause",
+      "destination": "/en/api/osql/and-clause"
+    },
+    {
+      "source": "/en/api/netserver/osql/count",
+      "destination": "/en/api/osql/count"
+    },
+    {
+      "source": "/en/api/netserver/osql/delete",
+      "destination": "/en/api/osql/delete"
+    },
+    {
+      "source": "/en/api/netserver/osql/groupby",
+      "destination": "/en/api/osql/groupby"
+    },
+    {
+      "source": "/en/api/netserver/osql/in-enum",
+      "destination": "/en/api/osql/in-enum"
+    },
+    {
+      "source": "/en/api/netserver/osql/index",
+      "destination": "/en/api/osql/index"
+    },
+    {
+      "source": "/en/api/netserver/osql/insert",
+      "destination": "/en/api/osql/insert"
+    },
+    {
+      "source": "/en/api/netserver/osql/join",
+      "destination": "/en/api/osql/join"
+    },
+    {
+      "source": "/en/api/netserver/osql/like",
+      "destination": "/en/api/osql/like"
+    },
+    {
+      "source": "/en/api/netserver/osql/orderby",
+      "destination": "/en/api/osql/orderby"
+    },
+    {
+      "source": "/en/api/netserver/osql/osql-evolution",
+      "destination": "/en/api/osql/osql-evolution"
+    },
+    {
+      "source": "/en/api/netserver/osql/outerjoin",
+      "destination": "/en/api/osql/outerjoin"
+    },
+    {
+      "source": "/en/api/netserver/osql/so-data-reader",
+      "destination": "/en/api/osql/so-data-reader"
+    },
+    {
+      "source": "/en/api/netserver/osql/soundx",
+      "destination": "/en/api/osql/soundx"
+    },
+    {
+      "source": "/en/api/netserver/osql/update",
+      "destination": "/en/api/osql/update"
+    },
+    {
+      "source": "/en/api/netserver/osql/upper",
+      "destination": "/en/api/osql/upper"
+    },
+    {
+      "source": "/en/api/netserver/plugins/document/soarc-document-plugin",
+      "destination": "/en/api/plugins/document/soarc-document-plugin"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/api/erp-actor-carrier",
+      "destination": "/en/api/plugins/erp-connectors/api/erp-actor-carrier"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/api/field-meta-data-carrier",
+      "destination": "/en/api/plugins/erp-connectors/api/field-meta-data-carrier"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/api/field-value-formats-and-conventions",
+      "destination": "/en/api/plugins/erp-connectors/api/field-value-formats-and-conventions"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/api/ierpconnector",
+      "destination": "/en/api/plugins/erp-connectors/api/ierpconnector"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/api/index",
+      "destination": "/en/api/plugins/erp-connectors/api/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/api/pluginresponseinfo",
+      "destination": "/en/api/plugins/erp-connectors/api/pluginresponseinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/architecture/index",
+      "destination": "/en/api/plugins/erp-connectors/architecture/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/architecture/soap-service",
+      "destination": "/en/api/plugins/erp-connectors/architecture/soap-service"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/architecture/sync-service",
+      "destination": "/en/api/plugins/erp-connectors/architecture/sync-service"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/architecture/wcf-host",
+      "destination": "/en/api/plugins/erp-connectors/architecture/wcf-host"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/online/example-api",
+      "destination": "/en/api/plugins/erp-connectors/online/example-api"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/online/index",
+      "destination": "/en/api/plugins/erp-connectors/online/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/online/secure-in-online",
+      "destination": "/en/api/plugins/erp-connectors/online/secure-in-online"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/search/index",
+      "destination": "/en/api/plugins/erp-connectors/search/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/search/search-operators",
+      "destination": "/en/api/plugins/erp-connectors/search/search-operators"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/search/show-fields",
+      "destination": "/en/api/plugins/erp-connectors/search/show-fields"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/automatic-field-mapping",
+      "destination": "/en/api/plugins/erp-connectors/automatic-field-mapping"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/client-gui",
+      "destination": "/en/api/plugins/erp-connectors/client-gui"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/default-values",
+      "destination": "/en/api/plugins/erp-connectors/default-values"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/getting-started",
+      "destination": "/en/api/plugins/erp-connectors/getting-started"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/helpers",
+      "destination": "/en/api/plugins/erp-connectors/helpers"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/import",
+      "destination": "/en/api/plugins/erp-connectors/import"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/index",
+      "destination": "/en/api/plugins/erp-connectors/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/ranking-fields",
+      "destination": "/en/api/plugins/erp-connectors/ranking-fields"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/sample",
+      "destination": "/en/api/plugins/erp-connectors/sample"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/setup-connection",
+      "destination": "/en/api/plugins/erp-connectors/setup-connection"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/setup-defaults",
+      "destination": "/en/api/plugins/erp-connectors/setup-defaults"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/setup-mapping",
+      "destination": "/en/api/plugins/erp-connectors/setup-mapping"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/sync-operation",
+      "destination": "/en/api/plugins/erp-connectors/sync-operation"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/terminology",
+      "destination": "/en/api/plugins/erp-connectors/terminology"
+    },
+    {
+      "source": "/en/api/netserver/plugins/erp-connectors/tutorial",
+      "destination": "/en/api/plugins/erp-connectors/tutorial"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/addressinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/addressinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/extradatafieldtypeinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/extradatafieldtypeinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/fieldmetadatainfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/fieldmetadatainfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/index",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/isaleinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/isaleinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/orderresponseinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/orderresponseinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/placeorderresponseinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/placeorderresponseinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/pluginresponseinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/pluginresponseinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/pricelistinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/pricelistinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/productextradatafieldinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/productextradatafieldinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/productinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/productinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quotealternativecontextinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quotealternativecontextinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quotealternativeinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quotealternativeinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quotealternativewithlinesinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quotealternativewithlinesinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteconnectioninfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quoteconnectioninfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quoteinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quotelineinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quotelineinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quotelistiteminfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quotelistiteminfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quotesentresponseinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quotesentresponseinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteversioncontextinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quoteversioncontextinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteversioninfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quoteversioninfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteversionresponseinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quoteversionresponseinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteversionstateinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quoteversionstateinfo"
+    },
+    {
+      "source": "/en/api/plugins/quote-connectors/api/enums/index",
+      "destination": "/en/api/plugins/quote-connectors/api/enums/configfieldtype"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/enums/configfieldtype",
+      "destination": "/en/api/plugins/quote-connectors/api/enums/configfieldtype"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/enums/index",
+      "destination": "/en/api/plugins/quote-connectors/api/enums/configfieldtype"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/enums/fieldaccessinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/enums/fieldaccessinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/enums/quoteaction",
+      "destination": "/en/api/plugins/quote-connectors/api/enums/quoteaction"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/enums/quotestatus",
+      "destination": "/en/api/plugins/quote-connectors/api/enums/quotestatus"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/enums/valueoverrideinfo",
+      "destination": "/en/api/plugins/quote-connectors/api/enums/valueoverrideinfo"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/iarchiveprovider",
+      "destination": "/en/api/plugins/quote-connectors/api/iarchiveprovider"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/index",
+      "destination": "/en/api/plugins/quote-connectors/api/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/iproductregistercache",
+      "destination": "/en/api/plugins/quote-connectors/api/iproductregistercache"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/iquoteconnector",
+      "destination": "/en/api/plugins/quote-connectors/api/iquoteconnector"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/iquoteconnector2",
+      "destination": "/en/api/plugins/quote-connectors/api/iquoteconnector2"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/quoteconnectorbase",
+      "destination": "/en/api/plugins/quote-connectors/api/quoteconnectorbase"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/quoteconnectorextender",
+      "destination": "/en/api/plugins/quote-connectors/api/quoteconnectorextender"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/reason-fields",
+      "destination": "/en/api/plugins/quote-connectors/api/reason-fields"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/api/rights-field",
+      "destination": "/en/api/plugins/quote-connectors/api/rights-field"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/online-quote-connectors/index",
+      "destination": "/en/api/plugins/quote-connectors/online-quote-connectors/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/online-quote-connectors/rest-quote-connector-api",
+      "destination": "/en/api/plugins/quote-connectors/online-quote-connectors/rest-quote-connector-api"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/online-quote-connectors/soap-quote-connector-api",
+      "destination": "/en/api/plugins/quote-connectors/online-quote-connectors/soap-quote-connector-api"
+    },
+    {
+      "source": "/en/api/plugins/quote-connectors/scenarios/index",
+      "destination": "/en/api/plugins/quote-connectors/scenarios/add-product"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/scenarios/add-product",
+      "destination": "/en/api/plugins/quote-connectors/scenarios/add-product"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/scenarios/index",
+      "destination": "/en/api/plugins/quote-connectors/scenarios/add-product"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/scenarios/customer-specific-product-codes",
+      "destination": "/en/api/plugins/quote-connectors/scenarios/customer-specific-product-codes"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/adding-products",
+      "destination": "/en/api/plugins/quote-connectors/adding-products"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/addresses",
+      "destination": "/en/api/plugins/quote-connectors/addresses"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/approve-quote",
+      "destination": "/en/api/plugins/quote-connectors/approve-quote"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/calc-price",
+      "destination": "/en/api/plugins/quote-connectors/calc-price"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/capability-names",
+      "destination": "/en/api/plugins/quote-connectors/capability-names"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/create-quote",
+      "destination": "/en/api/plugins/quote-connectors/create-quote"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/discounts",
+      "destination": "/en/api/plugins/quote-connectors/discounts"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/edit-connection",
+      "destination": "/en/api/plugins/quote-connectors/edit-connection"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/error-system",
+      "destination": "/en/api/plugins/quote-connectors/error-system"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/find-product",
+      "destination": "/en/api/plugins/quote-connectors/find-product"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/implementation-guide",
+      "destination": "/en/api/plugins/quote-connectors/implementation-guide"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/index",
+      "destination": "/en/api/plugins/quote-connectors/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/place-order",
+      "destination": "/en/api/plugins/quote-connectors/place-order"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/save-quote",
+      "destination": "/en/api/plugins/quote-connectors/save-quote"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/send-quote",
+      "destination": "/en/api/plugins/quote-connectors/send-quote"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/set-up",
+      "destination": "/en/api/plugins/quote-connectors/set-up"
+    },
+    {
+      "source": "/en/api/netserver/plugins/quote-connectors/start-client",
+      "destination": "/en/api/plugins/quote-connectors/start-client"
+    },
+    {
+      "source": "/en/api/netserver/plugins/sentry/create-sentry-plugin",
+      "destination": "/en/api/plugins/sentry/create-sentry-plugin"
+    },
+    {
+      "source": "/en/api/netserver/plugins/sentry/index",
+      "destination": "/en/api/plugins/sentry/index"
+    },
+    {
+      "source": "/en/api/netserver/plugins/sentry/tutorial-sentry-plugin-with-ext-table",
+      "destination": "/en/api/plugins/sentry/tutorial-sentry-plugin-with-ext-table"
+    },
+    {
+      "source": "/en/api/netserver/plugins/sentry/use-sentry-plugin",
+      "destination": "/en/api/plugins/sentry/use-sentry-plugin"
+    },
+    {
+      "source": "/en/api/netserver/plugins/index",
+      "destination": "/en/api/plugins/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/rows/index",
+      "destination": "/en/api/rows/howto/address/index"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/address/index",
+      "destination": "/en/api/rows/howto/address/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/rows/update-address",
+      "destination": "/en/api/rows/howto/address/update-address"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/address/update-address",
+      "destination": "/en/api/rows/howto/address/update-address"
+    },
+    {
+      "source": "/en/company/howto/row/add-new-contact-interest",
+      "destination": "/en/api/rows/howto/company/add-new-contact-interest"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/company/add-new-contact-interest",
+      "destination": "/en/api/rows/howto/company/add-new-contact-interest"
+    },
+    {
+      "source": "/en/company/howto/row/create-contact-row",
+      "destination": "/en/api/rows/howto/company/create-contact-row"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/company/create-contact-row",
+      "destination": "/en/api/rows/howto/company/create-contact-row"
+    },
+    {
+      "source": "/en/company/howto/row/create-contact-rows",
+      "destination": "/en/api/rows/howto/company/create-contact-rows"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/company/create-contact-rows",
+      "destination": "/en/api/rows/howto/company/create-contact-rows"
+    },
+    {
+      "source": "/en/company/howto/row/get-catlist-categoryrows",
+      "destination": "/en/api/rows/howto/company/get-catlist-categoryrows"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/company/get-catlist-categoryrows",
+      "destination": "/en/api/rows/howto/company/get-catlist-categoryrows"
+    },
+    {
+      "source": "/en/company/howto/row/index",
+      "destination": "/en/api/rows/howto/company/index"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/company/index",
+      "destination": "/en/api/rows/howto/company/index"
+    },
+    {
+      "source": "/en/contact/howto/row/collection",
+      "destination": "/en/api/rows/howto/contact/collection"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/contact/collection",
+      "destination": "/en/api/rows/howto/contact/collection"
+    },
+    {
+      "source": "/en/contact/howto/row/get-persons-from-contact-rows",
+      "destination": "/en/api/rows/howto/contact/get-persons-from-contact-rows"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/contact/get-persons-from-contact-rows",
+      "destination": "/en/api/rows/howto/contact/get-persons-from-contact-rows"
+    },
+    {
+      "source": "/en/contact/howto/row/index",
+      "destination": "/en/api/rows/howto/contact/index"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/contact/index",
+      "destination": "/en/api/rows/howto/contact/index"
+    },
+    {
+      "source": "/en/contact/howto/row/update-person-rows",
+      "destination": "/en/api/rows/howto/contact/update-person-rows"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/contact/update-person-rows",
+      "destination": "/en/api/rows/howto/contact/update-person-rows"
+    },
+    {
+      "source": "/en/diary/howto/row/create-apt-row",
+      "destination": "/en/api/rows/howto/diary/create-apt-row"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/diary/create-apt-row",
+      "destination": "/en/api/rows/howto/diary/create-apt-row"
+    },
+    {
+      "source": "/en/diary/howto/row/create-apt-rows",
+      "destination": "/en/api/rows/howto/diary/create-apt-rows"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/diary/create-apt-rows",
+      "destination": "/en/api/rows/howto/diary/create-apt-rows"
+    },
+    {
+      "source": "/en/diary/howto/row/index",
+      "destination": "/en/api/rows/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/diary/index",
+      "destination": "/en/api/rows/howto/diary/index"
+    },
+    {
+      "source": "/en/sale/saint/howto/row/index",
+      "destination": "/en/api/rows/howto/saint/index"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/saint/index",
+      "destination": "/en/api/rows/howto/saint/index"
+    },
+    {
+      "source": "/en/sale/saint/howto/row/search-saint-contactrow-customsearch",
+      "destination": "/en/api/rows/howto/saint/search-saint-contactrow-customsearch"
+    },
+    {
+      "source": "/en/api/netserver/rows/howto/saint/search-saint-contactrow-customsearch",
+      "destination": "/en/api/rows/howto/saint/search-saint-contactrow-customsearch"
+    },
+    {
+      "source": "/en/api/netserver/rows/create-row-in-entity",
+      "destination": "/en/api/rows/create-row-in-entity"
+    },
+    {
+      "source": "/en/api/netserver/rows/create-row",
+      "destination": "/en/api/rows/create-row"
+    },
+    {
+      "source": "/en/api/netserver/rows/customsearch",
+      "destination": "/en/api/rows/customsearch"
+    },
+    {
+      "source": "/en/api/netserver/rows/delete-row-from-entity",
+      "destination": "/en/api/rows/delete-row-from-entity"
+    },
+    {
+      "source": "/en/api/netserver/rows/delete-row",
+      "destination": "/en/api/rows/delete-row"
+    },
+    {
+      "source": "/en/api/netserver/rows/events",
+      "destination": "/en/api/rows/events"
+    },
+    {
+      "source": "/en/api/netserver/rows/get-row-from-entity",
+      "destination": "/en/api/rows/get-row-from-entity"
+    },
+    {
+      "source": "/en/api/netserver/rows/get-row",
+      "destination": "/en/api/rows/get-row"
+    },
+    {
+      "source": "/en/api/netserver/rows/index",
+      "destination": "/en/api/rows/index"
+    },
+    {
+      "source": "/en/api/netserver/rows/update-row-in-entity",
+      "destination": "/en/api/rows/update-row-in-entity"
+    },
+    {
+      "source": "/en/api/netserver/rows/update-row",
+      "destination": "/en/api/rows/update-row"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/date-range-as-criteria",
+      "destination": "/en/api/search/find-selection/date-range-as-criteria"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/convert-to-new-date-range-operators",
+      "destination": "/en/api/search/find-selection/date-range-as-criteria"
+    },
+    {
+      "source": "/en/api/search/find-selection/convert-to-new-date-range-operators",
+      "destination": "/en/api/search/find-selection/date-range-as-criteria"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/how-to-search",
+      "destination": "/en/api/search/find-selection/how-to-search"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/import-export-typical-search",
+      "destination": "/en/api/search/find-selection/import-export-typical-search"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection",
+      "destination": "/en/api/search/find-selection/index"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/operators",
+      "destination": "/en/api/search/find-selection/operators"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/populate-selectable-columns",
+      "destination": "/en/api/search/find-selection/populate-selectable-columns"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/terminology",
+      "destination": "/en/api/search/find-selection/terminology"
+    },
+    {
+      "source": "/en/api/netserver/search/find-selection/typical-search",
+      "destination": "/en/api/search/find-selection/typical-search"
+    },
+    {
+      "source": "/en/api/netserver/search/iarchiveagent/iarchiveagent",
+      "destination": "/en/api/search/iarchiveagent/iarchiveagent"
+    },
+    {
+      "source": "/en/api/netserver/search/iarchiveagent",
+      "destination": "/en/api/search/iarchiveagent/index"
+    },
+    {
+      "source": "/en/api/netserver/search/iarchiveagent/using-activityarchive-filters",
+      "destination": "/en/api/search/iarchiveagent/using-activityarchive-filters"
+    },
+    {
+      "source": "/en/api/netserver/search/iarchiveagent/using-criteria",
+      "destination": "/en/api/search/iarchiveagent/using-criteria"
+    },
+    {
+      "source": "/en/api/netserver/search/ifindagent/dump-result",
+      "destination": "/en/api/search/ifindagent/dump-result"
+    },
+    {
+      "source": "/en/api/netserver/search/ifindagent/find-project-by-name",
+      "destination": "/en/api/search/ifindagent/find-project-by-name"
+    },
+    {
+      "source": "/en/api/netserver/search/ifindagent",
+      "destination": "/en/api/search/ifindagent/index"
+    },
+    {
+      "source": "/en/api/netserver/search/ifindagent/using-criteria",
+      "destination": "/en/api/search/ifindagent/using-criteria"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/associate",
+      "destination": "/en/api/search/odata/associate"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/boolean",
+      "destination": "/en/api/search/odata/boolean"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/date",
+      "destination": "/en/api/search/odata/date"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/datetime",
+      "destination": "/en/api/search/odata/datetime"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/dynamic-provider",
+      "destination": "/en/api/search/odata/dynamic-provider"
+    },
+    {
+      "source": "/en/api/netserver/search/odata",
+      "destination": "/en/api/search/odata/index"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/lists",
+      "destination": "/en/api/search/odata/lists"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/metadata",
+      "destination": "/en/api/search/odata/metadata"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/numbers",
+      "destination": "/en/api/search/odata/numbers"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/strings",
+      "destination": "/en/api/search/odata/strings"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/unary",
+      "destination": "/en/api/search/odata/unary"
+    },
+    {
+      "source": "/en/api/netserver/search/odata/using-filters",
+      "destination": "/en/api/search/odata/using-filters"
+    },
+    {
+      "source": "/en/api/search/selection/archive/index",
+      "destination": "/en/api/search/selection/archive/get-selection-members-provider"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/archive/get-selection-members-provider",
+      "destination": "/en/api/search/selection/archive/get-selection-members-provider"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/archive",
+      "destination": "/en/api/search/selection/archive/get-selection-members-provider"
+    },
+    {
+      "source": "/en/api/search/selection/entity/index",
+      "destination": "/en/api/search/selection/entity/add-member-to-static-selection-entities"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/entity/add-member-to-static-selection-entities",
+      "destination": "/en/api/search/selection/entity/add-member-to-static-selection-entities"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/entity",
+      "destination": "/en/api/search/selection/entity/add-member-to-static-selection-entities"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/entity/create-dynamic-entity",
+      "destination": "/en/api/search/selection/entity/create-dynamic-entity"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/entity/get-selection-members-entity",
+      "destination": "/en/api/search/selection/entity/get-selection-members-entity"
+    },
+    {
+      "source": "/en/api/search/selection/osql/index",
+      "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/osql/add-member-to-static-selection-osql",
+      "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/osql",
+      "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
+    },
+    {
+      "source": "/en/api/search/selection/services/index",
+      "destination": "/en/api/search/selection/services/create-dynamic-services"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/services/create-dynamic-services",
+      "destination": "/en/api/search/selection/services/create-dynamic-services"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/services",
+      "destination": "/en/api/search/selection/services/create-dynamic-services"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/services/get-selection-members-services",
+      "destination": "/en/api/search/selection/services/get-selection-members-services"
+    },
+    {
+      "source": "/en/api/search/selection/sql/index",
+      "destination": "/en/api/search/selection/sql/add-person-to-selection"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/sql/add-person-to-selection",
+      "destination": "/en/api/search/selection/sql/add-person-to-selection"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/sql",
+      "destination": "/en/api/search/selection/sql/add-person-to-selection"
+    },
+    {
+      "source": "/en/api/netserver/search/selection/dynamic-selections",
+      "destination": "/en/api/search/selection/dynamic-selections"
+    },
+    {
+      "source": "/en/api/netserver/search/selection",
+      "destination": "/en/api/search/selection/index"
+    },
+    {
+      "source": "/en/api/netserver/search/full-text-search",
+      "destination": "/en/api/search/full-text-search"
+    },
+    {
+      "source": "/en/api/netserver/search",
+      "destination": "/en/api/search/index"
+    },
+    {
+      "source": "/en/api/security/sentry/osql/index",
+      "destination": "/en/api/security/sentry/osql/distinct"
+    },
+    {
+      "source": "/en/api/security/sentry/sql/index",
+      "destination": "/en/api/security/sentry/sql/set-override-sql"
+    },
+    {
+      "source": "/en/company/howto/sql/create-contact-sql",
+      "destination": "/en/api/sql/howto/company/create-contact-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/company/create-contact-sql",
+      "destination": "/en/api/sql/howto/company/create-contact-sql"
+    },
+    {
+      "source": "/en/company/howto/sql/get-catlist-sql",
+      "destination": "/en/api/sql/howto/company/get-catlist-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/company/get-catlist-sql",
+      "destination": "/en/api/sql/howto/company/get-catlist-sql"
+    },
+    {
+      "source": "/en/company/howto/sql/get-contact-details-sql",
+      "destination": "/en/api/sql/howto/company/get-contact-details-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/company/get-contact-details-sql",
+      "destination": "/en/api/sql/howto/company/get-contact-details-sql"
+    },
+    {
+      "source": "/en/company/howto/sql/get-interests-sql",
+      "destination": "/en/api/sql/howto/company/get-interests-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/company/get-interests-sql",
+      "destination": "/en/api/sql/howto/company/get-interests-sql"
+    },
+    {
+      "source": "/en/company/howto/sql/index",
+      "destination": "/en/api/sql/howto/company/index"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/company/index",
+      "destination": "/en/api/sql/howto/company/index"
+    },
+    {
+      "source": "/en/contact/howto/sql/add-person-picture-blobs-sql",
+      "destination": "/en/api/sql/howto/contact/add-person-picture-blobs-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/contact/add-person-picture-blobs-sql",
+      "destination": "/en/api/sql/howto/contact/add-person-picture-blobs-sql"
+    },
+    {
+      "source": "/en/contact/howto/sql/get-persons-from-contact-sql",
+      "destination": "/en/api/sql/howto/contact/get-persons-from-contact-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/contact/get-persons-from-contact-sql",
+      "destination": "/en/api/sql/howto/contact/get-persons-from-contact-sql"
+    },
+    {
+      "source": "/en/contact/howto/sql/index",
+      "destination": "/en/api/sql/howto/contact/index"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/contact/index",
+      "destination": "/en/api/sql/howto/contact/index"
+    },
+    {
+      "source": "/en/contact/howto/sql/update-person-sql",
+      "destination": "/en/api/sql/howto/contact/update-person-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/contact/update-person-sql",
+      "destination": "/en/api/sql/howto/contact/update-person-sql"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/sql/index",
+      "destination": "/en/api/sql/howto/custom-objects/index"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/custom-objects/index",
+      "destination": "/en/api/sql/howto/custom-objects/index"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/sql/set-udef",
+      "destination": "/en/api/sql/howto/custom-objects/set-udef"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/custom-objects/set-udef",
+      "destination": "/en/api/sql/howto/custom-objects/set-udef"
+    },
+    {
+      "source": "/en/diary/howto/sql/accept-invitation-sql",
+      "destination": "/en/api/sql/howto/diary/accept-invitation-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/diary/accept-invitation-sql",
+      "destination": "/en/api/sql/howto/diary/accept-invitation-sql"
+    },
+    {
+      "source": "/en/diary/howto/sql/create-apt-sql",
+      "destination": "/en/api/sql/howto/diary/create-apt-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/diary/create-apt-sql",
+      "destination": "/en/api/sql/howto/diary/create-apt-sql"
+    },
+    {
+      "source": "/en/diary/howto/sql/create-invitation-sql",
+      "destination": "/en/api/sql/howto/diary/create-invitation-sql"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/diary/create-invitation-sql",
+      "destination": "/en/api/sql/howto/diary/create-invitation-sql"
+    },
+    {
+      "source": "/en/diary/howto/sql/index",
+      "destination": "/en/api/sql/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/diary/index",
+      "destination": "/en/api/sql/howto/diary/index"
+    },
+    {
+      "source": "/en/project/howto/sql/create",
+      "destination": "/en/api/sql/howto/project/create"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/project/create",
+      "destination": "/en/api/sql/howto/project/create"
+    },
+    {
+      "source": "/en/project/howto/sql/index",
+      "destination": "/en/api/sql/howto/project/index"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/project/index",
+      "destination": "/en/api/sql/howto/project/index"
+    },
+    {
+      "source": "/en/project/howto/sql/project-guide",
+      "destination": "/en/api/sql/howto/project/project-guide"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/project/project-guide",
+      "destination": "/en/api/sql/howto/project/project-guide"
+    },
+    {
+      "source": "/en/project/howto/sql/text-table",
+      "destination": "/en/api/sql/howto/project/text-table"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/project/text-table",
+      "destination": "/en/api/sql/howto/project/text-table"
+    },
+    {
+      "source": "/en/sale/saint/howto/sql/get-contact-by-saint-value",
+      "destination": "/en/api/sql/howto/saint/get-contact-by-saint-value"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/saint/get-contact-by-saint-value",
+      "destination": "/en/api/sql/howto/saint/get-contact-by-saint-value"
+    },
+    {
+      "source": "/en/sale/saint/howto/sql/index",
+      "destination": "/en/api/sql/howto/saint/index"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/saint/index",
+      "destination": "/en/api/sql/howto/saint/index"
+    },
+    {
+      "source": "/en/sale/saint/howto/sql/search-saint-values",
+      "destination": "/en/api/sql/howto/saint/search-saint-values"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/saint/search-saint-values",
+      "destination": "/en/api/sql/howto/saint/search-saint-values"
+    },
+    {
+      "source": "/en/sale/howto/sql/stakeholders",
+      "destination": "/en/api/sql/howto/sale/stakeholders"
+    },
+    {
+      "source": "/en/api/netserver/sql/howto/sale/stakeholders",
+      "destination": "/en/api/sql/howto/sale/stakeholders"
+    },
+    {
+      "source": "/en/admin/user-preferences/add-prefdesc",
+      "destination": "/en/api/sql/howto/user-preferences/add-prefdesc"
+    },
+    {
+      "source": "/en/diary/tutorials/itunes-like-activities/index",
+      "destination": "/en/api/tutorials/itunes-like-activities/index"
+    },
+    {
+      "source": "/en/diary/tutorials/rss-feed-vb/index",
+      "destination": "/en/api/tutorials/rss-feed-vb/index"
+    },
+    {
+      "source": "/en/diary/tutorials/so-ical-feed/index",
+      "destination": "/en/api/tutorials/so-ical-feed/index"
+    },
+    {
+      "source": "/en/diary/tutorials/index",
+      "destination": "/en/api/tutorials/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/endpoints/agents-webapi/index",
+      "destination": "/en/api/web-services/endpoints/agents-webapi/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/endpoints/rest-webapi/index",
+      "destination": "/en/api/web-services/endpoints/rest-webapi/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/endpoints/soap/index",
+      "destination": "/en/api/web-services/endpoints/soap/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/endpoints/get-webapi-version",
+      "destination": "/en/api/web-services/endpoints/get-webapi-version"
+    },
+    {
+      "source": "/en/api/netserver/web-services/endpoints/http-headers",
+      "destination": "/en/api/web-services/endpoints/http-headers"
+    },
+    {
+      "source": "/en/api/netserver/web-services/endpoints/index",
+      "destination": "/en/api/web-services/endpoints/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/services/get-localized-address",
+      "destination": "/en/api/web-services/howto/address/get-localized-address"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/address/get-localized-address",
+      "destination": "/en/api/web-services/howto/address/get-localized-address"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/services/index",
+      "destination": "/en/api/web-services/howto/address/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/address/index",
+      "destination": "/en/api/web-services/howto/address/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/services/set-localized-address",
+      "destination": "/en/api/web-services/howto/address/set-localized-address"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/address/set-localized-address",
+      "destination": "/en/api/web-services/howto/address/set-localized-address"
+    },
+    {
+      "source": "/en/company/howto/services/add-catlist-item-rest",
+      "destination": "/en/api/web-services/howto/company/add-catlist-item-rest"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/add-catlist-item-rest",
+      "destination": "/en/api/web-services/howto/company/add-catlist-item-rest"
+    },
+    {
+      "source": "/en/company/howto/services/add-catlist-item-webapi-agents",
+      "destination": "/en/api/web-services/howto/company/add-catlist-item-webapi-agents"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/add-catlist-item-webapi-agents",
+      "destination": "/en/api/web-services/howto/company/add-catlist-item-webapi-agents"
+    },
+    {
+      "source": "/en/api/web-services/howto/company/create-contact-rest",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/api/web-services/howto/company/create-contact-services",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/api/web-services/howto/company/create-contact-webapi-agents",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/company/howto/services/create-contact-rest",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/create-contact",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/create-contact-rest",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/create-contact-services",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/create-contact-webapi-agents",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/company/howto/services/create-contact-services",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/company/howto/services/create-contact-webapi-agents",
+      "destination": "/en/api/web-services/howto/company/create-contact"
+    },
+    {
+      "source": "/en/company/howto/services/get-all-contacts-rest",
+      "destination": "/en/api/web-services/howto/company/get-all-contacts-rest"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/get-all-contacts-rest",
+      "destination": "/en/api/web-services/howto/company/get-all-contacts-rest"
+    },
+    {
+      "source": "/en/company/howto/services/get-catlist-listagent",
+      "destination": "/en/api/web-services/howto/company/get-catlist-listagent"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/get-catlist-listagent",
+      "destination": "/en/api/web-services/howto/company/get-catlist-listagent"
+    },
+    {
+      "source": "/en/company/howto/services/get-catlist-mdoagent",
+      "destination": "/en/api/web-services/howto/company/get-catlist-mdoagent"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/get-catlist-mdoagent",
+      "destination": "/en/api/web-services/howto/company/get-catlist-mdoagent"
+    },
+    {
+      "source": "/en/company/howto/services/get-contact-via-services-layer",
+      "destination": "/en/api/web-services/howto/company/get-contact-via-services-layer"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/get-contact-via-services-layer",
+      "destination": "/en/api/web-services/howto/company/get-contact-via-services-layer"
+    },
+    {
+      "source": "/en/company/howto/services/get-interests-for-contact-services",
+      "destination": "/en/api/web-services/howto/company/get-interests-for-contact-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/get-interests-for-contact-services",
+      "destination": "/en/api/web-services/howto/company/get-interests-for-contact-services"
+    },
+    {
+      "source": "/en/company/howto/services/get-set-category-mdoagent",
+      "destination": "/en/api/web-services/howto/company/get-set-category-mdoagent"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/get-set-category-mdoagent",
+      "destination": "/en/api/web-services/howto/company/get-set-category-mdoagent"
+    },
+    {
+      "source": "/en/company/howto/services/index",
+      "destination": "/en/api/web-services/howto/company/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/index",
+      "destination": "/en/api/web-services/howto/company/index"
+    },
+    {
+      "source": "/en/company/howto/services/set-interest-on-off-services",
+      "destination": "/en/api/web-services/howto/company/set-interest-on-off-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/company/set-interest-on-off-services",
+      "destination": "/en/api/web-services/howto/company/set-interest-on-off-services"
+    },
+    {
+      "source": "/en/contact/howto/services/display-image-from-blob-table-services",
+      "destination": "/en/api/web-services/howto/contact/display-image-from-blob-table-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/display-image-from-blob-table-services",
+      "destination": "/en/api/web-services/howto/contact/display-image-from-blob-table-services"
+    },
+    {
+      "source": "/en/contact/howto/services/display-person-image-ws",
+      "destination": "/en/api/web-services/howto/contact/display-person-image-ws"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/display-person-image-ws",
+      "destination": "/en/api/web-services/howto/contact/display-person-image-ws"
+    },
+    {
+      "source": "/en/contact/howto/services/get-person-image-rest",
+      "destination": "/en/api/web-services/howto/contact/get-person-image-rest"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/get-person-image-rest",
+      "destination": "/en/api/web-services/howto/contact/get-person-image-rest"
+    },
+    {
+      "source": "/en/contact/howto/services/get-persons-contactagent",
+      "destination": "/en/api/web-services/howto/contact/get-persons-contactagent"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/get-persons-contactagent",
+      "destination": "/en/api/web-services/howto/contact/get-persons-contactagent"
+    },
+    {
+      "source": "/en/contact/howto/services/get-persons-personagent",
+      "destination": "/en/api/web-services/howto/contact/get-persons-personagent"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/get-persons-personagent",
+      "destination": "/en/api/web-services/howto/contact/get-persons-personagent"
+    },
+    {
+      "source": "/en/contact/howto/services/index",
+      "destination": "/en/api/web-services/howto/contact/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/index",
+      "destination": "/en/api/web-services/howto/contact/index"
+    },
+    {
+      "source": "/en/contact/howto/services/update-person-image-rest",
+      "destination": "/en/api/web-services/howto/contact/update-person-image-rest"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/update-person-image-rest",
+      "destination": "/en/api/web-services/howto/contact/update-person-image-rest"
+    },
+    {
+      "source": "/en/contact/howto/services/update-person-services",
+      "destination": "/en/api/web-services/howto/contact/update-person-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/contact/update-person-services",
+      "destination": "/en/api/web-services/howto/contact/update-person-services"
+    },
+    {
+      "source": "/en/api/custom-objects/howto/custom-objects-search",
+      "destination": "/en/api/web-services/howto/custom-objects/custom-objects-search"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/custom-objects-search",
+      "destination": "/en/api/web-services/howto/custom-objects/custom-objects-search"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/find-contact-by-udef",
+      "destination": "/en/api/web-services/howto/custom-objects/find-contact-by-udef"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/find-contact-by-udef",
+      "destination": "/en/api/web-services/howto/custom-objects/find-contact-by-udef"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/get-udef-list-and-values",
+      "destination": "/en/api/web-services/howto/custom-objects/get-udef-list-and-values"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/get-udef-list-and-values",
+      "destination": "/en/api/web-services/howto/custom-objects/get-udef-list-and-values"
+    },
+    {
+      "source": "/en/api/custom-objects/index",
+      "destination": "/en/api/web-services/howto/custom-objects/index"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/index",
+      "destination": "/en/api/web-services/howto/custom-objects/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/index",
+      "destination": "/en/api/web-services/howto/custom-objects/index"
+    },
+    {
+      "source": "/en/api/custom-objects/howto/custom-objects-insert-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-add-custom-object-row"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-add-custom-object-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-add-custom-object-row"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/rest-create-udef-field",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-create-udef-field"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-create-udef-field",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-create-udef-field"
+    },
+    {
+      "source": "/en/api/custom-objects/howto/custom-objects-delete-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-delete-custom-object-row"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-delete-custom-object-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-delete-custom-object-row"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/rest-delete-udef-field",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-delete-udef-field"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-delete-udef-field",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-delete-udef-field"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/rest-get-all-udef-fields",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-get-all-udef-fields"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-get-all-udef-fields",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-get-all-udef-fields"
+    },
+    {
+      "source": "/en/api/custom-objects/howto/custom-objects-read-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-get-custom-object-row"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-get-custom-object-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-get-custom-object-row"
+    },
+    {
+      "source": "/en/api/custom-objects/howto/custom-objects-update-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-update-custom-object-row"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-update-custom-object-row",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-update-custom-object-row"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/rest-update-udef-field",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-update-udef-field"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/rest-update-udef-field",
+      "destination": "/en/api/web-services/howto/custom-objects/rest-update-udef-field"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/services/set-udef-listitem-value",
+      "destination": "/en/api/web-services/howto/custom-objects/set-udef-listitem-value"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/custom-objects/set-udef-listitem-value",
+      "destination": "/en/api/web-services/howto/custom-objects/set-udef-listitem-value"
+    },
+    {
+      "source": "/en/dashboard/howto/dashboard",
+      "destination": "/en/api/web-services/howto/dashboard/get-dashboard-rest"
+    },
+    {
+      "source": "/en/api/web-services/howto/dashboard",
+      "destination": "/en/api/web-services/howto/dashboard/get-dashboard-rest"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/dashboard",
+      "destination": "/en/api/web-services/howto/dashboard/get-dashboard-rest"
+    },
+    {
+      "source": "/en/diary/howto/services/accept-invitation-services",
+      "destination": "/en/api/web-services/howto/diary/accept-invitation-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/accept-invitation-services",
+      "destination": "/en/api/web-services/howto/diary/accept-invitation-services"
+    },
+    {
+      "source": "/en/diary/howto/services/create-apt-services",
+      "destination": "/en/api/web-services/howto/diary/create-apt-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/create-apt-services",
+      "destination": "/en/api/web-services/howto/diary/create-apt-services"
+    },
+    {
+      "source": "/en/diary/howto/services/create-invitation-services",
+      "destination": "/en/api/web-services/howto/diary/create-invitation-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/create-invitation-services",
+      "destination": "/en/api/web-services/howto/diary/create-invitation-services"
+    },
+    {
+      "source": "/en/diary/howto/services/create-recurring-appointment-services",
+      "destination": "/en/api/web-services/howto/diary/create-recurring-appointment-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/create-recurring-appointment-services",
+      "destination": "/en/api/web-services/howto/diary/create-recurring-appointment-services"
+    },
+    {
+      "source": "/en/diary/howto/services/get-invitations-services",
+      "destination": "/en/api/web-services/howto/diary/get-invitations-services"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/get-invitations-services",
+      "destination": "/en/api/web-services/howto/diary/get-invitations-services"
+    },
+    {
+      "source": "/en/diary/howto/services/index",
+      "destination": "/en/api/web-services/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/index",
+      "destination": "/en/api/web-services/howto/diary/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/rest-create-videomeeting",
+      "destination": "/en/api/web-services/howto/diary/rest-create-videomeeting"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/diary/rest-delete-videomeeting",
+      "destination": "/en/api/web-services/howto/diary/rest-delete-videomeeting"
+    },
+    {
+      "source": "/en/document/howto/index",
+      "destination": "/en/api/web-services/howto/document/index"
+    },
+    {
+      "source": "/en/document/howto/agents-web-api/index",
+      "destination": "/en/api/web-services/howto/document/index"
+    },
+    {
+      "source": "/en/document/howto/rest/index",
+      "destination": "/en/api/web-services/howto/document/index"
+    },
+    {
+      "source": "/en/document/howto/services/index",
+      "destination": "/en/api/web-services/howto/document/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/document/index",
+      "destination": "/en/api/web-services/howto/document/index"
+    },
+    {
+      "source": "/en/document/howto/agents-web-api/add-document-template",
+      "destination": "/en/api/web-services/howto/document/rest-add-document-template"
+    },
+    {
+      "source": "/en/document/howto/rest/add-document-template",
+      "destination": "/en/api/web-services/howto/document/rest-add-document-template"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/document/rest-add-document-template",
+      "destination": "/en/api/web-services/howto/document/rest-add-document-template"
+    },
+    {
+      "source": "/en/document/howto/agents-web-api/generate-document",
+      "destination": "/en/api/web-services/howto/document/rest-generate-document"
+    },
+    {
+      "source": "/en/document/howto/rest/generate-document",
+      "destination": "/en/api/web-services/howto/document/rest-generate-document"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/document/rest-generate-document",
+      "destination": "/en/api/web-services/howto/document/rest-generate-document"
+    },
+    {
+      "source": "/en/document/howto/services/configure-access",
+      "destination": "/en/api/web-services/howto/document/services-configure-access"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/document/services-configure-access",
+      "destination": "/en/api/web-services/howto/document/services-configure-access"
+    },
+    {
+      "source": "/en/document/howto/services/create",
+      "destination": "/en/api/web-services/howto/document/services-create"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/document/services-create",
+      "destination": "/en/api/web-services/howto/document/services-create"
+    },
+    {
+      "source": "/en/document/howto/services/download",
+      "destination": "/en/api/web-services/howto/document/services-download"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/document/services-download",
+      "destination": "/en/api/web-services/howto/document/services-download"
+    },
+    {
+      "source": "/en/document/howto/services/update",
+      "destination": "/en/api/web-services/howto/document/services-update"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/document/services-update",
+      "destination": "/en/api/web-services/howto/document/services-update"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/flows/index",
+      "destination": "/en/api/web-services/howto/flows/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/flows/rest-create-default-email-flow",
+      "destination": "/en/api/web-services/howto/flows/rest-create-default-email-flow"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/flows/rest-create-flow-step",
+      "destination": "/en/api/web-services/howto/flows/rest-create-flow-step"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/flows/rest-create-flow-trigger",
+      "destination": "/en/api/web-services/howto/flows/rest-create-flow-trigger"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/flows/rest-save-flow",
+      "destination": "/en/api/web-services/howto/flows/rest-save-flow"
+    },
+    {
+      "source": "/en/sale/howto/services/index",
+      "destination": "/en/api/web-services/howto/sale/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/sale/index",
+      "destination": "/en/api/web-services/howto/sale/index"
+    },
+    {
+      "source": "/en/sale/howto/services/link-sale-to-appointment",
+      "destination": "/en/api/web-services/howto/sale/link-sale-to-appointment"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/sale/link-sale-to-appointment",
+      "destination": "/en/api/web-services/howto/sale/link-sale-to-appointment"
+    },
+    {
+      "source": "/en/admin/user-preferences/howto/get-preferences-preferenceagent",
+      "destination": "/en/api/web-services/howto/user-preferences/get-preferences-preferenceagent"
+    },
+    {
+      "source": "/en/admin/user-preferences/howto/set-preferences-preferenceagent",
+      "destination": "/en/api/web-services/howto/user-preferences/set-preferences-preferenceagent"
+    },
+    {
+      "source": "/en/api/netserver/web-services/howto/index",
+      "destination": "/en/api/web-services/howto/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/proxies/superoffice-webapi/iauthorization",
+      "destination": "/en/api/web-services/proxies/superoffice-webapi/iauthorization"
+    },
+    {
+      "source": "/en/api/netserver/web-services/proxies/superoffice-webapi/index",
+      "destination": "/en/api/web-services/proxies/superoffice-webapi/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/proxies/superoffice-webapi/systemuserclient",
+      "destination": "/en/api/web-services/proxies/superoffice-webapi/systemuserclient"
+    },
+    {
+      "source": "/en/api/netserver/web-services/proxies/built-in",
+      "destination": "/en/api/web-services/proxies/built-in"
+    },
+    {
+      "source": "/en/api/netserver/web-services/proxies/custom",
+      "destination": "/en/api/web-services/proxies/custom"
+    },
+    {
+      "source": "/en/api/netserver/web-services/proxies/index",
+      "destination": "/en/api/web-services/proxies/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/webapi/index",
+      "destination": "/en/api/web-services/webapi/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/index",
+      "destination": "/en/api/web-services/index"
+    },
+    {
+      "source": "/en/api/netserver/web-services/so-timezone",
+      "destination": "/en/api/web-services/so-timezone"
     }
   ]
 }

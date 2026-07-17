@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "AggregationWrapper2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Aggregation.AggregationProvider2">SuperOffice.CRM.ArchiveLists.Aggregation.AggregationProvider2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Aggregation.AggregationProvider2` inside NetServer's SODatabase assembly.
 
 This is the main aggregation engine for the Archive Provider system - version 2,
 with built-in buffering and recursive evaluation

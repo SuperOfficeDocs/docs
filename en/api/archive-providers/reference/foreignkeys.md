@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "ForeignKeys"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ForeignKeysProvider">SuperOffice.CRM.ArchiveLists.ForeignKeysProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ForeignKeysProvider` inside NetServer's SODatabase assembly.
 
 Archive of Foreign Keys - used by the web api and partners.
 Lists all foreign apps, and outer joins any devices + keys associated with the app.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"foreignKey"|foreignKey|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -53,5 +55,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

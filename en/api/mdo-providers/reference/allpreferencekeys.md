@@ -9,17 +9,15 @@ envir: onsite, online
 ---
 
 # "allpreferencekeys" MDO List
+
 MDO Provider that retrieves all preference keys
 
 All preferences that are not sections are returned, grouped alphabetically.
 If addidionalInfo is OrderBySection, it is first grouped alphabetically by section.
 Preferences that have list of values are bolded.
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AllPreferenceKeysProvider">AllPreferenceKeysProvider</see> class.
+Implemented by the `AllPreferenceKeysProvider` class.
 The name of the MDO list is 'allpreferencekeys'.
-
-
-
 
 ## Sample Request
 
@@ -32,10 +30,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("allpreferencekeys", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -65,7 +64,6 @@ foreach (var item in listProvider.RootItems) {
 |1000170|Use iCalendar attachment||[SR_PD_Mail_NAME]|
 |1000385|Automatically close tab when adding a message to request|bold|[SR_PD_request_NAME]|
 |1000440|Automatically create contact for new inbound request||[SR_PD_serviceSettings_NAME]|
-
 
 ## Related MDO Lists
 

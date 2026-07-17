@@ -2,7 +2,7 @@
 uid: timezone
 title: timezone
 keywords: mdoprovider mdo provider timezone
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "timezone" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TimeZoneProvider">TimeZoneProvider</see> class.
+Implemented by the `TimeZoneProvider` class.
 The name of the MDO list is 'timezone'.
 
 ## Additional Attributes
@@ -23,10 +20,6 @@ The name of the MDO list is 'timezone'.
 |Get all timezones| |[all]|
 |Get all active timezones and the given location| |1234|
 |Get the specific Timezone location| locationId|1234|
-
-
-
-
 
 ## Sample Request
 
@@ -39,10 +32,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("timezone", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -72,7 +66,6 @@ foreach (var item in listProvider.RootItems) {
 |100|Labrador (GMT-04.00)||124|
 |101|Labrador (exception) (GMT-03.30)||124|
 |102|Manitoba (GMT-06.00)||124|
-
 
 ## Related MDO Lists
 

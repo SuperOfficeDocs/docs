@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "SaleHistory"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleHistoryProvider">SuperOffice.CRM.ArchiveLists.SaleHistoryProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.SaleHistoryProvider` inside NetServer's SODatabase assembly.
 
 Sale histories. Contains all changes to the sale records over time.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"sale"|Sale|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -123,6 +125,7 @@ Sale histories. Contains all changes to the sale records over time.
 |person/retired|bool|Former employee: Indicates whether the contact has retired/left the company| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/birthYear|int|Birth year: Displays contact's birth year| x |
@@ -225,5 +228,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

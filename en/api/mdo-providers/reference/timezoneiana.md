@@ -9,17 +9,13 @@ envir: onsite, online
 ---
 
 # "timezoneiana" MDO List
+
 Provides the timezone list.
 The extrainfo contains the IANA-id of the timezone.
 The iconhint follows the structure 'Flag_[country_name]'.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TimeZoneIANAProvider">TimeZoneIANAProvider</see> class.
+Implemented by the `TimeZoneIANAProvider` class.
 The name of the MDO list is 'timezoneiana'.
-
-
-
 
 ## Sample Request
 
@@ -32,10 +28,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("timezoneiana", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -65,7 +62,6 @@ foreach (var item in listProvider.RootItems) {
 |100|Labrador (GMT-04.00)||countryId=124&locationCode=CA2&isActive=True&IANA=America/Goose_Bay|
 |101|Labrador (exception) (GMT-03.30)||countryId=124&locationCode=CA2A&isActive=True&IANA=America/St_Johns|
 |102|Manitoba (GMT-06.00)||countryId=124&locationCode=CA-MB&isActive=True&IANA=America/Winnipeg|
-
 
 ## Related MDO Lists
 

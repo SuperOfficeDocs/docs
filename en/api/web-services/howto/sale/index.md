@@ -16,5 +16,4 @@ redirect_from:
 
 * [Link sale to follow-up][1]
 
-<!-- Referenced links -->
-[1]: link-sale-to-appointment.md
+[1]: ./link-sale-to-appointment

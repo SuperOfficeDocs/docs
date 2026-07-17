@@ -125,8 +125,7 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-<!-- Referenced links -->
-[1]: rest-create-default-email-flow.md
-[2]: rest-create-flow-trigger.md
-[3]: rest-create-flow-step.md
-[4]: ../../../reference/restful/agent/Workflow_Agent/v1WorkflowAgent_GetEmailFlow.md
+[1]: ./rest-create-default-email-flow
+[2]: ./rest-create-flow-trigger
+[3]: ./rest-create-flow-step
+[4]: ../../../reference/restful/agent/Workflow_Agent/v1WorkflowAgent_GetEmailFlow

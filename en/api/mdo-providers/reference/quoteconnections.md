@@ -9,12 +9,13 @@ envir: onsite, online
 ---
 
 # "quoteconnections" MDO List
+
 Retrieve the list of all defined Quote Connections - i.e. not the connectors (DLLs).
 ExtraInfo: "connectorname=Name-of-connector" - restricts results to connections defined by one particular connector.
 
 Implementation relies on the <see cref="T:SuperOffice.CRM.ArchiveLists.QuoteConnectionProvider" /> archivelist, and simply reformats its data
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.QuoteConnections">QuoteConnections</see> class.
+Implemented by the `QuoteConnections` class.
 The name of the MDO list is 'quoteconnections'.
 
 ## Additional Attributes
@@ -22,10 +23,6 @@ The name of the MDO list is 'quoteconnections'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Name of the connector to get connections for| connectorname|Custom Quote Connector Name|
-
-
-
-
 
 ## Sample Request
 
@@ -38,10 +35,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("quoteconnections", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -54,7 +52,6 @@ foreach (var item in listProvider.RootItems) {
 |3|TestClient SuperOffice test/debug connector A||Test.QuoteConnector|
 |4|TestClient SuperOffice test/Debug connector B||Test.QuoteConnector|
 |5|TestClient SuperOffice manipulating connector||Test.QuoteConnector|
-
 
 ## Related MDO Lists
 

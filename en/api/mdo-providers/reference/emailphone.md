@@ -2,63 +2,34 @@
 uid: emailphone
 title: emailphone
 keywords: mdoprovider mdo provider emailphone
-description: List of e-mail addresses and phone numbers matching the search value Searches e-mail address, phone number, person name, company name. E-mail address/phone number matches - return e-mail addresses/phone numbers + owner name (person or contact name) Person name matches - return all e-mail addresses/phone numbers for matched persons Company name matches. return all persons + first e-mail address/phone number for matched persons. 
+description: List of e-mail addresses and phone numbers matching the search value Searches e-mail address, phone number, person name, company name. E-mail address/phone number matches - return e-mail addresses/phone numbers + owner name (person or contact name) Person name matches - return all e-mail addresses/phone numbers for matched persons Company name matches. return all persons + first e-mail address/phone number for matched persons.
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
 # "emailphone" MDO List
+
 List of e-mail addresses and phone numbers matching the search value
 Searches e-mail address, phone number, person name, company name.
 
-
-
 E-mail address/phone number matches: return e-mail addresses/phone numbers + owner name (person or contact name)
-
-
-
-
 
 Person name matches: return all e-mail addresses/phone numbers for matched persons
 
-
-
-
-
 Company name matches. return all persons + first e-mail address/phone number for matched persons.
-
-
-
 
 Returns: list item with
 
-
-
 Id = e-mail address/phone number id
-
-
-
-
 
 Name = name + e-mail/phone
 
-
-
-
-
 ExtraInfo = e-mail address/phone number
-
-
-
-
 
 Type = "Email" or "Phone"
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.EmailPhoneProvider">EmailPhoneProvider</see> class.
+Implemented by the `EmailPhoneProvider` class.
 The name of the MDO list is 'emailphone'.
 
 ## Additional Attributes
@@ -67,10 +38,6 @@ The name of the MDO list is 'emailphone'.
 |-----|-----|------|
 |Only phone numbers are searched| phoneOnly|False|
 |Operator used for search. Available values: 'contains', 'startsWith'. Default value is 'contains'.| operator|contains|
-
-
-
-
 
 ## Sample Request
 
@@ -83,10 +50,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("emailphone", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -116,7 +84,6 @@ foreach (var item in listProvider.RootItems) {
 |95|Carl-Oskar Cederström <qa5@superoffice.com>||qa5@superoffice.com|
 |96|Cidrik Culien <qa5@superoffice.com>|nomail|qa5@superoffice.com|
 |97|Cecilie Carlsen <qa5@superoffice.com>||qa5@superoffice.com|
-
 
 ## Related MDO Lists
 

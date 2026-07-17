@@ -35,6 +35,6 @@ using(SoSession mySession = SoSession.Authenticate("SAL0",""))
 }
 ```
 
-In the above example, we retrieve the contact of the person we want to retrieve. Since we are retrieving an entity it contains the person that belongs to it as a property so that we can take the person to a person’s collection.
+In the above example, we retrieve the contact of the person we want to retrieve. Since we are retrieving an entity it contains the person that belongs to it as a property so that we can take the person to a person's collection.
 
-Once we have the persons in the person’s collection we can iterate through it access any of its properties. In the above example, we are accessing the `FirstName` and the `LastName` property and showing them in a combo box.
+Once we have the persons in the person's collection we can iterate through it access any of its properties. In the above example, we are accessing the `FirstName` and the `LastName` property and showing them in a combo box.

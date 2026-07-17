@@ -16,6 +16,5 @@ redirect_from:
 * [Get persons from contact (sodatareader)][1]
 * [Update person][2]
 
-<!-- Referenced links -->
-[1]: get-persons-from-contact-sodatareader.md
-[2]: update-person-osql.md
+[1]: ./get-persons-from-contact-sodatareader
+[2]: ./update-person-osql

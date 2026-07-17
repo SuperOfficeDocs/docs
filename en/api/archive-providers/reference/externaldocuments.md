@@ -1,7 +1,7 @@
 ---
 uid: externaldocuments
 title: externaldocuments
-description: 
+description:
 keywords: externaldocuments archive provider
 generated: true
 content_type: reference
@@ -10,15 +10,17 @@ envir: onsite, online
 
 # "externaldocuments"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ExternalDocumentsProvider">SuperOffice.CRM.ArchiveLists.ExternalDocumentsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ExternalDocumentsProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"item"|Items|
 |"folder"|Folder|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |nodeType|string|Type| x |
@@ -38,7 +40,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 
 ## Sample
 
@@ -50,5 +52,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

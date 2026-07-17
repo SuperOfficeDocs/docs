@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "person_freetextsearch" MDO List
+
 Provider for selecting a Person - without contact search.
 Does keyword matching and scoring across multiple
 tables using freetext index.
@@ -16,23 +17,18 @@ tables using freetext index.
 User's own contacts, recently added + modified contacts, contacts modified or created by user.
 Matches on word boundaries or at start of field are scored extra highly.
 
-
 id = person_id,
-
 
 Name = contact.name + department or person first+last name (contact name + department)
 
-
 ExtraInfo = contact_id,
 
-
 IconHint = Personwithcontact or Personwithoutcontact
-
 
 Type = "Person"
 Stopped contacts are marked with stylehint = "stop" (but item.deleted = false)
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PersonListFreetextSearchProvider">PersonListFreetextSearchProvider</see> class.
+Implemented by the `PersonListFreetextSearchProvider` class.
 The name of the MDO list is 'person_freetextsearch'.
 
 ## Additional Attributes
@@ -40,10 +36,6 @@ The name of the MDO list is 'person_freetextsearch'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Skip retired employees| skipRetired|False|
-
-
-
-
 
 ## Sample Request
 
@@ -56,10 +48,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("person_freetextsearch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -89,7 +82,6 @@ foreach (var item in listProvider.RootItems) {
 |155|Sal2||2|
 |156|Sal3||2|
 |157|Sal4||2|
-
 
 ## Related MDO Lists
 

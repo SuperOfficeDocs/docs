@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "MailingFolders"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailingFolderProvider">SuperOffice.CRM.ArchiveLists.MailingFolderProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.MailingFolderProvider` inside NetServer's SODatabase assembly.
 
 Archive of mailing folders. Lists all rows of s_picture_folder where
 folder_type = shipmentFolder. Mirrors <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowFolderProvider" />.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailingfolder"|mailingfolder|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -40,5 +42,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

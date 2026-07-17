@@ -26,5 +26,5 @@ string encoded = "1234,5";
 double theNumber;
 Double.TryParse(out encoded);
 string formatted = CultureDataFormatter.EncodeDouble( theNumber );
-// formatted = "[D:1234.5]" 
+// formatted = "[D:1234.5]"
 ```

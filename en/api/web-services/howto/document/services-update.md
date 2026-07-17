@@ -86,5 +86,4 @@ The `IDocumentAgent.SetDocumentStream` method is used to do perform the actual u
 * The stream for the temporary local file
 * The Boolean value specifying whether the stream will overwrite an existing file with the same name stored in the document archive
 
-<!-- Referenced links -->
-[1]: services-download.md
+[1]: ./services-download

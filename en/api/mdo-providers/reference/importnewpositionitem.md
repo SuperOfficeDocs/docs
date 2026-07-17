@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "importnewpositionitem" MDO List
+
 Import position items: Add to list, set to blank
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ImportNewPositionItemProvider">ImportNewPositionItemProvider</see> class.
+Implemented by the `ImportNewPositionItemProvider` class.
 The name of the MDO list is 'importnewpositionitem'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("importnewpositionitem", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |1|Add new item to list|||
 |3|Ignore - set to blank|||
-
 
 ## Related MDO Lists
 

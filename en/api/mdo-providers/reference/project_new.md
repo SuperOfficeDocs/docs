@@ -9,20 +9,17 @@ envir: onsite, online
 ---
 
 # "project_new" MDO List
+
 Provider for selecting a project. Returns search results in rank order
 Supports searching across project text fields.
 Respects the Project.SkipCompletedProjects user preference.
 
 Returns project items only: Id = project-id, Name = Project name, Type = "Project", IconHint="deleted_item", ExtraInfo= project-id
 
-
 Completed/Done projects are marked with stylehint = "deleted_item" (but item.deleted = false)
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ProjectListProvider">ProjectListProvider</see> class.
+Implemented by the `ProjectListProvider` class.
 The name of the MDO list is 'project_new'.
-
-
-
 
 ## Sample Request
 
@@ -35,10 +32,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("project_new", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -68,7 +66,6 @@ foreach (var item in listProvider.RootItems) {
 |33|Ssosseess||33|
 |34|Ttotteett||34|
 |35|Prusjuukt||35|
-
 
 ## Related MDO Lists
 

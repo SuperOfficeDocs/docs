@@ -9,13 +9,12 @@ envir: onsite, online
 ---
 
 # "findproduct" MDO List
+
 QuickSearch for the Add Quote Line dialog, where a single-line user input is passed to the
 correct QuoteConnection FindProduct method, and results are returned in a standard or specified format back.
 The format can be specified by setting a columnLayout part in the extrainfo. For example "columnLayout=Code\tName\tUnitListPrice\tQuantityUnit"
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.FindProduct">FindProduct</see> class.
+Implemented by the `FindProduct` class.
 The name of the MDO list is 'findproduct'.
 
 ## Additional Attributes
@@ -28,10 +27,6 @@ The name of the MDO list is 'findproduct'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -43,10 +38,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("findproduct", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -56,7 +52,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

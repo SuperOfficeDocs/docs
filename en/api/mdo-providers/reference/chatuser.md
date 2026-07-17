@@ -2,7 +2,7 @@
 uid: chatuser
 title: chatuser
 keywords: mdoprovider mdo provider chatuser
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "chatuser" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ChatUserProvider">ChatUserProvider</see> class.
+Implemented by the `ChatUserProvider` class.
 The name of the MDO list is 'chatuser'.
 
 ## Additional Attributes
@@ -24,10 +21,6 @@ The name of the MDO list is 'chatuser'.
 |Do not include current user| removeSelf|True|
 |Return Associate ID instead of ejUser id| associate|True|
 |Only users who are a member of this topic| topicId|0|
-
-
-
-
 
 ## Sample Request
 
@@ -40,10 +33,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("chatuser", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -73,7 +67,6 @@ foreach (var item in listProvider.RootItems) {
 |55|Olga Jensen|||
 |56|Lollo Johansen|||
 |57|Morten Johansen|||
-
 
 ## Related MDO Lists
 

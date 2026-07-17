@@ -3,7 +3,7 @@ title: Show list data in UI combo box
 uid: listagent_example_1
 description: Show list data in UI combo box using a ListAgent
 author: SuperOffice Product and Engineering
-keywords: 
+keywords:
 content_type: howto
 date:
 category: list

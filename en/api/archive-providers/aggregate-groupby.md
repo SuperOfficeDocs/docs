@@ -13,7 +13,7 @@ redirect_from: /en/api/netserver/archive-providers/aggregate-groupby
 
 # Structured aggregation output with GroupBy
 
-Probably the most powerful aggregate function, GroupBy provides the capability to band query results into rigid report-like structures. With capabilities that span aggregation-only to combined to detail only, it’s a flexible tool that can be used in different ways.
+Probably the most powerful aggregate function, GroupBy provides the capability to band query results into rigid report-like structures. With capabilities that span aggregation-only to combined to detail only, it's a flexible tool that can be used in different ways.
 
 ## Aggregation only
 
@@ -118,7 +118,7 @@ Every time the middle name changes, the results will create and output a new ban
 
 ### Query Output
 
-| Rowno (id) | Row type | GroupBy(middleName):<br>HideDetail,Header,Footer | CountAll(firstName) | fName | lName | mName | rank | Sum(rank) |
+| Rowno (id) | Row type | GroupBy(middleName):<br />HideDetail,Header,Footer | CountAll(firstName) | fName | lName | mName | rank | Sum(rank) |
 |---|---|---|---|---|---|---|---|---|
 | 0 (1) | \[header:1\] | Ray | 2 | | | | | 3 |
 | 1 (324) | \[person\] | | 1 | Jane | Doe | Ray | 1 | 1 |
@@ -149,7 +149,7 @@ foreach (var row in provider.GetRows(AggregationProvider2.GrandTotalOption + "=T
 
 ## Multiple-level GroupBy
 
-It’s easy to specify an additional group level with the integer modifier. Building on the last example, create a query that sets the desired columns to include the `firstName`, then set the restriction to where the `contactId` equals 24. Next, create these five aggregate columns:
+It's easy to specify an additional group level with the integer modifier. Building on the last example, create a query that sets the desired columns to include the `firstName`, then set the restriction to where the `contactId` equals 24. Next, create these five aggregate columns:
 
 * Count all of the occurrences of `firstName` for display in details.
 * Count the unique occurrences of `middleName` for display in details.
@@ -179,7 +179,7 @@ foreach (var row in provider.GetRows(AggregationProvider2.GrandTotalOption + "=t
 
 | RowNo | RowType | Count (middleName) | CountAll (firstName) | firstName | GroupBy (middleName): HideDetail,Header,Footer,1 | GroupBy (lastName): Header,Footer,2 | Sum(rank): HideDetail |
 |-------|--------------|---|---|------|-----|---|---|
-| 0 (1) | \[header:1\] | 1 | 2 |      | Ray |   | 3 |
+| 0 (1) | \[header:1\] | 1 | 2 |      | Ray |   | 3 |
 | 1 (2) | \[header:2\] | 1 | 2 |      | |Doe | 3 |
 | 2 (359) | \[person\] | 1 | 1 | Jane | | | |
 | 3 (360) | \[person\] | 1 | 2 | Billy | | | |
@@ -202,5 +202,4 @@ The output includes two first-level groups; one for each of the two different mi
 
 * [Nested aggregate functions][1]
 
-<!-- Referenced links -->
-[1]: nested-aggregate-functions.md
+[1]: ./nested-aggregate-functions

@@ -33,12 +33,10 @@ This section will present the technical details to understand what is required t
  <SuperOffice>
     <Data>
         <Session>
-            <!-- HttpContext means session information is stored, vs being recreated all the time -->
             <add key="Mode" value="PartnerHttpContext" />
         </Session>
 </Data>
 <Services>
-    <!-- Mode can be Local, Remote, Switch; local for web + appserver on same machine, remote otherwise -->
     <add key="DefaultMode" value="Remote" />
     <add key="ApplicationToken" value="df2d5bd84dd3848a8235e1d7e40d5b64" />
     </Services>
@@ -94,12 +92,12 @@ Specifies the URL where SuperID resides.
 
 SuperID is environment-specific. The value of **SoFederationGateway** will be different in SOD and production.
 
-* **SOD:** `https://sod.superoffice.com`
-* **Production:** `https://online.superoffice.com/login/`
+* **SOD:** `https://sod.superoffice.com`
+* **Production:** `https://online.superoffice.com/login/`
 
 ### SystemTokenCertificatePath
 
-Path to a local file containing the partners' **application private key**.
+Path to a local file containing the partners' **application private key**.
 
 **Example private key file:**
 
@@ -122,5 +120,4 @@ The certificate thumbprint identifier on the machine hosting the website. The th
 
 The thumbprint identifier is environment-specific. The value of `SuperIdCertificate` will be different in SOD and production.
 
-<!-- Referenced links -->
-[1]: ../../../developer-portal/getting-started/index.md#terminology
+[1]: ../../../developer-portal/getting-started/index#terminology

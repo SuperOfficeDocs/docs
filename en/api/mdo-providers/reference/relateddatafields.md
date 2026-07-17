@@ -2,7 +2,7 @@
 uid: relateddatafields
 title: relateddatafields
 keywords: mdoprovider mdo provider relateddatafields
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "relateddatafields" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.RelatedDataFieldsProvider">RelatedDataFieldsProvider</see> class.
+Implemented by the `RelatedDataFieldsProvider` class.
 The name of the MDO list is 'relateddatafields'.
 
 ## Additional Attributes
@@ -22,10 +19,6 @@ The name of the MDO list is 'relateddatafields'.
 |-----|-----|------|
 |The name of the table to analyze for related fields| table|ticket|
 |The recursion depth, default=1| depth||
-
-
-
-
 
 ## Sample Request
 
@@ -38,10 +31,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("relateddatafields", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -51,4 +45,3 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-

@@ -2,17 +2,15 @@
 uid: associate
 title: associate
 keywords: mdoprovider mdo provider associate
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
 # "associate" MDO List
+
 The name of the MDO list is 'associate'.
-
-
-
 
 ## Sample Request
 
@@ -25,10 +23,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("associate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -58,7 +57,6 @@ foreach (var item in listProvider.RootItems) {
 |86|Johan Jensen||person_id=198&contact_id=0|
 |87|Kjell Jensen||person_id=199&contact_id=0|
 |81|Listadm Listadm||person_id=190&contact_id=0|
-
 
 ## Related MDO Lists
 

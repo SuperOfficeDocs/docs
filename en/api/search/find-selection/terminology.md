@@ -32,5 +32,3 @@ redirect_from: /en/api/netserver/search/find-selection/terminology
 | Shadow Archive Provider | Alternative data source related to a parent archive provider. |
 | Typical search | Predefined search to get started with search and selections more easily.|
 | User | A person with login rights, more specifically the record in the associate table. |
-
-<!-- Referenced links -->

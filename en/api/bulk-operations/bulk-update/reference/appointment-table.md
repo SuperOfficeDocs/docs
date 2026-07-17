@@ -10,7 +10,6 @@ envir: cloud
 client: online
 ---
 
-<!-- markdownlint-disable-file MD033 -->
 # Appointment table
 
 Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValueKeys`.
@@ -44,11 +43,11 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             <td>
                 <p>Values Count = 1&hellip;n</p>
                 <p>Values are encoded as tableName=recordId values with an optional comment:</p>
-                <p>&ldquo;appointment=78&rdquo; or<br>&ldquo;appointment=78&amp;comment=Some link comment&rdquo;</p>
-                <p>Allowed table names:<br>(case-sensitive)<br>appointment, document, project, sale or URL</p>
-                <p>add:<br>Creates and adds all values as RelationRows.</p>
-                <p>remove:<br>Deletes all similar relations.</p>
-                <p>ReplaceWith:<br>Deletes all similar relations, then adds back new ones.</p>
+                <p>&ldquo;appointment=78&rdquo; or<br />&ldquo;appointment=78&amp;comment=Some link comment&rdquo;</p>
+                <p>Allowed table names:<br />(case-sensitive)<br />appointment, document, project, sale or URL</p>
+                <p>add:<br />Creates and adds all values as RelationRows.</p>
+                <p>remove:<br />Deletes all similar relations.</p>
+                <p>ReplaceWith:<br />Deletes all similar relations, then adds back new ones.</p>
                 <p>Clear: deletes all existing relations.</p>
             </td>
             <td>
@@ -81,8 +80,8 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
                 <p>Values Count = 0 to 7</p>
                 <p>Set: Values[0] = (string)</p>
                 <p>Clear: Clears value</p>
-                <p>SearchAndReplace:<br>Values[1] = searchString<br>Values[2] = replaceString<br>Values[3] = options</p>
-                <p>RegEx:<br>Values[4] = expression<br>Values[5] = replace with<br>Values[6] = options</p>
+                <p>SearchAndReplace:<br />Values[1] = searchString<br />Values[2] = replaceString<br />Values[3] = options</p>
+                <p>RegEx:<br />Values[4] = expression<br />Values[5] = replace with<br />Values[6] = options</p>
             </td>
             <td>
                 <p>AppointmentText</p>
@@ -97,7 +96,7 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Check:<br>Values[0] = (int) 0 or 1<br>0 = Status.NotStarted<br>1 = Status.Completed</p>
+                <p>Check:<br />Values[0] = (int) 0 or 1<br />0 = Status.NotStarted<br />1 = Status.Completed</p>
                 <p>Toggle: invert current</p>
             </td>
             <td>
@@ -113,7 +112,7 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int)<br>0 = FreeBusy.Free<br>1 = FreeBusy.Busy</p>
+                <p>Values[0] = (int)<br />0 = FreeBusy.Free<br />1 = FreeBusy.Busy</p>
             </td>
             <td>
                 <p>FreeBusy</p>
@@ -128,7 +127,7 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int) HasAlarm<br>0 = No, 1&nbsp;= Yes</p>
+                <p>Values[0] = (int) HasAlarm<br />0 = No, 1&nbsp;= Yes</p>
             </td>
             <td>
                 <p>HasAlarm</p>
@@ -188,7 +187,7 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int) IsPublished<br>0 = No,&nbsp;1 = Yes</p>
+                <p>Values[0] = (int) IsPublished<br />0 = No,&nbsp;1 = Yes</p>
             </td>
             <td>
                 <p>PublishHelper</p>
@@ -233,9 +232,9 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (datetime) <br>Only changes Date. Times are changed via StartTime field.</p>
+                <p>Values[0] = (datetime) <br />Only changes Date. Times are changed via StartTime field.</p>
             </td>
-            <td>DoBy (Date Only)<br>EndDate (Date Only)</td>
+            <td>DoBy (Date Only)<br />EndDate (Date Only)</td>
         </tr>
         <tr>
             <td>
@@ -246,10 +245,10 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int) <br>minutes since midnight relative to current datetime</p>
+                <p>Values[0] = (int) <br />minutes since midnight relative to current datetime</p>
             </td>
             <td>
-                <p>DoBy<br>EndDate</p>
+                <p>DoBy<br />EndDate</p>
                 <p></p>
             </td>
         </tr>
@@ -276,11 +275,11 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 2</p>
-                <p>Values[0] = (int) DoBy<br>Values[1] = (int) EndDate</p>
+                <p>Values[0] = (int) DoBy<br />Values[1] = (int) EndDate</p>
                 <p>minutes since midnight relative to current datetime</p>
             </td>
             <td>
-                <p>DoBy<br>EndTime</p>
+                <p>DoBy<br />EndTime</p>
             </td>
         </tr>
         <tr>
@@ -292,7 +291,7 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int) <br>Int.MinValue = All<br>Neg: -10 = GroupId (10)<br>Pos: 10 = AssociateId (10)</p>
+                <p>Values[0] = (int) <br />Int.MinValue = All<br />Neg: -10 = GroupId (10)<br />Pos: 10 = AssociateId (10)</p>
             </td>
             <td>
                 <p>VisibleFor</p>
@@ -303,5 +302,4 @@ Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValue
 
 See [User-defined fields][1].
 
-<!-- Referenced links -->
-[1]: user-defined-fields.md
+[1]: ./user-defined-fields

@@ -121,25 +121,23 @@ You can fetch [metadata - information about archives][13] to do "reflection" on 
 * [List of archive providers][2]
 * [Archive OData endpoint][16]
 
-<!-- Referenced links -->
 [1]: https://www.odata.org/
-[2]: ../../archive-providers/index.md
-[3]: using-filters.md
-[4]: associate.md
-[5]: boolean.md
-[6]: date.md
-[7]: datetime.md
-[8]: lists.md
-[9]: numbers.md
-[10]: strings.md
-[11]: unary.md
-[12]: ../../web-services/howto/company/get-all-contacts-rest.md
-[13]: metadata.md
-[14]: dynamic-provider.md
-[15]: ../../archive-providers/reference/findsale.md
-[16]: ../../reference/restful/rest/Archive/index.md
+[2]: ../../archive-providers/index
+[3]: ./using-filters
+[4]: ./associate
+[5]: ./boolean
+[6]: ./date
+[7]: ./datetime
+[8]: ./lists
+[9]: ./numbers
+[10]: ./strings
+[11]: ./unary
+[12]: ../../web-services/howto/company/get-all-contacts-rest
+[13]: ./metadata
+[14]: ./dynamic-provider
+[15]: ../../archive-providers/reference/findsale
+[16]: ../../reference/restful/rest/Archive/index
 
-<!-- Referenced images -->
-[img1]: media/get-sale.png
-[img2]: media/find-sale.png
-[img3]: media/find-sale-supported-columns.png
+[img1]: /media/loc/en/api/search/get-sale.png
+[img2]: /media/loc/en/api/search/find-sale.png
+[img3]: /media/loc/en/api/search/find-sale-supported-columns.png

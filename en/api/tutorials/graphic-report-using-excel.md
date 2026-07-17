@@ -3,8 +3,8 @@ title: Graphic report using Excel
 uid: graphic_report_excel
 description: Graphic report using Excel
 author: SuperOffice Product and Engineering
-date: 
-keywords: 
+date:
+keywords:
 content_type: tutorial
 ---
 
@@ -24,7 +24,7 @@ This tutorial shows how we can make use of NetServer and retrieve data and gener
 We have used Providers available through the **SuperOffice.CRM.ArchiveLists** namespace to retrieve the data.
 
 ```csharp
-//Setting the Parameters that needs to be passed to Agent method 
+//Setting the Parameters that needs to be passed to Agent method
 //Parameter - providerName - The name of the archive provider to use
 IArchiveProvider newSalePro = new SaleProvider();
 
@@ -42,7 +42,7 @@ archiveRest[0] = new ArchiveRestrictionInfo("contactid", "=", "113");
 newSalePro.SetRestriction(archiveRest);
 
 //Parameter - page - Page number, page 0 is the first page
-//Parameter - pageSize - Page size 
+//Parameter - pageSize - Page size
 int page = 1;
 int pageSize = 10;
 newSalePro.SetPagingInfo(pageSize, page);
@@ -93,14 +93,14 @@ public class CoreWebList<T> : List<T>
   {
     _enforceKeys = false;
   }
-  
+
   //Get / Set method
   public bool DataTableEnforceKeys
   {
     get { return _enforceKeys; }
     set { _enforceKeys = value; }
   }
-  
+
   //List to data table conversion method
   static explicit operator DataTable(CoreWebList<T> wblist)
   {
@@ -130,21 +130,21 @@ public class SalesData
     _SalEarnPer = salEarnPer;
   }
 
-  //Conversion methods for each property 
+  //Conversion methods for each property
   [Conversion(ConvertDataTable = true, KeyFields = true, DBNull = false)]
   public string ProName
   {
     get { return _ proName; }
     set { _ proName = value; }
   }
-  
+
   [Conversion(ConvertDataTable = true, KeyFields = true, DBNull = false)]
   public string SalAmnt
   {
     get { return _SalAmnt; }
     set { _SalAmnt = value; }
   }
-  
+
   [Conversion(ConvertDataTable = true, KeyFields = true, DBNull = false)]
   public string SalEarnPer
   {
@@ -160,7 +160,180 @@ The above code makes use of our custom attribute class which acquires the metada
 
 The next step is to build the class which does the conversion. We have identified it as
 
-[!code-csharp[CS](includes/datatableconverter.cs)]
+```csharp CS
+//The class uses the System.Reflection namespace to query attributes at run-time
+//and builds a builds a data table schema and fill it.
+public class DataTableConverter<T>
+{
+  //Variable Declaration
+  private bool _enforceKeys;
+
+  //Class constructors
+  public DataTableConverter() { }
+
+  public DataTableConverter(bool enforceKeys)
+  {
+    _enforceKeys = enforceKeys;
+  }
+  public DataTable GetDataTable(List<T> listItems)
+  {
+    DataTable newDatTbl;
+    // Build a table schema from the first element in the collection
+    newDatTbl = this.ConstructDataTableSchema(listItems[0]);
+
+    // Create a new row for every item in the collection and fill it.
+    for (int i = 0; i < listItems.Count; i++)
+    {
+      DataRow newDataRow = newDatTbl.NewRow();
+      Type newType = listItems[i].GetType();
+      MemberInfo[] newMembers = newType.GetProperties();
+      foreach (MemberInfo newMember in newMembers)
+      {
+        object[] mewAtts = newMember.GetCustomAttributes(true);
+        if (mewAtts.Length != 0)
+        {
+          foreach (object mewAtt in mewAtts)
+          {
+            ConversionAttribute newConAtt = mewAtt as ConversionAttribute;
+            if (newConAtt != null)
+            {
+              if (newConAtt.ConvertDataTable)
+              {
+                string[] newNameArr = newMember.Name.ToString().Split(Convert.ToChar(" "));
+                PropertyInfo newPropInfo = newType.GetProperty(newNameArr[0]);
+                Type newValType = newPropInfo.GetValue(listItems[i], null).GetType();
+                newDataRow[newNameArr[0]] = newPropInfo.GetValue(listItems[i], null);
+              }
+            }
+          }
+        }
+      }
+      newDatTbl.Rows.Add(newDataRow);
+    }
+    return newDatTbl;
+  }
+
+  // This method reads the attributes of your container class via reflection in order to
+  // build a schema for the DataTable that you will explicitly convert to.
+  private DataTable ConstructDataTableSchema(T item)
+  {
+    string tblName = string.Empty;
+    List<DataTableConverterContainer> schCon = new List<DataTableConverterContainer>();
+    Type newType = item.GetType();
+    MemberInfo[] newMemsInfo = newType.GetProperties();
+
+    foreach (MemberInfo newMemInfo in newMemsInfo)
+    {
+      object[] newAtts = newMemInfo.GetCustomAttributes(true);
+      if (newAtts.Length != 0)
+      {
+        foreach (object newAtt in newAtts)
+        {
+          ConversionAttribute newConAtt = newAtt as ConversionAttribute;
+          if (newConAtt != null)
+          {
+            if (newConAtt.ConvertDataTable)
+            {
+              // The name of the container class is used to name your DataTable
+              string[] newClsNameArr = newMemInfo.ReflectedType.ToString().Split(Convert.ToChar("."));
+              tblName = newClsNameArr[newClsNameArr.Length - 1];
+              string newName = newMemInfo.Name.ToString();
+              PropertyInfo propInfo = newType.GetProperty(newName);
+              Type NewValType = propInfo.GetValue(item, null).GetType();
+
+              // Each property that is will be a column in our DataTable.
+              schCon.Add(new DataTableConverterContainer(newName, NewValType, newConAtt.DBNull, newConAtt.KeyFields));
+            }
+          }
+        }
+      }
+    }
+    if (schCon.Count > 0)
+    {
+      DataTable newDataTbl = new DataTable(tblName);
+      DataColumn[] newDataCol = new DataColumn[schCon.Count];
+
+      // Counts the number of keys that will need to be created
+      int numberOfKeys = 0;
+      foreach (DataTableConverterContainer newContainer in schCon)
+      {
+        if (newContainer.CheckKey == true && _enforceKeys == true)
+        {
+           numberOfKeys = numberOfKeys + 1;
+        }
+      }
+
+      // Builds the DataColumns for our DataTable
+      DataColumn[] newKeyColArr = new DataColumn[numberOfKeys];
+      int keyColIdx = 0;
+      for (int i = 0; i < schCon.Count; i++)
+      {
+        newDataCol[i] = new DataColumn();
+        newDataCol[i].DataType = schCon[i].PropType;
+        newDataCol[i].ColumnName = schCon[i].PropName;
+        newDataCol[i].AllowDBNull = schCon[i].CheckDbNull;
+        newDataTbl.Columns.Add(newDataCol[i]);
+        if (schCon[i].CheckKey == true && _enforceKeys == true)
+        {
+          newKeyColArr[keyColIdx] = newDataCol[i];
+          keyColIdx = keyColIdx + 1;
+        }
+      }
+      if (_enforceKeys)
+      {
+        newDataTbl.PrimaryKey = newKeyColArr;
+      }
+      return newDataTbl;
+    }
+    return null;
+  }
+
+  #region Internal Classes
+  private class DataTableConverterContainer
+  {
+    //Internal class variables
+    private string _propName;
+    private Type _propType;
+    private bool _DbNull;
+    private bool _Key;
+
+    //Internal Class Constructor
+    internal DataTableConverterContainer(string propName, Type propType, bool DbNull, bool Key)
+    {
+      _propName = propName;
+      _propType = propType;
+      _DbNull = DbNull;
+      _Key = Key;
+    }
+
+    //Get / Set methods
+    public string PropName
+    {
+      get { return _propName; }
+      set { _propName = value; }
+    }
+
+    public Type PropType
+    {
+      get { return _propType; }
+      set { _propType = value; }
+    }
+
+    public bool CheckDbNull
+    {
+      get { return _DbNull; }
+      set { _DbNull = value; }
+    }
+
+    public bool CheckKey
+    {
+      get { return _Key; }
+      set { _Key = value; }
+    }
+  }
+  #endregion
+}
+```
 
 ### Get results into a spreadsheet
 
@@ -216,7 +389,4 @@ The final step before running the site is to add the following references:
 
 <a href="../../../assets/downloads/api/graphicreportusingexcel.zip" download>Click to download source code (zip)</a>
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image022.jpg
+[img1]: /media/loc/en/api/tutorials/image022-1.jpg

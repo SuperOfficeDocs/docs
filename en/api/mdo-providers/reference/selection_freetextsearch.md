@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "selection_freetextsearch" MDO List
+
 Provider for selecting a Selection.
 Does keyword matching and scoring across multiple
 string fields. Checks name, description, soundex fields.
@@ -16,17 +17,12 @@ string fields. Checks name, description, soundex fields.
 User's own selections, recently added + modified selections, selections modified or created by user.
 Matches on word boundaries or at start of field are scored extra highly.
 
-
 Returns selection items only: Id = selection-id, Name = Selection name, Type = "Selection", IconHint="deleted_item", ExtraInfo= static/dynamic
-
 
 Completed/Done selections are marked with stylehint = "deleted_item" (but item.deleted = false)
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SelectionListFreetextSearchProvider">SelectionListFreetextSearchProvider</see> class.
+Implemented by the `SelectionListFreetextSearchProvider` class.
 The name of the MDO list is 'selection_freetextsearch'.
-
-
-
 
 ## Sample Request
 
@@ -39,10 +35,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selection_freetextsearch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -72,7 +69,6 @@ foreach (var item in listProvider.RootItems) {
 |13|Ummaamm-FFTjeGruPri||static|
 |14|Urraarr-FFTjeAllFas||static|
 |15|Uwwaaww-FFTjeAll||static|
-
 
 ## Related MDO Lists
 

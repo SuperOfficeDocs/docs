@@ -1,6 +1,6 @@
 ---
 title: IProductRegisterCache
-uid: i_product_register_cache 
+uid: i_product_register_cache
 description: IProductRegisterCache
 author: SuperOffice Product and Engineering
 date:

@@ -9,16 +9,12 @@ envir: onsite, online
 ---
 
 # "genericpersonwithmail" MDO List
+
 List of persons with mail. Supports Selection(any type), project and associate.
 Uses an inner provider <see cref="T:SuperOffice.CRM.Lists.PersonWithMailListProvider" />.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.GenericPersonWithMailListProvider">GenericPersonWithMailListProvider</see> class.
+Implemented by the `GenericPersonWithMailListProvider` class.
 The name of the MDO list is 'genericpersonwithmail'.
-
-
-
 
 ## Sample Request
 
@@ -31,10 +27,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("genericpersonwithmail", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

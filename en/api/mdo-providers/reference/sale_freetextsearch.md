@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "sale_freetextsearch" MDO List
+
 Provider for selecting a Sale.
 Does keyword matching and scoring across multiple
 string fields. Checks name, description, soundex fields as well as contact, person and project tables linked to sale.
@@ -18,17 +19,12 @@ as well as from person "Guttorm" in project "Teacup".
 User's own sales, recently added + modified sales, sales modified or created by user.
 Matches on word boundaries or at start of field are scored extra highly.
 
-
 Returns sale items only: Id = sale-id, Name = sale name, Type = "Sale", IconHint="deleted_item", ExtraInfo= sale-id
-
 
 Completed/Done sales are marked with stylehint = "deleted_item" (but item.deleted = false)
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleListFreetextSearchProvider">SaleListFreetextSearchProvider</see> class.
+Implemented by the `SaleListFreetextSearchProvider` class.
 The name of the MDO list is 'sale_freetextsearch'.
-
-
-
 
 ## Sample Request
 
@@ -41,10 +37,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("sale_freetextsearch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -69,12 +66,11 @@ foreach (var item in listProvider.RootItems) {
 |16|SalgÅBBÅ (Yngve'S Fisk & Vilt, YAvdeling: Yngvar Ystad)|sold|SalgÅBBÅ|
 |18|Salg7BB7 (0-Feil Software AS, 0Avdeling)||Salg7BB7|
 |19|Salg&BB& (0-Feil Software AS, 0Avdeling)|lost|Salg&BB&|
-|20|Salg<BB< (0-Feil Software AS, 0Avdeling)||Salg<BB<|
+|20|Salg<BB\< (0-Feil Software AS, 0Avdeling)||Salg<BB\<|
 |21|SalgCDDC (Arne'S Kebab, AAvdeling: Arjan Abelsen)|sold|SalgCDDC|
 |23|SalgNDDN (Arne'S Kebab, AAvdeling)||SalgNDDN|
 |24|SalgSDDS (Yngve'S Fisk & Vilt, YAvdeling)|sold|SalgSDDS|
 |25|SalgYDDY (Yngve'S Fisk & Vilt, YAvdeling)||SalgYDDY|
-
 
 ## Related MDO Lists
 

@@ -43,5 +43,4 @@ The ISO country code, like, "NO" or "US". See [www.iso.org][1] for details.
 
 The country name, as written on an envelope ("Norway", "Sweden", etc).
 
-<!-- Referenced links -->
 [1]: http://www.iso.org/iso/home/standards/country_codes/iso-3166-1_decoding_table.md#AA

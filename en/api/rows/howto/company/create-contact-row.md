@@ -19,7 +19,24 @@ The following example shows how we make create a contact using the `ContactRow` 
 
 ## Code
 
-[!code-csharp[CS](includes/create-contact-row.cs)]
+```csharp CS
+using SuperOffice.CRM.Rows;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Instantiate a ContactRow type
+  ContactRow newContact = ContactRow.CreateNew();
+
+  //Assign values to the instantiated ContactRow
+  newContact.SetDefaults();
+  newContact.Name = "EuroCenter";
+  newContact.OrgNr = "1234523";
+  newContact.Number1 = "7412885";
+
+  //Saving the ContactRow
+  newContact.Save();
+}
+```
 
 ## Walk-through
 
@@ -29,6 +46,23 @@ The first step is to instantiate the `ContactRow` class and then the next step i
 
 To access individual properties exposed through the `ContactRow` class we use statements like this:
 
-[!code-csharp[CS](includes/create-contact-row.cs?range=10)]
+```csharp CS
+using SuperOffice.CRM.Rows;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Instantiate a ContactRow type
+  ContactRow newContact = ContactRow.CreateNew();
+
+  //Assign values to the instantiated ContactRow
+  newContact.SetDefaults();
+  newContact.Name = "EuroCenter";
+  newContact.OrgNr = "1234523";
+  newContact.Number1 = "7412885";
+
+  //Saving the ContactRow
+  newContact.Save();
+}
+```
 
 Calling `Save()` available in the `ContactRow` class, the instantiated `ContactRow` will be saved in to the `contact` table.

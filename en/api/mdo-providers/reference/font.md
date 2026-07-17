@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "font" MDO List
+
 List provider for availablefonts table.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.FontProvider">FontProvider</see> class.
+Implemented by the `FontProvider` class.
 The name of the MDO list is 'font'.
 
 ## Additional Attributes
@@ -21,10 +20,6 @@ The name of the MDO list is 'font'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Include deleted fonts| showDeleted|true|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +32,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("font", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -70,7 +66,6 @@ foreach (var item in listProvider.RootItems) {
 |62|Impact|||
 |63|Inter||/fonts/inter/inter.css|
 |64|Lato||/fonts/lato/lato.css|
-
 
 ## Related MDO Lists
 

@@ -2,7 +2,7 @@
 uid: faqreplytemplate
 title: faqreplytemplate
 keywords: mdoprovider mdo provider faqreplytemplate
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "faqreplytemplate" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.FaqReplyTemplateProvider">FaqReplyTemplateProvider</see> class.
+Implemented by the `FaqReplyTemplateProvider` class.
 The name of the MDO list is 'faqreplytemplate'.
 
 ## Additional Attributes
@@ -21,10 +18,6 @@ The name of the MDO list is 'faqreplytemplate'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Which of the types should be included? Comma separated string with the following choices: faqEntries, replyTemplates, quickReplies. Empty will give everything| resultType||
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +30,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("faqreplytemplate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -50,7 +44,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

@@ -9,13 +9,12 @@ envir: onsite, online
 ---
 
 # "selectionfavourite" MDO List
+
 MDO list provider for selection favourites.
 Supported additionalInfo:
 membertype=[tablename] to restrict to one kind of entities.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SelectionFavouriteListProvider">SelectionFavouriteListProvider</see> class.
+Implemented by the `SelectionFavouriteListProvider` class.
 The name of the MDO list is 'selectionfavourite'.
 
 ## Additional Attributes
@@ -23,10 +22,6 @@ The name of the MDO list is 'selectionfavourite'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Filter according to type of selection members (table name)| membertype|ticket|
-
-
-
-
 
 ## Sample Request
 
@@ -39,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selectionfavourite", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -52,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

@@ -1,7 +1,7 @@
 ---
 uid: LinksPerson
 title: LinksPerson
-description: 
+description:
 keywords: LinksPerson archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "LinksPerson"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksPersonProvider">SuperOffice.CRM.ArchiveLists.LinksPersonProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.LinksPersonProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"person"|Contact|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -121,6 +123,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |contact/deletedDate|datetime|Deleted date: Deleted date|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contact/mainContact| *None* |Main contact: Main contact for this company| x |
@@ -137,5 +140,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

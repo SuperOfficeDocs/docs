@@ -1,0 +1,411 @@
+---
+title: How to use multiple criteria with the FindAgent
+uid: ifindagent_multi_criteria
+description: How to use multiple criteria with the FindAgent
+author: SuperOffice Product and Engineering
+keywords:
+content_type: howto
+date:
+category:
+area: api-services
+redirect_from: /en/api/netserver/search/ifindagent/using-criteria
+---
+
+# How to use multiple criteria with the FindAgent
+
+Unlike the [ArchiveAgent][1], the `FindAgent` supports saved restrictions and also handles some behind-the-scenes translation related to reporter criteria that the archive agent does not need to worry about.
+
+The example below shows the use of the `SaveRestrictions` method exposed through the `FindAgent`.
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+using SuperOffice.CRM.Globalization;
+using SuperOffice.Util;
+
+using (SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Initializing the FindAgent
+  using(FindAgent newFindAgt = new FindAgent())
+  {
+    //Declaration of the Local variable
+    string storageType = "Criteria";
+    string providerName = "findcontact";
+    string storageKey = "associate=1236";
+    string[] staticColumns = new string[] { "name", "firstName", "lastName" };
+
+    //Making use of a method exposed in the FindAgent
+    //GetAvailableRestrictionColumns - which Gets a list of
+    //the column names corresponding to available restrictions for
+    //a certain archive provider and restriction storage provider.
+    string[] handledColumns = newFindAgt.GetAvailableRestrictionColumns(storageType, providerName);
+
+    //GetSpecifiedCriteriaInformationWithDefaults - Get criteria information from a
+    //set of saved criteria, for a specific set of columns.
+    CriteriaInformation criteria = newFindAgt.GetSpecifiedCriteriaInformationWithDefaults(storageType, providerName, storageKey, handledColumns, staticColumns);
+
+    //Represents a list of keys and values i.e columns and the conditions.
+    Dictionary<string, ArchiveRestrictionInfo> restrictions = ArchiveRestrictionInfo.ToNameDictionary( criteria.Restrictions );
+
+    //Setting the restriction for specific columns
+    //Udef fields may not run depending on the database.
+    //string values
+    restrictions["lastName"].SetValue("Tester 5");
+    restrictions["lastName"].IsActive = true;
+    restrictions["firstName"].SetValue("Tester 5");
+    restrictions["firstName"].Operator = "contains";
+    restrictions["firstName"].IsActive = true;
+
+    //int values
+    restrictions["personId"].SetValue( "215" );
+    restrictions["contactId"].SetValue( "100", "143" );
+    restrictions["contactId"].Operator = "between";
+
+    //list
+    restrictions["position"].SetValue( "1" );
+    restrictions["category"].SetValue( "1", "2", "3", "4" );
+
+    //bool
+    restrictions["nomailings"].SetValue(true.ToString());
+    restrictions["contactUdef/SuperOffice:6"].SetValue("1");
+
+    //decimal
+    restrictions["contactUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.4));
+    restrictions["personUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.8), CultureDataFormatter.EncodeDouble(2.6));
+    restrictions["personUdef/SuperOffice:8"].Operator = "between";
+    restrictions["personUdef/SuperOffice:8"].IsActive = true;
+
+    //datetime
+    restrictions["contactUdef/SuperOffice:4"].SetValue(CultureDataFormatter.EncodeDate(DateTime.Now));
+
+    //Save the restrictions so that it may be used later as search criteria
+    newFindAgt.SaveRestrictions(storageType, providerName, storageKey, CollectionOps.DictionaryValuesToArray(restrictions));
+  }
+}
+```
+
+The intention is to store and restore a set of restrictions that could be used later as search criteria. The first thing we do is to get the `FindAgent` instance, which contains the method that we use. Once the initialization is done, we declare the variable that we would need to pass to the different methods we use.
+
+## storageType
+
+The storage type specification of the restriction, which could be "Criteria" or "Reporter" or any possible extension.
+
+## providerName
+
+This is the name of the archive provider which is intended to use the restriction.
+
+## storageKey
+
+This is to be interpreted by the restriction storage provider when it fetches the criteria for the search.
+
+## staticColumns
+
+This is an array of restrictions that are to be excluded from the `CriteriaArchiveRows` part of the result.
+
+In the **Find** dialog that corresponds to the "static fields", this variable is used to avoid duplication in the **Match also** criteria list. In place, this variable is used it could be stated as `null`, which indicates that all restrictions should be included in the criteria list.
+
+For example, if you have a criteria such as person/firstname="John" then all matches on this field will contain the same value "John" and the column can be excluded from the result making more room for the useful information.
+
+## handledColumns
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+using SuperOffice.CRM.Globalization;
+using SuperOffice.Util;
+
+using (SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Initializing the FindAgent
+  using(FindAgent newFindAgt = new FindAgent())
+  {
+    //Declaration of the Local variable
+    string storageType = "Criteria";
+    string providerName = "findcontact";
+    string storageKey = "associate=1236";
+    string[] staticColumns = new string[] { "name", "firstName", "lastName" };
+
+    //Making use of a method exposed in the FindAgent
+    //GetAvailableRestrictionColumns - which Gets a list of
+    //the column names corresponding to available restrictions for
+    //a certain archive provider and restriction storage provider.
+    string[] handledColumns = newFindAgt.GetAvailableRestrictionColumns(storageType, providerName);
+
+    //GetSpecifiedCriteriaInformationWithDefaults - Get criteria information from a
+    //set of saved criteria, for a specific set of columns.
+    CriteriaInformation criteria = newFindAgt.GetSpecifiedCriteriaInformationWithDefaults(storageType, providerName, storageKey, handledColumns, staticColumns);
+
+    //Represents a list of keys and values i.e columns and the conditions.
+    Dictionary<string, ArchiveRestrictionInfo> restrictions = ArchiveRestrictionInfo.ToNameDictionary( criteria.Restrictions );
+
+    //Setting the restriction for specific columns
+    //Udef fields may not run depending on the database.
+    //string values
+    restrictions["lastName"].SetValue("Tester 5");
+    restrictions["lastName"].IsActive = true;
+    restrictions["firstName"].SetValue("Tester 5");
+    restrictions["firstName"].Operator = "contains";
+    restrictions["firstName"].IsActive = true;
+
+    //int values
+    restrictions["personId"].SetValue( "215" );
+    restrictions["contactId"].SetValue( "100", "143" );
+    restrictions["contactId"].Operator = "between";
+
+    //list
+    restrictions["position"].SetValue( "1" );
+    restrictions["category"].SetValue( "1", "2", "3", "4" );
+
+    //bool
+    restrictions["nomailings"].SetValue(true.ToString());
+    restrictions["contactUdef/SuperOffice:6"].SetValue("1");
+
+    //decimal
+    restrictions["contactUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.4));
+    restrictions["personUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.8), CultureDataFormatter.EncodeDouble(2.6));
+    restrictions["personUdef/SuperOffice:8"].Operator = "between";
+    restrictions["personUdef/SuperOffice:8"].IsActive = true;
+
+    //datetime
+    restrictions["contactUdef/SuperOffice:4"].SetValue(CultureDataFormatter.EncodeDate(DateTime.Now));
+
+    //Save the restrictions so that it may be used later as search criteria
+    newFindAgt.SaveRestrictions(storageType, providerName, storageKey, CollectionOps.DictionaryValuesToArray(restrictions));
+  }
+}
+```
+
+This is an array of restrictions that are to be excluded from the `CriteriaArchiveRows` part of the result. In the **Find** dialog, that corresponds to the "static fields" this variable is used to avoid duplication in the "Match also" criteria list. In places, this variable is used it could be stated as `null` which indicates that all restrictions should be included in the criteria list.
+
+When retrieving the list of columns for the variable we have made use of the `GetAvailableRestrictionColumns` method, which requires the `storageType` and `providerName` as the input parameters. It returns a list of column names corresponding to the available restrictions for the passed in `providerName` and `storageType`.
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+using SuperOffice.CRM.Globalization;
+using SuperOffice.Util;
+
+using (SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Initializing the FindAgent
+  using(FindAgent newFindAgt = new FindAgent())
+  {
+    //Declaration of the Local variable
+    string storageType = "Criteria";
+    string providerName = "findcontact";
+    string storageKey = "associate=1236";
+    string[] staticColumns = new string[] { "name", "firstName", "lastName" };
+
+    //Making use of a method exposed in the FindAgent
+    //GetAvailableRestrictionColumns - which Gets a list of
+    //the column names corresponding to available restrictions for
+    //a certain archive provider and restriction storage provider.
+    string[] handledColumns = newFindAgt.GetAvailableRestrictionColumns(storageType, providerName);
+
+    //GetSpecifiedCriteriaInformationWithDefaults - Get criteria information from a
+    //set of saved criteria, for a specific set of columns.
+    CriteriaInformation criteria = newFindAgt.GetSpecifiedCriteriaInformationWithDefaults(storageType, providerName, storageKey, handledColumns, staticColumns);
+
+    //Represents a list of keys and values i.e columns and the conditions.
+    Dictionary<string, ArchiveRestrictionInfo> restrictions = ArchiveRestrictionInfo.ToNameDictionary( criteria.Restrictions );
+
+    //Setting the restriction for specific columns
+    //Udef fields may not run depending on the database.
+    //string values
+    restrictions["lastName"].SetValue("Tester 5");
+    restrictions["lastName"].IsActive = true;
+    restrictions["firstName"].SetValue("Tester 5");
+    restrictions["firstName"].Operator = "contains";
+    restrictions["firstName"].IsActive = true;
+
+    //int values
+    restrictions["personId"].SetValue( "215" );
+    restrictions["contactId"].SetValue( "100", "143" );
+    restrictions["contactId"].Operator = "between";
+
+    //list
+    restrictions["position"].SetValue( "1" );
+    restrictions["category"].SetValue( "1", "2", "3", "4" );
+
+    //bool
+    restrictions["nomailings"].SetValue(true.ToString());
+    restrictions["contactUdef/SuperOffice:6"].SetValue("1");
+
+    //decimal
+    restrictions["contactUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.4));
+    restrictions["personUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.8), CultureDataFormatter.EncodeDouble(2.6));
+    restrictions["personUdef/SuperOffice:8"].Operator = "between";
+    restrictions["personUdef/SuperOffice:8"].IsActive = true;
+
+    //datetime
+    restrictions["contactUdef/SuperOffice:4"].SetValue(CultureDataFormatter.EncodeDate(DateTime.Now));
+
+    //Save the restrictions so that it may be used later as search criteria
+    newFindAgt.SaveRestrictions(storageType, providerName, storageKey, CollectionOps.DictionaryValuesToArray(restrictions));
+  }
+}
+```
+
+With the execution of the above code, we have retrieved criteria information from a set of saved criteria, for specific set columns. The results are contained in two forms. Namely,  fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. All columns specified in the call will be present in the results. The method requires 5 parameters to produce the output. The parameters have been explained above.
+
+The next step is to create a variable that could be used to store the restrictions.
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+using SuperOffice.CRM.Globalization;
+using SuperOffice.Util;
+
+using (SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Initializing the FindAgent
+  using(FindAgent newFindAgt = new FindAgent())
+  {
+    //Declaration of the Local variable
+    string storageType = "Criteria";
+    string providerName = "findcontact";
+    string storageKey = "associate=1236";
+    string[] staticColumns = new string[] { "name", "firstName", "lastName" };
+
+    //Making use of a method exposed in the FindAgent
+    //GetAvailableRestrictionColumns - which Gets a list of
+    //the column names corresponding to available restrictions for
+    //a certain archive provider and restriction storage provider.
+    string[] handledColumns = newFindAgt.GetAvailableRestrictionColumns(storageType, providerName);
+
+    //GetSpecifiedCriteriaInformationWithDefaults - Get criteria information from a
+    //set of saved criteria, for a specific set of columns.
+    CriteriaInformation criteria = newFindAgt.GetSpecifiedCriteriaInformationWithDefaults(storageType, providerName, storageKey, handledColumns, staticColumns);
+
+    //Represents a list of keys and values i.e columns and the conditions.
+    Dictionary<string, ArchiveRestrictionInfo> restrictions = ArchiveRestrictionInfo.ToNameDictionary( criteria.Restrictions );
+
+    //Setting the restriction for specific columns
+    //Udef fields may not run depending on the database.
+    //string values
+    restrictions["lastName"].SetValue("Tester 5");
+    restrictions["lastName"].IsActive = true;
+    restrictions["firstName"].SetValue("Tester 5");
+    restrictions["firstName"].Operator = "contains";
+    restrictions["firstName"].IsActive = true;
+
+    //int values
+    restrictions["personId"].SetValue( "215" );
+    restrictions["contactId"].SetValue( "100", "143" );
+    restrictions["contactId"].Operator = "between";
+
+    //list
+    restrictions["position"].SetValue( "1" );
+    restrictions["category"].SetValue( "1", "2", "3", "4" );
+
+    //bool
+    restrictions["nomailings"].SetValue(true.ToString());
+    restrictions["contactUdef/SuperOffice:6"].SetValue("1");
+
+    //decimal
+    restrictions["contactUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.4));
+    restrictions["personUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.8), CultureDataFormatter.EncodeDouble(2.6));
+    restrictions["personUdef/SuperOffice:8"].Operator = "between";
+    restrictions["personUdef/SuperOffice:8"].IsActive = true;
+
+    //datetime
+    restrictions["contactUdef/SuperOffice:4"].SetValue(CultureDataFormatter.EncodeDate(DateTime.Now));
+
+    //Save the restrictions so that it may be used later as search criteria
+    newFindAgt.SaveRestrictions(storageType, providerName, storageKey, CollectionOps.DictionaryValuesToArray(restrictions));
+  }
+}
+```
+
+Here we have made use of the `Dictionary` class located in the `System.Collection.Generic` namespace, which will store the restrictions as a key-value pair. The key is of string type and the values are of `ArchiveRestrictionInfo` type, which is a class that carries information such as `contact_id = 2` which could be used in a query of an `ArchiveProvider`.
+
+Once this is done, we may create and assign different restrictions. The example shows how to assign restrictions to multiple types of data as well as user-defined fields.
+
+<Note>
+When executing the code for a user, an error might occur based on the state of their database since they may not have some or all of the user-defined fields shown in the example. In such a case, the code will be executable once the user-defined fields have been commented out or removed.
+</Note>
+
+Once all the required restrictions have been added, the created restriction may be saved with the execution of the following statement.
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+using SuperOffice.CRM.Globalization;
+using SuperOffice.Util;
+
+using (SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Initializing the FindAgent
+  using(FindAgent newFindAgt = new FindAgent())
+  {
+    //Declaration of the Local variable
+    string storageType = "Criteria";
+    string providerName = "findcontact";
+    string storageKey = "associate=1236";
+    string[] staticColumns = new string[] { "name", "firstName", "lastName" };
+
+    //Making use of a method exposed in the FindAgent
+    //GetAvailableRestrictionColumns - which Gets a list of
+    //the column names corresponding to available restrictions for
+    //a certain archive provider and restriction storage provider.
+    string[] handledColumns = newFindAgt.GetAvailableRestrictionColumns(storageType, providerName);
+
+    //GetSpecifiedCriteriaInformationWithDefaults - Get criteria information from a
+    //set of saved criteria, for a specific set of columns.
+    CriteriaInformation criteria = newFindAgt.GetSpecifiedCriteriaInformationWithDefaults(storageType, providerName, storageKey, handledColumns, staticColumns);
+
+    //Represents a list of keys and values i.e columns and the conditions.
+    Dictionary<string, ArchiveRestrictionInfo> restrictions = ArchiveRestrictionInfo.ToNameDictionary( criteria.Restrictions );
+
+    //Setting the restriction for specific columns
+    //Udef fields may not run depending on the database.
+    //string values
+    restrictions["lastName"].SetValue("Tester 5");
+    restrictions["lastName"].IsActive = true;
+    restrictions["firstName"].SetValue("Tester 5");
+    restrictions["firstName"].Operator = "contains";
+    restrictions["firstName"].IsActive = true;
+
+    //int values
+    restrictions["personId"].SetValue( "215" );
+    restrictions["contactId"].SetValue( "100", "143" );
+    restrictions["contactId"].Operator = "between";
+
+    //list
+    restrictions["position"].SetValue( "1" );
+    restrictions["category"].SetValue( "1", "2", "3", "4" );
+
+    //bool
+    restrictions["nomailings"].SetValue(true.ToString());
+    restrictions["contactUdef/SuperOffice:6"].SetValue("1");
+
+    //decimal
+    restrictions["contactUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.4));
+    restrictions["personUdef/SuperOffice:8"].SetValue(CultureDataFormatter.EncodeDouble(1.8), CultureDataFormatter.EncodeDouble(2.6));
+    restrictions["personUdef/SuperOffice:8"].Operator = "between";
+    restrictions["personUdef/SuperOffice:8"].IsActive = true;
+
+    //datetime
+    restrictions["contactUdef/SuperOffice:4"].SetValue(CultureDataFormatter.EncodeDate(DateTime.Now));
+
+    //Save the restrictions so that it may be used later as search criteria
+    newFindAgt.SaveRestrictions(storageType, providerName, storageKey, CollectionOps.DictionaryValuesToArray(restrictions));
+  }
+}
+```
+
+With the use of the `SaveRestriction` method exposed in the `IFindAgent` interface, the restriction will be saved so that it could later be used as a search criterion including dynamic search and find statements. The method requires the parameters:
+
+* storageType
+* providerName
+* storageKey
+* an array of ArchiveRestrictionInfo
+
+Here we have made use of the `CollectionsOps` class exposed in the `SuperOffice.Util` class to convert between various collections of data. In this case, from `Dictionary` type to an array of `ArchiveRestrictionInfo` type.
+
+[1]: ../iarchiveagent/using-criteria

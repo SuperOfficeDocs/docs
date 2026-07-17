@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "importpersonduplicatematch" MDO List
+
 Import Person Fields to match on: Name, E-mail, phone, number, id, None
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ImportPersonDuplicateMatchProvider">ImportPersonDuplicateMatchProvider</see> class.
+Implemented by the `ImportPersonDuplicateMatchProvider` class.
 The name of the MDO list is 'importpersonduplicatematch'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("importpersonduplicatematch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -48,7 +45,6 @@ foreach (var item in listProvider.RootItems) {
 |4|Number|||
 |5|None - do not import contact|||
 |6|ID|||
-
 
 ## Related MDO Lists
 

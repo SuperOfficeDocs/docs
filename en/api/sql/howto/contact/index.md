@@ -17,7 +17,6 @@ redirect_from:
 * [Update person][2]
 * [Add person picture BLOBs][3]
 
-<!-- Referenced links -->
-[1]: get-persons-from-contact-sql.md
-[2]: update-person-sql.md
-[3]: add-person-picture-blobs-sql.md
+[1]: ./get-persons-from-contact-sql
+[2]: ./update-person-sql
+[3]: ./add-person-picture-blobs-sql

@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "importphoneurlsemail" MDO List
+
 Import phone/url/email values: Add, Replace, Skip
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ImportPhoneUrlsEmailProvider">ImportPhoneUrlsEmailProvider</see> class.
+Implemented by the `ImportPhoneUrlsEmailProvider` class.
 The name of the MDO list is 'importphoneurlsemail'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("importphoneurlsemail", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -45,7 +42,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Add new - keep existing|||
 |2|Replace - overwrite existing|||
 |3|Ignore - keep existing|||
-
 
 ## Related MDO Lists
 

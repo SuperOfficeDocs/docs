@@ -59,9 +59,9 @@ protected override TableInfo SetJoin()
 }
 ```
 
-Here, we join the parent `Person` table to `ForeignKey`, because there is something interesting there that we’d like to fetch and show as columns related to persons – everywhere a person is shown.
+Here, we join the parent `Person` table to `ForeignKey`, because there is something interesting there that we'd like to fetch and show as columns related to persons - everywhere a person is shown.
 
-This is an extremely powerful mechanism and a big simplification. Columns exposed by this extender will appear in every context where a Person appears – all the archives mentioned above.
+This is an extremely powerful mechanism and a big simplification. Columns exposed by this extender will appear in every context where a Person appears - all the archives mentioned above.
 
 Rather than appearing under the entity fields, the new columns are available under the new menu item "Other" - as seen in the **Find dialog** image above.
 
@@ -112,8 +112,6 @@ public class MySaleTablelSystem : TableExtenderBase<TableInfo>
   * use ForceRestriction to invoke InnerModifyQuery to add return fields, or change an existing query
   * use InnerPopulateRowFromReader to access reader and add column data to ArchiveRow output
 
-<!-- Referenced links -->
-[1]: index.md
+[1]: ./index
 
-<!-- Referenced images -->
-[img1]: media/extenderextender.png
+[img1]: /media/loc/en/api/archive-providers/extenderextender.png

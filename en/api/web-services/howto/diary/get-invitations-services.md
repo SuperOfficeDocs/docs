@@ -36,7 +36,7 @@ using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
   newInvPro.SetPagingInfo(100, 0);
 
   //Add the restriction the provider should be based on
-  newInvPro.SetRestriction( 
+  newInvPro.SetRestriction(
     new ArchiveRestrictionInfo("associateId", "=", "5"),
     new ArchiveRestrictionInfo("date",">",DateTime.Today.ToString()));
 
@@ -87,7 +87,6 @@ StateZeroDatabase       [D:06/14/2007]    [D:06/14/2007]    [I:161]
 StateZeroDatabase       [D:04/28/2007]    [D:04/28/2007]    [I:150]
 ```
 
-<!-- Referenced links -->
-[1]: ../../../../diary/learn/invitation/index.md
-[2]: ../../index.md
-[3]: ../../../archive-providers/reference/invitation.md
+[1]: ../../../../diary/learn/invitation/index
+[2]: ../../index
+[3]: ../../../archive-providers/reference/invitation

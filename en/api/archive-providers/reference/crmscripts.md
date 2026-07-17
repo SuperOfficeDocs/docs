@@ -1,7 +1,7 @@
 ---
 uid: CRMScripts
 title: CRMScripts
-description: 
+description:
 keywords: CRMScripts archive provider
 generated: true
 content_type: reference
@@ -10,15 +10,17 @@ envir: onsite, online
 
 # "CRMScripts"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.CrmScriptsProvider">SuperOffice.CRM.ArchiveLists.CrmScriptsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.CrmScriptsProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"ejscript"|ejscript|
 |"eventHandler"|eventHandler|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -41,7 +43,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |hierarchyFullname| *None* |Hierarchy name: The full name/path from table hierarchy|  |
 |hierarchyName| *None* |Hierarchy name: The full name/path from table hierarchy|  |
 |hierarchyParentId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 |screenChooserId| *None* |ScreenChooser ID: Primary key for table ScreenChooser|  |
 |screenType| *None* |ScreenType: Determines type of ScreenChooser|  |
 |enabled| *None* |Enabled: Enables or disables this ScreenChooser|  |
@@ -56,5 +58,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

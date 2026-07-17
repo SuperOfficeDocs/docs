@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "QuoteLineShadowSelectionCombinedV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionCombinedProviderV2` inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"|[[Quoteline static]]|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -123,6 +125,7 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/poNumber|string|P.O. Number: Customer's purchase order number| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/orderComment|string|Comment: Customer's comment| x |
@@ -227,6 +230,7 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/person/supportLanguage|listAny|Sale - Preferred language: Preferred language used for reply templates and more| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/supportAssociate|associate|Sale - Our service contact: Default service contact for this contact| x |
@@ -281,8 +285,8 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/person/personAddress/state|string|Sale - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/person/personAddress/wgs84latitude|decimal|Sale - Contact address - Latitude: Latitude| x |
 |alternative/version/quote/sale/person/personAddress/wgs84longitude|decimal|Sale - Contact address - Longitude: Longitude| x |
-|alternative/version/quote/sale/person/personAddress/formattedAddress| *None* |Sale - Contact address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/person/personAddress/formattedMultiLineAddress| *None* |Sale - Contact address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/person/personAddress/formattedAddress| *None* |Sale - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/person/personAddress/formattedMultiLineAddress| *None* |Sale - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/person/restrictionAddress/addressId|int|Sale - Search address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/person/restrictionAddress/line1|string|Sale - Search address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/person/restrictionAddress/line2|string|Sale - Search address - Address 2: Second line of the address| x |
@@ -293,8 +297,8 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/person/restrictionAddress/state|string|Sale - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/person/restrictionAddress/wgs84latitude|decimal|Sale - Search address - Latitude: Latitude| x |
 |alternative/version/quote/sale/person/restrictionAddress/wgs84longitude|decimal|Sale - Search address - Longitude: Longitude| x |
-|alternative/version/quote/sale/person/restrictionAddress/formattedAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/person/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/person/restrictionAddress/formattedAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/person/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/person/personInterestIds|listInterest|Sale - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |alternative/version/quote/sale/person/personUdef/SuperOffice:1|string|Sale - contactshorttext: tooltipshorttext| x |
 |alternative/version/quote/sale/person/personUdef/SuperOffice:2|string|Sale - contactlongtext: tooltiplongtext| x |
@@ -331,6 +335,7 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/person/personExtra/y\_rental/x\_contact|stringorPK|Sale - Rental - Renter: Company that rents equipment| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personExtra/y\_rental/y\_equipment/x\_name|string|Sale - Rental - Equipment - Name: Equpment name custom field. Cannot be null., show in table| x |
@@ -435,6 +440,7 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/contact/registeredBy|associate|Sale - Registered by: The user who registered the data| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/registeredByFullName|associate|Sale - Registered by - Full name: The user who registered the data| x |
@@ -470,8 +476,8 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/contact/postAddress/state|string|Sale - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/postAddress/wgs84latitude|decimal|Sale - Postal address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/postAddress/wgs84longitude|decimal|Sale - Postal address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/postAddress/formattedAddress| *None* |Sale - Postal address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/postAddress/formattedMultiLineAddress| *None* |Sale - Postal address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/postAddress/formattedAddress| *None* |Sale - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/postAddress/formattedMultiLineAddress| *None* |Sale - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/streetAddress/addressId|int|Sale - Street address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/contact/streetAddress/line1|string|Sale - Street address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/contact/streetAddress/line2|string|Sale - Street address - Address 2: Second line of the address| x |
@@ -482,8 +488,8 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/contact/streetAddress/state|string|Sale - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/streetAddress/wgs84latitude|decimal|Sale - Street address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/streetAddress/wgs84longitude|decimal|Sale - Street address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/streetAddress/formattedAddress| *None* |Sale - Street address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/streetAddress/formattedMultiLineAddress| *None* |Sale - Street address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/streetAddress/formattedAddress| *None* |Sale - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/streetAddress/formattedMultiLineAddress| *None* |Sale - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/restrictionAddress/addressId|int|Sale - Search address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/contact/restrictionAddress/line1|string|Sale - Search address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/contact/restrictionAddress/line2|string|Sale - Search address - Address 2: Second line of the address| x |
@@ -494,8 +500,8 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/contact/restrictionAddress/state|string|Sale - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/restrictionAddress/wgs84latitude|decimal|Sale - Search address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/restrictionAddress/wgs84longitude|decimal|Sale - Search address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/restrictionAddress/formattedAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/restrictionAddress/formattedAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/url/URLAddress|string|Sale - URL| x |
 |alternative/version/quote/sale/contact/url/URLDescription|string|Sale - Description| x |
 |alternative/version/quote/sale/contact/contactAssociate/firstName|string|Sale - First name: Displays the contact's first name| x |
@@ -539,6 +545,7 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:5|unlimitedDate|Sale - companyunlimiteddate: tooltipunlimiteddate| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:6|bool|Sale - companycheckbox| x |
@@ -643,6 +650,7 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/sale/project/number|string|Sale - Project - Number: Displays the project's number| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/type|listAny|Sale - Project - Project type: Displays the project's type| x |
@@ -747,6 +755,7 @@ Implementation of the provider for the combined selection
 |alternative/version/quote/connection/deleted|bool|ERP connection - Deleted: Column showing if the ERP connection has been marked as deleted| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/allAccess|bool|ERP connection - Unrestricted: There are no access restrictions on this ERP connection| x |
@@ -789,5 +798,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

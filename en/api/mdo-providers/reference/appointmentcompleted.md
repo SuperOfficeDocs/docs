@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "appointmentcompleted" MDO List
+
 Appointment completed statuses: AppointmentStatus.NotStarted, AppointmentStatus.Completed
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AppointmentCompleted">AppointmentCompleted</see> class.
+Implemented by the `AppointmentCompleted` class.
 The name of the MDO list is 'appointmentcompleted'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("appointmentcompleted", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |1|No|||
 |3|Yes|||
-
 
 ## Related MDO Lists
 

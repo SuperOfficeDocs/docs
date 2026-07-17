@@ -32,6 +32,5 @@ Configuration values for accessing [SuperID][2].
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.SuperId>
-[2]: ../../online/identity/superid/overview.md
+[2]: ../../online/identity/superid/overview

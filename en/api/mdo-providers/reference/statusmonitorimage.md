@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "statusmonitorimage" MDO List
+
 List of images for status monitors in the blob table.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.StatusMonitorImageProvider">StatusMonitorImageProvider</see> class.
+Implemented by the `StatusMonitorImageProvider` class.
 The name of the MDO list is 'statusmonitorimage'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("statusmonitorimage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -45,7 +42,6 @@ foreach (var item in listProvider.RootItems) {
 |306|clementin.bmp|||
 |445|elefant.jpg|||
 |307|unhappydemon.jpg|||
-
 
 ## Related MDO Lists
 

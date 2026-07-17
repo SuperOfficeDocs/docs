@@ -42,6 +42,5 @@ The `IsDelete` property in the Contact Entity is used to check whether the Conta
 * [Delete an Entity][1]
 * [Delete a Row through an Entity][2]
 
-<!-- Referenced links -->
-[1]: delete-entity.md
-[2]: ../rows/delete-row-from-entity.md
+[1]: ./delete-entity
+[2]: ../rows/delete-row-from-entity

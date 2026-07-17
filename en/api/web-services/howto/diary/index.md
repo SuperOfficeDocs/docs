@@ -29,11 +29,10 @@ redirect_from:
 * [Create VideoMeeting][6]
 * [Delete VideoMeeting][7]
 
-<!-- Referenced links -->
-[1]: create-apt-services.md
-[2]: create-recurring-appointment-services.md
-[3]: create-invitation-services.md
-[4]: get-invitations-services.md
-[5]: accept-invitation-services.md
-[6]: rest-create-videomeeting.md
-[7]: rest-delete-videomeeting.md
+[1]: ./create-apt-services
+[2]: ./create-recurring-appointment-services
+[3]: ./create-invitation-services
+[4]: ./get-invitations-services
+[5]: ./accept-invitation-services
+[6]: ./rest-create-videomeeting
+[7]: ./rest-delete-videomeeting

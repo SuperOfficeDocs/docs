@@ -14,7 +14,7 @@ This article will introduce you to the high-level aspects of SuperOffice web bac
 
 ## Introduction
 
-Certain tasks related to CRM are potentially very time-consuming. Performing a mail-merge, for example, has the potential of taking minutes to complete. Within the context of any application, conducting such a time-consuming task synchronously would be disastrous for the user experience. SuperOffice Background Computing (SBC), sometimes referred to as Batch Processing,  was created to counter such an event, and enhance the overall experience and functionality of the platform.
+Certain tasks related to CRM are potentially very time-consuming. Performing a mail-merge, for example, has the potential of taking minutes to complete. Within the context of any application, conducting such a time-consuming task synchronously would be disastrous for the user experience. SuperOffice Background Computing (SBC), sometimes referred to as Batch Processing,  was created to counter such an event, and enhance the overall experience and functionality of the platform.
 
 The remainder of this article will focus on how background computing is accomplished in SuperOffice Web.
 
@@ -62,7 +62,7 @@ For each SEM plug-in discovered, there are a set of conditions that define when 
 
 Have you ever wondered how sometimes the Invitation dialog just appears out of nowhere, letting you know that you have an appointment? This is all orchestrated by SEM. As long as requests are sent to the server - keeping the heartbeat active, SEM checks to determine if the Invitation plug-in meets all of the conditions. If it does, it is allowed to run and fetch new appointments for the logged-on user. When new appointments are discovered, the results from the plug-in are sent back to the client in the response and, the invitation dialog is opened by the application and displayed to the user.
 
-So how does the completion of the background computing plug-in actually raise the ONINVITATIONPOPUP event in the web client?  Remember, each SEM plug-in returns a ServerEventObjResult type containing one or more ServerEventObject types. Each ServerEventObject has an EventType property that defines an event that is raised on the client. This is the vital link between the plug-in result and the type of event that is raised on the web client.
+So how does the completion of the background computing plug-in actually raise the ONINVITATIONPOPUP event in the web client?  Remember, each SEM plug-in returns a ServerEventObjResult type containing one or more ServerEventObject types. Each ServerEventObject has an EventType property that defines an event that is raised on the client. This is the vital link between the plug-in result and the type of event that is raised on the web client.
 
 Open the SoServerEventConfiguration.config file and you will see contents similar to what is shown below.
 
@@ -173,13 +173,11 @@ public SampleReturn GetSomeData(string args)
 
        quoteParams["args"] = args;
 
-
        ServerEventManager.SetInterval(
 
             DevNet.BatchTasks.SampleBatchPlugin.PluginName,
 
             DevNet.BatchTasks.SampleBatchPlugin.CheckingInterval);
-
 
         BatchTaskInfo bti = new BatchTaskInfo();
 
@@ -207,42 +205,42 @@ public class SampleReturn
 
 In order for the custom batch task to be useful, a new record must be created in the table BatchTask. The new record defines the name and other parameters for the plug-in. The easiest way to accomplish this in the web world is to create a server-side AJAX method and do the actual record creation in the body of the method. This is really only feasible when in local mode and there is not a firewall between the web application and application server. If both are hosted on the same machine, then this perfectly fine. Although not demonstrated here, a better approach would be to from the AJAX method call a custom web service on the application server and create the record there. This scenario is required when the web application's service mode is set to remote and communication with the application server is by using web services through a firewall.
 
-Server-side AJAX methods for the SuperOffice web client are easy to create. You can do this by simply creating a class that inherits from the IWebObject interface and decorate the class with the SoWebObject attribute. As seen below, there are four important things to consider when creating a batch task. The first is to have a type that is returned to the client to be sure the batch task was created successfully. The second is to organize any parameters needed by the batch task in a StringDictionary and pass that into the BatchData.SaveBatchTaskInfo method. The third important thing is to set the ServerEventManager interval, which defines how often the ServerEventManager is allowed to call the plug-in. The final and most important thing is to actually create an instance of a BatchTaskInfo type, define its properties, and then save it. This is facilitated by using the BatchData type. BatchData is primarily a data-access class and resides in the SoDatabase.dll. In the event of deploying the web application in remote mode, then you will be required to create a web service on the application server and call it to create the BatchTaskInfo using BatchData.
+Server-side AJAX methods for the SuperOffice web client are easy to create. You can do this by simply creating a class that inherits from the IWebObject interface and decorate the class with the SoWebObject attribute. As seen below, there are four important things to consider when creating a batch task. The first is to have a type that is returned to the client to be sure the batch task was created successfully. The second is to organize any parameters needed by the batch task in a StringDictionary and pass that into the BatchData.SaveBatchTaskInfo method. The third important thing is to set the ServerEventManager interval, which defines how often the ServerEventManager is allowed to call the plug-in. The final and most important thing is to actually create an instance of a BatchTaskInfo type, define its properties, and then save it. This is facilitated by using the BatchData type. BatchData is primarily a data-access class and resides in the SoDatabase.dll. In the event of deploying the web application in remote mode, then you will be required to create a web service on the application server and call it to create the BatchTaskInfo using BatchData.
 
 **A Sample Ajax method that creates a new BatchTask entry in the database:**
 
 ```javascript
-/// 
+///
 /// Sample class. It will be created at load.
-/// 
+///
 var Sample = new _Sample();
 function _Sample(){}
- 
+
 // Display the results of a finished report
 _Sample.prototype.ShowSampleReport=function(obj)
-{   
-    g_debug.trace("ShowSampleReport(" + obj.Response + ")", 
+{
+    g_debug.trace("ShowSampleReport(" + obj.Response + ")",
 "Sample.ShowSampleReport");
-    Dialog.Information('SuperOffice SIX', 
+    Dialog.Information('SuperOffice SIX',
                        obj.Name + '\r\n' + obj.Response);
 };
- 
+
 // Handle and display information from a custom object
 _Sample.prototype.GetSample=function(obj)
 {
- 
-    g_debug.trace("Sample.GetSample(" + obj + ")", 
+
+    g_debug.trace("Sample.GetSample(" + obj + ")",
 "Sample.GetSample");
     AjaxMethodDispatcher.CallASync("Sample.GetSampleSent",
               "Sample.Error","","","DevNet.AjaxLib.SampleAjaxClass.GetSomeData", obj);
 };
- 
+
 _Sample.prototype.GetSampleSent=function(obj)
-{   
-    Dialog.Information('SuperOffice SIX', 
+{
+    Dialog.Information('SuperOffice SIX',
 'Get sample task has been sent to the Batch service. ID: ' + obj.BatchTaskId);
 };
- 
+
 _Sample.prototype.Error=function(err,context)
 {
     Dialog.enableWindow(window);
@@ -261,20 +259,20 @@ I wanted to isolate this code to point out a few things about it. As of this wri
 
 ```csharp
 // Subscribe to Server Event
-PageEventHandler.addServerEvent("ONBATCHEVENT", "sampleevent", 
-"Sample.OnSampleEvent(obj)");   
- 
-/// 
+PageEventHandler.addServerEvent("ONBATCHEVENT", "sampleevent",
+"Sample.OnSampleEvent(obj)");
+
+///
 /// Sample class. It will be created at load.
-/// 
+///
 var Sample = new _Sample();
 function _Sample(){}
- 
+
 // Handle and display information from a batch object
 _Sample.prototype.OnSampleEvent=function(obj)
 {
     g_debug.trace("OnSampleEvent(" + obj + ")", "Sample");
- 
+
 if( obj.BatchTaskInfos != null && obj.BatchTaskInfos.length > 0 )
     {
         for( var t=0; t<obj.batchtaskinfos.length; ++t )>
@@ -283,10 +281,10 @@ if( obj.BatchTaskInfos != null && obj.BatchTaskInfos.length > 0 )
             {
                 if(obj.BatchTaskInfos[t].Name == "SampleBatchPlugin")
                 {
-                    if(obj.BatchTaskInfos[t].State == 4 || 
+                    if(obj.BatchTaskInfos[t].State == 4 ||
                        obj.BatchTaskInfos[t].State == 5)
                     {
-                        Batch.SetStoredObject('SampleBatchPlugin_' + t, 
+                        Batch.SetStoredObject('SampleBatchPlugin_' + t,
                                               obj.BatchTaskInfos[t]);
                         setTimeout(
    "Sample.ShowSampleReport(Batch.GetStoredObject('SampleBatchPlugin_" + t + "'));",
@@ -296,7 +294,7 @@ if( obj.BatchTaskInfos != null && obj.BatchTaskInfos.length > 0 )
             }catch(e)
             {
                 Dialog.Information('SuperOffice SIX', 'An exception ocurred: ' + e);
-            }    
+            }
         }
     }
 };
@@ -308,12 +306,9 @@ The OnSampleEvent method iterates over the returned status of results of each ba
 
 This article has covered the full breadth of SuperOffice Background Computing. You have been introduced to the Server Event Manager, and explained how intricate of a role it plays in the execution of batch tasks. You have been given insight into how a client action begins the series of steps required to successfully create a batch task, monitor the task's progress, as well as invoke a callback on the client when the batch task has been completed. Finally, you have seen code that can be used to successfully execute a custom batch task through the web application.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/servereventmanager4-initial.png
-[img2]: media/servereventmanagerillustrated-sm.png
-[img3]: media/batchservereventplugin2sm.png
-[img4]: media/batchprocessing1.png
-[img5]: media/batchprocessing2.png
-[img6]: media/tables-500.png
+[img1]: /media/loc/en/api/tutorials/servereventmanager4-initial.png
+[img2]: /media/loc/en/api/tutorials/servereventmanagerillustrated-sm.png
+[img3]: /media/loc/en/api/tutorials/batchservereventplugin2sm.png
+[img4]: /media/loc/en/api/tutorials/batchprocessing1.png
+[img5]: /media/loc/en/api/tutorials/batchprocessing2.png
+[img6]: /media/loc/en/api/tutorials/tables-500.png

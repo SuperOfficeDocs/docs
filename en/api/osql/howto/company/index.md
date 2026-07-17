@@ -18,6 +18,5 @@ redirect_from:
 * [Create contact][1]
 * [Get category list][2]
 
-<!-- Referenced links -->
-[1]: create-contact-osql.md
-[2]: get-catlist-sodatareader.md
+[1]: ./create-contact-osql
+[2]: ./get-catlist-sodatareader

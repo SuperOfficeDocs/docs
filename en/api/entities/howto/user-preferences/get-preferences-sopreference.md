@@ -31,8 +31,5 @@ The example above retrieves whether the calendar for the signed-in user begins w
 
 See also: [intro to cache][1]
 
-<!-- Referenced links -->
-[1]: ../../../caching/index.md
-[2]: set-preferences-sopreference.md
-
-<!-- Referenced images -->
+[1]: ../../../caching/index
+[2]: ./set-preferences-sopreference

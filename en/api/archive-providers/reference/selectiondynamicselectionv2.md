@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "SelectionDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SelectionSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.SelectionSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.SelectionSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
 Selection selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SelectionSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"selection"|Selection|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -91,5 +93,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

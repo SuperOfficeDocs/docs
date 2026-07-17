@@ -47,5 +47,4 @@ Configuration values for `SuperOffice.CRM.Messaging` and the *SoMessaging.dll*.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.Messaging>

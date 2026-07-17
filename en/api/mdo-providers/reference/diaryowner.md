@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "diaryowner" MDO List
+
 List provider that returns diary owners, i.e., our own employees plus resources
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.DiaryOwnerMDOProvider">DiaryOwnerMDOProvider</see> class.
+Implemented by the `DiaryOwnerMDOProvider` class.
 The name of the MDO list is 'diaryowner'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("diaryowner", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |86|Johan Jensen||person_id=198&contact_id=0|
 |87|Kjell Jensen||person_id=199&contact_id=0|
 |81|Listadm Listadm||person_id=190&contact_id=0|
-
 
 ## Related MDO Lists
 

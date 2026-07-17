@@ -17,17 +17,49 @@ You can search for an [interest][1] and then set the interest to true or false. 
 
 ## Code
 
-[!code-csharp[CS](includes/toggle-interest-entity.cs)]
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Entities;
+using SuperOffice.CRM.Lists;
+
+using (SoSession newSession = SoSession.Authenticate("sam", "sam"))
+{
+  //Setting the Interest name to be searched
+  string searchIntrsName = "Sams Interests";
+
+  //Retrieve a Contact
+  Contact newContact= Contact.GetFromIdxContactId(10);
+
+  //Search and find the contact interests by interest name
+  ISoListItem newIntrstItm = newContact.InterestHelper.RootItems.Find(delegate(ISoListItem ISOLstItm)
+  {
+    return ISOLstItm.Name.Equals(searchIntrsName,StringComparison.InvariantCultureIgnoreCase);
+  }
+  );
+
+  //Check whether the Interest has been found
+  if (newIntrstItm != null && newIntrstItm.Id > 0)
+  {
+    //Sets the Interest to true or false
+    newContact.InterestHelper.SetItemSelection(newIntrstItm.Id, true);
+  }
+}
+```
 
 ## Walk-through
 
-The `Find` method available through the `Contact` class’s `InterestHelper.RootItems` can be used to make our search.
+The `Find` method available through the `Contact` class's `InterestHelper.RootItems` can be used to make our search.
 
-[!code-csharp[CS](includes/toggle-interest-entity.cs?range=14-18)]
+```csharp CS
+  ISoListItem newIntrstItm = newContact.InterestHelper.RootItems.Find(delegate(ISoListItem ISOLstItm)
+  {
+    return ISOLstItm.Name.Equals(searchIntrsName,StringComparison.InvariantCultureIgnoreCase);
+  }
+  );
+```
 
 The method returns an `ISoListItem` and requires a delegate that defines the element for which we should search to be passed into the method. The method then returns any interest that matches our search interest by using the `Equals` method.
 
 Next, we move on to setting the interest to true or false. To do this we use the `SetItemSelection` method available `ContactInterestHelper` class. The method requires the interest ID and the new selection status (true or false) to be passed.
 
-<!-- Referenced links -->
-[1]: ../../../../company/dev/index.md#interests
+[1]: ../../../../company/dev/index#interests

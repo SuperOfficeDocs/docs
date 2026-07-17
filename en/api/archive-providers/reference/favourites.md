@@ -10,11 +10,12 @@ envir: onsite, online
 
 # "Favourites"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FavouritesProvider">SuperOffice.CRM.ArchiveLists.FavouritesProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.FavouritesProvider` inside NetServer's SODatabase assembly.
 
 Archive provider for the list of favourites
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"sale"|Favourite sale|
@@ -28,6 +29,7 @@ Archive provider for the list of favourites
 |"ticket"|Favourite request|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -131,6 +133,7 @@ Archive provider for the list of favourites
 |associate/personEmail| *None* |E-mail|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |associate/locationAddress| *None* |Location: Location|  |
@@ -189,8 +192,8 @@ Archive provider for the list of favourites
 |postAddress/state| *None* |Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |postAddress/wgs84latitude| *None* |Postal address - Latitude: Latitude|  |
 |postAddress/wgs84longitude| *None* |Postal address - Longitude: Longitude|  |
-|postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |streetAddress/addressId| *None* |Street address - Address ID: Database ID for the address record|  |
 |streetAddress/line1| *None* |Street address - Address 1: First line of the address|  |
 |streetAddress/line2| *None* |Street address - Address 2: Second line of the address|  |
@@ -201,8 +204,8 @@ Archive provider for the list of favourites
 |streetAddress/state| *None* |Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |streetAddress/wgs84latitude| *None* |Street address - Latitude: Latitude|  |
 |streetAddress/wgs84longitude| *None* |Street address - Longitude: Longitude|  |
-|streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId| *None* |Search address - Address ID: Database ID for the address record|  |
 |restrictionAddress/line1| *None* |Search address - Address 1: First line of the address|  |
 |restrictionAddress/line2| *None* |Search address - Address 2: Second line of the address|  |
@@ -213,8 +216,8 @@ Archive provider for the list of favourites
 |restrictionAddress/state| *None* |Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |restrictionAddress/wgs84latitude| *None* |Search address - Latitude: Latitude|  |
 |restrictionAddress/wgs84longitude| *None* |Search address - Longitude: Longitude|  |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |url/URLAddress| *None* |URL|  |
 |url/URLDescription| *None* |Description|  |
 |contactAssociate/firstName| *None* |First name: Displays the contact's first name|  |
@@ -235,6 +238,7 @@ Archive provider for the list of favourites
 |contactAssociate/role| *None* |Role : Role|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contactAssociate/assocName| *None* |User ID : User ID|  |
@@ -339,6 +343,7 @@ Archive provider for the list of favourites
 |birthDay| *None* |Birth day: Displays contact's birth day (day of month)|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |kanaFirstName| *None* |First name, kana: Contact's first name, in kana alphabet|  |
@@ -396,8 +401,8 @@ Archive provider for the list of favourites
 |personAddress/state| *None* |Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |personAddress/wgs84latitude| *None* |Contact address - Latitude: Latitude|  |
 |personAddress/wgs84longitude| *None* |Contact address - Longitude: Longitude|  |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personInterestIds| *None* |Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |personUdef/SuperOffice:1| *None* |contactshorttext: tooltipshorttext|  |
 |personUdef/SuperOffice:2| *None* |contactlongtext: tooltiplongtext|  |
@@ -443,6 +448,7 @@ Archive provider for the list of favourites
 |personAssociate/mrMrs| *None* |Mr/Ms: Displays whether the contact is addressed as Mr or Ms|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAssociate/title| *None* |Title: Displays whether the contact is addressed as Mr or Ms|  |
@@ -547,6 +553,7 @@ Archive provider for the list of favourites
 |selectionAssociate/contactName| *None* |Owning company: Name of the company the user belongs to|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |selectionAssociate/contactDepartment| *None* |Owning department: Name of the department at the company the user belongs to|  |
@@ -651,6 +658,7 @@ Archive provider for the list of favourites
 |project/projectAssociate/assocType| *None* |Type: Type of user: associate, external user, system user, anonymous account|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/ejUserId| *None* |Service user ID: The database ID of a Service user|  |
@@ -755,6 +763,7 @@ Archive provider for the list of favourites
 |appointmentUdef/SuperOffice:2| *None* |followuplongtext|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentUdef/SuperOffice:3| *None* |followupnumber|  |
@@ -859,6 +868,7 @@ Archive provider for the list of favourites
 |ownedBy/contactId| *None* |Owner - Company ID: Database ID of the company the user belongs to|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ownedBy/personId| *None* |Owner - Contact ID: Database ID of the contact row|  |
@@ -922,5 +932,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

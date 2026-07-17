@@ -22,12 +22,11 @@ Supported entities/tables:
 * [selection][9]
 * [ticket][1]
 
-<!-- Referenced links -->
-[1]: ticket-table.md
-[3]: appointment-table.md
-[4]: contact-table.md
-[5]: document-table.md
-[6]: person-table.md
-[7]: project-table.md
-[8]: sale-table.md
-[9]: selection-table.md
+[1]: ./ticket-table
+[3]: ./appointment-table
+[4]: ./contact-table
+[5]: ./document-table
+[6]: ./person-table
+[7]: ./project-table
+[8]: ./sale-table
+[9]: ./selection-table

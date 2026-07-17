@@ -1,7 +1,7 @@
 ---
 uid: AppointmentNotification
 title: AppointmentNotification
-description: 
+description:
 keywords: AppointmentNotification archive provider
 generated: true
 content_type: reference
@@ -10,9 +10,10 @@ envir: onsite, online
 
 # "AppointmentNotification"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.AppointmentNotificationProvider">SuperOffice.CRM.ArchiveLists.AppointmentNotificationProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.AppointmentNotificationProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"appointmentNew"|Appointment|
@@ -23,6 +24,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |"appointmentRejectedByAssociate"|Appointment|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -57,5 +59,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

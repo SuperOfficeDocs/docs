@@ -10,12 +10,13 @@ envir: onsite, online
 
 # "OtherUsers"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.OtherUsersProvider">SuperOffice.CRM.ArchiveLists.OtherUsersProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.OtherUsersProvider` inside NetServer's SODatabase assembly.
 
 Concrete provider for 'Other' Users - System and Anonymous user accounts. See <see cref="T:SuperOffice.CRM.ArchiveLists.UsersProviderBase" /> for
 the actual functionality of the provider.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"all"|All|
@@ -29,6 +30,7 @@ the actual functionality of the provider.
 |"expired"|Expired|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -69,5 +71,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

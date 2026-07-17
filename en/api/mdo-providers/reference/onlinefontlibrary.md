@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "onlinefontlibrary" MDO List
+
 MDO provider for the available fonts from the Online Template Library.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.OnlineFontLibraryProvider">OnlineFontLibraryProvider</see> class.
+Implemented by the `OnlineFontLibraryProvider` class.
 The name of the MDO list is 'onlinefontlibrary'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("onlinefontlibrary", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |19|Agu Display||/fonts/agudisplay/agudisplay.css|
 |20|Aguafina Script||/fonts/aguafinascript/aguafinascript.css|
 |21|Akatab||/fonts/akatab/akatab.css|
-
 
 ## Related MDO Lists
 

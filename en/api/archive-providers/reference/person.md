@@ -10,19 +10,21 @@ envir: onsite, online
 
 # "Person"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.PersonProvider">SuperOffice.CRM.ArchiveLists.PersonProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.PersonProvider` inside NetServer's SODatabase assembly.
 
 This is the archive Provide for the Person Archive of the Contact Panel - or to use GUI terminology, the Contact archive of the Company panel.
 It provides two entities, person and retiredPerson, and a large number of columns. Through the constructor one can choose to include Contact
 table data; this will also pull in contact udef and related fields.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"person"|Contacts|
 |"retiredPerson"|Former employees|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -117,8 +119,8 @@ table data; this will also pull in contact udef and related fields.
 |personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -126,6 +128,7 @@ table data; this will also pull in contact udef and related fields.
 |restrictionAddress/county|string|Search address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/city|string|Search address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -133,8 +136,8 @@ table data; this will also pull in contact udef and related fields.
 |restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -230,6 +233,7 @@ table data; this will also pull in contact udef and related fields.
 |personSourceRelation/who| *None* |Source - Full name: Full name of company/contact| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personPersonRelation|listAny|Source - Contact-to-contact relation: Name of relation, not taking into account the relation direction| x |
@@ -334,6 +338,7 @@ table data; this will also pull in contact udef and related fields.
 |correspondingAssociate/personId|int|Contact ID: Database ID of the contact row|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
@@ -414,8 +419,8 @@ table data; this will also pull in contact udef and related fields.
 |personContact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |personContact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|personContact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|personContact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |personContact/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |personContact/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -426,8 +431,8 @@ table data; this will also pull in contact udef and related fields.
 |personContact/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |personContact/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|personContact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|personContact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |personContact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |personContact/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -438,12 +443,13 @@ table data; this will also pull in contact udef and related fields.
 |personContact/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |personContact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|personContact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|personContact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
 |personContact/contactAssociate/lastName|string|Last name: Displays the contact's last name| x |
 |personContact/contactAssociate/middleName|string|Middle Name : Displays the contact's middle name.| x |
@@ -542,6 +548,7 @@ table data; this will also pull in contact udef and related fields.
 |request/suggestedCategory|listAny|Suggested category: Suggested service category|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |request/createdByWorkflow|listAny|Created by flow: Created by flow| x |
@@ -646,6 +653,7 @@ table data; this will also pull in contact udef and related fields.
 |projectMembers/text|string|Text: Displays a descriptive text for the item| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMembers/description|string|Description : Description| x |
@@ -750,6 +758,7 @@ table data; this will also pull in contact udef and related fields.
 |personAppointment/text|positiveString|Text: Displays a descriptive text for the item| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAppointment/associateId|associate|ID: Displays the login ID of the associate who owns the activity.| x |
@@ -855,5 +864,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

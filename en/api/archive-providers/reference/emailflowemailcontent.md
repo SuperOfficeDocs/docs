@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "EmailFlowEmailContent"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowSMessageContentProvider">SuperOffice.CRM.ArchiveLists.EmailFlowSMessageContentProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.EmailFlowSMessageContentProvider` inside NetServer's SODatabase assembly.
 
 Email flow message content.
 Lists all email flow message content
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"SMessage"|SMessage|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -124,6 +126,7 @@ Lists all email flow message content
 |shipment/emailFlow/workflowAssociate/title|string|Owner - Title: Displays whether the contact is addressed as Mr or Ms| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |shipment/emailFlow/workflowAssociate/associateDbId|associate|Owner - ID| x |
@@ -155,7 +158,7 @@ Lists all email flow message content
 |shipment/emailFlow/hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |shipment/emailFlow/hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |shipment/emailFlow/hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|shipment/emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|shipment/emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 |shipment/project/completed|bool|Completed: Displays a check mark indicating if the project has been completed.| x |
 |shipment/project/projectId|int|DB ID: Displays the database ID for a project row| x |
 |shipment/project/name|stringorPK|Project name: Displays the Project's name| x |
@@ -228,6 +231,7 @@ Lists all email flow message content
 |shipment/project/projectUdef/SuperOffice:2|string|projectlongtext| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |shipment/project/projectUdef/SuperOffice:3|int|projectnumber| x |
@@ -274,5 +278,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

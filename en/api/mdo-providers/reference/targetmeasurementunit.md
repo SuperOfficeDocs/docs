@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "targetmeasurementunit" MDO List
+
 MeasurementUnits
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TargetMeasurementUnitProvider">TargetMeasurementUnitProvider</see> class.
+Implemented by the `TargetMeasurementUnitProvider` class.
 The name of the MDO list is 'targetmeasurementunit'.
 
 ## Additional Attributes
@@ -24,10 +23,6 @@ The name of the MDO list is 'targetmeasurementunit'.
 |TargetListField| The list field||
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -40,10 +35,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("targetmeasurementunit", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -55,7 +51,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Amount|||
 |2|Count|||
 |3|Profit|||
-
 
 ## Related MDO Lists
 

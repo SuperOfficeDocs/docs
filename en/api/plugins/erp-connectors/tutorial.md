@@ -15,7 +15,7 @@ This tutorial walks you through connecting, working with, and disconnecting Supe
 
 We'll use the following values throughout:
 
-* **connectionID** = {3aef3af6-8642-4fc1-8dc9-4e08bd76a6bf}
+* **connectionID** = \{3aef3af6-8642-4fc1-8dc9-4e08bd76a6bf\}
 * **actorType** = "Customer"
 
 ## Connecting
@@ -31,7 +31,7 @@ To connect a SuperOffice entity :
 2. This opens the **Connect to ERP** dialog, which calls the `GetSearchableFields` function to find out what columns to present in the results list.
 
     ```csharp
-    StringArrayPluginResponse response = GetSearchableFields({3aef3af6-8642-4fc1-8dc9-4e08bd76a6bf}, "Customer");
+    StringArrayPluginResponse response = GetSearchableFields(\{3aef3af6-8642-4fc1-8dc9-4e08bd76a6bf\}, "Customer");
     ```
 
     ![connect-search][img2]
@@ -45,17 +45,17 @@ To connect a SuperOffice entity :
     Example input:
 
     * searchText = "Orkdal Eldresenter":
-    * fieldKeys: { "NUMBER1", "NAME", "ADDRESS1" }
+    * fieldKeys: \{ "NUMBER1", "NAME", "ADDRESS1" \}
 
     Example result:
 
     ```csharp
-    [0] = { ActorType = "Customer", ErpKey = "erp831",
+    [0] = \{ ActorType = "Customer", ErpKey = "erp831",
             LastModified = "103423595",
-            FieldValues = {
+            FieldValues = \{
                ["NAME"] = "Orkdal Senter AS",
                ["NUMBER1"] = "4343321",
-               ["ADDRESS1"] = "x2" }
+               ["ADDRESS1"] = "x2" \}
     ```
 
 4. The returned actors are displayed in the results grid in the dialog.
@@ -80,14 +80,14 @@ To connect a SuperOffice entity :
   Example result:
 
   ```csharp
-  [0] = { ActorType = "Customer", ErpKey = "erp831",
+  [0] = \{ ActorType = "Customer", ErpKey = "erp831",
           LastModified = "103423595",
-          FieldValues = {
+          FieldValues = \{
             ["NAME"] = "Orkdal Senter AS",
             ["NUMBER1"] = "4343321",
             ["STDTERMS"] = "60",
-            ["SUPPLIERLIMIT"] = "x2" }
-            ["ADDRESS1"] = "Oveien 544" }
+            ["SUPPLIERLIMIT"] = "x2" \}
+            ["ADDRESS1"] = "Oveien 544" \}
   ```
 
 * If some of the ERP Actor values conflict with the SuperOffice entity, these are displayed in the dialog:
@@ -146,23 +146,23 @@ If the user can't find a match in the ERP system, they can create a company in E
     Example input:
 
     ```csharp
-    actor = { ActorType = "Customer", ErpKey = "",
+    actor = \{ ActorType = "Customer", ErpKey = "",
       LastModified = "",
-      FieldValues = {
+      FieldValues = \{
         ["NAME"] = "Orkdal Eldresenter AS",
         ["NUMBER1"] = "4343321",
-        ["ADDRESS1"] = "x2" }
+        ["ADDRESS1"] = "x2" \}
     ```
 
     Example result:
 
     ```csharp
-    actor = { ActorType = "Customer", ErpKey = "erp831",
+    actor = \{ ActorType = "Customer", ErpKey = "erp831",
       LastModified = "103423595",
-      FieldValues = {
+      FieldValues = \{
         ["NAME"] = "Orkdal Eldresenter AS",
         ["NUMBER1"] = "4343321",
-        ["ADDRESS1"] = "x2" }
+        ["ADDRESS1"] = "x2" \}
     ```
 
 5. The returned actor's `ErpKey` and last-modified date are stored in the SuperOffice database, and the link is created.
@@ -187,13 +187,13 @@ The connection links the SuperOffice ID with the ERP's actor type and ERP key. O
     Example result:
 
     ```csharp
-    [0] = { ActorType = "Customer", ErpKey = "erp831",
+    [0] = \{ ActorType = "Customer", ErpKey = "erp831",
       LastModified = "103423595",
-      FieldValues = {
+      FieldValues = \{
         ["CUSTGR"] = "G4",
         ["NUMBER1"] = "[I:0]",
         ["DOUBLE"] = "[D:0.0]",
-        ["DATE"] = "" }
+        ["DATE"] = "" \}
     ```
 
 2. The returned actors are displayed in the ERP tab under the connection name heading.
@@ -212,15 +212,13 @@ It removes the link record from the SuperOffice database, which stops the connec
 
 We do not delete information from the ERP system, just because we have stopped sync with SuperOffice.
 
-<!-- Referenced links -->
-[1]: setup-connection.md
-[2]: import.md
+[1]: ./setup-connection
+[2]: ./import
 
-<!-- Referenced images -->
-[img1]: media/connecting.png
-[img2]: media/connect-search.png
-[img3]: media/select-field-values.png
-[img4]: media/connect-create.png
-[img5]: media/connect-defaults.png
-[img6]: media/viewing.png
-[img7]: media/disconnect.png
+[img1]: /media/loc/en/api/plugins/connecting.png
+[img2]: /media/loc/en/api/plugins/connect-search.png
+[img3]: /media/loc/en/api/plugins/select-field-values.png
+[img4]: /media/loc/en/api/plugins/connect-create.png
+[img5]: /media/loc/en/api/plugins/connect-defaults.png
+[img6]: /media/loc/en/api/plugins/viewing.png
+[img7]: /media/loc/en/api/plugins/disconnect.png

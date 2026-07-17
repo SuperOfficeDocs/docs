@@ -2,7 +2,7 @@
 uid: erpactortype
 title: erpactortype
 keywords: mdoprovider mdo provider erpactortype
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "erpactortype" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ErpActorTypeProvider">ErpActorTypeProvider</see> class.
+Implemented by the `ErpActorTypeProvider` class.
 The name of the MDO list is 'erpactortype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("erpactortype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -43,7 +38,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

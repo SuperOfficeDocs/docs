@@ -9,11 +9,12 @@ envir: onsite, online
 ---
 
 # "documenttemplatelanguage" MDO List
+
 MDO Provider for Document Template langauges.
 
 ExtraInfo is used to decide which document template to fetch alternatives for.
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.DocumentTemplateLanguageProvider">DocumentTemplateLanguageProvider</see> class.
+Implemented by the `DocumentTemplateLanguageProvider` class.
 The name of the MDO list is 'documenttemplatelanguage'.
 
 ## Additional Attributes
@@ -21,10 +22,6 @@ The name of the MDO list is 'documenttemplatelanguage'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Document template id| |23|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("documenttemplatelanguage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -50,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

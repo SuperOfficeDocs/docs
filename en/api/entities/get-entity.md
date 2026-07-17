@@ -62,6 +62,5 @@ Here, the `Registered` property is of Datetime data type. All the other properti
 * [Retrieve an Entity property through an Entity][1]
 * [Retrieve a row through an Entity][2]
 
-<!-- Referenced links -->
-[1]: get-entity-from-entity.md
-[2]: ../rows/get-row-from-entity.md
+[1]: ./get-entity-from-entity
+[2]: ../rows/get-row-from-entity

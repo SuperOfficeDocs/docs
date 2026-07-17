@@ -37,7 +37,6 @@ With a list of entity identities to iterate over, bulk update operations are per
 
 Continue reading: [Operations and values][1].
 
-<!-- Referenced links -->
-[1]: operations-and-values.md
-[2]: entities-field-types.md
-[3]: ../../archive-providers/index.md
+[1]: ./operations-and-values
+[2]: ./entities-field-types
+[3]: ../../archive-providers/index

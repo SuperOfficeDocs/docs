@@ -45,6 +45,5 @@ As an alternative to setting keys manually in each reCAPTCHA form element, add t
 
 These keys can be overwritten for a specific form by entering the keys when [adding the reCAPTCHA element to the form][2].
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.GoogleRecaptcha>
-[2]: ../../marketing/forms/learn/recaptcha.md
+[2]: ../../marketing/forms/learn/recaptcha

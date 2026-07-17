@@ -22,7 +22,7 @@ A quick-start guide for getting you up and running with a native console applica
 
   * redirect URI of `^http://127.0.0.1\:\d{4,10}$`
 
-* you have set a unique application [client ID and secret][3]
+* you have set a unique application [client ID and secret][3]
 
 * you have Visual Studio (community, professional, or enterprise edition)
 
@@ -30,29 +30,29 @@ A quick-start guide for getting you up and running with a native console applica
 
 1. **Clone** or **download** the [SuperOffice.DevNet.OpenIDConnectNativeApp][4] from GitHub.
 
-    `git clone https://github.com/SuperOffice/SuperOffice.DevNet.OpenIDConnectNativeApp.git​`
+    `git clone https://github.com/SuperOffice/SuperOffice.DevNet.OpenIDConnectNativeApp.git`
 
-2. In Visual Studio, go to the *Source* directory and **open** the *SuperOffice.DevNet.OpenIDConnectNativeApp.sln* file.
+2. In Visual Studio, go to the *Source* directory and **open** the *SuperOffice.DevNet.OpenIDConnectNativeApp.sln* file.
 
     ![imageybe5d.png][img2]
 
-3. Under the **Build** menu, click **Build Solution**, or **press** the **F6** key on the keyboard, to restore NuGet packages and build the solution file.
+3. Under the **Build** menu, click **Build Solution**, or **press** the **F6** key on the keyboard, to restore NuGet packages and build the solution file.
 
     ![x][img3]
 
-4. From the **Debug** menu,  click **Start Debugging**, or **press** the **F5** key. Observe that the application runs and opens a console window.
+4. From the **Debug** menu,  click **Start Debugging**, or **press** the **F5** key. Observe that the application runs and opens a console window.
 
     ![imagec4a0q.png][img4]
 
-5. **Press** any key. The default browser window opens to the SuperOffice sign-in page.
+5. **Press** any key. The default browser window opens to the SuperOffice sign-in page.
 
     ![imagey4igu.png][img5]
 
-6. At this point, if you have multiple tenants, a list of available tenants appear. Choose **a tenant** to grant access to your application.
+6. At this point, if you have multiple tenants, a list of available tenants appear. Choose **a tenant** to grant access to your application.
 
     ![imagel1y3j.png][img6]
 
-7. If this is the 1st time accessing this tenant via this application, a consent dialog appears asking for application approval to gain access to your web service resources. Click **I approve**.
+7. If this is the 1st time accessing this tenant via this application, a consent dialog appears asking for application approval to gain access to your web service resources. Click **I approve**.
 
     ![imageppiks.png][img7]
 
@@ -66,7 +66,7 @@ A quick-start guide for getting you up and running with a native console applica
 
 ## Next steps
 
-At this point, you probably want to use `access_token` to send a request to the tenant's web services. The sample application uses the full .Net framework and you would, therefore, use the `WebRequest` class to send a request to the server to obtain data from the tenant.
+At this point, you probably want to use `access_token` to send a request to the tenant's web services. The sample application uses the full .Net framework and you would, therefore, use the `WebRequest` class to send a request to the server to obtain data from the tenant.
 
 The following code represents a basic method to issue a GET request that is later used to call the tenant web services.
 
@@ -124,17 +124,15 @@ var queryResult = GetData(string.Concat(webApiUrl, uri), "Bearer", result.Access
 }
 ```
 
-<!-- Referenced links -->
-[2]: ../../developer-portal/create-app/native-app.md
-[3]: ../../developer-portal/getting-started/index.md#terminology
+[2]: ../../developer-portal/create-app/native-app
+[3]: ../../developer-portal/getting-started/index#terminology
 [4]: https://github.com/SuperOffice/SuperOffice.DevNet.OpenIDConnectNativeApp
 
-<!-- Referenced images -->
-[img2]: media/imageybe5d.png
-[img3]: media/imageyxfai.png
-[img4]: media/imagec4a0q.png
-[img5]: media/imagey4igu.png
-[img6]: media/imagel1y3j.png
-[img7]: media/imageppiks.png
-[img8]: media/imagergmjd.png
-[img9]: media/image6agno.png
+[img2]: /media/loc/en/api/tutorials/imageybe5d.png
+[img3]: /media/loc/en/api/tutorials/imageyxfai.png
+[img4]: /media/loc/en/api/tutorials/imagec4a0q.png
+[img5]: /media/loc/en/api/tutorials/imagey4igu.png
+[img6]: /media/loc/en/api/tutorials/imagel1y3j.png
+[img7]: /media/loc/en/api/tutorials/imageppiks.png
+[img8]: /media/loc/en/api/tutorials/imagergmjd.png
+[img9]: /media/loc/en/api/tutorials/image6agno.png

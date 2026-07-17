@@ -50,21 +50,18 @@ The [learn section][1] contains additional conceptual information and instructio
 
 * [Explore custom-object code examples on GitHub][10]
 
-<!-- Referenced links -->
-[1]: ../../../../custom-objects/reference/index.md
-[2]: rest-get-custom-object-row.md
-[3]: rest-add-custom-object-row.md
-[4]: rest-update-custom-object-row.md
-[5]: rest-delete-custom-object-row.md
-[6]: custom-objects-search.md
+[1]: ../../../../custom-objects/reference/index
+[2]: ./rest-get-custom-object-row
+[3]: ./rest-add-custom-object-row
+[4]: ./rest-update-custom-object-row
+[5]: ./rest-delete-custom-object-row
+[6]: ./custom-objects-search
 [10]: https://github.com/SuperOffice/RESTful-HTTP-Queries/blob/main/src/CustomObjects.http
 
-[11]: set-udef-listitem-value.md
-[12]: get-udef-list-and-values.md
-[13]: find-contact-by-udef.md
-[14]: rest-get-all-udef-fields.md
-[15]: rest-create-udef-field.md
-[16]: rest-update-udef-field.md
-[17]: rest-delete-udef-field.md
-
-<!-- Referenced images -->
+[11]: ./set-udef-listitem-value
+[12]: ./get-udef-list-and-values
+[13]: ./find-contact-by-udef
+[14]: ./rest-get-all-udef-fields
+[15]: ./rest-create-udef-field
+[16]: ./rest-update-udef-field
+[17]: ./rest-delete-udef-field

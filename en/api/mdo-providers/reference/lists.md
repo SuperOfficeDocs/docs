@@ -9,13 +9,12 @@ envir: onsite, online
 ---
 
 # "lists" MDO List
+
 List provider for the Heading table. While this table looks like an MDO table,
 it lacks the standardized grouplink and headinglink companion tables for good reason,
 since it is the heading table itself.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ListsListProvider">ListsListProvider</see> class.
+Implemented by the `ListsListProvider` class.
 The name of the MDO list is 'lists'.
 
 ## Additional Attributes
@@ -25,10 +24,6 @@ The name of the MDO list is 'lists'.
 |Include deleted list items| showDeleted|true|
 |Include an associate list item| includeAssociate|true|
 |Only show user defined lists| onlyUserDefinedLists|false|
-
-
-
-
 
 ## Sample Request
 
@@ -41,10 +36,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("lists", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -58,7 +54,7 @@ foreach (var item in listProvider.RootItems) {
 |164|Privacy - Source|||
 |165|Privacy - Legal basis|||
 |166|Company - Category family|||
-|176|Task menuAufgabe“"|||
+|176|Task menuAufgabe""|||
 |178|Mailing domains|||
 |97|Document - Template|||
 |98|General - Resource|||
@@ -74,7 +70,6 @@ foreach (var item in listProvider.RootItems) {
 |157|Contact - Mr/Mrs|||
 |109|Project - Type, Stages|||
 |110|Project - Status|||
-
 
 ## Related MDO Lists
 

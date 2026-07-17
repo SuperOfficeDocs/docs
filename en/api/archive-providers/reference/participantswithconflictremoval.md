@@ -10,19 +10,19 @@ envir: onsite, online
 
 # "ParticipantsWithConflictRemoval"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ParticipantsWithConflictRemovalProvider">SuperOffice.CRM.ArchiveLists.ParticipantsWithConflictRemovalProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ParticipantsWithConflictRemovalProvider` inside NetServer's SODatabase assembly.
 
 Archive provider that wraps the <see cref="T:SuperOffice.CRM.ArchiveLists.ParticipantsProvider" />, and adds a pseudo entity used to hide associates with conflicts.
 
 This provider is used by the Assign To dialog, where an associate list with conflict markers is shown. This list has a checkbox
 with the text 'hide conflicts', and its effect is to remove from the list those that do have a conflict.
 
-
 This class implements the functionality by wrapping the existing participants provider, adds an optional entity to get
 the checkbox, and performs filtering if the entity is chosen. It also ensures that the relevant column is ordered from the
 inner participants provider, so that the conflict checking is performed.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"associate"|Associate|
@@ -32,6 +32,7 @@ inner participants provider, so that the conflict checking is performed.
 |"hideConflict"|Hide conflict|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ownerAssociateIdInformation|associate|Owner's Associate ID: Associate ID of the user specified as owner of the follow-up|  |
@@ -135,6 +136,7 @@ inner participants provider, so that the conflict checking is performed.
 |email/emailProtocol|string|Protocol: E-mail protocol, such as SMTP|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |email/emailAddress|string|E-mail|  |
@@ -207,5 +209,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

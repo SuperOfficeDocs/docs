@@ -50,5 +50,4 @@ Accept: application/json; charset=utf-8
 
 Optionally, enter that URL into a browser and navigate to the page with the ´?flush´ query string parameter with an authenticated user.
 
-<!-- Reference links -->
-[1]: ../../admin/user-management/role/functional-rights.md
+[1]: ../../admin/user-management/role/functional-rights

@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "ejcategory" MDO List
+
 EjCategoryProvider creates a flat or tree list based on the table: EJ_CATEGORY
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.EjCategoryProvider">EjCategoryProvider</see> class.
+Implemented by the `EjCategoryProvider` class.
 The name of the MDO list is 'ejcategory'.
 
 ## Additional Attributes
@@ -28,10 +27,6 @@ The name of the MDO list is 'ejcategory'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -43,10 +38,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ejcategory", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -68,7 +64,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Support||parentId=0&replyTemplateId=-1|
 |6|Support/On-line||parentId=1&replyTemplateId=-1|
 |5|Support/Out-call||parentId=1&replyTemplateId=-1|
-
 
 ## Related MDO Lists
 

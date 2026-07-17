@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "EmailAddress"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EMailAddressProvider">SuperOffice.CRM.ArchiveLists.EMailAddressProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.EMailAddressProvider` inside NetServer's SODatabase assembly.
 
 Special purpose archive provider used to search for email addresses.
 
@@ -18,11 +18,11 @@ This provider combines two subchannels, one for Person and one for Contact relat
 Each channel will match on either the email address itself, or some relevant naming information
 (such as contact name or person name or whatever).
 
-
 The resulting rows will have entity names reflecting the type of match, but the primary key will always be
 the email_id.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"email"|email|
@@ -30,6 +30,7 @@ the email_id.
 |"contact"|Contact|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -120,8 +121,8 @@ the email_id.
 |personAddress/state| *None* |Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |personAddress/wgs84latitude| *None* |Contact address - Latitude: Latitude|  |
 |personAddress/wgs84longitude| *None* |Contact address - Longitude: Longitude|  |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/contactId| *None* |Company ID: Database ID of company|  |
 |personContact/name| *None* |Company name|  |
 |personContact/department| *None* |Department|  |
@@ -133,6 +134,7 @@ the email_id.
 |personContact/categoryGroup| *None* |Category group|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/companyCategoryRank| *None* |Category rank|  |
@@ -169,8 +171,8 @@ the email_id.
 |personContact/postAddress/state| *None* |Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |personContact/postAddress/wgs84latitude| *None* |Postal address - Latitude: Latitude|  |
 |personContact/postAddress/wgs84longitude| *None* |Postal address - Longitude: Longitude|  |
-|personContact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|personContact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/streetAddress/addressId| *None* |Street address - Address ID: Database ID for the address record|  |
 |personContact/streetAddress/line1| *None* |Street address - Address 1: First line of the address|  |
 |personContact/streetAddress/line2| *None* |Street address - Address 2: Second line of the address|  |
@@ -181,8 +183,8 @@ the email_id.
 |personContact/streetAddress/state| *None* |Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |personContact/streetAddress/wgs84latitude| *None* |Street address - Latitude: Latitude|  |
 |personContact/streetAddress/wgs84longitude| *None* |Street address - Longitude: Longitude|  |
-|personContact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|personContact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/restrictionAddress/addressId| *None* |Search address - Address ID: Database ID for the address record|  |
 |personContact/restrictionAddress/line1| *None* |Search address - Address 1: First line of the address|  |
 |personContact/restrictionAddress/line2| *None* |Search address - Address 2: Second line of the address|  |
@@ -193,8 +195,8 @@ the email_id.
 |personContact/restrictionAddress/state| *None* |Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |personContact/restrictionAddress/wgs84latitude| *None* |Search address - Latitude: Latitude|  |
 |personContact/restrictionAddress/wgs84longitude| *None* |Search address - Longitude: Longitude|  |
-|personContact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|personContact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |name| *None* |Company name|  |
 |department| *None* |Department|  |
 |nameDepartment| *None* |Company: Displays the company an activity is linked to|  |
@@ -237,6 +239,7 @@ the email_id.
 |email/emailLastBounce| *None* |Last bounce: Date and time for last bounce to this e-mail address|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |email/emailHasBounced| *None* |Has bounced: This checkbox is active if delivery to this e-mail address has failed.|  |
@@ -250,8 +253,8 @@ the email_id.
 |postAddress/state| *None* |Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |postAddress/wgs84latitude| *None* |Postal address - Latitude: Latitude|  |
 |postAddress/wgs84longitude| *None* |Postal address - Longitude: Longitude|  |
-|postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionPostalAddress/addressId| *None* |Postal address - Address ID: Database ID for the address record|  |
 |restrictionPostalAddress/line1| *None* |Postal address - Address 1: First line of the address|  |
 |restrictionPostalAddress/line2| *None* |Postal address - Address 2: Second line of the address|  |
@@ -262,8 +265,8 @@ the email_id.
 |restrictionPostalAddress/state| *None* |Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |restrictionPostalAddress/wgs84latitude| *None* |Postal address - Latitude: Latitude|  |
 |restrictionPostalAddress/wgs84longitude| *None* |Postal address - Longitude: Longitude|  |
-|restrictionPostalAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|restrictionPostalAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |streetAddress/addressId| *None* |Street address - Address ID: Database ID for the address record|  |
 |streetAddress/line1| *None* |Street address - Address 1: First line of the address|  |
 |streetAddress/line2| *None* |Street address - Address 2: Second line of the address|  |
@@ -274,8 +277,8 @@ the email_id.
 |streetAddress/state| *None* |Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |streetAddress/wgs84latitude| *None* |Street address - Latitude: Latitude|  |
 |streetAddress/wgs84longitude| *None* |Street address - Longitude: Longitude|  |
-|streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId| *None* |Search address - Address ID: Database ID for the address record|  |
 |restrictionAddress/line1| *None* |Search address - Address 1: First line of the address|  |
 |restrictionAddress/line2| *None* |Search address - Address 2: Second line of the address|  |
@@ -286,8 +289,8 @@ the email_id.
 |restrictionAddress/state| *None* |Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |restrictionAddress/wgs84latitude| *None* |Search address - Latitude: Latitude|  |
 |restrictionAddress/wgs84longitude| *None* |Search address - Longitude: Longitude|  |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |url/URLAddress| *None* |URL|  |
 |url/URLDescription| *None* |Description|  |
 |contactAssociate/firstName| *None* |First name: Displays the contact's first name|  |
@@ -341,6 +344,7 @@ the email_id.
 |contactSupportAssociate/role| *None* |Our service contact - Role: Role|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contactSupportAssociate/assocName| *None* |Our service contact - User ID: User ID|  |
@@ -445,6 +449,7 @@ the email_id.
 |contactSupportPerson/personExtra/x\_person\_request\_relation| *None* |User support contact - Extra request relation: Request relation on contact|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/personExtra/x\_person\_appointment\_relation| *None* |User support contact - Extra appointment relation: Appointment relation on person|  |
@@ -540,5 +545,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

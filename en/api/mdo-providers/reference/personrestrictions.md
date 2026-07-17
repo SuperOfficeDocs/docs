@@ -9,16 +9,12 @@ envir: onsite, online
 ---
 
 # "personrestrictions" MDO List
+
 Implements a person mdolist provider that uses the conflicts detector to append information on
 conflicts
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PersonListRestrictionsProvider">PersonListRestrictionsProvider</see> class.
+Implemented by the `PersonListRestrictionsProvider` class.
 The name of the MDO list is 'personrestrictions'.
-
-
-
 
 ## Sample Request
 
@@ -31,10 +27,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("personrestrictions", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -64,7 +61,6 @@ foreach (var item in listProvider.RootItems) {
 |22|Arjan Abelsen||associate_id=90&contact_id=4|
 |139|Ärle Älström||contact_id=61|
 |19|Arne Arnesen||contact_id=3|
-
 
 ## Related MDO Lists
 

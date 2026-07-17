@@ -2,7 +2,7 @@
 uid: appointment
 title: appointment
 keywords: mdoprovider mdo provider appointment
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "appointment" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AppointmentListProvider">AppointmentListProvider</see> class.
+Implemented by the `AppointmentListProvider` class.
 The name of the MDO list is 'appointment'.
 
 ## Additional Attributes
@@ -21,10 +18,6 @@ The name of the MDO list is 'appointment'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Return all appointments instead of only mother appointments.| anyAppointment|1|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +30,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("appointment", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -70,7 +64,6 @@ foreach (var item in listProvider.RootItems) {
 |77|FTelefon utFCC|||
 |78|GTilbudGCC|||
 |79|JTelefon utJCC|||
-
 
 ## Related MDO Lists
 

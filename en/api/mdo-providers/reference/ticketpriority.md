@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "ticketpriority" MDO List
+
 MDO list provider for ticket priorities.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TicketPriorityListProvider">TicketPriorityListProvider</see> class.
+Implemented by the `TicketPriorityListProvider` class.
 The name of the MDO list is 'ticketpriority'.
 
 ## Additional Attributes
@@ -23,10 +22,6 @@ The name of the MDO list is 'ticketpriority'.
 |Include deleted items| |showDeleted|
 |Flag to include default values (e.g., 'Automatic')| |includeDefaultItems|
 |ticketType| |1|
-
-
-
-
 
 ## Sample Request
 
@@ -39,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ticketpriority", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -54,7 +50,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Low||1|
 |2|Medium||2|
 |3|High||3|
-
 
 ## Related MDO Lists
 

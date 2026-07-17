@@ -11,7 +11,7 @@ platform: web
 
 # Scenarios
 
-These scenarios walk you through the [nuSoapSample][1] code and what happens when you run the sample.
+These scenarios walk you through the [nuSoapSample][1] code and what happens when you run the sample.
 
 These sequence diagrams were built using an online resource `www.websequencediagrams.com`. The text used to generate these diagrams is located at the end of this document.
 
@@ -62,7 +62,7 @@ class SystemUserHelper
 }
 ```
 
-The application must validate the new JWT token using the public SuperOffice certificates. Once validated as an authentic token, the application uses another helper class, **ClaimNames**, to convert the token into an SoContext class – containing properties such as name, company, ticket, and NetServerUrl.
+The application must validate the new JWT token using the public SuperOffice certificates. Once validated as an authentic token, the application uses another helper class, **ClaimNames**, to convert the token into an SoContext class - containing properties such as name, company, ticket, and NetServerUrl.
 
 With the new **SoContext** available, containing the ticket credentials for a system user, the application proceeds to call the **ContactEnitityHelper** to create a new company.
 
@@ -116,11 +116,9 @@ This sequence represents a common scenario where a service exists that communica
 
 ![x][img3]
 
-<!-- Referenced links -->
-[1]: overview.md
-[2]: ../../authentication/online/auth-application/index.md
+[1]: ./overview
+[2]: ../../authentication/online/auth-application/index
 
-<!-- Referenced images -->
-[img1]: media/image005.png
-[img2]: media/image007.png
-[img3]: media/image009.png
+[img1]: /media/loc/en/api/tutorials/image005-1.png
+[img2]: /media/loc/en/api/tutorials/image007-1.png
+[img3]: /media/loc/en/api/tutorials/image009-2.png

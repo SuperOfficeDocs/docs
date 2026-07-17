@@ -36,11 +36,9 @@ SuperOffice EIS will periodically invoke the web services to conduct data synchr
 * [Security][2]
 * [API changes][3]
 
-<!-- Referenced links -->
-[1]: ../index.md
-[2]: secure-in-online.md
-[3]: example-api.md
+[1]: ../index
+[2]: ./secure-in-online
+[3]: ./example-api
 
-<!-- Referenced images -->
-[img1]: media/architecture-simplified.png
-[img2]: media/editsyncconnector.png
+[img1]: /media/loc/en/api/plugins/architecture-simplified.png
+[img2]: /media/loc/en/api/plugins/editsyncconnector.png

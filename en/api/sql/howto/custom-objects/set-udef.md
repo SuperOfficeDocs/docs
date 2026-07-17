@@ -13,7 +13,6 @@ redirect_from:
   - /en/api/netserver/sql/howto/custom-objects/set-udef
 ---
 
-<!-- markdownlint-disable-file MD013 -->
 # Set a user-defined field
 
 ## Contact update

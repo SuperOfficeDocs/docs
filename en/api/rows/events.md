@@ -65,5 +65,4 @@ voidmyContactRow_OnElementSaved(INestedPersist element, bool didSucceed)
 
 The content of this event handler is executed after the elements are saved. The rest of the events in the `ContactRow` work in the same manner.
 
-<!-- Referenced links -->
-[1]: ../entities/events.md
+[1]: ../entities/events

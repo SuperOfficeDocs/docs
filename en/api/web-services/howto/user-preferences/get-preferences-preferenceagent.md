@@ -57,7 +57,7 @@ Level = Undefined
 
 ## Walk-through
 
-Here we have created an array of `PreferenceSpec` objects which is the carrier object of `PreferenceSpec` services. In the `UserPreferenceString` class, we can find strings describing values for sections and keys. Here we need to retrieve the value of the `SundayFirstDay”` key in the `Visual` section. The key refers to a boolean value that specifies whether to set Sunday or Monday as the first day of the week.
+Here we have created an array of `PreferenceSpec` objects which is the carrier object of `PreferenceSpec` services. In the `UserPreferenceString` class, we can find strings describing values for sections and keys. Here we need to retrieve the value of the `SundayFirstDay"` key in the `Visual` section. The key refers to a boolean value that specifies whether to set Sunday or Monday as the first day of the week.
 
 In the latter part of this example, we are retrieving the preferences via a `PreferenceAgent` using its `GetPreferences` method. This method returns preferences based on a set of specifications. The value of the `SundayFirstDay` key is stored in the `RawValue` variable.
 

@@ -19,7 +19,7 @@ Public Function GetMailArchiveHelper() As MailArchiveHelper
   Return helper
 End Function
 
-' returns true if not already archived, or if already archived, 
+' returns true if not already archived, or if already archived,
 ' but user wants to archive a duplicate
 Private Function ContinueIfDuplicate(ByVal i_MailId As String, _ByVal i_Subject As String) As Boolean
   Using archiveHelper As MailArchiveHelper = GetMailArchiveHelper()
@@ -35,7 +35,7 @@ End Function
 ' SafeItem is an Outlook MailItem COM object
 Public Function ArchiveAsDoc(ByVal safeItem As Object) As Boolean
   Dim checkForDuplicate As Boolean = True
- 
+
   Dim archiveInfo As ArchiveInfo = New ArchiveInfo()
   archiveInfo.ShowDialog = GetRegValueBool(kAlwaysShowDialog, True)
   archiveInfo.Address = safeItem.FromAddress.Email
@@ -66,5 +66,3 @@ End Function
 The `ArchiveAsDoc` function checks the SMTP unique message ID to see if the message has already been archived. If it has, it prompts the user with a dialog.
 
 If the message is not archived, or the user wants to duplicate the message, then the message is saved to a temp file, and the temp file is imported into SuperOffice using the mail archive helper.
-
-<!-- See the ArchiveDocument reference. -->

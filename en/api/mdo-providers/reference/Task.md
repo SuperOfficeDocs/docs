@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "task" MDO List
+
 Task table MDO list. Optional include "None" as first value.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TaskProvider">TaskProvider</see> class.
+Implemented by the `TaskProvider` class.
 The name of the MDO list is 'task'.
 
 ## Additional Attributes
@@ -21,10 +20,6 @@ The name of the MDO list is 'task'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Include a NO-SELECTION item first| includeNone|True|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +32,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("task", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +59,6 @@ foreach (var item in listProvider.RootItems) {
 |12|Annet|||
 |13|Messe|||
 |14|Kampanje|||
-
 
 ## Related MDO Lists
 

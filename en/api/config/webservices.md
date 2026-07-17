@@ -31,6 +31,5 @@ Configuration section used to define SuperOffice CRM web service settings.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.WebServices>
-[2]: services.md
+[2]: ./services

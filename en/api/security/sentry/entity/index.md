@@ -14,7 +14,7 @@ In NetServer the results of improper data access can be different from scenario 
 
 ## Scenario 1
 
-First, let’s take a case of a user trying to access data that the user does not have any rights to.
+First, let's take a case of a user trying to access data that the user does not have any rights to.
 
 In the code below, the logged-in user is accessing data that the particular user does have any rights.
 
@@ -60,7 +60,7 @@ using(SoSession newSession = SoSession.Authenticate("PB", "pb"))
   else
   {
     //show the user why he can not perform this operation
-    MessageBox.Show("You don’t have access rights to perform this operation");
+    MessageBox.Show("You don't have access rights to perform this operation");
   }
 }
 ```
@@ -69,7 +69,7 @@ Here, we properly avoid getting a blank value as the return for the heading of t
 
 ## Scenario 2
 
-Now let’s discuss what happens when you **try to modify data that you don’t have access rights to**. Let’s take the same code snippet as earlier and try to modify the hading of the sale.
+Now let's discuss what happens when you **try to modify data that you don't have access rights to**. Let's take the same code snippet as earlier and try to modify the hading of the sale.
 
 ```csharp
 using SuperOffice;

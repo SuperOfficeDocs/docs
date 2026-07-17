@@ -12,7 +12,7 @@ redirect_from: /en/api/netserver/config/services
 
 # NetServer Services element
 
-Configuration settings used to manage SuperOffice web services. It specifies whether an application is working locally or remotely.
+Configuration settings used to manage SuperOffice web services. It specifies whether an application is working locally or remotely.
 
 ```XML
 <Services>
@@ -36,5 +36,4 @@ Configuration settings used to manage SuperOffice web services. It specifies whe
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.Services>

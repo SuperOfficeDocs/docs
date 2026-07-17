@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "serviceassociate" MDO List
+
 MDO provider for associates that are allowed to approve a quote.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ServiceAssociateMDOProvider">ServiceAssociateMDOProvider</see> class.
+Implemented by the `ServiceAssociateMDOProvider` class.
 The name of the MDO list is 'serviceassociate'.
 
 ## Additional Attributes
@@ -22,10 +21,6 @@ The name of the MDO list is 'serviceassociate'.
 |-----|-----|------|
 |Flag to include defaul values (currentUser, autoAssign = int.maxValue, unAssigned = 0)| IncludeDefaultItems|False|
 |Flag to add related user's 'not present' status message to fullname| AddNotPresentStatus|False|
-
-
-
-
 
 ## Sample Request
 
@@ -38,10 +33,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("serviceassociate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -67,7 +63,6 @@ foreach (var item in listProvider.RootItems) {
 |28|Tje5||person_id=164&contact_id=0|
 |99|Tjeneste Sjef||person_id=205&contact_id=0|
 |65|TjeNS04 NetServer||person_id=185&contact_id=0|
-
 
 ## Related MDO Lists
 

@@ -17,5 +17,4 @@ redirect_from:
 
 * [Invitation Archive][1]
 
-<!-- Referenced links -->
-[1]: invitation-archive.md
+[1]: ./invitation-archive

@@ -9,13 +9,14 @@ envir: onsite, online
 ---
 
 # "personurl" MDO List
+
 List of urls (web pages) matching the search value, possibly restricted to a given company or person.
 
 AdditionalInfo:
 itemId= person id
 extraId= contact-id
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PersonUrlProvider">PersonUrlProvider</see> class.
+Implemented by the `PersonUrlProvider` class.
 The name of the MDO list is 'personurl'.
 
 ## Additional Attributes
@@ -26,10 +27,6 @@ The name of the MDO list is 'personurl'.
 |Company id| extraId|23|
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -42,10 +39,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("personurl", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -55,7 +53,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

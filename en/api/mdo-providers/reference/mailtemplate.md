@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "mailtemplate" MDO List
+
 List provider for the Mailtemplates.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.MailTemplateProvider">MailTemplateProvider</see> class.
+Implemented by the `MailTemplateProvider` class.
 The name of the MDO list is 'mailtemplate'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("mailtemplate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -51,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |17|Quote e-mail|||
 |19|Order confirmation e-mail|||
 |20|Confirmation - Contact added|||
-
 
 ## Related MDO Lists
 

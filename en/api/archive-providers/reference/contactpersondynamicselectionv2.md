@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "ContactPersonDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
 Contact + Person selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"contact"|Company|
 |"person"|Contact|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -83,8 +85,8 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -95,8 +97,8 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -107,8 +109,8 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |url/URLAddress|string|URL| x |
 |url/URLDescription|string|Description| x |
 |contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -124,6 +126,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |contactAssociate/contactDepartment|string|Owning department: Name of the department at the company the user belongs to| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contactAssociate/usergroup|userGroup|Primary group: The user's primary user group| x |
@@ -228,6 +231,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sourceRelation/stop|bool|Source - Stop| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sourceRelation/contactNoMail|bool|Source - No mailings (company)| x |
@@ -332,6 +336,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/hasQuote|bool|Has quote?: Does the sale have a quote attached?| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/hasGuide|bool|Guided: Does this sale have a Sales Guide| x |
@@ -436,6 +441,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |appointment/visibleFor|listAny|Visible for|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointment/appointmentPublish/isPublished|bool|Published: Displays an icon indicating if the project or sale has been published| x |
@@ -540,6 +546,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |document/associate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |document/associate/title|string|Title: Displays whether the contact is addressed as Mr or Ms| x |
@@ -644,6 +651,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personInfo/textId|int|Text ID| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personInfo/infoText|positiveString|Information: Displays the text entered in the description field| x |
@@ -667,8 +675,8 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -748,6 +756,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personSourceRelation/personAssociateFullName|associate|Source - Our contact - Full name: Displays our contact| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personCategory|listAny|Source - Category| x |
@@ -852,6 +861,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personAssociate/ejStatus|int|Service status: Status for Service user: Normal; Unavailable / holiday; Deleted; Read-only|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAssociate/credentialType| *None* |Auth. type: What type of credentials to use when this user logs in| x |
@@ -956,6 +966,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |request/createdBy|ejUser|Created by: Created by| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |request/content|string|Content: Search for content in messages related to requests| x |
@@ -1060,6 +1071,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |projectMembers/status|listAny|Status: Displays the project's status| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMembers/statusRank| *None* |Status rank: Rank of the project status in the status list| x |
@@ -1164,6 +1176,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personAppointment/icon|listAny|Category: Displays the icon for an activity type| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAppointment/date|date|Date: Displays start date of a follow-up / sale date of a sale| x |
@@ -1268,6 +1281,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |selectionIdRequest|int|Selection ID: Database ID of selection which members are to be fetched from|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |linkClicked/linkId|int|Link ID: Link ID|  |
@@ -1372,6 +1386,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/quote/version/deliveryType|listExternal|Delivery type: Delivery type|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/quote/version/approvedBy|associate|Approved by: Associate who approved a quote that broke one or more of the workflow rules that trigger an approval process| x |
@@ -1461,5 +1476,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

@@ -23,16 +23,16 @@ So far so good - but the database servers (SQL Server, Oracle, Sybase, DB/2) all
 In 7.1 we've added support for this function in NetServer, so you can access it in your custom SQL. As an example of what it might be good for, I wrote a little utility that helps us combine duplicate persons that arise when a sales rep registers a person for our Online product, and the automated sync later on adds the person as spelled in the Online database. Those spellings - by the sales rep, and by the person, may not always be the same, and so we end up with two records that **sound much the same but are not identical**. A job for Soundex!
 
 ```csharp
-PersonTableInfo p1 = TablesInfo.GetPersonTableInfo();
-PersonTableInfo p2 = TablesInfo.GetPersonTableInfo();
+PersonTableInfo p1 = TablesInfo.GetPersonTableInfo();
+PersonTableInfo p2 = TablesInfo.GetPersonTableInfo();
 
-ContactTableInfo c1 = TablesInfo.GetContactTableInfo();
+ContactTableInfo c1 = TablesInfo.GetContactTableInfo();
 
-Select s = S.NewSelect("Find duplicates");
+Select s = S.NewSelect("Find duplicates");
 
-  s.JoinRestriction.InnerJoin(p1.ContactId.Equal(p2.ContactId),  
-    S.ArgumentFunctions.Soundex(p1.Firstname).Equal(S.ArgumentFunctions.Soundex(p2.Firstname))
-    .And(S.ArgumentFunctions.Soundex(p1.Lastname).Equal(S.ArgumentFunctions.Soundex(p2.Lastname))));
+  s.JoinRestriction.InnerJoin(p1.ContactId.Equal(p2.ContactId),
+    S.ArgumentFunctions.Soundex(p1.Firstname).Equal(S.ArgumentFunctions.Soundex(p2.Firstname))
+    .And(S.ArgumentFunctions.Soundex(p1.Lastname).Equal(S.ArgumentFunctions.Soundex(p2.Lastname))));
 
 s.RestrictionAnd(p1.PersonId.UnEqual(p2.PersonId));
 ```
@@ -40,15 +40,15 @@ s.RestrictionAnd(p1.PersonId.UnEqual(p2.PersonId));
 Here we're looking for person records that belong to the same contact, have similar-sounding first and last names, and are not the same record (important detail...). Suppose we want to fetch these candidates as Row objects...
 
 ```csharp
-s.ReturnFields.Add(p1, p2, c1);
+s.ReturnFields.Add(p1, p2, c1);
 
-using (var qeh = new QueryExecutionHelper(s))
+using (var qeh = new QueryExecutionHelper(s))
 {
-  while (qeh.Reader.Read())
+  while (qeh.Reader.Read())
   {
-    PersonRow personOne = PersonRow.GetFromReader(qeh.Reader, p1);
-    PersonRow personTwo = PersonRow.GetFromReader(qeh.Reader, p2);
-    ContactRow contact = ContactRow.GetFromReader(qeh.Reader, c1);
+    PersonRow personOne = PersonRow.GetFromReader(qeh.Reader, p1);
+    PersonRow personTwo = PersonRow.GetFromReader(qeh.Reader, p2);
+    ContactRow contact = ContactRow.GetFromReader(qeh.Reader, c1);
   }
 }
 ```
@@ -57,5 +57,4 @@ Note that the Soundex algorithm can be implemented differently by each database 
 
 You could of course fetch all Person records and process them through the Metaphone algorithm in NetServer; that would give you a predictable result, independent of the database. It would also run orders of magnitude slower since you'd be doing the processing outside the database. Your mileage may vary - but as a rule, keeping processing inside the database is good, that is what it's for.
 
-<!-- Referenced links -->
 [1]: https://en.wikipedia.org/wiki/Metaphone

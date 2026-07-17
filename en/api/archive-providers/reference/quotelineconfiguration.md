@@ -10,15 +10,17 @@ envir: onsite, online
 
 # "QuoteLineConfiguration"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FindErpProductSearchProvider">SuperOffice.CRM.ArchiveLists.Archive.FindErpProductSearchProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.FindErpProductSearchProvider` inside NetServer's SODatabase assembly.
 
 Criteria search for ErpProduct. Potentially goes out to external quote connectors
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 
@@ -32,5 +34,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

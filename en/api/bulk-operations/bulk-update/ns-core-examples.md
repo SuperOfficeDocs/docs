@@ -23,7 +23,7 @@ Here are a few more examples of how to use bulk update.
 // search for all companies with categoryId = 10
 var select = S.NewSelect<ContactTableInfo>(cti => cti.CategoryIdx.Equal(10));
 
-// get all company id's from the search results 
+// get all company id's from the search results
 var companyIds = select.Records(select.Table.ContactId).Select(
                      r => r.Table.ContactId[r]).ToArray();
 
@@ -39,7 +39,7 @@ if (companyIds != null)
     contactUdefFieldValueInfo.CurrentOperationType = BulkUpdateSystem.OperationTypes.SelectOne;
 
     // define the new value
-    contactUdefFieldValueInfo.Values = 
+    contactUdefFieldValueInfo.Values =
     new[]
         {
             "15", // CategoryId
@@ -73,7 +73,7 @@ if (companyIds != null)
 // search for all companies where NoMailing is Checked
 var select = S.NewSelect<ContactTableInfo>(cti => cti.Nomailing.Equal(1));
 
-// get all company id's from the search results 
+// get all company id's from the search results
 var companyIds = select.Records(select.Table.ContactId).Select(
                      r => r.Table.ContactId[r]).ToArray();
 
@@ -124,7 +124,7 @@ if (companyIds != null)
 // search for all companies where name begins with 'super'
 var select = S.NewSelect<ContactTableInfo>(cti => cti.Name.Like("super%"));
 
-// get all company id's from the search results 
+// get all company id's from the search results
 var companyIds = select.Records(select.Table.ContactId).Select(
                      r => r.Table.ContactId[r]).ToArray();
 
@@ -176,7 +176,7 @@ if (companyIds != null)
 // search for all companies where name begins with 'super'
 var select = S.NewSelect<ContactTableInfo>(cti => cti.Name.Like("super%"));
 
-// get all company id's from the search results 
+// get all company id's from the search results
 var companyIds = select.Records(select.Table.ContactId).Select(
                      r => r.Table.ContactId[r]).ToArray();
 
@@ -229,7 +229,7 @@ if (companyIds != null)
 // search for all appointments where projectId = 121
 var select = S.NewSelect<AppointmentTableInfo>(ati => ati.ProjectId.Equal(121));
 
-// get all appointment id's from the search results 
+// get all appointment id's from the search results
 var appointIds = select.Records(select.Table.AppointmentId).Select(
                      r => r.Table.AppointmentId[r]).ToArray();
 

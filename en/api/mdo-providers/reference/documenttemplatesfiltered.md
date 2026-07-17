@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "documenttemplatesfiltered" MDO List
+
 MDO Provider for Document Templates, excluding Document details and quote mail templates, which are for system use rather than end-user choosing.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.DocumentTemplatesFiltered">DocumentTemplatesFiltered</see> class.
+Implemented by the `DocumentTemplatesFiltered` class.
 The name of the MDO list is 'documenttemplatesfiltered'.
 
 ## Additional Attributes
@@ -21,10 +20,6 @@ The name of the MDO list is 'documenttemplatesfiltered'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Set 'ExcludeEmailTemplates=true' if no templates of type Email should be returned | ExcludeEmailTemplates|true|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +32,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("documenttemplatesfiltered", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -64,4 +60,3 @@ foreach (var item in listProvider.RootItems) {
 |13|StateZero Word Simple|||
 |14|StateZero Word Simple Czech|||
 |15|Quote|||
-

@@ -178,12 +178,22 @@ function Convert-TabsInFile {
                 
                 # Remove leading blank lines
                 while ($tabContent.Count -gt 0 -and [string]::IsNullOrWhiteSpace($tabContent[0])) {
-                    $tabContent = $tabContent[1..($tabContent.Count - 1)]
+                    if ($tabContent.Count -eq 1) {
+                        $tabContent = @()
+                    }
+                    else {
+                        $tabContent = $tabContent[1..($tabContent.Count - 1)]
+                    }
                 }
-                
+
                 # Remove trailing blank lines
                 while ($tabContent.Count -gt 0 -and [string]::IsNullOrWhiteSpace($tabContent[-1])) {
-                    $tabContent = $tabContent[0..($tabContent.Count - 2)]
+                    if ($tabContent.Count -eq 1) {
+                        $tabContent = @()
+                    }
+                    else {
+                        $tabContent = $tabContent[0..($tabContent.Count - 2)]
+                    }
                 }
                 
                 # Skip empty tabs with warning

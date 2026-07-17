@@ -2,7 +2,7 @@
 uid: mergetags
 title: mergetags
 keywords: mdoprovider mdo provider mergetags
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "mergetags" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.MergeTagsProvider">MergeTagsProvider</see> class.
+Implemented by the `MergeTagsProvider` class.
 The name of the MDO list is 'mergetags'.
 
 ## Additional Attributes
@@ -24,10 +21,6 @@ The name of the MDO list is 'mergetags'.
 |Include company variables. Default = true| includeCompanies|True|
 |Include our contact variables. Default = true| includeOurContact|True|
 |Include our service contact variables. Default = true| includeOurServiceContact|True|
-
-
-
-
 
 ## Sample Request
 
@@ -40,10 +33,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("mergetags", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -73,7 +67,6 @@ foreach (var item in listProvider.RootItems) {
 |19|Business||[[company.business]]|
 |20|Number||[[company.number2]]|
 |21|City||[[company.city]]|
-
 
 ## Related MDO Lists
 

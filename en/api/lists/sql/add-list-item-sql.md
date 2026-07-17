@@ -11,7 +11,6 @@ redirect_from:
   - /en/api/netserver/lists/sql/add-list-item-sql
 ---
 
-<!-- markdownlint-disable-file MD013 -->
 # Adding a list item
 
 Adding a list item to a list requires 2, possibly 3, possibly 4 things:
@@ -20,7 +19,7 @@ Adding a list item to a list requires 2, possibly 3, possibly 4 things:
 2. Insert Group-link items into the group-link table (for example, `CategoryGL`).
     You need to insert one link item per group. If you do not, then the MDO security system will filter your item out.
 3. Optional: Insert a heading item in the heading table.
-4. Optional: Insert one or more heading-link items into the heading-link table (e.g. CategoryHL).
+4. Optional: Insert one or more heading-link items into the heading-link table (e.g. CategoryHL).
 
 We edit lists in the SuperOffice Admin client. Here we add a new category item to the category list:
 
@@ -76,6 +75,5 @@ INSERT INTO CRM."categoryheadinglink" ("categoryheadinglink_id", "category_id", 
 INSERT INTO CRM."traveltransactionlog" ("traveltransactionlog_id", "ttime", "prev_record_id", "type", "associate_id", "tablenumber", "record_id") VALUES (110593, 1164911169, 0, 4352, 11, 66, 11)
 ```
 
-<!-- Referenced images -->
-[img1]: media/edit-category.png
-[img2]: media/edit-list-item.png
+[img1]: /media/loc/en/api/lists/edit-category.png
+[img2]: /media/loc/en/api/lists/edit-list-item.png

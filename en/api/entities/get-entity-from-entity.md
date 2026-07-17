@@ -72,7 +72,7 @@ Here a `Sale` Entity is retrieved using the `IdxSaleId` class and some basic pro
 
 The `Address` property (in the Contact of the Sale Entity) is of `Row` type. This means that it represents a row in the `Address` table. In this example, an Address row is retrieved.
 
-The Sale Entity’s `Person` has a property called `Emails`. It consists of multiple Email Rows of type `EmailRow`. The example shows how to retrieve each EmailRow of the Emails property of the Person through Sale Entity.
+The Sale Entity's `Person` has a property called `Emails`. It consists of multiple Email Rows of type `EmailRow`. The example shows how to retrieve each EmailRow of the Emails property of the Person through Sale Entity.
 
 The Person property contains properties of `SaleCollection` type.
 
@@ -81,6 +81,5 @@ The Person property contains properties of `SaleCollection` type.
 * [How to retrieve an Entity][1]
 * [Retrieve a row through an Entity][2]
 
-<!-- Referenced links -->
-[1]: get-entity.md
-[2]: ../rows/get-row-from-entity.md
+[1]: ./get-entity
+[2]: ../rows/get-row-from-entity

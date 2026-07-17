@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "location" MDO List
+
 Implements the mdo provider for the list of avaiable locations. This list aggregates elements
 from different sources like contact, person, associate, participants and resources to build
 a list that represents all the relevant, available locations that can be used when creating
@@ -28,9 +29,7 @@ participantpersonidlist:        comma separated list of existing participant per
 participantassociateidlist:     comma separated list of existing participant associate ids(resources)
 skipresourcelocation:           Skip resource locations
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.LocationListProvider">LocationListProvider</see> class.
+Implemented by the `LocationListProvider` class.
 The name of the MDO list is 'location'.
 
 ## Additional Attributes
@@ -50,10 +49,6 @@ The name of the MDO list is 'location'.
 
 Separator: ;
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -65,10 +60,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("location", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -78,7 +74,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

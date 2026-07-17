@@ -19,7 +19,7 @@ At its most basic, we just search the contact table:
 SELECT * FROM contact WHERE name = 'Client System AS'
 ```
 
-Which gives us the name, the code and number, and a bunch of list item IDs.
+Which gives us the name, the code and number, and a bunch of list item IDs.
 
 | contact_id | name | department | number1 | number2 | associate_id | country_id | business_idx |
 |---|---|---|---|---|---|---|---|
@@ -30,7 +30,7 @@ Which gives us the name, the code and number, and a bunch of list item IDs.
 These are straightforward inner-joins against the corresponding list item tables.
 
 ```SQL
-SELECT * FROM contact, category, business 
+SELECT * FROM contact, category, business
 WHERE name = 'Client System AS'
 AND contact.category_idx = category.category_id
 AND contact.business_idx = business.business_id
@@ -47,7 +47,7 @@ Now we get the category name and description, as well as the category name.
 There may be several phone numbers on a contact. We will pick out the first one.
 
 ```SQL
-SELECT * FROM contact, category, business, phone 
+SELECT * FROM contact, category, business, phone
 WHERE name = 'Client System AS'
 AND contact.category_idx = category.category_id
 AND contact.business_idx = business.business_id
@@ -102,8 +102,5 @@ AND a.atype_idx = 2
 |---|---|---|---|---|---|---|---|---|
 | Client System AS | Former customer | IT and telecom | 66 77 63 90 | Norway | 15834 | 15184 | 2 | |
 
-<!-- Referenced links -->
-[1]: ../../../../database/tables/phone.md
-[2]: ../../../../database/tables/address.md
-
-<!-- Referenced images -->
+[1]: ../../../../database/tables/phone
+[2]: ../../../../database/tables/address

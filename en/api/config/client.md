@@ -37,7 +37,7 @@ In this section, you add the Reverse proxy override if you want to export larger
 | GoogleImportDispatcher | URL to import from Google. | |
 | HelpFilesBaseUrl | Override the help files location. Used to support local deployments and to point to one help file location in large server farm environments. | |
 | IdleTimeout | Idle detection threshold in minutes. When exceeded user is logged out. Default is off. | 0 |
-| MasterDcfConfigHashKeyFormat | The format key used to generate a unique DCF page config hash.<br>{0} = MachineName; {1} = Build-label;{2} = Assembly version | 0 |
+| MasterDcfConfigHashKeyFormat | The format key used to generate a unique DCF page config hash.<br />\{0\} = MachineName; \{1\} = Build-label;\{2\} = Assembly version | 0 |
 | NetServicesNextDate | Override the Next Check Date preference for NetServices Status checking. Useful for testing. YYYY.MM.DD | |
 | NetServicesStatusUrl | Override the default NetServices Status URL with this value. Useful for testing. | |
 | ShowWelcomeDialogs | Allow automated tests to disable WebTools and welcome dialogs. | true |
@@ -49,5 +49,4 @@ In this section, you add the Reverse proxy override if you want to export larger
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.Client>

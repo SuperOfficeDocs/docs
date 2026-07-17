@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "SubPersonContactDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SubPersonContactSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.SubPersonContactSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.SubPersonContactSelectionDynamicProviderSingleCriteriaGroup` inside NetServer's SODatabase assembly.
 
 Person + Contact selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"person"|Contact|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -123,6 +125,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |registeredByFullName|associate|Registered by - Full name: The user who registered the data| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
@@ -152,8 +155,8 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -227,6 +230,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personSourceRelation/personActiveErpLinks|bool|Source - ERP connected: Is there an active ERP Sync?| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/ticketPriority|listAny|Source - Service priority: Default service priority for this contact| x |
@@ -331,6 +335,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personAssociate/assocName|associate|User ID : User ID| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAssociate/assocTooltip|string|Description : Description|  |
@@ -394,8 +399,8 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -406,8 +411,8 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -418,8 +423,8 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |url/URLAddress|string|URL| x |
 |url/URLDescription|string|Description| x |
 |contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -435,6 +440,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |contactAssociate/contactDepartment|string|Owning department: Name of the department at the company the user belongs to| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contactAssociate/usergroup|userGroup|Primary group: The user's primary user group| x |
@@ -539,6 +545,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |workflowInstance/emailFlow/workflowDefinitionStatus|listAny|Status: Status of the flow definition| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |workflowInstance/emailFlow/workflowDefinitionStatusId|listAny|Status: Status of the flow definition| x |
@@ -643,6 +650,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |request/suggestedCategory|listAny|Suggested category: Suggested service category|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |request/createdByWorkflow|listAny|Created by flow: Created by flow| x |
@@ -747,6 +755,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |projectMembers/text|string|Text: Displays a descriptive text for the item| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMembers/description|string|Description : Description| x |
@@ -851,6 +860,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |personAppointment/text|positiveString|Text: Displays a descriptive text for the item| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAppointment/associateId|associate|ID: Displays the login ID of the associate who owns the activity.| x |
@@ -955,6 +965,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |sale/associateId|associate|ID: Displays the login ID of the associate who owns the activity.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/contactId|listAny|Company ID: Database ID of company| x |
@@ -1059,6 +1070,7 @@ Person + Contact selection archive using the selectionId as criterionmapping.
 |sale/quote/orderComment|string|Comment: Customer's comment| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/quote/connectionId|int|DB-ID: Database ID| x |
@@ -1162,5 +1174,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

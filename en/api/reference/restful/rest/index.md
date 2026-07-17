@@ -1,7 +1,9 @@
 # SuperOffice REST API v1
+
 ## v1-REST
- 
-# Welcome 
+
+# Welcome
+
 Welcome to the SuperOffice WebAPI.
 
 You can get the version number and build-date from the API endpoint.
@@ -65,21 +67,21 @@ returns an array of URLs mapped to the HTTP methods they support, along with a b
  	....
 ```
 
-
 You can use this information to determine if the server supports the features you need.
-
 
 ## Building Blocks
 
 The SuperOffice WebAPI has two major parts:
 * **REST API** - URLs describe entities like person or sale.
-* **Agents API** - the services API, accessible via HTTP. 
+* **Agents API** - the services API, accessible via HTTP.
 
 ## REST API
+
 The REST API exposes objects as entities that can be retrieved using HTTP GET,
 modified using HTTP PUT, created using HTTP POST, and deleted using HTTP DELETE.
 
 ### REST API - Entities
+
 The REST API has the major entities (Company, Person, Project, Sale, etc) exposed.
 
     /api/v1/Contact
@@ -106,14 +108,14 @@ Returns a new blank entity.
     /api/v1/Contact/123
 
 Returns the Contact with id 123.
-This object can be PUT or DELETE - subject to the usual sentry restrictions. 
+This object can be PUT or DELETE - subject to the usual sentry restrictions.
 If your role does not allow you to update, then the web api won't give
 you more access.
 
     /api/v1/Contact/123/Simple
 
-Returns a simplified version of the entity. This cannot be updated or deleted, 
-but it can be easier to work with - it does not have deeply nested structures, 
+Returns a simplified version of the entity. This cannot be updated or deleted,
+but it can be easier to work with - it does not have deeply nested structures,
 and does not support things like user defined fields.
 
 Most of the entities have user defined fields, and expose information about the
@@ -124,14 +126,14 @@ layout here:
 The actual user-defined field values are returned in the entity's **UserDefinedFields** property.
 
 Many have related lists of other entities as well:
-    
+
     /api/v1/Contact/123/Projects
     /api/v1/Contact/123/Sales
 
 These lists are archives that you can filter and sort using OData operations.
 
-
 ### REST API - Lists
+
 SuperOffice has a number of built-in lists (Category, Business, Position, etc).
 You can add your own custom lists.
 
@@ -149,21 +151,21 @@ These return meta-data about the list, including the list id.
     /api/v1/List/Business/Items
     /api/v1/List/YourOwnList/Items
 
-These return the list items in the given list. 
+These return the list items in the given list.
 
     /api/v1/MDOList
 
 Gives you read access to hierarchical lists, and other list providers
 in the system.
 
-
 ### REST API - Archives etc
+
 **Archives**
 
     /api/v1/Archive/OwnerContacts?$select=contactId,name,orgnr
     /api/v1/Archive/EmailAddress?$select=fullName,emailAddress&$filter=contactId=12
 
-The archive provider system is exposed as an OData endpoint. 
+The archive provider system is exposed as an OData endpoint.
 
 **User Preferences**
 
@@ -176,10 +178,8 @@ User preferences and pref.descriptions can be read and updated.
 
     /api/v1/ForeignApp/Glops/Foobar/Key/Lookup/Contact/123
 
-Returns the key called 'Lookup' from the foreign app 'Glops' for the 
+Returns the key called 'Lookup' from the foreign app 'Glops' for the
 Contact record 123.
-
-
 
 **Strings**
 
@@ -187,8 +187,8 @@ Contact record 123.
 
 Built-in string resources can be read in supported languages.
 
-
 ### REST API - System
+
      /api/v1/User/Tony
      /api/v1/Role/12
      /api/v1/License/SuperOffice
@@ -197,32 +197,31 @@ Users, Roles, License stuff is exposed via simple endpoints.
 If you have admin rights in your role, you can POST or PUT to update
 system information.
 
-
 ## Agent API
+
 The agents expose the latest Services agents and functions.
 
     /api/v1/Agents/Appointment/CalculateDays
 
-GET this to get a description of the call. 
+GET this to get a description of the call.
 The method is not invoked using GET, even if the method is called **GetAppointment**.
 To actually invoke the method, you need to POST to the endpoint:
 
     POST /api/v1/Agents/Appointment/CalculateDays
-    { "Contact": { "ContactId": 123 },
+    \{ "Contact": \{ "ContactId": 123 \},
       "AppointmentId": 1234,
       "Description": "string",
       "StartDate": "2017-06-06T13:02:55Z",
       "EndDate": "2017-06-06T13:02:55Z"
-    }
+    \}
 
-This method takes an appointment entity as parameter, so this needs to 
+This method takes an appointment entity as parameter, so this needs to
 be in the POST body.
 
 The result of the service call is returned as JSON.
 
-
-
 ## Errors
+
 Errors are returned using HTTP error codes, and as a JSON object:
 
     /api/v1/Contact/99999
@@ -276,6 +275,7 @@ returns a JSON representation of the same:
 ```
 
 ## Languages
+
 The API supports internationalization.
 A request without an **Accept-Language** header returns the string
 identifiers unchanged. Multi-language names are unchanged.
@@ -312,11 +312,9 @@ With an **Accept-Language: fr** header, we get back
         "Reason": "Nom de société" }
 ```
 
-
-
 ## Modified / Unmodified
 
-These headers apply to the major entities (Contact, Project etc) that 
+These headers apply to the major entities (Contact, Project etc) that
 have last modified date fields on them.
 
 ### If-Modified-Since
@@ -334,19 +332,18 @@ will return a **304 Not Modified** response if the contact has not been modified
 
 This is basically tells you that your cached copy of the data is still good.
 
-
 ### If-Unmodified-Since
 
 Returns HTTP code <code>412 Precondition failed</code> if the entity has been modified since the given date+time on the PUT update request.
 
-    PUT /api/v1/Contact/123 
-    { Name: "Some updates" }
+    PUT /api/v1/Contact/123
+    \{ Name: "Some updates" \}
 
 always updates the contact object.
 
     PUT /api/v1/Contact/123
     If-Unmodified-Since: Wed, 21 Oct 2015 07:28:00 GMT
-    { Name: "Some updates" }
+    \{ Name: "Some updates" \}
 
 will return a **412 Precondition failed** response if the contact has been modified after Oct 2015.
 
@@ -364,10 +361,10 @@ You will need to provide some login information in order to use the SuperOffice 
 ### X-XSRF-TOKEN
 
 If you call the API without specifying an **Authorization** header, then the API will try to log in using
-the current user's session. To avoid 3rd party pages calling the API and piggy-backing off the 
+the current user's session. To avoid 3rd party pages calling the API and piggy-backing off the
 current session, the API requires that a special HTTP header is added to these requests.
 
-The SM.web pages contain an INPUT field XSRF_TOKEN. This field contains a random value identifying the 
+The SM.web pages contain an INPUT field XSRF_TOKEN. This field contains a random value identifying the
 current session. You must add an X-XSRF-TOKEN header with the random value from the input field.
 
 The XSRF-TOKEN is also stored in a cookie, just in case the input field is not available.

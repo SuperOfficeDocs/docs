@@ -25,13 +25,59 @@ The following screenshot shows how the application displays the list of values f
 
 ## Populate the list box
 
-[!code-csharp[CS](includes/populate-listbox-entity.cs)]
+```csharp CS
+using SuperOffice.CRM.Entities;
+using SuperOffice;
+using SuperOffice.CRM.Rows;
+using SuperOffice.CRM.Globalization;
+using (SoSession newSession = SoSession.Authenticate("p", "p"))
+{
+  if (!(String.IsNullOrEmpty(txtContactId.Text.Trim())))
+  {
+    // Get the contact
+    Contact contact = Contact.GetFromIdxContactId(int.Parse(txtContactId.Text.Trim()));
+    if (contact != null)
+    {
+      this.lblContactName.Text = contact.Name;
+
+      // Get the progId of the user-defined field 'companydropdownlistbox'
+      string progId = contact.UdefHelper.GetProgIdFromFieldLabel("companydropdownlistbox");
+
+      // Get the User-DefinedField
+      UDefFieldRow udefField = UDefFieldCache.GetFromProgId(progId, SuperOffice.Data.UdefHelper.UDefType.Contact);
+
+      // Get the list name
+      UDListDefinitionRow udRow =UDListDefinitionRow.GetFromIdxUDListDefinitionId(udefField.UDListDefinitionId);
+      MessageBox.Show(udRow.Name);
+
+      // Get the list table id and identify the base table
+      short listId = udefField.ListTableId;
+
+      // Get the list from the base table
+      TaskRows.CustomSearch newTaskCus = new TaskRows.CustomSearch();
+      TaskRows newTasks = TaskRows.GetFromCustomSearch(newTaskCus);
+
+      // Set the list items
+      this.lstFieldList.DataSource = newTasks;
+      this.lstFieldList.DisplayMember ="Name";
+      this.lstFieldList.ValueMember = "TaskId";
+    }
+  }
+  else
+  {
+    MessageBox.Show("Please enter the contact ID.");
+  }
+}
+```
 
 The above code segment shows how the population of the list box is done. To get the list items, the base class for the list table should be identified. This is retrieved with the `ListTableId` property of the user-defined field. Based on that ID, the `Task` table is identified as the base class for getting the list items.
 
 As shown below, the `TaskRows` are retrieved for the given table ID using the `GetFromCustomSearch` method of the `TaskRow` entity. Next, we have set the collection as the data source for the list box.
 
-[!code-csharp[CS](includes/populate-listbox-entity.cs?range=29-30)]
+```csharp CS
+      TaskRows.CustomSearch newTaskCus = new TaskRows.CustomSearch();
+      TaskRows newTasks = TaskRows.GetFromCustomSearch(newTaskCus);
+```
 
 ## Set the user-defined field value
 
@@ -57,5 +103,4 @@ Next, the `Save` method of the `Contact` entity is used to update the contact en
 
 <a href="../../../../../assets/downloads/api/setudefinedlistitemonudeffield.zip" download>Click to download source code (zip)</a>
 
-<!-- Referenced images -->
-[img1]: media/image001.jpg
+[img1]: /media/loc/en/api/web-services/image001-8.jpg

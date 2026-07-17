@@ -28,19 +28,19 @@ This carrier is a full description of a field as used and interpreted by the syn
 | Member | Type | Description |
 |---|---|---|
 | FieldKey | string | Internal name of the field. Used as the key in the dictionary of values. |
-| DisplayName | string | Localized field name – shown in the GUI as the label for the control. |
+| DisplayName | string | Localized field name - shown in the GUI as the label for the control. |
 | DisplayDescription | string | Tooltip for the field. |
-| FieldType | FieldMetadataTypeInfo | String, int, decimal, etc.<br>Kind of field widget to use: Textbox, Number field, Password field, Dropdown list, Checkbox |
+| FieldType | FieldMetadataTypeInfo | String, int, decimal, etc.<br />Kind of field widget to use: Textbox, Number field, Password field, Dropdown list, Checkbox |
 | ListName | string | If the field is a reference to a named list in the Sync Connector, this property contains the name of that list. |
 | DefaultValue | string | A default value for the field. The value in the widget when the configure dialog isopened in Add Connection mode. |
-| MaxLength | int | Maximum length for strings, if set.<br>0 means no restriction. (Though sooner or later something will no doubt overflow if you pile on the gigabytes.) |
+| MaxLength | int | Maximum length for strings, if set.<br />0 means no restriction. (Though sooner or later something will no doubt overflow if you pile on the gigabytes.) |
 | Access | FieldAccessInfo | Access restrictions on the field |
 
 `DefaultValue` will vary a bit depending on the type:
 
 * If the field is a label, text or password, then the text is used (obviously)
 * If the field is an int or double, we will try to convert the string into a number. (If the conversion fails, we shall use zero or 0.00 as the default value.)
-* If the field is a list, we shall try to find a list item where the fields default value matches the lists item’s `ListItemKey`.
+* If the field is a list, we shall try to find a list item where the fields default value matches the lists item's `ListItemKey`.
 
 ## Enum FieldMetadataTypeInfo
 
@@ -67,7 +67,4 @@ This enum describes access restrictions and mandatory status.
 | Mandatory | This field is mandatory (see section "Default value setup") |
 | ReadOnly | This field is read-only |
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image003.png
+[img1]: /media/loc/en/api/tutorials/image003-2.png

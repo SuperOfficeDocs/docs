@@ -17,6 +17,5 @@ redirect_from:
 * [Get address][1]
 * [Set address][2]
 
-<!-- Referenced links -->
-[1]: get-localized-address.md
-[2]: set-localized-address.md
+[1]: ./get-localized-address
+[2]: ./set-localized-address

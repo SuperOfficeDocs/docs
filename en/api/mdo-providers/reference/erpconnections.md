@@ -9,14 +9,14 @@ envir: onsite, online
 ---
 
 # "erpconnections" MDO List
+
 Retrieve the list of all defined Erp Connections (not Connectors, that's another list)
 
 Implementation relies on the <see cref="T:SuperOffice.CRM.ArchiveLists.ErpConnectionProvider" /> archivelist, and simply reformats its data.
 
-
 The items contain the GUID (ErpId) used by the connection, in the ExtraInfo field
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ErpConnections">ErpConnections</see> class.
+Implemented by the `ErpConnections` class.
 The name of the MDO list is 'erpconnections'.
 
 ## Additional Attributes
@@ -25,10 +25,6 @@ The name of the MDO list is 'erpconnections'.
 |-----|-----|------|
 |Sort by rank| useRank|true|
 |Add connector name to names| prefixwithconnector|true|
-
-
-
-
 
 ## Sample Request
 
@@ -41,10 +37,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("erpconnections", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -56,7 +53,6 @@ foreach (var item in listProvider.RootItems) {
 |1|SuperOffice Test||889BF882-C6DA-4AC5-B3C7-A5A650625D90|
 |2|Limited access Test||95002C41-9EFA-449B-B47B-BA7D092A6411|
 |3|QA-BUILD\ErpSync\Client.xlsm||57cefbea-059b-4047-a303-e481b37c76e4|
-
 
 ## Related MDO Lists
 

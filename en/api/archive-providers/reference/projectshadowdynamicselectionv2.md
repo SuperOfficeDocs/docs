@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "ProjectShadowDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
 Project shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"project"|Project|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -123,6 +125,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |saintAmountClass|listAny|Amount class|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |saintActivityType|listAny|SAINT type|  |
@@ -227,6 +230,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |sale/associate/personEmail|string|E-mail| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/associate/locationAddress|string|Location: Location| x |
@@ -331,6 +335,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |appointment/appointment/text|positiveString|Text: Displays a descriptive text for the item| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointment/appointment/description|positiveString|Text: Displays the text entered in the description field| x |
@@ -435,6 +440,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/textId|int|Text ID| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMember/infoText|positiveString|Information: Displays the text entered in the description field| x |
@@ -524,8 +530,8 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |projectMember/personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|projectMember/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|projectMember/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|projectMember/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |projectMember/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |projectMember/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -536,12 +542,13 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|projectMember/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
-|projectMember/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |projectMember/personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |projectMember/personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -643,6 +650,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/correspondingAssociate/userName|string|User name: User name| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/personEmail|string|E-mail| x |
@@ -707,8 +715,8 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |projectMember/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|projectMember/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|projectMember/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|projectMember/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |projectMember/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |projectMember/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -719,8 +727,8 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |projectMember/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|projectMember/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|projectMember/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|projectMember/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/url/URLAddress|string|URL| x |
 |projectMember/url/URLDescription|string|Description| x |
 |projectMember/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -747,6 +755,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/contactAssociate/ejDisplayName|string|Nickname: User's nickname in Service| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/ejStatus|int|Service status: Status for Service user: Normal; Unavailable / holiday; Deleted; Read-only|  |
@@ -834,5 +843,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

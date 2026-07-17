@@ -45,9 +45,7 @@ There are about 30 `ExtenderBase` classes, that each cover one particular table.
 
 **Continue reading:** [Base and helper classes][2]
 
-<!-- Referenced links -->
-[1]: extenders.md
-[2]: base-and-helper-classes.md
+[1]: ./extenders
+[2]: ./base-and-helper-classes
 
-<!-- Referenced images -->
-[img1]: media/image004.gif
+[img1]: /media/loc/en/api/web-services/image004-2.gif

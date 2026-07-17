@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "saledone" MDO List
+
 Sale Done status: SaleDone.Done or NotDone.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleDoneProvider">SaleDoneProvider</see> class.
+Implemented by the `SaleDoneProvider` class.
 The name of the MDO list is 'saledone'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("saledone", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |1|Not done|||
 |2|Completed|||
-
 
 ## Related MDO Lists
 

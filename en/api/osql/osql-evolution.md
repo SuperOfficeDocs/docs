@@ -36,7 +36,7 @@ selectStatement.ReturnFields.Add(contactInfo.All);
 selectStatement.Restriction = contactInfo.CountryId.Equal(S.Parameter(826));
 ```
 
-This code doesn’t even execute the query. To do that requires more lines of code that would get the connection, open the connection, set the command, and then execute the reader and read iteratively over any results.
+This code doesn't even execute the query. To do that requires more lines of code that would get the connection, open the connection, set the command, and then execute the reader and read iteratively over any results.
 
 ```csharp
 using (SoConnection con = ConnectionFactory.GetConnection())
@@ -72,7 +72,7 @@ using (QueryExecutionHelper qeh = new QueryExecutionHelper(selectStatement))
 }
 ```
 
-While this wasn’t a huge win, in terms of reducing code, this was a big win after several years of writing it the old way!
+While this wasn't a huge win, in terms of reducing code, this was a big win after several years of writing it the old way!
 
 There were additional improvements that came in later versions as well, more related to the Argument and Math functions. Let's focus on recent advancements that will help you write less code for executing OSL Queries today.
 
@@ -82,7 +82,7 @@ As version 3 turned into version 7, the OSQL API became better and better with m
 
 ### TargetedSelect
 
-Introducing generics to Select, with the creation of `TargetedSelect<TableInfo>` class, reduced the necessity of getting an instance of the target `TableInfo`. A `TargetedSelect<TableInfo>` instance accepts a TableInfo target argument and exposes all of the table fields via the `TargetedSelect<TableInfo>.Table property`. The following example instantiates a new `TargetedSelect` with the `ContactTableInfo` class as the Generic argument. The rest of the code is the same but doesn’t have to be. It does get better!
+Introducing generics to Select, with the creation of `TargetedSelect<TableInfo>` class, reduced the necessity of getting an instance of the target `TableInfo`. A `TargetedSelect<TableInfo>` instance accepts a TableInfo target argument and exposes all of the table fields via the `TargetedSelect<TableInfo>.Table property`. The following example instantiates a new `TargetedSelect` with the `ContactTableInfo` class as the Generic argument. The rest of the code is the same but doesn't have to be. It does get better!
 
 ```csharp
 var selectStatement = S.NewSelect<ContactTableInfo>();
@@ -117,7 +117,7 @@ This makes it very easy to query a specific record.
 
 ### New Query Execution Syntactical-Sugar
 
-It’s completely legal to mix the old with the new syntax, for example using the `QueryExecutionHelper` to access the returned data.
+It's completely legal to mix the old with the new syntax, for example using the `QueryExecutionHelper` to access the returned data.
 
 ```csharp
 var selectStatement = S.NewSelect<ContactTableInfo>(cti => cti.IdxName("SuperOffice AS"));
@@ -151,7 +151,7 @@ foreach (var contact in result)
 }
 ```
 
-Notice how the code is formed above. It’s important to understand there are two ways to get the data from a `TargetedDataRecord`. Each field has an indexer which returns the field in the correct type as well. In the revised version below, notice how the `ContactId` is returned to the Id property as an int data type. This is great too!
+Notice how the code is formed above. It's important to understand there are two ways to get the data from a `TargetedDataRecord`. Each field has an indexer which returns the field in the correct type as well. In the revised version below, notice how the `ContactId` is returned to the Id property as an int data type. This is great too!
 
 ```csharp
 var selectStatement = S.NewSelect<ContactTableInfo>(cti => cti.IdxName("SuperOffice AS"));
@@ -165,7 +165,7 @@ var queryResults = selectStatement
     });
 ```
 
-There is also one more trick up the `TargetedSelect` sleeve: the returned `TargetDataRecord`. It’s entirely possible to convert the results to a complete record. Using a new example, with a slightly more complex restriction, you can construct a complex query in just two lines of code. The only caveat is that the `FromRecord` method is hidden in the `SuperOffice.CRM.Rows` namespace, so make sure that is included at the top of your file, or else you will observe a compile-time error stating that `FromRecord` does not exist.
+There is also one more trick up the `TargetedSelect` sleeve: the returned `TargetDataRecord`. It's entirely possible to convert the results to a complete record. Using a new example, with a slightly more complex restriction, you can construct a complex query in just two lines of code. The only caveat is that the `FromRecord` method is hidden in the `SuperOffice.CRM.Rows` namespace, so make sure that is included at the top of your file, or else you will observe a compile-time error stating that `FromRecord` does not exist.
 
 ```csharp
 var s = S.NewSelect<ContactTableInfo>(cti => cti.Name.Like("A%").And(cti.Department.NotLike("")));

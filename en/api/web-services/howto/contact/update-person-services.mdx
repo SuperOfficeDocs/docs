@@ -1,0 +1,279 @@
+---
+uid: update-person-ws
+title: Update a person with a new name, address, position using services
+description: How to update a person with a new name, address, position using NetServer services.
+keywords: person, contact, services, API api-services, GetPersonEntity, PersonAgent
+author: Bergfrid Skaara Dias
+date: 11.04.2021
+content_type: howto
+redirect_from:
+  - /en/contact/howto/services/update-person-services
+  - /en/api/netserver/web-services/howto/contact/update-person-services
+---
+
+# Update a person with a new name, address, position using services
+
+Let's discuss how we can update the name, address, and position of an existing person using NetServer services.
+
+At the services layer, Person details can be updated only in one way: by using the `PersonAgent` and its `SavePersonEntity` method.
+
+## Code
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+
+using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
+{
+  //Instantiating a Agents required
+  using(PersonAgent newPerAgt = new PersonAgent())
+  {
+    using(ListAgent newLstAgt = new ListAgent())
+    {
+      //Retrieving a Person Entity
+      PersonEntity newPerEnt = newPerAgt.GetPersonEntity(214);
+
+      //Updating Properties of the Person Entity
+      //String type properties
+      newPerEnt.Firstname = "Luke";
+      newPerEnt.Lastname = "Skywalker";
+
+      //Updating a property of LocalizedField type
+      LocalizedField[][] newAddress = newPerAgt.GetAddressByCountry(4, 144);
+      newAddress[0][0].Value = "65, Sky Lane, LayLand.";
+      newPerEnt.Address = newAddress;
+
+      //Updating a Country type property
+      newPerEnt.Country = newLstAgt.GetCountry(60);
+
+      //Adding a EntityElement type Property
+      //creating an Email
+      EntityElement[] newEmailArr = new EntityElement[1];
+      newEmailArr[0] = new EntityElement();
+      newEmailArr[0].Value = "luke@example.com";
+      newEmailArr[0].Description = "Testing";
+
+      //Assigning the Email to the Email property of the Person
+      newPerEnt.Emails = newEmailArr;
+
+      //Modifying an existing Email
+      newPerEnt.Emails[0].Value = "lukeUpdated@example.com";
+      newPerEnt.Emails[0].Description = "Test Updated";
+
+      //Assign the Position
+      newPerEnt.Position = newLstAgt.GetPosition(1);
+
+      //Saving the updated Person Entity
+      newPerAgt.SavePersonEntity(newPerEnt);
+    }
+  }
+}
+```
+
+## Walk-through
+
+We need to use the `GetPersonEntity` method available in the `PersonAgent` to retrieve the `PersonEntity` that needs to be updated.
+
+Once the Entity is retrieved, the properties that are exposed can be updated. The example shows how we can update different types of properties exposed by the `PersonEntity`.
+
+Entity types consist of simple data types such as String, Boolean, DateTime, and int and complex data types consisting of types such as LocalizedFields and EntityElement types.
+
+## Updating simple data types
+
+Simple data types can be updated with basic statements as shown below.
+
+```csharp CS
+      newPerEnt.Firstname = "Luke";
+      newPerEnt.Lastname = "Skywalker";
+```
+
+## Updating complex data types
+
+However, complex data types cannot be modified in such a way. For example, if we need to update the `Address` property of the `Person` we need to first create a localized field array and store the new address in the declared variable. Only once this is done can it be assigned to the Address property of the `PersonEntity`.
+
+```csharp CS
+      LocalizedField[][] newAddress = newPerAgt.GetAddressByCountry(4, 144);
+      newAddress[0][0].Value = "65, Sky Lane, LayLand.";
+      newPerEnt.Address = newAddress;
+```
+
+Another example of a complex type is properties, which are of entity element types. In the above example, we have created an `EntityElement` array and assigned values to the properties of the declared variable.
+
+```csharp CS
+      EntityElement[] newEmailArr = new EntityElement[1];
+      newEmailArr[0] = new EntityElement();
+      newEmailArr[0].Value = "luke@example.com";
+      newEmailArr[0].Description = "Testing";
+```
+
+Once the assignment is done, the created email can be added to `Emails` property of the `PersonEntity` by executing the statement below.
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+
+using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
+{
+  //Instantiating a Agents required
+  using(PersonAgent newPerAgt = new PersonAgent())
+  {
+    using(ListAgent newLstAgt = new ListAgent())
+    {
+      //Retrieving a Person Entity
+      PersonEntity newPerEnt = newPerAgt.GetPersonEntity(214);
+
+      //Updating Properties of the Person Entity
+      //String type properties
+      newPerEnt.Firstname = "Luke";
+      newPerEnt.Lastname = "Skywalker";
+
+      //Updating a property of LocalizedField type
+      LocalizedField[][] newAddress = newPerAgt.GetAddressByCountry(4, 144);
+      newAddress[0][0].Value = "65, Sky Lane, LayLand.";
+      newPerEnt.Address = newAddress;
+
+      //Updating a Country type property
+      newPerEnt.Country = newLstAgt.GetCountry(60);
+
+      //Adding a EntityElement type Property
+      //creating an Email
+      EntityElement[] newEmailArr = new EntityElement[1];
+      newEmailArr[0] = new EntityElement();
+      newEmailArr[0].Value = "luke@example.com";
+      newEmailArr[0].Description = "Testing";
+
+      //Assigning the Email to the Email property of the Person
+      newPerEnt.Emails = newEmailArr;
+
+      //Modifying an existing Email
+      newPerEnt.Emails[0].Value = "lukeUpdated@example.com";
+      newPerEnt.Emails[0].Description = "Test Updated";
+
+      //Assign the Position
+      newPerEnt.Position = newLstAgt.GetPosition(1);
+
+      //Saving the updated Person Entity
+      newPerAgt.SavePersonEntity(newPerEnt);
+    }
+  }
+}
+```
+
+The above would appear as a new email in the emails list of the Person. However, if we are required to modify an already existing email the goal could be archived as follows.
+
+```csharp CS
+      newPerEnt.Emails[0].Value = "lukeUpdated@example.com";
+      newPerEnt.Emails[0].Description = "Test Updated";
+```
+
+Here we give the index of the Person's Email location that needs to be changed.
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+
+using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
+{
+  //Instantiating a Agents required
+  using(PersonAgent newPerAgt = new PersonAgent())
+  {
+    using(ListAgent newLstAgt = new ListAgent())
+    {
+      //Retrieving a Person Entity
+      PersonEntity newPerEnt = newPerAgt.GetPersonEntity(214);
+
+      //Updating Properties of the Person Entity
+      //String type properties
+      newPerEnt.Firstname = "Luke";
+      newPerEnt.Lastname = "Skywalker";
+
+      //Updating a property of LocalizedField type
+      LocalizedField[][] newAddress = newPerAgt.GetAddressByCountry(4, 144);
+      newAddress[0][0].Value = "65, Sky Lane, LayLand.";
+      newPerEnt.Address = newAddress;
+
+      //Updating a Country type property
+      newPerEnt.Country = newLstAgt.GetCountry(60);
+
+      //Adding a EntityElement type Property
+      //creating an Email
+      EntityElement[] newEmailArr = new EntityElement[1];
+      newEmailArr[0] = new EntityElement();
+      newEmailArr[0].Value = "luke@example.com";
+      newEmailArr[0].Description = "Testing";
+
+      //Assigning the Email to the Email property of the Person
+      newPerEnt.Emails = newEmailArr;
+
+      //Modifying an existing Email
+      newPerEnt.Emails[0].Value = "lukeUpdated@example.com";
+      newPerEnt.Emails[0].Description = "Test Updated";
+
+      //Assign the Position
+      newPerEnt.Position = newLstAgt.GetPosition(1);
+
+      //Saving the updated Person Entity
+      newPerAgt.SavePersonEntity(newPerEnt);
+    }
+  }
+}
+```
+
+With the execution of the above statement, a value will be assigned to the `Position` property of the Person.
+
+<Note>
+`Position` property uses pre-defined SuperOffice values, which are different from the title.
+</Note>
+
+Once the required properties of the `PersonEntity` have been modified the modifications could be saved to the database with the execution of the below statement.
+
+```csharp CS
+using SuperOffice;
+using SuperOffice.CRM.Services;
+
+using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
+{
+  //Instantiating a Agents required
+  using(PersonAgent newPerAgt = new PersonAgent())
+  {
+    using(ListAgent newLstAgt = new ListAgent())
+    {
+      //Retrieving a Person Entity
+      PersonEntity newPerEnt = newPerAgt.GetPersonEntity(214);
+
+      //Updating Properties of the Person Entity
+      //String type properties
+      newPerEnt.Firstname = "Luke";
+      newPerEnt.Lastname = "Skywalker";
+
+      //Updating a property of LocalizedField type
+      LocalizedField[][] newAddress = newPerAgt.GetAddressByCountry(4, 144);
+      newAddress[0][0].Value = "65, Sky Lane, LayLand.";
+      newPerEnt.Address = newAddress;
+
+      //Updating a Country type property
+      newPerEnt.Country = newLstAgt.GetCountry(60);
+
+      //Adding a EntityElement type Property
+      //creating an Email
+      EntityElement[] newEmailArr = new EntityElement[1];
+      newEmailArr[0] = new EntityElement();
+      newEmailArr[0].Value = "luke@example.com";
+      newEmailArr[0].Description = "Testing";
+
+      //Assigning the Email to the Email property of the Person
+      newPerEnt.Emails = newEmailArr;
+
+      //Modifying an existing Email
+      newPerEnt.Emails[0].Value = "lukeUpdated@example.com";
+      newPerEnt.Emails[0].Description = "Test Updated";
+
+      //Assign the Position
+      newPerEnt.Position = newLstAgt.GetPosition(1);
+
+      //Saving the updated Person Entity
+      newPerAgt.SavePersonEntity(newPerEnt);
+    }
+  }
+}
+```

@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "CustomObjectDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
 CustomObject selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderSingleCriteriaGroup" />.
 

@@ -9,7 +9,7 @@ content_type: concept
 
 # VisibleFor flag
 
-In SuperOffice, you can restrict access to a data item using the `VisibleFor` flag in addition to the user group’s rights to data.
+In SuperOffice, you can restrict access to a data item using the `VisibleFor` flag in addition to the user group's rights to data.
 
 The `VisibleFor` flag and role-based security go hand in hand. When the flag is set it is a combination of role-based access rights and access rights that was activated due to setting the flag.
 
@@ -75,7 +75,7 @@ Now, if another user who belongs to the same group in the company and belongs to
 
 ## Example 3 (all)
 
-Last, let’s discuss what will happen if the above sale `VisibleFor` property was set to *All* like this:
+Last, let's discuss what will happen if the above sale `VisibleFor` property was set to *All* like this:
 
 ```csharp
 EntityVisibleForHelper saleVisibleFor = mySale.VisibleForHelper;

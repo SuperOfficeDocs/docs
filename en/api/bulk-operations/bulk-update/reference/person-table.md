@@ -14,7 +14,6 @@ client: online
 
 Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
 
-<!-- markdownlint-disable-file MD033 -->
 <table>
     <title>Person</title>
     <thead>
@@ -60,8 +59,8 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
                 <p>Values Count = 0 to 7</p>
                 <p>Set: Values[0] = (string)</p>
                 <p>Clear: Clears value</p>
-                <p>SearchAndReplace:<br>Values[1] = searchString<br>Values[2] = replaceString<br>Values[3] = options</p>
-                <p>RegEx:<br>Values[4] = expression<br>Values[5] = replace with<br>Values[6] = options</p>
+                <p>SearchAndReplace:<br />Values[1] = searchString<br />Values[2] = replaceString<br />Values[3] = options</p>
+                <p>RegEx:<br />Values[4] = expression<br />Values[5] = replace with<br />Values[6] = options</p>
             </td>
             <td>
                 <p>Number</p>
@@ -180,7 +179,7 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int) 0 or 1<br>0 = unChecked<br>1 = Checked</p>
+                <p>Values[0] = (int) 0 or 1<br />0 = unChecked<br />1 = Checked</p>
             </td>
             <td>
                 <p>Nomailing</p>
@@ -255,14 +254,14 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
             <td>Add, Remove</td>
             <td>
                 <p>Values Count = 0 to 5</p>
-                <p>Add: <br>if value doesn&rsquo;t already exist<br>Values[0] = (int)
-                    consentPurposeId<br>Values[1] = (int) legalBaseId</p>
+                <p>Add: <br />if value doesn&rsquo;t already exist<br />Values[0] = (int)
+                    consentPurposeId<br />Values[1] = (int) legalBaseId</p>
                 <p>Optional:</p>
-                <p>Values[2] = (int) consentSourceId<br>Values[3] = (string) comment</p>
+                <p>Values[2] = (int) consentSourceId<br />Values[3] = (string) comment</p>
                 <p>Remove:</p>
                 <p>Clears all existing rows</p>
-                <p>Values[0] = *not used<br>Values[1] =*not used<br>Values[2] = *not used<br>Values[3] =*not
-                    used<br>Values[4] = (int) consentPurposeId</p>
+                <p>Values[0] = *not used<br />Values[1] =*not used<br />Values[2] = *not used<br />Values[3] =*not
+                    used<br />Values[4] = (int) consentPurposeId</p>
             </td>
             <td>ConsentPersons</td>
         </tr>
@@ -275,7 +274,7 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Check:<br>Values[0] = (int)<br>0 = Use company address<br>1 = Use person address</p>
+                <p>Check:<br />Values[0] = (int)<br />0 = Use company address<br />1 = Use person address</p>
                 <p>Toggle: invert current</p>
             </td>
             <td>
@@ -291,7 +290,7 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int)<br>0 = not retired<br>1 = retired</p>
+                <p>Values[0] = (int)<br />0 = not retired<br />1 = retired</p>
             </td>
             <td>
                 <p>Retired</p>
@@ -306,8 +305,8 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Set:<br>Values[0] = (Date) <br>Format: InvariantInfo</p>
-                <p>Clear: <br>Day = 0, Month = 0, &nbsp;Year = 0</p>
+                <p>Set:<br />Values[0] = (Date) <br />Format: InvariantInfo</p>
+                <p>Clear: <br />Day = 0, Month = 0, &nbsp;Year = 0</p>
             </td>
             <td>
                 <p>DayOfBirth</p>
@@ -339,17 +338,17 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
             </td>
             <td rowspan="7">
                 <p>Values Count = 0 to 8</p>
-                <p>Add: <br>if value doesn&rsquo;t already exist<br>Values[0] = (string) value<br>Values[1] = (string)
+                <p>Add: <br />if value doesn&rsquo;t already exist<br />Values[0] = (string) value<br />Values[1] = (string)
                     description</p>
-                <p>Remove: <br>only one needs to match<br>Values[0] = (string) value, <br>or...<br>Values[1] = (string)
+                <p>Remove: <br />only one needs to match<br />Values[0] = (string) value, <br />or...<br />Values[1] = (string)
                     description</p>
-                <p>ReplaceWith:<br>locates row with Rank =1 and updates it, removes all others. Updates
-                    using:<br>Values[0] = (string) value<br>Values[1] = (string) description</p>
-                <p>Clear: <br>Clears all existing rows</p>
-                <p>SearchAndReplace:<br>works on value only, not description.<br>Values[2] = searchString<br>Values[3] =
-                    replaceString<br>Values[4] = Search Options</p>
-                <p>RegEx:<br>works on value only, not description.<br>Values[5] = expression<br>Values[6] = replace
-                    with<br>Values[7] = Search Options</p>
+                <p>ReplaceWith:<br />locates row with Rank =1 and updates it, removes all others. Updates
+                    using:<br />Values[0] = (string) value<br />Values[1] = (string) description</p>
+                <p>Clear: <br />Clears all existing rows</p>
+                <p>SearchAndReplace:<br />works on value only, not description.<br />Values[2] = searchString<br />Values[3] =
+                    replaceString<br />Values[4] = Search Options</p>
+                <p>RegEx:<br />works on value only, not description.<br />Values[5] = expression<br />Values[6] = replace
+                    with<br />Values[7] = Search Options</p>
             </td>
             <td>
                 <p>Urls</p>
@@ -361,7 +360,7 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
                 <p>Email</p>
             </td>
             <td>
-                <p>Emails<br>value = EmailAddress</p>
+                <p>Emails<br />value = EmailAddress</p>
             </td>
         </tr>
         <tr>
@@ -414,5 +413,4 @@ Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
 
 See [User-Defined Fields][1].
 
-<!-- Referenced links -->
-[1]: user-defined-fields.md
+[1]: ./user-defined-fields

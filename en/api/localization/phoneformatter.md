@@ -82,7 +82,7 @@ using(SoSession session = SoSession.Authenticate("SAL0", ""))
 {
   // get the long display number formatted according to the country
   // specified the method will add the country code and the area
-  // code to the number 
+  // code to the number
   string formattedPhoneNumber = PhoneFormatter.GetLongDisplayNumber(578,"678657856");
   // output:
   // +47 678657856

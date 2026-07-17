@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "salestatus" MDO List
+
 List for the Sale.Status field: Open, Lost, Sold, Stalled.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleStatusProvider">SaleStatusProvider</see> class.
+Implemented by the `SaleStatusProvider` class.
 The name of the MDO list is 'salestatus'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("salestatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -46,7 +43,6 @@ foreach (var item in listProvider.RootItems) {
 |3|Lost|||
 |2|Sold|||
 |4|Stalled|||
-
 
 ## Related MDO Lists
 

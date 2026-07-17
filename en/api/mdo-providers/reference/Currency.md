@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "currency" MDO List
+
 GenericMDOProvider reads MDO lists with default settings
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.GenericMDOProvider">GenericMDOProvider</see> class.
+Implemented by the `GenericMDOProvider` class.
 The name of the MDO list is 'currency'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("currency", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |19|CLP|||
 |20|CNY|||
 |21|COP|||
-
 
 ## Related MDO Lists
 

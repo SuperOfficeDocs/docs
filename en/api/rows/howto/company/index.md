@@ -18,8 +18,7 @@ redirect_from:
 * [Add new contact interest][3]
 * [Get category list][4]
 
-<!-- Referenced links -->
-[1]: create-contact-row.md
-[2]: create-contact-row.md
-[3]: add-new-contact-interest.md
-[4]: get-catlist-categoryrows.md
+[1]: ./create-contact-row
+[2]: ./create-contact-row
+[3]: ./add-new-contact-interest
+[4]: ./get-catlist-categoryrows

@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "visibleinmenu" MDO List
+
 Visible in menu list: Toolbox menu, View menu
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.VisibleInMenuProvider">VisibleInMenuProvider</see> class.
+Implemented by the `VisibleInMenuProvider` class.
 The name of the MDO list is 'visibleinmenu'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("visibleinmenu", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |1|Toolbox menu|||
 |3|View menu|||
-
 
 ## Related MDO Lists
 

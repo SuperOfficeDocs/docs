@@ -17,7 +17,7 @@ There must be an alias database somewhere that knows how to translate the produc
 
 ## Using fast search
 
-When a user uses the fast search (that’s the "google" search in the **QuoteLine** dialog) he enters the proprietary customer alias "BOEING_111".
+When a user uses the fast search (that's the "google" search in the **QuoteLine** dialog) he enters the proprietary customer alias "BOEING_111".
 
 1. Your connector sends a search to the Alias database to see if the customer + search word (-s) has a match.
 

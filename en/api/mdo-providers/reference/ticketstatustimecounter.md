@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "ticketstatustimecounter" MDO List
+
 Ticket status timer count values: None, Internall, Externally, Queue
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TicketStatusTimeCounterProvider">TicketStatusTimeCounterProvider</see> class.
+Implemented by the `TicketStatusTimeCounterProvider` class.
 The name of the MDO list is 'ticketstatustimecounter'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ticketstatustimecounter", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -46,7 +43,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Internally||Internally|
 |2|Externally||Externally|
 |3|In queue||Queue|
-
 
 ## Related MDO Lists
 

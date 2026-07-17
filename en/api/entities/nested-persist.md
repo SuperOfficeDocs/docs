@@ -11,7 +11,7 @@ redirect_from: /en/api/netserver/entities/nested-persist
 
 # NetServer Nested Persist
 
-The Nested Persist concept is a concept that allows for multiple related objects to be saved within the same transaction. All objects participating in this coordinated save needs to implement the INestedPersist Interface.
+The Nested Persist concept is a concept that allows for multiple related objects to be saved within the same transaction. All objects participating in this coordinated save needs to implement the INestedPersist Interface.
 
 ## INestedPersist
 
@@ -35,7 +35,7 @@ These members are typically exposed as public members on the class implementing 
 
 Implementations typically also implement the property `IsNew`, which will typically be true if the object was never persisted to the database.
 
-The `Delete()` method found on many implementations of INestedPersist is not part of the INestedPersist interface. It simply deletes the object from the database immediately. Later implementation introduced the property `IsMarkedForDelete`. Setting this property to true will result in the actual `Save()` operation to delete the object as part of the save transaction.
+The `Delete()` method found on many implementations of INestedPersist is not part of the INestedPersist interface. It simply deletes the object from the database immediately. Later implementation introduced the property `IsMarkedForDelete`. Setting this property to true will result in the actual `Save()` operation to delete the object as part of the save transaction.
 
 ## Members supporting internal save process
 
@@ -94,7 +94,4 @@ There are several implementations of the INestedPersist interface:
 
 * NestedCollectionPersist: This is the default implementation for making a collection of INestedPersist implementations.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/nestedpersist.png
+[img1]: /media/loc/en/api/entities/nestedpersist.png

@@ -21,9 +21,8 @@ redirect_from:
 * [Using UDFHelper][4]
 * [UDFHelper class][5]
 
-<!-- Referenced links -->
-[1]: set-udef-listitem-value.md
-[2]: get-udef-field-value.md
-[3]: update-udef.md
-[4]: using-udefhelper.md
-[5]: udefhelper-class.md
+[1]: ./set-udef-listitem-value
+[2]: ./get-udef-field-value
+[3]: ./update-udef
+[4]: ./using-udefhelper
+[5]: ./udefhelper-class

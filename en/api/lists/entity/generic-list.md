@@ -13,7 +13,7 @@ redirect_from: /en/api/netserver/lists/entity/generic-list
 
 When you need to **create lists that have a similar behavior** you can use the generic list provider.
 
-Lists that differ from one another have their own providers. But some lists have the same output and almost the same behavior. That’s where generic `SoList` providers come to play. `SoListProviderFactory` will create an `SoList` provider of the correct type according to the parameters passed.
+Lists that differ from one another have their own providers. But some lists have the same output and almost the same behavior. That's where generic `SoList` providers come to play. `SoListProviderFactory` will create an `SoList` provider of the correct type according to the parameters passed.
 
 The following example shows how generic list providers are used to create lists.
 

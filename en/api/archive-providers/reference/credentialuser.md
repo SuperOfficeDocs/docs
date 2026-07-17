@@ -1,7 +1,7 @@
 ---
 uid: CredentialUser
 title: CredentialUser
-description: 
+description:
 keywords: CredentialUser archive provider
 generated: true
 content_type: reference
@@ -10,13 +10,15 @@ envir: onsite, online
 
 # "CredentialUser"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.CredentialUserProvider">SuperOffice.CRM.ArchiveLists.CredentialUserProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.CredentialUserProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 
@@ -30,5 +32,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

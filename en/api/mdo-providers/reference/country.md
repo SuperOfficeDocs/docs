@@ -2,17 +2,15 @@
 uid: country
 title: country
 keywords: mdoprovider mdo provider country
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
 # "country" MDO List
+
 The name of the MDO list is 'country'.
-
-
-
 
 ## Sample Request
 
@@ -25,10 +23,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("country", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -58,7 +57,6 @@ foreach (var item in listProvider.RootItems) {
 |50|Bangladesh|||
 |52|Barbados|||
 |112|Belarus|||
-
 
 ## Related MDO Lists
 

@@ -22,4 +22,4 @@ Gets both the invoice and the delivery addresses. This is normally based on the 
 
 Always return an array, but the cell will be null if no address was found on one (or both).
 
-If the connector returns NULL or does not support addresses, SuperOffice will use the contact’s street and postal addresses as defaults.
+If the connector returns NULL or does not support addresses, SuperOffice will use the contact's street and postal addresses as defaults.

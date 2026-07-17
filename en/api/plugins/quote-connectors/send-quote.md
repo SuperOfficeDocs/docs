@@ -13,7 +13,7 @@ redirect_from: /en/api/netserver/plugins/quote-connectors/send-quote
 
 ![Publish/send a quote dialog -screenshot][img1]
 
-Before the quote is sent, the quote connector validates the quote. The quote connector may reject the quote, or [ask that it be approved](approve-quote.md) by an authorized user.
+Before the quote is sent, the quote connector validates the quote. The quote connector may reject the quote, or [ask that it be approved](./approve-quote) by an authorized user.
 
 When a user sends a quote to the customer, the quote version is frozen, and the quote version cannot be edited further.
 
@@ -29,6 +29,5 @@ Called after a quote version is sent to the customer. Can return a URL or SO Pro
 
 ![20][img2]
 
-<!-- Referenced images -->
-[img1]: media/send-quote.png
-[img2]: media/image020.jpg
+[img1]: /media/loc/en/api/plugins/send-quote.png
+[img2]: /media/loc/en/api/plugins/image020.jpg

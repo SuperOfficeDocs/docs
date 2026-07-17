@@ -10,13 +10,14 @@ envir: onsite, online
 
 # "SaleGuide"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleGuideProvider">SuperOffice.CRM.ArchiveLists.SaleGuideProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.SaleGuideProvider` inside NetServer's SODatabase assembly.
 
 Provider for the Sale Guide, common to both Appointment and Document guide items and instances
 
 This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"suggestedAppointment"|Follow-ups|
@@ -25,6 +26,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |"document"|Documents|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -128,6 +130,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/contactPhone/description| *None* |Telephone - Description: Phone number description|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactFax/formattedNumber| *None* |Fax - Phone: Displays phone number|  |
@@ -152,8 +155,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/postAddress/state| *None* |Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |appointmentInstance/contact/postAddress/wgs84latitude| *None* |Postal address - Latitude: Latitude|  |
 |appointmentInstance/contact/postAddress/wgs84longitude| *None* |Postal address - Longitude: Longitude|  |
-|appointmentInstance/contact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/contact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/contact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/contact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/contact/streetAddress/addressId| *None* |Street address - Address ID: Database ID for the address record|  |
 |appointmentInstance/contact/streetAddress/line1| *None* |Street address - Address 1: First line of the address|  |
 |appointmentInstance/contact/streetAddress/line2| *None* |Street address - Address 2: Second line of the address|  |
@@ -164,8 +167,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/streetAddress/state| *None* |Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |appointmentInstance/contact/streetAddress/wgs84latitude| *None* |Street address - Latitude: Latitude|  |
 |appointmentInstance/contact/streetAddress/wgs84longitude| *None* |Street address - Longitude: Longitude|  |
-|appointmentInstance/contact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/contact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/contact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/contact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/contact/restrictionAddress/addressId| *None* |Search address - Address ID: Database ID for the address record|  |
 |appointmentInstance/contact/restrictionAddress/line1| *None* |Search address - Address 1: First line of the address|  |
 |appointmentInstance/contact/restrictionAddress/line2| *None* |Search address - Address 2: Second line of the address|  |
@@ -176,8 +179,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/restrictionAddress/state| *None* |Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |appointmentInstance/contact/restrictionAddress/wgs84latitude| *None* |Search address - Latitude: Latitude|  |
 |appointmentInstance/contact/restrictionAddress/wgs84longitude| *None* |Search address - Longitude: Longitude|  |
-|appointmentInstance/contact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/contact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/contact/url/URLAddress| *None* |URL|  |
 |appointmentInstance/contact/url/URLDescription| *None* |Description|  |
 |appointmentInstance/contact/contactAssociate/firstName| *None* |First name: Displays the contact's first name|  |
@@ -232,6 +235,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/contactExtra/x\_contact\_default\_integer| *None* |Extra Default Integer: Custom integer field with default value 123.|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactExtra/x\_contact\_float| *None* |Extra Float: Custom float field with 3 decimals|  |
@@ -336,6 +340,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personDirectPhone/formattedNumber| *None* |Direct - Phone: Displays phone number|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personDirectPhone/description| *None* |Direct - Description: Phone number description|  |
@@ -371,8 +376,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personAddress/state| *None* |Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |appointmentInstance/person/personAddress/wgs84latitude| *None* |Contact address - Latitude: Latitude|  |
 |appointmentInstance/person/personAddress/wgs84longitude| *None* |Contact address - Longitude: Longitude|  |
-|appointmentInstance/person/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/person/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/person/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/person/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/person/restrictionAddress/addressId| *None* |Search address - Address ID: Database ID for the address record|  |
 |appointmentInstance/person/restrictionAddress/line1| *None* |Search address - Address 1: First line of the address|  |
 |appointmentInstance/person/restrictionAddress/line2| *None* |Search address - Address 2: Second line of the address|  |
@@ -383,8 +388,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/restrictionAddress/state| *None* |Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |appointmentInstance/person/restrictionAddress/wgs84latitude| *None* |Search address - Latitude: Latitude|  |
 |appointmentInstance/person/restrictionAddress/wgs84longitude| *None* |Search address - Longitude: Longitude|  |
-|appointmentInstance/person/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/person/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/person/personInterestIds| *None* |Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |appointmentInstance/person/personUdef/SuperOffice:1| *None* |contactshorttext: tooltipshorttext|  |
 |appointmentInstance/person/personUdef/SuperOffice:2| *None* |contactlongtext: tooltiplongtext|  |
@@ -440,6 +445,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/person/personAssociate/assocName| *None* |User ID : User ID|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personAssociate/assocTooltip| *None* |Description : Description|  |
@@ -544,6 +550,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/project/projectEvent/hasSignOff| *None* |Sign Off: Does this event have the Sign Off function enabled|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/project/projectUrl/URLAddress| *None* |URL|  |
@@ -648,6 +655,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/sale/earningPercent| *None* |Profit as % : The profit as a percentage of the gross sales total|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/sale/probPercent| *None* |Probability as %: Probability as %|  |
@@ -752,6 +760,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/associate/isActive| *None* |Active: Is this user active, and should be able to log in?|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/associate/isActiveText| *None* |Active status: Is this user active, and should be able to log in?|  |
@@ -856,6 +865,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personBusiness| *None* |Business|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/leadStatus| *None* |Lead status|  |
@@ -902,8 +912,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personAddress/state| *None* |Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |documentInstance/person/personAddress/wgs84latitude| *None* |Contact address - Latitude: Latitude|  |
 |documentInstance/person/personAddress/wgs84longitude| *None* |Contact address - Longitude: Longitude|  |
-|documentInstance/person/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|documentInstance/person/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|documentInstance/person/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|documentInstance/person/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |documentInstance/person/restrictionAddress/addressId| *None* |Search address - Address ID: Database ID for the address record|  |
 |documentInstance/person/restrictionAddress/line1| *None* |Search address - Address 1: First line of the address|  |
 |documentInstance/person/restrictionAddress/line2| *None* |Search address - Address 2: Second line of the address|  |
@@ -914,8 +924,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/restrictionAddress/state| *None* |Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |documentInstance/person/restrictionAddress/wgs84latitude| *None* |Search address - Latitude: Latitude|  |
 |documentInstance/person/restrictionAddress/wgs84longitude| *None* |Search address - Longitude: Longitude|  |
-|documentInstance/person/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|documentInstance/person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|documentInstance/person/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|documentInstance/person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |documentInstance/person/personInterestIds| *None* |Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |documentInstance/person/personUdef/SuperOffice:1| *None* |contactshorttext: tooltipshorttext|  |
 |documentInstance/person/personUdef/SuperOffice:2| *None* |contactlongtext: tooltiplongtext|  |
@@ -960,6 +970,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/person/personAssociate/personId| *None* |Contact ID: Database ID of the contact row|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/personAssociate/mrMrs| *None* |Mr/Ms: Displays whether the contact is addressed as Mr or Ms|  |
@@ -1064,6 +1075,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/mainContact| *None* |Main contact: Main contact for this company|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/forceCompany| *None* |Dummy: Dummy|  |
@@ -1091,8 +1103,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/postAddress/state| *None* |Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |documentInstance/contact/postAddress/wgs84latitude| *None* |Postal address - Latitude: Latitude|  |
 |documentInstance/contact/postAddress/wgs84longitude| *None* |Postal address - Longitude: Longitude|  |
-|documentInstance/contact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|documentInstance/contact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|documentInstance/contact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|documentInstance/contact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |documentInstance/contact/streetAddress/addressId| *None* |Street address - Address ID: Database ID for the address record|  |
 |documentInstance/contact/streetAddress/line1| *None* |Street address - Address 1: First line of the address|  |
 |documentInstance/contact/streetAddress/line2| *None* |Street address - Address 2: Second line of the address|  |
@@ -1103,8 +1115,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/streetAddress/state| *None* |Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |documentInstance/contact/streetAddress/wgs84latitude| *None* |Street address - Latitude: Latitude|  |
 |documentInstance/contact/streetAddress/wgs84longitude| *None* |Street address - Longitude: Longitude|  |
-|documentInstance/contact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|documentInstance/contact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|documentInstance/contact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|documentInstance/contact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |documentInstance/contact/restrictionAddress/addressId| *None* |Search address - Address ID: Database ID for the address record|  |
 |documentInstance/contact/restrictionAddress/line1| *None* |Search address - Address 1: First line of the address|  |
 |documentInstance/contact/restrictionAddress/line2| *None* |Search address - Address 2: Second line of the address|  |
@@ -1115,8 +1127,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/restrictionAddress/state| *None* |Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |documentInstance/contact/restrictionAddress/wgs84latitude| *None* |Search address - Latitude: Latitude|  |
 |documentInstance/contact/restrictionAddress/wgs84longitude| *None* |Search address - Longitude: Longitude|  |
-|documentInstance/contact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|documentInstance/contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|documentInstance/contact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|documentInstance/contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |documentInstance/contact/url/URLAddress| *None* |URL|  |
 |documentInstance/contact/url/URLDescription| *None* |Description|  |
 |documentInstance/contact/contactAssociate/firstName| *None* |First name: Displays the contact's first name|  |
@@ -1168,6 +1180,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/contactUdef/SuperOffice:13| *None* |Udlist two: Static tooltip for udlist two|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/contactExtra/x\_contact\_integer| *None* |Extra Integer: Custom integer field|  |
@@ -1272,6 +1285,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/project/projectAssociate/assocTooltip| *None* |Description : Description|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |documentInstance/project/projectAssociate/assocType| *None* |Type: Type of user: associate, external user, system user, anonymous account|  |
@@ -1376,6 +1390,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/sale/personId| *None* |Contact ID: Database ID of the contact row|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |documentInstance/sale/projectId| *None* |Project ID: Database ID of project record|  |
@@ -1486,5 +1501,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

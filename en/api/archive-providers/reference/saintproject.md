@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "SaintProject"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport">SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport` inside NetServer's SODatabase assembly.
 
 Archive provider for Project Saint Status - same as Find Project, but adds ability to call up stored definitions via a statusDefId column
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"project"|Project|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |statusdefId|int|Status definition: Status definition|  |
@@ -123,6 +125,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |saintActivityType|listAny|SAINT type|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |saintDirection|listAny|Direction|  |
@@ -227,6 +230,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |sale/associate/locationAddress|string|Location: Location| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/associate/isLocation|bool|Is a location: Is a location| x |
@@ -331,6 +335,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |appointment/appointment/description|positiveString|Text: Displays the text entered in the description field| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointment/appointment/title|positiveString|Title| x |
@@ -435,6 +440,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/infoText|positiveString|Information: Displays the text entered in the description field| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMember/firstName|string|First name: Displays the contact's first name| x |
@@ -523,8 +529,8 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |projectMember/personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|projectMember/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|projectMember/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|projectMember/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |projectMember/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |projectMember/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -535,10 +541,11 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |projectMember/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|projectMember/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|projectMember/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|projectMember/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMember/personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
@@ -643,6 +650,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/correspondingAssociate/personEmail|string|E-mail| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/locationAddress|string|Location: Location| x |
@@ -706,8 +714,8 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |projectMember/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|projectMember/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|projectMember/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|projectMember/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |projectMember/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |projectMember/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -718,8 +726,8 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |projectMember/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |projectMember/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|projectMember/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|projectMember/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|projectMember/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|projectMember/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/url/URLAddress|string|URL| x |
 |projectMember/url/URLDescription|string|Description| x |
 |projectMember/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -747,6 +755,7 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 |projectMember/contactAssociate/ejStatus|int|Service status: Status for Service user: Normal; Unavailable / holiday; Deleted; Read-only|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/credentialType| *None* |Auth. type: What type of credentials to use when this user logs in| x |
@@ -833,5 +842,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

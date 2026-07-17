@@ -94,6 +94,5 @@ ActorArrayPluginResponse response = GetActors(3aef3af6-8642-4fc1-8dc9-4e08bd76a6
         );
 ```
 
-<!-- Referenced images -->
-[img1]: media/import.png
-[img2]: media/search-erp.png
+[img1]: /media/loc/en/api/plugins/import.png
+[img2]: /media/loc/en/api/plugins/search-erp.png

@@ -61,12 +61,11 @@ The main classes are:
 
 These contain all the functions you need to localize your application. See the [Resource Providers][2] documentation to learn more about how to include more culture-specific resources for SuperOffice.
 
-<!-- Referenced links -->
-[1]: language/resource-providers.md
+[1]: ./language/resource-providers
 [2]: <xref:SuperOffice.Globalization.RC>
-[3]: culture/culturesettinghelper.md
-[4]: address/addressformatter.md
-[5]: culture/culturedataformatter.md
-[6]: personnameformatter.md
-[7]: phoneformatter.md
-[8]: superoffice-crm-globalization.md
+[3]: ./culture/culturesettinghelper
+[4]: ./address/addressformatter
+[5]: ./culture/culturedataformatter
+[6]: ./personnameformatter
+[7]: ./phoneformatter
+[8]: ./superoffice-crm-globalization

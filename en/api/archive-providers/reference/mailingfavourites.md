@@ -1,7 +1,7 @@
 ---
 uid: mailingfavourites
 title: mailingfavourites
-description: 
+description:
 keywords: mailingfavourites archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "mailingfavourites"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailingFavouritesProvider">SuperOffice.CRM.ArchiveLists.MailingFavouritesProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.MailingFavouritesProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailing"|Favourite mailing|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -121,6 +123,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |project/projectAssociate/credentialDisplayValue| *None* |Auth. value: Credential value (public, visible part) to be used when this user logs in| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/isActive|bool|Active: Is this user active, and should be able to log in?| x |
@@ -177,5 +180,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

@@ -172,10 +172,7 @@ newContact.Emails[0].Delete();
 * [Update an entity through an entity][9]
 * [Delete an entity through an entity][11]
 
-<!-- Referenced links -->
-[5]: get-entity-from-entity.md
-[7]: create-entity-in-entity.md
-[9]: update-entity-in-entity.md
-[11]: delete-entity-from-entity.md
-
-<!-- Referenced images -->
+[5]: ./get-entity-from-entity
+[7]: ./create-entity-in-entity
+[9]: ./update-entity-in-entity
+[11]: ./delete-entity-from-entity

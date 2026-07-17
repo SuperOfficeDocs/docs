@@ -1,7 +1,7 @@
 ---
 uid: FindErpEntity
 title: FindErpEntity
-description: 
+description:
 keywords: FindErpEntity archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "FindErpEntity"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.ErpSync.FindErpEntityProvider">SuperOffice.ErpSync.FindErpEntityProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.ErpSync.FindErpEntityProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"ErpEntity"|ERP entity|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ConnectionId| *None* |ERP connection ID: ERP connection ID| x |
@@ -37,5 +39,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

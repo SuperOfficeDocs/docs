@@ -30,6 +30,5 @@ If, when calculating the version, you have a problem connecting to some back-off
 
 And so on.
 
-<!-- Referenced links -->
-[1]: api/enums/quotestatus.md
-[2]: api/reason-fields.md
+[1]: ./api/enums/quotestatus
+[2]: ./api/reason-fields

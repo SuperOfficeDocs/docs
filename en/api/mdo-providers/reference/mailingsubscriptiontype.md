@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "mailingsubscriptiontype" MDO List
+
 Mailing subscription types; Invitations, news, etc
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.MailingSubscriptionTypeProvider">MailingSubscriptionTypeProvider</see> class.
+Implemented by the `MailingSubscriptionTypeProvider` class.
 The name of the MDO list is 'mailingsubscriptiontype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("mailingsubscriptiontype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -47,7 +44,6 @@ foreach (var item in listProvider.RootItems) {
 |2|News|||
 |3|Promotions|||
 |4|Urgent messages|||
-
 
 ## Related MDO Lists
 

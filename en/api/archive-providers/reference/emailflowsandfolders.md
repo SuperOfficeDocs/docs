@@ -10,18 +10,20 @@ envir: onsite, online
 
 # "EmailFlowsAndFolders"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider">SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider` inside NetServer's SODatabase assembly.
 
 Archive of EmailFlows and Folders.
 Combines all EmailFlows and EmailFlowFolders in one archive together.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"emailflow"|emailflow|
 |"emailflowfolder"|emailflowfolder|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -85,7 +87,7 @@ Combines all EmailFlows and EmailFlowFolders in one archive together.
 |hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyName| *None* |Hierarchy name: The full name/path from table hierarchy|  |
 |hierarchyParentId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 
 ## Sample
 
@@ -97,5 +99,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

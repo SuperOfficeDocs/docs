@@ -85,6 +85,5 @@ newSale.Currency.Name = "DAS";
 * [Update a basic property of an Entity][1]
 * [Update an Entity through an Entity][2]
 
-<!-- Referenced links -->
-[1]: ../entities/update-entity.md
-[2]: ../entities/update-entity-in-entity.md
+[1]: ../entities/update-entity
+[2]: ../entities/update-entity-in-entity

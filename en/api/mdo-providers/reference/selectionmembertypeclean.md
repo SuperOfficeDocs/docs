@@ -2,7 +2,7 @@
 uid: selectionmembertypeclean
 title: selectionmembertypeclean
 keywords: mdoprovider mdo provider selectionmembertypeclean
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "selectionmembertypeclean" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SelectionMemberTypeClean">SelectionMemberTypeClean</see> class.
+Implemented by the `SelectionMemberTypeClean` class.
 The name of the MDO list is 'selectionmembertypeclean'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selectionmembertypeclean", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -54,7 +49,6 @@ foreach (var item in listProvider.RootItems) {
 |332|Chat conversations||chat_session|
 |485|Form submissions||form_submission|
 |334|Mailings||s_shipment|
-
 
 ## Related MDO Lists
 

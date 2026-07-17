@@ -9,7 +9,7 @@ content_type: howto
 category: localization
 audience: api
 audience_tooltip: SuperOffice APIs and database
-redirect_from: 
+redirect_from:
   - /en/api/localization/language/index
   - /en/globalization-and-localization/language/index
   - /en/globalization-and-localization/language/create-resource-provider
@@ -52,7 +52,6 @@ The value is optionally a full path, or when placed in the applications director
   <Factory>
     <DynamicLoad>
     ...
-      <!-- Add custom plugins etc here -->
       <add key="UniqueName" value="UniqueName.Resources.dll" />
     </DynamicLoad>
   </Factory>
@@ -93,8 +92,6 @@ If you have special requirements, implement the `IResourceProvider` interface, o
 
 The idea behind `CanInitialize` is that some providers may need database access, and so they should not be initialized too early. By doing a quick check and returning true only when everything is ready, you can postpone the initialization to the correct moment.
 
-<!-- Referenced links -->
-[1]: resource-providers.md
+[1]: ./resource-providers
 
-<!-- Referenced images -->
-[img1]: media/netserver-resource-provider.png
+[img1]: /media/loc/en/api/localization/netserver-resource-provider.png

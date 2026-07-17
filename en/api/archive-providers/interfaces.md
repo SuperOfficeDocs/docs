@@ -36,8 +36,6 @@ There are several points to make about this diagram (which, incidentally, is som
 
 **Continue reading:** [Data classes][1]
 
-<!-- Referenced links -->
-[1]: data-classes.md
+[1]: ./data-classes
 
-<!-- Referenced images -->
-[img1]: media/image001.jpg
+[img1]: /media/loc/en/api/web-services/image001-8.jpg

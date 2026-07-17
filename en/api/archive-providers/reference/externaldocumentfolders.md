@@ -1,7 +1,7 @@
 ---
 uid: externaldocumentfolders
 title: externaldocumentfolders
-description: 
+description:
 keywords: externaldocumentfolders archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "externaldocumentfolders"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ExternalDocumentFolderProvider">SuperOffice.CRM.ArchiveLists.ExternalDocumentFolderProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ExternalDocumentFolderProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"folder"|Folder|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -26,7 +28,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 |title|string|Title: Title of an External Document| x |
 |description|string|Description: Description of an External Document| x |
 |created|date|Created: Displays when the request was created| x |
@@ -42,5 +44,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "FormSubmissionShadowDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
 FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"formSubmission"|Form submission|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -123,6 +125,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |person/personCategoryRank|int|!!Category rank| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/personBusiness|listAny|Business| x |
@@ -170,8 +173,8 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |person/personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |person/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |person/personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|person/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|person/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|person/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|person/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |person/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |person/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |person/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -182,8 +185,8 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |person/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |person/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |person/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|person/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|person/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |person/personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |person/personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |person/personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -227,6 +230,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |person/personAssociate/contactId|int|Company ID: Database ID of the company the user belongs to|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/personId|int|Contact ID: Database ID of the contact row|  |
@@ -331,6 +335,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/deletedDate|datetime|Deleted date: Deleted date|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contact/mainContact| *None* |Main contact: Main contact for this company| x |
@@ -359,8 +364,8 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |contact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|contact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|contact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|contact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |contact/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |contact/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -371,8 +376,8 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |contact/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|contact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|contact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|contact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |contact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |contact/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -383,8 +388,8 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |contact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|contact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|contact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/url/URLAddress|string|URL| x |
 |contact/url/URLDescription|string|Description| x |
 |contact/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -435,6 +440,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/contactUdef/SuperOffice:12|listAny|Udlist one: Static tooltip for udlist one| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:13|listAny|Udlist two: Static tooltip for udlist two| x |
@@ -496,5 +502,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

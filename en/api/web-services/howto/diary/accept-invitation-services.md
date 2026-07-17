@@ -55,9 +55,8 @@ StateZeroDatabase       [D:06/14/2007]    [D:06/14/2007]    [I:161]
 
 The reason that the details of an invitation with `appointmentId` 150 is not shown (like it did when we [listed it][1]), is that once the invitation has been accepted it becomes a normal appointment without the invitation status set and it can no longer be retrieved by using the [InvitationProvider][5].
 
-<!-- Referenced links -->
-[1]: get-invitations-services.md
-[2]: ../../../../diary/learn/invitation/index.md
-[3]: ../../index.md
-[4]: ../../../reference/restful/agent/Appointment_Agent/index.md
-[5]: ../../../archive-providers/reference/invitation.md
+[1]: ./get-invitations-services
+[2]: ../../../../diary/learn/invitation/index
+[3]: ../../index
+[4]: ../../../reference/restful/agent/Appointment_Agent/index
+[5]: ../../../archive-providers/reference/invitation

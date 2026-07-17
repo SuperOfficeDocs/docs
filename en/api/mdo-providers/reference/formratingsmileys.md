@@ -2,7 +2,7 @@
 uid: formratingsmileys
 title: formratingsmileys
 keywords: mdoprovider mdo provider formratingsmileys
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "formratingsmileys" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.RatingSmileysProvider">RatingSmileysProvider</see> class.
+Implemented by the `RatingSmileysProvider` class.
 The name of the MDO list is 'formratingsmileys'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("formratingsmileys", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -45,7 +40,6 @@ foreach (var item in listProvider.RootItems) {
 |0|Sad|||
 |1|Neutral|||
 |2|Happy|||
-
 
 ## Related MDO Lists
 

@@ -22,7 +22,7 @@ The `QuoteConnectorExtender` implements the `IQuoteConnector` API by wrapping an
 
 To use the extender, you sub-class the `QuoteConnectorExtender`, and pass the name of the connector you would like to extend as part of the constructor call.
 
-You then override any API calls that you want to change and leave the rest to the base implementation – which just forwards the calls to the wrapped connector.
+You then override any API calls that you want to change and leave the rest to the base implementation - which just forwards the calls to the wrapped connector.
 
 ![43][img1]
 
@@ -30,7 +30,6 @@ Here we extend the SuperOffice quote connector, but we override the default impl
 
 `MyQuoteConnector` tells the extender to wrap the SuperOffice quote connector by passing the name to the base constructor.
 
-Because the `QuoteConnectorExtender` class lives in the Plugins DLL, the `MyQuoteConnector` avoids taking direct dependency on the SoCore and SoDatabase DLLs, so it won’t be affected when a version change updates the SoCore assembly.
+Because the `QuoteConnectorExtender` class lives in the Plugins DLL, the `MyQuoteConnector` avoids taking direct dependency on the SoCore and SoDatabase DLLs, so it won't be affected when a version change updates the SoCore assembly.
 
-<!-- Referenced images -->
-[img1]: media/image043.png
+[img1]: /media/loc/en/api/plugins/image043.png

@@ -1,0 +1,209 @@
+---
+mode: "custom"
+title: SuperOffice APIs
+sidebarTitle: "Overview"
+description: "Overview of the platform, including guidance for both online and onsite integrations."
+author: AnthonyYates
+date: 07.17.2026
+language: en
+---
+
+import CustomFooter from '/components/custom-mode-footer.mdx'
+
+<div id="category-hero">
+  <h1>SuperOffice APIs</h1>
+  <p>Overview of the platform, including guidance for both online and onsite integrations.</p>
+</div>
+
+<div id="category-landing">
+
+<div className="highlighted-content">
+
+<CardGroup cols={4}>
+<Card title="Developer portal" icon="cloud-arrow-up" href="../developer-portal/index">
+  <span className="card-label">Deploy</span>
+</Card>
+
+<Card title="Introduction to SuperOffice APIs." icon="power-off" href="overview/index">
+  <span className="card-label">Get started</span>
+</Card>
+
+<Card title="Authentication overview." icon="map" href="authentication/overview">
+  <span className="card-label">Overview</span>
+</Card>
+
+<Card title="Learn NetServer." icon="graduation-cap" href="overview/netserver">
+  <span className="card-label">Learn</span>
+</Card>
+
+<Card title="Learn web services" icon="graduation-cap" href="web-services/index">
+  <span className="card-label">Learn</span>
+</Card>
+
+<Card title="Learn bulk operations" icon="graduation-cap" href="bulk-operations/index">
+  <span className="card-label">Learn</span>
+</Card>
+
+<Card title="Learn search APIs" icon="graduation-cap" href="search/index">
+  <span className="card-label">Learn</span>
+</Card>
+
+<Card title="RESTful API reference" icon="book" href="reference/restful/index">
+  <span className="card-label">Reference</span>
+</Card>
+
+</CardGroup>
+
+</div>
+
+<div className="conceptual-content">
+
+<h2>Common API reference sections</h2>
+
+<p className="section-summary">Shortcut links to reference information.</p>
+
+<CardGroup cols={4}>
+<Card title="Core concepts">
+
+<ul className="concept-links">
+  <li><Icon icon="compass" /> <a href="overview/netserver">What is NetServer</a></li>
+  <li><Icon icon="map" /> <a href="entities/index">NetServer Entities</a></li>
+  <li><Icon icon="map" /> <a href="rows/index">NetServer Rows</a></li>
+  <li><Icon icon="map" /> <a href="osql/index">NetServer OSQL</a></li>
+</ul>
+
+</Card>
+
+<Card title="Web service concepts">
+
+<ul className="concept-links">
+  <li><Icon icon="compass" /> <a href="web-services/index">NetServer Services overview</a></li>
+  <li><Icon icon="compass" /> <a href="web-services/index">Service agents and carriers</a></li>
+  <li><Icon icon="compass" /> <a href="web-services/endpoints/index">NetServer endpoints</a></li>
+  <li><Icon icon="compass" /> <a href="web-services/proxies/index">NetServer proxies</a></li>
+</ul>
+
+</Card>
+
+<Card title="Search options">
+
+<ul className="concept-links">
+  <li><Icon icon="list" /> <a href="search/find-selection/index">Using Find API</a></li>
+  <li><Icon icon="map" /> <a href="search/index">Using Archive Providers</a></li>
+</ul>
+
+</Card>
+
+<Card title="API Reference">
+
+<ul className="concept-links">
+  <li><Icon icon="book" /> <a href="reference/netserver/core/index">NetServer core client</a></li>
+  <li><Icon icon="book" /> <a href="reference/soap/index">SOAP API</a></li>
+  <li><Icon icon="compass" /> <a href="reference/netserver/services/index">NetServer SOAP proxy client</a></li>
+  <li><Icon icon="book" /> <a href="reference/restful/index">REST API</a></li>
+  <li><Icon icon="compass" /> <a href="mdo-providers/reference/index">NetServer REST proxy client</a></li>
+</ul>
+
+</Card>
+
+<Card title="NetServer core">
+
+</Card>
+
+<Card title="NetServer services">
+
+</Card>
+
+<Card title="Archive Provider Listing">
+
+</Card>
+
+<Card title="MDO Provider Listing">
+
+</Card>
+
+</CardGroup>
+
+</div>
+
+<div className="additional-content">
+
+<h2>Sample Applications</h2>
+
+<p className="section-summary">Get up and running quickly with our sample applications.</p>
+
+<CardGroup cols={4}>
+<Card title="ASP.NET">
+
+<ul className="additional-links">
+  <li><a href="https://github.com/SuperOffice/devnet-oidc-razor-pages-webapi">.NET Core 3.1 Razor Pages App</a></li>
+  <li><a href="https://github.com/SuperOffice/SuperOffice.DevNet.OpenIDConnectNativeApp">.NET Core 3.1 / .NET Framework Console (OIDC Native App)</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-oidc-aspnet-core-20">ASP.NET Core 2.0</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-oidc-webforms-owin">ASP.NET Framework WebForms Owin</a></li>
+  <li><a href="https://github.com/SuperOffice/SuperOffice.WebApi-Samples">SuperOffice.WebApi Samples</a></li>
+</ul>
+
+</Card>
+
+<Card title="Plugin Helper Applications">
+
+<ul className="additional-links">
+  <li><a href="https://github.com/SuperOffice/devnet-crmscript-chatbot">Service Chatbot</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-database-mirroring">Database Mirroring</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-netserver-script-event-generator">NetServer service scripting generator</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-netserver-sentry">NetServer Sentry</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-document-plugin">NetServer Document plugin</a></li>
+</ul>
+
+</Card>
+
+<Card title="Utilities">
+
+<ul className="additional-links">
+  <li><a href="https://github.com/SuperOffice/DevNet/tree/master/CrossMessaging">Web Panel - CrossMessaging Library and Sample</a></li>
+  <li><a href="https://github.com/SuperOffice/vscode-crmscript">Visual Studio Code Extension for CRMScripts</a></li>
+  <li><a href="https://github.com/SuperOffice/DevNet/tree/master/ContinuousDatabase">Continuous Database Utility</a></li>
+</ul>
+
+</Card>
+
+<Card title="NodeJs Applications">
+
+<ul className="additional-links">
+  <li><a href="https://github.com/SuperOffice/node-express-convert-certs-and-sys-token">NodeJs and ExpressJs</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-electron-appauth">Electron Application</a></li>
+</ul>
+
+</Card>
+
+<Card title="Python and PHP">
+
+<ul className="additional-links">
+  <li><a href="https://github.com/SuperOffice/devnet-python-system-user">Python System User</a></li>
+  <li><a href="https://github.com/SuperOffice/devnet-php-oidc-soap">PHP System User</a></li>
+</ul>
+
+</Card>
+
+<Card title="Angular">
+
+<ul className="additional-links">
+  <li><a href="https://github.com/SuperOffice/devnet-angular-openid-rest">SPA (OIDC and webhooks)</a></li>
+</ul>
+
+</Card>
+
+</CardGroup>
+
+<h2>API and language reference</h2>
+
+<p className="section-summary">Search the NetServer API and language reference documentation.</p>
+
+<CardGroup cols={4}>
+</CardGroup>
+
+</div>
+
+</div>
+
+<CustomFooter />

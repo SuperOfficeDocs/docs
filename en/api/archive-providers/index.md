@@ -117,17 +117,16 @@ using(SoSession newSession = SoSession.Authenticate("SAL0", ""))
 }
 ```
 
-<!-- Referenced links -->
-[1]: reference/index.md
-[2]: encoded-values.md
-[3]: how-to-query.md
-[4]: data-aggregation.md
-[5]: architecture.md
-[6]: providers.md
-[7]: extenders.md
-[8]: joiners.md
-[9]: base-and-helper-classes.md
-[10]: interfaces.md
-[11]: data-classes.md
-[12]: scenarios.md
-[13]: metadata.md
+[1]: ./reference/index
+[2]: ./encoded-values
+[3]: ./how-to-query
+[4]: ./data-aggregation
+[5]: ./architecture
+[6]: ./providers
+[7]: ./extenders
+[8]: ./joiners
+[9]: ./base-and-helper-classes
+[10]: ./interfaces
+[11]: ./data-classes
+[12]: ./scenarios
+[13]: ./metadata

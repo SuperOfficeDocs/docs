@@ -9,12 +9,11 @@ envir: onsite, online
 ---
 
 # "userplan" MDO List
+
 List provider for the UserPlan in the module license table.
 Returns all user plans except the one specified by additional-info "exclude_id"
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.UserPlanProvider">UserPlanProvider</see> class.
+Implemented by the `UserPlanProvider` class.
 The name of the MDO list is 'userplan'.
 
 ## Additional Attributes
@@ -22,10 +21,6 @@ The name of the MDO list is 'userplan'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Exclude the given user-plan by id| exclude_id|1234|
-
-
-
-
 
 ## Sample Request
 
@@ -38,10 +33,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("userplan", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -55,7 +51,6 @@ foreach (var item in listProvider.RootItems) {
 |129|Service Premium||ten-service|
 |131|Marketing Premium||ten-marketing|
 |132|SalesPremiumServicePremiumMarketingPremium||ten-salesservicemarketing|
-
 
 ## Related MDO Lists
 

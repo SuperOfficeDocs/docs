@@ -79,7 +79,6 @@ SuperOffice CRM COM Database is a 32 bit (x86) interop for using the SuperOffice
 
 [View on nuget.org][11]
 
-<!-- Referenced links -->
 [1]: https://www.nuget.org/packages/SuperOffice.NetServer.Core
 [2]: https://www.nuget.org/packages/SuperOffice.NetServer.Services
 [3]: https://www.nuget.org/packages/SuperOffice.ContinuousDatabase/

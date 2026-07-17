@@ -1,6 +1,6 @@
 ---
 title: IQuoteConnector
-uid: i_quote_connector 
+uid: i_quote_connector
 description: IQuoteConnector
 author: SuperOffice Product and Engineering
 date:
@@ -8,8 +8,6 @@ keywords: quote
 content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/iquoteconnector
 ---
-
-<!-- markdownlint-disable-file MD013 -->
 
 # IQuoteConnector
 
@@ -28,14 +26,14 @@ The user may click the TEST button in the configuration dialog, which calls the 
 
 The id of this connection in the CRM system
 
-## <a id="get-configuration-fields"></a>Dictionary&lt;string, FieldMetadataInfo> GetConfigurationFields()
+## <a id="get-configuration-fields"></a>Dictionary&lt;string, FieldMetadataInfo\> GetConfigurationFields()
 
 This is a request for metadata needed to populate the Quote connection configuration admin dialog that takes in the information needed to create a connection to an ERP system.
 The values entered in the dialog are stored in the SuperOffice db and used when
 [`InitializeConnection`](#init-connection) is called by the client.
 Returns: [FieldMetadataInfo][2] dictionary. A list of field descriptions for the GUI to use when populating the config dialog. Make sure that the FieldMetadataInfo.Rank is set.
 
-## PluginResponseInfo TestConnection(Dictionary&lt;string, string> connectionData)
+## PluginResponseInfo TestConnection(Dictionary&lt;string, string\> connectionData)
 
 Check that the ERP connection is good. Return some status info that the Admin client can show to the user.
 
@@ -43,11 +41,11 @@ Testing if the connection data is sufficient to get a connection with the ERP sy
 The Connector should try to do some operations to check if the connection has sufficient rights
 to run. The connection has not been created yet.
 
-* connectionData: {"name" = "value"}. The names are defined by the [FieldMetadata][2] returned by the [GetConfigurationFields](#get-configuration-fields). The values are what the user typed into the fields in the configure connection dialog.
+* connectionData: \{"name" = "value"\}. The names are defined by the [FieldMetadata][2] returned by the [GetConfigurationFields](#get-configuration-fields). The values are what the user typed into the fields in the configure connection dialog.
 
 Returns: Ok or not + a status or error message. This message is shown in a result dialog.
 
-## <a id="init-connection"></a>PluginResponseInfo InitializeConnection(SuperOffice.CRM.QuoteConnectionInfo connectionData, SuperOffice.CRM.UserInfo user, bool isOnTravel, Dictionary&lt;string, string> connectionConfigFields, IProductRegisterCache productRegister)
+## <a id="init-connection"></a>PluginResponseInfo InitializeConnection(SuperOffice.CRM.QuoteConnectionInfo connectionData, SuperOffice.CRM.UserInfo user, bool isOnTravel, Dictionary&lt;string, string\> connectionConfigFields, IProductRegisterCache productRegister)
 
  Set up the connection to the ERP system.
  Will be called as part of SuperOffice client startup for each installed connection.
@@ -59,10 +57,10 @@ Returns: Ok or not + a status or error message. This message is shown in a resul
 * Dictionary connectionConfigFields: `{"name" = "value"}`. The names are defined by the [FieldMetadata][2]. The values are what the user typed into the fields in the configure connection dialog.
 * [IProductRegisterCache][8] productRegister: Product caching object that allows connectors to stash product information in the SuperOffice database for off-line use.
 
-Returns: IsOk set to false if connector can’t provide service (no network)
+Returns: IsOk set to false if connector can't provide service (no network)
  The connector is then ignored until the application restarts.
 
-## Dictionary&lt;string, bool> GetCapabilities()
+## Dictionary&lt;string, bool\> GetCapabilities()
 
 Return a set of capability name &gt; status pairs that tell the system what capabilities this connector provides.
 
@@ -233,7 +231,7 @@ See `GetProduct` above for details
 * context: the quote alternative
 * erpProductKey: the product id to get details on.
 
-Returns: Return products based on an array of unique ERP keys; handy when you’ve found products through archive providers or other mechanisms that leave you holding an ERPKey
+Returns: Return products based on an array of unique ERP keys; handy when you've found products through archive providers or other mechanisms that leave you holding an ERPKey
 
 ## QuoteLineInfo[] GetQuoteLinesFromProduct(QuoteAlternativeContextInfo context, string erpProductKey)
 
@@ -361,7 +359,7 @@ The [QuoteConnectorBase][9] implementation of this method defines methods for va
 
 Returns: The updated Context, with changes to State and UserExplanation if needed.
 
-## QuoteVersionResponseInfo UpdateQuoteVersionPrices(QuoteVersionContextInfo context, HashSet< string > writeableFields)
+## QuoteVersionResponseInfo UpdateQuoteVersionPrices(QuoteVersionContextInfo context, HashSet\< string \> writeableFields)
 
 Fetch new prices from the price list for all the alternatives in the quote.
 This method is explicitly triggered by the user clicking the UPDATE PRICES button in the quote dialog.
@@ -421,14 +419,13 @@ The addresses are used in the generated quote document.
 
 Returns: Returns null if no address was found.
 
-<!-- Referenced links -->
 [1]: http://www.currency-iso.org/dl_iso_table_a1.xls
-[2]: data-carriers/fieldmetadatainfo.md
-[3]: data-carriers/quoteconnectioninfo.md
-[4]: data-carriers/quotealternativecontextinfo.md
-[5]: data-carriers/quoteversioncontextinfo.md
-[6]: data-carriers/quoteversionresponseinfo.md
-[7]: data-carriers/quotealternativeinfo.md
-[8]: iproductregistercache.md
-[9]: quoteconnectorbase.md
-[10]: ../capability-names.md
+[2]: ./data-carriers/fieldmetadatainfo
+[3]: ./data-carriers/quoteconnectioninfo
+[4]: ./data-carriers/quotealternativecontextinfo
+[5]: ./data-carriers/quoteversioncontextinfo
+[6]: ./data-carriers/quoteversionresponseinfo
+[7]: ./data-carriers/quotealternativeinfo
+[8]: ./iproductregistercache
+[9]: ./quoteconnectorbase
+[10]: ../capability-names

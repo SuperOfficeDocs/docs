@@ -60,5 +60,4 @@ public class AddressHelper
 }
 ```
 
-<!-- Referenced links -->
-[1]: ../../web-services/howto/address/set-localized-address.md
+[1]: ../../web-services/howto/address/set-localized-address

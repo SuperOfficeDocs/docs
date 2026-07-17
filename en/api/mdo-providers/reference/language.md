@@ -2,7 +2,7 @@
 uid: language
 title: language
 keywords: mdoprovider mdo provider language
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "language" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.LanguageProvider">LanguageProvider</see> class.
+Implemented by the `LanguageProvider` class.
 The name of the MDO list is 'language'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("language", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -61,7 +56,6 @@ foreach (var item in listProvider.RootItems) {
 |17|Brazilian Portuguese ||br|
 |18|Vietnamese||vi|
 |19|Swiss German||ch|
-
 
 ## Related MDO Lists
 

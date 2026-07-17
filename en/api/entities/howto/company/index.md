@@ -20,10 +20,9 @@ redirect_from:
 * [Get interests for contact][5]
 * [Set interest on/off][6]
 
-<!-- Referenced links -->
-[1]: create-contact-entity.md
-[2]: create-contact-entity-in-entity.md
-[3]: create-contact-entity-in-collection.md
-[4]: get-contact-via-entities-layer.md
-[5]: get-interests-for-contact-entity.md
-[6]: set-interest-on-off-entity.md
+[1]: ./create-contact-entity
+[2]: ./create-contact-entity-in-entity
+[3]: ./create-contact-entity-in-collection
+[4]: ./get-contact-via-entities-layer
+[5]: ./get-interests-for-contact-entity
+[6]: ./set-interest-on-off-entity

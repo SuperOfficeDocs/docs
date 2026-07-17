@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "FreetextCount"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextCountProvider">SuperOffice.CRM.ArchiveLists.FreetextCountProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.FreetextCountProvider` inside NetServer's SODatabase assembly.
 
 Archive provider for counts of freetext matches
 
@@ -19,17 +19,18 @@ this corresponds to the tabs in the freetext search result dialog, and the numbe
 get actual matches for a particular entity, use the corresponding FreetextSearchProvider, for instance,
 the <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextContactResultProvider" />.
 
-
 The 'OwnerEntityName' column accepts a restriction in the form of an array of strings or table names. If
 provided, this restriction will limit the entities searched. The <see cref="T:SuperOffice.CRM.Lists.FreetextSearchEntityProvider" />
 is an MDO provider for supported entities.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"freetextcount"|Number of matches|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ownerEntityName|listAny|Owner: Owner (type) of freetext match| x |
@@ -47,5 +48,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

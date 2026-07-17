@@ -25,10 +25,9 @@ redirect_from:
 * [Create invitation][5]
 * [Accept invitation][6]
 
-<!-- Referenced links -->
-[1]: create-apt-entity.md
-[2]: create-apt-entity-in-entity.md
-[3]: create-apt-entity-in-collection.md
-[4]: create-recurring-appointment-entity.md
-[5]: create-invitation-entity.md
-[6]: accept-invitation-entity.md
+[1]: ./create-apt-entity
+[2]: ./create-apt-entity-in-entity
+[3]: ./create-apt-entity-in-collection
+[4]: ./create-recurring-appointment-entity
+[5]: ./create-invitation-entity
+[6]: ./accept-invitation-entity

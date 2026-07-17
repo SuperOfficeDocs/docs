@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "personphone" MDO List
+
 Search phone numbers for matching values, restricted to a given company or person.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PersonPhoneProvider">PersonPhoneProvider</see> class.
+Implemented by the `PersonPhoneProvider` class.
 The name of the MDO list is 'personphone'.
 
 ## Additional Attributes
@@ -24,10 +23,6 @@ The name of the MDO list is 'personphone'.
 |Company id| extraId|23|
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -40,10 +35,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("personphone", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -53,7 +49,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

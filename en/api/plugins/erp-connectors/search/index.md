@@ -14,7 +14,7 @@ redirect_from: /en/api/netserver/plugins/erp-connectors/search/index
 There are 2 ways to search for ERP actors:
 
 * A *simple search* that is driven by a search string and returns a set of fields
-* A *criteria-driven search* where the user is present with a **Find Dialog** where various criteria – offered by the connector – can be filled in
+* A *criteria-driven search* where the user is present with a **Find Dialog** where various criteria - offered by the connector - can be filled in
 
 The search functionality is used when connecting a SuperOffice CRM entity to an ERP Actor the first time (you cannot simply create new ERP Actors without first checking if a candidate already exists), and for mass imports from ERP to CRM.
 
@@ -41,7 +41,7 @@ Describes a search restriction using 3 properties:
 |---|---|---|
 | FieldKey | string | Describes which field should be searched (will always be one of the fields the connector exposes through `GetSearchableFields`). |
 | Operator | string | Describes which operator to use for the search. See SearchOperators below. |
-| Values | string[] | The values to search for. This array will usually only have a single value unless the operator describes otherwise (`OneOf` and `NotOneOf`)<br>These values will be encoded in the same way as normal [field values][2] elsewhere |
+| Values | string[] | The values to search for. This array will usually only have a single value unless the operator describes otherwise (`OneOf` and `NotOneOf`)<br />These values will be encoded in the same way as normal [field values][2] elsewhere |
 
 Each field type will require supporting a different set of search operators (equals, not equals, one of, contains, and so on). These operators are conveniently available as string constants in the following classes in the `SuperOffice.ErpSync.Contract` assembly:
 
@@ -63,9 +63,7 @@ In addition to the required operators, there are a couple of special values that
 | "ParentErpKey" / const string PARENT_ERPKEY | only actors with a specified parent actor key |
 | "ParentActorType" / const string PARENT_ACTORTYPE | only actors with a specified parent actor type |
 
-<!-- Referenced links -->
-[1]: search-operators.md
-[2]: ../api/field-value-formats-and-conventions.md
+[1]: ./search-operators
+[2]: ../api/field-value-formats-and-conventions
 
-<!-- Referenced images -->
-[img1]: media/image002.png
+[img1]: /media/loc/en/api/plugins/image002.png

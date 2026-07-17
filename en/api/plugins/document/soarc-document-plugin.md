@@ -14,15 +14,15 @@ redirect_from: /en/api/netserver/plugins/document/soarc-document-plugin
 
 ## Introduction
 
-Recently a partner, experimenting with creating a managed document plug-in, discovered that it was not nearly as simple to create a .net document plugin for SuperOffice, as it is with the default VB6 sample application, **SoDocPluginSoArc**. In this article, I would like to describe and demonstrate the steps necessary to get a .NET SuperOffice document plugin assembly working. Essentially, the steps required are listed in the following ten-step process.
+Recently a partner, experimenting with creating a managed document plug-in, discovered that it was not nearly as simple to create a .net document plugin for SuperOffice, as it is with the default VB6 sample application, **SoDocPluginSoArc**. In this article, I would like to describe and demonstrate the steps necessary to get a .NET SuperOffice document plugin assembly working. Essentially, the steps required are listed in the following ten-step process.
 
 1. Use *SN.exe* to create two new KeyPair files. You'll use these for creating strong name assemblies - one for the Type Library DLL, and one for the document plugin (or you can choose to use the same SNK file for both).
 2. Copy *DocumentInterface.tlb* from the ClientSDK to a known directory.
 3. Using *DocumentInterface.tlb*, use TLBIMP to generate a managed, signed assembly that contains the `IDocumentInterface` type.
 4. Reference the assembly in your document plugin project.
 5. Implement the methods of `IDocumentInterface`.
-6. Copy both the managed reference `IDocumentInterface` assembly and your document plugin to the SuperOffice directory.
-7. Place your document plugin and reference managed `IDocumentInterface` assembly, in the GAC (Drag and drop or use GACUTIL). As an alternative, skip this step and use the RegAsm /codebase switch in step eight to hard-code the assembly path (See *InstallDocPlugin.bat*). (Not recommended for deployment scenarios, only in testing).
+6. Copy both the managed reference `IDocumentInterface` assembly and your document plugin to the SuperOffice directory.
+7. Place your document plugin and reference managed `IDocumentInterface` assembly, in the GAC (Drag and drop or use GACUTIL). As an alternative, skip this step and use the RegAsm /codebase switch in step eight to hard-code the assembly path (See *InstallDocPlugin.bat*). (Not recommended for deployment scenarios, only in testing).
 8. Use REGASM to register the document plugin, as well as create a type library file for your document plugin, and register it. As an alternative to step 7, use the RegAsm /codebase switch to hard-code the assembly path (See *InstallDocPlugin.bat*).
 9. Append a Module section in the *SoLoader.ini* file (located in the Client directory, for example, *C:\\SuperOffice\\Client*) and the filename of your document plugin under the \[Files\] section.
 10. Start SuperOffice and select the document archive plugin from the **Preferences\\System** options.
@@ -33,7 +33,7 @@ Start by creating a strong name key file that will be used to sign the assembly 
 
 ![x -screenshot][img1]
 
-Next, you will need a managed version of the `IDocumentInterface` declaration to reference in the document plugin. Using the *DocumentInterface.tlb* and the keyfile you just generated, use the *TLBIMP.exe* utility to generate a managed assembly that contains the `IDocumentInterface` definition. See code below. Do not forget the /keyfile:yourKeyFile.snk switch, as both this assembly and the document plugin, require a strong name.
+Next, you will need a managed version of the `IDocumentInterface` declaration to reference in the document plugin. Using the *DocumentInterface.tlb* and the keyfile you just generated, use the *TLBIMP.exe* utility to generate a managed assembly that contains the `IDocumentInterface` definition. See code below. Do not forget the /keyfile:yourKeyFile.snk switch, as both this assembly and the document plugin, require a strong name.
 
 Now you should have a strong name key file to sign your document plugin assembly, as well as the signed assembly that contains the `IDocumentInterface` definition. Now it is time to create the solution.
 
@@ -49,13 +49,13 @@ Since this assembly is being consumed in a COM environment, it will need to be v
 
 ![x -screenshot][img4]
 
-Next, you must implement each method defined in the `IDocumentInterface` in accordance with guidelines specified in the Client SDK (Reference > Plugin Systems > Document Plugin API).
+Next, you must implement each method defined in the `IDocumentInterface` in accordance with guidelines specified in the Client SDK (Reference > Plugin Systems > Document Plugin API).
 
-The most crucial method in the interface is `GetPlugInProperty`. When SuperOffice starts, the method is called and the `pluginId` value is requested. If the value returned is not unique, an error will be displayed telling you two plugins have the same id and then the offending document plugin will not be loaded.
+The most crucial method in the interface is `GetPlugInProperty`. When SuperOffice starts, the method is called and the `pluginId` value is requested. If the value returned is not unique, an error will be displayed telling you two plugins have the same id and then the offending document plugin will not be loaded.
 
-When finished implementing the plugin, copy all referenced assemblies into the SuperOffice directory.
+When finished implementing the plugin, copy all referenced assemblies into the SuperOffice directory.
 
-Next, your document plugin assembly, as well as the managed `IDocumentInterface` assembly, needs to be placed in the **Global Assembly Cache** (GAC). Do this by either dragging and dropping your assembly into the *WINDOWS\\assembly* directory, or using the *GACUTIL.exe* utility:
+Next, your document plugin assembly, as well as the managed `IDocumentInterface` assembly, needs to be placed in the **Global Assembly Cache** (GAC). Do this by either dragging and dropping your assembly into the *WINDOWS\\assembly* directory, or using the *GACUTIL.exe* utility:
 
 ![x screenshot][img5]
 
@@ -93,26 +93,23 @@ Now it's time to test. Open SuperOffice and verify your plugin is listed in the 
 
 ## Conclusion
 
-In this article, I talked about how to create a SuperOffice Document Plugin using managed code. As you can see, creating a managed document plugin for SuperOffice is not exactly an easy task - but not impossible either.
+In this article, I talked about how to create a SuperOffice Document Plugin using managed code. As you can see, creating a managed document plugin for SuperOffice is not exactly an easy task - but not impossible either.
 
 I want to thank Jose Aparicio (Scarp) for kicking off the experimentation, and contributing the VB.NET code (See downloads above). I would also like to thank Christian Mogensen for his insight to the plugin process and hints, as well as Helene Hansen for her tireless efforts of actually stepping through the debugging process and allowing me to see the SuperOffice plugin process first hand. Good Job!
 
 ## Downloads
 
-* [InstallDocPlugin.bat.txt](../../../../assets/downloads/api/InstallDocPlugin.bat.txt)
-* [SoArcDocumentPlugin.net.zip](../../../../assets/downloads/api/soarcdocumentplugin.net.zip)
-* [SoArcDocumentPlugin.Net(7.5).zip](../../../../assets/downloads/api/soarcdocumentplugin.net-7.5.zip)
-* [DocumentPlugins-WinWeb-7.5.zip](../../../../assets/downloads/api/documentplugins-winweb-7.5.zip)
-* [SuperOffice.TestDocPlugin-v8.zip](../../../../assets/downloads/api/superoffice.testdocplugin-v8.zip)
-* [SuperOffice.TestDocPlugin-v8SR3.zip (with CheckInCheckOutLocking)](../../../../assets/downloads/api/superoffice.testdocplugin_withcheckincheckout.zip)
+* [InstallDocPlugin.bat.txt](../../../../downloads/api/installdocplugin.bat.txt)
+* [SoArcDocumentPlugin.net.zip](../../../../downloads/api/soarcdocumentplugin.net.zip)
+* [SoArcDocumentPlugin.Net(7.5).zip](../../../../downloads/api/soarcdocumentplugin.net-7.5.zip)
+* [DocumentPlugins-WinWeb-7.5.zip](../../../../downloads/api/documentplugins-winweb-7.5.zip)
+* [SuperOffice.TestDocPlugin-v8.zip](../../../../downloads/api/superoffice.testdocplugin-v8.zip)
+* [SuperOffice.TestDocPlugin-v8SR3.zip (with CheckInCheckOutLocking)](../../../../downloads/api/superoffice.testdocplugin_withcheckincheckout.zip)
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/a-createkeyfile.png
-[img2]: media/b-createmanageddocinterface.png
-[img3]: media/c-addreference.gif
-[img4]: media/d-csharpclass.png
-[img5]: media/e-addtogac.png
-[img6]: media/f-createdocplugintlb.png
-[img7]: media/g-preferences.png
+[img1]: /media/loc/en/api/plugins/a-createkeyfile.png
+[img2]: /media/loc/en/api/plugins/b-createmanageddocinterface.png
+[img3]: /media/loc/en/api/plugins/c-addreference.gif
+[img4]: /media/loc/en/api/plugins/d-csharpclass.png
+[img5]: /media/loc/en/api/plugins/e-addtogac.png
+[img6]: /media/loc/en/api/plugins/f-createdocplugintlb.png
+[img7]: /media/loc/en/api/plugins/g-preferences.png

@@ -42,7 +42,4 @@ The **Log...From** supports both class names and namespaces.
 </Diagnostics>
 ```
 
-<!-- Referenced links -->
-[1]: ../config/diagnostics.md
-
-<!-- Referenced images -->
+[1]: ../config/diagnostics

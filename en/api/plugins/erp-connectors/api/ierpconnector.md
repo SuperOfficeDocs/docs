@@ -52,6 +52,5 @@ public class MyErpSystemConnector : IErpConnector
 
 This connector would be compiled into a DLL, and then exposed to the web using [the WCF ERP sync service host][2].
 
-<!-- Referenced links -->
-[1]: erp-actor-carrier.md
-[2]: ../architecture/wcf-host.md
+[1]: ./erp-actor-carrier
+[2]: ../architecture/wcf-host

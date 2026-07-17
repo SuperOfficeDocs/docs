@@ -56,12 +56,11 @@ To support this functionality, a modular architecture that builds up providers f
 * [Base classes][4] - for providers, extenders, and joiners
 * Independent [helper classes][4]
 
-<!-- Referenced links -->
-[1]: providers.md
-[2]: extenders.md
-[3]: joiners.md
-[4]: base-and-helper-classes.md
-[5]: interfaces.md
-[6]: data-classes.md
-[7]: scenarios.md
-[8]: metadata.md
+[1]: ./providers
+[2]: ./extenders
+[3]: ./joiners
+[4]: ./base-and-helper-classes
+[5]: ./interfaces
+[6]: ./data-classes
+[7]: ./scenarios
+[8]: ./metadata

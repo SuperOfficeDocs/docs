@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "EmailFlowFormContent"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowFormContentProvider">SuperOffice.CRM.ArchiveLists.EmailFlowFormContentProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.EmailFlowFormContentProvider` inside NetServer's SODatabase assembly.
 
 Email flow form content.
 Lists all email flow form content
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"Form"|Form|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -66,5 +68,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

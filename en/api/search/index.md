@@ -12,7 +12,7 @@ redirect_from: /en/api/netserver/search
 
 # Search
 
-SuperOffice CRM offers a versatile and robust search framework to manage and retrieve data efficiently. Whether you're working with simple lists or complex selections, SuperOffice provides specialized tools and APIs to meet a wide range of business needs. Here’s an overview of the key search capabilities, including **Archive Providers**, **MDO Providers**, **Selections / Find**, and **OData**, that enable you to harness your data effectively.
+SuperOffice CRM offers a versatile and robust search framework to manage and retrieve data efficiently. Whether you're working with simple lists or complex selections, SuperOffice provides specialized tools and APIs to meet a wide range of business needs. Here's an overview of the key search capabilities, including **Archive Providers**, **MDO Providers**, **Selections / Find**, and **OData**, that enable you to harness your data effectively.
 
 ---
 
@@ -109,16 +109,14 @@ SuperOffice [supports OData][6], a widely-used standard for querying data. By le
 
 ## Summary
 
-SuperOffice’s search capabilities are designed to cater to a variety of needs—from simple dropdown lists powered by MDO Providers to intricate dynamic queries with Archive Providers and OData. By combining these tools, businesses can access the right data at the right time, improving decision-making and operational efficiency.
+SuperOffice's search capabilities are designed to cater to a variety of needs-from simple dropdown lists powered by MDO Providers to intricate dynamic queries with Archive Providers and OData. By combining these tools, businesses can access the right data at the right time, improving decision-making and operational efficiency.
 
 See the [Search Options][3] section for more details on Selections and Find operations as a user in SuperOffice CRM.
 
-<!-- Links -->
-
-[0]: ../archive-providers/index.md
-[1]: ../archive-providers/reference/index.md
-[2]: find-selection/index.md
-[3]: ../../search-options/learn/index.md
-[4]: ../mdo-providers/index.md
-[5]: ../lists/index.md
-[6]: ../search/odata/index.md
+[0]: ../archive-providers/index
+[1]: ../archive-providers/reference/index
+[2]: ./find-selection/index
+[3]: ../../search-options/learn/index
+[4]: ../mdo-providers/index
+[5]: ../lists/index
+[6]: ../search/odata/index

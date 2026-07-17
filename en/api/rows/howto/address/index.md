@@ -16,5 +16,4 @@ redirect_from:
 
 * [Update address with sentry][1]
 
-<!-- Referenced links -->
-[1]: update-address.md
+[1]: ./update-address

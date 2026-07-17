@@ -2,7 +2,7 @@
 uid: formratingdice
 title: formratingdice
 keywords: mdoprovider mdo provider formratingdice
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "formratingdice" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.RatingDiceProvider">RatingDiceProvider</see> class.
+Implemented by the `RatingDiceProvider` class.
 The name of the MDO list is 'formratingdice'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("formratingdice", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -48,7 +43,6 @@ foreach (var item in listProvider.RootItems) {
 |3|Dice 4|||
 |4|Dice 5|||
 |5|Dice 6|||
-
 
 ## Related MDO Lists
 

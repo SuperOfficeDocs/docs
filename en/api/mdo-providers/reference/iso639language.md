@@ -2,7 +2,7 @@
 uid: iso639language
 title: iso639language
 keywords: mdoprovider mdo provider iso639language
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "iso639language" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.Iso6391LanguageProvider">Iso6391LanguageProvider</see> class.
+Implemented by the `Iso6391LanguageProvider` class.
 The name of the MDO list is 'iso639language'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("iso639language", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +58,6 @@ foreach (var item in listProvider.RootItems) {
 |19|Bengali||bn|
 |20|Bihari languages||bh|
 |21|Bislama||bi|
-
 
 ## Related MDO Lists
 

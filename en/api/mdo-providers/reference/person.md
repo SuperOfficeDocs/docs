@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "person" MDO List
+
 List of persons from the Archive provider
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PersonListProvider">PersonListProvider</see> class.
+Implemented by the `PersonListProvider` class.
 The name of the MDO list is 'person'.
 
 ## Additional Attributes
@@ -28,10 +27,6 @@ The name of the MDO list is 'person'.
 |Restrict results to contacts without company.| withoutCompany|False|
 |Include has_email in extrainfo| includeHasEmail|False|
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -43,10 +38,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("person", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -76,7 +72,6 @@ foreach (var item in listProvider.RootItems) {
 |22|Arjan Abelsen||associate_id=90&contact_id=4|
 |139|Ärle Älström||contact_id=61|
 |19|Arne Arnesen||contact_id=3|
-
 
 ## Related MDO Lists
 

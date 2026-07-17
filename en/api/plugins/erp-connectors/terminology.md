@@ -16,7 +16,7 @@ redirect_from: /en/api/netserver/plugins/erp-connectors/terminology
 | Erp Sync | The synchronization application and a generic prefix for all of its components |
 | Sync Connector (or just Connector) | An installed and running instance of a piece of code implementing and exposing the `IErpConnector` interface. |
 | Sync Connection (or just Connection) | A given combination of a Sync Connector and a set of parameters (as defined by the connector) that specifies which ERP instance/client the Connector will retrieve and save data to. Will typically represent an ERP Client/ERP Company |
-| ERP Actor | Any actor that can be synced to SuperOffice from a Sync Connection<br>For example, Customers, suppliers, persons |
+| ERP Actor | Any actor that can be synced to SuperOffice from a Sync Connection<br />For example, Customers, suppliers, persons |
 | CRM Entity | The SuperOffice equivalent of an ERP Actor (any entity that can be synced to a Sync Connection, such as contact, person, or project) |
 
 ## Connect*or* vs. connect*ion*
@@ -35,5 +35,4 @@ A **connection** is a connector + config information
 * Authentication
 * Other config info that might be needed to connect
 
-<!-- Referenced images -->
-[img1]: media/components.png
+[img1]: /media/loc/en/api/plugins/components.png

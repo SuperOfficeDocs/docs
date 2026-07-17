@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "QuoteLineShadowDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
 QuoteLine shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"|Dynamic quoteline|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -123,6 +125,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/icon|listAny|Sale - Category: Displays the icon for an activity type| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/date|date|Sale - Date: Displays start date of a follow-up / sale date of a sale| x |
@@ -227,6 +230,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/person/personCategory|listAny|Sale - Category| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personCategoryGroup|listAny|Sale - Category group| x |
@@ -276,8 +280,8 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/person/personAddress/state|string|Sale - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/person/personAddress/wgs84latitude|decimal|Sale - Contact address - Latitude: Latitude| x |
 |alternative/version/quote/sale/person/personAddress/wgs84longitude|decimal|Sale - Contact address - Longitude: Longitude| x |
-|alternative/version/quote/sale/person/personAddress/formattedAddress| *None* |Sale - Contact address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/person/personAddress/formattedMultiLineAddress| *None* |Sale - Contact address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/person/personAddress/formattedAddress| *None* |Sale - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/person/personAddress/formattedMultiLineAddress| *None* |Sale - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/person/restrictionAddress/addressId|int|Sale - Search address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/person/restrictionAddress/line1|string|Sale - Search address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/person/restrictionAddress/line2|string|Sale - Search address - Address 2: Second line of the address| x |
@@ -288,8 +292,8 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/person/restrictionAddress/state|string|Sale - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/person/restrictionAddress/wgs84latitude|decimal|Sale - Search address - Latitude: Latitude| x |
 |alternative/version/quote/sale/person/restrictionAddress/wgs84longitude|decimal|Sale - Search address - Longitude: Longitude| x |
-|alternative/version/quote/sale/person/restrictionAddress/formattedAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/person/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/person/restrictionAddress/formattedAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/person/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/person/personInterestIds|listInterest|Sale - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |alternative/version/quote/sale/person/personUdef/SuperOffice:1|string|Sale - contactshorttext: tooltipshorttext| x |
 |alternative/version/quote/sale/person/personUdef/SuperOffice:2|string|Sale - contactlongtext: tooltiplongtext| x |
@@ -331,6 +335,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/person/personAssociate/middleName|string|Sale - Middle Name: Displays the contact's middle name.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personAssociate/fullName|string|Sale - Full name: Displays full name of user (first, middle, last - according to settings)| x |
@@ -435,6 +440,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/contact/phone/formattedNumber|string|Sale - Phone: Displays phone number|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/activeErpLinks|bool|Sale - ERP connected: Is there an active ERP Sync?| x |
@@ -465,8 +471,8 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/contact/postAddress/state|string|Sale - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/postAddress/wgs84latitude|decimal|Sale - Postal address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/postAddress/wgs84longitude|decimal|Sale - Postal address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/postAddress/formattedAddress| *None* |Sale - Postal address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/postAddress/formattedMultiLineAddress| *None* |Sale - Postal address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/postAddress/formattedAddress| *None* |Sale - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/postAddress/formattedMultiLineAddress| *None* |Sale - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/streetAddress/addressId|int|Sale - Street address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/contact/streetAddress/line1|string|Sale - Street address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/contact/streetAddress/line2|string|Sale - Street address - Address 2: Second line of the address| x |
@@ -477,8 +483,8 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/contact/streetAddress/state|string|Sale - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/streetAddress/wgs84latitude|decimal|Sale - Street address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/streetAddress/wgs84longitude|decimal|Sale - Street address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/streetAddress/formattedAddress| *None* |Sale - Street address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/streetAddress/formattedMultiLineAddress| *None* |Sale - Street address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/streetAddress/formattedAddress| *None* |Sale - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/streetAddress/formattedMultiLineAddress| *None* |Sale - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/restrictionAddress/addressId|int|Sale - Search address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/contact/restrictionAddress/line1|string|Sale - Search address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/contact/restrictionAddress/line2|string|Sale - Search address - Address 2: Second line of the address| x |
@@ -489,8 +495,8 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/contact/restrictionAddress/state|string|Sale - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/restrictionAddress/wgs84latitude|decimal|Sale - Search address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/restrictionAddress/wgs84longitude|decimal|Sale - Search address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/restrictionAddress/formattedAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/restrictionAddress/formattedAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/url/URLAddress|string|Sale - URL| x |
 |alternative/version/quote/sale/contact/url/URLDescription|string|Sale - Description| x |
 |alternative/version/quote/sale/contact/contactAssociate/firstName|string|Sale - First name: Displays the contact's first name| x |
@@ -539,6 +545,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:10|string|Sale - page1marketingonly| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:11|string|Sale - page1adminonly| x |
@@ -643,6 +650,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/sale/project/hasInfoText|bool|Sale - Project - Info: Displays an icon indicating if the project has a description text. The text itself will be displayed in a tooltip.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/icon| *None* |Sale - Project - Category: Displays the icon for an activity type| x |
@@ -747,6 +755,7 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 |alternative/version/quote/connection/connectorName|string|ERP connection - Quote Connector name: Name of Quote Connector module. Defined by the developer of the module.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/extraData|string|ERP connection - Extra data: XML encoded data.| x |
@@ -784,5 +793,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

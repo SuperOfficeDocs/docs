@@ -47,12 +47,9 @@ All available packages including their public name, install name, description, a
 * [CRM Online WinClient][5]
 * [CRM Online Database Mirroring][6]
 
-<!-- Referenced links -->
-[1]: netserver-core.md
-[2]: netserver-services.md
-[3]: crm-web.md
-[4]: crm-online-core.md
-[5]: crm-online-winclient.md
-[6]: crm-online-mirroring.md
-
-<!-- Referenced images -->
+[1]: ./netserver-core
+[2]: ./netserver-services
+[3]: ./crm-web
+[4]: ./crm-online-core
+[5]: ./crm-online-winclient
+[6]: ./crm-online-mirroring

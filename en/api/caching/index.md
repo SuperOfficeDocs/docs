@@ -46,14 +46,13 @@ Here's how user preferences are handled *without* caching:
 * [Set preferences - services][12]
 * [Set preferences - data layer][14]
 
-<!-- Referenced links -->
-[1]: cached-tables.md
-[2]: superoffice-crm-security.md
-[3]: superoffice-crm-cache.md
-[4]: associate-cache.md
-[5]: category-cache.md
-[6]: ../../admin/user-preferences/index.md
-[11]: ../web-services/howto/user-preferences/get-preferences-preferenceagent.md
-[12]: ../web-services/howto/user-preferences/set-preferences-preferenceagent.md
-[13]: ../entities/howto/user-preferences/get-preferences-sopreference.md
-[14]: ../entities/howto/user-preferences/set-preferences-sopreference.md
+[1]: ./cached-tables
+[2]: ./superoffice-crm-security
+[3]: ./superoffice-crm-cache
+[4]: ./associate-cache
+[5]: ./category-cache
+[6]: ../../admin/user-preferences/index
+[11]: ../web-services/howto/user-preferences/get-preferences-preferenceagent
+[12]: ../web-services/howto/user-preferences/set-preferences-preferenceagent
+[13]: ../entities/howto/user-preferences/get-preferences-sopreference
+[14]: ../entities/howto/user-preferences/set-preferences-sopreference
