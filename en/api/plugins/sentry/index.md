@@ -8,6 +8,7 @@ keywords:
 content_type: concept
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/sentry/index
+hidden: true
 ---
 
 # Sentry plugins

@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/row/index
   - /en/api/netserver/rows/howto/contact/index
+hidden: true
 ---
 
 # Contact - row

@@ -8,6 +8,7 @@ content_type: concept
 deployment: online, onsite
 platform: web, win
 redirect_from: /en/api/netserver/rows/customsearch
+hidden: true
 ---
 
 # CustomSearch queries

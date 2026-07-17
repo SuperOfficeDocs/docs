@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/sql/get-interests-sql
   - /en/api/netserver/sql/howto/company/get-interests-sql
+hidden: true
 ---
 
 # Get interests for contact

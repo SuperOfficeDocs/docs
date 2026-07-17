@@ -8,6 +8,7 @@ content_type: reference
 category: api
 topic: mass operations
 redirect_from: /en/api/netserver/bulk-operations/mass-operations/protected-tables
+hidden: true
 ---
 
 # Protected tables

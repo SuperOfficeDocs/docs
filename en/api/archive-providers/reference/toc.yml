@@ -51,6 +51,12 @@ items:
   href: appointmentstaticselection.md
 - name: AppointmentStaticSelectionV2
   href: appointmentstaticselectionv2.md
+- name: AssignmentCompanyNotification
+  href: assignmentcompanynotification.md
+- name: AssignmentNotification
+  href: assignmentnotification.md
+- name: AssignmentPersonNotification
+  href: assignmentpersonnotification.md
 - name: AssignResponseInvitation
   href: assignresponseinvitation.md
 - name: AssociateProjectDynamicSelection
@@ -149,6 +155,8 @@ items:
   href: customobjectdynamicselectionsinglecriteriagroup.md
 - name: CustomObjectDynamicSelectionV2
   href: customobjectdynamicselectionv2.md
+- name: customobjectfavourites
+  href: customobjectfavourites.md
 - name: CustomObjectSelectionCombinedV2
   href: customobjectselectioncombinedv2.md
 - name: CustomObjectSelectionV2
@@ -363,8 +371,12 @@ items:
   href: mailfolder.md
 - name: Mailingfavourites
   href: mailingfavourites.md
+- name: MailingFolders
+  href: mailingfolders.md
 - name: Mailings
   href: mailings.md
+- name: MailingsAndFolders
+  href: mailingsandfolders.md
 - name: MailingsDynamicSelectionSingleCriteriaGroup
   href: mailingsdynamicselectionsinglecriteriagroup.md
 - name: MailingsDynamicSelectionV2
@@ -391,6 +403,8 @@ items:
   href: modulelicense.md
 - name: NewCategoryMembers
   href: newcategorymembers.md
+- name: NewsFeedItem
+  href: newsfeeditem.md
 - name: Notification
   href: notification.md
 - name: Numbers
@@ -475,6 +489,8 @@ items:
   href: quoteconnector.md
 - name: QuoteLine
   href: quoteline.md
+- name: QuoteLineConfiguration
+  href: quotelineconfiguration.md
 - name: QuoteLineDynamicSelection
   href: quotelinedynamicselection.md
 - name: QuoteLineDynamicSelectionSingleCriteriaGroup
@@ -513,6 +529,8 @@ items:
   href: quotelinestaticselectionv2.md
 - name: QuoteVersionAttachment
   href: quoteversionattachment.md
+- name: recipientfavourites
+  href: recipientfavourites.md
 - name: RecycleContact
   href: recyclecontact.md
 - name: RecyclePerson
@@ -521,6 +539,8 @@ items:
   href: recycleticket.md
 - name: RejectedInvitation
   href: rejectedinvitation.md
+- name: RelatedTickets
+  href: relatedtickets.md
 - name: Relation
   href: relation.md
 - name: ReportLabelLayout
@@ -721,4 +741,5 @@ items:
   href: userpreferencetable.md
 - name: WebAppUsage
   href: webappusage.md
-
+- name: Webhook
+  href: webhook.md

@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/entity/create-invitation-entity
   - /en/api/netserver/entities/howto/diary/create-invitation-entity
+hidden: true
 ---
 
 # How to create an invitation (data layer)

@@ -5,6 +5,7 @@ description: Sentry
 author: SuperOffice Product and Engineering
 keywords: sentry, security
 content_type: concept
+hidden: true
 ---
 
 # Sentry

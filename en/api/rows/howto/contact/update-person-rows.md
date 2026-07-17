@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/row/update-person-rows
   - /en/api/netserver/rows/howto/contact/update-person-rows
+hidden: true
 ---
 
 # Update a person with a new name, address, position using rows

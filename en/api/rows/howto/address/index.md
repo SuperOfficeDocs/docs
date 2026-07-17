@@ -10,6 +10,7 @@ content_type: howto
 redirect_from:
   - /en/globalization-and-localization/address/howto/rows/index
   - /en/api/netserver/rows/howto/address/index
+hidden: true
 ---
 
 # Address - rows

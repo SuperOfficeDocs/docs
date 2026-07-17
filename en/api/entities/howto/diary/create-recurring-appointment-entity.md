@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/entity/create-recurring-appointment-entity
   - /en/api/netserver/entities/howto/diary/create-recurring-appointment-entity
+hidden: true
 ---
 
 # How to create a recurring appointment (data layer)

@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/diary/howto/entity/create-apt-entity
   - /en/api/netserver/entities/howto/diary/create-apt-entity
+hidden: true
 ---
 
 # Create an Appointment entity

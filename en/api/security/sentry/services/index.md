@@ -7,6 +7,7 @@ date:
 keywords: sentry
 content_type: concept
 area: api-services
+hidden: true
 ---
 
 # Sentry in services

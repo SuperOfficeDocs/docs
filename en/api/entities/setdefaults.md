@@ -8,6 +8,7 @@ keywords: entity,row
 content_type: concept
 deployment: onsite
 redirect_from: /en/api/netserver/entities/setdefaults
+hidden: true
 ---
 
 # SetDefaults method

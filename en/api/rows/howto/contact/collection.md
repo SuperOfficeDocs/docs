@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/row/collection
   - /en/api/netserver/rows/howto/contact/collection
+hidden: true
 ---
 
 # Collection

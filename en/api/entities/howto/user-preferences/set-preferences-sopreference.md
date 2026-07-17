@@ -12,6 +12,7 @@ category: settings
 topic: user preferences
 language: en
 redirect_from: /en/admin/user-preferences/howto/set-preferences-sopreference
+hidden: true
 ---
 
 # SetPreference

@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/row/create-contact-rows
   - /en/api/netserver/rows/howto/company/create-contact-rows
+hidden: true
 ---
 
 # Create a contact through row collection (Rows)

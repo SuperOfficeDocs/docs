@@ -10,6 +10,7 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/udef-on-contact
   - /en/api/netserver/entities/howto/custom-objects/udef-on-contact
+hidden: true
 ---
 
 # Udef on contact

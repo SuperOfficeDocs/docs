@@ -9,6 +9,7 @@ content_type: reference
 redirect_from:
   - /en/contact/howto/entity/index
   - /en/api/netserver/entities/howto/contact/index
+hidden: true
 ---
 
 # Contact - entity

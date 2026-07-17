@@ -223,12 +223,7 @@ items:
               - name: Delete a list item
                 href: lists/services/how-to/delete-list-item.md
       - name: List rows
-        href: lists/row/index.md
-        items:
-          - name: How-to
-            items:
-              - name: Add list items
-                href: lists/row/how-to/add-list-item.md
+        href: lists/row/how-to/add-list-item.md
       - name: NetServer lists
         href: lists/entity/index.md
         items:
@@ -427,6 +422,9 @@ items:
                 href: web-services/howto/user-preferences/get-preferences-preferenceagent.md
               - name: Set preferences
                 href: web-services/howto/user-preferences/set-preferences-preferenceagent.md
+  - name: Web Extensions
+    href: web-extensions/toc.yml
+    topicHref: web-extensions/index.md
   - name: Entities
     href: entities/index.md
     items:
@@ -718,7 +716,7 @@ items:
     items:
       - name: Bulk Update
         href: bulk-operations/bulk-update/index.md
-        items: # These items are navigation headers
+        items:
           - name: How to use bulk update
             href: bulk-operations/bulk-update/using-bulk-update.md
           - name: Field value info

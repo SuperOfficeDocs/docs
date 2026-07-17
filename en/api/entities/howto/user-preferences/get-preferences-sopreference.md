@@ -12,6 +12,7 @@ category: settings
 topic: user preferences
 language: en
 redirect_from: /en/admin/user-preferences/howto/get-preferences-sopreference
+hidden: true
 ---
 
 # Get the current value of a given preference

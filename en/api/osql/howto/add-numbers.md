@@ -7,6 +7,7 @@ date: 11.05.2016
 keywords:
 content_type: howto
 redirect_from: /en/api/netserver/osql/howto/add-numbers
+hidden: true
 ---
 
 # Adding numbers

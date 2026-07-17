@@ -9,6 +9,7 @@ content_type: concept
 deployment: online, onsite
 platform: web, win
 redirect_from: /en/api/netserver/osql/index
+hidden: true
 ---
 
 # SuperOffice Objectified SQL (OSQL)

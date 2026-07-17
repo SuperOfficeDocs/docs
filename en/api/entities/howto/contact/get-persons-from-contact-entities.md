@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/entity/get-persons-from-contact-entities
   - /en/api/netserver/entities/howto/contact/get-persons-from-contact-entities
+hidden: true
 ---
 
 # Retrieve a list of people using entities

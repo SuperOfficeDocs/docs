@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/contact/howto/sql/update-person-sql
   - /en/api/netserver/sql/howto/contact/update-person-sql
+hidden: true
 ---
 
 # Update a person

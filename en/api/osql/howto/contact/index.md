@@ -9,6 +9,7 @@ content_type: reference
 redirect_from:
   - /en/contact/howto/osql/index
   - /en/api/netserver/osql/howto/contact/index
+hidden: true
 ---
 
 # Contact - OSQL

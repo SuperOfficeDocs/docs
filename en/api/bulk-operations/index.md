@@ -5,6 +5,7 @@ author: AnthonyYates
 date: 02.29.2021
 keywords: data-access, bulk-update, mass-operations
 redirect_from: /en/api/netserver/bulk-operations/index
+hidden: true
 ---
 
 # Bulk Operations

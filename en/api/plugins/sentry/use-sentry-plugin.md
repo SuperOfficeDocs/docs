@@ -8,6 +8,7 @@ keywords: Sentry, plug-in, plugin, security, TableRight, N
 content_type: howto
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/sentry/use-sentry-plugin
+hidden: true
 ---
 
 # Using the basic Sentry plugin

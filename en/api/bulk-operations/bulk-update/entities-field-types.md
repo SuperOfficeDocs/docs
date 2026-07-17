@@ -11,6 +11,7 @@ topic: bulk update
 deployment: online
 platform: web
 redirect_from: /en/api/netserver/bulk-operations/bulk-update/entities-field-types
+hidden: true
 ---
 
 # Entities and field types

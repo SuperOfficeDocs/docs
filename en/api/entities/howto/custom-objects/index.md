@@ -11,6 +11,7 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/index
   - /en/api/netserver/entities/howto/custom-objects/index
+hidden: true
 ---
 
 # Udef - entity layer

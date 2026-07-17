@@ -9,6 +9,7 @@ content_type: reference
 redirect_from:
   - /en/diary/howto/sql/index
   - /en/api/netserver/sql/howto/diary/index
+hidden: true
 ---
 
 # Diary - raw SQL

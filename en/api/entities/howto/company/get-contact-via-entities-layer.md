@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/company/howto/entity/get-contact-via-entities-layer
   - /en/api/netserver/entities/howto/company/get-contact-via-entities-layer
+hidden: true
 ---
 
 # Get a contact through entities layer

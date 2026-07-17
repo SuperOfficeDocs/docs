@@ -9,6 +9,7 @@ content_type: howto
 redirect_from:
   - /en/project/howto/sql/project-guide
   - /en/api/netserver/sql/howto/project/project-guide
+hidden: true
 ---
 
 # Project guides

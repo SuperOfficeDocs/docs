@@ -9,6 +9,7 @@ content_type: concept
 category: list
 area: api-services
 redirect_from: /en/api/netserver/lists/services/listagent/index
+hidden: true
 ---
 
 # Lists
