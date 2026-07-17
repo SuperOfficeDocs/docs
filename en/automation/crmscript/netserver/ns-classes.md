@@ -143,7 +143,6 @@ NSAssociate associate;
 associate.SetAssociateId(associateId.toInteger());
 doc.SetAssociate(associate);
 
-
 if (personId != "") {
 NSPerson person;
 person.SetPersonId(personId.toInteger());
@@ -171,6 +170,5 @@ When working with NetServer classes in CRMScript, it is important to use the CRM
 
 Also, when creating a new entity, set the ID value directly on each child entity instead of using an agent fetch a new entity instance. This reduces the number of requests to the application server, and makes your code more efficient.
 
-<!-- Referenced images -->
-[img1]: ./media/create-default-documententity-wrong.png
-[img2]: ./media/create-default-documententity-correct.png
+[img1]: /media/loc/en/automation/create-default-documententity-wrong.png
+[img2]: /media/loc/en/automation/create-default-documententity-correct.png

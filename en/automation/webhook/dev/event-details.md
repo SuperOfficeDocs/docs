@@ -47,31 +47,30 @@ Each entity raises an event when created, changed, or deleted. Therefore, all po
 | contact.created | contact.changed | contact.deleted | contact.softdeleted |
 | chatsession.created | chatsession.changed | | chatsession.message |
 | document.created | document.changed | document.deleted | document.edited (v8.3 R04) |
-| person.created | person.changed | person.deleted | person.consented (v8.3 R04)<br>person.unconsented (v8.3 R04) |
+| person.created | person.changed | person.deleted | person.consented (v8.3 R04)<br />person.unconsented (v8.3 R04) |
 | project.created | project.changed | project.deleted | |
 | projectmember.created | projectmember.changed | projectmember.deleted | |
-| | | | quote.approved<br>quote.rejected<br>quote.sent<br>quote.ordered |
+| | | | quote.approved<br />quote.rejected<br />quote.sent<br />quote.ordered |
 | relation.created | relation.changed | relation.deleted | |
-| sale.created | sale.changed | sale.deleted | sale.completed (v8.3 R04)<br>sale.lost (v8.3 R04)<br>sale.sold (v8.3 R04) |
+| sale.created | sale.changed | sale.deleted | sale.completed (v8.3 R04)<br />sale.lost (v8.3 R04)<br />sale.sold (v8.3 R04) |
 | salestakeholder.created | salestakeholder.changed | salestakeholder.deleted | |
-| | | | webhook.started<br>webhook.stopped<br>webhook.errors |
+| | | | webhook.started<br />webhook.stopped<br />webhook.errors |
 | ticket.created (v8.4) | ticket.changed (v8.4) | | |
 
-<!-- Referenced links -->
-[1]: ../reference/activity-events.md
-[2]: ../reference/associate-events.md
-[3]: ../reference/contact-events.md
-[4]: ../reference/person-events.md
-[5]: ../reference/project-events.md
-[6]: ../reference/project-member-events.md
-[7]: ../reference/sale-events.md
-[8]: ../reference/sale-stakeholder-events.md
-[9]: ../reference/chat-events.md
-[11]: ../reference/document-events.md
-[12]: ../reference/quote-events.md
-[13]: ../reference/test-event.md
-[14]: ../reference/ticket-events.md
-[15]: ../reference/state-events.md
-[16]: ../reference/relation-events.md
-[17]: ../reference/list-events.md
-[18]: ../reference/extratable-events.md
+[1]: ../reference/activity-events
+[2]: ../reference/associate-events
+[3]: ../reference/contact-events
+[4]: ../reference/person-events
+[5]: ../reference/project-events
+[6]: ../reference/project-member-events
+[7]: ../reference/sale-events
+[8]: ../reference/sale-stakeholder-events
+[9]: ../reference/chat-events
+[11]: ../reference/document-events
+[12]: ../reference/quote-events
+[13]: ../reference/test-event
+[14]: ../reference/ticket-events
+[15]: ../reference/state-events
+[16]: ../reference/relation-events
+[17]: ../reference/list-events
+[18]: ../reference/extratable-events

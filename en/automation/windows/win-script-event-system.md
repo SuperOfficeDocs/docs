@@ -23,7 +23,7 @@ Sub OnCurrentContactBeforeSave
   If result = 3 Then
     Call Err.Raise(vbObjectError + 10, "", "")
     somessagebox "Should never get here"
-  End If 
+  End If
 End Sub
 ```
 

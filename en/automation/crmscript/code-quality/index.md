@@ -16,7 +16,6 @@ A guide to creating high-quality scripts.
 * [Best practices][2]
 * [Intellisense][3]
 
-<!-- Referenced links -->
-[1]: coding-conventions.md
-[2]: best-practices.md
-[3]: intellisense.md
+[1]: ./coding-conventions
+[2]: ./best-practices
+[3]: ./intellisense

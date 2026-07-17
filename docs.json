@@ -18337,6 +18337,10 @@
       "destination": "/integrations/zapier/howto/index"
     },
     {
+      "source": "/en/automation/zapier/howto/find-company",
+      "destination": "/integrations/zapier/howto/actions/search-company"
+    },
+    {
       "source": "/integrations/zapier/howto/find-company",
       "destination": "/integrations/zapier/howto/actions/search-company"
     },
@@ -21531,6 +21535,434 @@
     {
       "source": "/en/api/reference/soap/Services88/*",
       "destination": "/downloads/api/wsdl.zip"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/debug",
+      "destination": "/en/automation/crmscript/debugging/built-in-debugger"
+    },
+    {
+      "source": "/da/automation/crmscript/learn/debug",
+      "destination": "/en/automation/crmscript/debugging/built-in-debugger"
+    },
+    {
+      "source": "/de/automation/crmscript/learn/debug",
+      "destination": "/en/automation/crmscript/debugging/built-in-debugger"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/debug",
+      "destination": "/en/automation/crmscript/debugging/built-in-debugger"
+    },
+    {
+      "source": "/no/automation/crmscript/learn/debug",
+      "destination": "/en/automation/crmscript/debugging/built-in-debugger"
+    },
+    {
+      "source": "/sv/automation/crmscript/learn/debug",
+      "destination": "/en/automation/crmscript/debugging/built-in-debugger"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/tracing",
+      "destination": "/en/automation/crmscript/debugging/using-trace"
+    },
+    {
+      "source": "/da/automation/crmscript/learn/tracing",
+      "destination": "/en/automation/crmscript/debugging/using-trace"
+    },
+    {
+      "source": "/de/automation/crmscript/learn/tracing",
+      "destination": "/en/automation/crmscript/debugging/using-trace"
+    },
+    {
+      "source": "/nl/automation/crmscript/learn/tracing",
+      "destination": "/en/automation/crmscript/debugging/using-trace"
+    },
+    {
+      "source": "/no/automation/crmscript/learn/tracing",
+      "destination": "/en/automation/crmscript/debugging/using-trace"
+    },
+    {
+      "source": "/sv/automation/crmscript/learn/tracing",
+      "destination": "/en/automation/crmscript/debugging/using-trace"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/crmscript/get-address",
+      "destination": "/en/automation/crmscript/howto/address/get-address"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/address/index"
+    },
+    {
+      "source": "/en/globalization-and-localization/address/howto/crmscript/set-address",
+      "destination": "/en/automation/crmscript/howto/address/set-address"
+    },
+    {
+      "source": "/en/company/howto/crmscript/create-company",
+      "destination": "/en/automation/crmscript/howto/company/create-company"
+    },
+    {
+      "source": "/en/company/howto/crmscript/get-activities",
+      "destination": "/en/automation/crmscript/howto/company/get-activities"
+    },
+    {
+      "source": "/en/company/howto/crmscript/get-company",
+      "destination": "/en/automation/crmscript/howto/company/get-company"
+    },
+    {
+      "source": "/en/company/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/company/index"
+    },
+    {
+      "source": "/en/contact/howto/crmscript/create-customer",
+      "destination": "/en/automation/crmscript/howto/contact/create-customer"
+    },
+    {
+      "source": "/en/contact/howto/crmscript/create-user",
+      "destination": "/en/automation/crmscript/howto/contact/create-user"
+    },
+    {
+      "source": "/en/contact/howto/crmscript/find-customer",
+      "destination": "/en/automation/crmscript/howto/contact/find-customer"
+    },
+    {
+      "source": "/en/contact/howto/crmscript/get-customer",
+      "destination": "/en/automation/crmscript/howto/contact/get-customer"
+    },
+    {
+      "source": "/en/contact/howto/crmscript/get-interests",
+      "destination": "/en/automation/crmscript/howto/contact/get-interests"
+    },
+    {
+      "source": "/en/contact/howto/crmscript/get-user",
+      "destination": "/en/automation/crmscript/howto/contact/get-user"
+    },
+    {
+      "source": "/en/contact/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/contact/index"
+    },
+    {
+      "source": "/en/custom-objects/extra-field/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/custom-objects/extra-field"
+    },
+    {
+      "source": "/en/custom-objects/extra-table/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/custom-objects/extra-table"
+    },
+    {
+      "source": "/en/custom-objects/extra-field/howto/crmscript/sort-extra-field-values",
+      "destination": "/en/automation/crmscript/howto/custom-objects/sort-extra-field-values"
+    },
+    {
+      "source": "/en/custom-objects/udef/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/custom-objects/udef"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/accept-invitation",
+      "destination": "/en/automation/crmscript/howto/diary/accept-invitation"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/book-resource",
+      "destination": "/en/automation/crmscript/howto/diary/book-resource"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/create-appointment",
+      "destination": "/en/automation/crmscript/howto/diary/create-appointment"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/create-invitation",
+      "destination": "/en/automation/crmscript/howto/diary/create-invitation"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/create-recurring-appointment",
+      "destination": "/en/automation/crmscript/howto/diary/create-recurring-appointment"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/get-appointment",
+      "destination": "/en/automation/crmscript/howto/diary/get-appointment"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/get-appointments-in-series",
+      "destination": "/en/automation/crmscript/howto/diary/get-appointments-in-series"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/get-recurrence-info",
+      "destination": "/en/automation/crmscript/howto/diary/get-recurrence-info"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/diary/index"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/plan-outgoing-call",
+      "destination": "/en/automation/crmscript/howto/diary/plan-outgoing-call"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/register-incoming-call",
+      "destination": "/en/automation/crmscript/howto/diary/register-incoming-call"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/stop-recurrence",
+      "destination": "/en/automation/crmscript/howto/diary/stop-recurrence"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/task",
+      "destination": "/en/automation/crmscript/howto/diary/task"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/track-responses",
+      "destination": "/en/automation/crmscript/howto/diary/track-responses"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/update-appointment",
+      "destination": "/en/automation/crmscript/howto/diary/update-appointment"
+    },
+    {
+      "source": "/en/diary/howto/crmscript/update-recurrence",
+      "destination": "/en/automation/crmscript/howto/diary/update-recurrence"
+    },
+    {
+      "source": "/en/document/howto/crmscript/doc-files",
+      "destination": "/en/automation/crmscript/howto/document/file"
+    },
+    {
+      "source": "/en/document/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/document/index"
+    },
+    {
+      "source": "/en/document/howto/crmscript/doc-properties",
+      "destination": "/en/automation/crmscript/howto/document/properties"
+    },
+    {
+      "source": "/en/document/howto/crmscript/doc-templates",
+      "destination": "/en/automation/crmscript/howto/document/templates"
+    },
+    {
+      "source": "/en/automation/crmscript/howto/marketing/index",
+      "destination": "/en/automation/crmscript/howto/marketing/forms"
+    },
+    {
+      "source": "/en/project/howto/crmscript/create",
+      "destination": "/en/automation/crmscript/howto/project/create"
+    },
+    {
+      "source": "/en/project/howto/crmscript/get",
+      "destination": "/en/automation/crmscript/howto/project/get"
+    },
+    {
+      "source": "/en/project/howto/crmscript/guides",
+      "destination": "/en/automation/crmscript/howto/project/guides"
+    },
+    {
+      "source": "/en/project/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/project/index"
+    },
+    {
+      "source": "/en/project/howto/crmscript/members",
+      "destination": "/en/automation/crmscript/howto/project/members"
+    },
+    {
+      "source": "/en/project/howto/crmscript/samples",
+      "destination": "/en/automation/crmscript/howto/project/samples"
+    },
+    {
+      "source": "/en/project/howto/crmscript/update",
+      "destination": "/en/automation/crmscript/howto/project/update"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/add-alternative",
+      "destination": "/en/automation/crmscript/howto/quote/add-alternative"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/add-quote-line",
+      "destination": "/en/automation/crmscript/howto/quote/add-quote-line"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/create",
+      "destination": "/en/automation/crmscript/howto/quote/create"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/get",
+      "destination": "/en/automation/crmscript/howto/quote/get"
+    },
+    {
+      "source": "/en/quote/howto/index",
+      "destination": "/en/automation/crmscript/howto/quote/index"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/quote/index"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/place-order",
+      "destination": "/en/automation/crmscript/howto/quote/place-order"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/price-list",
+      "destination": "/en/automation/crmscript/howto/quote/price-list"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/products",
+      "destination": "/en/automation/crmscript/howto/quote/products"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/quote-document",
+      "destination": "/en/automation/crmscript/howto/quote/quote-document"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/samples",
+      "destination": "/en/automation/crmscript/howto/quote/samples"
+    },
+    {
+      "source": "/en/quote/howto/crmscript/update",
+      "destination": "/en/automation/crmscript/howto/quote/update"
+    },
+    {
+      "source": "/en/request/howto/crmscript/accept",
+      "destination": "/en/automation/crmscript/howto/request/accept"
+    },
+    {
+      "source": "/en/request/howto/crmscript/add-message",
+      "destination": "/en/automation/crmscript/howto/request/add-message"
+    },
+    {
+      "source": "/en/request/howto/crmscript/create",
+      "destination": "/en/automation/crmscript/howto/request/create"
+    },
+    {
+      "source": "/en/request/howto/crmscript/delegate",
+      "destination": "/en/automation/crmscript/howto/request/delegate"
+    },
+    {
+      "source": "/en/request/howto/crmscript/escalate",
+      "destination": "/en/automation/crmscript/howto/request/escalate"
+    },
+    {
+      "source": "/en/request/howto/crmscript/get-message-info",
+      "destination": "/en/automation/crmscript/howto/request/get-message-info"
+    },
+    {
+      "source": "/en/request/howto/crmscript/get-ticket-info",
+      "destination": "/en/automation/crmscript/howto/request/get-ticket-info"
+    },
+    {
+      "source": "/en/request/howto/index",
+      "destination": "/en/automation/crmscript/howto/request/index"
+    },
+    {
+      "source": "/en/request/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/request/index"
+    },
+    {
+      "source": "/en/request/reply-templates/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/request/reply-templates"
+    },
+    {
+      "source": "/en/request/howto/crmscript/reply",
+      "destination": "/en/automation/crmscript/howto/request/reply"
+    },
+    {
+      "source": "/en/request/howto/crmscript/request-logs",
+      "destination": "/en/automation/crmscript/howto/request/request-logs"
+    },
+    {
+      "source": "/en/request/howto/crmscript/samples",
+      "destination": "/en/automation/crmscript/howto/request/samples"
+    },
+    {
+      "source": "/en/request/howto/crmscript/split-merge",
+      "destination": "/en/automation/crmscript/howto/request/split-merge"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/create",
+      "destination": "/en/automation/crmscript/howto/sale/create"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/currency",
+      "destination": "/en/automation/crmscript/howto/sale/currency"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/get",
+      "destination": "/en/automation/crmscript/howto/sale/get"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/guides",
+      "destination": "/en/automation/crmscript/howto/sale/guides"
+    },
+    {
+      "source": "/en/sale/howto/index",
+      "destination": "/en/automation/crmscript/howto/sale/index"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/index",
+      "destination": "/en/automation/crmscript/howto/sale/index"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/lost-or-sold",
+      "destination": "/en/automation/crmscript/howto/sale/lost-or-sold"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/samples",
+      "destination": "/en/automation/crmscript/howto/sale/samples"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/stakeholders",
+      "destination": "/en/automation/crmscript/howto/sale/stakeholders"
+    },
+    {
+      "source": "/en/sale/howto/crmscript/update",
+      "destination": "/en/automation/crmscript/howto/sale/update"
+    },
+    {
+      "source": "/en/customer-center/inline-crmscript",
+      "destination": "/en/automation/crmscript/howto/inline-crmscript"
+    },
+    {
+      "source": "/en/automation/crmscript/learn/screen/data-exchange",
+      "destination": "https://help.superoffice.com/docs/11/en/admin/onsite/data-exchange.html"
+    },
+    {
+      "source": "/en/automation/crmscript/netserver/index",
+      "destination": "/en/automation/crmscript/netserver/ns-agents-and-carriers"
+    },
+    {
+      "source": "/en/automation/webhook/tutorials/add-msg-to-ticket/index",
+      "destination": "/en/automation/webhook/dev/tutorials/add-msg-to-ticket/index"
+    },
+    {
+      "source": "/en/automation/webhook/crmscript-handlers",
+      "destination": "/en/automation/webhook/dev/crmscript-handlers"
+    },
+    {
+      "source": "/en/automation/webhook/event-details",
+      "destination": "/en/automation/webhook/dev/event-details"
+    },
+    {
+      "source": "/en/automation/webhook/overview",
+      "destination": "/en/automation/webhook/dev/index"
+    },
+    {
+      "source": "/en/automation/webhook/notification",
+      "destination": "/en/automation/webhook/dev/notification"
+    },
+    {
+      "source": "/en/automation/webhook/register",
+      "destination": "/en/automation/webhook/dev/register"
+    },
+    {
+      "source": "/en/automation/webhook/security",
+      "destination": "/en/automation/webhook/dev/security"
+    },
+    {
+      "source": "/en/automation/webhook/subscription",
+      "destination": "/en/automation/webhook/dev/subscription"
+    },
+    {
+      "source": "/en/automation/webhook/troubleshooting",
+      "destination": "/en/automation/webhook/dev/troubleshooting"
+    },
+    {
+      "source": "/en/automation/windows/index",
+      "destination": "/en/automation/windows/win-script-event-system"
     }
   ]
 }

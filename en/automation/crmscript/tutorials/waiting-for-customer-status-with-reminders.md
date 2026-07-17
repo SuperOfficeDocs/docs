@@ -30,7 +30,7 @@ Creating the field should be straightforward:
 
 ![field -screenshot][img1]
 
-You then need to create the two reply templates we will use. The script will merge the templates with the request and customer data, so merge fields from these entities can be used, such as “Dear [[customer.name]]”:
+You then need to create the two reply templates we will use. The script will merge the templates with the request and customer data, so merge fields from these entities can be used, such as "Dear [[customer.name]]":
 
 ![replytemplate -screenshot][img2]
 
@@ -154,7 +154,7 @@ Schedule this script as a nightly task, and you should be all set. The notificat
 
 ![viewticket -screenshot][img4]
 
-[img1]: media/notification-field.png
-[img2]: media/reply-template.png
-[img3]: media/request-status.png
-[img4]: media/ticket-view.png
+[img1]: /media/loc/en/automation/notification-field.png
+[img2]: /media/loc/en/automation/reply-template.png
+[img3]: /media/loc/en/automation/request-status.png
+[img4]: /media/loc/en/automation/ticket-view.png

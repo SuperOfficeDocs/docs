@@ -106,8 +106,6 @@ If notifications are enabled, emails are sent after saving a trace run. To avoid
 
 * [Log messages][1]
 
-<!-- Referenced links -->
-[1]: log-messages.md
+[1]: ./log-messages
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/automation/trace.png

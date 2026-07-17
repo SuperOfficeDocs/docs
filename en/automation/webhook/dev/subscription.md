@@ -178,7 +178,6 @@ webHookRow.Type        = type;
 webhookRow.ErrorsEmail = errorEmail;
 webHookRow.Save();
 
-
 // SuperOffice.CRM.Webhooks.WebhookManager: verifies the existence of the TargetUrl
 
 var webhookManager = WebhookManager.GetCurrent();
@@ -186,6 +185,5 @@ var webhook        = new Webhook(0, name, targetUrl, events, secret);
 webhookManager.SaveWebhook(webhook);
 ```
 
-<!-- Referenced links -->
-[1]: ../../../api/reference/restful/rest/Webhook/index.md
-[2]: ../../../api/reference/restful/agent/Webhook_Agent/index.md
+[1]: ../../../api/reference/restful/rest/Webhook/index
+[2]: ../../../api/reference/restful/agent/Webhook_Agent/index

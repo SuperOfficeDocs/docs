@@ -75,6 +75,5 @@ if (recurrenceInfo.GetIsRecurrence()) {
 }
 ```
 
-<!-- Referenced links -->
 [1]: <xref:CRMScript.NetServer.NSAppointment>
 [2]: <xref:CRMScript.NetServer.NSAppointmentEntity>

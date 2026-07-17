@@ -43,5 +43,3 @@ while(attachments.length() > 0) {
   printLine(attachments.popFront());
 }
 ```
-
-<!-- Referenced links -->

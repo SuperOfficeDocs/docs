@@ -1,7 +1,7 @@
 ---
-title: Three ways to deploy and run scripts
+title: Three ways to deploy and run scripts
 uid: run_scripts
-description: Three ways to deploy and run scripts
+description: Three ways to deploy and run scripts
 author: Tony Yates
 date: 04.15.2009
 keywords:
@@ -10,19 +10,19 @@ deployment: onsite
 platform: web
 ---
 
-# Three ways to deploy and run scripts
+# Three ways to deploy and run scripts
 
 ## Single function
 
-The simplest form of scripting is the single function script. This is accomplished by adding a text file that contains a single method declaration with the correct extension (.cs or .vb) into the scripting folder. The following code demonstrates this technique. The example demonstrates manipulating the name and department of the contact after it is retrieved from the database, but before it is returned to the client.
+The simplest form of scripting is the single function script. This is accomplished by adding a text file that contains a single method declaration with the correct extension (.cs or .vb) into the scripting folder. The following code demonstrates this technique. The example demonstrates manipulating the name and department of the contact after it is retrieved from the database, but before it is returned to the client.
 
 **Example AfterGetContactEntity single function script:**
 
 ```csharp
-public static void AfterGetContactEntity(int contactId, ref ContactEntity contact, ref object state)
+public static void AfterGetContactEntity(int contactId, ref ContactEntity contact, ref object state)
 {
-    contact.Name += "(added by script)";
-    contact.Department += "(ScriptDemo)";
+    contact.Name += "(added by script)";
+    contact.Department += "(ScriptDemo)";
 }
 ```
 
@@ -32,40 +32,40 @@ Another option is to write a full class and deploy it as a file. This allows you
 
 When writing a full class file, you must add the keyword `$FullClass` at the top of the file. You can also add references to other assemblies that contain types used by this class by adding the `$ReferencedAssembly` keyword; followed by the full path to the referenced assembly. You must also have a `static void Main` method. This is a framework requirement.
 
-**A full class example that demonstrates changing the name and department of a contact:**
+**A full class example that demonstrates changing the name and department of a contact:**
 
 ```csharp
 //$FullClass
-//$ReferencedAssembly: C:\\MyAssemblies\\SuperOffice.Services.dll
-using System;
-using System.Text;
-using System.Windows.Forms;
-using SuperOffice.CRM.Services;
-namespace MyScriptClass
+//$ReferencedAssembly: C:\\MyAssemblies\\SuperOffice.Services.dll
+using System;
+using System.Text;
+using System.Windows.Forms;
+using SuperOffice.CRM.Services;
+namespace MyScriptClass
 {
-    public static class CSharpScript
-    {
-        static void Main() { }
-        public static void BeforeGetContactEntity(int contactId, ref object state)
-        {
-            //Do  Magic Here
-        }
-        public static void AfterGetContactEntity(int contactId, ref ContactEntity contact, ref object state)
-        {
-            contact.Name += "(Magic)";
-            contact.Department += "(Scripted)";
-        }
-    }
+    public static class CSharpScript
+    {
+        static void Main() { }
+        public static void BeforeGetContactEntity(int contactId, ref object state)
+        {
+            //Do  Magic Here
+        }
+        public static void AfterGetContactEntity(int contactId, ref ContactEntity contact, ref object state)
+        {
+            contact.Name += "(Magic)";
+            contact.Department += "(Scripted)";
+        }
+    }
 }
 ```
 
 ## Assembly
 
-Neither single function files, nor class files, are easy to debug. To be able to debug your scripts you must pre-compile them into a standalone assembly. As long as the versions referred to in your assembly comply with the running SuperOffice web version all you need to do is drop the DLL into the script folder. By adding the pdb file as well, debugging should be a piece of cake.
+Neither single function files, nor class files, are easy to debug. To be able to debug your scripts you must pre-compile them into a standalone assembly. As long as the versions referred to in your assembly comply with the running SuperOffice web version all you need to do is drop the DLL into the script folder. By adding the pdb file as well, debugging should be a piece of cake.
 
 ## Permissions
 
-Just as a reminder, you will need to ensure that the IIS process has read permissions on the scripting folder. That is generally the ASP.NET and Network Service accounts. In most cases, setting the `APPPOOL\YourAppPoolName` permissions will work.
+Just as a reminder, you will need to ensure that the IIS process has read permissions on the scripting folder. That is generally the ASP.NET and Network Service accounts. In most cases, setting the `APPPOOL\YourAppPoolName` permissions will work.
 
 The image below demonstrates setting the `apppool` permissions.
 
@@ -76,9 +76,7 @@ The image below demonstrates setting the `apppool` permissions.
 * [Scripting in the Web World][1]
 * [Web Client and Interactive NetServer Web Service Scripts][2]
 
-<!-- Referenced links -->
 [1]: https://www.youtube.com/watch?v=5iJmyaIpr0g
 [2]: https://www.youtube.com/watch?v=f5JIx4uP7ZI&t=2291s
 
-<!-- Referenced images -->
-[img3]: media/permissions2.png
+[img3]: /media/loc/en/automation/permissions2.png

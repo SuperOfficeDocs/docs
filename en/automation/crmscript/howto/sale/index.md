@@ -49,7 +49,7 @@ For a complete list of fields, see the [database reference][20].
 | registered | UtcDateTime of registration |
 | updated | UtcDateTime of last update |
 | saledate | Expected closing time or when it was lost/won (DateTime) |
-| nextDueDate | Closest future activity date<br>If nothing is planned: the most recent activity |
+| nextDueDate | Closest future activity date<br />If nothing is planned: the most recent activity |
 
 ## How-tos and examples
 
@@ -62,19 +62,18 @@ For a complete list of fields, see the [database reference][20].
 * [Currency][7]
 * [Samples][8]
 
-<!-- Referenced links -->
-[1]: create.md
-[2]: get.md
-[3]: update.md
-[4]: lost-or-sold.md
-[5]: stakeholders.md
-[6]: guides.md
-[7]: currency.md
-[8]: samples.md
+[1]: ./create
+[2]: ./get
+[3]: ./update
+[4]: ./lost-or-sold
+[5]: ./stakeholders
+[6]: ./guides
+[7]: ./currency
+[8]: ./samples
 [10]: ../../reference/CRMScript.NetServer.NSSaleAgent.yml
 [11]: ../../reference/CRMScript.NetServer.NSSale.yml
 [12]: ../../reference/CRMScript.NetServer.NSSaleEntity.yml
 [13]: ../../reference/CRMScript.NetServer.NSSaleStakeholder.yml
 [14]: ../../reference/CRMScript.NetServer.NSSaleStageEntity.yml
 [15]: ../../reference/CRMScript.NetServer.NSSaleType.yml
-[20]: ../../../../database/tables/sale.md
+[20]: ../../../../database/tables/sale

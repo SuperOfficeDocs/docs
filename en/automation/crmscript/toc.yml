@@ -346,6 +346,3 @@ items:
     href: tutorials/closing-request-tabs-in-triggers.md
   - name: Task menu - Open external system in new tab
     href: tutorials/open-external-company-from-task-menu.md
-- name: Reference
-  href: reference/toc.yml
-  topicHref: reference/index.md

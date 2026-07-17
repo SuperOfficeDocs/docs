@@ -319,5 +319,4 @@ There are no field values for this event. Use the changed event instead.
 }
 ```
 
-<!-- Referenced links -->
-[1]: quote-events.md
+[1]: ./quote-events

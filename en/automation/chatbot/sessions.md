@@ -128,7 +128,6 @@ Call `setChatStatus(sessionId, 7)` to end the session.
 
 This will trigger the post-form (if configured).
 
-<!-- Referenced images -->
-[img1]: media/chatbot-states.png
-[img2]: media/chatbot-states1.png
-[img3]: media/chatbot-states2.png
+[img1]: /media/loc/en/automation/chatbot-states.png
+[img2]: /media/loc/en/automation/chatbot-states1.png
+[img3]: /media/loc/en/automation/chatbot-states2.png

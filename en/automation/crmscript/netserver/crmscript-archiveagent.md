@@ -63,5 +63,4 @@ foreach (NSArchiveListItem i in result) {
 }
 ```
 
-<!-- Referenced links -->
-[1]: ../howto/diary/get-appointment.md
+[1]: ../howto/diary/get-appointment

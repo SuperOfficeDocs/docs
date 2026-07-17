@@ -1,4 +1,4 @@
-﻿---
+---
 uid: crmscript-forms
 title: Forms
 description: Working with forms in CRMScript.
@@ -32,5 +32,4 @@ contact.Name = companyName;
 agent.SaveContactEntity(contact);
 ```
 
-<!-- Referenced links -->
-[1]: ../../../../marketing/forms/learn/define-form-actions.md
+[1]: ../../../../marketing/forms/learn/define-form-actions

@@ -1,0 +1,89 @@
+---
+uid: crmscript-quote
+title: Quotes
+description: Working with quotes in CRMScript
+keywords: sale, quote
+author: digitaldiina
+date: 06.10.2026
+version: 12.0
+content_type: concept
+tier: growth
+redirect_from:
+  - /en/quote/howto/index
+  - /en/quote/howto/crmscript/index
+language: en
+---
+
+import ReqGrowthTransitionSales from "../../../../../snippets/license/req-growth-transition-sales.mdx";
+
+# Quotes
+
+<ReqGrowthTransitionSales />
+
+For you as a CRMScript developer, working with quotes means that:
+
+* You won't have to worry about miscalculating.
+* The sales details can be automatically updated.
+
+## CRMScript classes
+
+There are no native CRMScript classes pertaining to quotes. Use the NetServer classes:
+
+* [NSQuoteAgent][10]
+* [NSQuote][11]
+* [NSQuoteEntity][12]
+* [NSProduct][13]
+* [NSPriceList][14]
+* [NSQuoteVersion][15]
+* [NSQuoteAlternative][16]
+* [NSQuoteLine][17]
+
+<Note>
+Objects of type `NSQuoteAlternative` belonging to a specific quote [version][3].
+
+Objects of type `NSQuoteLine` belonging to a specific quote **alternative**.
+</Note>
+
+## Frequently used fields
+
+| Field | Description |
+|:--|:--|
+| quote_id | ID |
+| SaleId | The corresponding sale |
+| QuoteConnectionId | The ERP connection used for this quote |
+| ActiveQuoteVersionId | The latest version |
+| AcceptedQuoteAlternativeId | The alternative accepted by the customer |
+| UseValuesFromQuote | Whether to update the sale (Earning, Earning_Percent and Amount) |
+| DocumentId | The quote document |
+| PoNumber | The purchase order number |
+
+For a complete list of fields, see the [database reference][20].
+
+## How-tos and examples
+
+* [Create quote][2]
+* [Get quote][1]
+* [Update quotes and quote versions][3]
+* [Quote alternatives and quote lines][7]
+* [Products and price lists][8]
+* [Quote document][4]
+* [Place order][5]
+* [Various samples][6]
+
+[1]: ./get
+[2]: ./create
+[3]: ./update
+[4]: ./quote-document
+[5]: ./place-order
+[6]: ./samples
+[7]: ./add-alternative
+[8]: ./products
+[10]: ../../reference/CRMScript.NetServer.NSQuoteAgent.yml
+[11]: ../../reference/CRMScript.NetServer.NSQuote.yml
+[12]: ../../reference/CRMScript.NetServer.NSQuoteEntity.yml
+[13]: ../../reference/CRMScript.NetServer.NSProduct.yml
+[14]: ../../reference/CRMScript.NetServer.NSPriceList.yml
+[15]: ../../reference/CRMScript.NetServer.NSQuoteVersion.yml
+[16]: ../../reference/CRMScript.NetServer.NSQuoteAlternative.yml
+[17]: ../../reference/CRMScript.NetServer.NSQuoteLine.yml
+[20]: ../../../../database/tables/quote

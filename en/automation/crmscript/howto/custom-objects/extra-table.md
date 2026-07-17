@@ -35,7 +35,7 @@ se.insert();
 | Database table | for the schema, can't be changed after creation             |
 | Sort order     | which column the table will be sorted on, and the direction |
 | Display field  | for relations                                               |
-| SuperOffice CRM access | controls access to the table from web panels<br>no access, read access, or full access |
+| SuperOffice CRM access | controls access to the table from web panels<br />no access, read access, or full access |
 
 [Complete list of properties][1]
 
@@ -55,7 +55,6 @@ In addition, each type has its own set of properties. For example, items for a l
 
 [Complete list of properties][3].
 
-<!-- Referenced links -->
-[1]: ../../../../custom-objects/admin/create-extra-table.md
-[3]: ../../../../custom-objects/admin/create-extra-field.md
-[2]: ../../searchengine/index.md
+[1]: ../../../../custom-objects/admin/create-extra-table
+[3]: ../../../../custom-objects/admin/create-extra-field
+[2]: ../../searchengine/index

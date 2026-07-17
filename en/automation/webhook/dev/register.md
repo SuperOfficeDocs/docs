@@ -67,5 +67,4 @@ When the event(s) happen (`contact.changed` for example), then the target URL is
 
 * [Webhooks panel in Settings and maintenance][1] - create and manage webhooks without writing code
 
-<!-- Referenced links -->
-[1]: ../admin/index.md
+[1]: ../admin/index

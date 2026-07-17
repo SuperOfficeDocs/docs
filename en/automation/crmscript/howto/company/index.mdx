@@ -1,0 +1,71 @@
+---
+uid: crmscript-class-company
+title: Company (class)
+description: How to work with companies in CRMScript.
+keywords: CRMScript, company, organization, contact
+author: Bergfrid Skaara Dias
+date: 02.21.2022
+version: 10
+content_type: reference
+redirect_from: /en/company/howto/crmscript/index
+---
+
+import WarnCompanyTable from "../../../../../snippets/warn-company-table.mdx";
+
+# Working with companies in CRMScript
+
+## Company (class)
+
+The [Company CRMScript class][1] represents the following entities:
+
+* Real-life: a company or organization
+* SuperOffice UI: company
+* Database table: [contact][4]
+
+The **company** database table is unrelated to the **Company** CRMScript class. The table should have one row only, containing information about licenses and the owner of the SuperOffice database.
+
+<WarnCompanyTable />
+
+## Parser variables
+
+Calling `toParser()` will load the following fields and make them available to [templates][2]:
+
+* company.id
+* company.name
+* company.note
+* company.domain
+* company.phone
+* company.fax
+* company.adr
+* company.ourContact
+* company.primaryContact.id
+* company.primaryContact.email
+
+See the [connected persons][5] table for a description of `ourContact` and `primaryContact`.
+
+```crmscript!
+Parser p;
+Company c;
+c.load(2);
+c.toParser(p);
+printLine(p.getVariable("company.name", 0));
+```
+
+<Tip>
+Read more about [localized addresses][3].
+</Tip>
+
+## How-to
+
+* [Create company][6]
+* [Get company][7]
+* [Get activities][8]
+
+[1]: <xref:CRMScript.Native.Company>
+[2]: ../request/reply-templates
+[3]: ../../../../api/localization/address/index
+[4]: ../../../../database/tables/contact
+[5]: ./create-company#connected-persons
+[6]: ./create-company
+[7]: ./get-company
+[8]: ./get-activities

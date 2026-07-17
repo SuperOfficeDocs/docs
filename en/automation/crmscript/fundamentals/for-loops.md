@@ -84,6 +84,5 @@ You might have noticed that `for` looks a lot like the [while loop][2]. And you 
 * Do you update the counter in a fixed pattern?
 * How much programming experience do you have?
 
-<!-- Referenced links -->
-[1]: operators.md
-[2]: while-loops.md
+[1]: ./operators
+[2]: ./while-loops

@@ -12,7 +12,6 @@ redirect_from: /en/diary/howto/crmscript/update-appointment
 
 # Update appointment
 
-<!-- markdownlint-disable-next-line MD013 -->
 ## NSAppointment UpdateAppointment(Integer p0, DateTime p1, DateTime p2, Integer p3, Integer p4, Integer associateId)
 
 Change the description, for example, to add an agenda:
@@ -82,5 +81,3 @@ if (e.GetCompleted() == 3) {
 NSAppointmentAgent appointmentAgent;
 appointmentAgent.DeleteAppointmentEntity(142);
 ```
-
-<!-- Referenced links -->

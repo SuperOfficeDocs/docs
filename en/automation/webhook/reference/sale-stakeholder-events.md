@@ -135,6 +135,6 @@ X-Superoffice-Signature: X1FmmRIXuzH8o0MDanva1lnuNZXoix6M0US1S64s+e8=
     "stakeholderrole_id": 1,
     "updated": "0001-01-01T00:00:00",
     "updated_associate_id": 0
-  }  
+  }
 }
 ```

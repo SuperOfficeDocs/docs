@@ -10,7 +10,6 @@ content_type: howto
 redirect_from: /en/diary/howto/crmscript/stop-recurrence
 ---
 
-
 # Stop repeating follow-ups
 
 When you stop a [recurrence][1], all repetitions of the follow-up **after the occurrence you edit** are deleted.
@@ -33,5 +32,4 @@ if (r.GetIsRecurrence()) {
 }
 ```
 
-<!-- Referenced links -->
-[1]: ../../../../diary/learn/recurrence/index.md
+[1]: ../../../../diary/learn/recurrence/index

@@ -35,5 +35,3 @@ Since the item has been deleted, the delete event contains the id values from th
   "WebhookName":"Name you provided"
 }
 ```
-
-<!-- See also: @Reference-WebAPI-REST-Webhook-Webhook -->

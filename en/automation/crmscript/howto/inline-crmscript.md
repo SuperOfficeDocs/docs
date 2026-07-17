@@ -26,6 +26,5 @@ The leading `%EJSCRIPT_START%` and matching `%EJSCRIPT_END%` tell the Parser tha
 
 ![Example -screenshot][img2]
 
-<!-- Referenced images -->
 [img1]: ../../../../media/loc/en/automation/image001.png
 [img2]: ../../../../media/loc/en/automation/image002.png
