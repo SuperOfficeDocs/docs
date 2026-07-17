@@ -34,13 +34,12 @@ When updating a UDF, the `FieldValueInfo.Key` property must be the UDF **progid*
 * User-defined fields
 * Extra fields
 
-<!-- Referenced links -->
-[1]: index.md
-[2]: operations-and-values.md
-[3]: reference/appointment-table.md
-[4]: reference/contact-table.md
-[5]: reference/document-table.md
-[6]: reference/person-table.md
-[7]: reference/project-table.md
-[8]: reference/sale-table.md
-[9]: reference/selection-table.md
+[1]: ./index
+[2]: ./operations-and-values
+[3]: ./reference/appointment-table
+[4]: ./reference/contact-table
+[5]: ./reference/document-table
+[6]: ./reference/person-table
+[7]: ./reference/project-table
+[8]: ./reference/sale-table
+[9]: ./reference/selection-table

@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "addressformat" MDO List
+
 MDO list provider for AddressFormats Id returned is the layout_id, not the addressformat_id.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AddressFormatListProvider">AddressFormatListProvider</see> class.
+Implemented by the `AddressFormatListProvider` class.
 The name of the MDO list is 'addressformat'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("addressformat", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -58,7 +55,6 @@ foreach (var item in listProvider.RootItems) {
 |3|United Kingdom||3|
 |2|United States||2|
 |16|United States street and postal||16|
-
 
 ## Related MDO Lists
 

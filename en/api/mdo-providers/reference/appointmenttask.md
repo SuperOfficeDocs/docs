@@ -9,12 +9,11 @@ envir: onsite, online
 ---
 
 # "appointmenttask" MDO List
+
 MDO list provider for the task list of the AppointmentDialog. This list extends the basic <see cref="T:SuperOffice.CRM.Rows.TaskRow" /> with
 specialized icons based on the <see cref="T:SuperOffice.Data.TaskType" />.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AppointmentTaskProvider">AppointmentTaskProvider</see> class.
+Implemented by the `AppointmentTaskProvider` class.
 The name of the MDO list is 'appointmenttask'.
 
 ## Additional Attributes
@@ -22,10 +21,6 @@ The name of the MDO list is 'appointmenttask'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Set to true to get icon hints in format diary_color_<colorIndex>| colorIconHints|false|
-
-
-
-
 
 ## Sample Request
 
@@ -38,10 +33,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("appointmenttask", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -64,4 +60,3 @@ foreach (var item in listProvider.RootItems) {
 |4|Telefon inn||freebusy=0;allday=0;ispublished=0|
 |3|Telefon ut||freebusy=0;allday=0;ispublished=0|
 |9|Tilbud||freebusy=0;allday=0;ispublished=0|
-

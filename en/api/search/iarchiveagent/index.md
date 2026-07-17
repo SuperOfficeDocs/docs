@@ -3,10 +3,10 @@ title: Archive agents
 uid: archive_agents
 description: Archive agents
 author: SuperOffice Product and Engineering
-keywords: 
+keywords:
 content_type: concept
 date:
-category: 
+category:
 area: api-services
 redirect_from: /en/api/netserver/search/iarchiveagent
 ---
@@ -31,5 +31,4 @@ Activity Archive is unique compared to the other archives provided by NetServer 
 
 It should be noted that specific archive providers such as `Sales` do not make use of the filter settings since they assume that the outer archive class either the `ContactActivityArchiveProvider` or `ProjectActivityArchiveProvider` takes care of it.
 
-<!-- Referenced links -->
-[1]: iarchiveagent.md
+[1]: ./iarchiveagent

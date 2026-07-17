@@ -2,7 +2,7 @@
 uid: documenthandler
 title: documenthandler
 keywords: mdoprovider mdo provider documenthandler
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "documenthandler" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.DocumentHandlerProvider">DocumentHandlerProvider</see> class.
+Implemented by the `DocumentHandlerProvider` class.
 The name of the MDO list is 'documenthandler'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("documenthandler", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +39,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |2|Use SuperOffice WebTools|||
 |1|Manually uploading and downloading files|||
-
 
 ## Related MDO Lists
 

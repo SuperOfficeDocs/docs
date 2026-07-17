@@ -11,11 +11,11 @@ platform: web
 
 # How to build your OAuth native app flow
 
-A native application is either a mobile application or application that runs on an operating system in a windowed frame, windowless service, or console application. This type of application is **not** the same as a browser-based web application.
+A native application is either a mobile application or application that runs on an operating system in a windowed frame, windowless service, or console application. This type of application is **not** the same as a browser-based web application.
 
-Let's look at how to use IdentityModel’s OpenID Connect (OIDC) client library to authenticate towards SuperOffice SuperID using the native app workflow. It demonstrates how to set the required OpenID Connect options.
+Let's look at how to use IdentityModel's OpenID Connect (OIDC) client library to authenticate towards SuperOffice SuperID using the native app workflow. It demonstrates how to set the required OpenID Connect options.
 
-This guide uses a .NET Framework console application and is a copy of the [IdentityModel GitHub project][1] page.
+This guide uses a .NET Framework console application and is a copy of the [IdentityModel GitHub project][1] page.
 
 There are a couple of extra lines of code to be aware of for SuperOffice SuperID, after setting the [client options][2]. You can [download the example code][3].
 
@@ -23,7 +23,7 @@ There are a couple of extra lines of code to be aware of for SuperOffice SuperID
 
 * you have a tenant with a user for testing sign-on
 * you have to have registered your application with a redirect URI of `http://127.0.0.1\:\d{4,10}`
-* you have received a unique application [client ID and secret][4]
+* you have received a unique application [client ID and secret][4]
 
 ## Set up your tools
 
@@ -35,7 +35,7 @@ There are a couple of extra lines of code to be aware of for SuperOffice SuperID
 
 ## Get started
 
-1. Create a redirect URI using an available port on the loopback address `"^http://127.0.0.1\\:\\d{4,10}$"`. You are free to use any path text instead of *desktop-callback*.
+1. Create a redirect URI using an available port on the loopback address `"^http://127.0.0.1\\:\\d{4,10}$"`. You are free to use any path text instead of *desktop-callback*.
 
     ```csharp
     string redirectUri = string.Format("http://127.0.0.1:7890");
@@ -53,7 +53,7 @@ There are a couple of extra lines of code to be aware of for SuperOffice SuperID
 
     ```csharp
     var options = new OidcClientOptions
-    {
+    \{
       Authority = "https://sod.superoffice.com/login",
       LoadProfile = false,
       ClientId = "YOUR\_APPLICATION\_ID",
@@ -62,7 +62,7 @@ There are a couple of extra lines of code to be aware of for SuperOffice SuperID
       RedirectUri = "http://127.0.0.1:7890",
       ResponseMode = OidcClientOptions.AuthorizeResponseMode.FormPost,
       Flow = OidcClientOptions.AuthenticationFlow.Hybrid,
-    };
+    \};
     ```
 
 4. Set the following **policy options** to ensure a smooth experience:
@@ -93,17 +93,17 @@ There are a couple of extra lines of code to be aware of for SuperOffice SuperID
     ```csharp
     var formData = string.Empty;
     if (context.Request.HasEntityBody)
-    {
+    \{
         using (var body = context.Request.InputStream)
-        {
+        \{
             using (var reader = new System.IO.StreamReader(
                 body,
                 context.Request.ContentEncoding))
-            {
+            \{
                 formData = reader.ReadToEnd();
-            }
-        }
-    }
+            \}
+        \}
+    \}
     ```
 
 8. Send a useful reply to the browser before processing the JWT. For example, give a warning message informing that the browser is about to re-direct to the help center, and set the refresh properties to do so after 5 seconds.
@@ -240,12 +240,10 @@ I had to update the dependent versions from 4.1.2.0 to 4.0.3.
 </runtime\>
 ```
 
-<!-- Referenced links -->
 [1]: https://github.com/IdentityModel/IdentityModel.OidcClient.Samples/tree/master/ConsoleSystemBrowser
-[2]: native-app-quickstart.md
+[2]: ./native-app-quickstart
 [3]: https://github.com/SuperOffice/SuperOffice.DevNet.OpenIDConnectNativeApp
-[4]: ../../developer-portal/getting-started/index.md#terminology
-[5]: ../authentication/online/api.md
+[4]: ../../developer-portal/getting-started/index#terminology
+[5]: ../authentication/online/api
 
-<!-- Referenced images -->
-[img1]: media/exception.png
+[img1]: /media/loc/en/api/exception.png

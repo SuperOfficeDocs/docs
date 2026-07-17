@@ -1,7 +1,7 @@
 ---
 uid: DocumentQuoteLineInnerData
 title: DocumentQuoteLineInnerData
-description: 
+description:
 keywords: DocumentQuoteLineInnerData archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "DocumentQuoteLineInnerData"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.DocumentQuoteLineInnerDataProvider">SuperOffice.CRM.ArchiveLists.DocumentQuoteLineInnerDataProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.DocumentQuoteLineInnerDataProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"||
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -121,6 +123,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |alternative/version/quote/sale/time| *None* |Sale - Time: Time|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/type|listAny|Sale - Type: Displays the type of an activity| x |
@@ -225,6 +228,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |alternative/version/quote/connection/allAccess|bool|ERP connection - Unrestricted: There are no access restrictions on this ERP connection| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/erpName|int|ERP connection - ERP name: Name of ERP system| x |
@@ -266,5 +270,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

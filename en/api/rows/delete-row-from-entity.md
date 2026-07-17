@@ -42,6 +42,5 @@ When `Delete()` is executed above, it will delete the relevant currency row from
 * [Delete an Entity][1]
 * [Delete a Row through an Entity][2]
 
-<!-- Referenced links -->
-[1]: ../entities/delete-entity.md
-[2]: ../entities/delete-entity-from-entity.md
+[1]: ../entities/delete-entity
+[2]: ../entities/delete-entity-from-entity

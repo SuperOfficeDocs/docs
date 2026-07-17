@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "QuoteLineDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProviderSingleCriteriaGroup` inside NetServer's SODatabase assembly.
 
 Sale selection archive using the selectionId as criterionmapping.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"quoteLine"|Dynamic quoteline|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -123,6 +125,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/time| *None* |Sale - Time: Time|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/type|listAny|Sale - Type: Displays the type of an activity| x |
@@ -227,6 +230,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/person/personCategoryRank|int|Sale - !!Category rank| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personBusiness|listAny|Sale - Business| x |
@@ -274,8 +278,8 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/person/personAddress/state|string|Sale - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/person/personAddress/wgs84latitude|decimal|Sale - Contact address - Latitude: Latitude| x |
 |alternative/version/quote/sale/person/personAddress/wgs84longitude|decimal|Sale - Contact address - Longitude: Longitude| x |
-|alternative/version/quote/sale/person/personAddress/formattedAddress| *None* |Sale - Contact address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/person/personAddress/formattedMultiLineAddress| *None* |Sale - Contact address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/person/personAddress/formattedAddress| *None* |Sale - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/person/personAddress/formattedMultiLineAddress| *None* |Sale - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/person/restrictionAddress/addressId|int|Sale - Search address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/person/restrictionAddress/line1|string|Sale - Search address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/person/restrictionAddress/line2|string|Sale - Search address - Address 2: Second line of the address| x |
@@ -286,8 +290,8 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/person/restrictionAddress/state|string|Sale - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/person/restrictionAddress/wgs84latitude|decimal|Sale - Search address - Latitude: Latitude| x |
 |alternative/version/quote/sale/person/restrictionAddress/wgs84longitude|decimal|Sale - Search address - Longitude: Longitude| x |
-|alternative/version/quote/sale/person/restrictionAddress/formattedAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/person/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/person/restrictionAddress/formattedAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/person/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/person/personInterestIds|listInterest|Sale - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |alternative/version/quote/sale/person/personUdef/SuperOffice:1|string|Sale - contactshorttext: tooltipshorttext| x |
 |alternative/version/quote/sale/person/personUdef/SuperOffice:2|string|Sale - contactlongtext: tooltiplongtext| x |
@@ -331,6 +335,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/person/personAssociate/contactId|int|Sale - Company ID: Database ID of the company the user belongs to|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personAssociate/personId|int|Sale - Contact ID: Database ID of the contact row|  |
@@ -435,6 +440,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/contact/deletedDate|datetime|Sale - Deleted date: Deleted date|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/mainContact| *None* |Sale - Main contact: Main contact for this company| x |
@@ -463,8 +469,8 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/contact/postAddress/state|string|Sale - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/postAddress/wgs84latitude|decimal|Sale - Postal address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/postAddress/wgs84longitude|decimal|Sale - Postal address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/postAddress/formattedAddress| *None* |Sale - Postal address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/postAddress/formattedMultiLineAddress| *None* |Sale - Postal address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/postAddress/formattedAddress| *None* |Sale - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/postAddress/formattedMultiLineAddress| *None* |Sale - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/streetAddress/addressId|int|Sale - Street address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/contact/streetAddress/line1|string|Sale - Street address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/contact/streetAddress/line2|string|Sale - Street address - Address 2: Second line of the address| x |
@@ -475,8 +481,8 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/contact/streetAddress/state|string|Sale - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/streetAddress/wgs84latitude|decimal|Sale - Street address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/streetAddress/wgs84longitude|decimal|Sale - Street address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/streetAddress/formattedAddress| *None* |Sale - Street address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/streetAddress/formattedMultiLineAddress| *None* |Sale - Street address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/streetAddress/formattedAddress| *None* |Sale - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/streetAddress/formattedMultiLineAddress| *None* |Sale - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/restrictionAddress/addressId|int|Sale - Search address - Address ID: Database ID for the address record| x |
 |alternative/version/quote/sale/contact/restrictionAddress/line1|string|Sale - Search address - Address 1: First line of the address| x |
 |alternative/version/quote/sale/contact/restrictionAddress/line2|string|Sale - Search address - Address 2: Second line of the address| x |
@@ -487,8 +493,8 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/contact/restrictionAddress/state|string|Sale - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |alternative/version/quote/sale/contact/restrictionAddress/wgs84latitude|decimal|Sale - Search address - Latitude: Latitude| x |
 |alternative/version/quote/sale/contact/restrictionAddress/wgs84longitude|decimal|Sale - Search address - Longitude: Longitude| x |
-|alternative/version/quote/sale/contact/restrictionAddress/formattedAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
-|alternative/version/quote/sale/contact/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - {formattedAddress}: {formattedAddress}|  |
+|alternative/version/quote/sale/contact/restrictionAddress/formattedAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|alternative/version/quote/sale/contact/restrictionAddress/formattedMultiLineAddress| *None* |Sale - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |alternative/version/quote/sale/contact/url/URLAddress|string|Sale - URL| x |
 |alternative/version/quote/sale/contact/url/URLDescription|string|Sale - Description| x |
 |alternative/version/quote/sale/contact/contactAssociate/firstName|string|Sale - First name: Displays the contact's first name| x |
@@ -539,6 +545,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:12|listAny|Sale - Udlist one: Static tooltip for udlist one| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:13|listAny|Sale - Udlist two: Static tooltip for udlist two| x |
@@ -643,6 +650,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/sale/project/text|string|Sale - Project - Text: Displays a descriptive text for the item| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/description|string|Sale - Project - Description: Description| x |
@@ -747,6 +755,7 @@ Sale selection archive using the selectionId as criterionmapping.
 |alternative/version/quote/connection/updatedBy|associate|ERP connection - Updated by: The user who last updated the data| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/updatedDate|date|ERP connection - Updated: The date/time the data was last updated in UTC.| x |
@@ -782,5 +791,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

@@ -37,9 +37,8 @@ The `SoFormsAuthentication` group contains configuration settings used to contro
 | Name | Description |
 |---|---|
 | IgnoreList | List of pages and folders the `SoFormsAuthentication` should ignore. |
-| Pages | List of pages. Should contain a dictionary with the following keys:<br>Mandatory: LoginUrl and DefaultUrl<br>Optional: LogoutUrl and PocketCrmLoginPage |
+| Pages | List of pages. Should contain a dictionary with the following keys:<br />Mandatory: LoginUrl and DefaultUrl<br />Optional: LogoutUrl and PocketCrmLoginPage |
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.SoFormsAuthentication>

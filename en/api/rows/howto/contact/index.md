@@ -17,7 +17,6 @@ redirect_from:
 * [Update person][2]
 * [Collections][3]
 
-<!-- Referenced links -->
-[1]: get-persons-from-contact-rows.md
-[2]: update-person-rows.md
-[3]: collection.md
+[1]: ./get-persons-from-contact-rows
+[2]: ./update-person-rows
+[3]: ./collection

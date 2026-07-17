@@ -13,7 +13,6 @@ redirect_from: /en/api/netserver/plugins/quote-connectors/adding-products
 
 The user searches for products in the Add Product dialog.
 
-<!-- markdownlint-disable-next-line MD013 -->
 ## ProductInfo[] FindProduct( QuoteContextInfo context, string isoCurrencyCode, string userinput, string priceListKey )
 
 The connector should treat this as a free text search. The user might want to search for the name, description, product code, extra fields, and so on.
@@ -33,13 +32,13 @@ Gets a product based on `erpProductKey`. Returns the product with the specified 
 
 ## ProductInfo[] GetProducts( string[] erpKeys )
 
-Return products based on an array of unique ERP keys. Handy when you’ve found products through archive providers or other mechanisms that leave you holding multiple  `ERPKey` values.
+Return products based on an array of unique ERP keys. Handy when you've found products through archive providers or other mechanisms that leave you holding multiple  `ERPKey` values.
 
 ## QuoteLineInfo GetQuoteLineFromProduct( QuoteContextInfo context, string erpProductKey )
 
 Given a product ERP Key, return a quote line with some default values filled in. The `quoteLineId` will be provided by SuperOffice later.
 
-Returns the `QuoteLine` with the product info filled in. If the product isn’t found, the function will throw an exception.
+Returns the `QuoteLine` with the product info filled in. If the product isn't found, the function will throw an exception.
 
 ## int GetNumberOfProductImages( string erpProductKey )
 
@@ -52,7 +51,3 @@ Currently not used.
 Gets the full-size picture of the given product. Returns the full-size picture of the given product or NULL if no picture available.
 
 Rank: Which of the images to return, will in the first version only ask for the first.
-
-<!-- Referenced links -->
-
-<!-- Referenced images -->

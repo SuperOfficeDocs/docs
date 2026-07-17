@@ -79,10 +79,8 @@ Next, derive the concrete provider class from `TypedQueryProviderBase` instead o
 
 Only a few of the existing providers have typed interfaces, and it is by no means certain that the additional cost and complexity are justified. As long as the Service layer interfaces only expose the generic interface, usage of the typed interfaces is probably quite small.
 
-<!-- Referenced links -->
 [1]: http://en.wikipedia.org/wiki/Template_method_pattern
 [2]: http://www.dofactory.com/Patterns/PatternTemplate.aspx
 
-<!-- Referenced img -->
-[img1]: media/image005.jpg
-[img2]: media/image006.jpg
+[img1]: /media/loc/en/api/image005-3.jpg
+[img2]: /media/loc/en/api/image006-2.jpg

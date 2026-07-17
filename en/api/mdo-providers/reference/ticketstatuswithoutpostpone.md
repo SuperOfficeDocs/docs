@@ -2,7 +2,7 @@
 uid: ticketstatuswithoutpostpone
 title: ticketstatuswithoutpostpone
 keywords: mdoprovider mdo provider ticketstatuswithoutpostpone
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "ticketstatuswithoutpostpone" MDO List
 
-
-
-
-Implemented by the <see cref="T:TicketStatusWithoutPostponeProvider">TicketStatusWithoutPostponeProvider</see> class.
+Implemented by the `TicketStatusWithoutPostponeProvider` class.
 The name of the MDO list is 'ticketstatuswithoutpostpone'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ticketstatuswithoutpostpone", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +39,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |2|Closed||2|
 |1|Open||1|
-
 
 ## Related MDO Lists
 

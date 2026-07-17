@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "ticketorigin" MDO List
+
 Ticket Origin
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TicketOriginProvider">TicketOriginProvider</see> class.
+Implemented by the `TicketOriginProvider` class.
 The name of the MDO list is 'ticketorigin'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ticketorigin", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -55,7 +52,6 @@ foreach (var item in listProvider.RootItems) {
 |10|Automatic|||
 |11|Chat|||
 |12|Form|||
-
 
 ## Related MDO Lists
 

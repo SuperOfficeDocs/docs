@@ -16,7 +16,7 @@ Selections are a list of contacts and persons **grouped** based on certain crite
 
 ## Why use selections?
 
-The advantage of using selection is that you don’t need to search for the contacts that you interact with regularly. You can define a selection like the above and then when you go into the selection you can find all the contacts and the persons belonging to them.
+The advantage of using selection is that you don't need to search for the contacts that you interact with regularly. You can define a selection like the above and then when you go into the selection you can find all the contacts and the persons belonging to them.
 
 Another advantage is you can use the **Task** panel to perform certain tasks on the listed contacts and persons of a selection.
 
@@ -54,10 +54,8 @@ Members of a specific selection can be retrieved in multiple ways:
 * [Using the SelectionProvider][2]
 * [Using services][3]
 
-<!-- Referenced links -->
-[1]: entity/get-selection-members-entity.md
-[2]: archive/get-selection-members-provider.md
-[3]: services/get-selection-members-services.md
+[1]: ./entity/get-selection-members-entity
+[2]: ./archive/get-selection-members-provider
+[3]: ./services/get-selection-members-services
 
-<!-- Referenced images -->
-[img1]: media/selection-task-menu.png
+[img1]: /media/loc/en/api/selection-task-menu.png

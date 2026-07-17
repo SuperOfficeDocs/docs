@@ -9,13 +9,14 @@ envir: onsite, online
 ---
 
 # "ticket" MDO List
+
 Provider for selecting a ticket.
 Supported additionalInfo:
 nameformat=includePersonAndCompany or nameformat=includeTicketId indicates how to format item name. If not specified, includePersonAndCompany is used.
 
 Sentry rights are honoured; if you do not have Read acces the ticket will not be listed here.
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TicketListProvider">TicketListProvider</see> class.
+Implemented by the `TicketListProvider` class.
 The name of the MDO list is 'ticket'.
 
 ## Additional Attributes
@@ -23,10 +24,6 @@ The name of the MDO list is 'ticket'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Indicates how to format item name| nameformat|includePersonAndCompany|
-
-
-
-
 
 ## Sample Request
 
@@ -39,10 +36,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ticket", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -62,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |9|The second email (Arnt Arntsen: Amadeus AS, AAvdeling)|||
 |10|Stian Andre, a few Google+ posts you may like (Arnhild Arvestad: Arne'S Kebab, AAvdeling)|||
 |13|Test FAQ relation ()|||
-
 
 ## Related MDO Lists
 

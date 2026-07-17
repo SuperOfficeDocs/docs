@@ -47,7 +47,7 @@ using(SoSession session = SoSession.Authenticate("SAL0", ""))
   Person person = Person.GetFromIdxPersonId(59);
   PersonRow personRow = PersonRow.GetFromIdxPersonId(60);
 
-  // format the name of the retrieved person according to the name format 
+  // format the name of the retrieved person according to the name format
   // of the country the person belongs to
   string formattedName1 = PersonNameFormatter.GetFormalName(person);
   string formattedName2 = PersonNameFormatter.GetFormalName(personRow);

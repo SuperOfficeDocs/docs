@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "SelectionSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SelectionSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.SelectionSelectionProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.SelectionSelectionProviderV2` inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection selection archive.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"selection"|Selection|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -91,5 +93,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

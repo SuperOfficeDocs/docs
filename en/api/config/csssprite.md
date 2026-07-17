@@ -26,5 +26,4 @@ Configuration for the Web client **CssSprite** generator. Used by SuperOffice on
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.CssSprite>

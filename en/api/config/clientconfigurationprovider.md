@@ -44,9 +44,9 @@ Multiple custom paths are a means to organize and separate features and third-pa
 
 ```xml
 <ClientConfigurationProvider>
-  <add key="CustomPath_Common"     value ="C:\WebClient\Common" />
-  <add key="CustomPath_Feature"    value ="C:\WebFeature\MyFiles" />
-  <add key="CustomPath_ThirdParty" value ="C:\Thirdparty\MyFiles" />
+  <add key="CustomPath_Common"     value ="C:\WebClient\Common" />
+  <add key="CustomPath_Feature"    value ="C:\WebFeature\MyFiles" />
+  <add key="CustomPath_ThirdParty" value ="C:\Thirdparty\MyFiles" />
 </ClientConfigurationProvider>
 ```
 
@@ -60,7 +60,6 @@ If the decision is to use a copy of the original file in a custom path, try to u
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.ClientConfigurationProvider>
-[2]: ../../ui/web-app/pagebuilder/config/soml.md
-[3]: ../../ui/web-app/pagebuilder/config/merge-files-and-actions.md
+[2]: ../../ui/web-app/pagebuilder/config/soml
+[3]: ../../ui/web-app/pagebuilder/config/merge-files-and-actions

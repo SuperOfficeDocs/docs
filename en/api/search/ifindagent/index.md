@@ -1,5 +1,5 @@
 ---
-title: ifindagent 
+title: ifindagent
 description: IFindAgent
 author: SuperOffice Product and Engineering
 keywords: search
@@ -83,12 +83,11 @@ personId    firstName   lastName    middleName  contactId   fullName
 [I:92]      Stein       Steinsen                [I:39]      Stein Steinsen
 [I:93]      Sigrid      Sørflaten               [I:40]      Sigrid Sørflaten
 [I:94]      Synøve      Solbakken               [I:40]      Synøve Solbakken
-[I:153]     Sal0                                [I:2]       Sal0 
-[I:154]     Sal1                                [I:2]       Sal1 
-[I:155]     Sal2                                [I:2]       Sal2 
-[I:156]     Sal3                                [I:2]       Sal3 
+[I:153]     Sal0                                [I:2]       Sal0
+[I:154]     Sal1                                [I:2]       Sal1
+[I:155]     Sal2                                [I:2]       Sal2
+[I:156]     Sal3                                [I:2]       Sal3
 ```
 
-<!-- Referenced links -->
-[1]: ../iarchiveagent/index.md
-[2]: ../../web-services/index.md
+[1]: ../iarchiveagent/index
+[2]: ../../web-services/index

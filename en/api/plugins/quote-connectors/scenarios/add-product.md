@@ -1,5 +1,5 @@
 ---
-title: Scenario – adding a product
+title: Scenario - adding a product
 uid: quote_scenario_add_product
 description: Quote connector scenario - adding a product
 author: SuperOffice Product and Engineering
@@ -12,7 +12,7 @@ redirect_from:
   - /en/api/netserver/plugins/quote-connectors/scenarios/index
 ---
 
-# Scenario – adding a product
+# Scenario - adding a product
 
 1. The user will click the **ADD** button to open the QUOTE LINE DIALOG.
 
@@ -74,6 +74,5 @@ redirect_from:
 
 The system calls the ERP Connector: `IQuoteConnector.RecalculateAlternative()` to update all the quote alternative total.
 
-<!-- Referenced images -->
-[img1]: media/image040.jpg
-[img2]: media/image041.jpg
+[img1]: /media/loc/en/api/image040.jpg
+[img2]: /media/loc/en/api/image041.jpg

@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "workflowsteptype" MDO List
+
 MDO provider for the WorkflowStepType enum
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.WorkflowStepTypeProvider">WorkflowStepTypeProvider</see> class.
+Implemented by the `WorkflowStepTypeProvider` class.
 The name of the MDO list is 'workflowsteptype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("workflowsteptype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -57,7 +54,6 @@ foreach (var item in listProvider.RootItems) {
 |14|Run script|||
 |12|Notify by e-mail|||
 |13|Notify by SMS|||
-
 
 ## Related MDO Lists
 

@@ -42,10 +42,9 @@ using (SoSession newSession = SoSession.Authenticate("sam", "sam"))
 
 ## Walk-through
 
-In the code above, once we have created an instance of the `Contact` entity by using the `Contact` class, we use the contact’s `InterestHelper` to retrieve the selected interests. As shown above, we can retrieve the interest in 2 ways:
+In the code above, once we have created an instance of the `Contact` entity by using the `Contact` class, we use the contact's `InterestHelper` to retrieve the selected interests. As shown above, we can retrieve the interest in 2 ways:
 
 * using the `SelectHeadingItems` property
 * using the `SelectRootItems` property
 
-<!-- Referenced links -->
-[1]: ../../../../company/dev/index.md#interests
+[1]: ../../../../company/dev/index#interests

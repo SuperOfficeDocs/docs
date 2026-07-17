@@ -50,6 +50,5 @@ using(SoSession mySession = SoSession.Authenticate("SAL0", ""))
 * [How to retrieve an Entity][1]
 * [Retrieve an Entity property through an Entity][2]
 
-<!-- Referenced links -->
-[1]: ../entities/get-entity.md
-[2]: ../entities/get-entity-from-entity.md
+[1]: ../entities/get-entity
+[2]: ../entities/get-entity-from-entity

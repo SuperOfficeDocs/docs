@@ -9,18 +9,14 @@ envir: onsite, online
 ---
 
 # "selectionmembertype" MDO List
+
 MDO provider for the selection archive providers types.
 The items will be added by scanning ArchiveProviderFactory.KnownArchiveProviders for this pattern;
 [TableName]Selection. If the prefix is a known table, the tablename will be added to list with the
 TableNumber as the ID.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SelectionMemberTypeList">SelectionMemberTypeList</see> class.
+Implemented by the `SelectionMemberTypeList` class.
 The name of the MDO list is 'selectionmembertype'.
-
-
-
 
 ## Sample Request
 
@@ -33,10 +29,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selectionmembertype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -52,7 +49,6 @@ foreach (var item in listProvider.RootItems) {
 |127|Products||quoteline|
 |13|Sales||sale|
 |262|Requests||ticket|
-
 
 ## Related MDO Lists
 

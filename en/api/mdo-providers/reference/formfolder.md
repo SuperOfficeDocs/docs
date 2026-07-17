@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "formfolder" MDO List
+
 FormFolderProvider creates a flat or tree list based on the table: s_picture_folder
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.FormFolderProvider">FormFolderProvider</see> class.
+Implemented by the `FormFolderProvider` class.
 The name of the MDO list is 'formfolder'.
 
 ## Additional Attributes
@@ -23,10 +22,6 @@ The name of the MDO list is 'formfolder'.
 |Use hierarchy| hierarchy|true|
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -39,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("formfolder", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -52,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 |-1|(No Selection)|||
-
 
 ## Related MDO Lists
 

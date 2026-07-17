@@ -10,29 +10,28 @@ envir: onsite, online
 
 # "FreetextPerson"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextPersonResultProvider">SuperOffice.CRM.ArchiveLists.FreetextPersonResultProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.FreetextPersonResultProvider` inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Person entity.
 
-
 Use the 'searchwords' restriction with one or more words to specify what to search for. The operator is ignored,
 the freetext search will apply the 'begins' operator to each word and 'AND' between them.
-
 
 It is possible to combine freetext search words with other restrictions and criteria native to the entity and
 its standard subproviders. Note however that this is not the same search as provided by the 'Find' providers, since
 they apply various special rules not present here.
 
-
 Freetext search will limit the number of hits to the first 1000. This clipping is applied before any other criteria,
 as well as before any ORDER BY, are applied.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"person"|Contact|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -128,14 +127,15 @@ as well as before any ORDER BY, are applied.
 |personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
 |restrictionAddress/line3|string|Search address - Address 3: Third line of the address| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/county|string|Search address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
@@ -144,8 +144,8 @@ as well as before any ORDER BY, are applied.
 |restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -240,6 +240,7 @@ as well as before any ORDER BY, are applied.
 |personSourceRelation/restrictionPersonId|int|Source - Company ID: Database ID of company to fetch relations for|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/who| *None* |Source - Full name: Full name of company/contact| x |
@@ -344,6 +345,7 @@ as well as before any ORDER BY, are applied.
 |correspondingAssociate/contactId|int|Company ID: Database ID of the company the user belongs to|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/personId|int|Contact ID: Database ID of the contact row|  |
@@ -429,8 +431,8 @@ as well as before any ORDER BY, are applied.
 |personContact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |personContact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|personContact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|personContact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/restrictionPostalAddress/addressId|int|Postal address - Address ID: Database ID for the address record| x |
 |personContact/restrictionPostalAddress/line1|string|Postal address - Address 1: First line of the address| x |
 |personContact/restrictionPostalAddress/line2|string|Postal address - Address 2: Second line of the address| x |
@@ -441,13 +443,14 @@ as well as before any ORDER BY, are applied.
 |personContact/restrictionPostalAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/restrictionPostalAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |personContact/restrictionPostalAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|personContact/restrictionPostalAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|personContact/restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|personContact/restrictionPostalAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |personContact/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |personContact/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/streetAddress/line3|string|Street address - Address 3: Third line of the address| x |
@@ -457,8 +460,8 @@ as well as before any ORDER BY, are applied.
 |personContact/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |personContact/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|personContact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|personContact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |personContact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |personContact/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -469,8 +472,8 @@ as well as before any ORDER BY, are applied.
 |personContact/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |personContact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|personContact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|personContact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/url/URLAddress|string|URL| x |
 |personContact/url/URLDescription|string|Description| x |
 |personContact/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -552,6 +555,7 @@ as well as before any ORDER BY, are applied.
 |personContact/contactSupportPerson/position|listAny|User support contact - Position| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportPerson/personNumber|string|User support contact - Number: Displays the contact's number| x |
@@ -656,6 +660,7 @@ as well as before any ORDER BY, are applied.
 |personContact/contactUdef/SuperOffice:8|decimal|companydecimal| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/contactUdef/SuperOffice:9|string|page1saleonly| x |
@@ -760,6 +765,7 @@ as well as before any ORDER BY, are applied.
 |request/timeSpent|timeSpan|Time spent: Time spent| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |request/timeToReply|timeSpan|Time to reply: Time to reply| x |
@@ -864,6 +870,7 @@ as well as before any ORDER BY, are applied.
 |request/extra/x\_ticket\_timestamp|datetime|Extra timestamp: Custom date time field on ticket with default = current date + time. Field cannot change. Hide field| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_project\_relation|stringorPK|Extra project: Custom project relation on Request| x |
@@ -968,6 +975,7 @@ as well as before any ORDER BY, are applied.
 |projectMembers/SaintStatus3|saintStatus|Not completed activites with intention sale: Number of not completed activities for intention sale > 0.|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMembers/saintSaleStatus|listAny|With status|  |
@@ -1072,6 +1080,7 @@ as well as before any ORDER BY, are applied.
 |personAppointment/appointment/description|positiveString|Text: Displays the text entered in the description field| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAppointment/appointment/title|positiveString|Title| x |
@@ -1093,5 +1102,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

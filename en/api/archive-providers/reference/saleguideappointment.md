@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "SaleGuideAppointment"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider">SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider` inside NetServer's SODatabase assembly.
 
 Specific provider for Sale Guide Items of type Appointment
 
@@ -18,12 +18,14 @@ This class provides the needed overrides and concrete implementations needed by 
 to drive the sentry calculations, as well as the specialization with the correct root extender
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"suggestedAppointment"|Follow-ups|
 |"appointment"|Follow-ups|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -127,6 +129,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/contactPhone/description|string|Telephone - Description: Phone number description| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactFax/formattedNumber|string|Fax - Phone: Displays phone number|  |
@@ -151,8 +154,8 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |appointmentInstance/contact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |appointmentInstance/contact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|appointmentInstance/contact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/contact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/contact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/contact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/contact/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |appointmentInstance/contact/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |appointmentInstance/contact/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -163,8 +166,8 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |appointmentInstance/contact/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |appointmentInstance/contact/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|appointmentInstance/contact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/contact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/contact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/contact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/contact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |appointmentInstance/contact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |appointmentInstance/contact/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -175,8 +178,8 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |appointmentInstance/contact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |appointmentInstance/contact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|appointmentInstance/contact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/contact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/contact/url/URLAddress|string|URL| x |
 |appointmentInstance/contact/url/URLDescription|string|Description| x |
 |appointmentInstance/contact/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -231,6 +234,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/contactExtra/x\_contact\_default\_integer|int|Extra Default Integer: Custom integer field with default value 123.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactExtra/x\_contact\_float|decimal|Extra Float: Custom float field with 3 decimals| x |
@@ -335,6 +339,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/personDirectPhone/formattedNumber|string|Direct - Phone: Displays phone number|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personDirectPhone/description|string|Direct - Description: Phone number description| x |
@@ -370,8 +375,8 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |appointmentInstance/person/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |appointmentInstance/person/personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|appointmentInstance/person/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/person/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/person/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/person/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/person/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |appointmentInstance/person/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |appointmentInstance/person/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -382,8 +387,8 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |appointmentInstance/person/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |appointmentInstance/person/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|appointmentInstance/person/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|appointmentInstance/person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|appointmentInstance/person/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|appointmentInstance/person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |appointmentInstance/person/personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |appointmentInstance/person/personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |appointmentInstance/person/personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -439,6 +444,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/person/personAssociate/assocName|associate|User ID : User ID| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personAssociate/assocTooltip|string|Description : Description|  |
@@ -543,6 +549,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/project/projectEvent/hasSignOff|bool|Sign Off: Does this event have the Sign Off function enabled| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/project/projectUrl/URLAddress|string|URL| x |
@@ -647,6 +654,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/sale/earningPercent|decimal|Profit as % : The profit as a percentage of the gross sales total| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/sale/probPercent|int|Probability as %: Probability as %| x |
@@ -751,6 +759,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/associate/isActive|bool|Active: Is this user active, and should be able to log in?| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/associate/isActiveText|bool|Active status: Is this user active, and should be able to log in?| x |
@@ -781,5 +790,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

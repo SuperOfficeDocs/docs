@@ -56,7 +56,4 @@ documentInfo.Direction = DocDirection.kIncoming;
 mah.ArchiveDocument(archiveInfo, documentInfo);
 ```
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/diagram.jpg
+[img1]: /media/loc/en/api/diagram.jpg

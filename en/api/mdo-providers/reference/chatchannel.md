@@ -2,7 +2,7 @@
 uid: chatchannel
 title: chatchannel
 keywords: mdoprovider mdo provider chatchannel
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "chatchannel" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ChatChannelProvider">ChatChannelProvider</see> class.
+Implemented by the `ChatChannelProvider` class.
 The name of the MDO list is 'chatchannel'.
 
 ## Additional Attributes
@@ -22,10 +19,6 @@ The name of the MDO list is 'chatchannel'.
 |-----|-----|------|
 |Include ALL value in result or not| notAll|True|
 |Include all chat channels| listAll|False|
-
-
-
-
 
 ## Sample Request
 
@@ -38,10 +31,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("chatchannel", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -51,7 +45,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 |0|All|||
-
 
 ## Related MDO Lists
 

@@ -10,29 +10,28 @@ envir: onsite, online
 
 # "FreetextSelection"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextSelectionResultProvider">SuperOffice.CRM.ArchiveLists.FreetextSelectionResultProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.FreetextSelectionResultProvider` inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Selection entity.
 
-
 Use the 'searchwords' restriction with one or more words to specify what to search for. The operator is ignored,
 the freetext search will apply the 'begins' operator to each word and 'AND' between them.
-
 
 It is possible to combine freetext search words with other restrictions and criteria native to the entity and
 its standard subproviders. Note however that this is not the same search as provided by the 'Find' providers, since
 they apply various special rules not present here.
 
-
 Freetext search will limit the number of hits to the first 1000. This clipping is applied before any other criteria,
 as well as before any ORDER BY, are applied.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"selection"|Selection|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -104,5 +103,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

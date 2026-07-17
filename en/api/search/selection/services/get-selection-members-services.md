@@ -19,11 +19,79 @@ The selection member list is a list of contact and person IDs. The archive expan
 
 ## Example 1
 
-[!code-csharp[CS](includes/get-members-services-1.cs)]
+```csharp CS
+using System.Collections;
+
+using SuperOffice;
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+
+using (SuperOffice.SoSession mySession = SuperOffice.SoSession.Authenticate("sam", "sam"))
+{
+  //Parameter - providerName - The name of the archive provider to use
+  string archiveProviderName = "ContactSelection";
+
+  //Parameter - columns - An array of the names of the columns wanted.
+  string[] archiveColumns = new string[] { "nameDepartment", "fullName", "contactId" };
+
+  //Parameter - sortOrder - Sort order for the archive
+  ArchiveOrderByInfo[] archiveSrtOrd = new ArchiveOrderByInfo[1];
+  archiveSrtOrd[0] = new ArchiveOrderByInfo( "fullName", SuperOffice.Util.OrderBySortType.DESC );
+
+  //Parameter - restriction - Archive restrictions
+  ArchiveRestrictionInfo[] archiveRest = new ArchiveRestrictionInfo[1];
+  archiveRest[0] = new ArchiveRestrictionInfo("selectionId", "=", 58);
+
+  //Parameter - entities - Which entities to include
+  string[] desiredEntities = { "staticContact", "staticPerson", "dynamicContact" };
+
+  //Parameter - page - Page number, page 0 is the first page
+  int page = 1;
+
+  //Parameter - pageSize - Page size
+  int pageSize = 10;
+
+  //Intializing an Archive Agent
+  using(ArchiveAgent newArcAgt = new ArchiveAgent())
+  {
+    // Get a page of results for an archive list, explicitly specifying
+    // the restrictions, orderby and chosen columns
+    ArchiveListItem[] newArcLstItm = newArcAgt.GetArchiveListByColumns(archiveProviderName,
+        archiveColumns, archiveSrtOrd, archiveRest, desiredEntities, page, pageSize);
+
+    int rowNo = 1;
+
+    foreach (ArchiveListItem archiveRow in newArcLstItm)
+    {
+      if (rowNo == 1)
+      {
+        foreach (KeyValuePair<string, ArchiveColumnData> column in archiveRow.ColumnData)
+        {
+          Console.Write(column.Key + "\t");
+        }
+        Console.WriteLine();
+      }
+
+      // extract and display the displayValue of each cell
+      // (you need to parse culturally sensitive values such as dates
+      // to get the correct client display format)
+      foreach (ArchiveColumnData archiveCell in archiveRow.ColumnData.Values)
+      {
+        Console.Write(archiveCell.DisplayValue + "\t");
+      }
+      Console.WriteLine();
+      ++rowNo;
+    }
+  }
+}
+```
 
 Notice how we use the restriction parameter.
 
-[!code-csharp[CS](includes/get-members-services-1.cs?range=20-21)]
+```csharp CS
+  ArchiveRestrictionInfo[] archiveRest = new ArchiveRestrictionInfo[1];
+  archiveRest[0] = new ArchiveRestrictionInfo("selectionId", "=", 58);
+```
 
 We create an `ArchiveRestricitonInfo` to define which selections we want information for. The selection may be a dynamic selection, which uses additional criteria to figure out which Contacts and/ or Persons are members of it. In this case, the `ArchiveProvider` used inside the agent will figure out how to read the selection member, depending on the selection type (dynamic or static).
 
@@ -45,7 +113,66 @@ contactId   nameDepartment          fullName
 
 ## Example 2
 
-[!code-csharp[CS](includes/get-members-services-2.cs)]
+```csharp CS
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+using SuperOffice;
+
+using(SoSession newSession = SoSession.Authenticate("SAL0", ""))
+{
+  //Intializing an Archive Agent
+  using(ArchiveAgent newArcAgt = new ArchiveAgent())
+  {
+    //Setting the Parameters
+
+    //Parameter - Required columns
+    string[] archiveColumns = new string[] { "contactId", "personId", "selectionId" };
+
+    //Parameter - restriction - Archive restrictions
+    ArchiveRestrictionInfo[] archiveRest = new ArchiveRestrictionInfo[1];
+    archiveRest[0] = new ArchiveRestrictionInfo("selectionId", "=", 58);
+
+    //Parameter - page - Page number, page 0 is the first page
+    int page = 0;
+
+    //Parameter - pageSize - Number of records displayed per page
+    int pageSize = 10;
+
+    // Get a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns
+    ArchiveListItem[] arcLstItm = newArcAgt.GetArchiveListByColumns( "ContactSelection", archiveColumns, new ArchiveOrderByInfo[0],  archiveRest, null, page, pageSize);
+
+    int rowNo = 1;
+    //Display the results in the console window
+    foreach (ArchiveListItem archiveRow in arcLstItm)
+    {
+      if (rowNo == 1)
+      {
+        foreach (KeyValuePair<string, ArchiveColumnData> column in archiveRow.ColumnData)
+        {
+          Console.Write(column.Key + "\t");
+        }
+        Console.WriteLine();
+      }
+
+      // extract and display the displayValue of each cell
+      // (you need to parse culturally sensitive values such as dates to get the correct client display format)
+      foreach (ArchiveColumnData archiveCell in archiveRow.ColumnData.Values)
+      {
+        if (archiveCell != null)
+        {
+          Console.Write(archiveCell.DisplayValue + "\t");
+        }
+        else
+        {
+          Console.Write(" " + "\t");
+        }
+      }
+      Console.WriteLine();
+      ++rowNo;
+    }
+  }
+}
+```
 
 Here we display other properties related to members of the selection, such as the `contactId`, `personId`, and `selectionId`. When the `GetArchiveListByColumns` method of the ArchiveAgent is executed, the members that match the given criteria are retrieved from the `selectionmember` table.
 
@@ -67,5 +194,4 @@ contactId   selectionId personId
 
 [Read more about using the ArchiveAgent][1]
 
-<!-- Referenced links -->
-[1]: ../../iarchiveagent/index.md
+[1]: ../../iarchiveagent/index

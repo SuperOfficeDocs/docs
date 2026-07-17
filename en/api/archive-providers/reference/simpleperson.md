@@ -1,7 +1,7 @@
 ---
 uid: SimplePerson
 title: SimplePerson
-description: 
+description:
 keywords: SimplePerson archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "SimplePerson"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SimplePersonsProvider">SuperOffice.CRM.ArchiveLists.SimplePersonsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.SimplePersonsProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"person"|Contact|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -112,8 +114,8 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -121,6 +123,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |restrictionAddress/county|string|Search address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/city|string|Search address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -128,8 +131,8 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -225,6 +228,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personSourceRelation/who| *None* |Source - Full name: Full name of company/contact| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personPersonRelation|listAny|Source - Contact-to-contact relation: Name of relation, not taking into account the relation direction| x |
@@ -329,6 +333,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |correspondingAssociate/personId|int|Contact ID: Database ID of the contact row|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
@@ -413,8 +418,8 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personContact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |personContact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|personContact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|personContact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/restrictionPostalAddress/addressId|int|Postal address - Address ID: Database ID for the address record| x |
 |personContact/restrictionPostalAddress/line1|string|Postal address - Address 1: First line of the address| x |
 |personContact/restrictionPostalAddress/line2|string|Postal address - Address 2: Second line of the address| x |
@@ -425,14 +430,15 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personContact/restrictionPostalAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/restrictionPostalAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |personContact/restrictionPostalAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|personContact/restrictionPostalAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|personContact/restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|personContact/restrictionPostalAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |personContact/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |personContact/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
 |personContact/streetAddress/line3|string|Street address - Address 3: Third line of the address| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/streetAddress/county|string|Street address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
@@ -441,8 +447,8 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personContact/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |personContact/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|personContact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|personContact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |personContact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |personContact/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -453,8 +459,8 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personContact/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personContact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |personContact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|personContact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|personContact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personContact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personContact/url/URLAddress|string|URL| x |
 |personContact/url/URLDescription|string|Description| x |
 |personContact/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -537,6 +543,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personContact/contactSupportPerson/personNumber|string|User support contact - Number: Displays the contact's number| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportPerson/title|string|User support contact - Title: Displays the contact's job title| x |
@@ -641,6 +648,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personContact/contactUdef/SuperOffice:9|string|page1saleonly| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/contactUdef/SuperOffice:10|string|page1marketingonly| x |
@@ -745,6 +753,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |request/timeToReply|timeSpan|Time to reply: Time to reply| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |request/timeToClose|timeSpan|Time to close: Time to close| x |
@@ -849,6 +858,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |request/extra/x\_ticket\_project\_relation|stringorPK|Extra project: Custom project relation on Request| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_faq|stringorPK|Extra FAQ Relation: Extra FAQ Relation| x |
@@ -953,6 +963,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |projectMembers/saintSaleStatus|listAny|With status|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |projectMembers/saintAmountClass|listAny|Amount class|  |
@@ -1057,6 +1068,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personAppointment/appointment/title|positiveString|Title| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personAppointment/appointment/titleHtml| *None* |!!Title Html| x |
@@ -1077,5 +1089,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

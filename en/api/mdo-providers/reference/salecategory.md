@@ -2,7 +2,7 @@
 uid: salecategory
 title: salecategory
 keywords: mdoprovider mdo provider salecategory
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "salecategory" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleCategoryListProvider">SaleCategoryListProvider</see> class.
+Implemented by the `SaleCategoryListProvider` class.
 The name of the MDO list is 'salecategory'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("salecategory", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -46,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 |2|Open|||
 |3|Sold|||
 |4|Stalled|||
-
 
 ## Related MDO Lists
 

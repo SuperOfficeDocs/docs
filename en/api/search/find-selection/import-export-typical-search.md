@@ -10,13 +10,11 @@ redirect_from: /en/api/netserver/search/find-selection/import-export-typical-sea
 
 # Export and import of typical search
 
-<!-- under construction -->
-
 ## Export of typical searches from SOD site to json file
 
 The typical search data that will be stored in customer's databases will be created on a SOD site. Each selection will be marked as a typical search by setting a search category to Typical Search.
 
-The exported typical search criteria data will be exported as ArchiveRestrictionGroups. These ArchiveRestrictionGroups will be mapped to the `Ntypicalsearch_id`. The various id’s stored in the json file are only meant to show the relations between the tables. The id’s that will be generated in the customer’s database will not copy the id’s in the exported json file.
+The exported typical search criteria data will be exported as ArchiveRestrictionGroups. These ArchiveRestrictionGroups will be mapped to the `Ntypicalsearch_id`. The various id's stored in the json file are only meant to show the relations between the tables. The id's that will be generated in the customer's database will not copy the id's in the exported json file.
 
 ## How are the typical searches numbered
 
@@ -69,7 +67,7 @@ The utility uses ordinary NetServer API calls to list and retrieve all selection
 
 The selection name, entity, and long comment are exported. Owner, Category, Completed and Visible for are ignored (since they have no relevant match in a customer database). The selection name will become the TypicalSearch name. If it matches a resource in the Primer Data(8.5) product, module TypicalSearch, then the corresponding translations will be retrieved and exported as a multi-language string. Otherwise, the selection name is used as-is.
 
-The data are exported using the service layer carriers **TypicalSearchConfiguration** -> **TypicalSearch** -> **ArchiveRestrictionGroup** -> **ArchiveRestriction**. The final file format is JSON.
+The data are exported using the service layer carriers **TypicalSearchConfiguration** -\> **TypicalSearch** -\> **ArchiveRestrictionGroup** -\> **ArchiveRestriction**. The final file format is JSON.
 
 The TypicalSearch.Version number is assigned based on a global counter. The first selection is assigned version 1, the second gets 2, etc. In addition, the TypicalSearchExporter uses the ForeignKey feature to store the registered/last updated date together with the assigned version number, for each such selection, in the ACME AS installation. To detect changes in the criteria (which do not update the updated field of the selection itself), a SHA256 hash of all criteria/operators/values is also stored in the foreignkey. The foreignkey value itself is in JSON format.
 
@@ -77,7 +75,7 @@ When an export is performed, if a selection has a newer updated date than the la
 
 ## Updating the customers database
 
-When there has been an update to typical searches, it’s not necessarily the case that all typical searches are new or changed. There may have for example only been changes to one typical search. This one typical search will then have a higher version number than the customers highest typical search version number. However, all the other typical searches will not have changed. To find out what has changed, what is new and what is removed; we compare the customers typical searches with the latest typical searches.
+When there has been an update to typical searches, it's not necessarily the case that all typical searches are new or changed. There may have for example only been changes to one typical search. This one typical search will then have a higher version number than the customers highest typical search version number. However, all the other typical searches will not have changed. To find out what has changed, what is new and what is removed; we compare the customers typical searches with the latest typical searches.
 
 Algorithm for determining what changes to make to the customers database
 
@@ -138,8 +136,4 @@ public void UpdateToLatestTypicalSearches()
 }
 ```
 
-<!-- Referenced links -->
-
-[1]: ../../tutorials/native-app-quickstart.md
-
-<!-- Referenced images -->
+[1]: ../../tutorials/native-app-quickstart

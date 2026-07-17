@@ -49,7 +49,7 @@ You may notice that we pass the bool value True as a parameter to the `GetAssoci
 
 ## Example 2
 
-In the next example let’s try out how we can get a list grouped on user groups.
+In the next example let's try out how we can get a list grouped on user groups.
 
 ```csharp
 using SuperOffice.CRM.Services;
@@ -83,11 +83,10 @@ using(SoSession session = SoSession.Authenticate("SAL0", ""))
 }
 ```
 
-In this example, the only difference from the first example is that we don’t tell NetServer explicitly to give us a flat list by not supplying a parameter for the method `GetAssociateList`. This means that all the **associates will be returned grouped** on the user groups that they belong to.
+In this example, the only difference from the first example is that we don't tell NetServer explicitly to give us a flat list by not supplying a parameter for the method `GetAssociateList`. This means that all the **associates will be returned grouped** on the user groups that they belong to.
 
 When a list of this type is returned, the associates that belong to each group will be under the `Items` property of the `HeadingItems` property of the main list. That is the reason that we have to traverse through the `HeadingItems` to get to the associates of each group.
 
 These examples are only one usage of the [associate list][1], but there can be many more innovative designs using the provided functionality, the creativity is up to the user.
 
-<!-- Referenced links -->
-[1]: ../../../../contact/dev/index.md#associate
+[1]: ../../../../contact/dev/index#associate

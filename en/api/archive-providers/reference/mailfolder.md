@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "MailFolder"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailFolderProvider">SuperOffice.CRM.ArchiveLists.MailFolderProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.MailFolderProvider` inside NetServer's SODatabase assembly.
 
 Provides list of subscribed and unsubscribed mail folders available for an account
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailfolder"|(mailfolder)|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |id| *None* |id|  |
@@ -36,5 +38,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

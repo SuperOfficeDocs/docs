@@ -30,5 +30,4 @@ using( new CultureSettingHelper("es-ES") )
 
 Multiple overloads enable more behaviors. See the [CultureSettingsHelper reference][1] for more details.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Globalization.CultureSettingHelper>

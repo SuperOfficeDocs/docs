@@ -9,17 +9,13 @@ envir: onsite, online
 ---
 
 # "form" MDO List
+
 Get all forms with folder hierarchy.
 Set ExtraInfo "onlyActive=true" if you only want to get active forms and "onlyNewTicket=true" if only forms that create tickets.
 Set extrainfo "onlyForms=true" if you do not want form templates.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.FormProvider">FormProvider</see> class.
+Implemented by the `FormProvider` class.
 The name of the MDO list is 'form'.
-
-
-
 
 ## Sample Request
 
@@ -32,10 +28,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("form", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -45,7 +42,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

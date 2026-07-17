@@ -31,7 +31,56 @@ The sentry rules will automatically be applied to NetServer and passed along to 
 
 ## Code
 
-[!code-csharp[CS](includes/use-basic-plugin.cs)]
+```csharp CS
+using SuperOffice.CRM.Security;
+using SuperOffice.CRM.Rows;
+using SuperOffice.CRM.Entities;
+using SuperOffice;
+int contactId;
+using (SoSession mySession = SoSession.Authenticate("SAL0",""))
+{
+  //Create a New Contact entity
+  Contact contactEntity = Contact.CreateNew();
+  //set default values
+  contactEntity.SetDefaults();
+  //Give a name
+  contactEntity.Name = "Test ContactSentryPlugin";
+  //Give a department name that ends with "_"
+  contactEntity.Department = "enable plugin_";
+  //Set a text for the info property
+  contactEntity.Info.Text = "My own data";
+  //retrive the Table right object for the contact
+  TableRight tableRight = contactEntity.Row.Sentries.TableRight(contactEntity.TableInfo);
+  //check to see if we have the update rights
+  bool hasUpdate = tableRight.HasUpdate;
+  // returns true, since we are owner
+
+  //save the contact
+  contactEntity.Save();
+  //retrive the id of the saved contact
+  contactId = contactEntity.ContactId;
+}
+
+//lets login with a different user
+using (SoSession mySession = SoSession.Authenticate("adm0", ""))
+{
+  Contact contactEntity = Contact.GetFromIdxContactId(contactId);
+  TableRight tableRight = contactEntity.Row.Sentries.TableRight(contactEntity.TableInfo);
+  //lets check for the rights a different user
+  bool hasUpdate = tableRight.HasUpdate;
+  // returns false, since we are not owner, and ends in underscore
+}
+
+//lets login with the owner of the record again
+using (SoSession mySession = SoSession.Authenticate("sal0", ""))
+{
+  Contact contactEntity = Contact.GetFromIdxContactId(contactId);
+  TableRight tableRight = contactEntity.Row.Sentries.TableRight(contactEntity.TableInfo);
+  //lets check for the rights of the owner
+  bool hasUpdate = tableRight.HasUpdate;
+  // returns true, since we are owner
+}
+```
 
 ## Walk-through
 
@@ -45,7 +94,7 @@ Now if we check for the rights of the table, it should be `HasUpdate` true. Belo
 
 ![01][img1]
 
-Now let’s log in with a different user and retrieve the earlier created contact entity. When we check the update rights we get a picture like this:
+Now let's log in with a different user and retrieve the earlier created contact entity. When we check the update rights we get a picture like this:
 
 ![02][img2]
 
@@ -59,10 +108,8 @@ Now to verify things, let's log in with the owner of the record again in this ca
 
 So now we can see that our logic is working and we can add our own sentry mechanism on top of what NetServer already has.
 
-<!-- Referenced links -->
-[1]: create-sentry-plugin.md
+[1]: ./create-sentry-plugin
 
-<!-- Referenced images -->
-[img1]: media/image001.jpg
-[img2]: media/image002.jpg
-[img3]: media/image003.jpg
+[img1]: /media/loc/en/api/image001-8.jpg
+[img2]: /media/loc/en/api/image002-6.jpg
+[img3]: /media/loc/en/api/image003-4.jpg

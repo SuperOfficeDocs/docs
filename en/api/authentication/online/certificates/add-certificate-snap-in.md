@@ -1,7 +1,7 @@
 ---
 title: How to install the Certificate snap-in
 uid: add_certificate_snap_in
-description: How to install the Certificate snap-in on Windows 
+description: How to install the Certificate snap-in on Windows
 author: SuperOffice Product and Engineering
 keywords:
 content_type: howto
@@ -41,12 +41,10 @@ The **Certificate** snap-in is a useful tool when configuring certificates.
 
 You can now proceed to [configure certificates][1].
 
-<!-- Referenced links -->
-[1]: configure.md
+[1]: ./configure
 
-<!-- Referenced images -->
-[img1]: media/rundialog.png
-[img2]: media/addremovesnapin.png
-[img3]: media/mmc-certs-snapin.png
-[img4]: media/selectlocalcomputer.png
-[img5]: media/addremoveadded.png
+[img1]: /media/loc/en/api/rundialog.png
+[img2]: /media/loc/en/api/addremovesnapin.png
+[img3]: /media/loc/en/api/mmc-certs-snapin.png
+[img4]: /media/loc/en/api/selectlocalcomputer.png
+[img5]: /media/loc/en/api/addremoveadded.png

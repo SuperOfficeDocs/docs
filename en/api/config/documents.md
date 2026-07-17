@@ -44,7 +44,7 @@ To restrict access to the document archive, specify domain credentials with read
 | BufferSize | Size in kilobytes of the internal buffer used for file handling. | 1024 |
 | CanCreateDocumentTemplates | New document templates can be stored in SoArc. | |
 | ImpersonateUser | Impersonate the user to access the document archive? If SO_ARC is located on a different server in the domain, you need to turn this on. Will also be used to write file streams to the temp area. See section ArchiveUser for further reference. | |
-| TemplatePath | The UNC path to document templates. If this value is not specified, the "Template" folder under ArchivePath is assumed. | |
+| TemplatePath | The UNC path to document templates. If this value is not specified, the "Template" folder under ArchivePath is assumed. | |
 | TemplateRelativePath | Directory path relative to Azure Blob Storage Container root used when running in public cloud. | |
 | TemporaryPath | Temporary folder for working with documents. If this value does not exist, the environment variable "TEMP" is used to find the temporary folder. Must resolve to the same location for farms/clusters. | |
 | TemporaryRelativePath | Directory path relative to Azure Blob Storage Container root used when running in public cloud. | |
@@ -77,5 +77,4 @@ If the impersonation is set to true, the domain, user, and password values for a
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.Documents>

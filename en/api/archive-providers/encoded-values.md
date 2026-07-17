@@ -45,5 +45,4 @@ Although query restrictions do not have to encode parameter values when settings
 
 * [Aggregation][1]
 
-<!-- Referenced links -->
-[1]: data-aggregation.md
+[1]: ./data-aggregation

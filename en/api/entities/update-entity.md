@@ -59,6 +59,5 @@ if (newSale.IsDirty == true)
 * [Update an Entity through an Entity][1]
 * [Update a Row through an Entity][2]
 
-<!-- Referenced links -->
-[1]: update-entity-in-entity.md
-[2]: ../rows/update-row-in-entity.md
+[1]: ./update-entity-in-entity
+[2]: ../rows/update-row-in-entity

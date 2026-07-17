@@ -13,14 +13,12 @@ redirect_from: /en/api/netserver/plugins/quote-connectors/save-quote
 
 ![18][img1]
 
-The sale is updated with the preferred alternative’s total amount when the **Quote** dialog is closed.
+The sale is updated with the preferred alternative's total amount when the **Quote** dialog is closed.
 
-After the sale and quote have been written to the database, the `OnAfterSaveQuote` is called for each alternative in turn. The method cannot edit the quote – it is intended for the connector to update the ERP with any interesting changes (for keeping the ERP system up to date regarding the SuperOffice quote).
+After the sale and quote have been written to the database, the `OnAfterSaveQuote` is called for each alternative in turn. The method cannot edit the quote - it is intended for the connector to update the ERP with any interesting changes (for keeping the ERP system up to date regarding the SuperOffice quote).
 
 [Sending Quotes][1]
 
-<!-- Referenced links -->
-[1]: send-quote.md
+[1]: ./send-quote
 
-<!-- Referenced images -->
-[img1]: media/image018.jpg
+[img1]: /media/loc/en/api/image018.jpg

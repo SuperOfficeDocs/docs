@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "CustomObjectStaticSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionStaticProviderV2` inside NetServer's SODatabase assembly.
 
 Static archive Provider for a Selection of CustomObject archive.
 

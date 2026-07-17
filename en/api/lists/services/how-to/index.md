@@ -23,14 +23,11 @@ As the name implies, the `List` endpoint provides access to **all lists**. The L
 * [Create a list item][7]
 * [Delete a list item][8]
 
-<!-- Referenced links -->
-[1]: get-all-lists.md
-[2]: get-list-entity.md
-[3]: get-list-item.md
-[4]: get-list-items.md
-[5]: create-list.md
-[6]: delete-list.md
-[7]: create-list-item.md
-[8]: delete-list-item.md
-
-<!-- Referenced images -->
+[1]: ./get-all-lists
+[2]: ./get-list-entity
+[3]: ./get-list-item
+[4]: ./get-list-items
+[5]: ./create-list
+[6]: ./delete-list
+[7]: ./create-list-item
+[8]: ./delete-list-item

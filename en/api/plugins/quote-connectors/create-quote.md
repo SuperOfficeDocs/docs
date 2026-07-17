@@ -23,7 +23,7 @@ redirect_from: /en/api/netserver/plugins/quote-connectors/create-quote
 
 ## Product and price list information
 
-This part of the connector interface searches the ERP system’s product and price list information.
+This part of the connector interface searches the ERP system's product and price list information.
 
 If an ERP system does not provide products, the product searches can be delegated to the built-in SuperOffice product registry by using the `QuoteConnectorExtender` class as a base.
 
@@ -53,12 +53,10 @@ Gets all `PriceLists` in the given currency, including those inactive. Will retu
 
 Currently not used.
 
-<!-- Referenced links -->
 [1]: http://www.currency-iso.org/dl_iso_table_a1.xls
 
-<!-- Referenced images -->
-[img1]: media/create-quote.png
-[img2]: media/image008.jpg
-[img3]: media/image009.png
-[img4]: media/image010.png
-[img5]: media/image011.jpg
+[img1]: /media/loc/en/api/create-quote.png
+[img2]: /media/loc/en/api/image008-2.jpg
+[img3]: /media/loc/en/api/image009-2.png
+[img4]: /media/loc/en/api/image010-1.png
+[img5]: /media/loc/en/api/image011-1.jpg

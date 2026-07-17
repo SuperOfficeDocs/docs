@@ -35,7 +35,7 @@ The values are identified by the `ForeingDevice` and `ForeignApp` tables.
 
 `ForeignApp` defines a sync application. An application is present on one or more devices.
 
-It is the starting point for the foreign key identity because you cannot get a `ForeignDevice` row without a ForeignApp. Links the foreign key and the external application. Each application should have a unique ForeignApp.If you’re not dealing with devices, then just repeat the application name, or use a blank string.
+It is the starting point for the foreign key identity because you cannot get a `ForeignDevice` row without a ForeignApp. Links the foreign key and the external application. Each application should have a unique ForeignApp.If you're not dealing with devices, then just repeat the application name, or use a blank string.
 
 ### ForeignDevice
 
@@ -94,10 +94,8 @@ using(SoSession.Authenticate("SAL1" , ""))
 * [foreigndevice table][2]
 * [foreignkey table][3]
 
-<!-- Referenced links -->
-[1]: ../../database/tables/foreignapp.md
-[2]: ../../database/tables/foreigndevice.md
-[3]: ../../database/tables/foreignkey.md
+[1]: ../../database/tables/foreignapp
+[2]: ../../database/tables/foreigndevice
+[3]: ../../database/tables/foreignkey
 
-<!-- Referenced images -->
-[img1]: media/foreign-keys.gif
+[img1]: /media/loc/en/api/foreign-keys.gif

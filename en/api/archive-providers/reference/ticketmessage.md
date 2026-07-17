@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "TicketMessage"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.TicketMessageProvider">SuperOffice.CRM.ArchiveLists.TicketMessageProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.TicketMessageProvider` inside NetServer's SODatabase assembly.
 
 Messages on support tickets. Messages are typically e-mail messages with attachments, but not always.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"ticketmessage"|Ticket Message|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -123,6 +125,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/createdBy/personEmail|string|Request - Created by - E-mail| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ticket/createdBy/locationAddress|string|Request - Created by - Location: Location| x |
@@ -227,6 +230,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/person/personMobilePhone/description|string|Request - Mobile - Description: Phone number description| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ticket/person/personPrivate/formattedNumber|string|Request - Private - Phone: Displays phone number|  |
@@ -259,8 +263,8 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/person/personAddress/state|string|Request - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |ticket/person/personAddress/wgs84latitude|decimal|Request - Contact address - Latitude: Latitude| x |
 |ticket/person/personAddress/wgs84longitude|decimal|Request - Contact address - Longitude: Longitude| x |
-|ticket/person/personAddress/formattedAddress| *None* |Request - Contact address - {formattedAddress}: {formattedAddress}|  |
-|ticket/person/personAddress/formattedMultiLineAddress| *None* |Request - Contact address - {formattedAddress}: {formattedAddress}|  |
+|ticket/person/personAddress/formattedAddress| *None* |Request - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|ticket/person/personAddress/formattedMultiLineAddress| *None* |Request - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |ticket/person/restrictionAddress/addressId|int|Request - Search address - Address ID: Database ID for the address record| x |
 |ticket/person/restrictionAddress/line1|string|Request - Search address - Address 1: First line of the address| x |
 |ticket/person/restrictionAddress/line2|string|Request - Search address - Address 2: Second line of the address| x |
@@ -271,8 +275,8 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/person/restrictionAddress/state|string|Request - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |ticket/person/restrictionAddress/wgs84latitude|decimal|Request - Search address - Latitude: Latitude| x |
 |ticket/person/restrictionAddress/wgs84longitude|decimal|Request - Search address - Longitude: Longitude| x |
-|ticket/person/restrictionAddress/formattedAddress| *None* |Request - Search address - {formattedAddress}: {formattedAddress}|  |
-|ticket/person/restrictionAddress/formattedMultiLineAddress| *None* |Request - Search address - {formattedAddress}: {formattedAddress}|  |
+|ticket/person/restrictionAddress/formattedAddress| *None* |Request - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|ticket/person/restrictionAddress/formattedMultiLineAddress| *None* |Request - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |ticket/person/personInterestIds|listInterest|Request - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |ticket/person/personUdef/SuperOffice:1|string|Request - contactshorttext: tooltipshorttext| x |
 |ticket/person/personUdef/SuperOffice:2|string|Request - contactlongtext: tooltiplongtext| x |
@@ -331,6 +335,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/person/personAssociate/ejUserId|int|Request - Service user ID: The database ID of a Service user|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ticket/person/personAssociate/simultaneousEjUser|bool|Request - Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
@@ -435,6 +440,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/contact/email/emailLastBounce|datetime|Request - Last bounce: Date and time for last bounce to this e-mail address| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ticket/contact/email/emailHasBounced|bool|Request - Has bounced: This checkbox is active if delivery to this e-mail address has failed.| x |
@@ -448,8 +454,8 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/contact/postAddress/state|string|Request - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |ticket/contact/postAddress/wgs84latitude|decimal|Request - Postal address - Latitude: Latitude| x |
 |ticket/contact/postAddress/wgs84longitude|decimal|Request - Postal address - Longitude: Longitude| x |
-|ticket/contact/postAddress/formattedAddress| *None* |Request - Postal address - {formattedAddress}: {formattedAddress}|  |
-|ticket/contact/postAddress/formattedMultiLineAddress| *None* |Request - Postal address - {formattedAddress}: {formattedAddress}|  |
+|ticket/contact/postAddress/formattedAddress| *None* |Request - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|ticket/contact/postAddress/formattedMultiLineAddress| *None* |Request - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |ticket/contact/streetAddress/addressId|int|Request - Street address - Address ID: Database ID for the address record| x |
 |ticket/contact/streetAddress/line1|string|Request - Street address - Address 1: First line of the address| x |
 |ticket/contact/streetAddress/line2|string|Request - Street address - Address 2: Second line of the address| x |
@@ -460,8 +466,8 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/contact/streetAddress/state|string|Request - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |ticket/contact/streetAddress/wgs84latitude|decimal|Request - Street address - Latitude: Latitude| x |
 |ticket/contact/streetAddress/wgs84longitude|decimal|Request - Street address - Longitude: Longitude| x |
-|ticket/contact/streetAddress/formattedAddress| *None* |Request - Street address - {formattedAddress}: {formattedAddress}|  |
-|ticket/contact/streetAddress/formattedMultiLineAddress| *None* |Request - Street address - {formattedAddress}: {formattedAddress}|  |
+|ticket/contact/streetAddress/formattedAddress| *None* |Request - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|ticket/contact/streetAddress/formattedMultiLineAddress| *None* |Request - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |ticket/contact/restrictionAddress/addressId|int|Request - Search address - Address ID: Database ID for the address record| x |
 |ticket/contact/restrictionAddress/line1|string|Request - Search address - Address 1: First line of the address| x |
 |ticket/contact/restrictionAddress/line2|string|Request - Search address - Address 2: Second line of the address| x |
@@ -472,8 +478,8 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/contact/restrictionAddress/state|string|Request - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |ticket/contact/restrictionAddress/wgs84latitude|decimal|Request - Search address - Latitude: Latitude| x |
 |ticket/contact/restrictionAddress/wgs84longitude|decimal|Request - Search address - Longitude: Longitude| x |
-|ticket/contact/restrictionAddress/formattedAddress| *None* |Request - Search address - {formattedAddress}: {formattedAddress}|  |
-|ticket/contact/restrictionAddress/formattedMultiLineAddress| *None* |Request - Search address - {formattedAddress}: {formattedAddress}|  |
+|ticket/contact/restrictionAddress/formattedAddress| *None* |Request - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|ticket/contact/restrictionAddress/formattedMultiLineAddress| *None* |Request - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |ticket/contact/url/URLAddress|string|Request - URL| x |
 |ticket/contact/url/URLDescription|string|Request - Description| x |
 |ticket/contact/contactAssociate/firstName|string|Request - First name: Displays the contact's first name| x |
@@ -539,6 +545,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/contact/contactExtra/x\_contact\_contact\_relation|stringorPK|Request - Extra Company: Custom company relation. Do not show one-to-many relations. Show function buttons| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ticket/contact/contactExtra/x\_contact\_request\_relation|stringorPK|Request - Extra Request relation: Request relation on company| x |
@@ -643,6 +650,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/sale/description|string|Request - Description: The long description field on Sale|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ticket/sale/activeErpLinks|bool|Request - ERP connected: Is there an active ERP Sync?| x |
@@ -747,6 +755,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |ticket/project/projectAssociate/contactDepartment|string|Request - Owning department: Name of the department at the company the user belongs to| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ticket/project/projectAssociate/usergroup|userGroup|Request - Primary group: The user's primary user group| x |
@@ -851,6 +860,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 |person/personCategoryRank|int|Contact - !!Category rank| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/personBusiness|listAny|Contact - Business| x |
@@ -884,5 +894,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

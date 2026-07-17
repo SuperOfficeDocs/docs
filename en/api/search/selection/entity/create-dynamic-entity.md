@@ -11,7 +11,7 @@ redirect_from: /en/api/netserver/search/selection/entity/create-dynamic-entity
 
 # Creating a dynamic selection using entities
 
-As the word implies, a dynamic selection is **a selection that is bound to change dynamically** and it’s **based on search criteria** and not just static members.
+As the word implies, a dynamic selection is **a selection that is bound to change dynamically** and it's **based on search criteria** and not just static members.
 
 A typical criterion would be "Add all contacts with a specific business type". This would cause the member count of this selection to increase each time a new contact is added to the database that matches the business type specified as a search criterion for this selection. You may have as many search criteria as you want.
 
@@ -49,7 +49,7 @@ using(SoSession mySession = SoSession.Authenticate("SAL0",""))
   restrictions[0] = new ArchiveRestrictionInfo("business", "is", "4");
 
   //specify the second restriction. Here we are restricting the contact
-  //to the contacts that starts with “c”
+  //to the contacts that starts with "c"
   restrictions[1] = new ArchiveRestrictionInfo("name", "begins", "c");
 
   //to store our selection restriction we need a restriction storage
@@ -77,6 +77,5 @@ Once we have the restrictions ready, we need to store them against the selection
 
 Now that we have completed the job, you can open SuperOffice and view this selection. [See screenshot of the dialog.][2]
 
-<!-- Referenced links -->
-[1]: ../../../entities/index.md
-[2]: ../dynamic-selections.md
+[1]: ../../../entities/index
+[2]: ../dynamic-selections

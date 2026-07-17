@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "TemplateLanguage"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive___ListItems.TemplateLanguageProvider">SuperOffice.CRM.ArchiveLists.Archive___ListItems.TemplateLanguageProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive___ListItems.TemplateLanguageProvider` inside NetServer's SODatabase assembly.
 
 Archive Provider for retriving the registered languages for a given document template.
 The provider will use the document plugin to get the languages registered.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"templatelanguage"|(templatelanguage)|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |id| *None* |id|  |
@@ -36,5 +38,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

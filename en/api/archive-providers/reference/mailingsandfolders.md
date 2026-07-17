@@ -10,22 +10,22 @@ envir: onsite, online
 
 # "MailingsAndFolders"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailingsAndFoldersProvider">SuperOffice.CRM.ArchiveLists.MailingsAndFoldersProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.MailingsAndFoldersProvider` inside NetServer's SODatabase assembly.
 
 Combined archive of mailings (s_shipment) and mailing folders
-(s_picture_folder, folder_type = shipmentFolder) — analogous to
+(s_picture_folder, folder_type = shipmentFolder) - analogous to
 <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowsAndFoldersProvider" />.
 
 Unified row schema (after the column-name overrides set up below):
-- PrimaryKey      — row's own id
-- mailingFolderId — row's container folder id (for filtering)
-- name            — display label (mailing description on mailings,
+- PrimaryKey      - row's own id
+- mailingFolderId - row's container folder id (for filtering)
+- name            - display label (mailing description on mailings,
 folder name on folders), via overrides
-- thumbnail       — preview image / folder icon hint (native on both)
+- thumbnail       - preview image / folder icon hint (native on both)
 
 Client filter `mailingFolderId = N` returns mailings whose
 s_shipment.FolderId = N AND folders whose s_picture_folder.ParentId = N
-— i.e. everything contained in folder N.
+- i.e. everything contained in folder N.
 
 The name overrides are applied here (not by renaming the underlying
 extender columns) so MailingsExtenderBase keeps its native
@@ -34,12 +34,14 @@ extender columns) so MailingsExtenderBase keeps its native
 EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailingfolder"|mailingfolder|
 |"all"|All|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -136,13 +138,14 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/postAddress/state| *None* |Company - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |mailingAddr/contact/postAddress/wgs84latitude| *None* |Company - Postal address - Latitude: Latitude|  |
 |mailingAddr/contact/postAddress/wgs84longitude| *None* |Company - Postal address - Longitude: Longitude|  |
-|mailingAddr/contact/postAddress/formattedAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/postAddress/formattedAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/streetAddress/addressId| *None* |Company - Street address - Address ID: Database ID for the address record|  |
 |mailingAddr/contact/streetAddress/line1| *None* |Company - Street address - Address 1: First line of the address|  |
 |mailingAddr/contact/streetAddress/line2| *None* |Company - Street address - Address 2: Second line of the address|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/streetAddress/line3| *None* |Company - Street address - Address 3: Third line of the address|  |
@@ -152,8 +155,8 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/streetAddress/state| *None* |Company - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |mailingAddr/contact/streetAddress/wgs84latitude| *None* |Company - Street address - Latitude: Latitude|  |
 |mailingAddr/contact/streetAddress/wgs84longitude| *None* |Company - Street address - Longitude: Longitude|  |
-|mailingAddr/contact/streetAddress/formattedAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/streetAddress/formattedAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/restrictionAddress/addressId| *None* |Company - Search address - Address ID: Database ID for the address record|  |
 |mailingAddr/contact/restrictionAddress/line1| *None* |Company - Search address - Address 1: First line of the address|  |
 |mailingAddr/contact/restrictionAddress/line2| *None* |Company - Search address - Address 2: Second line of the address|  |
@@ -164,8 +167,8 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/restrictionAddress/state| *None* |Company - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |mailingAddr/contact/restrictionAddress/wgs84latitude| *None* |Company - Search address - Latitude: Latitude|  |
 |mailingAddr/contact/restrictionAddress/wgs84longitude| *None* |Company - Search address - Longitude: Longitude|  |
-|mailingAddr/contact/restrictionAddress/formattedAddress| *None* |Company - Search address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/restrictionAddress/formattedMultiLineAddress| *None* |Company - Search address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/restrictionAddress/formattedAddress| *None* |Company - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/restrictionAddress/formattedMultiLineAddress| *None* |Company - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/url/URLAddress| *None* |Company - URL|  |
 |mailingAddr/contact/url/URLDescription| *None* |Company - Description|  |
 |mailingAddr/contact/contactAssociate/firstName| *None* |Company - First name: Displays the contact's first name|  |
@@ -247,6 +250,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/contact/LastCompletedSale| *None* |Company - Date of last completed sale|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/LastDoBySale| *None* |Company - Date of last non-completed sale|  |
@@ -351,6 +355,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/personAddress/line3| *None* |Contact - Contact address - Address 3: Third line of the address|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAddress/county| *None* |Contact - Contact address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.|  |
@@ -359,8 +364,8 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/personAddress/state| *None* |Contact - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |mailingAddr/person/personAddress/wgs84latitude| *None* |Contact - Contact address - Latitude: Latitude|  |
 |mailingAddr/person/personAddress/wgs84longitude| *None* |Contact - Contact address - Longitude: Longitude|  |
-|mailingAddr/person/personAddress/formattedAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/person/personAddress/formattedAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/person/restrictionAddress/addressId| *None* |Contact - Search address - Address ID: Database ID for the address record|  |
 |mailingAddr/person/restrictionAddress/line1| *None* |Contact - Search address - Address 1: First line of the address|  |
 |mailingAddr/person/restrictionAddress/line2| *None* |Contact - Search address - Address 2: Second line of the address|  |
@@ -371,8 +376,8 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/restrictionAddress/state| *None* |Contact - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |mailingAddr/person/restrictionAddress/wgs84latitude| *None* |Contact - Search address - Latitude: Latitude|  |
 |mailingAddr/person/restrictionAddress/wgs84longitude| *None* |Contact - Search address - Longitude: Longitude|  |
-|mailingAddr/person/restrictionAddress/formattedAddress| *None* |Contact - Search address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/person/restrictionAddress/formattedMultiLineAddress| *None* |Contact - Search address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/person/restrictionAddress/formattedAddress| *None* |Contact - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/person/restrictionAddress/formattedMultiLineAddress| *None* |Contact - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/person/personInterestIds| *None* |Contact - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |mailingAddr/person/personUdef/SuperOffice:1| *None* |Contact - contactshorttext: tooltipshorttext|  |
 |mailingAddr/person/personUdef/SuperOffice:2| *None* |Contact - contactlongtext: tooltiplongtext|  |
@@ -455,6 +460,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |mailingAddr/person/correspondingAssociate/contactDepartment| *None* |Contact - Owning department: Name of the department at the company the user belongs to|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/correspondingAssociate/usergroup| *None* |Contact - Primary group: The user's primary user group|  |
@@ -559,6 +565,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |emailFlow/workflowAssociate/usergroupId| *None* |Owner - Group ID: The user's primary user group|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowAssociate/contactFullName| *None* |Owner - Owner: Name and department of the company the user belongs to|  |
@@ -585,7 +592,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |emailFlow/hierarchyFullname| *None* |Hierarchy name: The full name/path from table hierarchy|  |
 |emailFlow/hierarchyName| *None* |Hierarchy name: The full name/path from table hierarchy|  |
 |emailFlow/hierarchyParentId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
-|emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 |project/completed| *None* |Completed: Displays a check mark indicating if the project has been completed.|  |
 |project/projectId| *None* |DB ID: Displays the database ID for a project row|  |
 |project/name| *None* |Project name: Displays the Project's name|  |
@@ -663,6 +670,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 |project/projectUdef/SuperOffice:7| *None* |projectdropdownlistbox|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |project/projectUdef/SuperOffice:8| *None* |projectdecimal|  |
@@ -704,5 +712,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

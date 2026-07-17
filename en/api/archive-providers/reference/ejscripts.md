@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "Ejscripts"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EjscriptsProvider">SuperOffice.CRM.ArchiveLists.EjscriptsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.EjscriptsProvider` inside NetServer's SODatabase assembly.
 
 Archive of CRM Scripts - used by the web api and partners.
 Lists all CRM Scripts in the ejScript table.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"ejscript"|ejscript|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -43,7 +45,7 @@ Lists all CRM Scripts in the ejScript table.
 |hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 
 ## Sample
 
@@ -55,5 +57,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

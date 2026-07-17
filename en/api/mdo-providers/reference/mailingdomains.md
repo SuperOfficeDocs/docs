@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "mailingdomains" MDO List
+
 MDO list provider for Mailing domains, including leading @
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.MailingDomainsProvider">MailingDomainsProvider</see> class.
+Implemented by the `MailingDomainsProvider` class.
 The name of the MDO list is 'mailingdomains'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("mailingdomains", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -43,7 +40,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

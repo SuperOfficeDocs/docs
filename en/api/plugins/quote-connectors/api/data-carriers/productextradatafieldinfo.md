@@ -29,7 +29,7 @@ How the value should be interpreted.
 
 ### Culture
 
-To ensure that values in the `value` field are correctly displayed according to the user’s culture setup, we have a little system for making this work correctly. You just wrap the values in \[\] brackets with a format specifier, like this:
+To ensure that values in the `value` field are correctly displayed according to the user's culture setup, we have a little system for making this work correctly. You just wrap the values in \[\] brackets with a format specifier, like this:
 
 | Valuetype | Symbol | Comment | Example |
 |---|---|---|---|

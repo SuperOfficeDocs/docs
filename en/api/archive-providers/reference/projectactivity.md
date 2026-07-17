@@ -10,11 +10,12 @@ envir: onsite, online
 
 # "ProjectActivity"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ProjectActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.ProjectActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ProjectActivityArchiveProvider` inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Project card
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailing"|Mailings|
@@ -22,6 +23,7 @@ Activity archive provider for the Project card
 |"appointment"|Follow-ups|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -117,14 +119,15 @@ Activity archive provider for the Project card
 |mailingAddr/contact/postAddress/state|string|Company - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/contact/postAddress/wgs84latitude|decimal|Company - Postal address - Latitude: Latitude| x |
 |mailingAddr/contact/postAddress/wgs84longitude|decimal|Company - Postal address - Longitude: Longitude| x |
-|mailingAddr/contact/postAddress/formattedAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/postAddress/formattedAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/streetAddress/addressId|int|Company - Street address - Address ID: Database ID for the address record| x |
 |mailingAddr/contact/streetAddress/line1|string|Company - Street address - Address 1: First line of the address| x |
 |mailingAddr/contact/streetAddress/line2|string|Company - Street address - Address 2: Second line of the address| x |
 |mailingAddr/contact/streetAddress/line3|string|Company - Street address - Address 3: Third line of the address| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/streetAddress/county|string|Company - Street address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
@@ -133,8 +136,8 @@ Activity archive provider for the Project card
 |mailingAddr/contact/streetAddress/state|string|Company - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/contact/streetAddress/wgs84latitude|decimal|Company - Street address - Latitude: Latitude| x |
 |mailingAddr/contact/streetAddress/wgs84longitude|decimal|Company - Street address - Longitude: Longitude| x |
-|mailingAddr/contact/streetAddress/formattedAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/streetAddress/formattedAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/restrictionAddress/addressId|int|Company - Search address - Address ID: Database ID for the address record| x |
 |mailingAddr/contact/restrictionAddress/line1|string|Company - Search address - Address 1: First line of the address| x |
 |mailingAddr/contact/restrictionAddress/line2|string|Company - Search address - Address 2: Second line of the address| x |
@@ -145,8 +148,8 @@ Activity archive provider for the Project card
 |mailingAddr/contact/restrictionAddress/state|string|Company - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/contact/restrictionAddress/wgs84latitude|decimal|Company - Search address - Latitude: Latitude| x |
 |mailingAddr/contact/restrictionAddress/wgs84longitude|decimal|Company - Search address - Longitude: Longitude| x |
-|mailingAddr/contact/restrictionAddress/formattedAddress| *None* |Company - Search address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/restrictionAddress/formattedMultiLineAddress| *None* |Company - Search address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/restrictionAddress/formattedAddress| *None* |Company - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/restrictionAddress/formattedMultiLineAddress| *None* |Company - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/url/URLAddress|string|Company - URL| x |
 |mailingAddr/contact/url/URLDescription|string|Company - Description| x |
 |mailingAddr/contact/contactAssociate/firstName|string|Company - First name: Displays the contact's first name| x |
@@ -229,6 +232,7 @@ Activity archive provider for the Project card
 |mailingAddr/contact/LastDoBySale|date|Company - Date of last non-completed sale|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/NumberOfTickets|int|Company - Number of requests|  |
@@ -333,6 +337,7 @@ Activity archive provider for the Project card
 |mailingAddr/person/personAddress/county|string|Contact - Contact address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAddress/city|string|Contact - Contact address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -340,8 +345,8 @@ Activity archive provider for the Project card
 |mailingAddr/person/personAddress/state|string|Contact - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/person/personAddress/wgs84latitude|decimal|Contact - Contact address - Latitude: Latitude| x |
 |mailingAddr/person/personAddress/wgs84longitude|decimal|Contact - Contact address - Longitude: Longitude| x |
-|mailingAddr/person/personAddress/formattedAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/person/personAddress/formattedAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/person/restrictionAddress/addressId|int|Contact - Search address - Address ID: Database ID for the address record| x |
 |mailingAddr/person/restrictionAddress/line1|string|Contact - Search address - Address 1: First line of the address| x |
 |mailingAddr/person/restrictionAddress/line2|string|Contact - Search address - Address 2: Second line of the address| x |
@@ -352,8 +357,8 @@ Activity archive provider for the Project card
 |mailingAddr/person/restrictionAddress/state|string|Contact - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/person/restrictionAddress/wgs84latitude|decimal|Contact - Search address - Latitude: Latitude| x |
 |mailingAddr/person/restrictionAddress/wgs84longitude|decimal|Contact - Search address - Longitude: Longitude| x |
-|mailingAddr/person/restrictionAddress/formattedAddress| *None* |Contact - Search address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/person/restrictionAddress/formattedMultiLineAddress| *None* |Contact - Search address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/person/restrictionAddress/formattedAddress| *None* |Contact - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/person/restrictionAddress/formattedMultiLineAddress| *None* |Contact - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/person/personInterestIds|listInterest|Contact - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |mailingAddr/person/personUdef/SuperOffice:1|string|Contact - contactshorttext: tooltipshorttext| x |
 |mailingAddr/person/personUdef/SuperOffice:2|string|Contact - contactlongtext: tooltiplongtext| x |
@@ -437,6 +442,7 @@ Activity archive provider for the Project card
 |mailingAddr/person/correspondingAssociate/usergroup|userGroup|Contact - Primary group: The user's primary user group| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/correspondingAssociate/usergroupId|int|Contact - Group ID: The user's primary user group| x |
@@ -541,6 +547,7 @@ Activity archive provider for the Project card
 |emailFlow/workflowAssociate/contactFullName|string|Owner - Owner: Name and department of the company the user belongs to| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowAssociate/contactCategory|listAny|Owner - Category: Category| x |
@@ -566,7 +573,7 @@ Activity archive provider for the Project card
 |emailFlow/hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |emailFlow/hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |emailFlow/hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 |project/completed|bool|Completed: Displays a check mark indicating if the project has been completed.| x |
 |project/projectId|int|DB ID: Displays the database ID for a project row| x |
 |project/name|stringorPK|Project name: Displays the Project's name| x |
@@ -645,6 +652,7 @@ Activity archive provider for the Project card
 |project/projectUdef/SuperOffice:8|decimal|projectdecimal| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |project/projectUdef/SuperOffice:9|int|page1saleandmarketing| x |
@@ -749,6 +757,7 @@ Activity archive provider for the Project card
 |person/personDeletedDate|datetime|Deleted date: Deleted date|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/hasCompany|bool|Has company: The contact is associated with a company| x |
@@ -792,8 +801,8 @@ Activity archive provider for the Project card
 |person/personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |person/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |person/personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|person/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|person/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|person/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|person/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |person/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |person/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |person/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -804,8 +813,8 @@ Activity archive provider for the Project card
 |person/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |person/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |person/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|person/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|person/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |person/personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |person/personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |person/personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -853,6 +862,7 @@ Activity archive provider for the Project card
 |person/personAssociate/associateDbId|associate|ID| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/contactName|string|Owning company: Name of the company the user belongs to| x |
@@ -957,6 +967,7 @@ Activity archive provider for the Project card
 |contact/contactPhone/description|string|Telephone - Description: Phone number description| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contact/contactFax/formattedNumber|string|Fax - Phone: Displays phone number|  |
@@ -981,8 +992,8 @@ Activity archive provider for the Project card
 |contact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |contact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|contact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|contact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|contact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |contact/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |contact/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -993,8 +1004,8 @@ Activity archive provider for the Project card
 |contact/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |contact/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|contact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|contact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|contact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |contact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |contact/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -1005,8 +1016,8 @@ Activity archive provider for the Project card
 |contact/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |contact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|contact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|contact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/url/URLAddress|string|URL| x |
 |contact/url/URLDescription|string|Description| x |
 |contact/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -1061,6 +1072,7 @@ Activity archive provider for the Project card
 |contact/contactExtra/x\_contact\_default\_integer|int|Extra Default Integer: Custom integer field with default value 123.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_float|decimal|Extra Float: Custom float field with 3 decimals| x |
@@ -1165,6 +1177,7 @@ Activity archive provider for the Project card
 |sale/stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/hasQuote|bool|Has quote?: Does the sale have a quote attached?| x |
@@ -1269,6 +1282,7 @@ Activity archive provider for the Project card
 |appointment/agendaHtml| *None* |!!Agenda Html| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointment/isConverted| *None* |!!Is Converted|  |
@@ -1286,5 +1300,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

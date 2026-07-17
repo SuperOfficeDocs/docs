@@ -23,7 +23,7 @@ using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
 {
   //Instantiating the Person Agent
   using(PersonAgent newPerAgt = new PersonAgent())
-  { 
+  {
     //Local variable Declaration
     int [] personIds = {100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110};
 
@@ -63,9 +63,8 @@ Waldorf Weem      Warner Brothers Norway        example@example.com
 Wilma Wetter      Werner & Werner               example@example.com
 ```
 
-We could also have used the Person agent’s `GetPersonsFromContact` method since we are just reading some simple properties out of the results. `GetPersonsFromContact` returns simple read-only carriers.
+We could also have used the Person agent's `GetPersonsFromContact` method since we are just reading some simple properties out of the results. `GetPersonsFromContact` returns simple read-only carriers.
 
 Another option is to use the [ContactAgent][1].
 
-<!-- Referenced links -->
-[1]: get-persons-contactagent.md
+[1]: ./get-persons-contactagent

@@ -10,22 +10,22 @@ envir: onsite, online
 
 # "NewsFeedItem"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.NewsFeedItemProvider">SuperOffice.CRM.ArchiveLists.NewsFeedItemProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.NewsFeedItemProvider` inside NetServer's SODatabase assembly.
 
 Archive provider for the user's list of newsfeed items. Handled and expired items are filtered out of the list.
 
-
 Name: "NewsFeedItem"
-
 
 Entity name: "newsfeeditem"
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"newsfeeditem"|NewsFeedItem|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -39,7 +39,7 @@ Entity name: "newsfeeditem"
 |imageLink|string|Image link: Link to image| x |
 |previewHint|string|Preview hint: Preview hint| x |
 |status|listAny|Status: Newsfeed item processing status| x |
-|priority|listAny|Priority: Newsfeed item priority – how important an item is| x |
+|priority|listAny|Priority: Newsfeed item priority - how important an item is| x |
 |expiresAt|datetime|Expires at: When the newsfeed item is no longer relevant and can be hidden| x |
 |applicationId|string|Application ID: Application ID| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
@@ -94,8 +94,8 @@ Entity name: "newsfeeditem"
 |contact/postAddress/state|string|Company - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/postAddress/wgs84latitude|decimal|Company - Postal address - Latitude: Latitude| x |
 |contact/postAddress/wgs84longitude|decimal|Company - Postal address - Longitude: Longitude| x |
-|contact/postAddress/formattedAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
-|contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
+|contact/postAddress/formattedAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/streetAddress/addressId|int|Company - Street address - Address ID: Database ID for the address record| x |
 |contact/streetAddress/line1|string|Company - Street address - Address 1: First line of the address| x |
 |contact/streetAddress/line2|string|Company - Street address - Address 2: Second line of the address| x |
@@ -106,8 +106,8 @@ Entity name: "newsfeeditem"
 |contact/streetAddress/state|string|Company - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/streetAddress/wgs84latitude|decimal|Company - Street address - Latitude: Latitude| x |
 |contact/streetAddress/wgs84longitude|decimal|Company - Street address - Longitude: Longitude| x |
-|contact/streetAddress/formattedAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
-|contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
+|contact/streetAddress/formattedAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/url/URLAddress|string|Company - URL| x |
 |contact/url/URLDescription|string|Company - Description| x |
 |person/personId|int|Contact - DB ID: Displays the database ID of a contact| x |
@@ -129,6 +129,7 @@ Entity name: "newsfeeditem"
 |person/rank|int|Contact - Rank: Displays a contact's current rank| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/birthdate| *None* |Contact - Birthdate: Displays the contact's date of birth|  |
@@ -199,8 +200,8 @@ Entity name: "newsfeeditem"
 |person/personAddress/state|string|Contact - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |person/personAddress/wgs84latitude|decimal|Contact - Contact address - Latitude: Latitude| x |
 |person/personAddress/wgs84longitude|decimal|Contact - Contact address - Longitude: Longitude| x |
-|person/personAddress/formattedAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
-|person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
+|person/personAddress/formattedAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |project/completed|bool|Project - Completed: Displays a check mark indicating if the project has been completed.| x |
 |project/projectId|int|Project - DB ID: Displays the database ID for a project row| x |
 |project/name|stringorPK|Project - Project name: Displays the Project's name| x |
@@ -233,6 +234,7 @@ Entity name: "newsfeeditem"
 |sale/completed|bool|Sale - Completed: Displays a checkbox showing if an appointment is completed| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |sale/icon|listAny|Sale - Category: Displays the icon for an activity type| x |
@@ -307,5 +309,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

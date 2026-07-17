@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "resource" MDO List
+
 MDO provider for resources (from the associate table)
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ResourceMDOProvider">ResourceMDOProvider</see> class.
+Implemented by the `ResourceMDOProvider` class.
 The name of the MDO list is 'resource'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("resource", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -53,7 +50,6 @@ foreach (var item in listProvider.RootItems) {
 |47|ResourceItem 7: Heading 2||person_id=0&contact_id=0|
 |48|ResourceItem 8: Heading 2||person_id=0&contact_id=0|
 |49|ResourceItem 9: Heading 2||person_id=0&contact_id=0|
-
 
 ## Related MDO Lists
 

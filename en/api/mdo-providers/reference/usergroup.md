@@ -9,13 +9,12 @@ envir: onsite, online
 ---
 
 # "usergroup" MDO List
+
 List provider for the UserGroup table. While this table looks like an MDO table,
 it lacks the standardized grouplink and headinglink companion tables (for good reason,
 since it is the group table itself).
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.UserGroupProvider">UserGroupProvider</see> class.
+Implemented by the `UserGroupProvider` class.
 The name of the MDO list is 'usergroup'.
 
 ## Additional Attributes
@@ -28,10 +27,6 @@ The name of the MDO list is 'usergroup'.
 |Add a root target item| addRootTarget|False|
 |Use a search that works with multilanguage strings| useMultilanguageSearch|False|
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -43,10 +38,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("usergroup", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -62,7 +58,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Administrasjon|||
 |6|Testgruppe1|||
 |7|Testgruppe2|||
-
 
 ## Related MDO Lists
 

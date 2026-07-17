@@ -68,21 +68,19 @@ The Basic credentials used in this blog example uses the username and password, 
 
 To obtain a Bearer access token, you'll need a registered application that can get these for you. If you don't have one, first register as an [online developer][5], then you will receive instructions to register an application. If you don't have the infrastructure to create an online application, use the [helper application][5] to sign in online as an application and obtain an access token. Remember to use the helper application redirect URL when registering your application.
 
-<!-- Referenced links -->
 [1]: https://www.odata.org/documentation/odata-version-2-0/uri-conventions/
-[2]: ../../search/odata/index.md
-[3]: ../../web-services/webapi/index.md
+[2]: ../../search/odata/index
+[3]: ../../web-services/webapi/index
 [4]: https://www.base64encode.org/
 [5]: https://community.superoffice.com/register-as-developer
 
-<!-- Referenced images -->
-[img1]: media/odata-1.png
-[img2]: media/odata-2.png
-[img3]: media/odata-3.png
-[img4]: media/odata-4.png
-[img5]: media/odata-5.png
-[img6]: media/odata-6.png
-[img7]: media/odata-7.png
-[img8]: media/odata-8.png
-[img9]: media/odata-9.png
-[img10]: media/odata-10.png
+[img1]: /media/loc/en/api/odata-1.png
+[img2]: /media/loc/en/api/odata-2.png
+[img3]: /media/loc/en/api/odata-3.png
+[img4]: /media/loc/en/api/odata-4.png
+[img5]: /media/loc/en/api/odata-5.png
+[img6]: /media/loc/en/api/odata-6.png
+[img7]: /media/loc/en/api/odata-7.png
+[img8]: /media/loc/en/api/odata-8.png
+[img9]: /media/loc/en/api/odata-9.png
+[img10]: /media/loc/en/api/odata-10.png

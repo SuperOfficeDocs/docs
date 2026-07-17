@@ -48,14 +48,78 @@ We have retrieved image-related information by using the `BinaryObjectRows` clas
 
 Once the user selects an item from the ListBox the following code segment will be executed. This is responsible for displaying the image.
 
-[!code-csharp[CS](includes/display-image-entity.cs)]
+```csharp CS
+using System.IO;
+using SuperOffice;
+using SuperOffice.CRM.Rows;
+using SuperOffice.Data;
+using SuperOffice.CRM.Data;
+//Method that is invoked when a item is selected from the Listbox
+private void listBox1_SelectedValueChanged(object sender, EventArgs e)
+{
+  using (SoSession newSoSession = SoSession.Authenticate("sam", "sam"))
+  {
+    //Instantiate a BinaryRowObject CustomSearch
+    BinaryObjectRow.CustomSearch newCusSearch = new BinaryObjectRow.CustomSearch();
 
-Since we are retrieving `BinaryObjectRow` based on the image description, we need to create a `CustomSearch` first to select the user-selected row. The search’s restriction should be applied to the `MimeType` and `Description` columns like this:
+    //Instantiate BinaryObjectTableInfo class using the created CustomSearch
+    BinaryObjectTableInfo newBinObjTabInf = newCusSearch.TableInfo;
 
-[!code-csharp[CS](includes/display-image-entity.cs?range=18-20)]
+    //Restricts the BinaryObjectTableInfo
+    newCusSearch.Restriction = newBinObjTabInf.Description.Equal(
+      S.Parameter(listBox1.SelectedItem.ToString())).
+      And(newBinObjTabInf.MimeType.Equal(S.Parameter("image/jpeg")));
+
+    //Retrieves the BinaryObjectRow based on the CustomSearch
+    BinaryObjectRow newBinObjRw = BinaryObjectRow.GetFromCustomSearch(newCusSearch);
+
+    //Gets the BinaryObjectRow's image into the stream and display it
+    Stream newStream = newBinObjRw.BinaryData;
+    pictureBox1.Image = Image.FromStream(newStream);
+  }
+}
+```
+
+Since we are retrieving `BinaryObjectRow` based on the image description, we need to create a `CustomSearch` first to select the user-selected row. The search's restriction should be applied to the `MimeType` and `Description` columns like this:
+
+```csharp CS
+    newCusSearch.Restriction = newBinObjTabInf.Description.Equal(
+      S.Parameter(listBox1.SelectedItem.ToString())).
+      And(newBinObjTabInf.MimeType.Equal(S.Parameter("image/jpeg")));
+```
 
 Once we have defined the `CustomSearch`, we can use it with the `GetFromCustomSearch` method available in the `BinaryObjectRow` class. We use the `BinaryData` property of the `BinaryObjectRow` class to fill our image into the Stream and then display it using the following statement.
 
-[!code-csharp[CS](includes/display-image-entity.cs?range=27)]
+```csharp CS
+using System.IO;
+using SuperOffice;
+using SuperOffice.CRM.Rows;
+using SuperOffice.Data;
+using SuperOffice.CRM.Data;
+//Method that is invoked when a item is selected from the Listbox
+private void listBox1_SelectedValueChanged(object sender, EventArgs e)
+{
+  using (SoSession newSoSession = SoSession.Authenticate("sam", "sam"))
+  {
+    //Instantiate a BinaryRowObject CustomSearch
+    BinaryObjectRow.CustomSearch newCusSearch = new BinaryObjectRow.CustomSearch();
+
+    //Instantiate BinaryObjectTableInfo class using the created CustomSearch
+    BinaryObjectTableInfo newBinObjTabInf = newCusSearch.TableInfo;
+
+    //Restricts the BinaryObjectTableInfo
+    newCusSearch.Restriction = newBinObjTabInf.Description.Equal(
+      S.Parameter(listBox1.SelectedItem.ToString())).
+      And(newBinObjTabInf.MimeType.Equal(S.Parameter("image/jpeg")));
+
+    //Retrieves the BinaryObjectRow based on the CustomSearch
+    BinaryObjectRow newBinObjRw = BinaryObjectRow.GetFromCustomSearch(newCusSearch);
+
+    //Gets the BinaryObjectRow's image into the stream and display it
+    Stream newStream = newBinObjRw.BinaryData;
+    pictureBox1.Image = Image.FromStream(newStream);
+  }
+}
+```
 
 <a href="../../../../../assets/downloads/api/blob-image.zip" download>Download source</a>

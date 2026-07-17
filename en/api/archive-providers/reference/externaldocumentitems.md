@@ -10,17 +10,19 @@ envir: onsite, online
 
 # "externaldocumentitems"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ExternalDocumentItemsProvider">SuperOffice.CRM.ArchiveLists.ExternalDocumentItemsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ExternalDocumentItemsProvider` inside NetServer's SODatabase assembly.
 
-<b>External Documents</b> is the same as the Image Library in service - images (and maybe other things?) that
+**External Documents** is the same as the Image Library in service - images (and maybe other things?) that
 can be added to messages. They are a special kind of attachment, and conencted to a folder hierarchy.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"item"|Items|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -39,7 +41,7 @@ can be added to messages. They are a special kind of attachment, and conencted t
 |hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 
 ## Sample
 
@@ -51,5 +53,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

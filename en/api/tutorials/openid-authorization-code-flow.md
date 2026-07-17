@@ -36,7 +36,7 @@ This will get us a simple, clean folder structure:
 
 ![empty-folder-structure][img3]
 
-You can run it and you should get a nice error page because we haven’t defined any views yet.
+You can run it and you should get a nice error page because we haven't defined any views yet.
 
 ![1526999139989][img4]
 
@@ -89,7 +89,7 @@ The default is to use IIS Express, which runs on a non-standard port. Since our 
 
 Add the **SuperOffice.CRM.Online.Core** package so we can decode the SuperID responses. This will also add the `System.IdentityModel.Tokens.JWT` package.
 
-If we were going to use SOAP we would add `SuperOffice.NetServer.Services` – this would add the client code needed to talk to the web services API via SOAP. This will also bring in the `SuperOffice.NetServer.Core` package with the shared definitions. We are going to use REST APIs, so we don’t need these.
+If we were going to use SOAP we would add `SuperOffice.NetServer.Services` - this would add the client code needed to talk to the web services API via SOAP. This will also bring in the `SuperOffice.NetServer.Core` package with the shared definitions. We are going to use REST APIs, so we don't need these.
 
 We will need to call SuperID from the server, so we need a REST client, like [RestSharp][1].
 
@@ -105,7 +105,7 @@ The `SuperOffice.CRM.Online.Core` package has also added some app settings to th
 <add key="SuperIdCertificate" value="16b7fb8c3f9ab06885a800c64e64c97c4ab5e98c"/>
 ```
 
-The gateway URL and the certificate id are fine, we don’t need to change these.
+The gateway URL and the certificate id are fine, we don't need to change these.
 
 The `SoAppId` we need to fill in. We also need to add a couple of more settings for later.
 
@@ -127,13 +127,39 @@ We need this X509 certificate to verify that the tokens we have received are act
 
 The default action is to see if we are logged in and if we are not, then redirect to SuperId to get logged in. When SuperID is finished, it will redirect back to us, to our callback URL (`SoAppUrl` in the config file)
 
-If we are logged in, we need to pass a bunch of parameters to SuperID’s OAuth URL, as described in [the documentation][3].
+If we are logged in, we need to pass a bunch of parameters to SuperID's OAuth URL, as described in [the documentation][3].
 
-[!code-csharp[CS](includes/get-redirect.cs)]
+```csharp CS
+// see if we have logged in
+if (Session["LoggedIn"] == null)
+{
+  // Not logged in - go to login page
+  string appId = ConfigurationManager.AppSettings["SoAppId"];
+  string appUrl = ConfigurationManager.AppSettings["SoAppUrl"];
+  string url = ConfigurationManager.AppSettings["SoFederationGateway"];
+  string state = Guid.NewGuid().ToString();
+
+  Session["state"] = state;
+
+  var query = System.Web.HttpUtility.ParseQueryString(string.Empty);
+  query.Add("client_id", appId);
+  query.Add("redirect_url", appUrl);
+  query.Add("scope", "openid");
+  query.Add("state", state);
+  query.Add("response_type", "code"); // authorization flow
+  query.Add("response_mode", "form_data"); // instead of #fragment
+
+  url += "/common/oauth/authorize?" + query.ToString();
+  return Redirect(url);
+}
+else
+  // Is logged in - go to App instead.
+  return RedirectToAction("Index", "App");
+```
 
 To kick off the log-in process, we pass a random value as the `State` parameter. We store this in the `Session` so that we can check it later.
 
-How do we know if we are logged in? We will put the access token we get into the server’s `Session` array when we get called back.  So if the `Session["LoggedIn"]` value is NULL, then we are not logged in. SuperID will call the `appUrl` (`https://localhost/mvctest/callback`) with values we can use to get the access and refresh tokens.
+How do we know if we are logged in? We will put the access token we get into the server's `Session` array when we get called back.  So if the `Session["LoggedIn"]` value is NULL, then we are not logged in. SuperID will call the `appUrl` (`https://localhost/mvctest/callback`) with values we can use to get the access and refresh tokens.
 
 ## Add a callback controller
 
@@ -177,7 +203,7 @@ If the helper class did not throw an error, then we are logged in and we can mov
 
 ## Add OAuthHelper class
 
-We need to get tokens from SuperID, using **RestSharp**, so we will put this into a separate class: `OAuthHelper`. RestSharp is a smart HTTP client that handles JSON for us. It can automatically de-serialize JSON for us if we define a class that looks like the response we get. SuperID’s response to an OAuth request looks like this:
+We need to get tokens from SuperID, using **RestSharp**, so we will put this into a separate class: `OAuthHelper`. RestSharp is a smart HTTP client that handles JSON for us. It can automatically de-serialize JSON for us if we define a class that looks like the response we get. SuperID's response to an OAuth request looks like this:
 
 ```http
 Response to POST to /login/common/oauth/tokens
@@ -364,7 +390,7 @@ string RefreshAcessToken()
   }
   catch (Exception ex)
   {
-    return ex.Message; 
+    return ex.Message;
   }
 }
 ```
@@ -428,7 +454,7 @@ public class ODataResponse
 }
 ```
 
-We don’t care about the OData meta-data link, so we don’t include it in our class.
+We don't care about the OData meta-data link, so we don't include it in our class.
 
 We use a List rather than an Array to work around a problem with array constructors in the JSON serializer in RestSharp.
 
@@ -444,7 +470,7 @@ public class AppModel
     public TimeSpan TimeLeft { get; set; }
     public string BaseUrl { get; set; }
     public string AccessToken { get; set; }
-    public string Error { get; set; } 
+    public string Error { get; set; }
     public ContactModel[] Contacts { get; set; }
 }
 ```
@@ -554,25 +580,23 @@ This is rendered as a table using the App Index view:
 
 ![1527001011364][img17]
 
-<!-- Referenced links -->
 [1]: https://github.com/restsharp/RestSharp
-[3]: ../authentication/online/index.md
+[3]: ../authentication/online/index
 
-<!-- Referenced images -->
-[img1]: media/1526999027785.png
-[img2]: media/empty-template.png
-[img3]: media/empty-folder-structure.png
-[img4]: media/server-error.png
-[img5]: media/home-controller-add.png
-[img6]: media/home-controller-scaffold.png
-[img7]: media/home-view-add.png
-[img8]: media/home-view-dialog.png
-[img9]: media/home-view-index.png
-[img10]: media/iis-config.png
-[img11]: media/nuget-packages.png
-[img12]: media/restsharp.png
-[img13]: media/callback-controller-add.png
-[img14]: media/app-view.png
-[img15]: media/approve-login.png
-[img16]: media/login-approve.png
-[img17]: media/app-index-render.png
+[img1]: /media/loc/en/api/1526999027785.png
+[img2]: /media/loc/en/api/empty-template.png
+[img3]: /media/loc/en/api/empty-folder-structure.png
+[img4]: /media/loc/en/api/server-error.png
+[img5]: /media/loc/en/api/home-controller-add.png
+[img6]: /media/loc/en/api/home-controller-scaffold.png
+[img7]: /media/loc/en/api/home-view-add.png
+[img8]: /media/loc/en/api/home-view-dialog.png
+[img9]: /media/loc/en/api/home-view-index.png
+[img10]: /media/loc/en/api/iis-config.png
+[img11]: /media/loc/en/api/nuget-packages.png
+[img12]: /media/loc/en/api/restsharp.png
+[img13]: /media/loc/en/api/callback-controller-add.png
+[img14]: /media/loc/en/api/app-view.png
+[img15]: /media/loc/en/api/approve-login.png
+[img16]: /media/loc/en/api/login-approve.png
+[img17]: /media/loc/en/api/app-index-render.png

@@ -1,6 +1,6 @@
 ---
 title: foreignkey
-description: ForeignKeys – to fluent or not to fluent, that is the question
+description: ForeignKeys - to fluent or not to fluent, that is the question
 author: Tony Yates
 date: 12.26.2009
 keywords:
@@ -10,7 +10,7 @@ platform: web
 redirect_from: /en/api/netserver/foreign-keys/foreignkey
 ---
 
-# ForeignKeys – to fluent or not to fluent, that is the question
+# ForeignKeys - to fluent or not to fluent, that is the question
 
 So there I was, one week to Christmas, and thinking not about what shopping I needed to get done before Christmas, but how to make it easier to work with Foreign Keys.
 
@@ -34,15 +34,15 @@ Now add in the key/value mapping dictionary, the ForeignKey table, and you have 
 
 In NetServer you have but two options for working *easily* with ForeignKeys: work at the Entity or Rows layer. Working at the Entities layer is great when working with pre-existing SuperOffice entities and performance is not a concern.
 
-Alternatively, working at the Rows layer feels disconnected and cumbersome – assemble a trilogy of ForeignAppRow, ForeignDeviceRows, and ForeignKeyRows types and somehow find a happy means of managing them. There is some help using the SuperOffice.CRM.Rows.Util.RowForeignKeyHelper, but that only gets you so far.
+Alternatively, working at the Rows layer feels disconnected and cumbersome - assemble a trilogy of ForeignAppRow, ForeignDeviceRows, and ForeignKeyRows types and somehow find a happy means of managing them. There is some help using the SuperOffice.CRM.Rows.Util.RowForeignKeyHelper, but that only gets you so far.
 
-## Choosing an API – Two Choices (so far)
+## Choosing an API - Two Choices (so far)
 
 So, it comes down to trying to figure out a better or more intuitive way of managing the foreign key system concept.
 
 ### Option One
 
-I’ve been juggling the idea of creating a set of helper classes that all work in conjunction with each other - each complimenting the next. Considering the multidimensional aspects of the **system**, why not implement it that way? For example, how about accessing a specific foreignkey value by indexing into it, such as:
+I've been juggling the idea of creating a set of helper classes that all work in conjunction with each other - each complimenting the next. Considering the multidimensional aspects of the **system**, why not implement it that way? For example, how about accessing a specific foreignkey value by indexing into it, such as:
 
 ```csharp
 ["appName"]["deviceId"]["key"].Value
@@ -111,7 +111,7 @@ public class ForeignDevice
 }
 ```
 
-And finally the ForeignKey class. The ForeignKey class gets interesting because it’s never really known just how many ForeignKeyRow’s are retrieved when accessing a specific key. This is because foreign key values can be very long, but the actual sub-value field of a ForeignKeyRow type is limited to 239 characters – but you can leverage the `seqno` field to span a complete value across multiple ForeignKeyRows.  Additionally, the `tableId` and `recordId` fields must be considered to ensure, when associating a key with a particular entity, that only the correct ForeignKeyRow’s are returned. Alternatively, if none are found, to create and prepare them for use.
+And finally the ForeignKey class. The ForeignKey class gets interesting because it's never really known just how many ForeignKeyRow's are retrieved when accessing a specific key. This is because foreign key values can be very long, but the actual sub-value field of a ForeignKeyRow type is limited to 239 characters - but you can leverage the `seqno` field to span a complete value across multiple ForeignKeyRows.  Additionally, the `tableId` and `recordId` fields must be considered to ensure, when associating a key with a particular entity, that only the correct ForeignKeyRow's are returned. Alternatively, if none are found, to create and prepare them for use.
 
 ```csharp
 public class ForeignKey
@@ -138,20 +138,20 @@ My original fluent interface design looks something like this:
 ```csharp
 public interface IForeignKeysFluent
 {
-    ForeignApp ForeignApp { get; }
-    ForeignDevice ForeignDevice { get; }
-    ForeignKey ForeignKey { get; }
+    ForeignApp ForeignApp { get; }
+    ForeignDevice ForeignDevice { get; }
+    ForeignKey ForeignKey { get; }
 
-    IForeignKeysFluent GetForeignApp(string name);
-    IForeignKeysFluent GetForeignDevice(string deviceId);
-    IForeignKeysFluent GetForeignDevice(string deviceId, string name);
-    IForeignKeysFluent GetForeignKey(string key);
-    IForeignKeysFluent GetForeignKey(string key, int table);
-    IForeignKeysFluent GetForeignKey(string key, int table, int record);
+    IForeignKeysFluent GetForeignApp(string name);
+    IForeignKeysFluent GetForeignDevice(string deviceId);
+    IForeignKeysFluent GetForeignDevice(string deviceId, string name);
+    IForeignKeysFluent GetForeignKey(string key);
+    IForeignKeysFluent GetForeignKey(string key, int table);
+    IForeignKeysFluent GetForeignKey(string key, int table, int record);
 }
 ```
 
-Without discussing the actual implementation, it’s safe to say that working with the API goes a little something like this:
+Without discussing the actual implementation, it's safe to say that working with the API goes a little something like this:
 
 ```csharp
 public interface IForeignKeysFluent
@@ -169,7 +169,7 @@ public interface IForeignKeysFluent
 }
 ```
 
-So I guess what I really want to do is ask the question "What looks/feels best to you?" – the fluent interface above, or indexing into it?
+So I guess what I really want to do is ask the question "What looks/feels best to you?" - the fluent interface above, or indexing into it?
 
 ```csharp
 FluentForeignKeys ffk = new FluentForeignKeys();
@@ -183,13 +183,11 @@ ffk.GetForeignApp("appName")
     .GetForeignKey("key", tableId, recordId).ForeignKey.Value = "";
 ```
 
-Do you have any different ideas? I’m interested in hearing them.
+Do you have any different ideas? I'm interested in hearing them.
 
-<!-- Referenced links -->
 [1]: http://en.wikipedia.org/wiki/Fluent_interface
 
-<!-- Referenced images -->
-[img1]: media/foreignkey-1095.jpg
-[img2]: media/foreignkey-1096.jpg
-[img3]: media/foreignkey-1097.jpg
-[img4]: media/foreignkey-1098.jpg
+[img1]: /media/loc/en/api/foreignkey-1095.jpg
+[img2]: /media/loc/en/api/foreignkey-1096.jpg
+[img3]: /media/loc/en/api/foreignkey-1097.jpg
+[img4]: /media/loc/en/api/foreignkey-1098.jpg

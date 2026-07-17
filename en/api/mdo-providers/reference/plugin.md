@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "plugin" MDO List
+
 List of installed and available Document plugins
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PluginProvider">PluginProvider</see> class.
+Implemented by the `PluginProvider` class.
 The name of the MDO list is 'plugin'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("plugin", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +41,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |0|SO Archive|||
 |1234|InMemoryDocumentPlugin|||
-
 
 ## Related MDO Lists
 

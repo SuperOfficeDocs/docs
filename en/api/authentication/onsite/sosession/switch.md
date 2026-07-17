@@ -67,5 +67,4 @@ newSession.Close();
 
 Here we have first created a session and suspended it. Then we have created another new session. Later the secondly created session is suspended and the former session is continued to show how you may switch between sessions.
 
-<!-- Referenced links -->
-[1]: index.md
+[1]: ./index

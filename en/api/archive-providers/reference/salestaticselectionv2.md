@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "SaleStaticSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionStaticProviderV2` inside NetServer's SODatabase assembly.
 
 Static archive Provider for the Selection sale archive.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"sale"|Sale|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -123,6 +125,7 @@ Static archive Provider for the Selection sale archive.
 |person/personRegisteredDate|date|Registered date: The date/time the data was registered in UTC.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/portraitThumbnail| *None* |Person image: Person image|  |
@@ -181,8 +184,8 @@ Static archive Provider for the Selection sale archive.
 |person/personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |person/personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |person/personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|person/personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|person/personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|person/personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|person/personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |person/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |person/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |person/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -193,8 +196,8 @@ Static archive Provider for the Selection sale archive.
 |person/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |person/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |person/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|person/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|person/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|person/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |person/personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |person/personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |person/personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -227,6 +230,7 @@ Static archive Provider for the Selection sale archive.
 |person/personExtra/y\_rental/id|int|Rental - id: Displays the row's primary key (y\_rental)| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/x\_start|date|Rental - Start rental: Start rental| x |
@@ -331,6 +335,7 @@ Static archive Provider for the Selection sale archive.
 |contact/contactNoMail|bool|No mailings (company| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
@@ -370,8 +375,8 @@ Static archive Provider for the Selection sale archive.
 |contact/postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |contact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|contact/postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|contact/postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|contact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |contact/streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |contact/streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -382,8 +387,8 @@ Static archive Provider for the Selection sale archive.
 |contact/streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |contact/streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|contact/streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|contact/streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|contact/streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |contact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |contact/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -394,8 +399,8 @@ Static archive Provider for the Selection sale archive.
 |contact/restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |contact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |contact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|contact/restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|contact/restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|contact/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |contact/url/URLAddress|string|URL| x |
 |contact/url/URLDescription|string|Description| x |
 |contact/contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -435,6 +440,7 @@ Static archive Provider for the Selection sale archive.
 |contact/contactUdef/SuperOffice:1|string|companyshorttext: tooltipshorttext| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:2|string|companylongtext: tooltiplongtext| x |
@@ -539,6 +545,7 @@ Static archive Provider for the Selection sale archive.
 |saleUdef/SuperOffice:8|decimal|saledecimal| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |appointment/completed|bool|Completed: Displays a checkbox showing if an appointment is completed| x |
@@ -643,6 +650,7 @@ Static archive Provider for the Selection sale archive.
 |document/completed|bool|Completed: Displays a checkbox showing if an appointment is completed| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |document/icon|listAny|Category: Displays the icon for an activity type| x |
@@ -747,6 +755,7 @@ Static archive Provider for the Selection sale archive.
 |project/nextMilestone|date|Next milestone: Date of next non-completed activity that is marked as a milestone| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |project/endDate|date|End date: End date of project| x |
@@ -851,6 +860,7 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/person/title|string|Stakeholder - Title: Displays the contact's job title| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personCountry|listAny|Stakeholder - Country: Country| x |
@@ -929,8 +939,8 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/person/personAddress/state|string|Stakeholder - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |saleStakeholder/person/personAddress/wgs84latitude|decimal|Stakeholder - Contact address - Latitude: Latitude| x |
 |saleStakeholder/person/personAddress/wgs84longitude|decimal|Stakeholder - Contact address - Longitude: Longitude| x |
-|saleStakeholder/person/personAddress/formattedAddress| *None* |Stakeholder - Contact address - {formattedAddress}: {formattedAddress}|  |
-|saleStakeholder/person/personAddress/formattedMultiLineAddress| *None* |Stakeholder - Contact address - {formattedAddress}: {formattedAddress}|  |
+|saleStakeholder/person/personAddress/formattedAddress| *None* |Stakeholder - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|saleStakeholder/person/personAddress/formattedMultiLineAddress| *None* |Stakeholder - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |saleStakeholder/person/restrictionAddress/addressId|int|Stakeholder - Search address - Address ID: Database ID for the address record| x |
 |saleStakeholder/person/restrictionAddress/line1|string|Stakeholder - Search address - Address 1: First line of the address| x |
 |saleStakeholder/person/restrictionAddress/line2|string|Stakeholder - Search address - Address 2: Second line of the address| x |
@@ -941,8 +951,8 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/person/restrictionAddress/state|string|Stakeholder - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |saleStakeholder/person/restrictionAddress/wgs84latitude|decimal|Stakeholder - Search address - Latitude: Latitude| x |
 |saleStakeholder/person/restrictionAddress/wgs84longitude|decimal|Stakeholder - Search address - Longitude: Longitude| x |
-|saleStakeholder/person/restrictionAddress/formattedAddress| *None* |Stakeholder - Search address - {formattedAddress}: {formattedAddress}|  |
-|saleStakeholder/person/restrictionAddress/formattedMultiLineAddress| *None* |Stakeholder - Search address - {formattedAddress}: {formattedAddress}|  |
+|saleStakeholder/person/restrictionAddress/formattedAddress| *None* |Stakeholder - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|saleStakeholder/person/restrictionAddress/formattedMultiLineAddress| *None* |Stakeholder - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |saleStakeholder/person/personInterestIds|listInterest|Stakeholder - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |saleStakeholder/person/personUdef/SuperOffice:1|string|Stakeholder - contactshorttext: tooltipshorttext| x |
 |saleStakeholder/person/personUdef/SuperOffice:2|string|Stakeholder - contactlongtext: tooltiplongtext| x |
@@ -955,6 +965,7 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/person/personUdef/SuperOffice:9|string|Stakeholder - page1saleonly| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personUdef/SuperOffice:10|string|Stakeholder - page1marketingonly| x |
@@ -1059,6 +1070,7 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/person/legalBaseEmarketing|listAny|Stakeholder - Legal basis - E-marketing: The purpose is to gain the explicit consent to communicate electronically (bulk e-mail) on topics related to our products and services. This might include newsletters, invitations and product-related content. The subscription system is used to refine the individual marketing choices this contact makes.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/consentSourceStore|listAny|Stakeholder - Source - Sales and service: The purpose to store data about this contact is to sell to and/or provide services to this contact. This purpose is usually used when storing contacts who are defined as potential or existing customers.| x |
@@ -1118,8 +1130,8 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/contact/postAddress/state|string|Stakeholder - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |saleStakeholder/contact/postAddress/wgs84latitude|decimal|Stakeholder - Postal address - Latitude: Latitude| x |
 |saleStakeholder/contact/postAddress/wgs84longitude|decimal|Stakeholder - Postal address - Longitude: Longitude| x |
-|saleStakeholder/contact/postAddress/formattedAddress| *None* |Stakeholder - Postal address - {formattedAddress}: {formattedAddress}|  |
-|saleStakeholder/contact/postAddress/formattedMultiLineAddress| *None* |Stakeholder - Postal address - {formattedAddress}: {formattedAddress}|  |
+|saleStakeholder/contact/postAddress/formattedAddress| *None* |Stakeholder - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|saleStakeholder/contact/postAddress/formattedMultiLineAddress| *None* |Stakeholder - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |saleStakeholder/contact/streetAddress/addressId|int|Stakeholder - Street address - Address ID: Database ID for the address record| x |
 |saleStakeholder/contact/streetAddress/line1|string|Stakeholder - Street address - Address 1: First line of the address| x |
 |saleStakeholder/contact/streetAddress/line2|string|Stakeholder - Street address - Address 2: Second line of the address| x |
@@ -1130,8 +1142,8 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/contact/streetAddress/state|string|Stakeholder - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |saleStakeholder/contact/streetAddress/wgs84latitude|decimal|Stakeholder - Street address - Latitude: Latitude| x |
 |saleStakeholder/contact/streetAddress/wgs84longitude|decimal|Stakeholder - Street address - Longitude: Longitude| x |
-|saleStakeholder/contact/streetAddress/formattedAddress| *None* |Stakeholder - Street address - {formattedAddress}: {formattedAddress}|  |
-|saleStakeholder/contact/streetAddress/formattedMultiLineAddress| *None* |Stakeholder - Street address - {formattedAddress}: {formattedAddress}|  |
+|saleStakeholder/contact/streetAddress/formattedAddress| *None* |Stakeholder - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|saleStakeholder/contact/streetAddress/formattedMultiLineAddress| *None* |Stakeholder - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |saleStakeholder/contact/restrictionAddress/addressId|int|Stakeholder - Search address - Address ID: Database ID for the address record| x |
 |saleStakeholder/contact/restrictionAddress/line1|string|Stakeholder - Search address - Address 1: First line of the address| x |
 |saleStakeholder/contact/restrictionAddress/line2|string|Stakeholder - Search address - Address 2: Second line of the address| x |
@@ -1142,8 +1154,8 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/contact/restrictionAddress/state|string|Stakeholder - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|Stakeholder - Search address - Latitude: Latitude| x |
 |saleStakeholder/contact/restrictionAddress/wgs84longitude|decimal|Stakeholder - Search address - Longitude: Longitude| x |
-|saleStakeholder/contact/restrictionAddress/formattedAddress| *None* |Stakeholder - Search address - {formattedAddress}: {formattedAddress}|  |
-|saleStakeholder/contact/restrictionAddress/formattedMultiLineAddress| *None* |Stakeholder - Search address - {formattedAddress}: {formattedAddress}|  |
+|saleStakeholder/contact/restrictionAddress/formattedAddress| *None* |Stakeholder - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|saleStakeholder/contact/restrictionAddress/formattedMultiLineAddress| *None* |Stakeholder - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |saleStakeholder/contact/url/URLAddress|string|Stakeholder - URL| x |
 |saleStakeholder/contact/url/URLDescription|string|Stakeholder - Description| x |
 |saleStakeholder/contact/contactAssociate/firstName|string|Stakeholder - First name: Displays the contact's first name| x |
@@ -1163,6 +1175,7 @@ Static archive Provider for the Selection sale archive.
 |saleStakeholder/contact/contactAssociate/contactCategory|listAny|Stakeholder - Category: Category| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/contactAssociate/role|listAny|Stakeholder - Role: Role| x |
@@ -1267,6 +1280,7 @@ Static archive Provider for the Selection sale archive.
 |quote/version/approvedDate|date|Approved date: Date of approval of a quote that broke one or more of the workflow rules that trigger an approval process| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |quote/version/extraField1|string|Extra field 1: One of the extra fields on the product; meaning is installation dependent| x |
@@ -1357,5 +1371,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

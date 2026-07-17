@@ -62,7 +62,7 @@ The `TableInfo` property contains properties for:
 
 The `TableInfo` object is similar to an ADO.NET **DataTable.Columns** property, in that it exposes all of the columns as `FieldInfo` objects through the `TableInfo.All` property.
 
-`TableInfo.All` returns an array of `FieldInfo` objects, one for each column in the table. For example, with the `PersonRow` object, the `PersonRow.TableInfo.All` property details all of the columns available in the `Person` table.
+`TableInfo.All` returns an array of `FieldInfo` objects, one for each column in the table. For example, with the `PersonRow` object, the `PersonRow.TableInfo.All` property details all of the columns available in the `Person` table.
 
 The result of running the following code would write out all 42 column names to the debug window. With each `FieldInfo` object, there are properties for the fields data type, the parent table, and many useful Argument methods, such as `Between`, `GreaterThan`, `LessThan`, and `Like`, to test the value of the field in the current row.
 
@@ -131,18 +131,16 @@ For example, in the `Sale` Entity, the `Associate` property would refer to the `
 
 * [Add list item using rows][1]
 
-<!-- Referenced links -->
-[1]: ../lists/row/how-to/add-list-item.md
-[2]: customsearch.md
-[3]: get-row.md
-[4]: get-row-from-entity.md
-[5]: create-row.md
-[6]: create-row-in-entity.md
-[7]: update-row.md
-[8]: update-row-in-entity.md
-[9]: delete-row.md
-[10]: delete-row-from-entity.md
-[11]: ../overview/netserver.md
+[1]: ../lists/row/how-to/add-list-item
+[2]: ./customsearch
+[3]: ./get-row
+[4]: ./get-row-from-entity
+[5]: ./create-row
+[6]: ./create-row-in-entity
+[7]: ./update-row
+[8]: ./update-row-in-entity
+[9]: ./delete-row
+[10]: ./delete-row-from-entity
+[11]: ../overview/netserver
 
-<!-- Referenced images -->
-[img5]: howto/media/personrowsobject.gif
+[img5]: /media/loc/en/api/personrowsobject.gif

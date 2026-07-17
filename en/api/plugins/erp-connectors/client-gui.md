@@ -13,7 +13,7 @@ redirect_from: /en/api/netserver/plugins/erp-connectors/client-gui
 
 Erp Sync will also require a GUI in the SuperOffice client, to allow the user to create and link SuperOffice entities to ERP actors, and to take advantage of the *Show In ERP Tab* functionality where an ERP field may be retrieved on demand and shown in its corresponding SuperOffice entity.
 
-GUI operations are beyond the scope here, but for understanding’s sake, we have included a few figures.
+GUI operations are beyond the scope here, but for understanding's sake, we have included a few figures.
 
 * All Erp Sync functionality will be located on a separate tab on its appropriate entity (contact, person, project, etc).
 
@@ -23,7 +23,7 @@ GUI operations are beyond the scope here, but for understanding’s sake, we hav
 
   ![ALT][img2]
 
-* When connecting a CRM entity to an ERP actor, the user gets an opportunity to select what data to keep and what to throw away (for fields that don’t have matching values on both sides). Below that, we can also see the [default value][1] functionality, where the user can set values on an ERP Actor without needing the fields to be mapped and synced.
+* When connecting a CRM entity to an ERP actor, the user gets an opportunity to select what data to keep and what to throw away (for fields that don't have matching values on both sides). Below that, we can also see the [default value][1] functionality, where the user can set values on an ERP Actor without needing the fields to be mapped and synced.
 
   ![ALT][img3]
 
@@ -31,11 +31,9 @@ GUI operations are beyond the scope here, but for understanding’s sake, we hav
 
   ![ALT][img4]
 
-<!-- Referenced links -->
-[1]: default-values.md
+[1]: ./default-values
 
-<!-- Referenced images -->
-[img1]: media/image011.png
-[img2]: media/image012.png
-[img3]: media/image013.png
-[img4]: media/image014.png
+[img1]: /media/loc/en/api/image011-1.png
+[img2]: /media/loc/en/api/image012.png
+[img3]: /media/loc/en/api/image013.png
+[img4]: /media/loc/en/api/image014.png

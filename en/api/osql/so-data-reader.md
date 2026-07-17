@@ -13,9 +13,21 @@ redirect_from: /en/api/netserver/osql/so-data-reader
 
 The SO Data Reader class implements the `IDataReader` interface. Therefore, SO Reader has all the capabilities of a normal ADO.Net reader and it has more functions built into it by the NetServer.
 
-Let’s take the SO Date Reader code snippet of the select example.
+Let's take the SO Date Reader code snippet of the select example.
 
-[!code-csharp[CS](howto/includes/select-2.cs?range=38-50)]
+```csharp CS
+    string conName = myReader.GetString(2);
+    string perName = myReader.GetString(3) + " " + myReader.GetString(4);
+    string perPhone = myReader.GetInt16(5).ToString();
+    string conEmail = myReader.GetString(6);
+    string conEmlDesc = myReader.GetString(7);
+    string conCou = myReader.GetString(8);
+  }
+  //Closing the Reader and Disposing the session
+  myReader.Close();
+  mySession.Dispose();
+}
+```
 
 After we have executed the reader, the data will be returned and they will be held in the reader. You can see that the fields returned from the database to the reader are retrieved using the specific data type methods just as you would do if you are using ADO.Net reader.
 
@@ -25,7 +37,7 @@ As in a normal ADO.Net data reader, the SO Data Reader also can retrieve data us
 
 The following code snippet is a modification of the above code snippet to show the working of the 3 overload methods.
 
-First, let’s look at how you can retrieve data using the column index.
+First, let's look at how you can retrieve data using the column index.
 
 ### Get data using the column index
 
@@ -51,7 +63,7 @@ while(myReader.Read())
 myReader.Close();
 ```
 
-This is the same way as if you would use the method in an ADO.Net data reader. You may notice that we have converted all the return values to string type assuming that we don’t know the data type that will be returned. If you know the data type, you can always cast the return value to the appropriate data type as in the following line.
+This is the same way as if you would use the method in an ADO.Net data reader. You may notice that we have converted all the return values to string type assuming that we don't know the data type that will be returned. If you know the data type, you can always cast the return value to the appropriate data type as in the following line.
 
 ```csharp
 intconID = (int)myReader[0];
@@ -59,7 +71,7 @@ intconID = (int)myReader[0];
 
 ### Get data using the column name
 
-Now let’s look at how we can retrieve data using the column name.
+Now let's look at how we can retrieve data using the column name.
 
 ```csharp
 //Loading the Data into the DataReader
@@ -80,7 +92,7 @@ while(myReader.Read())
 }
 ```
 
-Here we have given the column name by using the appropriate table info object to specify the column name. This is a good way of doing it since you don’t have to know the exact name of the table column.
+Here we have given the column name by using the appropriate table info object to specify the column name. This is a good way of doing it since you don't have to know the exact name of the table column.
 
 Of course, you can give the column name and retrieve the data like this:
 
@@ -90,7 +102,7 @@ Of course, you can give the column name and retrieve the data like this:
 
 ### NetServer-provided overloaded method
 
-Now let’s look at the NetServer provided overloaded method.
+Now let's look at the NetServer provided overloaded method.
 
 ```csharp
 //Loading the Data into the DataReader

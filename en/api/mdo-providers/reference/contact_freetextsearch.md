@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "contact_freetextsearch" MDO List
+
 Provider for selecting a Contact - without person search.
 Does keyword matching and scoring across multiple
 string fields. Checks name, department, soundex fields.
@@ -18,17 +19,12 @@ Matches on word boundaries or at start of field are scored extra highly.
 Contacts with lots of activity or lots of recent activity (according to the SAINT counters) are also
 preferred.
 
-
 Returns contact items only: Id = ExtraInfo = contact_id, Type = "Contact", StyleHint = "stop"
-
 
 Stopped contacts are marked with stylehint = "stop" (but item.deleted = false)
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ContactListFreetextSearchProvider">ContactListFreetextSearchProvider</see> class.
+Implemented by the `ContactListFreetextSearchProvider` class.
 The name of the MDO list is 'contact_freetextsearch'.
-
-
-
 
 ## Sample Request
 
@@ -41,10 +37,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("contact_freetextsearch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -74,7 +71,6 @@ foreach (var item in listProvider.RootItems) {
 |20|Illinoise Market Fare INC, IAvdeling||20|
 |21|Jensen Madrasser, JAvdeling||21|
 |22|Juul & Hansen AS, JAvdeling||22|
-
 
 ## Related MDO Lists
 

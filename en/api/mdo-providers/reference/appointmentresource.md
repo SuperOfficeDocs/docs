@@ -2,7 +2,7 @@
 uid: appointmentresource
 title: appointmentresource
 keywords: mdoprovider mdo provider appointmentresource
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "appointmentresource" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AppointmentResource">AppointmentResource</see> class.
+Implemented by the `AppointmentResource` class.
 The name of the MDO list is 'appointmentresource'.
 
 ## Additional Attributes
@@ -26,10 +23,6 @@ The name of the MDO list is 'appointmentresource'.
 |Conflict datetimes are in UTC time.| |conflict_utc|
 |Appointment id used for conflict resolution. Preferentially used to determine conflict start/end.| |appointment_id|
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -41,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("appointmentresource", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -64,7 +58,6 @@ foreach (var item in listProvider.RootItems) {
 |49|ResourceItem 9: Heading 2||associate_id=49&location=False|
 |79|ResourceItem 12: Heading 1 og 3||associate_id=79&location=False|
 |80|ResourceItem 13: Heading 2 og 3||associate_id=80&location=False|
-
 
 ## Related MDO Lists
 

@@ -13,7 +13,7 @@ redirect_from:
 
 # Retrieve a list of people using rows
 
-Let’s explore how to retrieve a list of persons using rows.
+Let's explore how to retrieve a list of persons using rows.
 
 ```csharp
 using SuperOffice.CRM.Entities;
@@ -40,5 +40,4 @@ Here, we retrieve the list of persons as a person rows collection to a `PersonRo
 
 Once we have the person row collection, it is a matter of iterating through the collection to access the individual properties of a `PersonRow` like we have done above in the example.
 
-<!-- Referenced links -->
-[1]: ../../../entities/howto/contact/get-persons-from-contact-entities.md
+[1]: ../../../entities/howto/contact/get-persons-from-contact-entities

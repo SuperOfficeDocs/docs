@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "workflowdefinitionstatus" MDO List
+
 MDO provider for the WorkflowDefinitionStatus enum
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.WorkflowDefinitionStatusProvider">WorkflowDefinitionStatusProvider</see> class.
+Implemented by the `WorkflowDefinitionStatusProvider` class.
 The name of the MDO list is 'workflowdefinitionstatus'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("workflowdefinitionstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -45,7 +42,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Not running|||
 |2|Paused|||
 |3|Running|||
-
 
 ## Related MDO Lists
 

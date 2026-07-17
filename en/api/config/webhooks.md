@@ -32,6 +32,5 @@ Configure values related to webhooks - events broadcast to remote servers. It is
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.Webhooks>
-[2]: customproxy.md
+[2]: ./customproxy

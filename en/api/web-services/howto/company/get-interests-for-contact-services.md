@@ -56,5 +56,4 @@ By iterating on the array, we can retrieve details of each interest available. S
 
 Comparing the **Interest** tab of the **Company** card in the SuperOffice and our obtained output we can confirm our results.
 
-<!-- Referenced links -->
-[1]: ../../../../company/dev/index.md#interests
+[1]: ../../../../company/dev/index#interests

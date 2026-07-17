@@ -12,7 +12,7 @@ redirect_from: /en/api/netserver/plugins/erp-connectors/online/secure-in-online
 
 # Securing ERP Connectors for SuperOffice Online
 
-In 2017, SuperOffice expanded its online API offering and announced the availability of the [Database Mirroring API][1]. This new API performs database replication-like functionality – mirroring a subset of the online tenants' database through a web service to a remote database.
+In 2017, SuperOffice expanded its online API offering and announced the availability of the [Database Mirroring API][1]. This new API performs database replication-like functionality - mirroring a subset of the online tenants' database through a web service to a remote database.
 
 This new capability, which operates in a very similar fashion as ERP Sync Connectors, has an added layer of security by demanding that the web service first authenticate the calling SuperOffice service before executing pending tasks.
 
@@ -38,11 +38,9 @@ The way the infrastructure works is as follows:
 
 So what is an application identifier? An application identifier is a unique ID that represents an application in the SuperOffice Online App Store. There are standard apps that use ERP Connectors, and there are custom apps that use ERP Connectors as well. Both types of App Store applications have a unique application identifier associated with each one.
 
-<!-- Referenced links -->
 [1]: ../../../../online/mirroring/index.yml
 [2]: https://en.wikipedia.org/wiki/Public_key_infrastructure
 
-<!-- Referenced images -->
-[img1]: media/authenticationsequencediagram.png
-[img2]: media/editsyncconnector-new.png
-[img3]: media/autherpsyncconnector-600px.png
+[img1]: /media/loc/en/api/authenticationsequencediagram.png
+[img2]: /media/loc/en/api/editsyncconnector-new.png
+[img3]: /media/loc/en/api/autherpsyncconnector-600px.png

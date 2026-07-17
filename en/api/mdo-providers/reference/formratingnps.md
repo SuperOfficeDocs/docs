@@ -2,7 +2,7 @@
 uid: formratingnps
 title: formratingnps
 keywords: mdoprovider mdo provider formratingnps
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "formratingnps" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.RatingNpsProvider">RatingNpsProvider</see> class.
+Implemented by the `RatingNpsProvider` class.
 The name of the MDO list is 'formratingnps'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("formratingnps", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -53,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |8|NPS score 8|||
 |9|NPS score 9|||
 |10|NPS score 10|||
-
 
 ## Related MDO Lists
 

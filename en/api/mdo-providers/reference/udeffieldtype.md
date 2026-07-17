@@ -9,21 +9,16 @@ envir: onsite, online
 ---
 
 # "udeffieldtype" MDO List
+
 List of UDef field types for a given owner table, and possibly restricted based on the current field type
 
 ExtraInfo = "UDefType,UDefFieldType,hasBeenPublished"
 
-
 For example: "Contact"
-
-
 
 "Contact,Number,true"
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.UdefFieldTypeProvider">UdefFieldTypeProvider</see> class.
+Implemented by the `UdefFieldTypeProvider` class.
 The name of the MDO list is 'udeffieldtype'.
 
 ## Additional Attributes
@@ -33,10 +28,6 @@ The name of the MDO list is 'udeffieldtype'.
 |UDefType,UDefFieldType,hasBeenPublished| |Contact,Number,true|
 
 Separator: ,
-
-
-
-
 
 ## Sample Request
 
@@ -49,10 +40,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("udeffieldtype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -69,7 +61,6 @@ foreach (var item in listProvider.RootItems) {
 |6|Checkbox|||
 |7|List|||
 |8|Decimal|||
-
 
 ## Related MDO Lists
 

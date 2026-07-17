@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "productimage" MDO List
+
 Return product images from the blob table
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ProductImageProvider">ProductImageProvider</see> class.
+Implemented by the `ProductImageProvider` class.
 The name of the MDO list is 'productimage'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("productimage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |641|641|||
 |642|642|||
 |643|643|||
-
 
 ## Related MDO Lists
 

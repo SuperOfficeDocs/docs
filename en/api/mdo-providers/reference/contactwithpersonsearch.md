@@ -9,17 +9,13 @@ envir: onsite, online
 ---
 
 # "contactwithpersonsearch" MDO List
+
 Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will
 return a mix of contact and person records. The type is indicated in the Type property of the item, and the contact
 ID is always in the extraInfo.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ContactListWithPersonSearchProviderOrg">ContactListWithPersonSearchProviderOrg</see> class.
+Implemented by the `ContactListWithPersonSearchProviderOrg` class.
 The name of the MDO list is 'contactwithpersonsearch'.
-
-
-
 
 ## Sample Request
 
@@ -32,10 +28,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("contactwithpersonsearch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -65,7 +62,6 @@ foreach (var item in listProvider.RootItems) {
 |104|:Storbritannia2, Storbritannia2||104|
 |105|:Storbritannia3, Storbritannia3||105|
 |97|:Sverige1, Sverige1||97|
-
 
 ## Related MDO Lists
 

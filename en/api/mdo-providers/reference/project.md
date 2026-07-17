@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "project" MDO List
+
 Provider for selecting a project.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ProjectListProviderOrg">ProjectListProviderOrg</see> class.
+Implemented by the `ProjectListProviderOrg` class.
 The name of the MDO list is 'project'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("project", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |70|Guided Project|||
 |71|Guided Project With Progress|||
 |22|hhohheehh|||
-
 
 ## Related MDO Lists
 

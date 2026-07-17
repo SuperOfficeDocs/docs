@@ -210,7 +210,7 @@ For the application to run, some modifications are required in the web configura
               timeout="40"/>
 
 <authorization>
-  <!-- 
+  <!--
   <deny users="?"/>
   <allow users="[comma separated list of users]"
          roles="[comma separated list of roles]" />
@@ -260,11 +260,9 @@ By clicking on the link in the feed contents, the appropriate dialog in SuperOff
 
 <a href="../../../../assets/downloads/api/rssfeedfinalvb.zip" download>Click to download source code (zip)</a>
 
-<!-- Referenced links -->
 [1]: http://www.w3.org/TR/REC-xml
 
-<!-- Referenced images -->
-[img1]: media/image035.jpg
-[img2]: media/image032.jpg
-[img3]: media/image033.jpg
-[img4]: media/image034.jpg
+[img1]: /media/loc/en/api/image035.jpg
+[img2]: /media/loc/en/api/image032.jpg
+[img3]: /media/loc/en/api/image033.jpg
+[img4]: /media/loc/en/api/image034.jpg

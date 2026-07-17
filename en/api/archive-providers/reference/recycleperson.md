@@ -1,7 +1,7 @@
 ---
 uid: RecyclePerson
 title: RecyclePerson
-description: 
+description:
 keywords: RecyclePerson archive provider
 generated: true
 content_type: reference
@@ -10,15 +10,17 @@ envir: onsite, online
 
 # "RecyclePerson"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RecyclePersonProvider">SuperOffice.CRM.ArchiveLists.RecyclePersonProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.RecyclePersonProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"person"|Contact|
 |"forAllUsers"|View deleted contacts for all users|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -122,6 +124,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |personContact/email/emailAddress|string|E-mail| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |personContact/email/emailDescription|string|Description| x |
@@ -141,5 +144,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

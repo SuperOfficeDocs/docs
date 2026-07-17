@@ -2,7 +2,7 @@
 uid: chartselection
 title: chartselection
 keywords: mdoprovider mdo provider chartselection
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "chartselection" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.ArchiveLists.ChartSelectionProvider">ChartSelectionProvider</see> class.
+Implemented by the `ChartSelectionProvider` class.
 The name of the MDO list is 'chartselection'.
 
 ## Additional Attributes
@@ -26,10 +23,6 @@ The name of the MDO list is 'chartselection'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -41,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("chartselection", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -54,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

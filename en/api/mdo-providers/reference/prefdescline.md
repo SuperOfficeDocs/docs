@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "prefdescline" MDO List
+
 PrefDesc creates a MDO list of prefdesclines for a given prefdesc id.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PrefDescLineProvider">PrefDescLineProvider</see> class.
+Implemented by the `PrefDescLineProvider` class.
 The name of the MDO list is 'prefdescline'.
 
 ## Additional Attributes
@@ -21,10 +20,6 @@ The name of the MDO list is 'prefdescline'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Pref desc id (required)| |123|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +32,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("prefdescline", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -50,7 +46,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

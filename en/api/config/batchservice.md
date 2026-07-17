@@ -40,5 +40,4 @@ Configuration values for the Windows batch task service (`SoBatchService`).
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.BatchService>

@@ -14,7 +14,7 @@ redirect_from:
 
 All pictures are stored in the `BinaryObject` table in the database. You can retrieve such information using `SoCore` and `SoDatabase` DLLs.
 
-In this example, we display the image `Name`, which is contained in a `SelectableMDOListItem` object. We use the `IMDOAgent`’s `GetSelectableList` method to retrieve the information.
+In this example, we display the image `Name`, which is contained in a `SelectableMDOListItem` object. We use the `IMDOAgent`'s `GetSelectableList` method to retrieve the information.
 
 ## Display image list
 

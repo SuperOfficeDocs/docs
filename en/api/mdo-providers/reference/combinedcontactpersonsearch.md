@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "combinedcontactpersonsearch" MDO List
+
 Consider using the ContactAndPersonListFreetextSearchProvider/"contact_and_person_freetextsearch" MDO list instead of this one.
 
 Provider for selecting a Person or a Contact, including search on contacts that match as well as persons. this provider will
@@ -18,30 +19,21 @@ ID is always in the extraInfo.
 Searchs contact and person tables for matches, in addition to the contact
 search of the base class "contact" search.
 
-
 Returns a mix of Persons with Contact and Person without contact items sorted by relevance: own contacts, recently added or updated
 are more relevant.
 
-
 id = contact or person_id,
-
 
 Name = contact.name + department or person first+last name (contact name + department)
 
-
 ExtraInfo = contact_id,
-
 
 Type = "Person", "Contact"
 
-
 IconHint = "Personwithcontact", "contact", "Personwithoutcontact"
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.CombinedContactPersonSearchProvider">CombinedContactPersonSearchProvider</see> class.
+Implemented by the `CombinedContactPersonSearchProvider` class.
 The name of the MDO list is 'combinedcontactpersonsearch'.
-
-
-
 
 ## Sample Request
 
@@ -54,10 +46,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("combinedcontactpersonsearch", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -67,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

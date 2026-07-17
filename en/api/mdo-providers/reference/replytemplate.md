@@ -2,7 +2,7 @@
 uid: replytemplate
 title: replytemplate
 keywords: mdoprovider mdo provider replytemplate
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "replytemplate" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ReplyTemplateProvider">ReplyTemplateProvider</see> class.
+Implemented by the `ReplyTemplateProvider` class.
 The name of the MDO list is 'replytemplate'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("replytemplate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -46,7 +41,7 @@ foreach (var item in listProvider.RootItems) {
 |15|System Template - A request in the favourites list has been activated|||
 |17|System Template - A request in the favourites list has been reassigned|||
 |16|System Template - A request in the favourites list has escalated|||
-|21|System template – chat log|||
+|21|System template - chat log|||
 |19|System template - confirm customer email|||
 |3|System template - customer password|||
 |2|System template - customer reply|||
@@ -63,7 +58,6 @@ foreach (var item in listProvider.RootItems) {
 |9|System template - request taken over|||
 |18|System template - warning of expiring licence|||
 |12|System template - weekly statistics|||
-
 
 ## Related MDO Lists
 

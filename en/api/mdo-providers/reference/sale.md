@@ -9,15 +9,14 @@ envir: onsite, online
 ---
 
 # "sale" MDO List
+
 List of sales.
 Skips completed sales SkipCompletedSales userpref is set.
 Skips sales without quotes if AdditionalInfo contains "hasQuoteOnline=1".
 Skips sales without stakeholders if AdditionalInfo contains "stakeholderOnly=1".
 Filter sales according to currency if AdditionalInfo contains "hasCurrency=(currency-id)"
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleListProviderOrg">SaleListProviderOrg</see> class.
+Implemented by the `SaleListProviderOrg` class.
 The name of the MDO list is 'sale'.
 
 ## Additional Attributes
@@ -30,10 +29,6 @@ The name of the MDO list is 'sale'.
 
 Separator: ;
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -45,10 +40,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("sale", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -73,12 +69,11 @@ foreach (var item in listProvider.RootItems) {
 |16|SalgÅBBÅ (Yngve'S Fisk & Vilt)||SalgÅBBÅ|
 |18|Salg7BB7 (0-Feil Software AS)||Salg7BB7|
 |19|Salg&BB& (0-Feil Software AS)||Salg&BB&|
-|20|Salg<BB< (0-Feil Software AS)||Salg<BB<|
+|20|Salg<BB\< (0-Feil Software AS)||Salg<BB\<|
 |21|SalgCDDC (Arne'S Kebab)||SalgCDDC|
 |23|SalgNDDN (Arne'S Kebab)||SalgNDDN|
 |24|SalgSDDS (Yngve'S Fisk & Vilt)||SalgSDDS|
 |25|SalgYDDY (Yngve'S Fisk & Vilt)||SalgYDDY|
-
 
 ## Related MDO Lists
 

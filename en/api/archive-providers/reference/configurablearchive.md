@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "ConfigurableArchive"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ConfigurableArchiveProvider">SuperOffice.CRM.ArchiveLists.Archive.ConfigurableArchiveProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.ConfigurableArchiveProvider` inside NetServer's SODatabase assembly.
 
 Configurable archive with OR-able restriction groups.
 

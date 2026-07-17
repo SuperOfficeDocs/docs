@@ -17,5 +17,4 @@ redirect_from:
 
 * [Set udef][1]
 
-<!-- Referenced links -->
-[1]: set-udef.md
+[1]: ./set-udef

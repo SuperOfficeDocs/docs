@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "appointmenttype" MDO List
+
 List of AppointmentType values: inDiary, inChecklist, Note, Document, SavedReport, BookingForDiary, BookingForChecklist
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AppointmentTypeProvider">AppointmentTypeProvider</see> class.
+Implemented by the `AppointmentTypeProvider` class.
 The name of the MDO list is 'appointmenttype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("appointmenttype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -49,7 +46,6 @@ foreach (var item in listProvider.RootItems) {
 |5|Saved Report|||
 |6|Booking has start time|||
 |7|Booking has no start time|||
-
 
 ## Related MDO Lists
 

@@ -9,31 +9,26 @@ envir: onsite, online
 ---
 
 # "sale_new" MDO List
+
 List of sales.
 Searches sale + company names + person names.
 
-
 Skips completed sales SkipCompletedSales userpref is set.
-
 
 Skips sales without quotes if AdditionalInfo contains "hasQuoteOnline=1".
 
-
 Skips sales without stakeholders if AdditionalInfo contains "stakeholderOnly=1".
-
 
 Filter sales according to currency if AdditionalInfo contains "hasCurrency=(currency-id)"
 
 Returns sale items only: Id = sale-id, Name = Sale name (company name,dept or project name), Type = "Sale",
 ExtraInfo = sale heading name.
 
-
 Completed/Done sales are marked with stylehint = "deleted_item" (but item.deleted = false)
-
 
 Not complete Lost/Stalled/Sold sales are marked with corresponding style hints.
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleListProvider">SaleListProvider</see> class.
+Implemented by the `SaleListProvider` class.
 The name of the MDO list is 'sale_new'.
 
 ## Additional Attributes
@@ -46,10 +41,6 @@ The name of the MDO list is 'sale_new'.
 
 Separator: ;
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -61,10 +52,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("sale_new", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -89,12 +81,11 @@ foreach (var item in listProvider.RootItems) {
 |16|SalgÅBBÅ (Yngve'S Fisk & Vilt, YAvdeling)|sold|SalgÅBBÅ|
 |18|Salg7BB7 (0-Feil Software AS, 0Avdeling)||Salg7BB7|
 |19|Salg&BB& (0-Feil Software AS, 0Avdeling)|lost|Salg&BB&|
-|20|Salg<BB< (0-Feil Software AS, 0Avdeling)||Salg<BB<|
+|20|Salg<BB\< (0-Feil Software AS, 0Avdeling)||Salg<BB\<|
 |21|SalgCDDC (Arne'S Kebab, AAvdeling)|sold|SalgCDDC|
 |23|SalgNDDN (Arne'S Kebab, AAvdeling)||SalgNDDN|
 |24|SalgSDDS (Yngve'S Fisk & Vilt, YAvdeling)|sold|SalgSDDS|
 |25|SalgYDDY (Yngve'S Fisk & Vilt, YAvdeling)||SalgYDDY|
-
 
 ## Related MDO Lists
 

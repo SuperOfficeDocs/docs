@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "Participants"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ParticipantsProvider">SuperOffice.CRM.ArchiveLists.ParticipantsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ParticipantsProvider` inside NetServer's SODatabase assembly.
 
 Archive list provider for the participants list of a booking (multi-person appointment)
 
@@ -18,7 +18,6 @@ This provider, like the <see cref="T:SuperOffice.CRM.ArchiveLists.LinksProvider"
 the data. For existing appointments, the appointment_id is used as search criterion. This will retrieve
 all participants in this appointment, regardless of whether the given appointment is the mother
 or one of the slaves.
-
 
 For appointments under construction, where the data have not yet been saved to the database, the
 caller must specify all data through the use of restrictions - some of which are then used for
@@ -31,7 +30,7 @@ associate id's. These will be returned as participants of type associate, if the
 The group will be translated into associate id's, and these will be returned as participants of type associate, if the associate entity has been selected.
 This is an alternative to specifying the associates one by one and cannot be used together with the associateRestrictionId.</description></item><item><term>externalPersonRestrictionId</term><description>Operator: IN, Value: array of
 of person id's. These will be returned as participants of type external person, if the externalPerson entity has been selected.
-<i>Note: Persons who are actually associates</i> will be detected as such, and be returned as associates.</description></item><item><term>resourceRestrictionId</term><description>Operator: IN, Value: array of
+*Note: Persons who are actually associates* will be detected as such, and be returned as associates.</description></item><item><term>resourceRestrictionId</term><description>Operator: IN, Value: array of
 of associate id's. These will be returned as participants of type resource, if the resource entity has been selected.</description></item><item><term>personEmailsInformation</term><description>Operator: IN, Value: array of
 of person id's. This restriction is optionally used together with externalPersonRestrictionId, and
 specifies which of the persons should have an email icon set.</description></item><item><term>associateEmailsInformation</term><description>Operator: IN, Value: array of
@@ -53,18 +52,16 @@ conflict detection.</description></item><!--
 Needed when fetching
 data through the explicit restrictions (not appointmentRestrictionId) and if you want collision detection on
 multiple (such as recurring) occasions.</description></item>
---></list>
+--\></list>
 If you do not use the appointmentRestrictionId, you can instead specify
 external persons by a list (use the IN operator) of externalPersonRestrictionId,
 internal associates through a list of associateRestrictionId, and resources through resourceRestrictionId.
 All three restrictions can be given simultaneously, with an implied OR operator. In this case no appointment
 records are required or fetched.
 
-
 Conflict detection is provided if the status column is requested. For non-saved data, this also
 requires the presence of startTimeInformation and endTimeInformation restrictions (dates in InvariantCulture format),
 so that the conflicts may be calculated.
-
 
 Finally, the email status (should emails be sent for invitations and changes) is read from the database
 if the appointmentRestrictionId is used; if explicit person or associate restrictions are used, then email
@@ -72,12 +69,12 @@ status information must be passed in through the associateEmailsInformation and 
 restrictions. The value of each restriction is a list of associate resp. person id's who have
 the email flag set. If all this sounds complex - well, it is.
 
-
 Being the tolerant sort, the provider will accept both associates and resources in each of associateRestrictionId
 and resourceRestrictionId, and internally sort out which is which. Similarly, if any of the person id's you happen to pass
 in through the externalPersonRestrictionId are actually associates, then that too will be sorted out.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"associate"|Associate|
@@ -86,6 +83,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 |"emailParticipant"|Email Participant|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |ownerAssociateIdInformation|associate|Owner's Associate ID: Associate ID of the user specified as owner of the follow-up|  |
@@ -189,6 +187,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 |email/emailProtocol|string|Protocol: E-mail protocol, such as SMTP|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |email/emailAddress|string|E-mail|  |
@@ -261,5 +260,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

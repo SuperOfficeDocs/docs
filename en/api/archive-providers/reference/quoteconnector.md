@@ -1,7 +1,7 @@
 ---
 uid: QuoteConnector
 title: QuoteConnector
-description: 
+description:
 keywords: QuoteConnector archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "QuoteConnector"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.QuoteConnectorProvider">SuperOffice.CRM.ArchiveLists.QuoteConnectorProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.QuoteConnectorProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"connector"|??Connector|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |name| *None* |Name: Name (from code) of the Quote Connector| x |
@@ -38,5 +40,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

@@ -41,10 +41,10 @@ SELECT * FROM person WHERE contact_id = 81
 | 136248 | 81 | 4 | Test | | | |
 | 136262 | 81 | 5 | Amtest | | | |
 
-We can join these two queries into one:
+We can join these two queries into one:
 
 ```SQL
-SELECT * FROM person p, contact c 
+SELECT * FROM person p, contact c
 WHERE c.name = 'My Favorite Company'
 AND c.contact_id = p.contact_id
 ```

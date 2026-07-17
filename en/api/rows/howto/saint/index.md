@@ -20,6 +20,5 @@ Sales are grouped into different statuses, like open, sold, lost or unknown. In 
 
 * [Search for contacts with a given SAINT counter using ContactRow.CustomSearch][2]
 
-<!-- Referenced links -->
-[1]: ../../../../database/tables/countervalue.md
-[2]: search-saint-contactrow-customsearch.md
+[1]: ../../../../database/tables/countervalue
+[2]: ./search-saint-contactrow-customsearch

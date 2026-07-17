@@ -32,8 +32,7 @@ using SuperOffice.CRM.Globalization;
 
 string encoded = "[D:1234.5]";
 string localized = CultureDataFormatter.LocalizeEncoded( encoded );
-// localized = "1234,5" 
+// localized = "1234,5"
 ```
 
-<!-- Referenced links -->
-[1]: culturedataformatter.md
+[1]: ./culturedataformatter

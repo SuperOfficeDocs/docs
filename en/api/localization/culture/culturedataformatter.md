@@ -9,7 +9,7 @@ content_type: reference
 category: localization
 audience: api
 audience_tooltip: SuperOffice APIs and database
-redirect_from: 
+redirect_from:
   - /en/api/localization/culture/index
   - /en/globalization-and-localization/culture/index
   - /en/globalization-and-localization/culture/culturedataformatter
@@ -77,7 +77,7 @@ The data type moniker indicates the column data type followed by a colon, then t
 |Money  |M  |[M:123.45]|
 |Time   |T  |[T:14:52]|
 |TimeSpan|TS|[TS:500]|
-|String |   |“Not encoded”|
+|String |   |"Not encoded"|
 
 For each data type, `CultureDataFormatter` has a static `Encode` and `ParseEncoded` method, for example:
 
@@ -112,10 +112,8 @@ Additional encode methods on the CultureDataFormatter class include:
 
 As these methods are more optimal, we recommend you chose to use these over the plain Encode method.
 
-<!-- Referenced links -->
-[1]: ../../archive-providers/index.md
-[2]: ../../bulk-operations/mass-operations/index.md
+[1]: ../../archive-providers/index
+[2]: ../../bulk-operations/mass-operations/index
 
-<!-- Referenced images -->
-[img1]: media/mdolistitemdialog.png
-[img2]: media/mdolistitemdatabaserow.png
+[img1]: /media/loc/en/api/mdolistitemdialog.png
+[img2]: /media/loc/en/api/mdolistitemdatabaserow.png

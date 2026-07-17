@@ -49,7 +49,7 @@ using (SoSession mySession = SoSession.Authenticate("sal0", ""))
 
     //check to see the logged in user have rights to the fields in the
     // form and if not disable the Save button
-    if ((!myEntity.FieldProperties["Department"].FieldRight.IsActive) & 
+    if ((!myEntity.FieldProperties["Department"].FieldRight.IsActive) &
         (!myEntity.FieldProperties["Name"].FieldRight.IsActive))
   {
     cmdSave.Enabled = false;
@@ -90,7 +90,7 @@ using (SoSession mySession = SoSession.Authenticate("sal0", ""))
     }
     else
     {
-      MessageBox.Show("you don't have the rights to perform this task. The reason is " + 
+      MessageBox.Show("you don't have the rights to perform this task. The reason is " +
           myEntity.FieldProperties["Department"].FieldRight.Reason);
     }
   }

@@ -9,17 +9,13 @@ envir: onsite, online
 ---
 
 # "saleprobability" MDO List
+
 MDO list provider for the probability list of the Sale dialog. This list extends the basic <see cref="!:ProbRow" /> list with a leading
 'lost' and a trailing 'sold' item, and specialized icons. It also adds the probability as part of the text, and again
 in the extraInfo field.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleProbability">SaleProbability</see> class.
+Implemented by the `SaleProbability` class.
 The name of the MDO list is 'saleprobability'.
-
-
-
 
 ## Sample Request
 
@@ -32,10 +28,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("saleprobability", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -51,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |1|Sendt tilbud (30%)||30|
 |2|Sluttforhandlinger (80%)||80|
 |-2|Sold||100|
-
 
 ## Related MDO Lists
 

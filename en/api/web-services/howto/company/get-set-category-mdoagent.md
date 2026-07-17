@@ -65,5 +65,4 @@ Below is a screenshot of the application that we have developed.
 
 ![01 -screenshot][img1]
 
-<!-- Referenced images -->
-[img1]: media/image001.jpg
+[img1]: /media/loc/en/api/image001-8.jpg

@@ -16,7 +16,7 @@ Plugins are created using a `Factory` class based on the `IPlugin` interface and
 
 A sentry plugin works out what information a particular user is allowed to see, and what the user can do with the information. A sentry plugin may rewrite the [OSQL queries][1] to get more information so it can make its decision.
 
-A sentry plugin must look at the information available through the sentry’s lookup objects, and use these values to figure out whether the current user can see, edit or delete the data. In this way, a Sentry plugin should be stateless. The plugin may be called many times with different rows of information.
+A sentry plugin must look at the information available through the sentry's lookup objects, and use these values to figure out whether the current user can see, edit or delete the data. In this way, a Sentry plugin should be stateless. The plugin may be called many times with different rows of information.
 
 ## When is the Sentry plugin called?
 
@@ -33,10 +33,8 @@ The diagram shows what happens when your client code causes a database access.
 * [Basic Sentry plugin with simplified data][2]
 * [Sentry plugin with an extra (custom) table][3]
 
-<!-- Referenced links -->
-[1]: ../../osql/index.md
-[2]: create-sentry-plugin.md
-[3]: tutorial-sentry-plugin-with-ext-table.md
+[1]: ../../osql/index
+[2]: ./create-sentry-plugin
+[3]: ./tutorial-sentry-plugin-with-ext-table
 
-<!-- Referenced images -->
-[img1]: media/sentry-plugin.png
+[img1]: /media/loc/en/api/sentry-plugin.png

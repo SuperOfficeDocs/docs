@@ -10,16 +10,18 @@ envir: onsite, online
 
 # "MailingsShadowDynamicSelectionV2"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
 Mailings shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"mailings"|Mailing|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -117,12 +119,13 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/postAddress/state|string|Company - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/contact/postAddress/wgs84latitude|decimal|Company - Postal address - Latitude: Latitude| x |
 |mailingAddr/contact/postAddress/wgs84longitude|decimal|Company - Postal address - Longitude: Longitude| x |
-|mailingAddr/contact/postAddress/formattedAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/postAddress/formattedAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/postAddress/formattedMultiLineAddress| *None* |Company - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/streetAddress/addressId|int|Company - Street address - Address ID: Database ID for the address record| x |
 |mailingAddr/contact/streetAddress/line1|string|Company - Street address - Address 1: First line of the address| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/streetAddress/line2|string|Company - Street address - Address 2: Second line of the address| x |
@@ -133,8 +136,8 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/streetAddress/state|string|Company - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/contact/streetAddress/wgs84latitude|decimal|Company - Street address - Latitude: Latitude| x |
 |mailingAddr/contact/streetAddress/wgs84longitude|decimal|Company - Street address - Longitude: Longitude| x |
-|mailingAddr/contact/streetAddress/formattedAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/streetAddress/formattedAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/streetAddress/formattedMultiLineAddress| *None* |Company - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/restrictionAddress/addressId|int|Company - Search address - Address ID: Database ID for the address record| x |
 |mailingAddr/contact/restrictionAddress/line1|string|Company - Search address - Address 1: First line of the address| x |
 |mailingAddr/contact/restrictionAddress/line2|string|Company - Search address - Address 2: Second line of the address| x |
@@ -145,8 +148,8 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/restrictionAddress/state|string|Company - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/contact/restrictionAddress/wgs84latitude|decimal|Company - Search address - Latitude: Latitude| x |
 |mailingAddr/contact/restrictionAddress/wgs84longitude|decimal|Company - Search address - Longitude: Longitude| x |
-|mailingAddr/contact/restrictionAddress/formattedAddress| *None* |Company - Search address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/contact/restrictionAddress/formattedMultiLineAddress| *None* |Company - Search address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/contact/restrictionAddress/formattedAddress| *None* |Company - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/contact/restrictionAddress/formattedMultiLineAddress| *None* |Company - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/contact/url/URLAddress|string|Company - URL| x |
 |mailingAddr/contact/url/URLDescription|string|Company - Description| x |
 |mailingAddr/contact/contactAssociate/firstName|string|Company - First name: Displays the contact's first name| x |
@@ -227,6 +230,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/contact/LastSale|date|Company - Date of last sale|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/LastCompletedSale|date|Company - Date of last completed sale|  |
@@ -331,6 +335,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/personAddress/line2|string|Contact - Contact address - Address 2: Second line of the address| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAddress/line3|string|Contact - Contact address - Address 3: Third line of the address| x |
@@ -340,8 +345,8 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/personAddress/state|string|Contact - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/person/personAddress/wgs84latitude|decimal|Contact - Contact address - Latitude: Latitude| x |
 |mailingAddr/person/personAddress/wgs84longitude|decimal|Contact - Contact address - Longitude: Longitude| x |
-|mailingAddr/person/personAddress/formattedAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/person/personAddress/formattedAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/person/restrictionAddress/addressId|int|Contact - Search address - Address ID: Database ID for the address record| x |
 |mailingAddr/person/restrictionAddress/line1|string|Contact - Search address - Address 1: First line of the address| x |
 |mailingAddr/person/restrictionAddress/line2|string|Contact - Search address - Address 2: Second line of the address| x |
@@ -352,8 +357,8 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/restrictionAddress/state|string|Contact - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |mailingAddr/person/restrictionAddress/wgs84latitude|decimal|Contact - Search address - Latitude: Latitude| x |
 |mailingAddr/person/restrictionAddress/wgs84longitude|decimal|Contact - Search address - Longitude: Longitude| x |
-|mailingAddr/person/restrictionAddress/formattedAddress| *None* |Contact - Search address - {formattedAddress}: {formattedAddress}|  |
-|mailingAddr/person/restrictionAddress/formattedMultiLineAddress| *None* |Contact - Search address - {formattedAddress}: {formattedAddress}|  |
+|mailingAddr/person/restrictionAddress/formattedAddress| *None* |Contact - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|mailingAddr/person/restrictionAddress/formattedMultiLineAddress| *None* |Contact - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |mailingAddr/person/personInterestIds|listInterest|Contact - Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |mailingAddr/person/personUdef/SuperOffice:1|string|Contact - contactshorttext: tooltipshorttext| x |
 |mailingAddr/person/personUdef/SuperOffice:2|string|Contact - contactlongtext: tooltiplongtext| x |
@@ -435,6 +440,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |mailingAddr/person/correspondingAssociate/contactName|string|Contact - Owning company: Name of the company the user belongs to| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/correspondingAssociate/contactDepartment|string|Contact - Owning department: Name of the department at the company the user belongs to| x |
@@ -539,6 +545,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |emailFlow/workflowAssociate/usergroup|userGroup|Owner - Primary group: The user's primary user group| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowAssociate/usergroupId|int|Owner - Group ID: The user's primary user group| x |
@@ -566,7 +573,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |emailFlow/hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
 |emailFlow/hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |emailFlow/hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|emailFlow/hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root =\> leaf order|  |
 |project/completed|bool|Completed: Displays a check mark indicating if the project has been completed.| x |
 |project/projectId|int|DB ID: Displays the database ID for a project row| x |
 |project/name|stringorPK|Project name: Displays the Project's name| x |
@@ -643,6 +650,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 |project/projectUdef/SuperOffice:6|bool|projectcheckbox| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |project/projectUdef/SuperOffice:7|listAny|projectdropdownlistbox| x |
@@ -685,5 +693,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

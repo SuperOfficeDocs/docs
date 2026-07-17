@@ -62,11 +62,9 @@ SELECT * FROM dataright WHERE roleid = 4
 * [functionright table][2]
 * [role table][3]
 
-<!-- Referenced links -->
-[1]: ../../database/tables/dataright.md
-[2]: ../../database/tables/functionright.md
-[3]: ../../database/tables/role.md
+[1]: ../../database/tables/dataright
+[2]: ../../database/tables/functionright
+[3]: ../../database/tables/role
 
-<!-- Referenced images -->
-[img1]: media/admin-role.png
-[img3]: media/role-diagram.png
+[img1]: /media/loc/en/api/admin-role.png
+[img3]: /media/loc/en/api/role-diagram.png

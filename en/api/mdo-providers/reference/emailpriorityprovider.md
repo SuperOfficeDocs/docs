@@ -9,16 +9,12 @@ envir: onsite, online
 ---
 
 # "emailpriorityprovider" MDO List
+
 MDO List provider for email priority: Highest, High, Normal, Low, Lowest, No Priority.
 Enum value in the extrainfo field
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.EMailPriorityProvider">EMailPriorityProvider</see> class.
+Implemented by the `EMailPriorityProvider` class.
 The name of the MDO list is 'emailpriorityprovider'.
-
-
-
 
 ## Sample Request
 
@@ -31,10 +27,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("emailpriorityprovider", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -49,7 +46,6 @@ foreach (var item in listProvider.RootItems) {
 |4|Low||Low|
 |5|Lowest||Lowest|
 |0|None||NoPriority|
-
 
 ## Related MDO Lists
 

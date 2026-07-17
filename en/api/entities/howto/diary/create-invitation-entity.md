@@ -77,9 +77,6 @@ If we have added more attendees, more records will be entered into the `appointm
 * [Appointment table][1]
 * [Invitations][2]
 
-<!-- Referenced links -->
-[1]: ../../../../database/tables/appointment.md
-[2]: ../../../../diary/learn/invitation/index.md
+[1]: ../../../../database/tables/appointment
+[2]: ../../../../diary/learn/invitation/index
 [4]: <xref:SuperOffice.CRM.Services.ParticipantInfo>
-
-<!-- Referenced images -->

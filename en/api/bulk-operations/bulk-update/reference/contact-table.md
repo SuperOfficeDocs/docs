@@ -14,7 +14,6 @@ client: online
 
 Contact fields. Key constants are in `BulkUpdateSystem.ContactFieldValueKeys`.
 
-<!-- markdownlint-disable-file MD033 -->
 <table>
     <title>Contact</title>
     <thead>
@@ -152,8 +151,8 @@ Contact fields. Key constants are in `BulkUpdateSystem.ContactFieldValueKeys`.
                 <p>Values Count = 0 to 7</p>
                 <p>Set: Values[0] = (string)</p>
                 <p>Clear: Clears value</p>
-                <p>SearchAndReplace:<br>Values[1] = searchString<br>Values[2] = replaceString<br>Values[3] = options</p>
-                <p>RegEx:<br>Values[4] = expression<br>Values[5] = replace with<br>Values[6] = options</p>
+                <p>SearchAndReplace:<br />Values[1] = searchString<br />Values[2] = replaceString<br />Values[3] = options</p>
+                <p>RegEx:<br />Values[4] = expression<br />Values[5] = replace with<br />Values[6] = options</p>
             </td>
             <td>
                 <p>Number2</p>
@@ -296,7 +295,7 @@ Contact fields. Key constants are in `BulkUpdateSystem.ContactFieldValueKeys`.
             </td>
             <td rowspan="2">
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int) 0 or 1<br>0 = unChecked<br>1 = Checked</p>
+                <p>Values[0] = (int) 0 or 1<br />0 = unChecked<br />1 = Checked</p>
                 <p></p>
             </td>
             <td>
@@ -342,16 +341,16 @@ Contact fields. Key constants are in `BulkUpdateSystem.ContactFieldValueKeys`.
             <td rowspan="4">
                 <p>Values Count = 0 to 8</p>
                 <p>Add: if value doesn&rsquo;t already exist</p>
-                <p>Values[0] = (string) value<br>Values[1] = (string) descr</p>
+                <p>Values[0] = (string) value<br />Values[1] = (string) descr</p>
                 <p>Remove: only one needs to match</p>
-                <p>Values[0] = (string) value<br>or...<br>Values[1] = (string) descr</p>
-                <p>ReplaceWith:<br>locates row with Rank =1 and updates it, removes all others. Updates using:</p>
-                <p>Values[0] = (string) value<br>Values[1] = (string) descr</p>
+                <p>Values[0] = (string) value<br />or...<br />Values[1] = (string) descr</p>
+                <p>ReplaceWith:<br />locates row with Rank =1 and updates it, removes all others. Updates using:</p>
+                <p>Values[0] = (string) value<br />Values[1] = (string) descr</p>
                 <p>Clear: Clears all existing rows</p>
-                <p>SearchAndReplace:<br>works on value only, not description.</p>
-                <p>Values[2] = searchString<br>Values[3] = replaceString<br>Values[4] = Search Option</p>
-                <p>RegEx:<br>works on value only, not description.</p>
-                <p>Values[5] = expression<br>Values[6] = replace with<br>Values[7] = search options</p>
+                <p>SearchAndReplace:<br />works on value only, not description.</p>
+                <p>Values[2] = searchString<br />Values[3] = replaceString<br />Values[4] = Search Option</p>
+                <p>RegEx:<br />works on value only, not description.</p>
+                <p>Values[5] = expression<br />Values[6] = replace with<br />Values[7] = search options</p>
             </td>
             <td>
                 <p>Urls</p>
@@ -386,5 +385,4 @@ Contact fields. Key constants are in `BulkUpdateSystem.ContactFieldValueKeys`.
 
 See [User-Defined Fields][1].
 
-<!-- Referenced links -->
-[1]: user-defined-fields.md
+[1]: ./user-defined-fields

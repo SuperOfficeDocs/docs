@@ -11,14 +11,14 @@ For on-site installations.
 
 ## .net Interfaces
 
-* [IQuoteConnector](iquoteconnector.md)
-* [IQuoteConnector2](iquoteconnector2.md)
-* [IProductRegisterCache](iproductregistercache.md)
-* [IArchiveProvider](iarchiveprovider.md)
+* [IQuoteConnector](./iquoteconnector)
+* [IQuoteConnector2](./iquoteconnector2)
+* [IProductRegisterCache](./iproductregistercache)
+* [IArchiveProvider](./iarchiveprovider)
 
-[Reasons](reason-fields.md) and [Rights](rights-field.md)
+[Reasons](./reason-fields) and [Rights](./rights-field)
 
 ## .net Classes
 
-* [QuoteConnectorBase](quoteconnectorbase.md)
-* [QuoteConnectorExtender](quoteconnectorextender.md)
+* [QuoteConnectorBase](./quoteconnectorbase)
+* [QuoteConnectorExtender](./quoteconnectorextender)

@@ -67,5 +67,4 @@ At this stage, we are ready to link the sale and follow-up together. We retrieve
 newApp.LinksHelper.AddSaleLink(newSaleRw);
 ```
 
-<!-- Referenced images -->
 [img1]: ../../../../../media/loc/en/sale/sale-apt-link.png

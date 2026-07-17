@@ -24,7 +24,7 @@ Accept: application/json
 
 ```javascript
 companies = Get("api/v1/Contact?$select=name,category,number")
-// companies.value = 
+// companies.value =
   [
     {
     "PrimaryKey": "3",

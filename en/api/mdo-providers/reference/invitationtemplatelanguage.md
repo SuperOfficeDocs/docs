@@ -2,7 +2,7 @@
 uid: invitationtemplatelanguage
 title: invitationtemplatelanguage
 keywords: mdoprovider mdo provider invitationtemplatelanguage
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "invitationtemplatelanguage" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.InvitationTemplateLanguageProvider">InvitationTemplateLanguageProvider</see> class.
+Implemented by the `InvitationTemplateLanguageProvider` class.
 The name of the MDO list is 'invitationtemplatelanguage'.
 
 ## Additional Attributes
@@ -21,10 +18,6 @@ The name of the MDO list is 'invitationtemplatelanguage'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Appointment-id| appointmentId|0|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +30,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("invitationtemplatelanguage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -50,7 +44,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 |0|Default||DEFAULT|
-
 
 ## Related MDO Lists
 

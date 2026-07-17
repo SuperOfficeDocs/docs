@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "customobjectlist" MDO List
+
 <see cref="T:SuperOffice.CRM.Lists.CustomObjectListProvider" /> creates tree list of the custom objects
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.CustomObjectListProvider">CustomObjectListProvider</see> class.
+Implemented by the `CustomObjectListProvider` class.
 The name of the MDO list is 'customobjectlist'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("customobjectlist", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -48,7 +45,6 @@ foreach (var item in listProvider.RootItems) {
 |3|Car||parentId=6&tableName=y_car|
 |2|Rental||parentId=-1&tableName=y_rental|
 |1|Equipment||parentId=-1&tableName=y_equipment|
-
 
 ## Related MDO Lists
 

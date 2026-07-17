@@ -95,8 +95,5 @@ Finally, the recurrence information is assigned to the matrix and the matrix is 
 
 <a href="../../../../../assets/downloads/api/howtocreaterecurringappointment.zip" download>Get the source code (zip)</a>
 
-<!-- Referenced links -->
-[1]: appointment-matrix.md
-[2]: ../../../../diary/learn/recurrence/index.md
-
-<!-- Referenced images -->
+[1]: ./appointment-matrix
+[2]: ../../../../diary/learn/recurrence/index

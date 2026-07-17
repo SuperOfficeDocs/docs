@@ -14,7 +14,7 @@ redirect_from: /en/api/netserver/entities/setdefaults
 
 Using the `SetDefaults` method when inserting data either to Entity or Row types, could be identified as a good practice.
 
-If `SetDefault()` was not used, the programmer would have to make use of flow-control structures such as if-else blocks to handle situations where the user doesn’t enter any values.
+If `SetDefault()` was not used, the programmer would have to make use of flow-control structures such as if-else blocks to handle situations where the user doesn't enter any values.
 
 ## Example
 

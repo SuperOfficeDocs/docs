@@ -2,7 +2,7 @@
 uid: documentcategory
 title: documentcategory
 keywords: mdoprovider mdo provider documentcategory
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "documentcategory" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.DocumentCategoryListProvider">DocumentCategoryListProvider</see> class.
+Implemented by the `DocumentCategoryListProvider` class.
 The name of the MDO list is 'documentcategory'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("documentcategory", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -44,7 +39,6 @@ foreach (var item in listProvider.RootItems) {
 | --- | ----- | ------- | -------- |
 |1|E-mail|||
 |2|Document|||
-
 
 ## Related MDO Lists
 

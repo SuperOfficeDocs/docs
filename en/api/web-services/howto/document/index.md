@@ -44,12 +44,11 @@ When working with documents, data will often intersect with the following entiti
 * [project][11]
 * [sale][10]
 
-<!-- Referenced links -->
-[1]: services-create.md
-[2]: services-update.md
-[3]: services-configure-access.md
-[4]: rest-add-document-template.md
-[5]: rest-generate-document.md
+[1]: ./services-create
+[2]: ./services-update
+[3]: ./services-configure-access
+[4]: ./rest-add-document-template
+[5]: ./rest-generate-document
 [10]: ../../../../sale/index.yml
 [11]: ../../../../project/index.yml
 [17]: ../../../../company/index.yml

@@ -1,7 +1,7 @@
 ---
 uid: Dynamic
 title: Dynamic
-description: 
+description:
 keywords: Dynamic archive provider
 generated: true
 content_type: reference
@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "Dynamic"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.DotSyntaxProvider">SuperOffice.CRM.ArchiveLists.DotSyntaxProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.DotSyntaxProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 
@@ -19,7 +19,6 @@ See <xref:rest_api_search_dynamic> for more information.
 ## Supported Columns
 
 Columns are defined by the caller. See <xref:rest_api_search_dynamic> for more information.
-
 
 ## Sample
 
@@ -31,5 +30,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

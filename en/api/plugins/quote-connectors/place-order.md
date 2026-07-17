@@ -21,7 +21,7 @@ If the validation was ok, then the **Place Order** dialog appears and the user s
 
 Some ERP systems will be able to turn quotes into orders.
 
-* If the connector has the `iorderconsumer_place_order` capability, then the connector’s `PlaceOrder` method is called.
+* If the connector has the `iorderconsumer_place_order` capability, then the connector's `PlaceOrder` method is called.
 * Otherwise, the quote is just marked SOLD
 
 ![23][img3]
@@ -45,7 +45,6 @@ This new version will be displayed in the GUI.
 If nothing has changed it should return null.
 Requires that the Order-Status capability is true.
 
-<!-- Referenced images -->
-[img1]: media/image021.jpg
-[img2]: media/image022.jpg
-[img3]: media/image023.jpg
+[img1]: /media/loc/en/api/image021-1.jpg
+[img2]: /media/loc/en/api/image022-1.jpg
+[img3]: /media/loc/en/api/image023-1.jpg

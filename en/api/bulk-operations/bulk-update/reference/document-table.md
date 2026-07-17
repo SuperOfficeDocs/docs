@@ -14,7 +14,6 @@ client: online
 
 Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
 
-<!-- markdownlint-disable-file MD033 -->
 <table>
     <title>Document</title>
     <thead>
@@ -43,7 +42,7 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Check:<br>Values[0] = (int)<br>0 = Status.NotStarted<br>1 = Status.Completed</p>
+                <p>Check:<br />Values[0] = (int)<br />0 = Status.NotStarted<br />1 = Status.Completed</p>
                 <p>Toggle: invert current</p>
             </td>
             <td>
@@ -104,11 +103,11 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Set:<br>Values[0] = (Date)<br>Format: InvariantInfo</p>
+                <p>Set:<br />Values[0] = (Date)<br />Format: InvariantInfo</p>
                 <p>Clear = 1/1/0001 12:00:00 AM</p>
             </td>
             <td>
-                <p>DocumentAppointment.ActiveDate<br>DocumentAppointment.EndDate<br>DocumentAppointment.DoBy<br>DocumentAppointment.Done
+                <p>DocumentAppointment.ActiveDate<br />DocumentAppointment.EndDate<br />DocumentAppointment.DoBy<br />DocumentAppointment.Done
                 </p>
             </td>
         </tr>
@@ -123,8 +122,8 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
                 <p>Values Count = 0 to 7</p>
                 <p>Set: Values[0] = (string)</p>
                 <p>Clear: Clears value</p>
-                <p>SearchAndReplace:<br>Values[1] = searchString<br>Values[2] = replaceString<br>Values[3] = options</p>
-                <p>RegEx:<br>Values[4] = expression<br>Values[5] = replace with<br>Values[6] = options</p>
+                <p>SearchAndReplace:<br />Values[1] = searchString<br />Values[2] = replaceString<br />Values[3] = options</p>
+                <p>RegEx:<br />Values[4] = expression<br />Values[5] = replace with<br />Values[6] = options</p>
             </td>
             <td>
                 <p>Header</p>
@@ -179,7 +178,7 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
             <td>
                 <p>Values Count = 1</p>
                 <p>Values[0] = (int)</p>
-                <p>Int.MinValue = All<br>Neg: -10 = GroupId (10)<br>Pos: 10 = AssociateId (10)</p>
+                <p>Int.MinValue = All<br />Neg: -10 = GroupId (10)<br />Pos: 10 = AssociateId (10)</p>
             </td>
             <td>
                 <p>DocumentAppointment.VisibleFor</p>
@@ -195,12 +194,12 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
             <td>
                 <p>Values Count = 1&hellip;n</p>
                 <p>Values are encoded as tableName=recordId values with an optional comment:</p>
-                <p>&ldquo;sale=78&rdquo; <br>or<br>&ldquo;sale=78&amp;comment=Some link comment&rdquo;</p>
-                <p>Allowed table names:<br>(case-sensitive)<br>appointment, document, project, sale or URL</p>
-                <p>add:<br>Creates and adds all values as RelationRows.</p>
-                <p>remove:<br>Deletes all similar relations.</p>
-                <p>ReplaceWith:<br>Deletes all similar relations, then adds back new ones.</p>
-                <p>Clear: <br>Deletes all existing relations.</p>
+                <p>&ldquo;sale=78&rdquo; <br />or<br />&ldquo;sale=78&amp;comment=Some link comment&rdquo;</p>
+                <p>Allowed table names:<br />(case-sensitive)<br />appointment, document, project, sale or URL</p>
+                <p>add:<br />Creates and adds all values as RelationRows.</p>
+                <p>remove:<br />Deletes all similar relations.</p>
+                <p>ReplaceWith:<br />Deletes all similar relations, then adds back new ones.</p>
+                <p>Clear: <br />Deletes all existing relations.</p>
             </td>
             <td>
                 <p>LinksHelper</p>
@@ -216,7 +215,7 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
             <td>
                 <p>Values Count = 1</p>
                 <p>Values[0] = (int) IsPublished</p>
-                <p>0 = Not published<br>1 = Published</p>
+                <p>0 = Not published<br />1 = Published</p>
             </td>
             <td>
                 <p>PublishHelper</p>
@@ -227,5 +226,4 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
 
 See [User-Defined Fields][1].
 
-<!-- Referenced links -->
-[1]: user-defined-fields.md
+[1]: ./user-defined-fields

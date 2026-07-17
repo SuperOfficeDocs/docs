@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "projectmembereventparticipantstatus" MDO List
+
 List of project member event status fields.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ProjectMemberEventParticipantStatusProvider">ProjectMemberEventParticipantStatusProvider</see> class.
+Implemented by the `ProjectMemberEventParticipantStatusProvider` class.
 The name of the MDO list is 'projectmembereventparticipantstatus'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("projectmembereventparticipantstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -48,7 +45,6 @@ foreach (var item in listProvider.RootItems) {
 |3|Registered|||
 |4|Attending|||
 |5|No-show|||
-
 
 ## Related MDO Lists
 

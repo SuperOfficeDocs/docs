@@ -74,7 +74,7 @@ provided by SuperOffice.
 |oneOf |W+|Is one of|
 |notOneOf|W+|Is not one of|
 
-## RestrictionType 'datetime' – both the date and time are used
+## RestrictionType 'datetime' - both the date and time are used
 
 | Name | ValueHint | Display Name |
 | ---- | ------ | ------ |
@@ -82,7 +82,7 @@ provided by SuperOffice.
 |beforeTime|W|Before Datetime|
 |dateTime|W|Exact Datetime|
 
-## RestrictionType 'date' – only the date part is used
+## RestrictionType 'date' - only the date part is used
 
 | Name | ValueHint | Display Name |
 | ---- | ------ | ------ |

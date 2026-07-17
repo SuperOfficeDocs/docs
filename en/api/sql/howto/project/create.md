@@ -31,21 +31,20 @@ The SuperOffice client has done quite a bit of work for us: it has added records
 * [text][2]
 * transaction log
 
-It may also have indexed the name and description text into a free-text index – this depends on your setup.
+It may also have indexed the name and description text into a free-text index - this depends on your setup.
 
 It has generated unique numbers for us (not just `record_id` numbers) and put these numbers into specific fields in the project record (`project_number` field in this case).
 
 It has updated a transaction log to allow synchronizing remote databases.
 
-It has generated a soundex value based on the project’s `name` field. This value is used for detecting duplicates.
+It has generated a soundex value based on the project's `name` field. This value is used for detecting duplicates.
 
  | Project name | Soundex value |
  |---|---|
  | Client SDK Work | KLNTSTKAR |
- | Klient SDK –woork | KLNTSTKAR |
+ | Klient SDK -woork | KLNTSTKAR |
 
 It has timestamped and marked the record with the creator. You can see this in the registered and `registered_associate` fields.
 
-<!-- Referenced links -->
-[1]: ../../../../database/tables/project.md
-[2]: ../../../../database/tables/text.md
+[1]: ../../../../database/tables/project
+[2]: ../../../../database/tables/text

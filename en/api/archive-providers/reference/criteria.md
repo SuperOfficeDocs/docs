@@ -1,7 +1,7 @@
 ---
 uid: Criteria
 title: Criteria
-description: 
+description:
 keywords: Criteria archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "Criteria"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.CriteriaProvider">SuperOffice.CRM.ArchiveLists.CriteriaProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.CriteriaProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"criteria"|criteria|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |key| *None* |Key: Unique key, based on criterion name and any subcriteria| x |
@@ -37,5 +39,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

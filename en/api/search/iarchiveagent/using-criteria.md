@@ -3,10 +3,10 @@ title: How to use multiple criteria with the ArchiveAgent
 uid: archiveagent_multi_criteria
 description: How to use multiple criteria with the ArchiveAgent
 author: SuperOffice Product and Engineering
-keywords: 
+keywords:
 content_type: howto
 date:
-category: 
+category:
 area: api-services
 redirect_from: /en/api/netserver/search/iarchiveagent/using-criteria
 ---
@@ -17,7 +17,70 @@ We have previously seen [how to set a single archive restriction][1] to limit th
 
 The following code segment was used to set a condition to display `Person` information such as `fullName`, `firstName`, and `personNumber` of those who have a `ContactId`, equal to 2.
 
-[!code-csharp[CS](includes/iarchiveagent-person.cs?range=14)]
+```csharp CS
+using System.Collections;
+
+using SuperOffice;
+using SuperOffice.CRM.Services;
+using SuperOffice.CRM.ArchiveLists;
+
+using (SoSession newSession = SoSession.Authenticate("sam", "sam"))
+{
+  //Setting the Parameters that need to be passed to Agent method
+  //Parameter - providerName - The name of the archive provider to use
+  string archiveProviderName = "person";
+
+  //Parameter - columns - An array of the names of the columns wanted.
+  string[] archiveColumns = new string[] { "fullName", "firstName", "personNumber", "position", "academic", "personId", "contactId" };
+
+  //Parameter - sortOrder - Sort order for the archive
+  ArchiveOrderByInfo[] archiveSrtOrd = new ArchiveOrderByInfo[1];
+  archiveSrtOrd[0] = new ArchiveOrderByInfo("personNumber", SuperOffice.Util.OrderBySortType.DESC);
+
+  //Parameter - restriction - Archive restrictions
+  ArchiveRestrictionInfo[] archiveRest = new ArchiveRestrictionInfo[1];
+  archiveRest[0] = new ArchiveRestrictionInfo("contactid", "=", "2");
+
+  //Parameter - entities - Which entities to include
+  string[] desiredEntities = { "person", "retiredPerson" };
+
+  //Parameter - page - Page number, page 0 is the first page
+  int page = 1;
+
+  //Parameter - pageSize - Page size
+  int pageSize = 10;
+
+  //Initializing an Archive Agent
+  using(ArchiveAgent newArcAgt = new ArchiveAgent())
+  {
+    //Get a page of results for an archive list, explicitly specifying the restrictions, orderby, and chosen columns
+    ArchiveListItem[] arcLstItm = newArcAgt.GetArchiveListByColumns(archiveProviderName, archiveColumns, archiveSrtOrd, archiveRest, desiredEntities, page, pageSize);
+
+    int rowNo = 1;
+
+    foreach (ArchiveListItem archiveRow in arcLstItm)
+    {
+      if (rowNo == 1)
+      {
+        foreach (KeyValuePair<string, ArchiveColumnData> column in archiveRow.ColumnData)
+        {
+          Console.Write(column.Key + "\t");
+        }
+        Console.WriteLine();
+      }
+
+      // extract and display the displayValue of each cell (you need to parse culturally sensitive values such as dates
+      // to get the correct client display format)
+      foreach (ArchiveColumnData archiveCell in archiveRow.ColumnData.Values)
+      {
+          Console.Write(archiveCell.DisplayValue + "\t");
+      }
+      Console.WriteLine();
+      ++rowNo;
+    }
+  }
+}
+```
 
 Since the `ArchiveAgent` method requires an array of `ArchiveRestrictionInfo` we would have to create an array of the specific type as above and we may include as many restrictions to the array as we want.
 
@@ -46,5 +109,4 @@ personId        firstName contactId           personNumber  academic  position  
 [I:216]         Chamini   [I:124]             10220                           Chamini Rangedara
 ```
 
-<!-- Referenced links -->
-[1]: iarchiveagent.md
+[1]: ./iarchiveagent

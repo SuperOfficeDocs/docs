@@ -68,6 +68,5 @@ if (formatter != null && state != null)
 }
 ```
 
-<!-- Referenced links-->
 [0]: https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/
 [1]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.ilogger

@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "projectimage" MDO List
+
 Project images from the blob table
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ProjectImageProvider">ProjectImageProvider</see> class.
+Implemented by the `ProjectImageProvider` class.
 The name of the MDO list is 'projectimage'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("projectimage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |373|contest3.jpg|||
 |432|contract.jpg|||
 |436|control.jpg|||
-
 
 ## Related MDO Lists
 

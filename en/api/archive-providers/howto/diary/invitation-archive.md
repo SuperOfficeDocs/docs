@@ -27,7 +27,7 @@ using(SoSession.Authenticate("SAL1" , ""))
     ArchiveOrderByInfo orderBy = new ArchiveOrderByInfo( "date", OrderBySortType.DESC );
 
     // restriction: associateId happens to be mandatory for this provider. Use current associate id as a good example
-    ArchiveRestrictionInfo assocRestriction = 
+    ArchiveRestrictionInfo assocRestriction =
       new ArchiveRestrictionInfo( "associateId", "=", SoContext.CurrentPrincipal.AssociateId.ToString() );
 
     // entities - what do we want to see. Here: everything. Leave out one or more to get rid of that kind of invitation

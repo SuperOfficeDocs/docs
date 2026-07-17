@@ -10,23 +10,24 @@ envir: onsite, online
 
 # "emailcontactaddress"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailContactAddressProvider">SuperOffice.CRM.ArchiveLists.EmailContactAddressProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.EmailContactAddressProvider` inside NetServer's SODatabase assembly.
 
 Contact subchannel for special purpose archive provider used to search for email addresses.
 
 This channel will match on either the email address itself, or contact.name
 
-
 The resulting rows will have entity name 'contact', but the primary key will always be
 the email_id.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"email"|email|
 |"contact"|Contact|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -96,8 +97,8 @@ the email_id.
 |postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionPostalAddress/addressId|int|Postal address - Address ID: Database ID for the address record| x |
 |restrictionPostalAddress/line1|string|Postal address - Address 1: First line of the address| x |
 |restrictionPostalAddress/line2|string|Postal address - Address 2: Second line of the address| x |
@@ -108,8 +109,8 @@ the email_id.
 |restrictionPostalAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionPostalAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |restrictionPostalAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|restrictionPostalAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|restrictionPostalAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionPostalAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -120,8 +121,8 @@ the email_id.
 |streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -130,14 +131,15 @@ the email_id.
 |restrictionAddress/city|string|Search address - City: This criterion corresponds to the City field on the Company card.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/zip|string|Search address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
 |restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |url/URLAddress|string|URL| x |
 |url/URLDescription|string|Description| x |
 |contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -234,6 +236,7 @@ the email_id.
 |contactSupportPerson/kanaFirstName|string|User support contact - First name, kana: Contact's first name, in kana alphabet| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/kanaLastName|string|User support contact - Last name, kana: Contact's last name, in kana alphabet| x |
@@ -338,6 +341,7 @@ the email_id.
 |contactExtra/x\_contact\_boolean|bool|Extra boolean: Custom boolean field.| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |contactExtra/x\_contact\_timespan|timeSpan|Extra timespan: Custom timespan field. Hours and minutes in 10 units| x |
@@ -390,5 +394,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

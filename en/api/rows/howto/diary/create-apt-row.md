@@ -19,7 +19,29 @@ The following example shows how we create an appointment using the `AppointmentR
 
 ## Code
 
-[!code-csharp[CS](includes/create-apt-row.cs)]
+```csharp CS
+using SuperOffice.CRM.Rows;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Instantiate a AppointmentRow Type
+  AppointmentRow newAppointment = AppointmentRow.CreateNew();
+
+  //Set Default values to the AppointmentRow
+  newAppointment.SetDefaults();
+
+  //Assign values to the instantiated AppointmentRow
+  newAppointment.Location = "Seminar Room 663";
+  newAppointment.ContactId = 20;
+  newAppointment.PersonId = 10;
+  newAppointment.Alarm = 1254;
+  newAppointment.DoBy = new DateTime(2007, 3, 31);
+  newAppointment.HasAlarm = 1;
+
+  //Saving the created AppointmentRow
+  newAppointment.Save();
+}
+```
 
 ## Walk-through
 
@@ -29,6 +51,5 @@ The first step of the example shows how to instantiate an `AppointmentRow` class
 
 The next statements show how the different properties of the `AppointmentRow` are assigned. Once such assignments are made, the row could be saved with the `Save` method available in the `AppointmentRow` class.
 
-<!-- Referenced links -->
-[1]: ../../../../database/tables/appointment.md
+[1]: ../../../../database/tables/appointment
 [2]: <xref:SuperOffice.CRM.Rows.AppointmentRow>

@@ -61,7 +61,7 @@ SELECT * FROM projecttypestatuslink WHERE projtype_id = (SELECT type_idx FROM pr
 The different status names are found in table `ProjeStatus`:
 
 ```SQL
-SELECT * FROM PROJSTATUS WHERE ProjStatus_id IN 
+SELECT * FROM PROJSTATUS WHERE ProjStatus_id IN
     (SELECT ProjStatus_id FROM PROJECTTYPESTATUSLINK WHERE projType_id = 4)
 ```
 
@@ -96,7 +96,4 @@ SELECT * FROM suggesteddocument WHERE projectTypeStatusLinkId = 2
 |---|---|---|---|---|---|---|
 | 17 | Consultant work task | 1 | Project plan | 2 | 58 | |
 
-<!-- Referenced links -->
-[1]: ../../../../database/tables/projecttypestatuslink.md
-
-<!-- Referenced images -->
+[1]: ../../../../database/tables/projecttypestatuslink

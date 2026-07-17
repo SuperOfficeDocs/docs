@@ -22,9 +22,8 @@ redirect_from:
 * [List interests for contact][6]
 * [Set interest on/off][7]
 
-<!-- Referenced links -->
-[1]: create-contact.md
-[4]: get-contact-via-services-layer.md
-[5]: get-all-contacts-rest.md
-[6]: get-interests-for-contact-services.md
-[7]: set-interest-on-off-services.md
+[1]: ./create-contact
+[4]: ./get-contact-via-services-layer
+[5]: ./get-all-contacts-rest
+[6]: ./get-interests-for-contact-services
+[7]: ./set-interest-on-off-services

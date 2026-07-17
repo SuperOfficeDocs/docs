@@ -67,8 +67,6 @@ Through the above code segment, we get the available keys, which are within the 
 
 See also: [intro to cache][1]
 
-<!-- Referenced links -->
-[1]: ../../../caching/index.md
+[1]: ../../../caching/index
 
-<!-- Referenced images -->
-[img1]: media/start-week-sunday.png
+[img1]: /media/loc/en/api/start-week-sunday.png

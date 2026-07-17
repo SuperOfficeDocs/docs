@@ -9,17 +9,13 @@ envir: onsite, online
 ---
 
 # "filterfuturedate" MDO List
+
 MDO provider for the hard-coded list of future date alternatives in the Filter dialog.
 Each items' extraInfo contains the number of days into the future that this choice represents,
 slightly simplified (30 days per month and no leap years).
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.FilterFutureDateList">FilterFutureDateList</see> class.
+Implemented by the `FilterFutureDateList` class.
 The name of the MDO list is 'filterfuturedate'.
-
-
-
 
 ## Sample Request
 
@@ -32,10 +28,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("filterfuturedate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -49,7 +46,6 @@ foreach (var item in listProvider.RootItems) {
 |3|+6 Months||180|
 |4|+1 Year||365|
 |5|+2 Years||730|
-
 
 ## Related MDO Lists
 

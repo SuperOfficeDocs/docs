@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "SelectionMemberStatic"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionMemberStaticProvider">SuperOffice.CRM.ArchiveLists.SelectionMemberStaticProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.SelectionMemberStaticProvider` inside NetServer's SODatabase assembly.
 
 Provider for the Selection Member table
 
@@ -18,11 +18,13 @@ This provider is intended to be used when working with static selections.
 It will only return fields from the SelectionMember table.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"selectionMember"|Selection Member|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -45,5 +47,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

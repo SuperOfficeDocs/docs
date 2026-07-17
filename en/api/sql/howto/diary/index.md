@@ -22,7 +22,6 @@ redirect_from:
 * [Create invitation][2]
 * [Accept invitation][3]
 
-<!-- Referenced links -->
-[1]: create-apt-sql.md
-[2]: create-invitation-sql.md
-[3]: accept-invitation-sql.md
+[1]: ./create-apt-sql
+[2]: ./create-invitation-sql
+[3]: ./accept-invitation-sql

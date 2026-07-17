@@ -2,7 +2,7 @@
 uid: erpdeliveryterms
 title: erpdeliveryterms
 keywords: mdoprovider mdo provider erpdeliveryterms
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,10 +10,7 @@ envir: onsite, online
 
 # "erpdeliveryterms" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.QuoteListsByIdProvider">QuoteListsByIdProvider</see> class.
+Implemented by the `QuoteListsByIdProvider` class.
 The name of the MDO list is 'erpdeliveryterms'.
 
 ## Additional Attributes
@@ -24,10 +21,6 @@ The name of the MDO list is 'erpdeliveryterms'.
 |Sale to get quotes from which tells us which quote connection to get| SaleId|1234|
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -40,10 +33,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("erpdeliveryterms", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -53,7 +47,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

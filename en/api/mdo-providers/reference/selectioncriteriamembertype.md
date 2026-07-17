@@ -2,7 +2,7 @@
 uid: selectioncriteriamembertype
 title: selectioncriteriamembertype
 keywords: mdoprovider mdo provider selectioncriteriamembertype
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "selectioncriteriamembertype" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SelectionCriteriaMemberType">SelectionCriteriaMemberType</see> class.
+Implemented by the `SelectionCriteriaMemberType` class.
 The name of the MDO list is 'selectioncriteriamembertype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selectioncriteriamembertype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -54,7 +49,6 @@ foreach (var item in listProvider.RootItems) {
 |332|Chat conversation||chat_session|
 |485|Form submission||form_submission|
 |334|Mailing||s_shipment|
-
 
 ## Related MDO Lists
 

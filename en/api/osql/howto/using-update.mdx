@@ -1,0 +1,243 @@
+---
+title: How to use UPDATE in OSQL
+uid: osql_update_howto
+description: SuperOffice Objectified SQL - UPDATE
+author: SuperOffice Product and Engineering
+date: 11.05.2016
+keywords:
+content_type: howto
+redirect_from: /en/api/netserver/osql/howto/using-update
+---
+
+import Setup from "./includes/setup.md";
+
+# How to use UPDATE in OSQL
+
+To update data using OSQL, we would need to use the `Update` class located in the `SuperOffice.Data` namespace.
+
+This example shows how we use the UPDATE command in OSQL to modify existing data.
+
+```csharp CS
+
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("SAM", "sam"))
+{
+  if (mySession == null) return;
+  //Using the Insert Statement to Add new Data
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Creating DataSets with the Tables of the Database
+  ContactTableInfo newConTable = TablesInfo.GetContactTableInfo();
+  //Creating an Instance of the Update Class
+  Update newUpdate = S.NewUpdate();
+  //Retrieve the Contact with ContactID "10" to make the update
+  newUpdate.SetPrimaryKey(newConTable.ContactId);
+  newUpdate.SetPrimaryKeyValue(S.Parameter(10));
+  //Making the necessary update
+  NewUpdate.FieldValuePairs.Add(newConTable.ActiveInterests, S.Parameter(3));
+  newUpdate.FieldValuePairs.Add(newConTable.AssociateId, S.Parameter(5));
+  newUpdate.FieldValuePairs.Add(newConTable.BusinessIdx, S.Parameter(7));
+  newUpdate.FieldValuePairs.Add(newConTable.CategoryIdx, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.CountryId, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.Department, S.Parameter("Testing"));
+  newUpdate.FieldValuePairs.Add(newConTable.Name, S.Parameter("Tester"));
+  newUpdate.FieldValuePairs.Add(newConTable.Number1, S.Parameter("01214578"));
+  newUpdate.FieldValuePairs.Add(newConTable.OrgNr, S.Parameter("7845"));
+  //Make the Database Update
+  myComm.SqlCommand = newUpdate;
+  myComm.ExecuteNonQuery();
+  //Commit the transaction and close the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+<Setup />
+
+Then we create aliases of the tables, which we need to update the data using the `TablesInfo` factory class.
+
+## Instantiate class
+
+Now, we need to create an instance of the `Update` class. This is similar to that of when [creating a Select class][2].
+
+```csharp CS
+
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("SAM", "sam"))
+{
+  if (mySession == null) return;
+  //Using the Insert Statement to Add new Data
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Creating DataSets with the Tables of the Database
+  ContactTableInfo newConTable = TablesInfo.GetContactTableInfo();
+  //Creating an Instance of the Update Class
+  Update newUpdate = S.NewUpdate();
+  //Retrieve the Contact with ContactID "10" to make the update
+  newUpdate.SetPrimaryKey(newConTable.ContactId);
+  newUpdate.SetPrimaryKeyValue(S.Parameter(10));
+  //Making the necessary update
+  NewUpdate.FieldValuePairs.Add(newConTable.ActiveInterests, S.Parameter(3));
+  newUpdate.FieldValuePairs.Add(newConTable.AssociateId, S.Parameter(5));
+  newUpdate.FieldValuePairs.Add(newConTable.BusinessIdx, S.Parameter(7));
+  newUpdate.FieldValuePairs.Add(newConTable.CategoryIdx, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.CountryId, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.Department, S.Parameter("Testing"));
+  newUpdate.FieldValuePairs.Add(newConTable.Name, S.Parameter("Tester"));
+  newUpdate.FieldValuePairs.Add(newConTable.Number1, S.Parameter("01214578"));
+  newUpdate.FieldValuePairs.Add(newConTable.OrgNr, S.Parameter("7845"));
+  //Make the Database Update
+  myComm.SqlCommand = newUpdate;
+  myComm.ExecuteNonQuery();
+  //Commit the transaction and close the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+## Set primary key
+
+Next, we need to set the primary key for the UPDATE command:
+
+```csharp CS
+
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("SAM", "sam"))
+{
+  if (mySession == null) return;
+  //Using the Insert Statement to Add new Data
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Creating DataSets with the Tables of the Database
+  ContactTableInfo newConTable = TablesInfo.GetContactTableInfo();
+  //Creating an Instance of the Update Class
+  Update newUpdate = S.NewUpdate();
+  //Retrieve the Contact with ContactID "10" to make the update
+  newUpdate.SetPrimaryKey(newConTable.ContactId);
+  newUpdate.SetPrimaryKeyValue(S.Parameter(10));
+  //Making the necessary update
+  NewUpdate.FieldValuePairs.Add(newConTable.ActiveInterests, S.Parameter(3));
+  newUpdate.FieldValuePairs.Add(newConTable.AssociateId, S.Parameter(5));
+  newUpdate.FieldValuePairs.Add(newConTable.BusinessIdx, S.Parameter(7));
+  newUpdate.FieldValuePairs.Add(newConTable.CategoryIdx, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.CountryId, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.Department, S.Parameter("Testing"));
+  newUpdate.FieldValuePairs.Add(newConTable.Name, S.Parameter("Tester"));
+  newUpdate.FieldValuePairs.Add(newConTable.Number1, S.Parameter("01214578"));
+  newUpdate.FieldValuePairs.Add(newConTable.OrgNr, S.Parameter("7845"));
+  //Make the Database Update
+  myComm.SqlCommand = newUpdate;
+  myComm.ExecuteNonQuery();
+  //Commit the transaction and close the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+The `SetPrimaryKey` method will set the primary key for the UPDATE command. However, this will throw an exception if the value is not of `FieldInfo` type and is a primary key.
+
+Now, with the below statement, we would set the value for the primary key (the row we need to update). The value should be an `Int` type, if not it would throw an exception.
+
+The `ContactId` where it is equal to 10 is updated in the example as it has been passed to the `Update` class with the use of the `Parameter` method of the `S` class.
+
+```csharp CS
+
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("SAM", "sam"))
+{
+  if (mySession == null) return;
+  //Using the Insert Statement to Add new Data
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Creating DataSets with the Tables of the Database
+  ContactTableInfo newConTable = TablesInfo.GetContactTableInfo();
+  //Creating an Instance of the Update Class
+  Update newUpdate = S.NewUpdate();
+  //Retrieve the Contact with ContactID "10" to make the update
+  newUpdate.SetPrimaryKey(newConTable.ContactId);
+  newUpdate.SetPrimaryKeyValue(S.Parameter(10));
+  //Making the necessary update
+  NewUpdate.FieldValuePairs.Add(newConTable.ActiveInterests, S.Parameter(3));
+  newUpdate.FieldValuePairs.Add(newConTable.AssociateId, S.Parameter(5));
+  newUpdate.FieldValuePairs.Add(newConTable.BusinessIdx, S.Parameter(7));
+  newUpdate.FieldValuePairs.Add(newConTable.CategoryIdx, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.CountryId, S.Parameter(4));
+  newUpdate.FieldValuePairs.Add(newConTable.Department, S.Parameter("Testing"));
+  newUpdate.FieldValuePairs.Add(newConTable.Name, S.Parameter("Tester"));
+  newUpdate.FieldValuePairs.Add(newConTable.Number1, S.Parameter("01214578"));
+  newUpdate.FieldValuePairs.Add(newConTable.OrgNr, S.Parameter("7845"));
+  //Make the Database Update
+  myComm.SqlCommand = newUpdate;
+  myComm.ExecuteNonQuery();
+  //Commit the transaction and close the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+## Assign new values to the fields
+
+The next step is to assign the new values for the fields in the `contact` table. For this, we use the `FieldValuePairs` property exposed in the `Update` class.
+
+The following statements show how we may update different data types that are found in the `contact` table.
+
+```csharp CS
+  newUpdate.FieldValuePairs.Add(newConTable.OrgNr, S.Parameter("7845"));
+  //Make the Database Update
+  myComm.SqlCommand = newUpdate;
+  myComm.ExecuteNonQuery();
+  //Commit the transaction and close the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+<Note>
+All values retrieved from the `FieldValuePairs` property are of database data types such as `Varchar`, `Int`, and `Boolean`.
+</Note>
+
+## Execute
+
+To execute the UPDATE command, we would assign the created `Update` class instance to the `SQlCommand` property of the created instance of the `SoCommand`. Then, we would use `ExecuteNonQuary()` to execute the SQL command against the connection object.
+
+<Note>
+If you try to update the primary key of the table, it would produce an exception when the compiler reaches the `ExecuteNonQuary` method.
+</Note>
+
+[2]: ./using-select

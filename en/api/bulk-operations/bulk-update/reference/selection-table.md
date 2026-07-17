@@ -14,7 +14,6 @@ client: online
 
 Selection fields. Key constants are in `BulkUpdateSystem.SelectionFieldValueKeys`.
 
-<!-- markdownlint-disable-file MD033 -->
 <table>
 <title>Selection</title>
     <thead>
@@ -43,8 +42,8 @@ Selection fields. Key constants are in `BulkUpdateSystem.SelectionFieldValueKeys
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Check:<br>Values[0] = (int)<br>0 = false<br>1 = True</p>
-                <p>Toggle:<br>invert current value</p>
+                <p>Check:<br />Values[0] = (int)<br />0 = false<br />1 = True</p>
+                <p>Toggle:<br />invert current value</p>
             </td>
             <td>
                 <p>Row.Done</p>
@@ -77,7 +76,7 @@ Selection fields. Key constants are in `BulkUpdateSystem.SelectionFieldValueKeys
                 <p>Values[0] = (int) AssociateId</p>
             </td>
             <td>
-                <p>Row.AssociateId<br>Row.GroupId</p>
+                <p>Row.AssociateId<br />Row.GroupId</p>
             </td>
         </tr>
         <tr>
@@ -91,8 +90,8 @@ Selection fields. Key constants are in `BulkUpdateSystem.SelectionFieldValueKeys
                 <p>Values Count = 0 to 7</p>
                 <p>Set: Values[0] = (string)</p>
                 <p>Clear: Clears value</p>
-                <p>SearchAndReplace:<br>Values[1] = searchString<br>Values[2] = replaceString<br>Values[3] = options</p>
-                <p>RegEx:<br>Values[4] = expression<br>Values[5] = replace with<br>Values[6] = options</p>
+                <p>SearchAndReplace:<br />Values[1] = searchString<br />Values[2] = replaceString<br />Values[3] = options</p>
+                <p>RegEx:<br />Values[4] = expression<br />Values[5] = replace with<br />Values[6] = options</p>
             </td>
             <td>
                 <p>Name</p>
@@ -115,7 +114,7 @@ Selection fields. Key constants are in `BulkUpdateSystem.SelectionFieldValueKeys
             </td>
             <td>
                 <p>Values Count = 1</p>
-                <p>Values[0] = (int)<br>Int.MinValue = All<br>Neg: -10 = GroupId (10)<br>Pos: 10 = AssociateId (10)</p>
+                <p>Values[0] = (int)<br />Int.MinValue = All<br />Neg: -10 = GroupId (10)<br />Pos: 10 = AssociateId (10)</p>
             </td>
             <td>
                 <p>VisibleFor</p>

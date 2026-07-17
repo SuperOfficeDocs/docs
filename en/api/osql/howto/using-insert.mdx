@@ -1,0 +1,242 @@
+---
+title: How to use INSERT in OSQL
+uid: osql_insert_howto
+description: SuperOffice Objectified SQL - INSERT
+author: SuperOffice Product and Engineering
+date: 11.05.2016
+keywords:
+content_type: howto
+redirect_from: /en/api/netserver/osql/howto/using-insert
+---
+
+import Setup from "./includes/setup.md";
+
+# How to use INSERT in OSQL
+
+To insert data using OSQL, we would need to use the `Insert` class located in the `SuperOffice.Data` namespace.
+
+The examples demonstrate how we may insert data using the INSERT statement.
+
+<Note>
+When inserting data into any table (adding a new row), all the mandatory columns in the database should be filled. Otherwise, a runtime exception will be thrown.
+</Note>
+
+## Example 1
+
+```csharp CS
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("SAM", "sam"))
+{
+  if (mySession == null) return;
+  //Using the Insert Statement in to Add new Data
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Creating DataSets with the Tables of the Database
+  RedLetterDayTableInfo newRedLetDatTab = TablesInfoGetRedLetterDayTableInfo();
+  //Setting the Required Date
+  DateTime baseTime = new DateTime(2007, 2, 4);
+  //Creating an instance of the Insert class
+  Insert newInsert = S.NewInsert();
+  //Inserting the necessary fields of the Table
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.RedletterdayId, S.Parameter(Sequence.GetNext(newRedLetDatTab)));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Reddate, S.Parameter(baseTime));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.CountryId, S.Parameter(1));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Reds, S.Parameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Colored, SParameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Color, S.Parameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Text, S.Parameter("Testers day"));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.UpdatedCount, S.Parameter(0));
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Executing the Insert Statement
+  myComm.SqlCommand = newInsert;
+  myComm.ExecuteNonQuery();
+  //Committing the transaction and closing the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+<Setup />
+
+Then we create aliases of the tables, which we need to update the data using the `TablesInfo` factory class.
+
+```csharp CS
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("SAM", "sam"))
+{
+  if (mySession == null) return;
+  //Using the Insert Statement in to Add new Data
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Creating DataSets with the Tables of the Database
+  RedLetterDayTableInfo newRedLetDatTab = TablesInfoGetRedLetterDayTableInfo();
+  //Setting the Required Date
+  DateTime baseTime = new DateTime(2007, 2, 4);
+  //Creating an instance of the Insert class
+  Insert newInsert = S.NewInsert();
+  //Inserting the necessary fields of the Table
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.RedletterdayId, S.Parameter(Sequence.GetNext(newRedLetDatTab)));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Reddate, S.Parameter(baseTime));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.CountryId, S.Parameter(1));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Reds, S.Parameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Colored, SParameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Color, S.Parameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Text, S.Parameter("Testers day"));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.UpdatedCount, S.Parameter(0));
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Executing the Insert Statement
+  myComm.SqlCommand = newInsert;
+  myComm.ExecuteNonQuery();
+  //Committing the transaction and closing the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+### Instantiate class
+
+Now, we need to create an instance of the `Insert` class. This is similar to that of when [creating a Select class][2].
+
+```csharp CS
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("SAM", "sam"))
+{
+  if (mySession == null) return;
+  //Using the Insert Statement in to Add new Data
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Creating DataSets with the Tables of the Database
+  RedLetterDayTableInfo newRedLetDatTab = TablesInfoGetRedLetterDayTableInfo();
+  //Setting the Required Date
+  DateTime baseTime = new DateTime(2007, 2, 4);
+  //Creating an instance of the Insert class
+  Insert newInsert = S.NewInsert();
+  //Inserting the necessary fields of the Table
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.RedletterdayId, S.Parameter(Sequence.GetNext(newRedLetDatTab)));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Reddate, S.Parameter(baseTime));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.CountryId, S.Parameter(1));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Reds, S.Parameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Colored, SParameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Color, S.Parameter(0));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.Text, S.Parameter("Testers day"));
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.UpdatedCount, S.Parameter(0));
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Executing the Insert Statement
+  myComm.SqlCommand = newInsert;
+  myComm.ExecuteNonQuery();
+  //Committing the transaction and closing the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+### Assign values to the fields
+
+To insert values the FieldValuePairs property of the Insert class is used as below.
+
+```csharp CS
+  newInsert.FieldValuePairs.Add(newRedLetDatTab.UpdatedCount, S.Parameter(0));
+  //Begin Transaction
+```
+
+### Begin transaction
+
+After all the data has been inserted, the next step is to begin a transaction so that the database table will be updated without any inconsistency. For that, an instance of the `SoTransaction` class is created and the transaction is started with the use of the `BeginTransaction()` method found in the created instance of the `SoConnection`.
+
+The created `SoTransaction` instance is then assigned to the `Transaction` property of the created instance of the `SoCommand`.
+
+To execute the INSERT command, we would assign the created `Update` class instance to the `SQlCommand` property of the created instance of the `SoCommand`. Then, we would use `ExecuteNonQuary()` to execute the SQL command against the connection object.
+
+```csharp CS
+  myConn.Close();
+}
+```
+
+Finally, to complete the above transaction, the `Commit` method is used. It it is found in the created instance of the `SoTransaction`.
+
+The last statement is to close the established `SoConnection` with the use of the `Close` method.
+
+## Example 2
+
+This example shows how we may add a new contact to the `contact` table.
+
+```csharp CS
+using SuperOffice.CRM.Data;
+using SuperOffice.Data;
+using SuperOffice.Data.SQL;
+using SuperOffice;
+using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
+{
+  //Creating DataSets with the Tables of the Database
+  ContactTableInfo newConTab = TablesInfo.GetContactTableInfo();
+  //Creating an instance of the Insert class
+  Insert newInsert = S.NewInsert();
+  //Inserting the necessary fields of the Table
+  newInsert.FieldValuePairs.Add(newConTab.ContactId, S.Parameter(Sequence.GetNext(newConTab)));
+  newInsert.FieldValuePairs.Add(newConTab.Name, S.Parameter("Will Hammond"));
+  newInsert.FieldValuePairs.Add(newConTab.UpdatedCount,S. Parameter(0));
+  newInsert.FieldValuePairs.Add(newConTab.UpdatedAssociateId, S.Parameter(0));
+  newInsert.FieldValuePairs.Add(newConTab.Updated, S. Parameter(DateTime.Now));
+  newInsert.FieldValuePairs.Add(newConTab.BusinessIdx,S. Parameter(0));
+  newInsert.FieldValuePairs.Add(newConTab.CategoryIdx,S. Parameter(0));
+  newInsert.FieldValuePairs.Add(newConTab.CountryId, S. Parameter(50));
+  newInsert.FieldValuePairs.Add(newConTab.Department, S. Parameter("Parks dept"));
+  newInsert.FieldValuePairs.Add(newConTab.OrgNr, S. Parameter("2547869"));
+  newInsert.FieldValuePairs.Add(newConTab.Registered, S. Parameter(DateTime.Now));
+  newInsert.FieldValuePairs.Add(newConTab.RegisteredAssociateId, S.Parameter(103));
+  //Establishing a Database Connection
+  SoConnection myConn = ConnectionFactory.GetConnection();
+  //Creating and SoCommand instance and assigning the earlier created Select statement
+  SoCommand myComm = myConn.CreateCommand();
+  myConn.Open();
+  //Begin Transaction
+  SoTransaction newTrans = myConn.BeginTransaction();
+  myComm.Transaction = newTrans;
+  //Executing the Insert Statement
+  myComm.SqlCommand = newInsert;
+  myComm.ExecuteNonQuery();
+  //Committing the transaction and clossing the session
+  newTrans.Commit();
+  myConn.Close();
+}
+```
+
+To insert data, we are required to create an instance of the `Insert` class and then use the `fieldValuePairs` property of it. The data has been added using the `Add()` method exposed in the `FieldValuePairs` property:
+
+[!code-csharp[CS](includes/insert-2.cs?range?15-16)]
+
+Special attention should be given when inserting the contact ID. Using the `Sequence` class's `GetNext` method, the next contact ID is retrieved and assigned to the `ContactId` of the inserting record.
+
+Once all the required fields are filled, add a connection to the database.
+
+Then the created insert statement will be assigned to a created instance of the `SoCommands`'s `SqlCommand` property.
+
+With the `ExecuteNonQuery` method of the `SoCommand`, the insert statement will be executed and the data will be added to the tables.
+
+[!code-csharp[CS](includes/insert-2.cs?range?32-33,36-37,40-41)]
+
+[2]: ./using-select

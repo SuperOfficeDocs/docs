@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "quotelinestatus" MDO List
+
 Hard-coded list of values for the QuoteLine.Status field, see <see cref="T:SuperOffice.Data.QuoteStatus" /> enum.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.QuoteLineStatus">QuoteLineStatus</see> class.
+Implemented by the `QuoteLineStatus` class.
 The name of the MDO list is 'quotelinestatus'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("quotelinestatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -46,7 +43,6 @@ foreach (var item in listProvider.RootItems) {
 |1|OK with information|||
 |2|Warning|||
 |3|Error|||
-
 
 ## Related MDO Lists
 

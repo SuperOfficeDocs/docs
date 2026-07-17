@@ -15,9 +15,9 @@ redirect_from: /en/api/netserver/plugins/erp-connectors/online/example-api
 When it comes to the ERP Connector web service, the latest API changes do not affect the existing ERP Connector APIs. Rather, the API has added a new interface, `IIntegrationServiceConnectorAuth` that has one method, `Authenticate`.
 
 ```csharp
-public interface IIntegrationServiceConnectorAuth
+public interface IIntegrationServiceConnectorAuth
 {
-  AuthenticationResponse Authenticate(AuthenticationRequest request);
+  AuthenticationResponse Authenticate(AuthenticationRequest request);
 }
 ```
 
@@ -28,7 +28,7 @@ The interface exists in *SuperOffice.SuperID.Contracts.dll*, and a clean impleme
 The `IIntegrationServiceConnectorAuth` interface declares one method, `Authenticate`. It accepts one parameter, an `AuthenticationRequest`, which contains the signed JWT security token that must be validated by the ERP Connector web service.
 
 ```csharp
-public class AuthenticationRequest
+public class AuthenticationRequest
 public class AuthenticationRequest
 {
   public string SignedToken { get; set; }
@@ -44,7 +44,7 @@ The `Authenticate` method must return an `AuthenticationResponse`, which contain
 | Reason | contains a message only if Succeeded is false, indicating why validation failed |
 
 ```csharp
-public class AuthenticationResponse
+public class AuthenticationResponse
 public class AuthenticationResponse
 {
   public string Reason { get; set; }
@@ -74,16 +74,16 @@ public class ErpConnectorWS : IErpConnectorWS, SuperOffice.SuperID.Contracts.IIn
     var result = auth.Authenticate(request);
     return result;
   }
-  
+
   public string GetPrivateKey()
-  { 
+  {
     var fileName = ConfigurationManager.AppSettin["ApplicationPrivateKeyFile"];
     if (!Path.IsPathRooted(fileName))
       fileName = Path.Combine(HostingEnvironment.MapPath(@"~")fileName);
     return File.ReadAllText(fileName);
   }
   //...Remaining code left out for brevity
-} 
+}
 ```
 
 The first thing you will noticed is a call to `AppSettings` to get the application identifier for the ERP Sync Connector. Next is a call to a helper method to read in the private key file associated with the ERP Syn Connector app. Those two pieces of information are passed into the `IntegrationServiceConnectorAuth` constructor and the `IntegrationServiceConnectorAuth.Authenticate` method is called to validate the request. Finally, the result is returned and that's all there is to it.
@@ -98,5 +98,4 @@ We expect all existing ERP Connector providers to adopt this new interface and u
 
 We are constantly trying to improve out APIs and capabilities, and while this step is an easy one, we are looking at alternatives ways to make creating ERP Connectors even more simple. Stay tuned for more about that in future ERP Sync articles.
 
-<!-- Referenced links -->
 [1]: http://www.nuget.org/packages/SuperOffice.Crm.Online.Core/

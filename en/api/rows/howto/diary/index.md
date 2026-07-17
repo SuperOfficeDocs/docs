@@ -18,6 +18,5 @@ redirect_from:
 * [Create appointment (Row)][1]
 * [Create appointments (Rows)][2]
 
-<!-- Referenced links -->
-[1]: create-apt-row.md
-[2]: create-apt-rows.md
+[1]: ./create-apt-row
+[2]: ./create-apt-rows

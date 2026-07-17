@@ -58,9 +58,8 @@ In the example above, we have passed the name of the list needed (category). The
 
 All `RootItems` are taken for the corresponding table, in this case, the  [category table][3]. If the MDO mode of the [CategoryList][2] is turned on, then some records may be present in the [history table][4] corresponding to the category list so that the history list may be nonempty. Similarly, if the [heading table][5] contains records corresponding to the category list, then the `HeadingItems` of the category list will also be nonempty.
 
-<!-- Referenced links -->
-[1]: ../../../lists/entity/generic-list.md
-[2]: ../../../../company/dev/index.md#categorylist
-[3]: ../../../../database/tables/category.md
-[4]: ../../../../database/tables/history.md
-[5]: ../../../../database/tables/heading.md
+[1]: ../../../lists/entity/generic-list
+[2]: ../../../../company/dev/index#categorylist
+[3]: ../../../../database/tables/category
+[4]: ../../../../database/tables/history
+[5]: ../../../../database/tables/heading

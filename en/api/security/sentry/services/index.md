@@ -43,6 +43,5 @@ In the NetServer service layer, the sentry information is provided in 2 properti
 * [FieldProperties][1]
 * [TableRight][2]
 
-<!-- Referenced links -->
-[1]: fieldproperties.md
-[2]: tableright.md
+[1]: ./fieldproperties
+[2]: ./tableright

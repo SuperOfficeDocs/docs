@@ -27,7 +27,6 @@ All existing resource string keys are defined in the `RC` class.
 
 Below is a section from the *web.config* file.
 
-<!-- markdownlint-disable MD013 -->
 ```XML
 <Globalization>
   <ResourceProviders>
@@ -47,20 +46,19 @@ As we can see in the config section there are 5 resource providers listed. The p
 ```XML
 <add name="ResourceDllProvider" rank="20" assemblyname="SuperOffice.DCF" objecttype="SuperOffice.Globalization.ResourceDllProvider" params="SuperOffice.Web.Globalization.ResourceStrings;SuperOffice.Web.Globalization" />
 ```
-<!-- markdownlint-restore -->
 
 This line will load the satellite assembly from the *SuperOffice.Web.Globalization.dll* depending on the language that you selected when you login to SuperOffice. For example, if you chose English as the language when you log into the system this statement will load the English resource satellite assembly to the *SuperOffice.Web.Globalization.dll* file in *bin\\en-us*.
 
 The other resource providers that are listed in the above code section are
 
 * FieldLabelProvider - The field label provider supports customization using the SOADMIN client.  Replacement text labels are stored in the database in the LocaleText table. This provider handles the label customization rules.
-* CurrentValueProvider – This provider will provide us with current values of a given user. Current values mean the current contact of a given user, the month of a given user in the calendar, the current follow-up of a given user and so on. For example the current company name is used in the menu as: -
+* CurrentValueProvider - This provider will provide us with current values of a given user. Current values mean the current contact of a given user, the month of a given user in the calendar, the current follow-up of a given user and so on. For example the current company name is used in the menu as: -
 
   &lt;caption&gt;\[SR\_MENU\_SELECTION\_GOTO\_CONTACT\] \[current:contact\_name\]&lt;/caption&gt;
 
-* TemplateTagProvider – The tags of the document templates of the Six Web application will be provided by this provider. The Template tags are defined for use in the document templates. They represent complex strings computed from the current values. For example, \[name\] is the name of the current company. \[cont\] is the name of the current company’s our-contact.
+* TemplateTagProvider - The tags of the document templates of the Six Web application will be provided by this provider. The Template tags are defined for use in the document templates. They represent complex strings computed from the current values. For example, \[name\] is the name of the current company. \[cont\] is the name of the current company's our-contact.
 * Note that template tags may trigger several agent calls to compute the results.
-* PreferenceValueProvider – This is the provider that will provide us with the preference values of a given user. For example Splitter positions will determine the size of the cards that appear in a give page of the application.
+* PreferenceValueProvider - This is the provider that will provide us with the preference values of a given user. For example Splitter positions will determine the size of the cards that appear in a give page of the application.
 
 ## Example use
 
@@ -96,8 +94,7 @@ Now since SuperOffice has provided us with a `ResourceDllProvider`, we are able 
 * IResourceProvider
 * ResourceDllProvider
 * ResXmlFileProvider
-* TemplateTagAsResourceProvider -->
+* TemplateTagAsResourceProvider --\>
 
-<!-- Referenced links -->
-[1]: create-resource-provider.md
-[2]: create-resx-file.md
+[1]: ./create-resource-provider
+[2]: ./create-resx-file

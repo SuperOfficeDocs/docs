@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "dashboardtileentitytype" MDO List
+
 List of dashboard tile types: Company, Project, Sale, Product, Activity, Web Panel
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.DashboardTileEntityTypeProvider">DashboardTileEntityTypeProvider</see> class.
+Implemented by the `DashboardTileEntityTypeProvider` class.
 The name of the MDO list is 'dashboardtileentitytype'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("dashboardtileentitytype", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -48,7 +45,6 @@ foreach (var item in listProvider.RootItems) {
 |4|Product|||
 |5|Activity|||
 |7|Web panel|||
-
 
 ## Related MDO Lists
 

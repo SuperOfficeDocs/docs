@@ -51,6 +51,5 @@ In the example, we create an `Appointment` using the [CreateDefaultAppointmentEn
 * the type of the requested task
 * the `AssociateID` - the ID for whom the appointment should be created
 
-<!-- Referenced links -->
-[1]: ../../index.md
-[2]: ../../../reference/restful/agent/Appointment_Agent/v1AppointmentAgent_CreateDefaultAppointmentEntityByTypeAndAssociate.md
+[1]: ../../index
+[2]: ../../../reference/restful/agent/Appointment_Agent/v1AppointmentAgent_CreateDefaultAppointmentEntityByTypeAndAssociate

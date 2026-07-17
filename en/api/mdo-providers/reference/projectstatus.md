@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "projectstatus" MDO List
+
 List of project guide steps status values.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ProjectStatusProvider">ProjectStatusProvider</see> class.
+Implemented by the `ProjectStatusProvider` class.
 The name of the MDO list is 'projectstatus'.
 
 ## Additional Attributes
@@ -27,10 +26,6 @@ The name of the MDO list is 'projectstatus'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -42,10 +37,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("projectstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -57,7 +53,6 @@ foreach (var item in listProvider.RootItems) {
 |5|Project planning||IsDeleted=False&ProjectTypeStatusLinkId=1&|
 |6|Implementation||IsDeleted=False&ProjectTypeStatusLinkId=2&|
 |7|Completion||IsDeleted=False&ProjectTypeStatusLinkId=3&|
-
 
 ## Related MDO Lists
 

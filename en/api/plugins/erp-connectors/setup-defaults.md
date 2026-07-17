@@ -31,9 +31,7 @@ When you save the default for the list field, this will trigger one additional c
 
 The admin client wants to know the display value for the list item, so it asks the connector directly for the text of list item 3.
 
-<!-- Referenced links -->
-[1]: default-values.md
-[2]: api/erp-actor-carrier.md
+[1]: ./default-values
+[2]: ./api/erp-actor-carrier
 
-<!-- Referenced images -->
-[img1]: media/image006.png
+[img1]: /media/loc/en/api/image006-1.png

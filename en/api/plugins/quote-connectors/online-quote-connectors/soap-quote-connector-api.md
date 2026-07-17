@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/plugins/quote-connectors/online-quote-connector
 
 # Online SOAP quote connector API
 
-The SOAP API mostly mirrors the C# [IQuoteConnector interface](../api/iquoteconnector.md).
+The SOAP API mostly mirrors the C# [IQuoteConnector interface](../api/iquoteconnector).
 
 Have fun building quote connectors for SuperOffice CRM Online!
-
-<!-- Referenced links -->

@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "emailflow" MDO List
+
 List provider for EmailFlow
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.EmailFlowListProvider">EmailFlowListProvider</see> class.
+Implemented by the `EmailFlowListProvider` class.
 The name of the MDO list is 'emailflow'.
 
 ## Additional Attributes
@@ -23,10 +22,6 @@ The name of the MDO list is 'emailflow'.
 |Specified workflow statuses| statuses||
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -39,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("emailflow", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -52,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

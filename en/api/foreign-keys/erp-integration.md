@@ -47,13 +47,13 @@ Finally, we add a foreign key entry for the ERP ID for the contact
 We can retrieve the SuperOffice contact ID using the ERP ID 1234 like this:
 
 ```SQL
-SELECT record_id FROM foreignkey
+SELECT record_id FROM foreignkey
 WHERE foreigndevice_id = 461 AND table_id = 5 AND subkey='erp-id' AND subvalue='1234'
 ```
 
 We can find the ERP ID using the SuperOffice contact ID 56200 like this:
 
 ```SQL
-SELECT subvalue FROM foreignkey
+SELECT subvalue FROM foreignkey
 WHERE foreigndevice_id = 461 AND table_id = 5 AND record_id = 56200 AND subkey = 'erp-id'
 ```

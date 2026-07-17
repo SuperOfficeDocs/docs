@@ -2,7 +2,7 @@
 uid: attachment
 title: attachment
 keywords: mdoprovider mdo provider attachment
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
@@ -10,14 +10,8 @@ envir: onsite, online
 
 # "attachment" MDO List
 
-
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AttachmentListProvider">AttachmentListProvider</see> class.
+Implemented by the `AttachmentListProvider` class.
 The name of the MDO list is 'attachment'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +24,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("attachment", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -61,7 +56,6 @@ foreach (var item in listProvider.RootItems) {
 |27|SZ Extra|||
 |28|SZ Extra|||
 |29|SZ Extra|||
-
 
 ## Related MDO Lists
 

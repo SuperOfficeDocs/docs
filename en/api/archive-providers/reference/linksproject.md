@@ -1,7 +1,7 @@
 ---
 uid: LinksProject
 title: LinksProject
-description: 
+description:
 keywords: LinksProject archive provider
 generated: true
 content_type: reference
@@ -10,14 +10,16 @@ envir: onsite, online
 
 # "LinksProject"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksProjectProvider">SuperOffice.CRM.ArchiveLists.LinksProjectProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.LinksProjectProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"project"|Project|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -121,6 +123,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 |NumberOfNotCompletedSales|int|Number of non-completed sales|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |NumberOfNotCompletedSalesInPeriod|int|Number of non-completed sales in last 90 days|  |
@@ -149,5 +152,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

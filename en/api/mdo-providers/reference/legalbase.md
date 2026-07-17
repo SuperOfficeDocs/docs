@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "legalbase" MDO List
+
 MDO list provider for Legal base
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.LegalBaseListProvider">LegalBaseListProvider</see> class.
+Implemented by the `LegalBaseListProvider` class.
 The name of the MDO list is 'legalbase'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("legalbase", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -49,7 +46,6 @@ foreach (var item in listProvider.RootItems) {
 |5|Public interest|||
 |6|Legitimate interest|||
 |7|Withdrawn|||
-
 
 ## Related MDO Lists
 

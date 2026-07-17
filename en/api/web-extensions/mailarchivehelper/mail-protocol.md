@@ -50,7 +50,4 @@ task.LoadXml(mailArchiveHelper.GetMailTaskInfo(id));
 
 Your custom mail protocol handler needs to extract the mail address from this XML document and do the right thing. In this case, create a new email message and set the recipient's address and name.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/mail-protocol-sequence-diagram.png
+[img1]: /media/loc/en/api/mail-protocol-sequence-diagram.png

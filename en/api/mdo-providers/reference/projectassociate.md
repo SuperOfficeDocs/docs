@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "projectassociate" MDO List
+
 MDO provider for associates that are members of a project
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ProjectAssociateMDOProvider">ProjectAssociateMDOProvider</see> class.
+Implemented by the `ProjectAssociateMDOProvider` class.
 The name of the MDO list is 'projectassociate'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("projectassociate", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -53,7 +50,6 @@ foreach (var item in listProvider.RootItems) {
 |10|Ingrid Istad||person_id=18&contact_id=0|
 |81|Listadm Listadm||person_id=190&contact_id=0|
 |96|Niels Jensen||person_id=55&contact_id=0|
-
 
 ## Related MDO Lists
 

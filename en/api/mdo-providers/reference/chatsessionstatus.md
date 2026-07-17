@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "chatsessionstatus" MDO List
+
 Chat session status values
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.ChatSessionStatusProvider">ChatSessionStatusProvider</see> class.
+Implemented by the `ChatSessionStatusProvider` class.
 The name of the MDO list is 'chatsessionstatus'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("chatsessionstatus", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -54,7 +51,6 @@ foreach (var item in listProvider.RootItems) {
 |9|Closed||Closed|
 |10|Request posted||RequestPosted|
 |11|Closed in queue||ClosedFromQueue|
-
 
 ## Related MDO Lists
 

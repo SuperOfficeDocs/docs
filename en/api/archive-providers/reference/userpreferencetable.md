@@ -10,12 +10,13 @@ envir: onsite, online
 
 # "UserPreferenceTable"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.UserPreferenceTableProvider">SuperOffice.CRM.ArchiveLists.UserPreferenceTableProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.UserPreferenceTableProvider` inside NetServer's SODatabase assembly.
 
-Archive provider for preferences that live in the <b>userpreference</b> table. <see cref="T:SuperOffice.CRM.ArchiveLists.MappedPreferenceProvider" /> for those that
+Archive provider for preferences that live in the **userpreference** table. <see cref="T:SuperOffice.CRM.ArchiveLists.MappedPreferenceProvider" /> for those that
 actually live in the Service tables.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"default"|default|
@@ -25,6 +26,7 @@ actually live in the Service tables.
 |"user"|User|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -51,5 +53,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

@@ -12,9 +12,6 @@ content_type: concept
 * [Role-based security][2]
 * [Encryption][3]
 
-<!-- Referenced links -->
-[1]: sentry/index.md
-[2]: role-based.md
-[3]: encryption.md
-
-<!-- Referenced images -->
+[1]: ./sentry/index
+[2]: ./role-based
+[3]: ./encryption

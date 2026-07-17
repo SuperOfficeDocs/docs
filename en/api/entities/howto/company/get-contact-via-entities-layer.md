@@ -34,5 +34,4 @@ When retrieving a `Contact` entity through an Idx class, you have to pass the ID
 
 You can alternatively [use the services layer][1].
 
-<!-- Referenced links -->
-[1]: ../../../web-services/howto/company/get-contact-via-services-layer.md
+[1]: ../../../web-services/howto/company/get-contact-via-services-layer

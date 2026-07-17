@@ -35,10 +35,8 @@ The approver is notified in Mobile, and clicks **Approved** or **Reject**.
 
 ![Quote is approved][img3]
 
-<!-- Referenced links -->
-[1]: send-quote.md
+[1]: ./send-quote
 
-<!-- Referenced images -->
-[img1]: media/needs-approval.png
-[img2]: media/request-approval.png
-[img3]: media/request-approved.png
+[img1]: /media/loc/en/api/needs-approval.png
+[img2]: /media/loc/en/api/request-approval.png
+[img3]: /media/loc/en/api/request-approved.png

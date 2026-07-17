@@ -9,6 +9,7 @@ envir: onsite, online
 ---
 
 # "selection" MDO List
+
 Provider for selecting a selection.
 Supported additionalInfo:
 kind=static or kind=dynamic to restrict to static or dynamic selections only. Otherwise you'll get both kinds.
@@ -19,7 +20,7 @@ Sentry rights are honoured; if you do not have Read acces the selection will not
 selections with empty names are not listed; such selections are the result of bugs and are not visible anywhere else
 either.
 
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SelectionProvider">SelectionProvider</see> class.
+Implemented by the `SelectionProvider` class.
 The name of the MDO list is 'selection'.
 
 ## Additional Attributes
@@ -32,10 +33,6 @@ The name of the MDO list is 'selection'.
 
 Separator: &
 
-
-
-
-
 ## Sample Request
 
 ```http!
@@ -47,10 +44,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("selection", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -65,9 +63,9 @@ foreach (var item in listProvider.RootItems) {
 |37|&Tv&&lg-GGTjeAll||static|
 |34|*Tv**lg-GGTjeAll||static|
 |39|?Tv??lg-GGTjeAll||static|
-|40|<Tv<<lg-GGTjeAll||static|
+|40|<Tv\<<lg-GGTjeAll||static|
 |38|=Tv==lg-GGTjeAll||static|
-|41|>Tv>>lg-GGTjeAll||static|
+|41|\>Tv>\>lg-GGTjeAll||static|
 |27|Ætvæælg-GGTjeAll||static|
 |73|A﻿rchived reports made with reporter||dynamic|
 |1|Atvaalg-AAAdmAllKam||static|
@@ -80,7 +78,6 @@ foreach (var item in listProvider.RootItems) {
 |28|Øtvøølg-GGTjeAll||static|
 |23|Otvoolg-HHMarGruPri||static|
 |54|Selection for creation of external users||static|
-
 
 ## Related MDO Lists
 

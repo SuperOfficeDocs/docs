@@ -1,7 +1,9 @@
 # SuperOffice Agent API v1
+
 ## v1-Agents
- 
-# Welcome 
+
+# Welcome
+
 Welcome to the SuperOffice Agents WebAPI.
 
 You can get the version number and build-date from the API endpoint.
@@ -46,17 +48,16 @@ returns an array of URLs:
       ....
 ```
 
-
 You can use this information to determine if the server supports the features you need.
-
 
 ## Building Blocks
 
 The SuperOffice WebAPI has two major parts:
 * **REST API** - URLs describe entities like person or sale.
-* **Agents API** - the services API, accessible via HTTP. 
+* **Agents API** - the services API, accessible via HTTP.
 
 ## REST API
+
 The REST API exposes objects as entities that can be retrieved using HTTP GET,
 modified using HTTP PUT, created using HTTP POST, and deleted using HTTP DELETE.
 
@@ -69,10 +70,9 @@ Returns a new blank contact entity.
     DELETE /api/v1/Contact/123
 
 returns the Contact with id 123.
-This object can be PUT or DELETE - subject to the usual sentry restrictions. 
+This object can be PUT or DELETE - subject to the usual sentry restrictions.
 If your role does not allow you to update, then the web api won't give
 you more access.
-
 
 ## Agent API
 
@@ -81,26 +81,26 @@ The agents expose the latest Services agents and functions.
     GET /api/v1/Agents/Appointment/CalculateDays
     POST /api/v1/Agents/Appointment/CalculateDays
 
-GET this to get a description of the call with some documentation. 
+GET this to get a description of the call with some documentation.
 The method is not invoked using GET, even if the method is called **GetAppointment**.
 
 To actually invoke the method, you need to POST to the endpoint:
 
     POST /api/v1/Agents/Appointment/CalculateDays
-    { "Contact": { "ContactId": 123 },
+    \{ "Contact": \{ "ContactId": 123 \},
       "AppointmentId": 1234,
       "Description": "string",
       "StartDate": "2017-06-06T13:02:55Z",
       "EndDate": "2017-06-06T13:02:55Z"
-    }
+    \}
 
-This method takes an appointment entity as parameter, so this needs to 
+This method takes an appointment entity as parameter, so this needs to
 be in the POST body.
 
 The result of the service call is returned as JSON or XML, depending on the Accept header.
 
-
 ## Errors
+
 Errors are returned as a NULLs:
 
     POST api/v1/Agents/Contact/GetContactEntity?contactEntityId=9999
@@ -119,7 +119,6 @@ Returns HTTP 400 Bad Request - with an error result:
 ```
 
 You may also get a 200 OK with an internal error object.
-
 
 # HTTP Request Headers
 
@@ -158,8 +157,6 @@ returns a JSON representation of the same:
       "Number1": "123" }
 ```
 
-
-
 # Examples of Agent calls
 
 The examples below are given using javascripty pseudo-code.
@@ -178,6 +175,7 @@ Get a blank company, modify it, and post it back to create a new company.
 ```
 
 ## Add a category list item
+
 ```javascript
     var item = {}
     item.Id = 0;
@@ -196,7 +194,7 @@ The list item will be added - we can get the whole list here:
 
 ## Add a document template
 
-We could call **SaveDocumentTemplateEntity** and **SaveDocumentTemplateStream** separately, like the REST API 
+We could call **SaveDocumentTemplateEntity** and **SaveDocumentTemplateStream** separately, like the REST API
 does, or we can use the agent call that does both in a single call:
 
 ```javascript
@@ -208,15 +206,15 @@ does, or we can use the agent call that does both in a single call:
     item.Tooltip = "Unit Tests FTW";
     item.SaveInDb = 1;
     item.LoadTemplateFromPlugin = 0;
-	
+
 	var req = { DocumentTemplateEntity: item, Stream: content }
     item = Post("api/v1/Agents/List/SetDocumentTemplateStream", req)
 ```
 At this point the document template record has been created, and the content
 has been written to the archive.
 
-
 ## Generate a document
+
 ```javascript
     var doc = {}
     doc.Header = "Testing test";
@@ -226,7 +224,7 @@ has been written to the archive.
     doc.Description = "BAZ FTW";
     doc.DocumentTemplate = { DocumentTemplateId = 2 };
     doc.Contact = { ContactId = 25 };
-    doc.Person = { PersonId = 63, ContactId = 25 }; 
+    doc.Person = { PersonId = 63, ContactId = 25 };
     doc = Post("api/v1/Agents/Document/SaveDocumentEntity", doc);
 ```
 At this point the document record has been created, but the content

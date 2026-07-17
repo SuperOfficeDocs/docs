@@ -13,7 +13,6 @@ redirect_from:
 
 # Update a person
 
-<!-- markdownlint-disable-file MD013 -->
 ## Phone numbers added
 
 ```SQL

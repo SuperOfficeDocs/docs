@@ -22,12 +22,11 @@ redirect_from:
 * [Display person image (ImageUtility)][7]
 * [Display image from BLOB table][8]
 
-<!-- Referenced links -->
-[1]: get-persons-contactagent.md
-[2]: get-persons-personagent.md
-[3]: update-person-services.md
-[4]: get-person-image-rest.md
-[5]: get-person-image-options.md
-[6]: update-person-image-rest.md
-[7]: display-person-image-ws.md
-[8]: display-image-from-blob-table-services.md
+[1]: ./get-persons-contactagent
+[2]: ./get-persons-personagent
+[3]: ./update-person-services
+[4]: ./get-person-image-rest
+[5]: ./get-person-image-options
+[6]: ./update-person-image-rest
+[7]: ./display-person-image-ws
+[8]: ./display-image-from-blob-table-services

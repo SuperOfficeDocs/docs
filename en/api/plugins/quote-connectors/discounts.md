@@ -1,5 +1,5 @@
 ---
-title: discounts       
+title: discounts
 description: About discounts
 author: SuperOffice Product and Engineering
 date:
@@ -61,7 +61,7 @@ The Quote Line dialog has 5 ways of setting the discount using any of the follow
 
 These are linked. Change the discount percent, and the discount amount, the total price, the earning percent and earning amount will be recalculated.
 
-We track which field was most recently modified by the user, and we use that as the master field. When `UnitCostPrice`, `Quantity` or `UnitListPrice` changes, the discounts can be adjusted accordingly to maintain the master field’s value.
+We track which field was most recently modified by the user, and we use that as the master field. When `UnitCostPrice`, `Quantity` or `UnitListPrice` changes, the discounts can be adjusted accordingly to maintain the master field's value.
 
 ### Example
 
@@ -83,7 +83,7 @@ The connector calculates:
 * the **Discount Amount** from the Discount Percent and SubTotal: 130.00 * 10% = 13.00
 * the **Total Price** from the SubTotal and Discount Amount: 130.00 / 13.00 = 117.00
 * the **Total Cost** from the Quantity and UnitCost: 10 * 10.00 = 100.00
-* the **Earning Amount** from the TotalPrice and cost:  117.00 – 100.00 = 17.00
+* the **Earning Amount** from the TotalPrice and cost:  117.00 - 100.00 = 17.00
 * the **Earning Percent** from the Earning Amount and TotalPrice:  17.00 / 117.00 = 14.53%
 
 #### The user changes Quantity = 100
@@ -94,7 +94,7 @@ The connector calculates:
 * the **Discount Amount** from the Discount Percent and SubTotal: 1300.00 * 10% = 130.00
 * the **Total Price** from the SubTotal and Discount Amount: 1300.00 / 130.00 = 1170.00
 * the **Total Cost** from the Quantity and UnitCost: 100 * 10.00 = 1000.0
-* the **Earning Amount** from the TotalPrice and cost:  1170.00 – 1000.00 = 170.00
+* the **Earning Amount** from the TotalPrice and cost:  1170.00 - 1000.00 = 170.00
 * the **Earning Percent** from the Earning Amount and TotalPrice: 170.00 / 1170.00 = 14.53%
 
 #### The user changes **Discount Amount** to 100
@@ -107,7 +107,7 @@ The connector calculates:
 * the **Discount Amount** from the Discount Amount and SubTotal: 100 / 1300.00 = 7.70%
 * the **Total Price** from the SubTotal and Discount Amount:  1300.00 / 100.00 = 1200.00
 * the **Total Cost** from the Quantity and UnitCost:  100*10.00 = 1000.00
-* the **Earning Amount** from the Earning Amount from the TotalPrice and cost: 1200.00– 1000.00 = 200.00
+* the **Earning Amount** from the Earning Amount from the TotalPrice and cost: 1200.00- 1000.00 = 200.00
 * the **Earning Percent** from the Earning Percent from the Earning Amount and TotalPrice:  200.00 / 1200.00 = 16.67%
 
 #### The user changes Total Price to 1100
@@ -120,8 +120,7 @@ The connector calculates:
 * the **Discount Amount** from the TotalPrice and SubTotal: 1100 / 1300.00 = 200.00
 * the **Total Price** from the the Discount Amount and SubTotal: 200 / 1300.00 = 15.40%
 * the **Total Cost** from the Quantity and UnitCost: 100*10.00 = 1000.00
-* the **Earning Amount** from the TotalPrice and cost: 1200.00 – 1100.00 = 100.00
+* the **Earning Amount** from the TotalPrice and cost: 1200.00 - 1100.00 = 100.00
 * the **Earning Percent** from the Earning Amount and TotalPrice:  100.00 / 1100.00 = 9.10%
 
-<!-- Referenced images -->
-[img2]: media/image036.jpg
+[img2]: /media/loc/en/api/image036.jpg

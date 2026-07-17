@@ -10,7 +10,7 @@ envir: onsite, online
 
 # "CustomObjectDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderSingleCriteriaGroup` inside NetServer's SODatabase assembly.
 
 CustomObject selection archive using the selectionId as criterionmapping.
 

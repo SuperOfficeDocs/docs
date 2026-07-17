@@ -53,9 +53,6 @@ peopleSearch.Restriction =
 PersonCollection people = peopleSearch.ToPersonCollection();
 ```
 
-Notice how the `Argument` can contain more than one type of Argument to send to the underlying query. In this case, it leverages the Restriction `And` method to append a new Argument to the search query. Restriction also contains an `Or` method, to append OR statements to the query criteria.
+Notice how the `Argument` can contain more than one type of Argument to send to the underlying query. In this case, it leverages the Restriction `And` method to append a new Argument to the search query. Restriction also contains an `Or` method, to append OR statements to the query criteria.
 
 Internally, custom search functionality is handled using the **Visitor pattern**, but that is far beyond the scope of this article and will not be discussed here. Luckily, we as developers using NetServer don't need to know exactly how this is implemented. All we need to know is that to define our desired results, all we need to do is stick to using the properties exposed by the `CustomSearch` object `TableInfo` property to establish criteria.
-
-<!-- Referenced links -->
-<!-- Referenced images -->

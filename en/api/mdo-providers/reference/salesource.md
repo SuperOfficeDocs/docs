@@ -9,16 +9,12 @@ envir: onsite, online
 ---
 
 # "salesource" MDO List
+
 MDO list provider for the source list of the Sale dialog.
 This list extends the basic <see cref="!:SourceRow" /> list with icons
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.SaleSource">SaleSource</see> class.
+Implemented by the `SaleSource` class.
 The name of the MDO list is 'salesource'.
-
-
-
 
 ## Sample Request
 
@@ -31,10 +27,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("salesource", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -47,7 +44,6 @@ foreach (var item in listProvider.RootItems) {
 |4|Annbefaling|||
 |3|Internet|||
 |2|Campaign|||
-
 
 ## Related MDO Lists
 

@@ -90,5 +90,4 @@ public interface IAuthorization
 
 The client updates the `WebApiOptions` and then calls the **GetAuthorization** method. `GetAuthorization` returns the scheme and parameter, which the client then uses to populate the request Authorization header.
 
-<!-- Referenced links -->
-[1]: systemuserclient.md
+[1]: ./systemuserclient

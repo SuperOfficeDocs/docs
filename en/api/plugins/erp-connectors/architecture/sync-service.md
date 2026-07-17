@@ -21,5 +21,4 @@ In the SuperOffice database, the connection is numbered normally using integer k
 
 For example, client 1 would have Sync connection ID 2 configured to map to ERP System A, while client 2 would have its sync connection ID 2 mapped to ERP System B. The ERP Sync connector would not be able to tell one "connection ID 2" from the other.
 
-<!-- Referenced images -->
-[img1]: media/sdk-diagrams.png
+[img1]: /media/loc/en/api/sdk-diagrams.png

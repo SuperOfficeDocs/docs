@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "documentfavourite" MDO List
+
 MDO list provider for Favourites
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.DocumentFavouriteListProvider">DocumentFavouriteListProvider</see> class.
+Implemented by the `DocumentFavouriteListProvider` class.
 The name of the MDO list is 'documentfavourite'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("documentfavourite", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -43,7 +40,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

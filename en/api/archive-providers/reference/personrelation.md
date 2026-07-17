@@ -10,12 +10,13 @@ envir: onsite, online
 
 # "PersonRelation"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.PersonRelation">SuperOffice.CRM.ArchiveLists.PersonRelation</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.PersonRelation` inside NetServer's SODatabase assembly.
 
 Data provider class for the 'Relation' archive under the person card. This class combines output from
 the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) into one data stream.
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"relation"|Relation|
@@ -23,6 +24,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |"stop"|Companies flagged with Stop|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -126,6 +128,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |source/registeredByFullName|associate|Source - Registered by - Full name: The user who registered the data| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |source/registeredDate|date|Source - Registered date: The date/time the data was registered in UTC.| x |
@@ -194,8 +197,8 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |target/postAddress/state| *None* |Target - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |target/postAddress/wgs84latitude| *None* |Target - Postal address - Latitude: Latitude|  |
 |target/postAddress/wgs84longitude| *None* |Target - Postal address - Longitude: Longitude|  |
-|target/postAddress/formattedAddress| *None* |Target - Postal address - {formattedAddress}: {formattedAddress}|  |
-|target/postAddress/formattedMultiLineAddress| *None* |Target - Postal address - {formattedAddress}: {formattedAddress}|  |
+|target/postAddress/formattedAddress| *None* |Target - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|target/postAddress/formattedMultiLineAddress| *None* |Target - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |target/streetAddress/addressId| *None* |Target - Street address - Address ID: Database ID for the address record|  |
 |target/streetAddress/line1| *None* |Target - Street address - Address 1: First line of the address|  |
 |target/streetAddress/line2| *None* |Target - Street address - Address 2: Second line of the address|  |
@@ -206,8 +209,8 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |target/streetAddress/state| *None* |Target - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |target/streetAddress/wgs84latitude| *None* |Target - Street address - Latitude: Latitude|  |
 |target/streetAddress/wgs84longitude| *None* |Target - Street address - Longitude: Longitude|  |
-|target/streetAddress/formattedAddress| *None* |Target - Street address - {formattedAddress}: {formattedAddress}|  |
-|target/streetAddress/formattedMultiLineAddress| *None* |Target - Street address - {formattedAddress}: {formattedAddress}|  |
+|target/streetAddress/formattedAddress| *None* |Target - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|target/streetAddress/formattedMultiLineAddress| *None* |Target - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |target/restrictionAddress/addressId| *None* |Target - Search address - Address ID: Database ID for the address record|  |
 |target/restrictionAddress/line1| *None* |Target - Search address - Address 1: First line of the address|  |
 |target/restrictionAddress/line2| *None* |Target - Search address - Address 2: Second line of the address|  |
@@ -218,8 +221,8 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |target/restrictionAddress/state| *None* |Target - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |target/restrictionAddress/wgs84latitude| *None* |Target - Search address - Latitude: Latitude|  |
 |target/restrictionAddress/wgs84longitude| *None* |Target - Search address - Longitude: Longitude|  |
-|target/restrictionAddress/formattedAddress| *None* |Target - Search address - {formattedAddress}: {formattedAddress}|  |
-|target/restrictionAddress/formattedMultiLineAddress| *None* |Target - Search address - {formattedAddress}: {formattedAddress}|  |
+|target/restrictionAddress/formattedAddress| *None* |Target - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|target/restrictionAddress/formattedMultiLineAddress| *None* |Target - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |target/url/URLAddress| *None* |Target - URL|  |
 |target/url/URLDescription| *None* |Target - Description|  |
 |target/contactAssociate/firstName| *None* |Target - First name: Displays the contact's first name|  |
@@ -230,6 +233,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |target/contactAssociate/personId| *None* |Target - Contact ID: Database ID of the contact row|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |target/contactAssociate/mrMrs| *None* |Target - Mr/Ms: Displays whether the contact is addressed as Mr or Ms|  |
@@ -334,6 +338,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |usergroup|userGroup|Primary group: The user's primary user group| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |usergroupId|int|Group ID: The user's primary user group| x |
@@ -438,6 +443,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |source/postAddress/line3| *None* |Source - Postal address - Address 3: Third line of the address|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |source/postAddress/county| *None* |Source - Postal address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.|  |
@@ -446,8 +452,8 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |source/postAddress/state| *None* |Source - Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |source/postAddress/wgs84latitude| *None* |Source - Postal address - Latitude: Latitude|  |
 |source/postAddress/wgs84longitude| *None* |Source - Postal address - Longitude: Longitude|  |
-|source/postAddress/formattedAddress| *None* |Source - Postal address - {formattedAddress}: {formattedAddress}|  |
-|source/postAddress/formattedMultiLineAddress| *None* |Source - Postal address - {formattedAddress}: {formattedAddress}|  |
+|source/postAddress/formattedAddress| *None* |Source - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|source/postAddress/formattedMultiLineAddress| *None* |Source - Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |source/streetAddress/addressId| *None* |Source - Street address - Address ID: Database ID for the address record|  |
 |source/streetAddress/line1| *None* |Source - Street address - Address 1: First line of the address|  |
 |source/streetAddress/line2| *None* |Source - Street address - Address 2: Second line of the address|  |
@@ -458,8 +464,8 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |source/streetAddress/state| *None* |Source - Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |source/streetAddress/wgs84latitude| *None* |Source - Street address - Latitude: Latitude|  |
 |source/streetAddress/wgs84longitude| *None* |Source - Street address - Longitude: Longitude|  |
-|source/streetAddress/formattedAddress| *None* |Source - Street address - {formattedAddress}: {formattedAddress}|  |
-|source/streetAddress/formattedMultiLineAddress| *None* |Source - Street address - {formattedAddress}: {formattedAddress}|  |
+|source/streetAddress/formattedAddress| *None* |Source - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|source/streetAddress/formattedMultiLineAddress| *None* |Source - Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |source/restrictionAddress/addressId| *None* |Source - Search address - Address ID: Database ID for the address record|  |
 |source/restrictionAddress/line1| *None* |Source - Search address - Address 1: First line of the address|  |
 |source/restrictionAddress/line2| *None* |Source - Search address - Address 2: Second line of the address|  |
@@ -470,8 +476,8 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |source/restrictionAddress/state| *None* |Source - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.|  |
 |source/restrictionAddress/wgs84latitude| *None* |Source - Search address - Latitude: Latitude|  |
 |source/restrictionAddress/wgs84longitude| *None* |Source - Search address - Longitude: Longitude|  |
-|source/restrictionAddress/formattedAddress| *None* |Source - Search address - {formattedAddress}: {formattedAddress}|  |
-|source/restrictionAddress/formattedMultiLineAddress| *None* |Source - Search address - {formattedAddress}: {formattedAddress}|  |
+|source/restrictionAddress/formattedAddress| *None* |Source - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|source/restrictionAddress/formattedMultiLineAddress| *None* |Source - Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |source/url/URLAddress| *None* |Source - URL|  |
 |source/url/URLDescription| *None* |Source - Description|  |
 |source/contactAssociate/firstName| *None* |Source - First name: Displays the contact's first name|  |
@@ -542,6 +548,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 |source/NumberOfActivitiesInPeriod| *None* |Source - Number of activities in last 90 days|  |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |source/NumberOfNotCompletedActivities| *None* |Source - Number of non-completed activities|  |
@@ -583,5 +590,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

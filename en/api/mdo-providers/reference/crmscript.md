@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "crmscript" MDO List
+
 Archive of CRMScripts. Returns script id + name of script as hierarchy.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.CRMScriptProvider">CRMScriptProvider</see> class.
+Implemented by the `CRMScriptProvider` class.
 The name of the MDO list is 'crmscript'.
 
 ## Additional Attributes
@@ -22,10 +21,6 @@ The name of the MDO list is 'crmscript'.
 |-----|-----|------|
 |Only return scripts that have a non-empty include_id.| onlyWithIncludeId|False|
 |Return include_id instead of unique_identifier in ExtraInfo.| useIncludeId|False|
-
-
-
-
 
 ## Sample Request
 
@@ -38,10 +33,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("crmscript", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -66,7 +62,6 @@ foreach (var item in listProvider.RootItems) {
 |5|Send email||9ba99700273d4342ba6ade76ab8c2576|
 |13|Trigger response||a108036d08c547abb1433af8cf4b0e2f|
 |1|Callback script for compact mode||1415c74f7d5c4d79ad98626c59069ee1|
-
 
 ## Related MDO Lists
 

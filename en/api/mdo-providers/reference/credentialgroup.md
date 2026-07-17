@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "credentialgroup" MDO List
+
 List of user groups supported by a named creditial plugin, sorted by group name.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.CredentialGroupProvider">CredentialGroupProvider</see> class.
+Implemented by the `CredentialGroupProvider` class.
 The name of the MDO list is 'credentialgroup'.
 
 ## Additional Attributes
@@ -23,10 +22,6 @@ The name of the MDO list is 'credentialgroup'.
 |Credential type to get list of user groups from| type|ActiveDirectory|
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -39,10 +34,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("credentialgroup", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -52,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
 | 2 | Example | | |
-
 
 ## Related MDO Lists
 

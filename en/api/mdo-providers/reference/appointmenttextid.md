@@ -9,16 +9,12 @@ envir: onsite, online
 ---
 
 # "appointmenttextid" MDO List
+
 Special case of appointment list where we get the id value from the Text table. For use when we want
 to represent an appointment with the text.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.AppointmentListTextIdProvider">AppointmentListTextIdProvider</see> class.
+Implemented by the `AppointmentListTextIdProvider` class.
 The name of the MDO list is 'appointmenttextid'.
-
-
-
 
 ## Sample Request
 
@@ -31,10 +27,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("appointmenttextid", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -64,7 +61,6 @@ foreach (var item in listProvider.RootItems) {
 |27|FTelefon utFCC|||
 |28|GTilbudGCC|||
 |29|JTelefon utJCC|||
-
 
 ## Related MDO Lists
 

@@ -17,7 +17,6 @@ redirect_from:
 * [Update person entity][2]
 * [Display image from BLOB table][3]
 
-<!-- Referenced links -->
-[1]: get-persons-from-contact-entities.md
-[2]: update-person-entity.md
-[3]: display-image-from-blob-table-entity.md
+[1]: ./get-persons-from-contact-entities
+[2]: ./update-person-entity
+[3]: ./display-image-from-blob-table-entity

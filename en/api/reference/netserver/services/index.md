@@ -12,11 +12,68 @@ Using this NetServer Services API, you must use an application configuration fil
 
 SuperOffice publishes [web service proxies][16] that can be used by clients to access the service endpoints.
 
-An important aspect of NetServer web service development is its **deployment flexibility**. It's capable of being embedded in a domain-centric client, or used by a web application across the internet.
+An important aspect of NetServer web service development is its **deployment flexibility**. It's capable of being embedded in a domain-centric client, or used by a web application across the internet.
 
-[!INCLUDE [dependency-injection](../includes/dependency-injection.md)]
+[!INCLUDE [dependency-injection](../includes/dependency-injection)]
 
-[!code-csharp[CS](../includes/netserver-services-startup.cs)]
+```csharp CS
+```csharp
+public interface IStartup
+\{
+    IConfigurationRoot Configuration \{ get; set; \}
+    void Configure(IServiceCollection services);
+    void ConfigureServices(IServiceProvider serviceProvider);
+\}
+
+public class Startup : IStartup
+\{
+    public IConfigurationRoot Configuration \{ get; set; \}
+
+    public virtual void Configure(IServiceCollection services)
+    \{
+        services.AddLogging(a =\>
+        \{
+            a.AddConfiguration(Configuration.GetSection("Logging"));
+            a.ClearProviders();
+            a.AddConsole();
+        \});
+        services.AddNetServerCore<ThreadContextProvider>(options =\> OnConfigureNetServerCore(options));
+        services.AddSoDatabase(options =\> OnConfigureNetServerLocal(options));
+
+        // Add the services implementation for local network use
+        services.AddServicesImplementation();
+
+        // OR.......................
+        // Add the services proxies for distributed network use
+        // services.AddServicesProxies();
+    \}
+
+    protected virtual void OnConfigureNetServerCore(NetServerCoreOptionsBuilder options)
+    \{
+        // this option is required for on-premises installations and
+        // requires that the SuperOffice.Online.dll is added in the
+        // declared in the SuperOffice Factory DynamicLoad section
+        // of the configuration file.
+        /*
+        See: https://docs.superoffice.com/en/api/netserver/config/factory.html
+            <Factory>
+                <DynamicLoad>
+                    <add key="Onsite" value="SuperOffice.Onsite.dll" />
+                </DynamicLoad>
+            </Factory>
+        */
+        options.UseOnPremAD();
+    \}
+    protected virtual void OnConfigureNetServerLocal(NetServerLocalOptionsBuilder options)
+    \{
+    \}
+    public virtual void ConfigureServices(IServiceProvider serviceProvider)
+    \{
+        var netServerServiceProvider = serviceProvider.RegisterWithNetServer();
+    \}
+\}
+```
+```
 
 ## Session Mode
 
@@ -52,7 +109,7 @@ public class Program
         startup.Configuration = new ConfigurationBuilder()
             .AddInMemoryCollection(config)
             .Build();
-        
+
         var services = new ServiceCollection();
         services.AddSingleton<IContextInitializer, ExampleContextInitializer>();
         startup.Configure(services);
@@ -82,10 +139,10 @@ public class Program
                 myPhones[1] = new EntityElement();
                 myPhones[0].Value = "0112732006";
                 myPhones[1].Value = "0713243288";
-                
+
                 myContact.Phones = myPhones;
 
-                // Set the new contact’s  our-contact to associate 2
+                // Set the new contact's  our-contact to associate 2
                 using(AssociateAgent associateAgent = new AssociateAgent())
                 {
                     Associate myAssociate = associateAgent.GetAssociate(2);
@@ -107,11 +164,10 @@ public class Program
 
 [Read more about SOAP web services.][1]
 
-<!-- Referenced links -->
-[1]: ../../../web-services/endpoints/soap/index.md
-[12]: ../../../config/index.md
-[13]: ../../../authentication/overview.md
-[15]: ../../../web-services/endpoints/index.md
-[16]: ../../../web-services/proxies/index.md
-[18]: ../../../plugins/sentry/index.md
+[1]: ../../../web-services/endpoints/soap/index
+[12]: ../../../config/index
+[13]: ../../../authentication/overview
+[15]: ../../../web-services/endpoints/index
+[16]: ../../../web-services/proxies/index
+[18]: ../../../plugins/sentry/index
 [23]: https://www.nuget.org/packages/superoffice.netserver.services

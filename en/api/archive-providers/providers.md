@@ -29,5 +29,4 @@ Any provider can be used as a sub-provider in a MultiQueryProvider, so one can c
 
 **Continue reading:** [Extenders][1]
 
-<!-- Referenced links -->
-[1]: extenders.md
+[1]: ./extenders

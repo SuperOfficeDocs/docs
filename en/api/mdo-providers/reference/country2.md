@@ -9,15 +9,11 @@ envir: onsite, online
 ---
 
 # "country2" MDO List
+
 Same as CountryProvider, but with icon hints based on the countrys name.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.Country2Provider">Country2Provider</see> class.
+Implemented by the `Country2Provider` class.
 The name of the MDO list is 'country2'.
-
-
-
 
 ## Sample Request
 
@@ -30,10 +26,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("country2", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -63,7 +60,6 @@ foreach (var item in listProvider.RootItems) {
 |50|Bangladesh|||
 |52|Barbados|||
 |112|Belarus|||
-
 
 ## Related MDO Lists
 

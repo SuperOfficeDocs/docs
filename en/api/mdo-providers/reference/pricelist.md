@@ -9,13 +9,12 @@ envir: onsite, online
 ---
 
 # "pricelist" MDO List
+
 List of pricelists from the PriceList table.
 Supported values in the AdditionalInfo:
 <list type="bullet"><item><term>all</term><description>true|false. If true is specified, inactive items is also returned.</description></item><item><term>QuoteConnectionId</term><description>Gets items for a specific Quote connection. If not specified, only SuperOffice pricelists (where IsErpCopy=false) will be returned.</description></item></list><example>AdditionalInfo string: "all=true&amp;QuoteConnectionId=2"</example>
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.PriceListProvider">PriceListProvider</see> class.
+Implemented by the `PriceListProvider` class.
 The name of the MDO list is 'pricelist'.
 
 ## Additional Attributes
@@ -26,10 +25,6 @@ The name of the MDO list is 'pricelist'.
 |Return only pricelists on the given connection| quoteconnectionid|123|
 
 Separator: &
-
-
-
-
 
 ## Sample Request
 
@@ -42,10 +37,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("pricelist", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -61,7 +57,6 @@ foreach (var item in listProvider.RootItems) {
 |8|Old pricelist (USD)||USD|
 |5|Prices for 10 years (USD)||USD|
 |7|Xmas pricelist (USD)||USD|
-
 
 ## Related MDO Lists
 

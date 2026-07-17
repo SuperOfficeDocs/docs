@@ -10,18 +10,20 @@ envir: onsite, online
 
 # "ConsentPurpose"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ConsentPurposeProvider">SuperOffice.CRM.ArchiveLists.ConsentPurposeProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ConsentPurposeProvider` inside NetServer's SODatabase assembly.
 
 This is the archive Consent Purpose Provider for GDPR Admin
 and for GDPR relations to person, if you join and restrict on person
 
 ## Supported Entities
+
 | Name | Description |
 | ---- | ----- |
 |"consentPurpose"|Consent purpose|
 |"deletedConsentPurpose"|Deleted|
 
 ## Supported Columns
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -125,6 +127,7 @@ and for GDPR relations to person, if you join and restrict on person
 |consentPerson/person/personAddress/addressId|int|Contact - Contact address - Address ID: Database ID for the address record| x |
 
 ## Supported Columns (cont.)
+
 | Name | Restriction | Description | OrderBy
 | ---- | ----- | ------- | ------ |
 |consentPerson/person/personAddress/line1|string|Contact - Contact address - Address 1: First line of the address| x |
@@ -136,8 +139,8 @@ and for GDPR relations to person, if you join and restrict on person
 |consentPerson/person/personAddress/state|string|Contact - Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |consentPerson/person/personAddress/wgs84latitude|decimal|Contact - Contact address - Latitude: Latitude| x |
 |consentPerson/person/personAddress/wgs84longitude|decimal|Contact - Contact address - Longitude: Longitude| x |
-|consentPerson/person/personAddress/formattedAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
-|consentPerson/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - {formattedAddress}: {formattedAddress}|  |
+|consentPerson/person/personAddress/formattedAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|consentPerson/person/personAddress/formattedMultiLineAddress| *None* |Contact - Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |consentPerson/person/personUdef/SuperOffice:1|string|Contact - contactshorttext: tooltipshorttext| x |
 |consentPerson/person/personUdef/SuperOffice:2|string|Contact - contactlongtext: tooltiplongtext| x |
 |consentPerson/person/personUdef/SuperOffice:3|int|Contact - contactnumber| x |
@@ -194,5 +197,4 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.</p>
-
+See also: `IArchiveAgent`.</p>

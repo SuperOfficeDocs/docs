@@ -43,7 +43,7 @@ using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
 }
 ```
 
-After we have created an instance of the `ContactEntity` calling the `ContactAgent`’s `GetContactWithPersons` method, we can iterate through the `Person` property of the instantiated entity and retrieve its properties.
+After we have created an instance of the `ContactEntity` calling the `ContactAgent`'s `GetContactWithPersons` method, we can iterate through the `Person` property of the instantiated entity and retrieve its properties.
 
 **Output:**
 
@@ -59,5 +59,4 @@ Erik Eide         StateZeroDatabase       example@example.com
 
 Another option is to use the [PersonAgent][1]
 
-<!-- Referenced links -->
-[1]: get-persons-personagent.md
+[1]: ./get-persons-personagent

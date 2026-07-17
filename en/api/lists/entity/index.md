@@ -29,8 +29,7 @@ There are different types of lists provided by the `SoListProviderFactory`. They
 * [Group view][4] (GroupViewProviders)
 * [Generic list][5] (GenericMDOProviders)
 
-<!-- Referenced links -->
-[2]: typed-list.md
-[3]: udef-list.md
-[4]: group-view.md
-[5]: generic-list.md
+[2]: ./typed-list
+[3]: ./udef-list
+[4]: ./group-view
+[5]: ./generic-list

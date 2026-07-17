@@ -9,16 +9,12 @@ envir: onsite, online
 ---
 
 # "newsfeeditemstatusprovider" MDO List
+
 MDO List provider for news feed item status: Normal, Handling, Handled.
 Enum value in the extrainfo field.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.NewsFeedItemStatusProvider">NewsFeedItemStatusProvider</see> class.
+Implemented by the `NewsFeedItemStatusProvider` class.
 The name of the MDO list is 'newsfeeditemstatusprovider'.
-
-
-
 
 ## Sample Request
 
@@ -31,10 +27,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("newsfeeditemstatusprovider", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -46,7 +43,6 @@ foreach (var item in listProvider.RootItems) {
 |0|Normal||Normal|
 |1|Handling||Handling|
 |2|Handled||Handled|
-
 
 ## Related MDO Lists
 

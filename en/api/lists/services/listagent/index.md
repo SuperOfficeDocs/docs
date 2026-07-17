@@ -39,10 +39,9 @@ See the full list of available providers in the [MDO list provider reference][5]
 
 View the [How-To pages][1] to see how to work with the lists endpoint to manage lists.
 
-<!-- Referenced links -->
-[1]: ../how-to/index.md
+[1]: ../how-to/index
 
-[2]: ../../../reference/restful/rest/List/index.md
-[3]: ../../../reference/restful/agent/List_Agent/index.md
-[4]: ../../../reference/soap/services88/List/index.md
-[5]: ../../../mdo-providers/reference/index.md
+[2]: ../../../reference/restful/rest/List/index
+[3]: ../../../reference/restful/agent/List_Agent/index
+[4]: ../../../reference/soap/services88/List/index
+[5]: ../../../mdo-providers/reference/index

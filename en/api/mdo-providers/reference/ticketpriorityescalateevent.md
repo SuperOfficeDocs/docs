@@ -9,11 +9,10 @@ envir: onsite, online
 ---
 
 # "ticketpriorityescalateevent" MDO List
+
 MDO list provider for ticket Priority EscalateEvents enum.
 
-
-
-Implemented by the <see cref="T:SuperOffice.CRM.Lists.TicketPriorityEscalateEventsProvider">TicketPriorityEscalateEventsProvider</see> class.
+Implemented by the `TicketPriorityEscalateEventsProvider` class.
 The name of the MDO list is 'ticketpriorityescalateevent'.
 
 ## Additional Attributes
@@ -21,10 +20,6 @@ The name of the MDO list is 'ticketpriorityescalateevent'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Include all existing values in the enum| |all|
-
-
-
-
 
 ## Sample Request
 
@@ -37,10 +32,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("ticketpriorityescalateevent", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -52,7 +48,6 @@ foreach (var item in listProvider.RootItems) {
 |0|Stop||Stop|
 |1|Continue||Continue|
 |2|Restart||Restart|
-
 
 ## Related MDO Lists
 

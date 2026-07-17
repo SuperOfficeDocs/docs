@@ -2,17 +2,15 @@
 uid: relationdefinition
 title: relationdefinition
 keywords: mdoprovider mdo provider relationdefinition
-description: 
+description:
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
 # "relationdefinition" MDO List
+
 The name of the MDO list is 'relationdefinition'.
-
-
-
 
 ## Sample Request
 
@@ -25,10 +23,11 @@ Accept-Language: *
 ```
 
 ## Sample Code
+
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("relationdefinition", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
-    Console.WriteLine("{0} {1} {2} {3}", 
+    Console.WriteLine("{0} {1} {2} {3}",
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
@@ -47,7 +46,6 @@ foreach (var item in listProvider.RootItems) {
 |8|Link to follow-up|||
 |10|Link to sale|||
 |5|sitter i styret hos|||
-
 
 ## Related MDO Lists
 

@@ -13,11 +13,11 @@ redirect_from: /en/api/netserver/plugins/index
 
 ## What is a pattern?
 
-A pattern can be defined as a **general repeatable solution** to a commonly occurring problem. The pattern is not a finished design or piece of code. It’s a description or a **template** for how to solve a problem that can be used in many different situations.
+A pattern can be defined as a **general repeatable solution** to a commonly occurring problem. The pattern is not a finished design or piece of code. It's a description or a **template** for how to solve a problem that can be used in many different situations.
 
 Patterns can speed up the development process by providing tested, proven development paradigms. Reusing these patterns helps to prevent subtle issues that can cause major problems and improves code readability for coders and architects familiar with the patterns. Also, patterns allow developers to communicate using well-known, well-understood names for software interactions.
 
-Common design patterns can be improved over time making them more robust than ad-hoc designs. Furthermore .NET has a good infrastructure for dynamically composing your code – loading, using reflection to parse and inspect and invoke.
+Common design patterns can be improved over time making them more robust than ad-hoc designs. Furthermore .NET has a good infrastructure for dynamically composing your code - loading, using reflection to parse and inspect and invoke.
 
 ## Plugin pattern
 
@@ -39,7 +39,7 @@ Tooltips are nice, especially when they show a lot of information. But such tool
 
 The following image is a tooltip hint for the `person_id` 123.
 
-When the tooltip needs to be displayed, the tooltip service is called with the tooltip-hint as the parameter. The tooltip providers – plugins, do the translation of the hint to the actual tooltip. The `TooltipProviderFactory` will call all the plugins that declare that they support the given hint in sequence.
+When the tooltip needs to be displayed, the tooltip service is called with the tooltip-hint as the parameter. The tooltip providers - plugins, do the translation of the hint to the actual tooltip. The `TooltipProviderFactory` will call all the plugins that declare that they support the given hint in sequence.
 
 If you create your own provider, it can do anything and add it to the tooltip. This will be reflected in all instances of the Person tooltips in the whole application.
 
@@ -99,7 +99,4 @@ All that remains is to tell NetServer about our DLL using the config file:
 
 NetServer will load the assembly. The TooltipProviderFactory will scan it for compatible plugins, and pick it up. Whenever a tooltip request comes in with the key that our plugin has declared, it will be called and is then running in process, authenticated, with all of NetServer available.
 
-<!-- Referenced links -->
-
-<!-- Referenced images -->
-[img1]: media/image001.jpg
+[img1]: /media/loc/en/api/image001-8.jpg

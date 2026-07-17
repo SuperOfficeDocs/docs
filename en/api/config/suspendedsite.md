@@ -28,5 +28,4 @@ Configuration values related to the suspended state.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-<!-- Referenced links -->
 [1]: <xref:SuperOffice.Configuration.ConfigFile.SuspendedSite>

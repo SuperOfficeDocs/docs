@@ -1,7 +1,7 @@
 ---
 uid: soap-web-services
 title: SOAP Web services
-description: SOAP reference — Services88 only. Services84 through Services87 are supported but no longer documented.
+description: SOAP reference - Services88 only. Services84 through Services87 are supported but no longer documented.
 keywords: web services, SOAP, API, WCF, WSDL, Services88
 author: digitaldiina
 date: 05.13.2026
