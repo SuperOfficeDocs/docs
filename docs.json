@@ -12185,16 +12185,8 @@
       "destination": "/da/request/admin/index"
     },
     {
-      "source": "/da/request/learn/category/create",
-      "destination": "/da/request/admin/category/create"
-    },
-    {
-      "source": "/da/request/learn/category/delete",
-      "destination": "/da/request/admin/category/delete"
-    },
-    {
-      "source": "/da/request/learn/category/index",
-      "destination": "/da/request/admin/category/index"
+      "source": "/da/request/learn/category/*",
+      "destination": "/da/request/admin/category/*"
     },
     {
       "source": "/da/request/learn/external-document",
@@ -12281,28 +12273,12 @@
       "destination": "/da/request/learn/index"
     },
     {
-      "source": "/da/request/learn/status/create",
-      "destination": "/da/request/admin/status/create"
+      "source": "/da/request/learn/status/*",
+      "destination": "/da/request/admin/status/*"
     },
     {
-      "source": "/da/request/learn/status/delete",
-      "destination": "/da/request/admin/status/delete"
-    },
-    {
-      "source": "/da/request/learn/status/index",
-      "destination": "/da/request/admin/status/index"
-    },
-    {
-      "source": "/da/request/learn/type/create",
-      "destination": "/da/request/admin/type/create"
-    },
-    {
-      "source": "/da/request/learn/type/delete",
-      "destination": "/da/request/admin/type/delete"
-    },
-    {
-      "source": "/da/request/learn/type/index",
-      "destination": "/da/request/admin/type/index"
+      "source": "/da/request/learn/type/*",
+      "destination": "/da/request/admin/type/*"
     },
     {
       "source": "/da/request/reply-templates/learn/copy",
@@ -13965,16 +13941,8 @@
       "destination": "/de/request/admin/index"
     },
     {
-      "source": "/de/request/learn/category/create",
-      "destination": "/de/request/admin/category/create"
-    },
-    {
-      "source": "/de/request/learn/category/delete",
-      "destination": "/de/request/admin/category/delete"
-    },
-    {
-      "source": "/de/request/learn/category/index",
-      "destination": "/de/request/admin/category/index"
+      "source": "/de/request/learn/category/*",
+      "destination": "/de/request/admin/category/*"
     },
     {
       "source": "/de/request/learn/howto/accept",
@@ -14057,28 +14025,12 @@
       "destination": "/de/request/learn/index"
     },
     {
-      "source": "/de/request/learn/status/create",
-      "destination": "/de/request/admin/status/create"
+      "source": "/de/request/learn/status/*",
+      "destination": "/de/request/admin/status/*"
     },
     {
-      "source": "/de/request/learn/status/delete",
-      "destination": "/de/request/admin/status/delete"
-    },
-    {
-      "source": "/de/request/learn/status/index",
-      "destination": "/de/request/admin/status/index"
-    },
-    {
-      "source": "/de/request/learn/type/create",
-      "destination": "/de/request/admin/type/create"
-    },
-    {
-      "source": "/de/request/learn/type/delete",
-      "destination": "/de/request/admin/type/delete"
-    },
-    {
-      "source": "/de/request/learn/type/index",
-      "destination": "/de/request/admin/type/index"
+      "source": "/de/request/learn/type/*",
+      "destination": "/de/request/admin/type/*"
     },
     {
       "source": "/de/request/reply-templates/learn/copy",
@@ -19257,16 +19209,8 @@
       "destination": "/en/request/admin/index"
     },
     {
-      "source": "/en/request/learn/category/create",
-      "destination": "/en/request/admin/category/create"
-    },
-    {
-      "source": "/en/request/learn/category/delete",
-      "destination": "/en/request/admin/category/delete"
-    },
-    {
-      "source": "/en/request/learn/category/index",
-      "destination": "/en/request/admin/category/index"
+      "source": "/en/request/learn/category/*",
+      "destination": "/en/request/admin/category/*"
     },
     {
       "source": "/en/request/learn/external-document",
@@ -19353,28 +19297,12 @@
       "destination": "/en/request/learn/index"
     },
     {
-      "source": "/en/request/learn/status/create",
-      "destination": "/en/request/admin/status/create"
+      "source": "/en/request/learn/status/*",
+      "destination": "/en/request/admin/status/*"
     },
     {
-      "source": "/en/request/learn/status/delete",
-      "destination": "/en/request/admin/status/delete"
-    },
-    {
-      "source": "/en/request/learn/status/index",
-      "destination": "/en/request/admin/status/index"
-    },
-    {
-      "source": "/en/request/learn/type/create",
-      "destination": "/en/request/admin/type/create"
-    },
-    {
-      "source": "/en/request/learn/type/delete",
-      "destination": "/en/request/admin/type/delete"
-    },
-    {
-      "source": "/en/request/learn/type/index",
-      "destination": "/en/request/admin/type/index"
+      "source": "/en/request/learn/type/*",
+      "destination": "/en/request/admin/type/*"
     },
     {
       "source": "/en/request/overview",
@@ -21493,16 +21421,8 @@
       "destination": "/nl/request/admin/index"
     },
     {
-      "source": "/nl/request/learn/category/create",
-      "destination": "/nl/request/admin/category/create"
-    },
-    {
-      "source": "/nl/request/learn/category/delete",
-      "destination": "/nl/request/admin/category/delete"
-    },
-    {
-      "source": "/nl/request/learn/category/index",
-      "destination": "/nl/request/admin/category/index"
+      "source": "/nl/request/learn/category/*",
+      "destination": "/nl/request/admin/category/*"
     },
     {
       "source": "/nl/request/learn/external-document",
@@ -21589,28 +21509,12 @@
       "destination": "/nl/request/learn/index"
     },
     {
-      "source": "/nl/request/learn/status/create",
-      "destination": "/nl/request/admin/status/create"
+      "source": "/nl/request/learn/status/*",
+      "destination": "/nl/request/admin/status/*"
     },
     {
-      "source": "/nl/request/learn/status/delete",
-      "destination": "/nl/request/admin/status/delete"
-    },
-    {
-      "source": "/nl/request/learn/status/index",
-      "destination": "/nl/request/admin/status/index"
-    },
-    {
-      "source": "/nl/request/learn/type/create",
-      "destination": "/nl/request/admin/type/create"
-    },
-    {
-      "source": "/nl/request/learn/type/delete",
-      "destination": "/nl/request/admin/type/delete"
-    },
-    {
-      "source": "/nl/request/learn/type/index",
-      "destination": "/nl/request/admin/type/index"
+      "source": "/nl/request/learn/type/*",
+      "destination": "/nl/request/admin/type/*"
     },
     {
       "source": "/nl/request/reply-templates/learn/copy",
@@ -23261,16 +23165,8 @@
       "destination": "/no/request/admin/index"
     },
     {
-      "source": "/no/request/learn/category/create",
-      "destination": "/no/request/admin/category/create"
-    },
-    {
-      "source": "/no/request/learn/category/delete",
-      "destination": "/no/request/admin/category/delete"
-    },
-    {
-      "source": "/no/request/learn/category/index",
-      "destination": "/no/request/admin/category/index"
+      "source": "/no/request/learn/category/*",
+      "destination": "/no/request/admin/category/*"
     },
     {
       "source": "/no/request/learn/external-document",
@@ -23357,28 +23253,12 @@
       "destination": "/no/request/learn/index"
     },
     {
-      "source": "/no/request/learn/status/create",
-      "destination": "/no/request/admin/status/create"
+      "source": "/no/request/learn/status/*",
+      "destination": "/no/request/admin/status/*"
     },
     {
-      "source": "/no/request/learn/status/delete",
-      "destination": "/no/request/admin/status/delete"
-    },
-    {
-      "source": "/no/request/learn/status/index",
-      "destination": "/no/request/admin/status/index"
-    },
-    {
-      "source": "/no/request/learn/type/create",
-      "destination": "/no/request/admin/type/create"
-    },
-    {
-      "source": "/no/request/learn/type/delete",
-      "destination": "/no/request/admin/type/delete"
-    },
-    {
-      "source": "/no/request/learn/type/index",
-      "destination": "/no/request/admin/type/index"
+      "source": "/no/request/learn/type/*",
+      "destination": "/no/request/admin/type/*"
     },
     {
       "source": "/no/request/reply-templates/learn/copy",
@@ -25105,16 +24985,8 @@
       "destination": "/sv/request/admin/index"
     },
     {
-      "source": "/sv/request/learn/category/create",
-      "destination": "/sv/request/admin/category/create"
-    },
-    {
-      "source": "/sv/request/learn/category/delete",
-      "destination": "/sv/request/admin/category/delete"
-    },
-    {
-      "source": "/sv/request/learn/category/index",
-      "destination": "/sv/request/admin/category/index"
+      "source": "/sv/request/learn/category/*",
+      "destination": "/sv/request/admin/category/*"
     },
     {
       "source": "/sv/request/learn/external-document",
@@ -25201,28 +25073,12 @@
       "destination": "/sv/request/learn/index"
     },
     {
-      "source": "/sv/request/learn/status/create",
-      "destination": "/sv/request/admin/status/create"
+      "source": "/sv/request/learn/status/*",
+      "destination": "/sv/request/admin/status/*"
     },
     {
-      "source": "/sv/request/learn/status/delete",
-      "destination": "/sv/request/admin/status/delete"
-    },
-    {
-      "source": "/sv/request/learn/status/index",
-      "destination": "/sv/request/admin/status/index"
-    },
-    {
-      "source": "/sv/request/learn/type/create",
-      "destination": "/sv/request/admin/type/create"
-    },
-    {
-      "source": "/sv/request/learn/type/delete",
-      "destination": "/sv/request/admin/type/delete"
-    },
-    {
-      "source": "/sv/request/learn/type/index",
-      "destination": "/sv/request/admin/type/index"
+      "source": "/sv/request/learn/type/*",
+      "destination": "/sv/request/admin/type/*"
     },
     {
       "source": "/sv/request/reply-templates/learn/copy",
