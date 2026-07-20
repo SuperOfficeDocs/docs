@@ -1,0 +1,75 @@
+---
+uid: configure-mintlify
+title: Configuring Mintlify
+description: How docs.json's modular $ref-linked config works, what lives in each config/ file, and how to edit navigation without touching a monolithic file.
+keywords: docs.json, mintlify, config, $ref, navigation, modular configuration, split configuration
+author: digitaldiina
+date: 07.20.2026
+content_type: concept
+language: en
+---
+
+# Configuring Mintlify
+
+`docs.json` is the root of every Mintlify setting for this site - theme, fonts, navigation, redirects, and more. It used to be a single 21,000+ line file. Its two largest pieces, `navigation` and `redirects`, are now split out into their own files under `config/`, using Mintlify's [split-configuration `$ref` support][1]. This page covers how that split works and where to make a given change; for redirect-specific guidance see [Redirects and redirect_from](./redirects).
+
+## What lives where
+
+```
+docs.json                        # theme, fonts, navbar, footer, and $ref pointers for navigation + redirects
+config/
+  navigation.json                # languages[] shell + global.anchors
+  redirects.json                 # the full redirects array
+  nav-en.json                    # English tabs; 4 of them are further $ref'd out below
+  nav-da.json / nav-de.json / nav-nl.json / nav-no.json / nav-sv.json
+  nav-mobile.json                # Mobile tab's groups
+  nav-integrations.json          # Integrations tab's groups
+  nav-releases.json              # Release Notes tab's groups
+  nav-database-tables.json       # Developer guide > Database > Reference group's pages (generated)
+```
+
+## How `$ref` resolves
+
+Any key's value can be replaced with an object holding a `$ref`:
+
+```json
+"navigation": {
+  "$ref": "./config/navigation.json"
+}
+```
+
+Two rules matter once you're editing these files directly:
+
+- **Relative paths resolve against the file that contains them, not against `docs.json`.** `config/navigation.json`'s `"tabs": {"$ref": "./nav-en.json"}` means `./config/nav-en.json` relative to `docs.json`, because the ref lives inside `navigation.json`, not inside `docs.json` itself.
+- **Sibling keys next to a `$ref` merge on top of the resolved value, but only if it resolves to an object.** If it resolves to an array (every ref in this repo's nav/redirects split does), sibling keys are ignored - which is why `"language": "da"` stays outside the `$ref` as a sibling of `"tabs"`, not inside it.
+
+<Note>
+Refs can chain - a file you land in after following one `$ref` can contain its own. Following `docs.json` -> `config/navigation.json` -> `config/nav-en.json` -> `config/nav-mobile.json` is four files, three hops.
+</Note>
+
+## Modular navigation
+
+`navigation` splits in two stages. First, each language's `tabs` array moves to its own `config/nav-<lang>.json`, leaving only `{"language": ..., "tabs": {"$ref": ...}}` in `config/navigation.json`. Second, within English specifically, four sections that are either large or machine-generated move one level further into their own files: Mobile, Integrations, and Release Notes (large, frequently-edited tabs), plus the database-tables reference (`nav-database-tables.json`, generated from the DB schema pipeline - future generated API references will follow the same pattern). Everything else in `nav-en.json` - Home, Guides, Online, the rest of Developer guide, Contribute - stays inline.
+
+## Editing navigation
+
+Find the right file before editing:
+
+| Change | File |
+|---|---|
+| Add/edit a page in a non-English language's existing tab | `config/nav-<lang>.json` |
+| Regenerate a whole non-English language's nav from `toc.yml` | `tools/update-docs-navigation.ps1` (writes `config/nav-<lang>.json` directly; refuses `en`) |
+| Fill in or insert a menu item's `groups` (any language, including English tabs not split further) | `tools/splice-nav-groups.py` against the relevant `config/nav-<lang>.json` |
+| Edit Mobile, Integrations, or Release Notes content | `config/nav-mobile.json`, `config/nav-integrations.json`, or `config/nav-releases.json` directly |
+| Regenerate the database-tables reference | whatever produces `config/nav-database-tables.json`'s `pages` array (DB schema pipeline) |
+| Anything else in `docs.json` (theme, fonts, navbar, footer) | `docs.json` directly - only `navigation` and `redirects` are split out |
+
+## Editing redirects
+
+`config/redirects.json` holds the array; `docs.json` only points at it. See [Redirects and redirect_from](./redirects) for the full guide - `redirect_from` frontmatter, wildcards, and the maintenance scripts (`tools/sort-redirects.py`, `tools/compact-redirects.py`) all work the same way, just against `config/redirects.json` instead of `docs.json`.
+
+## Verify
+
+After editing any split file, spot-check in `mint dev`: confirm the page you touched still appears in the right place in the nav, and that its sibling sections (the ones you didn't touch) are unaffected.
+
+[1]: https://www.mintlify.com/docs/organize/settings#split-configuration-with-$ref

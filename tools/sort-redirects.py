@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stable-sorts docs.json's `redirects` array alphabetically by `source`.
+Stable-sorts config/redirects.json alphabetically by `source`.
 
 The array accumulates in insertion order - one topical chunk appended per
 migration PR - which makes it hard for a human to scan for an existing
@@ -10,22 +10,22 @@ existing append-at-the-end convention), this is a standalone periodic
 maintenance script: contributors keep appending, and this gets re-run
 occasionally to restore alphabetical order.
 
-A full parse-and-redump of docs.json (indent=2, ensure_ascii=False) has
-been verified (see tools/splice-nav-groups.py) to reproduce the file
-byte-for-byte modulo a trailing newline, so this operates on the whole
-document rather than text-splicing a fragment. Only the `redirects` key's
-order changes; every other top-level key, and every field within each
-redirect entry, is left exactly as-is.
+A full parse-and-redump of the file (indent=2, ensure_ascii=False) has
+been verified (see tools/splice-nav-groups.py) to reproduce it byte-for-byte
+modulo a trailing newline, so this operates on the whole file rather than
+text-splicing a fragment. Since the modular-config split, this file is a
+bare JSON array (docs.json only holds a $ref pointer to it) - every field
+within each redirect entry is left exactly as-is; only ordering changes.
 
 Usage:
     Sort in place:
-        python tools/sort-redirects.py docs.json
+        python tools/sort-redirects.py config/redirects.json
 
     Dry-run (exit 1 if unsorted, 0 if already sorted, no write - CI-friendly):
-        python tools/sort-redirects.py docs.json --check
+        python tools/sort-redirects.py config/redirects.json --check
 
     Preview which sources would move, without writing:
-        python tools/sort-redirects.py docs.json --diff
+        python tools/sort-redirects.py config/redirects.json --diff
 """
 
 import argparse
@@ -35,15 +35,14 @@ import sys
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("docs_json")
+    parser.add_argument("redirects_json", help="Path to config/redirects.json")
     parser.add_argument("--check", action="store_true", help="Dry-run: exit 1 if unsorted, 0 if already sorted")
     parser.add_argument("--diff", action="store_true", help="Print which sources would move, without writing")
     args = parser.parse_args()
 
-    with open(args.docs_json, encoding="utf-8") as f:
-        doc = json.load(f)
+    with open(args.redirects_json, encoding="utf-8") as f:
+        redirects = json.load(f)
 
-    redirects = doc["redirects"]
     sorted_redirects = sorted(redirects, key=lambda r: r["source"])
 
     moved = [(i, e["source"]) for i, (e, s) in enumerate(zip(redirects, sorted_redirects)) if e is not s]
@@ -65,9 +64,8 @@ def main():
             print(f"  ... and {len(moved) - 50} more")
         sys.exit(0)
 
-    doc["redirects"] = sorted_redirects
-    with open(args.docs_json, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(doc, f, indent=2, ensure_ascii=False)
+    with open(args.redirects_json, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(sorted_redirects, f, indent=2, ensure_ascii=False)
 
     print(f"Sorted {len(redirects)} redirects ({len(moved)} moved from their original position).")
 

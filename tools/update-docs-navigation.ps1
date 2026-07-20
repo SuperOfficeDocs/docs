@@ -5,21 +5,32 @@
 
 .DESCRIPTION
     Automatically detects the language code from the TOC file's "language" property
-    and replaces the corresponding language section in docs.json.
+    and replaces that language's tabs array in config/nav-<lang>.json (the file
+    docs.json's navigation now $refs into, via config/navigation.json, since the
+    modular-config split).
+
+    Only supports the 5 non-English languages (da, de, nl, no, sv) - each of
+    their config/nav-<lang>.json holds a bare tabs array, matching what
+    convert-toc-to-mintlify.ps1 produces for a language folder. English's
+    config/nav-en.json holds 8 tabs and is split further still (4 of them are
+    their own $ref files) - a full-file replace would destroy the other tabs,
+    so this script refuses langCode 'en'; use splice-nav-groups.py or a manual
+    edit instead.
 
     Validates that paths do not contain the bergfrid-tmp/ prefix before proceeding.
     Uses UTF-8 without BOM encoding to prevent corruption of multi-byte characters.
     Runs BOM check after writing to ensure file integrity.
 
 .PARAMETER TocPath
-    Path to the language-specific TOC JSON file to graft into docs.json.
+    Path to the language-specific TOC JSON file to graft into config/nav-<lang>.json.
     This is a positional parameter - can be used without the -TocPath flag.
 
 .EXAMPLE
     .\update-docs-navigation.ps1 toc-sv-learn.json
 
 .NOTES
-    - Modifies docs.json in place (use git to revert if needed)
+    - Modifies config/nav-<lang>.json in place (use git to revert if needed);
+      docs.json itself is untouched
     - Automatically detects language from TOC file
     - Rejects TOC files containing bergfrid-tmp/ prefix in paths
     - Uses UTF-8 without BOM encoding
@@ -33,7 +44,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$DocsJsonPath = "docs.json"
+$ConfigDir = "config"
 
 # Validate TOC file exists
 if (-not (Test-Path $TocPath)) {
@@ -54,6 +65,11 @@ if (-not $langCode) {
 
 Write-Host "Detected language: $langCode" -ForegroundColor Green
 
+if ($langCode -eq 'en') {
+    Write-Host "ERROR: This script doesn't support 'en' - config/nav-en.json holds all 8 English tabs (4 split further into their own files), and a full-file replace would destroy the rest. Use splice-nav-groups.py or edit config/nav-en.json directly." -ForegroundColor Red
+    exit 1
+}
+
 # Check for bergfrid-tmp prefix in paths
 Write-Host "Checking for bergfrid-tmp prefix in paths..." -ForegroundColor Cyan
 $tocJson = $tocContent
@@ -64,40 +80,29 @@ if ($tocJson -match 'bergfrid-tmp/') {
     exit 1
 }
 
-# Read docs.json
-Write-Host "Reading docs.json..." -ForegroundColor Cyan
-$docsContent = [System.IO.File]::ReadAllText($DocsJsonPath)
-$docs = $docsContent | ConvertFrom-Json
-
-# Find the language section to replace
-Write-Host "Finding $langCode section in docs.json..." -ForegroundColor Cyan
-$langIndex = -1
-for ($i = 0; $i -lt $docs.navigation.languages.Count; $i++) {
-    if ($docs.navigation.languages[$i].language -eq $langCode) {
-        $langIndex = $i
-        break
-    }
-}
-
-if ($langIndex -eq -1) {
-    Write-Host "ERROR: Language '$langCode' not found in docs.json" -ForegroundColor Red
+# Target file: config/nav-<lang>.json holds this language's bare tabs array
+$navJsonPath = Join-Path $ConfigDir "nav-$langCode.json"
+if (-not (Test-Path $navJsonPath)) {
+    Write-Host "ERROR: $navJsonPath not found" -ForegroundColor Red
     exit 1
 }
 
-Write-Host "Updating $langCode section at index $langIndex" -ForegroundColor Green
-$docs.navigation.languages[$langIndex] = $toc
+if (-not ($toc.PSObject.Properties.Name -contains 'tabs')) {
+    Write-Host "ERROR: TOC file has no 'tabs' property to graft in" -ForegroundColor Red
+    exit 1
+}
 
-Write-Host "Converting to JSON..." -ForegroundColor Cyan
-$output = $docs | ConvertTo-Json -Depth 100
+Write-Host "Replacing tabs array in $navJsonPath" -ForegroundColor Green
+$output = $toc.tabs | ConvertTo-Json -Depth 100
 
-Write-Host "Writing updated docs.json..." -ForegroundColor Cyan
+Write-Host "Writing updated $navJsonPath..." -ForegroundColor Cyan
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
-[System.IO.File]::WriteAllText($DocsJsonPath, $output, $utf8NoBom)
+[System.IO.File]::WriteAllText($navJsonPath, $output, $utf8NoBom)
 
 Write-Host ""
 Write-Host "Running BOM check..." -ForegroundColor Cyan
-& "$PSScriptRoot\check-bom.ps1" -Path $DocsJsonPath
+& "$PSScriptRoot\check-bom.ps1" -Path $navJsonPath
 
 Write-Host ""
-Write-Host "SUCCESS: Updated $langCode section in docs.json" -ForegroundColor Green
+Write-Host "SUCCESS: Updated $langCode tabs in $navJsonPath" -ForegroundColor Green
 Write-Host "Note: Run 'Format Document' in VSCode to optimize whitespace" -ForegroundColor Yellow

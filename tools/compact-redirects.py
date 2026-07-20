@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Finds groups of docs.json redirects that share a source-path prefix and
-collapses the ones that follow one consistent prefix-substitution pattern
-into a single wildcard rule, leaving the rest as individual exceptions.
+Finds groups of redirects in config/redirects.json that share a source-path
+prefix and collapses the ones that follow one consistent prefix-substitution
+pattern into a single wildcard rule, leaving the rest as individual
+exceptions.
 
-Background: docs.json's `redirects` array accumulates one 1:1 entry per
+Background: config/redirects.json (docs.json only holds a $ref pointer to
+it, since the modular-config split) accumulates one 1:1 entry per
 moved/renamed page. Many entries turn out to share a source prefix and a
 consistent transform (e.g. every `/en/api/netserver/X` redirecting to
 `/en/api/X` - the same segment stripped every time), which Mintlify's
@@ -37,21 +39,21 @@ Three safety checks are always run before a group can be applied:
     source prefix being wildcarded away? Flagged as a warning, not a hard
     stop, since it may be an intentional multi-hop chain - review by hand.
 
-A full parse-and-redump of docs.json (indent=2, ensure_ascii=False) has
-been verified (see tools/splice-nav-groups.py) to reproduce the file
+A full parse-and-redump of config/redirects.json (indent=2, ensure_ascii=False)
+has been verified (see tools/splice-nav-groups.py) to reproduce the file
 byte-for-byte modulo a trailing newline, so --apply operates on the whole
-document rather than text-splicing a fragment.
+file (a bare JSON array) rather than text-splicing a fragment.
 
 Usage:
     Report every source-prefix group of 5+ entries, 3 path segments deep:
-        python tools/compact-redirects.py docs.json --report
+        python tools/compact-redirects.py config/redirects.json --report
 
     Same, wider net:
-        python tools/compact-redirects.py docs.json --report --min-size 3 --depth 4
+        python tools/compact-redirects.py config/redirects.json --report --min-size 3 --depth 4
 
     Apply the wildcard rule for one or more approved prefixes (exact
     strings, independent of --report's --depth - can be any source prefix):
-        python tools/compact-redirects.py docs.json \\
+        python tools/compact-redirects.py config/redirects.json \\
             --apply "/en/api/netserver,/en/mobile/superoffice-mobile" \\
             --repo-root .
 """
@@ -161,8 +163,7 @@ def cmd_report(redirects, args):
     print(f"\n{len(rows)} group(s) with {args.min_size}+ entries at depth {args.depth}.")
 
 
-def cmd_apply(doc, args):
-    redirects = doc["redirects"]
+def cmd_apply(redirects, args):
     prefixes = [p.strip() for p in args.apply.split(",") if p.strip()]
     total_removed = 0
 
@@ -213,7 +214,7 @@ def cmd_apply(doc, args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("docs_json")
+    parser.add_argument("redirects_json", help="Path to config/redirects.json")
     parser.add_argument("--repo-root", default=".")
     parser.add_argument("--report", action="store_true", help="Print a ranked table of compactable source-prefix groups")
     parser.add_argument("--min-size", type=int, default=5, help="Minimum group size to report (default 5)")
@@ -222,15 +223,15 @@ def main():
     parser.add_argument("--force", action="store_true", help="Apply even if a live-content collision is detected")
     args = parser.parse_args()
 
-    with open(args.docs_json, encoding="utf-8") as f:
-        doc = json.load(f)
+    with open(args.redirects_json, encoding="utf-8") as f:
+        redirects = json.load(f)
 
     if args.apply:
-        cmd_apply(doc, args)
-        with open(args.docs_json, "w", encoding="utf-8", newline="\n") as f:
-            json.dump(doc, f, indent=2, ensure_ascii=False)
+        cmd_apply(redirects, args)
+        with open(args.redirects_json, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(redirects, f, indent=2, ensure_ascii=False)
     elif args.report:
-        cmd_report(doc["redirects"], args)
+        cmd_report(redirects, args)
     else:
         raise SystemExit("Specify --report or --apply")
 

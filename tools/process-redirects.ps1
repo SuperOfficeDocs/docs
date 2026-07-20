@@ -30,11 +30,14 @@
     .\process-redirects.ps1 en/developer-portal
 
 .NOTES
-    - Modifies docs.json in place
+    - Modifies config/redirects.json in place (docs.json itself is untouched -
+      it only holds a $ref pointer to that file since the modular-config split)
     - Deletes redirect_url files after processing
     - Removes empty directories
-    - Creates redirects array in docs.json if it doesn't exist
-    - Preserves wildcard redirects in docs.json (1:1 mapping only)
+    - Reads docs.json (read-only) to resolve the $ref chain down through
+      config/navigation.json and the per-language/per-section nav files, to
+      validate a new redirect source doesn't collide with a live nav page
+    - Preserves wildcard redirects in config/redirects.json (1:1 mapping only)
 #>
 
 param(
@@ -47,6 +50,7 @@ param(
 # Resolve paths
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $docsJsonPath = Join-Path $repoRoot "docs.json"
+$redirectsJsonPath = Join-Path $repoRoot "config/redirects.json"
 
 if (-not [System.IO.Path]::IsPathRooted($Path)) {
     $Path = Join-Path $repoRoot $Path
@@ -59,6 +63,11 @@ if (-not (Test-Path $Path)) {
 
 if (-not (Test-Path $docsJsonPath)) {
     Write-Error "docs.json not found at: $docsJsonPath"
+    exit 1
+}
+
+if (-not (Test-Path $redirectsJsonPath)) {
+    Write-Error "config/redirects.json not found at: $redirectsJsonPath"
     exit 1
 }
 
@@ -166,21 +175,62 @@ function Format-JsonIndent {
     return $sb.ToString()
 }
 
-# Load docs.json - use System.IO.File to preserve UTF-8 encoding
+# Load docs.json (read-only - it's just a $ref shell since the modular-config
+# split; used here only to resolve the navigation ref chain for validation)
 $docsJsonText = [System.IO.File]::ReadAllText($docsJsonPath)
 $docsJson = $docsJsonText | ConvertFrom-Json
 
-# Ensure redirects array exists
-$hasRedirects = $docsJson.PSObject.Properties.Name -contains 'redirects'
-if (-not $hasRedirects) {
-    $docsJson | Add-Member -MemberType NoteProperty -Name 'redirects' -Value @()
-}
+# Load config/redirects.json - this is the file we actually mutate
+$redirectsText = [System.IO.File]::ReadAllText($redirectsJsonPath)
+$redirectsRaw = $redirectsText | ConvertFrom-Json
 
 # Convert to list for easier manipulation (handle null/empty)
-if ($null -eq $docsJson.redirects -or $docsJson.redirects.Count -eq 0) {
+if ($null -eq $redirectsRaw -or $redirectsRaw.Count -eq 0) {
     $redirectsList = [System.Collections.ArrayList]::new()
 } else {
-    $redirectsList = [System.Collections.ArrayList]::new($docsJson.redirects)
+    $redirectsList = [System.Collections.ArrayList]::new(@($redirectsRaw))
+}
+
+# Resolves a $ref object (and any $refs nested inside what it points to) by
+# reading the referenced file. Paths are relative to the file that CONTAINS
+# the $ref, not to docs.json - matches Mintlify's split-configuration rules.
+# Sibling keys next to a $ref merge on top when the resolved value is an
+# object; they're ignored when it resolves to a non-object (e.g. an array).
+function Resolve-JsonRefs {
+    param($Node, [string]$BaseDir)
+
+    if ($null -eq $Node) { return $Node }
+
+    if ($Node -is [PSCustomObject] -and ($Node.PSObject.Properties.Name -contains '$ref')) {
+        $refPath = Join-Path $BaseDir $Node.'$ref'
+        $refText = [System.IO.File]::ReadAllText($refPath)
+        $resolved = Resolve-JsonRefs -Node ($refText | ConvertFrom-Json) -BaseDir (Split-Path -Parent $refPath)
+
+        if ($resolved -is [PSCustomObject]) {
+            foreach ($prop in $Node.PSObject.Properties) {
+                if ($prop.Name -ne '$ref') {
+                    $resolved | Add-Member -MemberType NoteProperty -Name $prop.Name -Value $prop.Value -Force
+                }
+            }
+        }
+        return $resolved
+    }
+
+    if ($Node -is [Array]) {
+        for ($i = 0; $i -lt $Node.Count; $i++) {
+            $Node[$i] = Resolve-JsonRefs -Node $Node[$i] -BaseDir $BaseDir
+        }
+        return $Node
+    }
+
+    if ($Node -is [PSCustomObject]) {
+        foreach ($prop in $Node.PSObject.Properties) {
+            $prop.Value = Resolve-JsonRefs -Node $prop.Value -BaseDir $BaseDir
+        }
+        return $Node
+    }
+
+    return $Node
 }
 
 # Build list of all pages in navigation for validation
@@ -214,9 +264,12 @@ function Get-PagesFromNavigation {
     }
 }
 
-# Parse navigation to collect all page paths
+# Parse navigation to collect all page paths - resolve the $ref chain first
+# (docs.json.navigation -> config/navigation.json -> per-language/per-section
+# files) so validation sees the same pages it used to see inline.
 if ($docsJson.PSObject.Properties.Name -contains 'navigation') {
-    Get-PagesFromNavigation $docsJson.navigation
+    $resolvedNavigation = Resolve-JsonRefs -Node $docsJson.navigation -BaseDir $repoRoot
+    Get-PagesFromNavigation $resolvedNavigation
 }
 
 function Get-FilePathRelativeToRoot {
@@ -456,15 +509,8 @@ if ($sourceCounts) {
     exit 1
 }
 
-# Update docs.json
-if ($hasRedirects) {
-    $docsJson.redirects = $redirectsList.ToArray()
-} else {
-    $docsJson | Add-Member -MemberType NoteProperty -Name 'redirects' -Value $redirectsList.ToArray() -Force
-}
-
 # Convert to JSON with proper depth
-$docsJsonContent = $docsJson | ConvertTo-Json -Depth 100
+$redirectsJsonContent = $redirectsList.ToArray() | ConvertTo-Json -Depth 100
 
 # Defensive pass: if ConvertTo-Json escaped any non-ASCII character to \uXXXX
 # (older Windows PowerShell 5.1 builds have done this with no opt-out, and
@@ -481,24 +527,24 @@ $unescapeMatch = [System.Text.RegularExpressions.MatchEvaluator] {
     }
     return [string][char]$code
 }
-$docsJsonContent = [regex]::Replace($docsJsonContent, '\\u([0-9a-fA-F]{4})', $unescapeMatch)
+$redirectsJsonContent = [regex]::Replace($redirectsJsonContent, '\\u([0-9a-fA-F]{4})', $unescapeMatch)
 
 # Normalize indentation to a clean 2-space-per-depth format
-$docsJsonContent = Format-JsonIndent -Json $docsJsonContent
+$redirectsJsonContent = Format-JsonIndent -Json $redirectsJsonContent
 
 # Write with UTF-8 encoding without BOM
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
-[System.IO.File]::WriteAllText($docsJsonPath, $docsJsonContent, $utf8NoBom)
+[System.IO.File]::WriteAllText($redirectsJsonPath, $redirectsJsonContent, $utf8NoBom)
 
-# Check and fix BOM in docs.json
-& "$PSScriptRoot\check-bom.ps1" -Path $docsJsonPath -RemoveBOM | Out-Null
+# Check and fix BOM in config/redirects.json
+& "$PSScriptRoot\check-bom.ps1" -Path $redirectsJsonPath -RemoveBOM | Out-Null
 
 # Report
 Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Files deleted: $filesDeleted" -ForegroundColor Cyan
 Write-Host "  Folders deleted: $foldersDeleted" -ForegroundColor Cyan
 Write-Host "  Redirects added: $redirectsAdded" -ForegroundColor Cyan
-Write-Host "  Total redirects in docs.json: $($redirectsList.Count)" -ForegroundColor Cyan
+Write-Host "  Total redirects in config/redirects.json: $($redirectsList.Count)" -ForegroundColor Cyan
 
 if ($warnings.Count -gt 0) {
     Write-Host "`nWarnings:" -ForegroundColor Yellow
