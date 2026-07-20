@@ -17009,56 +17009,20 @@
       "destination": "/en/automation/crmscript/howto/contact/*"
     },
     {
-      "source": "/en/contact/howto/entity/display-image-from-blob-table-entity",
-      "destination": "/en/api/entities/howto/contact/display-image-from-blob-table-entity"
-    },
-    {
-      "source": "/en/contact/howto/entity/get-associate-list",
-      "destination": "/en/api/entities/howto/contact/get-associate-list"
-    },
-    {
-      "source": "/en/contact/howto/entity/get-persons-from-contact-entities",
-      "destination": "/en/api/entities/howto/contact/get-persons-from-contact-entities"
-    },
-    {
-      "source": "/en/contact/howto/entity/index",
-      "destination": "/en/api/entities/howto/contact/index"
-    },
-    {
-      "source": "/en/contact/howto/entity/update-person-entity",
-      "destination": "/en/api/entities/howto/contact/update-person-entity"
+      "source": "/en/contact/howto/entity/*",
+      "destination": "/en/api/entities/howto/contact/*"
     },
     {
       "source": "/en/contact/howto/index",
       "destination": "/en/contact/dev/index"
     },
     {
-      "source": "/en/contact/howto/osql/get-persons-from-contact-sodatareader",
-      "destination": "/en/api/osql/howto/contact/get-persons-from-contact-sodatareader"
+      "source": "/en/contact/howto/osql/*",
+      "destination": "/en/api/osql/howto/contact/*"
     },
     {
-      "source": "/en/contact/howto/osql/index",
-      "destination": "/en/api/osql/howto/contact/index"
-    },
-    {
-      "source": "/en/contact/howto/osql/update-person-osql",
-      "destination": "/en/api/osql/howto/contact/update-person-osql"
-    },
-    {
-      "source": "/en/contact/howto/row/collection",
-      "destination": "/en/api/rows/howto/contact/collection"
-    },
-    {
-      "source": "/en/contact/howto/row/get-persons-from-contact-rows",
-      "destination": "/en/api/rows/howto/contact/get-persons-from-contact-rows"
-    },
-    {
-      "source": "/en/contact/howto/row/index",
-      "destination": "/en/api/rows/howto/contact/index"
-    },
-    {
-      "source": "/en/contact/howto/row/update-person-rows",
-      "destination": "/en/api/rows/howto/contact/update-person-rows"
+      "source": "/en/contact/howto/row/*",
+      "destination": "/en/api/rows/howto/contact/*"
     },
     {
       "source": "/en/contact/howto/services/display-image-from-blob-table-services",
@@ -17093,20 +17057,8 @@
       "destination": "/en/api/web-services/howto/contact/update-person-services"
     },
     {
-      "source": "/en/contact/howto/sql/add-person-picture-blobs-sql",
-      "destination": "/en/api/sql/howto/contact/add-person-picture-blobs-sql"
-    },
-    {
-      "source": "/en/contact/howto/sql/get-persons-from-contact-sql",
-      "destination": "/en/api/sql/howto/contact/get-persons-from-contact-sql"
-    },
-    {
-      "source": "/en/contact/howto/sql/index",
-      "destination": "/en/api/sql/howto/contact/index"
-    },
-    {
-      "source": "/en/contact/howto/sql/update-person-sql",
-      "destination": "/en/api/sql/howto/contact/update-person-sql"
+      "source": "/en/contact/howto/sql/*",
+      "destination": "/en/api/sql/howto/contact/*"
     },
     {
       "source": "/en/contact/learn/add-relation",
