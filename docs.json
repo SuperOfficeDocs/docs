@@ -19017,64 +19017,8 @@
       "destination": "/en/onsite/travel/freetext-search-and-travel"
     },
     {
-      "source": "/en/onsite/win-client/learn/import/ansi-files",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/ansi-files.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/creating-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/creating-import-descriptions.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/deleting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/deleting-field-mapping.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/duplicates-import",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/duplicates-import.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/editing-import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/editing-import-descriptions.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/field-mapping.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/import-descriptions",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/import-descriptions.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/import-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/import-routines.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/importing-files",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/importing-files.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/index",
+      "source": "/en/onsite/win-client/learn/import/*",
       "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/index.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/resetting-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/resetting-field-mapping.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/resetting-rules-for-duplicate-handling.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/specifying-advanced-import-settings",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/specifying-advanced-import-settings.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/specifying-field-mapping",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/specifying-field-mapping.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/updating-rules-for-duplicate-handling",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/import/updating-rules-for-duplicate-handling.html"
     },
     {
       "source": "/en/onsite/win-client/learn/parameter-examples",
