@@ -15945,10 +15945,6 @@
       "destination": "/en/project/learn/project-guides"
     },
     {
-      "source": "/en/project/learn/screen/",
-      "destination": "/en/project/learn/index"
-    },
-    {
       "source": "/en/project/learn/screen/activities-project",
       "destination": "/en/learn/section-tabs/activities-tab"
     },
