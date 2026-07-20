@@ -16873,76 +16873,20 @@
       "destination": "/en/automation/crmscript/howto/company/*"
     },
     {
-      "source": "/en/company/howto/entity/create-contact-entity",
-      "destination": "/en/api/entities/howto/company/create-contact-entity"
-    },
-    {
-      "source": "/en/company/howto/entity/create-contact-entity-in-collection",
-      "destination": "/en/api/entities/howto/company/create-contact-entity-in-collection"
-    },
-    {
-      "source": "/en/company/howto/entity/create-contact-entity-in-entity",
-      "destination": "/en/api/entities/howto/company/create-contact-entity-in-entity"
-    },
-    {
-      "source": "/en/company/howto/entity/get-catlist-generic-provider",
-      "destination": "/en/api/entities/howto/company/get-catlist-generic-provider"
-    },
-    {
-      "source": "/en/company/howto/entity/get-catlist-typed-provider",
-      "destination": "/en/api/entities/howto/company/get-catlist-typed-provider"
-    },
-    {
-      "source": "/en/company/howto/entity/get-contact-via-entities-layer",
-      "destination": "/en/api/entities/howto/company/get-contact-via-entities-layer"
-    },
-    {
-      "source": "/en/company/howto/entity/get-interests-for-contact-entity",
-      "destination": "/en/api/entities/howto/company/get-interests-for-contact-entity"
-    },
-    {
-      "source": "/en/company/howto/entity/index",
-      "destination": "/en/api/entities/howto/company/index"
-    },
-    {
-      "source": "/en/company/howto/entity/set-interest-on-off-entity",
-      "destination": "/en/api/entities/howto/company/set-interest-on-off-entity"
+      "source": "/en/company/howto/entity/*",
+      "destination": "/en/api/entities/howto/company/*"
     },
     {
       "source": "/en/company/howto/index",
       "destination": "/en/company/dev/index"
     },
     {
-      "source": "/en/company/howto/osql/create-contact-osql",
-      "destination": "/en/api/osql/howto/company/create-contact-osql"
+      "source": "/en/company/howto/osql/*",
+      "destination": "/en/api/osql/howto/company/*"
     },
     {
-      "source": "/en/company/howto/osql/get-catlist-sodatareader",
-      "destination": "/en/api/osql/howto/company/get-catlist-sodatareader"
-    },
-    {
-      "source": "/en/company/howto/osql/index",
-      "destination": "/en/api/osql/howto/company/index"
-    },
-    {
-      "source": "/en/company/howto/row/add-new-contact-interest",
-      "destination": "/en/api/rows/howto/company/add-new-contact-interest"
-    },
-    {
-      "source": "/en/company/howto/row/create-contact-row",
-      "destination": "/en/api/rows/howto/company/create-contact-row"
-    },
-    {
-      "source": "/en/company/howto/row/create-contact-rows",
-      "destination": "/en/api/rows/howto/company/create-contact-rows"
-    },
-    {
-      "source": "/en/company/howto/row/get-catlist-categoryrows",
-      "destination": "/en/api/rows/howto/company/get-catlist-categoryrows"
-    },
-    {
-      "source": "/en/company/howto/row/index",
-      "destination": "/en/api/rows/howto/company/index"
+      "source": "/en/company/howto/row/*",
+      "destination": "/en/api/rows/howto/company/*"
     },
     {
       "source": "/en/company/howto/services/add-catlist-item-rest",
@@ -16997,24 +16941,8 @@
       "destination": "/en/api/web-services/howto/company/set-interest-on-off-services"
     },
     {
-      "source": "/en/company/howto/sql/create-contact-sql",
-      "destination": "/en/api/sql/howto/company/create-contact-sql"
-    },
-    {
-      "source": "/en/company/howto/sql/get-catlist-sql",
-      "destination": "/en/api/sql/howto/company/get-catlist-sql"
-    },
-    {
-      "source": "/en/company/howto/sql/get-contact-details-sql",
-      "destination": "/en/api/sql/howto/company/get-contact-details-sql"
-    },
-    {
-      "source": "/en/company/howto/sql/get-interests-sql",
-      "destination": "/en/api/sql/howto/company/get-interests-sql"
-    },
-    {
-      "source": "/en/company/howto/sql/index",
-      "destination": "/en/api/sql/howto/company/index"
+      "source": "/en/company/howto/sql/*",
+      "destination": "/en/api/sql/howto/company/*"
     },
     {
       "source": "/en/company/interests",
@@ -17273,32 +17201,8 @@
       "destination": "/en/automation/crmscript/howto/custom-objects/udef"
     },
     {
-      "source": "/en/custom-objects/udef/howto/entity/get-udef-field-value",
-      "destination": "/en/api/entities/howto/custom-objects/get-udef-field-value"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/entity/index",
-      "destination": "/en/api/entities/howto/custom-objects/index"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/entity/set-udef-listitem-value",
-      "destination": "/en/api/entities/howto/custom-objects/set-udef-listitem-value"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/entity/udef-on-contact",
-      "destination": "/en/api/entities/howto/custom-objects/udef-on-contact"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/entity/udefhelper-class",
-      "destination": "/en/api/entities/howto/custom-objects/udefhelper-class"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/entity/update-udef",
-      "destination": "/en/api/entities/howto/custom-objects/update-udef"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/entity/using-udefhelper",
-      "destination": "/en/api/entities/howto/custom-objects/using-udefhelper"
+      "source": "/en/custom-objects/udef/howto/entity/*",
+      "destination": "/en/api/entities/howto/custom-objects/*"
     },
     {
       "source": "/en/custom-objects/udef/howto/services/find-contact-by-udef",
@@ -17333,12 +17237,8 @@
       "destination": "/en/api/web-services/howto/custom-objects/set-udef-listitem-value"
     },
     {
-      "source": "/en/custom-objects/udef/howto/sql/index",
-      "destination": "/en/api/sql/howto/custom-objects/index"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/sql/set-udef",
-      "destination": "/en/api/sql/howto/custom-objects/set-udef"
+      "source": "/en/custom-objects/udef/howto/sql/*",
+      "destination": "/en/api/sql/howto/custom-objects/*"
     },
     {
       "source": "/en/custom-objects/udef/index",
@@ -17465,11 +17365,7 @@
       "destination": "/en/developer-portal/standard-app/certification/initial-security-eval"
     },
     {
-      "source": "/en/diary/howto/archive/index",
-      "destination": "/en/api/archive-providers/howto/diary/index"
-    },
-    {
-      "source": "/en/diary/howto/archive/invitation-archive",
+      "source": "/en/diary/howto/archive/*",
       "destination": "/en/api/archive-providers/howto/diary/index"
     },
     {
@@ -17477,60 +17373,20 @@
       "destination": "/en/automation/crmscript/howto/diary/*"
     },
     {
-      "source": "/en/diary/howto/entity/accept-invitation-entity",
-      "destination": "/en/api/entities/howto/diary/accept-invitation-entity"
-    },
-    {
-      "source": "/en/diary/howto/entity/appointment-matrix",
-      "destination": "/en/api/entities/howto/diary/appointment-matrix"
-    },
-    {
-      "source": "/en/diary/howto/entity/create-apt-entity",
-      "destination": "/en/api/entities/howto/diary/create-apt-entity"
-    },
-    {
-      "source": "/en/diary/howto/entity/create-apt-entity-in-collection",
-      "destination": "/en/api/entities/howto/diary/create-apt-entity-in-collection"
-    },
-    {
-      "source": "/en/diary/howto/entity/create-apt-entity-in-entity",
-      "destination": "/en/api/entities/howto/diary/create-apt-entity-in-entity"
-    },
-    {
-      "source": "/en/diary/howto/entity/create-invitation-entity",
-      "destination": "/en/api/entities/howto/diary/create-invitation-entity"
-    },
-    {
-      "source": "/en/diary/howto/entity/create-recurring-appointment-entity",
-      "destination": "/en/api/entities/howto/diary/create-recurring-appointment-entity"
-    },
-    {
-      "source": "/en/diary/howto/entity/index",
-      "destination": "/en/api/entities/howto/diary/index"
+      "source": "/en/diary/howto/entity/*",
+      "destination": "/en/api/entities/howto/diary/*"
     },
     {
       "source": "/en/diary/howto/index",
       "destination": "/en/diary/dev/index"
     },
     {
-      "source": "/en/diary/howto/osql/create-apt-osql",
-      "destination": "/en/api/osql/howto/diary/create-apt-osql"
+      "source": "/en/diary/howto/osql/*",
+      "destination": "/en/api/osql/howto/diary/*"
     },
     {
-      "source": "/en/diary/howto/osql/index",
-      "destination": "/en/api/osql/howto/diary/index"
-    },
-    {
-      "source": "/en/diary/howto/row/create-apt-row",
-      "destination": "/en/api/rows/howto/diary/create-apt-row"
-    },
-    {
-      "source": "/en/diary/howto/row/create-apt-rows",
-      "destination": "/en/api/rows/howto/diary/create-apt-rows"
-    },
-    {
-      "source": "/en/diary/howto/row/index",
-      "destination": "/en/api/rows/howto/diary/index"
+      "source": "/en/diary/howto/row/*",
+      "destination": "/en/api/rows/howto/diary/*"
     },
     {
       "source": "/en/diary/howto/services/accept-invitation-services",
@@ -17557,20 +17413,8 @@
       "destination": "/en/api/web-services/howto/diary/index"
     },
     {
-      "source": "/en/diary/howto/sql/accept-invitation-sql",
-      "destination": "/en/api/sql/howto/diary/accept-invitation-sql"
-    },
-    {
-      "source": "/en/diary/howto/sql/create-apt-sql",
-      "destination": "/en/api/sql/howto/diary/create-apt-sql"
-    },
-    {
-      "source": "/en/diary/howto/sql/create-invitation-sql",
-      "destination": "/en/api/sql/howto/diary/create-invitation-sql"
-    },
-    {
-      "source": "/en/diary/howto/sql/index",
-      "destination": "/en/api/sql/howto/diary/index"
+      "source": "/en/diary/howto/sql/*",
+      "destination": "/en/api/sql/howto/diary/*"
     },
     {
       "source": "/en/diary/invitations",
@@ -18085,28 +17929,16 @@
       "destination": "/en/api/localization/address/addresshelper"
     },
     {
-      "source": "/en/globalization-and-localization/address/howto/crmscript/get-address",
-      "destination": "/en/automation/crmscript/howto/address/get-address"
-    },
-    {
-      "source": "/en/globalization-and-localization/address/howto/crmscript/index",
-      "destination": "/en/automation/crmscript/howto/address/index"
-    },
-    {
-      "source": "/en/globalization-and-localization/address/howto/crmscript/set-address",
-      "destination": "/en/automation/crmscript/howto/address/set-address"
+      "source": "/en/globalization-and-localization/address/howto/crmscript/*",
+      "destination": "/en/automation/crmscript/howto/address/*"
     },
     {
       "source": "/en/globalization-and-localization/address/howto/index",
       "destination": "/en/api/localization/address/index"
     },
     {
-      "source": "/en/globalization-and-localization/address/howto/rows/index",
-      "destination": "/en/api/rows/howto/address/index"
-    },
-    {
-      "source": "/en/globalization-and-localization/address/howto/rows/update-address",
-      "destination": "/en/api/rows/howto/address/update-address"
+      "source": "/en/globalization-and-localization/address/howto/rows/*",
+      "destination": "/en/api/rows/howto/address/*"
     },
     {
       "source": "/en/globalization-and-localization/address/howto/services/get-localized-address",
@@ -18557,20 +18389,8 @@
       "destination": "/en/project/dev/index"
     },
     {
-      "source": "/en/project/howto/sql/create",
-      "destination": "/en/api/sql/howto/project/create"
-    },
-    {
-      "source": "/en/project/howto/sql/index",
-      "destination": "/en/api/sql/howto/project/index"
-    },
-    {
-      "source": "/en/project/howto/sql/project-guide",
-      "destination": "/en/api/sql/howto/project/project-guide"
-    },
-    {
-      "source": "/en/project/howto/sql/text-table",
-      "destination": "/en/api/sql/howto/project/text-table"
+      "source": "/en/project/howto/sql/*",
+      "destination": "/en/api/sql/howto/project/*"
     },
     {
       "source": "/en/project/learn/add-links",
@@ -18937,12 +18757,8 @@
       "destination": "/en/automation/crmscript/howto/sale/*"
     },
     {
-      "source": "/en/sale/howto/entity/index",
-      "destination": "/en/api/entities/howto/sale/index"
-    },
-    {
-      "source": "/en/sale/howto/entity/link-sale-to-appointment",
-      "destination": "/en/api/entities/howto/sale/link-sale-to-appointment"
+      "source": "/en/sale/howto/entity/*",
+      "destination": "/en/api/entities/howto/sale/*"
     },
     {
       "source": "/en/sale/howto/index",
@@ -19033,24 +18849,12 @@
       "destination": "/en/saint/learn/index"
     },
     {
-      "source": "/en/sale/saint/howto/row/index",
-      "destination": "/en/api/rows/howto/saint/index"
+      "source": "/en/sale/saint/howto/row/*",
+      "destination": "/en/api/rows/howto/saint/*"
     },
     {
-      "source": "/en/sale/saint/howto/row/search-saint-contactrow-customsearch",
-      "destination": "/en/api/rows/howto/saint/search-saint-contactrow-customsearch"
-    },
-    {
-      "source": "/en/sale/saint/howto/sql/get-contact-by-saint-value",
-      "destination": "/en/api/sql/howto/saint/get-contact-by-saint-value"
-    },
-    {
-      "source": "/en/sale/saint/howto/sql/index",
-      "destination": "/en/api/sql/howto/saint/index"
-    },
-    {
-      "source": "/en/sale/saint/howto/sql/search-saint-values",
-      "destination": "/en/api/sql/howto/saint/search-saint-values"
+      "source": "/en/sale/saint/howto/sql/*",
+      "destination": "/en/api/sql/howto/saint/*"
     },
     {
       "source": "/en/sale/saint/learn/",
