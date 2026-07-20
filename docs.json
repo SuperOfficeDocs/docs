@@ -15965,48 +15965,8 @@
       "destination": "/en/api/search/odata/index"
     },
     {
-      "source": "/en/api/netserver/search/odata/associate",
-      "destination": "/en/api/search/odata/associate"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/boolean",
-      "destination": "/en/api/search/odata/boolean"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/date",
-      "destination": "/en/api/search/odata/date"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/datetime",
-      "destination": "/en/api/search/odata/datetime"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/dynamic-provider",
-      "destination": "/en/api/search/odata/dynamic-provider"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/lists",
-      "destination": "/en/api/search/odata/lists"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/metadata",
-      "destination": "/en/api/search/odata/metadata"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/numbers",
-      "destination": "/en/api/search/odata/numbers"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/strings",
-      "destination": "/en/api/search/odata/strings"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/unary",
-      "destination": "/en/api/search/odata/unary"
-    },
-    {
-      "source": "/en/api/netserver/search/odata/using-filters",
-      "destination": "/en/api/search/odata/using-filters"
+      "source": "/en/api/netserver/search/odata/*",
+      "destination": "/en/api/search/odata/*"
     },
     {
       "source": "/en/api/netserver/search/selection",
@@ -16069,96 +16029,8 @@
       "destination": "/en/api/search/selection/sql/add-person-to-selection"
     },
     {
-      "source": "/en/api/netserver/sql/howto/company/create-contact-sql",
-      "destination": "/en/api/sql/howto/company/create-contact-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/company/get-catlist-sql",
-      "destination": "/en/api/sql/howto/company/get-catlist-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/company/get-contact-details-sql",
-      "destination": "/en/api/sql/howto/company/get-contact-details-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/company/get-interests-sql",
-      "destination": "/en/api/sql/howto/company/get-interests-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/company/index",
-      "destination": "/en/api/sql/howto/company/index"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/contact/add-person-picture-blobs-sql",
-      "destination": "/en/api/sql/howto/contact/add-person-picture-blobs-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/contact/get-persons-from-contact-sql",
-      "destination": "/en/api/sql/howto/contact/get-persons-from-contact-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/contact/index",
-      "destination": "/en/api/sql/howto/contact/index"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/contact/update-person-sql",
-      "destination": "/en/api/sql/howto/contact/update-person-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/custom-objects/index",
-      "destination": "/en/api/sql/howto/custom-objects/index"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/custom-objects/set-udef",
-      "destination": "/en/api/sql/howto/custom-objects/set-udef"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/diary/accept-invitation-sql",
-      "destination": "/en/api/sql/howto/diary/accept-invitation-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/diary/create-apt-sql",
-      "destination": "/en/api/sql/howto/diary/create-apt-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/diary/create-invitation-sql",
-      "destination": "/en/api/sql/howto/diary/create-invitation-sql"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/diary/index",
-      "destination": "/en/api/sql/howto/diary/index"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/project/create",
-      "destination": "/en/api/sql/howto/project/create"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/project/index",
-      "destination": "/en/api/sql/howto/project/index"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/project/project-guide",
-      "destination": "/en/api/sql/howto/project/project-guide"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/project/text-table",
-      "destination": "/en/api/sql/howto/project/text-table"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/saint/get-contact-by-saint-value",
-      "destination": "/en/api/sql/howto/saint/get-contact-by-saint-value"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/saint/index",
-      "destination": "/en/api/sql/howto/saint/index"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/saint/search-saint-values",
-      "destination": "/en/api/sql/howto/saint/search-saint-values"
-    },
-    {
-      "source": "/en/api/netserver/sql/howto/sale/stakeholders",
-      "destination": "/en/api/sql/howto/sale/stakeholders"
+      "source": "/en/api/netserver/sql/howto/*",
+      "destination": "/en/api/sql/howto/*"
     },
     {
       "source": "/en/api/netserver/web-services/endpoints/agents-webapi/index",
