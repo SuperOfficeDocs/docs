@@ -11945,44 +11945,8 @@
       "destination": "/en/mobile/contact/scan-business-card"
     },
     {
-      "source": "/da/onsite/win-client/learn/backup-routines",
+      "source": "/da/onsite/win-client/learn/*",
       "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
-      "destination": "/da/learn/basics/creating-shortcuts-to-entries-in-crm"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/freetext-search-and-travel",
-      "destination": "/en/onsite/travel/freetext-search-and-travel"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/import/*",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/index",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/update-database",
-      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/da/onsite/win-client/learn/using-document-templates-for-multiple-languages",
-      "destination": "https://help.superoffice.com/docs/11/da/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
       "source": "/da/project/learn/add-links",
@@ -13653,44 +13617,8 @@
       "destination": "/en/mobile/contact/scan-business-card"
     },
     {
-      "source": "/de/onsite/win-client/learn/backup-routines",
+      "source": "/de/onsite/win-client/learn/*",
       "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
-      "destination": "/de/learn/basics/creating-shortcuts-to-entries-in-crm"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/freetext-search-and-travel",
-      "destination": "/en/onsite/travel/freetext-search-and-travel"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/import/*",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/index",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/update-database",
-      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/de/onsite/win-client/learn/using-document-templates-for-multiple-languages",
-      "destination": "https://help.superoffice.com/docs/11/de/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
       "source": "/de/project/learn/add-links",
@@ -18713,40 +18641,8 @@
       "destination": "/en/onsite/travel/sybase/set-up"
     },
     {
-      "source": "/en/onsite/win-client/learn/backup-routines",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/backup-routines.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
-      "destination": "/en/learn/basics/creating-shortcuts-to-entries-in-crm"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/export.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/freetext-search-and-travel",
-      "destination": "/en/onsite/travel/freetext-search-and-travel"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/import/*",
+      "source": "/en/onsite/win-client/learn/*",
       "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/parameter-examples.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/status-screen.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/update-database",
-      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/en/onsite/win-client/learn/using-document-templates-for-multiple-languages",
-      "destination": "https://help.superoffice.com/docs/11/en/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
       "source": "/en/project/howto/crmscript/create",
@@ -21037,44 +20933,8 @@
       "destination": "/en/mobile/contact/scan-business-card"
     },
     {
-      "source": "/nl/onsite/win-client/learn/backup-routines",
+      "source": "/nl/onsite/win-client/learn/*",
       "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
-      "destination": "/nl/learn/basics/creating-shortcuts-to-entries-in-crm"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/freetext-search-and-travel",
-      "destination": "/en/onsite/travel/freetext-search-and-travel"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/import/*",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/index",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/update-database",
-      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/nl/onsite/win-client/learn/using-document-templates-for-multiple-languages",
-      "destination": "https://help.superoffice.com/docs/11/nl/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
       "source": "/nl/project/learn/add-links",
@@ -22733,44 +22593,8 @@
       "destination": "/en/mobile/contact/scan-business-card"
     },
     {
-      "source": "/no/onsite/win-client/learn/backup-routines",
+      "source": "/no/onsite/win-client/learn/*",
       "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
-      "destination": "/no/learn/basics/creating-shortcuts-to-entries-in-crm"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/freetext-search-and-travel",
-      "destination": "/en/onsite/travel/freetext-search-and-travel"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/import/*",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/index",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/update-database",
-      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/no/onsite/win-client/learn/using-document-templates-for-multiple-languages",
-      "destination": "https://help.superoffice.com/docs/11/no/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
       "source": "/no/project/learn/add-links",
@@ -24505,44 +24329,8 @@
       "destination": "/en/mobile/contact/scan-business-card"
     },
     {
-      "source": "/sv/onsite/win-client/learn/backup-routines",
+      "source": "/sv/onsite/win-client/learn/*",
       "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm",
-      "destination": "/sv/learn/basics/creating-shortcuts-to-entries-in-crm"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/export",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/freetext-search-and-travel",
-      "destination": "/en/onsite/travel/freetext-search-and-travel"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/import/*",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/index",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/parameter-examples",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/status-screen",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/update-database",
-      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
-    },
-    {
-      "source": "/sv/onsite/win-client/learn/using-document-templates-for-multiple-languages",
-      "destination": "https://help.superoffice.com/docs/11/sv/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
       "source": "/sv/project/learn/add-links",

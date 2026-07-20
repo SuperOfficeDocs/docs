@@ -130,6 +130,7 @@ redirect_from:
   - /sv/onsite/win-client/learn/import/specifying-advanced-import-settings
   - /sv/onsite/win-client/learn/import/specifying-field-mapping
   - /sv/onsite/win-client/learn/import/updating-rules-for-duplicate-handling
+hidden: true
 ---
 
 # Windows Client settings
