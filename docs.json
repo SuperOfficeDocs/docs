@@ -12193,60 +12193,12 @@
       "destination": "/da/knowledge-base/learn/external-document"
     },
     {
-      "source": "/da/request/learn/howto/accept",
-      "destination": "/da/request/learn/accept"
-    },
-    {
-      "source": "/da/request/learn/howto/assign",
-      "destination": "/da/request/learn/assign"
-    },
-    {
-      "source": "/da/request/learn/howto/close",
-      "destination": "/da/request/learn/close"
-    },
-    {
-      "source": "/da/request/learn/howto/create",
-      "destination": "/da/request/learn/create"
-    },
-    {
-      "source": "/da/request/learn/howto/delete",
-      "destination": "/da/request/learn/delete"
-    },
-    {
-      "source": "/da/request/learn/howto/edit-message",
-      "destination": "/da/request/learn/edit-message"
-    },
-    {
-      "source": "/da/request/learn/howto/fav",
+      "source": "/da/request/learn/fav",
       "destination": "/da/learn/basics/fav"
     },
     {
-      "source": "/da/request/learn/howto/flag-message",
-      "destination": "/da/request/learn/flag-message"
-    },
-    {
-      "source": "/da/request/learn/howto/forward",
-      "destination": "/da/request/learn/forward"
-    },
-    {
-      "source": "/da/request/learn/howto/merge",
-      "destination": "/da/request/learn/merge"
-    },
-    {
-      "source": "/da/request/learn/howto/reply",
-      "destination": "/da/request/learn/reply"
-    },
-    {
-      "source": "/da/request/learn/howto/split-message",
-      "destination": "/da/request/learn/split-message"
-    },
-    {
-      "source": "/da/request/learn/howto/split-request",
-      "destination": "/da/request/learn/split-request"
-    },
-    {
-      "source": "/da/request/learn/howto/transfer",
-      "destination": "/da/request/learn/transfer"
+      "source": "/da/request/learn/howto/*",
+      "destination": "/da/request/learn/*"
     },
     {
       "source": "/da/request/learn/next-in-queue",
@@ -13945,60 +13897,12 @@
       "destination": "/de/request/admin/category/*"
     },
     {
-      "source": "/de/request/learn/howto/accept",
-      "destination": "/de/request/learn/accept"
-    },
-    {
-      "source": "/de/request/learn/howto/assign",
-      "destination": "/de/request/learn/assign"
-    },
-    {
-      "source": "/de/request/learn/howto/close",
-      "destination": "/de/request/learn/close"
-    },
-    {
-      "source": "/de/request/learn/howto/create",
-      "destination": "/de/request/learn/create"
-    },
-    {
-      "source": "/de/request/learn/howto/delete",
-      "destination": "/de/request/learn/delete"
-    },
-    {
-      "source": "/de/request/learn/howto/edit-message",
-      "destination": "/de/request/learn/edit-message"
-    },
-    {
-      "source": "/de/request/learn/howto/fav",
+      "source": "/de/request/learn/fav",
       "destination": "/de/learn/basics/fav"
     },
     {
-      "source": "/de/request/learn/howto/flag-message",
-      "destination": "/de/request/learn/flag-message"
-    },
-    {
-      "source": "/de/request/learn/howto/forward",
-      "destination": "/de/request/learn/forward"
-    },
-    {
-      "source": "/de/request/learn/howto/merge",
-      "destination": "/de/request/learn/merge"
-    },
-    {
-      "source": "/de/request/learn/howto/reply",
-      "destination": "/de/request/learn/reply"
-    },
-    {
-      "source": "/de/request/learn/howto/split-message",
-      "destination": "/de/request/learn/split-message"
-    },
-    {
-      "source": "/de/request/learn/howto/split-request",
-      "destination": "/de/request/learn/split-request"
-    },
-    {
-      "source": "/de/request/learn/howto/transfer",
-      "destination": "/de/request/learn/transfer"
+      "source": "/de/request/learn/howto/*",
+      "destination": "/de/request/learn/*"
     },
     {
       "source": "/de/request/learn/next-in-queue",
@@ -19217,60 +19121,12 @@
       "destination": "/en/knowledge-base/learn/external-document"
     },
     {
-      "source": "/en/request/learn/howto/accept",
-      "destination": "/en/request/learn/accept"
-    },
-    {
-      "source": "/en/request/learn/howto/assign",
-      "destination": "/en/request/learn/assign"
-    },
-    {
-      "source": "/en/request/learn/howto/close",
-      "destination": "/en/request/learn/close"
-    },
-    {
-      "source": "/en/request/learn/howto/create",
-      "destination": "/en/request/learn/create"
-    },
-    {
-      "source": "/en/request/learn/howto/delete",
-      "destination": "/en/request/learn/delete"
-    },
-    {
-      "source": "/en/request/learn/howto/edit-message",
-      "destination": "/en/request/learn/edit-message"
-    },
-    {
-      "source": "/en/request/learn/howto/fav",
+      "source": "/en/request/learn/fav",
       "destination": "/en/learn/basics/fav"
     },
     {
-      "source": "/en/request/learn/howto/flag-message",
-      "destination": "/en/request/learn/flag-message"
-    },
-    {
-      "source": "/en/request/learn/howto/forward",
-      "destination": "/en/request/learn/forward"
-    },
-    {
-      "source": "/en/request/learn/howto/merge",
-      "destination": "/en/request/learn/merge"
-    },
-    {
-      "source": "/en/request/learn/howto/reply",
-      "destination": "/en/request/learn/reply"
-    },
-    {
-      "source": "/en/request/learn/howto/split-message",
-      "destination": "/en/request/learn/split-message"
-    },
-    {
-      "source": "/en/request/learn/howto/split-request",
-      "destination": "/en/request/learn/split-request"
-    },
-    {
-      "source": "/en/request/learn/howto/transfer",
-      "destination": "/en/request/learn/transfer"
+      "source": "/en/request/learn/howto/*",
+      "destination": "/en/request/learn/*"
     },
     {
       "source": "/en/request/learn/next-in-queue",
@@ -21429,60 +21285,12 @@
       "destination": "/nl/knowledge-base/learn/external-document"
     },
     {
-      "source": "/nl/request/learn/howto/accept",
-      "destination": "/nl/request/learn/accept"
-    },
-    {
-      "source": "/nl/request/learn/howto/assign",
-      "destination": "/nl/request/learn/assign"
-    },
-    {
-      "source": "/nl/request/learn/howto/close",
-      "destination": "/nl/request/learn/close"
-    },
-    {
-      "source": "/nl/request/learn/howto/create",
-      "destination": "/nl/request/learn/create"
-    },
-    {
-      "source": "/nl/request/learn/howto/delete",
-      "destination": "/nl/request/learn/delete"
-    },
-    {
-      "source": "/nl/request/learn/howto/edit-message",
-      "destination": "/nl/request/learn/edit-message"
-    },
-    {
-      "source": "/nl/request/learn/howto/fav",
+      "source": "/nl/request/learn/fav",
       "destination": "/nl/learn/basics/fav"
     },
     {
-      "source": "/nl/request/learn/howto/flag-message",
-      "destination": "/nl/request/learn/flag-message"
-    },
-    {
-      "source": "/nl/request/learn/howto/forward",
-      "destination": "/nl/request/learn/forward"
-    },
-    {
-      "source": "/nl/request/learn/howto/merge",
-      "destination": "/nl/request/learn/merge"
-    },
-    {
-      "source": "/nl/request/learn/howto/reply",
-      "destination": "/nl/request/learn/reply"
-    },
-    {
-      "source": "/nl/request/learn/howto/split-message",
-      "destination": "/nl/request/learn/split-message"
-    },
-    {
-      "source": "/nl/request/learn/howto/split-request",
-      "destination": "/nl/request/learn/split-request"
-    },
-    {
-      "source": "/nl/request/learn/howto/transfer",
-      "destination": "/nl/request/learn/transfer"
+      "source": "/nl/request/learn/howto/*",
+      "destination": "/nl/request/learn/*"
     },
     {
       "source": "/nl/request/learn/next-in-queue",
@@ -23173,60 +22981,12 @@
       "destination": "/no/knowledge-base/learn/external-document"
     },
     {
-      "source": "/no/request/learn/howto/accept",
-      "destination": "/no/request/learn/accept"
-    },
-    {
-      "source": "/no/request/learn/howto/assign",
-      "destination": "/no/request/learn/assign"
-    },
-    {
-      "source": "/no/request/learn/howto/close",
-      "destination": "/no/request/learn/close"
-    },
-    {
-      "source": "/no/request/learn/howto/create",
-      "destination": "/no/request/learn/create"
-    },
-    {
-      "source": "/no/request/learn/howto/delete",
-      "destination": "/no/request/learn/delete"
-    },
-    {
-      "source": "/no/request/learn/howto/edit-message",
-      "destination": "/no/request/learn/edit-message"
-    },
-    {
-      "source": "/no/request/learn/howto/fav",
+      "source": "/no/request/learn/fav",
       "destination": "/no/learn/basics/fav"
     },
     {
-      "source": "/no/request/learn/howto/flag-message",
-      "destination": "/no/request/learn/flag-message"
-    },
-    {
-      "source": "/no/request/learn/howto/forward",
-      "destination": "/no/request/learn/forward"
-    },
-    {
-      "source": "/no/request/learn/howto/merge",
-      "destination": "/no/request/learn/merge"
-    },
-    {
-      "source": "/no/request/learn/howto/reply",
-      "destination": "/no/request/learn/reply"
-    },
-    {
-      "source": "/no/request/learn/howto/split-message",
-      "destination": "/no/request/learn/split-message"
-    },
-    {
-      "source": "/no/request/learn/howto/split-request",
-      "destination": "/no/request/learn/split-request"
-    },
-    {
-      "source": "/no/request/learn/howto/transfer",
-      "destination": "/no/request/learn/transfer"
+      "source": "/no/request/learn/howto/*",
+      "destination": "/no/request/learn/*"
     },
     {
       "source": "/no/request/learn/next-in-queue",
@@ -24993,60 +24753,12 @@
       "destination": "/sv/knowledge-base/learn/external-document"
     },
     {
-      "source": "/sv/request/learn/howto/accept",
-      "destination": "/sv/request/learn/accept"
-    },
-    {
-      "source": "/sv/request/learn/howto/assign",
-      "destination": "/sv/request/learn/assign"
-    },
-    {
-      "source": "/sv/request/learn/howto/close",
-      "destination": "/sv/request/learn/close"
-    },
-    {
-      "source": "/sv/request/learn/howto/create",
-      "destination": "/sv/request/learn/create"
-    },
-    {
-      "source": "/sv/request/learn/howto/delete",
-      "destination": "/sv/request/learn/delete"
-    },
-    {
-      "source": "/sv/request/learn/howto/edit-message",
-      "destination": "/sv/request/learn/edit-message"
-    },
-    {
-      "source": "/sv/request/learn/howto/fav",
+      "source": "/sv/request/learn/fav",
       "destination": "/sv/learn/basics/fav"
     },
     {
-      "source": "/sv/request/learn/howto/flag-message",
-      "destination": "/sv/request/learn/flag-message"
-    },
-    {
-      "source": "/sv/request/learn/howto/forward",
-      "destination": "/sv/request/learn/forward"
-    },
-    {
-      "source": "/sv/request/learn/howto/merge",
-      "destination": "/sv/request/learn/merge"
-    },
-    {
-      "source": "/sv/request/learn/howto/reply",
-      "destination": "/sv/request/learn/reply"
-    },
-    {
-      "source": "/sv/request/learn/howto/split-message",
-      "destination": "/sv/request/learn/split-message"
-    },
-    {
-      "source": "/sv/request/learn/howto/split-request",
-      "destination": "/sv/request/learn/split-request"
-    },
-    {
-      "source": "/sv/request/learn/howto/transfer",
-      "destination": "/sv/request/learn/transfer"
+      "source": "/sv/request/learn/howto/*",
+      "destination": "/sv/request/learn/*"
     },
     {
       "source": "/sv/request/learn/next-in-queue",
