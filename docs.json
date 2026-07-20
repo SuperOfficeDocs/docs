@@ -11662,7 +11662,7 @@
     },
     {
       "source": "/da/email/gmail-link/learn/*",
-      "destination": "/integrations/gmail-link/*"
+      "destination": "/integrations/gmail-link/index"
     },
     {
       "source": "/da/email/inbox/learn/inbox-options",
@@ -13514,7 +13514,7 @@
     },
     {
       "source": "/de/email/gmail-link/learn/*",
-      "destination": "/integrations/gmail-link/*"
+      "destination": "/integrations/gmail-link/index"
     },
     {
       "source": "/de/email/inbox/learn/inbox-options",
@@ -18350,7 +18350,7 @@
     },
     {
       "source": "/en/email/gmail-link/learn/*",
-      "destination": "/integrations/gmail-link/*"
+      "destination": "/integrations/gmail-link/index"
     },
     {
       "source": "/en/email/inbox/index",
@@ -21218,7 +21218,7 @@
     },
     {
       "source": "/nl/email/gmail-link/learn/*",
-      "destination": "/integrations/gmail-link/*"
+      "destination": "/integrations/gmail-link/index"
     },
     {
       "source": "/nl/email/inbox/learn/inbox-options",
@@ -23062,7 +23062,7 @@
     },
     {
       "source": "/no/email/gmail-link/learn/*",
-      "destination": "/integrations/gmail-link/*"
+      "destination": "/integrations/gmail-link/index"
     },
     {
       "source": "/no/email/inbox/learn/inbox-options",
@@ -24974,7 +24974,7 @@
     },
     {
       "source": "/sv/email/gmail-link/learn/*",
-      "destination": "/integrations/gmail-link/*"
+      "destination": "/integrations/gmail-link/index"
     },
     {
       "source": "/sv/email/inbox/learn/inbox-options",
