@@ -11978,7 +11978,7 @@
     },
     {
       "source": "/da/onsite/win-client/learn/update-database",
-      "destination": "/en/onsite/win-client/learn/index"
+      "destination": "https://help.superoffice.com/docs/10.3/da/onsite/win-client/learn/index.html"
     },
     {
       "source": "/da/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -13770,7 +13770,7 @@
     },
     {
       "source": "/de/onsite/win-client/learn/update-database",
-      "destination": "/en/onsite/win-client/learn/index"
+      "destination": "https://help.superoffice.com/docs/10.3/de/onsite/win-client/learn/index.html"
     },
     {
       "source": "/de/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -18910,7 +18910,7 @@
     },
     {
       "source": "/en/onsite/win-client/learn/update-database",
-      "destination": "/en/onsite/win-client/learn/index"
+      "destination": "https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/index.html"
     },
     {
       "source": "/en/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -21322,7 +21322,7 @@
     },
     {
       "source": "/nl/onsite/win-client/learn/update-database",
-      "destination": "/en/onsite/win-client/learn/index"
+      "destination": "https://help.superoffice.com/docs/10.3/nl/onsite/win-client/learn/index.html"
     },
     {
       "source": "/nl/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -23102,7 +23102,7 @@
     },
     {
       "source": "/no/onsite/win-client/learn/update-database",
-      "destination": "/en/onsite/win-client/learn/index"
+      "destination": "https://help.superoffice.com/docs/10.3/no/onsite/win-client/learn/index.html"
     },
     {
       "source": "/no/onsite/win-client/learn/using-document-templates-for-multiple-languages",
@@ -24958,7 +24958,7 @@
     },
     {
       "source": "/sv/onsite/win-client/learn/update-database",
-      "destination": "/en/onsite/win-client/learn/index"
+      "destination": "https://help.superoffice.com/docs/10.3/sv/onsite/win-client/learn/index.html"
     },
     {
       "source": "/sv/onsite/win-client/learn/using-document-templates-for-multiple-languages",
