@@ -11689,76 +11689,8 @@
       "destination": "/da/email/inbox/learn/compose"
     },
     {
-      "source": "/da/email/mail-link/learn/add-attachment",
-      "destination": "/integrations/mail-link/add-attachment"
-    },
-    {
-      "source": "/da/email/mail-link/learn/archive",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/da/email/mail-link/learn/archive-as-activity",
-      "destination": "/integrations/mail-link/archive-as-activity"
-    },
-    {
-      "source": "/da/email/mail-link/learn/archive-as-request",
-      "destination": "/integrations/mail-link/archive-as-request"
-    },
-    {
-      "source": "/da/email/mail-link/learn/archive-attachment",
-      "destination": "/integrations/mail-link/archive-attachment"
-    },
-    {
-      "source": "/da/email/mail-link/learn/archive-on-contact",
-      "destination": "/integrations/mail-link/archive-on-contact"
-    },
-    {
-      "source": "/da/email/mail-link/learn/create-in-outlook",
-      "destination": "/integrations/mail-link/create-in-outlook"
-    },
-    {
-      "source": "/da/email/mail-link/learn/create-in-superoffice",
-      "destination": "/integrations/mail-link/create-in-superoffice"
-    },
-    {
-      "source": "/da/email/mail-link/learn/index",
+      "source": "/da/email/mail-link/learn/*",
       "destination": "/integrations/mail-link/index"
-    },
-    {
-      "source": "/da/email/mail-link/learn/install",
-      "destination": "/integrations/mail-link/install"
-    },
-    {
-      "source": "/da/email/mail-link/learn/manage-senders",
-      "destination": "/integrations/mail-link/manage-senders"
-    },
-    {
-      "source": "/da/email/mail-link/learn/select-recipients",
-      "destination": "/integrations/mail-link/select-recipients"
-    },
-    {
-      "source": "/da/email/mail-link/learn/settings/archive-by-default",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/da/email/mail-link/learn/settings/default",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/da/email/mail-link/learn/settings/general",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/da/email/mail-link/learn/settings/index",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/da/email/mail-link/learn/settings/invitations",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/da/email/mail-link/learn/settings/superoffice-account",
-      "destination": "/integrations/mail-link/settings"
     },
     {
       "source": "/da/email/service/learn/create-sms-mailbox",
@@ -13645,76 +13577,8 @@
       "destination": "/de/email/inbox/learn/compose"
     },
     {
-      "source": "/de/email/mail-link/learn/add-attachment",
-      "destination": "/integrations/mail-link/add-attachment"
-    },
-    {
-      "source": "/de/email/mail-link/learn/archive",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/de/email/mail-link/learn/archive-as-activity",
-      "destination": "/integrations/mail-link/archive-as-activity"
-    },
-    {
-      "source": "/de/email/mail-link/learn/archive-as-request",
-      "destination": "/integrations/mail-link/archive-as-request"
-    },
-    {
-      "source": "/de/email/mail-link/learn/archive-attachment",
-      "destination": "/integrations/mail-link/archive-attachment"
-    },
-    {
-      "source": "/de/email/mail-link/learn/archive-on-contact",
-      "destination": "/integrations/mail-link/archive-on-contact"
-    },
-    {
-      "source": "/de/email/mail-link/learn/create-in-outlook",
-      "destination": "/integrations/mail-link/create-in-outlook"
-    },
-    {
-      "source": "/de/email/mail-link/learn/create-in-superoffice",
-      "destination": "/integrations/mail-link/create-in-superoffice"
-    },
-    {
-      "source": "/de/email/mail-link/learn/index",
+      "source": "/de/email/mail-link/learn/*",
       "destination": "/integrations/mail-link/index"
-    },
-    {
-      "source": "/de/email/mail-link/learn/install",
-      "destination": "/integrations/mail-link/install"
-    },
-    {
-      "source": "/de/email/mail-link/learn/manage-senders",
-      "destination": "/integrations/mail-link/manage-senders"
-    },
-    {
-      "source": "/de/email/mail-link/learn/select-recipients",
-      "destination": "/integrations/mail-link/select-recipients"
-    },
-    {
-      "source": "/de/email/mail-link/learn/settings/archive-by-default",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/de/email/mail-link/learn/settings/default",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/de/email/mail-link/learn/settings/general",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/de/email/mail-link/learn/settings/index",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/de/email/mail-link/learn/settings/invitations",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/de/email/mail-link/learn/settings/superoffice-account",
-      "destination": "/integrations/mail-link/settings"
     },
     {
       "source": "/de/email/service/learn/create-sms-mailbox",
@@ -18653,76 +18517,8 @@
       "destination": "/integrations/mail-link/index"
     },
     {
-      "source": "/en/email/mail-link/learn/add-attachment",
-      "destination": "/integrations/mail-link/add-attachment"
-    },
-    {
-      "source": "/en/email/mail-link/learn/archive",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/en/email/mail-link/learn/archive-as-activity",
-      "destination": "/integrations/mail-link/archive-as-activity"
-    },
-    {
-      "source": "/en/email/mail-link/learn/archive-as-request",
-      "destination": "/integrations/mail-link/archive-as-request"
-    },
-    {
-      "source": "/en/email/mail-link/learn/archive-attachment",
-      "destination": "/integrations/mail-link/archive-attachment"
-    },
-    {
-      "source": "/en/email/mail-link/learn/archive-on-contact",
-      "destination": "/integrations/mail-link/archive-on-contact"
-    },
-    {
-      "source": "/en/email/mail-link/learn/create-in-outlook",
-      "destination": "/integrations/mail-link/create-in-outlook"
-    },
-    {
-      "source": "/en/email/mail-link/learn/create-in-superoffice",
-      "destination": "/integrations/mail-link/create-in-superoffice"
-    },
-    {
-      "source": "/en/email/mail-link/learn/index",
+      "source": "/en/email/mail-link/learn/*",
       "destination": "/integrations/mail-link/index"
-    },
-    {
-      "source": "/en/email/mail-link/learn/install",
-      "destination": "/integrations/mail-link/install"
-    },
-    {
-      "source": "/en/email/mail-link/learn/manage-senders",
-      "destination": "/integrations/mail-link/manage-senders"
-    },
-    {
-      "source": "/en/email/mail-link/learn/select-recipients",
-      "destination": "/integrations/mail-link/select-recipients"
-    },
-    {
-      "source": "/en/email/mail-link/learn/settings/archive-by-default",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/en/email/mail-link/learn/settings/default",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/en/email/mail-link/learn/settings/general",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/en/email/mail-link/learn/settings/index",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/en/email/mail-link/learn/settings/invitations",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/en/email/mail-link/learn/settings/superoffice-account",
-      "destination": "/integrations/mail-link/settings"
     },
     {
       "source": "/en/email/mailgun/amount-speed",
@@ -21613,76 +21409,8 @@
       "destination": "/nl/email/inbox/learn/compose"
     },
     {
-      "source": "/nl/email/mail-link/learn/add-attachment",
-      "destination": "/integrations/mail-link/add-attachment"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/archive",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/archive-as-activity",
-      "destination": "/integrations/mail-link/archive-as-activity"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/archive-as-request",
-      "destination": "/integrations/mail-link/archive-as-request"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/archive-attachment",
-      "destination": "/integrations/mail-link/archive-attachment"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/archive-on-contact",
-      "destination": "/integrations/mail-link/archive-on-contact"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/create-in-outlook",
-      "destination": "/integrations/mail-link/create-in-outlook"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/create-in-superoffice",
-      "destination": "/integrations/mail-link/create-in-superoffice"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/index",
+      "source": "/nl/email/mail-link/learn/*",
       "destination": "/integrations/mail-link/index"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/install",
-      "destination": "/integrations/mail-link/install"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/manage-senders",
-      "destination": "/integrations/mail-link/manage-senders"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/select-recipients",
-      "destination": "/integrations/mail-link/select-recipients"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/settings/archive-by-default",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/settings/default",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/settings/general",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/settings/index",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/settings/invitations",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/nl/email/mail-link/learn/settings/superoffice-account",
-      "destination": "/integrations/mail-link/settings"
     },
     {
       "source": "/nl/email/service/learn/create-sms-mailbox",
@@ -23561,76 +23289,8 @@
       "destination": "/no/email/inbox/learn/compose"
     },
     {
-      "source": "/no/email/mail-link/learn/add-attachment",
-      "destination": "/integrations/mail-link/add-attachment"
-    },
-    {
-      "source": "/no/email/mail-link/learn/archive",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/no/email/mail-link/learn/archive-as-activity",
-      "destination": "/integrations/mail-link/archive-as-activity"
-    },
-    {
-      "source": "/no/email/mail-link/learn/archive-as-request",
-      "destination": "/integrations/mail-link/archive-as-request"
-    },
-    {
-      "source": "/no/email/mail-link/learn/archive-attachment",
-      "destination": "/integrations/mail-link/archive-attachment"
-    },
-    {
-      "source": "/no/email/mail-link/learn/archive-on-contact",
-      "destination": "/integrations/mail-link/archive-on-contact"
-    },
-    {
-      "source": "/no/email/mail-link/learn/create-in-outlook",
-      "destination": "/integrations/mail-link/create-in-outlook"
-    },
-    {
-      "source": "/no/email/mail-link/learn/create-in-superoffice",
-      "destination": "/integrations/mail-link/create-in-superoffice"
-    },
-    {
-      "source": "/no/email/mail-link/learn/index",
+      "source": "/no/email/mail-link/learn/*",
       "destination": "/integrations/mail-link/index"
-    },
-    {
-      "source": "/no/email/mail-link/learn/install",
-      "destination": "/integrations/mail-link/install"
-    },
-    {
-      "source": "/no/email/mail-link/learn/manage-senders",
-      "destination": "/integrations/mail-link/manage-senders"
-    },
-    {
-      "source": "/no/email/mail-link/learn/select-recipients",
-      "destination": "/integrations/mail-link/select-recipients"
-    },
-    {
-      "source": "/no/email/mail-link/learn/settings/archive-by-default",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/no/email/mail-link/learn/settings/default",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/no/email/mail-link/learn/settings/general",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/no/email/mail-link/learn/settings/index",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/no/email/mail-link/learn/settings/invitations",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/no/email/mail-link/learn/settings/superoffice-account",
-      "destination": "/integrations/mail-link/settings"
     },
     {
       "source": "/no/email/service/learn/create-sms-mailbox",
@@ -25577,76 +25237,8 @@
       "destination": "/sv/email/inbox/learn/compose"
     },
     {
-      "source": "/sv/email/mail-link/learn/add-attachment",
-      "destination": "/integrations/mail-link/add-attachment"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/archive",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/archive-as-activity",
-      "destination": "/integrations/mail-link/archive-as-activity"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/archive-as-request",
-      "destination": "/integrations/mail-link/archive-as-request"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/archive-attachment",
-      "destination": "/integrations/mail-link/archive-attachment"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/archive-on-contact",
-      "destination": "/integrations/mail-link/archive-on-contact"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/create-in-outlook",
-      "destination": "/integrations/mail-link/create-in-outlook"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/create-in-superoffice",
-      "destination": "/integrations/mail-link/create-in-superoffice"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/index",
+      "source": "/sv/email/mail-link/learn/*",
       "destination": "/integrations/mail-link/index"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/install",
-      "destination": "/integrations/mail-link/install"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/manage-senders",
-      "destination": "/integrations/mail-link/manage-senders"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/select-recipients",
-      "destination": "/integrations/mail-link/select-recipients"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/settings/archive-by-default",
-      "destination": "/integrations/mail-link/archive"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/settings/default",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/settings/general",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/settings/index",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/settings/invitations",
-      "destination": "/integrations/mail-link/settings"
-    },
-    {
-      "source": "/sv/email/mail-link/learn/settings/superoffice-account",
-      "destination": "/integrations/mail-link/settings"
     },
     {
       "source": "/sv/email/service/learn/create-sms-mailbox",
