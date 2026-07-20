@@ -15513,40 +15513,12 @@
       "destination": "/integrations/mail-link/index"
     },
     {
-      "source": "/en/email/mailgun/amount-speed",
-      "destination": "/en/online/mail-services/mailgun/amount-speed"
+      "source": "/en/email/mailgun/*",
+      "destination": "/en/online/mail-services/mailgun/*"
     },
     {
-      "source": "/en/email/mailgun/dkim/*",
-      "destination": "/en/online/mail-services/mailgun/dkim/*"
-    },
-    {
-      "source": "/en/email/mailgun/index",
+      "source": "/en/online/mail-services/mailgun/overview",
       "destination": "/en/online/mail-services/mailgun/index"
-    },
-    {
-      "source": "/en/email/mailgun/overview",
-      "destination": "/en/online/mail-services/mailgun/index"
-    },
-    {
-      "source": "/en/email/mailgun/reasons-to-customize",
-      "destination": "/en/online/mail-services/mailgun/reasons-to-customize"
-    },
-    {
-      "source": "/en/email/mailgun/security",
-      "destination": "/en/online/mail-services/mailgun/security"
-    },
-    {
-      "source": "/en/email/mailgun/spf/index",
-      "destination": "/en/online/mail-services/mailgun/spf/index"
-    },
-    {
-      "source": "/en/email/mailgun/spf/set-up",
-      "destination": "/en/online/mail-services/mailgun/spf/set-up"
-    },
-    {
-      "source": "/en/email/mailgun/sub-processor-info",
-      "destination": "/en/online/mail-services/mailgun/sub-processor-info"
     },
     {
       "source": "/en/email/service/index",
