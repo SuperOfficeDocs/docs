@@ -11393,16 +11393,8 @@
       "destination": "/da/customization/macros-and-scripts/admin/trigger"
     },
     {
-      "source": "/da/chat/learn/admin/add-javascript",
-      "destination": "/da/chat/admin/add-javascript"
-    },
-    {
-      "source": "/da/chat/learn/admin/channel-create",
-      "destination": "/da/chat/admin/channel-create"
-    },
-    {
-      "source": "/da/chat/learn/admin/index",
-      "destination": "/da/chat/admin/index"
+      "source": "/da/chat/learn/admin/*",
+      "destination": "/da/chat/admin/*"
     },
     {
       "source": "/da/chat/learn/create-contact",
@@ -13065,16 +13057,8 @@
       "destination": "/de/customization/macros-and-scripts/admin/trigger"
     },
     {
-      "source": "/de/chat/learn/admin/add-javascript",
-      "destination": "/de/chat/admin/add-javascript"
-    },
-    {
-      "source": "/de/chat/learn/admin/channel-create",
-      "destination": "/de/chat/admin/channel-create"
-    },
-    {
-      "source": "/de/chat/learn/admin/index",
-      "destination": "/de/chat/admin/index"
+      "source": "/de/chat/learn/admin/*",
+      "destination": "/de/chat/admin/*"
     },
     {
       "source": "/de/chat/learn/create-contact",
@@ -16833,16 +16817,8 @@
       "destination": "/integrations/zapier/index"
     },
     {
-      "source": "/en/chat/learn/admin/add-javascript",
-      "destination": "/en/chat/admin/add-javascript"
-    },
-    {
-      "source": "/en/chat/learn/admin/channel-create",
-      "destination": "/en/chat/admin/channel-create"
-    },
-    {
-      "source": "/en/chat/learn/admin/index",
-      "destination": "/en/chat/admin/index"
+      "source": "/en/chat/learn/admin/*",
+      "destination": "/en/chat/admin/*"
     },
     {
       "source": "/en/chat/learn/create-contact",
@@ -19781,16 +19757,12 @@
       "destination": "/nl/customization/macros-and-scripts/admin/trigger"
     },
     {
-      "source": "/nl/chat/learn/admin/",
+      "source": "/nl/chat/learn/admin/*",
+      "destination": "/nl/chat/admin/*"
+    },
+    {
+      "source": "/nl/chat/admin/",
       "destination": "/nl/chat/admin/index"
-    },
-    {
-      "source": "/nl/chat/learn/admin/add-javascript",
-      "destination": "/nl/chat/admin/add-javascript"
-    },
-    {
-      "source": "/nl/chat/learn/admin/channel-create",
-      "destination": "/nl/chat/admin/channel-create"
     },
     {
       "source": "/nl/chat/learn/create-contact",
@@ -21445,16 +21417,8 @@
       "destination": "/no/customization/macros-and-scripts/admin/trigger"
     },
     {
-      "source": "/no/chat/learn/admin/add-javascript",
-      "destination": "/no/chat/admin/add-javascript"
-    },
-    {
-      "source": "/no/chat/learn/admin/channel-create",
-      "destination": "/no/chat/admin/channel-create"
-    },
-    {
-      "source": "/no/chat/learn/admin/index",
-      "destination": "/no/chat/admin/index"
+      "source": "/no/chat/learn/admin/*",
+      "destination": "/no/chat/admin/*"
     },
     {
       "source": "/no/chat/learn/create-contact",
@@ -23181,16 +23145,8 @@
       "destination": "/sv/customization/macros-and-scripts/admin/trigger"
     },
     {
-      "source": "/sv/chat/learn/admin/add-javascript",
-      "destination": "/sv/chat/admin/add-javascript"
-    },
-    {
-      "source": "/sv/chat/learn/admin/channel-create",
-      "destination": "/sv/chat/admin/channel-create"
-    },
-    {
-      "source": "/sv/chat/learn/admin/index",
-      "destination": "/sv/chat/admin/index"
+      "source": "/sv/chat/learn/admin/*",
+      "destination": "/sv/chat/admin/*"
     },
     {
       "source": "/sv/chat/learn/create-quick-reply",
