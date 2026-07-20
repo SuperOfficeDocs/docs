@@ -14617,26 +14617,6 @@
       "destination": "/en/api/*"
     },
     {
-      "source": "/en/api/search/selection/archive",
-      "destination": "/en/api/search/selection/archive/get-selection-members-provider"
-    },
-    {
-      "source": "/en/api/search/selection/entity",
-      "destination": "/en/api/search/selection/entity/add-member-to-static-selection-entities"
-    },
-    {
-      "source": "/en/api/search/selection/osql",
-      "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
-    },
-    {
-      "source": "/en/api/search/selection/services",
-      "destination": "/en/api/search/selection/services/create-dynamic-services"
-    },
-    {
-      "source": "/en/api/search/selection/sql",
-      "destination": "/en/api/search/selection/sql/add-person-to-selection"
-    },
-    {
       "source": "/en/api/osql/howto/index",
       "destination": "/en/api/osql/howto/company/index"
     },
@@ -14661,20 +14641,40 @@
       "destination": "/en/api/search/find-selection/date-range-as-criteria"
     },
     {
+      "source": "/en/api/search/selection/archive",
+      "destination": "/en/api/search/selection/archive/get-selection-members-provider"
+    },
+    {
       "source": "/en/api/search/selection/archive/index",
       "destination": "/en/api/search/selection/archive/get-selection-members-provider"
+    },
+    {
+      "source": "/en/api/search/selection/entity",
+      "destination": "/en/api/search/selection/entity/add-member-to-static-selection-entities"
     },
     {
       "source": "/en/api/search/selection/entity/index",
       "destination": "/en/api/search/selection/entity/add-member-to-static-selection-entities"
     },
     {
+      "source": "/en/api/search/selection/osql",
+      "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
+    },
+    {
       "source": "/en/api/search/selection/osql/index",
       "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
     },
     {
+      "source": "/en/api/search/selection/services",
+      "destination": "/en/api/search/selection/services/create-dynamic-services"
+    },
+    {
       "source": "/en/api/search/selection/services/index",
       "destination": "/en/api/search/selection/services/create-dynamic-services"
+    },
+    {
+      "source": "/en/api/search/selection/sql",
+      "destination": "/en/api/search/selection/sql/add-person-to-selection"
     },
     {
       "source": "/en/api/search/selection/sql/index",
@@ -14703,6 +14703,10 @@
     {
       "source": "/en/api/web-services/howto/dashboard",
       "destination": "/en/api/web-services/howto/dashboard/get-dashboard-rest"
+    },
+    {
+      "source": "/en/api/web-services/howto/document/services-index",
+      "destination": "/en/api/web-services/howto/document/index"
     },
     {
       "source": "/en/authentication/index",
@@ -15365,10 +15369,6 @@
       "destination": "/en/api/web-services/howto/document/services-*"
     },
     {
-      "source": "/en/api/web-services/howto/document/services-index",
-      "destination": "/en/api/web-services/howto/document/index"
-    },
-    {
       "source": "/en/document/learn/delete",
       "destination": "/en/document/learn/edit"
     },
@@ -15515,10 +15515,6 @@
     {
       "source": "/en/email/mailgun/*",
       "destination": "/en/online/mail-services/mailgun/*"
-    },
-    {
-      "source": "/en/online/mail-services/mailgun/overview",
-      "destination": "/en/online/mail-services/mailgun/index"
     },
     {
       "source": "/en/email/service/index",
@@ -15829,18 +15825,6 @@
       "destination": "/en/marketing/utm/learn/index"
     },
     {
-      "source": "/en/mobile/overview",
-      "destination": "/en/mobile/index"
-    },
-    {
-      "source": "/en/mobile/pocket-crm/*",
-      "destination": "/en/onsite/pocket-crm/*"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/*",
-      "destination": "/en/mobile/*"
-    },
-    {
       "source": "/en/mobile/company-contact/",
       "destination": "/en/mobile/contact/index"
     },
@@ -15869,8 +15853,24 @@
       "destination": "/en/mobile/dashboard/index"
     },
     {
+      "source": "/en/mobile/overview",
+      "destination": "/en/mobile/index"
+    },
+    {
+      "source": "/en/mobile/pocket-crm/*",
+      "destination": "/en/onsite/pocket-crm/*"
+    },
+    {
+      "source": "/en/mobile/superoffice-mobile/*",
+      "destination": "/en/mobile/*"
+    },
+    {
       "source": "/en/online/identity/role/index",
       "destination": "/en/admin/user-management/role/index"
+    },
+    {
+      "source": "/en/online/mail-services/mailgun/overview",
+      "destination": "/en/online/mail-services/mailgun/index"
     },
     {
       "source": "/en/online/version-history",
