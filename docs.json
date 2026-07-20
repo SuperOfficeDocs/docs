@@ -18157,28 +18157,8 @@
       "destination": "/en/mobile/company/index"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/contact/copy-to-contact-list",
-      "destination": "/en/mobile/contact/copy-to-contact-list"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/contact/create",
-      "destination": "/en/mobile/contact/create"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/contact/index",
-      "destination": "/en/mobile/contact/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/contact/scan-business-card",
-      "destination": "/en/mobile/contact/scan-business-card"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/contact/show-address-in-map",
-      "destination": "/en/mobile/contact/show-address-in-map"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/contact/update",
-      "destination": "/en/mobile/contact/update"
+      "source": "/en/mobile/superoffice-mobile/contact/*",
+      "destination": "/en/mobile/contact/*"
     },
     {
       "source": "/en/mobile/superoffice-mobile/customization",
@@ -18193,24 +18173,8 @@
       "destination": "/en/mobile/dashboard/index"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/diary/create-appointment",
-      "destination": "/en/mobile/diary/create-appointment"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/diary/index",
-      "destination": "/en/mobile/diary/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/diary/invitations",
-      "destination": "/en/mobile/diary/invitations"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/diary/join-video-meeting",
-      "destination": "/en/mobile/diary/join-video-meeting"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/diary/update-appointment",
-      "destination": "/en/mobile/diary/update-appointment"
+      "source": "/en/mobile/superoffice-mobile/diary/*",
+      "destination": "/en/mobile/diary/*"
     },
     {
       "source": "/en/mobile/superoffice-mobile/document/create",
@@ -18241,48 +18205,16 @@
       "destination": "/en/mobile/manage-notifications"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/project/create",
-      "destination": "/en/mobile/project/create"
+      "source": "/en/mobile/superoffice-mobile/project/*",
+      "destination": "/en/mobile/project/*"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/project/index",
-      "destination": "/en/mobile/project/index"
+      "source": "/en/mobile/superoffice-mobile/request/*",
+      "destination": "/en/mobile/request/*"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/project/update",
-      "destination": "/en/mobile/project/update"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/request/create",
-      "destination": "/en/mobile/request/create"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/request/index",
-      "destination": "/en/mobile/request/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/request/respond",
-      "destination": "/en/mobile/request/respond"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/request/update",
-      "destination": "/en/mobile/request/update"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/sale/approve-quote",
-      "destination": "/en/mobile/sale/approve-quote"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/sale/create",
-      "destination": "/en/mobile/sale/create"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/sale/index",
-      "destination": "/en/mobile/sale/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/sale/update",
-      "destination": "/en/mobile/sale/update"
+      "source": "/en/mobile/superoffice-mobile/sale/*",
+      "destination": "/en/mobile/sale/*"
     },
     {
       "source": "/en/mobile/superoffice-mobile/security",
