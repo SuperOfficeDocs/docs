@@ -12261,20 +12261,8 @@
       "destination": "/da/request/admin/next-in-queue"
     },
     {
-      "source": "/da/request/learn/priority/create",
-      "destination": "/da/request/admin/priority/create"
-    },
-    {
-      "source": "/da/request/learn/priority/delete",
-      "destination": "/da/request/admin/priority/delete"
-    },
-    {
-      "source": "/da/request/learn/priority/escalation-levels",
-      "destination": "/da/request/admin/priority/escalation-levels"
-    },
-    {
-      "source": "/da/request/learn/priority/index",
-      "destination": "/da/request/admin/priority/index"
+      "source": "/da/request/learn/priority/*",
+      "destination": "/da/request/admin/priority/*"
     },
     {
       "source": "/da/request/learn/screen/index",
@@ -14049,20 +14037,8 @@
       "destination": "/de/request/admin/next-in-queue"
     },
     {
-      "source": "/de/request/learn/priority/create",
-      "destination": "/de/request/admin/priority/create"
-    },
-    {
-      "source": "/de/request/learn/priority/delete",
-      "destination": "/de/request/admin/priority/delete"
-    },
-    {
-      "source": "/de/request/learn/priority/escalation-levels",
-      "destination": "/de/request/admin/priority/escalation-levels"
-    },
-    {
-      "source": "/de/request/learn/priority/index",
-      "destination": "/de/request/admin/priority/index"
+      "source": "/de/request/learn/priority/*",
+      "destination": "/de/request/admin/priority/*"
     },
     {
       "source": "/de/request/learn/screen/index",
@@ -19357,20 +19333,8 @@
       "destination": "/en/request/admin/next-in-queue"
     },
     {
-      "source": "/en/request/learn/priority/create",
-      "destination": "/en/request/admin/priority/create"
-    },
-    {
-      "source": "/en/request/learn/priority/delete",
-      "destination": "/en/request/admin/priority/delete"
-    },
-    {
-      "source": "/en/request/learn/priority/escalation-levels",
-      "destination": "/en/request/admin/priority/escalation-levels"
-    },
-    {
-      "source": "/en/request/learn/priority/index",
-      "destination": "/en/request/admin/priority/index"
+      "source": "/en/request/learn/priority/*",
+      "destination": "/en/request/admin/priority/*"
     },
     {
       "source": "/en/request/learn/screen/index",
@@ -21605,20 +21569,8 @@
       "destination": "/nl/request/admin/next-in-queue"
     },
     {
-      "source": "/nl/request/learn/priority/create",
-      "destination": "/nl/request/admin/priority/create"
-    },
-    {
-      "source": "/nl/request/learn/priority/delete",
-      "destination": "/nl/request/admin/priority/delete"
-    },
-    {
-      "source": "/nl/request/learn/priority/escalation-levels",
-      "destination": "/nl/request/admin/priority/escalation-levels"
-    },
-    {
-      "source": "/nl/request/learn/priority/index",
-      "destination": "/nl/request/admin/priority/index"
+      "source": "/nl/request/learn/priority/*",
+      "destination": "/nl/request/admin/priority/*"
     },
     {
       "source": "/nl/request/learn/screen/index",
@@ -23385,20 +23337,8 @@
       "destination": "/no/request/admin/next-in-queue"
     },
     {
-      "source": "/no/request/learn/priority/create",
-      "destination": "/no/request/admin/priority/create"
-    },
-    {
-      "source": "/no/request/learn/priority/delete",
-      "destination": "/no/request/admin/priority/delete"
-    },
-    {
-      "source": "/no/request/learn/priority/escalation-levels",
-      "destination": "/no/request/admin/priority/escalation-levels"
-    },
-    {
-      "source": "/no/request/learn/priority/index",
-      "destination": "/no/request/admin/priority/index"
+      "source": "/no/request/learn/priority/*",
+      "destination": "/no/request/admin/priority/*"
     },
     {
       "source": "/no/request/learn/screen/index",
@@ -25241,20 +25181,8 @@
       "destination": "/sv/request/admin/next-in-queue"
     },
     {
-      "source": "/sv/request/learn/priority/create",
-      "destination": "/sv/request/admin/priority/create"
-    },
-    {
-      "source": "/sv/request/learn/priority/delete",
-      "destination": "/sv/request/admin/priority/delete"
-    },
-    {
-      "source": "/sv/request/learn/priority/escalation-levels",
-      "destination": "/sv/request/admin/priority/escalation-levels"
-    },
-    {
-      "source": "/sv/request/learn/priority/index",
-      "destination": "/sv/request/admin/priority/index"
+      "source": "/sv/request/learn/priority/*",
+      "destination": "/sv/request/admin/priority/*"
     },
     {
       "source": "/sv/request/learn/screen/index",
