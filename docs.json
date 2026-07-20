@@ -11717,23 +11717,7 @@
       "destination": "/da/knowledge-base/learn/manage-folders"
     },
     {
-      "source": "/da/email/service/learn/screen/sms-inbox",
-      "destination": "/da/email/admin/mailbox/index"
-    },
-    {
-      "source": "/da/email/service/learn/screen/sms-outbox",
-      "destination": "/da/email/admin/mailbox/index"
-    },
-    {
-      "source": "/da/email/service/learn/screen/tab-blocked-email",
-      "destination": "/da/email/admin/mailbox/index"
-    },
-    {
-      "source": "/da/email/service/learn/screen/tab-inbox-for-email",
-      "destination": "/da/email/admin/mailbox/index"
-    },
-    {
-      "source": "/da/email/service/learn/screen/tab-outbox-for-email",
+      "source": "/da/email/service/learn/screen/*",
       "destination": "/da/email/admin/mailbox/index"
     },
     {
@@ -13381,23 +13365,7 @@
       "destination": "/de/knowledge-base/learn/manage-folders"
     },
     {
-      "source": "/de/email/service/learn/screen/sms-inbox",
-      "destination": "/de/email/admin/mailbox/index"
-    },
-    {
-      "source": "/de/email/service/learn/screen/sms-outbox",
-      "destination": "/de/email/admin/mailbox/index"
-    },
-    {
-      "source": "/de/email/service/learn/screen/tab-blocked-email",
-      "destination": "/de/email/admin/mailbox/index"
-    },
-    {
-      "source": "/de/email/service/learn/screen/tab-inbox-for-email",
-      "destination": "/de/email/admin/mailbox/index"
-    },
-    {
-      "source": "/de/email/service/learn/screen/tab-outbox-for-email",
+      "source": "/de/email/service/learn/screen/*",
       "destination": "/de/email/admin/mailbox/index"
     },
     {
@@ -17733,23 +17701,7 @@
       "destination": "/en/knowledge-base/learn/manage-folders"
     },
     {
-      "source": "/en/email/service/learn/screen/sms-inbox",
-      "destination": "/en/email/admin/mailbox/index"
-    },
-    {
-      "source": "/en/email/service/learn/screen/sms-outbox",
-      "destination": "/en/email/admin/mailbox/index"
-    },
-    {
-      "source": "/en/email/service/learn/screen/tab-blocked-email",
-      "destination": "/en/email/admin/mailbox/index"
-    },
-    {
-      "source": "/en/email/service/learn/screen/tab-inbox-for-email",
-      "destination": "/en/email/admin/mailbox/index"
-    },
-    {
-      "source": "/en/email/service/learn/screen/tab-outbox-for-email",
+      "source": "/en/email/service/learn/screen/*",
       "destination": "/en/email/admin/mailbox/index"
     },
     {
@@ -20085,23 +20037,7 @@
       "destination": "/nl/knowledge-base/learn/manage-folders"
     },
     {
-      "source": "/nl/email/service/learn/screen/sms-inbox",
-      "destination": "/nl/email/admin/mailbox/index"
-    },
-    {
-      "source": "/nl/email/service/learn/screen/sms-outbox",
-      "destination": "/nl/email/admin/mailbox/index"
-    },
-    {
-      "source": "/nl/email/service/learn/screen/tab-blocked-email",
-      "destination": "/nl/email/admin/mailbox/index"
-    },
-    {
-      "source": "/nl/email/service/learn/screen/tab-inbox-for-email",
-      "destination": "/nl/email/admin/mailbox/index"
-    },
-    {
-      "source": "/nl/email/service/learn/screen/tab-outbox-for-email",
+      "source": "/nl/email/service/learn/screen/*",
       "destination": "/nl/email/admin/mailbox/index"
     },
     {
@@ -21741,23 +21677,7 @@
       "destination": "/no/knowledge-base/learn/manage-folders"
     },
     {
-      "source": "/no/email/service/learn/screen/sms-inbox",
-      "destination": "/no/email/admin/mailbox/index"
-    },
-    {
-      "source": "/no/email/service/learn/screen/sms-outbox",
-      "destination": "/no/email/admin/mailbox/index"
-    },
-    {
-      "source": "/no/email/service/learn/screen/tab-blocked-email",
-      "destination": "/no/email/admin/mailbox/index"
-    },
-    {
-      "source": "/no/email/service/learn/screen/tab-inbox-for-email",
-      "destination": "/no/email/admin/mailbox/index"
-    },
-    {
-      "source": "/no/email/service/learn/screen/tab-outbox-for-email",
+      "source": "/no/email/service/learn/screen/*",
       "destination": "/no/email/admin/mailbox/index"
     },
     {
@@ -23465,23 +23385,7 @@
       "destination": "/sv/knowledge-base/learn/manage-folders"
     },
     {
-      "source": "/sv/email/service/learn/screen/sms-inbox",
-      "destination": "/sv/email/admin/mailbox/index"
-    },
-    {
-      "source": "/sv/email/service/learn/screen/sms-outbox",
-      "destination": "/sv/email/admin/mailbox/index"
-    },
-    {
-      "source": "/sv/email/service/learn/screen/tab-blocked-email",
-      "destination": "/sv/email/admin/mailbox/index"
-    },
-    {
-      "source": "/sv/email/service/learn/screen/tab-inbox-for-email",
-      "destination": "/sv/email/admin/mailbox/index"
-    },
-    {
-      "source": "/sv/email/service/learn/screen/tab-outbox-for-email",
+      "source": "/sv/email/service/learn/screen/*",
       "destination": "/sv/email/admin/mailbox/index"
     },
     {
