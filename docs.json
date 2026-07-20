@@ -15837,120 +15837,36 @@
       "destination": "/en/onsite/pocket-crm/*"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/caller-id",
-      "destination": "/en/mobile/caller-id"
+      "source": "/en/mobile/superoffice-mobile/*",
+      "destination": "/en/mobile/*"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/client-requirements",
-      "destination": "/en/mobile/client-requirements"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/company-contact/",
+      "source": "/en/mobile/company-contact/",
       "destination": "/en/mobile/contact/index"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/company-contact/copy-contact-to-address-book",
+      "source": "/en/mobile/company-contact/copy-contact-to-address-book",
       "destination": "/en/mobile/contact/copy-to-contact-list"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/company-contact/create",
+      "source": "/en/mobile/company-contact/create",
       "destination": "/en/mobile/contact/create"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/company-contact/scan-business-card",
+      "source": "/en/mobile/company-contact/scan-business-card",
       "destination": "/en/mobile/contact/scan-business-card"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/company-contact/show-address-in-map",
+      "source": "/en/mobile/company-contact/show-address-in-map",
       "destination": "/en/mobile/contact/show-address-in-map"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/company-contact/update",
+      "source": "/en/mobile/company-contact/update",
       "destination": "/en/mobile/contact/update"
     },
     {
-      "source": "/en/mobile/superoffice-mobile/company/create",
-      "destination": "/en/mobile/company/create"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/company/index",
-      "destination": "/en/mobile/company/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/contact/*",
-      "destination": "/en/mobile/contact/*"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/customization",
-      "destination": "/en/mobile/customization"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/dashboard/drill-down",
+      "source": "/en/mobile/dashboard/drill-down",
       "destination": "/en/mobile/dashboard/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/dashboard/index",
-      "destination": "/en/mobile/dashboard/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/diary/*",
-      "destination": "/en/mobile/diary/*"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/document/create",
-      "destination": "/en/mobile/document/create"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/document/index",
-      "destination": "/en/mobile/document/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/document/update",
-      "destination": "/en/mobile/document/update"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/index",
-      "destination": "/en/mobile/index"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/interface-guide",
-      "destination": "/en/mobile/interface-guide"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/login",
-      "destination": "/en/mobile/login"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/manage-notifications",
-      "destination": "/en/mobile/manage-notifications"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/project/*",
-      "destination": "/en/mobile/project/*"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/request/*",
-      "destination": "/en/mobile/request/*"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/sale/*",
-      "destination": "/en/mobile/sale/*"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/security",
-      "destination": "/en/mobile/security"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/send-email-sms",
-      "destination": "/en/mobile/send-email-sms"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/set-up-email",
-      "destination": "/en/mobile/set-up-email"
-    },
-    {
-      "source": "/en/mobile/superoffice-mobile/settings",
-      "destination": "/en/mobile/settings"
     },
     {
       "source": "/en/online/identity/role/index",
