@@ -16521,36 +16521,8 @@
       "destination": "/en/developer-portal/best-practices/index"
     },
     {
-      "source": "/en/ui/screen-designer/configurable-screens/add-button",
-      "destination": "/en/customization/screen-designer/admin/add-button"
-    },
-    {
-      "source": "/en/ui/screen-designer/configurable-screens/add-layout",
-      "destination": "/en/customization/screen-designer/admin/add-layout"
-    },
-    {
-      "source": "/en/ui/screen-designer/configurable-screens/assign-layout",
-      "destination": "/en/customization/screen-designer/admin/assign-layout"
-    },
-    {
-      "source": "/en/ui/screen-designer/configurable-screens/edit-card-layout",
-      "destination": "/en/customization/screen-designer/admin/edit-layout"
-    },
-    {
-      "source": "/en/ui/screen-designer/configurable-screens/index",
+      "source": "/en/ui/screen-designer/configurable-screens/*",
       "destination": "/en/customization/screen-designer/admin/index"
-    },
-    {
-      "source": "/en/ui/screen-designer/configurable-screens/working-with-fields",
-      "destination": "/en/customization/screen-designer/admin/working-with-fields"
-    },
-    {
-      "source": "/en/ui/screen-designer/configurable-screens/working-with-grids",
-      "destination": "/en/customization/screen-designer/admin/working-with-grids"
-    },
-    {
-      "source": "/en/ui/screen-designer/configurable-screens/working-with-tabs",
-      "destination": "/en/customization/screen-designer/admin/working-with-tabs"
     },
     {
       "source": "/en/ui/screen-designer/element-reference",
