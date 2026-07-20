@@ -17413,20 +17413,8 @@
       "destination": "/en/diary/dev/index"
     },
     {
-      "source": "/en/diary/tutorials/index",
-      "destination": "/en/api/tutorials/index"
-    },
-    {
-      "source": "/en/diary/tutorials/itunes-like-activities/index",
-      "destination": "/en/api/tutorials/itunes-like-activities/index"
-    },
-    {
-      "source": "/en/diary/tutorials/rss-feed-vb/index",
-      "destination": "/en/api/tutorials/rss-feed-vb/index"
-    },
-    {
-      "source": "/en/diary/tutorials/so-ical-feed/index",
-      "destination": "/en/api/tutorials/so-ical-feed/index"
+      "source": "/en/diary/tutorials/*",
+      "destination": "/en/api/tutorials/*"
     },
     {
       "source": "/en/diary/video-meetings/*",
@@ -17697,24 +17685,8 @@
       "destination": "/en/online/mail-services/mailgun/amount-speed"
     },
     {
-      "source": "/en/email/mailgun/dkim/change-us-to-eu",
-      "destination": "/en/online/mail-services/mailgun/dkim/change-us-to-eu"
-    },
-    {
-      "source": "/en/email/mailgun/dkim/index",
-      "destination": "/en/online/mail-services/mailgun/dkim/index"
-    },
-    {
-      "source": "/en/email/mailgun/dkim/multiple-dkim-records",
-      "destination": "/en/online/mail-services/mailgun/dkim/multiple-dkim-records"
-    },
-    {
-      "source": "/en/email/mailgun/dkim/order-key",
-      "destination": "/en/online/mail-services/mailgun/dkim/order-key"
-    },
-    {
-      "source": "/en/email/mailgun/dkim/set-up",
-      "destination": "/en/online/mail-services/mailgun/dkim/set-up"
+      "source": "/en/email/mailgun/dkim/*",
+      "destination": "/en/online/mail-services/mailgun/dkim/*"
     },
     {
       "source": "/en/email/mailgun/index",
@@ -18873,36 +18845,12 @@
       "destination": "/en/security/privacy/admin/index"
     },
     {
-      "source": "/en/service/automated-tasks/",
+      "source": "/en/service/automated-tasks/*",
+      "destination": "/en/onsite/automated-tasks/*"
+    },
+    {
+      "source": "/en/onsite/automated-tasks/",
       "destination": "/en/onsite/automated-tasks/index"
-    },
-    {
-      "source": "/en/service/automated-tasks/dbi",
-      "destination": "/en/onsite/automated-tasks/dbi"
-    },
-    {
-      "source": "/en/service/automated-tasks/ejournalcron",
-      "destination": "/en/onsite/automated-tasks/ejournalcron"
-    },
-    {
-      "source": "/en/service/automated-tasks/ejoutbox",
-      "destination": "/en/onsite/automated-tasks/ejoutbox"
-    },
-    {
-      "source": "/en/service/automated-tasks/ejsender",
-      "destination": "/en/onsite/automated-tasks/ejsender"
-    },
-    {
-      "source": "/en/service/automated-tasks/ejtermsetup",
-      "destination": "/en/onsite/automated-tasks/ejtermsetup"
-    },
-    {
-      "source": "/en/service/automated-tasks/importmail",
-      "destination": "/en/onsite/automated-tasks/importmail"
-    },
-    {
-      "source": "/en/service/automated-tasks/upgrade",
-      "destination": "/en/onsite/automated-tasks/upgrade"
     },
     {
       "source": "/en/service/config/",
