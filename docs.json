@@ -11621,7 +11621,7 @@
       "destination": "/da/learn/section-tabs/sales-tab"
     },
     {
-      "source": "/da/document/cloud/g-suite/learn/index",
+      "source": "/da/document/cloud/g-suite/learn/*",
       "destination": "/integrations/g-suite/index"
     },
     {
@@ -13509,7 +13509,7 @@
       "destination": "/de/learn/section-tabs/sales-tab"
     },
     {
-      "source": "/de/document/cloud/g-suite/learn/index",
+      "source": "/de/document/cloud/g-suite/learn/*",
       "destination": "/integrations/g-suite/index"
     },
     {
@@ -18213,7 +18213,7 @@
       "destination": "/integrations/g-suite/index"
     },
     {
-      "source": "/en/document/cloud/g-suite/learn/index",
+      "source": "/en/document/cloud/g-suite/learn/*",
       "destination": "/integrations/g-suite/index"
     },
     {
@@ -21341,7 +21341,7 @@
       "destination": "/nl/learn/section-tabs/sales-tab"
     },
     {
-      "source": "/nl/document/cloud/g-suite/learn/index",
+      "source": "/nl/document/cloud/g-suite/learn/*",
       "destination": "/integrations/g-suite/index"
     },
     {
@@ -23221,7 +23221,7 @@
       "destination": "/no/learn/section-tabs/sales-tab"
     },
     {
-      "source": "/no/document/cloud/g-suite/learn/index",
+      "source": "/no/document/cloud/g-suite/learn/*",
       "destination": "/integrations/g-suite/index"
     },
     {
@@ -25169,7 +25169,7 @@
       "destination": "/sv/learn/section-tabs/sales-tab"
     },
     {
-      "source": "/sv/document/cloud/g-suite/learn/index",
+      "source": "/sv/document/cloud/g-suite/learn/*",
       "destination": "/integrations/g-suite/index"
     },
     {
