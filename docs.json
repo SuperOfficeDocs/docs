@@ -12037,44 +12037,8 @@
       "destination": "/da/erp/admin/index"
     },
     {
-      "source": "/da/quote/learn/admin/sync/sync-add-erp-connection",
-      "destination": "/da/erp/admin/add-connection"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-configure-default-values",
-      "destination": "/da/erp/admin/configure"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-configure-field-allocation",
-      "destination": "/da/erp/admin/configure"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-configure-list-mapping",
-      "destination": "/da/erp/admin/configure"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-connector-add",
-      "destination": "/da/erp/admin/add-connection"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-edit-erp-connection",
-      "destination": "/da/erp/admin/update-connection"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-import-from-erp",
-      "destination": "/da/admin/import/from-erp"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
-      "destination": "/da/erp/admin/configure"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-resync-from-crm",
-      "destination": "/da/erp/admin/resync-from-crm"
-    },
-    {
-      "source": "/da/quote/learn/admin/sync/sync-set-sync-priority",
-      "destination": "/da/erp/admin/configure"
+      "source": "/da/quote/learn/admin/sync/sync-*",
+      "destination": "/da/erp/admin/index"
     },
     {
       "source": "/da/quote/learn/approve",
@@ -12309,40 +12273,8 @@
       "destination": "/da/sale/learn/index"
     },
     {
-      "source": "/da/sale/saint/learn/admin/create-status",
-      "destination": "/da/saint/admin/set-up"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/edit-status",
-      "destination": "/da/saint/admin/update"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/index",
+      "source": "/da/sale/saint/learn/admin/*",
       "destination": "/da/saint/admin/index"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/manage-status-monitors",
-      "destination": "/da/saint/admin/update"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/restore-status",
-      "destination": "/da/saint/admin/update"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/select-default-follow-up-type-for-status",
-      "destination": "/da/saint/admin/update"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/select-image-for-status",
-      "destination": "/da/saint/admin/set-up"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/select-period-length",
-      "destination": "/da/saint/admin/counter-settings"
-    },
-    {
-      "source": "/da/sale/saint/learn/admin/select-status-criteria",
-      "destination": "/da/saint/admin/update"
     },
     {
       "source": "/da/sale/saint/learn/index",
@@ -13685,44 +13617,8 @@
       "destination": "/de/erp/admin/index"
     },
     {
-      "source": "/de/quote/learn/admin/sync/sync-add-erp-connection",
-      "destination": "/de/erp/admin/add-connection"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-configure-default-values",
-      "destination": "/de/erp/admin/configure"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-configure-field-allocation",
-      "destination": "/de/erp/admin/configure"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-configure-list-mapping",
-      "destination": "/de/erp/admin/configure"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-connector-add",
-      "destination": "/de/erp/admin/add-connection"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-edit-erp-connection",
-      "destination": "/de/erp/admin/update-connection"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-import-from-erp",
-      "destination": "/de/admin/import/from-erp"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
-      "destination": "/de/erp/admin/configure"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-resync-from-crm",
-      "destination": "/de/erp/admin/resync-from-crm"
-    },
-    {
-      "source": "/de/quote/learn/admin/sync/sync-set-sync-priority",
-      "destination": "/de/erp/admin/configure"
+      "source": "/de/quote/learn/admin/sync/sync-*",
+      "destination": "/de/erp/admin/index"
     },
     {
       "source": "/de/quote/learn/approve",
@@ -13953,40 +13849,8 @@
       "destination": "/de/sale/learn/index"
     },
     {
-      "source": "/de/sale/saint/learn/admin/create-status",
-      "destination": "/de/saint/admin/set-up"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/edit-status",
-      "destination": "/de/saint/admin/update"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/index",
+      "source": "/de/sale/saint/learn/admin/*",
       "destination": "/de/saint/admin/index"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/manage-status-monitors",
-      "destination": "/de/saint/admin/update"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/restore-status",
-      "destination": "/de/saint/admin/update"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/select-default-follow-up-type-for-status",
-      "destination": "/de/saint/admin/update"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/select-image-for-status",
-      "destination": "/de/saint/admin/set-up"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/select-period-length",
-      "destination": "/de/saint/admin/counter-settings"
-    },
-    {
-      "source": "/de/sale/saint/learn/admin/select-status-criteria",
-      "destination": "/de/saint/admin/update"
     },
     {
       "source": "/de/sale/saint/learn/index",
@@ -18305,44 +18169,8 @@
       "destination": "/en/erp/admin/index"
     },
     {
-      "source": "/en/quote/learn/admin/sync/sync-add-erp-connection",
-      "destination": "/en/erp/admin/add-connection"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-configure-default-values",
-      "destination": "/en/erp/admin/configure"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-configure-field-allocation",
-      "destination": "/en/erp/admin/configure"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-configure-list-mapping",
-      "destination": "/en/erp/admin/configure"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-connector-add",
-      "destination": "/en/erp/admin/add-connection"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-edit-erp-connection",
-      "destination": "/en/erp/admin/update-connection"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-import-from-erp",
-      "destination": "/en/admin/import/from-erp"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
-      "destination": "/en/erp/admin/configure"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-resync-from-crm",
-      "destination": "/en/erp/admin/resync-from-crm"
-    },
-    {
-      "source": "/en/quote/learn/admin/sync/sync-set-sync-priority",
-      "destination": "/en/erp/admin/configure"
+      "source": "/en/quote/learn/admin/sync/sync-*",
+      "destination": "/en/erp/admin/index"
     },
     {
       "source": "/en/quote/learn/approve",
@@ -18637,40 +18465,8 @@
       "destination": "/en/saint/learn/index"
     },
     {
-      "source": "/en/sale/saint/learn/admin/create-status",
-      "destination": "/en/saint/admin/set-up"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/edit-status",
-      "destination": "/en/saint/admin/update"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/index",
+      "source": "/en/sale/saint/learn/admin/*",
       "destination": "/en/saint/admin/index"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/manage-status-monitors",
-      "destination": "/en/saint/admin/update"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/restore-status",
-      "destination": "/en/saint/admin/update"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/select-default-follow-up-type-for-status",
-      "destination": "/en/saint/admin/update"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/select-image-for-status",
-      "destination": "/en/saint/admin/set-up"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/select-period-length",
-      "destination": "/en/saint/admin/counter-settings"
-    },
-    {
-      "source": "/en/sale/saint/learn/admin/select-status-criteria",
-      "destination": "/en/saint/admin/update"
     },
     {
       "source": "/en/sale/saint/learn/status-dialog",
@@ -18913,108 +18709,8 @@
       "destination": "/en/customization/screen-designer/admin/tutorial-move-country"
     },
     {
-      "source": "/en/ui/soprotocol/create-appointment",
-      "destination": "/en/customization/soprotocol/howto/create-follow-up"
-    },
-    {
-      "source": "/en/ui/soprotocol/create-contact",
-      "destination": "/en/customization/soprotocol/howto/create-contact"
-    },
-    {
-      "source": "/en/ui/soprotocol/custom-object",
-      "destination": "/en/customization/soprotocol/howto/custom-object"
-    },
-    {
-      "source": "/en/ui/soprotocol/edit-contact",
-      "destination": "/en/customization/soprotocol/howto/open-contact"
-    },
-    {
-      "source": "/en/ui/soprotocol/get-contact",
-      "destination": "/en/customization/soprotocol/howto/open-contact"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/create-contact",
-      "destination": "/en/customization/soprotocol/howto/create-contact"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/create-document",
-      "destination": "/en/customization/soprotocol/howto/create-document"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/create-follow-up",
-      "destination": "/en/customization/soprotocol/howto/create-follow-up"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/create-project",
-      "destination": "/en/customization/soprotocol/howto/create-project"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/custom-object",
-      "destination": "/en/customization/soprotocol/howto/custom-object"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/open-contact",
-      "destination": "/en/customization/soprotocol/howto/open-contact"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/open-document",
-      "destination": "/en/customization/soprotocol/howto/open-document"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/open-follow-up",
-      "destination": "/en/customization/soprotocol/howto/open-follow-up"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/open-project",
-      "destination": "/en/customization/soprotocol/howto/open-project"
-    },
-    {
-      "source": "/en/ui/soprotocol/howto/requests",
-      "destination": "/en/customization/soprotocol/howto/requests"
-    },
-    {
-      "source": "/en/ui/soprotocol/in-crmscript",
-      "destination": "/en/customization/soprotocol/in-crmscript"
-    },
-    {
-      "source": "/en/ui/soprotocol/index",
+      "source": "/en/ui/soprotocol/*",
       "destination": "/en/customization/soprotocol/index"
-    },
-    {
-      "source": "/en/ui/soprotocol/navigation-points",
-      "destination": "/en/customization/soprotocol/navigation-points"
-    },
-    {
-      "source": "/en/ui/soprotocol/open-appointment-dialog",
-      "destination": "/en/customization/soprotocol/howto/open-follow-up"
-    },
-    {
-      "source": "/en/ui/soprotocol/page-control-and-cache",
-      "destination": "/en/customization/soprotocol/page-control-and-cache"
-    },
-    {
-      "source": "/en/ui/soprotocol/requests",
-      "destination": "/en/customization/soprotocol/howto/requests"
-    },
-    {
-      "source": "/en/ui/soprotocol/show-persons-for-contact",
-      "destination": "/en/customization/soprotocol/howto/open-contact"
-    },
-    {
-      "source": "/en/ui/soprotocol/used-in-webpanels-mobile",
-      "destination": "/en/customization/soprotocol/used-in-webpanels-mobile"
-    },
-    {
-      "source": "/en/ui/soprotocol/used-in-webpanels-web",
-      "destination": "/en/customization/soprotocol/used-in-webpanels-web"
-    },
-    {
-      "source": "/en/ui/soprotocol/used-in-webpanels-win",
-      "destination": "/en/customization/soprotocol/used-in-webpanels-win"
-    },
-    {
-      "source": "/en/ui/soprotocol/using-soprotocol",
-      "destination": "/en/customization/soprotocol/using-soprotocol"
     },
     {
       "source": "/en/ui/web-app/pagebuilder/config/howto/index",
@@ -20329,44 +20025,8 @@
       "destination": "/nl/erp/admin/index"
     },
     {
-      "source": "/nl/quote/learn/admin/sync/sync-add-erp-connection",
-      "destination": "/nl/erp/admin/add-connection"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-configure-default-values",
-      "destination": "/nl/erp/admin/configure"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-configure-field-allocation",
-      "destination": "/nl/erp/admin/configure"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-configure-list-mapping",
-      "destination": "/nl/erp/admin/configure"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-connector-add",
-      "destination": "/nl/erp/admin/add-connection"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-edit-erp-connection",
-      "destination": "/nl/erp/admin/update-connection"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-import-from-erp",
-      "destination": "/nl/admin/import/from-erp"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
-      "destination": "/nl/erp/admin/configure"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-resync-from-crm",
-      "destination": "/nl/erp/admin/resync-from-crm"
-    },
-    {
-      "source": "/nl/quote/learn/admin/sync/sync-set-sync-priority",
-      "destination": "/nl/erp/admin/configure"
+      "source": "/nl/quote/learn/admin/sync/sync-*",
+      "destination": "/nl/erp/admin/index"
     },
     {
       "source": "/nl/quote/learn/approve",
@@ -20597,36 +20257,8 @@
       "destination": "/nl/sale/learn/index"
     },
     {
-      "source": "/nl/sale/saint/learn/admin/create-status",
-      "destination": "/nl/saint/admin/set-up"
-    },
-    {
-      "source": "/nl/sale/saint/learn/admin/edit-status",
-      "destination": "/nl/saint/admin/update"
-    },
-    {
-      "source": "/nl/sale/saint/learn/admin/index",
+      "source": "/nl/sale/saint/learn/admin/*",
       "destination": "/nl/saint/admin/index"
-    },
-    {
-      "source": "/nl/sale/saint/learn/admin/restore-status",
-      "destination": "/nl/saint/admin/update"
-    },
-    {
-      "source": "/nl/sale/saint/learn/admin/select-default-follow-up-type-for-status",
-      "destination": "/nl/saint/admin/update"
-    },
-    {
-      "source": "/nl/sale/saint/learn/admin/select-image-for-status",
-      "destination": "/nl/saint/admin/set-up"
-    },
-    {
-      "source": "/nl/sale/saint/learn/admin/select-period-length",
-      "destination": "/nl/saint/admin/counter-settings"
-    },
-    {
-      "source": "/nl/sale/saint/learn/admin/select-status-criteria",
-      "destination": "/nl/saint/admin/update"
     },
     {
       "source": "/nl/sale/saint/learn/index",
@@ -21965,44 +21597,8 @@
       "destination": "/no/erp/admin/index"
     },
     {
-      "source": "/no/quote/learn/admin/sync/sync-add-erp-connection",
-      "destination": "/no/erp/admin/add-connection"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-configure-default-values",
-      "destination": "/no/erp/admin/configure"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-configure-field-allocation",
-      "destination": "/no/erp/admin/configure"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-configure-list-mapping",
-      "destination": "/no/erp/admin/configure"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-connector-add",
-      "destination": "/no/erp/admin/add-connection"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-edit-erp-connection",
-      "destination": "/no/erp/admin/update-connection"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-import-from-erp",
-      "destination": "/no/admin/import/from-erp"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
-      "destination": "/no/erp/admin/configure"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-resync-from-crm",
-      "destination": "/no/erp/admin/resync-from-crm"
-    },
-    {
-      "source": "/no/quote/learn/admin/sync/sync-set-sync-priority",
-      "destination": "/no/erp/admin/configure"
+      "source": "/no/quote/learn/admin/sync/sync-*",
+      "destination": "/no/erp/admin/index"
     },
     {
       "source": "/no/quote/learn/approve",
@@ -22237,40 +21833,8 @@
       "destination": "/no/sale/learn/index"
     },
     {
-      "source": "/no/sale/saint/learn/admin/create-status",
-      "destination": "/no/saint/admin/set-up"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/edit-status",
-      "destination": "/no/saint/admin/update"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/index",
+      "source": "/no/sale/saint/learn/admin/*",
       "destination": "/no/saint/admin/index"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/manage-status-monitors",
-      "destination": "/no/saint/admin/update"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/restore-status",
-      "destination": "/no/saint/admin/update"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/select-default-follow-up-type-for-status",
-      "destination": "/no/saint/admin/update"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/select-image-for-status",
-      "destination": "/no/saint/admin/set-up"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/select-period-length",
-      "destination": "/no/saint/admin/counter-settings"
-    },
-    {
-      "source": "/no/sale/saint/learn/admin/select-status-criteria",
-      "destination": "/no/saint/admin/update"
     },
     {
       "source": "/no/sale/saint/learn/index",
@@ -23677,44 +23241,8 @@
       "destination": "/sv/erp/admin/index"
     },
     {
-      "source": "/sv/quote/learn/admin/sync/sync-add-erp-connection",
-      "destination": "/sv/erp/admin/add-connection"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-configure-default-values",
-      "destination": "/sv/erp/admin/configure"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-configure-field-allocation",
-      "destination": "/sv/erp/admin/configure"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-configure-list-mapping",
-      "destination": "/sv/erp/admin/configure"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-connector-add",
-      "destination": "/sv/erp/admin/add-connection"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-edit-erp-connection",
-      "destination": "/sv/erp/admin/update-connection"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-import-from-erp",
-      "destination": "/sv/admin/import/from-erp"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab",
-      "destination": "/sv/erp/admin/configure"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-resync-from-crm",
-      "destination": "/sv/erp/admin/resync-from-crm"
-    },
-    {
-      "source": "/sv/quote/learn/admin/sync/sync-set-sync-priority",
-      "destination": "/sv/erp/admin/configure"
+      "source": "/sv/quote/learn/admin/sync/sync-*",
+      "destination": "/sv/erp/admin/index"
     },
     {
       "source": "/sv/quote/learn/approve",
@@ -23949,40 +23477,8 @@
       "destination": "/sv/sale/learn/index"
     },
     {
-      "source": "/sv/sale/saint/learn/admin/create-status",
-      "destination": "/sv/saint/admin/set-up"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/edit-status",
-      "destination": "/sv/saint/admin/update"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/index",
+      "source": "/sv/sale/saint/learn/admin/*",
       "destination": "/sv/saint/admin/index"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/manage-status-monitors",
-      "destination": "/sv/saint/admin/update"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/restore-status",
-      "destination": "/sv/saint/admin/update"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/select-default-follow-up-type-for-status",
-      "destination": "/sv/saint/admin/update"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/select-image-for-status",
-      "destination": "/sv/saint/admin/set-up"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/select-period-length",
-      "destination": "/sv/saint/admin/counter-settings"
-    },
-    {
-      "source": "/sv/sale/saint/learn/admin/select-status-criteria",
-      "destination": "/sv/saint/admin/update"
     },
     {
       "source": "/sv/sale/saint/learn/index",
