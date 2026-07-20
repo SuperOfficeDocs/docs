@@ -11653,12 +11653,8 @@
       "destination": "https://help.superoffice.com/docs/11/da/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
-      "source": "/da/document/webtools/learn/index",
+      "source": "/da/document/webtools/learn/*",
       "destination": "/integrations/webtools/index"
-    },
-    {
-      "source": "/da/document/webtools/learn/install*",
-      "destination": "/integrations/webtools/install"
     },
     {
       "source": "/da/email/admin/index",
@@ -13541,12 +13537,8 @@
       "destination": "https://help.superoffice.com/docs/11/de/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
-      "source": "/de/document/webtools/learn/index",
+      "source": "/de/document/webtools/learn/*",
       "destination": "/integrations/webtools/index"
-    },
-    {
-      "source": "/de/document/webtools/learn/install*",
-      "destination": "/integrations/webtools/install"
     },
     {
       "source": "/de/email/admin/index",
@@ -18453,12 +18445,8 @@
       "destination": "/integrations/webtools/install"
     },
     {
-      "source": "/en/document/webtools/learn/index",
+      "source": "/en/document/webtools/learn/*",
       "destination": "/integrations/webtools/index"
-    },
-    {
-      "source": "/en/document/webtools/learn/install*",
-      "destination": "/integrations/webtools/install"
     },
     {
       "source": "/en/document/webtools/system-requirements",
@@ -21373,12 +21361,8 @@
       "destination": "https://help.superoffice.com/docs/11/nl/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
-      "source": "/nl/document/webtools/learn/index",
+      "source": "/nl/document/webtools/learn/*",
       "destination": "/integrations/webtools/index"
-    },
-    {
-      "source": "/nl/document/webtools/learn/install*",
-      "destination": "/integrations/webtools/install"
     },
     {
       "source": "/nl/email/admin/index",
@@ -23253,12 +23237,8 @@
       "destination": "https://help.superoffice.com/docs/11/no/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
-      "source": "/no/document/webtools/learn/index",
+      "source": "/no/document/webtools/learn/*",
       "destination": "/integrations/webtools/index"
-    },
-    {
-      "source": "/no/document/webtools/learn/install*",
-      "destination": "/integrations/webtools/install"
     },
     {
       "source": "/no/email/admin/index",
@@ -25201,12 +25181,8 @@
       "destination": "https://help.superoffice.com/docs/11/sv/document/templates/admin/using-document-templates-for-multiple-languages.html"
     },
     {
-      "source": "/sv/document/webtools/learn/index",
+      "source": "/sv/document/webtools/learn/*",
       "destination": "/integrations/webtools/index"
-    },
-    {
-      "source": "/sv/document/webtools/learn/install*",
-      "destination": "/integrations/webtools/install"
     },
     {
       "source": "/sv/email/admin/index",
