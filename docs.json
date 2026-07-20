@@ -18169,64 +18169,8 @@
       "destination": "/en/document/library/it/index"
     },
     {
-      "source": "/en/document/cloud/sharepoint-documents/configure-permissions-documents",
-      "destination": "/integrations/sharepoint-documents/configure-permissions-documents"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/configure-permissions-templates",
-      "destination": "/integrations/sharepoint-documents/configure-permissions-templates"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/configure-superoffice",
-      "destination": "/integrations/sharepoint-documents/configure-superoffice"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/index",
+      "source": "/en/document/cloud/sharepoint-documents/*",
       "destination": "/integrations/sharepoint-documents/index"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/learn/*",
-      "destination": "/en/document/library/learn/index"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/migrate/best-practices",
-      "destination": "/integrations/sharepoint-documents/migrate/best-practices"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/migrate/index",
-      "destination": "/integrations/sharepoint-documents/migrate/index"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/migrate/reference",
-      "destination": "/integrations/sharepoint-documents/migrate/reference"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/migrate/steps",
-      "destination": "/integrations/sharepoint-documents/migrate/steps"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/migrate/troubleshooting",
-      "destination": "/integrations/sharepoint-documents/migrate/troubleshooting"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/permissions-app",
-      "destination": "/integrations/sharepoint-documents/permissions-app"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/permissions-in-sharepoint",
-      "destination": "/integrations/sharepoint-documents/permissions-in-sharepoint"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/requirements",
-      "destination": "/integrations/sharepoint-documents/requirements"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/set-up",
-      "destination": "/integrations/sharepoint-documents/set-up"
-    },
-    {
-      "source": "/en/document/cloud/sharepoint-documents/troubleshooting",
-      "destination": "/integrations/sharepoint-documents/troubleshooting"
     },
     {
       "source": "/en/document/howto/agents-web-api/add-document-template",
