@@ -17497,15 +17497,7 @@
       "destination": "/en/document/library/it/odf"
     },
     {
-      "source": "/en/document/ribbons/enable-debug",
-      "destination": "/en/onsite/install/win-client/win8-client"
-    },
-    {
-      "source": "/en/document/ribbons/index",
-      "destination": "/en/onsite/install/win-client/win8-client"
-    },
-    {
-      "source": "/en/document/ribbons/troubleshooting",
+      "source": "/en/document/ribbons/*",
       "destination": "/en/onsite/install/win-client/win8-client"
     },
     {
@@ -18861,27 +18853,7 @@
       "destination": "/en/ui/blogic/tutorials/custom-db-and-ui"
     },
     {
-      "source": "/en/ui/design/error-removal",
-      "destination": "/en/developer-portal/best-practices/index"
-    },
-    {
-      "source": "/en/ui/design/index",
-      "destination": "/en/developer-portal/best-practices/index"
-    },
-    {
-      "source": "/en/ui/design/info-hinting",
-      "destination": "/en/developer-portal/best-practices/index"
-    },
-    {
-      "source": "/en/ui/design/readiness-to-hand",
-      "destination": "/en/developer-portal/best-practices/index"
-    },
-    {
-      "source": "/en/ui/design/reading-list",
-      "destination": "/en/developer-portal/best-practices/index"
-    },
-    {
-      "source": "/en/ui/design/whitespace",
+      "source": "/en/ui/design/*",
       "destination": "/en/developer-portal/best-practices/index"
     },
     {
