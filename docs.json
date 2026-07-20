@@ -17189,44 +17189,8 @@
       "destination": "/en/automation/windows/win-script-event-system"
     },
     {
-      "source": "/en/automation/zapier/get-started/create-zap",
-      "destination": "/integrations/zapier/get-started/create-zap"
-    },
-    {
-      "source": "/en/automation/zapier/get-started/index",
-      "destination": "/integrations/zapier/get-started/index"
-    },
-    {
-      "source": "/en/automation/zapier/get-started/set-up-account",
-      "destination": "/integrations/zapier/get-started/set-up-account"
-    },
-    {
-      "source": "/en/automation/zapier/howto/datetime",
-      "destination": "/integrations/zapier/howto/datetime"
-    },
-    {
-      "source": "/en/automation/zapier/howto/find-company",
-      "destination": "/integrations/zapier/howto/actions/search-company"
-    },
-    {
-      "source": "/en/automation/zapier/howto/gdpr",
-      "destination": "/integrations/zapier/howto/gdpr"
-    },
-    {
-      "source": "/en/automation/zapier/howto/index",
-      "destination": "/integrations/zapier/howto/index"
-    },
-    {
-      "source": "/en/automation/zapier/howto/listsource",
-      "destination": "/integrations/zapier/howto/listsource"
-    },
-    {
-      "source": "/en/automation/zapier/index",
+      "source": "/en/automation/zapier/*",
       "destination": "/integrations/zapier/index"
-    },
-    {
-      "source": "/en/automation/zapier/reference",
-      "destination": "/integrations/zapier/reference"
     },
     {
       "source": "/en/chat/learn/admin/add-javascript",
