@@ -7,3 +7,6 @@ AGENTS.md
 # conversion pipeline (e.g. contribute/includes/.markdownlint.yml) - ignored
 # until there's a real decision on whether/how these should be committed.
 **/.markdownlint.yml
+
+# Python bytecode cache (tools/*.py scripts)
+__pycache__/
