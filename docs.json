@@ -16441,10 +16441,6 @@
       "destination": "/en/onsite/automated-tasks/*"
     },
     {
-      "source": "/en/onsite/automated-tasks/",
-      "destination": "/en/onsite/automated-tasks/index"
-    },
-    {
       "source": "/en/service/config/",
       "destination": "/en/onsite/config/service/index"
     },
@@ -17255,10 +17251,6 @@
     {
       "source": "/nl/chat/learn/admin/*",
       "destination": "/nl/chat/admin/*"
-    },
-    {
-      "source": "/nl/chat/admin/",
-      "destination": "/nl/chat/admin/index"
     },
     {
       "source": "/nl/chat/learn/create-contact",
