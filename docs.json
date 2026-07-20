@@ -14865,56 +14865,8 @@
       "destination": "/en/api/rows/howto/company/*"
     },
     {
-      "source": "/en/company/howto/services/add-catlist-item-rest",
-      "destination": "/en/api/web-services/howto/company/add-catlist-item-rest"
-    },
-    {
-      "source": "/en/company/howto/services/add-catlist-item-webapi-agents",
-      "destination": "/en/api/web-services/howto/company/add-catlist-item-webapi-agents"
-    },
-    {
-      "source": "/en/company/howto/services/create-contact-rest",
-      "destination": "/en/api/web-services/howto/company/create-contact"
-    },
-    {
-      "source": "/en/company/howto/services/create-contact-services",
-      "destination": "/en/api/web-services/howto/company/create-contact"
-    },
-    {
-      "source": "/en/company/howto/services/create-contact-webapi-agents",
-      "destination": "/en/api/web-services/howto/company/create-contact"
-    },
-    {
-      "source": "/en/company/howto/services/get-all-contacts-rest",
-      "destination": "/en/api/web-services/howto/company/get-all-contacts-rest"
-    },
-    {
-      "source": "/en/company/howto/services/get-catlist-listagent",
-      "destination": "/en/api/web-services/howto/company/get-catlist-listagent"
-    },
-    {
-      "source": "/en/company/howto/services/get-catlist-mdoagent",
-      "destination": "/en/api/web-services/howto/company/get-catlist-mdoagent"
-    },
-    {
-      "source": "/en/company/howto/services/get-contact-via-services-layer",
-      "destination": "/en/api/web-services/howto/company/get-contact-via-services-layer"
-    },
-    {
-      "source": "/en/company/howto/services/get-interests-for-contact-services",
-      "destination": "/en/api/web-services/howto/company/get-interests-for-contact-services"
-    },
-    {
-      "source": "/en/company/howto/services/get-set-category-mdoagent",
-      "destination": "/en/api/web-services/howto/company/get-set-category-mdoagent"
-    },
-    {
-      "source": "/en/company/howto/services/index",
-      "destination": "/en/api/web-services/howto/company/index"
-    },
-    {
-      "source": "/en/company/howto/services/set-interest-on-off-services",
-      "destination": "/en/api/web-services/howto/company/set-interest-on-off-services"
+      "source": "/en/company/howto/services/*",
+      "destination": "/en/api/web-services/howto/company/*"
     },
     {
       "source": "/en/company/howto/sql/*",
@@ -15001,36 +14953,8 @@
       "destination": "/en/api/rows/howto/contact/*"
     },
     {
-      "source": "/en/contact/howto/services/display-image-from-blob-table-services",
-      "destination": "/en/api/web-services/howto/contact/display-image-from-blob-table-services"
-    },
-    {
-      "source": "/en/contact/howto/services/display-person-image-ws",
-      "destination": "/en/api/web-services/howto/contact/display-person-image-ws"
-    },
-    {
-      "source": "/en/contact/howto/services/get-person-image-rest",
-      "destination": "/en/api/web-services/howto/contact/get-person-image-rest"
-    },
-    {
-      "source": "/en/contact/howto/services/get-persons-contactagent",
-      "destination": "/en/api/web-services/howto/contact/get-persons-contactagent"
-    },
-    {
-      "source": "/en/contact/howto/services/get-persons-personagent",
-      "destination": "/en/api/web-services/howto/contact/get-persons-personagent"
-    },
-    {
-      "source": "/en/contact/howto/services/index",
-      "destination": "/en/api/web-services/howto/contact/index"
-    },
-    {
-      "source": "/en/contact/howto/services/update-person-image-rest",
-      "destination": "/en/api/web-services/howto/contact/update-person-image-rest"
-    },
-    {
-      "source": "/en/contact/howto/services/update-person-services",
-      "destination": "/en/api/web-services/howto/contact/update-person-services"
+      "source": "/en/contact/howto/services/*",
+      "destination": "/en/api/web-services/howto/contact/*"
     },
     {
       "source": "/en/contact/howto/sql/*",
@@ -15133,36 +15057,8 @@
       "destination": "/en/api/entities/howto/custom-objects/*"
     },
     {
-      "source": "/en/custom-objects/udef/howto/services/find-contact-by-udef",
-      "destination": "/en/api/web-services/howto/custom-objects/find-contact-by-udef"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/services/get-udef-list-and-values",
-      "destination": "/en/api/web-services/howto/custom-objects/get-udef-list-and-values"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/services/index",
-      "destination": "/en/api/web-services/howto/custom-objects/index"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/services/rest-create-udef-field",
-      "destination": "/en/api/web-services/howto/custom-objects/rest-create-udef-field"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/services/rest-delete-udef-field",
-      "destination": "/en/api/web-services/howto/custom-objects/rest-delete-udef-field"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/services/rest-get-all-udef-fields",
-      "destination": "/en/api/web-services/howto/custom-objects/rest-get-all-udef-fields"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/services/rest-update-udef-field",
-      "destination": "/en/api/web-services/howto/custom-objects/rest-update-udef-field"
-    },
-    {
-      "source": "/en/custom-objects/udef/howto/services/set-udef-listitem-value",
-      "destination": "/en/api/web-services/howto/custom-objects/set-udef-listitem-value"
+      "source": "/en/custom-objects/udef/howto/services/*",
+      "destination": "/en/api/web-services/howto/custom-objects/*"
     },
     {
       "source": "/en/custom-objects/udef/howto/sql/*",
@@ -15317,28 +15213,8 @@
       "destination": "/en/api/rows/howto/diary/*"
     },
     {
-      "source": "/en/diary/howto/services/accept-invitation-services",
-      "destination": "/en/api/web-services/howto/diary/accept-invitation-services"
-    },
-    {
-      "source": "/en/diary/howto/services/create-apt-services",
-      "destination": "/en/api/web-services/howto/diary/create-apt-services"
-    },
-    {
-      "source": "/en/diary/howto/services/create-invitation-services",
-      "destination": "/en/api/web-services/howto/diary/create-invitation-services"
-    },
-    {
-      "source": "/en/diary/howto/services/create-recurring-appointment-services",
-      "destination": "/en/api/web-services/howto/diary/create-recurring-appointment-services"
-    },
-    {
-      "source": "/en/diary/howto/services/get-invitations-services",
-      "destination": "/en/api/web-services/howto/diary/get-invitations-services"
-    },
-    {
-      "source": "/en/diary/howto/services/index",
-      "destination": "/en/api/web-services/howto/diary/index"
+      "source": "/en/diary/howto/services/*",
+      "destination": "/en/api/web-services/howto/diary/*"
     },
     {
       "source": "/en/diary/howto/sql/*",
@@ -15485,24 +15361,12 @@
       "destination": "/en/api/web-services/howto/document/index"
     },
     {
-      "source": "/en/document/howto/services/configure-access",
-      "destination": "/en/api/web-services/howto/document/services-configure-access"
+      "source": "/en/document/howto/services/*",
+      "destination": "/en/api/web-services/howto/document/services-*"
     },
     {
-      "source": "/en/document/howto/services/create",
-      "destination": "/en/api/web-services/howto/document/services-create"
-    },
-    {
-      "source": "/en/document/howto/services/download",
-      "destination": "/en/api/web-services/howto/document/services-download"
-    },
-    {
-      "source": "/en/document/howto/services/index",
+      "source": "/en/api/web-services/howto/document/services-index",
       "destination": "/en/api/web-services/howto/document/index"
-    },
-    {
-      "source": "/en/document/howto/services/update",
-      "destination": "/en/api/web-services/howto/document/services-update"
     },
     {
       "source": "/en/document/learn/delete",
@@ -15817,16 +15681,8 @@
       "destination": "/en/api/rows/howto/address/*"
     },
     {
-      "source": "/en/globalization-and-localization/address/howto/services/get-localized-address",
-      "destination": "/en/api/web-services/howto/address/get-localized-address"
-    },
-    {
-      "source": "/en/globalization-and-localization/address/howto/services/index",
-      "destination": "/en/api/web-services/howto/address/index"
-    },
-    {
-      "source": "/en/globalization-and-localization/address/howto/services/set-localized-address",
-      "destination": "/en/api/web-services/howto/address/set-localized-address"
+      "source": "/en/globalization-and-localization/address/howto/services/*",
+      "destination": "/en/api/web-services/howto/address/*"
     },
     {
       "source": "/en/globalization-and-localization/address/index",
@@ -16537,12 +16393,8 @@
       "destination": "/en/automation/crmscript/howto/sale/index"
     },
     {
-      "source": "/en/sale/howto/services/index",
-      "destination": "/en/api/web-services/howto/sale/index"
-    },
-    {
-      "source": "/en/sale/howto/services/link-sale-to-appointment",
-      "destination": "/en/api/web-services/howto/sale/link-sale-to-appointment"
+      "source": "/en/sale/howto/services/*",
+      "destination": "/en/api/web-services/howto/sale/*"
     },
     {
       "source": "/en/sale/howto/sql/stakeholders",
