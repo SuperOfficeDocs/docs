@@ -11749,39 +11749,7 @@
       "destination": "/integrations/superoffice-for-outlook/deploy"
     },
     {
-      "source": "/da/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
-      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/add-crm-data-to-event",
-      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/create-follow-up",
-      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/create-request",
-      "destination": "/integrations/superoffice-for-outlook/create-request"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/create-sale",
-      "destination": "/integrations/superoffice-for-outlook/create-sale"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/get",
-      "destination": "/integrations/superoffice-for-outlook/get"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/index",
-      "destination": "/integrations/superoffice-for-outlook/index"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/requirements",
-      "destination": "/integrations/superoffice-for-outlook/requirements"
-    },
-    {
-      "source": "/da/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "source": "/da/email/superoffice-for-outlook/learn/*",
       "destination": "/integrations/superoffice-for-outlook/index"
     },
     {
@@ -13633,39 +13601,7 @@
       "destination": "/integrations/superoffice-for-outlook/deploy"
     },
     {
-      "source": "/de/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
-      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/add-crm-data-to-event",
-      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/create-follow-up",
-      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/create-request",
-      "destination": "/integrations/superoffice-for-outlook/create-request"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/create-sale",
-      "destination": "/integrations/superoffice-for-outlook/create-sale"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/get",
-      "destination": "/integrations/superoffice-for-outlook/get"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/index",
-      "destination": "/integrations/superoffice-for-outlook/index"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/requirements",
-      "destination": "/integrations/superoffice-for-outlook/requirements"
-    },
-    {
-      "source": "/de/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "source": "/de/email/superoffice-for-outlook/learn/*",
       "destination": "/integrations/superoffice-for-outlook/index"
     },
     {
@@ -18641,39 +18577,7 @@
       "destination": "/integrations/superoffice-for-outlook/deploy"
     },
     {
-      "source": "/en/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
-      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/add-crm-data-to-event",
-      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/create-follow-up",
-      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/create-request",
-      "destination": "/integrations/superoffice-for-outlook/create-request"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/create-sale",
-      "destination": "/integrations/superoffice-for-outlook/create-sale"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/get",
-      "destination": "/integrations/superoffice-for-outlook/get"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/index",
-      "destination": "/integrations/superoffice-for-outlook/index"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/requirements",
-      "destination": "/integrations/superoffice-for-outlook/requirements"
-    },
-    {
-      "source": "/en/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "source": "/en/email/superoffice-for-outlook/learn/*",
       "destination": "/integrations/superoffice-for-outlook/index"
     },
     {
@@ -21457,39 +21361,7 @@
       "destination": "/integrations/superoffice-for-outlook/deploy"
     },
     {
-      "source": "/nl/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
-      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/add-crm-data-to-event",
-      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/create-follow-up",
-      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/create-request",
-      "destination": "/integrations/superoffice-for-outlook/create-request"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/create-sale",
-      "destination": "/integrations/superoffice-for-outlook/create-sale"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/get",
-      "destination": "/integrations/superoffice-for-outlook/get"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/index",
-      "destination": "/integrations/superoffice-for-outlook/index"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/requirements",
-      "destination": "/integrations/superoffice-for-outlook/requirements"
-    },
-    {
-      "source": "/nl/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "source": "/nl/email/superoffice-for-outlook/learn/*",
       "destination": "/integrations/superoffice-for-outlook/index"
     },
     {
@@ -23333,39 +23205,7 @@
       "destination": "/integrations/superoffice-for-outlook/deploy"
     },
     {
-      "source": "/no/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
-      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/add-crm-data-to-event",
-      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/create-follow-up",
-      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/create-request",
-      "destination": "/integrations/superoffice-for-outlook/create-request"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/create-sale",
-      "destination": "/integrations/superoffice-for-outlook/create-sale"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/get",
-      "destination": "/integrations/superoffice-for-outlook/get"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/index",
-      "destination": "/integrations/superoffice-for-outlook/index"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/requirements",
-      "destination": "/integrations/superoffice-for-outlook/requirements"
-    },
-    {
-      "source": "/no/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "source": "/no/email/superoffice-for-outlook/learn/*",
       "destination": "/integrations/superoffice-for-outlook/index"
     },
     {
@@ -25277,39 +25117,7 @@
       "destination": "/integrations/superoffice-for-outlook/deploy"
     },
     {
-      "source": "/sv/email/superoffice-for-outlook/learn/add-contact-to-superoffice",
-      "destination": "/integrations/superoffice-for-outlook/add-contact-to-superoffice"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/add-crm-data-to-event",
-      "destination": "/integrations/superoffice-for-outlook/add-crm-data-to-event"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/create-follow-up",
-      "destination": "/integrations/superoffice-for-outlook/create-follow-up"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/create-request",
-      "destination": "/integrations/superoffice-for-outlook/create-request"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/create-sale",
-      "destination": "/integrations/superoffice-for-outlook/create-sale"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/get",
-      "destination": "/integrations/superoffice-for-outlook/get"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/index",
-      "destination": "/integrations/superoffice-for-outlook/index"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/requirements",
-      "destination": "/integrations/superoffice-for-outlook/requirements"
-    },
-    {
-      "source": "/sv/email/superoffice-for-outlook/learn/save-to-superoffice",
+      "source": "/sv/email/superoffice-for-outlook/learn/*",
       "destination": "/integrations/superoffice-for-outlook/index"
     },
     {
