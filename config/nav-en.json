@@ -1,0 +1,3676 @@
+[
+  {
+    "tab": "Home",
+    "icon": "house",
+    "pages": [
+      "index"
+    ]
+  },
+  {
+    "tab": "Guides",
+    "icon": "book-open",
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": [
+          "en/learn/index"
+        ]
+      },
+      {
+        "group": "Introduction",
+        "pages": [
+          "en/learn/intro"
+        ]
+      },
+      {
+        "group": "Get started",
+        "pages": [
+          "en/learn/getting-started/index",
+          {
+            "group": "The layout elements",
+            "pages": [
+              "en/learn/getting-started/main-screen/index",
+              "en/learn/getting-started/main-screen/navigator",
+              "en/learn/getting-started/main-screen/buttons-in-menu-bar",
+              "en/learn/getting-started/main-screen/side-panel",
+              "en/learn/getting-started/main-screen/in-app-help"
+            ]
+          },
+          "en/learn/getting-started/login",
+          "en/learn/getting-started/preferences",
+          "en/learn/getting-started/connect-your-accounts",
+          "en/learn/getting-started/edit-email-signature",
+          "en/learn/getting-started/change-language"
+        ]
+      },
+      {
+        "group": "Learn the basics",
+        "pages": [
+          "en/learn/basics/index",
+          "en/learn/basics/notifications",
+          "en/learn/basics/fav",
+          "en/learn/basics/history",
+          "en/learn/basics/links",
+          "en/learn/basics/notes",
+          "en/learn/basics/print",
+          "en/learn/basics/duplicates",
+          "en/learn/basics/deleting-elements",
+          "en/learn/basics/bulk-update",
+          {
+            "group": "Work with section tabs (archives)",
+            "pages": [
+              "en/learn/section-tabs/index",
+              "en/learn/section-tabs/activities-tab",
+              "en/learn/section-tabs/contacts-tab",
+              "en/learn/section-tabs/relations-tab",
+              "en/learn/section-tabs/sales-tab",
+              "en/learn/section-tabs/projects-tab",
+              "en/learn/section-tabs/requests-tab",
+              "en/learn/section-tabs/configure-columns",
+              "en/learn/section-tabs/filter",
+              "en/learn/section-tabs/group",
+              "en/learn/section-tabs/export-archives",
+              "en/learn/section-tabs/send-email"
+            ]
+          },
+          "en/learn/basics/activity",
+          "en/learn/basics/relations",
+          "en/learn/basics/external-applications-and-url-addresses",
+          "en/learn/basics/creating-shortcuts-to-entries-in-crm"
+        ]
+      },
+      {
+        "group": "Search options",
+        "pages": [
+          "en/search-options/learn/index",
+          "en/search-options/learn/find-screen",
+          "en/search-options/learn/search-criteria",
+          "en/search-options/learn/freetext-search",
+          "en/search-options/learn/in-navigator",
+          "en/search-options/learn/in-dialogs",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/search-options/admin/configure-free-text-search",
+              "en/search-options/admin/stopwords"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Dashboard",
+        "pages": [
+          "en/dashboard/learn/index",
+          "en/dashboard/learn/create",
+          "en/dashboard/learn/update",
+          "en/dashboard/learn/working-with-tiles",
+          "en/dashboard/learn/show-leads",
+          "en/dashboard/learn/show-sales-targets",
+          "en/dashboard/learn/show-marketing",
+          "en/dashboard/learn/show-requests"
+        ]
+      },
+      {
+        "group": "Company",
+        "pages": [
+          "en/company/index",
+          "en/company/learn/index",
+          "en/company/learn/create",
+          "en/company/learn/edit",
+          "en/company/learn/copy",
+          "en/company/learn/merge-companies",
+          "en/company/learn/delete",
+          "en/company/learn/address-formats",
+          "en/company/dev/index"
+        ]
+      },
+      {
+        "group": "Contact",
+        "pages": [
+          "en/contact/index",
+          "en/contact/learn/index",
+          "en/contact/learn/create",
+          "en/contact/learn/edit",
+          "en/contact/learn/move",
+          "en/contact/learn/merge-contacts",
+          "en/contact/learn/delete",
+          "en/contact/learn/send-email",
+          "en/contact/learn/dial",
+          "en/contact/dev/index"
+        ]
+      },
+      {
+        "group": "Diary",
+        "pages": [
+          "en/diary/index",
+          "en/diary/learn/index",
+          "en/diary/learn/follow-ups",
+          "en/diary/learn/video-meetings",
+          "en/diary/learn/create-follow-up",
+          "en/diary/learn/edit-follow-up",
+          "en/diary/learn/move-follow-up",
+          "en/diary/learn/change-completed-status",
+          "en/diary/learn/other-diaries",
+          "en/diary/learn/group-view",
+          "en/diary/learn/follow-up-assign",
+          "en/diary/learn/set-alarm",
+          "en/diary/learn/send-as-email",
+          {
+            "group": "Recurrence",
+            "pages": [
+              "en/diary/learn/recurrence/index",
+              "en/diary/learn/recurrence/create",
+              "en/diary/learn/recurrence/stop"
+            ]
+          },
+          {
+            "group": "Invitations",
+            "pages": [
+              "en/diary/learn/invitation/index",
+              "en/diary/learn/invitation/add-attendee",
+              "en/diary/learn/invitation/accept-decline"
+            ]
+          },
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/diary/admin/add-follow-up-type",
+              "en/diary/admin/add-resource"
+            ]
+          },
+          "en/diary/dev/index"
+        ]
+      },
+      {
+        "group": "Document",
+        "pages": [
+          "en/document/index",
+          "en/document/learn/index",
+          "en/document/library/learn/index",
+          {
+            "group": "Work with documents",
+            "pages": [
+              "en/document/learn/create",
+              "en/document/learn/lock",
+              "en/document/learn/edit",
+              "en/document/learn/send-as-email"
+            ]
+          },
+          {
+            "group": "Document templates",
+            "pages": [
+              "en/document/templates/learn/index",
+              "en/document/templates/learn/document-types",
+              {
+                "group": "Template variables",
+                "pages": [
+                  {
+                    "group": "Reference",
+                    "pages": [
+                      "en/document/templates/variables/from-company-card",
+                      "en/document/templates/variables/from-senders-company-card",
+                      "en/document/templates/variables/for-selected-contact",
+                      "en/document/templates/variables/for-sender-contact-dialog",
+                      "en/document/templates/variables/from-doc-dialog-or-system",
+                      "en/document/templates/variables/for-appointments",
+                      "en/document/templates/variables/for-ical",
+                      "en/document/templates/variables/for-int-address",
+                      "en/document/templates/variables/for-mail-gateway",
+                      "en/document/templates/variables/for-pocket",
+                      "en/document/templates/variables/from-project-card",
+                      "en/document/templates/variables/for-quote-alternative",
+                      "en/document/templates/variables/for-quote-info",
+                      "en/document/templates/variables/for-quote-line",
+                      "en/document/templates/variables/for-quote-line-with-subscription",
+                      "en/document/templates/variables/for-request",
+                      "en/document/templates/variables/for-sales",
+                      "en/document/templates/variables/for-selections",
+                      "en/document/templates/variables/for-service",
+                      "en/document/templates/variables/for-web-app",
+                      "en/document/templates/variables/misc"
+                    ]
+                  },
+                  "en/document/templates/learn/troubleshooting"
+                ]
+              },
+              {
+                "group": "Merge fields (quote templates)",
+                "pages": [
+                  {
+                    "group": "Reference",
+                    "pages": [
+                      "en/document/templates/merge-fields/index",
+                      "en/document/templates/merge-fields/quote",
+                      "en/document/templates/merge-fields/alternative",
+                      "en/document/templates/merge-fields/group",
+                      "en/document/templates/merge-fields/line"
+                    ]
+                  },
+                  "en/document/templates/admin/tutorial"
+                ]
+              },
+              "en/document/templates/learn/create",
+              "en/document/templates/admin/link-template",
+              "en/document/templates/admin/update-template",
+              "en/document/templates/admin/document-template-defaults"
+            ]
+          },
+          {
+            "group": "Technical reference",
+            "pages": [
+              "en/document/library/it/odf"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Email",
+        "pages": [
+          "en/email/index",
+          "en/email/learn/index",
+          "en/email/learn/change-default-mail-client",
+          {
+            "group": "Inbox",
+            "pages": [
+              "en/email/inbox/learn/index",
+              "en/email/inbox/learn/setup",
+              "en/email/inbox/learn/preview",
+              "en/email/inbox/learn/compose",
+              "en/email/inbox/learn/manage-senders",
+              "en/email/inbox/learn/invitations",
+              "en/email/inbox/learn/archive",
+              "en/email/inbox/learn/create-task",
+              "en/email/inbox/learn/create-request"
+            ]
+          },
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/email/admin/add-email-template",
+              {
+                "group": "Mailbox administration",
+                "pages": [
+                  "en/email/admin/mailbox/index",
+                  "en/email/admin/mailbox/create-mailbox",
+                  "en/email/admin/mailbox/create-sms-mailbox",
+                  "en/email/admin/mailbox/create-email-filter",
+                  "en/email/admin/mailbox/delete-mailbox"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Sale",
+        "pages": [
+          "en/sale/index",
+          "en/sale/learn/index",
+          "en/sale/learn/create",
+          "en/sale/learn/update",
+          "en/sale/learn/sales-guides",
+          "en/sale/learn/tutorial",
+          {
+            "group": "Stakeholders",
+            "pages": [
+              "en/sale/learn/stakeholders/create",
+              "en/sale/learn/stakeholders/edit"
+            ]
+          },
+          "en/sale/learn/forecasting",
+          {
+            "group": "Sales targets",
+            "pages": [
+              "en/sale/learn/sales-targets/index",
+              "en/sale/learn/sales-targets/create",
+              "en/sale/learn/sales-targets/target-types"
+            ]
+          },
+          {
+            "group": "Quote",
+            "pages": [
+              "en/sale/learn/quote/index",
+              "en/sale/learn/quote/create",
+              "en/sale/learn/quote/add-alternative",
+              "en/sale/learn/quote/create-quote-document",
+              "en/sale/learn/quote/send",
+              "en/sale/learn/quote/place-order"
+            ]
+          },
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/sale/admin/index",
+              "en/sale/admin/sale-stage",
+              "en/sale/admin/sale-type",
+              "en/sale/admin/create-sales-guide",
+              "en/sale/admin/edit-sales-guide",
+              "en/sale/admin/add-currency",
+              {
+                "group": "Quote",
+                "pages": [
+                  "en/sale/admin/quote/price-list-and-products",
+                  "en/sale/admin/quote/configure-product-fields",
+                  "en/sale/admin/quote/set-up-quote-connector"
+                ]
+              }
+            ]
+          },
+          "en/sale/dev/index"
+        ]
+      },
+      {
+        "group": "Project",
+        "pages": [
+          "en/project/index",
+          "en/project/learn/index",
+          "en/project/learn/create",
+          "en/project/learn/add-image",
+          "en/project/learn/edit",
+          "en/project/learn/merge-projects",
+          "en/project/learn/delete",
+          {
+            "group": "Project members",
+            "pages": [
+              "en/project/learn/project-members/index",
+              "en/project/learn/project-members/add",
+              "en/project/learn/project-members/edit",
+              "en/project/learn/project-members/invite-to-meeting",
+              "en/project/learn/project-members/send-email-to",
+              "en/project/learn/project-members/create-mailing"
+            ]
+          },
+          "en/project/learn/project-guides",
+          "en/project/learn/tutorial",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/project/admin/index",
+              "en/project/admin/project-status",
+              "en/project/admin/project-type",
+              "en/project/admin/create-project-guide",
+              "en/project/admin/edit-project-guide"
+            ]
+          },
+          "en/project/dev/index"
+        ]
+      },
+      {
+        "group": "Requests",
+        "pages": [
+          "en/request/index",
+          "en/request/learn/index",
+          "en/request/learn/handle-request-ai",
+          "en/request/learn/find",
+          "en/request/learn/create",
+          "en/request/learn/edit-message",
+          "en/request/learn/assign",
+          "en/request/learn/spam",
+          "en/request/learn/accept",
+          "en/request/learn/transfer",
+          "en/request/learn/forward",
+          "en/request/learn/reply",
+          "en/request/learn/request-relations",
+          "en/request/learn/tags",
+          "en/request/learn/flag-message",
+          "en/request/learn/split-request",
+          "en/request/learn/merge",
+          "en/request/learn/split-message",
+          "en/request/learn/close",
+          "en/request/learn/delete",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/request/admin/index",
+              {
+                "group": "Request types",
+                "pages": [
+                  "en/request/admin/type/index",
+                  "en/request/admin/type/create",
+                  "en/request/admin/type/delete"
+                ]
+              },
+              "en/request/admin/relation-rules",
+              {
+                "group": "Categories",
+                "pages": [
+                  "en/request/admin/category/index",
+                  "en/request/admin/category/create",
+                  "en/request/admin/category/delete",
+                  "en/request/admin/category/external-categories"
+                ]
+              },
+              {
+                "group": "Priorities",
+                "pages": [
+                  "en/request/admin/priority/index",
+                  "en/request/admin/priority/create",
+                  "en/request/admin/priority/delete",
+                  "en/request/admin/priority/escalation-levels"
+                ]
+              },
+              {
+                "group": "Request status",
+                "pages": [
+                  "en/request/admin/status/index",
+                  "en/request/admin/status/create",
+                  "en/request/admin/status/delete"
+                ]
+              },
+              "en/request/admin/next-in-queue",
+              "en/request/admin/system-templates"
+            ]
+          },
+          "en/request/dev/index"
+        ]
+      },
+      {
+        "group": "Custom objects",
+        "pages": [
+          "en/custom-objects/learn/index",
+          "en/custom-objects/learn/more-tab",
+          {
+            "group": "User-defined fields",
+            "pages": [
+              "en/custom-objects/learn/udef",
+              "en/custom-objects/admin/add-udef",
+              "en/custom-objects/admin/edit-udef",
+              "en/custom-objects/admin/edit-udef-layout"
+            ]
+          },
+          {
+            "group": "Extra tables",
+            "pages": [
+              "en/custom-objects/learn/extra-table",
+              "en/custom-objects/admin/create-extra-table"
+            ]
+          },
+          {
+            "group": "Extra fields",
+            "pages": [
+              "en/custom-objects/learn/extra-field",
+              "en/custom-objects/admin/create-extra-field",
+              "en/custom-objects/admin/show-extra-field-on-request-details"
+            ]
+          },
+          "en/custom-objects/reference/index"
+        ]
+      },
+      {
+        "group": "Selection",
+        "pages": [
+          "en/search-options/selection/learn/index",
+          "en/search-options/selection/learn/create",
+          "en/search-options/selection/learn/update",
+          "en/search-options/selection/learn/combine",
+          "en/search-options/selection/learn/add-remove-members-static",
+          "en/search-options/selection/learn/copy-members-to",
+          "en/search-options/selection/learn/board-view",
+          {
+            "group": "Perform tasks using selection",
+            "pages": [
+              "en/search-options/selection/learn/howto/index",
+              "en/search-options/selection/learn/howto/create-mailings",
+              "en/search-options/selection/learn/howto/send-email",
+              "en/search-options/selection/learn/howto/generate-follow-ups",
+              "en/search-options/selection/learn/howto/display-as-charts",
+              "en/search-options/selection/learn/howto/print-labels",
+              "en/search-options/selection/learn/howto/print",
+              "en/search-options/selection/learn/howto/export"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Chat",
+        "pages": [
+          "en/chat/learn/index",
+          "en/chat/learn/statistics",
+          "en/chat/learn/respond",
+          "en/chat/learn/link-to-person",
+          "en/chat/learn/create-request",
+          "en/chat/learn/transfer-to-agent",
+          "en/chat/learn/as-customer",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/chat/admin/index",
+              "en/chat/admin/channel-create",
+              "en/chat/admin/add-javascript"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Marketing",
+        "pages": [
+          "en/marketing/learn/index",
+          "en/marketing/learn/create-folder",
+          "en/marketing/learn/add-images",
+          "en/marketing/learn/message-templates",
+          "en/marketing/learn/best-practices",
+          {
+            "group": "Mailings",
+            "pages": [
+              "en/marketing/mailing/learn/index",
+              {
+                "group": "Create new mailing",
+                "pages": [
+                  "en/marketing/mailing/learn/create/index",
+                  "en/marketing/mailing/learn/create/tutorial-email-mailing",
+                  "en/marketing/mailing/learn/create/tutorial-sms-mailing",
+                  "en/marketing/mailing/learn/create/tutorial-document-mailing",
+                  "en/marketing/mailing/learn/create/tutorial-form-mailing",
+                  "en/marketing/mailing/learn/create/send-test-email"
+                ]
+              },
+              "en/marketing/mailing/learn/view-statistics",
+              "en/marketing/mailing/learn/resend",
+              "en/marketing/mailing/admin/define-settings-for-mailings",
+              "en/marketing/mailing/admin/add-domain"
+            ]
+          },
+          {
+            "group": "Drag and drop editor",
+            "pages": [
+              "en/marketing/editor/learn/index",
+              "en/marketing/editor/learn/add-content",
+              "en/marketing/editor/learn/edit-paragraph",
+              "en/marketing/editor/learn/insert-images-in-message",
+              "en/marketing/editor/learn/add-merge-tag",
+              "en/marketing/editor/learn/add-link-to-display-message-in-browser",
+              "en/marketing/editor/learn/add-unsubscribe-link",
+              "en/marketing/editor/learn/add-tracked-link-to-msg"
+            ]
+          },
+          {
+            "group": "Recipients (target group)",
+            "pages": [
+              "en/marketing/recipients/learn/index",
+              "en/marketing/recipients/learn/manage-email-subscriptions",
+              "en/marketing/recipients/learn/look-at-recipient-list",
+              "en/marketing/recipients/learn/manage-bounces",
+              "en/marketing/recipients/learn/spam-complaints"
+            ]
+          },
+          {
+            "group": "Tracked links",
+            "pages": [
+              "en/marketing/tracked-links/learn/index",
+              "en/marketing/tracked-links/learn/create-links",
+              "en/marketing/tracked-links/learn/define-link-actions",
+              "en/marketing/tracked-links/learn/add-google-analytics-tag",
+              "en/marketing/tracked-links/learn/explore-clicks",
+              "en/marketing/tracked-links/learn/reset-counter",
+              "en/marketing/tracked-links/learn/ga-tutorial"
+            ]
+          },
+          {
+            "group": "Forms",
+            "pages": [
+              "en/marketing/forms/learn/index",
+              "en/marketing/forms/learn/create",
+              "en/marketing/forms/learn/field-options",
+              "en/marketing/forms/learn/recaptcha",
+              "en/marketing/forms/learn/define-form-actions",
+              "en/marketing/forms/learn/form-templates",
+              "en/marketing/forms/learn/publish",
+              "en/marketing/forms/learn/view-statistics",
+              "en/marketing/forms/learn/process-submissions",
+              "en/marketing/forms/learn/tutorial-contact-me",
+              "en/marketing/forms/learn/tutorial-sign-up",
+              "en/marketing/forms/admin/manage-fonts",
+              "en/marketing/forms/admin/form-field-restrictions"
+            ]
+          },
+          {
+            "group": "Flows",
+            "pages": [
+              "en/marketing/flows/learn/index",
+              "en/marketing/flows/learn/create",
+              "en/marketing/flows/learn/update",
+              "en/marketing/flows/learn/split",
+              "en/marketing/flows/learn/define-flow-actions",
+              "en/marketing/flows/learn/content",
+              "en/marketing/flows/learn/step-settings",
+              "en/marketing/flows/learn/run-pause-end",
+              "en/marketing/flows/learn/participants",
+              "en/marketing/flows/learn/view-statistics"
+            ]
+          },
+          {
+            "group": "SMS",
+            "pages": [
+              "en/marketing/sms/it/index",
+              "en/marketing/sms/it/set-up"
+            ]
+          },
+          {
+            "group": "Conversion tracking",
+            "pages": [
+              "en/marketing/utm/learn/index",
+              "en/marketing/utm/learn/parameters",
+              {
+                "group": "For administrators",
+                "pages": [
+                  "en/marketing/utm/admin/set-up"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Lead management",
+        "pages": [
+          "en/lead/learn/index",
+          "en/lead/learn/work-with-leads",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/lead/admin/index",
+              "en/lead/admin/add-company-category",
+              "en/lead/admin/add-lead-status",
+              "en/lead/admin/category-automation"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Mobile CRM",
+        "pages": []
+      },
+      {
+        "group": "Knowledge base",
+        "pages": [
+          "en/knowledge-base/learn/index",
+          "en/knowledge-base/learn/manage-folders",
+          {
+            "group": "Reply templates",
+            "pages": [
+              "en/knowledge-base/learn/reply-templates/index",
+              "en/knowledge-base/learn/reply-templates/create",
+              "en/knowledge-base/learn/reply-templates/new-language",
+              "en/knowledge-base/learn/reply-templates/edit",
+              "en/knowledge-base/learn/reply-templates/template-variables"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "en/knowledge-base/learn/faq/index",
+              "en/knowledge-base/learn/faq/create",
+              "en/knowledge-base/learn/faq/edit",
+              "en/knowledge-base/learn/faq/publish",
+              "en/knowledge-base/learn/faq/workflow"
+            ]
+          },
+          "en/knowledge-base/learn/email-addresses",
+          "en/knowledge-base/learn/external-document"
+        ]
+      },
+      {
+        "group": "Privacy settings and GDPR",
+        "pages": [
+          "en/security/privacy/learn/index",
+          "en/security/privacy/learn/edit-legal-base",
+          "en/security/privacy/learn/send-privacy-confirmation-email",
+          "en/security/privacy/learn/generate-personal-data-report",
+          "en/security/privacy/learn/mass-delete",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/security/privacy/admin/index",
+              "en/security/privacy/admin/add-purpose",
+              "en/security/privacy/admin/add-legal-base",
+              "en/security/privacy/admin/add-source",
+              "en/security/privacy/admin/edit-privacy-confirmation-email"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "AI services",
+        "pages": [
+          "en/ai/learn/index",
+          "en/ai/learn/text-analysis",
+          "en/ai/learn/categorization",
+          "en/ai/learn/copilot",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/ai/admin/set-up-categorization"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "SAINT (Sales intelligence)",
+        "pages": [
+          "en/saint/learn/index",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/saint/admin/index",
+              "en/saint/admin/set-up",
+              "en/saint/admin/update",
+              "en/saint/admin/counter-settings",
+              "en/saint/admin/sale-amount-class"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "ERP",
+        "pages": [
+          "en/erp/learn/index",
+          "en/erp/learn/connect",
+          "en/erp/learn/disconnect",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/erp/admin/index",
+              "en/erp/admin/add-connection",
+              "en/erp/admin/configure",
+              "en/erp/admin/update-connection",
+              "en/erp/admin/resync-from-crm"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Customization",
+        "pages": [
+          "en/customization/index",
+          {
+            "group": "Screen designer",
+            "pages": [
+              "en/customization/screen-designer/admin/index",
+              "en/customization/screen-designer/admin/add-layout",
+              "en/customization/screen-designer/admin/edit-layout",
+              "en/customization/screen-designer/admin/working-with-fields",
+              "en/customization/screen-designer/admin/working-with-grids",
+              "en/customization/screen-designer/admin/working-with-tabs",
+              "en/customization/screen-designer/admin/working-with-archives",
+              "en/customization/screen-designer/admin/add-button",
+              "en/customization/screen-designer/admin/assign-layout",
+              "en/customization/screen-designer/admin/reference",
+              "en/customization/screen-designer/admin/tutorial-move-country"
+            ]
+          },
+          {
+            "group": "Web panels",
+            "pages": [
+              "en/customization/web-panels/admin/index",
+              "en/customization/web-panels/admin/add-web-panel",
+              "en/customization/web-panels/admin/url-encoding",
+              {
+                "group": "For consultants",
+                "pages": [
+                  "en/customization/web-panels/dev/index"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Macros and scripts",
+            "pages": [
+              "en/customization/macros-and-scripts/admin/index",
+              "en/customization/macros-and-scripts/admin/create-script",
+              "en/customization/macros-and-scripts/admin/create-macro",
+              "en/customization/macros-and-scripts/admin/trigger",
+              "en/customization/macros-and-scripts/admin/schedule-task"
+            ]
+          },
+          {
+            "group": "Customer center",
+            "pages": [
+              "en/customer-center/learn/index",
+              "en/customer-center/learn/config",
+              "en/customer-center/learn/edit",
+              "en/customer-center/learn/send-credentials",
+              "en/customer-center/learn/enable-chat",
+              "en/customer-center/learn/link-form",
+              {
+                "group": "For administrators",
+                "pages": [
+                  "en/customer-center/admin/style-subscription-page",
+                  "en/customer-center/admin/password-policy"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "System design",
+            "pages": [
+              "en/ui/blogic/learn/index",
+              {
+                "group": "Profiles",
+                "pages": [
+                  "en/ui/blogic/learn/profiles/index",
+                  "en/ui/blogic/learn/profiles/personal",
+                  "en/ui/blogic/learn/profiles/common",
+                  "en/ui/blogic/learn/profiles/global"
+                ]
+              },
+              "en/ui/blogic/learn/screen-chooser",
+              "en/ui/blogic/learn/screen-definition",
+              "en/ui/blogic/learn/screen-properties",
+              {
+                "group": "Extra menus",
+                "pages": [
+                  "en/ui/blogic/learn/extra-menus/index",
+                  "en/ui/blogic/learn/extra-menus/actions",
+                  "en/ui/blogic/learn/extra-menus/navigator",
+                  "en/ui/blogic/learn/extra-menus/properties"
+                ]
+              }
+            ]
+          },
+          "en/customization/admin/package-properties",
+          "en/customization/admin/add-items-to-task-menu",
+          "en/customization/admin/other-applications"
+        ]
+      },
+      {
+        "group": "Settings and maintenance",
+        "pages": [
+          "en/admin/index",
+          "en/admin/getting-started",
+          "en/admin/adjusting-views",
+          {
+            "group": "Licenses",
+            "pages": [
+              "en/admin/license/index",
+              "en/admin/license/crm-suite",
+              "en/admin/license/user-plans",
+              "en/admin/license/activate",
+              "en/admin/license/expander-services",
+              {
+                "group": "Technical details",
+                "pages": [
+                  "en/admin/license/dev/index",
+                  "en/admin/license/dev/user-plans",
+                  "en/admin/license/dev/module-licenses",
+                  "en/admin/license/dev/hidden-licenses",
+                  "en/admin/license/dev/partner-licenses"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Preferences",
+            "pages": [
+              "en/admin/preferences/index",
+              "en/admin/preferences/update",
+              "en/admin/preferences/service-settings",
+              "en/admin/preferences/sms"
+            ]
+          },
+          {
+            "group": "Options",
+            "pages": [
+              "en/admin/options/index",
+              "en/admin/options/configure-number-allocation",
+              "en/admin/options/change-ui-labels"
+            ]
+          },
+          {
+            "group": "User preferences",
+            "pages": [
+              "en/admin/user-preferences/index",
+              {
+                "group": "Reference",
+                "pages": [
+                  "en/admin/user-preferences/reference/appointment-dialog",
+                  "en/admin/user-preferences/reference/associates",
+                  "en/admin/user-preferences/reference/defaults",
+                  "en/admin/user-preferences/reference/diary-view",
+                  "en/admin/user-preferences/reference/field-labels",
+                  "en/admin/user-preferences/reference/field-replication",
+                  "en/admin/user-preferences/reference/filter",
+                  "en/admin/user-preferences/reference/find-contact",
+                  "en/admin/user-preferences/reference/freetext",
+                  "en/admin/user-preferences/reference/functions",
+                  "en/admin/user-preferences/reference/mail",
+                  "en/admin/user-preferences/reference/netservices",
+                  "en/admin/user-preferences/reference/numbering",
+                  "en/admin/user-preferences/reference/phone",
+                  "en/admin/user-preferences/reference/pocket-tasks",
+                  "en/admin/user-preferences/reference/scripting",
+                  "en/admin/user-preferences/reference/sorting",
+                  "en/admin/user-preferences/reference/system",
+                  "en/admin/user-preferences/reference/travel",
+                  "en/admin/user-preferences/reference/visual"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Lists",
+            "pages": [
+              "en/admin/lists/index",
+              "en/admin/lists/add-items",
+              "en/admin/lists/update-items",
+              "en/admin/lists/restore",
+              "en/admin/lists/headings",
+              "en/admin/lists/user-group-filtering",
+              "en/admin/lists/specialized-lists",
+              "en/admin/lists/user-defined-lists"
+            ]
+          },
+          {
+            "group": "User management",
+            "pages": [
+              "en/admin/user-management/index",
+              "en/admin/user-management/add-associate",
+              "en/admin/user-management/update-user",
+              "en/admin/user-management/our-companies",
+              "en/admin/user-management/user-groups",
+              {
+                "group": "Role",
+                "pages": [
+                  "en/admin/user-management/role/index",
+                  "en/admin/user-management/role/create-role",
+                  "en/admin/user-management/role/update-role",
+                  "en/admin/user-management/role/set-data-rights-for-role",
+                  "en/admin/user-management/role/functional-rights"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Import",
+            "pages": [
+              "en/admin/import/index",
+              "en/admin/import/create-spreadsheet",
+              "en/admin/import/from-excel",
+              "en/admin/import/from-mac-address-book",
+              "en/admin/import/from-gmail",
+              "en/admin/import/from-erp",
+              "en/admin/import/products-from-excel",
+              "en/admin/import/settings"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Language, translation, and timezones",
+        "pages": [
+          "en/localization/learn/customer-languages",
+          "en/localization/learn/translate-fields",
+          "en/localization/learn/time-zones",
+          {
+            "group": "For administrators",
+            "pages": [
+              "en/localization/admin/enable-time-zones",
+              "en/localization/admin/select-time-zones",
+              "en/localization/admin/add-customer-language"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tab": "Mobile",
+    "icon": "mobile-screen",
+    "groups": {
+      "$ref": "./nav-mobile.json"
+    }
+  },
+  {
+    "tab": "Integrations",
+    "icon": "plus",
+    "groups": {
+      "$ref": "./nav-integrations.json"
+    }
+  },
+  {
+    "tab": "Online",
+    "icon": "book",
+    "groups": [
+      {
+        "group": "SuperOffice CRM Online",
+        "pages": [
+          "en/online/overview",
+          "en/online/system-requirements",
+          "en/online/cookies",
+          "en/online/security",
+          {
+            "group": "Migrate to Online",
+            "pages": [
+              "en/online/migrate/documents-migration"
+            ]
+          },
+          "en/online/migrate/troubleshooting",
+          "en/online/integrate/index",
+          {
+            "group": "Production sandbox",
+            "pages": [
+              "en/online/sandbox/order-sandbox",
+              "en/online/sandbox/replace",
+              "en/online/sandbox/clone-to"
+            ]
+          },
+          {
+            "group": "Identity Management",
+            "pages": [
+              "en/online/identity/overview",
+              "en/online/identity/federated-auth",
+              "en/online/identity/federated-id-and-identity-providers",
+              "en/online/identity/id-transfer-tickets",
+              "en/online/identity/multi-factor-authentication",
+              {
+                "group": "Single sign-on",
+                "pages": [
+                  "en/online/identity/single-sign-on/onsite-sso"
+                ]
+              },
+              {
+                "group": "SuperID",
+                "pages": [
+                  "en/online/identity/superid/sign-in-services",
+                  "en/online/identity/superid/user-accounts-and-passwords",
+                  "en/online/identity/superid/primary-tenant",
+                  "en/online/identity/superid/superid-webtools-maillink-pocket",
+                  "en/online/identity/superid/known-challenges",
+                  "en/online/identity/superid/terms-and-conditions",
+                  {
+                    "group": "How-to",
+                    "pages": [
+                      "en/online/identity/superid/howto/federated-sign-in-guide",
+                      "en/online/identity/superid/howto/check-idp-domain",
+                      "en/online/identity/superid/howto/register-idp",
+                      "en/online/identity/superid/howto/map-idp-usernames",
+                      "en/online/identity/superid/howto/complete-user-transition",
+                      "en/online/identity/superid/howto/custom-domains-registration-form"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "User",
+                "pages": [
+                  "en/online/identity/user/add-user-in-admin-client",
+                  "en/online/identity/user/enforce-password-policy",
+                  "en/online/identity/user/reset-password",
+                  "en/online/identity/user/send-welcome-emails"
+                ]
+              },
+              {
+                "group": "Active Directory",
+                "pages": [
+                  "en/online/identity/ad/set-up-ad-auth",
+                  "en/online/identity/ad/mapping-so-user-to-ad-v-7-1"
+                ]
+              },
+              {
+                "group": "SCIM",
+                "pages": [
+                  "en/online/identity/scim/sign-in-to-scim",
+                  "en/online/identity/scim/identity-management-gw",
+                  "en/online/identity/scim/scim-rules",
+                  {
+                    "group": "User provisioning",
+                    "pages": [
+                      "en/online/identity/scim/provisioning/add-scim-rule",
+                      "en/online/identity/scim/provisioning/activate-deactivate-rules",
+                      "en/online/identity/scim/provisioning/preview-sync",
+                      "en/online/identity/scim/provisioning/sync-company",
+                      "en/online/identity/scim/provisioning/sync-user",
+                      "en/online/identity/scim/provisioning/restart-sync"
+                    ]
+                  },
+                  {
+                    "group": "Setup",
+                    "pages": [
+                      "en/online/identity/scim/setup/setup-guide",
+                      "en/online/identity/scim/setup/create-azure-enterprise-app",
+                      "en/online/identity/scim/setup/enable-auto-sync",
+                      "en/online/identity/scim/setup/get-scim-config",
+                      "en/online/identity/scim/setup/get-sync-error-messages"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Mirroring",
+            "pages": [
+              "en/online/mirroring/overview",
+              "en/online/mirroring/requirements",
+              "en/online/mirroring/order-database-mirroring",
+              "en/online/mirroring/setup-guide",
+              "en/online/mirroring/migrate",
+              "en/online/mirroring/force-resync",
+              "en/online/mirroring/troubleshooting",
+              {
+                "group": "Reference",
+                "pages": [
+                  "en/online/mirroring/scenarios",
+                  "en/online/mirroring/sql-server-schema",
+                  "en/online/mirroring/change-tracking",
+                  "en/online/mirroring/blocked-tables"
+                ]
+              },
+              {
+                "group": "Legacy (WCF) mirroring",
+                "pages": [
+                  "en/online/mirroring/conceptual-overview-2016",
+                  "en/online/mirroring/mirroring-task",
+                  "en/online/mirroring/getting-started/index",
+                  "en/online/mirroring/getting-started/create-wfc",
+                  "en/online/mirroring/getting-started/i-mirror-client-service",
+                  "en/online/mirroring/skip-tables"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Mail services",
+            "pages": [
+              {
+                "group": "Mailgun",
+                "pages": [
+                  "en/online/mail-services/mailgun/index",
+                  "en/online/mail-services/mailgun/amount-speed",
+                  "en/online/mail-services/mailgun/reasons-to-customize",
+                  "en/online/mail-services/mailgun/security",
+                  "en/online/mail-services/mailgun/sub-processor-info",
+                  {
+                    "group": "DKIM",
+                    "pages": [
+                      "en/online/mail-services/mailgun/dkim/set-up",
+                      "en/online/mail-services/mailgun/dkim/order-key",
+                      "en/online/mail-services/mailgun/dkim/multiple-dkim-records",
+                      "en/online/mail-services/mailgun/dkim/change-us-to-eu"
+                    ]
+                  },
+                  {
+                    "group": "SPF",
+                    "pages": [
+                      "en/online/mail-services/mailgun/spf/set-up"
+                    ]
+                  }
+                ]
+              },
+              "en/email/inbox/it/index",
+              {
+                "group": "Service and Marketing (cUrl)",
+                "pages": [
+                  "en/online/mail-services/curl/migrate",
+                  "en/online/mail-services/curl/oauth-microsoft365"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tab": "Release Notes",
+    "icon": "bullhorn",
+    "groups": {
+      "$ref": "./nav-releases.json"
+    }
+  },
+  {
+    "tab": "Developer guide",
+    "icon": "square-terminal",
+    "menu": [
+      {
+        "item": "Developer Portal",
+        "icon": "laptop-code",
+        "groups": [
+          {
+            "group": "Developer portal",
+            "pages": [
+              "en/developer-portal/about",
+              "en/developer-portal/widgets/index",
+              {
+                "group": "Getting started",
+                "pages": [
+                  "en/developer-portal/getting-started/get-access-to-sod",
+                  "en/developer-portal/getting-started/quickstart",
+                  "en/developer-portal/getting-started/app-envir",
+                  "en/developer-portal/getting-started/user-contexts",
+                  "en/developer-portal/getting-started/what-api-to-use"
+                ]
+              },
+              {
+                "group": "Create a new app",
+                "pages": [
+                  "en/developer-portal/create-app/index",
+                  {
+                    "group": "Register the app",
+                    "pages": [
+                      "en/developer-portal/create-app/web-app",
+                      "en/developer-portal/create-app/native-app",
+                      "en/developer-portal/create-app/server-to-server-app",
+                      "en/developer-portal/create-app/sync-app",
+                      "en/developer-portal/create-app/empty-app"
+                    ]
+                  },
+                  "en/developer-portal/create-app/versioning",
+                  {
+                    "group": "Configuration",
+                    "pages": [
+                      "en/developer-portal/create-app/config/find-clientid",
+                      "en/developer-portal/create-app/config/get-client-secret",
+                      "en/developer-portal/create-app/config/cors-and-redirection-urls",
+                      "en/developer-portal/create-app/config/new-certificate",
+                      "en/developer-portal/create-app/config/redirects",
+                      "en/developer-portal/create-app/config/update-endpoints",
+                      "en/developer-portal/create-app/config/update-app-config",
+                      "en/developer-portal/create-app/config/app-config"
+                    ]
+                  },
+                  "en/developer-portal/create-app/request-to-publish",
+                  "en/developer-portal/create-app/message-center",
+                  "en/developer-portal/create-app/helper-application"
+                ]
+              },
+              {
+                "group": "Custom app",
+                "pages": [
+                  "en/developer-portal/custom-app/checklist",
+                  "en/developer-portal/custom-app/validate",
+                  "en/developer-portal/custom-app/activate"
+                ]
+              },
+              {
+                "group": "Standard app",
+                "pages": [
+                  "en/developer-portal/standard-app/index",
+                  {
+                    "group": "Requirements",
+                    "pages": [
+                      "en/developer-portal/standard-app/requirements/business",
+                      "en/developer-portal/standard-app/requirements/design",
+                      "en/developer-portal/standard-app/requirements/localization",
+                      "en/developer-portal/standard-app/requirements/marketing",
+                      "en/developer-portal/standard-app/requirements/partner-brand-guidelines",
+                      "en/developer-portal/standard-app/requirements/security",
+                      "en/developer-portal/standard-app/requirements/technical"
+                    ]
+                  },
+                  {
+                    "group": "Certification",
+                    "pages": [
+                      "en/developer-portal/standard-app/certification/initial-security-eval",
+                      "en/developer-portal/standard-app/certification/checklist",
+                      "en/developer-portal/standard-app/certification/certify-app",
+                      "en/developer-portal/standard-app/certification/watchcom-testimonials"
+                    ]
+                  },
+                  {
+                    "group": "App store",
+                    "pages": [
+                      "en/developer-portal/standard-app/app-store/app-store-info",
+                      "en/developer-portal/standard-app/app-store/update-partner-profile",
+                      "en/developer-portal/standard-app/app-store/update-app-page",
+                      "en/developer-portal/standard-app/app-store/seo",
+                      "en/developer-portal/standard-app/app-store/prices-and-terms",
+                      "en/developer-portal/standard-app/app-store/user-guide",
+                      "en/developer-portal/standard-app/app-store/images-and-videos",
+                      "en/developer-portal/standard-app/app-store/app-settings"
+                    ]
+                  },
+                  "en/developer-portal/standard-app/publish"
+                ]
+              },
+              {
+                "group": "Best practices",
+                "pages": [
+                  {
+                    "group": "Tenant status",
+                    "pages": [
+                      "en/developer-portal/best-practices/tenant-status/check-status",
+                      "en/developer-portal/best-practices/tenant-status/get-notifications"
+                    ]
+                  },
+                  "en/developer-portal/best-practices/error-emails",
+                  "en/developer-portal/best-practices/system-messages"
+                ]
+              },
+              {
+                "group": "Partners and users",
+                "pages": [
+                  "en/developer-portal/partner/update-profile",
+                  "en/developer-portal/partner/update-partner-settings",
+                  "en/developer-portal/partner/manage-technical-contacts",
+                  "en/developer-portal/partner/partner-settings",
+                  "en/developer-portal/partner/add-user",
+                  "en/developer-portal/partner/edit-user",
+                  "en/developer-portal/partner/remove-user",
+                  "en/developer-portal/partner/user-settings",
+                  "en/developer-portal/partner/manage-permissions"
+                ]
+              },
+              {
+                "group": "Provisioning",
+                "pages": [
+                  "en/developer-portal/provisioning/consent",
+                  "en/developer-portal/provisioning/get-consent",
+                  "en/developer-portal/provisioning/revoke",
+                  "en/developer-portal/provisioning/update-consent-text"
+                ]
+              },
+              {
+                "group": "Tenant management",
+                "pages": [
+                  "en/developer-portal/tenants/info",
+                  "en/developer-portal/tenants/authorization",
+                  "en/developer-portal/tenants/get"
+                ]
+              },
+              {
+                "group": "Analytics",
+                "pages": [
+                  "en/developer-portal/analytics/logs",
+                  "en/developer-portal/analytics/metered-services",
+                  "en/developer-portal/analytics/failures",
+                  "en/developer-portal/analytics/metrics-performance"
+                ]
+              },
+              {
+                "group": "FAQ",
+                "pages": [
+                  "en/developer-portal/faq/format-text",
+                  "en/developer-portal/faq/update-contact-person",
+                  "en/developer-portal/faq/update-app",
+                  "en/developer-portal/faq/turn-off-mirroring",
+                  "en/developer-portal/faq/run-website-on-iis-localhost",
+                  "en/developer-portal/faq/unable-to-approve-app"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "item": "Automation",
+        "icon": "gears",
+        "groups": [
+          {
+            "group": "Automation",
+            "pages": [
+              "en/automation/overview",
+              {
+                "group": "Chatbot",
+                "pages": [
+                  "en/automation/chatbot/registration",
+                  "en/automation/chatbot/sessions",
+                  "en/automation/chatbot/messages",
+                  "en/automation/chatbot/reference"
+                ]
+              },
+              {
+                "group": "CRMScript",
+                "pages": [
+                  {
+                    "group": "Introduction",
+                    "pages": [
+                      "en/automation/crmscript/overview/index",
+                      "en/automation/crmscript/overview/crmscript-usage",
+                      "en/automation/crmscript/overview/envir-and-tools",
+                      "en/automation/crmscript/overview/getting-started"
+                    ]
+                  },
+                  {
+                    "group": "Fundamentals",
+                    "pages": [
+                      "en/automation/crmscript/fundamentals/index",
+                      "en/automation/crmscript/fundamentals/syntax",
+                      "en/automation/crmscript/fundamentals/reserved",
+                      "en/automation/crmscript/fundamentals/variables",
+                      "en/automation/crmscript/fundamentals/operators",
+                      "en/automation/crmscript/fundamentals/datatypes-intro",
+                      "en/automation/crmscript/fundamentals/functions",
+                      "en/automation/crmscript/fundamentals/structs",
+                      "en/automation/crmscript/fundamentals/arrays",
+                      {
+                        "group": "Control",
+                        "pages": [
+                          "en/automation/crmscript/fundamentals/conditions",
+                          "en/automation/crmscript/fundamentals/try-catch"
+                        ]
+                      },
+                      {
+                        "group": "Loops",
+                        "pages": [
+                          "en/automation/crmscript/fundamentals/for-loops",
+                          "en/automation/crmscript/fundamentals/foreach-loops",
+                          "en/automation/crmscript/fundamentals/while-loops",
+                          "en/automation/crmscript/fundamentals/loop-control"
+                        ]
+                      },
+                      "en/automation/crmscript/fundamentals/output"
+                    ]
+                  },
+                  {
+                    "group": "Code quality",
+                    "pages": [
+                      "en/automation/crmscript/code-quality/index",
+                      "en/automation/crmscript/code-quality/coding-conventions",
+                      "en/automation/crmscript/code-quality/best-practices",
+                      "en/automation/crmscript/code-quality/intellisense"
+                    ]
+                  },
+                  "en/automation/crmscript/security/index",
+                  {
+                    "group": "Data types",
+                    "pages": [
+                      "en/automation/crmscript/datatypes/index",
+                      "en/automation/crmscript/datatypes/bool-type",
+                      "en/automation/crmscript/datatypes/integer-type",
+                      "en/automation/crmscript/datatypes/float-type",
+                      "en/automation/crmscript/datatypes/map-type",
+                      "en/automation/crmscript/datatypes/string-type",
+                      "en/automation/crmscript/datatypes/date-type",
+                      "en/automation/crmscript/datatypes/time-type",
+                      "en/automation/crmscript/datatypes/datetime-type",
+                      "en/automation/crmscript/datatypes/generic-type",
+                      "en/automation/crmscript/datatypes/eventdata-type"
+                    ]
+                  },
+                  {
+                    "group": "Debugging",
+                    "pages": [
+                      "en/automation/crmscript/debugging/built-in-debugger",
+                      "en/automation/crmscript/debugging/log-messages",
+                      "en/automation/crmscript/debugging/print-debug",
+                      "en/automation/crmscript/debugging/development-mode",
+                      "en/automation/crmscript/debugging/using-trace",
+                      "en/automation/crmscript/debugging/helper-functions-for-logging",
+                      "en/automation/crmscript/debugging/troubleshooting"
+                    ]
+                  },
+                  {
+                    "group": "Working with ...",
+                    "pages": [
+                      {
+                        "group": "NetServer",
+                        "pages": [
+                          "en/automation/crmscript/netserver/ns-agents-and-carriers",
+                          "en/automation/crmscript/netserver/ns-classes",
+                          "en/automation/crmscript/netserver/crmscript-archiveagent"
+                        ]
+                      },
+                      "en/automation/crmscript/parser",
+                      {
+                        "group": "SearchEngine",
+                        "pages": [
+                          "en/automation/crmscript/searchengine/index",
+                          "en/automation/crmscript/searchengine/db-basics",
+                          "en/automation/crmscript/searchengine/dot-syntax",
+                          "en/automation/crmscript/searchengine/se-select",
+                          "en/automation/crmscript/searchengine/se-run",
+                          "en/automation/crmscript/searchengine/se-results",
+                          "en/automation/crmscript/searchengine/se-insert-update-delete",
+                          "en/automation/crmscript/searchengine/using-the-searchengine-class-blog-post"
+                        ]
+                      },
+                      {
+                        "group": "Addresses",
+                        "pages": [
+                          "en/automation/crmscript/howto/address/get-address",
+                          "en/automation/crmscript/howto/address/set-address"
+                        ]
+                      },
+                      {
+                        "group": "Company",
+                        "pages": [
+                          "en/automation/crmscript/howto/company/create-company",
+                          "en/automation/crmscript/howto/company/get-company",
+                          "en/automation/crmscript/howto/company/get-activities"
+                        ]
+                      },
+                      {
+                        "group": "Contact (customer, person, user)",
+                        "pages": [
+                          "en/automation/crmscript/howto/contact/create-customer",
+                          "en/automation/crmscript/howto/contact/get-customer",
+                          "en/automation/crmscript/howto/contact/find-customer",
+                          "en/automation/crmscript/howto/contact/get-interests",
+                          "en/automation/crmscript/howto/contact/create-user",
+                          "en/automation/crmscript/howto/contact/get-user"
+                        ]
+                      },
+                      {
+                        "group": "Custom objects",
+                        "pages": [
+                          "en/automation/crmscript/howto/custom-objects/udef",
+                          "en/automation/crmscript/howto/custom-objects/extra-field",
+                          "en/automation/crmscript/howto/custom-objects/sort-extra-field-values",
+                          "en/automation/crmscript/howto/custom-objects/extra-table"
+                        ]
+                      },
+                      {
+                        "group": "Diary and follow-ups",
+                        "pages": [
+                          "en/automation/crmscript/howto/diary/get-appointment",
+                          "en/automation/crmscript/howto/diary/create-appointment",
+                          "en/automation/crmscript/howto/diary/update-appointment",
+                          "en/automation/crmscript/howto/diary/register-incoming-call",
+                          "en/automation/crmscript/howto/diary/plan-outgoing-call",
+                          "en/automation/crmscript/howto/diary/task",
+                          "en/automation/crmscript/howto/diary/get-recurrence-info",
+                          "en/automation/crmscript/howto/diary/get-appointments-in-series",
+                          "en/automation/crmscript/howto/diary/create-recurring-appointment",
+                          "en/automation/crmscript/howto/diary/update-recurrence",
+                          "en/automation/crmscript/howto/diary/stop-recurrence",
+                          "en/automation/crmscript/howto/diary/create-invitation",
+                          "en/automation/crmscript/howto/diary/book-resource",
+                          "en/automation/crmscript/howto/diary/track-responses",
+                          "en/automation/crmscript/howto/diary/accept-invitation"
+                        ]
+                      },
+                      {
+                        "group": "Documents",
+                        "pages": [
+                          "en/automation/crmscript/howto/document/properties",
+                          "en/automation/crmscript/howto/document/file",
+                          "en/automation/crmscript/howto/document/templates"
+                        ]
+                      },
+                      {
+                        "group": "Interests",
+                        "pages": [
+                          "en/automation/crmscript/howto/interests/index",
+                          "en/automation/crmscript/howto/interests/company-interests",
+                          "en/automation/crmscript/howto/interests/contact-interests"
+                        ]
+                      },
+                      {
+                        "group": "Marketing",
+                        "pages": [
+                          "en/automation/crmscript/howto/marketing/forms"
+                        ]
+                      },
+                      {
+                        "group": "Projects",
+                        "pages": [
+                          "en/automation/crmscript/howto/project/create",
+                          "en/automation/crmscript/howto/project/get",
+                          "en/automation/crmscript/howto/project/update",
+                          "en/automation/crmscript/howto/project/members",
+                          "en/automation/crmscript/howto/project/guides",
+                          "en/automation/crmscript/howto/project/samples"
+                        ]
+                      },
+                      {
+                        "group": "Quote",
+                        "pages": [
+                          "en/automation/crmscript/howto/quote/create",
+                          "en/automation/crmscript/howto/quote/add-alternative",
+                          "en/automation/crmscript/howto/quote/add-quote-line",
+                          "en/automation/crmscript/howto/quote/get",
+                          "en/automation/crmscript/howto/quote/update",
+                          "en/automation/crmscript/howto/quote/products",
+                          "en/automation/crmscript/howto/quote/price-list",
+                          "en/automation/crmscript/howto/quote/quote-document",
+                          "en/automation/crmscript/howto/quote/place-order",
+                          "en/automation/crmscript/howto/quote/samples"
+                        ]
+                      },
+                      {
+                        "group": "Request",
+                        "pages": [
+                          "en/automation/crmscript/howto/request/create",
+                          "en/automation/crmscript/howto/request/add-message",
+                          "en/automation/crmscript/howto/request/get-ticket-info",
+                          "en/automation/crmscript/howto/request/get-message-info",
+                          "en/automation/crmscript/howto/request/accept",
+                          "en/automation/crmscript/howto/request/reply",
+                          "en/automation/crmscript/howto/request/delegate",
+                          "en/automation/crmscript/howto/request/escalate",
+                          "en/automation/crmscript/howto/request/split-merge",
+                          "en/automation/crmscript/howto/request/request-logs",
+                          "en/automation/crmscript/howto/request/samples",
+                          "en/automation/crmscript/howto/request/reply-templates"
+                        ]
+                      },
+                      {
+                        "group": "Sale",
+                        "pages": [
+                          "en/automation/crmscript/howto/sale/create",
+                          "en/automation/crmscript/howto/sale/get",
+                          "en/automation/crmscript/howto/sale/update",
+                          "en/automation/crmscript/howto/sale/stakeholders",
+                          "en/automation/crmscript/howto/sale/guides",
+                          "en/automation/crmscript/howto/sale/currency",
+                          "en/automation/crmscript/howto/sale/lost-or-sold",
+                          "en/automation/crmscript/howto/sale/samples"
+                        ]
+                      },
+                      "en/automation/crmscript/howto/inline-crmscript"
+                    ]
+                  },
+                  {
+                    "group": "Tutorials",
+                    "pages": [
+                      "en/automation/crmscript/tutorials/creating-lots-of-random-requests",
+                      "en/automation/crmscript/tutorials/script-based-selections",
+                      "en/automation/crmscript/tutorials/udef-agent",
+                      "en/automation/crmscript/tutorials/build-custom-rest-api-methods",
+                      "en/automation/crmscript/tutorials/using-crmscript-statlib-for-reporting",
+                      "en/automation/crmscript/tutorials/waiting-for-customer-status-with-reminders",
+                      "en/automation/crmscript/tutorials/using-dialogs-in-triggers",
+                      "en/automation/crmscript/tutorials/crmscript-trigger-outbox",
+                      "en/automation/crmscript/tutorials/closing-request-tabs-in-triggers",
+                      "en/automation/crmscript/tutorials/open-external-company-from-task-menu"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Event model",
+                "pages": [
+                  "en/automation/event-model/email-filter",
+                  "en/automation/event-model/mailbox-after-save",
+                  "en/automation/event-model/mailbox-before-save",
+                  "en/automation/event-model/saving-a-request"
+                ]
+              },
+              {
+                "group": "NetServer Script Engine",
+                "pages": [
+                  "en/automation/netserver-scripting/configure",
+                  "en/automation/netserver-scripting/basic-scripting",
+                  "en/automation/netserver-scripting/run-scripts"
+                ]
+              },
+              {
+                "group": "Trigger",
+                "pages": [
+                  "en/automation/trigger/create-trigger-macro",
+                  "en/automation/trigger/create-trigger-script",
+                  "en/automation/trigger/set-validation-rules",
+                  "en/automation/trigger/update-value",
+                  "en/automation/trigger/reference/index"
+                ]
+              },
+              {
+                "group": "Webhook",
+                "pages": [
+                  "en/automation/webhook/index",
+                  {
+                    "group": "For administrators",
+                    "pages": [
+                      "en/automation/webhook/admin/index",
+                      "en/automation/webhook/admin/create"
+                    ]
+                  },
+                  {
+                    "group": "For developers",
+                    "pages": [
+                      "en/automation/webhook/dev/event-details",
+                      "en/automation/webhook/dev/subscription",
+                      "en/automation/webhook/dev/notification",
+                      "en/automation/webhook/dev/security",
+                      "en/automation/webhook/dev/crmscript-handlers",
+                      "en/automation/webhook/dev/register",
+                      "en/automation/webhook/dev/troubleshooting",
+                      "en/automation/webhook/dev/tutorials/add-msg-to-ticket/index"
+                    ]
+                  },
+                  {
+                    "group": "Event reference",
+                    "pages": [
+                      "en/automation/webhook/reference/activity-events",
+                      "en/automation/webhook/reference/associate-events",
+                      "en/automation/webhook/reference/chat-events",
+                      "en/automation/webhook/reference/contact-events",
+                      "en/automation/webhook/reference/document-events",
+                      "en/automation/webhook/reference/extratable-events",
+                      "en/automation/webhook/reference/list-events",
+                      "en/automation/webhook/reference/person-events",
+                      "en/automation/webhook/reference/project-events",
+                      "en/automation/webhook/reference/project-member-events",
+                      "en/automation/webhook/reference/quote-events",
+                      "en/automation/webhook/reference/relation-events",
+                      "en/automation/webhook/reference/sale-events",
+                      "en/automation/webhook/reference/sale-stakeholder-events",
+                      "en/automation/webhook/reference/state-events",
+                      "en/automation/webhook/reference/test-event",
+                      "en/automation/webhook/reference/ticket-events"
+                    ]
+                  }
+                ]
+              },
+              "en/automation/windows/win-script-event-system"
+            ]
+          }
+        ]
+      },
+      {
+        "item": "API",
+        "icon": "brackets-curly",
+        "groups": [
+          {
+            "group": "SuperOffice APIs",
+            "pages": [
+              "en/api/overview/index"
+            ]
+          },
+          {
+            "group": "Develop Apps or Integrations",
+            "pages": [
+              "en/api/overview/develop-apps-or-integrations"
+            ]
+          },
+          {
+            "group": "NetServer fundamentals",
+            "pages": [
+              "en/api/overview/netserver"
+            ]
+          },
+          {
+            "group": "Quick-start",
+            "pages": [
+              "en/api/overview/quickstart"
+            ]
+          },
+          {
+            "group": "Authentication",
+            "pages": [
+              "en/api/authentication/overview",
+              {
+                "group": "Online authentication",
+                "pages": [
+                  "en/api/authentication/online/which-flow-to-use",
+                  "en/api/authentication/online/which-user-to-use",
+                  "en/api/authentication/online/api",
+                  {
+                    "group": "Sign in user (front-channel)",
+                    "pages": [
+                      "en/api/authentication/online/sign-in-user/auth-code-flow",
+                      "en/api/authentication/online/sign-in-user/hybrid-flow",
+                      "en/api/authentication/online/sign-in-user/implicit-flow",
+                      "en/api/authentication/online/sign-in-user/native-apps",
+                      "en/api/authentication/online/sign-in-user/legacy"
+                    ]
+                  },
+                  {
+                    "group": "System user (back-channel)",
+                    "pages": [
+                      "en/api/authentication/online/auth-application/sign-system-user-token",
+                      "en/api/authentication/online/auth-application/get-system-user-ticket"
+                    ]
+                  },
+                  "en/api/authentication/online/validate-security-tokens",
+                  {
+                    "group": "Troubleshooting",
+                    "pages": [
+                      "en/api/authentication/online/troubleshooting/iframe-idp-auth"
+                    ]
+                  },
+                  {
+                    "group": "Certificates",
+                    "pages": [
+                      "en/api/authentication/online/certificates/add-certificate-snap-in",
+                      "en/api/authentication/online/certificates/configure",
+                      "en/api/authentication/online/certificates/override-resolver"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Onsite authentication",
+                "pages": [
+                  "en/api/authentication/onsite/users-and-associates",
+                  "en/api/authentication/onsite/terminology",
+                  {
+                    "group": "SoSession",
+                    "pages": [
+                      "en/api/authentication/onsite/sosession/switch",
+                      "en/api/authentication/onsite/sosession/using-soap"
+                    ]
+                  },
+                  "en/api/authentication/onsite/custom-proxies/index",
+                  {
+                    "group": "Configuration",
+                    "pages": [
+                      "en/api/authentication/onsite/config-anonymous-user",
+                      "en/api/authentication/onsite/config-external-user"
+                    ]
+                  },
+                  "en/api/authentication/onsite/pipeline",
+                  {
+                    "group": "Legacy",
+                    "pages": [
+                      "en/api/authentication/onsite/com/index",
+                      "en/api/authentication/onsite/from-secret-to-ticket"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Localization",
+            "pages": [
+              "en/api/localization/index",
+              "en/api/localization/personnameformatter",
+              "en/api/localization/phoneformatter",
+              "en/api/localization/superoffice-crm-globalization",
+              "en/api/localization/superoffice-globalization",
+              {
+                "group": "Address",
+                "pages": [
+                  "en/api/localization/address/addressformatter",
+                  "en/api/localization/address/addresshelper"
+                ]
+              },
+              {
+                "group": "Culture",
+                "pages": [
+                  "en/api/localization/culture/culturesettinghelper",
+                  "en/api/localization/culture/culturedataformatter",
+                  "en/api/localization/culture/display-in-current-culture",
+                  "en/api/localization/culture/parse-values"
+                ]
+              },
+              {
+                "group": "Language",
+                "pages": [
+                  "en/api/localization/language/create-resx-file",
+                  "en/api/localization/language/create-resource-provider",
+                  "en/api/localization/language/resource-providers",
+                  "en/api/localization/language/translate-strings"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "en/api/config/accessgateway",
+              "en/api/config/batchservice",
+              "en/api/config/client",
+              "en/api/config/clientconfigurationprovider",
+              "en/api/config/cloud",
+              "en/api/config/csssprite",
+              "en/api/config/customerservice",
+              "en/api/config/customproxy",
+              "en/api/config/data",
+              "en/api/config/diagnostics",
+              "en/api/config/documents",
+              "en/api/config/downloads",
+              "en/api/config/factory",
+              "en/api/config/featuretoggles",
+              "en/api/config/globalization",
+              "en/api/config/googlerecaptcha",
+              "en/api/config/infrastructure",
+              "en/api/config/intellisyncconnector",
+              "en/api/config/mail",
+              "en/api/config/messaging",
+              "en/api/config/oidclogin",
+              "en/api/config/pocket",
+              "en/api/config/reporter",
+              "en/api/config/scripting",
+              "en/api/config/security",
+              "en/api/config/services",
+              "en/api/config/soformsauthentication",
+              "en/api/config/subclients",
+              "en/api/config/superid",
+              "en/api/config/suspendedsite",
+              "en/api/config/sync",
+              "en/api/config/threading",
+              "en/api/config/timezone",
+              "en/api/config/webapi",
+              "en/api/config/webhooks",
+              "en/api/config/webservices"
+            ]
+          },
+          {
+            "group": "Caching",
+            "pages": [
+              "en/api/caching/superoffice-crm-cache",
+              "en/api/caching/associate-cache",
+              "en/api/caching/category-cache",
+              "en/api/caching/superoffice-crm-security",
+              "en/api/caching/cached-tables",
+              "en/api/caching/flush-cache"
+            ]
+          },
+          {
+            "group": "Logging",
+            "pages": [
+              "en/api/logging/filter-logs",
+              "en/api/logging/standard-netserver-log",
+              "en/api/logging/serilog",
+              "en/api/logging/configure-serilog",
+              "en/api/logging/create-custom-logger"
+            ]
+          },
+          {
+            "group": "Lists",
+            "pages": [
+              {
+                "group": "List web services",
+                "pages": [
+                  "en/api/lists/services/listagent/index",
+                  "en/api/lists/services/mdoagent/index",
+                  {
+                    "group": "How to",
+                    "pages": [
+                      "en/api/lists/services/how-to/get-all-lists",
+                      "en/api/lists/services/how-to/get-list-entity",
+                      "en/api/lists/services/how-to/get-list-item",
+                      "en/api/lists/services/how-to/get-list-items",
+                      "en/api/lists/services/how-to/create-list",
+                      "en/api/lists/services/how-to/delete-list",
+                      "en/api/lists/services/how-to/create-list-item",
+                      "en/api/lists/services/how-to/delete-list-item"
+                    ]
+                  }
+                ]
+              },
+              "en/api/lists/row/how-to/add-list-item",
+              {
+                "group": "NetServer lists",
+                "pages": [
+                  "en/api/lists/entity/typed-list",
+                  "en/api/lists/entity/udef-list",
+                  "en/api/lists/entity/group-view",
+                  "en/api/lists/entity/generic-list",
+                  {
+                    "group": "How-to",
+                    "pages": [
+                      "en/api/lists/entity/how-to/create-list-plugin",
+                      "en/api/lists/entity/how-to/get-list"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Web Services",
+            "pages": [
+              {
+                "group": "Endpoints",
+                "pages": [
+                  "en/api/web-services/endpoints/agents-webapi/index",
+                  "en/api/web-services/endpoints/rest-webapi/index",
+                  "en/api/web-services/endpoints/get-webapi-version",
+                  "en/api/web-services/endpoints/http-headers",
+                  "en/api/web-services/endpoints/soap/index"
+                ]
+              },
+              {
+                "group": "Proxies",
+                "pages": [
+                  {
+                    "group": "Using WebAPI client",
+                    "pages": [
+                      "en/api/web-services/proxies/superoffice-webapi/index",
+                      "en/api/web-services/proxies/superoffice-webapi/iauthorization",
+                      "en/api/web-services/proxies/superoffice-webapi/systemuserclient"
+                    ]
+                  },
+                  "en/api/web-services/proxies/built-in",
+                  "en/api/web-services/proxies/custom"
+                ]
+              },
+              "en/api/web-services/so-timezone",
+              "en/onsite/install/netserver/setup-rest",
+              {
+                "group": "How to...",
+                "pages": [
+                  {
+                    "group": "Address",
+                    "pages": [
+                      "en/api/web-services/howto/address/get-localized-address",
+                      "en/api/web-services/howto/address/set-localized-address"
+                    ]
+                  },
+                  {
+                    "group": "Company",
+                    "pages": [
+                      "en/api/web-services/howto/company/create-contact",
+                      "en/api/web-services/howto/company/get-contact-via-services-layer",
+                      "en/api/web-services/howto/company/get-all-contacts-rest",
+                      "en/api/web-services/howto/company/get-interests-for-contact-services",
+                      "en/api/web-services/howto/company/set-interest-on-off-services",
+                      "en/api/web-services/howto/company/add-catlist-item-rest",
+                      "en/api/web-services/howto/company/add-catlist-item-webapi-agents",
+                      "en/api/web-services/howto/company/get-catlist-listagent",
+                      "en/api/web-services/howto/company/get-catlist-mdoagent",
+                      "en/api/web-services/howto/company/get-set-category-mdoagent"
+                    ]
+                  },
+                  {
+                    "group": "Contact (person)",
+                    "pages": [
+                      "en/api/web-services/howto/contact/get-persons-contactagent",
+                      "en/api/web-services/howto/contact/get-persons-personagent",
+                      "en/api/web-services/howto/contact/update-person-services",
+                      "en/api/web-services/howto/contact/get-person-image-rest",
+                      "en/api/web-services/howto/contact/get-person-image-options",
+                      "en/api/web-services/howto/contact/update-person-image-rest",
+                      "en/api/web-services/howto/contact/display-person-image-ws",
+                      "en/api/web-services/howto/contact/display-image-from-blob-table-services"
+                    ]
+                  },
+                  {
+                    "group": "Custom objects",
+                    "pages": [
+                      {
+                        "group": "Extra tables",
+                        "pages": [
+                          "en/api/web-services/howto/custom-objects/rest-add-custom-object-row",
+                          "en/api/web-services/howto/custom-objects/rest-update-custom-object-row",
+                          "en/api/web-services/howto/custom-objects/rest-get-custom-object-row",
+                          "en/api/web-services/howto/custom-objects/rest-delete-custom-object-row",
+                          "en/api/web-services/howto/custom-objects/custom-objects-search"
+                        ]
+                      },
+                      {
+                        "group": "User-defined fields",
+                        "pages": [
+                          "en/api/web-services/howto/custom-objects/rest-get-all-udef-fields",
+                          "en/api/web-services/howto/custom-objects/rest-create-udef-field",
+                          "en/api/web-services/howto/custom-objects/rest-update-udef-field",
+                          "en/api/web-services/howto/custom-objects/rest-delete-udef-field",
+                          "en/api/web-services/howto/custom-objects/set-udef-listitem-value",
+                          "en/api/web-services/howto/custom-objects/get-udef-list-and-values",
+                          "en/api/web-services/howto/custom-objects/find-contact-by-udef"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Dashboard",
+                    "pages": [
+                      "en/api/web-services/howto/dashboard/get-dashboard-rest"
+                    ]
+                  },
+                  {
+                    "group": "Diary",
+                    "pages": [
+                      "en/api/web-services/howto/diary/create-apt-services",
+                      "en/api/web-services/howto/diary/create-recurring-appointment-services",
+                      "en/api/web-services/howto/diary/create-invitation-services",
+                      "en/api/web-services/howto/diary/get-invitations-services",
+                      "en/api/web-services/howto/diary/accept-invitation-services",
+                      "en/api/web-services/howto/diary/rest-create-videomeeting",
+                      "en/api/web-services/howto/diary/rest-delete-videomeeting"
+                    ]
+                  },
+                  {
+                    "group": "Documents",
+                    "pages": [
+                      "en/api/web-services/howto/document/rest-add-document-template",
+                      "en/api/web-services/howto/document/rest-generate-document",
+                      "en/api/web-services/howto/document/services-create",
+                      "en/api/web-services/howto/document/services-download",
+                      "en/api/web-services/howto/document/services-update",
+                      "en/api/web-services/howto/document/services-configure-access"
+                    ]
+                  },
+                  {
+                    "group": "Flows",
+                    "pages": [
+                      "en/api/web-services/howto/flows/rest-create-default-email-flow",
+                      "en/api/web-services/howto/flows/rest-create-flow-trigger",
+                      "en/api/web-services/howto/flows/rest-create-flow-step",
+                      "en/api/web-services/howto/flows/rest-save-flow"
+                    ]
+                  },
+                  {
+                    "group": "Sale",
+                    "pages": [
+                      "en/api/web-services/howto/sale/link-sale-to-appointment"
+                    ]
+                  },
+                  {
+                    "group": "User preferences",
+                    "pages": [
+                      "en/api/web-services/howto/user-preferences/get-preferences-preferenceagent",
+                      "en/api/web-services/howto/user-preferences/set-preferences-preferenceagent"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Web Extensions",
+            "pages": [
+              {
+                "group": "Web extensions",
+                "pages": [
+                  {
+                    "group": "MailArchiveHelper",
+                    "pages": [
+                      "en/api/web-extensions/mailarchivehelper/getting-started",
+                      "en/api/web-extensions/mailarchivehelper/registry",
+                      "en/api/web-extensions/mailarchivehelper/preference-dialog",
+                      "en/api/web-extensions/mailarchivehelper/logging",
+                      "en/api/web-extensions/mailarchivehelper/com-interop-and-dotnet",
+                      "en/api/web-extensions/mailarchivehelper/mail-protocol",
+                      "en/api/web-extensions/mailarchivehelper/find-contact-from-email",
+                      "en/api/web-extensions/mailarchivehelper/archive-email"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Entities",
+            "pages": [
+              "en/api/entities/collections",
+              "en/api/entities/setdefaults",
+              "en/api/entities/events",
+              "en/api/entities/activity-links",
+              "en/api/entities/nested-persist",
+              "en/api/entities/using-collections",
+              {
+                "group": "How to...",
+                "pages": [
+                  "en/api/entities/get-entity",
+                  "en/api/entities/get-entity-from-entity",
+                  "en/api/entities/create-entity",
+                  "en/api/entities/create-entity-in-entity",
+                  "en/api/entities/update-entity",
+                  "en/api/entities/update-entity-in-entity",
+                  "en/api/entities/delete-entity",
+                  "en/api/entities/delete-entity-from-entity",
+                  {
+                    "group": "Company",
+                    "pages": [
+                      "en/api/entities/howto/company/create-contact-entity",
+                      "en/api/entities/howto/company/create-contact-entity-in-entity",
+                      "en/api/entities/howto/company/create-contact-entity-in-collection",
+                      "en/api/entities/howto/company/get-contact-via-entities-layer",
+                      "en/api/entities/howto/company/get-interests-for-contact-entity",
+                      "en/api/entities/howto/company/set-interest-on-off-entity",
+                      "en/api/entities/howto/company/get-catlist-typed-provider",
+                      "en/api/entities/howto/company/get-catlist-generic-provider"
+                    ]
+                  },
+                  {
+                    "group": "Contact (person)",
+                    "pages": [
+                      "en/api/entities/howto/contact/get-persons-from-contact-entities",
+                      "en/api/entities/howto/contact/update-person-entity",
+                      "en/api/entities/howto/contact/display-image-from-blob-table-entity",
+                      "en/api/entities/howto/contact/get-associate-list"
+                    ]
+                  },
+                  {
+                    "group": "Custom fields",
+                    "pages": [
+                      "en/api/entities/howto/custom-objects/set-udef-listitem-value",
+                      "en/api/entities/howto/custom-objects/get-udef-field-value",
+                      "en/api/entities/howto/custom-objects/update-udef",
+                      "en/api/entities/howto/custom-objects/using-udefhelper",
+                      "en/api/entities/howto/custom-objects/udefhelper-class",
+                      "en/api/entities/howto/custom-objects/udef-on-contact"
+                    ]
+                  },
+                  {
+                    "group": "Diary",
+                    "pages": [
+                      "en/api/entities/howto/diary/create-apt-entity",
+                      "en/api/entities/howto/diary/create-apt-entity-in-entity",
+                      "en/api/entities/howto/diary/create-apt-entity-in-collection",
+                      "en/api/entities/howto/diary/create-recurring-appointment-entity",
+                      "en/api/entities/howto/diary/create-invitation-entity",
+                      "en/api/entities/howto/diary/accept-invitation-entity"
+                    ]
+                  },
+                  {
+                    "group": "Sale",
+                    "pages": [
+                      "en/api/entities/howto/sale/link-sale-to-appointment"
+                    ]
+                  },
+                  {
+                    "group": "User preferences",
+                    "pages": [
+                      "en/api/entities/howto/user-preferences/get-preferences-sopreference",
+                      "en/api/entities/howto/user-preferences/set-preferences-sopreference"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Rows",
+            "pages": [
+              "en/api/rows/index",
+              "en/api/rows/customsearch",
+              "en/api/rows/events",
+              {
+                "group": "How to...",
+                "pages": [
+                  "en/api/rows/get-row",
+                  "en/api/rows/get-row-from-entity",
+                  "en/api/rows/create-row",
+                  "en/api/rows/create-row-in-entity",
+                  "en/api/rows/update-row",
+                  "en/api/rows/update-row-in-entity",
+                  "en/api/rows/delete-row",
+                  "en/api/rows/delete-row-from-entity",
+                  {
+                    "group": "Address",
+                    "pages": [
+                      "en/api/rows/howto/address/update-address"
+                    ]
+                  },
+                  {
+                    "group": "Company",
+                    "pages": [
+                      "en/api/rows/howto/company/create-contact-row",
+                      "en/api/rows/howto/company/create-contact-rows",
+                      "en/api/rows/howto/company/add-new-contact-interest",
+                      "en/api/rows/howto/company/get-catlist-categoryrows"
+                    ]
+                  },
+                  {
+                    "group": "Contact (person)",
+                    "pages": [
+                      "en/api/rows/howto/contact/get-persons-from-contact-rows",
+                      "en/api/rows/howto/contact/update-person-rows",
+                      "en/api/rows/howto/contact/collection"
+                    ]
+                  },
+                  {
+                    "group": "Diary",
+                    "pages": [
+                      "en/api/rows/howto/diary/create-apt-row",
+                      "en/api/rows/howto/diary/create-apt-rows"
+                    ]
+                  },
+                  {
+                    "group": "SAINT",
+                    "pages": [
+                      "en/api/rows/howto/saint/search-saint-contactrow-customsearch"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Objectified SQL",
+            "pages": [
+              "en/api/osql/index",
+              "en/api/osql/osql-evolution",
+              "en/api/osql/join",
+              "en/api/osql/outerjoin",
+              "en/api/osql/like",
+              "en/api/osql/and-clause",
+              "en/api/osql/alias",
+              "en/api/osql/groupby",
+              "en/api/osql/orderby",
+              "en/api/osql/insert",
+              "en/api/osql/update",
+              "en/api/osql/delete",
+              {
+                "group": "Functions",
+                "pages": [
+                  "en/api/osql/count",
+                  "en/api/osql/upper",
+                  "en/api/osql/soundx"
+                ]
+              },
+              {
+                "group": "How to...",
+                "pages": [
+                  {
+                    "group": "Company",
+                    "pages": [
+                      "en/api/osql/howto/company/create-contact-osql",
+                      "en/api/osql/howto/company/get-catlist-sodatareader"
+                    ]
+                  },
+                  {
+                    "group": "Contact (person)",
+                    "pages": [
+                      "en/api/osql/howto/contact/get-persons-from-contact-sodatareader",
+                      "en/api/osql/howto/contact/update-person-osql"
+                    ]
+                  },
+                  {
+                    "group": "Diary",
+                    "pages": [
+                      "en/api/osql/howto/diary/create-apt-osql"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Raw SQL queries",
+            "pages": [
+              {
+                "group": "Company",
+                "pages": [
+                  "en/api/sql/howto/company/create-contact-sql",
+                  "en/api/sql/howto/company/get-contact-details-sql",
+                  "en/api/sql/howto/company/get-interests-sql",
+                  "en/api/sql/howto/company/get-catlist-sql"
+                ]
+              },
+              {
+                "group": "Contact (person)",
+                "pages": [
+                  "en/api/sql/howto/contact/get-persons-from-contact-sql",
+                  "en/api/sql/howto/contact/update-person-sql",
+                  "en/api/sql/howto/contact/add-person-picture-blobs-sql"
+                ]
+              },
+              {
+                "group": "Custom fields",
+                "pages": [
+                  "en/api/sql/howto/custom-objects/set-udef"
+                ]
+              },
+              {
+                "group": "Diary",
+                "pages": [
+                  "en/api/sql/howto/diary/create-apt-sql",
+                  "en/api/sql/howto/diary/create-invitation-sql",
+                  "en/api/sql/howto/diary/accept-invitation-sql"
+                ]
+              },
+              {
+                "group": "Project",
+                "pages": [
+                  "en/api/sql/howto/project/create",
+                  "en/api/sql/howto/project/text-table",
+                  "en/api/sql/howto/project/project-guide"
+                ]
+              },
+              {
+                "group": "SAINT",
+                "pages": [
+                  "en/api/sql/howto/saint/get-contact-by-saint-value",
+                  "en/api/sql/howto/saint/search-saint-values"
+                ]
+              },
+              {
+                "group": "Sale",
+                "pages": [
+                  "en/api/sql/howto/sale/stakeholders"
+                ]
+              },
+              {
+                "group": "User preferences",
+                "pages": [
+                  "en/api/sql/howto/user-preferences/add-prefdesc"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Bulk Operation",
+            "pages": [
+              {
+                "group": "Bulk Update",
+                "pages": [
+                  "en/api/bulk-operations/bulk-update/using-bulk-update",
+                  "en/api/bulk-operations/bulk-update/field-value-info",
+                  "en/api/bulk-operations/bulk-update/operations-and-values",
+                  "en/api/bulk-operations/bulk-update/entities-field-types",
+                  "en/api/bulk-operations/bulk-update/ns-core-examples",
+                  {
+                    "group": "Reference",
+                    "pages": [
+                      "en/api/bulk-operations/bulk-update/reference/appointment-table",
+                      "en/api/bulk-operations/bulk-update/reference/contact-table",
+                      "en/api/bulk-operations/bulk-update/reference/document-table",
+                      "en/api/bulk-operations/bulk-update/reference/person-table",
+                      "en/api/bulk-operations/bulk-update/reference/project-table",
+                      "en/api/bulk-operations/bulk-update/reference/sale-table",
+                      "en/api/bulk-operations/bulk-update/reference/selection-table",
+                      "en/api/bulk-operations/bulk-update/reference/ticket-table",
+                      "en/api/bulk-operations/bulk-update/reference/extra-fields",
+                      "en/api/bulk-operations/bulk-update/reference/user-defined-fields"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Mass Operations",
+                "pages": [
+                  "en/api/bulk-operations/mass-operations/delete",
+                  "en/api/bulk-operations/mass-operations/insert",
+                  "en/api/bulk-operations/mass-operations/truncate",
+                  "en/api/bulk-operations/mass-operations/upsert",
+                  "en/api/bulk-operations/mass-operations/protected-tables"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Search APIs",
+            "pages": [
+              {
+                "group": "Find Selection API",
+                "pages": [
+                  "en/api/search/find-selection/terminology",
+                  "en/api/search/find-selection/how-to-search",
+                  "en/api/search/find-selection/populate-selectable-columns",
+                  "en/api/search/find-selection/operators",
+                  "en/api/search/find-selection/date-range-as-criteria",
+                  "en/api/search/find-selection/typical-search"
+                ]
+              },
+              {
+                "group": "Archive provider fundamentals",
+                "pages": [
+                  "en/api/archive-providers/encoded-values",
+                  "en/api/archive-providers/how-to-query",
+                  "en/api/archive-providers/data-aggregation",
+                  "en/api/archive-providers/aggregate-groupby",
+                  "en/api/archive-providers/nested-aggregate-functions"
+                ]
+              },
+              {
+                "group": "Archive provider architecture",
+                "pages": [
+                  "en/api/archive-providers/interfaces",
+                  "en/api/archive-providers/data-classes",
+                  "en/api/archive-providers/scenarios",
+                  "en/api/archive-providers/metadata",
+                  "en/api/archive-providers/providers",
+                  "en/api/archive-providers/extenders",
+                  "en/api/archive-providers/joiners",
+                  "en/api/archive-providers/base-and-helper-classes"
+                ]
+              },
+              {
+                "group": "ArchiveAgent samples",
+                "pages": [
+                  "en/api/archive-providers/howto/diary/invitation-archive"
+                ]
+              },
+              {
+                "group": "Archive provider reference",
+                "pages": [
+                  "en/api/archive-providers/reference/index",
+                  "en/api/archive-providers/reference/activity",
+                  "en/api/archive-providers/reference/aggregationwrapper2",
+                  "en/api/archive-providers/reference/allusers",
+                  "en/api/archive-providers/reference/appointment",
+                  "en/api/archive-providers/reference/appointmentdynamicselection",
+                  "en/api/archive-providers/reference/appointmentdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/appointmentdynamicselectionv2",
+                  "en/api/archive-providers/reference/appointmentfavourites",
+                  "en/api/archive-providers/reference/appointmenthadowselectioncombined",
+                  "en/api/archive-providers/reference/appointmentnotification",
+                  "en/api/archive-providers/reference/appointmentnotificationaggregator",
+                  "en/api/archive-providers/reference/appointmentselection",
+                  "en/api/archive-providers/reference/appointmentselectioncombined",
+                  "en/api/archive-providers/reference/appointmentselectioncombinedv2",
+                  "en/api/archive-providers/reference/appointmentselectionv2",
+                  "en/api/archive-providers/reference/appointmentshadowdynamicselection",
+                  "en/api/archive-providers/reference/appointmentshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/appointmentshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/appointmentshadowselection",
+                  "en/api/archive-providers/reference/appointmentshadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/appointmentshadowselectionv2",
+                  "en/api/archive-providers/reference/appointmentshadowstaticselection",
+                  "en/api/archive-providers/reference/appointmentshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/appointmentstaticselection",
+                  "en/api/archive-providers/reference/appointmentstaticselectionv2",
+                  "en/api/archive-providers/reference/assignmentcompanynotification",
+                  "en/api/archive-providers/reference/assignmentnotification",
+                  "en/api/archive-providers/reference/assignmentpersonnotification",
+                  "en/api/archive-providers/reference/assignresponseinvitation",
+                  "en/api/archive-providers/reference/associateprojectdynamicselection",
+                  "en/api/archive-providers/reference/associateprojectdynamicselectionv2",
+                  "en/api/archive-providers/reference/associateprojects",
+                  "en/api/archive-providers/reference/associateprojectselection",
+                  "en/api/archive-providers/reference/associateprojectselectionv2",
+                  "en/api/archive-providers/reference/associateprojectstaticselection",
+                  "en/api/archive-providers/reference/associateprojectstaticselectionv2",
+                  "en/api/archive-providers/reference/batchtasks",
+                  "en/api/archive-providers/reference/bookingresponseinvitation",
+                  "en/api/archive-providers/reference/bulkupdateresults",
+                  "en/api/archive-providers/reference/cancelledinvitation",
+                  "en/api/archive-providers/reference/categorymembers",
+                  "en/api/archive-providers/reference/chatconversationdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/chatconversationdynamicselectionv2",
+                  "en/api/archive-providers/reference/chatconversationselectioncombinedv2",
+                  "en/api/archive-providers/reference/chatconversationselectionv2",
+                  "en/api/archive-providers/reference/chatconversationshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/chatconversationshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/chatconversationshadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/chatconversationshadowselectionv2",
+                  "en/api/archive-providers/reference/chatconversationshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/chatconversationstaticselectionv2",
+                  "en/api/archive-providers/reference/chatsession",
+                  "en/api/archive-providers/reference/checklistappointment",
+                  "en/api/archive-providers/reference/configurablearchive",
+                  "en/api/archive-providers/reference/configurablearchiveappointment",
+                  "en/api/archive-providers/reference/configurablearchiveproject",
+                  "en/api/archive-providers/reference/configurablearchivequoteline",
+                  "en/api/archive-providers/reference/consentpurpose",
+                  "en/api/archive-providers/reference/contact",
+                  "en/api/archive-providers/reference/contactactivity",
+                  "en/api/archive-providers/reference/contactdynamicselection",
+                  "en/api/archive-providers/reference/contactfavourites",
+                  "en/api/archive-providers/reference/contactpersondynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/contactpersondynamicselectionv2",
+                  "en/api/archive-providers/reference/contactpersonselectioncombinedv2",
+                  "en/api/archive-providers/reference/contactpersonselectionv2",
+                  "en/api/archive-providers/reference/contactpersonstaticselectionv2",
+                  "en/api/archive-providers/reference/contactprojects",
+                  "en/api/archive-providers/reference/contactselection",
+                  "en/api/archive-providers/reference/contactselectioncombined",
+                  "en/api/archive-providers/reference/contactstaticselection",
+                  "en/api/archive-providers/reference/credentialuser",
+                  "en/api/archive-providers/reference/criteria",
+                  "en/api/archive-providers/reference/crmscripts",
+                  "en/api/archive-providers/reference/customobject",
+                  "en/api/archive-providers/reference/customobjectdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/customobjectdynamicselectionv2",
+                  "en/api/archive-providers/reference/customobjectfavourites",
+                  "en/api/archive-providers/reference/customobjectselectioncombinedv2",
+                  "en/api/archive-providers/reference/customobjectselectionv2",
+                  "en/api/archive-providers/reference/customobjectstaticselectionv2",
+                  "en/api/archive-providers/reference/diaryactivity",
+                  "en/api/archive-providers/reference/diaryappointment",
+                  "en/api/archive-providers/reference/document",
+                  "en/api/archive-providers/reference/documentdynamicselection",
+                  "en/api/archive-providers/reference/documentdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/documentdynamicselectionv2",
+                  "en/api/archive-providers/reference/documentfavourites",
+                  "en/api/archive-providers/reference/documenthadowselectioncombined",
+                  "en/api/archive-providers/reference/documenthadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/documentquotelineinnerdata",
+                  "en/api/archive-providers/reference/documentselection",
+                  "en/api/archive-providers/reference/documentselectioncombined",
+                  "en/api/archive-providers/reference/documentselectioncombinedv2",
+                  "en/api/archive-providers/reference/documentselectionv2",
+                  "en/api/archive-providers/reference/documentshadowdynamicselection",
+                  "en/api/archive-providers/reference/documentshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/documentshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/documentshadowselection",
+                  "en/api/archive-providers/reference/documentshadowselectionv2",
+                  "en/api/archive-providers/reference/documentshadowstaticselection",
+                  "en/api/archive-providers/reference/documentshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/documentstaticselection",
+                  "en/api/archive-providers/reference/documentstaticselectionv2",
+                  "en/api/archive-providers/reference/dummyselectioncontact",
+                  "en/api/archive-providers/reference/dynamic",
+                  "en/api/archive-providers/reference/ejscripts",
+                  "en/api/archive-providers/reference/emailaddress",
+                  "en/api/archive-providers/reference/emailcontactaddress",
+                  "en/api/archive-providers/reference/emailflowcontent",
+                  "en/api/archive-providers/reference/emailflowemailcontent",
+                  "en/api/archive-providers/reference/emailflowfolders",
+                  "en/api/archive-providers/reference/emailflowformcontent",
+                  "en/api/archive-providers/reference/emailflowinstances",
+                  "en/api/archive-providers/reference/emailflows",
+                  "en/api/archive-providers/reference/emailflowsandfolders",
+                  "en/api/archive-providers/reference/emailpersonaddress",
+                  "en/api/archive-providers/reference/erpconnection",
+                  "en/api/archive-providers/reference/erpconnector",
+                  "en/api/archive-providers/reference/erpentity",
+                  "en/api/archive-providers/reference/erpfield",
+                  "en/api/archive-providers/reference/erpsynclog",
+                  "en/api/archive-providers/reference/eventhandler",
+                  "en/api/archive-providers/reference/existingcategorymembers",
+                  "en/api/archive-providers/reference/explicitinvitation",
+                  "en/api/archive-providers/reference/externaldocumentfolders",
+                  "en/api/archive-providers/reference/externaldocumentitems",
+                  "en/api/archive-providers/reference/externaldocuments",
+                  "en/api/archive-providers/reference/externalpersons",
+                  "en/api/archive-providers/reference/externalusers",
+                  "en/api/archive-providers/reference/favourites",
+                  "en/api/archive-providers/reference/favouritetickets",
+                  "en/api/archive-providers/reference/findappointment",
+                  "en/api/archive-providers/reference/findchatsession",
+                  "en/api/archive-providers/reference/findcontact",
+                  "en/api/archive-providers/reference/findcontactwithoutphoneaddressemail",
+                  "en/api/archive-providers/reference/finddocument",
+                  "en/api/archive-providers/reference/finderpentity",
+                  "en/api/archive-providers/reference/finderpproduct",
+                  "en/api/archive-providers/reference/findproductviaconnectorprovider",
+                  "en/api/archive-providers/reference/findproject",
+                  "en/api/archive-providers/reference/findquoteline",
+                  "en/api/archive-providers/reference/findsale",
+                  "en/api/archive-providers/reference/findselection",
+                  "en/api/archive-providers/reference/findticket",
+                  "en/api/archive-providers/reference/foreignkeys",
+                  "en/api/archive-providers/reference/formsubmission",
+                  "en/api/archive-providers/reference/formsubmissiondynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/formsubmissiondynamicselectionv2",
+                  "en/api/archive-providers/reference/formsubmissionselectioncombinedv2",
+                  "en/api/archive-providers/reference/formsubmissionselectionv2",
+                  "en/api/archive-providers/reference/formsubmissionshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/formsubmissionshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/formsubmissionshadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/formsubmissionshadowselectionv2",
+                  "en/api/archive-providers/reference/formsubmissionshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/formsubmissionstaticselectionv2",
+                  "en/api/archive-providers/reference/freetextappointment",
+                  "en/api/archive-providers/reference/freetextcontact",
+                  "en/api/archive-providers/reference/freetextcount",
+                  "en/api/archive-providers/reference/freetextdocument",
+                  "en/api/archive-providers/reference/freetextperson",
+                  "en/api/archive-providers/reference/freetextproject",
+                  "en/api/archive-providers/reference/freetextsale",
+                  "en/api/archive-providers/reference/freetextselection",
+                  "en/api/archive-providers/reference/freetextticket",
+                  "en/api/archive-providers/reference/innerselectionstaticcontactprovider",
+                  "en/api/archive-providers/reference/innerselectionstaticpersonprovider",
+                  "en/api/archive-providers/reference/internalusers",
+                  "en/api/archive-providers/reference/invitation",
+                  "en/api/archive-providers/reference/lasttickets",
+                  "en/api/archive-providers/reference/links",
+                  "en/api/archive-providers/reference/linksappointments",
+                  "en/api/archive-providers/reference/linkscontact",
+                  "en/api/archive-providers/reference/linksdocuments",
+                  "en/api/archive-providers/reference/linksperson",
+                  "en/api/archive-providers/reference/linksproject",
+                  "en/api/archive-providers/reference/linkssales",
+                  "en/api/archive-providers/reference/linksselection",
+                  "en/api/archive-providers/reference/linksurl",
+                  "en/api/archive-providers/reference/listitems",
+                  "en/api/archive-providers/reference/mail",
+                  "en/api/archive-providers/reference/mail2",
+                  "en/api/archive-providers/reference/mailfolder",
+                  "en/api/archive-providers/reference/mailingfavourites",
+                  "en/api/archive-providers/reference/mailingfolders",
+                  "en/api/archive-providers/reference/mailings",
+                  "en/api/archive-providers/reference/mailingsandfolders",
+                  "en/api/archive-providers/reference/mailingsdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/mailingsdynamicselectionv2",
+                  "en/api/archive-providers/reference/mailingsselectioncombinedv2",
+                  "en/api/archive-providers/reference/mailingsselectionv2",
+                  "en/api/archive-providers/reference/mailingsshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/mailingsshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/mailingsshadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/mailingsshadowselectionv2",
+                  "en/api/archive-providers/reference/mailingsshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/mailingsstaticselectionv2",
+                  "en/api/archive-providers/reference/mappedpreferences",
+                  "en/api/archive-providers/reference/modulelicense",
+                  "en/api/archive-providers/reference/newcategorymembers",
+                  "en/api/archive-providers/reference/newsfeeditem",
+                  "en/api/archive-providers/reference/notification",
+                  "en/api/archive-providers/reference/numbers",
+                  "en/api/archive-providers/reference/otherusers",
+                  "en/api/archive-providers/reference/ownercontacts",
+                  "en/api/archive-providers/reference/participants",
+                  "en/api/archive-providers/reference/participantswithconflictremoval",
+                  "en/api/archive-providers/reference/person",
+                  "en/api/archive-providers/reference/personactivity",
+                  "en/api/archive-providers/reference/personfavourites",
+                  "en/api/archive-providers/reference/personprojects",
+                  "en/api/archive-providers/reference/personrelation",
+                  "en/api/archive-providers/reference/pricelist",
+                  "en/api/archive-providers/reference/product",
+                  "en/api/archive-providers/reference/projectactivity",
+                  "en/api/archive-providers/reference/projectdynamicselection",
+                  "en/api/archive-providers/reference/projectdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/projectdynamicselectionv2",
+                  "en/api/archive-providers/reference/projectfavourites",
+                  "en/api/archive-providers/reference/projectguide",
+                  "en/api/archive-providers/reference/projectguideappointment",
+                  "en/api/archive-providers/reference/projectguidedocument",
+                  "en/api/archive-providers/reference/projecthadowselectioncombined",
+                  "en/api/archive-providers/reference/projecthadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/projectmember",
+                  "en/api/archive-providers/reference/projectmemberassociate",
+                  "en/api/archive-providers/reference/projectselection",
+                  "en/api/archive-providers/reference/projectselectioncombined",
+                  "en/api/archive-providers/reference/projectselectioncombinedv2",
+                  "en/api/archive-providers/reference/projectselectionv2",
+                  "en/api/archive-providers/reference/projectshadowdynamicselection",
+                  "en/api/archive-providers/reference/projectshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/projectshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/projectshadowselection",
+                  "en/api/archive-providers/reference/projectshadowselectionv2",
+                  "en/api/archive-providers/reference/projectshadowstaticselection",
+                  "en/api/archive-providers/reference/projectshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/projectstaticselection",
+                  "en/api/archive-providers/reference/projectstaticselectionv2",
+                  "en/api/archive-providers/reference/quoteapproval",
+                  "en/api/archive-providers/reference/quoteconnection",
+                  "en/api/archive-providers/reference/quoteconnector",
+                  "en/api/archive-providers/reference/quoteline",
+                  "en/api/archive-providers/reference/quotelineconfiguration",
+                  "en/api/archive-providers/reference/quotelinedynamicselection",
+                  "en/api/archive-providers/reference/quotelinedynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/quotelinedynamicselectionv2",
+                  "en/api/archive-providers/reference/quotelineselection",
+                  "en/api/archive-providers/reference/quotelineselectioncombined",
+                  "en/api/archive-providers/reference/quotelineselectioncombinedv2",
+                  "en/api/archive-providers/reference/quotelineselectionv2",
+                  "en/api/archive-providers/reference/quotelineshadowdynamicselection",
+                  "en/api/archive-providers/reference/quotelineshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/quotelineshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/quotelineshadowselection",
+                  "en/api/archive-providers/reference/quotelineshadowselectioncombined",
+                  "en/api/archive-providers/reference/quotelineshadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/quotelineshadowselectionv2",
+                  "en/api/archive-providers/reference/quotelineshadowstaticselection",
+                  "en/api/archive-providers/reference/quotelineshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/quotelinestaticselection",
+                  "en/api/archive-providers/reference/quotelinestaticselectionv2",
+                  "en/api/archive-providers/reference/quoteversionattachment",
+                  "en/api/archive-providers/reference/recipientfavourites",
+                  "en/api/archive-providers/reference/recyclecontact",
+                  "en/api/archive-providers/reference/recycleperson",
+                  "en/api/archive-providers/reference/recycleticket",
+                  "en/api/archive-providers/reference/rejectedinvitation",
+                  "en/api/archive-providers/reference/relatedtickets",
+                  "en/api/archive-providers/reference/relation",
+                  "en/api/archive-providers/reference/reportlabellayout",
+                  "en/api/archive-providers/reference/requestnotification",
+                  "en/api/archive-providers/reference/role",
+                  "en/api/archive-providers/reference/saintcontact",
+                  "en/api/archive-providers/reference/saintperson",
+                  "en/api/archive-providers/reference/saintproject",
+                  "en/api/archive-providers/reference/sale",
+                  "en/api/archive-providers/reference/saleactivity",
+                  "en/api/archive-providers/reference/salediary",
+                  "en/api/archive-providers/reference/saledynamicselection",
+                  "en/api/archive-providers/reference/saledynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/saledynamicselectionv2",
+                  "en/api/archive-providers/reference/salefavourites",
+                  "en/api/archive-providers/reference/salefiltered",
+                  "en/api/archive-providers/reference/salefilteredwithstakeholder",
+                  "en/api/archive-providers/reference/saleguide",
+                  "en/api/archive-providers/reference/saleguideappointment",
+                  "en/api/archive-providers/reference/saleguidedocument",
+                  "en/api/archive-providers/reference/salehistory",
+                  "en/api/archive-providers/reference/saleselection",
+                  "en/api/archive-providers/reference/saleselectioncombined",
+                  "en/api/archive-providers/reference/saleselectioncombinedv2",
+                  "en/api/archive-providers/reference/saleselectionv2",
+                  "en/api/archive-providers/reference/saleshadowdynamicselection",
+                  "en/api/archive-providers/reference/saleshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/saleshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/saleshadowselection",
+                  "en/api/archive-providers/reference/saleshadowselectioncombined",
+                  "en/api/archive-providers/reference/saleshadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/saleshadowselectionv2",
+                  "en/api/archive-providers/reference/saleshadowstaticselection",
+                  "en/api/archive-providers/reference/saleshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/salestakeholder",
+                  "en/api/archive-providers/reference/salestaticselection",
+                  "en/api/archive-providers/reference/salestaticselectionv2",
+                  "en/api/archive-providers/reference/saletypequoteattachment",
+                  "en/api/archive-providers/reference/selectiondynamiccontactprovider",
+                  "en/api/archive-providers/reference/selectiondynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/selectiondynamicselectionv2",
+                  "en/api/archive-providers/reference/selectionfavourites",
+                  "en/api/archive-providers/reference/selectionmemberstatic",
+                  "en/api/archive-providers/reference/selectionselectioncombinedv2",
+                  "en/api/archive-providers/reference/selectionselectionv2",
+                  "en/api/archive-providers/reference/selectionstaticcontactaddmembers",
+                  "en/api/archive-providers/reference/selectionstaticselectionv2",
+                  "en/api/archive-providers/reference/shadowselection",
+                  "en/api/archive-providers/reference/simpleappointment",
+                  "en/api/archive-providers/reference/simplechatsession",
+                  "en/api/archive-providers/reference/simplecontact",
+                  "en/api/archive-providers/reference/simpledocument",
+                  "en/api/archive-providers/reference/simpleinvitation",
+                  "en/api/archive-providers/reference/simpleperson",
+                  "en/api/archive-providers/reference/simpleproject",
+                  "en/api/archive-providers/reference/simplesale",
+                  "en/api/archive-providers/reference/simpleselection",
+                  "en/api/archive-providers/reference/simpleshipment",
+                  "en/api/archive-providers/reference/simpleticket",
+                  "en/api/archive-providers/reference/subcontactpersondynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/subpersoncontactdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/superlistcolumnsize",
+                  "en/api/archive-providers/reference/systemevents",
+                  "en/api/archive-providers/reference/targetvalue",
+                  "en/api/archive-providers/reference/targetvaluesub",
+                  "en/api/archive-providers/reference/templatelanguage",
+                  "en/api/archive-providers/reference/ticket",
+                  "en/api/archive-providers/reference/ticketactivatednotification",
+                  "en/api/archive-providers/reference/ticketcustommessagenotification",
+                  "en/api/archive-providers/reference/ticketdynamicselection",
+                  "en/api/archive-providers/reference/ticketdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/ticketdynamicselectionv2",
+                  "en/api/archive-providers/reference/ticketescalatednotification",
+                  "en/api/archive-providers/reference/ticketfavourites",
+                  "en/api/archive-providers/reference/ticketfavouriteupdatednotification",
+                  "en/api/archive-providers/reference/ticketmessage",
+                  "en/api/archive-providers/reference/ticketnewmessagenotification",
+                  "en/api/archive-providers/reference/ticketnewnotification",
+                  "en/api/archive-providers/reference/ticketnotification",
+                  "en/api/archive-providers/reference/ticketselection",
+                  "en/api/archive-providers/reference/ticketselectioncombined",
+                  "en/api/archive-providers/reference/ticketselectioncombinedv2",
+                  "en/api/archive-providers/reference/ticketselectionv2",
+                  "en/api/archive-providers/reference/ticketshadowdynamicselection",
+                  "en/api/archive-providers/reference/ticketshadowdynamicselectionsinglecriteriagroup",
+                  "en/api/archive-providers/reference/ticketshadowdynamicselectionv2",
+                  "en/api/archive-providers/reference/ticketshadowselection",
+                  "en/api/archive-providers/reference/ticketshadowselectioncombined",
+                  "en/api/archive-providers/reference/ticketshadowselectioncombinedv2",
+                  "en/api/archive-providers/reference/ticketshadowselectionv2",
+                  "en/api/archive-providers/reference/ticketshadowstaticselection",
+                  "en/api/archive-providers/reference/ticketshadowstaticselectionv2",
+                  "en/api/archive-providers/reference/ticketstaticselection",
+                  "en/api/archive-providers/reference/ticketstaticselectionv2",
+                  "en/api/archive-providers/reference/tickettransferrednotification",
+                  "en/api/archive-providers/reference/timezones",
+                  "en/api/archive-providers/reference/unassignedtickets",
+                  "en/api/archive-providers/reference/useropentickets",
+                  "en/api/archive-providers/reference/userpreferences",
+                  "en/api/archive-providers/reference/userpreferencetable",
+                  "en/api/archive-providers/reference/webappusage",
+                  "en/api/archive-providers/reference/webhook"
+                ]
+              },
+              {
+                "group": "MDO provider reference",
+                "pages": [
+                  "en/api/mdo-providers/reference/index",
+                  "en/api/mdo-providers/reference/activelanguage",
+                  "en/api/mdo-providers/reference/activitystatus",
+                  "en/api/mdo-providers/reference/addressformat",
+                  "en/api/mdo-providers/reference/allpersonsearch",
+                  "en/api/mdo-providers/reference/allpersonwithassociatesearch",
+                  "en/api/mdo-providers/reference/allpreferencekeys",
+                  "en/api/mdo-providers/reference/amountclass",
+                  "en/api/mdo-providers/reference/AmountClass",
+                  "en/api/mdo-providers/reference/appointment",
+                  "en/api/mdo-providers/reference/appointmentcategory",
+                  "en/api/mdo-providers/reference/appointmentcautionwarning",
+                  "en/api/mdo-providers/reference/appointmentcompleted",
+                  "en/api/mdo-providers/reference/appointmentfavourite",
+                  "en/api/mdo-providers/reference/appointmentgroup",
+                  "en/api/mdo-providers/reference/appointmentresource",
+                  "en/api/mdo-providers/reference/appointmenttask",
+                  "en/api/mdo-providers/reference/appointmenttextid",
+                  "en/api/mdo-providers/reference/appointmenttype",
+                  "en/api/mdo-providers/reference/archiveprovider",
+                  "en/api/mdo-providers/reference/area",
+                  "en/api/mdo-providers/reference/associate",
+                  "en/api/mdo-providers/reference/associaterestrictions",
+                  "en/api/mdo-providers/reference/associatewithmail",
+                  "en/api/mdo-providers/reference/attachment",
+                  "en/api/mdo-providers/reference/Business",
+                  "en/api/mdo-providers/reference/Category",
+                  "en/api/mdo-providers/reference/categorygroup",
+                  "en/api/mdo-providers/reference/chartselection",
+                  "en/api/mdo-providers/reference/chatbot",
+                  "en/api/mdo-providers/reference/chatchannel",
+                  "en/api/mdo-providers/reference/chatservice",
+                  "en/api/mdo-providers/reference/chatsessionstatus",
+                  "en/api/mdo-providers/reference/chatuser",
+                  "en/api/mdo-providers/reference/colorindex",
+                  "en/api/mdo-providers/reference/combinedcontactpersonsearch",
+                  "en/api/mdo-providers/reference/Comptr",
+                  "en/api/mdo-providers/reference/consentpurpose",
+                  "en/api/mdo-providers/reference/consentsource",
+                  "en/api/mdo-providers/reference/contact",
+                  "en/api/mdo-providers/reference/contact_and_person_freetextsearch",
+                  "en/api/mdo-providers/reference/contact_and_person_freetextsearch_hierarchical",
+                  "en/api/mdo-providers/reference/contact_freetextsearch",
+                  "en/api/mdo-providers/reference/contact_new",
+                  "en/api/mdo-providers/reference/contactfavourite",
+                  "en/api/mdo-providers/reference/contactperson_freetextsearch",
+                  "en/api/mdo-providers/reference/contactphone",
+                  "en/api/mdo-providers/reference/contactrelationdefinition",
+                  "en/api/mdo-providers/reference/contactwithpersonsearch",
+                  "en/api/mdo-providers/reference/contactwithpersonsearch_new",
+                  "en/api/mdo-providers/reference/contint",
+                  "en/api/mdo-providers/reference/ContInt",
+                  "en/api/mdo-providers/reference/country",
+                  "en/api/mdo-providers/reference/country2",
+                  "en/api/mdo-providers/reference/createdocumenttemplateplugin",
+                  "en/api/mdo-providers/reference/credentialgroup",
+                  "en/api/mdo-providers/reference/Credited",
+                  "en/api/mdo-providers/reference/crmfields",
+                  "en/api/mdo-providers/reference/crmscript",
+                  "en/api/mdo-providers/reference/culture",
+                  "en/api/mdo-providers/reference/culturesolanguage",
+                  "en/api/mdo-providers/reference/Currency",
+                  "en/api/mdo-providers/reference/currentudeffields",
+                  "en/api/mdo-providers/reference/customerlanguage",
+                  "en/api/mdo-providers/reference/customobjectfavourite",
+                  "en/api/mdo-providers/reference/customobjectlist",
+                  "en/api/mdo-providers/reference/customobjectrelation",
+                  "en/api/mdo-providers/reference/dashboard",
+                  "en/api/mdo-providers/reference/dashboardcurrency",
+                  "en/api/mdo-providers/reference/dashboardentity",
+                  "en/api/mdo-providers/reference/dashboardtheme",
+                  "en/api/mdo-providers/reference/dashboardtile",
+                  "en/api/mdo-providers/reference/dashboardtileentitytype",
+                  "en/api/mdo-providers/reference/dashtilemeasure",
+                  "en/api/mdo-providers/reference/dayofmonth",
+                  "en/api/mdo-providers/reference/deliveryterms",
+                  "en/api/mdo-providers/reference/DeliveryTerms",
+                  "en/api/mdo-providers/reference/deliverytype",
+                  "en/api/mdo-providers/reference/DeliveryType",
+                  "en/api/mdo-providers/reference/diaryowner",
+                  "en/api/mdo-providers/reference/direction",
+                  "en/api/mdo-providers/reference/disconnectpersonactions",
+                  "en/api/mdo-providers/reference/doctmpl",
+                  "en/api/mdo-providers/reference/DocTmpl",
+                  "en/api/mdo-providers/reference/document",
+                  "en/api/mdo-providers/reference/documentcategory",
+                  "en/api/mdo-providers/reference/documentcompleted",
+                  "en/api/mdo-providers/reference/documentfavourite",
+                  "en/api/mdo-providers/reference/documentgroup",
+                  "en/api/mdo-providers/reference/documenthandler",
+                  "en/api/mdo-providers/reference/documentmailing",
+                  "en/api/mdo-providers/reference/documentmailingtemplate",
+                  "en/api/mdo-providers/reference/documenttemplatelanguage",
+                  "en/api/mdo-providers/reference/documenttemplatesfiltered",
+                  "en/api/mdo-providers/reference/documenttypes",
+                  "en/api/mdo-providers/reference/efd_13",
+                  "en/api/mdo-providers/reference/ejcategory",
+                  "en/api/mdo-providers/reference/ejuser",
+                  "en/api/mdo-providers/reference/emailaddress",
+                  "en/api/mdo-providers/reference/emailflow",
+                  "en/api/mdo-providers/reference/emailfolder",
+                  "en/api/mdo-providers/reference/emailfromtype",
+                  "en/api/mdo-providers/reference/emailphone",
+                  "en/api/mdo-providers/reference/emailpriorityprovider",
+                  "en/api/mdo-providers/reference/emailreplytotype",
+                  "en/api/mdo-providers/reference/enrichcontact",
+                  "en/api/mdo-providers/reference/erpactortype",
+                  "en/api/mdo-providers/reference/erpconnections",
+                  "en/api/mdo-providers/reference/erpconnectors",
+                  "en/api/mdo-providers/reference/erpdeliveryterms",
+                  "en/api/mdo-providers/reference/erpdeliverytype",
+                  "en/api/mdo-providers/reference/erpfields",
+                  "en/api/mdo-providers/reference/erppaymentterms",
+                  "en/api/mdo-providers/reference/erppaymenttype",
+                  "en/api/mdo-providers/reference/erpproductcategory",
+                  "en/api/mdo-providers/reference/erpproductfamily",
+                  "en/api/mdo-providers/reference/erpproducttype",
+                  "en/api/mdo-providers/reference/eventhandlertype",
+                  "en/api/mdo-providers/reference/everymonth",
+                  "en/api/mdo-providers/reference/executeonevent",
+                  "en/api/mdo-providers/reference/exporttemplate",
+                  "en/api/mdo-providers/reference/extapp",
+                  "en/api/mdo-providers/reference/ExtApp",
+                  "en/api/mdo-providers/reference/faqcategory",
+                  "en/api/mdo-providers/reference/faqreplytemplate",
+                  "en/api/mdo-providers/reference/faqreplytemplatefavourite",
+                  "en/api/mdo-providers/reference/favouritetype",
+                  "en/api/mdo-providers/reference/filterassociates",
+                  "en/api/mdo-providers/reference/filterfuturedate",
+                  "en/api/mdo-providers/reference/filtergroups",
+                  "en/api/mdo-providers/reference/findproduct",
+                  "en/api/mdo-providers/reference/font",
+                  "en/api/mdo-providers/reference/fontsize",
+                  "en/api/mdo-providers/reference/fonttype",
+                  "en/api/mdo-providers/reference/form",
+                  "en/api/mdo-providers/reference/formfields",
+                  "en/api/mdo-providers/reference/formfolder",
+                  "en/api/mdo-providers/reference/formmailings",
+                  "en/api/mdo-providers/reference/formratingdice",
+                  "en/api/mdo-providers/reference/formratingnps",
+                  "en/api/mdo-providers/reference/formratingsmileys",
+                  "en/api/mdo-providers/reference/formratingstars",
+                  "en/api/mdo-providers/reference/formratingthumbs",
+                  "en/api/mdo-providers/reference/formsubmissionstatusprovider",
+                  "en/api/mdo-providers/reference/freetextsearchentity",
+                  "en/api/mdo-providers/reference/functionrights",
+                  "en/api/mdo-providers/reference/genericperson",
+                  "en/api/mdo-providers/reference/genericpersonwithmail",
+                  "en/api/mdo-providers/reference/groupview",
+                  "en/api/mdo-providers/reference/heading",
+                  "en/api/mdo-providers/reference/hierarchy",
+                  "en/api/mdo-providers/reference/htmlmailing",
+                  "en/api/mdo-providers/reference/htmlmailingtemplate",
+                  "en/api/mdo-providers/reference/importblankaction",
+                  "en/api/mdo-providers/reference/importcontactduplicatematch",
+                  "en/api/mdo-providers/reference/importduplicateaction",
+                  "en/api/mdo-providers/reference/importduplicateactionwithoutadd",
+                  "en/api/mdo-providers/reference/importfields",
+                  "en/api/mdo-providers/reference/importnewlistitem",
+                  "en/api/mdo-providers/reference/importnewpositionitem",
+                  "en/api/mdo-providers/reference/importnewproductlistitem",
+                  "en/api/mdo-providers/reference/importpersonduplicatematch",
+                  "en/api/mdo-providers/reference/importphoneurlsemail",
+                  "en/api/mdo-providers/reference/importproductduplicatematch",
+                  "en/api/mdo-providers/reference/importproductfields",
+                  "en/api/mdo-providers/reference/Intent",
+                  "en/api/mdo-providers/reference/invitationtemplatelanguage",
+                  "en/api/mdo-providers/reference/iso639language",
+                  "en/api/mdo-providers/reference/kbaccesslevel",
+                  "en/api/mdo-providers/reference/kbentry",
+                  "en/api/mdo-providers/reference/kbworkflow",
+                  "en/api/mdo-providers/reference/landingpage",
+                  "en/api/mdo-providers/reference/language",
+                  "en/api/mdo-providers/reference/leadstatus",
+                  "en/api/mdo-providers/reference/legalbase",
+                  "en/api/mdo-providers/reference/lists",
+                  "en/api/mdo-providers/reference/locatecontact",
+                  "en/api/mdo-providers/reference/locatecontact_new",
+                  "en/api/mdo-providers/reference/locateperson",
+                  "en/api/mdo-providers/reference/location",
+                  "en/api/mdo-providers/reference/mailclient",
+                  "en/api/mdo-providers/reference/mailhtmltemplate",
+                  "en/api/mdo-providers/reference/mailing",
+                  "en/api/mdo-providers/reference/mailingdomains",
+                  "en/api/mdo-providers/reference/mailingfavourite",
+                  "en/api/mdo-providers/reference/mailingstatus",
+                  "en/api/mdo-providers/reference/mailingsubscriptiontype",
+                  "en/api/mdo-providers/reference/mailingtemplate",
+                  "en/api/mdo-providers/reference/mailingtype",
+                  "en/api/mdo-providers/reference/mailtemplate",
+                  "en/api/mdo-providers/reference/mergedocument",
+                  "en/api/mdo-providers/reference/mergetags",
+                  "en/api/mdo-providers/reference/month",
+                  "en/api/mdo-providers/reference/mrmrs",
+                  "en/api/mdo-providers/reference/MrMrs",
+                  "en/api/mdo-providers/reference/newsfeeditemstatusprovider",
+                  "en/api/mdo-providers/reference/ofmonth",
+                  "en/api/mdo-providers/reference/onlinefontlibrary",
+                  "en/api/mdo-providers/reference/ownercontact",
+                  "en/api/mdo-providers/reference/paymentterms",
+                  "en/api/mdo-providers/reference/PaymentTerms",
+                  "en/api/mdo-providers/reference/paymenttype",
+                  "en/api/mdo-providers/reference/PaymentType",
+                  "en/api/mdo-providers/reference/period",
+                  "en/api/mdo-providers/reference/periods",
+                  "en/api/mdo-providers/reference/persint",
+                  "en/api/mdo-providers/reference/PersInt",
+                  "en/api/mdo-providers/reference/person",
+                  "en/api/mdo-providers/reference/person_freetextsearch",
+                  "en/api/mdo-providers/reference/personcontact_freetextsearch",
+                  "en/api/mdo-providers/reference/personcontactfavourite",
+                  "en/api/mdo-providers/reference/personemailaddress",
+                  "en/api/mdo-providers/reference/personfavourite",
+                  "en/api/mdo-providers/reference/personphone",
+                  "en/api/mdo-providers/reference/personrestrictions",
+                  "en/api/mdo-providers/reference/personurl",
+                  "en/api/mdo-providers/reference/personwithmail",
+                  "en/api/mdo-providers/reference/perspos",
+                  "en/api/mdo-providers/reference/PersPos",
+                  "en/api/mdo-providers/reference/phonesearch",
+                  "en/api/mdo-providers/reference/plugin",
+                  "en/api/mdo-providers/reference/pmembtype",
+                  "en/api/mdo-providers/reference/PMembType",
+                  "en/api/mdo-providers/reference/prefdescline",
+                  "en/api/mdo-providers/reference/preferencekey",
+                  "en/api/mdo-providers/reference/preferencelineitem",
+                  "en/api/mdo-providers/reference/preferencesection",
+                  "en/api/mdo-providers/reference/pricelist",
+                  "en/api/mdo-providers/reference/priceunit",
+                  "en/api/mdo-providers/reference/PriceUnit",
+                  "en/api/mdo-providers/reference/Priority",
+                  "en/api/mdo-providers/reference/privacytemplate",
+                  "en/api/mdo-providers/reference/Prob",
+                  "en/api/mdo-providers/reference/productcategory",
+                  "en/api/mdo-providers/reference/ProductCategory",
+                  "en/api/mdo-providers/reference/productfamily",
+                  "en/api/mdo-providers/reference/ProductFamily",
+                  "en/api/mdo-providers/reference/productimage",
+                  "en/api/mdo-providers/reference/producttype",
+                  "en/api/mdo-providers/reference/ProductType",
+                  "en/api/mdo-providers/reference/project",
+                  "en/api/mdo-providers/reference/project_freetextsearch",
+                  "en/api/mdo-providers/reference/project_new",
+                  "en/api/mdo-providers/reference/projectassociate",
+                  "en/api/mdo-providers/reference/projectfavourite",
+                  "en/api/mdo-providers/reference/projectimage",
+                  "en/api/mdo-providers/reference/projectmembereventparticipantstatus",
+                  "en/api/mdo-providers/reference/projectmemberwithmail",
+                  "en/api/mdo-providers/reference/projectstatus",
+                  "en/api/mdo-providers/reference/projecttype",
+                  "en/api/mdo-providers/reference/projecttypeflatlist",
+                  "en/api/mdo-providers/reference/projstatus",
+                  "en/api/mdo-providers/reference/ProjStatus",
+                  "en/api/mdo-providers/reference/projtype",
+                  "en/api/mdo-providers/reference/ProjType",
+                  "en/api/mdo-providers/reference/quotealternatives",
+                  "en/api/mdo-providers/reference/quoteapprovalassociate",
+                  "en/api/mdo-providers/reference/quoteapprovers",
+                  "en/api/mdo-providers/reference/quoteapprreason",
+                  "en/api/mdo-providers/reference/QuoteApprReason",
+                  "en/api/mdo-providers/reference/quoteconnections",
+                  "en/api/mdo-providers/reference/quoteconnectors",
+                  "en/api/mdo-providers/reference/quotedenyreason",
+                  "en/api/mdo-providers/reference/QuoteDenyReason",
+                  "en/api/mdo-providers/reference/quotedocumentgroupfields",
+                  "en/api/mdo-providers/reference/quotedocumentorderbyfields",
+                  "en/api/mdo-providers/reference/quotedocuments",
+                  "en/api/mdo-providers/reference/quotedocumenttype",
+                  "en/api/mdo-providers/reference/quotelinestatus",
+                  "en/api/mdo-providers/reference/quotetemplate",
+                  "en/api/mdo-providers/reference/quoteversion",
+                  "en/api/mdo-providers/reference/quoteversionstate",
+                  "en/api/mdo-providers/reference/Reason",
+                  "en/api/mdo-providers/reference/reasonsold",
+                  "en/api/mdo-providers/reference/ReasonSold",
+                  "en/api/mdo-providers/reference/reasonstalled",
+                  "en/api/mdo-providers/reference/ReasonStalled",
+                  "en/api/mdo-providers/reference/recipientfavourite",
+                  "en/api/mdo-providers/reference/recordtype",
+                  "en/api/mdo-providers/reference/recurrenceweekcycle",
+                  "en/api/mdo-providers/reference/rejectreason",
+                  "en/api/mdo-providers/reference/RejectReason",
+                  "en/api/mdo-providers/reference/relateddatafields",
+                  "en/api/mdo-providers/reference/relationdefinition",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentappointmentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentappointmentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentdocumentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentdocumentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentsaleactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderappointmentsalepassive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidercontactactive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidercontactcontactactive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidercontactcontactpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidercontactpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidercontactpersonactive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidercontactpersonpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentappointmentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentappointmentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentdocumentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentdocumentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentsaleactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderdocumentsalepassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderpersonactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderpersoncontactactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderpersoncontactpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderpersonpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderpersonpersonactive",
+                  "en/api/mdo-providers/reference/relationssearchlistproviderpersonpersonpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersaleactive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersaleappointmentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersaleappointmentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersaledocumentactive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersaledocumentpassive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersalepassive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersalesaleactive",
+                  "en/api/mdo-providers/reference/relationssearchlistprovidersalesalepassive",
+                  "en/api/mdo-providers/reference/replytemplate",
+                  "en/api/mdo-providers/reference/replytemplateaccesslevel",
+                  "en/api/mdo-providers/reference/resource",
+                  "en/api/mdo-providers/reference/resourcerestrictions",
+                  "en/api/mdo-providers/reference/restrictionoperators",
+                  "en/api/mdo-providers/reference/roles",
+                  "en/api/mdo-providers/reference/saintactivitytype",
+                  "en/api/mdo-providers/reference/saintamountclass",
+                  "en/api/mdo-providers/reference/saintdirection",
+                  "en/api/mdo-providers/reference/saintintention",
+                  "en/api/mdo-providers/reference/saintsalestatus",
+                  "en/api/mdo-providers/reference/saintticketcategory",
+                  "en/api/mdo-providers/reference/saintticketstatus",
+                  "en/api/mdo-providers/reference/sale",
+                  "en/api/mdo-providers/reference/sale_freetextsearch",
+                  "en/api/mdo-providers/reference/sale_new",
+                  "en/api/mdo-providers/reference/salecategory",
+                  "en/api/mdo-providers/reference/saledone",
+                  "en/api/mdo-providers/reference/salefavourite",
+                  "en/api/mdo-providers/reference/saleguidestage",
+                  "en/api/mdo-providers/reference/saleprobability",
+                  "en/api/mdo-providers/reference/salesource",
+                  "en/api/mdo-providers/reference/salestage",
+                  "en/api/mdo-providers/reference/salestatus",
+                  "en/api/mdo-providers/reference/saletype",
+                  "en/api/mdo-providers/reference/SaleType",
+                  "en/api/mdo-providers/reference/saletypecat",
+                  "en/api/mdo-providers/reference/SaleTypeCat",
+                  "en/api/mdo-providers/reference/saletypecategories",
+                  "en/api/mdo-providers/reference/Salutation",
+                  "en/api/mdo-providers/reference/satellites",
+                  "en/api/mdo-providers/reference/searchcat",
+                  "en/api/mdo-providers/reference/SearchCat",
+                  "en/api/mdo-providers/reference/selection",
+                  "en/api/mdo-providers/reference/selection_freetextsearch",
+                  "en/api/mdo-providers/reference/selectioncriteriamembertype",
+                  "en/api/mdo-providers/reference/selectionfavourite",
+                  "en/api/mdo-providers/reference/selectionmembertype",
+                  "en/api/mdo-providers/reference/selectionmembertypeclean",
+                  "en/api/mdo-providers/reference/selectionmembertypev2",
+                  "en/api/mdo-providers/reference/selectionmemberwithmail",
+                  "en/api/mdo-providers/reference/selectiontype",
+                  "en/api/mdo-providers/reference/selectionuniontype",
+                  "en/api/mdo-providers/reference/sentiment",
+                  "en/api/mdo-providers/reference/serviceassociate",
+                  "en/api/mdo-providers/reference/shipmentaddrstatusprovider",
+                  "en/api/mdo-providers/reference/shipmentlinks",
+                  "en/api/mdo-providers/reference/shipmenttype",
+                  "en/api/mdo-providers/reference/simplemailingstatus",
+                  "en/api/mdo-providers/reference/smsmailing",
+                  "en/api/mdo-providers/reference/smsmailingtemplate",
+                  "en/api/mdo-providers/reference/Source",
+                  "en/api/mdo-providers/reference/sourceproduct",
+                  "en/api/mdo-providers/reference/specifiedmailings",
+                  "en/api/mdo-providers/reference/stakeholderrole",
+                  "en/api/mdo-providers/reference/StakeholderRole",
+                  "en/api/mdo-providers/reference/statusdef",
+                  "en/api/mdo-providers/reference/statusmonitorimage",
+                  "en/api/mdo-providers/reference/subscriptionunit",
+                  "en/api/mdo-providers/reference/SubscriptionUnit",
+                  "en/api/mdo-providers/reference/suggestedappointment",
+                  "en/api/mdo-providers/reference/suggesteddocument",
+                  "en/api/mdo-providers/reference/systemeventtype",
+                  "en/api/mdo-providers/reference/Tags",
+                  "en/api/mdo-providers/reference/targetentitytype",
+                  "en/api/mdo-providers/reference/targetmeasurementunit",
+                  "en/api/mdo-providers/reference/targettypes",
+                  "en/api/mdo-providers/reference/targetyear",
+                  "en/api/mdo-providers/reference/Task",
+                  "en/api/mdo-providers/reference/taskmenu",
+                  "en/api/mdo-providers/reference/TaskMenu",
+                  "en/api/mdo-providers/reference/taskmenudestination",
+                  "en/api/mdo-providers/reference/taskmenugroup",
+                  "en/api/mdo-providers/reference/templatevariables",
+                  "en/api/mdo-providers/reference/ticket",
+                  "en/api/mdo-providers/reference/ticket_freetextsearch",
+                  "en/api/mdo-providers/reference/ticket_selection_freetextsearch",
+                  "en/api/mdo-providers/reference/ticketalert",
+                  "en/api/mdo-providers/reference/ticketfavourite",
+                  "en/api/mdo-providers/reference/ticketorigin",
+                  "en/api/mdo-providers/reference/ticketpriority",
+                  "en/api/mdo-providers/reference/ticketpriorityescalateevent",
+                  "en/api/mdo-providers/reference/ticketread",
+                  "en/api/mdo-providers/reference/ticketrelationdefinition",
+                  "en/api/mdo-providers/reference/ticketrelationtype",
+                  "en/api/mdo-providers/reference/ticketselectionwithstaticmenu",
+                  "en/api/mdo-providers/reference/ticketslevel",
+                  "en/api/mdo-providers/reference/ticketstatus",
+                  "en/api/mdo-providers/reference/ticketstatustimecounter",
+                  "en/api/mdo-providers/reference/ticketstatuswithoutpostpone",
+                  "en/api/mdo-providers/reference/ticketstatuswithpostpone",
+                  "en/api/mdo-providers/reference/ticketticketstatus",
+                  "en/api/mdo-providers/reference/tickettype",
+                  "en/api/mdo-providers/reference/time",
+                  "en/api/mdo-providers/reference/timezone",
+                  "en/api/mdo-providers/reference/timezoneiana",
+                  "en/api/mdo-providers/reference/timezonewithcode",
+                  "en/api/mdo-providers/reference/typegroup",
+                  "en/api/mdo-providers/reference/typicalsearch",
+                  "en/api/mdo-providers/reference/udeffields",
+                  "en/api/mdo-providers/reference/udeffieldswithchanges",
+                  "en/api/mdo-providers/reference/udeffieldtype",
+                  "en/api/mdo-providers/reference/udlist",
+                  "en/api/mdo-providers/reference/UDList",
+                  "en/api/mdo-providers/reference/udlist28",
+                  "en/api/mdo-providers/reference/udlist30002",
+                  "en/api/mdo-providers/reference/urlencoding",
+                  "en/api/mdo-providers/reference/usergroup",
+                  "en/api/mdo-providers/reference/usergroupwithhistoryall",
+                  "en/api/mdo-providers/reference/userplan",
+                  "en/api/mdo-providers/reference/usertype",
+                  "en/api/mdo-providers/reference/visiblefor",
+                  "en/api/mdo-providers/reference/visibleforassociate",
+                  "en/api/mdo-providers/reference/visiblein",
+                  "en/api/mdo-providers/reference/visibleinmenu",
+                  "en/api/mdo-providers/reference/visibleintask",
+                  "en/api/mdo-providers/reference/webhookentitylist",
+                  "en/api/mdo-providers/reference/webhookeventlist",
+                  "en/api/mdo-providers/reference/webpanel",
+                  "en/api/mdo-providers/reference/webpanelgroup",
+                  "en/api/mdo-providers/reference/weekday",
+                  "en/api/mdo-providers/reference/weeknumber",
+                  "en/api/mdo-providers/reference/workflowdefinitionstatus",
+                  "en/api/mdo-providers/reference/workflowgoaltype",
+                  "en/api/mdo-providers/reference/workflowinstancestatus",
+                  "en/api/mdo-providers/reference/workflowsplitoptiontype",
+                  "en/api/mdo-providers/reference/workflowsteptype",
+                  "en/api/mdo-providers/reference/workflowtimewaitalgorithm",
+                  "en/api/mdo-providers/reference/workflowtimewaitintervaltype",
+                  "en/api/mdo-providers/reference/workflowtriggertype",
+                  "en/api/mdo-providers/reference/y_car"
+                ]
+              },
+              {
+                "group": "OData Search in WebApi",
+                "pages": [
+                  "en/api/search/odata/metadata",
+                  "en/api/search/odata/associate",
+                  "en/api/search/odata/boolean",
+                  "en/api/search/odata/date",
+                  "en/api/search/odata/datetime",
+                  "en/api/search/odata/lists",
+                  "en/api/search/odata/numbers",
+                  "en/api/search/odata/strings",
+                  "en/api/search/odata/unary",
+                  "en/api/search/odata/using-filters",
+                  "en/api/search/odata/dynamic-provider"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "en/api/security/role-based",
+              "en/api/security/encryption",
+              {
+                "group": "Sentry",
+                "pages": [
+                  {
+                    "group": "Overrides",
+                    "pages": [
+                      "en/api/security/sentry/com/set-override-com"
+                    ]
+                  },
+                  {
+                    "group": "Web services",
+                    "pages": [
+                      "en/api/security/sentry/services/fieldproperties",
+                      "en/api/security/sentry/services/tableright"
+                    ]
+                  },
+                  {
+                    "group": "Entities",
+                    "pages": [
+                      "en/api/security/sentry/entity/visible-for-flag"
+                    ]
+                  },
+                  "en/api/security/sentry/rows/index",
+                  "en/api/security/sentry/osql/distinct",
+                  "en/api/security/sentry/sql/set-override-sql"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Plug-ins",
+            "pages": [
+              "en/api/plugins/document/soarc-document-plugin",
+              {
+                "group": "Quote Connector",
+                "pages": [
+                  "en/api/plugins/quote-connectors/implementation-guide",
+                  {
+                    "group": "Administration",
+                    "pages": [
+                      "en/api/plugins/quote-connectors/set-up",
+                      "en/api/plugins/quote-connectors/edit-connection",
+                      "en/api/plugins/quote-connectors/error-system"
+                    ]
+                  },
+                  {
+                    "group": "Connector use",
+                    "pages": [
+                      "en/api/plugins/quote-connectors/start-client",
+                      "en/api/plugins/quote-connectors/capability-names",
+                      "en/api/plugins/quote-connectors/create-quote",
+                      "en/api/plugins/quote-connectors/adding-products",
+                      "en/api/plugins/quote-connectors/find-product",
+                      "en/api/plugins/quote-connectors/calc-price",
+                      "en/api/plugins/quote-connectors/discounts",
+                      "en/api/plugins/quote-connectors/save-quote",
+                      "en/api/plugins/quote-connectors/send-quote",
+                      "en/api/plugins/quote-connectors/approve-quote",
+                      "en/api/plugins/quote-connectors/place-order",
+                      "en/api/plugins/quote-connectors/addresses"
+                    ]
+                  },
+                  {
+                    "group": "API",
+                    "pages": [
+                      {
+                        "group": "Online SOAP API",
+                        "pages": [
+                          "en/api/plugins/quote-connectors/online-quote-connectors/soap-quote-connector-api",
+                          "en/api/plugins/quote-connectors/online-quote-connectors/rest-quote-connector-api"
+                        ]
+                      },
+                      {
+                        "group": "Onsite API",
+                        "pages": [
+                          "en/api/plugins/quote-connectors/api/iquoteconnector",
+                          "en/api/plugins/quote-connectors/api/iquoteconnector2",
+                          "en/api/plugins/quote-connectors/api/iproductregistercache",
+                          "en/api/plugins/quote-connectors/api/reason-fields",
+                          "en/api/plugins/quote-connectors/api/rights-field",
+                          "en/api/plugins/quote-connectors/api/iarchiveprovider",
+                          "en/api/plugins/quote-connectors/api/quoteconnectorbase",
+                          "en/api/plugins/quote-connectors/api/quoteconnectorextender"
+                        ]
+                      },
+                      {
+                        "group": "Data Carrier definitions",
+                        "pages": [
+                          "en/api/plugins/quote-connectors/api/data-carriers/addressinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/extradatafieldtypeinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/fieldmetadatainfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/isaleinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/orderresponseinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/placeorderresponseinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/pluginresponseinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/pricelistinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/productextradatafieldinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/productinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quotealternativecontextinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quotealternativeinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quotealternativewithlinesinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quoteconnectioninfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quoteinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quotelineinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quotelistiteminfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quotesentresponseinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quoteversioncontextinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quoteversioninfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quoteversionresponseinfo",
+                          "en/api/plugins/quote-connectors/api/data-carriers/quoteversionstateinfo"
+                        ]
+                      },
+                      {
+                        "group": "Enums",
+                        "pages": [
+                          "en/api/plugins/quote-connectors/api/enums/configfieldtype",
+                          "en/api/plugins/quote-connectors/api/enums/fieldaccessinfo",
+                          "en/api/plugins/quote-connectors/api/enums/quoteaction",
+                          "en/api/plugins/quote-connectors/api/enums/quotestatus",
+                          "en/api/plugins/quote-connectors/api/enums/valueoverrideinfo"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Scenarios",
+                    "pages": [
+                      "en/api/plugins/quote-connectors/scenarios/add-product",
+                      "en/api/plugins/quote-connectors/scenarios/customer-specific-product-codes"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "ERP Connector",
+                "pages": [
+                  "en/api/plugins/erp-connectors/terminology",
+                  "en/api/plugins/erp-connectors/sync-operation",
+                  "en/api/plugins/erp-connectors/automatic-field-mapping",
+                  "en/api/plugins/erp-connectors/client-gui",
+                  {
+                    "group": "Architecture",
+                    "pages": [
+                      "en/api/plugins/erp-connectors/architecture/sync-service",
+                      "en/api/plugins/erp-connectors/architecture/soap-service",
+                      "en/api/plugins/erp-connectors/architecture/wcf-host",
+                      "en/api/plugins/erp-connectors/architecture/wcf-host#multi-hosting"
+                    ]
+                  },
+                  {
+                    "group": "Working with ERP Sync onsite",
+                    "pages": [
+                      "en/api/plugins/erp-connectors/setup-connection",
+                      "en/api/plugins/erp-connectors/search/show-fields",
+                      "en/api/plugins/erp-connectors/setup-mapping",
+                      "en/api/plugins/erp-connectors/setup-defaults",
+                      "en/api/plugins/erp-connectors/ranking-fields",
+                      "en/api/plugins/erp-connectors/import",
+                      "en/api/plugins/erp-connectors/tutorial"
+                    ]
+                  },
+                  {
+                    "group": "Working with ERP Sync Online",
+                    "pages": [
+                      "en/api/plugins/erp-connectors/online/secure-in-online",
+                      "en/api/plugins/erp-connectors/online/example-api"
+                    ]
+                  },
+                  {
+                    "group": "API reference",
+                    "pages": [
+                      "en/api/plugins/erp-connectors/api/ierpconnector",
+                      "en/api/plugins/erp-connectors/api/field-meta-data-carrier",
+                      "en/api/plugins/erp-connectors/api/erp-actor-carrier",
+                      "en/api/plugins/erp-connectors/api/pluginresponseinfo",
+                      "en/api/plugins/erp-connectors/api/field-value-formats-and-conventions"
+                    ]
+                  },
+                  {
+                    "group": "How-to search for actors",
+                    "pages": [
+                      "en/api/plugins/erp-connectors/search/search-operators"
+                    ]
+                  },
+                  "en/api/plugins/erp-connectors/helpers",
+                  "en/api/plugins/erp-connectors/sample"
+                ]
+              },
+              {
+                "group": "Sentry plug-in",
+                "pages": [
+                  "en/api/plugins/sentry/create-sentry-plugin",
+                  "en/api/plugins/sentry/use-sentry-plugin"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "en/api/tutorials/itunes-like-activities/index",
+              "en/api/tutorials/so-ical-feed/index",
+              "en/api/tutorials/rss-feed-vb/index"
+            ]
+          }
+        ]
+      },
+      {
+        "item": "Database",
+        "icon": "database",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "en/database/overview"
+            ]
+          },
+          {
+            "group": "Getting started",
+            "pages": [
+              "en/database/getting-started/index",
+              "en/database/getting-started/special-tables",
+              "en/database/getting-started/naming-conventions",
+              "en/database/getting-started/table-id-sequence"
+            ]
+          },
+          {
+            "group": "Dictionary",
+            "pages": [
+              "en/database/dictionary/dictionary-steps",
+              "en/database/dictionary/howto-make-db-changes",
+              "en/database/dictionary/imp-file-format",
+              "en/database/dictionary/custompriming-method",
+              "en/database/dictionary/impfilenames-method",
+              "en/database/dictionary/structure-method"
+            ]
+          },
+          {
+            "group": "Reference",
+            "root": "en/database/tables/index",
+            "directory": "accordion",
+            "pages": {
+              "$ref": "./nav-database-tables.json"
+            }
+          }
+        ]
+      },
+      {
+        "item": "CRMScript Reference",
+        "icon": "code",
+        "groups": []
+      }
+    ]
+  },
+  {
+    "tab": "Contribute",
+    "icon": "hand-holding-heart",
+    "groups": [
+      {
+        "group": "Contribute",
+        "pages": [
+          "contribute/index",
+          "contribute/overview",
+          "contribute/getting-started",
+          "contribute/files-and-folders",
+          "contribute/how-to-edit-an-article",
+          "contribute/how-to-write-tutorials"
+        ]
+      },
+      {
+        "group": "Git",
+        "pages": [
+          "contribute/branch-strategy",
+          "contribute/git-cheat-sheet",
+          "contribute/git-workflows"
+        ]
+      },
+      {
+        "group": "Review",
+        "pages": [
+          "contribute/review/index",
+          "contribute/review/request-review",
+          "contribute/review/incorporate-feedback",
+          "contribute/review/check-changes"
+        ]
+      },
+      {
+        "group": "Markdown guide",
+        "pages": [
+          "contribute/markdown-guide/index",
+          "contribute/markdown-guide/links-in-docs",
+          "contribute/markdown-guide/metadata",
+          "contribute/markdown-guide/code-in-docs",
+          "contribute/markdown-guide/markdownlint",
+          "contribute/markdown-guide/using-blueprint-templates"
+        ]
+      },
+      {
+        "group": "Information architecture",
+        "pages": [
+          "contribute/ia",
+          "contribute/redirects",
+          "contribute/configure-mintlify"
+        ]
+      },
+      {
+        "group": "Content reuse",
+        "pages": [
+          "contribute/reuse"
+        ]
+      },
+      {
+        "group": "Style guide",
+        "pages": [
+          "contribute/style-guide/index",
+          "contribute/style-guide/formatting"
+        ]
+      }
+    ]
+  }
+]

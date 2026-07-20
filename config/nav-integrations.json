@@ -1,0 +1,233 @@
+[
+  {
+    "group": "Overview",
+    "pages": [
+      "integrations/index"
+    ]
+  },
+  {
+    "group": "Gmail Link",
+    "pages": [
+      "integrations/gmail-link/index",
+      "integrations/gmail-link/install",
+      "integrations/gmail-link/settings",
+      "integrations/gmail-link/manage-senders",
+      "integrations/gmail-link/email-archive-incoming",
+      "integrations/gmail-link/archive-attachments",
+      "integrations/gmail-link/archive-emails-as-activities",
+      "integrations/gmail-link/archive-emails-as-requests",
+      "integrations/gmail-link/email-archive-outgoing"
+    ]
+  },
+  {
+    "group": "Google Workspace document integration",
+    "pages": [
+      "integrations/g-suite/index",
+      "integrations/g-suite/requirements",
+      "integrations/g-suite/security",
+      "integrations/g-suite/getting-started",
+      "integrations/g-suite/set-up"
+    ]
+  },
+  {
+    "group": "Mail Link",
+    "pages": [
+      "integrations/mail-link/index",
+      "integrations/mail-link/install",
+      "integrations/mail-link/archive",
+      "integrations/mail-link/create-in-outlook",
+      "integrations/mail-link/create-in-superoffice",
+      "integrations/mail-link/select-recipients",
+      "integrations/mail-link/manage-senders",
+      "integrations/mail-link/add-attachment",
+      "integrations/mail-link/archive-on-contact",
+      "integrations/mail-link/archive-as-activity",
+      "integrations/mail-link/archive-as-request",
+      "integrations/mail-link/archive-attachment",
+      "integrations/mail-link/settings",
+      "integrations/mail-link/debug"
+    ]
+  },
+  {
+    "group": "SharePoint documents",
+    "pages": [
+      "integrations/sharepoint-documents/index",
+      "integrations/sharepoint-documents/requirements",
+      {
+        "group": "Set up SharePoint",
+        "pages": [
+          "integrations/sharepoint-documents/permissions-in-sharepoint",
+          "integrations/sharepoint-documents/configure-permissions-documents",
+          "integrations/sharepoint-documents/configure-permissions-templates"
+        ]
+      },
+      "integrations/sharepoint-documents/configure-superoffice",
+      "integrations/sharepoint-documents/permissions-app",
+      "integrations/sharepoint-documents/troubleshooting",
+      {
+        "group": "Migration",
+        "pages": [
+          "integrations/sharepoint-documents/migrate/index",
+          "integrations/sharepoint-documents/migrate/best-practices",
+          "integrations/sharepoint-documents/migrate/steps",
+          "integrations/sharepoint-documents/migrate/troubleshooting",
+          "integrations/sharepoint-documents/migrate/reference"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "SuperNotes",
+    "pages": [
+      "integrations/supernotes/index",
+      "integrations/supernotes/getting-started",
+      "integrations/supernotes/workspaces",
+      "integrations/supernotes/teams",
+      "integrations/supernotes/before-meeting",
+      "integrations/supernotes/summaries",
+      "integrations/supernotes/settings",
+      "integrations/supernotes/privacy-security"
+    ]
+  },
+  {
+    "group": "SuperOffice for Outlook",
+    "pages": [
+      "integrations/superoffice-for-outlook/index",
+      "integrations/superoffice-for-outlook/requirements",
+      "integrations/superoffice-for-outlook/get",
+      "integrations/superoffice-for-outlook/deploy",
+      "integrations/superoffice-for-outlook/settings",
+      "integrations/superoffice-for-outlook/add-contact-to-superoffice",
+      "integrations/superoffice-for-outlook/view-contact-details",
+      {
+        "group": "Archive emails to SuperOffice",
+        "pages": [
+          "integrations/superoffice-for-outlook/archive-email",
+          "integrations/superoffice-for-outlook/send-and-archive",
+          "integrations/superoffice-for-outlook/save-attachments",
+          "integrations/superoffice-for-outlook/shared-mailboxes"
+        ]
+      },
+      "integrations/superoffice-for-outlook/add-crm-data-to-event",
+      "integrations/superoffice-for-outlook/archive-reminder",
+      "integrations/superoffice-for-outlook/create-follow-up",
+      "integrations/superoffice-for-outlook/create-request",
+      "integrations/superoffice-for-outlook/create-sale"
+    ]
+  },
+  {
+    "group": "SuperOffice for Teams",
+    "pages": [
+      "integrations/superoffice-for-teams/index",
+      "integrations/superoffice-for-teams/requirements",
+      "integrations/superoffice-for-teams/deploy",
+      "integrations/superoffice-for-teams/get",
+      "integrations/superoffice-for-teams/archive-conversation",
+      "integrations/superoffice-for-teams/archive-file",
+      "integrations/superoffice-for-teams/ai-summary",
+      "integrations/superoffice-for-teams/preferences",
+      "integrations/superoffice-for-teams/security",
+      "integrations/superoffice-for-teams/troubleshooting",
+      "integrations/superoffice-for-teams/limitations"
+    ]
+  },
+  {
+    "group": "Video meetings",
+    "pages": [
+      "integrations/video-meetings/index",
+      "integrations/video-meetings/google-meet/index",
+      "integrations/video-meetings/jitsi/index",
+      "integrations/video-meetings/ms-teams/index",
+      "integrations/video-meetings/webex/index",
+      "integrations/video-meetings/zoom/index",
+      {
+        "group": "How to...",
+        "pages": [
+          "integrations/video-meetings/howto/create",
+          "integrations/video-meetings/howto/join",
+          "integrations/video-meetings/howto/configure-email-invitations",
+          "integrations/video-meetings/howto/connect-provider",
+          "integrations/video-meetings/howto/disconnect-provider",
+          "integrations/video-meetings/howto/disconnect-user"
+        ]
+      },
+      "integrations/video-meetings/troubleshooting"
+    ]
+  },
+  {
+    "group": "WebTools",
+    "pages": [
+      "integrations/webtools/index",
+      "integrations/webtools/technical-overview",
+      "integrations/webtools/system-requirements",
+      {
+        "group": "Set up",
+        "pages": [
+          "integrations/webtools/install",
+          "integrations/webtools/deploy",
+          "integrations/webtools/config",
+          "integrations/webtools/upgrade"
+        ]
+      },
+      "integrations/webtools/troubleshooting"
+    ]
+  },
+  {
+    "group": "Zapier",
+    "pages": [
+      "integrations/zapier/index",
+      {
+        "group": "Get started",
+        "pages": [
+          "integrations/zapier/get-started/set-up-account",
+          "integrations/zapier/get-started/create-zap"
+        ]
+      },
+      {
+        "group": "How to...",
+        "pages": [
+          "integrations/zapier/howto/index",
+          "integrations/zapier/howto/gdpr",
+          "integrations/zapier/howto/listsource",
+          "integrations/zapier/howto/datetime",
+          {
+            "group": "Actions",
+            "pages": [
+              "integrations/zapier/howto/actions/create-appointment",
+              "integrations/zapier/howto/actions/create-company",
+              "integrations/zapier/howto/actions/create-contact",
+              "integrations/zapier/howto/actions/create-document",
+              "integrations/zapier/howto/actions/create-project-member",
+              "integrations/zapier/howto/actions/create-project",
+              "integrations/zapier/howto/actions/create-request-message-attachment",
+              "integrations/zapier/howto/actions/create-request-message",
+              "integrations/zapier/howto/actions/create-request",
+              "integrations/zapier/howto/actions/create-sale",
+              "integrations/zapier/howto/actions/remove-project-member",
+              "integrations/zapier/howto/actions/search-company",
+              "integrations/zapier/howto/actions/search-contact",
+              "integrations/zapier/howto/actions/search-project",
+              "integrations/zapier/howto/actions/search-request",
+              "integrations/zapier/howto/actions/search-sale",
+              "integrations/zapier/howto/actions/update-appointment",
+              "integrations/zapier/howto/actions/update-company",
+              "integrations/zapier/howto/actions/update-contact",
+              "integrations/zapier/howto/actions/update-document-content",
+              "integrations/zapier/howto/actions/update-project",
+              "integrations/zapier/howto/actions/update-request",
+              "integrations/zapier/howto/actions/update-sale"
+            ]
+          },
+          {
+            "group": "Triggers",
+            "pages": [
+              "integrations/zapier/howto/triggers/new",
+              "integrations/zapier/howto/triggers/changed"
+            ]
+          }
+        ]
+      },
+      "integrations/zapier/reference"
+    ]
+  }
+]

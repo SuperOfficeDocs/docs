@@ -1,0 +1,60 @@
+{
+  "languages": [
+    {
+      "language": "en",
+      "default": true,
+      "tabs": {
+        "$ref": "./nav-en.json"
+      }
+    },
+    {
+      "language": "da",
+      "tabs": {
+        "$ref": "./nav-da.json"
+      }
+    },
+    {
+      "language": "de",
+      "tabs": {
+        "$ref": "./nav-de.json"
+      }
+    },
+    {
+      "language": "nl",
+      "tabs": {
+        "$ref": "./nav-nl.json"
+      }
+    },
+    {
+      "language": "no",
+      "tabs": {
+        "$ref": "./nav-no.json"
+      }
+    },
+    {
+      "language": "sv",
+      "tabs": {
+        "$ref": "./nav-sv.json"
+      }
+    }
+  ],
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Contact us",
+        "href": "https://www.superoffice.com/company/contact",
+        "icon": "headset"
+      },
+      {
+        "anchor": "Log in to SuperOffice",
+        "href": "https://online.superoffice.com/login",
+        "icon": "arrow-right-to-bracket"
+      },
+      {
+        "anchor": "About",
+        "href": "/about",
+        "icon": "circle-info"
+      }
+    ]
+  }
+}

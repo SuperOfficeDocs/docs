@@ -1,0 +1,977 @@
+[
+  {
+    "tab": "Hem",
+    "icon": "house",
+    "pages": [
+      "index"
+    ]
+  },
+  {
+    "tab": "Användarguide",
+    "icon": "book",
+    "groups": [
+      {
+        "group": "Översikt",
+        "pages": [
+          "sv/learn/index"
+        ]
+      },
+      {
+        "group": "Introduktion",
+        "pages": [
+          "sv/learn/intro"
+        ]
+      },
+      {
+        "group": "Komma igång",
+        "pages": [
+          "sv/learn/getting-started/index",
+          {
+            "group": "Layoutobjekten",
+            "pages": [
+              "sv/learn/getting-started/main-screen/index",
+              "sv/learn/getting-started/main-screen/navigator",
+              "sv/learn/getting-started/main-screen/buttons-in-menu-bar",
+              "sv/learn/getting-started/main-screen/side-panel",
+              "sv/learn/getting-started/main-screen/in-app-help"
+            ]
+          },
+          "sv/learn/getting-started/login",
+          "sv/learn/getting-started/preferences",
+          "sv/learn/getting-started/connect-your-accounts",
+          "sv/learn/getting-started/edit-email-signature",
+          "sv/learn/getting-started/change-language"
+        ]
+      },
+      {
+        "group": "Lär dig grunderna",
+        "pages": [
+          "sv/learn/basics/index",
+          "sv/learn/basics/notifications",
+          "sv/learn/basics/fav",
+          "sv/learn/basics/history",
+          "sv/learn/basics/links",
+          "sv/learn/basics/notes",
+          "sv/learn/basics/print",
+          "sv/learn/basics/duplicates",
+          "sv/learn/basics/deleting-elements",
+          "sv/learn/basics/bulk-update",
+          {
+            "group": "Arbeta med detaljkort",
+            "pages": [
+              "sv/learn/section-tabs/index",
+              "sv/learn/section-tabs/activities-tab",
+              "sv/learn/section-tabs/contacts-tab",
+              "sv/learn/section-tabs/relations-tab",
+              "sv/learn/section-tabs/sales-tab",
+              "sv/learn/section-tabs/projects-tab",
+              "sv/learn/section-tabs/requests-tab",
+              "sv/learn/section-tabs/configure-columns",
+              "sv/learn/section-tabs/filter",
+              "sv/learn/section-tabs/group",
+              "sv/learn/section-tabs/export-archives",
+              "sv/learn/section-tabs/send-email"
+            ]
+          },
+          "sv/learn/basics/activity",
+          "sv/learn/basics/relations",
+          "sv/learn/basics/external-applications-and-url-addresses",
+          "sv/learn/basics/creating-shortcuts-to-entries-in-crm"
+        ]
+      },
+      {
+        "group": "Sökfunktioner",
+        "pages": [
+          "sv/search-options/learn/index",
+          "sv/search-options/learn/find-screen",
+          "sv/search-options/learn/search-criteria",
+          "sv/search-options/learn/freetext-search",
+          "sv/search-options/learn/in-navigator",
+          "sv/search-options/learn/in-dialogs",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/search-options/admin/configure-free-text-search",
+              "sv/search-options/admin/stopwords"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Dashboard",
+        "pages": [
+          "sv/dashboard/learn/index",
+          "sv/dashboard/learn/create",
+          "sv/dashboard/learn/update",
+          "sv/dashboard/learn/working-with-tiles",
+          "sv/dashboard/learn/show-leads",
+          "sv/dashboard/learn/show-sales-targets",
+          "sv/dashboard/learn/show-marketing",
+          "sv/dashboard/learn/show-requests"
+        ]
+      },
+      {
+        "group": "Företag",
+        "pages": [
+          "sv/company/index",
+          "sv/company/learn/index",
+          "sv/company/learn/create",
+          "sv/company/learn/edit",
+          "sv/company/learn/copy",
+          "sv/company/learn/merge-companies",
+          "sv/company/learn/delete",
+          "sv/company/learn/address-formats"
+        ]
+      },
+      {
+        "group": "Kontakt",
+        "pages": [
+          "sv/contact/index",
+          "sv/contact/learn/index",
+          "sv/contact/learn/create",
+          "sv/contact/learn/edit",
+          "sv/contact/learn/move",
+          "sv/contact/learn/merge-contacts",
+          "sv/contact/learn/delete",
+          "sv/contact/learn/send-email",
+          "sv/contact/learn/dial"
+        ]
+      },
+      {
+        "group": "Kalender",
+        "pages": [
+          "sv/diary/index",
+          "sv/diary/learn/index",
+          "sv/diary/learn/follow-ups",
+          "sv/diary/learn/video-meetings",
+          "sv/diary/learn/create-follow-up",
+          "sv/diary/learn/edit-follow-up",
+          "sv/diary/learn/move-follow-up",
+          "sv/diary/learn/change-completed-status",
+          "sv/diary/learn/other-diaries",
+          "sv/diary/learn/group-view",
+          "sv/diary/learn/follow-up-assign",
+          "sv/diary/learn/set-alarm",
+          "sv/diary/learn/send-as-email",
+          {
+            "group": "Upprepning",
+            "pages": [
+              "sv/diary/learn/recurrence/index",
+              "sv/diary/learn/recurrence/create",
+              "sv/diary/learn/recurrence/stop"
+            ]
+          },
+          {
+            "group": "Inbjudningar",
+            "pages": [
+              "sv/diary/learn/invitation/index",
+              "sv/diary/learn/invitation/add-attendee",
+              "sv/diary/learn/invitation/accept-decline"
+            ]
+          },
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/diary/admin/add-follow-up-type",
+              "sv/diary/admin/add-resource"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Dokument",
+        "pages": [
+          "sv/document/index",
+          "sv/document/learn/index",
+          "sv/document/library/learn/index",
+          {
+            "group": "Arbeta med dokument",
+            "pages": [
+              "sv/document/learn/create",
+              "sv/document/learn/lock",
+              "sv/document/learn/edit",
+              "sv/document/learn/send-as-email"
+            ]
+          },
+          {
+            "group": "Dokumentmallar",
+            "pages": [
+              "sv/document/templates/learn/index",
+              "sv/document/templates/learn/document-types",
+              {
+                "group": "Mallvariabler",
+                "pages": [
+                  {
+                    "group": "Referens",
+                    "pages": [
+                      "sv/document/templates/variables/from-company-card",
+                      "sv/document/templates/variables/from-senders-company-card",
+                      "sv/document/templates/variables/for-selected-contact",
+                      "sv/document/templates/variables/for-sender-contact-dialog",
+                      "sv/document/templates/variables/from-doc-dialog-or-system",
+                      "sv/document/templates/variables/for-appointments",
+                      "sv/document/templates/variables/for-ical",
+                      "sv/document/templates/variables/for-int-address",
+                      "sv/document/templates/variables/for-mail-gateway",
+                      "sv/document/templates/variables/for-pocket",
+                      "sv/document/templates/variables/from-project-card",
+                      "sv/document/templates/variables/for-quote-alternative",
+                      "sv/document/templates/variables/for-quote-info",
+                      "sv/document/templates/variables/for-quote-line",
+                      "sv/document/templates/variables/for-quote-line-with-subscription",
+                      "sv/document/templates/variables/for-request",
+                      "sv/document/templates/variables/for-sales",
+                      "sv/document/templates/variables/for-selections",
+                      "sv/document/templates/variables/for-service",
+                      "sv/document/templates/variables/for-web-app",
+                      "sv/document/templates/variables/misc"
+                    ]
+                  },
+                  "sv/document/templates/learn/troubleshooting"
+                ]
+              },
+              {
+                "group": "Merge fields (offertmallar)",
+                "pages": [
+                  {
+                    "group": "Referens",
+                    "pages": [
+                      "sv/document/templates/merge-fields/index",
+                      "sv/document/templates/merge-fields/quote",
+                      "sv/document/templates/merge-fields/alternative",
+                      "sv/document/templates/merge-fields/group",
+                      "sv/document/templates/merge-fields/line"
+                    ]
+                  },
+                  "sv/document/templates/admin/tutorial"
+                ]
+              },
+              "sv/document/templates/learn/create",
+              "sv/document/templates/admin/link-template",
+              "sv/document/templates/admin/update-template",
+              "sv/document/templates/admin/document-template-defaults"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "E-post",
+        "pages": [
+          "sv/email/index",
+          "sv/email/learn/index",
+          "sv/email/learn/change-default-mail-client",
+          {
+            "group": "Inkorg",
+            "pages": [
+              "sv/email/inbox/learn/index",
+              "sv/email/inbox/learn/setup",
+              "sv/email/inbox/learn/preview",
+              "sv/email/inbox/learn/compose",
+              "sv/email/inbox/learn/manage-senders",
+              "sv/email/inbox/learn/invitations",
+              "sv/email/inbox/learn/archive",
+              "sv/email/inbox/learn/create-task",
+              "sv/email/inbox/learn/create-request"
+            ]
+          },
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/email/admin/add-email-template",
+              {
+                "group": "Postlådeadministration",
+                "pages": [
+                  "sv/email/admin/mailbox/index",
+                  "sv/email/admin/mailbox/create-mailbox",
+                  "sv/email/admin/mailbox/create-sms-mailbox",
+                  "sv/email/admin/mailbox/create-email-filter",
+                  "sv/email/admin/mailbox/delete-mailbox"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Försäljning",
+        "pages": [
+          "sv/sale/index",
+          "sv/sale/learn/index",
+          "sv/sale/learn/create",
+          "sv/sale/learn/update",
+          "sv/sale/learn/sales-guides",
+          "sv/sale/learn/tutorial",
+          {
+            "group": "Intressenter",
+            "pages": [
+              "sv/sale/learn/stakeholders/create",
+              "sv/sale/learn/stakeholders/edit"
+            ]
+          },
+          "sv/sale/learn/forecasting",
+          {
+            "group": "Försäljningsmål",
+            "pages": [
+              "sv/sale/learn/sales-targets/index",
+              "sv/sale/learn/sales-targets/create",
+              "sv/sale/learn/sales-targets/target-types"
+            ]
+          },
+          {
+            "group": "Offert",
+            "pages": [
+              "sv/sale/learn/quote/index",
+              "sv/sale/learn/quote/create",
+              "sv/sale/learn/quote/add-alternative",
+              "sv/sale/learn/quote/create-quote-document",
+              "sv/sale/learn/quote/send",
+              "sv/sale/learn/quote/place-order"
+            ]
+          },
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/sale/admin/index",
+              "sv/sale/admin/sale-stage",
+              "sv/sale/admin/sale-type",
+              "sv/sale/admin/create-sales-guide",
+              "sv/sale/admin/edit-sales-guide",
+              "sv/sale/admin/add-currency",
+              {
+                "group": "Offert",
+                "pages": [
+                  "sv/sale/admin/quote/price-list-and-products",
+                  "sv/sale/admin/quote/configure-product-fields",
+                  "sv/sale/admin/quote/set-up-quote-connector"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Projekt",
+        "pages": [
+          "sv/project/index",
+          "sv/project/learn/index",
+          "sv/project/learn/create",
+          "sv/project/learn/add-image",
+          "sv/project/learn/edit",
+          "sv/project/learn/merge-projects",
+          "sv/project/learn/delete",
+          {
+            "group": "Projektmedlemmar",
+            "pages": [
+              "sv/project/learn/project-members/index",
+              "sv/project/learn/project-members/add",
+              "sv/project/learn/project-members/edit",
+              "sv/project/learn/project-members/invite-to-meeting",
+              "sv/project/learn/project-members/send-email-to",
+              "sv/project/learn/project-members/create-mailing"
+            ]
+          },
+          "sv/project/learn/project-guides",
+          "sv/project/learn/tutorial",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/project/admin/index",
+              "sv/project/admin/project-status",
+              "sv/project/admin/project-type",
+              "sv/project/admin/create-project-guide",
+              "sv/project/admin/edit-project-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Ärenden",
+        "pages": [
+          "sv/request/index",
+          "sv/request/learn/index",
+          "sv/request/learn/handle-request-ai",
+          "sv/request/learn/find",
+          "sv/request/learn/create",
+          "sv/request/learn/edit-message",
+          "sv/request/learn/assign",
+          "sv/request/learn/spam",
+          "sv/request/learn/accept",
+          "sv/request/learn/transfer",
+          "sv/request/learn/forward",
+          "sv/request/learn/reply",
+          "sv/request/learn/request-relations",
+          "sv/request/learn/tags",
+          "sv/request/learn/flag-message",
+          "sv/request/learn/split-request",
+          "sv/request/learn/merge",
+          "sv/request/learn/split-message",
+          "sv/request/learn/close",
+          "sv/request/learn/delete",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/request/admin/index",
+              {
+                "group": "Ärendetyper",
+                "pages": [
+                  "sv/request/admin/type/index",
+                  "sv/request/admin/type/create",
+                  "sv/request/admin/type/delete"
+                ]
+              },
+              "sv/request/admin/relation-rules",
+              {
+                "group": "Kategorier",
+                "pages": [
+                  "sv/request/admin/category/index",
+                  "sv/request/admin/category/create",
+                  "sv/request/admin/category/delete",
+                  "sv/request/admin/category/external-categories"
+                ]
+              },
+              {
+                "group": "Prioriteter",
+                "pages": [
+                  "sv/request/admin/priority/index",
+                  "sv/request/admin/priority/create",
+                  "sv/request/admin/priority/delete",
+                  "sv/request/admin/priority/escalation-levels"
+                ]
+              },
+              {
+                "group": "Ärendestatus",
+                "pages": [
+                  "sv/request/admin/status/index",
+                  "sv/request/admin/status/create",
+                  "sv/request/admin/status/delete"
+                ]
+              },
+              "sv/request/admin/next-in-queue",
+              "sv/request/admin/system-templates"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Egendefinierade objekt",
+        "pages": [
+          "sv/custom-objects/learn/index",
+          "sv/custom-objects/learn/more-tab",
+          {
+            "group": "Användardefinierade fält",
+            "pages": [
+              "sv/custom-objects/learn/udef",
+              "sv/custom-objects/admin/add-udef",
+              "sv/custom-objects/admin/edit-udef",
+              "sv/custom-objects/admin/edit-udef-layout"
+            ]
+          },
+          {
+            "group": "Extratabeller",
+            "pages": [
+              "sv/custom-objects/learn/extra-table",
+              "sv/custom-objects/admin/create-extra-table"
+            ]
+          },
+          {
+            "group": "Extrafält",
+            "pages": [
+              "sv/custom-objects/learn/extra-field",
+              "sv/custom-objects/admin/create-extra-field",
+              "sv/custom-objects/admin/show-extra-field-on-request-details"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Urval",
+        "pages": [
+          "sv/search-options/selection/learn/index",
+          "sv/search-options/selection/learn/create",
+          "sv/search-options/selection/learn/update",
+          "sv/search-options/selection/learn/combine",
+          "sv/search-options/selection/learn/add-remove-members-static",
+          "sv/search-options/selection/learn/copy-members-to",
+          "sv/search-options/selection/learn/board-view",
+          {
+            "group": "Utföra uppgifter för urval",
+            "pages": [
+              "sv/search-options/selection/learn/howto/index",
+              "sv/search-options/selection/learn/howto/create-mailings",
+              "sv/search-options/selection/learn/howto/send-email",
+              "sv/search-options/selection/learn/howto/generate-follow-ups",
+              "sv/search-options/selection/learn/howto/display-as-charts",
+              "sv/search-options/selection/learn/howto/print-labels",
+              "sv/search-options/selection/learn/howto/print",
+              "sv/search-options/selection/learn/howto/export"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Chatt",
+        "pages": [
+          "sv/chat/learn/index",
+          "sv/chat/learn/statistics",
+          "sv/chat/learn/respond",
+          "sv/chat/learn/link-to-person",
+          "sv/chat/learn/create-request",
+          "sv/chat/learn/transfer-to-agent",
+          "sv/chat/learn/as-customer",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/chat/admin/index",
+              "sv/chat/admin/channel-create",
+              "sv/chat/admin/add-javascript"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Marknadsföring",
+        "pages": [
+          "sv/marketing/learn/index",
+          "sv/marketing/learn/create-folder",
+          "sv/marketing/learn/message-templates",
+          "sv/marketing/learn/add-images",
+          "sv/marketing/learn/best-practices",
+          {
+            "group": "Utskick",
+            "pages": [
+              "sv/marketing/mailing/learn/index",
+              {
+                "group": "Skapa nytt utskick",
+                "pages": [
+                  "sv/marketing/mailing/learn/create/index",
+                  "sv/marketing/mailing/learn/create/tutorial-email-mailing",
+                  "sv/marketing/mailing/learn/create/tutorial-sms-mailing",
+                  "sv/marketing/mailing/learn/create/tutorial-document-mailing",
+                  "sv/marketing/mailing/learn/create/tutorial-form-mailing",
+                  "sv/marketing/mailing/learn/create/send-test-email",
+                  "sv/marketing/mailing/learn/view-statistics",
+                  "sv/marketing/mailing/learn/resend"
+                ]
+              },
+              "sv/marketing/mailing/admin/define-settings-for-mailings",
+              "sv/marketing/mailing/admin/add-domain"
+            ]
+          },
+          {
+            "group": "Dra och släpp-redigerare",
+            "pages": [
+              "sv/marketing/editor/learn/index",
+              "sv/marketing/editor/learn/add-content",
+              "sv/marketing/editor/learn/edit-paragraph",
+              "sv/marketing/editor/learn/insert-images-in-message",
+              "sv/marketing/editor/learn/add-merge-tag",
+              "sv/marketing/editor/learn/add-link-to-display-message-in-browser",
+              "sv/marketing/editor/learn/add-unsubscribe-link",
+              "sv/marketing/editor/learn/add-tracked-link-to-msg"
+            ]
+          },
+          {
+            "group": "Mottagare (mållista)",
+            "pages": [
+              "sv/marketing/recipients/learn/index",
+              "sv/marketing/recipients/learn/manage-email-subscriptions",
+              "sv/marketing/recipients/learn/look-at-recipient-list",
+              "sv/marketing/recipients/learn/manage-bounces",
+              "sv/marketing/recipients/learn/spam-complaints"
+            ]
+          },
+          {
+            "group": "Spårade länkar",
+            "pages": [
+              "sv/marketing/tracked-links/learn/index",
+              "sv/marketing/tracked-links/learn/create-links",
+              "sv/marketing/tracked-links/learn/define-link-actions",
+              "sv/marketing/tracked-links/learn/add-google-analytics-tag",
+              "sv/marketing/tracked-links/learn/explore-clicks",
+              "sv/marketing/tracked-links/learn/reset-counter",
+              "sv/marketing/tracked-links/learn/ga-tutorial"
+            ]
+          },
+          {
+            "group": "Formulär",
+            "pages": [
+              "sv/marketing/forms/learn/index",
+              "sv/marketing/forms/learn/create",
+              "sv/marketing/forms/learn/field-options",
+              "sv/marketing/forms/learn/define-form-actions",
+              "sv/marketing/forms/learn/form-templates",
+              "sv/marketing/forms/learn/publish",
+              "sv/marketing/forms/learn/view-statistics",
+              "sv/marketing/forms/learn/process-submissions",
+              "sv/marketing/forms/learn/tutorial-contact-me",
+              "sv/marketing/forms/learn/tutorial-sign-up",
+              "sv/marketing/forms/admin/manage-fonts",
+              "sv/marketing/forms/admin/form-field-restrictions"
+            ]
+          },
+          {
+            "group": "Flöden",
+            "pages": [
+              "sv/marketing/flows/learn/index",
+              "sv/marketing/flows/learn/create",
+              "sv/marketing/flows/learn/update",
+              "sv/marketing/flows/learn/split",
+              "sv/marketing/flows/learn/define-flow-actions",
+              "sv/marketing/flows/learn/content",
+              "sv/marketing/flows/learn/step-settings",
+              "sv/marketing/flows/learn/run-pause-end",
+              "sv/marketing/flows/learn/participants",
+              "sv/marketing/flows/learn/view-statistics"
+            ]
+          },
+          {
+            "group": "Konverteringsspårning",
+            "pages": [
+              "sv/marketing/utm/learn/index",
+              "sv/marketing/utm/learn/parameters",
+              {
+                "group": "För administratörer",
+                "pages": [
+                  "sv/marketing/utm/admin/set-up"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Lead-administration",
+        "pages": [
+          "sv/lead/learn/index",
+          "sv/lead/learn/work-with-leads",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/lead/admin/index",
+              "sv/lead/admin/add-company-category",
+              "sv/lead/admin/add-lead-status",
+              "sv/lead/admin/category-automation"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Mobile CRM",
+        "pages": [
+          "sv/mobile/index"
+        ]
+      },
+      {
+        "group": "Kunskapsbas",
+        "pages": [
+          "sv/knowledge-base/learn/index",
+          "sv/knowledge-base/learn/manage-folders",
+          {
+            "group": "Svarsmallar",
+            "pages": [
+              "sv/knowledge-base/learn/reply-templates/index",
+              "sv/knowledge-base/learn/reply-templates/create",
+              "sv/knowledge-base/learn/reply-templates/new-language",
+              "sv/knowledge-base/learn/reply-templates/edit",
+              "sv/knowledge-base/learn/reply-templates/template-variables"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "sv/knowledge-base/learn/faq/index",
+              "sv/knowledge-base/learn/faq/create",
+              "sv/knowledge-base/learn/faq/edit",
+              "sv/knowledge-base/learn/faq/publish",
+              "sv/knowledge-base/learn/faq/workflow"
+            ]
+          },
+          "sv/knowledge-base/learn/email-addresses",
+          "sv/knowledge-base/learn/external-document"
+        ]
+      },
+      {
+        "group": "Integritetsinställningar och GDPR",
+        "pages": [
+          "sv/security/privacy/learn/index",
+          "sv/security/privacy/learn/edit-legal-base",
+          "sv/security/privacy/learn/send-privacy-confirmation-email",
+          "sv/security/privacy/learn/generate-personal-data-report",
+          "sv/security/privacy/learn/mass-delete",
+          {
+            "group": "För administratorer",
+            "pages": [
+              "sv/security/privacy/admin/index",
+              "sv/security/privacy/admin/add-purpose",
+              "sv/security/privacy/admin/add-legal-base",
+              "sv/security/privacy/admin/add-source",
+              "sv/security/privacy/admin/edit-privacy-confirmation-email"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "AI-tjänster",
+        "pages": [
+          "sv/ai/learn/index",
+          "sv/ai/learn/text-analysis",
+          "sv/ai/learn/categorization",
+          "sv/ai/learn/copilot",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/ai/admin/set-up-categorization"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "SAINT (försäljningsintelligens)",
+        "pages": [
+          "sv/saint/learn/index",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/saint/admin/index",
+              "sv/saint/admin/set-up",
+              "sv/saint/admin/update",
+              "sv/saint/admin/counter-settings",
+              "sv/saint/admin/sale-amount-class"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "ERP",
+        "pages": [
+          "sv/erp/learn/index",
+          "sv/erp/learn/connect",
+          "sv/erp/learn/disconnect",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/erp/admin/index",
+              "sv/erp/admin/add-connection",
+              "sv/erp/admin/configure",
+              "sv/erp/admin/update-connection",
+              "sv/erp/admin/resync-from-crm"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Anpassning",
+        "pages": [
+          "sv/customization/index",
+          {
+            "group": "Skärmdesigner",
+            "pages": [
+              "sv/customization/screen-designer/admin/index",
+              "sv/customization/screen-designer/admin/add-layout",
+              "sv/customization/screen-designer/admin/edit-layout",
+              "sv/customization/screen-designer/admin/working-with-fields",
+              "sv/customization/screen-designer/admin/working-with-grids",
+              "sv/customization/screen-designer/admin/working-with-tabs",
+              "sv/customization/screen-designer/admin/working-with-archives",
+              "sv/customization/screen-designer/admin/add-button",
+              "sv/customization/screen-designer/admin/assign-layout",
+              "sv/customization/screen-designer/admin/reference",
+              "sv/customization/screen-designer/admin/tutorial-move-country"
+            ]
+          },
+          {
+            "group": "Webbpaneler",
+            "pages": [
+              "sv/customization/web-panels/admin/index",
+              "sv/customization/web-panels/admin/add-web-panel",
+              "sv/customization/web-panels/admin/url-encoding"
+            ]
+          },
+          {
+            "group": "Makron och skript",
+            "pages": [
+              "sv/customization/macros-and-scripts/admin/index",
+              "sv/customization/macros-and-scripts/admin/create-script",
+              "sv/customization/macros-and-scripts/admin/create-macro",
+              "sv/customization/macros-and-scripts/admin/trigger",
+              "sv/customization/macros-and-scripts/admin/schedule-task"
+            ]
+          },
+          {
+            "group": "Kundcenter",
+            "pages": [
+              "sv/customer-center/learn/index",
+              "sv/customer-center/learn/config",
+              "sv/customer-center/learn/edit",
+              "sv/customer-center/learn/send-credentials",
+              "sv/customer-center/learn/enable-chat",
+              "sv/customer-center/learn/link-form",
+              {
+                "group": "För administratörer",
+                "pages": [
+                  "sv/customer-center/admin/style-subscription-page",
+                  "sv/customer-center/admin/password-policy"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Systemdesign",
+            "pages": [
+              "sv/ui/blogic/learn/index",
+              {
+                "group": "Profiler",
+                "pages": [
+                  "sv/ui/blogic/learn/profiles/index",
+                  "sv/ui/blogic/learn/profiles/personal",
+                  "sv/ui/blogic/learn/profiles/common",
+                  "sv/ui/blogic/learn/profiles/global"
+                ]
+              },
+              "sv/ui/blogic/learn/screen-chooser",
+              "sv/ui/blogic/learn/screen-definition",
+              "sv/ui/blogic/learn/screen-properties",
+              {
+                "group": "Extramenyer",
+                "pages": [
+                  "sv/ui/blogic/learn/extra-menus/index",
+                  "sv/ui/blogic/learn/extra-menus/actions",
+                  "sv/ui/blogic/learn/extra-menus/navigator",
+                  "sv/ui/blogic/learn/extra-menus/properties"
+                ]
+              }
+            ]
+          },
+          "sv/customization/admin/package-properties",
+          "sv/customization/admin/add-items-to-task-menu",
+          "sv/customization/admin/other-applications",
+          {
+            "group": "Webhooks",
+            "pages": [
+              "sv/automation/webhook/admin/index",
+              "sv/automation/webhook/admin/create"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Inställningar och underhåll",
+        "pages": [
+          "sv/admin/index",
+          "sv/admin/getting-started",
+          "sv/admin/adjusting-views",
+          {
+            "group": "Licenser",
+            "pages": [
+              "sv/admin/license/index",
+              "sv/admin/license/crm-suite",
+              "sv/admin/license/user-plans",
+              "sv/admin/license/activate",
+              "sv/admin/license/expander-services"
+            ]
+          },
+          {
+            "group": "Inställningar",
+            "pages": [
+              "sv/admin/preferences/index",
+              "sv/admin/preferences/update",
+              "sv/admin/preferences/service-settings",
+              "sv/admin/preferences/sms"
+            ]
+          },
+          {
+            "group": "Systemval",
+            "pages": [
+              "sv/admin/options/index",
+              "sv/admin/options/configure-number-allocation",
+              "sv/admin/options/change-ui-labels"
+            ]
+          },
+          {
+            "group": "Listor",
+            "pages": [
+              "sv/admin/lists/index",
+              "sv/admin/lists/add-items",
+              "sv/admin/lists/update-items",
+              "sv/admin/lists/restore",
+              "sv/admin/lists/headings",
+              "sv/admin/lists/user-group-filtering",
+              "sv/admin/lists/specialized-lists",
+              "sv/admin/lists/user-defined-lists"
+            ]
+          },
+          {
+            "group": "Administrering av användare",
+            "pages": [
+              "sv/admin/user-management/index",
+              "sv/admin/user-management/add-associate",
+              "sv/admin/user-management/update-user",
+              "sv/admin/user-management/our-companies",
+              "sv/admin/user-management/user-groups",
+              {
+                "group": "Roll",
+                "pages": [
+                  "sv/admin/user-management/role/index",
+                  "sv/admin/user-management/role/create-role",
+                  "sv/admin/user-management/role/update-role",
+                  "sv/admin/user-management/role/set-data-rights-for-role",
+                  "sv/admin/user-management/role/functional-rights"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Import",
+            "pages": [
+              "sv/admin/import/index",
+              "sv/admin/import/create-spreadsheet",
+              "sv/admin/import/from-excel",
+              "sv/admin/import/from-mac-address-book",
+              "sv/admin/import/from-gmail",
+              "sv/admin/import/from-erp",
+              "sv/admin/import/products-from-excel",
+              "sv/admin/import/settings"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Språk, översättning och tidszoner",
+        "pages": [
+          "sv/localization/learn/customer-languages",
+          "sv/localization/learn/translate-fields",
+          "sv/localization/learn/time-zones",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/localization/admin/enable-time-zones",
+              "sv/localization/admin/select-time-zones",
+              "sv/localization/admin/add-customer-language"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tab": "Mobile",
+    "icon": "mobile-screen",
+    "pages": [
+      "en/mobile/index"
+    ]
+  },
+  {
+    "tab": "Integrationer",
+    "icon": "plus",
+    "pages": [
+      "integrations/index"
+    ]
+  },
+  {
+    "tab": "Versionshistorik",
+    "icon": "bullhorn",
+    "pages": [
+      "release-notes/11/index"
+    ]
+  }
+]

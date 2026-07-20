@@ -1,0 +1,977 @@
+[
+  {
+    "tab": "Home",
+    "icon": "house",
+    "pages": [
+      "index"
+    ]
+  },
+  {
+    "tab": "Handleidingen",
+    "icon": "book",
+    "groups": [
+      {
+        "group": "Overzicht",
+        "pages": [
+          "nl/learn/index"
+        ]
+      },
+      {
+        "group": "Inleiding",
+        "pages": [
+          "nl/learn/intro"
+        ]
+      },
+      {
+        "group": "Aan de slag",
+        "pages": [
+          "nl/learn/getting-started/index",
+          {
+            "group": "De opmaakelementen",
+            "pages": [
+              "nl/learn/getting-started/main-screen/index",
+              "nl/learn/getting-started/main-screen/navigator",
+              "nl/learn/getting-started/main-screen/buttons-in-menu-bar",
+              "nl/learn/getting-started/main-screen/side-panel",
+              "nl/learn/getting-started/main-screen/in-app-help"
+            ]
+          },
+          "nl/learn/getting-started/login",
+          "nl/learn/getting-started/preferences",
+          "nl/learn/getting-started/connect-your-accounts",
+          "nl/learn/getting-started/edit-email-signature",
+          "nl/learn/getting-started/change-language"
+        ]
+      },
+      {
+        "group": "De basis leren",
+        "pages": [
+          "nl/learn/basics/index",
+          "nl/learn/basics/notifications",
+          "nl/learn/basics/fav",
+          "nl/learn/basics/history",
+          "nl/learn/basics/links",
+          "nl/learn/basics/notes",
+          "nl/learn/basics/print",
+          "nl/learn/basics/duplicates",
+          "nl/learn/basics/deleting-elements",
+          "nl/learn/basics/bulk-update",
+          {
+            "group": "Werken met sectietabbladen",
+            "pages": [
+              "nl/learn/section-tabs/index",
+              "nl/learn/section-tabs/activities-tab",
+              "nl/learn/section-tabs/contacts-tab",
+              "nl/learn/section-tabs/relations-tab",
+              "nl/learn/section-tabs/sales-tab",
+              "nl/learn/section-tabs/projects-tab",
+              "nl/learn/section-tabs/requests-tab",
+              "nl/learn/section-tabs/configure-columns",
+              "nl/learn/section-tabs/filter",
+              "nl/learn/section-tabs/group",
+              "nl/learn/section-tabs/export-archives",
+              "nl/learn/section-tabs/send-email"
+            ]
+          },
+          "nl/learn/basics/activity",
+          "nl/learn/basics/relations",
+          "nl/learn/basics/external-applications-and-url-addresses",
+          "nl/learn/basics/creating-shortcuts-to-entries-in-crm"
+        ]
+      },
+      {
+        "group": "Zoekopties",
+        "pages": [
+          "nl/search-options/learn/index",
+          "nl/search-options/learn/find-screen",
+          "nl/search-options/learn/search-criteria",
+          "nl/search-options/learn/freetext-search",
+          "nl/search-options/learn/in-navigator",
+          "nl/search-options/learn/in-dialogs",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/search-options/admin/configure-free-text-search",
+              "nl/search-options/admin/stopwords"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Dashboard",
+        "pages": [
+          "nl/dashboard/learn/index",
+          "nl/dashboard/learn/create",
+          "nl/dashboard/learn/update",
+          "nl/dashboard/learn/working-with-tiles",
+          "nl/dashboard/learn/show-leads",
+          "nl/dashboard/learn/show-sales-targets",
+          "nl/dashboard/learn/show-marketing",
+          "nl/dashboard/learn/show-requests"
+        ]
+      },
+      {
+        "group": "Bedrijf",
+        "pages": [
+          "nl/company/index",
+          "nl/company/learn/index",
+          "nl/company/learn/create",
+          "nl/company/learn/edit",
+          "nl/company/learn/copy",
+          "nl/company/learn/merge-companies",
+          "nl/company/learn/delete",
+          "nl/company/learn/address-formats"
+        ]
+      },
+      {
+        "group": "Persoon",
+        "pages": [
+          "nl/contact/index",
+          "nl/contact/learn/index",
+          "nl/contact/learn/create",
+          "nl/contact/learn/edit",
+          "nl/contact/learn/move",
+          "nl/contact/learn/merge-contacts",
+          "nl/contact/learn/delete",
+          "nl/contact/learn/send-email",
+          "nl/contact/learn/dial"
+        ]
+      },
+      {
+        "group": "Agenda",
+        "pages": [
+          "nl/diary/index",
+          "nl/diary/learn/index",
+          "nl/diary/learn/follow-ups",
+          "nl/diary/learn/video-meetings",
+          "nl/diary/learn/create-follow-up",
+          "nl/diary/learn/edit-follow-up",
+          "nl/diary/learn/move-follow-up",
+          "nl/diary/learn/change-completed-status",
+          "nl/diary/learn/other-diaries",
+          "nl/diary/learn/group-view",
+          "nl/diary/learn/follow-up-assign",
+          "nl/diary/learn/set-alarm",
+          "nl/diary/learn/send-as-email",
+          {
+            "group": "Herhalen",
+            "pages": [
+              "nl/diary/learn/recurrence/index",
+              "nl/diary/learn/recurrence/create",
+              "nl/diary/learn/recurrence/stop"
+            ]
+          },
+          {
+            "group": "Uitnodigingen",
+            "pages": [
+              "nl/diary/learn/invitation/index",
+              "nl/diary/learn/invitation/add-attendee",
+              "nl/diary/learn/invitation/accept-decline"
+            ]
+          },
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/diary/admin/add-follow-up-type",
+              "nl/diary/admin/add-resource"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Document",
+        "pages": [
+          "nl/document/index",
+          "nl/document/learn/index",
+          "nl/document/library/learn/index",
+          {
+            "group": "Werken met document",
+            "pages": [
+              "nl/document/learn/create",
+              "nl/document/learn/lock",
+              "nl/document/learn/edit",
+              "nl/document/learn/send-as-email"
+            ]
+          },
+          {
+            "group": "Documentsjablonen",
+            "pages": [
+              "nl/document/templates/learn/index",
+              "nl/document/templates/learn/document-types",
+              {
+                "group": "Sjabloonvariabelen",
+                "pages": [
+                  {
+                    "group": "Referentie",
+                    "pages": [
+                      "nl/document/templates/variables/from-company-card",
+                      "nl/document/templates/variables/from-senders-company-card",
+                      "nl/document/templates/variables/for-selected-contact",
+                      "nl/document/templates/variables/for-sender-contact-dialog",
+                      "nl/document/templates/variables/from-doc-dialog-or-system",
+                      "nl/document/templates/variables/for-appointments",
+                      "nl/document/templates/variables/for-ical",
+                      "nl/document/templates/variables/for-int-address",
+                      "nl/document/templates/variables/for-mail-gateway",
+                      "nl/document/templates/variables/for-pocket",
+                      "nl/document/templates/variables/from-project-card",
+                      "nl/document/templates/variables/for-quote-alternative",
+                      "nl/document/templates/variables/for-quote-info",
+                      "nl/document/templates/variables/for-quote-line",
+                      "nl/document/templates/variables/for-quote-line-with-subscription",
+                      "nl/document/templates/variables/for-request",
+                      "nl/document/templates/variables/for-sales",
+                      "nl/document/templates/variables/for-selections",
+                      "nl/document/templates/variables/for-service",
+                      "nl/document/templates/variables/for-web-app",
+                      "nl/document/templates/variables/misc"
+                    ]
+                  },
+                  "nl/document/templates/learn/troubleshooting"
+                ]
+              },
+              {
+                "group": "Samenvoegvelden (offertesjablonen)",
+                "pages": [
+                  {
+                    "group": "Referentie",
+                    "pages": [
+                      "nl/document/templates/merge-fields/index",
+                      "nl/document/templates/merge-fields/quote",
+                      "nl/document/templates/merge-fields/alternative",
+                      "nl/document/templates/merge-fields/group",
+                      "nl/document/templates/merge-fields/line"
+                    ]
+                  },
+                  "nl/document/templates/admin/tutorial"
+                ]
+              },
+              "nl/document/templates/learn/create",
+              "nl/document/templates/admin/link-template",
+              "nl/document/templates/admin/update-template",
+              "nl/document/templates/admin/document-template-defaults"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "E-mail",
+        "pages": [
+          "nl/email/index",
+          "nl/email/learn/index",
+          "nl/email/learn/change-default-mail-client",
+          {
+            "group": "Postvak IN",
+            "pages": [
+              "nl/email/inbox/learn/index",
+              "nl/email/inbox/learn/setup",
+              "nl/email/inbox/learn/preview",
+              "nl/email/inbox/learn/compose",
+              "nl/email/inbox/learn/manage-senders",
+              "nl/email/inbox/learn/invitations",
+              "nl/email/inbox/learn/archive",
+              "nl/email/inbox/learn/create-task",
+              "nl/email/inbox/learn/create-request"
+            ]
+          },
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/email/admin/add-email-template",
+              {
+                "group": "Postbusbeheer",
+                "pages": [
+                  "nl/email/admin/mailbox/index",
+                  "nl/email/admin/mailbox/create-mailbox",
+                  "nl/email/admin/mailbox/create-sms-mailbox",
+                  "nl/email/admin/mailbox/create-email-filter",
+                  "nl/email/admin/mailbox/delete-mailbox"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Verkoop",
+        "pages": [
+          "nl/sale/index",
+          "nl/sale/learn/index",
+          "nl/sale/learn/create",
+          "nl/sale/learn/update",
+          {
+            "group": "Belanghebbenden",
+            "pages": [
+              "nl/sale/learn/stakeholders/create",
+              "nl/sale/learn/stakeholders/edit"
+            ]
+          },
+          "nl/sale/learn/sales-guides",
+          "nl/sale/learn/tutorial",
+          "nl/sale/learn/forecasting",
+          {
+            "group": "Verkooptargets",
+            "pages": [
+              "nl/sale/learn/sales-targets/index",
+              "nl/sale/learn/sales-targets/create",
+              "nl/sale/learn/sales-targets/target-types"
+            ]
+          },
+          {
+            "group": "Offerte",
+            "pages": [
+              "nl/sale/learn/quote/index",
+              "nl/sale/learn/quote/create",
+              "nl/sale/learn/quote/add-alternative",
+              "nl/sale/learn/quote/create-quote-document",
+              "nl/sale/learn/quote/send",
+              "nl/sale/learn/quote/place-order"
+            ]
+          },
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/sale/admin/index",
+              "nl/sale/admin/sale-stage",
+              "nl/sale/admin/sale-type",
+              "nl/sale/admin/create-sales-guide",
+              "nl/sale/admin/edit-sales-guide",
+              "nl/sale/admin/add-currency",
+              {
+                "group": "Offerte",
+                "pages": [
+                  "nl/sale/admin/quote/price-list-and-products",
+                  "nl/sale/admin/quote/configure-product-fields",
+                  "nl/sale/admin/quote/set-up-quote-connector"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Project",
+        "pages": [
+          "nl/project/index",
+          "nl/project/learn/index",
+          "nl/project/learn/create",
+          "nl/project/learn/add-image",
+          "nl/project/learn/edit",
+          "nl/project/learn/merge-projects",
+          "nl/project/learn/delete",
+          {
+            "group": "Projectleden",
+            "pages": [
+              "nl/project/learn/project-members/index",
+              "nl/project/learn/project-members/add",
+              "nl/project/learn/project-members/edit",
+              "nl/project/learn/project-members/invite-to-meeting",
+              "nl/project/learn/project-members/send-email-to",
+              "nl/project/learn/project-members/create-mailing"
+            ]
+          },
+          "nl/project/learn/project-guides",
+          "nl/project/learn/tutorial",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/project/admin/index",
+              "nl/project/admin/project-status",
+              "nl/project/admin/project-type",
+              "nl/project/admin/create-project-guide",
+              "nl/project/admin/edit-project-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Verzoeken",
+        "pages": [
+          "nl/request/index",
+          "nl/request/learn/index",
+          "nl/request/learn/handle-request-ai",
+          "nl/request/learn/find",
+          "nl/request/learn/create",
+          "nl/request/learn/edit-message",
+          "nl/request/learn/assign",
+          "nl/request/learn/spam",
+          "nl/request/learn/accept",
+          "nl/request/learn/transfer",
+          "nl/request/learn/forward",
+          "nl/request/learn/reply",
+          "nl/request/learn/request-relations",
+          "nl/request/learn/tags",
+          "nl/request/learn/flag-message",
+          "nl/request/learn/split-request",
+          "nl/request/learn/merge",
+          "nl/request/learn/split-message",
+          "nl/request/learn/close",
+          "nl/request/learn/delete",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/request/admin/index",
+              {
+                "group": "Verzoektypen",
+                "pages": [
+                  "nl/request/admin/type/index",
+                  "nl/request/admin/type/create",
+                  "nl/request/admin/type/delete"
+                ]
+              },
+              "nl/request/admin/relation-rules",
+              {
+                "group": "Categorieën",
+                "pages": [
+                  "nl/request/admin/category/index",
+                  "nl/request/admin/category/create",
+                  "nl/request/admin/category/delete",
+                  "nl/request/admin/category/external-categories"
+                ]
+              },
+              {
+                "group": "Prioriteiten",
+                "pages": [
+                  "nl/request/admin/priority/index",
+                  "nl/request/admin/priority/create",
+                  "nl/request/admin/priority/delete",
+                  "nl/request/admin/priority/escalation-levels"
+                ]
+              },
+              {
+                "group": "Verzoekstatus",
+                "pages": [
+                  "nl/request/admin/status/index",
+                  "nl/request/admin/status/create",
+                  "nl/request/admin/status/delete"
+                ]
+              },
+              "nl/request/admin/next-in-queue",
+              "nl/request/admin/system-templates"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Aangepaste objecten",
+        "pages": [
+          "nl/custom-objects/learn/index",
+          "nl/custom-objects/learn/more-tab",
+          {
+            "group": "Door gebruiker gedefinieerde velden",
+            "pages": [
+              "nl/custom-objects/learn/udef",
+              "nl/custom-objects/admin/add-udef",
+              "nl/custom-objects/admin/edit-udef",
+              "nl/custom-objects/admin/edit-udef-layout"
+            ]
+          },
+          {
+            "group": "Extra tabellen",
+            "pages": [
+              "nl/custom-objects/learn/extra-table",
+              "nl/custom-objects/admin/create-extra-table"
+            ]
+          },
+          {
+            "group": "Extra velden",
+            "pages": [
+              "nl/custom-objects/learn/extra-field",
+              "nl/custom-objects/admin/create-extra-field",
+              "nl/custom-objects/admin/show-extra-field-on-request-details"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Selectie",
+        "pages": [
+          "nl/search-options/selection/learn/index",
+          "nl/search-options/selection/learn/create",
+          "nl/search-options/selection/learn/update",
+          "nl/search-options/selection/learn/combine",
+          "nl/search-options/selection/learn/add-remove-members-static",
+          "nl/search-options/selection/learn/copy-members-to",
+          "nl/search-options/selection/learn/board-view",
+          {
+            "group": "Taken uitvoeren met selecties",
+            "pages": [
+              "nl/search-options/selection/learn/howto/index",
+              "nl/search-options/selection/learn/howto/create-mailings",
+              "nl/search-options/selection/learn/howto/send-email",
+              "nl/search-options/selection/learn/howto/generate-follow-ups",
+              "nl/search-options/selection/learn/howto/display-as-charts",
+              "nl/search-options/selection/learn/howto/print-labels",
+              "nl/search-options/selection/learn/howto/print",
+              "nl/search-options/selection/learn/howto/export"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Chatten",
+        "pages": [
+          "nl/chat/learn/index",
+          "nl/chat/learn/statistics",
+          "nl/chat/learn/respond",
+          "nl/chat/learn/link-to-person",
+          "nl/chat/learn/create-request",
+          "nl/chat/learn/transfer-to-agent",
+          "nl/chat/learn/as-customer",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/chat/admin/index",
+              "nl/chat/admin/channel-create",
+              "nl/chat/admin/add-javascript"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Marketing",
+        "pages": [
+          "nl/marketing/learn/index",
+          "nl/marketing/learn/create-folder",
+          "nl/marketing/learn/message-templates",
+          "nl/marketing/learn/add-images",
+          "nl/marketing/learn/best-practices",
+          {
+            "group": "Mailings",
+            "pages": [
+              "nl/marketing/mailing/learn/index",
+              {
+                "group": "Nieuwe mailing maken",
+                "pages": [
+                  "nl/marketing/mailing/learn/create/index",
+                  "nl/marketing/mailing/learn/create/tutorial-email-mailing",
+                  "nl/marketing/mailing/learn/create/tutorial-sms-mailing",
+                  "nl/marketing/mailing/learn/create/tutorial-document-mailing",
+                  "nl/marketing/mailing/learn/create/tutorial-form-mailing",
+                  "nl/marketing/mailing/learn/create/send-test-email"
+                ]
+              },
+              "nl/marketing/mailing/learn/view-statistics",
+              "nl/marketing/mailing/learn/resend",
+              "nl/marketing/mailing/admin/define-settings-for-mailings",
+              "nl/marketing/mailing/admin/add-domain"
+            ]
+          },
+          {
+            "group": "Editor slepen en neerzetten",
+            "pages": [
+              "nl/marketing/editor/learn/index",
+              "nl/marketing/editor/learn/add-content",
+              "nl/marketing/editor/learn/edit-paragraph",
+              "nl/marketing/editor/learn/insert-images-in-message",
+              "nl/marketing/editor/learn/add-merge-tag",
+              "nl/marketing/editor/learn/add-link-to-display-message-in-browser",
+              "nl/marketing/editor/learn/add-unsubscribe-link",
+              "nl/marketing/editor/learn/add-tracked-link-to-msg"
+            ]
+          },
+          {
+            "group": "Ontvangers (doellijst)",
+            "pages": [
+              "nl/marketing/recipients/learn/index",
+              "nl/marketing/recipients/learn/manage-email-subscriptions",
+              "nl/marketing/recipients/learn/look-at-recipient-list",
+              "nl/marketing/recipients/learn/manage-bounces",
+              "nl/marketing/recipients/learn/spam-complaints"
+            ]
+          },
+          {
+            "group": "Gevolgde koppelingen",
+            "pages": [
+              "nl/marketing/tracked-links/learn/index",
+              "nl/marketing/tracked-links/learn/create-links",
+              "nl/marketing/tracked-links/learn/define-link-actions",
+              "nl/marketing/tracked-links/learn/add-google-analytics-tag",
+              "nl/marketing/tracked-links/learn/explore-clicks",
+              "nl/marketing/tracked-links/learn/reset-counter",
+              "nl/marketing/tracked-links/learn/ga-tutorial"
+            ]
+          },
+          {
+            "group": "Formulieren",
+            "pages": [
+              "nl/marketing/forms/learn/index",
+              "nl/marketing/forms/learn/create",
+              "nl/marketing/forms/learn/field-options",
+              "nl/marketing/forms/learn/define-form-actions",
+              "nl/marketing/forms/learn/form-templates",
+              "nl/marketing/forms/learn/publish",
+              "nl/marketing/forms/learn/view-statistics",
+              "nl/marketing/forms/learn/process-submissions",
+              "nl/marketing/forms/learn/tutorial-contact-me",
+              "nl/marketing/forms/learn/tutorial-sign-up",
+              "nl/marketing/forms/admin/manage-fonts",
+              "nl/marketing/forms/admin/form-field-restrictions"
+            ]
+          },
+          {
+            "group": "Flows",
+            "pages": [
+              "nl/marketing/flows/learn/index",
+              "nl/marketing/flows/learn/create",
+              "nl/marketing/flows/learn/update",
+              "nl/marketing/flows/learn/split",
+              "nl/marketing/flows/learn/define-flow-actions",
+              "nl/marketing/flows/learn/content",
+              "nl/marketing/flows/learn/step-settings",
+              "nl/marketing/flows/learn/run-pause-end",
+              "nl/marketing/flows/learn/participants",
+              "nl/marketing/flows/learn/view-statistics"
+            ]
+          },
+          {
+            "group": "Conversietracking",
+            "pages": [
+              "nl/marketing/utm/learn/index",
+              "nl/marketing/utm/learn/parameters",
+              {
+                "group": "Voor beheerders",
+                "pages": [
+                  "nl/marketing/utm/admin/set-up"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Leadbeheer",
+        "pages": [
+          "nl/lead/learn/index",
+          "nl/lead/learn/work-with-leads",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/lead/admin/index",
+              "nl/lead/admin/add-company-category",
+              "nl/lead/admin/add-lead-status",
+              "nl/lead/admin/category-automation"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Mobile CRM",
+        "pages": [
+          "nl/mobile/index"
+        ]
+      },
+      {
+        "group": "Kennisdatabase",
+        "pages": [
+          "nl/knowledge-base/learn/index",
+          "nl/knowledge-base/learn/manage-folders",
+          {
+            "group": "Antwoordsjablonen",
+            "pages": [
+              "nl/knowledge-base/learn/reply-templates/index",
+              "nl/knowledge-base/learn/reply-templates/create",
+              "nl/knowledge-base/learn/reply-templates/new-language",
+              "nl/knowledge-base/learn/reply-templates/edit",
+              "nl/knowledge-base/learn/reply-templates/template-variables"
+            ]
+          },
+          {
+            "group": "Veelgestelde vragen",
+            "pages": [
+              "nl/knowledge-base/learn/faq/index",
+              "nl/knowledge-base/learn/faq/create",
+              "nl/knowledge-base/learn/faq/edit",
+              "nl/knowledge-base/learn/faq/publish",
+              "nl/knowledge-base/learn/faq/workflow"
+            ]
+          },
+          "nl/knowledge-base/learn/email-addresses",
+          "nl/knowledge-base/learn/external-document"
+        ]
+      },
+      {
+        "group": "Privacy-instellingen en AVG",
+        "pages": [
+          "nl/security/privacy/learn/index",
+          "nl/security/privacy/learn/edit-legal-base",
+          "nl/security/privacy/learn/send-privacy-confirmation-email",
+          "nl/security/privacy/learn/generate-personal-data-report",
+          "nl/security/privacy/learn/mass-delete",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/security/privacy/admin/index",
+              "nl/security/privacy/admin/add-purpose",
+              "nl/security/privacy/admin/add-legal-base",
+              "nl/security/privacy/admin/add-source",
+              "nl/security/privacy/admin/edit-privacy-confirmation-email"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "AI-diensten",
+        "pages": [
+          "nl/ai/learn/index",
+          "nl/ai/learn/text-analysis",
+          "nl/ai/learn/categorization",
+          "nl/ai/learn/copilot",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/ai/admin/set-up-categorization"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "SAINT (Sales Intelligence)",
+        "pages": [
+          "nl/saint/learn/index",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/saint/admin/index",
+              "nl/saint/admin/set-up",
+              "nl/saint/admin/update",
+              "nl/saint/admin/counter-settings",
+              "nl/saint/admin/sale-amount-class"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "ERP",
+        "pages": [
+          "nl/erp/learn/index",
+          "nl/erp/learn/connect",
+          "nl/erp/learn/disconnect",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/erp/admin/index",
+              "nl/erp/admin/add-connection",
+              "nl/erp/admin/configure",
+              "nl/erp/admin/update-connection",
+              "nl/erp/admin/resync-from-crm"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Aanpassing",
+        "pages": [
+          "nl/customization/index",
+          {
+            "group": "Schermontwerper",
+            "pages": [
+              "nl/customization/screen-designer/admin/index",
+              "nl/customization/screen-designer/admin/add-layout",
+              "nl/customization/screen-designer/admin/edit-layout",
+              "nl/customization/screen-designer/admin/working-with-fields",
+              "nl/customization/screen-designer/admin/working-with-grids",
+              "nl/customization/screen-designer/admin/working-with-tabs",
+              "nl/customization/screen-designer/admin/working-with-archives",
+              "nl/customization/screen-designer/admin/add-button",
+              "nl/customization/screen-designer/admin/assign-layout",
+              "nl/customization/screen-designer/admin/reference",
+              "nl/customization/screen-designer/admin/tutorial-move-country"
+            ]
+          },
+          {
+            "group": "Webpanelen",
+            "pages": [
+              "nl/customization/web-panels/admin/index",
+              "nl/customization/web-panels/admin/add-web-panel",
+              "nl/customization/web-panels/admin/url-encoding"
+            ]
+          },
+          {
+            "group": "Macro's en scripts",
+            "pages": [
+              "nl/customization/macros-and-scripts/admin/index",
+              "nl/customization/macros-and-scripts/admin/create-script",
+              "nl/customization/macros-and-scripts/admin/create-macro",
+              "nl/customization/macros-and-scripts/admin/trigger",
+              "nl/customization/macros-and-scripts/admin/schedule-task"
+            ]
+          },
+          {
+            "group": "Klantportaal",
+            "pages": [
+              "nl/customer-center/learn/index",
+              "nl/customer-center/learn/config",
+              "nl/customer-center/learn/edit",
+              "nl/customer-center/learn/send-credentials",
+              "nl/customer-center/learn/enable-chat",
+              "nl/customer-center/learn/link-form",
+              {
+                "group": "Voor beheerders",
+                "pages": [
+                  "nl/customer-center/admin/style-subscription-page",
+                  "nl/customer-center/admin/password-policy"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Systeemontwerp",
+            "pages": [
+              "nl/ui/blogic/learn/index",
+              {
+                "group": "Profielen",
+                "pages": [
+                  "nl/ui/blogic/learn/profiles/index",
+                  "nl/ui/blogic/learn/profiles/personal",
+                  "nl/ui/blogic/learn/profiles/common",
+                  "nl/ui/blogic/learn/profiles/global"
+                ]
+              },
+              "nl/ui/blogic/learn/screen-chooser",
+              "nl/ui/blogic/learn/screen-definition",
+              "nl/ui/blogic/learn/screen-properties",
+              {
+                "group": "Extra menu's",
+                "pages": [
+                  "nl/ui/blogic/learn/extra-menus/index",
+                  "nl/ui/blogic/learn/extra-menus/actions",
+                  "nl/ui/blogic/learn/extra-menus/navigator",
+                  "nl/ui/blogic/learn/extra-menus/properties"
+                ]
+              }
+            ]
+          },
+          "nl/customization/admin/package-properties",
+          "nl/customization/admin/add-items-to-task-menu",
+          "nl/customization/admin/other-applications",
+          {
+            "group": "Webhooks",
+            "pages": [
+              "nl/automation/webhook/admin/index",
+              "nl/automation/webhook/admin/create"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Instellingen en onderhoud",
+        "pages": [
+          "nl/admin/index",
+          "nl/admin/getting-started",
+          "nl/admin/adjusting-views",
+          {
+            "group": "Licenties",
+            "pages": [
+              "nl/admin/license/index",
+              "nl/admin/license/crm-suite",
+              "nl/admin/license/user-plans",
+              "nl/admin/license/activate",
+              "nl/admin/license/expander-services"
+            ]
+          },
+          {
+            "group": "Voorkeuren",
+            "pages": [
+              "nl/admin/preferences/index",
+              "nl/admin/preferences/update",
+              "nl/admin/preferences/service-settings",
+              "nl/admin/preferences/sms"
+            ]
+          },
+          {
+            "group": "Systeemopties",
+            "pages": [
+              "nl/admin/options/index",
+              "nl/admin/options/configure-number-allocation",
+              "nl/admin/options/change-ui-labels"
+            ]
+          },
+          {
+            "group": "Lijsten",
+            "pages": [
+              "nl/admin/lists/index",
+              "nl/admin/lists/add-items",
+              "nl/admin/lists/update-items",
+              "nl/admin/lists/user-group-filtering",
+              "nl/admin/lists/headings",
+              "nl/admin/lists/restore",
+              "nl/admin/lists/specialized-lists",
+              "nl/admin/lists/user-defined-lists"
+            ]
+          },
+          {
+            "group": "Gebruikersbeheer",
+            "pages": [
+              "nl/admin/user-management/index",
+              "nl/admin/user-management/add-associate",
+              "nl/admin/user-management/update-user",
+              "nl/admin/user-management/our-companies",
+              "nl/admin/user-management/user-groups",
+              {
+                "group": "Rol",
+                "pages": [
+                  "nl/admin/user-management/role/index",
+                  "nl/admin/user-management/role/create-role",
+                  "nl/admin/user-management/role/update-role",
+                  "nl/admin/user-management/role/set-data-rights-for-role",
+                  "nl/admin/user-management/role/functional-rights"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Import",
+            "pages": [
+              "nl/admin/import/index",
+              "nl/admin/import/create-spreadsheet",
+              "nl/admin/import/from-excel",
+              "nl/admin/import/from-mac-address-book",
+              "nl/admin/import/from-gmail",
+              "nl/admin/import/from-erp",
+              "nl/admin/import/products-from-excel",
+              "nl/admin/import/settings"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Taal, vertaling en tijdzones",
+        "pages": [
+          "nl/localization/learn/customer-languages",
+          "nl/localization/learn/translate-fields",
+          "nl/localization/learn/time-zones",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/localization/admin/enable-time-zones",
+              "nl/localization/admin/select-time-zones",
+              "nl/localization/admin/add-customer-language"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tab": "Mobile",
+    "icon": "mobile-screen",
+    "pages": [
+      "en/mobile/index"
+    ]
+  },
+  {
+    "tab": "Integraties",
+    "icon": "plus",
+    "pages": [
+      "integrations/index"
+    ]
+  },
+  {
+    "tab": "Versie-opmerkingen",
+    "icon": "bullhorn",
+    "pages": [
+      "release-notes/11/index"
+    ]
+  }
+]

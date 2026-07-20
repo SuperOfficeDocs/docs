@@ -1,8 +1,8 @@
 ---
 uid: redirects
 title: Redirects and redirect_from
-description: What redirect_from is for, how it becomes a live redirect in docs.json, and when it's safe to compact a group of redirects into a wildcard.
-keywords: redirect_from, redirects, docs.json, wildcard, permanent redirect, moved page, deleted page, URL migration
+description: What redirect_from is for, how it becomes a live redirect in config/redirects.json, and when it's safe to compact a group of redirects into a wildcard.
+keywords: redirect_from, redirects, config/redirects.json, docs.json, wildcard, permanent redirect, moved page, deleted page, URL migration
 author: digitaldiina
 date: 07.20.2026
 content_type: concept
@@ -11,7 +11,11 @@ language: en
 
 # Redirects and redirect_from
 
-Whenever a page moves, gets renamed, is merged into another page, or is deleted outright, its old URL still needs to go somewhere. Get this wrong and either a real visitor lands on a 404, or - just as bad - a wildcard silently swallows a page that's still supposed to be live. This page covers both sides: the `redirect_from` property you add to a content file, and how that turns into a live redirect through `docs.json`.
+Whenever a page moves, gets renamed, is merged into another page, or is deleted outright, its old URL still needs to go somewhere. Get this wrong and either a real visitor lands on a 404, or - just as bad - a wildcard silently swallows a page that's still supposed to be live. This page covers both sides: the `redirect_from` property you add to a content file, and how that turns into a live redirect through `config/redirects.json`.
+
+<Note>
+This page is redirect-specific. For how `config/redirects.json` fits into `docs.json`'s broader modular `$ref` split (navigation, redirects, and where each piece lives), see [Configuring Mintlify](./configure-mintlify).
+</Note>
 
 ## Why redirect_from exists
 
@@ -31,10 +35,10 @@ redirect_from:
 
 It's the second-to-last frontmatter property, only followed by `language`.
 
-During the Mintlify migration, `redirect_from` declarations across the repo are what generated `docs.json`'s `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one.
+During the Mintlify migration, `redirect_from` declarations across the repo are what generated the `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one. The array itself originally lived inline in `docs.json`; it now lives in `config/redirects.json`, which `docs.json` reaches via a `$ref` (see [Configuring Mintlify](./configure-mintlify)).
 
 <Warning>
-**Going forward, `docs.json`'s `redirects` array is the actual source of truth - `redirect_from` is informative only.** Adding it to a file's frontmatter does **not** by itself create a working redirect. To make a redirect happen, add the entry to `docs.json` directly (see below).
+**Going forward, `config/redirects.json` is the actual source of truth - `redirect_from` is informative only.** Adding it to a file's frontmatter does **not** by itself create a working redirect. To make a redirect happen, add the entry to `config/redirects.json` directly (see below).
 
 Still add `redirect_from` too - it costs little, documents the page's history for whoever reads the frontmatter later, and means nothing needs backfilling if a script ever gets built to keep the two in sync. Just don't rely on it alone.
 </Warning>
@@ -45,7 +49,7 @@ If you've worked in the old `superoffice-docs` (DocFx) repo, you'll remember a s
 
 ## Common scenarios
 
-Every row below means: add the entry to `docs.json`, and add the matching `redirect_from` to the content file too.
+Every row below means: add the entry to `config/redirects.json`, and add the matching `redirect_from` to the content file too.
 
 | Situation | Redirect entry |
 |---|---|
@@ -58,7 +62,7 @@ Every row below means: add the entry to `docs.json`, and add the matching `redir
 
 ## How this becomes a live redirect
 
-`docs.json`'s `redirects` array is what Mintlify's hosting layer reads:
+`config/redirects.json` is what Mintlify's hosting layer reads (via `docs.json`'s `$ref`):
 
 ```json
 {
@@ -86,7 +90,7 @@ Easy to miss since every other destination in this file is a bare path.
 
 ## <a id="wildcards"></a>Wildcards
 
-A `*` in the source matches one or more path segments, letting one rule stand in for many literal entries. Two shapes, both used in our own `docs.json`:
+A `*` in the source matches one or more path segments, letting one rule stand in for many literal entries. Two shapes, both used in our own `config/redirects.json`:
 
 **Many sources, one fixed destination** - for content that got consolidated, not just moved:
 
@@ -142,20 +146,20 @@ A full collapse trades real precision for array health, so it needs a real reaso
 Either way, this is fundamentally a "the needs of the many outweigh the needs of the few" call: a small number of visitors with an old bookmark lose exact precision so the array as a whole stays healthy and maintainable. State which justification applies in the commit message.
 </Warning>
 
-A full collapse is a live-routing decision, not a content-history one - it doesn't mean the destination file's own `redirect_from` list is wrong. A page can correctly document `redirect_from: /old/specific/path` (that genuinely was its old URL) even while `docs.json` deliberately routes that same old path to a different, more generic destination for array-health reasons. Don't edit a file's `redirect_from` to "match" a full-collapse decision - it's still telling the truth about the page's own history.
+A full collapse is a live-routing decision, not a content-history one - it doesn't mean the destination file's own `redirect_from` list is wrong. A page can correctly document `redirect_from: /old/specific/path` (that genuinely was its old URL) even while `config/redirects.json` deliberately routes that same old path to a different, more generic destination for array-health reasons. Don't edit a file's `redirect_from` to "match" a full-collapse decision - it's still telling the truth about the page's own history.
 
 ## Maintenance tooling
 
-Two scripts in `tools/` support ongoing redirect hygiene - reusable, not one-off:
+Two scripts in `tools/` support ongoing redirect hygiene - reusable, not one-off. Both take `config/redirects.json` as their positional argument:
 
-- **`tools/compact-redirects.py`** - `--report [--min-size N] [--depth D]` groups `redirects` by source-prefix depth and ranks candidate wildcard clusters by match % against a majority transform, flagging live-content collisions. `--apply <prefix1,prefix2,...>` mechanically compacts named, gate-clear clusters. It refuses (unless `--force`) to apply any cluster with exceptions, per the confirmed drop-bug above - review its report output yourself before choosing which clusters to apply, and how (leave uncompacted vs. full collapse).
-- **`tools/sort-redirects.py`** - stable-sorts the array alphabetically by `source`. Contributors should keep appending new redirects at the end (no need to insert in sorted position); run this periodically to restore order. `--check` for a dry-run/exit-code check, `--diff` to preview what would move without writing.
+- **`tools/compact-redirects.py config/redirects.json`** - `--report [--min-size N] [--depth D]` groups `redirects` by source-prefix depth and ranks candidate wildcard clusters by match % against a majority transform, flagging live-content collisions. `--apply <prefix1,prefix2,...>` mechanically compacts named, gate-clear clusters. It refuses (unless `--force`) to apply any cluster with exceptions, per the confirmed drop-bug above - review its report output yourself before choosing which clusters to apply, and how (leave uncompacted vs. full collapse).
+- **`tools/sort-redirects.py config/redirects.json`** - stable-sorts the array alphabetically by `source`. Contributors should keep appending new redirects at the end (no need to insert in sorted position); run this periodically to restore order. `--check` for a dry-run/exit-code check, `--diff` to preview what would move without writing.
 
 Neither is a commit hook - both are meant to be run by hand, periodically, as the array grows.
 
 ## Verify
 
-After editing `docs.json`, spot-check in `mint dev`: visit the old URL and confirm it lands where you expect, including any edge case you're relying on (a bare folder path, an external `.html` link, a capture-and-reuse filename).
+After editing `config/redirects.json`, spot-check in `mint dev`: visit the old URL and confirm it lands where you expect, including any edge case you're relying on (a bare folder path, an external `.html` link, a capture-and-reuse filename).
 
 [1]: #external-destinations-need-html
 [2]: #wildcards

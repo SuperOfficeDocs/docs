@@ -1,21 +1,26 @@
 #!/usr/bin/env python3
 """
 Splices generated nav groups (from convert-toc-to-mintlify.ps1's -OutputType
-Groups output) into docs.json's navigation.languages structure - either
-replacing an existing menu item's `groups` array, or inserting a brand new
-menu item into a tab's `menu` array.
+Groups output) into a per-language nav file's tabs array - either replacing
+an existing menu item's `groups` array, or inserting a brand new menu item
+into a tab's `menu` array.
 
-A full parse-and-redump of docs.json (indent=2, ensure_ascii=False) has been
+Since the modular-config split, docs.json no longer holds navigation inline -
+it's config/nav-<lang>.json (a bare tabs array) that this operates on
+directly. --lang is used only for error messages; it must match the file
+you pass.
+
+A full parse-and-redump of a nav file (indent=2, ensure_ascii=False) has been
 verified to reproduce the file byte-for-byte (modulo a trailing newline), so
-this operates on the whole document rather than text-splicing a fragment.
+this operates on the whole file rather than text-splicing a fragment.
 
 Usage:
     Replace an existing item's groups (e.g. filling the "API" stub):
-        python tools/splice-nav-groups.py docs.json --tab "Developer guide" \
+        python tools/splice-nav-groups.py config/nav-en.json --tab "Developer guide" \
             --mode replace --item "API" --groups-file tmp-api-nav.json
 
     Insert a brand new menu item (e.g. adding "Automation"):
-        python tools/splice-nav-groups.py docs.json --tab "Developer guide" \
+        python tools/splice-nav-groups.py config/nav-en.json --tab "Developer guide" \
             --mode insert --insert-item "Automation" --icon "gear" \
             --groups-file tmp-automation-nav.json --after "Developer Portal"
 """
@@ -34,19 +39,17 @@ def load_groups(path):
     return [data]
 
 
-def find_tab(doc, lang, tab_name):
-    for lang_entry in doc["navigation"]["languages"]:
-        if lang_entry.get("language") == lang:
-            for tab in lang_entry.get("tabs", []):
-                if tab.get("tab") == tab_name:
-                    return tab
+def find_tab(tabs, lang, tab_name):
+    for tab in tabs:
+        if tab.get("tab") == tab_name:
+            return tab
     raise SystemExit(f"Tab '{tab_name}' not found for language '{lang}'")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("docs_json")
-    parser.add_argument("--lang", default="en")
+    parser.add_argument("nav_json", help="Path to a config/nav-<lang>.json file (bare tabs array)")
+    parser.add_argument("--lang", default="en", help="Language code, for error messages only")
     parser.add_argument("--tab", required=True)
     parser.add_argument("--groups-file", required=True)
     parser.add_argument("--mode", choices=["replace", "insert"], required=True)
@@ -56,10 +59,10 @@ def main():
     parser.add_argument("--after", help="Existing item name to insert after (mode=insert); omit to append at the end")
     args = parser.parse_args()
 
-    with open(args.docs_json, encoding="utf-8") as f:
-        doc = json.load(f)
+    with open(args.nav_json, encoding="utf-8") as f:
+        tabs = json.load(f)
 
-    tab = find_tab(doc, args.lang, args.tab)
+    tab = find_tab(tabs, args.lang, args.tab)
     menu = tab.setdefault("menu", [])
     new_groups = load_groups(args.groups_file)
 
@@ -89,8 +92,8 @@ def main():
         else:
             menu.append(new_item)
 
-    with open(args.docs_json, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(doc, f, indent=2, ensure_ascii=False)
+    with open(args.nav_json, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(tabs, f, indent=2, ensure_ascii=False)
 
     print("Done.")
 

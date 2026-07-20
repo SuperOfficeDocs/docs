@@ -10,8 +10,9 @@ Usage:
 The nav JSON may be:
   - a single group object: {"group": "...", "pages": [...]}
   - a bare list of pages/groups: [...]
-  - a full docs.json (pass the whole file; every string found anywhere
-    under a "pages" key is treated as a page path)
+  - a full docs.json, or any of the modular-config split files it now $refs
+    into (config/navigation.json, config/nav-<lang>.json, config/nav-<section>.json)
+    - every string found anywhere under a "pages" key is treated as a page path
 
 Exit code is non-zero if any page path fails to resolve.
 """

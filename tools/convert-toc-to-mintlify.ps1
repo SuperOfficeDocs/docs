@@ -970,4 +970,11 @@ if (Test-Path "$PSScriptRoot\..\docs.json") {
     & "$PSScriptRoot\check-bom.ps1" -Path "$PSScriptRoot\..\docs.json" -RemoveBOM | Out-Null
 }
 
+# Also check the modular-config split files this output typically gets
+# grafted into (update-docs-navigation.ps1 / splice-nav-groups.py)
+$configDir = "$PSScriptRoot\..\config"
+if (Test-Path $configDir) {
+    & "$PSScriptRoot\check-bom.ps1" -Path $configDir -Pattern "*.json" -Recurse -RemoveBOM | Out-Null
+}
+
 exit 0
