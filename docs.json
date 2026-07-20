@@ -15661,48 +15661,16 @@
       "destination": "/en/api/localization/address/index"
     },
     {
-      "source": "/en/globalization-and-localization/culture/culturedataformatter",
-      "destination": "/en/api/localization/culture/culturedataformatter"
-    },
-    {
-      "source": "/en/globalization-and-localization/culture/culturesettinghelper",
-      "destination": "/en/api/localization/culture/culturesettinghelper"
-    },
-    {
-      "source": "/en/globalization-and-localization/culture/display-in-current-culture",
-      "destination": "/en/api/localization/culture/display-in-current-culture"
-    },
-    {
-      "source": "/en/globalization-and-localization/culture/index",
-      "destination": "/en/api/localization/culture/culturedataformatter"
-    },
-    {
-      "source": "/en/globalization-and-localization/culture/parse-values",
-      "destination": "/en/api/localization/culture/parse-values"
+      "source": "/en/globalization-and-localization/culture/*",
+      "destination": "/en/api/localization/culture/*"
     },
     {
       "source": "/en/globalization-and-localization/index",
       "destination": "/en/api/localization/index"
     },
     {
-      "source": "/en/globalization-and-localization/language/create-resource-provider",
-      "destination": "/en/api/localization/language/create-resource-provider"
-    },
-    {
-      "source": "/en/globalization-and-localization/language/create-resx-file",
-      "destination": "/en/api/localization/language/create-resx-file"
-    },
-    {
-      "source": "/en/globalization-and-localization/language/index",
-      "destination": "/en/api/localization/language/create-resource-provider"
-    },
-    {
-      "source": "/en/globalization-and-localization/language/resource-providers",
-      "destination": "/en/api/localization/language/resource-providers"
-    },
-    {
-      "source": "/en/globalization-and-localization/language/translate-strings",
-      "destination": "/en/api/localization/language/translate-strings"
+      "source": "/en/globalization-and-localization/language/*",
+      "destination": "/en/api/localization/language/*"
     },
     {
       "source": "/en/globalization-and-localization/learn/change-language",
