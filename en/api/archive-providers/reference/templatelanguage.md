@@ -23,7 +23,7 @@ The provider will use the document plugin to get the languages registered.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |id| *None* |id|  |
 |name| *None* |name|  |
@@ -38,4 +38,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -22,7 +22,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -52,9 +52,9 @@ Static archive Provider for the Selection quoteline archive.
 |quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -66,7 +66,7 @@ Static archive Provider for the Selection quoteline archive.
 |productTypeKey|listExternal|Product type: The type of product|  |
 |status|listAny|Quote status: Status field showing the status of each line.| x |
 |subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 |totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -126,7 +126,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/orderComment|string|Comment: Customer's comment| x |
 |alternative/version/quote/connectionId|int|DB-ID: Database ID| x |
@@ -184,8 +184,8 @@ Static archive Provider for the Selection quoteline archive.
 |alternative/version/quote/sale/description|string|Sale - Description: The long description field on Sale|  |
 |alternative/version/quote/sale/activeErpLinks|bool|Sale - ERP connected: Is there an active ERP Sync?| x |
 |alternative/version/quote/sale/createdByWorkflow|listAny|Sale - Created by flow: Created by flow| x |
-|alternative/version/quote/sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency: The gross sales total| x |
-|alternative/version/quote/sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|alternative/version/quote/sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency): The gross sales total| x |
+|alternative/version/quote/sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |alternative/version/quote/sale/daysInStage|int|Sale - Days in stage: Total number of days in this stage| x |
 |alternative/version/quote/sale/saleCycle|int|Sale - Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |alternative/version/quote/sale/visibleFor|listAny|Sale - Visible for|  |
@@ -231,7 +231,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/supportAssociate|associate|Sale - Our service contact: Default service contact for this contact| x |
 |alternative/version/quote/sale/person/supportAssociateFullName|associate|Sale - Our service contact - Full name: Default service contact for this contact| x |
@@ -336,7 +336,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personExtra/y\_rental/y\_equipment/x\_name|string|Sale - Rental - Equipment - Name: Equpment name custom field. Cannot be null., show in table| x |
 |alternative/version/quote/sale/person/personExtra/y\_car/id|int|Sale - Car - id: Displays the row's primary key (y\_car)| x |
@@ -441,7 +441,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/registeredByFullName|associate|Sale - Registered by - Full name: The user who registered the data| x |
 |alternative/version/quote/sale/contact/registeredDate|date|Sale - Registered date: The date/time the data was registered in UTC.| x |
@@ -546,7 +546,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:6|bool|Sale - companycheckbox| x |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:7|listAny|Sale - companydropdownlistbox| x |
@@ -651,7 +651,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/type|listAny|Sale - Project - Project type: Displays the project's type| x |
 |alternative/version/quote/sale/project/status|listAny|Sale - Project - Status: Displays the project's status| x |
@@ -756,7 +756,7 @@ Static archive Provider for the Selection quoteline archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/allAccess|bool|ERP connection - Unrestricted: There are no access restrictions on this ERP connection| x |
 |alternative/version/quote/connection/erpName|int|ERP connection - ERP name: Name of ERP system| x |
@@ -798,4 +798,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

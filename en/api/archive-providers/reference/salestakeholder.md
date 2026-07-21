@@ -22,7 +22,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -126,7 +126,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |person/restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -231,7 +231,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/correspondingAssociate/simultaneousEjUser|bool|Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
 |person/correspondingAssociate/ejDisplayName|string|Nickname: User's nickname in Service| x |
@@ -273,7 +273,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -336,7 +336,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |contact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
@@ -449,4 +449,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

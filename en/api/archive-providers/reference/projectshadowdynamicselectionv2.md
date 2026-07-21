@@ -22,7 +22,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
@@ -126,7 +126,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saintActivityType|listAny|SAINT type|  |
 |saintDirection|listAny|Direction|  |
@@ -156,7 +156,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |sale/currencyId|int|Currency ID: The currency list item ID| x |
 |sale/currency|listAny|Currency: The currency of the sale| x |
 |sale/credited|listAny|Credited: The user to be credited with the sale| x |
-|sale/lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|sale/lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |sale/source|listAny|Source: The source (lead) of the sale| x |
 |sale/competitor|listAny|Competitor: The competitor who won the sale| x |
 |sale/heading|stringorPK|Sale: The name of the sale| x |
@@ -175,9 +175,9 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |sale/stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |sale/nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |sale/reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|sale/stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|sale/stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |sale/saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|sale/soldReason|listAny|Reason (sold: Reason (sold)| x |
+|sale/soldReason|listAny|Reason (sold): Reason (sold)| x |
 |sale/saleNumber|string|Number: Number| x |
 |sale/hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |sale/stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -186,8 +186,8 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |sale/description|string|Description: The long description field on Sale|  |
 |sale/activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |sale/createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |sale/daysInStage|int|Days in stage: Total number of days in this stage| x |
 |sale/saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |sale/visibleFor|listAny|Visible for|  |
@@ -231,7 +231,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/associate/locationAddress|string|Location: Location| x |
 |sale/associate/isLocation|bool|Is a location: Is a location| x |
@@ -278,7 +278,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |appointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |appointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |appointment/endTime| *None* |End time: End time of an activity|  |
-|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |appointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |appointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |appointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -336,7 +336,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointment/description|positiveString|Text: Displays the text entered in the description field| x |
 |appointment/appointment/title|positiveString|Title| x |
@@ -377,7 +377,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |document/mailMergeDraft|bool|Mail merge draft : Indicates whether the document is a mail merge template| x |
 |document/snum|int|Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.| x |
 |document/isReport|bool|Report: Is this document a saved report run?|  |
-|document/suggestedDocumentId|int|Document ID (suggestion: The database ID of a document that originates in a suggestion| x |
+|document/suggestedDocumentId|int|Document ID (suggestion): The database ID of a document that originates in a suggestion| x |
 |document/isMail|bool|E-mail|  |
 |document/recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)| x |
 |document/visibleFor|listAny|Visible for|  |
@@ -441,7 +441,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/infoText|positiveString|Information: Displays the text entered in the description field| x |
 |projectMember/firstName|string|First name: Displays the contact's first name| x |
@@ -546,7 +546,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |projectMember/personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
@@ -651,7 +651,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/correspondingAssociate/personEmail|string|E-mail| x |
 |projectMember/correspondingAssociate/locationAddress|string|Location: Location| x |
@@ -680,7 +680,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 |projectMember/code|string|Code| x |
 |projectMember/orgnr|string|VAT No.| x |
 |projectMember/stop|bool|Stop| x |
-|projectMember/contactNoMail|bool|No mailings (company| x |
+|projectMember/contactNoMail|bool|No mailings (company)| x |
 |projectMember/updatedBy|associate|Updated by: The user who last updated the data| x |
 |projectMember/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |projectMember/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -756,7 +756,7 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMember/contactAssociate/ejStatus|int|Service status: Status for Service user: Normal; Unavailable / holiday; Deleted; Read-only|  |
 |projectMember/contactAssociate/credentialType| *None* |Auth. type: What type of credentials to use when this user logs in| x |
@@ -843,4 +843,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -2339,7 +2339,7 @@ ownerTable, ownerRecord, entity\_id
 
 **Step 12**
 
-Bug 105828: migrate the 'Owned by user group' criterion from '<prefix>/otherGroups' (matched any group membership via usergrouplink) to '<prefix>/usergroup' (the owner's primary group, associate.group_idx) for the associate, contactAssociate, contactSupportAssociate, personAssociate and projectAssociate prefixes. Only the stored criterion column name changes; operators and values are unaffected. Bare 'otherGroups' is not migrated.
+Bug 105828: migrate the 'Owned by user group' criterion from `'<prefix>/otherGroups'` (matched any group membership via usergrouplink) to `'<prefix>/usergroup'` (the owner's primary group, associate.group_idx) for the associate, contactAssociate, contactSupportAssociate, personAssociate and projectAssociate prefixes. Only the stored criterion column name changes; operators and values are unaffected. Bare 'otherGroups' is not migrated.
 
 Bug 105828: the "Owned by user group" criterion must filter on the owner's current PRIMARY group.
 It used to be bound to the '.../otherGroups' column, which restricts via the usergrouplink table

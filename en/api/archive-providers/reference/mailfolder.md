@@ -22,7 +22,7 @@ Provides list of subscribed and unsubscribed mail folders available for an accou
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |id| *None* |id|  |
 |subscribed| *None* ||  |
@@ -38,4 +38,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

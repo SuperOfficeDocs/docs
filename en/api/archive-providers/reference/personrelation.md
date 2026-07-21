@@ -25,7 +25,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -129,7 +129,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |source/registeredDate|date|Source - Registered date: The date/time the data was registered in UTC.| x |
 |source/contactSource|listAny|Source - Source: Source (Company)| x |
@@ -234,7 +234,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |target/contactAssociate/mrMrs| *None* |Target - Mr/Ms: Displays whether the contact is addressed as Mr or Ms|  |
 |target/contactAssociate/title| *None* |Target - Title: Displays whether the contact is addressed as Mr or Ms|  |
@@ -339,7 +339,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |usergroupId|int|Group ID: The user's primary user group| x |
 |contactFullName|string|Owner: Name and department of the company the user belongs to| x |
@@ -444,7 +444,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |source/postAddress/county| *None* |Source - Postal address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.|  |
 |source/postAddress/city| *None* |Source - Postal address - City: This criterion corresponds to the City field on the Company card.|  |
@@ -549,7 +549,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |source/NumberOfNotCompletedActivities| *None* |Source - Number of non-completed activities|  |
 |source/NumberOfNotCompletedActivitiesInPeriod| *None* |Source - Number of non-completed activities in last 90 days|  |
@@ -590,4 +590,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

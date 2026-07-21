@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.App
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -59,7 +59,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.App
 |cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |endTime| *None* |End time: End time of an activity|  |
-|suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -124,7 +124,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.App
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/isConverted| *None* |!!Is Converted|  |
 |appointment/textId|int|Text ID| x |
@@ -141,4 +141,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -27,7 +27,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -75,7 +75,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.|  |
 |visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?|  |
 |endTime| *None* |End time: End time of an activity|  |
-|suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion|  |
+|suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion|  |
 |completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed|  |
 |isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones|  |
 |invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd|  |
@@ -105,7 +105,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |contact/code|string|Code|  |
 |contact/orgnr|string|VAT No.|  |
 |contact/stop|bool|Stop|  |
-|contact/contactNoMail|bool|No mailings (company|  |
+|contact/contactNoMail|bool|No mailings (company)|  |
 |contact/updatedBy|associate|Updated by: The user who last updated the data|  |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data|  |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.|  |
@@ -131,7 +131,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/email/emailId|int|ID|  |
 |contact/email/emailLastSent|datetime|Last sent: The date and time an e-mail was last sent to this address|  |
@@ -236,7 +236,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_timespan|timeSpan|Extra timespan: Custom timespan field. Hours and minutes in 10 units|  |
 |contact/contactExtra/x\_contact\_shorttext|string|Extra short text: Custom short text field. Keep HTML tags.|  |
@@ -341,7 +341,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personDirectFax/formattedNumber|string|Fax - Phone: Displays phone number|  |
 |person/personDirectFax/description|string|Fax - Description: Phone number description|  |
@@ -446,7 +446,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/credentialDisplayValue| *None* |Auth. value: Credential value (public, visible part) to be used when this user logs in|  |
 |person/personAssociate/isActive|bool|Active: Is this user active, and should be able to log in?|  |
@@ -551,7 +551,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/personId|int|Contact ID: Database ID of the contact row|  |
 |project/projectAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms|  |
@@ -638,7 +638,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |sale/currencyId|int|Currency ID: The currency list item ID|  |
 |sale/currency|listAny|Currency: The currency of the sale|  |
 |sale/credited|listAny|Credited: The user to be credited with the sale|  |
-|sale/lossReason|listAny|Reason (lost: The reason for losing the sale|  |
+|sale/lossReason|listAny|Reason (lost): The reason for losing the sale|  |
 |sale/source|listAny|Source: The source (lead) of the sale|  |
 |sale/competitor|listAny|Competitor: The competitor who won the sale|  |
 |sale/heading|stringorPK|Sale: The name of the sale|  |
@@ -656,15 +656,15 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/saleTypeId| *None* |Sale type ID: Sale type, from list|  |
 |sale/stageId| *None* |Sale stage ID: Displays the stage of the sale|  |
 |sale/nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities|  |
 |sale/reopenDate|date|Reopen date: Displays the reopen date for the sale|  |
-|sale/stalledComment|listAny|Reason (stalled: The reason the sale has been stalled|  |
+|sale/stalledComment|listAny|Reason (stalled): The reason the sale has been stalled|  |
 |sale/saleTypeCategory|listAny|Sale type category: Sale type category|  |
-|sale/soldReason|listAny|Reason (sold: Reason (sold)|  |
+|sale/soldReason|listAny|Reason (sold): Reason (sold)|  |
 |sale/saleNumber|string|Number: Number|  |
 |sale/hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders|  |
 |sale/stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale|  |
@@ -673,8 +673,8 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |sale/description|string|Description: The long description field on Sale|  |
 |sale/activeErpLinks|bool|ERP connected: Is there an active ERP Sync?|  |
 |sale/createdByWorkflow|listAny|Created by flow: Created by flow|  |
-|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total|  |
-|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.|  |
+|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total|  |
+|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.|  |
 |sale/daysInStage|int|Days in stage: Total number of days in this stage|  |
 |sale/saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)|  |
 |sale/visibleFor|listAny|Visible for|  |
@@ -761,7 +761,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/text|positiveString|Text: Displays a descriptive text for the item|  |
 |appointment/description|positiveString|Text: Displays the text entered in the description field|  |
@@ -777,7 +777,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |currencyId|int|Currency ID: The currency list item ID|  |
 |currency|listAny|Currency: The currency of the sale|  |
 |credited|listAny|Credited: The user to be credited with the sale|  |
-|lossReason|listAny|Reason (lost: The reason for losing the sale|  |
+|lossReason|listAny|Reason (lost): The reason for losing the sale|  |
 |source|listAny|Source: The source (lead) of the sale|  |
 |competitor|listAny|Competitor: The competitor who won the sale|  |
 |heading|stringorPK|Sale: The name of the sale|  |
@@ -796,9 +796,9 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |stageId| *None* |Sale stage ID: Displays the stage of the sale|  |
 |nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities|  |
 |reopenDate|date|Reopen date: Displays the reopen date for the sale|  |
-|stalledComment|listAny|Reason (stalled: The reason the sale has been stalled|  |
+|stalledComment|listAny|Reason (stalled): The reason the sale has been stalled|  |
 |saleTypeCategory|listAny|Sale type category: Sale type category|  |
-|soldReason|listAny|Reason (sold: Reason (sold)|  |
+|soldReason|listAny|Reason (sold): Reason (sold)|  |
 |saleNumber|string|Number: Number|  |
 |hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders|  |
 |stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale|  |
@@ -806,8 +806,8 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |hasGuide|bool|Guided: Does this sale have a Sales Guide|  |
 |description|string|Description: The long description field on Sale|  |
 |activeErpLinks|bool|ERP connected: Is there an active ERP Sync?|  |
-|amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total|  |
-|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.|  |
+|amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total|  |
+|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.|  |
 |daysInStage|int|Days in stage: Total number of days in this stage|  |
 |saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)|  |
 |sale/textId|int|Text ID|  |
@@ -866,7 +866,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/ticketPriority|listAny|Stakeholder - Service priority: Default service priority for this contact|  |
 |saleStakeholder/person/supportLanguage|listAny|Stakeholder - Preferred language: Preferred language used for reply templates and more|  |
@@ -971,7 +971,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personExtra/y\_rental/x\_amount|int|Stakeholder - Rental - Amount: Number to rent. Default = 1|  |
 |saleStakeholder/person/personExtra/y\_rental/x\_contact|stringorPK|Stakeholder - Rental - Renter: Company that rents equipment|  |
@@ -1076,7 +1076,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/updatedDate|date|Stakeholder - Updated: The date/time the data was last updated in UTC.|  |
 |saleStakeholder/contact/registeredBy|associate|Stakeholder - Registered by: The user who registered the data|  |
@@ -1181,7 +1181,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/contactUdef/SuperOffice:4|date|Stakeholder - companydate|  |
 |saleStakeholder/contact/contactUdef/SuperOffice:5|unlimitedDate|Stakeholder - companyunlimiteddate: tooltipunlimiteddate|  |
@@ -1286,7 +1286,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |quote/version/alternative/extraField3|string|Extra 3: Extra field 3on the quote alternative|  |
 |quote/version/alternative/extraField4|string|Extra 4: Extra field 4 on the quote alternative|  |
@@ -1321,9 +1321,9 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |quote/version/alternative/quoteline/quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/discountAmount|decimal|Discount: Discount amount given by salesperson|  |
-|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%: Discount percent given by salesperson|  |
+|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%): Discount percent given by salesperson|  |
 |quote/version/alternative/quoteline/earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount|  |
-|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount|  |
+|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount|  |
 |quote/version/alternative/quoteline/updatedBy|associate|Updated by: The user who last updated the data|  |
 |quote/version/alternative/quoteline/updatedByFullName|associate|Updated by - Full name: The user who last updated the data|  |
 |quote/version/alternative/quoteline/updatedDate|date|Updated: The date/time the data was last updated in UTC.|  |
@@ -1335,7 +1335,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |quote/version/alternative/quoteline/productTypeKey|listExternal|Product type: The type of product|  |
 |quote/version/alternative/quoteline/status|listAny|Quote status: Status field showing the status of each line.|  |
 |quote/version/alternative/quoteline/subTotal|decimal|Sum: Sum of Quantity * Unit list price|  |
-|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount: The calculated VAT amount|  |
+|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount): The calculated VAT amount|  |
 |quote/version/alternative/quoteline/totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT|  |
 |quote/version/alternative/quoteline/totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative|  |
 |destinationSaleRestrictionId|int|Destination sale ID: IDs of sales which are linked to|  |
@@ -1391,7 +1391,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectAssociate/personEmail|string|E-mail|  |
 |projectAssociate/locationAddress|string|Location: Location|  |
@@ -1440,7 +1440,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |mailMergeDraft|bool|Mail merge draft : Indicates whether the document is a mail merge template|  |
 |snum|int|Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.|  |
 |isReport|bool|Report: Is this document a saved report run?|  |
-|suggestedDocumentId|int|Document ID (suggestion: The database ID of a document that originates in a suggestion|  |
+|suggestedDocumentId|int|Document ID (suggestion): The database ID of a document that originates in a suggestion|  |
 |isMail|bool|E-mail|  |
 |documentPublish/isPublished|bool|Published: Displays an icon indicating if the project or sale has been published|  |
 |documentPublish/publishedFrom|date|From date: Start date for publishing. The record will not be visible prior to this date|  |
@@ -1496,7 +1496,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |supportLanguage|listAny|Preferred language: Preferred language used for reply templates and more|  |
 |supportAssociate|associate|Our service contact: Default service contact for this contact|  |
@@ -1528,7 +1528,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Lin
 |code|string|Code|  |
 |orgnr|string|VAT No.|  |
 |stop|bool|Stop|  |
-|contactNoMail|bool|No mailings (company|  |
+|contactNoMail|bool|No mailings (company)|  |
 |contactSource|listAny|Source: Source (Company)|  |
 |contactDeleted|bool|Deleted: Deleted|  |
 |deletedDate|datetime|Deleted date: Deleted date|  |
@@ -1559,4 +1559,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

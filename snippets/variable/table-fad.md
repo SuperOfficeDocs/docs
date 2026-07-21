@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | fad1 | Line 1 in international addresses |

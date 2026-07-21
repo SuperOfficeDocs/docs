@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Per
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -124,7 +124,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Per
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
@@ -229,7 +229,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Per
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/assocType|listAny|Type: Type of user: associate, external user, system user, anonymous account| x |
 |correspondingAssociate/ejUserId|int|Service user ID: The database ID of a Service user|  |
@@ -260,7 +260,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Per
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -334,7 +334,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Per
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/isLocation|bool|Is a location: Is a location| x |
 |contactInterestIds|listInterest|Company Interest: This criterion corresponds to the Interests tab on the Company card.|  |
@@ -359,4 +359,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

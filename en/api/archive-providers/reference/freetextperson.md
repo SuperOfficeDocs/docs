@@ -32,7 +32,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -136,7 +136,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/county|string|Search address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 |restrictionAddress/city|string|Search address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -241,7 +241,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/who| *None* |Source - Full name: Full name of company/contact| x |
 |personSourceRelation/personPersonRelation|listAny|Source - Contact-to-contact relation: Name of relation, not taking into account the relation direction| x |
@@ -346,7 +346,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/personId|int|Contact ID: Database ID of the contact row|  |
 |correspondingAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
@@ -393,7 +393,7 @@ as well as before any ORDER BY, are applied.
 |personContact/code|string|Code| x |
 |personContact/orgnr|string|VAT No.| x |
 |personContact/stop|bool|Stop| x |
-|personContact/contactNoMail|bool|No mailings (company| x |
+|personContact/contactNoMail|bool|No mailings (company)| x |
 |personContact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |personContact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |personContact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -451,7 +451,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/streetAddress/line3|string|Street address - Address 3: Third line of the address| x |
 |personContact/streetAddress/county|string|Street address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
@@ -556,7 +556,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportPerson/personNumber|string|User support contact - Number: Displays the contact's number| x |
 |personContact/contactSupportPerson/title|string|User support contact - Title: Displays the contact's job title| x |
@@ -661,7 +661,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactUdef/SuperOffice:9|string|page1saleonly| x |
 |personContact/contactUdef/SuperOffice:10|string|page1marketingonly| x |
@@ -766,7 +766,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/timeToReply|timeSpan|Time to reply: Time to reply| x |
 |request/timeToClose|timeSpan|Time to close: Time to close| x |
@@ -871,7 +871,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_project\_relation|stringorPK|Extra project: Custom project relation on Request| x |
 |request/extra/x\_ticket\_faq|stringorPK|Extra FAQ Relation: Extra FAQ Relation| x |
@@ -976,7 +976,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/saintSaleStatus|listAny|With status|  |
 |projectMembers/saintAmountClass|listAny|Amount class|  |
@@ -1022,7 +1022,7 @@ as well as before any ORDER BY, are applied.
 |personAppointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -1081,7 +1081,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/appointment/title|positiveString|Title| x |
 |personAppointment/appointment/titleHtml| *None* |!!Title Html| x |
@@ -1102,4 +1102,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -33,7 +33,7 @@ inner participants provider, so that the conflict checking is performed.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownerAssociateIdInformation|associate|Owner's Associate ID: Associate ID of the user specified as owner of the follow-up|  |
 |inhibitConflictsInformation|bool|No conflict checking: This restriction is used to turn off conflict checking in the participants list|  |
@@ -137,7 +137,7 @@ inner participants provider, so that the conflict checking is performed.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |email/emailAddress|string|E-mail|  |
 |email/emailDescription|string|Description|  |
@@ -165,7 +165,7 @@ inner participants provider, so that the conflict checking is performed.
 |personContact/code| *None* |Code|  |
 |personContact/orgnr| *None* |VAT No.|  |
 |personContact/stop| *None* |Stop|  |
-|personContact/contactNoMail| *None* |No mailings (company|  |
+|personContact/contactNoMail| *None* |No mailings (company)|  |
 |personContact/updatedBy| *None* |Updated by: The user who last updated the data|  |
 |personContact/updatedByFullName| *None* |Updated by - Full name: The user who last updated the data|  |
 |personContact/updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
@@ -209,4 +209,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

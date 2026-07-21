@@ -46,9 +46,6 @@ person:
 * type: used for different things. (differentiate)
   * associate or resource
 
-<!-- Explain how to use soprotocol elements/parameters to pre-set fields in new entities, i.e.
-soprotocol:document?contact_id=395678&person_id=1198581&document_id=0&task_idx=123 --\>
-
 ## Sample
 
 To get started, explore the [SoClientCrossMessaging.js sample on DevNet][1]. This sample demonstrates how `window.postMessage` can be used for communication from embedded web panels to SuperOffice CRM.

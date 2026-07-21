@@ -25,7 +25,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
@@ -49,7 +49,7 @@ This is the archive Provider for the Selection contact/person archive.
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -129,7 +129,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/contactDepartment|string|Owning department: Name of the department at the company the user belongs to| x |
 |contactAssociate/usergroup|userGroup|Primary group: The user's primary user group| x |
@@ -234,7 +234,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/stop| *None* |Source - Stop| x |
 |sourceRelation/contactNoMail| *None* |Source - No mailings (company)| x |
@@ -311,7 +311,7 @@ This is the archive Provider for the Selection contact/person archive.
 |sale/currencyId| *None* |Currency ID: The currency list item ID| x |
 |sale/currency| *None* |Currency: The currency of the sale| x |
 |sale/credited| *None* |Credited: The user to be credited with the sale| x |
-|sale/lossReason| *None* |Reason (lost: The reason for losing the sale| x |
+|sale/lossReason| *None* |Reason (lost): The reason for losing the sale| x |
 |sale/source| *None* |Source: The source (lead) of the sale| x |
 |sale/competitor| *None* |Competitor: The competitor who won the sale| x |
 |sale/heading| *None* |Sale: The name of the sale| x |
@@ -330,24 +330,24 @@ This is the archive Provider for the Selection contact/person archive.
 |sale/stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |sale/nextDueDate| *None* |Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |sale/reopenDate| *None* |Reopen date: Displays the reopen date for the sale| x |
-|sale/stalledComment| *None* |Reason (stalled: The reason the sale has been stalled| x |
+|sale/stalledComment| *None* |Reason (stalled): The reason the sale has been stalled| x |
 |sale/saleTypeCategory| *None* |Sale type category: Sale type category| x |
-|sale/soldReason| *None* |Reason (sold: Reason (sold)| x |
+|sale/soldReason| *None* |Reason (sold): Reason (sold)| x |
 |sale/saleNumber| *None* |Number: Number| x |
 |sale/hasStakeholders| *None* |Has stakeholders: Does this sale have stakeholders| x |
 |sale/stakeholdersEnabled| *None* |Stakeholders enabled: Possibility to add stakeholders to the sale| x |
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/hasQuote| *None* |Has quote?: Does the sale have a quote attached?| x |
 |sale/hasGuide| *None* |Guided: Does this sale have a Sales Guide| x |
 |sale/description| *None* |Description: The long description field on Sale|  |
 |sale/activeErpLinks| *None* |ERP connected: Is there an active ERP Sync?| x |
 |sale/createdByWorkflow| *None* |Created by flow: Created by flow| x |
-|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |sale/daysInStage| *None* |Days in stage: Total number of days in this stage| x |
 |sale/saleCycle| *None* |Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |sale/visibleFor| *None* |Visible for|  |
@@ -433,7 +433,7 @@ This is the archive Provider for the Selection contact/person archive.
 |appointment/cautionWarning| *None* |Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |appointment/visibleInDiary| *None* |ExcludeBook: Is the activity visible in the diary?| x |
 |appointment/endTime| *None* |End time: End time of an activity|  |
-|appointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|appointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |appointment/completedDate| *None* |Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |appointment/isMilestone| *None* |Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |appointment/invitedPersonId| *None* |ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -444,7 +444,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/visibleFor| *None* |Visible for|  |
 |appointment/appointmentPublish/isPublished| *None* |Published: Displays an icon indicating if the project or sale has been published| x |
@@ -532,7 +532,7 @@ This is the archive Provider for the Selection contact/person archive.
 |document/mailMergeDraft| *None* |Mail merge draft : Indicates whether the document is a mail merge template| x |
 |document/snum| *None* |Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.| x |
 |document/isReport| *None* |Report: Is this document a saved report run?|  |
-|document/suggestedDocumentId| *None* |Document ID (suggestion: The database ID of a document that originates in a suggestion| x |
+|document/suggestedDocumentId| *None* |Document ID (suggestion): The database ID of a document that originates in a suggestion| x |
 |document/isMail| *None* |E-mail|  |
 |document/recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)| x |
 |document/visibleFor| *None* |Visible for|  |
@@ -549,7 +549,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/associate/mrMrs| *None* |Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
 |document/associate/title| *None* |Title: Displays whether the contact is addressed as Mr or Ms| x |
@@ -654,7 +654,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personUdef/SuperOffice:11|string|page1adminonly| x |
 |personExtra/x\_person\_integer|int|Extra Integer: Custom person integer| x |
@@ -759,7 +759,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personRegisteredByFullName| *None* |Source - Registered by - Full name: The user who registered the data| x |
 |personSourceRelation/personRegisteredDate| *None* |Source - Registered date: The date/time the data was registered in UTC.| x |
@@ -864,7 +864,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/contactFullName| *None* |Owner: Name and department of the company the user belongs to| x |
 |personAssociate/contactCategory| *None* |Category: Category| x |
@@ -969,7 +969,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/content| *None* |Content: Search for content in messages related to requests| x |
 |request/messageLanguage| *None* |Language: Recognized language in messages|  |
@@ -1074,7 +1074,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/statusRank| *None* |Status rank: Rank of the project status in the status list| x |
 |projectMembers/associateId| *None* |ID: Displays login ID of the associate who owns the project| x |
@@ -1179,7 +1179,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/date| *None* |Date: Displays start date of a follow-up / sale date of a sale| x |
 |personAppointment/time| *None* |Time: Time|  |
@@ -1214,7 +1214,7 @@ This is the archive Provider for the Selection contact/person archive.
 |personAppointment/cautionWarning| *None* |Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary| *None* |ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate| *None* |Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone| *None* |Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId| *None* |ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -1284,7 +1284,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |linkClicked/linkId| *None* |Link ID: Link ID|  |
 |linkClicked/shipmentId| *None* |ID: Displays the ID of the mailing|  |
@@ -1389,7 +1389,7 @@ This is the archive Provider for the Selection contact/person archive.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/quote/version/approvedBy| *None* |Approved by: Associate who approved a quote that broke one or more of the workflow rules that trigger an approval process| x |
 |sale/quote/version/approvalRegisteredBy| *None* |Approval reg by: Associate who entered the approval of a quote that broke one or more of the workflow rules that trigger an approval process.  Not necessarily the person who approved the quote.| x |
@@ -1450,9 +1450,9 @@ This is the archive Provider for the Selection contact/person archive.
 |sale/quote/version/alternative/quoteline/quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |sale/quote/version/alternative/quoteline/quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |sale/quote/version/alternative/quoteline/discountAmount| *None* |Discount: Discount amount given by salesperson| x |
-|sale/quote/version/alternative/quoteline/discountPercent| *None* |Discount (%: Discount percent given by salesperson| x |
+|sale/quote/version/alternative/quoteline/discountPercent| *None* |Discount (%): Discount percent given by salesperson| x |
 |sale/quote/version/alternative/quoteline/earningAmount| *None* |Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|sale/quote/version/alternative/quoteline/earningPercent| *None* |Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|sale/quote/version/alternative/quoteline/earningPercent| *None* |Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |sale/quote/version/alternative/quoteline/updatedBy| *None* |Updated by: The user who last updated the data| x |
 |sale/quote/version/alternative/quoteline/updatedByFullName| *None* |Updated by - Full name: The user who last updated the data| x |
 |sale/quote/version/alternative/quoteline/updatedDate| *None* |Updated: The date/time the data was last updated in UTC.| x |
@@ -1464,7 +1464,7 @@ This is the archive Provider for the Selection contact/person archive.
 |sale/quote/version/alternative/quoteline/productTypeKey| *None* |Product type: The type of product|  |
 |sale/quote/version/alternative/quoteline/status| *None* |Quote status: Status field showing the status of each line.| x |
 |sale/quote/version/alternative/quoteline/subTotal| *None* |Sum: Sum of Quantity * Unit list price| x |
-|sale/quote/version/alternative/quoteline/vatAmount| *None* |VAT (amount: The calculated VAT amount| x |
+|sale/quote/version/alternative/quoteline/vatAmount| *None* |VAT (amount): The calculated VAT amount| x |
 |sale/quote/version/alternative/quoteline/totalPriceIncVAT| *None* |Total incl. VAT: Total including VAT| x |
 |sale/quote/version/alternative/quoteline/totalPriceWithAlternativeDiscount| *None* |Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 
@@ -1478,4 +1478,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

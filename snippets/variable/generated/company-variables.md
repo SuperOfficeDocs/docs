@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Property Name | Tag | Description |
 |---------------|-----|-------------|
 | AddressLine1 | addr | Postal address line 1. If this is empty, street address line 1 |

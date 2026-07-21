@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Property Name | Tag | Description |
 |---------------|-----|-------------|
 | Business | abus | Person Business |
@@ -7,7 +6,7 @@
 | ChatAddressId | achi | Chat address id |
 | ChatAddressProtocol | achp | Chat address protocol |
 | Country | actr | Country |
-| Country2 | act? | Country (if different from the sender’s country) |
+| Country2 | act? | Country (if different from the sender's country) |
 | CountryCode | acid | Country code |
 | DateOfBirth | abdt | Date of birth |
 | Department | adep | Person department |

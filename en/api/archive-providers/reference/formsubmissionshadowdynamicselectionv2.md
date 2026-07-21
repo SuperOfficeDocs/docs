@@ -22,7 +22,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
@@ -126,7 +126,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personBusiness|listAny|Business| x |
 |person/leadStatus|listAny|Lead status| x |
@@ -231,7 +231,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/personId|int|Contact ID: Database ID of the contact row|  |
 |person/personAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
@@ -321,7 +321,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -336,7 +336,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/mainContact| *None* |Main contact: Main contact for this company| x |
 |contact/forceCompany|bool|Dummy: Dummy|  |
@@ -441,7 +441,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:13|listAny|Udlist two: Static tooltip for udlist two| x |
 |contact/contactExtra/x\_contact\_integer|int|Extra Integer: Custom integer field| x |
@@ -502,4 +502,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

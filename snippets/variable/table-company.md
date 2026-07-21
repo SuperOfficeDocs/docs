@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | addr | Postal address line 1. If this is empty, street address line 1 |
@@ -43,9 +42,9 @@
 | sams | First address line, including Mail Stop (for American addresses) |
 | scit | Postal town for street address (for German addresses) |
 | ssta | State/province for street address (for American, Canadian, and Australian addresses) |
-| stat | State/province (for American, Canadian, and Australian addresses). (See also cszc) |
+| stat | State/province (for American, Canadian, and Australian addresses). (See also cszc) |
 | szip | Postcode for street address (for German addresses) |
 | zici | Postcode and postal town (for example 0572 OSLO) |
 | zino | Postcode prefix |
-| zipc | Postcode. (See also cszc) |
+| zipc | Postcode. (See also cszc) |
 | zipp | Postcode for street address. |

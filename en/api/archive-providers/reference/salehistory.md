@@ -22,7 +22,7 @@ Sale histories. Contains all changes to the sale records over time.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -49,7 +49,7 @@ Sale histories. Contains all changes to the sale records over time.
 |currencyId|int|Currency ID: The currency list item ID| x |
 |currency|listAny|Currency: The currency of the sale| x |
 |credited|listAny|Credited: The user to be credited with the sale| x |
-|lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |source|listAny|Source: The source (lead) of the sale| x |
 |competitor|listAny|Competitor: The competitor who won the sale| x |
 |heading|stringorPK|Sale: Displays a descriptive text for the item| x |
@@ -64,8 +64,8 @@ Sale histories. Contains all changes to the sale records over time.
 |saleType|listAny|Sale type: Sale type, from list| x |
 |nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
-|soldReason|listAny|Reason (sold: Reason (sold)| x |
+|stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
+|soldReason|listAny|Reason (sold): Reason (sold)| x |
 |saleNumber|string|Number: Number| x |
 |visibleFor|listAny|Visible for|  |
 |associate/firstName|string|First name: Displays the contact's first name| x |
@@ -126,7 +126,7 @@ Sale histories. Contains all changes to the sale records over time.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/birthYear|int|Birth year: Displays contact's birth year| x |
 |person/birthMonth|int|Birth month: Displays contact's birth month| x |
@@ -177,7 +177,7 @@ Sale histories. Contains all changes to the sale records over time.
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -228,4 +228,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

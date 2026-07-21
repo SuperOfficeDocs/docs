@@ -32,7 +32,7 @@ Service settings that are mapped into preferences, retrieved by <see cref="T:Sup
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sectionKey|string|Section!Key|  |
 |getAllRows| *None* |GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
@@ -59,4 +59,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

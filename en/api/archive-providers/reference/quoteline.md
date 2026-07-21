@@ -22,7 +22,7 @@ This is the archive Provider for the QuoteLine Archive.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -52,9 +52,9 @@ This is the archive Provider for the QuoteLine Archive.
 |quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -66,7 +66,7 @@ This is the archive Provider for the QuoteLine Archive.
 |productTypeKey|listExternal|Product type: The type of product|  |
 |status|listAny|Quote status: Status field showing the status of each line.| x |
 |subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 |totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 
@@ -80,4 +80,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

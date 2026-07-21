@@ -24,7 +24,7 @@ and for GDPR relations to person, if you join and restrict on person
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -128,7 +128,7 @@ and for GDPR relations to person, if you join and restrict on person
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |consentPerson/person/personAddress/line1|string|Contact - Contact address - Address 1: First line of the address| x |
 |consentPerson/person/personAddress/line2|string|Contact - Contact address - Address 2: Second line of the address| x |
@@ -197,4 +197,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

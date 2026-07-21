@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Property Name | Tag | Description |
 |---------------|-----|-------------|
 | EventDate | popa | Project, event date |

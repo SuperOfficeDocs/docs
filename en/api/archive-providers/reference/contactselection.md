@@ -22,7 +22,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
@@ -46,7 +46,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -126,7 +126,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/contactDepartment|string|Owning department: Name of the department at the company the user belongs to| x |
 |contactAssociate/usergroup|userGroup|Primary group: The user's primary user group| x |
@@ -231,7 +231,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/stop| *None* |Source - Stop| x |
 |sourceRelation/contactNoMail| *None* |Source - No mailings (company)| x |
@@ -308,7 +308,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |sale/currencyId| *None* |Currency ID: The currency list item ID| x |
 |sale/currency| *None* |Currency: The currency of the sale| x |
 |sale/credited| *None* |Credited: The user to be credited with the sale| x |
-|sale/lossReason| *None* |Reason (lost: The reason for losing the sale| x |
+|sale/lossReason| *None* |Reason (lost): The reason for losing the sale| x |
 |sale/source| *None* |Source: The source (lead) of the sale| x |
 |sale/competitor| *None* |Competitor: The competitor who won the sale| x |
 |sale/heading| *None* |Sale: The name of the sale| x |
@@ -327,24 +327,24 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |sale/stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |sale/nextDueDate| *None* |Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |sale/reopenDate| *None* |Reopen date: Displays the reopen date for the sale| x |
-|sale/stalledComment| *None* |Reason (stalled: The reason the sale has been stalled| x |
+|sale/stalledComment| *None* |Reason (stalled): The reason the sale has been stalled| x |
 |sale/saleTypeCategory| *None* |Sale type category: Sale type category| x |
-|sale/soldReason| *None* |Reason (sold: Reason (sold)| x |
+|sale/soldReason| *None* |Reason (sold): Reason (sold)| x |
 |sale/saleNumber| *None* |Number: Number| x |
 |sale/hasStakeholders| *None* |Has stakeholders: Does this sale have stakeholders| x |
 |sale/stakeholdersEnabled| *None* |Stakeholders enabled: Possibility to add stakeholders to the sale| x |
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/hasQuote| *None* |Has quote?: Does the sale have a quote attached?| x |
 |sale/hasGuide| *None* |Guided: Does this sale have a Sales Guide| x |
 |sale/description| *None* |Description: The long description field on Sale|  |
 |sale/activeErpLinks| *None* |ERP connected: Is there an active ERP Sync?| x |
 |sale/createdByWorkflow| *None* |Created by flow: Created by flow| x |
-|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |sale/daysInStage| *None* |Days in stage: Total number of days in this stage| x |
 |sale/saleCycle| *None* |Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |sale/visibleFor| *None* |Visible for|  |
@@ -430,7 +430,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |appointment/cautionWarning| *None* |Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |appointment/visibleInDiary| *None* |ExcludeBook: Is the activity visible in the diary?| x |
 |appointment/endTime| *None* |End time: End time of an activity|  |
-|appointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|appointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |appointment/completedDate| *None* |Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |appointment/isMilestone| *None* |Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |appointment/invitedPersonId| *None* |ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -441,7 +441,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/visibleFor| *None* |Visible for|  |
 |appointment/appointmentPublish/isPublished| *None* |Published: Displays an icon indicating if the project or sale has been published| x |
@@ -529,7 +529,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |document/mailMergeDraft| *None* |Mail merge draft : Indicates whether the document is a mail merge template| x |
 |document/snum| *None* |Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.| x |
 |document/isReport| *None* |Report: Is this document a saved report run?|  |
-|document/suggestedDocumentId| *None* |Document ID (suggestion: The database ID of a document that originates in a suggestion| x |
+|document/suggestedDocumentId| *None* |Document ID (suggestion): The database ID of a document that originates in a suggestion| x |
 |document/isMail| *None* |E-mail|  |
 |document/recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)| x |
 |document/visibleFor| *None* |Visible for|  |
@@ -546,7 +546,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/associate/mrMrs| *None* |Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
 |document/associate/title| *None* |Title: Displays whether the contact is addressed as Mr or Ms| x |
@@ -651,7 +651,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personUdef/SuperOffice:11|string|page1adminonly| x |
 |personExtra/x\_person\_integer|int|Extra Integer: Custom person integer| x |
@@ -756,7 +756,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personRegisteredByFullName| *None* |Source - Registered by - Full name: The user who registered the data| x |
 |personSourceRelation/personRegisteredDate| *None* |Source - Registered date: The date/time the data was registered in UTC.| x |
@@ -861,7 +861,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/contactFullName| *None* |Owner: Name and department of the company the user belongs to| x |
 |personAssociate/contactCategory| *None* |Category: Category| x |
@@ -966,7 +966,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/content| *None* |Content: Search for content in messages related to requests| x |
 |request/messageLanguage| *None* |Language: Recognized language in messages|  |
@@ -1071,7 +1071,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/statusRank| *None* |Status rank: Rank of the project status in the status list| x |
 |projectMembers/associateId| *None* |ID: Displays login ID of the associate who owns the project| x |
@@ -1176,7 +1176,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/date| *None* |Date: Displays start date of a follow-up / sale date of a sale| x |
 |personAppointment/time| *None* |Time: Time|  |
@@ -1211,7 +1211,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |personAppointment/cautionWarning| *None* |Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary| *None* |ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate| *None* |Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone| *None* |Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId| *None* |ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -1288,4 +1288,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

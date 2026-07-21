@@ -28,7 +28,7 @@ from the result.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -132,7 +132,7 @@ from the result.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/NumberOfSalesInPeriod|int|Number of sales in last 90 days|  |
 |project/NumberOfNotCompletedSales|int|Number of non-completed sales|  |
@@ -237,7 +237,7 @@ from the result.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAddress/city|string|Contact address - City: This criterion corresponds to the City field on the Company card.| x |
 |person/personAddress/zip|string|Contact address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
@@ -342,7 +342,7 @@ from the result.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/correspondingAssociate/usergroupId|int|Group ID: The user's primary user group| x |
 |person/correspondingAssociate/contactFullName|string|Owner: Name and department of the company the user belongs to| x |
@@ -392,7 +392,7 @@ from the result.
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -447,7 +447,7 @@ from the result.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |contact/restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
@@ -552,7 +552,7 @@ from the result.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/SaintStatus2|saintStatus|C-company: Kundens navn starter med bokstaven C|  |
 |contact/saintSaleStatus|listAny|With status|  |
@@ -573,4 +573,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

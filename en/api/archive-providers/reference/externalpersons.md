@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -124,7 +124,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
 |restrictionAddress/line3|string|Search address - Address 3: Third line of the address| x |
@@ -229,7 +229,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/restrictionContactId|int|Source - Company ID: Database ID of company to fetch relations for|  |
 |personSourceRelation/restrictionPersonId|int|Source - Company ID: Database ID of company to fetch relations for|  |
@@ -334,7 +334,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/fullName|string|Full name: Displays full name of user (first, middle, last - according to settings)| x |
 |correspondingAssociate/contactId|int|Company ID: Database ID of the company the user belongs to|  |
@@ -439,7 +439,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/createdBy/title|string|Created by - Title: Displays whether the contact is addressed as Mr or Ms| x |
 |request/createdBy/associateDbId|associate|Created by - ID| x |
@@ -544,7 +544,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/nextMilestone|date|Next milestone: Date of next non-completed activity that is marked as a milestone| x |
 |projectMembers/endDate|date|End date: End date of project| x |
@@ -649,7 +649,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |personAppointment/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -671,7 +671,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Ext
 |personAppointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -746,4 +746,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

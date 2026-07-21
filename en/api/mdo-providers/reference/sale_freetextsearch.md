@@ -66,7 +66,7 @@ foreach (var item in listProvider.RootItems) {
 |16|SalgÅBBÅ (Yngve'S Fisk & Vilt, YAvdeling: Yngvar Ystad)|sold|SalgÅBBÅ|
 |18|Salg7BB7 (0-Feil Software AS, 0Avdeling)||Salg7BB7|
 |19|Salg&BB& (0-Feil Software AS, 0Avdeling)|lost|Salg&BB&|
-|20|Salg<BB\< (0-Feil Software AS, 0Avdeling)||Salg<BB\<|
+|20|`Salg<BB\< (0-Feil Software AS, 0Avdeling)`||`Salg<BB\<`|
 |21|SalgCDDC (Arne'S Kebab, AAvdeling: Arjan Abelsen)|sold|SalgCDDC|
 |23|SalgNDDN (Arne'S Kebab, AAvdeling)||SalgNDDN|
 |24|SalgSDDS (Yngve'S Fisk & Vilt, YAvdeling)|sold|SalgSDDS|

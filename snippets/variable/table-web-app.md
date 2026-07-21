@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | uctx | Current online context identifier, or online customer ID |
@@ -9,5 +8,3 @@
 | usid | Current user identity |
 | usln | Current user's last name |
 | usmn | Current user's middle name |
-
-

@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | pccu | points to \<CRM.web installation>\PocketConfiguration.aspx |

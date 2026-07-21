@@ -22,7 +22,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
@@ -126,7 +126,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/streetAddress/line2|string|Company - Street address - Address 2: Second line of the address| x |
 |mailingAddr/contact/streetAddress/line3|string|Company - Street address - Address 3: Third line of the address| x |
@@ -231,7 +231,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/LastCompletedSale|date|Company - Date of last completed sale|  |
 |mailingAddr/contact/LastDoBySale|date|Company - Date of last non-completed sale|  |
@@ -336,7 +336,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAddress/line3|string|Contact - Contact address - Address 3: Third line of the address| x |
 |mailingAddr/person/personAddress/county|string|Contact - Contact address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
@@ -441,7 +441,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/correspondingAssociate/contactDepartment|string|Contact - Owning department: Name of the department at the company the user belongs to| x |
 |mailingAddr/person/correspondingAssociate/usergroup|userGroup|Contact - Primary group: The user's primary user group| x |
@@ -546,7 +546,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowAssociate/usergroupId|int|Owner - Group ID: The user's primary user group| x |
 |emailFlow/workflowAssociate/contactFullName|string|Owner - Owner: Name and department of the company the user belongs to| x |
@@ -651,7 +651,7 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUdef/SuperOffice:7|listAny|projectdropdownlistbox| x |
 |project/projectUdef/SuperOffice:8|decimal|projectdecimal| x |
@@ -693,4 +693,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

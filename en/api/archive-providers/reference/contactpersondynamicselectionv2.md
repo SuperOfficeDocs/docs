@@ -23,7 +23,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
@@ -46,7 +46,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -127,7 +127,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/usergroup|userGroup|Primary group: The user's primary user group| x |
 |contactAssociate/usergroupId|int|Group ID: The user's primary user group| x |
@@ -232,7 +232,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/contactNoMail|bool|Source - No mailings (company)| x |
 |sourceRelation/updatedBy|associate|Source - Updated by: The user who last updated the data| x |
@@ -308,7 +308,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/currencyId|int|Currency ID: The currency list item ID| x |
 |sale/currency|listAny|Currency: The currency of the sale| x |
 |sale/credited|listAny|Credited: The user to be credited with the sale| x |
-|sale/lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|sale/lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |sale/source|listAny|Source: The source (lead) of the sale| x |
 |sale/competitor|listAny|Competitor: The competitor who won the sale| x |
 |sale/heading|stringorPK|Sale: The name of the sale| x |
@@ -327,9 +327,9 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |sale/nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |sale/reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|sale/stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|sale/stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |sale/saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|sale/soldReason|listAny|Reason (sold: Reason (sold)| x |
+|sale/soldReason|listAny|Reason (sold): Reason (sold)| x |
 |sale/saleNumber|string|Number: Number| x |
 |sale/hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |sale/stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -337,14 +337,14 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/hasGuide|bool|Guided: Does this sale have a Sales Guide| x |
 |sale/description|string|Description: The long description field on Sale|  |
 |sale/activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |sale/createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |sale/daysInStage|int|Days in stage: Total number of days in this stage| x |
 |sale/saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |sale/visibleFor|listAny|Visible for|  |
@@ -430,7 +430,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |appointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |appointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |appointment/endTime| *None* |End time: End time of an activity|  |
-|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |appointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |appointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |appointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -442,7 +442,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointmentPublish/isPublished|bool|Published: Displays an icon indicating if the project or sale has been published| x |
 |appointment/appointmentPublish/publishedFrom|date|From date: Start date for publishing. The record will not be visible prior to this date| x |
@@ -529,7 +529,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |document/mailMergeDraft|bool|Mail merge draft : Indicates whether the document is a mail merge template| x |
 |document/snum|int|Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.| x |
 |document/isReport|bool|Report: Is this document a saved report run?|  |
-|document/suggestedDocumentId|int|Document ID (suggestion: The database ID of a document that originates in a suggestion| x |
+|document/suggestedDocumentId|int|Document ID (suggestion): The database ID of a document that originates in a suggestion| x |
 |document/isMail|bool|E-mail|  |
 |document/recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)| x |
 |document/visibleFor|listAny|Visible for|  |
@@ -547,7 +547,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/associate/title|string|Title: Displays whether the contact is addressed as Mr or Ms| x |
 |document/associate/associateDbId|associate|ID| x |
@@ -652,7 +652,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personInfo/infoText|positiveString|Information: Displays the text entered in the description field| x |
 |personEmail/emailProtocol|string|Protocol: E-mail protocol, such as SMTP| x |
@@ -757,7 +757,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personCategory|listAny|Source - Category| x |
 |personSourceRelation/personCategoryGroup|listAny|Source - Category group| x |
@@ -862,7 +862,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/credentialType| *None* |Auth. type: What type of credentials to use when this user logs in| x |
 |personAssociate/credentialDisplayValue| *None* |Auth. value: Credential value (public, visible part) to be used when this user logs in| x |
@@ -967,7 +967,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/content|string|Content: Search for content in messages related to requests| x |
 |request/messageLanguage|listAny|Language: Recognized language in messages|  |
@@ -1072,7 +1072,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/statusRank| *None* |Status rank: Rank of the project status in the status list| x |
 |projectMembers/associateId|associate|ID: Displays login ID of the associate who owns the project| x |
@@ -1177,7 +1177,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/date|date|Date: Displays start date of a follow-up / sale date of a sale| x |
 |personAppointment/time| *None* |Time: Time|  |
@@ -1212,7 +1212,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |personAppointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -1282,7 +1282,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |linkClicked/linkId|int|Link ID: Link ID|  |
 |linkClicked/shipmentId|int|ID: Displays the ID of the mailing|  |
@@ -1387,7 +1387,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/quote/version/approvedBy|associate|Approved by: Associate who approved a quote that broke one or more of the workflow rules that trigger an approval process| x |
 |sale/quote/version/approvalRegisteredBy|associate|Approval reg by: Associate who entered the approval of a quote that broke one or more of the workflow rules that trigger an approval process.  Not necessarily the person who approved the quote.| x |
@@ -1448,9 +1448,9 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/quote/version/alternative/quoteline/quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |sale/quote/version/alternative/quoteline/quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |sale/quote/version/alternative/quoteline/discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|sale/quote/version/alternative/quoteline/discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|sale/quote/version/alternative/quoteline/discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |sale/quote/version/alternative/quoteline/earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|sale/quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|sale/quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |sale/quote/version/alternative/quoteline/updatedBy|associate|Updated by: The user who last updated the data| x |
 |sale/quote/version/alternative/quoteline/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |sale/quote/version/alternative/quoteline/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -1462,7 +1462,7 @@ Contact + Person selection archive with OR-able selection groups. Each group is 
 |sale/quote/version/alternative/quoteline/productTypeKey|listExternal|Product type: The type of product|  |
 |sale/quote/version/alternative/quoteline/status|listAny|Quote status: Status field showing the status of each line.| x |
 |sale/quote/version/alternative/quoteline/subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|sale/quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|sale/quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |sale/quote/version/alternative/quoteline/totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 |sale/quote/version/alternative/quoteline/totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 
@@ -1476,4 +1476,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

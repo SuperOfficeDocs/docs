@@ -26,7 +26,7 @@ Entity name: "newsfeeditem"
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -130,7 +130,7 @@ Entity name: "newsfeeditem"
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/birthdate| *None* |Contact - Birthdate: Displays the contact's date of birth|  |
 |person/associateType| *None* |Contact - User type: Displays an icon indicating if a contact is an associate or external contact with log-in rights and currently online. This information is updated only once while the archive is loading.|  |
@@ -235,7 +235,7 @@ Entity name: "newsfeeditem"
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/icon|listAny|Sale - Category: Displays the icon for an activity type| x |
 |sale/date|date|Sale - Date: Displays start date of a follow-up / sale date of a sale| x |
@@ -289,8 +289,8 @@ Entity name: "newsfeeditem"
 |sale/description|string|Sale - Description: The long description field on Sale|  |
 |sale/activeErpLinks|bool|Sale - ERP connected: Is there an active ERP Sync?| x |
 |sale/createdByWorkflow|listAny|Sale - Created by flow: Created by flow| x |
-|sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency: The gross sales total| x |
-|sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency): The gross sales total| x |
+|sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |sale/daysInStage|int|Sale - Days in stage: Total number of days in this stage| x |
 |sale/saleCycle|int|Sale - Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |sale/visibleFor|listAny|Sale - Visible for|  |
@@ -309,4 +309,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

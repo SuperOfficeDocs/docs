@@ -21,7 +21,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -50,7 +50,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |currencyId|int|Currency ID: The currency list item ID| x |
 |currency|listAny|Currency: The currency of the sale| x |
 |credited|listAny|Credited: The user to be credited with the sale| x |
-|lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |source|listAny|Source: The source (lead) of the sale| x |
 |competitor|listAny|Competitor: The competitor who won the sale| x |
 |heading|stringorPK|Sale: The name of the sale| x |
@@ -69,9 +69,9 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|soldReason|listAny|Reason (sold: Reason (sold)| x |
+|soldReason|listAny|Reason (sold): Reason (sold)| x |
 |saleNumber|string|Number: Number| x |
 |hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -80,8 +80,8 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |description|string|Description: The long description field on Sale|  |
 |activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |daysInStage|int|Days in stage: Total number of days in this stage| x |
 |saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |visibleFor|listAny|Visible for|  |
@@ -125,7 +125,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personRegisteredByFullName|associate|Registered by - Full name: The user who registered the data| x |
 |person/personRegisteredDate|date|Registered date: The date/time the data was registered in UTC.| x |
@@ -230,7 +230,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_contact\_relation|stringorPK|Extra company relation: Company relation on contact| x |
 |person/personExtra/y\_rental/id|int|Rental - id: Displays the row's primary key (y\_rental)| x |
@@ -335,10 +335,10 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -440,7 +440,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactInterestIds|listInterest|Company Interest: This criterion corresponds to the Interests tab on the Company card.|  |
 |contact/contactUdef/SuperOffice:1|string|companyshorttext: tooltipshorttext| x |
@@ -545,7 +545,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleUdef/SuperOffice:7|listAny|saledropdownlistbox| x |
 |saleUdef/SuperOffice:8|decimal|saledecimal| x |
@@ -650,7 +650,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/saintTicketStatus|listAny|Status|  |
 |project/saintTicketCategory|listAny|Category|  |
@@ -755,7 +755,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/restrictionAddress/addressId|int|Stakeholder - Search address - Address ID: Database ID for the address record| x |
 |saleStakeholder/person/restrictionAddress/line1|string|Stakeholder - Search address - Address 1: First line of the address| x |
@@ -860,7 +860,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/correspondingAssociate/ejUserId|int|Stakeholder - Service user ID: The database ID of a Service user|  |
 |saleStakeholder/person/correspondingAssociate/simultaneousEjUser|bool|Stakeholder - Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
@@ -965,7 +965,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/restrictionAddress/state|string|Stakeholder - Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |saleStakeholder/contact/restrictionAddress/wgs84latitude|decimal|Stakeholder - Search address - Latitude: Latitude| x |
@@ -1070,7 +1070,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/saintTicketCategory|listAny|Stakeholder - Category|  |
 |quote/quoteId|int|Quote ID: SuperOffice database ID of quote record| x |
@@ -1149,9 +1149,9 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |quote/version/alternative/quoteline/quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |quote/version/alternative/quoteline/earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |quote/version/alternative/quoteline/updatedBy|associate|Updated by: The user who last updated the data| x |
 |quote/version/alternative/quoteline/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |quote/version/alternative/quoteline/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -1163,7 +1163,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |quote/version/alternative/quoteline/productTypeKey|listExternal|Product type: The type of product|  |
 |quote/version/alternative/quoteline/status|listAny|Quote status: Status field showing the status of each line.| x |
 |quote/version/alternative/quoteline/subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |quote/version/alternative/quoteline/totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 |quote/version/alternative/quoteline/totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 
@@ -1177,4 +1177,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -89,12 +89,5 @@ Now since SuperOffice has provided us with a `ResourceDllProvider`, we are able 
 
 * The third method is to use the `ResXmlFileProvider` to provide custom strings without compiling them into resource DLLs. XML files are easier to edit but tend to be larger than the compiled DLL files.
 
-<!-- ## See also
-
-* IResourceProvider
-* ResourceDllProvider
-* ResXmlFileProvider
-* TemplateTagAsResourceProvider --\>
-
 [1]: ./create-resource-provider
 [2]: ./create-resx-file

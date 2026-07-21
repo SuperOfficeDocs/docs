@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Merge field tag | Name | Description |
 |---|---|---|
 | alternative/description | Description | Description of the quote alternative |

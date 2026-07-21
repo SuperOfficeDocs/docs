@@ -26,7 +26,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -37,12 +37,12 @@ to drive the sentry calculations, as well as the specialization with the correct
 |stageName|string|Stage: Name of sale stages| x |
 |stageId|int|Stage ID: Database ID of a sale stage.| x |
 |stageOrderBy|int|Sort order for stages: Sort algorithm for sales stages| x |
-|suggestedItemId|int|Database ID (suggestion: The database ID of an entity (follow-up or document) that originates in a suggestion| x |
-|suggestedItemText|string|Name of entity (suggestion: The name of an entity (follow-up or document) that originates in a suggestion| x |
+|suggestedItemId|int|Database ID (suggestion): The database ID of an entity (follow-up or document) that originates in a suggestion| x |
+|suggestedItemText|string|Name of entity (suggestion): The name of an entity (follow-up or document) that originates in a suggestion| x |
 |suggestedItemOrderBy|int|Sort order for suggestions: Sort algorithm for suggestions| x |
 |suggestedItemTooltip|string|Description: Description of a suggested item| x |
-|instanceItemId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion|  |
-|instanceItemText| *None* |Instance name (suggestion: Description of a follow-up or heading in a document that originates in a suggestion|  |
+|instanceItemId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion|  |
+|instanceItemText| *None* |Instance name (suggestion): Description of a follow-up or heading in a document that originates in a suggestion|  |
 |hasInstance| *None* |Has instance: Does this suggested item have an instance?|  |
 |deleted|bool|Deleted: Has this suggestion been deleted by the administrator?| x |
 |isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
@@ -81,7 +81,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |appointmentInstance/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |appointmentInstance/endTime| *None* |End time: End time of an activity|  |
-|appointmentInstance/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|appointmentInstance/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |appointmentInstance/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |appointmentInstance/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |appointmentInstance/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -111,7 +111,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/contact/code|string|Code| x |
 |appointmentInstance/contact/orgnr|string|VAT No.| x |
 |appointmentInstance/contact/stop|bool|Stop| x |
-|appointmentInstance/contact/contactNoMail|bool|No mailings (company| x |
+|appointmentInstance/contact/contactNoMail|bool|No mailings (company)| x |
 |appointmentInstance/contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |appointmentInstance/contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |appointmentInstance/contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -130,7 +130,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactFax/formattedNumber|string|Fax - Phone: Displays phone number|  |
 |appointmentInstance/contact/contactFax/description|string|Fax - Description: Phone number description| x |
@@ -235,7 +235,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactExtra/x\_contact\_float|decimal|Extra Float: Custom float field with 3 decimals| x |
 |appointmentInstance/contact/contactExtra/x\_contact\_longtext|string|Extra LongText: Custom long text field. DO not keep HTML. 3 Line text area editor| x |
@@ -340,7 +340,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personDirectPhone/description|string|Direct - Description: Phone number description| x |
 |appointmentInstance/person/personMobilePhone/formattedNumber|string|Mobile - Phone: Displays phone number|  |
@@ -445,7 +445,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personAssociate/assocTooltip|string|Description : Description|  |
 |appointmentInstance/person/personAssociate/assocType|listAny|Type: Type of user: associate, external user, system user, anonymous account| x |
@@ -550,7 +550,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/project/projectUrl/URLAddress|string|URL| x |
 |appointmentInstance/project/projectUrl/URLDescription|string|Description| x |
@@ -644,7 +644,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/sale/currencyId|int|Currency ID: The currency list item ID| x |
 |appointmentInstance/sale/currency|listAny|Currency: The currency of the sale| x |
 |appointmentInstance/sale/credited|listAny|Credited: The user to be credited with the sale| x |
-|appointmentInstance/sale/lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|appointmentInstance/sale/lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |appointmentInstance/sale/source|listAny|Source: The source (lead) of the sale| x |
 |appointmentInstance/sale/competitor|listAny|Competitor: The competitor who won the sale| x |
 |appointmentInstance/sale/heading|stringorPK|Sale: The name of the sale| x |
@@ -655,7 +655,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/sale/probPercent|int|Probability as %: Probability as %| x |
 |appointmentInstance/sale/originalStage|listAny|Stage when closed: Stage when closed| x |
@@ -668,9 +668,9 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/sale/stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |appointmentInstance/sale/nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |appointmentInstance/sale/reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|appointmentInstance/sale/stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|appointmentInstance/sale/stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |appointmentInstance/sale/saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|appointmentInstance/sale/soldReason|listAny|Reason (sold: Reason (sold)| x |
+|appointmentInstance/sale/soldReason|listAny|Reason (sold): Reason (sold)| x |
 |appointmentInstance/sale/saleNumber|string|Number: Number| x |
 |appointmentInstance/sale/hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |appointmentInstance/sale/stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -679,8 +679,8 @@ to drive the sentry calculations, as well as the specialization with the correct
 |appointmentInstance/sale/description|string|Description: The long description field on Sale|  |
 |appointmentInstance/sale/activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |appointmentInstance/sale/createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|appointmentInstance/sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|appointmentInstance/sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|appointmentInstance/sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|appointmentInstance/sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |appointmentInstance/sale/daysInStage|int|Days in stage: Total number of days in this stage| x |
 |appointmentInstance/sale/saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |appointmentInstance/sale/visibleFor|listAny|Visible for|  |
@@ -760,7 +760,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/associate/isActiveText|bool|Active status: Is this user active, and should be able to log in?| x |
 |appointmentInstance/associate/portraitThumbnail| *None* |Person image: Person image|  |
@@ -790,4 +790,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

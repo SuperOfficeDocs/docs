@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Merge field tag | Name | Description |
 |---|---|---|
 | group/groupField | Group field value | The value of whatever field has been designated the group field |

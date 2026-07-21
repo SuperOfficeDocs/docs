@@ -22,7 +22,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -51,7 +51,7 @@ Shadow contact provider for the dynamic sale provider.
 |currencyId|int|Currency ID: The currency list item ID| x |
 |currency|listAny|Currency: The currency of the sale| x |
 |credited|listAny|Credited: The user to be credited with the sale| x |
-|lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |source|listAny|Source: The source (lead) of the sale| x |
 |competitor|listAny|Competitor: The competitor who won the sale| x |
 |heading|stringorPK|Sale: The name of the sale| x |
@@ -70,9 +70,9 @@ Shadow contact provider for the dynamic sale provider.
 |stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|soldReason|listAny|Reason (sold: Reason (sold)| x |
+|soldReason|listAny|Reason (sold): Reason (sold)| x |
 |saleNumber|string|Number: Number| x |
 |hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -81,8 +81,8 @@ Shadow contact provider for the dynamic sale provider.
 |description|string|Description: The long description field on Sale|  |
 |activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |daysInStage|int|Days in stage: Total number of days in this stage| x |
 |saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |visibleFor|listAny|Visible for|  |
@@ -126,7 +126,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personRegisteredByFullName|associate|Registered by - Full name: The user who registered the data| x |
 |person/personRegisteredDate|date|Registered date: The date/time the data was registered in UTC.| x |
@@ -231,7 +231,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_contact\_relation|stringorPK|Extra company relation: Company relation on contact| x |
 |person/personExtra/y\_rental/id|int|Rental - id: Displays the row's primary key (y\_rental)| x |
@@ -336,10 +336,10 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -441,7 +441,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactInterestIds|listInterest|Company Interest: This criterion corresponds to the Interests tab on the Company card.|  |
 |contact/contactUdef/SuperOffice:1|string|companyshorttext: tooltipshorttext| x |
@@ -546,7 +546,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleUdef/SuperOffice:7|listAny|saledropdownlistbox| x |
 |saleUdef/SuperOffice:8|decimal|saledecimal| x |
@@ -585,7 +585,7 @@ Shadow contact provider for the dynamic sale provider.
 |appointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |appointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |appointment/endTime| *None* |End time: End time of an activity|  |
-|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |appointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |appointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |appointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -651,7 +651,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointment/internalNotesHtml|positiveString|!!Internal Notes Html| x |
 |document/completed|bool|Completed: Displays a checkbox showing if an appointment is completed| x |
@@ -684,7 +684,7 @@ Shadow contact provider for the dynamic sale provider.
 |document/mailMergeDraft|bool|Mail merge draft : Indicates whether the document is a mail merge template| x |
 |document/snum|int|Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.| x |
 |document/isReport|bool|Report: Is this document a saved report run?|  |
-|document/suggestedDocumentId|int|Document ID (suggestion: The database ID of a document that originates in a suggestion| x |
+|document/suggestedDocumentId|int|Document ID (suggestion): The database ID of a document that originates in a suggestion| x |
 |document/isMail|bool|E-mail|  |
 |document/recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)| x |
 |document/visibleFor|listAny|Visible for|  |
@@ -756,7 +756,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/hasGuide|bool|Guided: Does this sale have a Sales Guide| x |
 |project/nextMilestone|date|Next milestone: Date of next non-completed activity that is marked as a milestone| x |
@@ -861,7 +861,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personNumber|string|Stakeholder - Number: Displays the contact's number| x |
 |saleStakeholder/person/title|string|Stakeholder - Title: Displays the contact's job title| x |
@@ -966,7 +966,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personUdef/SuperOffice:8|decimal|Stakeholder - contactdecimal| x |
 |saleStakeholder/person/personUdef/SuperOffice:9|string|Stakeholder - page1saleonly| x |
@@ -1071,7 +1071,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/legalBaseStore|listAny|Stakeholder - Legal basis - Sales and service: The purpose to store data about this contact is to sell to and/or provide services to this contact. This purpose is usually used when storing contacts who are defined as potential or existing customers.| x |
 |saleStakeholder/person/legalBaseEmarketing|listAny|Stakeholder - Legal basis - E-marketing: The purpose is to gain the explicit consent to communicate electronically (bulk e-mail) on topics related to our products and services. This might include newsletters, invitations and product-related content. The subscription system is used to refine the individual marketing choices this contact makes.| x |
@@ -1176,7 +1176,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/contactAssociate/contactFullName|string|Stakeholder - Owner: Name and department of the company the user belongs to| x |
 |saleStakeholder/contact/contactAssociate/contactCategory|listAny|Stakeholder - Category: Category| x |
@@ -1281,7 +1281,7 @@ Shadow contact provider for the dynamic sale provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |quote/version/approvedText|string|Approval comment: Comment added to the approval of a quote that broke one or more of the workflow rules that trigger an approval process| x |
 |quote/version/approvedDate|date|Approved date: Date of approval of a quote that broke one or more of the workflow rules that trigger an approval process| x |
@@ -1340,9 +1340,9 @@ Shadow contact provider for the dynamic sale provider.
 |quote/version/alternative/quoteline/quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |quote/version/alternative/quoteline/earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |quote/version/alternative/quoteline/updatedBy|associate|Updated by: The user who last updated the data| x |
 |quote/version/alternative/quoteline/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |quote/version/alternative/quoteline/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -1354,7 +1354,7 @@ Shadow contact provider for the dynamic sale provider.
 |quote/version/alternative/quoteline/productTypeKey|listExternal|Product type: The type of product|  |
 |quote/version/alternative/quoteline/status|listAny|Quote status: Status field showing the status of each line.| x |
 |quote/version/alternative/quoteline/subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |quote/version/alternative/quoteline/totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 |quote/version/alternative/quoteline/totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 
@@ -1368,4 +1368,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

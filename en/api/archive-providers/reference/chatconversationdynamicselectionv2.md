@@ -22,7 +22,7 @@ ChatConversation selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
@@ -126,7 +126,7 @@ ChatConversation selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/supportAssociate|associate|Our service contact: Default service contact for this contact| x |
 |person/supportAssociateFullName|associate|Our service contact - Full name: Default service contact for this contact| x |
@@ -231,7 +231,7 @@ ChatConversation selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/y\_rental/y\_equipment/x\_name|string|Rental - Equipment - Name: Equpment name custom field. Cannot be null., show in table| x |
 |person/personExtra/y\_car/id|int|Car - id: Displays the row's primary key (y\_car)| x |
@@ -328,7 +328,7 @@ ChatConversation selection archive with OR-able selection groups. Each group is 
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -336,7 +336,7 @@ ChatConversation selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/registeredByFullName|associate|Registered by - Full name: The user who registered the data| x |
 |contact/registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
@@ -441,7 +441,7 @@ ChatConversation selection archive with OR-able selection groups. Each group is 
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:6|bool|companycheckbox| x |
 |contact/contactUdef/SuperOffice:7|listAny|companydropdownlistbox| x |
@@ -509,4 +509,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

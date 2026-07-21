@@ -324,8 +324,9 @@ function Protect-MdxCharacters {
                 $segment = $segment -replace '(?<!\\)<(?![A-Za-z/!])', '\<'
 
                 # Escape > that is NOT ending an HTML/JSX tag
-                # Don't escape if preceded by: letter, digit, quote, slash, or whitespace (typical tag endings)
-                $segment = $segment -replace '(?<![A-Za-z0-9"''/\s])(?<!\\)>', '\>'
+                # Don't escape if preceded by: letter, digit, quote, slash, whitespace (typical tag endings),
+                # ')' (xref/method-call closers like <xref:Foo.Bar(Baz)>), or '-' (--> HTML comment closers)
+                $segment = $segment -replace '(?<![A-Za-z0-9"''/\s\)\-])(?<!\\)>', '\>'
 
                 $processedLine += $segment
             }

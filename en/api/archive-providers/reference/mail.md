@@ -26,7 +26,7 @@ the string in either subject, sender, recipient or date are returned
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |id| *None* |ID: ID of the e-mail|  |
 |status| *None* |Status| x |
@@ -51,4 +51,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

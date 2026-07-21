@@ -30,7 +30,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -57,7 +57,7 @@ Archive provider for the list of favourites
 |currencyId| *None* |Currency ID: The currency list item ID|  |
 |currency| *None* |Currency: The currency of the sale|  |
 |credited| *None* |Credited: The user to be credited with the sale|  |
-|lossReason| *None* |Reason (lost: The reason for losing the sale|  |
+|lossReason| *None* |Reason (lost): The reason for losing the sale|  |
 |source| *None* |Source: The source (lead) of the sale|  |
 |competitor| *None* |Competitor: The competitor who won the sale|  |
 |heading| *None* |Sale: The name of the sale|  |
@@ -76,9 +76,9 @@ Archive provider for the list of favourites
 |stageId| *None* |Sale stage ID: Displays the stage of the sale|  |
 |nextDueDate| *None* |Next activity: Date for next activity for a sale, updated live from the sale's activities|  |
 |reopenDate| *None* |Reopen date: Displays the reopen date for the sale|  |
-|stalledComment| *None* |Reason (stalled: The reason the sale has been stalled|  |
+|stalledComment| *None* |Reason (stalled): The reason the sale has been stalled|  |
 |saleTypeCategory| *None* |Sale type category: Sale type category|  |
-|soldReason| *None* |Reason (sold: Reason (sold)|  |
+|soldReason| *None* |Reason (sold): Reason (sold)|  |
 |saleNumber| *None* |Number: Number|  |
 |hasStakeholders| *None* |Has stakeholders: Does this sale have stakeholders|  |
 |stakeholdersEnabled| *None* |Stakeholders enabled: Possibility to add stakeholders to the sale|  |
@@ -87,8 +87,8 @@ Archive provider for the list of favourites
 |description| *None* |Description: The long description field on Sale|  |
 |activeErpLinks| *None* |ERP connected: Is there an active ERP Sync?|  |
 |createdByWorkflow| *None* |Created by flow: Created by flow|  |
-|amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total|  |
-|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.|  |
+|amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total|  |
+|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.|  |
 |daysInStage| *None* |Days in stage: Total number of days in this stage|  |
 |saleCycle| *None* |Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)|  |
 |entityIcon| *None* |Row specific icon: Row specific icon| x |
@@ -134,7 +134,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/locationAddress| *None* |Location: Location|  |
 |associate/isLocation| *None* |Is a location: Is a location|  |
@@ -161,7 +161,7 @@ Archive provider for the list of favourites
 |code| *None* |Code|  |
 |orgnr| *None* |VAT No.|  |
 |stop| *None* |Stop|  |
-|contactNoMail| *None* |No mailings (company|  |
+|contactNoMail| *None* |No mailings (company)|  |
 |contactSource| *None* |Source: Source (Company)|  |
 |contactDeleted| *None* |Deleted: Deleted|  |
 |phone/formattedNumber| *None* |Phone : Displays phone number|  |
@@ -239,7 +239,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/assocName| *None* |User ID : User ID|  |
 |contactAssociate/assocTooltip| *None* |Description : Description|  |
@@ -344,7 +344,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |kanaFirstName| *None* |First name, kana: Contact's first name, in kana alphabet|  |
 |kanaLastName| *None* |Last name, kana: Contact's last name, in kana alphabet|  |
@@ -449,7 +449,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/title| *None* |Title: Displays whether the contact is addressed as Mr or Ms|  |
 |personAssociate/associateDbId| *None* |ID|  |
@@ -554,7 +554,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |selectionAssociate/contactDepartment| *None* |Owning department: Name of the department at the company the user belongs to|  |
 |selectionAssociate/usergroup| *None* |Primary group: The user's primary user group|  |
@@ -659,7 +659,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/ejUserId| *None* |Service user ID: The database ID of a Service user|  |
 |project/projectAssociate/simultaneousEjUser| *None* |Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
@@ -719,7 +719,7 @@ Archive provider for the list of favourites
 |mailMergeDraft| *None* |Mail merge draft : Indicates whether the document is a mail merge template|  |
 |snum| *None* |Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.|  |
 |isReport| *None* |Report: Is this document a saved report run?|  |
-|suggestedDocumentId| *None* |Document ID (suggestion: The database ID of a document that originates in a suggestion|  |
+|suggestedDocumentId| *None* |Document ID (suggestion): The database ID of a document that originates in a suggestion|  |
 |isMail| *None* |E-mail|  |
 |documentPublish/isPublished| *None* |Published: Displays an icon indicating if the project or sale has been published|  |
 |documentPublish/publishedFrom| *None* |From date: Start date for publishing. The record will not be visible prior to this date|  |
@@ -749,7 +749,7 @@ Archive provider for the list of favourites
 |cautionWarning| *None* |Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.|  |
 |visibleInDiary| *None* |ExcludeBook: Is the activity visible in the diary?|  |
 |endTime| *None* |End time: End time of an activity|  |
-|suggestedAppointmentId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion|  |
+|suggestedAppointmentId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion|  |
 |completedDate| *None* |Completed date: Displays the actual date a follow-up/sale was marked as completed|  |
 |isMilestone| *None* |Milestone: Shows whether or not the follow-ups in this row are milestones|  |
 |invitedPersonId| *None* |ID of invited person: appointment.invitedpersonid record - utility for rd|  |
@@ -764,7 +764,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentUdef/SuperOffice:3| *None* |followupnumber|  |
 |appointmentUdef/SuperOffice:4| *None* |followupdate|  |
@@ -869,7 +869,7 @@ Archive provider for the list of favourites
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownedBy/personId| *None* |Owner - Contact ID: Database ID of the contact row|  |
 |ownedBy/mrMrs| *None* |Owner - Mr/Ms: Displays whether the contact is addressed as Mr or Ms|  |
@@ -932,4 +932,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.
