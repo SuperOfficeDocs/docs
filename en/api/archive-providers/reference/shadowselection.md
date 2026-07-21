@@ -29,7 +29,7 @@ Only the two ID columns are available. The row type is fixed (contact or person)
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactId| *None* |Contact ID: Contact (company) ID|  |
 |personId| *None* |Person ID: Person ID|  |
@@ -45,4 +45,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -22,7 +22,7 @@ Archive of TargetValue - used by .
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -91,7 +91,7 @@ Archive of TargetValue - used by .
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -126,7 +126,7 @@ Archive of TargetValue - used by .
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/county|string|Postal address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 |contact/postAddress/city|string|Postal address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -231,7 +231,7 @@ Archive of TargetValue - used by .
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactSupportAssociate/ejDisplayName|string|Our service contact - Nickname: User's nickname in Service| x |
 |contact/contactSupportAssociate/ejStatus|int|Our service contact - Service status: Status for Service user: Normal; Unavailable / holiday; Deleted; Read-only|  |
@@ -336,7 +336,7 @@ Archive of TargetValue - used by .
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactSupportPerson/personExtra/y\_rental/x\_amount|int|User support contact - Rental - Amount: Number to rent. Default = 1| x |
 |contact/contactSupportPerson/personExtra/y\_rental/x\_contact|stringorPK|User support contact - Rental - Renter: Company that rents equipment| x |
@@ -426,4 +426,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

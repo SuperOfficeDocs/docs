@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | ocid | Country code for sender's company card |

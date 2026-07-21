@@ -32,7 +32,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -54,7 +54,7 @@ as well as before any ORDER BY, are applied.
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -136,7 +136,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/lastName|string|Last name: Displays the contact's last name| x |
 |contactAssociate/middleName|string|Middle Name : Displays the contact's middle name.| x |
@@ -241,7 +241,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/ticketPriority|listAny|User support contact - Service priority: Default service priority for this contact| x |
 |contactSupportPerson/supportLanguage|listAny|User support contact - Preferred language: Preferred language used for reply templates and more| x |
@@ -346,7 +346,7 @@ as well as before any ORDER BY, are applied.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |NumberOfNotCompletedActivities|int|Number of non-completed activities|  |
 |NumberOfNotCompletedActivitiesInPeriod|int|Number of non-completed activities in last 90 days|  |
@@ -389,4 +389,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

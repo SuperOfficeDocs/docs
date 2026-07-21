@@ -28,7 +28,7 @@ the email_id.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -132,7 +132,7 @@ the email_id.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/companyCategoryRank|int|Category rank| x |
 |personContact/business|listAny|Business| x |
@@ -142,7 +142,7 @@ the email_id.
 |personContact/code|string|Code| x |
 |personContact/orgnr|string|VAT No.| x |
 |personContact/stop|bool|Stop| x |
-|personContact/contactNoMail|bool|No mailings (company| x |
+|personContact/contactNoMail|bool|No mailings (company)| x |
 |personContact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |personContact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |personContact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -205,4 +205,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -22,7 +22,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -43,7 +43,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -126,7 +126,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/contactFullName|string|Owner: Name and department of the company the user belongs to| x |
 |contactAssociate/contactCategory|listAny|Category: Category| x |
@@ -231,7 +231,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sourceRelation/updatedByFullName|associate|Source - Updated by - Full name: The user who last updated the data| x |
 |sourceRelation/updatedDate|date|Source - Updated: The date/time the data was last updated in UTC.| x |
@@ -305,7 +305,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |sale/currencyId|int|Currency ID: The currency list item ID| x |
 |sale/currency|listAny|Currency: The currency of the sale| x |
 |sale/credited|listAny|Credited: The user to be credited with the sale| x |
-|sale/lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|sale/lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |sale/source|listAny|Source: The source (lead) of the sale| x |
 |sale/competitor|listAny|Competitor: The competitor who won the sale| x |
 |sale/heading|stringorPK|Sale: The name of the sale| x |
@@ -324,9 +324,9 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |sale/stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |sale/nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |sale/reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|sale/stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|sale/stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |sale/saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|sale/soldReason|listAny|Reason (sold: Reason (sold)| x |
+|sale/soldReason|listAny|Reason (sold): Reason (sold)| x |
 |sale/saleNumber|string|Number: Number| x |
 |sale/hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |sale/stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -336,12 +336,12 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |sale/createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |sale/daysInStage|int|Days in stage: Total number of days in this stage| x |
 |sale/saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |sale/visibleFor|listAny|Visible for|  |
@@ -427,7 +427,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |appointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |appointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |appointment/endTime| *None* |End time: End time of an activity|  |
-|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|appointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |appointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |appointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |appointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -441,7 +441,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/appointmentPublish/publishedTo|date|To date: End date for publishing. The record will not be visible after this date| x |
 |appointment/appointmentPublish/publishedBy| *None* |Published by: Published by|  |
@@ -526,7 +526,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |document/mailMergeDraft|bool|Mail merge draft : Indicates whether the document is a mail merge template| x |
 |document/snum|int|Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.| x |
 |document/isReport|bool|Report: Is this document a saved report run?|  |
-|document/suggestedDocumentId|int|Document ID (suggestion: The database ID of a document that originates in a suggestion| x |
+|document/suggestedDocumentId|int|Document ID (suggestion): The database ID of a document that originates in a suggestion| x |
 |document/isMail|bool|E-mail|  |
 |document/recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)| x |
 |document/visibleFor|listAny|Visible for|  |
@@ -546,7 +546,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |document/associate/contactName|string|Owning company: Name of the company the user belongs to| x |
 |document/associate/contactDepartment|string|Owning department: Name of the department at the company the user belongs to| x |
@@ -651,7 +651,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personEmail/emailAddress|string|E-mail| x |
 |personEmail/emailDescription|string|Description| x |
@@ -756,7 +756,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personCategoryRank|int|Source - !!Category rank| x |
 |personSourceRelation/personBusiness|listAny|Source - Business| x |
@@ -861,7 +861,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/isActive|bool|Active: Is this user active, and should be able to log in?| x |
 |personAssociate/isActiveText|bool|Active status: Is this user active, and should be able to log in?| x |
@@ -966,7 +966,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/sentimentScore|listAny|Sentiment: Sentiment score, -100 to +100|  |
 |request/sentimentConfidence|int|Sentiment confidence: Sentiment confidence| x |
@@ -1071,7 +1071,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/hasInfoText|bool|Info: Displays an icon indicating if the project has a description text. The text itself will be displayed in a tooltip.| x |
 |projectMembers/icon| *None* |Category: Displays the icon for an activity type| x |
@@ -1176,7 +1176,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/type|listAny|Type: Displays the type of an activity| x |
 |personAppointment/recordType|string|Record type : Shows the record type| x |
@@ -1209,7 +1209,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 |personAppointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -1284,4 +1284,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

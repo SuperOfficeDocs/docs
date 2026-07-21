@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -124,7 +124,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/city|string|Search address - City: This criterion corresponds to the City field on the Company card.| x |
 |restrictionAddress/zip|string|Search address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
@@ -229,7 +229,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personPersonRelation|listAny|Source - Contact-to-contact relation: Name of relation, not taking into account the relation direction| x |
 |personTargetRelation/personId|int|Target - DB ID: Displays the database ID of a contact| x |
@@ -334,7 +334,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
 |correspondingAssociate/title|string|Title: Displays whether the contact is addressed as Mr or Ms| x |
@@ -380,7 +380,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 |personContact/code|string|Code| x |
 |personContact/orgnr|string|VAT No.| x |
 |personContact/stop|bool|Stop| x |
-|personContact/contactNoMail|bool|No mailings (company| x |
+|personContact/contactNoMail|bool|No mailings (company)| x |
 |personContact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |personContact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |personContact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -439,7 +439,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/streetAddress/county|string|Street address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 |personContact/streetAddress/city|string|Street address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -544,7 +544,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactSupportPerson/title|string|User support contact - Title: Displays the contact's job title| x |
 |personContact/contactSupportPerson/personCountry|listAny|User support contact - Country: Country| x |
@@ -649,7 +649,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/contactUdef/SuperOffice:10|string|page1marketingonly| x |
 |personContact/contactUdef/SuperOffice:11|string|page1adminonly| x |
@@ -754,7 +754,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/timeToClose|timeSpan|Time to close: Time to close| x |
 |request/realTimeToReply|timeSpan|Real time to reply: Real time to reply| x |
@@ -859,7 +859,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_faq|stringorPK|Extra FAQ Relation: Extra FAQ Relation| x |
 |request/extra/x\_ticket\_category\_relation|listAny|Extra category relation: Category relation on request| x |
@@ -964,7 +964,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/saintAmountClass|listAny|Amount class|  |
 |projectMembers/saintActivityType|listAny|SAINT type|  |
@@ -1009,7 +1009,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 |personAppointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -1069,7 +1069,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/appointment/titleHtml| *None* |!!Title Html| x |
 |personAppointment/appointment/agenda|positiveString|Agenda| x |
@@ -1089,4 +1089,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

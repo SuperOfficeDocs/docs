@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-next-line MD041 -->
 * bat
 * cmd
 * com

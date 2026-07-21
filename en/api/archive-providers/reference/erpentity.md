@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Erp
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ConnectionId| *None* |ERP connection ID: ERP connection ID| x |
 |SearchText| *None* |Search text: Search text| x |
@@ -39,4 +39,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

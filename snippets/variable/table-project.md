@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | pend | The project's end date, formatted 02.11.2025 (system format) |

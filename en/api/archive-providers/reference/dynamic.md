@@ -14,11 +14,11 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Dot
 
 ## Supported Entities
 
-See <xref:rest_api_search_dynamic> for more information.
+See [The Dynamic Provider](../../search/odata/dynamic-provider) for more information.
 
 ## Supported Columns
 
-Columns are defined by the caller. See <xref:rest_api_search_dynamic> for more information.
+Columns are defined by the caller. See [The Dynamic Provider](../../search/odata/dynamic-provider) for more information.
 
 ## Sample
 
@@ -30,4 +30,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -22,7 +22,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -54,9 +54,9 @@ Shadow contact provider for the dynamic quoteline provider.
 |quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -68,7 +68,7 @@ Shadow contact provider for the dynamic quoteline provider.
 |productTypeKey|listExternal|Product type: The type of product|  |
 |status|listAny|Quote status: Status field showing the status of each line.| x |
 |subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 |totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 |alternative/quoteAlternativeId|int|QuoteAlternative ID: SuperOffice database ID of the quote alternative record| x |
@@ -126,7 +126,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/date|date|Sale - Date: Displays start date of a follow-up / sale date of a sale| x |
 |alternative/version/quote/sale/time| *None* |Sale - Time: Time|  |
@@ -179,8 +179,8 @@ Shadow contact provider for the dynamic quoteline provider.
 |alternative/version/quote/sale/description|string|Sale - Description: The long description field on Sale|  |
 |alternative/version/quote/sale/activeErpLinks|bool|Sale - ERP connected: Is there an active ERP Sync?| x |
 |alternative/version/quote/sale/createdByWorkflow|listAny|Sale - Created by flow: Created by flow| x |
-|alternative/version/quote/sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency: The gross sales total| x |
-|alternative/version/quote/sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|alternative/version/quote/sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency): The gross sales total| x |
+|alternative/version/quote/sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |alternative/version/quote/sale/daysInStage|int|Sale - Days in stage: Total number of days in this stage| x |
 |alternative/version/quote/sale/saleCycle|int|Sale - Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |alternative/version/quote/sale/visibleFor|listAny|Sale - Visible for|  |
@@ -231,7 +231,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personCategoryGroup|listAny|Sale - Category group| x |
 |alternative/version/quote/sale/person/personCategoryRank|int|Sale - !!Category rank| x |
@@ -336,7 +336,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personAssociate/fullName|string|Sale - Full name: Displays full name of user (first, middle, last - according to settings)| x |
 |alternative/version/quote/sale/person/personAssociate/contactId|int|Sale - Company ID: Database ID of the company the user belongs to|  |
@@ -441,7 +441,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/activeErpLinks|bool|Sale - ERP connected: Is there an active ERP Sync?| x |
 |alternative/version/quote/sale/contact/deletedDate|datetime|Sale - Deleted date: Deleted date|  |
@@ -546,7 +546,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:11|string|Sale - page1adminonly| x |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:12|listAny|Sale - Udlist one: Static tooltip for udlist one| x |
@@ -651,7 +651,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/icon| *None* |Sale - Project - Category: Displays the icon for an activity type| x |
 |alternative/version/quote/sale/project/text|string|Sale - Project - Text: Displays a descriptive text for the item| x |
@@ -756,7 +756,7 @@ Shadow contact provider for the dynamic quoteline provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/extraData|string|ERP connection - Extra data: XML encoded data.| x |
 |alternative/version/quote/connection/updatedBy|associate|ERP connection - Updated by: The user who last updated the data| x |
@@ -793,4 +793,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -41,7 +41,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -124,7 +124,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/middleName|string|Middle Name : Displays the contact's middle name.| x |
 |contactAssociate/fullName|string|Full name: Displays full name of user (first, middle, last - according to settings)| x |
@@ -229,7 +229,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/supportLanguage|listAny|User support contact - Preferred language: Preferred language used for reply templates and more| x |
 |contactSupportPerson/supportAssociate|associate|User support contact - Our service contact: Default service contact for this contact| x |
@@ -334,7 +334,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sim
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |NumberOfNotCompletedActivitiesInPeriod|int|Number of non-completed activities in last 90 days|  |
 |LastActivity|date|Date of last activity|  |
@@ -376,4 +376,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

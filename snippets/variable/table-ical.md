@@ -1,7 +1,6 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
-| bate | Formatted list of people invited to a meeting, created for iCal<br>ATTENDEE;RSVP=TRUE;CN="First Invited":MAILTO:;PARTSTAT=ACCEPTED<br>ATTENDEE;RSVP=TRUE;CN="Test Testesen":MAILTO:test@SuperOffice.com;PARTSTAT=TENTATIVE |
+| bate | Formatted list of people invited to a meeting, created for iCal<br/>ATTENDEE;RSVP=TRUE;CN="First Invited":MAILTO:;PARTSTAT=ACCEPTED<br/>ATTENDEE;RSVP=TRUE;CN="Test Testesen":MAILTO:test@SuperOffice.com;PARTSTAT=TENTATIVE |
 | bpat | The main feature of the meeting's repeating pattern, formatted like the Daily pattern "FREQ=DAILY;", for example |
 | bprt | The priority of the meeting, converted to iCal format: our 1 = iCal 9, our 2 = iCal 5 (default), our 3 = iCal 1 |
 | brul | The entire meeting's repeating pattern, formatted as "RRULE:" + bpat + bsub + bunt |

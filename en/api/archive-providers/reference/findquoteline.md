@@ -22,7 +22,7 @@ QuoteLine provider for Find
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -52,9 +52,9 @@ QuoteLine provider for Find
 |quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -66,7 +66,7 @@ QuoteLine provider for Find
 |productTypeKey|listExternal|Product type: The type of product|  |
 |status|listAny|Quote status: Status field showing the status of each line.| x |
 |subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 |totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 |alternative/quoteAlternativeId|int|QuoteAlternative ID: SuperOffice database ID of the quote alternative record| x |
@@ -126,7 +126,7 @@ QuoteLine provider for Find
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/type|listAny|Sale - Type: Displays the type of an activity| x |
 |alternative/version/quote/sale/recordType|string|Sale - Record type: Shows the record type| x |
@@ -177,8 +177,8 @@ QuoteLine provider for Find
 |alternative/version/quote/sale/description|string|Sale - Description: The long description field on Sale|  |
 |alternative/version/quote/sale/activeErpLinks|bool|Sale - ERP connected: Is there an active ERP Sync?| x |
 |alternative/version/quote/sale/createdByWorkflow|listAny|Sale - Created by flow: Created by flow| x |
-|alternative/version/quote/sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency: The gross sales total| x |
-|alternative/version/quote/sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|alternative/version/quote/sale/amountInBaseCurrency| *None* |Sale - Amount (BaseCurrency): The gross sales total| x |
+|alternative/version/quote/sale/amountWeightedInBaseCurrency| *None* |Sale - Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |alternative/version/quote/sale/daysInStage|int|Sale - Days in stage: Total number of days in this stage| x |
 |alternative/version/quote/sale/saleCycle|int|Sale - Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |alternative/version/quote/sale/visibleFor|listAny|Sale - Visible for|  |
@@ -231,7 +231,7 @@ QuoteLine provider for Find
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personBusiness|listAny|Sale - Business| x |
 |alternative/version/quote/sale/person/leadStatus|listAny|Sale - Lead status| x |
@@ -336,7 +336,7 @@ QuoteLine provider for Find
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/person/personAssociate/personId|int|Sale - Contact ID: Database ID of the contact row|  |
 |alternative/version/quote/sale/person/personAssociate/mrMrs|string|Sale - Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
@@ -441,7 +441,7 @@ QuoteLine provider for Find
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/mainContact| *None* |Sale - Main contact: Main contact for this company| x |
 |alternative/version/quote/sale/contact/forceCompany|bool|Sale - Dummy: Dummy|  |
@@ -546,7 +546,7 @@ QuoteLine provider for Find
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/contact/contactUdef/SuperOffice:13|listAny|Sale - Udlist two: Static tooltip for udlist two| x |
 |alternative/version/quote/sale/contact/contactExtra/x\_contact\_integer|int|Sale - Extra Integer: Custom integer field| x |
@@ -651,7 +651,7 @@ QuoteLine provider for Find
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/sale/project/description|string|Sale - Project - Description: Description| x |
 |alternative/version/quote/sale/project/updatedBy|associate|Sale - Project - Updated by: The user who last updated the data| x |
@@ -756,7 +756,7 @@ QuoteLine provider for Find
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |alternative/version/quote/connection/updatedDate|date|ERP connection - Updated: The date/time the data was last updated in UTC.| x |
 |alternative/version/quote/connection/registeredBy|associate|ERP connection - Registered by: The user who registered the data| x |
@@ -791,4 +791,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

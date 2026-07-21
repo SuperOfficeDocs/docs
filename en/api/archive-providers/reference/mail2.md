@@ -22,7 +22,7 @@ Provides populated mail envelope rows as an archive
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -126,7 +126,7 @@ Provides populated mail envelope rows as an archive
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailProtocol|string|Protocol: E-mail protocol, such as SMTP| x |
 |person/email/emailAddress|string|E-mail| x |
@@ -231,7 +231,7 @@ Provides populated mail envelope rows as an archive
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/personEmail|string|E-mail| x |
 |person/personAssociate/locationAddress|string|Location: Location| x |
@@ -296,7 +296,7 @@ Provides populated mail envelope rows as an archive
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -336,7 +336,7 @@ Provides populated mail envelope rows as an archive
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
 |contact/postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
@@ -441,7 +441,7 @@ Provides populated mail envelope rows as an archive
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/NumberOfSales|int|Number of sales|  |
 |contact/NumberOfSalesInPeriod|int|Number of sales in last 90 days|  |
@@ -510,4 +510,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

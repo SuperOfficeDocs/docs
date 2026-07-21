@@ -20,7 +20,7 @@ The name of the MDO list is 'appointmenttask'.
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|Set to true to get icon hints in format diary_color_<colorIndex>| colorIconHints|false|
+|Set to true to get icon hints in format `diary_color_<colorIndex>`| colorIconHints|false|
 
 ## Sample Request
 

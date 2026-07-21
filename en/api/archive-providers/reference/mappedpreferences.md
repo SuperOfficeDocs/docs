@@ -25,7 +25,7 @@ Anything else needs to be coded!
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |userpreferenceId|int|Database ID: The database ID of the row in the userpreference table| x |
 |deflevel|int|Level: The level at which the preference is defined; closest-to-the-user wins| x |
@@ -49,4 +49,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

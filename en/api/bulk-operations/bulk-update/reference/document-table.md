@@ -107,8 +107,7 @@ Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
                 <p>Clear = 1/1/0001 12:00:00 AM</p>
             </td>
             <td>
-                <p>DocumentAppointment.ActiveDate<br />DocumentAppointment.EndDate<br />DocumentAppointment.DoBy<br />DocumentAppointment.Done
-                </p>
+                <p>DocumentAppointment.ActiveDate<br />DocumentAppointment.EndDate<br />DocumentAppointment.DoBy<br />DocumentAppointment.Done</p>
             </td>
         </tr>
         <tr>

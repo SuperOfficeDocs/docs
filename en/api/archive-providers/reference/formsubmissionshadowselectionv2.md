@@ -22,7 +22,7 @@ Shadow contact provider for the FormSubmission provider.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -126,7 +126,7 @@ Shadow contact provider for the FormSubmission provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/leadstatusRank|int|!!Lead status RANK| x |
 |person/personDeletedDate|datetime|Deleted date: Deleted date|  |
@@ -231,7 +231,7 @@ Shadow contact provider for the FormSubmission provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/title|string|Title: Displays whether the contact is addressed as Mr or Ms| x |
 |person/personAssociate/associateDbId|associate|ID| x |
@@ -319,7 +319,7 @@ Shadow contact provider for the FormSubmission provider.
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -336,7 +336,7 @@ Shadow contact provider for the FormSubmission provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactPhone/formattedNumber|string|Telephone - Phone: Displays phone number|  |
 |contact/contactPhone/description|string|Telephone - Description: Phone number description| x |
@@ -441,7 +441,7 @@ Shadow contact provider for the FormSubmission provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_hidden\_integer|int|Extra hidden integer: Custom integer field - hidden| x |
 |contact/contactExtra/x\_contact\_default\_integer|int|Extra Default Integer: Custom integer field with default value 123.| x |
@@ -505,4 +505,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

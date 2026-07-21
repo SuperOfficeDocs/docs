@@ -25,7 +25,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -129,7 +129,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |restrictionAddress/city|string|Search address - City: This criterion corresponds to the City field on the Company card.| x |
 |restrictionAddress/zip|string|Search address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
@@ -234,7 +234,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/personPersonRelation|listAny|Source - Contact-to-contact relation: Name of relation, not taking into account the relation direction| x |
 |personTargetRelation/personId|int|Target - DB ID: Displays the database ID of a contact| x |
@@ -339,7 +339,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |correspondingAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
 |correspondingAssociate/title|string|Title: Displays whether the contact is addressed as Mr or Ms| x |
@@ -385,7 +385,7 @@ table data; this will also pull in contact udef and related fields.
 |personContact/code|string|Code| x |
 |personContact/orgnr|string|VAT No.| x |
 |personContact/stop|bool|Stop| x |
-|personContact/contactNoMail|bool|No mailings (company| x |
+|personContact/contactNoMail|bool|No mailings (company)| x |
 |personContact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |personContact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |personContact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -444,7 +444,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |personContact/restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
@@ -549,7 +549,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/createdByWorkflow|listAny|Created by flow: Created by flow| x |
 |request/createdBy/firstName|string|Created by - First name: Displays the contact's first name| x |
@@ -654,7 +654,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/description|string|Description : Description| x |
 |projectMembers/updatedBy|associate|Updated by: The user who last updated the data| x |
@@ -759,7 +759,7 @@ table data; this will also pull in contact udef and related fields.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/associateId|associate|ID: Displays the login ID of the associate who owns the activity.| x |
 |personAppointment/contactId|listAny|Company ID: Database ID of company| x |
@@ -789,7 +789,7 @@ table data; this will also pull in contact udef and related fields.
 |personAppointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -864,4 +864,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

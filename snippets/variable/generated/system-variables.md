@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Property Name | Tag | Description |
 |---------------|-----|-------------|
 | ActiveFeatureToggles | feat | All active feature toggle names from the config file: "AppDynamics,NewInbox" |
@@ -30,7 +29,7 @@
 | MailGatewayDisplayName | mgdn | Name of Gateway that stores a copy of outgoing messages on the system |
 | MailGatewayMailAddress | mgma | Address of Gateway that stores a copy of outgoing messages on the system |
 | NetServerSecret | usec | NetServer Base64 encoded secret. Send this as username or as the ticket to reauthenticate within 6 hours |
-| OwnerCompanyName | iocn | License Info: Company name associate with license. NOTE: The database owner of <b>this</b> database can be different, if this is a satellite |
+| OwnerCompanyName | iocn | License Info: Company name associate with license. NOTE: The database owner of **this** database can be different, if this is a satellite |
 | Platform | pltf | Platform where substitution occurred: web (NetServer) or win |
 | SerialNumber | ser# | SOCRM serial number: "101000006" |
 | SoArcPath | ptha | SO_Arc path (from SuperOffice.ini) |

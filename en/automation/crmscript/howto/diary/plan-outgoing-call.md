@@ -70,6 +70,6 @@ appointmentAgent.UpdateAppointment(88, start, end.addMin(20), 0, 0, 5);
 [1]: <xref:CRMScript.NetServer.NSAppointmentAgent>
 [2]: <xref:CRMScript.NetServer.NSAppointmentEntity>
 [3]: <xref:CRMScript.NetServer.NSTaskListItem>
-[4]: <xref:CRMScript.NetServer.NSAppointmentAgent.UpdateAppointment(Integer,Integer,Integer,Integer)\>
+[4]: <xref:CRMScript.NetServer.NSAppointmentAgent.UpdateAppointment(Integer,Integer,Integer,Integer)>
 [5]: ../../../../database/tables/task
 [6]: ../../../../diary/learn/follow-ups#call

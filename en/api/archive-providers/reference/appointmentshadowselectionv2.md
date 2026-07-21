@@ -22,7 +22,7 @@ Shadow contact provider for the appointment provider.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -61,7 +61,7 @@ Shadow contact provider for the appointment provider.
 |cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |endTime| *None* |End time: End time of an activity|  |
-|suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -91,7 +91,7 @@ Shadow contact provider for the appointment provider.
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -126,7 +126,7 @@ Shadow contact provider for the appointment provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/postAddress/county|string|Postal address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 |contact/postAddress/city|string|Postal address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -231,7 +231,7 @@ Shadow contact provider for the appointment provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/NumberOfNotCompletedActivities|int|Number of non-completed activities|  |
 |contact/NumberOfNotCompletedActivitiesInPeriod|int|Number of non-completed activities in last 90 days|  |
@@ -336,7 +336,7 @@ Shadow contact provider for the appointment provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/email/emailId|int|ID| x |
 |person/email/emailLastSent|datetime|Last sent: The date and time an e-mail was last sent to this address| x |
@@ -441,7 +441,7 @@ Shadow contact provider for the appointment provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/correspondingAssociate/firstName|string|First name: Displays the contact's first name| x |
 |person/correspondingAssociate/lastName|string|Last name: Displays the contact's last name| x |
@@ -546,7 +546,7 @@ Shadow contact provider for the appointment provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectAssociate/contactCategory|listAny|Category: Category| x |
 |project/projectAssociate/role|listAny|Role : Role| x |
@@ -624,7 +624,7 @@ Shadow contact provider for the appointment provider.
 |sale/currencyId|int|Currency ID: The currency list item ID| x |
 |sale/currency|listAny|Currency: The currency of the sale| x |
 |sale/credited|listAny|Credited: The user to be credited with the sale| x |
-|sale/lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|sale/lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |sale/source|listAny|Source: The source (lead) of the sale| x |
 |sale/competitor|listAny|Competitor: The competitor who won the sale| x |
 |sale/heading|stringorPK|Sale: The name of the sale| x |
@@ -643,15 +643,15 @@ Shadow contact provider for the appointment provider.
 |sale/stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |sale/nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |sale/reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|sale/stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|sale/stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |sale/saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|sale/soldReason|listAny|Reason (sold: Reason (sold)| x |
+|sale/soldReason|listAny|Reason (sold): Reason (sold)| x |
 |sale/saleNumber|string|Number: Number| x |
 |sale/hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |sale/stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
 |sale/hasQuote|bool|Has quote?: Does the sale have a quote attached?| x |
@@ -659,8 +659,8 @@ Shadow contact provider for the appointment provider.
 |sale/description|string|Description: The long description field on Sale|  |
 |sale/activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |sale/createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |sale/daysInStage|int|Days in stage: Total number of days in this stage| x |
 |sale/saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |sale/visibleFor|listAny|Visible for|  |
@@ -756,7 +756,7 @@ Shadow contact provider for the appointment provider.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointment/internalNotesHtml|positiveString|!!Internal Notes Html| x |
 |selectionId|int|Selection ID: The database ID of the selection|  |
@@ -776,4 +776,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

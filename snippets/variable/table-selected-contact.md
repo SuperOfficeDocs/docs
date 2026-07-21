@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | abdt | Date of birth |
@@ -6,7 +5,7 @@
 | achi | The contact's chat address, ID (hidden, unique ID) |
 | achp | The contact's chat address protocol |
 | acid | Contact's country code |
-| acit | Postal town. (See also acsz) |
+| acit | Postal town. (See also acsz) |
 | acnt | County (for UK addresses) |
 | acsz | Postal town, state/province, and postcode (for example Bedford, MA 01730) |
 | act? | Country (if different from the sender's country) |
@@ -25,7 +24,7 @@
 | apho | The contact's phone number |
 | as01-49 | User-defined field 1-49 of the text type |
 | asal | Academic title (salutation) |
-| asta | State/province. (See also acsz) |
+| asta | State/province. (See also acsz) |
 | atei | The contact's primary email address, ID (hidden, unique ID) |
 | atem | The contact's primary email address. If no email address is recorded for the contact, the company's email address is used |
 | atfa | Direct fax (Attention Fax) |
@@ -54,4 +53,4 @@
 | avos | The sender's VOIP service (description) |
 | awwi | The contact's primary web address, ID (hidden, unique ID) |
 | awww | The contact's primary web address |
-| azip | Postcode. (See also acsz) |
+| azip | Postcode. (See also acsz) |

@@ -20,10 +20,10 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Quo
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |name| *None* |Name: Name (from code) of the Quote Connector| x |
-|className| *None* |Class name (C#: The name of C# type that implements the Quote Connector| x |
+|className| *None* |Class name (C#): The name of C# type that implements the Quote Connector| x |
 |assemblyName| *None* |Assembly name: Name of the DLL ('assembly') the Quote Connector has been loaded from| x |
 |location| *None* |Source: The source that the Quote Connector was loaded from| x |
 |filename| *None* |File name | x |
@@ -40,4 +40,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

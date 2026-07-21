@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Arc
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -124,7 +124,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Arc
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociateId|associate|Our contact: Displays our contact| x |
 |person/personAssociateFullName|associate|Our contact - Full name: Displays our contact| x |
@@ -229,7 +229,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Arc
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personAssociate/firstName|string|First name: Displays the contact's first name| x |
 |person/personAssociate/lastName|string|Last name: Displays the contact's last name| x |
@@ -324,7 +324,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Arc
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -334,7 +334,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Arc
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactSource|listAny|Source: Source (Company)| x |
 |contact/contactDeleted|bool|Deleted: Deleted| x |
@@ -439,7 +439,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Arc
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:8|decimal|companydecimal| x |
 |contact/contactUdef/SuperOffice:9|string|page1saleonly| x |
@@ -510,4 +510,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

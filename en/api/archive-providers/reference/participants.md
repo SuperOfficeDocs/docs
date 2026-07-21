@@ -47,12 +47,7 @@ If you provide either an appointmentRestrictionId or startTime/EndTime, then con
 detected. However, if the appointment is of type Free, then no conflict detetction will occur. To force
 'free' behaviour on an under-construction appointment that does not have an appointment id, or
 on an appointment that is being changed, include this restriction with the value true. That will turn off
-conflict detection.</description></item><!--
-<item><term>dateInformation</term><description>Dates of multiple appointments, override the date part of startTimeInformation and endTimeInformation.
-Needed when fetching
-data through the explicit restrictions (not appointmentRestrictionId) and if you want collision detection on
-multiple (such as recurring) occasions.</description></item>
---\></list>
+conflict detection.</description></item></list>
 If you do not use the appointmentRestrictionId, you can instead specify
 external persons by a list (use the IN operator) of externalPersonRestrictionId,
 internal associates through a list of associateRestrictionId, and resources through resourceRestrictionId.
@@ -84,7 +79,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownerAssociateIdInformation|associate|Owner's Associate ID: Associate ID of the user specified as owner of the follow-up|  |
 |inhibitConflictsInformation|bool|No conflict checking: This restriction is used to turn off conflict checking in the participants list|  |
@@ -188,7 +183,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |email/emailAddress|string|E-mail|  |
 |email/emailDescription|string|Description|  |
@@ -216,7 +211,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 |personContact/code| *None* |Code|  |
 |personContact/orgnr| *None* |VAT No.|  |
 |personContact/stop| *None* |Stop|  |
-|personContact/contactNoMail| *None* |No mailings (company|  |
+|personContact/contactNoMail| *None* |No mailings (company)|  |
 |personContact/updatedBy| *None* |Updated by: The user who last updated the data|  |
 |personContact/updatedByFullName| *None* |Updated by - Full name: The user who last updated the data|  |
 |personContact/updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
@@ -260,4 +255,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

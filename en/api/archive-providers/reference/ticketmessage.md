@@ -22,7 +22,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -126,7 +126,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/createdBy/locationAddress|string|Request - Created by - Location: Location| x |
 |ticket/createdBy/isLocation|bool|Request - Created by - Is a location: Is a location| x |
@@ -231,7 +231,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/person/personPrivate/formattedNumber|string|Request - Private - Phone: Displays phone number|  |
 |ticket/person/personPrivate/description|string|Request - Private - Description: Phone number description| x |
@@ -336,7 +336,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/person/personAssociate/simultaneousEjUser|bool|Request - Simultaneous Service user: If this flag is set, then the user will only have access if the maximum number of simultaneous users is not exceeded|  |
 |ticket/person/personAssociate/ejDisplayName|string|Request - Nickname: User's nickname in Service| x |
@@ -441,7 +441,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/contact/email/emailHasBounced|bool|Request - Has bounced: This checkbox is active if delivery to this e-mail address has failed.| x |
 |ticket/contact/postAddress/addressId|int|Request - Postal address - Address ID: Database ID for the address record| x |
@@ -546,7 +546,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/contact/contactExtra/x\_contact\_request\_relation|stringorPK|Request - Extra Request relation: Request relation on company| x |
 |ticket/contact/contactExtra/x\_contact\_contact|stringorPK|Request - Extra contact relation: Contact relation on company| x |
@@ -651,12 +651,12 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/sale/activeErpLinks|bool|Request - ERP connected: Is there an active ERP Sync?| x |
 |ticket/sale/createdByWorkflow|listAny|Request - Created by flow: Created by flow| x |
-|ticket/sale/amountInBaseCurrency| *None* |Request - Amount (BaseCurrency: The gross sales total| x |
-|ticket/sale/amountWeightedInBaseCurrency| *None* |Request - Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|ticket/sale/amountInBaseCurrency| *None* |Request - Amount (BaseCurrency): The gross sales total| x |
+|ticket/sale/amountWeightedInBaseCurrency| *None* |Request - Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |ticket/sale/daysInStage|int|Request - Days in stage: Total number of days in this stage| x |
 |ticket/sale/saleCycle|int|Request - Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |ticket/sale/visibleFor|listAny|Request - Visible for|  |
@@ -756,7 +756,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ticket/project/projectAssociate/usergroup|userGroup|Request - Primary group: The user's primary user group| x |
 |ticket/project/projectAssociate/usergroupId|int|Request - Group ID: The user's primary user group| x |
@@ -861,7 +861,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personBusiness|listAny|Contact - Business| x |
 |person/leadStatus|listAny|Contact - Lead status| x |
@@ -894,4 +894,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

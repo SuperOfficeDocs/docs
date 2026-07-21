@@ -22,7 +22,7 @@ Archive provider for the list of mailings
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -126,7 +126,7 @@ Archive provider for the list of mailings
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/streetAddress/county|string|Company - Street address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.| x |
 |mailingAddr/contact/streetAddress/city|string|Company - Street address - City: This criterion corresponds to the City field on the Company card.| x |
@@ -231,7 +231,7 @@ Archive provider for the list of mailings
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/NumberOfTickets|int|Company - Number of requests|  |
 |mailingAddr/contact/NumberOfTicketsInPeriod|int|Company - Number of requests in last 90 days|  |
@@ -336,7 +336,7 @@ Archive provider for the list of mailings
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAddress/city|string|Contact - Contact address - City: This criterion corresponds to the City field on the Company card.| x |
 |mailingAddr/person/personAddress/zip|string|Contact - Contact address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
@@ -441,7 +441,7 @@ Archive provider for the list of mailings
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/correspondingAssociate/usergroupId|int|Contact - Group ID: The user's primary user group| x |
 |mailingAddr/person/correspondingAssociate/contactFullName|string|Contact - Owner: Name and department of the company the user belongs to| x |
@@ -546,7 +546,7 @@ Archive provider for the list of mailings
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowAssociate/contactCategory|listAny|Owner - Category: Category| x |
 |emailFlow/workflowAssociate/role|listAny|Owner - Role: Role| x |
@@ -651,7 +651,7 @@ Archive provider for the list of mailings
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUdef/SuperOffice:9|int|page1saleandmarketing| x |
 |project/projectUdef/SuperOffice:10|int|page1saleandadmin| x |
@@ -691,4 +691,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

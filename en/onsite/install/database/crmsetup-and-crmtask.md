@@ -30,7 +30,7 @@ The HTML-based argument generators are also available online - no download requi
 
 Open the link, fill in your values, and copy the generated argument file content directly - or generate argument files for the command line tool.
 
-You can also use <a href="../../../../assets/downloads/so11config_generators.zip" download><a href="../../../../assets/downloads/so11config_generators.zip" download>local HTML-based argument generators</a>. The zip file contains two HTML files, one for each utility. Just unzip them and run locally.
+You can also use <a href="../../../../assets/downloads/so11config_generators.zip" download>local HTML-based argument generators</a>. The zip file contains two HTML files, one for each utility. Just unzip them and run locally.
 
 ## CrmSetup
 

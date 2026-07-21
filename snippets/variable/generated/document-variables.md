@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Property Name | Tag | Description |
 |---------------|-----|-------------|
 | AppointmentId | apid | Appointment ID |

@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -117,14 +117,14 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |registeredBy|associate|Registered by: The user who registered the data| x |
 |registeredByFullName|associate|Registered by - Full name: The user who registered the data| x |
@@ -229,7 +229,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personSourceRelation/portraitThumbnail| *None* |Source - Person image: Person image|  |
 |personSourceRelation/personActiveErpLinks|bool|Source - ERP connected: Is there an active ERP Sync?| x |
@@ -334,7 +334,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAssociate/role|listAny|Role : Role| x |
 |personAssociate/assocName|associate|User ID : User ID| x |
@@ -439,7 +439,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/contactName|string|Owning company: Name of the company the user belongs to| x |
 |contactAssociate/contactDepartment|string|Owning department: Name of the department at the company the user belongs to| x |
@@ -544,7 +544,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/timeSpent|timeSpan|Time spent: Time spent| x |
 |request/timeToReply|timeSpan|Time to reply: Time to reply| x |
@@ -649,7 +649,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |request/extra/x\_ticket\_timestamp|datetime|Extra timestamp: Custom date time field on ticket with default = current date + time. Field cannot change. Hide field| x |
 |request/extra/x\_ticket\_project\_relation|stringorPK|Extra project: Custom project relation on Request| x |
@@ -754,7 +754,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |projectMembers/SaintStatus3|saintStatus|Not completed activites with intention sale: Number of not completed activities for intention sale > 0.|  |
 |projectMembers/saintSaleStatus|listAny|With status|  |
@@ -801,7 +801,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 |personAppointment/cautionWarning|listAny|Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.| x |
 |personAppointment/visibleInDiary|bool|ExcludeBook: Is the activity visible in the diary?| x |
 |personAppointment/endTime| *None* |End time: End time of an activity|  |
-|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion| x |
+|personAppointment/suggestedAppointmentId|int|Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion| x |
 |personAppointment/completedDate|date|Completed date: Displays the actual date a follow-up/sale was marked as completed| x |
 |personAppointment/isMilestone|bool|Milestone: Shows whether or not the follow-ups in this row are milestones| x |
 |personAppointment/invitedPersonId|int|ID of invited person: appointment.invitedpersonid record - utility for rd| x |
@@ -859,7 +859,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sel
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personAppointment/appointment/description|positiveString|Text: Displays the text entered in the description field| x |
 |personAppointment/appointment/title|positiveString|Title| x |
@@ -881,4 +881,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

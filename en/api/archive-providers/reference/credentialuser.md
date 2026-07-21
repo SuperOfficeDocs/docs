@@ -19,7 +19,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Cre
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 
 ## Sample
@@ -32,4 +32,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -24,7 +24,7 @@ Lists all email flow content
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -128,7 +128,7 @@ Lists all email flow content
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |shipment/emailFlow/workflowAssociate/usergroup| *None* |Owner - Primary group: The user's primary user group|  |
 |shipment/emailFlow/workflowAssociate/usergroupId| *None* |Owner - Group ID: The user's primary user group|  |
@@ -233,7 +233,7 @@ Lists all email flow content
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |shipment/project/projectUdef/SuperOffice:6| *None* |projectcheckbox|  |
 |shipment/project/projectUdef/SuperOffice:7| *None* |projectdropdownlistbox|  |
@@ -279,4 +279,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

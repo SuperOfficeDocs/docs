@@ -31,7 +31,7 @@ the email_id.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -135,7 +135,7 @@ the email_id.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |personContact/companyCategoryRank| *None* |Category rank|  |
 |personContact/business| *None* |Business|  |
@@ -145,7 +145,7 @@ the email_id.
 |personContact/code| *None* |Code|  |
 |personContact/orgnr| *None* |VAT No.|  |
 |personContact/stop| *None* |Stop|  |
-|personContact/contactNoMail| *None* |No mailings (company|  |
+|personContact/contactNoMail| *None* |No mailings (company)|  |
 |personContact/updatedBy| *None* |Updated by: The user who last updated the data|  |
 |personContact/updatedByFullName| *None* |Updated by - Full name: The user who last updated the data|  |
 |personContact/updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
@@ -211,7 +211,7 @@ the email_id.
 |code| *None* |Code|  |
 |orgnr| *None* |VAT No.|  |
 |stop| *None* |Stop|  |
-|contactNoMail| *None* |No mailings (company|  |
+|contactNoMail| *None* |No mailings (company)|  |
 |updatedBy| *None* |Updated by: The user who last updated the data|  |
 |updatedByFullName| *None* |Updated by - Full name: The user who last updated the data|  |
 |updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
@@ -240,7 +240,7 @@ the email_id.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |email/emailHasBounced| *None* |Has bounced: This checkbox is active if delivery to this e-mail address has failed.|  |
 |postAddress/addressId| *None* |Postal address - Address ID: Database ID for the address record|  |
@@ -345,7 +345,7 @@ the email_id.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportAssociate/assocName| *None* |Our service contact - User ID: User ID|  |
 |contactSupportAssociate/assocTooltip| *None* |Our service contact - Description: Description|  |
@@ -450,7 +450,7 @@ the email_id.
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/personExtra/x\_person\_appointment\_relation| *None* |User support contact - Extra appointment relation: Appointment relation on person|  |
 |contactSupportPerson/personExtra/x\_person\_contact\_relation| *None* |User support contact - Extra company relation: Company relation on contact|  |
@@ -545,4 +545,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

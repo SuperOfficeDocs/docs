@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Variable | Description |
 |---|---|
 | qsqa | Subscription quantity (Blank if not subscription) |

@@ -1,4 +1,3 @@
-<!-- markdownlint-disable-file MD041 -->
 | Merge field tag | Name | Description |
 |---|---|---|
 | line/code | Code | The product or article code. This code is created to help you quickly find products you offer regularly. |
@@ -24,7 +23,7 @@
 | line/quantity | Quantity | The amount that is offered |
 | line/quantityUnit | Unit | The unit of the product that is offered. |
 | line/quoteAlternativeId | Alternative ID | The database identity of the quote alternative |
-| Image:line/quoteLineThumbnail | Thumbnail | A miniature version of the product picture – _*note the **Image:** prefix*, without it you will get a **lot** of funny letters and digits |
+| Image:line/quoteLineThumbnail | Thumbnail | A miniature version of the product picture - _*note the **Image:** prefix*, without it you will get a **lot** of funny letters and digits |
 | line/rank | Rank | Shows the rank of a quote line |
 | line/status | Quote status | Status field showing the status of each line. |
 | line/subTotal | SubTotal | List price \* Quantity, and if the quote line is a subscription, we also multiply in the SubscriptionQuantity. |
@@ -35,7 +34,7 @@
 | line/supplierCode | Supplier code | Supplier code |
 | line/totalPrice | Total | SubTotal - Discount Amount |
 | line/totalPriceIncVAT | Total inc VAT | TotalPrice + VAT |
-| line/totalPriceWithAlternativeDiscount | Total with alternative discount | TotalPrice \* (1 – (Alternative.DiscountPercent / 100)) |
+| line/totalPriceWithAlternativeDiscount | Total with alternative discount | TotalPrice \* (1 - (Alternative.DiscountPercent / 100)) |
 | line/unitCost | Cost | Cost per item. |
 | line/unitListPrice | Unit list price | List price of a unit |
 | line/unitListPriceSubscriptionQuantity | Subscription unit list price | Unit price \* subscription quantity |

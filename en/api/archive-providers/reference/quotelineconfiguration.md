@@ -21,7 +21,7 @@ Criteria search for ErpProduct. Potentially goes out to external quote connector
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 
 ## Sample
@@ -34,4 +34,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

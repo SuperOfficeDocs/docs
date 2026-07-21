@@ -27,7 +27,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -38,12 +38,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |stageName|string|Stage: Name of sale stages| x |
 |stageId|int|Stage ID: Database ID of a sale stage.| x |
 |stageOrderBy|int|Sort order for stages: Sort algorithm for sales stages| x |
-|suggestedItemId|int|Database ID (suggestion: The database ID of an entity (follow-up or document) that originates in a suggestion| x |
-|suggestedItemText|string|Name of entity (suggestion: The name of an entity (follow-up or document) that originates in a suggestion| x |
+|suggestedItemId|int|Database ID (suggestion): The database ID of an entity (follow-up or document) that originates in a suggestion| x |
+|suggestedItemText|string|Name of entity (suggestion): The name of an entity (follow-up or document) that originates in a suggestion| x |
 |suggestedItemOrderBy|int|Sort order for suggestions: Sort algorithm for suggestions| x |
 |suggestedItemTooltip|string|Description: Description of a suggested item| x |
-|instanceItemId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion|  |
-|instanceItemText| *None* |Instance name (suggestion: Description of a follow-up or heading in a document that originates in a suggestion|  |
+|instanceItemId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion|  |
+|instanceItemText| *None* |Instance name (suggestion): Description of a follow-up or heading in a document that originates in a suggestion|  |
 |hasInstance| *None* |Has instance: Does this suggested item have an instance?|  |
 |deleted|bool|Deleted: Has this suggestion been deleted by the administrator?| x |
 |isMilestone| *None* |Milestone: Shows whether or not the follow-ups in this row are milestones|  |
@@ -82,7 +82,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/cautionWarning| *None* |Warning: Warning for invitations with potential problems: not properly synchronized with an external calendar, unsupported repetition pattern, e-mail notification failed, or other problems.|  |
 |appointmentInstance/visibleInDiary| *None* |ExcludeBook: Is the activity visible in the diary?|  |
 |appointmentInstance/endTime| *None* |End time: End time of an activity|  |
-|appointmentInstance/suggestedAppointmentId| *None* |Follow-up ID (suggestion: The database ID of a follow-up that originates in a suggestion|  |
+|appointmentInstance/suggestedAppointmentId| *None* |Follow-up ID (suggestion): The database ID of a follow-up that originates in a suggestion|  |
 |appointmentInstance/completedDate| *None* |Completed date: Displays the actual date a follow-up/sale was marked as completed|  |
 |appointmentInstance/isMilestone| *None* |Milestone: Shows whether or not the follow-ups in this row are milestones|  |
 |appointmentInstance/invitedPersonId| *None* |ID of invited person: appointment.invitedpersonid record - utility for rd|  |
@@ -112,7 +112,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/contact/code| *None* |Code|  |
 |appointmentInstance/contact/orgnr| *None* |VAT No.|  |
 |appointmentInstance/contact/stop| *None* |Stop|  |
-|appointmentInstance/contact/contactNoMail| *None* |No mailings (company|  |
+|appointmentInstance/contact/contactNoMail| *None* |No mailings (company)|  |
 |appointmentInstance/contact/updatedBy| *None* |Updated by: The user who last updated the data|  |
 |appointmentInstance/contact/updatedByFullName| *None* |Updated by - Full name: The user who last updated the data|  |
 |appointmentInstance/contact/updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
@@ -131,7 +131,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactFax/formattedNumber| *None* |Fax - Phone: Displays phone number|  |
 |appointmentInstance/contact/contactFax/description| *None* |Fax - Description: Phone number description|  |
@@ -236,7 +236,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/contact/contactExtra/x\_contact\_float| *None* |Extra Float: Custom float field with 3 decimals|  |
 |appointmentInstance/contact/contactExtra/x\_contact\_longtext| *None* |Extra LongText: Custom long text field. DO not keep HTML. 3 Line text area editor|  |
@@ -341,7 +341,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personDirectPhone/description| *None* |Direct - Description: Phone number description|  |
 |appointmentInstance/person/personMobilePhone/formattedNumber| *None* |Mobile - Phone: Displays phone number|  |
@@ -446,7 +446,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/person/personAssociate/assocTooltip| *None* |Description : Description|  |
 |appointmentInstance/person/personAssociate/assocType| *None* |Type: Type of user: associate, external user, system user, anonymous account|  |
@@ -551,7 +551,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/project/projectUrl/URLAddress| *None* |URL|  |
 |appointmentInstance/project/projectUrl/URLDescription| *None* |Description|  |
@@ -645,7 +645,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/sale/currencyId| *None* |Currency ID: The currency list item ID|  |
 |appointmentInstance/sale/currency| *None* |Currency: The currency of the sale|  |
 |appointmentInstance/sale/credited| *None* |Credited: The user to be credited with the sale|  |
-|appointmentInstance/sale/lossReason| *None* |Reason (lost: The reason for losing the sale|  |
+|appointmentInstance/sale/lossReason| *None* |Reason (lost): The reason for losing the sale|  |
 |appointmentInstance/sale/source| *None* |Source: The source (lead) of the sale|  |
 |appointmentInstance/sale/competitor| *None* |Competitor: The competitor who won the sale|  |
 |appointmentInstance/sale/heading| *None* |Sale: The name of the sale|  |
@@ -656,7 +656,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/sale/probPercent| *None* |Probability as %: Probability as %|  |
 |appointmentInstance/sale/originalStage| *None* |Stage when closed: Stage when closed|  |
@@ -669,9 +669,9 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/sale/stageId| *None* |Sale stage ID: Displays the stage of the sale|  |
 |appointmentInstance/sale/nextDueDate| *None* |Next activity: Date for next activity for a sale, updated live from the sale's activities|  |
 |appointmentInstance/sale/reopenDate| *None* |Reopen date: Displays the reopen date for the sale|  |
-|appointmentInstance/sale/stalledComment| *None* |Reason (stalled: The reason the sale has been stalled|  |
+|appointmentInstance/sale/stalledComment| *None* |Reason (stalled): The reason the sale has been stalled|  |
 |appointmentInstance/sale/saleTypeCategory| *None* |Sale type category: Sale type category|  |
-|appointmentInstance/sale/soldReason| *None* |Reason (sold: Reason (sold)|  |
+|appointmentInstance/sale/soldReason| *None* |Reason (sold): Reason (sold)|  |
 |appointmentInstance/sale/saleNumber| *None* |Number: Number|  |
 |appointmentInstance/sale/hasStakeholders| *None* |Has stakeholders: Does this sale have stakeholders|  |
 |appointmentInstance/sale/stakeholdersEnabled| *None* |Stakeholders enabled: Possibility to add stakeholders to the sale|  |
@@ -680,8 +680,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |appointmentInstance/sale/description| *None* |Description: The long description field on Sale|  |
 |appointmentInstance/sale/activeErpLinks| *None* |ERP connected: Is there an active ERP Sync?|  |
 |appointmentInstance/sale/createdByWorkflow| *None* |Created by flow: Created by flow|  |
-|appointmentInstance/sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total|  |
-|appointmentInstance/sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.|  |
+|appointmentInstance/sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total|  |
+|appointmentInstance/sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.|  |
 |appointmentInstance/sale/daysInStage| *None* |Days in stage: Total number of days in this stage|  |
 |appointmentInstance/sale/saleCycle| *None* |Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)|  |
 |appointmentInstance/sale/visibleFor| *None* |Visible for|  |
@@ -761,7 +761,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |appointmentInstance/associate/isActiveText| *None* |Active status: Is this user active, and should be able to log in?|  |
 |appointmentInstance/associate/portraitThumbnail| *None* |Person image: Person image|  |
@@ -810,7 +810,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/mailMergeDraft| *None* |Mail merge draft : Indicates whether the document is a mail merge template|  |
 |documentInstance/snum| *None* |Document number: Serial number of document. It can be generated by the number allocation system for a dedicated document template.|  |
 |documentInstance/isReport| *None* |Report: Is this document a saved report run?|  |
-|documentInstance/suggestedDocumentId| *None* |Document ID (suggestion: The database ID of a document that originates in a suggestion|  |
+|documentInstance/suggestedDocumentId| *None* |Document ID (suggestion): The database ID of a document that originates in a suggestion|  |
 |documentInstance/isMail| *None* |E-mail|  |
 |documentInstance/recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)|  |
 |documentInstance/visibleFor| *None* |Visible for|  |
@@ -866,7 +866,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/leadStatus| *None* |Lead status|  |
 |documentInstance/person/leadstatusRank| *None* |!!Lead status RANK|  |
@@ -971,7 +971,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/person/personAssociate/mrMrs| *None* |Mr/Ms: Displays whether the contact is addressed as Mr or Ms|  |
 |documentInstance/person/personAssociate/title| *None* |Title: Displays whether the contact is addressed as Mr or Ms|  |
@@ -1060,7 +1060,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/contact/code| *None* |Code|  |
 |documentInstance/contact/orgnr| *None* |VAT No.|  |
 |documentInstance/contact/stop| *None* |Stop|  |
-|documentInstance/contact/contactNoMail| *None* |No mailings (company|  |
+|documentInstance/contact/contactNoMail| *None* |No mailings (company)|  |
 |documentInstance/contact/updatedBy| *None* |Updated by: The user who last updated the data|  |
 |documentInstance/contact/updatedByFullName| *None* |Updated by - Full name: The user who last updated the data|  |
 |documentInstance/contact/updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
@@ -1076,7 +1076,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/forceCompany| *None* |Dummy: Dummy|  |
 |documentInstance/contact/contactPhone/formattedNumber| *None* |Telephone - Phone: Displays phone number|  |
@@ -1181,7 +1181,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/contact/contactExtra/x\_contact\_integer| *None* |Extra Integer: Custom integer field|  |
 |documentInstance/contact/contactExtra/x\_contact\_hidden\_integer| *None* |Extra hidden integer: Custom integer field - hidden|  |
@@ -1286,7 +1286,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/project/projectAssociate/assocType| *None* |Type: Type of user: associate, external user, system user, anonymous account|  |
 |documentInstance/project/projectAssociate/ejUserId| *None* |Service user ID: The database ID of a Service user|  |
@@ -1391,7 +1391,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |documentInstance/sale/projectId| *None* |Project ID: Database ID of project record|  |
 |documentInstance/sale/saleId| *None* |Sale ID: The database ID of the sale record|  |
@@ -1406,7 +1406,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/sale/currencyId| *None* |Currency ID: The currency list item ID|  |
 |documentInstance/sale/currency| *None* |Currency: The currency of the sale|  |
 |documentInstance/sale/credited| *None* |Credited: The user to be credited with the sale|  |
-|documentInstance/sale/lossReason| *None* |Reason (lost: The reason for losing the sale|  |
+|documentInstance/sale/lossReason| *None* |Reason (lost): The reason for losing the sale|  |
 |documentInstance/sale/source| *None* |Source: The source (lead) of the sale|  |
 |documentInstance/sale/competitor| *None* |Competitor: The competitor who won the sale|  |
 |documentInstance/sale/heading| *None* |Sale: The name of the sale|  |
@@ -1425,9 +1425,9 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/sale/stageId| *None* |Sale stage ID: Displays the stage of the sale|  |
 |documentInstance/sale/nextDueDate| *None* |Next activity: Date for next activity for a sale, updated live from the sale's activities|  |
 |documentInstance/sale/reopenDate| *None* |Reopen date: Displays the reopen date for the sale|  |
-|documentInstance/sale/stalledComment| *None* |Reason (stalled: The reason the sale has been stalled|  |
+|documentInstance/sale/stalledComment| *None* |Reason (stalled): The reason the sale has been stalled|  |
 |documentInstance/sale/saleTypeCategory| *None* |Sale type category: Sale type category|  |
-|documentInstance/sale/soldReason| *None* |Reason (sold: Reason (sold)|  |
+|documentInstance/sale/soldReason| *None* |Reason (sold): Reason (sold)|  |
 |documentInstance/sale/saleNumber| *None* |Number: Number|  |
 |documentInstance/sale/hasStakeholders| *None* |Has stakeholders: Does this sale have stakeholders|  |
 |documentInstance/sale/stakeholdersEnabled| *None* |Stakeholders enabled: Possibility to add stakeholders to the sale|  |
@@ -1436,8 +1436,8 @@ This provider is a trivial aggregation of the Appointment and Document providers
 |documentInstance/sale/description| *None* |Description: The long description field on Sale|  |
 |documentInstance/sale/activeErpLinks| *None* |ERP connected: Is there an active ERP Sync?|  |
 |documentInstance/sale/createdByWorkflow| *None* |Created by flow: Created by flow|  |
-|documentInstance/sale/amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total|  |
-|documentInstance/sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.|  |
+|documentInstance/sale/amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total|  |
+|documentInstance/sale/amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.|  |
 |documentInstance/sale/daysInStage| *None* |Days in stage: Total number of days in this stage|  |
 |documentInstance/sale/saleCycle| *None* |Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)|  |
 |documentInstance/sale/visibleFor| *None* |Visible for|  |
@@ -1501,4 +1501,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

@@ -42,7 +42,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -146,7 +146,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/streetAddress/line3| *None* |Company - Street address - Address 3: Third line of the address|  |
 |mailingAddr/contact/streetAddress/county| *None* |Company - Street address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.|  |
@@ -251,7 +251,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/contact/LastDoBySale| *None* |Company - Date of last non-completed sale|  |
 |mailingAddr/contact/NumberOfTickets| *None* |Company - Number of requests|  |
@@ -356,7 +356,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/personAddress/county| *None* |Contact - Contact address - County: This criterion corresponds to the County field on the Company card. It will only be visible if required by a country's address format.|  |
 |mailingAddr/person/personAddress/city| *None* |Contact - Contact address - City: This criterion corresponds to the City field on the Company card.|  |
@@ -461,7 +461,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |mailingAddr/person/correspondingAssociate/usergroup| *None* |Contact - Primary group: The user's primary user group|  |
 |mailingAddr/person/correspondingAssociate/usergroupId| *None* |Contact - Group ID: The user's primary user group|  |
@@ -566,7 +566,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |emailFlow/workflowAssociate/contactFullName| *None* |Owner - Owner: Name and department of the company the user belongs to|  |
 |emailFlow/workflowAssociate/contactCategory| *None* |Owner - Category: Category|  |
@@ -671,7 +671,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/projectUdef/SuperOffice:8| *None* |projectdecimal|  |
 |project/projectUdef/SuperOffice:9| *None* |page1saleandmarketing|  |
@@ -712,4 +712,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

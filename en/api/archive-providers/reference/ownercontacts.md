@@ -22,7 +22,7 @@ Archive provider for the list of own contacts in SoAdmin
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -45,7 +45,7 @@ Archive provider for the list of own contacts in SoAdmin
 |code|string|Code| x |
 |orgnr|string|VAT No.| x |
 |stop|bool|Stop| x |
-|contactNoMail|bool|No mailings (company| x |
+|contactNoMail|bool|No mailings (company)| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -126,7 +126,7 @@ Archive provider for the list of own contacts in SoAdmin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactAssociate/firstName|string|First name: Displays the contact's first name| x |
 |contactAssociate/lastName|string|Last name: Displays the contact's last name| x |
@@ -231,7 +231,7 @@ Archive provider for the list of own contacts in SoAdmin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contactSupportPerson/personActiveErpLinks|bool|User support contact - ERP connected: Is there an active ERP Sync?| x |
 |contactSupportPerson/ticketPriority|listAny|User support contact - Service priority: Default service priority for this contact| x |
@@ -336,7 +336,7 @@ Archive provider for the list of own contacts in SoAdmin
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |NumberOfActivitiesInPeriod|int|Number of activities in last 90 days|  |
 |NumberOfNotCompletedActivities|int|Number of non-completed activities|  |
@@ -380,4 +380,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

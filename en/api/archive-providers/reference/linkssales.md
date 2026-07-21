@@ -22,7 +22,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -58,7 +58,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 |currencyId|int|Currency ID: The currency list item ID| x |
 |currency|listAny|Currency: The currency of the sale| x |
 |credited|listAny|Credited: The user to be credited with the sale| x |
-|lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |source|listAny|Source: The source (lead) of the sale| x |
 |competitor|listAny|Competitor: The competitor who won the sale| x |
 |heading|stringorPK|Sale: The name of the sale| x |
@@ -77,9 +77,9 @@ Link data provider for sales, handles both addressing by source or by destinatio
 |stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|soldReason|listAny|Reason (sold: Reason (sold)| x |
+|soldReason|listAny|Reason (sold): Reason (sold)| x |
 |saleNumber|string|Number: Number| x |
 |hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -88,8 +88,8 @@ Link data provider for sales, handles both addressing by source or by destinatio
 |description|string|Description: The long description field on Sale|  |
 |activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |daysInStage|int|Days in stage: Total number of days in this stage| x |
 |saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |visibleFor|listAny|Visible for|  |
@@ -126,7 +126,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/birthDay|int|Birth day: Displays contact's birth day (day of month)| x |
 |person/kanaFirstName|string|First name, kana: Contact's first name, in kana alphabet| x |
@@ -231,7 +231,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |person/personExtra/x\_person\_shorttext|string|Extra short text: Custom short text on person. With index. Do not keep HTML tags| x |
 |person/personExtra/x\_person\_shorttext\_list|listAny|Extra short dropdown: Custom Short text dropdown field on person: black, white, transparent| x |
@@ -336,7 +336,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/companyCategoryRank|int|Category rank| x |
 |contact/business|listAny|Business| x |
@@ -346,7 +346,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 |contact/code|string|Code| x |
 |contact/orgnr|string|VAT No.| x |
 |contact/stop|bool|Stop| x |
-|contact/contactNoMail|bool|No mailings (company| x |
+|contact/contactNoMail|bool|No mailings (company)| x |
 |contact/updatedBy|associate|Updated by: The user who last updated the data| x |
 |contact/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |contact/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -441,7 +441,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |contact/contactAssociate/isActiveText|bool|Active status: Is this user active, and should be able to log in?| x |
 |contact/contactAssociate/portraitThumbnail| *None* |Person image: Person image|  |
@@ -546,7 +546,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/isLocation|bool|Is a location: Is a location| x |
 |saleUdef/SuperOffice:1|string|saleshorttext| x |
@@ -651,7 +651,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |project/LastDoBySale|date|Date of last non-completed sale|  |
 |project/SaintStatus3|saintStatus|Not completed activites with intention sale: Number of not completed activities for intention sale > 0.|  |
@@ -756,7 +756,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/personAddress/city|string|Stakeholder - Contact address - City: This criterion corresponds to the City field on the Company card.| x |
 |saleStakeholder/person/personAddress/zip|string|Stakeholder - Contact address - Postcode: This criterion corresponds to the Zip Code field on the Company card.| x |
@@ -861,7 +861,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/person/correspondingAssociate/usergroupId|int|Stakeholder - Group ID: The user's primary user group| x |
 |saleStakeholder/person/correspondingAssociate/contactFullName|string|Stakeholder - Owner: Name and department of the company the user belongs to| x |
@@ -966,7 +966,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/restrictionAddress/addressId|int|Stakeholder - Search address - Address ID: Database ID for the address record| x |
 |saleStakeholder/contact/restrictionAddress/line1|string|Stakeholder - Search address - Address 1: First line of the address| x |
@@ -1071,7 +1071,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |saleStakeholder/contact/SaintStatus2|saintStatus|Stakeholder - C-company: Kundens navn starter med bokstaven C|  |
 |saleStakeholder/contact/saintSaleStatus|listAny|Stakeholder - With status|  |
@@ -1157,9 +1157,9 @@ Link data provider for sales, handles both addressing by source or by destinatio
 |quote/version/alternative/quoteline/quoteLineThumbnail| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/quoteLineThumbnailLarge| *None* |Thumbnail: A miniature version of the product picture|  |
 |quote/version/alternative/quoteline/discountAmount|decimal|Discount: Discount amount given by salesperson| x |
-|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%: Discount percent given by salesperson| x |
+|quote/version/alternative/quoteline/discountPercent|decimal|Discount (%): Discount percent given by salesperson| x |
 |quote/version/alternative/quoteline/earningAmount|decimal|Earnings: Amount of Earnings (Total - Cost) on the line, after discount| x |
-|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%: Percentage Earnings on the line (Total - Cost / Total), after discount| x |
+|quote/version/alternative/quoteline/earningPercent|decimal|Earnings (%): Percentage Earnings on the line (Total - Cost / Total), after discount| x |
 |quote/version/alternative/quoteline/updatedBy|associate|Updated by: The user who last updated the data| x |
 |quote/version/alternative/quoteline/updatedByFullName|associate|Updated by - Full name: The user who last updated the data| x |
 |quote/version/alternative/quoteline/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
@@ -1171,12 +1171,12 @@ Link data provider for sales, handles both addressing by source or by destinatio
 |quote/version/alternative/quoteline/productTypeKey|listExternal|Product type: The type of product|  |
 |quote/version/alternative/quoteline/status|listAny|Quote status: Status field showing the status of each line.| x |
 |quote/version/alternative/quoteline/subTotal|decimal|Sum: Sum of Quantity * Unit list price| x |
-|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount: The calculated VAT amount| x |
+|quote/version/alternative/quoteline/vatAmount|decimal|VAT (amount): The calculated VAT amount| x |
 |quote/version/alternative/quoteline/totalPriceIncVAT|decimal|Total incl. VAT: Total including VAT| x |
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |quote/version/alternative/quoteline/totalPriceWithAlternativeDiscount|decimal|Total incl. alt. disc: Total, including any discount percentage set on the alternative| x |
 |destinationSaleRestrictionId|int|Destination sale ID: IDs of sales which are linked to|  |
@@ -1191,4 +1191,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

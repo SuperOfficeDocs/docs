@@ -31,7 +31,7 @@ is an MDO provider for supported entities.
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |ownerEntityName|listAny|Owner: Owner (type) of freetext match| x |
 |count| *None* |Count: Number of matches for a certain owner entity| x |
@@ -48,4 +48,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.

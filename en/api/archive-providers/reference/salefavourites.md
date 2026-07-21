@@ -20,7 +20,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
@@ -47,7 +47,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |currencyId|int|Currency ID: The currency list item ID| x |
 |currency|listAny|Currency: The currency of the sale| x |
 |credited|listAny|Credited: The user to be credited with the sale| x |
-|lossReason|listAny|Reason (lost: The reason for losing the sale| x |
+|lossReason|listAny|Reason (lost): The reason for losing the sale| x |
 |source|listAny|Source: The source (lead) of the sale| x |
 |competitor|listAny|Competitor: The competitor who won the sale| x |
 |heading|stringorPK|Sale: The name of the sale| x |
@@ -66,9 +66,9 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |stageId| *None* |Sale stage ID: Displays the stage of the sale| x |
 |nextDueDate|date|Next activity: Date for next activity for a sale, updated live from the sale's activities| x |
 |reopenDate|date|Reopen date: Displays the reopen date for the sale| x |
-|stalledComment|listAny|Reason (stalled: The reason the sale has been stalled| x |
+|stalledComment|listAny|Reason (stalled): The reason the sale has been stalled| x |
 |saleTypeCategory|listAny|Sale type category: Sale type category| x |
-|soldReason|listAny|Reason (sold: Reason (sold)| x |
+|soldReason|listAny|Reason (sold): Reason (sold)| x |
 |saleNumber|string|Number: Number| x |
 |hasStakeholders|bool|Has stakeholders: Does this sale have stakeholders| x |
 |stakeholdersEnabled|bool|Stakeholders enabled: Possibility to add stakeholders to the sale| x |
@@ -77,8 +77,8 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 |description|string|Description: The long description field on Sale|  |
 |activeErpLinks|bool|ERP connected: Is there an active ERP Sync?| x |
 |createdByWorkflow|listAny|Created by flow: Created by flow| x |
-|amountInBaseCurrency| *None* |Amount (BaseCurrency: The gross sales total| x |
-|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency: Virtual field calculated from amount * probability percent.| x |
+|amountInBaseCurrency| *None* |Amount (BaseCurrency): The gross sales total| x |
+|amountWeightedInBaseCurrency| *None* |Weighted amount (BaseCurrency): Virtual field calculated from amount * probability percent.| x |
 |daysInStage|int|Days in stage: Total number of days in this stage| x |
 |saleCycle|int|Sale cycle: Number of days from a sale was registered until it was closed (sold or lost)| x |
 |entityIcon| *None* |Row specific icon: Row specific icon| x |
@@ -124,7 +124,7 @@ This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Sal
 
 ## Supported Columns (cont.)
 
-| Name | Restriction | Description | OrderBy
+| Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |associate/locationAddress|string|Location: Location| x |
 |associate/isLocation|bool|Is a location: Is a location| x |
@@ -147,4 +147,4 @@ Accept-Language: sv
 
 ```
 
-See also: `IArchiveAgent`.</p>
+See also: `IArchiveAgent`.
