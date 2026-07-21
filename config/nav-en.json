@@ -2677,8 +2677,7 @@
                     "pages": [
                       "en/api/plugins/erp-connectors/architecture/sync-service",
                       "en/api/plugins/erp-connectors/architecture/soap-service",
-                      "en/api/plugins/erp-connectors/architecture/wcf-host",
-                      "en/api/plugins/erp-connectors/architecture/wcf-host#multi-hosting"
+                      "en/api/plugins/erp-connectors/architecture/wcf-host"
                     ]
                   },
                   {
