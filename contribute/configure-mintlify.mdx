@@ -20,12 +20,14 @@ docs.json                        # theme, fonts, navbar, footer, and $ref pointe
 config/
   navigation.json                # languages[] shell + global.anchors
   redirects.json                 # the full redirects array
-  nav-en.json                    # English tabs; 4 of them are further $ref'd out below
+  nav-en.json                    # English tabs; 6 of them are further $ref'd out below
   nav-da.json / nav-de.json / nav-nl.json / nav-no.json / nav-sv.json
   nav-mobile.json                # Mobile tab's groups
   nav-integrations.json          # Integrations tab's groups
   nav-releases.json              # Release Notes tab's groups
   nav-database-tables.json       # Developer guide > Database > Reference group's pages (generated)
+  nav-archive-providers.json     # Developer guide > API > Search APIs > Archive provider reference group's pages (generated)
+  nav-mdo-providers.json         # Developer guide > API > Search APIs > MDO provider reference group's pages (generated)
 ```
 
 ## How `$ref` resolves
@@ -49,7 +51,7 @@ Refs can chain - a file you land in after following one `$ref` can contain its o
 
 ## Modular navigation
 
-`navigation` splits in two stages. First, each language's `tabs` array moves to its own `config/nav-<lang>.json`, leaving only `{"language": ..., "tabs": {"$ref": ...}}` in `config/navigation.json`. Second, within English specifically, four sections that are either large or machine-generated move one level further into their own files: Mobile, Integrations, and Release Notes (large, frequently-edited tabs), plus the database-tables reference (`nav-database-tables.json`, generated from the DB schema pipeline - future generated API references will follow the same pattern). Everything else in `nav-en.json` - Home, Guides, Online, the rest of Developer guide, Contribute - stays inline.
+`navigation` splits in two stages. First, each language's `tabs` array moves to its own `config/nav-<lang>.json`, leaving only `{"language": ..., "tabs": {"$ref": ...}}` in `config/navigation.json`. Second, within English specifically, six sections that are either large or machine-generated move one level further into their own files: Mobile, Integrations, and Release Notes (large, frequently-edited tabs), plus the database-tables reference and the archive-provider/MDO-provider references (`nav-database-tables.json`, `nav-archive-providers.json`, `nav-mdo-providers.json` - all generated from their respective pipelines). Everything else in `nav-en.json` - Home, Guides, Online, the rest of Developer guide, Contribute - stays inline.
 
 ## Editing navigation
 
@@ -62,6 +64,7 @@ Find the right file before editing:
 | Fill in or insert a menu item's `groups` (any language, including English tabs not split further) | `tools/splice-nav-groups.py` against the relevant `config/nav-<lang>.json` |
 | Edit Mobile, Integrations, or Release Notes content | `config/nav-mobile.json`, `config/nav-integrations.json`, or `config/nav-releases.json` directly |
 | Regenerate the database-tables reference | whatever produces `config/nav-database-tables.json`'s `pages` array (DB schema pipeline) |
+| Regenerate the archive-provider or MDO-provider reference | whatever produces `config/nav-archive-providers.json` / `config/nav-mdo-providers.json`'s `pages` arrays |
 | Anything else in `docs.json` (theme, fonts, navbar, footer) | `docs.json` directly - only `navigation` and `redirects` are split out |
 
 ## Editing redirects
