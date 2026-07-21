@@ -108,12 +108,12 @@ eJournal can insert person records with `contact_id` = 0; these are invisible in
 
 A Customer Service user is an associate but has an extra record in the table `ejuser`.
 
-[1]: ../../docs/en/database/tables/saletypecat
-[2]: ../../docs/en/database/tables/saletype
-[3]: ../../docs/en/database/tables/reasonstalled
-[4]: ../../docs/en/database/tables/reasonsold
-[5]: ../../docs/en/database/tables/salestakeholder
-[6]: ../../docs/en/database/tables/saletypestagelink
-[7]: ../../docs/en/database/tables/stakeholderrole
-[8]: ../../docs/en/database/tables/suggestedappointment
-[9]: ../../docs/en/database/tables/suggesteddocument
+[1]: ../../en/database/tables/saletypecat
+[2]: ../../en/database/tables/saletype
+[3]: ../../en/database/tables/reasonstalled
+[4]: ../../en/database/tables/reasonsold
+[5]: ../../en/database/tables/salestakeholder
+[6]: ../../en/database/tables/saletypestagelink
+[7]: ../../en/database/tables/stakeholderrole
+[8]: ../../en/database/tables/suggestedappointment
+[9]: ../../en/database/tables/suggesteddocument

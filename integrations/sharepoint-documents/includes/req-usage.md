@@ -2,4 +2,4 @@
   * Microsoft Entra authentication of users. For more info, see [IDP authentication][2].
 * ALL users with user plan must be in the same Microsoft Entra subscription as the one used during set up.
 
-[2]: ../../../docs/en/online/identity/federated-id-and-identity-providers
+[2]: ../../../en/online/identity/federated-id-and-identity-providers

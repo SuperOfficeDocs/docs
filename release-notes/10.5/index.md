@@ -143,10 +143,10 @@ We use **pilot programs** to assess how well the features and functions meet our
 [9]: https://community.superoffice.com/en/product-releases/whats-new/product/
 [10]: https://community.superoffice.com/en/product-releases/release-notes/
 [11]: ../../integrations/superoffice-for-outlook/index
-[12]: ../../docs/en/mobile/index
+[12]: ../../en/mobile/index
 [13]: ../integrations/sofo/6.0-update
-[14]: ../../docs/en/learn/index.yml
-[16]: ../../docs/en/developer-portal/analytics/logs
+[14]: ../../en/learn/index.yml
+[16]: ../../en/developer-portal/analytics/logs
 [17]: ./admin/10.5.2-update#split-request
 [18]: ./admin/10.5.2-update#close-request
 [19]: ./core-crm/10.5.2-update
@@ -155,5 +155,5 @@ We use **pilot programs** to assess how well the features and functions meet our
 [22]: ./admin/10.5.5-update
 [23]: ./core-crm/10.5.5-update
 [24]: ./service/10.5.5-update
-[25]: ../../docs/en/developer-portal/widgets/index#publish-status
+[25]: ../../en/developer-portal/widgets/index#publish-status
 [26]: https://appstore.superoffice.com/superoffice-as/activity-folders-for-superoffice

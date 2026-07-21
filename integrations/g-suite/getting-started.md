@@ -59,7 +59,7 @@ This guide explains in short terms how you can get Google Workspace document int
 Now, you need to [link templates][6] in SuperOffice Settings and maintenance to start using the integration. Remember to set both **Store template in** and **Document stored in** to "Google".
 
 [2]: https://id.superoffice.com/identityprovider/register
-[3]: ../../docs/en/online/identity/superid/howto/register-idp
+[3]: ../../en/online/identity/superid/howto/register-idp
 [4]: https://cloudintegration.superoffice.com/app
 [5]: ./set-up
-[6]: ../../docs/en/document/templates/index
+[6]: ../../en/document/templates/index

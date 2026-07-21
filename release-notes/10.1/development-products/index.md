@@ -18,5 +18,5 @@ content_type: release-note
 * [Development Tools][12]
 
 [1]: ./10.1.2-update
-[11]: ../../../docs/en/admin/license/expander-services
-[12]: ../../../docs/en/admin/license/expander-services#tools
+[11]: ../../../en/admin/license/expander-services
+[12]: ../../../en/admin/license/expander-services#tools

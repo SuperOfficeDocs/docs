@@ -37,5 +37,5 @@ We have also added new fields on several tables and increased field length on ot
 
 Read more about changes in the database from [7.5 to 8.0][2].
 
-[1]: ../../docs/en/database/dictionary/index
+[1]: ../../en/database/dictionary/index
 [2]: ./changes-75-80

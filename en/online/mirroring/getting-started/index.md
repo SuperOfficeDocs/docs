@@ -36,7 +36,7 @@ Data Mirroring Service is a copy of your data stored at a location of your choic
 
 With application details registered, it's time to create a web service that implements the IMirrorClientService and IMirrorAdmin interfaces. There are three options:
 
-* Implement the service from <a href="../../../../assets/downloads/dbmirroring-wsdl.zip" download>WSDL files</a>.
+* Implement the service from <a href="../../../../downloads/dbmirroring-wsdl.zip" download>WSDL files</a>.
 * Add a [.NET nuget package][4] to a WCF Service application project.
 * Clone or download the [database mirror service repository from GitHub][11].
   * This is a 'ready-to-go' .NET solution that only needs to be compiled and deployed.

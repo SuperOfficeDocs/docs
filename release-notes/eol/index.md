@@ -65,10 +65,10 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 [15]: ./reports
 [16]: ./service-compact-mode
 [17]: https://appstore.superoffice.com/superoffice-as/superoffice-mobile-crm
-[21]: ../../docs/en/email/inbox/learn/index
-[22]: ../../docs/en/customization/screen-designer/admin/index
-[23]: ../../docs/en/api/web-services/endpoints/rest-webapi/index
-[24]: ../../docs/en/online/identity/superid/sign-in-services
+[21]: ../../en/email/inbox/learn/index
+[22]: ../../en/customization/screen-designer/admin/index
+[23]: ../../en/api/web-services/endpoints/rest-webapi/index
+[24]: ../../en/online/identity/superid/sign-in-services
 [25]: ../../integrations/sharepoint-documents/migrate/index
-[26]: ../../docs/en/search-options/selection/learn/index
-[27]: ../../docs/en/dashboard/learn/index
+[26]: ../../en/search-options/selection/learn/index
+[27]: ../../en/dashboard/learn/index
