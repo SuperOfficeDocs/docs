@@ -5768,6 +5768,10 @@
     "destination": "/en/ui/web-app/pagebuilder/usercontrols/sotextbox/add-textbox-to-navigator"
   },
   {
+    "source": "/en/ui/web-app/tutorials/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/ui/web-app/tutorials"
+  },
+  {
     "source": "/en/ui/web-panels/add-web-panel",
     "destination": "/en/customization/web-panels/admin/add-web-panel"
   },
