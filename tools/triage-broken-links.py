@@ -214,29 +214,26 @@ def resolve_target(source_file, raw_target, tracked_exact, tracked_lower):
                 parts.append(part)
         base = "/".join(parts)
 
+    # Always try every plausible candidate rather than branching on "does
+    # this look like it already has an extension" -- that heuristic is
+    # fragile: Path(...).suffix only looks at the LAST dot, so a
+    # dotted-but-extensionless slug like "changes-10.1.2" or "changes-9.2"
+    # (real release-notes page names) reads as having extension ".2", which
+    # made the resolver skip trying "<base>.md" entirely and wrongly report
+    # "not found" for pages that exist. Trying the literal path plus every
+    # .md/.mdx/index variant unconditionally costs a few extra dict lookups
+    # but can't produce a wrong answer -- at most one candidate matches.
+    candidates = [
+        base,
+        f"{base}.mdx",
+        f"{base}.md",
+        f"{base}/index.mdx",
+        f"{base}/index.md",
+    ]
     suffix = Path(base).suffix.lower()
-    # ANY existing extension means "check literally" -- not just page-like
-    # ones. A narrower whitelist here previously mishandled non-page
-    # extensions (.cs, .js, .vb, .http, .config, ...), e.g. code-sample
-    # includes like "includes/foo.cs?range=1-10", by wrongly trying
-    # foo.cs.mdx/foo.cs.md/foo.cs/index.mdx candidates instead of just
-    # checking "foo.cs" itself -- producing false "not found" results.
-    has_ext = bool(suffix)
-    if has_ext:
-        candidates = [base]
-        # .md/.mdx targets are frequently stale from the DocFx->Mintlify
-        # migration (real file renamed, link left with the old extension,
-        # or vice versa) -- try the sibling before giving up.
-        if suffix in (".md", ".mdx"):
-            sibling_suffix = ".mdx" if suffix == ".md" else ".md"
-            candidates.append(str(Path(base).with_suffix(sibling_suffix)).replace("\\", "/"))
-    else:
-        candidates = [
-            f"{base}.mdx",
-            f"{base}.md",
-            f"{base}/index.mdx",
-            f"{base}/index.md",
-        ]
+    if suffix in (".md", ".mdx"):
+        sibling_suffix = ".mdx" if suffix == ".md" else ".md"
+        candidates.append(str(Path(base).with_suffix(sibling_suffix)).replace("\\", "/"))
 
     for cand in candidates:
         if cand in tracked_exact:
