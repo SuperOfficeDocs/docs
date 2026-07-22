@@ -329,7 +329,17 @@ using(SoSession newSession = SoSession.Authenticate("sam", "sam"))
 
 If we wish to retrieve the details of the members in the selection we need to use the `ArchiveAgent`. After authenticating, set the parameters like below.
 
-[!code-csharp[CS](includes/get-members-services-3.cs?range=10,13,16-17,20-21,24,27,30)]
+```csharp CS
+  string archiveProviderName = SelectionProvider.ProviderName;
+  string[] archiveColumns = new string[] { "contactId", "name", "selectionId" };
+  ArchiveOrderByInfo[] archiveSrtOrd = new ArchiveOrderByInfo[1];
+  archiveSrtOrd[0] = new ArchiveOrderByInfo("contactId", SuperOffice.Util.OrderBySortType.DESC);
+  ArchiveRestrictionInfo[] archiveRest = new ArchiveRestrictionInfo[1];
+  archiveRest[0] = new ArchiveRestrictionInfo("selectionId", "=", "61");
+  string[] desiredEntities = { "staticContact", "staticPerson", "dynamicContact" };
+  int page = 1;
+  int pageSize = 10;
+```
 
 Then call `GetArchiveListByColumns()` and follow the patten for [getting selection members][2].
 

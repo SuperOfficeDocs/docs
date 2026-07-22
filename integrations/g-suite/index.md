@@ -103,4 +103,4 @@ The **Forgot password** feature is now handled by Google - since Google is activ
 [4]: http://www.google.com/accounts/UpdateAccountRecoveryOptions
 [5]: https://toolbox.googleapps.com/apps/dig/
 [6]: https://online.superoffice.com/
-[7]: ../../docs/en/document/library/it/index
+[7]: ../../en/document/library/it/index

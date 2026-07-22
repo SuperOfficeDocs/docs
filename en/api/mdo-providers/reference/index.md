@@ -42,8 +42,8 @@ envir: onsite, online
 | [ProductType](./ProductType) |MDO List for database table ID: Table id 414. producttype.tooltip|
 | [ProjStatus](./ProjStatus) |MDO List for database table ID: Table id 88. projstatus.tooltip|
 | [ProjType](./ProjType) |MDO List for database table ID: Table id 85. projtype.tooltip|
-| [QuoteApprReason](./QuoteApprReason) |MDO List for database table ID: Table id 504. quoteapprreason.tooltip|
-| [QuoteDenyReason](./QuoteDenyReason) |MDO List for database table ID: Table id 507. quotedenyreason.tooltip|
+| [QuoteApprReason](./quoteapprreason) |MDO List for database table ID: Table id 504. quoteapprreason.tooltip|
+| [QuoteDenyReason](./quotedenyreason) |MDO List for database table ID: Table id 507. quotedenyreason.tooltip|
 | [Reason](./Reason) |MDO List for database table ID: Table id 103. reason.tooltip|
 | [ReasonSold](./ReasonSold) |MDO List for database table ID: Table id 115. reasonsold.tooltip|
 | [ReasonStalled](./ReasonStalled) |MDO List for database table ID: Table id 154. reasonstalled.tooltip|
@@ -58,7 +58,7 @@ envir: onsite, online
 | [SubscriptionUnit](./SubscriptionUnit) |MDO List for database table ID: Table id 442. subscriptionunit.tooltip|
 | [Tags](./Tags) |MDO List for database table ID: Table id 488. tags.tooltip|
 | [Task](./Task) |MDO List for database table ID: Table id 67. task.tooltip|
-| [TaskMenu](./TaskMenu) |MDO List for database table ID: Table id 520. taskmenu.tooltip|
+| [TaskMenu](./taskmenu) |MDO List for database table ID: Table id 520. taskmenu.tooltip|
 | [UDList](./UDList) |MDO List for database table ID: Table id 136. udlist.tooltip|
 
 ## List of other valid MDO providers
@@ -71,7 +71,7 @@ envir: onsite, online
 | [allpersonsearch](./allpersonsearch) |Provider for selecting a Person, including search on contacts that match as well as persons. This provider wil|
 | [allpersonwithassociatesearch](./allpersonwithassociatesearch) |Provides the same baseline functionality as <see cref="T:SuperOffice.CRM.Lists.AllPersonListSearchProvider" />, but additionally adds the associateId of the person to the extrainf|
 | [allpreferencekeys](./allpreferencekeys) |MDO Provider that retrieves all preference keys|
-| [amountclass](./amountclass) |GenericMDOProvider reads MDO lists with default settings|
+| [amountclass](./AmountClass) |GenericMDOProvider reads MDO lists with default settings|
 | [appointment](./appointment) ||
 | [appointmentcategory](./appointmentcategory) ||
 | [appointmentcautionwarning](./appointmentcautionwarning) |Appointment.CautionWarning. Appointment and invitation synchronization info|
@@ -87,8 +87,8 @@ envir: onsite, online
 | [associaterestrictions](./associaterestrictions) |Public MDO provider based on the AssociateRestrictionsMDOProviderBase.|
 | [associatewithmail](./associatewithmail) ||
 | [attachment](./attachment) ||
-| [business](./business) |GenericMDOProvider reads MDO lists with default settings|
-| [category](./category) |GenericMDOProvider reads MDO lists with default settings|
+| [business](./Business) |GenericMDOProvider reads MDO lists with default settings|
+| [category](./Category) |GenericMDOProvider reads MDO lists with default settings|
 | [categorygroup](./categorygroup) |MDO provider for the CategoryGroup enum.|
 | [chartselection](./chartselection) ||
 | [chatbot](./chatbot) |List of all script folders that contain a script named like "%bot%register%"|
@@ -98,7 +98,7 @@ envir: onsite, online
 | [chatuser](./chatuser) ||
 | [colorindex](./colorindex) |List of named colors from the "ColorIndex" enum|
 | [combinedcontactpersonsearch](./combinedcontactpersonsearch) |Consider using the ContactAndPersonListFreetextSearchProvider/"contact_and_person_freetextsearch" MDO list instead of this one|
-| [comptr](./comptr) |GenericMDOProvider reads MDO lists with default settings|
+| [comptr](./Comptr) |GenericMDOProvider reads MDO lists with default settings|
 | [consentpurpose](./consentpurpose) |MDO list provider for ConsentPurpose|
 | [consentsource](./consentsource) |MDO list provider for Consent source|
 | [contact](./contact) |Provider for selecting a Contact - without person search|
@@ -112,16 +112,16 @@ envir: onsite, online
 | [contact_and_person_freetextsearch_hierarchical](./contact_and_person_freetextsearch_hierarchical) ||
 | [contact_freetextsearch](./contact_freetextsearch) |Provider for selecting a Contact - without person search|
 | [contact_new](./contact_new) |Provider for selecting a Contact - without person search|
-| [contint](./contint) |GenericMDOProvider reads MDO lists with default settings|
+| [contint](./ContInt) |GenericMDOProvider reads MDO lists with default settings|
 | [country2](./country2) |Same as CountryProvider, but with icon hints based on the countrys name.|
 | [createdocumenttemplateplugin](./createdocumenttemplateplugin) |List of document plugins that can create document templates.|
 | [credentialgroup](./credentialgroup) |List of user groups supported by a named creditial plugin, sorted by group name.|
-| [credited](./credited) |GenericMDOProvider reads MDO lists with default settings|
+| [credited](./Credited) |GenericMDOProvider reads MDO lists with default settings|
 | [crmfields](./crmfields) ||
 | [crmscript](./crmscript) |Archive of CRMScripts. Returns script id + name of script as hierarchy.|
 | [culture](./culture) ||
 | [culturesolanguage](./culturesolanguage) |List of SuperOffice cultures with old-style SO Culture name in ExtraInfo|
-| [currency](./currency) |GenericMDOProvider reads MDO lists with default settings|
+| [currency](./Currency) |GenericMDOProvider reads MDO lists with default settings|
 | [currentudeffields](./currentudeffields) |Get a list of udef fields for a given type. Pass the type as AdditionalInfo|
 | [customerlanguage](./customerlanguage) |Customer Languages list. From the CustLang table.|
 | [customobjectfavourite](./customobjectfavourite) ||
@@ -135,12 +135,12 @@ envir: onsite, online
 | [dashboardtileentitytype](./dashboardtileentitytype) |List of dashboard tile types: Company, Project, Sale, Product, Activity, Web Panel|
 | [dashtilemeasure](./dashtilemeasure) ||
 | [dayofmonth](./dayofmonth) |MDO provider for the hard-coded list of day alternatives in the recurrence dialog.|
-| [deliveryterms](./deliveryterms) |GenericMDOProvider reads MDO lists with default settings|
-| [deliverytype](./deliverytype) |GenericMDOProvider reads MDO lists with default settings|
+| [deliveryterms](./DeliveryTerms) |GenericMDOProvider reads MDO lists with default settings|
+| [deliverytype](./DeliveryType) |GenericMDOProvider reads MDO lists with default settings|
 | [diaryowner](./diaryowner) |List provider that returns diary owners, i.e., our own employees plus resources|
 | [direction](./direction) |Document and Task directions: TaskDirection.Incoming, Outgoing|
 | [disconnectpersonactions](./disconnectpersonactions) |List of actions to perform when disconnecting a contact from a company|
-| [doctmpl](./doctmpl) |GenericMDOProvider reads MDO lists with default settings|
+| [doctmpl](./DocTmpl) |GenericMDOProvider reads MDO lists with default settings|
 | [document](./document) |MDO list provider for documents.|
 | [documentcategory](./documentcategory) ||
 | [documentcompleted](./documentcompleted) |Document completed status list: Not done, Done.|
@@ -178,7 +178,7 @@ envir: onsite, online
 | [everymonth](./everymonth) |MDO provider for the hard-coded list of day month in the recurrence dialog.|
 | [executeonevent](./executeonevent) |List of windows client events to execute tasks on: Logon, Logoff, LocalUpdate|
 | [exporttemplate](./exporttemplate) |MDO provider for the list of template files for the 'export to file' functio|
-| [extapp](./extapp) |GenericMDOProvider reads MDO lists with default settings|
+| [extapp](./ExtApp) |GenericMDOProvider reads MDO lists with default settings|
 | [faqcategory](./faqcategory) ||
 | [faqreplytemplate](./faqreplytemplate) ||
 | [faqreplytemplatefavourite](./faqreplytemplatefavourite) |MDO list provider for Favourites|
@@ -221,7 +221,7 @@ envir: onsite, online
 | [importphoneurlsemail](./importphoneurlsemail) |Import phone/url/email values: Add, Replace, Skip|
 | [importproductduplicatematch](./importproductduplicatematch) |Import product detect duplicates based on field:  Name, Code, Name+Code|
 | [importproductfields](./importproductfields) |MDO provider for column headers used in import|
-| [intent](./intent) |GenericMDOProvider reads MDO lists with default settings|
+| [intent](./Intent) |GenericMDOProvider reads MDO lists with default settings|
 | [invitationtemplatelanguage](./invitationtemplatelanguage) ||
 | [iso639language](./iso639language) ||
 | [kbaccesslevel](./kbaccesslevel) |MDO provider for the KbAccessLevel enum|
@@ -249,16 +249,16 @@ envir: onsite, online
 | [mergedocument](./mergedocument) |MDO list provider for documents marked as type <see cref="F:SuperOffice.Data.TaskType.MailMergeDraft" />.|
 | [mergetags](./mergetags) ||
 | [month](./month) |MDO provider for the hard-coded list of "of" months in the recurrence dialog.|
-| [mrmrs](./mrmrs) |GenericMDOProvider reads MDO lists with default settings|
+| [mrmrs](./MrMrs) |GenericMDOProvider reads MDO lists with default settings|
 | [newsfeeditemstatusprovider](./newsfeeditemstatusprovider) |MDO List provider for news feed item status: Normal, Handling, Handled|
 | [ofmonth](./ofmonth) |MDO provider for the hard-coded list of "of" months in the recurrence dialog.|
 | [onlinefontlibrary](./onlinefontlibrary) |MDO provider for the available fonts from the Online Template Library.|
 | [ownercontact](./ownercontact) |MDO provider for listing owner contacts.|
-| [paymentterms](./paymentterms) |GenericMDOProvider reads MDO lists with default settings|
-| [paymenttype](./paymenttype) |GenericMDOProvider reads MDO lists with default settings|
+| [paymentterms](./PaymentTerms) |GenericMDOProvider reads MDO lists with default settings|
+| [paymenttype](./PaymentType) |GenericMDOProvider reads MDO lists with default settings|
 | [period](./period) |Period values: Day, Week, Month, Quarter, Year|
 | [periods](./periods) |Period values: Day, Week, Month, Quarter, Year|
-| [persint](./persint) |GenericMDOProvider reads MDO lists with default settings|
+| [persint](./PersInt) |GenericMDOProvider reads MDO lists with default settings|
 | [person](./person) |List of persons from the Archive provider|
 | [personcontactfavourite](./personcontactfavourite) |MDO list provider for Favourites|
 | [personcontact_freetextsearch](./personcontact_freetextsearch) |Provider for selecting a Person - with contact search|
@@ -269,23 +269,23 @@ envir: onsite, online
 | [personurl](./personurl) |List of urls (web pages) matching the search value, possibly restricted to a given company or person.|
 | [personwithmail](./personwithmail) |List of persons fetched based on provided criteri|
 | [person_freetextsearch](./person_freetextsearch) |Provider for selecting a Person - without contact search|
-| [perspos](./perspos) |GenericMDOProvider reads MDO lists with default settings|
+| [perspos](./PersPos) |GenericMDOProvider reads MDO lists with default settings|
 | [phonesearch](./phonesearch) |Search phone numbers for matching stripped numbers, across person and contacts|
 | [plugin](./plugin) |List of installed and available Document plugins|
-| [pmembtype](./pmembtype) |GenericMDOProvider reads MDO lists with default settings|
+| [pmembtype](./PMembType) |GenericMDOProvider reads MDO lists with default settings|
 | [prefdescline](./prefdescline) |PrefDesc creates a MDO list of prefdesclines for a given prefdesc id.|
 | [preferencekey](./preferencekey) |MDO Provider that retrieves a list of preference keys corresponding to a given section|
 | [preferencelineitem](./preferencelineitem) |MDO Provider for preferences that have a list of possible values in the database|
 | [preferencesection](./preferencesection) |MDO Provider that retrieves a list of preference sections|
 | [pricelist](./pricelist) |List of pricelists from the PriceList table|
-| [priceunit](./priceunit) |GenericMDOProvider reads MDO lists with default settings|
-| [priority](./priority) |GenericMDOProvider reads MDO lists with default settings|
+| [priceunit](./PriceUnit) |GenericMDOProvider reads MDO lists with default settings|
+| [priority](./Priority) |GenericMDOProvider reads MDO lists with default settings|
 | [privacytemplate](./privacytemplate) |This is a variant of the DocTmpl list - document templates - restricted to those that are of some privacy document type.|
-| [prob](./prob) |GenericMDOProvider reads MDO lists with default settings|
-| [productcategory](./productcategory) |GenericMDOProvider reads MDO lists with default settings|
-| [productfamily](./productfamily) |GenericMDOProvider reads MDO lists with default settings|
+| [prob](./Prob) |GenericMDOProvider reads MDO lists with default settings|
+| [productcategory](./ProductCategory) |GenericMDOProvider reads MDO lists with default settings|
+| [productfamily](./ProductFamily) |GenericMDOProvider reads MDO lists with default settings|
 | [productimage](./productimage) |Return product images from the blob table|
-| [producttype](./producttype) |GenericMDOProvider reads MDO lists with default settings|
+| [producttype](./ProductType) |GenericMDOProvider reads MDO lists with default settings|
 | [project](./project) |Provider for selecting a project.|
 | [projectassociate](./projectassociate) |MDO provider for associates that are members of a project|
 | [projectfavourite](./projectfavourite) |MDO list provider for Favourites|
@@ -297,8 +297,8 @@ envir: onsite, online
 | [projecttypeflatlist](./projecttypeflatlist) |Project type list. Encodes Default project duration in extra info.|
 | [project_freetextsearch](./project_freetextsearch) |Provider for selecting a Project|
 | [project_new](./project_new) |Provider for selecting a project. Returns search results in rank orde|
-| [projstatus](./projstatus) |GenericMDOProvider reads MDO lists with default settings|
-| [projtype](./projtype) |GenericMDOProvider reads MDO lists with default settings|
+| [projstatus](./ProjStatus) |GenericMDOProvider reads MDO lists with default settings|
+| [projtype](./ProjType) |GenericMDOProvider reads MDO lists with default settings|
 | [quotealternatives](./quotealternatives) |Quote alternative selector for one Quote Version. Send QuoteVersionId=&lt;id&gt; in ExtraInfo to specify quote version id|
 | [quoteapprovalassociate](./quoteapprovalassociate) |MDO provider for associates that are allowed to approve a quote.|
 | [quoteapprovers](./quoteapprovers) |Retrieve the list of all users that can approve quotes|
@@ -314,13 +314,13 @@ envir: onsite, online
 | [quotetemplate](./quotetemplate) |This is a variant of the DocTmpl list - document templates - restricted to those that are of some quote document type|
 | [quoteversion](./quoteversion) |Quote version selector for one Quote. Send QuoteId=&lt;id&gt; in ExtraInfo to specify quote id|
 | [quoteversionstate](./quoteversionstate) |List provider for the <see cref="T:SuperOffice.Data.QuoteVersionState" /> enum|
-| [reason](./reason) |GenericMDOProvider reads MDO lists with default settings|
-| [reasonsold](./reasonsold) |GenericMDOProvider reads MDO lists with default settings|
-| [reasonstalled](./reasonstalled) |GenericMDOProvider reads MDO lists with default settings|
+| [reason](./Reason) |GenericMDOProvider reads MDO lists with default settings|
+| [reasonsold](./ReasonSold) |GenericMDOProvider reads MDO lists with default settings|
+| [reasonstalled](./ReasonStalled) |GenericMDOProvider reads MDO lists with default settings|
 | [recipientfavourite](./recipientfavourite) |MDO list provider for Favourites|
 | [recordtype](./recordtype) |A complete and generic mapping of record types to resource strings|
 | [recurrenceweekcycle](./recurrenceweekcycle) |MDO provider for the hard-coded list of week cycle alternatives in the recurrence dialog.|
-| [rejectreason](./rejectreason) |GenericMDOProvider reads MDO lists with default settings|
+| [rejectreason](./RejectReason) |GenericMDOProvider reads MDO lists with default settings|
 | [relateddatafields](./relateddatafields) ||
 | [relationssearchlistproviderappointmentactive](./relationssearchlistproviderappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active|
 | [relationssearchlistproviderappointmentappointmentactive](./relationssearchlistproviderappointmentappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active|
@@ -380,14 +380,14 @@ envir: onsite, online
 | [salesource](./salesource) |MDO list provider for the source list of the Sale dialog|
 | [salestage](./salestage) |Provider for selecting a stage. AdditionalInfo is used as criteria to filter stages based on SaleType.|
 | [salestatus](./salestatus) |List for the Sale.Status field: Open, Lost, Sold, Stalled.|
-| [saletype](./saletype) |List of sale types, with default sale duration in minutes in extra info.|
-| [saletypecat](./saletypecat) |GenericMDOProvider reads MDO lists with default settings|
+| [saletype](./SaleType) |List of sale types, with default sale duration in minutes in extra info.|
+| [saletypecat](./SaleTypeCat) |GenericMDOProvider reads MDO lists with default settings|
 | [saletypecategories](./saletypecategories) |SaleTypeCategories creates a MDO list of sale type categories in the database.|
 | [sale_freetextsearch](./sale_freetextsearch) |Provider for selecting a Sale|
 | [sale_new](./sale_new) |List of sales|
-| [salutation](./salutation) |GenericMDOProvider reads MDO lists with default settings|
+| [salutation](./Salutation) |GenericMDOProvider reads MDO lists with default settings|
 | [satellites](./satellites) |SatelliteProvider creates a MDO list of satellites.|
-| [searchcat](./searchcat) |GenericMDOProvider reads MDO lists with default settings|
+| [searchcat](./SearchCat) |GenericMDOProvider reads MDO lists with default settings|
 | [selection](./selection) |Provider for selecting a selection|
 | [selectioncriteriamembertype](./selectioncriteriamembertype) ||
 | [selectionfavourite](./selectionfavourite) |MDO list provider for selection favourites|
@@ -406,22 +406,22 @@ envir: onsite, online
 | [simplemailingstatus](./simplemailingstatus) ||
 | [smsmailing](./smsmailing) |SMS Shipment names|
 | [smsmailingtemplate](./smsmailingtemplate) |SMS Mailing templates|
-| [source](./source) |GenericMDOProvider reads MDO lists with default settings|
+| [source](./Source) |GenericMDOProvider reads MDO lists with default settings|
 | [sourceproduct](./sourceproduct) |Products: Sales &amp; Marketing, Customer Service|
 | [specifiedmailings](./specifiedmailings) |Create a list of mailings (flow, form, regular mailing/shipment...), hierarchy optional|
-| [stakeholderrole](./stakeholderrole) |GenericMDOProvider reads MDO lists with default settings|
+| [stakeholderrole](./StakeholderRole) |GenericMDOProvider reads MDO lists with default settings|
 | [statusdef](./statusdef) |Return list of status monitors defined in the system|
 | [statusmonitorimage](./statusmonitorimage) |List of images for status monitors in the blob table.|
-| [subscriptionunit](./subscriptionunit) |GenericMDOProvider reads MDO lists with default settings|
+| [subscriptionunit](./SubscriptionUnit) |GenericMDOProvider reads MDO lists with default settings|
 | [suggestedappointment](./suggestedappointment) |Suggested Appointment Provider creates a MDO list of suggested appointments for a given guide stage.|
 | [suggesteddocument](./suggesteddocument) |SuggestedDocumentProvider creates a MDO list of suggested documents in the database.|
 | [systemeventtype](./systemeventtype) |System event types: NoLogin, NoFreeText, NoTravel, Message-of-the-day|
-| [tags](./tags) |GenericMDOProvider reads MDO lists with default settings|
+| [tags](./Tags) |GenericMDOProvider reads MDO lists with default settings|
 | [targetentitytype](./targetentitytype) |TargetEntities|
 | [targetmeasurementunit](./targetmeasurementunit) |MeasurementUnits|
 | [targettypes](./targettypes) ||
 | [targetyear](./targetyear) |Year MDO list. Includes the two coming years, this year, and previous 5 years|
-| [task](./task) |Task table MDO list. Optional include "None" as first value.|
+| [task](./Task) |Task table MDO list. Optional include "None" as first value.|
 | [taskmenu](./taskmenu) |GenericMDOProvider reads MDO lists with default settings|
 | [taskmenudestination](./taskmenudestination) ||
 | [taskmenugroup](./taskmenugroup) |List of TaskMenus with visible for groups as commaseperated ids in extrainfo field|
@@ -454,7 +454,7 @@ envir: onsite, online
 | [udeffields](./udeffields) |Get a list of udef fields for a given type|
 | [udeffieldswithchanges](./udeffieldswithchanges) |Get a list of udef fields for a given type|
 | [udeffieldtype](./udeffieldtype) |List of UDef field types for a given owner table, and possibly restricted based on the current field type|
-| [udlist](./udlist) |MDO Provider for 'user-defined' lists, i.e., those that reside in the UDList table. Mandatory additionalInfo is th|
+| [udlist](./UDList) |MDO Provider for 'user-defined' lists, i.e., those that reside in the UDList table. Mandatory additionalInfo is th|
 | [udlist28](./udlist28) |Dynamic MDO provider that will create a list with the name udlist&lt;id&gt; for each user-defined list in the UDListDefinition table|
 | [udlist30002](./udlist30002) |MDO provider for the ChatService|
 | [urlencoding](./urlencoding) ||

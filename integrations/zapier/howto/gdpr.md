@@ -26,6 +26,6 @@ If no value is provided for one or more of these fields, SuperOffice automatical
 
 ![Create new contact information -screenshot][img1]
 
-[1]: ../../../docs/en/security/privacy/index
+[1]: ../../../en/security/privacy/index
 
 [img1]: /media/loc/en/integrations/zapier/contact-consents-gdpr.png

@@ -47,11 +47,11 @@ Should you have any questions or require further information, please do not hesi
 You can read and comment on the [original post][1] in the SuperOffice technical forum.
 
 [1]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/future-of-superoffice.netserver.services-package-and-soap-web-services/
-[2]: ../../docs/en/api/web-services/index
-[3]: ../../docs/en/api/web-services/proxies/built-in
-[4]: ../../docs/en/api/web-services/endpoints/soap/index
-[5]: ../../docs/en/api/web-services/endpoints/rest-webapi/index
+[2]: ../../en/api/web-services/index
+[3]: ../../en/api/web-services/proxies/built-in
+[4]: ../../en/api/web-services/endpoints/soap/index
+[5]: ../../en/api/web-services/endpoints/rest-webapi/index
 [6]: https://www.nuget.org/packages/SuperOffice.NetServer.Services
-[7]: ../../docs/en/api/reference/soap/customer-service/ports/customer/index
-[8]: ../../docs/en/api/reference/soap/customer-service/ports/admin/index
-[9]: ../../docs/en/api/reference/soap/customer-service/ports/ticket/index
+[7]: ../../en/api/reference/soap/customer-service/ports/customer/index
+[8]: ../../en/api/reference/soap/customer-service/ports/admin/index
+[9]: ../../en/api/reference/soap/customer-service/ports/ticket/index

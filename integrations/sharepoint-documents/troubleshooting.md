@@ -103,5 +103,5 @@ For detailed guidance and references, consult SuperOffice's documentation:
 * [GetDocumentUrl API Reference][3]
 
 [1]: https://docs.microsoft.com/en-us/graph/api/overview
-[2]: ../../docs/en/api/reference/restful/rest/Document/v1DocumentEntity_GetDocumentProperties
-[3]: ../../docs/en/api/reference/restful/rest/Document/v1DocumentEntity_GetDocumentUrl
+[2]: ../../en/api/reference/restful/rest/Document/v1DocumentEntity_GetDocumentProperties
+[3]: ../../en/api/reference/restful/rest/Document/v1DocumentEntity_GetDocumentUrl

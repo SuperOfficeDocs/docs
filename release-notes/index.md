@@ -103,12 +103,12 @@ We use **pilot programs** to assess how well the features and functions meet our
 [11]: ./11/index
 [12]: ./integrations/index
 [13]: ../integrations/superoffice-for-outlook/index
-[14]: ../docs/en/mobile/index
-[15]: ../docs/en/learn/index.yml
+[14]: ../en/mobile/index
+[15]: ../en/learn/index.yml
 [16]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [17]: https://community.superoffice.com/en/product-releases/pilot-programs/
-[18]: ../docs/en/developer-portal/widgets/index#publish-status
-[19]: ../docs/en/onsite/version-history
+[18]: ../en/developer-portal/widgets/index#publish-status
+[19]: ../en/onsite/version-history
 [20]: ../integrations/supernotes/index
 [21]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [22]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot

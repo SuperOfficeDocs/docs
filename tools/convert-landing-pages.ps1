@@ -254,9 +254,23 @@ function Resolve-UrlPath {
         [string]$currentFilePath
     )
 
-    # Only process URLs with ../ parent references
-    if ($url -notmatch '\.\.') {
+    # Leave external links, mail/tel schemes, same-page anchors, and
+    # already root-relative paths untouched. Per HTML/MDX/JSX convention,
+    # every other href is page-relative and must be rewritten as
+    # root-relative or it breaks once the page is embedded/rendered
+    # outside its source directory context.
+    if ([string]::IsNullOrEmpty($url) -or
+        $url -match '^(https?:|mailto:|tel:|/|#)') {
         return $url
+    }
+
+    # Split off any #fragment so it isn't mangled by path resolution
+    $fragment = ''
+    $pathPart = $url
+    $hashIndex = $url.IndexOf('#')
+    if ($hashIndex -ge 0) {
+        $pathPart = $url.Substring(0, $hashIndex)
+        $fragment = $url.Substring($hashIndex)
     }
 
     # Get the directory path relative to repo root
@@ -269,9 +283,11 @@ function Resolve-UrlPath {
     $currentDir = $currentDir -replace '\\', '/'
 
     # Combine current directory with relative URL
-    $combined = "$currentDir/$url" -replace '\\', '/'
+    $combined = "$currentDir/$pathPart" -replace '\\', '/'
 
-    # Resolve ../ sequences
+    # Resolve ./ and ../ segments, clamping at the repo root instead of
+    # erroring if a URL has more ../ than its depth (a bug seen in
+    # hand-edited pages that this keeps from producing a broken link)
     $parts = $combined -split '/'
     $resolved = [System.Collections.ArrayList]@()
 
@@ -286,7 +302,7 @@ function Resolve-UrlPath {
     }
 
     # Return absolute path from repo root
-    return '/' + ($resolved -join '/')
+    return '/' + ($resolved -join '/') + $fragment
 }
 
 function Test-LandingPageYaml {
@@ -712,6 +728,7 @@ function ConvertTo-CategoryMdx {
             # Clean title and URL - remove quotes and file extensions
             $title = $item.title.Trim('"''').Trim()
             $url = $item.url.Trim('"''').Trim() -replace '\.md$', '' -replace '\.mdx$', '' -replace '\.yml$', ''
+            $url = Resolve-UrlPath -url $url -currentFilePath $filePath
 
             $mdx += "<Card title=`"$title`" icon=`"$icon`" href=`"$url`">`n"
             $mdx += "  <span className=`"card-label`">$typeDescLabel</span>`n"

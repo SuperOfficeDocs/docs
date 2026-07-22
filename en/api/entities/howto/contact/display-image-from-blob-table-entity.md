@@ -123,4 +123,4 @@ private void listBox1_SelectedValueChanged(object sender, EventArgs e)
 }
 ```
 
-<a href="../../../../../assets/downloads/api/blob-image.zip" download>Download source</a>
+<a href="../../../../../downloads/api/blob-image.zip" download>Download source</a>

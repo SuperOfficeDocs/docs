@@ -89,25 +89,45 @@ function Get-CodeBlock {
         return $content
     }
 
-    # Parse range (format: "1-8" or "10-34")
-    if ($Range -match '^(\d+)-(\d+)$') {
-        $startLine = [int]$matches[1]
-        $endLine = [int]$matches[2]
+    # Parse range: a single "1-8", or comma-separated segments mixing single
+    # lines and ranges, e.g. "10,13,16-17,20-21,24,27,30" (DocFx's actual
+    # range syntax -- a plain "^(\d+)-(\d+)$" match only covered the
+    # single-segment case and silently fell through to returning the WHOLE
+    # file for anything comma-separated).
+    if ($Range -notmatch '^[\d,-]+$') {
+        Write-Warning "Invalid range format: $Range"
+        return $content
+    }
 
-        # Convert to 0-based index
-        $startIdx = $startLine - 1
-        $endIdx = $endLine - 1
+    $lines = @()
+    foreach ($segment in $Range -split ',') {
+        if ($segment -match '^(\d+)-(\d+)$') {
+            $startLine = [int]$matches[1]
+            $endLine = [int]$matches[2]
+        }
+        elseif ($segment -match '^(\d+)$') {
+            $startLine = [int]$matches[1]
+            $endLine = $startLine
+        }
+        else {
+            Write-Warning "Invalid range segment: $segment (in $Range)"
+            continue
+        }
 
-        if ($startIdx -lt 0) { $startIdx = 0 }
-        if ($endIdx -ge $content.Length) { $endIdx = $content.Length - 1 }
+        $startIdx = [Math]::Max($startLine - 1, 0)
+        $endIdx = [Math]::Min($endLine - 1, $content.Length - 1)
 
         if ($startIdx -le $endIdx) {
-            return $content[$startIdx..$endIdx]
+            $lines += $content[$startIdx..$endIdx]
         }
     }
 
-    Write-Warning "Invalid range format: $Range"
-    return $content
+    if ($lines.Count -eq 0) {
+        Write-Warning "Invalid range format: $Range"
+        return $content
+    }
+
+    return $lines
 }
 
 # Find all files that reference a specific code include
@@ -136,9 +156,14 @@ function Find-CodeIncludeReferences {
         }
 
         # Check for code includes: [!code-LANG[ALT](path/file.ext)] or [!code-LANG[ALT](path/file.ext?range=X-Y)]
-        $pattern = "\[!code-([a-z-]+)\[([^\]]*)\]\(([^)]*$escapedFileName(?:\?range=([0-9-]+))?)\)\]"
+        # Case-insensitive: language ids appear as both "csharp" and
+        # "JavaScript" in this repo, and a reference's filename casing
+        # doesn't always match the real file's (e.g. "personalcolordatahandler.cs"
+        # referencing the real "PersonalColorDataHandler.cs") -- without this,
+        # both silently fail to match and the include is never inlined.
+        $pattern = "\[!code-([a-z-]+)\[([^\]]*)\]\(([^)]*$escapedFileName(?:\?range=([0-9,-]+))?)\)\]"
 
-        $matchCollection = [regex]::Matches($content, $pattern)
+        $matchCollection = [regex]::Matches($content, $pattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
         if ($matchCollection.Count -gt 0) {
             foreach ($regexMatch in $matchCollection) {
                 $lang = $regexMatch.Groups[1].Value
@@ -231,7 +256,7 @@ function Expand-CodeInclude {
 Write-Host "Processing: $Path" -ForegroundColor Cyan
 
 # Find all code include files in includes folders
-$includeFiles = Get-ChildItem -Path $Path -Include "*.cs", "*.js", "*.ts", "*.py", "*.java", "*.php", "*.rb", "*.go", "*.rs", "*.cpp", "*.c", "*.h", "*.aspx", "*.html", "*.xml", "*.json", "*.sql" -Recurse -File |
+$includeFiles = Get-ChildItem -Path $Path -Include "*.cs", "*.js", "*.ts", "*.py", "*.java", "*.php", "*.rb", "*.go", "*.rs", "*.cpp", "*.c", "*.h", "*.aspx", "*.html", "*.xml", "*.json", "*.sql", "*.vb", "*.http", "*.config" -Recurse -File |
     Where-Object { $_.DirectoryName -match 'includes$' }
 
 Write-Host "Found $($includeFiles.Count) code include file(s)" -ForegroundColor Cyan

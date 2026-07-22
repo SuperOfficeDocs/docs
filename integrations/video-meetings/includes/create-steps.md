@@ -2,4 +2,4 @@
 2. Click <i class="ph ph-video-camera" aria-label="Video meeting"></i> next to the meeting type. The icon changes and a video meeting link is added.
 3. Complete the information in the **Follow-up**.
 
-[1]: ../../../docs/en/diary/learn/create-follow-up
+[1]: ../../../en/diary/learn/create-follow-up

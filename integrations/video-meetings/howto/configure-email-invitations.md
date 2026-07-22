@@ -38,6 +38,6 @@ To be able to send and receive email invitations to video meetings (to/from atte
 This feature is currently not supported if you use [Synchronizer for SuperOffice][1] - as they don't support this yet.
 
 [1]: https://online.superoffice.com/appstore/infobridge-software-b-v-/synchronizer-for-superoffice
-[2]: ../../../docs/en/email/inbox/learn/index
-[3]: ../../../docs/en/email/admin/add-email-template
+[2]: ../../../en/email/inbox/learn/index
+[3]: ../../../en/email/admin/add-email-template
 [4]: ../../mail-link/index
