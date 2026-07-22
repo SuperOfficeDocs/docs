@@ -4,7 +4,7 @@ title: Reviewing a PR
 description: How to check proposed changes in a PR
 keywords: review, PR, comment, suggestion
 author: digitaldiina
-date: 07.09.2026
+date: 07.22.2026
 content_type: howto
 language: en
 ---
@@ -71,10 +71,10 @@ Anyone with access can comment on a PR. The ability to request changes or submit
 
 [1]: https://github.com/SuperOfficeDocs/superoffice-docs
 
-[img1]: ../../media/loc/en/contribute/comment.png
-[img2]: ../../media/loc/en/contribute/line-comment.png
-[img3]: ../../media/loc/en/contribute/preview-suggestion.png
-[img4]: ../../media/loc/en/contribute/enter-suggestion.png
-[img5]: ../../media/loc/en/contribute/add-suggestion-icon.png
-[img6]: ../../media/loc/en/contribute/review-changes.png
-[img7]: ../../media/loc/en/contribute/submit-review.png
+[img1]: /media/loc/en/contribute/comment.png
+[img2]: /media/loc/en/contribute/line-comment.png
+[img3]: /media/loc/en/contribute/preview-suggestion.png
+[img4]: /media/loc/en/contribute/enter-suggestion.png
+[img5]: /media/loc/en/contribute/add-suggestion-icon.png
+[img6]: /media/loc/en/contribute/review-changes.png
+[img7]: /media/loc/en/contribute/submit-review.png

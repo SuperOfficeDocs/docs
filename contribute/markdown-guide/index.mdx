@@ -4,7 +4,7 @@ title: Markdown guide for docs.superoffice.com
 description: This Markdown style guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
 keywords: markdown guide, callouts, headings, links, lists, tables, metadata, includes
 author: digitaldiina
-date: 07.16.2026
+date: 07.22.2026
 content_type: reference
 language: en
 ---
@@ -141,13 +141,15 @@ Even though Markdown supports inline HTML, we (generally) don't use it on `docs.
 **Exceptions:**
 
 * Use `<br />` to break a line in table cells. Do not force line breaks within paragraphs.
-* Download links, for example, `<a href="../downloads/mirroredtables.docx" download>Mirrored Tables document</a>`.
+* Download links, for example, `<a href="/downloads/mirroredtables.docx" download>Mirrored Tables document</a>`.
 * Use `<details>` and `<summary>` to create drop-down content.
 * Use `<script>` to bring in SuperOffice forms.
 
 ## Images
 
 You can use either *.png* or *.jpg* images. Image files must be less than 20 MB. Place images in the appropriate *media* sub folder.
+
+Reference images with a root-relative path — `/media/loc/en/{topic}/{filename}` (or `/media/loc/en/{topic}/{subfolder}/{filename}` for topics large enough to need one). Unlike [page links][6], images are always root-relative, with no same-topic exception: the *media* folder is one shared location, not duplicated per language or per topic, so there's no "close by" case to be relative to — and a root-relative path resolves the same way no matter which page, or which language's translated include, references it.
 
 **Format:**
 
@@ -231,7 +233,7 @@ import Foo from "./includes/foo.md";
 Text before <Foo /> and after.
 ```
 
-* The import path is the relative path to the file.
+* The import path (the string after `from`) is a JSX import, not a content link — it stays a literal relative path to the file (for example, `./includes/foo.md`), regardless of the root-relative rule for content links described below.
 * The component name (`Foo` above) can be anything [valid as a JSX identifier][10] — pick something that describes the content.
 * You can import and use the same component more than once on a page.
 
@@ -243,13 +245,11 @@ Here are requirements and considerations for include files:
 
 * Don't nest includes.
 
-* Place images used by includes in the */media/includes* folder.
+* Place images used by includes in the */media/includes* folder, and reference them with a root-relative path like any other image.
 
 * Don't add metadata or HTML comments at the top of include files.
 
-* Relative links within an include file are relative to that file, not where it is included.
-
-* You can use reference-style links within the file, but the import path itself must be a literal relative path.
+* A relative link inside an include resolves against the include file's own location, not the page that imports it — so a local *includes* folder used only within one topic can follow that topic's normal relative-link rule, but a repository-wide *snippets* file reused across different topics or languages should use root-relative links, since it has no single "close by" tree to be relative to. See [page links][6] for the general rule.
 
 ## Links
 

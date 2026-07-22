@@ -4,7 +4,7 @@ title: Redirects and redirect_from
 description: What redirect_from is for, how it becomes a live redirect in config/redirects.json, and when it's safe to compact a group of redirects into a wildcard.
 keywords: redirect_from, redirects, config/redirects.json, docs.json, wildcard, permanent redirect, moved page, deleted page, URL migration
 author: digitaldiina
-date: 07.20.2026
+date: 07.22.2026
 content_type: concept
 language: en
 ---
@@ -14,7 +14,7 @@ language: en
 Whenever a page moves, gets renamed, is merged into another page, or is deleted outright, its old URL still needs to go somewhere. Get this wrong and either a real visitor lands on a 404, or - just as bad - a wildcard silently swallows a page that's still supposed to be live. This page covers both sides: the `redirect_from` property you add to a content file, and how that turns into a live redirect through `config/redirects.json`.
 
 <Note>
-This page is redirect-specific. For how `config/redirects.json` fits into `docs.json`'s broader modular `$ref` split (navigation, redirects, and where each piece lives), see [Configuring Mintlify](./configure-mintlify).
+This page is redirect-specific. For how `config/redirects.json` fits into `docs.json`'s broader modular `$ref` split (navigation, redirects, and where each piece lives), see [Configuring Mintlify][3].
 </Note>
 
 ## Why redirect_from exists
@@ -35,7 +35,7 @@ redirect_from:
 
 It's the second-to-last frontmatter property, only followed by `language`.
 
-During the Mintlify migration, `redirect_from` declarations across the repo are what generated the `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one. The array itself originally lived inline in `docs.json`; it now lives in `config/redirects.json`, which `docs.json` reaches via a `$ref` (see [Configuring Mintlify](./configure-mintlify)).
+During the Mintlify migration, `redirect_from` declarations across the repo are what generated the `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one. The array itself originally lived inline in `docs.json`; it now lives in `config/redirects.json`, which `docs.json` reaches via a `$ref` (see [Configuring Mintlify][3]).
 
 <Warning>
 **Going forward, `config/redirects.json` is the actual source of truth - `redirect_from` is informative only.** Adding it to a file's frontmatter does **not** by itself create a working redirect. To make a redirect happen, add the entry to `config/redirects.json` directly (see below).
@@ -163,3 +163,4 @@ After editing `config/redirects.json`, spot-check in `mint dev`: visit the old U
 
 [1]: #external-destinations-need-html
 [2]: #wildcards
+[3]: ./configure-mintlify
