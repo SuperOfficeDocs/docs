@@ -74,16 +74,24 @@ def run_broken_links():
     return output
 
 
+NBSP = " "
+
+
 def parse_report(text):
     """Yield (source_file, target) pairs.
 
     Source-file header lines start flush left with an alphanumeric character
-    and end in .md/.mdx. Target lines are indented under their header (the
-    indent is a tree-branch glyph plus non-breaking spaces, not plain ASCII
-    spaces -- observed to vary across mint CLI versions/terminals, so the
-    check is "does this line start with something other than an alnum
-    character", not a specific whitespace character) until a blank line ends
-    the block.
+    and end in .md/.mdx. Target lines are indented under their header with a
+    non-breaking space + tree-branch glyph + non-breaking spaces (not plain
+    ASCII spaces).
+
+    mint's own report additionally soft-wraps long target lines at some
+    terminal width: the overflow reappears as a THIRD kind of line with no
+    prefix at all (not a header, not a fresh target) -- e.g. a target ending
+    "...using-curl" gets split into a line ending "...using-c" followed by a
+    bare continuation line "url". Any non-blank line that's neither a header
+    nor a properly-prefixed target line is treated as a continuation and
+    glued onto the immediately preceding target.
     """
     pairs = []
     current_source = None
@@ -93,13 +101,20 @@ def parse_report(text):
         if not stripped:
             current_source = None
             continue
-        if line[:1].isalnum():
-            current_source = stripped.replace("\\", "/") if stripped.lower().endswith((".md", ".mdx")) else None
+        first = line[:1]
+        if first in (NBSP, TREE_CHAR):
+            if current_source:
+                target = stripped.lstrip(TREE_CHAR).strip()
+                if target:
+                    pairs.append((current_source, target))
             continue
-        if current_source:
-            target = stripped.lstrip(TREE_CHAR).strip()
-            if target:
-                pairs.append((current_source, target))
+        if first.isalnum() and stripped.lower().endswith((".md", ".mdx")):
+            current_source = stripped.replace("\\", "/")
+            continue
+        if current_source and pairs and pairs[-1][0] == current_source:
+            src, prev_target = pairs[-1]
+            pairs[-1] = (src, prev_target + stripped)
+        # else: stray pre-header noise (e.g. spinner frames) -- ignore
     return pairs
 
 
@@ -187,7 +202,13 @@ def resolve_target(source_file, raw_target, tracked_exact, tracked_lower):
         base = "/".join(parts)
 
     suffix = Path(base).suffix.lower()
-    has_ext = suffix in (".md", ".mdx", ".yml", ".yaml", ".json", ".html")
+    # ANY existing extension means "check literally" -- not just page-like
+    # ones. A narrower whitelist here previously mishandled non-page
+    # extensions (.cs, .js, .vb, .http, .config, ...), e.g. code-sample
+    # includes like "includes/foo.cs?range=1-10", by wrongly trying
+    # foo.cs.mdx/foo.cs.md/foo.cs/index.mdx candidates instead of just
+    # checking "foo.cs" itself -- producing false "not found" results.
+    has_ext = bool(suffix)
     if has_ext:
         candidates = [base]
         # .md/.mdx targets are frequently stale from the DocFx->Mintlify
