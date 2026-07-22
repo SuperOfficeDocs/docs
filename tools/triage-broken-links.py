@@ -15,7 +15,14 @@ Runs `mint broken-links`, then for every reported (source file, target) pair:
 Whether the target is wired into navigation is deliberately NOT checked --
 Mintlify serves any file that exists regardless of nav wiring.
 
-Output: scratch-broken-links-{true,ignored,false-positives,needs-review}.txt
+A relative link from one en/database/tables/ page to another that resolves
+gets its own "db-tables-relative" bucket instead of needs-review: that tree
+is auto-generated (external ADO pipeline, no local tool) and deliberately
+kept on relative sibling links by design, so a resolving link there is
+confirmed-good, not unconfirmed markdown syntax like everything else in
+needs-review.
+
+Output: scratch-broken-links-{true,ignored,false-positives,db-tables-relative,needs-review}.txt
 
 By default this reuses the cached raw report from the last real run
 (scratch-broken-links-triage.txt) instead of re-invoking `mint broken-links`,
@@ -55,6 +62,12 @@ MINTIGNORE = REPO_ROOT / ".mintignore"
 RAW_REPORT_CACHE = REPO_ROOT / "scratch-broken-links-triage.txt"
 ANSI_RE = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 TREE_CHAR = "⎿"  # tree-branch glyph mint prefixes each reported target line with
+
+# en/database/tables/ is auto-generated (external ADO pipeline, no local
+# tool), self-contained, and deliberately kept on relative sibling links by
+# design -- see project notes. A relative link from one page in this tree to
+# another that resolves is confirmed-good, not just "not yet confirmed".
+DB_TABLES_PREFIX = "en/database/tables/"
 
 
 def run_broken_links():
@@ -348,7 +361,13 @@ def main():
     tracked_exact, tracked_lower = load_tracked_files()
     ignore_patterns = load_mintignore()
 
-    buckets = {"true_broken": [], "ignored": [], "false_positive": [], "needs_review": []}
+    buckets = {
+        "true_broken": [],
+        "ignored": [],
+        "false_positive": [],
+        "db_tables_relative": [],
+        "needs_review": [],
+    }
 
     for source_file, raw_target in pairs:
         resolved, reason, fragment = resolve_target(source_file, raw_target, tracked_exact, tracked_lower)
@@ -363,6 +382,13 @@ def main():
             reason = f"file exists ({resolved}) but anchor '#{fragment}' not found"
             buckets["true_broken"].append((source_file, raw_target, reason))
             continue
+        if (
+            not raw_target.startswith("/")
+            and source_file.startswith(DB_TABLES_PREFIX)
+            and resolved.startswith(DB_TABLES_PREFIX)
+        ):
+            buckets["db_tables_relative"].append((source_file, raw_target, resolved))
+            continue
         syntax = classify_syntax(source_file, raw_target)
         if syntax == "raw <a> anchor":
             buckets["false_positive"].append((source_file, raw_target, resolved, syntax))
@@ -370,10 +396,11 @@ def main():
             buckets["needs_review"].append((source_file, raw_target, resolved, syntax))
 
     print()
-    print(f"True broken:                       {len(buckets['true_broken'])}")
-    print(f"Ignored (.mintignore, by design):  {len(buckets['ignored'])}")
-    print(f"False positive (raw <a>, checker): {len(buckets['false_positive'])}")
-    print(f"Needs review (unconfirmed syntax): {len(buckets['needs_review'])}")
+    print(f"True broken:                        {len(buckets['true_broken'])}")
+    print(f"Ignored (.mintignore, by design):   {len(buckets['ignored'])}")
+    print(f"False positive (raw <a>, checker):  {len(buckets['false_positive'])}")
+    print(f"DB-tables relative (by design):     {len(buckets['db_tables_relative'])}")
+    print(f"Needs review (unconfirmed syntax):  {len(buckets['needs_review'])}")
 
     write_bucket("true", buckets["true_broken"], lambda r: f"{r[0]}\t{r[1]}\t{r[2]}")
     write_bucket(
@@ -385,6 +412,11 @@ def main():
         "false-positives",
         buckets["false_positive"],
         lambda r: f"{r[0]}\t{r[1]}\t{r[2]}\t{r[3]}",
+    )
+    write_bucket(
+        "db-tables-relative",
+        buckets["db_tables_relative"],
+        lambda r: f"{r[0]}\t{r[1]}\t{r[2]}",
     )
     write_bucket(
         "needs-review",
