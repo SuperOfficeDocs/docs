@@ -132,16 +132,16 @@ Delivery of outgoing messages to message plugins, updated with status asynchrono
 | `session_key` | varchar(256) | The reference used for identifying a session, like in-reply-to and message ID |
 | `outgoing_message_id` | int | Reference to the outgoing message entry created by NetServer for sending and status update |
 
-[1]: ../../en/database/tables/outgoing-message
-[2]: ../../en/database/tables/appointment
-[3]: ../../en/database/tables/project
-[4]: ../../en/database/tables/projtype
-[5]: ../../en/database/tables/suggestedappointment
-[6]: ../../en/database/tables/saletype
-[7]: ../../en/database/tables/ticket
-[8]: ../../en/database/tables/extra-menus
-[9]: ../../en/database/tables/s-link
-[10]: ../../en/database/tables/s-shipment-addr
-[11]: ../../en/database/tables/s-list-shipment
-[12]: ../../en/database/tables/inbox
-[13]: ../../en/database/tables/sms
+[1]: /en/database/tables/outgoing-message
+[2]: /en/database/tables/appointment
+[3]: /en/database/tables/project
+[4]: /en/database/tables/projtype
+[5]: /en/database/tables/suggestedappointment
+[6]: /en/database/tables/saletype
+[7]: /en/database/tables/ticket
+[8]: /en/database/tables/extra-menus
+[9]: /en/database/tables/s-link
+[10]: /en/database/tables/s-shipment-addr
+[11]: /en/database/tables/s-list-shipment
+[12]: /en/database/tables/inbox
+[13]: /en/database/tables/sms
