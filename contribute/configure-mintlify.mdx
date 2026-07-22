@@ -4,14 +4,14 @@ title: Configuring Mintlify
 description: How docs.json's modular $ref-linked config works, what lives in each config/ file, and how to edit navigation without touching a monolithic file.
 keywords: docs.json, mintlify, config, $ref, navigation, modular configuration, split configuration
 author: digitaldiina
-date: 07.20.2026
+date: 07.22.2026
 content_type: concept
 language: en
 ---
 
 # Configuring Mintlify
 
-`docs.json` is the root of every Mintlify setting for this site - theme, fonts, navigation, redirects, and more. It used to be a single 21,000+ line file. Its two largest pieces, `navigation` and `redirects`, are now split out into their own files under `config/`, using Mintlify's [split-configuration `$ref` support][1]. This page covers how that split works and where to make a given change; for redirect-specific guidance see [Redirects and redirect_from](./redirects).
+`docs.json` is the root of every Mintlify setting for this site - theme, fonts, navigation, redirects, and more. It used to be a single 21,000+ line file. Its two largest pieces, `navigation` and `redirects`, are now split out into their own files under `config/`, using Mintlify's [split-configuration `$ref` support][1]. This page covers how that split works and where to make a given change; for redirect-specific guidance see [Redirects and redirect_from][2].
 
 ## What lives where
 
@@ -69,10 +69,11 @@ Find the right file before editing:
 
 ## Editing redirects
 
-`config/redirects.json` holds the array; `docs.json` only points at it. See [Redirects and redirect_from](./redirects) for the full guide - `redirect_from` frontmatter, wildcards, and the maintenance scripts (`tools/sort-redirects.py`, `tools/compact-redirects.py`) all work the same way, just against `config/redirects.json` instead of `docs.json`.
+`config/redirects.json` holds the array; `docs.json` only points at it. See [Redirects and redirect_from][2] for the full guide - `redirect_from` frontmatter, wildcards, and the maintenance scripts (`tools/sort-redirects.py`, `tools/compact-redirects.py`) all work the same way, just against `config/redirects.json` instead of `docs.json`.
 
 ## Verify
 
 After editing any split file, spot-check in `mint dev`: confirm the page you touched still appears in the right place in the nav, and that its sibling sections (the ones you didn't touch) are unaffected.
 
 [1]: https://www.mintlify.com/docs/organize/settings#split-configuration-with-$ref
+[2]: ./redirects
