@@ -45,7 +45,7 @@ Even if the plugin only supports sending SMS, you must still configure this mail
 * [About SMS mailboxes][5]
 
 [1]: ../../mailing/admin/define-settings-for-mailings#sms
-[3]: ../../../automation/crmscript/index.yml
+[3]: ../../../automation/crmscript/index
 [4]: ./set-up
 [5]: ../../../email/admin/mailbox/index#sms-in
 [6]: ../../../email/admin/mailbox/create-sms-mailbox
