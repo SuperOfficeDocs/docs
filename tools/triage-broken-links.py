@@ -301,22 +301,30 @@ def anchor_exists(resolved_path, fragment):
 
 
 def classify_syntax(source_file, raw_target):
+    """Classify how raw_target's href is written in source_file.
+
+    Searches the whole file, not line-by-line: JSX components are
+    routinely formatted with each prop (including href=) on its own line
+    (`<Card>\\n  title="..."\\n  href="...">`), which a per-line search never
+    finds -- `[^>]` naturally stops at the tag's own closing `>` regardless
+    of embedded newlines, so this stays scoped to a single tag's attributes
+    without needing to treat "." as matching newlines.
+    """
     text = _read_source(source_file)
     if text is None:
         return "unknown (source unreadable)"
+    if raw_target not in text:
+        return "unknown (target string not found in source)"
     escaped = re.escape(raw_target)
-    href_re = re.compile(r'<(\w+)[^>]*\bhref\s*=\s*"' + escaped + r'"')
+    href_re = re.compile(r'<(\w+)\b[^>]*?\bhref\s*=\s*"' + escaped + r'"', re.DOTALL)
     md_re = re.compile(r"\]\(" + escaped + r"\)")
-    for line in text.splitlines():
-        if raw_target not in line:
-            continue
-        href_match = href_re.search(line)
-        if href_match:
-            tag = href_match.group(1).lower()
-            return "raw <a> anchor" if tag == "a" else f"JSX component <{tag}>"
-        if md_re.search(line):
-            return "markdown link"
-    return "unknown (line not matched)"
+    href_match = href_re.search(text)
+    if href_match:
+        tag = href_match.group(1).lower()
+        return "raw <a> anchor" if tag == "a" else f"JSX component <{tag}>"
+    if md_re.search(text):
+        return "markdown link"
+    return "unknown (target string present but no href/markdown-link pattern matched)"
 
 
 def write_bucket(name, rows, formatter):
