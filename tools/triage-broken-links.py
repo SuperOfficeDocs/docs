@@ -22,7 +22,7 @@ kept on relative sibling links by design, so a resolving link there is
 confirmed-good, not unconfirmed markdown syntax like everything else in
 needs-review.
 
-Output: scratch-broken-links-{true,ignored,false-positives,db-tables-relative,needs-review}.txt
+Output: scratch-broken-links-{true,blocked,ignored,false-positives,db-tables-relative,needs-review}.txt
 
 By default this reuses the cached raw report from the last real run
 (scratch-broken-links-triage.txt) instead of re-invoking `mint broken-links`,
@@ -68,6 +68,16 @@ TREE_CHAR = "⎿"  # tree-branch glyph mint prefixes each reported target line w
 # design -- see project notes. A relative link from one page in this tree to
 # another that resolves is confirmed-good, not just "not yet confirmed".
 DB_TABLES_PREFIX = "en/database/tables/"
+
+# Targets under these prefixes don't exist yet on purpose -- the content is
+# blocked on other tracked work, not a link bug. .mintignore can't help here
+# (it's only consulted for targets that already resolve to a real file;
+# these don't exist at all yet). Update this list, don't reach for
+# .mintignore, when a new "known blocked, not broken" cluster shows up.
+KNOWN_BLOCKED = [
+    ("en/automation/crmscript/reference/", 108),
+    ("en/api/reference/restful/", 111),
+]
 
 
 def run_broken_links():
@@ -193,10 +203,16 @@ def mintignore_match(rel_path, patterns):
 
 
 def resolve_target(source_file, raw_target, tracked_exact, tracked_lower):
+    """Returns (resolved_path_or_None, reason_or_None, fragment, base).
+
+    `base` is the computed repo-relative path attempt even when resolution
+    fails -- used to match known-blocked prefixes (see main()) without
+    recomputing the same relative-path math a second time.
+    """
     pre_fragment, _, fragment = raw_target.partition("#")
     target = pre_fragment.split("?", 1)[0]
     if not target:
-        return None, "same-page anchor, not a page link", fragment
+        return None, "same-page anchor, not a page link", fragment, ""
 
     if target.startswith("/"):
         base = target.lstrip("/")
@@ -237,13 +253,13 @@ def resolve_target(source_file, raw_target, tracked_exact, tracked_lower):
 
     for cand in candidates:
         if cand in tracked_exact:
-            return cand, None, fragment
+            return cand, None, fragment, base
     for cand in candidates:
         matches = tracked_lower.get(cand.lower())
         if matches:
-            return None, f"case mismatch: link expects '{cand}', repo has {matches}", fragment
+            return None, f"case mismatch: link expects '{cand}', repo has {matches}", fragment, base
 
-    return None, "target file not found", fragment
+    return None, "target file not found", fragment, base
 
 
 @lru_cache(maxsize=None)
@@ -368,6 +384,7 @@ def main():
 
     buckets = {
         "true_broken": [],
+        "blocked": [],
         "ignored": [],
         "false_positive": [],
         "db_tables_relative": [],
@@ -375,9 +392,13 @@ def main():
     }
 
     for source_file, raw_target in pairs:
-        resolved, reason, fragment = resolve_target(source_file, raw_target, tracked_exact, tracked_lower)
+        resolved, reason, fragment, base = resolve_target(source_file, raw_target, tracked_exact, tracked_lower)
         if resolved is None:
-            buckets["true_broken"].append((source_file, raw_target, reason))
+            blocked_hit = next((issue for prefix, issue in KNOWN_BLOCKED if base.startswith(prefix)), None)
+            if blocked_hit:
+                buckets["blocked"].append((source_file, raw_target, f"blocked on #{blocked_hit}"))
+            else:
+                buckets["true_broken"].append((source_file, raw_target, reason))
             continue
         ignore_hit = mintignore_match(resolved, ignore_patterns)
         if ignore_hit:
@@ -402,12 +423,14 @@ def main():
 
     print()
     print(f"True broken:                        {len(buckets['true_broken'])}")
+    print(f"Blocked on tracked issue:            {len(buckets['blocked'])}")
     print(f"Ignored (.mintignore, by design):   {len(buckets['ignored'])}")
     print(f"False positive (raw <a>, checker):  {len(buckets['false_positive'])}")
     print(f"DB-tables relative (by design):     {len(buckets['db_tables_relative'])}")
     print(f"Needs review (unconfirmed syntax):  {len(buckets['needs_review'])}")
 
     write_bucket("true", buckets["true_broken"], lambda r: f"{r[0]}\t{r[1]}\t{r[2]}")
+    write_bucket("blocked", buckets["blocked"], lambda r: f"{r[0]}\t{r[1]}\t{r[2]}")
     write_bucket(
         "ignored",
         buckets["ignored"],
