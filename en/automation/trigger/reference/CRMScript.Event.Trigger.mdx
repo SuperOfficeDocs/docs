@@ -23,7 +23,7 @@ language: en
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -37,8 +37,8 @@ language: en
 | chatMessage.sessionId | session |
 | chatMessage.id | message ID |
 | chatMessage.message | message text |
-| chatMessage.type | type of message (&lt;a href=\"https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageType\"&gt;enum&lt;/a&gt;) |
-| chatMessage.specialType | Special type of message (&lt;a href=\"https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionSpecialType\"&gt;enum&lt;/a&gt;) |
+| chatMessage.type | type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageType)) |
+| chatMessage.specialType | Special type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionSpecialType)) |
 | chatMessage.specialParam | depends on type |
 | chatMessage.author | author name |
 
@@ -65,7 +65,7 @@ print("Params: " + param1 + " " + param2);
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -78,14 +78,14 @@ print("Params: " + param1 + " " + param2);
 | chatSession.customerPhone | person phone |
 | chatMessage.sessionId | session |
 | chatMessage.message | message text |
-| chatMessage.type | type of message (&lt;a href=\"https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageType\"&gt;enum&lt;/a&gt;) |
-| chatMessage.specialType | Special type of message (&lt;a href=\"https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageSpecialType\"&gt;enum&lt;/a&gt;) |
+| chatMessage.type | type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageType)) |
+| chatMessage.specialType | Special type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageSpecialType)) |
 | chatMessage.specialParam | depends on type |
 | chatMessage.author | author name |
 
 The message has a list of clickable options. Options are as JSON array in specialParam.
 
-&lt;Strong&gt;Output values&lt;/strong&gt;
+**Output values**
 &lt;table&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;chatMessage.message&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;chatMessage.specialType&lt;/td&gt;&lt;td&gt;Special type of message&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;
 </Note>
 
@@ -111,7 +111,7 @@ Corresponds to the webhook chatsession.created event.
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -120,7 +120,7 @@ Corresponds to the webhook chatsession.created event.
 | chatSession.customerAlias | person name from form |
 | chatSession.sessionKey | secret key |
 | chatSession.customerHost | hostname |
-| chatSession.status | session status (&lt;a href=\"https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionStatus\"&gt;enum&lt;/a&gt;) |
+| chatSession.status | session status ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionStatus)) |
 </Note>
 
 **Example:**
@@ -142,12 +142,12 @@ String param3 = ed.getInputValue("chatMessage.message");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
 | chatSession.id | the session ID |
-| chatSession.status | new status (&lt;a href=\"https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionStatus\"&gt;enum&lt;/a&gt;) |
+| chatSession.status | new status ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionStatus)) |
 </Note>
 
 **Example:**
@@ -166,11 +166,11 @@ String param1 = getVariable("chatSession.id");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 none
 
-&lt;Strong&gt;Output values&lt;/strong&gt;
+**Output values**
 
 | Variable | Description |
 |---|---|
@@ -193,14 +193,14 @@ print("window.alert('foo!');");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
 | username | user string |
 | targetId | temporary key info ID (optional) |
 
-&lt;Strong&gt;Output values&lt;/strong&gt;
+**Output values**
 
 | Variable | Description |
 |---|---|
@@ -223,7 +223,7 @@ String param1 = getVariable("personId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -246,7 +246,7 @@ String param1 = getVariable("personId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -269,7 +269,7 @@ String param1 = getVariable("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -304,7 +304,7 @@ There are several variables available in this context.
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -327,7 +327,7 @@ There are several variables available in this context.
 | to | message to header |
 | from | message from header |
 
-&lt;Strong&gt;Output values&lt;/strong&gt;
+**Output values**
 
 | Variable | Description |
 |---|---|
@@ -375,7 +375,7 @@ menu.addItem("List equipment", getProgram(1) + "&action=listExtraTable&extraTabl
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -409,7 +409,7 @@ String param1 = ed.getInputValue("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -435,7 +435,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -459,13 +459,13 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
 | customerId | person ID |
 
-&lt;Strong&gt;Output values&lt;/strong&gt;
+**Output values**
 
 | Variable | Description |
 |---|---|
@@ -488,7 +488,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -520,7 +520,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -557,7 +557,7 @@ String param1 = ed.getInputValue("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -590,7 +590,7 @@ String param1 = getVariable("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -661,7 +661,7 @@ String param1 = ed.getInputValue("AppointmentEntity.AppointmentId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -688,7 +688,7 @@ String param1 = ed.getInputValue("AppointmentEntity.AppointmentId");
 | ContactEntity.Faxes.length | Faxes length |
 | ContactEntity.GroupId | GroupId |
 | ContactEntity.Interests.length | Interests length |
-| ContactEntity.Interests[&lt;em&gt;].&lt;/em&gt; | List of interests |
+| ContactEntity.Interests[*].* | List of interests |
 | ContactEntity.Kananame | Kananame |
 | ContactEntity.Name | Name |
 | ContactEntity.NoMailing | No mailing |
@@ -737,7 +737,7 @@ if(ed.getInputValue("IsNew") == "true" && ed.getInputValue("ContactEntity.Catego
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -805,9 +805,9 @@ if(param1 == "true" && ed.getInputValue("DocumentEntity.DocumentTemplate.Name") 
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is only supported in New Service with CustomObject FeatureToggle&lt;/Strong&gt;
+**Note: This trigger is only supported in New Service with CustomObject FeatureToggle**
 
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -845,7 +845,7 @@ if(param1 == "true" && ed.getInputValue("TableName") == "y_cars")
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -937,7 +937,7 @@ String param1 = ed.getInputValue("PersonEntity.PersonId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -986,7 +986,7 @@ EventData ed = getEventData();
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1024,7 +1024,7 @@ for(Integer i = 0; i < param1.length(); i++)
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1102,7 +1102,7 @@ String param1 = ed.getInputValue("Quote.SaleId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1178,7 +1178,7 @@ String param1 = ed.getInputValue("QuoteLine.QuoteLineId");
 <Note>
 This trigger is only available as CRMScript trigger.
 
-&lt;strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1215,7 +1215,7 @@ ed.setMessage("Quote was approved with text " + version.GetApprovedText());
 <Note>
 This trigger is only available as CRMScript trigger.
 
-&lt;strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1250,7 +1250,7 @@ ed.setMessage("Quote was rejected with text " + version.GetApprovedText());
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1290,7 +1290,7 @@ String param1 = ed.getInputValue("ContactRelationEntity.RelationId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1383,7 +1383,7 @@ EventData ed = getEventData();
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1421,7 +1421,7 @@ for(Integer i = 0; i < param1.length(); i++)
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1459,8 +1459,8 @@ for(Integer i = 0; i < param1.length(); i++)
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is supported only in New Service&lt;/Strong&gt;
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Note: This trigger is supported only in New Service**
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1473,7 +1473,7 @@ for(Integer i = 0; i < param1.length(); i++)
 | MessageEntity.Attachments[x].* | List of attachments |
 | MessageEntity.Recipients.length | Length of recipients |
 | MessageEntity.Recipients[x].* | List of recipients |
-| MessageAction | See &lt;xref href=\"CRMScript.NetServer.MessageActionType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| MessageAction | See &lt;xref href="CRMScript.NetServer.MessageActionType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | IsNewTicket | Is New |
 | IsNewTicketMessage | Is new ticket message |
 | ActiveTicketId | Current ticket ID |
@@ -1497,11 +1497,11 @@ for(Integer i = 0; i < param1.length(); i++)
 | TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
 | TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
 | TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
-| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href=\"CRMScript.NetServer.TicketOrigin\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.Person.* | The primary person that this ticket is connected to |
 | TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
 | TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
-| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href=\"CRMScript.NetServer.TicketReadStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
 | TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
 | TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
@@ -1555,7 +1555,7 @@ if(status == "Closed")
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1626,7 +1626,7 @@ String param1 = ed.getInputValue("AppointmentEntity.AppointmentId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1653,7 +1653,7 @@ String param1 = ed.getInputValue("AppointmentEntity.AppointmentId");
 | ContactEntity.Faxes.length | Faxes length |
 | ContactEntity.GroupId | GroupId |
 | ContactEntity.Interests.length | Interests length |
-| ContactEntity.Interests[&lt;em&gt;].&lt;/em&gt; | List of interests |
+| ContactEntity.Interests[*].* | List of interests |
 | ContactEntity.Kananame | Kananame |
 | ContactEntity.Name | Name |
 | ContactEntity.NoMailing | No mailing |
@@ -1702,9 +1702,9 @@ ed.setBlockExecution(blockExecution);
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is only supported in New Service with CustomObject FeatureToggle&lt;/Strong&gt;
+**Note: This trigger is only supported in New Service with CustomObject FeatureToggle**
 
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1742,7 +1742,7 @@ if(param1 == "true" && ed.getInputValue("TableName") == "y_cars")
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1806,7 +1806,7 @@ String param1 = ed.getInputValue("IsNew");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1898,7 +1898,7 @@ String param1 = ed.getInputValue("PersonEntity.PersonId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1960,7 +1960,7 @@ if(ed.getInputValue("IsNew") == "true")
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -1998,7 +1998,7 @@ for(Integer i = 0; i < param1.length(); i++)
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2076,7 +2076,7 @@ String param1 = ed.getInputValue("Quote.SaleId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2152,7 +2152,7 @@ String param1 = ed.getInputValue("QuoteLine.QuoteLineId");
 <Note>
 This trigger is only available as CRMScript trigger.
 
-&lt;strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2198,7 +2198,7 @@ if(discountPercent.round() >= 40 && userGroup == "2"){
 <Note>
 This trigger is only available as CRMScript trigger.
 
-&lt;strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2230,7 +2230,7 @@ String activeQuoteVersion = ed.getInputValue("Quote.ActiveQuoteVersionId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2270,7 +2270,7 @@ String param1 = ed.getInputValue("ContactRelationEntity.RelationId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2352,7 +2352,7 @@ EventData ed = getEventData();
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2390,7 +2390,7 @@ for(Integer i = 0; i < param1.length(); i++)
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2428,8 +2428,8 @@ for(Integer i = 0; i < param1.length(); i++)
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is only supported in New Service&lt;/Strong&gt;
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Note: This trigger is only supported in New Service**
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2442,7 +2442,7 @@ for(Integer i = 0; i < param1.length(); i++)
 | MessageEntity.Attachments[x].* | List of attachments |
 | MessageEntity.Recipients.length | Length of recipients |
 | MessageEntity.Recipients[x].* | List of recipients |
-| MessageAction | See &lt;xref href=\"CRMScript.NetServer.MessageActionType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| MessageAction | See &lt;xref href="CRMScript.NetServer.MessageActionType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | IsNewTicket | Is New |
 | IsNewTicketMessage | Is new ticket message |
 | ActiveTicketId | Current ticket ID |
@@ -2466,11 +2466,11 @@ for(Integer i = 0; i < param1.length(); i++)
 | TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
 | TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
 | TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
-| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href=\"CRMScript.NetServer.TicketOrigin\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.Person.* | The primary person that this ticket is connected to |
 | TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
 | TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
-| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href=\"CRMScript.NetServer.TicketReadStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
 | TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
 | TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
@@ -2524,9 +2524,9 @@ if(ed.getInputValue("IsNewTicket") == "true")
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is only supported in New Service with CustomObject FeatureToggle&lt;/Strong&gt;
+**Note: This trigger is only supported in New Service with CustomObject FeatureToggle**
 
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2564,9 +2564,9 @@ if(ed.getInputValue("IsNew") == "true")
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is only supported in New Service&lt;/Strong&gt;
+**Note: This trigger is only supported in New Service**
 
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2593,11 +2593,11 @@ if(ed.getInputValue("IsNew") == "true")
 | TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
 | TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
 | TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
-| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href=\"CRMScript.NetServer.TicketOrigin\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.Person.* | The primary person that this ticket is connected to |
 | TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
 | TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
-| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href=\"CRMScript.NetServer.TicketReadStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
 | TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
 | TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
@@ -2651,8 +2651,8 @@ if(ed.getInputValue("IsNewTicket") == "true")
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is only supported in New Service&lt;/Strong&gt;
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Note: This trigger is only supported in New Service**
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2665,7 +2665,7 @@ if(ed.getInputValue("IsNewTicket") == "true")
 | MessageEntity.Attachments[x].* | List of attachments |
 | MessageEntity.Recipients.length | Length of recipients |
 | MessageEntity.Recipients[x].* | List of recipients |
-| MessageAction | See &lt;xref href=\"CRMScript.NetServer.MessageActionType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| MessageAction | See &lt;xref href="CRMScript.NetServer.MessageActionType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | IsNewTicket | Is New |
 | IsNewTicketMessage | Is new ticket message |
 | ActiveTicketId | Current ticket ID |
@@ -2689,11 +2689,11 @@ if(ed.getInputValue("IsNewTicket") == "true")
 | TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
 | TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
 | TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
-| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href=\"CRMScript.NetServer.TicketOrigin\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.Person.* | The primary person that this ticket is connected to |
 | TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
 | TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
-| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href=\"CRMScript.NetServer.TicketReadStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt; |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
 | TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
 | TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
 | TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
@@ -2747,9 +2747,9 @@ if(ed.getInputValue("IsNewTicketMessage") == "true")
 ```
 
 <Note>
-&lt;Strong&gt;Note: This trigger is only supported in New Service&lt;/Strong&gt;
+**Note: This trigger is only supported in New Service**
 
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2786,7 +2786,7 @@ newId.save();
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2817,7 +2817,7 @@ String param1 = getVariable("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2844,7 +2844,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2871,7 +2871,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2898,7 +2898,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2925,7 +2925,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2952,7 +2952,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -2979,7 +2979,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3006,7 +3006,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3035,7 +3035,7 @@ Called when screen is constructed, useful for setting default values into HTML e
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3062,7 +3062,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3089,7 +3089,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3116,7 +3116,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3143,7 +3143,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3170,7 +3170,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3197,7 +3197,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3224,7 +3224,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3251,7 +3251,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3278,7 +3278,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3305,7 +3305,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3332,7 +3332,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3359,7 +3359,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3386,7 +3386,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3413,7 +3413,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3440,7 +3440,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3467,7 +3467,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3494,7 +3494,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3521,7 +3521,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3548,7 +3548,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3575,7 +3575,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3602,7 +3602,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3629,7 +3629,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3656,7 +3656,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3683,7 +3683,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3710,7 +3710,7 @@ String param1 = getVariable("button");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3718,8 +3718,8 @@ String param1 = getVariable("button");
 | ticketId | request ID |
 | personId | customer (person) ID |
 | contactId | company (contact) ID |
-| ticketStatus.old | old value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
-| ticketStatus.new | new value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
 </Note>
 
 **Example:**
@@ -3738,7 +3738,7 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3766,7 +3766,7 @@ String param1 = getVariable("personId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3794,7 +3794,7 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3822,7 +3822,7 @@ String param1 = getVariable("personId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3850,7 +3850,7 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3878,7 +3878,7 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3886,8 +3886,8 @@ String param1 = getVariable("ticketId");
 | ticketId | request ID |
 | personId | customer (person) ID |
 | contactId | company (contact) ID |
-| ticketStatus.old | old value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
-| ticketStatus.new | new value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
 </Note>
 
 **Example:**
@@ -3906,7 +3906,7 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3914,8 +3914,8 @@ String param1 = getVariable("ticketId");
 | ticketId | request ID |
 | personId | customer (person) ID |
 | contactId | company (contact) ID |
-| ticketStatus.old | old value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
-| ticketStatus.new | new value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
 </Note>
 
 **Example:**
@@ -3934,7 +3934,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3942,8 +3942,8 @@ String param1 = getVariable("customerId");
 | ticketId | request ID |
 | personId | customer (person) ID |
 | contactId | company (contact) ID |
-| ticketStatus.old | old value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
-| ticketStatus.new | new value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
 </Note>
 
 **Example:**
@@ -3962,7 +3962,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -3987,7 +3987,7 @@ String param1 = getVariable("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -4012,7 +4012,7 @@ String param1 = getVariable("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -4037,7 +4037,7 @@ String param1 = getVariable("entryId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -4075,7 +4075,7 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -4083,8 +4083,8 @@ String param1 = getVariable("ticketId");
 | ticketId | request ID |
 | personId | customer (person) ID |
 | contactId | company (contact) ID |
-| ticketStatus.old | old value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
-| ticketStatus.new | new value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
 </Note>
 
 **Example:**
@@ -4103,7 +4103,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -4111,8 +4111,8 @@ String param1 = getVariable("customerId");
 | ticketId | request ID |
 | personId | customer (person) ID |
 | contactId | company (contact) ID |
-| ticketStatus.old | old value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
-| ticketStatus.new | new value (enum &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;) |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
 </Note>
 
 **Example:**
@@ -4131,7 +4131,7 @@ String param1 = getVariable("customerId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -4155,7 +4155,7 @@ String param1 = getVariable("ticketId");
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|
@@ -4187,7 +4187,7 @@ Called when a ticket is being saved.
 ```
 
 <Note>
-&lt;Strong&gt;Input values&lt;/strong&gt;
+**Input values**
 
 | Variable | Description |
 |---|---|

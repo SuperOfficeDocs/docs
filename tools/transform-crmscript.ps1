@@ -115,6 +115,16 @@ function Clean-Description {
     $Text = $Text -replace '&quot;', '"'
     $Text = $Text -replace '&amp;', '&'
 
+    # The hand-rolled YAML parser never unescapes backslash-escaped quotes inside
+    # attribute values (e.g. <a href=\"...\">), so do it here before matching them
+    $Text = $Text -replace '\\"', '"'
+
+    # Convert embedded HTML links and bold/italic markup to markdown equivalents
+    # before the generic <, > escaping below turns them into unreadable tag soup
+    $Text = [regex]::Replace($Text, '(?is)<a\s+href="([^"]+)"[^>]*>(.*?)</a>', '[$2]($1)')
+    $Text = $Text -replace '(?i)</?strong>', '**'
+    $Text = $Text -replace '(?i)</?em>', '*'
+
     # Convert embedded HTML tables to real markdown tables before the generic
     # <, > escaping below turns them into unreadable escaped tag soup
     $Text = Convert-HtmlTablesToMarkdown $Text

@@ -39,7 +39,7 @@ Bool addAttachmentData(Integer attachmentId)
 <Note>
 Must be used together with POST, PUT or PATCH.
 
-Many REST endpoints expect the content to be uploaded as binary data when adding files. You can use this method for doing that. automatically set the Content-Type header based on the content type recorded in the database for the attachment. If you want to override the Content-Type, be sure to set a Content-Type header &lt;strong&gt;after&lt;/strong&gt; doing the addAttachmentData call.
+Many REST endpoints expect the content to be uploaded as binary data when adding files. You can use this method for doing that. automatically set the Content-Type header based on the content type recorded in the database for the attachment. If you want to override the Content-Type, be sure to set a Content-Type header **after** doing the addAttachmentData call.
 </Note>
 
 **Example:**
@@ -104,7 +104,7 @@ Bool addDocumentData(Integer documentId)
 <Note>
 Must be used together with POST, PUT or PATCH.
 
-Many REST endpoints expect the content to be uploaded as binary data when adding files. You can use this method for doing that. automatically set the Content-Type header based on the extension of the document being added. If you want to override the Content-Type, be sure to set a Content-Type header &lt;strong&gt;after&lt;/strong&gt; doing the addDocumentData call.
+Many REST endpoints expect the content to be uploaded as binary data when adding files. You can use this method for doing that. automatically set the Content-Type header based on the extension of the document being added. If you want to override the Content-Type, be sure to set a Content-Type header **after** doing the addDocumentData call.
 </Note>
 
 **Example:**
