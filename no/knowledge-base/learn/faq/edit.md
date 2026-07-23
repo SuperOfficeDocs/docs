@@ -34,7 +34,7 @@ redirect_from:
 
 1. Klikk på **OK**. Endringene lagres.
 
-## <a id="delete"></a>Slette FAQ-oppføring
+## Slette FAQ-oppføring {#delete}
 
 1. Gå til <i class="ph ph-list" aria-label="Main menu"></i> i toppraden og velg **Kunnskapsbase** > **FAQ**.
 1. Gå til mappen som inneholder FAQ-oppføringen.

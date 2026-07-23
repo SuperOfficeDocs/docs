@@ -63,7 +63,7 @@ If you would like to save an email attachment but not the email itself in SuperO
 * [Archive email attachments with WebTools and Mail Link][9]
 * [Archive email attachments with Gmail Link][5]
 
-## <a id="preview"></a>Preview saved email in SuperOffice
+## Preview saved email in SuperOffice {#preview}
 
 Click an email in the [Activities section tab][14] to view its details in the [side panel][15]. (Enable the preview by selecting it from the drop-down menu at the top of the side panel).
 

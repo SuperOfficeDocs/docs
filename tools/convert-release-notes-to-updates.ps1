@@ -458,7 +458,7 @@ function Process-UpdateBlock {
             $content = $content.Trim()
 
             # Build section
-            $sectionOutput = "### <a id=`"$anchor`"></a>$badge $sectionTitle`n`n$content"
+            $sectionOutput = "### $badge $sectionTitle {#$anchor}`n`n$content"
 
             $newSections += $sectionOutput
         }

@@ -34,7 +34,7 @@ redirect_from:
 
 1. Klik op **OK**. De wijzigingen worden opgeslagen.
 
-## <a id="delete"></a>Items in Veelgestelde vragen verwijderen
+## Items in Veelgestelde vragen verwijderen {#delete}
 
 1. Ga naar <i class="ph ph-list" aria-label="Main menu"></i> in de bovenste balk en selecteer **Kennisdatabase** > **Veelgestelde vragen**.
 1. Ga naar de map waar het item in Veelgestelde vragen zich bevindt.

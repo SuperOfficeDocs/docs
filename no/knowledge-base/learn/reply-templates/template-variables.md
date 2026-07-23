@@ -69,7 +69,7 @@ Når du redigerer svarmaler og utsendelser, kan du sette inn malvariabler ved å
 | link.subscription | Koblingen for å avslutte abonnementet |
 | link.viewShipmentMessage | Koblingen for å vise utsendelsesmeldingen på nettet |
 
-## <a id="config"></a>Vedlikehold
+## Vedlikehold {#config}
 
 | Variabel | Beskrivelse|
 |---|---|
@@ -90,7 +90,7 @@ Når du redigerer svarmaler og utsendelser, kan du sette inn malvariabler ved å
 | config.warning | Banen til loggfilene |
 | config.wwwPath | Systembanen for WWW-filer |
 
-## <a id="customer"></a>Variabler for en valgt person
+## Variabler for en valgt person {#customer}
 
 | Variabel | Beskrivelse|
 |---|---|
@@ -114,7 +114,7 @@ Når du redigerer svarmaler og utsendelser, kan du sette inn malvariabler ved å
 | customer.username | Brukernavn i SuperOffice Kundesenter |
 | makeSalutation(customer.id) | Åpning |
 
-## <a id="ticket"></a>Variabler for saker (bare SuperOffice Service)
+## Variabler for saker (bare SuperOffice Service) {#ticket}
 
 | Variabel | Beskrivelse|
 |---|---|
@@ -157,7 +157,7 @@ Når du redigerer svarmaler og utsendelser, kan du sette inn malvariabler ved å
 | ticket.urlWithSession | URL-en for å få tilgang til saken for agenter som inneholder gjeldende brukersesjon |
 | ticket.userUrl | URL-en for å få tilgang til saken for agentene |
 
-## <a id="company"></a>Variabler for valgt firma
+## Variabler for valgt firma {#company}
 
 | Variabel | Beskrivelse|
 |---|---|
@@ -184,7 +184,7 @@ Når du redigerer svarmaler og utsendelser, kan du sette inn malvariabler ved å
 | ourContact.email | Våre kontakter e-postadresse |
 | ourContact.name | Vår kontakt |
 
-## <a id="user"></a>Variabler for svarmaler (bruker) (bare SuperOffice Service)
+## Variabler for svarmaler (bruker) (bare SuperOffice Service) {#user}
 
 Vær oppmerksom på at disse variablene ikke fungerer for automatiserte svar sendt av systemet, fordi slike svar ikke er knyttet til en bruker.
 

@@ -20,7 +20,7 @@ Teilnehmer, die zu einer Folgeaufgabe eingeladen sind, werden eine Benachrichtig
 
 ![Einladungen empfangen -screenshot][img2]
 
-## <a id="accept"></a>Einladungen annehmen oder ablehnen
+## Einladungen annehmen oder ablehnen {#accept}
 
 * Klicken Sie auf das Glocken-Symbol in der oberen Leiste, um Ihre Einladungen anzuzeigen.
 * Klicken Sie auf den Link in der Benachrichtigungen-Panel, um die Folgeaufgabe zu öffnen.

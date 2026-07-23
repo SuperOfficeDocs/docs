@@ -32,7 +32,7 @@ As a partner, you may change the technical contact and the list of error reporti
 
 The [steps to update all App Store information][3] are the same.
 
-### <a id="links"></a>Details
+### Details {#links}
 
 | Setting | Description | Read more |
 |---|---|---|

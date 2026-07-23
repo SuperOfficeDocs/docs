@@ -43,7 +43,7 @@ Use the cogwheel (<i class="ph ph-gear" aria-hidden="true"></i>) in the list's h
 | Dropped out | Participant dropped out, always with a specified drop-out reason. |
 | Cancelled | Participant will not complete the flow because an admin ended the flow. |
 
-## <a id="logic"></a>Enrollment and progression through the flow
+## Enrollment and progression through the flow {#logic}
 
 Before each step, SuperOffice CRM re-assess whether the participant can progress.
 

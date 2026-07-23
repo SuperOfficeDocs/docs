@@ -62,7 +62,7 @@ Felttilordning definerer hvordan ERP-felter tilsvarer SuperOffice-felter, og hvo
 
 Du kan nå fortsette med listetilordning, standardverdier eller rangering av felter - *eller* aktivere koblingen hvis ingen videre konfigurasjon er nødvendig.
 
-## <a id="list-mapping"></a>Listetilordning
+## Listetilordning {#list-mapping}
 
 Hvis du har tilordnet listefelt, som kategori eller status, må du også knytte de enkelte elementene i listene mellom ERP-systemet og SuperOffice.
 
@@ -80,7 +80,7 @@ Hvis du har tilordnet listefelt, som kategori eller status, må du også knytte 
 
 1. Klikk på **Lagre**, og aktiver ERP-koblingen hvis ingen ytterligere konfigurasjon er nødvendig.
 
-## <a id="defaults"></a>Standardverdier for synkronisering
+## Standardverdier for synkronisering {#defaults}
 
 Standardverdier bidrar til å redusere manuell registrering av data for felt som vanligvis har en fast eller forutsigbar verdi. Dette er spesielt nyttig ved import av store datamengder eller hvis brukerne ikke skal måtte angi samme verdi gjentatte ganger eller merke av et felt som alltid skal være valgt.
 
@@ -108,7 +108,7 @@ Standardverdier bidrar til å redusere manuell registrering av data for felt som
 
 1. Gjenta ved behov for å legge til flere standardverdier.
 
-## <a id="rank"></a>Rangere felter som vises i ERP-fanen
+## Rangere felter som vises i ERP-fanen {#rank}
 
 Angi rekkefølgen på feltene som vises i **ERP**-fanen i bildene Firma, Person og Prosjekt. Alle tilgjengelige felt listes opp her, men kun de som er markert for visning vil vises i fanen.
 
@@ -126,7 +126,7 @@ Angi rekkefølgen på feltene som vises i **ERP**-fanen i bildene Firma, Person 
 
 1. Klikk på **Fullført** for å lagre endringene.
 
-## <a id="priority"></a>Angi synkroniseringsprioritet
+## Angi synkroniseringsprioritet {#priority}
 
 Hvis flere ERP-koblinger er aktive samtidig, kan du definere hvilken kobling som skal ha prioritet ved høy datatrafikk.
 

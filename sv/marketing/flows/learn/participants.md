@@ -43,7 +43,7 @@ Använd kugghjulet (<i class="ph ph-gear" aria-hidden="true"></i>) i listans hea
 | Bortfall | Deltagaren har hoppat av, alltid med en specificerad bortfallsorsak. |
 | Avbruten | Deltagaren kommer inte att slutföra flödet eftersom en administratör avslutade flödet. |
 
-## <a id="logic"></a>Registrering och progression genom flödet
+## Registrering och progression genom flödet {#logic}
 
 Före varje steg omvärderar SuperOffice CRM om deltagaren kan fortsätta.
 

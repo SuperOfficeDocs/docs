@@ -63,7 +63,7 @@ Hvis du vil lagre et e-postvedlegg, men ikke selve e-posten i SuperOffice CRM, k
 * [Arkiver e-postvedlegg med WebTools og Mail Link][9]
 * [Arkiver e-postvedlegg med Gmail Link][5]
 
-## <a id="preview"></a>Forhåndsvis lagret e-post i SuperOffice
+## Forhåndsvis lagret e-post i SuperOffice {#preview}
 
 Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [sidepanelet][15]. (Aktiver forhåndsvisningen ved å velge den fra rullegardinmenyen øverst på sidepanelet).
 

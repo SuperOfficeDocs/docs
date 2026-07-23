@@ -61,7 +61,7 @@ Webpaneler understøtter en række indholdstyper:
 * Personskærmbillede
 * Ekstra tabelpostskærmbillede
 
-## <a id="www"></a>www-fanen
+## www-fanen {#www}
 
 På steder som Firma, Person, Projekt og Salg vises webpaneler ofte under **www**-fanen.
 

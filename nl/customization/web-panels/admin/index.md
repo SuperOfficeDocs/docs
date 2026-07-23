@@ -61,7 +61,7 @@ De **weergavelocatie** wordt gedefinieerd wanneer u het paneel configureert. Dit
 * Persoonscherm
 * Extra tabelitemscherm
 
-## <a id="www"></a>Het www-tabblad
+## Het www-tabblad {#www}
 
 Op plaatsen zoals Bedrijf, Persoon, Project en Verkoop worden webpanelen vaak weergegeven onder het **www**-tabblad.
 

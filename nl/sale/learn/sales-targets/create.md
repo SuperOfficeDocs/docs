@@ -99,7 +99,7 @@ Als u onjuiste cijfers heeft toegevoegd of een gebruiker het bedrijf heeft verla
 
 Klik op de knop **Taak** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) om de verkooptargets voor het geselecteerde jaar te exporteren naar Excel of PDF.
 
-## <a id="import"></a>Importeren
+## Importeren {#import}
 
 U kunt de hele targetslijst exporteren, bewerken in een spreadsheet en vervolgens weer importeren in targets.
 

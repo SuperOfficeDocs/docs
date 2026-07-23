@@ -34,7 +34,7 @@ redirect_from:
 
 1. Click **OK**. The changes are saved.
 
-## <a id="delete"></a>Delete FAQ entry
+## Delete FAQ entry {#delete}
 
 1. Go to <i class="ph ph-list" aria-label="Main menu"></i> in the top bar and select **Knowledge base** > **FAQ**.
 1. Go to the folder where the FAQ entry is located.

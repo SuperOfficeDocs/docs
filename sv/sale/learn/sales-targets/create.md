@@ -99,7 +99,7 @@ Om du har lagt till felaktiga siffror eller om en användare har slutat kan du v
 
 Klicka på knappen **Uppgift** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) för att exportera försäljningsmålen för det valda året till Excel eller PDF.
 
-## <a id="importera"></a>Importera
+## Importera {#importera}
 
 Du kan exportera hela mållistan, redigera den i ett kalkylblad och sedan importera tillbaka den i Mål.
 

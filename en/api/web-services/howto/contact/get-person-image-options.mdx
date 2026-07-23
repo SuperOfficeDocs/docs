@@ -16,7 +16,7 @@ language: en
 
 SuperOffice offers several ways to retrieve a person's image. They differ mainly in **how they behave when the person has no image**, so pick the option that matches how your integration needs to handle a missing picture.
 
-## <a id="agent-methods"></a>Option 1: Agent methods
+## Option 1: Agent methods {#agent-methods}
 
 Two agent methods return a single person's image as binary data.
 
@@ -57,7 +57,7 @@ Both methods take only a `PersonId`. Neither accepts a size parameter - `GetPers
 If the person has no image, the two methods behave differently: `PersonAgent.GetPersonImage` returns an error, while `BLOBAgent.GetPersonImage` returns a 200 response with an empty result. If your integration must treat "no image" as a normal case rather than an error, prefer the BLOB agent method, or use [option 4][2] with `ifBlank` set explicitly.
 </Note>
 
-## <a id="batch-and-sized-retrieval"></a>Option 2: Batch and sized retrieval
+## Option 2: Batch and sized retrieval {#batch-and-sized-retrieval}
 
 To fetch images for multiple people in one call, or to request a specific size, use `POST /api/v1/Agents/Person/GetPersonImages`:
 
@@ -106,7 +106,7 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-## <a id="archive-provider"></a>Option 3: Archive provider
+## Option 3: Archive provider {#archive-provider}
 
 The `SimplePerson` archive provider exposes person data, including the image, through the OData-style archive search endpoint. Its `portraitThumbnail` column returns the person's image.
 
@@ -116,7 +116,7 @@ GET /api/v1/Archive/SimplePerson?$select=personId,firstName,lastName,portraitThu
 
 This approach is useful when you're already querying the archive for other person fields (name, category, contact) and want the thumbnail included in the same result set, rather than making a separate image call per person. Because it's a search/list provider, it naturally omits or blanks the `portraitThumbnail` value for people without an image, instead of returning an error.
 
-## <a id="restful-api"></a>Option 4: RESTful API
+## Option 4: RESTful API {#restful-api}
 
 The RESTful `Person` entity exposes the image directly on the resource, and lets you control what happens when the person has no image.
 

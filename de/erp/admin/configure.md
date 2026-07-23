@@ -62,7 +62,7 @@ Die Feldzuordnung definiert, wie ERP-Felder SuperOffice-Feldern zugeordnet werde
 
 Sie können jetzt mit Listenzuordnung, Standardwerten oder Sortierung der Felder fortfahren - oder die Verbindung aktivieren, wenn keine weitere Konfiguration erforderlich ist.
 
-## <a id="list-mapping"></a>Listenzuordnung
+## Listenzuordnung {#list-mapping}
 
 Wenn Sie Listenfelder wie Kategorie oder Status zugeordnet haben, müssen Sie auch die einzelnen Listenelemente zwischen dem ERP-System und SuperOffice abgleichen.
 
@@ -80,7 +80,7 @@ Wenn Sie Listenfelder wie Kategorie oder Status zugeordnet haben, müssen Sie au
 
 1. Klicken Sie auf **Speichern** und aktivieren Sie anschließend die ERP-Verbindung, wenn keine weitere Konfiguration notwendig ist.
 
-## <a id="defaults"></a>Standardwerte für Synchronisation
+## Standardwerte für Synchronisation {#defaults}
 
 Standardwerte helfen dabei, die manuelle Dateneingabe für Felder zu reduzieren, die typischerweise einen festen oder vorhersehbaren Wert haben. Dies ist besonders hilfreich bei der Verarbeitung großer Datenmengen oder wenn Benutzer nicht wiederholt denselben Wert eingeben oder eine Option aktivieren sollen, die immer ausgewählt sein sollte.
 
@@ -108,7 +108,7 @@ Standardwerte helfen dabei, die manuelle Dateneingabe für Felder zu reduzieren,
 
 1. Wiederholen Sie diesen Vorgang, um weitere Standardwerte zu definieren.
 
-## <a id="rank"></a>Felder, die auf der ERP-Registerkarte angezeigt werden, sortieren
+## Felder, die auf der ERP-Registerkarte angezeigt werden, sortieren {#rank}
 
 Legen Sie die Reihenfolge der Felder fest, die auf der Registerkarte **ERP** in den Ansichten Firma, Person und Projekt angezeigt werden. Alle verfügbaren Felder werden hier aufgelistet, aber nur die markierten Felder erscheinen tatsächlich auf der Registerkarte.
 
@@ -126,7 +126,7 @@ Legen Sie die Reihenfolge der Felder fest, die auf der Registerkarte **ERP** in 
 
 1. Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.
 
-## <a id="priority"></a>Sync-Priorität festlegen
+## Sync-Priorität festlegen {#priority}
 
 Wenn mehrere ERP-Verbindungen gleichzeitig aktiv sind, können Sie festlegen, welche Verbindung bei starkem Datenverkehr Priorität haben soll.
 

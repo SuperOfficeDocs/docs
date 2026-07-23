@@ -97,7 +97,7 @@ Wenn Sie einige nicht korrekte Nummern hinzugefügt haben oder wenn ein Benutzer
 
 Klicken Sie auf die Schaltfläche **Aufgabe** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>), wenn Sie das Vertriebsziel für das ausgewählte Jahr in eine Excel- oder PDF-Datei exportieren wollen.
 
-## <a id="import"></a>Import
+## Import {#import}
 
 Sie können die gesamte Zielliste exportieren, in einer Tabelle bearbeiten und dann wieder in Ziele importieren.
 

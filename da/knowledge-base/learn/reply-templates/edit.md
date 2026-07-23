@@ -39,7 +39,7 @@ Når du redigerer en svarskabelon, kan det enten betyde:
 
 1. Klik på **OK** for at gemme ændringerne.
 
-## <a id="delete"></a>Slet en svarskabelon
+## Slet en svarskabelon {#delete}
 
 1. Følg trin 1-3 i **Rediger en svarskabelon** for at åbne skærmbilledet **Egenskaber for svarskabelon**.
 1. Klik på **Slet**-knappen nederst i skærmbilledet.

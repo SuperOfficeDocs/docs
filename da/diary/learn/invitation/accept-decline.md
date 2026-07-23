@@ -20,7 +20,7 @@ Deltagere, der er blevet inviteret til en opfølgning, modtager en advarsel på 
 
 ![Modtag invitationer -screenshot][img2]
 
-## <a id="accept"></a>Accepter eller afvis invitationer
+## Accepter eller afvis invitationer {#accept}
 
 * Klik på klokkeikonet i toplinjen for at se dine invitationer.
 * Klik på linket i Notifikationer-panel for at åbne opfølgingen.

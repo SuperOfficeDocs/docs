@@ -30,7 +30,7 @@ Congratulations, your standard application is ready!
 
 You can [change the application configuration and the App Store information][3] in the Developer Portal.
 
-## <a id="beta"></a>Beta period for standard apps
+## Beta period for standard apps {#beta}
 
 All new or updated standard applications begin with a beta status when they are listed in the SuperOffice App Store. This phase lasts until the application meets a pre-defined set of conditions.
 

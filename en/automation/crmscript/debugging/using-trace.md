@@ -78,7 +78,7 @@ Using the call-stack depth, you can do much more advanced stepping when inspecti
 1. Update the fields as needed.
 1. Click **OK**.
 
-## <a id="fields"></a>Field reference
+## Field reference {#fields}
 
 | Field | Description |
 |---|---|

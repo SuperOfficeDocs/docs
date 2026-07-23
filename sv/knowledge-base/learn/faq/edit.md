@@ -34,7 +34,7 @@ redirect_from:
 
 1. Klicka på **OK**. Ändringarna sparas.
 
-## <a id="delete"></a>Ta bort FAQ-poster
+## Ta bort FAQ-poster {#delete}
 
 1. Gå till <i class="ph ph-list" aria-label="Main menu"></i> i det övre fältet och välj **Kunskapsbas** > **Vanliga frågor**.
 1. Gå till den mapp som FAQ-posten ligger i.

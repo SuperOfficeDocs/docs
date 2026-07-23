@@ -69,7 +69,7 @@ When editing reply templates and mailings, you can insert template variables by 
 | link.subscription | The link to cancel your subscription |
 | link.viewShipmentMessage | The link to view the mailing message online |
 
-## <a id="config"></a>Maintenance
+## Maintenance {#config}
 
 | Variable | Description|
 |---|---|
@@ -90,7 +90,7 @@ When editing reply templates and mailings, you can insert template variables by 
 | config.warning | The path for the warning log files |
 | config.wwwPath | The system path for WWW files |
 
-## <a id="customer"></a>Variables for a selected contact
+## Variables for a selected contact {#customer}
 
 | Variable | Description|
 |---|---|
@@ -114,7 +114,7 @@ When editing reply templates and mailings, you can insert template variables by 
 | customer.username | User name in SuperOffice Customer Centre |
 | makeSalutation(customer.id) | Salutation |
 
-## <a id="ticket"></a>Variables for requests (only SuperOffice Service)
+## Variables for requests (only SuperOffice Service) {#ticket}
 
 | Variable | Description|
 |---|---|
@@ -161,7 +161,7 @@ When editing reply templates and mailings, you can insert template variables by 
 | ticket.urlWithSession | The URL for accessing the request for user agents containing the current user session |
 | ticket.userUrl | The URL for accessing the request for user agents |
 
-## <a id="company"></a>Variables for selected company
+## Variables for selected company {#company}
 
 | Variable | Description|
 |---|---|
@@ -188,7 +188,7 @@ When editing reply templates and mailings, you can insert template variables by 
 | ourContact.email | Our contacts email address |
 | ourContact.name | Our contact |
 
-## <a id="user"></a>Variables for reply templates (user) (only SuperOffice Service)
+## Variables for reply templates (user) (only SuperOffice Service) {#user}
 
 Please note that these variables will not work for automated replies sent by the system, because such replies are not linked to a user.
 

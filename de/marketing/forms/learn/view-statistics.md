@@ -41,7 +41,7 @@ Um sich Statistiken zum Formular anzeigen zu lassen, gehen Sie zur Registerkarte
 
 * **Formularübermittlungen:** Hier können Sie alle [übermittelten Formulare anzeigen und verarbeiten][1]. Ein rotes Symbol auf der Registerkarte weist auf neu übermittelte Formulare hin.
 
-## <a id="filter"></a>Formularübermittlung filtern
+## Formularübermittlung filtern {#filter}
 
 Um effizienter zu arbeiten, können Sie die Datensätze filtern, um eine oder mehrere Formularstatusse oder Meine/Primäre Gruppen anzuzeigen. Sie finden die **Filter**-Schaltfläche (<i class="ph ph-funnel" aria-label="Funnel icon"></i>) in der unteren rechten Ecke.
 

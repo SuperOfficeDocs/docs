@@ -63,7 +63,7 @@ Als u een e-mailbijlage wilt opslaan, maar niet de e-mail zelf in SuperOffice CR
 * [E-mailbijlagen archiveren met WebTools en Mail Link][9]
 * [E-mailbijlagen archiveren met Gmail Link][5]
 
-## <a id="preview"></a>Opgeslagen e-mail bekijken in SuperOffice
+## Opgeslagen e-mail bekijken in SuperOffice {#preview}
 
 Klik op een e-mail in het [sectietabblad Activiteiten][14] om de details te bekijken in het [zijpaneel][15]. (Schakel de voorbeeldweergave in door deze te selecteren in het vervolgkeuzemenu bovenaan het zijpaneel).
 

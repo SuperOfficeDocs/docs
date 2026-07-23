@@ -43,7 +43,7 @@ Verwenden Sie das Zahnrad (<i class="ph ph-gear" aria-hidden="true"></i>) im Kop
 | Abbruch | Teilnehmer ist ausgeschieden, immer mit einem angegebenen Ausscheidungsgrund. |
 | Abbruch | Teilnehmer wird den Flow nicht abschließen, weil ein Administrator den Flow beendet hat. |
 
-## <a id="logic"></a>Einschreibung und Fortschritt im Flow
+## Einschreibung und Fortschritt im Flow {#logic}
 
 Vor jedem Schritt überprüft SuperOffice CRM, ob der Teilnehmer fortschreiten kann.
 

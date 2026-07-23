@@ -61,7 +61,7 @@ Nettleserfaner støtter en rekke innholdstyper:
 * Personskjermbilde
 * Ekstra tabelloppføringsskjermbilde
 
-## <a id="www"></a>www-fanen
+## www-fanen {#www}
 
 På steder som Firma, Person, Prosjekt og Salg vises nettleserfaner ofte under **www**-fanen.
 

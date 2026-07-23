@@ -63,7 +63,7 @@ Wenn Sie einen E-Mail-Anhang, nicht aber die E-Mail in SuperOffice CRM speichern
 * [E-Mail-Anhänge mit WebTools und Mail Link archivieren][9]
 * [E-Mail-Anhänge mit GMail Link archivieren][5]
 
-## <a id="preview"></a>Gespeicherte E-Mail in SuperOffice anzeigen
+## Gespeicherte E-Mail in SuperOffice anzeigen {#preview}
 
 Klicken Sie auf eine E-Mail in der [Bereichsregisterkarte Aktivitäten][14], um ihre Details in der [Seitenleiste][15] anzuzeigen. (Aktivieren Sie die Vorschau, indem Sie sie aus dem Dropdown-Menü oben in der Seitenleiste auswählen).
 

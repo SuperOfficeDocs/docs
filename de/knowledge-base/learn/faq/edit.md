@@ -34,7 +34,7 @@ redirect_from:
 
 1. Klicken Sie auf **OK**. Die Änderungen werden gespeichert.
 
-## <a id="delete"></a>FAQ-Einträge löschen
+## FAQ-Einträge löschen {#delete}
 
 1. Gehen Sie zum <i class="ph ph-list" aria-label="Main menu"></i> in der oberen Leiste und wählen Sie **Wissensdatenbank** > **FAQ** aus.
 1. Wechseln Sie zu dem Ordner, in dem sich der FAQ-Eintrag befindet.

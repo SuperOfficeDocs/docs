@@ -63,7 +63,7 @@ Hvis du vil gemme en vedhæftet fil i en e-mail, men ikke selve mailen i SuperOf
 * [Arkiver vedhæftede filer fra e-mails med WebTools og Mail Link][9]
 * [Arkiver vedhæftede filer fra e-mails med Gmail Link][5]
 
-## <a id="preview"></a>Forhåndsvis gemt e-mail i SuperOffice
+## Forhåndsvis gemt e-mail i SuperOffice {#preview}
 
 Klik på en e-mail i [detaljekortet Aktiviteter][14] for at se dens detaljer i [sidepanelet][15]. (Aktiver forhåndsvisningen ved at vælge den fra rullegardinmenuen øverst i sidepanelet).
 

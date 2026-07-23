@@ -69,7 +69,7 @@ Bij het bewerken van antwoordsjablonen en mailings kunt u sjabloonvariabelen inv
 | link.subscription | Koppeling om uw abonnement te beëindigen |
 | link.viewShipmentMessage | Koppeling om het mailingbericht online weer te geven |
 
-## <a id="config"></a>Onderhoud
+## Onderhoud {#config}
 
 | Variabele | Beschrijving|
 |---|---|
@@ -90,7 +90,7 @@ Bij het bewerken van antwoordsjablonen en mailings kunt u sjabloonvariabelen inv
 | config.warning | Pad naar de waarschuwingslogbestanden |
 | config.wwwPath | Systeempad voor WWW-bestanden |
 
-## <a id="customer"></a>Variabelen voor een geselecteerde contactpersoon
+## Variabelen voor een geselecteerde contactpersoon {#customer}
 
 | Variabele | Beschrijving|
 |---|---|
@@ -114,7 +114,7 @@ Bij het bewerken van antwoordsjablonen en mailings kunt u sjabloonvariabelen inv
 | customer.username | Gebruikersnaam in SuperOffice Customer Centre |
 | makeSalutation(customer.id) | Begroeting |
 
-## <a id="ticket"></a>Variabelen voor verzoeken (alleen SuperOffice Service)
+## Variabelen voor verzoeken (alleen SuperOffice Service) {#ticket}
 
 | Variabele | Beschrijving|
 |---|---|
@@ -157,7 +157,7 @@ Bij het bewerken van antwoordsjablonen en mailings kunt u sjabloonvariabelen inv
 | ticket.urlWithSession | URL om het verzoek voor gebruiker agenten te benaderen incl. huidige gebruikerssessie |
 | ticket.userUrl | URL om het verzoek voor gebruiker agenten te benaderen |
 
-## <a id="company"></a>Variabelen voor geselecteerd bedrijf
+## Variabelen voor geselecteerd bedrijf {#company}
 
 | Variabele | Beschrijving|
 |---|---|
@@ -184,7 +184,7 @@ Bij het bewerken van antwoordsjablonen en mailings kunt u sjabloonvariabelen inv
 | ourContact.email | Ons contact e-mailadres |
 | ourContact.name | Ons contact |
 
-## <a id="user"></a>Variabelen voor antwoordsjablonen (gebruiker) (alleen SuperOffice Service)
+## Variabelen voor antwoordsjablonen (gebruiker) (alleen SuperOffice Service) {#user}
 
 Let op: Deze variabelen werken niet voor geautomatiseerde antwoorden van het systeem, omdat zulke antwoorden niet zijn gekoppeld aan een gebruiker.
 

@@ -20,7 +20,7 @@ language: no
 
 SuperOffice CRM Suite gir én samlet CRM-plattform som dekker salg, markedsføring og service. Alle brukere i organisasjonen din deler én plan, og planen bestemmer hvilke funksjoner som er tilgjengelige i hele organisasjonen.
 
-## <a id="plans"></a>Planer
+## Planer {#plans}
 
 Fem planer er tilgjengelige. Planene er kumulative - hver plan inkluderer alt i planene under den.
 
@@ -59,7 +59,7 @@ Skaleringsmålinger sporer løpende forbruk. Når forbruket overstiger grunnkvot
 * Løste saker
 * Lagring
 
-### <a id="plan-limits"></a>Plangrenser
+### Plangrenser {#plan-limits}
 
 Plangrenser er faste per nivå. Når en grense nås, begrenses den relaterte funksjonen til du reduserer forbruket eller oppgraderer.
 
