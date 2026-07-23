@@ -43,7 +43,7 @@ Bruk tannhjulikonet (<i class="ph ph-gear" aria-hidden="true"></i>) i listens to
 | Dropout | Deltakeren har trukket seg ut, alltid med en spesifisert avbruddsårsak. |
 | Avbrutt | Deltakeren vil ikke fullføre flyten fordi en administrator avsluttet den. |
 
-## <a id="logic"></a>Påmelding og progresjon gjennom flyten
+## Påmelding og progresjon gjennom flyten {#logic}
 
 Før hvert trinn vurderer SuperOffice CRM om deltakeren kan gå videre.
 

@@ -99,7 +99,7 @@ Hvis du har lagt til verdier som ikke er riktige, eller en bruker har sluttet i 
 
 Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) for å eksportere salgsmålet for det valgte året til Excel eller PDF.
 
-## <a id="import"></a>Import
+## Import {#import}
 
 Du kan eksportere hele mållisten, redigere den i et regneark og deretter importere den tilbake til Mål.
 

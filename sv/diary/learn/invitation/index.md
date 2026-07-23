@@ -24,7 +24,7 @@ Händelser med medarbetare skapas genom att de kopplas till händelsen som delta
 
 När vi sparar händelsen läggs en inbjudan till den person vi bjudit in och visas i personens kalender på rätt datum och tid. Detta sker endast om den inbjudna personen också är en kollega. Du kan även bjuda in personer som tillhör andra företag; dessa kommer inte ha en egen kalender där händelsen visas, men det kommer istället att visas i detaljkortet **Aktiviteter** på deras kontaktkort.
 
-## <a id="status"></a>Status
+## Status {#status}
 
 Användarna du väljer att koppla till en händelse får ett meddelande om detta på skärmen. Om du öppnar händelsen på fliken **Deltagare** visas en lista över de deltagare och resurser du har kopplat till händelsen. Med hjälp av symbolerna bredvid namnen kan du också se vilka som har sagt ja eller nej och vilka resurser som är bokade:
 

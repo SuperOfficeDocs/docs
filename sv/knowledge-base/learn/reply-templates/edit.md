@@ -39,7 +39,7 @@ Att redigera en svarsmall kan innebära två olika saker:
 
 1. Klicka på **OK** för att spara ändringarna.
 
-## <a id="delete"></a>Ta bort svarsmall
+## Ta bort svarsmall {#delete}
 
 1. Följ steg 1-3 från **Redigera svarsmall** för att öppna skärmen **Egenskaper för svarsmall**.
 1. Klicka på **Ta bort** längst ned på skärmen.

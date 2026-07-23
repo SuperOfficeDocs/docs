@@ -20,7 +20,7 @@ Deltakere som er blitt invitert til en oppfølging, får et varsel.
 
 ![Motta invitasjoner -screenshot][img2]
 
-## <a id="accept"></a>Godta eller avslå invitasjoner
+## Godta eller avslå invitasjoner {#accept}
 
 * Klikk på bjelleikonet i toppfeltet for å se invitasjonene dine.
 * Klikk på lenken i Varsler-panelet for å åpne oppfølgingen.

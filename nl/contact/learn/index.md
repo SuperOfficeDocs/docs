@@ -38,7 +38,7 @@ Gebruik de functie **Zoeken** om specifieke personen te vinden of records te fil
 | [www][21] | Snelkoppeling naar een URL voor toegang tot externe gegevens of webpagina's over de contactpersoon. |
 | [ERP][22] | Verbindt de contactpersoon met het ERP-systeem voor integratie of synchronisatie. |
 
-## <a id="section-tabs"></a>Sectietabbladen op het scherm Persoon
+## Sectietabbladen op het scherm Persoon {#section-tabs}
 
 Onder de persoonskaart bieden [sectietabbladen][16] snelle toegang tot informatie die is gekoppeld aan de persoon:
 

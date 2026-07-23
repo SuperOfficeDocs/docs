@@ -39,7 +39,7 @@ Het bewerken van een antwoordsjabloon kan betrekking hebben op een van twee ding
 
 1. Klik op **OK** om de wijzigingen op te slaan.
 
-## <a id="delete"></a>Antwoordsjabloon verwijderen
+## Antwoordsjabloon verwijderen {#delete}
 
 1. Volg stappen 1-3 van **Antwoordsjabloon bewerken** om het scherm **Eigenschappen antwoordsjabloon** te openen.
 1. Klik op **Verwijderen** onder in het scherm.

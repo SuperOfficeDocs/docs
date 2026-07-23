@@ -4,7 +4,7 @@ title: How to use links in docs
 description: How to format links to pages, headings, external sites, and downloadable files, including reference-style links.
 keywords: links, reference-style links, bookmark links, anchors, download link
 author: digitaldiina
-date: 07.22.2026
+date: 07.23.2026
 content_type: reference
 language: en
 ---
@@ -135,20 +135,16 @@ Bookmark links go to a specific heading on the current or another page.
 
 **Add anchor:**
 
-You can use either the *id* or *name* attribute on the `<a>` tag. The anchor label must be lowercase and not contain spaces. Do **not** use a self-closing tag.
+Use Mintlify's [custom heading ID](https://www.mintlify.com/docs/create/text#custom-heading-ids) syntax: append `{#anchor-label}` to the heading line. The label must be lowercase and not contain spaces.
 
 ```markdown
-## <a id="anchor-label"></a>Heading text
+## Heading text {#anchor-label}
 ```
 
-or
-
-```markdown
-## <a name="anchor-label"></a>Heading text
-```
+This only applies to headings. The older `<a id="anchor-label"></a>`/`<a name="anchor-label"></a>` pattern still renders (Mintlify passes raw HTML through) but is **discouraged on headings** going forward: it leaves a heading with two IDs — the explicit one and Mintlify's own auto-generated slug of the heading text — instead of the single canonical ID `{#anchor-label}` produces. The `<a id>` pattern is still the *only* option for an anchor target that isn't a heading (for example, a point inside a `<Tab>` or an `<Update>` block) — keep using it there.
 
 <Note>
-Add explicit anchors only when the heading is long, hard to write/remember, or expected to change. By default, rely on the bookmark links Mintlify generates automatically from the heading text.
+On **translated pages**, always add an explicit anchor to any heading you link to from elsewhere - the ID has to stay identical across languages (for example, `#fields` on both the English and German version of a page) even though the heading text itself is translated, and Mintlify's auto-generated slug is derived from that translated text so it can't serve that role. On untranslated content, add an explicit anchor only when the heading is long, hard to write/remember, or expected to change - otherwise rely on the bookmark links Mintlify generates automatically from the heading text.
 </Note>
 
 ## Link to download a file

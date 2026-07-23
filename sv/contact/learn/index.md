@@ -38,7 +38,7 @@ Använd funktionen **Sök** för att hitta specifika kontakter eller filtrera po
 | [www][21] | Snabbåtkomst till en webbadress för att visa externa data eller webbsidor relaterade till kontakten. |
 | [ERP][22] | Kopplar kontakten till ERP-systemet för integration eller synkronisering. |
 
-## <a id="section-tabs"></a>Detaljkort under Kontakt
+## Detaljkort under Kontakt {#section-tabs}
 
 Längst ned i fönstret **Kontakt** finns följande [detaljkort][16] som standard:
 

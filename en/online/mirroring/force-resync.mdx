@@ -31,7 +31,7 @@ Common reasons:
 * You suspect schema drift between source and replica.
 * You want to revalidate a single table against the source after an incident.
 
-## <a id="recover-from-extended-downtime-longer-than-7-days"></a>Recover from extended downtime (longer than 7 days)
+## Recover from extended downtime (longer than 7 days) {#recover-from-extended-downtime-longer-than-7-days}
 
 Change events are streamed through Kafka topics with a default retention of **7 days**. If the client is offline longer than that window, change events will have been purged from the topics. The client cannot fill the gap by replaying older events &mdash; it has to be re-snapshotted.
 

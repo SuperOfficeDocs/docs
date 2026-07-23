@@ -41,7 +41,7 @@ For at se statistik om din formular skal du gå til fanen **Formularer** og klik
 
 * **Formularindsendelser:** Her kan du se og [behandle alle indsendte formularer][1]. Et rødt ikon på fanen angiver nye formularindsendelser
 
-## <a id="filter"></a>Filtrer formularindsendelser overblik
+## Filtrer formularindsendelser overblik {#filter}
 
 For at arbejde mere effektivt kan du filtrere posterne for at vise en eller flere formularstatusser eller Mine/Primære grupper. Du finder **Filtrer**-knappen (<i class="ph ph-funnel" aria-label="Funnel icon"></i>) i nederste højre hjørne.
 

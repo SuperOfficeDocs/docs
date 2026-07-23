@@ -39,7 +39,7 @@ Editing a reply template can mean one of two things:
 
 1. Click **OK** to save your changes.
 
-## <a id="delete"></a>Delete reply template
+## Delete reply template {#delete}
 
 1. Follow steps 1-3 from **Edit reply template** to open the **Reply template properties** screen.
 1. Click the **Delete** button at the bottom of the screen.

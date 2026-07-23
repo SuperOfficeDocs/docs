@@ -38,7 +38,7 @@ Brug **Søg**-funktionen til at finde bestemte personer eller filtrere poster. F
 | [www][21] | Genvej til en URL for adgang til eksterne data eller websider relateret til personen. |
 | [ERP][22] | Forbinder personen til ERP-systemet for integration eller synkronisering. |
 
-## <a id="section-tabs"></a>Detaljekort på Person
+## Detaljekort på Person {#section-tabs}
 
 Nederst i skærmbilledet **Person** giver [detaljekortene][16] hurtig adgang til oplysninger relateret til personen:
 

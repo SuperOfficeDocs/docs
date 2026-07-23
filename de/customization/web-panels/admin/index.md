@@ -61,7 +61,7 @@ Der **Anzeigeort** wird beim Konfigurieren des Panels definiert. Dies steuert, w
 * Personenansicht
 * Zusatztabelleneintragsansicht
 
-## <a id="www"></a>Die www-Registerkarte
+## Die www-Registerkarte {#www}
 
 An Orten wie Firma, Person, Projekt und Verkauf werden Web-Bildschirme häufig unter der **www**-Registerkarte angezeigt.
 

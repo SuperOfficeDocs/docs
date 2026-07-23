@@ -39,7 +39,7 @@ Redigering av en svarmal kan bety to forskjellige ting:
 
 1. Klikk på **OK** for å lagre endringene.
 
-## <a id="delete"></a>Slett svarmal
+## Slett svarmal {#delete}
 
 1. Følg trinn 1-3 i **Rediger svarmal** for å åpne bildet **Egenskaper for svarmal**.
 1. Klikk på **Slett**-knappen nederst i bildet.

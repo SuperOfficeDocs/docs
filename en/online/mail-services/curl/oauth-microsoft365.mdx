@@ -28,7 +28,7 @@ How SuperOffice Service (Onsite) connects to Microsoft 365 mailboxes using OAuth
 | [Password / basic auth][1] | IMAP and SMTP with password authentication |
 | [cURL vs NetServer][1] | Which mail transport is active and how to check |
 
-## <a id="step-0"></a>Step 0 - Verify server connectivity first
+## Step 0 - Verify server connectivity first {#step-0}
 
 Before changing any configuration in SuperOffice, verify that the server hosting SuperOffice Service can reach Microsoft's mail endpoints and that the required ports are open. Run these commands **on the SO server itself**, not from a workstation.
 
@@ -146,7 +146,7 @@ After setup, NetServer/MailKit handles email retrieval silently using [stored to
 1. Select **Change OAuth** and complete the Microsoft sign-in.
 1. Select **OK**.
 
-## <a id="tokens"></a>Token lifecycle and re-authentication
+## Token lifecycle and re-authentication {#tokens}
 
 | Token | Lifetime | Purpose |
 | --- | --- | --- |

@@ -99,7 +99,7 @@ If you have added some numbers that are not correct, or a user has quit the comp
 
 Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) to export the sales target for the selected year to Excel or PDF.
 
-## <a id="import"></a>Import
+## Import {#import}
 
 You can export the whole target list, edit it in a spreadsheet and then import it back into Targets.
 

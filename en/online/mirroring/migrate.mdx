@@ -127,7 +127,7 @@ Until SuperOffice has confirmed the change, the cloud continues to attempt outbo
 
 This step is intentionally last and is only carried out once the new setup has stabilised &mdash; it makes a fast [rollback][3] possible.
 
-## <a id="schema-alignment-dbo-vs-crm7"></a>Schema alignment: `dbo` vs `crm7`
+## Schema alignment: `dbo` vs `crm7` {#schema-alignment-dbo-vs-crm7}
 
 Legacy customers chose the schema for their replica database: some standardised on `crm7`, others on `dbo`. The application code that consumes the replica is written against whichever was chosen, so the schema is part of the contract between the replica and its consumers.
 
@@ -166,7 +166,7 @@ If schema alignment is not desirable (for example, you want to consolidate to a 
 
 * **Excluded tables.** The new client uses the same base list of [blocked tables][4] as the legacy service, with a few additions to keep the replica cleaner and faster &mdash; notably the `binaryobject` table and dictionary information tables.
 
-## <a id="rollback"></a>Rollback
+## Rollback {#rollback}
 
 **Before the rename** (during the parallel period), no special action is needed. The legacy service is still running, applications are still pointed at the original replica, and the `_new` database can simply be dropped and re-created.
 

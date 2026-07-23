@@ -20,7 +20,7 @@ Deltagare som har bjudits in till en händelse får ett varningsmeddelande på t
 
 ![Få inbjudningar -screenshot][img2]
 
-## <a id="accept"></a>Acceptera eller tacka nej till inbjudningar
+## Acceptera eller tacka nej till inbjudningar {#accept}
 
 * Klicka på klockikonet i toppraden för att se dina inbjudningar.
 * Klicka på länken i Aviseringar-panelen för att öppna händelsen.

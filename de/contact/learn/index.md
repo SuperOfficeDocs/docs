@@ -38,7 +38,7 @@ Verwenden Sie die **Suche**, um bestimmte Personen zu finden oder Datensätze zu
 | [www][21] | Verknüpfung zu einer URL für den Zugriff auf externe Daten oder Webseiten zur Person. |
 | [ERP][22] | Verbindet die Person mit dem ERP-System zur Integration oder Synchronisation. |
 
-## <a id="section-tabs"></a>Bereichsregisterkarten in der Ansicht Person
+## Bereichsregisterkarten in der Ansicht Person {#section-tabs}
 
 Unterhalb der Personenkarte bieten die [Bereichsregisterkarten][16] schnellen Zugriff auf mit der aktuellen Person verknüpfte Informationen:
 

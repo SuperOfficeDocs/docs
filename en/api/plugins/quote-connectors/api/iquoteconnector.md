@@ -26,7 +26,7 @@ The user may click the TEST button in the configuration dialog, which calls the 
 
 The id of this connection in the CRM system
 
-## <a id="get-configuration-fields"></a>Dictionary&lt;string, FieldMetadataInfo\> GetConfigurationFields()
+## Dictionary&lt;string, FieldMetadataInfo\> GetConfigurationFields() {#get-configuration-fields}
 
 This is a request for metadata needed to populate the Quote connection configuration admin dialog that takes in the information needed to create a connection to an ERP system.
 The values entered in the dialog are stored in the SuperOffice db and used when
@@ -45,7 +45,7 @@ to run. The connection has not been created yet.
 
 Returns: Ok or not + a status or error message. This message is shown in a result dialog.
 
-## <a id="init-connection"></a>PluginResponseInfo InitializeConnection(SuperOffice.CRM.QuoteConnectionInfo connectionData, SuperOffice.CRM.UserInfo user, bool isOnTravel, Dictionary&lt;string, string\> connectionConfigFields, IProductRegisterCache productRegister)
+## PluginResponseInfo InitializeConnection(SuperOffice.CRM.QuoteConnectionInfo connectionData, SuperOffice.CRM.UserInfo user, bool isOnTravel, Dictionary&lt;string, string\> connectionConfigFields, IProductRegisterCache productRegister) {#init-connection}
 
  Set up the connection to the ERP system.
  Will be called as part of SuperOffice client startup for each installed connection.

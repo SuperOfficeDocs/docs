@@ -63,7 +63,7 @@ Om du vill spara en e-postbilaga men inte själva e-postmeddelandet i SuperOffic
 * [Arkivera e-postbilagor med WebTools och Mail Link][9]
 * [Arkivera e-postbilagor med Gmail Link][5]
 
-## <a id="preview"></a>Förhandsgranska sparad e-post i SuperOffice
+## Förhandsgranska sparad e-post i SuperOffice {#preview}
 
 Klicka på ett e-postmeddelande på [detaljkortet Aktiviteter][14] för att visa information om det i [sidopanelen][15]. (Aktivera förhandsgranskningen genom att välja den i listrutan högst upp på sidopanelen).
 

@@ -75,7 +75,7 @@ Redirects default to permanent (308 - search engines transfer ranking, browsers 
 
 A trailing `/` on a source is equivalent to `/index` - `/release-notes/8.5/pocket-crm/` and `/release-notes/8.5/pocket-crm/index` are the same rule. Don't add both; it's dead weight.
 
-### <a id="external-destinations-need-html"></a>External destinations need `.html`
+### External destinations need `.html` {#external-destinations-need-html}
 
 A redirect to our own site uses a plain path (`/da/admin/import/create-spreadsheet`). A redirect to the legacy help archive needs the full URL **including `.html`** to actually resolve:
 
@@ -88,7 +88,7 @@ A redirect to our own site uses a plain path (`/da/admin/import/create-spreadshe
 
 Easy to miss since every other destination in this file is a bare path.
 
-## <a id="wildcards"></a>Wildcards
+## Wildcards {#wildcards}
 
 A `*` in the source matches one or more path segments, letting one rule stand in for many literal entries. Two shapes, both used in our own `config/redirects.json`:
 

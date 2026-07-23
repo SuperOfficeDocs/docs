@@ -62,7 +62,7 @@ Bij veldtoewijzing bepaalt u welke ERP-velden overeenkomen met welke SuperOffice
 
 U kunt nu doorgaan met lijsttoewijzing, standaardwaarden of het rangschikken van velden, of de verbinding activeren als verdere configuratie niet nodig is.
 
-## <a id="list-mapping"></a>Lijsttoewijzing
+## Lijsttoewijzing {#list-mapping}
 
 Als u lijstvelden hebt toegewezen, zoals categorie of status, moet u ook de afzonderlijke lijstitems toewijzen tussen het ERP-systeem en SuperOffice.
 
@@ -80,7 +80,7 @@ Als u lijstvelden hebt toegewezen, zoals categorie of status, moet u ook de afzo
 
 1. Klik op **Opslaan** en activeer de ERP-verbinding als er geen verdere configuratie nodig is.
 
-## <a id="defaults"></a>Standaardwaarden voor synchronisatie
+## Standaardwaarden voor synchronisatie {#defaults}
 
 Standaardwaarden helpen om handmatige gegevensinvoer te verminderen voor velden die meestal een vaste of voorspelbare waarde hebben. Dit is vooral handig bij het importeren van grote hoeveelheden gegevens of wanneer gebruikers telkens dezelfde waarde moeten invoeren of een vakje moeten aanvinken dat altijd actief moet zijn.
 
@@ -108,7 +108,7 @@ Standaardwaarden helpen om handmatige gegevensinvoer te verminderen voor velden 
 
 1. Herhaal indien nodig om meerdere standaardwaarden toe te voegen.
 
-## <a id="rank"></a>Velden rangschikken die worden weergegeven op ERP-tabblad
+## Velden rangschikken die worden weergegeven op ERP-tabblad {#rank}
 
 Stel de volgorde in van velden die worden weergegeven op het **ERP**-tabblad van de schermen Bedrijf, Persoon en Project. Alle beschikbare velden worden hier weergegeven, maar alleen velden die zijn gemarkeerd voor weergave verschijnen daadwerkelijk op het tabblad.
 
@@ -126,7 +126,7 @@ Stel de volgorde in van velden die worden weergegeven op het **ERP**-tabblad van
 
 1. Klik op **Gereed** om uw wijzigingen op te slaan.
 
-## <a id="priority"></a>Synchronisatieprioriteit instellen
+## Synchronisatieprioriteit instellen {#priority}
 
 Als meerdere ERP-verbindingen tegelijkertijd actief zijn, kunt u aangeven welke verbinding prioriteit moet krijgen bij zware gegevensverwerking.
 

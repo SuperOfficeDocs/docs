@@ -39,7 +39,7 @@ Die Bearbeitung einer Antwortvorlage kann auf zwei Arten erfolgen:
 
 1. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-## <a id="delete"></a>Antwortvorlage löschen
+## Antwortvorlage löschen {#delete}
 
 1. Folgen Sie den Schritten 1-3 unter **Antwortvorlage bearbeiten**, um die Ansicht **Eigenschaften der Antwortvorlage** zu öffnen.
 1. Klicken Sie unten in der Ansicht auf die Schaltfläche **Löschen**.

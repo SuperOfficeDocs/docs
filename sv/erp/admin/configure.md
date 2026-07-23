@@ -62,7 +62,7 @@ Fältkopplingar definierar hur ERP-fält motsvarar SuperOffice-fält och hur dat
 
 Du kan nu fortsätta med listmappning, standardvärden eller fältrangordning *eller* aktivera kopplingen om ingen ytterligare konfiguration krävs.
 
-## <a id="list-mapping"></a>Listmappning
+## Listmappning {#list-mapping}
 
 Om du kopplade några listfält, till exempel kategori eller status, måste du även koppla enskilda listelement mellan ERP-systemet och SuperOffice.
 
@@ -80,7 +80,7 @@ Om du kopplade några listfält, till exempel kategori eller status, måste du �
 
 1. Klicka på **Spara**, och aktivera ERP-kopplingen om ingen ytterligare konfiguration krävs.
 
-## <a id="defaults"></a>Standardvärden för synkronisering
+## Standardvärden för synkronisering {#defaults}
 
 Standardvärden minskar behovet av manuell inmatning i fält som vanligtvis har ett fast eller förutsägbart värde. Det är särskilt användbart vid import av stora datamängder eller när användare inte ska behöva ange samma värde upprepade gånger eller markera en ruta som alltid ska vara markerad.
 
@@ -108,7 +108,7 @@ Standardvärden minskar behovet av manuell inmatning i fält som vanligtvis har 
 
 1. Upprepa vid behov för att definiera fler standardvärden.
 
-## <a id="rank"></a>Ordna fält som visas på ERP-fliken
+## Ordna fält som visas på ERP-fliken {#rank}
 
 Ställ in ordningen på fälten som visas på fliken **ERP** i fönstren Företag, Kontakt och Projekt. Alla tillgängliga fält visas här, men endast de markerade för visning visas på fliken.
 
@@ -126,7 +126,7 @@ Ställ in ordningen på fälten som visas på fliken **ERP** i fönstren Företa
 
 1. Klicka på **Klar** för att spara ändringarna.
 
-## <a id="priority"></a>Ange Sync-prioritet
+## Ange Sync-prioritet {#priority}
 
 Om flera ERP-kopplingar är aktiva samtidigt kan du ange vilken koppling som ska prioriteras vid hög datatrafik.
 

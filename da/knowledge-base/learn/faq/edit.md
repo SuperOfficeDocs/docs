@@ -34,7 +34,7 @@ redirect_from:
 
 1. Klik på **OK**. Ændringerne gemmes.
 
-## <a id="delete"></a>Sletning af FAQ-post
+## Sletning af FAQ-post {#delete}
 
 1. Gå til <i class="ph ph-list" aria-label="Main menu"></i> på toplinjen, og vælg **Vidensbase** > **FAQ**.
 1. Gå til den mappe, som FAQ-posten ligger i.

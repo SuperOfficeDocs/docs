@@ -20,7 +20,7 @@ language: en
 
 SuperOffice CRM Suite provides a single, integrated CRM platform that covers sales, marketing, and service. All users in your organization share one plan, and the plan determines which features are available across your entire organization.
 
-## <a id="plans"></a>Plans
+## Plans {#plans}
 
 Five plans are available. Plans are cumulative - each plan includes everything in the plans below it.
 
@@ -59,7 +59,7 @@ Scaling metrics track ongoing consumption. When your usage exceeds the base allo
 * Resolved service requests
 * Storage
 
-### <a id="plan-limits"></a>Plan limits
+### Plan limits {#plan-limits}
 
 Plan limits are fixed per tier. When a limit is reached, the related feature is restricted until you reduce usage or upgrade.
 

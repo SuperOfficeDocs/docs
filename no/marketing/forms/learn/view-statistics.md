@@ -41,7 +41,7 @@ For å vise statistikk om skjemaet, går til fanen **Skjemaer** og klikk på skj
 
 * **Skjemainnsendinger:** Her kan du se og [behandle alle innsendte skjemaer][1]. Et rødt ikon i fanen angir ny skjemainnsending.
 
-## <a id="filter"></a>Filtrere skjemainnsendinger
+## Filtrere skjemainnsendinger {#filter}
 
 For å jobbe mer effektivt, kan du filtrere oppføringene for å vise en eller flere skjemastatuser eller Mine/Primære grupper. Du finner **Filtrer**-knappen (<i class="ph ph-funnel" aria-label="Funnel icon"></i>) i nedre høyre hjørne.
 

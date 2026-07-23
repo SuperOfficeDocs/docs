@@ -43,7 +43,7 @@ Brug tandhjulet (<i class="ph ph-gear" aria-hidden="true"></i>) i listen's heade
 | Frafald | Deltageren er frafaldet, altid med en specificeret frafaldsårsag. |
 | Annulleret | Deltageren vil ikke fuldføre flowet, fordi en administrator afsluttede flowet. |
 
-## <a id="logic"></a>Tilmelding og progression gennem flowet
+## Tilmelding og progression gennem flowet {#logic}
 
 Før hvert trin revurderer SuperOffice CRM, om deltageren kan fortsætte.
 

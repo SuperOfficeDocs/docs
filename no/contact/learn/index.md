@@ -38,7 +38,7 @@ Bruk funksjonen **Søk** for å finne spesifikke personer eller filtrere oppfør
 | [www][21] | Snarvei til en URL for å få tilgang til eksterne data eller nettsteder relatert til personen. |
 | [ERP][22] | Knytter personen til ERP-systemet for integrering eller synkronisering. |
 
-## <a id="section-tabs"></a>Detaljkort i Person-bildet
+## Detaljkort i Person-bildet {#section-tabs}
 
 Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon som er knyttet til personen:
 

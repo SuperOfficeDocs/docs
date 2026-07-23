@@ -61,7 +61,7 @@ Webbpaneler stöder en rad innehållstyper:
 * Kontaktskärm
 * Extra tabellpostskärm
 
-## <a id="www"></a>www-fliken
+## www-fliken {#www}
 
 På platser som Företag, Kontakt, Projekt och Försäljning visas webbpaneler ofta under **www**-fliken.
 

@@ -20,7 +20,7 @@ language: de
 
 SuperOffice CRM Suite stellt eine einheitliche, integrierte CRM-Plattform bereit, die Vertrieb, Marketing und Service abdeckt. Alle Benutzer in Ihrer Organisation teilen einen Plan, und der Plan bestimmt, welche Funktionen in der gesamten Organisation verfügbar sind.
 
-## <a id="plans"></a>Pläne
+## Pläne {#plans}
 
 Es stehen fünf Pläne zur Verfügung. Die Pläne sind kumulativ - jeder Plan enthält alles aus den Plänen darunter.
 
@@ -59,7 +59,7 @@ Skalierungsmetriken verfolgen den laufenden Verbrauch. Wenn Ihr Verbrauch das im
 * Gelöste Serviceanfragen
 * Speicherplatz
 
-### <a id="plan-limits"></a>Plangrenzen
+### Plangrenzen {#plan-limits}
 
 Plangrenzen sind pro Stufe fest. Wenn eine Grenze erreicht wird, wird die zugehörige Funktion eingeschränkt, bis Sie den Verbrauch reduzieren oder upgraden.
 

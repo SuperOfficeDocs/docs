@@ -60,7 +60,7 @@ It is important to keep in mind that there's not a 1:1 mapping of labels and tha
 | user account | user | ejuser | User |
 | database owner | tenant | Company | |
 
-## <a id="associate"></a>Employees (internal)
+## Employees (internal) {#associate}
 
 The **associate** database table represents employees, resources, and other users - except for external persons.
 
@@ -118,7 +118,7 @@ The **associate list** is an MDO list type that you can retrieve from the databa
 
 [How to get associate list from cache][19]
 
-## <a id="blob"></a>Person picture and BLOBs
+## Person picture and BLOBs {#blob}
 
 Pictures are stored in the BLOB table. The BLOBs are linked to other records in the system using the [BinaryObjectLink table][14].
 

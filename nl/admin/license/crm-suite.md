@@ -20,7 +20,7 @@ language: nl
 
 SuperOffice CRM Suite biedt één geïntegreerd CRM-platform voor verkoop, marketing en service. Alle gebruikers in uw organisatie delen één plan, en het plan bepaalt welke functies beschikbaar zijn in uw gehele organisatie.
 
-## <a id="plans"></a>Plannen
+## Plannen {#plans}
 
 Er zijn vijf plannen beschikbaar. Plannen zijn cumulatief - elk plan bevat alles uit de plannen eronder.
 
@@ -59,7 +59,7 @@ Schaalmaatstaven volgen het doorlopende verbruik. Wanneer uw gebruik het basisbu
 * Opgeloste serviceverzoeken
 * Opslag
 
-### <a id="plan-limits"></a>Planlimieten
+### Planlimieten {#plan-limits}
 
 Planlimieten zijn vast per laag. Wanneer een limiet is bereikt, wordt de gerelateerde functie beperkt totdat u het gebruik vermindert of upgradet.
 

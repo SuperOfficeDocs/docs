@@ -62,7 +62,7 @@ The **display location** is defined when you configure the panel. This controls 
 * Contact screen
 * Extra table entry screen
 
-## <a id="www"></a>The www tab
+## The www tab {#www}
 
 In places like Company, Contact, Project, and Sale, web panels are often displayed under the **www** tab.
 

@@ -42,7 +42,7 @@ The latest release is [**version 11.1.13**][7] - 17.06.2026.
 
 Different integration components are released on separate schedules. See the [integration release overview][12] for the latest versions.
 
-## <a id="pilot"></a>Ongoing pilot programs
+## Ongoing pilot programs {#pilot}
 
 We use **pilot programs** to assess how well the features and functions meet our users' **needs and expectations**, to collect feedback, and identify potential problems. The feedback from the pilot phase is valuable for refining the features and functions in SuperOffice. It helps us address any issues or concerns before releasing them to all our users. For more details, see our [overview of pilot programs][17].
 

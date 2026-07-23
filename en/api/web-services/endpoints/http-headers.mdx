@@ -18,7 +18,7 @@ HTTP headers that the SuperOffice WebAPI understands:
 * If-Modified-Since and If-Unmodified-Since (REST only)
 * SO-TimeZone
 
-## <a name="accept-language"></a>Multiple languages
+## Multiple languages {#accept-language}
 
 The API supports internationalization.
 
@@ -96,7 +96,7 @@ SO-Culture defaults to the language, so you only need to specify it when it is d
  SO-Culture: sv
 ```
 
-## <a name="content-type"></a>Content types
+## Content types {#content-type}
 
 The API supports both JSON and XML responses. Use the `Accept` header to specify which you would like to receive.
 
@@ -155,7 +155,7 @@ Returns a JSON representation of the same (contact 123):
 }
 ```
 
-## <a name="modified-unmodified"></a>Modified or unmodified
+## Modified or unmodified {#modified-unmodified}
 
 <Note>
 These headers apply only to the **REST WebAPI** (not Agents).
@@ -197,7 +197,7 @@ This will return a **412 Precondition failed** response if the contact has been 
 
 This is telling you that your cached copy of the data is no good anymore. It has been modified on the server after you fetched it.
 
-## <a name="so-timezone"></a>SO-TIMEZONE
+## SO-TIMEZONE {#so-timezone}
 
 You specify the [time zone][1] using the `SO-TIMEZONE` HTTP header. It can be either an ID or a time-zone name.
 
@@ -219,7 +219,7 @@ This will convert dates to/from the given time zone, but it will leave the dates
 
 This is the way that the WCF service API works, and how the WebAPI has worked since its release. It leaves time zones up to the client.
 
-### <a name="includetzoffset"></a>includeTZOffset
+### includeTZOffset {#includetzoffset}
 
 ```http
 GET /appointment/123

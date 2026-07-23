@@ -24,7 +24,7 @@ Du lager oppfølginger med andre medarbeidere ved å knytte dem til oppfølginge
 
 Når vi lagrer møtet, blir en invitasjon lagt til personen vi inviterte og vises i vedkommendes dagbok på riktig dato og tidspunkt. Dette skjer bare hvis den inviterte personen også er en kollega. Du kan også invitere personer som tilhører andre firma; disse vil ikke ha en egen dagbok hvor møtet vises, men det vil i stedet bli vist i detaljkortet **Aktiviteter** på deres personkort.
 
-## <a id="status"></a>Status
+## Status {#status}
 
 Brukerne du har valgt å knytte til en oppfølging, får melding om dette på skjermen. Hvis du åpner oppfølgingen på fanen **Deltakere**, ser du en oversikt over deltakerne og ressursene som er knyttet til oppfølgingen. Der kan du også se hvem som har godtatt eller avslått invitasjonen, og hvilke ressurser som er reservert, ved hjelp av symbolene ved siden av navnene:
 

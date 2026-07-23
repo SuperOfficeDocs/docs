@@ -43,7 +43,7 @@ Gebruik het tandwielpictogram (<i class="ph ph-gear" aria-hidden="true"></i>) in
 | Dropout | Deelnemer is uitgevallen, altijd met een gespecificeerde reden voor uitval. |
 | Geannuleerd | Deelnemer zal de flow niet voltooien omdat een beheerder de flow heeft beëindigd. |
 
-## <a id="logic"></a>Inschrijving en voortgang door de flow
+## Inschrijving en voortgang door de flow {#logic}
 
 Voor elke stap evalueert SuperOffice CRM opnieuw of de deelnemer kan doorgaan.
 

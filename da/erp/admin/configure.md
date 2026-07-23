@@ -62,7 +62,7 @@ Felttilknytninger definerer, hvordan ERP-felter svarer til SuperOffice-felter, o
 
 Du kan nu fortsætte med listetilknytning, standardværdier eller felt-rangering - *eller* aktivere linket, hvis der ikke er behov for yderligere konfiguration.
 
-## <a id="list-mapping"></a>Listetilknytning
+## Listetilknytning {#list-mapping}
 
 Hvis du har tilknyttet lister, såsom kategori eller status, skal du også knytte de enkelte elementer i listerne mellem ERP-systemet og SuperOffice.
 
@@ -80,7 +80,7 @@ Hvis du har tilknyttet lister, såsom kategori eller status, skal du også knytt
 
 1. Klik på **Gem**, og aktiver ERP-linket, hvis du er færdig med konfigurationen.
 
-## <a id="defaults"></a>Standardværdier for synkronisering
+## Standardværdier for synkronisering {#defaults}
 
 Standardværdier hjælper med at reducere manuel dataindtastning for felter, som typisk har en fast eller forudsigelig værdi. Dette er især nyttigt ved masseimport eller hvis brugerne ikke skal angive den samme værdi gentagne gange - eller markere et felt, der altid skal være valgt.
 
@@ -108,7 +108,7 @@ Standardværdier hjælper med at reducere manuel dataindtastning for felter, som
 
 1. Gentag efter behov for at tilføje flere standardværdier.
 
-## <a id="rank"></a>Rangér felter, der vises på ERP-fanen
+## Rangér felter, der vises på ERP-fanen {#rank}
 
 Angiv rækkefølgen for de felter, der vises på fanen **ERP** i skærmbillederne Firma, Person og Projekt. Alle tilgængelige felter vises her, men kun de markerede vil blive vist på fanen.
 
@@ -126,7 +126,7 @@ Angiv rækkefølgen for de felter, der vises på fanen **ERP** i skærmbilledern
 
 1. Klik på **Udført** for at gemme ændringerne.
 
-## <a id="priority"></a>Angiv synkroniseringsprioritet
+## Angiv synkroniseringsprioritet {#priority}
 
 Hvis der er flere ERP-links aktive samtidigt, kan du definere, hvilket link der skal have prioritet ved høj databelastning.
 

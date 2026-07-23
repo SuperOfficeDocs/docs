@@ -30,7 +30,7 @@ All domain groups with access to the document library must be added to the templ
 
 If all users can edit templates you don't need to do anything, since you have already granted edit permissions on the site level.
 
-## <a id="step-1"></a>Step 1 - Select the SuperOffice template library
+## Step 1 - Select the SuperOffice template library {#step-1}
 
 1. Navigate to the site where the template library resides.
 
@@ -42,7 +42,7 @@ If all users can edit templates you don't need to do anything, since you have al
 
     ![Template library -screenshot][img2]
 
-## <a id="step-2"></a>Step 2 - Stop inheriting permissions
+## Step 2 - Stop inheriting permissions {#step-2}
 
 In order to control access to you SuperOffice document library, you must stop inheriting permissions. Stop inheriting also makes it possible to grant permissions.
 
@@ -58,7 +58,7 @@ In order to control access to you SuperOffice document library, you must stop in
 
     ![Stop Inheriting Permissions -screenshot][img5]
 
-## <a id="step-3a"></a>Step 3a - Change permissions
+## Step 3a - Change permissions {#step-3a}
 
 Follow these steps if the Microsoft Entra domain groups already exist. If the groups do not exist or you need to add a group that can edit, go to step 3b.
 
@@ -72,7 +72,7 @@ Follow these steps if the Microsoft Entra domain groups already exist. If the gr
 
     ![Read -screenshot][img7]
 
-## <a id="step-3b"></a>Step 3b - Grant permissions
+## Step 3b - Grant permissions {#step-3b}
 
 1. Click on **Grant Permissions**.
 
@@ -96,7 +96,7 @@ Follow these steps if the Microsoft Entra domain groups already exist. If the gr
 
     * When your done adding groups, press **Share**.
 
-## <a id="step-4"></a>Step 4 - Review the SharePoint site groups
+## Step 4 - Review the SharePoint site groups {#step-4}
 
 We recommend that you remove user permissions for the standard SharePoint groups Members and Visitors, and that you limit the number of members in the Group owner. Make sure there are no user accounts in this group, only service accounts.
 

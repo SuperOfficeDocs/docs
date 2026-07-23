@@ -38,7 +38,7 @@ Use the **Search** function to find specific contacts or filter records. From th
 | [www][21] | Shortcut to a URL for accessing external data or web pages related to the contact. |
 | [ERP][22] | Connects the contact to the ERP system for integration or synchronization. |
 
-## <a id="section-tabs"></a>Section tabs on Contact
+## Section tabs on Contact {#section-tabs}
 
 Below the Contact card, [section tabs][16] provide quick access to information connected to the contact:
 

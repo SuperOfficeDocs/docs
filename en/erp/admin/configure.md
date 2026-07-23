@@ -62,7 +62,7 @@ Field mappings define how ERP fields correspond to SuperOffice fields and how da
 
 You can now continue with list mapping, default values, or ranking fields *or* activate the connection if no further configuration is needed.
 
-## <a id="list-mapping"></a>List mapping
+## List mapping {#list-mapping}
 
 If you mapped any list fields, such as category or status, you must also map the individual list items between the ERP system and SuperOffice.
 
@@ -80,7 +80,7 @@ If you mapped any list fields, such as category or status, you must also map the
 
 1. Click **Save**, then activate the ERP connection if no further configuration is needed.
 
-## <a id="defaults"></a>Default values for synchronization
+## Default values for synchronization {#defaults}
 
 Default values help reduce manual data entry for fields that typically have a fixed or predictable value. This is especially useful when importing large volumes of data or when users should not have to fill in the same value repeatedly or check a box that should always be checked.
 
@@ -108,7 +108,7 @@ Default values help reduce manual data entry for fields that typically have a fi
 
 1. Repeat as needed to define more default values.
 
-## <a id="rank"></a>Rank fields shown in the ERP tab
+## Rank fields shown in the ERP tab {#rank}
 
 Set the order of fields shown in the **ERP** tab of the Company, Contact, and Project screens. All available fields are listed here, but only those marked for display will appear in the tab.
 
@@ -126,7 +126,7 @@ Set the order of fields shown in the **ERP** tab of the Company, Contact, and Pr
 
 1. Click **Done** to save your changes.
 
-## <a id="priority"></a>Set sync priority
+## Set sync priority {#priority}
 
 If multiple ERP connections are active at the same time, you can define which connection should take priority in case of heavy data traffic.
 
