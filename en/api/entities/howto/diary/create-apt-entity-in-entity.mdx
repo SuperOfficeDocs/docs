@@ -62,7 +62,11 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 In the example above, we have created an appointment as explained in [this example][1]. The difference is that here we do not save the created appointment. Instead, we assign it to the `Appointments` property of the `Contact` instance created and then save the `Contact`:
 
-[!code-csharp[CS](includes/create-apt-entity-in-entity-1.cs?range=28,31,34)]
+```csharp CS
+Contact newContact = Contact.GetFromIdxContactId(10);
+newContact.Appointments.Add(newAppointment);
+newContact.Save();
+```
 
 ## Example 2
 
@@ -79,7 +83,7 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
   //Create a new instance of the Appointment ot be added to the Collection
   newContact.Appointments.AddNew();
 
-  //Set Deafult Values to the created Appointment
+  //Set Default Values to the created Appointment
   newContact.Appointments[0].SetDefaults();
 
   //Assigning values to the individual properties of the Appointment Entity
@@ -105,7 +109,11 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 The difference between example 1 and example 2 is that here we have created an instance of the `Appointment` to be added to the `Appointments` collection and by indexing through the collection we have assigned the desired values for the specific appointment as shown below.
 
-[!code-csharp[CS](includes/create-apt-entity-in-entity-2.cs?range=8,16,27)]
+```csharp CS
+//Create a new instance of the Appointment ot be added to the Collection
+newContact.Appointments[0].Location = "Seminar Room 664";
+newContact.Appointments[0].Contact = Contact.GetFromIdxContactId(20);
+```
 
 The `Appointment` created will be saved when saving the `Contact` entity with the use of its `Save` method.
 

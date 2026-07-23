@@ -55,7 +55,11 @@ An `AppointmentRow` can be created like in [this example][1].
 
 The next phase of the code segment is to instantiate an `AppointmentRows` class. The instance can then be added to the collection with the execution of the `Add` method.
 
-[!code-csharp[CS](includes/create-apt-rows.cs?range=20,23,26)]
+```csharp CS
+AppointmentRows newAppRows = AppointmentRows.CreateNew();
+newAppRows.Add(newAppointment);
+newAppRows.Save();
+```
 
 Once the `AppointmentRow` is added the collection could be saved by executing the `Save` method, which ensures that the created entity is added to the [appointment table][2] in the database.
 

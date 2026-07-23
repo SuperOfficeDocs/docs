@@ -235,7 +235,12 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 Next, we create `SoCommand` and `SoTransaction` instances as shown below and assign the instantiated transaction to the `Transaction` property of the instantiated `SoCommand`.
 
-[!code-csharp[CS](includes/create-contact-osql.cs?range=32-33,36-37)]
+```csharp CS
+SoCommand myComm = myConn.CreateCommand();
+myConn.Open();
+SoTransaction newTrans = myConn.BeginTransaction();
+myComm.Transaction = newTrans;
+```
 
 To execute the created insert statement we need to assign it to the `SqlCommand` property of the created `SoCommand` instance and then execute the `ExecuteNonQuery` method of it.
 

@@ -43,7 +43,10 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 The first step is to instantiate the `ContactRow` class and then the next step is to set the default values of it with the `SetDefaults` method.
 
-[!code-csharp[CS](includes/create-contact-row.cs?range=6,9)]
+```csharp CS
+ContactRow newContact = ContactRow.CreateNew();
+newContact.SetDefaults();
+```
 
 To access individual properties exposed through the `ContactRow` class we use statements like this:
 

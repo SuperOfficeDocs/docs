@@ -46,4 +46,7 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 3. Save the contact:
 
-    [!code-csharp[CS](includes/create-contact-rows.cs?range=14,16)]
+```csharp CS
+newConRows.Add(newContact);
+newConRows.Save();
+```

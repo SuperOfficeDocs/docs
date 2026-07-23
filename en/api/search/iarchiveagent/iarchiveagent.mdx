@@ -402,7 +402,10 @@ using (SoSession newSession = SoSession.Authenticate("sam", "sam"))
 
 * **page** and **pageSize** - page (number) 0 is the first page; pageSize is the number of rows that should be contained in a page
 
-  [!code-csharp[CS](includes/iarchiveagent-person.cs?range=28,31)]
+```csharp CS
+int page = 1;
+int pageSize = 10;
+```
 
 ### Result
 

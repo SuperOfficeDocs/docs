@@ -246,7 +246,13 @@ The `Dictionary` class from the `System.Collection.Generic` namespace is used to
 
 Once this is done we may add the necessary restrictions as shown below.
 
-[!code-csharp[CS](includes/create-dynamic-services.cs?range=35-36,39-41)]
+```csharp CS
+restrictions["associateId"].SetValue("103");
+restrictions["associateId"].IsActive = true;
+restrictions["name"].SetValue("est");
+restrictions["name"].Operator = "contains";
+restrictions["name"].IsActive = true;
+```
 
 ### Save
 

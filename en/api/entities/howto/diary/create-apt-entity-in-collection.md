@@ -64,6 +64,10 @@ First, we create an `AppointmentCollection` and then add the appointment to the 
 
 Once it has been added, the collection can be saved:
 
-[!code-csharp[CS](includes/create-apt-entity-in-collection.cs?range=28,31-32)]
+```csharp CS
+AppointmentCollection newAppCol = AppointmentCollection.CreateNew();
+newAppCol.Add(newAppointment);
+newAppCol.Save();
+```
 
 [1]: ../../collections

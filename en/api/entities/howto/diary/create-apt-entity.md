@@ -56,7 +56,10 @@ After an `SoSession` has been created, we proceed on to creating an appointment.
 
 To create an appointment, it is required to create an instance of the `Appointment` entity using the `CreateNew` method exposed in the `Associate` class, after which the default values for the entity will be set using the `SetDefaults` method like this:
 
-[!code-csharp[CS](includes/create-apt-entity.cs?range=6,9)]
+```csharp CS
+Appointment newAppointment = Appointment.CreateNew();
+newAppointment.SetDefaults();
+```
 
 The next section of the code shows [how values are assigned to properties][2] exposed by the entity. Pay attention to how we assign the `Alarm` property:
 
