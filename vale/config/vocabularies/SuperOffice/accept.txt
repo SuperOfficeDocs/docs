@@ -24,3 +24,16 @@ OSQL
 (?i)yaml
 Agresso
 MDOAgent
+
+# Database table / API concept names left untranslated in linklist cards
+# (e.g. en/company/index.mdx's "Database tables" card, mirrored per-language)
+Contact
+Person
+Associate
+UserGroup
+Address
+Country
+Category
+Business
+Row
+Entity
