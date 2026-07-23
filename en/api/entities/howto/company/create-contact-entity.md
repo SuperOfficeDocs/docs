@@ -69,7 +69,9 @@ After an `SoSession` instance has been created and the user authenticated we can
 
 To create a contact, we create an instance of the `Contact` entity using the `CreateNew` methods exposed in the `Contact` class, after which the default values for the entity will be set using the `SetDefaults` method like this:
 
-[!code-csharp[CS](includes/create-contact-entity.cs?range=7,11)]
+```csharp CS
+Contact newContact = Contact.CreateNew();
+```
 
 The next section of the code shows [how values are assigned to properties][2] exposed by the entity.
 

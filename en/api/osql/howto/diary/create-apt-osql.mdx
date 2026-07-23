@@ -125,7 +125,11 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 Next, we create an instance of the `Insert` class that can be used to update the [appointment table][1]. After the instance has been created, we would be able to use the instance to update the fields of the `appointment` table.
 
-[!code-csharp[CS](includes/create-apt-osql.cs?range=11,14-15)]
+```csharp CS
+Insert newInsert = S.NewInsert();
+newInsert.FieldValuePairs.Add(newAppTab.AppointmentId, S.Parameter(Sequence.GetNext(newAppTab)));
+newInsert.FieldValuePairs.Add(newAppTab.AssociateId, S.Parameter(103));
+```
 
 Once the required fields have been added, a database connection will be made with the use of the `ConnectionFactory` and the values will be inserted into the database with the `ExecuteNonQuery` method.
 

@@ -228,7 +228,10 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 To insert data, we are required to create an instance of the `Insert` class and then use the `fieldValuePairs` property of it. The data has been added using the `Add()` method exposed in the `FieldValuePairs` property:
 
-[!code-csharp[CS](includes/insert-2.cs?range?15-16)]
+```csharp CS
+newInsert.FieldValuePairs.Add(newConTab.UpdatedAssociateId, S.Parameter(0));
+newInsert.FieldValuePairs.Add(newConTab.Updated, S. Parameter(DateTime.Now));
+```
 
 Special attention should be given when inserting the contact ID. Using the `Sequence` class's `GetNext` method, the next contact ID is retrieved and assigned to the `ContactId` of the inserting record.
 
@@ -238,6 +241,11 @@ Then the created insert statement will be assigned to a created instance of the 
 
 With the `ExecuteNonQuery` method of the `SoCommand`, the insert statement will be executed and the data will be added to the tables.
 
-[!code-csharp[CS](includes/insert-2.cs?range?32-33,36-37,40-41)]
+```csharp CS
+//Executing the Insert Statement
+myComm.SqlCommand = newInsert;
+newTrans.Commit();
+myConn.Close();
+```
 
 [2]: ./using-select

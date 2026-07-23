@@ -48,7 +48,10 @@ using(SoSession mySession = SoSession.Authenticate("sam", "sam"))
 
 The first step of the example shows how to instantiate an `AppointmentRow` class and then the next step is to set the default values of it with the `SetDefaults` method.
 
-[!code-csharp[CS](includes/create-apt-row.cs?range=6,9)]
+```csharp CS
+AppointmentRow newAppointment = AppointmentRow.CreateNew();
+newAppointment.SetDefaults();
+```
 
 The next statements show how the different properties of the `AppointmentRow` are assigned. Once such assignments are made, the row could be saved with the `Save` method available in the `AppointmentRow` class.
 
