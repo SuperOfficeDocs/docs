@@ -1,0 +1,211 @@
+﻿---
+uid: crmscript.netserver.nskbcategory
+title: NSKbCategory
+description: ""
+keywords: CRMScript, NSKbCategory, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSKbCategory
+
+## Constructors
+
+### NSKbCategory()
+
+```crmscript
+NSKbCategory
+```
+
+Initializes a new instance of the NSKbCategory class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The description of this category.
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+String description = thing.GetDescription();
+```
+
+## GetFullname()
+
+```crmscript
+String GetFullname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The full name of this category, i.e. Foo/bar/test.
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+String fullname = thing.GetFullname();
+```
+
+## GetKbCategoryId()
+
+```crmscript
+Integer GetKbCategoryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+Integer kbCategoryId = thing.GetKbCategoryId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of this category.
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+String name = thing.GetName();
+```
+
+## GetParentId()
+
+```crmscript
+Integer GetParentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - This entry contains a reference to the parent category. NULL or -1 if this is a top-level category.
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+Integer parentId = thing.GetParentId();
+```
+
+## GetSortOrder()
+
+```crmscript
+Integer GetSortOrder()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A strictly ascending number used for sorting categories when they are listed.
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+Integer sortOrder = thing.GetSortOrder();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetFullname(String)
+
+```crmscript
+Void SetFullname(String fullname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+String fullname;
+thing.SetFullname(fullname);
+```
+
+## SetKbCategoryId(Integer)
+
+```crmscript
+Void SetKbCategoryId(Integer kbCategoryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+Integer kbCategoryId;
+thing.SetKbCategoryId(kbCategoryId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+String name;
+thing.SetName(name);
+```
+
+## SetParentId(Integer)
+
+```crmscript
+Void SetParentId(Integer parentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+Integer parentId;
+thing.SetParentId(parentId);
+```
+
+## SetSortOrder(Integer)
+
+```crmscript
+Void SetSortOrder(Integer sortOrder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSKbCategory thing;
+Integer sortOrder;
+thing.SetSortOrder(sortOrder);
+```

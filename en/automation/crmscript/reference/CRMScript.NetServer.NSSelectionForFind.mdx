@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nsselectionforfind
+title: NSSelectionForFind
+description: ""
+keywords: CRMScript, NSSelectionForFind, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSelectionForFind
+
+## Constructors
+
+### NSSelectionForFind()
+
+```crmscript
+NSSelectionForFind
+```
+
+Initializes a new instance of the NSSelectionForFind class.
+
+## Methods
+
+## GetCanSaveAsSelection()
+
+```crmscript
+Bool GetCanSaveAsSelection()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Most Find entities support saving the search as a Dynamic Selection. This bool indicates if that is the case.
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+Bool canSaveAsSelection = thing.GetCanSaveAsSelection();
+```
+
+## GetFilterScreenHeading()
+
+```crmscript
+String GetFilterScreenHeading()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - 'Find sale', or whatever is appropriate for the Find&lt;entity&gt;filter page; this string will contain resource references
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String filterScreenHeading = thing.GetFilterScreenHeading();
+```
+
+## GetMainHeading()
+
+```crmscript
+String GetMainHeading()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - 'Sale', intended for the main headings in the Find front page; this string will contain resource references
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String mainHeading = thing.GetMainHeading();
+```
+
+## GetProviderName()
+
+```crmscript
+String GetProviderName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the Archive Provider to use when working with this selection; this is the main entity provider, never Shadow, Combined or anything else fancy.
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String providerName = thing.GetProviderName();
+```
+
+## GetSelectionEntityHeading()
+
+```crmscript
+String GetSelectionEntityHeading()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - 'Companies', or whatever else is appropriate* the plural form of the entity name, intended for the Selection.Details tab before it is saved (!!); this string will contain resource references
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String selectionEntityHeading = thing.GetSelectionEntityHeading();
+```
+
+## GetSelectionId()
+
+```crmscript
+Integer GetSelectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+Integer selectionId = thing.GetSelectionId();
+```
+
+## SetCanSaveAsSelection(Bool)
+
+```crmscript
+Void SetCanSaveAsSelection(Bool canSaveAsSelection)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+Bool canSaveAsSelection;
+thing.SetCanSaveAsSelection(canSaveAsSelection);
+```
+
+## SetFilterScreenHeading(String)
+
+'Find sale', or whatever is appropriate for the Find&lt;entity&gt;filter page; this string will contain resource references
+
+```crmscript
+Void SetFilterScreenHeading(String filterScreenHeading)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String filterScreenHeading;
+thing.SetFilterScreenHeading(filterScreenHeading);
+```
+
+## SetMainHeading(String)
+
+```crmscript
+Void SetMainHeading(String mainHeading)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String mainHeading;
+thing.SetMainHeading(mainHeading);
+```
+
+## SetProviderName(String)
+
+```crmscript
+Void SetProviderName(String providerName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String providerName;
+thing.SetProviderName(providerName);
+```
+
+## SetSelectionEntityHeading(String)
+
+```crmscript
+Void SetSelectionEntityHeading(String selectionEntityHeading)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+String selectionEntityHeading;
+thing.SetSelectionEntityHeading(selectionEntityHeading);
+```
+
+## SetSelectionId(Integer)
+
+```crmscript
+Void SetSelectionId(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionForFind thing;
+Integer selectionId;
+thing.SetSelectionId(selectionId);
+```

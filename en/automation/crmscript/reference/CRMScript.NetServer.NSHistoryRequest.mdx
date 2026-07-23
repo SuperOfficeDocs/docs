@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nshistoryrequest
+title: NSHistoryRequest
+description: "Specification for a request for history information, by ID. It is possible to ask for rights for a new record (insert), but then you need to supply the parent ID for entities that have parents (projectmember, selectionmember, person)."
+keywords: CRMScript, NSHistoryRequest, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSHistoryRequest
+
+Specification for a request for history information, by ID. It is possible to ask for rights for a new record (insert), but then you need to supply the parent ID for entities that have parents (projectmember, selectionmember, person).
+
+## Constructors
+
+### NSHistoryRequest()
+
+```crmscript
+NSHistoryRequest
+```
+
+Initializes a new instance of the NSHistoryRequest class.
+
+## Methods
+
+## GetEntityName()
+
+```crmscript
+String GetEntityName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of entity to get history for.
+
+**Example:**
+
+```crmscript
+NSHistoryRequest thing;
+String entityName = thing.GetEntityName();
+```
+
+## GetEntityOrParentId()
+
+```crmscript
+Integer GetEntityOrParentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of entity to get history for, or parent entity id if requesting insert rights for an entity that has a parent.
+
+**Example:**
+
+```crmscript
+NSHistoryRequest thing;
+Integer entityOrParentId = thing.GetEntityOrParentId();
+```
+
+## GetRequestForNewRecord()
+
+```crmscript
+Bool GetRequestForNewRecord()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Are we requesting insert rights? If true, then EntityorParentId is taken to mean parent Id.
+
+**Example:**
+
+```crmscript
+NSHistoryRequest thing;
+Bool requestForNewRecord = thing.GetRequestForNewRecord();
+```
+
+## SetEntityName(String)
+
+```crmscript
+Void SetEntityName(String entityName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistoryRequest thing;
+String entityName;
+thing.SetEntityName(entityName);
+```
+
+## SetEntityOrParentId(Integer)
+
+```crmscript
+Void SetEntityOrParentId(Integer entityOrParentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistoryRequest thing;
+Integer entityOrParentId;
+thing.SetEntityOrParentId(entityOrParentId);
+```
+
+## SetRequestForNewRecord(Bool)
+
+```crmscript
+Void SetRequestForNewRecord(Bool requestForNewRecord)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistoryRequest thing;
+Bool requestForNewRecord;
+thing.SetRequestForNewRecord(requestForNewRecord);
+```

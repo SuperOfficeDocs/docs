@@ -1,0 +1,265 @@
+﻿---
+uid: crmscript.netserver.nsreportagent
+title: NSReportAgent
+description: "Run reports, set favorites, labels."
+keywords: CRMScript, NSReportAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSReportAgent
+
+Run reports, set favorites, labels.
+
+## Constructors
+
+### NSReportAgent()
+
+```crmscript
+NSReportAgent
+```
+
+Run reports, set favorites, labels.
+
+## Methods
+
+## CreateDefaultReportEntity()
+
+Sets default values into a new NSReportEntity.
+
+```crmscript
+NSReportEntity CreateDefaultReportEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+NSReportEntity thing = agent.CreateDefaultReportEntity();
+thing = agent.SaveReportEntity(thing);
+```
+
+## CreateDefaultReportLabelLayoutEntity()
+
+Sets default values into a new NSReportLabelLayoutEntity.
+
+```crmscript
+NSReportLabelLayoutEntity CreateDefaultReportLabelLayoutEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](CRMScript.NetServer.NSReportLabelLayoutEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+NSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();
+thing = agent.SaveReportLabelLayoutEntity(thing);
+```
+
+## CreateFavorite(Integer,String,String)
+
+Creates the report as favorite.
+
+```crmscript
+NSReportEntity CreateFavorite(Integer sourceId, String name, String description)
+```
+
+**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+Integer sourceId;
+String name;
+String description;
+NSReportEntity res = agent.CreateFavorite(sourceId, name, description);
+```
+
+## DeleteFavorite(Integer)
+
+Deletes the report favorite.
+
+```crmscript
+Void DeleteFavorite(Integer reportEntityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteReport(Integer)
+
+Deletes the report with the given ID.
+
+```crmscript
+Bool DeleteReport(Integer reportId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+Integer reportId;
+Bool res = agent.DeleteReport(reportId);
+```
+
+## DeleteReportLabelLayoutEntity(Integer)
+
+Deletes the NSReportLabelLayoutEntity
+
+```crmscript
+DeleteReportLabelLayoutEntity(Integer reportLabelLayoutEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+agent.DeleteReportLabelLayoutEntity(123);
+```
+
+## GenerateReport(Integer,Integer,String,String,String,NSArchiveRestrictionInfo[])
+
+Generates the report in PDF format.
+
+```crmscript
+String GenerateReport(Integer reportId, Integer labelLayoutId, String filename, String language, String fileType, NSArchiveRestrictionInfo[] restrictions)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+Integer reportId;
+Integer labelLayoutId;
+String filename;
+String language;
+String fileType;
+NSArchiveRestrictionInfo[] restrictions;
+String res = agent.GenerateReport(reportId, labelLayoutId, filename, language, fileType, restrictions);
+```
+
+## GetReportEntity(Integer)
+
+Gets an NSReportEntity object.
+
+```crmscript
+NSReportEntity GetReportEntity(Integer reportEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+NSReportEntity thing = agent.GetReportEntity(123);
+```
+
+## GetReportLabelLayoutEntity(Integer)
+
+Gets an NSReportLabelLayoutEntity object.
+
+```crmscript
+NSReportLabelLayoutEntity GetReportLabelLayoutEntity(Integer reportLabelLayoutEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](CRMScript.NetServer.NSReportLabelLayoutEntity)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+NSReportLabelLayoutEntity thing = agent.GetReportLabelLayoutEntity(123);
+```
+
+## ImportReport(String)
+
+Takes the input stream and create a report. This stream must be on a valid XML format.
+
+```crmscript
+Integer ImportReport(String report)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+String report;
+Integer res = agent.ImportReport(report);
+```
+
+## SaveReportEntity(NSReportEntity)
+
+Updates the existing NSReportEntity or creates a new NSReportEntity if the id parameter is 0
+
+```crmscript
+NSReportEntity SaveReportEntity(NSReportEntity reportEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+
+**Example:**
+
+```crmscript
+NSReport  agent;
+NSReportEntity thing = agent.CreateDefaultReportEntity();
+thing = agent.SaveReportEntity(thing);
+```
+
+## SaveReportLabelLayoutEntity(NSReportLabelLayoutEntity)
+
+Updates the existing NSReportLabelLayoutEntity or creates a new NSReportLabelLayoutEntity if the ID parameter is 0.
+
+```crmscript
+NSReportLabelLayoutEntity SaveReportLabelLayoutEntity(NSReportLabelLayoutEntity reportLabelLayoutEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](CRMScript.NetServer.NSReportLabelLayoutEntity) - The new or updated NSReportLabelLayoutEntity.
+
+**Example:**
+
+```crmscript
+NSReport  agent;
+NSReportLabelLayoutEntity thing = agent.CreateDefaultReportLabelLayoutEntity();
+thing = agent.SaveReportLabelLayoutEntity(thing);
+```
+
+## UpdateFavorite(NSReportEntity)
+
+Updates the favorite.
+
+```crmscript
+NSReportEntity UpdateFavorite(NSReportEntity reportEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+
+**Example:**
+
+```crmscript
+NSReportAgent agent;
+NSReportEntity reportEntity;
+NSReportEntity res = agent.UpdateFavorite(reportEntity);
+```

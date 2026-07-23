@@ -1,0 +1,159 @@
+﻿---
+uid: crmscript.netserver.nscriteriainformation
+title: NSCriteriaInformation
+description: "Carrier for criteria information. It contains all the search criteria - that is, ArchiveRestrictionInfo - objects, including a  column specification. In addition, it contains the same criteria expressed as an archive, with an array of ArchiveColumnInfo specifications and a set of ArchiveRow rows. The rows of the archive form a subset of the restriction array."
+keywords: CRMScript, NSCriteriaInformation, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCriteriaInformation
+
+Carrier for criteria information. It contains all the search criteria - that is, ArchiveRestrictionInfo - objects, including a  column specification. In addition, it contains the same criteria expressed as an archive, with an array of ArchiveColumnInfo specifications and a set of ArchiveRow rows. The rows of the archive form a subset of the restriction array.
+
+## Constructors
+
+### NSCriteriaInformation()
+
+```crmscript
+NSCriteriaInformation
+```
+
+Initializes a new instance of the NSCriteriaInformation class.
+
+## Methods
+
+## GetCriteriaArchiveColumns()
+
+```crmscript
+NSArchiveColumnInfo[] GetCriteriaArchiveColumns()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[] - Array of ColumnInfo column specifications.
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveColumnInfo[] criteriaArchiveColumns = thing.GetCriteriaArchiveColumns();
+```
+
+## GetCriteriaArchiveRows()
+
+```crmscript
+NSArchiveListItem[] GetCriteriaArchiveRows()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - Array of archive list items (the service layer carrier for archive rows).
+
+<Note>
+These are the criteria, represented as archive rows.
+</Note>
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveListItem[] criteriaArchiveRows = thing.GetCriteriaArchiveRows();
+```
+
+## GetRestrictionGroups()
+
+```crmscript
+NSArchiveRestrictionGroup[] GetRestrictionGroups()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[] - Array of restriction groups, including the default first group of restrictions.
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveRestrictionGroup[] restrictionGroups = thing.GetRestrictionGroups();
+```
+
+## GetRestrictions()
+
+```crmscript
+NSArchiveRestrictionInfo[] GetRestrictions()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[] - Array of NSArchiveRestrictionInfo restriction specifications (for the first group if there are more than one).
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveRestrictionInfo[] restrictions = thing.GetRestrictions();
+```
+
+## SetCriteriaArchiveColumns(NSArchiveColumnInfo[])
+
+```crmscript
+Void SetCriteriaArchiveColumns(NSArchiveColumnInfo[] criteriaArchiveColumns)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveColumnInfo[] criteriaArchiveColumns;
+thing.SetCriteriaArchiveColumns(criteriaArchiveColumns);
+```
+
+## SetCriteriaArchiveRows(NSArchiveListItem[])
+
+```crmscript
+Void SetCriteriaArchiveRows(NSArchiveListItem[] criteriaArchiveRows)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+These are the criteria, represented as archive rows.
+</Note>
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveListItem[] criteriaArchiveRows;
+thing.SetCriteriaArchiveRows(criteriaArchiveRows);
+```
+
+## SetRestrictionGroups(NSArchiveRestrictionGroup[])
+
+```crmscript
+Void SetRestrictionGroups(NSArchiveRestrictionGroup[] restrictionGroups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveRestrictionGroup[] restrictionGroups;
+thing.SetRestrictionGroups(restrictionGroups);
+```
+
+## SetRestrictions(NSArchiveRestrictionInfo[])
+
+```crmscript
+Void SetRestrictions(NSArchiveRestrictionInfo[] restrictions)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCriteriaInformation thing;
+NSArchiveRestrictionInfo[] restrictions;
+thing.SetRestrictions(restrictions);
+```

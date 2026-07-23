@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nsarchiverestrictiongroup
+title: NSArchiveRestrictionGroup
+description: "Carrier for restriction group. Contains all the search restrictions for the group - that is, ArchiveRestrictionInfo - objects, including info such as rank and name."
+keywords: CRMScript, NSArchiveRestrictionGroup, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveRestrictionGroup
+
+Carrier for restriction group. Contains all the search restrictions for the group - that is, ArchiveRestrictionInfo - objects, including info such as rank and name.
+
+## Constructors
+
+### NSArchiveRestrictionGroup()
+
+```crmscript
+NSArchiveRestrictionGroup
+```
+
+Initializes a new instance of the NSArchiveRestrictionGroup class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of group.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+String description = thing.GetDescription();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of this criteria group.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order within this CriteriaModel.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRestrictions()
+
+```crmscript
+NSArchiveRestrictionInfo[] GetRestrictions()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[] - Array of NSArchiveRestrictionInfo restriction specifications.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+NSArchiveRestrictionInfo[] restrictions = thing.GetRestrictions();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRestrictions(NSArchiveRestrictionInfo[])
+
+```crmscript
+Void SetRestrictions(NSArchiveRestrictionInfo[] restrictions)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionGroup thing;
+NSArchiveRestrictionInfo[] restrictions;
+thing.SetRestrictions(restrictions);
+```

@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.appointmentcautionwarning
+title: Enum AppointmentCautionWarning
+description: "Appointment and invitation synchronization info"
+keywords: CRMScript, AppointmentCautionWarning, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum AppointmentCautionWarning
+
+Appointment and invitation synchronization info
+
+## Syntax
+
+```crmscript
+AppointmentCautionWarning
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| OK | OK - no special warnings |
+| NotInSync | Possibly not in sync with external systems |
+| NotNotifiedByEmail | Updated without sending email notifications |
+| RecurrencePatternNotSupported | This recurrence pattern might not be supported in the external participants calendars |
+| IncomingRecurrenceChangeNotSupported | A requested change to a recurrence appointment was not supported |
+| ExternalParticipantsDateTimeMismatch | Time and date may be wrong for external participants due to unsupported changes |

@@ -1,0 +1,137 @@
+﻿---
+uid: crmscript.native.vector
+title: Vector
+description: "This class represents a Vector, in which you can add objects of the type String.."
+keywords: CRMScript, Vector, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Vector
+
+This class represents a Vector, in which you can add objects of the type String..
+
+## Constructors
+
+### Vector(Integer[])
+
+```crmscript
+Vector Vector(Integer[] value)
+```
+
+Pass a number array to convert into a new object.
+
+## Methods
+
+## parseString(String, String)
+
+Parses a text into a vector. The fields in the string are separated by the given delimiter.
+
+```crmscript
+Void parseString(String text, String delimiter)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This method does not support escaped characters.
+</Note>
+
+## removeAt(Integer)
+
+Removes an element at the specified index.
+
+```crmscript
+Void removeAt(Integer index)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## get(Integer)
+
+Returns an element in the vector at the given position.
+
+```crmscript
+String get(Integer index)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+If the index specified is out of bounds, a RunTimeException will be raised.
+</Note>
+
+## set(Integer, String)
+
+Sets the value at the specified index.
+
+```crmscript
+Void set(Integer index, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If the index specified is out of bounds, a RunTimeException will be raised.
+</Note>
+
+## size()
+
+Returns the size of the vector.
+
+```crmscript
+Integer size()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## toIntegerArray()
+
+Convert a vector to an integer array.
+
+```crmscript
+Integer[] toIntegerArray()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+<Note>
+Invalid values will be represented as null.
+</Note>
+
+## toStringArray()
+
+Convert a vector to a string array.
+
+```crmscript
+String[] toStringArray()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+## buildString(String)
+
+Returns a string of all the elements in the vector, separated by the specified delimiter.
+
+```crmscript
+String buildString(String delimiter)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string with all the elements separated by the delimiter.
+
+<Note>
+not escape any characters which might be equal to the delimiter.
+</Note>
+
+## pushBack(String)
+
+Pushes a string object to the end of the vector.
+
+```crmscript
+Void pushBack(String element)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

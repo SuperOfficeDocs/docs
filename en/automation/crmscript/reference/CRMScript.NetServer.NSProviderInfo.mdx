@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsproviderinfo
+title: NSProviderInfo
+description: "Information about a provider plugin."
+keywords: CRMScript, NSProviderInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProviderInfo
+
+Information about a provider plugin.
+
+## Constructors
+
+### NSProviderInfo()
+
+```crmscript
+NSProviderInfo
+```
+
+Initializes a new instance of the NSProviderInfo class.
+
+## Methods
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Unique name of the provider plugin.
+
+**Example:**
+
+```crmscript
+NSProviderInfo thing;
+String name = thing.GetName();
+```
+
+## GetSupportedMessagingFormats()
+
+```crmscript
+String[] GetSupportedMessagingFormats()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - This value can typically be "sms/160", "sms/mms", "smtp/rfc822"
+
+**Example:**
+
+```crmscript
+NSProviderInfo thing;
+String[] supportedMessagingFormats = thing.GetSupportedMessagingFormats();
+```
+
+## GetSupportsConfig()
+
+```crmscript
+Bool GetSupportsConfig()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if it supports the config parameters to the sending methods.
+
+**Example:**
+
+```crmscript
+NSProviderInfo thing;
+Bool supportsConfig = thing.GetSupportsConfig();
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProviderInfo thing;
+String name;
+thing.SetName(name);
+```
+
+## SetSupportedMessagingFormats(String[])
+
+```crmscript
+Void SetSupportedMessagingFormats(String[] supportedMessagingFormats)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProviderInfo thing;
+String[] supportedMessagingFormats;
+thing.SetSupportedMessagingFormats(supportedMessagingFormats);
+```
+
+## SetSupportsConfig(Bool)
+
+```crmscript
+Void SetSupportsConfig(Bool supportsConfig)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProviderInfo thing;
+Bool supportsConfig;
+thing.SetSupportsConfig(supportsConfig);
+```

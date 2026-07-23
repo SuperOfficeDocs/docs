@@ -1,0 +1,64 @@
+﻿---
+uid: crmscript.global
+title: Namespace CRMScript.Global
+description: ""
+keywords: CRMScript, CRMScript.Global, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Namespace CRMScript.Global
+
+## Classes
+
+### [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+Represents booleans as objects. True/false.
+
+Variables of this type are commonly used in comparisons and conditional statements.
+
+### [CRMScript.Global.Byte](CRMScript.Global.Byte)
+
+Represents a byte. A byte can only contain integer values between 0 and 255. Large values will be masked.
+
+### [CRMScript.Global.Date](CRMScript.Global.Date)
+
+Date is a complex data type representing a day, month, and year on ISO format YYYY-MM-DD. The default value is now.
+
+Before a Date is initialized, it has no value. This is commonly written as NULL, NUL, or NIL in other programming languages. CRMScript automatically initializes Date objects when declared to the current date. Thus this situation is uncommon.
+
+### [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+DateTime is a complex data type representing a timestamp with both date and time elements on ISO format YYYY-MM-DD. The default value is now.
+
+Before a Date is initialized, it has no value. This is commonly written as NULL, NUL, or NIL in other programming languages. CRMScript automatically initializes Date objects when declared to the current date. Thus this situation is uncommon.
+
+### [CRMScript.Global.Float](CRMScript.Global.Float)
+
+A class for representing floating point numbers as objects. Floats are approximations of real numbers written with decimals. If you don't need to work with decimals, use the Integer data type.
+
+### [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+Integers are positive and negative whole 32-bit unsigned numbers without decimals. If you need to work with decimals, use the Float data type.
+
+### [CRMScript.Global.Long](CRMScript.Global.Long)
+
+Longs are positive and negative whole 64-bit unsigned numbers without decimals. If you need to work with decimals, use the Float data type.
+To represent a long number in the code as a literal, suffix it with an "L", for example, "Long l = 576460752303423488L;"
+
+### [CRMScript.Global.String](CRMScript.Global.String)
+
+A text string is a sequence of characters written with quotes.
+
+You can use single or double quotes, but they must always come in pairs. Quotes can also be nested, by alternating between single and double quotes.
+
+### [CRMScript.Global.Time](CRMScript.Global.Time)
+
+A class for representing time as objects. Time is a complex data type representing the time of the day in hours, minutes, and seconds. The default value is now. ISO 8601 uses the 24-hour clock system. Format: hh:mm:ss
+
+### [CRMScript.Global.Void](CRMScript.Global.Void)
+
+Global functions

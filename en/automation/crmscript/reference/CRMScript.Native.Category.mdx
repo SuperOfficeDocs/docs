@@ -1,0 +1,99 @@
+﻿---
+uid: crmscript.native.category
+title: Category
+description: "For accessing and changing a ticket category."
+keywords: CRMScript, Category, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Category
+
+For accessing and changing a ticket category.
+
+## Constructors
+
+### Category()
+
+```crmscript
+Category
+```
+
+Initializes a new instance of the Category class.
+
+## Methods
+
+## getValue(String)
+
+Retrieves the value of the given field in the category.
+
+```crmscript
+String getValue(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the specified field.
+
+<Note>
+Available fields: id: The ID of the category; parent: The ID of the parent category; name: The name of the category; fullname: The full name of the category (such as "Support/Product A/bugs"); externalName: The external name of the category; categoryMaster: The ID of the category master; children: A comma-separated list of children IDs; notificationEmail: The value of the email Notification field
+</Note>
+
+**Example:**
+
+```crmscript
+Category c;
+c.load(2);
+print(c.getValue("notificationEmail"))
+```
+
+## load(Integer)
+
+Load object with values from category with given ID.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the category exists; otherwise, false.
+
+**Example:**
+
+```crmscript
+Category c;
+c.load(2);
+print(c.getValue("name"));
+```
+
+## save()
+
+Saves the category and returns its ID.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved category.
+
+## setValue(String,String)
+
+Sets the value of the given field for the category.
+
+```crmscript
+Void SetValue(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available fields: parent: The ID of the parent category; name: The name of the category; externalName: The external name of the category; categoryMaster: The ID of the category master; children: A comma-separated list of children IDs; notificationEmail: The value of the email Notification field
+</Note>
+
+**Example:**
+
+```crmscript
+Category c;
+c.load(2);
+c.setValue("name", "Test");
+```

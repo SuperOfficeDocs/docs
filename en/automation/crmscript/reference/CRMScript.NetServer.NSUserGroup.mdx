@@ -1,0 +1,192 @@
+﻿---
+uid: crmscript.netserver.nsusergroup
+title: NSUserGroup
+description: "The main user group that this user belongs to."
+keywords: CRMScript, NSUserGroup, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSUserGroup
+
+The main user group that this user belongs to.
+
+## Constructors
+
+### NSUserGroup()
+
+```crmscript
+NSUserGroup
+```
+
+Initializes a new instance of the NSUserGroup class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true means that this is a user group that no longer can be selected by the user.
+
+<Note>
+It is not permitted to delete a UserGroup.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+Integer id = thing.GetId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetValue()
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - UserGroup name.
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+String value = thing.GetValue();
+```
+
+## SetDeleted(Bool)
+
+Marks a user group.
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+It is not permitted to delete a UserGroup.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetId(Integer)
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetValue(String)
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserGroup thing;
+String value;
+thing.SetValue(value);
+```

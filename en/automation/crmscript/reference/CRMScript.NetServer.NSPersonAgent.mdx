@@ -1,0 +1,891 @@
+﻿---
+uid: crmscript.netserver.nspersonagent
+title: NSPersonAgent
+description: "Person data services."
+keywords: CRMScript, NSPersonAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPersonAgent
+
+Person data services.
+
+## Constructors
+
+### NSPersonAgent()
+
+```crmscript
+NSPersonAgent
+```
+
+Person data services.
+
+## Methods
+
+## AddBounce(String)
+
+Adds a bounce count on the email address if it exists
+
+```crmscript
+Void AddBounce(String emailAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## AddBounceWithCount(String,Integer)
+
+Adds a number of bounce counts on the email address if it exists
+
+```crmscript
+Void AddBounceWithCount(String emailAddress, Integer counts)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## AddEmailAddressToPerson(Integer,String,Bool)
+
+Sets the primary email address on person, possibly re-ranking email addresses accordingly.
+
+```crmscript
+Void AddEmailAddressToPerson(Integer personId, String emailAddress, Bool setAsPrimaryEmail)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ChangeCountry(NSPersonEntity,Integer)
+
+Changes country and regenerates the default values and localized information such as phone number and address format for this entity.
+
+```crmscript
+NSPersonEntity ChangeCountry(NSPersonEntity personEntity, Integer toCountryId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPersonEntity personEntity;
+Integer toCountryId;
+NSPersonEntity res = agent.ChangeCountry(personEntity, toCountryId);
+```
+
+## ChangePersonRank(Integer,Bool)
+
+Moves one person up or down in the ranking in the Person Archive, if possible. Corresponds to the move up/move down functions in the person archive in the contact panel.
+
+```crmscript
+Integer ChangePersonRank(Integer personId, Bool moveUp)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+The person record that has rank = 1 is the primary contact for a company, and is the one used in situations where no person has been explicitly chosen (such as in selections).
+
+This method always affects two records.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+Bool moveUp;
+Integer res = agent.ChangePersonRank(personId, moveUp);
+```
+
+## CheckTemporaryKey(String)
+
+Checks a temporary key for validity, and in case it is valid, return its domain, targetId and personId
+
+```crmscript
+NSTemporaryKeyInfo CheckTemporaryKey(String temporaryKey)
+```
+
+**Returns:** [CRMScript.NetServer.NSTemporaryKeyInfo](CRMScript.NetServer.NSTemporaryKeyInfo)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+String temporaryKey;
+NSTemporaryKeyInfo res = agent.CheckTemporaryKey(temporaryKey);
+```
+
+## CreateDefaultByContactId(Integer)
+
+Creates an NSPersonEntity with default values based on the contactId.
+
+```crmscript
+NSPersonEntity CreateDefaultByContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity)
+
+## CreateDefaultConsentPerson()
+
+Sets default values into a new NSConsentPerson.
+
+```crmscript
+NSConsentPerson CreateDefaultConsentPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPerson](CRMScript.NetServer.NSConsentPerson) - A new NSConsentPerson with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSConsentPerson thing = agent.CreateDefaultConsentPerson();
+thing = agent.SaveConsentPerson(thing);
+```
+
+## CreateDefaultFromCredential(Integer,String,String,String)
+
+Creates an NSPersonEntity with default values based on the contactId and credentials.
+
+```crmscript
+NSPersonEntity CreateDefaultFromCredential(Integer contactId, String credentialType, String credentialValue, String credentialDisplayValue)
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity)
+
+## CreateDefaultPersonEntity()
+
+Sets default values into a new NSPersonEntity.
+
+```crmscript
+NSPersonEntity CreateDefaultPersonEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity) - A new NSPersonEntity with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPersonEntity thing = agent.CreateDefaultPersonEntity();
+thing = agent.SavePersonEntity(thing);
+```
+
+## CreateTemporaryKey(Integer,Integer,Integer)
+
+Creates a temporary key in the database from the given parameters and return the key string. Used for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.
+
+```crmscript
+String CreateTemporaryKey(Integer domain, Integer targetId, Integer personId, DateTime expires)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer domain;
+Integer targetId;
+Integer personId;
+DateTime expires;
+String res = agent.CreateTemporaryKey(domain, targetId, personId, expires);
+```
+
+## DeleteConsentPerson(Integer)
+
+Deletes the NSConsentPerson
+
+```crmscript
+DeleteConsentPerson(Integer consentPerson)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+agent.DeleteConsentPerson(123);
+```
+
+## DeleteExpired()
+
+Trigger deletion of persons that has been (soft) deleted and have timed out the expiry period (the SoftDeleteRetention preference).
+
+```crmscript
+Void DeleteExpired()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeletePersonEntity(Integer)
+
+Deletes the NSPersonEntity
+
+```crmscript
+DeletePersonEntity(Integer personEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+agent.DeletePersonEntity(123);
+```
+
+## DeleteTemporaryKeysOfDomain(Integer,Integer)
+
+Deletes all temporary keys for a given domain and person
+
+```crmscript
+Void DeleteTemporaryKeysOfDomain(Integer domain, Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetAddress(Integer)
+
+Gets the person's localized addressGets the person's localized address.
+
+```crmscript
+NSLocalizedField[][] GetAddress(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedField[]](CRMScript.NetServer.NSLocalizedField[])[] - The address.
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+NSAddress res = agent.GetAddress(personId);
+```
+
+## GetAddressByCountry(Integer,Integer)
+
+Gets the person's localized addressGets the person's localized address.
+
+```crmscript
+NSLocalizedField[][]GetAddressByCountry(Integer personId, Integer countryId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedField[]](CRMScript.NetServer.NSLocalizedField[])[] - The address.
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+Integer countryId;
+NSAddress res = agent.GetAddressByCountry(personId, countryId);
+```
+
+## GetBestSoLanguageForTemplate(Integer,Integer)
+
+Gets the best language for this person on this template
+
+```crmscript
+String GetBestSoLanguageForTemplate(Integer personId, Integer templateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+Integer templateId;
+String res = agent.GetBestSoLanguageForTemplate(personId, templateId);
+```
+
+## GetColleagues()
+
+Gets the persons working in the same company as the logged-on user.
+
+```crmscript
+NSPerson[] GetColleagues()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[]
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPerson[] res = agent.GetColleagues();
+```
+
+## GetColleaguesByDepartment(Integer)
+
+Gets the persons working in a specific department in the same company as the logged-on user
+
+```crmscript
+NSPerson[] GetColleaguesByDepartment(Integer departmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[]
+
+<Note>
+Departments can be retrieved with the PhoneList.DepartmentList service.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer departmentId;
+NSPerson[] res = agent.GetColleaguesByDepartment(departmentId);
+```
+
+## GetColleaguesBySource(Integer,Integer)
+
+Gets the persons working in the same company as the logged-on user.
+
+```crmscript
+NSPerson[] GetColleaguesBySource(Integer sourceType, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[]
+
+<Note>
+The list of persons could be retrieved from the history list, the diary view list, or from all sources.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer sourceType;
+Integer count;
+NSPerson[] res = agent.GetColleaguesBySource(sourceType, count);
+```
+
+## GetConsentInfos(Integer)
+
+Gets all consent information for a given person. May include withdrawn consents (check)
+
+```crmscript
+NSConsentInfo[] GetConsentInfos(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentInfo](CRMScript.NetServer.NSConsentInfo)[]
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+NSConsentInfo[] res = agent.GetConsentInfos(personId);
+```
+
+## GetConsentPerson(Integer)
+
+Gets an NSConsentPerson object.
+
+```crmscript
+NSConsentPerson GetConsentPerson(Integer consentPersonId)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPerson](CRMScript.NetServer.NSConsentPerson)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSConsentPerson thing = agent.GetConsentPerson(123);
+```
+
+## GetMyOwner()
+
+Gets the owner of the logged in person.
+
+```crmscript
+NSPerson GetMyOwner()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPerson res = agent.GetMyOwner();
+```
+
+## GetMyPerson()
+
+Gets the person info belonging to the currently logged-on user.
+
+```crmscript
+NSPersonEntity GetMyPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPersonEntity res = agent.GetMyPerson();
+```
+
+## GetOwnerOnPersonId(Integer)
+
+Gets the owner of the person by ID.
+
+```crmscript
+NSPerson GetOwnerOnPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+NSPerson res = agent.GetOwnerOnPersonId(personId);
+```
+
+## GetPerson(Integer)
+
+Gets an NSPerson object.
+
+```crmscript
+NSPerson GetPerson(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPerson thing = agent.GetPerson(123);
+```
+
+## GetPersonEntity(Integer)
+
+Gets an NSPersonEntity object.
+
+```crmscript
+NSPersonEntity GetPersonEntity(Integer personEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPersonEntity thing = agent.GetPersonEntity(123);
+```
+
+## GetPersonImage(Integer)
+
+Returns the person image that is displayed in the CRM application.
+
+```crmscript
+NSImage GetPersonImage(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+NSImage res = agent.GetPersonImage(personId);
+```
+
+## GetPersonList(Integer[])
+
+Gets an array of NSPerson objects.
+
+```crmscript
+NSPerson[] GetPersonList(Integer[]  personIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSPersonAgent agent;
+agent.GetPersonList(ids);
+```
+
+## GetPersonsFromContact(Integer)
+
+Returns all the persons belonging to a contact.
+
+```crmscript
+NSPerson[] GetPersonsFromContact(Integer contactId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[]
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer contactId;
+NSPerson[] res = agent.GetPersonsFromContact(contactId);
+```
+
+## GetPersonsFromProject(Integer)
+
+Returns all the persons belonging to a project.
+
+```crmscript
+NSPerson[] GetPersonsFromProject(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[]
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer projectId;
+NSPerson[] res = agent.GetPersonsFromProject(projectId);
+```
+
+## GetPersonSummary(Integer,Integer)
+
+Gets summary of person and recent activity.
+
+```crmscript
+NSPersonSummary GetPersonSummary(Integer personId, Integer limit)
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonSummary](CRMScript.NetServer.NSPersonSummary)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+Integer limit;
+NSPersonSummary res = agent.GetPersonSummary(personId, limit);
+```
+
+## GetPhones(Integer)
+
+Returns all phones that belong to a person, ordered by the phone type.
+
+```crmscript
+NSEntityElement[] GetPhones(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+NSEntityElement[] res = agent.GetPhones(personId);
+```
+
+## GetSalesRep(String,String,String,String,String)
+
+Returns the sales representative for an external user.
+
+```crmscript
+NSPersonEntity GetSalesRep(String contactName, String personFirstname, String personLastname, String emailAddress, String phoneNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity)
+
+<Note>
+If this method is accessed with anonymous authentication the external user is recognized by contact and name, or by email, or phone number.
+
+If the external user is recognized as an CRM5 user (internal or external) the input fields can be left blank.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+String contactName;
+String personFirstname;
+String personLastname;
+String emailAddress;
+String phoneNumber;
+NSPersonEntity res = agent.GetSalesRep(contactName, personFirstname, personLastname, emailAddress, phoneNumber);
+```
+
+## HasConsent(Integer,String)
+
+Checks if consent has been given by a specified person, for a specific purpose. Withdraw consents return FALSE.
+
+```crmscript
+Bool HasConsent(Integer personId, String purpose)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+String purpose;
+Bool res = agent.HasConsent(personId, purpose);
+```
+
+## IsNumberValid(Integer,String)
+
+Checks if the number is unique or required.
+
+```crmscript
+Bool IsNumberValid(Integer contactId, String number)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+The setting is configured from admin under system options.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer contactId;
+String number;
+Bool res = agent.IsNumberValid(contactId, number);
+```
+
+## Merge(Integer,Integer,DateTime,Bool,Bool)
+
+Merges two persons. The destination person will remain. You must specify the date after which activities will be moved along with the person.
+
+```crmscript
+Void Merge(Integer sourcePersonId, Integer destinationPersonId, DateTime moveAfterDate, Bool deleteSource, Bool replaceEmptyFieldsOnDestination)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## Move(Integer,Integer,DateTime)
+
+Moves a person to a specified contact. You must specify the date after which activities will be moved along with the person.
+
+```crmscript
+Void Move(Integer personId, Integer destinationContactId, DateTime moveAfterDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## NormalizeRanks(Integer)
+
+Normalize the ranks for all persons that belong to a contact. This means that the persons will be sorted according to their current rank values, and the ranks will be made monotonically increasing from 1.
+
+```crmscript
+Bool NormalizeRanks(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer contactId;
+Bool res = agent.NormalizeRanks(contactId);
+```
+
+## RemoveConsent(Integer,String)
+
+Turns off consent for a specified person and purpose.
+
+```crmscript
+Void RemoveConsent(Integer personId, String purpose)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ResolvePersonFromInfo(Integer,String,String[],String[])
+
+Gets a person from the provided information. If the person does not exist, it will be created on demand.
+
+```crmscript
+NSResolvedPerson ResolvePersonFromInfo(Integer contactId, String personName, String[] phoneNumbers, String[] emails)
+```
+
+**Returns:** [CRMScript.NetServer.NSResolvedPerson](CRMScript.NetServer.NSResolvedPerson)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer contactId;
+String personName;
+String[] phoneNumbers;
+String[] emails;
+NSResolvedPerson res = agent.ResolvePersonFromInfo(contactId, personName, phoneNumbers, emails);
+```
+
+## SaveConsentPerson(NSConsentPerson)
+
+Updates the existing NSConsentPerson or creates a new NSConsentPerson if the id parameter is 0
+
+```crmscript
+NSConsentPerson SaveConsentPerson(NSConsentPerson consentPerson)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPerson](CRMScript.NetServer.NSConsentPerson)
+
+**Example:**
+
+```crmscript
+NSPerson  agent;
+NSConsentPerson thing = agent.CreateDefaultConsentPerson();
+thing = agent.SaveConsentPerson(thing);
+```
+
+## SavePersonEntity(NSPersonEntity)
+
+Creates or updates an NSPersonEntityUpdates the existing NSPersonEntity or creates a new NSPersonEntity if the ID parameter is 0.
+
+```crmscript
+NSPersonEntity SavePersonEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity)
+
+**Example:**
+
+```crmscript
+NSPerson  agent;
+NSPersonEntity thing = agent.CreateDefaultPersonEntity();
+thing = agent.SavePersonEntity(thing);
+```
+
+## SendConsentConfirmationEmail(Integer,String,Integer,Integer,String)
+
+Sends a confirmation email to the provided person, email address (id), using the document template
+
+```crmscript
+Void SendConsentConfirmationEmail(Integer personId, String emailAddress, Integer emailTemplateId, Integer cultureLcidId, String subject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetConsent(Integer,String,String,String,String)
+
+Sets a specified type of consent on the person.
+
+```crmscript
+Void SetConsent(Integer personId, String purpose, String source, String legalBase, String comment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPersonImage(Integer)
+
+Stores the person image that is displayed in the CRM application.
+
+```crmscript
+Void SetPersonImage(Integer personId, NSImage image)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPersonRank(Integer,Integer)
+
+Directly sets the rank field of a person record, adjusting all other person records under the same contact as needed.
+
+```crmscript
+Bool SetPersonRank(Integer personId, Integer desiredRank)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+May affect multiple records, potentially all person records belonging to one contact.
+
+You must have write access for to affected records for this method to succeed.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer personId;
+Integer desiredRank;
+Bool res = agent.SetPersonRank(personId, desiredRank);
+```
+
+## TryAddPersonsToEmailFlow(Integer,Integer[])
+
+Attempts to add multiple persons to an email flow, returning an array of boolean values indicating success for each person.
+
+```crmscript
+Bool[] TryAddPersonsToEmailFlow(Integer flowId, Integer[] personIds)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)[] - An array of boolean values indicating whether each person was successfully added to the email flow.
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer[] personIds;
+personIds.pushBack(2);
+agent.TryAddPersonsToEmailFlow(1, personIds);
+```
+
+## Undelete(Integer)
+
+This entity supports Soft Delete. Call this method to Undelete a previously soft-deleted record
+
+```crmscript
+Void Undelete(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+Integer id;
+agent.Undelete(id);
+```
+
+## ValidatePersonEntity(NSPersonEntity)
+
+Checks that entity is ready for saving, return error messages by field.
+
+```crmscript
+Map ValidatePersonEntity(NSPersonEntity personEntity)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSPersonAgent agent;
+NSPersonEntity personEntity;
+Map res = agent.ValidatePersonEntity(personEntity);
+```

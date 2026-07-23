@@ -1,0 +1,37 @@
+﻿---
+uid: crmscript.netserver.ticketcategoryflags
+title: Enum TicketCategoryFlags
+description: "Flags for the ticket category"
+keywords: CRMScript, TicketCategoryFlags, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum TicketCategoryFlags
+
+Flags for the ticket category
+
+## Syntax
+
+```crmscript
+TicketCategoryFlags
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | No flags set |
+| Internal | The category is set to internal and is not available in the Customer Centre |
+| OnlyLoggedInUsers | Only assign requests to logged in users |
+| DefaultToCategoryMaster | Assign to category administrator if no one is available |
+| ListInMain | Show category in status view |
+| RedelegateNewMsg | Reassign requests on new message if user is not present |
+| DelegateToOurContact | Assign to our service contact if available |
+| PropagateReplyTemplate | Merge outbound e-mails for this category with reply template |
+| MembersOnly | Only members have access to requests in this category |
+| NotifyMembers | Send notification to members about new request |
+| AcceptWhenReplying | Take ownership by default when replying |

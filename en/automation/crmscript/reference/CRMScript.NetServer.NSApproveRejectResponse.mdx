@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsapproverejectresponse
+title: NSApproveRejectResponse
+description: "Contains a PluginResponse and an appointment ID if the operation created one."
+keywords: CRMScript, NSApproveRejectResponse, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSApproveRejectResponse
+
+Contains a PluginResponse and an appointment ID if the operation created one.
+
+## Constructors
+
+### NSApproveRejectResponse()
+
+```crmscript
+NSApproveRejectResponse
+```
+
+Initializes a new instance of the NSApproveRejectResponse class.
+
+## Methods
+
+## GetCreatedAppointmentId()
+
+```crmscript
+Integer GetCreatedAppointmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the created follow up.
+
+**Example:**
+
+```crmscript
+NSApproveRejectResponse thing;
+Integer createdAppointmentId = thing.GetCreatedAppointmentId();
+```
+
+## GetPluginResponse()
+
+```crmscript
+NSPluginResponse GetPluginResponse()
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse) - The response from the operation.
+
+**Example:**
+
+```crmscript
+NSApproveRejectResponse thing;
+NSPluginResponse pluginResponse = thing.GetPluginResponse();
+```
+
+## SetCreatedAppointmentId(Integer)
+
+```crmscript
+Void SetCreatedAppointmentId(Integer createdAppointmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSApproveRejectResponse thing;
+Integer createdAppointmentId;
+thing.SetCreatedAppointmentId(createdAppointmentId);
+```
+
+## SetPluginResponse(NSPluginResponse)
+
+```crmscript
+Void SetPluginResponse(NSPluginResponse pluginResponse)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSApproveRejectResponse thing;
+NSPluginResponse pluginResponse;
+thing.SetPluginResponse(pluginResponse);
+```

@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nsdocumentpreview
+title: NSDocumentPreview
+description: "Document data intended for preview purposes. Carrier object for DocumentPreview."
+keywords: CRMScript, NSDocumentPreview, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDocumentPreview
+
+Document data intended for preview purposes. Carrier object for DocumentPreview.
+
+## Constructors
+
+### NSDocumentPreview()
+
+```crmscript
+NSDocumentPreview
+```
+
+Initializes a new instance of the NSDocumentPreview class.
+
+## Methods
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The documents name.
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+String name = thing.GetName();
+```
+
+## GetSize()
+
+```crmscript
+Integer GetSize()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Size of the stream.
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+Integer size = thing.GetSize();
+```
+
+## GetStream()
+
+```crmscript
+NSStream GetStream()
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - Document data.
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+NSStream stream = thing.GetStream();
+```
+
+## GetType()
+
+```crmscript
+String GetType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The mimetype of the stream.
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+String type = thing.GetType();
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+String name;
+thing.SetName(name);
+```
+
+## SetSize(Integer)
+
+```crmscript
+Void SetSize(Integer size)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+Integer size;
+thing.SetSize(size);
+```
+
+## SetStream(NSStream)
+
+```crmscript
+Void SetStream(NSStream stream)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+NSStream stream;
+thing.SetStream(stream);
+```
+
+## SetType(String)
+
+```crmscript
+Void SetType(String type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentPreview thing;
+String type;
+thing.SetType(type);
+```

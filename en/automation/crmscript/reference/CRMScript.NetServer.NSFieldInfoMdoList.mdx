@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfomdolist
+title: NSFieldInfoMdoList
+description: "MDO List custom database field."
+keywords: CRMScript, NSFieldInfoMdoList, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoMdoList
+
+MDO List custom database field.
+
+## Constructors
+
+### NSFieldInfoMdoList()
+
+```crmscript
+NSFieldInfoMdoList
+```
+
+Initializes a new instance of the NSFieldInfoMdoList class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Integer GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default list item Id.
+
+**Example:**
+
+```crmscript
+NSFieldInfoMdoList thing;
+Integer defaultValue = thing.GetDefaultValue();
+```
+
+## GetMdoListName()
+
+```crmscript
+String GetMdoListName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - MDO list name used to populate this list. (Read-only).
+
+**Example:**
+
+```crmscript
+NSFieldInfoMdoList thing;
+String mdoListName = thing.GetMdoListName();
+```
+
+## SetDefaultValue(Integer)
+
+```crmscript
+Void SetDefaultValue(Integer defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoMdoList thing;
+Integer defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetMdoListName(String)
+
+```crmscript
+Void SetMdoListName(String mdoListName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoMdoList thing;
+String mdoListName;
+thing.SetMdoListName(mdoListName);
+```

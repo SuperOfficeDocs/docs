@@ -1,0 +1,107 @@
+﻿---
+uid: crmscript.netserver.nsworkflowstepbase
+title: NSWorkflowStepBase
+description: "Carrier object for WorkflowStepBase."
+keywords: CRMScript, NSWorkflowStepBase, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWorkflowStepBase
+
+Carrier object for WorkflowStepBase.
+
+## Constructors
+
+### NSWorkflowStepBase()
+
+```crmscript
+NSWorkflowStepBase
+```
+
+Initializes a new instance of the NSWorkflowStepBase class.
+
+## Methods
+
+## GetWorkflowStepId()
+
+Gets the primary key (ID) for the WorkflowStepBase.
+
+```crmscript
+Integer GetWorkflowStepId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - WorkflowStep Id.
+
+## SetWorkflowStepId(Integer)
+
+Sets the primary key (ID) for the WorkflowStepBase.
+
+```crmscript
+Void SetWorkflowStepId(Integer workflowStepId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowId()
+
+Gets the ID of the workflow this step belongs to.
+
+```crmscript
+Integer GetWorkflowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The workflow ID.
+
+## SetWorkflowId(Integer)
+
+Sets the ID of the workflow this step belongs to.
+
+```crmscript
+Void SetWorkflowId(Integer workflowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetStepType()
+
+Gets the type of workflow step.
+
+```crmscript
+NSWorkflowStepType GetStepType()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowStepType](CRMScript.NetServer.NSWorkflowStepType) - The step type.
+
+## SetStepType(NSWorkflowStepType)
+
+Sets the type of workflow step.
+
+```crmscript
+Void SetStepType(NSWorkflowStepType stepType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetRank()
+
+Gets the order/rank of the step in the workflow.
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The step rank.
+
+## SetRank(Integer)
+
+Sets the order/rank of the step in the workflow.
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

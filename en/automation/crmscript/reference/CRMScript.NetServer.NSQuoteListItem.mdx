@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsquotelistitem
+title: NSQuoteListItem
+description: "One line in a list."
+keywords: CRMScript, NSQuoteListItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteListItem
+
+One line in a list.
+
+## Constructors
+
+### NSQuoteListItem()
+
+```crmscript
+NSQuoteListItem
+```
+
+Initializes a new instance of the NSQuoteListItem class.
+
+## Methods
+
+## GetDisplayDescription()
+
+```crmscript
+String GetDisplayDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Typically used in a tooltip.
+
+**Example:**
+
+```crmscript
+NSQuoteListItem thing;
+String displayDescription = thing.GetDisplayDescription();
+```
+
+## GetDisplayValue()
+
+```crmscript
+String GetDisplayValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - List item text to display.
+
+**Example:**
+
+```crmscript
+NSQuoteListItem thing;
+String displayValue = thing.GetDisplayValue();
+```
+
+## GetERPQuoteListItemKey()
+
+```crmscript
+String GetERPQuoteListItemKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Primary key for the item.
+
+**Example:**
+
+```crmscript
+NSQuoteListItem thing;
+String eRPQuoteListItemKey = thing.GetERPQuoteListItemKey();
+```
+
+## SetDisplayDescription(String)
+
+```crmscript
+Void SetDisplayDescription(String displayDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteListItem thing;
+String displayDescription;
+thing.SetDisplayDescription(displayDescription);
+```
+
+## SetDisplayValue(String)
+
+```crmscript
+Void SetDisplayValue(String displayValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteListItem thing;
+String displayValue;
+thing.SetDisplayValue(displayValue);
+```
+
+## SetERPQuoteListItemKey(String)
+
+```crmscript
+Void SetERPQuoteListItemKey(String eRPQuoteListItemKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteListItem thing;
+String eRPQuoteListItemKey;
+thing.SetERPQuoteListItemKey(eRPQuoteListItemKey);
+```

@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsfindresults
+title: NSFindResults
+description: "Result carrier for the Find operation. It contains a set of column specifications, and a set of row, where each row contains the columns. The row set is the result of carrying out some search operation."
+keywords: CRMScript, NSFindResults, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFindResults
+
+Result carrier for the Find operation. It contains a set of column specifications, and a set of row, where each row contains the columns. The row set is the result of carrying out some search operation.
+
+## Constructors
+
+### NSFindResults()
+
+```crmscript
+NSFindResults
+```
+
+Initializes a new instance of the NSFindResults class.
+
+## Methods
+
+## GetArchiveColumns()
+
+```crmscript
+NSArchiveColumnInfo[] GetArchiveColumns()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[] - Array of ColumnInfo column specifications.
+
+**Example:**
+
+```crmscript
+NSFindResults thing;
+NSArchiveColumnInfo[] archiveColumns = thing.GetArchiveColumns();
+```
+
+## GetArchiveRows()
+
+```crmscript
+NSArchiveListItem[] GetArchiveRows()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - Array of archive list items, i.e., the service layer carrier for archive rows. These are the find results, represented as archive rows.
+
+**Example:**
+
+```crmscript
+NSFindResults thing;
+NSArchiveListItem[] archiveRows = thing.GetArchiveRows();
+```
+
+## GetRowCount()
+
+```crmscript
+Integer GetRowCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Count of rows, independent of paging. If you order up page 1 with page size 50, the row count may still be 279, that being the number of rows that would have been returned in a  paging-off situation.
+
+**Example:**
+
+```crmscript
+NSFindResults thing;
+Integer rowCount = thing.GetRowCount();
+```
+
+## SetArchiveColumns(NSArchiveColumnInfo[])
+
+```crmscript
+Void SetArchiveColumns(NSArchiveColumnInfo[] archiveColumns)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindResults thing;
+NSArchiveColumnInfo[] archiveColumns;
+thing.SetArchiveColumns(archiveColumns);
+```
+
+## SetArchiveRows(NSArchiveListItem[])
+
+```crmscript
+Void SetArchiveRows(NSArchiveListItem[] archiveRows)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindResults thing;
+NSArchiveListItem[] archiveRows;
+thing.SetArchiveRows(archiveRows);
+```
+
+## SetRowCount(Integer)
+
+```crmscript
+Void SetRowCount(Integer rowCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindResults thing;
+Integer rowCount;
+thing.SetRowCount(rowCount);
+```

@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nspaymentterm
+title: NSPaymentTerm
+description: "The built-in payment terms list. Used by the SuperOffice Quote Connector to categorize quote versions."
+keywords: CRMScript, NSPaymentTerm, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPaymentTerm
+
+The built-in payment terms list. Used by the SuperOffice Quote Connector to categorize quote versions.
+
+## Constructors
+
+### NSPaymentTerm()
+
+```crmscript
+NSPaymentTerm
+```
+
+Initializes a new instance of the NSPaymentTerm class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSPaymentTerm
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSPaymentTerm Id.
+
+**Example:**
+
+```crmscript
+NSPaymentTerm thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSPaymentTerm list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPaymentTerm tooltip description.
+
+**Example:**
+
+```crmscript
+NSPaymentTerm thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSPaymentTerm.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPaymentTerm name.
+
+**Example:**
+
+```crmscript
+NSPaymentTerm thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSPaymentTerm
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPaymentTerm thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSPaymentTerm list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPaymentTerm thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSPaymentTerm item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPaymentTerm thing;
+thing.SetValue("frotz");
+```

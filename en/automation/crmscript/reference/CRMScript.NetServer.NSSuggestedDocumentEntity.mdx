@@ -1,0 +1,366 @@
+﻿---
+uid: crmscript.netserver.nssuggesteddocumententity
+title: NSSuggestedDocumentEntity
+description: ""
+keywords: CRMScript, NSSuggestedDocumentEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSuggestedDocumentEntity
+
+## Constructors
+
+### NSSuggestedDocumentEntity()
+
+```crmscript
+NSSuggestedDocumentEntity
+```
+
+Initializes a new instance of the NSSuggestedDocumentEntity class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDocTmpl()
+
+```crmscript
+NSDocumentTemplate GetDocTmpl()
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplate](CRMScript.NetServer.NSDocumentTemplate) - Document template.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+NSDocumentTemplate docTmpl = thing.GetDocTmpl();
+```
+
+## GetDoctmplId()
+
+```crmscript
+Integer GetDoctmplId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Type of the suggested document.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Integer doctmplId = thing.GetDoctmplId();
+```
+
+## GetHeader()
+
+```crmscript
+String GetHeader()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Suggested 'header'
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String header = thing.GetHeader();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Item name, visible in Guide.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String name = thing.GetName();
+```
+
+## GetOurRef()
+
+```crmscript
+String GetOurRef()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Suggested 'our reference'
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String ourRef = thing.GetOurRef();
+```
+
+## GetProjectTypeStatusLink()
+
+```crmscript
+NSProjectTypeStatusLink GetProjectTypeStatusLink()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectTypeStatusLink](CRMScript.NetServer.NSProjectTypeStatusLink) - Project type and project status link info.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+NSProjectTypeStatusLink projectTypeStatusLink = thing.GetProjectTypeStatusLink();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank, controls rank of non-instantiated items in Guide.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetSaleTypeStageLink()
+
+```crmscript
+NSSaleTypeStageLink GetSaleTypeStageLink()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleTypeStageLink](CRMScript.NetServer.NSSaleTypeStageLink) - Sale type and stage link info.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+NSSaleTypeStageLink saleTypeStageLink = thing.GetSaleTypeStageLink();
+```
+
+## GetSuggestedDocumentId()
+
+```crmscript
+Integer GetSuggestedDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Integer suggestedDocumentId = thing.GetSuggestedDocumentId();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip / description.
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDocTmpl(NSDocumentTemplate)
+
+```crmscript
+Void SetDocTmpl(NSDocumentTemplate docTmpl)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+NSDocumentTemplate docTmpl;
+thing.SetDocTmpl(docTmpl);
+```
+
+## SetDoctmplId(Integer)
+
+```crmscript
+Void SetDoctmplId(Integer doctmplId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Integer doctmplId;
+thing.SetDoctmplId(doctmplId);
+```
+
+## SetHeader(String)
+
+```crmscript
+Void SetHeader(String header)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String header;
+thing.SetHeader(header);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOurRef(String)
+
+```crmscript
+Void SetOurRef(String ourRef)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String ourRef;
+thing.SetOurRef(ourRef);
+```
+
+## SetProjectTypeStatusLink(NSProjectTypeStatusLink)
+
+```crmscript
+Void SetProjectTypeStatusLink(NSProjectTypeStatusLink projectTypeStatusLink)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+NSProjectTypeStatusLink projectTypeStatusLink;
+thing.SetProjectTypeStatusLink(projectTypeStatusLink);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetSaleTypeStageLink(NSSaleTypeStageLink)
+
+```crmscript
+Void SetSaleTypeStageLink(NSSaleTypeStageLink saleTypeStageLink)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+NSSaleTypeStageLink saleTypeStageLink;
+thing.SetSaleTypeStageLink(saleTypeStageLink);
+```
+
+## SetSuggestedDocumentId(Integer)
+
+```crmscript
+Void SetSuggestedDocumentId(Integer suggestedDocumentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+Integer suggestedDocumentId;
+thing.SetSuggestedDocumentId(suggestedDocumentId);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedDocumentEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

@@ -1,0 +1,246 @@
+﻿---
+uid: crmscript.netserver.nstimezonedata
+title: NSTimeZoneData
+description: "Information about a TimeZone."
+keywords: CRMScript, NSTimeZoneData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTimeZoneData
+
+Information about a TimeZone.
+
+## Constructors
+
+### NSTimeZoneData()
+
+```crmscript
+NSTimeZoneData
+```
+
+Initializes a new instance of the NSTimeZoneData class.
+
+## Methods
+
+## GetIsoNumber()
+
+```crmscript
+Integer GetIsoNumber()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Integer isoNumber = thing.GetIsoNumber();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name associated with the location.
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+String name = thing.GetName();
+```
+
+## GetTimeZoneDSTRules()
+
+```crmscript
+Map GetTimeZoneDSTRules()
+```
+
+**Returns:** [CRMScript.NetServer.Map](CRMScript.NetServer.Map) - Rules for daylight savings time.
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Map timeZoneDSTRules = thing.GetTimeZoneDSTRules();
+```
+
+## GetTimeZoneSTDRules()
+
+```crmscript
+Map GetTimeZoneSTDRules()
+```
+
+**Returns:** [CRMScript.NetServer.Map](CRMScript.NetServer.Map) - Rules for standard time.
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Map timeZoneSTDRules = thing.GetTimeZoneSTDRules();
+```
+
+## GetTZLocationCities()
+
+```crmscript
+String GetTZLocationCities()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Cities associated with location.
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+String tZLocationCities = thing.GetTZLocationCities();
+```
+
+## GetTZLocationCode()
+
+```crmscript
+String GetTZLocationCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Code associated with location.
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+String tZLocationCode = thing.GetTZLocationCode();
+```
+
+## GetTZLocationID()
+
+```crmscript
+Integer GetTZLocationID()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Timezone location Id.
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Integer tZLocationID = thing.GetTZLocationID();
+```
+
+## SetIsoNumber(Integer)
+
+```crmscript
+Void SetIsoNumber(Integer isoNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Integer isoNumber;
+thing.SetIsoNumber(isoNumber);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+String name;
+thing.SetName(name);
+```
+
+## SetTimeZoneDSTRules(Map)
+
+```crmscript
+Void SetTimeZoneDSTRules(Map timeZoneDSTRules)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Map timeZoneDSTRules;
+thing.SetTimeZoneDSTRules(timeZoneDSTRules);
+```
+
+## SetTimeZoneSTDRules(Map)
+
+Rules for standard time
+
+```crmscript
+Void SetTimeZoneSTDRules(Map timeZoneSTDRules)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Map timeZoneSTDRules;
+thing.SetTimeZoneSTDRules(timeZoneSTDRules);
+```
+
+## SetTZLocationCities(String)
+
+```crmscript
+Void SetTZLocationCities(String tZLocationCities)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+String tZLocationCities;
+thing.SetTZLocationCities(tZLocationCities);
+```
+
+## SetTZLocationCode(String)
+
+```crmscript
+Void SetTZLocationCode(String tZLocationCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+String tZLocationCode;
+thing.SetTZLocationCode(tZLocationCode);
+```
+
+## SetTZLocationID(Integer)
+
+```crmscript
+Void SetTZLocationID(Integer tZLocationID)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTimeZoneData thing;
+Integer tZLocationID;
+thing.SetTZLocationID(tZLocationID);
+```

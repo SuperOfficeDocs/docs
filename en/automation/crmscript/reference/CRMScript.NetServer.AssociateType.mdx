@@ -1,0 +1,35 @@
+﻿---
+uid: crmscript.netserver.associatetype
+title: Enum AssociateType
+description: "Field Type in table associate"
+keywords: CRMScript, AssociateType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum AssociateType
+
+Field Type in table associate
+
+## Syntax
+
+```crmscript
+AssociateType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| NoPersonBit | Associates with this bit is not associated with any person. Disregard the PersonId for associates with this bit set |
+| AnonymousBit | Associates of this type is not authenticated for SuperOffice |
+| NoCalenderBit | Associates with this bit do not have a calendar |
+| NoSentryBit | Associates with this bit has full access rights, and the Sentry mechanism is bypassed |
+| Employee | User / Employee |
+| Resource | Resource like meeting room and projector |
+| ExternalPerson | Person not working for the company taking part in Collaborative CRM (eCRM) |
+| System | Application with full access rights (EAI) |
+| Anonymous | Unknown party accessing the system (e.g. prospecting, eCRM) |

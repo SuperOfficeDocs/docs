@@ -1,0 +1,148 @@
+﻿---
+uid: crmscript.netserver.nsactivitysummary
+title: NSActivitySummary
+description: "Activity information summary - number of free and busy activities. Carrier object for ActivitySummary."
+keywords: CRMScript, NSActivitySummary, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSActivitySummary
+
+Activity information summary - number of free and busy activities. Carrier object for ActivitySummary.
+
+## Constructors
+
+### NSActivitySummary()
+
+```crmscript
+NSActivitySummary
+```
+
+Initializes a new instance of the NSActivitySummary class.
+
+## Methods
+
+## GetNumBusyActivities()
+
+Returns the number of activities and tasks in the diary that are of type 'busy'.
+
+```crmscript
+Integer GetNumBusyActivities()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of activities and tasks in the diary of type busy.
+
+<Note>
+Sales and documents are not activities in this case, only diary appointments and tasks.
+</Note>
+
+**Example:**
+
+```crmscript
+NSActivitySummary thing;
+Integer numBusyActivities = thing.GetNumBusyActivities();
+```
+
+## GetNumFreeActivities()
+
+Returns the number of activities of the type 'free'.
+
+```crmscript
+Integer GetNumFreeActivities()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of activities of type free.
+
+<Note>
+Sales and documents are not activities in this case, only diary appointments and tasks.
+</Note>
+
+**Example:**
+
+```crmscript
+NSActivitySummary thing;
+Integer numFreeActivities = thing.GetNumFreeActivities();
+```
+
+## GetPercentageBusy()
+
+Checks how much of the active work-day that is booked in appointments.
+
+```crmscript
+Integer GetPercentageBusy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How much of the active work-day that is booked in appointments.
+
+**Example:**
+
+```crmscript
+NSActivitySummary thing;
+Integer percentageBusy = thing.GetPercentageBusy();
+```
+
+## SetNumBusyActivities(Integer)
+
+Sets the number of activities and tasks in the diary that are of type 'busy'.
+
+```crmscript
+Void SetNumBusyActivities(Integer numBusyActivities)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Sales and documents are not activities in this case, only diary appointments and tasks.
+</Note>
+
+**Example:**
+
+```crmscript
+NSActivitySummary thing;
+Integer numBusyActivities;
+thing.SetNumBusyActivities(numBusyActivities);
+```
+
+## SetNumFreeActivities(Integer)
+
+Sets the number of activities of the type 'free'.
+
+```crmscript
+Void SetNumFreeActivities(Integer numFreeActivities)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Sales and documents are not activities in this case, only diary appointments and tasks.
+</Note>
+
+**Example:**
+
+```crmscript
+NSActivitySummary thing;
+Integer numFreeActivities;
+thing.SetNumFreeActivities(numFreeActivities);
+```
+
+## SetPercentageBusy(Integer)
+
+Sets how much of the active work-day that is booked in appointments.
+
+```crmscript
+Void SetPercentageBusy(Integer percentageBusy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivitySummary thing;
+Integer percentageBusy;
+thing.SetPercentageBusy(percentageBusy);
+```

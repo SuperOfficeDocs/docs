@@ -1,0 +1,107 @@
+﻿---
+uid: crmscript.netserver.nsticketmessageheader
+title: NSTicketMessageHeader
+description: "Contains information about a header connected to a ticket message."
+keywords: CRMScript, NSTicketMessageHeader, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketMessageHeader
+
+Contains information about a header connected to a ticket message.
+
+## Constructors
+
+### NSTicketMessageHeader()
+
+```crmscript
+NSTicketMessageHeader
+```
+
+Initializes a new instance of the NSTicketMessageHeader class.
+
+## Methods
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the header. This can for example be To, Cc or other custom headers that is set up in Service.
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessage message = agent.GetTicketMessageEntity(12);
+NSTicketMessageHeader[] headers = message.GetMessageHeaders();
+for(Integer i = 0; i < headers.length(); i++)
+{
+\tprintLine(headers[i].GetName());
+}
+```
+
+## GetValue()
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the header.
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessage message = agent.GetTicketMessageEntity(12);
+NSTicketMessageHeader[] headers = message.GetMessageHeaders();
+for(Integer i = 0; i < headers.length(); i++)
+{
+\tprintLine(headers[i].GetValue());
+}
+```
+
+## SetName(String)
+
+```crmscript
+String SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessage message = agent.GetTicketMessageEntity(12);
+NSTicketMessageHeader[] headers ;
+NSTicketMessageHeader to;
+to.SetName("To");
+to.SetValue("noreply@noreply.com");
+headers.pushBack(to);
+```
+
+## SetValue(String)
+
+```crmscript
+String SetValue(String)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessage message = agent.GetTicketMessageEntity(12);
+NSTicketMessageHeader[] headers ;
+NSTicketMessageHeader to;
+to.SetName("To");
+to.SetValue("noreply@noreply.com");
+headers.pushBack(to);
+```

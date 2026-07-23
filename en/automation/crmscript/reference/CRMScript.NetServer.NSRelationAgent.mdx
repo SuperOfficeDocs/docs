@@ -1,0 +1,94 @@
+﻿---
+uid: crmscript.netserver.nsrelationagent
+title: NSRelationAgent
+description: "Contact/Person relations."
+keywords: CRMScript, NSRelationAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSRelationAgent
+
+Contact/Person relations.
+
+## Constructors
+
+### NSRelationAgent()
+
+```crmscript
+NSRelationAgent
+```
+
+Contact/Person relations.
+
+## Methods
+
+## CreateDefaultContactRelationEntity()
+
+Sets default values into a new NSContactRelationEntity.
+
+```crmscript
+NSContactRelationEntity CreateDefaultContactRelationEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSContactRelationEntity](CRMScript.NetServer.NSContactRelationEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSRelationAgent agent;
+NSContactRelationEntity thing = agent.CreateDefaultContactRelationEntity();
+thing = agent.SaveContactRelationEntity(thing);
+```
+
+## DeleteContactRelation(Integer)
+
+Deletes the specified contact relation.
+
+```crmscript
+Void DeleteContactRelation(Integer contactRelationEntityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetContactRelationEntity(Integer)
+
+Gets an NSContactRelationEntity object.
+
+```crmscript
+NSContactRelationEntity GetContactRelationEntity(Integer contactRelationEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSContactRelationEntity](CRMScript.NetServer.NSContactRelationEntity)
+
+**Example:**
+
+```crmscript
+NSRelationAgent agent;
+NSContactRelationEntity thing = agent.GetContactRelationEntity(123);
+```
+
+## SaveContactRelation(NSContactRelationEntity)
+
+Creates a new or updates an existing contact relation.
+
+```crmscript
+NSContactRelationEntity SaveContactRelation(NSContactRelationEntity contactRelationEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSContactRelationEntity](CRMScript.NetServer.NSContactRelationEntity)
+
+**Example:**
+
+```crmscript
+NSRelationAgent agent;
+NSContactRelationEntity contactRelationEntity;
+NSContactRelationEntity res = agent.SaveContactRelation(contactRelationEntity);
+```

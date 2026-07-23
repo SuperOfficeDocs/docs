@@ -1,0 +1,101 @@
+﻿---
+uid: crmscript.native.cache
+title: Cache
+description: "Cache to often used db tables and structures and retrieve them in a useful and structured fashion"
+keywords: CRMScript, Cache, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Cache
+
+Cache to often used db tables and structures and retrieve them in a useful and structured fashion
+
+## Constructors
+
+### Cache()
+
+```crmscript
+Cache
+```
+
+Initializes a new instance of the Cache class.
+
+## Methods
+
+## eof()
+
+Checks if there are no more fields in the result.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if it is at end of file or there are no more fields to iterate through; otherwise, false.
+
+<Note>
+A common usage is in the condition section in a for loop.
+</Note>
+
+## first()
+
+Sets the iterator variable to the first field in the field set.
+
+```crmscript
+Bool first()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if the field set is empty; otherwise, true.
+
+## getData(String)
+
+This function will return data from a cached table.
+
+```crmscript
+String getData(String tableId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Data from the cached table specified in tableId.
+
+## getDataSubset(String,String,String)
+
+Returns a subset of the data for a cached table based on a filter, where a field must have a given value.
+
+```crmscript
+getDataSubset(String tableId, String filterField, String filterValue)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The rows from the table where filterField = filterValue.
+
+## getRow()
+
+Returns a row of fields.
+
+```crmscript
+Map getRow()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A row of fields.
+
+## next()
+
+Sets the iterator to the next field.
+
+```crmscript
+Bool next()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if at end of file or the field set is empty; otherwise, true.
+
+## sort(String,Bool)
+
+Sorts the cached data by given field in given order.
+
+```crmscript
+sort(String field, Bool order)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

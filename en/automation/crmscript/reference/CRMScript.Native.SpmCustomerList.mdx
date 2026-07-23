@@ -1,0 +1,109 @@
+﻿---
+uid: crmscript.native.spmcustomerlist
+title: SpmCustomerList
+description: "SpmCustomerList"
+keywords: CRMScript, SpmCustomerList, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# SpmCustomerList
+
+SpmCustomerList
+
+## Constructors
+
+### SpmCustomerList()
+
+```crmscript
+SpmCustomerList
+```
+
+Initializes a new instance of the SpmCustomerList class.
+
+## Methods
+
+## addRecipient(Integer)
+
+Adds a recipient to the list.
+
+```crmscript
+Void addRecipient(Integer customerId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The recipient must exist as a customer in the database.
+</Note>
+
+## delete()
+
+Deletes the current recipients list.
+
+```crmscript
+Bool delete()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the list was deleted; false if the list does not exist or it currently is in use.
+
+<Note>
+It is not possible to delete a list that currently is in use.
+</Note>
+
+## load(Integer)
+
+Loads an existing customer list.
+
+```crmscript
+load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successful; otherwise, false.
+
+## removeRecipients()
+
+If you have loaded a valid customer list, this method will remove all recipients both from the database and any you may have added using "addRecipient". Be aware that even if you do not save the list, the recipients will still be removed from the database.
+
+```crmscript
+Void removeRecipients()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## save()
+
+Saves the current list. If the list does not already exist in the database, it will be created.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the list; -1 if the list could not be saved.
+
+## setFolderId(Integer)
+
+Sets the folder for this list.
+
+```crmscript
+Void setFolderId(Integer folderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setName(String)
+
+Sets the name of the list.
+
+```crmscript
+Void setName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used only in the GUI when viewing the lists.
+</Note>

@@ -1,0 +1,185 @@
+﻿---
+uid: crmscript.global.time
+title: Time
+description: "A class for representing time as objects. Time is a complex data type representing the time of the day in hours, minutes, and seconds. The default value is now. ISO 8601 uses the 24-hour clock system. Format: hh:mm:ss"
+keywords: CRMScript, Time, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Time
+
+A class for representing time as objects. Time is a complex data type representing the time of the day in hours, minutes, and seconds. The default value is now. ISO 8601 uses the 24-hour clock system. Format: hh:mm:ss
+
+## Constructors
+
+### Time()
+
+```crmscript
+Time Time()
+```
+
+Default constructor.
+
+### Time(Time)
+
+```crmscript
+Time Time(Time value)
+```
+
+Pass a value to copy into a new object.
+
+### Time(String)
+
+```crmscript
+Time Time(String value)
+```
+
+Pass a String containing a timestamp on format HH:MM:SS. The constructor will parse the text and create a Time object.
+
+## Methods
+
+## toString()
+
+Converts a Time value to its string representation.
+
+One of the most frequently used methods, typically when you are going to output something.
+
+```crmscript
+String toString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+Time t;
+String s = t.toString();
+```
+
+## setHour(Integer)
+
+Overwrites the current time and sets hours to the given number [0-23].
+
+```crmscript
+Void setHour(Integer hour)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Time t;
+t.setHour(14);
+```
+
+## setMin(Integer)
+
+Overwrites the current time and sets minutes to the given number [0-59].
+
+```crmscript
+Void setMin(Integer min)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Time t;
+t.setMin(37);
+```
+
+## setSec(Integer)
+
+Overwrites the current time and sets seconds to the given number [0-59].
+
+```crmscript
+Void setSec(Integer sec)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Time t;
+t.setSec(0);
+```
+
+## getHour()
+
+Returns the hour portion of the time as an Integer.
+
+```crmscript
+Integer getHour()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Time t;
+print(t.getHour().toString());
+```
+
+## getMin()
+
+Returns the minutes portion of the time as an Integer.
+
+```crmscript
+Integer getMin()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Time t;
+print(t.getMin().toString());
+```
+
+## getSec()
+
+Returns the seconds portion of the time as an Integer.
+
+```crmscript
+Integer getSec()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Time t;
+print(t.getSec().toString());
+```
+
+## isNull()
+
+Returns true if it has no value and false if it does.
+
+```crmscript
+Bool isNull()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+A NULL/NUL/NIL Time is different from zero, in that it is conceptually without a value.
+</Note>
+
+**Example:**
+
+```crmscript
+Time t;
+print(t.isNull().toString());
+```

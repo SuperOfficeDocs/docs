@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nschatbotsettings
+title: NSChatBotSettings
+description: "Chat topic bot settings. Trigger script ids to run on bot events. Carrier object for ChatBotSettings."
+keywords: CRMScript, NSChatBotSettings, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatBotSettings
+
+Chat topic bot settings. Trigger script ids to run on bot events. Carrier object for ChatBotSettings.
+
+## Constructors
+
+### NSChatBotSettings()
+
+```crmscript
+NSChatBotSettings
+```
+
+Initializes a new instance of the NSChatBotSettings class.
+
+## Methods
+
+## GetBotMessageReceivedScriptId()
+
+```crmscript
+Integer GetBotMessageReceivedScriptId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Script ID to run when new messages received from customer.
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botMessageReceivedScriptId = thing.GetBotMessageReceivedScriptId();
+```
+
+## GetBotName()
+
+```crmscript
+String GetBotName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Chatbot name.
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+String botName = thing.GetBotName();
+```
+
+## GetBotRegisterScriptId()
+
+```crmscript
+Integer GetBotRegisterScriptId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Script ID to register/unregister chatbot. 0 if there is no bot.
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botRegisterScriptId = thing.GetBotRegisterScriptId();
+```
+
+## GetBotSessionChangedScriptId()
+
+```crmscript
+Integer GetBotSessionChangedScriptId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Script ID to run when session state changes.
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botSessionChangedScriptId = thing.GetBotSessionChangedScriptId();
+```
+
+## GetBotSessionCreatedScriptId()
+
+```crmscript
+Integer GetBotSessionCreatedScriptId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Script ID to run on new session.
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botSessionCreatedScriptId = thing.GetBotSessionCreatedScriptId();
+```
+
+## SetBotMessageReceivedScriptId(Integer)
+
+```crmscript
+Void SetBotMessageReceivedScriptId(Integer botMessageReceivedScriptId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botMessageReceivedScriptId;
+thing.SetBotMessageReceivedScriptId(botMessageReceivedScriptId);
+```
+
+## SetBotName(String)
+
+```crmscript
+Void SetBotName(String botName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+String botName;
+thing.SetBotName(botName);
+```
+
+## SetBotRegisterScriptId(Integer)
+
+```crmscript
+Void SetBotRegisterScriptId(Integer botRegisterScriptId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botRegisterScriptId;
+thing.SetBotRegisterScriptId(botRegisterScriptId);
+```
+
+## SetBotSessionChangedScriptId(Integer)
+
+```crmscript
+Void SetBotSessionChangedScriptId(Integer botSessionChangedScriptId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botSessionChangedScriptId;
+thing.SetBotSessionChangedScriptId(botSessionChangedScriptId);
+```
+
+## SetBotSessionCreatedScriptId(Integer)
+
+```crmscript
+Void SetBotSessionCreatedScriptId(Integer botSessionCreatedScriptId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatBotSettings thing;
+Integer botSessionCreatedScriptId;
+thing.SetBotSessionCreatedScriptId(botSessionCreatedScriptId);
+```

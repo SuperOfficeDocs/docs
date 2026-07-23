@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfodate
+title: NSFieldInfoDate
+description: "Date custom database field. Time component is ignored."
+keywords: CRMScript, NSFieldInfoDate, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoDate
+
+Date custom database field. Time component is ignored.
+
+## Constructors
+
+### NSFieldInfoDate()
+
+```crmscript
+NSFieldInfoDate
+```
+
+Initializes a new instance of the NSFieldInfoDate class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+DateTime GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Default Date value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoDate thing;
+DateTime defaultValue = thing.GetDefaultValue();
+```
+
+## GetIsDefaultNow()
+
+```crmscript
+Bool GetIsDefaultNow()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should the current date be the default?
+
+**Example:**
+
+```crmscript
+NSFieldInfoDate thing;
+Bool isDefaultNow = thing.GetIsDefaultNow();
+```
+
+## SetDefaultValue(DateTime)
+
+```crmscript
+Void SetDefaultValue(DateTime defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoDate thing;
+DateTime defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetIsDefaultNow(Bool)
+
+```crmscript
+Void SetIsDefaultNow(Bool isDefaultNow)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoDate thing;
+Bool isDefaultNow;
+thing.SetIsDefaultNow(isDefaultNow);
+```

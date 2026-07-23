@@ -1,0 +1,107 @@
+﻿---
+uid: crmscript.netserver.nsworkflowgoal
+title: NSWorkflowGoal
+description: "Carrier object for WorkflowGoal."
+keywords: CRMScript, NSWorkflowGoal, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWorkflowGoal
+
+Carrier object for WorkflowGoal.
+
+## Constructors
+
+### NSWorkflowGoal()
+
+```crmscript
+NSWorkflowGoal
+```
+
+Initializes a new instance of the NSWorkflowGoal class.
+
+## Methods
+
+## GetWorkflowGoalId()
+
+Gets the primary key (ID) for the WorkflowGoal.
+
+```crmscript
+Integer GetWorkflowGoalId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - WorkflowGoal Id.
+
+## SetWorkflowGoalId(Integer)
+
+Sets the primary key (ID) for the WorkflowGoal.
+
+```crmscript
+Void SetWorkflowGoalId(Integer workflowGoalId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowId()
+
+Gets the ID of the flow this goal belongs to.
+
+```crmscript
+Integer GetWorkflowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Workflow ID.
+
+## SetWorkflowId(Integer)
+
+Sets the ID of the flow this goal belongs to.
+
+```crmscript
+Void SetWorkflowId(Integer workflowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetGoalType()
+
+Gets the workflow goal type.
+
+```crmscript
+NSWorkflowGoalType GetGoalType()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowGoalType](CRMScript.NetServer.NSWorkflowGoalType) - Goal type.
+
+## SetGoalType(NSWorkflowGoalType)
+
+Sets the workflow goal type.
+
+```crmscript
+Void SetGoalType(NSWorkflowGoalType goalType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetRestrictionGroups()
+
+Gets the restrictions (can be multiple groups) that make up the Workflow goal criteria.
+
+```crmscript
+NSArchiveRestrictionGroup[] GetRestrictionGroups()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[] - Array of restriction groups.
+
+## SetRestrictionGroups(NSArchiveRestrictionGroup[])
+
+Sets the restrictions that make up the Workflow goal criteria.
+
+```crmscript
+Void SetRestrictionGroups(NSArchiveRestrictionGroup[] restrictionGroups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

@@ -1,0 +1,162 @@
+﻿---
+uid: crmscript.netserver.nsphonelistagent
+title: NSPhoneListAgent
+description: "Collection of all services for searching for person or contact (company) phone numbers."
+keywords: CRMScript, NSPhoneListAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPhoneListAgent
+
+Collection of all services for searching for person or contact (company) phone numbers.
+
+## Constructors
+
+### NSPhoneListAgent()
+
+```crmscript
+NSPhoneListAgent
+```
+
+Collection of all services for searching for person or contact (company) phone numbers.
+
+## Methods
+
+## AddToFavorites(Integer)
+
+Adds a new contact to the history/favorites. If the contact already existed in the history, it isn't added but the rank is updated.
+
+```crmscript
+Integer AddToFavorites(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The rank of the new history item.
+
+**Example:**
+
+```crmscript
+NSPhoneListAgent agent;
+Integer contactId;
+Integer res = agent.AddToFavorites(contactId);
+```
+
+## GetContactPhones(Integer)
+
+Returns an array of phone list items for all the persons belonging to a contact (company).
+
+```crmscript
+NSPhoneListItem[] GetContactPhones(Integer contactId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPhoneListItem](CRMScript.NetServer.NSPhoneListItem)[]
+
+**Example:**
+
+```crmscript
+NSPhoneListAgent agent;
+Integer contactId;
+NSPhoneListItem[] res = agent.GetContactPhones(contactId);
+```
+
+## GetDepartmentPhones(Integer)
+
+Returns an array of phone list items with the in-parameter as restriction.
+
+```crmscript
+NSPhoneListItem[] GetDepartmentPhones(Integer departmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPhoneListItem](CRMScript.NetServer.NSPhoneListItem)[]
+
+**Example:**
+
+```crmscript
+NSPhoneListAgent agent;
+Integer departmentId;
+NSPhoneListItem[] res = agent.GetDepartmentPhones(departmentId);
+```
+
+## GetFavoritesPhones()
+
+Returns an array of phone list items with the Contacts in the users favorites dropdown list.
+
+```crmscript
+NSPhoneListItem[] GetFavoritesPhones()
+```
+
+**Returns:** [CRMScript.NetServer.NSPhoneListItem](CRMScript.NetServer.NSPhoneListItem)[]
+
+**Example:**
+
+```crmscript
+NSPhoneListAgent agent;
+NSPhoneListItem[] res = agent.GetFavoritesPhones();
+```
+
+## GetPreferences()
+
+Gets Phone List Preferences from the CRM 5 user preferences
+
+```crmscript
+NSPhoneListPreferences GetPreferences()
+```
+
+**Returns:** [CRMScript.NetServer.NSPhoneListPreferences](CRMScript.NetServer.NSPhoneListPreferences)
+
+**Example:**
+
+```crmscript
+NSPhoneListAgent agent;
+NSPhoneListPreferences res = agent.GetPreferences();
+```
+
+## Search(String)
+
+Searches the phone list using default search preferences or the preferences already set by the NSPhoneListPreferences Service
+
+```crmscript
+NSPhoneListItem[] Search(String searchString)
+```
+
+**Returns:** [CRMScript.NetServer.NSPhoneListItem](CRMScript.NetServer.NSPhoneListItem)[]
+
+**Example:**
+
+```crmscript
+NSPhoneListAgent agent;
+String searchString;
+NSPhoneListItem[] res = agent.Search(searchString);
+```
+
+## SearchWithPreferences(String,NSPhoneListPreferences)
+
+Searches the phone list based on the supplied preferences.
+
+```crmscript
+NSPhoneListItem[] SearchWithPreferences(String searchString, NSPhoneListPreferences preferences)
+```
+
+**Returns:** [CRMScript.NetServer.NSPhoneListItem](CRMScript.NetServer.NSPhoneListItem)[]
+
+**Example:**
+
+```crmscript
+NSPhoneListAgent agent;
+String searchString;
+NSPhoneListPreferences preferences;
+NSPhoneListItem[] res = agent.SearchWithPreferences(searchString, preferences);
+```
+
+## SetPreferences(NSPhoneListPreferences)
+
+Sets Phone List Preferences to the CRM 5 user preferences
+
+```crmscript
+Void SetPreferences(NSPhoneListPreferences preferences)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

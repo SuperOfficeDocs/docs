@@ -1,0 +1,337 @@
+﻿---
+uid: crmscript.netserver.nsfieldmetadata
+title: NSFieldMetadata
+description: "Used to populate the Admin configuration dialog for a connection. The call to the ERP Connector’s GetConfigurationFields method returns a list of fields and field types. The Admin client builds a dialog with these fields."
+keywords: CRMScript, NSFieldMetadata, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldMetadata
+
+Used to populate the Admin configuration dialog for a connection. The call to the ERP Connector’s GetConfigurationFields method returns a list of fields and field types. The Admin client builds a dialog with these fields.
+
+## Constructors
+
+### NSFieldMetadata()
+
+```crmscript
+NSFieldMetadata
+```
+
+Initializes a new instance of the NSFieldMetadata class.
+
+## Methods
+
+## GetAccess()
+
+```crmscript
+Integer GetAccess()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Access restrictions on the field. See &lt;xref href="CRMScript.NetServer.FieldAccess" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer access = thing.GetAccess();
+```
+
+## GetDefaultValue()
+
+```crmscript
+String GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A default value for the field.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String defaultValue = thing.GetDefaultValue();
+```
+
+## GetDisplayDescription()
+
+```crmscript
+String GetDisplayDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip for the field name.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String displayDescription = thing.GetDisplayDescription();
+```
+
+## GetDisplayName()
+
+```crmscript
+String GetDisplayName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Localized field name – shown in the GUi.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String displayName = thing.GetDisplayName();
+```
+
+## GetFieldKey()
+
+```crmscript
+String GetFieldKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Internal key/name of the field. Used as the key in the ConnectionConfigField values when TestConnection is called.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String fieldKey = thing.GetFieldKey();
+```
+
+## GetFieldType()
+
+```crmscript
+Integer GetFieldType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Text, Integer, etc. See &lt;xref href="CRMScript.NetServer.FieldMetadataType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer fieldType = thing.GetFieldType();
+```
+
+## GetListName()
+
+```crmscript
+String GetListName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - MDO List provider name for list fields.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String listName = thing.GetListName();
+```
+
+## GetMaxLength()
+
+```crmscript
+Integer GetMaxLength()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Maximum length for strings, if set. 0 means no restriction. (Though sooner or later something will no doubt overflow if you pile on the gigabytes.).
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer maxLength = thing.GetMaxLength();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A way to set the order of the fields. Lowest value will be displayed first/over the fields with other values.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer rank = thing.GetRank();
+```
+
+## GetShowInSearch()
+
+```crmscript
+Bool GetShowInSearch()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if this field is displayed in search result.
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Bool showInSearch = thing.GetShowInSearch();
+```
+
+## SetAccess(Integer)
+
+```crmscript
+Void SetAccess(Integer access)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer access;
+thing.SetAccess(access);
+```
+
+## SetDefaultValue(String)
+
+```crmscript
+Void SetDefaultValue(String defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetDisplayDescription(String)
+
+```crmscript
+Void SetDisplayDescription(String displayDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String displayDescription;
+thing.SetDisplayDescription(displayDescription);
+```
+
+## SetDisplayName(String)
+
+```crmscript
+Void SetDisplayName(String displayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String displayName;
+thing.SetDisplayName(displayName);
+```
+
+## SetFieldKey(String)
+
+```crmscript
+Void SetFieldKey(String fieldKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String fieldKey;
+thing.SetFieldKey(fieldKey);
+```
+
+## SetFieldType(Integer)
+
+```crmscript
+Void SetFieldType(Integer fieldType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer fieldType;
+thing.SetFieldType(fieldType);
+```
+
+## SetListName(String)
+
+```crmscript
+Void SetListName(String listName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+String listName;
+thing.SetListName(listName);
+```
+
+## SetMaxLength(Integer)
+
+```crmscript
+Void SetMaxLength(Integer maxLength)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer maxLength;
+thing.SetMaxLength(maxLength);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetShowInSearch(Bool)
+
+```crmscript
+Void SetShowInSearch(Bool showInSearch)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldMetadata thing;
+Bool showInSearch;
+thing.SetShowInSearch(showInSearch);
+```

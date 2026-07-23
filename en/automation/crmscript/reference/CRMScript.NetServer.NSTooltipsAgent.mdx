@@ -1,0 +1,43 @@
+﻿---
+uid: crmscript.netserver.nstooltipsagent
+title: NSTooltipsAgent
+description: "Tooltip system, hint to text transformation."
+keywords: CRMScript, NSTooltipsAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTooltipsAgent
+
+Tooltip system, hint to text transformation.
+
+## Constructors
+
+### NSTooltipsAgent()
+
+```crmscript
+NSTooltipsAgent
+```
+
+Tooltip system, hint to text transformation.
+
+## Methods
+
+## GetTooltip(String)
+
+Parses a tooltip hint and return a tooltip.
+
+```crmscript
+String GetTooltip(String tooltipHint)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - either a literal text, representing itself or a set of key/value pairs enclosed in curly braces.  may contain resource string identifiers (in square brackets), to be processed by the resource manager.
+
+<Note>
+Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.
+
+A typical tooltip hint could be &lt;code&gt;`{contact_id=123}`&lt;/code&gt; or &lt;code&gt;`{appointment_id=222 & mode=simple}`&lt;/code&gt;
+</Note>

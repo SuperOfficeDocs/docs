@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsresolveduser
+title: NSResolvedUser
+description: "The User Service. The service implements all services working with the User object."
+keywords: CRMScript, NSResolvedUser, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSResolvedUser
+
+The User Service. The service implements all services working with the User object.
+
+## Constructors
+
+### NSResolvedUser()
+
+```crmscript
+NSResolvedUser
+```
+
+Initializes a new instance of the NSResolvedUser class.
+
+## Methods
+
+## GetPersonCreated()
+
+```crmscript
+Bool GetPersonCreated()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates if the resolved person was created or not.
+
+**Example:**
+
+```crmscript
+NSResolvedUser thing;
+Bool personCreated = thing.GetPersonCreated();
+```
+
+## GetUser()
+
+```crmscript
+NSUser GetUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser) - The resolved NSUser instance.
+
+**Example:**
+
+```crmscript
+NSResolvedUser thing;
+NSUser user = thing.GetUser();
+```
+
+## SetPersonCreated(Bool)
+
+```crmscript
+Void SetPersonCreated(Bool personCreated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResolvedUser thing;
+Bool personCreated;
+thing.SetPersonCreated(personCreated);
+```
+
+## SetUser(NSUser)
+
+```crmscript
+Void SetUser(NSUser user)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResolvedUser thing;
+NSUser user;
+thing.SetUser(user);
+```

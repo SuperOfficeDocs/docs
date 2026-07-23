@@ -1,0 +1,58 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfobool
+title: NSFieldInfoBool
+description: "Boolean custom database field. Typically rendered as a checkbox."
+keywords: CRMScript, NSFieldInfoBool, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoBool
+
+Boolean custom database field. Typically rendered as a checkbox.
+
+## Constructors
+
+### NSFieldInfoBool()
+
+```crmscript
+NSFieldInfoBool
+```
+
+Initializes a new instance of the NSFieldInfoBool class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Bool GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Default boolean value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBool thing;
+Bool defaultValue = thing.GetDefaultValue();
+```
+
+## SetDefaultValue(Bool)
+
+```crmscript
+Void SetDefaultValue(Bool defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBool thing;
+Bool defaultValue;
+thing.SetDefaultValue(defaultValue);
+```

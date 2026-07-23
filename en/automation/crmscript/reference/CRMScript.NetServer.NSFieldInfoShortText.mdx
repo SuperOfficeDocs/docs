@@ -1,0 +1,167 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfoshorttext
+title: NSFieldInfoShortText
+description: "Short text string custom database field."
+keywords: CRMScript, NSFieldInfoShortText, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoShortText
+
+Short text string custom database field.
+
+## Constructors
+
+### NSFieldInfoShortText()
+
+```crmscript
+NSFieldInfoShortText
+```
+
+Initializes a new instance of the NSFieldInfoShortText class.
+
+## Methods
+
+## GetChoices()
+
+```crmscript
+String[] GetChoices()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - List of items to choose from. Null = not a dropdown list.
+
+## GetDefaultValue()
+
+```crmscript
+String GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default string value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+String defaultValue = thing.GetDefaultValue();
+```
+
+## GetFormatMask()
+
+```crmscript
+String GetFormatMask()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Formatting mask, can be whatever the controls understand (currently nothing).
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+String formatMask = thing.GetFormatMask();
+```
+
+## GetIsHtml()
+
+```crmscript
+Bool GetIsHtml()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Do not escape HTML in field when displaying contents.
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+Bool isHtml = thing.GetIsHtml();
+```
+
+## GetTextLength()
+
+```crmscript
+Integer GetTextLength()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Length (in characters) of a text field, 0 for other types.
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+Integer textLength = thing.GetTextLength();
+```
+
+## SetChoices(String[])
+
+```crmscript
+Void SetChoices(String[] choices)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetDefaultValue(String)
+
+```crmscript
+Void SetDefaultValue(String defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+String defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetFormatMask(String)
+
+```crmscript
+Void SetFormatMask(String formatMask)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+String formatMask;
+thing.SetFormatMask(formatMask);
+```
+
+## SetIsHtml(Bool)
+
+```crmscript
+Void SetIsHtml(Bool isHtml)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+Bool isHtml;
+thing.SetIsHtml(isHtml);
+```
+
+## SetTextLength(Integer)
+
+```crmscript
+Void SetTextLength(Integer textLength)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoShortText thing;
+Integer textLength;
+thing.SetTextLength(textLength);
+```

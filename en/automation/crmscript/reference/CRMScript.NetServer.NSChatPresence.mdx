@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nschatpresence
+title: NSChatPresence
+description: "Represents presence information for a chat user, bundled with some other useful information. Carrier object for ChatPresence."
+keywords: CRMScript, NSChatPresence, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatPresence
+
+Represents presence information for a chat user, bundled with some other useful information. Carrier object for ChatPresence.
+
+## Constructors
+
+### NSChatPresence()
+
+```crmscript
+NSChatPresence
+```
+
+Initializes a new instance of the NSChatPresence class.
+
+## Methods
+
+## GetChatTopics()
+
+```crmscript
+Integer[] GetChatTopics()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - An array of IDs with chat topics that this user is a member of.
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Integer[] chatTopics = thing.GetChatTopics();
+```
+
+## GetDisplayName()
+
+```crmscript
+String GetDisplayName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The display name of the chat user.
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+String displayName = thing.GetDisplayName();
+```
+
+## GetOngoingChats()
+
+```crmscript
+Integer GetOngoingChats()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of ongoing chats this users has now.
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Integer ongoingChats = thing.GetOngoingChats();
+```
+
+## GetPresent()
+
+```crmscript
+Bool GetPresent()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates if the user has the chat presence turned on or off.
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Bool present = thing.GetPresent();
+```
+
+## GetUserId()
+
+```crmscript
+Integer GetUserId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID for the chat user.
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Integer userId = thing.GetUserId();
+```
+
+## SetChatTopics(Integer[])
+
+```crmscript
+Void SetChatTopics(Integer[] chatTopics)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Integer[] chatTopics;
+thing.SetChatTopics(chatTopics);
+```
+
+## SetDisplayName(String)
+
+```crmscript
+Void SetDisplayName(String displayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+String displayName;
+thing.SetDisplayName(displayName);
+```
+
+## SetOngoingChats(Integer)
+
+```crmscript
+Void SetOngoingChats(Integer ongoingChats)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Integer ongoingChats;
+thing.SetOngoingChats(ongoingChats);
+```
+
+## SetPresent(Bool)
+
+```crmscript
+Void SetPresent(Bool present)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Bool present;
+thing.SetPresent(present);
+```
+
+## SetUserId(Integer)
+
+```crmscript
+Void SetUserId(Integer userId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatPresence thing;
+Integer userId;
+thing.SetUserId(userId);
+```

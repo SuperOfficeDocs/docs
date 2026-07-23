@@ -1,0 +1,87 @@
+﻿---
+uid: crmscript.netserver.nsticketcategorymembershipentity
+title: NSTicketCategoryMembershipEntity
+description: ""
+keywords: CRMScript, NSTicketCategoryMembershipEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketCategoryMembershipEntity
+
+## Constructors
+
+### NSTicketCategoryMembershipEntity()
+
+```crmscript
+NSTicketCategoryMembershipEntity
+```
+
+Initializes a new instance of the NSTicketCategoryMembershipEntity class.
+
+## Methods
+
+## GetUser()
+
+```crmscript
+NSAssociate GetUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Gets referenced Associate.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryMembershipEntity thing;
+NSAssociate associate = thing.GetUser();
+```
+
+## GetWeight()
+
+```crmscript
+Integer GetWeight()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Gets value used for weighted delegation.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryMembershipEntity thing;
+Integer weight = thing.GetWeight();
+```
+
+## SetUser(NSAssociate)
+
+```crmscript
+Void SetUser(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryMembershipEntity thing;
+NSAssociate associate;
+thing.SetUser(associate);
+```
+
+## SetWeight(Integer)
+
+```crmscript
+Void SetWeight(Integer weight)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryMembershipEntity thing;
+String externalName;
+thing.SetExternalName(externalName);
+```

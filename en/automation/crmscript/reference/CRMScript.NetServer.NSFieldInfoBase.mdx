@@ -1,0 +1,430 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfobase
+title: NSFieldInfoBase
+description: "Abstract basic information about database fields. May be custom or user-defined fields. The information can be used to build a user interface."
+keywords: CRMScript, NSFieldInfoBase, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoBase
+
+Abstract basic information about database fields. May be custom or user-defined fields. The information can be used to build a user interface.
+
+## Constructors
+
+### NSFieldInfoBase()
+
+```crmscript
+NSFieldInfoBase
+```
+
+Initializes a new instance of the NSFieldInfoBase class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional tooltip text for this field.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String description = thing.GetDescription();
+```
+
+## GetDisplayName()
+
+```crmscript
+String GetDisplayName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Label for field. May be multi-lang string encoded.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String displayName = thing.GetDisplayName();
+```
+
+## GetFieldName()
+
+```crmscript
+String GetFieldName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Database name or prog-id 'x_foobar' or 'SuperOffice:2'.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String fieldName = thing.GetFieldName();
+```
+
+## GetFieldType()
+
+```crmscript
+Integer GetFieldType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What sort of data does this field contain. See &lt;xref href="CRMScript.NetServer.CustomFieldType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Integer fieldType = thing.GetFieldType();
+```
+
+## GetHideField()
+
+```crmscript
+Bool GetHideField()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Hide the field from the UI. Only allow API access.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool hideField = thing.GetHideField();
+```
+
+## GetHideLabel()
+
+```crmscript
+Bool GetHideLabel()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Hide the label if 1
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool hideLabel = thing.GetHideLabel();
+```
+
+## GetIsExternal()
+
+```crmscript
+Bool GetIsExternal()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this field be shown to external users via customer center?
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isExternal = thing.GetIsExternal();
+```
+
+## GetIsIndexed()
+
+```crmscript
+Bool GetIsIndexed()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this field indexed? true if yes; false if no.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isIndexed = thing.GetIsIndexed();
+```
+
+## GetIsMandatory()
+
+```crmscript
+Bool GetIsMandatory()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 = no, 1 = yes (field must be filled out).
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isMandatory = thing.GetIsMandatory();
+```
+
+## GetIsReadOnly()
+
+```crmscript
+Bool GetIsReadOnly()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 = read/write, 1 = readonly (don't combine with mandatory).
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isReadOnly = thing.GetIsReadOnly();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Tab order, ranking within the custom fields.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Integer rank = thing.GetRank();
+```
+
+## GetShortLabel()
+
+```crmscript
+String GetShortLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String shortLabel = thing.GetShortLabel();
+```
+
+## GetTemplateVariableName()
+
+```crmscript
+String GetTemplateVariableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Template variable name 'cs01', 'cl02' etc. Null for extra fields.
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String templateVariableName = thing.GetTemplateVariableName();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDisplayName(String)
+
+```crmscript
+Void SetDisplayName(String displayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String displayName;
+thing.SetDisplayName(displayName);
+```
+
+## SetFieldName(String)
+
+```crmscript
+Void SetFieldName(String fieldName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String fieldName;
+thing.SetFieldName(fieldName);
+```
+
+## SetFieldType(Integer)
+
+```crmscript
+Void SetFieldType(Integer fieldType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Integer fieldType;
+thing.SetFieldType(fieldType);
+```
+
+## SetHideField(Bool)
+
+```crmscript
+Void SetHideField(Bool hideField)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool hideField;
+thing.SetHideField(hideField);
+```
+
+## SetHideLabel(Bool)
+
+```crmscript
+Void SetHideLabel(Bool hideLabel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool hideLabel;
+thing.SetHideLabel(hideLabel);
+```
+
+## SetIsExternal(Bool)
+
+```crmscript
+Void SetIsExternal(Bool isExternal)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isExternal;
+thing.SetIsExternal(isExternal);
+```
+
+## SetIsIndexed(Bool)
+
+```crmscript
+Void SetIsIndexed(Bool isIndexed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isIndexed;
+thing.SetIsIndexed(isIndexed);
+```
+
+## SetIsMandatory(Bool)
+
+```crmscript
+Void SetIsMandatory(Bool isMandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isMandatory;
+thing.SetIsMandatory(isMandatory);
+```
+
+## SetIsReadOnly(Bool)
+
+```crmscript
+Void SetIsReadOnly(Bool isReadOnly)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Bool isReadOnly;
+thing.SetIsReadOnly(isReadOnly);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetShortLabel(String)
+
+```crmscript
+Void SetShortLabel(String shortLabel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String shortLabel;
+thing.SetShortLabel(shortLabel);
+```
+
+## SetTemplateVariableName(String)
+
+```crmscript
+Void SetTemplateVariableName(String templateVariableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoBase thing;
+String templateVariableName;
+thing.SetTemplateVariableName(templateVariableName);
+```

@@ -1,0 +1,490 @@
+﻿---
+uid: crmscript.netserver.nsuserinfo
+title: NSUserInfo
+description: ""
+keywords: CRMScript, NSUserInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSUserInfo
+
+## Constructors
+
+### NSUserInfo()
+
+```crmscript
+NSUserInfo
+```
+
+Initializes a new instance of the NSUserInfo class.
+
+## Methods
+
+## GetCanLogon()
+
+```crmscript
+Bool GetCanLogon()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Bool canLogon = thing.GetCanLogon();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the user is retired and should have no rights, not appear in lists, etc.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetEjUserId()
+
+```crmscript
+Integer GetEjUserId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the ej user record corresponding to this associate; 0 for associates that are not ej users.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer ejUserId = thing.GetEjUserId();
+```
+
+## GetGrantedLicenses()
+
+```crmscript
+String[] GetGrantedLicenses()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String[] grantedLicenses = thing.GetGrantedLicenses();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Owning person record.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRoleName()
+
+```crmscript
+String GetRoleName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String roleName = thing.GetRoleName();
+```
+
+## GetRoleTooltip()
+
+```crmscript
+String GetRoleTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String roleTooltip = thing.GetRoleTooltip();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetUserGroupId()
+
+```crmscript
+Integer GetUserGroupId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary group membership, See the UserGroupLink database table reference for secondary memberships.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer userGroupId = thing.GetUserGroupId();
+```
+
+## GetUserGroupName()
+
+```crmscript
+String GetUserGroupName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String userGroupName = thing.GetUserGroupName();
+```
+
+## GetUserGroupTooltip()
+
+```crmscript
+String GetUserGroupTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String userGroupTooltip = thing.GetUserGroupTooltip();
+```
+
+## GetUserInfoId()
+
+```crmscript
+Integer GetUserInfoId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer userInfoId = thing.GetUserInfoId();
+```
+
+## GetUserName()
+
+```crmscript
+String GetUserName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, also login name, possibly database user name.
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String userName = thing.GetUserName();
+```
+
+## GetUserType()
+
+```crmscript
+Integer GetUserType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer userType = thing.GetUserType();
+```
+
+## SetCanLogon(Bool)
+
+```crmscript
+Void SetCanLogon(Bool canLogon)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Bool canLogon;
+thing.SetCanLogon(canLogon);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetEjUserId(Integer)
+
+```crmscript
+Void SetEjUserId(Integer ejUserId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer ejUserId;
+thing.SetEjUserId(ejUserId);
+```
+
+## SetGrantedLicenses(String[])
+
+```crmscript
+Void SetGrantedLicenses(String[] grantedLicenses)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String[] grantedLicenses;
+thing.SetGrantedLicenses(grantedLicenses);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRoleName(String)
+
+```crmscript
+Void SetRoleName(String roleName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String roleName;
+thing.SetRoleName(roleName);
+```
+
+## SetRoleTooltip(String)
+
+```crmscript
+Void SetRoleTooltip(String roleTooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String roleTooltip;
+thing.SetRoleTooltip(roleTooltip);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetUserGroupId(Integer)
+
+```crmscript
+Void SetUserGroupId(Integer userGroupId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer userGroupId;
+thing.SetUserGroupId(userGroupId);
+```
+
+## SetUserGroupName(String)
+
+```crmscript
+Void SetUserGroupName(String userGroupName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String userGroupName;
+thing.SetUserGroupName(userGroupName);
+```
+
+## SetUserGroupTooltip(String)
+
+```crmscript
+Void SetUserGroupTooltip(String userGroupTooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String userGroupTooltip;
+thing.SetUserGroupTooltip(userGroupTooltip);
+```
+
+## SetUserInfoId(Integer)
+
+```crmscript
+Void SetUserInfoId(Integer userInfoId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer userInfoId;
+thing.SetUserInfoId(userInfoId);
+```
+
+## SetUserName(String)
+
+```crmscript
+Void SetUserName(String userName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+String userName;
+thing.SetUserName(userName);
+```
+
+## SetUserType(Integer)
+
+```crmscript
+Void SetUserType(Integer userType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserInfo thing;
+Integer userType;
+thing.SetUserType(userType);
+```

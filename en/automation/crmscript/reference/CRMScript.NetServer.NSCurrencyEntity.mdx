@@ -1,0 +1,244 @@
+﻿---
+uid: crmscript.netserver.nscurrencyentity
+title: NSCurrencyEntity
+description: "Carrier object for CurrencyEntity."
+keywords: CRMScript, NSCurrencyEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCurrencyEntity
+
+Carrier object for CurrencyEntity.
+
+## Constructors
+
+### NSCurrencyEntity()
+
+```crmscript
+NSCurrencyEntity
+```
+
+Initializes a new instance of the NSCurrencyEntity class.
+
+## Methods
+
+## GetCurrencyId()
+
+```crmscript
+Integer GetCurrencyId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Integer currencyId = thing.GetCurrencyId();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRate()
+
+```crmscript
+Float GetRate()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Exchange rate.
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Float rate = thing.GetRate();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetUnits()
+
+```crmscript
+Float GetUnits()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Exchange unit scale (0.01, 0.1, 1, 10, 100 etc).
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Float units = thing.GetUnits();
+```
+
+## SetCurrencyId(Integer)
+
+```crmscript
+Void SetCurrencyId(Integer currencyId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Integer currencyId;
+thing.SetCurrencyId(currencyId);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRate(Float)
+
+```crmscript
+Void SetRate(Float rate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Float rate;
+thing.SetRate(rate);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetUnits(Float)
+
+```crmscript
+Void SetUnits(Float units)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCurrencyEntity thing;
+Float units;
+thing.SetUnits(units);
+```

@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsdatarights
+title: NSDataRights
+description: "Carrier object for DataRights."
+keywords: CRMScript, NSDataRights, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDataRights
+
+Carrier object for DataRights.
+
+## Constructors
+
+### NSDataRights()
+
+```crmscript
+NSDataRights
+```
+
+Initializes a new instance of the NSDataRights class.
+
+## Methods
+
+## GetColumnsInfo()
+
+```crmscript
+NSRelationToOwner[] GetColumnsInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSRelationToOwner](CRMScript.NetServer.NSRelationToOwner)[]
+
+**Example:**
+
+```crmscript
+NSDataRights thing;
+NSRelationToOwner[] columnsInfo = thing.GetColumnsInfo();
+```
+
+## GetRights()
+
+```crmscript
+NSDataRight[] GetRights()
+```
+
+**Returns:** [CRMScript.NetServer.NSDataRight](CRMScript.NetServer.NSDataRight)[]
+
+**Example:**
+
+```crmscript
+NSDataRights thing;
+NSDataRight[] rights = thing.GetRights();
+```
+
+## GetRowsInfo()
+
+```crmscript
+NSEntityName[] GetRowsInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityName](CRMScript.NetServer.NSEntityName)[]
+
+**Example:**
+
+```crmscript
+NSDataRights thing;
+NSEntityName[] rowsInfo = thing.GetRowsInfo();
+```
+
+## SetColumnsInfo(NSRelationToOwner[])
+
+```crmscript
+Void SetColumnsInfo(NSRelationToOwner[] columnsInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDataRights thing;
+NSRelationToOwner[] columnsInfo;
+thing.SetColumnsInfo(columnsInfo);
+```
+
+## SetRights(NSDataRight[][])
+
+```crmscript
+Void SetRights(NSDataRight[][] rights)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDataRights thing;
+NSDataRight[][] rights;
+thing.SetRights(rights);
+```
+
+## SetRowsInfo(NSEntityName[])
+
+```crmscript
+Void SetRowsInfo(NSEntityName[] rowsInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDataRights thing;
+NSEntityName[] rowsInfo;
+thing.SetRowsInfo(rowsInfo);
+```

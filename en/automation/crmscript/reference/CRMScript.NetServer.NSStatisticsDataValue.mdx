@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsstatisticsdatavalue
+title: NSStatisticsDataValue
+description: "Contains a single data value in a data set, used by CS for Status Screen reports."
+keywords: CRMScript, NSStatisticsDataValue, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSStatisticsDataValue
+
+Contains a single data value in a data set, used by CS for Status Screen reports.
+
+## Constructors
+
+### NSStatisticsDataValue()
+
+```crmscript
+NSStatisticsDataValue
+```
+
+Initializes a new instance of the NSStatisticsDataValue class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip for data value.
+
+**Example:**
+
+```crmscript
+NSStatisticsDataValue thing;
+String description = thing.GetDescription();
+```
+
+## GetLabel()
+
+```crmscript
+String GetLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The label for the data value.
+
+**Example:**
+
+```crmscript
+NSStatisticsDataValue thing;
+String label = thing.GetLabel();
+```
+
+## GetValue()
+
+```crmscript
+Float GetValue()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The value for the data value.
+
+**Example:**
+
+```crmscript
+NSStatisticsDataValue thing;
+Float value = thing.GetValue();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatisticsDataValue thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetLabel(String)
+
+```crmscript
+Void SetLabel(String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatisticsDataValue thing;
+String label;
+thing.SetLabel(label);
+```
+
+## SetValue(Float)
+
+```crmscript
+Void SetValue(Float value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatisticsDataValue thing;
+Float value;
+thing.SetValue(value);
+```

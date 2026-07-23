@@ -1,0 +1,244 @@
+﻿---
+uid: crmscript.netserver.nsforeignappentity
+title: NSForeignAppEntity
+description: "Carrier object for ForeignAppEntity.n"
+keywords: CRMScript, NSForeignAppEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSForeignAppEntity
+
+Carrier object for ForeignAppEntity.n
+
+## Constructors
+
+### NSForeignAppEntity()
+
+```crmscript
+NSForeignAppEntity
+```
+
+Initializes a new instance of the NSForeignAppEntity class.
+
+## Methods
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that created the foreign application.
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetDevices()
+
+```crmscript
+NSForeignDevice[] GetDevices()
+```
+
+**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)[] - The devices that belong to this foreign app.
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+NSForeignDevice[] devices = thing.GetDevices();
+```
+
+## GetForeignAppId()
+
+```crmscript
+Integer GetForeignAppId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+Integer foreignAppId = thing.GetForeignAppId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of foreign application.
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+String name = thing.GetName();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated this foreign application.
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetDevices(NSForeignDevice[])
+
+```crmscript
+Void SetDevices(NSForeignDevice[] devices)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+NSForeignDevice[] devices;
+thing.SetDevices(devices);
+```
+
+## SetForeignAppId(Integer)
+
+```crmscript
+Void SetForeignAppId(Integer foreignAppId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+Integer foreignAppId;
+thing.SetForeignAppId(foreignAppId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignAppEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```

@@ -1,0 +1,396 @@
+﻿---
+uid: crmscript.netserver.nsmarketingagent
+title: NSMarketingAgent
+description: "Agent used for Marketing functions, such as Forms."
+keywords: CRMScript, NSMarketingAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMarketingAgent
+
+Agent used for Marketing functions, such as Forms.
+
+## Constructors
+
+### NSMarketingAgent()
+
+```crmscript
+NSMarketingAgent
+```
+
+Agent used for Marketing functions, such as Forms.
+
+## Methods
+
+## CreateDefaultFormEntity()
+
+Sets default values into a new NSFormEntity.
+
+```crmscript
+NSFormEntity CreateDefaultFormEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSFormEntity](CRMScript.NetServer.NSFormEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSFormEntity thing = agent.CreateDefaultFormEntity();
+thing = agent.SaveFormEntity(thing);
+```
+
+## CreateDefaultFormSubmissionEntity()
+
+Sets default values into a new NSFormSubmissionEntity.
+
+```crmscript
+NSFormSubmissionEntity CreateDefaultFormSubmissionEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSFormSubmissionEntity](CRMScript.NetServer.NSFormSubmissionEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSFormSubmissionEntity thing = agent.CreateDefaultFormSubmissionEntity();
+thing = agent.SaveFormSubmissionEntity(thing);
+```
+
+## CreateDefaultShipmentMessageBlockEntity()
+
+Sets default values into a new NSShipmentMessageBlockEntity.
+
+```crmscript
+NSShipmentMessageBlockEntity CreateDefaultShipmentMessageBlockEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSShipmentMessageBlockEntity](CRMScript.NetServer.NSShipmentMessageBlockEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSShipmentMessageBlockEntity thing = agent.CreateDefaultShipmentMessageBlockEntity();
+thing = agent.SaveShipmentMessageBlockEntity(thing);
+```
+
+## CreateDefaultShipmentMessageEntity()
+
+Sets default values into a new NSShipmentMessageEntity.
+
+```crmscript
+NSShipmentMessageEntity CreateDefaultShipmentMessageEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSShipmentMessageEntity](CRMScript.NetServer.NSShipmentMessageEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSShipmentMessageEntity thing = agent.CreateDefaultShipmentMessageEntity();
+thing = agent.SaveShipmentMessageEntity(thing);
+```
+
+## DeleteFormEntity(Integer)
+
+Deletes the NSFormEntity
+
+```crmscript
+DeleteFormEntity(Integer formEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+agent.DeleteFormEntity(123);
+```
+
+## DeleteFormSubmissionEntity(Integer)
+
+Deletes the NSFormSubmissionEntity
+
+```crmscript
+DeleteFormSubmissionEntity(Integer formSubmissionEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+agent.DeleteFormSubmissionEntity(123);
+```
+
+## DeleteShipmentMessageBlockEntity(Integer)
+
+Deletes the NSShipmentMessageBlockEntity
+
+```crmscript
+DeleteShipmentMessageBlockEntity(Integer shipmentMessageBlockEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+agent.DeleteShipmentMessageBlockEntity(123);
+```
+
+## DeleteShipmentMessageEntity(Integer)
+
+Deletes the NSShipmentMessageEntity
+
+```crmscript
+DeleteShipmentMessageEntity(Integer shipmentMessageEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+agent.DeleteShipmentMessageEntity(123);
+```
+
+## GetFormEntity(Integer)
+
+Gets an NSFormEntity object.
+
+```crmscript
+NSFormEntity GetFormEntity(Integer formEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSFormEntity](CRMScript.NetServer.NSFormEntity)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSFormEntity thing = agent.GetFormEntity(123);
+```
+
+## GetFormSubmissionEntity(Integer)
+
+Gets an NSFormSubmissionEntity object.
+
+```crmscript
+NSFormSubmissionEntity GetFormSubmissionEntity(Integer formSubmissionEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSFormSubmissionEntity](CRMScript.NetServer.NSFormSubmissionEntity)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSFormSubmissionEntity thing = agent.GetFormSubmissionEntity(123);
+```
+
+## GetPreviewMailing(Integer)
+
+Gets a shipment message from its shipment address ID
+
+```crmscript
+NSPreviewMailing GetPreviewMailing(Integer shipmentAddrId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPreviewMailing](CRMScript.NetServer.NSPreviewMailing)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+Integer shipmentAddrId;
+NSPreviewMailing res = agent.GetPreviewMailing(shipmentAddrId);
+```
+
+## GetPreviewMailingHeader(Integer)
+
+Gets a shipment from its shipment ID
+
+```crmscript
+NSPreviewMailingHeader GetPreviewMailingHeader(Integer shipmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPreviewMailingHeader](CRMScript.NetServer.NSPreviewMailingHeader)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+Integer shipmentId;
+NSPreviewMailingHeader res = agent.GetPreviewMailingHeader(shipmentId);
+```
+
+## GetShipmentMessageBlockEntity(Integer)
+
+Gets an NSShipmentMessageBlockEntity object.
+
+```crmscript
+NSShipmentMessageBlockEntity GetShipmentMessageBlockEntity(Integer shipmentMessageBlockEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSShipmentMessageBlockEntity](CRMScript.NetServer.NSShipmentMessageBlockEntity)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSShipmentMessageBlockEntity thing = agent.GetShipmentMessageBlockEntity(123);
+```
+
+## GetShipmentMessageEntity(Integer)
+
+Gets an NSShipmentMessageEntity object.
+
+```crmscript
+NSShipmentMessageEntity GetShipmentMessageEntity(Integer shipmentMessageEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSShipmentMessageEntity](CRMScript.NetServer.NSShipmentMessageEntity)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+NSShipmentMessageEntity thing = agent.GetShipmentMessageEntity(123);
+```
+
+## GetUserBlocks(Integer)
+
+Gets the saved user blocks to be used in a shipment/mailing message
+
+```crmscript
+NSShipmentMessageBlockEntity[] GetUserBlocks(Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSShipmentMessageBlockEntity](CRMScript.NetServer.NSShipmentMessageBlockEntity)[]
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+Integer associateId;
+NSShipmentMessageBlockEntity[] res = agent.GetUserBlocks(associateId);
+```
+
+## SaveFormEntity(NSFormEntity)
+
+Updates the existing NSFormEntity or creates a new NSFormEntity if the id parameter is 0
+
+```crmscript
+NSFormEntity SaveFormEntity(NSFormEntity formEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSFormEntity](CRMScript.NetServer.NSFormEntity)
+
+**Example:**
+
+```crmscript
+NSMarketing  agent;
+NSFormEntity thing = agent.CreateDefaultFormEntity();
+thing = agent.SaveFormEntity(thing);
+```
+
+## SaveFormSubmissionEntity(NSFormSubmissionEntity)
+
+Updates the existing NSFormSubmissionEntity or creates a new NSFormSubmissionEntity if the id parameter is 0
+
+```crmscript
+NSFormSubmissionEntity SaveFormSubmissionEntity(NSFormSubmissionEntity formSubmissionEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSFormSubmissionEntity](CRMScript.NetServer.NSFormSubmissionEntity)
+
+**Example:**
+
+```crmscript
+NSMarketing  agent;
+NSFormSubmissionEntity thing = agent.CreateDefaultFormSubmissionEntity();
+thing = agent.SaveFormSubmissionEntity(thing);
+```
+
+## SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity)
+
+Updates the existing NSShipmentMessageBlockEntity or creates a new NSShipmentMessageBlockEntity if the id parameter is 0
+
+```crmscript
+NSShipmentMessageBlockEntity SaveShipmentMessageBlockEntity(NSShipmentMessageBlockEntity shipmentMessageBlockEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSShipmentMessageBlockEntity](CRMScript.NetServer.NSShipmentMessageBlockEntity)
+
+**Example:**
+
+```crmscript
+NSMarketing  agent;
+NSShipmentMessageBlockEntity thing = agent.CreateDefaultShipmentMessageBlockEntity();
+thing = agent.SaveShipmentMessageBlockEntity(thing);
+```
+
+## SaveShipmentMessageEntity(NSShipmentMessageEntity)
+
+Updates the existing NSShipmentMessageEntity or creates a new NSShipmentMessageEntity if the id parameter is 0
+
+```crmscript
+NSShipmentMessageEntity SaveShipmentMessageEntity(NSShipmentMessageEntity shipmentMessageEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSShipmentMessageEntity](CRMScript.NetServer.NSShipmentMessageEntity)
+
+**Example:**
+
+```crmscript
+NSMarketing  agent;
+NSShipmentMessageEntity thing = agent.CreateDefaultShipmentMessageEntity();
+thing = agent.SaveShipmentMessageEntity(thing);
+```
+
+## VerifyGoogleRecaptcha(String,String)
+
+Tries to verify a Google recaptcha token. The token is gained from the recaptcha frontend component
+
+```crmscript
+Bool VerifyGoogleRecaptcha(String token, String optionalSecretKey)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSMarketingAgent agent;
+String token;
+String optionalSecretKey;
+Bool res = agent.VerifyGoogleRecaptcha(token, optionalSecretKey);
+```

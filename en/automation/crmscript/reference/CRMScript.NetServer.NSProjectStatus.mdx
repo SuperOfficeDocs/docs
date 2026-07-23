@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nsprojectstatus
+title: NSProjectStatus
+description: "Carrier object for ProjectStatus."
+keywords: CRMScript, NSProjectStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectStatus
+
+Carrier object for ProjectStatus.
+
+## Constructors
+
+### NSProjectStatus()
+
+```crmscript
+NSProjectStatus
+```
+
+Initializes a new instance of the NSProjectStatus class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSProjectStatus.
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSProjectStatus Id.
+
+**Example:**
+
+```crmscript
+NSProjectStatus thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSProjectStatus list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProjectStatus tooltip description.
+
+**Example:**
+
+```crmscript
+NSProjectStatus thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSProjectStatus.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProjectStatus name.
+
+**Example:**
+
+```crmscript
+NSProjectStatus thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSProjectStatus
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectStatus thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSProjectStatus list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectStatus thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSProjectStatus item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectStatus thing;
+thing.SetValue("frotz");
+```

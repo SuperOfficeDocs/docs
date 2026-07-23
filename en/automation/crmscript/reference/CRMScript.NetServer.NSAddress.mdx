@@ -1,0 +1,87 @@
+﻿---
+uid: crmscript.netserver.nsaddress
+title: NSAddress
+description: "Carrier object for Address."
+keywords: CRMScript, NSAddress, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAddress
+
+Carrier object for Address.
+
+## Constructors
+
+### NSAddress()
+
+```crmscript
+NSAddress
+```
+
+Initializes a new instance of the NSAddress class.
+
+## Methods
+
+## GetLocalizedAddress()
+
+NSLocalizedField[] is a list of LocalizedFieldList objects. Used to store localized information such as formatted address data.
+
+```crmscript
+NSLocalizedField[][] GetLocalizedAddress()
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedField[]](CRMScript.NetServer.NSLocalizedField[])[]
+
+## GetWgs84Latitude()
+
+Latitude (that's north/south), decimal degrees, relative to WGS 84 ellipsoid. SuperOffice ASA is at 59.91892. This value needs no further grid reference or other qualifying information.
+
+```crmscript
+Float GetWgs84Latitude()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float)
+
+## GetWgs84Longitude()
+
+Longitude (that's East/west), decimal degrees, relative to WGS 84 ellipsoid. SuperOffice ASA is at 10.73159. This value needs no further grid reference or other qualifying information.
+
+```crmscript
+Float GetWgs84Longitude()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float)
+
+## SetLocalizedAddress(NSLocalizedField[][])
+
+NSLocalizedField[] is a list of LocalizedFieldList objects. Used to store localized information such as formatted address data.
+
+```crmscript
+Void SetLocalizedAddress(NSLocalizedField[][] list)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetWgs84Latitude(Float)
+
+Latitude (that's north/south), decimal degrees, relative to WGS 84 ellipsoid. SuperOffice ASA is at 59.91892. This value needs no further grid reference or other qualifying information.
+
+```crmscript
+Void SetWgs84Latitude(Float latitude)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetWgs84Longitude(Float)
+
+Longitude (that's East/west), decimal degrees, relative to WGS 84 ellipsoid. SuperOffice ASA is at 10.73159. This value needs no further grid reference or other qualifying information.
+
+```crmscript
+Void SetWgs84Longitude(Float longitude)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

@@ -1,0 +1,948 @@
+﻿---
+uid: crmscript.netserver.nsselectionagent
+title: NSSelectionAgent
+description: "Selections, entities, members and tasks"
+keywords: CRMScript, NSSelectionAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSelectionAgent
+
+Selections, entities, members and tasks
+
+&lt;pre&gt;&lt;code&gt;NSSelectionAgent agent;
+agent.callMethod(arg1, arg2);&lt;/code&gt;&lt;/pre&gt;
+
+## Constructors
+
+### NSSelectionAgent()
+
+```crmscript
+NSSelectionAgent
+```
+
+Selections, entities, members and tasks
+
+&lt;pre&gt;&lt;code&gt;NSSelectionAgent agent;
+agent.callMethod(arg1, arg2);&lt;/code&gt;&lt;/pre&gt;
+
+## Methods
+
+## AddContactSelectionMembers(Integer,NSContactPersonId[])
+
+Adds the collection of ContactPersonId as members to the static selection
+
+```crmscript
+Void AddContactSelectionMembers(Integer selectionId, NSContactPersonId[] contactPersonIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## AddContactSelectionMembersFromSearch(Integer,String)
+
+Adds members to the selection from the search result.
+
+```crmscript
+Integer AddContactSelectionMembersFromSearch(Integer selectionId, String storageKey)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String storageKey;
+Integer res = agent.AddContactSelectionMembersFromSearch(selectionId, storageKey);
+```
+
+## AddRemoveContactSelectionMemberInterests(Integer,Integer[],Integer[],Integer[],Integer[])
+
+Adds or removes interests on companies and persons in a selection.
+
+```crmscript
+Void AddRemoveContactSelectionMemberInterests(Integer selectionId, Integer[] addCompanyInterests, Integer[] removeCompanyInterests, Integer[] addContactInterests, Integer[] removeContactInterests)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## AddSelectionMembers(Integer,Integer[])
+
+Add selection members to a static selection of type others than contacts.
+
+```crmscript
+Integer AddSelectionMembers(Integer selectionId, Integer[] ids)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+Integer[] ids;
+Integer res = agent.AddSelectionMembers(selectionId, ids);
+```
+
+## AddSelectionMembersFromSearch(Integer,String)
+
+Adds members from the selection using the search result.
+
+```crmscript
+Integer AddSelectionMembersFromSearch(Integer selectionId, String storageKey)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String storageKey;
+Integer res = agent.AddSelectionMembersFromSearch(selectionId, storageKey);
+```
+
+## CopyContactSelectionMembers(Integer,Integer)
+
+Copies contact selection members from selection into an existing selection.
+
+```crmscript
+Void CopyContactSelectionMembers(Integer fromSelectionId, Integer toSelectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CopySelectionMembers(Integer,Integer)
+
+Copies selection members from selection into an existing selection.
+
+```crmscript
+Void CopySelectionMembers(Integer fromSelectionId, Integer toSelectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CreateContactSelectionFromSelection(Integer,String,Integer,Bool)
+
+Creates a new selection based on selection members from an existing selection.
+
+```crmscript
+NSSelectionEntity CreateContactSelectionFromSelection(Integer selectionId, String name, Integer targetSelectionType, Bool copyMembers)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String name;
+Integer targetSelectionType;
+Bool copyMembers;
+NSSelectionEntity res = agent.CreateContactSelectionFromSelection(selectionId, name, targetSelectionType, copyMembers);
+```
+
+## CreateContactSelectionFromShadowSelection(Integer,String)
+
+Creates a new contact selection based on contact selection members from an existing shadow sale, appointment, project or document selection.
+
+```crmscript
+NSSelectionEntity CreateContactSelectionFromShadowSelection(Integer selectionId, String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+<Note>
+The new selection will always be static even if the original selection is dynamic.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String name;
+NSSelectionEntity res = agent.CreateContactSelectionFromShadowSelection(selectionId, name);
+```
+
+## CreateDefaultMailMergeSettings()
+
+Sets default values into a new NSMailMergeSettings.
+
+```crmscript
+NSMailMergeSettings CreateDefaultMailMergeSettings()
+```
+
+**Returns:** [CRMScript.NetServer.NSMailMergeSettings](CRMScript.NetServer.NSMailMergeSettings)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSMailMergeSettings thing = agent.CreateDefaultMailMergeSettings();
+thing = agent.SaveMailMergeSettings(thing);
+```
+
+## CreateDefaultMailMergeTask()
+
+Sets default values into a new NSMailMergeTask.
+
+```crmscript
+NSMailMergeTask CreateDefaultMailMergeTask()
+```
+
+**Returns:** [CRMScript.NetServer.NSMailMergeTask](CRMScript.NetServer.NSMailMergeTask)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSMailMergeTask thing = agent.CreateDefaultMailMergeTask();
+thing = agent.SaveMailMergeTask(thing);
+```
+
+## CreateDefaultSelectionEntity()
+
+Sets default values into a new NSSelectionEntity.
+
+```crmscript
+NSSelectionEntity CreateDefaultSelectionEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSSelectionEntity thing = agent.CreateDefaultSelectionEntity();
+thing = agent.SaveSelectionEntity(thing);
+```
+
+## CreateNewEntry(NSDuplicateEntry)
+
+Creates a new selection based on external duplicate
+
+```crmscript
+Integer CreateNewEntry(NSDuplicateEntry duplicate)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSDuplicateEntry duplicate;
+Integer res = agent.CreateNewEntry(duplicate);
+```
+
+## CreateSelectionEntity(String)
+
+Creates (but do not save) a new selection entity, for the current user and the given target table; other fields populated as by CreateDefaultSelectionEntity()
+
+```crmscript
+NSSelectionEntity CreateSelectionEntity(String targetTableName)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+String targetTableName;
+NSSelectionEntity res = agent.CreateSelectionEntity(targetTableName);
+```
+
+## CreateSelectionFromSelection(Integer,String,Integer,Bool)
+
+Creates a new selection based on selection members from an existing selection.
+
+```crmscript
+NSSelectionEntity CreateSelectionFromSelection(Integer selectionId, String name, Integer targetSelectionType, Bool copyMembers)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String name;
+Integer targetSelectionType;
+Bool copyMembers;
+NSSelectionEntity res = agent.CreateSelectionFromSelection(selectionId, name, targetSelectionType, copyMembers);
+```
+
+## CreateTemporaryContactSelection()
+
+Creates a temporary selection.
+
+```crmscript
+NSSelectionEntity CreateTemporaryContactSelection()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSSelectionEntity res = agent.CreateTemporaryContactSelection();
+```
+
+## CreateTemporaryContactSelectionFromContactPersonIds(NSContactPersonId[])
+
+Creates a temporary selection with members from a collection of ContactPerson IDs.
+
+```crmscript
+NSSelectionEntity CreateTemporaryContactSelectionFromContactPersonIds(NSContactPersonId[] contactPersonIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSContactPersonId[] contactPersonIds;
+NSSelectionEntity res = agent.CreateTemporaryContactSelectionFromContactPersonIds(contactPersonIds);
+```
+
+## CreateTemporaryContactSelectionFromProjectMembers(Integer)
+
+Creates a temporary selection with members from an existing project.
+
+```crmscript
+NSSelectionEntity CreateTemporaryContactSelectionFromProjectMembers(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer projectId;
+NSSelectionEntity res = agent.CreateTemporaryContactSelectionFromProjectMembers(projectId);
+```
+
+## CreateTemporaryContactSelectionFromSelectionMemberIds(Integer,Integer[])
+
+Creates a temporary selection with members from a collection of selection-member IDs.
+
+```crmscript
+NSSelectionEntity CreateTemporaryContactSelectionFromSelectionMemberIds(Integer selectionId, Integer[] selectionMemberIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+Integer[] selectionMemberIds;
+NSSelectionEntity res = agent.CreateTemporaryContactSelectionFromSelectionMemberIds(selectionId, selectionMemberIds);
+```
+
+## CreateTemporarySelectionFromIds(Integer[],Integer)
+
+Creates a temporary selection with members from a collection of entity IDs.
+
+```crmscript
+NSSelectionEntity CreateTemporarySelectionFromIds(Integer[] ids, Integer targetTableNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer[] ids;
+Integer targetTableNumber;
+NSSelectionEntity res = agent.CreateTemporarySelectionFromIds(ids, targetTableNumber);
+```
+
+## DeleteContacts(Integer)
+
+Deletes all contacts from a selection.
+
+```crmscript
+Void DeleteContacts(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If a contact does not have delete rights, it will be skipped.
+</Note>
+
+## DeleteEntities(Integer)
+
+Deletes all entities from a selection.
+
+```crmscript
+Void DeleteEntities(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If an entity does not have delete rights, it will be skipped.
+</Note>
+
+## DeletePersons(Integer)
+
+Deletes all persons from a selection.
+
+```crmscript
+Void DeletePersons(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If a person does not have delete rights, it will be skipped.
+</Note>
+
+## DeleteSelectionEntity(Integer)
+
+Deletes the NSSelectionEntity
+
+```crmscript
+DeleteSelectionEntity(Integer selectionEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+agent.DeleteSelectionEntity(123);
+```
+
+## EditContactSelectionMemberDetails(Integer,NSSelectionMemberEditValues)
+
+Edits company and contact details in a selection based on contents in selectionMemberEditValues.
+
+```crmscript
+Void EditContactSelectionMemberDetails(Integer selectionId, NSSelectionMemberEditValues selectionMemberEditValues)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ExportSelectionMembers(Integer,String,Bool)
+
+Generates a string that is the result of substituting the template variables with values from selection members.
+
+```crmscript
+Byte[] ExportSelectionMembers(Integer selectionId, String templateName, Bool useContacts)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String templateName;
+Bool useContacts;
+Byte[] res = agent.ExportSelectionMembers(selectionId, templateName, useContacts);
+```
+
+## ExportSelectionMembersWithOrderBy(Integer,String,Bool,String)
+
+Generates a string that is the result of substituting the template variables with values from selection members.
+
+```crmscript
+Byte[] ExportSelectionMembersWithOrderBy(Integer selectionId, String templateName, Bool useContacts, String orderBy)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String templateName;
+Bool useContacts;
+String orderBy;
+Byte[] res = agent.ExportSelectionMembersWithOrderBy(selectionId, templateName, useContacts, orderBy);
+```
+
+## GenerateFollowUps(Integer,NSAppointmentEntity,Integer,Bool,Bool)
+
+Generates follow-ups for members in the selection.
+
+```crmscript
+Void GenerateFollowUps(Integer selectionId, NSAppointmentEntity appointmentEntity, Integer associateId, Bool saveOnContactOwner, Bool uniqueContact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetDuplicateRules()
+
+Retrieves all available duplicate rules for selection
+
+```crmscript
+NSDuplicateRule[] GetDuplicateRules()
+```
+
+**Returns:** [CRMScript.NetServer.NSDuplicateRule](CRMScript.NetServer.NSDuplicateRule)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSDuplicateRule[] res = agent.GetDuplicateRules();
+```
+
+## GetDuplicates(String)
+
+Gets duplicates(exact or similar in the database) based on the name
+
+```crmscript
+NSDuplicateEntry[] GetDuplicates(String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSDuplicateEntry](CRMScript.NetServer.NSDuplicateEntry)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+String name;
+NSDuplicateEntry[] res = agent.GetDuplicates(name);
+```
+
+## GetDynamicSelectionCriteria(Integer)
+
+Gets the criteria for this dynamic selection.
+
+```crmscript
+NSArchiveRestrictionInfo[] GetDynamicSelectionCriteria(Integer selectionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+NSArchiveRestrictionInfo[] res = agent.GetDynamicSelectionCriteria(selectionId);
+```
+
+## GetDynamicSelectionCriteriaGroups(Integer)
+
+Gets the criteria for this dynamic selection. This call supports multiple criteria groups.
+
+```crmscript
+NSArchiveRestrictionGroup[] GetDynamicSelectionCriteriaGroups(Integer selectionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+NSArchiveRestrictionGroup[] res = agent.GetDynamicSelectionCriteriaGroups(selectionId);
+```
+
+## GetParentCombinedSelections(Integer)
+
+Gets a list of all selection ids where the given selection is used to create a combined selection.
+
+```crmscript
+Integer[] GetParentCombinedSelections(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+Integer[] res = agent.GetParentCombinedSelections(selectionId);
+```
+
+## GetRecipientStatistics(Integer)
+
+Returns an NSRecipientStatistics object with a count of addresses and email addresses.
+
+```crmscript
+NSRecipientStatistics GetRecipientStatistics(Integer selectionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRecipientStatistics](CRMScript.NetServer.NSRecipientStatistics)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+NSRecipientStatistics res = agent.GetRecipientStatistics(selectionId);
+```
+
+## GetRecipientStatisticsFromContactPersonIds()
+
+Returns an NSRecipientStatistics object with a count of addresses and email addresses based on contact and persons in a collection of ContactPersonId.
+
+```crmscript
+NSRecipientStatistics GetRecipientStatisticsFromContactPersonIds(NSContactPersonId[] contactPersonIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSRecipientStatistics](CRMScript.NetServer.NSRecipientStatistics)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSContactPersonId[] contactPersonIds;
+NSRecipientStatistics res = agent.GetRecipientStatisticsFromContactPersonIds(contactPersonIds);
+```
+
+## GetRecipientStatisticsFromProjectMembers(Integer)
+
+Returns an NSRecipientStatistics object with a count of addresses and email addresses based on members in a project.
+
+```crmscript
+NSRecipientStatistics GetRecipientStatisticsFromProjectMembers(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRecipientStatistics](CRMScript.NetServer.NSRecipientStatistics)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer projectId;
+NSRecipientStatistics res = agent.GetRecipientStatisticsFromProjectMembers(projectId);
+```
+
+## GetSelectionEntity(Integer)
+
+Gets an NSSelectionEntity object.
+
+```crmscript
+NSSelectionEntity GetSelectionEntity(Integer selectionEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSSelectionEntity thing = agent.GetSelectionEntity(123);
+```
+
+## GetSelectionForFind(String,Integer)
+
+Obtains a selection for the given entity, for the current user, of type WorkingSetForFind.
+
+```crmscript
+NSSelectionForFind GetSelectionForFind(String entityName, Integer typicalSearchId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionForFind](CRMScript.NetServer.NSSelectionForFind)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+String entityName;
+Integer typicalSearchId;
+NSSelectionForFind res = agent.GetSelectionForFind(entityName, typicalSearchId);
+```
+
+## GetSelectionMembersArchiveRows(Integer,String)
+
+Gets the list of members in this selection. The type of members depends on the target table of the selection.
+
+```crmscript
+NSArchiveListItem[] GetSelectionMembersArchiveRows(Integer selectionId, String select)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String select;
+NSArchiveListItem[] res = agent.GetSelectionMembersArchiveRows(selectionId, select);
+```
+
+## GetSelectionShadowMembersArchiveRows(Integer,String)
+
+Gets the list of members in this selection's shadow (i.e. the list of contacts + persons referenced in the main selection).
+
+```crmscript
+NSArchiveListItem[] GetSelectionShadowMembersArchiveRows(Integer selectionId, String select)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String select;
+NSArchiveListItem[] res = agent.GetSelectionShadowMembersArchiveRows(selectionId, select);
+```
+
+## RemoveContactSelectionMembers(Integer,NSContactPersonId[])
+
+Removes members from the selection as  specified in the collection of ContactPersonId.
+
+```crmscript
+Void RemoveContactSelectionMembers(Integer selectionId, NSContactPersonId[] contactPersonIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveContactSelectionMembersFromIds(Integer,Integer[])
+
+Removes members from the selection using a collection a selection-member IDs.
+
+```crmscript
+Void RemoveContactSelectionMembersFromIds(Integer selectionId, Integer[] selectionMembersIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Members can only be removed from single selection.
+</Note>
+
+## RemoveContactSelectionMembersFromSearch(Integer,String)
+
+Removes members from the selection using the search result.
+
+```crmscript
+Integer RemoveContactSelectionMembersFromSearch(Integer selectionId, String storageKey)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String storageKey;
+Integer res = agent.RemoveContactSelectionMembersFromSearch(selectionId, storageKey);
+```
+
+## RemoveSelectionMembers(Integer,Integer[])
+
+Removes members from the selection as specified in the collection of entity IDs. The IDs are selection member IDs (selection member primary key)
+
+```crmscript
+Void RemoveSelectionMembers(Integer selectionId, Integer[] selectionMemberIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveSelectionMembersById(Integer,Integer[])
+
+Removes members from the selection as specified in the collection of entity IDs. The IDs can be a collection of sale IDs, or other supported types.
+
+```crmscript
+Void RemoveSelectionMembersById(Integer selectionId, Integer[] ids)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveSelectionMembersFromSearch(Integer,String)
+
+Removes members from the selection using the search result.
+
+```crmscript
+Integer RemoveSelectionMembersFromSearch(Integer selectionId, String storageKey)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String storageKey;
+Integer res = agent.RemoveSelectionMembersFromSearch(selectionId, storageKey);
+```
+
+## SaveSelectionEntity(NSSelectionEntity)
+
+Updates the existing NSSelectionEntity or creates a new NSSelectionEntity if the ID parameter is 0.
+
+```crmscript
+NSSelectionEntity SaveSelectionEntity(NSSelectionEntity selectionEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity) - The new or updated NSSelectionEntity.
+
+**Example:**
+
+```crmscript
+NSSelection agent;
+NSSelectionEntity thing = agent.CreateDefaultSelectionEntity();
+thing = agent.SaveSelectionEntity(thing);
+```
+
+## SetDuplicateRulesStatus(NSDuplicateRule[])
+
+Sets which duplicate rules should be active or not
+
+```crmscript
+Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetDynamicSelectionCriteria(Integer,NSArchiveRestrictionInfo[])
+
+Updates the criteria for this dynamic selection. Replaces existing criteria with the new values.
+
+```crmscript
+NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria(Integer selectionId, NSArchiveRestrictionInfo[] criteria)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+NSArchiveRestrictionInfo[] criteria;
+NSArchiveRestrictionInfo[] res = agent.SetDynamicSelectionCriteria(selectionId, criteria);
+```
+
+## SetDynamicSelectionCriteria2(Integer,String)
+
+Updates the criteria for this dynamic selection using string.
+
+```crmscript
+NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria2(Integer selectionId, String filter)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+
+<Note>
+Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''n
+</Note>
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+String filter;
+NSArchiveRestrictionInfo[] res = agent.SetDynamicSelectionCriteria2(selectionId, filter);
+```
+
+## SetDynamicSelectionCriteria3(Integer,NSArchiveRestrictionInfo[],String)
+
+Updates the criteria for this dynamic selection. Use criteria as either restriction objects or OData string format.
+
+```crmscript
+NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria3(Integer selectionId, NSArchiveRestrictionInfo[] criteria, String filter)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+
+<Note>
+Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''n
+</Note>
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+NSArchiveRestrictionInfo[] criteria;
+String filter;
+NSArchiveRestrictionInfo[] res = agent.SetDynamicSelectionCriteria3(selectionId, criteria, filter);
+```
+
+## SetDynamicSelectionCriteriaGroups(Integer,NSArchiveRestrictionGroup[])
+
+Updates the criteria for this dynamic selection. Replaces existing criteria with the new values. This call supports multiple criteria groups.
+
+```crmscript
+NSArchiveRestrictionGroup[] SetDynamicSelectionCriteriaGroups(Integer selectionId, NSArchiveRestrictionGroup[] criteria)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[]
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+Integer selectionId;
+NSArchiveRestrictionGroup[] criteria;
+NSArchiveRestrictionGroup[] res = agent.SetDynamicSelectionCriteriaGroups(selectionId, criteria);
+```
+
+## StartMailMerge(MailMergeSettings)
+
+Starts a mail-merge operation with specified settings.
+
+```crmscript
+Void StartMailMerge(MailMergeSettings settings)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## UpdateTypicalSearch(NSTypicalSearches)
+
+Updates (imports) TypicalSearch information in the database
+
+```crmscript
+String UpdateTypicalSearch(NSTypicalSearches searches)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSSelectionAgent agent;
+NSTypicalSearches searches;
+String res = agent.UpdateTypicalSearch(searches);
+```

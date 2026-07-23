@@ -1,0 +1,395 @@
+﻿---
+uid: crmscript.netserver.nsarchiverestrictioninfo
+title: NSArchiveRestrictionInfo
+description: "Carries information about a restriction on the query of an archive provider."
+keywords: CRMScript, NSArchiveRestrictionInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveRestrictionInfo
+
+Carries information about a restriction on the query of an archive provider.
+
+## Constructors
+
+### NSArchiveRestrictionInfo()
+
+```crmscript
+NSArchiveRestrictionInfo
+```
+
+Initializes a new instance of the NSArchiveRestrictionInfo class.
+
+## Methods
+
+## GetColumnInfo()
+
+```crmscript
+NSArchiveColumnInfo GetColumnInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo) - Optional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+NSArchiveColumnInfo columnInfo = thing.GetColumnInfo();
+```
+
+## GetDisplayValues()
+
+```crmscript
+String[] GetDisplayValues()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Display representation of values.
+
+<Note>
+List ID's are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String[] displayValues = thing.GetDisplayValues();
+```
+
+## GetInterOperator()
+
+Gets inter-restriction operator that describes how this restriction is related to the next one in an array.
+
+```crmscript
+Integer GetInterOperator()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - inter-restriction operator 0 = None; 1 = And; 2 = Or.
+
+<Note>
+Default for new ArchiveRestrictionInfo objects is And
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Integer interOperator = thing.GetInterOperator();
+```
+
+## GetInterParenthesis()
+
+Gets the parenthesis (if any) associated with this restriction.
+
+```crmscript
+Integer GetInterParenthesis()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+Positive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Integer interParenthesis = thing.GetInterParenthesis();
+```
+
+## GetIsActive()
+
+```crmscript
+Bool GetIsActive()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this restriction active?
+
+<Note>
+Inactive restrictions will not influence the generated query.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Bool isActive = thing.GetIsActive();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The programmatic column name, including any required prefixes.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String name = thing.GetName();
+```
+
+## GetOperator()
+
+```crmscript
+String GetOperator()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The operator, such as =
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String operator = thing.GetOperator();
+```
+
+## GetParenthesis()
+
+```crmscript
+Integer GetParenthesis()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetSubRestrictions()
+
+```crmscript
+NSArchiveRestrictionInfo[] GetSubRestrictions()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[] - Optional collection of sub criteria, usually null but set for Saint counter fields.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+NSArchiveRestrictionInfo[] subRestrictions = thing.GetSubRestrictions();
+```
+
+## GetUniqueHash()
+
+```crmscript
+Integer GetUniqueHash()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Integer uniqueHash = thing.GetUniqueHash();
+```
+
+## GetValues()
+
+```crmscript
+String[] GetValues()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Values to test against.
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String[] values = thing.GetValues();
+```
+
+## SetColumnInfo(NSArchiveColumnInfo)
+
+```crmscript
+Void SetColumnInfo(NSArchiveColumnInfo columnInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+NSArchiveColumnInfo columnInfo;
+thing.SetColumnInfo(columnInfo);
+```
+
+## SetDisplayValues(String[])
+
+```crmscript
+Void SetDisplayValues(String[] displayValues)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+List IDs are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String[] displayValues;
+thing.SetDisplayValues(displayValues);
+```
+
+## SetInterOperator(Integer)
+
+Gets inter-restriction operator that describes how this restriction is related to the next one in an array.
+
+```crmscript
+Void SetInterOperator(Integer operator)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Default for new ArchiveRestrictionInfo objects is And
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Integer interOperator;
+thing.SetInterOperator(interOperator);
+```
+
+## SetInterParenthesis(Integer)
+
+Gets the parenthesis (if any) associated with this restriction.
+
+```crmscript
+Void SetInterParenthesis(Integer interParenthesis)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Positive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Integer interParenthesis;
+thing.SetInterParenthesis(interParenthesis);
+```
+
+## SetIsActive(Bool)
+
+Activates or deactivates a restriction.
+
+```crmscript
+Void SetIsActive(Bool isActive)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Inactive restrictions will not influence the generated query.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Bool isActive;
+thing.SetIsActive(isActive);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOperator(String)
+
+```crmscript
+Void SetOperator(String operator)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String operator;
+thing.SetOperator(operator);
+```
+
+## SetParenthesis(Integer)
+
+```crmscript
+Void SetParenthesis(Integer p)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetSubRestrictions(NSArchiveRestrictionInfo[])
+
+```crmscript
+Void SetSubRestrictions(NSArchiveRestrictionInfo[] subRestrictions)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+NSArchiveRestrictionInfo[] subRestrictions;
+thing.SetSubRestrictions(subRestrictions);
+```
+
+## SetUniqueHash(Integer)
+
+```crmscript
+Void SetUniqueHash(Integer uniqueHash)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+Integer uniqueHash;
+thing.SetUniqueHash(uniqueHash);
+```
+
+## SetValues(String[])
+
+```crmscript
+Void SetValues(String[] values)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveRestrictionInfo thing;
+String[] values;
+thing.SetValues(values);
+```

@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nspreferencedescriptionline
+title: NSPreferenceDescriptionLine
+description: "Preference description line, contains information about a single item in a preference description list."
+keywords: CRMScript, NSPreferenceDescriptionLine, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPreferenceDescriptionLine
+
+Preference description line, contains information about a single item in a preference description list.
+
+## Constructors
+
+### NSPreferenceDescriptionLine()
+
+```crmscript
+NSPreferenceDescriptionLine
+```
+
+Initializes a new instance of the NSPreferenceDescriptionLine class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of preference value, multi-language parsed.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+String description = thing.GetDescription();
+```
+
+## GetIsBuiltin()
+
+```crmscript
+Bool GetIsBuiltin()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 1 = This row populated and maintained by SuperOffice.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+Bool isBuiltin = thing.GetIsBuiltin();
+```
+
+## GetPrefDescId()
+
+```crmscript
+Integer GetPrefDescId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Preference description (parent).
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+Integer prefDescId = thing.GetPrefDescId();
+```
+
+## GetPrefDescLineId()
+
+```crmscript
+Integer GetPrefDescLineId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+Integer prefDescLineId = thing.GetPrefDescLineId();
+```
+
+## GetPrefShowValue()
+
+```crmscript
+String GetPrefShowValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Descriptive value, multilang-parsed, to put in list.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+String prefShowValue = thing.GetPrefShowValue();
+```
+
+## GetPrefValue()
+
+```crmscript
+String GetPrefValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Possible value.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+String prefValue = thing.GetPrefValue();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetIsBuiltin(Bool)
+
+```crmscript
+Void SetIsBuiltin(Bool isBuiltin)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+Bool isBuiltin;
+thing.SetIsBuiltin(isBuiltin);
+```
+
+## SetPrefDescId(Integer)
+
+```crmscript
+Void SetPrefDescId(Integer prefDescId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+Integer prefDescId;
+thing.SetPrefDescId(prefDescId);
+```
+
+## SetPrefDescLineId(Integer)
+
+```crmscript
+Void SetPrefDescLineId(Integer prefDescLineId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+Integer prefDescLineId;
+thing.SetPrefDescLineId(prefDescLineId);
+```
+
+## SetPrefShowValue(String)
+
+```crmscript
+Void SetPrefShowValue(String prefShowValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+String prefShowValue;
+thing.SetPrefShowValue(prefShowValue);
+```
+
+## SetPrefValue(String)
+
+```crmscript
+Void SetPrefValue(String prefValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescriptionLine thing;
+String prefValue;
+thing.SetPrefValue(prefValue);
+```

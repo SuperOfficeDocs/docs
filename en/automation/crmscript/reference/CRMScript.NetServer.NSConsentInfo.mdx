@@ -1,0 +1,492 @@
+﻿---
+uid: crmscript.netserver.nsconsentinfo
+title: NSConsentInfo
+description: "Consent information for a give person. Consents are for a particular Purpose, and may be withdrawn (see LegalBase)."
+keywords: CRMScript, NSConsentInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSConsentInfo
+
+Consent information for a give person. Consents are for a particular Purpose, and may be withdrawn (see LegalBase).
+
+## Constructors
+
+### NSConsentInfo()
+
+```crmscript
+NSConsentInfo
+```
+
+Initializes a new instance of the NSConsentInfo class.
+
+## Methods
+
+## GetComment()
+
+```crmscript
+String GetComment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Comment regarding this specific consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String comment = thing.GetComment();
+```
+
+## GetConsentPersonId()
+
+```crmscript
+Integer GetConsentPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer consentPersonId = thing.GetConsentPersonId();
+```
+
+## GetConsentPurposeId()
+
+```crmscript
+Integer GetConsentPurposeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key for the NSConsentPurpose associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer consentPurposeId = thing.GetConsentPurposeId();
+```
+
+## GetConsentPurposeKey()
+
+```crmscript
+String GetConsentPurposeKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key of the NSConsentPurpose associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentPurposeKey = thing.GetConsentPurposeKey();
+```
+
+## GetConsentPurposeName()
+
+```crmscript
+String GetConsentPurposeName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the NSConsentPurpose associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentPurposeName = thing.GetConsentPurposeName();
+```
+
+## GetConsentSourceId()
+
+```crmscript
+Integer GetConsentSourceId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key for the NSConsentSource associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer consentSourceId = thing.GetConsentSourceId();
+```
+
+## GetConsentSourceKey()
+
+```crmscript
+String GetConsentSourceKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key of the NSConsentSource associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentSourceKey = thing.GetConsentSourceKey();
+```
+
+## GetConsentSourceName()
+
+```crmscript
+String GetConsentSourceName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the NSConsentSource associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentSourceName = thing.GetConsentSourceName();
+```
+
+## GetLegalBaseId()
+
+```crmscript
+Integer GetLegalBaseId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key for the NSLegalBase associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer legalBaseId = thing.GetLegalBaseId();
+```
+
+## GetLegalBaseKey()
+
+```crmscript
+String GetLegalBaseKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key for the NSLegalBase associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String legalBaseKey = thing.GetLegalBaseKey();
+```
+
+## GetLegalBaseName()
+
+```crmscript
+String GetLegalBaseName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the NSLegalBase associated with this consent.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String legalBaseName = thing.GetLegalBaseName();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When this consent record was created.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetRegisteredAssociateId()
+
+```crmscript
+Integer GetRegisteredAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the associate who created this record.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer registeredAssociateId = thing.GetRegisteredAssociateId();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When this consent record was last updated.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedAssociateId()
+
+```crmscript
+Integer GetUpdatedAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the associate who last updated this record.
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer updatedAssociateId = thing.GetUpdatedAssociateId();
+```
+
+## SetComment(String)
+
+```crmscript
+Void SetComment(String comment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String comment;
+thing.SetComment(comment);
+```
+
+## SetConsentPersonId(Integer)
+
+```crmscript
+Void SetConsentPersonId(Integer consentPersonId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer consentPersonId;
+thing.SetConsentPersonId(consentPersonId);
+```
+
+## SetConsentPurposeId(Integer)
+
+```crmscript
+Void SetConsentPurposeId(Integer consentPurposeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer consentPurposeId;
+thing.SetConsentPurposeId(consentPurposeId);
+```
+
+## SetConsentPurposeKey(String)
+
+```crmscript
+Void SetConsentPurposeKey(String consentPurposeKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentPurposeKey;
+thing.SetConsentPurposeKey(consentPurposeKey);
+```
+
+## SetConsentPurposeName(String)
+
+```crmscript
+Void SetConsentPurposeName(String consentPurposeName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentPurposeName;
+thing.SetConsentPurposeName(consentPurposeName);
+```
+
+## SetConsentSourceId(Integer)
+
+```crmscript
+Void SetConsentSourceId(Integer consentSourceId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer consentSourceId;
+thing.SetConsentSourceId(consentSourceId);
+```
+
+## SetConsentSourceKey(String)
+
+```crmscript
+Void SetConsentSourceKey(String consentSourceKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentSourceKey;
+thing.SetConsentSourceKey(consentSourceKey);
+```
+
+## SetConsentSourceName(String)
+
+```crmscript
+Void SetConsentSourceName(String consentSourceName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String consentSourceName;
+thing.SetConsentSourceName(consentSourceName);
+```
+
+## SetLegalBaseId(Integer)
+
+```crmscript
+Void SetLegalBaseId(Integer legalBaseId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer legalBaseId;
+thing.SetLegalBaseId(legalBaseId);
+```
+
+## SetLegalBaseKey(String)
+
+```crmscript
+Void SetLegalBaseKey(String legalBaseKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String legalBaseKey;
+thing.SetLegalBaseKey(legalBaseKey);
+```
+
+## SetLegalBaseName(String)
+
+```crmscript
+Void SetLegalBaseName(String legalBaseName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+String legalBaseName;
+thing.SetLegalBaseName(legalBaseName);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetRegisteredAssociateId(Integer)
+
+```crmscript
+Void SetRegisteredAssociateId(Integer registeredAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer registeredAssociateId;
+thing.SetRegisteredAssociateId(registeredAssociateId);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedAssociateId(Integer)
+
+```crmscript
+Void SetUpdatedAssociateId(Integer updatedAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentInfo thing;
+Integer updatedAssociateId;
+thing.SetUpdatedAssociateId(updatedAssociateId);
+```

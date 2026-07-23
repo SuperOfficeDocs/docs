@@ -1,0 +1,154 @@
+﻿---
+uid: crmscript.netserver.nsnumberallocationagent
+title: NSNumberAllocationAgent
+description: "This agent can be used to manage number allocation."
+keywords: CRMScript, NSNumberAllocationAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSNumberAllocationAgent
+
+This agent can be used to manage number allocation.
+
+## Constructors
+
+### NSNumberAllocationAgent()
+
+```crmscript
+NSNumberAllocationAgent
+```
+
+This agent can be used to manage number allocation.
+
+## Methods
+
+## CreateDefaultRefCountEntity()
+
+Sets default values into a new NSRefCountEntity.
+
+```crmscript
+NSRefCountEntity CreateDefaultRefCountEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSRefCountEntity](CRMScript.NetServer.NSRefCountEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSNumberAllocationAgent agent;
+NSRefCountEntity thing = agent.CreateDefaultRefCountEntity();
+thing = agent.SaveRefCountEntity(thing);
+```
+
+## DeleteRefCountEntity(Integer)
+
+Deletes the NSRefCountEntity
+
+```crmscript
+DeleteRefCountEntity(Integer refCountEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSNumberAllocationAgent agent;
+agent.DeleteRefCountEntity(123);
+```
+
+## GetNumberEachTemplate()
+
+Returns true or false if Automatically create new counters for new document templates
+
+```crmscript
+Bool GetNumberEachTemplate()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSNumberAllocationAgent agent;
+Bool res = agent.GetNumberEachTemplate();
+```
+
+## GetRefCountEntity(Integer)
+
+Gets an NSRefCountEntity object.
+
+```crmscript
+NSRefCountEntity GetRefCountEntity(Integer refCountEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRefCountEntity](CRMScript.NetServer.NSRefCountEntity)
+
+**Example:**
+
+```crmscript
+NSNumberAllocationAgent agent;
+NSRefCountEntity thing = agent.GetRefCountEntity(123);
+```
+
+## SaveDefaultNumbering(NSRefCountEntity)
+
+Saves default numbering values in preferences
+
+```crmscript
+Void SaveDefaultNumbering(NSRefCountEntity refCountEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSNumberAllocationAgent agent;
+NSRefCountEntity refCountEntity;
+agent.SaveDefaultNumbering(NSRefCountEntity);
+```
+
+## SaveRefCountEntity(NSRefCountEntity)
+
+Updates the existing NSRefCountEntity or creates a new NSRefCountEntity if the id parameter is 0
+
+```crmscript
+NSRefCountEntity SaveRefCountEntity(NSRefCountEntity refCountEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSRefCountEntity](CRMScript.NetServer.NSRefCountEntity)
+
+**Example:**
+
+```crmscript
+NSNumberAllocation  agent;
+NSRefCountEntity thing = agent.CreateDefaultRefCountEntity();
+thing = agent.SaveRefCountEntity(thing);
+```
+
+## SetNumberEachTemplate(Bool)
+
+Saves true or false if Automatically create new counters for new document templates
+
+```crmscript
+Void SetNumberEachTemplate(Bool setValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSNumberAllocationAgent agent;
+Bool setValue;
+agent.SetNumberEachTemplate(setValue);
+```

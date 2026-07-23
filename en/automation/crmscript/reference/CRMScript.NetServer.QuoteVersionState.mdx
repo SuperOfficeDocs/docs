@@ -1,0 +1,36 @@
+﻿---
+uid: crmscript.netserver.quoteversionstate
+title: Enum QuoteVersionState
+description: "State of a Quote Version"
+keywords: CRMScript, QuoteVersionState, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum QuoteVersionState
+
+State of a Quote Version
+
+## Syntax
+
+```crmscript
+QuoteVersionState
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | State unknown |
+| Draft | Draft that has been calculated, and ERP has verified it as OK |
+| DraftNotCalculated | This is a draft that has not been calculated, prices and other attributes may be 'invalid' relative to ERP system rules |
+| DraftNeedsApproval | Draft has been checked, and there was a problem that needs (human) approval |
+| DraftApproved | Draft with potential problems has been human-approved |
+| DraftNotApproved | Draft has been checked, there was a problem, and (human) approval was NOT granted |
+| Sent | Sent to customer, and is now a legally binding document |
+| Archived | Archived - previous state saved in ArchivedState, newer versions exist |
+| Lost | Version was rejected be the customer - we lost the sale |
+| Sold | Quote was accepted and the sale is 'Sold' |

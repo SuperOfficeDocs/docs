@@ -1,0 +1,107 @@
+﻿---
+uid: crmscript.netserver.nsworkflowtrigger
+title: NSWorkflowTrigger
+description: "Carrier object for WorkflowTrigger."
+keywords: CRMScript, NSWorkflowTrigger, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWorkflowTrigger
+
+Carrier object for WorkflowTrigger.
+
+## Constructors
+
+### NSWorkflowTrigger()
+
+```crmscript
+NSWorkflowTrigger
+```
+
+Initializes a new instance of the NSWorkflowTrigger class.
+
+## Methods
+
+## GetWorkflowTriggerId()
+
+Gets the primary key (ID) for the WorkflowTrigger.
+
+```crmscript
+Integer GetWorkflowTriggerId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - WorkflowTrigger Id.
+
+## SetWorkflowTriggerId(Integer)
+
+Sets the primary key (ID) for the WorkflowTrigger.
+
+```crmscript
+Void SetWorkflowTriggerId(Integer workflowTriggerId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowId()
+
+Gets the ID of the workflow this trigger belongs to.
+
+```crmscript
+Integer GetWorkflowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Workflow ID.
+
+## SetWorkflowId(Integer)
+
+Sets the ID of the workflow this trigger belongs to.
+
+```crmscript
+Void SetWorkflowId(Integer workflowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetTriggerType()
+
+Gets the type of trigger.
+
+```crmscript
+NSWorkflowTriggerType GetTriggerType()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowTriggerType](CRMScript.NetServer.NSWorkflowTriggerType) - Trigger type.
+
+## SetTriggerType(NSWorkflowTriggerType)
+
+Sets the type of trigger.
+
+```crmscript
+Void SetTriggerType(NSWorkflowTriggerType triggerType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetRestrictionGroups()
+
+Gets the restrictions (can be multiple groups) that make up the trigger criteria.
+
+```crmscript
+NSArchiveRestrictionGroup[] GetRestrictionGroups()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[] - Array of restriction groups.
+
+## SetRestrictionGroups(NSArchiveRestrictionGroup[])
+
+Sets the restrictions that make up the trigger criteria.
+
+```crmscript
+Void SetRestrictionGroups(NSArchiveRestrictionGroup[] restrictionGroups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

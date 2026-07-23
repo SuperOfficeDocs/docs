@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nsnavigatorcompany
+title: NSNavigatorCompany
+description: "Carrier object for NavigatorCompany."
+keywords: CRMScript, NSNavigatorCompany, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSNavigatorCompany
+
+Carrier object for NavigatorCompany.
+
+## Constructors
+
+### NSNavigatorCompany()
+
+```crmscript
+NSNavigatorCompany
+```
+
+Initializes a new instance of the NSNavigatorCompany class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSNavigatorCompany
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NavigatorCompany ID.
+
+**Example:**
+
+```crmscript
+NSNavigatorCompany thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSNavigatorCompany list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSNavigatorCompany tooltip description.
+
+**Example:**
+
+```crmscript
+NSNavigatorCompany thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSNavigatorCompany.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NavigatorCompany name.
+
+**Example:**
+
+```crmscript
+NSNavigatorCompany thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSNavigatorCompany
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSNavigatorCompany thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSNavigatorCompany list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSNavigatorCompany thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSNavigatorCompany item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSNavigatorCompany thing;
+thing.SetValue("frotz");
+```

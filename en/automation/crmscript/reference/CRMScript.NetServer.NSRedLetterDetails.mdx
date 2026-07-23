@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsredletterdetails
+title: NSRedLetterDetails
+description: "Red-letter day text details, all the texts related to the given day."
+keywords: CRMScript, NSRedLetterDetails, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSRedLetterDetails
+
+Red-letter day text details, all the texts related to the given day.
+
+## Constructors
+
+### NSRedLetterDetails()
+
+```crmscript
+NSRedLetterDetails
+```
+
+Initializes a new instance of the NSRedLetterDetails class.
+
+## Methods
+
+## GetOtherCountryDayTexts()
+
+```crmscript
+String[] GetOtherCountryDayTexts()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Red-letter day texts for other countries than the associates' own country.
+
+**Example:**
+
+```crmscript
+NSRedLetterDetails thing;
+String[] otherCountryDayTexts = thing.GetOtherCountryDayTexts();
+```
+
+## GetOwnCountryDayTexts()
+
+```crmscript
+String[] GetOwnCountryDayTexts()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Array, possibly empty, of the texts related to one day in the red-letter system.
+
+**Example:**
+
+```crmscript
+NSRedLetterDetails thing;
+String[] ownCountryDayTexts = thing.GetOwnCountryDayTexts();
+```
+
+## SetOtherCountryDayTexts(String[])
+
+```crmscript
+Void SetOtherCountryDayTexts(String[] otherCountryDayTexts)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRedLetterDetails thing;
+String[] otherCountryDayTexts;
+thing.SetOtherCountryDayTexts(otherCountryDayTexts);
+```
+
+## SetOwnCountryDayTexts(String[])
+
+```crmscript
+Void SetOwnCountryDayTexts(String[] ownCountryDayTexts)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRedLetterDetails thing;
+String[] ownCountryDayTexts;
+thing.SetOwnCountryDayTexts(ownCountryDayTexts);
+```

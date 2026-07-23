@@ -1,0 +1,291 @@
+﻿---
+uid: crmscript.native.xmlnode
+title: XMLNode
+description: "This class represents an XML DOM structure."
+keywords: CRMScript, XMLNode, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# XMLNode
+
+This class represents an XML DOM structure.
+
+## Constructors
+
+### XMLNode(XMLNode)
+
+```crmscript
+XMLNode XMLNode(XMLNode value)
+```
+
+Pass an object to copy.
+
+### XMLNode(String)
+
+```crmscript
+XMLNode XMLNode(String value)
+```
+
+Pass a string to parse and create a new object.
+
+## Methods
+
+## toString(Integer)
+
+Creates a string containing the XMLNode as a formatted string. Child nodes are also included.
+
+```crmscript
+String toString(Integer indent)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## toJSON(Integer)
+
+Creates a string containing XML nodes formatted as a JSON document. Child nodes are also included.
+
+```crmscript
+String toJSON(Integer indent)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - XMLNodes converted to JSON.
+
+<Note>
+Valid types: object, array, string, number, bool, and null.
+</Note>
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xMenu.setParameter("type", "object");
+XMLNode xMenu = XMLNode("menu");
+xMenu.setParameter("type", "string");
+xMenu.setText("truls");
+xml.addChild(xMenu);
+XMLNode xFoo = XMLNode("foo");
+xFoo.setParameter("type", "number");
+xFoo.setText("1.23456");
+xml.addChild(xFoo);
+print(xml.toString(0));
+```
+
+## addChild(XMLNode)
+
+Add one node as a child node of the current node.
+
+```crmscript
+Void addChild(XMLNode node)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+xml.setText("Example text");
+XMLNode xMenu = XMLNode("menu");
+xMenu.setParameter("type", "string");
+xml.addChild(xMenu);
+```
+
+## getChildren()
+
+Returns an array of the current node's children.
+
+```crmscript
+XMLNode[] getChildren()
+```
+
+**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode)[] - Returns an array of the current node's children.
+
+## setChildren(XMLNode[])
+
+Sets an array of XMLNodes as the children of the current node.
+
+```crmscript
+Void setChildren(XMLNode[] children)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+XMLNode xMenu = XMLNode("menu");
+xMenu.setParameter("type", "string");
+xMenu.setText("truls");
+XMLNode xFoo = XMLNode("foo");
+xFoo.setParameter("type", "number");
+xFoo.setText("1.23456");
+XMLNode[2] array;
+array[0] = xMenu;
+array[1] = xFoo;
+xml.setChildren(array);
+```
+
+## getName()
+
+Gets the name of the XML tag.
+
+```crmscript
+String getName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the XML tag.
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+print(xml.getName());
+```
+
+## setName(String)
+
+Sets the tag name of the node.
+
+```crmscript
+Void setName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+print(xml.getName());
+```
+
+## getParameter(String)
+
+Gets a parameter (attribute) from the node with a given name.
+
+```crmscript
+String getParameter(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+print(xml.getParameter("type"));
+```
+
+## setParameter(String, String)
+
+Sets a parameter with name and value. A node can have any number of parameters but all names must be unique.
+
+```crmscript
+Void setParameter(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type1", "object1");
+xml.setParameter("type", "object");
+```
+
+## getText()
+
+Gets the text between two tags. For example, &gt;TAG&gt;Returns this text&gt;/TAG&gt;
+
+```crmscript
+String getText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+xml.setText("Example text");
+print(xml.getText());
+```
+
+## setText(String)
+
+Sets the text between 2 tags.
+
+```crmscript
+Void setText(String text)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+XMLNode xml = XMLNode("root");
+xml.setName("Root");
+xml.setParameter("type", "object");
+xml.setText("Example text");
+print(xml.getText());
+```
+
+## getValueFromPath(String)
+
+This function will return the value for the given path. The path should be a dot-separated string containing either names of nodes or indices.
+
+```crmscript
+String getValueFromPath(String path)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given path.
+
+<Note>
+If your path does not lead to a node, you will get a String with a null value back (can be checked with isNull()).
+</Note>
+
+**Example:**
+
+```crmscript
+{ persons: [{name: "John"},{name: "Peter"}]}
+```
+
+## getNodeFromPath(String)
+
+This function will return the XMLNode for the given path. The path should be a dot-separated string containing either names of nodes or indices.
+
+```crmscript
+XMLNode getNodeFromPath(String path)
+```
+
+**Returns:** [CRMScript.Global.XMLNode](CRMScript.Global.XMLNode) - The Node for the given path.
+
+<Note>
+If your path does not lead to a node, you will get an empty XMLnode back.
+</Note>
+
+**Example:**
+
+```crmscript
+{ persons: [{name: "John"},{name: "Peter"}]}
+```

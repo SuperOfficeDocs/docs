@@ -1,0 +1,153 @@
+﻿---
+uid: crmscript.netserver.nsarchiveconfiguration
+title: NSArchiveConfiguration
+description: "Used to store and fetch the configuration of an archive. The configuration consists of entities and columns; entities correspond to archive provider entities and the checkboxes you see in the bottom of standard archives. Column configuration includes both what columns should be visible, what order they are in (left to right), and whether the archive rows should be sorted by one or more columns."
+keywords: CRMScript, NSArchiveConfiguration, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveConfiguration
+
+Used to store and fetch the configuration of an archive. The configuration consists of entities and columns; entities correspond to archive provider entities and the checkboxes you see in the bottom of standard archives. Column configuration includes both what columns should be visible, what order they are in (left to right), and whether the archive rows should be sorted by one or more columns.
+
+Desired columns can be set through the selectable MDO list called archiveColumns:\\&lt;perovider name&gt;, and entities can be set through the selectable MDO list archiveEntities:\\&lt;provider name&gt;. You can also use the SetChosenEntities and SetChosenColumns method of this service. The selectable MDO list implementation is suitable for data binding using mdo list controls.
+
+## Constructors
+
+### NSArchiveConfiguration()
+
+```crmscript
+NSArchiveConfiguration
+```
+
+Initializes a new instance of the NSArchiveConfiguration class.
+
+## Methods
+
+## GetArchiveColumnInfo()
+
+```crmscript
+NSArchiveColumnInfo[] GetArchiveColumnInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[]
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+NSArchiveColumnInfo[] archiveColumnInfo = thing.GetArchiveColumnInfo();
+```
+
+## GetArchiveEntityInfo()
+
+```crmscript
+NSSelectableMDOListItem[] GetArchiveEntityInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+NSSelectableMDOListItem[] archiveEntityInfo = thing.GetArchiveEntityInfo();
+```
+
+## GetArchiveOrderByInfo()
+
+```crmscript
+NSArchiveOrderByInfo[] GetArchiveOrderByInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveOrderByInfo](CRMScript.NetServer.NSArchiveOrderByInfo)[]
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+NSArchiveOrderByInfo[] archiveOrderByInfo = thing.GetArchiveOrderByInfo();
+```
+
+## GetOwnerKeys()
+
+```crmscript
+String GetOwnerKeys()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual ownership information for the configuration that was retrieved.
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+String ownerKeys = thing.GetOwnerKeys();
+```
+
+## SetArchiveColumnInfo(NSArchiveColumnInfo[])
+
+```crmscript
+Void SetArchiveColumnInfo(NSArchiveColumnInfo[] archiveColumnInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+NSArchiveColumnInfo[] archiveColumnInfo;
+thing.SetArchiveColumnInfo(archiveColumnInfo);
+```
+
+## SetArchiveEntityInfo(NSSelectableMDOListItem[])
+
+```crmscript
+Void SetArchiveEntityInfo(NSSelectableMDOListItem[] archiveEntityInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+NSSelectableMDOListItem[] archiveEntityInfo;
+thing.SetArchiveEntityInfo(archiveEntityInfo);
+```
+
+## SetArchiveOrderByInfo(NSArchiveOrderByInfo[])
+
+```crmscript
+Void SetArchiveOrderByInfo(NSArchiveOrderByInfo[] archiveOrderByInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+NSArchiveOrderByInfo[] archiveOrderByInfo;
+thing.SetArchiveOrderByInfo(archiveOrderByInfo);
+```
+
+## SetOwnerKeys(String)
+
+```crmscript
+Void SetOwnerKeys(String ownerKeys)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveConfiguration thing;
+String ownerKeys;
+thing.SetOwnerKeys(ownerKeys);
+```

@@ -1,0 +1,209 @@
+﻿---
+uid: crmscript.netserver.nsextendedlicenseinfo
+title: NSExtendedLicenseInfo
+description: ""
+keywords: CRMScript, NSExtendedLicenseInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSExtendedLicenseInfo
+
+## Constructors
+
+### NSExtendedLicenseInfo()
+
+```crmscript
+NSExtendedLicenseInfo
+```
+
+## Methods
+
+## GetAccumulatedNextCheckDate()
+
+```crmscript
+DateTime GetAccumulatedNextCheckDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+DateTime accumulatedNextCheckDate = thing.GetAccumulatedNextCheckDate();
+```
+
+## GetCanBeActivated()
+
+```crmscript
+Bool GetCanBeActivated()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+Bool canBeActivated = thing.GetCanBeActivated();
+```
+
+## GetCurrent()
+
+```crmscript
+NSLicenseInfo GetCurrent()
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseInfo](CRMScript.NetServer.NSLicenseInfo)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+NSLicenseInfo current = thing.GetCurrent();
+```
+
+## GetExtendedModuleLicenses()
+
+```crmscript
+NSExtendedModuleLicense[] GetExtendedModuleLicenses()
+```
+
+**Returns:** [CRMScript.NetServer.NSExtendedModuleLicense](CRMScript.NetServer.NSExtendedModuleLicense)[]
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+NSExtendedModuleLicense[] extendedModuleLicenses = thing.GetExtendedModuleLicenses();
+```
+
+## GetNew()
+
+```crmscript
+NSLicenseInfo GetNew()
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseInfo](CRMScript.NetServer.NSLicenseInfo)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+NSLicenseInfo new = thing.GetNew();
+```
+
+## GetReason()
+
+```crmscript
+String GetReason()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+String reason = thing.GetReason();
+```
+
+## SetAccumulatedNextCheckDate(DateTime)
+
+```crmscript
+Void SetAccumulatedNextCheckDate(DateTime accumulatedNextCheckDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+DateTime accumulatedNextCheckDate;
+thing.SetAccumulatedNextCheckDate(accumulatedNextCheckDate);
+```
+
+## SetCanBeActivated(Bool)
+
+```crmscript
+Void SetCanBeActivated(Bool canBeActivated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+Bool canBeActivated;
+thing.SetCanBeActivated(canBeActivated);
+```
+
+## SetCurrent(NSLicenseInfo)
+
+```crmscript
+Void SetCurrent(NSLicenseInfo current)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+NSLicenseInfo current;
+thing.SetCurrent(current);
+```
+
+## SetExtendedModuleLicenses(NSExtendedModuleLicense[])
+
+```crmscript
+Void SetExtendedModuleLicenses(NSExtendedModuleLicense[] extendedModuleLicenses)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+NSExtendedModuleLicense[] extendedModuleLicenses;
+thing.SetExtendedModuleLicenses(extendedModuleLicenses);
+```
+
+## SetNew(NSLicenseInfo)
+
+```crmscript
+Void SetNew(NSLicenseInfo new)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+NSLicenseInfo new;
+thing.SetNew(new);
+```
+
+## SetReason(String)
+
+```crmscript
+Void SetReason(String reason)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtendedLicenseInfo thing;
+String reason;
+thing.SetReason(reason);
+```

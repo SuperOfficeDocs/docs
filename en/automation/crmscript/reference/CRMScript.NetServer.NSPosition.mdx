@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nsposition
+title: NSPosition
+description: "Carrier object for Position."
+keywords: CRMScript, NSPosition, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPosition
+
+Carrier object for Position.
+
+## Constructors
+
+### NSPosition()
+
+```crmscript
+NSPosition
+```
+
+Initializes a new instance of the NSPosition class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSPosition
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSPosition Id.
+
+**Example:**
+
+```crmscript
+NSPosition thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSPosition list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPosition tooltip description.
+
+**Example:**
+
+```crmscript
+NSPosition thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSPosition.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPosition name.
+
+**Example:**
+
+```crmscript
+NSPosition thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSPosition
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPosition thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSPosition list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPosition thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSPosition item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPosition thing;
+thing.SetValue("frotz");
+```

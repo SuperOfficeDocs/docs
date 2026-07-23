@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nscssessionkey
+title: NSCsSessionKey
+description: "Carrier object for CsSessionKey."
+keywords: CRMScript, NSCsSessionKey, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCsSessionKey
+
+Carrier object for CsSessionKey.
+
+## Constructors
+
+### NSCsSessionKey()
+
+```crmscript
+NSCsSessionKey
+```
+
+Initializes a new instance of the NSCsSessionKey class.
+
+## Methods
+
+## GetKey()
+
+```crmscript
+String GetKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The session key created in the login table.
+
+**Example:**
+
+```crmscript
+NSCsSessionKey thing;
+String key = thing.GetKey();
+```
+
+## GetLoginId()
+
+```crmscript
+Integer GetLoginId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the login row.
+
+**Example:**
+
+```crmscript
+NSCsSessionKey thing;
+Integer loginId = thing.GetLoginId();
+```
+
+## GetUserId()
+
+```crmscript
+Integer GetUserId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ejuser ID owning this session key.
+
+**Example:**
+
+```crmscript
+NSCsSessionKey thing;
+Integer userId = thing.GetUserId();
+```
+
+## SetKey(String)
+
+```crmscript
+Void SetKey(String key)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCsSessionKey thing;
+String key;
+thing.SetKey(key);
+```
+
+## SetLoginId(Integer)
+
+```crmscript
+Void SetLoginId(Integer loginId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCsSessionKey thing;
+Integer loginId;
+thing.SetLoginId(loginId);
+```
+
+## SetUserId(Integer)
+
+```crmscript
+Void SetUserId(Integer userId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCsSessionKey thing;
+Integer userId;
+thing.SetUserId(userId);
+```

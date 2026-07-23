@@ -1,0 +1,320 @@
+﻿---
+uid: crmscript.netserver.nsversioninfo
+title: NSVersionInfo
+description: "An instance of this class represents information about one version of one document."
+keywords: CRMScript, NSVersionInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSVersionInfo
+
+An instance of this class represents information about one version of one document.
+
+## Constructors
+
+### NSVersionInfo()
+
+```crmscript
+NSVersionInfo
+```
+
+Initializes a new instance of the NSVersionInfo class.
+
+## Methods
+
+## GetCheckedInByAssociateId()
+
+```crmscript
+Integer GetCheckedInByAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Associate ID of the user who performed the check-in.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+Integer checkedInByAssociateId = thing.GetCheckedInByAssociateId();
+```
+
+## GetCheckedInByName()
+
+```crmscript
+String GetCheckedInByName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name (nicely formatted) of the user/person who performed the check-in.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String checkedInByName = thing.GetCheckedInByName();
+```
+
+## GetCheckedInDate()
+
+```crmscript
+DateTime GetCheckedInDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date that this version was checked in and became official.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+DateTime checkedInDate = thing.GetCheckedInDate();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Arbitrary description string.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String description = thing.GetDescription();
+```
+
+## GetDisplayText()
+
+```crmscript
+String GetDisplayText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A short description, suitable for display in a popup menu or dropdown list of versions.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String displayText = thing.GetDisplayText();
+```
+
+## GetDocumentId()
+
+```crmscript
+Integer GetDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The document ID that uniquely identifies the document within the SuperOffice database.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+Integer documentId = thing.GetDocumentId();
+```
+
+## GetExternalReference()
+
+```crmscript
+String GetExternalReference()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String externalReference = thing.GetExternalReference();
+```
+
+## GetExtraFields()
+
+```crmscript
+String[] GetExtraFields()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Private metadata, owned by the document plugin.
+
+<Note>
+This set of metadata is related directly to the version that  this VersioNinfo structure describes; metadata related to the document as a whole is retrieved using the SuperOffice.CRM.Documents.IDocumentPlugin2.LoadMetaData method.  The string should be formatted like a query string, i.e., name1=value1&name2=value2...* this format, instead of a string/string dictionary avoids serialization problems, even though it is somewhat less efficient.
+</Note>
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String[] extraFields = thing.GetExtraFields();
+```
+
+## GetVersionId()
+
+```crmscript
+String GetVersionId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's version id that uniquely identifies one version of a document. If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String versionId = thing.GetVersionId();
+```
+
+## SetCheckedInByAssociateId(Integer)
+
+```crmscript
+Void SetCheckedInByAssociateId(Integer checkedInByAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+Integer checkedInByAssociateId;
+thing.SetCheckedInByAssociateId(checkedInByAssociateId);
+```
+
+## SetCheckedInByName(String)
+
+```crmscript
+Void SetCheckedInByName(String checkedInByName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String checkedInByName;
+thing.SetCheckedInByName(checkedInByName);
+```
+
+## SetCheckedInDate(DateTime)
+
+Sets the date that this version was checked inThe date that this version was checked in and became official
+
+```crmscript
+Void SetCheckedInDate(DateTime checkedInDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+DateTime checkedInDate;
+thing.SetCheckedInDate(checkedInDate);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDisplayText(String)
+
+```crmscript
+Void SetDisplayText(String displayText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String displayText;
+thing.SetDisplayText(displayText);
+```
+
+## SetDocumentId(Integer)
+
+```crmscript
+Void SetDocumentId(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+Integer documentId;
+thing.SetDocumentId(documentId);
+```
+
+## SetExternalReference(String)
+
+```crmscript
+Void SetExternalReference(String externalReference)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String externalReference;
+thing.SetExternalReference(externalReference);
+```
+
+## SetExtraFields(String[])
+
+```crmscript
+Void SetExtraFields(String[] extraFields)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This set of metadata is related directly to the version that this VersioNinfo structure describes; metadata related to the document as a whole is retrieved using the SuperOffice.CRM.Documents.IDocumentPlugin2.LoadMetaData method.  The string should be formatted like a query string, i.e., name1=value1&name2=value2...* this format, instead of a string/string dictionary avoids serialization problems, even though it is somewhat less efficient
+</Note>
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String[] extraFields;
+thing.SetExtraFields(extraFields);
+```
+
+## SetVersionId(String)
+
+```crmscript
+Void SetVersionId(String versionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSVersionInfo thing;
+String versionId;
+thing.SetVersionId(versionId);
+```

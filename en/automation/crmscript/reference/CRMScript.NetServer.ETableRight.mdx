@@ -1,0 +1,46 @@
+﻿---
+uid: crmscript.netserver.etableright
+title: Enum ETableRight
+description: "Table right is a combination of bits representing permissions on a row."
+keywords: CRMScript, ETableRight, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ETableRight
+
+Table right is a combination of bits representing permissions on a row.
+
+## Syntax
+
+```crmscript
+ETableRight
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | The row should be hidden from the user. |
+| Select | The user is allowed to see the row. |
+| Update | The user is allowed to modify the values in this row. |
+| Insert | The user is allowed to add new rows to the table. |
+| Delete | The user is allowed to delete this row. |
+| Filtering | A flag used to indicate that some fields may be hidden. |
+| RestrictedUpdate | A hint flag used to indicate that some fields may not be updateable, even though the user has update access to the row. |
+| Unused1 | Unused value only present for serializatrion purposes |
+| Uninitialized | Magic value to indicate not |
+| FULL | Select, Update, Insert, Delete - no restrictions |
+| WRITE | Update/RestrictedUpdate or Insert |
+| URU | Update or RestrictedUpdate |
+| UDR | Select, Update, Delete |
+| UR | Select or Update |
+| URI | Select, Update, Insert |
+| R | Select only |
+| RI | Select and Insert (Anonymous) |
+| RF | Select or Filter |
+| F | just Filtering |
+| FI | Filtering and Insert (Anonymous) |

@@ -1,0 +1,248 @@
+﻿---
+uid: crmscript.native.company
+title: Company
+description: "Represents a company."
+keywords: CRMScript, Company, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Company
+
+Represents a company.
+
+## Constructors
+
+### Company()
+
+```crmscript
+Company
+```
+
+Initializes a new instance of the Company class.
+
+## Methods
+
+## checkFieldRights(String,String)
+
+Checks if the current user has access to the field.
+
+```crmscript
+Bool checkFieldRights(String field, String fieldRight)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the field; otherwise, false.
+
+**Example:**
+
+```crmscript
+Company c;
+c.load(3);
+Bool b = c.checkFieldRights("contact", "read");
+print(b.toString());
+```
+
+## checkTableRights(String)
+
+Checks if the current user has access to this company.
+
+```crmscript
+Bool checkTableRights(String tableRight)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the company; otherwise, false.
+
+**Example:**
+
+```crmscript
+Company c;
+c.load(3);
+Bool b = c.checkTableRights("select");
+print(b.toString());
+```
+
+## findFromDomain(String)
+
+Find and load company object given a domain.
+
+```crmscript
+findFromDomain(String domain)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successfully loaded; otherwise, false.
+
+## getFormattedAddress()
+
+Gets the formatted company address.
+
+```crmscript
+NSLocalizedField[][] getFormattedAddress()
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedField[]](CRMScript.NetServer.NSLocalizedField[])[] - The formatted company address.
+
+## getValue(String)
+
+Gets a String with the value of a given column.
+
+```crmscript
+String getValue(String colName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string value of the given column.
+
+<Note>
+Possible colNames:
+
+- id: Integer, The primary key (auto-incremented)
+- primContact: Integer, The ID of the customer who is the primary contact for this company customer.id
+- name: String, The name of the company
+- note: String, A freetext field for various notes about this company
+- phone: String, The company's phone number
+- fax: String, The company's faxnumber
+- adr: String, The company's address
+- priority: Integer, The reference to the default priority for this company. NULL or -1 if not set. ticket_priority.id
+- deleted: Bool, A boolean telling if the company is deleted
+- language: Integer, The reference to the default customer language for this company. NULL or -1 if not set. cust_lang.id
+- ourContact: Integer, The customer's primary contact ejuser.id
+- extTable: Integer, The reference to the external table if this is a cached entry. NULL or -1 if not. ext_table.id
+- extKey: String, The primary key for the cached entry in the external datasource.
+- extLastCached: DateTime, When the cached entry was last updated.
+- domain: String, A display version of the company_domain table for this company.
+- x_* The extrafield with the given database field name.
+</Note>
+
+**Example:**
+
+```crmscript
+Company c;
+c.load(3);
+print(c.getValue("name"));
+```
+
+## load(Integer)
+
+Load object with values from company with given ID.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successfully loaded; otherwise, false.
+
+**Example:**
+
+```crmscript
+Company c;
+Bool b = c.load(3);
+print(b.toString());
+```
+
+## loadFromAgentAndKey(Integer,String)
+
+Loads a company based on agent ID and external key.
+
+```crmscript
+Bool loadFromAgentAndKey(Integer agent, String key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successfully loaded; false if the company does not exist.
+
+<Note>
+Loading might overwriting existing values.
+</Note>
+
+## save()
+
+Saves the object and returns its ID.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The company ID.
+
+## setFormattedAddress(NSLocalizedField[][])
+
+Sets the formatted address for a company.
+
+```crmscript
+Void SetFormattedAddress(NSLocalizedField[][] name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setValue(String,String)
+
+Sets a value in a column of a company.
+
+```crmscript
+Void SetValue(String colName, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Possible column names
+
+- id: Integer, The primary key (auto-incremented)
+- primContact: Integer, The ID of the customer who is the primary contact for this company customer.id
+- name: String, The name of the company
+- note: String, A freetext field for various notes about this company
+- infoText: the same as note (From 7.x)
+- phone: String, The company's phone number
+- phone/formattedNumber: String (From 7.x)
+- fax/formattedNumber: String (From 7.x)
+- fax: String, The company's faxnumber
+- adr: String, The company's address (From 7.x setting address with adr is no longer supported. Attempting to do so, will result in a GeneralException. Use NetServer instead)
+- priority: Integer, The reference to the default priority for this company. NULL or -1 if not set. ticket_priority.id
+- deleted: Bool, A boolean telling if the company is deleted
+- language: Integer, The reference to the default customer language for this company. NULL or -1 if not set. cust_lang.id
+- ourContact: Integer, The customer's primary contact ejuser.id
+- ourSalesContact: Integer, The sales contact for this company. (From 7.x)
+- supportAssociateId: String, Set the support associate id. Supports both integer and the username. (From 7.x)
+- primContact: Integer, The customer's primary contact customer.id
+- extTable: Integer, The reference to the external table if this is a cached entry. NULL or -1 if not. ext_table.id
+- extKey: String, The primary key for the cached entry in the external datasource.
+- extLastCached: DateTime, When the cached entry was last updated.
+- domain: String, A display version of the company_domain table for this company.
+</Note>
+
+**Example:**
+
+```crmscript
+Company c;
+c.load(3);
+Bool b = c.checkTableRights("select");
+print(b.toString());
+c.setValue("name", "Test");
+```
+
+## toParser(Parser)
+
+Puts a lot of fields into the input parser.
+
+```crmscript
+toParser(Parser parser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Fields that will be loaded:
+
+- company.id: The ID
+- company.name: The name
+- company.note: The note
+- company.domain: The domain
+- company.phone: Phone number
+- company.fax: Fax number
+- company.adr: The address
+- company.ourContact: The ID of the user that is this company's contact
+- company.primaryContact.id: The ID of the customer that is this company's primary contact
+- company.primaryContact.email: The email address of the customer that is this company's primary contact
+- company.extraFieldName: The name of the extrafield, (not x_fieldname)
+</Note>

@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.selectionuniontype
+title: Enum SelectionUnionType
+description: "How the selections in a combined selections should be put together"
+keywords: CRMScript, SelectionUnionType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum SelectionUnionType
+
+How the selections in a combined selections should be put together
+
+## Syntax
+
+```crmscript
+SelectionUnionType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Combination type is unknown/indefined |
+| SubtractRightFromLeft | All of left, except where it overlaps with right |
+| SubtractLeftFromRight | All of right, except where it overlaps with left |
+| Intersect | Those present in left AND right only |
+| XOR | Those present in left or right, but not both |
+| Union | All, but no duplicates for those present in left and right |

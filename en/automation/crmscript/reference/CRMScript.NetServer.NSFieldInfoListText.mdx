@@ -1,0 +1,118 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfolisttext
+title: NSFieldInfoListText
+description: ""
+keywords: CRMScript, NSFieldInfoListText, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoListText
+
+## Constructors
+
+### NSFieldInfoListText()
+
+```crmscript
+NSFieldInfoListText
+```
+
+Initializes a new instance of the NSFieldInfoListText class.
+
+## Methods
+
+## GetChoices()
+
+```crmscript
+String[] GetChoices()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - List of items to choose from.
+
+**Example:**
+
+```crmscript
+NSFieldInfoListText thing;
+String[] choices = thing.GetChoices();
+```
+
+## GetDefaultValue()
+
+```crmscript
+String GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default string value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoListText thing;
+String defaultValue = thing.GetDefaultValue();
+```
+
+## GetTextLength()
+
+```crmscript
+Integer GetTextLength()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Length (in characters) of a text field, 0 for other types.
+
+**Example:**
+
+```crmscript
+NSFieldInfoListText thing;
+Integer textLength = thing.GetTextLength();
+```
+
+## SetChoices(String[])
+
+```crmscript
+Void SetChoices(String[] choices)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoListText thing;
+String[] choices;
+thing.SetChoices(choices);
+```
+
+## SetDefaultValue(String)
+
+```crmscript
+Void SetDefaultValue(String defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoListText thing;
+String defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetTextLength(Integer)
+
+```crmscript
+Void SetTextLength(Integer textLength)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoListText thing;
+Integer textLength;
+thing.SetTextLength(textLength);
+```

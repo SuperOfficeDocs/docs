@@ -1,0 +1,208 @@
+﻿---
+uid: crmscript.netserver.nsarchivelistitem
+title: NSArchiveListItem
+description: ""
+keywords: CRMScript, NSArchiveListItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveListItem
+
+## Constructors
+
+### NSArchiveListItem()
+
+```crmscript
+NSArchiveListItem
+```
+
+Initializes a new instance of the NSArchiveListItem class.
+
+## Methods
+
+## GetColumnData()
+
+```crmscript
+Map GetColumnData()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map of column name - column data items.
+
+<Note>
+Each column data item contains a display value, a tooltip hint, a link hint, and an orderby value. The display value is encoded by the CultureDataFormatter and can be decoded / localized by that class; all other values are optional.
+
+Tooltip hints can be passed to the TooltipProvider (Tooltip service) to be translated into an actual tooltip.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+Map columnData = thing.GetColumnData();
+```
+
+## GetEntityName()
+
+```crmscript
+String GetEntityName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The entity name of the NSArchiveListItem.
+
+<Note>
+An ArchiveList may contain rows from different entities.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+String entityName = thing.GetEntityName();
+```
+
+## GetLinkHint()
+
+```crmscript
+String GetLinkHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Link hint for the row, indicating things like navigation links that can be presented as clickable hyperlinks.
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+String linkHint = thing.GetLinkHint();
+```
+
+## GetPrimaryKey()
+
+```crmscript
+Integer GetPrimaryKey()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key for the row.
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+Integer primaryKey = thing.GetPrimaryKey();
+```
+
+## GetStyleHint()
+
+```crmscript
+String GetStyleHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Style hint for the row, for instance 'retired' for associates or 'private' for appointments.
+
+<Note>
+Presentation layers can interpret the style hints as they see fit.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+String styleHint = thing.GetStyleHint();
+```
+
+## SetColumnData(Map)
+
+Each column data item contains a display value, a tooltip hint, a link hint, and an ORDERBY value.
+
+The display value is encoded by the CultureDataFormatter and can be decoded or localized by that class. All other values are optional.
+
+Tooltip hints can be passed to the TooltipProvider (Tooltip service) to be translated into an actual tooltip.
+
+```crmscript
+Void SetColumnData(Map columnData)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+Map columnData;
+thing.SetColumnData(columnData);
+```
+
+## SetEntityName(String)
+
+```crmscript
+Void SetEntityName(String entityName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+An ArchiveList may contain rows from different entities.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+String entityName;
+thing.SetEntityName(entityName);
+```
+
+## SetLinkHint(String)
+
+```crmscript
+Void SetLinkHint(String linkHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+String linkHint;
+thing.SetLinkHint(linkHint);
+```
+
+## SetPrimaryKey(Integer)
+
+```crmscript
+Void SetPrimaryKey(Integer primaryKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+Integer primaryKey;
+thing.SetPrimaryKey(primaryKey);
+```
+
+## SetStyleHint(String)
+
+```crmscript
+Void SetStyleHint(String styleHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Presentation layers can interpret the style hints as they see fit.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListItem thing;
+String styleHint;
+thing.SetStyleHint(styleHint);
+```

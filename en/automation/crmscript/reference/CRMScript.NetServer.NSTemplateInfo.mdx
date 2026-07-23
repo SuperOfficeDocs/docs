@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nstemplateinfo
+title: NSTemplateInfo
+description: "Information about a document template, i.e., a document that generally contains unresolved merge tags and that is used as the source for creating new documents."
+keywords: CRMScript, NSTemplateInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTemplateInfo
+
+Information about a document template, i.e., a document that generally contains unresolved merge tags and that is used as the source for creating new documents.
+
+## Constructors
+
+### NSTemplateInfo()
+
+```crmscript
+NSTemplateInfo
+```
+
+Initializes a new instance of the NSTemplateInfo class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Document description, shown as a tooltip or in some extended description area.
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+String description = thing.GetDescription();
+```
+
+## GetExternalReference()
+
+```crmscript
+String GetExternalReference()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Unique key that identifies the document so it can be retrieved.
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+String externalReference = thing.GetExternalReference();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the document, shown in lists etc to the user.
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+String name = thing.GetName();
+```
+
+## GetPluginId()
+
+```crmscript
+Integer GetPluginId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of plugin that stores this template, so it can be retrieved.
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+Integer pluginId = thing.GetPluginId();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetExternalReference(String)
+
+```crmscript
+Void SetExternalReference(String externalReference)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+String externalReference;
+thing.SetExternalReference(externalReference);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPluginId(Integer)
+
+```crmscript
+Void SetPluginId(Integer pluginId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateInfo thing;
+Integer pluginId;
+thing.SetPluginId(pluginId);
+```

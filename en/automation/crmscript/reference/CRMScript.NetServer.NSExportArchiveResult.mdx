@@ -1,0 +1,118 @@
+﻿---
+uid: crmscript.netserver.nsexportarchiveresult
+title: NSExportArchiveResult
+description: ""
+keywords: CRMScript, NSExportArchiveResult, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSExportArchiveResult
+
+## Constructors
+
+### NSExportArchiveResult()
+
+```crmscript
+NSExportArchiveResult
+```
+
+Initializes a new instance of the NSExportArchiveResult class.
+
+## Methods
+
+## GetBatchTaskId()
+
+```crmscript
+Integer GetBatchTaskId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the BatchTask created. &lt;=0 if no BatchTask was created.
+
+**Example:**
+
+```crmscript
+NSExportArchiveResult thing;
+Integer batchTaskId = thing.GetBatchTaskId();
+```
+
+## GetFileName()
+
+```crmscript
+String GetFileName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The path to the output file created, if it exists. Will be an empty string if no file was created.
+
+**Example:**
+
+```crmscript
+NSExportArchiveResult thing;
+String fileName = thing.GetFileName();
+```
+
+## GetMessage()
+
+```crmscript
+String GetMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Descriptive messages; errors, etc.
+
+**Example:**
+
+```crmscript
+NSExportArchiveResult thing;
+String message = thing.GetMessage();
+```
+
+## SetBatchTaskId(Integer)
+
+```crmscript
+Void SetBatchTaskId(Integer batchTaskId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExportArchiveResult thing;
+Integer batchTaskId;
+thing.SetBatchTaskId(batchTaskId);
+```
+
+## SetFileName(String)
+
+```crmscript
+Void SetFileName(String fileName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExportArchiveResult thing;
+String fileName;
+thing.SetFileName(fileName);
+```
+
+## SetMessage(String)
+
+```crmscript
+Void SetMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExportArchiveResult thing;
+String message;
+thing.SetMessage(message);
+```

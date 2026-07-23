@@ -1,0 +1,47 @@
+﻿---
+uid: crmscript.netserver.nsworkflowfilter
+title: NSWorkflowFilter
+description: "Carrier object for WorkflowFilter."
+keywords: CRMScript, NSWorkflowFilter, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWorkflowFilter
+
+Carrier object for WorkflowFilter.
+
+## Constructors
+
+### NSWorkflowFilter()
+
+```crmscript
+NSWorkflowFilter
+```
+
+Initializes a new instance of the NSWorkflowFilter class.
+
+## Methods
+
+## GetRestrictionGroups()
+
+Gets the restrictions (can be multiple groups) that make up the Workflow filter
+
+```crmscript
+NSArchiveRestrictionGroup[] GetRestrictionGroups()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup) - Get the restrictions
+
+## SetRestrictionGroups(NSArchiveRestrictionGroup[])
+
+Sets the restrictions (can be multiple groups) that make up the Workflow filter
+
+```crmscript
+Void SetRestrictionGroups(NSArchiveRestrictionGroup[] eventType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

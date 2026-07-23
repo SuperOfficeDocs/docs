@@ -1,0 +1,185 @@
+﻿---
+uid: crmscript.native.file
+title: File
+description: "Represents a file. **This class is not available in CRM Online.**"
+keywords: CRMScript, File, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# File
+
+Represents a file. **This class is not available in CRM Online.**
+
+Use open() before you call any other methods.
+
+## Constructors
+
+### File()
+
+```crmscript
+File
+```
+
+Initializes a new instance of the File class.
+
+## Methods
+
+## close()
+
+Closes the file. The File object is then ready to open a new file.
+
+```crmscript
+Void close()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## eof()
+
+Returns true if a read passed the end of file has been attempted.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if a read passed the end of file has been attempted; otherwise, false.
+
+<Note>
+When you read lines in a loop, you can break out of the loop when this function return true.
+</Note>
+
+## flush()
+
+Empties the output buffer, writing the data to the file.
+
+```crmscript
+flush()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## open(String,String)
+
+Opens the file to be available for other calls.
+
+```crmscript
+Bool open(String filename, String mode)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+Use open(String,String,String) to provide a codepage.
+
+Modes:
+
+| Mode | Description |
+|---|---|
+| r or rb | Open file for reading. |
+| w or wb | Truncate to zero length or create a file for writing. |
+| a or ab | Append; open or create a file for writing at the end-of-file. |
+| r+ or rb+ or r+b | Open file for update (reading and writing). |
+| w+ or wb+ or w+b | Truncate to zero length or create a file for update. |
+</Note>
+
+## open(String,String,String)
+
+Opens the file with a codepage to be available for other calls.
+
+```crmscript
+Bool open(String filename, String mode, String codepage)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+Use open(String,String) if you don't need to specify codepage.
+
+Modes:
+
+| Mode | Description |
+|---|---|
+| r or rb | Open file for reading. |
+| w or wb | Truncate to zero length or create a file for writing. |
+| a or ab | Append; open or create a file for writing at the end-of-file. |
+| r+ or rb+ or r+b | Open file for update (reading and writing). |
+| w+ or wb+ or w+b | Truncate to zero length or create a file for update. |
+</Note>
+
+## readAll()
+
+Returns all text from the file.
+
+```crmscript
+String readAll()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## readBinary()
+
+Reads the file and returns binary data in a Byte array.
+
+```crmscript
+Byte readBinary()
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Binary data.
+
+## readLine()
+
+Returns the next line from the file or a null string if no more data in the file.
+
+```crmscript
+String readLine()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The next line from the file or a null string if no more data in the file.
+
+## rewind()
+
+Sets the current file pointer to the beginning of the file.
+
+```crmscript
+Void rewind()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## unlink()
+
+Deletes the file.
+
+```crmscript
+Bool unlink()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## write(String)
+
+Writes data to the file.
+
+```crmscript
+Void write(String data)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Can be called many times, adding more and more data to the file.
+</Note>
+
+## writeBinary(Byte[])
+
+Writes binary data to file.
+
+```crmscript
+Void writeBinary(Byte[] data)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

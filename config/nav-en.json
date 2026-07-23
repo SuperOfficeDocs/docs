@@ -1691,7 +1691,8 @@
                   "en/automation/trigger/create-trigger-script",
                   "en/automation/trigger/set-validation-rules",
                   "en/automation/trigger/update-value",
-                  "en/automation/trigger/reference/index"
+                  "en/automation/trigger/reference/index",
+                  "en/automation/trigger/reference/CRMScript.Event.Trigger"
                 ]
               },
               {
@@ -2781,7 +2782,16 @@
       {
         "item": "CRMScript Reference",
         "icon": "code",
-        "groups": []
+        "groups": [
+          {
+            "group": "Reference",
+            "root": "en/automation/crmscript/reference/index",
+            "directory": "accordion",
+            "pages": {
+              "$ref": "./nav-crmscript-ref.json"
+            }
+          }
+        ]
       }
     ]
   },

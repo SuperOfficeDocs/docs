@@ -1,0 +1,893 @@
+﻿---
+uid: crmscript.netserver.nssalesummary
+title: NSSaleSummary
+description: ""
+keywords: CRMScript, NSSaleSummary, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSaleSummary
+
+## Constructors
+
+### NSSaleSummary()
+
+```crmscript
+NSSaleSummary
+```
+
+Initializes a new instance of the NSSaleSummary class.
+
+## Methods
+
+## GetBaseCurrency()
+
+```crmscript
+String GetBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+String baseCurrency = thing.GetBaseCurrency();
+```
+
+## GetCurrentOverdue()
+
+```crmscript
+Integer GetCurrentOverdue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of all overdue sales within the period.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer currentOverdue = thing.GetCurrentOverdue();
+```
+
+## GetCurrentOverdueTotalBaseCurrency()
+
+```crmscript
+Float GetCurrentOverdueTotalBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all overdue sales within the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueTotalBaseCurrency = thing.GetCurrentOverdueTotalBaseCurrency();
+```
+
+## GetCurrentOverdueTotalOwnCurrency()
+
+```crmscript
+Float GetCurrentOverdueTotalOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all overdue sales within the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueTotalOwnCurrency = thing.GetCurrentOverdueTotalOwnCurrency();
+```
+
+## GetCurrentOverdueWeightedBaseCurrency()
+
+```crmscript
+Float GetCurrentOverdueWeightedBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all overdue sales within the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueWeightedBaseCurrency = thing.GetCurrentOverdueWeightedBaseCurrency();
+```
+
+## GetCurrentOverdueWeightedOwnCurrency()
+
+```crmscript
+Float GetCurrentOverdueWeightedOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all overdue sales within the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueWeightedOwnCurrency = thing.GetCurrentOverdueWeightedOwnCurrency();
+```
+
+## GetFutureOpen()
+
+```crmscript
+Integer GetFutureOpen()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of all Future Pipe/All open sales with date after the period.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer futureOpen = thing.GetFutureOpen();
+```
+
+## GetFutureOpenTotalBaseCurrency()
+
+```crmscript
+Float GetFutureOpenTotalBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all Future Pipe/All open sales with date after the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenTotalBaseCurrency = thing.GetFutureOpenTotalBaseCurrency();
+```
+
+## GetFutureOpenTotalOwnCurrency()
+
+```crmscript
+Float GetFutureOpenTotalOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all Future Pipe/All open sales with date after the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenTotalOwnCurrency = thing.GetFutureOpenTotalOwnCurrency();
+```
+
+## GetFutureOpenWeightedBaseCurrency()
+
+```crmscript
+Float GetFutureOpenWeightedBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all Future Pipe/All open sales with date after the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenWeightedBaseCurrency = thing.GetFutureOpenWeightedBaseCurrency();
+```
+
+## GetFutureOpenWeightedOwnCurrency()
+
+```crmscript
+Float GetFutureOpenWeightedOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all Future Pipe/All open sales with date after the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenWeightedOwnCurrency = thing.GetFutureOpenWeightedOwnCurrency();
+```
+
+## GetLost()
+
+```crmscript
+Integer GetLost()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of all lost within the period.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer lost = thing.GetLost();
+```
+
+## GetLostTotalBaseCurrency()
+
+```crmscript
+Float GetLostTotalBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all lost within the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float lostTotalBaseCurrency = thing.GetLostTotalBaseCurrency();
+```
+
+## GetLostTotalOwnCurrency()
+
+```crmscript
+Float GetLostTotalOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all lost within the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float lostTotalOwnCurrency = thing.GetLostTotalOwnCurrency();
+```
+
+## GetOpen()
+
+```crmscript
+Integer GetOpen()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of all open within the period.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer open = thing.GetOpen();
+```
+
+## GetOpenTotalBaseCurrency()
+
+```crmscript
+Float GetOpenTotalBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all open within the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openTotalBaseCurrency = thing.GetOpenTotalBaseCurrency();
+```
+
+## GetOpenTotalOwnCurrency()
+
+```crmscript
+Float GetOpenTotalOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all open within the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openTotalOwnCurrency = thing.GetOpenTotalOwnCurrency();
+```
+
+## GetOpenWeightedBaseCurrency()
+
+```crmscript
+Float GetOpenWeightedBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all open within the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openWeightedBaseCurrency = thing.GetOpenWeightedBaseCurrency();
+```
+
+## GetOpenWeightedOwnCurrency()
+
+```crmscript
+Float GetOpenWeightedOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all open within the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openWeightedOwnCurrency = thing.GetOpenWeightedOwnCurrency();
+```
+
+## GetOwnCurrency()
+
+```crmscript
+String GetOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+String ownCurrency = thing.GetOwnCurrency();
+```
+
+## GetPreviousOverdue()
+
+```crmscript
+Integer GetPreviousOverdue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of all open sales with date before this period.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer previousOverdue = thing.GetPreviousOverdue();
+```
+
+## GetPreviousOverdueTotalBaseCurrency()
+
+```crmscript
+Float GetPreviousOverdueTotalBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all open sales with date before this period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueTotalBaseCurrency = thing.GetPreviousOverdueTotalBaseCurrency();
+```
+
+## GetPreviousOverdueTotalOwnCurrency()
+
+```crmscript
+Float GetPreviousOverdueTotalOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all open sales with date before this period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueTotalOwnCurrency = thing.GetPreviousOverdueTotalOwnCurrency();
+```
+
+## GetPreviousOverdueWeightedBaseCurrency()
+
+```crmscript
+Float GetPreviousOverdueWeightedBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all open sales with date before this period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueWeightedBaseCurrency = thing.GetPreviousOverdueWeightedBaseCurrency();
+```
+
+## GetPreviousOverdueWeightedOwnCurrency()
+
+```crmscript
+Float GetPreviousOverdueWeightedOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Weighted sum for all open sales with date before this period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueWeightedOwnCurrency = thing.GetPreviousOverdueWeightedOwnCurrency();
+```
+
+## GetSold()
+
+```crmscript
+Integer GetSold()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of all sold within the period.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer sold = thing.GetSold();
+```
+
+## GetSoldTotalBaseCurrency()
+
+```crmscript
+Float GetSoldTotalBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all sold within the period in default currency for the installation.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float soldTotalBaseCurrency = thing.GetSoldTotalBaseCurrency();
+```
+
+## GetSoldTotalOwnCurrency()
+
+```crmscript
+Float GetSoldTotalOwnCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Summed amount for all sold within the period in default currency for the current user.
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float soldTotalOwnCurrency = thing.GetSoldTotalOwnCurrency();
+```
+
+## SetBaseCurrency(String)
+
+```crmscript
+Void SetBaseCurrency(String baseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+String baseCurrency;
+thing.SetBaseCurrency(baseCurrency);
+```
+
+## SetCurrentOverdue(Integer)
+
+```crmscript
+Void SetCurrentOverdue(Integer currentOverdue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer currentOverdue;
+thing.SetCurrentOverdue(currentOverdue);
+```
+
+## SetCurrentOverdueTotalBaseCurrency(Float)
+
+```crmscript
+Void SetCurrentOverdueTotalBaseCurrency(Float currentOverdueTotalBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueTotalBaseCurrency;
+thing.SetCurrentOverdueTotalBaseCurrency(currentOverdueTotalBaseCurrency);
+```
+
+## SetCurrentOverdueTotalOwnCurrency(Float)
+
+```crmscript
+Void SetCurrentOverdueTotalOwnCurrency(Float currentOverdueTotalOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueTotalOwnCurrency;
+thing.SetCurrentOverdueTotalOwnCurrency(currentOverdueTotalOwnCurrency);
+```
+
+## SetCurrentOverdueWeightedBaseCurrency(Float)
+
+```crmscript
+Void SetCurrentOverdueWeightedBaseCurrency(Float currentOverdueWeightedBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueWeightedBaseCurrency;
+thing.SetCurrentOverdueWeightedBaseCurrency(currentOverdueWeightedBaseCurrency);
+```
+
+## SetCurrentOverdueWeightedOwnCurrency(Float)
+
+```crmscript
+Void SetCurrentOverdueWeightedOwnCurrency(Float currentOverdueWeightedOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float currentOverdueWeightedOwnCurrency;
+thing.SetCurrentOverdueWeightedOwnCurrency(currentOverdueWeightedOwnCurrency);
+```
+
+## SetFutureOpen(Integer)
+
+```crmscript
+Void SetFutureOpen(Integer futureOpen)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer futureOpen;
+thing.SetFutureOpen(futureOpen);
+```
+
+## SetFutureOpenTotalBaseCurrency(Float)
+
+```crmscript
+Void SetFutureOpenTotalBaseCurrency(Float futureOpenTotalBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenTotalBaseCurrency;
+thing.SetFutureOpenTotalBaseCurrency(futureOpenTotalBaseCurrency);
+```
+
+## SetFutureOpenTotalOwnCurrency(Float)
+
+```crmscript
+Void SetFutureOpenTotalOwnCurrency(Float futureOpenTotalOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenTotalOwnCurrency;
+thing.SetFutureOpenTotalOwnCurrency(futureOpenTotalOwnCurrency);
+```
+
+## SetFutureOpenWeightedBaseCurrency(Float)
+
+```crmscript
+Void SetFutureOpenWeightedBaseCurrency(Float futureOpenWeightedBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenWeightedBaseCurrency;
+thing.SetFutureOpenWeightedBaseCurrency(futureOpenWeightedBaseCurrency);
+```
+
+## SetFutureOpenWeightedOwnCurrency(Float)
+
+```crmscript
+Void SetFutureOpenWeightedOwnCurrency(Float futureOpenWeightedOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float futureOpenWeightedOwnCurrency;
+thing.SetFutureOpenWeightedOwnCurrency(futureOpenWeightedOwnCurrency);
+```
+
+## SetLost(Integer)
+
+```crmscript
+Void SetLost(Integer lost)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer lost;
+thing.SetLost(lost);
+```
+
+## SetLostTotalBaseCurrency(Float)
+
+```crmscript
+Void SetLostTotalBaseCurrency(Float lostTotalBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float lostTotalBaseCurrency;
+thing.SetLostTotalBaseCurrency(lostTotalBaseCurrency);
+```
+
+## SetLostTotalOwnCurrency(Float)
+
+```crmscript
+Void SetLostTotalOwnCurrency(Float lostTotalOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float lostTotalOwnCurrency;
+thing.SetLostTotalOwnCurrency(lostTotalOwnCurrency);
+```
+
+## SetOpen(Integer)
+
+```crmscript
+Void SetOpen(Integer open)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer open;
+thing.SetOpen(open);
+```
+
+## SetOpenTotalBaseCurrency(Float)
+
+```crmscript
+Void SetOpenTotalBaseCurrency(Float openTotalBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openTotalBaseCurrency;
+thing.SetOpenTotalBaseCurrency(openTotalBaseCurrency);
+```
+
+## SetOpenTotalOwnCurrency(Float)
+
+```crmscript
+Void SetOpenTotalOwnCurrency(Float openTotalOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openTotalOwnCurrency;
+thing.SetOpenTotalOwnCurrency(openTotalOwnCurrency);
+```
+
+## SetOpenWeightedBaseCurrency(Float)
+
+```crmscript
+Void SetOpenWeightedBaseCurrency(Float openWeightedBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openWeightedBaseCurrency;
+thing.SetOpenWeightedBaseCurrency(openWeightedBaseCurrency);
+```
+
+## SetOpenWeightedOwnCurrency(Float)
+
+```crmscript
+Void SetOpenWeightedOwnCurrency(Float openWeightedOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float openWeightedOwnCurrency;
+thing.SetOpenWeightedOwnCurrency(openWeightedOwnCurrency);
+```
+
+## SetOwnCurrency(String)
+
+```crmscript
+Void SetOwnCurrency(String ownCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+String ownCurrency;
+thing.SetOwnCurrency(ownCurrency);
+```
+
+## SetPreviousOverdue(Integer)
+
+```crmscript
+Void SetPreviousOverdue(Integer previousOverdue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer previousOverdue;
+thing.SetPreviousOverdue(previousOverdue);
+```
+
+## SetPreviousOverdueTotalBaseCurrency(Float)
+
+```crmscript
+Void SetPreviousOverdueTotalBaseCurrency(Float previousOverdueTotalBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueTotalBaseCurrency;
+thing.SetPreviousOverdueTotalBaseCurrency(previousOverdueTotalBaseCurrency);
+```
+
+## SetPreviousOverdueTotalOwnCurrency(Float)
+
+```crmscript
+Void SetPreviousOverdueTotalOwnCurrency(Float previousOverdueTotalOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueTotalOwnCurrency;
+thing.SetPreviousOverdueTotalOwnCurrency(previousOverdueTotalOwnCurrency);
+```
+
+## SetPreviousOverdueWeightedBaseCurrency(Float)
+
+```crmscript
+Void SetPreviousOverdueWeightedBaseCurrency(Float previousOverdueWeightedBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueWeightedBaseCurrency;
+thing.SetPreviousOverdueWeightedBaseCurrency(previousOverdueWeightedBaseCurrency);
+```
+
+## SetPreviousOverdueWeightedOwnCurrency(Float)
+
+```crmscript
+Void SetPreviousOverdueWeightedOwnCurrency(Float previousOverdueWeightedOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float previousOverdueWeightedOwnCurrency;
+thing.SetPreviousOverdueWeightedOwnCurrency(previousOverdueWeightedOwnCurrency);
+```
+
+## SetSold(Integer)
+
+```crmscript
+Void SetSold(Integer sold)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Integer sold;
+thing.SetSold(sold);
+```
+
+## SetSoldTotalBaseCurrency(Float)
+
+```crmscript
+Void SetSoldTotalBaseCurrency(Float soldTotalBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float soldTotalBaseCurrency;
+thing.SetSoldTotalBaseCurrency(soldTotalBaseCurrency);
+```
+
+## SetSoldTotalOwnCurrency(Float)
+
+```crmscript
+Void SetSoldTotalOwnCurrency(Float soldTotalOwnCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummary thing;
+Float soldTotalOwnCurrency;
+thing.SetSoldTotalOwnCurrency(soldTotalOwnCurrency);
+```

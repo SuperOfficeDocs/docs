@@ -1,0 +1,580 @@
+﻿---
+uid: crmscript.netserver.nscustomerserviceagent
+title: NSCustomerServiceAgent
+description: "Agent used for Customer Service methods."
+keywords: CRMScript, NSCustomerServiceAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCustomerServiceAgent
+
+Agent used for Customer Service methods.
+
+## Constructors
+
+### NSCustomerServiceAgent()
+
+```crmscript
+NSCustomerServiceAgent
+```
+
+Agent used for Customer Service methods.
+
+## Methods
+
+## AddMessageFromMailData(Integer,String)
+
+Adds a message to an existing request in the sam way as importMail would do it from an email.
+
+```crmscript
+NSTicketInfo AddMessageFromMailData(Integer ticketId, String data)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketInfo](CRMScript.NetServer.NSTicketInfo)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+Integer ticketId;
+String data;
+NSTicketInfo res = agent.AddMessageFromMailData(ticketId, data);
+```
+
+## ChatSessionsForUser()
+
+Gets all chat TOPICS which this user is a member of.
+
+```crmscript
+NSChatSession[] ChatSessionsForUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSession](CRMScript.NetServer.NSChatSession)[] - chat topics.
+
+<Note>
+Members means that you have at least one of: Can Respond, Notifications, Listen or Manager
+</Note>
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSChatSession[] res = agent.ChatSessionsForUser();
+```
+
+## CheckIfCustomizedTemplates()
+
+Checks whether the core HTML templates are customized
+
+```crmscript
+Bool CheckIfCustomizedTemplates()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+Bool res = agent.CheckIfCustomizedTemplates();
+```
+
+## CheckSymmetricEncryption(String)
+
+Checks that we are using the same encryption keys
+
+```crmscript
+String CheckSymmetricEncryption(String encryptedString)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+String encryptedString;
+String res = agent.CheckSymmetricEncryption(encryptedString);
+```
+
+## CreateDefaultCustomerCenterConfig()
+
+Sets default values into a new NSCustomerCenterConfig.
+
+```crmscript
+NSCustomerCenterConfig CreateDefaultCustomerCenterConfig()
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSCustomerCenterConfig thing = agent.CreateDefaultCustomerCenterConfig();
+thing = agent.SaveCustomerCenterConfig(thing);
+```
+
+## CreateDefaultMailboxEntity()
+
+Sets default values into a new NSMailboxEntity
+
+```crmscript
+NSMailboxEntity CreateDefaultMailboxEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSMailboxEntity](CRMScript.NetServer.NSMailboxEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSMailboxEntity thing = agent.CreateDefaultMailboxEntity();
+thing = agent.SaveMailboxEntity(thing);
+```
+
+## CreateDefaultSmsConfig()
+
+Sets default values into a new NSSmsConfig.
+
+```crmscript
+NSSmsConfig CreateDefaultSmsConfig()
+```
+
+**Returns:** [CRMScript.NetServer.NSSmsConfig](CRMScript.NetServer.NSSmsConfig)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSSmsConfig thing = agent.CreateDefaultSmsConfig();
+thing = agent.SaveSmsConfig(thing);
+```
+
+## CreateSession(String)
+
+Creates a login session for a CS user
+
+```crmscript
+NSCsSessionKey CreateSession(String remoteIp)
+```
+
+**Returns:** [CRMScript.NetServer.NSCsSessionKey](CRMScript.NetServer.NSCsSessionKey)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+String remoteIp;
+NSCsSessionKey res = agent.CreateSession(remoteIp);
+```
+
+## CreateTicketFromMailData(Integer,String)
+
+Creates a new ticket in the same way as importMail would import an email.
+
+```crmscript
+NSTicketInfo CreateTicketFromMailData(Integer mailboxId, String data)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketInfo](CRMScript.NetServer.NSTicketInfo)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+Integer mailboxId;
+String data;
+NSTicketInfo res = agent.CreateTicketFromMailData(mailboxId, data);
+```
+
+## DeleteChatSessions(Integer[])
+
+Deletes the specified chat sessions.
+
+```crmscript
+Void DeleteChatSessions(Integer[] ids)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+Integer[] ids;
+agent.DeleteChatSessions(ids);
+```
+
+## DeleteCustomerCenterConfig(Integer)
+
+Deletes the NSCustomerCenterConfig
+
+```crmscript
+DeleteCustomerCenterConfig(Integer customerCenterConfig)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+agent.DeleteCustomerCenterConfig(123);
+```
+
+## EventHandlerExists(Integer)
+
+Checks if an event handler exists.
+
+```crmscript
+Bool EventHandlerExists(Integer eventHandlerType)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+Integer eventHandlerType;
+Bool res = agent.EventHandlerExists(eventHandlerType);
+```
+
+## ExecuteEventHandlers(NSEventData)
+
+Executes event handlers in CRMScript for a given event.
+
+```crmscript
+NSEventData ExecuteEventHandlers(NSEventData eventData)
+```
+
+**Returns:** [CRMScript.NetServer.NSEventData](CRMScript.NetServer.NSEventData)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSEventData eventData;
+NSEventData res = agent.ExecuteEventHandlers(eventData);
+```
+
+## FindTicketsByTitleOrId(String,Integer)
+
+Searches for tickets matching title or ID
+
+```crmscript
+NSTicketInfo[] FindTicketsByTitleOrId(String titleOrId, Integer maxRows)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketInfo](CRMScript.NetServer.NSTicketInfo)[]
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+String titleOrId;
+Integer maxRows;
+NSTicketInfo[] res = agent.FindTicketsByTitleOrId(titleOrId, maxRows);
+```
+
+## GetAllCustomerCenterConfigs()
+
+Gets all rows from cust_config as an array of NSCustomerCenterConfig entities
+
+```crmscript
+NSCustomerCenterConfig[] GetAllCustomerCenterConfigs()
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)[]
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSCustomerCenterConfig[] res = agent.GetAllCustomerCenterConfigs();
+```
+
+## GetCustomerCenterConfig(Integer)
+
+Gets an NSCustomerCenterConfig object.
+
+```crmscript
+NSCustomerCenterConfig GetCustomerCenterConfig(Integer customerCenterConfigId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSCustomerCenterConfig thing = agent.GetCustomerCenterConfig(123);
+```
+
+## GetCustomerServiceStartup()
+
+Gets the carrier with data that Service needs when starting up
+
+```crmscript
+NSCustomerServiceStartup GetCustomerServiceStartup()
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerServiceStartup](CRMScript.NetServer.NSCustomerServiceStartup)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSCustomerServiceStartup res = agent.GetCustomerServiceStartup();
+```
+
+## GetMailboxEntity(Integer)
+
+Gets an NSMailboxEntity object.
+
+```crmscript
+NSMailboxEntity GetMailboxEntity(Integer mailboxEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSMailboxEntity](CRMScript.NetServer.NSMailboxEntity)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSMailboxEntity thing = agent.GetMailboxEntity(123);
+```
+
+## GetMailboxes()
+
+Gets all registered mailboxes in Service
+
+```crmscript
+NSMailbox[] GetMailboxes()
+```
+
+**Returns:** [CRMScript.NetServer.NSMailbox](CRMScript.NetServer.NSMailbox)[]
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSMailbox[] res = agent.GetMailboxes();
+```
+
+## GetProgramUrl(String,Bool)
+
+Converts a module name into a Service URL.
+
+```crmscript
+String GetProgramUrl(String programName, Bool external)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+String programName;
+Bool external;
+String res = agent.GetProgramUrl(programName, external);
+```
+
+## GetSmsConfig()
+
+Gets the NSSmsConfig settings for Customer Service SMS providers.
+
+```crmscript
+NSSmsConfig GetSmsConfig()
+```
+
+**Returns:** [CRMScript.NetServer.NSSmsConfig](CRMScript.NetServer.NSSmsConfig)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+NSSmsConfig res = agent.GetSmsConfig();
+```
+
+## GetStatistics()
+
+Gets the calculated results for the required statistics for the Service Status page
+
+```crmscript
+CRMScript.NetServer.NSStatisticsDataSet[] GetStatistics(Integer[] functions)
+```
+
+**Returns:** [CRMScript.NetServer.NSStatisticsDataSet](CRMScript.NetServer.NSStatisticsDataSet)[] - Array of StatisticsDataSet.
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+Integer[] functions;
+NSStatisticsDataSet[] res = agent.GetStatistics(functions);
+```
+
+## HasChatNotify()
+
+Checks if user has any chat notification
+
+```crmscript
+Bool HasChatNotify()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+Bool res = agent.HasChatNotify();
+```
+
+## RemoveSession(Integer)
+
+Removes a login session for a Service user
+
+```crmscript
+Void RemoveSession(Integer loginId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[])
+
+Saves an array of NSCustomerCenterConfig entities to the database
+
+```crmscript
+Void SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[] custConfigs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+agent.SaveAllCustomerCenterConfigs(custConfigs);
+```
+
+## SaveCustomerCenterConfig(NSCustomerCenterConfig)
+
+Updates the existing NSCustomerCenterConfig or creates a new NSCustomerCenterConfig if the id parameter is 0
+
+```crmscript
+NSCustomerCenterConfig SaveCustomerCenterConfig(NSCustomerCenterConfig customerCenterConfig)
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)
+
+**Example:**
+
+```crmscript
+NSCustomerService  agent;
+NSCustomerCenterConfig thing = agent.CreateDefaultCustomerCenterConfig();
+thing = agent.SaveCustomerCenterConfig(thing);
+```
+
+## SaveMailboxEntity(NSMailboxEntity)
+
+Updates the existing NSMailboxEntity or creates a new NSMailboxEntity if the ID parameter is 0
+
+```crmscript
+NSMailboxEntity SaveMailboxEntity(NSMailboxEntity mailboxEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSMailboxEntity](CRMScript.NetServer.NSMailboxEntity)
+
+**Example:**
+
+```crmscript
+NSCustomerService  agent;
+NSMailboxEntity thing = agent.CreateDefaultMailboxEntity();
+thing = agent.SaveMailboxEntity(thing);
+```
+
+## SaveSmsConfig(NSSmsConfig)
+
+Updates the existing NSSmsConfig or creates a new NSSmsConfig if the ID parameter is 0
+
+```crmscript
+NSSmsConfig SaveSmsConfig(NSSmsConfig smsConfig)
+```
+
+**Returns:** [CRMScript.NetServer.NSSmsConfig](CRMScript.NetServer.NSSmsConfig)
+
+**Example:**
+
+```crmscript
+NSCustomerService  agent;
+NSSmsConfig thing = agent.CreateDefaultSmsConfig();
+thing = agent.SaveSmsConfig(thing);
+```
+
+## SessionIsValid(String)
+
+Checks if a Service session is valid
+
+```crmscript
+Bool SessionIsValid(String csSessionKey)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+String csSessionKey;
+Bool res = agent.SessionIsValid(csSessionKey);
+```
+
+## TestSmtpServer(String,String,Bool)
+
+Tests an SMTP account, by sending an email to a special @superoffice.com account
+
+```crmscript
+NSSmtpTestResult TestSmtpServer(String smtpUri, String from, Bool useStoredPassword)
+```
+
+**Returns:** [CRMScript.NetServer.NSSmtpTestResult](CRMScript.NetServer.NSSmtpTestResult)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceAgent agent;
+String smtpUri;
+String from;
+Bool useStoredPassword;
+NSSmtpTestResult res = agent.TestSmtpServer(smtpUri, from, useStoredPassword);
+```
+
+## UpdateFeatureToggles(CsFeatureToggle[])
+
+Updates the cached FeatureToggles for Service
+
+```crmscript
+Void UpdateFeatureToggles(CsFeatureToggle[] featureToggles)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

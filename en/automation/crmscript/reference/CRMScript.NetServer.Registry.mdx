@@ -1,0 +1,401 @@
+﻿---
+uid: crmscript.netserver.registry
+title: Enum Registry
+description: "Enum used to map registry values by reg_id"
+keywords: CRMScript, Registry, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum Registry
+
+Enum used to map registry values by reg_id
+
+## Syntax
+
+```crmscript
+Registry
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| RegistryEntry_End | internal |
+| EjournalSender | ejSender executable |
+| CleanerThreshold | CleanerThreshold |
+| CleanerTolerance | CleanerTolerance |
+| EjournalCronLast | Previous run time for ejCron |
+| EjournalCronNow | This run time for ejCron |
+| CleanerOnOff | CleanerOnOff |
+| CleanerImportOnOff | CleanerImportOnOff |
+| NotifyActiveTickets | NotifyActiveTickets |
+| ActiveLinksInMessages | ActiveLinksInMessages |
+| SmtpTimeout | SMTP timeout value |
+| ReplyTemplateCustomerNewCustomer | ReplyTemplateCustomerNewCustomer |
+| ReplyTemplateCustomerCustomerReply | ReplyTemplateCustomerCustomerReply |
+| ReplyTemplateCustomerPassword | ReplyTemplateCustomerPassword |
+| ReplyTemplateUserActiveTickets | ReplyTemplateUserActiveTickets |
+| ReplyTemplateUserNewMessage | ReplyTemplateUserNewMessage |
+| ReplyTemplateUserTicketActivated | ReplyTemplateUserTicketActivated |
+| ReplyTemplateUserTicketAlarm | ReplyTemplateUserTicketAlarm |
+| ReplyTemplateUserNewTicket | ReplyTemplateUserNewTicket |
+| SetupCompanyName | SetupCompanyName |
+| SetupCompanyAddress | SetupCompanyAddress |
+| NotifyActiveTicketsDays | Notify active tickets delay |
+| EjournalOutbox | ejOutbox executable |
+| OutmailWrapColumn | Outmail wrap column (only used for parameter to htmlConvToText) |
+| EnableBackdoor | Enable eJournal remote access |
+| EjournalOutboxDelay | ejOutbox mail delay in minutes |
+| DisableHtmlFiltering | Disable filtering of HTML when viewing |
+| FaqTitleWeight | The weight of each word in faq title |
+| ChatWhoisString | Link to web page finding the owner of an ip |
+| FaqSuggestions | Number of faq suggestions in email filter |
+| ChatAvailableImage | Filename of chatAvailable image |
+| ChatUnavailableImage | Filename of chatUnavailable image |
+| ImportMailTimeout | Seconds before importMail looses ownership |
+| ShowReplyTemplatesToCustomers | Show reply templates sendt to customers |
+| LastRequestTicketLimit | Last request ticket limit (maxId-x) |
+| LastRequestDaysLimit | Last request days limit |
+| NoEjOutbox | Disable internal outbox. |
+| IdleLimitCustomerSeconds | Number of idle seconds before customer is logged out(SOAP). |
+| ReplyTemplateUserTicketTakenOver | ReplyTemplateUserTicketTakenOver. |
+| EnableSpellCheck27 | Enable spellchecking on eJournal 2.7 |
+| LogPath | LogPath in eJournal |
+| NumOfListedLinks | Max number of links or images listed on a customer |
+| ReplyTemplatePublishKbQuestion | ReplyTemplatePublishKbQuestion |
+| ReplyTemplatePublishKbAnswer | ReplyTemplatePublishKbAnswer |
+| InvoiceUpdateDone | InvoiceUpdateDone |
+| DefaultTimeToReplyOnNewTicket | The default time_to_reply on new tickets, -1 disabled |
+| ShowAutoRepliesToCustomers | Show auto replies sendt to customers |
+| EjournalOutboxDeleteSentMailAfter | Outbox delete SentMail after x days |
+| AllwaysSendMailToNewCustomers | Allways send mail to new customers |
+| IdleLimitCustomerSecondsWeb | Number of idle seconds before customer is logged out. |
+| ExternalCustomerAuthEnabled | External authentication of customers enabled. |
+| ExternalCustomerAuthURL | External authentication connection string (url). |
+| DoNotTestSmtp | Do not test SMTP server ie relaying denied |
+| DelayMailboxImport | Delay import of each mailbox with a given number of seconds |
+| MaxLoginAttempts | Maximum sequential login attempts |
+| BlockLoginAttempts | Number of minutes to block after MaxLoginAttempts is reached |
+| ReplyTemplateWeekStat | ReplyTemplateWeekStat |
+| WeekStatRecipient | The email address(es) of week stat recipients |
+| HideUserStatistics | Hide user sensitive statistics |
+| SystemTimeMode | System wide time mode. 0=12hrs 1=24hrs |
+| SMTPIgnoreLeadingDotEscaping | Ignore the escaping of leading dots when encoding mail. |
+| BaseURLForFAQEntry | Alternative Base URL for external FAQ entries. Can be empty. |
+| BaseURLForFAQCategory | Alternative Base URL for external FAQ categories. Can be empty. |
+| SystemTimeModeInstalled | Is system wide time mode installed? |
+| BlockCustomerFAQParsing | Block parsing of FAQ entries under customer |
+| ChatUserIdleTime | Remove user from chat topic if he has been idle long than... |
+| AlertChatMessages | Whether to alert chat messages |
+| DisableExternalSpmUpdate | Disable external database updates when sending spm |
+| SpmSMTPServer | Specify an alternative SMTP server for spm |
+| SpmDefaultFrom | Default spm test from adress |
+| NotificationExpire | Number of seconds for a notification message to live |
+| CrystalReportsSoapEndpoint | Endpoint for CrystalReports of soap |
+| DoNotSearchBodyForTag | Do not search email body for message tag |
+| ReplyTemplateHotlistNewMessage | ReplyTemplateHotlistNewMessage |
+| ReplyTemplateHotlistTicketActivated | ReplyTemplateHotlistTicketActivated |
+| ReplyTemplateHotlistTicketAlarm | ReplyTemplateHotlistTicketAlarm |
+| ReplyTemplateHotlistTicketTakenOver | ReplyTemplateHotlistTicketTakenOver. |
+| LogChannels | LogChannels. |
+| ShowTotalInvoiceUnits | Show total invoice units on top of requests |
+| MinimumDiskSpace | Limit of free disk space before sending warning (megabytes) |
+| DecodingMailSorter | Enable decoding of mail bodies before mail sorter |
+| ImportMail3ExpireTime | Number of minutes before ImportMail should try a mail again (mode3) |
+| ImportMail3ExpireTimeAnalyze | Number of minutes before ImportMail should try to analyze again (mode3) |
+| StripNewLineInParser | Turn on stripping of new lines in parser commands |
+| LastDiskSpaceWarningAttachments | Time of last warning mail sent about low disk space |
+| LastDiskSpaceWarningBase | Time of last warning mail sent about low disk space |
+| LastDiskSpaceWarningText | Time of last warning mail sent about low disk space |
+| EnableNewImportMail | If 1 the new version of importmail is enabled |
+| EnableEjStat | Enable the new eJournal statistics |
+| SmsServiceId | Service id for this sms installation |
+| SmsServiceEndpoint | Service endpoint for this sms installation |
+| MaximumSmsMessagesPerDay | Maximum SMS messages sent per day |
+| MaximumSmsMessagesPerRecipient | Maximum SMS messages sent to a recipient |
+| CellphoneUpdateDone | Cellphone update done by upgrade |
+| DefaultSmsCountry | The default country code for the SMS module |
+| DbIntegratorEnableStreaming | Enable streaming of database integrator data |
+| ScreenChooserNewTicket | [Deprecated] Screen chooser for New ticket screen |
+| ScreenChooserListTicketTop | [Deprecated] Screen chooser for List ticket top screen |
+| ScreenChooserListTicketMessages | [Deprecated] Screen chooser for List ticket messages screen |
+| ScreenChooserAddMessage | [Deprecated] Screen chooser for Add message screen |
+| ScreenChooserEditTicket | [Deprecated] Screen chooser for Edit ticket screen |
+| ScreenChooserViewCustomer | [Deprecated] Screen chooser for View customer screen |
+| ScreenChooserViewCompany | [Deprecated] Screen chooser for View company screen |
+| ScreenChooserTicketMainMenu | [Deprecated] Screen chooser for Tickets main menu screen |
+| MaximumCountRecipients | Maximum count of listed recipients in form for add message |
+| EnableEditMessage | Enable editing of messages |
+| EnableNewGui | Enable new gui |
+| HideContactPersonPassword | Hide contact person passwords |
+| ShowBlogicMenu | ShowBlogicMenu |
+| WwwPath | Path or URL to www folder |
+| UseParserInDBIntegrator | Use Parser on the SQL query on external queries |
+| CollapsableMessageStrings | Strings which triggers a collapsable message |
+| RefreshNotifyFrameDeprecated | Notify frame refresh rate |
+| CopyLDAPSearchBase | Make sure the LDAP search base field is copied once |
+| UseHtmlRedirect | Uses HTML (meta tag) redirect, instead of HTTP based |
+| ImportMailProcPri | Importmail priority class |
+| KeepWarningLog | Keep warning log files for x days |
+| KeepDbLog | Keep database log entries for x days |
+| KeepFormKeys | Keep form keys in database for x days |
+| InternalMessageWhenNotCustomer | Make message internal when sender is not contact |
+| SoapSystemUserPassword | Soap system user password |
+| CreateExtraTableDbiFields | Create extra table dbi fields |
+| UseOldMailInFilterRegExp | Use old regexp type in mailInFilter |
+| NewInvoiceEntryFormat | Save discount percent with 2 decimals and also save money |
+| IgnoreReturnPath | Ignore return path |
+| ConvertProfilesToClob | Convert profiles to clob |
+| ReportStartRootFolder | Document report folder start path id |
+| ParseCustomerFields | Parse customer/company fields in search listing |
+| ArriveNewTicket | Use alternative NewTicket version |
+| ImportMessageAsAttachment | Import message/* MIME parts as attachment, not part of the text |
+| DBIBetaRelease | Enable DBI beta release |
+| DBIExecutable | DBI executable |
+| MailFilterMinFaqValue | Mail auto faq minimum score value, also used in faq search on customer center and mailbox |
+| AutoStartTimer | Start the timer automatic when entering a message |
+| ScreenChooserInvoiceStat | [Deprecated] Screen chooser for invoice screen |
+| LimitSearchExtraTableResult | Limit the number of entries return in an extra table search result |
+| UseWebServiceSms | Set this to 1 to use WebService as transporter for SMS |
+| LastLicenseInfo | Last time the license info was sent [deprecated] |
+| SmsSender | The sender name of a SMS |
+| SmsChannel | The channel for an outgoing SMS |
+| UseSmsDeliveryReport | Set this to 1 to turn on SMS delivery report |
+| UpdateTicketCustomersDone | This values is set to 1 when finished updating ticket_customers |
+| ScreenChooserHelpPage | [Deprecated] Screen chooser for help pages |
+| CustomerEncryptionMethod | Encrypt customer passwords |
+| UpgradeCustomerPasswordStatus | Status for batch upgrading customers password |
+| UpgradeScreenDefinitionsToScripts | Status for converting existing ScreenDefs to ejscript creation |
+| SpmUseHtmlEditor | Enable the internal html editor in spm |
+| InvoiceEntrySumAdded | Added field ie_sum with content in table invoice_entry |
+| LastnameFirst | Parse lastname first, when reading customer names |
+| SpmUseDeliveryReport | Use SMS delivery reports in eMarketeer |
+| DoNotKickLoginSessions | Do not kick existing login session - block new ones instead |
+| ScreenChooserUsers | [Deprecated] Screen chooser for users screen |
+| ScreenChooserPriorities | [Deprecated] Screen chooser for priorities screen |
+| UseSafeParserFunction | Use safe parser function on customer pages |
+| ScreenChooserCategories | [Deprecated] Screen chooser for categories screen |
+| UpdateCustomerEmails | Update customers with cust_email reference |
+| DirtyTicketSaveEvent | Deprecated ticket.save() event script |
+| PasteFaq | Paste FAQ answer directly into message |
+| EjSenderVersion | Used for version checking ejSender |
+| DefaultTicketStatusOpen | Default ticket status: open |
+| DefaultTicketStatusClosed | Default ticket status: closed |
+| DefaultTicketStatusInactive | Default ticket status: inactive |
+| DefaultTicketStatusDeleted | Default ticket status: deleted |
+| DefaultTicketStatusConnected | Default ticket status: connected |
+| UseOldHtmlSelectTreeLayout | Use the old HtmlSelectTree layout (nested dropdowns) |
+| ScreenChooserKnowledgeListFolders | [Deprecated] Screen chooser for list knowledgebase folders screen |
+| ScreenChooserKnowledgeEditKbEntry | [Deprecated] Screen chooser for edit knowledgebase entry screen |
+| ScreenChooserKnowledgeViewKbEntry | [Deprecated] Screen chooser for view knowledgebase entry screen |
+| ConvertRegScreenChoosersToTable | Convert screen choosers from registry to table |
+| SmsProvider | The choosen SMS provider |
+| PsWinComUsername | PsWinCom username |
+| PsWinComPassword | PsWinCom password |
+| PsWinComSender | PsWinCom sender |
+| UpgradeNotPresentComment | Not present comment done in upgrade |
+| UseWordByWordKbSearch | Kb search will search for each single word |
+| SearchSubjectBeforeMsgId | Search subject before message id for ticket connection |
+| UpgradeTicketStatusName | Name on ticket status done in upgrade |
+| UseOnlyOneCookie | Use only one cookie |
+| ViewCompanyWithPanes | Use panes on the viewCompany screen |
+| ViewCustomerWithPanes | Use panes on the viewCustomer screen |
+| ReplacedLangFrWithSe | Replaced fr with se in user table |
+| ViewExtraTableEntryWithPanes | Use panes on the viewExtraTableEntry screen |
+| OldMessageBeforeSignature | Copy old message before signature when adding a message |
+| ViewTicketWithPanes | Use panes on the viewTicket screen |
+| FixCreationScripts | Fix old creation scripts and move includes |
+| DefaultNoCustomerOnForwarding | No default copy to customer on forwarding |
+| ForceHTTPS | Force use of https protocol |
+| UseEjParserForTemplates | Use ejParser for parsing templates |
+| CrossPostMergeTimeWindow | Will attempt to link cross posts inside time frame of x minutes |
+| UseAbsoluteURLsInHTML | Make URLs in HTML absolute |
+| DelegateAlgorithm | Choose delegate algorithm |
+| DisplayDataSources | Display the data sources menu |
+| InlineImagesDefault | Default value for making images included in messages inlined |
+| LogoutUrl | Redirect to this URL after logout |
+| ProfilesConverted | Whether the profiles have been converted to element_profile |
+| DefaultBlogicScreensOnEditTicket | Use new blogic screens instead of old screens for request editing |
+| SearchToSelections | Converted old searches to selectins |
+| PhoneUpdateDone | Phone update done by upgrade |
+| FaqAddCommentsAccess | Who can add comments to FAQ entries (0=none, 1=customers, 2=all) |
+| FaqReadCommentsAccess | Who can read comments to FAQ entries (0=none, 1=customers, 2=all) |
+| SpmSMTPServerPort | Specify an alternative SMTP server port for spm |
+| MapiServerAppendString | String to append to server MAPI/AD-string if it is not there |
+| CarrotUsername | Username for carrot sms |
+| CarrotPassword | Password for carrot sms |
+| UnicodeConvertedTemplateFolder | Have we asked to convert the templates to utf-8? |
+| SuperOfficeIntegrationPassword | Password used by the SO integration |
+| UpdateUserDateFormatsDone | Update to new dateformats for users |
+| CellphoneAndPhoneUpdateDone | Updated cellphone and phone searchable fields |
+| UnpublishedWorkflowName | User specified name for unpublished workflow |
+| PublishedWorkflowName | User specified name for published workflow |
+| ExpiredWorkflowName | User specified name for expired workflow |
+| NotifyFramePidGain | PID controller gain parameters for NotifyFrame load balancing |
+| NotifyFramePidParamsDeprecated | PID controller internal parameters for NotifyFrame load balancing |
+| NotifyFrameServerLoad | Desired NotifyFrame load on the server. Requests per second |
+| Tele2SmsUsername | Username for Tele2 SMS integration |
+| Tele2SmsPassword | Password for Tele2 SMS integration |
+| Tele2Endpoint | WebService end point for Tele2 SMS integration |
+| UpdateFaqAccessToWorkflowDone | Update of faq access to workflows done by upgrade |
+| UserSignaturesConvertedToHtml | Whether the user signatures have been converted to html text |
+| OracleIndexesUpdated | Oracle indexes have been updated |
+| SpmOnlyPrimaryOnTicketSelection | Which customers to receive mail on request selection shipment(0 = all, 1 = only primary |
+| SpmMsgTicketParserUpdateDone | Parser code updated in eMarketeer Message. Done = 1 |
+| UserOldScreensOnEditTicketDone | User setting for old screens on edit ticket updated from registry setting. Done = 1 |
+| UseFullText | Use full text search functionality when available |
+| HideIntegratedEjSpmBlock | Hide the integrated emarketeer/mailings block flag |
+| SelectCustomerColumns | Define the columns used to select a customer |
+| SelectCompanyColumns | Define the columns used to select a company |
+| SelectTicketColumns | Define the columns used to select a ticket |
+| UpdatedActivateField | Did upgrade nullify ticket.activate field for tickets without postponed status? Yes = 1 |
+| SpmImgDBCopied | Has emarketeer image database been copied to new table structure? |
+| SecurityModelEnabled | Enable extended security model? (Yes = 1) |
+| BlockPanesRenderMode | Block new panes render mode (only render selected pane)? (Yes = 1) |
+| UseMiddleName | Use middle name in GUI? (Yes = 1) |
+| NSConvertedProfiles | Profiles are converted to NS syntax |
+| AllowSentryBypass | Allow sentry to be bypassed? (1 = Explicit in ejScript |
+| CrmGroup | Crm group for users |
+| CrmRoleAdmin | Crm role for admin users |
+| CrmRoleStandard | Crm role for standard users |
+| LastLicenseExpirationCheck | Last time the license expiration time was checked |
+| ReplyTemplateLicenseExpirationWarning | ReplyTemplateLicenseExpirationWarning |
+| CrmRoleCustomer | Crm role for customers |
+| SystemNSKey | NS ticket for system user |
+| AnonNSKey | NS ticket for anon system user |
+| DBSchemaDirty | If the DB schema is dirty - Netserver needs restart |
+| NSGetKeyPath | The file path to the program which performs AD authentication |
+| EmarketeerNewLinkGraceDate | Grace datetime for allowed use of older emarketeer link format |
+| CustomNotifyEnabled | Has custom notify been enabled for users? (Yes = 1) |
+| ConverterDone | If convert to seven is done, the 1, else 0 |
+| NetServerKeepAlive | NetServer keep-alive every x seconds inside CRM |
+| TimeZoneForNetServer | Time zone for NetServer calls |
+| UseExtension | The file extension used in CS |
+| CustomerEnableFAQAjax | Enable FAQ Search based on AJAX |
+| UseAttachmentFolders | Use folders for attachments, 10000 in each folder, folders named folder0, folder1.. (Yes = 1) |
+| DoNotChangeSMRoles | Do not change roles in SuperOffice Sales&Marketing |
+| ShowAvatarsInCustomerCentre | Enable avatars/profile images in Customer Centre |
+| SearchEngineFilters |  |
+| UseNetServerSms | Set this to 1 to use NetServer as transporter for SMS |
+| NetServerSmsProvider | Name of choosen SMS provider using NetServer API |
+| NsPluginSender | Netserver plugin sender |
+| SetupFCGI | Setup has asked for setting up FastCGI |
+| UseFCGIImpersonation | Use Impersonation for FastCGI |
+| SoapUseExtension | The file extension used by SOAP executables |
+| UseAutoSuppressHeader | Understand and send the MS Exchange header X-Auto-Response-Suppress |
+| ExampleBounceFilterAdded | Has the example bounce e-mail filter been added? (Yes = 1) |
+| SLinkCleanUpDone | Clean up in table s_link is done? (Yes = 1) |
+| IncomingSmsBox | Sms box (main_in_filter) for incoming sms |
+| AddedLegalHtmlCodeInUpgrade | Added new legal HtmlCode in upgrade |
+| DefaultEditorContent | Default editor content, for setting font or other styling |
+| UseBrowserSpellCheck | Whether to use the spell checker in the browser (Yes = 1) |
+| UseCalltoOnPhoneLinks | Use callTo functionality on phone numbers for companies and contacts (Yes = 1) |
+| ShowSubmitSpinner | Show spinner when submitting forms |
+| AccessLicensePageWithoutLogin | Access license page without login (Yes = 1) |
+| HideExportButton | Hide Export button from grids (Hide = 1) |
+| QueueTicketStatuses | Ids of ticket statuses that are queues, as a commaseparated list |
+| ImageResizerExecutable | ImageResizer executable |
+| CleanupLinefeedInNSMail | Cleanup single Linefeeds when sending Emails through Netserver |
+| CheckHtmlValidityInSOEditor | Check HTML validity when editing messages in SOEditor |
+| UpgradeCSParserConverted | Whether upgrade has converted cs:parser to [[ |
+| DefaultEditorBodyFont | Default font style in &lt;body&gt; tag for CKEditor |
+| CustomCacheBustingParameter | String that is added to all included CSS and javascript files for cache busting |
+| UseSha1OnLinks | eMarketing links with id higher than this should use Sha1 encryption |
+| UpgradeRolesConverted | Status for upgrading ejRoles to SO common roles |
+| DeleteInboxDays | The number of days before inbox backups are deleted |
+| UserGroupsConverted | Are the user groups converted to 7.5 (Yes = 1) |
+| UserAgentIsMobile | Detect mobile devices using the HTTP_USER_AGENT variable |
+| UserAgentIsTablet | Detect tablet devices using the HTTP_USER_AGENT variable |
+| DefaultStatusWhenTakingOwnership | Default status when taking ownership of a ticket |
+| DisableUnauthenticatedCreationInCustomerCentre | Disable unauthenticated creation of new customers and requests in the customer centre |
+| RegisterCustomerConfirmEmail | Require a confirmed email address before you can register new customers |
+| ReplyTemplateCustomerConfirmEmail | ReplyTemplate for customer confirm email |
+| ReplyToAllOnlyLatestExternalMessage | Reply to all button only includes recipients related to last external message |
+| LastCleanedExpiredNotify | Time of last removal of expired notify entries |
+| eMarketingEditorInNewWindow | Open the eMarketing Editor in new window |
+| FacebookCallbackKey | Key for verifying requests to the Facebook callback URL |
+| MaxRowsForCharts | The maximum number of estimated row we accept for a chart |
+| SpmDefaultMailingRate | This is the default mails pr minutes for the mailing module |
+| SpmConcurrentSMTPThreads | This is the number of SMTP threads used when sending eMarketing |
+| SpmHideNewMessageOption | Hide option to create new request in mailings |
+| SpmTimeToRestartSenders | Seconds before restarting emarketing senders |
+| ShowOldReportsMenu | Enable to show the old reports menu item under stats |
+| EmailSendingRetryLimit | When email sending fails, retry only this many times |
+| ThumbnailsIsDefaultMode | If true (1; then thumbnails is the default mode in Mailings |
+| UsageStatsWinNextRun | Next local run time for Windows usage stats |
+| UsageStatsWebNextRun | Next local run time for Web/CS/Pocket usage stats |
+| UsageStatsDataAddNextRun | Next local run time for data-addition usage stats |
+| UsageStatsTableSizeNextRun | Next local run time for table-size usage stats |
+| UserSyncResyncNextRun | Next local run time for resyncing user information |
+| ForceIEEdgeMode | Force IE to run in Edge mode using Meta header |
+| CSPHeader | Content Policy Provider string |
+| NotifyTimeOfDayForReport | Time of day for open requests report |
+| EmailImplementation | Which email implementation to use. 2 = old email implementation |
+| CurlMailTransferTimeout | How many seconds do we allow for curl mail timeout |
+| CurlDisableStartTls | Disable the use of STARTTLS for Curl |
+| ReplyTemplatePrintTicket | Reply template for printing tickets |
+| DoNotUseCompanyCountry | Do not use company country for new persons |
+| MaxGridRows | Max number of rows returned in grids |
+| DoNotAllowMultipleLogins | Log out old sessions when logging into new sessions, |
+| NsPluginConfig | Config values for current netserver sms plugin |
+| ReplyTemplateCustomerChatLog | ReplyTemplate for customer chat log |
+| MailgunIncludeOutOfOffice | Whether mailgun route should include out-of-office replies |
+| TimeKeyTTL | How many 10-minute intervals should customer centre links live |
+| DefaultTrackAllLinks | Default value for 'Track all links' checkbox in new mailing |
+| AddedOptionsFcgi | Added OPTIONS verb to FastCGI handlers |
+| MailgunRewriteSenderHeader | Add X-Mailgun-Rewrite-Sender-Header: false to email headers |
+| OptimizedCustomerCenterListTickets | Enable optimized list tickets in Customer Center for improved performance |
+| QuickReplyMode | Set quick reply mode. 0=normal, 1=submit on ok, 2=removed |
+| ForceImmediateFileLogging | Force immediate logging to file(more overhead) |
+| TemporaryKeyTTL | Time to live (in minutes) for temporary keys |
+| TemporaryKeyHardDeleteDelay | Time (in days) past expiration before hard delete of temporary keys |
+| ReplyTemplateNewLink | ReplyTemplate for sending out new links |
+| UseLegacyHtmlConverter | If 2, then use legacy htmlConverter for html to plain conversion |
+| ClipMessagesLength | Clip ticket messages at this length when showing them |
+| StrictGDRPMode | Enable strict GDPR mode for mailings |
+| ImportMailCreateUnknownPersons | ImportMail: create new persons for unknown email addresses |
+| ChatCheckForIdleSessions | Chat: check for idle sessions (no fetch from customer side) |
+| ImportmailCheckInvalidUTF8 | ImportMail: check for invalid UTF-8 and fallback to ISO-8859-1 |
+| RecipientControlAdvancedSearch | Recipient component searches each word and company name |
+| UseCookieInCustomerCenter | Use cookies for login in customer center |
+| SandboxTicketMessages | Use sandbox for viewing ticket messages |
+| MailingsUseEnvelopeFrom | Use from address as envelope-from for mailings |
+| MovedSystemScriptsToScreenChooser | Have we moved system scripts to screen choosers? |
+| FastPersonRecipientSearch | Faster recipient/person search, no email search |
+| SanitizeMailingsHtml | Sanitize html used in mailings |
+| KeepExistingCustomerCenterTemplatesOnDisk | Keep existing customer center templates on disk |
+| SentimentCalculationTimeframe | Calculate sentiment for messages less than X minutes old |
+| ComponentMaxWidth | Maximum width of various UI components in forms |
+| ReplyToPrimaryEmail | Reply to customers primary email, not the one the ticket originated from |
+| TicketLogSystem | Which ticket log system we are using |
+| AllowedMailingLinksDomains | Comma separated strings with domains that should be allowed when checking hash on mailing links |
+| CCTAddMessage | Customer Center Template |
+| CCTCanceled | Customer Center Template |
+| CCTChangeCust | Customer Center Template |
+| CCTConfirmCustomer | Customer Center Template |
+| CCTDoneConfirmCustomer | Customer Center Template |
+| CCTDoneRegister | Customer Center Template |
+| CCTEMarketeerSimpleMessage | Customer Center Template |
+| CCTFramework | Customer Center Template |
+| CCTListTicket | Customer Center Template |
+| CCTListTickets | Customer Center Template |
+| CCTLoggedIn | Customer Center Template |
+| CCTLoggedOut | Customer Center Template |
+| CCTLogin | Customer Center Template |
+| CCTNewTicket | Customer Center Template |
+| CCTNoAccess | Customer Center Template |
+| CCTPasswordSent | Customer Center Template |
+| CCTRegisterCust | Customer Center Template |
+| CCTSendPassword | Customer Center Template |
+| CCTSubscription | Customer Center Template |
+| CCTTicketPosted | Customer Center Template |
+| CCTViewKBCategory | Customer Center Template |
+| CCTViewKBEntry | Customer Center Template |
+| CCTViewKBSearch | Customer Center Template |
+| CCTWelcome | Customer Center Template |
+| CCTUpdateSubscriptions |  |
+| CCTUpdateConsent |  |

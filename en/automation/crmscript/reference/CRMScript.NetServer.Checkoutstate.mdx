@@ -1,0 +1,30 @@
+﻿---
+uid: crmscript.netserver.checkoutstate
+title: Enum CheckoutState
+description: "Enum listing the possible checkout states of a document, as seen from outside the document plugin"
+keywords: CRMScript, CheckoutState, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum CheckoutState
+
+Enum listing the possible checkout states of a document, as seen from outside the document plugin
+
+## Syntax
+
+```crmscript
+CheckoutState
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| NotCheckedOut | Document is not checked out |
+| CheckedOutOwn | Document is checked out, to the user making the query |
+| CheckedOutOther | Document is checked out, to a user different from the one making the query |
+| LockingNotSupported | Locking is not supported or selected for this document. The document is always 'writeable' in the sense of not being protected by any locks. The document may still be read-only due to Sentry constraints. |

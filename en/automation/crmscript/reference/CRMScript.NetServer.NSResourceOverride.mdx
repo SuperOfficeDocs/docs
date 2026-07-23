@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nsresourceoverride
+title: NSResourceOverride
+description: "The resource entity contains resource information."
+keywords: CRMScript, NSResourceOverride, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSResourceOverride
+
+The resource entity contains resource information.
+
+## Constructors
+
+### NSResourceOverride()
+
+```crmscript
+NSResourceOverride
+```
+
+Initializes a new instance of the NSResourceOverride class.
+
+## Methods
+
+## GetCulture()
+
+```crmscript
+String GetCulture()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - .NET-style culture code, such as NB-NO or EN-Uk.
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+String culture = thing.GetCulture();
+```
+
+## GetIsActive()
+
+```crmscript
+Bool GetIsActive()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this override active.
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+Bool isActive = thing.GetIsActive();
+```
+
+## GetResourceName()
+
+```crmscript
+String GetResourceName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the resource, without any brackets or braces. For example, SR_CONTACt.
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+String resourceName = thing.GetResourceName();
+```
+
+## GetResourceValue()
+
+```crmscript
+String GetResourceValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the resource in the given culture.
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+String resourceValue = thing.GetResourceValue();
+```
+
+## SetCulture(String)
+
+```crmscript
+Void SetCulture(String culture)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+String culture;
+thing.SetCulture(culture);
+```
+
+## SetIsActive(Bool)
+
+```crmscript
+Void SetIsActive(Bool isActive)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+Bool isActive;
+thing.SetIsActive(isActive);
+```
+
+## SetResourceName(String)
+
+```crmscript
+Void SetResourceName(String resourceName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+String resourceName;
+thing.SetResourceName(resourceName);
+```
+
+## SetResourceValue(String)
+
+```crmscript
+Void SetResourceValue(String resourceValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceOverride thing;
+String resourceValue;
+thing.SetResourceValue(resourceValue);
+```

@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.batchtaskstate
+title: Enum BatchTaskState
+description: ""
+keywords: CRMScript, BatchTaskState, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum BatchTaskState
+
+## Syntax
+
+```crmscript
+BatchTaskState
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown state of the task. |
+| New | The task is new, but not assigned or run by any party. |
+| Aquired | The task has been aquired by an instance that wants to execute the task, but has not been started. |
+| Started | The task is executing. |
+| Succeeded | Executing the task has completed successfully. |
+| Failed | Executing the task has halted and the task failed. |
+| SucceededManualCleanup | Executing the task has completed successfully, and related data will be cleaned up by the responsible code. |
+| All | Special type. |

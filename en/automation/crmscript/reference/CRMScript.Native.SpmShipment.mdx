@@ -1,0 +1,181 @@
+﻿---
+uid: crmscript.native.spmshipment
+title: SpmShipment
+description: "Denotes a shipment in the eMarketeer module. A SpmShipment object will be responsible for the actual shipment. This object needs a SpmStaticList and a SpmMessage object as input."
+keywords: CRMScript, SpmShipment, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# SpmShipment
+
+Denotes a shipment in the eMarketeer module. A SpmShipment object will be responsible for the actual shipment. This object needs a SpmStaticList and a SpmMessage object as input.
+
+## Constructors
+
+### SpmShipment()
+
+```crmscript
+SpmShipment
+```
+
+Initializes a new instance of the SpmShipment class.
+
+## Methods
+
+## addList(Integer)
+
+Adds a list of recipients to the shipment.
+
+```crmscript
+Void addList(Integer list)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can add more than one list. If two or more of these lists contains the same address, only one email will be sent to this recipient. The lists can be of either dynamic or static types.
+</Note>
+
+## addListCRMProject(Integer)
+
+Adds a CRM list of project members to shipment.
+
+```crmscript
+Void addListCRMProject(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addListCRMSelection(Integer)
+
+Adds a CRM selection to shipment.
+
+```crmscript
+Void addListCRMSelection(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addListSelection(Integer)
+
+Adds a selection list to shipment.
+
+```crmscript
+Void addListSelection(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addListTicketSelection(Integer)
+
+Adds a ticket selection list to shipment.
+
+```crmscript
+Void addListTicketSelection(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## save()
+
+Saves the SpmShipment object.
+
+```crmscript
+save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the SpmShipment object.
+
+<Note>
+Warning: this will activate the shipment and it will be executed at the indicated start date.
+</Note>
+
+## setDescription(String)
+
+Sets the descriptive text of the SpmShipment.
+
+```crmscript
+Void setDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+It is not used in the outgoing email, but will be visible when listed in Service.
+</Note>
+
+## setFolderId(Integer)
+
+Sets the folder that this SpmShipment will be stored in.
+
+```crmscript
+Void setFolderId(Integer folderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If you specify a folder ID that does not exist, the shipment will not be visible through Service.
+</Note>
+
+## setFrom(String)
+
+Sets the from address of the outgoing email.
+
+```crmscript
+Void setFrom(String from)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This should be an email address that is imported by Service unless you have other reasons to do so.
+</Note>
+
+## setMessage(Integer)
+
+Sets the ID of the SpmMessage object that will be used for the shipment.
+
+```crmscript
+Void setMessage(Integer messageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You must specify this for a shipment to be valid.
+</Note>
+
+## setSendRate(Integer)
+
+Sets the rate of outgoing emails per minute for this shipment.
+
+```crmscript
+Void setSendRate(Integer sendRate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Required for a shipment! If you specify a value larger than Service actually can handle, it will send at full speed.
+
+Warning: this can lower performance of both eJournal and your mail server if set too high.
+</Note>
+
+## setStartDate(DateTime)
+
+Sets the date and time when the shipment will be started.
+
+```crmscript
+Void setStartDate(DateTime start)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If you specify a past date the shipment will be started immediately.
+</Note>

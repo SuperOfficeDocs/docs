@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nsproductfamily
+title: NSProductFamily
+description: "The built-in product family list. Used by the SuperOffice Quote Connector to categorize products."
+keywords: CRMScript, NSProductFamily, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProductFamily
+
+The built-in product family list. Used by the SuperOffice Quote Connector to categorize products.
+
+## Constructors
+
+### NSProductFamily()
+
+```crmscript
+NSProductFamily
+```
+
+Initializes a new instance of the NSProductFamily class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSProductFamily.
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSProductFamily Id.
+
+**Example:**
+
+```crmscript
+NSProductFamily thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSProductFamily list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProductFamily tooltip description.
+
+**Example:**
+
+```crmscript
+NSProductFamily thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSProductFamily.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProductFamily name.
+
+**Example:**
+
+```crmscript
+NSProductFamily thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSProductFamily
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductFamily thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSProductFamily list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductFamily thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSProductFamily item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductFamily thing;
+thing.SetValue("frotz");
+```

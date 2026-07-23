@@ -1,0 +1,969 @@
+﻿---
+uid: crmscript.netserver.nsprojectentity
+title: NSProjectEntity
+description: "The Project Service. The service implements all services working with the Project object."
+keywords: CRMScript, NSProjectEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectEntity
+
+The Project Service. The service implements all services working with the Project object.
+
+## Constructors
+
+### NSProjectEntity()
+
+```crmscript
+NSProjectEntity
+```
+
+Initializes a new instance of the NSProjectEntity class.
+
+## Methods
+
+## GetActiveErpLinks()
+
+```crmscript
+Integer GetActiveErpLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer activeErpLinks = thing.GetActiveErpLinks();
+```
+
+## GetActiveLinks()
+
+```crmscript
+Integer GetActiveLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of active links to documents, other appointments, and such.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer activeLinks = thing.GetActiveLinks();
+```
+
+## GetActiveStatusMonitorId()
+
+```crmscript
+Integer GetActiveStatusMonitorId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Active status monitor identity with the lowest rank for project.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer activeStatusMonitorId = thing.GetActiveStatusMonitorId();
+```
+
+## GetAssociate()
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that created the project.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSAssociate associate = thing.GetAssociate();
+```
+
+## GetCompleted()
+
+```crmscript
+Bool GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Done (0=false, 1=true); implies changes in which fields are shown in GUI, as well as which fields can be updated.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Bool completed = thing.GetCompleted();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that created the project.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered date.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on a ProjectEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetEndDate()
+
+```crmscript
+DateTime GetEndDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Planned end date for project, inherited from type and later editable.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime endDate = thing.GetEndDate();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on ProjectEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetHasImage()
+
+```crmscript
+Bool GetHasImage()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the project has an image. (This is the image that is displayed in the CRM client).
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Bool hasImage = thing.GetHasImage();
+```
+
+## GetImageDescription()
+
+```crmscript
+String GetImageDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the project image if it exists. (This is the image that is displayed in the CRM client).
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String imageDescription = thing.GetImageDescription();
+```
+
+## GetIsPublished()
+
+```crmscript
+Bool GetIsPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this ProjectEntity be published and visible to strangers?
+
+## GetLinks()
+
+```crmscript
+NSLink[] GetLinks()
+```
+
+**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)[] - All elements linked to the project.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSLink[] links = thing.GetLinks();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Project name.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String name = thing.GetName();
+```
+
+## GetNextMilestoneDate()
+
+```crmscript
+DateTime GetNextMilestoneDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Calculated date, reflects date of closest non-complete future milestone activity.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime nextMilestoneDate = thing.GetNextMilestoneDate();
+```
+
+## GetNmdAppointmentId()
+
+```crmscript
+Integer GetNmdAppointmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of appointment that "caused" the nextMilestoneDate, can be 0
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer nmdAppointmentId = thing.GetNmdAppointmentId();
+```
+
+## GetPostit()
+
+```crmscript
+String GetPostit()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String postit = thing.GetPostit();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetProjectMembers()
+
+```crmscript
+NSProjectMember[] GetProjectMembers()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)[] - The persons that are members of the project.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSProjectMember[] projectMembers = thing.GetProjectMembers();
+```
+
+## GetProjectNumber()
+
+```crmscript
+String GetProjectNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Automatically generated number.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String projectNumber = thing.GetProjectNumber();
+```
+
+## GetProjectStatus()
+
+```crmscript
+NSProjectStatus GetProjectStatus()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectStatus](CRMScript.NetServer.NSProjectStatus) - Project status is a list defined by the database administrator. Different statuses of a project may be "In planning", "Started", "Finished" and so on.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSProjectStatus projectStatus = thing.GetProjectStatus();
+```
+
+## GetProjectType()
+
+```crmscript
+NSProjectType GetProjectType()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectType](CRMScript.NetServer.NSProjectType) - Project type is a list defined by the database admin. For example, 'Large', 'Small', 'Party'...
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSProjectType projectType = thing.GetProjectType();
+```
+
+## GetPublishEventDate()
+
+```crmscript
+DateTime GetPublishEventDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish event date on ProjectEntity.
+
+## GetPublishFrom()
+
+```crmscript
+DateTime GetPublishFrom()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish from date on ProjectEntity.
+
+## GetPublishTo()
+
+```crmscript
+DateTime GetPublishTo()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish to date on ProjectEntity. After this date the event is no longer visible.
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the project.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated date.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetUrls()
+
+```crmscript
+NSEntityElement[] GetUrls()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - The project's internet addresses.
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSEntityElement[] urls = thing.GetUrls();
+```
+
+## GetUserDefinedFields()
+
+Gets the user-defined fields on the ProjectEntity as a map.
+
+```crmscript
+Map GetUserDefinedFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Map fields = thing.GetUserDefinedFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## SetActiveErpLinks(Integer)
+
+```crmscript
+Void SetActiveErpLinks(Integer activeErpLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer activeErpLinks;
+thing.SetActiveErpLinks(activeErpLinks);
+```
+
+## SetActiveLinks(Integer)
+
+```crmscript
+Void SetActiveLinks(Integer activeLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer activeLinks;
+thing.SetActiveLinks(activeLinks);
+```
+
+## SetActiveStatusMonitorId(Integer)
+
+```crmscript
+Void SetActiveStatusMonitorId(Integer activeStatusMonitorId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer activeStatusMonitorId;
+thing.SetActiveStatusMonitorId(activeStatusMonitorId);
+```
+
+## SetAssociate(NSAssociate)
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSAssociate associate;
+thing.SetAssociate(associate);
+```
+
+## SetCompleted(Bool)
+
+```crmscript
+Void SetCompleted(Bool completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Bool completed;
+thing.SetCompleted(completed);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on a ProjectEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+udefs["x_foo"] = "foobar";
+udefs["x_bar"] = "456"; // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetEndDate(DateTime)
+
+```crmscript
+Void SetEndDate(DateTime endDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime endDate;
+thing.SetEndDate(endDate);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on ProjectEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Map extras;
+extras["SuperOffice:1"] = "[I:123]";
+extras["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+extras["custom.progid"] = "foobar";
+thing.SetExtraFields(extras);
+```
+
+## SetHasImage(Bool)
+
+```crmscript
+Void SetHasImage(Bool hasImage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Bool hasImage;
+thing.SetHasImage(hasImage);
+```
+
+## SetImageDescription(String)
+
+```crmscript
+Void SetImageDescription(String imageDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String imageDescription;
+thing.SetImageDescription(imageDescription);
+```
+
+## SetIsPublished(Bool)
+
+Sets the visibility of a ProjectEntity
+
+```crmscript
+Void SetIsPublished(Bool sPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetLinks(NSLink[])
+
+```crmscript
+Void SetLinks(NSLink[] links)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSLink[] links;
+thing.SetLinks(links);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetNextMilestoneDate(DateTime)
+
+```crmscript
+Void SetNextMilestoneDate(DateTime nextMilestoneDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime nextMilestoneDate;
+thing.SetNextMilestoneDate(nextMilestoneDate);
+```
+
+## SetNmdAppointmentId(Integer)
+
+```crmscript
+Void SetNmdAppointmentId(Integer nmdAppointmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer nmdAppointmentId;
+thing.SetNmdAppointmentId(nmdAppointmentId);
+```
+
+## SetPostit(String)
+
+```crmscript
+Void SetPostit(String postIt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String postIt;
+thing.SetPostit(postIt);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetProjectMembers(NSProjectMember[])
+
+```crmscript
+Void SetProjectMembers(NSProjectMember[] projectMembers)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSProjectMember[] projectMembers;
+thing.SetProjectMembers(projectMembers);
+```
+
+## SetProjectNumber(String)
+
+```crmscript
+Void SetProjectNumber(String projectNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+String projectNumber;
+thing.SetProjectNumber(projectNumber);
+```
+
+## SetProjectStatus(NSProjectStatus)
+
+```crmscript
+Void SetProjectStatus(NSProjectStatus projectStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSProjectStatus projectStatus;
+thing.SetProjectStatus(projectStatus);
+```
+
+## SetProjectType(NSProjectType)
+
+```crmscript
+Void SetProjectType(NSProjectType projectType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSProjectType projectType;
+thing.SetProjectType(projectType);
+```
+
+## SetPublishEventDate(DateTime)
+
+```crmscript
+Void SetPublishEventDate(DateTime publishDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishFrom(DateTime)
+
+Sets the publish from date on a ProjectEntity.
+
+```crmscript
+Void SetPublishFrom(DateTime publishFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishTo(DateTime)
+
+Sets the publish to date on ProjectEntity.
+
+```crmscript
+Void SetPublishTo(DateTime publishTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetUrls(NSEntityElement[])
+
+```crmscript
+Void SetUrls(NSEntityElement[] urls)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+NSEntityElement[] urls;
+thing.SetUrls(urls);
+```
+
+## SetUserDefinedFields(Map)
+
+Sets the user-defined fields on the ProjectEntity as a map.
+
+```crmscript
+Void SetUserDefinedFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+thing.SetUserDefinedFields(udefs);
+```

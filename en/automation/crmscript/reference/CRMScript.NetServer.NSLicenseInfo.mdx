@@ -1,0 +1,625 @@
+﻿---
+uid: crmscript.netserver.nslicenseinfo
+title: NSLicenseInfo
+description: "Represents all licenses for this owner at this site."
+keywords: CRMScript, NSLicenseInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSLicenseInfo
+
+Represents all licenses for this owner at this site.
+
+## Constructors
+
+### NSLicenseInfo()
+
+```crmscript
+NSLicenseInfo
+```
+
+Initializes a new instance of the NSLicenseInfo class.
+
+## Methods
+
+## GetAdminWarningDate()
+
+```crmscript
+DateTime GetAdminWarningDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When should nagging begin (for instance, during login to SoAdmin).
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime adminWarningDate = thing.GetAdminWarningDate();
+```
+
+## GetCompanyName()
+
+```crmscript
+String GetCompanyName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the database owner company.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String companyName = thing.GetCompanyName();
+```
+
+## GetDeploymentType()
+
+```crmscript
+Integer GetDeploymentType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Type of deployment.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+Integer deploymentType = thing.GetDeploymentType();
+```
+
+## GetExpiryDate()
+
+```crmscript
+DateTime GetExpiryDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Expiration date, 0 = forever.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime expiryDate = thing.GetExpiryDate();
+```
+
+## GetExtraFlags()
+
+```crmscript
+Integer GetExtraFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Unspecified extra flags of license, part of checksum.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+Integer extraFlags = thing.GetExtraFlags();
+```
+
+## GetExtraInfo()
+
+```crmscript
+String GetExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## GetGraceDate()
+
+```crmscript
+DateTime GetGraceDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Real expiration date, when the given module actually stops working.
+
+<Note>
+Modules that normally update data should switch to read-only mode. Modules that only read anyway, should disable themselves in some other way
+</Note>
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime graceDate = thing.GetGraceDate();
+```
+
+## GetLicenseUrl()
+
+```crmscript
+String GetLicenseUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL that will provide keycodes for all modules owned by this owner.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String licenseUrl = thing.GetLicenseUrl();
+```
+
+## GetLicenseVersion()
+
+```crmscript
+String GetLicenseVersion()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL that will provide keycodes for all modules owned by this owner.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String licenseVersion = thing.GetLicenseVersion();
+```
+
+## GetMaintenanceDate()
+
+```crmscript
+DateTime GetMaintenanceDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Expiration date for maintenance. After this date, upgrades should refuse to install.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime maintenanceDate = thing.GetMaintenanceDate();
+```
+
+## GetModuleLicenses()
+
+```crmscript
+NSModuleLicense[] GetModuleLicenses()
+```
+
+**Returns:** [CRMScript.NetServer.NSModuleLicense](CRMScript.NetServer.NSModuleLicense)[] - The module licenses.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+NSModuleLicense[] moduleLicenses = thing.GetModuleLicenses();
+```
+
+## GetNextCheckDate()
+
+```crmscript
+DateTime GetNextCheckDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When should the system next check with the license issuer.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime nextCheckDate = thing.GetNextCheckDate();
+```
+
+## GetOwnerDescription()
+
+```crmscript
+String GetOwnerDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Human-readable description of owner, shown in GUI, default language.
+
+<Note>
+Additional languages can be added to LocaleText, resource type 26
+</Note>
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String ownerDescription = thing.GetOwnerDescription();
+```
+
+## GetOwnerName()
+
+```crmscript
+String GetOwnerName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the module owner, not visible in GUI but used in the code.
+
+<Note>
+OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.
+</Note>
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String ownerName = thing.GetOwnerName();
+```
+
+## GetProductDescription()
+
+```crmscript
+String GetProductDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of type of product.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String productDescription = thing.GetProductDescription();
+```
+
+## GetProductType()
+
+```crmscript
+String GetProductType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Type of product.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String productType = thing.GetProductType();
+```
+
+## GetPublicKey()
+
+```crmscript
+NSSignedPublicKey GetPublicKey()
+```
+
+**Returns:** [CRMScript.NetServer.NSSignedPublicKey](CRMScript.NetServer.NSSignedPublicKey) - The public key used to verify licenses owned by this owner.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+NSSignedPublicKey publicKey = thing.GetPublicKey();
+```
+
+## GetSerialNr()
+
+```crmscript
+String GetSerialNr()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Serial number. For example, 1010000014.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String serialNr = thing.GetSerialNr();
+```
+
+## GetSignature()
+
+```crmscript
+String GetSignature()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Signature of all non-zero-amount moduleLicense rows referring to this owner.
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String signature = thing.GetSignature();
+```
+
+## SetAdminWarningDate(DateTime)
+
+```crmscript
+Void SetAdminWarningDate(DateTime adminWarningDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime adminWarningDate;
+thing.SetAdminWarningDate(adminWarningDate);
+```
+
+## SetCompanyName(String)
+
+```crmscript
+Void SetCompanyName(String companyName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String companyName;
+thing.SetCompanyName(companyName);
+```
+
+## SetDeploymentType(Integer)
+
+```crmscript
+Void SetDeploymentType(Integer deploymentType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+Integer deploymentType;
+thing.SetDeploymentType(deploymentType);
+```
+
+## SetExpiryDate(DateTime)
+
+```crmscript
+Void SetExpiryDate(DateTime expiryDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime expiryDate;
+thing.SetExpiryDate(expiryDate);
+```
+
+## SetExtraFlags(Integer)
+
+```crmscript
+Void SetExtraFlags(Integer extraFlags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+Integer extraFlags;
+thing.SetExtraFlags(extraFlags);
+```
+
+## SetExtraInfo(String)
+
+```crmscript
+Void SetExtraInfo(String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetGraceDate(DateTime)
+
+```crmscript
+Void SetGraceDate(DateTime graceDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Modules that normally update data should switch to read-only mode. Modules that only read anyway, should disable themselves in some other way
+</Note>
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime graceDate;
+thing.SetGraceDate(graceDate);
+```
+
+## SetLicenseUrl(String)
+
+```crmscript
+Void SetLicenseUrl(String licenseUrl)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String licenseUrl;
+thing.SetLicenseUrl(licenseUrl);
+```
+
+## SetLicenseVersion(String)
+
+```crmscript
+Void SetLicenseVersion(String licenseVersion)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String licenseVersion;
+thing.SetLicenseVersion(licenseVersion);
+```
+
+## SetMaintenanceDate(DateTime)
+
+```crmscript
+Void SetMaintenanceDate(DateTime maintenanceDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime maintenanceDate;
+thing.SetMaintenanceDate(maintenanceDate);
+```
+
+## SetModuleLicenses(NSModuleLicense[])
+
+```crmscript
+Void SetModuleLicenses(NSModuleLicense[] moduleLicenses)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+NSModuleLicense[] moduleLicenses;
+thing.SetModuleLicenses(moduleLicenses);
+```
+
+## SetNextCheckDate(DateTime)
+
+```crmscript
+Void SetNextCheckDate(DateTime nextCheckDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+DateTime nextCheckDate;
+thing.SetNextCheckDate(nextCheckDate);
+```
+
+## SetOwnerDescription(String)
+
+```crmscript
+Void SetOwnerDescription(String ownerDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Additional languages can be added to LocaleText, resource type 26
+</Note>
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String ownerDescription;
+thing.SetOwnerDescription(ownerDescription);
+```
+
+## SetOwnerName(String)
+
+```crmscript
+Void SetOwnerName(String ownerName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.
+</Note>
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String ownerName;
+thing.SetOwnerName(ownerName);
+```
+
+## SetProductDescription(String)
+
+```crmscript
+Void SetProductDescription(String productDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String productDescription;
+thing.SetProductDescription(productDescription);
+```
+
+## SetProductType(String)
+
+```crmscript
+Void SetProductType(String productType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String productType;
+thing.SetProductType(productType);
+```
+
+## SetPublicKey(NSSignedPublicKey)
+
+```crmscript
+Void SetPublicKey(NSSignedPublicKey publicKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+NSSignedPublicKey publicKey;
+thing.SetPublicKey(publicKey);
+```
+
+## SetSerialNr(String)
+
+```crmscript
+Void SetSerialNr(String serialNr)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String serialNr;
+thing.SetSerialNr(serialNr);
+```
+
+## SetSignature(String)
+
+```crmscript
+Void SetSignature(String signature)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseInfo thing;
+String signature;
+thing.SetSignature(signature);
+```

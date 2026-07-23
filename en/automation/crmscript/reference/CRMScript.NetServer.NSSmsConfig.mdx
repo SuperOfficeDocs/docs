@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nssmsconfig
+title: NSSmsConfig
+description: "SMS settings for Customer Service SMS providers."
+keywords: CRMScript, NSSmsConfig, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSmsConfig
+
+SMS settings for Customer Service SMS providers.
+
+## Constructors
+
+### NSSmsConfig()
+
+```crmscript
+NSSmsConfig
+```
+
+Initializes a new instance of the NSSmsConfig class.
+
+## Methods
+
+## GetDefaultSmsCountry()
+
+```crmscript
+String GetDefaultSmsCountry()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Phone prefix, will default to the current users HomeCountryId.
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+String defaultSmsCountry = thing.GetDefaultSmsCountry();
+```
+
+## GetNetServerSmsProvider()
+
+```crmscript
+String GetNetServerSmsProvider()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the selected provider, i.e. CM, Compaya SMS (cpsms.dk), Intelecom SMS, Link Mobility SMS, SMS Teknik, or TXTLocal.
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+String netServerSmsProvider = thing.GetNetServerSmsProvider();
+```
+
+## GetNsPluginConfig()
+
+```crmscript
+Map GetNsPluginConfig()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Configuration settings provided by the SMS provider. Typically contains newline-delimited settings such as username and password.
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+Map nsPluginConfig = thing.GetNsPluginConfig();
+```
+
+## GetNsPluginSender()
+
+```crmscript
+String GetNsPluginSender()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The sender of the SMS messages. This text will appear on the recipient's mobile phone.
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+String nsPluginSender = thing.GetNsPluginSender();
+```
+
+## SetDefaultSmsCountry(String)
+
+```crmscript
+Void SetDefaultSmsCountry(String defaultSmsCountry)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+String defaultSmsCountry;
+thing.SetDefaultSmsCountry(defaultSmsCountry);
+```
+
+## SetNetServerSmsProvider(String)
+
+```crmscript
+Void SetNetServerSmsProvider(String netServerSmsProvider)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+String netServerSmsProvider;
+thing.SetNetServerSmsProvider(netServerSmsProvider);
+```
+
+## SetNsPluginConfig(Map)
+
+```crmscript
+Void SetNsPluginConfig(Map nsPluginConfig)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+Map nsPluginConfig;
+thing.SetNsPluginConfig(nsPluginConfig);
+```
+
+## SetNsPluginSender(String)
+
+```crmscript
+Void SetNsPluginSender(String nsPluginSender)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSmsConfig thing;
+String nsPluginSender;
+thing.SetNsPluginSender(nsPluginSender);
+```

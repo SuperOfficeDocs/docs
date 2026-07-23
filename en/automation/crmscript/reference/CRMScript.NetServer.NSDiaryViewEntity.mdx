@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nsdiaryviewentity
+title: NSDiaryViewEntity
+description: "The DiaryView Service. The service implements all services working with the DiaryView object."
+keywords: CRMScript, NSDiaryViewEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDiaryViewEntity
+
+The DiaryView Service. The service implements all services working with the DiaryView object.
+
+## Constructors
+
+### NSDiaryViewEntity()
+
+```crmscript
+NSDiaryViewEntity
+```
+
+Initializes a new instance of the NSDiaryViewEntity class.
+
+## Methods
+
+## GetAssociateList()
+
+```crmscript
+NSSelectableMDOListItem[] GetAssociateList()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+NSSelectableMDOListItem[] associateList = thing.GetAssociateList();
+```
+
+## GetAssocId()
+
+```crmscript
+Integer GetAssocId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Owning associate ID for the DiaryView.
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer assocId = thing.GetAssocId();
+```
+
+## GetDiaryViewId()
+
+```crmscript
+Integer GetDiaryViewId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the DiaryView.
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer diaryViewId = thing.GetDiaryViewId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the DiaryView.
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - DiaryView rank.
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip/description of the DiaryView.
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetTzLocationId()
+
+```crmscript
+Integer GetTzLocationId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default timezone location for this view.
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer tzLocationId = thing.GetTzLocationId();
+```
+
+## GetVisibleColumns()
+
+```crmscript
+Integer GetVisibleColumns()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of columns that should be visible simultaneously.
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer visibleColumns = thing.GetVisibleColumns();
+```
+
+## SetAssociateList(NSSelectableMDOListItem[])
+
+```crmscript
+Void SetAssociateList(NSSelectableMDOListItem[] associateList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+NSSelectableMDOListItem[] associateList;
+thing.SetAssociateList(associateList);
+```
+
+## SetAssocId(Integer)
+
+```crmscript
+Void SetAssocId(Integer assocId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer assocId;
+thing.SetAssocId(assocId);
+```
+
+## SetDiaryViewId(Integer)
+
+```crmscript
+Void SetDiaryViewId(Integer diaryViewId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer diaryViewId;
+thing.SetDiaryViewId(diaryViewId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetTzLocationId(Integer)
+
+```crmscript
+Void SetTzLocationId(Integer tzLocationId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer tzLocationId;
+thing.SetTzLocationId(tzLocationId);
+```
+
+## SetVisibleColumns(Integer)
+
+```crmscript
+Void SetVisibleColumns(Integer visibleColumns)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiaryViewEntity thing;
+Integer visibleColumns;
+thing.SetVisibleColumns(visibleColumns);
+```

@@ -1,0 +1,180 @@
+﻿---
+uid: crmscript.netserver.nstimezoneagent
+title: NSTimeZoneAgent
+description: "TimeZone maintenance."
+keywords: CRMScript, NSTimeZoneAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTimeZoneAgent
+
+TimeZone maintenance.
+
+## Constructors
+
+### NSTimeZoneAgent()
+
+```crmscript
+NSTimeZoneAgent
+```
+
+TimeZone maintenance.
+
+## Methods
+
+## CheckNewTimeZoneDataAvailable()
+
+Checks to see if new timezone data is available
+
+```crmscript
+Bool CheckNewTimeZoneDataAvailable()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSTimeZoneAgent agent;
+Bool res = agent.CheckNewTimeZoneDataAvailable();
+```
+
+## DeleteTimeZones()
+
+Deletes all time zone data (locations and rules) from the database
+
+```crmscript
+Void DeleteTimeZones()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetBaseTimeZoneId()
+
+Gets the base timezone ID.
+
+```crmscript
+Integer GetBaseTimeZoneId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTimeZoneAgent agent;
+Integer res = agent.GetBaseTimeZoneId();
+```
+
+## GetDefaultTimeZonePreference()
+
+Returns the ID of the default timezone preference with deflevel system wide
+
+```crmscript
+Integer GetDefaultTimeZonePreference()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTimeZoneAgent agent;
+Integer res = agent.GetDefaultTimeZonePreference();
+```
+
+## InitializeTimeZoneData()
+
+Initializes the NSTimeZoneData
+
+```crmscript
+NSTimeZoneData[] InitializeTimeZoneData()
+```
+
+**Returns:** [CRMScript.NetServer.NSTimeZoneData](CRMScript.NetServer.NSTimeZoneData)[]
+
+## SetActiveTimeZoneRow(Integer,Bool)
+
+Sets active state of singe row in the TZLocation table
+
+```crmscript
+Void SetActiveTimeZoneRow(Integer id, Bool active)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetActiveTimeZonesByFilter(String,Bool)
+
+Toggles active state of a single row in the TZLocation table
+
+```crmscript
+Void SetActiveTimeZonesByFilter(String filter, Bool active)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetBaseTimeZoneId(Integer)
+
+Sets the base timezone ID.
+
+```crmscript
+Bool SetBaseTimeZoneId(Integer timezoneId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSTimeZoneAgent agent;
+Integer timezoneId;
+Bool res = agent.SetBaseTimeZoneId(timezoneId);
+```
+
+## TimeOfLastTimeZoneUpdate()
+
+Gets the time time zone data was last updated
+
+```crmscript
+DateTime TimeOfLastTimeZoneUpdate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTimeZoneAgent agent;
+DateTime res = agent.TimeOfLastTimeZoneUpdate();
+```
+
+## ToggleActiveTimeZoneRow(Integer)
+
+Toggles active state of a single row in the TZLocation table
+
+```crmscript
+Void ToggleActiveTimeZoneRow(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## UpdateTimeZoneData()
+
+Retrieves time zone data from the SuperOffice server and update TimeZone data in the database
+
+```crmscript
+Bool UpdateTimeZoneData()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSTimeZoneAgent agent;
+Bool res = agent.UpdateTimeZoneData();
+```

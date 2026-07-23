@@ -1,0 +1,687 @@
+﻿---
+uid: crmscript.netserver.nsconfigurationagent
+title: NSConfigurationAgent
+description: "User interface configuration* XML and other elements such as inter-client URLs."
+keywords: CRMScript, NSConfigurationAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSConfigurationAgent
+
+User interface configuration* XML and other elements such as inter-client URLs.
+
+## Constructors
+
+### NSConfigurationAgent()
+
+```crmscript
+NSConfigurationAgent
+```
+
+Initializes a new instance of the NSConfigurationAgent class.
+
+## Methods
+
+## ClearConfigurationCache(String,String,Bool)
+
+Configuration XML may be expensive to build and parse, and are therefore cached to the database.
+
+Caching is per application/instance/associate, and can be turned off through the config file. If caching is on, and the configuration is changed, it is necessary to clear the cached configurations from the database, through this call.
+
+```crmscript
+Void ClearConfigurationCache(String application, String instance, Bool forAllAssociates)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Changes to the externalapplication table require cache invalidation. SoAdmin will do so automatically.
+</Note>
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String application;
+String instance;
+Bool forAllAssociates;
+agent.ClearConfigurationCache(application, instance, forAllAssociates);
+```
+
+## CreateDefaultDiaryViewEntity()
+
+Sets default values into a new NSDiaryViewEntity.
+
+```crmscript
+NSDiaryViewEntity CreateDefaultDiaryViewEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSDiaryViewEntity](CRMScript.NetServer.NSDiaryViewEntity) - New entity with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSDiaryViewEntity thing = agent.CreateDefaultDiaryViewEntity();
+thing = agent.SaveDiaryViewEntity(thing);
+```
+
+## CreateDefaultSystemEventEntity()
+
+Sets default values into a new NSSystemEventEntity.
+
+```crmscript
+NSSystemEventEntity CreateDefaultSystemEventEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSSystemEventEntity](CRMScript.NetServer.NSSystemEventEntity) - New entity with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
+</Note>
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSSystemEventEntity thing = agent.CreateDefaultSystemEventEntity();
+thing = agent.SaveSystemEventEntity(thing);
+```
+
+## DeleteDiaryViewEntity(Integer)
+
+Deletes the NSDiaryViewEntity
+
+```crmscript
+Void DeleteDiaryViewEntity(Integer diaryViewEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+agent.DeleteDiaryViewEntity(123);
+```
+
+## DeleteSystemEventEntity(Integer)
+
+Deletes the NSSystemEventEntity
+
+```crmscript
+Void DeleteSystemEventEntity(Integer systemEventEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+agent.DeleteSystemEventEntity(123);
+```
+
+## DeleteWindowPosSize(Integer)
+
+Deletes a window and dialog position and size setting.
+
+```crmscript
+Void DeleteWindowPosSize(Integer windowPosSizeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ExistsSystemEvent(String)
+
+```crmscript
+Bool ExistsSystemEvent(String key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is there a system event with the given key?
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String key;
+Bool res = agent.ExistsSystemEvent(key);
+```
+
+## GetAnyConfiguration(String,String,String,String)
+
+Gets one defined configuration fragment, with full reference resolution and parsing applied.
+
+```crmscript
+String GetAnyConfiguration(String application, String instance, String item, String type)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A configuration fragment, with full reference resolution and parsing applied.
+
+<Note>
+This is essentially the same service as the GetPageConfiguration, except that this service is not locked to objects of type Page.
+</Note>
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String application;
+String instance;
+String item;
+String type;
+String res = agent.GetAnyConfiguration(application, instance, item, type);
+```
+
+## GetApplicationConfiguration(String,String)
+
+Returns the application configuration.
+
+```crmscript
+String GetApplicationConfiguration(String application, String instance)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - XML structure containing the application configuration. A list of pages, with information about the name, main panel and preference mappings of each page.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String application;
+String instance;
+String res = agent.GetApplicationConfiguration(application, instance);
+```
+
+## GetCRMUrl(String,String,Bool)
+
+Returns a valid URL based in the soprotocol provided
+
+```crmscript
+String GetCRMUrl(String soProtocol, String currents, Bool frameless)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URl.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String soProtocol;
+String currents;
+Bool frameless;
+String res = agent.GetCRMUrl(soProtocol, currents, frameless);
+```
+
+## GetCSAuthUrl(String,String,String,String)
+
+Generates a URL to the emarketing module
+
+```crmscript
+String GetCSAuthUrl(String language, String programName, String action, String extraParameters)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A valid Service URL composed of the give parameters.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String language;
+String programName;
+String action;
+String extraParameters;
+String res = agent.GetCSAuthUrl(language, programName, action, extraParameters);
+```
+
+## GetCsCgiUrlInternal()
+
+Gets the host name for Service
+
+```crmscript
+String GetCsCgiUrlInternal()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The host name for where Service is installed.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String res = agent.GetCsCgiUrlInternal();
+```
+
+## GetCsProgramUrl(String,String,String,String)
+
+Converts a module name into a Service URL.
+
+```crmscript
+String GetCsProgramUrl(String language, String programName, String action, String extraParameters)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A valid Service URL composed of the give parameters.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String language;
+String programName;
+String action;
+String extraParameters;
+String res = agent.GetCsProgramUrl(language, programName, action, extraParameters);
+```
+
+## GetCSRegistryValue(Integer)
+
+Gets a value from the Registry table.
+
+```crmscript
+String GetCSRegistryValue(Integer entry)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the specified Registry entry.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+Integer entry;
+String res = agent.GetCSRegistryValue(entry);
+```
+
+## GetCSWwwFolder()
+
+Gets the www folder for Service
+
+```crmscript
+String GetCSWwwFolder()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The www folder for Service.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String res = agent.GetCSWwwFolder();
+```
+
+## GetCustomerUrl()
+
+Gets the URL for the external access to the customer center
+
+```crmscript
+String GetCustomerUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL to the customer center, without any actions.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String res = agent.GetCustomerUrl();
+```
+
+## GetDiaryViewEntity(Integer)
+
+Gets an NSDiaryViewEntity object.
+
+```crmscript
+NSDiaryViewEntity GetDiaryViewEntity(Integer diaryViewEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDiaryViewEntity](CRMScript.NetServer.NSDiaryViewEntity)
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSDiaryViewEntity thing = agent.GetDiaryViewEntity(123);
+```
+
+## GetEmailNumberOfDays()
+
+```crmscript
+Integer GetEmailNumberOfDays()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of days in the past for which we are fetching email.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+Integer res = agent.GetEmailNumberOfDays();
+```
+
+## GetEMarketingUrl(String)
+
+```crmscript
+String GetEMarketingUrl(String language)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URl.
+
+## GetFilterList(String,String)
+
+Gets the list of filters to be used for processing the configuration data for this application.
+
+```crmscript
+String GetFilterList(String application, String instance)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - XML representing the list of filters and any configuration data they may need.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String application;
+String instance;
+String res = agent.GetFilterList(application, instance);
+```
+
+## GetHelpDispatcherUrl()
+
+Gets the GetHelpDispatcherUrl used by the help system.
+
+```crmscript
+String GetHelpDispatcherUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URL to be used by the help system.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String res = agent.GetHelpDispatcherUrl();
+```
+
+## GetMyWindowPosSizes()
+
+Gets the window and dialog position and size settings belonging to the currently logged-on user.
+
+```crmscript
+NSWindowPosSize[] GetMyWindowPosSizes()
+```
+
+**Returns:** [CRMScript.NetServer.NSWindowPosSize](CRMScript.NetServer.NSWindowPosSize)[] - Array of window and dialog position and size settings.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSWindowPosSize[] res = agent.GetMyWindowPosSizes();
+```
+
+## GetObjectMapping(String,String)
+
+Gets the object mappings (what code objects should be instantiated to handle the entities of the client configuration?)
+
+```crmscript
+String GetObjectMapping(String application, String instance)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - XML containing the object mappings, including assembly and class names.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String application;
+String instance;
+String res = agent.GetObjectMapping(application, instance);
+```
+
+## GetPageConfiguration(String,String,String)
+
+Gets the configuration for one whole web page, including all its panels etc.
+
+```crmscript
+String GetPageConfiguration(String application, String instance, String page)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - XML containing the configuration for the given page, from the page down to the control level.
+
+<Note>
+Totally asynchronous items like menus are not included, but all references are resolved and all special processing is applied.
+</Note>
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String application;
+String instance;
+String page;
+String res = agent.GetPageConfiguration(application, instance, page);
+```
+
+## GetRefreshedPageConfiguration(String,String,String)
+
+Gets the configuration for one whole web page, including all its panels etc.
+
+```crmscript
+String GetRefreshedPageConfiguration(String application, String instance, String page)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - XML containing the configuration for the given page, from the page down to the control level.
+
+<Note>
+Totally asynchronous items like menus are not included, but all references are resolved and all special processing is applied. Does not use cache for fetching, but updates the cache with refreshed configuration.
+</Note>
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String application;
+String instance;
+String page;
+String res = agent.GetRefreshedPageConfiguration(application, instance, page);
+```
+
+## GetSystemEventEntity(Integer)
+
+Gets an NSSystemEventEntity object.
+
+```crmscript
+NSSystemEventEntity GetSystemEventEntity(Integer systemEventEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSystemEventEntity](CRMScript.NetServer.NSSystemEventEntity)
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSSystemEventEntity thing = agent.GetSystemEventEntity(123);
+```
+
+## GetWindowPosSize(Integer)
+
+Gets an NSWindowPosSize object.
+
+```crmscript
+NSWindowPosSize GetWindowPosSize(Integer windowPosSizeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWindowPosSize](CRMScript.NetServer.NSWindowPosSize)
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSWindowPosSize thing = agent.GetWindowPosSize(123);
+```
+
+## GetWindowPosSizeList(Integer[])
+
+Retrieves a list of NSWindowPosSize objects.
+
+```crmscript
+NSWindowPosSize[] GetWindowPosSizeList(Integer[])
+```
+
+**Returns:** [CRMScript.NetServer.NSWindowPosSize](CRMScript.NetServer.NSWindowPosSize)[] - Array of window and dialog position and size settings.
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSConfigurationAgent agent;
+agent.GetWindowPosSizeList(ids);
+```
+
+## GetWindowPosSizesOnAssociateId(Integer)
+
+Gets the window and dialog position and size settings belonging to the specified associate
+
+```crmscript
+NSWindowPosSize[] GetWindowPosSizesOnAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWindowPosSize](CRMScript.NetServer.NSWindowPosSize)[] - Array of window and dialog position and size settings.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+Integer associateId;
+NSWindowPosSize[] res = agent.GetWindowPosSizesOnAssociateId(associateId);
+```
+
+## GetWindowPosSizesOnPersonId(Integer)
+
+Gets the window and dialog position and size settings belonging to the specified person
+
+```crmscript
+NSWindowPosSize[] GetWindowPosSizesOnPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWindowPosSize](CRMScript.NetServer.NSWindowPosSize)[] - Array of window and dialog position and size settings.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+Integer personId;
+NSWindowPosSize[] res = agent.GetWindowPosSizesOnPersonId(personId);
+```
+
+## GetWwwUrl(String)
+
+Gets the default URL used for the logo, from the [NetServices] PageUrl preferencec, with tags substituted.
+
+```crmscript
+String GetWwwUrl(String client)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URL to be used when clicking the logo.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String client;
+String res = agent.GetWwwUrl(client);
+```
+
+## GetWwwUrlForSMWeb()
+
+Returns the URL used for the logo by the SM.web client. Uses urldispatch.aspx.
+
+```crmscript
+String GetWwwUrlForSMWeb()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Link to urldispatch.aspx tagged with [SOSITEURL]
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+String res = agent.GetWwwUrlForSMWeb();
+```
+
+## SaveDiaryViewEntity(NSDiaryViewEntity)
+
+Updates the existing NSDiaryViewEntity or creates a new NSDiaryViewEntity if the ID parameter is 0.
+
+```crmscript
+NSDiaryViewEntity SaveDiaryViewEntity(NSDiaryViewEntity diaryViewEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSDiaryViewEntity](CRMScript.NetServer.NSDiaryViewEntity) - New or updated DiaryViewEntity.
+
+**Example:**
+
+```crmscript
+NSConfiguration agent;
+NSDiaryViewEntity thing = agent.CreateDefaultDiaryViewEntity();
+thing = agent.SaveDiaryViewEntity(thing);
+```
+
+## SaveSystemEventEntity(NSSystemEventEntity)
+
+Updates the existing NSSystemEventEntity or creates a new NSSystemEventEntity if the id parameter is 0
+
+```crmscript
+NSSystemEventEntity SaveSystemEventEntity(NSSystemEventEntity systemEventEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSSystemEventEntity](CRMScript.NetServer.NSSystemEventEntity) - New or updated SystemEventEntity.
+
+**Example:**
+
+```crmscript
+NSConfiguration  agent;
+NSSystemEventEntity thing = agent.CreateDefaultSystemEventEntity();
+thing = agent.SaveSystemEventEntity(thing);
+```
+
+## SaveWindowPosSize(NSWindowPosSize)
+
+Saves a window and dialog position and size setting.
+
+```crmscript
+NSWindowPosSize SaveWindowPosSize(NSWindowPosSize windowPosSize)
+```
+
+**Returns:** [CRMScript.NetServer.NSWindowPosSize](CRMScript.NetServer.NSWindowPosSize) - The saved item.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSWindowPosSize windowPosSize;
+NSWindowPosSize res = agent.SaveWindowPosSize(windowPosSize);
+```
+
+## SaveWindowPosSizes(NSWindowPosSize[])
+
+Saves a set of window and dialog position and size settings.
+
+```crmscript
+NSWindowPosSize[] SaveWindowPosSizes(NSWindowPosSize[] windowPosSizes)
+```
+
+**Returns:** [CRMScript.NetServer.NSWindowPosSize](CRMScript.NetServer.NSWindowPosSize)[] - The saved items.
+
+**Example:**
+
+```crmscript
+NSConfigurationAgent agent;
+NSWindowPosSize[] windowPosSizes;
+NSWindowPosSize[] res = agent.SaveWindowPosSizes(windowPosSizes);
+```

@@ -1,0 +1,871 @@
+﻿---
+uid: crmscript.netserver.nsprojectagent
+title: NSProjectAgent
+description: "Collection of all services that work with Project data."
+keywords: CRMScript, NSProjectAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectAgent
+
+Collection of all services that work with Project data.
+
+## Constructors
+
+### NSProjectAgent()
+
+```crmscript
+NSProjectAgent
+```
+
+Collection of all services that work with Project data.
+
+## Methods
+
+## AddProjectMembers(Integer,NSProjectMember[])
+
+Adds multiple project members to a project
+
+```crmscript
+Void AddProjectMembers(Integer projectEntityId, NSProjectMember[] projectMembers)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CreateDefaultProjectEntity()
+
+Sets default values into a new NSProjectEntity.
+
+```crmscript
+NSProjectEntity CreateDefaultProjectEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEntity thing = agent.CreateDefaultProjectEntity();
+thing = agent.SaveProjectEntity(thing);
+```
+
+## CreateDefaultProjectEventEntity()
+
+Sets default values into a new NSProjectEventEntity.
+
+```crmscript
+NSProjectEventEntity CreateDefaultProjectEventEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEventEntity thing = agent.CreateDefaultProjectEventEntity();
+thing = agent.SaveProjectEventEntity(thing);
+```
+
+## CreateDefaultProjectMember()
+
+Sets default values into a new NSProjectMember.
+
+```crmscript
+NSProjectMember CreateDefaultProjectMember()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectMember thing = agent.CreateDefaultProjectMember();
+thing = agent.SaveProjectMember(thing);
+```
+
+## CreateNewEntry()
+
+Creates a new project based on external duplicate
+
+```crmscript
+Integer CreateNewEntry(NSDuplicateEntry duplicate)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSDuplicateEntry duplicate;
+Integer res = agent.CreateNewEntry(duplicate);
+```
+
+## DeleteProjectEntity(Integer)
+
+Deletes the NSProjectEntity
+
+```crmscript
+DeleteProjectEntity(Integer projectEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+agent.DeleteProjectEntity(123);
+```
+
+## DeleteProjectEventEntity(Integer)
+
+Deletes the NSProjectEventEntity
+
+```crmscript
+DeleteProjectEventEntity(Integer projectEventEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+agent.DeleteProjectEventEntity(123);
+```
+
+## DeleteProjectEventEntityFromProjectId(Integer)
+
+Deletes a project event based on a project ID. Does not delete the project, but does delete the published and ExternalEvent and AudienceVisibility records.
+
+```crmscript
+Void DeleteProjectEventEntityFromProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer projectId;
+agent.DeleteProjectEventEntityFromProjectId(projectId);
+```
+
+## DeleteProjectMember(Integer)
+
+Deletes the NSProjectMember
+
+```crmscript
+DeleteProjectMember(Integer projectMember)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+agent.DeleteProjectMember(123);
+```
+
+## DeleteProjectMemberByIds(Integer[])
+
+Deletes project-member rows.
+
+```crmscript
+Void DeleteProjectMemberByIds(Integer[] projectMemberIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteProjectMembers(Integer,Integer[])
+
+Deletes the given project members from a project
+
+```crmscript
+Void DeleteProjectMembers(Integer projectEntityId, Integer[] memberIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetDuplicateRules()
+
+Retrieve all available duplicate rules for project
+
+```crmscript
+NSDuplicateRule[] GetDuplicateRules()
+```
+
+**Returns:** [CRMScript.NetServer.NSDuplicateRule](CRMScript.NetServer.NSDuplicateRule)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSDuplicateRule[] res = agent.GetDuplicateRules();
+```
+
+## GetDuplicates(String)
+
+Gets duplicates(exact or similar in the database) based on the name
+
+```crmscript
+NSDuplicateEntry[] GetDuplicates(String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSDuplicateEntry](CRMScript.NetServer.NSDuplicateEntry)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+String name;
+NSDuplicateEntry[] res = agent.GetDuplicates(name);
+```
+
+## GetMyMemberProjects()
+
+Returns projects where an user is project member.
+
+```crmscript
+NSProject[] GetMyMemberProjects()
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProject[] res = agent.GetMyMemberProjects();
+```
+
+## GetMyProjectEvents()
+
+Gets all project events that belongs to the currently logged-on user.
+
+```crmscript
+NSProjectEvent[] GetMyProjectEvents()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)[] - The list of events is filtered by the Audience Visibility restrictions set when the project event is created.
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEvent[] res = agent.GetMyProjectEvents();
+```
+
+## GetMyProjects(Bool)
+
+Returns projects belonging to an associate. If memberProjects is false only the projects where the associate is project responsible is returned, otherwise both the projects where the associate is project responsible and project member is returned.
+
+```crmscript
+NSProject[] GetMyProjects(Bool includeMemberProjects)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Bool includeMemberProjects;
+NSProject[] res = agent.GetMyProjects(includeMemberProjects);
+```
+
+## GetMyPublishedProjects()
+
+Gets published projects from the logged in user.
+
+```crmscript
+NSProject[] GetMyPublishedProjects()
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProject[] res = agent.GetMyPublishedProjects();
+```
+
+## GetNextMilestone(Integer)
+
+```crmscript
+NSAppointment GetNextMilestone(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer projectId;
+NSAppointment res = agent.GetNextMilestone(projectId);
+```
+
+## GetNextProjectStatus(Integer)
+
+```crmscript
+Integer GetNextProjectStatus(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetProject(Integer)
+
+Gets an NSProject object.
+
+```crmscript
+NSProject GetProject(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProject thing = agent.GetProject(123);
+```
+
+## GetProjectEntity(Integer)
+
+Gets an NSProjectEntity object.
+
+```crmscript
+NSProjectEntity GetProjectEntity(Integer projectEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEntity thing = agent.GetProjectEntity(123);
+```
+
+## GetProjectEntityWithoutMembers(Integer)
+
+Get a project entity with no project members. Project members property is always an empty array.
+
+```crmscript
+NSProjectEntity GetProjectEntityWithoutMembers(Integer projectEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEntity thing = agent.GetProjectEntityWithoutMembers(123);
+```
+
+## GetProjectEvent(Integer)
+
+Gets an NSProjectEvent object.
+
+```crmscript
+NSProjectEvent GetProjectEvent(Integer projectEventId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEvent thing = agent.GetProjectEvent(123);
+```
+
+## GetProjectEventEntity(Integer)
+
+Gets an NSProjectEventEntity object.
+
+```crmscript
+NSProjectEventEntity GetProjectEventEntity(Integer projectEventEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEventEntity thing = agent.GetProjectEventEntity(123);
+```
+
+## GetProjectEventEntityFromProjectId(Integer)
+
+Gets an NSProjectEventEntity based on a projectId.
+
+```crmscript
+NSProjectEventEntity GetProjectEventEntityFromProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer projectId;
+NSProjectEventEntity res = agent.GetProjectEventEntityFromProjectId(projectId);
+```
+
+## GetProjectEventList(Integer[])
+
+Gets an array of NSProjectEvent objects.
+
+```crmscript
+NSProjectEvent[] GetProjectEventList(Integer[]  projectEventIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSProjectAgent agent;
+NSProjectEvent[] res = agent.GetProjectEventList(ids);
+```
+
+## GetProjectEventOnPerson(Integer,Integer)
+
+Gets an NSProjectEvent object from a project and a person.
+
+```crmscript
+NSProjectEvent GetProjectEventOnPerson(Integer projectId, Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)
+
+## GetProjectEventsOnPerson(Integer)
+
+Gets all project events that belongs to the person specified.
+
+```crmscript
+NSProjectEvent[] GetProjectEventsOnPerson(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)[] - The list of events are filtered by the Audience Visibility restrictions set when the project event is created.
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer personId;
+NSProjectEvent[] res = agent.GetProjectEventsOnPerson(personId);
+```
+
+## GetProjectImage(Integer)
+
+Returns the project image that is displayed in the CRM application.
+
+```crmscript
+NSImage GetProjectImage(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer projectId;
+NSImage res = agent.GetProjectImage(projectId);
+```
+
+## GetProjectList(Integer[])
+
+Gets an array of Project objects.
+
+```crmscript
+NSProject[] GetProjectList(Integer[] projectIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSProjectAgent agent;
+NSProject[] res = agent.GetProjectList(ids);
+```
+
+## GetProjectMember(Integer)
+
+Gets an NSProjectMember object.
+
+```crmscript
+NSProjectMember GetProjectMember(Integer projectMemberId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectMember thing = agent.GetProjectMember(123);
+```
+
+## GetProjectMembers(Integer)
+
+Returns an array of project members
+
+```crmscript
+NSProjectMember[] GetProjectMembers(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer projectId;
+NSProjectMember[] res = agent.GetProjectMembers(projectId);
+```
+
+## GetProjectMembersById(Integer[])
+
+Returns an array of project members.
+
+```crmscript
+NSProjectMember[] GetProjectMembersById(Integer[] projectMemberIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer rojectMemberIds;
+NSProjectMember[] res = agent.GetProjectMembersById(projectMemberIds);
+```
+
+## GetProjectsFromContact(Integer)
+
+Returns all projects where the given contact has project members.
+
+```crmscript
+NSProject[] GetProjectsFromContact(Integer contactId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer contactId;
+NSProject[] res = agent.GetProjectsFromContact(contactId);
+```
+
+## GetProjectsFromPerson(Integer)
+
+Returns all projects where the person is project member.
+
+```crmscript
+NSProject[] GetProjectsFromPerson(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer personId;
+NSProject[] res = agent.GetProjectsFromPerson(personId);
+```
+
+## GetPublishedProject(Integer)
+
+Gets published project by project ID.
+
+```crmscript
+NSProject GetPublishedProject(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer projectId;
+NSProject res = agent.GetPublishedProject(projectId);
+```
+
+## GetPublishedProjects(Integer[])
+
+Gets published projects by project IDs.
+
+```crmscript
+NSProject[] GetPublishedProjects(Integer[] projectIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer[] projectIds;
+NSProject[] res = agent.GetPublishedProjects(projectIds);
+```
+
+## GetPublishedProjectsOnPersonId(Integer)
+
+Gets published projects where person is a member
+
+```crmscript
+NSProject[] GetPublishedProjectsOnPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer personId;
+NSProject[] res = agent.GetPublishedProjectsOnPersonId(personId);
+```
+
+## HasGuide(Integer)
+
+```crmscript
+Bool HasGuide(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this project have a guide associated with its project type?
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer projectId;
+Bool res = agent.HasGuide(projectId);
+```
+
+## HasGuideActivities(Integer)
+
+```crmscript
+Bool HasGuideActivities(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## IsNumberValid(Integer,String)
+
+Checks if the number is unique or required.
+
+```crmscript
+Bool IsNumberValid(Integer contactId, String number)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+The setting is configured from admin under system options.
+</Note>
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+Integer contactId;
+String number;
+Bool res = agent.IsNumberValid(contactId, number);
+```
+
+## Merge(Integer,Integer,Bool)
+
+Merges two projects into one, removing the source project in the process
+
+```crmscript
+Void Merge(Integer sourceProjectId, Integer destinationProjectId, Bool replaceEmptyFieldsOnDestination)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## OfferAutoNextStatusOnAppointmentCompleted(Integer)
+
+```crmscript
+Bool OfferAutoNextStatusOnAppointmentCompleted(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## SaveProjectEntity(NSProjectEntity)
+
+Updates the existing NSProjectEntity or creates a new NSProjectEntity if the  ID parameter is 0.
+
+```crmscript
+NSProjectEntity SaveProjectEntity(NSProjectEntity projectEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity) - New or updated NSProjectEntity.
+
+**Example:**
+
+```crmscript
+NSProject  agent;
+NSProjectEntity thing = agent.CreateDefaultProjectEntity();
+thing = agent.SaveProjectEntity(thing);
+```
+
+## SaveProjectEntityWithoutMembers(NSProjectEntity)
+
+Save or update a project entity, the project members are ignored.
+
+```crmscript
+NSProjectEntity SaveProjectEntityWithoutMembers(NSProjectEntity projectEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity) - New or updated NSProjectEntity.
+
+**Example:**
+
+```crmscript
+NSProject  agent;
+NSProjectEntity thing = agent.CreateDefaultProjectEntity();
+thing = agent.SaveProjectEntityWithoutMembers(thing);
+```
+
+## SaveProjectEventEntity(NSProjectEventEntity)
+
+Updates the existing NSProjectEventEntity or creates a new NSProjectEventEntity if the ID parameter is 0.
+
+Returns.
+
+```crmscript
+NSProjectEventEntity SaveProjectEventEntity(NSProjectEventEntity entity)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity) - The new or updated NSProjectEventEntity.
+
+**Example:**
+
+```crmscript
+NSProject agent;
+NSProjectEventEntity thing = agent.CreateDefaultProjectEventEntity();
+thing = agent.SaveProjectEventEntity(thing);
+```
+
+## SaveProjectMember(NSProjectMember)
+
+Updates the existing NSProjectMember or creates a new NSProjectMember if the id parameter is 0
+
+```crmscript
+NSProjectMember SaveProjectMember(NSProjectMember projectMember)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+
+**Example:**
+
+```crmscript
+NSProject  agent;
+NSProjectMember thing = agent.CreateDefaultProjectMember();
+thing = agent.SaveProjectMember(thing);
+```
+
+## SaveProjectMembersFunctionAndComment(Integer[],Integer,String)
+
+Saves role and comment on an array of project members represented by IDs.
+
+```crmscript
+Void SaveProjectMembersFunctionAndComment(Integer[] projectMemberIds, Integer roleId, String comment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetDuplicateRulesStatus(NSDuplicateRule[])
+
+Sets which duplicate rules should be active or not
+
+```crmscript
+Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetProjectImage(Integer,NSImage)
+
+Stores the project image that is displayed in the CRM application.
+
+```crmscript
+Void SetProjectImage(Integer projectId, NSImage image)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## UpdateProjectMember(NSProjectMember)
+
+Updates an NSProjectMember row.
+
+```crmscript
+NSProjectMember UpdateProjectMember(NSProjectMember projectMember)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectMember projectMember;
+NSProjectMember res = agent.UpdateProjectMember(projectMember);
+```
+
+## ValidateProjectEntity(NSProjectEntity)
+
+Checks that entity is ready for saving, return error messages by field.
+
+```crmscript
+Map ValidateProjectEntity(NSProjectEntity projectEntity)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSProjectAgent agent;
+NSProjectEntity projectEntity;
+Map res = agent.ValidateProjectEntity(NSProjectEntity);
+```

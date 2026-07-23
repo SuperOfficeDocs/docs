@@ -1,0 +1,277 @@
+﻿---
+uid: crmscript.netserver.nsforeignkey
+title: NSForeignKey
+description: "Carrier object for ForeignKey."
+keywords: CRMScript, NSForeignKey, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSForeignKey
+
+Carrier object for ForeignKey.
+
+## Constructors
+
+### NSForeignKey()
+
+```crmscript
+NSForeignKey
+```
+
+Initializes a new instance of the NSForeignKey class.
+
+## Methods
+
+## GetCreatedBy()
+
+```crmscript
+String GetCreatedBy()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the person that created the foreign key.
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetKey()
+
+```crmscript
+String GetKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Subkey (optional).
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String key = thing.GetKey();
+```
+
+## GetRecordId()
+
+```crmscript
+Integer GetRecordId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Record in the referenced table.
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+Integer recordId = thing.GetRecordId();
+```
+
+## GetTableName()
+
+```crmscript
+String GetTableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String tableName = thing.GetTableName();
+```
+
+## GetUpdatedBy()
+
+Name of the person that last updated the foreign key
+
+```crmscript
+String GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Table name, transformed to and from numeric table id by the service layer.
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetValue()
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key value.
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String value = thing.GetValue();
+```
+
+## SetCreatedBy(String)
+
+```crmscript
+Void SetCreatedBy(String createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetKey(String)
+
+```crmscript
+Void SetKey(String key)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String key;
+thing.SetKey(key);
+```
+
+## SetRecordId(Integer)
+
+```crmscript
+Void SetRecordId(Integer recordId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+Integer recordId;
+thing.SetRecordId(recordId);
+```
+
+## SetTableName(String)
+
+```crmscript
+Void SetTableName(String tableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String tableName;
+thing.SetTableName(tableName);
+```
+
+## SetUpdatedBy(String)
+
+```crmscript
+Void SetUpdatedBy(String updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetValue(String)
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignKey thing;
+String value;
+thing.SetValue(value);
+```

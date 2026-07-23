@@ -1,0 +1,97 @@
+﻿---
+uid: crmscript.netserver.nsaccessgatewayinfo
+title: NSAccessGatewayInfo
+description: "Access gateway related data and operations. Carrier object for AccessGatewayInfo."
+keywords: CRMScript, NSAccessGatewayInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAccessGatewayInfo
+
+Access gateway related data and operations. Carrier object for AccessGatewayInfo.
+
+## Constructors
+
+### NSAccessGatewayInfo()
+
+```crmscript
+NSAccessGatewayInfo
+```
+
+Initializes a new instance of the NSAccessGatewayInfo class.
+
+## Methods
+
+## GetClientId()
+
+Returns the registered client ID for AccessGateway OIDC.
+
+```crmscript
+String GetClientId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The registered client ID for AccessGateway OIDC.
+
+**Example:**
+
+```crmscript
+NSAccessGatewayInfo thing;
+String clientId = thing.GetClientId();
+```
+
+## GetRedirectUri()
+
+Returns the registered redirect_uri for AccessGateway OIDC.
+
+```crmscript
+String GetRedirectUri()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The registered redirect_uri for AccessGateway OIDC.
+
+**Example:**
+
+```crmscript
+NSAccessGatewayInfo thing;
+String redirectUri = thing.GetRedirectUri();
+```
+
+## SetClientId(String)
+
+Sets the client ID for AccessGateway OIDC.
+
+```crmscript
+Void SetClientId(String clientId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAccessGatewayInfo thing;
+String clientId;
+thing.SetClientId(clientId);
+```
+
+## SetRedirectUri(String)
+
+Sets the redirect_uri for AccessGateway OIDC.
+
+```crmscript
+Void SetRedirectUri(String redirectUri)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAccessGatewayInfo thing;
+String redirectUri;
+thing.SetRedirectUri(redirectUri);
+```

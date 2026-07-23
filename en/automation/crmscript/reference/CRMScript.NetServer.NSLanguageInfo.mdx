@@ -1,0 +1,242 @@
+﻿---
+uid: crmscript.netserver.nslanguageinfo
+title: NSLanguageInfo
+description: ""
+keywords: CRMScript, NSLanguageInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSLanguageInfo
+
+## Constructors
+
+### NSLanguageInfo()
+
+```crmscript
+NSLanguageInfo
+```
+
+Initializes a new instance of the NSLanguageInfo class.
+
+## Methods
+
+## GetEnglishName()
+
+```crmscript
+String GetEnglishName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - English name of this language (Norwegian).
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String englishName = thing.GetEnglishName();
+```
+
+## GetIsBuiltIn()
+
+```crmscript
+Bool GetIsBuiltIn()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Has this row been inserted by SuperOffice priming data?
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+Bool isBuiltIn = thing.GetIsBuiltIn();
+```
+
+## GetLanguageInfoId()
+
+```crmscript
+Integer GetLanguageInfoId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+Integer languageInfoId = thing.GetLanguageInfoId();
+```
+
+## GetLCID()
+
+```crmscript
+Integer GetLCID()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Language/culture ID as a numeric .NET code.
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+Integer lCID = thing.GetLCID();
+```
+
+## GetNativeName()
+
+```crmscript
+String GetNativeName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The native name of this language (Norsk Bokmål).
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String nativeName = thing.GetNativeName();
+```
+
+## GetThreeLetterISOLanguageName()
+
+```crmscript
+String GetThreeLetterISOLanguageName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - ISO 3-letter abbreviation.
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String threeLetterISOLanguageName = thing.GetThreeLetterISOLanguageName();
+```
+
+## GetTwoLetterISOLanguageName()
+
+```crmscript
+String GetTwoLetterISOLanguageName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - ISO 2-letter abbreviation.
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String twoLetterISOLanguageName = thing.GetTwoLetterISOLanguageName();
+```
+
+## SetEnglishName(String)
+
+```crmscript
+Void SetEnglishName(String englishName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String englishName;
+thing.SetEnglishName(englishName);
+```
+
+## SetIsBuiltIn(Bool)
+
+```crmscript
+Void SetIsBuiltIn(Bool isBuiltIn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+Bool isBuiltIn;
+thing.SetIsBuiltIn(isBuiltIn);
+```
+
+## SetLanguageInfoId(Integer)
+
+```crmscript
+Void SetLanguageInfoId(Integer languageInfoId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+Integer languageInfoId;
+thing.SetLanguageInfoId(languageInfoId);
+```
+
+## SetLCID(Integer)
+
+```crmscript
+Void SetLCID(Integer lCID)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+Integer lCID;
+thing.SetLCID(lCID);
+```
+
+## SetNativeName(String)
+
+```crmscript
+Void SetNativeName(String nativeName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String nativeName;
+thing.SetNativeName(nativeName);
+```
+
+## SetThreeLetterISOLanguageName(String)
+
+```crmscript
+Void SetThreeLetterISOLanguageName(String threeLetterISOLanguageName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String threeLetterISOLanguageName;
+thing.SetThreeLetterISOLanguageName(threeLetterISOLanguageName);
+```
+
+## SetTwoLetterISOLanguageName(String)
+
+```crmscript
+Void SetTwoLetterISOLanguageName(String twoLetterISOLanguageName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLanguageInfo thing;
+String twoLetterISOLanguageName;
+thing.SetTwoLetterISOLanguageName(twoLetterISOLanguageName);
+```

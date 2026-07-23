@@ -1,0 +1,41 @@
+﻿---
+uid: crmscript.netserver.nspreviewsagent
+title: NSPreviewsAgent
+description: "Gets preview strings from a hint."
+keywords: CRMScript, NSPreviewsAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPreviewsAgent
+
+Gets preview strings from a hint.
+
+## Constructors
+
+### NSPreviewsAgent()
+
+```crmscript
+NSPreviewsAgent
+```
+
+## Methods
+
+## GetPreview(String)
+
+Parses a Preview hint and return a Preview.The returned Preview string may contain resource string identifiers (in square brackets), to be processed by the resource manager.
+
+The Preview hint is either a literal text, representing itself or a set of key/value pairs enclosed in curly braces. Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.
+
+```crmscript
+String GetPreview(String previewHint)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+A typical Preview hint could be &lt;code&gt;`{contact_id=123}`&lt;/code&gt; or &lt;code&gt;`{appointment_id=222&mode=simple}`&lt;/code&gt;
+</Note>

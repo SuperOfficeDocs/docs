@@ -1,0 +1,38 @@
+﻿---
+uid: crmscript.netserver.quoteversionbuttonaction
+title: Enum QuoteVersionButtonAction
+description: "Possible actions for QuoteVersionButton states."
+keywords: CRMScript, QuoteVersionButtonAction, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum QuoteVersionButtonAction
+
+Possible actions for QuoteVersionButton states.
+
+## Syntax
+
+```crmscript
+QuoteVersionButtonAction
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | No action |
+| ValidateVersion | Validate the quote version. |
+| Edit | Edit the quote version. |
+| Send | Send the quote version. |
+| Approve | Approve the quote version. |
+| Reject | Reject the quote version. |
+| ValidateVersionAndSendIfPossible | Validate the quote version and send if possible. |
+| ValidateVersionAndPlaceOrderIfPossible | Validate the quote version and place the order if possible. |
+| CloneVersion | Make a copy of the quote version. |
+| SendConfirmation | Send confirmation. |
+| GetOrderState | Fetch updated values from the ERP system and show the results in the dialog. |
+| UpdatePrices | Ask the quote connector to update the prices for the entire version. |

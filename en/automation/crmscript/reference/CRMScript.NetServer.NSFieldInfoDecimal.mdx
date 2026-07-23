@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfodecimal
+title: NSFieldInfoDecimal
+description: "Decimal (double precision) custom database field."
+keywords: CRMScript, NSFieldInfoDecimal, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoDecimal
+
+Decimal (double precision) custom database field.
+
+## Constructors
+
+### NSFieldInfoDecimal()
+
+```crmscript
+NSFieldInfoDecimal
+```
+
+Initializes a new instance of the NSFieldInfoDecimal class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Float GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Default decimal (double precision) value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoDecimal thing;
+Float defaultValue = thing.GetDefaultValue();
+```
+
+## GetPrecision()
+
+```crmscript
+Integer GetPrecision()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How many decimals to display.
+
+**Example:**
+
+```crmscript
+NSFieldInfoDecimal thing;
+Integer precision = thing.GetPrecision();
+```
+
+## SetDefaultValue(Float)
+
+```crmscript
+Void SetDefaultValue(Float defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoDecimal thing;
+Float defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetPrecision(Integer)
+
+```crmscript
+Void SetPrecision(Integer precision)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoDecimal thing;
+Integer precision;
+thing.SetPrecision(precision);
+```

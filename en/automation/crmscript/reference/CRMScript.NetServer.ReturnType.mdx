@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.returntype
+title: Enum ReturnType
+description: "Type of responce"
+keywords: CRMScript, ReturnType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ReturnType
+
+Type of responce
+
+## Syntax
+
+```crmscript
+ReturnType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | here is no return value to be parsed |
+| Message | The return value is a string, to be shown to the user as a message by client |
+| SoProtocol | The return value is an soprotocol-compliant navigation string, to be parsed according to the rules for soprotocol strings. Client should navigate according to the given protocol. |
+| CustomGui | The return value is the name of a custom GUI. The GetCustomGui method on the document plugin will be invoked, and the resulting GUI rendered by the client. |
+| Other | The return value is intended for custom processing; this implies that the document plugin has installed some component on the intended client that will intercept and handle this return value.  Note that this requires advanced knowledge of the client and its construction and navigation. Also note that this will make the functionality client-specific, so that it may not be available or work as intended on clients not specifically supported or known. |
+| URL | The return value is a URL that should be opened in a new window by the client. |

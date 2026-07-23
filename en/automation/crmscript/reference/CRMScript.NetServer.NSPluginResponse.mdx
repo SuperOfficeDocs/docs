@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nspluginresponse
+title: NSPluginResponse
+description: "To be able to respond with more than just a true/false, but also an explanation. Such an explanation can be displayed on for instance a disabled Place Order button."
+keywords: CRMScript, NSPluginResponse, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPluginResponse
+
+To be able to respond with more than just a true/false, but also an explanation. Such an explanation can be displayed on for instance a disabled Place Order button.
+
+## Constructors
+
+### NSPluginResponse()
+
+```crmscript
+NSPluginResponse
+```
+
+Initializes a new instance of the NSPluginResponse class.
+
+## Methods
+
+## GetChanges()
+
+```crmscript
+NSChangedData GetChanges()
+```
+
+**Returns:** [CRMScript.NetServer.NSChangedData](CRMScript.NetServer.NSChangedData) - Table name/record ID of data changed by this method, that the client may need to reload.
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+NSChangedData changes = thing.GetChanges();
+```
+
+## GetErrorCode()
+
+```crmscript
+String GetErrorCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An error code, if available.
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+String errorCode = thing.GetErrorCode();
+```
+
+## GetIsOk()
+
+```crmscript
+Bool GetIsOk()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Answer to the question / An indication if the operation went well.
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+Bool isOk = thing.GetIsOk();
+```
+
+## GetTechExplanation()
+
+```crmscript
+String GetTechExplanation()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Always in English.
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+String techExplanation = thing.GetTechExplanation();
+```
+
+## GetUserExplanation()
+
+```crmscript
+String GetUserExplanation()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A localized explanation to the answer.
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+String userExplanation = thing.GetUserExplanation();
+```
+
+## SetChanges(NSChangedData)
+
+```crmscript
+Void SetChanges(NSChangedData changes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+NSChangedData changes;
+thing.SetChanges(changes);
+```
+
+## SetErrorCode(String)
+
+```crmscript
+Void SetErrorCode(String errorCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+String errorCode;
+thing.SetErrorCode(errorCode);
+```
+
+## SetIsOk(Bool)
+
+```crmscript
+Void SetIsOk(Bool isOk)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+Bool isOk;
+thing.SetIsOk(isOk);
+```
+
+## SetTechExplanation(String)
+
+```crmscript
+Void SetTechExplanation(String techExplanation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+String techExplanation;
+thing.SetTechExplanation(techExplanation);
+```
+
+## SetUserExplanation(String)
+
+```crmscript
+Void SetUserExplanation(String userExplanation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPluginResponse thing;
+String userExplanation;
+thing.SetUserExplanation(userExplanation);
+```

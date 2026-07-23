@@ -1,0 +1,105 @@
+﻿---
+uid: crmscript.native.replytemplate
+title: ReplyTemplate
+description: "Represents a reply template."
+keywords: CRMScript, ReplyTemplate, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# ReplyTemplate
+
+Represents a reply template.
+
+## Constructors
+
+### ReplyTemplate()
+
+```crmscript
+ReplyTemplate
+```
+
+Initializes a new instance of the ReplyTemplate class.
+
+## Methods
+
+## getAttachments(Integer)
+
+Gets all attachment IDs belonging to a reply template.
+
+```crmscript
+Integer[] getAttachments(Integer lang)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Attachment IDs belonging to a reply template.
+
+## getHtmlBody(Integer)
+
+Returns the reply template HTML body, in the language given by language. If language does not exists it will return default language.
+
+```crmscript
+String getHtmlBody(Integer language)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The reply template HTML body, in the language given.
+
+<Note>
+Supported languages depend on configuration.
+</Note>
+
+## getName()
+
+Returns the name of the reply template.
+
+```crmscript
+String getName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the reply template.
+
+## getPlainBody(Integer)
+
+Returns the reply template plain text body in the given language (if available). If language does not exists, it will return default language.
+
+```crmscript
+String getPlainBody(Integer language)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The reply template plain text body in the given language.
+
+## getSmsBody(Integer)
+
+Returns the reply template SMS body, in the language given by language ID. If language does not exists it will return default language.
+
+```crmscript
+String getSmsBody(Integer language)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The reply template SMS body in the language given.
+
+## getSubject(Integer)
+
+Returns the reply template subject, in the language given by language. If language does not exists it will return default language.
+
+```crmscript
+String getSubject(Integer language)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The reply template plain-text subject in the language given.
+
+<Note>
+Supported languages depend on configuration.
+</Note>
+
+## load(Integer)
+
+This function loads a reply template to the object.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if reply template with given ID loaded successfully; otherwise, false.

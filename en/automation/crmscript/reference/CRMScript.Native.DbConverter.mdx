@@ -1,0 +1,97 @@
+﻿---
+uid: crmscript.native.dbconverter
+title: DbConverter
+description: "This class is only allowed in a ConverterApp context. Any attempts of using this in any other contexts will yield an exception."
+keywords: CRMScript, DbConverter, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# DbConverter
+
+This class is only allowed in a ConverterApp context. Any attempts of using this in any other contexts will yield an exception.
+
+## Constructors
+
+### DbConverter()
+
+```crmscript
+DbConverter
+```
+
+Initializes a new instance of the DbConverter class.
+
+## Methods
+
+## eof()
+
+Returns true if the iterator has passed the last element, and thus is at the end of the file.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True true if the iterator has passed the last element; otherwise, false.
+
+<Note>
+Typically used as a condition in a for loop to iterate through all remaining elements.
+</Note>
+
+## getRow()
+
+Returns entire row of fields.
+
+```crmscript
+Map getRow()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+## next()
+
+Moves the iterator to the next element.
+
+```crmscript
+Bool next()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if the iterator is at en of file; otherwise, true.
+
+## readBatch(String,Integer,Integer,Integer,Integer)
+
+```crmscript
+Void readBatch(String p_0, Integer p_1, Integer p_2, Integer p_3, Integer p_4)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSourceConnection(String,String,String,String,String)
+
+```crmscript
+Void setSourceConnection(String p_0, String p_1, String p_2, String p_3, String p_4)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## update(String,Map,Map)
+
+This function will update a table row that's already integrated with CRM. It only writes rows that aren't integrated.
+
+```crmscript
+Void update(String table, Map row, Map fieldMapping)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## rite(String,Map)
+
+Writes a table row.
+
+```crmscript
+Void write(String table, Map row)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

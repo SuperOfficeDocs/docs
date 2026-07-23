@@ -1,0 +1,105 @@
+﻿---
+uid: crmscript.netserver.nsactivityinformationlistitem
+title: NSActivityInformationListItem
+description: "Carrier object for ActivityInformationListItem."
+keywords: CRMScript, NSActivityInformationListItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSActivityInformationListItem
+
+Carrier object for ActivityInformationListItem.
+
+## Constructors
+
+### NSActivityInformationListItem()
+
+```crmscript
+NSActivityInformationListItem
+```
+
+Initializes a new instance of the NSActivityInformationListItem class.
+
+## Methods
+
+## GetActivityInformation()
+
+Returns the number of free and busy activities.
+
+```crmscript
+NSActivitySummary GetActivityInformation()
+```
+
+**Returns:** [CRMScript.NetServer.NSActivitySummary](CRMScript.NetServer.NSActivitySummary) - The number of free and busy activities.
+
+**Example:**
+
+```crmscript
+NSActivityInformationListItem thing;
+NSActivitySummary activityInformation = thing.GetActivityInformation();
+```
+
+## GetDate()
+
+Returns the date that this item is valid for.
+
+```crmscript
+DateTime GetDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date that this item is valid for.
+
+<Note>
+There is exactly one item per date, ordered by date.
+</Note>
+
+**Example:**
+
+```crmscript
+NSActivityInformationListItem thing;
+DateTime date = thing.GetDate();
+```
+
+## SetActivityInformation(NSActivitySummary)
+
+Sets the number of free and busy activities.
+
+```crmscript
+Void SetActivityInformation(NSActivitySummary activityInformation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivityInformationListItem thing;
+NSActivitySummary activityInformation;
+thing.SetActivityInformation(activityInformation);
+```
+
+## SetDate(DateTime)
+
+Sets the date that this item is valid for.
+
+```crmscript
+Void SetDate(DateTime date)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+There is exactly one item per date, ordered by date.
+</Note>
+
+**Example:**
+
+```crmscript
+NSActivityInformationListItem thing;
+DateTime date;
+thing.SetDate(date);
+```

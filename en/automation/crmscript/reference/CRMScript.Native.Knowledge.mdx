@@ -1,0 +1,55 @@
+﻿---
+uid: crmscript.native.knowledge
+title: Knowledge
+description: "Knowledge class"
+keywords: CRMScript, Knowledge, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Knowledge
+
+Knowledge class
+
+## Constructors
+
+### Knowledge()
+
+```crmscript
+Knowledge
+```
+
+Initializes a new instance of the Knowledge class.
+
+## Methods
+
+## buildExternalEntryURLWithParser(Integer,Parser)
+
+Builds a URL to the customer center to view a knowledge-base entry.
+
+```crmscript
+String buildExternalEntryURLWithParser(Integer kbId, Parser parser)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL to the knowledge-base entry.
+
+<Note>
+Fetches the baseUrl from the registry table with reg_id 61. Then it parses the URL with the input parser, and returns the URL.
+</Note>
+
+## rebuildFaqSearch(Integer,String)
+
+Rebuilds the FAQ search base based on the kbEntryId.
+
+```crmscript
+Void rebuildFaqSearch(Integer kbEntryId, String originalTitle)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Supply the originalTitle since the title is weighted higher than words in the Question and Answer sections.
+</Note>

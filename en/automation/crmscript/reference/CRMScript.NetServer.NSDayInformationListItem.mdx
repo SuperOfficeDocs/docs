@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsdayinformationlistitem
+title: NSDayInformationListItem
+description: "Summary information about the activities and holidays for one day."
+keywords: CRMScript, NSDayInformationListItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDayInformationListItem
+
+Summary information about the activities and holidays for one day.
+
+## Constructors
+
+### NSDayInformationListItem()
+
+```crmscript
+NSDayInformationListItem
+```
+
+Initializes a new instance of the NSDayInformationListItem class.
+
+## Methods
+
+## GetActivityInformation()
+
+```crmscript
+NSActivitySummary GetActivityInformation()
+```
+
+**Returns:** [CRMScript.NetServer.NSActivitySummary](CRMScript.NetServer.NSActivitySummary) - Activity information summary - number of free and busy activities.
+
+**Example:**
+
+```crmscript
+NSDayInformationListItem thing;
+NSActivitySummary activityInformation = thing.GetActivityInformation();
+```
+
+## GetDate()
+
+```crmscript
+DateTime GetDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date that this item is valid for; there is exactly one item per date, ordered by date.
+
+**Example:**
+
+```crmscript
+NSDayInformationListItem thing;
+DateTime date = thing.GetDate();
+```
+
+## GetRedLetterInformation()
+
+```crmscript
+NSRedLetterSummary GetRedLetterInformation()
+```
+
+**Returns:** [CRMScript.NetServer.NSRedLetterSummary](CRMScript.NetServer.NSRedLetterSummary) - Summary of red-letter day information* holiday in own country, and in other countries known to the system.
+
+**Example:**
+
+```crmscript
+NSDayInformationListItem thing;
+NSRedLetterSummary redLetterInformation = thing.GetRedLetterInformation();
+```
+
+## SetActivityInformation(NSActivitySummary)
+
+```crmscript
+Void SetActivityInformation(NSActivitySummary activityInformation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDayInformationListItem thing;
+NSActivitySummary activityInformation;
+thing.SetActivityInformation(activityInformation);
+```
+
+## SetDate(DateTime)
+
+```crmscript
+Void SetDate(DateTime date)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDayInformationListItem thing;
+DateTime date;
+thing.SetDate(date);
+```
+
+## SetRedLetterInformation(NSRedLetterSummary)
+
+```crmscript
+Void SetRedLetterInformation(NSRedLetterSummary redLetterInformation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDayInformationListItem thing;
+NSRedLetterSummary redLetterInformation;
+thing.SetRedLetterInformation(redLetterInformation);
+```

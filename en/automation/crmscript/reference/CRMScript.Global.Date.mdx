@@ -1,0 +1,246 @@
+﻿---
+uid: crmscript.global.date
+title: Date
+description: "Date is a complex data type representing a day, month, and year on ISO format YYYY-MM-DD. The default value is now."
+keywords: CRMScript, Date, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Date
+
+Date is a complex data type representing a day, month, and year on ISO format YYYY-MM-DD. The default value is now.
+
+Before a Date is initialized, it has no value. This is commonly written as NULL, NUL, or NIL in other programming languages. CRMScript automatically initializes Date objects when declared to the current date. Thus this situation is uncommon.
+
+## Constructors
+
+### Date()
+
+```crmscript
+Date Date()
+```
+
+Default constructor.
+
+### Date(Date)
+
+```crmscript
+Date Date(Date value)
+```
+
+Pass a value to copy into a new object.
+
+### Date(String)
+
+```crmscript
+Date Date(String value)
+```
+
+Pass a String containing a date on format YYYY-MM-DD. The constructor will parse the text and create a Date object.
+
+## Methods
+
+## toString()
+
+Converts a date value to its string representation, in ISO format.
+
+```crmscript
+String toString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+One of the most frequently used methods, typically when you are going to output something.
+</Note>
+
+**Example:**
+
+```crmscript
+Date d;
+String s = d.toString();
+```
+
+## addDay(Integer)
+
+Adjusts the currently set date with the given number of days. The original object will be modified, and a copy is returned.
+
+```crmscript
+Date addDay(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date)
+
+<Note>
+If the number is negative, the days are subtracted.
+</Note>
+
+**Example:**
+
+```crmscript
+Date d;
+d.addDay(3);
+printLine("Three days from now: " + d.toString());
+```
+
+## addMonth(Integer)
+
+Adjusts the currently set date with the given number of months.
+
+```crmscript
+Date addMonth(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date)
+
+<Note>
+The day remains unchanged regardless of the number of days in the months added or subtracted. However, if the update would result in February 29th in a year that is not a leap year, CRMScript automatically corrects it to March 1st.
+</Note>
+
+**Example:**
+
+```crmscript
+Date d;
+d.addMonth(3);
+printLine("Three months from now: " + d.toString());
+```
+
+## addYear(Integer)
+
+Adjusts the currently set date with the given number of years.
+
+```crmscript
+Date addYear(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date)
+
+<Note>
+The original object will be modified, and a copy is returned.
+</Note>
+
+**Example:**
+
+```crmscript
+Date d;
+d.addYear(1);
+printLine("A year from now: " + d.toString());
+```
+
+## getMDay()
+
+Returns the day of the month as an Integer [1-31].
+
+```crmscript
+Integer getMDay()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Date d;
+print(d.getMDay().toString());
+```
+
+## getMonth()
+
+Returns the month as an Integer [1-12].
+
+```crmscript
+Integer getMonth()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Date d;
+print(d.getMonth().toString());
+```
+
+## getWeek()
+
+Returns the ISO number of the week as an Integer [1-53].
+
+```crmscript
+Integer getWeek()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+See http://en.wikipedia.org/wiki/ISO_8601 for detailed info on ISO week numbers.
+</Note>
+
+**Example:**
+
+```crmscript
+Date d;
+print(d.getWeek().toString());
+```
+
+## getWeekDay()
+
+Returns the ISO day of the week as an Integer [0-6].
+
+```crmscript
+Integer getWeekDay()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+The 1st day of the week is Monday and has index 0!
+</Note>
+
+**Example:**
+
+```crmscript
+Date d;
+print(d.getWeekDay().toString());
+```
+
+## getYear()
+
+Returns the year as an Integer.
+
+```crmscript
+Integer getYear()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Date d;
+print(d.getYear().toString());
+```
+
+## isNull()
+
+Returns true if it has no value and false if it does.
+
+```crmscript
+Bool isNull()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+A NULL/NUL/NIL Date is different from zero, in that it is conceptually without a value.
+</Note>
+
+**Example:**
+
+```crmscript
+Date d;
+print(d.isNull().toString());
+```

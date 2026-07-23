@@ -1,0 +1,31 @@
+﻿---
+uid: crmscript.netserver.shipmentmessagetype
+title: Enum ShipmentMessageType
+description: "Bitmask defining what type of shipment message this is"
+keywords: CRMScript, ShipmentMessageType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ShipmentMessageType
+
+Bitmask defining what type of shipment message this is
+
+## Syntax
+
+```crmscript
+ShipmentMessageType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Plain | Contains a plain part |
+| Html | Contains a HTML part |
+| SourceView | Obsolete |
+| Sms | Contains a SMS |
+| Document | Contains a document. The document_message field contains the id of the actual document |

@@ -1,0 +1,215 @@
+﻿---
+uid: crmscript.netserver.nschattopicagent
+title: NSChatTopicAgent
+description: "User agents within a chat topic. Which users are assigned and what roles they have within the chat topic. Carrier object for ChatTopicAgent."
+keywords: CRMScript, NSChatTopicAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatTopicAgent
+
+User agents within a chat topic. Which users are assigned and what roles they have within the chat topic. Carrier object for ChatTopicAgent.
+
+## Constructors
+
+### NSChatTopicAgent()
+
+```crmscript
+NSChatTopicAgent
+```
+
+Initializes a new instance of the NSChatTopicAgent class.
+
+## Methods
+
+## GetCanListen()
+
+```crmscript
+Bool GetCanListen()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True of a user can listen in on this topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canListen = thing.GetCanListen();
+```
+
+## GetCanManage()
+
+```crmscript
+Bool GetCanManage()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is a manager for this topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canManage = thing.GetCanManage();
+```
+
+## GetCanNotify()
+
+```crmscript
+Bool GetCanNotify()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user should receive notifications for this topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canNotify = thing.GetCanNotify();
+```
+
+## GetCanRespond()
+
+True if the user can respond to chats in this topic
+
+```crmscript
+Bool GetCanRespond()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canRespond = thing.GetCanRespond();
+```
+
+## GetTopicId()
+
+```crmscript
+Integer GetTopicId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the associated chat topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Integer topicId = thing.GetTopicId();
+```
+
+## GetUser()
+
+```crmscript
+NSAssociate GetUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate that is the user agent.
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+NSAssociate user = thing.GetUser();
+```
+
+## SetCanListen(Bool)
+
+```crmscript
+Void SetCanListen(Bool canListen)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canListen;
+thing.SetCanListen(canListen);
+```
+
+## SetCanManage(Bool)
+
+```crmscript
+Void SetCanManage(Bool canManage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canManage;
+thing.SetCanManage(canManage);
+```
+
+## SetCanNotify(Bool)
+
+```crmscript
+Void SetCanNotify(Bool canNotify)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canNotify;
+thing.SetCanNotify(canNotify);
+```
+
+## SetCanRespond(Bool)
+
+```crmscript
+Void SetCanRespond(Bool canRespond)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Bool canRespond;
+thing.SetCanRespond(canRespond);
+```
+
+## SetTopicId(Integer)
+
+```crmscript
+Void SetTopicId(Integer topicId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+Integer topicId;
+thing.SetTopicId(topicId);
+```
+
+## SetUser(NSAssociate)
+
+```crmscript
+Void SetUser(NSAssociate user)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicAgent thing;
+NSAssociate user;
+thing.SetUser(user);
+```

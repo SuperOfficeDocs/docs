@@ -1,0 +1,157 @@
+﻿---
+uid: crmscript.netserver.nstypicalsearches
+title: NSTypicalSearches
+description: ""
+keywords: CRMScript, NSTypicalSearches, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTypicalSearches
+
+## Constructors
+
+### NSTypicalSearches()
+
+```crmscript
+NSTypicalSearches
+```
+
+Initializes a new instance of the NSTypicalSearches class.
+
+## Methods
+
+## GetDeleteLeftovers()
+
+```crmscript
+Bool GetDeleteLeftovers()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, then any TypicalSearch records in the database that are NOT referenced in this call, should be deleted.
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+Bool deleteLeftovers = thing.GetDeleteLeftovers();
+```
+
+## GetMasterVersion()
+
+```crmscript
+Integer GetMasterVersion()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The master version number in this update, at least the highest of those in the searches, but can be higher to force an update (and delete of missing elements).
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+Integer masterVersion = thing.GetMasterVersion();
+```
+
+## GetSearches()
+
+```crmscript
+NSTypicalSearch[] GetSearches()
+```
+
+**Returns:** [CRMScript.NetServer.NSTypicalSearch](CRMScript.NetServer.NSTypicalSearch)[] - The TypicalSearch structures (including criteria) to import.
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+NSTypicalSearch[] searches = thing.GetSearches();
+```
+
+## GetSource()
+
+```crmscript
+String GetSource()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of organization that sources and maintains this TypicalSearch.
+
+<Note>
+Allows for both SuperOffice and partners to maintain sets of typical searches without conflict
+</Note>
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+String source = thing.GetSource();
+```
+
+## SetDeleteLeftovers(Bool)
+
+```crmscript
+Void SetDeleteLeftovers(Bool deleteLeftovers)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+Bool deleteLeftovers;
+thing.SetDeleteLeftovers(deleteLeftovers);
+```
+
+## SetMasterVersion(Integer)
+
+```crmscript
+Void SetMasterVersion(Integer masterVersion)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+Integer masterVersion;
+thing.SetMasterVersion(masterVersion);
+```
+
+## SetSearches(NSTypicalSearch[])
+
+```crmscript
+Void SetSearches(NSTypicalSearch[] searches)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+NSTypicalSearch[] searches;
+thing.SetSearches(searches);
+```
+
+## SetSource(String)
+
+```crmscript
+Void SetSource(String source)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Allows for both SuperOffice and partners to maintain sets of typical searches without conflict
+</Note>
+
+**Example:**
+
+```crmscript
+NSTypicalSearches thing;
+String source;
+thing.SetSource(source);
+```

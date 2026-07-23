@@ -1,0 +1,2084 @@
+﻿---
+uid: crmscript.netserver.nspersonentity
+title: NSPersonEntity
+description: "The Person Service. The service implements all services working with the Person object."
+keywords: CRMScript, NSPersonEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPersonEntity
+
+The Person Service. The service implements all services working with the Person object.
+
+## Constructors
+
+### NSPersonEntity()
+
+```crmscript
+NSPersonEntity
+```
+
+Initializes a new instance of the NSPersonEntity class.
+
+## Methods
+
+## GetActiveErpLinks()
+
+```crmscript
+Integer GetActiveErpLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How many active ERP links are there for this person?
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer activeErpLinks = thing.GetActiveErpLinks();
+```
+
+## GetActiveInterests()
+
+```crmscript
+Integer GetActiveInterests()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active interests.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer activeInterests = thing.GetActiveInterests();
+```
+
+## GetAddress()
+
+Retrieves a formatted addressRetrieves the structure holding formatted address data.
+
+```crmscript
+NSAddress GetAddress()
+```
+
+**Returns:** [CRMScript.NetServer.NSAddress](CRMScript.NetServer.NSAddress)
+
+<Note>
+The layout of the array structure indicates the layout of the localized address.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAddress address = thing.GetAddress();
+```
+
+## GetAssociate()
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate owning this person (similar to contact.Associate).
+
+<Note>
+Usually blank. Use the Person.Contact.Associate instead. Intended for use when individual persons are created (i.e. when Person.Contact is blank)
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate associate = thing.GetAssociate();
+```
+
+## GetBirthDate()
+
+```crmscript
+DateTime GetBirthDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The Person birth date as Date.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime birthDate = thing.GetBirthDate();
+```
+
+## GetBounceEmails()
+
+```crmscript
+String[] GetBounceEmails()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Email addresses with a positive bounce counter.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String[] bounceEmails = thing.GetBounceEmails();
+```
+
+## GetBusiness()
+
+```crmscript
+NSBusiness GetBusiness()
+```
+
+**Returns:** [CRMScript.NetServer.NSBusiness](CRMScript.NetServer.NSBusiness) - Person's business.
+
+<Note>
+Usually blank. Use Contact.NSBusiness instead. Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSBusiness business = thing.GetBusiness();
+```
+
+## GetCategory()
+
+```crmscript
+NSCategory GetCategory()
+```
+
+**Returns:** [CRMScript.NetServer.NSCategory](CRMScript.NetServer.NSCategory) - Person's category.
+
+<Note>
+Usually null. Refer to the Contact.NSCategory instead.  Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSCategory category = thing.GetCategory();
+```
+
+## GetChatEmails()
+
+```crmscript
+NSEntityElement[] GetChatEmails()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] chatEmails = thing.GetChatEmails();
+```
+
+## GetConsents()
+
+```crmscript
+NSConsentInfo[] GetConsents()
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentInfo](CRMScript.NetServer.NSConsentInfo)[] - The person's available consent information.
+
+<Note>
+Missing consents are not deleted. To remove a consent, mark its legalbase as 'WITHDRAWN'
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSConsentInfo[] consents = thing.GetConsents();
+```
+
+## GetContact()
+
+```crmscript
+NSContact GetContact()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - The contact the contact person is registered on.
+
+<Note>
+This is required unless the 'MandatoryContactOnPerson' preference is set.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSContact contact = thing.GetContact();
+```
+
+## GetCorrespondingAssociate()
+
+```crmscript
+NSAssociate GetCorrespondingAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate corresponding to this person. Will be empty if the person is not a user (internal associate user, external user).
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate correspondingAssociate = thing.GetCorrespondingAssociate();
+```
+
+## GetCountry()
+
+```crmscript
+NSCountry GetCountry()
+```
+
+**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry) - The country this contact person is located in.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSCountry country = thing.GetCountry();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that created the person object.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered date.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetCustomerLanguage()
+
+```crmscript
+NSCustomerLanguage GetCustomerLanguage()
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerLanguage](CRMScript.NetServer.NSCustomerLanguage)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSCustomerLanguage customerLanguage = thing.GetCustomerLanguage();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on an NSPersonEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetDbiAgentId()
+
+```crmscript
+Integer GetDbiAgentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Integration agent (eJournal).
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer dbiAgentId = thing.GetDbiAgentId();
+```
+
+## GetDbiKey()
+
+```crmscript
+String GetDbiKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The primary key for the integrated entry in the external data source.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String dbiKey = thing.GetDbiKey();
+```
+
+## GetDbiLastModified()
+
+```crmscript
+DateTime GetDbiLastModified()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the entry was last modified.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime dbiLastModified = thing.GetDbiLastModified();
+```
+
+## GetDbiLastSyncronized()
+
+```crmscript
+DateTime GetDbiLastSyncronized()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last external synchronization.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime dbiLastSyncronized = thing.GetDbiLastSyncronized();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetEmails()
+
+```crmscript
+NSEntityElement[] GetEmails()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - A collection of the person's emails.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] emails = thing.GetEmails();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on NSPersonEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetFaxes()
+
+Returns a collection of fax numbers that belong to the contact person.
+
+```crmscript
+NSEntityElement[] GetFaxes()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] faxes = thing.GetFaxes();
+```
+
+## GetFirstname()
+
+```crmscript
+String GetFirstname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - First name.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String firstname = thing.GetFirstname();
+```
+
+## GetFormalName()
+
+Gets formal name for a person, as used in labels. (Full name + person title + academic title)
+
+```crmscript
+String GetFormalName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String formalName = thing.GetFormalName();
+```
+
+## GetFullName()
+
+```crmscript
+String GetFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The person's full name localized to the current culture/country. (internal name used in clients for employees).
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String fullName = thing.GetFullName();
+```
+
+## GetInterests()
+
+```crmscript
+NSSelectableMDOListItem[] GetInterests()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - The person's available and selected interests.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSSelectableMDOListItem[] interests = thing.GetInterests();
+```
+
+## GetInternetPhones()
+
+```crmscript
+NSEntityElement[] GetInternetPhones()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] internetPhones = thing.GetInternetPhones();
+```
+
+## GetIsAssociate()
+
+Checks if the person object is an associate. The property is read-only.
+
+```crmscript
+Bool GetIsAssociate()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool isAssociate = thing.GetIsAssociate();
+```
+
+## GetKanafname()
+
+```crmscript
+String GetKanafname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Kana first name, used in Japanese versions only.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String kanafname = thing.GetKanafname();
+```
+
+## GetKanalname()
+
+```crmscript
+String GetKanalname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Kana last name, used in Japanese versions only.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String kanalname = thing.GetKanalname();
+```
+
+## GetLastname()
+
+```crmscript
+String GetLastname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Last name.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String lastname = thing.GetLastname();
+```
+
+## GetMiddleName()
+
+```crmscript
+String GetMiddleName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Middle name or 'van' etc.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String middleName = thing.GetMiddleName();
+```
+
+## GetMobilePhones()
+
+Returns a collection of mobile phone numbers that belong to the contact person.
+
+```crmscript
+NSEntityElement[] GetMobilePhones()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] mobilePhones = thing.GetMobilePhones();
+```
+
+## GetMrmrs()
+
+```crmscript
+String GetMrmrs()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String mrmrs = thing.GetMrmrs();
+```
+
+## GetNoMailing()
+
+```crmscript
+Bool GetNoMailing()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Spam filter. Indicates if this person should retrieve advertising.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool noMailing = thing.GetNoMailing();
+```
+
+## GetOfficePhones()
+
+Returns a collection of office phone numbers that belong to the contact person.
+
+```crmscript
+NSEntityElement[] GetOfficePhones()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] officePhones = thing.GetOfficePhones();
+```
+
+## GetOtherPhones()
+
+Returns a collection of pagers that belong to the contact person.
+
+```crmscript
+NSEntityElement[] GetOtherPhones()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] otherPhones = thing.GetOtherPhones();
+```
+
+## GetPagers()
+
+```crmscript
+NSEntityElement[] GetPagers()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetPersonNumber()
+
+```crmscript
+String GetPersonNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Alphanumeric user field.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String personNumber = thing.GetPersonNumber();
+```
+
+## GetPosition()
+
+```crmscript
+NSPosition GetPosition()
+```
+
+**Returns:** [CRMScript.NetServer.NSPosition](CRMScript.NetServer.NSPosition) - The position. This is a predefined SuperOffice value, different from Title.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSPosition position = thing.GetPosition();
+```
+
+## GetPost1()
+
+```crmscript
+String GetPost1()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Postal address, used in Japanese versions only.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String post1 = thing.GetPost1();
+```
+
+## GetPost2()
+
+```crmscript
+String GetPost2()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Postal address, used in Japanese versions only.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String post2 = thing.GetPost2();
+```
+
+## GetPost3()
+
+```crmscript
+String GetPost3()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Postal address, used in Japanese versions only.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String post3 = thing.GetPost3();
+```
+
+## GetPrivatePhones()
+
+Returns a collection of phone numbers that belong to the contact person.
+
+```crmscript
+NSEntityElement[] GetPrivatePhones()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] privatePhones = thing.GetPrivatePhones();
+```
+
+## GetRetired()
+
+```crmscript
+Bool GetRetired()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is retired and should have no rights, not appear in lists, etc.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool retired = thing.GetRetired();
+```
+
+## GetSalutation()
+
+```crmscript
+String GetSalutation()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Academic title, populated from Salutation list but can be overwritten with anything at all.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String salutation = thing.GetSalutation();
+```
+
+## GetSentInfo()
+
+```crmscript
+Integer GetSentInfo()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Has information on username/password been sent (Service).
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer sentInfo = thing.GetSentInfo();
+```
+
+## GetShipmentTypes()
+
+The person's available and selected shipment types.
+
+```crmscript
+NSSelectableMDOListItem[] GetShipmentTypes()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSSelectableMDOListItem[] shipmentTypes = thing.GetShipmentTypes();
+```
+
+## GetShowContactTickets()
+
+```crmscript
+Integer GetShowContactTickets()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Should tickets related to the company be shown to this person.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer showContactTickets = thing.GetShowContactTickets();
+```
+
+## GetSource()
+
+```crmscript
+Integer GetSource()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How did we get this person? For future integration needs.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer source = thing.GetSource();
+```
+
+## GetSupportAssociate()
+
+```crmscript
+NSAssociate GetSupportAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate supportAssociate = thing.GetSupportAssociate();
+```
+
+## GetTicketPriority()
+
+```crmscript
+NSTicketPriority GetTicketPriority()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriority](CRMScript.NetServer.NSTicketPriority)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSTicketPriority ticketPriority = thing.GetTicketPriority();
+```
+
+## GetTitle()
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Title.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String title = thing.GetTitle();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the person object.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated date.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetUrls()
+
+```crmscript
+NSEntityElement[] GetUrls()
+```
+
+**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - The URLs related to this person.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] urls = thing.GetUrls();
+```
+
+## GetUsePersonAddress()
+
+```crmscript
+Bool GetUsePersonAddress()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the person's address should be used as mailing address, instead of the contact's address.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool usePersonAddress = thing.GetUsePersonAddress();
+```
+
+## GetUserDefinedFields()
+
+Gets the user-defined fields on the NSPersonEntity as a map.
+
+```crmscript
+Map GetUserDefinedFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Map fields = thing.GetUserDefinedFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetUserInfo()
+
+```crmscript
+NSUserInfo GetUserInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSUserInfo](CRMScript.NetServer.NSUserInfo) - Information about the user if this person is a user.  If IsAssociate (e.g. is user is true) the NSUserInfo will be provided.
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSUserInfo userInfo = thing.GetUserInfo();
+```
+
+## SetActiveErpLinks(Integer)
+
+```crmscript
+Void SetActiveErpLinks(Integer activeErpLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer activeErpLinks;
+thing.SetActiveErpLinks(activeErpLinks);
+```
+
+## SetActiveInterests(Integer)
+
+```crmscript
+Void SetActiveInterests(Integer activeInterests)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer activeInterests;
+thing.SetActiveInterests(activeInterests);
+```
+
+## SetAddress(NSAddress)
+
+Sets a formatted addressSets the structure holding formatted address data.
+
+```crmscript
+Void SetAddress(NSAddress address)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAddress address;
+thing.SetAddress(address);
+```
+
+## SetAssociate(NSAssociate)
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Usually blank. Use the Person.Contact.Associate instead. Intended for use when individual persons are created (i.e. when Person.Contact is blank)
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate associate;
+thing.SetAssociate(associate);
+```
+
+## SetBirthDate(DateTime)
+
+```crmscript
+Void SetBirthDate(DateTime birthDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime birthDate;
+thing.SetBirthDate(birthDate);
+```
+
+## SetBounceEmails(String[])
+
+```crmscript
+Void SetBounceEmails(String[] bounceEmails)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String[] bounceEmails;
+thing.SetBounceEmails(bounceEmails);
+```
+
+## SetBusiness(NSBusiness)
+
+```crmscript
+Void SetBusiness(NSBusiness business)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Usually blank. Use Contact.NSBusiness instead. Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSBusiness business;
+thing.SetBusiness(business);
+```
+
+## SetCategory(NSCategory)
+
+```crmscript
+Void SetCategory(NSCategory category)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Usually null. Refer to the Contact.NSCategory instead.  Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSCategory category;
+thing.SetCategory(category);
+```
+
+## SetChatEmails(NSEntityElement[])
+
+```crmscript
+Void SetChatEmails(NSEntityElement[] chatEmails)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] chatEmails;
+thing.SetChatEmails(chatEmails);
+```
+
+## SetConsents(NSConsentInfo[])
+
+```crmscript
+Void SetConsents(NSConsentInfo[] consents)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Missing consents are not deleted. To remove a consent, mark its legalbase as 'WITHDRAWN'
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSConsentInfo[] consents;
+thing.SetConsents(consents);
+```
+
+## SetContact(NSContact)
+
+```crmscript
+Void SetContact(NSContact contact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSContact contact;
+thing.SetContact(contact);
+```
+
+## SetCorrespondingAssociate(NSAssociate)
+
+```crmscript
+Void SetCorrespondingAssociate(NSAssociate correspondingAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Will be empty if the person is not a user (internal associate user, external user).
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate correspondingAssociate;
+thing.SetCorrespondingAssociate(correspondingAssociate);
+```
+
+## SetCountry(NSCountry)
+
+```crmscript
+Void SetCountry(NSCountry country)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSCountry country;
+thing.SetCountry(country);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetCustomerLanguage(NSCustomerLanguage)
+
+```crmscript
+Void SetCustomerLanguage(NSCustomerLanguage customerLanguage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSCustomerLanguage customerLanguage;
+thing.SetCustomerLanguage(customerLanguage);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on an NSPersonEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+udefs["x_foo"] = "foobar";
+udefs["x_bar"] = "456"; // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetDbiAgentId(Integer)
+
+```crmscript
+Void SetDbiAgentId(Integer dbiAgentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer dbiAgentId;
+thing.SetDbiAgentId(dbiAgentId);
+```
+
+## SetDbiKey(String)
+
+```crmscript
+Void SetDbiKey(String dbiKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String dbiKey;
+thing.SetDbiKey(dbiKey);
+```
+
+## SetDbiLastModified(DateTime)
+
+```crmscript
+Void SetDbiLastModified(DateTime dbiLastModified)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime dbiLastModified;
+thing.SetDbiLastModified(dbiLastModified);
+```
+
+## SetDbiLastSyncronized(DateTime)
+
+```crmscript
+Void SetDbiLastSyncronized(DateTime dbiLastSyncronized)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime dbiLastSyncronized;
+thing.SetDbiLastSyncronized(dbiLastSyncronized);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetEmails(NSEntityElement[])
+
+```crmscript
+Void SetEmails(NSEntityElement[] emails)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] emails;
+thing.SetEmails(emails);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on NSPersonEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Map extras;
+extras["SuperOffice:1"] = "[I:123]";
+extras["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+extras["custom.progid"] = "foobar";
+thing.SetExtraFields(extras);
+```
+
+## SetFaxes(NSEntityElement[])
+
+Returns a collection of fax numbers that belong to the contact person.
+
+```crmscript
+Void SetFaxes(NSEntityElement[] faxes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] faxes;
+thing.SetFaxes(faxes);
+```
+
+## SetFirstname(String)
+
+```crmscript
+Void SetFirstname(String firstname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String firstname;
+thing.SetFirstname(firstname);
+```
+
+## SetFormalName(String)
+
+Gets formal name for a person, as used in labels. (Full name + person title + academic title)
+
+```crmscript
+Void SetFormalName(String formalName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String formalName;
+thing.SetFormalName(formalName);
+```
+
+## SetFullName(String)
+
+```crmscript
+Void SetFullName(String fullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String fullName;
+thing.SetFullName(fullName);
+```
+
+## SetInterests(NSSelectableMDOListItem[])
+
+```crmscript
+Void SetInterests(NSSelectableMDOListItem[] interests)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSSelectableMDOListItem[] interests;
+thing.SetInterests(interests);
+```
+
+## SetInternetPhones(NSEntityElement[])
+
+```crmscript
+Void SetInternetPhones(NSEntityElement[] internetPhones)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] internetPhones;
+thing.SetInternetPhones(internetPhones);
+```
+
+## SetIsAssociate(Bool)
+
+Checks if the person object is an associate. The property is read-only.
+
+```crmscript
+Void SetIsAssociate(Bool isAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool isAssociate;
+thing.SetIsAssociate(isAssociate);
+```
+
+## SetKanafname(String)
+
+```crmscript
+Void SetKanafname(String kanafname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String kanafname;
+thing.SetKanafname(kanafname);
+```
+
+## SetKanalname(String)
+
+```crmscript
+Void SetKanalname(String kanalname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String kanalname;
+thing.SetKanalname(kanalname);
+```
+
+## SetLastname(String)
+
+```crmscript
+Void SetLastname(String lastname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String lastname;
+thing.SetLastname(lastname);
+```
+
+## SetMiddleName(String)
+
+```crmscript
+Void SetMiddleName(String middleName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String middleName;
+thing.SetMiddleName(middleName);
+```
+
+## SetMobilePhones(NSEntityElement[])
+
+Returns a collection of mobile phone numbers that belong to the contact person.
+
+```crmscript
+Void SetMobilePhones(NSEntityElement[] mobilePhones)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] mobilePhones;
+thing.SetMobilePhones(mobilePhones);
+```
+
+## SetMrmrs(String)
+
+```crmscript
+Void SetMrmrs(String mrmrs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String mrmrs;
+thing.SetMrmrs(mrmrs);
+```
+
+## SetNoMailing(Bool)
+
+```crmscript
+Void SetNoMailing(Bool noMailing)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool noMailing;
+thing.SetNoMailing(noMailing);
+```
+
+## SetOfficePhones(NSEntityElement[])
+
+Returns a collection of office phone numbers that belong to the contact person.
+
+```crmscript
+Void SetOfficePhones(NSEntityElement[] officePhones)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] officePhones;
+thing.SetOfficePhones(officePhones);
+```
+
+## SetOtherPhones(NSEntityElement[])
+
+Returns a collection of pagers that belong to the contact person.
+
+```crmscript
+Void SetOtherPhones(NSEntityElement[] otherPhones)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] otherPhones;
+thing.SetOtherPhones(otherPhones);
+```
+
+## SetPagers(NSEntityElement[])
+
+```crmscript
+Void SetPagers(NSEntityElement[] pagers)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetPersonNumber(String)
+
+```crmscript
+Void SetPersonNumber(String personNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String personNumber;
+thing.SetPersonNumber(personNumber);
+```
+
+## SetPosition(NSPosition)
+
+```crmscript
+Void SetPosition(NSPosition position)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSPosition position;
+thing.SetPosition(position);
+```
+
+## SetPost1(String)
+
+```crmscript
+Void SetPost1(String post1)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String post1;
+thing.SetPost1(post1);
+```
+
+## SetPost2(String)
+
+```crmscript
+Void SetPost2(String post2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String post2;
+thing.SetPost2(post2);
+```
+
+## SetPost3(String)
+
+```crmscript
+Void SetPost3(String post3)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String post3;
+thing.SetPost3(post3);
+```
+
+## SetPrivatePhones(NSEntityElement[])
+
+Returns a collection of phone numbers that belong to the contact person.
+
+```crmscript
+Void SetPrivatePhones(NSEntityElement[] privatePhones)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] privatePhones;
+thing.SetPrivatePhones(privatePhones);
+```
+
+## SetRetired(Bool)
+
+```crmscript
+Void SetRetired(Bool retired)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool retired;
+thing.SetRetired(retired);
+```
+
+## SetSalutation(String)
+
+```crmscript
+Void SetSalutation(String salutation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String salutation;
+thing.SetSalutation(salutation);
+```
+
+## SetSentInfo(Integer)
+
+```crmscript
+Void SetSentInfo(Integer sentInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer sentInfo;
+thing.SetSentInfo(sentInfo);
+```
+
+## SetShipmentTypes(NSSelectableMDOListItem[])
+
+```crmscript
+Void SetShipmentTypes(NSSelectableMDOListItem[] shipmentTypes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSSelectableMDOListItem[] shipmentTypes;
+thing.SetShipmentTypes(shipmentTypes);
+```
+
+## SetShowContactTickets(Integer)
+
+```crmscript
+Void SetShowContactTickets(Integer showContactTickets)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer showContactTickets;
+thing.SetShowContactTickets(showContactTickets);
+```
+
+## SetSource(Integer)
+
+```crmscript
+Void SetSource(Integer source)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+For future integration needs
+</Note>
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Integer source;
+thing.SetSource(source);
+```
+
+## SetSupportAssociate(NSAssociate)
+
+```crmscript
+Void SetSupportAssociate(NSAssociate supportAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate supportAssociate;
+thing.SetSupportAssociate(supportAssociate);
+```
+
+## SetTicketPriority(NSTicketPriority)
+
+```crmscript
+Void SetTicketPriority(NSTicketPriority ticketPriority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSTicketPriority ticketPriority;
+thing.SetTicketPriority(ticketPriority);
+```
+
+## SetTitle(String)
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+String title;
+thing.SetTitle(title);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+The person that last updated the person object
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetUrls(NSEntityElement[])
+
+```crmscript
+Void SetUrls(NSEntityElement[] urls)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSEntityElement[] urls;
+thing.SetUrls(urls);
+```
+
+## SetUsePersonAddress(Bool)
+
+```crmscript
+Void SetUsePersonAddress(Bool usePersonAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Bool usePersonAddress;
+thing.SetUsePersonAddress(usePersonAddress);
+```
+
+## SetUserDefinedFields(Map)
+
+Sets the user-defined fields on the NSPersonEntity as a map.
+
+```crmscript
+Void SetUserDefinedFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+thing.SetUserDefinedFields(udefs);
+```
+
+## SetUserInfo(NSUserInfo)
+
+```crmscript
+Void SetUserInfo(NSUserInfo userInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonEntity thing;
+NSUserInfo userInfo;
+thing.SetUserInfo(userInfo);
+```

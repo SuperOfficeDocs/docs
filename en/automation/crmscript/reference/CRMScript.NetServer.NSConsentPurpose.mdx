@@ -1,0 +1,430 @@
+﻿---
+uid: crmscript.netserver.nsconsentpurpose
+title: NSConsentPurpose
+description: "Carrier object for ConsentPurpose."
+keywords: CRMScript, NSConsentPurpose, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSConsentPurpose
+
+Carrier object for ConsentPurpose.
+
+## Constructors
+
+### NSConsentPurpose()
+
+```crmscript
+NSConsentPurpose
+```
+
+Initializes a new instance of the NSConsentPurpose class.
+
+## Methods
+
+## GetActive()
+
+```crmscript
+Integer GetActive()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Is the consent purpose active or not.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Integer active = thing.GetActive();
+```
+
+## GetConsentPurposeId()
+
+```crmscript
+Integer GetConsentPurposeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Integer consentPurposeId = thing.GetConsentPurposeId();
+```
+
+## GetConsentText()
+
+```crmscript
+String GetConsentText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Form text used for the actual checkbox.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String consentText = thing.GetConsentText();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if the NSConsentPurpose is deleted.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetFormText()
+
+```crmscript
+String GetFormText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text for the consent form, the long text to be shown when asking the end-user for this kind of consent.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String formText = thing.GetFormText();
+```
+
+## GetKey()
+
+```crmscript
+String GetKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The key used to refer to this purpose, like Process, Emarketing etc.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String key = thing.GetKey();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of consent purpose.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String name = thing.GetName();
+```
+
+## GetPrivacyStatementDesc()
+
+```crmscript
+String GetPrivacyStatementDesc()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name or description for the privacy statement.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String privacyStatementDesc = thing.GetPrivacyStatementDesc();
+```
+
+## GetPrivacyStatementUrl()
+
+```crmscript
+String GetPrivacyStatementUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URL referencing the actual privacy statement.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String privacyStatementUrl = thing.GetPrivacyStatementUrl();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank of this consent source.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - List item tooltip.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate that last updated the consent purpose.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date the consent purpose was last updated.
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## SetActive(Integer)
+
+```crmscript
+Void SetActive(Integer active)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Integer active;
+thing.SetActive(active);
+```
+
+## SetConsentPurposeId(Integer)
+
+```crmscript
+Void SetConsentPurposeId(Integer consentPurposeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Integer consentPurposeId;
+thing.SetConsentPurposeId(consentPurposeId);
+```
+
+## SetConsentText(String)
+
+```crmscript
+Void SetConsentText(String consentText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String consentText;
+thing.SetConsentText(consentText);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetFormText(String)
+
+```crmscript
+Void SetFormText(String formText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String formText;
+thing.SetFormText(formText);
+```
+
+## SetKey(String)
+
+```crmscript
+Void SetKey(String key)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String key;
+thing.SetKey(key);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPrivacyStatementDesc(String)
+
+```crmscript
+Void SetPrivacyStatementDesc(String privacyStatementDesc)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String privacyStatementDesc;
+thing.SetPrivacyStatementDesc(privacyStatementDesc);
+```
+
+## SetPrivacyStatementUrl(String)
+
+```crmscript
+Void SetPrivacyStatementUrl(String privacyStatementUrl)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String privacyStatementUrl;
+thing.SetPrivacyStatementUrl(privacyStatementUrl);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPurpose thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```

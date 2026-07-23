@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsimportcolumninfo
+title: NSImportColumnInfo
+description: "Column info for import lines."
+keywords: CRMScript, NSImportColumnInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSImportColumnInfo
+
+Column info for import lines.
+
+## Constructors
+
+### NSImportColumnInfo()
+
+```crmscript
+NSImportColumnInfo
+```
+
+Initializes a new instance of the NSImportColumnInfo class.
+
+## Methods
+
+## GetDisplayName()
+
+```crmscript
+String GetDisplayName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display name of the column.
+
+**Example:**
+
+```crmscript
+NSImportColumnInfo thing;
+String displayName = thing.GetDisplayName();
+```
+
+## GetLocked()
+
+```crmscript
+Bool GetLocked()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true disable the option of choose column.
+
+**Example:**
+
+```crmscript
+NSImportColumnInfo thing;
+Bool locked = thing.GetLocked();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the column.
+
+**Example:**
+
+```crmscript
+NSImportColumnInfo thing;
+String name = thing.GetName();
+```
+
+## SetDisplayName(String)
+
+```crmscript
+Void SetDisplayName(String displayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportColumnInfo thing;
+String displayName;
+thing.SetDisplayName(displayName);
+```
+
+## SetLocked(Bool)
+
+```crmscript
+Void SetLocked(Bool locked)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportColumnInfo thing;
+Bool locked;
+thing.SetLocked(locked);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportColumnInfo thing;
+String name;
+thing.SetName(name);
+```

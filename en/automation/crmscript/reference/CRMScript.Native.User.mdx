@@ -1,0 +1,329 @@
+﻿---
+uid: crmscript.native.user
+title: User
+description: "Class for representing a user."
+keywords: CRMScript, User, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# User
+
+Class for representing a user.
+
+## Constructors
+
+### User()
+
+```crmscript
+User
+```
+
+Class for representing a user.
+
+## Methods
+
+## getValue(String)
+
+Gets the value of a given column.
+
+```crmscript
+String getValue(String colName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Returns a string with value in given column.
+
+<Note>
+### Possible values:
+
+| Value | Type | Description |
+|---|---|---|
+| id | Integer | The primary key (auto-incremented) |
+| loginname | String | The unique loginname for this user. |
+| username | String | The unique username for this user. |
+| password | String | The encrypted password for this user. |
+| firstname | String | The firstname for this user. |
+| middlename | String | The middlename for this user. |
+| lastname | String | The lastname for this user. |
+| email | String | The email address for this user. |
+| status | Integer | The status (enum) for this user. 1 is Active; 2 is Not Present; 3 is deleted |
+| signature | String | The users signature. |
+| language | String | A string indicating the user's language. See list below for values. |
+| flags | Integer | A bitmask indicating flags for this entry. |
+| lastCategory | Integer | The last chosen category for this user when posting tickets. category.id |
+| pictureId | Integer | The attachment ID of the picture for this user. |
+| defaultUser | Integer | The default user to set on new tickets in this category (1=automatically; 2=unassigned; 3=the owner) |
+| initials | String | Obsolete field. Cannot be removed because of not null error on older systems |
+| group | Integer | The group ID of the primary group which this user belongs to |
+| role | Integer | The role ID of the role this user belongs to |
+| associateId | Integer | The corresponding associate id for this user |
+| ownerCompany | Integer | the contact ID of the owning company of the users' connected person entity. |
+| x_* |  | The extrafield with the given database field name. |
+
+### Language values:
+
+| Value | Description |
+|---|---|
+| 0 | Norwegian |
+| 1 | English |
+| 2 | German |
+| 3 | Swedish |
+| 4 | Danish |
+| 5 | Dutch |
+| 6 | French |
+| 7 | Spanish |
+| 8 | Italian |
+| 9 | Czech |
+| 10 | Finnish |
+| 11 | Polish |
+| 12 | Russian |
+| 13 | Ukrainian |
+
+### Status: (Indicated by enums):
+
+| Flag | Value |
+|---|---|
+| StatusNone | 0 |
+| StatusNormal | 1 |
+| StatusNotAvailable | 2 |
+| StatusDeleted | 3 |
+| StatusReadOnly | 4 |
+| StatusSpm | 5 |
+| StatusSystem | 127 |
+
+### The different notify masks: (Indicated by bit enums):
+
+| Flag | Value |
+|---|---|
+| NewTicket | 1 |
+| NewTicketMessage | 2 |
+| TicketEscalated | 3 |
+| TicketActivated | 4 |
+| ActiveTickets | 5 //only used as a filter (ejuser) |
+| TicketTakeOver | 6 |
+| Hotlist | 9 //only used as a filter (ejuser) |
+| Custom | 10 |
+
+### Access flags:
+
+| Flag | Value |
+|---|---|
+| AccessNone | 0 (value 0) |
+| AccessListOthers | 0 bit number 1) |
+| AccessReadOthers | 1 |
+| AccessEditOthers | 2 |
+| AccessEditOwnPref | 3 |
+| AccessCategoryAdministration | 4 |
+| AccessUserAdministration | 5 |
+| AccessEjournalAdministration | 6 |
+| AccessStatistics | 7 |
+| AccessDocuments | 8 |
+| AccessJustCategory | 9 //obsolete |
+| AccessEditProfile | 10 |
+| AccessListOnlyOwn | 11 |
+| AccessReadOnlyOwn | 12 |
+| AccessEditOnlyOwn | 13 |
+| AccessChat | 14 |
+| AccessChatAdmin | 15 |
+| AccessSpm | 16 |
+| AccessEditFaq | 17 |
+| AccessFaqAdmin | 18 |
+| AccessListExtraTablesContent | 19 |
+| AccessEditExtraTablesContent | 20 |
+| AccessReadSelections | 21 |
+| AccessEditSelections | 22 |
+| AccessPostToFacebook | 23 |
+
+### User flags:
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;None&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLastCategory&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultTicketClose&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultMessageClose&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SortDesc&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PreviewImages&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyOwnCategories&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SmallFonts&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsertLastMessage&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowQuickSearch&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Use24HrsClock&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AddMessageNewWindow&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyShowOpenTicketsInHotlist&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLocalClock&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HighlightActiveScreenElement&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayOwnCategories&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressWarnOnNavigate&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressPreviewWarning&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PlainTextEditor&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FckEditorSingleLineBreak&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CustomDateFormat&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SundayFirstDayInWeek&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OldScreensOnEditTicket&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;KeepFormattingOnPaste&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayCheckboxLeft&lt;/td&gt;&lt;td&gt;24&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowMessagesAsPlainText&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWinLicense&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWebLicense&lt;/td&gt;&lt;td&gt;27&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSpmCal&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasMailMergeCal&lt;/td&gt;&lt;td&gt;29&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasChatCal&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+</Note>
+
+## hasTicketAccess(Integer,Integer)
+
+Returns true if the user have at least the given access to the given ticket id.
+
+```crmscript
+Bool hasTicketAccess(Integer ticketId, Integer accessLevel)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## isAdministrator()
+
+Returns true if the user is an administrator, false if not.
+
+```crmscript
+Bool isAdministrator()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## isLoggedIn(Integer)
+
+Checks if a user is logged in or not.
+
+```crmscript
+Bool isLoggedIn(Integer origin)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## load(Integer)
+
+Loads a user from the database
+
+```crmscript
+Bool load(Integer p_id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is loaded successfully.
+
+## loadFromAgentAndKey(Integer,String)
+
+Loads a user from an Agent with userId and the Agent's key.
+
+```crmscript
+Bool loadFromAgentAndKey(Integer id, String Key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is loaded successfully.
+
+## save()
+
+Saves a user object to the database, returns the ID of the user.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Returns the ID of the user.
+
+## setValue(String,String,String)
+
+Sets a value in a given column.
+
+```crmscript
+Void setValue(String column, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+### Possible values:
+
+| Value | Type | Description |
+|---|---|---|
+| id | Integer | The primary key (auto-incremented) |
+| loginname | String | The unique loginname for this user. |
+| username | String | The unique username for this user. |
+| password | String | The encrypted password for this user. |
+| firstname | String | The firstname for this user. |
+| middlename | String | The middlename for this user. |
+| lastname | String | The lastname for this user. |
+| email | String | The email address for this user. |
+| status | Integer | The status (enum) for this user. 1 is Active; 2 is Not Present; 3 is deleted |
+| signature | String | The users signature. |
+| language | String | A string indicating the user's language. See list below for values. |
+| flags | Integer | A bitmask indicating flags for this entry. |
+| lastCategory | Integer | The last chosen category for this user when posting tickets. category.id |
+| pictureId | Integer | The attachment ID of the picture for this user. |
+| defaultUser | Integer | The default user to set on new tickets in this category (1=automatically; 2=unassigned; 3=the owner) |
+| initials | String | Obsolete field. Cannot be removed because of not null error on older systems. |
+| group | Integer | The group ID of the primary group which this user belongs to |
+| role | Integer | The role ID of the role this user belongs to |
+| associateId | Integer | The corresponding associate id for this user |
+| ownerCompany | Integer | the contact ID of the owning company of the users' connected person entity. |
+| x_* |  | The extrafield with the given database field name. |
+
+### Language values:
+
+| Value | Description |
+|---|---|
+| 0 | Norwegian |
+| 1 | English |
+| 2 | German |
+| 3 | Swedish |
+| 4 | Danish |
+| 5 | Dutch |
+| 6 | French |
+| 7 | Spanish |
+| 8 | Italian |
+| 9 | Czech |
+| 10 | Finnish |
+| 11 | Polish |
+| 12 | Russian |
+| 13 | Ukrainian |
+
+### Status: (Indicated by enums):
+
+| Flag | Value |
+|---|---|
+| StatusNone | 0 |
+| StatusNormal | 1 |
+| StatusNotAvailable | 2 |
+| StatusDeleted | 3 |
+| StatusReadOnly | 4 |
+| StatusSpm | 5 |
+| StatusSystem | 127 |
+
+### The different notify masks: (Indicated by bit enums):
+
+| Flag | Value |
+|---|---|
+| NewTicket | 1 |
+| NewTicketMessage | 2 |
+| TicketEscalated | 3 |
+| TicketActivated | 4 |
+| ActiveTickets | 5 //only used as a filter (ejuser) |
+| TicketTakeOver | 6 |
+| Hotlist | 9 //only used as a filter (ejuser) |
+| Custom | 10 |
+
+### Access flags:
+
+| Flag | Value |
+|---|---|
+| AccessNone | 0 (value 0) |
+| AccessListOthers | 0 bit number 1) |
+| AccessReadOthers | 1 |
+| AccessEditOthers | 2 |
+| AccessEditOwnPref | 3 |
+| AccessCategoryAdministration | 4 |
+| AccessUserAdministration | 5 |
+| AccessEjournalAdministration | 6 |
+| AccessStatistics | 7 |
+| AccessDocuments | 8 |
+| AccessJustCategory | 9 //obsolete |
+| AccessEditProfile | 10 |
+| AccessListOnlyOwn | 11 |
+| AccessReadOnlyOwn | 12 |
+| AccessEditOnlyOwn | 13 |
+| AccessChat | 14 |
+| AccessChatAdmin | 15 |
+| AccessSpm | 16 |
+| AccessEditFaq | 17 |
+| AccessFaqAdmin | 18 |
+| AccessListExtraTablesContent | 19 |
+| AccessEditExtraTablesContent | 20 |
+| AccessReadSelections | 21 |
+| AccessEditSelections | 22 |
+| AccessPostToFacebook | 23 |
+
+### User flags:
+
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;None&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLastCategory&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultTicketClose&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultMessageClose&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SortDesc&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PreviewImages&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyOwnCategories&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SmallFonts&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsertLastMessage&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowQuickSearch&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Use24HrsClock&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AddMessageNewWindow&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyShowOpenTicketsInHotlist&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLocalClock&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HighlightActiveScreenElement&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayOwnCategories&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressWarnOnNavigate&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressPreviewWarning&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PlainTextEditor&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FckEditorSingleLineBreak&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CustomDateFormat&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SundayFirstDayInWeek&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OldScreensOnEditTicket&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;KeepFormattingOnPaste&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayCheckboxLeft&lt;/td&gt;&lt;td&gt;24&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowMessagesAsPlainText&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWinLicense&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWebLicense&lt;/td&gt;&lt;td&gt;27&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSpmCal&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasMailMergeCal&lt;/td&gt;&lt;td&gt;29&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasChatCal&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+</Note>
+
+## toParser(Parser)
+
+Loads a user and returns it to a given Parser.
+
+```crmscript
+Void toParser(Parser parser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nsdeliveryterm
+title: NSDeliveryTerm
+description: "The built-in delivery terms list. Used by the SuperOffice Quote Connector in quote versions."
+keywords: CRMScript, NSDeliveryTerm, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDeliveryTerm
+
+The built-in delivery terms list. Used by the SuperOffice Quote Connector in quote versions.
+
+## Constructors
+
+### NSDeliveryTerm()
+
+```crmscript
+NSDeliveryTerm
+```
+
+Initializes a new instance of the NSDeliveryTerm class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSDeliveryTerm
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSDeliveryTerm thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSDeliveryTerm list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDeliveryTerm thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSDeliveryTerm.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDeliveryTerm thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSDeliveryTerm
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDeliveryTerm thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSDeliveryTerm list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDeliveryTerm thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSDeliveryTerm item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDeliveryTerm thing;
+thing.SetValue("frotz");
+```

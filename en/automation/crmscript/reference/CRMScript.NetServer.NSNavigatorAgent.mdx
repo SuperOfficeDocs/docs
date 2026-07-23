@@ -1,0 +1,78 @@
+﻿---
+uid: crmscript.netserver.nsnavigatoragent
+title: NSNavigatorAgent
+description: "Navigator stuff."
+keywords: CRMScript, NSNavigatorAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSNavigatorAgent
+
+Navigator stuff.
+
+## Constructors
+
+### NSNavigatorAgent()
+
+```crmscript
+NSNavigatorAgent
+```
+
+Navigator stuff.
+
+## Methods
+
+## GetNavigatorCompanies(String)
+
+```crmscript
+NSNavigatorCompany[] GetNavigatorCompanies(String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSNavigatorCompany](CRMScript.NetServer.NSNavigatorCompany)[]
+
+**Example:**
+
+```crmscript
+NSNavigatorAgent agent;
+String name = "";
+NSNavigatorCompany[] thing = agent.GetNavigatorCompanies(name);
+```
+
+## GetNavigatorCompany(Integer)
+
+Gets an NSNavigatorCompany object.
+
+```crmscript
+NSNavigatorCompany GetNavigatorCompany(Integer navigatorCompanyId)
+```
+
+**Returns:** [CRMScript.NetServer.NSNavigatorCompany](CRMScript.NetServer.NSNavigatorCompany)
+
+**Example:**
+
+```crmscript
+NSNavigatorAgent agent;
+NSNavigatorCompany thing = agent.GetNavigatorCompany(123);
+```
+
+## GetNavigatorCompanyList(Integer[])
+
+Gets an array of NSNavigatorCompany objects.
+
+```crmscript
+NSNavigatorCompany[] GetNavigatorCompanyList(Integer[]  navigatorCompanyIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSNavigatorCompany](CRMScript.NetServer.NSNavigatorCompany)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSNavigatorAgent agent;
+agent.GetNavigatorCompanyList(ids);
+```

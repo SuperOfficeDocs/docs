@@ -1,0 +1,354 @@
+﻿---
+uid: crmscript.native.map
+title: Map
+description: "A map is a collection of key-value pairs. Both the key and the value are strings."
+keywords: CRMScript, Map, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Map
+
+A map is a collection of key-value pairs. Both the key and the value are strings.
+
+The elements in a map are automatically sorted on their keys.
+
+The Map class supports two constructors. The default constructor accepts no parameters and initializes a Map with an empty key-value pair collection. The other constructor accepts a String.
+
+## Constructors
+
+### Map()
+
+```crmscript
+Map Map()
+```
+
+The default constructor. Called with no parameters, it creates an empty Map.
+
+### Map(String)
+
+```crmscript
+Map Map(String value)
+```
+
+Pass a String containing key-value pairs separated by "\
+" like this: "key=value\
+key=value\
+key=value,..."
+
+## Methods
+
+## insert(String, String)
+
+Adds a new key-value pair to the map.
+
+```crmscript
+Map insert(String key, String value)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A reference to itself.
+
+<Note>
+This function will reset the internal iterator in the map.
+</Note>
+
+**Example:**
+
+```crmscript
+Map m;
+m.insert("Super", "Office");
+```
+
+## exists(String)
+
+Checks if the map contains the given key.
+
+```crmscript
+Bool exists(String key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the key exists in the map.
+
+**Example:**
+
+```crmscript
+Map m = Map("height = 25\
+width = 10\
+depth = 7");
+String key = "height";
+printLine(m.exists(key).toString());
+```
+
+## size()
+
+Counts the elements in the map and returns that number.
+
+```crmscript
+Integer size()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of elements in the map.
+
+<Note>
+An empty map has size == 0.
+</Note>
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10\
+depth=7");
+printLine(m.size().toString());
+```
+
+## get(String)
+
+Returns the value for the given key.
+
+```crmscript
+String get(String key)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given key.
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+String key = depth;
+printLine(m.get(key));
+```
+
+## getKey()
+
+Returns the key pointed to by the map iterator.
+
+```crmscript
+String getKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The key pointed to by the internal iterator.
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+printLine(m.getKey());
+```
+
+## getVal()
+
+Returns the value pointed to by the map iterator.
+
+```crmscript
+String getVal()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value pointed to by the internal iterator.
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+printLine(m.getVal());
+```
+
+## getWithFallback(String, String)
+
+Returns the fallback value if key does not exist.
+
+```crmscript
+String getWithFallback(String key, String fallback)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of key, or fallback value if key does not exist.
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+printLine(m.getWithFallback("foo", "bar"));
+```
+
+## increaseValueForKey(String, Integer)
+
+When working with numeric strings, you can increment values stored in the map. Provide the key to look up the element and the value to add to the currently stored value.
+
+```crmscript
+Void increaseValueForKey(String key, Integer value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can pass the increment as either Integer or Float.
+</Note>
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+m.increaseValueForKey("height", -5);
+```
+
+## increaseValueForKey(String, Float)
+
+When working with numeric strings, you can increment values stored in the map. Provide the key to look up the element and the value to add to the currently stored value.
+
+```crmscript
+Void increaseValueForKey(String key, Float value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can pass the increment as either Integer or Float.
+</Note>
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+m.increaseValueForKey("height", 2.5);
+```
+
+## remove(String)
+
+Removes the element with the given key.
+
+```crmscript
+Void remove(String key)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Map m = Map("roses = red\
+violets = blue");
+m.remove("violets");
+```
+
+## clear()
+
+Removes all elements from the map.
+
+```crmscript
+Void clear()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Map m = Map("roses = red\
+violets = blue");
+m.clear();
+```
+
+## eof()
+
+Returns true if the map iterator has moved past the end of the map, otherwise false.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the internal iterator is past the end of the map, otherwise False.
+
+<Note>
+That eof() returns true is not the same as the map is empty. It can be, but it doesn't have to be. Use size() to check if the map is truly empty.
+</Note>
+
+**Example:**
+
+```crmscript
+Map m;
+if (m.eof()) {
+\tprintLine("You have reached the final frontier");
+}
+```
+
+## first()
+
+Rewinds the internal iterator to the 1st element. Returns false if the map is empty.
+
+```crmscript
+Bool first()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if map is not empty, otherwise false.
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+m.first();
+```
+
+## next()
+
+Moves the map iterator to next position. Returns false if eof().
+
+```crmscript
+Bool next()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if eof(), otherwise true.
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+m.next();
+```
+
+## toJson()
+
+Converts the Map to JSON.
+
+```crmscript
+String toJson()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The Map represented as JSON string.
+
+**Example:**
+
+```crmscript
+Map m = Map("height=25\
+width=10");
+printLine(m.toJson());
+```
+
+## fromJson(String)
+
+Converts a JSON string to a map. Format: `{"key": "value", "foo": "bar"}`
+
+```crmscript
+Void fromJson(String json)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+String s = "{"depth":"7","height":"20","width":"12.500000"}";
+Map m;
+m.fromJson(s);
+```

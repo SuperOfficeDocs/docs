@@ -1,0 +1,31 @@
+﻿---
+uid: crmscript.netserver.ticketcategorydelegatemethod
+title: Enum TicketCategoryDelegateMethod
+description: "The delegate method used for request assigned to this category"
+keywords: CRMScript, TicketCategoryDelegateMethod, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum TicketCategoryDelegateMethod
+
+The delegate method used for request assigned to this category
+
+## Syntax
+
+```crmscript
+TicketCategoryDelegateMethod
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | The delegate method is unknown, should normally not occure in the database |
+| Even | Delegate request even among the members of the category |
+| Weighted | Use weights on each member of the category when delegating requests |
+| Unfair | The user with the least active request will be delegated the request |
+| Not | Do not delegate request. Instead set them as unassigned |

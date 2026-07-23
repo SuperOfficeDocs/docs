@@ -1,0 +1,35 @@
+﻿---
+uid: crmscript.netserver.udeftype
+title: Enum UDefType
+description: "Same as the EUDefType enum in the C++ client, this is the DATABASE value used for udef definitions"
+keywords: CRMScript, UDefType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum UDefType
+
+Same as the EUDefType enum in the C++ client, this is the DATABASE value used for udef definitions
+
+## Syntax
+
+```crmscript
+UDefType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Invalid | Invalid |
+| Contact | Owner is the contact table |
+| Person | Owner is the Person table |
+| Project | Owner is the project table |
+| Sale | Owner is the sale table |
+| Temp | This is the temporary udef table pair, used during reorganizations |
+| Appointment | Owner is the appointment table |
+| Document | Owner is the document table |
+| None | Owner is undefined, you should not see this value in a real database |

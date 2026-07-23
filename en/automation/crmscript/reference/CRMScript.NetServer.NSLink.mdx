@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nslink
+title: NSLink
+description: "Links two entities (contacts/projects/sales/URLs) together."
+keywords: CRMScript, NSLink, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSLink
+
+Links two entities (contacts/projects/sales/URLs) together.
+
+## Constructors
+
+### NSLink()
+
+```crmscript
+NSLink
+```
+
+Initializes a new instance of the NSLink class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Link description.
+
+**Example:**
+
+```crmscript
+NSLink thing;
+String description = thing.GetDescription();
+```
+
+## GetEntityName()
+
+```crmscript
+String GetEntityName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the entity the link points to (The destination/target entity).
+
+**Example:**
+
+```crmscript
+NSLink thing;
+String entityName = thing.GetEntityName();
+```
+
+## GetExtraInfo()
+
+```crmscript
+String GetExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Extrainfo for link. Use for information that does not have a primary key.
+
+**Example:**
+
+```crmscript
+NSLink thing;
+String extraInfo = thing.GetExtraInfo();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the entity the link points to (The destination/target entity primary key).
+
+**Example:**
+
+```crmscript
+NSLink thing;
+Integer id = thing.GetId();
+```
+
+## GetLinkId()
+
+```crmscript
+Integer GetLinkId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSLink thing;
+Integer linkId = thing.GetLinkId();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLink thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetEntityName(String)
+
+```crmscript
+Void SetEntityName(String entityName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLink thing;
+String entityName;
+thing.SetEntityName(entityName);
+```
+
+## SetExtraInfo(String)
+
+```crmscript
+Void SetExtraInfo(String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLink thing;
+String extraInfo;
+thing.SetExtraInfo(extraInfo);
+```
+
+## SetId(Integer)
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLink thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetLinkId(Integer)
+
+```crmscript
+Void SetLinkId(Integer linkId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLink thing;
+Integer linkId;
+thing.SetLinkId(linkId);
+```

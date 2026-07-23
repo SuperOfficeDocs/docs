@@ -1,0 +1,500 @@
+﻿---
+uid: crmscript.netserver.nsstatusmonitor
+title: NSStatusMonitor
+description: "Definition of all properties for a status monitor."
+keywords: CRMScript, NSStatusMonitor, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSStatusMonitor
+
+Definition of all properties for a status monitor.
+
+## Constructors
+
+### NSStatusMonitor()
+
+```crmscript
+NSStatusMonitor
+```
+
+Initializes a new instance of the NSStatusMonitor class.
+
+## Methods
+
+## GetDefaultTask()
+
+```crmscript
+Integer GetDefaultTask()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default task type for this status.
+
+<Note>
+The default task text is in the text table (since it can be long), and may contain template variables
+</Note>
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer defaultTask = thing.GetDefaultTask();
+```
+
+## GetDefaultTaskText()
+
+```crmscript
+String GetDefaultTaskText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default task text for this status.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+String defaultTaskText = thing.GetDefaultTaskText();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Deleted flag, 1 if this record is deleted (never from the database).
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the status monitor.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+String description = thing.GetDescription();
+```
+
+## GetGenerationStart()
+
+```crmscript
+DateTime GetGenerationStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was the last regeneration started.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+DateTime generationStart = thing.GetGenerationStart();
+```
+
+## GetIsVisual()
+
+```crmscript
+Bool GetIsVisual()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should the status be visualized (active) in the client.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Bool isVisual = thing.GetIsVisual();
+```
+
+## GetLastGenerated()
+
+```crmscript
+DateTime GetLastGenerated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was this status last generated (i.e., statusValue rows created).
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+DateTime lastGenerated = thing.GetLastGenerated();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of status monitor.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+String name = thing.GetName();
+```
+
+## GetNeedsUpdate()
+
+```crmscript
+Bool GetNeedsUpdate()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the definition dirty, ie., ALL values are invalid until a recalculation; this flag is set when the status DEFINITION is changed, as opposed to the flag on StatusValue.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Bool needsUpdate = thing.GetNeedsUpdate();
+```
+
+## GetNumMatches()
+
+```crmscript
+Integer GetNumMatches()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of targets that have this status, this should be the number of rows in StatusValue pointing to this definition, and that have isSignalled set to 1
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer numMatches = thing.GetNumMatches();
+```
+
+## GetNumNeedUpdate()
+
+```crmscript
+Integer GetNumNeedUpdate()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of targets that had this status, but have their needsUpdate bit set due to some change.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer numNeedUpdate = thing.GetNumNeedUpdate();
+```
+
+## GetOwnerTable()
+
+```crmscript
+Integer GetOwnerTable()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of table that owns the status monitor.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer ownerTable = thing.GetOwnerTable();
+```
+
+## GetPictureId()
+
+```crmscript
+Integer GetPictureId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of BinaryObject row that contains image for status monitor.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer pictureId = thing.GetPictureId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Priority rank, in case more than one status is signalled. Lowest wins.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer rank = thing.GetRank();
+```
+
+## GetStatusMonitorId()
+
+```crmscript
+Integer GetStatusMonitorId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer statusMonitorId = thing.GetStatusMonitorId();
+```
+
+## SetDefaultTask(Integer)
+
+```crmscript
+Void SetDefaultTask(Integer defaultTask)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The default task text is in the text table (since it can be long), and may contain template variables
+</Note>
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer defaultTask;
+thing.SetDefaultTask(defaultTask);
+```
+
+## SetDefaultTaskText(String)
+
+```crmscript
+Void SetDefaultTaskText(String defaultTaskText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+String defaultTaskText;
+thing.SetDefaultTaskText(defaultTaskText);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetGenerationStart(DateTime)
+
+```crmscript
+Void SetGenerationStart(DateTime generationStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+DateTime generationStart;
+thing.SetGenerationStart(generationStart);
+```
+
+## SetIsVisual(Bool)
+
+```crmscript
+Void SetIsVisual(Bool isVisual)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Bool isVisual;
+thing.SetIsVisual(isVisual);
+```
+
+## SetLastGenerated(DateTime)
+
+```crmscript
+Void SetLastGenerated(DateTime lastGenerated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+DateTime lastGenerated;
+thing.SetLastGenerated(lastGenerated);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+String name;
+thing.SetName(name);
+```
+
+## SetNeedsUpdate(Bool)
+
+```crmscript
+Void SetNeedsUpdate(Bool needsUpdate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Bool needsUpdate;
+thing.SetNeedsUpdate(needsUpdate);
+```
+
+## SetNumMatches(Integer)
+
+```crmscript
+Void SetNumMatches(Integer numMatches)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer numMatches;
+thing.SetNumMatches(numMatches);
+```
+
+## SetNumNeedUpdate(Integer)
+
+```crmscript
+Void SetNumNeedUpdate(Integer numNeedUpdate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer numNeedUpdate;
+thing.SetNumNeedUpdate(numNeedUpdate);
+```
+
+## SetOwnerTable(Integer)
+
+```crmscript
+Void SetOwnerTable(Integer ownerTable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer ownerTable;
+thing.SetOwnerTable(ownerTable);
+```
+
+## SetPictureId(Integer)
+
+```crmscript
+Void SetPictureId(Integer pictureId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer pictureId;
+thing.SetPictureId(pictureId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetStatusMonitorId(Integer)
+
+```crmscript
+Void SetStatusMonitorId(Integer statusMonitorId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatusMonitor thing;
+Integer statusMonitorId;
+thing.SetStatusMonitorId(statusMonitorId);
+```

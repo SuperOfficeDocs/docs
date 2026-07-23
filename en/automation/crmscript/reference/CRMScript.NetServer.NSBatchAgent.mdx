@@ -1,0 +1,216 @@
+﻿---
+uid: crmscript.netserver.nsbatchagent
+title: NSBatchAgent
+description: "Start, stop and monitor predefined batch tasks."
+keywords: CRMScript, NSBatchAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSBatchAgent
+
+Start, stop and monitor predefined batch tasks.
+
+## Constructors
+
+### NSBatchAgent()
+
+```crmscript
+NSBatchAgent
+```
+
+Initializes a new instance of the NSBatchAgent class.
+
+## Methods
+
+## DeleteBatchTask(Integer)
+
+Deletes a batch task from the database.
+
+```crmscript
+Void DeleteBatchTask(Integer batchTaskId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteBatchTasks(Integer[])
+
+Deletes batch tasks from the database.
+
+```crmscript
+Void DeleteBatchTasks(Integer[] batchTaskIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetBatchTaskInfo(Integer)
+
+Gets a single NSBatchTaskInfo based on ID.
+
+```crmscript
+NSBatchTaskInfo GetBatchTaskInfo(Integer id)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo) - A BatchTaskInfo.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+Integer id;
+NSBatchTaskInfo res = agent.GetBatchTaskInfo(id);
+```
+
+## GetBatchTaskInfosByAssociates(Integer[])
+
+Gets an array of NSBatchTaskInfo for the provided associate IDs.
+
+```crmscript
+NSBatchTaskInfo[] GetBatchTaskInfosByAssociates(Integer[] associateIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+Integer[] associateIds;
+NSBatchTaskInfo[] res = agent.GetBatchTaskInfosByAssociates(associateIds);
+```
+
+## GetBatchTaskInfosByAssociatesAndState(Integer[],Integer)
+
+Gets an array of NSBatchTaskInfo for the provided associate IDs and batch task state.
+
+```crmscript
+NSBatchTaskInfo[] GetBatchTaskInfosByAssociatesAndState(Integer[] associateIds, Integer state)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+Integer[] associateIds;
+Integer state;
+NSBatchTaskInfo[] res = agent.GetBatchTaskInfosByAssociatesAndState(associateIds, state);
+```
+
+## GetBatchTaskInfosByNameAndAssociates(String,Integer[])
+
+Gets an array of NSBatchTaskInfo for the provided associate IDs and batch task definition name.
+
+```crmscript
+NSBatchTaskInfo[] GetBatchTaskInfosByNameAndAssociates(String name, Integer[] associateIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+String name;
+Integer[] associateIds;
+NSBatchTaskInfo[] res = agent.GetBatchTaskInfosByNameAndAssociates(name, associateIds);
+```
+
+## GetBatchTaskInfosByNameAndState(String,Integer)
+
+Gets an array of NSBatchTaskInfo with state defined by a BatchTaskState and the batchtask definition name.
+
+```crmscript
+NSBatchTaskInfo[] GetBatchTaskInfosByNameAndState(String name, Integer state)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+String name;
+Integer state;
+NSBatchTaskInfo[] res = agent.GetBatchTaskInfosByNameAndState(name, state);
+```
+
+## GetBatchTaskInfosByState(Integer)
+
+Gets an array of NSBatchTaskInfo with state defined by a BatchTaskState.
+
+```crmscript
+NSBatchTaskInfo[] GetBatchTaskInfosByState(Integer state)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+Integer state;
+NSBatchTaskInfo[] res = agent.GetBatchTaskInfosByState(state);
+```
+
+## StartBatchJob(NSBatchTaskInfo)
+
+Starts a batch job based on NSBatchTaskInfo.
+
+```crmscript
+Integer StartBatchJob(NSBatchTaskInfo batchTaskInfo)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the created batch job.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+NSBatchTaskInfo batchTaskInfo;
+Integer res = agent.StartBatchJob(batchTaskInfo);
+```
+
+## StopBatchJob(Integer)
+
+Stops a batch job based on ID.
+
+```crmscript
+Bool StopBatchJob(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if the job was stopped successfully.
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+Integer id;
+Bool res = agent.StopBatchJob(id);
+```
+
+## UpdateBatchTask(NSBatchTaskInfo)
+
+Updates information about a BatchTask.
+
+```crmscript
+NSBatchTaskInfo UpdateBatchTask(NSBatchTaskInfo batchTaskInfo)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo) - The updated BatchTaskInfo.
+
+<Note>
+Only the following properties can be updated: State, Description, Response and Request.
+</Note>
+
+**Example:**
+
+```crmscript
+NSBatchAgent agent;
+NSBatchTaskInfo batchTaskInfo;
+NSBatchTaskInfo res = agent.UpdateBatchTask(batchTaskInfo);
+```

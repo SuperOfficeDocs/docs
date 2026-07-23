@@ -1,0 +1,167 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfolongtext
+title: NSFieldInfoLongText
+description: "Long Text custom database field."
+keywords: CRMScript, NSFieldInfoLongText, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoLongText
+
+Long Text custom database field.
+
+## Constructors
+
+### NSFieldInfoLongText()
+
+```crmscript
+NSFieldInfoLongText
+```
+
+Initializes a new instance of the NSFieldInfoLongText class.
+
+## Methods
+
+## GetChoices()
+
+```crmscript
+String[] GetChoices()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - List of items to choose from. Null = not a dropdown list.
+
+## GetDefaultValue()
+
+```crmscript
+String GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default string value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+String defaultValue = thing.GetDefaultValue();
+```
+
+## GetIsHtml()
+
+```crmscript
+Bool GetIsHtml()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Do not escape HTML in field when displaying contents.
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+Bool isHtml = thing.GetIsHtml();
+```
+
+## GetNumRows()
+
+```crmscript
+Integer GetNumRows()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of lines of text to show. Text area height.
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+Integer numRows = thing.GetNumRows();
+```
+
+## GetUseTextArea()
+
+```crmscript
+Bool GetUseTextArea()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Use a multi-line text area?
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+Bool useTextArea = thing.GetUseTextArea();
+```
+
+## SetChoices(String[])
+
+```crmscript
+Void SetChoices(String[] choices)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetDefaultValue(String)
+
+```crmscript
+Void SetDefaultValue(String defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+String defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetIsHtml(Bool)
+
+```crmscript
+Void SetIsHtml(Bool isHtml)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+Bool isHtml;
+thing.SetIsHtml(isHtml);
+```
+
+## SetNumRows(Integer)
+
+```crmscript
+Void SetNumRows(Integer numRows)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+Integer numRows;
+thing.SetNumRows(numRows);
+```
+
+## SetUseTextArea(Bool)
+
+```crmscript
+Void SetUseTextArea(Bool useTextArea)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoLongText thing;
+Bool useTextArea;
+thing.SetUseTextArea(useTextArea);
+```

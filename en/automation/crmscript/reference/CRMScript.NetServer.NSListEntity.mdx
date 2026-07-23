@@ -1,0 +1,337 @@
+﻿---
+uid: crmscript.netserver.nslistentity
+title: NSListEntity
+description: "The list entity contains information about a specific list."
+keywords: CRMScript, NSListEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSListEntity
+
+The list entity contains information about a specific list.
+
+## Constructors
+
+### NSListEntity()
+
+```crmscript
+NSListEntity
+```
+
+Initializes a new instance of the NSListEntity class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the list item is marked as deleted.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The identity of the list.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Integer id = thing.GetId();
+```
+
+## GetInUseByUserDefinedFields()
+
+```crmscript
+Bool GetInUseByUserDefinedFields()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if this in use by one or more udfields.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool inUseByUserDefinedFields = thing.GetInUseByUserDefinedFields();
+```
+
+## GetIsCustomList()
+
+```crmscript
+Bool GetIsCustomList()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates if this is a custom list or a standard list.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool isCustomList = thing.GetIsCustomList();
+```
+
+## GetIsMDOList()
+
+```crmscript
+Bool GetIsMDOList()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates if this is an MDO list.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool isMDOList = thing.GetIsMDOList();
+```
+
+## GetListType()
+
+```crmscript
+String GetListType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The type of this list, often indicated by the database name, but not necessarily.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+String listType = thing.GetListType();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the list.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The rank of the list.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip of the list.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetUseGroupsAndHeadings()
+
+```crmscript
+Bool GetUseGroupsAndHeadings()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates if this list should use groups and headings.
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool useGroupsAndHeadings = thing.GetUseGroupsAndHeadings();
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetId(Integer)
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetInUseByUserDefinedFields(Bool)
+
+```crmscript
+Void SetInUseByUserDefinedFields(Bool inUseByUserDefinedFields)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool inUseByUserDefinedFields;
+thing.SetInUseByUserDefinedFields(inUseByUserDefinedFields);
+```
+
+## SetIsCustomList(Bool)
+
+```crmscript
+Void SetIsCustomList(Bool isCustomList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool isCustomList;
+thing.SetIsCustomList(isCustomList);
+```
+
+## SetIsMDOList(Bool)
+
+```crmscript
+Void SetIsMDOList(Bool isMDOList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool isMDOList;
+thing.SetIsMDOList(isMDOList);
+```
+
+## SetListType(String)
+
+```crmscript
+Void SetListType(String listType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+String listType;
+thing.SetListType(listType);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetUseGroupsAndHeadings(Bool)
+
+```crmscript
+Void SetUseGroupsAndHeadings(Bool useGroupsAndHeadings)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListEntity thing;
+Bool useGroupsAndHeadings;
+thing.SetUseGroupsAndHeadings(useGroupsAndHeadings);
+```

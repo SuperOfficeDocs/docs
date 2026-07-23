@@ -1,0 +1,34 @@
+﻿---
+uid: crmscript.netserver.licensestatus
+title: Enum LicenseStatus
+description: "Used in the CheckLicenseStatusResult to describe how SOADMIN should handle"
+keywords: CRMScript, LicenseStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum LicenseStatus
+
+Used in the CheckLicenseStatusResult to describe how SOADMIN should handle
+
+## Syntax
+
+```crmscript
+LicenseStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Ok | License is ok. No changes detected |
+| NewLicenseAvailable | New license information available. Get new license and activate it. |
+| NewCompanyNameAvailable | Name change detected. Fetch new license and activate it. |
+| NewSerialAvailable | Serial number change detected. Fetch new license and activate it. |
+| UseCustomMessage | See message for details. |
+| UseCustomMessageAndUrl | See message and URL for details. Client should make URL clickable. |
+| ProblemWithLicense | Something seems to be wrong. Cannot fetch new license. |
+| UnknownError | Bad things are happening. |

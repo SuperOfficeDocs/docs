@@ -1,0 +1,244 @@
+﻿---
+uid: crmscript.netserver.nshistory
+title: NSHistory
+description: "The usage history of the currently logged in user is represented as History objects."
+keywords: CRMScript, NSHistory, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSHistory
+
+The usage history of the currently logged in user is represented as History objects.
+
+## Constructors
+
+### NSHistory()
+
+```crmscript
+NSHistory
+```
+
+Initializes a new instance of the NSHistory class.
+
+## Methods
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Owner of history list.
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetHistoryId()
+
+```crmscript
+Integer GetHistoryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer historyId = thing.GetHistoryId();
+```
+
+## GetHistoryName()
+
+```crmscript
+String GetHistoryName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the history list, for instance contact. Represents the history table's TableId field.
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+String historyName = thing.GetHistoryName();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the history item, for instance a contact id. Represents the history table's RecordId field, if the item is based on a history table record.
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer id = thing.GetId();
+```
+
+## GetItemInfo()
+
+```crmscript
+String GetItemInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Extra information on the history item, e.g. The Associate Type for an associate or other relevant info.
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+String itemInfo = thing.GetItemInfo();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the history item, for instance contact name.
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Sort order, indexed so it can used for sorting in the query.
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer rank = thing.GetRank();
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetHistoryId(Integer)
+
+```crmscript
+Void SetHistoryId(Integer historyId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer historyId;
+thing.SetHistoryId(historyId);
+```
+
+## SetHistoryName(String)
+
+```crmscript
+Void SetHistoryName(String historyName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+String historyName;
+thing.SetHistoryName(historyName);
+```
+
+## SetId(Integer)
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetItemInfo(String)
+
+```crmscript
+Void SetItemInfo(String itemInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+String itemInfo;
+thing.SetItemInfo(itemInfo);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHistory thing;
+Integer rank;
+thing.SetRank(rank);
+```

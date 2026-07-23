@@ -1,0 +1,147 @@
+﻿---
+uid: crmscript.netserver.nsworkflowwaitforaction
+title: NSWorkflowWaitForAction
+description: "Carrier object for WorkflowWaitForAction."
+keywords: CRMScript, NSWorkflowWaitForAction, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWorkflowWaitForAction
+
+Carrier object for WorkflowWaitForAction.
+
+## Constructors
+
+### NSWorkflowWaitForAction()
+
+```crmscript
+NSWorkflowWaitForAction
+```
+
+Initializes a new instance of the NSWorkflowWaitForAction class.
+
+## Methods
+
+## GetWorkflowWaitForActionId()
+
+Gets the primary key (ID) for the WorkflowWaitForAction.
+
+```crmscript
+Integer GetWorkflowWaitForActionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - WorkflowWaitForAction Id.
+
+## SetWorkflowWaitForActionId(Integer)
+
+Sets the primary key (ID) for the WorkflowWaitForAction.
+
+```crmscript
+Void SetWorkflowWaitForActionId(Integer workflowWaitForActionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowStepId()
+
+Gets the ID of the workflow step this instance belongs to.
+
+```crmscript
+Integer GetWorkflowStepId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Workflow step ID.
+
+## SetWorkflowStepId(Integer)
+
+Sets the ID of the workflow step this instance belongs to.
+
+```crmscript
+Void SetWorkflowStepId(Integer workflowStepId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowId()
+
+Gets the ID of the workflow this action is part of.
+
+```crmscript
+Integer GetWorkflowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Workflow ID.
+
+## SetWorkflowId(Integer)
+
+Sets the ID of the workflow this action is part of.
+
+```crmscript
+Void SetWorkflowId(Integer workflowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetRank()
+
+Gets the rank of the action in the workflow.
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Action rank.
+
+## SetRank(Integer)
+
+Sets the rank of the action in the workflow.
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetActionType()
+
+Gets the type of the action.
+
+```crmscript
+NSWorkflowWaitForActionType GetActionType()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowWaitForActionType](CRMScript.NetServer.NSWorkflowWaitForActionType) - Action type.
+
+## SetActionType(NSWorkflowWaitForActionType)
+
+Sets the type of the action.
+
+```crmscript
+Void SetActionType(NSWorkflowWaitForActionType actionType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetRestrictionGroups()
+
+Gets the restriction groups for the action.
+
+```crmscript
+NSArchiveRestrictionGroup[] GetRestrictionGroups()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup) - Restriction groups.
+
+## SetRestrictionGroups(NSArchiveRestrictionGroup[])
+
+Sets the restriction groups for the action.
+
+```crmscript
+Void SetRestrictionGroups(NSArchiveRestrictionGroup[] restrictionGroups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

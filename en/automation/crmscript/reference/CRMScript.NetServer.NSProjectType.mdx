@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nsprojecttype
+title: NSProjectType
+description: "Carrier object for ProjectType."
+keywords: CRMScript, NSProjectType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectType
+
+Carrier object for ProjectType.
+
+## Constructors
+
+### NSProjectType()
+
+```crmscript
+NSProjectType
+```
+
+Initializes a new instance of the NSProjectType class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSProjectType.
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSProjectType Id.
+
+**Example:**
+
+```crmscript
+NSProjectType thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSProjectType list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProjectType tooltip description.
+
+**Example:**
+
+```crmscript
+NSProjectType thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSProjectType.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProjectType name.
+
+**Example:**
+
+```crmscript
+NSProjectType thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSProjectType
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectType thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSProjectType list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectType thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSProjectType item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectType thing;
+thing.SetValue("frotz");
+```

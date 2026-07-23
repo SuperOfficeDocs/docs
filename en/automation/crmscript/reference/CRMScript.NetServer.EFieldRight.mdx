@@ -1,0 +1,39 @@
+﻿---
+uid: crmscript.netserver.efieldright
+title: Enum EFieldRight
+description: "Access levels to a single field. Read and/or write."
+keywords: CRMScript, EFieldRight, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum EFieldRight
+
+Access levels to a single field. Read and/or write.
+
+## Syntax
+
+```crmscript
+EFieldRight
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | Hidden from user. |
+| Read | Read-only right |
+| Write | Write-only (not terribly useful) |
+| Update | Read + Write rights combined |
+| Unused1 |  |
+| Unused2 |  |
+| Unused3 |  |
+| Unused4 |  |
+| Nullable | Field can have NULL as a valid value. |
+| UIHintMandatory | Field must be filled out (not blank) |
+| UIHintReadOnly | Field can only be read, not updated, in the user interface. |
+| FULL | All possible rights (same as Update = Read + Write) |
+| UIHints | Rights only applied in the user interface.  These rights are threated as deny rights. |

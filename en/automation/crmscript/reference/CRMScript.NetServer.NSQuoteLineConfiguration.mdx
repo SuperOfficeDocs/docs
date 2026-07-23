@@ -1,0 +1,306 @@
+﻿---
+uid: crmscript.netserver.nsquotelineconfiguration
+title: NSQuoteLineConfiguration
+description: "Contains information about which configuration fields that is visible in the GUI. Read only and mandatory fields are also specified."
+keywords: CRMScript, NSQuoteLineConfiguration, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteLineConfiguration
+
+Contains information about which configuration fields that is visible in the GUI. Read only and mandatory fields are also specified.
+
+## Constructors
+
+### NSQuoteLineConfiguration()
+
+```crmscript
+NSQuoteLineConfiguration
+```
+
+Initializes a new instance of the NSQuoteLineConfiguration class.
+
+## Methods
+
+## GetEditable()
+
+```crmscript
+Bool GetEditable()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this a read only field?
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool editable = thing.GetEditable();
+```
+
+## GetFieldName()
+
+```crmscript
+String GetFieldName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the field being configured, from data dictionary.
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+String fieldName = thing.GetFieldName();
+```
+
+## GetInUse()
+
+```crmscript
+Bool GetInUse()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this field be displayed in the GUI?
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool inUse = thing.GetInUse();
+```
+
+## GetLabel()
+
+```crmscript
+String GetLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Label resource string.
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+String label = thing.GetLabel();
+```
+
+## GetMandatory()
+
+```crmscript
+Bool GetMandatory()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this a mandatory field?
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool mandatory = thing.GetMandatory();
+```
+
+## GetQuoteLineConfigurationId()
+
+```crmscript
+Integer GetQuoteLineConfigurationId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Integer quoteLineConfigurationId = thing.GetQuoteLineConfigurationId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank of the field.
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRestrictEdit()
+
+```crmscript
+Bool GetRestrictEdit()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, then this field cannot be set readwrite or mandatory It's bound to be readonly.
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool restrictEdit = thing.GetRestrictEdit();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip resource string.
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetEditable(Bool)
+
+```crmscript
+Void SetEditable(Bool editable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool editable;
+thing.SetEditable(editable);
+```
+
+## SetFieldName(String)
+
+```crmscript
+Void SetFieldName(String fieldName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+String fieldName;
+thing.SetFieldName(fieldName);
+```
+
+## SetInUse(Bool)
+
+```crmscript
+Void SetInUse(Bool inUse)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool inUse;
+thing.SetInUse(inUse);
+```
+
+## SetLabel(String)
+
+```crmscript
+Void SetLabel(String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+String label;
+thing.SetLabel(label);
+```
+
+## SetMandatory(Bool)
+
+```crmscript
+Void SetMandatory(Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool mandatory;
+thing.SetMandatory(mandatory);
+```
+
+## SetQuoteLineConfigurationId(Integer)
+
+```crmscript
+Void SetQuoteLineConfigurationId(Integer quoteLineConfigurationId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Integer quoteLineConfigurationId;
+thing.SetQuoteLineConfigurationId(quoteLineConfigurationId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRestrictEdit(Bool)
+
+```crmscript
+Void SetRestrictEdit(Bool restrictEdit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+Bool restrictEdit;
+thing.SetRestrictEdit(restrictEdit);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLineConfiguration thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

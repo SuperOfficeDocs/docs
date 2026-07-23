@@ -1,0 +1,40 @@
+﻿---
+uid: crmscript.netserver.appointmentstatus
+title: Enum AppointmentStatus
+description: "Value for field 'status' in table 'appointment'."
+keywords: CRMScript, AppointmentStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum AppointmentStatus
+
+Value for field 'status' in table 'appointment'.
+
+## Syntax
+
+```crmscript
+AppointmentStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| UnknownOrPostIt | Appointment is not initialized or it is a Post-IT for users diary, used together with ApointmentType.Note only |
+| NotStarted | Appointment has not been started |
+| Started | Appointment has been started, but not completed |
+| Completed | Appointment is completed |
+| Hidden | Appointment is hidden |
+| Booking | Appointment is a booking invitation (initial status for a booking) |
+| BookingMoved | Appointment is a booking that has been moved since it was seen by the invitee |
+| BookingSeen | Appointment is a booking and has been seen, but neither accepted nor rejected |
+| BookingMovedSeen | Appointment is a booking that has been moved. The movement has been seen but neither accepted nor rejected |
+| BookingDeclined | Appointment is a booking that has been seen and declined |
+| BookingDeleted | Status of 'child' appointment whose 'mother' has been deleted (the meeting is cancelled) |
+| Assignment | You are assigned this appointment (initial status, like Booking(5) ) |
+| AssignmentSeen | You have seen the assignment, but not yet declined or accepted it |
+| AssignmentDeclined | You have declined the appointment assigned to you |

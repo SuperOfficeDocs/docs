@@ -1,0 +1,29 @@
+﻿---
+uid: crmscript.netserver.travelencryptionchild
+title: Enum TravelEncryptionChild
+description: "Value for the encryptedComm field in traveller"
+keywords: CRMScript, TravelEncryptionChild, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum TravelEncryptionChild
+
+Value for the encryptedComm field in traveller
+
+## Syntax
+
+```crmscript
+TravelEncryptionChild
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | Transmitted travel data are not encrypted (only ZIPed) |
+| Serial | Transmitted travel data are encrypted using licence serial no. as key |
+| BF128 | Transmitted travel data are encrypted using a 128-bit key unique to each database |

@@ -1,0 +1,490 @@
+﻿---
+uid: crmscript.netserver.nsselectablemdolistitem
+title: NSSelectableMDOListItem
+description: ""
+keywords: CRMScript, NSSelectableMDOListItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSelectableMDOListItem
+
+## Constructors
+
+### NSSelectableMDOListItem()
+
+```crmscript
+NSSelectableMDOListItem
+```
+
+Initializes a new instance of the NSSelectableMDOListItem class.
+
+## Methods
+
+## GetChildItems()
+
+```crmscript
+NSSelectableMDOListItem[] GetChildItems()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - The child items of the NSSelectableMDOListItem.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+NSSelectableMDOListItem[] childItems = thing.GetChildItems();
+```
+
+## GetColorBlock()
+
+```crmscript
+Integer GetColorBlock()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The color indicator of the ListItem color block.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Integer colorBlock = thing.GetColorBlock();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The deleted status of the ListItem.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetExtraInfo()
+
+```crmscript
+String GetExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Extra information added to the ListItem. Could be information such as sort order etc or other meta data. Custom field.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String extraInfo = thing.GetExtraInfo();
+```
+
+## GetFullName()
+
+```crmscript
+String GetFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the ListItem in its context.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String fullName = thing.GetFullName();
+```
+
+## GetHidden()
+
+```crmscript
+Bool GetHidden()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the ListItem is hidden.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Bool hidden = thing.GetHidden();
+```
+
+## GetIconHint()
+
+```crmscript
+String GetIconHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The Icon hint of the ListItem. Custom field.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String iconHint = thing.GetIconHint();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the ListItem.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Integer id = thing.GetId();
+```
+
+## GetLastChanged()
+
+```crmscript
+DateTime GetLastChanged()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Time of last change.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+DateTime lastChanged = thing.GetLastChanged();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the ListItem.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The rank of the ListItem.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Integer rank = thing.GetRank();
+```
+
+## GetSelected()
+
+```crmscript
+Bool GetSelected()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the ListItem is selected.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Bool selected = thing.GetSelected();
+```
+
+## GetStyleHint()
+
+```crmscript
+String GetStyleHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Style hint indicating, information such as background color etc. Custom field.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String styleHint = thing.GetStyleHint();
+```
+
+## GetToolTip()
+
+```crmscript
+String GetToolTip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip of the ListItem.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String toolTip = thing.GetToolTip();
+```
+
+## GetType()
+
+```crmscript
+String GetType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The type of the ListItem. Custom field.
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String type = thing.GetType();
+```
+
+## SetChildItems(NSSelectableMDOListItem[])
+
+```crmscript
+Void SetChildItems(NSSelectableMDOListItem[] childItems)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+NSSelectableMDOListItem[] childItems;
+thing.SetChildItems(childItems);
+```
+
+## SetColorBlock(Integer)
+
+```crmscript
+Void SetColorBlock(Integer colorBlock)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Integer colorBlock;
+thing.SetColorBlock(colorBlock);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetExtraInfo(String)
+
+```crmscript
+Void SetExtraInfo(String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String extraInfo;
+thing.SetExtraInfo(extraInfo);
+```
+
+## SetFullName(String)
+
+```crmscript
+Void SetFullName(String fullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String fullName;
+thing.SetFullName(fullName);
+```
+
+## SetHidden(Bool)
+
+```crmscript
+Void SetHidden(Bool hidden)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Bool hidden;
+thing.SetHidden(hidden);
+```
+
+## SetIconHint(String)
+
+```crmscript
+Void SetIconHint(String iconHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String iconHint;
+thing.SetIconHint(iconHint);
+```
+
+## SetId(Integer)
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetLastChanged(DateTime)
+
+```crmscript
+Void SetLastChanged(DateTime lastChanged)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+DateTime lastChanged;
+thing.SetLastChanged(lastChanged);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetSelected(Bool)
+
+```crmscript
+Void SetSelected(Bool selected)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+Bool selected;
+thing.SetSelected(selected);
+```
+
+## SetStyleHint(String)
+
+```crmscript
+Void SetStyleHint(String styleHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String styleHint;
+thing.SetStyleHint(styleHint);
+```
+
+## SetToolTip(String)
+
+```crmscript
+Void SetToolTip(String toolTip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String toolTip;
+thing.SetToolTip(toolTip);
+```
+
+## SetType(String)
+
+```crmscript
+Void SetType(String type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectableMDOListItem thing;
+String type;
+thing.SetType(type);
+```

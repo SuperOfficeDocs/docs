@@ -1,0 +1,244 @@
+﻿---
+uid: crmscript.netserver.nsresourceentity
+title: NSResourceEntity
+description: "The resource entity contains resource information."
+keywords: CRMScript, NSResourceEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSResourceEntity
+
+The resource entity contains resource information.
+
+## Constructors
+
+### NSResourceEntity()
+
+```crmscript
+NSResourceEntity
+```
+
+Initializes a new instance of the NSResourceEntity class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the resource is deleted.
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetIsLocation()
+
+```crmscript
+Bool GetIsLocation()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true the resource is a location.
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Bool isLocation = thing.GetIsLocation();
+```
+
+## GetLocationAddress()
+
+```crmscript
+String GetLocationAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Address of location, if this is a resource that is a location.
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+String locationAddress = thing.GetLocationAddress();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, also login name, possibly database user name.
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetResourceId()
+
+```crmscript
+Integer GetResourceId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Integer resourceId = thing.GetResourceId();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetIsLocation(Bool)
+
+```crmscript
+Void SetIsLocation(Bool isLocation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Bool isLocation;
+thing.SetIsLocation(isLocation);
+```
+
+## SetLocationAddress(String)
+
+```crmscript
+Void SetLocationAddress(String locationAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+String locationAddress;
+thing.SetLocationAddress(locationAddress);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetResourceId(Integer)
+
+```crmscript
+Void SetResourceId(Integer resourceId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+Integer resourceId;
+thing.SetResourceId(resourceId);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

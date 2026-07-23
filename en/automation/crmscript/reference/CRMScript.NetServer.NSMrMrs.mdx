@@ -1,0 +1,128 @@
+﻿---
+uid: crmscript.netserver.nsmrmrs
+title: NSMrMrs
+description: ""
+keywords: CRMScript, NSMrMrs, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMrMrs
+
+## Constructors
+
+### NSMrMrs()
+
+```crmscript
+NSMrMrs
+```
+
+Initializes a new instance of the NSMrMrs class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSMrMrs
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSMrMrs Id.
+
+**Example:**
+
+```crmscript
+NSMrMrs thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSMrMrs list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSMrMrs tooltip description.
+
+**Example:**
+
+```crmscript
+NSMrMrs thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSMrMrs.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSMrMrs name.
+
+**Example:**
+
+```crmscript
+NSMrMrs thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSMrMrs
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMrMrs thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSMrMrs list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMrMrs thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSMrMrs item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMrMrs thing;
+thing.SetValue("frotz");
+```

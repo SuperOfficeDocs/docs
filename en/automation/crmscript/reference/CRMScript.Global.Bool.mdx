@@ -1,0 +1,64 @@
+﻿---
+uid: crmscript.global.bool
+title: Bool
+description: "Represents booleans as objects. True/false."
+keywords: CRMScript, Bool, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Bool
+
+Represents booleans as objects. True/false.
+
+Variables of this type are commonly used in comparisons and conditional statements.
+
+## Constructors
+
+### Bool()
+
+```crmscript
+Bool Bool()
+```
+
+Default constructor.
+
+### Bool(Bool)
+
+```crmscript
+Bool Bool(Bool value)
+```
+
+Pass a boolean value to copy into a new object.
+
+## Methods
+
+## toInteger()
+
+Converts a boolean value to its integer representation (0 or 1).
+
+```crmscript
+Integer toInteger()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - False equals 0; true equals 1.
+
+## toString()
+
+Converts a boolean value to its string representation ("true" or "false").
+
+```crmscript
+String toString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - "true" or "false"
+
+**Example:**
+
+```crmscript
+Bool b = true;
+printLine(b.toString());
+```

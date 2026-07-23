@@ -1,0 +1,122 @@
+﻿---
+uid: crmscript.netserver.nschangeddata
+title: NSChangedData
+description: "Generic carrier, used in return values to indicate what data NetServer has changed 'behind the scenes' so clients can know what to update."
+keywords: CRMScript, NSChangedData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChangedData
+
+Generic carrier, used in return values to indicate what data NetServer has changed 'behind the scenes' so clients can know what to update.
+
+## Constructors
+
+### NSChangedData()
+
+```crmscript
+NSChangedData
+```
+
+Initializes a new instance of the NSChangedData class.
+
+## Methods
+
+## GetAddedRecords()
+
+```crmscript
+NSChangedDataItem[] GetAddedRecords()
+```
+
+**Returns:** [CRMScript.NetServer.NSChangedDataItem](CRMScript.NetServer.NSChangedDataItem)[] - IDs of added records.
+
+**Example:**
+
+```crmscript
+NSChangedData thing;
+NSChangedDataItem[] addedRecords = thing.GetAddedRecords();
+```
+
+## GetDeletedRecords()
+
+```crmscript
+NSChangedDataItem[] GetDeletedRecords()
+```
+
+**Returns:** [CRMScript.NetServer.NSChangedDataItem](CRMScript.NetServer.NSChangedDataItem)[] - IDs of deleted records.
+
+**Example:**
+
+```crmscript
+NSChangedData thing;
+NSChangedDataItem[] deletedRecords = thing.GetDeletedRecords();
+```
+
+## GetUpdatedRecords()
+
+```crmscript
+NSChangedDataItem[] GetUpdatedRecords()
+```
+
+**Returns:** [CRMScript.NetServer.NSChangedDataItem](CRMScript.NetServer.NSChangedDataItem)[] - IDs of updated records.
+
+**Example:**
+
+```crmscript
+NSChangedData thing;
+NSChangedDataItem[] updatedRecords = thing.GetUpdatedRecords();
+```
+
+## SetAddedRecords(NSChangedDataItem[])
+
+```crmscript
+Void SetAddedRecords(NSChangedDataItem[] addedRecords)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChangedData thing;
+NSChangedDataItem[] addedRecords;
+thing.SetAddedRecords(addedRecords);
+```
+
+## SetDeletedRecords(NSChangedDataItem[])
+
+```crmscript
+Void SetDeletedRecords(NSChangedDataItem[] deletedRecords)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChangedData thing;
+NSChangedDataItem[] deletedRecords;
+thing.SetDeletedRecords(deletedRecords);
+```
+
+## SetUpdatedRecords(NSChangedDataItem[])
+
+IDs of updated records.
+
+```crmscript
+Void SetUpdatedRecords(NSChangedDataItem[] updatedRecords)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChangedData thing;
+NSChangedDataItem[] updatedRecords;
+thing.SetUpdatedRecords(updatedRecords);
+```

@@ -1,0 +1,678 @@
+﻿---
+uid: crmscript.netserver.nsprojectmember
+title: NSProjectMember
+description: "A person can be a member of multiple projects, with a different comment and member type in each project."
+keywords: CRMScript, NSProjectMember, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectMember
+
+A person can be a member of multiple projects, with a different comment and member type in each project.
+
+## Constructors
+
+### NSProjectMember()
+
+```crmscript
+NSProjectMember
+```
+
+Initializes a new instance of the NSProjectMember class.
+
+## Methods
+
+## GetComment()
+
+```crmscript
+String GetComment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Comment text on the project membership.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String comment = thing.GetComment();
+```
+
+## GetContactDepartment()
+
+```crmscript
+String GetContactDepartment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact department.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String contactDepartment = thing.GetContactDepartment();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Contact ID of person who is the project member.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetContactName()
+
+```crmscript
+String GetContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String contactName = thing.GetContactName();
+```
+
+## GetCountryId()
+
+```crmscript
+Integer GetCountryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Country.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer countryId = thing.GetCountryId();
+```
+
+## GetEmailAddress()
+
+```crmscript
+String GetEmailAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email address.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String emailAddress = thing.GetEmailAddress();
+```
+
+## GetEmailAddressName()
+
+```crmscript
+String GetEmailAddressName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email address description.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String emailAddressName = thing.GetEmailAddressName();
+```
+
+## GetEmailId()
+
+```crmscript
+Integer GetEmailId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The person's email address Id.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer emailId = thing.GetEmailId();
+```
+
+## GetFirstname()
+
+```crmscript
+String GetFirstname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - First name.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String firstname = thing.GetFirstname();
+```
+
+## GetFullName()
+
+```crmscript
+String GetFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The person's full name localized to the current culture/country.  (internal name used in clients for employees).
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String fullName = thing.GetFullName();
+```
+
+## GetLastname()
+
+```crmscript
+String GetLastname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Last name.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String lastname = thing.GetLastname();
+```
+
+## GetMiddleName()
+
+```crmscript
+String GetMiddleName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Middle name or 'van' etc.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String middleName = thing.GetMiddleName();
+```
+
+## GetMrmrs()
+
+```crmscript
+String GetMrmrs()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - For example, Mrs, Dr, Ms.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String mrmrs = thing.GetMrmrs();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The person's ID; primary key.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetPhone()
+
+```crmscript
+String GetPhone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Phone number.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String phone = thing.GetPhone();
+```
+
+## GetPhoneId()
+
+```crmscript
+Integer GetPhoneId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The phone Id.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer phoneId = thing.GetPhoneId();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Parent project* the project this project member belongs to.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetProjectmemberId()
+
+```crmscript
+Integer GetProjectmemberId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer projectmemberId = thing.GetProjectmemberId();
+```
+
+## GetProjectMemberTypeId()
+
+```crmscript
+Integer GetProjectMemberTypeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSProjectMember Type ID from the ProjectMemberType list.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer projectMemberTypeId = thing.GetProjectMemberTypeId();
+```
+
+## GetProjectMemberTypeName()
+
+```crmscript
+String GetProjectMemberTypeName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The project member type name 'secretary', 'member', etc.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String projectMemberTypeName = thing.GetProjectMemberTypeName();
+```
+
+## GetProjectName()
+
+```crmscript
+String GetProjectName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the project this project member belongs to.
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String projectName = thing.GetProjectName();
+```
+
+## SetComment(String)
+
+```crmscript
+Void SetComment(String comment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String comment;
+thing.SetComment(comment);
+```
+
+## SetContactDepartment(String)
+
+```crmscript
+Void SetContactDepartment(String contactDepartment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String contactDepartment;
+thing.SetContactDepartment(contactDepartment);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetContactName(String)
+
+```crmscript
+Void SetContactName(String contactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String contactName;
+thing.SetContactName(contactName);
+```
+
+## SetCountryId(Integer)
+
+```crmscript
+Void SetCountryId(Integer countryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer countryId;
+thing.SetCountryId(countryId);
+```
+
+## SetEmailAddress(String)
+
+```crmscript
+Void SetEmailAddress(String emailAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String emailAddress;
+thing.SetEmailAddress(emailAddress);
+```
+
+## SetEmailAddressName(String)
+
+```crmscript
+Void SetEmailAddressName(String emailAddressName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String emailAddressName;
+thing.SetEmailAddressName(emailAddressName);
+```
+
+## SetEmailId(Integer)
+
+```crmscript
+Void SetEmailId(Integer emailId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer emailId;
+thing.SetEmailId(emailId);
+```
+
+## SetFirstname(String)
+
+```crmscript
+Void SetFirstname(String firstname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String firstname;
+thing.SetFirstname(firstname);
+```
+
+## SetFullName(String)
+
+```crmscript
+Void SetFullName(String fullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String fullName;
+thing.SetFullName(fullName);
+```
+
+## SetLastname(String)
+
+```crmscript
+Void SetLastname(String lastname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String lastname;
+thing.SetLastname(lastname);
+```
+
+## SetMiddleName(String)
+
+```crmscript
+Void SetMiddleName(String middleName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String middleName;
+thing.SetMiddleName(middleName);
+```
+
+## SetMrmrs(String)
+
+```crmscript
+Void SetMrmrs(String mrmrs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String mrmrs;
+thing.SetMrmrs(mrmrs);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetPhone(String)
+
+```crmscript
+Void SetPhone(String phone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String phone;
+thing.SetPhone(phone);
+```
+
+## SetPhoneId(Integer)
+
+```crmscript
+Void SetPhoneId(Integer phoneId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer phoneId;
+thing.SetPhoneId(phoneId);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetProjectmemberId(Integer)
+
+```crmscript
+Void SetProjectmemberId(Integer projectmemberId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer projectmemberId;
+thing.SetProjectmemberId(projectmemberId);
+```
+
+## SetProjectMemberTypeId(Integer)
+
+```crmscript
+Void SetProjectMemberTypeId(Integer projectMemberTypeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+Integer projectMemberTypeId;
+thing.SetProjectMemberTypeId(projectMemberTypeId);
+```
+
+## SetProjectMemberTypeName(String)
+
+```crmscript
+Void SetProjectMemberTypeName(String projectMemberTypeName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String projectMemberTypeName;
+thing.SetProjectMemberTypeName(projectMemberTypeName);
+```
+
+## SetProjectName(String)
+
+```crmscript
+Void SetProjectName(String projectName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectMember thing;
+String projectName;
+thing.SetProjectName(projectName);
+```

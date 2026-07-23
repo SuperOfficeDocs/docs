@@ -1,0 +1,38 @@
+﻿---
+uid: crmscript.netserver.generatorencoding
+title: Enum GeneratorEncoding
+description: ""
+keywords: CRMScript, GeneratorEncoding, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum GeneratorEncoding
+
+## Syntax
+
+```crmscript
+GeneratorEncoding
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Text | Plain text document. |
+| Html | Html encoded document, it is not strictly parsed. |
+| Xml | XML Document, it is not strictly parsed |
+| MsWord | Microsoft word document. |
+| MsExcel | Microsoft Excel document. |
+| MsPowerpoint | Microsoft Powerpoint document |
+| MsOffice2007 | Microsoft office documents zipped (Office 2007) |
+| MsOffice2007Xml | Microsoft office xml documents (content of zipped x files) |
+| Url | The tags result are url-encoded (ansi), the source itself is treated as plain text. |
+| UrlUnicode | The tags result are url-encoded (unicode), the source itself is treated as plain text. |
+| Pdf | Adobe pdf format |
+| Mime | RFC822 Mime-content. Handles the actual mime part, but leaves a normal Text-generator to handle the actual content embedded within the MIME-layers. |
+| OpenDocument | OpenOffice/LibreOffice documents (zipped) |
+| OpenDocumentXml | OpenOffice/LibreOffice documents (contents of zipped files) |

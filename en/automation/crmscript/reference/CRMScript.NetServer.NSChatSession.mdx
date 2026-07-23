@@ -1,0 +1,58 @@
+﻿---
+uid: crmscript.netserver.nschatsession
+title: NSChatSession
+description: "Use the ChatSessionEntity on the Chat agent instead. Chat sessions belong to a chat topic, and contain messages to/from users. Carrier object for ChatSession."
+keywords: CRMScript, NSChatSession, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatSession
+
+Use the ChatSessionEntity on the Chat agent instead. Chat sessions belong to a chat topic, and contain messages to/from users. Carrier object for ChatSession.
+
+## Constructors
+
+### NSChatSession()
+
+```crmscript
+NSChatSession
+```
+
+Initializes a new instance of the NSChatSession class.
+
+## Methods
+
+## GetChatSessionId()
+
+```crmscript
+Integer GetChatSessionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSChatSession thing;
+Integer chatSessionId = thing.GetChatSessionId();
+```
+
+## SetChatSessionId(Integer)
+
+```crmscript
+Void SetChatSessionId(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSession thing;
+Integer chatSessionId;
+thing.SetChatSessionId(chatSessionId);
+```

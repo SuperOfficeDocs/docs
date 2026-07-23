@@ -1,0 +1,504 @@
+﻿---
+uid: crmscript.netserver.nsticketagent
+title: NSTicketAgent
+description: "Agent used for Ticket functions."
+keywords: CRMScript, NSTicketAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketAgent
+
+Agent used for Ticket functions.
+
+## Constructors
+
+### NSTicketAgent()
+
+```crmscript
+NSTicketAgent
+```
+
+Agent used for Ticket functions.
+
+## Methods
+
+## AddAttachments(Integer,Integer[])
+
+Connects existing attachments with this TicketMessage. Can connect multiple attachments
+
+```crmscript
+Void AddAttachments(Integer ticketMessageEntityId, Integer[] attachmentIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CreateDefaultAttachmentEntity()
+
+Sets default values into a new NSAttachmentEntity.
+
+```crmscript
+NSAttachmentEntity CreateDefaultAttachmentEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSAttachmentEntity](CRMScript.NetServer.NSAttachmentEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSAttachmentEntity thing = agent.CreateDefaultAttachmentEntity();
+thing = agent.SaveAttachmentEntity(thing);
+```
+
+## CreateDefaultTicketEntity()
+
+Sets default values into a new NSTicketEntity.
+
+```crmscript
+NSTicketEntity CreateDefaultTicketEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketEntity](CRMScript.NetServer.NSTicketEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketEntity thing = agent.CreateDefaultTicketEntity();
+thing = agent.SaveTicketEntity(thing);
+```
+
+## CreateDefaultTicketMessageEntity()
+
+Sets default values into a new NSTicketMessageEntity.
+
+```crmscript
+NSTicketMessageEntity CreateDefaultTicketMessageEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketMessageEntity](CRMScript.NetServer.NSTicketMessageEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessageEntity thing = agent.CreateDefaultTicketMessageEntity();
+thing = agent.SaveTicketMessageEntity(thing);
+```
+
+## DeleteTicketEntity(Integer)
+
+Deletes a ticket
+
+```crmscript
+Void DeleteTicketEntity(Integer ticketEntityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketEntityId;
+agent.DeleteTicketEntity(ticketEntityId);
+```
+
+## DeleteTicketMessageEntity(Integer)
+
+Deletes a ticket message
+
+```crmscript
+Void DeleteTicketMessageEntity(Integer ticketMessageEntityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketMessageEntityId;
+agent.DeleteTicketMessageEntity(ticketMessageEntityId);
+```
+
+## GetAttachmentEntity(Integer)
+
+Gets an NSAttachmentEntity object.
+
+```crmscript
+NSAttachmentEntity GetAttachmentEntity(Integer attachmentEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAttachmentEntity](CRMScript.NetServer.NSAttachmentEntity)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSAttachmentEntity thing = agent.GetAttachmentEntity(123);
+```
+
+## GetAttachmentInfo(Integer)
+
+Gets a list with meta data for all attached attachments
+
+```crmscript
+NSAttachmentEntity[] GetAttachmentInfo(Integer ticketMessageEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAttachmentEntity](CRMScript.NetServer.NSAttachmentEntity)[]
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketMessageEntityId;
+NSAttachmentEntity[] res = agent.GetAttachmentInfo(ticketMessageEntityId);
+```
+
+## GetAttachmentStream(Integer)
+
+Gets the content of an attachment
+
+```crmscript
+NSStream GetAttachmentStream(Integer attachmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer attachmentId;
+NSStream res = agent.GetAttachmentStream(attachmentId);
+```
+
+## GetTicket(Integer)
+
+Gets an NSTicket object.
+
+```crmscript
+NSTicket GetTicket(Integer ticketId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicket](CRMScript.NetServer.NSTicket)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicket thing = agent.GetTicket(123);
+```
+
+## GetTicketAttachments(Integer)
+
+Gets attachment infos for all attachments connected to messages in specified ticket
+
+```crmscript
+NSAttachmentEntity[] GetTicketAttachments(Integer ticketEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAttachmentEntity](CRMScript.NetServer.NSAttachmentEntity)[]
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketEntityId;
+NSAttachmentEntity[] res = agent.GetTicketAttachments(ticketEntityId);
+```
+
+## GetTicketEntity(Integer)
+
+Gets an NSTicketEntity object.
+
+```crmscript
+NSTicketEntity GetTicketEntity(Integer ticketEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketEntity](CRMScript.NetServer.NSTicketEntity)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketEntity thing = agent.GetTicketEntity(123);
+```
+
+## GetTicketMessage(Integer)
+
+Gets an NSTicketMessage object.
+
+```crmscript
+NSTicketMessage GetTicketMessage(Integer ticketMessageId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketMessage](CRMScript.NetServer.NSTicketMessage)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessage thing = agent.GetTicketMessage(123);
+```
+
+## GetTicketMessageEntity(Integer)
+
+Gets an NSTicketMessageEntity object.
+
+```crmscript
+NSTicketMessageEntity GetTicketMessageEntity(Integer ticketMessageEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketMessageEntity](CRMScript.NetServer.NSTicketMessageEntity)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessageEntity thing = agent.GetTicketMessageEntity(123);
+```
+
+## GetTickets(Integer[])
+
+Gets multiple tickets
+
+```crmscript
+NSTicket[] GetTickets(Integer[] ticketIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicket](CRMScript.NetServer.NSTicket)[]
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer[] ticketIds;
+NSTicket[] res = agent.GetTickets(ticketIds);
+```
+
+## Html2Text(String)
+
+Creates a plain text version of the html, suitable for email
+
+```crmscript
+String Html2Text(String content)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+String content;
+String res = agent.Html2Text(content);
+```
+
+## NotifyNewTicket(Integer)
+
+Notifies user agents about the creation of a new ticket
+
+```crmscript
+Void NotifyNewTicket(Integer ticketEntityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketEntityId;
+agent.NotifyNewTicket(ticketEntityId);
+```
+
+## NotifyNewTicketMessage(Integer)
+
+Notifies user agents about the creation of a new message on a ticket
+
+```crmscript
+Void NotifyNewTicketMessage(Integer ticketEntityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketEntityId;
+agent.NotifyNewTicketMessage(ticketEntityId);
+```
+
+## SanitizeMailContent(String)
+
+Removes harmful HTML tags and attributes from an email
+
+```crmscript
+String SanitizeMailContent(String content)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+String content;
+String res = agent.SanitizeMailContent(content);
+```
+
+## SanitizeMailContents(String[])
+
+Removes harmful HTML tags and attributes from an email
+
+```crmscript
+String[] SanitizeMailContents(String[] contents)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+String[] contents;
+String[] res = agent.SanitizeMailContents(contents);
+```
+
+## SaveAttachmentEntity(NSAttachmentEntity)
+
+Updates the existing NSAttachmentEntity or creates a new NSAttachmentEntity if the id parameter is 0
+
+```crmscript
+NSAttachmentEntity SaveAttachmentEntity(NSAttachmentEntity attachmentEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSAttachmentEntity](CRMScript.NetServer.NSAttachmentEntity)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSAttachmentEntity thing = agent.CreateDefaultAttachmentEntity();
+thing = agent.SaveAttachmentEntity(thing);
+```
+
+## SaveTicketEntity(NSTicketEntity)
+
+Updates the existing NSTicketEntity or creates a new NSTicketEntity if the id parameter is 0
+
+```crmscript
+NSTicketEntity SaveTicketEntity(NSTicketEntity ticketEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketEntity](CRMScript.NetServer.NSTicketEntity)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketEntity thing = agent.CreateDefaultTicketEntity();
+thing = agent.SaveTicketEntity(thing);
+```
+
+## SaveTicketMessageEntity(NSTicketMessageEntity)
+
+Updates the existing NSTicketMessageEntity or creates a new NSTicketMessageEntity if the id parameter is 0
+
+```crmscript
+NSTicketMessageEntity SaveTicketMessageEntity(NSTicketMessageEntity ticketMessageEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketMessageEntity](CRMScript.NetServer.NSTicketMessageEntity)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+NSTicketMessageEntity thing = agent.CreateDefaultTicketMessageEntity();
+thing = agent.SaveTicketMessageEntity(thing);
+```
+
+## SendTicketMessage(Integer,String[],String[],String[],String,Integer,String)
+
+Sends a message to recipients, e.g. by email or sms
+
+```crmscript
+Void SendTicketMessage(Integer ticketMessageEntityId, String[] to, String[] cc, String[] bcc, String subject, Integer replyTemplateId, String gdprSource)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketMessageEntityId;
+String[] to;
+String[] cc;
+String[] bcc;
+String subject;
+Integer replyTemplateId;
+String gdprSource;
+agent.SendTicketMessage(ticketMessageEntityId, to, cc, bcc, subject, replyTemplateId, gdprSource);
+```
+
+## SetTicketMessageImportant(Integer,Bool)
+
+Sets the important flag on or off for a ticket message
+
+```crmscript
+Void SetTicketMessageImportant(Integer ticketMessageId, Bool important)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetTicketReadByOwner(Integer,Integer,Bool)
+
+Sets the ReadByOwner status for a ticket. It will only have an effect if the calling user is the same as the owner of the ticket
+
+```crmscript
+NSTicketEntity SetTicketReadByOwner(Integer ticketEntityId, Integer readStatus, Bool checkEscalating)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketEntity](CRMScript.NetServer.NSTicketEntity)
+
+**Example:**
+
+```crmscript
+NSTicketAgent agent;
+Integer ticketEntityId;
+Integer readStatus;
+Bool checkEscalating;
+NSTicketEntity res = agent.SetTicketReadByOwner(ticketEntityId, readStatus, checkEscalating);
+```
+
+## UploadAttachment(Integer,NSStream)
+
+Uploads an attachment and returns the attachment ID
+
+```crmscript
+Integer UploadAttachment(Integer attachmentId, NSStream content)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)

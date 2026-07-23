@@ -1,0 +1,33 @@
+﻿---
+uid: crmscript.netserver.preferencelevel
+title: Enum PreferenceLevel
+description: "Value for field 'deflevel' in table 'userpreference'."
+keywords: CRMScript, PreferenceLevel, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum PreferenceLevel
+
+Value for field 'deflevel' in table 'userpreference'.
+
+## Syntax
+
+```crmscript
+PreferenceLevel
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Undefined | Undefined value (error) |
+| HardDefault | Default value used if no other value has been specified |
+| SystemWide | Value valid for all databases under this licence |
+| Database | Value valid for this database |
+| Group | Value valid for this group |
+| Individual | Value valid for this user |
+| PC | Value valid for this computer (note: stored in the Registry, not in the database) |

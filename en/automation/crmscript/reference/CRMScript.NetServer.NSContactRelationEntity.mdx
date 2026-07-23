@@ -1,0 +1,585 @@
+﻿---
+uid: crmscript.netserver.nscontactrelationentity
+title: NSContactRelationEntity
+description: "Relationship between a (contact/person) and another (contact/person), as described by the RelationDefinition."
+keywords: CRMScript, NSContactRelationEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSContactRelationEntity
+
+Relationship between a (contact/person) and another (contact/person), as described by the RelationDefinition.
+
+## Constructors
+
+### NSContactRelationEntity()
+
+```crmscript
+NSContactRelationEntity
+```
+
+Initializes a new instance of the NSContactRelationEntity class.
+
+## Methods
+
+## GetActiveText()
+
+```crmscript
+String GetActiveText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Active text for the relation.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String activeText = thing.GetActiveText();
+```
+
+## GetComment()
+
+```crmscript
+String GetComment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Comment for relation.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String comment = thing.GetComment();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetDestinationContactId()
+
+```crmscript
+Integer GetDestinationContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the destination contact. The value is mandatory.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer destinationContactId = thing.GetDestinationContactId();
+```
+
+## GetDestinationContactName()
+
+```crmscript
+String GetDestinationContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the destination contact.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String destinationContactName = thing.GetDestinationContactName();
+```
+
+## GetDestinationPersonId()
+
+```crmscript
+Integer GetDestinationPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the destination person. The value is not mandatory. The person must belong to the destination contact.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer destinationPersonId = thing.GetDestinationPersonId();
+```
+
+## GetDestinationPersonName()
+
+```crmscript
+String GetDestinationPersonName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the destination person.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String destinationPersonName = thing.GetDestinationPersonName();
+```
+
+## GetPassiveText()
+
+```crmscript
+String GetPassiveText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Passive text for the relation.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String passiveText = thing.GetPassiveText();
+```
+
+## GetRelationDefinitionId()
+
+```crmscript
+Integer GetRelationDefinitionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Reference to definition.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer relationDefinitionId = thing.GetRelationDefinitionId();
+```
+
+## GetRelationId()
+
+```crmscript
+Integer GetRelationId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer relationId = thing.GetRelationId();
+```
+
+## GetReversed()
+
+```crmscript
+Integer GetReversed()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Is direction reversed relative to definition.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer reversed = thing.GetReversed();
+```
+
+## GetSourceContactId()
+
+```crmscript
+Integer GetSourceContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the source contact. The value is mandatory.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer sourceContactId = thing.GetSourceContactId();
+```
+
+## GetSourceContactName()
+
+```crmscript
+String GetSourceContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the source contact.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String sourceContactName = thing.GetSourceContactName();
+```
+
+## GetSourcePersonId()
+
+```crmscript
+Integer GetSourcePersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the source person. The value is not mandatory. The person must belong to the source contact.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer sourcePersonId = thing.GetSourcePersonId();
+```
+
+## GetSourcePersonName()
+
+```crmscript
+String GetSourcePersonName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the source person.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String sourcePersonName = thing.GetSourcePersonName();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## SetActiveText(String)
+
+```crmscript
+Void SetActiveText(String activeText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String activeText;
+thing.SetActiveText(activeText);
+```
+
+## SetComment(String)
+
+```crmscript
+Void SetComment(String comment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String comment;
+thing.SetComment(comment);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetDestinationContactId(Integer)
+
+```crmscript
+Void SetDestinationContactId(Integer destinationContactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer destinationContactId;
+thing.SetDestinationContactId(destinationContactId);
+```
+
+## SetDestinationContactName(String)
+
+```crmscript
+Void SetDestinationContactName(String destinationContactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String destinationContactName;
+thing.SetDestinationContactName(destinationContactName);
+```
+
+## SetDestinationPersonId(Integer)
+
+```crmscript
+Void SetDestinationPersonId(Integer destinationPersonId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer destinationPersonId;
+thing.SetDestinationPersonId(destinationPersonId);
+```
+
+## SetDestinationPersonName(String)
+
+```crmscript
+Void SetDestinationPersonName(String destinationPersonName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String destinationPersonName;
+thing.SetDestinationPersonName(destinationPersonName);
+```
+
+## SetPassiveText(String)
+
+```crmscript
+Void SetPassiveText(String passiveText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String passiveText;
+thing.SetPassiveText(passiveText);
+```
+
+## SetRelationDefinitionId(Integer)
+
+```crmscript
+Void SetRelationDefinitionId(Integer relationDefinitionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer relationDefinitionId;
+thing.SetRelationDefinitionId(relationDefinitionId);
+```
+
+## SetRelationId(Integer)
+
+```crmscript
+Void SetRelationId(Integer relationId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer relationId;
+thing.SetRelationId(relationId);
+```
+
+## SetReversed(Integer)
+
+```crmscript
+Void SetReversed(Integer reversed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer reversed;
+thing.SetReversed(reversed);
+```
+
+## SetSourceContactId(Integer)
+
+```crmscript
+Void SetSourceContactId(Integer sourceContactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer sourceContactId;
+thing.SetSourceContactId(sourceContactId);
+```
+
+## SetSourceContactName(String)
+
+```crmscript
+Void SetSourceContactName(String sourceContactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String sourceContactName;
+thing.SetSourceContactName(sourceContactName);
+```
+
+## SetSourcePersonId(Integer)
+
+```crmscript
+Void SetSourcePersonId(Integer sourcePersonId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+Integer sourcePersonId;
+thing.SetSourcePersonId(sourcePersonId);
+```
+
+## SetSourcePersonName(String)
+
+```crmscript
+Void SetSourcePersonName(String sourcePersonName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+String sourcePersonName;
+thing.SetSourcePersonName(sourcePersonName);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactRelationEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```

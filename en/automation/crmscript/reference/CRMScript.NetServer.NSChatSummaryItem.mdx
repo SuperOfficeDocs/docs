@@ -1,0 +1,244 @@
+﻿---
+uid: crmscript.netserver.nschatsummaryitem
+title: NSChatSummaryItem
+description: "Chat session summary: id, title, created date. Carrier object for ChatSummaryItem."
+keywords: CRMScript, NSChatSummaryItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatSummaryItem
+
+Chat session summary: id, title, created date. Carrier object for ChatSummaryItem.
+
+## Constructors
+
+### NSChatSummaryItem()
+
+```crmscript
+NSChatSummaryItem
+```
+
+Initializes a new instance of the NSChatSummaryItem class.
+
+## Methods
+
+## GetChatSessionId()
+
+```crmscript
+Integer GetChatSessionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+Integer chatSessionId = thing.GetChatSessionId();
+```
+
+## GetCompanyName()
+
+```crmscript
+String GetCompanyName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the customers company, if provided.
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String companyName = thing.GetCompanyName();
+```
+
+## GetFirstMessage()
+
+```crmscript
+String GetFirstMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A copy of the first message in the chat session.
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String firstMessage = thing.GetFirstMessage();
+```
+
+## GetLastMessage()
+
+```crmscript
+String GetLastMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A copy of the last message in the chat session.
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String lastMessage = thing.GetLastMessage();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of customer, if provided.
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String name = thing.GetName();
+```
+
+## GetWhenEnded()
+
+```crmscript
+DateTime GetWhenEnded()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was ended.
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+DateTime whenEnded = thing.GetWhenEnded();
+```
+
+## GetWhenRequested()
+
+```crmscript
+DateTime GetWhenRequested()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was requested by the customer.
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+DateTime whenRequested = thing.GetWhenRequested();
+```
+
+## SetChatSessionId(Integer)
+
+```crmscript
+Void SetChatSessionId(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+Integer chatSessionId;
+thing.SetChatSessionId(chatSessionId);
+```
+
+## SetCompanyName(String)
+
+```crmscript
+Void SetCompanyName(String companyName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String companyName;
+thing.SetCompanyName(companyName);
+```
+
+## SetFirstMessage(String)
+
+```crmscript
+Void SetFirstMessage(String firstMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String firstMessage;
+thing.SetFirstMessage(firstMessage);
+```
+
+## SetLastMessage(String)
+
+```crmscript
+Void SetLastMessage(String lastMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String lastMessage;
+thing.SetLastMessage(lastMessage);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+String name;
+thing.SetName(name);
+```
+
+## SetWhenEnded(DateTime)
+
+```crmscript
+Void SetWhenEnded(DateTime whenEnded)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+DateTime whenEnded;
+thing.SetWhenEnded(whenEnded);
+```
+
+## SetWhenRequested(DateTime)
+
+```crmscript
+Void SetWhenRequested(DateTime whenRequested)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSummaryItem thing;
+DateTime whenRequested;
+thing.SetWhenRequested(whenRequested);
+```

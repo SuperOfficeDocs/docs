@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nssmtptestresult
+title: NSSmtpTestResult
+description: "Carrier containing information about the result of a SMTP test."
+keywords: CRMScript, NSSmtpTestResult, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSmtpTestResult
+
+Carrier containing information about the result of a SMTP test.
+
+## Constructors
+
+### NSSmtpTestResult()
+
+```crmscript
+NSSmtpTestResult
+```
+
+Initializes a new instance of the NSSmtpTestResult class.
+
+## Methods
+
+## GetErrorMessage()
+
+```crmscript
+String GetErrorMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If an error occurred, this member will contain a description of the error.
+
+**Example:**
+
+```crmscript
+NSSmtpTestResult thing;
+String errorMessage = thing.GetErrorMessage();
+```
+
+## GetSuccess()
+
+```crmscript
+Bool GetSuccess()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the test went ok. False if it failed. See the error message for details.
+
+**Example:**
+
+```crmscript
+NSSmtpTestResult thing;
+Bool success = thing.GetSuccess();
+```
+
+## SetErrorMessage(String)
+
+```crmscript
+Void SetErrorMessage(String errorMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSmtpTestResult thing;
+String errorMessage;
+thing.SetErrorMessage(errorMessage);
+```
+
+## SetSuccess(Bool)
+
+```crmscript
+Void SetSuccess(Bool success)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSmtpTestResult thing;
+Bool success;
+thing.SetSuccess(success);
+```

@@ -1,0 +1,1067 @@
+﻿---
+uid: crmscript.global.string
+title: String
+description: "A text string is a sequence of characters written with quotes."
+keywords: CRMScript, String, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# String
+
+A text string is a sequence of characters written with quotes.
+
+You can use single or double quotes, but they must always come in pairs. Quotes can also be nested, by alternating between single and double quotes.
+
+## Constructors
+
+### String()
+
+```crmscript
+String String()
+```
+
+Default constructor.
+
+### String(String)
+
+```crmscript
+String String(String value)
+```
+
+Pass a value to copy into a new object.
+
+### String(Byte[])
+
+```crmscript
+String String(Byte[] byteArray)
+```
+
+Pass a byte array to build a new object.
+
+### String(Byte[], String)
+
+```crmscript
+String String(Byte[] byteArray, String codePage)
+```
+
+Same as String(Byte[]), but also takes a code page identifier.
+
+### String(NSStream)
+
+```crmscript
+String String(NSStream stream)
+```
+
+Pass a byte array to build a new object.
+
+### String(NSStream, String)
+
+```crmscript
+String String(Byte[] stream, String codePage)
+```
+
+Same as String(NSStream), but also takes a code page identifier.
+
+## Methods
+
+## getLength()
+
+Finds the length of a string. Returns the number of characters as an Integer.
+
+```crmscript
+Integer getLength()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of characters in the String.
+
+**Example:**
+
+```crmscript
+String txt = "Wergelandsveien";
+printLine(txt.getLength().toString());
+```
+
+## toLower()
+
+Converts the string to its lowercase representation (all lowercase).
+
+```crmscript
+String toLower()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The lowercase representation of the String.
+
+**Example:**
+
+```crmscript
+String s = "SuperOffice";
+String sLow = s.toLower();
+```
+
+## toUpper()
+
+Converts the string to its uppercase representation (all uppercase).
+
+```crmscript
+String toUpper()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string in uppercase characters.
+
+**Example:**
+
+```crmscript
+String s = "SuperOffice";
+String sUp = s.toUpper();
+```
+
+## isLower()
+
+Determines if the string contains only lowercase letters. Will return true if no uppercase letters are found, otherwise false.
+
+```crmscript
+Bool isLower()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string contains only lowercase letters.
+
+<Note>
+If any nonletters (whitespace, punctuation marks etc ) are present in the string, the method will return false!
+</Note>
+
+## isUpper()
+
+Determines if the string contains only uppercase letters. Will return true if no lowercase letters are found, otherwise false.
+
+```crmscript
+Bool isUpper()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string contains only uppercase letters.
+
+<Note>
+If any nonletters (whitespace, punctuation marks etc ) are present in the string, the method will return false!
+</Note>
+
+## equals(String)
+
+Compare two string a returns true if they are equal.
+
+```crmscript
+Bool equals(String value)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if they are equal.
+
+<Note>
+Case sensitive. To ignore case, use equalsIgnoreCase() instead.
+</Note>
+
+**Example:**
+
+```crmscript
+String s1 = "apple";
+String s2 = "Apple";
+if (s1.equals(s2))
+\tprint(s1 + " is identical to " + s2);
+else
+\tprint(s1 + " differs from " + s2);
+```
+
+## equalsIgnoreCase(String)
+
+Same as using toLower() on both strings before calling equals().
+
+```crmscript
+Bool equalsIgnoreCase(String value)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the strings are equal.
+
+<Note>
+Case insensitive.
+</Note>
+
+**Example:**
+
+```crmscript
+String s1 = "apple";
+String s2 = "Apple";
+if (s1.equalsIgnoreCase(s2))\t
+print(s1 + " is identical to " + s2);
+else\t
+print(s1 + " differs from " + s2);
+```
+
+## beginsWith(String)
+
+Matching start of a string. The pattern you wish to match against must be given as an input parameter.
+
+The methods will return true if the beginning of your string matches the pattern, otherwise false.
+
+```crmscript
+Bool beginsWith(String substring)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string object begins with the string given as the parameter, taking the case into account.
+
+<Note>
+Case sensitive. To ignore case, use caseBeginsWith() instead.
+</Note>
+
+**Example:**
+
+```crmscript
+String s1 = "apple";
+String s2 = "appletree";
+if (s2.beginsWith(s1))
+\tprint(s2 + " begins with " + s1);
+else
+\tprint("No match found.");
+```
+
+## caseBeginsWith(String)
+
+Matching start of a string. The pattern you wish to match against must be given as an input parameter.
+
+The methods will return true if the beginning of your string matches the pattern, otherwise false.
+
+```crmscript
+Bool caseBeginsWith(String substring)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string object begins with the string given as the parameter, regardless of the case.
+
+<Note>
+Case insensitive.
+</Note>
+
+## endsWith(String)
+
+Matching end of a string. The pattern you wish to match against must be given as an input parameter.
+
+The methods will return true if the end of your string matches the pattern, otherwise false.
+
+```crmscript
+Bool endsWith(String substring)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string object ends with the string given as the parameter taking the case into account.
+
+<Note>
+Case sensitive. To ignore case, use caseEndsWith() instead.
+</Note>
+
+**Example:**
+
+```crmscript
+String s1 = "dog";
+String s2 = "hotdog";
+if (s2.endsWith(s1))
+\tprint(s2 + " ends with " + s1);
+else
+\tprint("No match found.");
+```
+
+## caseEndsWith(String)
+
+Matching end of a string. The pattern you wish to match against must be given as an input parameter.
+
+The methods will return true if the end of your string matches the pattern, otherwise false.
+
+```crmscript
+Bool caseEndsWith(String substring)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string object ends with the string given as the parameter regardless of case.
+
+<Note>
+Case insensitive.
+</Note>
+
+## compare(String)
+
+Two strings are lexicographic identical if they are the same length and they also contain the same characters in the same position.
+
+```crmscript
+Integer compare(String value)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - &lt;0 if this is lexically smaller than the value, 0 if equal, and &gt;0 if this is lexically larger.
+
+<Note>
+Case sensitive. To ignore case, use caseCompare() instead.
+</Note>
+
+**Example:**
+
+```crmscript
+String s1 = "a";
+String s2 = "B";
+if (s1.compare(s2) < 0)
+\tprint(s1 + " comes before " + s2);
+```
+
+## caseCompare(String)
+
+Same as applying the standard dictionary or alphabetic order.
+
+```crmscript
+Integer caseCompare(String value)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - &lt;0 if this is lexically smaller than the value, 0 if equal, and &gt;0 if this is lexically larger.
+
+<Note>
+Case insensitive.
+</Note>
+
+**Example:**
+
+```crmscript
+String s1 = "a";
+String s2 = "B";
+Integer sortOrder = s1.caseCompare(s2);
+```
+
+## append(String)
+
+Concatenates two strings and alters the original string.
+
+```crmscript
+Void append(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Using the append() method is currently faster than +=.
+</Note>
+
+**Example:**
+
+```crmscript
+s1 = s1 + s2;
+s1 += s2;
+s1.append(s2);
+```
+
+## append(String)
+
+Concatenates an ISO-8859-1 (Latin-1) character to the original string.
+
+```crmscript
+Void append(Byte character)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Using the append() method is currently faster than +=.
+</Note>
+
+## substitute(String, String)
+
+Inside your string, substitute all occurrences of one substring with another.
+
+```crmscript
+String substitute(String src, String dest)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The altered string.
+
+<Note>
+Text substitution works as search-and-replace and will update all occurrences.
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "Superoffice";
+print(s.substitute("o","O"));
+```
+
+## find(String)
+
+Finds the 1st occurrence of the substring and returns the index it starts at.
+
+```crmscript
+Integer find(String substring)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - First index of the substring.
+
+<Note>
+Case sensitive, to ignore case use findCase() instead.
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "SuperOffice";
+printLine(s.find("O").toString());
+```
+
+## findCase(String)
+
+Finds the 1st occurrence of the substring and returns the index it starts at. Returns -1 if not found.
+
+```crmscript
+Integer findCase(String substring)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - First index of the substring or -1.
+
+<Note>
+Case insensitive.
+</Note>
+
+## findLast(String)
+
+Same as find() except it will return the position of the last occurrence of the pattern.
+
+```crmscript
+Integer find(String substring)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The position of the last occurrence of the string to match.
+
+**Example:**
+
+```crmscript
+String s = "SuperOffice";
+printLine(s.find("O").toString());
+```
+
+## subString(Integer, Integer)
+
+Creates a new String of a given length. It will copy characters from the original string starting at the given position.
+
+```crmscript
+String subString(Integer pos, Integer len)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The substring.
+
+<Note>
+The position must be less than s.getLength().
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "SuperOffice";
+String t = s.subString(5,6);
+print(t);
+```
+
+## until(String)
+
+If you don't know the exact segment length you wish to extract, one option is to copy from start until you encounter a given pattern (1st occurrence).
+
+If the pattern is not found, a copy of this original string is returned.
+
+```crmscript
+String until(String pattern)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The first part of the string.
+
+**Example:**
+
+```crmscript
+String s = "name := test";
+String t = s.until(":=");
+print(t);
+```
+
+## before(String)
+
+Same usage and result as until().
+
+```crmscript
+String before(String pattern)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The part of the string preceding the search text.
+
+## beforeLast(String)
+
+Similar to before(), but will continue copying until the last occurrence of the pattern rather than stopping at the 1st.
+
+Useful for example if you are parsing a path or URI and want everything except the document name.
+
+```crmscript
+String beforeLast(String pattern)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string consisting of all the contents before the last needle.
+
+**Example:**
+
+```crmscript
+String s = "https://community.superoffice.com/sdk-doc/Reference.htm";
+String t = s.beforeLast("/");
+```
+
+## after(String)
+
+Another option is to start copying after you encounter the pattern and continue extracting until you reach the end of the original string.
+
+If the pattern is not found in this, an empty string is returned.
+
+```crmscript
+String after(String pattern)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - What follows the pattern.
+
+<Note>
+If s is not found in this, then an empty string is returned.
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "name := value";
+String t = s.after(":=");
+print(t);
+```
+
+## afterLast(String)
+
+Similar to after(), but will not start copying until after the last occurrence of the pattern rather than starting after the 1st.
+
+```crmscript
+String afterLast(String pattern)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The last part of the string after the last match.
+
+## split(String)
+
+Splits the original string in multiple segments (an array of substrings). The original string is not altered.
+
+```crmscript
+String[] split(String delimiter)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Array of substrings.
+
+<Note>
+You can't split between every character (can't use an empty string as the delimiter).
+
+The delimiter is excluded from the result.
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "Live now; make now always the most precious time. Now will never come again.";
+String[] a = s.split(" ");
+```
+
+## isAlpha()
+
+Determines if the string exclusively contains uppercase and lowercase letters. Will return true if the restriction applies, otherwise false.
+
+```crmscript
+Bool isAlpha()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string contains only alphabetic characters.
+
+<Note>
+If any white-space characters are present in the string, the method will return false!
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "SuperOffice";
+print(s.isAlpha().toString())
+```
+
+## isDigit()
+
+Determines if the string contains numeric characters [0-9] only.
+
+```crmscript
+Bool isDigit()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string contains only numeric characters [0-9].
+
+## isAlphanumeric()
+
+Combines the criteria of isAlpha() and isDigit(), and will return true if the string is restricted to any combination of lowercase and uppercase letters and digits [0-9].
+
+```crmscript
+Bool isAlphanumeric()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string contains only alphabetic characters or digits.
+
+## isNull()
+
+Returns true if the string is NULL/NUL/NIL, otherwise false. See example for isEmpty().
+
+```crmscript
+Bool isNull()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string is NULL/NUL/NIL.
+
+## isEmpty()
+
+Returns true if the string is empty ("") or NULL/NUL/NIL, meaning it contains no characters.
+
+```crmscript
+Bool isEmpty()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the String contains no characters.
+
+**Example:**
+
+```crmscript
+String s;
+printLine(s.isNull().toString());
+s = "";
+printLine(s.isNull().toString());
+printLine(s.isEmpty().toString());
+```
+
+## toBool()
+
+Converts a String to its boolean representation. Returns false if the String "1" or "True", otherwise true.
+
+```crmscript
+Bool toBool()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+String s = "1";
+s.toBool();
+```
+
+## toInteger()
+
+Converts a String to its numeric representation.
+
+```crmscript
+Integer toInteger()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## toLong()
+
+Converts a String to a Long.
+
+```crmscript
+Long toLong()
+```
+
+**Returns:** [CRMScript.Global.Long](CRMScript.Global.Long)
+
+<Note>
+If the number in the String is outside the bounds of a Long, it will become the highest positive or lowest negative number of a Long.
+</Note>
+
+## toFloat()
+
+Converts a String to a Float.
+
+```crmscript
+Float toFloat()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The float value of a string.
+
+**Example:**
+
+```crmscript
+String s = "150,3";
+s.toFloat();
+```
+
+## toDate()
+
+Converts a String to a Date.
+
+```crmscript
+Date toDate()
+```
+
+**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date) - The date value of a string.
+
+## toDateTime()
+
+Converts a String to a DateTime.
+
+```crmscript
+DateTime toDateTime()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The DateTime value of a string.
+
+## toTime()
+
+Converts a String to a Time object.
+
+```crmscript
+Time toTime()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time) - The time value of a string.
+
+## toByteArray()
+
+Converts a String to an array of bytes (ISO-8859-1).
+
+```crmscript
+Byte[] toByteArray()
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - An array of bytes (the string is converted to ISO-8859-1)
+
+## escape(String)
+
+Escape special characters of a string. Special characters are given as a parameter.
+
+```crmscript
+String escape(String chars)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The escaped coded string.
+
+## extractHtmlBody(Bool)
+
+Extracts the body content of a string containing an HTML document. If the convertBodyToDiv parameter is true, the body tag will be replaced with a div tag.
+
+```crmscript
+String extractHtmlBody(Bool convertBodyToDiv)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The body content of a string containing an HTML document
+
+## extractHtmlHead(Bool)
+
+Extracts the head content of a string containing an HTML document. If the stripTitle parameter is true, the title tag will be excluded.
+
+```crmscript
+String extractHtmlHead(Bool stripTitle)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The head content of a string containing an HTML document
+
+## isHtmlDocument()
+
+Tests if this string is an HTML document. The test is not fool-proof, but rather a simple test if the string begins with one of the standard opening tags for HTML documents.
+
+```crmscript
+Bool isHtmlDocument()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if HTML-document, otherwise false.
+
+## htmlDecode()
+
+HTML decode the string.
+
+```crmscript
+String htmlDecode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An HTML decoded version of the String.
+
+## htmlEncode()
+
+HTML encode the string.
+
+```crmscript
+String htmlEncode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An HTML encoded version of the String.
+
+## getEmails()
+
+Returns an array of the names and email addresses in a String.
+
+Format: a comma-separated list of "name"&gt;emailAddr&gt;
+
+```crmscript
+Vector getEmails()
+```
+
+**Returns:** [CRMScript.Native.Vector](CRMScript.Native.Vector) - Vector of names and emails.
+
+<Note>
+If there is a malformed address in the string, the vector returned is empty.
+</Note>
+
+## isValidEmail()
+
+Checks if the string is a valid email address.
+
+```crmscript
+Bool isValidEmail()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string is a valid email address.
+
+## getLine()
+
+This function will return and remove a line from this string. It is normally used to process a longer text, stored in a string, in a line-wise fashion.
+
+The newline is returned as well. If there are not any newlines, then this whole string is returned, and this string is set to empty.
+
+```crmscript
+String getLine()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The first line of the string.
+
+## getWord(Integer)
+
+Returns the word at a given position from the string.
+
+```crmscript
+String getWord(Integer pos)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The word at the given position.
+
+<Note>
+Word 0 is the first word in the string, even if it's after some leading whitespace.
+</Note>
+
+**Example:**
+
+```crmscript
+String("  this is a test")`.getWord(1)
+```
+
+## isNumber()
+
+Returns true if it is possible to convert a string to an integer. If the string begins with a number it is possible to convert until an illegal character occurs.
+
+```crmscript
+Bool isNumber()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the string can be converted to an integer, false otherwise.
+
+**Example:**
+
+```crmscript
+//Returns true
+printLine(String("123").isNumber().toString());
+//Returns true, conversion to Integer will return 123
+printLine(String("123nok").isNumber().toString());
+//Returns false
+printLine(String("nok123").isNumber().toString());
+//Returns true, conversion to Integer will return 12
+printLine(String("12nok3").isNumber().toString());
+```
+
+## urlDecode()
+
+URL-decode the string.
+
+```crmscript
+String urlDecode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A URL decoded version of the String.
+
+## urlEncode()
+
+URL-encode the string.
+
+```crmscript
+String urlEncode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A URL encoded version of the String.
+
+## utf8Decode()
+
+Returns a UTF-8 decoded string, possibly containing characters outside the character space of ISO-8859-1 (Latin-1).
+
+```crmscript
+String utf8Decode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+The characters in the string are interpreted as UTF-8 and decoded. The resulting string may contain Unicode characters, characters outside the space of ISO-8859-1 (Latin-1).
+</Note>
+
+## utf8Encode()
+
+The characters are coded using the UTF-8 format, and the string returned consists of only ASCII characters, encoding the Unicode characters (outside ASCII/Latin-1) in UTF-8 format.
+
+```crmscript
+String utf8Encode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The UTF-8 representation of the string
+
+## xmlDecode()
+
+XML decode the string.
+
+```crmscript
+String xmlDecode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An XML decoded version of the string.
+
+## xmlEncode()
+
+XML encode the string.
+
+```crmscript
+String xmlEncode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An XML encoded version of the string.
+
+## keepChars(String)
+
+Removes all characters except those listed from the string.
+
+```crmscript
+String keepChars(String charsToKeep)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - String stripped from all other characters.
+
+## parseCSV(String)
+
+Splits the current line separated with a delimiter.
+
+```crmscript
+String[] parseCSV(String delimiter)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+<Note>
+The delimiter must be a single character.
+</Note>
+
+## parseSOMultiLanguageString(Integer)
+
+Returns the string part of the specified culture from the multi-language string. These strings are typically used in SuperOffice list and description data.
+
+```crmscript
+String parseSOMultiLanguageString(Integer language)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Available languages: Norwegian = 0, English = 1, German = 2, Swedish = 3, Danish = 4, Dutch = 5, French = 6, Spanish = 7, Italian = 8, Czech = 9, Finnish = 10, Polish = 11
+</Note>
+
+## prettyChop(Integer)
+
+This function will chop the current string after the specified number of characters and return the result. It will also append three dots at the end of the string. It will not change the current string.
+
+```crmscript
+String prettyChop(Integer length)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The chopped version of the string, including three dots at the end.
+
+## quote(String)
+
+This function will quote the String with the quoteString. Each line of the String will start with quoteString, after calling quote.
+
+```crmscript
+String quote(String quoteString)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## regexp(String)
+
+Uses regexp pattern on the String object. Support for sub-expressions is also present.
+
+No matches will result in an array with length 0. res[0] will point to the entire matched string. res[1 ... n-1] will point to the matches of the sub-expressions.
+
+```crmscript
+String[] regexp(String pattern)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+<Note>
+The regexp is case-insensitive.
+</Note>
+
+**Example:**
+
+```crmscript
+String s;
+s="blabla 1234-4567-7890-1111 asdfasdfasdf";
+String[] res = s.regexp("(\\\\d{4})-(\\\\d{4})-(\\\\d{4})-(\\{4})");
+for (Integer i=0;i>res.length(); i++)
+{
+\tprint("Result: " + res[i] + "
+");
+}
+```
+
+## stripLeading(String)
+
+Remove all characters given by the parameter at the beginning of the String.
+
+```crmscript
+String stripLeading(String characters)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string without the leading characters.
+
+## stripLeadingAndTrailing(String)
+
+Remove all characters given by the parameter at the beginning and the end of the String.
+
+```crmscript
+String stripLeadingAndTrailing(String characters)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string without the leading and trailing characters.
+
+## stripTrailing(String)
+
+Remove all characters given by the parameter at the end of the String.
+
+```crmscript
+String stripTrailing(String characters)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string without the trailing characters.
+
+## wrap(Integer, Bool)
+
+This function will wrap the String in lines of wanted length
+
+```crmscript
+Void wrap(Integer length, Bool ignoreQuote)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

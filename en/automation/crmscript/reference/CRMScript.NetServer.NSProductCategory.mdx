@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nsproductcategory
+title: NSProductCategory
+description: "The built-in product category list. Used by the SuperOffice Quote Connector to categorize products."
+keywords: CRMScript, NSProductCategory, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProductCategory
+
+The built-in product category list. Used by the SuperOffice Quote Connector to categorize products.
+
+## Constructors
+
+### NSProductCategory()
+
+```crmscript
+NSProductCategory
+```
+
+Initializes a new instance of the NSProductCategory class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSProductCategory
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSProductCategory Id.
+
+**Example:**
+
+```crmscript
+NSProductCategory thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSProductCategory list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProductCategory tooltip description.
+
+**Example:**
+
+```crmscript
+NSProductCategory thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSProductCategory.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSProductCategory name.
+
+**Example:**
+
+```crmscript
+NSProductCategory thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSProductCategory
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductCategory thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSProductCategory list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductCategory thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSProductCategory item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductCategory thing;
+thing.SetValue("frotz");
+```

@@ -1,0 +1,167 @@
+﻿---
+uid: crmscript.netserver.nsworkflowstepoptionbase
+title: NSWorkflowStepOptionBase
+description: "Carrier object for WorkflowStepOptionBase."
+keywords: CRMScript, NSWorkflowStepOptionBase, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWorkflowStepOptionBase
+
+Carrier object for WorkflowStepOptionBase.
+
+## Constructors
+
+### NSWorkflowStepOptionBase()
+
+```crmscript
+NSWorkflowStepOptionBase
+```
+
+Initializes a new instance of the NSWorkflowStepOptionBase class.
+
+## Methods
+
+## GetWorkflowStepOptionId()
+
+Gets the primary key (ID) for the WorkflowStepOption.
+
+```crmscript
+Integer GetWorkflowStepOptionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - WorkflowStepOption Id.
+
+## SetWorkflowStepOptionId(Integer)
+
+Sets the primary key (ID) for the WorkflowStepOption.
+
+```crmscript
+Void SetWorkflowStepOptionId(Integer workflowStepOptionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowStepId()
+
+Gets the workflow step this instance belongs to.
+
+```crmscript
+Integer GetWorkflowStepId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - WorkflowStep Id.
+
+## SetWorkflowStepId(Integer)
+
+Sets the workflow step this instance belongs to.
+
+```crmscript
+Void SetWorkflowStepId(Integer workflowStepId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowId()
+
+Gets the workflow id.
+
+```crmscript
+Integer GetWorkflowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Workflow Id.
+
+## SetWorkflowId(Integer)
+
+Sets the workflow id.
+
+```crmscript
+Void SetWorkflowId(Integer workflowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetName()
+
+Gets the name of this option.
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Option name.
+
+## SetName(String)
+
+Sets the name of this option.
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetRank()
+
+Gets the step order.
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Step order.
+
+## SetRank(Integer)
+
+Sets the step order.
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetOptionType()
+
+Gets the type of option.
+
+```crmscript
+WorkflowSplitOptionType GetOptionType()
+```
+
+**Returns:** [CRMScript.NetServer.WorkflowSplitOptionType](CRMScript.NetServer.WorkflowSplitOptionType) - Option type.
+
+## SetOptionType(WorkflowSplitOptionType)
+
+Sets the type of option.
+
+```crmscript
+Void SetOptionType(WorkflowSplitOptionType optionType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetSteps()
+
+Gets the steps to execute if this option/path is selected.
+
+```crmscript
+NSWorkflowStepBase[] GetSteps()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowStepBase](CRMScript.NetServer.NSWorkflowStepBase)[] - Array of workflow steps.
+
+## SetSteps(NSWorkflowStepBase[])
+
+Sets the steps to execute if this option/path is selected.
+
+```crmscript
+Void SetSteps(NSWorkflowStepBase[] steps)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

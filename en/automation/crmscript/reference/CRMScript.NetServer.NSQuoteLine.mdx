@@ -1,0 +1,1566 @@
+﻿---
+uid: crmscript.netserver.nsquoteline
+title: NSQuoteLine
+description: "Information about a connection to the ERP system."
+keywords: CRMScript, NSQuoteLine, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteLine
+
+Information about a connection to the ERP system.
+
+## Constructors
+
+### NSQuoteLine()
+
+```crmscript
+NSQuoteLine
+```
+
+Initializes a new instance of the NSQuoteLine class.
+
+## Methods
+
+## GetCode()
+
+```crmscript
+String GetCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A value the salesmen use to quickly find the correct product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String code = thing.GetCode();
+```
+
+## GetDeliveredQuantity()
+
+```crmscript
+Float GetDeliveredQuantity()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - How many units have been delivered* updated by ERP system.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float deliveredQuantity = thing.GetDeliveredQuantity();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A longer description for the product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String description = thing.GetDescription();
+```
+
+## GetDiscountAmount()
+
+```crmscript
+Float GetDiscountAmount()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount for the line, in whatever currency the sale is in. Both 'DiscountPercent' and 'DiscountAmount' shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. If this field is filled out by the user, it overrides any discount suggested by the connector. If the user has not filled this in, the system will copy the ERP discount amount to this field.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float discountAmount = thing.GetDiscountAmount();
+```
+
+## GetDiscountPercent()
+
+```crmscript
+Float GetDiscountPercent()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount for the line, in percent. Both 'DiscountPercent' and 'DiscountAmount' shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. If this field is filled out by the user, it overrides any discount suggested by the connector. If the user has not filled this in, the system will copy the ERP discount amount to this field. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float discountPercent = thing.GetDiscountPercent();
+```
+
+## GetEarningAmount()
+
+```crmscript
+Float GetEarningAmount()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The earning, in whatever currency the sale is in. Both 'EarningAmount and 'EarningPercent shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float earningAmount = thing.GetEarningAmount();
+```
+
+## GetEarningPercent()
+
+```crmscript
+Float GetEarningPercent()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The earning, in percent. Both 'EarningAmount and 'EarningPercent shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float earningPercent = thing.GetEarningPercent();
+```
+
+## GetERPDiscountAmount()
+
+```crmscript
+Float GetERPDiscountAmount()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount the system calculates based on customer / quantity / whatever. Can be overridden by the salesman in the field 'DiscountPercent' or 'DiscountAmount'. If UserValueOverride is set to 'None' then the value is copied to DiscountAmount. Both fields ERPDiscountPercent and ERPDiscountAmount will be filled out.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float eRPDiscountAmount = thing.GetERPDiscountAmount();
+```
+
+## GetERPDiscountPercent()
+
+```crmscript
+Float GetERPDiscountPercent()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount the system calculates based on customer / quantity / whatever. Can be overridden by the salesman in the field 'DiscountPercent' or 'DiscountAmount'. Both fields ERPDiscountPercent and ERPDiscountAmount will be filled out. If UserValueOverride is set to 'None' then the value is copied to DiscountPercent. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float eRPDiscountPercent = thing.GetERPDiscountPercent();
+```
+
+## GetERPProductKey()
+
+```crmscript
+String GetERPProductKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Foreign key of product+pricelist this line is based on. Can be blank since the QuoteLine doesn't have to be connected to a product.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String eRPProductKey = thing.GetERPProductKey();
+```
+
+## GetERPQuoteLineKey()
+
+```crmscript
+String GetERPQuoteLineKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The foreign key to the quoteline in ERP system (if it has such a representation).
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String eRPQuoteLineKey = thing.GetERPQuoteLineKey();
+```
+
+## GetExtraField1()
+
+```crmscript
+String GetExtraField1()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField1 = thing.GetExtraField1();
+```
+
+## GetExtraField2()
+
+```crmscript
+String GetExtraField2()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField2 = thing.GetExtraField2();
+```
+
+## GetExtraField3()
+
+```crmscript
+String GetExtraField3()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField3 = thing.GetExtraField3();
+```
+
+## GetExtraField4()
+
+```crmscript
+String GetExtraField4()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField4 = thing.GetExtraField4();
+```
+
+## GetExtraField5()
+
+```crmscript
+String GetExtraField5()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField5 = thing.GetExtraField5();
+```
+
+## GetExtraInfo()
+
+```crmscript
+NSProductExtraDataField[] GetExtraInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSProductExtraDataField](CRMScript.NetServer.NSProductExtraDataField)[] - Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+NSProductExtraDataField[] extraInfo = thing.GetExtraInfo();
+```
+
+## GetIsSubscription()
+
+```crmscript
+Bool GetIsSubscription()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this a subscription product, sold in repeating intervals/amounts?
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Bool isSubscription = thing.GetIsSubscription();
+```
+
+## GetItemNumber()
+
+```crmscript
+String GetItemNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Norwegian «Postnummer». Specific numbers from some hierarchy, for instance '1.4.3.2'. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String itemNumber = thing.GetItemNumber();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String name = thing.GetName();
+```
+
+## GetPriceUnit()
+
+```crmscript
+String GetPriceUnit()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); read-only for lines that originate in defined products.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String priceUnit = thing.GetPriceUnit();
+```
+
+## GetProductCategoryKey()
+
+```crmscript
+String GetProductCategoryKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the pricelist, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String productCategoryKey = thing.GetProductCategoryKey();
+```
+
+## GetProductFamilyKey()
+
+```crmscript
+String GetProductFamilyKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String productFamilyKey = thing.GetProductFamilyKey();
+```
+
+## GetProductTypeKey()
+
+```crmscript
+String GetProductTypeKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String productTypeKey = thing.GetProductTypeKey();
+```
+
+## GetQuantity()
+
+```crmscript
+Float GetQuantity()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - How many units; this is a decimal field since you might want to offer fractional units (2.5kg, or 0.5PC).
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float quantity = thing.GetQuantity();
+```
+
+## GetQuantityUnit()
+
+```crmscript
+String GetQuantityUnit()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String quantityUnit = thing.GetQuantityUnit();
+```
+
+## GetQuoteAlternativeId()
+
+```crmscript
+Integer GetQuoteAlternativeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alternative this line is part of, the conceptual Parent in CRM database.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer quoteAlternativeId = thing.GetQuoteAlternativeId();
+```
+
+## GetQuoteLineId()
+
+```crmscript
+Integer GetQuoteLineId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer quoteLineId = thing.GetQuoteLineId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - QuoteLines can be re-ordered, so we must track the ordering.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRawExtraInfo()
+
+```crmscript
+String GetRawExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String rawExtraInfo = thing.GetRawExtraInfo();
+```
+
+## GetReason()
+
+```crmscript
+String GetReason()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If QuoteStatus is not OK, then this field contains a localized explanation that the user can be shown.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String reason = thing.GetReason();
+```
+
+## GetRights()
+
+```crmscript
+String GetRights()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Field1=right&Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quote line, like Image will also be possibly to set rights on.
+
+<Note>
+Will be used by SuperOffice to control the user interface when showing the record.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String rights = thing.GetRights();
+```
+
+## GetRule()
+
+```crmscript
+String GetRule()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The names of one or more calculation rules that are in effect for this line, comma-separated case-insensitive.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String rule = thing.GetRule();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If there was a problem with for instance calculation, this field is set to warning or error. See &lt;xref href="CRMScript.NetServer.QuoteStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+
+<Note>
+Typically shown as an icon.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer status = thing.GetStatus();
+```
+
+## GetSubscriptionQuantity()
+
+```crmscript
+Float GetSubscriptionQuantity()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The default number of SubscriptionUnits to suggest when creating quote lines from this product.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float subscriptionQuantity = thing.GetSubscriptionQuantity();
+```
+
+## GetSubscriptionStart()
+
+```crmscript
+DateTime GetSubscriptionStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Start date for subscription, as offered.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+DateTime subscriptionStart = thing.GetSubscriptionStart();
+```
+
+## GetSubscriptionUnit()
+
+```crmscript
+String GetSubscriptionUnit()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual subscription unit.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String subscriptionUnit = thing.GetSubscriptionUnit();
+```
+
+## GetSubTotal()
+
+```crmscript
+Float GetSubTotal()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Value to help the user interface, is equal to 'Quantity * ListPrice'
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float subTotal = thing.GetSubTotal();
+```
+
+## GetSupplier()
+
+```crmscript
+String GetSupplier()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the supplier. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String supplier = thing.GetSupplier();
+```
+
+## GetSupplierCode()
+
+```crmscript
+String GetSupplierCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The suppliers' code or part number for this product.
+
+<Note>
+Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String supplierCode = thing.GetSupplierCode();
+```
+
+## GetThumbnail()
+
+```crmscript
+String GetThumbnail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A small image of the product, typically used to show in a list. Base64 encoded png.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String thumbnail = thing.GetThumbnail();
+```
+
+## GetTotalPrice()
+
+```crmscript
+Float GetTotalPrice()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - TotalPrice = SubTotal* DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float totalPrice = thing.GetTotalPrice();
+```
+
+## GetUnitCost()
+
+```crmscript
+Float GetUnitCost()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The cost price per unit for this product. May be filled in by connector if it has the Provide-Cost capability.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float unitCost = thing.GetUnitCost();
+```
+
+## GetUnitListPrice()
+
+```crmscript
+Float GetUnitListPrice()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The standard list price; as given by ERP Connector, OR overridden by user.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float unitListPrice = thing.GetUnitListPrice();
+```
+
+## GetUnitMinimumPrice()
+
+```crmscript
+Float GetUnitMinimumPrice()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The minimum price this line can be sold for (to limit discounting). Will come from the connector. List price per unit must exceed the minimum price per unit.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float unitMinimumPrice = thing.GetUnitMinimumPrice();
+```
+
+## GetUrl()
+
+```crmscript
+String GetUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A URL to the product info. Can be empty. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String url = thing.GetUrl();
+```
+
+## GetUserValueOverride()
+
+```crmscript
+Integer GetUserValueOverride()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Has the pre-calculated (from ERP) price information been overridden, and how. See &lt;xref href="CRMScript.NetServer.ValueOverride" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+
+<Note>
+If the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the DiscountPercent.)
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer userValueOverride = thing.GetUserValueOverride();
+```
+
+## GetVAT()
+
+```crmscript
+Float GetVAT()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Tax/VAT* THIS IS A PERCENTAGE. The connector is responsible for populating this field; the percentage will be used to calculate VAT amounts available as merge fields in the document templates (but amounts are never stored in the database).
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float vAT = thing.GetVAT();
+```
+
+## GetVATInfo()
+
+```crmscript
+String GetVATInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tax/VAT information, Extra info about VAT that the connector might insert, and the users might want to specify on the quote. The core CRM product has no business logic for this field, it is wholly up to connectors to use it.
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String vATInfo = thing.GetVATInfo();
+```
+
+## SetCode(String)
+
+```crmscript
+Void SetCode(String code)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String code;
+thing.SetCode(code);
+```
+
+## SetDeliveredQuantity(Float)
+
+```crmscript
+Void SetDeliveredQuantity(Float deliveredQuantity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float deliveredQuantity;
+thing.SetDeliveredQuantity(deliveredQuantity);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDiscountAmount(Float)
+
+```crmscript
+Void SetDiscountAmount(Float discountAmount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float discountAmount;
+thing.SetDiscountAmount(discountAmount);
+```
+
+## SetDiscountPercent(Float)
+
+```crmscript
+Void SetDiscountPercent(Float discountPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float discountPercent;
+thing.SetDiscountPercent(discountPercent);
+```
+
+## SetEarningAmount(Float)
+
+```crmscript
+Void SetEarningAmount(Float earningAmount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float earningAmount;
+thing.SetEarningAmount(earningAmount);
+```
+
+## SetEarningPercent(Float)
+
+```crmscript
+Void SetEarningPercent(Float earningPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float earningPercent;
+thing.SetEarningPercent(earningPercent);
+```
+
+## SetERPDiscountAmount(Float)
+
+```crmscript
+Void SetERPDiscountAmount(Float eRPDiscountAmount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float eRPDiscountAmount;
+thing.SetERPDiscountAmount(eRPDiscountAmount);
+```
+
+## SetERPDiscountPercent(Float)
+
+```crmscript
+Void SetERPDiscountPercent(Float eRPDiscountPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float eRPDiscountPercent;
+thing.SetERPDiscountPercent(eRPDiscountPercent);
+```
+
+## SetERPProductKey(String)
+
+```crmscript
+Void SetERPProductKey(String eRPProductKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String eRPProductKey;
+thing.SetERPProductKey(eRPProductKey);
+```
+
+## SetERPQuoteLineKey(String)
+
+```crmscript
+Void SetERPQuoteLineKey(String eRPQuoteLineKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String eRPQuoteLineKey;
+thing.SetERPQuoteLineKey(eRPQuoteLineKey);
+```
+
+## SetExtraField1(String)
+
+```crmscript
+Void SetExtraField1(String extraField1)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField1;
+thing.SetExtraField1(extraField1);
+```
+
+## SetExtraField2(String)
+
+```crmscript
+Void SetExtraField2(String extraField2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField2;
+thing.SetExtraField2(extraField2);
+```
+
+## SetExtraField3(String)
+
+```crmscript
+Void SetExtraField3(String extraField3)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField3;
+thing.SetExtraField3(extraField3);
+```
+
+## SetExtraField4(String)
+
+```crmscript
+Void SetExtraField4(String extraField4)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField4;
+thing.SetExtraField4(extraField4);
+```
+
+## SetExtraField5(String)
+
+```crmscript
+Void SetExtraField5(String extraField5)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String extraField5;
+thing.SetExtraField5(extraField5);
+```
+
+## SetExtraInfo(NSProductExtraDataField[])
+
+```crmscript
+Void SetExtraInfo(NSProductExtraDataField[] extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+NSProductExtraDataField[] extraInfo;
+thing.SetExtraInfo(extraInfo);
+```
+
+## SetIsSubscription(Bool)
+
+```crmscript
+Void SetIsSubscription(Bool isSubscription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Bool isSubscription;
+thing.SetIsSubscription(isSubscription);
+```
+
+## SetItemNumber(String)
+
+```crmscript
+Void SetItemNumber(String itemNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String itemNumber;
+thing.SetItemNumber(itemNumber);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPriceUnit(String)
+
+```crmscript
+Void SetPriceUnit(String priceUnit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String priceUnit;
+thing.SetPriceUnit(priceUnit);
+```
+
+## SetProductCategoryKey(String)
+
+```crmscript
+Void SetProductCategoryKey(String productCategoryKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String productCategoryKey;
+thing.SetProductCategoryKey(productCategoryKey);
+```
+
+## SetProductFamilyKey(String)
+
+```crmscript
+Void SetProductFamilyKey(String productFamilyKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String productFamilyKey;
+thing.SetProductFamilyKey(productFamilyKey);
+```
+
+## SetProductTypeKey(String)
+
+```crmscript
+Void SetProductTypeKey(String productTypeKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String productTypeKey;
+thing.SetProductTypeKey(productTypeKey);
+```
+
+## SetQuantity(Float)
+
+```crmscript
+Void SetQuantity(Float quantity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float quantity;
+thing.SetQuantity(quantity);
+```
+
+## SetQuantityUnit(String)
+
+```crmscript
+Void SetQuantityUnit(String quantityUnit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String quantityUnit;
+thing.SetQuantityUnit(quantityUnit);
+```
+
+## SetQuoteAlternativeId(Integer)
+
+```crmscript
+Void SetQuoteAlternativeId(Integer quoteAlternativeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer quoteAlternativeId;
+thing.SetQuoteAlternativeId(quoteAlternativeId);
+```
+
+## SetQuoteLineId(Integer)
+
+```crmscript
+Void SetQuoteLineId(Integer quoteLineId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer quoteLineId;
+thing.SetQuoteLineId(quoteLineId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRawExtraInfo(String)
+
+```crmscript
+Void SetRawExtraInfo(String rawExtraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String rawExtraInfo;
+thing.SetRawExtraInfo(rawExtraInfo);
+```
+
+## SetReason(String)
+
+```crmscript
+Void SetReason(String reason)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String reason;
+thing.SetReason(reason);
+```
+
+## SetRights(String)
+
+```crmscript
+Void SetRights(String rights)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String rights;
+thing.SetRights(rights);
+```
+
+## SetRule(String)
+
+```crmscript
+Void SetRule(String rule)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String rule;
+thing.SetRule(rule);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetSubscriptionQuantity(Float)
+
+```crmscript
+Void SetSubscriptionQuantity(Float subscriptionQuantity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float subscriptionQuantity;
+thing.SetSubscriptionQuantity(subscriptionQuantity);
+```
+
+## SetSubscriptionStart(DateTime)
+
+```crmscript
+Void SetSubscriptionStart(DateTime subscriptionStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+DateTime subscriptionStart;
+thing.SetSubscriptionStart(subscriptionStart);
+```
+
+## SetSubscriptionUnit(String)
+
+```crmscript
+Void SetSubscriptionUnit(String subscriptionUnit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String subscriptionUnit;
+thing.SetSubscriptionUnit(subscriptionUnit);
+```
+
+## SetSubTotal(Float)
+
+```crmscript
+Void SetSubTotal(Float subTotal)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float subTotal;
+thing.SetSubTotal(subTotal);
+```
+
+## SetSupplier(String)
+
+```crmscript
+Void SetSupplier(String supplier)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String supplier;
+thing.SetSupplier(supplier);
+```
+
+## SetSupplierCode(String)
+
+```crmscript
+Void SetSupplierCode(String supplierCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String supplierCode;
+thing.SetSupplierCode(supplierCode);
+```
+
+## SetThumbnail(String)
+
+```crmscript
+Void SetThumbnail(String thumbnail)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String thumbnail;
+thing.SetThumbnail(thumbnail);
+```
+
+## SetTotalPrice(Float)
+
+```crmscript
+Void SetTotalPrice(Float totalPrice)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float totalPrice;
+thing.SetTotalPrice(totalPrice);
+```
+
+## SetUnitCost(Float)
+
+```crmscript
+Void SetUnitCost(Float unitCost)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float unitCost;
+thing.SetUnitCost(unitCost);
+```
+
+## SetUnitListPrice(Float)
+
+```crmscript
+Void SetUnitListPrice(Float unitListPrice)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float unitListPrice;
+thing.SetUnitListPrice(unitListPrice);
+```
+
+## SetUnitMinimumPrice(Float)
+
+```crmscript
+Void SetUnitMinimumPrice(Float unitMinimumPrice)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float unitMinimumPrice;
+thing.SetUnitMinimumPrice(unitMinimumPrice);
+```
+
+## SetUrl(String)
+
+```crmscript
+Void SetUrl(String url)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String url;
+thing.SetUrl(url);
+```
+
+## SetUserValueOverride(Integer)
+
+```crmscript
+Void SetUserValueOverride(Integer userValueOverride)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the DiscountPercent.)
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Integer userValueOverride;
+thing.SetUserValueOverride(userValueOverride);
+```
+
+## SetVAT(Float)
+
+```crmscript
+Void SetVAT(Float vAT)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+Float vAT;
+thing.SetVAT(vAT);
+```
+
+## SetVATInfo(String)
+
+```crmscript
+Void SetVATInfo(String vATInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteLine thing;
+String vATInfo;
+thing.SetVATInfo(vATInfo);
+```

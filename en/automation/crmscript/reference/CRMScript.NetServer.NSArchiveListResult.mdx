@@ -1,0 +1,105 @@
+﻿---
+uid: crmscript.netserver.nsarchivelistresult
+title: NSArchiveListResult
+description: "Header/Detail variant of archive result, with a Row Count plus the actual rows. Future extensions may include other header data on the same level as the RowCount."
+keywords: CRMScript, NSArchiveListResult, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveListResult
+
+Header/Detail variant of archive result, with a Row Count plus the actual rows. Future extensions may include other header data on the same level as the RowCount.
+
+## Constructors
+
+### NSArchiveListResult()
+
+```crmscript
+NSArchiveListResult
+```
+
+Initializes a new instance of the NSArchiveListResult class.
+
+## Methods
+
+## GetRowCount()
+
+```crmscript
+Integer GetRowCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Count of rows, independent of paging.
+
+<Note>
+If you order up page 1 with page size 50, the row count may still be 279, that being the number of rows that would have been returned in a paging-off situation.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListResult thing;
+Integer rowCount = thing.GetRowCount();
+```
+
+## GetRows()
+
+```crmscript
+NSArchiveListItem[] GetRows()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - The actual rows, according to the paging info, of the result.
+
+<Note>
+See RowCount for a paging-independent count estimate
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListResult thing;
+NSArchiveListItem[] rows = thing.GetRows();
+```
+
+## SetRowCount(Integer)
+
+```crmscript
+Void SetRowCount(Integer rowCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If you order up page 1 with page size 50, the row count may still be 279, that being the number of rows that would have been returned in a  paging-off situation
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListResult thing;
+Integer rowCount;
+thing.SetRowCount(rowCount);
+```
+
+## SetRows(NSArchiveListItem[])
+
+```crmscript
+Void SetRows(NSArchiveListItem[] rows)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+See RowCount for a paging-independent count estimate
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveListResult thing;
+NSArchiveListItem[] rows;
+thing.SetRows(rows);
+```

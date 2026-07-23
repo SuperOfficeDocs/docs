@@ -1,0 +1,48 @@
+﻿---
+uid: crmscript.netserver.extrafieldflags
+title: Enum ExtraFieldFlags
+description: "Flag values for the CS extrafields dictionary"
+keywords: CRMScript, ExtraFieldFlags, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ExtraFieldFlags
+
+Flag values for the CS extrafields dictionary
+
+## Syntax
+
+```crmscript
+ExtraFieldFlags
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Neutral | No flags set |
+| Searchable | The field is searchable |
+| Public | The field is public (external) |
+| InNewTicket | The field is viewed in new-ticket form |
+| SetWhenClicked | The field is set (datetime) when clicked |
+| CannotChange | The field cannot change after being set |
+| DropDown | The field is a dropdown (extra string fields) |
+| Readable | The field is directly readable from database |
+| DontEscape | Do not HTML-escape the value when displaying field |
+| Deleted | The field is deleted |
+| IsId | The field is the id |
+| IsForeignId | The field is a foreign id |
+| ReadOnly | The field is not writeable |
+| UseDefault | Use default value for field if no value is supplied |
+| ListRelations | List relations |
+| ViewInList | View this field when listing rows |
+| HideHeaderIfEmpty | Hide the header for this list if there are no entries |
+| HideFunctions | Hide the function buttons for this relation |
+| NotEmpty | The field cannot be empty |
+| Hidden | The field is not shown anywhere |
+| Indexed | The field is indexed |
+| ViewInSearch | The field is viewed in relational searches |

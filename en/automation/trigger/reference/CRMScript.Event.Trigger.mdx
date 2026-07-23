@@ -1,0 +1,4226 @@
+﻿---
+uid: crmscript.event.trigger
+title: Trigger
+description: ""
+keywords: CRMScript, Trigger, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Trigger
+
+## Methods
+
+## ChatAfterSaveNewMessage
+
+(403) Called after a chat message is saved.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| chatSession.topicId | the topic this chat session belongs to |
+| chatSession.userId | ejUser ID |
+| chatSession.customerId | person ID |
+| chatSession.customerName | person name |
+| chatSession.customerEmail | person email |
+| chatSession.companyName | company name |
+| chatSession.customerPhone | person phone |
+| chatMessage.sessionId | session |
+| chatMessage.id | message ID |
+| chatMessage.message | message text |
+| chatMessage.type | type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageType)) |
+| chatMessage.specialType | Special type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionSpecialType)) |
+| chatMessage.specialParam | depends on type |
+| chatMessage.author | author name |
+
+The message has a list of clickable options. Options are as JSON array in specialParam.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("chatSession.userId");
+String param2 = ed.getInputValue("chatMessage.id");
+String param3 = ed.getInputValue("chatMessage.message");
+print("Params: " + param1 + " " + param2);
+```
+
+## ChatBeforeSaveNewMessage
+
+(402) Called before a chat message is saved.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| chatSession.topicId | the topic this chat session belongs to |
+| chatSession.userId | ejUser ID |
+| chatSession.customerId | person ID |
+| chatSession.customerName | person name |
+| chatSession.customerEmail | person email |
+| chatSession.companyName | company name |
+| chatSession.customerPhone | person phone |
+| chatMessage.sessionId | session |
+| chatMessage.message | message text |
+| chatMessage.type | type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageType)) |
+| chatMessage.specialType | Special type of message ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatMessageSpecialType)) |
+| chatMessage.specialParam | depends on type |
+| chatMessage.author | author name |
+
+The message has a list of clickable options. Options are as JSON array in specialParam.
+
+**Output values**
+&lt;table&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;chatMessage.message&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;chatMessage.specialType&lt;/td&gt;&lt;td&gt;Special type of message&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("chatSession.userId");
+String param2 = ed.getInputValue("chatMessage.id");
+String param3 = ed.getInputValue("chatMessage.message");
+print("Params: " + param1 + " " + param2);
+```
+
+## ChatNewSession
+
+Fires when a new chat session starts.
+
+Corresponds to the webhook chatsession.created event.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| chatSession.id | session ID |
+| chatSession.topicId | the chat topic this chat session belongs to |
+| chatSession.customerAlias | person name from form |
+| chatSession.sessionKey | secret key |
+| chatSession.customerHost | hostname |
+| chatSession.status | session status ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionStatus)) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("chatSession.id");
+String param2 = ed.getInputValue("chatMessage.id");
+String param3 = ed.getInputValue("chatMessage.message");
+```
+
+## ChatSessionChangedStatus
+
+(401) Called when session changes status. Equivalent to webhook chatsession.changed.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| chatSession.id | the session ID |
+| chatSession.status | new status ([enum](https://docs.superoffice.com/automation/chatbot/reference.html#chatSessionStatus)) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("chatSession.id");
+```
+
+## CompactModeInjection
+
+(200) Add custom stuff to our CompactMode client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+none
+
+**Output values**
+
+| Variable | Description |
+|---|---|
+| injection | Output string to inject into parser as variable. |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+print("window.alert('foo!');");
+```
+
+## CustomerCenterAuthentication
+
+(210) Called when customer logs into Customer centre.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| username | user string |
+| targetId | temporary key info ID (optional) |
+
+**Output values**
+
+| Variable | Description |
+|---|---|
+| navigateTo | set to URL to redirect to |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("personId");
+```
+
+## CustomerSetSubscriptions
+
+(302) Called when setting subscriptions from Manage subscription page.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| personId | person ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("personId");
+```
+
+## DbiTaskFailed
+
+(301) Called when a DBI task fails to execute successfully.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | the dbi agent schedule ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("entryId");
+```
+
+## ImportMailAfterProcessing
+
+(304) Called after email is processed by email filters and save to the system.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| messageId | message ID (int) |
+| ticketId | request ID |
+| customerId | The ID of the primary person connected to this ticket |
+| customerEmail | Email address of the primary person connected to this ticket |
+| mailBackup | Raw version of the email |
+| filterId | filter ID |
+| to | to header value |
+| from | from header value |
+| isNewCustomer | set to 1 if this email created a new customer/person (0/1) |
+
+In addition, any variables set by the email filter are also available with the name specified in the email filter.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## ImportMailBeforeProcessing
+
+There are several variables available in this context.
+
+- To get a variable:&lt;code&gt;getVariable("xxx")&lt;/code&gt;
+- To set a variable:&lt;code&gt;setVariable("xxx", &lt;value&gt;)&lt;/code&gt;, where &lt;value&gt; is a valid value for the field you are trying to set.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| subject | message subject |
+| body | message body |
+| bodyHtml | message html body |
+| author | message sender |
+| ticketId | request ID |
+| ticketExists | 1 if this is a mail on an existing request, else 0 (0/1) |
+| sendAutoReply | 1 if there will be sent an auto reply, else 0 (0/1) |
+| whyNoAutoReply | why? message |
+| toTrashcan | 1 if this mail will be sent to trashcan, else 0 (0/1) |
+| toBeDeleted | 1 if this mail will be deleted, else 0 (0/1) |
+| fromEjournal | 1 if the mail is from another AIM Server, else 0 (0/1) |
+| isBounce | 1 if this is a bounce, else 0 (0/1) |
+| mailboxId | The ID of the mailbox that the mail came in to |
+| smtpId | smtp message ID |
+| mailBackup | raw message text |
+| filterId | ID |
+| to | message to header |
+| from | message from header |
+
+**Output values**
+
+| Variable | Description |
+|---|---|
+| subject | message subject |
+| author | message sender |
+| ticketExists | request found? (0/1) |
+| sendAutoReply | should send reply? (0/1) |
+| whyNoAutoReply | why? message |
+| toTrashcan | 0/1 |
+| toBeDeleted | 0/1 |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+Ticket ticket;
+ticket.load(getVariable("ticketId").toInteger());
+if (ticket.getValue("status") == "2")
+  setVariable("ticketExists", "0");  // Generate new request
+```
+
+## MainMenu
+
+(113) Runs when the main menu is rendered.
+
+```crmscript
+
+```
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+MainMenu menu = getMainMenu();
+menu.addItem("List equipment", getProgram(1) + "&action=listExtraTable&extraTable=y_equipment");
+```
+
+## NewNotifyTicketFromForm
+
+(105) Called when a new ticket was created from a form.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| contactId | the contact ID |
+| personId | the person ID |
+| formId | the new Form ID |
+| formDescription | the form description |
+| formName | the form name |
+| formSubmissionId | the form submission ID |
+| projectId | the project ID |
+| selectionId | the selection ID |
+| entryId | the new ticket ID |
+| ticketId | the new ticket ID |
+| Additional form specific fields |  |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("entryId");
+```
+
+## NewTicket
+
+(100) Runs when a new ticket is created.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## NewTicketFromCustomerCenter
+
+(101) Called when a new ticket is created and saved from Customer center
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | ticket ID |
+| ticketId | ticket ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## NewTicketFromCustomerCenterBeforeSave
+
+(103) Called before a new ticket is created and saved from Customer center.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| customerId | person ID |
+
+**Output values**
+
+| Variable | Description |
+|---|---|
+| errorMessage |  |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## NewTicketFromEmail
+
+(102) Runs after ImportMailAfterProcessing (304) if ticket did not exist.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| messageId | message ID (int) |
+| entryId | request ID |
+| ticketId | request ID |
+| customerId | person ID |
+| customerEmail | person email address |
+| mailBackup | backup string |
+| filterId | filter ID |
+| to | to header value |
+| from | from header value |
+| isNewCustomer | new customer? (0/1) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## NewTicketFromForm
+
+(106) Called when a form submission creates a new ticket.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| contactId | the contact ID |
+| personId | the person ID |
+| formId | the new Form ID |
+| formDescription | the form description |
+| formName | the form name |
+| formSubmissionId | the form submission ID |
+| projectId | the project ID |
+| selectionId | the selection ID |
+| entryId | the new ticket ID |
+| ticketId | the new ticket ID |
+| categoryId | the new ticket category ID |
+| title | the new ticket title |
+| message | the new ticket body text |
+| Additional form specific fields |  |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("entryId");
+```
+
+## NewTicketFromSpmLink
+
+(104) Called when a mailing link was clicked and mailing specifies link tracking.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| custId | customer person ID |
+| personId | customer person ID |
+| linkId | link ID |
+| shipmentId | mailing ID |
+| linkUrl | url |
+| linkHits | number of hits |
+| ticketTitle | ticket title |
+| ticketCategory | ticket category ID |
+| ticketPriority | ticket priority ID |
+| ticketOwnedBy | owner of ticket |
+| firstHit | first click (0/1) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("entryId");
+```
+
+## SalesAfterSaveAppointment
+
+(1101) Called after an appointment is saved. EventData contains all variables passed by datahandler in the Sales client. It is also possible to create and pass custom variables from BeforeSave event trigger.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AppointmentEntity.ActiveDate | Activate date |
+| AppointmentEntity.ActiveLinks | Has active links |
+| AppointmentEntity.AppointmentId | Appointment ID |
+| AppointmentEntity.AssignmentStatus | Assignment status |
+| AppointmentEntity.Associate.* | Associate variables |
+| AppointmentEntity.BookingType | Booking type |
+| AppointmentEntity.CautionWarning | Caution warning |
+| AppointmentEntity.CentralserviceVideomeetId | CentralserviceVideomeetId |
+| AppointmentEntity.Completed | Completed |
+| AppointmentEntity.CompletedBool | Is completed |
+| AppointmentEntity.Contact.ActiveErpLinks | Has active Erp links |
+| AppointmentEntity.Contact.Address.* | Contact Address variables |
+| AppointmentEntity.Contact.* | Contact variables |
+| AppointmentEntity.CreatedBy.* | Associate variables |
+| AppointmentEntity.CreatedDate | Created date |
+| AppointmentEntity.Description | Description |
+| AppointmentEntity.EndDate | End date |
+| AppointmentEntity.HasAlarm | Has alarm |
+| AppointmentEntity.HasConflict | Has conflict |
+| AppointmentEntity.InvitationStatus | InvitationStatus |
+| AppointmentEntity.InvitedPerson.* | Invited person variables |
+| AppointmentEntity.IsAlldayEvent | Is allday event |
+| AppointmentEntity.IsFree | Is free |
+| AppointmentEntity.IsMileStone | Is milestone |
+| AppointmentEntity.IsPublished | Is published |
+| AppointmentEntity.JoinVideomeetUrl | JoinVideomeetUrl |
+| AppointmentEntity.Links.length | Links length |
+| AppointmentEntity.Location | Location |
+| AppointmentEntity.MotherAssociate.* | Mother associate variables |
+| AppointmentEntity.MotherId | MotherId |
+| AppointmentEntity.Participants.length | Participants length |
+| AppointmentEntity.PreferredTZLocation | PreferredTZLocation |
+| AppointmentEntity.Private | Is private |
+| AppointmentEntity.PublishEventDate | Publish event date |
+| AppointmentEntity.PublishFrom | Publish from |
+| AppointmentEntity.PublishTo | Publish to |
+| AppointmentEntity.RejectReason | Reject reason |
+| AppointmentEntity.StartDate | Start date |
+| AppointmentEntity.SuggestedAppointmentId | Suggested AppointmentId |
+| AppointmentEntity.Task.* | Task variables |
+| AppointmentEntity.Type | Type |
+| AppointmentEntity.UpdatedDate | Updated date |
+| AppointmentEntity.VisibleFor.* | VisibleFor variables |
+| DialogCaption | Dialog caption |
+| DoSendEmail | DoSendEmail |
+| IsNew | Is new |
+| IsVideoJoinButtonEnabled | Is VideoJoinButton enabled |
+| Links.length | Links length |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("AppointmentEntity.AppointmentId");
+```
+
+## SalesAfterSaveContact
+
+(1105) Called after a contact is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ContactEntity.ActiveErpLinks | Active Erp links |
+| ContactEntity.ActiveInterests | Active interests |
+| ContactEntity.ActiveStatusMonitorId | ActiveStatusMonitorId |
+| ContactEntity.Address.* | Address variables |
+| ContactEntity.Associate.* | Associate variables |
+| ContactEntity.BounceEmails.length | BounceEmails length |
+| ContactEntity.Business.* | Business variables |
+| ContactEntity.Category.* | Category variables |
+| ContactEntity.ContactId | ContactId |
+| ContactEntity.Country.* | Country variables |
+| ContactEntity.CreatedBy.* | Created by variables |
+| ContactEntity.CreatedDate | Created date |
+| ContactEntity.CustomerLanguage.* | Customer language variables |
+| ContactEntity.DbiAgentId | DbiAgentId |
+| ContactEntity.DbiKey | DbiKey |
+| ContactEntity.DbiLastModified | DbiLastModified |
+| ContactEntity.DbiLastSyncronized | DbiLastSyncronized |
+| ContactEntity.Department | Department |
+| ContactEntity.Description | Description |
+| ContactEntity.Emails.length | Emails length |
+| ContactEntity.Faxes.length | Faxes length |
+| ContactEntity.GroupId | GroupId |
+| ContactEntity.Interests.length | Interests length |
+| ContactEntity.Interests[*].* | List of interests |
+| ContactEntity.Kananame | Kananame |
+| ContactEntity.Name | Name |
+| ContactEntity.NoMailing | No mailing |
+| ContactEntity.Number1 | Number 1 |
+| ContactEntity.Number2 | Number 2 |
+| ContactEntity.OrgNr | Org nr/VAT no |
+| ContactEntity.Persons.length | Persons length |
+| ContactEntity.Phones.length | Phones length |
+| ContactEntity.SupportPerson.* | Supportperson variables |
+| ContactEntity.TicketPriority.* | Ticket priority variables |
+| ContactEntity.UpdatedDate | Updated date |
+| ContactEntity.Urls.length | Urls length |
+| ContactEntity.Xstop | Stop |
+| IsNew | Is new |
+| PreviousCountryId | PreviousCountryId |
+</Note>
+
+**Example:**
+
+```crmscript
+// Get the variables in the current context
+EventData ed = getEventData();
+String contactId = ed.getInputValue("ContactEntity.ContactId");
+// If contact is new and category is "Prospect" create a new Sale opportunity
+if(ed.getInputValue("IsNew") == "true" && ed.getInputValue("ContactEntity.Category.Value") == "Prospect"))
+{
+  NSSaleAgent saleAgent;
+  NSContactAgent contactAgent;
+  NSContact contact = contactAgent.GetContact(contactId.toInteger());
+  NSSaleEntity entity = saleAgent.CreateDefaultSaleEntity();
+  entity.SetHeading("New potential sale on " + ed.getInputValue("ContactEntity.Name"));
+  entity.SetContact(contact);
+  NSSaleType saleType;
+  saleType.SetId(1);
+  entity.SetSaleType(saleType);
+  saleAgent.SaveSaleEntity(entity);
+}
+```
+
+## SalesAfterSaveDocument
+
+(1104) Called after a document is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| DocumentDate | Document date |
+| DocumentEntity.ActiveLinks | Active links |
+| DocumentEntity.Associate.* | Associate variables |
+| DocumentEntity.Attention | Attention |
+| DocumentEntity.Completed | Completed |
+| DocumentEntity.CompletedBool | true/false |
+| DocumentEntity.Contact.* | Contact variables |
+| DocumentEntity.Contact.Address.* | Contact address variables |
+| DocumentEntity.CreatedBy.* | Created by variables |
+| DocumentEntity.CreatedDate | Created date |
+| DocumentEntity.Date | Date |
+| DocumentEntity.Description | Description |
+| DocumentEntity.DocumentId | Document Id |
+| DocumentEntity.DocumentTemplate.* | Document template variables |
+| DocumentEntity.ExternalRef | External ref |
+| DocumentEntity.Header | Header |
+| DocumentEntity.IsPublished | Is published |
+| DocumentEntity.Links.length | Links length |
+| DocumentEntity.Name | Document name |
+| DocumentEntity.OurRef | Our ref |
+| DocumentEntity.Person.* | Person variables |
+| DocumentEntity.Project.* | Project variables |
+| DocumentEntity.PublishEventDate | Publish event date |
+| DocumentEntity.PublishFrom | Publish from |
+| DocumentEntity.PublishTo | Publish to |
+| DocumentEntity.Sale.* | Sale variables |
+| DocumentEntity.Snum | Snum |
+| DocumentEntity.SuggestedDocumentId | Suggested documentId |
+| DocumentEntity.Type | Type |
+| DocumentEntity.UpdatedDate | Updated date |
+| DocumentEntity.UpdatedBy.* | Updated by variables |
+| DocumentEntity.VisibleFor.length | Visible for length |
+| DocumentEntity.VisibleFor[].&#42; | List of visible for |
+| DocumentEntity.YourRef | Your ref |
+| DocumentName | Document name |
+| EmailItemId | EmailItemId |
+| IsNew | Is new |
+| Links.length | Links length |
+| SelectedDocumentTemplateLanguage | Document template language |
+| TemplateListName | Template list name |
+| TemplatesExtraInfo | Extra info |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("IsNew");
+if(param1 == "true" && ed.getInputValue("DocumentEntity.DocumentTemplate.Name") == "Incoming contract")
+{
+    //Do something when new document of type "Incoming contract" is created
+}
+```
+
+## SalesAfterSaveCustomObject
+
+(1117) Called after a Custom object is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is only supported in New Service with CustomObject FeatureToggle**
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | True if this is a new entry |
+| IsSCIL | Is SCIL |
+| TableName | Custom object name, typically y_something |
+| CustomObjectId | CustomObjectId |
+| CustomObjectEntity.* | Database field name on Custom object, typically x_myfield |
+| CustomObjectEntity.CustomObjectId | CustomObjectId |
+| ActivePersonId | Depending on context page this might be present |
+| ActiveContactId | Depending on context page this might be present |
+| ActiveProjectId | Depending on context page this might be present |
+| ActiveSaleId | Depending on context page this might be present |
+| ActiveTicketId | Depending on context page this might be present |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("IsNew");
+if(param1 == "true" && ed.getInputValue("TableName") == "y_cars")
+{
+    //Do something for if Custom object is Car and is created
+}
+```
+
+## SalesAfterSavePerson
+
+(1106) Called after a person is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| Associate | Associate |
+| Business | Business |
+| Category | Category |
+| ContactId | ContactId |
+| IsNew | true/false |
+| MailingConsent.HasConsent | true/false |
+| PersonEntity.ActiveErpLinks | ActiveErpLinks |
+| PersonEntity.ActiveInterests | ActiveInterests |
+| PersonEntity.Address.* | Address variables |
+| PersonEntity.BirthDate | BirthDate |
+| PersonEntity.BounceEmails.length | Bounce email length |
+| PersonEntity.Business.* | Business variables |
+| PersonEntity.Category.* | Category variables |
+| PersonEntity.ChatEmails.length | Chat emails length |
+| PersonEntity.Consents.length | Consents length |
+| PersonEntity.Consents[].&#42; | List of consents variables |
+| PersonEntity.Contact.Address.* | Contact address variables |
+| PersonEntity.Contact.* | Contact variables |
+| PersonEntity.Country.* | Country variables |
+| PersonEntity.CreatedBy.* | Associate variables |
+| PersonEntity.CreatedDate | Created date |
+| PersonEntity.CustomerLanguage.* | Customer language variables |
+| PersonEntity.DbiAgentId | DbiAgentId |
+| PersonEntity.DbiKey | DbiKey |
+| PersonEntity.DbiLastModified | DbiLastModified |
+| PersonEntity.DbiLastSyncronized | DbiLastSyncronized |
+| PersonEntity.Description | Description |
+| PersonEntity.Emails.length | Emails length |
+| PersonEntity.Faxes.length | Faxes length |
+| PersonEntity.Faxes[].&#42; | List of faxes |
+| PersonEntity.Firstname | First name |
+| PersonEntity.FormalName | Formal name |
+| PersonEntity.FullName | Full name |
+| PersonEntity.Interests.length | Interests length |
+| PersonEntity.Interests[].&#42; | Lists of interest variables |
+| PersonEntity.InternetPhones.length | Internet phones length |
+| PersonEntity.IsAssociate | true/false |
+| PersonEntity.Kanafname | Kanafname |
+| PersonEntity.Kanalname | Kanalname |
+| PersonEntity.Lastname | Lastname |
+| PersonEntity.MiddleName | Middle name |
+| PersonEntity.MobilePhones.length | Mobile phones length |
+| PersonEntity.MobilePhones[].&#42; | List of mobile phones variables |
+| PersonEntity.Mrmrs | Mrmrs |
+| PersonEntity.NoMailing | true/false |
+| PersonEntity.OfficePhones.length | Office phones length |
+| PersonEntity.OfficePhones[].&#42; | List of office phones variables |
+| PersonEntity.OtherPhones.length | Other phones length |
+| PersonEntity.OtherPhones[].&#42; | List of other phones variables |
+| PersonEntity.PersonId | PersonId |
+| PersonEntity.PersonNumber | Person number |
+| PersonEntity.Position.* | Position variables |
+| PersonEntity.Post1 | Post1 |
+| PersonEntity.Post2 | Post2 |
+| PersonEntity.Post3 | Post3 |
+| PersonEntity.PrivatePhones.length | Private phones length |
+| PersonEntity.PrivatePhones[].&#42; | List of private phones variables |
+| PersonEntity.Retired | true/false |
+| PersonEntity.Salutation | Salutation |
+| PersonEntity.ShipmentTypes.length | Shipment types length |
+| PersonEntity.ShipmentTypes[].&#42; | List of shipment types variables |
+| PersonEntity.SupportAssociate.* | Associate variables |
+| PersonEntity.TicketPriority.* | Ticket priority variables |
+| PersonEntity.Title | Title |
+| PersonEntity.UpdatedDate | Updated date |
+| PersonEntity.Urls.length | Urls length |
+| PersonEntity.UsePersonAddress | true/false |
+| PreviousCountryId | Previous countryId |
+| UseAcademicTitle | true/false |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("PersonEntity.PersonId");
+```
+
+## SalesAfterSaveProject
+
+(1109) Called after a project is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | true/false |
+| ProjectEntity.ActiveErpLinks | Active Erp links |
+| ProjectEntity.ActiveStatusMonitorId | Status monitor ID |
+| ProjectEntity.Associate.* | Associate variables |
+| ProjectEntity.Completed | Completed |
+| ProjectEntity.CreatedBy.* | Associate variables |
+| ProjectEntity.CreatedDate | Created date |
+| ProjectEntity.Description | Description |
+| ProjectEntity.EndDate | End date |
+| ProjectEntity.HasImage | true/false |
+| ProjectEntity.ImageDescription | Image description |
+| ProjectEntity.IsPublished | true/false |
+| ProjectEntity.Links.length | Links length |
+| ProjectEntity.Name | Name |
+| ProjectEntity.NextMilestoneDate | Next milestone date |
+| ProjectEntity.NmdAppointmentId | NmdAppointmentId |
+| ProjectEntity.Postit | Postit |
+| ProjectEntity.ProjectId | ProjectId |
+| ProjectEntity.ProjectMembers.length | Project members length |
+| ProjectEntity.ProjectNumber | Project number |
+| ProjectEntity.ProjectStatus.* | Project status variables |
+| ProjectEntity.ProjectType.* | Project type variables |
+| ProjectEntity.PublishEventDate | Publish event date |
+| ProjectEntity.PublishFrom | Publish from |
+| ProjectEntity.PublishTo | Publish to |
+| ProjectEntity.UpdatedDate | Updated date |
+| ProjectEntity.Urls.length | Urls length |
+</Note>
+
+**Example:**
+
+```crmscript
+// Get the variables in the current context
+EventData ed = getEventData();
+```
+
+## SalesAfterSaveProjectMember
+
+(1011) Called after project member is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddMembersArchiveConfig.ArchiveColumnInfo.length | ArchiveColumn length |
+| AddMembersArchiveConfig.ArchiveEntityInfo.length | ArchiveEntity length |
+| AddMembersArchiveConfig.ArchiveEntityInfo[].&#42; | List of archiveEntity with variables |
+| ContactPersonList.length | Length of person list |
+| ContactPersonList[].&#42; | List of persons with variables |
+| CurrentContactId | Current ContactId |
+| CurrentContactName | Current contact name |
+| CurrentEntityName | Current sale name |
+| IsNew | Is new |
+| MainEntity.* | MainEntity variables |
+| NewMembers | § separated rows, each containing pipe-separated columns: ID, contact ID, contact name, person ID, person name, projectmember role ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String[] param1 = ed.getInputValue("NewMembers").split("§");
+for(Integer i = 0; i < param1.length(); i++)
+{
+    //Do something with each new member
+}
+```
+
+## SalesAfterSaveQuote
+
+(1103) Called after an quote is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddAlternativeCreateOrCopy | AddAlternativeCreateOrCopy |
+| AlternativeDiscountAmount | AlternativeDiscountPercent |
+| AlternativeDiscountPercent | AlternativeDiscountPercent |
+| CanProvideDeliveryTermsList | true/false |
+| CanProvideDeliveryTypeList | true/false |
+| CanProvidePaymentTermsList | true/false |
+| CanProvidePaymentTypeList | true/false |
+| CannotProvideDeliveryTermsList | true/false |
+| CannotProvideDeliveryTypeList | true/false |
+| CannotProvidePaymentTermsList | true/false |
+| CannotProvidePaymentTypeList | true/false |
+| DeliveryAddress.LocalizedAddress.length | Length of list |
+| DeliveryAddress.LocalizedAddress[*].length | Length of lists |
+| DeliveryAddress.LocalizedAddress[*][].&#42; | Delivery address variables |
+| DeliveryAddress.Wgs84Latitude | Latitude |
+| DeliveryAddress.Wgs84Longitude | Longitude |
+| DeliveryAddressShowContact | true/false |
+| IsNew | Is new |
+| NewAlternativeName | New Alternative name |
+| NotInDraft | true/false |
+| PaymentAddress.LocalizedAddress.length | Length of list |
+| PaymentAddress.LocalizedAddress[*].length | Length of lists |
+| PaymentAddress.LocalizedAddress[*][].&#42; | Payment address variables |
+| PaymentAddress.Wgs84Latitude | Latitude |
+| PaymentAddress.Wgs84Longitude | Longitude |
+| PaymentAddressShowContact | true/false |
+| PreviousDeliveryCountryId | PreviousDeliveryCountryId |
+| PreviousPaymentCountryId | PreviousPaymentCountryId |
+| Quote.AcceptedQuoteAlternativeId | AcceptedQuoteAlternativeId |
+| Quote.ActiveQuoteVersion.* | Active QuoteVersion variables |
+| Quote.ActiveQuoteVersionId | ActiveQuoteVersionId |
+| Quote.DocumentId | DocumentId |
+| Quote.ERPOrderKey | ERPOrderKey |
+| Quote.ERPQuoteKey | ERPQuoteKey |
+| Quote.FavoriteQuoteAlternative.* | Favorite QuoteAlternative variables |
+| Quote.OrderComment | OrderComment |
+| Quote.PoNumber | PoNumber |
+| Quote.PreferredEmailCulture | PreferredEmailCulture |
+| Quote.QuoteConnectionId | QuoteConnectionId |
+| Quote.QuoteId | QuoteId |
+| Quote.SaleId | SaleId |
+| QuoteDocumentName | Quote document name |
+| QuoteExtraInfo | QuoteExtraInfo |
+| QuoteState | QuoteState |
+| QuoteVersion.* | Quoteversion variables |
+| QuoteVersionEarning | QuoteVersionEarning |
+| QuoteVersionEarningPercent | QuoteVersionEarningPercent |
+| QuoteVersionExtraInfo | QuoteVersionExtraInfo |
+| QuoteVersionTotal | QuoteVersionTotal |
+| SaleCurrency | SaleCurrency |
+| SaleTypeOrderConfirmationTemplateId | SaleTypeOrderConfirmationTemplateId |
+| SelectedCopyAlternative | SelectedCopyAlternative |
+| Title | Title |
+| UseDiscountOnTotal | true/false |
+| Additional variables connected to UI | Full list can be found using tracing option of trigger |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("Quote.SaleId");
+```
+
+## SalesAfterSaveQuoteLine
+
+(1113) Called after an quote line is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | Is new |
+| MandatoryFields | Mandatory fields |
+| QuoteLine.Code | Code |
+| QuoteLine.DeliveredQuantity | Delivered quantity |
+| QuoteLine.Description | Description |
+| QuoteLine.DiscountAmount | Discount amount |
+| QuoteLine.DiscountPercent | Discount percent |
+| QuoteLine.ERPDiscountAmount | Erp discount amount |
+| QuoteLine.ERPDiscountPercent | Erp discount percent |
+| QuoteLine.ERPProductKey | Erp product key |
+| QuoteLine.EarningAmount | Earning amount |
+| QuoteLine.EarningPercent | Earning percent |
+| QuoteLine.ExtraField1 | Extra field |
+| QuoteLine.ExtraField2 | Extra field |
+| QuoteLine.ExtraField3 | Extra field |
+| QuoteLine.ExtraField4 | Extra field |
+| QuoteLine.ExtraField5 | Extra field |
+| QuoteLine.ExtraInfo.length | Extra fields length |
+| QuoteLine.IsSubscription | Is subscription |
+| QuoteLine.ItemNumber | Item number |
+| QuoteLine.Name | Name |
+| QuoteLine.PriceUnit | Price unit |
+| QuoteLine.ProductCategoryKey | Product category key |
+| QuoteLine.ProductFamilyKey | Product family key |
+| QuoteLine.ProductTypeKey | Product type key |
+| QuoteLine.Quantity | Quantity |
+| QuoteLine.QuantityUnit | QuantityUnit |
+| QuoteLine.QuoteAlternativeId | QuoteAlternativeId |
+| QuoteLine.QuoteLineId | QuoteLineId |
+| QuoteLine.Rank | Rank |
+| QuoteLine.RawExtraInfo | RawExtraInfo |
+| QuoteLine.Rights | Rights |
+| QuoteLine.Rule | Rule |
+| QuoteLine.Status | Status |
+| QuoteLine.SubTotal | Subtotal |
+| QuoteLine.SubscriptionQuantity | Subscription quantity |
+| QuoteLine.SubscriptionStart | Subscription start |
+| QuoteLine.SubscriptionUnit | Subscription unit |
+| QuoteLine.Supplier | Supplier |
+| QuoteLine.SupplierCode | Supplier code |
+| QuoteLine.Thumbnail | Thumbnail |
+| QuoteLine.TotalPrice | Total price |
+| QuoteLine.UnitCost | Unit cost |
+| QuoteLine.UnitListPrice | Unit list price |
+| QuoteLine.UnitMinimumPrice | Unit minimum price |
+| QuoteLine.Url | Url |
+| QuoteLine.UserValueOverride | User value override |
+| QuoteLine.VAT | VAT |
+| QuoteLine.VATInfo | VAT info |
+| QuoteLineExists | QuoteLineExists |
+| StatusText | Status text |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("QuoteLine.QuoteLineId");
+```
+
+## SalesAfterSaveAcceptQuote
+
+(1114) Called after saving a quote approval. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+This trigger is only available as CRMScript trigger.
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | Is new |
+| Quote.SaleId | Quote.SaleId |
+| Quote.QuoteId | Quote.QuoteId |
+| Quote.ActiveQuoteVersionId | Quote.ActiveQuoteVersionId |
+| Quote.ActiveQuoteAlternativeId | Quote.ActiveQuoteAlternativeId |
+| ActiveUser | AssociateId for active user |
+| UserGroup | Primary usergroup of active user |
+| OtherUserGroups.length | Length of other usergroups for active user |
+| OtherUserGroups[i] | List of other usergroup IDs |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String activeQuoteVersion = ed.getInputValue("Quote.ActiveQuoteVersionId");
+NSQuoteAgent agent;
+NSQuoteVersion version = agent.GetQuoteVersion(activeQuoteVersion.toInteger());
+ed.setMessage("Quote was approved with text " + version.GetApprovedText());
+```
+
+## SalesAfterSaveRejectQuote
+
+(1115) Called after saving quote rejection. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+This trigger is only available as CRMScript trigger.
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | Is new |
+| Quote.SaleId | Quote.SaleId |
+| Quote.QuoteId | Quote.QuoteId |
+| Quote.ActiveQuoteVersionId | Quote.ActiveQuoteVersionId |
+| Quote.ActiveQuoteAlternativeId | Quote.ActiveQuoteAlternativeId |
+| ActiveUser | AssociateId for active user |
+| UserGroup | Primary usergroup of active user |
+| OtherUserGroups.length | Length of other usergroups for active user |
+| OtherUserGroups[i] | List of other usergroup IDs |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String activeQuoteVersion = ed.getInputValue("Quote.ActiveQuoteVersionId");
+NSQuoteAgent agent;
+NSQuoteVersion version = agent.GetQuoteVersion(activeQuoteVersion.toInteger());
+ed.setMessage("Quote was rejected with text " + version.GetApprovedText());
+```
+
+## SalesAfterSaveRelation
+
+(1107) Called after a relation is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ContactRelationEntity.ActiveText | Active text |
+| ContactRelationEntity.Comment | Comment |
+| ContactRelationEntity.CreatedDate | Created date |
+| ContactRelationEntity.CreatedBy.* | Associate variables |
+| ContactRelationEntity.DestinationContactId | Destination contactId |
+| ContactRelationEntity.DestinationContactName | Destination contact name |
+| ContactRelationEntity.DestinationPersonId | Destination personId |
+| ContactRelationEntity.DestinationPersonName | Destination person name |
+| ContactRelationEntity.PassiveText | Passive text |
+| ContactRelationEntity.RelationDefinitionId | Relation definitionId |
+| ContactRelationEntity.RelationId | RelationId |
+| ContactRelationEntity.SourceContactId | Source contactId |
+| ContactRelationEntity.SourceContactName | Source contact name |
+| ContactRelationEntity.SourcePersonId | Source personId |
+| ContactRelationEntity.SourcePersonName | Source person name |
+| ContactRelationEntity.UpdatedDate | Updated date |
+| IsNew | true/false |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("ContactRelationEntity.RelationId");
+```
+
+## SalesAfterSaveSale
+
+(1108)Called after a sale is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| EarningPst | Earning percent |
+| IsNew | true/false |
+| OurCurrency | Our currency |
+| ProbabilityPst | Probability percent |
+| SaleEntity.ActiveErpLinks | Active Erp links |
+| SaleEntity.ActiveLinks | Active links |
+| SaleEntity.Amount | Amount |
+| SaleEntity.Associate.* | Associate variables |
+| SaleEntity.Competitor.* | Competitor variables |
+| SaleEntity.Completed | Completed |
+| SaleEntity.CompletedBool | true/false |
+| SaleEntity.Contact.* | Contact variables |
+| SaleEntity.CreatedBy.* | Associate variables |
+| SaleEntity.CreatedDate | Created date |
+| SaleEntity.Credited.* | Credited variables |
+| SaleEntity.Currency.* | Currency variables |
+| SaleEntity.Earning | Earning |
+| SaleEntity.EarningPercent | Earning percent |
+| SaleEntity.Heading | Heading |
+| SaleEntity.IsPublished | true/false |
+| SaleEntity.Links.length | Links length |
+| SaleEntity.NextDueDate | Next duedate |
+| SaleEntity.Number | Number |
+| SaleEntity.Person.* | Person variables |
+| SaleEntity.Postit | Postit |
+| SaleEntity.Project.* | Project variables |
+| SaleEntity.PublishEventDate | Publish event date |
+| SaleEntity.PublishFrom | Publish from |
+| SaleEntity.PublishTo | Publish to |
+| SaleEntity.Rating.* | Rating variables |
+| SaleEntity.Reason.* | Reason variables |
+| SaleEntity.ReasonSold.* | Reason sold variables |
+| SaleEntity.SaleId | SaleId |
+| SaleEntity.SaleStakeholders.length | Stakeholders length |
+| SaleEntity.SaleText | Sale text |
+| SaleEntity.SaleType.* | Saletype variables |
+| SaleEntity.Saledate | Sale date |
+| SaleEntity.Source.* | Source variables |
+| SaleEntity.Status | Status |
+| SaleEntity.UpdatedDate | Updated date |
+| SaleEntity.VisibleFor.length | Visiblefor length |
+| SaleEntity.VisibleFor[].&#42; | Visiblefor variables |
+| SaleStalled | true/false |
+| SaleStatus | Sale status |
+| TotalCost | Total cost |
+</Note>
+
+**Example:**
+
+```crmscript
+//If sale status has changed and is sold* Change customer category
+if(ed.getInputValue("SaleStatusChanged") == "True" && ed.getInputValue("SaleStatus") == "2")
+{
+    if(ed.getInputValue("SaleEntity.Contact.CategoryName") == "Prospect")
+    {
+      NSContactAgent contactAgent;
+      NSContactEntity entity = contactAgent.GetContactEntity(ed.getInputValue("SaleEntity.Contact.ContactId").toInteger());
+      NSCategory category;
+      category.SetId(1);
+      entity.SetCategory(category);
+      contactAgent.SaveContactEntity(entity);
+    }
+}
+```
+
+## SalesAfterSaveSelection
+
+(1110) Called after selection is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+```
+
+## SalesAfterSaveSelectionMember
+
+(1112) Called after selection member is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddMembersArchiveConfig.ArchiveColumnInfo.length | ArchiveColumn length |
+| AddMembersArchiveConfig.ArchiveEntityInfo.length | ArchiveEntity length |
+| AddMembersArchiveConfig.ArchiveEntityInfo[].&#42; | List of archiveEntity with variables |
+| ContactPersonList.length | Length of person list |
+| ContactPersonList[].&#42; | List of persons with variables |
+| CurrentContactId | Current ContactId |
+| CurrentContactName | Current contact name |
+| CurrentEntityName | Current sale name |
+| IsNew | Is new |
+| MainEntity.* | MainEntity variables |
+| NewMembers | "§" separated rows, each containing pipe-separated columns: ID, contact ID, contact name, person ID, person name, selectionmember role ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String[] param1 = ed.getInputValue("NewMembers").split("§");
+for(Integer i = 0; i < param1.length(); i++)
+{
+    //Do something with each new member
+}
+```
+
+## SalesAfterSaveStakeholder
+
+(1002) Called after a sale stakeholder is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddMembersArchiveConfig.ArchiveColumnInfo.length | ArchiveColumn length |
+| AddMembersArchiveConfig.ArchiveEntityInfo.length | ArchiveEntity length |
+| AddMembersArchiveConfig.ArchiveEntityInfo[].&#42; | List of archiveEntity with variables |
+| ContactPersonList.length | Length of person list |
+| ContactPersonList[].&#42; | List of persons with variables |
+| CurrentContactId | Current ContactId |
+| CurrentContactName | Current contact name |
+| CurrentEntityName | Current sale name |
+| IsNew | Is new |
+| MainEntity.* | MainEntity variables |
+| NewMembers | "§" separated rows, each containing pipe-separated columns: ID, contact ID, contact name, person ID, stakeholder role ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String[] param1 = ed.getInputValue("NewMembers").split("§");
+for(Integer i = 0; i < param1.length(); i++)
+{
+//Do something with each new member
+}
+```
+
+## SalesAfterSaveTicket
+
+(1116) Called after a ticket is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is supported only in New Service**
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ActiveMessageId |  |
+| MessageEntity.EjMessageId | Current message ID |
+| MessageEntity.CustomFields.* | Any custom fields defined |
+| MessageEntity.HtmlBody | HTML content in message added |
+| MessageEntity.Slevel | Access level on message |
+| MessageEntity.Attachments.length | Attachment length on message |
+| MessageEntity.Attachments[x].* | List of attachments |
+| MessageEntity.Recipients.length | Length of recipients |
+| MessageEntity.Recipients[x].* | List of recipients |
+| MessageAction | See &lt;xref href="CRMScript.NetServer.MessageActionType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| IsNewTicket | Is New |
+| IsNewTicketMessage | Is new ticket message |
+| ActiveTicketId | Current ticket ID |
+| TicketEntity.TicketId | Current ticket ID |
+| TicketEntity.Title | Ticket title |
+| TicketEntity.CreatedAt | Datetime when ticket was created |
+| TicketEntity.LastChanged | Datetime when ticket was last changed |
+| TicketEntity.ReadByOwner | Datetime when ticket was last read by owner |
+| TicketEntity.ReadByCustomer | Datetime when ticket was last read by customer on Customer centre |
+| TicketEntity.FirstReadByOwner | Datetime when ticket was first read by owner |
+| TicketEntity.FirstReadByUser | Datetime when ticket was first read by customer on Customer centre |
+| TicketEntity.Activate | Datetime when ticket will be activated if postponed |
+| TicketEntity.ClosedAt | Datetime when ticket was closed |
+| TicketEntity.RepliedAt | Datetime when ticket was replied to |
+| TicketEntity.Deadline | Datetime for deadline on ticket |
+| TicketEntity.CreatedBy.* | The associate who created this ticket |
+| TicketEntity.Author | A string representing the author of the ticket (same as author of first message) |
+| TicketEntity.OwnedBy.* | The associate who owns this ticket |
+| TicketEntity.Category.* | The ticket category entity which this ticket is connected to |
+| TicketEntity.Slevel | The securitylevel of the ticket |
+| TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
+| TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
+| TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.Person.* | The primary person that this ticket is connected to |
+| TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
+| TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
+| TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToClose | Same as time_to_close, but not calculated based on priority |
+| TicketEntity.TimeSpentInternally | The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.TimeSpentExternally | The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.TimeSpentQueue | The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state |
+| TicketEntity.RealTimeSpentInternally | The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.RealTimeSpentExternally | The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.RealTimeSpentQueue | The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state |
+| TicketEntity.TimeSpent | The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use |
+| TicketEntity.HasAttachment | Boolean indicating if this ticket has one or more attachments |
+| TicketEntity.NumReplies | The number of replies (messages) to the customer for this request |
+| TicketEntity.NumMessages | The total number of messages for this request |
+| TicketEntity.FromAddress | The from-address used when this ticket got created, e.g. by email |
+| TicketEntity.Tags.length | Length of array of tags |
+| TicketEntity.Tags[x].* | An array containing the tags assigned to this request |
+| TicketEntity.Language | The language of the first external message |
+| TicketEntity.Sentiment | The sentiment index of the last external message |
+| TicketEntity.SentimentConfidence | The sentiment confidence of the last external message |
+| TicketEntity.SuggestedCategoryId | Suggestion for categorization, based on the text of the message (AI) |
+| TicketEntity.SuggestedCategoryName | Suggested category from AI |
+| TicketEntity.OrigHumanCategoryId | Will contain the category id selected by the user, when having the choice of using the suggested category or manually selecting a category |
+| TicketEntity.IconHint | Icon representing ticket's state |
+| TicketEntity.Sale | The sale that this ticket is connected to |
+| TicketEntity.Project | The project that this ticket is connected to |
+| TicketEntity.FormSubmission | The form submission that this ticket is connected to |
+| TicketEntity.TicketType.* | Type of the Request |
+| TicketEntity.ExtraFields.* | Any custom fields defined |
+| TicketEntity.CustomFields.* | Any custom fields defined |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String status = ed.getInputValue("BaseStatus");
+if(status == "Closed")
+{
+//Do something with closed ticket
+}
+```
+
+## SalesBeforeSaveAppointment
+
+(1001) Called before an appointment is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AppointmentEntity.ActiveDate | Activate date |
+| AppointmentEntity.ActiveLinks | Has active links |
+| AppointmentEntity.AppointmentId | Appointment ID |
+| AppointmentEntity.AssignmentStatus | Assignment status |
+| AppointmentEntity.Associate.* | Associate variables |
+| AppointmentEntity.BookingType | Booking type |
+| AppointmentEntity.CautionWarning | Caution warning |
+| AppointmentEntity.CentralserviceVideomeetId | CentralserviceVideomeetId |
+| AppointmentEntity.Completed | Completed |
+| AppointmentEntity.CompletedBool | Is completed |
+| AppointmentEntity.Contact.ActiveErpLinks | Has active Erp links |
+| AppointmentEntity.Contact.Address.* | Contact Address variables |
+| AppointmentEntity.Contact.* | Contact variables |
+| AppointmentEntity.CreatedBy.* | Associate variables |
+| AppointmentEntity.CreatedDate | Created date |
+| AppointmentEntity.Description | Description |
+| AppointmentEntity.EndDate | End date |
+| AppointmentEntity.HasAlarm | Has alarm |
+| AppointmentEntity.HasConflict | Has conflict |
+| AppointmentEntity.InvitationStatus | InvitationStatus |
+| AppointmentEntity.InvitedPerson.* | Invited person variables |
+| AppointmentEntity.IsAlldayEvent | Is allday event |
+| AppointmentEntity.IsFree | Is free |
+| AppointmentEntity.IsMileStone | Is milestone |
+| AppointmentEntity.IsPublished | Is published |
+| AppointmentEntity.JoinVideomeetUrl | JoinVideomeetUrl |
+| AppointmentEntity.Links.length | Links length |
+| AppointmentEntity.Location | Location |
+| AppointmentEntity.MotherAssociate.* | Mother associate variables |
+| AppointmentEntity.MotherId | MotherId |
+| AppointmentEntity.Participants.length | Participants length |
+| AppointmentEntity.PreferredTZLocation | PreferredTZLocation |
+| AppointmentEntity.Private | Is private |
+| AppointmentEntity.PublishEventDate | Publish event date |
+| AppointmentEntity.PublishFrom | Publish from |
+| AppointmentEntity.PublishTo | Publish to |
+| AppointmentEntity.RejectReason | Reject reason |
+| AppointmentEntity.StartDate | Start date |
+| AppointmentEntity.SuggestedAppointmentId | Suggested AppointmentId |
+| AppointmentEntity.Task.* | Task variables |
+| AppointmentEntity.Type | Type |
+| AppointmentEntity.UpdatedDate | Updated date |
+| AppointmentEntity.VisibleFor.* | VisibleFor variables |
+| DialogCaption | Dialog caption |
+| DoSendEmail | DoSendEmail |
+| IsNew | Is new |
+| IsVideoJoinButtonEnabled | Is VideoJoinButton enabled |
+| Links.length | Links length |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("AppointmentEntity.AppointmentId");
+```
+
+## SalesBeforeSaveContact
+
+(1005) Called before a contact is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ContactEntity.ActiveErpLinks | Active Erp links |
+| ContactEntity.ActiveInterests | Active interests |
+| ContactEntity.ActiveStatusMonitorId | ActiveStatusMonitorId |
+| ContactEntity.Address.* | Address variables |
+| ContactEntity.Associate.* | Associate variables |
+| ContactEntity.BounceEmails.length | BounceEmails length |
+| ContactEntity.Business.* | Business variables |
+| ContactEntity.Category.* | Category variables |
+| ContactEntity.ContactId | ContactId |
+| ContactEntity.Country.* | Country variables |
+| ContactEntity.CreatedBy.* | Created by variables |
+| ContactEntity.CreatedDate | Created date |
+| ContactEntity.CustomerLanguage.* | Customer language variables |
+| ContactEntity.DbiAgentId | DbiAgentId |
+| ContactEntity.DbiKey | DbiKey |
+| ContactEntity.DbiLastModified | DbiLastModified |
+| ContactEntity.DbiLastSyncronized | DbiLastSyncronized |
+| ContactEntity.Department | Department |
+| ContactEntity.Description | Description |
+| ContactEntity.Emails.length | Emails length |
+| ContactEntity.Faxes.length | Faxes length |
+| ContactEntity.GroupId | GroupId |
+| ContactEntity.Interests.length | Interests length |
+| ContactEntity.Interests[*].* | List of interests |
+| ContactEntity.Kananame | Kananame |
+| ContactEntity.Name | Name |
+| ContactEntity.NoMailing | No mailing |
+| ContactEntity.Number1 | Number 1 |
+| ContactEntity.Number2 | Number 2 |
+| ContactEntity.OrgNr | Org nr/VAT no |
+| ContactEntity.Persons.length | Persons length |
+| ContactEntity.Phones.length | Phones length |
+| ContactEntity.SupportPerson.* | Supportperson variables |
+| ContactEntity.TicketPriority.* | Ticket priority variables |
+| ContactEntity.UpdatedDate | Updated date |
+| ContactEntity.Urls.length | Urls length |
+| ContactEntity.Xstop | Stop |
+| IsNew | Is new |
+| PreviousCountryId | PreviousCountryId |
+</Note>
+
+**Example:**
+
+```crmscript
+// Get the variables in the current context
+EventData ed = getEventData();
+// Get the input value from the current company
+String orgNr = ed.getInputValue("ContactEntity.OrgNr");
+Bool blockExecution = false;
+// If the orgNr field is empty, block save with a message
+if(orgNr.isEmpty())
+{
+  ed.setMessage("Please type in a Org.Nr");
+  blockExecution = true;
+}// If the orgNr field has letters or is not 9 digits
+else if(!orgNr.isDigit() || orgNr.getLength() != 9)
+{
+  ed.setMessage("Please type in a valid Org.Nr (9 digits)");
+  blockExecution = true;
+}
+ed.setBlockExecution(blockExecution);
+```
+
+## SalesBeforeSaveCustomObject
+
+(1018) Called before a Custom object is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is only supported in New Service with CustomObject FeatureToggle**
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | True if this is a new entry |
+| IsSCIL | Is SCIL |
+| TableName | Custom object name, typically y_something |
+| CustomObjectId | CustomObjectId |
+| CustomObjectEntity.* | Database field name on Custom object, typically x_myfield |
+| CustomObjectEntity.CustomObjectId | CustomObjectId |
+| ActivePersonId | Depending on context page this might be present |
+| ActiveContactId | Depending on context page this might be present |
+| ActiveProjectId | Depending on context page this might be present |
+| ActiveSaleId | Depending on context page this might be present |
+| ActiveTicketId | Depending on context page this might be present |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("IsNew");
+if(param1 == "true" && ed.getInputValue("TableName") == "y_cars")
+{
+    //Do something for if Custom object is Car and is created
+}
+```
+
+## SalesBeforeSaveDocument
+
+(1004) Called before an document is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| DocumentDate | Document date |
+| DocumentEntity.ActiveLinks | Active links |
+| DocumentEntity.Associate.* | Associate variables |
+| DocumentEntity.Attention | Attention |
+| DocumentEntity.Completed | Completed |
+| DocumentEntity.CompletedBool | true/false |
+| DocumentEntity.Contact.* | Contact variables |
+| DocumentEntity.Contact.Address.* | Contact address variables |
+| DocumentEntity.CreatedBy.* | Created by variables |
+| DocumentEntity.CreatedDate | Created date |
+| DocumentEntity.Date | Date |
+| DocumentEntity.Description | Description |
+| DocumentEntity.DocumentId | Document Id |
+| DocumentEntity.DocumentTemplate.* | Document template variables |
+| DocumentEntity.ExternalRef | External ref |
+| DocumentEntity.Header | Header |
+| DocumentEntity.IsPublished | Is published |
+| DocumentEntity.Links.length | Links length |
+| DocumentEntity.Name | Document name |
+| DocumentEntity.OurRef | Our ref |
+| DocumentEntity.Person.* | Person variables |
+| DocumentEntity.Project.* | Project variables |
+| DocumentEntity.PublishEventDate | Publish event date |
+| DocumentEntity.PublishFrom | Publish from |
+| DocumentEntity.PublishTo | Publish to |
+| DocumentEntity.Sale.* | Sale variables |
+| DocumentEntity.Snum | Snum |
+| DocumentEntity.SuggestedDocumentId | Suggested documentId |
+| DocumentEntity.Type | Type |
+| DocumentEntity.UpdatedDate | Updated date |
+| DocumentEntity.UpdatedBy.* | Updated by variables |
+| DocumentEntity.VisibleFor.length | Visible for length |
+| DocumentEntity.VisibleFor[].&#42; | List of visible for |
+| DocumentEntity.YourRef | Your ref |
+| DocumentName | Document name |
+| EmailItemId | EmailItemId |
+| IsNew | Is new |
+| Links.length | Links length |
+| SelectedDocumentTemplateLanguage | Document template language |
+| TemplateListName | Template list name |
+| TemplatesExtraInfo | Extra info |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("IsNew");
+```
+
+## SalesBeforeSavePerson
+
+(1006) Called before a person is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| Associate | Associate |
+| Business | Business |
+| Category | Category |
+| ContactId | ContactId |
+| IsNew | true/false |
+| MailingConsent.HasConsent | true/false |
+| PersonEntity.ActiveErpLinks | ActiveErpLinks |
+| PersonEntity.ActiveInterests | ActiveInterests |
+| PersonEntity.Address.* | Address variables |
+| PersonEntity.BirthDate | BirthDate |
+| PersonEntity.BounceEmails.length | Bounce email length |
+| PersonEntity.Business.* | Business variables |
+| PersonEntity.Category.* | Category variables |
+| PersonEntity.ChatEmails.length | Chat emails length |
+| PersonEntity.Consents.length | Consents length |
+| PersonEntity.Consents[].&#42; | List of consents variables |
+| PersonEntity.Contact.Address.* | Contact address variables |
+| PersonEntity.Contact.* | Contact variables |
+| PersonEntity.Country.* | Country variables |
+| PersonEntity.CreatedBy.* | Associate variables |
+| PersonEntity.CreatedDate | Created date |
+| PersonEntity.CustomerLanguage.* | Customer language variables |
+| PersonEntity.DbiAgentId | DbiAgentId |
+| PersonEntity.DbiKey | DbiKey |
+| PersonEntity.DbiLastModified | DbiLastModified |
+| PersonEntity.DbiLastSyncronized | DbiLastSyncronized |
+| PersonEntity.Description | Description |
+| PersonEntity.Emails.length | Emails length |
+| PersonEntity.Faxes.length | Faxes length |
+| PersonEntity.Faxes[].&#42; | List of faxes |
+| PersonEntity.Firstname | First name |
+| PersonEntity.FormalName | Formal name |
+| PersonEntity.FullName | Full name |
+| PersonEntity.Interests.length | Interests length |
+| PersonEntity.Interests[].&#42; | Lists of interest variables |
+| PersonEntity.InternetPhones.length | Internet phones length |
+| PersonEntity.IsAssociate | true/false |
+| PersonEntity.Kanafname | Kanafname |
+| PersonEntity.Kanalname | Kanalname |
+| PersonEntity.Lastname | Lastname |
+| PersonEntity.MiddleName | Middle name |
+| PersonEntity.MobilePhones.length | Mobile phones length |
+| PersonEntity.MobilePhones[].&#42; | List of mobile phones variables |
+| PersonEntity.Mrmrs | Mrmrs |
+| PersonEntity.NoMailing | true/false |
+| PersonEntity.OfficePhones.length | Office phones length |
+| PersonEntity.OfficePhones[].&#42; | List of office phones variables |
+| PersonEntity.OtherPhones.length | Other phones length |
+| PersonEntity.OtherPhones[].&#42; | List of other phones variables |
+| PersonEntity.PersonId | PersonId |
+| PersonEntity.PersonNumber | Person number |
+| PersonEntity.Position.* | Position variables |
+| PersonEntity.Post1 | Post1 |
+| PersonEntity.Post2 | Post2 |
+| PersonEntity.Post3 | Post3 |
+| PersonEntity.PrivatePhones.length | Private phones length |
+| PersonEntity.PrivatePhones[].&#42; | List of private phones variables |
+| PersonEntity.Retired | true/false |
+| PersonEntity.Salutation | Salutation |
+| PersonEntity.ShipmentTypes.length | Shipment types length |
+| PersonEntity.ShipmentTypes[].&#42; | List of shipment types variables |
+| PersonEntity.SupportAssociate.* | Associate variables |
+| PersonEntity.TicketPriority.* | Ticket priority variables |
+| PersonEntity.Title | Title |
+| PersonEntity.UpdatedDate | Updated date |
+| PersonEntity.Urls.length | Urls length |
+| PersonEntity.UsePersonAddress | true/false |
+| PreviousCountryId | Previous countryId |
+| UseAcademicTitle | true/false |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("PersonEntity.PersonId");
+```
+
+## SalesBeforeSaveProject
+
+(1009) Called before a project is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | true/false |
+| ProjectEntity.ActiveErpLinks | Active Erp links |
+| ProjectEntity.ActiveStatusMonitorId | Status monitor ID |
+| ProjectEntity.Associate.* | Associate variables |
+| ProjectEntity.Completed | Completed |
+| ProjectEntity.CreatedBy.* | Associate variables |
+| ProjectEntity.CreatedDate | Created date |
+| ProjectEntity.Description | Description |
+| ProjectEntity.EndDate | End date |
+| ProjectEntity.HasImage | true/false |
+| ProjectEntity.ImageDescription | Image description |
+| ProjectEntity.IsPublished | true/false |
+| ProjectEntity.Links.length | Links length |
+| ProjectEntity.Name | Name |
+| ProjectEntity.NextMilestoneDate | Next milestone date |
+| ProjectEntity.NmdAppointmentId | NmdAppointmentId |
+| ProjectEntity.Postit | Postit |
+| ProjectEntity.ProjectId | ProjectId |
+| ProjectEntity.ProjectMembers.length | Project members length |
+| ProjectEntity.ProjectNumber | Project number |
+| ProjectEntity.ProjectStatus.* | Project status variables |
+| ProjectEntity.ProjectType.* | Project type variables |
+| ProjectEntity.PublishEventDate | Publish event date |
+| ProjectEntity.PublishFrom | Publish from |
+| ProjectEntity.PublishTo | Publish to |
+| ProjectEntity.UpdatedDate | Updated date |
+| ProjectEntity.Urls.length | Urls length |
+</Note>
+
+**Example:**
+
+```crmscript
+// Get the variables in the current context
+EventData ed = getEventData();
+if(ed.getInputValue("IsNew") == "true")
+{
+    //If project is new make sure Description is not empty
+    Bool blockExecution = false;
+    String description = ed.getInputValue("ProjectEntity.Description");
+    // If the length of description field is less than 2 chars, block save with a message
+    if(description.getLength() <= 2)
+    {
+      ed.setMessage("Please type in a description");
+      blockExecution = true;
+    }
+    ed.setBlockExecution(blockExecution);
+}
+```
+
+## SalesBeforeSaveProjectMember
+
+(1011) Called before project member is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddMembersArchiveConfig.ArchiveColumnInfo.length | ArchiveColumn length |
+| AddMembersArchiveConfig.ArchiveEntityInfo.length | ArchiveEntity length |
+| AddMembersArchiveConfig.ArchiveEntityInfo[].&#42; | List of archiveEntity with variables |
+| ContactPersonList.length | Length of person list |
+| ContactPersonList[].&#42; | List of persons with variables |
+| CurrentContactId | Current ContactId |
+| CurrentContactName | Current contact name |
+| CurrentEntityName | Current sale name |
+| IsNew | Is new |
+| MainEntity.* | MainEntity variables |
+| NewMembers | § separated rows, each containing pipe-separated columns: ID, contact ID, contact name, person ID, person name, projectmember role ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String[] param1 = ed.getInputValue("NewMembers").split("§");
+for(Integer i = 0; i < param1.length(); i++)
+{
+    //Do something with each new member
+}
+```
+
+## SalesBeforeSaveQuote
+
+(1003) Called before an quote is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddAlternativeCreateOrCopy | AddAlternativeCreateOrCopy |
+| AlternativeDiscountAmount | AlternativeDiscountPercent |
+| AlternativeDiscountPercent | AlternativeDiscountPercent |
+| CanProvideDeliveryTermsList | true/false |
+| CanProvideDeliveryTypeList | true/false |
+| CanProvidePaymentTermsList | true/false |
+| CanProvidePaymentTypeList | true/false |
+| CannotProvideDeliveryTermsList | true/false |
+| CannotProvideDeliveryTypeList | true/false |
+| CannotProvidePaymentTermsList | true/false |
+| CannotProvidePaymentTypeList | true/false |
+| DeliveryAddress.LocalizedAddress.length | Length of list |
+| DeliveryAddress.LocalizedAddress[*].length | Length of lists |
+| DeliveryAddress.LocalizedAddress[*][].&#42; | Delivery address variables |
+| DeliveryAddress.Wgs84Latitude | Latitude |
+| DeliveryAddress.Wgs84Longitude | Longitude |
+| DeliveryAddressShowContact | true/false |
+| IsNew | Is new |
+| NewAlternativeName | New Alternative name |
+| NotInDraft | true/false |
+| PaymentAddress.LocalizedAddress.length | Length of list |
+| PaymentAddress.LocalizedAddress[*].length | Length of lists |
+| PaymentAddress.LocalizedAddress[*][].&#42; | Payment address variables |
+| PaymentAddress.Wgs84Latitude | Latitude |
+| PaymentAddress.Wgs84Longitude | Longitude |
+| PaymentAddressShowContact | true/false |
+| PreviousDeliveryCountryId | PreviousDeliveryCountryId |
+| PreviousPaymentCountryId | PreviousPaymentCountryId |
+| Quote.AcceptedQuoteAlternativeId | AcceptedQuoteAlternativeId |
+| Quote.ActiveQuoteVersion.* | Active QuoteVersion variables |
+| Quote.ActiveQuoteVersionId | ActiveQuoteVersionId |
+| Quote.DocumentId | DocumentId |
+| Quote.ERPOrderKey | ERPOrderKey |
+| Quote.ERPQuoteKey | ERPQuoteKey |
+| Quote.FavoriteQuoteAlternative.* | Favorite QuoteAlternative variables |
+| Quote.OrderComment | OrderComment |
+| Quote.PoNumber | PoNumber |
+| Quote.PreferredEmailCulture | PreferredEmailCulture |
+| Quote.QuoteConnectionId | QuoteConnectionId |
+| Quote.QuoteId | QuoteId |
+| Quote.SaleId | SaleId |
+| QuoteDocumentName | Quote document name |
+| QuoteExtraInfo | QuoteExtraInfo |
+| QuoteState | QuoteState |
+| QuoteVersion.* | Quoteversion variables |
+| QuoteVersionEarning | QuoteVersionEarning |
+| QuoteVersionEarningPercent | QuoteVersionEarningPercent |
+| QuoteVersionExtraInfo | QuoteVersionExtraInfo |
+| QuoteVersionTotal | QuoteVersionTotal |
+| SaleCurrency | SaleCurrency |
+| SaleTypeOrderConfirmationTemplateId | SaleTypeOrderConfirmationTemplateId |
+| SelectedCopyAlternative | SelectedCopyAlternative |
+| Title | Title |
+| UseDiscountOnTotal | true/false |
+| Additional variables connected to UI | Full list can be found using tracing option of trigger |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("Quote.SaleId");
+```
+
+## SalesBeforeSaveQuoteLine
+
+(1013) Called before an quote line is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | Is new |
+| MandatoryFields | Mandatory fields |
+| QuoteLine.Code | Code |
+| QuoteLine.DeliveredQuantity | Delivered quantity |
+| QuoteLine.Description | Description |
+| QuoteLine.DiscountAmount | Discount amount |
+| QuoteLine.DiscountPercent | Discount percent |
+| QuoteLine.ERPDiscountAmount | Erp discount amount |
+| QuoteLine.ERPDiscountPercent | Erp discount percent |
+| QuoteLine.ERPProductKey | Erp product key |
+| QuoteLine.EarningAmount | Earning amount |
+| QuoteLine.EarningPercent | Earning percent |
+| QuoteLine.ExtraField1 | Extra field |
+| QuoteLine.ExtraField2 | Extra field |
+| QuoteLine.ExtraField3 | Extra field |
+| QuoteLine.ExtraField4 | Extra field |
+| QuoteLine.ExtraField5 | Extra field |
+| QuoteLine.ExtraInfo.length | Extra fields length |
+| QuoteLine.IsSubscription | Is subscription |
+| QuoteLine.ItemNumber | Item number |
+| QuoteLine.Name | Name |
+| QuoteLine.PriceUnit | Price unit |
+| QuoteLine.ProductCategoryKey | Product category key |
+| QuoteLine.ProductFamilyKey | Product family key |
+| QuoteLine.ProductTypeKey | Product type key |
+| QuoteLine.Quantity | Quantity |
+| QuoteLine.QuantityUnit | QuantityUnit |
+| QuoteLine.QuoteAlternativeId | QuoteAlternativeId |
+| QuoteLine.QuoteLineId | QuoteLineId |
+| QuoteLine.Rank | Rank |
+| QuoteLine.RawExtraInfo | RawExtraInfo |
+| QuoteLine.Rights | Rights |
+| QuoteLine.Rule | Rule |
+| QuoteLine.Status | Status |
+| QuoteLine.SubTotal | Subtotal |
+| QuoteLine.SubscriptionQuantity | Subscription quantity |
+| QuoteLine.SubscriptionStart | Subscription start |
+| QuoteLine.SubscriptionUnit | Subscription unit |
+| QuoteLine.Supplier | Supplier |
+| QuoteLine.SupplierCode | Supplier code |
+| QuoteLine.Thumbnail | Thumbnail |
+| QuoteLine.TotalPrice | Total price |
+| QuoteLine.UnitCost | Unit cost |
+| QuoteLine.UnitListPrice | Unit list price |
+| QuoteLine.UnitMinimumPrice | Unit minimum price |
+| QuoteLine.Url | Url |
+| QuoteLine.UserValueOverride | User value override |
+| QuoteLine.VAT | VAT |
+| QuoteLine.VATInfo | VAT info |
+| QuoteLineExists | QuoteLineExists |
+| StatusText | Status text |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("QuoteLine.QuoteLineId");
+```
+
+## SalesBeforeSaveAcceptQuote
+
+(1014) Called before saving quote approval. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+This trigger is only available as CRMScript trigger.
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | Is new |
+| Quote.SaleId | Quote.SaleId |
+| Quote.QuoteId | Quote.QuoteId |
+| Quote.ActiveQuoteVersionId | Quote.ActiveQuoteVersionId |
+| Quote.ActiveQuoteAlternativeId | Quote.ActiveQuoteAlternativeId |
+| ActiveUser | AssociateId for active user |
+| UserGroup | Primary usergroup of active user |
+| OtherUserGroups.length | Length of other usergroups for active user |
+| OtherUserGroups[i] | List of other usergroup IDs |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String message = "";
+String activeQuoteAlternative = ed.getInputValue("Quote.ActiveQuoteAlternativeId");
+String userGroup = ed.getInputValue("UserGroup");
+Float discountPercent;
+NSQuoteAgent agent;
+NSQuoteAlternative alternative = agent.GetQuoteAlternative(activeQuoteAlternative.toInteger());
+discountPercent = alternative.GetDiscountPercent();
+//Check if discount higher than limit and specific usergroup
+if(discountPercent.round() >= 40 && userGroup == "2"){
+	message = "Discount is to high you are not allowed to approve it " + discountPercent.toString(2);
+	ed.setBlockExecution(true);
+	ed.setMessage(message);
+}
+```
+
+## SalesBeforeSaveRejectQuote
+
+(1015) Called before saving quote rejection. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+This trigger is only available as CRMScript trigger.
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | Is new |
+| Quote.SaleId | Quote.SaleId |
+| Quote.QuoteId | Quote.QuoteId |
+| Quote.ActiveQuoteVersionId | Quote.ActiveQuoteVersionId |
+| Quote.ActiveQuoteAlternativeId | Quote.ActiveQuoteAlternativeId |
+| ActiveUser | AssociateId for active user |
+| UserGroup | Primary usergroup of active user |
+| OtherUserGroups.length | Length of other usergroups for active user |
+| OtherUserGroups[i] | List of other usergroup IDs |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String activeQuoteVersion = ed.getInputValue("Quote.ActiveQuoteVersionId");
+```
+
+## SalesBeforeSaveRelation
+
+(1007) Called before a relation is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ContactRelationEntity.ActiveText | Active text |
+| ContactRelationEntity.Comment | Comment |
+| ContactRelationEntity.CreatedDate | Created date |
+| ContactRelationEntity.CreatedBy.* | Associate variables |
+| ContactRelationEntity.DestinationContactId | Destination contactId |
+| ContactRelationEntity.DestinationContactName | Destination contact name |
+| ContactRelationEntity.DestinationPersonId | Destination personId |
+| ContactRelationEntity.DestinationPersonName | Destination person name |
+| ContactRelationEntity.PassiveText | Passive text |
+| ContactRelationEntity.RelationDefinitionId | Relation definitionId |
+| ContactRelationEntity.RelationId | RelationId |
+| ContactRelationEntity.SourceContactId | Source contactId |
+| ContactRelationEntity.SourceContactName | Source contact name |
+| ContactRelationEntity.SourcePersonId | Source personId |
+| ContactRelationEntity.SourcePersonName | Source person name |
+| ContactRelationEntity.UpdatedDate | Updated date |
+| IsNew | true/false |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String param1 = ed.getInputValue("ContactRelationEntity.RelationId");
+```
+
+## SalesBeforeSaveSale
+
+(1008) Called before a sale is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| EarningPst | Earning percent |
+| IsNew | true/false |
+| OurCurrency | Our currency |
+| ProbabilityPst | Probability percent |
+| SaleEntity.ActiveErpLinks | Active Erp links |
+| SaleEntity.ActiveLinks | Active links |
+| SaleEntity.Amount | Amount |
+| SaleEntity.Associate.* | Associate variables |
+| SaleEntity.Competitor.* | Competitor variables |
+| SaleEntity.Completed | Completed |
+| SaleEntity.CompletedBool | true/false |
+| SaleEntity.Contact.* | Contact variables |
+| SaleEntity.CreatedBy.* | Associate variables |
+| SaleEntity.CreatedDate | Created date |
+| SaleEntity.Credited.* | Credited variables |
+| SaleEntity.Currency.* | Currency variables |
+| SaleEntity.Earning | Earning |
+| SaleEntity.EarningPercent | Earning percent |
+| SaleEntity.Heading | Heading |
+| SaleEntity.IsPublished | true/false |
+| SaleEntity.Links.length | Links length |
+| SaleEntity.NextDueDate | Next duedate |
+| SaleEntity.Number | Number |
+| SaleEntity.Person.* | Person variables |
+| SaleEntity.Postit | Postit |
+| SaleEntity.Project.* | Project variables |
+| SaleEntity.PublishEventDate | Publish event date |
+| SaleEntity.PublishFrom | Publish from |
+| SaleEntity.PublishTo | Publish to |
+| SaleEntity.Rating.* | Rating variables |
+| SaleEntity.Reason.* | Reason variables |
+| SaleEntity.ReasonSold.* | Reason sold variables |
+| SaleEntity.SaleId | SaleId |
+| SaleEntity.SaleStakeholders.length | Stakeholders length |
+| SaleEntity.SaleText | Sale text |
+| SaleEntity.SaleType.* | Saletype variables |
+| SaleEntity.Saledate | Sale date |
+| SaleEntity.Source.* | Source variables |
+| SaleEntity.Status | Status |
+| SaleEntity.UpdatedDate | Updated date |
+| SaleEntity.VisibleFor.length | Visiblefor length |
+| SaleEntity.VisibleFor[].&#42; | Visiblefor variables |
+| SaleStalled | true/false |
+| SaleStatus | Sale status |
+| TotalCost | Total cost |
+</Note>
+
+**Example:**
+
+```crmscript
+// Get the variables in the current context
+EventData ed = getEventData();
+```
+
+## SalesBeforeSaveSelection
+
+(1010) Called before selection is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+```
+
+## SalesBeforeSaveSelectionMember
+
+(1012) Called before selection member is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddMembersArchiveConfig.ArchiveColumnInfo.length | ArchiveColumn length |
+| AddMembersArchiveConfig.ArchiveEntityInfo.length | ArchiveEntity length |
+| AddMembersArchiveConfig.ArchiveEntityInfo[].&#42; | List of archiveEntity with variables |
+| ContactPersonList.length | Length of person list |
+| ContactPersonList[].&#42; | List of persons with variables |
+| CurrentContactId | Current ContactId |
+| CurrentContactName | Current contact name |
+| CurrentEntityName | Current sale name |
+| IsNew | Is new |
+| MainEntity.* | MainEntity variables |
+| NewMembers | "§" separated rows, each containing pipe-separated columns: ID, contact ID, contact name, person ID, person name, selectionmember role ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String[] param1 = ed.getInputValue("NewMembers").split("§");
+for(Integer i = 0; i < param1.length(); i++)
+{
+    //Do something with each new member
+}
+```
+
+## SalesBeforeSaveStakeholder
+
+(1002) Called before a sale stakeholder is saved.EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| AddMembersArchiveConfig.ArchiveColumnInfo.length | ArchiveColumn length |
+| AddMembersArchiveConfig.ArchiveEntityInfo.length | ArchiveEntity length |
+| AddMembersArchiveConfig.ArchiveEntityInfo[].&#42; | List of archiveEntity with variables |
+| ContactPersonList.length | Length of person list |
+| ContactPersonList[].&#42; | List of persons with variables |
+| CurrentContactId | Current ContactId |
+| CurrentContactName | Current contact name |
+| CurrentEntityName | Current sale name |
+| IsNew | Is new |
+| MainEntity.* | MainEntity variables |
+| NewMembers | "§" separated rows, each containing pipe-separated columns: ID, contact ID, contact name, person ID, stakeholder role ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+String[] param1 = ed.getInputValue("NewMembers").split("§");
+for(Integer i = 0; i < param1.length(); i++)
+{
+    //Do something with each new member
+}
+```
+
+## SalesBeforeSaveTicket
+
+(1016) Called before a ticket is saved. EventData contains all variables passed by datahandler in the Sales client.
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is only supported in New Service**
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ActiveMessageId |  |
+| MessageEntity.EjMessageId | Current message ID |
+| MessageEntity.CustomFields.* | Any custom fields defined |
+| MessageEntity.HtmlBody | HTML content in message added |
+| MessageEntity.Slevel | Access level on message |
+| MessageEntity.Attachments.length | Attachment length on message |
+| MessageEntity.Attachments[x].* | List of attachments |
+| MessageEntity.Recipients.length | Length of recipients |
+| MessageEntity.Recipients[x].* | List of recipients |
+| MessageAction | See &lt;xref href="CRMScript.NetServer.MessageActionType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| IsNewTicket | Is New |
+| IsNewTicketMessage | Is new ticket message |
+| ActiveTicketId | Current ticket ID |
+| TicketEntity.TicketId | Current ticket ID |
+| TicketEntity.Title | Ticket title |
+| TicketEntity.CreatedAt | Datetime when ticket was created |
+| TicketEntity.LastChanged | Datetime when ticket was last changed |
+| TicketEntity.ReadByOwner | Datetime when ticket was last read by owner |
+| TicketEntity.ReadByCustomer | Datetime when ticket was last read by customer on Customer centre |
+| TicketEntity.FirstReadByOwner | Datetime when ticket was first read by owner |
+| TicketEntity.FirstReadByUser | Datetime when ticket was first read by customer on Customer centre |
+| TicketEntity.Activate | Datetime when ticket will be activated if postponed |
+| TicketEntity.ClosedAt | Datetime when ticket was closed |
+| TicketEntity.RepliedAt | Datetime when ticket was replied to |
+| TicketEntity.Deadline | Datetime for deadline on ticket |
+| TicketEntity.CreatedBy.* | The associate who created this ticket |
+| TicketEntity.Author | A string representing the author of the ticket (same as author of first message) |
+| TicketEntity.OwnedBy.* | The associate who owns this ticket |
+| TicketEntity.Category.* | The ticket category entity which this ticket is connected to |
+| TicketEntity.Slevel | The securitylevel of the ticket |
+| TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
+| TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
+| TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.Person.* | The primary person that this ticket is connected to |
+| TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
+| TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
+| TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToClose | Same as time_to_close, but not calculated based on priority |
+| TicketEntity.TimeSpentInternally | The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.TimeSpentExternally | The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.TimeSpentQueue | The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state |
+| TicketEntity.RealTimeSpentInternally | The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.RealTimeSpentExternally | The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.RealTimeSpentQueue | The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state |
+| TicketEntity.TimeSpent | The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use |
+| TicketEntity.HasAttachment | Boolean indicating if this ticket has one or more attachments |
+| TicketEntity.NumReplies | The number of replies (messages) to the customer for this request |
+| TicketEntity.NumMessages | The total number of messages for this request |
+| TicketEntity.FromAddress | The from-address used when this ticket got created, e.g. by email |
+| TicketEntity.Tags.length | Length of array of tags |
+| TicketEntity.Tags[x].* | An array containing the tags assigned to this request |
+| TicketEntity.Language | The language of the first external message |
+| TicketEntity.Sentiment | The sentiment index of the last external message |
+| TicketEntity.SentimentConfidence | The sentiment confidence of the last external message |
+| TicketEntity.SuggestedCategoryId | Suggestion for categorization, based on the text of the message (AI) |
+| TicketEntity.SuggestedCategoryName | Suggested category from AI |
+| TicketEntity.OrigHumanCategoryId | Will contain the category id selected by the user, when having the choice of using the suggested category or manually selecting a category |
+| TicketEntity.IconHint | Icon representing ticket's state |
+| TicketEntity.Sale.* | The sale that this ticket is connected to |
+| TicketEntity.Project.* | The project that this ticket is connected to |
+| TicketEntity.FormSubmission | The form submission that this ticket is connected to |
+| TicketEntity.TicketType.* | Type of the Request |
+| TicketEntity.ExtraFields.* | Any custom fields defined |
+| TicketEntity.CustomFields.* | Any custom fields defined |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+//Changing title if ticket is new
+if(ed.getInputValue("IsNewTicket") == "true")
+{
+    ed.setOutputValue("Important " + ed.getInputValue("TicketEntity.Title"));
+}
+```
+
+## SalesLoadCustomObject
+
+(1017) Called before a Custom object screen is loaded. EventData contains all variables passed by datahandler in the Sales client. Possible to manipulate field values by using setOutputValue()
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is only supported in New Service with CustomObject FeatureToggle**
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsNew | True if this is a new entry |
+| IsSCIL | Is SCIL |
+| TableName | Custom object name, typically y_something |
+| CustomObjectId | CustomObjectId |
+| CustomObjectEntity.* | Database field name on Custom object, typically x_myfield |
+| CustomObjectEntity.CustomObjectId | CustomObjectId |
+| ActivePersonId | Depending on context page this might be present |
+| ActiveContactId | Depending on context page this might be present |
+| ActiveProjectId | Depending on context page this might be present |
+| ActiveSaleId | Depending on context page this might be present |
+| ActiveTicketId | Depending on context page this might be present |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+//Setting value if is new
+if(ed.getInputValue("IsNew") == "true")
+{
+    ed.setOutputValue("CustomObjectEntity.x_value", "My value");
+}
+```
+
+## SalesLoadTicket
+
+(1020) Called before a ticket screen is loaded. EventData contains all variables passed by datahandler in the Sales client. Possible to manipulate field values by using setOutputValue()
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is only supported in New Service**
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ActiveTicketId | Current ticket ID |
+| TicketEntity.TicketId | Current ticket ID |
+| IsNewTicket | Is New |
+| IsNewTicketMessage | Is new ticket message |
+| TicketEntity.Title | Ticket title |
+| TicketEntity.CreatedAt | Datetime when ticket was created |
+| TicketEntity.LastChanged | Datetime when ticket was last changed |
+| TicketEntity.ReadByOwner | Datetime when ticket was last read by owner |
+| TicketEntity.ReadByCustomer | Datetime when ticket was last read by customer on Customer centre |
+| TicketEntity.FirstReadByOwner | Datetime when ticket was first read by owner |
+| TicketEntity.FirstReadByUser | Datetime when ticket was first read by customer on Customer centre |
+| TicketEntity.Activate | Datetime when ticket will be activated if postponed |
+| TicketEntity.ClosedAt | Datetime when ticket was closed |
+| TicketEntity.RepliedAt | Datetime when ticket was replied to |
+| TicketEntity.Deadline | Datetime for deadline on ticket |
+| TicketEntity.CreatedBy.* | The associate who created this ticket |
+| TicketEntity.Author | A string representing the author of the ticket (same as author of first message) |
+| TicketEntity.OwnedBy.* | The associate who owns this ticket |
+| TicketEntity.Category.* | The ticket category entity which this ticket is connected to |
+| TicketEntity.Slevel | The securitylevel of the ticket |
+| TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
+| TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
+| TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.Person.* | The primary person that this ticket is connected to |
+| TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
+| TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
+| TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToClose | Same as time_to_close, but not calculated based on priority |
+| TicketEntity.TimeSpentInternally | The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.TimeSpentExternally | The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.TimeSpentQueue | The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state |
+| TicketEntity.RealTimeSpentInternally | The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.RealTimeSpentExternally | The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.RealTimeSpentQueue | The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state |
+| TicketEntity.TimeSpent | The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use |
+| TicketEntity.HasAttachment | Boolean indicating if this ticket has one or more attachments |
+| TicketEntity.NumReplies | The number of replies (messages) to the customer for this request |
+| TicketEntity.NumMessages | The total number of messages for this request |
+| TicketEntity.FromAddress | The from-address used when this ticket got created, e.g. by email |
+| TicketEntity.Tags.length | Length of array of tags |
+| TicketEntity.Tags[x].* | An array containing the tags assigned to this request |
+| TicketEntity.Language | The language of the first external message |
+| TicketEntity.Sentiment | The sentiment index of the last external message |
+| TicketEntity.SentimentConfidence | The sentiment confidence of the last external message |
+| TicketEntity.SuggestedCategoryId | Suggestion for categorization, based on the text of the message (AI) |
+| TicketEntity.SuggestedCategoryName | Suggested category from AI |
+| TicketEntity.OrigHumanCategoryId | Will contain the category id selected by the user, when having the choice of using the suggested category or manually selecting a category |
+| TicketEntity.IconHint | Icon representing ticket's state |
+| TicketEntity.Sale.* | The sale that this ticket is connected to |
+| TicketEntity.Project.* | The project that this ticket is connected to |
+| TicketEntity.FormSubmission | The form submission that this ticket is connected to |
+| TicketEntity.TicketType.* | Type of the Request |
+| TicketEntity.ExtraFields.* | Any custom fields defined |
+| TicketEntity.CustomFields.* | Any custom fields defined |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+//Changing title if ticket is new
+if(ed.getInputValue("IsNewTicket") == "true")
+{
+    ed.setOutputValue("TicketEntity.Title", "Important "ed.getInputValue("TicketEntity.Title"));
+}
+```
+
+## SalesLoadTicketMessage
+
+(1021) Called before a ticket message screen is loaded. EventData contains all variables passed by datahandler in the Sales client. Possible to manipulate field values by using setOutputValue()
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is only supported in New Service**
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ActiveMessageId |  |
+| MessageEntity.EjMessageId | Current message ID |
+| MessageEntity.CustomFields.* | Any custom fields defined |
+| MessageEntity.HtmlBody | HTML content in message added |
+| MessageEntity.Slevel | Access level on message |
+| MessageEntity.Attachments.length | Attachment length on message |
+| MessageEntity.Attachments[x].* | List of attachments |
+| MessageEntity.Recipients.length | Length of recipients |
+| MessageEntity.Recipients[x].* | List of recipients |
+| MessageAction | See &lt;xref href="CRMScript.NetServer.MessageActionType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| IsNewTicket | Is New |
+| IsNewTicketMessage | Is new ticket message |
+| ActiveTicketId | Current ticket ID |
+| TicketEntity.TicketId | Current ticket ID |
+| TicketEntity.Title | Ticket title |
+| TicketEntity.CreatedAt | Datetime when ticket was created |
+| TicketEntity.LastChanged | Datetime when ticket was last changed |
+| TicketEntity.ReadByOwner | Datetime when ticket was last read by owner |
+| TicketEntity.ReadByCustomer | Datetime when ticket was last read by customer on Customer centre |
+| TicketEntity.FirstReadByOwner | Datetime when ticket was first read by owner |
+| TicketEntity.FirstReadByUser | Datetime when ticket was first read by customer on Customer centre |
+| TicketEntity.Activate | Datetime when ticket will be activated if postponed |
+| TicketEntity.ClosedAt | Datetime when ticket was closed |
+| TicketEntity.RepliedAt | Datetime when ticket was replied to |
+| TicketEntity.Deadline | Datetime for deadline on ticket |
+| TicketEntity.CreatedBy.* | The associate who created this ticket |
+| TicketEntity.Author | A string representing the author of the ticket (same as author of first message) |
+| TicketEntity.OwnedBy.* | The associate who owns this ticket |
+| TicketEntity.Category.* | The ticket category entity which this ticket is connected to |
+| TicketEntity.Slevel | The securitylevel of the ticket |
+| TicketEntity.Priority.* | The ticket priority entity which this ticket is connected to |
+| TicketEntity.BaseStatus | The status of the ticket. I.e. active/closed/postponed/deleted |
+| TicketEntity.Status.* | The ticket status entity which this ticket is connected to |
+| TicketEntity.Origin | What is the origin of this ticket. See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.Person.* | The primary person that this ticket is connected to |
+| TicketEntity.SecondaryPersons | The secondary persons this ticket is connected to |
+| TicketEntity.ConnectId | If a ticket is connected to another ticket, this field is set to the ID of the &apos;master&apos; ticket. |
+| TicketEntity.ReadStatus | Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; |
+| TicketEntity.TimeToReply | The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToReply | Same as time_to_reply, but not calculated based on priority |
+| TicketEntity.TimeToClose | The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe |
+| TicketEntity.RealTimeToClose | Same as time_to_close, but not calculated based on priority |
+| TicketEntity.TimeSpentInternally | The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.TimeSpentExternally | The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.TimeSpentQueue | The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state |
+| TicketEntity.RealTimeSpentInternally | The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state |
+| TicketEntity.RealTimeSpentExternally | The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state |
+| TicketEntity.RealTimeSpentQueue | The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state |
+| TicketEntity.TimeSpent | The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use |
+| TicketEntity.HasAttachment | Boolean indicating if this ticket has one or more attachments |
+| TicketEntity.NumReplies | The number of replies (messages) to the customer for this request |
+| TicketEntity.NumMessages | The total number of messages for this request |
+| TicketEntity.FromAddress | The from-address used when this ticket got created, e.g. by email |
+| TicketEntity.Tags.length | Length of array of tags |
+| TicketEntity.Tags[x].* | An array containing the tags assigned to this request |
+| TicketEntity.Language | The language of the first external message |
+| TicketEntity.Sentiment | The sentiment index of the last external message |
+| TicketEntity.SentimentConfidence | The sentiment confidence of the last external message |
+| TicketEntity.SuggestedCategoryId | Suggestion for categorization, based on the text of the message (AI) |
+| TicketEntity.SuggestedCategoryName | Suggested category from AI |
+| TicketEntity.OrigHumanCategoryId | Will contain the category id selected by the user, when having the choice of using the suggested category or manually selecting a category |
+| TicketEntity.IconHint | Icon representing ticket's state |
+| TicketEntity.Sale.* | The sale that this ticket is connected to |
+| TicketEntity.Project.* | The project that this ticket is connected to |
+| TicketEntity.FormSubmission | The form submission that this ticket is connected to |
+| TicketEntity.TicketType.* | Type of the Request |
+| TicketEntity.ExtraFields.* | Any custom fields defined |
+| TicketEntity.CustomFields.* | Any custom fields defined |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+//Set default message text
+if(ed.getInputValue("IsNewTicketMessage") == "true")
+{
+    ed.setOutputValue("MessageEntity.HtmlBody", "Thank you for reaching out!");
+}
+```
+
+## SalesSplitTicket
+
+(1019) Called when performing Split Request. EventData contains all variables passed by datahandler in the Sales client. Possible to manipulate field values by using setOutputValue()
+
+```crmscript
+
+```
+
+<Note>
+**Note: This trigger is only supported in New Service**
+
+**Input values**
+
+| Variable | Description |
+|---|---|
+| IsSCIL | Is SCIL |
+| OriginalTicketEntityId | TicketId from source Request |
+| NewTicketEntityId | TicketId of new Request |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 4;
+EventData ed = getEventData();
+String newTicketId = ed.getInputValue("NewTicketEntityId");
+String originalTicketId = ed.getInputValue("OriginalTicketEntityId");
+//Create internal comment on the new ticket
+String textNew = "This is a split request. The ID of the original ticket is: " + originalTicketId + "
+";
+Message newId;
+newId.setValue("slevel","1");
+newId.setValue("ticketId",newTicketId);
+newId.setValue("body",textNew);
+newId.setValue("author", getActiveUser().getValue("username"));
+newId.setValue("createdBy", getActiveUser().getValue("id"));
+newId.save();
+```
+
+## ScheduledTaskFailed
+
+(300) Runs after scheduled task failed
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | scheduled task ID |
+| retries | schedule number of retries |
+| disabled | schedule disabled ? |
+| errorMessage | error message string |
+| nextExecution | next scheduled start (datetime) |
+| executionTime | int |
+| scriptId | script ID to execute |
+| scriptName | name of script |
+| scriptIncludeId | unique ID of script |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("entryId");
+```
+
+## ServiceScreenAddMessageAfterSubmit
+
+(703) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenAddMessageBeforeSubmit
+
+(603) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenAddMessageLoad
+
+(503) Called when screen is constructed, useful for setting default values into HTML elements
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditCompanyAfterSubmit
+
+(708) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditCompanyBeforeSubmit
+
+(608) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditCompanyLoad
+
+(508) Runs for &lt;code&gt;HtmlPage.lang_ticket_newCompany&lt;/code&gt; screen. Called when screen is constructed, useful for setting default values into HTML elements
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditCustomerAfterSubmit
+
+(706) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditCustomerBeforeSubmit
+
+(606) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditCustomerLoad
+
+(506) Runs for &lt;code&gt;HtmlPage.lang_ticket_editCustomer&lt;/code&gt;
+
+Called when screen is constructed, useful for setting default values into HTML elements
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## ServiceScreenEditExtraTableAfterSubmit
+
+(710) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditExtraTableBeforeSubmit
+
+(610) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditExtraTableLoad
+
+(510) Called when screen is constructed, useful for setting default values into HTML elements.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## ServiceScreenEditTicketAfterSubmit
+
+(704) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditTicketBeforeSubmit
+
+(604) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenEditTicketLoad
+
+(504) Called when screen is constructed, useful for setting default values into HTML elements
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenForwardAfterSubmit
+
+(709) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenForwardBeforeSubmit
+
+(609) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenForwardLoad
+
+(509) Runs for &lt;code&gt;HtmlPage.forward&lt;/code&gt; event. Called when screen is constructed, useful for setting default values into HTML elements.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenListTicketMessagesAfterSubmit
+
+(702) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenListTicketMessagesBeforeSubmit
+
+(602) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenListTicketMessagesLoad
+
+(502) Called when screen is constructed, useful for setting default values into HTML elements.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenNewQuickTicketAfterSubmit
+
+(701) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenNewQuickTicketBeforeSubmit
+
+(601) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenNewQuickTicketLoad
+
+(501) Called when screen is constructed, useful for setting default values into HTML elements.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenNewTicketAfterSubmit
+
+(700) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenNewTicketBeforeSubmit
+
+(600) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenNewTicketLoad
+
+(500) Called when screen is constructed, useful for setting default values into HTML elements.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenViewCompanyAfterSubmit
+
+(707) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenViewCompanyBeforeSubmit
+
+(607) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenViewCompanyLoad
+
+(507) Called when screen is constructed, useful for setting default values into HTML elements.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenViewCustomerAfterSubmit
+
+(705) Called after screen is submitted and values are saved, useful for performing after processing.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenViewCustomerBeforeSubmit
+
+(605) Called before screen is submitted and values are saved, useful for validations with blocking of save.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## ServiceScreenViewCustomerLoad
+
+(505) Called when screen is constructed, useful for setting default values into HTML elements.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| button | HtmlSubmitButton element value |
+| x.value | element x value |
+| x.displayValue | element x display value |
+
+All HTML elements in the screen are added to the input values.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("button");
+```
+
+## TicketActivated
+
+(113) Runs when ticket is saved and status changed from postponed to active.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## TicketChangedCategory
+
+(141) Runs when a ticket is saved and the ticket category changes ID.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| category.old | old value |
+| category.new | new value |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("personId");
+```
+
+## TicketChangedOwnedBy
+
+(142) Runs when a ticket is saved and the owner changed.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| owned_by.old | old value |
+| owned_by.new | new value |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## TicketChangedPrimaryCustomer
+
+(143) Runs when a ticket is saved and the customer ID changes.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| cust_id.old | old value |
+| cust_id.new | new value |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("personId");
+```
+
+## TicketChangedPriority
+
+(140) Runs when a ticket is saved and priority changed.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| priority.old | old value |
+| priority.new | new value |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## TicketChangedSlevel
+
+(145) Runs when a ticket is saved and the security level changed.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| slevel.old | old value |
+| slevel.new | new value |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## TicketChangedTicketStatus
+
+(144) Runs when a ticket is saved and status changed. If user-defined statuses are present in solution available values will differ from below.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## TicketClosed
+
+(110) Runs when a ticket is saved and the status changes to closed.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## TicketDeleted
+
+(112) Runs when a ticket is saved and the status changes to deleted.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## TicketExternalMessageAdded
+
+(152) Called for all external messages added to a ticket, following a call to the TicketMessageAdded trigger.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | the ticket ID |
+| ticketId | the ticket ID |
+| messageId | the ticket message ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("entryId");
+```
+
+## TicketInternalMessageAdded
+
+(151) Called for all internal messages added to a ticket, following a call to the TicketMessageAdded trigger.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | the ticket ID |
+| ticketId | the ticket ID |
+| messageId | the ticket message ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("entryId");
+```
+
+## TicketMessageAdded
+
+(150) Called for all messages added to a ticket, followed by call to either &lt;code&gt;TicketInternalMessageAdded&lt;/code&gt; or &lt;code&gt;TicketExternalMessageAdded&lt;/code&gt; trigger.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | the ticket ID |
+| ticketId | the ticket ID |
+| messageId | the ticket message ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("entryId");
+```
+
+## TicketMessageSentimentCalculated
+
+(153) Runs when a new sentiment is calculated.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| language | Two letter language code |
+| sentiment |  |
+| sentimentConfidence |  |
+| messageId | message ID |
+| messageIsExternal | Bool |
+| messageIsFirst | Bool |
+| ticketTitle | title for request |
+| ticketPriorityId | priority ID |
+| ticketPriorityName | priority name |
+| ticketCategoryId | category ID |
+| ticketCategoryName | category name |
+| ticketStatusId | status ID |
+| ticketStatusName | status name |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## TicketPostponed
+
+(111) Runs when a ticket is saved and the status changed to postponed.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## TicketReopened
+
+(120) Runs when a ticket is saved and the status changed from closed to active.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | request ID |
+| ticketId | request ID |
+| personId | customer (person) ID |
+| contactId | company (contact) ID |
+| ticketStatus.old | old value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+| ticketStatus.new | new value (enum &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## TicketReopenedFromCustomerCenter
+
+(121) Called when a ticket is reopened from Customer center.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| entryId | ticket ID |
+| ticketId | ticket ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## TicketReopenedFromEmail
+
+(122) Runs after ImportMailAfterProcessing (304) if ticket existed before.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| messageId | message ID (int) |
+| entryId | request ID |
+| ticketId | request ID |
+| customerId | person ID |
+| customerEmail | person email address |
+| mailBackup | backup string |
+| filterId | filter ID |
+| to | to header value |
+| from | from header value |
+| isNewCustomer | new customer? (0/1) |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("customerId");
+```
+
+## TicketSave
+
+Called when a ticket is being saved.
+
+```crmscript
+
+```
+
+<Note>
+**Input values**
+
+| Variable | Description |
+|---|---|
+| ticketId | ticket ID |
+| activeUser | ejUser ID |
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+String param1 = getVariable("ticketId");
+```
+
+## OutboxItemCreated
+
+Called when an outbox item is being created (outbound email or SMS).
+
+```crmscript
+
+```
+
+<Note>
+See also [tutorial](../../crmscript/tutorials/crmscript-trigger-outbox.md).
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+EventData ed = getEventData();
+if (ed.getInputValue("eventType") == "autoReply") {
+//Do something
+}
+```

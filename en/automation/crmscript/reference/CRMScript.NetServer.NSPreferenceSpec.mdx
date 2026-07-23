@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nspreferencespec
+title: NSPreferenceSpec
+description: "Preference specification, consisting of the section name and key name."
+keywords: CRMScript, NSPreferenceSpec, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPreferenceSpec
+
+Preference specification, consisting of the section name and key name.
+
+## Constructors
+
+### NSPreferenceSpec()
+
+```crmscript
+NSPreferenceSpec
+```
+
+Initializes a new instance of the NSPreferenceSpec class.
+
+## Methods
+
+## GetKey()
+
+```crmscript
+String GetKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Preference key name.
+
+**Example:**
+
+```crmscript
+NSPreferenceSpec thing;
+String key = thing.GetKey();
+```
+
+## GetSection()
+
+```crmscript
+String GetSection()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Preference section name.
+
+**Example:**
+
+```crmscript
+NSPreferenceSpec thing;
+String section = thing.GetSection();
+```
+
+## SetKey(String)
+
+```crmscript
+Void SetKey(String key)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceSpec thing;
+String key;
+thing.SetKey(key);
+```
+
+## SetSection(String)
+
+```crmscript
+Void SetSection(String section)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceSpec thing;
+String section;
+thing.SetSection(section);
+```

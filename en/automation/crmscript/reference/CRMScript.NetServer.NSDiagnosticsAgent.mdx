@@ -1,0 +1,246 @@
+﻿---
+uid: crmscript.netserver.nsdiagnosticsagent
+title: NSDiagnosticsAgent
+description: "Diagnostics, usage data collection, caches, and flushing"
+keywords: CRMScript, NSDiagnosticsAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDiagnosticsAgent
+
+Diagnostics, usage data collection, caches, and flushing
+
+## Constructors
+
+### NSDiagnosticsAgent()
+
+```crmscript
+NSDiagnosticsAgent
+```
+
+Diagnostics, usage data collection, caches, and flushing
+
+## Methods
+
+## AddWebAppUsage(NSWebAppUsage[])
+
+Adds WebApp usage to existing log.
+
+```crmscript
+Void AddWebAppUsage(NSWebAppUsage[] webAppUsages)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ChangeLogSettings(Bool,Bool,Bool,Bool,Bool,Bool,Bool,Bool)
+
+Changes NetServer log settings.
+
+```crmscript
+Void ChangeLogSettings(Bool logWarning, Bool logInformation, Bool logSuccessAudit, Bool logFailureAudit, Bool logToEventLog, Bool logToSuperOffice, Bool logToFile, Bool logToTrace)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CollectDataAdditions()
+
+Collects and transmits usage statistics: Database Additions. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+
+```crmscript
+Void CollectDataAdditions()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+agent.CollectDataAdditions();
+```
+
+## CollectTableSizes()
+
+Collects and transmits usage statistics: Table Sizes. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+
+&lt;pre&gt;&lt;code&gt;NSDiagnosticsAgent agent;
+agent.CollectTableSizes();&lt;/code&gt;&lt;/pre&gt;
+
+```crmscript
+Void CollectTableSizes()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+agent.CollectTableSizes();
+```
+
+## CollectWebUsage()
+
+Collects and transmits usage statistics: Web-based clients Usage. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+
+```crmscript
+Void CollectWebUsage()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+agent.CollectWebUsage();
+```
+
+## CollectWinUsage()
+
+Collects and transmits usage statistics: Windows CRM Client Usage. If opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+
+&lt;pre&gt;&lt;code&gt;NSDiagnosticsAgent agent;
+agent.CollectWinUsage();&lt;/code&gt;&lt;/pre&gt;
+
+```crmscript
+Void CollectWinUsage()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+agent.CollectWinUsage();
+```
+
+## FlushCaches()
+
+Flushes all NetServer caches
+
+```crmscript
+Void FlushCaches()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## FlushCachesByName(String[])
+
+Flushes all NetServer caches named
+
+```crmscript
+Void FlushCachesByName(String[] cacheNames)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+String[] cacheNames;
+agent.FlushCachesByName(cacheNames);
+```
+
+## GetCacheNames()
+
+Gets the name of the caches that can be flushed
+
+```crmscript
+String[] GetCacheNames()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+String[] res = agent.GetCacheNames();
+```
+
+## GetWebAppUsagesForPeriod(DateTime,DateTime,String)
+
+Gets all WebAppUsages for a given period, that match an optional search term
+
+```crmscript
+NSWebAppUsage[] GetWebAppUsagesForPeriod(DateTime fromDate, DateTime toDate, String searchTerm)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebAppUsage](CRMScript.NetServer.NSWebAppUsage)[]
+
+## LogViewState(String)
+
+Logs a change in view state.
+
+```crmscript
+Void LogViewState(String viewState)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The granularity of the logging depends on the current configuration.
+
+This call returns asynchronously, leaving the server to finish processing later on.
+</Note>
+
+## PerformTasksAfterUpgrade()
+
+After upgrading to a new file set, there may be tasks that need to be done. Fpr example, import new TypicalSearches, if present. Tasks performed here need to be idempotent and independent of the actual upgrade jump (what was the previous version). They should complete in a reasonable time, not more than a few minutes maximum.
+
+```crmscript
+String PerformTasksAfterUpgrade()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+String res = agent.PerformTasksAfterUpgrade();
+```
+
+## ResyncUsers()
+
+Resynchronizes user information with SuperOffice Community, if opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.
+
+```crmscript
+Void ResyncUsers()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+agent.ResyncUsers();
+```
+
+## WebAppUsageExistsInPeriod(Integer,String,DateTime)
+
+Checks if viewState has been clicked at least once since a date.
+
+```crmscript
+Bool WebAppUsageExistsInPeriod(Integer associateId, String viewState, DateTime fromDate)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if viewState has been clicked at least once since FromDate, if asscoiateId &lt; 0 or FromDate is DateTime.MinValue no restriction given for those parameters.
+
+**Example:**
+
+```crmscript
+NSDiagnosticsAgent agent;
+Integer associateId;
+String viewState;
+DateTime fromDate;
+Bool res = agent.WebAppUsageExistsInPeriod(associateId, viewState, fromDate);
+```

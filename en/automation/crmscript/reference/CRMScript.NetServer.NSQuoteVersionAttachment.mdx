@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsquoteversionattachment
+title: NSQuoteVersionAttachment
+description: "Attachment documents for a given version of a Quote."
+keywords: CRMScript, NSQuoteVersionAttachment, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteVersionAttachment
+
+Attachment documents for a given version of a Quote.
+
+## Constructors
+
+### NSQuoteVersionAttachment()
+
+```crmscript
+NSQuoteVersionAttachment
+```
+
+Initializes a new instance of the NSQuoteVersionAttachment class.
+
+## Methods
+
+## GetDocumentId()
+
+```crmscript
+Integer GetDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Link to document.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionAttachment thing;
+Integer documentId = thing.GetDocumentId();
+```
+
+## GetIncluded()
+
+```crmscript
+Bool GetIncluded()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Will this attachment be included in the next 'Send Quote' operation.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionAttachment thing;
+Bool included = thing.GetIncluded();
+```
+
+## SetDocumentId(Integer)
+
+```crmscript
+Void SetDocumentId(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionAttachment thing;
+Integer documentId;
+thing.SetDocumentId(documentId);
+```
+
+## SetIncluded(Bool)
+
+```crmscript
+Void SetIncluded(Bool included)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionAttachment thing;
+Bool included;
+thing.SetIncluded(included);
+```
