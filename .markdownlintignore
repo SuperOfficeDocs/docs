@@ -1,9 +1,9 @@
 **/**/*.{cs,xml,yml}
-/docs/api/archive-providers/reference/
-/docs/api/mdo-providers/reference/
-/docs/api/reference/
-/docs/automation/netserver-scripting/
-/docs/database/tables/
+/en/api/archive-providers/reference/
+/en/api/mdo-providers/reference/
+/en/api/reference/
+/en/automation/crmscript/reference/
+/en/database/tables/
 /release-notes/database/
 .gitignore
 .mintignore

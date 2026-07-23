@@ -10,3 +10,8 @@ AGENTS.md
 
 # Python bytecode cache (tools/*.py scripts)
 __pycache__/
+
+# Vale style packages downloaded via `vale sync` (see .vale.ini Packages=)
+# — third-party content, not ours to commit. Run `vale sync` after cloning.
+vale/Microsoft/
+vale/.vale-config/
