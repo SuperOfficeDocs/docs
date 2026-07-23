@@ -503,7 +503,17 @@ Void setOption(String name, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;body&gt;&lt;tr&gt;&lt;td&gt;verifyPeer&lt;/td&gt;&gt;&lt;td&gt;verify the peer's SSL certificate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;verifyHost&lt;/td&gt;&gt;&lt;td&gt;verify the certificate's name against the host&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;timeout&lt;/td&gt;&gt;&lt;td&gt;set maximum time the request is allowed to take&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;followLocation&lt;/td&gt;&gt;&lt;td&gt;follow HTTP 3xx redirects if set to 1, default is 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username&lt;/td&gt;&gt;&lt;td&gt;username used in authentication&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;password&lt;/td&gt;&gt;&lt;td&gt;password used in authentication&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;parameters&lt;/td&gt;&gt;&lt;td&gt;The complete parameters to post. This will replace whatever you have added using .setValue(), but allows you to specify the whole parameter to post. Useful when posting e.g. JSON structs instead of name=value pairs. NOTE  you need to prefix whatever you want to send with a dummy character (which will be removed) due to complexities in this class. See the example below.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;authenticationMethod&lt;/td&gt;&gt;&lt;td&gt;which authentication method to use  basic (default), digest, gssnegotiate, ntlm, digest_ie, ntlm_wb, none&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;parametersUTF8&lt;/td&gt;&gt;&lt;td&gt;From version 8.2R3. This option makes the parameters be encoded as UTF-8. Normally this is what you want, but to not break any old uses, this is an optional option.&lt;/td&gt;&lt;/tr&gt;&lt;/body&gt;&lt;/table&gt;
+| Value | Description |
+|---|---|
+| verifyPeer | verify the peer's SSL certificate |
+| verifyHost | verify the certificate's name against the host |
+| timeout | set maximum time the request is allowed to take |
+| followLocation | follow HTTP 3xx redirects if set to 1, default is 1 |
+| username | username used in authentication |
+| password | password used in authentication |
+| parameters | The complete parameters to post. This will replace whatever you have added using .setValue(), but allows you to specify the whole parameter to post. Useful when posting e.g. JSON structs instead of name=value pairs. NOTE you need to prefix whatever you want to send with a dummy character (which will be removed) due to complexities in this class. See the example below. |
+| authenticationMethod | which authentication method to use basic (default), digest, gssnegotiate, ntlm, digest_ie, ntlm_wb, none |
+| parametersUTF8 | From version 8.2R3. This option makes the parameters be encoded as UTF-8. Normally this is what you want, but to not break any old uses, this is an optional option. |
 </Note>
 
 **Example:**

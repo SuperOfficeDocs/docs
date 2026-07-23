@@ -143,7 +143,30 @@ String toString(Integer mode, Integer language, Bool mode)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String)
 
 <Note>
-&lt;h3&gt;Modes:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Code&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Format&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;modeNewDate&lt;/td&gt;&lt;td&gt;YYYY-MM-DD&lt;/td&gt;&lt;td&gt;2020-05-29&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;modeNew2Min&lt;/td&gt;&lt;td&gt;YYYY-MM-DD hh:mm&lt;/td&gt;&lt;td&gt;2020-05-29 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;modeNew2Sec&lt;/td&gt;&lt;td&gt;YYYY-MM-DD hh:mm:ss&lt;/td&gt;&lt;td&gt;2020-05-29 13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;modeTextDate&lt;/td&gt;&lt;td&gt;DD. MMM YYYY (no)&lt;/td&gt;&lt;td&gt;May 29. 2020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MMM DD. YYYY (en)&lt;/td&gt;&lt;td&gt;29. Mai 2020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;modeText2Min&lt;/td&gt;&lt;td&gt;DD. MMM YYYY 11:23&lt;/td&gt;&lt;td&gt;May 29. 2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;modeText2Sec&lt;/td&gt;&lt;td&gt;DD. MMM YYYY 11:23:15&lt;/td&gt;&lt;td&gt;May 29. 2020 13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;modeText2MinLong&lt;/td&gt;&lt;td&gt;DD. MMM YYYY hh:mm (no)&lt;/td&gt;&lt;td&gt;29. Mai 2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MMM. DD. YYYY hh:mm (en)&lt;/td&gt;&lt;td&gt;May 29. 2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;modeShort2Min&lt;/td&gt;&lt;td&gt;MM/DD/YYYY hh:mm (no)&lt;/td&gt;&lt;td&gt;29/05/2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;DD/MM/YYYY hh:mm (en)&lt;/td&gt;&lt;td&gt;05/29/2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;modeNumeric&lt;/td&gt;&lt;td&gt;YYYYMMDDhhmmss&lt;/td&gt;&lt;td&gt;20200529133742&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;modeTime2Min&lt;/td&gt;&lt;td&gt;hh:mm&lt;/td&gt;&lt;td&gt;13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;modeTime2Sec&lt;/td&gt;&lt;td&gt;hh:mm:ss&lt;/td&gt;&lt;td&gt;13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;modeCompressed&lt;/td&gt;&lt;td&gt;YYYYMMDDhhmmss&lt;/td&gt;&lt;td&gt;20200529133942&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;modeRFC1123&lt;/td&gt;&lt;td&gt;ddd, DD MMM YY hh:mm:ss GMT&lt;/td&gt;&lt;td&gt;Fri, 29 May 20 13:37:42 GMT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;modeSoap&lt;/td&gt;&lt;td&gt;YYYY-DD-MMThh:mm:ss&lt;/td&gt;&lt;td&gt;2020-05-29T13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;modeRFC822&lt;/td&gt;&lt;td&gt;ddd, DD MMM YYYY hh:mm:ss +hhmm&lt;/td&gt;&lt;td&gt;Fri, 29 May 2020 13:37:42 +0200&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;modeDateFirst&lt;/td&gt;&lt;td&gt;MM.DD.YYYY hh.mm&lt;/td&gt;&lt;td&gt;29.05.2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;modeSlash2Min&lt;/td&gt;&lt;td&gt;MM/DD/YYYY hh.mm&lt;/td&gt;&lt;td&gt;29/05/2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Modes:&lt;/h3&gt;
+
+| Code | Name | Format | Example |
+|---|---|---|---|
+| 0 | modeNewDate | YYYY-MM-DD | 2020-05-29 |
+| 1 | modeNew2Min | YYYY-MM-DD hh:mm | 2020-05-29 13:37 |
+| 2 | modeNew2Sec | YYYY-MM-DD hh:mm:ss | 2020-05-29 13:37:42 |
+| 3 | modeTextDate | DD. MMM YYYY (no) | May 29. 2020 |
+|  |  | MMM DD. YYYY (en) | 29. Mai 2020 |
+| 4 | modeText2Min | DD. MMM YYYY 11:23 | May 29. 2020 13:37 |
+| 5 | modeText2Sec | DD. MMM YYYY 11:23:15 | May 29. 2020 13:37:42 |
+| 6 | modeText2MinLong | DD. MMM YYYY hh:mm (no) | 29. Mai 2020 13:37 |
+|  |  | MMM. DD. YYYY hh:mm (en) | May 29. 2020 13:37 |
+| 7 | modeShort2Min | MM/DD/YYYY hh:mm (no) | 29/05/2020 13:37 |
+|  |  | DD/MM/YYYY hh:mm (en) | 05/29/2020 13:37 |
+| 8 | modeNumeric | YYYYMMDDhhmmss | 20200529133742 |
+| 9 | modeTime2Min | hh:mm | 13:37 |
+| 10 | modeTime2Sec | hh:mm:ss | 13:37:42 |
+| 11 | modeCompressed | YYYYMMDDhhmmss | 20200529133942 |
+| 12 | modeRFC1123 | ddd, DD MMM YY hh:mm:ss GMT | Fri, 29 May 20 13:37:42 GMT |
+| 13 | modeSoap | YYYY-DD-MMThh:mm:ss | 2020-05-29T13:37:42 |
+| 14 | modeRFC822 | ddd, DD MMM YYYY hh:mm:ss +hhmm | Fri, 29 May 2020 13:37:42 +0200 |
+| 15 | modeDateFirst | MM.DD.YYYY hh.mm | 29.05.2020 13:37 |
+| 16 | modeSlash2Min | MM/DD/YYYY hh.mm | 29/05/2020 13:37 |
 </Note>
 
 **Example:**

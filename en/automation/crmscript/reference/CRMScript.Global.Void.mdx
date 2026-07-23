@@ -854,7 +854,32 @@ String getExternalProgram(Integer progId)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
 
 <Note>
-&lt;h3&gt;progId&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;td&gt;progId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;Hex&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;modNull&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0x00000000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modTicket&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0x00000001&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdmin&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0x00000002&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modDocument&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0x00000004&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modHelp&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;0x00000008&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustomer&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;0x00000010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modKnowledge&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;0x00000020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modPlanner&lt;/td&gt;&lt;td&gt;64&lt;/td&gt;&lt;td&gt;0x00000040&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAds&lt;/td&gt;&lt;td&gt;128&lt;/td&gt;&lt;td&gt;0x00000080&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSchedule&lt;/td&gt;&lt;td&gt;256&lt;/td&gt;&lt;td&gt;0x00000100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modStat&lt;/td&gt;&lt;td&gt;512&lt;/td&gt;&lt;td&gt;0x00000200&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRms&lt;/td&gt;&lt;td&gt;1024&lt;/td&gt;&lt;td&gt;0x00000400&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustLang&lt;/td&gt;&lt;td&gt;2048&lt;/td&gt;&lt;td&gt;0x00000800&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modExtDb&lt;/td&gt;&lt;td&gt;4096&lt;/td&gt;&lt;td&gt;0x00001000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdvancedFAQ&lt;/td&gt;&lt;td&gt;8192&lt;/td&gt;&lt;td&gt;0x00002000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modChat&lt;/td&gt;&lt;td&gt;16384&lt;/td&gt;&lt;td&gt;0x00004000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSpm&lt;/td&gt;&lt;td&gt;32768&lt;/td&gt;&lt;td&gt;0x00008000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoap&lt;/td&gt;&lt;td&gt;65536&lt;/td&gt;&lt;td&gt;0x00010000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoapPublic&lt;/td&gt;&lt;td&gt;131072&lt;/td&gt;&lt;td&gt;0x00020000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSms&lt;/td&gt;&lt;td&gt;26214&lt;/td&gt;&lt;td&gt;0x00040000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modBlogic&lt;/td&gt;&lt;td&gt;524288&lt;/td&gt;&lt;td&gt;0x00080000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRetail&lt;/td&gt;&lt;td&gt;1048576&lt;/td&gt;&lt;td&gt;0x00100000&lt;/tr&gt;&lt;/body&gt;&lt;/table&gt;
+&lt;h3&gt;progId&lt;/h3&gt;
+
+| progId | Integer | Hex |
+|---|---|---|
+| modNull | 0 | 0x00000000 |
+| modTicket | 1 | 0x00000001 |
+| modAdmin | 2 | 0x00000002 |
+| modDocument | 4 | 0x00000004 |
+| modHelp | 8 | 0x00000008 |
+| modCustomer | 16 | 0x00000010 |
+| modKnowledge | 32 | 0x00000020 |
+| modPlanner | 64 | 0x00000040 |
+| modAds | 128 | 0x00000080 |
+| modSchedule | 256 | 0x00000100 |
+| modStat | 512 | 0x00000200 |
+| modRms | 1024 | 0x00000400 |
+| modCustLang | 2048 | 0x00000800 |
+| modExtDb | 4096 | 0x00001000 |
+| modAdvancedFAQ | 8192 | 0x00002000 |
+| modChat | 16384 | 0x00004000 |
+| modSpm | 32768 | 0x00008000 |
+| modSoap | 65536 | 0x00010000 |
+| modSoapPublic | 131072 | 0x00020000 |
+| modSms | 26214 | 0x00040000 |
+| modBlogic | 524288 | 0x00080000 |
+| modRetail | 1048576 |  |
 </Note>
 
 ## getExternalProgramAdmin()
@@ -1290,7 +1315,32 @@ String getProgram(Integer progId)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String)
 
 <Note>
-&lt;h3&gt;progId&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;td&gt;progId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;Hex&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;modNull&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0x00000000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modTicket&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0x00000001&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdmin&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0x00000002&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modDocument&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0x00000004&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modHelp&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;0x00000008&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustomer&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;0x00000010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modKnowledge&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;0x00000020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modPlanner&lt;/td&gt;&lt;td&gt;64&lt;/td&gt;&lt;td&gt;0x00000040&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAds&lt;/td&gt;&lt;td&gt;128&lt;/td&gt;&lt;td&gt;0x00000080&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSchedule&lt;/td&gt;&lt;td&gt;256&lt;/td&gt;&lt;td&gt;0x00000100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modStat&lt;/td&gt;&lt;td&gt;512&lt;/td&gt;&lt;td&gt;0x00000200&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRms&lt;/td&gt;&lt;td&gt;1024&lt;/td&gt;&lt;td&gt;0x00000400&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustLang&lt;/td&gt;&lt;td&gt;2048&lt;/td&gt;&lt;td&gt;0x00000800&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modExtDb&lt;/td&gt;&lt;td&gt;4096&lt;/td&gt;&lt;td&gt;0x00001000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdvancedFAQ&lt;/td&gt;&lt;td&gt;8192&lt;/td&gt;&lt;td&gt;0x00002000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modChat&lt;/td&gt;&lt;td&gt;16384&lt;/td&gt;&lt;td&gt;0x00004000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSpm&lt;/td&gt;&lt;td&gt;32768&lt;/td&gt;&lt;td&gt;0x00008000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoap&lt;/td&gt;&lt;td&gt;65536&lt;/td&gt;&lt;td&gt;0x00010000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoapPublic&lt;/td&gt;&lt;td&gt;131072&lt;/td&gt;&lt;td&gt;0x00020000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSms&lt;/td&gt;&lt;td&gt;26214&lt;/td&gt;&lt;td&gt;0x00040000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modBlogic&lt;/td&gt;&lt;td&gt;524288&lt;/td&gt;&lt;td&gt;0x00080000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRetail&lt;/td&gt;&lt;td&gt;1048576&lt;/td&gt;&lt;td&gt;0x00100000&lt;/tr&gt;&lt;/body&gt;&lt;/table&gt;
+&lt;h3&gt;progId&lt;/h3&gt;
+
+| progId | Integer | Hex |
+|---|---|---|
+| modNull | 0 | 0x00000000 |
+| modTicket | 1 | 0x00000001 |
+| modAdmin | 2 | 0x00000002 |
+| modDocument | 4 | 0x00000004 |
+| modHelp | 8 | 0x00000008 |
+| modCustomer | 16 | 0x00000010 |
+| modKnowledge | 32 | 0x00000020 |
+| modPlanner | 64 | 0x00000040 |
+| modAds | 128 | 0x00000080 |
+| modSchedule | 256 | 0x00000100 |
+| modStat | 512 | 0x00000200 |
+| modRms | 1024 | 0x00000400 |
+| modCustLang | 2048 | 0x00000800 |
+| modExtDb | 4096 | 0x00001000 |
+| modAdvancedFAQ | 8192 | 0x00002000 |
+| modChat | 16384 | 0x00004000 |
+| modSpm | 32768 | 0x00008000 |
+| modSoap | 65536 | 0x00010000 |
+| modSoapPublic | 131072 | 0x00020000 |
+| modSms | 26214 | 0x00040000 |
+| modBlogic | 524288 | 0x00080000 |
+| modRetail | 1048576 |  |
 </Note>
 
 ## getProgramAdmin()

@@ -75,7 +75,15 @@ Bool open(String filename, String mode)
 <Note>
 Use open(String,String,String) to provide a codepage.
 
-Modes:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Mode&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;r or rb&lt;/td&gt;&lt;td&gt;Open file for reading.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;w or wb&lt;/td&gt;&lt;td&gt;Truncate to zero length or create a file for writing.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;a or ab&lt;/td&gt;&lt;td&gt;Append; open or create a file for writing at the end-of-file.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;r+ or rb+ or r+b&lt;/td&gt;&lt;td&gt;Open file for update (reading and writing).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;w+ or wb+ or w+b&lt;/td&gt;&lt;td&gt;Truncate to zero length or create a file for update.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+Modes:
+
+| Mode | Description |
+|---|---|
+| r or rb | Open file for reading. |
+| w or wb | Truncate to zero length or create a file for writing. |
+| a or ab | Append; open or create a file for writing at the end-of-file. |
+| r+ or rb+ or r+b | Open file for update (reading and writing). |
+| w+ or wb+ or w+b | Truncate to zero length or create a file for update. |
 </Note>
 
 ## open(String,String,String)
@@ -91,7 +99,15 @@ Bool open(String filename, String mode, String codepage)
 <Note>
 Use open(String,String) if you don't need to specify codepage.
 
-Modes:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Mode&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;r or rb&lt;/td&gt;&lt;td&gt;Open file for reading.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;w or wb&lt;/td&gt;&lt;td&gt;Truncate to zero length or create a file for writing.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;a or ab&lt;/td&gt;&lt;td&gt;Append; open or create a file for writing at the end-of-file.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;r+ or rb+ or r+b&lt;/td&gt;&lt;td&gt;Open file for update (reading and writing).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;w+ or wb+ or w+b&lt;/td&gt;&lt;td&gt;Truncate to zero length or create a file for update.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+Modes:
+
+| Mode | Description |
+|---|---|
+| r or rb | Open file for reading. |
+| w or wb | Truncate to zero length or create a file for writing. |
+| a or ab | Append; open or create a file for writing at the end-of-file. |
+| r+ or rb+ or r+b | Open file for update (reading and writing). |
+| w+ or wb+ or w+b | Truncate to zero length or create a file for update. |
 </Note>
 
 ## readAll()

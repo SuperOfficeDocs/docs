@@ -157,7 +157,31 @@ Integer getFlags()
 **Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
 
 <Note>
-&lt;table&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;The field is searchable&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;The field is public (external)&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;The field is viewed in new-ticket form&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;The field is set (datetime) when clicked&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;The field cannot change after being set&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;The field is a dropdown (extra string fields)&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;The field is directly readable from database&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;Do not HTML-escape the value when displaying field&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;The field is deleted&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;The field is the ID&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;The field is a foreign ID&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;The field is not writeable&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;Use default value for field if no value is supplied&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;List relations&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;View this field when listing rows&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;Hide the header for this list if there are no entries&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;Hide the function buttons for this relation&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17&lt;/td&gt;&lt;td&gt;The field cannot be empty&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;The field is not shown anywhere&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19&lt;/td&gt;&lt;td&gt;The field is indexed&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;The field is viewed in relational searches&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21&lt;/td&gt;&lt;td&gt;The field listed with the other main properties for the entity (i.e. for 'Edit ticket' it is shown on the first pane)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22&lt;/td&gt;&lt;td&gt;The field is a FK, and in Archives this relation should be followed and columns in the target table should be available in the archive&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+| Flag | Description |
+|---|---|
+| 0 |  |
+| 1 |  |
+| 2 |  |
+| 3 |  |
+| 4 |  |
+| 5 |  |
+| 6 |  |
+| 7 |  |
+| 8 |  |
+| 9 |  |
+| 10 |  |
+| 11 |  |
+| 12 |  |
+| 13 |  |
+| 14 |  |
+| 15 |  |
+| 16 |  |
+| 17 |  |
+| 18 |  |
+| 19 |  |
+| 20 | The field is viewed in relational searches |
+| 21 | The field listed with the other main properties for the entity (i.e. for 'Edit ticket' it is shown on the first pane) |
+| 22 | The field is a FK, and in Archives this relation should be followed and columns in the target table should be available in the archive |
 </Note>
 
 **Example:**
@@ -200,7 +224,24 @@ String getParam(String parameter)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String)
 
 <Note>
-Available values:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Available to&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;defaultNow&lt;/td&gt;&lt;td&gt;all types&lt;/td&gt;&lt;td&gt;use current time and date as default value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;defaultActiveUser&lt;/td&gt;&lt;td&gt;all types&lt;/td&gt;&lt;td&gt;use active user as default value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;fields&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;number of fields&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;height&lt;/td&gt;&lt;td&gt;Text long&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;linkName&lt;/td&gt;&lt;td&gt;Dynamic link&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;linkValue&lt;/td&gt;&lt;td&gt;Dynamic link&lt;/td&gt;&lt;td&gt;url&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;onlyLeafNode&lt;/td&gt;&lt;td&gt;Extra table relation&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;precision&lt;/td&gt;&lt;td&gt;Float&lt;/td&gt;&lt;td&gt;number of decimals&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;option&lt;/td&gt;&lt;td&gt;Text long, Text short&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useDays&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useHours&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useMinutes&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useTextArea&lt;/td&gt;&lt;td&gt;Text long&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;targetLabel&lt;/td&gt;&lt;td&gt;Contact relation, Company relation, Request relation, Extra table relation&lt;/td&gt;&lt;td&gt;header&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+Available values:
+
+| Variable | Available to | Description |
+|---|---|---|
+| defaultNow | all types | use current time and date as default value |
+| defaultActiveUser | all types | use active user as default value |
+| fields | TimeSpan | number of fields |
+| height | Text long |  |
+| linkName | Dynamic link |  |
+| linkValue | Dynamic link | url |
+| onlyLeafNode | Extra table relation |  |
+| precision | Float | number of decimals |
+| option | Text long, Text short |  |
+| useDays | TimeSpan |  |
+| useHours | TimeSpan |  |
+| useMinutes | TimeSpan |  |
+| useTextArea | Text long |  |
+| targetLabel | Contact relation, Company relation, Request relation, Extra table relation | header |
 </Note>
 
 ## getTableName()

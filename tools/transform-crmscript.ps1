@@ -42,38 +42,90 @@ if (-not (Test-Path $OutputPath)) {
     New-Item -Path $OutputPath -ItemType Directory -Force | Out-Null
 }
 
+# Helper to convert an embedded raw HTML <table> (the only markup-safe way the source
+# YAML could express a table) into a real markdown table. Source tables are often
+# malformed (typo'd <body> instead of <tbody>, doubled <table><table>, stray characters
+# between cells) so row/cell extraction ignores wrapper tags and matches <tr>/<td>/<th>
+# independently rather than requiring well-formed nesting.
+function Convert-HtmlTablesToMarkdown {
+    param([string]$Text)
+
+    $tablePattern = '(?is)(?:<table[^>]*>\s*)+(.*?)(?:</table>\s*)+'
+
+    return [regex]::Replace($Text, $tablePattern, {
+        param($m)
+        $inner = $m.Groups[1].Value
+
+        $rowMatches = [regex]::Matches($inner, '(?is)<tr[^>]*>(.*?)</tr>')
+        if ($rowMatches.Count -eq 0) { return $m.Value }
+
+        $rows = @()
+        foreach ($rowMatch in $rowMatches) {
+            $cellMatches = [regex]::Matches($rowMatch.Groups[1].Value, '(?is)<t[dh][^>]*>(.*?)</t[dh]>')
+            $cells = @()
+            foreach ($cellMatch in $cellMatches) {
+                $cellText = $cellMatch.Groups[1].Value.Trim()
+                $cellText = $cellText -replace '\s+', ' '
+                $cellText = $cellText -replace '\|', '\|'
+                $cells += $cellText
+            }
+            $rows += ,$cells
+        }
+        if ($rows.Count -eq 0) { return $m.Value }
+
+        $colCount = ($rows | ForEach-Object { $_.Count } | Measure-Object -Maximum).Maximum
+        if ($colCount -eq 0) { return $m.Value }
+
+        $lines = New-Object System.Collections.ArrayList
+        for ($r = 0; $r -lt $rows.Count; $r++) {
+            $row = @($rows[$r])
+            while ($row.Count -lt $colCount) { $row += '' }
+            [void]$lines.Add('| ' + ($row -join ' | ') + ' |')
+            if ($r -eq 0) {
+                [void]$lines.Add('|' + (('---|' * $colCount)))
+            }
+        }
+
+        return "`n`n" + ($lines -join "`n") + "`n`n"
+    })
+}
+
 # Helper to clean description text
 function Clean-Description {
     param([string]$Text)
-    
+
     if (-not $Text) { return "" }
-    
+
     # Skip TODO placeholders
     if ($Text -match '^\s*#?\s*TODO\s*$') { return "" }
-    
+
     # Remove leading/trailing quotes and \n
     $Text = $Text.Trim('"').Trim()
     $Text = $Text -replace '^\\n', ''
     $Text = $Text -replace '\\n$', ''
-    
+
     # Convert <p></p>\n to blank lines
     $Text = $Text -replace '<p></p>\\n', "`n`n"
     $Text = $Text -replace '<p></p>', "`n`n"
-    
+
     # Convert \n to actual newlines
     $Text = $Text -replace '\\n', "`n"
-    
+
     # Convert HTML entities (but keep &lt; and &gt; as they're needed in markdown)
     $Text = $Text -replace '&quot;', '"'
     $Text = $Text -replace '&amp;', '&'
-    
+
+    # Convert embedded HTML tables to real markdown tables before the generic
+    # <, > escaping below turns them into unreadable escaped tag soup
+    $Text = Convert-HtmlTablesToMarkdown $Text
+
     # Wrap JSON-like patterns in backticks (e.g., Format: {"key": "value"})
     $Text = $Text -replace '(\{[^}]+\})', '`$1`'
-    
+
     # Convert any remaining plain < and > to HTML entities for markdown
     $Text = $Text -replace '<', '&lt;'
     $Text = $Text -replace '>', '&gt;'
-    
+
     return $Text.Trim()
 }
 

@@ -45,7 +45,35 @@ Void addComparison(String field1, String compOperator, String field2, String row
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Row operators&lt;/h3&gt;
+
+| Value | Logical operator | Expression | Result |
+|---|---|---|---|
+| OperatorAnd | AND | A && B | Only rows matching both conditions |
+| OperatorNotAnd | NAND | !(A && B) | Rows matching 0 or 1 condition but not both |
+| OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
+| OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
+
+&lt;h3&gt;Comparison operators&lt;/h3&gt;
+
+| Value | Same as | Result |
+|---|---|---|
+| OperatorEquals | == | values match |
+| OperatorNotEquals | != | values don't match |
+| OperatorLt | &lt; | value less than |
+| OperatorLte | &lt;= | value less than or equal |
+| OperatorGt | &gt; | value greater than |
+| OperatorGte | &gt;= | value greater than or equal |
+| OperatorIs |  | values of the same type |
+| OperatorIsNot |  | values of different types |
+| OperatorLike |  | pattern found in string |
+| OperatorNotLike |  | pattern not found in string |
+| OperatorContains |  | string is present |
+| OperatorNotContains |  | string is not present |
+| OperatorBeginsWith |  | string starts with |
+| OperatorEndsWith |  | string ends with |
+| OperatorIn |  | column has entries in table |
+| OperatorNotIn |  | column has no entries in table |
 </Note>
 
 ## addComparison(String,String,String,String,String,String,Integer)
@@ -59,7 +87,49 @@ Void addComparison(String field1, String func1, String compOperator, String fiel
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lower&lt;/td&gt;&lt;td&gt;FuncLower&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+
+| Function | Other name | Applies to | bypassNetServer | Description |
+|---|---|---|---|---|
+| avg | FuncAvg | Integer, Float | yes | aggregate, the average value of a column |
+| count | FuncCount | Integer, Float | yes | aggregate, the number of rows matching cond. |
+| sum | FuncSum | Integer, Float | yes | aggregate, the total sum of a column |
+| max | FuncMax | Integer, Float | yes | aggregate, the largest value of a column |
+| min | FuncMin | Time, DateTime |  |  |
+| hour | FuncHour | Time, DateTime |  |  |
+| wday | FuncWDay | Date, DateTime |  |  |
+| upper | FuncUpper | String |  |  |
+| lower | FuncLower | String |  |  |
+
+&lt;h3&gt;Row operators&lt;/h3&gt;
+
+| Value | Logical operator | Expression | Result |
+|---|---|---|---|
+| OperatorAnd | AND | A && B | Only rows matching both conditions |
+| OperatorNotAnd | NAND | !(A && B) | Rows matching 0 or 1 condition but not both |
+| OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
+| OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
+
+&lt;h3&gt;Comparison operators&lt;/h3&gt;
+
+| Value | Same as | Result |
+|---|---|---|
+| OperatorEquals | == | values match |
+| OperatorNotEquals | != | values don't match |
+| OperatorLt | &lt; | value less than |
+| OperatorLte | &lt;= | value less than or equal |
+| OperatorGt | &gt; | value greater than |
+| OperatorGte | &gt;= | value greater than or equal |
+| OperatorIs |  | values of the same type |
+| OperatorIsNot |  | values of different types |
+| OperatorLike |  | pattern found in string |
+| OperatorNotLike |  | pattern not found in string |
+| OperatorContains |  | string is present |
+| OperatorNotContains |  | string is not present |
+| OperatorBeginsWith |  | string starts with |
+| OperatorEndsWith |  | string ends with |
+| OperatorIn |  | column has entries in table |
+| OperatorNotIn |  | column has no entries in table |
 </Note>
 
 ## addCriteria(String,String,String)
@@ -75,7 +145,26 @@ Void addCriteria(String field, String compOperator, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Comparison operators&lt;/h3&gt;
+
+| Value | Same as | Result |
+|---|---|---|
+| OperatorEquals | == | values match |
+| OperatorNotEquals | != | values don't match |
+| OperatorLt | &lt; | value less than |
+| OperatorLte | &lt;= | value less than or equal |
+| OperatorGt | &gt; | value greater than |
+| OperatorGte | &gt;= | value greater than or equal |
+| OperatorIs |  | values of the same type |
+| OperatorIsNot |  | values of different types |
+| OperatorLike |  | pattern found in string |
+| OperatorNotLike |  | pattern not found in string |
+| OperatorContains |  | string is present |
+| OperatorNotContains |  | string is not present |
+| OperatorBeginsWith |  | string starts with |
+| OperatorEndsWith |  | string ends with |
+| OperatorIn |  | column has entries in table |
+| OperatorNotIn |  | column has no entries in table |
 </Note>
 
 ## addCriteria(String,String,String,String,Integer)
@@ -91,7 +180,35 @@ Void addCriteria(String field, String compOperator, String value, String rowOper
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Row operators&lt;/h3&gt;
+
+| Value | Logical operator | Expression | Result |
+|---|---|---|---|
+| OperatorAnd | AND | A && B | Only rows matching both conditions |
+| OperatorNotAnd | NAND | !(A && B) | Rows matching 0 or 1 condition but not both |
+| OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
+| OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
+
+&lt;h3&gt;Comparison operators&lt;/h3&gt;
+
+| Value | Same as | Result |
+|---|---|---|
+| OperatorEquals | == | values match |
+| OperatorNotEquals | != | values don't match |
+| OperatorLt | &lt; | value less than |
+| OperatorLte | &lt;= | value less than or equal |
+| OperatorGt | &gt; | value greater than |
+| OperatorGte | &gt;= | value greater than or equal |
+| OperatorIs |  | values of the same type |
+| OperatorIsNot |  | values of different types |
+| OperatorLike |  | pattern found in string |
+| OperatorNotLike |  | pattern not found in string |
+| OperatorContains |  | string is present |
+| OperatorNotContains |  | string is not present |
+| OperatorBeginsWith |  | string starts with |
+| OperatorEndsWith |  | string ends with |
+| OperatorIn |  | column has entries in table |
+| OperatorNotIn |  | column has no entries in table |
 </Note>
 
 ## addCriteria(String,String,String,String,String,Integer)
@@ -105,7 +222,49 @@ Void addCriteria(String field, String function, String compOperator, String valu
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lower&lt;/td&gt;&lt;td&gt;FuncLower&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+
+| Function | Other name | Applies to | bypassNetServer | Description |
+|---|---|---|---|---|
+| avg | FuncAvg | Integer, Float | yes | aggregate, the average value of a column |
+| count | FuncCount | Integer, Float | yes | aggregate, the number of rows matching cond. |
+| sum | FuncSum | Integer, Float | yes | aggregate, the total sum of a column |
+| max | FuncMax | Integer, Float | yes | aggregate, the largest value of a column |
+| min | FuncMin | Time, DateTime |  |  |
+| hour | FuncHour | Time, DateTime |  |  |
+| wday | FuncWDay | Date, DateTime |  |  |
+| upper | FuncUpper | String |  |  |
+| lower | FuncLower | String |  |  |
+
+&lt;h3&gt;Row operators&lt;/h3&gt;
+
+| Value | Logical operator | Expression | Result |
+|---|---|---|---|
+| OperatorAnd | AND | A && B | Only rows matching both conditions |
+| OperatorNotAnd | NAND | !(A && B) | Rows matching 0 or 1 condition but not both |
+| OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
+| OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
+
+&lt;h3&gt;Comparison operators&lt;/h3&gt;
+
+| Value | Same as | Result |
+|---|---|---|
+| OperatorEquals | == | values match |
+| OperatorNotEquals | != | values don't match |
+| OperatorLt | &lt; | value less than |
+| OperatorLte | &lt;= | value less than or equal |
+| OperatorGt | &gt; | value greater than |
+| OperatorGte | &gt;= | value greater than or equal |
+| OperatorIs |  | values of the same type |
+| OperatorIsNot |  | values of different types |
+| OperatorLike |  | pattern found in string |
+| OperatorNotLike |  | pattern not found in string |
+| OperatorContains |  | string is present |
+| OperatorNotContains |  | string is not present |
+| OperatorBeginsWith |  | string starts with |
+| OperatorEndsWith |  | string ends with |
+| OperatorIn |  | column has entries in table |
+| OperatorNotIn |  | column has no entries in table |
 </Note>
 
 ## addData(String,String)
@@ -225,7 +384,49 @@ Void addHaving(String field, String function, String compOperator, String value,
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lower&lt;/td&gt;&lt;td&gt;FuncLower&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+
+| Function | Other name | Applies to | bypassNetServer | Description |
+|---|---|---|---|---|
+| avg | FuncAvg | Integer, Float | yes | aggregate, the average value of a column |
+| count | FuncCount | Integer, Float | yes | aggregate, the number of rows matching cond. |
+| sum | FuncSum | Integer, Float | yes | aggregate, the total sum of a column |
+| max | FuncMax | Integer, Float | yes | aggregate, the largest value of a column |
+| min | FuncMin | Time, DateTime |  |  |
+| hour | FuncHour | Time, DateTime |  |  |
+| wday | FuncWDay | Date, DateTime |  |  |
+| upper | FuncUpper | String |  |  |
+| lower | FuncLower | String |  |  |
+
+&lt;h3&gt;Row operators&lt;/h3&gt;
+
+| Value | Logical operator | Expression | Result |
+|---|---|---|---|
+| OperatorAnd | AND | A && B | Only rows matching both conditions |
+| OperatorNotAnd | NAND | !(A && B) | Rows matching 0 or 1 condition but not both |
+| OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
+| OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
+
+&lt;h3&gt;Comparison operators&lt;/h3&gt;
+
+| Value | Same as | Result |
+|---|---|---|
+| OperatorEquals | == | values match |
+| OperatorNotEquals | != | values don't match |
+| OperatorLt | &lt; | value less than |
+| OperatorLte | &lt;= | value less than or equal |
+| OperatorGt | &gt; | value greater than |
+| OperatorGte | &gt;= | value greater than or equal |
+| OperatorIs |  | values of the same type |
+| OperatorIsNot |  | values of different types |
+| OperatorLike |  | pattern found in string |
+| OperatorNotLike |  | pattern not found in string |
+| OperatorContains |  | string is present |
+| OperatorNotContains |  | string is not present |
+| OperatorBeginsWith |  | string starts with |
+| OperatorEndsWith |  | string ends with |
+| OperatorIn |  | column has entries in table |
+| OperatorNotIn |  | column has no entries in table |
 </Note>
 
 ## addJoinCriteria(String,String,String,String,Integer)
@@ -506,7 +707,18 @@ String getField(String name, String function)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+
+| Function | Other name | Applies to | bypassNetServer | Description |
+|---|---|---|---|---|
+| avg | FuncAvg | Integer, Float | yes | aggregate, the average value of a column |
+| count | FuncCount | Integer, Float | yes | aggregate, the number of rows matching cond. |
+| sum | FuncSum | Integer, Float | yes | aggregate, the total sum of a column |
+| max | FuncMax | Integer, Float | yes | aggregate, the largest value of a column |
+| min | FuncMin | Time, DateTime |  |  |
+| hour | FuncHour | Time, DateTime |  |  |
+| wday | FuncWDay | Date, DateTime |  |  |
+| upper | FuncUpper | String |  |  |
 </Note>
 
 ## getFieldsJSON()
