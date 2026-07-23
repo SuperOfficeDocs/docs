@@ -1,0 +1,376 @@
+﻿---
+uid: crmscript.netserver.nsmailmergetask
+title: NSMailMergeTask
+description: "Properties describing a task to create on recipients of a mail merge."
+keywords: CRMScript, NSMailMergeTask, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMailMergeTask
+
+Properties describing a task to create on recipients of a mail merge.
+
+## Constructors
+
+### NSMailMergeTask()
+
+```crmscript
+NSMailMergeTask
+```
+
+Initializes a new instance of the NSMailMergeTask class.
+
+## Methods
+
+## GetCompleted()
+
+```crmscript
+Integer GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Completed status for task.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer completed = thing.GetCompleted();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text describing task.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+String description = thing.GetDescription();
+```
+
+## GetDuration()
+
+```crmscript
+Integer GetDuration()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Duration of task.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer duration = thing.GetDuration();
+```
+
+## GetOwnerAssociateId()
+
+```crmscript
+Integer GetOwnerAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Associate identity of who should be set as owner of the task.
+
+<Note>
+If value is 0, the recipient owner(our contact) will be used.
+</Note>
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer ownerAssociateId = thing.GetOwnerAssociateId();
+```
+
+## GetPriorityId()
+
+```crmscript
+Integer GetPriorityId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Priority of task.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer priorityId = thing.GetPriorityId();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Project identity to set on task.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetSaleId()
+
+```crmscript
+Integer GetSaleId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Sale identity to set on task.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer saleId = thing.GetSaleId();
+```
+
+## GetSingleEntryOnEachCompany()
+
+```crmscript
+Bool GetSingleEntryOnEachCompany()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should we only create one task on each company? If false, separate tasks will be created for all persons from the same company.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Bool singleEntryOnEachCompany = thing.GetSingleEntryOnEachCompany();
+```
+
+## GetStartDate()
+
+```crmscript
+DateTime GetStartDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the task should start.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+DateTime startDate = thing.GetStartDate();
+```
+
+## GetTypeId()
+
+```crmscript
+Integer GetTypeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Type identity to set on task.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer typeId = thing.GetTypeId();
+```
+
+## GetVisibleFor()
+
+```crmscript
+NSVisibleFor GetVisibleFor()
+```
+
+**Returns:** [CRMScript.NetServer.NSVisibleFor](CRMScript.NetServer.NSVisibleFor) - Who the task should be visible for.
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+NSVisibleFor visibleFor = thing.GetVisibleFor();
+```
+
+## SetCompleted(Integer)
+
+```crmscript
+Void SetCompleted(Integer completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer completed;
+thing.SetCompleted(completed);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDuration(Integer)
+
+```crmscript
+Void SetDuration(Integer duration)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer duration;
+thing.SetDuration(duration);
+```
+
+## SetOwnerAssociateId(Integer)
+
+```crmscript
+Void SetOwnerAssociateId(Integer ownerAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If value is 0, the recipient owner(our contact) will be used.
+</Note>
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer ownerAssociateId;
+thing.SetOwnerAssociateId(ownerAssociateId);
+```
+
+## SetPriorityId(Integer)
+
+```crmscript
+Void SetPriorityId(Integer priorityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer priorityId;
+thing.SetPriorityId(priorityId);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetSaleId(Integer)
+
+```crmscript
+Void SetSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer saleId;
+thing.SetSaleId(saleId);
+```
+
+## SetSingleEntryOnEachCompany(Bool)
+
+```crmscript
+Void SetSingleEntryOnEachCompany(Bool singleEntryOnEachCompany)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Bool singleEntryOnEachCompany;
+thing.SetSingleEntryOnEachCompany(singleEntryOnEachCompany);
+```
+
+## SetStartDate(DateTime)
+
+```crmscript
+Void SetStartDate(DateTime startDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+DateTime startDate;
+thing.SetStartDate(startDate);
+```
+
+## SetTypeId(Integer)
+
+```crmscript
+Void SetTypeId(Integer typeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+Integer typeId;
+thing.SetTypeId(typeId);
+```
+
+## SetVisibleFor(NSVisibleFor)
+
+```crmscript
+Void SetVisibleFor(NSVisibleFor visibleFor)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeTask thing;
+NSVisibleFor visibleFor;
+thing.SetVisibleFor(visibleFor);
+```

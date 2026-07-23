@@ -1,0 +1,816 @@
+﻿---
+uid: crmscript.netserver.nssale
+title: NSSale
+description: ""
+keywords: CRMScript, NSSale, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSale
+
+## Constructors
+
+### NSSale()
+
+```crmscript
+NSSale
+```
+
+Initializes a new instance of the NSSale class.
+
+## Methods
+
+## GetActiveErpLinks()
+
+```crmscript
+Integer GetActiveErpLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer activeErpLinks = thing.GetActiveErpLinks();
+```
+
+## GetAmount()
+
+```crmscript
+Float GetAmount()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Total sale amount.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float amount = thing.GetAmount();
+```
+
+## GetAssociateFullName()
+
+```crmscript
+String GetAssociateFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The sale's owner.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String associateFullName = thing.GetAssociateFullName();
+```
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's owner Id.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetCompleted()
+
+```crmscript
+Integer GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The Sale completed state.
+
+<Note>
+The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer completed = thing.GetCompleted();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Optional contact reference.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetContactName()
+
+```crmscript
+String GetContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String contactName = thing.GetContactName();
+```
+
+## GetCurrency()
+
+```crmscript
+String GetCurrency()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSCurrency the sale was made in.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String currency = thing.GetCurrency();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The sales description.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String description = thing.GetDescription();
+```
+
+## GetEarning()
+
+```crmscript
+Float GetEarning()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning on sale.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float earning = thing.GetEarning();
+```
+
+## GetEarningPercent()
+
+```crmscript
+Float GetEarningPercent()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning as percent of total.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float earningPercent = thing.GetEarningPercent();
+```
+
+## GetNextDueDate()
+
+```crmscript
+DateTime GetNextDueDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Next due date, this is a de-normalization of 'closest future activity date, or most recent if no future activities'.
+
+<Note>
+Maintained by the system, but very convenient for searching.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSale thing;
+DateTime nextDueDate = thing.GetNextDueDate();
+```
+
+## GetNumber()
+
+```crmscript
+String GetNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Alphanumeric user field.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String number = thing.GetNumber();
+```
+
+## GetPersonFullName()
+
+```crmscript
+String GetPersonFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the person this sale belongs to.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String personFullName = thing.GetPersonFullName();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's contact persons Id.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetProbability()
+
+```crmscript
+Integer GetProbability()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Actual probability, may differ from the one in the list.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer probability = thing.GetProbability();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Optional project reference.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetProjectName()
+
+```crmscript
+String GetProjectName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Project name.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String projectName = thing.GetProjectName();
+```
+
+## GetSaleDate()
+
+```crmscript
+DateTime GetSaleDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - (expected / lost / won) sales date.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+DateTime saleDate = thing.GetSaleDate();
+```
+
+## GetSaleId()
+
+```crmscript
+Integer GetSaleId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer saleId = thing.GetSaleId();
+```
+
+## GetSaleTypeId()
+
+```crmscript
+Integer GetSaleTypeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's type Id.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer saleTypeId = thing.GetSaleTypeId();
+```
+
+## GetSaleTypeName()
+
+```crmscript
+String GetSaleTypeName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The sale's type name.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String saleTypeName = thing.GetSaleTypeName();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's status, indicating wether the sale is open, sold or lost. See &lt;xref href=\"CRMScript.NetServer.SaleStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer status = thing.GetStatus();
+```
+
+## GetTitle()
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sale heading (short description?).
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String title = thing.GetTitle();
+```
+
+## GetWeightedAmount()
+
+```crmscript
+Float GetWeightedAmount()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The weighted amount ( amount *  probability / 100).
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float weightedAmount = thing.GetWeightedAmount();
+```
+
+## SetActiveErpLinks(Integer)
+
+```crmscript
+Void SetActiveErpLinks(Integer activeErpLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer activeErpLinks;
+thing.SetActiveErpLinks(activeErpLinks);
+```
+
+## SetAmount(Float)
+
+```crmscript
+Void SetAmount(Float amount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float amount;
+thing.SetAmount(amount);
+```
+
+## SetAssociateFullName(String)
+
+```crmscript
+Void SetAssociateFullName(String associateFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String associateFullName;
+thing.SetAssociateFullName(associateFullName);
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetCompleted(Integer)
+
+```crmscript
+Void SetCompleted(Integer completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer completed;
+thing.SetCompleted(completed);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetContactName(String)
+
+```crmscript
+Void SetContactName(String contactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String contactName;
+thing.SetContactName(contactName);
+```
+
+## SetCurrency(String)
+
+```crmscript
+Void SetCurrency(String currency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String currency;
+thing.SetCurrency(currency);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetEarning(Float)
+
+```crmscript
+Void SetEarning(Float earning)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float earning;
+thing.SetEarning(earning);
+```
+
+## SetEarningPercent(Float)
+
+```crmscript
+Void SetEarningPercent(Float earningPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float earningPercent;
+thing.SetEarningPercent(earningPercent);
+```
+
+## SetNextDueDate(DateTime)
+
+Maintained by the system, but very convenient for searching.
+
+```crmscript
+Void SetNextDueDate(DateTime nextDueDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+DateTime nextDueDate;
+thing.SetNextDueDate(nextDueDate);
+```
+
+## SetNumber(String)
+
+Alphanumeric user field
+
+```crmscript
+Void SetNumber(String number)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String number;
+thing.SetNumber(number);
+```
+
+## SetPersonFullName(String)
+
+```crmscript
+Void SetPersonFullName(String personFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String personFullName;
+thing.SetPersonFullName(personFullName);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetProbability(Integer)
+
+```crmscript
+Void SetProbability(Integer probability)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer probability;
+thing.SetProbability(probability);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetProjectName(String)
+
+```crmscript
+Void SetProjectName(String projectName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String projectName;
+thing.SetProjectName(projectName);
+```
+
+## SetSaleDate(DateTime)
+
+```crmscript
+Void SetSaleDate(DateTime saleDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+DateTime saleDate;
+thing.SetSaleDate(saleDate);
+```
+
+## SetSaleId(Integer)
+
+```crmscript
+Void SetSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer saleId;
+thing.SetSaleId(saleId);
+```
+
+## SetSaleTypeId(Integer)
+
+```crmscript
+Void SetSaleTypeId(Integer saleTypeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer saleTypeId;
+thing.SetSaleTypeId(saleTypeId);
+```
+
+## SetSaleTypeName(String)
+
+```crmscript
+Void SetSaleTypeName(String saleTypeName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String saleTypeName;
+thing.SetSaleTypeName(saleTypeName);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetTitle(String)
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+String title;
+thing.SetTitle(title);
+```
+
+## SetWeightedAmount(Float)
+
+```crmscript
+Void SetWeightedAmount(Float weightedAmount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSale thing;
+Float weightedAmount;
+thing.SetWeightedAmount(weightedAmount);
+```

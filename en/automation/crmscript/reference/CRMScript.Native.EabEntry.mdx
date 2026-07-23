@@ -1,0 +1,122 @@
+﻿---
+uid: crmscript.native.eabentry
+title: EabEntry
+description: "Reads and writes entries from the email address book. The class is also used when you want to synchronize the address book using DBI."
+keywords: CRMScript, EabEntry, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# EabEntry
+
+Reads and writes entries from the email address book. The class is also used when you want to synchronize the address book using DBI.
+
+## Constructors
+
+### EabEntry()
+
+```crmscript
+EabEntry
+```
+
+Initializes a new instance of the EabEntry class.
+
+## Methods
+
+## delete()
+
+Deletes the current address book entry from the database.
+
+```crmscript
+Void delete()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getValue(String)
+
+Gets the value of the given field in the EabEntry instance.
+
+```crmscript
+String getValue(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+Available fields:&lt;ul&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;email&lt;/li&gt;&lt;li&gt;sms&lt;/li&gt;&lt;li&gt;folderId&lt;/li&gt;&lt;li&gt;dbi_agent_id&lt;/li&gt;&lt;li&gt;dbi_key&lt;/li&gt;&lt;li&gt;dbi_last_syncronized&lt;/li&gt;&lt;li&gt;dbi_last_modified&lt;/li&gt;&lt;li&gt;dbi_delete&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+EabEntry eab;
+Bool b = eab.load(15);
+print(b.toString());
+eab.setValue("name", "test");
+```
+
+## load(Integer)
+
+Loads an entry from the address book with the specified ID.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if loading var successful; otherwise, false.
+
+**Example:**
+
+```crmscript
+EabEntry eab;
+Bool b = eab.load(15);
+print(b.toString());
+```
+
+## loadFromAgentAndKey(Integer,String)
+
+Used in conjunction with DBI. Load an entry with the specified key from the specified agent.
+
+```crmscript
+Bool loadFromAgentAndKey(Integer id, String key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if loading var successful; otherwise, false.
+
+## save()
+
+Saves the current address book entry. If you did not load an existing entry, a new entry will be created; otherwise, it will update the loaded entry.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the saved entry.
+
+## setValue(String,String)
+
+Sets the value of the given field in the EabEntry instance.
+
+```crmscript
+Void setValue(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available fields:&lt;ul&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;email&lt;/li&gt;&lt;li&gt;sms&lt;/li&gt;&lt;li&gt;folderId&lt;/li&gt;&lt;li&gt;dbi_agent_id&lt;/li&gt;&lt;li&gt;dbi_key&lt;/li&gt;&lt;li&gt;dbi_last_syncronized&lt;/li&gt;&lt;li&gt;dbi_last_modified&lt;/li&gt;&lt;li&gt;dbi_delete&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+EabEntry eab;
+Bool b = eab.load(15);
+print(b.toString());
+eab.setValue("name", "test");
+print(eab.getValue("name"));
+```

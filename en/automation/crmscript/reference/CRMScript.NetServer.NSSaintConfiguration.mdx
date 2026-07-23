@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nssaintconfiguration
+title: NSSaintConfiguration
+description: "Definition of the three periods for status monitors and some other settings per saint entity."
+keywords: CRMScript, NSSaintConfiguration, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSaintConfiguration
+
+Definition of the three periods for status monitors and some other settings per saint entity.
+
+## Constructors
+
+### NSSaintConfiguration()
+
+```crmscript
+NSSaintConfiguration
+```
+
+Initializes a new instance of the NSSaintConfiguration class.
+
+## Methods
+
+## GetEnabled()
+
+```crmscript
+Bool GetEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - On/off switch for Saint functionality for this entity.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Bool enabled = thing.GetEnabled();
+```
+
+## GetGenerationEnd()
+
+```crmscript
+DateTime GetGenerationEnd()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was the last regeneration finished.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+DateTime generationEnd = thing.GetGenerationEnd();
+```
+
+## GetGenerationStart()
+
+```crmscript
+DateTime GetGenerationStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was the last regeneration started.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+DateTime generationStart = thing.GetGenerationStart();
+```
+
+## GetOwnerTable()
+
+```crmscript
+Integer GetOwnerTable()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The table that is the owning entity.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer ownerTable = thing.GetOwnerTable();
+```
+
+## GetPeriod1()
+
+```crmscript
+Integer GetPeriod1()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Length of the first counter period.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer period1 = thing.GetPeriod1();
+```
+
+## GetPeriod2()
+
+```crmscript
+Integer GetPeriod2()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Length of the second counter period.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer period2 = thing.GetPeriod2();
+```
+
+## GetPeriod3()
+
+```crmscript
+Integer GetPeriod3()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Length of the third counter period.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer period3 = thing.GetPeriod3();
+```
+
+## GetRowsGenerated()
+
+```crmscript
+Integer GetRowsGenerated()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of CounterValue rows generated for this entity.
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer rowsGenerated = thing.GetRowsGenerated();
+```
+
+## SetEnabled(Bool)
+
+```crmscript
+Void SetEnabled(Bool enabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Bool enabled;
+thing.SetEnabled(enabled);
+```
+
+## SetGenerationEnd(DateTime)
+
+```crmscript
+Void SetGenerationEnd(DateTime generationEnd)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+DateTime generationEnd;
+thing.SetGenerationEnd(generationEnd);
+```
+
+## SetGenerationStart(DateTime)
+
+```crmscript
+Void SetGenerationStart(DateTime generationStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+DateTime generationStart;
+thing.SetGenerationStart(generationStart);
+```
+
+## SetOwnerTable(Integer)
+
+```crmscript
+Void SetOwnerTable(Integer ownerTable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer ownerTable;
+thing.SetOwnerTable(ownerTable);
+```
+
+## SetPeriod1(Integer)
+
+```crmscript
+Void SetPeriod1(Integer period1)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer period1;
+thing.SetPeriod1(period1);
+```
+
+## SetPeriod2(Integer)
+
+```crmscript
+Void SetPeriod2(Integer period2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer period2;
+thing.SetPeriod2(period2);
+```
+
+## SetPeriod3(Integer)
+
+```crmscript
+Void SetPeriod3(Integer period3)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer period3;
+thing.SetPeriod3(period3);
+```
+
+## SetRowsGenerated(Integer)
+
+```crmscript
+Void SetRowsGenerated(Integer rowsGenerated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintConfiguration thing;
+Integer rowsGenerated;
+thing.SetRowsGenerated(rowsGenerated);
+```

@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nscategorizationstatusresponse
+title: NSCategorizationStatusResponse
+description: "Carrier to describe the current categorization training status for a tenant in HugoA. Carrier object for CategorizationStatusResponse."
+keywords: CRMScript, NSCategorizationStatusResponse, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCategorizationStatusResponse
+
+Carrier to describe the current categorization training status for a tenant in HugoA. Carrier object for CategorizationStatusResponse.
+
+## Constructors
+
+### NSCategorizationStatusResponse()
+
+```crmscript
+NSCategorizationStatusResponse
+```
+
+Initializes a new instance of the NSCategorizationStatusResponse class.
+
+## Methods
+
+## GetContextIdentifier()
+
+```crmscript
+String GetContextIdentifier()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Context-identifier to identify customer.
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+String contextIdentifier = thing.GetContextIdentifier();
+```
+
+## GetCurrentModel()
+
+```crmscript
+NSCategorizationModelDetails GetCurrentModel()
+```
+
+**Returns:** [CRMScript.NetServer.NSCategorizationModelDetails](CRMScript.NetServer.NSCategorizationModelDetails) - Current model information.
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+NSCategorizationModelDetails currentModel = thing.GetCurrentModel();
+```
+
+## GetPreviousModel()
+
+```crmscript
+NSCategorizationModelDetails GetPreviousModel()
+```
+
+**Returns:** [CRMScript.NetServer.NSCategorizationModelDetails](CRMScript.NetServer.NSCategorizationModelDetails) - Previous model information.
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+NSCategorizationModelDetails previousModel = thing.GetPreviousModel();
+```
+
+## GetStatus()
+
+```crmscript
+String GetStatus()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Determines if a training is running, finished, or unavailable.
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+String status = thing.GetStatus();
+```
+
+## SetContextIdentifier(String)
+
+```crmscript
+Void SetContextIdentifier(String contextIdentifier)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+String contextIdentifier;
+thing.SetContextIdentifier(contextIdentifier);
+```
+
+## SetCurrentModel(NSCategorizationModelDetails)
+
+```crmscript
+Void SetCurrentModel(NSCategorizationModelDetails currentModel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+NSCategorizationModelDetails currentModel;
+thing.SetCurrentModel(currentModel);
+```
+
+## SetPreviousModel(NSCategorizationModelDetails)
+
+```crmscript
+Void SetPreviousModel(NSCategorizationModelDetails previousModel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+NSCategorizationModelDetails previousModel;
+thing.SetPreviousModel(previousModel);
+```
+
+## SetStatus(String)
+
+```crmscript
+Void SetStatus(String status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCategorizationStatusResponse thing;
+String status;
+thing.SetStatus(status);
+```

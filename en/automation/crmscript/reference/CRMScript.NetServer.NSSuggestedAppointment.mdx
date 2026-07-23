@@ -1,0 +1,475 @@
+﻿---
+uid: crmscript.netserver.nssuggestedappointment
+title: NSSuggestedAppointment
+description: ""
+keywords: CRMScript, NSSuggestedAppointment, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSuggestedAppointment
+
+## Constructors
+
+### NSSuggestedAppointment()
+
+```crmscript
+NSSuggestedAppointment
+```
+
+Initializes a new instance of the NSSuggestedAppointment class.
+
+## Methods
+
+## GetAssociate()
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The owner of the suggested activity. Always the same as the sales owner.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+NSAssociate associate = thing.GetAssociate();
+```
+
+## GetAutoSuggest()
+
+```crmscript
+Integer GetAutoSuggest()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Should this appointment be auto-suggested.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer autoSuggest = thing.GetAutoSuggest();
+```
+
+## GetDaysFuture()
+
+```crmscript
+Integer GetDaysFuture()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How many days into the future the appointment should be scheduled.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer daysFuture = thing.GetDaysFuture();
+```
+
+## GetDeleted()
+
+```crmscript
+Integer GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer deleted = thing.GetDeleted();
+```
+
+## GetDuration()
+
+```crmscript
+Integer GetDuration()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Duration in minutes of suggested appointment.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer duration = thing.GetDuration();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Item name, visible in Guide.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+String name = thing.GetName();
+```
+
+## GetProjectTypeStatusLinkId()
+
+```crmscript
+Integer GetProjectTypeStatusLinkId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Link to projectTypeStatusLink, the anchor for project guide items.
+
+<Note>
+Either this OR saleAnchorId should be set, not both at the same time.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer projectTypeStatusLinkId = thing.GetProjectTypeStatusLinkId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank, controls rank of non-instantiated items in Guide.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRegisteredAssociateId()
+
+```crmscript
+Integer GetRegisteredAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Registered by whom.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer registeredAssociateId = thing.GetRegisteredAssociateId();
+```
+
+## GetSaleTypeStageLinkId()
+
+```crmscript
+Integer GetSaleTypeStageLinkId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Link to saleTypeStageLink, the anchor for sale guide items.
+
+<Note>
+Either this OR projectAnchorId should be set, not both at the same time.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer saleTypeStageLinkId = thing.GetSaleTypeStageLinkId();
+```
+
+## GetSuggestedAppointmentId()
+
+```crmscript
+Integer GetSuggestedAppointmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer suggestedAppointmentId = thing.GetSuggestedAppointmentId();
+```
+
+## GetTaskId()
+
+```crmscript
+Integer GetTaskId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Type of the suggested appointment.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer taskId = thing.GetTaskId();
+```
+
+## GetText()
+
+```crmscript
+String GetText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The suggested text of the new appointment.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+String text = thing.GetText();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip / description.
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetAssociate(NSAssociate)
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+NSAssociate associate;
+thing.SetAssociate(associate);
+```
+
+## SetAutoSuggest(Integer)
+
+```crmscript
+Void SetAutoSuggest(Integer autoSuggest)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer autoSuggest;
+thing.SetAutoSuggest(autoSuggest);
+```
+
+## SetDaysFuture(Integer)
+
+```crmscript
+Void SetDaysFuture(Integer daysFuture)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer daysFuture;
+thing.SetDaysFuture(daysFuture);
+```
+
+## SetDeleted(Integer)
+
+```crmscript
+Void SetDeleted(Integer deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDuration(Integer)
+
+```crmscript
+Void SetDuration(Integer duration)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer duration;
+thing.SetDuration(duration);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+String name;
+thing.SetName(name);
+```
+
+## SetProjectTypeStatusLinkId(Integer)
+
+```crmscript
+Void SetProjectTypeStatusLinkId(Integer projectTypeStatusLinkId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Either this OR saleAnchorId should be set, not both at the same time.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer projectTypeStatusLinkId;
+thing.SetProjectTypeStatusLinkId(projectTypeStatusLinkId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRegisteredAssociateId(Integer)
+
+```crmscript
+Void SetRegisteredAssociateId(Integer registeredAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer registeredAssociateId;
+thing.SetRegisteredAssociateId(registeredAssociateId);
+```
+
+## SetSaleTypeStageLinkId(Integer)
+
+```crmscript
+Void SetSaleTypeStageLinkId(Integer saleTypeStageLinkId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Either this OR projectAnchorId should be set, not both at the same time.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer saleTypeStageLinkId;
+thing.SetSaleTypeStageLinkId(saleTypeStageLinkId);
+```
+
+## SetSuggestedAppointmentId(Integer)
+
+```crmscript
+Void SetSuggestedAppointmentId(Integer suggestedAppointmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer suggestedAppointmentId;
+thing.SetSuggestedAppointmentId(suggestedAppointmentId);
+```
+
+## SetTaskId(Integer)
+
+```crmscript
+Void SetTaskId(Integer taskId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+Integer taskId;
+thing.SetTaskId(taskId);
+```
+
+## SetText(String)
+
+```crmscript
+Void SetText(String text)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+String text;
+thing.SetText(text);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSuggestedAppointment thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

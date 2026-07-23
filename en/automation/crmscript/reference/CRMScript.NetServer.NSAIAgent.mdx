@@ -1,0 +1,145 @@
+﻿---
+uid: crmscript.netserver.nsaiagent
+title: NSAIAgent
+description: "AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers."
+keywords: CRMScript, NSAIAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAIAgent
+
+AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers.
+
+## Constructors
+
+### NSAIAgent()
+
+```crmscript
+NSAIAgent
+```
+
+Initializes a new instance of the NSAIAgent class.
+
+## Methods
+
+## DetectLanguage(String)
+
+Given a (reasonably short) text, detect the language it is written in.
+
+```crmscript
+String DetectLanguage(String text)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSAIAgent agent;
+String text;
+String res = agent.DetectLanguage(text);
+```
+
+## DetectSentiment(String)
+
+Detect the sentiment of a (reasonably short) text. Sentiment analysis may cause a translation to be made, since sentiment analysis only supports a limited set of languages
+
+```crmscript
+NSSentiment DetectSentiment(String text)
+```
+
+**Returns:** [CRMScript.NetServer.NSSentiment](CRMScript.NetServer.NSSentiment)
+
+**Example:**
+
+```crmscript
+NSAIAgent agent;
+String text;
+Sentiment res = agent.DetectSentiment(text);
+```
+
+## GetTrainingStatus()
+
+Calling the HugoAI endpoint to fetch the current training status.
+
+```crmscript
+NSCategorizationStatusResponse GetTrainingStatus()
+```
+
+**Returns:** [CRMScript.NetServer.NSCategorizationStatusResponse](CRMScript.NetServer.NSCategorizationStatusResponse) - Carrier to describe the current status of HugoAI categorization.
+
+**Example:**
+
+```crmscript
+NSAIAgent agent;
+NSCategorizationStatusResponse res = agent.GetTrainingStatus();
+```
+
+## GuessCategory(Integer)
+
+Given a ticket's ID, guess the ticket category it should be placed in.
+
+```crmscript
+Integer GuessCategory(Integer ticketId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ticket category.
+
+<Note>
+Currently this is based on the first message in the ticket.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAIAgent agent;
+Integer ticketId;
+Integer res = agent.GuessCategory(ticketId);
+```
+
+## TrainCategoryGuesser(Integer,Integer,Integer)
+
+The category guesser training API will be called with an array of CategorizationTrainingItem during the (background, Batch) execution of this call.
+
+```crmscript
+String TrainCategoryGuesser(Integer selectionId, Integer maxItems, Integer maxTextLength)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSAIAgent agent;
+Integer selectionId;
+Integer maxItems;
+Integer maxTextLength;
+String res = agent.TrainCategoryGuesser(selectionId, maxItems, maxTextLength);
+```
+
+## Translate(String,String)
+
+Translate a text from one language to another.
+
+```crmscript
+String Translate(String text, String targetLanguage)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - translated text.
+
+<Note>
+Language of the text is automatically detected.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAIAgent agent;
+String text;
+String targetLanguage;
+String res = agent.Translate(text, targetLanguage);
+```

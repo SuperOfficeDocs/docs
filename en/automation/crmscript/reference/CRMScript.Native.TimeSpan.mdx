@@ -1,0 +1,214 @@
+﻿---
+uid: crmscript.native.timespan
+title: TimeSpan
+description: "A class for representing a time span."
+keywords: CRMScript, TimeSpan, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# TimeSpan
+
+A class for representing a time span.
+
+## Constructors
+
+### TimeSpan
+
+```crmscript
+TimeSpan
+```
+
+Initializes a new instance of the TimeSpan class.
+
+## Methods
+
+## addDay(Integer)
+
+Adds the given number of days to the currently set time span.
+
+```crmscript
+Void addDay(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addHour(Integer)
+
+Adds the given number of hours to the currently set time span.
+
+```crmscript
+Void addHour(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addMin(Integer)
+
+Adds the given number of minutes to the currently set time span.
+
+```crmscript
+Void addMin(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addSec(Integer)
+
+Adds the given number of seconds to the currently set time span.
+
+```crmscript
+Void addSec(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addYear(Integer)
+
+Adds the given number of years to the currently set time span.
+
+```crmscript
+Void addYear(Integer num)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getDay()
+
+Returns the day field of the time span as an integer.
+
+```crmscript
+Integer getDay()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Day field as an integer.
+
+## getHour()
+
+Returns the hour field of the time span as an integer.
+
+```crmscript
+Integer getHour()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## getMin()
+
+Returns the minute field of the time span as an integer.
+
+```crmscript
+Integer getMin()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## getSec()
+
+Returns the seconds field of the time span as an integer.
+
+```crmscript
+Integer getSec()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getYear()
+
+Returns the year field of the time span as an integer.
+
+```crmscript
+Integer getYear()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## isNegative()
+
+Checks if this is a negative time span.
+
+```crmscript
+Bool isNegative()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if this is a negative time span; otherwise, false.
+
+## set(Integer,Integer,Integer,Integer,Integer)
+
+Initializes a time span object.
+
+```crmscript
+Void set(Integer years, Integer days, Integer hours, Integer minutes, Integer seconds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setNegative(Bool)
+
+Positive time span is default, but if you add a negative number of years/days/hours/minutes/seconds, you may get a negative times pan.
+
+```crmscript
+Void setNegative(Bool negative)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## toDays()
+
+Returns the time span as a number of days. A one year time span will return 365.
+
+```crmscript
+Integer toDays()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## toHours()
+
+Returns the time span as a number of hours. A one day time span will return 24.
+
+```crmscript
+Integer toHours()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## toMinutes()
+
+Returns the time span as a number of minutes. A one hour time span will return 60.
+
+```crmscript
+Integer toMinutes()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## toSeconds()
+
+Returns the time span as a number of seconds. A one minute time span will return 60.
+
+```crmscript
+Integer toSeconds()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## toString(Integer,Integer,Integer,Bool)
+
+Returns the time span as a string representation, on given format and language.
+
+```crmscript
+String toString(Integer mode, Integer lang, Integer maxMode, Bool short)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string representation of the time span, on the given format and in the given language.
+
+**Example:**
+
+```crmscript
+TimeSpan ts;
+printLine(ts.toString(3,1,1,false));
+```

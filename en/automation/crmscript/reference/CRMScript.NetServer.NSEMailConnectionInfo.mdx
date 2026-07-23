@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nsemailconnectioninfo
+title: NSEMailConnectionInfo
+description: "All information needed to connect to a mail server."
+keywords: CRMScript, NSEMailConnectionInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSEMailConnectionInfo
+
+All information needed to connect to a mail server.
+
+## Constructors
+
+### NSEMailConnectionInfo()
+
+```crmscript
+NSEMailConnectionInfo
+```
+
+Initializes a new instance of the NSEMailConnectionInfo class.
+
+## Methods
+
+## GetFolder()
+
+```crmscript
+String GetFolder()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional folder to set as current after logging in.
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String folder = thing.GetFolder();
+```
+
+## GetPassword()
+
+```crmscript
+String GetPassword()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Password for the username.
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String password = thing.GetPassword();
+```
+
+## GetServerName()
+
+```crmscript
+String GetServerName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Hostname or IP to server to connect to. Custom ports may be specified by adding ':' and the port number after the name/ip. For example, '127.0.0.1:6543'
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String serverName = thing.GetServerName();
+```
+
+## GetUserName()
+
+```crmscript
+String GetUserName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of user to log in with.
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String userName = thing.GetUserName();
+```
+
+## GetUseSSL()
+
+```crmscript
+Bool GetUseSSL()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Use a secure connection with the server.
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+Bool useSSL = thing.GetUseSSL();
+```
+
+## SetFolder(String)
+
+```crmscript
+Void SetFolder(String folder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String folder;
+thing.SetFolder(folder);
+```
+
+## SetPassword(String)
+
+```crmscript
+Void SetPassword(String password)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String password;
+thing.SetPassword(password);
+```
+
+## SetServerName(String)
+
+```crmscript
+Void SetServerName(String serverName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String serverName;
+thing.SetServerName(serverName);
+```
+
+## SetUserName(String)
+
+```crmscript
+Void SetUserName(String userName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+String userName;
+thing.SetUserName(userName);
+```
+
+## SetUseSSL(Bool)
+
+```crmscript
+Void SetUseSSL(Bool useSSL)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEMailConnectionInfo thing;
+Bool useSSL;
+thing.SetUseSSL(useSSL);
+```

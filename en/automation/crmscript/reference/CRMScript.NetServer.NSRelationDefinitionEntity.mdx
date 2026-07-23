@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nsrelationdefinitionentity
+title: NSRelationDefinitionEntity
+description: "A relation definition entity with source and destination tables."
+keywords: CRMScript, NSRelationDefinitionEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSRelationDefinitionEntity
+
+A relation definition entity with source and destination tables.
+
+## Constructors
+
+### NSRelationDefinitionEntity()
+
+```crmscript
+NSRelationDefinitionEntity
+```
+
+Initializes a new instance of the NSRelationDefinitionEntity class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if deleted.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDestination()
+
+```crmscript
+Integer GetDestination()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The destination of the relation. See &lt;xref href=\"CRMScript.NetServer.RelationTarget\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer destination = thing.GetDestination();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Active text.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+String name = thing.GetName();
+```
+
+## GetPassiveText()
+
+```crmscript
+String GetPassiveText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text used in passive direction.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+String passiveText = thing.GetPassiveText();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetReldefId()
+
+```crmscript
+Integer GetReldefId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - primary key.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer reldefId = thing.GetReldefId();
+```
+
+## GetSource()
+
+```crmscript
+Integer GetSource()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The source of the relation. See &lt;xref href=\"CRMScript.NetServer.RelationTarget\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer source = thing.GetSource();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDestination(Integer)
+
+```crmscript
+Void SetDestination(Integer destination)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer destination;
+thing.SetDestination(destination);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPassiveText(String)
+
+```crmscript
+Void SetPassiveText(String passiveText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+String passiveText;
+thing.SetPassiveText(passiveText);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetReldefId(Integer)
+
+```crmscript
+Void SetReldefId(Integer reldefId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer reldefId;
+thing.SetReldefId(reldefId);
+```
+
+## SetSource(Integer)
+
+```crmscript
+Void SetSource(Integer source)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+Integer source;
+thing.SetSource(source);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRelationDefinitionEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

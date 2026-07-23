@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsmessagedeliverystatus
+title: NSMessageDeliveryStatus
+description: "Describes the message status."
+keywords: CRMScript, NSMessageDeliveryStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMessageDeliveryStatus
+
+Describes the message status.
+
+## Constructors
+
+### NSMessageDeliveryStatus()
+
+```crmscript
+NSMessageDeliveryStatus
+```
+
+Initializes a new instance of the NSMessageDeliveryStatus class.
+
+## Methods
+
+## GetMessagingId()
+
+```crmscript
+Integer GetMessagingId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID to the outgoing message table.
+
+**Example:**
+
+```crmscript
+NSMessageDeliveryStatus thing;
+Integer messagingId = thing.GetMessagingId();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Current message status.
+
+**Example:**
+
+```crmscript
+NSMessageDeliveryStatus thing;
+Integer status = thing.GetStatus();
+```
+
+## GetStatusDescription()
+
+```crmscript
+String GetStatusDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - String describing the current message status.
+
+**Example:**
+
+```crmscript
+NSMessageDeliveryStatus thing;
+String statusDescription = thing.GetStatusDescription();
+```
+
+## SetMessagingId(Integer)
+
+```crmscript
+Void SetMessagingId(Integer messagingId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMessageDeliveryStatus thing;
+Integer messagingId;
+thing.SetMessagingId(messagingId);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMessageDeliveryStatus thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetStatusDescription(String)
+
+```crmscript
+Void SetStatusDescription(String statusDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMessageDeliveryStatus thing;
+String statusDescription;
+thing.SetStatusDescription(statusDescription);
+```

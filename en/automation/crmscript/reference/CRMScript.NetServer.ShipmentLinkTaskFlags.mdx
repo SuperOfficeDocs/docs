@@ -1,0 +1,30 @@
+﻿---
+uid: crmscript.netserver.shipmentlinktaskflags
+title: Enum ShipmentLinkTaskFlags
+description: "Flags that control how the task is created"
+keywords: CRMScript, ShipmentLinkTaskFlags, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ShipmentLinkTaskFlags
+
+Flags that control how the task is created
+
+## Syntax
+
+```crmscript
+ShipmentLinkTaskFlags
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | No special options, values taken from other fields |
+| AssignToOurContact | Assign task to contact owner |
+| UseNextAvailableTime | Use the soonest-available working time slot (after the task-creation evcent is triggered) |
+| IsAssignment | Create as an assignment (shown in Invitation dialog) |

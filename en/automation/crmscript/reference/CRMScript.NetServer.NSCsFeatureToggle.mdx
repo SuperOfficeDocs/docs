@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nscsfeaturetoggle
+title: NSCsFeatureToggle
+description: "Carrier object for CsFeatureToggle."
+keywords: CRMScript, NSCsFeatureToggle, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCsFeatureToggle
+
+Carrier object for CsFeatureToggle.
+
+## Constructors
+
+### NSCsFeatureToggle()
+
+```crmscript
+NSCsFeatureToggle
+```
+
+Initializes a new instance of the NSCsFeatureToggle class.
+
+## Methods
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the feature toggle.
+
+**Example:**
+
+```crmscript
+NSCsFeatureToggle thing;
+String name = thing.GetName();
+```
+
+## GetState()
+
+```crmscript
+Bool GetState()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - is the feature toggle is turned on or off?
+
+**Example:**
+
+```crmscript
+NSCsFeatureToggle thing;
+Bool state = thing.GetState();
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCsFeatureToggle thing;
+String name;
+thing.SetName(name);
+```
+
+## SetState(Bool)
+
+```crmscript
+Void SetState(Bool state)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCsFeatureToggle thing;
+Bool state;
+thing.SetState(state);
+```

@@ -1,0 +1,203 @@
+﻿---
+uid: crmscript.netserver.nsfreetextagent
+title: NSFreeTextAgent
+description: "This agent can be used to manage the free text system."
+keywords: CRMScript, NSFreeTextAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFreeTextAgent
+
+This agent can be used to manage the free text system.
+
+## Constructors
+
+### NSFreeTextAgent()
+
+```crmscript
+NSFreeTextAgent
+```
+
+This agent can be used to manage the free text system.
+
+## Methods
+
+## AddWords(String)
+
+Adds the words in the string to the stop word list
+
+```crmscript
+Void AddWords(String stopWords)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+String stopWords;
+agent.AddWords(stopWords);
+```
+
+## DeleteStopWordsById(Integer[])
+
+Deletes the stop words with these IDs
+
+```crmscript
+Void DeleteStopWordsById(Integer[] stopWordIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+Integer[] stopWordIds;
+agent.DeleteStopWordsById(stopWordIds);
+```
+
+## GetStatus()
+
+Returns status for the free-text search words
+
+```crmscript
+NSFreeText GetStatus()
+```
+
+**Returns:** [CRMScript.NetServer.NSFreeText](CRMScript.NetServer.NSFreeText)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+NSFreeText res = agent.GetStatus();
+```
+
+## GetStopWordList()
+
+Returns the list of stop words
+
+```crmscript
+String[] GetStopWordList()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - list of stop words.
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+String[] res = agent.GetStopWordList();
+```
+
+## GetSuggestedStopWords(Integer)
+
+Returns the top used words in the free-text index table, sorted as most used first
+
+```crmscript
+NSMDOListItem[] GetSuggestedStopWords(Integer countWords)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+Integer countWords;
+NSMDOListItem[] res = agent.GetSuggestedStopWords(countWords);
+```
+
+## RegenerateIndex(Bool)
+
+Wipes and regenerates the free-text index by scanning the database (free-text search will be unavailable while this operation runs
+
+```crmscript
+NSBatchTaskInfo RegenerateIndex(Bool runAsBatch)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+Bool runAsBatch;
+NSBatchTaskInfo res = agent.RegenerateIndex(runAsBatch);
+```
+
+## SetAutoEnableTravelAreas(Bool)
+
+```crmscript
+Void SetAutoEnableTravelAreas(Bool autoEnable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+Bool autoEnable;
+agent.SetAutoEnableTravelAreas(autoEnable);
+```
+
+## SetEnabled(Bool)
+
+Sets free-text search to enabled (true) or disabled (false)
+
+```crmscript
+Void SetEnabled(Bool enabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+Bool enabled;
+agent.SetEnabled(enabled);
+```
+
+## SetMultiWordOperator(Integer)
+
+Sets the operator used when matching multiple words
+
+```crmscript
+Void SetMultiWordOperator(Integer freeTextOperator)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+Integer freeTextOperator;
+agent.SetMultiWordOperator(freeTextOperator);
+```
+
+## SetSingleWordOperator(Integer)
+
+Sets the operator used when matching single words
+
+```crmscript
+Void SetSingleWordOperator(Integer freeTextOperator)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeTextAgent agent;
+Integer freeTextOperator;
+agent.SetSingleWordOperator(freeTextOperator);
+```

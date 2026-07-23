@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.valueoverride
+title: Enum ValueOverride
+description: "Has a pre-calculated value been overriden in a QuoteAlternative or QuoteLine, and in that case what & how?"
+keywords: CRMScript, ValueOverride, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ValueOverride
+
+Has a pre-calculated value been overriden in a QuoteAlternative or QuoteLine, and in that case what & how?
+
+## Syntax
+
+```crmscript
+ValueOverride
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | Discount data is from the ERP system and has not been overridden |
+| Total | The Total amount has been overridden; all other fields should be recalculated |
+| DiscountPercent | The discount percentage has been overriden; all other fields should be recalculated |
+| DiscountAmount | The discount amount has been overridden; all other fields should be recalculated |
+| EarningPercent | The earning percent has been overridden; all other fields should be recalculated |
+| EarningAmount | The earning amount has been overridden; all other fields should be recalculated |

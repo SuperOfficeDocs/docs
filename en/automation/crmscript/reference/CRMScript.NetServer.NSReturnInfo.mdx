@@ -1,0 +1,237 @@
+﻿---
+uid: crmscript.netserver.nsreturninfo
+title: NSReturnInfo
+description: "Return value object for Document Plugin API calls."
+keywords: CRMScript, NSReturnInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSReturnInfo
+
+Return value object for Document Plugin API calls.
+
+## Constructors
+
+### NSReturnInfo()
+
+```crmscript
+NSReturnInfo
+```
+
+Initializes a new instance of the NSReturnInfo class.
+
+## Methods
+
+## GetAdditionalInfo()
+
+```crmscript
+String GetAdditionalInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional, additional information meant for further processing.
+
+<Note>
+This member is ignored for return types None, Message and SoProtocol. It can be used to pass execution-dependent information to the code that handles CustomGui and Other.
+</Note>
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String additionalInfo = thing.GetAdditionalInfo();
+```
+
+## GetExternalReference()
+
+```crmscript
+String GetExternalReference()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's key that uniquely identifies a document.
+
+<Note>
+Stored in the externalReference field of the document table
+</Note>
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String externalReference = thing.GetExternalReference();
+```
+
+## GetSuccess()
+
+```crmscript
+Bool GetSuccess()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Did the call succeed. A successful call may still return a message or other return value.
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+Bool success = thing.GetSuccess();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How is the return value to be understood by the caller. See &lt;xref href=\"CRMScript.NetServer.ReturnType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+Integer type = thing.GetType();
+```
+
+## GetValue()
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Return value, may be blank.
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String value = thing.GetValue();
+```
+
+## GetVersionId()
+
+```crmscript
+String GetVersionId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's version id that uniquely identifies one version of a document.
+
+<Note>
+If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String versionId = thing.GetVersionId();
+```
+
+## SetAdditionalInfo(String)
+
+```crmscript
+Void SetAdditionalInfo(String additionalInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This member is ignored for return types None, Message and SoProtocol. It can be used to pass execution-dependent information to the code that handles CustomGui and Other.
+</Note>
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String additionalInfo;
+thing.SetAdditionalInfo(additionalInfo);
+```
+
+## SetExternalReference(String)
+
+```crmscript
+Void SetExternalReference(String externalReference)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Stored in the externalReference field of the document table
+</Note>
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String externalReference;
+thing.SetExternalReference(externalReference);
+```
+
+## SetSuccess(Bool)
+
+```crmscript
+Void SetSuccess(Bool success)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+Bool success;
+thing.SetSuccess(success);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetValue(String)
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String value;
+thing.SetValue(value);
+```
+
+## SetVersionId(String)
+
+```crmscript
+Void SetVersionId(String versionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSReturnInfo thing;
+String versionId;
+thing.SetVersionId(versionId);
+```

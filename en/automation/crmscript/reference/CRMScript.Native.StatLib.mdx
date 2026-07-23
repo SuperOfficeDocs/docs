@@ -1,0 +1,181 @@
+﻿---
+uid: crmscript.native.statlib
+title: StatLib
+description: "Class for using the Service statistics library."
+keywords: CRMScript, StatLib, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# StatLib
+
+Class for using the Service statistics library.
+
+## Constructors
+
+### StatLib()
+
+```crmscript
+StatLib
+```
+
+Initializes a new instance of the StatLib class.
+
+## Methods
+
+## addAggregate(Integer,Integer,String,String,Integer)
+
+Adds an aggregate function to the specified group
+
+An aggregate function is a function that is calculated for all values for a given column in a group. For example, the average response time for each category.
+
+```crmscript
+Void addAggregateStatLib.addAggregate(Integer groupColumn, Integer column, String name, String type, Integer decimals, Integer uniqueColumn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available functions:&lt;ul&gt;&lt;li&gt;Count&lt;/li&gt;&lt;li&gt;Sum&lt;/li&gt;&lt;li&gt;Avg&lt;/li&gt;&lt;li&gt;Max&lt;/li&gt;&lt;li&gt;Min&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## addAggregate(Integer,Integer,String,String,Integer,Integer)
+
+Adds an aggregate function to the specified group
+
+An aggregate function is a function that is calculated for all values for a given column in a group. For example, the average response time for each category.
+
+```crmscript
+Void addAggregateStatLib.addAggregate(Integer groupColumn, Integer column, String name, String type, Integer decimals, Integer uniqueColumn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available functions:&lt;ul&gt;&lt;li&gt;Count&lt;/li&gt;&lt;li&gt;Sum&lt;/li&gt;&lt;li&gt;Avg&lt;/li&gt;&lt;li&gt;Max&lt;/li&gt;&lt;li&gt;Min&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## addCallback(Integer,String)
+
+Adds a callback. A callback is a PARSER-snippet that will be executed for the given column for each row.
+
+```crmscript
+Void addCallback(Integer column, String script)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This is an old method. Use StatResult and iterate instead.
+</Note>
+
+## addGroup(Integer,Bool)
+
+Adds a group to the StatLib instance. A group is a subset of the results that have a common value for a given column. Aggregate values can be calculated for groups, for example, the average response time per category.
+
+```crmscript
+Void addGroup(Integer column, Bool desc)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addGroup(Integer,Bool,Bool)
+
+Adds a group to the StatLib instance. A group is a subset of the results that have a common value for a given column. Aggregate values can be calculated for groups, for example, the average response time per category.
+
+```crmscript
+Void addGroup(Integer column, Bool desc, Bool compareAsNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## dropOrder()
+
+Calling this function will make the StatLib instance skip sorting the results in the groups.
+
+```crmscript
+Void dropOrder()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## execute(Parser)
+
+Runs the query and aggregations and stores the results in a Parser
+
+```crmscript
+Void execute(Parser parser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can choose between storing in a Parser or a StatResult by passing the appropriate object.
+</Note>
+
+## execute(StatResult)
+
+Runs the query and aggregations and stores the results in a StatResult
+
+```crmscript
+Void execute(StatResult result)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can choose between storing in a Parser or a StatResult by passing the appropriate object.
+</Note>
+
+## setGenericSearch()
+
+Use the given GenericSearch entry as query (instead of SQL string).
+
+```crmscript
+Void setGenericSearch(GenericSearch gs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setName(String)
+
+Sets the name for the instance. The name is used to prefix the result in the Parser.
+
+```crmscript
+Void setName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSearchEngine()
+
+Use the given SearchEngine entry as query (instead of SQL string).
+
+```crmscript
+Void setSearchEngine(SearchEngine se)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSql(String)
+
+Sets the query for the instance. &lt;strong&gt;This method is not available in CRM Online.&lt;/strong&gt;
+
+```crmscript
+Void setSql(String sqlStatement)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setStringMatrix()
+
+Use the given StringMatrix entry as query (instead of SQL string).
+
+```crmscript
+Void setStringMatrix(StringMatrix sm)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

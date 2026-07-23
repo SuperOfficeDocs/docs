@@ -1,0 +1,882 @@
+﻿---
+uid: crmscript.netserver.nsdocumenttemplateentity
+title: NSDocumentTemplateEntity
+description: "The template a document is based on is stored in the SO\_arc\\template folder on the server. This will return the name as displayed in the GUI, and not the physical document name, of the template the document object is based on."
+keywords: CRMScript, NSDocumentTemplateEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDocumentTemplateEntity
+
+The template a document is based on is stored in the SO\_arc\\template folder on the server. This will return the name as displayed in the GUI, and not the physical document name, of the template the document object is based on.
+
+## Constructors
+
+### NSDocumentTemplateEntity()
+
+```crmscript
+NSDocumentTemplateEntity
+```
+
+Initializes a new instance of the NSDocumentTemplateEntity class.
+
+## Methods
+
+## GetAutoeventId()
+
+Which document plugin is responsible for the documents generated from this template
+
+```crmscript
+Integer GetAutoeventId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer autoeventId = thing.GetAutoeventId();
+```
+
+## GetDefaultOref()
+
+Processed via tag substitution to give document reference
+
+```crmscript
+String GetDefaultOref()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String defaultOref = thing.GetDefaultOref();
+```
+
+## GetDeleted()
+
+True if deleted
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDirection()
+
+```crmscript
+Integer GetDirection()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 = incoming, 2 = outgoing. See &lt;xref href=\"CRMScript.NetServer.TaskDirection\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer direction = thing.GetDirection();
+```
+
+## GetDocumentTemplateId()
+
+Primary key
+
+```crmscript
+Integer GetDocumentTemplateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer documentTemplateId = thing.GetDocumentTemplateId();
+```
+
+## GetDocumentTypeKey()
+
+The document type to use when creating a blank document. Plugin-specific. Used when not creating template from a local file.
+
+```crmscript
+Integer GetDocumentTypeKey()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer documentTypeKey = thing.GetDocumentTypeKey();
+```
+
+## GetEmailSubject()
+
+Subject to use if document template is an email.
+
+```crmscript
+String GetEmailSubject()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String emailSubject = thing.GetEmailSubject();
+```
+
+## GetFilename()
+
+Relative to TemplatePath, or extref for other document plugins. i.e URL or full path.
+
+```crmscript
+String GetFilename()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String filename = thing.GetFilename();
+```
+
+## GetIncludeSignature()
+
+True if the email signature should be added in bottom of mail if this an email template
+
+```crmscript
+Bool GetIncludeSignature()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool includeSignature = thing.GetIncludeSignature();
+```
+
+## GetIntentId()
+
+What is the intention of this document (used by SAINT)
+
+```crmscript
+Integer GetIntentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer intentId = thing.GetIntentId();
+```
+
+## GetInvitationDocType()
+
+```crmscript
+Integer GetInvitationDocType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Type for sending email meeting invitation. See &lt;xref href=\"CRMScript.NetServer.DocTmplInvitationType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer invitationDocType = thing.GetInvitationDocType();
+```
+
+## GetIsDefaultPublished()
+
+```crmscript
+Bool GetIsDefaultPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Published to external persons.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool isDefaultPublished = thing.GetIsDefaultPublished();
+```
+
+## GetIsInUseInGuides()
+
+True if the template is in use in a project or sales guide
+
+```crmscript
+Bool GetIsInUseInGuides()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool isInUseInGuides = thing.GetIsInUseInGuides();
+```
+
+## GetLoadTemplateFromPlugin()
+
+Which document plugin is responsible for this template's contents
+
+```crmscript
+Integer GetLoadTemplateFromPlugin()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer loadTemplateFromPlugin = thing.GetLoadTemplateFromPlugin();
+```
+
+## GetMimeType()
+
+The mime type
+
+```crmscript
+String GetMimeType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String mimeType = thing.GetMimeType();
+```
+
+## GetName()
+
+The template list item
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String name = thing.GetName();
+```
+
+## GetPrivacyDocType()
+
+```crmscript
+Integer GetPrivacyDocType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Indicator that this document template has a functional role, related to privacy/GDPR. See &lt;xref href=\"CRMScript.NetServer.DocTmplPrivacyType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer privacyDocType = thing.GetPrivacyDocType();
+```
+
+## GetQuoteDocType()
+
+```crmscript
+Integer GetQuoteDocType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The role this document plays in the Quote system, if any. See &lt;xref href=\"CRMScript.NetServer.DocTmplQuoteType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer quoteDocType = thing.GetQuoteDocType();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRecordType()
+
+```crmscript
+NSDocTmplType GetRecordType()
+```
+
+**Returns:** [CRMScript.NetServer.NSDocTmplType](CRMScript.NetServer.NSDocTmplType) - 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo See &lt;xref href=\"CRMScript.NetServer.TaskType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+NSDocTmplType recordType = thing.GetRecordType();
+```
+
+## GetSaveInDb()
+
+1 = save document records in DB; otherwise not.
+
+```crmscript
+Integer GetSaveInDb()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer saveInDb = thing.GetSaveInDb();
+```
+
+## GetSenderEmailAddress()
+
+If email template, default sender address when template is of type quote email or privacy email.
+
+```crmscript
+String GetSenderEmailAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String senderEmailAddress = thing.GetSenderEmailAddress();
+```
+
+## GetSenderEmailMode()
+
+```crmscript
+Integer GetSenderEmailMode()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If email template, when DocType is Privacy or quote email, it is possible to make sender address like our contact, or our support contact, or always one address. See &lt;xref href=\"CRMScript.NetServer.SenderMailMode\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer senderEmailMode = thing.GetSenderEmailMode();
+```
+
+## GetShowCurrents()
+
+True if when using this template there should be shown a place for editing current choices of person, compant, sale, project etc
+
+```crmscript
+Bool GetShowCurrents()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool showCurrents = thing.GetShowCurrents();
+```
+
+## GetTooltip()
+
+Tooltip or other description
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetAutoeventId(Integer)
+
+Which document plugin is responsible for the documents generated from this template
+
+```crmscript
+Void SetAutoeventId(Integer autoeventId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer autoeventId;
+thing.SetAutoeventId(autoeventId);
+```
+
+## SetDefaultOref(String)
+
+Processed via tag substitution to give document reference
+
+```crmscript
+Void SetDefaultOref(String defaultOref)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String defaultOref;
+thing.SetDefaultOref(defaultOref);
+```
+
+## SetDeleted(Bool)
+
+True if deleted
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDirection(Integer)
+
+Sets the direction of a document template.
+
+```crmscript
+Void SetDirection(Integer direction)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer direction;
+thing.SetDirection(direction);
+```
+
+## SetDocumentTemplateId(Integer)
+
+Primary key
+
+```crmscript
+Void SetDocumentTemplateId(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer documentTemplateId;
+thing.SetDocumentTemplateId(documentTemplateId);
+```
+
+## SetDocumentTypeKey(Integer)
+
+The document type to use when creating a blank document. Plugin-specific. Used when not creating template from a local file.
+
+```crmscript
+Void SetDocumentTypeKey(Integer documentTypeKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer documentTypeKey;
+thing.SetDocumentTypeKey(documentTypeKey);
+```
+
+## SetEmailSubject(String)
+
+Subject to use if document template is an email.
+
+```crmscript
+Void SetEmailSubject(String emailSubject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String emailSubject;
+thing.SetEmailSubject(emailSubject);
+```
+
+## SetFilename(String)
+
+Relative to TemplatePath, or extref for other document plugins. i.e URL or full path.
+
+```crmscript
+Void SetFilename(String filename)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String filename;
+thing.SetFilename(filename);
+```
+
+## SetIncludeSignature(Bool)
+
+True if the email signature should be added in bottom of mail if this an email template
+
+```crmscript
+Void SetIncludeSignature(Bool includeSignature)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool includeSignature;
+thing.SetIncludeSignature(includeSignature);
+```
+
+## SetIntentId(Integer)
+
+What is the intention of this document (used by SAINT)
+
+```crmscript
+Void SetIntentId(Integer intentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer intentId;
+thing.SetIntentId(intentId);
+```
+
+## SetInvitationDocType(Integer)
+
+```crmscript
+Void SetInvitationDocType(Integer invitationDocType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer invitationDocType;
+thing.SetInvitationDocType(invitationDocType);
+```
+
+## SetIsDefaultPublished(Bool)
+
+Published to external persons
+
+```crmscript
+Void SetIsDefaultPublished(Bool isDefaultPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool isDefaultPublished;
+thing.SetIsDefaultPublished(isDefaultPublished);
+```
+
+## SetIsInUseInGuides(Bool)
+
+True if the template is in use in a project or sales guide
+
+```crmscript
+Void SetIsInUseInGuides(Bool isInUseInGuides)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool isInUseInGuides;
+thing.SetIsInUseInGuides(isInUseInGuides);
+```
+
+## SetLoadTemplateFromPlugin(Integer)
+
+Which document plugin is responsible for this template's contents
+
+```crmscript
+Void SetLoadTemplateFromPlugin(Integer loadTemplateFromPlugin)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer loadTemplateFromPlugin;
+thing.SetLoadTemplateFromPlugin(loadTemplateFromPlugin);
+```
+
+## SetMimeType(String)
+
+The mime type
+
+```crmscript
+Void SetMimeType(String mimeType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String mimeType;
+thing.SetMimeType(mimeType);
+```
+
+## SetName(String)
+
+The template list item
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPrivacyDocType(Integer)
+
+```crmscript
+Void SetPrivacyDocType(Integer privacyDocType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer privacyDocType;
+thing.SetPrivacyDocType(privacyDocType);
+```
+
+## SetQuoteDocType(Integer)
+
+```crmscript
+Void SetQuoteDocType(Integer quoteDocType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer quoteDocType;
+thing.SetQuoteDocType(quoteDocType);
+```
+
+## SetRank(Integer)
+
+Rank order
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRecordType(NSDocTmplType)
+
+1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo
+
+```crmscript
+Void SetRecordType(NSDocTmplType recordType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+See &lt;xref href=\"CRMScript.NetServer.TaskType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+NSDocTmplType recordType;
+thing.SetRecordType(recordType);
+```
+
+## SetSaveInDb(Integer)
+
+1 = save document records in DB; otherwise not.
+
+```crmscript
+Void SetSaveInDb(Integer saveInDb)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer saveInDb;
+thing.SetSaveInDb(saveInDb);
+```
+
+## SetSenderEmailAddress(String)
+
+If email template, default senderaddress when template is of type quote email or privacy email.
+
+```crmscript
+Void SetSenderEmailAddress(String senderEmailAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String senderEmailAddress;
+thing.SetSenderEmailAddress(senderEmailAddress);
+```
+
+## SetSenderEmailMode(Integer)
+
+```crmscript
+Void SetSenderEmailMode(Integer senderEmailMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Integer senderEmailMode;
+thing.SetSenderEmailMode(senderEmailMode);
+```
+
+## SetShowCurrents(Bool)
+
+True if when using this template there should be shown a place for editing current choices of person, compant, sale, project etc
+
+```crmscript
+Void SetShowCurrents(Bool showCurrents)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+Bool showCurrents;
+thing.SetShowCurrents(showCurrents);
+```
+
+## SetTooltip(String)
+
+Tooltip or other description
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplateEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

@@ -1,0 +1,244 @@
+﻿---
+uid: crmscript.netserver.nsfreetext
+title: NSFreeText
+description: "Used to manage freetext search."
+keywords: CRMScript, NSFreeText, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFreeText
+
+Used to manage freetext search.
+
+## Constructors
+
+### NSFreeText()
+
+```crmscript
+NSFreeText
+```
+
+Initializes a new instance of the NSFreeText class.
+
+## Methods
+
+## GetAutoEnableTravelAreas()
+
+```crmscript
+Bool GetAutoEnableTravelAreas()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Automatically enable free-text search for new travel areas.
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Bool autoEnableTravelAreas = thing.GetAutoEnableTravelAreas();
+```
+
+## GetCountWords()
+
+```crmscript
+Integer GetCountWords()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Count of unique search words.
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer countWords = thing.GetCountWords();
+```
+
+## GetFreeTextEnabled()
+
+```crmscript
+Bool GetFreeTextEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if free-text search enabled.
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Bool freeTextEnabled = thing.GetFreeTextEnabled();
+```
+
+## GetLastGenerated()
+
+```crmscript
+DateTime GetLastGenerated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last time search has been generated.
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+DateTime lastGenerated = thing.GetLastGenerated();
+```
+
+## GetMultiWordOperator()
+
+```crmscript
+Integer GetMultiWordOperator()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Starts with, contains or exact match. See &lt;xref href=\"CRMScript.NetServer.FreeTextOperator\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer multiWordOperator = thing.GetMultiWordOperator();
+```
+
+## GetOccurrences()
+
+```crmscript
+Integer GetOccurrences()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Total count of search words.
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer occurrences = thing.GetOccurrences();
+```
+
+## GetSingleWordOperator()
+
+```crmscript
+Integer GetSingleWordOperator()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Starts with, contains or exact match. See &lt;xref href=\"CRMScript.NetServer.FreeTextOperator\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer singleWordOperator = thing.GetSingleWordOperator();
+```
+
+## SetAutoEnableTravelAreas(Bool)
+
+```crmscript
+Void SetAutoEnableTravelAreas(Bool autoEnableTravelAreas)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Bool autoEnableTravelAreas;
+thing.SetAutoEnableTravelAreas(autoEnableTravelAreas);
+```
+
+## SetCountWords(Integer)
+
+```crmscript
+Void SetCountWords(Integer countWords)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer countWords;
+thing.SetCountWords(countWords);
+```
+
+## SetFreeTextEnabled(Bool)
+
+```crmscript
+Void SetFreeTextEnabled(Bool freeTextEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Bool freeTextEnabled;
+thing.SetFreeTextEnabled(freeTextEnabled);
+```
+
+## SetLastGenerated(DateTime)
+
+```crmscript
+Void SetLastGenerated(DateTime lastGenerated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+DateTime lastGenerated;
+thing.SetLastGenerated(lastGenerated);
+```
+
+## SetMultiWordOperator(Integer)
+
+```crmscript
+Void SetMultiWordOperator(Integer multiWordOperator)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer multiWordOperator;
+thing.SetMultiWordOperator(multiWordOperator);
+```
+
+## SetOccurrences(Integer)
+
+```crmscript
+Void SetOccurrences(Integer occurrences)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer occurrences;
+thing.SetOccurrences(occurrences);
+```
+
+## SetSingleWordOperator(Integer)
+
+```crmscript
+Void SetSingleWordOperator(Integer singleWordOperator)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFreeText thing;
+Integer singleWordOperator;
+thing.SetSingleWordOperator(singleWordOperator);
+```

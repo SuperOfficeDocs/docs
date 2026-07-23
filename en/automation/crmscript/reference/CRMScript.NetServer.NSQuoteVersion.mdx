@@ -1,0 +1,1182 @@
+﻿---
+uid: crmscript.netserver.nsquoteversion
+title: NSQuoteVersion
+description: "Information about a version of the."
+keywords: CRMScript, NSQuoteVersion, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteVersion
+
+Information about a version of the.
+
+## Constructors
+
+### NSQuoteVersion()
+
+```crmscript
+NSQuoteVersion
+```
+
+Initializes a new instance of the NSQuoteVersion class.
+
+## Methods
+
+## GetApprovedBy()
+
+```crmscript
+Integer GetApprovedBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of associate who approved (or rejected approval) for this version.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer approvedBy = thing.GetApprovedBy();
+```
+
+## GetApprovedRegisteredBy()
+
+```crmscript
+Integer GetApprovedRegisteredBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of associate who actually entered the approval; might be different from ApprovedBy (f.x. due to telephone consultation/approval).
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer approvedRegisteredBy = thing.GetApprovedRegisteredBy();
+```
+
+## GetApprovedRegisteredDate()
+
+```crmscript
+DateTime GetApprovedRegisteredDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was approval granted or rejected.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime approvedRegisteredDate = thing.GetApprovedRegisteredDate();
+```
+
+## GetApprovedText()
+
+```crmscript
+String GetApprovedText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text with comments on why approval was granted (or rejected)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String approvedText = thing.GetApprovedText();
+```
+
+## GetArchivedState()
+
+```crmscript
+Integer GetArchivedState()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - State that this quote version had, right before it was changed to Archived. See &lt;xref href=\"CRMScript.NetServer.QuoteVersionState\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+<Note>
+In this way we can show what happened before the archiving.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer archivedState = thing.GetArchivedState();
+```
+
+## GetDeliveryCountryId()
+
+```crmscript
+Integer GetDeliveryCountryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Country of delivery address, typically copied from the contact record.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer deliveryCountryId = thing.GetDeliveryCountryId();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of Version. Potentially longer text description, typically used in a tooltip. Max 2K.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String description = thing.GetDescription();
+```
+
+## GetERPDeliveryTermsKey()
+
+```crmscript
+String GetERPDeliveryTermsKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'FOB' ('Free on board').
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPDeliveryTermsKey = thing.GetERPDeliveryTermsKey();
+```
+
+## GetERPDeliveryTypeKey()
+
+```crmscript
+String GetERPDeliveryTypeKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Air'.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPDeliveryTypeKey = thing.GetERPDeliveryTypeKey();
+```
+
+## GetERPPaymentTermsKey()
+
+```crmscript
+String GetERPPaymentTermsKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Standard 30 days'.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPPaymentTermsKey = thing.GetERPPaymentTermsKey();
+```
+
+## GetERPPaymentTypeKey()
+
+```crmscript
+String GetERPPaymentTypeKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Invoice'.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPPaymentTypeKey = thing.GetERPPaymentTypeKey();
+```
+
+## GetERPQuoteVersionKey()
+
+```crmscript
+String GetERPQuoteVersionKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key in the ERP system that uniquely identifies this Version within the ERP system (if available, the field may be empty).
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPQuoteVersionKey = thing.GetERPQuoteVersionKey();
+```
+
+## GetExpirationDate()
+
+```crmscript
+DateTime GetExpirationDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last date the quote Version is valid, expiration is at midnight end of this day.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime expirationDate = thing.GetExpirationDate();
+```
+
+## GetExtraField1()
+
+```crmscript
+String GetExtraField1()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField1 = thing.GetExtraField1();
+```
+
+## GetExtraField2()
+
+```crmscript
+String GetExtraField2()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField2 = thing.GetExtraField2();
+```
+
+## GetExtraField3()
+
+```crmscript
+String GetExtraField3()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField3 = thing.GetExtraField3();
+```
+
+## GetExtraField4()
+
+```crmscript
+String GetExtraField4()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField4 = thing.GetExtraField4();
+```
+
+## GetExtraField5()
+
+```crmscript
+String GetExtraField5()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField5 = thing.GetExtraField5();
+```
+
+## GetFollowupId()
+
+```crmscript
+Integer GetFollowupId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Link to a follow-up activity, created when this quote version was sent to the customer.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer followupId = thing.GetFollowupId();
+```
+
+## GetHasOwnDeliveryAddress()
+
+```crmscript
+Bool GetHasOwnDeliveryAddress()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The delivery address is not the same as the contact's Street address.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Bool hasOwnDeliveryAddress = thing.GetHasOwnDeliveryAddress();
+```
+
+## GetHasOwnInvoiceAddress()
+
+```crmscript
+Bool GetHasOwnInvoiceAddress()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The quote has an address for Invoicing. This will typically be copied from the company's addresses.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Bool hasOwnInvoiceAddress = thing.GetHasOwnInvoiceAddress();
+```
+
+## GetInvoiceCountryId()
+
+```crmscript
+Integer GetInvoiceCountryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Country of invoice address, typically copied from contact record.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer invoiceCountryId = thing.GetInvoiceCountryId();
+```
+
+## GetLastRecalculated()
+
+```crmscript
+DateTime GetLastRecalculated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When this version was last subjected to a total recalculation.
+
+<Note>
+This field must be set by the connector, since the connector may choose to ignore a RecalculateVersion call based on policies and possibly the current value of this field. SuperOffice will set this field to 1.1.1760 whenever any change occurs to the quote, to indicate that a recalculation is needed.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime lastRecalculated = thing.GetLastRecalculated();
+```
+
+## GetLikelyQuoteAlternativeId()
+
+```crmscript
+Integer GetLikelyQuoteAlternativeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alternative that is considered most likely to be accepted. Used to calculate probable income.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer likelyQuoteAlternativeId = thing.GetLikelyQuoteAlternativeId();
+```
+
+## GetNumber()
+
+```crmscript
+String GetNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A quote number that the user (or ERP connector) can fill out.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String number = thing.GetNumber();
+```
+
+## GetQuoteAlternatives()
+
+```crmscript
+NSQuoteAlternative[] GetQuoteAlternatives()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)[] - The QuoteAlternatives for the NSQuoteVersion.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+NSQuoteAlternative[] quoteAlternatives = thing.GetQuoteAlternatives();
+```
+
+## GetQuoteId()
+
+```crmscript
+Integer GetQuoteId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Foreign key to CRM quote (the conceptual parent). Owning Quote of this Quote Version.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer quoteId = thing.GetQuoteId();
+```
+
+## GetQuoteVersionId()
+
+```crmscript
+Integer GetQuoteVersionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer quoteVersionId = thing.GetQuoteVersionId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank/Version number, starts at 1
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer rank = thing.GetRank();
+```
+
+## GetReason()
+
+```crmscript
+String GetReason()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If there was a problem, this field contains a localized explanation of the problem and possible steps to fix it that the user can be shown.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String reason = thing.GetReason();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetRegisteredAssociateId()
+
+```crmscript
+Integer GetRegisteredAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Registered by whom.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer registeredAssociateId = thing.GetRegisteredAssociateId();
+```
+
+## GetSentDate()
+
+```crmscript
+DateTime GetSentDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date the version was sent to the customer.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime sentDate = thing.GetSentDate();
+```
+
+## GetState()
+
+```crmscript
+Integer GetState()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Current state of this quote version. See &lt;xref href=\"CRMScript.NetServer.QuoteVersionState\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer state = thing.GetState();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If there was a problem with for instance calculation, this field is set to warning or error. See &lt;xref href=\"CRMScript.NetServer.QuoteStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer status = thing.GetStatus();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedAssociateId()
+
+```crmscript
+Integer GetUpdatedAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Last updated by whom.
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer updatedAssociateId = thing.GetUpdatedAssociateId();
+```
+
+## SetApprovedBy(Integer)
+
+```crmscript
+Void SetApprovedBy(Integer approvedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer approvedBy;
+thing.SetApprovedBy(approvedBy);
+```
+
+## SetApprovedRegisteredBy(Integer)
+
+```crmscript
+Void SetApprovedRegisteredBy(Integer approvedRegisteredBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer approvedRegisteredBy;
+thing.SetApprovedRegisteredBy(approvedRegisteredBy);
+```
+
+## SetApprovedRegisteredDate(DateTime)
+
+```crmscript
+Void SetApprovedRegisteredDate(DateTime approvedRegisteredDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime approvedRegisteredDate;
+thing.SetApprovedRegisteredDate(approvedRegisteredDate);
+```
+
+## SetApprovedText(String)
+
+```crmscript
+Void SetApprovedText(String approvedText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String approvedText;
+thing.SetApprovedText(approvedText);
+```
+
+## SetArchivedState(Integer)
+
+```crmscript
+Void SetArchivedState(Integer archivedState)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer archivedState;
+thing.SetArchivedState(archivedState);
+```
+
+## SetDeliveryCountryId(Integer)
+
+```crmscript
+Void SetDeliveryCountryId(Integer deliveryCountryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer deliveryCountryId;
+thing.SetDeliveryCountryId(deliveryCountryId);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetERPDeliveryTermsKey(String)
+
+```crmscript
+Void SetERPDeliveryTermsKey(String eRPDeliveryTermsKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPDeliveryTermsKey;
+thing.SetERPDeliveryTermsKey(eRPDeliveryTermsKey);
+```
+
+## SetERPDeliveryTypeKey(String)
+
+```crmscript
+Void SetERPDeliveryTypeKey(String eRPDeliveryTypeKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPDeliveryTypeKey;
+thing.SetERPDeliveryTypeKey(eRPDeliveryTypeKey);
+```
+
+## SetERPPaymentTermsKey(String)
+
+```crmscript
+Void SetERPPaymentTermsKey(String eRPPaymentTermsKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPPaymentTermsKey;
+thing.SetERPPaymentTermsKey(eRPPaymentTermsKey);
+```
+
+## SetERPPaymentTypeKey(String)
+
+```crmscript
+Void SetERPPaymentTypeKey(String eRPPaymentTypeKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPPaymentTypeKey;
+thing.SetERPPaymentTypeKey(eRPPaymentTypeKey);
+```
+
+## SetERPQuoteVersionKey(String)
+
+```crmscript
+Void SetERPQuoteVersionKey(String eRPQuoteVersionKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String eRPQuoteVersionKey;
+thing.SetERPQuoteVersionKey(eRPQuoteVersionKey);
+```
+
+## SetExpirationDate(DateTime)
+
+```crmscript
+Void SetExpirationDate(DateTime expirationDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime expirationDate;
+thing.SetExpirationDate(expirationDate);
+```
+
+## SetExtraField1(String)
+
+```crmscript
+Void SetExtraField1(String extraField1)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField1;
+thing.SetExtraField1(extraField1);
+```
+
+## SetExtraField2(String)
+
+```crmscript
+Void SetExtraField2(String extraField2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField2;
+thing.SetExtraField2(extraField2);
+```
+
+## SetExtraField3(String)
+
+```crmscript
+Void SetExtraField3(String extraField3)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField3;
+thing.SetExtraField3(extraField3);
+```
+
+## SetExtraField4(String)
+
+```crmscript
+Void SetExtraField4(String extraField4)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField4;
+thing.SetExtraField4(extraField4);
+```
+
+## SetExtraField5(String)
+
+```crmscript
+Void SetExtraField5(String extraField5)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String extraField5;
+thing.SetExtraField5(extraField5);
+```
+
+## SetFollowupId(Integer)
+
+```crmscript
+Void SetFollowupId(Integer followupId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer followupId;
+thing.SetFollowupId(followupId);
+```
+
+## SetHasOwnDeliveryAddress(Bool)
+
+```crmscript
+Void SetHasOwnDeliveryAddress(Bool hasOwnDeliveryAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Bool hasOwnDeliveryAddress;
+thing.SetHasOwnDeliveryAddress(hasOwnDeliveryAddress);
+```
+
+## SetHasOwnInvoiceAddress(Bool)
+
+```crmscript
+Void SetHasOwnInvoiceAddress(Bool hasOwnInvoiceAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Bool hasOwnInvoiceAddress;
+thing.SetHasOwnInvoiceAddress(hasOwnInvoiceAddress);
+```
+
+## SetInvoiceCountryId(Integer)
+
+```crmscript
+Void SetInvoiceCountryId(Integer invoiceCountryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer invoiceCountryId;
+thing.SetInvoiceCountryId(invoiceCountryId);
+```
+
+## SetLastRecalculated(DateTime)
+
+```crmscript
+Void SetLastRecalculated(DateTime lastRecalculated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime lastRecalculated;
+thing.SetLastRecalculated(lastRecalculated);
+```
+
+## SetLikelyQuoteAlternativeId(Integer)
+
+```crmscript
+Void SetLikelyQuoteAlternativeId(Integer likelyQuoteAlternativeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer likelyQuoteAlternativeId;
+thing.SetLikelyQuoteAlternativeId(likelyQuoteAlternativeId);
+```
+
+## SetNumber(String)
+
+```crmscript
+Void SetNumber(String number)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String number;
+thing.SetNumber(number);
+```
+
+## SetQuoteAlternatives(NSQuoteAlternative[])
+
+```crmscript
+Void SetQuoteAlternatives(NSQuoteAlternative[] quoteAlternatives)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+NSQuoteAlternative[] quoteAlternatives;
+thing.SetQuoteAlternatives(quoteAlternatives);
+```
+
+## SetQuoteId(Integer)
+
+```crmscript
+Void SetQuoteId(Integer quoteId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer quoteId;
+thing.SetQuoteId(quoteId);
+```
+
+## SetQuoteVersionId(Integer)
+
+```crmscript
+Void SetQuoteVersionId(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer quoteVersionId;
+thing.SetQuoteVersionId(quoteVersionId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetReason(String)
+
+```crmscript
+Void SetReason(String reason)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+String reason;
+thing.SetReason(reason);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetRegisteredAssociateId(Integer)
+
+```crmscript
+Void SetRegisteredAssociateId(Integer registeredAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer registeredAssociateId;
+thing.SetRegisteredAssociateId(registeredAssociateId);
+```
+
+## SetSentDate(DateTime)
+
+```crmscript
+Void SetSentDate(DateTime sentDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime sentDate;
+thing.SetSentDate(sentDate);
+```
+
+## SetState(Integer)
+
+```crmscript
+Void SetState(Integer state)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer state;
+thing.SetState(state);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedAssociateId(Integer)
+
+```crmscript
+Void SetUpdatedAssociateId(Integer updatedAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersion thing;
+Integer updatedAssociateId;
+thing.SetUpdatedAssociateId(updatedAssociateId);
+```

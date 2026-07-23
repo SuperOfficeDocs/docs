@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nsquoteversionbuttonstate
+title: NSQuoteVersionButtonState
+description: "Information about possible button actions for the quote version dialog."
+keywords: CRMScript, NSQuoteVersionButtonState, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteVersionButtonState
+
+Information about possible button actions for the quote version dialog.
+
+## Constructors
+
+### NSQuoteVersionButtonState()
+
+```crmscript
+NSQuoteVersionButtonState
+```
+
+Initializes a new instance of the NSQuoteVersionButtonState class.
+
+## Methods
+
+## GetAction()
+
+```crmscript
+Integer GetAction()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Action for the button. See &lt;xref href=\"CRMScript.NetServer.QuoteVersionButtonAction\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+Integer action = thing.GetAction();
+```
+
+## GetDisplayText()
+
+```crmscript
+String GetDisplayText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text to be displayed on the button.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+String displayText = thing.GetDisplayText();
+```
+
+## GetEnabled()
+
+```crmscript
+Bool GetEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicate if the button should be enabled or disabled.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+Bool enabled = thing.GetEnabled();
+```
+
+## GetImageHint()
+
+```crmscript
+String GetImageHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Image to be shown.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+String imageHint = thing.GetImageHint();
+```
+
+## GetTooltipText()
+
+```crmscript
+String GetTooltipText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip for the button.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+String tooltipText = thing.GetTooltipText();
+```
+
+## SetAction(Integer)
+
+```crmscript
+Void SetAction(Integer action)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+Integer action;
+thing.SetAction(action);
+```
+
+## SetDisplayText(String)
+
+```crmscript
+Void SetDisplayText(String displayText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+String displayText;
+thing.SetDisplayText(displayText);
+```
+
+## SetEnabled(Bool)
+
+```crmscript
+Void SetEnabled(Bool enabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+Bool enabled;
+thing.SetEnabled(enabled);
+```
+
+## SetImageHint(String)
+
+```crmscript
+Void SetImageHint(String imageHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+String imageHint;
+thing.SetImageHint(imageHint);
+```
+
+## SetTooltipText(String)
+
+```crmscript
+Void SetTooltipText(String tooltipText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionButtonState thing;
+String tooltipText;
+thing.SetTooltipText(tooltipText);
+```

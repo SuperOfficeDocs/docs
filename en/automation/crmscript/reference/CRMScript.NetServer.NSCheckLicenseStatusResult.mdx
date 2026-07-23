@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nschecklicensestatusresult
+title: NSCheckLicenseStatusResult
+description: "Result of NSCheckLicenseStatus."
+keywords: CRMScript, NSCheckLicenseStatusResult, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCheckLicenseStatusResult
+
+Result of NSCheckLicenseStatus.
+
+## Constructors
+
+### NSCheckLicenseStatusResult()
+
+```crmscript
+NSCheckLicenseStatusResult
+```
+
+Initializes a new instance of the NSCheckLicenseStatusResult class.
+
+## Methods
+
+## GetLicenseStatus()
+
+```crmscript
+Integer GetLicenseStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.LicenseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSCheckLicenseStatusResult thing;
+Integer licenseStatus = thing.GetLicenseStatus();
+```
+
+## GetMessage()
+
+```crmscript
+String GetMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Message to display in SOADMIN if LinkType=90.
+
+**Example:**
+
+```crmscript
+NSCheckLicenseStatusResult thing;
+String message = thing.GetMessage();
+```
+
+## GetUrl()
+
+```crmscript
+String GetUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URL to show to the user. This is relevant when LinkType is 60.
+
+**Example:**
+
+```crmscript
+NSCheckLicenseStatusResult thing;
+String url = thing.GetUrl();
+```
+
+## SetLicenseStatus(Integer)
+
+```crmscript
+Void SetLicenseStatus(Integer licenseStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCheckLicenseStatusResult thing;
+Integer licenseStatus;
+thing.SetLicenseStatus(licenseStatus);
+```
+
+## SetMessage(String)
+
+```crmscript
+Void SetMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCheckLicenseStatusResult thing;
+String message;
+thing.SetMessage(message);
+```
+
+## SetUrl(String)
+
+```crmscript
+Void SetUrl(String url)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCheckLicenseStatusResult thing;
+String url;
+thing.SetUrl(url);
+```

@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nsimportline
+title: NSImportLine
+description: "Used to import data into the system. Representing one entity that will be imported."
+keywords: CRMScript, NSImportLine, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSImportLine
+
+Used to import data into the system. Representing one entity that will be imported.
+
+## Constructors
+
+### NSImportLine()
+
+```crmscript
+NSImportLine
+```
+
+Initializes a new instance of the NSImportLine class.
+
+## Methods
+
+## GetExternalKey()
+
+```crmscript
+String GetExternalKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional external primary key for the row.
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+String externalKey = thing.GetExternalKey();
+```
+
+## GetOperation()
+
+```crmscript
+Integer GetOperation()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Which operation will be used? This is a read-only property. See &lt;xref href=\"CRMScript.NetServer.ImportAction\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+Integer operation = thing.GetOperation();
+```
+
+## GetSelected()
+
+```crmscript
+Bool GetSelected()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the entity shall be imported, false if the entity shall be ignored.
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+Bool selected = thing.GetSelected();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Which entity type will be created? This is a read-only property. See &lt;xref href=\"CRMScript.NetServer.ImportEntityType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+Integer type = thing.GetType();
+```
+
+## GetValues()
+
+```crmscript
+String[] GetValues()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - An array of the values that will be imported on the entity.
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+String[] values = thing.GetValues();
+```
+
+## SetExternalKey(String)
+
+```crmscript
+Void SetExternalKey(String externalKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+String externalKey;
+thing.SetExternalKey(externalKey);
+```
+
+## SetOperation(Integer)
+
+```crmscript
+Void SetOperation(Integer operation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+Integer operation;
+thing.SetOperation(operation);
+```
+
+## SetSelected(Bool)
+
+```crmscript
+Void SetSelected(Bool selected)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+Bool selected;
+thing.SetSelected(selected);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetValues(String[])
+
+```crmscript
+Void SetValues(String[] values)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportLine thing;
+String[] values;
+thing.SetValues(values);
+```

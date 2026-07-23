@@ -1,0 +1,494 @@
+﻿---
+uid: crmscript.netserver.nsquoteconnection
+title: NSQuoteConnection
+description: "Information about a connection to the ERP system."
+keywords: CRMScript, NSQuoteConnection, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteConnection
+
+Information about a connection to the ERP system.
+
+## Constructors
+
+### NSQuoteConnection()
+
+```crmscript
+NSQuoteConnection
+```
+
+Initializes a new instance of the NSQuoteConnection class.
+
+## Methods
+
+## GetAllAccess()
+
+```crmscript
+Bool GetAllAccess()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this connection accessible to everyone?  If not, then the QuoteConnectionAccess table tells us who can access it.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Bool allAccess = thing.GetAllAccess();
+```
+
+## GetAssociateAccessIds()
+
+```crmscript
+Integer[] GetAssociateAccessIds()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Array of IDs containing associates that will have access to this connection.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer[] associateAccessIds = thing.GetAssociateAccessIds();
+```
+
+## GetConnectorName()
+
+```crmscript
+String GetConnectorName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Programmatic name of the Connector plugin that implements this kind of connection.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String connectorName = thing.GetConnectorName();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If set, then this is a row that has been 'deleted'; we do not physically delete rows to avoid disaster.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDisplayDescription()
+
+```crmscript
+String GetDisplayDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip/description shown to user; multi-language support. Any other info available that would make an uncertain user chose the right connector. Typically, used for tooltip.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String displayDescription = thing.GetDisplayDescription();
+```
+
+## GetDisplayName()
+
+```crmscript
+String GetDisplayName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Connection name shown to user; multi-language support. The name of the connector to display in a list so that the users can choose between them. Typically the name of the client, with maybe the ERP system in parenthesis.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String displayName = thing.GetDisplayName();
+```
+
+## GetErpConnectionId()
+
+```crmscript
+Integer GetErpConnectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ERP Connection that this Quote connection is an extension of.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer erpConnectionId = thing.GetErpConnectionId();
+```
+
+## GetERPName()
+
+```crmscript
+String GetERPName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the ERP system (programmatic).
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String eRPName = thing.GetERPName();
+```
+
+## GetExtraData()
+
+```crmscript
+String GetExtraData()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional extra data, in XML format, for configuring the connector. Connector-specific!
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String extraData = thing.GetExtraData();
+```
+
+## GetInitializeResponse()
+
+```crmscript
+NSPluginResponse GetInitializeResponse()
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse) - Status and Error message when the system called the connector Initialize method. Null if the connector has not been initialized yet.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+NSPluginResponse initializeResponse = thing.GetInitializeResponse();
+```
+
+## GetIsAvailable()
+
+```crmscript
+Bool GetIsAvailable()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Whether or not the specified connection is available. Typically, without network access the availability is false.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Bool isAvailable = thing.GetIsAvailable();
+```
+
+## GetPriceLists()
+
+```crmscript
+NSPriceList[] GetPriceLists()
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - The PriceLists that this connection offers.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+NSPriceList[] priceLists = thing.GetPriceLists();
+```
+
+## GetQuoteConnectionId()
+
+```crmscript
+Integer GetQuoteConnectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer quoteConnectionId = thing.GetQuoteConnectionId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer rank = thing.GetRank();
+```
+
+## GetUserGroupAccessIds()
+
+```crmscript
+Integer[] GetUserGroupAccessIds()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Array of ids containing user groups that will have access to this connection.
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer[] userGroupAccessIds = thing.GetUserGroupAccessIds();
+```
+
+## SetAllAccess(Bool)
+
+```crmscript
+Void SetAllAccess(Bool allAccess)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Bool allAccess;
+thing.SetAllAccess(allAccess);
+```
+
+## SetAssociateAccessIds(Integer[])
+
+```crmscript
+Void SetAssociateAccessIds(Integer[] associateAccessIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer[] associateAccessIds;
+thing.SetAssociateAccessIds(associateAccessIds);
+```
+
+## SetConnectorName(String)
+
+```crmscript
+Void SetConnectorName(String connectorName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String connectorName;
+thing.SetConnectorName(connectorName);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDisplayDescription(String)
+
+```crmscript
+Void SetDisplayDescription(String displayDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String displayDescription;
+thing.SetDisplayDescription(displayDescription);
+```
+
+## SetDisplayName(String)
+
+```crmscript
+Void SetDisplayName(String displayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String displayName;
+thing.SetDisplayName(displayName);
+```
+
+## SetErpConnectionId(Integer)
+
+```crmscript
+Void SetErpConnectionId(Integer erpConnectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer erpConnectionId;
+thing.SetErpConnectionId(erpConnectionId);
+```
+
+## SetERPName(String)
+
+```crmscript
+Void SetERPName(String eRPName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String eRPName;
+thing.SetERPName(eRPName);
+```
+
+## SetExtraData(String)
+
+```crmscript
+Void SetExtraData(String extraData)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+String extraData;
+thing.SetExtraData(extraData);
+```
+
+## SetInitializeResponse(NSPluginResponse)
+
+```crmscript
+Void SetInitializeResponse(NSPluginResponse initializeResponse)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+NSPluginResponse initializeResponse;
+thing.SetInitializeResponse(initializeResponse);
+```
+
+## SetIsAvailable(Bool)
+
+Whether or not the specified connection is available. Typically, without network access the availability is false.
+
+```crmscript
+Void SetIsAvailable(Bool isAvailable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Bool isAvailable;
+thing.SetIsAvailable(isAvailable);
+```
+
+## SetPriceLists(NSPriceList[])
+
+```crmscript
+Void SetPriceLists(NSPriceList[] priceLists)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+NSPriceList[] priceLists;
+thing.SetPriceLists(priceLists);
+```
+
+## SetQuoteConnectionId(Integer)
+
+```crmscript
+Void SetQuoteConnectionId(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer quoteConnectionId;
+thing.SetQuoteConnectionId(quoteConnectionId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetUserGroupAccessIds(Integer[])
+
+```crmscript
+Void SetUserGroupAccessIds(Integer[] userGroupAccessIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteConnection thing;
+Integer[] userGroupAccessIds;
+thing.SetUserGroupAccessIds(userGroupAccessIds);
+```

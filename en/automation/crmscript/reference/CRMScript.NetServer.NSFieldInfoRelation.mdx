@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nsfieldinforelation
+title: NSFieldInfoRelation
+description: "Relation to other table database field."
+keywords: CRMScript, NSFieldInfoRelation, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoRelation
+
+Relation to other table database field.
+
+## Constructors
+
+### NSFieldInfoRelation()
+
+```crmscript
+NSFieldInfoRelation
+```
+
+Initializes a new instance of the NSFieldInfoRelation class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Integer GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default record ID.
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+Integer defaultValue = thing.GetDefaultValue();
+```
+
+## GetMdoListName()
+
+```crmscript
+String GetMdoListName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - MDO list name used to populate this list. (Read-only, derived from TargetTable).
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+String mdoListName = thing.GetMdoListName();
+```
+
+## GetTargetLabel()
+
+```crmscript
+String GetTargetLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display name on target entity.
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+String targetLabel = thing.GetTargetLabel();
+```
+
+## GetTargetTable()
+
+```crmscript
+String GetTargetTable()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of target table 'contact', 'y_equipment'
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+String targetTable = thing.GetTargetTable();
+```
+
+## GetUseDropDown()
+
+```crmscript
+Bool GetUseDropDown()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Show as dropdown list on target?
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+Bool useDropDown = thing.GetUseDropDown();
+```
+
+## SetDefaultValue(Integer)
+
+```crmscript
+Void SetDefaultValue(Integer defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+Integer defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetMdoListName(String)
+
+```crmscript
+Void SetMdoListName(String mdoListName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+String mdoListName;
+thing.SetMdoListName(mdoListName);
+```
+
+## SetTargetLabel(String)
+
+```crmscript
+Void SetTargetLabel(String targetLabel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+String targetLabel;
+thing.SetTargetLabel(targetLabel);
+```
+
+## SetTargetTable(String)
+
+```crmscript
+Void SetTargetTable(String targetTable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+String targetTable;
+thing.SetTargetTable(targetTable);
+```
+
+## SetUseDropDown(Bool)
+
+```crmscript
+Void SetUseDropDown(Bool useDropDown)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoRelation thing;
+Bool useDropDown;
+thing.SetUseDropDown(useDropDown);
+```

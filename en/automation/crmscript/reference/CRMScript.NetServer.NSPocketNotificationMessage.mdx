@@ -1,0 +1,337 @@
+﻿---
+uid: crmscript.netserver.nspocketnotificationmessage
+title: NSPocketNotificationMessage
+description: "Describes behavior and content for a push notification message."
+keywords: CRMScript, NSPocketNotificationMessage, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPocketNotificationMessage
+
+Describes behavior and content for a push notification message.
+
+## Constructors
+
+### NSPocketNotificationMessage()
+
+```crmscript
+NSPocketNotificationMessage
+```
+
+Initializes a new instance of the NSPocketNotificationMessage class.
+
+## Methods
+
+## GetDate()
+
+```crmscript
+DateTime GetDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - If the message is about some event happening at a specific date and time.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+DateTime date = thing.GetDate();
+```
+
+## GetDuration()
+
+```crmscript
+TimeSpan GetDuration()
+```
+
+**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan) - Specify duration of the event.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+TimeSpan duration = thing.GetDuration();
+```
+
+## GetExtraValues()
+
+```crmscript
+Map GetExtraValues()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Additional key/value properties to include in the message.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Map extraValues = thing.GetExtraValues();
+```
+
+## GetMessage()
+
+```crmscript
+String GetMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The notification message body.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+String message = thing.GetMessage();
+```
+
+## GetRecordId()
+
+```crmscript
+Integer GetRecordId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If the message is about some specific database record, this could be its primary key.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Integer recordId = thing.GetRecordId();
+```
+
+## GetSilent()
+
+```crmscript
+Bool GetSilent()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates wether or not the message will vibrate/play a sound when delivered.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Bool silent = thing.GetSilent();
+```
+
+## GetTimeToLive()
+
+```crmscript
+Integer GetTimeToLive()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Specifies how many minutes the message should be valid.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Integer timeToLive = thing.GetTimeToLive();
+```
+
+## GetTitle()
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Title for the notification.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+String title = thing.GetTitle();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of notification this is. See &lt;xref href=\"CRMScript.NetServer.NotificationMessageType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Integer type = thing.GetType();
+```
+
+## GetUrl()
+
+```crmscript
+String GetUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A URL associated with the notification that will be handled by Pocket.
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+String url = thing.GetUrl();
+```
+
+## SetDate(DateTime)
+
+```crmscript
+Void SetDate(DateTime date)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+DateTime date;
+thing.SetDate(date);
+```
+
+## SetDuration(TimeSpan)
+
+```crmscript
+Void SetDuration(TimeSpan duration)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+TimeSpan duration;
+thing.SetDuration(duration);
+```
+
+## SetExtraValues(Map)
+
+```crmscript
+Void SetExtraValues(Map extraValues)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Map extraValues;
+thing.SetExtraValues(extraValues);
+```
+
+## SetMessage(String)
+
+```crmscript
+Void SetMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+String message;
+thing.SetMessage(message);
+```
+
+## SetRecordId(Integer)
+
+```crmscript
+Void SetRecordId(Integer recordId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Integer recordId;
+thing.SetRecordId(recordId);
+```
+
+## SetSilent(Bool)
+
+```crmscript
+Void SetSilent(Bool silent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Bool silent;
+thing.SetSilent(silent);
+```
+
+## SetTimeToLive(Integer)
+
+```crmscript
+Void SetTimeToLive(Integer timeToLive)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Integer timeToLive;
+thing.SetTimeToLive(timeToLive);
+```
+
+## SetTitle(String)
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+String title;
+thing.SetTitle(title);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetUrl(String)
+
+```crmscript
+Void SetUrl(String url)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketNotificationMessage thing;
+String url;
+thing.SetUrl(url);
+```

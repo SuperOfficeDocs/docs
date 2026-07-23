@@ -1,0 +1,430 @@
+﻿---
+uid: crmscript.netserver.nsmodulelicenselink
+title: NSModuleLicenseLink
+description: "Carrier object for ModuleLicenseLink."
+keywords: CRMScript, NSModuleLicenseLink, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSModuleLicenseLink
+
+Carrier object for ModuleLicenseLink.
+
+## Constructors
+
+### NSModuleLicenseLink()
+
+```crmscript
+NSModuleLicenseLink
+```
+
+Initializes a new instance of the NSModuleLicenseLink class.
+
+## Methods
+
+## GetAssigned()
+
+```crmscript
+Bool GetAssigned()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the module license assigned to a given user.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool assigned = thing.GetAssigned();
+```
+
+## GetCanAssign()
+
+```crmscript
+Bool GetCanAssign()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can a specific user assign this module license.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool canAssign = thing.GetCanAssign();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The description of the module license.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String description = thing.GetDescription();
+```
+
+## GetFree()
+
+```crmscript
+Integer GetFree()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of licenses that are free to be assigned.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer free = thing.GetFree();
+```
+
+## GetInUse()
+
+```crmscript
+Integer GetInUse()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total number of licenses (of a given license module) that are occupied.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer inUse = thing.GetInUse();
+```
+
+## GetIsHidden()
+
+```crmscript
+Bool GetIsHidden()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is hidden from Ui.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool isHidden = thing.GetIsHidden();
+```
+
+## GetModuleLicenseId()
+
+```crmscript
+Integer GetModuleLicenseId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The identifier of the module license.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer moduleLicenseId = thing.GetModuleLicenseId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the module license.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String name = thing.GetName();
+```
+
+## GetPrerequisiteModuleName()
+
+```crmscript
+String GetPrerequisiteModuleName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String prerequisiteModuleName = thing.GetPrerequisiteModuleName();
+```
+
+## GetSortOrder()
+
+```crmscript
+Integer GetSortOrder()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer sortOrder = thing.GetSortOrder();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip to be shown in some gui with details on the module license.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetTotal()
+
+```crmscript
+Integer GetTotal()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total number of module licenses. In other words the number of free license added to the number of licenses in use equals the total number of licenses.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer total = thing.GetTotal();
+```
+
+## GetUnrestricted()
+
+```crmscript
+Bool GetUnrestricted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this module license restricted or unrestricted.
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool unrestricted = thing.GetUnrestricted();
+```
+
+## SetAssigned(Bool)
+
+```crmscript
+Void SetAssigned(Bool assigned)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool assigned;
+thing.SetAssigned(assigned);
+```
+
+## SetCanAssign(Bool)
+
+```crmscript
+Void SetCanAssign(Bool canAssign)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool canAssign;
+thing.SetCanAssign(canAssign);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetFree(Integer)
+
+```crmscript
+Void SetFree(Integer free)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer free;
+thing.SetFree(free);
+```
+
+## SetInUse(Integer)
+
+```crmscript
+Void SetInUse(Integer inUse)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer inUse;
+thing.SetInUse(inUse);
+```
+
+## SetIsHidden(Bool)
+
+```crmscript
+Void SetIsHidden(Bool isHidden)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool isHidden;
+thing.SetIsHidden(isHidden);
+```
+
+## SetModuleLicenseId(Integer)
+
+```crmscript
+Void SetModuleLicenseId(Integer moduleLicenseId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer moduleLicenseId;
+thing.SetModuleLicenseId(moduleLicenseId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPrerequisiteModuleName(String)
+
+```crmscript
+Void SetPrerequisiteModuleName(String prerequisiteModuleName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String prerequisiteModuleName;
+thing.SetPrerequisiteModuleName(prerequisiteModuleName);
+```
+
+## SetSortOrder(Integer)
+
+```crmscript
+Void SetSortOrder(Integer sortOrder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer sortOrder;
+thing.SetSortOrder(sortOrder);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetTotal(Integer)
+
+```crmscript
+Void SetTotal(Integer total)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Integer total;
+thing.SetTotal(total);
+```
+
+## SetUnrestricted(Bool)
+
+```crmscript
+Void SetUnrestricted(Bool unrestricted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSModuleLicenseLink thing;
+Bool unrestricted;
+thing.SetUnrestricted(unrestricted);
+```

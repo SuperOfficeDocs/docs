@@ -1,0 +1,107 @@
+﻿---
+uid: crmscript.native.stringmatrix
+title: StringMatrix
+description: "Two-dimensional string array."
+keywords: CRMScript, StringMatrix, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# StringMatrix
+
+Two-dimensional string array.
+
+## Constructors
+
+### StringMatrix()
+
+```crmscript
+StringMatrix
+```
+
+Initializes a new instance of the StringMatrix class.
+
+## Methods
+
+## addCell(String)
+
+Adds a cell to the current row.
+
+```crmscript
+Void addCell(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addRow()
+
+Adds a row to the matrix.
+
+```crmscript
+Void addRow()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## clear()
+
+Clears the whole matrix.
+
+```crmscript
+Void clear()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## deleteRow(Integer)
+
+Deletes a row from the matrix.
+
+```crmscript
+Void deleteRow(Integer row)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getCell(Integer,Integer)
+
+Returns the value for a given cell.
+
+```crmscript
+String getCell(Integer row, Integer column)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the cell at the specified position.
+
+## getNumColumns(Integer)
+
+Returns number of columns in a given row
+
+```crmscript
+Integer getNumColumns(Integer row)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The numbers of columns (cells) in the given row.
+
+## getNumRows()
+
+Returns the number of rows in the matrix.
+
+```crmscript
+Integer getNumRows()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of rows in the matrix.
+
+## setCell(Integer,Integer,String)
+
+Sets the value of the specified cell.
+
+```crmscript
+Vodi setCell(Integer row, Integer column, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

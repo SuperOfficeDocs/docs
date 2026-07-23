@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfotimespan
+title: NSFieldInfoTimeSpan
+description: "Timespan custom database field. Number of minutes, represented as days/hours/minutes."
+keywords: CRMScript, NSFieldInfoTimeSpan, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoTimeSpan
+
+Timespan custom database field. Number of minutes, represented as days/hours/minutes.
+
+## Constructors
+
+### NSFieldInfoTimeSpan()
+
+```crmscript
+NSFieldInfoTimeSpan
+```
+
+Initializes a new instance of the NSFieldInfoTimeSpan class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Integer GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default TimeSpan value, number of minutes.
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Integer defaultValue = thing.GetDefaultValue();
+```
+
+## GetUseDays()
+
+```crmscript
+Bool GetUseDays()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should the time-span be counted in days?
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Bool useDays = thing.GetUseDays();
+```
+
+## GetUseHours()
+
+```crmscript
+Bool GetUseHours()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should the time-span be counted in hours?
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Bool useHours = thing.GetUseHours();
+```
+
+## GetUseMinutes()
+
+```crmscript
+Bool GetUseMinutes()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should the time-span be counted in minutes?
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Bool useMinutes = thing.GetUseMinutes();
+```
+
+## SetDefaultValue(Integer)
+
+```crmscript
+Void SetDefaultValue(Integer defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Integer defaultValue;
+thing.SetDefaultValue(defaultValue);
+```
+
+## SetUseDays(Bool)
+
+```crmscript
+Void SetUseDays(Bool useDays)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Bool useDays;
+thing.SetUseDays(useDays);
+```
+
+## SetUseHours(Bool)
+
+```crmscript
+Void SetUseHours(Bool useHours)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Bool useHours;
+thing.SetUseHours(useHours);
+```
+
+## SetUseMinutes(Bool)
+
+```crmscript
+Void SetUseMinutes(Bool useMinutes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoTimeSpan thing;
+Bool useMinutes;
+thing.SetUseMinutes(useMinutes);
+```

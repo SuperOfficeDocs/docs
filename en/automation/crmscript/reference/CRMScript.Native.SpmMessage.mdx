@@ -1,0 +1,112 @@
+﻿---
+uid: crmscript.native.spmmessage
+title: SpmMessage
+description: "Represent a message in the eMarketeer module. You can create or modify such objects, which later is used by the SpmShipment class to send such messages."
+keywords: CRMScript, SpmMessage, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# SpmMessage
+
+Represent a message in the eMarketeer module. You can create or modify such objects, which later is used by the SpmShipment class to send such messages.
+
+## Constructors
+
+### SpmMessage()
+
+```crmscript
+SpmMessage
+```
+
+Initializes a new instance of the SpmMessage class.
+
+## Methods
+
+## save()
+
+Saves an SpmMessage object. If this is a new SpmMessage object (no ID set), a new one will be created.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the SpmMessage object.
+
+## setBody(String)
+
+Sets the body version of the SpmMessage object (will correspond to the text/plain version in the outgoing email).
+
+```crmscript
+Void setBody(String body)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setBodyHtml(String)
+
+Sets the HTML body version of the SpmMessage object (will correspond to the text/html version in the outgoing email).
+
+```crmscript
+Void setBodyHtml(String htmlBody)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setDescription(String)
+
+Sets the descriptive text of the SpmMessage.
+
+```crmscript
+Void setDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+It is not used in the outgoing email, but will be visible when listed in Service.
+</Note>
+
+## setFolderId(Integer)
+
+Sets the folder which this SpmMessage will be stored in.
+
+```crmscript
+Void setFolderId(Integer folderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If you specify a folder ID that does not exist, the message will not be visible through Service.
+</Note>
+
+## setHeader(String)
+
+If you need to include additional email headers, they should be added here. You have to format these yourself.
+
+```crmscript
+Void setHeader(String header)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Header1: Value1
+Header2: Value2
+```
+
+## setSubject(String)
+
+Sets the subject of the SpmMessage object. Corresponds to the subject in the outgoing email.
+
+```crmscript
+Void setSubject(String subject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

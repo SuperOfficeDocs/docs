@@ -1,0 +1,271 @@
+﻿---
+uid: crmscript.netserver.nsmdoagent
+title: NSMDOAgent
+description: "MDO Lists, reading, searching, and item lookup."
+keywords: CRMScript, NSMDOAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMDOAgent
+
+MDO Lists, reading, searching, and item lookup.
+
+## Constructors
+
+### NSMDOAgent()
+
+```crmscript
+NSMDOAgent
+```
+
+MDO Lists, reading, searching, and item lookup.
+
+## Methods
+
+## GetList(String,Bool,String,Bool)
+
+Gets an MDO list.
+
+```crmscript
+NSMDOListItem[] GetList(String name, Bool forceFlatList, String additionalInfo, Bool onlyHistory)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+Bool forceFlatList;
+String additionalInfo;
+Bool onlyHistory;
+NSMDOListItem[] res = agent.GetList(name, forceFlatList, additionalInfo, onlyHistory);
+```
+
+## GetListIdByListName(String)
+
+Retrieves the UdListDefinition ID of a list, by its name.
+
+```crmscript
+Integer GetListIdByListName(String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+Not all lists have such an ID, but those that are based on tables do (the list name is then the same as the table name)
+</Note>
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+Integer res = agent.GetListIdByListName(name);
+```
+
+## GetListItem(String,Integer)
+
+Returns a single list item
+
+```crmscript
+NSMDOListItem GetListItem(String listName, Integer id)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String listName;
+Integer id;
+NSMDOListItem res = agent.GetListItem(listName, id);
+```
+
+## GetListNames()
+
+Returns a list of all MDO List names.
+
+```crmscript
+String[] GetListNames()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+<Note>
+These names can also be used with the Archive agent as ProviderNames.
+</Note>
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String[] res = agent.GetListNames();
+```
+
+## GetListWithHistory(String,Bool,String,Integer[],Bool)
+
+Get an MDO list with own history list.
+
+```crmscript
+NSMDOListItem[] GetListWithHistory(String name, Bool forceFlatList, String additionalInfo, Integer[] historyItems, Bool onlyHistory)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+Bool forceFlatList;
+String additionalInfo;
+Integer[] historyItems;
+Bool onlyHistory;
+NSMDOListItem[] res = agent.GetListWithHistory(name, forceFlatList, additionalInfo, historyItems, onlyHistory);
+```
+
+## GetListWithRestriction(String,String,String)
+
+Gets an MDO list with restrictions.
+
+```crmscript
+NSMDOListItem[] GetListWithRestriction(String name, String additionalInfo, String searchValue)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+String additionalInfo;
+String searchValue;
+NSMDOListItem[] res = agent.GetListWithRestriction(name, additionalInfo, searchValue);
+```
+
+## GetSelectableList(String,Bool,String,Bool)
+
+Gets a Selectable MDO list.
+
+```crmscript
+NSSelectableMDOListItem[] GetSelectableList(String name, Bool forceFlatList, String additionalInfo, Bool onlyHistory)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+Bool forceFlatList;
+String additionalInfo;
+Bool onlyHistory;
+NSSelectableMDOListItem[] res = agent.GetSelectableList(name, forceFlatList, additionalInfo, onlyHistory);
+```
+
+## GetSelectableListWithHistory(String,Bool,String,Integer[],Bool)
+
+Gets a Selectable MDO list with own history list.
+
+```crmscript
+NSSelectableMDOListItem[] GetSelectableListWithHistory(String name, Bool forceFlatList, String additionalInfo, Integer[] historyItems, Bool onlyHistory)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+Bool forceFlatList;
+String additionalInfo;
+Integer[] historyItems;
+Bool onlyHistory;
+NSSelectableMDOListItem[] res = agent.GetSelectableListWithHistory(name, forceFlatList, additionalInfo, historyItems, onlyHistory);
+```
+
+## GetSelectableListWithRestriction(String,String,String)
+
+Gets a Selectable MDO list with restrictions.
+
+```crmscript
+NSSelectableMDOListItem[] GetSelectableListWithRestriction(String name, String additionalInfo, String searchValue)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+String additionalInfo;
+String searchValue;
+NSSelectableMDOListItem[] res = agent.GetSelectableListWithRestriction(name, additionalInfo, searchValue);
+```
+
+## GetSelectableSimpleList(String)
+
+Returns a flat Selectable MDO List.
+
+```crmscript
+NSSelectableMDOListItem[] GetSelectableSimpleList(String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+NSSelectableMDOListItem[] res = agent.GetSelectableSimpleList(name);
+```
+
+## GetSimpleList(String)
+
+Returns a simple flat MDO List.
+
+```crmscript
+NSMDOListItem[] GetSimpleList(String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+NSMDOListItem[] res = agent.GetSimpleList(name);
+```
+
+## SetSelected(String,String)
+
+Saves the selected values as selected by their given list representation.
+
+```crmscript
+NSSelectableMDOListItem[] SetSelected(String name, String additionalInfo, NSSelectableMDOListItem[] selectableMDOList)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSMDOAgent agent;
+String name;
+String additionalInfo;
+NSSelectableMDOListItem[] selectableMDOList;
+NSSelectableMDOListItem[] res = agent.SetSelected(name, additionalInfo, selectableMDOList);
+```

@@ -1,0 +1,276 @@
+﻿---
+uid: crmscript.native
+title: Namespace CRMScript.Native
+description: ""
+keywords: CRMScript, CRMScript.Native, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Namespace CRMScript.Native
+
+## Classes
+
+### [CRMScript.Native.AppointmentSlicer](CRMScript.Native.AppointmentSlicer)
+
+Slices appointments into single entities that are within a single day. This class is essential when having calender data (with entries possibly spanning several days), which you would like to display in the calender control (which only accepts data for single days).
+
+### [CRMScript.Native.Attachment](CRMScript.Native.Attachment)
+
+Handles Service attachments.
+
+### [CRMScript.Native.Cache](CRMScript.Native.Cache)
+
+Cache to often used db tables and structures and retrieve them in a useful and structured fashion
+
+### [CRMScript.Native.Category](CRMScript.Native.Category)
+
+For accessing and changing a ticket category.
+
+### [CRMScript.Native.Company](CRMScript.Native.Company)
+
+Represents a company.
+
+### [CRMScript.Native.Customer](CRMScript.Native.Customer)
+
+Represents a customer.
+
+### [CRMScript.Native.DbConverter](CRMScript.Native.DbConverter)
+
+This class is only allowed in a ConverterApp context. Any attempts of using this in any other contexts will yield an exception.
+
+### [CRMScript.Native.DbiControl](CRMScript.Native.DbiControl)
+
+Used for communicating with DBI agents to share data with external systems.
+
+### [CRMScript.Native.EabEntry](CRMScript.Native.EabEntry)
+
+Reads and writes entries from the email address book. The class is also used when you want to synchronize the address book using DBI.
+
+### [CRMScript.Native.Email](CRMScript.Native.Email)
+
+Class for representing and sending emails.
+
+### [CRMScript.Native.EventData](CRMScript.Native.EventData)
+
+Gives you access to contextual information in an event handler. For example, the name of a created company or the amount of a sale.
+
+You can also check EventData properties after the event handler has run, to for example display a message or prevent an entity from being saved.
+
+### [CRMScript.Native.EventDataDialogDefinition](CRMScript.Native.EventDataDialogDefinition)
+
+Utility class to generate a dialog to use in CRMScript triggers.
+
+### [CRMScript.Native.EventDataDialogField](CRMScript.Native.EventDataDialogField)
+
+Utility class to generate a field for dialog to use in CRMScript triggers.
+
+### [CRMScript.Native.ExtraFieldsInfo](CRMScript.Native.ExtraFieldsInfo)
+
+With this class, you can retrieve meta-information about an extra field.
+
+The class will only retrieve information, thus it is not possible to change an extra field from this class.
+
+### [CRMScript.Native.ExtraTable](CRMScript.Native.ExtraTable)
+
+A class to access extra tables and create, edit and delete entries.
+
+### [CRMScript.Native.ExtraTableInfo](CRMScript.Native.ExtraTableInfo)
+
+With this class you can retrieve meta information about an extra table. The class will only retrieve information, thus it is not possible to change an extra table from this class.
+
+### [CRMScript.Native.FHBitSet](CRMScript.Native.FHBitSet)
+
+Used to represent and manipulate a 32 bit bitset.
+
+### [CRMScript.Native.File](CRMScript.Native.File)
+
+Represents a file. &lt;strong&gt;This class is not available in CRM Online.&lt;/strong&gt;
+
+Use open() before you call any other methods.
+
+### [CRMScript.Native.Generic](CRMScript.Native.Generic)
+
+Generic is the base type of all other intrinsic CRMScript data types. Any variable can be up-casted to Generic.
+
+There's a close connection between Generic and structs.
+
+simpler iteration of variables (struct members); easier to access and set new variables in structs; possible to change which variables are members without having to hard-code each field.
+
+### [CRMScript.Native.GenericSearch](CRMScript.Native.GenericSearch)
+
+Obsolete. Use SearchEngine instead.
+
+Represents a generic database search. GenericSearch has less functionality for adding criteria than SearcEngine. The GenericSearch is originally made for searching and fetching data from the database. Thereby its name. GenericSearch is a tool for building up SQL queries, by adding fields and criteria.
+
+GenericSearch extends theSearchEngine class with options for how to list fields. Displayfields, datafields, idfields. The fields must be given as starttablename.fieldname, for example "ticket.title" For tables that have foreign keys to other tables, you can reach them with starttablename.fieldname.fieldname
+
+Make sure that all fields you use start with the same table, for example ticket, or else you will recieve a big join that you probably do not want.
+
+For many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is field in table2 that has a foreign key to table1.
+
+### [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement)
+
+Represents HTML elements in the SuperOffice UI.
+
+### [CRMScript.Native.HTTP](CRMScript.Native.HTTP)
+
+Used to retrieve the result of a URL.
+
+### [CRMScript.Native.Inbox](CRMScript.Native.Inbox)
+
+A class for managing the inbox.
+
+### [CRMScript.Native.InvoiceEntry](CRMScript.Native.InvoiceEntry)
+
+Represents invoice entries and lets you create new or modify existing invoice entries
+
+### [CRMScript.Native.JSONBuilder](CRMScript.Native.JSONBuilder)
+
+The JSONBuilder class simplifies building JSON hierarchies. The result will be a string in correct JSON format, with string values properly escaped. This class is useful for example in combination with the HTTP class to make REST-calls.
+
+### [CRMScript.Native.Knowledge](CRMScript.Native.Knowledge)
+
+Knowledge class
+
+### [CRMScript.Native.License](CRMScript.Native.License)
+
+Deprecated in 7.1.
+
+### [CRMScript.Native.LocalizedField](CRMScript.Native.LocalizedField)
+
+Represents fields. Used by Company.set/getAddress() functions.
+
+### [CRMScript.Native.MacroParameter](CRMScript.Native.MacroParameter)
+
+MacroParameter class
+
+### [CRMScript.Native.MacroReturnValue](CRMScript.Native.MacroReturnValue)
+
+MacroReturnValue
+
+### [CRMScript.Native.MainMenu](CRMScript.Native.MainMenu)
+
+Used to control the main (left-side) menu of SuperOffice CRM. Customizing the main menu means modifying the corresponding trigger.
+
+### [CRMScript.Native.Map](CRMScript.Native.Map)
+
+A map is a collection of key-value pairs. Both the key and the value are strings.
+
+The elements in a map are automatically sorted on their keys.
+
+The Map class supports two constructors. The default constructor accepts no parameters and initializes a Map with an empty key-value pair collection. The other constructor accepts a String.
+
+### [CRMScript.Native.Message](CRMScript.Native.Message)
+
+Represents a Service ticket message.
+
+### [CRMScript.Native.Notify](CRMScript.Native.Notify)
+
+Handles notification of different types.
+
+### [CRMScript.Native.Parser](CRMScript.Native.Parser)
+
+A template engine. A Parser instance can set template variable values, then parse a formatted string containing template variable placeholders to replace their values.
+
+### [CRMScript.Native.Pbes](CRMScript.Native.Pbes)
+
+Used to provide encryption of data using a password. The encryption is a PBKDF2 cryptographic key derivation function. The underlying encryption algorithm is rc2. 
+Note that all Service installations will be using the same salt.
+
+### [CRMScript.Native.Priority](CRMScript.Native.Priority)
+
+Used to handle priorities.
+
+### [CRMScript.Native.Profile](CRMScript.Native.Profile)
+
+Methods for fetching info about a users profile.
+
+### [CRMScript.Native.ReplyTemplate](CRMScript.Native.ReplyTemplate)
+
+Represents a reply template.
+
+### [CRMScript.Native.Rsa](CRMScript.Native.Rsa)
+
+For creating and verifying RSA signatures in CRMScript.
+
+### [CRMScript.Native.SearchEngine](CRMScript.Native.SearchEngine)
+
+A tool for building up SQL queries, by adding fields, criteria, and data. The fields must be given on the following form: starttablename.fieldname, for example "ticket.title". For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: "ticket.cust_id.firstname". The company name of the primary customer of a ticket is: "ticket.cust_id.company.name".
+
+Make sure that all fields you use that start with the same table, for example, ticket, or else you will receive a big join that you probably do not want.
+
+For many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is a field in table2 that has a foreign key to table1.
+
+From CS version 7, the aggregate functions are no longer supported, since the query is sent to NetServer instead of directly to the database. It is possible to circumvent this by setting the reg_id 235 to 1 and explicitly use bypassNetserver(true) in the SearchEngine. Be aware of any security implications this might cause.
+
+### [CRMScript.Native.SpmCustomerList](CRMScript.Native.SpmCustomerList)
+
+SpmCustomerList
+
+### [CRMScript.Native.SpmMessage](CRMScript.Native.SpmMessage)
+
+Represent a message in the eMarketeer module. You can create or modify such objects, which later is used by the SpmShipment class to send such messages.
+
+### [CRMScript.Native.SpmShipment](CRMScript.Native.SpmShipment)
+
+Denotes a shipment in the eMarketeer module. A SpmShipment object will be responsible for the actual shipment. This object needs a SpmStaticList and a SpmMessage object as input.
+
+### [CRMScript.Native.SpmStaticList](CRMScript.Native.SpmStaticList)
+
+With this class you can create and edit static lists in the eMarketeer. A static list consist of one or more email addresses (and possible a matching name) which will be used when creating a shipment.
+
+### [CRMScript.Native.StatLib](CRMScript.Native.StatLib)
+
+Class for using the Service statistics library.
+
+### [CRMScript.Native.StatResult](CRMScript.Native.StatResult)
+
+Used to access the results of a StatLib execution.
+
+### [CRMScript.Native.StringObjectDictionary](CRMScript.Native.StringObjectDictionary)
+
+A StringObjectDictionary is a collection of key-value pairs. The key is a string and the value can be an integer, float, string, boolean or datetime.
+
+### [CRMScript.Native.StringMatrix](CRMScript.Native.StringMatrix)
+
+Two-dimensional string array.
+
+### [CRMScript.Native.Ticket](CRMScript.Native.Ticket)
+
+Class for representing an SuperOffice Service Ticket.
+
+### [CRMScript.Native.Timer](CRMScript.Native.Timer)
+
+Timer class
+
+### [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan)
+
+A class for representing a time span.
+
+### [CRMScript.Native.TimeZone](CRMScript.Native.TimeZone)
+
+Gives access to timezone info. Call the global function getLocalTimeZone() to get the object.
+
+### [CRMScript.Native.User](CRMScript.Native.User)
+
+Class for representing a user.
+
+### [CRMScript.Native.Vector](CRMScript.Native.Vector)
+
+This class represents a Vector, in which you can add objects of the type String..
+
+### [CRMScript.Native.WeekSchedule](CRMScript.Native.WeekSchedule)
+
+This class is used to represent a week schedule - what hours a day are "active" for each day, etc.
+
+### [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode)
+
+This class represents an XML DOM structure.
+
+### [CRMScript.Native.YearSchedule](CRMScript.Native.YearSchedule)
+
+This class is used to represent a year schedule. A year can be composed of several WeekSchedules.

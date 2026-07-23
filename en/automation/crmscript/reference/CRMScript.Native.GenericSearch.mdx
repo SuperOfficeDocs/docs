@@ -1,0 +1,195 @@
+﻿---
+uid: crmscript.native.genericsearch
+title: GenericSearch
+description: "Obsolete. Use SearchEngine instead."
+keywords: CRMScript, GenericSearch, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# GenericSearch
+
+Obsolete. Use SearchEngine instead.
+
+Represents a generic database search. GenericSearch has less functionality for adding criteria than SearcEngine. The GenericSearch is originally made for searching and fetching data from the database. Thereby its name. GenericSearch is a tool for building up SQL queries, by adding fields and criteria.
+
+GenericSearch extends theSearchEngine class with options for how to list fields. Displayfields, datafields, idfields. The fields must be given as starttablename.fieldname, for example "ticket.title" For tables that have foreign keys to other tables, you can reach them with starttablename.fieldname.fieldname
+
+Make sure that all fields you use start with the same table, for example ticket, or else you will recieve a big join that you probably do not want.
+
+For many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is field in table2 that has a foreign key to table1.
+
+## Constructors
+
+### GenericSearch()
+
+```crmscript
+GenericSearch
+```
+
+Initializes a new instance of the File class.
+
+## Methods
+
+## addComparison(String,String,String,String,Integer)
+
+Adds a criteria between two database-fields to the database query.
+
+```crmscript
+Void addComparison(String field1, String compOperator, String field2, String rowOperator, Integer concatLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addCriteria(String,String,String,String,Integer)
+
+Add search criteria to the search.
+
+```crmscript
+Void addCriteria(String field, String operator, String value, String andOr, Integer concatLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The concatLevel specifies how this criteria will be concatenated with the rest of the query (parenthesis level). A higher concatLevel gives a "(", and a lower concatlevel gives a ")".
+</Note>
+
+## addField(String)
+
+Adds a field to the queryAdds a field to be selected to the database query.
+
+```crmscript
+Void addField(String field)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Use addField(String,Integer) to provide a field mask.
+</Note>
+
+## addField(String,Integer)
+
+Adds a field to the queryAdds a field to be selected to the database query with a field mask.
+
+```crmscript
+Void addField(String field, Integer fieldMask)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+fieldMask:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Mask&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;ID of the table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Data value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Display value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;Search value&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## addOrder(String,Bool)
+
+Adds order on specified field, descending or ascending.
+
+```crmscript
+Void addOrder(String field, Bool asc)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## countRows()
+
+Returns the number of rows in the result set.
+
+```crmscript
+Integer countRows()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of rows in the result set.
+
+## eof()
+
+Returns true if the result pointer has reached the end of result set, or false otherwise.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the result pointer has reached the end of result set; otherwise, false.
+
+## execute()
+
+Executes the query.
+
+```crmscript
+Void execute()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## first()
+
+Sets the result pointer to point at the first row in the result set.
+
+```crmscript
+Bool first()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if the result set is empty; otherwise, true.
+
+## get(String,Integer)
+
+Retrieves the value of a field according to a field mask.
+
+```crmscript
+String get(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+fieldMask:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Mask&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;ID of the table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Data value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Display value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;Search value&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## get(Integer,Integer)
+
+Retrieves the value of a field according to a field mask.
+
+```crmscript
+String get(Integer id)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+fieldMask:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Mask&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;ID of the table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Data value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Display value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;Search value&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## next()
+
+Sets the result set pointer to next row, returns &lt;/li&gt;&lt;/ul&gt;
+
+```crmscript
+Bool next()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if there is a next row; otherwise, false (the pointer has reached the last result set)
+
+## setLanguage(Integer)
+
+Sets what language to use when showing display fields.
+
+```crmscript
+Void setLanguage(Integer languageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setLimit(Integer)
+
+Sets a limit of the number of rows that will be returned in the result set.
+
+```crmscript
+Void setLimit(Integer limit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

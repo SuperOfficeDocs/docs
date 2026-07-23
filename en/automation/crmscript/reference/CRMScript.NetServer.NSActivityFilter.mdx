@@ -1,0 +1,202 @@
+﻿---
+uid: crmscript.netserver.nsactivityfilter
+title: NSActivityFilter
+description: "Activity list filter information. Carrier object for ActivityFilter."
+keywords: CRMScript, NSActivityFilter, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSActivityFilter
+
+Activity list filter information. Carrier object for ActivityFilter.
+
+## Constructors
+
+### NSActivityFilter()
+
+```crmscript
+NSActivityFilter
+```
+
+Initializes a new instance of the NSActivityFilter class.
+
+## Methods
+
+## GetAssociateList()
+
+Returns the list of associates to filter on.
+
+```crmscript
+NSSelectableMDOListItem[] GetAssociateList()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+NSSelectableMDOListItem[] associateList = thing.GetAssociateList();
+```
+
+## GetFromDate()
+
+Returns the date to filter from.
+
+```crmscript
+DateTime GetFromDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date to filter from.
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+DateTime fromDate = thing.GetFromDate();
+```
+
+## GetFutureDateList()
+
+Returns the list of future date selections.
+
+```crmscript
+NSMDOListItem[] GetFutureDateList()
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[] - A static MDO list with standard values.
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+NSMDOListItem[] futureDateList = thing.GetFutureDateList();
+```
+
+## GetGroupList()
+
+Returns the list of groups to filter on.
+
+```crmscript
+NSSelectableMDOListItem[] GetGroupList()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - The list of groups to filter on.
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+NSSelectableMDOListItem[] groupList = thing.GetGroupList();
+```
+
+## GetToDate()
+
+Returns the date to filter to.
+
+```crmscript
+DateTime GetToDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date to filter to.
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+DateTime toDate = thing.GetToDate();
+```
+
+## SetAssociateList(NSSelectableMDOListItem[])
+
+Sets the list of associates to filter on.
+
+```crmscript
+Void SetAssociateList(NSSelectableMDOListItem[] associateList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+NSSelectableMDOListItem[] associateList;
+thing.SetAssociateList(associateList);
+```
+
+## SetFromDate(DateTime)
+
+Sets the date to filter from.
+
+```crmscript
+Void SetFromDate(DateTime fromDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+DateTime fromDate;
+thing.SetFromDate(fromDate);
+```
+
+## SetFutureDateList(NSMDOListItem[])
+
+Sets the list of future date selections.
+
+```crmscript
+Void SetFutureDateList(NSMDOListItem[] futureDateList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+NSMDOListItem[] futureDateList;
+thing.SetFutureDateList(futureDateList);
+```
+
+## SetGroupList(NSSelectableMDOListItem[])
+
+Sets the list of groups to filter on.
+
+```crmscript
+Void SetGroupList(NSSelectableMDOListItem[] groupList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+NSSelectableMDOListItem[] groupList;
+thing.SetGroupList(groupList);
+```
+
+## SetToDate(DateTime)
+
+Sets the date to filter to.
+
+```crmscript
+Void SetToDate(DateTime toDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivityFilter thing;
+DateTime toDate;
+thing.SetToDate(toDate);
+```

@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.doctmplquotetype
+title: Enum DocTmplQuoteType
+description: "Is this document template some kind of quote document, and if so what"
+keywords: CRMScript, DocTmplQuoteType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum DocTmplQuoteType
+
+Is this document template some kind of quote document, and if so what
+
+## Syntax
+
+```crmscript
+DocTmplQuoteType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | This document template is in no way related to Quote Management |
+| MailBody | This is a template for the offer mail body |
+| MainDocument | This is a template for the main offer document, document instances will be referred through Quote.DocumentId |
+| QuoteLines | This is a template for the AsposeWords merge process, generating the offer line details |
+| ConfirmationMailBody | This is a template for the mail body of the order confirmation |
+| ConfirmationLines | This is a template for the lines document that is an attachment to the confirmation mail |

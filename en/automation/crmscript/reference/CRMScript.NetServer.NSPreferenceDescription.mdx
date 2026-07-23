@@ -1,0 +1,585 @@
+﻿---
+uid: crmscript.netserver.nspreferencedescription
+title: NSPreferenceDescription
+description: "Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice."
+keywords: CRMScript, NSPreferenceDescription, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPreferenceDescription
+
+Preference description, drives the Preference GUI. Maintenance client - controls all preferences in SuperOffice.
+
+## Constructors
+
+### NSPreferenceDescription()
+
+```crmscript
+NSPreferenceDescription
+```
+
+Initializes a new instance of the NSPreferenceDescription class.
+
+## Methods
+
+## GetAccessFlags()
+
+```crmscript
+Integer GetAccessFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.PrefDescAccessFlags\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer accessFlags = thing.GetAccessFlags();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of preference, multi-language parsed.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String description = thing.GetDescription();
+```
+
+## GetIsBuiltin()
+
+```crmscript
+Bool GetIsBuiltin()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 1 = This row populated and maintained by SuperOffice.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Bool isBuiltin = thing.GetIsBuiltin();
+```
+
+## GetKey()
+
+```crmscript
+String GetKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Preference key name.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String key = thing.GetKey();
+```
+
+## GetMaxLevel()
+
+```crmscript
+Integer GetMaxLevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Lowest allowed setting level, set by user, but not lower than enum &lt;xref href=\"CRMScript.NetServer.PreferenceLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer maxLevel = thing.GetMaxLevel();
+```
+
+## GetMaxValue()
+
+```crmscript
+Integer GetMaxValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Max value (if type 1); list table ID (if type 5).
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer maxValue = thing.GetMaxValue();
+```
+
+## GetMinLevel()
+
+```crmscript
+Integer GetMinLevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The minimum (furthest away from User) level this preference can be set for.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer minLevel = thing.GetMinLevel();
+```
+
+## GetMinValue()
+
+```crmscript
+Integer GetMinValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Min value (if type 1); list extra id (if type 5).
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer minValue = thing.GetMinValue();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Multi-language name.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String name = thing.GetName();
+```
+
+## GetPrefDescId()
+
+```crmscript
+Integer GetPrefDescId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer prefDescId = thing.GetPrefDescId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank field for ordering sections, and keys within sections.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRequiredLicense()
+
+```crmscript
+String GetRequiredLicense()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Licenses the user/installation must have if this reference is to be shown. Comma-separated list of owner.module pairs.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String requiredLicense = thing.GetRequiredLicense();
+```
+
+## GetSection()
+
+```crmscript
+String GetSection()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Preference section name.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String section = thing.GetSection();
+```
+
+## GetSubGroup()
+
+```crmscript
+String GetSubGroup()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Keys that share a value (including NULL) in this field are shown together; a visual spacer is shown between groups.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String subGroup = thing.GetSubGroup();
+```
+
+## GetSysMaxLevel()
+
+```crmscript
+Integer GetSysMaxLevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Lowest allowed setting level, set by SuperOffice. See &lt;xref href=\"CRMScript.NetServer.PreferenceLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer sysMaxLevel = thing.GetSysMaxLevel();
+```
+
+## GetTableName()
+
+```crmscript
+String GetTableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If valueType = 5, then TableName contains the table referenced by the preference.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String tableName = thing.GetTableName();
+```
+
+## GetUserDefinedListId()
+
+```crmscript
+Integer GetUserDefinedListId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Read-only field, If valueType = 5, and TableName is UDList, then UserdefinedLIstId contains the ID of the list referenced by the preference.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer userDefinedListId = thing.GetUserDefinedListId();
+```
+
+## GetValueType()
+
+```crmscript
+Integer GetValueType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.PrefDescValueType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer valueType = thing.GetValueType();
+```
+
+## SetAccessFlags(Integer)
+
+```crmscript
+Void SetAccessFlags(Integer accessFlags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer accessFlags;
+thing.SetAccessFlags(accessFlags);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetIsBuiltin(Bool)
+
+```crmscript
+Void SetIsBuiltin(Bool isBuiltin)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Bool isBuiltin;
+thing.SetIsBuiltin(isBuiltin);
+```
+
+## SetKey(String)
+
+```crmscript
+Void SetKey(String key)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String key;
+thing.SetKey(key);
+```
+
+## SetMaxLevel(Integer)
+
+```crmscript
+Void SetMaxLevel(Integer maxLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer maxLevel;
+thing.SetMaxLevel(maxLevel);
+```
+
+## SetMaxValue(Integer)
+
+```crmscript
+Void SetMaxValue(Integer maxValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer maxValue;
+thing.SetMaxValue(maxValue);
+```
+
+## SetMinLevel(Integer)
+
+```crmscript
+Void SetMinLevel(Integer minLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer minLevel;
+thing.SetMinLevel(minLevel);
+```
+
+## SetMinValue(Integer)
+
+```crmscript
+Void SetMinValue(Integer minValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer minValue;
+thing.SetMinValue(minValue);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPrefDescId(Integer)
+
+```crmscript
+Void SetPrefDescId(Integer prefDescId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer prefDescId;
+thing.SetPrefDescId(prefDescId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRequiredLicense(String)
+
+```crmscript
+Void SetRequiredLicense(String requiredLicense)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String requiredLicense;
+thing.SetRequiredLicense(requiredLicense);
+```
+
+## SetSection(String)
+
+```crmscript
+Void SetSection(String section)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String section;
+thing.SetSection(section);
+```
+
+## SetSubGroup(String)
+
+```crmscript
+Void SetSubGroup(String subGroup)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String subGroup;
+thing.SetSubGroup(subGroup);
+```
+
+## SetSysMaxLevel(Integer)
+
+```crmscript
+Void SetSysMaxLevel(Integer sysMaxLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer sysMaxLevel;
+thing.SetSysMaxLevel(sysMaxLevel);
+```
+
+## SetTableName(String)
+
+```crmscript
+Void SetTableName(String tableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+String tableName;
+thing.SetTableName(tableName);
+```
+
+## SetUserDefinedListId(Integer)
+
+```crmscript
+Void SetUserDefinedListId(Integer userDefinedListId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer userDefinedListId;
+thing.SetUserDefinedListId(userDefinedListId);
+```
+
+## SetValueType(Integer)
+
+```crmscript
+Void SetValueType(Integer valueType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreferenceDescription thing;
+Integer valueType;
+thing.SetValueType(valueType);
+```

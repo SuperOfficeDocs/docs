@@ -1,0 +1,40 @@
+﻿---
+uid: crmscript.netserver.shipmentlinkaction
+title: Enum ShipmentLinkAction
+description: "Bitmask defining what action should be taken"
+keywords: CRMScript, ShipmentLinkAction, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ShipmentLinkAction
+
+Bitmask defining what action should be taken
+
+## Syntax
+
+```crmscript
+ShipmentLinkAction
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | No action |
+| SetPersonInterest | Set an interest on the recipient-who-is-a-person |
+| RemovePersonInterest | Remove an interest from the recipient-who-is-a-person |
+| SetContactInterest | Set an interest on the recipient-who-is-a-contact |
+| RemoveContactInterest | Remove an interest from the recipient-who-is-a-contact |
+| AddToSmSelection | Add person id of recipient to a static S&M selection |
+| RemoveFromSmSelection | Remove person id of recipient from a static S&M selection |
+| AddToSmProject | Add person id of recipient as a member of an S&M project |
+| RemoveFromSmProject | Remove person id of recipient as a member of an S&M project |
+| AddTask | Add a task in an S&M diary |
+| AddRequest | Add a request (ticket) in CS |
+| AddToCsSelection | Add person to a Customer Support selection |
+| RemoveFromCsSelection | Remove person from a Customer Service selection |
+| ExecuteScript | Execute an ejScript |

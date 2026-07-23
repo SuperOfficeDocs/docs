@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsquotealternativerecalculated
+title: NSQuoteAlternativeRecalculated
+description: "The QuoteAlternativeRecalculated is returned after a call to RecalculateQuoteAlternative. It contains flags indicating changes to quote alternative and quote lines."
+keywords: CRMScript, NSQuoteAlternativeRecalculated, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteAlternativeRecalculated
+
+The QuoteAlternativeRecalculated is returned after a call to RecalculateQuoteAlternative. It contains flags indicating changes to quote alternative and quote lines.
+
+## Constructors
+
+### NSQuoteAlternativeRecalculated()
+
+```crmscript
+NSQuoteAlternativeRecalculated
+```
+
+Initializes a new instance of the NSQuoteAlternative class.
+
+## Methods
+
+## GetChangedQuoteAlternative()
+
+```crmscript
+NSQuoteAlternative GetChangedQuoteAlternative()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative) - The recalculated NSQuoteAlternative.
+
+**Example:**
+
+```crmscript
+NSQuoteAlternativeRecalculated thing;
+NSQuoteAlternative changedQuoteAlternative = thing.GetChangedQuoteAlternative();
+```
+
+## GetChanges()
+
+```crmscript
+NSChangedData GetChanges()
+```
+
+**Returns:** [CRMScript.NetServer.NSChangedData](CRMScript.NetServer.NSChangedData) - Table name or record ID of data changed by this method.
+
+**Example:**
+
+```crmscript
+NSQuoteAlternativeRecalculated thing;
+NSChangedData changes = thing.GetChanges();
+```
+
+## GetQuoteLinesHasChanged()
+
+```crmscript
+Bool GetQuoteLinesHasChanged()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true any of the quote lines for the alternative has been changed.
+
+**Example:**
+
+```crmscript
+NSQuoteAlternativeRecalculated thing;
+Bool quoteLinesHasChanged = thing.GetQuoteLinesHasChanged();
+```
+
+## SetChangedQuoteAlternative(NSQuoteAlternative)
+
+```crmscript
+Void SetChangedQuoteAlternative(NSQuoteAlternative changedQuoteAlternative)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAlternativeRecalculated thing;
+NSQuoteAlternative changedQuoteAlternative;
+thing.SetChangedQuoteAlternative(changedQuoteAlternative);
+```
+
+## SetChanges(NSChangedData)
+
+```crmscript
+Void SetChanges(NSChangedData changes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAlternativeRecalculated thing;
+NSChangedData changes;
+thing.SetChanges(changes);
+```
+
+## SetQuoteLinesHasChanged(Bool)
+
+```crmscript
+Void SetQuoteLinesHasChanged(Bool quoteLinesHasChanged)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAlternativeRecalculated thing;
+Bool quoteLinesHasChanged;
+thing.SetQuoteLinesHasChanged(quoteLinesHasChanged);
+```

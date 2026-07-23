@@ -1,0 +1,1402 @@
+﻿---
+uid: crmscript.netserver.nssaleentity
+title: NSSaleEntity
+description: "The Sale Entity contains the sale amount, currency, and sale members. Sales are linked to contacts, persons, and/or projects."
+keywords: CRMScript, NSSaleEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSaleEntity
+
+The Sale Entity contains the sale amount, currency, and sale members. Sales are linked to contacts, persons, and/or projects.
+
+## Constructors
+
+### NSSaleEntity()
+
+```crmscript
+NSSaleEntity
+```
+
+Initializes a new instance of the NSSaleEntity class.
+
+## Methods
+
+## GetActiveErpLinks()
+
+```crmscript
+Integer GetActiveErpLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer activeErpLinks = thing.GetActiveErpLinks();
+```
+
+## GetActiveLinks()
+
+```crmscript
+Integer GetActiveLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of active links to sale, document, appointment.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer activeLinks = thing.GetActiveLinks();
+```
+
+## GetAmount()
+
+```crmscript
+Float GetAmount()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Total sale amount.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Float amount = thing.GetAmount();
+```
+
+## GetAppointment()
+
+```crmscript
+NSAppointment GetAppointment()
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAppointment appointment = thing.GetAppointment();
+```
+
+## GetAssociate()
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The sale owner.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAssociate associate = thing.GetAssociate();
+```
+
+## GetCompetitor()
+
+```crmscript
+NSCompetitor GetCompetitor()
+```
+
+**Returns:** [CRMScript.NetServer.NSCompetitor](CRMScript.NetServer.NSCompetitor) - List of all possible competitors.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSCompetitor competitor = thing.GetCompetitor();
+```
+
+## GetCompleted()
+
+```crmscript
+Integer GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The Sale completed state.
+
+<Note>
+The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer completed = thing.GetCompleted();
+```
+
+## GetContact()
+
+```crmscript
+NSContact GetContact()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - The contact associated with the sale. It may also be 0 if no contact is associated with the sale.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSContact contact = thing.GetContact();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Who created to sale.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered date.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetCredited()
+
+```crmscript
+NSCredited GetCredited()
+```
+
+**Returns:** [CRMScript.NetServer.NSCredited](CRMScript.NetServer.NSCredited) - List of who is to be credited for the sale.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSCredited credited = thing.GetCredited();
+```
+
+## GetCurrency()
+
+```crmscript
+NSCurrency GetCurrency()
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrency](CRMScript.NetServer.NSCurrency) - The currency the sale object was sold in.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSCurrency currency = thing.GetCurrency();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on a SaleEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetEarning()
+
+```crmscript
+Float GetEarning()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning on sale.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Float earning = thing.GetEarning();
+```
+
+## GetEarningPercent()
+
+```crmscript
+Float GetEarningPercent()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning as percent of total.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Float earningPercent = thing.GetEarningPercent();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on SaleEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetHeading()
+
+```crmscript
+String GetHeading()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sale heading (short description?).
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String heading = thing.GetHeading();
+```
+
+## GetIsPublished()
+
+```crmscript
+Bool GetIsPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this SaleEntity be published and visible to strangers?
+
+## GetLinks()
+
+```crmscript
+NSLink[] GetLinks()
+```
+
+**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)[] - List of all elements linked to the sale.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSLink[] links = thing.GetLinks();
+```
+
+## GetNextDueDate()
+
+```crmscript
+DateTime GetNextDueDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Next due date, this is a de.normalization of 'closest future activity date, or most recent if no future activities'.
+
+<Note>
+Maintained by the system, but very convenient for searching.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime nextDueDate = thing.GetNextDueDate();
+```
+
+## GetNumber()
+
+```crmscript
+String GetNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Alphanumeric user field.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String number = thing.GetNumber();
+```
+
+## GetPerson()
+
+A sale may also be connected to a person. This must be a contact person registered on the current contact. This does not mean that a person is required.
+
+```crmscript
+NSPerson GetPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSPerson person = thing.GetPerson();
+```
+
+## GetPostit()
+
+```crmscript
+String GetPostit()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String postit = thing.GetPostit();
+```
+
+## GetProbability()
+
+```crmscript
+Integer GetProbability()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Actual probability, may differ from the one in the list.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer probability = thing.GetProbability();
+```
+
+## GetProject()
+
+A sale may also be connected to a project, so you see the sale both on the company card, and on the project card. This does not mean that a project is required.
+
+```crmscript
+NSProject GetProject()
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSProject project = thing.GetProject();
+```
+
+## GetPublishEventDate()
+
+```crmscript
+DateTime GetPublishEventDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish event date on SaleEntity.
+
+## GetPublishFrom()
+
+```crmscript
+DateTime GetPublishFrom()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish from date on SaleEntity.
+
+## GetPublishTo()
+
+```crmscript
+DateTime GetPublishTo()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish to date on SaleEntity. After this date the event is no longer visible.
+
+## GetRating()
+
+```crmscript
+NSRating GetRating()
+```
+
+**Returns:** [CRMScript.NetServer.NSRating](CRMScript.NetServer.NSRating) - The sale rating.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSRating rating = thing.GetRating();
+```
+
+## GetReason()
+
+```crmscript
+NSReason GetReason()
+```
+
+**Returns:** [CRMScript.NetServer.NSReason](CRMScript.NetServer.NSReason) - The sale reason.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSReason reason = thing.GetReason();
+```
+
+## GetReasonSold()
+
+```crmscript
+NSReasonSold GetReasonSold()
+```
+
+**Returns:** [CRMScript.NetServer.NSReasonSold](CRMScript.NetServer.NSReasonSold)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSReasonSold reasonSold = thing.GetReasonSold();
+```
+
+## GetReasonStalled()
+
+```crmscript
+NSReasonStalled GetReasonStalled()
+```
+
+**Returns:** [CRMScript.NetServer.NSReasonStalled](CRMScript.NetServer.NSReasonStalled)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSReasonStalled reasonStalled = thing.GetReasonStalled();
+```
+
+## GetReopenDate()
+
+```crmscript
+DateTime GetReopenDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date the sale is to be reopened; valid only for status=stalled. Not necessarily the same as the nextDueDate.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime reopenDate = thing.GetReopenDate();
+```
+
+## GetSaledate()
+
+```crmscript
+DateTime GetSaledate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - (expected / lost / won) sales date.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime saledate = thing.GetSaledate();
+```
+
+## GetSaleId()
+
+```crmscript
+Integer GetSaleId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer saleId = thing.GetSaleId();
+```
+
+## GetSaleStakeholders()
+
+```crmscript
+NSSaleStakeholder[] GetSaleStakeholders()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSSaleStakeholder[] saleStakeholders = thing.GetSaleStakeholders();
+```
+
+## GetSaleText()
+
+```crmscript
+String GetSaleText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text describing the sale.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String saleText = thing.GetSaleText();
+```
+
+## GetSaleType()
+
+```crmscript
+NSSaleType GetSaleType()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleType](CRMScript.NetServer.NSSaleType)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSSaleType saleType = thing.GetSaleType();
+```
+
+## GetSource()
+
+```crmscript
+NSSource GetSource()
+```
+
+**Returns:** [CRMScript.NetServer.NSSource](CRMScript.NetServer.NSSource) - The sale source.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSSource source = thing.GetSource();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The state of the Sale (Open, Sold, Lost, Stalled). See &lt;xref href=\"CRMScript.NetServer.SaleStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer status = thing.GetStatus();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Who updated the sale.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated.
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetUserDefinedFields()
+
+Gets the user-defined fields on the SaleEntity as a map.
+
+```crmscript
+Map GetUserDefinedFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Map fields = thing.GetUserDefinedFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetVisibleFor()
+
+Returns the user groups and/or users the SaleEntity item is visible for.
+
+```crmscript
+NSVisibleFor[] GetVisibleFor()
+```
+
+**Returns:** [CRMScript.NetServer.NSVisibleFor](CRMScript.NetServer.NSVisibleFor)[]
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+```
+
+## SetActiveErpLinks(Integer)
+
+```crmscript
+Void SetActiveErpLinks(Integer activeErpLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer activeErpLinks;
+thing.SetActiveErpLinks(activeErpLinks);
+```
+
+## SetActiveLinks(Integer)
+
+```crmscript
+Void SetActiveLinks(Integer activeLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer activeLinks;
+thing.SetActiveLinks(activeLinks);
+```
+
+## SetAmount(Float)
+
+```crmscript
+Void SetAmount(Float amount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Float amount;
+thing.SetAmount(amount);
+```
+
+## SetAppointment(NSAppointment)
+
+```crmscript
+Void SetAppointment(NSAppointment appointment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAppointment appointment;
+thing.SetAppointment(appointment);
+```
+
+## SetAssociate(NSAssociate)
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAssociate associate;
+thing.SetAssociate(associate);
+```
+
+## SetCompetitor(NSCompetitor)
+
+```crmscript
+Void SetCompetitor(NSCompetitor competitor)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSCompetitor competitor;
+thing.SetCompetitor(competitor);
+```
+
+## SetCompleted(Integer)
+
+```crmscript
+Void SetCompleted(Integer completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer completed;
+thing.SetCompleted(completed);
+```
+
+## SetContact(NSContact)
+
+```crmscript
+Void SetContact(NSContact contact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSContact contact;
+thing.SetContact(contact);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+Registered date
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetCredited(NSCredited)
+
+```crmscript
+Void SetCredited(NSCredited credited)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSCredited credited;
+thing.SetCredited(credited);
+```
+
+## SetCurrency(NSCurrency)
+
+```crmscript
+Void SetCurrency(NSCurrency currency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSCurrency currency;
+thing.SetCurrency(currency);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on a SaleEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+udefs["x_foo"] = "foobar";
+udefs["x_bar"] = "456"; // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetEarning(Float)
+
+```crmscript
+Void SetEarning(Float earning)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Float earning;
+thing.SetEarning(earning);
+```
+
+## SetEarningPercent(Float)
+
+```crmscript
+Void SetEarningPercent(Float earningPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Float earningPercent;
+thing.SetEarningPercent(earningPercent);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on SaleEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Map extras;
+extras["SuperOffice:1"] = "[I:123]";
+extras["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+extras["custom.progid"] = "foobar";
+thing.SetExtraFields(extras);
+```
+
+## SetHeading(String)
+
+```crmscript
+Void SetHeading(String heading)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String heading;
+thing.SetHeading(heading);
+```
+
+## SetIsPublished(Bool)
+
+Sets the visibility of the entity
+
+```crmscript
+Void SetIsPublished(Bool isPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetLinks(NSLink[])
+
+```crmscript
+Void SetLinks(NSLink[] links)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSLink[] links;
+thing.SetLinks(links);
+```
+
+## SetNextDueDate(DateTime)
+
+Maintained by the system, but very convenient for searching.
+
+```crmscript
+Void SetNextDueDate(DateTime nextDueDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime nextDueDate;
+thing.SetNextDueDate(nextDueDate);
+```
+
+## SetNumber(String)
+
+```crmscript
+Void SetNumber(String number)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String number;
+thing.SetNumber(number);
+```
+
+## SetPerson(NSPerson)
+
+A sale may also be connected to a person. This must be a contact person registered on the current contact. This does not mean that a person is required.
+
+```crmscript
+Void SetPerson(NSPerson person)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSPerson person;
+thing.SetPerson(person);
+```
+
+## SetPostit(String)
+
+```crmscript
+Void SetPostit(String postit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String postit;
+thing.SetPostit(postit);
+```
+
+## SetProbability(Integer)
+
+```crmscript
+Void SetProbability(Integer probability)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer probability;
+thing.SetProbability(probability);
+```
+
+## SetProject(NSProject)
+
+A sale may also be connected to a project, so you see the sale both on the company card, and on the project card. This does not mean that a project is required.
+
+```crmscript
+Void SetProject(NSProject project)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSProject project;
+thing.SetProject(project);
+```
+
+## SetPublishEventDate(DateTime)
+
+```crmscript
+Void SetPublishEventDate(DateTime publishDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishFrom(DateTime)
+
+Sets the publish from date on a SaleEntity.
+
+```crmscript
+Void SetPublishFrom(DateTime publishFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishTo(DateTime)
+
+Sets the publish to date on SaleEntity.
+
+```crmscript
+Void SetPublishTo(DateTime publishTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetRating(NSRating)
+
+```crmscript
+Void SetRating(NSRating rating)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSRating rating;
+thing.SetRating(rating);
+```
+
+## SetReason(NSReason)
+
+```crmscript
+Void SetReason(NSReason reason)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSReason reason;
+thing.SetReason(reason);
+```
+
+## SetReasonSold(NSReasonSold)
+
+```crmscript
+Void SetReasonSold(NSReasonSold reasonSold)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSReasonSold reasonSold;
+thing.SetReasonSold(reasonSold);
+```
+
+## SetReasonStalled(NSReasonStalled)
+
+```crmscript
+Void SetReasonStalled(NSReasonStalled reasonStalled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSReasonStalled reasonStalled;
+thing.SetReasonStalled(reasonStalled);
+```
+
+## SetReopenDate(DateTime)
+
+```crmscript
+Void SetReopenDate(DateTime reopenDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime reopenDate;
+thing.SetReopenDate(reopenDate);
+```
+
+## SetSaledate(DateTime)
+
+```crmscript
+Void SetSaledate(DateTime saledate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime saledate;
+thing.SetSaledate(saledate);
+```
+
+## SetSaleId(Integer)
+
+```crmscript
+Void SetSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer saleId;
+thing.SetSaleId(saleId);
+```
+
+## SetSaleStakeholders(NSSaleStakeholder[])
+
+```crmscript
+Void SetSaleStakeholders(NSSaleStakeholder[] saleStakeholders)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSSaleStakeholder[] saleStakeholders;
+thing.SetSaleStakeholders(saleStakeholders);
+```
+
+## SetSaleText(String)
+
+```crmscript
+Void SetSaleText(String saleText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+String saleText;
+thing.SetSaleText(saleText);
+```
+
+## SetSaleType(NSSaleType)
+
+```crmscript
+Void SetSaleType(NSSaleType saleType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSSaleType saleType;
+thing.SetSaleType(saleType);
+```
+
+## SetSource(NSSource)
+
+```crmscript
+Void SetSource(NSSource source)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSSource source;
+thing.SetSource(source);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetUserDefinedFields(Map)
+
+Sets the user-defined fields on the SaleEntity as a map.
+
+```crmscript
+Void SetUserDefinedFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+thing.SetUserDefinedFields(udefs);
+```
+
+## SetVisibleFor(NSVisibleFor[])
+
+Sets the user groups and/or users the SaleEntity item is visible for.
+
+```crmscript
+Void SetVisibleFor(NSVisibleFor[] visibleFor)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+visibleFor[0].SetVisiblity(1);  // usergroup
+visibleFor[0].SetVisibleId(123); // usergroup id
+thing.SetVisibleFor(visibleFor);
+```

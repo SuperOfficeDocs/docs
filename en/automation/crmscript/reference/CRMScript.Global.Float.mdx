@@ -1,0 +1,149 @@
+﻿---
+uid: crmscript.global.float
+title: Float
+description: "A class for representing floating point numbers as objects. Floats are approximations of real numbers written with decimals. If you don't need to work with decimals, use the Integer data type."
+keywords: CRMScript, Float, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Float
+
+A class for representing floating point numbers as objects. Floats are approximations of real numbers written with decimals. If you don't need to work with decimals, use the Integer data type.
+
+## Constructors
+
+### Float()
+
+```crmscript
+Float Float()
+```
+
+Default constructor.
+
+### Float(Float)
+
+```crmscript
+Float Float(Float value)
+```
+
+Pass a value to copy into a new object.
+
+### Float(Integer)
+
+```crmscript
+Float Float(Integer value)
+```
+
+Pass an Integer and have it converted to a Float object.
+
+### Float(String)
+
+```crmscript
+Float Float(String value)
+```
+
+Pass a String containing a number. The constructor will parse the text and create a Float object.
+
+### Float(Long)
+
+```crmscript
+Float Float(Long value)
+```
+
+Create a new Float instance from a Long instance.
+
+## Methods
+
+## toString(Integer)
+
+Converts a float value to its string representation.
+
+One of the most frequently used methods, typically when you are going to output something.
+
+```crmscript
+String toString(Integer decimals)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+You must always specify how many decimal digits you want.
+</Note>
+
+**Example:**
+
+```crmscript
+Float pi = 3.14159;
+for(Integer i = 0; i < 6; i++) {
+\tprintLine(pi.toString(i));
+}
+```
+
+## abs()
+
+Converts a float value to its absolute value (the non-negative value of the number without regarding the sign).
+
+```crmscript
+Float abs()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float)
+
+**Example:**
+
+```crmscript
+Float i = -7.14;
+print(i.abs().toString(2));
+```
+
+## floor()
+
+Returns the Integer preceding the decimal separator. The floor of a Float is calculated by rounding downward to the nearest Integer.
+
+```crmscript
+Integer floor()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Float f = 13.456;
+print(f.floor().toString())
+```
+
+## round()
+
+Returns the Integer approximation of the Float without any decimals. It is calculated by rounding to the nearest Integer.
+
+```crmscript
+Integer round()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Float f = 13.79;
+print(f.round().toString());
+```
+
+## isNull()
+
+Returns true if it has no value and false if it does.
+
+```crmscript
+Bool isNull()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+A NULL/NUL/NIL Float is different from zero, in that it is conceptually without a value. However, when a null Float is used naively, CRMScript is usually forgiving and interprets it as zero.`n
+</Note>

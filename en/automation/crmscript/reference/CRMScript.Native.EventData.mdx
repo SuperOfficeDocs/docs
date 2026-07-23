@@ -1,0 +1,261 @@
+﻿---
+uid: crmscript.native.eventdata
+title: EventData
+description: "Gives you access to contextual information in an event handler. For example, the name of a created company or the amount of a sale."
+keywords: CRMScript, EventData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# EventData
+
+Gives you access to contextual information in an event handler. For example, the name of a created company or the amount of a sale.
+
+You can also check EventData properties after the event handler has run, to for example display a message or prevent an entity from being saved.
+
+## Constructors
+
+### EventData()
+
+```crmscript
+EventData
+```
+
+Initializes a new instance of the EventData class.
+
+## Methods
+
+## getBlockExecution()
+
+Checks whether the current event action has been blocked.
+
+```crmscript
+Bool getBlockExecution()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getInputValue(String)
+
+Returns the value of a specified input field (for example "ContactEntity.Department").
+
+```crmscript
+String getInputValue(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+Use Trace to discover the name of the input value you want to fetch.
+</Note>
+
+**Example:**
+
+```crmscript
+EventData ed = getEventData();
+Integer projectId = ed.getInputValue("ProjectEntity.ProjectId").toInteger();
+Bool isCompleted = ed.getInputValue("ProjectEntity.Completed").toBool();
+```
+
+## getInputValues()
+
+Returns a Map containing all input values of the EventData object.
+
+```crmscript
+Map getInputValues()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - All input values of the object.
+
+**Example:**
+
+```crmscript
+EventData ed = getEventData();
+Map m = ed.getInputValues();
+m.first();
+while (!m.eof()){
+  printLine(m.getKey() + " = " + m.getVal());
+  m.next();
+}
+```
+
+## getMessage()
+
+Returns the message set in an EventData object.
+
+```crmscript
+String getMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The message set in the object.
+
+**Example:**
+
+```crmscript
+EventData ed = getEventData();
+printLine(ed.getMessage());
+```
+
+## getNavigateTo()
+
+Returns the section EventData has navigated to.
+
+```crmscript
+String getNavigateTo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getStateValue(String)
+
+Returns the value of a specified state field (custom field).
+
+```crmscript
+String getStateValue(String stateValue)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getStateValues()
+
+Returns a Map containing all state values of the EventData object (custom values).
+
+```crmscript
+Map getStateValues()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+## getType()
+
+Returns the integer representing the event type.
+
+```crmscript
+Integer getType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+EventData ed = getEventData();
+printLine(ed.getType().toString());
+```
+
+## setBlockExecution(Bool)
+
+Prevent the current event action from being executed.
+
+```crmscript
+Void setBlockExecution(Bool value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setMessage(String)
+
+Displays a dialog box containing the specified message.
+
+```crmscript
+Void setMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventData ed = getEventData();
+String orgNr = ed.getInputValue("ContactEntity.OrgNr");
+if(orgNr.isEmpty()) {
+  ed.setMessage("Please type an Org.Nr");
+}
+```
+
+## setNavigateTo(String)
+
+Sets which page to load next. For example, "sale.main".
+
+```crmscript
+Void setNavigateTo(String url)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventData ed = getEventData();
+ed.setNavigateTo("soprotocol:sale.document?document_id=0");
+```
+
+## setOutputValue(String,String)
+
+Sets the value of a specified output field (for example "ContactEntity.Department").
+
+```crmscript
+Void setOutputValue(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Integer newOrgNr = 987654321;
+EventData ed = getEventData();
+ed.setOutputValue("ContactEntity.OrgNr", newOrgNr);
+```
+
+## setStateValue(String,String)
+
+Sets a state value that can be accessed later, also by other EventData objects in the same script (custom value).
+
+```crmscript
+Void setStateValue(String stateName, String val)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setValidationMessage(String)
+
+A shorthand for calling setBlockExecution(true) and setMessage(message).
+
+It allows you to block a save and set a response message in a single function call.
+
+```crmscript
+Void setValidationMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventData ed = getEventData();
+if(ed.getInputValue("x_invoice_no.value") == "") {
+  getHtmlElement("x_invoice_no").setErrorMessage("Error");
+  ed.setBlockExecution(true);
+}
+String orgNr = ed.getInputValue("ContactEntity.OrgNr");
+if(orgNr.isEmpty()) {
+  ed.setValidationMessage("Please type in a Org.Nr");
+}
+else if(!orgNr.isDigit() || orgNr.getLength() != 9) {
+  // ...
+}
+```
+
+## showDialog(EventDataDialogDefinition)
+
+Triggers a dialog to handle user input.
+
+```crmscript
+Void showDialog(EventDataDialogDefinition dialog)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

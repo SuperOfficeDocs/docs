@@ -1,0 +1,71 @@
+﻿---
+uid: crmscript.native.extratableinfo
+title: ExtraTableInfo
+description: "With this class you can retrieve meta information about an extra table. The class will only retrieve information, thus it is not possible to change an extra table from this class."
+keywords: CRMScript, ExtraTableInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# ExtraTableInfo
+
+With this class you can retrieve meta information about an extra table. The class will only retrieve information, thus it is not possible to change an extra table from this class.
+
+## Constructors
+
+### ExtraTableInfo()
+
+```crmscript
+ExtraTableInfo
+```
+
+Initializes a new instance of the ExtraTableInfo class.
+
+## Methods
+
+## getFlags()
+
+Returns the flags for this extra table.
+
+```crmscript
+Integer getFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The flags for this table.
+
+<Note>
+Available flags: FlagHidden = 0, FlagDeleted = 8
+</Note>
+
+## getId()
+
+Returns the ID of the extra table.
+
+```crmscript
+Integer getId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the extra table.
+
+## getName()
+
+Return the textual name of the extra table.
+
+```crmscript
+String getName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The textual name of the extra table.
+
+## load(String)
+
+Load the extra table with the given table name.
+
+```crmscript
+Void load(String tableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

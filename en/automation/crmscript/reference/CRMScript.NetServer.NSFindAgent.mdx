@@ -1,0 +1,860 @@
+﻿---
+uid: crmscript.netserver.nsfindagent
+title: NSFindAgent
+description: "Find functions."
+keywords: CRMScript, NSFindAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFindAgent
+
+Find functions.
+
+## Constructors
+
+### NSFindAgent()
+
+```crmscript
+NSFindAgent
+```
+
+Find functions.
+
+## Methods
+
+## CreateRestrictionGroup(String,String,String,String)
+
+Creates a restriction group, initialized with next rank etc.
+
+```crmscript
+NSArchiveRestrictionGroup CreateRestrictionGroup(String storageType, String providerName, String storageKey, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String context;
+NSArchiveRestrictionGroup res = agent.CreateRestrictionGroup(storageType, providerName, storageKey, context);
+```
+
+## DeleteRestrictionGroup(String,String,String,Integer,String)
+
+Creates a restriction group, initialized with next rank etc.
+
+```crmscript
+Void DeleteRestrictionGroup(String storageType, String providerName, String storageKey, Integer rank, String context)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+Integer rank;
+String context;
+agent.DeleteRestrictionGroup(storageType, providerName, storageKey, rank, context);
+```
+
+## Find(String,String,String,Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults Find(String storageType, String providerName, String storageKey, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby columns are also calculated by the system.
+
+The other variants of the Find method allow you greater control over the individual aspects of the process.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.Find(storageType, providerName, storageKey, pageSize, pageNumber);
+```
+
+## FindFromRestrictions(NSArchiveRestrictionInfo[],String,Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindFromRestrictions(NSArchiveRestrictionInfo[] restrictions, String providerName, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are passed in directly, not fetched by a restriction storage provider. The columns of the result are calculated based on the restriction.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+NSArchiveRestrictionInfo[] restrictions;
+String providerName;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindFromRestrictions(restrictions, providerName, pageSize, pageNumber);
+```
+
+## FindFromRestrictions2(String,String,Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindFromRestrictions2(String restrictions, String providerName, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are passed in directly, not fetched by a restriction storage provider. The columns of the result are calculated based on the restriction.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String restrictions;
+String providerName;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindFromRestrictions2(restrictions, providerName, pageSize, pageNumber);
+```
+
+## FindFromRestrictionsColumns(NSArchiveRestrictionInfo[],String,String[],Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindFromRestrictionsColumns(NSArchiveRestrictionInfo[] restrictions, String providerName, String[] desiredColumns, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are passed in directly, not fetched by a restriction storage provider.&lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is calculated by the system.&lt;para/&gt;Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.n
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+NSArchiveRestrictionInfo[] restrictions;
+String providerName;
+String[] desiredColumns;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindFromRestrictionsColumns(restrictions, providerName, desiredColumns, pageSize, pageNumber);
+```
+
+## FindFromRestrictionsColumns2(String,String,String,Integer,Integer)
+
+Execute a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindFromRestrictionsColumns2(String restrictions, String providerName, String desiredColumns, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are passed in directly, not fetched by a restriction storage provider.&lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is calculated by the system.&lt;para/&gt;Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String restrictions;
+String providerName;
+String desiredColumns;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindFromRestrictionsColumns2(restrictions, providerName, desiredColumns, pageSize, pageNumber);
+```
+
+## FindFromRestrictionsColumnsOrderBy(String,String[],Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindFromRestrictionsColumnsOrderBy(NSArchiveRestrictionInfo[] restrictions, String providerName, String[] desiredColumns, NSArchiveOrderByInfo[] orderBy, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are passed in directly, not fetched by a restriction storage provider.
+
+The desired columns of the result set are also passed in directly.
+
+The orderby information is also passed in directly.&lt;para/&gt;Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+NSArchiveRestrictionInfo[] restrictions;
+String providerName;
+String[] desiredColumns;
+NSArchiveOrderByInfo[] orderBy;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindFromRestrictionsColumnsOrderBy(restrictions, providerName, desiredColumns, orderBy, pageSize, pageNumber);
+```
+
+## FindFromRestrictionsColumnsOrderBy2(String,String,String,String,Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindFromRestrictionsColumnsOrderBy2(String restrictions, String providerName, String desiredColumns, String orderBy, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are passed in directly, not fetched by a restriction storage provider.
+
+The desired columns of the result set are also passed in directly.
+
+The orderby information is also passed in directly.&lt;para/&gt;Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String restrictions;
+String providerName;
+String desiredColumns;
+String orderBy;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindFromRestrictionsColumnsOrderBy2(restrictions, providerName, desiredColumns, orderBy, pageSize, pageNumber);
+```
+
+## FindOrderBy(String,String,String,Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindOrderBy(String storageType, String providerName, String storageKey, Integer pageSize, Integer pageNumber, NSArchiveOrderByInfo[] orderBy)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+Integer pageSize;
+Integer pageNumber;
+NSArchiveOrderByInfo[] orderBy;
+NSFindResults res = agent.FindOrderBy(storageType, providerName, storageKey, pageSize, pageNumber, orderBy);
+```
+
+## FindOrderBy2(String,String,String,Integer,Integer,String)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindOrderBy2(String storageType, String providerName, String storageKey, Integer pageSize, Integer pageNumber, String orderBy)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+Integer pageSize;
+Integer pageNumber;
+String orderBy;
+NSFindResults res = agent.FindOrderBy2(storageType, providerName, storageKey, pageSize, pageNumber, orderBy);
+```
+
+## FindWithColumns(String,String,String,String[],Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindWithColumns(String storageType, String providerName, String storageKey, String[] desiredColumns, Integer pageSize, Integer pageNumber, NSArchiveOrderByInfo[] orderBy)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are fetched from the restriction storage provider according to the given parameters.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String[] desiredColumns;
+Integer pageSize;
+Integer pageNumber;
+NSArchiveOrderByInfo[] orderBy;
+NSFindResults res = agent.FindWithColumns(storageType, providerName, storageKey, desiredColumns, pageSize, pageNumber, orderBy);
+```
+
+## FindWithExtraRestrictions(String,String,String,NSArchiveRestrictionInfo[],NSArchiveOrderByInfo[],String[],Integer,Integer)
+
+Execute a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindWithExtraRestrictions(String storageType, String providerName, String storageKey, NSArchiveRestrictionInfo[] extraRestrictions, NSArchiveOrderByInfo[] orderBy, String[] desiredColumns, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are fetched from the restriction storage provider according to the given parameters. In addition an extra set of restrictions can be added to the search. These restrictions will not be saved, they are only valid for the current search. Extra restrictions will override restrictions with the same key already stored on the storagekey.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveRestrictionInfo[] extraRestrictions;
+NSArchiveOrderByInfo[] orderBy;
+String[] desiredColumns;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindWithExtraRestrictions(storageType, providerName, storageKey, extraRestrictions, orderBy, desiredColumns, pageSize, pageNumber);
+```
+
+## FindWithExtraRestrictions2(String,String,String,String,String,String,Integer,Integer)
+
+Executes a Find operation and return a page of results.
+
+```crmscript
+NSFindResults FindWithExtraRestrictions2(String storageType, String providerName, String storageKey, String extraRestrictions, String orderBy, String desiredColumns, Integer pageSize, Integer pageNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSFindResults](CRMScript.NetServer.NSFindResults)
+
+<Note>
+The criteria for the Find are fetched from the restriction storage provider according to the given parameters. In addition an extra set of restrictions can be added to the search. These restrictions will not be saved, they are only valid for the current search. Extra restrictions will override restrictions with the same key already stored on the storagekey.
+</Note>
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String extraRestrictions;
+String orderBy;
+String desiredColumns;
+Integer pageSize;
+Integer pageNumber;
+NSFindResults res = agent.FindWithExtraRestrictions2(storageType, providerName, storageKey, extraRestrictions, orderBy, desiredColumns, pageSize, pageNumber);
+```
+
+## GetAvailableRestrictionColumns(String,String)
+
+Gets a list of the column names corresponding to available restrictions for a certain archive provider and restriction storage provider. Such columns have CanRestrict set to true, and are supported by the given restriction storage provider.
+
+```crmscript
+String[] GetAvailableRestrictionColumns(String storageType, String providerName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - list of the column names corresponding to available restrictions for a certain archive provider.
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String[] res = agent.GetAvailableRestrictionColumns(storageType, providerName);
+```
+
+## GetCriteriaInformation(String,String,String,String[])
+
+Gets criteria information from a set of saved criteria. The result contains the restrictions in two forms: fully populated NSArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
+
+```crmscript
+NSCriteriaInformation GetCriteriaInformation(String storageType, String providerName, String storageKey, String[] staticColumns)
+```
+
+**Returns:** [CRMScript.NetServer.NSCriteriaInformation](CRMScript.NetServer.NSCriteriaInformation)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String[] staticColumns;
+NSCriteriaInformation res = agent.GetCriteriaInformation(storageType, providerName, storageKey, staticColumns);
+```
+
+## GetCriteriaInformationWithContext(String,String,String,String[],String)
+
+Gets criteria information from a set of saved criteria. The result contains the restrictions in two forms: fully populated NSArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
+
+```crmscript
+NSCriteriaInformation GetCriteriaInformationWithContext(String storageType, String providerName, String storageKey, String[] staticColumns, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSCriteriaInformation](CRMScript.NetServer.NSCriteriaInformation)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String[] staticColumns;
+String context;
+NSCriteriaInformation res = agent.GetCriteriaInformationWithContext(storageType, providerName, storageKey, staticColumns, context);
+```
+
+## GetDefaultDesiredColumns(String,String,String)
+
+Calculates the default desired columns, i.e., the result columns for a given search. The search is defined by a storage type, provider name and storage key, which are used to fetch the corresponding restrictions from the database (in the same way as Find does). If you want to specify the restriction directly, use the GetDefaultDesiredColumnsFromRestrictions method instead. This is the algorithm that is used by the Find service method.
+
+```crmscript
+NSArchiveColumnInfo[] GetDefaultDesiredColumns(String storageType, String providerName, String storageKey)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveColumnInfo[] res = agent.GetDefaultDesiredColumns(storageType, providerName, storageKey);
+```
+
+## GetDefaultDesiredColumnsFromRestrictions(String,NSArchiveRestrictionInfo[])
+
+Calculate the default desired columns, i.e., the result columns for a given search. The search is defined by a provider name and a set of restrictions. This is the algorithm that is used by the Find service method.
+
+```crmscript
+NSArchiveColumnInfo[] GetDefaultDesiredColumnsFromRestrictions(String providerName, NSArchiveRestrictionInfo[] restrictions)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String providerName;
+NSArchiveRestrictionInfo[] restrictions;
+NSArchiveColumnInfo[] res = agent.GetDefaultDesiredColumnsFromRestrictions(providerName, restrictions);
+```
+
+## GetDefaultDesiredColumnsFromRestrictions2(String,String)
+
+Calculate the default desired columns, i.e., the result columns for a given search. The search is defined by a provider name and a set of restrictions. This is the algorithm that is used by the Find service method.
+
+```crmscript
+NSArchiveColumnInfo[] GetDefaultDesiredColumnsFromRestrictions2(String providerName, String restrictions)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String providerName;
+String restrictions;
+NSArchiveColumnInfo[] res = agent.GetDefaultDesiredColumnsFromRestrictions2(providerName, restrictions);
+```
+
+## GetDefaultOrderBy(String,String,String)
+
+Calculates the default orderby columns for a given provider and a search. The search is specified by a storage type, provider name and storage key, and is fetched from the database. Default desired columns are then calculated for the search, and those columns are then used as the basis for calculating an order by. If you want to specify the desired columns directly, use the GetDefaultOrderByFromDesiredColumns method instead.  This is the same algorithm that is used by the Find service method.
+
+```crmscript
+NSArchiveOrderByInfo[] GetDefaultOrderBy(String storageType, String providerName, String storageKey)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveOrderByInfo](CRMScript.NetServer.NSArchiveOrderByInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveOrderByInfo[] res = agent.GetDefaultOrderBy(storageType, providerName, storageKey);
+```
+
+## GetDefaultOrderByFromDesiredColumns(String,String[])
+
+Calculate the default orderby columns for a given provider and a set of desired columns. This is the same algorithm that is used by the Find service method.
+
+```crmscript
+NSArchiveOrderByInfo[] GetDefaultOrderByFromDesiredColumns(String providerName, String[] desiredColumns)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveOrderByInfo](CRMScript.NetServer.NSArchiveOrderByInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String providerName;
+String[] desiredColumns;
+NSArchiveOrderByInfo[] res = agent.GetDefaultOrderByFromDesiredColumns(providerName, desiredColumns);
+```
+
+## GetRestrictionGroup(String,String,String,Integer,String)
+
+Return the restriction group with given rank or a blank carrier.
+
+```crmscript
+NSArchiveRestrictionGroup GetRestrictionGroup(String storageType, String providerName, String storageKey, Integer rank, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+Integer rank;
+String context;
+NSArchiveRestrictionGroup res = agent.GetRestrictionGroup(storageType, providerName, storageKey, rank, context);
+```
+
+## GetRestrictionGroups(String,String,String,String)
+
+Returns all the restriction groups.
+
+```crmscript
+NSArchiveRestrictionGroup[] GetRestrictionGroups(String storageType, String providerName, String storageKey, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String context;
+NSArchiveRestrictionGroup[] res = agent.GetRestrictionGroups(storageType, providerName, storageKey, context);
+```
+
+## GetSpecifiedCriteriaInformationWithDefaults(String,String,String,String[],String[])
+
+Gets criteria information from a set of saved criteria, for a specific set of columns. The result contains the restrictions in two forms: fully populated NSArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.
+
+```crmscript
+NSCriteriaInformation GetSpecifiedCriteriaInformationWithDefaults(String storageType, String providerName, String storageKey, String[] desiredColumnNames, String[] staticColumns)
+```
+
+**Returns:** [CRMScript.NetServer.NSCriteriaInformation](CRMScript.NetServer.NSCriteriaInformation)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String[] desiredColumnNames;
+String[] staticColumns;
+NSCriteriaInformation res = agent.GetSpecifiedCriteriaInformationWithDefaults(storageType, providerName, storageKey, desiredColumnNames, staticColumns);
+```
+
+## GetSpecifiedCriteriaInformationWithDefaultsWithContext(String,String,String,String[],String[],String)
+
+Gets criteria information from a set of saved criteria, for a specific set of columns. The result contains the restrictions in two forms: fully populated NSArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.
+
+```crmscript
+NSCriteriaInformation GetSpecifiedCriteriaInformationWithDefaultsWithContext(String storageType, String providerName, String storageKey, String[] desiredColumnNames, String[] staticColumns, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSCriteriaInformation](CRMScript.NetServer.NSCriteriaInformation)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String[] desiredColumnNames;
+String[] staticColumns;
+String context;
+NSCriteriaInformation res = agent.GetSpecifiedCriteriaInformationWithDefaultsWithContext(storageType, providerName, storageKey, desiredColumnNames, staticColumns, context);
+```
+
+## PopulateRestrictions(String,NSArchiveRestrictionInfo[])
+
+Takes an incoming set of minimally populated restrictions (name + operator is required), and populates all the other parts of the NSArchiveRestrictionInfo structure. This includes column information, display values (including list value lookup), and calculated/default values where the value hints specify read-only (R).
+
+```crmscript
+NSArchiveRestrictionInfo[] PopulateRestrictions(String providerName, NSArchiveRestrictionInfo[] restrictions)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String providerName;
+NSArchiveRestrictionInfo[] restrictions;
+NSArchiveRestrictionInfo[] res = agent.PopulateRestrictions(providerName, restrictions);
+```
+
+## PopulateRestrictionValues(NSArchiveRestrictionInfo[])
+
+Takes an incoming set of Restrictions (name + operator + any user-entered values), and populates/expands all values as specified by the operator's ValueHints, taking into account any values already there. Used for dynamic date periods; perhaps others in the future
+
+```crmscript
+NSArchiveRestrictionInfo[] PopulateRestrictionValues(NSArchiveRestrictionInfo[] restrictions)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+NSArchiveRestrictionInfo[] restrictions;
+NSArchiveRestrictionInfo[] res = agent.PopulateRestrictionValues(restrictions);
+```
+
+## SaveRestrictionGroup(String,String,String,NSArchiveRestrictionGroup,String)
+
+Saves an array of restrictions as a restriction group for later use as search criteria (including as dynamic selection and Find).
+
+```crmscript
+Void SaveRestrictionGroup(String storageType, String providerName, String storageKey, NSArchiveRestrictionGroup restrictionGroup, String context)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveRestrictionGroup restrictionGroup;
+String context;
+agent.SaveRestrictionGroup(storageType, providerName, storageKey, restrictionGroup, context);
+```
+
+## SaveRestrictionGroups(String,String,String,NSArchiveRestrictionGroup[],String)
+
+Saves and re-ranks an array of restriction groups, returning the possibly modified array.
+
+```crmscript
+NSArchiveRestrictionGroup[] SaveRestrictionGroups(String storageType, String providerName, String storageKey, NSArchiveRestrictionGroup[] restrictionGroups, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[]
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveRestrictionGroup[] restrictionGroups;
+String context;
+NSArchiveRestrictionGroup[] res = agent.SaveRestrictionGroups(storageType, providerName, storageKey, restrictionGroups, context);
+```
+
+## SaveRestrictions(String,String,NSArchiveRestrictionInfo[],String)
+
+Saves an array of restrictions for later use as search criteria (including as dynamic selection and Find).
+
+```crmscript
+Void SaveRestrictions(String storageType, String providerName, String storageKey, NSArchiveRestrictionInfo[] restrictions)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveRestrictionInfo[] restrictions;
+agent.SaveRestrictions(storageType, providerName, storageKey, restrictions);
+```
+
+## SaveRestrictions2(String,String,String,String)
+
+Saves an array of restrictions for later use as search criteria (including as dynamic selection and Find).
+
+```crmscript
+Void SaveRestrictions2(String storageType, String providerName, String storageKey, String restrictions)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String restrictions;
+agent.SaveRestrictions2(storageType, providerName, storageKey, restrictions);
+```
+
+## SaveRestrictionsAndGetCriteriaInformation(String,String,String,NSArchiveRestrictionInfo[],String[])
+
+Saves an array of restrictions for later use as search criteria (including as dynamic selection and Find). Then, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.
+
+```crmscript
+NSCriteriaInformation SaveRestrictionsAndGetCriteriaInformation(String storageType, String providerName, String storageKey, NSArchiveRestrictionInfo[] restrictions, String[] staticColumns)
+```
+
+**Returns:** [CRMScript.NetServer.NSCriteriaInformation](CRMScript.NetServer.NSCriteriaInformation)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveRestrictionInfo[] restrictions;
+String[] staticColumns;
+NSCriteriaInformation res = agent.SaveRestrictionsAndGetCriteriaInformation(storageType, providerName, storageKey, restrictions, staticColumns);
+```
+
+## SaveRestrictionsAndGetCriteriaInformation2(String,String,String,String,String)
+
+Saves an array of restrictions for later use as search criteria (including as dynamic selection and Find). Then, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.
+
+```crmscript
+NSCriteriaInformation SaveRestrictionsAndGetCriteriaInformation2(String storageType, String providerName, String storageKey, String restrictions, String staticColumns)
+```
+
+**Returns:** [CRMScript.NetServer.NSCriteriaInformation](CRMScript.NetServer.NSCriteriaInformation)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String restrictions;
+String staticColumns;
+NSCriteriaInformation res = agent.SaveRestrictionsAndGetCriteriaInformation2(storageType, providerName, storageKey, restrictions, staticColumns);
+```
+
+## SaveRestrictionsWithContext(String,String,String,NSArchiveRestrictionInfo[],String)
+
+Saves an array of restrictions for later use as search criteria (including as dynamic selection and Find).
+
+```crmscript
+Void SaveRestrictionsWithContext(String storageType, String providerName, String storageKey, NSArchiveRestrictionInfo[] restrictions, String context)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+NSArchiveRestrictionInfo[] restrictions;
+String context;
+agent.SaveRestrictionsWithContext(storageType, providerName, storageKey, restrictions, context);
+```
+
+## SaveRestrictionsWithContext2(String,String,String,String,String)
+
+Saves an array of restrictions for later use as search criteria (including as dynamic selection and Find).
+
+```crmscript
+Void SaveRestrictionsWithContext2(String storageType, String providerName, String storageKey, String restrictions, String context)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFindAgent agent;
+String storageType;
+String providerName;
+String storageKey;
+String restrictions;
+String context;
+agent.SaveRestrictionsWithContext2(storageType, providerName, storageKey, restrictions, context);
+```

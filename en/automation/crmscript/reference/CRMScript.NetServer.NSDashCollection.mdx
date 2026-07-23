@@ -1,0 +1,87 @@
+﻿---
+uid: crmscript.netserver.nsdashcollection
+title: NSDashCollection
+description: "Carrier object for NSDashCollection."
+keywords: CRMScript, NSDashCollection, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDashCollection
+
+Carrier object for NSDashCollection.
+
+## Constructors
+
+### NSDashCollection()
+
+```crmscript
+NSDashCollection
+```
+
+Initializes a new instance of the NSDashCollection class.
+
+## Methods
+
+## GetFavourites()
+
+Returns the associates favourite dashboards.
+
+```crmscript
+NSDash[] GetFavourites()
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)[]
+
+## GetPinned()
+
+Returns dashboards pinned to the associate.
+
+```crmscript
+NSDash[] GetPinned()
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)[]
+
+## GetOther()
+
+Returns other dashboards.
+
+```crmscript
+NSDash[] GetOther()
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)[]
+
+## SetFavourites(NSDash[])
+
+Set associates favourite dashboards.
+
+```crmscript
+Void SetFavourites(NSDash[] dashboards)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPinned(NSDash[])
+
+Sets dashboards pinned to the associate.
+
+```crmscript
+Void SetPinned(NSDash[] dashboards)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetOther(NSDash[])
+
+Sets other dashboards.
+
+```crmscript
+Void SetOther(NSDash[] dashboards)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

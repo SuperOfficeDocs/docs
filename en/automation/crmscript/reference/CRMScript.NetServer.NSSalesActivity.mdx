@@ -1,0 +1,118 @@
+﻿---
+uid: crmscript.netserver.nssalesactivity
+title: NSSalesActivity
+description: ""
+keywords: CRMScript, NSSalesActivity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSalesActivity
+
+## Constructors
+
+### NSSalesActivity()
+
+```crmscript
+NSSalesActivity
+```
+
+Initializes a new instance of the NSSalesActivity class.
+
+## Methods
+
+## GetRequestedContacts()
+
+```crmscript
+NSContact[] GetRequestedContacts()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact)[] - The companies that match the request.
+
+**Example:**
+
+```crmscript
+NSSalesActivity thing;
+NSContact[] requestedContacts = thing.GetRequestedContacts();
+```
+
+## GetRequestedPerson()
+
+```crmscript
+NSPerson GetRequestedPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - The person that matches the request.
+
+**Example:**
+
+```crmscript
+NSSalesActivity thing;
+NSPerson requestedPerson = thing.GetRequestedPerson();
+```
+
+## GetSalesRep()
+
+```crmscript
+NSPerson GetSalesRep()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - The sales representative for the person that matches the request.
+
+**Example:**
+
+```crmscript
+NSSalesActivity thing;
+NSPerson salesRep = thing.GetSalesRep();
+```
+
+## SetRequestedContacts(NSContact[])
+
+```crmscript
+Void SetRequestedContacts(NSContact[] requestedContacts)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSalesActivity thing;
+NSContact[] requestedContacts;
+thing.SetRequestedContacts(requestedContacts);
+```
+
+## SetRequestedPerson(NSPerson)
+
+```crmscript
+Void SetRequestedPerson(NSPerson requestedPerson)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSalesActivity thing;
+NSPerson requestedPerson;
+thing.SetRequestedPerson(requestedPerson);
+```
+
+## SetSalesRep(NSPerson)
+
+```crmscript
+Void SetSalesRep(NSPerson salesRep)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSalesActivity thing;
+NSPerson salesRep;
+thing.SetSalesRep(salesRep);
+```

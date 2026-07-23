@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nsticketstatusentity
+title: NSTicketStatusEntity
+description: "Entity for a ticket status. This entity describes the meta data for a ticket status, and provides special operations on it."
+keywords: CRMScript, NSTicketStatusEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketStatusEntity
+
+Entity for a ticket status. This entity describes the meta data for a ticket status, and provides special operations on it.
+
+## Constructors
+
+### NSTicketStatusEntity()
+
+```crmscript
+NSTicketStatusEntity
+```
+
+Initializes a new instance of the NSTicketStatusEntity class.
+
+## Methods
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of user defined ticket status.
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+String name = thing.GetName();
+```
+
+## GetNoEmailReopen()
+
+```crmscript
+Bool GetNoEmailReopen()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Whether inbound emails can reopen requests with this status or not.
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Bool noEmailReopen = thing.GetNoEmailReopen();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The classic ticket status (active/closed/postponed/deleted). See &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Integer status = thing.GetStatus();
+```
+
+## GetTicketStatusId()
+
+```crmscript
+Integer GetTicketStatusId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Integer ticketStatusId = thing.GetTicketStatusId();
+```
+
+## GetTimeCounter()
+
+```crmscript
+Integer GetTimeCounter()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Which field in ticket we count time spent on (queue, internal, external). See &lt;xref href=\"CRMScript.NetServer.TicketStatusTimeCounter\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Integer timeCounter = thing.GetTimeCounter();
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetNoEmailReopen(Bool)
+
+```crmscript
+Void SetNoEmailReopen(Bool noEmailReopen)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Bool noEmailReopen;
+thing.SetNoEmailReopen(noEmailReopen);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetTicketStatusId(Integer)
+
+```crmscript
+Void SetTicketStatusId(Integer ticketStatusId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Integer ticketStatusId;
+thing.SetTicketStatusId(ticketStatusId);
+```
+
+## SetTimeCounter(Integer)
+
+```crmscript
+Void SetTimeCounter(Integer timeCounter)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketStatusEntity thing;
+Integer timeCounter;
+thing.SetTimeCounter(timeCounter);
+```

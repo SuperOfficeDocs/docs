@@ -1,0 +1,66 @@
+﻿---
+uid: crmscript.native.yearschedule
+title: YearSchedule
+description: "This class is used to represent a year schedule. A year can be composed of several WeekSchedules."
+keywords: CRMScript, YearSchedule, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# YearSchedule
+
+This class is used to represent a year schedule. A year can be composed of several WeekSchedules.
+
+## Constructors
+
+### YearSchedule()
+
+```crmscript
+YearSchedule
+```
+
+This class is used to represent a year schedule. A year can be composed of several WeekSchedules.
+
+## Methods
+
+## addTimeSpan(DateTime,TimeSpan)
+
+This function adds a time span to the current year schedule.
+
+```crmscript
+DateTime addTimeSpan(DateTime dt, TimeSpan sp)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## addWS(WeekSchedule,Integer,Integer)
+
+This function adds a week schedule to the year schedule.
+
+```crmscript
+Void addWS(WeekSchedule ws, Integer mStop, Integer dStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getDifference(DateTime,DateTime)
+
+Gets difference between two given times. The function returns a timespan.
+
+Counting will skip inactive periodes, defined by the different weekschedules that may be crossed.
+
+```crmscript
+TimeSpan getDifference(DateTime from, DateTime to)
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+|---|---|---|
+| from | [CRMScript.Global.DateTime](CRMScript.Global.DateTime) | Count from this date. |
+| to | [CRMScript.Global.DateTime](CRMScript.Global.DateTime) | Count to this date. |
+
+**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan)

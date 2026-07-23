@@ -1,0 +1,372 @@
+﻿---
+uid: crmscript.netserver.nsrefcountentity
+title: NSRefCountEntity
+description: "A refcount entity for a number allocation."
+keywords: CRMScript, NSRefCountEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSRefCountEntity
+
+A refcount entity for a number allocation.
+
+## Constructors
+
+### NSRefCountEntity()
+
+```crmscript
+NSRefCountEntity
+```
+
+Initializes a new instance of the NSRefCountEntity class.
+
+## Methods
+
+## GetAllocate()
+
+```crmscript
+Bool GetAllocate()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Allocate numbers automatically.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool allocate = thing.GetAllocate();
+```
+
+## GetAllowBlank()
+
+```crmscript
+Bool GetAllowBlank()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Allow blank  as a valid value.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool allowBlank = thing.GetAllowBlank();
+```
+
+## GetCurrentValue()
+
+```crmscript
+Integer GetCurrentValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Current value of counter.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer currentValue = thing.GetCurrentValue();
+```
+
+## GetField()
+
+```crmscript
+String GetField()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Field identifier in string format table.field.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+String field = thing.GetField();
+```
+
+## GetReadOnly()
+
+```crmscript
+Bool GetReadOnly()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Target field is read only in GUi.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool readOnly = thing.GetReadOnly();
+```
+
+## GetRecordId()
+
+```crmscript
+Integer GetRecordId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Record ID in target table, used when there are separate counters for each target record.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer recordId = thing.GetRecordId();
+```
+
+## GetRefCountsId()
+
+```crmscript
+Integer GetRefCountsId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer refCountsId = thing.GetRefCountsId();
+```
+
+## GetSatPrefix()
+
+```crmscript
+Integer GetSatPrefix()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - size of prefix for Satellite use of this counter.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer satPrefix = thing.GetSatPrefix();
+```
+
+## GetSuggestedRecords()
+
+```crmscript
+NSMDOListItem[] GetSuggestedRecords()
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[] - List of valid entities, the associated record is selected in the list, used records are filtered out.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+NSMDOListItem[] suggestedRecords = thing.GetSuggestedRecords();
+```
+
+## GetTravelPrefix()
+
+```crmscript
+Integer GetTravelPrefix()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - size of prefix for Travel use of ths counter.
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer travelPrefix = thing.GetTravelPrefix();
+```
+
+## GetUnique()
+
+Checks that entered value is unique
+
+```crmscript
+Bool GetUnique()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool unique = thing.GetUnique();
+```
+
+## SetAllocate(Bool)
+
+```crmscript
+Void SetAllocate(Bool allocate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool allocate;
+thing.SetAllocate(allocate);
+```
+
+## SetAllowBlank(Bool)
+
+```crmscript
+Void SetAllowBlank(Bool allowBlank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool allowBlank;
+thing.SetAllowBlank(allowBlank);
+```
+
+## SetCurrentValue(Integer)
+
+```crmscript
+Void SetCurrentValue(Integer currentValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer currentValue;
+thing.SetCurrentValue(currentValue);
+```
+
+## SetField(String)
+
+```crmscript
+Void SetField(String field)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+String field;
+thing.SetField(field);
+```
+
+## SetReadOnly(Bool)
+
+```crmscript
+Void SetReadOnly(Bool readOnly)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool readOnly;
+thing.SetReadOnly(readOnly);
+```
+
+## SetRecordId(Integer)
+
+```crmscript
+Void SetRecordId(Integer recordId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer recordId;
+thing.SetRecordId(recordId);
+```
+
+## SetRefCountsId(Integer)
+
+```crmscript
+Void SetRefCountsId(Integer refCountsId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer refCountsId;
+thing.SetRefCountsId(refCountsId);
+```
+
+## SetSatPrefix(Integer)
+
+```crmscript
+Void SetSatPrefix(Integer satPrefix)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer satPrefix;
+thing.SetSatPrefix(satPrefix);
+```
+
+## SetSuggestedRecords(NSMDOListItem[])
+
+```crmscript
+Void SetSuggestedRecords(NSMDOListItem[] suggestedRecords)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+NSMDOListItem[] suggestedRecords;
+thing.SetSuggestedRecords(suggestedRecords);
+```
+
+## SetTravelPrefix(Integer)
+
+```crmscript
+Void SetTravelPrefix(Integer travelPrefix)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Integer travelPrefix;
+thing.SetTravelPrefix(travelPrefix);
+```
+
+## SetUnique(Bool)
+
+Checks that entered value is unique
+
+```crmscript
+Void SetUnique(Bool unique)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRefCountEntity thing;
+Bool unique;
+thing.SetUnique(unique);
+```

@@ -1,0 +1,516 @@
+﻿---
+uid: crmscript.netserver.nsticketcategoryentity
+title: NSTicketCategoryEntity
+description: "Describes the meta data for a ticket category, and provides special operations on it."
+keywords: CRMScript, NSTicketCategoryEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketCategoryEntity
+
+Describes the meta data for a ticket category, and provides special operations on it.
+
+## Constructors
+
+### NSTicketCategoryEntity()
+
+```crmscript
+NSTicketCategoryEntity
+```
+
+Initializes a new instance of the NSTicketCategoryEntity class.
+
+## Methods
+
+## GetAssignmentLag()
+
+```crmscript
+Integer GetAssignmentLag()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of minutes we shall override the assignment if a customer sends consecutive messages to this category.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer assignmentLag = thing.GetAssignmentLag();
+```
+
+## GetCategoryMaster()
+
+```crmscript
+Integer GetCategoryMaster()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The user associated with this category.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer categoryMaster = thing.GetCategoryMaster();
+```
+
+## GetClosingStatus()
+
+```crmscript
+Integer GetClosingStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Should new requests have the 'close request' in this category checked as default, or should the users preferences be selected? See &lt;xref href=\"CRMScript.NetServer.TicketCategoryClosingStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer closingStatus = thing.GetClosingStatus();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on an NSTicketCategoryEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetDelegateMethod()
+
+```crmscript
+Integer GetDelegateMethod()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - An integer indicating the delegation method for this category. See &lt;xref href=\"CRMScript.NetServer.TicketCategoryDelegateMethod\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer delegateMethod = thing.GetDelegateMethod();
+```
+
+## GetExternalName()
+
+```crmscript
+String GetExternalName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external name for this category, used for the customer frontend.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String externalName = thing.GetExternalName();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on NSTicketCategoryEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing extra field values by field name.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetFlags()
+
+```crmscript
+Integer GetFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A bitmask representing flags for this category. See &lt;xref href=\"CRMScript.NetServer.TicketCategoryFlags\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer flags = thing.GetFlags();
+```
+
+## GetFullname()
+
+```crmscript
+String GetFullname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String fullname = thing.GetFullname();
+```
+
+## GetMsgClosingStatus()
+
+```crmscript
+Integer GetMsgClosingStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Should new messages have the 'close request' in this category checked as default, or should the users preferences be selected? See &lt;xref href=\"CRMScript.NetServer.TicketCategoryClosingStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer msgClosingStatus = thing.GetMsgClosingStatus();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The (short) name of this category. E.g. 'support'.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String name = thing.GetName();
+```
+
+## GetNotificationEmail()
+
+```crmscript
+String GetNotificationEmail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Comma-separated list of addresses to notify when requests are re-delegated to (unassigned) in this category.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String notificationEmail = thing.GetNotificationEmail();
+```
+
+## GetParentId()
+
+```crmscript
+Integer GetParentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The parent category for this category. -1 if this is a top-level category.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer parentId = thing.GetParentId();
+```
+
+## GetReplyTemplate()
+
+```crmscript
+Integer GetReplyTemplate()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Reply template to merge with messages posted in this category.
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer replyTemplate = thing.GetReplyTemplate();
+```
+
+## GetTicketCategoryId()
+
+```crmscript
+Integer GetTicketCategoryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the ticket category. (primary key).
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer ticketCategoryId = thing.GetTicketCategoryId();
+```
+
+## SetAssignmentLag(Integer)
+
+```crmscript
+Void SetAssignmentLag(Integer assignmentLag)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer assignmentLag;
+thing.SetAssignmentLag(assignmentLag);
+```
+
+## SetCategoryMaster(Integer)
+
+```crmscript
+Void SetCategoryMaster(Integer categoryMaster)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer categoryMaster;
+thing.SetCategoryMaster(categoryMaster);
+```
+
+## SetClosingStatus(Integer)
+
+```crmscript
+Void SetClosingStatus(Integer closingStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer closingStatus;
+thing.SetClosingStatus(closingStatus);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on an NSTicketCategoryEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+udefs["x_foo"] = "foobar";
+udefs["x_bar"] = "456"; // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetDelegateMethod(Integer)
+
+```crmscript
+Void SetDelegateMethod(Integer delegateMethod)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer delegateMethod;
+thing.SetDelegateMethod(delegateMethod);
+```
+
+## SetExternalName(String)
+
+```crmscript
+Void SetExternalName(String externalName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String externalName;
+thing.SetExternalName(externalName);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on NSTicketCategoryEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Map extras;
+extras["SuperOffice:1"] = "[I:123]";
+extras["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+extras["custom.progid"] = "foobar";
+thing.SetExtraFields(extras);
+```
+
+## SetFlags(Integer)
+
+```crmscript
+Void SetFlags(Integer flags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer flags;
+thing.SetFlags(flags);
+```
+
+## SetFullname(String)
+
+```crmscript
+Void SetFullname(String fullname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String fullname;
+thing.SetFullname(fullname);
+```
+
+## SetMsgClosingStatus(Integer)
+
+```crmscript
+Void SetMsgClosingStatus(Integer msgClosingStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer msgClosingStatus;
+thing.SetMsgClosingStatus(msgClosingStatus);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetNotificationEmail(String)
+
+```crmscript
+Void SetNotificationEmail(String notificationEmail)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+String notificationEmail;
+thing.SetNotificationEmail(notificationEmail);
+```
+
+## SetParentId(Integer)
+
+```crmscript
+Void SetParentId(Integer parentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer parentId;
+thing.SetParentId(parentId);
+```
+
+## SetReplyTemplate(Integer)
+
+```crmscript
+Void SetReplyTemplate(Integer replyTemplate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer replyTemplate;
+thing.SetReplyTemplate(replyTemplate);
+```
+
+## SetTicketCategoryId(Integer)
+
+```crmscript
+Void SetTicketCategoryId(Integer ticketCategoryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketCategoryEntity thing;
+Integer ticketCategoryId;
+thing.SetTicketCategoryId(ticketCategoryId);
+```

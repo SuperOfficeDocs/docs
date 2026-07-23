@@ -1,0 +1,40 @@
+﻿---
+uid: crmscript.netserver.shipmentstatus
+title: Enum ShipmentStatus
+description: "Status for shipment (started, cancelled etc)"
+keywords: CRMScript, ShipmentStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ShipmentStatus
+
+Status for shipment (started, cancelled etc)
+
+## Syntax
+
+```crmscript
+ShipmentStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| None | Initial status, shipment is left alone, can be used for working with shipment |
+| Ok | Finished, no errors. |
+| Canceled | Stopped by user. |
+| Waiting | Ready for execution, in the queue. |
+| Started | Executing (sending). |
+| StatusFailed | Finished, had some errors. |
+| Retry | Retrying the addresses which did not work |
+| Populating | Between waiting and starting. Used when we populate the recipient lists. |
+| Deleted | Deleted |
+| AwaitPopulate | Awaiting ejournalCron to start populate |
+| PopulatingOnly | eJournalCron has started populateOnly after someone saved choose recipients screen. |
+| PopulateAborted | eJournalCron has started populating, but by user request it is canceled. Now we finish populating, and then set status back to none. |
+| PopulateError |  |
+| TooManyRecipients |  |

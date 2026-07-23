@@ -1,0 +1,157 @@
+﻿---
+uid: crmscript.netserver.nsmailbox
+title: NSMailbox
+description: "Carrier containing information about a Service mailbox."
+keywords: CRMScript, NSMailbox, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMailbox
+
+Carrier containing information about a Service mailbox.
+
+## Constructors
+
+### NSMailbox()
+
+```crmscript
+NSMailbox
+```
+
+Initializes a new instance of the NSMailbox class.
+
+## Methods
+
+## GetAddress()
+
+```crmscript
+String GetAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The address associated with this mailbox (used as FROM address when sending emails).
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+String address = thing.GetAddress();
+```
+
+## GetCategoryName()
+
+The name of the category that the mailbox is connected to
+
+```crmscript
+String GetCategoryName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+String categoryName = thing.GetCategoryName();
+```
+
+## GetMailInFilterId()
+
+```crmscript
+Integer GetMailInFilterId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+Integer mailInFilterId = thing.GetMailInFilterId();
+```
+
+## GetPriorityName()
+
+```crmscript
+String GetPriorityName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the priority that the mailbox is connected to.
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+String priorityName = thing.GetPriorityName();
+```
+
+## SetAddress(String)
+
+```crmscript
+Void SetAddress(String address)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+String address;
+thing.SetAddress(address);
+```
+
+## SetCategoryName(String)
+
+```crmscript
+Void SetCategoryName(String categoryName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+String categoryName;
+thing.SetCategoryName(categoryName);
+```
+
+## SetMailInFilterId(Integer)
+
+The primary key (auto-incremented)
+
+```crmscript
+Void SetMailInFilterId(Integer mailInFilterId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+Integer mailInFilterId;
+thing.SetMailInFilterId(mailInFilterId);
+```
+
+## SetPriorityName(String)
+
+The name of the priority that the mailbox is connected to
+
+```crmscript
+Void SetPriorityName(String priorityName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailbox thing;
+String priorityName;
+thing.SetPriorityName(priorityName);
+```

@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsmultialarmdata
+title: NSMultiAlarmData
+description: "Carrier object for MultiAlarmData."
+keywords: CRMScript, NSMultiAlarmData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMultiAlarmData
+
+Carrier object for MultiAlarmData.
+
+## Constructors
+
+### NSMultiAlarmData()
+
+```crmscript
+NSMultiAlarmData
+```
+
+Initializes a new instance of the NSMultiAlarmData class.
+
+## Methods
+
+## GetAlarms()
+
+```crmscript
+NSAlarmData[] GetAlarms()
+```
+
+**Returns:** [CRMScript.NetServer.NSAlarmData](CRMScript.NetServer.NSAlarmData)[]
+
+**Example:**
+
+```crmscript
+NSMultiAlarmData thing;
+NSAlarmData[] alarms = thing.GetAlarms();
+```
+
+## GetPollingInterval()
+
+```crmscript
+Integer GetPollingInterval()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSMultiAlarmData thing;
+Integer pollingInterval = thing.GetPollingInterval();
+```
+
+## GetSilentAfter()
+
+```crmscript
+Integer GetSilentAfter()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSMultiAlarmData thing;
+Integer silentAfter = thing.GetSilentAfter();
+```
+
+## SetAlarms(NSAlarmData[])
+
+```crmscript
+Void SetAlarms(NSAlarmData[] alarms)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMultiAlarmData thing;
+NSAlarmData[] alarms;
+thing.SetAlarms(alarms);
+```
+
+## SetPollingInterval(Integer)
+
+```crmscript
+Void SetPollingInterval(Integer pollingInterval)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMultiAlarmData thing;
+Integer pollingInterval;
+thing.SetPollingInterval(pollingInterval);
+```
+
+## SetSilentAfter(Integer)
+
+```crmscript
+Void SetSilentAfter(Integer silentAfter)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMultiAlarmData thing;
+Integer silentAfter;
+thing.SetSilentAfter(silentAfter);
+```

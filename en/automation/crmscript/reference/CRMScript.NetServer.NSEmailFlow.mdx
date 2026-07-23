@@ -1,0 +1,827 @@
+﻿---
+uid: crmscript.netserver.nsemailflow
+title: NSEmailFlow
+description: "Carrier object for EmailFlow."
+keywords: CRMScript, NSEmailFlow, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSEmailFlow
+
+Carrier object for EmailFlow.
+
+## Constructors
+
+### NSEmailFlow()
+
+```crmscript
+NSEmailFlow
+```
+
+Initializes a new instance of the NSEmailFlow class.
+
+## Methods
+
+## GetEmailFlowId()
+
+Gets the primary key (ID) for the EmailFlow.
+
+```crmscript
+Integer GetEmailFlowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - EmailFlow Id.
+
+## SetEmailFlowId(Integer)
+
+Sets the primary key (ID) for the EmailFlow.
+
+```crmscript
+Void SetEmailFlowId(Integer emailFlowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetStartOnlyOnce()
+
+Gets whether a contact can start this flow only once.
+
+```crmscript
+Bool GetStartOnlyOnce()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if contact can only start once.
+
+## SetStartOnlyOnce(Bool)
+
+Sets whether a contact can start this flow only once.
+
+```crmscript
+Void SetStartOnlyOnce(Bool startOnlyOnce)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetOverrideConsentSubscription()
+
+Gets whether to override consent subscription.
+
+```crmscript
+Bool GetOverrideConsentSubscription()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True to override consent subscription.
+
+## SetOverrideConsentSubscription(Bool)
+
+Sets whether to override consent subscription.
+
+```crmscript
+Void SetOverrideConsentSubscription(Bool overrideConsentSubscription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetFromType()
+
+Gets the type of sender for the EmailFlow.
+
+```crmscript
+EmailFromType GetFromType()
+```
+
+**Returns:** [CRMScript.NetServer.EmailFromType](CRMScript.NetServer.EmailFromType) - Sender type.
+
+## SetFromType(EmailFromType)
+
+Sets the type of sender for the EmailFlow.
+
+```crmscript
+Void SetFromType(EmailFromType fromType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetFromName()
+
+Gets the name of the sender for the EmailFlow.
+
+```crmscript
+String GetFromName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sender name.
+
+## SetFromName(String)
+
+Sets the name of the sender for the EmailFlow.
+
+```crmscript
+Void SetFromName(String fromName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetFromAddr()
+
+Gets the email address of the sender for the EmailFlow.
+
+```crmscript
+String GetFromAddr()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sender email address.
+
+## SetFromAddr(String)
+
+Sets the email address of the sender for the EmailFlow.
+
+```crmscript
+Void SetFromAddr(String fromAddr)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetReplyToType()
+
+Gets the reply-to type for the EmailFlow.
+
+```crmscript
+EmailReplyToType GetReplyToType()
+```
+
+**Returns:** [CRMScript.NetServer.EmailReplyToType](CRMScript.NetServer.EmailReplyToType) - Reply-to type.
+
+## SetReplyToType(EmailReplyToType)
+
+Sets the reply-to type for the EmailFlow.
+
+```crmscript
+Void SetReplyToType(EmailReplyToType replyToType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetReplyToAddr()
+
+Gets the reply-to email address for the EmailFlow.
+
+```crmscript
+String GetReplyToAddr()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Reply-to email address.
+
+## SetReplyToAddr(String)
+
+Sets the reply-to email address for the EmailFlow.
+
+```crmscript
+Void SetReplyToAddr(String replyToAddr)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetReplyToName()
+
+Gets the name for the reply-to address in the EmailFlow.
+
+```crmscript
+String GetReplyToName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Reply-to name.
+
+## SetReplyToName(String)
+
+Sets the name for the reply-to address in the EmailFlow.
+
+```crmscript
+Void SetReplyToName(String replyToName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetSmsSender()
+
+Gets the SMS sender information for the EmailFlow.
+
+```crmscript
+String GetSmsSender()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - SMS sender information.
+
+## SetSmsSender(String)
+
+Sets the SMS sender information for the EmailFlow.
+
+```crmscript
+Void SetSmsSender(String smsSender)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetUseGoogleAnalytics()
+
+Gets whether to use Google Analytics for the EmailFlow.
+
+```crmscript
+Bool GetUseGoogleAnalytics()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True to use Google Analytics.
+
+## SetUseGoogleAnalytics(Bool)
+
+Sets whether to use Google Analytics for the EmailFlow.
+
+```crmscript
+Void SetUseGoogleAnalytics(Bool useGoogleAnalytics)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetGaSource()
+
+Gets the Google Analytics source for the EmailFlow.
+
+```crmscript
+String GetGaSource()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Google Analytics source.
+
+## SetGaSource(String)
+
+Sets the Google Analytics source for the EmailFlow.
+
+```crmscript
+Void SetGaSource(String gaSource)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetGaCampaign()
+
+Gets the Google Analytics campaign for the EmailFlow.
+
+```crmscript
+String GetGaCampaign()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Google Analytics campaign.
+
+## SetGaCampaign(String)
+
+Sets the Google Analytics campaign for the EmailFlow.
+
+```crmscript
+Void SetGaCampaign(String gaCampaign)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetUseTimeframe()
+
+Gets whether to use sender timeframe settings.
+
+```crmscript
+Bool GetUseTimeframe()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if using timeframe settings.
+
+## SetUseTimeframe(Bool)
+
+Sets whether to use sender timeframe settings.
+
+```crmscript
+Void SetUseTimeframe(Bool useTimeframe)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetSelectedDays()
+
+Gets the selected days for the sender timeframe.
+
+```crmscript
+Weekday GetSelectedDays()
+```
+
+**Returns:** [CRMScript.NetServer.Weekday](CRMScript.NetServer.Weekday) - Selected days.
+
+## SetSelectedDays(Weekday)
+
+Sets the selected days for the sender timeframe.
+
+```crmscript
+Void SetSelectedDays(Weekday selectedDays)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetTimeframeStart()
+
+Gets the start time for the sender timeframe.
+
+```crmscript
+String GetTimeframeStart()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Start time.
+
+## SetTimeframeStart(String)
+
+Sets the start time for the sender timeframe.
+
+```crmscript
+Void SetTimeframeStart(String timeframeStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetTimeframeEnd()
+
+Gets the end time for the sender timeframe.
+
+```crmscript
+String GetTimeframeEnd()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - End time.
+
+## SetTimeframeEnd(String)
+
+Sets the end time for the sender timeframe.
+
+```crmscript
+Void SetTimeframeEnd(String timeframeEnd)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetUseWorkflowStart()
+
+Gets whether to use workflow start settings.
+
+```crmscript
+Bool GetUseWorkflowStart()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if using workflow start settings.
+
+## SetUseWorkflowStart(Bool)
+
+Sets whether to use workflow start settings.
+
+```crmscript
+Void SetUseWorkflowStart(Bool useWorkflowStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetWorkflowStart()
+
+Gets the workflow start settings.
+
+```crmscript
+String GetWorkflowStart()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Workflow start settings.
+
+## SetWorkflowStart(String)
+
+Sets the workflow start settings.
+
+```crmscript
+Void SetWorkflowStart(String workflowStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetUseEnrollmentEnd()
+
+Gets whether to use enrollment end settings.
+
+```crmscript
+Bool GetUseEnrollmentEnd()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if using enrollment end settings.
+
+## SetUseEnrollmentEnd(Bool)
+
+Sets whether to use enrollment end settings.
+
+```crmscript
+Void SetUseEnrollmentEnd(Bool useEnrollmentEnd)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetEnrollmentEnd()
+
+Gets the enrollment end settings.
+
+```crmscript
+String GetEnrollmentEnd()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Enrollment end settings.
+
+## SetEnrollmentEnd(String)
+
+Sets the enrollment end settings.
+
+```crmscript
+Void SetEnrollmentEnd(String enrollmentEnd)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetRemoveFromFlows()
+
+Gets the flows to remove the sender from.
+
+```crmscript
+Vector GetRemoveFromFlows()
+```
+
+**Returns:** [CRMScript.Native.Vector](CRMScript.Native.Vector) - Flows to remove from.
+
+## SetRemoveFromFlows(Vector)
+
+Sets the flows to remove the sender from.
+
+```crmscript
+Void SetRemoveFromFlows(Vector removeFromFlows)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetTzLocation()
+
+Gets the workflow timezone setting.
+
+```crmscript
+NSTimeZoneData GetTzLocation()
+```
+
+**Returns:** [CRMScript.NetServer.NSTimeZoneData](CRMScript.NetServer.NSTimeZoneData) - Timezone data.
+
+## GetFolder()
+
+Gets the folder setting for the EmailFlow.
+
+```crmscript
+NSHierarchyEntity GetFolder()
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity) - Folder entity.
+
+## SetFolder(NSHierarchyEntity)
+
+Sets the folder setting for the EmailFlow.
+
+```crmscript
+Void SetFolder(NSHierarchyEntity folder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetAssociate()
+
+Gets the associate setting for the EmailFlow.
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Associate entity.
+
+## SetAssociate(NSAssociate)
+
+Sets the associate setting for the EmailFlow.
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetShipmentType()
+
+Gets the shipment type setting for the EmailFlow.
+
+```crmscript
+NSMDOListItem GetShipmentType()
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem) - Shipment type item.
+
+## SetShipmentType(NSMDOListItem)
+
+Sets the shipment type setting for the EmailFlow.
+
+```crmscript
+Void SetShipmentType(NSMDOListItem shipmentType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetSteps()
+
+Gets the workflow steps for the EmailFlow.
+
+```crmscript
+Vector GetSteps()
+```
+
+**Returns:** [CRMScript.Native.Vector](CRMScript.Native.Vector) - Vector of workflow steps.
+
+## SetSteps(Vector)
+
+Sets the workflow steps for the EmailFlow.
+
+```crmscript
+Void SetSteps(Vector steps)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetTriggers()
+
+Gets the triggers for the EmailFlow.
+
+```crmscript
+Vector GetTriggers()
+```
+
+**Returns:** [CRMScript.Native.Vector](CRMScript.Native.Vector) - Vector of triggers.
+
+## SetTriggers(Vector)
+
+Sets the triggers for the EmailFlow.
+
+```crmscript
+Void SetTriggers(Vector triggers)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetGoals()
+
+Gets the goals for the EmailFlow.
+
+```crmscript
+Vector GetGoals()
+```
+
+**Returns:** [CRMScript.Native.Vector](CRMScript.Native.Vector) - Vector of goals.
+
+## SetGoals(Vector)
+
+Sets the goals for the EmailFlow.
+
+```crmscript
+Void SetGoals(Vector goals)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetFilter()
+
+Gets the filter for the EmailFlow.
+
+```crmscript
+NSWorkflowFilter GetFilter()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowFilter](CRMScript.NetServer.NSWorkflowFilter) - Workflow filter.
+
+## SetFilter(NSWorkflowFilter)
+
+Sets the filter for the EmailFlow.
+
+```crmscript
+Void SetFilter(NSWorkflowFilter filter)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetBlockLists()
+
+Gets the block lists for the EmailFlow.
+
+```crmscript
+Vector GetBlockLists()
+```
+
+**Returns:** [CRMScript.Native.Vector](CRMScript.Native.Vector) - Vector of block lists.
+
+## SetBlockLists(Vector)
+
+Sets the block lists for the EmailFlow.
+
+```crmscript
+Void SetBlockLists(Vector blockLists)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetContentInfo()
+
+Gets the content information for the EmailFlow.
+
+```crmscript
+NSContentInfo GetContentInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSContentInfo](CRMScript.NetServer.NSContentInfo) - Content information.
+
+## GetExitFlowId()
+
+Gets the exit flow ID for the EmailFlow.
+
+```crmscript
+Integer GetExitFlowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Exit flow ID.
+
+## SetExitFlowId(Integer)
+
+Sets the exit flow ID for the EmailFlow.
+
+```crmscript
+Void SetExitFlowId(Integer exitFlowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetExitSuccessFlowId()
+
+Gets the exit success flow ID for the EmailFlow.
+
+```crmscript
+Integer GetExitSuccessFlowId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Exit success flow ID.
+
+## SetExitSuccessFlowId(Integer)
+
+Sets the exit success flow ID for the EmailFlow.
+
+```crmscript
+Void SetExitSuccessFlowId(Integer exitSuccessFlowId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetCreatedBy()
+
+Gets the associate that first created the EmailFlow. Read-only property.
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate who created the flow.
+
+## GetUpdatedBy()
+
+Gets the associate that last updated the EmailFlow. Read-only property.
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate who last updated the flow.
+
+## SetUpdatedBy(NSAssociate)
+
+Sets the associate that last updated the EmailFlow. Read-only property.
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetCreatedDate()
+
+Gets the date and time when the EmailFlow was created. Read-only property.
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The creation date and time.
+
+## GetUpdatedDate()
+
+Gets the date and time when the EmailFlow was last updated. Read-only property.
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last updated date and time.
+
+## GetDescription()
+
+Gets the description of the workflow.
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The description of the workflow.
+
+## GetJumpToFinish()
+
+Gets whether a contact jumps directly to finished when a goal is reached.
+
+```crmscript
+Bool GetJumpToFinish()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the contact jumps directly to finished when a goal is reached.
+
+## GetName()
+
+Gets the name of the workflow.
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the workflow.
+
+## GetStatus()
+
+Gets the status of the workflow definition.
+
+```crmscript
+WorkflowDefinitionStatus GetStatus()
+```
+
+**Returns:** [CRMScript.NetServer.WorkflowDefinitionStatus](CRMScript.NetServer.WorkflowDefinitionStatus) - The status of the workflow definition.
+
+## SetDescription(String)
+
+Sets the description of the workflow.
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetJumpToFinish(Bool)
+
+Sets whether a contact jumps directly to finished when a goal is reached.
+
+```crmscript
+Void SetJumpToFinish(Bool jumpToFinish)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetName(String)
+
+Sets the name of the workflow.
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetStatus(WorkflowDefinitionStatus)
+
+Sets the status of the workflow definition.
+
+```crmscript
+Void SetStatus(WorkflowDefinitionStatus status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetTzLocation(NSTimeZoneData)
+
+Sets the workflow timezone setting.
+
+```crmscript
+Void SetTzLocation(NSTimeZoneData tzLocation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

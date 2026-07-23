@@ -1,0 +1,488 @@
+﻿---
+uid: crmscript.netserver.nspreviewmailing
+title: NSPreviewMailing
+description: ""
+keywords: CRMScript, NSPreviewMailing, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPreviewMailing
+
+## Constructors
+
+### NSPreviewMailing()
+
+```crmscript
+NSPreviewMailing
+```
+
+## Methods
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Owning contact Id.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetContactName()
+
+```crmscript
+String GetContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String contactName = thing.GetContactName();
+```
+
+## GetDocumentMessageId()
+
+```crmscript
+Integer GetDocumentMessageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If a document was used as the message this is the document ID.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer documentMessageId = thing.GetDocumentMessageId();
+```
+
+## GetFromAddress()
+
+```crmscript
+String GetFromAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Email address to put in the From header of the messages.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String fromAddress = thing.GetFromAddress();
+```
+
+## GetLinkClicks()
+
+```crmscript
+Integer GetLinkClicks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of links clicked in the mailing.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer linkClicks = thing.GetLinkClicks();
+```
+
+## GetMessageId()
+
+```crmscript
+Integer GetMessageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer messageId = thing.GetMessageId();
+```
+
+## GetMessageSubject()
+
+```crmscript
+String GetMessageSubject()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The mail subject field of the message.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String messageSubject = thing.GetMessageSubject();
+```
+
+## GetOpened()
+
+```crmscript
+DateTime GetOpened()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date/time the customer read the mailing.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+DateTime opened = thing.GetOpened();
+```
+
+## GetPersonFullName()
+
+```crmscript
+String GetPersonFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Gets the persons full name (internal name used in clients for employees).
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String personFullName = thing.GetPersonFullName();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetSendingTime()
+
+```crmscript
+DateTime GetSendingTime()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Estimated or actual sent time (depends on status).
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+DateTime sendingTime = thing.GetSendingTime();
+```
+
+## GetShipmentDescription()
+
+```crmscript
+String GetShipmentDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Describes the shipment.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String shipmentDescription = thing.GetShipmentDescription();
+```
+
+## GetShipmentId()
+
+```crmscript
+Integer GetShipmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer shipmentId = thing.GetShipmentId();
+```
+
+## GetShipmentType()
+
+```crmscript
+String GetShipmentType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String shipmentType = thing.GetShipmentType();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Status for sending to this particular recipient. See &lt;xref href=\"CRMScript.NetServer.ShipmentAddrStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer status = thing.GetStatus();
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetContactName(String)
+
+```crmscript
+Void SetContactName(String contactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String contactName;
+thing.SetContactName(contactName);
+```
+
+## SetDocumentMessageId(Integer)
+
+```crmscript
+Void SetDocumentMessageId(Integer documentMessageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer documentMessageId;
+thing.SetDocumentMessageId(documentMessageId);
+```
+
+## SetFromAddress(String)
+
+```crmscript
+Void SetFromAddress(String fromAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String fromAddress;
+thing.SetFromAddress(fromAddress);
+```
+
+## SetLinkClicks(Integer)
+
+```crmscript
+Void SetLinkClicks(Integer linkClicks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer linkClicks;
+thing.SetLinkClicks(linkClicks);
+```
+
+## SetMessageId(Integer)
+
+```crmscript
+Void SetMessageId(Integer messageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer messageId;
+thing.SetMessageId(messageId);
+```
+
+## SetMessageSubject(String)
+
+```crmscript
+Void SetMessageSubject(String messageSubject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String messageSubject;
+thing.SetMessageSubject(messageSubject);
+```
+
+## SetOpened(DateTime)
+
+```crmscript
+Void SetOpened(DateTime opened)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+DateTime opened;
+thing.SetOpened(opened);
+```
+
+## SetPersonFullName(String)
+
+```crmscript
+Void SetPersonFullName(String personFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String personFullName;
+thing.SetPersonFullName(personFullName);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetSendingTime(DateTime)
+
+```crmscript
+Void SetSendingTime(DateTime )
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+DateTime sendingTime;
+thing.SetSendingTime(sendingTime);
+```
+
+## SetShipmentDescription(String)
+
+```crmscript
+Void SetShipmentDescription(String shipmentDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String shipmentDescription;
+thing.SetShipmentDescription(shipmentDescription);
+```
+
+## SetShipmentId(Integer)
+
+```crmscript
+Void SetShipmentId(Integer shipmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer shipmentId;
+thing.SetShipmentId(shipmentId);
+```
+
+## SetShipmentType(String)
+
+```crmscript
+Void SetShipmentType(String shipmentType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+String shipmentType;
+thing.SetShipmentType(shipmentType);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreviewMailing thing;
+Integer status;
+thing.SetStatus(status);
+```

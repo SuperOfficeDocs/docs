@@ -1,0 +1,29 @@
+﻿---
+uid: crmscript.netserver.upsertnomatchaction
+title: Enum UpsertNomatchAction
+description: "Upsert: Action to take on target table rows that do not match any incoming keys"
+keywords: CRMScript, UpsertNomatchAction, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum UpsertNomatchAction
+
+Upsert: Action to take on target table rows that do not match any incoming keys
+
+## Syntax
+
+```crmscript
+UpsertNomatchAction
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| NoChange | No action, leave target table row unchanged |
+| ZeroColumns | Zero/default-value the targeted 'columns' in all non-matching rows |
+| DeleteRow | Delete the entire row, for all non-matching-row |

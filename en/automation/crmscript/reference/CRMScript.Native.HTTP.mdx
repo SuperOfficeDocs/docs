@@ -1,0 +1,566 @@
+﻿---
+uid: crmscript.native.http
+title: HTTP
+description: "Used to retrieve the result of a URL."
+keywords: CRMScript, HTTP, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# HTTP
+
+Used to retrieve the result of a URL.
+
+## Constructors
+
+### HTTP()
+
+```crmscript
+HTTP
+```
+
+Initializes a new instance of the HTTP class.
+
+## Methods
+
+## addAttachmentData(Integer)
+
+Adds the binary data in the Service attachment specified to the body of the request.
+
+```crmscript
+Bool addAttachmentData(Integer attachmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the attachment was found; otherwise, false.
+
+<Note>
+Must be used together with POST, PUT or PATCH.
+
+Many REST endpoints expect the content to be uploaded as binary data when adding files. You can use this method for doing that. automatically set the Content-Type header based on the content type recorded in the database for the attachment. If you want to override the Content-Type, be sure to set a Content-Type header &lt;strong&gt;after&lt;/strong&gt; doing the addAttachmentData call.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+HTTP http;
+if(http.addAttachmentData(24))
+{
+  Byte[] res = http.post("https://httpbin.org/post");
+  if (!http.hasError())
+    print(String(res));
+  else
+    print(http.getErrorMessage());
+```
+
+## addBinaryData(Byte[])
+
+Adds the binary data to the body of the request.
+
+```crmscript
+Void addBinaryData(Byte[] binaryData)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Must be used together with POST, PUT or PATCH.
+
+Many REST endpoints expect the content to be uploaded as binary data when adding files. You can use this method for doing that. Normally, you also want to add a Content-Type header, indicating what kind of files this is.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+HTTP http;
+Byte[] image = http.get("https://httpbin.org/image/png");
+if (!http.hasError())
+{
+  http.addBinaryData(image);
+  http.addHeader("Content-Type", "image/png");
+  Byte[] res = http.post("https://httpbin.org/post");
+  print(String(res));
+}
+else
+{
+  print(http.getErrorMessage());
+}
+```
+
+## addDocumentData(Integer)
+
+Add the binary data in the document specified to the body of the request.
+
+```crmscript
+Bool addDocumentData(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the document was found; otherwise, false.
+
+<Note>
+Must be used together with POST, PUT or PATCH.
+
+Many REST endpoints expect the content to be uploaded as binary data when adding files. You can use this method for doing that. automatically set the Content-Type header based on the extension of the document being added. If you want to override the Content-Type, be sure to set a Content-Type header &lt;strong&gt;after&lt;/strong&gt; doing the addDocumentData call.
+</Note>
+
+**Example:**
+
+```crmscript
+#setLanguageLevel 3;
+HTTP http;
+if(http.addDocumentData(24))
+{
+  Byte[] res = http.post("https://httpbin.org/post");
+  if (!http.hasError())
+    print(String(res));
+  else
+    print(http.getErrorMessage());
+}
+```
+
+## addHeader(String,String)
+
+Adds a new header. The new header will be placed after other existing headers.
+
+```crmscript
+Void addHeader(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+Byte[] b = h.post("https://httpbin.org/post");
+if (h.hasError())
+print(h.getErrorMessage());
+else
+print(String(b));
+```
+
+## delete(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+Byte[] delete(String url)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result in a byte array.
+
+**Example:**
+
+```crmscript
+HTTP h;
+Byte[] b = h.delete("https://httpbin.org/delete");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## deleteAsStream(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+NSStream deleteAsStream(String url)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+
+**Example:**
+
+```crmscript
+HTTP h;
+NSStream b = h.deleteAsStream("https://httpbin.org/delete");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## get(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+Byte[] get(String url)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result in a byte array.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+Byte[] b = h.get("https://httpbin.org/get");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## getAsStream(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+NSStream getAsStream(String url)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+NSStream b = h.getAsStream("https://httpbin.org/get");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## getDebug()
+
+Retrieves debug output.
+
+```crmscript
+String getDebug()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The debug output.
+
+<Note>
+Turn on debug mode by calling setDebugMode(true) before you use getDebug().
+</Note>
+
+## getErrorMessage()
+
+Returns the last error message.
+
+```crmscript
+String getErrorMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The last error message.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+Byte[] b = h.put("https://httpbin.org/put");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## getResponseHeader(String)
+
+Gets a named HTTP header from the response of the HTTP request.
+
+```crmscript
+String getResponseHeader(String header)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The header.
+
+<Note>
+Case insensitive.
+</Note>
+
+## getResponseHeaders()
+
+Gets a map of all the headers from the HTTP response headers after making a HTTP call.
+
+```crmscript
+Map getResponseHeaders()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A map of all the headers from the HTTP response headers after making a HTTP call.
+
+<Note>
+The key is in lower case regardless of what was returned by the response. The value will keep the case.
+</Note>
+
+## getValue(String)
+
+General function which returns various values from the instance.
+
+```crmscript
+String getValue(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Values from the instance.
+
+<Note>
+statusCode: Will return the status code from the HTTP request (such as 404, 200). Supported from v8.0sr3.
+</Note>
+
+## hasError()
+
+Checks if there was an error in the environment.
+
+```crmscript
+Bool hasError()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if there was an error in the environment; otherwise, false.
+
+## open(String)
+
+Opens a URL and returns the result as a Byte array.
+
+```crmscript
+Byte[] open(String url)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Result as a Byte array.
+
+**Example:**
+
+```crmscript
+HTTP h;
+Byte[] b = h.open("https://httpbin.org/");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## openAsStream(String)
+
+Opens a URL and returns the result as an NSStream.
+
+```crmscript
+NSStream openAsStream(String url)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+
+**Example:**
+
+```crmscript
+HTTP h;
+NSStream b = h.openAsStream("https://httpbin.org/");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## patch(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+Byte[] patch(String url)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result as a byte array.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+Byte[] b = h.patch("https://httpbin.org/patch");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## patchAsStream(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+NSStream patchAsStream(String url)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+NSStream b = h.patchAsStream("https://httpbin.org/patch");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## post(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+Byte[] post(String url)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result as a byte array.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+Byte[] b = h.post("https://httpbin.org/post");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## postAsStream(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+NSStream postAsStream(String url)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+NSStream b = h.postAsStream("https://httpbin.org/post");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## putAsStream(String)
+
+Supports both HTTP and HTTPS.
+
+```crmscript
+NSStream putAsStream(String url)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+NSStream b = h.putAsStream("https://httpbin.org/put");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```
+
+## setDebugMode()
+
+Turns debug mode on/off to record debug output.
+
+```crmscript
+Void setDebugMode(Bool debug)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setOption(String,Bool)
+
+Option function.
+
+```crmscript
+Void setOption(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;body&gt;&lt;tr&gt;&lt;td&gt;verifyPeer&lt;/td&gt;&gt;&lt;td&gt;verify the peer's SSL certificate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;verifyHost&lt;/td&gt;&gt;&lt;td&gt;verify the certificate's name against the host&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;timeout&lt;/td&gt;&gt;&lt;td&gt;set maximum time the request is allowed to take&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;followLocation&lt;/td&gt;&gt;&lt;td&gt;follow HTTP 3xx redirects if set to 1, default is 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username&lt;/td&gt;&gt;&lt;td&gt;username used in authentication&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;password&lt;/td&gt;&gt;&lt;td&gt;password used in authentication&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;parameters&lt;/td&gt;&gt;&lt;td&gt;The complete parameters to post. This will replace whatever you have added using .setValue(), but allows you to specify the whole parameter to post. Useful when posting e.g. JSON structs instead of name=value pairs. NOTE  you need to prefix whatever you want to send with a dummy character (which will be removed) due to complexities in this class. See the example below.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;authenticationMethod&lt;/td&gt;&gt;&lt;td&gt;which authentication method to use  basic (default), digest, gssnegotiate, ntlm, digest_ie, ntlm_wb, none&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;parametersUTF8&lt;/td&gt;&gt;&lt;td&gt;From version 8.2R3. This option makes the parameters be encoded as UTF-8. Normally this is what you want, but to not break any old uses, this is an optional option.&lt;/td&gt;&lt;/tr&gt;&lt;/body&gt;&lt;/table&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+Byte[] b = h.post("https://httpbin.org/post");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+  print(String(b));
+//Here is an example for creating an issue in JIRA, hosted by Atlassian
+HTTP h2;
+String json = " {
+  "fields": {
+    "project": {
+      "key": "SUP"
+    },
+"summary": "I have a problem!.",
+"description": "Thats awesome",
+    "issuetype": {
+      "name": "Bug"
+    }
+  }
+}";
+HTTP h;
+h.setOption("username", "theUsername");
+h.setOption("password", "thePassword");
+h.addHeader("Content-Type", "application/json");
+h.setOption("parameters", json);
+print(String(h.post("https://theInstance.atlassian.net/rest/api/2/issue/")));
+```
+
+## setValue(String,String)
+
+Adds a CGI variable and its according value to the HTTP request.
+
+```crmscript
+Void setValue(String cgiVariable, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+HTTP h;
+h.addHeader("header", "test");
+h.setValue("key", "value");
+h.setValue("key2", "value2");
+h.setOption("followLocation", "true");
+Byte[] b = h.put("https://httpbin.org/put");
+if (h.hasError())
+  print(h.getErrorMessage());
+else
+```

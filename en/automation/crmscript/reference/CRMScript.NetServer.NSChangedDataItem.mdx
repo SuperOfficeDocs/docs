@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nschangeddataitem
+title: NSChangedDataItem
+description: "Table name/record ID pair used to refer to records."
+keywords: CRMScript, NSChangedDataItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChangedDataItem
+
+Table name/record ID pair used to refer to records.
+
+## Constructors
+
+### NSChangedDataItem()
+
+```crmscript
+NSChangedDataItem
+```
+
+Initializes a new instance of the NSChangedDataItem class.
+
+## Methods
+
+## GetRecordId()
+
+```crmscript
+Integer GetRecordId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of record, should never be 0
+
+**Example:**
+
+```crmscript
+NSChangedDataItem thing;
+Integer recordId = thing.GetRecordId();
+```
+
+## GetTablename()
+
+```crmscript
+String GetTablename()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of table, standardized to lowercase.
+
+**Example:**
+
+```crmscript
+NSChangedDataItem thing;
+String tablename = thing.GetTablename();
+```
+
+## SetRecordId(Integer)
+
+```crmscript
+Void SetRecordId(Integer recordId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChangedDataItem thing;
+Integer recordId;
+thing.SetRecordId(recordId);
+```
+
+## SetTablename(String)
+
+```crmscript
+Void SetTablename(String tablename)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChangedDataItem thing;
+String tablename;
+thing.SetTablename(tablename);
+```

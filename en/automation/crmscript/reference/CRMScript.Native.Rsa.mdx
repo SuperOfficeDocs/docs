@@ -1,0 +1,206 @@
+﻿---
+uid: crmscript.native.rsa
+title: Rsa
+description: "For creating and verifying RSA signatures in CRMScript."
+keywords: CRMScript, Rsa, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Rsa
+
+For creating and verifying RSA signatures in CRMScript.
+
+## Constructors
+
+### Rsa()
+
+```crmscript
+Rsa
+```
+
+Initializes a new instance of the Rsa class.
+
+## Methods
+
+## loadPrivateKey(String,String)
+
+Loads a private key. The password is optional and should be specified if needed. This method must be called in prior to creating a signature.
+
+```crmscript
+Bool loadPrivateKey(String privateKey, String password)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the key was loaded successfully; otherwise, false.
+
+## loadPublicKey(String)
+
+Loads a public key. This method must be called in prior to creating a signature.
+
+```crmscript
+Bool loadPublicKey(String publicKey)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the key was loaded successfully; otherwise, false.
+
+**Example:**
+
+```crmscript
+String pub_key = "-----BEGIN PUBLIC KEY-----MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBig....f8kXvJLBEGBR5AgMBAAE=-----END PUBLIC KEY-----";
+Rsa rsa;
+Bool b = rsa.loadPublicKey(pub_key);
+print(b.toString());
+```
+
+## createSignature(Byte[],Integer)
+
+This method will take an array of binary data and create a RSA signature using the provided hashing algorithm. The signature is returned as a byte array.
+The private key must be loaded prior to calling this method.
+
+```crmscript
+Byte[] createSignature(Byte[] data, Integer hashingAlgorithm)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Generated RSA signature as byte array.
+
+<Note>
+Hashing algorithm:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;SHA1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;SHA256&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;SHA384&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;SHA512&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+String priv_key = "-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----";
+Rsa rsa;
+Bool loaded = rsa.loadPrivateKey(priv_key, "&quot);
+Byte[] content = String("Hello world").toByteArray();
+Byte[] signature = rsa.createSignature(content, 3);
+String base64Signature = encodeBase64(signature,false);
+printLine(base64Signature);
+```
+
+## createSignature(String,Integer)
+
+This method takes a string of data and create a RSA signature using the provided hashing algorithm. This method is provided as a convenient way to create signatures for string data.
+Note that the string must be in UTF-8 encoding. If it is not, you need to use the more universal method taking a byte array as input.
+The private key must be loaded prior to calling this method.
+
+```crmscript
+Byte[] createSignature(String data, Integer hashingAlgorithm)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Generated RSA signature as byte array.
+
+<Note>
+Hashing algorithm:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;SHA1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;SHA256&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;SHA384&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;SHA512&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+String priv_key = "-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----";
+Rsa rsa;
+Bool b = rsa.loadPrivateKey(priv_key, "");
+Byte[] signature = rsa.createSignature("Hello world", 3);
+String base64Signature = encodeBase64(signature,false);
+printLine(base64Signature);
+```
+
+## verifySignature(Byte[],Byte[],Integer)
+
+This method will try to verify the RSA signature given the data and return if it was a success or not. Although you should pass in the hashing algorithm, the underlying code will try other algorithms if the signature does not pass the provided algorithm. This might change in the future, so you should specify the correct algorithm.
+The public key must be loaded prior to calling this method.
+
+```crmscript
+Bool verifySignature(Byte[] data, Byte[] signature, Integer hashingAlgorithm)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if valid; otherwise, false.
+
+<Note>
+Hashing algorithm:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;SHA1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;SHA256&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;SHA384&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;SHA512&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+String pub_key = "-----BEGIN PUBLIC KEY-----MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBig....f8kXvJLBEGBR5AgMBAAE=-----END PUBLIC KEY-----";
+Rsa rsa;
+Bool loaded = rsa.loadPublicKey(pub_key);
+Byte[] content = String("Hello world").toByteArray();
+String base64Signature = "vka6U5GrfxMWTGO....WW322CGWQ1SPJr8uZ+6"
+Bool verified = rsa.verifySignature(content, decodeBase64(base64Signature));
+```
+
+## verifySignature(String,Byte[],Integer)
+
+This method will try to verify the RSA signature given the data and return if it was a success or not. Note that the string must be in UTF-8 encoding. If it is not, you need to use the more universal method taking a byte array as input. Although you should pass in the hashing algorithm, the underlying code will try other algorithms if the signature does not pass the provided algorithm. This might change in the future, so you should specify the correct algorithm.
+The public key must be loaded prior to calling this method.
+
+```crmscript
+Bool verifySignature(String data, Byte[] signature, Integer hashingAlgorithm)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if valid; otherwise, false.
+
+<Note>
+Hashing algorithm:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;SHA1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;SHA256&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;SHA384&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;SHA512&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+String pub_key = "-----BEGIN PUBLIC KEY-----MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBig....f8kXvJLBEGBR5AgMBAAE=-----END PUBLIC KEY-----";
+Rsa rsa;
+Bool loaded = rsa.loadPublicKey(pub_key);
+String base64Signature = "vka6U5GrfxMWTGO....WW322CGWQ1SPJr8uZ+6"
+Bool verified = rsa.verifySignature("Hello world", decodeBase64(base64Signature));
+```
+
+## encrypt(Byte[])
+
+A valid public key must have been loaded into the class. This method will use the public key and do an RSA encryption of the content.
+
+```crmscript
+Byte[] encrypt(Byte[] data)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The returned byte array contains the encrypted data.
+
+**Example:**
+
+```crmscript
+String pub_key = "-----BEGIN PUBLIC KEY-----MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBig....f8kXvJLBEGBR5AgMBAAE=-----END PUBLIC KEY-----";
+Rsa rsa;
+Bool loaded = rsa.loadPublicKey(pub_key);
+Byte[] content = String("Hello world").toByteArray();
+Byte[] encrypted = rsa.encrypt(content);
+```
+
+## decrypt(Byte[])
+
+A valid private key matching the public key must have been loaded into the class. 
+This method will use the private key and do an RSA decryption of the content. The returned byte array contains the decrypted data.
+
+```crmscript
+Byte[] decrypt(Byte[] data)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The returned byte array contains the decrypted data.
+
+**Example:**
+
+```crmscript
+String pub_key = "-----BEGIN PUBLIC KEY-----MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBig....f8kXvJLBEGBR5AgMBAAE=-----END PUBLIC KEY-----";
+String priv_key = "-----BEGIN RSA PRIVATE KEY-----MIIBOwIBAAJBAMP2VEmsyBYmla....wA8pE36phyinhYbewXx2X8tQEww==-----END RSA PRIVATE KEY-----";
+Rsa rsa;
+rsa.loadPublicKey(pub_key);
+rsa.loadPrivateKey(priv_key, "");
+Byte[] content = String("Hello world").toByteArray();
+Byte[] encrypted = rsa.encrypt(content);
+Byte[] decrypted = rsa.decrypt(encrypted);
+printLine(String(decrypted));
+```

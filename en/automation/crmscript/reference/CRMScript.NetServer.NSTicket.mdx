@@ -1,0 +1,1550 @@
+﻿---
+uid: crmscript.netserver.nsticket
+title: NSTicket
+description: ""
+keywords: CRMScript, NSTicket, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicket
+
+## Constructors
+
+### NSTicket()
+
+```crmscript
+NSTicket
+```
+
+Initializes a new instance of the NSTicket class.
+
+## Methods
+
+## GetActivate()
+
+```crmscript
+DateTime GetActivate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the ticket should be activated, if it is postponed.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime activate = thing.GetActivate();
+```
+
+## GetAlertLevel()
+
+```crmscript
+Integer GetAlertLevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alert level for the ticket. Matches the level value of the ticket_alert table.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer alertLevel = thing.GetAlertLevel();
+```
+
+## GetAlertTimeout()
+
+```crmscript
+DateTime GetAlertTimeout()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket should jump to the next alert_level.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime alertTimeout = thing.GetAlertTimeout();
+```
+
+## GetAuthor()
+
+```crmscript
+String GetAuthor()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string representing the author of the ticket (same as author of first message).
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String author = thing.GetAuthor();
+```
+
+## GetBaseStatus()
+
+```crmscript
+Integer GetBaseStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status of the ticket. See &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer baseStatus = thing.GetBaseStatus();
+```
+
+## GetCategory()
+
+```crmscript
+Integer GetCategory()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the category a ticket is in.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer category = thing.GetCategory();
+```
+
+## GetCategoryFullname()
+
+```crmscript
+String GetCategoryFullname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String categoryFullname = thing.GetCategoryFullname();
+```
+
+## GetCategoryName()
+
+```crmscript
+String GetCategoryName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The (short) name of this category. E.g. 'support'.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String categoryName = thing.GetCategoryName();
+```
+
+## GetClosedAt()
+
+```crmscript
+DateTime GetClosedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the ticket was closed.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime closedAt = thing.GetClosedAt();
+```
+
+## GetConnectId()
+
+```crmscript
+Integer GetConnectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If a ticket is connected to another ticket, this field is set to the ID of the 'master' ticket.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer connectId = thing.GetConnectId();
+```
+
+## GetCreatedAt()
+
+```crmscript
+DateTime GetCreatedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the ticket was created.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime createdAt = thing.GetCreatedAt();
+```
+
+## GetCreatedBy()
+
+```crmscript
+Integer GetCreatedBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the user who created the ticket. 1 (system user) if the ticket was created externally.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedByName()
+
+```crmscript
+String GetCreatedByName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, also login name, possibly database user name.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String createdByName = thing.GetCreatedByName();
+```
+
+## GetCustId()
+
+```crmscript
+Integer GetCustId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the customer. NULL or -1 if ticket is not connected to customer.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer custId = thing.GetCustId();
+```
+
+## GetDeadline()
+
+```crmscript
+DateTime GetDeadline()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Deadline for ticket.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime deadline = thing.GetDeadline();
+```
+
+## GetFirstReadByUser()
+
+```crmscript
+DateTime GetFirstReadByUser()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket first was read by a user.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime firstReadByUser = thing.GetFirstReadByUser();
+```
+
+## GetFromAddress()
+
+```crmscript
+String GetFromAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The from-address used when this ticket got created, e.g. by email.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String fromAddress = thing.GetFromAddress();
+```
+
+## GetHasAttachment()
+
+```crmscript
+Bool GetHasAttachment()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Bool indicating if this ticket has one or more attachments.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Bool hasAttachment = thing.GetHasAttachment();
+```
+
+## GetLastChanged()
+
+```crmscript
+DateTime GetLastChanged()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last time the ticket was modified.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime lastChanged = thing.GetLastChanged();
+```
+
+## GetNumMessages()
+
+```crmscript
+Integer GetNumMessages()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total number of messages for this request.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer numMessages = thing.GetNumMessages();
+```
+
+## GetNumReplies()
+
+```crmscript
+Integer GetNumReplies()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of replies (messages) to the customer for this request.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer numReplies = thing.GetNumReplies();
+```
+
+## GetOrigin()
+
+```crmscript
+Integer GetOrigin()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What is the origin of this ticket? See &lt;xref href=\"CRMScript.NetServer.TicketOrigin\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer origin = thing.GetOrigin();
+```
+
+## GetOwnedBy()
+
+```crmscript
+Integer GetOwnedBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the user who owns the ticket. 1 (system user) if the ticket is unassigned.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer ownedBy = thing.GetOwnedBy();
+```
+
+## GetOwnedByName()
+
+```crmscript
+String GetOwnedByName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, also login name, possibly database user name.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String ownedByName = thing.GetOwnedByName();
+```
+
+## GetPersonFirstname()
+
+```crmscript
+String GetPersonFirstname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - First name.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personFirstname = thing.GetPersonFirstname();
+```
+
+## GetPersonFullname()
+
+```crmscript
+String GetPersonFullname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Gets the full name for the primary person (customer).
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personFullname = thing.GetPersonFullname();
+```
+
+## GetPersonLastname()
+
+```crmscript
+String GetPersonLastname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Last name.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personLastname = thing.GetPersonLastname();
+```
+
+## GetPersonMiddleName()
+
+```crmscript
+String GetPersonMiddleName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Middle name or 'van' etc.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personMiddleName = thing.GetPersonMiddleName();
+```
+
+## GetPriority()
+
+```crmscript
+Integer GetPriority()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the ticket_priority table.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer priority = thing.GetPriority();
+```
+
+## GetPriorityName()
+
+```crmscript
+String GetPriorityName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the priority.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String priorityName = thing.GetPriorityName();
+```
+
+## GetReadByCustomer()
+
+```crmscript
+DateTime GetReadByCustomer()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket was read by the customer.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime readByCustomer = thing.GetReadByCustomer();
+```
+
+## GetReadByOwner()
+
+```crmscript
+DateTime GetReadByOwner()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket last was read by the owner.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime readByOwner = thing.GetReadByOwner();
+```
+
+## GetReadStatus()
+
+```crmscript
+Integer GetReadStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href=\"CRMScript.NetServer.TicketReadStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer readStatus = thing.GetReadStatus();
+```
+
+## GetRealTimeSpentExternally()
+
+```crmscript
+Integer GetRealTimeSpentExternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeSpentExternally = thing.GetRealTimeSpentExternally();
+```
+
+## GetRealTimeSpentInternally()
+
+```crmscript
+Integer GetRealTimeSpentInternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeSpentInternally = thing.GetRealTimeSpentInternally();
+```
+
+## GetRealTimeSpentQueue()
+
+```crmscript
+Integer GetRealTimeSpentQueue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeSpentQueue = thing.GetRealTimeSpentQueue();
+```
+
+## GetRealTimeToClose()
+
+```crmscript
+Integer GetRealTimeToClose()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Same as time_to_close, but not calculated based on priority.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeToClose = thing.GetRealTimeToClose();
+```
+
+## GetRealTimeToReply()
+
+```crmscript
+Integer GetRealTimeToReply()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Same as time_to_reply, but not calculated based on priority.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeToReply = thing.GetRealTimeToReply();
+```
+
+## GetRepliedAt()
+
+```crmscript
+DateTime GetRepliedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime repliedAt = thing.GetRepliedAt();
+```
+
+## GetSlevel()
+
+```crmscript
+Integer GetSlevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The security-level of the ticket. See &lt;xref href=\"CRMScript.NetServer.TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer slevel = thing.GetSlevel();
+```
+
+## GetTicketId()
+
+```crmscript
+Integer GetTicketId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer ticketId = thing.GetTicketId();
+```
+
+## GetTicketStatus()
+
+```crmscript
+Integer GetTicketStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - User-defined ticket status.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer ticketStatus = thing.GetTicketStatus();
+```
+
+## GetTicketStatusDisplayValue()
+
+Gets the display name of the ticket status.
+
+```crmscript
+String GetTicketStatusDisplayValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String ticketStatusDisplayValue = thing.GetTicketStatusDisplayValue();
+```
+
+## GetTimeSpentExternally()
+
+```crmscript
+Integer GetTimeSpentExternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeSpentExternally = thing.GetTimeSpentExternally();
+```
+
+## GetTimeSpentInternally()
+
+```crmscript
+Integer GetTimeSpentInternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeSpentInternally = thing.GetTimeSpentInternally();
+```
+
+## GetTimeSpentQueue()
+
+```crmscript
+Integer GetTimeSpentQueue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeSpentQueue = thing.GetTimeSpentQueue();
+```
+
+## GetTimeToClose()
+
+```crmscript
+Integer GetTimeToClose()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority's time frame.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeToClose = thing.GetTimeToClose();
+```
+
+## GetTimeToReply()
+
+```crmscript
+Integer GetTimeToReply()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority's time frame.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeToReply = thing.GetTimeToReply();
+```
+
+## GetTitle()
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The title of the ticket.
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String title = thing.GetTitle();
+```
+
+## SetActivate(DateTime)
+
+```crmscript
+Void SetActivate(DateTime activate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime activate;
+thing.SetActivate(activate);
+```
+
+## SetAlertLevel(Integer)
+
+```crmscript
+Void SetAlertLevel(Integer alertLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer alertLevel;
+thing.SetAlertLevel(alertLevel);
+```
+
+## SetAlertTimeout(DateTime)
+
+```crmscript
+Void SetAlertTimeout(DateTime alertTimeout)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime alertTimeout;
+thing.SetAlertTimeout(alertTimeout);
+```
+
+## SetAuthor(String)
+
+```crmscript
+Void SetAuthor(String author)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String author;
+thing.SetAuthor(author);
+```
+
+## SetBaseStatus(Integer)
+
+```crmscript
+Void SetBaseStatus(Integer baseStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer baseStatus;
+thing.SetBaseStatus(baseStatus);
+```
+
+## SetCategory(Integer)
+
+```crmscript
+Void SetCategory(Integer category)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer category;
+thing.SetCategory(category);
+```
+
+## SetCategoryFullname(String)
+
+```crmscript
+Void SetCategoryFullname(String categoryFullname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String categoryFullname;
+thing.SetCategoryFullname(categoryFullname);
+```
+
+## SetCategoryName(String)
+
+```crmscript
+Void SetCategoryName(String categoryName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String categoryName;
+thing.SetCategoryName(categoryName);
+```
+
+## SetClosedAt(DateTime)
+
+```crmscript
+Void SetClosedAt(DateTime closedAt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime closedAt;
+thing.SetClosedAt(closedAt);
+```
+
+## SetConnectId(Integer)
+
+```crmscript
+Void SetConnectId(Integer connectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer connectId;
+thing.SetConnectId(connectId);
+```
+
+## SetCreatedAt(DateTime)
+
+```crmscript
+Void SetCreatedAt(DateTime createdAt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime createdAt;
+thing.SetCreatedAt(createdAt);
+```
+
+## SetCreatedBy(Integer)
+
+```crmscript
+Void SetCreatedBy(Integer createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedByName(String)
+
+```crmscript
+Void SetCreatedByName(String createdByName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String createdByName;
+thing.SetCreatedByName(createdByName);
+```
+
+## SetCustId(Integer)
+
+```crmscript
+Void SetCustId(Integer custId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer custId;
+thing.SetCustId(custId);
+```
+
+## SetDeadline(DateTime)
+
+```crmscript
+Void SetDeadline(DateTime deadline)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime deadline;
+thing.SetDeadline(deadline);
+```
+
+## SetFirstReadByUser(DateTime)
+
+```crmscript
+Void SetFirstReadByUser(DateTime firstReadByUser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime firstReadByUser;
+thing.SetFirstReadByUser(firstReadByUser);
+```
+
+## SetFromAddress(String)
+
+```crmscript
+Void SetFromAddress(String fromAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String fromAddress;
+thing.SetFromAddress(fromAddress);
+```
+
+## SetHasAttachment(Bool)
+
+```crmscript
+Void SetHasAttachment(Bool hasAttachment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Bool hasAttachment;
+thing.SetHasAttachment(hasAttachment);
+```
+
+## SetLastChanged(DateTime)
+
+```crmscript
+Void SetLastChanged(DateTime lastChanged)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime lastChanged;
+thing.SetLastChanged(lastChanged);
+```
+
+## SetNumMessages(Integer)
+
+```crmscript
+Void SetNumMessages(Integer numMessages)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer numMessages;
+thing.SetNumMessages(numMessages);
+```
+
+## SetNumReplies(Integer)
+
+```crmscript
+Void SetNumReplies(Integer numReplies)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer numReplies;
+thing.SetNumReplies(numReplies);
+```
+
+## SetOrigin(Integer)
+
+```crmscript
+Void SetOrigin(Integer origin)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer origin;
+thing.SetOrigin(origin);
+```
+
+## SetOwnedBy(Integer)
+
+```crmscript
+Void SetOwnedBy(Integer ownedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer ownedBy;
+thing.SetOwnedBy(ownedBy);
+```
+
+## SetOwnedByName(String)
+
+```crmscript
+Void SetOwnedByName(String ownedByName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String ownedByName;
+thing.SetOwnedByName(ownedByName);
+```
+
+## SetPersonFirstname(String)
+
+```crmscript
+Void SetPersonFirstname(String personFirstname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personFirstname;
+thing.SetPersonFirstname(personFirstname);
+```
+
+## SetPersonFullname(String)
+
+Sets the full name for the primary person (customer)
+
+```crmscript
+Void SetPersonFullname(String personFullname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personFullname;
+thing.SetPersonFullname(personFullname);
+```
+
+## SetPersonLastname(String)
+
+```crmscript
+Void SetPersonLastname(String personLastname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personLastname;
+thing.SetPersonLastname(personLastname);
+```
+
+## SetPersonMiddleName(String)
+
+```crmscript
+Void SetPersonMiddleName(String personMiddleName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String personMiddleName;
+thing.SetPersonMiddleName(personMiddleName);
+```
+
+## SetPriority(Integer)
+
+```crmscript
+Void SetPriority(Integer priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer priority;
+thing.SetPriority(priority);
+```
+
+## SetPriorityName(String)
+
+```crmscript
+Void SetPriorityName(String priorityName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String priorityName;
+thing.SetPriorityName(priorityName);
+```
+
+## SetReadByCustomer(DateTime)
+
+```crmscript
+Void SetReadByCustomer(DateTime readByCustomer)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime readByCustomer;
+thing.SetReadByCustomer(readByCustomer);
+```
+
+## SetReadByOwner(DateTime)
+
+```crmscript
+Void SetReadByOwner(DateTime readByOwner)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime readByOwner;
+thing.SetReadByOwner(readByOwner);
+```
+
+## SetReadStatus(Integer)
+
+```crmscript
+Void SetReadStatus(Integer readStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer readStatus;
+thing.SetReadStatus(readStatus);
+```
+
+## SetRealTimeSpentExternally(Integer)
+
+```crmscript
+Void SetRealTimeSpentExternally(Integer realTimeSpentExternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeSpentExternally;
+thing.SetRealTimeSpentExternally(realTimeSpentExternally);
+```
+
+## SetRealTimeSpentInternally(Integer)
+
+```crmscript
+Void SetRealTimeSpentInternally(Integer realTimeSpentInternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeSpentInternally;
+thing.SetRealTimeSpentInternally(realTimeSpentInternally);
+```
+
+## SetRealTimeSpentQueue(Integer)
+
+```crmscript
+Void SetRealTimeSpentQueue(Integer realTimeSpentQueue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeSpentQueue;
+thing.SetRealTimeSpentQueue(realTimeSpentQueue);
+```
+
+## SetRealTimeToClose(Integer)
+
+```crmscript
+Void SetRealTimeToClose(Integer realTimeToClose)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeToClose;
+thing.SetRealTimeToClose(realTimeToClose);
+```
+
+## SetRealTimeToReply(Integer)
+
+```crmscript
+Void SetRealTimeToReply(Integer realTimeToReply)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer realTimeToReply;
+thing.SetRealTimeToReply(realTimeToReply);
+```
+
+## SetRepliedAt(DateTime)
+
+```crmscript
+Void SetRepliedAt(DateTime repliedAt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+DateTime repliedAt;
+thing.SetRepliedAt(repliedAt);
+```
+
+## SetSlevel(Integer)
+
+```crmscript
+Void SetSlevel(Integer slevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer slevel;
+thing.SetSlevel(slevel);
+```
+
+## SetTicketId(Integer)
+
+```crmscript
+Void SetTicketId(Integer ticketId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer ticketId;
+thing.SetTicketId(ticketId);
+```
+
+## SetTicketStatus(Integer)
+
+```crmscript
+Void SetTicketStatus(Integer ticketStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer ticketStatus;
+thing.SetTicketStatus(ticketStatus);
+```
+
+## SetTicketStatusDisplayValue(String)
+
+Gets the display name of the ticket status.
+
+```crmscript
+Void SetTicketStatusDisplayValue(String ticketStatusDisplayValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String ticketStatusDisplayValue;
+thing.SetTicketStatusDisplayValue(ticketStatusDisplayValue);
+```
+
+## SetTimeSpentExternally(Integer)
+
+```crmscript
+Void SetTimeSpentExternally(Integer timeSpentExternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeSpentExternally;
+thing.SetTimeSpentExternally(timeSpentExternally);
+```
+
+## SetTimeSpentInternally(Integer)
+
+```crmscript
+Void SetTimeSpentInternally(Integer timeSpentInternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeSpentInternally;
+thing.SetTimeSpentInternally(timeSpentInternally);
+```
+
+## SetTimeSpentQueue(Integer)
+
+```crmscript
+Void SetTimeSpentQueue(Integer timeSpentQueue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeSpentQueue;
+thing.SetTimeSpentQueue(timeSpentQueue);
+```
+
+## SetTimeToClose(Integer)
+
+```crmscript
+Void SetTimeToClose(Integer timeToClose)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeToClose;
+thing.SetTimeToClose(timeToClose);
+```
+
+## SetTimeToReply(Integer)
+
+```crmscript
+Void SetTimeToReply(Integer timeToReply)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+Integer timeToReply;
+thing.SetTimeToReply(timeToReply);
+```
+
+## SetTitle(String)
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicket thing;
+String title;
+thing.SetTitle(title);
+```

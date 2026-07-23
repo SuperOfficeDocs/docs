@@ -1,0 +1,42 @@
+﻿---
+uid: crmscript.netserver.prefdescvaluetype
+title: Enum PrefDescValueType
+description: "Value for field 'valueType' in table 'prefdesc'."
+keywords: CRMScript, PrefDescValueType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum PrefDescValueType
+
+Value for field 'valueType' in table 'prefdesc'.
+
+## Syntax
+
+```crmscript
+PrefDescValueType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown - used when initializing |
+| Number | Preference value is a number |
+| Text | Preference value is a text (max len 99 characters) |
+| Bool | Preference value is Boolean |
+| ListOfValues | Preference value is a list of separate value |
+| ListTableRef | Preference value is a record ID in the given MDO list table; maxValue contains the tablenumberø |
+| TimeList | Preference value is a time, value is seconds since midnight (28800 = 08:00) |
+| ContactID | Preference value is a contact ID |
+| PersonID | Preference value is a person ID |
+| ProjectID | Preference value is a project ID |
+| SelectionID | Preference value is a selection ID |
+| PosSize | Obsolete: Windows position and size |
+| TimeZone | TimeZone location |
+| Time | Time, preference value is 13:45:50 |
+| Password | Password, stored as plain text but shown with dots |
+| MultiLineText | Multi-line text that preserves line breaks |

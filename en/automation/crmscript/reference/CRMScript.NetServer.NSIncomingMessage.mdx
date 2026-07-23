@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nsincomingmessage
+title: NSIncomingMessage
+description: "Details about a message to be sent."
+keywords: CRMScript, NSIncomingMessage, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSIncomingMessage
+
+Details about a message to be sent.
+
+## Constructors
+
+### NSIncomingMessage()
+
+```crmscript
+NSIncomingMessage
+```
+
+Initializes a new instance of the NSIncomingMessage class.
+
+## Methods
+
+## GetContent()
+
+```crmscript
+String GetContent()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Content, or body, of the message.
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String content = thing.GetContent();
+```
+
+## GetFormat()
+
+```crmscript
+String GetFormat()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Format of the content.
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String format = thing.GetFormat();
+```
+
+## GetFrom()
+
+```crmscript
+String GetFrom()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Who the message is from.  This can vary from provider to provider and can for SMS typically be a phone number or a string.  This is mail address on the form of an e-mail.
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String from = thing.GetFrom();
+```
+
+## GetPlugin()
+
+```crmscript
+String GetPlugin()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of plugin.
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String plugin = thing.GetPlugin();
+```
+
+## GetSessionKey()
+
+```crmscript
+String GetSessionKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Session key used for threading.
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String sessionKey = thing.GetSessionKey();
+```
+
+## GetTo()
+
+```crmscript
+String GetTo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Address of the recipient. This can be in the form of phone number or email.
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String to = thing.GetTo();
+```
+
+## SetContent(String)
+
+```crmscript
+Void SetContent(String content)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String content;
+thing.SetContent(content);
+```
+
+## SetFormat(String)
+
+```crmscript
+Void SetFormat(String format)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String format;
+thing.SetFormat(format);
+```
+
+## SetFrom(String)
+
+```crmscript
+Void SetFrom(String from)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String from;
+thing.SetFrom(from);
+```
+
+## SetPlugin(String)
+
+```crmscript
+Void SetPlugin(String plugin)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String plugin;
+thing.SetPlugin(plugin);
+```
+
+## SetSessionKey(String)
+
+```crmscript
+Void SetSessionKey(String sessionKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String sessionKey;
+thing.SetSessionKey(sessionKey);
+```
+
+## SetTo(String)
+
+```crmscript
+Void SetTo(String to)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSIncomingMessage thing;
+String to;
+thing.SetTo(to);
+```

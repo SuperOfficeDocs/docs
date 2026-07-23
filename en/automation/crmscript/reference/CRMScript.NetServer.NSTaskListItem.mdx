@@ -1,0 +1,428 @@
+﻿---
+uid: crmscript.netserver.nstasklistitem
+title: NSTaskListItem
+description: ""
+keywords: CRMScript, NSTaskListItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTaskListItem
+
+## Constructors
+
+### NSTaskListItem()
+
+```crmscript
+NSTaskListItem
+```
+
+Initializes a new instance of the NSTaskListItem class.
+
+## Methods
+
+## GetColorIndex()
+
+```crmscript
+Integer GetColorIndex()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - JAP. See &lt;xref href=\"CRMScript.NetServer.ColorIndex\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer colorIndex = thing.GetColorIndex();
+```
+
+## GetDefaultVideomeetingStatus()
+
+```crmscript
+Integer GetDefaultVideomeetingStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default video-meeting status for meetings created in SuperOffice CRM. See &lt;xref href=\"CRMScript.NetServer.VideoMeetingStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer defaultVideomeetingStatus = thing.GetDefaultVideomeetingStatus();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the Task list item is deleted.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDirection()
+
+```crmscript
+Integer GetDirection()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 = incoming, 2 = outgoing. See &lt;xref href=\"CRMScript.NetServer.TaskDirection\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer direction = thing.GetDirection();
+```
+
+## GetIntentId()
+
+```crmscript
+Integer GetIntentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Link to the intention of this kind of task (used by SAINT).
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer intentId = thing.GetIntentId();
+```
+
+## GetIsDefaultAlldayEvent()
+
+```crmscript
+Bool GetIsDefaultAlldayEvent()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if all day event.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool isDefaultAlldayEvent = thing.GetIsDefaultAlldayEvent();
+```
+
+## GetIsDefaultFree()
+
+```crmscript
+Bool GetIsDefaultFree()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if free, false if busy.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool isDefaultFree = thing.GetIsDefaultFree();
+```
+
+## GetIsDefaultPublished()
+
+```crmscript
+Bool GetIsDefaultPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Published to external persons.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool isDefaultPublished = thing.GetIsDefaultPublished();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTaskListItemId()
+
+```crmscript
+Integer GetTaskListItemId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer taskListItemId = thing.GetTaskListItemId();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo; See &lt;xref href=\"CRMScript.NetServer.TaskType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer type = thing.GetType();
+```
+
+## GetValue()
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+String value = thing.GetValue();
+```
+
+## SetColorIndex(Integer)
+
+```crmscript
+Void SetColorIndex(Integer colorIndex)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer colorIndex;
+thing.SetColorIndex(colorIndex);
+```
+
+## SetDefaultVideomeetingStatus(Integer)
+
+```crmscript
+Void SetDefaultVideomeetingStatus(Integer defaultVideomeetingStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer defaultVideomeetingStatus;
+thing.SetDefaultVideomeetingStatus(defaultVideomeetingStatus);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDirection(Integer)
+
+```crmscript
+Void SetDirection(Integer direction)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer direction;
+thing.SetDirection(direction);
+```
+
+## SetIntentId(Integer)
+
+```crmscript
+Void SetIntentId(Integer intentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer intentId;
+thing.SetIntentId(intentId);
+```
+
+## SetIsDefaultAlldayEvent(Bool)
+
+```crmscript
+Void SetIsDefaultAlldayEvent(Bool isDefaultAlldayEvent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool isDefaultAlldayEvent;
+thing.SetIsDefaultAlldayEvent(isDefaultAlldayEvent);
+```
+
+## SetIsDefaultFree(Bool)
+
+```crmscript
+Void SetIsDefaultFree(Bool isDefaultFree)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool isDefaultFree;
+thing.SetIsDefaultFree(isDefaultFree);
+```
+
+## SetIsDefaultPublished(Bool)
+
+```crmscript
+Void SetIsDefaultPublished(Bool isDefaultPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Bool isDefaultPublished;
+thing.SetIsDefaultPublished(isDefaultPublished);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTaskListItemId(Integer)
+
+```crmscript
+Void SetTaskListItemId(Integer taskListItemId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer taskListItemId;
+thing.SetTaskListItemId(taskListItemId);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetValue(String)
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTaskListItem thing;
+String value;
+thing.SetValue(value);
+```

@@ -1,0 +1,740 @@
+﻿---
+uid: crmscript.netserver.nschattopicentity
+title: NSChatTopicEntity
+description: "Chat topics define who is assigned, when the channel is open for business, and look of the chat widget. Carrier object for ChatTopicEntity."
+keywords: CRMScript, NSChatTopicEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatTopicEntity
+
+Chat topics define who is assigned, when the channel is open for business, and look of the chat widget. Carrier object for ChatTopicEntity.
+
+## Constructors
+
+### NSChatTopicEntity()
+
+```crmscript
+NSChatTopicEntity
+```
+
+Initializes a new instance of the NSChatTopicEntity class.
+
+## Methods
+
+## GetAlertRecipient()
+
+```crmscript
+String GetAlertRecipient()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The recipients for the alert template.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String alertRecipient = thing.GetAlertRecipient();
+```
+
+## GetAlertTemplate()
+
+```crmscript
+NSReplyTemplate GetAlertTemplate()
+```
+
+**Returns:** [CRMScript.NetServer.NSReplyTemplate](CRMScript.NetServer.NSReplyTemplate) - Template to use for alerts.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSReplyTemplate alertTemplate = thing.GetAlertTemplate();
+```
+
+## GetBadgeHeader()
+
+```crmscript
+String GetBadgeHeader()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The badge header of the chat topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String badgeHeader = thing.GetBadgeHeader();
+```
+
+## GetBotEnabled()
+
+```crmscript
+Bool GetBotEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Enable chatbot on this topic. Run the trigger scripts on bot events.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool botEnabled = thing.GetBotEnabled();
+```
+
+## GetBotSettings()
+
+```crmscript
+NSChatBotSettings GetBotSettings()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatBotSettings](CRMScript.NetServer.NSChatBotSettings) - Settings for chatbot - trigger script IDs to run on bot events.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSChatBotSettings botSettings = thing.GetBotSettings();
+```
+
+## GetChatTopicId()
+
+```crmscript
+Integer GetChatTopicId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer chatTopicId = thing.GetChatTopicId();
+```
+
+## GetCollectConsent()
+
+```crmscript
+Bool GetCollectConsent()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Collect consent to store from user.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool collectConsent = thing.GetCollectConsent();
+```
+
+## GetCustomQueueText()
+
+```crmscript
+String GetCustomQueueText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A text to be used in the queue message in the chat widget. Usage is controlled by the flags field, bit number 3.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String customQueueText = thing.GetCustomQueueText();
+```
+
+## GetCustomQueueTextEnabled()
+
+```crmscript
+Bool GetCustomQueueTextEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Use the custom queue message text.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool customQueueTextEnabled = thing.GetCustomQueueTextEnabled();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The description for this topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetLanguage()
+
+```crmscript
+NSCustomerLanguage GetLanguage()
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerLanguage](CRMScript.NetServer.NSCustomerLanguage) - Customer language used in this topic. Optional.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSCustomerLanguage language = thing.GetLanguage();
+```
+
+## GetLastAccept()
+
+```crmscript
+DateTime GetLastAccept()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last time a session was accepted from the inside for this topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+DateTime lastAccept = thing.GetLastAccept();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of this chat topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String name = thing.GetName();
+```
+
+## GetOpeningHours()
+
+```crmscript
+NSChatOpeningHours GetOpeningHours()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatOpeningHours](CRMScript.NetServer.NSChatOpeningHours) - Opening hours settings.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSChatOpeningHours openingHours = thing.GetOpeningHours();
+```
+
+## GetOpeningHoursEnabled()
+
+```crmscript
+Bool GetOpeningHoursEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Whether to use opening hours or not.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool openingHoursEnabled = thing.GetOpeningHoursEnabled();
+```
+
+## GetSecondsPrAccept()
+
+```crmscript
+Integer GetSecondsPrAccept()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The average number of seconds per accept for this topic.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer secondsPrAccept = thing.GetSecondsPrAccept();
+```
+
+## GetTicketCategory()
+
+```crmscript
+NSTicketCategory GetTicketCategory()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategory](CRMScript.NetServer.NSTicketCategory) - Category on ticket created from off-line request.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSTicketCategory ticketCategory = thing.GetTicketCategory();
+```
+
+## GetTicketEnabled()
+
+```crmscript
+Bool GetTicketEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Enable ticket submission in offline mode.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool ticketEnabled = thing.GetTicketEnabled();
+```
+
+## GetTicketPriority()
+
+```crmscript
+NSTicketPriority GetTicketPriority()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriority](CRMScript.NetServer.NSTicketPriority) - Priority on ticket created from off-line request.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSTicketPriority ticketPriority = thing.GetTicketPriority();
+```
+
+## GetWarnManagerNewChatMinutes()
+
+```crmscript
+Integer GetWarnManagerNewChatMinutes()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Contains the manager notify time in minutes.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer warnManagerNewChatMinutes = thing.GetWarnManagerNewChatMinutes();
+```
+
+## GetWarnNewChatMinutes()
+
+```crmscript
+Integer GetWarnNewChatMinutes()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Contains the user notify time in minutes.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer warnNewChatMinutes = thing.GetWarnNewChatMinutes();
+```
+
+## GetWelcomeMessage()
+
+```crmscript
+String GetWelcomeMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The welcome message sent to the customer when the chat session starts.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String welcomeMessage = thing.GetWelcomeMessage();
+```
+
+## GetWidget()
+
+```crmscript
+NSChatWidgetSettings GetWidget()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatWidgetSettings](CRMScript.NetServer.NSChatWidgetSettings) - Settings for the chat widget.
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSChatWidgetSettings widget = thing.GetWidget();
+```
+
+## SetAlertRecipient(String)
+
+```crmscript
+Void SetAlertRecipient(String alertRecipient)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String alertRecipient;
+thing.SetAlertRecipient(alertRecipient);
+```
+
+## SetAlertTemplate(NSReplyTemplate)
+
+```crmscript
+Void SetAlertTemplate(NSReplyTemplate alertTemplate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSReplyTemplate alertTemplate;
+thing.SetAlertTemplate(alertTemplate);
+```
+
+## SetBadgeHeader(String)
+
+```crmscript
+Void SetBadgeHeader(String badgeHeader)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String badgeHeader;
+thing.SetBadgeHeader(badgeHeader);
+```
+
+## SetBotEnabled(Bool)
+
+```crmscript
+Void SetBotEnabled(Bool botEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool botEnabled;
+thing.SetBotEnabled(botEnabled);
+```
+
+## SetBotSettings(NSChatBotSettings)
+
+```crmscript
+Void SetBotSettings(NSChatBotSettings botSettings)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSChatBotSettings botSettings;
+thing.SetBotSettings(botSettings);
+```
+
+## SetChatTopicId(Integer)
+
+```crmscript
+Void SetChatTopicId(Integer chatTopicId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer chatTopicId;
+thing.SetChatTopicId(chatTopicId);
+```
+
+## SetCollectConsent(Bool)
+
+```crmscript
+Void SetCollectConsent(Bool collectConsent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool collectConsent;
+thing.SetCollectConsent(collectConsent);
+```
+
+## SetCustomQueueText(String)
+
+```crmscript
+Void SetCustomQueueText(String customQueueText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String customQueueText;
+thing.SetCustomQueueText(customQueueText);
+```
+
+## SetCustomQueueTextEnabled(Bool)
+
+```crmscript
+Void SetCustomQueueTextEnabled(Bool customQueueTextEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool customQueueTextEnabled;
+thing.SetCustomQueueTextEnabled(customQueueTextEnabled);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetLanguage(NSCustomerLanguage)
+
+```crmscript
+Void SetLanguage(NSCustomerLanguage language)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSCustomerLanguage language;
+thing.SetLanguage(language);
+```
+
+## SetLastAccept(DateTime)
+
+```crmscript
+Void SetLastAccept(DateTime lastAccept)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+DateTime lastAccept;
+thing.SetLastAccept(lastAccept);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOpeningHours(NSChatOpeningHours)
+
+```crmscript
+Void SetOpeningHours(NSChatOpeningHours openingHours)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSChatOpeningHours openingHours;
+thing.SetOpeningHours(openingHours);
+```
+
+## SetOpeningHoursEnabled(Bool)
+
+```crmscript
+Void SetOpeningHoursEnabled(Bool openingHoursEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool openingHoursEnabled;
+thing.SetOpeningHoursEnabled(openingHoursEnabled);
+```
+
+## SetSecondsPrAccept(Integer)
+
+```crmscript
+Void SetSecondsPrAccept(Integer secondsPrAccept)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer secondsPrAccept;
+thing.SetSecondsPrAccept(secondsPrAccept);
+```
+
+## SetTicketCategory(NSTicketCategory)
+
+```crmscript
+Void SetTicketCategory(NSTicketCategory ticketCategory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSTicketCategory ticketCategory;
+thing.SetTicketCategory(ticketCategory);
+```
+
+## SetTicketEnabled(Bool)
+
+```crmscript
+Void SetTicketEnabled(Bool ticketEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Bool ticketEnabled;
+thing.SetTicketEnabled(ticketEnabled);
+```
+
+## SetTicketPriority(NSTicketPriority)
+
+```crmscript
+Void SetTicketPriority(NSTicketPriority ticketPriority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSTicketPriority ticketPriority;
+thing.SetTicketPriority(ticketPriority);
+```
+
+## SetWarnManagerNewChatMinutes(Integer)
+
+```crmscript
+Void SetWarnManagerNewChatMinutes(Integer warnManagerNewChatMinutes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer warnManagerNewChatMinutes;
+thing.SetWarnManagerNewChatMinutes(warnManagerNewChatMinutes);
+```
+
+## SetWarnNewChatMinutes(Integer)
+
+```crmscript
+Void SetWarnNewChatMinutes(Integer warnNewChatMinutes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+Integer warnNewChatMinutes;
+thing.SetWarnNewChatMinutes(warnNewChatMinutes);
+```
+
+## SetWelcomeMessage(String)
+
+```crmscript
+Void SetWelcomeMessage(String welcomeMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+String welcomeMessage;
+thing.SetWelcomeMessage(welcomeMessage);
+```
+
+## SetWidget(NSChatWidgetSettings)
+
+```crmscript
+Void SetWidget(NSChatWidgetSettings widget)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatTopicEntity thing;
+NSChatWidgetSettings widget;
+thing.SetWidget(widget);
+```

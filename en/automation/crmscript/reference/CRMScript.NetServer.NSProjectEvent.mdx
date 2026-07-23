@@ -1,0 +1,709 @@
+﻿---
+uid: crmscript.netserver.nsprojectevent
+title: NSProjectEvent
+description: "A project that is also an event. Used by Audience."
+keywords: CRMScript, NSProjectEvent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectEvent
+
+A project that is also an event. Used by Audience.
+
+## Constructors
+
+### NSProjectEvent()
+
+```crmscript
+NSProjectEvent
+```
+
+Initializes a new instance of the NSProjectEvent class.
+
+## Methods
+
+## GetAssociateFullName()
+
+```crmscript
+String GetAssociateFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the person that ows the event (project).
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String associateFullName = thing.GetAssociateFullName();
+```
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the person that ows the event (project).
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The event description (the project text).
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String description = thing.GetDescription();
+```
+
+## GetEnabled()
+
+```crmscript
+Bool GetEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true the event is enabled (visible).
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool enabled = thing.GetEnabled();
+```
+
+## GetEventDate()
+
+```crmscript
+DateTime GetEventDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date of the event. Event is not visible after this date.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+DateTime eventDate = thing.GetEventDate();
+```
+
+## GetEventName()
+
+```crmscript
+String GetEventName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the event (the project name).
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String eventName = thing.GetEventName();
+```
+
+## GetIsSignedOn()
+
+```crmscript
+Bool GetIsSignedOn()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user is signed on to the event (is project member).
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool isSignedOn = thing.GetIsSignedOn();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the project that represents the event.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetSignOff()
+
+```crmscript
+Bool GetSignOff()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, it is possible to sign off the event.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOff = thing.GetSignOff();
+```
+
+## GetSignOffConfirmationText()
+
+```crmscript
+String GetSignOffConfirmationText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text shown as confirmation text before accepting sign off.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOffConfirmationText = thing.GetSignOffConfirmationText();
+```
+
+## GetSignOffPersonId()
+
+```crmscript
+Integer GetSignOffPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOffPersonId = thing.GetSignOffPersonId();
+```
+
+## GetSignOffTaskEnable()
+
+```crmscript
+Bool GetSignOffTaskEnable()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, a task should be created when the external user signs off an event.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOffTaskEnable = thing.GetSignOffTaskEnable();
+```
+
+## GetSignOffTaskId()
+
+```crmscript
+Integer GetSignOffTaskId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If not 0, sign off should cause an Activity of this type to be registered.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOffTaskId = thing.GetSignOffTaskId();
+```
+
+## GetSignOffText()
+
+```crmscript
+String GetSignOffText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default text for the activity created when signing off.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOffText = thing.GetSignOffText();
+```
+
+## GetSignOffTriggersAssign()
+
+```crmscript
+Bool GetSignOffTriggersAssign()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the sign off task should be created as an Assigned task, triggering the invitation dialog.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOffTriggersAssign = thing.GetSignOffTriggersAssign();
+```
+
+## GetSignOn()
+
+```crmscript
+Bool GetSignOn()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, it is possible to sign on the event.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOn = thing.GetSignOn();
+```
+
+## GetSignOnConfirmationText()
+
+```crmscript
+String GetSignOnConfirmationText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text shown as confirmation text before accepting sign on.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOnConfirmationText = thing.GetSignOnConfirmationText();
+```
+
+## GetSignOnPersonId()
+
+```crmscript
+Integer GetSignOnPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOnPersonId = thing.GetSignOnPersonId();
+```
+
+## GetSignOnTaskEnable()
+
+```crmscript
+Bool GetSignOnTaskEnable()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, a task should be created when the external user signs on an event.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOnTaskEnable = thing.GetSignOnTaskEnable();
+```
+
+## GetSignOnTaskId()
+
+```crmscript
+Integer GetSignOnTaskId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If not 0, sign on should cause an Activity of this type to be registered.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOnTaskId = thing.GetSignOnTaskId();
+```
+
+## GetSignOnText()
+
+```crmscript
+String GetSignOnText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default text for the activity created when signing on.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOnText = thing.GetSignOnText();
+```
+
+## GetSignOnTriggersAssign()
+
+```crmscript
+Bool GetSignOnTriggersAssign()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the sign on task should be created as an Assigned task, triggering the invitation dialog.
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOnTriggersAssign = thing.GetSignOnTriggersAssign();
+```
+
+## SetAssociateFullName(String)
+
+```crmscript
+Void SetAssociateFullName(String associateFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String associateFullName;
+thing.SetAssociateFullName(associateFullName);
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetEnabled(Bool)
+
+```crmscript
+Void SetEnabled(Bool enabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool enabled;
+thing.SetEnabled(enabled);
+```
+
+## SetEventDate(DateTime)
+
+```crmscript
+Void SetEventDate(DateTime eventDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+DateTime eventDate;
+thing.SetEventDate(eventDate);
+```
+
+## SetEventName(String)
+
+```crmscript
+Void SetEventName(String eventName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String eventName;
+thing.SetEventName(eventName);
+```
+
+## SetIsSignedOn(Bool)
+
+```crmscript
+Void SetIsSignedOn(Bool isSignedOn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool isSignedOn;
+thing.SetIsSignedOn(isSignedOn);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetSignOff(Bool)
+
+```crmscript
+Void SetSignOff(Bool signOff)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOff;
+thing.SetSignOff(signOff);
+```
+
+## SetSignOffConfirmationText(String)
+
+```crmscript
+Void SetSignOffConfirmationText(String signOffConfirmationText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOffConfirmationText;
+thing.SetSignOffConfirmationText(signOffConfirmationText);
+```
+
+## SetSignOffPersonId(Integer)
+
+```crmscript
+Void SetSignOffPersonId(Integer signOffPersonId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOffPersonId;
+thing.SetSignOffPersonId(signOffPersonId);
+```
+
+## SetSignOffTaskEnable(Bool)
+
+```crmscript
+Void SetSignOffTaskEnable(Bool signOffTaskEnable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOffTaskEnable;
+thing.SetSignOffTaskEnable(signOffTaskEnable);
+```
+
+## SetSignOffTaskId(Integer)
+
+```crmscript
+Void SetSignOffTaskId(Integer signOffTaskId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOffTaskId;
+thing.SetSignOffTaskId(signOffTaskId);
+```
+
+## SetSignOffText(String)
+
+```crmscript
+Void SetSignOffText(String signOffText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOffText;
+thing.SetSignOffText(signOffText);
+```
+
+## SetSignOffTriggersAssign(Bool)
+
+```crmscript
+Void SetSignOffTriggersAssign(Bool signOffTriggersAssign)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOffTriggersAssign;
+thing.SetSignOffTriggersAssign(signOffTriggersAssign);
+```
+
+## SetSignOn(Bool)
+
+```crmscript
+Void SetSignOn(Bool signOn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOn;
+thing.SetSignOn(signOn);
+```
+
+## SetSignOnConfirmationText(String)
+
+```crmscript
+Void SetSignOnConfirmationText(String signOnConfirmationText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOnConfirmationText;
+thing.SetSignOnConfirmationText(signOnConfirmationText);
+```
+
+## SetSignOnPersonId(Integer)
+
+```crmscript
+Void SetSignOnPersonId(Integer signOnPersonId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOnPersonId;
+thing.SetSignOnPersonId(signOnPersonId);
+```
+
+## SetSignOnTaskEnable(Bool)
+
+```crmscript
+Void SetSignOnTaskEnable(Bool signOnTaskEnable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOnTaskEnable;
+thing.SetSignOnTaskEnable(signOnTaskEnable);
+```
+
+## SetSignOnTaskId(Integer)
+
+```crmscript
+Void SetSignOnTaskId(Integer signOnTaskId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Integer signOnTaskId;
+thing.SetSignOnTaskId(signOnTaskId);
+```
+
+## SetSignOnText(String)
+
+```crmscript
+Void SetSignOnText(String signOnText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+String signOnText;
+thing.SetSignOnText(signOnText);
+```
+
+## SetSignOnTriggersAssign(Bool)
+
+```crmscript
+Void SetSignOnTriggersAssign(Bool signOnTriggersAssign)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEvent thing;
+Bool signOnTriggersAssign;
+thing.SetSignOnTriggersAssign(signOnTriggersAssign);
+```

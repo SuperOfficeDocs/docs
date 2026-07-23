@@ -1,0 +1,287 @@
+﻿---
+uid: crmscript.netserver.nsdash
+title: NSDash
+description: "Carrier object for NSDash."
+keywords: CRMScript, NSDash, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDash
+
+Carrier object for NSDash.
+
+## Constructors
+
+### NSDash()
+
+```crmscript
+NSDash
+```
+
+Initializes a new instance of the NSDash class.
+
+## Methods
+
+## GetAssociateId()
+
+Associate who owns this dashboard.
+
+```crmscript
+Integer GetDescription()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetColumns()
+
+How many columns there are in the dashboard.
+
+```crmscript
+Integer GetColumns()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetDashboardId()
+
+Primary key of dashboard.
+
+```crmscript
+Integer GetDashboardId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetDescription()
+
+Detailed description of the dashboard.
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## GetName()
+
+Gets name the dashboard.
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## GetPinForAll()
+
+Returns 1 if pinned for all.
+
+```crmscript
+Integer GetPinForAll()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetPinForAssociates()
+
+Returns array of references to the pinned associates.
+
+```crmscript
+Integer[] GetPinForAssociates()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+## GetPinForGroups()
+
+Returns array of references to the pinned groups.
+
+```crmscript
+Integer[] GetPinForGroups()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+## GetTheme()
+
+Returns the theme for this dashboard.
+
+```crmscript
+NSDashTheme GetTheme()
+```
+
+**Returns:** [CRMScript.Netserver.NSDashTheme](CRMScript.Netserver.NSDashTheme)
+
+## GetUniqueId()
+
+Returns GUID identifying a default dashboard from SuperOffice.
+
+```crmscript
+String GetUniqueId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## GetVisibleForAll()
+
+Returns 1 if visible for all.
+
+```crmscript
+Integer GetVisibleForAll()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetVisibleForAssociates()
+
+Returns array of references to the visible for associates.
+
+```crmscript
+Integer[] GetVisibleForAssociates()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+## GetVisibleForGroups()
+
+Returns array of references to the visible for groups.
+
+```crmscript
+Integer[] GetVisibleForGroups()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+## SetAssociateId(Integer)
+
+Associate who owns this dashboard.
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetColumns(Integer)
+
+How many columns there are in the dashboard.
+
+```crmscript
+Void SetColumns(Integer cols)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetDashboardId(Integer)
+
+Primary key of dashboard.
+
+```crmscript
+Void SetDashboardId(Integer dashId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetDescription(String)
+
+Detailed description of the dashboard.
+
+```crmscript
+Void SetDescription(String desc)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetName(String)
+
+Sets name the dashboard.
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPinForAll(Integer)
+
+Set to 1 if pinned for all.
+
+```crmscript
+Void SetPinForAll(Integer pinned)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPinForAssociates(Integer[])
+
+Set an array of references to pinned associates.
+
+```crmscript
+Void SetPinForAssociates(Integer[] assocList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPinForGroups(Integer[])
+
+Set an array of references to pinned groups.
+
+```crmscript
+Void SetPinForGroups(Integer[] groups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetTheme(NSDashTheme)
+
+Sets the theme for this dashboard.
+
+```crmscript
+Void SetTheme(NSDashTheme theme)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetUniqueId(String)
+
+Sets GUID identifying a default dashboard from SuperOffice.
+
+```crmscript
+Void SetUniqueId(String guid)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetVisibleForAll(Integer)
+
+Set to 1 if visible for all.
+
+```crmscript
+Void SetVisibleForAll(Integer visible)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetVisibleForAssociates(Integer[])
+
+Set an array of references to visible for associates.
+
+```crmscript
+Void SetVisibleForAssociates(Integer[] assocList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetVisibleForGroups(Integer[])
+
+Set an array of references to visible for groups.
+
+```crmscript
+Void SetVisibleForGroups(Integer[] groups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

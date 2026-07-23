@@ -1,0 +1,126 @@
+﻿---
+uid: crmscript.netserver.nsresourceagent
+title: NSResourceAgent
+description: "String resource substitution management."
+keywords: CRMScript, NSResourceAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSResourceAgent
+
+String resource substitution management.
+
+## Constructors
+
+### NSResourceAgent()
+
+```crmscript
+NSResourceAgent
+```
+
+String resource substitution management.
+
+## Methods
+
+## ActivateResourceSubstitution(String,String,Bool)
+
+Activates or deactivates a resource substitution for one or more cultures
+
+```crmscript
+Void ActivateResourceSubstitution(String resourceName, String culture, Bool isActive)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceAgent agent;
+String resourceName;
+String culture;
+Bool isActive;
+agent.ActivateResourceSubstitution(resourceName, culture, isActive);
+```
+
+## DeleteResourceSubstitution(String,String)
+
+Permanently deletes a resource substitution for one or more cultures
+
+```crmscript
+Void DeleteResourceSubstitution(String resourceName, String culture)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceAgent agent;
+String resourceName;
+String culture;
+agent.DeleteResourceSubstitution(resourceName, culture);
+```
+
+## GetResourceSubstitutions(String[],String,Bool)
+
+Gets substitutions for some or all resources for one culture
+
+```crmscript
+NSResourceOverride[] GetResourceSubstitutions(String[] resourceNames, String culture, Bool activeOnly)
+```
+
+**Returns:** [CRMScript.NetServer.NSResourceOverride](CRMScript.NetServer.NSResourceOverride)[]
+
+**Example:**
+
+```crmscript
+NSResourceAgent agent;
+String[] resourceNames;
+String culture;
+Bool activeOnly;
+NSResourceOverride[] res = agent.GetResourceSubstitutions(resourceNames, culture, activeOnly);
+```
+
+## IsResourceSubstitutionActive(String[],String)
+
+Determines if resource substitution/override is active, globally or for a subset of resources/cultures
+
+```crmscript
+NSResourceOverride[] IsResourceSubstitutionActive(String[] resourceNames, String culture)
+```
+
+**Returns:** [CRMScript.NetServer.NSResourceOverride](CRMScript.NetServer.NSResourceOverride)[]
+
+**Example:**
+
+```crmscript
+NSResourceAgent agent;
+String[] resourceNames;
+String culture;
+NSResourceOverride[] res = agent.IsResourceSubstitutionActive(resourceNames, culture);
+```
+
+## SetResourceSubstitution(String,String,String,Bool)
+
+Creates or updates a resource substitution
+
+```crmscript
+Void SetResourceSubstitution(String resourceName, String resourceValues, String culture, Bool isActive)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSResourceAgent agent;
+String resourceName;
+String resourceValues;
+String culture;
+Bool isActive;
+agent.SetResourceSubstitution(resourceName, resourceValues, culture, isActive);
+```

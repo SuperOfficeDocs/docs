@@ -1,0 +1,4775 @@
+﻿---
+uid: crmscript.netserver.nslistagent
+title: NSListAgent
+description: "Collection of all services that work with Lists. These are typical lists of data shown in dropdown-list, checkbox lists, etc."
+keywords: CRMScript, NSListAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSListAgent
+
+Collection of all services that work with Lists. These are typical lists of data shown in dropdown-list, checkbox lists, etc.
+
+## Constructors
+
+### NSListAgent()
+
+```crmscript
+NSListAgent
+```
+
+Collection of all services that work with Lists. These are typical lists of data shown in dropdown-list, checkbox lists, etc.
+
+## Methods
+
+## AddFromListDefinition(Integer,NSListItemEntity)
+
+Saves a new list item for the specified list definition
+
+```crmscript
+NSListItemEntity AddFromListDefinition(Integer udListDefinitionId, NSListItemEntity item)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+NSListItemEntity item;
+NSListItemEntity res = agent.AddFromListDefinition(udListDefinitionId, item);
+```
+
+## AddFromListName(String,NSListItemEntity)
+
+Saves a new list item for the specified list definition
+
+```crmscript
+NSListItemEntity AddFromListName(String udListDefinitionName, NSListItemEntity item)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+NSListItemEntity item;
+NSListItemEntity res = agent.AddFromListName(udListDefinitionName, item);
+```
+
+## AddHierarchyToPath(Integer,String,String)
+
+Adds a hierarchy item to a path
+
+```crmscript
+NSHierarchyEntity AddHierarchyToPath(Integer domain, String path, String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer domain;
+String path;
+String name;
+NSHierarchyEntity res = agent.AddHierarchyToPath(domain, path, name);
+```
+
+## ChangeCurrency(Float,String,String)
+
+Recalculates the amount to the new currency.
+
+```crmscript
+Float ChangeCurrency(Float amount, String fromCurrency, String toCurrency)
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Float amount;
+String fromCurrency;
+String toCurrency;
+Float res = agent.ChangeCurrency(amount, fromCurrency, toCurrency);
+```
+
+## CreateDefaultAmountClassEntity()
+
+Sets default values into a new NSAmountClassEntity.
+
+```crmscript
+NSAmountClassEntity CreateDefaultAmountClassEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSAmountClassEntity](CRMScript.NetServer.NSAmountClassEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSAmountClassEntity thing = agent.CreateDefaultAmountClassEntity();
+thing = agent.SaveAmountClassEntity(thing);
+```
+
+## CreateDefaultCountry()
+
+Gets a new country
+
+```crmscript
+NSCountry CreateDefaultCountry()
+```
+
+**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCountry res = agent.CreateDefaultCountry();
+```
+
+## CreateDefaultCurrencyEntity()
+
+Sets default values into a new NSCurrencyEntity.
+
+```crmscript
+NSCurrencyEntity CreateDefaultCurrencyEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrencyEntity](CRMScript.NetServer.NSCurrencyEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCurrencyEntity thing = agent.CreateDefaultCurrencyEntity();
+thing = agent.SaveCurrencyEntity(thing);
+```
+
+## CreateDefaultDocumentTemplateEntity()
+
+Sets default values into a new NSDocumentTemplateEntity.
+
+```crmscript
+NSDocumentTemplateEntity CreateDefaultDocumentTemplateEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplateEntity](CRMScript.NetServer.NSDocumentTemplateEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDocumentTemplateEntity thing = agent.CreateDefaultDocumentTemplateEntity();
+thing = agent.SaveDocumentTemplateEntity(thing);
+```
+
+## CreateDefaultDocumentTemplateLanguage(Integer,String)
+
+Creates a new document template language based on an existing template
+
+```crmscript
+Void CreateDefaultDocumentTemplateLanguage(Integer documentTemplateId, String languageCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String languageCode;
+agent.CreateDefaultDocumentTemplateLanguage(documentTemplateId, languageCode);
+```
+
+## CreateDefaultExtAppEntity()
+
+Sets default values into a new NSExtAppEntity.
+
+```crmscript
+NSExtAppEntity CreateDefaultExtAppEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSExtAppEntity](CRMScript.NetServer.NSExtAppEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSExtAppEntity thing = agent.CreateDefaultExtAppEntity();
+thing = agent.SaveExtAppEntity(thing);
+```
+
+## CreateDefaultHeadingEntity()
+
+Sets default values into a new NSHeadingEntity.
+
+```crmscript
+NSHeadingEntity CreateDefaultHeadingEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSHeadingEntity thing = agent.CreateDefaultHeadingEntity();
+thing = agent.SaveHeadingEntity(thing);
+```
+
+## CreateDefaultHeadingFromListDefinition(Integer)
+
+Gets a heading for the specified list definition
+
+```crmscript
+NSHeadingEntity CreateDefaultHeadingFromListDefinition(Integer udListDefinitionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+NSHeadingEntity res = agent.CreateDefaultHeadingFromListDefinition(udListDefinitionId);
+```
+
+## CreateDefaultHierarchyEntity()
+
+Sets default values into a new NSHierarchyEntity.
+
+```crmscript
+NSHierarchyEntity CreateDefaultHierarchyEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSHierarchyEntity thing = agent.CreateDefaultHierarchyEntity();
+thing = agent.SaveHierarchyEntity(thing);
+```
+
+## CreateDefaultListEntity()
+
+Sets default values into a new NSListEntity.
+
+```crmscript
+NSListEntity CreateDefaultListEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSListEntity](CRMScript.NetServer.NSListEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSListEntity thing = agent.CreateDefaultListEntity();
+thing = agent.SaveListEntity(thing);
+```
+
+## CreateDefaultListItemEntity()
+
+Sets default values into a new NSListItemEntity.
+
+```crmscript
+NSListItemEntity CreateDefaultListItemEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSListItemEntity thing = agent.CreateDefaultListItemEntity();
+thing = agent.SaveListItemEntity(thing);
+```
+
+## CreateDefaultProjectTypeEntity()
+
+Sets default values into a new NSProjectTypeEntity.
+
+```crmscript
+NSProjectTypeEntity CreateDefaultProjectTypeEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectTypeEntity](CRMScript.NetServer.NSProjectTypeEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProjectTypeEntity thing = agent.CreateDefaultProjectTypeEntity();
+thing = agent.SaveProjectTypeEntity(thing);
+```
+
+## CreateDefaultRelationDefinitionEntity()
+
+Sets default values into a new NSRelationDefinitionEntity.
+
+```crmscript
+NSRelationDefinitionEntity CreateDefaultRelationDefinitionEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSRelationDefinitionEntity](CRMScript.NetServer.NSRelationDefinitionEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSRelationDefinitionEntity thing = agent.CreateDefaultRelationDefinitionEntity();
+thing = agent.SaveRelationDefinitionEntity(thing);
+```
+
+## CreateDefaultResourceEntity()
+
+Sets default values into a new NSResourceEntity.
+
+```crmscript
+NSResourceEntity CreateDefaultResourceEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSResourceEntity](CRMScript.NetServer.NSResourceEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSResourceEntity thing = agent.CreateDefaultResourceEntity();
+thing = agent.SaveResourceEntity(thing);
+```
+
+## CreateDefaultSaleStageEntity()
+
+Sets default values into a new NSSaleStageEntity.
+
+```crmscript
+NSSaleStageEntity CreateDefaultSaleStageEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStageEntity](CRMScript.NetServer.NSSaleStageEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSaleStageEntity thing = agent.CreateDefaultSaleStageEntity();
+thing = agent.SaveSaleStageEntity(thing);
+```
+
+## CreateDefaultSaleTypeEntity()
+
+Sets default values into a new NSSaleTypeEntity.
+
+```crmscript
+NSSaleTypeEntity CreateDefaultSaleTypeEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleTypeEntity](CRMScript.NetServer.NSSaleTypeEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSaleTypeEntity thing = agent.CreateDefaultSaleTypeEntity();
+thing = agent.SaveSaleTypeEntity(thing);
+```
+
+## CreateDefaultTicketCategoryEntity()
+
+Sets default values into a new NSTicketCategoryEntity.
+
+```crmscript
+NSTicketCategoryEntity CreateDefaultTicketCategoryEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategoryEntity](CRMScript.NetServer.NSTicketCategoryEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketCategoryEntity thing = agent.CreateDefaultTicketCategoryEntity();
+thing = agent.SaveTicketCategoryEntity(thing);
+```
+
+## CreateDefaultTicketPriorityEntity()
+
+Sets default values into a new NSTicketPriorityEntity.
+
+```crmscript
+NSTicketPriorityEntity CreateDefaultTicketPriorityEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriorityEntity](CRMScript.NetServer.NSTicketPriorityEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketPriorityEntity thing = agent.CreateDefaultTicketPriorityEntity();
+thing = agent.SaveTicketPriorityEntity(thing);
+```
+
+## CreateDefaultTicketStatusEntity()
+
+Sets default values into a new NSTicketStatusEntity.
+
+```crmscript
+NSTicketStatusEntity CreateDefaultTicketStatusEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketStatusEntity](CRMScript.NetServer.NSTicketStatusEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketStatusEntity thing = agent.CreateDefaultTicketStatusEntity();
+thing = agent.SaveTicketStatusEntity(thing);
+```
+
+## CreateDefaultWebPanelEntity()
+
+Sets default values into a new NSWebPanelEntity.
+
+```crmscript
+NSWebPanelEntity CreateDefaultWebPanelEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSWebPanelEntity](CRMScript.NetServer.NSWebPanelEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSWebPanelEntity thing = agent.CreateDefaultWebPanelEntity();
+thing = agent.SaveWebPanelEntity(thing);
+```
+
+## DeleteAllFromListDefinition(Integer)
+
+Marks all items in the list deleted
+
+```crmscript
+Void DeleteAllFromListDefinition(Integer udListDefinitionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+agent.DeleteAllFromListDefinition(udListDefinitionId);
+```
+
+## DeleteAllFromListName(String)
+
+Marks all items in the list deleted
+
+```crmscript
+Void DeleteAllFromListName(String udListDefinitionName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+agent.DeleteAllFromListName(udListDefinitionName);
+```
+
+## DeleteAllHeadingsFromListDefinition(Integer)
+
+Deletes all headings for list resolved by the provided ID.
+
+```crmscript
+Void DeleteAllHeadingsFromListDefinition(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+agent.DeleteAllHeadingsFromListDefinition(id);
+```
+
+## DeleteAllHeadingsFromName(String)
+
+Deletes all headings for list resolved by the provided name.
+
+```crmscript
+Void DeleteAllHeadingsFromName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String name;
+agent.DeleteAllHeadingsFromName(name);
+```
+
+## DeleteAppWebPanels()
+
+Permanently delete all web panels owned by your app.
+
+```crmscript
+Void DeleteAppWebPanels()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Works in Online only, for registered Apps that send a valid ApplicationToken; otherwise nothing happens
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.DeleteAppWebPanels();
+```
+
+## DeleteDocumentTemplateLanguage(Integer,String)
+
+Deletes language variant of the document template
+
+```crmscript
+Void DeleteDocumentTemplateLanguage(Integer documentTemplateId, String languageCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String languageCode;
+agent.DeleteDocumentTemplateLanguage(documentTemplateId, languageCode);
+```
+
+## DeleteFromListDefinition(Integer,Integer)
+
+Deletes a list item from the specified list definition
+
+```crmscript
+Void DeleteFromListDefinition(Integer id, Integer udListDefinitionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+Integer udListDefinitionId;
+agent.DeleteFromListDefinition(id, udListDefinitionId);
+```
+
+## DeleteFromListName(Integer,String)
+
+Deletes a list item from the specified list definition
+
+```crmscript
+Void DeleteFromListName(Integer id, String udListDefinitionName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+String udListDefinitionName;
+agent.DeleteFromListName(id, udListDefinitionName);
+```
+
+## DeleteHierarchyEntity(Integer)
+
+Deletes the NSHierarchyEntity
+
+```crmscript
+DeleteHierarchyEntity(Integer hierarchyEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.DeleteHierarchyEntity(123);
+```
+
+## DeleteHierarchyFromPath(Integer,String)
+
+Removes a hierarchy item and its children from a path
+
+```crmscript
+Void DeleteHierarchyFromPath(Integer domain, String path)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer domain;
+String path;
+agent.DeleteHierarchyFromPath(domain, path);
+```
+
+## DeleteListEntity(Integer)
+
+Deletes the NSListEntity
+
+```crmscript
+DeleteListEntity(Integer listEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.DeleteListEntity(123);
+```
+
+## DeleteListEntityByName(String)
+
+Deletes an NSListEntity resolved by the provided name.
+
+```crmscript
+Void DeleteListEntityByName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String name;
+agent.DeleteListEntityByName(name);
+```
+
+## DeleteProjectStatus(Integer)
+
+Deletes a project status
+
+```crmscript
+Void DeleteProjectStatus(Integer projectStatusId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer projectStatusId;
+agent.DeleteProjectStatus(projectStatusId);
+```
+
+## DeleteResourceEntity(Integer)
+
+Deletes the NSResourceEntity
+
+```crmscript
+DeleteResourceEntity(Integer resourceEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.DeleteResourceEntity(123);
+```
+
+## DeleteTicketCategoryEntity(Integer)
+
+Deletes the NSTicketCategoryEntity
+
+```crmscript
+DeleteTicketCategoryEntity(Integer ticketCategoryEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.DeleteTicketCategoryEntity(123);
+```
+
+## DeleteTicketPriorityEntity(Integer)
+
+Deletes the NSTicketPriorityEntity
+
+```crmscript
+DeleteTicketPriorityEntity(Integer ticketPriorityEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.DeleteTicketPriorityEntity(123);
+```
+
+## DeleteTicketStatusEntity(Integer)
+
+Deletes the NSTicketStatusEntity
+
+```crmscript
+DeleteTicketStatusEntity(Integer ticketStatusEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.DeleteTicketStatusEntity(123);
+```
+
+## DeleteWebPanel(Integer)
+
+Hard-delete (real, permanent DELETE in the database) the given web panel. Use with care!
+
+```crmscript
+Void DeleteWebPanel(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+agent.DeleteWebPanel(id);
+```
+
+## GenerateNavigationUrl(Integer,String)
+
+Generates the navigation URL to be used to navigate to the panel
+
+```crmscript
+String GenerateNavigationUrl(Integer visibleIn, String windowName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - See &lt;xref href=\"CRMScript.NetServer.Navigation\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer visibleIn;
+String windowName;
+String res = agent.GenerateNavigationUrl(visibleIn, windowName);
+```
+
+## GetAllCountries(Bool)
+
+Returns all available countries a contact or person could belong to.
+
+```crmscript
+NSCountry[] GetAllCountries(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSCountry[] res = agent.GetAllCountries(includeDeleted);
+```
+
+## GetAllCurrencies(Bool)
+
+Returns all currencies
+
+```crmscript
+NSCurrencyEntity[] GetAllCurrencies(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrencyEntity](CRMScript.NetServer.NSCurrencyEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSCurrencyEntity[] res = agent.GetAllCurrencies(includeDeleted);
+```
+
+## GetAllDocumentTemplates(Bool)
+
+Returns all templates
+
+```crmscript
+NSDocumentTemplateEntity[] GetAllDocumentTemplates(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplateEntity](CRMScript.NetServer.NSDocumentTemplateEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSDocumentTemplateEntity[] res = agent.GetAllDocumentTemplates(includeDeleted);
+```
+
+## GetAllDomains()
+
+Gets list of all domains
+
+```crmscript
+Integer[] GetAllDomains()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Domain types (scripts, extra tables, etc).
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer[] res = agent.GetAllDomains();
+```
+
+## GetAllFromListDefinition(Integer,Bool)
+
+Gets all list items for the specified list definition
+
+```crmscript
+NSListItemEntity[] GetAllFromListDefinition(Integer udListDefinitionId, Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+Bool includeDeleted;
+NSListItemEntity[] res = agent.GetAllFromListDefinition(udListDefinitionId, includeDeleted);
+```
+
+## GetAllFromListName(String,Bool)
+
+Gets all list items for the specified list definition
+
+```crmscript
+NSListItemEntity[] GetAllFromListName(String udListDefinitionName, Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+Bool includeDeleted;
+NSListItemEntity[] res = agent.GetAllFromListName(udListDefinitionName, includeDeleted);
+```
+
+## GetAllInDomain(Integer,Bool)
+
+Gets all items in a domain
+
+```crmscript
+NSHierarchyEntity[] GetAllInDomain(Integer domain, Bool children)
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer domain;
+Bool children;
+NSHierarchyEntity[] res = agent.GetAllInDomain(domain, children);
+```
+
+## GetAllSaleStages(Bool)
+
+Returns all ratings
+
+```crmscript
+NSSaleStageEntity[] GetAllSaleStages(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStageEntity](CRMScript.NetServer.NSSaleStageEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSSaleStageEntity[] res = agent.GetAllSaleStages(includeDeleted);
+```
+
+## GetAllSaleType()
+
+Returns all sale types as simple list items
+
+```crmscript
+NSSaleType[] GetAllSaleType()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleType](CRMScript.NetServer.NSSaleType)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSaleType[] res = agent.GetAllSaleType();
+```
+
+## GetAllSaleTypeEntities(Bool)
+
+Returns all sale types as entities with stakeholders, guide and quote properties
+
+```crmscript
+NSSaleTypeEntity[] GetAllSaleTypeEntities(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleTypeEntity](CRMScript.NetServer.NSSaleTypeEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSSaleTypeEntity[] res = agent.GetAllSaleTypeEntities(includeDeleted);
+```
+
+## GetAllTasks(Bool)
+
+Returns all appointment tasks
+
+```crmscript
+NSTaskListItem[] GetAllTasks(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSTaskListItem[] res = agent.GetAllTasks(includeDeleted);
+```
+
+## GetAllTicketPriorities(Bool)
+
+Returns all available ticket priorities.
+
+```crmscript
+NSTicketPriorityEntity[] GetAllTicketPriorities(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriorityEntity](CRMScript.NetServer.NSTicketPriorityEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSTicketPriorityEntity[] res = agent.GetAllTicketPriorities(includeDeleted);
+```
+
+## GetAmountClassEntity(Integer)
+
+Gets an NSAmountClassEntity object.
+
+```crmscript
+NSAmountClassEntity GetAmountClassEntity(Integer amountClassEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAmountClassEntity](CRMScript.NetServer.NSAmountClassEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSAmountClassEntity thing = agent.GetAmountClassEntity(123);
+```
+
+## GetAppWebPanels()
+
+Gets all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken
+
+```crmscript
+NSWebPanelEntity[] GetAppWebPanels()
+```
+
+**Returns:** [CRMScript.NetServer.NSWebPanelEntity](CRMScript.NetServer.NSWebPanelEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSWebPanelEntity[] res = agent.GetAppWebPanels();
+```
+
+## GetBaseCurrency()
+
+Gets the base currency, used for calculating exchange rates
+
+```crmscript
+NSCurrencyEntity GetBaseCurrency()
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrencyEntity](CRMScript.NetServer.NSCurrencyEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCurrencyEntity res = agent.GetBaseCurrency();
+```
+
+## GetBusiness(Integer)
+
+Gets an NSBusiness object.
+
+```crmscript
+NSBusiness GetBusiness(Integer businessId)
+```
+
+**Returns:** [CRMScript.NetServer.NSBusiness](CRMScript.NetServer.NSBusiness)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSBusiness thing = agent.GetBusiness(123);
+```
+
+## GetBusinesses()
+
+Returns all available businesses that a contact could have.
+
+```crmscript
+NSBusiness[] GetBusinesses()
+```
+
+**Returns:** [CRMScript.NetServer.NSBusiness](CRMScript.NetServer.NSBusiness)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSBusiness[] res = agent.GetBusinesses();
+```
+
+## GetBusinessList(Integer[])
+
+Gets an array of NSBusiness objects.
+
+```crmscript
+NSBusiness[] GetBusinessList(Integer[]  businessIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSBusiness](CRMScript.NetServer.NSBusiness)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSBusiness[] list = agent.GetBusinessList(ids);
+```
+
+## GetCategories()
+
+Returns all categories a contact could belong to
+
+```crmscript
+NSCategory[] GetCategories()
+```
+
+**Returns:** [CRMScript.NetServer.NSCategory](CRMScript.NetServer.NSCategory)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCategory[] res = agent.GetCategories();
+```
+
+## GetCategory(Integer)
+
+Gets an NSCategory object.
+
+```crmscript
+NSCategory GetCategory(Integer categoryId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCategory](CRMScript.NetServer.NSCategory)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCategory thing = agent.GetCategory(123);
+```
+
+## GetCategoryList(Integer[])
+
+Gets an array of NSCategory objects.
+
+```crmscript
+NSCategory[] GetCategoryList(Integer[] categoryIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSCategory](CRMScript.NetServer.NSCategory)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSCategory[] res = agent.GetCategoryList(ids);
+```
+
+## GetCompetitor(Integer)
+
+Gets an NSCompetitor object.
+
+```crmscript
+NSCompetitor GetCompetitor(Integer competitorId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCompetitor](CRMScript.NetServer.NSCompetitor)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCompetitor thing = agent.GetCompetitor(123);
+```
+
+## GetCompetitorList(Integer[])
+
+Gets an array of NSCompetitor objects.
+
+```crmscript
+NSCompetitor[] GetCompetitorList(Integer[]  competitorIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSCompetitor](CRMScript.NetServer.NSCompetitor)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSCompetitor[] res = agent.GetCompetitorList(ids);
+```
+
+## GetCompetitors()
+
+Returns all competitors
+
+```crmscript
+NSCompetitor[] GetCompetitors()
+```
+
+**Returns:** [CRMScript.NetServer.NSCompetitor](CRMScript.NetServer.NSCompetitor)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCompetitor[] res = agent.GetCompetitors();
+```
+
+## GetConsentPurpose(Integer)
+
+Gets an NSConsentPurpose object.
+
+```crmscript
+NSConsentPurpose GetConsentPurpose(Integer consentPurposeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPurpose](CRMScript.NetServer.NSConsentPurpose)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSConsentPurpose thing = agent.GetConsentPurpose(123);
+```
+
+## GetConsentPurposeList(Integer[])
+
+Gets an array of NSConsentPurpose objects.
+
+```crmscript
+NSConsentPurpose[] GetConsentPurposeList(Integer[]  consentPurposeIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPurpose](CRMScript.NetServer.NSConsentPurpose)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSConsentPurpose[] res = agent.GetConsentPurposeList(ids);
+```
+
+## GetConsentPurposes()
+
+Returns all defined purposes.
+
+```crmscript
+NSConsentPurpose[] GetConsentPurposes()
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPurpose](CRMScript.NetServer.NSConsentPurpose)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSConsentPurpose[] res = agent.GetConsentPurposes();
+```
+
+## GetConsentSource(Integer)
+
+Gets an NSConsentSource object.
+
+```crmscript
+NSConsentSource GetConsentSource(Integer consentSourceId)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentSource](CRMScript.NetServer.NSConsentSource)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSConsentSource thing = agent.GetConsentSource(123);
+```
+
+## GetConsentSourceList(Integer[])
+
+Gets an array of NSConsentSource objects.
+
+```crmscript
+NSConsentSource[] GetConsentSourceList(Integer[]  consentSourceIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentSource](CRMScript.NetServer.NSConsentSource)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSConsentSource[] res = agent.GetConsentSourceList(ids);
+```
+
+## GetConsentSources()
+
+Returns all defined Sources.
+
+```crmscript
+NSConsentSource[] GetConsentSources()
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentSource](CRMScript.NetServer.NSConsentSource)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSConsentSource[] res = agent.GetConsentSources();
+```
+
+## GetCountries()
+
+Returns all available countries a contact or person could belong to.
+
+```crmscript
+NSCountry[] GetCountries()
+```
+
+**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCountry[] res = agent.GetCountries();
+```
+
+## GetCountry(Integer)
+
+Gets an NSCountry object.
+
+```crmscript
+NSCountry GetCountry(Integer countryId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCountry thing = agent.GetCountry(123);
+```
+
+## GetCountryList(Integer[])
+
+Gets an array of NSCountry objects.
+
+```crmscript
+NSCountry[] GetCountryList(Integer[]  countryIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSCountry[] res = agent.GetCountryList(ids);
+```
+
+## GetCredited(Integer)
+
+Gets an NSCredited object.
+
+```crmscript
+NSCredited GetCredited(Integer creditedId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredited](CRMScript.NetServer.NSCredited)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCredited thing = agent.GetCredited(123);
+```
+
+## GetCreditedList(Integer[])
+
+Gets an array of NSCredited objects.
+
+```crmscript
+NSCredited[] GetCreditedList(Integer[] creditedIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredited](CRMScript.NetServer.NSCredited)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSCredited[] res = agent.GetCreditedList(ids);
+```
+
+## GetCrediteds()
+
+Returns all credited
+
+```crmscript
+NSCredited[] GetCrediteds()
+```
+
+**Returns:** [CRMScript.NetServer.NSCredited](CRMScript.NetServer.NSCredited)[]
+
+## GetCurrencies()
+
+Returns all currencies
+
+```crmscript
+NSCurrency[] GetCurrencies()
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrency](CRMScript.NetServer.NSCurrency)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCurrency[] res = agent.GetCurrencies();
+```
+
+## GetCurrency(Integer)
+
+Gets an NSCurrency object.
+
+```crmscript
+NSCurrency GetCurrency(Integer currencyId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrency](CRMScript.NetServer.NSCurrency)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCurrency thing = agent.GetCurrency(123);
+```
+
+## GetCurrencyEntity(Integer)
+
+Gets an NSCurrencyEntity object.
+
+```crmscript
+NSCurrencyEntity GetCurrencyEntity(Integer currencyEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrencyEntity](CRMScript.NetServer.NSCurrencyEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCurrencyEntity thing = agent.GetCurrencyEntity(123);
+```
+
+## GetCurrencyList(Integer[])
+
+Gets an array of NSCurrency objects.
+
+```crmscript
+NSCurrency[] GetCurrencyList(Integer[]  currencyIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrency](CRMScript.NetServer.NSCurrency)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSCurrency[] res = agent.GetCurrencyList(ids);
+```
+
+## GetCustomerLanguage(Integer)
+
+Gets an NSCustomerLanguage object.
+
+```crmscript
+NSCustomerLanguage GetCustomerLanguage(Integer customerLanguageId)
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerLanguage](CRMScript.NetServer.NSCustomerLanguage)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCustomerLanguage thing = agent.GetCustomerLanguage(123);
+```
+
+## GetCustomerLanguageList(Integer[])
+
+Gets an array of NSCustomerLanguage objects.
+
+```crmscript
+NSCustomerLanguage[] GetCustomerLanguageList(Integer[]  customerLanguageIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerLanguage](CRMScript.NetServer.NSCustomerLanguage)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSCustomerLanguage[] res = agent.GetCustomerLanguageList(ids);
+```
+
+## GetCustomerLanguages()
+
+```crmscript
+NSCustomerLanguage[] GetCustomerLanguages()
+```
+
+**Returns:** [CRMScript.NetServer.NSCustomerLanguage](CRMScript.NetServer.NSCustomerLanguage)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCustomerLanguage[] res = agent.GetCustomerLanguages();
+```
+
+## GetDeliveryTerm(Integer)
+
+Gets an NSDeliveryTerm object.
+
+```crmscript
+NSDeliveryTerm GetDeliveryTerm(Integer deliveryTermId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDeliveryTerm](CRMScript.NetServer.NSDeliveryTerm)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDeliveryTerm thing = agent.GetDeliveryTerm(123);
+```
+
+## GetDeliveryTerms()
+
+Returns all DeliveryTerms in SuperOffice database.
+
+```crmscript
+NSDeliveryTerm[] GetDeliveryTerms()
+```
+
+**Returns:** [CRMScript.NetServer.NSDeliveryTerm](CRMScript.NetServer.NSDeliveryTerm)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDeliveryTerm[] res = agent.GetDeliveryTerms();
+```
+
+## GetDeliveryType(Integer)
+
+Gets an NSDeliveryType object.
+
+```crmscript
+NSDeliveryType GetDeliveryType(Integer deliveryTypeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDeliveryType](CRMScript.NetServer.NSDeliveryType)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDeliveryType thing = agent.GetDeliveryType(123);
+```
+
+## GetDeliveryTypes()
+
+Returns all DeliveryTypes in SuperOffice database.
+
+```crmscript
+NSDeliveryType[] GetDeliveryTypes()
+```
+
+**Returns:** [CRMScript.NetServer.NSDeliveryType](CRMScript.NetServer.NSDeliveryType)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDeliveryType[] res = agent.GetDeliveryTypes();
+```
+
+## GetDepartment(Integer)
+
+Gets an NSDepartment object.
+
+```crmscript
+NSDepartment GetDepartment(Integer departmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDepartment](CRMScript.NetServer.NSDepartment)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDepartment thing = agent.GetDepartment(123);
+```
+
+## GetDepartmentList(Integer[])
+
+Gets an array of Department objects.
+
+```crmscript
+NSDepartment[] GetDepartmentList(Integer[]  departmentIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSDepartment](CRMScript.NetServer.NSDepartment)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSDepartment[] res = agent.GetDepartmentList(ids);
+```
+
+## GetDepartments()
+
+Gets all departments/user groups for the internal phone list with the user's colleagues.
+
+```crmscript
+NSDepartment[] GetDepartments()
+```
+
+**Returns:** [CRMScript.NetServer.NSDepartment](CRMScript.NetServer.NSDepartment)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDepartment[] res = agent.GetDepartments();
+```
+
+## GetDocumentTemplate(Integer)
+
+Gets an NSDocumentTemplate object.
+
+```crmscript
+NSDocumentTemplate GetDocumentTemplate(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplate](CRMScript.NetServer.NSDocumentTemplate)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDocumentTemplate thing = agent.GetDocumentTemplate(123);
+```
+
+## GetDocumentTemplateEntity(Integer)
+
+Gets an NSDocumentTemplateEntity object.
+
+```crmscript
+NSDocumentTemplateEntity GetDocumentTemplateEntity(Integer documentTemplateEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplateEntity](CRMScript.NetServer.NSDocumentTemplateEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDocumentTemplateEntity thing = agent.GetDocumentTemplateEntity(123);
+```
+
+## GetDocumentTemplateExtension(Integer)
+
+Gets the file extension for the document template
+
+```crmscript
+String GetDocumentTemplateExtension(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String res = agent.GetDocumentTemplateExtension(documentTemplateId);
+```
+
+## GetDocumentTemplateLanguages(Integer)
+
+Gets the supported language variations for a document template
+
+```crmscript
+String[] GetDocumentTemplateLanguages(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String[] res = agent.GetDocumentTemplateLanguages(documentTemplateId);
+```
+
+## GetDocumentTemplateList(Integer[])
+
+Gets an array of NSDocumentTemplate objects.
+
+```crmscript
+NSDocumentTemplate[] GetDocumentTemplateList(Integer[]  documentTemplateIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplate](CRMScript.NetServer.NSDocumentTemplate)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSDocumentTemplate[] res = agent.GetDocumentTemplateList(ids);
+```
+
+## GetDocumentTemplateProperties(Integer,String[])
+
+Retrieves a list of key-value pairs of document template propertiesGets document template properties..
+
+&lt;code&gt;Map GetDocumentTemplateProperties(Integer documentTemplateId, String[] requestedProperties)&lt;/code&gt;
+
+```crmscript
+Map GetDocumentTemplateProperties(Integer documentTemplateId, string[] requestedProperties)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - key-value pairs with the requested properties.
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String[] requestedProperties;
+Map res = agent.GetDocumentTemplateProperties(documentTemplateId, requestedProperties);
+```
+
+## GetDocumentTemplates()
+
+Returns all available document templates
+
+```crmscript
+NSDocumentTemplate[] GetDocumentTemplates()
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplate](CRMScript.NetServer.NSDocumentTemplate)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDocumentTemplate[] res = agent.GetDocumentTemplates();
+```
+
+## GetDocumentTemplatesTasks()
+
+The appointment's task is a Document template item when the appointment is a document.
+
+```crmscript
+NSTask[] GetDocumentTemplatesTasks()
+```
+
+**Returns:** [CRMScript.NetServer.NSTask](CRMScript.NetServer.NSTask)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTask[] res = agent.GetDocumentTemplatesTasks();
+```
+
+## GetDocumentTemplateStreamFromId(Integer,String)
+
+Retrieves a stream to a document template based on its ID
+
+```crmscript
+NSStream GetDocumentTemplateStreamFromId(Integer documentTemplateId, String languageCode)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String languageCode;
+NSStream res = agent.GetDocumentTemplateStreamFromId(documentTemplateId, languageCode);
+```
+
+## GetDocumentTemplateTask(Integer)
+
+Returns a Document Template list item as a TaskListItem.
+
+```crmscript
+NSTask GetDocumentTemplateTask(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTask](CRMScript.NetServer.NSTask)
+
+<Note>
+The appointment's task is a Document template item when the appointment is a document.
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+NSTask res = agent.GetDocumentTemplateTask(documentTemplateId);
+```
+
+## GetDocumentTemplateUrl(Integer,Bool,String)
+
+Gets a url to the document template
+
+```crmscript
+String GetDocumentTemplateUrl(Integer documentTemplateId, Bool writableUrl, String languageCode)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+Bool writableUrl;
+String languageCode;
+String res = agent.GetDocumentTemplateUrl(documentTemplateId, writableUrl, languageCode);
+```
+
+## GetDocumentTemplateUsedInProjectStage(Integer)
+
+Gets a String array of names in project guide that this template is used in
+
+```crmscript
+String[] GetDocumentTemplateUsedInProjectStage(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String[] res = agent.GetDocumentTemplateUsedInProjectStage(documentTemplateId);
+```
+
+## GetDocumentTemplateUsedInSalesStage(Integer)
+
+Gets a String array of names in sales guide that this template is used in
+
+```crmscript
+String[] GetDocumentTemplateUsedInSalesStage(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+String[] res = agent.GetDocumentTemplateUsedInSalesStage(documentTemplateId);
+```
+
+## GetDocumentTypesForPlugin(Integer)
+
+Gets a list of document types supported by a given document plugin. Use the document template type when creating a new template.
+
+```crmscript
+Map GetDocumentTypesForPlugin(Integer pluginId)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer pluginId;
+Map res = agent.GetDocumentTypesForPlugin(pluginId);
+```
+
+## GetEmarketingStrictMode()
+
+Gets the value of the Emarketing strict mode setting
+
+```crmscript
+Bool GetEmarketingStrictMode()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool res = agent.GetEmarketingStrictMode();
+```
+
+## GetExtAppEntity(Integer)
+
+Gets an NSExtAppEntity object.
+
+```crmscript
+NSExtAppEntity GetExtAppEntity(Integer extAppEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSExtAppEntity](CRMScript.NetServer.NSExtAppEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSExtAppEntity thing = agent.GetExtAppEntity(123);
+```
+
+## GetFromListDefinition(Integer,Integer)
+
+Gets a list item for the specified list definition
+
+```crmscript
+NSListItemEntity GetFromListDefinition(Integer id, Integer udListDefinitionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+Integer udListDefinitionId;
+NSListItemEntity res = agent.GetFromListDefinition(id, udListDefinitionId);
+```
+
+## GetFromListName(Integer,String)
+
+Gets a list item for the specified list definition
+
+```crmscript
+NSListItemEntity GetFromListName(Integer id, String udListDefinitionName)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+String udListDefinitionName;
+NSListItemEntity res = agent.GetFromListName(id, udListDefinitionName);
+```
+
+## GetHeadingEntity(Integer)
+
+Gets an NSHeadingEntity object.
+
+```crmscript
+NSHeadingEntity GetHeadingEntity(Integer headingEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSHeadingEntity thing = agent.GetHeadingEntity(123);
+```
+
+## GetHeadings(Integer,Integer,Bool)
+
+Gets a selectable MDO list of the headings for this list item
+
+```crmscript
+NSSelectableMDOListItem[] GetHeadings(Integer udListDefinitionId, Integer listItemId, Bool showDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+Integer listItemId;
+Bool showDeleted;
+NSSelectableMDOListItem[] res = agent.GetHeadings(udListDefinitionId, listItemId, showDeleted);
+```
+
+## GetHeadingsForListItemFromListName(String,Integer,Bool)
+
+Gets a selectable MDO list of the headings for this list item
+
+```crmscript
+NSSelectableMDOListItem[] GetHeadingsForListItemFromListName(String udListDefinitionName, Integer listItemId, Bool showDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+Integer listItemId;
+Bool showDeleted;
+NSSelectableMDOListItem[] res = agent.GetHeadingsForListItemFromListName(udListDefinitionName, listItemId, showDeleted);
+```
+
+## GetHeadingsFromListDefinition(Integer)
+
+Gets headings for list resolved by the provided ID.
+
+```crmscript
+NSHeadingEntity[] GetHeadingsFromListDefinition(Integer id)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+NSHeadingEntity[] res = agent.GetHeadingsFromListDefinition(id);
+```
+
+## GetHeadingsFromName(String)
+
+Gets headings for list resolved by the provided name.
+
+```crmscript
+NSHeadingEntity[] GetHeadingsFromName(String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String name;
+NSHeadingEntity[] res = agent.GetHeadingsFromName(name);
+```
+
+## GetHierarchyEntity(Integer)
+
+Gets an NSHierarchyEntity object.
+
+```crmscript
+NSHierarchyEntity GetHierarchyEntity(Integer hierarchyEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSHierarchyEntity thing = agent.GetHierarchyEntity(123);
+```
+
+## GetHierarchyFromPath(Integer,String,Bool)
+
+Gets a hierarchy item from a path
+
+```crmscript
+NSHierarchyEntity GetHierarchyFromPath(Integer domain, String path, Bool children)
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer domain;
+String path;
+Bool children;
+NSHierarchyEntity res = agent.GetHierarchyFromPath(domain, path, children);
+```
+
+## GetInstalledLanguages()
+
+Returns the list of all languages installed in this database.
+
+```crmscript
+NSLanguageInfo[] GetInstalledLanguages()
+```
+
+**Returns:** [CRMScript.NetServer.NSLanguageInfo](CRMScript.NetServer.NSLanguageInfo)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSLanguageInfo[] res = agent.GetInstalledLanguages();
+```
+
+## GetLanguageInfo(Integer)
+
+Gets an NSLanguageInfo object.
+
+```crmscript
+NSLanguageInfo GetLanguageInfo(Integer languageInfoId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLanguageInfo](CRMScript.NetServer.NSLanguageInfo)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSLanguageInfo thing = agent.GetLanguageInfo(123);
+```
+
+## GetLanguageInfoList(Integer[])
+
+Gets an array of NSLanguageInfo objects.
+
+```crmscript
+NSLanguageInfo[] GetLanguageInfoList(Integer[]  languageInfoIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSLanguageInfo](CRMScript.NetServer.NSLanguageInfo)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSLanguageInfo[] res = agent.GetLanguageInfoList(ids);
+```
+
+## GetLegalBase(Integer)
+
+Gets an NSLegalBase object.
+
+```crmscript
+NSLegalBase GetLegalBase(Integer legalBaseId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLegalBase](CRMScript.NetServer.NSLegalBase)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSLegalBase thing = agent.GetLegalBase(123);
+```
+
+## GetLegalBaseList(Integer[])
+
+Gets an array of NSLegalBase objects.
+
+```crmscript
+NSLegalBase[] GetLegalBaseList(Integer[]  legalBaseIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSLegalBase](CRMScript.NetServer.NSLegalBase)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSLegalBase[] res = agent.GetLegalBaseList(ids);
+```
+
+## GetLegalBases()
+
+Returns all defined bases.
+
+```crmscript
+NSLegalBase[] GetLegalBases()
+```
+
+**Returns:** [CRMScript.NetServer.NSLegalBase](CRMScript.NetServer.NSLegalBase)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSLegalBase[] res = agent.GetLegalBases();
+```
+
+## GetLink(Integer)
+
+Gets an NSLink object.
+
+```crmscript
+NSLink GetLink(Integer linkId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSLink thing = agent.GetLink(123);
+```
+
+## GetLinkList(Integer[])
+
+Gets an array of Link objects.
+
+```crmscript
+NSLink[] GetLinkList(Integer[]  linkIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSLink[] res = agent.GetLinkList(ids);
+```
+
+## GetListDefinitions(Bool)
+
+Gets a list of the lists, built-in and user-defined.
+
+```crmscript
+NSListEntity[] GetListDefinitions(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSListEntity](CRMScript.NetServer.NSListEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool includeDeleted;
+NSListEntity[] res = agent.GetListDefinitions(includeDeleted);
+```
+
+## GetListEntity(Integer)
+
+Gets an NSListEntity object.
+
+```crmscript
+NSListEntity GetListEntity(Integer listEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSListEntity](CRMScript.NetServer.NSListEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSListEntity thing = agent.GetListEntity(123);
+```
+
+## GetListEntityByName(String)
+
+Gets an NSListEntity resolved by the provided name.
+
+```crmscript
+NSListEntity GetListEntityByName(String name)
+```
+
+**Returns:** [CRMScript.NetServer.NSListEntity](CRMScript.NetServer.NSListEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String name;
+NSListEntity res = agent.GetListEntityByName(name);
+```
+
+## GetListItemsForHeading(Integer,Integer)
+
+```crmscript
+NSSelectableMDOListItem[] GetListItemsForHeading(Integer udListDefinitionId, Integer headingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - List of list items that is selected if under this heading.
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+Integer headingId;
+NSSelectableMDOListItem[] res = agent.GetListItemsForHeading(udListDefinitionId, headingId);
+```
+
+## GetListItemsForHeadingFromListName(String,Integer)
+
+```crmscript
+NSSelectableMDOListItem[] GetListItemsForHeadingFromListName(String udListDefinitionName, Integer headingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - List of list items that is selected if under this heading.
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+Integer headingId;
+NSSelectableMDOListItem[] res = agent.GetListItemsForHeadingFromListName(udListDefinitionName, headingId);
+```
+
+## GetListItemsForUserGroup(Integer,Integer)
+
+```crmscript
+NSSelectableMDOListItem[] GetListItemsForUserGroup(Integer udListDefinitionId, Integer groupId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - List of list items that is visible in the usergroup.
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+Integer groupId;
+NSSelectableMDOListItem[] res = agent.GetListItemsForUserGroup(udListDefinitionId, groupId);
+```
+
+## GetListItemsForUserGroupFromListName(String,Integer)
+
+```crmscript
+NSSelectableMDOListItem[] GetListItemsForUserGroupFromListName(String udListDefinitionName, Integer groupId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - List of list items that is visible in the usergroup.
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+Integer groupId;
+NSSelectableMDOListItem[] res = agent.GetListItemsForUserGroupFromListName(udListDefinitionName, groupId);
+```
+
+## GetLocalizedText(Integer)
+
+Gets an NSLocalizedText object.
+
+```crmscript
+NSLocalizedText GetLocalizedText(Integer localizedTextId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedText](CRMScript.NetServer.NSLocalizedText)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSLocalizedText thing = agent.GetLocalizedText(123);
+```
+
+## GetLocalizedTextByType(Integer,Integer,Integer)
+
+Returns a localized text based on the resource ID for the selected language.
+
+```crmscript
+NSLocalizedText GetLocalizedTextByType(Integer textType, Integer resourceId, Integer languageId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedText](CRMScript.NetServer.NSLocalizedText)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer textType;
+Integer resourceId;
+Integer languageId;
+NSLocalizedText res = agent.GetLocalizedTextByType(textType, resourceId, languageId);
+```
+
+## GetLocalizedTextList(Integer[])
+
+Gets an array of NSLocalizedText objects.
+
+```crmscript
+NSLocalizedText[] GetLocalizedTextList(Integer[]  localizedTextIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedText](CRMScript.NetServer.NSLocalizedText)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSLocalizedText[] res = agent.GetLocalizedTextList(ids);
+```
+
+## GetLocalizedTexts()
+
+Gets all localized texts in the CRM database.
+
+```crmscript
+NSLocalizedText[] GetLocalizedTexts()
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedText](CRMScript.NetServer.NSLocalizedText)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSLocalizedText[] res = agent.GetLocalizedTexts();
+```
+
+## GetLocalizedTextsByLanguageId(Integer)
+
+Gets all localized text belonging to a specific language.
+
+```crmscript
+NSLocalizedText[] GetLocalizedTextsByLanguageId(Integer languageId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedText](CRMScript.NetServer.NSLocalizedText)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer languageId;
+NSLocalizedText[] res = agent.GetLocalizedTextsByLanguageId(languageId);
+```
+
+## GetLocalizedTextsByType(Integer[])
+
+Gets localized text by their typeGets localized text by their type.
+
+```crmscript
+NSLocalizedText[] GetLocalizedTextsByType(Integer[] textTypes)
+```
+
+**Returns:** [CRMScript.NetServer.NSLocalizedText](CRMScript.NetServer.NSLocalizedText)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+LocalizedTextType[] textTypes;
+NSLocalizedText[] res = agent.GetLocalizedTextsByType(textTypes);
+```
+
+## GetMrMrs(Integer)
+
+Gets an NSMrMrs object.
+
+```crmscript
+NSMrMrs GetMrMrs(Integer mrMrsId)
+```
+
+**Returns:** [CRMScript.NetServer.NSMrMrs](CRMScript.NetServer.NSMrMrs)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSMrMrs thing = agent.GetMrMrs(123);
+```
+
+## GetMrMrses()
+
+Returns all Items from the NSMrMrs table sorted by their value.
+
+```crmscript
+NSMrMrs[] GetMrMrses()
+```
+
+**Returns:** [CRMScript.NetServer.NSMrMrs](CRMScript.NetServer.NSMrMrs)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSMrMrs[] res = agent.GetMrMrses();
+```
+
+## GetMrMrsList(Integer[])
+
+Gets an array of NSMrMrs objects.
+
+```crmscript
+NSMrMrs[] GetMrMrsList(Integer[]  mrMrsIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSMrMrs](CRMScript.NetServer.NSMrMrs)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSMrMrs[] res = agent.GetMrMrsList(ids);
+```
+
+## GetOurCurrency()
+
+Gets the Our currency object if currency is enabled
+
+```crmscript
+NSCurrency GetOurCurrency()
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrency](CRMScript.NetServer.NSCurrency)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCurrency res = agent.GetOurCurrency();
+```
+
+## GetOwnerCompanysCurrency()
+
+Gets the currency of the user's owner company
+
+```crmscript
+NSCurrency GetOwnerCompanysCurrency()
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrency](CRMScript.NetServer.NSCurrency)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCurrency res = agent.GetOwnerCompanysCurrency();
+```
+
+## GetPaymentTerm(Integer)
+
+Gets an NSPaymentTerm object.
+
+```crmscript
+NSPaymentTerm GetPaymentTerm(Integer paymentTermId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPaymentTerm](CRMScript.NetServer.NSPaymentTerm)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPaymentTerm thing = agent.GetPaymentTerm(123);
+```
+
+## GetPaymentTerms()
+
+Returns all PaymentTerms in SuperOffice database.
+
+```crmscript
+NSPaymentTerm[] GetPaymentTerms()
+```
+
+**Returns:** [CRMScript.NetServer.NSPaymentTerm](CRMScript.NetServer.NSPaymentTerm)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPaymentTerm[] res = agent.GetPaymentTerms();
+```
+
+## GetPaymentType(Integer)
+
+Gets an NSPaymentType object.
+
+```crmscript
+NSPaymentType GetPaymentType(Integer paymentTypeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPaymentType](CRMScript.NetServer.NSPaymentType)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPaymentType thing = agent.GetPaymentType(123);
+```
+
+## GetPaymentTypes()
+
+Returns all PaymentTypes in SuperOffice database.
+
+```crmscript
+NSPaymentType[] GetPaymentTypes()
+```
+
+**Returns:** [CRMScript.NetServer.NSPaymentType](CRMScript.NetServer.NSPaymentType)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPaymentType[] res = agent.GetPaymentTypes();
+```
+
+## GetPluginCapabilities(Integer)
+
+Gets a list of plugin-dependent capabilities for a given document archive plugin.
+
+```crmscript
+Map GetPluginCapabilities(Integer pluginId)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+<Note>
+A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer pluginId;
+Map res = agent.GetPluginCapabilities(pluginId);
+```
+
+## GetPluginList()
+
+Gets a list of installed document plugins
+
+```crmscript
+Map GetPluginList()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Map res = agent.GetPluginList();
+```
+
+## GetPosition(Integer)
+
+Gets an NSPosition object.
+
+```crmscript
+NSPosition GetPosition(Integer positionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPosition](CRMScript.NetServer.NSPosition)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPosition thing = agent.GetPosition(123);
+```
+
+## GetPositionList(Integer[])
+
+Gets an array of NSPosition objects.
+
+```crmscript
+NSPosition[] GetPositionList(Integer[]  positionIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSPosition](CRMScript.NetServer.NSPosition)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSPosition[] res = agent.GetPositionList(ids);
+```
+
+## GetPositions()
+
+Returns all the positions a person could have.
+
+```crmscript
+NSPosition[] GetPositions()
+```
+
+**Returns:** [CRMScript.NetServer.NSPosition](CRMScript.NetServer.NSPosition)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPosition[] res = agent.GetPositions();
+```
+
+## GetPriorities()
+
+Returns all priorities an appointment could have.
+
+```crmscript
+NSPriority[] GetPriorities()
+```
+
+**Returns:** [CRMScript.NetServer.NSPriority](CRMScript.NetServer.NSPriority)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPriority[] res = agent.GetPriorities();
+```
+
+## GetPriority(Integer)
+
+Gets an NSPriority object.
+
+```crmscript
+NSPriority GetPriority(Integer priorityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriority](CRMScript.NetServer.NSPriority)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSPriority thing = agent.GetPriority(123);
+```
+
+## GetPriorityList(Integer[])
+
+Gets an array of Priority objects.
+
+```crmscript
+NSPriority[] GetPriorityList(Integer[]  priorityIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriority](CRMScript.NetServer.NSPriority)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSPriority[] res = agent.GetPriorityList(ids);
+```
+
+## GetProductCategories()
+
+Returns all ProductCategories in SuperOffice list.
+
+```crmscript
+NSProductCategory[] GetProductCategories()
+```
+
+**Returns:** [CRMScript.NetServer.NSProductCategory](CRMScript.NetServer.NSProductCategory)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProductCategory[] res = agent.GetProductCategories();
+```
+
+## GetProductCategory(Integer)
+
+Gets an NSProductCategory object.
+
+```crmscript
+NSProductCategory GetProductCategory(Integer productCategoryId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProductCategory](CRMScript.NetServer.NSProductCategory)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProductCategory thing = agent.GetProductCategory(123);
+```
+
+## GetProductFamilies()
+
+Returns all NSProductFamily in SuperOffice list.
+
+```crmscript
+NSProductFamily[] GetProductFamilies()
+```
+
+**Returns:** [CRMScript.NetServer.NSProductFamily](CRMScript.NetServer.NSProductFamily)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProductFamily[] res = agent.GetProductFamilies();
+```
+
+## GetProductFamily(Integer)
+
+Gets an NSProductFamily object.
+
+```crmscript
+NSProductFamily GetProductFamily(Integer productFamilyId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProductFamily](CRMScript.NetServer.NSProductFamily)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProductFamily thing = agent.GetProductFamily(123);
+```
+
+## GetProductType(Integer)
+
+Gets an NSProductType object.
+
+```crmscript
+NSProductType GetProductType(Integer productTypeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProductType](CRMScript.NetServer.NSProductType)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProductType thing = agent.GetProductType(123);
+```
+
+## GetProductTypes()
+
+Returns all ProductTypes in SuperOffice list.
+
+```crmscript
+NSProductType[] GetProductTypes()
+```
+
+**Returns:** [CRMScript.NetServer.NSProductType](CRMScript.NetServer.NSProductType)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProductType[] res = agent.GetProductTypes();
+```
+
+## GetProjectStatus(Integer)
+
+Gets an NSProjectStatus object.
+
+```crmscript
+NSProjectStatus GetProjectStatus(Integer projectStatusId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectStatus](CRMScript.NetServer.NSProjectStatus)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProjectStatus thing = agent.GetProjectStatus(123);
+```
+
+## GetProjectStatuses()
+
+Gets all items from the Project Status (ProjStatus) table.
+
+```crmscript
+NSProjectStatus[] GetProjectStatuses()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectStatus](CRMScript.NetServer.NSProjectStatus)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProjectStatus[] res = agent.GetProjectStatuses();
+```
+
+## GetProjectStatusList(Integer[])
+
+Gets an array of NSProjectStatus objects.
+
+```crmscript
+NSProjectStatus[] GetProjectStatusList(Integer[]  projectStatusIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectStatus](CRMScript.NetServer.NSProjectStatus)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSProjectStatus[] res = agent.GetProjectStatusList(ids);
+```
+
+## GetProjectType(Integer)
+
+Gets an NSProjectType object.
+
+```crmscript
+NSProjectType GetProjectType(Integer projectTypeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectType](CRMScript.NetServer.NSProjectType)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProjectType thing = agent.GetProjectType(123);
+```
+
+## GetProjectTypeEntity(Integer)
+
+Gets an NSProjectTypeEntity object.
+
+```crmscript
+NSProjectTypeEntity GetProjectTypeEntity(Integer projectTypeEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectTypeEntity](CRMScript.NetServer.NSProjectTypeEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProjectTypeEntity thing = agent.GetProjectTypeEntity(123);
+```
+
+## GetProjectTypeList(Integer[])
+
+Gets an array of NSProjectType objects.
+
+```crmscript
+NSProjectType[] GetProjectTypeList(Integer[]  projectTypeIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectType](CRMScript.NetServer.NSProjectType)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSProjectType[] res = agent.GetProjectTypeList(ids);
+```
+
+## GetProjectTypes()
+
+Gets all items from the Project Type (ProjType) table.
+
+```crmscript
+NSProjectType[] GetProjectTypes()
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectType](CRMScript.NetServer.NSProjectType)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSProjectType[] res = agent.GetProjectTypes();
+```
+
+## GetQuickReplies()
+
+Method to return all quick replies for a given associate
+
+```crmscript
+NSQuickReply[] GetQuickReplies()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuickReply](CRMScript.NetServer.NSQuickReply)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSQuickReply[] res = agent.GetQuickReplies();
+```
+
+## GetRating(Integer)
+
+Gets an NSRating object.
+
+```crmscript
+NSRating GetRating(Integer ratingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRating](CRMScript.NetServer.NSRating)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSRating thing = agent.GetRating(123);
+```
+
+## GetRatingList(Integer[])
+
+Gets an array of NSRating objects.
+
+```crmscript
+NSRating[] GetRatingList(Integer[]  ratingIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSRating](CRMScript.NetServer.NSRating)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSRating[] res = agent.GetRatingList(ids);
+```
+
+## GetRatings()
+
+Returns all ratings
+
+```crmscript
+NSRating[] GetRatings()
+```
+
+**Returns:** [CRMScript.NetServer.NSRating](CRMScript.NetServer.NSRating)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSRating[] res = agent.GetRatings();
+```
+
+## GetReason(Integer)
+
+Gets an NSReason object.
+
+```crmscript
+NSReason GetReason(Integer reasonId)
+```
+
+**Returns:** [CRMScript.NetServer.NSReason](CRMScript.NetServer.NSReason)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSReason thing = agent.GetReason(123);
+```
+
+## GetReasonList(Integer[])
+
+Gets an array of NSReason objects.
+
+```crmscript
+NSReason[] GetReasonList(Integer[]  reasonIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSReason](CRMScript.NetServer.NSReason)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSReason[] res = agent.GetReasonList(ids);
+```
+
+## GetReasons()
+
+Returns all reasons
+
+```crmscript
+NSReason[] GetReasons()
+```
+
+**Returns:** [CRMScript.NetServer.NSReason](CRMScript.NetServer.NSReason)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSReason[] res = agent.GetReasons();
+```
+
+## GetReasonSold(Integer)
+
+Gets an NSReasonSold object.
+
+```crmscript
+NSReasonSold GetReasonSold(Integer reasonSoldId)
+```
+
+**Returns:** [CRMScript.NetServer.NSReasonSold](CRMScript.NetServer.NSReasonSold)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSReasonSold thing = agent.GetReasonSold(123);
+```
+
+## GetReasonSoldList(Integer[])
+
+Gets an array of ReasonSold objects.
+
+```crmscript
+NSReasonSold[] GetReasonSoldList(Integer[]  reasonSoldIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSReasonSold](CRMScript.NetServer.NSReasonSold)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSReasonSold[] res = agent.GetReasonSoldList(ids);
+```
+
+## GetReasonStalled(Integer)
+
+Gets an NSReasonStalled object.
+
+```crmscript
+NSReasonStalled GetReasonStalled(Integer reasonStalledId)
+```
+
+**Returns:** [CRMScript.NetServer.NSReasonStalled](CRMScript.NetServer.NSReasonStalled)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSReasonStalled thing = agent.GetReasonStalled(123);
+```
+
+## GetReasonStalledList(Integer[])
+
+Gets an array of ReasonStalled objects.
+
+```crmscript
+NSReasonStalled[] GetReasonStalledList(Integer[]  reasonStalledIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSReasonStalled](CRMScript.NetServer.NSReasonStalled)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSReasonStalled[] res = agent.GetReasonStalledList(ids);
+```
+
+## GetRelationDefinitionEntity(Integer)
+
+Gets an NSRelationDefinitionEntity object.
+
+```crmscript
+NSRelationDefinitionEntity GetRelationDefinitionEntity(Integer relationDefinitionEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRelationDefinitionEntity](CRMScript.NetServer.NSRelationDefinitionEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSRelationDefinitionEntity thing = agent.GetRelationDefinitionEntity(123);
+```
+
+## GetResourceEntity(Integer)
+
+Gets an NSResourceEntity object.
+
+```crmscript
+NSResourceEntity GetResourceEntity(Integer resourceEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSResourceEntity](CRMScript.NetServer.NSResourceEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSResourceEntity thing = agent.GetResourceEntity(123);
+```
+
+## GetSaleStageEntity(Integer)
+
+Gets an NSSaleStageEntity object.
+
+```crmscript
+NSSaleStageEntity GetSaleStageEntity(Integer saleStageEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStageEntity](CRMScript.NetServer.NSSaleStageEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSaleStageEntity thing = agent.GetSaleStageEntity(123);
+```
+
+## GetSaleType(Integer)
+
+Gets an NSSaleType object.
+
+```crmscript
+NSSaleType GetSaleType(Integer saleTypeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleType](CRMScript.NetServer.NSSaleType)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSaleType thing = agent.GetSaleType(123);
+```
+
+## GetSaleTypeEntity(Integer)
+
+Gets an NSSaleTypeEntity object.
+
+```crmscript
+NSSaleTypeEntity GetSaleTypeEntity(Integer saleTypeEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleTypeEntity](CRMScript.NetServer.NSSaleTypeEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSaleTypeEntity thing = agent.GetSaleTypeEntity(123);
+```
+
+## GetSaleTypeList(Integer[])
+
+Gets an array of NSSaleType objects.
+
+```crmscript
+NSSaleType[] GetSaleTypeList(Integer[]  saleTypeIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleType](CRMScript.NetServer.NSSaleType)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSSaleType[] res = agent.GetSaleTypeList(ids);
+```
+
+## GetSelectionCategory(Integer)
+
+Gets an NSSelectionCategory object.
+
+```crmscript
+NSSelectionCategory GetSelectionCategory(Integer selectionCategoryId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionCategory](CRMScript.NetServer.NSSelectionCategory)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSelectionCategory thing = agent.GetSelectionCategory(123);
+```
+
+## GetSelectionCategoryList(Integer[])
+
+Gets an array of SelectionCategory objects.
+
+```crmscript
+NSSelectionCategory[] GetSelectionCategoryList(Integer[]  selectionCategoryIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionCategory](CRMScript.NetServer.NSSelectionCategory)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSSelectionCategory[] res = agent.GetSelectionCategoryList(ids);
+```
+
+## GetSource(Integer)
+
+Gets an NSSource object.
+
+```crmscript
+NSSource GetSource(Integer sourceId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSource](CRMScript.NetServer.NSSource)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSource thing = agent.GetSource(123);
+```
+
+## GetSourceList(Integer[])
+
+Gets an array of Source objects.
+
+```crmscript
+NSSource[] GetSourceList(Integer[]  sourceIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSource](CRMScript.NetServer.NSSource)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSSource[] res = agent.GetSourceList(ids);
+```
+
+## GetSources()
+
+Returns all sources
+
+```crmscript
+NSSource[] GetSources()
+```
+
+**Returns:** [CRMScript.NetServer.NSSource](CRMScript.NetServer.NSSource)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSSource[] res = agent.GetSources();
+```
+
+## GetTask(Integer)
+
+Gets an NSTask object.
+
+```crmscript
+NSTask GetTask(Integer taskId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTask](CRMScript.NetServer.NSTask)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTask thing = agent.GetTask(123);
+```
+
+## GetTaskList(Integer[])
+
+Gets an array of Task objects.
+
+```crmscript
+NSTask[] GetTaskList(Integer[]  taskIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSTask](CRMScript.NetServer.NSTask)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSTask[] res = agent.GetTaskList(ids);
+```
+
+## GetTasks()
+
+Returns all appointment tasks
+
+```crmscript
+NSTask[] GetTasks()
+```
+
+**Returns:** [CRMScript.NetServer.NSTask](CRMScript.NetServer.NSTask)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTask[] res = agent.GetTasks();
+```
+
+## GetTicketCategories()
+
+```crmscript
+NSTicketCategoryEntity[] GetTicketCategories()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategoryEntity](CRMScript.NetServer.NSTicketCategoryEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketCategoryEntity[] thing = agent.GetTicketCategories();
+```
+
+## GetTicketCategoriesForUserGroups(Integer[])
+
+```crmscript
+NSMDOListItem[] GetTicketCategoriesForUserGroups(Integer[] userGroupIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[] - Ticket categories for user groups.
+
+## GetTicketCategory(Integer)
+
+Gets an NSTicketCategory object.
+
+```crmscript
+NSTicketCategory GetTicketCategory(Integer ticketCategoryId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategory](CRMScript.NetServer.NSTicketCategory)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketCategory thing = agent.GetTicketCategory(123);
+```
+
+## GetTicketCategoryEntity(Integer)
+
+Gets an NSTicketCategoryEntity object.
+
+```crmscript
+NSTicketCategoryEntity GetTicketCategoryEntity(Integer ticketCategoryEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategoryEntity](CRMScript.NetServer.NSTicketCategoryEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketCategoryEntity thing = agent.GetTicketCategoryEntity(123);
+```
+
+## GetTicketCategoryList(Integer[])
+
+Gets an array of NSTicketCategoryEntity objects.
+
+```crmscript
+NSTicketCategoryEntity[] GetTicketCategoryList(Integer[]  ticketCategoryEntityIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategoryEntity](CRMScript.NetServer.NSTicketCategoryEntity)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSTicketCategoryEntity[] res = agent.GetTicketCategoryList(ids);
+```
+
+## GetTicketPriorities()
+
+```crmscript
+NSTicketPriority[] GetTicketPriorities()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriority](CRMScript.NetServer.NSTicketPriority)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketPriority[] thing = agent.GetTicketPriorities();
+```
+
+## GetTicketPriority(Integer)
+
+Gets an NSTicketPriority object.
+
+```crmscript
+NSTicketPriority GetTicketPriority(Integer ticketPriorityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriority](CRMScript.NetServer.NSTicketPriority)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketPriority thing = agent.GetTicketPriority(123);
+```
+
+## GetTicketPriorityEntity(Integer)
+
+Gets an NSTicketPriorityEntity object.
+
+```crmscript
+NSTicketPriorityEntity GetTicketPriorityEntity(Integer ticketPriorityEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriorityEntity](CRMScript.NetServer.NSTicketPriorityEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketPriorityEntity thing = agent.GetTicketPriorityEntity(123);
+```
+
+## GetTicketPriorityList(Integer[])
+
+Gets an array of NSTicketPriority objects.
+
+```crmscript
+NSTicketPriority[] GetTicketPriorityList(Integer[]  ticketPriorityIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriority](CRMScript.NetServer.NSTicketPriority)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSTicketPriority[] res = agent.GetTicketPriorityList(ids);
+```
+
+## GetTicketStatusEntity(Integer)
+
+Gets an NSTicketStatusEntity object.
+
+```crmscript
+NSTicketStatusEntity GetTicketStatusEntity(Integer ticketStatusEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketStatusEntity](CRMScript.NetServer.NSTicketStatusEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketStatusEntity thing = agent.GetTicketStatusEntity(123);
+```
+
+## GetTicketStatuses()
+
+```crmscript
+NSTicketStatusEntity[] GetTicketStatuses()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketStatusEntity](CRMScript.NetServer.NSTicketStatusEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSTicketStatusEntity[] res = agent.GetTicketStatuses();
+```
+
+## GetTicketStatusList(Integer[])
+
+Gets an array of NSTicketStatusEntity objects.
+
+```crmscript
+NSTicketStatusEntity[] GetTicketStatusList(Integer[]  ticketStatusEntityIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketStatusEntity](CRMScript.NetServer.NSTicketStatusEntity)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSListAgent agent;
+NSTicketStatusEntity[] res = agent.GetTicketStatusList(ids);
+```
+
+## GetVisibleForUserGroups(Integer,Integer)
+
+```crmscript
+NSSelectableMDOListItem[] GetVisibleForUserGroups(Integer udListDefinitionId, Integer listItemId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - List of User groups that this list item is visible for.
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+Integer listItemId;
+NSSelectableMDOListItem[] res = agent.GetVisibleForUserGroups(udListDefinitionId, listItemId);
+```
+
+## GetVisibleForUserGroupsFromListName(String,Integer)
+
+```crmscript
+NSSelectableMDOListItem[] GetVisibleForUserGroupsFromListName(String udListDefinitionName, Integer listItemId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - List of User groups that this list item is visible for.
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+Integer listItemId;
+NSSelectableMDOListItem[] res = agent.GetVisibleForUserGroupsFromListName(udListDefinitionName, listItemId);
+```
+
+## GetWebPanelByProgId(String)
+
+Gets a web panel using the ProgId key that was specified when it was created
+
+```crmscript
+NSWebPanelEntity GetWebPanelByProgId(String progId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebPanelEntity](CRMScript.NetServer.NSWebPanelEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String progId;
+NSWebPanelEntity res = agent.GetWebPanelByProgId(progId);
+```
+
+## GetWebPanelEntity(Integer)
+
+Gets an NSWebPanelEntity object.
+
+```crmscript
+NSWebPanelEntity GetWebPanelEntity(Integer webPanelEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebPanelEntity](CRMScript.NetServer.NSWebPanelEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSWebPanelEntity thing = agent.GetWebPanelEntity(123);
+```
+
+## GetWebPanelList()
+
+Return a list of all web panels.
+
+```crmscript
+NSWebPanelEntity[] GetWebPanelList()
+```
+
+**Returns:** [CRMScript.NetServer.NSWebPanelEntity](CRMScript.NetServer.NSWebPanelEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSWebPanelEntity[] res = agent.GetWebPanelList();
+```
+
+## GlobalChangeTicketStatus(Integer,Integer)
+
+Changes all references from one ticket status to another.
+
+```crmscript
+Void GlobalChangeTicketStatus(Integer fromTicketStatusId, Integer toTicketStatusId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Typically used in conjunction with delete.
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer fromTicketStatusId;
+Integer toTicketStatusId;
+agent.GlobalChangeTicketStatus(fromTicketStatusId, toTicketStatusId);
+```
+
+## MoveAllTickets(Integer,Integer)
+
+Moves all tickets from one ticket category to another
+
+```crmscript
+Void MoveAllTickets(Integer fromTicketCategoryId, Integer toTicketCategoryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer fromTicketCategoryId;
+Integer toTicketCategoryId;
+agent.MoveAllTickets(fromTicketCategoryId, toTicketCategoryId);
+```
+
+## MoveListItem(Integer,Integer,Integer)
+
+Moves a list item up or down in the list based on rank
+
+```crmscript
+Void MoveListItem(Integer udListDefinitionId, Integer listItemId, Integer direction)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RebuildFullnames()
+
+Updates the fullname field of all categories
+
+```crmscript
+Void RebuildFullnames()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Use this for example when changing parentId or renaming a category with children.
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+agent.RebuildFullnames();
+```
+
+## SaveAllFromListDefinition(Integer,NSListItemEntity[])
+
+Saves all list items for the specified list definition
+
+```crmscript
+NSListItemEntity[] SaveAllFromListDefinition(Integer udListDefinitionId, NSListItemEntity[] items)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+NSListItemEntity[] items;
+NSListItemEntity[] res = agent.SaveAllFromListDefinition(udListDefinitionId, items);
+```
+
+## SaveAllFromListName(String,NSListItemEntity[])
+
+Saves all list items for the specified list definition
+
+```crmscript
+NSListItemEntity[] SaveAllFromListName(String udListDefinitionName, NSListItemEntity[] items)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+NSListItemEntity[] items;
+NSListItemEntity[] res = agent.SaveAllFromListName(udListDefinitionName, items);
+```
+
+## SaveAmountClassEntity(NSAmountClassEntity)
+
+Updates the existing NSAmountClassEntity or creates a new NSAmountClassEntity if the id parameter is 0
+
+```crmscript
+NSAmountClassEntity SaveAmountClassEntity(NSAmountClassEntity amountClassEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSAmountClassEntity](CRMScript.NetServer.NSAmountClassEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSAmountClassEntity thing = agent.CreateDefaultAmountClassEntity();
+thing = agent.SaveAmountClassEntity(thing);
+```
+
+## SaveConsentPurpose(NSConsentPurpose)
+
+Saves an NSConsentPurpose object
+
+```crmscript
+NSConsentPurpose SaveConsentPurpose(NSConsentPurpose consentPurpose)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPurpose](CRMScript.NetServer.NSConsentPurpose)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSConsentPurpose consentPurpose;
+NSConsentPurpose res = agent.SaveConsentPurpose(consentPurpose);
+```
+
+## SaveConsentSource(NSConsentSource)
+
+```crmscript
+NSConsentSource SaveConsentSource(NSConsentSource consentSource)
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentSource](CRMScript.NetServer.NSConsentSource)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSConsentSource consentSource;
+NSConsentSource res = agent.SaveConsentSource(consentSource);
+```
+
+## SaveCountry(NSCountry)
+
+Saves a country
+
+```crmscript
+NSCountry SaveCountry(NSCountry country)
+```
+
+**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSCountry country;
+NSCountry res = agent.SaveCountry(country);
+```
+
+## SaveCurrencyEntity(NSCurrencyEntity)
+
+Updates the existing NSCurrencyEntity or creates a new NSCurrencyEntity if the id parameter is 0
+
+```crmscript
+NSCurrencyEntity SaveCurrencyEntity(NSCurrencyEntity currencyEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSCurrencyEntity](CRMScript.NetServer.NSCurrencyEntity)
+
+**Example:**
+
+```crmscript
+NSList agent;
+NSCurrencyEntity thing = agent.CreateDefaultCurrencyEntity();
+thing = agent.SaveCurrencyEntity(thing);
+```
+
+## SaveDocumentTemplateEntity(NSDocumentTemplateEntity)
+
+Updates the existing NSDocumentTemplateEntity or creates a new NSDocumentTemplateEntity if the id parameter is 0
+
+```crmscript
+NSDocumentTemplateEntity SaveDocumentTemplateEntity(NSDocumentTemplateEntity documentTemplateEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplateEntity](CRMScript.NetServer.NSDocumentTemplateEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSDocumentTemplateEntity thing = agent.CreateDefaultDocumentTemplateEntity();
+thing = agent.SaveDocumentTemplateEntity(thing);
+```
+
+## SaveDocumentTemplateStream(Integer,NSStream,String,Integer)
+
+Writes content in stream to document template file
+
+```crmscript
+NSTemplateInfo SaveDocumentTemplateStream(Integer documentTemplateId, NSStream content, String languageCode, Integer pluginId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTemplateInfo](CRMScript.NetServer.NSTemplateInfo)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer documentTemplateId;
+NSStream content;
+String languageCode;
+Integer pluginId;
+NSTemplateInfo res = agent.SaveDocumentTemplateStream(documentTemplateId, content, languageCode, pluginId);
+```
+
+## SaveExtAppEntity(NSExtAppEntity)
+
+Updates the existing NSExtAppEntity or creates a new NSExtAppEntity if the id parameter is 0
+
+```crmscript
+NSExtAppEntity SaveExtAppEntity(NSExtAppEntity extAppEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSExtAppEntity](CRMScript.NetServer.NSExtAppEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSExtAppEntity thing = agent.CreateDefaultExtAppEntity();
+thing = agent.SaveExtAppEntity(thing);
+```
+
+## SaveFromListDefinition(Integer,Integer,NSListItemEntity)
+
+Saves a list item for the specified list definition
+
+```crmscript
+NSListItemEntity SaveFromListDefinition(Integer id, Integer udListDefinitionId, NSListItemEntity item)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+Integer udListDefinitionId;
+NSListItemEntity item;
+NSListItemEntity res = agent.SaveFromListDefinition(id, udListDefinitionId, item);
+```
+
+## SaveFromListName(Integer,String,NSListItemEntity)
+
+Saves a list item for the specified list definition
+
+```crmscript
+NSListItemEntity SaveFromListName(Integer id, String udListDefinitionName, NSListItemEntity item)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+String udListDefinitionName;
+NSListItemEntity item;
+NSListItemEntity res = agent.SaveFromListName(id, udListDefinitionName, item);
+```
+
+## SaveHeadingEntity(NSHeadingEntity)
+
+Updates the existing NSHeadingEntity or creates a new NSHeadingEntity if the id parameter is 0
+
+```crmscript
+NSHeadingEntity SaveHeadingEntity(NSHeadingEntity headingEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSHeadingEntity thing = agent.CreateDefaultHeadingEntity();
+thing = agent.SaveHeadingEntity(thing);
+```
+
+## SaveHeadingFromListDefinition(Integer,NSHeadingEntity)
+
+Saves new heading for list resolved by the provided ID.
+
+```crmscript
+NSHeadingEntity SaveHeadingFromListDefinition(Integer id, NSHeadingEntity entity)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+NSHeadingEntity entity;
+NSHeadingEntity res = agent.SaveHeadingFromListDefinition(id, entity);
+```
+
+## SaveHeadingFromName(String,NSHeadingEntity)
+
+Saves new heading for list resolved by the provided name.
+
+```crmscript
+NSHeadingEntity SaveHeadingFromName(String name, NSHeadingEntity entity)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String name;
+NSHeadingEntity entity;
+NSHeadingEntity res = agent.SaveHeadingFromName(name, entity);
+```
+
+## SaveHeadingsForListItemFromListDefinition(Integer,Integer,NSSelectableMDOListItem[])
+
+Saves the active headings for the list item.
+
+```crmscript
+NSSelectableMDOListItem[] SaveHeadingsForListItemFromListDefinition(Integer udListDefinitionId, Integer listItemId, NSSelectableMDOListItem[] headings)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+Integer listItemId;
+NSSelectableMDOListItem[] headings;
+NSSelectableMDOListItem[] res = agent.SaveHeadingsForListItemFromListDefinition(udListDefinitionId, listItemId, headings);
+```
+
+## SaveHeadingsForListItemFromListName(String,Integer)
+
+Saves the headings for the list item.
+
+```crmscript
+NSSelectableMDOListItem[] SaveHeadingsForListItemFromListName(String udListDefinitionName, Integer listItemId, NSSelectableMDOListItem[] headings)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+Integer listItemId;
+NSSelectableMDOListItem[] headings;
+NSSelectableMDOListItem[] res = agent.SaveHeadingsForListItemFromListName(udListDefinitionName, listItemId, headings);
+```
+
+## SaveHeadingsFromListDefinition(Integer)
+
+Save headings for list resolved by the provided id.
+
+```crmscript
+NSHeadingEntity[] SaveHeadingsFromListDefinition(Integer id, NSHeadingEntity[] entities)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer id;
+NSHeadingEntity[] entities;
+NSHeadingEntity[] res = agent.SaveHeadingsFromListDefinition(id, entities);
+```
+
+## SaveHeadingsFromName(String)
+
+Saves headings for list resolved by the provided name.
+
+```crmscript
+NSHeadingEntity[] SaveHeadingsFromName(String name, NSHeadingEntity[] entities)
+```
+
+**Returns:** [CRMScript.NetServer.NSHeadingEntity](CRMScript.NetServer.NSHeadingEntity)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String name;
+NSHeadingEntity[] entities;
+NSHeadingEntity[] res = agent.SaveHeadingsFromName(name, entities);
+```
+
+## SaveHierarchyEntity(NSHierarchyEntity)
+
+Updates the existing NSHierarchyEntity or creates a new NSHierarchyEntity if the id parameter is 0
+
+```crmscript
+NSHierarchyEntity SaveHierarchyEntity(NSHierarchyEntity hierarchyEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSHierarchyEntity thing = agent.CreateDefaultHierarchyEntity();
+thing = agent.SaveHierarchyEntity(thing);
+```
+
+## SaveLegalBase(NSLegalBase)
+
+```crmscript
+NSLegalBase SaveLegalBase(NSLegalBase legalBase)
+```
+
+**Returns:** [CRMScript.NetServer.NSLegalBase](CRMScript.NetServer.NSLegalBase)
+
+## SaveListEntity(NSListEntity)
+
+Updates the existing NSListEntity or creates a new NSListEntity if the id parameter is 0
+
+```crmscript
+NSListEntity SaveListEntity(NSListEntity listEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSListEntity](CRMScript.NetServer.NSListEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSListEntity thing = agent.CreateDefaultListEntity();
+thing = agent.SaveListEntity(thing);
+```
+
+## SaveListEntityByName(String,NSListEntity)
+
+Saves an NSListEntity resolved by the provided name.
+
+```crmscript
+NSListEntity SaveListEntityByName(String name, NSListEntity listEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSListEntity](CRMScript.NetServer.NSListEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String name;
+NSListEntity listEntity;
+NSListEntity res = agent.SaveListEntityByName(name, listEntity);
+```
+
+## SaveListItemEntity(NSListItemEntity)
+
+Saves the NSListItemEntity.
+
+```crmscript
+NSListItemEntity SaveListItemEntity(NSListItemEntity listItemEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSListItemEntity](CRMScript.NetServer.NSListItemEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSListItemEntity listItemEntity;
+NSListItemEntity res = agent.SaveListItemEntity(listItemEntity);
+```
+
+## SaveProjectTypeEntity(NSProjectTypeEntity)
+
+Updates the existing NSProjectTypeEntity or creates a new NSProjectTypeEntity if the id parameter is 0
+
+```crmscript
+NSProjectTypeEntity SaveProjectTypeEntity(NSProjectTypeEntity projectTypeEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSProjectTypeEntity](CRMScript.NetServer.NSProjectTypeEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSProjectTypeEntity thing = agent.CreateDefaultProjectTypeEntity();
+thing = agent.SaveProjectTypeEntity(thing);
+```
+
+## SaveQuickReplies(NSQuickReply[])
+
+Saves all quick replies for a given associate
+
+```crmscript
+Void SaveQuickReplies(NSQuickReply[] quickReplies)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SaveRelationDefinitionEntity(NSRelationDefinitionEntity)
+
+Updates the existing NSRelationDefinitionEntity or creates a new NSRelationDefinitionEntity if the id parameter is 0
+
+```crmscript
+NSRelationDefinitionEntity SaveRelationDefinitionEntity(NSRelationDefinitionEntity relationDefinitionEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSRelationDefinitionEntity](CRMScript.NetServer.NSRelationDefinitionEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSRelationDefinitionEntity thing = agent.CreateDefaultRelationDefinitionEntity();
+thing = agent.SaveRelationDefinitionEntity(thing);
+```
+
+## SaveResourceEntity(NSResourceEntity)
+
+Updates the existing NSResourceEntity or creates a new NSResourceEntity if the id parameter is 0
+
+```crmscript
+NSResourceEntity SaveResourceEntity(NSResourceEntity resourceEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSResourceEntity](CRMScript.NetServer.NSResourceEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSResourceEntity thing = agent.CreateDefaultResourceEntity();
+thing = agent.SaveResourceEntity(thing);
+```
+
+## SaveSaleStageEntity(NSSaleStageEntity)
+
+Updates the existing NSSaleStageEntity or creates a new NSSaleStageEntity if the id parameter is
+
+```crmscript
+NSSaleStageEntity SaveSaleStageEntity(NSSaleStageEntity saleStageEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStageEntity](CRMScript.NetServer.NSSaleStageEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSSaleStageEntity thing = agent.CreateDefaultSaleStageEntity();
+thing = agent.SaveSaleStageEntity(thing);
+```
+
+## SaveSaleTypeEntity(NSSaleTypeEntity)
+
+Updates the existing NSSaleTypeEntity or creates a new NSSaleTypeEntity if the id parameter is 0
+
+```crmscript
+NSSaleTypeEntity SaveSaleTypeEntity(NSSaleTypeEntity saleTypeEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleTypeEntity](CRMScript.NetServer.NSSaleTypeEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSSaleTypeEntity thing = agent.CreateDefaultSaleTypeEntity();
+thing = agent.SaveSaleTypeEntity(thing);
+```
+
+## SaveTicketCategoryEntity(NSTicketCategoryEntity)
+
+Updates the existing NSTicketCategoryEntity or creates a new NSTicketCategoryEntity if the id parameter is 0
+
+```crmscript
+NSTicketCategoryEntity SaveTicketCategoryEntity(NSTicketCategoryEntity ticketCategoryEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategoryEntity](CRMScript.NetServer.NSTicketCategoryEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSTicketCategoryEntity thing = agent.CreateDefaultTicketCategoryEntity();
+thing = agent.SaveTicketCategoryEntity(thing);
+```
+
+## SaveTicketPriorityEntity(NSTicketPriorityEntity)
+
+Updates the existing NSTicketPriorityEntity or creates a new NSTicketPriorityEntity if the id parameter is 0
+
+```crmscript
+NSTicketPriorityEntity SaveTicketPriorityEntity(NSTicketPriorityEntity ticketPriorityEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriorityEntity](CRMScript.NetServer.NSTicketPriorityEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSTicketPriorityEntity thing = agent.CreateDefaultTicketPriorityEntity();
+thing = agent.SaveTicketPriorityEntity(thing);
+```
+
+## SaveTicketStatusEntity(NSTicketStatusEntity)
+
+Updates the existing NSTicketStatusEntity or creates a new NSTicketStatusEntity if the id parameter is 0
+
+```crmscript
+NSTicketStatusEntity SaveTicketStatusEntity(NSTicketStatusEntity ticketStatusEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketStatusEntity](CRMScript.NetServer.NSTicketStatusEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSTicketStatusEntity thing = agent.CreateDefaultTicketStatusEntity();
+thing = agent.SaveTicketStatusEntity(thing);
+```
+
+## SaveWebPanelEntity(NSWebPanelEntity)
+
+Updates the existing NSWebPanelEntity or creates a new NSWebPanelEntity if the id parameter is 0
+
+```crmscript
+NSWebPanelEntity SaveWebPanelEntity(NSWebPanelEntity webPanelEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebPanelEntity](CRMScript.NetServer.NSWebPanelEntity)
+
+**Example:**
+
+```crmscript
+NSList  agent;
+NSWebPanelEntity thing = agent.CreateDefaultWebPanelEntity();
+thing = agent.SaveWebPanelEntity(thing);
+```
+
+## SetDocumentTemplateFromDocumentTemplate(Integer,NSDocumentTemplateEntity)
+
+Creates a new document template based on another template
+
+```crmscript
+NSDocumentTemplateEntity SetDocumentTemplateFromDocumentTemplate(Integer sourceDocumentTemplateId, NSDocumentTemplateEntity documentTemplateEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplateEntity](CRMScript.NetServer.NSDocumentTemplateEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer sourceDocumentTemplateId;
+NSDocumentTemplateEntity documentTemplateEntity;
+NSDocumentTemplateEntity res = agent.SetDocumentTemplateFromDocumentTemplate(sourceDocumentTemplateId, documentTemplateEntity);
+```
+
+## SetDocumentTemplateStream(NSDocumentTemplateEntity,NSStream,String,Integer)
+
+Stores a document template from its stream.
+
+```crmscript
+NSDocumentTemplateEntity SetDocumentTemplateStream(NSDocumentTemplateEntity documentTemplateEntity, NSStream stream, String languageCode, Integer pluginId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplateEntity](CRMScript.NetServer.NSDocumentTemplateEntity)
+
+<Note>
+Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
+</Note>
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+NSDocumentTemplateEntity documentTemplateEntity;
+NSStream stream;
+String languageCode;
+Integer pluginId;
+NSDocumentTemplateEntity res = agent.SetDocumentTemplateStream(documentTemplateEntity, stream, languageCode, pluginId);
+```
+
+## SetEmarketingStrictMode(Bool)
+
+Turns on the Emarketing strict mode, which will enable full GDPR rules concerning Emarketing consents and subscriptions
+
+```crmscript
+Void SetEmarketingStrictMode(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Bool enable;
+agent.SetEmarketingStrictMode(enable);
+```
+
+## SetHeadingsForListItem(Integer,Integer,Bool)
+
+Sets headings which this list item should be listed under
+
+```crmscript
+Void SetHeadingsForListItem(Integer udListDefinitionId, Integer listItemId, Integer [] headingIds, Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetListItemsForHeading(Integer,Integer,Integer[],Bool)
+
+Updates listItems that will be visible for this usergroup
+
+```crmscript
+Void SetListItemsForHeading(Integer udListDefinitionId, Integer headingId, Integer[] listItemIds, Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetListItemsForHeadingFromListName(String,Integer,Integer[],Bool)
+
+Updates listItems under this heading
+
+```crmscript
+Void SetListItemsForHeadingFromListName(String udListDefinitionName, Integer headingId, Integer[] listItemIds, Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetListItemsForUserGroup(Integer,Integer,Integer[],Bool)
+
+Updates listItems that will be visible for this usergroup
+
+```crmscript
+Void SetListItemsForUserGroup(Integer udListDefinitionId, Integer usergroupId, Integer[] listItemIds, Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetListItemsForUserGroupFromListName(String,Integer,Integer[],Bool)
+
+Updates listItems that will be visible for this usergroup
+
+```crmscript
+Void SetListItemsForUserGroupFromListName(String udListDefinitionName, Integer usergroupId, Integer[] listItemsID, Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetRankOnHeadings(Integer,Integer[])
+
+Sets rank order on headings
+
+```crmscript
+Void SetRankOnHeadings(Integer udListDefinitionId, Integer[] headingIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetRankOnProjectActivity(Integer,Integer[])
+
+Sets rank order on project activity
+
+```crmscript
+Void SetRankOnProjectActivity(Integer projectTypeStatusLinkId, Integer[] itemsIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetRankOnProjectDocument(Integer,Integer[])
+
+Sets rank order on project document
+
+```crmscript
+Void SetRankOnProjectDocument(Integer projectTypeStatusLinkId, Integer[] itemsIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetRankOnSaleActivity(Integer,Integer[])
+
+Sets rank order on sale activity
+
+```crmscript
+Void SetRankOnSaleActivity(Integer saleTypeStageLinkId, Integer[] itemsIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetRankOnSaleDocument(Integer,Integer[])
+
+Sets rank order on project document
+
+```crmscript
+Void SetRankOnSaleDocument(Integer saleTypeStageLinkId, Integer[] itemsIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetTicketCategoriesForUserGroup(Integer,Integer[])
+
+Sets ticket categories for one user group
+
+```crmscript
+Void SetTicketCategoriesForUserGroup(Integer userGroupId, Integer[] categoryIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer userGroupId;
+Integer[] categoryIds;
+agent.SetTicketCategoriesForUserGroup(userGroupId, categoryIds);
+```
+
+## SetVisibleForUserGroup(Integer,Integer,Integer[],Bool)
+
+Sets a group which this list item should be visible for
+
+```crmscript
+Void SetVisibleForUserGroup(Integer udListDefinitionId, Integer listItemId, Integer[] userGroupId, Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetVisibleForUserGroups(Integer,Integer,NSSelectableMDOListItem[])
+
+Updates User groups that this list item is visible for
+
+```crmscript
+NSSelectableMDOListItem[] SetVisibleForUserGroups(Integer udListDefinitionId, Integer listItemId, NSSelectableMDOListItem[] userGroups)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer udListDefinitionId;
+Integer listItemId;
+NSSelectableMDOListItem[] userGroups;
+NSSelectableMDOListItem[] res = agent.SetVisibleForUserGroups(udListDefinitionId, listItemId, userGroups);
+```
+
+## SetVisibleForUserGroupsFromListName(String,Integer)
+
+Updates User groups that this list item is visible for
+
+```crmscript
+NSSelectableMDOListItem[] SetVisibleForUserGroupsFromListName(String udListDefinitionName, Integer listItemId, NSSelectableMDOListItem[] userGroups)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+String udListDefinitionName;
+Integer listItemId;
+NSSelectableMDOListItem[] userGroups;
+NSSelectableMDOListItem[] res = agent.SetVisibleForUserGroupsFromListName(udListDefinitionName, listItemId, userGroups);
+```
+
+## SortListItems(Integer,String)
+
+Sort the list items in a given list alphabetically
+
+```crmscript
+Void SortListItems(Integer udListDefinitionId, String cultureName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## UpdateHierarchyFromPath(Integer,String,NSHierarchyEntity)
+
+Updates a hierarchy item from a path
+
+```crmscript
+NSHierarchyEntity UpdateHierarchyFromPath(Integer domain, String path, NSHierarchyEntity entity)
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)
+
+**Example:**
+
+```crmscript
+NSListAgent agent;
+Integer domain;
+String path;
+NSHierarchyEntity entity;
+NSHierarchyEntity res = agent.UpdateHierarchyFromPath(domain, path, entity);
+```
+
+## UpdateCategoryMemberships(NSTicketCategoryMembershipEntity[],NSTicketCategoryMembershipEntity[],NSTicketCategoryMembershipEntity[])
+
+Updates a TicketCategory memberships.
+
+```crmscript
+Void UpdateCategoryMemberships(NSTicketCategoryMembershipEntity[] membershipsToAdd, NSTicketCategoryMembershipEntity[] membershipsToUpdate, NSTicketCategoryMembershipEntity[] membershipsToDelete)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+Integer ticketCategoryId = 16;
+Integer associateId = 23;
+NSListAgent listAgent;
+// add a member with x weight
+NSTicketCategoryMembershipEntity[] membershipsToAdd;
+NSTicketCategoryMembershipEntity membership;
+NSAssociate user;
+user.SetAssociateId(associateId);
+membership.SetUser(user);
+membership.SetWeight(5);
+membershipsToAdd.pushBack(membership);
+// update a member, change it's weight
+NSTicketCategoryMembershipEntity[] membershipsToUpdate;
+// members to delete
+NSTicketCategoryMembershipEntity[] membershipsToDelete;
+listAgent.UpdateCategoryMemberships(ticketCategoryId, membershipsToAdd, membershipsToUpdate, membershipsToDelete);
+```

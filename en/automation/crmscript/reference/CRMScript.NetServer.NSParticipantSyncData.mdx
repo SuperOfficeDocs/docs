@@ -1,0 +1,1082 @@
+﻿---
+uid: crmscript.netserver.nsparticipantsyncdata
+title: NSParticipantSyncData
+description: "Carrier object for ParticipantSyncData."
+keywords: CRMScript, NSParticipantSyncData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSParticipantSyncData
+
+Carrier object for ParticipantSyncData.
+
+## Constructors
+
+### NSParticipantSyncData()
+
+```crmscript
+NSParticipantSyncData
+```
+
+Initializes a new instance of the NSParticipantSyncData class.
+
+## Methods
+
+## GetContactBusiness()
+
+```crmscript
+String GetContactBusiness()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The business that the contact is associated with.
+
+<Note>
+The GUI forces the user to enter a business type.
+</Note>
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactBusiness = thing.GetContactBusiness();
+```
+
+## GetContactCategory()
+
+```crmscript
+String GetContactCategory()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The category that is set on the company.
+
+<Note>
+The GUI forces the user to enter a category type
+</Note>
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactCategory = thing.GetContactCategory();
+```
+
+## GetContactCountry()
+
+```crmscript
+String GetContactCountry()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactCountry = thing.GetContactCountry();
+```
+
+## GetContactDepartment()
+
+```crmscript
+String GetContactDepartment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Department.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactDepartment = thing.GetContactDepartment();
+```
+
+## GetContactFullName()
+
+```crmscript
+String GetContactFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactFullName = thing.GetContactFullName();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Contact ID of owning contact, may be 0
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetContactName()
+
+```crmscript
+String GetContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactName = thing.GetContactName();
+```
+
+## GetContactUrl()
+
+```crmscript
+String[] GetContactUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - The contact's internet addresses.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] contactUrl = thing.GetContactUrl();
+```
+
+## GetCountry()
+
+```crmscript
+String GetCountry()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The country this contact is located in.
+
+<Note>
+The country a contact is saved with, affects the phone number format, and the address layout.
+</Note>
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String country = thing.GetCountry();
+```
+
+## GetEMail()
+
+```crmscript
+String[] GetEMail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] eMail = thing.GetEMail();
+```
+
+## GetMessenger()
+
+```crmscript
+String[] GetMessenger()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] messenger = thing.GetMessenger();
+```
+
+## GetParticipantStatus()
+
+```crmscript
+Integer GetParticipantStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The appointment status for this participant. See &lt;xref href=\"CRMScript.NetServer.AppointmentStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+Integer participantStatus = thing.GetParticipantStatus();
+```
+
+## GetPersonAcademicTitle()
+
+```crmscript
+String GetPersonAcademicTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Academic title, populated from Salutation list but can be overwritten with anything at all.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personAcademicTitle = thing.GetPersonAcademicTitle();
+```
+
+## GetPersonAddress()
+
+```crmscript
+NSAddressSyncData GetPersonAddress()
+```
+
+**Returns:** [CRMScript.NetServer.NSAddressSyncData](CRMScript.NetServer.NSAddressSyncData)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+NSAddressSyncData personAddress = thing.GetPersonAddress();
+```
+
+## GetPersonCountry()
+
+```crmscript
+String GetPersonCountry()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The country this contact person is located in.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personCountry = thing.GetPersonCountry();
+```
+
+## GetPersonFirstName()
+
+```crmscript
+String GetPersonFirstName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - First name.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personFirstName = thing.GetPersonFirstName();
+```
+
+## GetPersonFormalName()
+
+Gets formal name for a person, as used in labels. (Full name + person title + academic title)
+
+```crmscript
+String GetPersonFormalName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personFormalName = thing.GetPersonFormalName();
+```
+
+## GetPersonFullName()
+
+```crmscript
+String GetPersonFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The person's full name localized to the current culture/country.  (internal name used in clients for employees).
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personFullName = thing.GetPersonFullName();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Person ID of person the appointment is with, may be 0
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetPersonLastname()
+
+```crmscript
+String GetPersonLastname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Last name.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personLastname = thing.GetPersonLastname();
+```
+
+## GetPersonMiddleName()
+
+```crmscript
+String GetPersonMiddleName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Middle name or 'van' etc.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personMiddleName = thing.GetPersonMiddleName();
+```
+
+## GetPersonMrmrs()
+
+```crmscript
+String GetPersonMrmrs()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personMrmrs = thing.GetPersonMrmrs();
+```
+
+## GetPersonPosition()
+
+```crmscript
+String GetPersonPosition()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The position. This is a predefined SuperOffice value, different from Title.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personPosition = thing.GetPersonPosition();
+```
+
+## GetPersonTitle()
+
+```crmscript
+String GetPersonTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Title.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personTitle = thing.GetPersonTitle();
+```
+
+## GetPhoneContact()
+
+```crmscript
+String[] GetPhoneContact()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Returns a collection of office phone numbers that belong to the contact person.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneContact = thing.GetPhoneContact();
+```
+
+## GetPhoneDirect()
+
+```crmscript
+String[] GetPhoneDirect()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneDirect = thing.GetPhoneDirect();
+```
+
+## GetPhoneFax()
+
+Returns a collection of fax numbers that belong to the contact person.
+
+```crmscript
+String[] GetPhoneFax()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneFax = thing.GetPhoneFax();
+```
+
+## GetPhoneMobile()
+
+Returns a collection of mobile phone numbers that belong to the contact person.
+
+```crmscript
+String[] GetPhoneMobile()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneMobile = thing.GetPhoneMobile();
+```
+
+## GetPhonePrivate()
+
+Returns a collection of phone numbers that belong to the contact person.
+
+```crmscript
+String[] GetPhonePrivate()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phonePrivate = thing.GetPhonePrivate();
+```
+
+## GetPostalAddress()
+
+```crmscript
+NSAddressSyncData GetPostalAddress()
+```
+
+**Returns:** [CRMScript.NetServer.NSAddressSyncData](CRMScript.NetServer.NSAddressSyncData)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+NSAddressSyncData postalAddress = thing.GetPostalAddress();
+```
+
+## GetStreetAddress()
+
+```crmscript
+NSAddressSyncData GetStreetAddress()
+```
+
+**Returns:** [CRMScript.NetServer.NSAddressSyncData](CRMScript.NetServer.NSAddressSyncData)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+NSAddressSyncData streetAddress = thing.GetStreetAddress();
+```
+
+## GetUrl()
+
+```crmscript
+String[] GetUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - The URLs related to this person.
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] url = thing.GetUrl();
+```
+
+## GetVoip()
+
+```crmscript
+String[] GetVoip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] voip = thing.GetVoip();
+```
+
+## SetContactBusiness(String)
+
+```crmscript
+Void SetContactBusiness(String contactBusiness)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The GUI forces the user to enter a business type.
+</Note>
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactBusiness;
+thing.SetContactBusiness(contactBusiness);
+```
+
+## SetContactCategory(String)
+
+The GUI forces the user to enter a category type
+
+```crmscript
+Void SetContactCategory(String contactCategory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactCategory;
+thing.SetContactCategory(contactCategory);
+```
+
+## SetContactCountry(String)
+
+```crmscript
+Void SetContactCountry(String contactCountry)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactCountry;
+thing.SetContactCountry(contactCountry);
+```
+
+## SetContactDepartment(String)
+
+```crmscript
+Void SetContactDepartment(String contactDepartment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactDepartment;
+thing.SetContactDepartment(contactDepartment);
+```
+
+## SetContactFullName(String)
+
+```crmscript
+Void SetContactFullName(String contactFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactFullName;
+thing.SetContactFullName(contactFullName);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetContactName(String)
+
+```crmscript
+Void SetContactName(String contactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String contactName;
+thing.SetContactName(contactName);
+```
+
+## SetContactUrl(String[])
+
+```crmscript
+Void SetContactUrl(String[] contactUrl)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] contactUrl;
+thing.SetContactUrl(contactUrl);
+```
+
+## SetCountry(String)
+
+```crmscript
+Void SetCountry(String country)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The country a contact is saved with, affects the phone number format, and the address layout.
+</Note>
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String country;
+thing.SetCountry(country);
+```
+
+## SetEMail(String[])
+
+```crmscript
+Void SetEMail(String[] eMail)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] eMail;
+thing.SetEMail(eMail);
+```
+
+## SetMessenger(String[])
+
+```crmscript
+Void SetMessenger(String[] messenger)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] messenger;
+thing.SetMessenger(messenger);
+```
+
+## SetParticipantStatus(Integer)
+
+```crmscript
+Void SetParticipantStatus(Integer participantStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+Integer participantStatus;
+thing.SetParticipantStatus(participantStatus);
+```
+
+## SetPersonAcademicTitle(String)
+
+```crmscript
+Void SetPersonAcademicTitle(String personAcademicTitle)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personAcademicTitle;
+thing.SetPersonAcademicTitle(personAcademicTitle);
+```
+
+## SetPersonAddress(NSAddressSyncData)
+
+```crmscript
+Void SetPersonAddress(NSAddressSyncData personAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+NSAddressSyncData personAddress;
+thing.SetPersonAddress(personAddress);
+```
+
+## SetPersonCountry(String)
+
+```crmscript
+Void SetPersonCountry(String personCountry)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personCountry;
+thing.SetPersonCountry(personCountry);
+```
+
+## SetPersonFirstName(String)
+
+```crmscript
+Void SetPersonFirstName(String personFirstName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personFirstName;
+thing.SetPersonFirstName(personFirstName);
+```
+
+## SetPersonFormalName(String)
+
+```crmscript
+Void SetPersonFormalName(String personFormalName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personFormalName;
+thing.SetPersonFormalName(personFormalName);
+```
+
+## SetPersonFullName(String)
+
+```crmscript
+Void SetPersonFullName(String personFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personFullName;
+thing.SetPersonFullName(personFullName);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetPersonLastname(String)
+
+```crmscript
+Void SetPersonLastname(String personLastname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personLastname;
+thing.SetPersonLastname(personLastname);
+```
+
+## SetPersonMiddleName(String)
+
+```crmscript
+Void SetPersonMiddleName(String personMiddleName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personMiddleName;
+thing.SetPersonMiddleName(personMiddleName);
+```
+
+## SetPersonMrmrs(String)
+
+```crmscript
+Void SetPersonMrmrs(String personMrmrs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personMrmrs;
+thing.SetPersonMrmrs(personMrmrs);
+```
+
+## SetPersonPosition(String)
+
+```crmscript
+Void SetPersonPosition(String personPosition)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personPosition;
+thing.SetPersonPosition(personPosition);
+```
+
+## SetPersonTitle(String)
+
+```crmscript
+Void SetPersonTitle(String personTitle)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String personTitle;
+thing.SetPersonTitle(personTitle);
+```
+
+## SetPhoneContact(String[])
+
+Returns a collection of office phone numbers that belong to the contact person.
+
+```crmscript
+Void SetPhoneContact(String[] phoneContact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneContact;
+thing.SetPhoneContact(phoneContact);
+```
+
+## SetPhoneDirect(String[])
+
+```crmscript
+Void SetPhoneDirect(String[] phoneDirect)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneDirect;
+thing.SetPhoneDirect(phoneDirect);
+```
+
+## SetPhoneFax(String[])
+
+```crmscript
+Void SetPhoneFax(String[] phoneFax)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneFax;
+thing.SetPhoneFax(phoneFax);
+```
+
+## SetPhoneMobile(String[])
+
+```crmscript
+Void SetPhoneMobile(String[] phoneMobile)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phoneMobile;
+thing.SetPhoneMobile(phoneMobile);
+```
+
+## SetPhonePrivate(String[])
+
+```crmscript
+Void SetPhonePrivate(String[] phonePrivate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] phonePrivate;
+thing.SetPhonePrivate(phonePrivate);
+```
+
+## SetPostalAddress(NSAddressSyncData)
+
+```crmscript
+Void SetPostalAddress(NSAddressSyncData postalAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+NSAddressSyncData postalAddress;
+thing.SetPostalAddress(postalAddress);
+```
+
+## SetStreetAddress(NSAddressSyncData)
+
+```crmscript
+Void SetStreetAddress(NSAddressSyncData streetAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+NSAddressSyncData streetAddress;
+thing.SetStreetAddress(streetAddress);
+```
+
+## SetUrl(String[])
+
+```crmscript
+Void SetUrl(String[] url)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] url;
+thing.SetUrl(url);
+```
+
+## SetVoip(String[])
+
+```crmscript
+Void SetVoip(String[] voip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantSyncData thing;
+String[] voip;
+thing.SetVoip(voip);
+```

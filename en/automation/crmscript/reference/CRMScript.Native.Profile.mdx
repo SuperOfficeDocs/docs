@@ -1,0 +1,60 @@
+﻿---
+uid: crmscript.native.profile
+title: Profile
+description: "Methods for fetching info about a users profile."
+keywords: CRMScript, Profile, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Profile
+
+Methods for fetching info about a users profile.
+
+## Constructors
+
+### Profile()
+
+```crmscript
+Profile
+```
+
+Initializes a new instance of the Profile class.
+
+## Methods
+
+## getListTicketsFields(Integer)
+
+Deprecated from version 7!
+
+Returns an array containing information about a user's profile for the list-tickets tables as &lt;code&gt;headerField, databaseField, chop, headerField, databaseField, chop, ...&lt;/code&gt;
+
+```crmscript
+String[] getListTicketsFields(Integer user)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Information about a user's profile for the list-tickets tables in a SearchEngine- and DataTable-friendly way.
+
+**Example:**
+
+```crmscript
+Map config = getScreenElementConfig(screenElementIndex);
+Profile p;
+String[] fields = p.getListTicketsFields(getVariable("activeUser").toInteger());
+Integer c = 0;
+for (Integer i = 0; i < (fields.length()* 2); i = i+3)
+{
+  config.insert("fields." + c.toString() + ".label", fields[i]);
+  config.insert("fields." + c.toString() + ".field", fields[i+1]);
+  config.insert("fields." + c.toString() + ".chop", fields[i+2]);
+  if (fields[i+1] == "ticket.status" || fields[i+1] == "ticket.ticket_status")
+  {
+    config.insert("showTicketStatus", "true");
+  }
+  c++;
+}
+config.insert("fields.length", c.toString());
+```

@@ -1,0 +1,99 @@
+﻿---
+uid: crmscript.native.dbicontrol
+title: DbiControl
+description: "Used for communicating with DBI agents to share data with external systems."
+keywords: CRMScript, DbiControl, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# DbiControl
+
+Used for communicating with DBI agents to share data with external systems.
+
+## Constructors
+
+### DbiControl()
+
+```crmscript
+DbiControl
+```
+
+Initializes a new instance of the DbiControl class.
+
+## Methods
+
+## getObject()
+
+When fetching data from external system, this function is called repeatedly.
+
+```crmscript
+Map getObject()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Field-value pairs for the currently fetched object.
+
+## getParameter(String)
+
+Returns the value of the given parameter.
+
+```crmscript
+String getParameter(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the named parameter.
+
+## getParameters()
+
+Retrieves parameters for a DBI setup.
+
+```crmscript
+Map getParameters()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Field-value pairs.
+
+<Note>
+It can among else define parameters for limiting the data set, or whatever else you define under the "Settings/DBI" section of eJournal. You will also get saved parameters so that you can store values from one run to another.
+</Note>
+
+## saveParameter(String,String)
+
+Saves a parameter to the object.
+
+```crmscript
+Void saveParameter(String name, String val)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## sendObject(Map)
+
+This function will send an object to the external system agent, during a DBI integration session.
+
+```crmscript
+Void sendObject(Map values)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This may be a map of table.field_name and value, for instance, for an ODBC agent.
+</Note>
+
+## setParameter(String,String)
+
+Allows you to set parameter values that are sent to the external DBI agent.
+
+```crmscript
+Void setParameter(String name, String val)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The parameters set using this function are not saved for later retrieval.
+</Note>

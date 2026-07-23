@@ -1,0 +1,98 @@
+﻿---
+uid: crmscript.global.byte
+title: Byte
+description: "Represents a byte. A byte can only contain integer values between 0 and 255. Large values will be masked."
+keywords: CRMScript, Byte, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Byte
+
+Represents a byte. A byte can only contain integer values between 0 and 255. Large values will be masked.
+
+## Constructors
+
+### Byte()
+
+```crmscript
+Byte Byte()
+```
+
+Default constructor.
+
+### Byte(Integer)
+
+```crmscript
+Byte Byte(Integer value)
+```
+
+Pass a number to copy into a new object.
+
+## Methods
+
+## toHex()
+
+Convert the value of the current byte to a hexadecimal representation of the byte. For example, 10 will return "a", 11 will return "b", and so on.
+
+```crmscript
+String toHex()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Hexadecimal representation of the byte.
+
+<Note>
+Use toHex(Integer) to provide the number of padding zeros.
+</Note>
+
+## toHex(Integer)
+
+Convert the value of the current byte to a hexadecimal representation of the byte with padding zeros. For example, 10 will return "a", 11 will return "b", and so on.
+
+```crmscript
+String toHex(Integer padding)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Hexadecimal representation of the byte with padding zeros.
+
+## toString()
+
+Converts a byte value to its string representation.
+
+```crmscript
+String toString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## toInteger()
+
+Converts a byte value to its integer representation (0 - 255).
+
+```crmscript
+Integer toInteger()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Integer representation (0 - 255)
+
+## toBool()
+
+Returns the boolean value of the Byte.
+
+```crmscript
+Bool toBool()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+If(value != 0)
+\treturn true;
+else
+\treturn false;
+```

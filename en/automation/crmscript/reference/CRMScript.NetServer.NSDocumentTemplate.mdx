@@ -1,0 +1,370 @@
+﻿---
+uid: crmscript.netserver.nsdocumenttemplate
+title: NSDocumentTemplate
+description: "The template a document is based on is stored in the SO\_arc\\template folder on the server. This will return the name as displayed in the GUI, and not the physical document name, of the template the document object is based on."
+keywords: CRMScript, NSDocumentTemplate, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDocumentTemplate
+
+The template a document is based on is stored in the SO\_arc\\template folder on the server. This will return the name as displayed in the GUI, and not the physical document name, of the template the document object is based on.
+
+## Constructors
+
+### NSDocumentTemplate()
+
+```crmscript
+NSDocumentTemplate
+```
+
+Initializes a new instance of the NSDocumentTemplate class.
+
+## Methods
+
+## GetAutoeventId()
+
+```crmscript
+Integer GetAutoeventId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Which document plugin is responsible for the documents generated from this template.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer autoeventId = thing.GetAutoeventId();
+```
+
+## GetDefaultOref()
+
+```crmscript
+String GetDefaultOref()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Processed via tag substitution to give document reference.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String defaultOref = thing.GetDefaultOref();
+```
+
+## GetDeleted()
+
+```crmscript
+Integer GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer deleted = thing.GetDeleted();
+```
+
+## GetDirection()
+
+```crmscript
+Integer GetDirection()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 = incoming, 2 = outgoing. See &lt;xref href=\"CRMScript.NetServer.TaskDirection\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer direction = thing.GetDirection();
+```
+
+## GetDocumentTemplateId()
+
+```crmscript
+Integer GetDocumentTemplateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer documentTemplateId = thing.GetDocumentTemplateId();
+```
+
+## GetFilename()
+
+```crmscript
+String GetFilename()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Relative to TemplatePath.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String filename = thing.GetFilename();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String name = thing.GetName();
+```
+
+## GetQuoteDocType()
+
+```crmscript
+Integer GetQuoteDocType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What type of quote document is this? See &lt;xref href=\"CRMScript.NetServer.DocTmplQuoteType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+NSDocTmplQuoteType quoteDocType = thing.GetQuoteDocType();
+```
+
+## GetRecordType()
+
+```crmscript
+NSDocTmplType GetRecordType()
+```
+
+**Returns:** [CRMScript.NetServer.NSDocTmplType](CRMScript.NetServer.NSDocTmplType) - 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo See &lt;xref href=\"CRMScript.NetServer.TaskType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+NSDocTmplType recordType = thing.GetRecordType();
+```
+
+## GetSaveInDb()
+
+```crmscript
+Integer GetSaveInDb()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 = save document records in DB; otherwise not.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer saveInDb = thing.GetSaveInDb();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetAutoeventId(Integer)
+
+```crmscript
+Void SetAutoeventId(Integer autoeventId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer autoeventId;
+thing.SetAutoeventId(autoeventId);
+```
+
+## SetDefaultOref(String)
+
+```crmscript
+Void SetDefaultOref(String defaultOref)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String defaultOref;
+thing.SetDefaultOref(defaultOref);
+```
+
+## SetDeleted(Integer)
+
+```crmscript
+Void SetDeleted(Integer deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDirection(Integer)
+
+Sets the direction of a document template
+
+```crmscript
+Void SetDirection(Integer direction)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer direction;
+thing.SetDirection(direction);
+```
+
+## SetDocumentTemplateId(Integer)
+
+```crmscript
+Void SetDocumentTemplateId(Integer documentTemplateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer documentTemplateId;
+thing.SetDocumentTemplateId(documentTemplateId);
+```
+
+## SetFilename(String)
+
+```crmscript
+Void SetFilename(String filename)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String filename;
+thing.SetFilename(filename);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String name;
+thing.SetName(name);
+```
+
+## SetQuoteDocType(Integer)
+
+```crmscript
+Void SetQuoteDocType(Integer quoteDocType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer quoteDocType;
+thing.SetQuoteDocType(quoteDocType);
+```
+
+## SetRecordType(NSDocTmplType)
+
+```crmscript
+Void SetRecordType(NSDocTmplType recordType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+NSDocTmplType recordType;
+thing.SetRecordType(recordType);
+```
+
+## SetSaveInDb(Integer)
+
+```crmscript
+Void SetSaveInDb(Integer saveInDb)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+Integer saveInDb;
+thing.SetSaveInDb(saveInDb);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentTemplate thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

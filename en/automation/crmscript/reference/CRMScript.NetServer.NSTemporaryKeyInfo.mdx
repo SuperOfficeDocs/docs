@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nstemporarykeyinfo
+title: NSTemporaryKeyInfo
+description: "The fields returned when checking a temporary key."
+keywords: CRMScript, NSTemporaryKeyInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTemporaryKeyInfo
+
+The fields returned when checking a temporary key.
+
+## Constructors
+
+### NSTemporaryKeyInfo()
+
+```crmscript
+NSTemporaryKeyInfo
+```
+
+Initializes a new instance of the NSTemporaryKeyInfo class.
+
+## Methods
+
+## GetDomain()
+
+```crmscript
+Integer GetDomain()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The domain for this key. Unknown if key is not valid. See &lt;xref href=\"CRMScript.NetServer.TemporaryKeyDomain\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Integer domain = thing.GetDomain();
+```
+
+## GetIsExpired()
+
+```crmscript
+Bool GetIsExpired()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Whether the key is expired or not.
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Bool isExpired = thing.GetIsExpired();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The person ID this key is related to. May be null.
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetTargetId()
+
+```crmscript
+Integer GetTargetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key of the entity this temporary key is for, dependent of domain.
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Integer targetId = thing.GetTargetId();
+```
+
+## SetDomain(Integer)
+
+```crmscript
+Void SetDomain(Integer domain)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Integer domain;
+thing.SetDomain(domain);
+```
+
+## SetIsExpired(Bool)
+
+```crmscript
+Void SetIsExpired(Bool isExpired)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Bool isExpired;
+thing.SetIsExpired(isExpired);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetTargetId(Integer)
+
+```crmscript
+Void SetTargetId(Integer targetId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemporaryKeyInfo thing;
+Integer targetId;
+thing.SetTargetId(targetId);
+```

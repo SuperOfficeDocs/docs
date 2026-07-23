@@ -1,0 +1,429 @@
+﻿---
+uid: crmscript.native.eventdatadialogfield
+title: EventDataDialogField
+description: "Utility class to generate a field for dialog to use in CRMScript triggers."
+keywords: CRMScript, EventDataDialogField, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# EventDataDialogField
+
+Utility class to generate a field for dialog to use in CRMScript triggers.
+
+## Constructors
+
+### EventDataDialogField()
+
+```crmscript
+EventDataDialogField
+```
+
+Initializes a new instance of the EventDataDialogField class.
+
+## Methods
+
+## addListItem(String)
+
+Adds individual items to list.
+
+```crmscript
+Void addListItem(String item)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getAdditionalInfo()
+
+Returns additional info for the named list.
+
+```crmscript
+String getAdditionalInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getAllowBlank()
+
+Returns true if field is allowed to be empty instead of 0.
+
+```crmscript
+Bool getAllowBlank()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getAllowRootSelection()
+
+Returns true if root selection is allowed.
+
+```crmscript
+Bool getAllowRootSelection()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getDays()
+
+Returns true if days is enabled, used with timespan field type.
+
+```crmscript
+Bool getDays()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getDefault()
+
+Returns default value set.
+
+```crmscript
+String getDefault()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getDefaultFloat()
+
+Returns default float value set. Only use for float field type.
+
+```crmscript
+Float getDefaultFloat()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float)
+
+## getForceFlatList()
+
+Force flat list if using list name.
+
+```crmscript
+Bool getForceFlatList()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getId()
+
+Returns identifier for field.
+
+```crmscript
+String getId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getHideEmptyRootsInSearch()
+
+If true, hide empty roots in search. Default is false. Only applies when showFullPath is true and field type is list.
+
+```crmscript
+Bool getHideEmptyRootsInSearch()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getHours()
+
+Returns true if hours is enabled, used with timespan field type.
+
+```crmscript
+Bool getHours()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getLabel()
+
+Returns label for field.
+
+```crmscript
+String getLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getListName()
+
+Returns listname for field.
+
+```crmscript
+String getListName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getMandatory()
+
+If true, field has to have a valid value.
+
+```crmscript
+Bool getMandatory()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getMinutes()
+
+Returns true if minutes is enabled, used with timespan field type.
+
+```crmscript
+Bool getMinutes()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getPlaceholder()
+
+Returns placeholder text for field.
+
+```crmscript
+String getPlaceholder()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getSeconds()
+
+Returns true if seconds is enabled, used with timespan field type.
+
+```crmscript
+Bool getSeconds()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getShowAllChildrenInSearch()
+
+Show all children when searching. Default is false. Only applies if showFullPath is true and field type is list.
+
+```crmscript
+Bool getShowAllChildrenInSearch()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getShowFullPath()
+
+If true, list is preloaded so that the full path is shown.
+
+```crmscript
+Bool getShowFullPath()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## getType()
+
+Returns what type of field.
+
+```crmscript
+String getType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Supports:&lt;ul&gt;&lt;li&gt;label&lt;/li&gt;&lt;li&gt;text&lt;/li&gt;&lt;li&gt;integer&lt;/li&gt;&lt;li&gt;decimal&lt;/li&gt;&lt;li&gt;checkbox&lt;/li&gt;&lt;li&gt;date&lt;/li&gt;&lt;li&gt;datetime&lt;/li&gt;&lt;li&gt;time&lt;/li&gt;&lt;li&gt;timeSpan&lt;/li&gt;&lt;li&gt;list&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## setAdditionalInfo(String)
+
+Sets additional info for the named list.
+
+```crmscript
+Void setAdditionalInfo(String info)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setAllowBlank(Bool)
+
+Set to true if field is allowed to be empty instead of 0.
+
+```crmscript
+Void setAllowBlank(Bool allowBlank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setAllowRootSelection(Bool)
+
+Set to true if root selection is allowed.
+
+```crmscript
+Void setAllowRootSelection(Bool allowRoot)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setDays(Bool)
+
+Set to true if days is enabled, used with timespan field type.
+
+```crmscript
+Void setDays(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setDefault(String)
+
+Sets default value for field.
+
+```crmscript
+Void setDefault(String default)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Can be used to set Integer, Date, DateTime, Time and String default value formatted as a String. For Float please use setDefaultFloat(Float).
+</Note>
+
+## setDefaultFloat(Float)
+
+Sets default float value. Only use for float field type.
+
+```crmscript
+Void setDefaultFloat(Float default)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setForceFlatList(Bool)
+
+Force flat list if using list name.
+
+```crmscript
+Void setForceFlatList(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setLabel(String)
+
+Sets label for field.
+
+```crmscript
+Void setLabel(String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setListName(String)
+
+Set listname for field.
+
+```crmscript
+Void setListName(String listName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setId(String)
+
+Set identifier for field.
+
+```crmscript
+Void setId(String identifier)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setHideEmptyRootsInSearch(Bool)
+
+If true, hide empty roots in search. Default is false. Only applies when showFullPath is true and field type is list.
+
+```crmscript
+Void setHideEmptyRootsInSearch(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setHours(Bool)
+
+Returns true if hours is enabled, used with timespan field type.
+
+```crmscript
+Void setHours(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setMandatory(Bool)
+
+If true, field has to have a valid value.
+
+```crmscript
+Void setMandatory(Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setMinutes(Bool)
+
+Returns true if minutes is enabled, used with timespan field type.
+
+```crmscript
+Void setMinutes(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setPlaceholder(String)
+
+Sets placeholder text for field.
+
+```crmscript
+Void setPlaceholder(String placeholder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSeconds(Bool)
+
+Returns true if seconds is enabled, used with timespan field type.
+
+```crmscript
+Void setSeconds(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setShowAllChildrenInSearch(Bool)
+
+Show all children when searching. Default is false. Only applies if showFullPath is true and field type is list.
+
+```crmscript
+Void setShowAllChildrenInSearch(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setShowFullPath(Bool)
+
+If true, list is preloaded so that the full path is shown.
+
+```crmscript
+Void setShowFullPath(Bool enable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setType(String)
+
+Sets what type of field.
+
+```crmscript
+Void setType(String type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Supports:&lt;ul&gt;&lt;li&gt;label&lt;/li&gt;&lt;li&gt;text&lt;/li&gt;&lt;li&gt;integer&lt;/li&gt;&lt;li&gt;decimal&lt;/li&gt;&lt;li&gt;checkbox&lt;/li&gt;&lt;li&gt;date&lt;/li&gt;&lt;li&gt;datetime&lt;/li&gt;&lt;li&gt;time&lt;/li&gt;&lt;li&gt;timeSpan&lt;/li&gt;&lt;li&gt;list. Note: the "(No Selection)" option can be added by appending "WithNoSelection" to the list name e.g., field.setListName("associateWithNoSelection");&lt;/li&gt;&lt;/ul&gt;
+</Note>

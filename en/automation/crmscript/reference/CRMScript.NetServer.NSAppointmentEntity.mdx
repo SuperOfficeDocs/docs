@@ -1,0 +1,1890 @@
+﻿---
+uid: crmscript.netserver.nsappointmententity
+title: NSAppointmentEntity
+description: "Appointments appear in the diary, and have links to a Contact/Person and possibly a Project or Sale. They have start and end time+date."
+keywords: CRMScript, NSAppointmentEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAppointmentEntity
+
+Appointments appear in the diary, and have links to a Contact/Person and possibly a Project or Sale. They have start and end time+date.
+
+## Constructors
+
+### NSAppointmentEntity()
+
+```crmscript
+NSAppointmentEntity
+```
+
+Initializes a new instance of the NSAppointmentEntity class.
+
+## Methods
+
+## GetActiveDate()
+
+```crmscript
+DateTime GetActiveDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date to be used for searching and showing.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime activeDate = thing.GetActiveDate();
+```
+
+## GetActiveLinks()
+
+```crmscript
+Integer GetActiveLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of active links to sale, document, appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer activeLinks = thing.GetActiveLinks();
+```
+
+## GetAlarmLeadTime()
+
+```crmscript
+TimeSpan GetAlarmLeadTime()
+```
+
+**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan) - Alarm lead time.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+TimeSpan alarmLeadTime = thing.GetAlarmLeadTime();
+```
+
+## GetAlldayEvent()
+
+```crmscript
+Bool GetAlldayEvent()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if this is an all day event.
+
+## GetAppointmentId()
+
+```crmscript
+Integer GetAppointmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer appointmentId = thing.GetAppointmentId();
+```
+
+## GetAssignedBy()
+
+```crmscript
+NSAssociate GetAssignedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Who assigned this appointment to this user? Whose diary did the appointment come from?
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate assignedBy = thing.GetAssignedBy();
+```
+
+## GetAssignmentStatus()
+
+```crmscript
+Integer GetAssignmentStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Status if this appointment is in the process of being assigned to someone else.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer assignmentStatus = thing.GetAssignmentStatus();
+```
+
+## GetAssociate()
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The owner of the appointment - the associate whose diary/checklist the appointment is in.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate associate = thing.GetAssociate();
+```
+
+## GetAgenda()
+
+```crmscript
+String GetAgenda()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Agenda for the appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String agenda = thing.GetAgenda();
+```
+
+## GetBookingType()
+
+```crmscript
+Integer GetBookingType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of booking the appointment represents.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer bookingType = thing.GetBookingType();
+```
+
+## GetCautionWarning()
+
+```crmscript
+Integer GetCautionWarning()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Status field to indicate appointments that have some sort of problem. See &lt;xref href=\"CRMScript.NetServer.AppointmentCautionWarning\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer cautionWarning = thing.GetCautionWarning();
+```
+
+## GetCentralserviceVideomeetId()
+
+```crmscript
+String GetCentralserviceVideomeetId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - GUID for video meeting in central services.
+
+<Note>
+This is set when we create meetings from SuperOffice. It is blank for incoming meetings created from inbox.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String centralserviceVideomeetId = thing.GetCentralserviceVideomeetId();
+```
+
+## GetColorIndex()
+
+```crmscript
+Integer GetColorIndex()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Appointment colour, used only in Japanese versions. Western versions take colour from Task. See &lt;xref href=\"CRMScript.NetServer.ColorIndex\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer colorIndex = thing.GetColorIndex();
+```
+
+## GetCompleted()
+
+```crmscript
+Integer GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Appointment Completed state.
+
+<Note>
+This property is the part of the Status property that is the completed state. Could be three state if the three state user preference is set.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer completed = thing.GetCompleted();
+```
+
+## GetContact()
+
+```crmscript
+NSContact GetContact()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - The contact associated with the appointment. It may also be null if no contact is associated with the appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSContact contact = thing.GetContact();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate that first created the appointment.
+
+<Note>
+The property is read-only.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered date.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on an NSAppointmentEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing user defined and extra field values by field name.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetEndDate()
+
+```crmscript
+DateTime GetEndDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date + end time planned.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime endDate = thing.GetEndDate();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on NSAppointmentEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing extra field values by field name.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetFreeBusy()
+
+```crmscript
+Bool GetFreeBusy()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - What kind of time is this? False is Busy. True is Free.
+
+## GetHasAlarm()
+
+```crmscript
+Bool GetHasAlarm()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this appointment have an alarm?
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool hasAlarm = thing.GetHasAlarm();
+```
+
+## GetHasConflict()
+
+```crmscript
+Bool GetHasConflict()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the appointment overlap with another appointment in the user's diary?
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool hasConflict = thing.GetHasConflict();
+```
+
+## GetInternalNotes()
+
+```crmscript
+String GetInternalNotes()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Internal notes for the appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String notes = thing.GetInternalNotes();
+```
+
+## GetInvitationStatus()
+
+```crmscript
+Integer GetInvitationStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Status if this appointment represents an invitation.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer invitationStatus = thing.GetInvitationStatus();
+```
+
+## GetInvitedPerson()
+
+```crmscript
+NSPerson GetInvitedPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - If the appointment is a booking, the invited persons may be your associates, but you are also able to invite contact persons from other companies to join your meeting. They do not receive an invitation, unless you send them one by email, but you can see in the appointment that persons other than your associates have been invited to a meeting. Each invited person will have an appointment slave record.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSPerson invitedPerson = thing.GetInvitedPerson();
+```
+
+## GetIsAlldayEvent()
+
+```crmscript
+Bool GetIsAlldayEvent()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if all day event.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool isAlldayEvent = thing.GetIsAlldayEvent();
+```
+
+## GetIsFree()
+
+```crmscript
+Bool GetIsFree()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if free, false if busy.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool isFree = thing.GetIsFree();
+```
+
+## GetIsMileStone()
+
+```crmscript
+Bool GetIsMileStone()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this appointment a milestone?
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool isMileStone = thing.GetIsMileStone();
+```
+
+## GetIsPublished()
+
+```crmscript
+Bool GetIsPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this NSAppointmentEntity be published and visible to strangers?
+
+## GetJoinVideomeetUrl()
+
+```crmscript
+String GetJoinVideomeetUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Blank when not a video meeting. Filled with Join Meeting URL when created.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String joinVideomeetUrl = thing.GetJoinVideomeetUrl();
+```
+
+## GetLagTime()
+
+```crmscript
+TimeSpan GetLagTime()
+```
+
+**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan) - As leadtime, but after the end - time blocked for travel and so on.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+TimeSpan lagTime = thing.GetLagTime();
+```
+
+## GetLeadTime()
+
+```crmscript
+TimeSpan GetLeadTime()
+```
+
+**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan) - Time blocked (minutes) BEFORE starttime.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+TimeSpan leadTime = thing.GetLeadTime();
+```
+
+## GetLinks()
+
+```crmscript
+NSLink[] GetLinks()
+```
+
+**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)[] - List of all elements linked to the appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSLink[] links = thing.GetLinks();
+```
+
+## GetLocation()
+
+```crmscript
+String GetLocation()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Location for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String location = thing.GetLocation();
+```
+
+## GetMotherAssociate()
+
+```crmscript
+NSAssociate GetMotherAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The owner of the mother appointment - the associate whose diary/checklist the mother appointment is in.
+
+<Note>
+The mother appointment is the one identified by the mother_id. If the mother_id is 0 or the same as this appointment_id, then the master associate will be the same as the 'ordinary' associate.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate motherAssociate = thing.GetMotherAssociate();
+```
+
+## GetMotherId()
+
+```crmscript
+Integer GetMotherId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of mother appointment; self if booking master, master ID if booking slave, 0 if normal appointment. However, if 0 and assoc_id != reg_id then this is an assigned appointment, indicated vt type = kBooking.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer motherId = thing.GetMotherId();
+```
+
+## GetParticipants()
+
+```crmscript
+NSParticipantInfo[] GetParticipants()
+```
+
+**Returns:** [CRMScript.NetServer.NSParticipantInfo](CRMScript.NetServer.NSParticipantInfo)[] - List of IDs of the participants to this appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSParticipantInfo[] participants = thing.GetParticipants();
+```
+
+## GetPerson()
+
+```crmscript
+NSPerson GetPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - An appointment may also be connected to a person; this must be a contact person registered on the current company. This does not mean however that a person is required.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSPerson person = thing.GetPerson();
+```
+
+## GetPreferredTZLocation()
+
+```crmscript
+Integer GetPreferredTZLocation()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Appointment's preferred timezone location.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer preferredTZLocation = thing.GetPreferredTZLocation();
+```
+
+## GetPriority()
+
+It's possible to give appointments different priorities. All the different priority types are saved in the priority table, and edited from the Admin Client. An appointment does not require a priority.
+
+```crmscript
+NSPriority GetPriority()
+```
+
+**Returns:** [CRMScript.NetServer.NSPriority](CRMScript.NetServer.NSPriority)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSPriority priority = thing.GetPriority();
+```
+
+## GetPrivate()
+
+```crmscript
+Integer GetPrivate()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The confidentiality of appointments is shown as different types of private on the appointment. See &lt;xref href=\"CRMScript.NetServer.AppointmentPrivate\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer private = thing.GetPrivate();
+```
+
+## GetProject()
+
+```crmscript
+NSProject GetProject()
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject) - An appointment may also be connected to a project, so you see the appointment both on the company card, and on the project card. This does not mean however that a project is required.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSProject project = thing.GetProject();
+```
+
+## GetPublishEventDate()
+
+```crmscript
+DateTime GetPublishEventDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish event date on NSAppointmentEntity.
+
+## GetPublishFrom()
+
+```crmscript
+DateTime GetPublishFrom()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish from date on NSAppointmentEntity.
+
+## GetPublishTo()
+
+```crmscript
+DateTime GetPublishTo()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish to date on NSAppointmentEntity. After this date the event is no longer visible.
+
+## GetRecurrence()
+
+```crmscript
+NSRecurrenceInfo GetRecurrence()
+```
+
+**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](CRMScript.NetServer.NSRecurrenceInfo) - The appointment recurrence.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSRecurrenceInfo recurrence = thing.GetRecurrence();
+```
+
+## GetRejectCounter()
+
+```crmscript
+Integer GetRejectCounter()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How many invitees have rejected this appointment?
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer rejectCounter = thing.GetRejectCounter();
+```
+
+## GetRejectReason()
+
+```crmscript
+String GetRejectReason()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Why was this booking or assignment rejected, the RejectReason list is a source of suggestions but you can write anything here.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String rejectReason = thing.GetRejectReason();
+```
+
+## GetSale()
+
+```crmscript
+NSSale GetSale()
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale) - An appointment may also be connected to a sale, so you see the appointment on the company card, on the project card and on the sale card. This does not mean however that a sale is required.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSSale sale = thing.GetSale();
+```
+
+## GetStartDate()
+
+```crmscript
+DateTime GetStartDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - date + start time planned.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime startDate = thing.GetStartDate();
+```
+
+## GetSuggestedAppointmentId()
+
+```crmscript
+Integer GetSuggestedAppointmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Suggested guide item that this appointment is an instance of
+
+<Note>
+NOT VALID for document-type appointments, they have their own link
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer suggestedAppointmentId = thing.GetSuggestedAppointmentId();
+```
+
+## GetTitle()
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Title for the appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String title = thing.GetTitle();
+```
+
+## GetTask()
+
+```crmscript
+NSTaskListItem GetTask()
+```
+
+**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem) - Task comprises the different types of activities, such as Phone call or Meeting.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSTaskListItem task = thing.GetTask();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The different types of appointment, if the appointment is supposed to be shown in the diary or checklist, or if it's a document.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer type = thing.GetType();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Updated date.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetUserDefinedFields()
+
+Gets the user-defined fields on the NSAppointmentEntity as a map.
+
+```crmscript
+Map GetUserDefinedFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing user defined field values by field prog.id.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Map fields = thing.GetUserDefinedFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetVisibleFor()
+
+Returns the usergroups and/or users the NSAppointmentEntity item is visible for.
+
+```crmscript
+NSVisibleFor[] GetVisibleFor()
+```
+
+**Returns:** [CRMScript.NetServer.NSVisibleFor](CRMScript.NetServer.NSVisibleFor)[] - Visible for array.
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+```
+
+## SetActiveDate(DateTime)
+
+```crmscript
+Void SetActiveDate(DateTime activeDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime activeDate;
+thing.SetActiveDate(activeDate);
+```
+
+## SetActiveLinks(Integer)
+
+```crmscript
+Void SetActiveLinks(Integer activeLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer activeLinks;
+thing.SetActiveLinks(activeLinks);
+```
+
+## SetAlarmLeadTime(TimeSpan)
+
+```crmscript
+Void SetAlarmLeadTime(TimeSpan alarmLeadTime)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+TimeSpan alarmLeadTime;
+thing.SetAlarmLeadTime(alarmLeadTime);
+```
+
+## SetAlldayEvent(Bool)
+
+```crmscript
+Void SetAlldayEvent(Bool isAllDayEvent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetAppointmentId(Integer)
+
+```crmscript
+Void SetAppointmentId(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer appointmentId;
+thing.SetAppointmentId(appointmentId);
+```
+
+## SetAssignedBy(NSAssociate)
+
+```crmscript
+Void SetAssignedBy(NSAssociate assignedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate assignedBy;
+thing.SetAssignedBy(assignedBy);
+```
+
+## SetAssignmentStatus(Integer)
+
+```crmscript
+Void SetAssignmentStatus(Integer assignmentStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer assignmentStatus;
+thing.SetAssignmentStatus(assignmentStatus);
+```
+
+## SetAgenda(String)
+
+```crmscript
+Void SetAgenda(String agenda)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String agenda;
+thing.SetAgenda(agenda);
+```
+
+## SetAssociate(NSAssociate)
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate associate;
+thing.SetAssociate(associate);
+```
+
+## SetBookingType(Integer)
+
+```crmscript
+Void SetBookingType(Integer bookingType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer bookingType;
+thing.SetBookingType(bookingType);
+```
+
+## SetCautionWarning(Integer)
+
+```crmscript
+Void SetCautionWarning(Integer cautionWarning)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer cautionWarning;
+thing.SetCautionWarning(cautionWarning);
+```
+
+## SetCentralserviceVideomeetId(String)
+
+```crmscript
+Void SetCentralserviceVideomeetId(String centralserviceVideomeetId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String centralserviceVideomeetId;
+thing.SetCentralserviceVideomeetId(centralserviceVideomeetId);
+```
+
+## SetColorIndex(Integer)
+
+```crmscript
+Void SetColorIndex(Integer colorIndex)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer colorIndex;
+thing.SetColorIndex(colorIndex);
+```
+
+## SetCompleted(Integer)
+
+```crmscript
+Void SetCompleted(Integer completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This property is the part of the Status property that is the completed state. Could be three state if the three state user preference is set.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer completed;
+thing.SetCompleted(completed);
+```
+
+## SetContact(NSContact)
+
+```crmscript
+Void SetContact(NSContact contact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSContact contact;
+thing.SetContact(contact);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The property is read-only.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on an NSAppointmentEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+udefs["x_foo"] = "foobar";
+udefs["x_bar"] = "456"; // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetEndDate(DateTime)
+
+```crmscript
+Void SetEndDate(DateTime endDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime endDate;
+thing.SetEndDate(endDate);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on NSAppointmentEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Map extras;
+extras["SuperOffice:1"] = "[I:123]";
+extras["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+extras["custom.progid"] = "foobar";
+thing.SetExtraFields(extras);
+```
+
+## SetFreeBusy(Bool)
+
+```crmscript
+Void SetFreeBusy(Bool isFreeBusy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetHasAlarm(Bool)
+
+```crmscript
+Void SetHasAlarm(Bool hasAlarm)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool hasAlarm;
+thing.SetHasAlarm(hasAlarm);
+```
+
+## SetHasConflict(Bool)
+
+```crmscript
+Void SetHasConflict(Bool hasConflict)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool hasConflict;
+thing.SetHasConflict(hasConflict);
+```
+
+## SetInternalNotes(String)
+
+```crmscript
+Void SetInternalNotes(String internalNotes)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String notes;
+thing.SetInternalNotes(notes);
+```
+
+## SetInvitationStatus(Integer)
+
+```crmscript
+Void SetInvitationStatus(Integer invitationStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer invitationStatus;
+thing.SetInvitationStatus(invitationStatus);
+```
+
+## SetInvitedPerson(NSPerson)
+
+```crmscript
+Void SetInvitedPerson(NSPerson invitedPerson)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSPerson invitedPerson;
+thing.SetInvitedPerson(invitedPerson);
+```
+
+## SetIsAlldayEvent(Bool)
+
+```crmscript
+Void SetIsAlldayEvent(Bool isAlldayEvent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool isAlldayEvent;
+thing.SetIsAlldayEvent(isAlldayEvent);
+```
+
+## SetIsFree(Bool)
+
+```crmscript
+Void SetIsFree(Bool isFree)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool isFree;
+thing.SetIsFree(isFree);
+```
+
+## SetIsMileStone(Bool)
+
+```crmscript
+Void SetIsMileStone(Bool isMileStone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Bool isMileStone;
+thing.SetIsMileStone(isMileStone);
+```
+
+## SetIsPublished(Bool)
+
+Sets the isPublished property of the appointment.
+
+```crmscript
+Void SetIsPublished(Bool isPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetJoinVideomeetUrl(String)
+
+```crmscript
+Void SetJoinVideomeetUrl(String joinVideomeetUrl)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String joinVideomeetUrl;
+thing.SetJoinVideomeetUrl(joinVideomeetUrl);
+```
+
+## SetLagTime(TimeSpan)
+
+```crmscript
+Void SetLagTime(TimeSpan lagTime)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+TimeSpan lagTime;
+thing.SetLagTime(lagTime);
+```
+
+## SetLeadTime(TimeSpan)
+
+```crmscript
+Void SetLeadTime(TimeSpan leadTime)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+TimeSpan leadTime;
+thing.SetLeadTime(leadTime);
+```
+
+## SetLinks(NSLink[])
+
+```crmscript
+Void SetLinks(NSLink[] links)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSLink[] links;
+thing.SetLinks(links);
+```
+
+## SetLocation(String)
+
+```crmscript
+Void SetLocation(String location)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String location;
+thing.SetLocation(location);
+```
+
+## SetMotherAssociate(NSAssociate)
+
+```crmscript
+Void SetMotherAssociate(NSAssociate motherAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The mother appointment is the one identified by the mother_id. If the mother_id is 0 or the same as this appointment_id, then the master associate will be the same as the 'ordinary' associate.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate motherAssociate;
+thing.SetMotherAssociate(motherAssociate);
+```
+
+## SetMotherId(Integer)
+
+```crmscript
+Void SetMotherId(Integer motherId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If 0 and assoc_id != reg_id then this is an assigned appointment, indicated vt type = kBooking
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer motherId;
+thing.SetMotherId(motherId);
+```
+
+## SetParticipants(NSParticipantInfo[])
+
+```crmscript
+Void SetParticipants(NSParticipantInfo[] participants)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSParticipantInfo[] participants;
+thing.SetParticipants(participants);
+```
+
+## SetPerson(NSPerson)
+
+```crmscript
+Void SetPerson(NSPerson person)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSPerson person;
+thing.SetPerson(person);
+```
+
+## SetPreferredTZLocation(Integer)
+
+```crmscript
+Void SetPreferredTZLocation(Integer preferredTZLocation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer preferredTZLocation;
+thing.SetPreferredTZLocation(preferredTZLocation);
+```
+
+## SetPriority(NSPriority)
+
+It's possible to give appointments different priorities. All the different priority types are saved in the priority table, and edited from the Admin Client. An appointment does not require a priority.
+
+```crmscript
+Void SetPriority(NSPriority priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSPriority priority;
+thing.SetPriority(priority);
+```
+
+## SetPrivate(Integer)
+
+The confidentiality of appointments is shown as different types of private on the appointment.
+
+```crmscript
+Void SetPrivate(Integer private)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer private;
+thing.SetPrivate(private);
+```
+
+## SetProject(NSProject)
+
+```crmscript
+Void SetProject(NSProject project)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSProject project;
+thing.SetProject(project);
+```
+
+## SetPublishEventDate(DateTime)
+
+```crmscript
+Void SetPublishEventDate(DateTime publishDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishFrom(DateTime)
+
+Sets the publish from date on an NSAppointmentEntity.
+
+```crmscript
+Void SetPublishFrom(DateTime publishFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishTo(DateTime)
+
+Sets the publish to date on NSAppointmentEntity.
+
+```crmscript
+Void SetPublishTo(DateTime publishTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetRecurrence(NSRecurrenceInfo)
+
+```crmscript
+Void SetRecurrence(NSRecurrenceInfo recurrence)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSRecurrenceInfo recurrence;
+thing.SetRecurrence(recurrence);
+```
+
+## SetRejectCounter(Integer)
+
+```crmscript
+Void SetRejectCounter(Integer rejectCounter)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer rejectCounter;
+thing.SetRejectCounter(rejectCounter);
+```
+
+## SetRejectReason(String)
+
+```crmscript
+Void SetRejectReason(String rejectReason)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String rejectReason;
+thing.SetRejectReason(rejectReason);
+```
+
+## SetSale(NSSale)
+
+```crmscript
+Void SetSale(NSSale sale)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSSale sale;
+thing.SetSale(sale);
+```
+
+## SetStartDate(DateTime)
+
+```crmscript
+Void SetStartDate(DateTime startDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime startDate;
+thing.SetStartDate(startDate);
+```
+
+## SetSuggestedAppointmentId(Integer)
+
+```crmscript
+Void SetSuggestedAppointmentId(Integer suggestedAppointmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+NOT VALID for document-type appointments, they have their own link.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer suggestedAppointmentId;
+thing.SetSuggestedAppointmentId(suggestedAppointmentId);
+```
+
+## SetTitle(String)
+
+```crmscript
+Void SetTitle(String agenda)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+String title;
+thing.SetTitle(title);
+```
+
+## SetTask(NSTaskListItem)
+
+```crmscript
+Void SetTask(NSTaskListItem task)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSTaskListItem task;
+thing.SetTask(task);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetUserDefinedFields(Map)
+
+Sets the user-defined fields on the NSAppointmentEntity as a map.
+
+```crmscript
+Void SetUserDefinedFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+thing.SetUserDefinedFields(udefs);
+```
+
+## SetVisibleFor(NSVisibleFor[])
+
+Sets the usergroups and/or users the NSAppointmentEntity item is visible for.
+
+```crmscript
+Void SetVisibleFor(NSVisibleFor[] visibleFor)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+visibleFor[0].SetVisiblity(1);  // usergroup
+visibleFor[0].SetVisibleId(123); // usergroup id
+thing.SetVisibleFor(visibleFor);
+```

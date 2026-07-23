@@ -1,0 +1,34 @@
+﻿---
+uid: crmscript.netserver.udeffieldtype
+title: Enum UDefFieldType
+description: "Field type: 1 = Number, 2 = Short text, 3 = Long text, 4 = Date, 5 = Unlimited date, 6 = Checkbox, 7 = Drop-down listbox, 8 = Decimal"
+keywords: CRMScript, UDefFieldType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum UDefFieldType
+
+Field type: 1 = Number, 2 = Short text, 3 = Long text, 4 = Date, 5 = Unlimited date, 6 = Checkbox, 7 = Drop-down listbox, 8 = Decimal
+
+## Syntax
+
+```crmscript
+UDefFieldType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Number | Number (32-bit integer) |
+| ShortText | Short text, up to 39 characters, stored in the 'small' table |
+| LongText | Long text, up to 199 characters, stored in the 'large' table |
+| Date | Date, between 1.1.1970 and 2038, stored as seconds after 1.1.1970 |
+| UnlimitedDate | Unlimited date (without time), stored as an YYYYMMDD string |
+| Checkbox | Checkbox, stored as an integer, 1 = checked |
+| List | List item reference, stored as an integer ID |
+| Decimal | Decimal / floating point, stored as a double |

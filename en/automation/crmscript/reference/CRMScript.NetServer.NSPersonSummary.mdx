@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nspersonsummary
+title: NSPersonSummary
+description: "Summary of person, with recent activities, chats, and requests included."
+keywords: CRMScript, NSPersonSummary, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPersonSummary
+
+Summary of person, with recent activities, chats, and requests included.
+
+## Constructors
+
+### NSPersonSummary()
+
+```crmscript
+NSPersonSummary
+```
+
+Initializes a new instance of the NSPersonSummary class.
+
+## Methods
+
+## GetChats()
+
+```crmscript
+NSChatSummaryItem[] GetChats()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSummaryItem](CRMScript.NetServer.NSChatSummaryItem)[] - Recent chats with person.
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSChatSummaryItem[] chats = thing.GetChats();
+```
+
+## GetDocuments()
+
+```crmscript
+NSActivitySummaryItem[] GetDocuments()
+```
+
+**Returns:** [CRMScript.NetServer.NSActivitySummaryItem](CRMScript.NetServer.NSActivitySummaryItem)[] - Recent documents on person.
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSActivitySummaryItem[] documents = thing.GetDocuments();
+```
+
+## GetFollowups()
+
+```crmscript
+NSActivitySummaryItem[] GetFollowups()
+```
+
+**Returns:** [CRMScript.NetServer.NSActivitySummaryItem](CRMScript.NetServer.NSActivitySummaryItem)[] - Recent follow-ups on person.
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSActivitySummaryItem[] followups = thing.GetFollowups();
+```
+
+## GetPerson()
+
+```crmscript
+NSPerson GetPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - Simple Person data.
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSPerson person = thing.GetPerson();
+```
+
+## GetSales()
+
+```crmscript
+NSSaleSummaryItem[] GetSales()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleSummaryItem](CRMScript.NetServer.NSSaleSummaryItem)[] - Recent sales on person.
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSSaleSummaryItem[] sales = thing.GetSales();
+```
+
+## GetTickets()
+
+```crmscript
+NSTicketSummaryItem[] GetTickets()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketSummaryItem](CRMScript.NetServer.NSTicketSummaryItem)[] - Recent tickets on person.
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSTicketSummaryItem[] tickets = thing.GetTickets();
+```
+
+## SetChats(NSChatSummaryItem[])
+
+```crmscript
+Void SetChats(NSChatSummaryItem[] chats)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSChatSummaryItem[] chats;
+thing.SetChats(chats);
+```
+
+## SetDocuments(NSActivitySummaryItem[])
+
+```crmscript
+Void SetDocuments(NSActivitySummaryItem[] documents)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSActivitySummaryItem[] documents;
+thing.SetDocuments(documents);
+```
+
+## SetFollowups(NSActivitySummaryItem[])
+
+```crmscript
+Void SetFollowups(NSActivitySummaryItem[] followups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSActivitySummaryItem[] followups;
+thing.SetFollowups(followups);
+```
+
+## SetPerson(NSPerson)
+
+```crmscript
+Void SetPerson(NSPerson person)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSPerson person;
+thing.SetPerson(person);
+```
+
+## SetSales(NSSaleSummaryItem[])
+
+```crmscript
+Void SetSales(NSSaleSummaryItem[] sales)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSSaleSummaryItem[] sales;
+thing.SetSales(sales);
+```
+
+## SetTickets(NSTicketSummaryItem[])
+
+```crmscript
+Void SetTickets(NSTicketSummaryItem[] tickets)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPersonSummary thing;
+NSTicketSummaryItem[] tickets;
+thing.SetTickets(tickets);
+```

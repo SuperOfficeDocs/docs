@@ -1,0 +1,359 @@
+﻿---
+uid: crmscript.native.weekschedule
+title: WeekSchedule
+description: "This class is used to represent a week schedule - what hours a day are 'active' for each day, etc."
+keywords: CRMScript, WeekSchedule, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# WeekSchedule
+
+This class is used to represent a week schedule - what hours a day are "active" for each day, etc.
+
+## Constructors
+
+### WeekSchedule()
+
+```crmscript
+WeekSchedule
+```
+
+This class is used to represent a week schedule - what hours a day are "active" for each day, etc.
+
+## Methods
+
+## addTimeSpan(DateTime,TimeSpan)
+
+Adds a time span to the schedule.
+
+```crmscript
+DateTime addTimeSpan(DateTime start, TimeSpan add)
+```
+
+**Returns:** [CRMScript.Native.DateTime](CRMScript.Native.DateTime)
+
+## getDifference(DateTime,DateTime)
+
+Returns difference between two DateTime as a TimeSpan.
+
+```crmscript
+TimeSpan getDifference(DateTime start, DateTime stop)
+```
+
+**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan)
+
+## getFriStart()
+
+This function returns the start time (object) of "active" mode for Friday.
+
+```crmscript
+Time getFriStart()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getFriStop()
+
+This function returns the end time (object) of "active" mode for Friday.
+
+```crmscript
+Time getFriStop()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getMonStart()
+
+This function returns the start time (object) of "active" mode for Monday.
+
+```crmscript
+Time getMonStart()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getMonStop()
+
+This function returns the end time (object) of "active" mode for Monday.
+
+```crmscript
+Time getMonStop()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getNonDates()
+
+This function returns the dates that are closed, comma separated.
+
+```crmscript
+String getNonDates()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getSatStart()
+
+This function returns the start time (object) of "active" mode for Saturday.
+
+```crmscript
+Time getSatStart()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getSatStop()
+
+This function returns the end time (object) of "active" mode for Saturday.
+
+```crmscript
+Time getSatStop()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getSunStart()
+
+This function returns the start time (object) of "active" mode for Sunday.
+
+```crmscript
+Time getSunStart()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getSunStop()
+
+This function returns the end time (object) of "active" mode for Sunday.
+
+```crmscript
+Time getSunStop()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getThuStart()
+
+This function returns the start time (object) of "active" mode for Thursday.
+
+```crmscript
+Time getThuStart()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getThuStop()
+
+This function returns the end time (object) of "active" mode for Thursday.
+
+```crmscript
+Time getThuStop()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getTueStart()
+
+This function returns the start time (object) of "active" mode for Tuesday.
+
+```crmscript
+Time getTueStart()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getTueStop()
+
+This function returns the end time (object) of "active" mode for Tuesday.
+
+```crmscript
+Time getTueStop()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getWedStart()
+
+This function returns the start time (object) of "active" mode for Wednesday.
+
+```crmscript
+Time getWedStart()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## getWedStop()
+
+This function returns the end time (object) of "active" mode for Wednesday.
+
+```crmscript
+Time getWedStop()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+## loadFromPriority(Integer)
+
+load a WeekSchedule object using the given priority's week schedule. Be aware that this method will clear all settings you may have on the WeekSchedule object.
+
+```crmscript
+Void loadFromPriority(Integer p_id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setFriStart(Time)
+
+This function sets the start time (object) of "active" mode for Friday.
+
+```crmscript
+Void setFriStart(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setFriStop(Time)
+
+This function sets the end time (object) of "active" mode for Friday.
+
+```crmscript
+Void setFriStop(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setMonStart(Time)
+
+This function sets the start time (object) of "active" mode for Monday.
+
+```crmscript
+Void setMonStart(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setMonStop(Time)
+
+This function sets the end time (object) of "active" mode for Monday.
+
+```crmscript
+Void setMonStop(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setNonDates(String)
+
+This function sets the dates that are inactive.
+
+Example date string: "1/10/2004,24/12". If the year is not specified, the date is inactive every year.
+
+```crmscript
+Void setNonDates(String dates)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSatStart(Time)
+
+This function sets the start time (object) of "active" mode for Saturday.
+
+```crmscript
+Void setSatStart(Time p_0)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSatStop(Time)
+
+This function sets the end time (object) of "active" mode for Saturday.
+
+```crmscript
+Void setSatStop(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSunStart(Time)
+
+This function sets the start time (object) of "active" mode for Sunday.
+
+```crmscript
+Void setSunStart(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSunStop(Time)
+
+This function sets the end time (object) of "active" mode for Sunday.
+
+```crmscript
+Void setSunStop(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setThuStart(Time)
+
+This function sets the start time (object) of "active" mode for Thursday.
+
+```crmscript
+Void setThuStart(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setThuStop(Time)
+
+This function sets the end time (object) of "active" mode for Thursday.
+
+```crmscript
+Void setThuStop(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setTueStart(Time)
+
+This function sets the start time (object) of "active" mode for Tuesday.
+
+```crmscript
+Void setTueStart(Time p_0)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setTueStop(Time)
+
+This function sets the end time (object) of "active" mode for Tuesday.
+
+```crmscript
+Void setTueStop(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setWedStart(Time)
+
+This function sets the start time (object) of "active" mode for Wednesday.
+
+```crmscript
+Void setWedStart(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setWedStop(Time)
+
+This function sets the end time (object) of "active" mode for Wednesday.
+
+```crmscript
+Void setWedStop(Time t)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

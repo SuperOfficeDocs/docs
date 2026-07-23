@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsentityname
+title: NSEntityName
+description: "Carrier object for EntityName."
+keywords: CRMScript, NSEntityName, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSEntityName
+
+Carrier object for EntityName.
+
+## Constructors
+
+### NSEntityName()
+
+```crmscript
+NSEntityName
+```
+
+Initializes a new instance of the NSEntityName class.
+
+## Methods
+
+## GetTableDescription()
+
+```crmscript
+String GetTableDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name to be used in GUI, preferable a resource string.
+
+**Example:**
+
+```crmscript
+NSEntityName thing;
+String tableDescription = thing.GetTableDescription();
+```
+
+## GetTableName()
+
+```crmscript
+String GetTableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the table in the database.
+
+**Example:**
+
+```crmscript
+NSEntityName thing;
+String tableName = thing.GetTableName();
+```
+
+## SetTableDescription(String)
+
+```crmscript
+Void SetTableDescription(String tableDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEntityName thing;
+String tableDescription;
+thing.SetTableDescription(tableDescription);
+```
+
+## SetTableName(String)
+
+```crmscript
+Void SetTableName(String tableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEntityName thing;
+String tableName;
+thing.SetTableName(tableName);
+```

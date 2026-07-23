@@ -1,0 +1,58 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfoattachment
+title: NSFieldInfoAttachment
+description: "Attachment custom database field."
+keywords: CRMScript, NSFieldInfoAttachment, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoAttachment
+
+Attachment custom database field.
+
+## Constructors
+
+### NSFieldInfoAttachment()
+
+```crmscript
+NSFieldInfoAttachment
+```
+
+Initializes a new instance of the NSFieldInfoAttachment class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Integer GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default attachment ID value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoAttachment thing;
+Integer defaultValue = thing.GetDefaultValue();
+```
+
+## SetDefaultValue(Integer)
+
+```crmscript
+Void SetDefaultValue(Integer defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoAttachment thing;
+Integer defaultValue;
+thing.SetDefaultValue(defaultValue);
+```

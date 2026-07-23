@@ -1,0 +1,291 @@
+﻿---
+uid: crmscript.netserver.nssaintagent
+title: NSSaintAgent
+description: "Administration and maintenance of SAINT counters and statuses."
+keywords: CRMScript, NSSaintAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSaintAgent
+
+Administration and maintenance of SAINT counters and statuses.
+
+## Constructors
+
+### NSSaintAgent()
+
+```crmscript
+NSSaintAgent
+```
+
+Administration and maintenance of SAINT counters and statuses.
+
+## Methods
+
+## CreateDefaultSaintConfiguration()
+
+Sets default values into a new NSSaintConfiguration.
+
+```crmscript
+NSSaintConfiguration CreateDefaultSaintConfiguration()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaintConfiguration](CRMScript.NetServer.NSSaintConfiguration)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+NSSaintConfiguration thing = agent.CreateDefaultSaintConfiguration();
+thing = agent.SaveSaintConfiguration(thing);
+```
+
+## CreateDefaultStatusMonitor()
+
+Sets default values into a new NSStatusMonitor.
+
+```crmscript
+NSStatusMonitor CreateDefaultStatusMonitor()
+```
+
+**Returns:** [CRMScript.NetServer.NSStatusMonitor](CRMScript.NetServer.NSStatusMonitor)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+NSStatusMonitor thing = agent.CreateDefaultStatusMonitor();
+thing = agent.SaveStatusMonitor(thing);
+```
+
+## CreateDefaultStatusMonitorPeriods()
+
+Sets default values into a new NSStatusMonitorPeriods.
+
+```crmscript
+NSStatusMonitorPeriods CreateDefaultStatusMonitorPeriods()
+```
+
+**Returns:** [CRMScript.NetServer.NSStatusMonitorPeriods](CRMScript.NetServer.NSStatusMonitorPeriods)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+NSStatusMonitorPeriods thing = agent.CreateDefaultStatusMonitorPeriods();
+thing = agent.SaveStatusMonitorPeriods(thing);
+```
+
+## GetSaintConfigurations()
+
+Returns the NSStatusMonitorPeriods entity.
+
+```crmscript
+NSSaintConfiguration[] GetSaintConfigurations()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaintConfiguration](CRMScript.NetServer.NSSaintConfiguration)[]
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+NSSaintConfiguration[] res = agent.GetSaintConfigurations();
+```
+
+## GetStatusMonitor(Integer)
+
+Gets a single status monitor based on its identity
+
+```crmscript
+NSStatusMonitor GetStatusMonitor(Integer id)
+```
+
+**Returns:** [CRMScript.NetServer.NSStatusMonitor](CRMScript.NetServer.NSStatusMonitor)
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+Integer id;
+NSStatusMonitor res = agent.GetStatusMonitor(id);
+```
+
+## GetStatusMonitorPeriods()
+
+Returns the NSStatusMonitorPeriods entity.
+
+```crmscript
+NSStatusMonitorPeriods GetStatusMonitorPeriods()
+```
+
+**Returns:** [CRMScript.NetServer.NSStatusMonitorPeriods](CRMScript.NetServer.NSStatusMonitorPeriods)
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+NSStatusMonitorPeriods res = agent.GetStatusMonitorPeriods();
+```
+
+## GetStatusMonitors(Integer,String)
+
+Gets all active status monitors for a specified target
+
+```crmscript
+NSStatusMonitor[] GetStatusMonitors(Integer id, String type)
+```
+
+**Returns:** [CRMScript.NetServer.NSStatusMonitor](CRMScript.NetServer.NSStatusMonitor)[]
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+Integer id;
+String type;
+NSStatusMonitor[] res = agent.GetStatusMonitors(id, type);
+```
+
+## RegenerateCounters(Bool)
+
+Regenerates the Saint counters* this can take several minutes
+
+```crmscript
+NSBatchTaskInfo RegenerateCounters(Bool runAsBatch)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+Bool runAsBatch;
+NSBatchTaskInfo res = agent.RegenerateCounters(runAsBatch);
+```
+
+## RegenerateStatusMonitor(Integer)
+
+Regenerates the given status monitor
+
+```crmscript
+Void RegenerateStatusMonitor(Integer statusMonitorId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+Integer statusMonitorId;
+agent.RegenerateStatusMonitor(statusMonitorId);
+```
+
+## RegenerateStatusMonitors(Bool)
+
+Regenerates status monitors
+
+```crmscript
+NSBatchTaskInfo RegenerateStatusMonitors(Bool runAsBatch)
+```
+
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+Bool runAsBatch;
+NSBatchTaskInfo res = agent.RegenerateStatusMonitors(runAsBatch);
+```
+
+## SaveSaintConfiguration(NSSaintConfiguration)
+
+Updates the existing NSSaintConfiguration or creates a new NSSaintConfiguration if the id parameter is 0.
+
+```crmscript
+NSSaintConfiguration SaveSaintConfiguration(NSSaintConfiguration saintConfiguration)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaintConfiguration](CRMScript.NetServer.NSSaintConfiguration)
+
+**Example:**
+
+```crmscript
+NSSaint  agent;
+NSSaintConfiguration thing = agent.CreateDefaultSaintConfiguration();
+thing = agent.SaveSaintConfiguration(thing);
+```
+
+## SaveStatusMonitor(NSStatusMonitor)
+
+Updates the existing NSStatusMonitor or creates a new NSStatusMonitor if the id parameter is 0
+
+```crmscript
+NSStatusMonitor SaveStatusMonitor(NSStatusMonitor statusMonitor)
+```
+
+**Returns:** [CRMScript.NetServer.NSStatusMonitor](CRMScript.NetServer.NSStatusMonitor)
+
+**Example:**
+
+```crmscript
+NSSaint  agent;
+NSStatusMonitor thing = agent.CreateDefaultStatusMonitor();
+thing = agent.SaveStatusMonitor(thing);
+```
+
+## SaveStatusMonitorPeriods(NSStatusMonitorPeriods)
+
+Updates the existing NSStatusMonitorPeriods or creates a new NSStatusMonitorPeriods if the id parameter is 0
+
+```crmscript
+NSStatusMonitorPeriods SaveStatusMonitorPeriods(NSStatusMonitorPeriods statusMonitorPeriods)
+```
+
+**Returns:** [CRMScript.NetServer.NSStatusMonitorPeriods](CRMScript.NetServer.NSStatusMonitorPeriods)
+
+**Example:**
+
+```crmscript
+NSSaint  agent;
+NSStatusMonitorPeriods thing = agent.CreateDefaultStatusMonitorPeriods();
+thing = agent.SaveStatusMonitorPeriods(thing);
+```
+
+## SetRankOnStatusMonitors(String,Integer[])
+
+Sets rank order on status monitors
+
+```crmscript
+Void SetRankOnStatusMonitors(String type, Integer[] itemsIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaintAgent agent;
+String type;
+Integer[] itemsIds;
+agent.SetRankOnStatusMonitors(type, itemsIds);
+```

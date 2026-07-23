@@ -1,0 +1,158 @@
+﻿---
+uid: crmscript.native.extratable
+title: ExtraTable
+description: "A class to access extra tables and create, edit and delete entries."
+keywords: CRMScript, ExtraTable, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# ExtraTable
+
+A class to access extra tables and create, edit and delete entries.
+
+## Constructors
+
+### ExtraTable()
+
+```crmscript
+ExtraTable
+```
+
+Initializes a new instance of the ExtraTable class.
+
+## Methods
+
+## delete()
+
+Deletes the loaded object.
+
+```crmscript
+Void delete()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## delete(Bool)
+
+Deletes the loaded object.
+
+```crmscript
+Void delete(Bool signalWebhook)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getValue(String)
+
+Returns the value of the given field for the currently loaded entry.
+
+```crmscript
+String getValue(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the given field for the currently loaded entry.
+
+**Example:**
+
+```crmscript
+ExtraTable ex = getExtraTable("y_myTable");
+Bool b = ex.load(2);
+print(b.toString());
+print(ex.getValue("x_table"));
+```
+
+## getValues()
+
+Returns all the fields and values of the extraTable row as a Map.
+
+```crmscript
+Map getValues()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - All the fields and values of the extraTable row.
+
+## load(Integer)
+
+Loads the extra table entry with the given ID.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the entry was found and loaded; otherwise, false.
+
+**Example:**
+
+```crmscript
+ExtraTable ex = getExtraTable("y_myTable");
+Bool b = ex.load(2);
+print(b.toString());
+```
+
+## loadFromAgentAndKey(Integer,String)
+
+Used for integrating data from external systems.
+
+```crmscript
+Bool loadFromAgentAndKey(Integer agent, String key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the entry was found and loaded; otherwise, false.
+
+## save()
+
+Creates a new or updates an existing extra-table entry. If ID is set, the table will be updated. Otherwise, a new extra-table entry will be created.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly saved object.
+
+<Note>
+Use save(Bool) to signal that the entry should be reloaded after the save.
+</Note>
+
+## save(Bool)
+
+Creates a new or updates an existing extra-table entry. If ID is set, the table will be updated. Otherwise, a new extra-table entry will be created.
+
+```crmscript
+Integer save(Bool reload)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly saved object.
+
+## save(Bool,Bool)
+
+Creates a new or updates an existing extra-table entry. If ID is set, the table will be updated. Otherwise, a new extra-table entry will be created.
+
+```crmscript
+Integer save(Bool reload, Bool signalWebhook)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly saved object.
+
+## setValue(String,String)
+
+Sets the value of a given field if it exists.
+
+```crmscript
+Void setValue(String field, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+ExtraTable ex = getExtraTable("y_myTable");
+Bool b = ex.load(2);
+print(b.toString());
+ex.setValue("name", "Test");
+print(ex.getValue("x_table"));
+```

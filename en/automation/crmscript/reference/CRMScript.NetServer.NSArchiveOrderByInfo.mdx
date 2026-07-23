@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsarchiveorderbyinfo
+title: NSArchiveOrderByInfo
+description: "Carries information about an ordering criterion for an archive."
+keywords: CRMScript, NSArchiveOrderByInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveOrderByInfo
+
+Carries information about an ordering criterion for an archive.
+
+## Constructors
+
+### NSArchiveOrderByInfo()
+
+```crmscript
+NSArchiveOrderByInfo
+```
+
+Initializes a new instance of the NSArchiveOrderByInfo class.
+
+## Methods
+
+## GetDirection()
+
+```crmscript
+Integer GetDirection()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Direction to order. See &lt;xref href=\"CRMScript.NetServer.OrderBySortType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSArchiveOrderByInfo thing;
+Integer direction = thing.GetDirection();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Programmatic name of the column to order by, semantically the same as the NSArchiveColumnInfo.Name.
+
+**Example:**
+
+```crmscript
+NSArchiveOrderByInfo thing;
+String name = thing.GetName();
+```
+
+## SetDirection(Integer)
+
+```crmscript
+Void SetDirection(Integer direction)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveOrderByInfo thing;
+Integer direction;
+thing.SetDirection(direction);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveOrderByInfo thing;
+String name;
+thing.SetName(name);
+```

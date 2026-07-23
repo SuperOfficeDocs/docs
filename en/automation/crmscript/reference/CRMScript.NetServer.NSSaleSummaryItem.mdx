@@ -1,0 +1,337 @@
+﻿---
+uid: crmscript.netserver.nssalesummaryitem
+title: NSSaleSummaryItem
+description: "Sale Summary item."
+keywords: CRMScript, NSSaleSummaryItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSaleSummaryItem
+
+Sale Summary item.
+
+## Constructors
+
+### NSSaleSummaryItem()
+
+```crmscript
+NSSaleSummaryItem
+```
+
+Initializes a new instance of the NSSaleSummaryItem class.
+
+## Methods
+
+## GetAmount()
+
+```crmscript
+Float GetAmount()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Total sale amount.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Float amount = thing.GetAmount();
+```
+
+## GetAmountInBaseCurrency()
+
+```crmscript
+Float GetAmountInBaseCurrency()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Sale amount converted to the base currency.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Float amountInBaseCurrency = thing.GetAmountInBaseCurrency();
+```
+
+## GetCompleted()
+
+```crmscript
+Integer GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The Completed state. NotStarted(1) or Completed(3). See &lt;xref href=\"CRMScript.NetServer.SaleStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer completed = thing.GetCompleted();
+```
+
+## GetCurrency()
+
+```crmscript
+String GetCurrency()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSCurrency the sale amount is in.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+String currency = thing.GetCurrency();
+```
+
+## GetHeading()
+
+```crmscript
+String GetHeading()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sale heading (short description?).
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+String heading = thing.GetHeading();
+```
+
+## GetProbability()
+
+```crmscript
+Integer GetProbability()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Probability of sale success in percent (0-100).
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer probability = thing.GetProbability();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered date.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetSaleDate()
+
+```crmscript
+DateTime GetSaleDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Expected sales date.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+DateTime saleDate = thing.GetSaleDate();
+```
+
+## GetSaleId()
+
+```crmscript
+Integer GetSaleId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer saleId = thing.GetSaleId();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's status, indicating whether the sale is open(1), sold(2) or lost(3). See &lt;xref href=\"CRMScript.NetServer.SaleStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer status = thing.GetStatus();
+```
+
+## SetAmount(Float)
+
+```crmscript
+Void SetAmount(Float amount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Float amount;
+thing.SetAmount(amount);
+```
+
+## SetAmountInBaseCurrency(Float)
+
+```crmscript
+Void SetAmountInBaseCurrency(Float amountInBaseCurrency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Float amountInBaseCurrency;
+thing.SetAmountInBaseCurrency(amountInBaseCurrency);
+```
+
+## SetCompleted(Integer)
+
+```crmscript
+Void SetCompleted(Integer completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer completed;
+thing.SetCompleted(completed);
+```
+
+## SetCurrency(String)
+
+```crmscript
+Void SetCurrency(String currency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+String currency;
+thing.SetCurrency(currency);
+```
+
+## SetHeading(String)
+
+```crmscript
+Void SetHeading(String heading)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+String heading;
+thing.SetHeading(heading);
+```
+
+## SetProbability(Integer)
+
+```crmscript
+Void SetProbability(Integer probability)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer probability;
+thing.SetProbability(probability);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetSaleDate(DateTime)
+
+```crmscript
+Void SetSaleDate(DateTime )
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+DateTime saleDate;
+thing.SetSaleDate(saleDate);
+```
+
+## SetSaleId(Integer)
+
+```crmscript
+Void SetSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer saleId;
+thing.SetSaleId(saleId);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleSummaryItem thing;
+Integer status;
+thing.SetStatus(status);
+```

@@ -1,0 +1,77 @@
+﻿---
+uid: crmscript.native.timer
+title: Timer
+description: "Timer class"
+keywords: CRMScript, Timer, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Timer
+
+Timer class
+
+## Constructors
+
+### Timer()
+
+```crmscript
+Timer
+```
+
+Initializes a new instance of the Timer class.
+
+## Methods
+
+## getHiResTimer()
+
+Gets a high resolution timer in seconds.
+
+```crmscript
+Float getHiResTimer()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float)
+
+## getSeconds()
+
+This function will return the number of seconds between start and stop.
+
+```crmscript
+Float getSeconds()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The number of seconds between start and stop.
+
+## getTimer()
+
+Gets a timer value in seconds from the real time system clock. This is normally a low resolution timer.
+
+```crmscript
+Float getTimer()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float)
+
+## start()
+
+This function will start the timer.
+
+```crmscript
+Void start()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## stop()
+
+This function will stop the timer.
+
+```crmscript
+Void stop()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

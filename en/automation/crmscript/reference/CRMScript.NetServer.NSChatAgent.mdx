@@ -1,0 +1,616 @@
+﻿---
+uid: crmscript.netserver.nschatagent
+title: NSChatAgent
+description: "Chat functions. Manage chat channels, sessions, and messages."
+keywords: CRMScript, NSChatAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatAgent
+
+Chat functions. Manage chat channels, sessions, and messages.
+
+## Constructors
+
+### NSChatAgent()
+
+```crmscript
+NSChatAgent
+```
+
+Chat functions. Manage chat channels, sessions, and messages.
+
+## Methods
+
+## AcceptChatSessionTransfer(Integer)
+
+Accept the transfer: assign the session to the user. If the session is not being transferred, nothing happens.
+
+```crmscript
+NSChatSessionEntity AcceptChatSessionTransfer(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+NSChatSessionEntity res = agent.AcceptChatSessionTransfer(chatSessionId);
+```
+
+## AddChatMessage(Integer,NSChatMessage)
+
+Adds a new message to a chat session
+
+```crmscript
+NSChatMessage AddChatMessage(Integer chatSessionId, NSChatMessage message)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatMessage](CRMScript.NetServer.NSChatMessage)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+NSChatMessage message;
+NSChatMessage res = agent.AddChatMessage(chatSessionId, message);
+```
+
+## AddChatTopicUserAgent(Integer,NSChatTopicAgent)
+
+Adds a user to a chat topic
+
+```crmscript
+NSChatTopicAgent AddChatTopicUserAgent(Integer chatTopicId, NSChatTopicAgent useragent)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicAgent](CRMScript.NetServer.NSChatTopicAgent)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+NSChatTopicAgent useragent;
+NSChatTopicAgent res = agent.AddChatTopicUserAgent(chatTopicId, useragent);
+```
+
+## ChatSessionsForUser()
+
+Gets all chat sessions which this user is a member of.
+
+```crmscript
+NSChatSessionEntity[] ChatSessionsForUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)[]
+
+<Note>
+Members means that you have at least one of: Can Respond, Notifications, Listen or Manager
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatSessionEntity[] res = agent.ChatSessionsForUser();
+```
+
+## ChatTopicsForUser()
+
+Gets all chat topics which this user is a member of.nd, Notifications, Listen or Manager.
+
+```crmscript
+NSChatTopicEntity[] ChatTopicsForUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicEntity](CRMScript.NetServer.NSChatTopicEntity)[]
+
+<Note>
+Members means that you have at least one of: Can Respond, Notifications, Listen or Manager
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatTopicEntity[] res = agent.ChatTopicsForUser();
+```
+
+## CreateChatSessionForTopic(Integer)
+
+Creates a new session on a chat topic
+
+```crmscript
+NSChatSessionEntity CreateChatSessionForTopic(Integer chatTopicId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+NSChatSessionEntity res = agent.CreateChatSessionForTopic(chatTopicId);
+```
+
+## CreateDefaultChatSessionEntity()
+
+Sets default values into a new NSChatSessionEntity.
+
+```crmscript
+NSChatSessionEntity CreateDefaultChatSessionEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+<Note>
+NetServer calculates default values (for example Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatSessionEntity thing = agent.CreateDefaultChatSessionEntity();
+thing = agent.SaveChatSessionEntity(thing);
+```
+
+## CreateDefaultChatTopicAgent()
+
+Sets default values into a new NSChatTopicAgent.
+
+```crmscript
+NSChatTopicAgent CreateDefaultChatTopicAgent()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicAgent](CRMScript.NetServer.NSChatTopicAgent)
+
+<Note>
+NetServer calculates default values (for example Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatTopicAgent thing = agent.CreateDefaultChatTopicAgent();
+thing = agent.SaveChatTopicAgent(thing);
+```
+
+## CreateDefaultChatTopicEntity()
+
+Sets default values into a new NSChatTopicEntity.
+
+```crmscript
+NSChatTopicEntity CreateDefaultChatTopicEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicEntity](CRMScript.NetServer.NSChatTopicEntity)
+
+<Note>
+NetServer calculates default values (for example Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatTopicEntity thing = agent.CreateDefaultChatTopicEntity();
+thing = agent.SaveChatTopicEntity(thing);
+```
+
+## DeleteChatSessionEntity(Integer)
+
+Deletes the NSChatSessionEntity
+
+```crmscript
+Void DeleteChatSessionEntity(Integer chatSessionEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+agent.DeleteChatSessionEntity(123);
+```
+
+## DeleteChatTopicEntity(Integer)
+
+Deletes the NSChatTopicEntity
+
+```crmscript
+Void DeleteChatTopicEntity(Integer chatTopicEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+agent.DeleteChatTopicEntity(123);
+```
+
+## DeleteChatTopicUserAgent(Integer,String)
+
+Removes a user from a topic
+
+```crmscript
+Void DeleteChatTopicUserAgent(Integer chatTopicId, String username)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+String username;
+agent.DeleteChatTopicUserAgent(chatTopicId, username);
+```
+
+## GetChatMessages(Integer,Integer)
+
+Gets all or some of the messages in a chat session
+
+```crmscript
+NSChatMessage[] GetChatMessages(Integer chatSessionId, Integer after)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatMessage](CRMScript.NetServer.NSChatMessage)[]
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+Integer after;
+NSChatMessage[] res = agent.GetChatMessages(chatSessionId, after);
+```
+
+## GetChatPresence()
+
+Gets the chat presence status for all chat users.
+
+```crmscript
+NSChatPresence[] GetChatPresence()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatPresence](CRMScript.NetServer.NSChatPresence)[]
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatPresence[] res = agent.GetChatPresence();
+```
+
+## GetChatSessionEntity(Integer)
+
+Gets an NSChatSessionEntity object.
+
+```crmscript
+NSChatSessionEntity GetChatSessionEntity(Integer chatSessionEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatSessionEntity thing = agent.GetChatSessionEntity(123);
+```
+
+## GetChatTopicEntity(Integer)
+
+Gets an NSChatTopicEntity object.
+
+```crmscript
+NSChatTopicEntity GetChatTopicEntity(Integer chatTopicEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicEntity](CRMScript.NetServer.NSChatTopicEntity)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatTopicEntity thing = agent.GetChatTopicEntity(123);
+```
+
+## GetChatTopicUserAgent(Integer,String)
+
+Gets a user assigned to a topic
+
+```crmscript
+NSChatTopicAgent GetChatTopicUserAgent(Integer chatTopicId, String username)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicAgent](CRMScript.NetServer.NSChatTopicAgent)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+String username;
+NSChatTopicAgent res = agent.GetChatTopicUserAgent(chatTopicId, username);
+```
+
+## GetChatTopicUserAgentList(Integer)
+
+Gets a list of users assigned to a chat topic.
+
+```crmscript
+NSChatTopicAgent[] GetChatTopicUserAgentList(Integer chatTopicId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicAgent](CRMScript.NetServer.NSChatTopicAgent)[]
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+NSChatTopicAgent[] res = agent.GetChatTopicUserAgentList(chatTopicId);
+```
+
+## GetChatTranscript(Integer,Bool)
+
+Gets the chat transcript, formatted as plain text or HTML.
+
+```crmscript
+String GetChatTranscript(Integer chatSessionId, Bool html)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - chat transcript, formatted as plain text or HTMl.
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+Bool html;
+String res = agent.GetChatTranscript(chatSessionId, html);
+```
+
+## GetUserAgentList(Bool,Bool)
+
+Gets list of users that can be assigned to chat topics.
+
+```crmscript
+NSMDOListItem[] GetUserAgentList(Bool flat, Bool onlyPresent)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+<Note>
+Users with Chat-CALs from the MDO list 'chatuser'
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Bool flat;
+Bool onlyPresent;
+NSMDOListItem[] res = agent.GetUserAgentList(flat, onlyPresent);
+```
+
+## IsWithinOpeningHours(Integer)
+
+Checks if we are right now within the opening hours of the given topic. Will use timezones to calculate if configured.
+
+```crmscript
+Bool IsWithinOpeningHours(Integer chatTopicId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+Bool res = agent.IsWithinOpeningHours(chatTopicId);
+```
+
+## PickUpChatSession(Integer)
+
+Answer the session: assign the session to the user. The welcome message is sent to the customer.
+
+```crmscript
+NSChatSessionEntity PickUpChatSession(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity) - Returns NULL if session was not in queue.
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+NSChatSessionEntity res = agent.PickUpChatSession(chatSessionId);
+```
+
+## PickUpFirstChatSession()
+
+Answer the first available session from the queue: assign the session to the user. The welcome message is sent to the customer.
+
+```crmscript
+NSChatSessionEntity PickUpFirstChatSession()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatSessionEntity res = agent.PickUpFirstChatSession();
+```
+
+## RejectChatSessionTransfer(Integer)
+
+Do not want. Deny the transfer to the user. If the session is not being transferred, nothing happens.
+
+```crmscript
+NSChatSessionEntity RejectChatSessionTransfer(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+NSChatSessionEntity res = agent.RejectChatSessionTransfer(chatSessionId);
+```
+
+## ResetChatSession(Integer)
+
+Resets chat session, puts it back on the queue for pickup.
+
+```crmscript
+NSChatSessionEntity ResetChatSession(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+<Note>
+Used by bots to hand off a session to human
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+NSChatSessionEntity res = agent.ResetChatSession(chatSessionId);
+```
+
+## SaveChatPresence(NSChatPresence[])
+
+Saves the chat presence for specified users
+
+```crmscript
+Void SaveChatPresence(NSChatPresence[] chatPresence)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+NSChatPresence[] chatPresence;
+agent.SaveChatPresence(chatPresence);
+```
+
+## SaveChatSessionEntity(NSChatSessionEntity)
+
+Updates the existing NSChatSessionEntity or creates a new NSChatSessionEntity if the id parameter is 0
+
+```crmscript
+NSChatSessionEntity SaveChatSessionEntity(NSChatSessionEntity chatSessionEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+**Example:**
+
+```crmscript
+NSChat  agent;
+NSChatSessionEntity thing = agent.CreateDefaultChatSessionEntity();
+thing = agent.SaveChatSessionEntity(thing);
+```
+
+## SaveChatTopicEntity(NSChatTopicEntity)
+
+Updates the existing NSChatTopicEntity or creates a new NSChatTopicEntity if the id parameter is 0
+
+```crmscript
+NSChatTopicEntity SaveChatTopicEntity(NSChatTopicEntity chatTopicEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicEntity](CRMScript.NetServer.NSChatTopicEntity)
+
+**Example:**
+
+```crmscript
+NSChat  agent;
+NSChatTopicEntity thing = agent.CreateDefaultChatTopicEntity();
+thing = agent.SaveChatTopicEntity(thing);
+```
+
+## TransferChatSession(Integer,String)
+
+Requests to send the session to another user. If the session does not belong to the user, nothing happens.
+
+```crmscript
+NSChatSessionEntity TransferChatSession(Integer chatSessionId, String toAssociate)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSessionEntity](CRMScript.NetServer.NSChatSessionEntity)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatSessionId;
+String toAssociate;
+NSChatSessionEntity res = agent.TransferChatSession(chatSessionId, toAssociate);
+```
+
+## UpdateChatTopicUserAgent(Integer,String,NSChatTopicAgent)
+
+Updates a user's role in a chat topic
+
+```crmscript
+NSChatTopicAgent UpdateChatTopicUserAgent(Integer chatTopicId, String username, NSChatTopicAgent useragent)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicAgent](CRMScript.NetServer.NSChatTopicAgent)
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+String username;
+NSChatTopicAgent useragent;
+NSChatTopicAgent res = agent.UpdateChatTopicUserAgent(chatTopicId, username, useragent);
+```
+
+## UpdateChatTopicUserAgent(Integer,NSChatTopicAgent[])
+
+Updates users roles in a chat topic
+
+```crmscript
+NSChatTopicAgent[] UpdateChatTopicUserAgents(Integer chatTopicId, NSChatTopicAgent[] useragents)
+```
+
+**Returns:** [CRMScript.NetServer.NSChatTopicAgent](CRMScript.NetServer.NSChatTopicAgent)[]
+
+**Example:**
+
+```crmscript
+NSChatAgent agent;
+Integer chatTopicId;
+NSChatTopicAgent[] useragents;
+NSChatTopicAgent[] res = agent.UpdateChatTopicUserAgents(chatTopicId, useragents);
+```

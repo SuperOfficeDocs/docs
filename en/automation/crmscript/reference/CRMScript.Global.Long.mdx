@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.global.long
+title: Long
+description: "Longs are positive and negative whole 64-bit unsigned numbers without decimals. If you need to work with decimals, use the Float data type. To represent a long number in the code as a literal, suffix it with an 'L', for example, 'Long l = 576460752303423488L;'"
+keywords: CRMScript, Long, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Long
+
+Longs are positive and negative whole 64-bit unsigned numbers without decimals. If you need to work with decimals, use the Float data type.
+To represent a long number in the code as a literal, suffix it with an "L", for example, "Long l = 576460752303423488L;"
+
+## Constructors
+
+### Long()
+
+```crmscript
+Long Long()
+```
+
+Default constructor.
+
+### Long(Integer)
+
+```crmscript
+Long Long(Long value)
+```
+
+Pass a value to copy into a new object.
+
+### Long(Integer)
+
+```crmscript
+Long Long(Integer value)
+```
+
+Pass a value to copy into a new object.
+
+## Methods
+
+## toString()
+
+Converts a numeric value to its string representation.
+
+One of the most frequently used methods, typically when you are going to output something.
+
+```crmscript
+String toString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+Long c = 576460752303423488L;
+String s = c.toString();
+```
+
+## isNull()
+
+Returns true if it has no value and false if it does.
+
+```crmscript
+Bool isNull()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+A NULL/NUL/NIL Long is different from zero, in that it is conceptually without a value. However, when a null Long is used naively, CRMScript is usually forgiving and interprets it as zero.
+</Note>
+
+**Example:**
+
+```crmscript
+Long i;
+printLine(i.isNull().toString());
+i = 0;
+printLine(i.isNull().toString());
+```
+
+## getHighInteger()
+
+Returns the high 32-bit Integer of the Long.
+
+```crmscript
+Integer getHighInteger()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Long c = 576460752303423488L;
+print(c.getHighInteger().toString());
+```
+
+## getLowInteger()
+
+Returns the low 32-bit Integer of the Long.
+
+```crmscript
+Integer getLowInteger()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+Long c = 576460752303423488L;
+print(c.getLowInteger().toString());
+```

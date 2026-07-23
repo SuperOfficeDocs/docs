@@ -1,0 +1,585 @@
+﻿---
+uid: crmscript.netserver.nsproject
+title: NSProject
+description: "Carrier object for Project."
+keywords: CRMScript, NSProject, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProject
+
+Carrier object for Project.
+
+## Constructors
+
+### NSProject()
+
+```crmscript
+NSProject
+```
+
+Initializes a new instance of the NSProject class.
+
+## Methods
+
+## GetActiveErpLinks()
+
+```crmscript
+Integer GetActiveErpLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer activeErpLinks = thing.GetActiveErpLinks();
+```
+
+## GetAssociateFullName()
+
+```crmscript
+String GetAssociateFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The project owner.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String associateFullName = thing.GetAssociateFullName();
+```
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The project owner ID (associate ID).
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The projects description.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String description = thing.GetDescription();
+```
+
+## GetIsPublished()
+
+```crmscript
+Bool GetIsPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Bool isPublished = thing.GetIsPublished();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Project name.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String name = thing.GetName();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetProjectNumber()
+
+```crmscript
+String GetProjectNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Automatically generated number.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String projectNumber = thing.GetProjectNumber();
+```
+
+## GetPublishFrom()
+
+```crmscript
+DateTime GetPublishFrom()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publication valid from (inclusive).
+
+**Example:**
+
+```crmscript
+NSProject thing;
+DateTime publishFrom = thing.GetPublishFrom();
+```
+
+## GetPublishTo()
+
+```crmscript
+DateTime GetPublishTo()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publication valid to (inclusive).
+
+**Example:**
+
+```crmscript
+NSProject thing;
+DateTime publishTo = thing.GetPublishTo();
+```
+
+## GetStatus()
+
+```crmscript
+String GetStatus()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The projects status.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String status = thing.GetStatus();
+```
+
+## GetStatusId()
+
+```crmscript
+Integer GetStatusId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The projects status Id.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer statusId = thing.GetStatusId();
+```
+
+## GetTextId()
+
+```crmscript
+Integer GetTextId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the description.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer textId = thing.GetTextId();
+```
+
+## GetType()
+
+```crmscript
+String GetType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The project type.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String type = thing.GetType();
+```
+
+## GetTypeId()
+
+```crmscript
+Integer GetTypeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer typeId = thing.GetTypeId();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated date.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetURL()
+
+```crmscript
+String GetURL()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URL address.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String uRL = thing.GetURL();
+```
+
+## GetURLName()
+
+```crmscript
+String GetURLName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Visible field.
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String uRLName = thing.GetURLName();
+```
+
+## SetActiveErpLinks(Integer)
+
+```crmscript
+Void SetActiveErpLinks(Integer activeErpLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer activeErpLinks;
+thing.SetActiveErpLinks(activeErpLinks);
+```
+
+## SetAssociateFullName(String)
+
+```crmscript
+Void SetAssociateFullName(String associateFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String associateFullName;
+thing.SetAssociateFullName(associateFullName);
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetIsPublished(Bool)
+
+```crmscript
+Void SetIsPublished(Bool isPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Bool isPublished;
+thing.SetIsPublished(isPublished);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String name;
+thing.SetName(name);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetProjectNumber(String)
+
+```crmscript
+Void SetProjectNumber(String projectNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String projectNumber;
+thing.SetProjectNumber(projectNumber);
+```
+
+## SetPublishFrom(DateTime)
+
+```crmscript
+Void SetPublishFrom(DateTime publishFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+DateTime publishFrom;
+thing.SetPublishFrom(publishFrom);
+```
+
+## SetPublishTo(DateTime)
+
+```crmscript
+Void SetPublishTo(DateTime publishTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+DateTime publishTo;
+thing.SetPublishTo(publishTo);
+```
+
+## SetStatus(String)
+
+```crmscript
+Void SetStatus(String status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String status;
+thing.SetStatus(status);
+```
+
+## SetStatusId(Integer)
+
+```crmscript
+Void SetStatusId(Integer statusId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer statusId;
+thing.SetStatusId(statusId);
+```
+
+## SetTextId(Integer)
+
+```crmscript
+Void SetTextId(Integer textId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer textId;
+thing.SetTextId(textId);
+```
+
+## SetType(String)
+
+```crmscript
+Void SetType(String type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String type;
+thing.SetType(type);
+```
+
+## SetTypeId(Integer)
+
+```crmscript
+Void SetTypeId(Integer typeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+Integer typeId;
+thing.SetTypeId(typeId);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetURL(String)
+
+```crmscript
+Void SetURL(String uRL)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String uRL;
+thing.SetURL(uRL);
+```
+
+## SetURLName(String)
+
+```crmscript
+Void SetURLName(String uRLName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProject thing;
+String uRLName;
+thing.SetURLName(uRLName);
+```

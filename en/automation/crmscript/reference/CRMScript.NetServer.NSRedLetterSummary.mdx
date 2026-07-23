@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsredlettersummary
+title: NSRedLetterSummary
+description: "Summary of red-letter day information - holiday in own country, and in other countries known to the system."
+keywords: CRMScript, NSRedLetterSummary, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSRedLetterSummary
+
+Summary of red-letter day information - holiday in own country, and in other countries known to the system.
+
+## Constructors
+
+### NSRedLetterSummary()
+
+```crmscript
+NSRedLetterSummary
+```
+
+Initializes a new instance of the NSRedLetterSummary class.
+
+## Methods
+
+## GetIsOtherCountryHoliday()
+
+```crmscript
+Bool GetIsOtherCountryHoliday()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, this day is a holiday in at least one of the countries that has defined associates in the system, but not in the country of the associate whose diary is being scanned.
+
+**Example:**
+
+```crmscript
+NSRedLetterSummary thing;
+Bool isOtherCountryHoliday = thing.GetIsOtherCountryHoliday();
+```
+
+## GetIsOwnCountryHoliday()
+
+```crmscript
+Bool GetIsOwnCountryHoliday()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, this day is a holiday in the country of the given associate.
+
+**Example:**
+
+```crmscript
+NSRedLetterSummary thing;
+Bool isOwnCountryHoliday = thing.GetIsOwnCountryHoliday();
+```
+
+## SetIsOtherCountryHoliday(Bool)
+
+```crmscript
+Void SetIsOtherCountryHoliday(Bool isOtherCountryHoliday)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRedLetterSummary thing;
+Bool isOtherCountryHoliday;
+thing.SetIsOtherCountryHoliday(isOtherCountryHoliday);
+```
+
+## SetIsOwnCountryHoliday(Bool)
+
+```crmscript
+Void SetIsOwnCountryHoliday(Bool isOwnCountryHoliday)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRedLetterSummary thing;
+Bool isOwnCountryHoliday;
+thing.SetIsOwnCountryHoliday(isOwnCountryHoliday);
+```

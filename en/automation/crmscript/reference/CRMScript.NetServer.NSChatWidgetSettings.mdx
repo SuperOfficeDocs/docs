@@ -1,0 +1,740 @@
+﻿---
+uid: crmscript.netserver.nschatwidgetsettings
+title: NSChatWidgetSettings
+description: "Defines the look of the chat widget. Carrier object for ChatWidgetSettings."
+keywords: CRMScript, NSChatWidgetSettings, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatWidgetSettings
+
+Defines the look of the chat widget. Carrier object for ChatWidgetSettings.
+
+## Constructors
+
+### NSChatWidgetSettings()
+
+```crmscript
+NSChatWidgetSettings
+```
+
+Initializes a new instance of the NSChatWidgetSettings class.
+
+## Methods
+
+## GetAutoFaqCategory()
+
+```crmscript
+NSKbCategory GetAutoFaqCategory()
+```
+
+**Returns:** [CRMScript.NetServer.NSKbCategory](CRMScript.NetServer.NSKbCategory) - Root folder for FAQ suggestions.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+NSKbCategory autoFaqCategory = thing.GetAutoFaqCategory();
+```
+
+## GetAutoFaqEnabled()
+
+```crmscript
+Bool GetAutoFaqEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Enable automatic FAQ suggestions.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool autoFaqEnabled = thing.GetAutoFaqEnabled();
+```
+
+## GetColor()
+
+```crmscript
+String GetColor()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The base color of the widget.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String color = thing.GetColor();
+```
+
+## GetFont()
+
+```crmscript
+String GetFont()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The font used in the widget.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String font = thing.GetFont();
+```
+
+## GetLanguageIsoCode()
+
+```crmscript
+String GetLanguageIsoCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The language ISO code for the widget language.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String languageIsoCode = thing.GetLanguageIsoCode();
+```
+
+## GetLogoBlobId()
+
+```crmscript
+Integer GetLogoBlobId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Blob ID that contains logo image.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer logoBlobId = thing.GetLogoBlobId();
+```
+
+## GetLogoEnabled()
+
+```crmscript
+Bool GetLogoEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates if the logo should be shown in the widget.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool logoEnabled = thing.GetLogoEnabled();
+```
+
+## GetLogoName()
+
+```crmscript
+String GetLogoName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - filename/description of logo (from blob).
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String logoName = thing.GetLogoName();
+```
+
+## GetOfflineFields()
+
+```crmscript
+Integer GetOfflineFields()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Required field when creating ticket in offline mode. See &lt;xref href=\"CRMScript.NetServer.WidgetRequiredFields\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer offlineFields = thing.GetOfflineFields();
+```
+
+## GetOfflineHeader()
+
+```crmscript
+String GetOfflineHeader()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Offline text shown in widget header.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String offlineHeader = thing.GetOfflineHeader();
+```
+
+## GetOfflineMessage()
+
+```crmscript
+String GetOfflineMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Offline message shown in widget.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String offlineMessage = thing.GetOfflineMessage();
+```
+
+## GetPostFormEnabled()
+
+```crmscript
+Bool GetPostFormEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Enable post chat form.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool postFormEnabled = thing.GetPostFormEnabled();
+```
+
+## GetPostFormHeader()
+
+```crmscript
+String GetPostFormHeader()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Header text to show in post chat form.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String postFormHeader = thing.GetPostFormHeader();
+```
+
+## GetPostFormMessage()
+
+```crmscript
+String GetPostFormMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Message text to show in post chat form.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String postFormMessage = thing.GetPostFormMessage();
+```
+
+## GetPostTranscriptEnabled()
+
+```crmscript
+Bool GetPostTranscriptEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Enable transcript of chat session.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool postTranscriptEnabled = thing.GetPostTranscriptEnabled();
+```
+
+## GetPreFormEnabled()
+
+```crmscript
+Bool GetPreFormEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Enable pre-chat form for anonymous users.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool preFormEnabled = thing.GetPreFormEnabled();
+```
+
+## GetPreFormMessage()
+
+```crmscript
+String GetPreFormMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Message to be shown in a pre-chat.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String preFormMessage = thing.GetPreFormMessage();
+```
+
+## GetRequiredFields()
+
+```crmscript
+Integer GetRequiredFields()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Fields required to start a chat. See &lt;xref href=\"CRMScript.NetServer.WidgetRequiredFields\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer requiredFields = thing.GetRequiredFields();
+```
+
+## GetShowAgentPhoto()
+
+```crmscript
+Bool GetShowAgentPhoto()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Use agent photo and name when chatting.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool showAgentPhoto = thing.GetShowAgentPhoto();
+```
+
+## GetSize()
+
+```crmscript
+Integer GetSize()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Chat widget size - normal or large. See &lt;xref href=\"CRMScript.NetServer.ChatWidgetSize\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer size = thing.GetSize();
+```
+
+## GetTheme()
+
+```crmscript
+Integer GetTheme()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Predefined themes for the chat widget. See &lt;xref href=\"CRMScript.NetServer.WidgetTheme\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer theme = thing.GetTheme();
+```
+
+## GetWelcomeMessage()
+
+```crmscript
+String GetWelcomeMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Short message displayed as long as the request is in queue or active.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String welcomeMessage = thing.GetWelcomeMessage();
+```
+
+## GetWelcomeTitle()
+
+```crmscript
+String GetWelcomeTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Short welcome message when user initiates a chat.
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String welcomeTitle = thing.GetWelcomeTitle();
+```
+
+## SetAutoFaqCategory(NSKbCategory)
+
+```crmscript
+Void SetAutoFaqCategory(NSKbCategory autoFaqCategory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+NSKbCategory autoFaqCategory;
+thing.SetAutoFaqCategory(autoFaqCategory);
+```
+
+## SetAutoFaqEnabled(Bool)
+
+```crmscript
+Void SetAutoFaqEnabled(Bool autoFaqEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool autoFaqEnabled;
+thing.SetAutoFaqEnabled(autoFaqEnabled);
+```
+
+## SetColor(String)
+
+```crmscript
+Void SetColor(String color)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String color;
+thing.SetColor(color);
+```
+
+## SetFont(String)
+
+```crmscript
+Void SetFont(String font)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String font;
+thing.SetFont(font);
+```
+
+## SetLanguageIsoCode(String)
+
+```crmscript
+Void SetLanguageIsoCode(String languageIsoCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String languageIsoCode;
+thing.SetLanguageIsoCode(languageIsoCode);
+```
+
+## SetLogoBlobId(Integer)
+
+```crmscript
+Void SetLogoBlobId(Integer logoBlobId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer logoBlobId;
+thing.SetLogoBlobId(logoBlobId);
+```
+
+## SetLogoEnabled(Bool)
+
+```crmscript
+Void SetLogoEnabled(Bool logoEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool logoEnabled;
+thing.SetLogoEnabled(logoEnabled);
+```
+
+## SetLogoName(String)
+
+```crmscript
+Void SetLogoName(String logoName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String logoName;
+thing.SetLogoName(logoName);
+```
+
+## SetOfflineFields(Integer)
+
+```crmscript
+Void SetOfflineFields(Integer offlineFields)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer offlineFields;
+thing.SetOfflineFields(offlineFields);
+```
+
+## SetOfflineHeader(String)
+
+```crmscript
+Void SetOfflineHeader(String offlineHeader)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String offlineHeader;
+thing.SetOfflineHeader(offlineHeader);
+```
+
+## SetOfflineMessage(String)
+
+```crmscript
+Void SetOfflineMessage(String offlineMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String offlineMessage;
+thing.SetOfflineMessage(offlineMessage);
+```
+
+## SetPostFormEnabled(Bool)
+
+```crmscript
+Void SetPostFormEnabled(Bool postFormEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool postFormEnabled;
+thing.SetPostFormEnabled(postFormEnabled);
+```
+
+## SetPostFormHeader(String)
+
+```crmscript
+Void SetPostFormHeader(String postFormHeader)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String postFormHeader;
+thing.SetPostFormHeader(postFormHeader);
+```
+
+## SetPostFormMessage(String)
+
+```crmscript
+Void SetPostFormMessage(String postFormMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String postFormMessage;
+thing.SetPostFormMessage(postFormMessage);
+```
+
+## SetPostTranscriptEnabled(Bool)
+
+```crmscript
+Void SetPostTranscriptEnabled(Bool postTranscriptEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool postTranscriptEnabled;
+thing.SetPostTranscriptEnabled(postTranscriptEnabled);
+```
+
+## SetPreFormEnabled(Bool)
+
+```crmscript
+Void SetPreFormEnabled(Bool preFormEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool preFormEnabled;
+thing.SetPreFormEnabled(preFormEnabled);
+```
+
+## SetPreFormMessage(String)
+
+```crmscript
+Void SetPreFormMessage(String preFormMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String preFormMessage;
+thing.SetPreFormMessage(preFormMessage);
+```
+
+## SetRequiredFields(Integer)
+
+```crmscript
+Void SetRequiredFields(Integer requiredFields)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer requiredFields;
+thing.SetRequiredFields(requiredFields);
+```
+
+## SetShowAgentPhoto(Bool)
+
+```crmscript
+Void SetShowAgentPhoto(Bool showAgentPhoto)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Bool showAgentPhoto;
+thing.SetShowAgentPhoto(showAgentPhoto);
+```
+
+## SetSize(Integer)
+
+```crmscript
+Void SetSize(Integer size)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer size;
+thing.SetSize(size);
+```
+
+## SetTheme(Integer)
+
+```crmscript
+Void SetTheme(Integer theme)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+Integer theme;
+thing.SetTheme(theme);
+```
+
+## SetWelcomeMessage(String)
+
+```crmscript
+Void SetWelcomeMessage(String welcomeMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String welcomeMessage;
+thing.SetWelcomeMessage(welcomeMessage);
+```
+
+## SetWelcomeTitle(String)
+
+```crmscript
+Void SetWelcomeTitle(String welcomeTitle)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatWidgetSettings thing;
+String welcomeTitle;
+thing.SetWelcomeTitle(welcomeTitle);
+```

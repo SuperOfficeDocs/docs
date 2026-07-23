@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nsphonelistpreferences
+title: NSPhoneListPreferences
+description: "Search preferences for a phone list search."
+keywords: CRMScript, NSPhoneListPreferences, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPhoneListPreferences
+
+Search preferences for a phone list search.
+
+## Constructors
+
+### NSPhoneListPreferences()
+
+```crmscript
+NSPhoneListPreferences
+```
+
+Initializes a new instance of the NSPhoneListPreferences class.
+
+## Methods
+
+## GetSearchCompany()
+
+```crmscript
+Bool GetSearchCompany()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if you want to search for Companies by their name.
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchCompany = thing.GetSearchCompany();
+```
+
+## GetSearchDepartment()
+
+```crmscript
+Bool GetSearchDepartment()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if you want to search for Departments where your colleagues work.
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchDepartment = thing.GetSearchDepartment();
+```
+
+## GetSearchFirstname()
+
+```crmscript
+Bool GetSearchFirstname()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if you want to search for Persons by their firstname.
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchFirstname = thing.GetSearchFirstname();
+```
+
+## GetSearchLastname()
+
+```crmscript
+Bool GetSearchLastname()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if you want to search for Persons by their last name.
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchLastname = thing.GetSearchLastname();
+```
+
+## GetSearchModeCompany()
+
+```crmscript
+Integer GetSearchModeCompany()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.StringSearchType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode = thing.GetSearchModeCompany();
+```
+
+## GetSearchModeDepartment()
+
+```crmscript
+Integer GetSearchModeDepartment()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.StringSearchType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode = thing.GetSearchModeDepartment();
+```
+
+## GetSearchModeFirstname()
+
+```crmscript
+Integer GetSearchModeFirstname()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.StringSearchType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode = thing.GetSearchModeFirstname();
+```
+
+## GetSearchModeLastname()
+
+```crmscript
+Integer GetSearchModeLastname()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.StringSearchType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode = thing.GetSearchModeLastname();
+```
+
+## SetSearchCompany(Bool)
+
+```crmscript
+Void SetSearchCompany(Bool searchCompany)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchCompany;
+thing.SetSearchCompany(searchCompany);
+```
+
+## SetSearchDepartment(Bool)
+
+```crmscript
+Void SetSearchDepartment(Bool searchDepartment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchDepartment;
+thing.SetSearchDepartment(searchDepartment);
+```
+
+## SetSearchFirstname(Bool)
+
+```crmscript
+Void SetSearchFirstname(Bool searchFirstname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchFirstname;
+thing.SetSearchFirstname(searchFirstname);
+```
+
+## SetSearchLastname(Bool)
+
+```crmscript
+Void SetSearchLastname(Bool searchLastname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Bool searchLastname;
+thing.SetSearchLastname(searchLastname);
+```
+
+## SetSearchModeCompany(Integer)
+
+```crmscript
+Void SetSearchModeCompany(Integer searchMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode;
+thing.SetSearchModeCompany(searchMode);
+```
+
+## SetSearchModeDepartment(Integer)
+
+```crmscript
+Void SetSearchModeDepartment(Integer searchMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode;
+thing.SetSearchModeDepartment(searchMode);
+```
+
+## SetSearchModeFirstname(Integer)
+
+```crmscript
+Void SetSearchModeFirstname(Integer searchMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode;
+thing.SetSearchModeFirstname(searchMode);
+```
+
+## SetSearchModeLastname(Integer)
+
+```crmscript
+Void SetSearchModeLastname(Integer searchMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPhoneListPreferences thing;
+Integer searchMode;
+thing.SetSearchModeLastname(searchMode);
+```

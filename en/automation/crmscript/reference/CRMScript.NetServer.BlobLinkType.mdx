@@ -1,0 +1,44 @@
+﻿---
+uid: crmscript.netserver.bloblinktype
+title: Enum BlobLinkType
+description: "The link type, often synonymous with the blob type, of a BinaryObjectLink row"
+keywords: CRMScript, BlobLinkType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum BlobLinkType
+
+The link type, often synonymous with the blob type, of a BinaryObjectLink row
+
+## Syntax
+
+```crmscript
+BlobLinkType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| PersonImage | Portrait picture of a person |
+| ProjectImage | Picture bound to a project |
+| EventImage | Picture used for a project of type Event, in the Audience client |
+| Thumbnail | Generic thumbnail - not used? |
+| StatusMonitorImage | Watermark image for a Status Monitor in Sales Intelligence |
+| BatchTask | Information related to a BatchTask in NetServer |
+| ProductImage | Image (possibly more than one, differentiated by rank) of a Product; exactly one row should have rank=1 |
+| ProductThumbnail | Thumbnail image for a product, only one allowed per product |
+| QuoteLineImage | Image (possibly more than one, differentiated by rank) of a Product image for a quote line, only one allowed per quote line |
+| QuoteLineThumbnail | Thumbnail image for a quote line, only one allowed per quote line |
+| AccessToken | Access Token used by Cloud Documents for accessing external services |
+| RefreshToken | Refresh Token used by Cloud Documents for accessing external services |
+| Dashboard | Dashboard |
+| DashboardTile | Dashboard tile |
+| ChatTopicImage | Chat topic image |
+| FormsBackgroundImage | Forms background image |
+| ContactImage | Contact logo image |
+| DashboardHtmlTileData | HTML data for dashboard tiles |

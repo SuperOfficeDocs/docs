@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nseventdata
+title: NSEventData
+description: "Data related to event handlers."
+keywords: CRMScript, NSEventData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSEventData
+
+Data related to event handlers.
+
+## Constructors
+
+### NSEventData()
+
+```crmscript
+NSEventData
+```
+
+Initializes a new instance of the NSEventData class.
+
+## Methods
+
+## GetBlockExecution()
+
+```crmscript
+Bool GetBlockExecution()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Whether the context should stop what it is doing (for example, stop saving a sale).
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Bool blockExecution = thing.GetBlockExecution();
+```
+
+## GetException()
+
+```crmscript
+String GetException()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - String containing error message from handler system if it failed.
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+String exception = thing.GetException();
+```
+
+## GetInputValues()
+
+```crmscript
+Map GetInputValues()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Environment values sent to the event handler.
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Map inputValues = thing.GetInputValues();
+```
+
+## GetMessage()
+
+```crmscript
+String GetMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A message to be presented to the user.
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+String message = thing.GetMessage();
+```
+
+## GetNavigateTo()
+
+```crmscript
+String GetNavigateTo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Where the context should navigate afterwards.
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+String navigateTo = thing.GetNavigateTo();
+```
+
+## GetOutputValues()
+
+```crmscript
+Map GetOutputValues()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Values sent back to the environment from the event handler.
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Map outputValues = thing.GetOutputValues();
+```
+
+## GetStateValues()
+
+```crmscript
+Map GetStateValues()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Values kept between event handlers.
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Map stateValues = thing.GetStateValues();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of event we are triggered by. See &lt;xref href=\"CRMScript.NetServer.EventHandlerType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Integer type = thing.GetType();
+```
+
+## SetBlockExecution(Bool)
+
+```crmscript
+Void SetBlockExecution(Bool blockExecution)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Bool blockExecution;
+thing.SetBlockExecution(blockExecution);
+```
+
+## SetException(String)
+
+```crmscript
+Void SetException(String exception)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+String exception;
+thing.SetException(exception);
+```
+
+## SetInputValues(Map)
+
+```crmscript
+Void SetInputValues(Map inputValues)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Map inputValues;
+thing.SetInputValues(inputValues);
+```
+
+## SetMessage(String)
+
+```crmscript
+Void SetMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+String message;
+thing.SetMessage(message);
+```
+
+## SetNavigateTo(String)
+
+```crmscript
+Void SetNavigateTo(String navigateTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+String navigateTo;
+thing.SetNavigateTo(navigateTo);
+```
+
+## SetOutputValues(Map)
+
+```crmscript
+Void SetOutputValues(Map outputValues)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Map outputValues;
+thing.SetOutputValues(outputValues);
+```
+
+## SetStateValues(Map)
+
+```crmscript
+Void SetStateValues(Map stateValues)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Map stateValues;
+thing.SetStateValues(stateValues);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSEventData thing;
+Integer type;
+thing.SetType(type);
+```

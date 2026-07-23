@@ -1,0 +1,182 @@
+﻿---
+uid: crmscript.netserver.nscommandinfo
+title: NSCommandInfo
+description: "An instance of this class describes a custom command, declared and implemented by a document plugin."
+keywords: CRMScript, NSCommandInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCommandInfo
+
+An instance of this class describes a custom command, declared and implemented by a document plugin.
+
+## Constructors
+
+### NSCommandInfo()
+
+```crmscript
+NSCommandInfo
+```
+
+Initializes a new instance of the NSCommandInfo class.
+
+## Methods
+
+## GetDisplayName()
+
+```crmscript
+String GetDisplayName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display name, shown in menus, command lists and similar GUI elements.
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String displayName = thing.GetDisplayName();
+```
+
+## GetDisplayTooltip()
+
+```crmscript
+String GetDisplayTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip string associate with the command* can be a literal or a tooltip hint.
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String displayTooltip = thing.GetDisplayTooltip();
+```
+
+## GetIconHint()
+
+```crmscript
+String GetIconHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Icon hint, which should resolve to an icon that is compatible in size with a standard menu or dropdown list font. May be blank.
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String iconHint = thing.GetIconHint();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The programmatic name of the command, uniquely identifying this command for the document plugin.
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String name = thing.GetName();
+```
+
+## GetReturnType()
+
+```crmscript
+Integer GetReturnType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Declaration of what kind of return type the execution of this command will give. See &lt;xref href=\"CRMScript.NetServer.ReturnType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+Integer returnType = thing.GetReturnType();
+```
+
+## SetDisplayName(String)
+
+```crmscript
+Void SetDisplayName(String displayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String displayName;
+thing.SetDisplayName(displayName);
+```
+
+## SetDisplayTooltip(String)
+
+```crmscript
+Void SetDisplayTooltip(String displayTooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String displayTooltip;
+thing.SetDisplayTooltip(displayTooltip);
+```
+
+## SetIconHint(String)
+
+```crmscript
+Void SetIconHint(String iconHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String iconHint;
+thing.SetIconHint(iconHint);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+String name;
+thing.SetName(name);
+```
+
+## SetReturnType(Integer)
+
+```crmscript
+Void SetReturnType(Integer returnType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCommandInfo thing;
+Integer returnType;
+thing.SetReturnType(returnType);
+```

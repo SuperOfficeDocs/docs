@@ -1,0 +1,1423 @@
+﻿---
+uid: crmscript.netserver.nsperson
+title: NSPerson
+description: "Carrier object for Person."
+keywords: CRMScript, NSPerson, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPerson
+
+Carrier object for Person.
+
+## Constructors
+
+### NSPerson()
+
+```crmscript
+NSPerson
+```
+
+Initializes a new instance of the NSPerson class.
+
+## Methods
+
+## GetActiveErpLinks()
+
+How many active ERP links are there for this person?
+
+```crmscript
+Integer GetActiveErpLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer activeErpLinks = thing.GetActiveErpLinks();
+```
+
+## GetActiveInterests()
+
+Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true
+
+```crmscript
+Integer GetActiveInterests()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer activeInterests = thing.GetActiveInterests();
+```
+
+## GetAssociateId()
+
+ID of the item's owner (Associate id)
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetAssociateName()
+
+Name of the person's owner
+
+```crmscript
+String GetAssociateName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String associateName = thing.GetAssociateName();
+```
+
+## GetCategoryName()
+
+The category list item name
+
+```crmscript
+String GetCategoryName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String categoryName = thing.GetCategoryName();
+```
+
+## GetContactCountryId()
+
+The persons contact country ID
+
+```crmscript
+Integer GetContactCountryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer contactCountryId = thing.GetContactCountryId();
+```
+
+## GetContactDepartment()
+
+The persons contact department
+
+```crmscript
+String GetContactDepartment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactDepartment = thing.GetContactDepartment();
+```
+
+## GetContactFax()
+
+Actual phone number as entered by the user
+
+```crmscript
+String GetContactFax()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactFax = thing.GetContactFax();
+```
+
+## GetContactFullName()
+
+Company full name + department
+
+```crmscript
+String GetContactFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactFullName = thing.GetContactFullName();
+```
+
+## GetContactId()
+
+Owning contact ID
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetContactName()
+
+The persons company name
+
+```crmscript
+String GetContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactName = thing.GetContactName();
+```
+
+## GetContactOrgNr()
+
+The persons contact organization number
+
+```crmscript
+String GetContactOrgNr()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactOrgNr = thing.GetContactOrgNr();
+```
+
+## GetContactPhone()
+
+Returns the direct phone that belong to the persons contact.
+
+```crmscript
+String GetContactPhone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactPhone = thing.GetContactPhone();
+```
+
+## GetCountryId()
+
+Country
+
+```crmscript
+Integer GetCountryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer countryId = thing.GetCountryId();
+```
+
+## GetDescription()
+
+Info text/description on person.
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String description = thing.GetDescription();
+```
+
+## GetDirectPhone()
+
+Returns the direct phone that belong to the contact person.
+
+```crmscript
+String GetDirectPhone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String directPhone = thing.GetDirectPhone();
+```
+
+## GetEmail()
+
+First email on contact person.
+
+```crmscript
+String GetEmail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String email = thing.GetEmail();
+```
+
+## GetEmailName()
+
+Email description
+
+```crmscript
+String GetEmailName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String emailName = thing.GetEmailName();
+```
+
+## GetFaxPhone()
+
+Returns the fax phone that belong to the contact person.
+
+```crmscript
+String GetFaxPhone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String faxPhone = thing.GetFaxPhone();
+```
+
+## GetFirstname()
+
+First name
+
+```crmscript
+String GetFirstname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String firstname = thing.GetFirstname();
+```
+
+## GetFormalName()
+
+Gets formal name for a person, as used in labels. (Full name + person title + academic title)
+
+```crmscript
+String GetFormalName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String formalName = thing.GetFormalName();
+```
+
+## GetFullName()
+
+Gets the persons full name (internal name used in clients for employees).
+
+```crmscript
+String GetFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String fullName = thing.GetFullName();
+```
+
+## GetKanafname()
+
+Kana first name, used in Japanese versions only
+
+```crmscript
+String GetKanafname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String kanafname = thing.GetKanafname();
+```
+
+## GetKanalname()
+
+Kana last name, used in Japanese versions only
+
+```crmscript
+String GetKanalname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String kanalname = thing.GetKanalname();
+```
+
+## GetLastname()
+
+Last name
+
+```crmscript
+String GetLastname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String lastname = thing.GetLastname();
+```
+
+## GetMiddleName()
+
+Middle name or 'van' etc.
+
+```crmscript
+String GetMiddleName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String middleName = thing.GetMiddleName();
+```
+
+## GetMobilePhone()
+
+Returns the mobile phone that belong to the contact person.
+
+```crmscript
+String GetMobilePhone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String mobilePhone = thing.GetMobilePhone();
+```
+
+## GetMrmrs()
+
+```crmscript
+String GetMrmrs()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String mrmrs = thing.GetMrmrs();
+```
+
+## GetPersonId()
+
+Primary key
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetPosition()
+
+The position. This is a predefined SuperOffice value, different from Title
+
+```crmscript
+String GetPosition()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String position = thing.GetPosition();
+```
+
+## GetPost1()
+
+Postal address, used in Japanese versions only
+
+```crmscript
+String GetPost1()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String post1 = thing.GetPost1();
+```
+
+## GetPost2()
+
+Postal address, used in Japanese versions only
+
+```crmscript
+String GetPost2()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String post2 = thing.GetPost2();
+```
+
+## GetPost3()
+
+Postal address, used in Japanese versions only
+
+```crmscript
+String GetPost3()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String post3 = thing.GetPost3();
+```
+
+## GetRank()
+
+Display sort sequence for default sort order
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRetired()
+
+1 = the user is retired and should have no rights, not appear in lists, etc.
+
+```crmscript
+Integer GetRetired()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer retired = thing.GetRetired();
+```
+
+## GetSupportAssociateId()
+
+Our support contact for this person
+
+```crmscript
+Integer GetSupportAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer supportAssociateId = thing.GetSupportAssociateId();
+```
+
+## GetSupportLanguageId()
+
+Support priority ID
+
+```crmscript
+Integer GetSupportLanguageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer supportLanguageId = thing.GetSupportLanguageId();
+```
+
+## GetTicketPriorityId()
+
+Ticket priority ID
+
+```crmscript
+Integer GetTicketPriorityId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer ticketPriorityId = thing.GetTicketPriorityId();
+```
+
+## GetTitle()
+
+Title
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String title = thing.GetTitle();
+```
+
+## GetUsePersonAddress()
+
+If 1, use person's address for mailing instead of company address
+
+```crmscript
+Bool GetUsePersonAddress()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Bool usePersonAddress = thing.GetUsePersonAddress();
+```
+
+## SetActiveErpLinks(Integer)
+
+How many active ERP links are there for this person?
+
+```crmscript
+Void SetActiveErpLinks(Integer activeErpLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer activeErpLinks;
+thing.SetActiveErpLinks(activeErpLinks);
+```
+
+## SetActiveInterests(Integer)
+
+Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true
+
+```crmscript
+Void SetActiveInterests(Integer activeInterests)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer activeInterests;
+thing.SetActiveInterests(activeInterests);
+```
+
+## SetAssociateId(Integer)
+
+ID of the item's owner (Associate id)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetAssociateName(String)
+
+Name of the person's owner
+
+```crmscript
+Void SetAssociateName(String associateName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String associateName;
+thing.SetAssociateName(associateName);
+```
+
+## SetCategoryName(String)
+
+The category list item name
+
+```crmscript
+Void SetCategoryName(String categoryName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String categoryName;
+thing.SetCategoryName(categoryName);
+```
+
+## SetContactCountryId(Integer)
+
+The persons contact country ID
+
+```crmscript
+Void SetContactCountryId(Integer contactCountryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer contactCountryId;
+thing.SetContactCountryId(contactCountryId);
+```
+
+## SetContactDepartment(String)
+
+The persons contact department
+
+```crmscript
+Void SetContactDepartment(String contactDepartment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactDepartment;
+thing.SetContactDepartment(contactDepartment);
+```
+
+## SetContactFax(String)
+
+Actual phone number as entered by the user
+
+```crmscript
+Void SetContactFax(String contactFax)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactFax;
+thing.SetContactFax(contactFax);
+```
+
+## SetContactFullName(String)
+
+Company full name + department
+
+```crmscript
+Void SetContactFullName(String contactFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactFullName;
+thing.SetContactFullName(contactFullName);
+```
+
+## SetContactId(Integer)
+
+Owning contact ID
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetContactName(String)
+
+The persons company name
+
+```crmscript
+Void SetContactName(String contactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactName;
+thing.SetContactName(contactName);
+```
+
+## SetContactOrgNr(String)
+
+The persons contact organization number
+
+```crmscript
+Void SetContactOrgNr(String contactOrgNr)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactOrgNr;
+thing.SetContactOrgNr(contactOrgNr);
+```
+
+## SetContactPhone(String)
+
+Returns the direct phone that belong to the persons contact.
+
+```crmscript
+Void SetContactPhone(String contactPhone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String contactPhone;
+thing.SetContactPhone(contactPhone);
+```
+
+## SetCountryId(Integer)
+
+Country
+
+```crmscript
+Void SetCountryId(Integer countryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer countryId;
+thing.SetCountryId(countryId);
+```
+
+## SetDescription(String)
+
+Info text/description on person.
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDirectPhone(String)
+
+Returns the direct phone that belong to the contact person.
+
+```crmscript
+Void SetDirectPhone(String directPhone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String directPhone;
+thing.SetDirectPhone(directPhone);
+```
+
+## SetEmail(String)
+
+First email on contact person.
+
+```crmscript
+Void SetEmail(String email)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String email;
+thing.SetEmail(email);
+```
+
+## SetEmailName(String)
+
+Email description
+
+```crmscript
+Void SetEmailName(String emailName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String emailName;
+thing.SetEmailName(emailName);
+```
+
+## SetFaxPhone(String)
+
+Returns the fax phone that belong to the contact person.
+
+```crmscript
+Void SetFaxPhone(String faxPhone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String faxPhone;
+thing.SetFaxPhone(faxPhone);
+```
+
+## SetFirstname(String)
+
+First name
+
+```crmscript
+Void SetFirstname(String firstname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String firstname;
+thing.SetFirstname(firstname);
+```
+
+## SetFormalName(String)
+
+Gets formal name for a person, as used in labels. (Full name + person title + academic title)
+
+```crmscript
+Void SetFormalName(String formalName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String formalName;
+thing.SetFormalName(formalName);
+```
+
+## SetFullName(String)
+
+Gets the persons full name (internal name used in clients for employees).
+
+```crmscript
+Void SetFullName(String fullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String fullName;
+thing.SetFullName(fullName);
+```
+
+## SetKanafname(String)
+
+Kana first name, used in Japanese versions only
+
+```crmscript
+Void SetKanafname(String kanafname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String kanafname;
+thing.SetKanafname(kanafname);
+```
+
+## SetKanalname(String)
+
+Kana last name, used in Japanese versions only
+
+```crmscript
+Void SetKanalname(String kanalname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String kanalname;
+thing.SetKanalname(kanalname);
+```
+
+## SetLastname(String)
+
+Last name
+
+```crmscript
+Void SetLastname(String lastname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String lastname;
+thing.SetLastname(lastname);
+```
+
+## SetMiddleName(String)
+
+Middle name or 'van' etc.
+
+```crmscript
+Void SetMiddleName(String middleName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String middleName;
+thing.SetMiddleName(middleName);
+```
+
+## SetMobilePhone(String)
+
+Returns the mobile phone that belong to the contact person.
+
+```crmscript
+Void SetMobilePhone(String mobilePhone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String mobilePhone;
+thing.SetMobilePhone(mobilePhone);
+```
+
+## SetMrmrs(String)
+
+```crmscript
+Void SetMrmrs(String mrmrs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String mrmrs;
+thing.SetMrmrs(mrmrs);
+```
+
+## SetPersonId(Integer)
+
+Primary key
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetPosition(String)
+
+The position. This is a predefined SuperOffice value, different from Title
+
+```crmscript
+Void SetPosition(String position)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String position;
+thing.SetPosition(position);
+```
+
+## SetPost1(String)
+
+Postal address, used in Japanese versions only
+
+```crmscript
+Void SetPost1(String post1)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String post1;
+thing.SetPost1(post1);
+```
+
+## SetPost2(String)
+
+Postal address, used in Japanese versions only
+
+```crmscript
+Void SetPost2(String post2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String post2;
+thing.SetPost2(post2);
+```
+
+## SetPost3(String)
+
+Postal address, used in Japanese versions only
+
+```crmscript
+Void SetPost3(String post3)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String post3;
+thing.SetPost3(post3);
+```
+
+## SetRank(Integer)
+
+Display sort sequence for default sort order
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRetired(Integer)
+
+1 = the user is retired and should have no rights, not appear in lists, etc.
+
+```crmscript
+Void SetRetired(Integer retired)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer retired;
+thing.SetRetired(retired);
+```
+
+## SetSupportAssociateId(Integer)
+
+Our support contact for this person
+
+```crmscript
+Void SetSupportAssociateId(Integer supportAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer supportAssociateId;
+thing.SetSupportAssociateId(supportAssociateId);
+```
+
+## SetSupportLanguageId(Integer)
+
+Support priority ID
+
+```crmscript
+Void SetSupportLanguageId(Integer supportLanguageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer supportLanguageId;
+thing.SetSupportLanguageId(supportLanguageId);
+```
+
+## SetTicketPriorityId(Integer)
+
+Ticket priority ID
+
+```crmscript
+Void SetTicketPriorityId(Integer ticketPriorityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Integer ticketPriorityId;
+thing.SetTicketPriorityId(ticketPriorityId);
+```
+
+## SetTitle(String)
+
+Title
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+String title;
+thing.SetTitle(title);
+```
+
+## SetUsePersonAddress(Bool)
+
+If 1, use person's address for mailing instead of company address
+
+```crmscript
+Void SetUsePersonAddress(Bool usePersonAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPerson thing;
+Bool usePersonAddress;
+thing.SetUsePersonAddress(usePersonAddress);
+```

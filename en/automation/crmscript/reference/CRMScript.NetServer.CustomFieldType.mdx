@@ -1,0 +1,42 @@
+﻿---
+uid: crmscript.netserver.customfieldtype
+title: Enum CustomFieldType
+description: "Custom Field type: 1 = Number, 2 = Short text, 3 = Long text, 4 = Date, 5 = Unlimited date, 6 = Checkbox, 7 = Drop-down listbox, 8 = Decimal, 9 = DateTime, 10 = Time, 11 = TimeSpan, 12 = Relation, 13 = Attachment"
+keywords: CRMScript, CustomFieldType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum CustomFieldType
+
+Custom Field type: 1 = Number, 2 = Short text, 3 = Long text, 4 = Date, 5 = Unlimited date, 6 = Checkbox, 7 = Drop-down listbox, 8 = Decimal, 9 = DateTime, 10 = Time, 11 = TimeSpan, 12 = Relation, 13 = Attachment
+
+## Syntax
+
+```crmscript
+CustomFieldType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown/Undefined field type: 0 |
+| Integer | Number (32-bit integer): '[I:123]' |
+| ShortText | Short text, up to 255 characters: 'text value' |
+| LongText | Long text: 'long text value' |
+| Date | Date: '[D:06/19/2019]' |
+| Blob | Binary blob, encoded as Base64 string. |
+| Checkbox | Boolean, stored as an integer, 1 = checked/true, 0 = unchecked/false: '[I:1]' |
+| MdoList | MDO List item reference, stored as an integer ID: '[I:123]' |
+| Decimal | Decimal / floating point, stored as a double: '[F:3.14159]' |
+| DateTime | Date + Time:  '[DT:06/19/2019 14:35:56.00000]' |
+| Time | Time only - ignore the date part: '[T:06/19/2019 14:35:56.00000]' |
+| TimeSpan | Timespan in some units (hours, minutes or seconds): '[I:1234]' |
+| RelationTo | Relation to another table. Stored as an int (primary key of record in other table): '[I:1234]' |
+| Attachment | File Attachment: int record id in attachment table: '[I:1234]' |
+| DynamicLink | Dynamic Link: contains link redirect value: 'https://example.com/scripts/ticket.fcgi?action=redirectLink&extraFieldId=5&table=y_equipment&id=2' |
+| ListText | Text with list items to choose between: 'text value' |

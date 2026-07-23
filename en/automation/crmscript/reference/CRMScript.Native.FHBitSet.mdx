@@ -1,0 +1,113 @@
+﻿---
+uid: crmscript.native.fhbitset
+title: FHBitSet
+description: "Used to represent and manipulate a 32 bit bitset."
+keywords: CRMScript, FHBitSet, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# FHBitSet
+
+Used to represent and manipulate a 32 bit bitset.
+
+## Constructors
+
+### FHBitSet()
+
+```crmscript
+FHBitSet
+```
+
+Initializes a new instance of the FHBitSet class.
+
+## Methods
+
+## getBitNo(Integer)
+
+Checks if a specified bit is set.
+
+```crmscript
+Bool getBitNo(Integer number)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if a specified bit is set; otherwise, false.
+
+## set(Integer)
+
+Initializes the bitset from an Integer.
+
+```crmscript
+Void set(Integer value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+FHBitSet fh;
+fh.set(44);
+print(fh.toLsbString());
+```
+
+## set(String)
+
+Initializes the bitset from a String.
+
+```crmscript
+Void set(String rep)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setBitNo(Integer,Bool)
+
+Sets a specific bit.
+
+```crmscript
+Void setBitNo(Integer number, Bool val)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+FHBitSet fh;
+Bool b = true;
+fh.set(0);
+fh.setBitNo(15, b);
+print(fh.toLsbString());
+```
+
+## toInteger()
+
+Returns the bitset as an integer.
+
+```crmscript
+Integer toInteger()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The Integer representation of the bitset.
+
+## toLsbString()
+
+Returns an LSB (Least Significant Byte first) string representation of the bitset.
+
+```crmscript
+String toLsbString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The LSB string representation of the bitset.
+
+**Example:**
+
+```crmscript
+FHBitSet fh;
+fh.set(44);
+print(fh.toLsbString());
+```

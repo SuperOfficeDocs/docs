@@ -1,0 +1,306 @@
+﻿---
+uid: crmscript.netserver.nspocketstartupdata
+title: NSPocketStartupData
+description: "The Pocket Service. The service implements pocket specific stuff, like consolidated post-login stuff."
+keywords: CRMScript, NSPocketStartupData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPocketStartupData
+
+The Pocket Service. The service implements pocket specific stuff, like consolidated post-login stuff.
+
+## Constructors
+
+### NSPocketStartupData()
+
+```crmscript
+NSPocketStartupData
+```
+
+Initializes a new instance of the NSPocketStartupData class.
+
+## Methods
+
+## GetBaseLocaleTimeZoneData()
+
+```crmscript
+NSTimeZoneData GetBaseLocaleTimeZoneData()
+```
+
+**Returns:** [CRMScript.NetServer.NSTimeZoneData](CRMScript.NetServer.NSTimeZoneData)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSTimeZoneData baseLocaleTimeZoneData = thing.GetBaseLocaleTimeZoneData();
+```
+
+## GetCustomData()
+
+```crmscript
+String GetCustomData()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Custom data for Pocket, in JSON format.
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+String customData = thing.GetCustomData();
+```
+
+## GetIsPushNotificationEnabled()
+
+```crmscript
+Bool GetIsPushNotificationEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is push notification configured and enabled in Netserver.
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Bool isPushNotificationEnabled = thing.GetIsPushNotificationEnabled();
+```
+
+## GetNotificationsCount()
+
+```crmscript
+Integer GetNotificationsCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of new invitations.
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Integer notificationsCount = thing.GetNotificationsCount();
+```
+
+## GetOverdueSalesCount()
+
+```crmscript
+Integer GetOverdueSalesCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of overdue sales for current user.
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Integer overdueSalesCount = thing.GetOverdueSalesCount();
+```
+
+## GetPhoneLocaleTimeZoneData()
+
+```crmscript
+NSTimeZoneData GetPhoneLocaleTimeZoneData()
+```
+
+**Returns:** [CRMScript.NetServer.NSTimeZoneData](CRMScript.NetServer.NSTimeZoneData)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSTimeZoneData phoneLocaleTimeZoneData = thing.GetPhoneLocaleTimeZoneData();
+```
+
+## GetPocketPreferences()
+
+```crmscript
+NSPreference[] GetPocketPreferences()
+```
+
+**Returns:** [CRMScript.NetServer.NSPreference](CRMScript.NetServer.NSPreference)[] - All Pocket specific preferences, including WebPanels defined by the user in Pocket.
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSPreference[] pocketPreferences = thing.GetPocketPreferences();
+```
+
+## GetSystemWebPanels()
+
+```crmscript
+NSWebPanelEntity[] GetSystemWebPanels()
+```
+
+**Returns:** [CRMScript.NetServer.NSWebPanelEntity](CRMScript.NetServer.NSWebPanelEntity)[] - Web panels defined in Admin client, set to be shown in Pocket client.
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSWebPanelEntity[] systemWebPanels = thing.GetSystemWebPanels();
+```
+
+## GetTableRights()
+
+```crmscript
+Integer[] GetTableRights()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - List of table rights for logged in user, in the same order as the Tables array parameter. See &lt;xref href=\"CRMScript.NetServer.ETableRight\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Integer[] tableRights = thing.GetTableRights();
+```
+
+## SetBaseLocaleTimeZoneData(NSTimeZoneData)
+
+```crmscript
+Void SetBaseLocaleTimeZoneData(NSTimeZoneData baseLocaleTimeZoneData)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSTimeZoneData baseLocaleTimeZoneData;
+thing.SetBaseLocaleTimeZoneData(baseLocaleTimeZoneData);
+```
+
+## SetCustomData(String)
+
+```crmscript
+Void SetCustomData(String customData)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+String customData;
+thing.SetCustomData(customData);
+```
+
+## SetIsPushNotificationEnabled(Bool)
+
+```crmscript
+Void SetIsPushNotificationEnabled(Bool isPushNotificationEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Bool isPushNotificationEnabled;
+thing.SetIsPushNotificationEnabled(isPushNotificationEnabled);
+```
+
+## SetNotificationsCount(Integer)
+
+```crmscript
+Void SetNotificationsCount(Integer notificationsCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Integer notificationsCount;
+thing.SetNotificationsCount(notificationsCount);
+```
+
+## SetOverdueSalesCount(Integer)
+
+```crmscript
+Void SetOverdueSalesCount(Integer overdueSalesCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Integer overdueSalesCount;
+thing.SetOverdueSalesCount(overdueSalesCount);
+```
+
+## SetPhoneLocaleTimeZoneData(NSTimeZoneData)
+
+```crmscript
+Void SetPhoneLocaleTimeZoneData(NSTimeZoneData phoneLocaleTimeZoneData)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSTimeZoneData phoneLocaleTimeZoneData;
+thing.SetPhoneLocaleTimeZoneData(phoneLocaleTimeZoneData);
+```
+
+## SetPocketPreferences(NSPreference[])
+
+```crmscript
+Void SetPocketPreferences(NSPreference[] pocketPreferences)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSPreference[] pocketPreferences;
+thing.SetPocketPreferences(pocketPreferences);
+```
+
+## SetSystemWebPanels(NSWebPanelEntity[])
+
+```crmscript
+Void SetSystemWebPanels(NSWebPanelEntity[] systemWebPanels)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+NSWebPanelEntity[] systemWebPanels;
+thing.SetSystemWebPanels(systemWebPanels);
+```
+
+## SetTableRights(Integer[])
+
+```crmscript
+Void SetTableRights(Integer[] tableRights)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketStartupData thing;
+Integer[] tableRights;
+thing.SetTableRights(tableRights);
+```

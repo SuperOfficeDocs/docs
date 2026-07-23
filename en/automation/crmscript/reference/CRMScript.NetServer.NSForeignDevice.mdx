@@ -1,0 +1,306 @@
+﻿---
+uid: crmscript.netserver.nsforeigndevice
+title: NSForeignDevice
+description: "Saves a foreign device belonging to the ForeignDevice and application name specified."
+keywords: CRMScript, NSForeignDevice, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSForeignDevice
+
+Saves a foreign device belonging to the ForeignDevice and application name specified.
+
+## Constructors
+
+### NSForeignDevice()
+
+```crmscript
+NSForeignDevice
+```
+
+Initializes a new instance of the NSForeignDevice class.
+
+## Methods
+
+## GetAssociateFullName()
+
+```crmscript
+String GetAssociateFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The person owning the Foreign Device.
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String associateFullName = thing.GetAssociateFullName();
+```
+
+## GetCreatedBy()
+
+```crmscript
+String GetCreatedBy()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The person that created the device.
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetDeviceIdentifier()
+
+```crmscript
+String GetDeviceIdentifier()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional unique ID of device (Palm pilot device ID, etc).
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String deviceIdentifier = thing.GetDeviceIdentifier();
+```
+
+## GetForeignAppId()
+
+```crmscript
+Integer GetForeignAppId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Reference to foreign application (device type).
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+Integer foreignAppId = thing.GetForeignAppId();
+```
+
+## GetForeignDeviceId()
+
+```crmscript
+Integer GetForeignDeviceId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+Integer foreignDeviceId = thing.GetForeignDeviceId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of device.
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String name = thing.GetName();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+String GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The person that last updated this device.
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## SetAssociateFullName(String)
+
+```crmscript
+Void SetAssociateFullName(String associateFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String associateFullName;
+thing.SetAssociateFullName(associateFullName);
+```
+
+## SetCreatedBy(String)
+
+```crmscript
+Void SetCreatedBy(String createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetDeviceIdentifier(String)
+
+```crmscript
+Void SetDeviceIdentifier(String deviceIdentifier)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String deviceIdentifier;
+thing.SetDeviceIdentifier(deviceIdentifier);
+```
+
+## SetForeignAppId(Integer)
+
+```crmscript
+Void SetForeignAppId(Integer foreignAppId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+Integer foreignAppId;
+thing.SetForeignAppId(foreignAppId);
+```
+
+## SetForeignDeviceId(Integer)
+
+```crmscript
+Void SetForeignDeviceId(Integer foreignDeviceId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+Integer foreignDeviceId;
+thing.SetForeignDeviceId(foreignDeviceId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String name;
+thing.SetName(name);
+```
+
+## SetUpdatedBy(String)
+
+```crmscript
+Void SetUpdatedBy(String updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+String updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSForeignDevice thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```

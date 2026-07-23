@@ -1,0 +1,128 @@
+﻿---
+uid: crmscript.netserver.nscheckoutinfo
+title: NSCheckoutInfo
+description: "Information about the checked-out state of one document, describing whether it is checked out, and to whom."
+keywords: CRMScript, NSCheckoutInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCheckoutInfo
+
+Information about the checked-out state of one document, describing whether it is checked out, and to whom.
+
+## Constructors
+
+### NSCheckoutInfo()
+
+```crmscript
+NSCheckoutInfo
+```
+
+Initializes a new instance of the NSCheckoutInfo class.
+
+## Methods
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of associate who has currently checked out the document; 0 if it is not checked out, or is checked out by someone who is not a SuperOffice user.
+
+**Example:**
+
+```crmscript
+NSCheckoutInfo thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of person who has currently checked out the document; blank if it is not checked out.
+
+<Note>
+This property may also be blank if the AssociateId is nonzero; NetServer will retrieve the associates' name as needed.
+</Note>
+
+**Example:**
+
+```crmscript
+NSCheckoutInfo thing;
+String name = thing.GetName();
+```
+
+## GetState()
+
+```crmscript
+Integer GetState()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The checkout state. See &lt;xref href=\"CRMScript.NetServer.CheckoutState\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSCheckoutInfo thing;
+Integer state = thing.GetState();
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCheckoutInfo thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This property may also be blank if the AssociateId is nonzero; NetServer will retrieve the associates' name as needed.
+</Note>
+
+**Example:**
+
+```crmscript
+NSCheckoutInfo thing;
+String name;
+thing.SetName(name);
+```
+
+## SetState(Integer)
+
+```crmscript
+Void SetState(Integer state)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCheckoutInfo thing;
+Integer state;
+thing.SetState(state);
+```

@@ -1,0 +1,370 @@
+﻿---
+uid: crmscript.native.customer
+title: Customer
+description: "Represents a customer."
+keywords: CRMScript, Customer, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Customer
+
+Represents a customer.
+
+## Constructors
+
+### Customer()
+
+```crmscript
+Customer
+```
+
+Initializes a new instance of the Customer class.
+
+## Methods
+
+## addEmail(String,Integer,Integer)
+
+Adds an email to a customer.
+
+```crmscript
+Void addEmail(String email, Integer extTable, Integer dbiAgentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Commonly used in database integrations.
+
+Use addEmail(String,Integer,Integer,Integer) to provide the external sorting rank.
+</Note>
+
+## addEmail(String,Integer,Integer,Integer)
+
+Adds an email to a customer with the external sorting rank.
+
+```crmscript
+Void addEmail(String email, Integer externalRank, Integer extTable, Integer dbiAgentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Commonly used in database integrations.
+</Note>
+
+## checkFieldRights(String,String)
+
+Checks if the current user has access to the field.
+
+```crmscript
+Bool checkFieldRights(String field, String fieldRight)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the field; otherwise, false.
+
+**Example:**
+
+```crmscript
+Customer c;
+c.load(3);
+Bool b = c.checkFieldRights("person","read");
+print(b.toString());
+```
+
+## checkTableRights(String)
+
+Use this function to see if the current user has access to this customer.
+
+```crmscript
+Bool checkTableRights(String tableRight)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the customer; otherwise, false.
+
+**Example:**
+
+```crmscript
+Customer c;
+c.load(3);
+Bool b = c.checkTableRights("select");
+print(b.toString());
+```
+
+## findExternallyFromEmail(String)
+
+Finds an entry in the external database based on an email address.
+
+```crmscript
+Bool findExternallyFromEmail(String email)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if an entry is found; otherwise, false.
+
+<Note>
+It will search all external data sources for a Customer matching the given email address. If an entry is found, a proxy entry is created and saved.
+
+Use findExternallyFromEmail(String,Integer) to provide an extTable ID to limit the search to 1 data source.
+</Note>
+
+## findExternallyFromEmail(String,Integer)
+
+Finds an entry in the external database based on an email address and an extTable ID to limit the search to one data source.
+
+```crmscript
+Bool findExternallyFromEmail(String email, Integer extTable)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if an entry is found; otherwise, false.
+
+<Note>
+It will search all external data sources for a Customer matching the given email address. If an entry is found, a proxy entry is created and saved.
+</Note>
+
+## findExternallyFromKey(Integer,String)
+
+Finds an external entry based on its primary key and table ID.
+
+```crmscript
+Integer findExternallyFromKey(Integer table, String key)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - True if found; otherwise, false.
+
+<Note>
+Searches for and possibly creates a proxy entry for an external entry based on the external table (implicitly defines data source), and the primary key.
+
+If an proxy entry already exists, it is loaded. If not, the given external data source is searched, and if an entry is found, a local proxy entry is created and saved.
+</Note>
+
+## findFromAgentAndKey(Integer,String)
+
+Finds a customer entry in the database based on the given agent ID and external key.
+
+```crmscript
+Integer findFromAgentAndKey(Integer agent, String key)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID for the customer entry in the database; or -1 if not found.
+
+## findFromCellphone(String)
+
+Finds an entry based on the cellphone.
+
+```crmscript
+Bool findFromCellphone(String cellphone)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if found; otherwise, false.
+
+## findFromEmail(String)
+
+Find a Customer instance based on the email address.
+
+```crmscript
+findFromEmail(String email)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if found; otherwise, false.
+
+## getValue(String)
+
+Returns the value of the given field of the customer.
+
+```crmscript
+String getValue(String colName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of colName.
+
+<Note>
+Available fields:&lt;ul&gt;&lt;li&gt;id&lt;/li&gt;&lt;li&gt;name The name of the customer.&lt;/li&gt;&lt;li&gt;firstname&lt;/li&gt;&lt;li&gt;lastname&lt;/li&gt;&lt;li&gt;phone&lt;/li&gt;&lt;li&gt;cellphone&lt;/li&gt;&lt;li&gt;note&lt;/li&gt;&lt;li&gt;username: This is the username used for the external web.&lt;/li&gt;&lt;li&gt;password: This field is deprecated from v10.2.5. Empty string will be returned. Use authenticateCustomer() instead.&lt;/li&gt;&lt;li&gt;email: A list of all email addresses.&lt;/li&gt;&lt;li&gt;mainEmail: The main email address.&lt;/li&gt;&lt;li&gt;language: The name, languagecode or ID of the customers language.&lt;/li&gt;&lt;li&gt;deleted&lt;/li&gt;&lt;li&gt;company: The ID of the related company&lt;/li&gt;&lt;li&gt;display_company: The value showing the name of the related company.&lt;/li&gt;&lt;li&gt;dbi_agent_id&lt;/li&gt;&lt;li&gt;dbi_key&lt;/li&gt;&lt;li&gt;dbi_last_modified&lt;/li&gt;&lt;li&gt;dbi_last_syncronized These values are for database integration&lt;/li&gt;&lt;li&gt;priority: The id or name of the customers priority.&lt;/li&gt;&lt;li&gt;our_contact: The username, loginname or ID of the related contact (user).&lt;/li&gt;&lt;li&gt;x_*: The extrafield with the given database field name.[extra field] The extrafield with the given name (for example,  "Country").&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+Customer c;
+c.load(3);
+Bool b = c.checkTableRights("select");
+print(b.toString());
+c.setValue("name", "Test");
+print(c.getValue("name"));
+```
+
+## load(Integer)
+
+Loads the customer with the given ID.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the customer exists; otherwise, false.
+
+**Example:**
+
+```crmscript
+Customer c;
+print(c.load(3));
+```
+
+## loadFromAgentAndKey(Integer,String)
+
+Loads a customer based on agent id and external key.
+
+```crmscript
+Bool loadFromAgentAndKey(Integer agent, String key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if operation was successful; false if the customer does not exist.
+
+<Note>
+Loading might overwriting existing values.
+</Note>
+
+## login()
+
+Creates a valid login session for the current customer.
+
+```crmscript
+Void login()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Use getValue("loginSessionKey") to get the actual session key created.
+
+Use logout() to kill the session.
+</Note>
+
+## logout()
+
+Logs out a customer.
+
+```crmscript
+Void logout()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## makeSalutation()
+
+Creates a salutation greeting the customer.
+
+```crmscript
+String makeSalutation()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A salutation string.
+
+<Note>
+Can be used in the beginning of a document or email.
+</Note>
+
+**Example:**
+
+```crmscript
+Customer c;
+c.load(3);
+Bool b = c.checkTableRights("select");
+print(b.toString());
+c.setValue("name", "Test");
+c.setValue("salutation", "Welcome to SuperOffice");
+c.makeSalutation();
+```
+
+## removeEmail(String)
+
+Removes the email address from the customer.
+
+```crmscript
+Void removeEmail(String email)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+For the action to take place, you must save().
+</Note>
+
+## removeExternalEmails(Integer,Integer)
+
+Removes all external emails from a given source (extTable).
+
+```crmscript
+Void removeExternalEmails(Integer p_0, Integer p_1)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used with set() to make sure emails deleted from the external source is deleted.
+</Note>
+
+## save()
+
+Saves a customer. If ID is set, the customer will be updated. Otherwise, a new customer entry will be created.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved customer.
+
+<Note>
+Use save(String) to provide the source key of the StoreAndProcess consent.
+</Note>
+
+## save(String)
+
+Saves a customer with the source key of the StoreAndProcess consent. If ID is set, the customer will be updated. Otherwise, a new customer entry will be created.
+
+```crmscript
+Integer save(String gdprSourceKey)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved customer.
+
+## setValue(String,String)
+
+Sets the given field with the given value.
+
+```crmscript
+Void setValue(String field, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available fields:&lt;ul&gt;&lt;li&gt;name or display_name: The name of the customer.&lt;/li&gt;&lt;li&gt;firstname&lt;/li&gt;&lt;li&gt;lastname&lt;/li&gt;&lt;li&gt;title (From 7.x)&lt;/li&gt;&lt;li&gt;mrmrs (From 7.x)&lt;/li&gt;&lt;li&gt;year_of_birth (From 7.x)&lt;/li&gt;&lt;li&gt;month_of_birth (From 7.x)&lt;/li&gt;&lt;li&gt;day_of_birth (From 7.x)&lt;/li&gt;&lt;li&gt;birth_date (From 7.x)&lt;/li&gt;&lt;li&gt;person_number (From 7.x)&lt;/li&gt;&lt;li&gt;post1 (From 7.x)&lt;/li&gt;&lt;li&gt;post2 (From 7.x)&lt;/li&gt;&lt;li&gt;post3 (From 7.x)&lt;/li&gt;&lt;li&gt;salutation (From 7.x)&lt;/li&gt;&lt;li&gt;middleName (From 7.x)&lt;/li&gt;&lt;li&gt;phone&lt;/li&gt;&lt;li&gt;direct/formattedNumber: Same as phone(From 7.x)&lt;/li&gt;&lt;li&gt;phone/formattedNumber:  Same as phone (From 7.x)&lt;/li&gt;&lt;li&gt;cellphone&lt;/li&gt;&lt;li&gt;mobile/formattedNumber: Same as cellphone (From 7.x)&lt;/li&gt;&lt;li&gt;note&lt;/li&gt;&lt;li&gt;infoText: Same as note. (From 7.x)&lt;/li&gt;&lt;li&gt;username: This is the usedname used for the external web.&lt;/li&gt;&lt;li&gt;password: This is the password used for the external web.&lt;/li&gt;&lt;li&gt;email or display_email: Adds an email to the customer (does not erase existing ones).&lt;/li&gt;&lt;li&gt;company: The ID of the related company&lt;/li&gt;&lt;li&gt;display_company: The value showing the name of the related company.&lt;/li&gt;&lt;li&gt;deleted&lt;/li&gt;&lt;li&gt;dbi_agent_id&lt;/li&gt;&lt;li&gt;dbi_key&lt;/li&gt;&lt;li&gt;dbi_last_modified&lt;/li&gt;&lt;li&gt;dbi_last_syncronized: These values are for database integration&lt;/li&gt;&lt;li&gt;priority or priority_id: The id or name of the customers priority.&lt;/li&gt;&lt;li&gt;language: The name, languagecode or ID of the customers language.&lt;/li&gt;&lt;li&gt;ourContact: The username, loginname or ID of the related contact (user).&lt;/li&gt;&lt;li&gt;x_* The extrafield with the given database field name.&lt;/li&gt;&lt;li&gt;[extra field] The extrafield with the given name (for example, "Country").&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+Customer c;
+c.load(3);
+Bool b = c.checkTableRights("select");
+print(b.toString());
+c.setValue("name", "Test");
+print(c.getValue("name"));
+```
+
+## toParser(Parser)
+
+Fills a Parser object with a Customer's values, including extra fields. The fields are prefixed with "customer.".
+
+```crmscript
+Void toParser(Parser parser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Consecutive calls will overwrite (rather than append) the values in the Parser instance.
+</Note>

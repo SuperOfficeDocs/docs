@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.native.invoiceentry
+title: InvoiceEntry
+description: "Represents invoice entries and lets you create new or modify existing invoice entries"
+keywords: CRMScript, InvoiceEntry, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# InvoiceEntry
+
+Represents invoice entries and lets you create new or modify existing invoice entries
+
+## Constructors
+
+### InvoiceEntry()
+
+```crmscript
+InvoiceEntry
+```
+
+Initializes a new instance of the InvoiceEntry class.
+
+## Methods
+
+## getDiscount()
+
+Gets the discount of the current InvoiceEntry object in percent.
+
+```crmscript
+String getDiscount()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The discount in percent as a String-representation of a number with 2 decimals accuracy.
+
+<Note>
+The save-function calculates the discount in percent and money. So if the discount is set in money (setDiscountMoney(Float)), you have to save the entry before getting the corresponding value in percent.
+</Note>
+
+## getDiscountMoney()
+
+Gets the discount of the current InvoiceEntry object in money.
+
+```crmscript
+String getDiscountMoney()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The discount in money as a String-representation of a number with 2 decimals accuracy.
+
+<Note>
+The save-function calculates the discount in percent and money. So if the discount is set in percent (setDiscount()), you have to save the entry before getting the corresponding value in money with this function.
+</Note>
+
+## getPricePrUnit()
+
+Returns the price per unit of the current InvoiceEntry object.
+
+```crmscript
+String getPricePrUnit()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Price per unit as a String-representation of a number with 2 decimals accuracy.
+
+## getValue(String)
+
+Gets the value of the specified field.
+
+```crmscript
+String getValue(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+Available fields:&lt;ul&gt;&lt;li&gt;messageId the id which this invoice entry is connected to&lt;/li&gt;&lt;li&gt;description the descriptive text of this invoice entry&lt;/li&gt;&lt;li&gt;type ID of the type for this invoice entry&lt;/li&gt;&lt;li&gt;quantity the number of units invoiced&lt;/li&gt;&lt;li&gt;pricePrUnit price per unit (precision 2)&lt;/li&gt;&lt;li&gt;discount discount in percentage for this invoice entry (precision 2)&lt;/li&gt;&lt;li&gt;discountMoney discount in money (precision 2)&lt;/li&gt;&lt;li&gt;date the date for this invoice entry&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## load(Integer)
+
+Loads an existing InvoiceEntry object.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## save()
+
+Saves the existing InvoiceEntry object and returns the ID.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved InvoiceEntry object.
+
+## setDiscount(Float)
+
+Sets the discount of the current InvoiceEntry object with the given percent.
+
+```crmscript
+Void setDiscount(Float percent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If discount is set in both percent and money, the save-function use the money-version.
+</Note>
+
+## setDiscountMoney(Float)
+
+Sets the discount of the current InvoiceEntry object with the given money.
+
+```crmscript
+Void setDiscountMoney(Float money)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If both setDiscount() and this function has been used, the save-function uses the discount in money.
+</Note>
+
+## setPricePrUnit(Float)
+
+Sets the price per unit for the current InvoiceEntry object with the given price.
+
+```crmscript
+Void SetPricePrUnit(Float price)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setValue(String,String)
+
+Sets a field of the current InvoiceEntry object with the given value.
+
+```crmscript
+Void setValue(String field, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available fields:&lt;ul&gt;&lt;li&gt;messageId the ID of the message which this invoice entry is connected to&lt;/li&gt;&lt;li&gt;description a description of the invoice entry&lt;/li&gt;&lt;li&gt;type the ID of the type which this invoice entry will be saved as&lt;/li&gt;&lt;li&gt;quantity number of invoiced unites (this can be a float value)&lt;/li&gt;&lt;li&gt;pricePrUnit price pr. unit (this can be a float value of precision 2)&lt;/li&gt;&lt;li&gt;discount discount given in percentage (float value of precision 2). If discountMoney is also specified, this field will be ignored&lt;/li&gt;&lt;li&gt;discountMoney discount in money&lt;/li&gt;&lt;li&gt;date the date of the invoice entry&lt;/li&gt;&lt;/ul&gt;
+</Note>

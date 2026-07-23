@@ -1,0 +1,31 @@
+﻿---
+uid: crmscript.netserver.assignmentstatus
+title: Enum AssignmentStatus
+description: "Status if this appointment is in the process of being assigned to someone else"
+keywords: CRMScript, AssignmentStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum AssignmentStatus
+
+Status if this appointment is in the process of being assigned to someone else
+
+## Syntax
+
+```crmscript
+AssignmentStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown - used when initializing |
+| None | 1: All appointments not in the process of being assigned to someone else |
+| Assigning | 11: Appointment in the process of being assigned to someone else |
+| Seen | 12: Appointment where the party requested to take ownership of the appointment or task has observed the request, but not yet accepted or declined the request. |
+| Declined | 13: Appointment where the person requested to take ownership has declined. |

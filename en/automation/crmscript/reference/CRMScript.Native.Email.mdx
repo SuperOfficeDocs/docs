@@ -1,0 +1,63 @@
+﻿---
+uid: crmscript.native.email
+title: Email
+description: "Class for representing and sending emails."
+keywords: CRMScript, Email, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Email
+
+Class for representing and sending emails.
+
+## Constructors
+
+### Email()
+
+```crmscript
+Email
+```
+
+Initializes a new instance of the Email class.
+
+## Methods
+
+## addAttachment(Integer,Bool)
+
+Adds an attachment to the email object.
+
+```crmscript
+String addAttachment(Integer attachmentId, Bool inline)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The ID of the attachment relative to the email.
+
+## send()
+
+Sends the email.
+
+```crmscript
+Void send()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setValue(String,String)
+
+Sets the value of the given field in the email instance.
+
+For multiple recipients, call setValue multiple times, once for each recipient.
+
+```crmscript
+Void setValue(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available fields:&lt;ul&gt;&lt;li&gt;from: The from address.&lt;/li&gt;&lt;li&gt;to: The recipient.&lt;/li&gt;&lt;li&gt;cc: The carbon copy recipient.&lt;/li&gt;&lt;li&gt;bcc: The bcc recipient.&lt;/li&gt;&lt;li&gt;sms: A cellphone number to send sms to.&lt;/li&gt;&lt;li&gt;smsFrom: The from address when sending sms.&lt;/li&gt;&lt;li&gt;subject: The subject of the email.&lt;/li&gt;&lt;li&gt;body: The plain text body of the email.&lt;/li&gt;&lt;li&gt;bodyHtml: The HTML formated body of the email.&lt;/li&gt;&lt;li&gt;ticketId: The ticketId, only used with sms.&lt;/p&lt;/li&gt;&lt;li&gt;envelopeFrom&lt;/li&gt;&lt;li&gt;Sets the envelope from mail address. "From" will also be set if not already set&lt;/li&gt;&lt;/ul&gt;&gt;&lt;p&gt;From version 8.1 any other header value may also be added, for example setValue("X-Foo", "42");
+</Note>

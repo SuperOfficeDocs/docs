@@ -1,0 +1,149 @@
+﻿---
+uid: crmscript.netserver.nstaborder
+title: NSTabOrder
+description: ""
+keywords: CRMScript, NSTabOrder, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTabOrder
+
+## Constructors
+
+### NSTabOrder()
+
+```crmscript
+NSTabOrder
+```
+
+Initializes a new instance of the NSTabOrder class.
+
+## Methods
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Associate who owns this tab order.
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetOrder()
+
+```crmscript
+String GetOrder()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual tab order.
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+String order = thing.GetOrder();
+```
+
+## GetTabName()
+
+```crmscript
+String GetTabName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of tab control.
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+String tabName = thing.GetTabName();
+```
+
+## GetTabOrderId()
+
+```crmscript
+Integer GetTabOrderId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+Integer tabOrderId = thing.GetTabOrderId();
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetOrder(String)
+
+```crmscript
+Void SetOrder(String order)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+String order;
+thing.SetOrder(order);
+```
+
+## SetTabName(String)
+
+```crmscript
+Void SetTabName(String tabName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+String tabName;
+thing.SetTabName(tabName);
+```
+
+## SetTabOrderId(Integer)
+
+```crmscript
+Void SetTabOrderId(Integer tabOrderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTabOrder thing;
+Integer tabOrderId;
+thing.SetTabOrderId(tabOrderId);
+```

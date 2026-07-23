@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nslicenseowner
+title: NSLicenseOwner
+description: "Carrier object for LicenseOwner."
+keywords: CRMScript, NSLicenseOwner, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSLicenseOwner
+
+Carrier object for LicenseOwner.
+
+## Constructors
+
+### NSLicenseOwner()
+
+```crmscript
+NSLicenseOwner
+```
+
+Initializes a new instance of the NSLicenseInfo class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+String description = thing.GetDescription();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the license owner.
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+String name = thing.GetName();
+```
+
+## GetRestrictedModuleLicenses()
+
+```crmscript
+NSModuleLicenseLink[] GetRestrictedModuleLicenses()
+```
+
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[]
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+NSModuleLicenseLink[] restrictedModuleLicenses = thing.GetRestrictedModuleLicenses();
+```
+
+## GetUnrestrictedModuleLicenses()
+
+```crmscript
+NSModuleLicenseLink[] GetUnrestrictedModuleLicenses()
+```
+
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[] - The unrestricted module licenses that this license owner.
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+NSModuleLicenseLink[] unrestrictedModuleLicenses = thing.GetUnrestrictedModuleLicenses();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRestrictedModuleLicenses(NSModuleLicenseLink[])
+
+```crmscript
+Void SetRestrictedModuleLicenses(NSModuleLicenseLink[] restrictedModuleLicenses)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+NSModuleLicenseLink[] restrictedModuleLicenses;
+thing.SetRestrictedModuleLicenses(restrictedModuleLicenses);
+```
+
+## SetUnRestrictedModuleLicenses(NSModuleLicenseLink[])
+
+```crmscript
+Void SetUnrestrictedModuleLicenses(NSModuleLicenseLink[] unrestrictedModuleLicenses)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLicenseOwner thing;
+NSModuleLicenseLink[] unrestrictedModuleLicenses;
+thing.SetUnrestrictedModuleLicenses(unrestrictedModuleLicenses);
+```

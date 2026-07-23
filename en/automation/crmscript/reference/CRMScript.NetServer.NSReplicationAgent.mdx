@@ -1,0 +1,154 @@
+﻿---
+uid: crmscript.netserver.nsreplicationagent
+title: NSReplicationAgent
+description: "Replication/Travel administration."
+keywords: CRMScript, NSReplicationAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSReplicationAgent
+
+Replication/Travel administration.
+
+## Constructors
+
+### NSReplicationAgent()
+
+```crmscript
+NSReplicationAgent
+```
+
+Replication/Travel administration.
+
+## Methods
+
+## CreateDefaultSatellite()
+
+Sets default values into a new NSSatellite.
+
+```crmscript
+NSSatellite CreateDefaultSatellite()
+```
+
+**Returns:** [CRMScript.NetServer.NSSatellite](CRMScript.NetServer.NSSatellite)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSReplicationAgent agent;
+NSSatellite thing = agent.CreateDefaultSatellite();
+thing = agent.SaveSatellite(thing);
+```
+
+## GetArea(Integer)
+
+Gets an NSArea object.
+
+```crmscript
+NSArea GetArea(Integer areaId)
+```
+
+**Returns:** [CRMScript.NetServer.NSArea](CRMScript.NetServer.NSArea)
+
+**Example:**
+
+```crmscript
+NSReplicationAgent agent;
+NSArea thing = agent.GetArea(123);
+```
+
+## GetAreaList(Integer[])
+
+Gets an array of NSArea objectsGets an array of NSArea objects.
+
+```crmscript
+NSArea[] GetAreaList(Integer[] areaIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSArea](CRMScript.NetServer.NSArea)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSReplicationAgent agent;
+agent.GetAreaList(ids);
+```
+
+## GetCentralLicense()
+
+```crmscript
+NSLicenseOwner[] GetCentralLicense()
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[]
+
+## GetSatellite(Integer)
+
+Gets an NSSatellite object.
+
+```crmscript
+NSSatellite GetSatellite(Integer satelliteId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSatellite](CRMScript.NetServer.NSSatellite)
+
+**Example:**
+
+```crmscript
+NSReplicationAgent agent;
+NSSatellite thing = agent.GetSatellite(123);
+```
+
+## SaveCentralLicense(NSLicenseOwner[])
+
+```crmscript
+NSLicenseOwner[] SaveCentralLicense(NSLicenseOwner[] license)
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[]
+
+## SaveSatellite(NSSatellite)
+
+Updates the existing NSSatellite or creates a new NSSatellite if the ID parameter is 0.
+
+```crmscript
+NSSatellite SaveSatellite(NSSatellite satellite)
+```
+
+**Returns:** [CRMScript.NetServer.NSSatellite](CRMScript.NetServer.NSSatellite) - The new or updated NSSatellite.
+
+**Example:**
+
+```crmscript
+NSReplication  agent;
+NSSatellite thing = agent.CreateDefaultSatellite();
+thing = agent.SaveSatellite(thing);
+```
+
+## SetFreetextSearchEnabledOnArea(Integer,Bool)
+
+Enables free-text search on this area
+
+```crmscript
+Void SetFreetextSearchEnabledOnArea(Integer areaId, Bool freetextEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReplicationAgent agent;
+Integer areaId;
+Bool freetextEnabled;
+agent.SetFreetextSearchEnabledOnArea(areaId, freetextEnabled);
+```

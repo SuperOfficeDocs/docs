@@ -1,0 +1,312 @@
+﻿---
+uid: crmscript.netserver.nstypicalsearch
+title: NSTypicalSearch
+description: ""
+keywords: CRMScript, NSTypicalSearch, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTypicalSearch
+
+## Constructors
+
+### NSTypicalSearch()
+
+```crmscript
+NSTypicalSearch
+```
+
+Initializes a new instance of the NSTypicalSearch class.
+
+## Methods
+
+## GetEntityName()
+
+```crmscript
+String GetEntityName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the entity the typical search links to.
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String entityName = thing.GetEntityName();
+```
+
+## GetIncludePerson()
+
+```crmscript
+Integer GetIncludePerson()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - For selection-of-company, state of the Include Main Contact checkbox.
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer includePerson = thing.GetIncludePerson();
+```
+
+## GetIsEntityDefault()
+
+```crmscript
+Integer GetIsEntityDefault()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Indicates if this is the default set of criteria for an entity.
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer isEntityDefault = thing.GetIsEntityDefault();
+```
+
+## GetRestrictionGroups()
+
+```crmscript
+NSArchiveRestrictionGroup[] GetRestrictionGroups()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[] - The restrictions (can be multiple groups) that make up the TypicalSearch.
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+NSArchiveRestrictionGroup[] restrictionGroups = thing.GetRestrictionGroups();
+```
+
+## GetSource()
+
+```crmscript
+String GetSource()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of organization that sources and maintains this TypicalSearch.
+
+<Note>
+Allows for both SuperOffice and partners to maintain sets of typical searches without conflict
+</Note>
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String source = thing.GetSource();
+```
+
+## GetTitle()
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The title of the typical search (multilingual).
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String title = thing.GetTitle();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip for the typical search (multilingual).
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetTypicalSearchId()
+
+```crmscript
+Integer GetTypicalSearchId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer typicalSearchId = thing.GetTypicalSearchId();
+```
+
+## GetVersionNumber()
+
+```crmscript
+Integer GetVersionNumber()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The current downloaded version of this typical search.
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer versionNumber = thing.GetVersionNumber();
+```
+
+## SetEntityName(String)
+
+```crmscript
+Void SetEntityName(String entityName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String entityName;
+thing.SetEntityName(entityName);
+```
+
+## SetIncludePerson(Integer)
+
+```crmscript
+Void SetIncludePerson(Integer includePerson)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer includePerson;
+thing.SetIncludePerson(includePerson);
+```
+
+## SetIsEntityDefault(Integer)
+
+```crmscript
+Void SetIsEntityDefault(Integer isEntityDefault)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer isEntityDefault;
+thing.SetIsEntityDefault(isEntityDefault);
+```
+
+## SetRestrictionGroups(NSArchiveRestrictionGroup[])
+
+```crmscript
+Void SetRestrictionGroups(NSArchiveRestrictionGroup[] restrictionGroups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+NSArchiveRestrictionGroup[] restrictionGroups;
+thing.SetRestrictionGroups(restrictionGroups);
+```
+
+## SetSource(String)
+
+```crmscript
+Void SetSource(String source)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Allows for both SuperOffice and partners to maintain sets of typical searches without conflict
+</Note>
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String source;
+thing.SetSource(source);
+```
+
+## SetTitle(String)
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String title;
+thing.SetTitle(title);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetTypicalSearchId(Integer)
+
+```crmscript
+Void SetTypicalSearchId(Integer typicalSearchId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer typicalSearchId;
+thing.SetTypicalSearchId(typicalSearchId);
+```
+
+## SetVersionNumber(Integer)
+
+```crmscript
+Void SetVersionNumber(Integer versionNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTypicalSearch thing;
+Integer versionNumber;
+thing.SetVersionNumber(versionNumber);
+```

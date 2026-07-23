@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.formsubmissionstatus
+title: Enum FormSubmissionStatus
+description: "What is the status of this submission"
+keywords: CRMScript, FormSubmissionStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum FormSubmissionStatus
+
+What is the status of this submission
+
+## Syntax
+
+```crmscript
+FormSubmissionStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown status |
+| InProgress | In progress, the customer has started filling out fields but has not yet submitted |
+| EmailVerification | EmailVerification, the customer has submitted but we are waiting for click from sent email |
+| Submitted | Submitted, the form is submitted but has not yet been executed |
+| Processed | Processed, the actions of the form have been executed |
+| Failed | Failed, there was an error when processing the form |

@@ -1,0 +1,473 @@
+﻿---
+uid: crmscript.netserver.nswebhook
+title: NSWebhook
+description: "nWebhook definitions. Webhooks broadcast events from NetServer to remote servers."
+keywords: CRMScript, NSWebhook, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWebhook
+
+nWebhook definitions. Webhooks broadcast events from NetServer to remote servers.
+
+## Constructors
+
+### NSWebhook()
+
+```crmscript
+NSWebhook
+```
+
+Initializes a new instance of the NSWebhook class.
+
+## Methods
+
+## GetErrorsEmail()
+
+Email address to send error message to when this webhook state changes to too-many errors.
+
+```crmscript
+String[] GetErrorsEmail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - The email address error messages are sent to when this webhook state changes to too-many errors.
+
+<Note>
+Only one email address.
+</Note>
+
+**Example:**
+
+```crmscript
+NSWebhook webhook;
+String emailAddress = webhook.GetErrorsEmail();
+```
+
+## GetEvents()
+
+```crmscript
+String[] GetEvents()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Array of event names that trigger this webhook ['contact.created', 'sale.changed']
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String[] events = thing.GetEvents();
+```
+
+## GetHeaders()
+
+```crmscript
+Map GetHeaders()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Custom HTTP Headers to add to webhook requests.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+Map headers = thing.GetHeaders();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name to identify this webhook. Does not have to be unique.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String name = thing.GetName();
+```
+
+## GetProperties()
+
+```crmscript
+StringObjectDictionary GetProperties()
+```
+
+**Returns:** [CRMScript.Native.StringObjectDictionary](CRMScript.Native.StringObjectDictionary) - Custom values to inject into JSON body of webhook call.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+StringObjectDictionary properties = thing.GetProperties();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetRegisteredAssociate()
+
+```crmscript
+NSAssociate GetRegisteredAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that created the webhook.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+NSAssociate registeredAssociate = thing.GetRegisteredAssociate();
+```
+
+## GetSecret()
+
+```crmscript
+String GetSecret()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String secret = thing.GetSecret();
+```
+
+## GetState()
+
+```crmscript
+Integer GetState()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Webhook status, should we post events to the URL? See &lt;xref href=\"CRMScript.NetServer.WebhookState\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+Integer state = thing.GetState();
+```
+
+## GetTargetUrl()
+
+```crmscript
+String GetTargetUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Destination to POST event info to. URL for webhooks. ID for CRM scripts.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String targetUrl = thing.GetTargetUrl();
+```
+
+## GetType()
+
+```crmscript
+String GetType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String type = thing.GetType();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedAssociate()
+
+```crmscript
+NSAssociate GetUpdatedAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that last updated the webhook.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+NSAssociate updatedAssociate = thing.GetUpdatedAssociate();
+```
+
+## GetWebhookId()
+
+```crmscript
+Integer GetWebhookId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary Key. Unique id for this webhook.
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+Integer webhookId = thing.GetWebhookId();
+```
+
+## SetErrorsEmail(String)
+
+Email address to send error message to when this webhook state changes to too-many errors.
+
+```crmscript
+Void SetErrorsEmail(String emailAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Only one email address.
+</Note>
+
+**Example:**
+
+```crmscript
+NSWebhook webhook;
+webhook.SetErrorsEmail('your@email.com');
+```
+
+## SetEvents(String[])
+
+```crmscript
+Void SetEvents(String[] events)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String[] events;
+thing.SetEvents(events);
+```
+
+## SetHeaders(Map)
+
+```crmscript
+Void SetHeaders(Map headers)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+Map headers;
+thing.SetHeaders(headers);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String name;
+thing.SetName(name);
+```
+
+## SetProperties(StringObjectDictionary)
+
+```crmscript
+Void SetProperties(StringObjectDictionary properties)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+StringObjectDictionary properties;
+properties.insertInteger("foobar", 42);
+thing.SetProperties(properties);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetRegisteredAssociate(NSAssociate)
+
+```crmscript
+Void SetRegisteredAssociate(NSAssociate registeredAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+NSAssociate registeredAssociate;
+thing.SetRegisteredAssociate(registeredAssociate);
+```
+
+## SetSecret(String)
+
+```crmscript
+Void SetSecret(String secret)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String secret;
+thing.SetSecret(secret);
+```
+
+## SetState(Integer)
+
+```crmscript
+Void SetState(Integer state)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+Integer state;
+thing.SetState(state);
+```
+
+## SetTargetUrl(String)
+
+```crmscript
+Void SetTargetUrl(String targetUrl)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String targetUrl;
+thing.SetTargetUrl(targetUrl);
+```
+
+## SetType(String)
+
+```crmscript
+Void SetType(String type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+String type;
+thing.SetType(type);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedAssociate(NSAssociate)
+
+```crmscript
+Void SetUpdatedAssociate(NSAssociate updatedAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+NSAssociate updatedAssociate;
+thing.SetUpdatedAssociate(updatedAssociate);
+```
+
+## SetWebhookId(Integer)
+
+```crmscript
+Void SetWebhookId(Integer webhookId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhook thing;
+Integer webhookId;
+thing.SetWebhookId(webhookId);
+```

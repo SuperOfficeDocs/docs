@@ -1,0 +1,104 @@
+﻿---
+uid: crmscript.netserver.nsmessagingagent
+title: NSMessagingAgent
+description: "SMS and other external messaging systems."
+keywords: CRMScript, NSMessagingAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMessagingAgent
+
+SMS and other external messaging systems.
+
+## Constructors
+
+### NSMessagingAgent()
+
+```crmscript
+NSMessagingAgent
+```
+
+SMS and other external messaging systems.
+
+## Methods
+
+## CreateMessage(NSIncomingMessage)
+
+Creates a new message and insert it in the message queue. (inbox)
+
+```crmscript
+Void CreateMessage(NSIncomingMessage incomingMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetDeliveryStatus(Integer[])
+
+Gets delivery status
+
+```crmscript
+NSMessageDeliveryStatus[] GetDeliveryStatus(Integer[] messagingIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](CRMScript.NetServer.NSMessageDeliveryStatus)[]
+
+## GetPlugins()
+
+```crmscript
+NSProviderInfo[] GetPlugins()
+```
+
+**Returns:** [CRMScript.NetServer.NSProviderInfo](CRMScript.NetServer.NSProviderInfo)[]
+
+## SendMessages(String,NSOutgoingMessage[])
+
+Sends an array of messages
+
+```crmscript
+NSMessageDeliveryStatus[] SendMessages(String plugin, NSOutgoingMessage[] outgoingMessages)
+```
+
+**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](CRMScript.NetServer.NSMessageDeliveryStatus)[]
+
+**Example:**
+
+```crmscript
+NSMessagingAgent agent;
+String plugin;
+NSOutgoingMessage[] outgoingMessages;
+NSMessageDeliveryStatus[] res = agent.SendMessages(plugin, outgoingMessages);
+```
+
+## SendMessagesWithConfig(String)
+
+Sends an array of messages using given config
+
+```crmscript
+NSMessageDeliveryStatus[] SendMessagesWithConfig(String plugin, NSOutgoingMessage[] outgoingMessages, Map config)
+```
+
+**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](CRMScript.NetServer.NSMessageDeliveryStatus)[]
+
+**Example:**
+
+```crmscript
+NSMessagingAgent agent;
+String plugin;
+NSOutgoingMessage[] outgoingMessages;
+Map config;
+NSMessageDeliveryStatus[] res = agent.SendMessagesWithConfig(plugin, outgoingMessages, config);
+```
+
+## SetDeliveryStatus(String,String,Integer,String)
+
+Sets or change the delivery status on an outgoing message.
+
+```crmscript
+Void SetDeliveryStatus(String plugin, String externalMessageId, Integer status, String statusDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

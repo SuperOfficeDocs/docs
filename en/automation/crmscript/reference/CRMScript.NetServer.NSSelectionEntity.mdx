@@ -1,0 +1,1285 @@
+﻿---
+uid: crmscript.netserver.nsselectionentity
+title: NSSelectionEntity
+description: ""
+keywords: CRMScript, NSSelectionEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSelectionEntity
+
+## Constructors
+
+### NSSelectionEntity()
+
+```crmscript
+NSSelectionEntity
+```
+
+Initializes a new instance of the NSSelectionEntity class.
+
+## Methods
+
+## GetAssociate()
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Owner of the selection.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate associate = thing.GetAssociate();
+```
+
+## GetChartKey()
+
+```crmscript
+String GetChartKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - ID/key of the last-used chart tile on this selection.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String chartKey = thing.GetChartKey();
+```
+
+## GetCompanyUnique()
+
+```crmscript
+Bool GetCompanyUnique()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Filter out duplicate members based on company?
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Bool companyUnique = thing.GetCompanyUnique();
+```
+
+## GetCompleted()
+
+```crmscript
+Bool GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The Completed state.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Bool completed = thing.GetCompleted();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Who created the selection.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetGroupIdx()
+
+```crmscript
+Integer GetGroupIdx()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Original primary user group of associate.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer groupIdx = thing.GetGroupIdx();
+```
+
+## GetIncludePerson()
+
+```crmscript
+Integer GetIncludePerson()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 0 = Include first person, 1 = Include all persons, 2 = Include no persons.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer includePerson = thing.GetIncludePerson();
+```
+
+## GetLastLoaded()
+
+```crmscript
+DateTime GetLastLoaded()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date/time this selection was last loaded (selectionentity fetched).
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime lastLoaded = thing.GetLastLoaded();
+```
+
+## GetLastLoadedBy()
+
+```crmscript
+Integer GetLastLoadedBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Who last loaded this selection.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer lastLoadedBy = thing.GetLastLoadedBy();
+```
+
+## GetLastLoadedByAssociate()
+
+```crmscript
+NSAssociate GetLastLoadedByAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - NSAssociate that last looked at the selection members; only date (not time) is valid.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate lastLoadedByAssociate = thing.GetLastLoadedByAssociate();
+```
+
+## GetLastMembershipChange()
+
+```crmscript
+DateTime GetLastMembershipChange()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date/time the membership the selection last changed. Dynamic - change of criteria; Static - add/remove members; Combined - change of algorithm.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime lastMembershipChange = thing.GetLastMembershipChange();
+```
+
+## GetLastMembershipChangeBy()
+
+```crmscript
+Integer GetLastMembershipChangeBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Who last changed the membership.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer lastMembershipChangeBy = thing.GetLastMembershipChangeBy();
+```
+
+## GetLastMembershipChangeByAssociate()
+
+```crmscript
+NSAssociate GetLastMembershipChangeByAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Associate that last changed the selection membership (static members, dynamic criteria, combined parameters); only date (not time) is valid.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate lastMembershipChangeByAssociate = thing.GetLastMembershipChangeByAssociate();
+```
+
+## GetLeftSelectionId()
+
+LeftSelectionId is used in combination with RightSelectionId and CombinationType to define an union of two selections when SelectionType=Combined.
+
+```crmscript
+Integer GetLeftSelectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer leftSelectionId = thing.GetLeftSelectionId();
+```
+
+## GetMailingsProviderName()
+
+```crmscript
+String GetMailingsProviderName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the provider for the Mailings tab, if relevant; this string will contain resource references.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String mailingsProviderName = thing.GetMailingsProviderName();
+```
+
+## GetMainHeading()
+
+```crmscript
+String GetMainHeading()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - 'Static selection of Companies', or whatever else is appropriate, made by combining text resources for the type and the entity (plural form); this string will contain resource references
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String mainHeading = thing.GetMainHeading();
+```
+
+## GetMainProviderName()
+
+```crmscript
+String GetMainProviderName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the Archive Provider that will deliver the content of the archive* the actual entity rows.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String mainProviderName = thing.GetMainProviderName();
+```
+
+## GetMemberCount()
+
+```crmscript
+Integer GetMemberCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How many selection members (for progress bar calculations)* estimate, -1 (or 4294967295) means we don't know.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer memberCount = thing.GetMemberCount();
+```
+
+## GetMemberTabHeading()
+
+```crmscript
+String GetMemberTabHeading()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - 'Companies', or whatever else is appropriate* the plural form of the entity name; this string will contain resource references
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String memberTabHeading = thing.GetMemberTabHeading();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of selection, free-text indexed.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String name = thing.GetName();
+```
+
+## GetPostit()
+
+```crmscript
+String GetPostit()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String postit = thing.GetPostit();
+```
+
+## GetPostitTextId()
+
+```crmscript
+Integer GetPostitTextId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Postit text record ID.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer postitTextId = thing.GetPostitTextId();
+```
+
+## GetRightSelectionId()
+
+RightSelectionId  is used in combination with LeftSelectionId and CombinationType to define an union of two selections when SelectionType=Combined.
+
+```crmscript
+Integer GetRightSelectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer rightSelectionId = thing.GetRightSelectionId();
+```
+
+## GetSelectionCategory()
+
+```crmscript
+NSSelectionCategory GetSelectionCategory()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectionCategory](CRMScript.NetServer.NSSelectionCategory)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSSelectionCategory selectionCategory = thing.GetSelectionCategory();
+```
+
+## GetSelectionId()
+
+Primary key
+
+```crmscript
+Integer GetSelectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Selection category type (list item).
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer selectionId = thing.GetSelectionId();
+```
+
+## GetSelectionType()
+
+```crmscript
+Integer GetSelectionType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Static/Dynamic/Combined? See &lt;xref href=\"CRMScript.NetServer.SelectionType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer selectionType = thing.GetSelectionType();
+```
+
+## GetSelectionUnionType()
+
+```crmscript
+Integer GetSelectionUnionType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How to combine the two selections when SelectionType = Combined. See &lt;xref href=\"CRMScript.NetServer.SelectionUnionType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer selectionUnionType = thing.GetSelectionUnionType();
+```
+
+## GetShadowProviderName()
+
+```crmscript
+String GetShadowProviderName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name, if relevant, of the Archive Provider that will deliver the Shadow rows. contact/person rows related to the actual entity. Can be blank, indicating that there is no shadow archive.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String shadowProviderName = thing.GetShadowProviderName();
+```
+
+## GetSoundEx()
+
+```crmscript
+String GetSoundEx()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - What the name sounds like, for duplicate detection.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String soundEx = thing.GetSoundEx();
+```
+
+## GetSource()
+
+```crmscript
+Integer GetSource()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How did we get this selection? For future integration needs.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer source = thing.GetSource();
+```
+
+## GetTargetTableName()
+
+```crmscript
+String GetTargetTableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - TargetTableName contains the name of the table in lowercase. defines the type of selection members this selection contains. e.g. 'contact', or 'project' or 'sale'
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String targetTableName = thing.GetTargetTableName();
+```
+
+## GetTargetTableNumber()
+
+```crmscript
+Integer GetTargetTableNumber()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - TargetTableNumber defines the type of selection members this selection contains. e.g. the table number for 'contact', or 'project' or 'sale'
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer targetTableNumber = thing.GetTargetTableNumber();
+```
+
+## GetTextId()
+
+```crmscript
+Integer GetTextId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Description text record Id.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer textId = thing.GetTextId();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Who last modified the selection.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedCount()
+
+```crmscript
+Integer GetUpdatedCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of updates made to this record.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer updatedCount = thing.GetUpdatedCount();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetVisibility()
+
+Obsolete, but still maintained de-normalization of visiblefor
+
+```crmscript
+Integer GetVisibility()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer visibility = thing.GetVisibility();
+```
+
+## GetVisibleFor()
+
+Returns the user groups and/or users the SelectionEntity item is visible for.
+
+```crmscript
+NSVisibleFor[] GetVisibleFor()
+```
+
+**Returns:** [CRMScript.NetServer.NSVisibleFor](CRMScript.NetServer.NSVisibleFor)[]
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+```
+
+## SetAssociate(NSAssociate)
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate associate;
+thing.SetAssociate(associate);
+```
+
+## SetChartKey(String)
+
+```crmscript
+Void SetChartKey(String chartKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String chartKey;
+thing.SetChartKey(chartKey);
+```
+
+## SetCompanyUnique(Bool)
+
+```crmscript
+Void SetCompanyUnique(Bool companyUnique)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Bool companyUnique;
+thing.SetCompanyUnique(companyUnique);
+```
+
+## SetCompleted(Bool)
+
+```crmscript
+Void SetCompleted(Bool completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Bool completed;
+thing.SetCompleted(completed);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetGroupIdx(Integer)
+
+```crmscript
+Void SetGroupIdx(Integer groupIdx)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer groupIdx;
+thing.SetGroupIdx(groupIdx);
+```
+
+## SetIncludePerson(Integer)
+
+```crmscript
+Void SetIncludePerson(Integer includePerson)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer includePerson;
+thing.SetIncludePerson(includePerson);
+```
+
+## SetLastLoaded(DateTime)
+
+```crmscript
+Void SetLastLoaded(DateTime lastLoaded)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime lastLoaded;
+thing.SetLastLoaded(lastLoaded);
+```
+
+## SetLastLoadedBy(Integer)
+
+```crmscript
+Void SetLastLoadedBy(Integer lastLoadedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer lastLoadedBy;
+thing.SetLastLoadedBy(lastLoadedBy);
+```
+
+## SetLastLoadedByAssociate(NSAssociate)
+
+```crmscript
+Void SetLastLoadedByAssociate(NSAssociate lastLoadedByAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate lastLoadedByAssociate;
+thing.SetLastLoadedByAssociate(lastLoadedByAssociate);
+```
+
+## SetLastMembershipChange(DateTime)
+
+```crmscript
+Void SetLastMembershipChange(DateTime lastMembershipChange)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime lastMembershipChange;
+thing.SetLastMembershipChange(lastMembershipChange);
+```
+
+## SetLastMembershipChangeBy(Integer)
+
+```crmscript
+Void SetLastMembershipChangeBy(Integer lastMembershipChangeBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer lastMembershipChangeBy;
+thing.SetLastMembershipChangeBy(lastMembershipChangeBy);
+```
+
+## SetLastMembershipChangeByAssociate(NSAssociate)
+
+```crmscript
+Void SetLastMembershipChangeByAssociate(NSAssociate lastMembershipChangeByAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate lastMembershipChangeByAssociate;
+thing.SetLastMembershipChangeByAssociate(lastMembershipChangeByAssociate);
+```
+
+## SetLeftSelectionId(Integer)
+
+LeftSelectionId is used in combination with RightSelectionId and CombinationType to define an union of two selections when SelectionType=Combined.
+
+```crmscript
+Void SetLeftSelectionId(Integer leftSelectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer leftSelectionId;
+thing.SetLeftSelectionId(leftSelectionId);
+```
+
+## SetMailingsProviderName(String)
+
+```crmscript
+Void SetMailingsProviderName(String mailingsProviderName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String mailingsProviderName;
+thing.SetMailingsProviderName(mailingsProviderName);
+```
+
+## SetMainHeading(String)
+
+```crmscript
+Void SetMainHeading(String mainHeading)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String mainHeading;
+thing.SetMainHeading(mainHeading);
+```
+
+## SetMainProviderName(String)
+
+```crmscript
+Void SetMainProviderName(String mainProviderName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String mainProviderName;
+thing.SetMainProviderName(mainProviderName);
+```
+
+## SetMemberCount(Integer)
+
+```crmscript
+Void SetMemberCount(Integer memberCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer memberCount;
+thing.SetMemberCount(memberCount);
+```
+
+## SetMemberTabHeading(String)
+
+```crmscript
+Void SetMemberTabHeading(String memberTabHeading)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String memberTabHeading;
+thing.SetMemberTabHeading(memberTabHeading);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPostit(String)
+
+```crmscript
+Void SetPostit(String postit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String postit;
+thing.SetPostit(postit);
+```
+
+## SetPostitTextId(Integer)
+
+```crmscript
+Void SetPostitTextId(Integer postitTextId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer postitTextId;
+thing.SetPostitTextId(postitTextId);
+```
+
+## SetRightSelectionId(Integer)
+
+RightSelectionId  is used in combination with LeftSelectionId and CombinationType to define an union of two selections when SelectionType=Combined.
+
+```crmscript
+Void SetRightSelectionId(Integer rightSelectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer rightSelectionId;
+thing.SetRightSelectionId(rightSelectionId);
+```
+
+## SetSelectionCategory(NSSelectionCategory)
+
+```crmscript
+Void SetSelectionCategory(NSSelectionCategory selectionCategory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSSelectionCategory selectionCategory;
+thing.SetSelectionCategory(selectionCategory);
+```
+
+## SetSelectionId(Integer)
+
+```crmscript
+Void SetSelectionId(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer selectionId;
+thing.SetSelectionId(selectionId);
+```
+
+## SetSelectionType(Integer)
+
+```crmscript
+Void SetSelectionType(Integer selectionType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer selectionType;
+thing.SetSelectionType(selectionType);
+```
+
+## SetSelectionUnionType(Integer)
+
+```crmscript
+Void SetSelectionUnionType(Integer selectionUnionType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer selectionUnionType;
+thing.SetSelectionUnionType(selectionUnionType);
+```
+
+## SetShadowProviderName(String)
+
+```crmscript
+Void SetShadowProviderName(String shadowProviderName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String shadowProviderName;
+thing.SetShadowProviderName(shadowProviderName);
+```
+
+## SetSoundEx(String)
+
+```crmscript
+Void SetSoundEx(String soundEx)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String soundEx;
+thing.SetSoundEx(soundEx);
+```
+
+## SetSource(Integer)
+
+```crmscript
+Void SetSource(Integer source)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer source;
+thing.SetSource(source);
+```
+
+## SetTargetTableName(String)
+
+```crmscript
+Void SetTargetTableName(String targetTableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+String targetTableName;
+thing.SetTargetTableName(targetTableName);
+```
+
+## SetTargetTableNumber(Integer)
+
+```crmscript
+Void SetTargetTableNumber(Integer targetTableNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer targetTableNumber;
+thing.SetTargetTableNumber(targetTableNumber);
+```
+
+## SetTextId(Integer)
+
+```crmscript
+Void SetTextId(Integer textId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer textId;
+thing.SetTextId(textId);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedCount(Integer)
+
+```crmscript
+Void SetUpdatedCount(Integer updatedCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer updatedCount;
+thing.SetUpdatedCount(updatedCount);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetVisibility(Integer)
+
+Obsolete, but still maintained de-normalization of visiblefor
+
+```crmscript
+Void SetVisibility(Integer visibility)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+Integer visibility;
+thing.SetVisibility(visibility);
+```
+
+## SetVisibleFor(NSVisibleFor[])
+
+Sets the user-groups and/or users the SelectionEntity item is visible for.
+
+```crmscript
+Void SetVisibleFor(NSVisibleFor[] visibleFor)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSelectionEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+visibleFor[0].SetVisiblity(1);  // usergroup
+visibleFor[0].SetVisibleId(123); // usergroup id
+thing.SetVisibleFor(visibleFor);
+```

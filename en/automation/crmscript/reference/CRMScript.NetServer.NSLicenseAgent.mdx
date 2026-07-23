@@ -1,0 +1,334 @@
+﻿---
+uid: crmscript.netserver.nslicenseagent
+title: NSLicenseAgent
+description: "License query, download, activation."
+keywords: CRMScript, NSLicenseAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSLicenseAgent
+
+License query, download, activation.
+
+## Constructors
+
+### NSLicenseAgent()
+
+```crmscript
+NSLicenseAgent
+```
+
+License query, download, activation.
+
+## Methods
+
+## ActivateLicenseInfo(NSExtendedLicenseInfo)
+
+Saves a new license to the database.
+
+```crmscript
+NSLicenseResult ActivateLicenseInfo(NSExtendedLicenseInfo newLicense)
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)
+
+## AddLicenseFromFile(String)
+
+Loads and activates a new license from file/string if the new license is valid.
+
+```crmscript
+NSExtendedLicenseInfo AddLicenseFromFile(String fileContent)
+```
+
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+String fileContent;
+NSExtendedLicenseInfo res = agent.AddLicenseFromFile(fileContent);
+```
+
+## AssignThirdPartyLicenses(Integer,String,String[])
+
+Assigns third party licenses
+
+```crmscript
+NSModuleLicenseLink[] AssignThirdPartyLicenses(Integer associateId, String moduleOwner, String[] moduleLicenseNames)
+```
+
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[]
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+Integer associateId;
+String moduleOwner;
+String[] moduleLicenseNames;
+NSModuleLicenseLink[] res = agent.AssignThirdPartyLicenses(associateId, moduleOwner, moduleLicenseNames);
+```
+
+## ChangeSerialNumber(String,String)
+
+Changes the new serial number for the installation. Requests a new license from SuperLicense, checks if change is authorized.
+
+```crmscript
+NSLicenseResult ChangeSerialNumber(String newCompanyName, String newSerialNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+String newCompanyName;
+String newSerialNumber;
+NSLicenseResult res = agent.ChangeSerialNumber(newCompanyName, newSerialNumber);
+```
+
+## GetLicenseForAllOwnersFromDB()
+
+Gets all licenses, with usage, from all module owners as they are stored in the database
+
+```crmscript
+NSExtendedLicenseInfo[] GetLicenseForAllOwnersFromDB()
+```
+
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)[]
+
+## GetLicenseFromDB(String)
+
+Gets license, with usage, as it is stored in the database for one particular module owner.
+
+```crmscript
+NSExtendedLicenseInfo GetLicenseFromDB(String ownerName)
+```
+
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+String ownerName;
+NSExtendedLicenseInfo res = agent.GetLicenseFromDB(ownerName);
+```
+
+## GetLicenseFromFile(String)
+
+Loads a new license from file
+
+```crmscript
+NSExtendedLicenseInfo GetLicenseFromFile(String fileContent)
+```
+
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+
+## GetLicenseFromLicenseServer(String)
+
+```crmscript
+NSExtendedLicenseInfo GetLicenseFromLicenseServer(String ownerName)
+```
+
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+
+## GetLicenseStatusFromLicenseServer(String)
+
+Gets license information from the license server for a particular module owner.
+
+```crmscript
+NSCheckLicenseStatusResult GetLicenseStatusFromLicenseServer(String ownerName)
+```
+
+**Returns:** [CRMScript.NetServer.NSCheckLicenseStatusResult](CRMScript.NetServer.NSCheckLicenseStatusResult)
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+String ownerName;
+NSCheckLicenseStatusResult res = agent.GetLicenseStatusFromLicenseServer(ownerName);
+```
+
+## GetModuleLicenseFromDB(String,String)
+
+Gets license information for one particular license module.
+
+```crmscript
+NSModuleLicense GetModuleLicenseFromDB(String ownerName, String moduleName)
+```
+
+**Returns:** [CRMScript.NetServer.NSModuleLicense](CRMScript.NetServer.NSModuleLicense)
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+String ownerName;
+String moduleName;
+NSModuleLicense res = agent.GetModuleLicenseFromDB(ownerName, moduleName);
+```
+
+## GetModuleLicenseHistoryFromLicenseServer(NSExtendedLicenseInfo,NSExtendedModuleLicense)
+
+Gets details about a license from the license server.
+
+```crmscript
+String GetModuleLicenseHistoryFromLicenseServer(NSExtendedLicenseInfo licenseInfo, NSExtendedModuleLicense moduleLicense)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+NSExtendedLicenseInfo licenseInfo;
+NSExtendedModuleLicense moduleLicense;
+String res = agent.GetModuleLicenseHistoryFromLicenseServer(licenseInfo, moduleLicense);
+```
+
+## GetSatelliteLicenses(Integer)
+
+Obtains information about satellite module licenses
+
+```crmscript
+NSLicenseOwner[] GetSatelliteLicenses(Integer satelliteId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[]
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+Integer satelliteId;
+NSLicenseOwner[] res = agent.GetSatelliteLicenses(satelliteId);
+```
+
+## GetShopUrl(String)
+
+Gets the shop URL for the specified module owner.
+
+```crmscript
+String GetShopUrl(String ownerName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+This can be used to redirect user to the web shop.
+</Note>
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+String ownerName;
+String res = agent.GetShopUrl(ownerName);
+```
+
+## GetThirdPartyLicenseAssignments(Integer,String)
+
+Gets license assignments for an associate for licenses belonging to an other module owner than SuperOffice
+
+```crmscript
+NSModuleLicenseLink[] GetThirdPartyLicenseAssignments(Integer associateId, String moduleOwner)
+```
+
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[]
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+Integer associateId;
+String moduleOwner;
+NSModuleLicenseLink[] res = agent.GetThirdPartyLicenseAssignments(associateId, moduleOwner);
+```
+
+## GetUserLicenses(Integer)
+
+Obtains information about associate module licenses
+
+```crmscript
+NSLicenseOwner[] GetUserLicenses(Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[]
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+Integer associateId;
+NSLicenseOwner[] res = agent.GetUserLicenses(associateId);
+```
+
+## GetUserLicensesMDOList()
+
+Gets all licenses in an NSMDOListItem structure.
+
+```crmscript
+NSSelectableMDOListItem[] GetUserLicensesMDOList()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+NSSelectableMDOListItem[] res = agent.GetUserLicensesMDOList();
+```
+
+## RemoveLicenseFromDB(String)
+
+Removes the license from a particular module owner from the database.
+
+```crmscript
+NSLicenseResult RemoveLicenseFromDB(String moduleOwner)
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)
+
+<Note>
+It is not permitted to remove licenses from SuperOffice
+</Note>
+
+## UnassignThirdPartyLicenses(Integer,String,String[])
+
+Unassigns (removes) third-party licenses
+
+```crmscript
+NSModuleLicenseLink[] UnassignThirdPartyLicenses(Integer associateId, String moduleOwner, String[] moduleLicenseNames)
+```
+
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[]
+
+**Example:**
+
+```crmscript
+NSLicenseAgent agent;
+Integer associateId;
+String moduleOwner;
+String[] moduleLicenseNames;
+NSModuleLicenseLink[] res = agent.UnassignThirdPartyLicenses(associateId, moduleOwner, moduleLicenseNames);
+```
+
+## ValidateLicenseInfo(NSExtendedLicenseInfo)
+
+Validates that a license is consistent.
+
+```crmscript
+NSLicenseResult ValidateLicenseInfo(NSExtendedLicenseInfo licenseInfo)
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)

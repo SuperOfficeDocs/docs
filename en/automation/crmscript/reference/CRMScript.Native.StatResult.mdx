@@ -1,0 +1,135 @@
+﻿---
+uid: crmscript.native.statresult
+title: StatResult
+description: "Used to access the results of a StatLib execution."
+keywords: CRMScript, StatResult, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# StatResult
+
+Used to access the results of a StatLib execution.
+
+## Constructors
+
+### StatResult()
+
+```crmscript
+StatResult
+```
+
+Initializes a new instance of the StatResult class.
+
+## Methods
+
+## atGroupBegin(Integer)
+
+Checks if the current row is the first row for a given group.
+
+```crmscript
+Bool atGroupBegin(Integer column)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if we're at the first row for this group; otherwise, false.
+
+## atGroupEnd(Integer)
+
+Checks if the current row is the last row for a given group.
+
+```crmscript
+Bool atGroupEnd(Integer column)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if we're at the last row for this group; otherwise, false.
+
+## dumpParser()
+
+Returns a string with everything in the StatResult parser listed.
+
+```crmscript
+String dumpParser()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string with everything in the StatResult parser listed.
+
+<Note>
+Mainly used for debugging and development. It will show you every variable in the StatResult parser.
+</Note>
+
+## eof()
+
+Checks if the internal iterator is past the last element.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the internal iterator is past the last element; otherwise, false.
+
+## getField(Integer)
+
+Returns the value for the given field at the current row.
+
+```crmscript
+String getField(Integer column)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given column at the current row.
+
+<Note>
+You can specify the field either by its name or its column. Normally used to retrieve values from aggregate functions.
+</Note>
+
+## getField(String)
+
+Returns the value for the given field at the current row.
+
+```crmscript
+String getField(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given field at the current row.
+
+<Note>
+You can specify the field either by its name or its column. Normally used to retrieve values from aggregate functions.
+</Note>
+
+## next()
+
+Moves the internal iterator to next element.
+
+```crmscript
+Bool next()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Eof() after move.
+
+## rewind()
+
+Rewinds the internal iterator.
+
+```crmscript
+Void rewind()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## saveAsResult(Integer,Integer,Integer)
+
+Returns a reference to a result set.
+
+```crmscript
+Integer saveAsResult(Integer column, Integer ownerId, Integer maxRows)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A reference to the result set.
+
+**Example:**
+
+```crmscript
+setVariable("url", getProgram(1) + "&action=listTickets&special=11&resultKey=" + resKey .toString());
+```

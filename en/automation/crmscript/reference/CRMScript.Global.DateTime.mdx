@@ -1,0 +1,587 @@
+﻿---
+uid: crmscript.global.datetime
+title: DateTime
+description: "DateTime is a complex data type representing a timestamp with both date and time elements on ISO format YYYY-MM-DD. The default value is now."
+keywords: CRMScript, DateTime, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# DateTime
+
+DateTime is a complex data type representing a timestamp with both date and time elements on ISO format YYYY-MM-DD. The default value is now.
+
+Before a Date is initialized, it has no value. This is commonly written as NULL, NUL, or NIL in other programming languages. CRMScript automatically initializes Date objects when declared to the current date. Thus this situation is uncommon.
+
+## Constructors
+
+### DateTime()
+
+```crmscript
+DateTime DateTime()
+```
+
+Default constructor.
+
+### DateTime(DateTime)
+
+```crmscript
+DateTime DateTime(DateTime value)
+```
+
+Pass a value to copy into a new object.
+
+### DateTime(Integer, Integer, Integer, Integer, Integer, Integer)
+
+```crmscript
+DateTime DateTime(Integer year, Integer month, Integer day, Integer hour, Integer min, Integer sec)
+```
+
+Specify all elements of a DateTime individually. It accepts 6 integer values, representing year, month (1-12), day-of-month (1-31), hour (0-23), minute (0-59), and second (0-59). The constructor automatically calculates the weekday.
+
+### DateTime(String)
+
+```crmscript
+DateTime DateTime(String value)
+```
+
+Pass a String containing date and time. The constructor will parse the text and create a DateTime object. Formats:
+
+ YYYY-MM-DD HH:MM:SS;
+
+ YYYY-MM-DD HH:MM - automatically sets sec = 0;
+
+ YYYYMMDDHHMMSS - mysql.timestamp;
+
+ YYYY-MM-DD - automatically sets the time to 23:59:59 or 0:0:0 depending on endOfDay setting;
+
+ an empty string or "0" - sets stamp to Jan 1. 1970 00:00:00 and isNull();
+
+ YYYY-MM-DD HH:MM:SS:XXX
+
+## Methods
+
+## toString()
+
+Converts a DateTime value to its string representation.
+
+One of the most frequently used methods, typically when you are going to output something.
+
+```crmscript
+String toString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+If you do not want the name of the months and the days, use the toString-function with only one parameter, toString(String format)
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+printLine(dt.toString());
+```
+
+## toString(String)
+
+A variant of toString() that takes a string with one or more formatting codes. You can also include white-space and punctuation marks.
+
+```crmscript
+String toString(String format)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Available codes: ISOW1, ISOW2, ISOWY2, ISOWY4, YY2, YY4, MM1, MM2, DD1, DD2, WEEKDAY, MONTH, WDAY, H24, HH24, H12, HH12, MI2, SS2. For details, see the CRMScript docs.
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+printLine(dt.toString("HH12:MI2 AMPM"));
+```
+
+## toString(String, String, String)
+
+A variant of toString() that takes a string with one or more formatting codes. You can also include white-space and punctuation marks.
+
+```crmscript
+String toString(String format, String months, String weekDays)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+If you don't include codes MONTH, WDAY, or both - use toString(String format) instead. If you include only 1 of them, send an empty string for the one you don't use.
+
+Available codes: ISOW1, ISOW2, ISOWY2, ISOWY4, YY2, YY4, MM1, MM2, DD1, DD2, WEEKDAY, MONTH, WDAY, H24, HH24, H12, HH12, MI2, SS2. For details, see the CRMScript docs.
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+String days="søndag,mandag,tirsdag,onsdag,torsdag,fredag,lørdag";
+printLine(dt.toString("WDAY uke ISOW1","",days));
+```
+
+## toString(Integer, Integer, Bool)
+
+A variant of toString() that takes codes for mode and language as Integers and a boolean indicator for 12- or 24-hour clock.
+
+```crmscript
+String toString(Integer mode, Integer language, Bool mode)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+&lt;h3&gt;Modes:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Code&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Format&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;modeNewDate&lt;/td&gt;&lt;td&gt;YYYY-MM-DD&lt;/td&gt;&lt;td&gt;2020-05-29&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;modeNew2Min&lt;/td&gt;&lt;td&gt;YYYY-MM-DD hh:mm&lt;/td&gt;&lt;td&gt;2020-05-29 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;modeNew2Sec&lt;/td&gt;&lt;td&gt;YYYY-MM-DD hh:mm:ss&lt;/td&gt;&lt;td&gt;2020-05-29 13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;modeTextDate&lt;/td&gt;&lt;td&gt;DD. MMM YYYY (no)&lt;/td&gt;&lt;td&gt;May 29. 2020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MMM DD. YYYY (en)&lt;/td&gt;&lt;td&gt;29. Mai 2020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;modeText2Min&lt;/td&gt;&lt;td&gt;DD. MMM YYYY 11:23&lt;/td&gt;&lt;td&gt;May 29. 2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;modeText2Sec&lt;/td&gt;&lt;td&gt;DD. MMM YYYY 11:23:15&lt;/td&gt;&lt;td&gt;May 29. 2020 13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;modeText2MinLong&lt;/td&gt;&lt;td&gt;DD. MMM YYYY hh:mm (no)&lt;/td&gt;&lt;td&gt;29. Mai 2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MMM. DD. YYYY hh:mm (en)&lt;/td&gt;&lt;td&gt;May 29. 2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;modeShort2Min&lt;/td&gt;&lt;td&gt;MM/DD/YYYY hh:mm (no)&lt;/td&gt;&lt;td&gt;29/05/2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;DD/MM/YYYY hh:mm (en)&lt;/td&gt;&lt;td&gt;05/29/2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;modeNumeric&lt;/td&gt;&lt;td&gt;YYYYMMDDhhmmss&lt;/td&gt;&lt;td&gt;20200529133742&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;modeTime2Min&lt;/td&gt;&lt;td&gt;hh:mm&lt;/td&gt;&lt;td&gt;13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;modeTime2Sec&lt;/td&gt;&lt;td&gt;hh:mm:ss&lt;/td&gt;&lt;td&gt;13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;modeCompressed&lt;/td&gt;&lt;td&gt;YYYYMMDDhhmmss&lt;/td&gt;&lt;td&gt;20200529133942&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;modeRFC1123&lt;/td&gt;&lt;td&gt;ddd, DD MMM YY hh:mm:ss GMT&lt;/td&gt;&lt;td&gt;Fri, 29 May 20 13:37:42 GMT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;modeSoap&lt;/td&gt;&lt;td&gt;YYYY-DD-MMThh:mm:ss&lt;/td&gt;&lt;td&gt;2020-05-29T13:37:42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;modeRFC822&lt;/td&gt;&lt;td&gt;ddd, DD MMM YYYY hh:mm:ss +hhmm&lt;/td&gt;&lt;td&gt;Fri, 29 May 2020 13:37:42 +0200&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;modeDateFirst&lt;/td&gt;&lt;td&gt;MM.DD.YYYY hh.mm&lt;/td&gt;&lt;td&gt;29.05.2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;modeSlash2Min&lt;/td&gt;&lt;td&gt;MM/DD/YYYY hh.mm&lt;/td&gt;&lt;td&gt;29/05/2020 13:37&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+printLine(dt.toString(6,1,true));
+```
+
+## addDay(Integer)
+
+Adjusts the currently set date with the given number of days.
+
+```crmscript
+DateTime addDay(Integer num)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+dt.addDay(3);
+```
+
+## addMonth(Integer)
+
+Adjusts the currently set date with the given number of months.
+
+```crmscript
+DateTime addMonth(Integer num)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+<Note>
+The day remains unchanged regardless of the number of days in the months added or subtracted. However, if the update would result in February 29th in a year that is not a leap year, CRMScript automatically corrects it to March 1st.
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+dt.addMonth(3);
+```
+
+## addYear(Integer)
+
+Adjusts the currently set date with the given number of years.
+
+```crmscript
+DateTime addYear(Integer num)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+dt.addYear(1);
+```
+
+## addHour(Integer)
+
+Adjusts the currently set date with the given number of hours.
+
+```crmscript
+DateTime addHour(Integer num)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+dt.addHour(3);
+```
+
+## addMin(Integer)
+
+Adjusts the currently set date with the given number of minutes.
+
+```crmscript
+DateTime addMin(Integer num)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+dt.addMin(30);
+```
+
+## addSec(Integer)
+
+Adjusts the currently set date with the given number of seconds.
+
+```crmscript
+DateTime addSec(Integer num)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+dt.addSec(90);
+```
+
+## setTime(Time)
+
+Sets the time-part of a DateTime by passing a Time object.
+
+```crmscript
+Void setTime(Time theTime)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+Time t;
+DateTime dt;
+dt.setTime(t);
+```
+
+## getMDay()
+
+Returns the day of the month as an Integer [1-31].
+
+```crmscript
+Integer getMDay()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+print(dt.getMDay().toString());
+```
+
+## getMonth()
+
+Returns the month as an Integer [1-12].
+
+```crmscript
+Integer getMonth()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+print(dt.getMonth().toString());
+```
+
+## getWeek()
+
+Returns the number of the week as an Integer [1-53].
+
+```crmscript
+Integer getWeek()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+See http://en.wikipedia.org/wiki/ISO_8601 for detailed info on ISO week numbers.
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+print(dt.getWeek().toString());
+```
+
+## getWeekDay()
+
+Returns the day of the week as an Integer [0-6].
+
+```crmscript
+Integer getWeekDay()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+The 1st day of the week is Monday and has index 0!
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+print(dt.getWeekDay().toString());
+```
+
+## getYear()
+
+Returns the year as an Integer.
+
+```crmscript
+Integer getYear()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+print(dt.getYear().toString());
+```
+
+## getTime()
+
+Returns the time-portion as a Time object.
+
+```crmscript
+Time getTime()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+Time t = dt.getTime();
+print(t.toString());
+```
+
+## getDate()
+
+Returns the date part of the DateTime
+
+```crmscript
+Date getDate()
+```
+
+**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date)
+
+**Example:**
+
+```crmscript
+DateTime dt;
+Date d = dt.getDate();
+print(d.toString());
+```
+
+## diff(DateTime)
+
+Returns the difference in the number of seconds between 2 timestamps. The method subtracts the passed timestamp from the DateTime object you invoke diff() on.
+
+```crmscript
+Integer diff(DateTime value)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number is negative if the input DateTime is the greatest.
+
+**Example:**
+
+```crmscript
+DateTime dt1;
+DateTime dt2;
+dt2.addHour(1);
+print(dt1.diff(dt2).toString());
+```
+
+## setUnix(Integer)
+
+Sets the date and time to the number of the seconds since 01.01.1970 00:00:00.
+
+```crmscript
+DateTime setUnix(Integer number)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## getUnix()
+
+Returns the date and time to the number of the seconds since 01.01.1970 00:00:00.
+
+```crmscript
+Integer getUnix()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## isNull()
+
+Returns true if it has no value and false if it does.
+
+```crmscript
+Bool isNull()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+A NULL/NUL/NIL DateTime is different from zero, in that it is conceptually without a value.
+</Note>
+
+**Example:**
+
+```crmscript
+DateTime dt;
+print(dt.isNull().toString());
+```
+
+## moveToDayStart()
+
+Moves the current DateTime to the start of the day, (00:00 o'clock). Returns a reference to itself.
+
+```crmscript
+DateTime moveToDayStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToHourStart()
+
+Moves the current DateTime to the start of the current hour. Returns a reference to itself.
+
+```crmscript
+DateTime moveToHourStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToMonthStart()
+
+Moves the current DateTime to the first second in the current month. Returns a reference to itself.
+
+```crmscript
+DateTime moveToMonthStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToQuarterStart()
+
+Moves the current DateTime to the start of the current quarter (1. of January, 1. of April, 1. of July, or 1. of October). Returns a reference to itself.
+
+```crmscript
+DateTime moveToQuarterStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToWeekStart()
+
+Moves the current DateTime back to 00:00:00 on monday in the current week. Returns a reference to itself.
+
+```crmscript
+DateTime moveToWeekStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToYearStart()
+
+Moves the current DateTime to the first second in the current year. Returns a reference to itself.
+
+```crmscript
+DateTime moveToYearStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToDayEnd()
+
+Moves the current DateTime to the end of the day (23:59:59). Returns a reference to itself.
+
+```crmscript
+DateTime moveToDayEnd()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToHourEnd()
+
+Moves the current DateTime to the end of the current hour. Returns a reference to itself.
+
+```crmscript
+DateTime moveToHourEnd()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToMonthEnd()
+
+Moves the current DateTime to the last second in the current month. Returns a reference to itself.
+
+```crmscript
+DateTime moveToMonthEnd()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToQuarterEnd()
+
+Moves the current DateTime to the end of current quarter: 31. of Mars, 30. of June, 30 of September or 31. of December. Time is set to 23:59:59.  Returns a reference to itself.
+
+```crmscript
+DateTime moveToQuarterEnd()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToWeekEnd()
+
+Moves the current DateTime forward to 23:59:59 on Sunday of the current week. Returns a reference to itself.
+
+```crmscript
+DateTime moveToWeekEnd()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+## moveToYearEnd()
+
+Moves the current DateTime to the last second in the current year. Returns a reference to itself.
+
+```crmscript
+DateTime moveToYearEnd()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)

@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nscustomerservicestartup
+title: NSCustomerServiceStartup
+description: "Contains various data needed by Service for startup."
+keywords: CRMScript, NSCustomerServiceStartup, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCustomerServiceStartup
+
+Contains various data needed by Service for startup.
+
+&lt;strong&gt;Do not use this API, as it is for internal use and might change without notice.&lt;/strong&gt;
+
+## Constructors
+
+### NSCustomerServiceStartup()
+
+```crmscript
+NSCustomerServiceStartup
+```
+
+Initializes a new instance of the NSCustomerServiceStartup class.
+
+## Methods
+
+## GetRecaptchaSiteKey()
+
+```crmscript
+String GetRecaptchaSiteKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A global reCAPTCHA site key, used with the google reCAPTCHA component.
+
+<Note>
+This value is taken from the web.config file
+</Note>
+
+**Example:**
+
+```crmscript
+NSCustomerServiceStartup thing;
+String recaptchaSiteKey = thing.GetRecaptchaSiteKey();
+```
+
+## GetTimezoneEnabled()
+
+```crmscript
+Bool GetTimezoneEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is timezone enabled.
+
+**Example:**
+
+```crmscript
+NSCustomerServiceStartup thing;
+Bool timezoneEnabled = thing.GetTimezoneEnabled();
+```
+
+## GetTZOffset()
+
+```crmscript
+Integer GetTZOffset()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The offset in minutes compared with UTC, calculated for DateTime.Now.
+
+**Example:**
+
+```crmscript
+NSCustomerServiceStartup thing;
+Integer tZOffset = thing.GetTZOffset();
+```
+
+## SetRecaptchaSiteKey(String)
+
+```crmscript
+Void SetRecaptchaSiteKey(String recaptchaSiteKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This value is taken from the web.config file
+</Note>
+
+**Example:**
+
+```crmscript
+NSCustomerServiceStartup thing;
+String recaptchaSiteKey;
+thing.SetRecaptchaSiteKey(recaptchaSiteKey);
+```
+
+## SetTimezoneEnabled(Bool)
+
+```crmscript
+Void SetTimezoneEnabled(Bool timezoneEnabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceStartup thing;
+Bool timezoneEnabled;
+thing.SetTimezoneEnabled(timezoneEnabled);
+```
+
+## SetTZOffset(Integer)
+
+```crmscript
+Void SetTZOffset(Integer tZOffset)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerServiceStartup thing;
+Integer tZOffset;
+thing.SetTZOffset(tZOffset);
+```

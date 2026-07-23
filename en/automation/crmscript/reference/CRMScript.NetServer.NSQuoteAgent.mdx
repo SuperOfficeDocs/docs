@@ -1,0 +1,1850 @@
+﻿---
+uid: crmscript.netserver.nsquoteagent
+title: NSQuoteAgent
+description: "Services for the Quote Management feature, part of the Sale module."
+keywords: CRMScript, NSQuoteAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteAgent
+
+Services for the Quote Management feature, part of the Sale module.
+
+## Constructors
+
+### NSQuoteAgent()
+
+```crmscript
+NSQuoteAgent
+```
+
+Services for the Quote Management feature, part of the Sale module.
+
+## Methods
+
+## AddSaleTypeQuoteAttachment(Integer,Integer)
+
+Adds a new quote attachment document to a sale type
+
+```crmscript
+Integer AddSaleTypeQuoteAttachment(Integer saleTypeId, Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer saleTypeId;
+Integer documentId;
+Integer res = agent.AddSaleTypeQuoteAttachment(saleTypeId, documentId);
+```
+
+## ApproveQuoteVersion(Integer,String,Integer,String)
+
+Approves a quote version
+
+```crmscript
+NSApproveRejectResponse ApproveQuoteVersion(Integer quoteVersionId, String approvedByText, Integer approvedByAssociateId, String approvalText)
+```
+
+**Returns:** [CRMScript.NetServer.NSApproveRejectResponse](CRMScript.NetServer.NSApproveRejectResponse)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+String approvedByText;
+Integer approvedByAssociateId;
+String approvalText;
+NSApproveRejectResponse res = agent.ApproveQuoteVersion(quoteVersionId, approvedByText, approvedByAssociateId, approvalText);
+```
+
+## CanConnectorProvideCapability(Integer,String)
+
+```crmscript
+Bool CanConnectorProvideCapability(Integer quoteConnectionId, String capabilityName)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can the connector provide the capability.
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+String capabilityName;
+Bool res = agent.CanConnectorProvideCapability(quoteConnectionId, capabilityName);
+```
+
+## CopyQuoteAlternative(Integer,Integer,String)
+
+Copies a quote alternative from the same sale and adds it to a version.
+
+```crmscript
+NSQuoteAlternative CopyQuoteAlternative(Integer quoteVersionId, Integer quoteAlternativeId, String quoteAlternativeName)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+Integer quoteAlternativeId;
+String quoteAlternativeName;
+NSQuoteAlternative res = agent.CopyQuoteAlternative(quoteVersionId, quoteAlternativeId, quoteAlternativeName);
+```
+
+## CopySuperOfficePriceList(Integer,String,DateTime,DateTime,Integer,Bool)
+
+Creates a copy of a PriceList in the SuperOffice database
+
+```crmscript
+NSPriceList CopySuperOfficePriceList(Integer originalPriceListId, String newName, DateTime validFrom, DateTime validTo, Integer newCurrencyId, Bool convertCurrency)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer originalPriceListId;
+String newName;
+DateTime validFrom;
+DateTime validTo;
+Integer newCurrencyId;
+Bool convertCurrency;
+NSPriceList res = agent.CopySuperOfficePriceList(originalPriceListId, newName, validFrom, validTo, newCurrencyId, convertCurrency);
+```
+
+## CreateAndSaveQuote(Integer,Integer,String)
+
+Creates a new quote on a sale.
+
+```crmscript
+NSQuoteEntity CreateAndSaveQuote(Integer saleId, Integer connectionId, String firstAlternativeName)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer saleId;
+Integer connectionId;
+String firstAlternativeName;
+NSQuoteEntity res = agent.CreateAndSaveQuote(saleId, connectionId, firstAlternativeName);
+```
+
+## CreateAndSaveQuoteFromSale(Integer,Integer)
+
+Creates a copy the active version with connected alternatives and quotelines from another sale.
+
+```crmscript
+NSQuoteEntity CreateAndSaveQuoteFromSale(Integer copyFromSaleId, Integer copyToSaleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer copyFromSaleId;
+Integer copyToSaleId;
+NSQuoteEntity res = agent.CreateAndSaveQuoteFromSale(copyFromSaleId, copyToSaleId);
+```
+
+## CreateAndSaveQuoteVersion(Integer)
+
+Created a new NSQuoteVersion based on another NSQuoteVersion on the same Quote.
+
+```crmscript
+NSQuoteVersion CreateAndSaveQuoteVersion(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSQuoteVersion res = agent.CreateAndSaveQuoteVersion(quoteVersionId);
+```
+
+## CreateConnectionFromConnectorName(String)
+
+Creates a new connection.
+
+```crmscript
+NSQuoteConnection CreateConnectionFromConnectorName(String connectorName)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+String connectorName;
+NSQuoteConnection res = agent.CreateConnectionFromConnectorName(connectorName);
+```
+
+## CreateDefaultPriceList()
+
+Sets default values into a new NSPriceList.
+
+```crmscript
+NSPriceList CreateDefaultPriceList()
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSPriceList thing = agent.CreateDefaultPriceList();
+thing = agent.SavePriceList(thing);
+```
+
+## CreateDefaultProduct()
+
+Sets default values into a new NSProduct.
+
+```crmscript
+NSProduct CreateDefaultProduct()
+```
+
+**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSProduct thing = agent.CreateDefaultProduct();
+thing = agent.SaveProduct(thing);
+```
+
+## CreateDefaultQuoteAlternative()
+
+Sets default values into a new NSQuoteAlternative.
+
+```crmscript
+NSQuoteAlternative CreateDefaultQuoteAlternative()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteAlternative thing = agent.CreateDefaultQuoteAlternative();
+thing = agent.SaveQuoteAlternative(thing);
+```
+
+## CreateOrUpdateQuoteVersionAttachments(Integer)
+
+Looks at the Quote version, related sale and sale type, and ensures that the correct NSQuoteVersionAttachment records exist. This method may create or delete records
+
+```crmscript
+NSQuoteVersionAttachment[] CreateOrUpdateQuoteVersionAttachments(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersionAttachment](CRMScript.NetServer.NSQuoteVersionAttachment)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSQuoteVersionAttachment[] res = agent.CreateOrUpdateQuoteVersionAttachments(quoteVersionId);
+```
+
+## CreateQuoteAlternative(Integer,String,String)
+
+Creates a new quote alternative on a version.
+
+```crmscript
+NSQuoteAlternative CreateQuoteAlternative(Integer quoteVersionId, String quoteAlternativeName, String quoteAlternativeDescription)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+String quoteAlternativeName;
+String quoteAlternativeDescription;
+NSQuoteAlternative res = agent.CreateQuoteAlternative(quoteVersionId, quoteAlternativeName, quoteAlternativeDescription);
+```
+
+## CreateQuoteLine(Integer,String)
+
+Creates a quoteline based on a product key.
+
+```crmscript
+NSQuoteLine CreateQuoteLine(Integer quoteAlternativeId, String eRPProductKey)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteAlternativeId;
+String eRPProductKey;
+NSQuoteLine res = agent.CreateQuoteLine(quoteAlternativeId, eRPProductKey);
+```
+
+## CreateQuoteLineFromProduct(Integer,NSProduct)
+
+Creates a quoteline based on a product.
+
+```crmscript
+NSQuoteLine CreateQuoteLineFromProduct(Integer quoteAlternativeId, NSProduct product)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteAlternativeId;
+NSProduct product;
+NSQuoteLine res = agent.CreateQuoteLineFromProduct(quoteAlternativeId, product);
+```
+
+## DeleteConnection(Integer)
+
+Marks a connection as deleted.
+
+```crmscript
+Void DeleteConnection(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+agent.DeleteConnection(quoteConnectionId);
+```
+
+## DeletePriceList(Integer)
+
+Deletes the NSPriceList
+
+```crmscript
+Void DeletePriceList(Integer priceList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+agent.DeletePriceList(123);
+```
+
+## DeleteProduct(Integer)
+
+Deletes the NSProduct
+
+```crmscript
+Void DeleteProduct(Integer product)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+agent.DeleteProduct(123);
+```
+
+## DeleteQuote(Integer)
+
+Deletes a Quote
+
+```crmscript
+Void DeleteQuote(Integer quoteId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteQuoteAlternative(Integer)
+
+Deletes a quote alternative
+
+```crmscript
+Void DeleteQuoteAlternative(Integer quoteAlternativeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteAlternativeId;
+agent.DeleteQuoteAlternative(quoteAlternativeId);
+```
+
+## DeleteQuoteLine(Integer)
+
+Deletes the QuoteLine in the SuperOffice database
+
+```crmscript
+Void DeleteQuoteLine(Integer quoteLineId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteLineId;
+agent.DeleteQuoteLine(quoteLineId);
+```
+
+## DeleteQuoteLines(Integer[])
+
+Deletes the QuoteLines in the SuperOffice database
+
+```crmscript
+Void DeleteQuoteLines(Integer[] quoteLineIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer[] quoteLineIds;
+agent.DeleteQuoteLines(quoteLineIds);
+```
+
+## DeleteSaleTypeQuoteAttachment(Integer)
+
+Deletes the sale type quote attachment with the given ID
+
+```crmscript
+Void DeleteSaleTypeQuoteAttachment(Integer saleTypeQuoteAttachmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## FindProduct(Integer,String,String)
+
+Gets a product, from the ProductProvider
+
+```crmscript
+NSProduct[] FindProduct(Integer quoteAlternativeId, String userInput, String priceListKey)
+```
+
+**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteAlternativeId;
+String userInput;
+String priceListKey;
+NSProduct[] res = agent.FindProduct(quoteAlternativeId, userInput, priceListKey);
+```
+
+## GenerateQuoteDocuments(Integer,Integer,Bool,Integer,Bool,String)
+
+Generate all the documents required to send the Quote as an email to the prospect, or an Order Confirmation; it just depends on the template IDs for the lines doc and mail body.
+
+```crmscript
+NSQuotePublishDocuments GenerateQuoteDocuments(Integer quoteVersionId, Integer emailBodyTemplateId, Bool attachMainDocument, Integer quotedProductsTemplateId, Bool includeAttachments, String rawMailSubject)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuotePublishDocuments](CRMScript.NetServer.NSQuotePublishDocuments)
+
+<Note>
+Quote version status is not changed by this method.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+Integer emailBodyTemplateId;
+Bool attachMainDocument;
+Integer quotedProductsTemplateId;
+Bool includeAttachments;
+String rawMailSubject;
+NSQuotePublishDocuments res = agent.GenerateQuoteDocuments(quoteVersionId, emailBodyTemplateId, attachMainDocument, quotedProductsTemplateId, includeAttachments, rawMailSubject);
+```
+
+## GetActivePriceLists(Integer,String)
+
+Gets the available active PriceLists in a specific currency.
+
+```crmscript
+NSPriceList[] GetActivePriceLists(Integer quoteConnectionId, String currency)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList with the stated currency available.
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+String currency;
+NSPriceList[] res = agent.GetActivePriceLists(quoteConnectionId, currency);
+```
+
+## GetActivePriceListsByCurrencyId(Integer,Integer)
+
+Gets the available active PriceLists in a specific currency.
+
+```crmscript
+NSPriceList[] GetActivePriceListsByCurrencyId(Integer quoteConnectionId, Integer currencyId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList with the stated currency available.
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+Integer currencyId;
+NSPriceList[] res = agent.GetActivePriceListsByCurrencyId(quoteConnectionId, currencyId);
+```
+
+## GetAllAvailableQuoteConnections()
+
+Gets all available connections. Some installed connections may not be available to the user.
+
+```crmscript
+NSQuoteConnection[] GetAllAvailableQuoteConnections()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+
+<Note>
+Use GetAllAvailableQuoteConnectionsWithPriceLists if you need the price lists on the connections as well.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteConnection[] res = agent.GetAllAvailableQuoteConnections();
+```
+
+## GetAllAvailableQuoteConnectionsWithPriceLists()
+
+Gets all available connections. Some installed connections may not be available to the user. Includes price lists for the connection.
+
+```crmscript
+NSQuoteConnection[] GetAllAvailableQuoteConnectionsWithPriceLists()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+
+<Note>
+This is a heavy call
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteConnection[] res = agent.GetAllAvailableQuoteConnectionsWithPriceLists();
+```
+
+## GetAllInstalledQuoteConnections()
+
+Gets all installed connections. Some installed connections may not be available to the user.
+
+```crmscript
+NSQuoteConnection[] GetAllInstalledQuoteConnections()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteConnection[] res = agent.GetAllInstalledQuoteConnections();
+```
+
+## GetAllPriceLists(Integer,String)
+
+Gets the all PriceLists in all currencies, including those inactive.
+
+```crmscript
+NSPriceList[] GetAllPriceLists(Integer quoteConnectionId, String currency)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return an empty array if there is no PriceList with the stated currency available.
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+String currency;
+NSPriceList[] res = agent.GetAllPriceLists(quoteConnectionId, currency);
+```
+
+## GetAllPriceListsByCurrencyId(Integer,Integer)
+
+Gets the all PriceLists in all currencies, including those inactive.
+
+```crmscript
+NSPriceList[] GetAllPriceListsByCurrencyId(Integer quoteConnectionId, Integer currencyId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList available.
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+Integer currencyId;
+NSPriceList[] res = agent.GetAllPriceListsByCurrencyId(quoteConnectionId, currencyId);
+```
+
+## GetAllQuoteLineConfigurations()
+
+Returns all the configuration fields
+
+```crmscript
+NSQuoteLineConfiguration[] GetAllQuoteLineConfigurations()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteLineConfiguration[] res = agent.GetAllQuoteLineConfigurations();
+```
+
+## GetConfigurationFields(Integer,String)
+
+Used by ADMIN. Asks for metadata needed to populate admin dialog that takes in the information needed to create a connection to an ERP system. The values entered in the dialog are stored in the SuperOffice database and used when InitializeConnector is called by the client.
+
+```crmscript
+Map GetConfigurationFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer connectionId;
+String connectorName;
+Map res = agent.GetConfigurationFields(connectionId, connectorName);
+```
+
+## GetConnection(Integer)
+
+Returns the specified connection.
+
+```crmscript
+NSQuoteConnection GetConnection(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+NSQuoteConnection res = agent.GetConnection(quoteConnectionId);
+```
+
+## GetConnectionConfigFields(Integer)
+
+Returns the config fields for the connection.
+
+```crmscript
+Map GetConnectionConfigFields(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+Map res = agent.GetConnectionConfigFields(quoteConnectionId);
+```
+
+## GetConnectionsForAssociate(Integer)
+
+Returns all connections available for the specified user.
+
+```crmscript
+NSQuoteConnection[] GetConnectionsForAssociate(Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer associateId;
+NSQuoteConnection[] res = agent.GetConnectionsForAssociate(associateId);
+```
+
+## GetConnectionStartupErrors()
+
+Returns an array of PluginResponseInfos for all failed connection initializations.
+
+```crmscript
+NSPluginResponse[] GetConnectionStartupErrors()
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSPluginResponse[] res = agent.GetConnectionStartupErrors();
+```
+
+## GetConnectionStartupResponse(Integer)
+
+Returns the PluginResponseInfo for the connection initialization.
+
+```crmscript
+NSPluginResponse GetConnectionStartupResponse(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse)
+
+<Note>
+Does not initialize the connection, just returns what happened when initialize was called.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+NSPluginResponse res = agent.GetConnectionStartupResponse(quoteConnectionId);
+```
+
+## GetConnectorCapabilities(Integer)
+
+Gets a list of connector capabilities
+
+```crmscript
+String[] GetConnectorCapabilities(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+String[] res = agent.GetConnectorCapabilities(quoteConnectionId);
+```
+
+## GetConnectorCapabilityNames(Integer)
+
+Gets a list of all possible connector capabilities
+
+```crmscript
+String[] GetConnectorCapabilityNames(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+String[] res = agent.GetConnectorCapabilityNames(quoteConnectionId);
+```
+
+## GetExtraInfo(String)
+
+Converts an XML string into an object representation.
+
+```crmscript
+NSProductExtraDataField[] GetExtraInfo(String quoteLineExtraData)
+```
+
+**Returns:** [CRMScript.NetServer.NSProductExtraDataField](CRMScript.NetServer.NSProductExtraDataField)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+String quoteLineExtraData;
+NSProductExtraDataField[] res = agent.GetExtraInfo(quoteLineExtraData);
+```
+
+## GetInUseQuoteLineConfigurations()
+
+Returns the configuration fields that should be visible in the GUI.
+
+```crmscript
+NSQuoteLineConfiguration[] GetInUseQuoteLineConfigurations()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteLineConfiguration[] res = agent.GetInUseQuoteLineConfigurations();
+```
+
+## GetOrderConfirmation(Integer,Integer)
+
+Gets a base64-encoded data stream that is just the order confirmation document, for the given quote version; no permanent document is created or stored anywhere; the result is a PDF
+
+```crmscript
+String GetOrderConfirmation(Integer quoteVersionId, Integer confirmationTemplateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+Integer confirmationTemplateId;
+String res = agent.GetOrderConfirmation(quoteVersionId, confirmationTemplateId);
+```
+
+## GetOrderState(Integer)
+
+If there is a problem with a quoteline, the error description shall be placed in the status and reason fields of the quoteline, if there is a problem with the alternative, the error description shall be placed in the status and reason fields of the alternative. A summary of all the problems (if any) should be placed in the response object. Requires that the Create-Order capability is true.
+
+```crmscript
+NSPluginUrlResponse GetOrderState(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](CRMScript.NetServer.NSPluginUrlResponse)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSPluginUrlResponse res = agent.GetOrderState(quoteVersionId);
+```
+
+## GetPriceList(Integer)
+
+Gets an NSPriceList object.
+
+```crmscript
+NSPriceList GetPriceList(Integer priceListId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSPriceList thing = agent.GetPriceList(123);
+```
+
+## GetProduct(Integer,String)
+
+Gets a product with the given key
+
+```crmscript
+NSProduct GetProduct(Integer quoteConnectionId, String eRPProductKey)
+```
+
+**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+
+## GetProductFromDbId(Integer)
+
+Gets a product with the given database ID
+
+```crmscript
+NSProduct GetProductFromDbId(Integer productId)
+```
+
+**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer productId;
+NSProduct res = agent.GetProductFromDbId(productId);
+```
+
+## GetProductImage(Integer,String,Integer)
+
+Gets an image connected to a product, from the ProductProvider
+
+```crmscript
+String GetProductImage(Integer quoteConnectionId, String eRPProductKey, Integer rank)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+String eRPProductKey;
+Integer rank;
+String res = agent.GetProductImage(quoteConnectionId, eRPProductKey, rank);
+```
+
+## GetQuote(Integer)
+
+Gets an NSQuote
+
+```crmscript
+NSQuote GetQuote(Integer quoteId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuote](CRMScript.NetServer.NSQuote)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteId;
+NSQuote res = agent.GetQuote(quoteId);
+```
+
+## GetQuoteAlternative(Integer)
+
+Gets an NSQuoteAlternative object.
+
+```crmscript
+NSQuoteAlternative GetQuoteAlternative(Integer quoteAlternativeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteAlternative thing = agent.GetQuoteAlternative(123);
+```
+
+## GetQuoteAlternatives(Integer)
+
+Gets all quote alternatives for a quote version
+
+```crmscript
+NSQuoteAlternative[] GetQuoteAlternatives(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSQuoteAlternative[] res = agent.GetQuoteAlternatives(quoteVersionId);
+```
+
+## GetQuoteEntity(Integer)
+
+Gets a Quote
+
+```crmscript
+NSQuoteEntity GetQuoteEntity(Integer quoteId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteId;
+NSQuoteEntity res = agent.GetQuoteEntity(quoteId);
+```
+
+## GetQuoteEntityFromSaleId(Integer)
+
+Gets a Quote for a sale
+
+```crmscript
+NSQuoteEntity GetQuoteEntityFromSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer saleId;
+NSQuoteEntity res = agent.GetQuoteEntityFromSaleId(saleId);
+```
+
+## GetQuoteFromSaleId(Integer)
+
+Gets an NSQuote for a sale
+
+```crmscript
+NSQuote GetQuoteFromSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuote](CRMScript.NetServer.NSQuote)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer saleId;
+NSQuote res = agent.GetQuoteFromSaleId(saleId);
+```
+
+## GetQuoteLine(Integer)
+
+Gets QuoteLine from database
+
+```crmscript
+NSQuoteLine GetQuoteLine(Integer quoteLineId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteLineId;
+NSQuoteLine res = agent.GetQuoteLine(quoteLineId);
+```
+
+## GetQuoteLineConfiguration(Integer)
+
+Returns the configuration field with the given ID
+
+```crmscript
+NSQuoteLineConfiguration GetQuoteLineConfiguration(Integer quoteLineConfigurationId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteLineConfigurationId;
+NSQuoteLineConfiguration res = agent.GetQuoteLineConfiguration(quoteLineConfigurationId);
+```
+
+## GetQuoteLineConfigurationFromFieldName(String)
+
+Returns the configuration field with the given field name
+
+```crmscript
+NSQuoteLineConfiguration GetQuoteLineConfigurationFromFieldName(String fieldName)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+String fieldName;
+NSQuoteLineConfiguration res = agent.GetQuoteLineConfigurationFromFieldName(fieldName);
+```
+
+## GetQuoteLineImage(Integer,Integer)
+
+Gets an image connected to a quoteline, either from the ERPProvider or from the SuperOffice database
+
+```crmscript
+NSImage GetQuoteLineImage(Integer quoteLineId, Integer rank)
+```
+
+**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteLineId;
+Integer rank;
+NSImage res = agent.GetQuoteLineImage(quoteLineId, rank);
+```
+
+## GetQuoteLines(Integer)
+
+Gets all QuoteLines from an alternative
+
+```crmscript
+NSQuoteLine[] GetQuoteLines(Integer quoteAlternativeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteAlternativeId;
+NSQuoteLine[] res = agent.GetQuoteLines(quoteAlternativeId);
+```
+
+## GetQuoteList(String)
+
+Gets a named list from the connector.
+
+```crmscript
+NSQuoteListItem[] GetQuoteList(String quoteListType)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteListItem](CRMScript.NetServer.NSQuoteListItem)[] - Array of QuoteListItems; NULL if the given list is not supported.
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+String quoteListType;
+NSQuoteListItem[] res = agent.GetQuoteList(quoteListType);
+```
+
+## GetQuoteVersion(Integer)
+
+Gets an NSQuoteVersion
+
+```crmscript
+NSQuoteVersion GetQuoteVersion(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSQuoteVersion res = agent.GetQuoteVersion(quoteVersionId);
+```
+
+## GetQuoteVersions(Integer)
+
+Gets all quote versions for a sale
+
+```crmscript
+NSQuoteVersion[] GetQuoteVersions(Integer quoteId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteId;
+NSQuoteVersion[] res = agent.GetQuoteVersions(quoteId);
+```
+
+## GetQuoteVersionWorkflowButtonStates(Integer,Integer)
+
+Gets all button states for the Quote version dialog.
+
+```crmscript
+NSQuoteVersionWorkflowState GetQuoteVersionWorkflowButtonStates(Integer quoteVersionId, Integer quoteAlternativeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersionWorkflowState](CRMScript.NetServer.NSQuoteVersionWorkflowState)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+Integer quoteAlternativeId;
+NSQuoteVersionWorkflowState res = agent.GetQuoteVersionWorkflowButtonStates(quoteVersionId, quoteAlternativeId);
+```
+
+## GetQuoteVersionWorkflowImageState(Integer)
+
+Gets state icon and name for the Quote version dialog header.
+
+```crmscript
+NSQuoteVersionButtonState GetQuoteVersionWorkflowImageState(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersionButtonState](CRMScript.NetServer.NSQuoteVersionButtonState)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSQuoteVersionButtonState res = agent.GetQuoteVersionWorkflowImageState(quoteVersionId);
+```
+
+## GetQuoteVersionWorkflowState(Integer,Integer)
+
+Gets all button states for the Quote version dialog. Packages ImageState, Button states and status info into one call.
+
+```crmscript
+NSQuoteVersionWorkflowState GetQuoteVersionWorkflowState(Integer quoteVersionId, Integer quoteAlternativeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersionWorkflowState](CRMScript.NetServer.NSQuoteVersionWorkflowState)
+
+<Note>
+Collects most important warnings/errors from across all quote lines/alternatives in this quote version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+Integer quoteAlternativeId;
+NSQuoteVersionWorkflowState res = agent.GetQuoteVersionWorkflowState(quoteVersionId, quoteAlternativeId);
+```
+
+## GetQuoteVersionWorkflowStatusInfo(Integer)
+
+Gets status info for the Quote version dialog header.
+
+```crmscript
+NSQuoteVersionStatusInformation GetQuoteVersionWorkflowStatusInfo(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersionStatusInformation](CRMScript.NetServer.NSQuoteVersionStatusInformation)
+
+<Note>
+Collects most important warnings/errors from across all quote lines/alternatives in this quote version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSQuoteVersionStatusInformation res = agent.GetQuoteVersionWorkflowStatusInfo(quoteVersionId);
+```
+
+## HasConnections()
+
+```crmscript
+NSPluginResponse HasConnections()
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse) - Whether or not the system has any connections available for this user.
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSPluginResponse res = agent.HasConnections();
+```
+
+## IncludeQuoteVersionAttachment(Integer,Integer,Bool)
+
+Toggles the 'included' state of a quote version attachment
+
+```crmscript
+Bool IncludeQuoteVersionAttachment(Integer quoteVersionId, Integer documentId, Bool include)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+Throws exceptions if called on locked versions
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+Integer documentId;
+Bool include;
+Bool res = agent.IncludeQuoteVersionAttachment(quoteVersionId, documentId, include);
+```
+
+## MoveQuoteLine(Integer,Bool)
+
+Moves quote line rank up/down
+
+```crmscript
+Void MoveQuoteLine(Integer quoteLineId, Bool direction)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteLineId;
+Bool direction;
+agent.MoveQuoteLine(quoteLineId, direction);
+```
+
+## PlaceOrder(Integer,Bool,String,String,String)
+
+Places an order in the ERP system.
+
+```crmscript
+NSPluginUrlResponse PlaceOrder(Integer quoteAlternativeId, Bool markSaleAsSold, String poNumber, String orderComment, String culture)
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](CRMScript.NetServer.NSPluginUrlResponse)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteAlternativeId;
+Bool markSaleAsSold;
+String poNumber;
+String orderComment;
+String culture;
+NSPluginUrlResponse res = agent.PlaceOrder(quoteAlternativeId, markSaleAsSold, poNumber, orderComment, culture);
+```
+
+## RecalculateQuoteAlternative(Integer)
+
+When the user changes one or more values in a quoteline or a quoteAlternative, the connector gets to change the QuoteLines and the alternative, for instance calculate VAT. RecalculateQuoteAlternative shall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, listprice (if allowed). RecalculateQuoteAlternative will calculate the TotalPrice and the VAT (if possible) for the lines and the alternative.
+
+```crmscript
+NSQuoteAlternativeRecalculated RecalculateQuoteAlternative(Integer quoteAlternative)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternativeRecalculated](CRMScript.NetServer.NSQuoteAlternativeRecalculated)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteAlternative;
+NSQuoteAlternativeRecalculated res = agent.RecalculateQuoteAlternative(quoteAlternative);
+```
+
+## RecalculateQuoteLine(NSQuoteLine,String[])
+
+When the user changes one or more values in a quoteline, the connector gets to change the QuoteLine, for instance calculate VAT. Shall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, ListPrice (if allowed). Will calculate the TotalPrice and the VAT (if possible) for the line.
+
+```crmscript
+NSQuoteLine RecalculateQuoteLine(NSQuoteLine quoteLine, String[] changedFields)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteLine quoteLine;
+String[] changedFields;
+NSQuoteLine res = agent.RecalculateQuoteLine(quoteLine, changedFields);
+```
+
+## RejectQuoteVersion(Integer,String,Integer,String)
+
+Rejects a quote version
+
+```crmscript
+NSApproveRejectResponse RejectQuoteVersion(Integer quoteVersionId, String rejectedByText, Integer rejectedByAssociateId, String rejectionText)
+```
+
+**Returns:** [CRMScript.NetServer.NSApproveRejectResponse](CRMScript.NetServer.NSApproveRejectResponse)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+String rejectedByText;
+Integer rejectedByAssociateId;
+String rejectionText;
+NSApproveRejectResponse res = agent.RejectQuoteVersion(quoteVersionId, rejectedByText, rejectedByAssociateId, rejectionText);
+```
+
+## RemoveProduct(Integer)
+
+Removes a product from the database
+
+```crmscript
+Void RemoveProduct(Integer productId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RestoreConnection(Integer)
+
+Restores a connection marked as deleted.
+
+```crmscript
+Void RestoreConnection(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+agent.RestoreConnection(quoteConnectionId);
+```
+
+## SaveConnection(NSQuoteConnection)
+
+Saves a connection to the database.
+
+```crmscript
+NSQuoteConnection SaveConnection(NSQuoteConnection connection)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteConnection connection;
+NSQuoteConnection res = agent.SaveConnection(connection);
+```
+
+## SaveConnectionConfigFields(Integer,Map)
+
+Saves the connection config fields.
+
+```crmscript
+Map SaveConnectionConfigFields(Integer quoteConnectionId, Map connectionConfigFields)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteConnectionId;
+Map connectionConfigFields;
+Map res = agent.SaveConnectionConfigFields(quoteConnectionId, connectionConfigFields);
+```
+
+## SavePriceList(NSPriceList)
+
+Updates the existing NSPriceList or creates a new NSPriceList if the id parameter is 0
+
+```crmscript
+NSPriceList SavePriceList(NSPriceList priceList)
+```
+
+**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+
+**Example:**
+
+```crmscript
+NSQuote  agent;
+NSPriceList thing = agent.CreateDefaultPriceList();
+thing = agent.SavePriceList(thing);
+```
+
+## SaveProduct(NSProduct)
+
+Updates the existing NSProduct or creates a new NSProduct if the id parameter is 0
+
+```crmscript
+NSProduct SaveProduct(NSProduct product)
+```
+
+**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+
+**Example:**
+
+```crmscript
+NSQuote  agent;
+NSProduct thing = agent.CreateDefaultProduct();
+thing = agent.SaveProduct(thing);
+```
+
+## SaveQuote(NSQuote)
+
+Saves an NSQuote
+
+```crmscript
+NSQuote SaveQuote(NSQuote quote)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuote](CRMScript.NetServer.NSQuote)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuote quote;
+NSQuote res = agent.SaveQuote(quote);
+```
+
+## SaveQuoteAlternative(NSQuoteAlternative)
+
+Updates the existing NSQuoteAlternative or creates a new NSQuoteAlternative if the id parameter is 0
+
+```crmscript
+NSQuoteAlternative SaveQuoteAlternative(NSQuoteAlternative quoteAlternative)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteAlternative thing = agent.CreateDefaultQuoteAlternative();
+thing = agent.SaveQuoteAlternative(thing);
+```
+
+## SaveQuoteEntity(NSQuoteEntity)
+
+Saves an NSQuoteEntity.
+
+```crmscript
+NSQuoteEntity SaveQuoteEntity(NSQuoteEntity quoteEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+
+<Note>
+Versions and alternatives will not be saved by this call.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteEntity quoteEntity;
+NSQuoteEntity res = agent.SaveQuoteEntity(quoteEntity);
+```
+
+## SaveQuoteLine(NSQuoteLine)
+
+Saves the NSQuoteLine in the SuperOffice database
+
+```crmscript
+NSQuoteLine SaveQuoteLine(NSQuoteLine quoteLine)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteLine quoteLine;
+NSQuoteLine res = agent.SaveQuoteLine(quoteLine);
+```
+
+## SaveQuoteLineConfiguration(NSQuoteLineConfiguration)
+
+Saves an NSQuoteLineConfiguration object. It is not possible to add a new configuration.
+
+```crmscript
+NSQuoteLineConfiguration SaveQuoteLineConfiguration(NSQuoteLineConfiguration quoteLineConfiguration)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteLineConfiguration quoteLineConfiguration;
+NSQuoteLineConfiguration res = agent.SaveQuoteLineConfiguration(quoteLineConfiguration);
+```
+
+## SaveQuoteLineConfigurations()
+
+Saves a collection of QuoteLineConfigurations. It is not possible to add a new configurations.
+
+```crmscript
+NSQuoteLineConfiguration[] SaveQuoteLineConfigurations(NSQuoteLineConfiguration[] quoteLineConfigurations)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteLineConfiguration[] quoteLineConfigurations;
+NSQuoteLineConfiguration[] res = agent.SaveQuoteLineConfigurations(quoteLineConfigurations);
+```
+
+## SaveQuoteLineImage(Integer,NSImage,Integer)
+
+Saves the image connected to a quoteline in the SuperOffice database
+
+```crmscript
+Void SaveQuoteLineImage(Integer quoteLineId, NSImage image, Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteLineId;
+NSImage image;
+Integer rank;
+agent.SaveQuoteLineImage(quoteLineId, image, rank);
+```
+
+## SaveQuoteLines(NSQuoteLine[])
+
+Saves the QuoteLines in the SuperOffice database
+
+```crmscript
+NSQuoteLine[] SaveQuoteLines(NSQuoteLine[] quoteLines)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)[]
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteLine[] quoteLines;
+NSQuoteLine[] res = agent.SaveQuoteLines(quoteLines);
+```
+
+## SaveQuoteVersion(NSQuoteVersion)
+
+Saves a quote version
+
+```crmscript
+NSQuoteVersion SaveQuoteVersion(NSQuoteVersion quoteVersion)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+NSQuoteVersion quoteVersion;
+NSQuoteVersion res = agent.SaveQuoteVersion(quoteVersion);
+```
+
+## SaveQuoteVersionNumber(Integer,String)
+
+Save the quote version number if it is valid
+
+```crmscript
+Bool SaveQuoteVersionNumber(Integer quoteVersionId, String number)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+String number;
+Bool res = agent.SaveQuoteVersionNumber(quoteVersionId, number);
+```
+
+## SendQuoteVersion(Integer,DateTime,DateTime,String,String)
+
+Sends the quote to the user's customer.
+
+```crmscript
+NSPluginUrlResponse SendQuoteVersion(Integer quoteVersionId, DateTime expiryDate, DateTime followupDate, String followupText, String culture)
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](CRMScript.NetServer.NSPluginUrlResponse)
+
+<Note>
+More parameters to be added later...
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+DateTime expiryDate;
+DateTime followupDate;
+String followupText;
+String culture;
+NSPluginUrlResponse res = agent.SendQuoteVersion(quoteVersionId, expiryDate, followupDate, followupText, culture);
+```
+
+## TestConnection(String)
+
+Tests if the connection data is sufficient to get a connection with the ERP system. The Connector should try to do some operations to check if the connection has sufficient rights to run. The connection has not been created yet. TestConnection()is called without InitializeConnector being called first.
+
+```crmscript
+NSPluginResponse TestConnection(String connectorName, Map connectionData)
+```
+
+**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse) - how the test went.
+
+<Note>
+Used by the Admin clients
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+String connectorName;
+Map connectionData;
+NSPluginResponse res = agent.TestConnection(connectorName, connectionData);
+```
+
+## ToggleProductInAssortment(Integer)
+
+Toggles if the product is in assortment or not
+
+```crmscript
+Void ToggleProductInAssortment(Integer productId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ToggleQuoteVersionAttachmentIncluded(Integer)
+
+Toggle the 'included' state of a quote version attachment
+
+```crmscript
+Bool ToggleQuoteVersionAttachmentIncluded(Integer quoteVersionAttachmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionAttachmentId;
+Bool res = agent.ToggleQuoteVersionAttachmentIncluded(quoteVersionAttachmentId);
+```
+
+## ToggleSaleTypeQuoteAttachmentDefaultIncluded(Integer)
+
+Toggles the 'default included' state of a sale type quote attachment
+
+```crmscript
+Bool ToggleSaleTypeQuoteAttachmentDefaultIncluded(Integer saleTypeQuoteAttachmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer saleTypeQuoteAttachmentId;
+Bool res = agent.ToggleSaleTypeQuoteAttachmentDefaultIncluded(saleTypeQuoteAttachmentId);
+```
+
+## UpdateQuoteVersionPrices(Integer)
+
+Updates price on the all the quote lines for each alternative in the current quote version
+
+```crmscript
+NSQuoteVersionValidated UpdateQuoteVersionPrices(Integer quoteVersionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersionValidated](CRMScript.NetServer.NSQuoteVersionValidated)
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+NSQuoteVersionValidated res = agent.UpdateQuoteVersionPrices(quoteVersionId);
+```
+
+## ValidateQuoteVersion(Integer,Integer)
+
+When the user changes one or more values in a quoteline or a quoteAlternative, the connector gets to change the QuoteLines and the alternative, for instance calculate VAT. ValidateQuoteVersion shall be called when the user presses the validate button, presses the send button or closes the quote dialog.
+
+```crmscript
+NSQuoteVersionValidated ValidateQuoteVersion(Integer quoteVersionId, Integer action)
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersionValidated](CRMScript.NetServer.NSQuoteVersionValidated)
+
+<Note>
+RecalculateQuoteAlternative should typically validate all alternatives, set values in extrafields, and set the state in the version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteAgent agent;
+Integer quoteVersionId;
+Integer action;
+NSQuoteVersionValidated res = agent.ValidateQuoteVersion(quoteVersionId, action);
+```

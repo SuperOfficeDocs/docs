@@ -1,0 +1,43 @@
+﻿---
+uid: crmscript.native.priority
+title: Priority
+description: "Used to handle priorities."
+keywords: CRMScript, Priority, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Priority
+
+Used to handle priorities.
+
+## Constructors
+
+### Priority()
+
+```crmscript
+Priority
+```
+
+Initializes a new instance of the Priority class.
+
+## Methods
+
+## checkEscalating(Integer,Integer)
+
+Checks if the ticket should change its alert level based on the priority and action. If it is to change, the alert level and alert timeout for the ticket will be updated.
+
+```crmscript
+Void checkEscalating(Integer ticketId, Integer action)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Useful if you want to change the state of a ticket that is monitored by the its priority. It will take care of all the escalation routines so you do not have to do this manually.
+
+Possible action values: Ticket changed owner = 0 Ticket change owner = 1 Ticket received new information = 2 Ticket closed = 3 Ticket changed priority = 4 New ticket = 5
+</Note>

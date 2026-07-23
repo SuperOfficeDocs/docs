@@ -1,0 +1,124 @@
+﻿---
+uid: crmscript.netserver.nspocketagent
+title: NSPocketAgent
+description: "Agent with Pocket specific functionality."
+keywords: CRMScript, NSPocketAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPocketAgent
+
+Agent with Pocket specific functionality.
+
+## Constructors
+
+### NSPocketAgent()
+
+```crmscript
+NSPocketAgent
+```
+
+Agent with Pocket specific functionality.
+
+## Methods
+
+## GetPocketStartupData(String[])
+
+Returns start-up data for SuperOffice Pocket CRM
+
+```crmscript
+NSPocketStartupData GetPocketStartupData(String[] tables, DateTime currentClientTime)
+```
+
+**Returns:** [CRMScript.NetServer.NSPocketStartupData](CRMScript.NetServer.NSPocketStartupData)
+
+**Example:**
+
+```crmscript
+NSPocketAgent agent;
+String[] tables;
+DateTime currentClientTime;
+NSPocketStartupData res = agent.GetPocketStartupData(tables, currentClientTime);
+```
+
+## GetPushNotificationTagsForDevice(String)
+
+Retrieves current tag value for a device
+
+```crmscript
+String GetPushNotificationTagsForDevice(String deviceIdentifier)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSPocketAgent agent;
+String deviceIdentifier;
+String res = agent.GetPushNotificationTagsForDevice(deviceIdentifier);
+```
+
+## GetRegisteredDevices(Integer)
+
+Retrieves all registered devices for an associate
+
+```crmscript
+NSPocketDeviceInfo[] GetRegisteredDevices(Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPocketDeviceInfo](CRMScript.NetServer.NSPocketDeviceInfo)[]
+
+## RegisterDeviceForPushNotification(NSPocketDeviceInfo)
+
+Registers a device that should receive push notifications when notable events occur
+
+```crmscript
+Void RegisterDeviceForPushNotification(NSPocketDeviceInfo deviceInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RunAppointmentAlarmBroker()
+
+Executes the AppointmentAlarmBroker once
+
+```crmscript
+Void RunAppointmentAlarmBroker()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SendPushNotification(Integer[],PocketNotificationMessage)
+
+Sends a push notification to one or more associates
+
+```crmscript
+Void SendPushNotification(Integer[] associateIds, PocketNotificationMessage message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPushNotificationTagsForDevice(String,String)
+
+```crmscript
+Void SetPushNotificationTagsForDevice(String deviceIdentifier, String tags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPushNotificationTagsForUser(Integer,String)
+
+```crmscript
+Void SetPushNotificationTagsForUser(Integer associateId, String tags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This will update all registered devices for this user.
+</Note>

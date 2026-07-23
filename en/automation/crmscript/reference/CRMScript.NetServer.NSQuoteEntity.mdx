@@ -1,0 +1,446 @@
+﻿---
+uid: crmscript.netserver.nsquoteentity
+title: NSQuoteEntity
+description: "Quote methods."
+keywords: CRMScript, NSQuoteEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteEntity
+
+Quote methods.
+
+## Constructors
+
+### NSQuoteEntity()
+
+```crmscript
+NSQuoteEntity
+```
+
+Initializes a new instance of the NSQuoteEntity class.
+
+## Methods
+
+## GetAcceptedQuoteAlternativeId()
+
+```crmscript
+Integer GetAcceptedQuoteAlternativeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key of the Quote Alternative which was finally accepted by the customer.
+
+<Note>
+Set when the user is marking a quote as accepted.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer acceptedQuoteAlternativeId = thing.GetAcceptedQuoteAlternativeId();
+```
+
+## GetActiveQuoteVersionId()
+
+```crmscript
+Integer GetActiveQuoteVersionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key of the Quote Version that is currently active.
+
+<Note>
+The active version will always be the latest version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer activeQuoteVersionId = thing.GetActiveQuoteVersionId();
+```
+
+## GetDocumentId()
+
+```crmscript
+Integer GetDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the main Quote Document.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer documentId = thing.GetDocumentId();
+```
+
+## GetERPOrderKey()
+
+```crmscript
+String GetERPOrderKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The key in the ERP system that identifies this sale's Order, as transferred and possibly later edited in the ERP system.
+
+<Note>
+Only filled out if there exists a corresponding order representation of the quote in the ERP system.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String eRPOrderKey = thing.GetERPOrderKey();
+```
+
+## GetERPQuoteKey()
+
+```crmscript
+String GetERPQuoteKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Foreign key of quote (if available). The key in the ERP system that identifies this sale's Quote (as opposed to the later Order information).
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String eRPQuoteKey = thing.GetERPQuoteKey();
+```
+
+## GetOrderComment()
+
+```crmscript
+String GetOrderComment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A comment that is intended for the Invoice, Order, Packing list and similar stages* AFTER the quote has become an order and goes to ERP for processing.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String orderComment = thing.GetOrderComment();
+```
+
+## GetPoNumber()
+
+```crmscript
+String GetPoNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Customer's Purchase order number.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String poNumber = thing.GetPoNumber();
+```
+
+## GetPreferredEmailCulture()
+
+```crmscript
+String GetPreferredEmailCulture()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - When emails are sent (offer or confirmation), a language can be chosen in the GUI; this field saves the most recent choice and can be used to default the next such choice. Default-default is user's current language.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String preferredEmailCulture = thing.GetPreferredEmailCulture();
+```
+
+## GetQuoteConnectionId()
+
+```crmscript
+Integer GetQuoteConnectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The connection in the CRM system to where this quote came from. Identifies the ERP connection used for this quote. Each quote is bound to one and only one connection.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer quoteConnectionId = thing.GetQuoteConnectionId();
+```
+
+## GetQuoteId()
+
+```crmscript
+Integer GetQuoteId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer quoteId = thing.GetQuoteId();
+```
+
+## GetQuoteVersions()
+
+```crmscript
+NSQuoteVersion[] GetQuoteVersions()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)[] - Array og QuoteVersions connected to the quote.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+NSQuoteVersion[] quoteVersions = thing.GetQuoteVersions();
+```
+
+## GetSaleId()
+
+```crmscript
+Integer GetSaleId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The foreign key to the corresponding sale.
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer saleId = thing.GetSaleId();
+```
+
+## GetUseValuesFromQuote()
+
+```crmscript
+Integer GetUseValuesFromQuote()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If true, then the Earning, Earning_Percent and Amount fields are populated from the QuoteVersion.QuoteAlternative (current revision, most-likely alternative).
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer useValuesFromQuote = thing.GetUseValuesFromQuote();
+```
+
+## SetAcceptedQuoteAlternativeId(Integer)
+
+```crmscript
+Void SetAcceptedQuoteAlternativeId(Integer acceptedQuoteAlternativeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer acceptedQuoteAlternativeId;
+thing.SetAcceptedQuoteAlternativeId(acceptedQuoteAlternativeId);
+```
+
+## SetActiveQuoteVersionId(Integer)
+
+```crmscript
+Void SetActiveQuoteVersionId(Integer activeQuoteVersionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The active version will always be the latest version.
+</Note>
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer activeQuoteVersionId;
+thing.SetActiveQuoteVersionId(activeQuoteVersionId);
+```
+
+## SetDocumentId(Integer)
+
+```crmscript
+Void SetDocumentId(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer documentId;
+thing.SetDocumentId(documentId);
+```
+
+## SetERPOrderKey(String)
+
+```crmscript
+Void SetERPOrderKey(String eRPOrderKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String eRPOrderKey;
+thing.SetERPOrderKey(eRPOrderKey);
+```
+
+## SetERPQuoteKey(String)
+
+```crmscript
+Void SetERPQuoteKey(String eRPQuoteKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String eRPQuoteKey;
+thing.SetERPQuoteKey(eRPQuoteKey);
+```
+
+## SetOrderComment(String)
+
+```crmscript
+Void SetOrderComment(String orderComment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String orderComment;
+thing.SetOrderComment(orderComment);
+```
+
+## SetPoNumber(String)
+
+```crmscript
+Void SetPoNumber(String poNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String poNumber;
+thing.SetPoNumber(poNumber);
+```
+
+## SetPreferredEmailCulture(String)
+
+```crmscript
+Void SetPreferredEmailCulture(String preferredEmailCulture)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+String preferredEmailCulture;
+thing.SetPreferredEmailCulture(preferredEmailCulture);
+```
+
+## SetQuoteConnectionId(Integer)
+
+```crmscript
+Void SetQuoteConnectionId(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer quoteConnectionId;
+thing.SetQuoteConnectionId(quoteConnectionId);
+```
+
+## SetQuoteId(Integer)
+
+```crmscript
+Void SetQuoteId(Integer quoteId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer quoteId;
+thing.SetQuoteId(quoteId);
+```
+
+## SetQuoteVersions(NSQuoteVersion[])
+
+```crmscript
+Void SetQuoteVersions(NSQuoteVersion[] quoteVersions)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+NSQuoteVersion[] quoteVersions;
+thing.SetQuoteVersions(quoteVersions);
+```
+
+## SetSaleId(Integer)
+
+```crmscript
+Void SetSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer saleId;
+thing.SetSaleId(saleId);
+```
+
+## SetUseValuesFromQuote(Integer)
+
+```crmscript
+Void SetUseValuesFromQuote(Integer useValuesFromQuote)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteEntity thing;
+Integer useValuesFromQuote;
+thing.SetUseValuesFromQuote(useValuesFromQuote);
+```

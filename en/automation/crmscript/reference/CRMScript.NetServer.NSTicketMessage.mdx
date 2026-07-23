@@ -1,0 +1,401 @@
+﻿---
+uid: crmscript.netserver.nsticketmessage
+title: NSTicketMessage
+description: "The TicketMessage carrier is used for representing a service ticket message."
+keywords: CRMScript, NSTicketMessage, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketMessage
+
+The TicketMessage carrier is used for representing a service ticket message.
+
+## Constructors
+
+### NSTicketMessage()
+
+```crmscript
+NSTicketMessage
+```
+
+Initializes a new instance of the NSTicketMessage class.
+
+## Methods
+
+## GetAuthor()
+
+```crmscript
+String GetAuthor()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string representing the author of the message. Could be a user's name, or a persons email address.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String author = thing.GetAuthor();
+```
+
+## GetContactDepartment()
+
+\
+
+```crmscript
+String GetContactDepartment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - nDepartment.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String contactDepartment = thing.GetContactDepartment();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetContactName()
+
+```crmscript
+String GetContactName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String contactName = thing.GetContactName();
+```
+
+## GetCreatedAt()
+
+```crmscript
+DateTime GetCreatedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the message was posted.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+DateTime createdAt = thing.GetCreatedAt();
+```
+
+## GetEmailHeader()
+
+```crmscript
+String GetEmailHeader()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email header is saved in this field as raw text.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String emailHeader = thing.GetEmailHeader();
+```
+
+## GetImportant()
+
+```crmscript
+Bool GetImportant()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If this message is important or not.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Bool important = thing.GetImportant();
+```
+
+## GetNumAttachments()
+
+```crmscript
+Integer GetNumAttachments()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of attachments in the message.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer numAttachments = thing.GetNumAttachments();
+```
+
+## GetPersonFullName()
+
+```crmscript
+String GetPersonFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Gets the persons full name (internal name used in clients for employees).
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String personFullName = thing.GetPersonFullName();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetSlevel()
+
+```crmscript
+Integer GetSlevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The security-level of the message. See &lt;xref href=\"CRMScript.NetServer.TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer slevel = thing.GetSlevel();
+```
+
+## GetTicketMessageId()
+
+```crmscript
+Integer GetTicketMessageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer ticketMessageId = thing.GetTicketMessageId();
+```
+
+## SetAuthor(String)
+
+```crmscript
+Void SetAuthor(String author)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String author;
+thing.SetAuthor(author);
+```
+
+## SetContactDepartment(String)
+
+```crmscript
+Void SetContactDepartment(String contactDepartment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String contactDepartment;
+thing.SetContactDepartment(contactDepartment);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetContactName(String)
+
+```crmscript
+Void SetContactName(String contactName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String contactName;
+thing.SetContactName(contactName);
+```
+
+## SetCreatedAt(DateTime)
+
+```crmscript
+Void SetCreatedAt(DateTime createdAt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+DateTime createdAt;
+thing.SetCreatedAt(createdAt);
+```
+
+## SetEmailHeader(String)
+
+```crmscript
+Void SetEmailHeader(String emailHeader)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String emailHeader;
+thing.SetEmailHeader(emailHeader);
+```
+
+## SetImportant(Bool)
+
+```crmscript
+Void SetImportant(Bool important)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Bool important;
+thing.SetImportant(important);
+```
+
+## SetNumAttachments(Integer)
+
+```crmscript
+Void SetNumAttachments(Integer numAttachments)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer numAttachments;
+thing.SetNumAttachments(numAttachments);
+```
+
+## SetPersonFullName(String)
+
+```crmscript
+Void SetPersonFullName(String personFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+String personFullName;
+thing.SetPersonFullName(personFullName);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetSlevel(Integer)
+
+```crmscript
+Void SetSlevel(Integer slevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer slevel;
+thing.SetSlevel(slevel);
+```
+
+## SetTicketMessageId(Integer)
+
+```crmscript
+Void SetTicketMessageId(Integer ticketMessageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessage thing;
+Integer ticketMessageId;
+thing.SetTicketMessageId(ticketMessageId);
+```

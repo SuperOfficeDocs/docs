@@ -1,0 +1,2522 @@
+﻿---
+uid: crmscript.global.void
+title: Void
+description: "Global functions"
+keywords: CRMScript, Void, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Void
+
+Global functions
+
+## Methods
+
+## addAction(String,String,Bool)
+
+Adds an action to the Screen definition associated with this script (when the script is the load script for a Screen). An action is essentially a connection between a button with a given name and a script. When a button in the screen is pressed, the list of actions is checked, and the action with the matching button name (e.g. "ok", "cancel", "addSomething") will be found and the script will be executed.
+
+```crmscript
+Void addAction(String button, String script, Bool doCheck)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Normally, doCheck should be True for buttons that submit the form, and False for buttons that add lines to grids, and so on.
+</Note>
+
+## addChatMessage(Integer,String,Integer,String,Integer,String)
+
+Adds a message to a chat session.
+
+```crmscript
+Integer addChatMessage(Integer sessionId, String message, Integer type, String author, Integer specialType, String specialParams)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+You can optionally pass a &lt;code&gt;DateTime&lt;/code&gt; to set when the message will show up.
+</Note>
+
+## addChatMessage(Integer,String,Integer,String,Integer,String,DateTime)
+
+Adds a message to a chat session and sets when the message will show up.
+
+```crmscript
+Integer addChatMessage(Integer sessionId, String message, Integer type, String author, Integer specialType, String specialParams, DateTime whenPosted)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+This variant of addChatMessage() is especially used for ChatBot-integrations.
+</Note>
+
+## addHtmlElement(Integer,String,Integer,Map)
+
+Adds an HTML element to the associated screen when this script is executed as the load script for a screen.
+
+```crmscript
+HtmlElement addHtmlElement(Integer id, String name, Integer type, Map config)
+```
+
+**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+
+<Note>
+You can optionally provide the zero-based position of the element in the list of elements for the screen.
+</Note>
+
+## addHtmlElement(Integer,String,Integer,Map,Integer)
+
+Adds an HTML element to the associated screen with a zero-based position when this script is executed as the load script for a screen.
+
+```crmscript
+HtmlElement addHtmlElement(Integer id, String name, Integer type, Map config, Integer position)
+```
+
+**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+
+## addHtmlElement(Integer,String,Integer,String)
+
+Adds an HTML element to the associated screen when this script is executed as the load script for a screen.
+
+```crmscript
+HtmlElement addHtmlElement(Integer id, String name, Integer type, String config)
+```
+
+**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+
+<Note>
+You can optionally provide the zero-based position of the element in the list of elements for the screen.
+</Note>
+
+## addHtmlElement(Integer,String,Integer,String,Integer)
+
+Adds an HTML element to the associated screen with a zero-based position when this script is executed as the load script for a screen.
+
+```crmscript
+HtmlElement addHtmlElement(Integer id, String name, Integer type, String config, Integer position)
+```
+
+**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+
+## assert(Bool)
+
+Throws an AssertException if condition is false. The exception contains the line number where the assert occurred.
+
+```crmscript
+Void assert(Bool condition)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used primarily with unit testing.
+</Note>
+
+## assertEquals(Bool,Bool)
+
+Throws an AssertException if the two parameters are not equal. Specifically: if bool1!=bool2. The exception contains the line number where the assert occurred.
+
+```crmscript
+Void assertEquals(Bool bool1, Bool bool2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used primarily with unit testing.
+</Note>
+
+## assertEquals(Float,Float)
+
+Throws an AssertException if the two parameters are not equal. Specifically: if float1!=float2. The exception contains the line number where the assert occurred.
+
+```crmscript
+Void assertEquals(Float float1, Float float2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used primarily with unit testing.
+</Note>
+
+## assertEquals(Integer,Integer)
+
+Throws an AssertException if the two parameters are not equal. Specifically: if integer1!=integer2. The exception contains the line number where the assert occurred.
+
+```crmscript
+Void assertEquals(Integer integer1, Integer integer2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used primarily with unit testing.
+</Note>
+
+## assertEquals(String,String)
+
+Throws an AssertException if the two parameters are not equal. Specifically: if string1!=string2. The exception contains the line number where the assert occurred.
+
+```crmscript
+Void assertEquals(String string1, String string2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used primarily with unit testing.
+</Note>
+
+## authenticateCustomer(String,String)
+
+Checks a customer's username and password. Returns personId if successful, otherwise a null Integer.
+
+```crmscript
+Integer authenticateCustomer(String username, String password)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The personId of the found customer. A null-Integer if the username was not found, or the password was incorrect.
+
+## buildUrl()
+
+Returns all POST and GET variables for the current URL.
+
+```crmscript
+String buildUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - All POST and GET variables for the current URL.
+
+## cgiWasPost()
+
+Checks if the CGI HTTP request was of type POST.
+
+```crmscript
+Bool cgiWasPost()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the CGI HTTP request was of type POST (not GET or anything else).
+
+<Note>
+Service uses only GET and POST. POST is used when submitting most forms, a GET request is usually someone clicking a link, first time entering the bLogic screen.
+</Note>
+
+## checkReply(String)
+
+Checks if it is ok to send a receipt to the indicated email address.
+
+```crmscript
+Bool checkReply(String email)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if it is ok to send a receipt to the indicated email address; otherwise, false.
+
+<Note>
+Every time this method is called, it records that an email has been sent to the email address. If this is done too often within a specified time interval (specified in config table), you should not send an email to the email address to prevent swamping.
+</Note>
+
+## combineHtmlStrings(Vector)
+
+Takes several strings, each containing an HTML document, and combines them into one HTML string.
+
+```crmscript
+String combineHtmlStrings(Vector htmlStrings)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - HTML string.
+
+<Note>
+The head contents in each string is combined into the head tag of the output string, except for the title tag. The title tag is taken from the first string in the vector.
+
+The body content is likewise combined into the body tag of the output string. All strings except for the first will have their body tags converted to div tags.
+</Note>
+
+## convertStatus(Integer)
+
+Converts a status given by its integer identifier to its string representation.
+
+```crmscript
+String convertStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The status as a string.
+
+<Note>
+The method is language-dependent.
+</Note>
+
+## copyCRMDocumentToAttachment(Integer)
+
+Copies the content of a CRM Document, given the ID, to a new Service attachment.
+
+```crmscript
+Integer copyCRMDocumentToAttachment(Integer crmDocId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly created Service attachment.
+
+<Note>
+There is no sync between these two, so only a copy at the point of time is made.
+</Note>
+
+## debugWait(String)
+
+Pauses the script if it is in debug mode (see enableDebug). Stores the info string in the database entry for the current debug session so that it can be viewed in the debugger.
+
+```crmscript
+Void debugWait(String info)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## decodeBase64(String)
+
+Decodes a base64-encoded string into a byte array.
+
+```crmscript
+Byte[] decodeBase64(String base64)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Decoded byte array.
+
+## decodeBase64AsStream(String)
+
+Decodes a base64-encoded string into an NSStream.
+
+```crmscript
+NSStream decodeBase64AsStream(String base64)
+```
+
+**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+
+## decodeDBValue(String)
+
+Decodes the value returned by for example NetServer archives, i.e [I:23], and returns the value as a string.
+
+```crmscript
+String decodeDBValue(String dbValue)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+You must convert it into the preferred type if used as anything else than a string.
+</Note>
+
+## enableDebug(String)
+
+Enables debugging for the current script, with the given ID. If the executing environment contains the same debugId, then this script will enter debug mode.
+
+```crmscript
+Void enableDebug(String debugId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+To set the debugId in a browser, use the "?action=debug" parameter. It is possible to debug a script, while it will continue to run as normal for other users.
+</Note>
+
+## encodeBase32(Byte[])
+
+Encodes bytes to a base32 string.
+
+```crmscript
+String encodeBase32(Byte[] data)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base32-encoded string.
+
+## encodeBase64(Byte[])
+
+Encodes bytes to a base64 string.
+
+```crmscript
+String encodeBase64(Byte[] data)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+
+<Note>
+You can optionally pass a Bool to control if the encoded data should be wrapped with new lines or not.
+</Note>
+
+## encodeBase64(Byte[],Bool)
+
+Encodes bytes to a base64 string specifying if the encoded data should be wrapped with new lines or not.
+
+```crmscript
+String encodeBase64(Byte[] data, bool wrapLines)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+
+## encodeBase64(NSStream)
+
+Encodes bytes to a base64 string.
+
+```crmscript
+String encodeBase64(NSStream data)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+
+<Note>
+You can optionally pass a Bool to control if the encoded data should be wrapped with new lines or not.
+</Note>
+
+## encodeBase64(NSStream,Bool)
+
+Encodes bytes to a base64 string specifying if the encoded data should be wrapped with new lines or not.
+
+```crmscript
+String encodeBase64(NSStream data, bool wrapLines)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+
+## encodeHMACSHA1(Byte[],Byte[])
+
+Generates and returns a hash from a specified key-value pair using the HMAC SHA1 encoding algorithm.
+
+```crmscript
+Byte[] encodeHMACSHA1(Byte[] key, Byte[] value)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The generated hash.
+
+<Note>
+This can be used to ensure data integrity. The hash cannot be decrypted back.
+</Note>
+
+## encodeHMACSHA1(String,String)
+
+Generates and returns a hash from a specified key-value pair using the HMAC SHA1 encoding algorithm.
+
+```crmscript
+String encodeHMACSHA1(String key, String value)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The generated hash (formatted as hex).
+
+<Note>
+This can be used to ensure data integrity. The hash cannot be decrypted back.
+</Note>
+
+## encodeHMACSHA256(String,String)
+
+Generates and returns a hash from a specified key-value pair using the HMAC SHA256 encoding algorithm.
+
+```crmscript
+Byte[] encodeHMACSHA256(String key, String value)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The generated hash.
+
+<Note>
+This can be used to ensure data integrity. The hash cannot be decrypted back.
+</Note>
+
+## encodeHMACSHA512(String,String)
+
+Generates and returns a hash from a specified key-value pair using the HMAC SHA512 encoding algorithm.
+
+```crmscript
+Byte[] encodeHMACSHA512(String key, String value)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The generated hash.
+
+<Note>
+This can be used to ensure data integrity. The hash cannot be decrypted back.
+</Note>
+
+## encodeSHA1(String)
+
+Generates and returns a hash from a specified value using the SHA1 encoding algorithm.
+
+```crmscript
+String encodeSHA1(String value)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The generated hash (formatted as hex).
+
+<Note>
+This can be used to ensure data integrity. The hash cannot be decrypted back.
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "Hello world!";
+printLine(encodeSHA1("Hello there!")); // Prints "6b19cb3790b6da8f7c34b4d8895d78a56d078624"
+printLine(encodeSHA1("Hello world!")); // Prints "d3486ae9136e7856bc42212385ea797094475802"
+printLine(encodeSHA1(s));              // Prints "d3486ae9136e7856bc42212385ea797094475802"
+```
+
+## encodeSHA256(String,String)
+
+Generates and returns a hash from a specified key-value pair using the HMAC SHA256 encoding algorithm.
+
+```crmscript
+String encodeSHA256(String key, String value)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The generated hash. The same key-value pair always returns the same hash (formatted as hex).
+
+<Note>
+This can be used to ensure data integrity. The hash cannot be decrypted back.
+</Note>
+
+**Example:**
+
+```crmscript
+String s = "Hello world!";
+printLine(encodeSHA256("test", "Hello there!")); // Prints "39bf407008986fa79eac9cb0b3c8da3fb46acdd6f71721e38e6c4bbf1d14c222"
+printLine(encodeSHA256("test", "Hello world!")); // Prints "1700f488c1e47cf1a8e8337c0a51d176291a5b4a200fe9bab866765a86edc0a4"
+printLine(encodeSHA256("test", s));              // Prints "1700f488c1e47cf1a8e8337c0a51d176291a5b4a200fe9bab866765a86edc0a4"
+```
+
+## executeDbiAgentSchedule(Integer,Map)
+
+Manually starts a DBI agent schedule. It is possible to supply a map of parameter values used by the schedule.
+
+```crmscript
+Void executeDbiAgentSchedule(Integer scheduleId, Map values)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## executeMacro(String)
+
+The outermost function for executing a macro.
+
+```crmscript
+String executeMacro(String parameters)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## executeScript(String,Map)
+
+```crmscript
+String executeScript(String script, Map values)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Function to execute CRMScript code supplied.
+</Note>
+
+## executeSQLQuery(String)
+
+Executes the specified SQL statement. &lt;strong&gt;This function is not available in CRM Online!&lt;/strong&gt;
+
+```crmscript
+Void executeSQLQuery(String sql)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void) - Does not return anything!
+
+<Note>
+In case of an error in the SQL statement, an exception will be thrown.
+</Note>
+
+## exitWithMessage(String)
+
+Exits running the rest of the script and displays a message with text from the parameter.
+
+```crmscript
+Void exitWithMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Useful for exiting a script when for example detecting that the current user doesn't have access to a ticket.
+</Note>
+
+## faqSearch(Integer,Integer,String,Parser,Integer)
+
+Searches FAQ using the same search engine as the customer pages do and fills the parser with the result.
+
+```crmscript
+Parser faqSearch(Integer root, Integer access, String message, Parser p, Integer max)
+```
+
+**Returns:** [CRMScript.Native.Parser](CRMScript.Native.Parser) - The reference to the Parser instance.
+
+<Note>
+Available parser variables (sorted, where the top most is the best hit):
+&lt;h3&gt;Category parser array&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;faq.categoryId - the id of the matching category&lt;/li&gt;&lt;li&gt;faq.categoryName - the name of the matching category&lt;/li&gt;&lt;li&gt;faq.categoryLink - a URL to the customer pages to the matching category&lt;/li&gt;&lt;li&gt;faq.categoryDescription - the description of the matching category&lt;/li&gt;&lt;li&gt;faq.categoryScore - the score of the matching category, given in percentage with 2 decimals precision&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Entry parser array&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;faq.entryId - the ID of the matching entry&lt;/li&gt;&lt;li&gt;faq.entryName - the name of the matching entry&lt;/li&gt;&lt;li&gt;faq.entryLink - a URL to the customer pages to the matching entry&lt;/li&gt;&lt;li&gt;faq.entryQuestion - the question part of the matching entry&lt;/li&gt;&lt;li&gt;faq.entryScore - the score of the matching entry, given in percentage with 2 decimals precision&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## findReplyTemplateToMerge(Integer)
+
+If you have configured any categories to use specified ReplyTemplates, use this method to calculate the ReplyTemplate ID.
+
+```crmscript
+Integer findReplyTemplateToMerge(Integer categoryId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the reply template to use.
+
+## flushCaches()
+
+Flushes the caches in NetServer.
+
+```crmscript
+Void flushCaches()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## forceSaveTrace(Bool)
+
+If there is a script trace enabled for the current script, with the exception-only flag set, calling this method with true as the parameter will make the trace become saved, just like if there was an unhandled exception.
+
+```crmscript
+Void forceSaveTrace(Bool)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+forceSaveTrace(true);
+```
+
+## forwardMail(String,String,Integer)
+
+Forwards preformatted email.
+
+```crmscript
+Void forwardMail(String mail, String to, Integer ticketId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getActiveUser()
+
+Returns a reference to the active user instance.
+
+```crmscript
+User getActiveUser()
+```
+
+**Returns:** [CRMScript.Native.User](CRMScript.Native.User) - A reference to the active user instance.
+
+## getAgentId(String)
+
+Returns the ID of the agent matching the parameter.
+
+```crmscript
+Integer getAgentId(String idString)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the agent matching the parameter; null if no match found.
+
+## getAgentScheduleId(String)
+
+Returns the ID of the agent schedule with the given name.
+
+```crmscript
+Integer getAgentScheduleId(String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the agent schedule with the given name; -1 if no agent schedule was found.
+
+## getAttachmentsSize(Integer[])
+
+Gets the total byte size of the specified attachments.
+
+```crmscript
+Integer getAttachmentsSize(Integer[] attachmentIds)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total size of the specified attachments.
+
+## getCategoryIdFromFullname(String)
+
+Finds category ID from the category's full name.
+
+```crmscript
+Integer getCategoryIdFromFullname(String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of category.
+
+## getCgiContent()
+
+Returns the raw content of the HTTP request.
+
+```crmscript
+String getCgiContent()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The raw content of the HTTP request.
+
+## getCgiUrl()
+
+Returns the cgiUrl value from the config table. For example, http://ejournal.company.com
+
+```crmscript
+String getCgiUrl()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string stored as the cgiUrl.
+
+<Note>
+Used for creating URLs.
+</Note>
+
+## getCgiVariable(String)
+
+Returns the CGI variable with the given name.
+
+```crmscript
+String getCgiVariable(String varName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The CGI variable with the given name.
+
+## getCgiVariableArray(String)
+
+Returns a string array of all CGI variables matching the given name
+
+```crmscript
+String[] getCgiVariableArray(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - All CGI variables matching the given name.
+
+## getCgiVariables()
+
+Returns a map of all CGI variables.
+
+```crmscript
+Map getCgiVariables()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing all CGI variables.
+
+## getCookie(String)
+
+Returns the CGI cookie with the given name. &lt;strong&gt;This method is not available in CRM Online.&lt;/strong&gt;
+
+```crmscript
+String getCookie(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The CGI cookie with the given name.
+
+## getCurrent(String)
+
+Gets the value of the given key from the map of values common to all of the SuperOffice web applications running.
+
+```crmscript
+String getCurrent(String key)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The corresponding value.
+
+## getCurrentDate()
+
+Returns the current date.
+
+```crmscript
+Date getCurrentDate()
+```
+
+**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date) - The current date.
+
+**Example:**
+
+```crmscript
+print(getCurrentDate().toString());
+```
+
+## getCurrentDateTime()
+
+Returns the current date and time.
+
+```crmscript
+DateTime getCurrentDateTime()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+print(getCurrentDateTime().toString());
+```
+
+## getCurrentTime()
+
+Gets the current time.
+
+```crmscript
+Time getCurrentTime()
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time) - The current time.
+
+## getCustomerMainEmail(Integer)
+
+Returns the main email of the specified customer.
+
+```crmscript
+String getCustomerMainEmail(Integer custId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An empty string is returned if the customer does not have an email address or the customer does not exist.
+
+## getDbiControl()
+
+Used to access the global DBI control object, which is used for database integration.
+
+```crmscript
+DbiControl getDbiControl()
+```
+
+**Returns:** [CRMScript.Native.DbiControl](CRMScript.Native.DbiControl) - The global dbi control object.
+
+## getDefaultElementConfig(Integer,String,String)
+
+Returns the default config for an element type given a table and language.
+
+```crmscript
+String getDefaultElementConfig(Integer type, String table, String language)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The config as a string with name = value lines.
+
+## getDocumentId(String)
+
+Returns the ID of the document with the given name.
+
+```crmscript
+Integer getDocumentId(String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the document; -1 if no agent schedule was found.
+
+## getEnvVariable(String)
+
+Returns the OS environment variable with the given name. &lt;strong&gt;This method is not available in CRM Online.&lt;/strong&gt;
+
+```crmscript
+String getEnvVariable(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The OS environment variable with the given name.
+
+## getEventData()
+
+Returns an EventData object connected to the current event.
+
+```crmscript
+EventData getEventData()
+```
+
+**Returns:** [CRMScript.Native.EventData](CRMScript.Native.EventData) - EventData object connected to the current event
+
+## getExecutable()
+
+Returns the executable with the full path that the current script is running in.
+
+```crmscript
+String getExecutable()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getExternalProgram(Integer)
+
+Returns the external URL of the program module specified by progId (if available).
+
+```crmscript
+String getExternalProgram(Integer progId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+<Note>
+&lt;h3&gt;progId&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;td&gt;progId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;Hex&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;modNull&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0x00000000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modTicket&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0x00000001&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdmin&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0x00000002&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modDocument&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0x00000004&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modHelp&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;0x00000008&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustomer&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;0x00000010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modKnowledge&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;0x00000020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modPlanner&lt;/td&gt;&lt;td&gt;64&lt;/td&gt;&lt;td&gt;0x00000040&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAds&lt;/td&gt;&lt;td&gt;128&lt;/td&gt;&lt;td&gt;0x00000080&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSchedule&lt;/td&gt;&lt;td&gt;256&lt;/td&gt;&lt;td&gt;0x00000100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modStat&lt;/td&gt;&lt;td&gt;512&lt;/td&gt;&lt;td&gt;0x00000200&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRms&lt;/td&gt;&lt;td&gt;1024&lt;/td&gt;&lt;td&gt;0x00000400&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustLang&lt;/td&gt;&lt;td&gt;2048&lt;/td&gt;&lt;td&gt;0x00000800&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modExtDb&lt;/td&gt;&lt;td&gt;4096&lt;/td&gt;&lt;td&gt;0x00001000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdvancedFAQ&lt;/td&gt;&lt;td&gt;8192&lt;/td&gt;&lt;td&gt;0x00002000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modChat&lt;/td&gt;&lt;td&gt;16384&lt;/td&gt;&lt;td&gt;0x00004000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSpm&lt;/td&gt;&lt;td&gt;32768&lt;/td&gt;&lt;td&gt;0x00008000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoap&lt;/td&gt;&lt;td&gt;65536&lt;/td&gt;&lt;td&gt;0x00010000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoapPublic&lt;/td&gt;&lt;td&gt;131072&lt;/td&gt;&lt;td&gt;0x00020000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSms&lt;/td&gt;&lt;td&gt;26214&lt;/td&gt;&lt;td&gt;0x00040000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modBlogic&lt;/td&gt;&lt;td&gt;524288&lt;/td&gt;&lt;td&gt;0x00080000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRetail&lt;/td&gt;&lt;td&gt;1048576&lt;/td&gt;&lt;td&gt;0x00100000&lt;/tr&gt;&lt;/body&gt;&lt;/table&gt;
+</Note>
+
+## getExternalProgramAdmin()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramAdmin()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramAjax()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramAjax()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramBlogic()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramBlogic()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramChat()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramChat()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getExternalProgramCustomer()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramCustomer()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramDocument()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramDocument()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramHelp()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramHelp()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramKnowledge()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramKnowledge()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramRms()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramRms()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramSoap()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramSoap()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramStat()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramStat()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExternalProgramTicket()
+
+Returns the external URL of the program module specified after getProgram.
+
+```crmscript
+String getExternalProgramTicket()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+
+## getExtraTable(String)
+
+Returns the ExtraTable instance for the given name.
+
+```crmscript
+ExtraTable getExtraTable(String name)
+```
+
+**Returns:** [CRMScript.Native.ExtraTable](CRMScript.Native.ExtraTable) - The ExtraTable.
+
+<Note>
+Throws an exception if the table does not exist.
+</Note>
+
+## getFavourites(String)
+
+Returns an array containing the IDs of all favorites in the given table.
+
+```crmscript
+Integer[] getFavourites(String table)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Array containing IDs of favorites.
+
+## getFunctionList()
+
+Returns an array with the description of all CRMScript functions defined in the system.
+
+```crmscript
+String[][] getFunctionList()
+```
+
+**Returns:** [CRMScript.Global.String[]](CRMScript.Global.String[])[] - Double String array with the description of all CRMScript functions. The inner array contains 0 - class name; 1 - return type; 2 - function name; 3 - parameter list; 4 - author.
+
+## getGlobalStaticMap()
+
+Returns a global and static map.
+
+```crmscript
+Map getGlobalStaticMap()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+<Note>
+Useful to eliminate the need to fetch the same info several times within one run of the app, bLogic events and ticket save especially.
+</Note>
+
+## getGlobalVariable(String)
+
+Gets a value from the global variables.
+
+```crmscript
+String getGlobalVariable(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Used for communication between different scripts.
+</Note>
+
+## getHtmlElement(String)
+
+Returns a reference to an HtmlElement in the associated screen.
+
+```crmscript
+HtmlElement getHtmlElement(String name)
+```
+
+**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The HtmlElement with the given name.
+
+## getHtmlElementIndex(String)
+
+Gets the index of the specified HTML element. This is useful if you want to insert elements after a particular HTML element, and you do not know the index of it.
+
+```crmscript
+Integer getHtmlElementIndex(String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The index of the specified element.
+
+<Note>
+Can only be called from a screen definition, it will fail if called from a regular script.
+</Note>
+
+## getHtmlElementName(Integer)
+
+Returns the name of the element with the given index.
+
+```crmscript
+String getHtmlElementName(Integer index)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the element.
+
+## getHttpHeader(String)
+
+Returns the value of the specified header name.
+
+```crmscript
+String getHttpHeader(String headerName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The header value.
+
+<Note>
+&lt;h3&gt;Header names&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;ACCEPT-*&lt;/li&gt;&lt;li&gt;ACCESS-CONTROL-REQUEST-METHOD&lt;/li&gt;&lt;li&gt;ACCESS-CONTROL-REQUEST-HEADERS&lt;/li&gt;&lt;li&gt;CACHE-CONTROL&lt;/li&gt;&lt;li&gt;CONTENT-LENGTH&lt;/li&gt;&lt;li&gt;CONTENT-TYPE&lt;/li&gt;&lt;li&gt;DATE&lt;/li&gt;&lt;li&gt;DNT&lt;/li&gt;&lt;li&gt;EXPECT&lt;/li&gt;&lt;li&gt;IF-*&lt;/li&gt;&lt;li&gt;ORIGIN&lt;/li&gt;&lt;li&gt;PRAGMA&lt;/li&gt;&lt;li&gt;RANGE&lt;/li&gt;&lt;li&gt;REFERER&lt;/li&gt;&lt;li&gt;REQUEST-METHOD&lt;/li&gt;&lt;li&gt;REQUEST-URI&lt;/li&gt;&lt;li&gt;TE&lt;/li&gt;&lt;li&gt;USER-AGENT&lt;/li&gt;&lt;li&gt;X-CRMSCRIPT-*&lt;/li&gt;&lt;li&gt;X-FORWARDED-FOR&lt;/li&gt;&lt;li&gt;X-REQUESTED-WITH&lt;/li&gt;&lt;li&gt;X-SUPEROFFICE-EVENT&lt;/li&gt;&lt;li&gt;X-SUPEROFFICE-EVENTID&lt;/li&gt;&lt;li&gt;X-SUPEROFFICE-RETRY&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+String method = getHttpHeader("REQUEST-METHOD");
+```
+
+## getLanguageVariable(String)
+
+Converts a language variable to a string in the language of the current user or, if provided, corresponding to a specific language code.
+
+```crmscript
+String getLanguageVariable(String langVar)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The language variable in the language given by language code or of the current user.
+
+<Note>
+Searches in the language variables for the current screen in addition to the common language variables.
+</Note>
+
+## getLanguageVariable(String,String)
+
+Converts a language variable to a string in the language of the current user or, if provided, corresponding to a specific language code.
+
+```crmscript
+String getLanguageVariable(String langVar, String langCode)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The language variable in the language given by language code or of the current user.
+
+<Note>
+Searches in the language variables for the current screen in addition to the common language variables.
+</Note>
+
+## getLocalTimeZone()
+
+Returns the local timezone.
+
+```crmscript
+TimeZone getLocalTimeZone()
+```
+
+**Returns:** [CRMScript.Global.TimeZone](CRMScript.Global.TimeZone) - The local timezone.
+
+## getMainMenu()
+
+Returns a reference to the global MainMenu instance.
+
+```crmscript
+MainMenu getMainMenu()
+```
+
+**Returns:** [CRMScript.Native.MainMenu](CRMScript.Native.MainMenu) - The global MainMenu instance.
+
+<Note>
+Used for changing the left-hand menu in the system.
+</Note>
+
+## getNtUser()
+
+Returns the username supplied from the web server.
+
+```crmscript
+String getNtUser()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Nt user name.
+
+<Note>
+Works with Apache and IIS, but required user authentication on the web server.
+
+Derived from UNMAPPED_REMOTE_USER or REMOTE_USER environment variable
+</Note>
+
+## getNumHtmlElements()
+
+Returns the current number of the HtmlElements in the current screen.
+
+```crmscript
+Integer getNumHtmlElements()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The current number of the HtmlElements in the current screen.
+
+## getParser()
+
+Returns a reference to the global Parser instance.
+
+```crmscript
+Parser getParser()
+```
+
+**Returns:** [CRMScript.Native.Parser](CRMScript.Native.Parser) - The reference to the Parser instance.
+
+## getParserParameter(String)
+
+Returns the value of the given parameter in the global Parser instance.
+
+```crmscript
+String getParserParameter(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the given parameter in the global Parser instance.
+
+<Note>
+You can optionally pass the zero-based index of the value.
+</Note>
+
+## getParserParameter(String,Integer)
+
+Returns the value of the given parameter at the zero-based index in the global Parser instance.
+
+```crmscript
+String getParserParameter(String name, Integer index)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the given parameter in the global Parser instance.
+
+## getParserParameterCount(String)
+
+Returns the number of values for the given parameters in the global Parser object.
+
+```crmscript
+Integer getParserParameterCount(String paramName)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of values for the parameter the Parser.
+
+## getParserVariable(String)
+
+Returns the (first) value for the given variable from the global Parser instance.
+
+```crmscript
+String getParserVariable(String varName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+You can optionally pass the zero-based row of the parser-query result set.
+</Note>
+
+## getParserVariable(String,Integer)
+
+Returns the (first) value for the given variable from the global Parser instance at the zero-based row of the parser-query result set.
+
+```crmscript
+String getParserVariable(String varName, Integer row)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getParserVariableAsCSV(String,Bool)
+
+Returns a variable from the global Parser instance as a comma-separated string.
+
+```crmscript
+String getParserVariableAsCSV(String paramName, Bool forceQuoting)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If True, then each element will be quoted. If false, only elements that need to be quoted (i.e. when they contain a comma) will be quoted.
+
+## getParserVariableCount(String)
+
+Returns the number of values for the specified value in the global Parser instance.
+
+```crmscript
+Integer getParserVariableCount(String varName)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of values for the variable.
+
+## getPID()
+
+Returns the PID of the executable that the script is running in.
+
+```crmscript
+Integer getPID()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The PID of the executable that the script is running in.
+
+## getPriorityIdFromName(String)
+
+Returns the ID of the priority with the given name.
+
+```crmscript
+Integer getPriorityIdFromName(String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the priority.
+
+## getProgram(Integer)
+
+Returns the URL of the program module specified by progId.
+
+```crmscript
+String getProgram(Integer progId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+&lt;h3&gt;progId&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;td&gt;progId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;Hex&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;modNull&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0x00000000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modTicket&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0x00000001&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdmin&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0x00000002&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modDocument&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0x00000004&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modHelp&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;0x00000008&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustomer&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;0x00000010&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modKnowledge&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;0x00000020&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modPlanner&lt;/td&gt;&lt;td&gt;64&lt;/td&gt;&lt;td&gt;0x00000040&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAds&lt;/td&gt;&lt;td&gt;128&lt;/td&gt;&lt;td&gt;0x00000080&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSchedule&lt;/td&gt;&lt;td&gt;256&lt;/td&gt;&lt;td&gt;0x00000100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modStat&lt;/td&gt;&lt;td&gt;512&lt;/td&gt;&lt;td&gt;0x00000200&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRms&lt;/td&gt;&lt;td&gt;1024&lt;/td&gt;&lt;td&gt;0x00000400&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modCustLang&lt;/td&gt;&lt;td&gt;2048&lt;/td&gt;&lt;td&gt;0x00000800&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modExtDb&lt;/td&gt;&lt;td&gt;4096&lt;/td&gt;&lt;td&gt;0x00001000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modAdvancedFAQ&lt;/td&gt;&lt;td&gt;8192&lt;/td&gt;&lt;td&gt;0x00002000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modChat&lt;/td&gt;&lt;td&gt;16384&lt;/td&gt;&lt;td&gt;0x00004000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSpm&lt;/td&gt;&lt;td&gt;32768&lt;/td&gt;&lt;td&gt;0x00008000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoap&lt;/td&gt;&lt;td&gt;65536&lt;/td&gt;&lt;td&gt;0x00010000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSoapPublic&lt;/td&gt;&lt;td&gt;131072&lt;/td&gt;&lt;td&gt;0x00020000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modSms&lt;/td&gt;&lt;td&gt;26214&lt;/td&gt;&lt;td&gt;0x00040000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modBlogic&lt;/td&gt;&lt;td&gt;524288&lt;/td&gt;&lt;td&gt;0x00080000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;modRetail&lt;/td&gt;&lt;td&gt;1048576&lt;/td&gt;&lt;td&gt;0x00100000&lt;/tr&gt;&lt;/body&gt;&lt;/table&gt;
+</Note>
+
+## getProgramAdmin()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramAdmin()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramAjax()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramAjax()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramBlogic()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramBlogic()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramChat()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramChat()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramCustomer()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramCustomer()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramDocument()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramDocument()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramHelp()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramHelp()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramKnowledge()
+
+Returns the URL of the knowledge base (document.exe).
+
+```crmscript
+String getProgramKnowledge()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL of the knowledge base (document.exe).
+
+## getProgramRms()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramRms()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramSoap()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramSoap()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramStat()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramStat()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getProgramTicket()
+
+Returns the URL of the program module specified after getProgram.
+
+```crmscript
+String getProgramTicket()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+
+## getReplyTemplateBody(Integer,Bool,Integer)
+
+Returns reply template text as specified by the parameters.
+
+```crmscript
+String getReplyTemplateBody(Integer id, Bool useHTML, Integer langId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getReplyTemplateSubject(Integer,Integer)
+
+Returns reply template subject.
+
+```crmscript
+String getReplyTemplateSubject(Integer id, Integer langId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getScreenElementConfig(Integer)
+
+Returns the config of the screen element with the given index in the current screen definition.
+
+```crmscript
+Map getScreenElementConfig(Integer index)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A map containing the config of the element.
+
+<Note>
+Can only be called from a screen definition, it will fail if called from a regular script.
+</Note>
+
+## getScreenElementId(Integer)
+
+Returns the ID of the screen element with the given index in the current screen definition.
+
+```crmscript
+Integer getScreenElementId(Integer index)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the element.
+
+<Note>
+Can only be called from a screen definition, it will fail if called from a regular script.
+</Note>
+
+## getScreenElementName(Integer)
+
+Returns the name of the screen element with the given index in the current screen definition.
+
+```crmscript
+String getScreenElementName(Integer index)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An integer defining the type of the element.
+
+<Note>
+Can only be called from a screen definition, it will fail if called from a regular script.
+</Note>
+
+## getScreenElementType(Integer)
+
+Returns the type of the screen element with the given index in the current screen definition.
+
+```crmscript
+Integer getScreenElementType(Integer index)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+Can only be called from a screen definition, it will fail if called from a regular script.
+&lt;h3&gt;Simple elements&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeAnchorLine = 1,&lt;/li&gt;&lt;li&gt;TypeInfoFields = 2,&lt;/li&gt;&lt;li&gt;TypeGrid = 3,&lt;/li&gt;&lt;li&gt;TypeHR = 4,&lt;/li&gt;&lt;li&gt;TypeBR = 5,&lt;/li&gt;&lt;li&gt;TypeSubHeader = 6,&lt;/li&gt;&lt;li&gt;TypeParserCode = 7,&lt;/li&gt;&lt;li&gt;TypeMessages = 8,&lt;/li&gt;&lt;li&gt;TypeEjScript = 9,&lt;/li&gt;&lt;li&gt;TypeHtmlGrid = 10,&lt;/li&gt;&lt;li&gt;TypePlanner = 11,&lt;/li&gt;&lt;li&gt;TypeStaticGrid = 12,&lt;/li&gt;&lt;li&gt;TypeDrillDown = 13,&lt;/li&gt;&lt;li&gt;TypeGenericGrid = 14,&lt;/li&gt;&lt;li&gt;TypeInfoFields2 = 15,&lt;/li&gt;&lt;li&gt;TypeExtraTableEntriesGrid = 16,&lt;/li&gt;&lt;li&gt;TypeDirectedAcyclicGraph = 17,&lt;/li&gt;&lt;/ul&gt;&lt;h&gt;Form elements&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeText = 101,&lt;/li&gt;&lt;li&gt;TypeTextarea = 102,&lt;/li&gt;&lt;li&gt;TypeSelectCategory = 103,&lt;/li&gt;&lt;li&gt;TypeSelectCustomer = 104,&lt;/li&gt;&lt;li&gt;TypeSelectCompany = 105,&lt;/li&gt;&lt;li&gt;TypeSelectDate = 106,&lt;/li&gt;&lt;li&gt;TypeSelectDateTime = 107,&lt;/li&gt;&lt;li&gt;TypeSelectTime = 108,&lt;/li&gt;&lt;li&gt;TypeButtonRow = 109,&lt;/li&gt;&lt;li&gt;TypeCheckbox = 110,&lt;/li&gt;&lt;li&gt;TypeEditor = 111,&lt;/li&gt;&lt;li&gt;TypeInvoice = 112,&lt;/li&gt;&lt;li&gt;TypeSelectUser = 113,&lt;/li&gt;&lt;li&gt;TypeSelectExtraField = 114,&lt;/li&gt;&lt;li&gt;TypeSelect = 115,&lt;/li&gt;&lt;li&gt;TypeSendTo = 116,&lt;/li&gt;&lt;li&gt;TypeSelectReplyTemplate = 117,&lt;/li&gt;&lt;li&gt;TypeSelectTimeSpan = 118,&lt;/li&gt;&lt;li&gt;TypeSelectRelation = 119,&lt;/li&gt;&lt;li&gt;TypeSelectPriority = 120,&lt;/li&gt;&lt;li&gt;TypeCc = 121,&lt;/li&gt;&lt;li&gt;TypeAttachment = 122,&lt;/li&gt;&lt;li&gt;TypeSelectSlevel = 123,&lt;/li&gt;&lt;li&gt;TypeCustomers = 124,&lt;/li&gt;&lt;li&gt;TypeSelectFaq = 125,&lt;/li&gt;&lt;li&gt;TypeSelectDictionaryLang = 126,&lt;/li&gt;&lt;li&gt;TypeButton = 127,&lt;/li&gt;&lt;li&gt;TypeSelectMultipleRelations = 128,&lt;/li&gt;&lt;li&gt;TypeTreeExplorer = 129,&lt;/li&gt;&lt;li&gt;TypePinEdit = 130,&lt;/li&gt;&lt;li&gt;TypeContactRecipients = 131,&lt;/li&gt;&lt;li&gt;TypeTicketStatus = 132,&lt;/li&gt;&lt;li&gt;TypeSelectMessage = 133,&lt;/li&gt;&lt;li&gt;TypeCategoryMembership = 134,&lt;/li&gt;&lt;li&gt;TypeAddressBook = 135,&lt;/li&gt;&lt;li&gt;TypeRelatedDropdowns = 136,&lt;/li&gt;&lt;li&gt;TypeSelectTicketStatus = 137,&lt;/li&gt;&lt;li&gt;TypeSelectTable = 138,&lt;/li&gt;&lt;li&gt;TypeFckEdit = 139,&lt;/li&gt;&lt;li&gt;TypeWhere = 140,&lt;/li&gt;&lt;li&gt;TypeSelectInsertText = 141,&lt;/li&gt;&lt;li&gt;TypeRadioButtons = 142,&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Groups&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeFieldset = 201,&lt;/li&gt;&lt;li&gt;TypeLayoutTable = 202,&lt;/li&gt;&lt;li&gt;TypePanes = 203,&lt;/li&gt;&lt;li&gt;TypePane = 204,&lt;/li&gt;&lt;li&gt;TypeVerticalTable = 205,&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Group end marker&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeGroupEnd = 301&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## getScriptId(String)
+
+Returns the ID of the script matching the parameter
+
+```crmscript
+Integer getScriptId(String idString)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the script matching the parameter; null if no match found.
+
+## getSelectionIds(Integer)
+
+Returns the IDs of the objects in the selection with the given ID.
+
+```crmscript
+Integer[] getSelectionIds(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - The IDs of the objects in the selection.
+
+## getSessionVariable(String)
+
+Makes it possible to store variables in the database which the web application can use as long as a session lives. That is until a user logs out.
+
+```crmscript
+String getSessionVariable(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - String value if found.
+
+## getSessionVariables()
+
+Returns a map containing all session variables for the current session.
+
+```crmscript
+Map getSessionVariables()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - All session variables for the current session.
+
+## getStatusIdFromName(String)
+
+Returns the ID of the status with the given name.
+
+```crmscript
+Integer getStatusIdFromName(String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the status.
+
+## getSystemFlags()
+
+Gets the system flags. This is the same value as is stored in the database table config.flags.
+
+```crmscript
+Integer getSystemFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Flags.
+
+## getSystemLang()
+
+Returns the active system language.
+
+```crmscript
+String getSystemLang()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The active system language.
+
+## getUserLang()
+
+Returns the active user language.
+
+```crmscript
+String getUserLang()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The active user language.
+
+## getUsername(Integer)
+
+Gets username from the user ID.
+
+```crmscript
+String getUsername(Integer userId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Username.
+
+## getVariable(String)
+
+Returns the value in the global environment (used for communication between the script the calling context).
+
+```crmscript
+String getVariable(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the variable.
+
+## getVariables()
+
+Returns a map containing all run time environment variables (available through getVariable()).
+
+```crmscript
+Map getVariables()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - All run time environment variables.
+
+## getWarnings()
+
+Returns a map of the current system warnings.
+
+```crmscript
+Map getWarnings()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - The current system warnings.
+
+<Note>
+Warnings are messages intended for system administrators, such as email failure warnings, expired FAQ entries, etc. They are normally listed on the status screen.
+</Note>
+
+## htmlConvToText(String)
+
+Converts the given HTML text to plain text.
+
+```crmscript
+String htmlConvToText(String text)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A textual version of the HTML text.
+
+## idToLang(Integer)
+
+Returns the code of the given language ID.
+
+```crmscript
+String idToLang(Integer langId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Language code of the given language Id.
+
+## installPackage(String)
+
+Installs a package provided as xml.
+
+```crmscript
+String installPackage(String xml)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Empty if no error, otherwise an error message.
+
+## invoiceTypesExists()
+
+Checks if invoice types exist in the database.
+
+```crmscript
+Bool invoiceTypesExists()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if there are invoice types; otherwise, False.
+
+## isValidPhoneNumber(String,Bool)
+
+Validates if it is a valid phonenumber
+
+```crmscript
+Bool isValidPhoneNumber(String nr, Bool isMultiple)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if valid phone number; otherwise, false.
+
+## langToId(String)
+
+Returns the ID of the given language code.
+
+```crmscript
+Integer langToId(String langCode)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the given language code. If no match, it returns 0 (which is Norwegian).
+
+## log(String)
+
+Writes a message to the new log (the one in the database), which can be accessed with "rms?action=newLog".
+
+```crmscript
+Void log(String msg)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## logMessage(String)
+
+Writes a message to the log file.
+
+```crmscript
+Void logMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## makePassword(Integer)
+
+Used to create a random password of length p, with the given seed charactersCreates and returns a random password of the given length. You can optionally pass the given seed characters.
+
+```crmscript
+String makePassword(Integer length)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A random password of the given length.
+
+## makePassword(Integer,String)
+
+Used to create a random password of length p, with the given seed charactersCreates and returns a random password of the given length.
+
+```crmscript
+String makePassword(Integer length, String seed)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A random password of the given length.
+
+## mapValue(String)
+
+Allocates a new map and maps the given value to the string "value".
+
+```crmscript
+Map mapValue(String value)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A map containing the value.
+
+## modulo(Integer,Integer)
+
+Returns a modulo b. This can also be done with the syntax "a % b".
+
+```crmscript
+Integer modulo(Integer a, Integer b)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The result of a modulo b.
+
+## parseJSON(String)
+
+Parses a JSON document and generate a tree of XMLNode's.
+
+```crmscript
+XMLNode parseJSON(String jsonDocument)
+```
+
+**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode)
+
+<Note>
+This function has a bug. Empty arrays will still return one child. We recommend using &lt;code&gt;parseJSON2()&lt;/code&gt; instead where this bug has been fixed. Except for the fix, the function is identical. It is available from 8.4R03.
+</Note>
+
+**Example:**
+
+```crmscript
+String jsonString = "{"menu": {"liste": [ "1", "2", "3", true, 123, 1.23 ],"id": "file","value": "File""tall": 1.234567,"sant": true,"usant": false,"tom": null,"popup": {"menuitem": [{"value": "New", "onclick":"CreateNewDoc()"},{"value": "Open", "onclick": "OpenDoc()"},{"value": "Close", "onclick": "CloseDoc()"}]}}}";
+XMLNode xmlObject = parseJSON(jsonString); // Converts jsonString to XML
+printLine(xmlObject.toJSON(0)); // Prints out the actual JSON content
+//For example the following JSON document:
+//
+//{"menu": {
+//  "liste": [ "1", "2", "3", true, 123, 1.23 ],
+//  "id": "file",
+//  "value": "File",
+//  "tall": 1.234567,
+//  "sant": true,
+//  "usant": false,
+//  "tom": null,
+//  "popup": {
+//    "menuitem": [
+//      {"value": "New", "onclick": "CreateNewDoc()"},
+//      {"value": "Open", "onclick": "OpenDoc()"},
+//      {"value": "Close", "onclick": "CloseDoc()"}
+//    ]
+//  }
+//}}
+//
+//
+//Output:
+//
+//<root type="object">
+//  <menu type="object">
+//    <liste type="array">
+//      <item type="string">1</item>
+//      <item type="string">2</item>
+//      <item type="string">3</item>
+//      <item type="bool">true</item>
+//      <item type="number">123</item>
+//      <item type="number">1.23</item>
+//    </liste>
+//    <id type="string">file</id>
+//    <value type="string">File</value>
+//    <tall type="number">1.234567</tall>
+//    <sant type="bool">true</sant>
+//    <usant type="bool">false</usant>
+//    <tom type="null">null</tom>
+//    <popup type="object">
+//      <menuitem type="array">
+//        <item type="object">
+//          <value type="string">New</value>
+//          <onclick type="string">CreateNewDoc()</onclick>
+//        </item>
+//        <item type="object">
+//          <value type="string">Open</value>
+//          <onclick type="string">OpenDoc()</onclick>
+//        </item>
+//        <item type="object">
+//          <value type="string">Close</value>
+//          <onclick type="string">CloseDoc()</onclick>
+//        </item>
+//      </menuitem>
+//    </popup>
+//  </menu>
+//</root>
+```
+
+## parseJSON2(String)
+
+Parses a JSON document and generate a tree of XMLNode's.
+
+```crmscript
+XMLNode parseJSON2(String jsonDocument)
+```
+
+**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode)
+
+**Example:**
+
+```crmscript
+String jsonString = "{"menu": {"liste": [ "1", "2", "3", true, 123, 1.23 ],"id": "file","value": "File","tall": 1.234567,"sant": true,"usant": false,"tom": null,"popup": {"menuitem": [{"value": "New", "onclick": "CreateNewDoc()"},{"value": "Open", "onclick": "OpenDoc()"},{"value": "Close", "onclick": "CloseDoc()"}]}}}";
+XMLNode xmlObject = parseJSON2(jsonString); // Converts jsonString to XML
+printLine(xmlObject.toJSON(0)); // Prints out the actual JSON content
+```
+
+## parseXML(String)
+
+Parses an XML document and generate a tree of XMLNode's.
+
+```crmscript
+XMLNode parseXML(String xmlDocument)
+```
+
+**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode) - The root XMLNode.
+
+## pauseTracing(Bool)
+
+Pauses or unpauses script tracing, depending on the parameter. Multiple calls to pauseTracing(true) must be matched with an equal number of calls to pauseTracing(false) to unpause.
+
+```crmscript
+Integer pauseTracing(Bool pause)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The current pause level after process this call.
+
+## pow()
+
+The pow function returns base raised to the expth power.
+
+```crmscript
+Float pow(Float base, Float exp)
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The base raised to the expth power. If the base is zero and exp is less than or equal to zero, or the base is negative and exp is not an integer, an invalid float like -1.#IND0 will be returned. If the result is too large an invalid float like 1.#INF0 will be returned.
+
+## print(String)
+
+Prints the string to the screen.
+
+```crmscript
+Void print(String s)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Will only work in certain contexts (when there is a screen to print to).
+</Note>
+
+## printBinary(Byte[])
+
+Outputs the bytes to the standard output stream. You can pass the data to encode as either Byte[] or NSStream.
+
+```crmscript
+Void printBinary(Byte[])
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## printBinary(NSStream)
+
+Outputs the bytes to the standard output stream. You can pass the data to encode as either Byte[] or NSStream.
+
+```crmscript
+Void printBinary(NSStream)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## printDebug(String)
+
+Adds the input debug to the debug string which will be shown in the debug window.
+
+```crmscript
+Void printDebug(String debug)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## printLine(String)
+
+Prints lines into standard output without appending \\r\
+ in p_line.
+
+```crmscript
+Void printLine(String line)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## rand(Integer,Integer)
+
+Returns a random value between min and max. The seed is set by the cgi application when it is invoked.
+
+```crmscript
+Integer rand(Integer min, Integer max)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A random value min &lt;= r &lt;= max.
+
+## reloadAndSendShipment(Integer)
+
+Reloads mailings selections and schedule to send again immediately.
+
+```crmscript
+Bool reloadAndSendShipment(Integer shipmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if it worked; False if it did not work, because the mailing was in an illegal state for this operation.
+
+<Note>
+Used when you have added more people to the selection and want to send to them as well.
+</Note>
+
+## removeHtmlElement(Integer)
+
+Removes the element with the given index
+
+```crmscript
+Void removeHtmlElement(Integer index)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Can only be called from a screen definition, it will fail if called from a regular script
+</Note>
+
+## removePackage(String)
+
+Removes the package with the given name.
+
+```crmscript
+String removePackage(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Empty if no error, otherwise an error message.
+
+## resetChat(Integer)
+
+Resets a chat session and places it in queue/pre-chat-form/offline-form depending on the topic's settings.
+
+```crmscript
+Void resetChat(Integer sessionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Typically called when a Bot wants to transfer a chat session to a human user agent.
+</Note>
+
+## runProgram(String)
+
+Executes the program (given command) and returns what was sent to stdout. &lt;strong&gt;This method is not available in CRM Online.&lt;/strong&gt;
+
+```crmscript
+String runProgram(String command)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+The owner of the process running the CRMScript needs permissions to execute the program. You can optionally pass the codepage used.
+</Note>
+
+## runProgram(String,String)
+
+Executes the program (given command) with a codepage and returns what was sent to stdout. &lt;strong&gt;This method is not available in CRM Online.&lt;/strong&gt;
+
+```crmscript
+String runProgram(String command, String codepage)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+The owner of the process running the CRMScript needs permissions to execute the program.
+</Note>
+
+## saveAllCgiAttachments(String)
+
+Saves all cgi attachments with the given name.
+
+```crmscript
+Integer[] saveAllCgiAttachments (String name)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - An array containing the attachment IDs of all the saved attachments.
+
+## saveCgiAttachment(String)
+
+Saves the attachment in cgi variable with the name given and returns the ID of the attachment record in the attachment table.
+
+```crmscript
+Integer saveCgiAttachment(String varName)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved attachment.
+
+## setChatStatus(Integer,Integer)
+
+Changes the status of a chat session.
+
+```crmscript
+Void SetChatStatus(Integer sessionId, Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The available statuses are:
+
+&lt;ul&gt;&lt;li&gt;StatusInvalid = 0,&lt;/li&gt;&lt;li&gt;StatusPreChatForm = 1,&lt;/li&gt;&lt;li&gt;StatusFaq = 2,&lt;/li&gt;&lt;li&gt;StatusOfflineForm = 3,&lt;/li&gt;&lt;li&gt;StatusInQueue = 4,&lt;/li&gt;&lt;li&gt;StatusCustomerLast = 5,&lt;/li&gt;&lt;li&gt;StatusUserLast = 6,&lt;/li&gt;&lt;li&gt;StatusFinished = 7,&lt;/li&gt;&lt;li&gt;StatusDeleted = 8,&lt;/li&gt;&lt;li&gt;StatusClosed = 9,&lt;/li&gt;&lt;li&gt;StatusRequestPosted = 10,&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## setCookie(String,String,Bool)
+
+&lt;strong&gt;This method is not available in CRM Online.&lt;/strong&gt;
+
+```crmscript
+Void setCookie(String name, String value, Bool persistent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+NB! Doesn't work in the customer center, use parser variable with an underscore (_) instead.
+</Note>
+
+## setCurrent(String,String)
+
+Maps the given key and value in the map of the values common for all the SuperOffice web applications running.
+
+```crmscript
+Void SetCurrent(String key, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setFromCgi()
+
+Sets all the elements of the associated screen from the global CGI instance. This is normally done when a screen is loaded/reloaded but after the load script.
+
+```crmscript
+Void SetFromCgi()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This function allows one to force this element initialization in the script, so that values may be accessed.n
+</Note>
+
+## setGlobalVariable(String,String)
+
+Sets the value of a global variable (used for communication between different scripts).
+
+```crmscript
+Void SetGlobalVariable(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setHidden(String,String)
+
+Sets the value of a hidden variable in the associated screen. Hidden variables are values that are carried through a screen, and which can be accessed by the following scripts.
+
+```crmscript
+Void SetHidden(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setPageFocusFirstControl(Bool)
+
+Used to set focus to first control in screens.
+
+```crmscript
+Void SetPageFocusFirstControl(Bool p0)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setPageOnLoad(String)
+
+Void setPageOnLoad(String onLoad)
+
+```crmscript
+Void SetPageOnLoad(String p0)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setPageRefresh(Integer)
+
+Sets the page meta refresh to the specified seconds, thus making the screen refresh.
+
+```crmscript
+Void SetPageRefresh(Integer seconds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If this method is used in a script that is not connected to a screen, nothing will happen.
+</Note>
+
+## setPageTitle(String)
+
+Alters the page title. You will be able to set the text after the version information.
+
+```crmscript
+Void SetPageTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setParserVariable(String,String)
+
+Sets (adds) a variable to the global Parser instance.
+
+```crmscript
+Void SetParserVariable(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setSessionVariable(String,String)
+
+Writes a SessionObject entry to the databaseWrites a SessionObject entry to the database.
+
+```crmscript
+String setSessionVariable(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Stores variables in the database that the web application can use as long as a session lives (until a user logs out).
+</Note>
+
+## setUserIsTyping(Integer,Bool)
+
+Sets or clears the "User is typing" flag of a chat session.
+
+```crmscript
+Void SetUserIsTyping(Integer sessionId, Bool isTyping)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setVariable(String,String)
+
+Sets the value in the global environment (used for communication between the script the calling context).
+
+```crmscript
+Void SetVariable(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## simpleTwoWay(Byte[])
+
+Simple two-way data encryption.  Data -&gt; Encrypted data -&gt; data
+
+```crmscript
+Byte[] simpleTwoWay(Byte[] data)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Byte array with encrypted/decrypted data.
+
+## sleep()
+
+Sleeps (give up CPU) for some time.
+
+```crmscript
+Void sleep(Float seconds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Useful in some CPU-intensive loops to maintain a responsive system.
+</Note>
+
+**Example:**
+
+```crmscript
+sleep(01); //sleeps for about one-tenth of a second.
+```
+
+## getTypeName(Generic)
+
+Returns the type of a variable (will automatically be up-casted to generic).
+
+```crmscript
+String getTypeName(Generic generic)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the type as a String.
+
+**Example:**
+
+```crmscript
+printLine(getTypeName(getCurrentDateTime()));
+```
+
+## getGenericValue(Generic, String)
+
+Returns a variable from the run-time environment given its name and independent of its type.
+
+```crmscript
+Generic getGenericValue(Generic struct, String name)
+```
+
+**Returns:** [CRMScript.Native.Generic](CRMScript.Native.Generic) - The variable as a Generic, independent of its type.
+
+<Note>
+An exception is thrown if the name is unknown, or the struct is not a struct.
+</Note>
+
+**Example:**
+
+```crmscript
+struct Person {
+\tString name;
+\tInteger age;
+};
+Person person;
+person.age = 42;
+Generic g = getGenericValue(person, "age");
+```
+
+## getGenericValue(String)
+
+Returns a variable from the run-time environment given its name and independent of its type.
+
+You can optionally provide a struct to scope the variable.
+
+```crmscript
+Generic getGenericValue(String name)
+```
+
+**Returns:** [CRMScript.Native.Generic](CRMScript.Native.Generic) - The variable as a Generic, independent of its type.
+
+<Note>
+An exception is thrown if the name is unknown, or the struct is not a struct.
+</Note>
+
+**Example:**
+
+```crmscript
+Integer age = 42;
+Generic g = getGenericValue("age");
+printLine(GenericToInteger(g).toString());
+```
+
+## GenericToBool(Generic)
+
+Converts a Generic variable to a Bool (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+Bool GenericToBool(Generic value)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The variable as a Bool.
+
+<Note>
+If the generic doesn't represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToInteger(Generic)
+
+Converts a Generic variable to a Integer (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+Integer GenericToInteger(Generic value)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The variable as an Integer.
+
+<Note>
+If the generic does not represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToFloat(Generic)
+
+Converts a Generic variable to a Float. Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+Float GenericToFloat(Generic value)
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The variable as a Float.
+
+<Note>
+If the generic does not represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToString(Generic)
+
+Converts a Generic variable to a String (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+String GenericToString(Generic value)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The variable as a String.
+
+<Note>
+If the generic does not represent the correct type, an exception is thrown.
+</Note>
+
+## convertGenericToString(Generic)
+
+Returns the string representation of a variable. The argument is automatically be up-casted to a Generic.
+
+```crmscript
+String convertGenericToString(Generic variable)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string representation of the value in the Generic.
+
+<Note>
+Not all types have implemented support for this, and might return "[complex]". All the basic types (String, Integer, Float, and so on) will return a correct string representation of their value.
+</Note>
+
+**Example:**
+
+```crmscript
+Integer age = 42;
+String s = convertGenericToString(age);
+printLine(s);
+```
+
+## setGenericFromString(Generic, String)
+
+Sets the value of a variable from a string. It supports only basic types.
+
+In combination with for example getStructMembers() and getGenericValue(), this function can be used to iterate a struct and set all its members programmatically instead of having to explicit hard-code each one of them.
+
+```crmscript
+Void setGenericFromString(Generic generic, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Attempting to set an array or a complex type will throw an exception.
+
+The value must be formatted according to the constructor of that type. Specifically, Date, DateTime, and Time must be on the YYYY-MM-DD HH:MI:SS format.
+</Note>
+
+## GenericToDate(Generic)
+
+Converts a Generic variable to a Date (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+Date GenericToDate(Generic value)
+```
+
+**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date) - The variable as a Date.
+
+<Note>
+If the generic does not represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToDateTime(Generic)
+
+Converts a Generic variable to a DateTime (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+DateTime GenericToDateTime(Generic value)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The variable as a DateTime.
+
+<Note>
+If the generic does not represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToTime(Generic)
+
+Converts a Generic variable to a Time (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+Time GenericToTime(Generic value)
+```
+
+**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time) - The variable as a Time.
+
+<Note>
+If the generic does not represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToTimeSpan(Generic)
+
+Converts a Generic variable to a TimeSpan (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+TimeSpan GenericToTimeSpan(Generic value)
+```
+
+**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan) - The variable as a TimeSpan.
+
+<Note>
+If the generic does not represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToByte(Generic)
+
+Converts a Generic variable to a Byte (explicit downcast). Together with getTypeName(), this function can be used to get an explicit typed variable.
+
+```crmscript
+Byte GenericToByte(Generic value)
+```
+
+**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte) - The variable as a Byte.
+
+<Note>
+If the generic doesn't represent the correct type, an exception is thrown.
+</Note>
+
+## GenericToArray(Generic)
+
+Converts a Generic variable to an array of Generic (explicit downcast). Typically, this function is used when traversing the members of a struct, and one of the members is an array. This can be tested with getTypeDimensions(), and then GenericToArray() can be used to access the sub-elements of the array for further (recursive) processing.
+
+```crmscript
+Generic[] GenericToArray(Generic value)
+```
+
+**Returns:** [CRMScript.Native.Generic](CRMScript.Native.Generic)[] - The variable as an array.
+
+<Note>
+If the generic does not represent an array, an exception is thrown.
+</Note>
+
+## getTypeDimensions(Generic)
+
+Returns the number of array dimensions for a variable. The argument is automatically up-casted to a Generic.
+
+```crmscript
+Integer getTypeDimensions(Generic value)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of dimensions.
+
+<Note>
+This is the number of dimensions in, not the length of, the array!
+</Note>
+
+**Example:**
+
+```crmscript
+Integer[][] i;
+printLine(getTypeDimensions(i).toString())
+```
+
+## typeIsStruct(Generic)
+
+Checks whether a variable is a struct or not. Any variable can be checked. The argument is automatically up-casted to a Generic.
+
+```crmscript
+Bool typeIsStruct(Generic generic)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the variable is a struct.
+
+**Example:**
+
+```crmscript
+struct Person {
+\tString name;
+\tInteger age;
+};
+Person p;
+if (typeIsStruct(p)) {
+\tprintLine("10-4");
+}
+```
+
+## getStructMembers(String)
+
+Returns the variable names of a struct given its name. It does not includes functions in the list.
+
+```crmscript
+String[] getStructMembers(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - String array of member names.
+
+<Note>
+This is the names, not the actual values. To get those, call getGenericValue() using the member names.
+</Note>

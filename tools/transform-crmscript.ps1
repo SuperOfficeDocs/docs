@@ -283,7 +283,7 @@ foreach ($yamlFile in $yamlFiles) {
     Write-Host "Processing: $($yamlFile.Name)" -ForegroundColor Yellow
     
     # Read file
-    $fileLines = Get-Content $yamlFile.FullName
+    $fileLines = Get-Content $yamlFile.FullName -Encoding UTF8
     
     # Find main uid (usually indented after - in items array)
     $mainUid = ""
@@ -389,7 +389,7 @@ foreach ($yamlFile in $yamlFiles) {
             $childSummary = ""
             
             if (Test-Path $childYamlFile) {
-                $childLines = Get-Content $childYamlFile
+                $childLines = Get-Content $childYamlFile -Encoding UTF8
                 $childItems = Get-YamlItems -Lines $childLines
                 $childMainItem = $childItems | Where-Object { $_.uid -eq $childUid } | Select-Object -First 1
                 if ($childMainItem -and $childMainItem.summary) {

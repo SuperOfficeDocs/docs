@@ -1,0 +1,610 @@
+﻿---
+uid: crmscript.native.searchengine
+title: SearchEngine
+description: "A tool for building up SQL queries, by adding fields, criteria, and data. The fields must be given on the following form: starttablename.fieldname, for example 'ticket.title'. For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: 'ticket.cust_id.firstname'. The company name of the primary customer of a ticket is: 'ticket.cust_id.company.name'."
+keywords: CRMScript, SearchEngine, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# SearchEngine
+
+A tool for building up SQL queries, by adding fields, criteria, and data. The fields must be given on the following form: starttablename.fieldname, for example "ticket.title". For tables that have foreign keys to other tables, you can reach them with the following notation: starttablename.fieldname.fieldname For example, the firstname of the primary customer of a ticket is: "ticket.cust_id.firstname". The company name of the primary customer of a ticket is: "ticket.cust_id.company.name".
+
+Make sure that all fields you use that start with the same table, for example, ticket, or else you will receive a big join that you probably do not want.
+
+For many-to-many relations there is a special notation: table1.(table2-&gt;field2a).field2b Where field2a is a field in table2 that has a foreign key to table1.
+
+From CS version 7, the aggregate functions are no longer supported, since the query is sent to NetServer instead of directly to the database. It is possible to circumvent this by setting the reg_id 235 to 1 and explicitly use bypassNetserver(true) in the SearchEngine. Be aware of any security implications this might cause.
+
+## Constructors
+
+### SearchEngine()
+
+```crmscript
+SearchEngine
+```
+
+Initializes a new instance of the SearchEngine class.
+
+## Methods
+
+## addComparison(String,String,String,String,Integer)
+
+Adds a field-comparison criterion that compares 2 database fields to a database query.
+
+You can optionally add functions to be applied to the 2 fields.
+
+```crmscript
+Void addComparison(String field1, String compOperator, String field2, String rowOperator, Integer priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## addComparison(String,String,String,String,String,String,Integer)
+
+Adds a field-comparison criterion that compares 2 database fields to a database query with functions to be applied to the 2 fields.
+
+```crmscript
+Void addComparison(String field1, String func1, String compOperator, String field2, String func2, String rowOperator, Integer priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lower&lt;/td&gt;&lt;td&gt;FuncLower&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## addCriteria(String,String,String)
+
+Adds a criterion on a database field to the database query
+
+You can optionally add a row operator, priority, and function to be applied to the field.
+
+```crmscript
+Void addCriteria(String field, String compOperator, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## addCriteria(String,String,String,String,Integer)
+
+Adds a criterion on a database field to the database query
+
+You can optionally add a function to be applied to the field.
+
+```crmscript
+Void addCriteria(String field, String compOperator, String value, String rowOperator, Integer priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## addCriteria(String,String,String,String,String,Integer)
+
+Adds a criterion on a database field to the database query.
+
+```crmscript
+Void addCriteria(String field, String function, String compOperator, String value, String rowOperator, Integer priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lower&lt;/td&gt;&lt;td&gt;FuncLower&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## addData(String,String)
+
+Adds data for use in an update or insert query.
+
+```crmscript
+Void addData(String field, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addDataField(String,String)
+
+Adds a data field to the SearchEngine. A data field is a field assigned to another field instead of a value.
+
+```crmscript
+Void addDataField(String field1, String field2)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can optionally add a function to be applied to the second field.
+
+Can only be used in update() queries.
+</Note>
+
+**Example:**
+
+```crmscript
+se.addDataField("customer.phone", "customer.cellphone");
+```
+
+## addDataField(String,String,String)
+
+Adds a data field to the SearchEngine. A data field is a field assigned to another field instead of a value.
+
+Can only be used in update() queries.
+
+```crmscript
+Void addDataField(String field1, String field2, String function)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Available functions&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;count&lt;/li&gt;&lt;li&gt;avg&lt;/li&gt;&lt;li&gt;sum&lt;/li&gt;&lt;li&gt;max&lt;/li&gt;&lt;li&gt;min&lt;/li&gt;&lt;li&gt;hour&lt;/li&gt;&lt;li&gt;wday&lt;/li&gt;&lt;li&gt;upper&lt;/li&gt;&lt;li&gt;lower&lt;/li&gt;&lt;li&gt;castToVarchar&lt;/li&gt;&lt;li&gt;date&lt;/li&gt;&lt;li&gt;time&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## addField(String)
+
+Adds a field to the SELECT part of the database query
+
+```crmscript
+Void addField(String field)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can optionally add a function to be applied to the field.
+</Note>
+
+## addField(String,String)
+
+Adds a field to the SELECT part of the database query with a function to be applied to the field.
+
+```crmscript
+Void addField(String field, String function)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Available functions&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;count&lt;/li&gt;&lt;li&gt;avg&lt;/li&gt;&lt;li&gt;sum&lt;/li&gt;&lt;li&gt;max&lt;/li&gt;&lt;li&gt;min&lt;/li&gt;&lt;li&gt;hour&lt;/li&gt;&lt;li&gt;wday&lt;/li&gt;&lt;li&gt;upper&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## addFields(String,String)
+
+A shortcut to add multiple fields to a query. Adds all fields in the comma-separated string "fields", prefixed by "table" and a dot ".".
+
+```crmscript
+Void addFields(String table, String fields)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+addFields("ticket", "id,title,category.fullname,cust_id.fullName");
+```
+
+## addHaving(String,String,String,String,Integer)
+
+Adds a HAVING clause to the database query.
+
+```crmscript
+Void addHaving(String field, String compOperator, String value, String rowOperator, Integer priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can optionally add a function to be applied to the field.
+</Note>
+
+## addHaving(String,String,String,String,String,Integer)
+
+Adds a HAVING clause to the database query.
+
+```crmscript
+Void addHaving(String field, String function, String compOperator, String value, String rowOperator, Integer priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lower&lt;/td&gt;&lt;td&gt;FuncLower&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Row operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Logical operator&lt;/th&gt;&lt;th&gt;Expression&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorAnd&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;A && B&lt;/td&gt;&lt;td&gt;Only rows matching both conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotAnd&lt;/td&gt;&lt;td&gt;NAND&lt;/td&gt;&lt;td&gt;!(A && B)&lt;/td&gt;&lt;td&gt;Rows matching 0 or 1 condition but not both&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorOr&lt;/td&gt;&lt;td&gt;OR&lt;/td&gt;&lt;td&gt;A || B&lt;/td&gt;&lt;td&gt;Rows matching either condition (or both)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotOr&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;!(A || B)&lt;/td&gt;&lt;td&gt;Only rows matching no conditions&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Comparison operators&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Same as&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;OperatorEquals&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;td&gt;values match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotEquals&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;td&gt;values don't match&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLt&lt;/td&gt;&lt;td&gt;&lt;&lt;/td&gt;&lt;td&gt;value less than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLte&lt;/td&gt;&lt;td&gt;&lt;=&lt;/td&gt;&lt;td&gt;value less than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGt&lt;/td&gt;&lt;td&gt;&gt;&lt;/td&gt;&lt;td&gt;value greater than&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorGte&lt;/td&gt;&lt;td&gt;&gt;=&lt;/td&gt;&lt;td&gt;value greater than or equal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIs&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of the same type&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIsNot&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;values of different types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotLike&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;pattern not found in string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotContains&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string is not present&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorBeginsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string starts with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorEndsWith&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string ends with&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has entries in table&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OperatorNotIn&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;column has no entries in table&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## addJoinCriteria(String,String,String,String,Integer)
+
+Does NOT work with NetServer. You need to bypass NetServer (see the method bypassNetServer) if you need to use this.
+
+```crmscript
+Void addJoinCriteria(String p_0, String p_1, String p_2, String p_3, Integer p_4)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## addOrder(String,Bool)
+
+Adds a restriction to the order on the listing of the database result.
+
+```crmscript
+Void addOrder(String field, Bool ascending)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You can optionally add a function to be applied to the field.
+</Note>
+
+## addOrder(String,String,Bool)
+
+Adds a restriction to the order on the listing of the database result.
+
+```crmscript
+Void addOrder(String field, String function, Bool ascending)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Available functions&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Count&lt;/li&gt;&lt;li&gt;Avg&lt;/li&gt;&lt;li&gt;Sum&lt;/li&gt;&lt;li&gt;Max&lt;/li&gt;&lt;li&gt;Min&lt;/li&gt;&lt;li&gt;Hour&lt;/li&gt;&lt;li&gt;WDay&lt;/li&gt;&lt;li&gt;Upper&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## buildSql()
+
+Returns the SQL query generated by the SearchEngine. The query is built by &lt;code&gt;addCriteria()&lt;/code&gt;,&lt;code&gt;addComparison()&lt;/code&gt;,&lt;code&gt;addData()&lt;/code&gt;, and so on.
+
+```crmscript
+String buildSql()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The SQL query generated by the SearchEngine.
+
+<Note>
+For versions 7.0 and newer, the statement returned will be an estimate of the SQL, since the query is sent to NetServer instead.
+</Note>
+
+## buildSql(String)
+
+Returns the SQL query generated by the SearchEngine. The query is built by &lt;code&gt;addCriteria()&lt;/code&gt;,&lt;code&gt;addComparison()&lt;/code&gt;,&lt;code&gt;addData()&lt;/code&gt;, and so on.
+
+```crmscript
+String buildSql(String type)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The SQL query generated by the SearchEngine.
+
+<Note>
+For versions 7.0 and newer, the statement returned will be an estimate of the SQL, since the query is sent to NetServer instead.
+</Note>
+
+## bypassNetServer(Bool)
+
+From version 7, all queries are sent to NetServer instead of directly to the database. This function will allow you to send the queries directly to the database instead.
+
+```crmscript
+Void bypassNetServer(Bool p_0)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Has no effect if the registry value (reg_id = 235) is set to 0.
+
+Be aware of any security implications by circumventing the NetServer.
+</Note>
+
+## countColumns()
+
+Returns the count of columns (selected fields) in the SearchEngine query.
+
+```crmscript
+Integer countColumns()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The count of columns (selected fields) in the SearchEngine query.
+
+## countRows()
+
+Returns the number of rows in the result set.
+
+```crmscript
+Integer countRows()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of rows in the result set.
+
+## delete()
+
+After adding criteria, call this to delete the items that was selected by the query.
+
+```crmscript
+Void delete()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## eof()
+
+Checks if the end of the result set is reached.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the end of the result set is reached; otherwise, false.
+
+## execute()
+
+Executes the query. Must be called to get the results.
+
+```crmscript
+Integer execute()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## executeHTMLTable()
+
+Executes the query and return the result as a HTML formatted table.
+
+```crmscript
+String executeHTMLTable()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The result as a HTML formatted table.
+
+## executeInto(StringMatrix)
+
+Executes the query and returns the result in the matrix.
+
+```crmscript
+Void executeInto(StringMatrix matrix)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## executeJSON()
+
+Executes the query and return the result as a JSON formatted text.
+
+```crmscript
+String executeJSON()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## executeTextTable()
+
+Executes the query and return the result as a text formatted table (similar to MySQL).
+
+```crmscript
+String executeTextTable()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+have some overhead for large result sets.
+</Note>
+
+## executeToJSONBuilder(JSONBuilder,String,String)
+
+Executes the SearchEngine to a JSONBuilder.
+
+The fields string can contain a comma-separated list of label:fieldType elements, allowing you to better control the resulting json. The label is the name the field gets in the json object. The fieldType can be "Integer", "Float", "Bool", or "String" (default). The json object member will be formatted accordingly, e.g. a Bool will be "true" or "false", while Integer/Float will become unquoted numbers.
+
+The arrayName will become the name of the array in the JSONBuilder.
+
+```crmscript
+Void executeToJSONBuilder(JSONBuilder jb, String fields, String arrayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This is useful if you want this query to populate an array in a JSONBuilder already containing other stuff.
+</Note>
+
+**Example:**
+
+```crmscript
+SearchEngine se;
+se.addFields("sale", "sale_id,heading,amount");
+se.setLimit(10);
+JSONBuilder jb;
+jb.setPrettyPrint(4);
+jb.pushObject("");
+jb.addString("foo", "bar");
+se.executeToJSONBuilder(jb, "id:Integer,heading:String,amount:Float", "sales");
+jb.popLevel();
+printLine(jb.getString());
+```
+
+## findAlternativeFields(String)
+
+Finds all alternative fields given a start field.
+
+These fields can be used in &lt;code&gt;addField()&lt;/code&gt; or similar functions.
+
+```crmscript
+String[] findAlternativeFields(String fieldBeginsWith)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+## findRelations(String,Bool)
+
+```crmscript
+String[] findRelations(String p_0, Bool p_1)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+## first()
+
+Sets the row pointer to the first item of the result set.
+
+```crmscript
+Bool first()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if the result set is empty, otherwise, true.
+
+## getField(Integer)
+
+Returns the value of a field.
+
+```crmscript
+String getField(Integer num)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+You can optionally add a function to be applied to the field when using the name as the identifier.
+</Note>
+
+## getField(String)
+
+Returns the value of a field.
+
+```crmscript
+String getField(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+You can optionally add a function to be applied to the field when using the name as the identifier.
+</Note>
+
+## getField(String,String)
+
+Returns the value of a field.
+
+```crmscript
+String getField(String name, String function)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+
+<Note>
+&lt;h3&gt;Functions&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Function&lt;/th&gt;&lt;th&gt;Other name&lt;/th&gt;&lt;th&gt;Applies to&lt;/th&gt;&lt;th&gt;bypassNetServer&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;avg&lt;/td&gt;&lt;td&gt;FuncAvg&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the average value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;count&lt;/td&gt;&lt;td&gt;FuncCount&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the number of rows matching cond.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sum&lt;/td&gt;&lt;td&gt;FuncSum&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the total sum of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;max&lt;/td&gt;&lt;td&gt;FuncMax&lt;/td&gt;&lt;td&gt;Integer, Float&lt;/td&gt;&lt;td&gt;yes&lt;/td&gt;&lt;td&gt;aggregate, the largest value of a column&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;min&lt;/td&gt;&lt;td&gt;FuncMin&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hour&lt;/td&gt;&lt;td&gt;FuncHour&lt;/td&gt;&lt;td&gt;Time, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;wday&lt;/td&gt;&lt;td&gt;FuncWDay&lt;/td&gt;&lt;td&gt;Date, DateTime&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upper&lt;/td&gt;&lt;td&gt;FuncUpper&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## getFieldsJSON()
+
+Returns fields as JSON formatted string.
+
+```crmscript
+String getFieldsJSON()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## insert()
+
+After adding the values of the fields, call this function to actually do the insert in the database. Returns the resulting ID of the insert.
+
+```crmscript
+Integer insert()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly added item.
+
+## next()
+
+If not the end of the result set is reached, the result pointer is set to the next line.
+
+```crmscript
+Bool next()
+```
+
+**Returns:**
+
+## select()
+
+Does the select-query and returns the size of the result set.
+
+```crmscript
+Integer select()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of items in the result set.
+
+## setCallBack(String)
+
+Sets a CRMScript function as a callback that will be used to convert the values before they are displayed in the grid.
+
+```crmscript
+Void setCallBack(String functionName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setDBDistinct(Bool)
+
+Forces SearchEngine to use a distinct in the query.
+
+```crmscript
+Void setDBDistinct(Bool p_0)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setDistinct(String)
+
+Makes the entries distinct so that equal tickets will not be listed.
+
+```crmscript
+Void setDistinct(String field)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setGroup(Bool)
+
+Sets or removes a group-clause to all of the fields in the query (added by the &lt;code&gt;addField()&lt;/code&gt; function).
+
+```crmscript
+Void setGroup(Bool set)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setLimit(Integer)
+
+Sets the limit of number of rows to receive in the result set.
+
+```crmscript
+Void SetLimit(Integer number)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## update()
+
+Use this function after &lt;code&gt;addData()&lt;/code&gt;, which sets the values that will be modified, and &lt;code&gt;addCriteria()&lt;/code&gt;, which do a restriction on the items to modify.
+
+```crmscript
+Void update()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

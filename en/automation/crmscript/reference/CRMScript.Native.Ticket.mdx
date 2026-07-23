@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.native.ticket
+title: Ticket
+description: "Class for representing an SuperOffice Service Ticket."
+keywords: CRMScript, Ticket, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Ticket
+
+Class for representing an SuperOffice Service Ticket.
+
+## Constructors
+
+### Ticket()
+
+```crmscript
+Ticket
+```
+
+Class for representing an SuperOffice Service Ticket.
+
+## Methods
+
+## buildEmailSubject()
+
+returns a String composed by the Mail tag, the ticketId and the title of the ticket
+
+```crmscript
+String buildEmailSubject()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A String composed by the Mail tag, the ticketId and the title of the ticket.
+
+## checkEscalating(Integer)
+
+This function does a check according to the ticket's priority and the input action. The effect of calling this function might be that the escalation stops, restarts or continues.
+
+```crmscript
+Void checkEscalating(Integer action)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Possible values:&lt;ul&gt;&lt;li&gt;ActionRead = 0&lt;/li&gt;&lt;li&gt;ActionChangedOwner = 1&lt;/li&gt;&lt;li&gt;ActionNewInfo = 2&lt;/li&gt;&lt;li&gt;ActionClosed = 3&lt;/li&gt;&lt;li&gt;ActionChangedPriority = 4&lt;/li&gt;&lt;li&gt;ActionNew = 5&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## delegate()
+
+Delegates a ticket to a user according to the rules on the category.
+
+For this function to take effect, you have to call &lt;code&gt;Ticket.save()&lt;/code&gt;.
+
+```crmscript
+delegate()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## delegate(Integer)
+
+Delegates a ticket to a user according to the rules on the category. You can optionally specify a user ID not to delegate to.
+
+For this function to take effect, you have to call &lt;code&gt;Ticket.save()&lt;/code&gt;.
+
+```crmscript
+delegate(Integer notUser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getInvolvedOnly()
+
+Returns a comma-separated list of the email-addresses of all customers that is not a connected customer to this ticket, but who has received a message on this ticket.
+
+```crmscript
+String getInvolvedOnly()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A comma-separated list of email-addresses.
+
+## getMailFrom()
+
+This function determines and returns the most appropriate from-address, when sending a mail-message on a ticket.
+
+```crmscript
+String getMailFrom()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The most appropriate from-address specified on with address, the ticket has arrived on, the category, etc.
+
+## getOwnerEmail()
+
+This function returns the owner of the ticket printed as "Name" &lt;email-addr&gt;.
+
+```crmscript
+String getOwnerEmail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The owners name and email-address.
+
+## getOwnerSms()
+
+This function returns the cellphone number of the owner of the ticket
+
+```crmscript
+String getOwnerSms()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The cellphone number of the owner of the ticket as a String.
+
+## getValue(String)
+
+Gets the value of given column name as a String
+
+```crmscript
+String getValue(String colName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Returns a string representation of the wanted value.
+
+<Note>
+Possible values:&lt;ul&gt;&lt;li&gt;id&lt;/li&gt;&lt;li&gt;title&lt;/li&gt;&lt;li&gt;category: the ID&lt;/li&gt;&lt;li&gt;ownedBy: (owned_by), the ID of the user who owns the ticket&lt;/li&gt;&lt;li&gt;slevel: the security level of the ticket, 1 is internal, 2 is external&lt;/li&gt;&lt;li&gt;priority: the id&lt;/li&gt;&lt;li&gt;status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed&lt;/li&gt;&lt;li&gt;ticketStatus&lt;/li&gt;&lt;li&gt;custId: the ID of the primary customer&lt;/li&gt;&lt;li&gt;ticket_type/ticketType: the ID of the request type&lt;/li&gt;&lt;li&gt;createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system&lt;/li&gt;&lt;li&gt;author&lt;/li&gt;&lt;li&gt;activate: the datetime when the ticket was activated&lt;/li&gt;&lt;li&gt;createdAt: (created_at), the datetime when the ticket was created&lt;/li&gt;&lt;li&gt;closedAt: (closed_at), the datetime when the ticket was closed&lt;/li&gt;&lt;li&gt;repliedAt: (replied_at), the datetime when the ticket first was replied at&lt;/li&gt;&lt;li&gt;origCategory: the original category&lt;/li&gt;&lt;li&gt;origPriority: the original priority&lt;/li&gt;&lt;li&gt;isInEscalation&lt;/li&gt;&lt;li&gt;displayFilter&lt;/li&gt;&lt;li&gt;filterId&lt;/li&gt;&lt;li&gt;filterAddress&lt;/li&gt;&lt;li&gt;readStatus&lt;/li&gt;&lt;li&gt;deadline&lt;/li&gt;&lt;li&gt;readByOwner&lt;/li&gt;&lt;li&gt;firstReadByUser&lt;/li&gt;&lt;li&gt;firstReadByOwner&lt;/li&gt;&lt;li&gt;saleId: ID of connected Sale&lt;/li&gt;&lt;li&gt;projectId: ID of connected Project&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## load(Integer)
+
+Load ticket with given id into this object, return true if successful, false otherwise.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## log(String)
+
+Writes a message to the ticket log. Used for logging changes and events on a ticket
+
+```crmscript
+log(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## log(String,String)
+
+Writes a message to the ticket log. Used for logging changes and events on a ticket
+
+```crmscript
+log(String who, String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## notifyEmail(Integer)
+
+This function sends a notify-email (a replyTemplate) to the owner of the ticket.
+To use for events like new ticket, new message on ticket etc.
+
+```crmscript
+Bool notifyEmail(Integer replyTemplateId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## save()
+
+Saves the ticket and returns the database ID of the stored ticket.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+
+## save(String)
+
+Saves the ticket and returns the database ID of the stored ticket.
+
+```crmscript
+Integer save(String log)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+
+## save(Bool,Bool)
+
+Saves the ticket and returns the database ID of the stored ticket.
+
+```crmscript
+Integer save(Bool setReadStatus,Bool doNotCheckEscalating)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+
+## save(String,Bool,Bool)
+
+Saves the ticket and returns the database ID of the stored ticket.
+
+```crmscript
+Integer save(String log,Bool setReadStatus,Bool doNotCheckEscalating)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+
+## sendMessages(String,StringMatrix,Bool,String,Integer,String)
+
+Will send the given messages just like the forward ticket functionality in the GUI. The forwarded messages are separated by a line, and the comment is placed on top of the mail.
+
+```crmscript
+Bool sendMessages(String subject, StringMatrix recipients, Bool fromCust, String messages, Integer msgId, String comment)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+The recipients string matrix is formatted like this:
+
+To | John Doe &lt;john.doe@john.doe&gt; Cc | jane Doe &lt;jane.doe@jane.doe&gt;
+</Note>
+
+## setValue(String,String)
+
+Sets column colName to the given value.
+Obs: For this to actually affect the ticket, you will have to use the function save() after you have set all the values you want.
+
+```crmscript
+Void setValue(String colName, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Possible values are the extrafields on the ticket and the following:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;category: the category ID&lt;/li&gt;&lt;li&gt;ownedBy: (owned_by), the ID of the user who owns the ticket&lt;/li&gt;&lt;li&gt;slevel: the security level of the ticket, See &lt;xref href=\"CRMScript.NetServer.TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.&lt;/li&gt;&lt;li&gt;priority: the id&lt;/li&gt;&lt;li&gt;status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed&lt;/li&gt;&lt;li&gt;ticketStatus: (ticket_status), the ID of the custom status field&lt;/li&gt;&lt;li&gt;ticket_type/ticketType: the ID of the request type&lt;/li&gt;&lt;li&gt;custId: the ID of the primary customer&lt;/li&gt;&lt;li&gt;customers: comma-separated list of customer ids&lt;/li&gt;&lt;li&gt;createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system&lt;/li&gt;&lt;li&gt;author: a string containing the name of the ticket author&lt;/li&gt;&lt;li&gt;activate: the datetime when the ticket was activated&lt;/li&gt;&lt;li&gt;createdAt: (created_at), the datetime when the ticket was created&lt;/li&gt;&lt;li&gt;repliedAt: (replied_at), the datetime when the ticket first was replied at&lt;/li&gt;&lt;li&gt;stopEscalation&lt;/li&gt;&lt;li&gt;readStatus (read_status)&lt;/li&gt;&lt;li&gt;deadline&lt;/li&gt;&lt;li&gt;filterAddress&lt;/li&gt;&lt;li&gt;timeToClose&lt;/li&gt;&lt;li&gt;realTimeToClose&lt;/li&gt;&lt;li&gt;dbiAgentId&lt;/li&gt;&lt;li&gt;dbiKey&lt;/li&gt;&lt;li&gt;dbiLastModified&lt;/li&gt;&lt;li&gt;saleId: ID of connected Sale&lt;/li&gt;&lt;li&gt;projectId: ID of connected Project&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## toParser(Parser)
+
+This function will fill the variable space of the Parser with all values of the ticket.
+As opposed to the function toParserRaw(), the String variables title and author are in html.
+
+```crmscript
+Void toParser(Parser theParser)
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+|---|---|---|
+| theParser | [CRMScript.Native.Parser](CRMScript.Native.Parser) | The parser who will be filled with ticket-values. |
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## toParserRaw(Parser)
+
+This function fills the Parser with the values of the ticket.
+As opposed to the function toParser() who set several of the String-values as html, all these variables will be in plain text.
+
+```crmscript
+toParserRaw(Parser theParser)
+```
+
+**Parameters:**
+
+| Name | Type | Description |
+|---|---|---|
+| theParser | [CRMScript.Native.Parser](CRMScript.Native.Parser) | The parser who will be filled with ticket-values. |
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

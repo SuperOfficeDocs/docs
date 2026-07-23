@@ -1,0 +1,711 @@
+﻿---
+uid: crmscript.netserver.nsformentity
+title: NSFormEntity
+description: "Definition and configuration of a Form."
+keywords: CRMScript, NSFormEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFormEntity
+
+Definition and configuration of a Form.
+
+## Constructors
+
+### NSFormEntity()
+
+```crmscript
+NSFormEntity
+```
+
+Initializes a new instance of the NSFormEntity class.
+
+## Methods
+
+## GetActive()
+
+Indicates if this form is active or not
+
+```crmscript
+Bool GetActive()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Bool active = thing.GetActive();
+```
+
+## GetConfig()
+
+```crmscript
+String GetConfig()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The JSON-formatted config of this form.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String config = thing.GetConfig();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Detailed description.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetExpires()
+
+```crmscript
+DateTime GetExpires()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - After this, the form will become inactive.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+DateTime expires = thing.GetExpires();
+```
+
+## GetFolderId()
+
+```crmscript
+Integer GetFolderId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The folder which this form belongs to. -1 indicates that the shipment is on the root.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer folderId = thing.GetFolderId();
+```
+
+## GetFolderName()
+
+```crmscript
+String GetFolderName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the folder for this form.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String folderName = thing.GetFolderName();
+```
+
+## GetFormId()
+
+```crmscript
+Integer GetFormId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer formId = thing.GetFormId();
+```
+
+## GetFormKey()
+
+```crmscript
+String GetFormKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A short string used as unique ID to access this form.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String formKey = thing.GetFormKey();
+```
+
+## GetGroupId()
+
+```crmscript
+Integer GetGroupId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The group which this form belongs to.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer groupId = thing.GetGroupId();
+```
+
+## GetMaxSubmits()
+
+```crmscript
+Integer GetMaxSubmits()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - After this number of submits, the form will become inactive.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer maxSubmits = thing.GetMaxSubmits();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of this form.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String name = thing.GetName();
+```
+
+## GetNewTicket()
+
+```crmscript
+Bool GetNewTicket()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates if this form creates a ticket or not.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Bool newTicket = thing.GetNewTicket();
+```
+
+## GetRecaptchaMode()
+
+```crmscript
+Integer GetRecaptchaMode()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What is the state of the reCAPTCHA configuration? This is a read-only member. See &lt;xref href=\"CRMScript.NetServer.FormsRecaptchaMode\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer recaptchaMode = thing.GetRecaptchaMode();
+```
+
+## GetRecipe()
+
+```crmscript
+String GetRecipe()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The JSON-formatted recipe of this form.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String recipe = thing.GetRecipe();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetRegisteredAssociateId()
+
+```crmscript
+Integer GetRegisteredAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Registered by whom.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer registeredAssociateId = thing.GetRegisteredAssociateId();
+```
+
+## GetResponseShipmentId()
+
+```crmscript
+Integer GetResponseShipmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the s_shipment that is used to send the response mails.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer responseShipmentId = thing.GetResponseShipmentId();
+```
+
+## GetScriptId()
+
+```crmscript
+Integer GetScriptId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The CRMScript Macro that will be run when the form is submitted.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer scriptId = thing.GetScriptId();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What kind of form is this? Indicates if this is a normal form or a template. See &lt;xref href=\"CRMScript.NetServer.FormType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer type = thing.GetType();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedAssociateId()
+
+```crmscript
+Integer GetUpdatedAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Last updated by whom.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer updatedAssociateId = thing.GetUpdatedAssociateId();
+```
+
+## GetUpdatedCount()
+
+```crmscript
+Integer GetUpdatedCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of updates made to this record.
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer updatedCount = thing.GetUpdatedCount();
+```
+
+## SetActive(Bool)
+
+```crmscript
+Void SetActive(Bool active)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Bool active;
+thing.SetActive(active);
+```
+
+## SetConfig(String)
+
+```crmscript
+Void SetConfig(String config)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String config;
+thing.SetConfig(config);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetExpires(DateTime)
+
+```crmscript
+Void SetExpires(DateTime expires)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+DateTime expires;
+thing.SetExpires(expires);
+```
+
+## SetFolderId(Integer)
+
+```crmscript
+Void SetFolderId(Integer folderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer folderId;
+thing.SetFolderId(folderId);
+```
+
+## SetFolderName(String)
+
+```crmscript
+Void SetFolderName(String folderName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String folderName;
+thing.SetFolderName(folderName);
+```
+
+## SetFormId(Integer)
+
+```crmscript
+Void SetFormId(Integer formId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer formId;
+thing.SetFormId(formId);
+```
+
+## SetFormKey(String)
+
+```crmscript
+Void SetFormKey(String formKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String formKey;
+thing.SetFormKey(formKey);
+```
+
+## SetGroupId(Integer)
+
+```crmscript
+Void SetGroupId(Integer groupId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer groupId;
+thing.SetGroupId(groupId);
+```
+
+## SetMaxSubmits(Integer)
+
+```crmscript
+Void SetMaxSubmits(Integer maxSubmits)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer maxSubmits;
+thing.SetMaxSubmits(maxSubmits);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetNewTicket(Bool)
+
+```crmscript
+Void SetNewTicket(Bool newTicket)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Bool newTicket;
+thing.SetNewTicket(newTicket);
+```
+
+## SetRecaptchaMode(Integer)
+
+```crmscript
+Void SetRecaptchaMode(Integer recaptchaMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer recaptchaMode;
+thing.SetRecaptchaMode(recaptchaMode);
+```
+
+## SetRecipe(String)
+
+```crmscript
+Void SetRecipe(String recipe)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+String recipe;
+thing.SetRecipe(recipe);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetRegisteredAssociateId(Integer)
+
+```crmscript
+Void SetRegisteredAssociateId(Integer registeredAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer registeredAssociateId;
+thing.SetRegisteredAssociateId(registeredAssociateId);
+```
+
+## SetResponseShipmentId(Integer)
+
+```crmscript
+Void SetResponseShipmentId(Integer responseShipmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer responseShipmentId;
+thing.SetResponseShipmentId(responseShipmentId);
+```
+
+## SetScriptId(Integer)
+
+```crmscript
+Void SetScriptId(Integer scriptId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer scriptId;
+thing.SetScriptId(scriptId);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer type = 0;
+thing.SetType(type);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedAssociateId(Integer)
+
+```crmscript
+Void SetUpdatedAssociateId(Integer updatedAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer updatedAssociateId;
+thing.SetUpdatedAssociateId(updatedAssociateId);
+```
+
+## SetUpdatedCount(Integer)
+
+```crmscript
+Void SetUpdatedCount(Integer updatedCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormEntity thing;
+Integer updatedCount;
+thing.SetUpdatedCount(updatedCount);
+```

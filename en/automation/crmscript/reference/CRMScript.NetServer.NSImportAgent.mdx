@@ -1,0 +1,109 @@
+﻿---
+uid: crmscript.netserver.nsimportagent
+title: NSImportAgent
+description: "This agent can be used to import data into the system."
+keywords: CRMScript, NSImportAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSImportAgent
+
+This agent can be used to import data into the system.
+
+## Constructors
+
+### NSImportAgent()
+
+```crmscript
+NSImportAgent
+```
+
+This agent can be used to import data into the system.
+
+## Methods
+
+## CreateDefaultImportLine(Integer)
+
+Creates a new empty import row with x count of values
+
+```crmscript
+NSImportLine CreateDefaultImportLine(Integer countColumns)
+```
+
+**Returns:** [CRMScript.NetServer.NSImportLine](CRMScript.NetServer.NSImportLine)
+
+**Example:**
+
+```crmscript
+NSImportAgent agent;
+Integer countColumns;
+NSImportLine res = agent.CreateDefaultImportLine(countColumns);
+```
+
+## CreateErpImportData(NSArchiveRestrictionInfo[],String[],Integer,Integer)
+
+Populates the ImportLines and columnDefs based from ERP system
+
+```crmscript
+NSImportErpData CreateErpImportData(NSArchiveRestrictionInfo[] restriction, String[] columns, Integer connectionId, Integer erpActorType)
+```
+
+**Returns:** [CRMScript.NetServer.NSImportErpData](CRMScript.NetServer.NSImportErpData)
+
+**Example:**
+
+```crmscript
+NSImportAgent agent;
+NSArchiveRestrictionInfo[] restriction;
+String[] columns;
+Integer connectionId;
+Integer erpActorType;
+NSImportErpData res = agent.CreateErpImportData(restriction, columns, connectionId, erpActorType);
+```
+
+## PreviewImport(NSImportLine[],String[],String,String)
+
+Previews the import
+
+```crmscript
+NSImportLine[] PreviewImport(NSImportLine[] importLines, String[] columnDefinition, String culture, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSImportLine](CRMScript.NetServer.NSImportLine)[]
+
+**Example:**
+
+```crmscript
+NSImportAgent agent;
+NSImportLine[] importLines;
+String[] columnDefinition;
+String culture;
+String context;
+NSImportLine[] res = agent.PreviewImport(importLines, columnDefinition, culture, context);
+```
+
+## SaveImport(NSImportLine[],String[],Bool,String,String)
+
+Does the actual import
+
+```crmscript
+Integer[] SaveImport(NSImportLine[] importLines, String[] columnDefinition, Bool createSelection, String culture, String context)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+**Example:**
+
+```crmscript
+NSImportAgent agent;
+NSImportLine[] importLines;
+String[] columnDefinition;
+Bool createSelection;
+String culture;
+String context;
+Integer[] res = agent.SaveImport(importLines, columnDefinition, createSelection, culture, context);
+```

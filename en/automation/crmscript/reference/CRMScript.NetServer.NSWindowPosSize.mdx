@@ -1,0 +1,368 @@
+﻿---
+uid: crmscript.netserver.nswindowpossize
+title: NSWindowPosSize
+description: "Window and dialog position and size settings."
+keywords: CRMScript, NSWindowPosSize, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWindowPosSize
+
+Window and dialog position and size settings.
+
+## Constructors
+
+### NSWindowPosSize()
+
+```crmscript
+NSWindowPosSize
+```
+
+Initializes a new instance of the NSWindowPosSize class.
+
+## Methods
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Associate ID of the Associate/Person owning this window setting.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetExtraId()
+
+```crmscript
+Integer GetExtraId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Spare ID, not yet in use.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer extraId = thing.GetExtraId();
+```
+
+## GetExtraInfo()
+
+```crmscript
+String GetExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Extra information* show state, or whatever is required.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+String extraInfo = thing.GetExtraInfo();
+```
+
+## GetHeight()
+
+```crmscript
+Integer GetHeight()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The height of the widget.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer height = thing.GetHeight();
+```
+
+## GetLeftX()
+
+```crmscript
+Integer GetLeftX()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - X of origin, left edge of widget.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer leftX = thing.GetLeftX();
+```
+
+## GetOwnerWindow()
+
+```crmscript
+String GetOwnerWindow()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The dialog, panel or whatever that owns this record.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+String ownerWindow = thing.GetOwnerWindow();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Person ID of the associate owning this window setting.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetState()
+
+```crmscript
+Integer GetState()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Normal = 0, Maximized = 1, Minimized = 2. See &lt;xref href=\"CRMScript.NetServer.ShowState\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer state = thing.GetState();
+```
+
+## GetUpperY()
+
+```crmscript
+Integer GetUpperY()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Y of origin, upper edge of widget.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer upperY = thing.GetUpperY();
+```
+
+## GetWidth()
+
+```crmscript
+Integer GetWidth()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The width of the widget.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer width = thing.GetWidth();
+```
+
+## GetWindowPosSizeId()
+
+```crmscript
+Integer GetWindowPosSizeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer windowPosSizeId = thing.GetWindowPosSizeId();
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetExtraId(Integer)
+
+```crmscript
+Void SetExtraId(Integer extraId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer extraId;
+thing.SetExtraId(extraId);
+```
+
+## SetExtraInfo(String)
+
+```crmscript
+Void SetExtraInfo(String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+String extraInfo;
+thing.SetExtraInfo(extraInfo);
+```
+
+## SetHeight(Integer)
+
+```crmscript
+Void SetHeight(Integer height)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer height;
+thing.SetHeight(height);
+```
+
+## SetLeftX(Integer)
+
+```crmscript
+Void SetLeftX(Integer leftX)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer leftX;
+thing.SetLeftX(leftX);
+```
+
+## SetOwnerWindow(String)
+
+```crmscript
+Void SetOwnerWindow(String ownerWindow)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+String ownerWindow;
+thing.SetOwnerWindow(ownerWindow);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetState(Integer)
+
+```crmscript
+Void SetState(Integer state)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer state;
+thing.SetState(state);
+```
+
+## SetUpperY(Integer)
+
+```crmscript
+Void SetUpperY(Integer upperY)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer upperY;
+thing.SetUpperY(upperY);
+```
+
+## SetWidth(Integer)
+
+```crmscript
+Void SetWidth(Integer width)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer width;
+thing.SetWidth(width);
+```
+
+## SetWindowPosSizeId(Integer)
+
+```crmscript
+Void SetWindowPosSizeId(Integer windowPosSizeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWindowPosSize thing;
+Integer windowPosSizeId;
+thing.SetWindowPosSizeId(windowPosSizeId);
+```

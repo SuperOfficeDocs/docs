@@ -1,0 +1,130 @@
+﻿---
+uid: crmscript.netserver.nspaymenttype
+title: NSPaymentType
+description: "The built-in payment types list. Used by the SuperOffice Quote Connector in quote versions."
+keywords: CRMScript, NSPaymentType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPaymentType
+
+The built-in payment types list. Used by the SuperOffice Quote Connector in quote versions.
+
+## Constructors
+
+### NSPaymentType()
+
+```crmscript
+NSPaymentType
+```
+
+Initializes a new instance of the NSPaymentType class.
+
+## Methods
+
+## GetId()
+
+Gets the primary key (ID) for the NSPaymentType
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSPaymentType Id.
+
+**Example:**
+
+```crmscript
+NSPaymentType thing;
+Integer id = thing.GetId();
+```
+
+## GetTooltip()
+
+Gets the tooltip description for the NSPaymentType list item.
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPaymentType tooltip description.
+
+**Example:**
+
+```crmscript
+NSPaymentType thing;
+String descr = thing.GetTooltip();
+```
+
+## GetValue()
+
+Gets the name of the NSPaymentType.
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPaymentType name.
+
+**Example:**
+
+```crmscript
+NSPaymentType thing;
+String name = thing.GetValue();
+```
+
+## SetId(Integer)
+
+Sets the primary key (ID) for the NSPaymentType
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPaymentType thing;
+thing.SetId(123);
+```
+
+## SetTooltip(String)
+
+Sets the tooltip description for the NSPaymentType list item.
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPaymentType thing;
+String descr = "something new";
+thing.SetTooltip(descr);
+```
+
+## SetValue(String)
+
+Sets the name of the NSPaymentType item.
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPaymentType thing;
+thing.SetValue("frotz");
+```

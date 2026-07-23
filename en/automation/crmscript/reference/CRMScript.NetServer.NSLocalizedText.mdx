@@ -1,0 +1,211 @@
+﻿---
+uid: crmscript.netserver.nslocalizedtext
+title: NSLocalizedText
+description: ""
+keywords: CRMScript, NSLocalizedText, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSLocalizedText
+
+## Constructors
+
+### NSLocalizedText()
+
+```crmscript
+NSLocalizedText
+```
+
+Initializes a new instance of the NSLocalizedText class.
+
+## Methods
+
+## GetIsBuiltIn()
+
+```crmscript
+Bool GetIsBuiltIn()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 1 = this row is populated and maintained by SuperOffice.
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Bool isBuiltIn = thing.GetIsBuiltIn();
+```
+
+## GetLanguageId()
+
+```crmscript
+Integer GetLanguageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Language ID as LCID value.
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer languageId = thing.GetLanguageId();
+```
+
+## GetLocalizedTextId()
+
+```crmscript
+Integer GetLocalizedTextId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer localizedTextId = thing.GetLocalizedTextId();
+```
+
+## GetResourceId()
+
+```crmscript
+Integer GetResourceId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Resource Id.
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer resourceId = thing.GetResourceId();
+```
+
+## GetText()
+
+```crmscript
+String GetText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The text string itself.
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+String text = thing.GetText();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of the text string, such as Field label, Udef label. See &lt;xref href=\"CRMScript.NetServer.LocalizedTextType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer type = thing.GetType();
+```
+
+## SetIsBuiltIn(Bool)
+
+```crmscript
+Void SetIsBuiltIn(Bool isBuiltIn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Bool isBuiltIn;
+thing.SetIsBuiltIn(isBuiltIn);
+```
+
+## SetLanguageId(Integer)
+
+```crmscript
+Void SetLanguageId(Integer languageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer languageId;
+thing.SetLanguageId(languageId);
+```
+
+## SetLocalizedTextId(Integer)
+
+```crmscript
+Void SetLocalizedTextId(Integer localizedTextId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer localizedTextId;
+thing.SetLocalizedTextId(localizedTextId);
+```
+
+## SetResourceId(Integer)
+
+```crmscript
+Void SetResourceId(Integer resourceId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer resourceId;
+thing.SetResourceId(resourceId);
+```
+
+## SetText(String)
+
+```crmscript
+Void SetText(String text)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+String text;
+thing.SetText(text);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSLocalizedText thing;
+Integer type;
+thing.SetType(type);
+```

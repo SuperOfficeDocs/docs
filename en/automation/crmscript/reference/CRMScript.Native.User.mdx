@@ -1,0 +1,145 @@
+﻿---
+uid: crmscript.native.user
+title: User
+description: "Class for representing a user."
+keywords: CRMScript, User, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# User
+
+Class for representing a user.
+
+## Constructors
+
+### User()
+
+```crmscript
+User
+```
+
+Class for representing a user.
+
+## Methods
+
+## getValue(String)
+
+Gets the value of a given column.
+
+```crmscript
+String getValue(String colName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Returns a string with value in given column.
+
+<Note>
+&lt;h3&gt;Possible values:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The primary key (auto-incremented)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;loginname&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The unique loginname for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The unique username for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;password&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The encrypted password for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;firstname&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The firstname for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;middlename&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The middlename for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lastname&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The lastname for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;email&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The email address for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The status (enum) for this user. 1 is Active; 2 is Not Present; 3 is deleted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;signature&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The users signature.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;language&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;A string indicating the user's language. See list below for values.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;flags&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;A bitmask indicating flags for this entry.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lastCategory&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The last chosen category for this user when posting tickets. category.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pictureId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The attachment ID of the picture for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;defaultUser&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The default user to set on new tickets in this category (1=automatically; 2=unassigned; 3=the owner)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;initials&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;Obsolete field. Cannot be removed because of not null error on older systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;group&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The group ID of the primary group which this user belongs to&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;role&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The role ID of the role this user belongs to&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;associateId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The corresponding associate id for this user&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ownerCompany&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;the contact ID of the owning company of the users' connected person entity.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;x_* &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;The extrafield with the given database field name.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Language values:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Norwegian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Swedish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Danish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Dutch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;Spanish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;Italian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;Czech&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;Finnish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;Polish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;Russian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;Ukrainian&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Status: (Indicated by enums):&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;StatusNone&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusNormal&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusNotAvailable&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusDeleted&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusReadOnly&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusSpm&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusSystem&lt;/td&gt;&lt;td&gt;127&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;The different notify masks: (Indicated by bit enums):&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;NewTicket&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;NewTicketMessage&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TicketEscalated&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TicketActivated&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ActiveTickets&lt;/td&gt;&lt;td&gt;5 //only used as a filter (ejuser)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TicketTakeOver&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Hotlist&lt;/td&gt;&lt;td&gt;9  //only used as a filter (ejuser)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Custom&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Access flags:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;AccessNone&lt;/td&gt;&lt;td&gt;0 (value 0)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessListOthers&lt;/td&gt;&lt;td&gt;0 bit number 1)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessReadOthers&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditOthers &lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditOwnPref &lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessCategoryAdministration&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessUserAdministration&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEjournalAdministration&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessStatistics &lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessDocuments&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessJustCategory&lt;/td&gt;&lt;td&gt;9 //obsolete&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;AccessEditProfile&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessListOnlyOwn&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessReadOnlyOwn&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditOnlyOwn&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessChat&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessChatAdmin&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessSpm&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditFaq&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessFaqAdmin&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessListExtraTablesContent&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditExtraTablesContent&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessReadSelections&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditSelections&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessPostToFacebook&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;User flags:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;None&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLastCategory&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultTicketClose&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultMessageClose&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SortDesc&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PreviewImages&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyOwnCategories&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SmallFonts&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsertLastMessage&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowQuickSearch&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Use24HrsClock&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AddMessageNewWindow&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyShowOpenTicketsInHotlist&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLocalClock&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HighlightActiveScreenElement&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayOwnCategories&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressWarnOnNavigate&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressPreviewWarning&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PlainTextEditor&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FckEditorSingleLineBreak&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CustomDateFormat&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SundayFirstDayInWeek&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OldScreensOnEditTicket&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;KeepFormattingOnPaste&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayCheckboxLeft&lt;/td&gt;&lt;td&gt;24&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowMessagesAsPlainText&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWinLicense&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWebLicense&lt;/td&gt;&lt;td&gt;27&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSpmCal&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasMailMergeCal&lt;/td&gt;&lt;td&gt;29&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasChatCal&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+</Note>
+
+## hasTicketAccess(Integer,Integer)
+
+Returns true if the user have at least the given access to the given ticket id.
+
+```crmscript
+Bool hasTicketAccess(Integer ticketId, Integer accessLevel)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## isAdministrator()
+
+Returns true if the user is an administrator, false if not.
+
+```crmscript
+Bool isAdministrator()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## isLoggedIn(Integer)
+
+Checks if a user is logged in or not.
+
+```crmscript
+Bool isLoggedIn(Integer origin)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## load(Integer)
+
+Loads a user from the database
+
+```crmscript
+Bool load(Integer p_id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is loaded successfully.
+
+## loadFromAgentAndKey(Integer,String)
+
+Loads a user from an Agent with userId and the Agent's key.
+
+```crmscript
+Bool loadFromAgentAndKey(Integer id, String Key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is loaded successfully.
+
+## save()
+
+Saves a user object to the database, returns the ID of the user.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Returns the ID of the user.
+
+## setValue(String,String,String)
+
+Sets a value in a given column.
+
+```crmscript
+Void setValue(String column, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;h3&gt;Possible values:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The primary key (auto-incremented)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;loginname&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The unique loginname for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;username&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The unique username for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;password&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The encrypted password for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;firstname&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The firstname for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;middlename&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The middlename for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lastname&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The lastname for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;email&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The email address for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The status (enum) for this user. 1 is Active; 2 is Not Present; 3 is deleted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;signature&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;The users signature.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;language&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;A string indicating the user's language. See list below for values.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;flags&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;A bitmask indicating flags for this entry.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lastCategory&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The last chosen category for this user when posting tickets. category.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;pictureId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The attachment ID of the picture for this user.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;defaultUser&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The default user to set on new tickets in this category (1=automatically; 2=unassigned; 3=the owner)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;initials&lt;/td&gt;&lt;td&gt;String&lt;/td&gt;&lt;td&gt;Obsolete field. Cannot be removed because of not null error on older systems.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;group&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The group ID of the primary group which this user belongs to&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;role&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The role ID of the role this user belongs to&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;associateId&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;The corresponding associate id for this user&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ownerCompany&lt;/td&gt;&lt;td&gt;Integer&lt;/td&gt;&lt;td&gt;the contact ID of the owning company of the users' connected person entity.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;x_* &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;The extrafield with the given database field name.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Language values:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Value&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Norwegian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Swedish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Danish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Dutch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;Spanish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;Italian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;Czech&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;Finnish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;Polish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;Russian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;Ukrainian&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Status: (Indicated by enums):&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;StatusNone&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusNormal&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusNotAvailable&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusDeleted&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusReadOnly&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusSpm&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;StatusSystem&lt;/td&gt;&lt;td&gt;127&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;The different notify masks: (Indicated by bit enums):&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;NewTicket&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;NewTicketMessage&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TicketEscalated&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TicketActivated&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ActiveTickets&lt;/td&gt;&lt;td&gt;5 //only used as a filter (ejuser)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TicketTakeOver&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Hotlist&lt;/td&gt;&lt;td&gt;9  //only used as a filter (ejuser)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Custom&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;Access flags:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;AccessNone&lt;/td&gt;&lt;td&gt;0 (value 0)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessListOthers&lt;/td&gt;&lt;td&gt;0 bit number 1)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessReadOthers&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditOthers &lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditOwnPref &lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessCategoryAdministration&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessUserAdministration&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEjournalAdministration&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessStatistics &lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessDocuments&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessJustCategory&lt;/td&gt;&lt;td&gt;9 //obsolete&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;AccessEditProfile&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessListOnlyOwn&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessReadOnlyOwn&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditOnlyOwn&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessChat&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessChatAdmin&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessSpm&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditFaq&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessFaqAdmin&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessListExtraTablesContent&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditExtraTablesContent&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessReadSelections&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessEditSelections&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AccessPostToFacebook&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3&gt;User flags:&lt;/h3&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;None&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLastCategory&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultTicketClose&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DefaultMessageClose&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SortDesc&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PreviewImages&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyOwnCategories&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SmallFonts&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InsertLastMessage&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowQuickSearch&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Use24HrsClock&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;AddMessageNewWindow&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OnlyShowOpenTicketsInHotlist&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;UseLocalClock&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HighlightActiveScreenElement&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayOwnCategories&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressWarnOnNavigate&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SuppressPreviewWarning&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PlainTextEditor&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FckEditorSingleLineBreak&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CustomDateFormat&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SundayFirstDayInWeek&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OldScreensOnEditTicket&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;KeepFormattingOnPaste&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DisplayCheckboxLeft&lt;/td&gt;&lt;td&gt;24&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ShowMessagesAsPlainText&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWinLicense&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSOWebLicense&lt;/td&gt;&lt;td&gt;27&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasSpmCal&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasMailMergeCal&lt;/td&gt;&lt;td&gt;29&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HasChatCal&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+</Note>
+
+## toParser(Parser)
+
+Loads a user and returns it to a given Parser.
+
+```crmscript
+Void toParser(Parser parser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

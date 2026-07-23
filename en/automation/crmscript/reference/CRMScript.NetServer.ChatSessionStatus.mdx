@@ -1,0 +1,38 @@
+﻿---
+uid: crmscript.netserver.chatsessionstatus
+title: Enum ChatSessionStatus
+description: "Chat Session status"
+keywords: CRMScript, ChatSessionStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ChatSessionStatus
+
+Chat Session status
+
+## Syntax
+
+```crmscript
+ChatSessionStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Invalid | Unknown |
+| PreChatForm | PreChatForm |
+| Faq | FAQ |
+| OfflineForm | OfflineForm |
+| InQueue | InQueue - waiting to be picked up |
+| CustomerLast | CustomerLast - customer wrote last message |
+| UserLast | UserLast - user agent wrote last message |
+| Finished | Finished - may be deleted later |
+| Deleted | Deleted - ready to delete. Usually cleaned within 24 hrs |
+| Closed | Closed |
+| RequestPosted | RequestPosted |
+| ClosedFromQueue | ClosedFromQueue |

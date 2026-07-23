@@ -1,0 +1,559 @@
+﻿---
+uid: crmscript.netserver.nsuserdefinedfieldinfoagent
+title: NSUserDefinedFieldInfoAgent
+description: "Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects."
+keywords: CRMScript, NSUserDefinedFieldInfoAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSUserDefinedFieldInfoAgent
+
+Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects.
+
+## Constructors
+
+### NSUserDefinedFieldInfoAgent()
+
+```crmscript
+NSUserDefinedFieldInfoAgent
+```
+
+Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects.
+
+## Methods
+
+## ChangeFieldType(NSUserDefinedFieldInfo,Integer,Bool)
+
+Creates a UserDefinedFieldInfo based on a owner-entity ID
+
+```crmscript
+NSUserDefinedFieldInfo ChangeFieldType(NSUserDefinedFieldInfo info, Integer fieldType, Bool isIndexed)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+NSUserDefinedFieldInfo info;
+Integer fieldType;
+Bool isIndexed;
+NSUserDefinedFieldInfo res = agent.ChangeFieldType(info, fieldType, isIndexed);
+```
+
+## CreateDefaultUserDefinedFieldInfo()
+
+Sets default values into a new NSUserDefinedFieldInfo.
+
+```crmscript
+NSUserDefinedFieldInfo CreateDefaultUserDefinedFieldInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+NSUserDefinedFieldInfo thing = agent.CreateDefaultUserDefinedFieldInfo();
+thing = agent.SaveUserDefinedFieldInfo(thing);
+```
+
+## CreateUserDefinedFieldInfo(Integer,Integer)
+
+Creates a UserDefinedFieldInfo based on a owner-entity ID
+
+```crmscript
+NSUserDefinedFieldInfo CreateUserDefinedFieldInfo(Integer ownerType, Integer fieldType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+Integer fieldType;
+NSUserDefinedFieldInfo res = agent.CreateUserDefinedFieldInfo(ownerType, fieldType);
+```
+
+## DeleteUserDefinedFieldInfo(Integer)
+
+Deletes the NSUserDefinedFieldInfo
+
+```crmscript
+DeleteUserDefinedFieldInfo(Integer userDefinedFieldInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+agent.DeleteUserDefinedFieldInfo(123);
+```
+
+## DetectColumnIdChanges(Integer)
+
+Detects columnid changes to the admin version (for determining publish warning)
+
+```crmscript
+Bool DetectColumnIdChanges(Integer ownerType)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+Bool res = agent.DetectColumnIdChanges(ownerType);
+```
+
+## DetectUnpublishedChanges(Integer)
+
+Detects changes to the admin version (unpublished)
+
+```crmscript
+Bool DetectUnpublishedChanges(Integer ownerType)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+Bool res = agent.DetectUnpublishedChanges(ownerType);
+```
+
+## FigureOutListIdFromListTableIdAndUDListDefinitionId(NSUserDefinedFieldInfo)
+
+Kind of the reverse of SetListTableIdAndUDListDefinitionIdFromSelectedListId
+
+```crmscript
+Integer FigureOutListIdFromListTableIdAndUDListDefinitionId(NSUserDefinedFieldInfo info)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetChangedPageOneFields(Integer,Integer)
+
+Gets which page-one fields have changed from the current version
+
+```crmscript
+Bool[] GetChangedPageOneFields(Integer ownerType, Integer userGroupId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)[]
+
+## GetCustomFieldInfo(String,String)
+
+Returns information about a particular custom field (user-defined + extra) on a particular table
+
+```crmscript
+NSFieldInfoBase GetCustomFieldInfo(String tableName, String fieldName)
+```
+
+**Returns:** [CRMScript.NetServer.NSFieldInfoBase](CRMScript.NetServer.NSFieldInfoBase)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+String tableName;
+String fieldName;
+NSFieldInfoBase res = agent.GetCustomFieldInfo(tableName, fieldName);
+```
+
+## GetCustomFieldInfoList(String,Bool)
+
+Returns information about all the custom fields (user-defined + extra) on a particular table
+
+```crmscript
+NSFieldInfoBase[] GetCustomFieldInfoList(String tableName, Bool includeStandard)
+```
+
+**Returns:** [CRMScript.NetServer.NSFieldInfoBase](CRMScript.NetServer.NSFieldInfoBase)[]
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+String tableName;
+Bool includeStandard;
+NSFieldInfoBase[] res = agent.GetCustomFieldInfoList(tableName, includeStandard);
+```
+
+## GetPublishedUserDefinedFieldFromFieldLabel(String,Integer)
+
+Returns information about the given user defined field identified by the owner and the field label.
+
+```crmscript
+NSUserDefinedFieldInfo GetPublishedUserDefinedFieldFromFieldLabel(String fieldLabel, Integer ownerType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+<Note>
+Field labels are fuzzy. Leading and trailing spaces and punctuation are ignored.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+String fieldLabel;
+Integer ownerType;
+NSUserDefinedFieldInfo res = agent.GetPublishedUserDefinedFieldFromFieldLabel(fieldLabel, ownerType);
+```
+
+## GetPublishedUserDefinedFieldFromProgId(String,Integer)
+
+Return information about the given user defined field identified by the owner and the prog-id.
+
+```crmscript
+NSUserDefinedFieldInfo GetPublishedUserDefinedFieldFromProgId(String progId, Integer ownerType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+<Note>
+The prog-id is used as the key in the entity carriers.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+String progId;
+Integer ownerType;
+NSUserDefinedFieldInfo res = agent.GetPublishedUserDefinedFieldFromProgId(progId, ownerType);
+```
+
+## GetPublishedUserDefinedFieldList(Integer)
+
+Return information about all the user defined fields on a particular owner type (project, contact, person, etc).
+
+```crmscript
+NSUserDefinedFieldInfo[] GetPublishedUserDefinedFieldList(Integer ownerType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)[]
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+NSUserDefinedFieldInfo[] res = agent.GetPublishedUserDefinedFieldList(ownerType);
+```
+
+## GetPublishedUserDefinedPageOneFields(Integer,Integer)
+
+Gets a list of page one fields for given Udef type and current user group
+
+```crmscript
+NSUserDefinedFieldInfo[] GetPublishedUserDefinedPageOneFields(Integer ownerType, Integer userGroupId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)[]
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+Integer userGroupId;
+NSUserDefinedFieldInfo[] res = agent.GetPublishedUserDefinedPageOneFields(ownerType, userGroupId);
+```
+
+## GetUserDefinedFieldFromFieldLabel(String,Integer)
+
+Return information about the given user defined field identified by the owner and the field label.
+
+```crmscript
+NSUserDefinedFieldInfo GetUserDefinedFieldFromFieldLabel(String fieldLabel, Integer ownerType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+<Note>
+Field labels are fuzzy. Leading and trailing spaces and punctuation are ignored.
+
+This may be different than the currently published fields.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+String fieldLabel;
+Integer ownerType;
+NSUserDefinedFieldInfo res = agent.GetUserDefinedFieldFromFieldLabel(fieldLabel, ownerType);
+```
+
+## GetUserDefinedFieldFromIds(Integer[])
+
+Returns an given array of user defined field identified by the IDs.
+
+```crmscript
+NSUserDefinedFieldInfo[] GetUserDefinedFieldFromIds(Integer[] ids)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)[]
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer[] ids;
+NSUserDefinedFieldInfo[] res = agent.GetUserDefinedFieldFromIds(ids);
+```
+
+## GetUserDefinedFieldFromProgId(String,Integer)
+
+Returns information about the given user defined field identified by the owner and the prog-id.
+
+```crmscript
+NSUserDefinedFieldInfo GetUserDefinedFieldFromProgId(String progId, Integer ownerType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+<Note>
+The prog-id is used as the key in the entity carriers. Note this may be different than the currently published fields.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+String progId;
+Integer ownerType;
+NSUserDefinedFieldInfo res = agent.GetUserDefinedFieldFromProgId(progId, ownerType);
+```
+
+## GetUserDefinedFieldFromProgIds(String[],Integer)
+
+Return an given array user defined field identified by the owner and the prog-ids.
+
+```crmscript
+NSUserDefinedFieldInfo[] GetUserDefinedFieldFromProgIds(String[] progIds, Integer ownerType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)[]
+
+<Note>
+The prog-id is used as the key in the entity carriers. Note this may be different than the currently published field layout.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+String[] progIds;
+Integer ownerType;
+NSUserDefinedFieldInfo[] res = agent.GetUserDefinedFieldFromProgIds(progIds, ownerType);
+```
+
+## GetUserDefinedFieldInfo(Integer)
+
+Gets an NSUserDefinedFieldInfo object.
+
+```crmscript
+NSUserDefinedFieldInfo GetUserDefinedFieldInfo(Integer userDefinedFieldInfoId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+NSUserDefinedFieldInfo thing = agent.GetUserDefinedFieldInfo(123);
+```
+
+## GetUserDefinedFieldList(Integer)
+
+Return information about all the user defined fields on a particular owner type (project, contact, person, etc).
+
+```crmscript
+NSUserDefinedFieldInfo[] GetUserDefinedFieldList(Integer ownerType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)[]
+
+<Note>
+Note this may be different than the currently published fields.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+NSUserDefinedFieldInfo[] res = agent.GetUserDefinedFieldList(ownerType);
+```
+
+## GetUserDefinedPageOneFields(Integer,Integer)
+
+Gets a list of page one fields for given Udef type and current user group
+
+```crmscript
+NSUserDefinedFieldInfo[] GetUserDefinedPageOneFields(Integer ownerType, Integer userGroupId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)[]
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+Integer userGroupId;
+NSUserDefinedFieldInfo[] res = agent.GetUserDefinedPageOneFields(ownerType, userGroupId);
+```
+
+## IsAnyPublishEventActive()
+
+Checks if any publish events are active
+
+```crmscript
+Bool IsAnyPublishEventActive()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## IsPublishEventActive(Integer)
+
+Checks if the publish event is active for the given type.
+
+```crmscript
+Bool IsPublishEventActive(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## Publish(Integer)
+
+Publish changed Udef fields for the given owner type
+
+```crmscript
+Integer Publish(Integer ownerType)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfoAgent agent;
+Integer ownerType;
+Integer res = agent.Publish(ownerType);
+```
+
+## Revert(Integer)
+
+Revert changed Udef fields for the given owner type. All unpublished changes will be lost
+
+```crmscript
+Void Revert(Integer ownerType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SaveUserDefinedFieldInfo(NSUserDefinedFieldInfo)
+
+Updates the existing NSUserDefinedFieldInfo or creates a new NSUserDefinedFieldInfo if the id parameter is 0
+
+```crmscript
+NSUserDefinedFieldInfo SaveUserDefinedFieldInfo(NSUserDefinedFieldInfo userDefinedFieldInfo)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo  agent;
+NSUserDefinedFieldInfo thing = agent.CreateDefaultUserDefinedFieldInfo();
+thing = agent.SaveUserDefinedFieldInfo(thing);
+```
+
+## SaveUserDefinedFieldInfos(NSUserDefinedFieldInfo[])
+
+Saves an array of user defined fields. This will update the unpublished layout.
+
+```crmscript
+Void SaveUserDefinedFieldInfos(NSUserDefinedFieldInfo[] infos)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetListTableIdAndUDListDefinitionIdFromSelectedListId(NSUserDefinedFieldInfo,Integer)
+
+Makes stuff similar to what happens in the win client
+
+```crmscript
+NSUserDefinedFieldInfo SetListTableIdAndUDListDefinitionIdFromSelectedListId(NSUserDefinedFieldInfo info, Integer selectedListId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserDefinedFieldInfo](CRMScript.NetServer.NSUserDefinedFieldInfo)
+
+## SetPageOneFieldGrouping(Integer,Bool)
+
+Sets the Page One Field grouping for a specific entity
+
+```crmscript
+Void SetPageOneFieldGrouping(Integer ownerType, Bool active)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishStartSystemEvent(Integer)
+
+Sets the start flag for udef publishing. Must be called before PUBLISH, or PUBLISH will fail.
+
+```crmscript
+Void SetPublishStartSystemEvent(Integer ownerType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Start flag is removed when publish process completes.
+</Note>
+
+## SetRankOnFields(Integer,Integer[])
+
+Changes rank of user defined fields
+
+```crmscript
+Void SetRankOnFields(Integer ownerType, Integer[] rankedFieldsIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetUserDefinedPageOneField(Integer,Integer,Integer,Integer)
+
+Sets a user defined field as page one field.
+
+```crmscript
+Void SetUserDefinedPageOneField(Integer ownerType, Integer udefFieldId, Integer userGroupId, Integer fieldLineNo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

@@ -1,0 +1,219 @@
+﻿---
+uid: crmscript.netserver.nsattachmententity
+title: NSAttachmentEntity
+description: ""
+keywords: CRMScript, NSAttachmentEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAttachmentEntity
+
+## Constructors
+
+### NSAttachmentEntity()
+
+```crmscript
+NSAttachmentEntity
+```
+
+Initializes a new instance of the NSAttachmentEntity class.
+
+## Methods
+
+## GetAttachmentId()
+
+```crmscript
+Integer GetAttachmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+Integer attachmentId = thing.GetAttachmentId();
+```
+
+## GetAttSize()
+
+```crmscript
+Integer GetAttSize()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The size (in bytes) for the attachment.
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+Integer attSize = thing.GetAttSize();
+```
+
+## GetContentId()
+
+```crmscript
+String GetContentId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The content_id of this attachment, used for inline images.
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+String contentId = thing.GetContentId();
+```
+
+## GetContentType()
+
+```crmscript
+String GetContentType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The content type for the attachment.
+
+<Note>
+Types can for example be 'application/octet-stream' or 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+</Note>
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+String contentType = thing.GetContentType();
+```
+
+## GetInlineImage()
+
+```crmscript
+Bool GetInlineImage()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if this attachment is inlined in the html_body.
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+Bool inlineImage = thing.GetInlineImage();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The filename for the attachment.
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+String name = thing.GetName();
+```
+
+## SetAttachmentId(Integer)
+
+```crmscript
+Void SetAttachmentId(Integer attachmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+Integer attachmentId;
+thing.SetAttachmentId(attachmentId);
+```
+
+## SetAttSize(Integer)
+
+```crmscript
+Void SetAttSize(Integer attSize)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+Integer attSize;
+thing.SetAttSize(attSize);
+```
+
+## SetContentId(String)
+
+```crmscript
+Void SetContentId(String contentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+String contentId;
+thing.SetContentId(contentId);
+```
+
+## SetContentType(String)
+
+```crmscript
+Void SetContentType(String contentType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Types can for example be 'application/octet-stream' or 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+String contentType;
+thing.SetContentType(contentType);
+```
+
+## SetInlineImage(Bool)
+
+```crmscript
+Void SetInlineImage(Bool inlineImage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+Bool inlineImage;
+thing.SetInlineImage(inlineImage);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAttachmentEntity thing;
+String name;
+thing.SetName(name);
+```

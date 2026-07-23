@@ -1,0 +1,725 @@
+﻿---
+uid: crmscript.netserver.nscontact
+title: NSContact
+description: "Carrier object for Contact.n"
+keywords: CRMScript, NSContact, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSContact
+
+Carrier object for Contact.n
+
+## Constructors
+
+### NSContact()
+
+```crmscript
+NSContact
+```
+
+Initializes a new instance of the NSContact class.
+
+## Methods
+
+## GetActiveErpLinks()
+
+```crmscript
+Integer GetActiveErpLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer activeErpLinks = thing.GetActiveErpLinks();
+```
+
+## GetAddress()
+
+```crmscript
+NSAddress GetAddress()
+```
+
+**Returns:** [CRMScript.NetServer.NSAddress](CRMScript.NetServer.NSAddress) - Contact address as  a list of LocalizedFieldList objects.
+
+<Note>
+Used to store localized information such as formatted address data. Suitable for passing to an address control for display.
+</Note>
+
+**Example:**
+
+```crmscript
+NSContact thing;
+NSAddress address = thing.GetAddress();
+```
+
+## GetAssociateFullName()
+
+```crmscript
+String GetAssociateFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The associate's culture formatted fullname (firstname, middleName and lastname).
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String associateFullName = thing.GetAssociateFullName();
+```
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Our contact.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetBusinessName()
+
+```crmscript
+String GetBusinessName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The business list item name.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String businessName = thing.GetBusinessName();
+```
+
+## GetCategoryName()
+
+```crmscript
+String GetCategoryName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The category list item name.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String categoryName = thing.GetCategoryName();
+```
+
+## GetCity()
+
+```crmscript
+String GetCity()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - City corresponding to zip code.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String city = thing.GetCity();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetCountryId()
+
+```crmscript
+Integer GetCountryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Country.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer countryId = thing.GetCountryId();
+```
+
+## GetCountryName()
+
+```crmscript
+String GetCountryName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of country in installed language.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String countryName = thing.GetCountryName();
+```
+
+## GetDepartment()
+
+```crmscript
+String GetDepartment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Department.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String department = thing.GetDepartment();
+```
+
+## GetDirectPhone()
+
+```crmscript
+String GetDirectPhone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The contacts phone.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String directPhone = thing.GetDirectPhone();
+```
+
+## GetEmailAddress()
+
+```crmscript
+String GetEmailAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The contact email address.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String emailAddress = thing.GetEmailAddress();
+```
+
+## GetEmailAddressName()
+
+```crmscript
+String GetEmailAddressName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Visible field.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String emailAddressName = thing.GetEmailAddressName();
+```
+
+## GetFormattedAddress()
+
+```crmscript
+String GetFormattedAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The contact's address, formatted with line breaks and spaces into a single string.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String formattedAddress = thing.GetFormattedAddress();
+```
+
+## GetFullName()
+
+```crmscript
+String GetFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String fullName = thing.GetFullName();
+```
+
+## GetIsOwnerContact()
+
+```crmscript
+Bool GetIsOwnerContact()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the contact an owner contact?
+
+<Note>
+This means that all persons on this contact can on only be internal users and not external users.
+</Note>
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Bool isOwnerContact = thing.GetIsOwnerContact();
+```
+
+## GetKananame()
+
+```crmscript
+String GetKananame()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact kana name, used in Japanese versions only.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String kananame = thing.GetKananame();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String name = thing.GetName();
+```
+
+## GetOrgNr()
+
+```crmscript
+String GetOrgNr()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - VAT number or similar.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String orgNr = thing.GetOrgNr();
+```
+
+## GetURL()
+
+```crmscript
+String GetURL()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The internet address to this contact.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String uRL = thing.GetURL();
+```
+
+## GetURLName()
+
+```crmscript
+String GetURLName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Visible field.
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String uRLName = thing.GetURLName();
+```
+
+## SetActiveErpLinks(Integer)
+
+```crmscript
+Void SetActiveErpLinks(Integer activeErpLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer activeErpLinks;
+thing.SetActiveErpLinks(activeErpLinks);
+```
+
+## SetAddress(NSAddress)
+
+```crmscript
+Void SetAddress(NSAddress address)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used to store localized information such as formatted address data. Suitable for passing to an address control for display.
+</Note>
+
+**Example:**
+
+```crmscript
+NSContact thing;
+NSAddress address;
+thing.SetAddress(address);
+```
+
+## SetAssociateFullName(String)
+
+```crmscript
+Void SetAssociateFullName(String associateFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String associateFullName;
+thing.SetAssociateFullName(associateFullName);
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetBusinessName(String)
+
+```crmscript
+Void SetBusinessName(String businessName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String businessName;
+thing.SetBusinessName(businessName);
+```
+
+## SetCategoryName(String)
+
+```crmscript
+Void SetCategoryName(String categoryName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String categoryName;
+thing.SetCategoryName(categoryName);
+```
+
+## SetCity(String)
+
+```crmscript
+Void SetCity(String city)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String city;
+thing.SetCity(city);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetCountryId(Integer)
+
+```crmscript
+Void SetCountryId(Integer countryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Integer countryId;
+thing.SetCountryId(countryId);
+```
+
+## SetCountryName(String)
+
+```crmscript
+Void SetCountryName(String countryName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String countryName;
+thing.SetCountryName(countryName);
+```
+
+## SetDepartment(String)
+
+```crmscript
+Void SetDepartment(String department)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String department;
+thing.SetDepartment(department);
+```
+
+## SetDirectPhone(String)
+
+```crmscript
+Void SetDirectPhone(String directPhone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String directPhone;
+thing.SetDirectPhone(directPhone);
+```
+
+## SetEmailAddress(String)
+
+```crmscript
+Void SetEmailAddress(String emailAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String emailAddress;
+thing.SetEmailAddress(emailAddress);
+```
+
+## SetEmailAddressName(String)
+
+```crmscript
+Void SetEmailAddressName(String emailAddressName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String emailAddressName;
+thing.SetEmailAddressName(emailAddressName);
+```
+
+## SetFormattedAddress(String)
+
+```crmscript
+Void SetFormattedAddress(String formattedAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String formattedAddress;
+thing.SetFormattedAddress(formattedAddress);
+```
+
+## SetFullName(String)
+
+```crmscript
+Void SetFullName(String fullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String fullName;
+thing.SetFullName(fullName);
+```
+
+## SetIsOwnerContact(Bool)
+
+```crmscript
+Void SetIsOwnerContact(Bool isOwnerContact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This means that all persons on this contact can on only be internal users and not external users.
+</Note>
+
+**Example:**
+
+```crmscript
+NSContact thing;
+Bool isOwnerContact;
+thing.SetIsOwnerContact(isOwnerContact);
+```
+
+## SetKananame(String)
+
+```crmscript
+Void SetKananame(String kananame)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String kananame;
+thing.SetKananame(kananame);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOrgNr(String)
+
+```crmscript
+Void SetOrgNr(String orgNr)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String orgNr;
+thing.SetOrgNr(orgNr);
+```
+
+## SetURL(String)
+
+```crmscript
+Void SetURL(String uRL)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String uRL;
+thing.SetURL(uRL);
+```
+
+## SetURLName(String)
+
+```crmscript
+Void SetURLName(String uRLName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContact thing;
+String uRLName;
+thing.SetURLName(uRLName);
+```

@@ -1,0 +1,388 @@
+﻿---
+uid: crmscript.netserver.nspreference
+title: NSPreference
+description: "One preference item, which contains a specification (section/key), the raw string value, and the level at which this value was found."
+keywords: CRMScript, NSPreference, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPreference
+
+One preference item, which contains a specification (section/key), the raw string value, and the level at which this value was found.
+
+## Constructors
+
+### NSPreference()
+
+```crmscript
+NSPreference
+```
+
+Initializes a new instance of the NSPreference class.
+
+## Methods
+
+## GetDisplayTooltip()
+
+```crmscript
+String GetDisplayTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display tooltip, populated when asked for. Formatted using CultureDataFormatter.
+
+<Note>
+Suitable for binding display-datasource in lists, etc.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String displayTooltip = thing.GetDisplayTooltip();
+```
+
+## GetDisplayType()
+
+```crmscript
+Integer GetDisplayType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Display type, populated when asked for. See &lt;xref href=\"CRMScript.NetServer.PrefDescValueType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer displayType = thing.GetDisplayType();
+```
+
+## GetDisplayValue()
+
+```crmscript
+String GetDisplayValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display value, populated when asked for. Formatted using CultureDataFormatter.
+
+<Note>
+Suitable for binding display-datasource in lists, etc.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String displayValue = thing.GetDisplayValue();
+```
+
+## GetLevel()
+
+```crmscript
+Integer GetLevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.PreferenceLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;. Undefined is returned for preferences that do not have a current setting.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer level = thing.GetLevel();
+```
+
+## GetPrefDescId()
+
+```crmscript
+Integer GetPrefDescId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the prefdesc this preference is connected to.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer prefDescId = thing.GetPrefDescId();
+```
+
+## GetRawValue()
+
+```crmscript
+String GetRawValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPreference value.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String rawValue = thing.GetRawValue();
+```
+
+## GetSpecification()
+
+```crmscript
+NSPreferenceSpec GetSpecification()
+```
+
+**Returns:** [CRMScript.NetServer.NSPreferenceSpec](CRMScript.NetServer.NSPreferenceSpec) - Preference specification, consisting of the section name and key name.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+NSPreferenceSpec specification = thing.GetSpecification();
+```
+
+## GetTableName()
+
+```crmscript
+String GetTableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - For DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String tableName = thing.GetTableName();
+```
+
+## GetTabOrder()
+
+```crmscript
+NSTabOrder GetTabOrder()
+```
+
+**Returns:** [CRMScript.NetServer.NSTabOrder](CRMScript.NetServer.NSTabOrder)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+NSTabOrder tabOrder = thing.GetTabOrder();
+```
+
+## GetTargetId()
+
+```crmscript
+Integer GetTargetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the target row. The table it points at is specified by the preference type.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer targetId = thing.GetTargetId();
+```
+
+## GetUserPreferenceId()
+
+```crmscript
+Integer GetUserPreferenceId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the user preference.
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer userPreferenceId = thing.GetUserPreferenceId();
+```
+
+## SetDisplayTooltip(String)
+
+```crmscript
+Void SetDisplayTooltip(String displayTooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Suitable for binding display-datasource in lists, etc.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String displayTooltip;
+thing.SetDisplayTooltip(displayTooltip);
+```
+
+## SetDisplayType(Integer)
+
+```crmscript
+Void SetDisplayType(Integer displayType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer displayType;
+thing.SetDisplayType(displayType);
+```
+
+## SetDisplayValue(String)
+
+```crmscript
+Void SetDisplayValue(String displayValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Suitable for binding display-datasource in lists, etc.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String displayValue;
+thing.SetDisplayValue(displayValue);
+```
+
+## SetLevel(Integer)
+
+```crmscript
+Void SetLevel(Integer level)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Undefined is returned for preferences that do not have a current setting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer level;
+thing.SetLevel(level);
+```
+
+## SetPrefDescId(Integer)
+
+```crmscript
+Void SetPrefDescId(Integer prefDescId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer prefDescId;
+thing.SetPrefDescId(prefDescId);
+```
+
+## SetRawValue(String)
+
+```crmscript
+Void SetRawValue(String rawValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String rawValue;
+thing.SetRawValue(rawValue);
+```
+
+## SetSpecification(NSPreferenceSpec)
+
+```crmscript
+Void SetSpecification(NSPreferenceSpec specification)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+NSPreferenceSpec specification;
+thing.SetSpecification(specification);
+```
+
+## SetTableName(String)
+
+```crmscript
+Void SetTableName(String tableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+String tableName;
+thing.SetTableName(tableName);
+```
+
+## SetTabOrder(NSTabOrder)
+
+```crmscript
+Void SetTabOrder(NSTabOrder tabOrder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+NSTabOrder tabOrder;
+thing.SetTabOrder(tabOrder);
+```
+
+## SetTargetId(Integer)
+
+```crmscript
+Void SetTargetId(Integer targetId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer targetId;
+thing.SetTargetId(targetId);
+```
+
+## SetUserPreferenceId(Integer)
+
+```crmscript
+Void SetUserPreferenceId(Integer userPreferenceId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPreference thing;
+Integer userPreferenceId;
+thing.SetUserPreferenceId(userPreferenceId);
+```

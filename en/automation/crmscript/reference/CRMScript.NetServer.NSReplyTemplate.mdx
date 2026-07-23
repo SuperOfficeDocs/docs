@@ -1,0 +1,149 @@
+﻿---
+uid: crmscript.netserver.nsreplytemplate
+title: NSReplyTemplate
+description: ""
+keywords: CRMScript, NSReplyTemplate, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSReplyTemplate
+
+## Constructors
+
+### NSReplyTemplate()
+
+```crmscript
+NSReplyTemplate
+```
+
+Initializes a new instance of the NSReplyTemplate class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The description for this reply template.
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+String description = thing.GetDescription();
+```
+
+## GetFolderId()
+
+```crmscript
+Integer GetFolderId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the folder in which this reply template is located. NULL or -1 if this is a top-level reply template.
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+Integer folderId = thing.GetFolderId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name for this reply template.
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+String name = thing.GetName();
+```
+
+## GetReplyTemplateId()
+
+```crmscript
+Integer GetReplyTemplateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+Integer replyTemplateId = thing.GetReplyTemplateId();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetFolderId(Integer)
+
+```crmscript
+Void SetFolderId(Integer folderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+Integer folderId;
+thing.SetFolderId(folderId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+String name;
+thing.SetName(name);
+```
+
+## SetReplyTemplateId(Integer)
+
+```crmscript
+Void SetReplyTemplateId(Integer replyTemplateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSReplyTemplate thing;
+Integer replyTemplateId;
+thing.SetReplyTemplateId(replyTemplateId);
+```

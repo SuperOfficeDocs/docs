@@ -1,0 +1,754 @@
+﻿---
+uid: crmscript.netserver.nsticketmessageentity
+title: NSTicketMessageEntity
+description: "The ticket messages are e-mails, SMS or other messages attached to a ticket (aka request)."
+keywords: CRMScript, NSTicketMessageEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketMessageEntity
+
+The ticket messages are e-mails, SMS or other messages attached to a ticket (aka request).
+
+## Constructors
+
+### NSTicketMessageEntity()
+
+```crmscript
+NSTicketMessageEntity
+```
+
+Initializes a new instance of the NSTicketMessageEntity class.
+
+## Methods
+
+## GetAuthor()
+
+A string representing the author of the message. Could be a user's name, or a persons email address.
+
+```crmscript
+String GetAuthor()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String author = thing.GetAuthor();
+```
+
+## GetBody()
+
+The textbody for the message.
+
+```crmscript
+String GetBody()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String body = thing.GetBody();
+```
+
+## GetCreatedAt()
+
+When the message was posted.
+
+```crmscript
+DateTime GetCreatedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+DateTime createdAt = thing.GetCreatedAt();
+```
+
+## GetCreatedBy()
+
+The associate who created this ticket message
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on a TicketMessageEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetDebugInfo()
+
+The debug info for the message.
+
+```crmscript
+String GetDebugInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String debugInfo = thing.GetDebugInfo();
+```
+
+## GetEjMessageId()
+
+The primary key (auto-incremented)
+
+```crmscript
+Integer GetEjMessageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer ejMessageId = thing.GetEjMessageId();
+```
+
+## GetEmailHeader()
+
+The email header is saved in this field as raw text
+
+```crmscript
+String GetEmailHeader()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String emailHeader = thing.GetEmailHeader();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on TicketMessageEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetHtmlBody()
+
+The HTML body for the message (if any).
+
+```crmscript
+String GetHtmlBody()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String htmlBody = thing.GetHtmlBody();
+```
+
+## GetImportant()
+
+If this message is important or not.
+
+```crmscript
+Bool GetImportant()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Bool important = thing.GetImportant();
+```
+
+## GetMailSorter()
+
+The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id's change every time one changes the mail sorter. :-0
+
+```crmscript
+String GetMailSorter()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String mailSorter = thing.GetMailSorter();
+```
+
+## GetMessageCategory()
+
+```crmscript
+Integer GetMessageCategory()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Defines what kind of message this is. See &lt;xref href=\"CRMScript.NetServer.TicketMessageCategory\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer messageCategory = thing.GetMessageCategory();
+```
+
+## GetMessageHeaders()
+
+```crmscript
+NSTicketMessageHeader[] GetMessageHeaders()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketMessageHeader](CRMScript.NetServer.NSTicketMessageHeader)[] - Contains the message headers, like To, Cc, Bcc information, or custom headers.
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+TicketMessageHeader[] messageHeaders = thing.GetMessageHeaders();
+```
+
+## GetMessageId()
+
+The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.
+
+```crmscript
+String GetMessageId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String messageId = thing.GetMessageId();
+```
+
+## GetPerson()
+
+If this is an incoming message, this will contain the person
+
+```crmscript
+NSPerson GetPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+NSPerson person = thing.GetPerson();
+```
+
+## GetSearchTitle()
+
+A copy of the title of the ticket, for search optimization and simpler reporting.
+
+```crmscript
+String GetSearchTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String searchTitle = thing.GetSearchTitle();
+```
+
+## GetSlevel()
+
+```crmscript
+Integer GetSlevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The security level of the message. See &lt;xref href=\"CRMScript.NetServer.TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer slevel = thing.GetSlevel();
+```
+
+## GetTicket()
+
+The connected ticket
+
+```crmscript
+NSTicket GetTicket()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicket](CRMScript.NetServer.NSTicket)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+NSTicket ticket = thing.GetTicket();
+```
+
+## GetTimeSpent()
+
+The time spent (minutes) for this message.
+
+```crmscript
+Integer GetTimeSpent()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer timeSpent = thing.GetTimeSpent();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of the message (plaintext/html). See &lt;xref href=\"CRMScript.NetServer.TicketMessageType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer type = thing.GetType();
+```
+
+## SetAuthor(String)
+
+A string representing the author of the message. Could be a user's name, or a persons email address.
+
+```crmscript
+Void SetAuthor(String author)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String author;
+thing.SetAuthor(author);
+```
+
+## SetBody(String)
+
+The textbody for the message.
+
+```crmscript
+Void SetBody(String body)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String body;
+thing.SetBody(body);
+```
+
+## SetCreatedAt(DateTime)
+
+When the message was posted.
+
+```crmscript
+Void SetCreatedAt(DateTime createdAt)
+```
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+DateTime createdAt;
+thing.SetCreatedAt(createdAt);
+```
+
+## SetCreatedBy(NSAssociate)
+
+The associate who created this ticket message
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on a TicketMessageEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+udefs["x_foo"] = "foobar";
+udefs["x_bar"] = "456"; // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetDebugInfo(String)
+
+The debug info for the message.
+
+```crmscript
+Void SetDebugInfo(String debugInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String debugInfo;
+thing.SetDebugInfo(debugInfo);
+```
+
+## SetEjMessageId(Integer)
+
+The primary key (auto-incremented)
+
+```crmscript
+Void SetEjMessageId(Integer ejMessageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer ejMessageId;
+thing.SetEjMessageId(ejMessageId);
+```
+
+## SetEmailHeader(String)
+
+The email header is saved in this field as raw text
+
+```crmscript
+Void SetEmailHeader(String emailHeader)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String emailHeader;
+thing.SetEmailHeader(emailHeader);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on TicketMessageEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Map extras;
+extras["SuperOffice:1"] = "[I:123]";
+extras["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+extras["custom.progid"] = "foobar";
+thing.SetExtraFields(extras);
+```
+
+## SetHtmlBody(String)
+
+The HTML body for the message (if any).
+
+```crmscript
+Void SetHtmlBody(String htmlBody)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String htmlBody;
+thing.SetHtmlBody(htmlBody);
+```
+
+## SetImportant(Bool)
+
+If this message is important or not.
+
+```crmscript
+Void SetImportant(Bool important)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Bool important;
+thing.SetImportant(important);
+```
+
+## SetMailSorter(String)
+
+The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id's change every time one changes the mail sorter. :-0
+
+```crmscript
+Void SetMailSorter(String mailSorter)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String mailSorter;
+thing.SetMailSorter(mailSorter);
+```
+
+## SetMessageCategory(Integer)
+
+```crmscript
+Void SetMessageCategory(Integer messageCategory)
+```
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer messageCategory;
+thing.SetMessageCategory(messageCategory);
+```
+
+## SetMessageHeaders(NSTicketMessageHeader[])
+
+```crmscript
+Void SetMessageHeaders(NSTicketMessageHeader[] messageHeaders)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+NSTicketMessageHeader[] messageHeaders;
+thing.SetMessageHeaders(messageHeaders);
+```
+
+## SetMessageId(String)
+
+The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.
+
+```crmscript
+Void SetMessageId(String messageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String messageId;
+thing.SetMessageId(messageId);
+```
+
+## SetPerson(NSPerson)
+
+If this is an incoming message, this will contain the person
+
+```crmscript
+Void SetPerson(NSPerson person)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+NSPerson person;
+thing.SetPerson(person);
+```
+
+## SetSearchTitle(String)
+
+A copy of the title of the ticket, for search optimisation and simpler reporting.
+
+```crmscript
+Void SetSearchTitle(String searchTitle)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+String searchTitle;
+thing.SetSearchTitle(searchTitle);
+```
+
+## SetSlevel(Integer)
+
+```crmscript
+Void SetSlevel(Integer slevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer slevel;
+thing.SetSlevel(slevel);
+```
+
+## SetTicket(NSTicket)
+
+The connected ticket
+
+```crmscript
+Void SetTicket(NSTicket ticket)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+NSTicket ticket;
+thing.SetTicket(ticket);
+```
+
+## SetTimeSpent(Integer)
+
+The time spent (minutes) for this message.
+
+```crmscript
+Void SetTimeSpent(Integer timeSpent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer timeSpent;
+thing.SetTimeSpent(timeSpent);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Example:**
+
+```crmscript
+NSTicketMessageEntity thing;
+Integer type;
+thing.SetType(type);
+```

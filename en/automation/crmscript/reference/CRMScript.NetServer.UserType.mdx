@@ -1,0 +1,32 @@
+﻿---
+uid: crmscript.netserver.usertype
+title: Enum UserType
+description: "Type of user (or resource). Mapps functionally to associate type - but with different binary values."
+keywords: CRMScript, UserType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum UserType
+
+Type of user (or resource). Mapps functionally to associate type - but with different binary values.
+
+## Syntax
+
+```crmscript
+UserType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown |  |
+| InternalAssociate | Employee |
+| ResourceAssociate | Resource - meeting room, projector or other bookable resource |
+| ExternalAssociate | External person |
+| AnonymousAssociate | Anonymous user - used by applications that does not require logins |
+| SystemAssociate | System user - mainly used for integrations or administration.  This user is not goverened sentry |

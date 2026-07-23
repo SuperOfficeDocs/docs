@@ -1,0 +1,618 @@
+﻿---
+uid: crmscript.netserver.nssaleagent
+title: NSSaleAgent
+description: "Sale data services."
+keywords: CRMScript, NSSaleAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSaleAgent
+
+Sale data services.
+
+## Constructors
+
+### NSSaleAgent()
+
+```crmscript
+NSSaleAgent
+```
+
+Sale data services.
+
+## Methods
+
+## AddSaleStakeholders(Integer,NSSaleStakeholder[])
+
+```crmscript
+Void AddSaleStakeholders(Integer saleId, NSSaleStakeholder[] saleStakeholders)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## BatchUpdateNextDueDate()
+
+Re-calculates all the next due dates
+
+```crmscript
+Void BatchUpdateNextDueDate()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CreateDefaultSaleEntity()
+
+Sets default values into a new NSSaleEntity.
+
+```crmscript
+NSSaleEntity CreateDefaultSaleEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleEntity](CRMScript.NetServer.NSSaleEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+NSSaleEntity thing = agent.CreateDefaultSaleEntity();
+thing = agent.SaveSaleEntity(thing);
+```
+
+## CreateDefaultSaleStakeholder()
+
+Sets default values into a new NSSaleStakeholder.
+
+```crmscript
+NSSaleStakeholder CreateDefaultSaleStakeholder()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+NSSaleStakeholder thing = agent.CreateDefaultSaleStakeholder();
+thing = agent.SaveSaleStakeholder(thing);
+```
+
+## CreateDefaultSaleSummary()
+
+Sets default values into a new NSSaleSummary.
+
+```crmscript
+NSSaleSummary CreateDefaultSaleSummary()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+NSSaleSummary thing = agent.CreateDefaultSaleSummary();
+thing = agent.SaveSaleSummary(thing);
+```
+
+## DeleteSaleEntity(Integer)
+
+Deletes the NSSaleEntity
+
+```crmscript
+DeleteSaleEntity(Integer saleEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+agent.DeleteSaleEntity(123);
+```
+
+## DeleteSaleStakeholder(Integer)
+
+Deletes the NSSaleStakeholder
+
+```crmscript
+DeleteSaleStakeholder(Integer saleStakeholder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+agent.DeleteSaleStakeholder(123);
+```
+
+## DeleteSaleStakeholders(Integer[])
+
+```crmscript
+Void DeleteSaleStakeholders(Integer[] saleStakeholderIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetMyOpportunities(Integer)
+
+Returns opportunities (open sales) belonging to the user currently logged on
+
+```crmscript
+NSSale[] GetMyOpportunities(Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer count;
+NSSale[] res = agent.GetMyOpportunities(count);
+```
+
+## GetNextDueDate(Integer)
+
+Gets the next due date for a sale.
+
+```crmscript
+DateTime GetNextDueDate(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+<Note>
+The next due date is the next future appointment that is not completed.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer saleId;
+DateTime res = agent.GetNextDueDate(saleId);
+```
+
+## GetNextSaleStage(Integer,Bool)
+
+Gets the next (not deleted) sale stage ID if the current stage is deleted. If the current stage is not deleted, the CurrentStageId is returned.
+
+```crmscript
+Integer GetNextSaleStage(Integer saleId, Bool includeCurrentStage)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetOpenSalesForContact(Integer)
+
+Returns all open sales for the contact provided.
+
+```crmscript
+NSSale[] GetOpenSalesForContact(Integer contactId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer contactId;
+NSSale[] res = agent.GetOpenSalesForContact(contactId);
+```
+
+## GetProbabilityFromStage(Integer)
+
+Gets the probability percentage for a given sale stage
+
+```crmscript
+Integer GetProbabilityFromStage(Integer stageId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer stageId;
+Integer res = agent.GetProbabilityFromStage(stageId);
+```
+
+## GetRecentSales(Integer,Integer)
+
+Returns the latest sales (that are sold) limited by their amount.
+
+```crmscript
+NSSale[] GetRecentSales(Integer amountLimit, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[] - The result is sorted descending with the latest first.
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer amountLimit;
+Integer count;
+NSSale[] res = agent.GetRecentSales(amountLimit, count);
+```
+
+## GetSale(Integer)
+
+Gets an NSSale object.
+
+```crmscript
+NSSale GetSale(Integer saleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+NSSale thing = agent.GetSale(123);
+```
+
+## GetSaleEntity(Integer)
+
+Gets an NSSaleEntity object.
+
+```crmscript
+NSSaleEntity GetSaleEntity(Integer saleEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleEntity](CRMScript.NetServer.NSSaleEntity)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+NSSaleEntity thing = agent.GetSaleEntity(123);
+```
+
+## GetSaleList(Integer[])
+
+Gets an array of Sale objects.
+
+```crmscript
+NSSale[] GetSaleList(Integer[]  saleIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSSaleAgent agent;
+agent.GetSaleList(ids);
+```
+
+## GetSalesByDate(DateTime,DateTime,Integer,Integer)
+
+Returns all sales within a time period. The sales array can be limited by amount and status.
+
+```crmscript
+NSSale[] GetSalesByDate(DateTime fromDate, DateTime toDate, Integer amountLimit, Integer status)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+DateTime fromDate;
+DateTime toDate;
+Integer amountLimit;
+Integer status;
+NSSale[] res = agent.GetSalesByDate(fromDate, toDate, amountLimit, status);
+```
+
+## GetSalesFromContact(Integer,Bool)
+
+Returns all sales for the contact provided.
+
+```crmscript
+NSSale[] GetSalesFromContact(Integer contactId, Bool onlyOpenSales)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer contactId;
+Bool onlyOpenSales;
+NSSale[] res = agent.GetSalesFromContact(contactId, onlyOpenSales);
+```
+
+## GetSalesFromPerson(Integer,Bool)
+
+Returns all sales for the person provided.
+
+```crmscript
+NSSale[] GetSalesFromPerson(Integer personId, Bool onlyOpenSales)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer personId;
+Bool onlyOpenSales;
+NSSale[] res = agent.GetSalesFromPerson(personId, onlyOpenSales);
+```
+
+## GetSaleStakeholder(Integer)
+
+Gets an NSSaleStakeholder object.
+
+```crmscript
+NSSaleStakeholder GetSaleStakeholder(Integer saleStakeholderId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+NSSaleStakeholder thing = agent.GetSaleStakeholder(123);
+```
+
+## GetSaleStakeholderById(Integer[])
+
+```crmscript
+NSSaleStakeholder[] GetSaleStakeholderById(Integer[] saleStakeholderIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+
+## GetSaleStakeholderList(Integer[])
+
+Gets an array of SaleStakeholder objects.
+
+```crmscript
+NSSaleStakeholder[] GetSaleStakeholderList(Integer[]  saleStakeholderIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSSaleAgent agent;
+agent.GetSaleStakeholderList(ids);
+```
+
+## GetSaleStakeholders(Integer)
+
+```crmscript
+NSSaleStakeholder[] GetSaleStakeholders(Integer saleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+
+## GetSummaryByAssociate(Integer,DateTime,DateTime)
+
+```crmscript
+NSSaleSummary GetSummaryByAssociate(Integer associateId, DateTime fromDate, DateTime toDate)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+
+## GetSummaryByContact(Integer,DateTime,DateTime)
+
+```crmscript
+NSSaleSummary GetSummaryByContact(Integer contactId, DateTime fromDate, DateTime toDate)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+
+## GetSummaryByGroup(Integer,DateTime,DateTime)
+
+```crmscript
+NSSaleSummary GetSummaryByGroup(Integer groupId, DateTime fromDate, DateTime toDate)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+
+## GetUpcomingSales(Integer,Integer)
+
+Returns all open sales, sorted descending with the latest first.
+
+```crmscript
+NSSale[] GetUpcomingSales(Integer weightedAmountLimit, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer weightedAmountLimit;
+Integer count;
+NSSale[] res = agent.GetUpcomingSales(weightedAmountLimit, count);
+```
+
+## HasGuide(Integer)
+
+Does this sale have a sale guide associated with its sale type?
+
+```crmscript
+Bool HasGuide(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer saleId;
+Bool res = agent.HasGuide(saleId);
+```
+
+## HasGuideActivities(Integer)
+
+```crmscript
+Bool HasGuideActivities(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## HasStakeholderSetting(Integer)
+
+```crmscript
+Bool HasStakeholderSetting(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## IsNumberValid(Integer,String)
+
+Checks if the number is unique or required.
+
+```crmscript
+Bool IsNumberValid(Integer contactId, String number)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+<Note>
+The setting is configured from admin under system options.
+</Note>
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+Integer contactId;
+String number;
+Bool res = agent.IsNumberValid(contactId, number);
+```
+
+## OfferAutoNextStageOnApppointmentCompleted(Integer)
+
+```crmscript
+Bool OfferAutoNextStageOnApppointmentCompleted(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## SaveSaleEntity(NSSaleEntity)
+
+Updates the existing NSSaleEntity or creates a new NSSaleEntity if the ID parameter is 0.
+
+```crmscript
+NSSaleEntity SaveSaleEntity(NSSaleEntity saleEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleEntity](CRMScript.NetServer.NSSaleEntity) - The new or updated NSSaleEntity.
+
+**Example:**
+
+```crmscript
+NSSale  agent;
+NSSaleEntity thing = agent.CreateDefaultSaleEntity();
+thing = agent.SaveSaleEntity(thing);
+```
+
+## SaveSaleStakeholder(NSSaleStakeholder)
+
+Updates the existing NSSaleStakeholder or creates a new NSSaleStakeholder if the id parameter is 0
+
+```crmscript
+NSSaleStakeholder SaveSaleStakeholder(NSSaleStakeholder saleStakeholder)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)
+
+**Example:**
+
+```crmscript
+NSSale  agent;
+NSSaleStakeholder thing = agent.CreateDefaultSaleStakeholder();
+thing = agent.SaveSaleStakeholder(thing);
+```
+
+## SetAsLost(Integer[])
+
+Changes the status of one or more sales to Lost.
+
+```crmscript
+Void SetAsLost(Integer[] saleIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This does not affect the Completed state of the sale.
+</Note>
+
+## SetAsSold(Integer[])
+
+Changes the status of one or more Sales to Sold.
+
+```crmscript
+Void SetAsSold(Integer[] saleIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This does not mark them as Completed.
+</Note>
+
+## UpdateSaleStakeholders(NSSaleStakeholder[])
+
+```crmscript
+NSSaleStakeholder[] UpdateSaleStakeholders(NSSaleStakeholder[] stakeholders)
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+
+## ValidateSaleEntity(NSSaleEntity)
+
+Checks that entity is ready for saving, return error messages by field.
+
+```crmscript
+Map ValidateSaleEntity(NSSaleEntity saleEntity)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSSaleAgent agent;
+NSSaleEntity saleEntity;
+Map res = agent.ValidateSaleEntity(saleEntity);
+```

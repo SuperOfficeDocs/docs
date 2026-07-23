@@ -1,0 +1,266 @@
+﻿---
+uid: crmscript.native.htmlelement
+title: HtmlElement
+description: "Represents HTML elements in the SuperOffice UI."
+keywords: CRMScript, HtmlElement, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# HtmlElement
+
+Represents HTML elements in the SuperOffice UI.
+
+## Constructors
+
+### HtmlElement()
+
+```crmscript
+HtmlElement
+```
+
+Initializes a new instance of the HtmlElement class.
+
+## Methods
+
+## clearValue()
+
+Clears any selected values from elements that support this property.
+
+```crmscript
+Void clearValue()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getFieldValue(String)
+
+Returns the value of a specific field.
+
+```crmscript
+String getFieldValue(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of field.
+
+## getNextTabIndex()
+
+Increments the index counter and returns.
+
+```crmscript
+Integer getNextTabIndex()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The next valid tab index number.
+
+<Note>
+The HTML tabindex attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.
+</Note>
+
+## getTabIndexString()
+
+Retrieves the tabulator index string of the element
+
+A variant of &lt;code&gt;getTabIndexString()&lt;/code&gt; that omits element ID if it is the 1st element.
+
+```crmscript
+String getTabIndexString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tabulator index string of the element.
+
+<Note>
+The HTML tabindex attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.
+</Note>
+
+## getTabIndexString(Bool)
+
+Retrieves the tabulator index string of the element and omits element ID if it is the 1st element.
+
+```crmscript
+String getTabIndexString(Bool noId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tabulator index string of the element.
+
+<Note>
+The HTML tabindex attribute specifies the tab order of an element. It determines the sequence of entering fields with Tab or Shift+Tab.
+</Note>
+
+## getTypeName()
+
+Returns the element type. For example, HtmlAnchorLine or HtmlGrid.
+
+```crmscript
+String getTypeName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The element type.
+
+<Note>
+Look up specific elements in the bLogic screen element reference.
+</Note>
+
+## isEmpty()
+
+Returns true if the HtmlElement says it is empty.
+
+```crmscript
+Bool isEmpty()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the HtmlElement says it is empty; otherwise, false.
+
+<Note>
+That an element is empty means different things depending on the element type. For example, a list element should be empty if it has no rows, but a code element should be empty if it contains no text.
+</Note>
+
+## setDisabled(Bool)
+
+Toggles whether the element is visible or invisible.
+
+```crmscript
+Void setDisabled(Bool invisible)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Commonly used in combination with role-based access.
+</Note>
+
+## setErrorMessage(String)
+
+Sets an error message above the element if the form is posted.
+
+```crmscript
+Void setErrorMessage(String errorMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used to inform users that something went wrong and attempt to help them out.
+</Note>
+
+**Example:**
+
+```crmscript
+HtmlElement page = getHtmlElement("HtmlPage");
+page.setErrorMessage("This page contains an error");
+```
+
+## setFieldValue(String,Map)
+
+Sets one or more field values on an element.
+
+```crmscript
+Void setFieldValue(String name, Map values)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+HtmlElement formPage;
+Map m;
+m.insert("name", "superButton");
+m.insert("label", "Click me!");
+m.insert("style", "StyleGreen");
+formPage.setFieldValue("addButton", m);
+```
+
+## setFromCgi()
+
+Called when the element should find its values from the CGI variables.
+
+```crmscript
+Void setFromCgi()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Commonly used for screens containing forms.
+</Note>
+
+## setInfoMessage(String)
+
+Sets an info message above the element if the form is posted.
+
+```crmscript
+Void setInfoMessage(String infoMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Used to display the text of a purely informative nature.
+</Note>
+
+## setNotEditable(Bool)
+
+Toggles whether the element can be edited (for those elements that support this property).
+
+```crmscript
+Void setNotEditable(Bool canEdit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Commonly used in combination with role-based access.
+
+Available from 3.1.8.36
+</Note>
+
+## setValue(String)
+
+Sets the value of a specific element.
+
+```crmscript
+Void setValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+HtmlElement selectDate;
+selectDate.setValue("2020.09.10");
+```
+
+## toBool()
+
+Returns the value of the element as a Bool.
+
+```crmscript
+Bool toBool()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The boolean representation of the element.
+
+## toInteger()
+
+Returns the element value as an integer.
+
+```crmscript
+Integer toInteger()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The numeric representation of the element.
+
+## toString()
+
+Returns the value of the element as a String.
+
+```crmscript
+String toString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string representation of the element.

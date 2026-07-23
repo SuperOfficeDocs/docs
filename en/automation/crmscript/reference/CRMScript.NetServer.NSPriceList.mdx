@@ -1,0 +1,345 @@
+﻿---
+uid: crmscript.netserver.nspricelist
+title: NSPriceList
+description: "A price list is basically a collection of products. It can be valid in a time period, and outright deactivated. All prices in the product list is in a specific currency. We have decieded not to separate prices and products, which means that we get a simpler data model, but some redundancy."
+keywords: CRMScript, NSPriceList, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPriceList
+
+A price list is basically a collection of products. It can be valid in a time period, and outright deactivated. All prices in the product list is in a specific currency. We have decieded not to separate prices and products, which means that we get a simpler data model, but some redundancy.
+
+## Constructors
+
+### NSPriceList()
+
+```crmscript
+NSPriceList
+```
+
+Initializes a new instance of the NSPriceList class.
+
+## Methods
+
+## GetCurrency()
+
+```crmscript
+String GetCurrency()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The iso currency code, like 'USD' or 'NOK'.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String currency = thing.GetCurrency();
+```
+
+## GetCurrencyName()
+
+```crmscript
+String GetCurrencyName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name to use in the user interface, like perhaps 'US dollar' or '$'.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String currencyName = thing.GetCurrencyName();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of this price list, will be used as tool-tip in the user interface.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String description = thing.GetDescription();
+```
+
+## GetERPPriceListKey()
+
+```crmscript
+String GetERPPriceListKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The key that uniquely identifies this price list in the ERP system.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String eRPPriceListKey = thing.GetERPPriceListKey();
+```
+
+## GetIsActive()
+
+```crmscript
+Bool GetIsActive()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the list active (as opposed to being worked on, suddenly canceled, etc.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+Bool isActive = thing.GetIsActive();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of this price list to use in the user interface.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String name = thing.GetName();
+```
+
+## GetPriceListId()
+
+```crmscript
+Integer GetPriceListId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+Integer priceListId = thing.GetPriceListId();
+```
+
+## GetQuoteConnectionId()
+
+```crmscript
+Integer GetQuoteConnectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The connection to the ERP system used for this price list.
+
+<Note>
+Reserved for future use
+</Note>
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+Integer quoteConnectionId = thing.GetQuoteConnectionId();
+```
+
+## GetValidFrom()
+
+```crmscript
+DateTime GetValidFrom()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date (inclusive) the price list start to be valid. This can be DateTime.MinValue to signal that it doesn't have a specific start date.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+DateTime validFrom = thing.GetValidFrom();
+```
+
+## GetValidTo()
+
+```crmscript
+DateTime GetValidTo()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date (inclusive) the price list ends to be valid. This can be DateTime.MaxValue to signal that it doesn't have a specific end date.
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+DateTime validTo = thing.GetValidTo();
+```
+
+## SetCurrency(String)
+
+```crmscript
+Void SetCurrency(String currency)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String currency;
+thing.SetCurrency(currency);
+```
+
+## SetCurrencyName(String)
+
+```crmscript
+Void SetCurrencyName(String currencyName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String currencyName;
+thing.SetCurrencyName(currencyName);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetERPPriceListKey(String)
+
+```crmscript
+Void SetERPPriceListKey(String eRPPriceListKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String eRPPriceListKey;
+thing.SetERPPriceListKey(eRPPriceListKey);
+```
+
+## SetIsActive(Bool)
+
+```crmscript
+Void SetIsActive(Bool isActive)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+Bool isActive;
+thing.SetIsActive(isActive);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPriceListId(Integer)
+
+```crmscript
+Void SetPriceListId(Integer priceListId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+Integer priceListId;
+thing.SetPriceListId(priceListId);
+```
+
+## SetQuoteConnectionId(Integer)
+
+```crmscript
+Void SetQuoteConnectionId(Integer quoteConnectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Reserved for future use
+</Note>
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+Integer quoteConnectionId;
+thing.SetQuoteConnectionId(quoteConnectionId);
+```
+
+## SetValidFrom(DateTime)
+
+```crmscript
+Void SetValidFrom(DateTime validFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+DateTime validFrom;
+thing.SetValidFrom(validFrom);
+```
+
+## SetValidTo(DateTime)
+
+```crmscript
+Void SetValidTo(DateTime validTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPriceList thing;
+DateTime validTo;
+thing.SetValidTo(validTo);
+```

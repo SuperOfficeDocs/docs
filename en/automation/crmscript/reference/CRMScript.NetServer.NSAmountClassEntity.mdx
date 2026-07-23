@@ -1,0 +1,283 @@
+﻿---
+uid: crmscript.netserver.nsamountclassentity
+title: NSAmountClassEntity
+description: "Carrier object for AmountClassEntity."
+keywords: CRMScript, NSAmountClassEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAmountClassEntity
+
+Carrier object for AmountClassEntity.
+
+## Constructors
+
+### NSAmountClassEntity()
+
+```crmscript
+NSAmountClassEntity
+```
+
+Initializes a new instance of the NSAmountClassEntity class.
+
+## Methods
+
+## GetAmountClassId()
+
+```crmscript
+Integer GetAmountClassId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Integer amountClassId = thing.GetAmountClassId();
+```
+
+## GetAmountFrom()
+
+```crmscript
+Float GetAmountFrom()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Lower limit of this amount class.
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Float amountFrom = thing.GetAmountFrom();
+```
+
+## GetAmountTo()
+
+```crmscript
+Float GetAmountTo()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Upper limit of this amount class.
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Float amountTo = thing.GetAmountTo();
+```
+
+## GetCurrencyId()
+
+```crmscript
+Integer GetCurrencyId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Currency the limits in this amount class refer to.
+
+<Note>
+Mixing currencies between classes can give rise to overlapping intervals and thus unpredictable classifications.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Integer currencyId = thing.GetCurrencyId();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 - record is active; 1 - record is deleted and should not be shown in lists.
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetAmountClassId(Integer)
+
+```crmscript
+Void SetAmountClassId(Integer amountClassId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Integer amountClassId;
+thing.SetAmountClassId(amountClassId);
+```
+
+## SetAmountFrom(Float)
+
+```crmscript
+Void SetAmountFrom(Float amountFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Float amountFrom;
+thing.SetAmountFrom(amountFrom);
+```
+
+## SetAmountTo(Float)
+
+```crmscript
+Void SetAmountTo(Float amountTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Float amountTo;
+thing.SetAmountTo(amountTo);
+```
+
+## SetCurrencyId(Integer)
+
+```crmscript
+Void SetCurrencyId(Integer currencyId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Mixing currencies between classes can give rise to overlapping intervals and thus unpredictable classifications.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Integer currencyId;
+thing.SetCurrencyId(currencyId);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAmountClassEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

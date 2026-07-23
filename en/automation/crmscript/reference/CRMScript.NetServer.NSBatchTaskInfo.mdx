@@ -1,0 +1,695 @@
+﻿---
+uid: crmscript.netserver.nsbatchtaskinfo
+title: NSBatchTaskInfo
+description: "Contains information about one batch task."
+keywords: CRMScript, NSBatchTaskInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSBatchTaskInfo
+
+Contains information about one batch task.
+
+## Constructors
+
+### NSBatchTaskInfo()
+
+```crmscript
+NSBatchTaskInfo
+```
+
+Initializes a new instance of the NSBatchTaskInfo class.
+
+## Methods
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Task owner. If it is a System task, AssociateId = 0.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetContext()
+
+```crmscript
+String GetContext()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Context for the executing task.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String context = thing.GetContext();
+```
+
+## GetCreated()
+
+```crmscript
+DateTime GetCreated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Task creation time.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+DateTime created = thing.GetCreated();
+```
+
+## GetDatabaseSerialNumber()
+
+```crmscript
+String GetDatabaseSerialNumber()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Serial number of the database the task is to run on.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String databaseSerialNumber = thing.GetDatabaseSerialNumber();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the task.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String description = thing.GetDescription();
+```
+
+## GetDetailsRecord()
+
+```crmscript
+Integer GetDetailsRecord()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Record ID of a row in the DetailsTable containing more info about the task.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer detailsRecord = thing.GetDetailsRecord();
+```
+
+## GetDetailsTable()
+
+```crmscript
+Integer GetDetailsTable()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of table with more information about the task.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer detailsTable = thing.GetDetailsTable();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the task.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer id = thing.GetId();
+```
+
+## GetIsInternalTask()
+
+```crmscript
+Bool GetIsInternalTask()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, this task will not add a trace to the database.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Bool isInternalTask = thing.GetIsInternalTask();
+```
+
+## GetIsSystemTask()
+
+```crmscript
+Bool GetIsSystemTask()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the task is not initiated by an associate.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Bool isSystemTask = thing.GetIsSystemTask();
+```
+
+## GetLastStarted()
+
+```crmscript
+DateTime GetLastStarted()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was the task last started.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+DateTime lastStarted = thing.GetLastStarted();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the task.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String name = thing.GetName();
+```
+
+## GetParameterObject()
+
+```crmscript
+Map GetParameterObject()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - ParameterObject will be serialized to a binary blob and saved in the BinaryObject table. The link to the BinaryObject will be set using DetailsTable and DetailsRecord.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Map parameterObject = thing.GetParameterObject();
+```
+
+## GetProgressDescription()
+
+```crmscript
+String GetProgressDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Descriptive text for the current stage.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String progressDescription = thing.GetProgressDescription();
+```
+
+## GetProgressPercent()
+
+```crmscript
+Integer GetProgressPercent()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Task progress, in percent of estimated total.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer progressPercent = thing.GetProgressPercent();
+```
+
+## GetRequest()
+
+```crmscript
+String GetRequest()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Maps to the request field in the batchtask table.
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String request = thing.GetRequest();
+```
+
+## GetResponse()
+
+Maps to the response field in the batchtask table.
+
+```crmscript
+String GetResponse()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String response = thing.GetResponse();
+```
+
+## GetResult()
+
+Maps to the result field in the batchtask table.
+
+```crmscript
+String GetResult()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String result = thing.GetResult();
+```
+
+## GetStartCount()
+
+Maps to the startcount field in the batchtask table.
+
+```crmscript
+Integer GetStartCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer startCount = thing.GetStartCount();
+```
+
+## GetState()
+
+BatchTaskState of the task.
+
+```crmscript
+Integer GetState()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer state = thing.GetState();
+```
+
+## SetAssociateId(Integer)
+
+Task owner. If it is a System task, AssociateId = 0.
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetContext(String)
+
+Context for the executing task.
+
+```crmscript
+Void SetContext(String context)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String context;
+thing.SetContext(context);
+```
+
+## SetCreated(DateTime)
+
+```crmscript
+Void SetCreated(DateTime created)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+DateTime created;
+thing.SetCreated(created);
+```
+
+## SetDatabaseSerialNumber(String)
+
+Serial number of the database the task is to run on.
+
+```crmscript
+Void SetDatabaseSerialNumber(String databaseSerialNumber)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String databaseSerialNumber;
+thing.SetDatabaseSerialNumber(databaseSerialNumber);
+```
+
+## SetDescription(String)
+
+Description of the task.
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDetailsRecord(Integer)
+
+Record ID of a row in the DetailsTable containing more info about the task.
+
+```crmscript
+Void SetDetailsRecord(Integer detailsRecord)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer detailsRecord;
+thing.SetDetailsRecord(detailsRecord);
+```
+
+## SetDetailsTable(Integer)
+
+ID of table with more information about the task.
+
+```crmscript
+Void SetDetailsTable(Integer detailsTable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer detailsTable;
+thing.SetDetailsTable(detailsTable);
+```
+
+## SetId(Integer)
+
+ID of the task.
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetIsInternalTask(Bool)
+
+If IsInternalTask is true, this task will not add a trace to the database.
+
+```crmscript
+Void SetIsInternalTask(Bool isInternalTask)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Bool isInternalTask;
+thing.SetIsInternalTask(isInternalTask);
+```
+
+## SetIsSystemTask(Bool)
+
+If IsSystemTask is true, the task is not initiated by an associate.
+
+```crmscript
+Void SetIsSystemTask(Bool isSystemTask)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Bool isSystemTask;
+thing.SetIsSystemTask(isSystemTask);
+```
+
+## SetLastStarted(DateTime)
+
+```crmscript
+Void SetLastStarted(DateTime lastStarted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+DateTime lastStarted;
+thing.SetLastStarted(lastStarted);
+```
+
+## SetName(String)
+
+Name of the task.
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String name;
+thing.SetName(name);
+```
+
+## SetParameterObject(Map)
+
+Serializes a Map to a binary blob and saves it in the BinaryObject table. The link to the BinaryObject will be set using DetailsTable and DetailsRecord.
+
+```crmscript
+Void SetParameterObject(Map parameterObject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Map parameterObject;
+thing.SetParameterObject(parameterObject);
+```
+
+## SetProgressDescription(String)
+
+Descriptive text for the current stage
+
+```crmscript
+Void SetProgressDescription(String progressDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String progressDescription;
+thing.SetProgressDescription(progressDescription);
+```
+
+## SetProgressPercent(Integer)
+
+Task progress, in percent of estimated total
+
+```crmscript
+Void SetProgressPercent(Integer progressPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer progressPercent;
+thing.SetProgressPercent(progressPercent);
+```
+
+## SetRequest(String)
+
+Maps to the request field in the batchtask table.
+
+```crmscript
+Void SetRequest(String request)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String request;
+thing.SetRequest(request);
+```
+
+## SetResponse(String)
+
+Maps to the response field in the batchtask table.
+
+```crmscript
+Void SetResponse(String response)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String response;
+thing.SetResponse(response);
+```
+
+## SetResult(String)
+
+Maps to the result field in the batchtask table.
+
+```crmscript
+Void SetResult(String result)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+String result;
+thing.SetResult(result);
+```
+
+## SetStartCount(Integer)
+
+Maps to the startcount field in the batchtask table.
+
+```crmscript
+Void SetStartCount(Integer startCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer startCount;
+thing.SetStartCount(startCount);
+```
+
+## SetState(Integer)
+
+BatchTaskState of the task.
+
+```crmscript
+Void SetState(Integer state)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+See &lt;xref href=\"CRMScript.NetServer.BatchTaskState\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+NSBatchTaskInfo thing;
+Integer state;
+thing.SetState(state);
+```

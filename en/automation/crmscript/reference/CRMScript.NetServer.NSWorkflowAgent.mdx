@@ -1,0 +1,618 @@
+﻿---
+uid: crmscript.netserver.nsworkflowagent
+title: NSWorkflowAgent
+description: "Workflow data services."
+keywords: CRMScript, NSWorkflowAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWorkflowAgent
+
+Workflow data services.
+
+## Constructors
+
+### NSWorkflowAgent()
+
+```crmscript
+NSWorkflowAgent
+```
+
+Initializes a new instance of the NSWorkflowAgent class.
+
+## Methods
+
+## CreateDefaultEmailFlow()
+
+Loading default values into a new NSEmailFlow
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
+
+```crmscript
+NSEmailFlow CreateDefaultEmailFlow()
+```
+
+**Returns:** [CRMScript.NetServer.NSEmailFlow](CRMScript.NetServer.NSEmailFlow) - New NSEmailFlow with default values.
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent thing;
+NSEmailFlow emailFlow = thing.CreateDefaultEmailFlow();
+```
+
+## SaveEmailFlow(NSEmailFlow)
+
+Updates the existing NSEmailFlow or creates a new NSEmailFlow if the id parameter is empty
+
+```crmscript
+NSEmailFlow SaveEmailFlow(NSEmailFlow emailFlow)
+```
+
+**Returns:** [CRMScript.NetServer.NSEmailFlow](CRMScript.NetServer.NSEmailFlow) - New or updated NSEmailFlow
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSEmailFlow emailFlow;
+NSEmailFlow res = agent.SaveEmailFlow(emailFlow);
+```
+
+## DeleteEmailFlow(Integer)
+
+Deletes the NSEmailFlow
+
+```crmscript
+void DeleteEmailFlow(Integer emailFlowId)
+```
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+agent.DeleteEmailFlow(emailFlowId);
+```
+
+## CreateDefaultWorkflowEvent()
+
+Loading default values into a new NSWorkflowEvent
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
+
+```crmscript
+NSWorkflowEvent CreateDefaultWorkflowEvent()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowEvent](CRMScript.NetServer.NSWorkflowEvent) - New NSWorkflowEvent with default values
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowEvent event = agent.CreateDefaultWorkflowEvent();
+```
+
+## CreateDefaultWorkflowEventResult()
+
+Loading default values into a new NSWorkflowEventResult
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
+
+```crmscript
+NSWorkflowEventResult CreateDefaultWorkflowEventResult()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowEventResult](CRMScript.NetServer.NSWorkflowEventResult) - New NSWorkflowEventResult with default values
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowEventResult result = agent.CreateDefaultWorkflowEventResult();
+```
+
+## CreateDefaultWorkflowFilter()
+
+Loading default values into a new NSWorkflowFilter
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
+
+```crmscript
+NSWorkflowFilter CreateDefaultWorkflowFilter()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowFilter](CRMScript.NetServer.NSWorkflowFilter) - New NSWorkflowFilter with default values
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowFilter filter = agent.CreateDefaultWorkflowFilter();
+```
+
+## CreateDefaultWorkflowGoal()
+
+Loading default values into a new NSWorkflowGoal
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
+
+```crmscript
+NSWorkflowGoal CreateDefaultWorkflowGoal()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowGoal](CRMScript.NetServer.NSWorkflowGoal) - New NSWorkflowGoal with default values
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowGoal goal = agent.CreateDefaultWorkflowGoal();
+```
+
+## SaveWorkflowGoal(NSWorkflowGoal)
+
+Updates the existing NSWorkflowGoal or creates a new NSWorkflowGoal if the id parameter is empty
+
+```crmscript
+NSWorkflowGoal SaveWorkflowGoal(NSWorkflowGoal workflowGoal)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowGoal](CRMScript.NetServer.NSWorkflowGoal) - New or updated NSWorkflowGoal
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowGoal goal;
+NSWorkflowGoal res = agent.SaveWorkflowGoal(goal);
+```
+
+## DeleteWorkflowGoal(Integer)
+
+Deletes the NSWorkflowGoal
+
+```crmscript
+void DeleteWorkflowGoal(Integer workflowGoalId)
+```
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowGoalId;
+agent.DeleteWorkflowGoal(workflowGoalId);
+```
+
+## CreateDefaultWorkflowTrigger()
+
+Loading default values into a new NSWorkflowTrigger
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
+
+```crmscript
+NSWorkflowTrigger CreateDefaultWorkflowTrigger()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowTrigger](CRMScript.NetServer.NSWorkflowTrigger) - New NSWorkflowTrigger with default values
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowTrigger trigger = agent.CreateDefaultWorkflowTrigger();
+```
+
+## SaveWorkflowTrigger(NSWorkflowTrigger)
+
+Updates the existing NSWorkflowTrigger or creates a new NSWorkflowTrigger if the id parameter is empty
+
+```crmscript
+NSWorkflowTrigger SaveWorkflowTrigger(NSWorkflowTrigger workflowTrigger)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowTrigger](CRMScript.NetServer.NSWorkflowTrigger) - New or updated NSWorkflowTrigger
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowTrigger trigger;
+NSWorkflowTrigger res = agent.SaveWorkflowTrigger(trigger);
+```
+
+## DeleteWorkflowTrigger(Integer)
+
+Deletes the NSWorkflowTrigger
+
+```crmscript
+void DeleteWorkflowTrigger(Integer workflowTriggerId)
+```
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowTriggerId;
+agent.DeleteWorkflowTrigger(workflowTriggerId);
+```
+
+## CreateDefaultWorkflowWaitForAction()
+
+Loading default values into a new NSWorkflowWaitForAction
+NetServer calculates default values (e.g. Country) on the entity, which is required when creating/storing a new instance
+
+```crmscript
+NSWorkflowWaitForAction CreateDefaultWorkflowWaitForAction()
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowWaitForAction](CRMScript.NetServer.NSWorkflowWaitForAction) - New NSWorkflowWaitForAction with default values
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowWaitForAction action = agent.CreateDefaultWorkflowWaitForAction();
+```
+
+## SaveWorkflowWaitForAction(NSWorkflowWaitForAction)
+
+Updates the existing NSWorkflowWaitForAction or creates a new NSWorkflowWaitForAction if the id parameter is empty
+
+```crmscript
+NSWorkflowWaitForAction SaveWorkflowWaitForAction(NSWorkflowWaitForAction workflowWaitForAction)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowWaitForAction](CRMScript.NetServer.NSWorkflowWaitForAction) - New or updated NSWorkflowWaitForAction
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowWaitForAction action;
+NSWorkflowWaitForAction res = agent.SaveWorkflowWaitForAction(action);
+```
+
+## DeleteWorkflowWaitForAction(Integer)
+
+Deletes the NSWorkflowWaitForAction
+
+```crmscript
+void DeleteWorkflowWaitForAction(Integer workflowWaitForActionId)
+```
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowWaitForActionId;
+agent.DeleteWorkflowWaitForAction(workflowWaitForActionId);
+```
+
+## GetEmailFlow(Integer)
+
+Gets a NSEmailFlow object.
+
+```crmscript
+NSEmailFlow GetEmailFlow(Integer emailFlowId)
+```
+
+**Returns:** [CRMScript.NetServer.NSEmailFlow](CRMScript.NetServer.NSEmailFlow) - NSEmailFlow
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+NSEmailFlow flow = agent.GetEmailFlow(emailFlowId);
+```
+
+## TryAddPersonsToEmailFlow(Integer,Integer[])
+
+Try to add a participant to the EmailFlow. Same function available in PersonAgent
+
+```crmscript
+Bool[] TryAddPersonsToEmailFlow(Integer emailFlowId, Integer[] personIds)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)[] - True if the corresponding participant was successfully added, false if it could not be added because of filter criteria or other reason
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+Integer[] personIds;
+Bool[] res = agent.TryAddPersonsToEmailFlow(emailFlowId, personIds);
+```
+
+## RemoveParticipantsFromEmailFlow(Integer,Integer[])
+
+Remove participants (actually workflow instances) from the workflow
+
+```crmscript
+void RemoveParticipantsFromEmailFlow(Integer emailFlowId, Integer[] workflowInstanceIds)
+```
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+Integer[] workflowInstanceIds;
+agent.RemoveParticipantsFromEmailFlow(emailFlowId, workflowInstanceIds);
+```
+
+## CreateEmailFlowContent(Integer,String)
+
+Create content to an email flow
+
+```crmscript
+Integer CreateEmailFlowContent(Integer emailFlowId, String contentName)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Id of shipment created
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+String contentName;
+Integer res = agent.CreateEmailFlowContent(emailFlowId, contentName);
+```
+
+## ConnectEmailFlowContent(Integer,Integer)
+
+Link any SMessage to the email flow. The SMessage (and any related SShipment etc) should probably not be used/visible elsewhere.
+
+```crmscript
+void ConnectEmailFlowContent(Integer emailFlowId, Integer messageId)
+```
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+Integer messageId;
+agent.ConnectEmailFlowContent(emailFlowId, messageId);
+```
+
+## CopyEmailFlowContent(Integer,Integer)
+
+Copy smessage and connected shipment to the email flow. The SMessage (and any related SShipment etc) should probably not be used/visible elsewhere.
+
+```crmscript
+Integer CopyEmailFlowContent(Integer emailFlowId, Integer shipmentId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Newly created shipment id for this content
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+Integer shipmentId;
+Integer res = agent.CopyEmailFlowContent(emailFlowId, shipmentId);
+```
+
+## UpdateFormSubmissions(Integer)
+
+Attempt to update stored field values for up to the given number of form submissions
+
+```crmscript
+Integer UpdateFormSubmissions(Integer maxCount)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of form submissions converted
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer maxCount;
+Integer res = agent.UpdateFormSubmissions(maxCount);
+```
+
+## SetStatusOnWorkflow(Integer,WorkflowDefinitionStatus)
+
+Set status on workflow, Run or pause flow
+
+```crmscript
+WorkflowDefinitionStatus SetStatusOnWorkflow(Integer emailFlowId, WorkflowDefinitionStatus status)
+```
+
+**Returns:** [CRMScript.NetServer.WorkflowDefinitionStatus](CRMScript.NetServer.WorkflowDefinitionStatus) - The new status
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+WorkflowDefinitionStatus status;
+WorkflowDefinitionStatus res = agent.SetStatusOnWorkflow(emailFlowId, status);
+```
+
+## CopyEmailFlow(Integer,String)
+
+Copy an email flow.
+
+```crmscript
+Integer CopyEmailFlow(Integer emailFlowId, String newName)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Newly created email flow id for this content
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer emailFlowId;
+String newName;
+Integer res = agent.CopyEmailFlow(emailFlowId, newName);
+```
+
+## Run()
+
+Run the workflow engine right now
+
+```crmscript
+DateTime Run()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Suggested time for next run
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+DateTime nextRun = agent.Run();
+```
+
+## SendEvent(NSWorkflowEvent)
+
+Send a workflow event. Most event signaling will finish very quickly as they normally just change the state of a workflow instance
+
+```crmscript
+NSWorkflowEventResult SendEvent(NSWorkflowEvent workflowEvent)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowEventResult](CRMScript.NetServer.NSWorkflowEventResult) - Any relevant info about the event
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+NSWorkflowEvent event;
+NSWorkflowEventResult res = agent.SendEvent(event);
+```
+
+## GetWorkflowGoal(Integer)
+
+Gets a NSWorkflowGoal object.
+
+```crmscript
+NSWorkflowGoal GetWorkflowGoal(Integer workflowGoalId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowGoal](CRMScript.NetServer.NSWorkflowGoal) - NSWorkflowGoal
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowGoalId;
+NSWorkflowGoal goal = agent.GetWorkflowGoal(workflowGoalId);
+```
+
+## GetWorkflowStep(Integer)
+
+Get Workflowstep by ID
+
+```crmscript
+NSWorkflowStepBase GetWorkflowStep(Integer workflowStepId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowStepBase](CRMScript.NetServer.NSWorkflowStepBase) - The Workflow step
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowStepId;
+NSWorkflowStepBase step = agent.GetWorkflowStep(workflowStepId);
+```
+
+## AddAfterWorkflowStep(Integer,NSWorkflowStepBase)
+
+Add another step (and any of its substeps) after the given step id (which must exist), and move any following steps in the workflow further down the line.
+
+```crmscript
+NSWorkflowStepBase AddAfterWorkflowStep(Integer workflowStepId, NSWorkflowStepBase subStep)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowStepBase](CRMScript.NetServer.NSWorkflowStepBase) - The added step
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowStepId;
+NSWorkflowStepBase subStep;
+NSWorkflowStepBase res = agent.AddAfterWorkflowStep(workflowStepId, subStep);
+```
+
+## CreateDefaultWorkflowStepFromType(WorkflowStepType)
+
+Creates a new carrier from the step type given, with the right kind of properties, defaults set.
+
+```crmscript
+NSWorkflowStepBase CreateDefaultWorkflowStepFromType(WorkflowStepType stepType)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowStepBase](CRMScript.NetServer.NSWorkflowStepBase) - The created workflow step
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+WorkflowStepType stepType;
+NSWorkflowStepBase res = agent.CreateDefaultWorkflowStepFromType(stepType);
+```
+
+## GetWorkflowTrigger(Integer)
+
+Gets a NSWorkflowTrigger object.
+
+```crmscript
+NSWorkflowTrigger GetWorkflowTrigger(Integer workflowTriggerId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowTrigger](CRMScript.NetServer.NSWorkflowTrigger) - NSWorkflowTrigger
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowTriggerId;
+NSWorkflowTrigger trigger = agent.GetWorkflowTrigger(workflowTriggerId);
+```
+
+## GetWorkflowWaitForAction(Integer)
+
+Gets a NSWorkflowWaitForAction object.
+
+```crmscript
+NSWorkflowWaitForAction GetWorkflowWaitForAction(Integer workflowWaitForActionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowWaitForAction](CRMScript.NetServer.NSWorkflowWaitForAction) - NSWorkflowWaitForAction
+
+**Example:**
+
+```crmscript
+NSWorkflowAgent agent;
+Integer workflowWaitForActionId;
+NSWorkflowWaitForAction action = agent.GetWorkflowWaitForAction(workflowWaitForActionId);
+```
+
+## CreateDefaultWorkflowStepOptionFromType(WorkflowSplitOptionType)
+
+Creates a new carrier from the option type given, with the right kind of properties, defaults set.
+
+```crmscript
+NSWorkflowStepOptionBase CreateDefaultWorkflowStepOptionFromType(WorkflowSplitOptionType optionType)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowStepOptionBase](CRMScript.NetServer.NSWorkflowStepOptionBase) - The created workflow step option.
+
+## GetWorkflowStepOption(Integer)
+
+Get WorkflowStepOption by ID.
+
+```crmscript
+NSWorkflowStepOptionBase GetWorkflowStepOption(Integer workflowStepOptionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWorkflowStepOptionBase](CRMScript.NetServer.NSWorkflowStepOptionBase) - The Workflow step option.

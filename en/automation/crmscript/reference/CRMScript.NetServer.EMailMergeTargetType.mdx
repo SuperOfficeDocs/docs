@@ -1,0 +1,33 @@
+﻿---
+uid: crmscript.netserver.emailmergetargettype
+title: Enum EMailMergeTargetType
+description: "What type of delivery system to use for a mail merge"
+keywords: CRMScript, EMailMergeTargetType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum EMailMergeTargetType
+
+What type of delivery system to use for a mail merge
+
+## Syntax
+
+```crmscript
+EMailMergeTargetType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| BestFit | Default to mail, then fax, then printer |
+| Electronic | Default to mail, then fax |
+| Mail | Deliver by mail |
+| Fax | Deliver by fax |
+| Printer | Deliver to printer |
+| Xml | Output mails as xml. This target is used in conjunction with external mail clients. |
+| XmlFax | Same as Xml, but use fax format for recipient addresses |

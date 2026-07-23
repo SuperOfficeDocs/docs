@@ -1,0 +1,512 @@
+﻿---
+uid: crmscript.netserver.nstemplatevariablesparameters
+title: NSTemplateVariablesParameters
+description: "Parameters specifying source and properties for template variable substitution."
+keywords: CRMScript, NSTemplateVariablesParameters, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTemplateVariablesParameters
+
+Parameters specifying source and properties for template variable substitution.
+
+## Constructors
+
+### NSTemplateVariablesParameters()
+
+```crmscript
+NSTemplateVariablesParameters
+```
+
+Initializes a new instance of the NSTemplateVariablesParameters class.
+
+## Methods
+
+## GetAppointmentId()
+
+```crmscript
+Integer GetAppointmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifier for an appointment.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer appointmentId = thing.GetAppointmentId();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifier for a contact.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetCultureName()
+
+```crmscript
+String GetCultureName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of culture to be used for culture-sensitive data, such as dates or multi-language texts.
+
+<Note>
+Use a blank string to accept current culture that is set on the server.
+</Note>
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String cultureName = thing.GetCultureName();
+```
+
+## GetCustomTags()
+
+```crmscript
+String[] GetCustomTags()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Array with custom tags and values. Array may be of unlimited height, but need to be exactly 2 in width.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String[] customTags = thing.GetCustomTags();
+```
+
+## GetDocumentEntity()
+
+```crmscript
+NSDocumentEntity GetDocumentEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity) - Custom document entity to use for data retrieval.
+
+<Note>
+Useful for unsaved data.  NSDocumentEntity.DocumentId need to match the DocumentId specified in separate property.
+</Note>
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+NSDocumentEntity documentEntity = thing.GetDocumentEntity();
+```
+
+## GetDocumentId()
+
+```crmscript
+Integer GetDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifier for a document.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer documentId = thing.GetDocumentId();
+```
+
+## GetEncoding()
+
+```crmscript
+Integer GetEncoding()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Encoding of source string. See &lt;xref href=\"CRMScript.NetServer.GeneratorEncoding\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+<Note>
+Non-text formats such as MsWord or Excel should be Base64 encoded in the source string.
+</Note>
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer encoding = thing.GetEncoding();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifier for a person.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetProductKey()
+
+```crmscript
+String GetProductKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Product key.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String productKey = thing.GetProductKey();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifier for a project.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetQuoteAlternativeId()
+
+```crmscript
+Integer GetQuoteAlternativeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Quote alternative Id.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer quoteAlternativeId = thing.GetQuoteAlternativeId();
+```
+
+## GetQuoteLineId()
+
+```crmscript
+Integer GetQuoteLineId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Quote line Id.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer quoteLineId = thing.GetQuoteLineId();
+```
+
+## GetSaleId()
+
+```crmscript
+Integer GetSaleId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifier for a sale.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer saleId = thing.GetSaleId();
+```
+
+## GetSelectionId()
+
+```crmscript
+Integer GetSelectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifier for a selection.
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer selectionId = thing.GetSelectionId();
+```
+
+## GetSourceInput()
+
+```crmscript
+String GetSourceInput()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Source string to parse for template variables.
+
+<Note>
+Such variables must have delimiters corresponding to the standard for the given generator encoding.Non-text source data (such as the binary content of a .doc file) should be passed in as Base64.
+</Note>
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String sourceInput = thing.GetSourceInput();
+```
+
+## SetAppointmentId(Integer)
+
+```crmscript
+Void SetAppointmentId(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer appointmentId;
+thing.SetAppointmentId(appointmentId);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetCultureName(String)
+
+```crmscript
+Void SetCultureName(String cultureName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String cultureName;
+thing.SetCultureName(cultureName);
+```
+
+## SetCustomTags(String[])
+
+```crmscript
+Void SetCustomTags(String[] customTags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String[] customTags;
+thing.SetCustomTags(customTags);
+```
+
+## SetDocumentEntity(NSDocumentEntity)
+
+```crmscript
+Void SetDocumentEntity(NSDocumentEntity documentEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+NSDocumentEntity documentEntity;
+thing.SetDocumentEntity(documentEntity);
+```
+
+## SetDocumentId(Integer)
+
+```crmscript
+Void SetDocumentId(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer documentId;
+thing.SetDocumentId(documentId);
+```
+
+## SetEncoding(Integer)
+
+```crmscript
+Void SetEncoding(Integer encoding)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Non-text formats such as MsWord or Excel should be Base64 encoded in the source string.
+</Note>
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer encoding;
+thing.SetEncoding(encoding);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetProductKey(String)
+
+```crmscript
+Void SetProductKey(String productKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String productKey;
+thing.SetProductKey(productKey);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetQuoteAlternativeId(Integer)
+
+```crmscript
+Void SetQuoteAlternativeId(Integer quoteAlternativeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer quoteAlternativeId;
+thing.SetQuoteAlternativeId(quoteAlternativeId);
+```
+
+## SetQuoteLineId(Integer)
+
+```crmscript
+Void SetQuoteLineId(Integer quoteLineId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer quoteLineId;
+thing.SetQuoteLineId(quoteLineId);
+```
+
+## SetSaleId(Integer)
+
+```crmscript
+Void SetSaleId(Integer saleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer saleId;
+thing.SetSaleId(saleId);
+```
+
+## SetSelectionId(Integer)
+
+```crmscript
+Void SetSelectionId(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+Integer selectionId;
+thing.SetSelectionId(selectionId);
+```
+
+## SetSourceInput(String)
+
+```crmscript
+Void SetSourceInput(String sourceInput)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTemplateVariablesParameters thing;
+String sourceInput;
+thing.SetSourceInput(sourceInput);
+```

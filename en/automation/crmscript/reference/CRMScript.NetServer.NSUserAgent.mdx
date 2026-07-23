@@ -1,0 +1,1416 @@
+﻿---
+uid: crmscript.netserver.nsuseragent
+title: NSUserAgent
+description: "User administration."
+keywords: CRMScript, NSUserAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSUserAgent
+
+User administration.
+
+## Constructors
+
+### NSUserAgent()
+
+```crmscript
+NSUserAgent
+```
+
+User administration.
+
+## Methods
+
+## AddOwnerContact(Integer)
+
+```crmscript
+Void AddOwnerContact(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CanChangePassword(Integer)
+
+Checks if the current associate can change the password for an associate
+
+```crmscript
+Bool CanChangePassword(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer associateId;
+Bool res = agent.CanChangePassword(associateId);
+```
+
+## ChangeOwnPassword(String,String)
+
+Changes password for a user.
+
+```crmscript
+Bool ChangeOwnPassword(String oldPassword, String newPassword)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String oldPassword;
+String newPassword;
+Bool res = agent.ChangeOwnPassword(oldPassword, newPassword);
+```
+
+## ChangePassword(Integer,String,String)
+
+Changes password for a user.
+
+```crmscript
+Bool ChangePassword(Integer associateId, String oldPassword, String newPassword)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer associateId;
+String oldPassword;
+String newPassword;
+Bool res = agent.ChangePassword(associateId, oldPassword, newPassword);
+```
+
+## ChangePasswordFromName(String,String,String)
+
+Changes password for a user.
+
+```crmscript
+Bool ChangePasswordFromName(String associateName, String oldPassword, String newPassword)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String associateName;
+String oldPassword;
+String newPassword;
+Bool res = agent.ChangePasswordFromName(associateName, oldPassword, newPassword);
+```
+
+## ChangeUserType(NSUser,Integer)
+
+Gets a user from the user name.
+
+```crmscript
+NSUser ChangeUserType(NSUser user, Integer userType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUser user;
+Integer userType;
+NSUser res = agent.ChangeUserType(user, userType);
+```
+
+## CheckAccessGatewayRegistration()
+
+Checks if AccessGatewayRegistration is valid
+
+```crmscript
+Bool CheckAccessGatewayRegistration()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Bool res = agent.CheckAccessGatewayRegistration();
+```
+
+## CreateDefaultRoleEntity()
+
+Sets default values into a new NSRoleEntity.
+
+```crmscript
+NSRoleEntity CreateDefaultRoleEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSRoleEntity](CRMScript.NetServer.NSRoleEntity)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSRoleEntity thing = agent.CreateDefaultRoleEntity();
+thing = agent.SaveRoleEntity(thing);
+```
+
+## CreateDefaultRoleEntityFromType(Integer)
+
+Creates a new role entity of the specified role type. The role type cannot be changed after the entity is created.
+
+```crmscript
+NSRoleEntity CreateDefaultRoleEntityFromType(Integer type)
+```
+
+**Returns:** [CRMScript.NetServer.NSRoleEntity](CRMScript.NetServer.NSRoleEntity)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer type;
+NSRoleEntity res = agent.CreateDefaultRoleEntityFromType(type);
+```
+
+## CreateDefaultServiceAuth()
+
+Sets default values into a new NSServiceAuth.
+
+```crmscript
+NSServiceAuth CreateDefaultServiceAuth()
+```
+
+**Returns:** [CRMScript.NetServer.NSServiceAuth](CRMScript.NetServer.NSServiceAuth)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSServiceAuth thing = agent.CreateDefaultServiceAuth();
+thing = agent.SaveServiceAuth(thing);
+```
+
+## CreateDefaultUntrustedCredentials()
+
+Sets default values into a new NSUntrustedCredentials.
+
+```crmscript
+NSUntrustedCredentials CreateDefaultUntrustedCredentials()
+```
+
+**Returns:** [CRMScript.NetServer.NSUntrustedCredentials](CRMScript.NetServer.NSUntrustedCredentials)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUntrustedCredentials thing = agent.CreateDefaultUntrustedCredentials();
+thing = agent.SaveUntrustedCredentials(thing);
+```
+
+## CreateDefaultUser()
+
+Sets default values into a new NSUser.
+
+```crmscript
+NSUser CreateDefaultUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUser thing = agent.CreateDefaultUser();
+thing = agent.SaveUser(thing);
+```
+
+## CreateDefaultUserFromUserType(Integer)
+
+Creates default NSUser providing the user type.  Only System and Anonymous users can be created without an existing person.
+
+```crmscript
+NSUser CreateDefaultUserFromUserType(Integer userType)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+<Note>
+Use CreateDefaultUserFromUserTypeAndPersonId to create internal (i.e. Employee) or external users.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer userType;
+NSUser res = agent.CreateDefaultUserFromUserType(userType);
+```
+
+## CreateDefaultUserFromUserTypeAndCredential(Integer,Integer,String,String,String)
+
+Creates an NSPersonEntity with default values based on the contactId and credentials.
+
+```crmscript
+NSUser CreateDefaultUserFromUserTypeAndCredential(Integer userType, Integer contactId, String credentialType, String credentialValue, String credentialDisplayValue)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+## CreateDefaultUserFromUserTypeAndPersonId(Integer,Integer)
+
+Creates default NSUser providing the associate type and person id.  System and Anonymous users can be created without an existing person and permits person id to be 0.
+
+```crmscript
+NSUser CreateDefaultUserFromUserTypeAndPersonId(Integer userType, Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer userType;
+Integer personId;
+NSUser res = agent.CreateDefaultUserFromUserTypeAndPersonId(userType, personId);
+```
+
+## CreateExternalUser(Integer,String,String,Integer,Bool)
+
+Creates an associate of type external user.
+
+```crmscript
+Integer CreateExternalUser(Integer personId, String userName, String password, Integer roleId, Bool isActive)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer personId;
+String userName;
+String password;
+Integer roleId;
+Bool isActive;
+Integer res = agent.CreateExternalUser(personId, userName, password, roleId, isActive);
+```
+
+## CreateUserGroup()
+
+Creates UserGroup (Rank is assigned to the highest rank)
+
+```crmscript
+NSUserGroup CreateUserGroup()
+```
+
+**Returns:** [CRMScript.NetServer.NSUserGroup](CRMScript.NetServer.NSUserGroup)
+
+## DecryptAndSaveExternalTokens(NSTokenManagementInfo)
+
+First asks AccessGateway to decrypt the tokens, then saves the external tokens to the DB and returns a key that can be used to retrieve them
+
+```crmscript
+String DecryptAndSaveExternalTokens(NSTokenManagementInfo tokenManagementInfo)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSTokenManagementInfo tokenManagementInfo;
+String res = agent.DecryptAndSaveExternalTokens(tokenManagementInfo);
+```
+
+## DeleteCredential(Integer,String)
+
+Removes credential of a specific type for a user
+
+```crmscript
+Bool DeleteCredential(Integer userId, String credentialType)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer userId;
+String credentialType;
+Bool res = agent.DeleteCredential(userId, credentialType);
+```
+
+## DeleteExternalUser(Integer)
+
+Deletes an associate of type external user.
+
+```crmscript
+Void DeleteExternalUser(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteRole(Integer,Integer)
+
+Deletes the specified role and move all users associated with the role to the replacingRoleId
+
+```crmscript
+Void DeleteRole(Integer roleIdToDelete, Integer replacingRoleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteServiceAuth(Integer)
+
+Deletes the NSServiceAuth
+
+```crmscript
+DeleteServiceAuth(Integer serviceAuth)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+agent.DeleteServiceAuth(123);
+```
+
+## DeleteUser(Integer)
+
+Deletes the NSUser
+
+```crmscript
+DeleteUser(Integer user)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+agent.DeleteUser(123);
+```
+
+## DeleteUserFromName(String)
+
+Deletes a user, with lookup based on the user name.
+
+```crmscript
+Void DeleteUserFromName(String userName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String userName;
+agent.DeleteUserFromName(userName);
+```
+
+## DeleteUserGroup(Integer,Integer)
+
+Deletes a user group and move its members to another user group
+
+```crmscript
+Void DeleteUserGroup(Integer userGroupToDelete, Integer userGroupToMoveTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## FindCredentialsGroups(String,String)
+
+Gets user groups holding users filtered by the searchString.
+
+```crmscript
+NSCredentialsGroup[] FindCredentialsGroups(String type, String searchString)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredentialsGroup](CRMScript.NetServer.NSCredentialsGroup)[] - There will always be at least one groups even if the underlying provider does not support groups.
+
+<Note>
+This method is only relevant if the CredentialType control is of type link.
+</Note>
+
+## FindCredentialUsers(String,String)
+
+Find users matching the partial name.
+
+```crmscript
+NSCredentialsGroupUsers FindCredentialUsers(String type, String searchString)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredentialsGroupUsers](CRMScript.NetServer.NSCredentialsGroupUsers)
+
+## FindRolesWithFunctionalRight(String)
+
+Finds all roles with a given functional right. The roles matched must contain the specified functional right.
+
+```crmscript
+NSMDOListItem[] FindRolesWithFunctionalRight(String functionalRightName)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String functionalRightName;
+NSMDOListItem[] res = agent.FindRolesWithFunctionalRight(functionalRightName);
+```
+
+## FindRolesWithFunctionalRights(String[])
+
+Finds all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights.
+
+```crmscript
+Integer[] FindRolesWithFunctionalRights(String[] functionalRightNames)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String[] functionalRightNames;
+Integer[] res = agent.FindRolesWithFunctionalRights(functionalRightNames);
+```
+
+## FindRolesWithoutFunctionalRights(String[])
+
+Finds all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights.
+
+```crmscript
+Integer[] FindRolesWithoutFunctionalRights(String[] functionalRightNames)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String[] functionalRightNames;
+Integer[] res = agent.FindRolesWithoutFunctionalRights(functionalRightNames);
+```
+
+## GenerateNewPasswordForExternalUser(String)
+
+Generates a new password for an external user.
+
+```crmscript
+String GenerateNewPasswordForExternalUser(String associateName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String associateName;
+String res = agent.GenerateNewPasswordForExternalUser(associateName);
+```
+
+## GetAccessGatewayInfo()
+
+Returns accessgateway registration info
+
+```crmscript
+NSAccessGatewayInfo GetAccessGatewayInfo()
+```
+
+**Returns:** [CRMScript.NetServer.NSAccessGatewayInfo](CRMScript.NetServer.NSAccessGatewayInfo)
+
+## GetAccessToken(String,Bool)
+
+Gets an access token based on the current user's session.
+
+```crmscript
+String GetAccessToken(String appToken, Bool includeCsSession)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String appToken;
+Bool includeCsSession;
+String res = agent.GetAccessToken(appToken, includeCsSession);
+```
+
+## GetAllFunctionalRights(Integer)
+
+Gets a list of all functional rights for the given type of role.
+
+```crmscript
+NSSelectableMDOListItem[] GetAllFunctionalRights(Integer roleType)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer roleType;
+NSSelectableMDOListItem[] res = agent.GetAllFunctionalRights(roleType);
+```
+
+## GetAllRoles(Integer)
+
+Gets a list of all roles for the given type of role.
+
+```crmscript
+NSSelectableMDOListItem[] GetAllRoles(Integer roleType)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer roleType;
+NSSelectableMDOListItem[] res = agent.GetAllRoles(roleType);
+```
+
+## GetAllUserGroups(Bool)
+
+Gets all user groups
+
+```crmscript
+NSUserGroup[] GetAllUserGroups(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserGroup](CRMScript.NetServer.NSUserGroup)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Bool includeDeleted;
+NSUserGroup[] res = agent.GetAllUserGroups(includeDeleted);
+```
+
+## GetCredentialsGroups(Integer)
+
+Gets user groups holding users.
+
+```crmscript
+NSCredentialsGroup[] GetCredentialsGroups(Integer type)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredentialsGroup](CRMScript.NetServer.NSCredentialsGroup)[] - There will always be at least one groups even if the underlying provider does not support groups.
+
+<Note>
+This method is only relevant if the CredentialType control is of type link.
+</Note>
+
+## GetCredentialTypes()
+
+Gets available credential types that can be used for authentication
+
+```crmscript
+NSCredentialType[] GetCredentialTypes()
+```
+
+**Returns:** [CRMScript.NetServer.NSCredentialType](CRMScript.NetServer.NSCredentialType)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSCredentialType[] res = agent.GetCredentialTypes();
+```
+
+## GetCredentialTypesForUserType(Integer)
+
+Gets available credential types that can be used for the specified user type.
+
+```crmscript
+NSCredentialType[] GetCredentialTypesForUserType(Integer userType)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredentialType](CRMScript.NetServer.NSCredentialType)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer userType;
+NSCredentialType[] res = agent.GetCredentialTypesForUserType(userType);
+```
+
+## GetCredentialUsers(String,String)
+
+Gets credential users within a user group
+
+```crmscript
+NSCredentialsGroupUsers GetCredentialUsers(String groupName, String type)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredentialsGroupUsers](CRMScript.NetServer.NSCredentialsGroupUsers)
+
+## GetCredentialUsersInGroup(String,String)
+
+Gets credential users within a user group
+
+```crmscript
+NSCredentialsGroupUsers GetCredentialUsersInGroup(String type, String groupName)
+```
+
+**Returns:** [CRMScript.NetServer.NSCredentialsGroupUsers](CRMScript.NetServer.NSCredentialsGroupUsers)
+
+## GetDataRight(Integer,String,Integer)
+
+Reads one specific data right at the given position.
+
+```crmscript
+String GetDataRight(Integer roleId, String tableName, Integer relationToOwner)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+An exception will be thrown if non existing position is specified.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer roleId;
+String tableName;
+Integer relationToOwner;
+String res = agent.GetDataRight(roleId, tableName, relationToOwner);
+```
+
+## GetDataRights(Integer,String)
+
+Reads specific a set of data rights at the given row in the rights matrix.
+
+```crmscript
+Map GetDataRights(Integer roleId, String tableName)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+<Note>
+An exception will be thrown if non existing position is specified.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer roleId;
+String tableName;
+Map res = agent.GetDataRights(roleId, tableName);
+```
+
+## GetDefaultAssociateUserName(NSUser)
+
+Gets the default username for a person
+
+```crmscript
+String GetDefaultAssociateUserName(NSUser user)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## GetExternalTokens(String)
+
+Retrieves the tokens from the DB based on the given key
+
+```crmscript
+NSTokenManagementInfo GetExternalTokens(String key)
+```
+
+**Returns:** [CRMScript.NetServer.NSTokenManagementInfo](CRMScript.NetServer.NSTokenManagementInfo)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String key;
+NSTokenManagementInfo res = agent.GetExternalTokens(key);
+```
+
+## GetFunctionalRights(Integer)
+
+Gets all functional rights for the given role. Functional rights not set on the role are not included.
+
+```crmscript
+NSSelectableMDOListItem[] GetFunctionalRights(Integer roleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - MDO List name = 'FunctionRights', extra='role=123'
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer roleId;
+NSSelectableMDOListItem[] res = agent.GetFunctionalRights(roleId);
+```
+
+## GetRole(Integer)
+
+Gets an NSRole object.
+
+```crmscript
+NSRole GetRole(Integer roleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRole](CRMScript.NetServer.NSRole)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSRole thing = agent.GetRole(123);
+```
+
+## GetRoleEntity(Integer)
+
+Gets an NSRoleEntity object.
+
+```crmscript
+NSRoleEntity GetRoleEntity(Integer roleEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRoleEntity](CRMScript.NetServer.NSRoleEntity)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSRoleEntity thing = agent.GetRoleEntity(123);
+```
+
+## GetServiceAuth(Integer)
+
+Gets an NSServiceAuth object.
+
+```crmscript
+NSServiceAuth GetServiceAuth(Integer serviceAuthId)
+```
+
+**Returns:** [CRMScript.NetServer.NSServiceAuth](CRMScript.NetServer.NSServiceAuth)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSServiceAuth thing = agent.GetServiceAuth(123);
+```
+
+## GetUntrustedCredentials(String)
+
+Gets a set of credentials of a specified type for authenticated user.
+
+```crmscript
+NSUntrustedCredentials[] GetUntrustedCredentials(String type)
+```
+
+**Returns:** [CRMScript.NetServer.NSUntrustedCredentials](CRMScript.NetServer.NSUntrustedCredentials)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String type;
+NSUntrustedCredentials[] res = agent.GetUntrustedCredentials(type);
+```
+
+## GetUntrustedCredentialsForAssociate(Integer,String)
+
+Gets a set of credentials of a specified type for a specified user. SecretValue is only populated for authenticated user, and system users.
+
+```crmscript
+NSUntrustedCredentials[] GetUntrustedCredentialsForAssociate(Integer associateId, String type)
+```
+
+**Returns:** [CRMScript.NetServer.NSUntrustedCredentials](CRMScript.NetServer.NSUntrustedCredentials)[]
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer associateId;
+String type;
+NSUntrustedCredentials[] res = agent.GetUntrustedCredentialsForAssociate(associateId, type);
+```
+
+## GetUser(Integer)
+
+Gets an NSUser object.
+
+```crmscript
+NSUser GetUser(Integer userId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUser thing = agent.GetUser(123);
+```
+
+## GetUserFromEjUserId(Integer)
+
+Gets user from ejUserId.
+
+```crmscript
+NSUser[] GetUserFromEjUserId(Integer ejUserId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)[]
+
+<Note>
+Used for eJournal Legacy Support.
+</Note>
+
+## GetUserFromName(String)
+
+Gets a user, with lookup based on user name.
+
+```crmscript
+NSUser GetUserFromName(String userName)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String userName;
+NSUser res = agent.GetUserFromName(userName);
+```
+
+## GetUserFromPersonId(Integer)
+
+Returns the user associated with the supplied person ID.
+
+```crmscript
+NSUser[] GetUserFromPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)[]
+
+## GetUserGroup(Integer)
+
+Gets an NSUserGroup object.
+
+```crmscript
+NSUserGroup GetUserGroup(Integer userGroupId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserGroup](CRMScript.NetServer.NSUserGroup)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUserGroup thing = agent.GetUserGroup(123);
+```
+
+## GetUserGroupList(Integer[])
+
+Gets an array of UserGroup objects.
+
+```crmscript
+NSUserGroup[] GetUserGroupList(Integer[]  userGroupIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserGroup](CRMScript.NetServer.NSUserGroup)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSUserAgent agent;
+agent.GetUserGroupList(ids);
+```
+
+## GetUserInfo(Integer)
+
+Gets an NSUserInfo object.
+
+```crmscript
+NSUserInfo GetUserInfo(Integer userInfoId)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserInfo](CRMScript.NetServer.NSUserInfo)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUserInfo thing = agent.GetUserInfo(123);
+```
+
+## GetUserInfoList(Integer[])
+
+Gets an array of NSUserInfo objects.
+
+```crmscript
+NSUserInfo[] GetUserInfoList(Integer[] userInfoIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserInfo](CRMScript.NetServer.NSUserInfo)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSUserAgent agent;
+agent.GetUserInfoList(ids);
+```
+
+## GetValidUserName(Integer,Integer,Integer,String)
+
+```crmscript
+String GetValidUserName(Integer associateId, Integer type, Integer personId, String userName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## GetValidUserNameForNewUser(NSUser)
+
+Generates a valid username for an unsaved user.
+
+```crmscript
+String GetValidUserNameForNewUser(NSUser user)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## IsNickNameUnique(Integer,String)
+
+```crmscript
+Bool IsNickNameUnique(Integer associateId, String nickName)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## IsPasswordValid(Integer,Integer,Integer,String)
+
+```crmscript
+Bool IsPasswordValid(Integer associateId, Integer type, Integer personId, String password)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## IsPasswordValidWithReason(Integer,Integer,Integer,String)
+
+```crmscript
+NSUserValidationResult IsPasswordValidWithReason(Integer associateId, Integer type, Integer personId, String password)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserValidationResult](CRMScript.NetServer.NSUserValidationResult)
+
+## IsUserNameValid(Integer,Integer,Integer,String,String)
+
+```crmscript
+Bool IsUserNameValid(Integer associateId, Integer type, Integer personId, String userName)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## IsUserNameValidWithReason(Integer,Integer,Integer,String,String)
+
+```crmscript
+NSUserValidationResult IsUserNameValidWithReason(Integer associateId, Integer type, Integer personId, String userName)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserValidationResult](CRMScript.NetServer.NSUserValidationResult)
+
+## MakeRetired(Integer,Bool)
+
+Retiring a user means to remove all licenses, setting person.retired=1 and associate.deleted=1. Un-retiring a user means setting  person.retired=0 and associate.deleted=0
+
+```crmscript
+Void MakeRetired(Integer associateId, Bool retired)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+agent.callMethod(arg1, arg2);
+```
+
+## RegisterWithAccessGateway(String)
+
+Registers with access gateway if not already done, otherwise will attempt to update.
+
+```crmscript
+NSAccessGatewayInfo RegisterWithAccessGateway(String redirectUri)
+```
+
+**Returns:** [CRMScript.NetServer.NSAccessGatewayInfo](CRMScript.NetServer.NSAccessGatewayInfo)
+
+## RemoveLicenses(Integer)
+
+Removes all user licenses.
+
+```crmscript
+Void RemoveLicenses(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveOwnerContact(Integer)
+
+Removes a contact from the ownercontactlink table
+
+```crmscript
+Void RemoveOwnerContact(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveUntrustedCredentials(String,String)
+
+Removes a credentials entry for authenticated user.
+
+```crmscript
+Void RemoveUntrustedCredentials(String type, String publicValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveUntrustedCredentialsForAssociate(Integer,String,String)
+
+Removes a credentials entry for a specified user.
+
+```crmscript
+Void RemoveUntrustedCredentialsForAssociate(Integer associateId, String type, String publicValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ResolveUserFromInfo(Integer,String,String[],String[],Integer)
+
+Gets a user from the provided information. If the user or associated person does not exist, it will be created on demand.
+
+```crmscript
+NSResolvedUser ResolveUserFromInfo(Integer contactId, String personName, String[] phoneNumbers, String[] emails, Integer userType, NSCredential credential)
+```
+
+**Returns:** [CRMScript.NetServer.NSResolvedUser](CRMScript.NetServer.NSResolvedUser)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer contactId;
+String personName;
+String[] phoneNumbers;
+String[] emails;
+Integer userType;
+NSCredential credential;
+NSResolvedUser res = agent.ResolveUserFromInfo(contactId, personName, phoneNumbers, emails, userType, credential);
+```
+
+## SaveCredential(Integer,NSCredential)
+
+Saves (adds/replaces) current credential of the same type for the user.
+
+```crmscript
+Bool SaveCredential(Integer userId, NSCredential credential)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer userId;
+NSCredential credential;
+Bool res = agent.SaveCredential(userId, credential);
+```
+
+## SaveExternalTokens(NSTokenManagementInfo)
+
+Saves the external tokens to the DB and returns a key that can be used to retrieve them
+
+```crmscript
+String SaveExternalTokens(NSTokenManagementInfo tokenManagementInfo)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSTokenManagementInfo tokenManagementInfo;
+String res = agent.SaveExternalTokens(tokenManagementInfo);
+```
+
+## SaveRoleEntity(NSRoleEntity)
+
+Updates the existing NSRoleEntity or creates a new NSRoleEntity if the id parameter is 0
+
+```crmscript
+NSRoleEntity SaveRoleEntity(NSRoleEntity roleEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSRoleEntity](CRMScript.NetServer.NSRoleEntity)
+
+**Example:**
+
+```crmscript
+NSUser  agent;
+NSRoleEntity thing = agent.CreateDefaultRoleEntity();
+thing = agent.SaveRoleEntity(thing);
+```
+
+## SaveServiceAuth(NSServiceAuth)
+
+Updates the existing NSServiceAuth or creates a new NSServiceAuth if the id parameter is 0
+
+```crmscript
+NSServiceAuth SaveServiceAuth(NSServiceAuth serviceAuth)
+```
+
+**Returns:** [CRMScript.NetServer.NSServiceAuth](CRMScript.NetServer.NSServiceAuth)
+
+**Example:**
+
+```crmscript
+NSUser  agent;
+NSServiceAuth thing = agent.CreateDefaultServiceAuth();
+thing = agent.SaveServiceAuth(thing);
+```
+
+## SaveUntrustedCredentials(String,NSUntrustedCredentials)
+
+Saves credentials for authenticated user.
+
+```crmscript
+Void SaveUntrustedCredentials(String type, NSUntrustedCredentials credentials)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SaveUntrustedCredentialsForAssociate(Integer,String,NSUntrustedCredential)
+
+Saves credentials for a specified user.
+
+```crmscript
+Void SaveUntrustedCredentialsForAssociate(Integer associateId, String type, NSUntrustedCredentials credentials)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SaveUser(NSUser)
+
+Updates the existing NSUser or creates a new NSUser if the id parameter is 0
+
+```crmscript
+NSUser SaveUser(NSUser user)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+**Example:**
+
+```crmscript
+NSUser  agent;
+NSUser thing = agent.CreateDefaultUser();
+thing = agent.SaveUser(thing);
+```
+
+## SaveUserFromName(String,NSUser)
+
+Saves a user, with lookup based on the user name.
+
+```crmscript
+NSUser SaveUserFromName(String userName, NSUser user)
+```
+
+**Returns:** [CRMScript.NetServer.NSUser](CRMScript.NetServer.NSUser)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String userName;
+NSUser user;
+NSUser res = agent.SaveUserFromName(userName, user);
+```
+
+## SaveUserGroup(NSUserGroup)
+
+Saves a user group. Sets UserGroup.Deleted to mark a user group as deleted and invisible in the user interface.
+
+```crmscript
+NSUserGroup SaveUserGroup(NSUserGroup userGroup)
+```
+
+**Returns:** [CRMScript.NetServer.NSUserGroup](CRMScript.NetServer.NSUserGroup)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUserGroup userGroup;
+NSUserGroup res = agent.SaveUserGroup(userGroup);
+```
+
+## SetDataRight(Integer,String,Integer,String)
+
+Sets one specific data right at the given position.
+
+```crmscript
+Void SetDataRight(Integer roleId, String tableName, Integer relationToOwner, String dataRightValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+An exception will be thrown if non existing position is specified.
+</Note>
+
+## SetExternalUserInfo(Integer,String,String,Bool,Integer,Integer)
+
+Modifies an external user. Changes external users information according to the flags set in  externalUserInfoModification.
+
+```crmscript
+Void SetExternalUserInfo(Integer associateId, String userName, String password, Bool isActive, Integer roleId, Integer externalUserInfoModification)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetFunctionalRights(Integer,Integer[])
+
+Sets all functional rights for the given role. Functional rights not specified here will be removed from the role.
+
+```crmscript
+Void SetFunctionalRights(Integer roleId, Integer[] functionalRightIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetGeneratedPassword(Integer)
+
+```crmscript
+String SetGeneratedPassword(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## SetGeneratedPasswordFromName(String)
+
+```crmscript
+String SetGeneratedPasswordFromName(String associateName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## SetPassword(Integer,String)
+
+Changes password for a user.
+
+```crmscript
+Bool SetPassword(Integer associateId, String password)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+Integer associateId;
+String password;
+Bool res = agent.SetPassword(associateId, password);
+```
+
+## SetPasswordFromName(String,String)
+
+Changes password for a user.
+
+```crmscript
+Bool SetPasswordFromName(String associateName, String password)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+String associateName;
+String password;
+Bool res = agent.SetPasswordFromName(associateName, password);
+```
+
+## ValidateUser(NSUser)
+
+Checks that entity is ready for saving, return error messages by field.
+
+```crmscript
+Map ValidateUser(NSUser user)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSUserAgent agent;
+NSUser user;
+Map res = agent.ValidateUser(user);
+```

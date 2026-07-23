@@ -1,0 +1,87 @@
+﻿---
+uid: crmscript.netserver.nssentiment
+title: NSSentiment
+description: ""
+keywords: CRMScript, NSSentiment, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSentiment
+
+## Constructors
+
+### NSSentiment()
+
+```crmscript
+NSSentiment
+```
+
+Initializes a new instance of the NSSentiment class.
+
+## Methods
+
+## GetConfidence()
+
+```crmscript
+Integer GetConfidence()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Sentiment analysis confidence, where available. 0 = no idea, 100 = perfectly confident, -1 = no confidence score available.
+
+**Example:**
+
+```crmscript
+NSSentiment thing;
+Integer confidence = thing.GetConfidence();
+```
+
+## GetScore()
+
+```crmscript
+Integer GetScore()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Sentiment score, -100 = very unhappy, 100 = very happy, 0 = no idea (not recognized).
+
+**Example:**
+
+```crmscript
+NSSentiment thing;
+Integer score = thing.GetScore();
+```
+
+## SetConfidence(Integer)
+
+```crmscript
+Void SetConfidence(Integer confidence)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSentiment thing;
+Integer confidence;
+thing.SetConfidence(confidence);
+```
+
+## SetScore(Integer)
+
+```crmscript
+Void SetScore(Integer score)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSentiment thing;
+Integer score;
+thing.SetScore(score);
+```

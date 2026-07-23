@@ -1,0 +1,243 @@
+﻿---
+uid: crmscript.native.macroparameter
+title: MacroParameter
+description: "MacroParameter class"
+keywords: CRMScript, MacroParameter, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# MacroParameter
+
+MacroParameter class
+
+## Constructors
+
+### MacroParameter()
+
+```crmscript
+MacroParameter
+```
+
+Initializes a new instance of the MacroParameter class.
+
+### MacroParameter(String,String,Map,String,String,Bool)
+
+```crmscript
+MacroParameter(String name, String type, Map controlConfig, String label, String description, Bool isOptional)
+```
+
+Initializes a new instance of the MacroParameter class.
+
+### MacroParameter(String,String,Map,String,String,Bool,String,Bool)
+
+```crmscript
+MacroParameter(String name, String type, Map controlConfig, String label, String description, Bool isOptional, String defaultValue, Bool defaultValueIsFixed)
+```
+
+Initializes a new instance of the MacroParameter class.
+
+## Methods
+
+## getControlConfig()
+
+Gets the optional control configuration values that influence how the input control behaves.
+
+```crmscript
+Map getControlConfig()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+## getDescription()
+
+Returns a longer description of the parameter.
+
+```crmscript
+String getDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Can for instance be used as help in a form.
+</Note>
+
+## getIsFixedValue()
+
+Returns true if the value is fixed, and false if it is read from another task or the environment.
+
+```crmscript
+Bool getIsFixedValue()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the value is fixed; otherwise, false.
+
+## getIsOptional()
+
+Returns true if the value is optional, and false if it is mandatory.
+
+```crmscript
+Bool getIsOptional()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the value is optional; false if mandatory.
+
+## getLabel()
+
+Returns the label for the parameter when displayed in a form.
+
+```crmscript
+String getLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The label for the parameter when displayed in a form.
+
+## getName()
+
+Returns the name of the parameter.
+
+```crmscript
+String getName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the parameter.
+
+<Note>
+The name is used for accessing the parameter.
+</Note>
+
+## getSourcePath()
+
+Returns the source path of the object it is called from.
+
+```crmscript
+String getSourcePath()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The source path of the object it is called from.
+
+## getType()
+
+Returns the type of the parameter.
+
+```crmscript
+String getType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Used for displaying correct control in form. Available types:&lt;ul&gt;&lt;li&gt;AnchorLine&lt;/li&gt;&lt;li&gt;InfoFields&lt;/li&gt;&lt;li&gt;Grid&lt;/li&gt;&lt;li&gt;HR&lt;/li&gt;&lt;li&gt;BR&lt;/li&gt;&lt;li&gt;SubHeader&lt;/li&gt;&lt;li&gt;ParserCode&lt;/li&gt;&lt;li&gt;Messages&lt;/li&gt;&lt;li&gt;EjScript&lt;/li&gt;&lt;li&gt;HtmlGrid&lt;/li&gt;&lt;li&gt;Planner&lt;/li&gt;&lt;li&gt;StaticGrid&lt;/li&gt;&lt;li&gt;DrillDown&lt;/li&gt;&lt;li&gt;GenericGrid&lt;/li&gt;&lt;li&gt;InfoFields2&lt;/li&gt;&lt;li&gt;ExtraTableEntriesGrid&lt;/li&gt;&lt;li&gt;DirectedAcyclicGraph&lt;/li&gt;&lt;li&gt;EjscriptElement&lt;/li&gt;&lt;li&gt;Chart&lt;/li&gt;&lt;li&gt;WhereChart&lt;/li&gt;&lt;li&gt;ListRecipients&lt;/li&gt;&lt;li&gt;EntityCard&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## getValue()
+
+If the parameter is a fixed value, this function will return that value.
+
+```crmscript
+String getValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## setControlConfig(Map)
+
+Sets the optional configuration values for the type. The configuration will influence how the input control behaves.
+
+```crmscript
+Void setControlConfig(Map values)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setDescription(String)
+
+Sets a longer description of the parameter. This description can for instance be used in as help in a form.
+
+```crmscript
+Void setDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setIsFixedValue(Bool)
+
+Sets whether or not the parameter is a fixed value.
+
+```crmscript
+Void setIsFixedValue(Bool isFixed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setIsOptional(Bool)
+
+Sets whether or not the parameter is optional.
+
+```crmscript
+Void setIsOptional(Bool isOptional)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setLabel(String)
+
+Sets the label of the parameter when displayed in form.
+
+```crmscript
+Void setLabel(String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setName(String)
+
+Sets the name of the parameter.
+
+```crmscript
+Void setName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Parameters are accessed by their name.
+</Note>
+
+## setSourcePath(String)
+
+Sets the parameter's source path.
+
+```crmscript
+Void setSourcePath(String path)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setType(String)
+
+Sets the type of the parameter.
+
+```crmscript
+Void setType(String type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Available types:&lt;ul&gt;&lt;li&gt;AnchorLine&lt;/li&gt;&lt;li&gt;InfoFields&lt;/li&gt;&lt;li&gt;Grid&lt;/li&gt;&lt;li&gt;HR&lt;/li&gt;&lt;li&gt;BR&lt;/li&gt;&lt;li&gt;SubHeader&lt;/li&gt;&lt;li&gt;ParserCode&lt;/li&gt;&lt;li&gt;Messages&lt;/li&gt;&lt;li&gt;EjScript&lt;/li&gt;&lt;li&gt;HtmlGrid&lt;/li&gt;&lt;li&gt;Planner&lt;/li&gt;&lt;li&gt;StaticGrid&lt;/li&gt;&lt;li&gt;DrillDown&lt;/li&gt;&lt;li&gt;GenericGrid&lt;/li&gt;&lt;li&gt;InfoFields2&lt;/li&gt;&lt;li&gt;ExtraTableEntriesGrid&lt;/li&gt;&lt;li&gt;DirectedAcyclicGraph&lt;/li&gt;&lt;li&gt;EjscriptElement&lt;/li&gt;&lt;li&gt;Chart&lt;/li&gt;&lt;li&gt;WhereChart&lt;/li&gt;&lt;li&gt;ListRecipients&lt;/li&gt;&lt;li&gt;EntityCard&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## setValue(String)
+
+Sets the value of the parameter, given that the parameter is a fixed value.
+
+```crmscript
+Void setValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

@@ -1,0 +1,113 @@
+﻿---
+uid: crmscript.native.notify
+title: Notify
+description: "Handles notification of different types."
+keywords: CRMScript, Notify, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Notify
+
+Handles notification of different types.
+
+## Constructors
+
+### Notify()
+
+```crmscript
+Notify
+```
+
+Initializes a new instance of the Notify class.
+
+## Methods
+
+## sendCustomMessage(Integer,String)
+
+Sends a custom notification to a user.
+
+```crmscript
+Void sendCustomMessage(Integer recipientId, String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## sendCustomMessage(Integer,String,String)
+
+Sends a custom notification message to user with specified URL.
+
+```crmscript
+Void sendCustomMessage(Integer recipientId, String message, String url)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+URLs with HTTP or HTTPS protocol will open in a new tab. URLs without will be treated as relative and open in the same window.
+</Note>
+
+**Example:**
+
+```crmscript
+Notify notify;
+// Send custom notification to user with ID 2, clicking notification should open URL.
+notify.sendCustomMessage(2,"Custom notification", "http://www.google.com");
+```
+
+## sendNewTicket(Integer)
+
+Sends a notification about a new request according to the user's notify configuration.
+
+```crmscript
+Void sendNewTicket(Integer ticketId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## sendNewTicket(Integer,Bool)
+
+Sends a notification about a new request according to the user's notify configuration. By setting the parameter skipCategoryMemberNotification, this method will not notify members of the category (if set up) or the email address free-text field on the category.
+
+```crmscript
+Void sendNewTicket(Integer ticketId, Bool skipCategoryMemberNotification)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## sendNewTicketMessage(Integer,Bool)
+
+Notifies a user about a new message in the specified ticket according to the users notify configuration.
+
+```crmscript
+Void sendNewTicketMessage(Integer ticketId, Bool onlyToHotLlist)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If onlyToHotList is set to true, only those who has this ticket in their hotlists will be notified.
+</Note>
+
+## sendTicketActivated(Integer)
+
+Sends a notification about a ticket being activated, according to the users notify configuration.
+
+```crmscript
+Void sendTicketActivated(Integer ticketId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## sendTicketTakenOver(Integer,Integer,Integer)
+
+Sends a notification to the users about a ticket being taken over.
+
+```crmscript
+Void sendTicketTakenOver(Integer ticketId, Integer oldUserId, Integer newUserId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

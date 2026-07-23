@@ -1,0 +1,118 @@
+﻿---
+uid: crmscript.netserver.nsfavouriteagent
+title: NSFavouriteAgent
+description: "Agent used for retrieving and setting favorites."
+keywords: CRMScript, NSFavouriteAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFavouriteAgent
+
+Agent used for retrieving and setting favorites.
+
+## Constructors
+
+### NSFavouriteAgent()
+
+```crmscript
+NSFavouriteAgent
+```
+
+Agent used for retrieving and setting favorites.
+
+## Methods
+
+## AddFavourite(String,Integer,Integer,String)
+
+Adds a record in a table as a favorite for an associate
+
+```crmscript
+Void AddFavourite(String tableName, Integer recordId, Integer associateId, String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## AddFavourites(String,Integer[],Integer,String)
+
+Adds a list of record IDs as favorites for an associate
+
+```crmscript
+Void AddFavourites(String tableName, Integer[] recordIds, Integer associateId, String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## GetFavourites(String,Integer)
+
+Gets all favorites for a table and associate
+
+```crmscript
+NSFavourite[] GetFavourites(String tableName, Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSFavourite](CRMScript.NetServer.NSFavourite)[]
+
+## IsFavourite(String,Integer,Integer)
+
+Checks if a record in a table is a favorite for an associate
+
+```crmscript
+Bool IsFavourite(String tableName, Integer recordId, Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## RemoveAllFavourites(String,Integer)
+
+Removes all favorites for a table and associate
+
+```crmscript
+Void RemoveAllFavourites(String tableName, Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveFavourite(String,Integer,Integer)
+
+Removes favorite for a table, record ID, and associate
+
+```crmscript
+Void RemoveFavourite(String tableName, Integer recordId, Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## RemoveFavouritesById(Integer[])
+
+Removes favorite using favorite ID
+
+```crmscript
+Void RemoveFavouritesById(Integer[] favoriteIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ToggleFavourite(String,Integer,Integer,String)
+
+Toggles a record in a table as a favorite for an associate
+
+```crmscript
+Bool ToggleFavourite(String tableName, Integer recordId, Integer associateId, String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if added; false if removed.
+
+**Example:**
+
+```crmscript
+NSFavouriteAgent agent;
+String tableName;
+Integer recordId;
+Integer associateId;
+String extraInfo;
+Bool res = agent.ToggleFavourite(tableName, recordId, associateId, extraInfo);
+```

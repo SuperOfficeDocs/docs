@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nsconsentperson
+title: NSConsentPerson
+description: "Carrier object for ConsentPerson."
+keywords: CRMScript, NSConsentPerson, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSConsentPerson
+
+Carrier object for ConsentPerson.
+
+## Constructors
+
+### NSConsentPerson()
+
+```crmscript
+NSConsentPerson
+```
+
+Initializes a new instance of the NSConsentPerson class.
+
+## Methods
+
+## GetComment()
+
+```crmscript
+String GetComment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Comment regarding this specific consent.
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+String comment = thing.GetComment();
+```
+
+## GetConsentPersonId()
+
+```crmscript
+Integer GetConsentPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ConsentPerson Id.
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+Integer consentPersonId = thing.GetConsentPersonId();
+```
+
+## GetConsentPurpose()
+
+```crmscript
+NSConsentPurpose GetConsentPurpose()
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentPurpose](CRMScript.NetServer.NSConsentPurpose) - The consent purpose.
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+NSConsentPurpose consentPurpose = thing.GetConsentPurpose();
+```
+
+## GetConsentSource()
+
+```crmscript
+NSConsentSource GetConsentSource()
+```
+
+**Returns:** [CRMScript.NetServer.NSConsentSource](CRMScript.NetServer.NSConsentSource) - The consent source.
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+NSConsentSource consentSource = thing.GetConsentSource();
+```
+
+## GetLegalBase()
+
+```crmscript
+NSLegalBase GetLegalBase()
+```
+
+**Returns:** [CRMScript.NetServer.NSLegalBase](CRMScript.NetServer.NSLegalBase) - The legal base.
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+NSLegalBase legalBase = thing.GetLegalBase();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Person Id.
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+Integer personId = thing.GetPersonId();
+```
+
+## SetComment(String)
+
+```crmscript
+Void SetComment(String comment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+String comment;
+thing.SetComment(comment);
+```
+
+## SetConsentPersonId(Integer)
+
+```crmscript
+Void SetConsentPersonId(Integer consentPersonId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+Integer consentPersonId;
+thing.SetConsentPersonId(consentPersonId);
+```
+
+## SetConsentPurpose(NSConsentPurpose)
+
+```crmscript
+Void SetConsentPurpose(NSConsentPurpose consentPurpose)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+NSConsentPurpose consentPurpose;
+thing.SetConsentPurpose(consentPurpose);
+```
+
+## SetConsentSource(NSConsentSource)
+
+```crmscript
+Void SetConsentSource(NSConsentSource consentSource)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+NSConsentSource consentSource;
+thing.SetConsentSource(consentSource);
+```
+
+## SetLegalBase(NSLegalBase)
+
+```crmscript
+Void SetLegalBase(NSLegalBase legalBase)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+NSLegalBase legalBase;
+thing.SetLegalBase(legalBase);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSConsentPerson thing;
+Integer personId;
+thing.SetPersonId(personId);
+```

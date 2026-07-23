@@ -1,0 +1,197 @@
+﻿---
+uid: crmscript.native.stringobjectdictionary
+title: StringObjectDictionary
+description: "A StringObjectDictionary is a collection of key-value pairs. The key is a string and the value can be an integer, float, string, boolean or datetime."
+keywords: CRMScript, StringObjectDictionary, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# StringObjectDictionary
+
+A StringObjectDictionary is a collection of key-value pairs. The key is a string and the value can be an integer, float, string, boolean or datetime.
+
+## Constructors
+
+### StringObjectDictionary()
+
+```crmscript
+StringObjectDictionary
+```
+
+Initializes a new instance of the StringObjectDictionary class.
+
+## Methods
+
+## getInteger(String)
+
+Returns Integer value for key
+
+```crmscript
+Integer getInteger(String key)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The value for the given key.
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+printLine(dict.getInteger("foobar").toString());
+```
+
+## getFloat(String)
+
+Returns Float value for key
+
+```crmscript
+Float getFloat(String key)
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The value for the given key.
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+printLine(dict.getFloat("foobar").toString(2));
+```
+
+## getString(String)
+
+Returns String value for key
+
+```crmscript
+String getFloat(String key)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given key.
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+printLine(dict.getString("foobar"));
+```
+
+## getBool(String)
+
+Returns boolean value for key
+
+```crmscript
+Bool getBool(String key)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The value for the given key.
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+printLine(dict.getBool("foobar").toString());
+```
+
+## getDateTime(String)
+
+Returns value for key
+
+```crmscript
+DateTime getDateTime(String key)
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The value for the given key.
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+printLine(dict.getDateTime("foobar").toString());
+```
+
+## insertInteger(String,Integer)
+
+Inserts or updates value for given key
+
+```crmscript
+Void insertInteger(String key,Integer value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+dict.insertInteger("foobar", 200);
+```
+
+## insertString(String,String)
+
+Inserts or updates value for given key
+
+```crmscript
+Void insertString(String key,String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+dict.insertString("foo", "bar");
+```
+
+## insertFloat(String,Float)
+
+Inserts or updates value for given key
+
+```crmscript
+Void insertFloat(String key,Float value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+dict.insertFloat("foo", 2.0);
+```
+
+## insertBool(String,Bool)
+
+Inserts or updates value for given key
+
+```crmscript
+Void insertBool(String key,Bool value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+dict.insertBool("foo", false);
+```
+
+## insertDateTime(String,DateTime)
+
+Inserts or updates value for given key
+
+```crmscript
+Void insertDateTime(String key,DateTime value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+StringObjectDictionary dict;
+dict.insertDateTime("foo", getCurrentDateTime());
+```

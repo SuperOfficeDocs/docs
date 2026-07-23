@@ -1,0 +1,186 @@
+﻿---
+uid: crmscript.netserver.nssignedpublickey
+title: NSSignedPublicKey
+description: "Represents all licenses for this owner at this site."
+keywords: CRMScript, NSSignedPublicKey, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSignedPublicKey
+
+Represents all licenses for this owner at this site.
+
+## Constructors
+
+### NSSignedPublicKey()
+
+```crmscript
+NSSignedPublicKey
+```
+
+Initializes a new instance of the NSSignedPublicKey class.
+
+## Methods
+
+## GetExpiryDate()
+
+```crmscript
+DateTime GetExpiryDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date when the signature expires. No Timezone.
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+DateTime expiryDate = thing.GetExpiryDate();
+```
+
+## GetKey()
+
+```crmscript
+NSDSAParameters GetKey()
+```
+
+**Returns:** [CRMScript.NetServer.NSDSAParameters](CRMScript.NetServer.NSDSAParameters) - Public key held by module owner.
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+NSDSAParameters key = thing.GetKey();
+```
+
+## GetOwnerName()
+
+```crmscript
+String GetOwnerName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the module owner, not visible in GUI but used in the code.
+
+<Note>
+OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.n
+</Note>
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+String ownerName = thing.GetOwnerName();
+```
+
+## GetSignature()
+
+```crmscript
+String GetSignature()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Signature, Base64 encoded value.
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+String signature = thing.GetSignature();
+```
+
+## GetSignDate()
+
+```crmscript
+DateTime GetSignDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date when the the public key was signed. No Timezone.
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+DateTime signDate = thing.GetSignDate();
+```
+
+## SetExpiryDate(DateTime)
+
+```crmscript
+Void SetExpiryDate(DateTime expiryDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+DateTime expiryDate;
+thing.SetExpiryDate(expiryDate);
+```
+
+## SetKey(NSDSAParameters)
+
+```crmscript
+Void SetKey(NSDSAParameters key)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+NSDSAParameters key;
+thing.SetKey(key);
+```
+
+## SetOwnerName(String)
+
+```crmscript
+Void SetOwnerName(String ownerName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+String ownerName;
+thing.SetOwnerName(ownerName);
+```
+
+## SetSignature(String)
+
+```crmscript
+Void SetSignature(String signature)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+String signature;
+thing.SetSignature(signature);
+```
+
+## SetSignDate(DateTime)
+
+```crmscript
+Void SetSignDate(DateTime signDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSignedPublicKey thing;
+DateTime signDate;
+thing.SetSignDate(signDate);
+```

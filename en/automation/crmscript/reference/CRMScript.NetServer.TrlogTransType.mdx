@@ -1,0 +1,47 @@
+﻿---
+uid: crmscript.netserver.trlogtranstype
+title: Enum TrlogTransType
+description: "Value for field type in traveltransctionlog"
+keywords: CRMScript, TrlogTransType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum TrlogTransType
+
+Value for field type in traveltransctionlog
+
+## Syntax
+
+```crmscript
+TrlogTransType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown - used when initializing |
+| Insert | A record has been inserted |
+| Update | A record has been updated |
+| Delete | A record has been deleted |
+| UpdateOwner | The owning associate_id of the target record has been updated, old value in PrevrecordId |
+| OldUpdateContact | (Obsolete) The contact_id of the target record has been updated, old value in PrevRecordId |
+| OldUpdateProject | (Obsolete) The project_id of the target record has been updated, old value in PrevRecordId |
+| DeleteAreaUserInclusion | A previously included (data inclusion) user has been removed from an area |
+| DeleteAreaUserAssignment | A previously assigned (login rights) user has been delete from an Area |
+| PublishUdef | A new layout for User-defined fields has been published |
+| UpdateFieldPart1 | (Reserved) Bitmap of updated fields |
+| UpdateFieldPart2 | (Reserved) Bitmap of updated fields |
+| UpdateFieldPart3 | (Reserved) Bitmap of updated fields |
+| UpdateFieldPart4 | (Reserved) Bitmap of updated fields |
+| UpdateFieldPart5 | (Reserved) Bitmap of updated fields |
+| UpdateFieldPart6 | (Reserved) Bitmap of updated fields |
+| UpdateFieldPart7 | (Reserved) Bitmap of updated fields |
+| UpdateFieldPart8 | (Reserved) Bitmap of updated fields |
+| UpdateContact | The contact_id of the target record has been changed, old value in PrevRecordId |
+| UpdateProject | The project_id of the target record has been updated, odl value in PrevRecordId |
+| TruncateTable | A TRUNCATE TABLE operation was performed against a table; no record of individual rows deleted exists but everything that WAS in the table is now gone for good |

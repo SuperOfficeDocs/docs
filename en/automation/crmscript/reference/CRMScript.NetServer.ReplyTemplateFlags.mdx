@@ -1,0 +1,49 @@
+﻿---
+uid: crmscript.netserver.replytemplateflags
+title: Enum ReplyTemplateFlags
+description: "Describes access level to get reply templaes"
+keywords: CRMScript, ReplyTemplateFlags, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ReplyTemplateFlags
+
+Describes access level to get reply templaes
+
+## Syntax
+
+```crmscript
+ReplyTemplateFlags
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| ReplyTemplateCustomerNewCustomer | System template for reply to new customers |
+| ReplyTemplateCustomerCustomerReply | System template for reply to customers on new request |
+| ReplyTemplateCustomerPassword | System template for sending password to customers |
+| ReplyTemplateUserActiveTickets | System template for sending an overview of open requests to a user |
+| ReplyTemplateUserNewMessage | System template for notifying a user that a new message has arrived |
+| ReplyTemplateUserTicketActivated | System template for notifying a user that a request has been activated |
+| ReplyTemplateUserTicketAlarm | System template for notifying a user that a request has been escalated |
+| ReplyTemplateUserNewTicket | System template for notifying a user that a new request has arrived |
+| ReplyTemplateAll | Not system templates |
+| ReplyTemplateNone | Used for installing or updating system templates |
+| ReplyTemplateUserTicketTakenOver | System template for notifying a user that one of the user's requests has been taken over by another user |
+| ReplyTemplatePublishKbQuestion | System template for formatting the question when a request is published in the FAQ module |
+| ReplyTemplatePublishKbAnswer | System template for formatting the answer when a request is published in the FAQ module |
+| ReplyTemplateWeekStat | System template defining weekly statistics layout |
+| ReplyTemplateHotlistNewMessage | New message in a request in the favourites list: %ticket.title% |
+| ReplyTemplateHotlistTicketActivated | A request in the favourites list has been activated |
+| ReplyTemplateHotlistTicketAlarm | System template for notifying a user that a request in the favourites list has been escalated |
+| ReplyTemplateHotlistTicketTakenOver | System template for notifying a user that a request in the user's favourites list has been taken over by another user |
+| ReplyTemplateLicenseExpirationWarning | System template for sending warning to administrator about expiring licence |
+| ReplyTemplateCustomerConfirmEmail | System template - confirm customer email |
+| ReplyTemplatePrintTicket | System template: print request |
+| ReplyTemplateCustomerChatLog | System template: Chat log |
+| ReplyTemplateNewLink | System template - new link |

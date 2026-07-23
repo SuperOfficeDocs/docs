@@ -1,0 +1,38 @@
+﻿---
+uid: crmscript.netserver.shipmentaddrstatus
+title: Enum ShipmentAddrStatus
+description: "Status for sending to a particular recipient"
+keywords: CRMScript, ShipmentAddrStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum ShipmentAddrStatus
+
+Status for sending to a particular recipient
+
+## Syntax
+
+```crmscript
+ShipmentAddrStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Default value for empty rows |
+| Ready | Ready for shipment |
+| Duplicate | Blocked because it duplicates another shipment addr in the same batch |
+| Blocked | Blocked because of nomailing flag |
+| Sent | Sent |
+| Bounced | Bounce received from transport channel |
+| Opened | Recipient has opened the message, we know because of tracking |
+| Clicked | Test recipient, will be deleted after sent (enum name is not correct, but that cant be changed now) |
+| SoftBounced | Vacation notice, etc |
+| NoSubscription | Recipient does not have subscription for shipmentType |
+| Complained | Recipient sent a complaint |
+| TooManyBounces | Recipient address has bounced too many times |

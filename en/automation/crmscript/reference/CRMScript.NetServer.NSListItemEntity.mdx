@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nslistitementity
+title: NSListItemEntity
+description: "The list item entity contains generic list item information."
+keywords: CRMScript, NSListItemEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSListItemEntity
+
+The list item entity contains generic list item information.
+
+## Constructors
+
+### NSListItemEntity()
+
+```crmscript
+NSListItemEntity
+```
+
+Initializes a new instance of the NSListItemEntity class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the list item is marked as deleted.
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The identity of the list item.
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Integer id = thing.GetId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the list item.
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The rank of the list item.
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip of the list item.
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetUdListDefinitionId()
+
+```crmscript
+Integer GetUdListDefinitionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the list which this list item belongs to.
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Integer udListDefinitionId = thing.GetUdListDefinitionId();
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetId(Integer)
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetUdListDefinitionId(Integer)
+
+```crmscript
+Void SetUdListDefinitionId(Integer udListDefinitionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSListItemEntity thing;
+Integer udListDefinitionId;
+thing.SetUdListDefinitionId(udListDefinitionId);
+```

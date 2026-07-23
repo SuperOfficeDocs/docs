@@ -1,0 +1,118 @@
+﻿---
+uid: crmscript.netserver.nstokenmanagementinfo
+title: NSTokenManagementInfo
+description: ""
+keywords: CRMScript, NSTokenManagementInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTokenManagementInfo
+
+## Constructors
+
+### NSTokenManagementInfo()
+
+```crmscript
+NSTokenManagementInfo
+```
+
+Initializes a new instance of the NSTokenManagementInfo class.
+
+## Methods
+
+## GetAccessToken()
+
+```crmscript
+String GetAccessToken()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Access token.
+
+**Example:**
+
+```crmscript
+NSTokenManagementInfo thing;
+String accessToken = thing.GetAccessToken();
+```
+
+## GetProvider()
+
+```crmscript
+String GetProvider()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The provider these tokens belong to.
+
+**Example:**
+
+```crmscript
+NSTokenManagementInfo thing;
+String provider = thing.GetProvider();
+```
+
+## GetRefreshToken()
+
+```crmscript
+String GetRefreshToken()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Refresh token.
+
+**Example:**
+
+```crmscript
+NSTokenManagementInfo thing;
+String refreshToken = thing.GetRefreshToken();
+```
+
+## SetAccessToken(String)
+
+```crmscript
+Void SetAccessToken(String accessToken)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTokenManagementInfo thing;
+String accessToken;
+thing.SetAccessToken(accessToken);
+```
+
+## SetProvider(String)
+
+```crmscript
+Void SetProvider(String provider)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTokenManagementInfo thing;
+String provider;
+thing.SetProvider(provider);
+```
+
+## SetRefreshToken(String)
+
+```crmscript
+Void SetRefreshToken(String refreshToken)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTokenManagementInfo thing;
+String refreshToken;
+thing.SetRefreshToken(refreshToken);
+```

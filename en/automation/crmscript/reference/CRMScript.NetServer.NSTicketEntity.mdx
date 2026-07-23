@@ -1,0 +1,1551 @@
+﻿---
+uid: crmscript.netserver.nsticketentity
+title: NSTicketEntity
+description: "Represents a service ticket."
+keywords: CRMScript, NSTicketEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketEntity
+
+Represents a service ticket.
+
+## Constructors
+
+### NSTicketEntity()
+
+```crmscript
+NSTicketEntity
+```
+
+Initializes a new instance of the NSTicketEntity class.
+
+## Methods
+
+## GetActivate()
+
+When the ticket should be activated, if it is postponed.
+
+```crmscript
+DateTime GetActivate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime activate = thing.GetActivate();
+```
+
+## GetAlertLevel()
+
+The alert level for the ticket. Matches the level value of the ticket_alert table.
+
+```crmscript
+Integer GetAlertLevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer alertLevel = thing.GetAlertLevel();
+```
+
+## GetAlertTimeout()
+
+The datetime for when the ticket should jump to the next alert_level.
+
+```crmscript
+DateTime GetAlertTimeout()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime alertTimeout = thing.GetAlertTimeout();
+```
+
+## GetAuthor()
+
+A string representing the author of the ticket (same as author of first message).
+
+```crmscript
+String GetAuthor()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+String author = thing.GetAuthor();
+```
+
+## GetBaseStatus()
+
+```crmscript
+Integer GetBaseStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status of the ticket. See &lt;xref href=\"CRMScript.NetServer.TicketBaseStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer baseStatus = thing.GetBaseStatus();
+```
+
+## GetCategory()
+
+The ticket category entity which this ticket is connected to
+
+```crmscript
+NSTicketCategoryEntity GetCategory()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketCategoryEntity](CRMScript.NetServer.NSTicketCategoryEntity)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketCategoryEntity category = thing.GetCategory();
+```
+
+## GetClosedAt()
+
+When the ticket was closed.
+
+```crmscript
+DateTime GetClosedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime closedAt = thing.GetClosedAt();
+```
+
+## GetConnectId()
+
+If a ticket is connected to another ticket, this field is set to the ID of the 'master' ticket.
+
+```crmscript
+Integer GetConnectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer connectId = thing.GetConnectId();
+```
+
+## GetCreatedAt()
+
+When the ticket was created.
+
+```crmscript
+DateTime GetCreatedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime createdAt = thing.GetCreatedAt();
+```
+
+## GetCreatedBy()
+
+The associate who created this ticket
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on a TicketEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetDeadline()
+
+Deadline for ticket.
+
+```crmscript
+DateTime GetDeadline()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime deadline = thing.GetDeadline();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on TicketEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetFirstReadByUser()
+
+The datetime for when the ticket first was read by a user.
+
+```crmscript
+DateTime GetFirstReadByUser()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime firstReadByUser = thing.GetFirstReadByUser();
+```
+
+## GetFromAddress()
+
+The from-address used when this ticket got created, e.g. by email
+
+```crmscript
+String GetFromAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+String fromAddress = thing.GetFromAddress();
+```
+
+## GetHasAttachment()
+
+Bool indicating if this ticket has one or more attachments.
+
+```crmscript
+Bool GetHasAttachment()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Bool hasAttachment = thing.GetHasAttachment();
+```
+
+## GetLastChanged()
+
+The last time the ticket was modified.
+
+```crmscript
+DateTime GetLastChanged()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime lastChanged = thing.GetLastChanged();
+```
+
+## GetMessages()
+
+```crmscript
+NSTicketMessage[] GetMessages()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketMessage](CRMScript.NetServer.NSTicketMessage)[] - TicketMessageId, CreatedAt, SLevel, and Important for all the messages connected to this ticket.
+
+<Note>
+For message body, see the NSTicketMessageEntity or the NSTicketMessage archive.
+</Note>
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketMessage[] messages = thing.GetMessages();
+```
+
+## GetNumMessages()
+
+The total number of messages for this request.
+
+```crmscript
+Integer GetNumMessages()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer numMessages = thing.GetNumMessages();
+```
+
+## GetNumReplies()
+
+The number of replies (messages) to the customer for this request.
+
+```crmscript
+Integer GetNumReplies()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer numReplies = thing.GetNumReplies();
+```
+
+## GetOrigin()
+
+What is the origin of this ticket
+
+```crmscript
+Integer GetOrigin()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.TicketOrigin\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer origin = thing.GetOrigin();
+```
+
+## GetOwnedBy()
+
+The associate who owns this ticket
+
+```crmscript
+NSAssociate GetOwnedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSAssociate ownedBy = thing.GetOwnedBy();
+```
+
+## GetPerson()
+
+The primary person that this ticket is connected to
+
+```crmscript
+NSPerson GetPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSPerson person = thing.GetPerson();
+```
+
+## GetPriority()
+
+The ticket priority entity which this ticket is connected to
+
+```crmscript
+NSTicketPriorityEntity GetPriority()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketPriorityEntity](CRMScript.NetServer.NSTicketPriorityEntity)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketPriorityEntity priority = thing.GetPriority();
+```
+
+## GetReadByCustomer()
+
+The datetime for when the ticket was read by the customer.
+
+```crmscript
+DateTime GetReadByCustomer()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime readByCustomer = thing.GetReadByCustomer();
+```
+
+## GetReadByOwner()
+
+The datetime for when the ticket last was read by the owner.
+
+```crmscript
+DateTime GetReadByOwner()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime readByOwner = thing.GetReadByOwner();
+```
+
+## GetReadStatus()
+
+```crmscript
+Integer GetReadStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href=\"CRMScript.NetServer.TicketReadStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer readStatus = thing.GetReadStatus();
+```
+
+## GetRealTimeSpentExternally()
+
+The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state
+
+```crmscript
+Integer GetRealTimeSpentExternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeSpentExternally = thing.GetRealTimeSpentExternally();
+```
+
+## GetRealTimeSpentInternally()
+
+The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state
+
+```crmscript
+Integer GetRealTimeSpentInternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeSpentInternally = thing.GetRealTimeSpentInternally();
+```
+
+## GetRealTimeSpentQueue()
+
+The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state
+
+```crmscript
+Integer GetRealTimeSpentQueue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeSpentQueue = thing.GetRealTimeSpentQueue();
+```
+
+## GetRealTimeToClose()
+
+Same as time_to_close, but not calculated based on priority.
+
+```crmscript
+Integer GetRealTimeToClose()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeToClose = thing.GetRealTimeToClose();
+```
+
+## GetRealTimeToReply()
+
+Same as time_to_reply, but not calculated based on priority.
+
+```crmscript
+Integer GetRealTimeToReply()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeToReply = thing.GetRealTimeToReply();
+```
+
+## GetRepliedAt()
+
+The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.
+
+```crmscript
+DateTime GetRepliedAt()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime repliedAt = thing.GetRepliedAt();
+```
+
+## GetSecondaryPersons()
+
+The secondary persons this ticket is connected to
+
+```crmscript
+NSPerson[] GetSecondaryPersons()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[]
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSPerson[] secondaryPersons = thing.GetSecondaryPersons();
+```
+
+## GetSlevel()
+
+```crmscript
+Integer GetSlevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The security level of the ticket. See &lt;xref href=\"CRMScript.NetServer.TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer slevel = thing.GetSlevel();
+```
+
+## GetStatus()
+
+The ticket status entity which this ticket is connected to
+
+```crmscript
+NSTicketStatusEntity GetStatus()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketStatusEntity](CRMScript.NetServer.NSTicketStatusEntity)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketStatusEntity status = thing.GetStatus();
+```
+
+## GetTags()
+
+An array containing the tags assigned to this request.
+
+```crmscript
+NSTag[] GetTags()
+```
+
+**Returns:** [CRMScript.NetServer.NSTag](CRMScript.NetServer.NSTag)[]
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTag[] tags = thing.GetTags();
+```
+
+## GetTicketId()
+
+The primary key (auto-incremented)
+
+```crmscript
+Integer GetTicketId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer ticketId = thing.GetTicketId();
+```
+
+## GetTimeSpentExternally()
+
+The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state
+
+```crmscript
+Integer GetTimeSpentExternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeSpentExternally = thing.GetTimeSpentExternally();
+```
+
+## GetTimeSpentInternally()
+
+The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state
+
+```crmscript
+Integer GetTimeSpentInternally()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeSpentInternally = thing.GetTimeSpentInternally();
+```
+
+## GetTimeSpentQueue()
+
+The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state
+
+```crmscript
+Integer GetTimeSpentQueue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeSpentQueue = thing.GetTimeSpentQueue();
+```
+
+## GetTimeToClose()
+
+The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority's timeframe.
+
+```crmscript
+Integer GetTimeToClose()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeToClose = thing.GetTimeToClose();
+```
+
+## GetTimeToReply()
+
+The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority's timeframe.
+
+```crmscript
+Integer GetTimeToReply()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeToReply = thing.GetTimeToReply();
+```
+
+## GetTitle()
+
+The title of the ticket.
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+String title = thing.GetTitle();
+```
+
+## SetActivate(DateTime)
+
+When the ticket should be activated, if it is postponed.
+
+```crmscript
+Void SetActivate(DateTime activate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime activate;
+thing.SetActivate(activate);
+```
+
+## SetAlertLevel(Integer)
+
+The alert level for the ticket. Matches the level value of the ticket_alert table.
+
+```crmscript
+Void SetAlertLevel(Integer alertLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer alertLevel;
+thing.SetAlertLevel(alertLevel);
+```
+
+## SetAlertTimeout(DateTime)
+
+The datetime for when the ticket should jump to the next alert level.
+
+```crmscript
+Void SetAlertTimeout(DateTime alertTimeout)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime alertTimeout;
+thing.SetAlertTimeout(alertTimeout);
+```
+
+## SetAuthor(String)
+
+A string representing the author of the ticket (same as author of first message).
+
+```crmscript
+Void SetAuthor(String author)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+String author;
+thing.SetAuthor(author);
+```
+
+## SetBaseStatus(Integer)
+
+```crmscript
+Void SetBaseStatus(Integer baseStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer baseStatus;
+thing.SetBaseStatus(baseStatus);
+```
+
+## SetCategory(NSTicketCategoryEntity)
+
+```crmscript
+Void SetCategory(NSTicketCategoryEntity category)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketCategoryEntity category;
+thing.SetCategory(category);
+```
+
+## SetClosedAt(DateTime)
+
+```crmscript
+Void SetClosedAt(DateTime closedAt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime closedAt;
+thing.SetClosedAt(closedAt);
+```
+
+## SetConnectId(Integer)
+
+If a ticket is connected to another ticket, this field is set to the ID of the 'master' ticket.
+
+```crmscript
+Void SetConnectId(Integer connectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer connectId;
+thing.SetConnectId(connectId);
+```
+
+## SetCreatedAt(DateTime)
+
+When the ticket was created.
+
+```crmscript
+Void SetCreatedAt(DateTime createdAt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime createdAt;
+thing.SetCreatedAt(createdAt);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on a TicketEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Map udefs;
+udefs.insert("SuperOffice:1", "[I:123]");
+udefs.insert("SuperOffice:1","123"); // this will also work, but beware of decimal point variations in different languages
+udefs.insert("custom.progid","foobar");
+udefs.insert("x_foo","foobar");
+udefs.insert("x_bar","456"); // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetDeadline(DateTime)
+
+```crmscript
+Void SetDeadline(DateTime deadline)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime deadline;
+thing.SetDeadline(deadline);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on TicketEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Map extras;
+extras.insert("custom.progid","foobar");
+thing.SetExtraFields(extras);
+```
+
+## SetFirstReadByUser(DateTime)
+
+```crmscript
+Void SetFirstReadByUser(DateTime firstReadByUser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime firstReadByUser;
+thing.SetFirstReadByUser(firstReadByUser);
+```
+
+## SetFromAddress(String)
+
+The from-address used when this ticket got created, e.g. by email
+
+```crmscript
+Void SetFromAddress(String fromAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+String fromAddress;
+thing.SetFromAddress(fromAddress);
+```
+
+## SetHasAttachment(Bool)
+
+Bool indicating if this ticket has one or more attachments.
+
+```crmscript
+Void SetHasAttachment(Bool hasAttachment)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Bool hasAttachment;
+thing.SetHasAttachment(hasAttachment);
+```
+
+## SetLastChanged(DateTime)
+
+```crmscript
+Void SetLastChanged(DateTime lastChanged)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime lastChanged;
+thing.SetLastChanged(lastChanged);
+```
+
+## SetMessages(NSTicketMessage[])
+
+```crmscript
+Void SetMessages(NSTicketMessage[] messages)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+For message body, see the NSTicketMessageEntity or the NSTicketMessage archive.
+</Note>
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketMessage[] messages;
+thing.SetMessages(messages);
+```
+
+## SetNumMessages(Integer)
+
+The total number of messages for this request.
+
+```crmscript
+Void SetNumMessages(Integer numMessages)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer numMessages;
+thing.SetNumMessages(numMessages);
+```
+
+## SetNumReplies(Integer)
+
+The number of replies (messages) to the customer for this request.
+
+```crmscript
+Void SetNumReplies(Integer numReplies)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer numReplies;
+thing.SetNumReplies(numReplies);
+```
+
+## SetOrigin(Integer)
+
+```crmscript
+Void SetOrigin(Integer origin)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer origin;
+thing.SetOrigin(origin);
+```
+
+## SetOwnedBy(NSAssociate)
+
+```crmscript
+Void SetOwnedBy(NSAssociate ownedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSAssociate ownedBy;
+thing.SetOwnedBy(ownedBy);
+```
+
+## SetPerson(NSPerson)
+
+The primary person that this ticket is connected to
+
+```crmscript
+Void SetPerson(NSPerson person)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSPerson person;
+thing.SetPerson(person);
+```
+
+## SetPriority(NSTicketPriorityEntity)
+
+The ticket priority entity which this ticket is connected to
+
+```crmscript
+Void SetPriority(NSTicketPriorityEntity priority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketPriorityEntity priority;
+thing.SetPriority(priority);
+```
+
+## SetReadByCustomer(DateTime)
+
+```crmscript
+Void SetReadByCustomer(DateTime readByCustomer)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime readByCustomer;
+thing.SetReadByCustomer(readByCustomer);
+```
+
+## SetReadByOwner(DateTime)
+
+```crmscript
+Void SetReadByOwner(DateTime readByOwner)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime readByOwner;
+thing.SetReadByOwner(readByOwner);
+```
+
+## SetReadStatus(Integer)
+
+```crmscript
+Void SetReadStatus(Integer readStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer readStatus;
+thing.SetReadStatus(readStatus);
+```
+
+## SetRealTimeSpentExternally(Integer)
+
+The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state
+
+```crmscript
+Void SetRealTimeSpentExternally(Integer realTimeSpentExternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeSpentExternally;
+thing.SetRealTimeSpentExternally(realTimeSpentExternally);
+```
+
+## SetRealTimeSpentInternally(Integer)
+
+The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state
+
+```crmscript
+Void SetRealTimeSpentInternally(Integer realTimeSpentInternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeSpentInternally;
+thing.SetRealTimeSpentInternally(realTimeSpentInternally);
+```
+
+## SetRealTimeSpentQueue(Integer)
+
+The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state
+
+```crmscript
+Void SetRealTimeSpentQueue(Integer realTimeSpentQueue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeSpentQueue;
+thing.SetRealTimeSpentQueue(realTimeSpentQueue);
+```
+
+## SetRealTimeToClose(Integer)
+
+Same as time_to_close, but not calculated based on priority.
+
+```crmscript
+Void SetRealTimeToClose(Integer realTimeToClose)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeToClose;
+thing.SetRealTimeToClose(realTimeToClose);
+```
+
+## SetRealTimeToReply(Integer)
+
+Same as time_to_reply, but not calculated based on priority.
+
+```crmscript
+Void SetRealTimeToReply(Integer realTimeToReply)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer realTimeToReply;
+thing.SetRealTimeToReply(realTimeToReply);
+```
+
+## SetRepliedAt(DateTime)
+
+The datetime for when the ticket was replied to (when the first external message added to the ticket).
+
+```crmscript
+Void SetRepliedAt(DateTime repliedAt)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+DateTime repliedAt;
+thing.SetRepliedAt(repliedAt);
+```
+
+## SetSecondaryPersons(NSPerson[])
+
+The secondary persons this ticket is connected to
+
+```crmscript
+Void SetSecondaryPersons(NSPerson[] secondaryPersons)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSPerson[] secondaryPersons;
+thing.SetSecondaryPersons(secondaryPersons);
+```
+
+## SetSlevel(Integer)
+
+```crmscript
+Void SetSlevel(Integer slevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer slevel;
+thing.SetSlevel(slevel);
+```
+
+## SetStatus(NSTicketStatusEntity)
+
+```crmscript
+Void SetStatus(NSTicketStatusEntity status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTicketStatusEntity status;
+thing.SetStatus(status);
+```
+
+## SetTags(NSTag[])
+
+An array containing the tags assigned to this request
+
+```crmscript
+Void SetTags(NSTag[] tags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+NSTag[] tags;
+thing.SetTags(tags);
+```
+
+## SetTicketId(Integer)
+
+The primary key (auto-incremented)
+
+```crmscript
+Void SetTicketId(Integer ticketId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer ticketId;
+thing.SetTicketId(ticketId);
+```
+
+## SetTimeSpentExternally(Integer)
+
+The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state
+
+```crmscript
+Void SetTimeSpentExternally(Integer timeSpentExternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeSpentExternally;
+thing.SetTimeSpentExternally(timeSpentExternally);
+```
+
+## SetTimeSpentInternally(Integer)
+
+The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state
+
+```crmscript
+Void SetTimeSpentInternally(Integer timeSpentInternally)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeSpentInternally;
+thing.SetTimeSpentInternally(timeSpentInternally);
+```
+
+## SetTimeSpentQueue(Integer)
+
+The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state
+
+```crmscript
+Void SetTimeSpentQueue(Integer timeSpentQueue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeSpentQueue;
+thing.SetTimeSpentQueue(timeSpentQueue);
+```
+
+## SetTimeToClose(Integer)
+
+The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority's timeframe.
+
+```crmscript
+Void SetTimeToClose(Integer timeToClose)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeToClose;
+thing.SetTimeToClose(timeToClose);
+```
+
+## SetTimeToReply(Integer)
+
+The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority's timeframe.
+
+```crmscript
+Void SetTimeToReply(Integer timeToReply)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+Integer timeToReply;
+thing.SetTimeToReply(timeToReply);
+```
+
+## SetTitle(String)
+
+The title of the ticket.
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketEntity thing;
+String title;
+thing.SetTitle(title);
+```

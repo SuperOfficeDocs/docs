@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nscustomercenterconfig
+title: NSCustomerCenterConfig
+description: "Contains configuration when displaying the Customer Center. Carrier object for CustomerCenterConfig."
+keywords: CRMScript, NSCustomerCenterConfig, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCustomerCenterConfig
+
+Contains configuration when displaying the Customer Center. Carrier object for CustomerCenterConfig.
+
+## Constructors
+
+### NSCustomerCenterConfig()
+
+```crmscript
+NSCustomerCenterConfig
+```
+
+Initializes a new instance of the NSCustomerCenterConfig class.
+
+## Methods
+
+## GetConfig()
+
+```crmscript
+String GetConfig()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A JSON-formatted config.
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+String config = thing.GetConfig();
+```
+
+## GetCustConfigId()
+
+```crmscript
+Integer GetCustConfigId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer custConfigId = thing.GetCustConfigId();
+```
+
+## GetCustLangId()
+
+```crmscript
+Integer GetCustLangId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The customer language which this config belongs to. 0 indicates that the config is global.
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer custLangId = thing.GetCustLangId();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetRegisteredAssociateId()
+
+```crmscript
+Integer GetRegisteredAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Registered by whom.
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer registeredAssociateId = thing.GetRegisteredAssociateId();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What kind of data is in this row. What kind of data is in this row. See &lt;xref href=\"CRMScript.NetServer.ConfigType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer type = thing.GetType();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedAssociateId()
+
+```crmscript
+Integer GetUpdatedAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Last updated by whom.
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer updatedAssociateId = thing.GetUpdatedAssociateId();
+```
+
+## SetConfig(String)
+
+```crmscript
+Void SetConfig(String config)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+String config;
+thing.SetConfig(config);
+```
+
+## SetCustConfigId(Integer)
+
+```crmscript
+Void SetCustConfigId(Integer custConfigId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer custConfigId;
+thing.SetCustConfigId(custConfigId);
+```
+
+## SetCustLangId(Integer)
+
+```crmscript
+Void SetCustLangId(Integer custLangId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer custLangId;
+thing.SetCustLangId(custLangId);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetRegisteredAssociateId(Integer)
+
+```crmscript
+Void SetRegisteredAssociateId(Integer registeredAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer registeredAssociateId;
+thing.SetRegisteredAssociateId(registeredAssociateId);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetRegiSetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedAssociateId(Integer)
+
+```crmscript
+Void SetUpdatedAssociateId(Integer updatedAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCustomerCenterConfig thing;
+Integer updatedAssociateId;
+thing.SetUpdatedAssociateId(updatedAssociateId);
+```

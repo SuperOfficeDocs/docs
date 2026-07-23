@@ -1,0 +1,281 @@
+﻿---
+uid: crmscript.netserver.nssatellite
+title: NSSatellite
+description: ""
+keywords: CRMScript, NSSatellite, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSatellite
+
+## Constructors
+
+### NSSatellite()
+
+```crmscript
+NSSatellite
+```
+
+Initializes a new instance of the NSSatellite class.
+
+## Methods
+
+## GetArea()
+
+```crmscript
+NSArea GetArea()
+```
+
+**Returns:** [CRMScript.NetServer.NSArea](CRMScript.NetServer.NSArea)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSArea area = thing.GetArea();
+```
+
+## GetContact()
+
+```crmscript
+NSContact GetContact()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSContact contact = thing.GetContact();
+```
+
+## GetCreated()
+
+```crmscript
+DateTime GetCreated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+DateTime created = thing.GetCreated();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetLicenseOwners()
+
+```crmscript
+NSLicenseOwner[] GetLicenseOwners()
+```
+
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[] - The restricted and unrestricted module licenses grouped by license owner.
+
+<Note>
+These module licenses are either assigned or unassigned to this user
+</Note>
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSLicenseOwner[] licenseOwners = thing.GetLicenseOwners();
+```
+
+## GetSatelliteId()
+
+```crmscript
+Integer GetSatelliteId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+Integer satelliteId = thing.GetSatelliteId();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## SetArea(NSArea)
+
+```crmscript
+Void SetArea(NSArea area)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSArea area;
+thing.SetArea(area);
+```
+
+## SetContact(NSContact)
+
+```crmscript
+Void SetContact(NSContact contact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSContact contact;
+thing.SetContact(contact);
+```
+
+## SetCreated(DateTime)
+
+```crmscript
+Void SetCreated(DateTime created)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+DateTime created;
+thing.SetCreated(created);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetLicenseOwners(NSLicenseOwner[])
+
+```crmscript
+Void SetLicenseOwners(NSLicenseOwner[] licenseOwners)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+These module licenses are either assigned or unassigned to this user
+</Note>
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSLicenseOwner[] licenseOwners;
+thing.SetLicenseOwners(licenseOwners);
+```
+
+## SetSatelliteId(Integer)
+
+```crmscript
+Void SetSatelliteId(Integer satelliteId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+Integer satelliteId;
+thing.SetSatelliteId(satelliteId);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSatellite thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```

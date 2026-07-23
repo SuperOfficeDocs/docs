@@ -1,0 +1,707 @@
+﻿---
+uid: crmscript.netserver.nssaletypeentity
+title: NSSaleTypeEntity
+description: ""
+keywords: CRMScript, NSSaleTypeEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSaleTypeEntity
+
+## Constructors
+
+### NSSaleTypeEntity()
+
+```crmscript
+NSSaleTypeEntity
+```
+
+Initializes a new instance of the NSSaleTypeEntity class.
+
+## Methods
+
+## GetAllowQuoteAlternatives()
+
+```crmscript
+Bool GetAllowQuoteAlternatives()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can quotes linked to sales of this type, have multiple Alternatives.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool allowQuoteAlternatives = thing.GetAllowQuoteAlternatives();
+```
+
+## GetConfirmationLinesTemplate()
+
+```crmscript
+Integer GetConfirmationLinesTemplate()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The template that this sale type should use when producing the order confirmation lines document; the template must have DocTmplQuoteType=ConfirmationLines.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer confirmationLinesTemplate = thing.GetConfirmationLinesTemplate();
+```
+
+## GetDefaultQuoteValidity()
+
+```crmscript
+Integer GetDefaultQuoteValidity()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default valid days for quotes linked to sales of this type (valid from quote transmission).
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer defaultQuoteValidity = thing.GetDefaultQuoteValidity();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDurationUnit()
+
+```crmscript
+Integer GetDurationUnit()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Units for the duration (day, week, whatever). See &lt;xref href=\"CRMScript.NetServer.DurationUnit\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer durationUnit = thing.GetDurationUnit();
+```
+
+## GetGroupQuoteLinesBy()
+
+```crmscript
+Integer GetGroupQuoteLinesBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Group quote lines by this field.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer groupQuoteLinesBy = thing.GetGroupQuoteLinesBy();
+```
+
+## GetHasGuide()
+
+```crmscript
+Bool GetHasGuide()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this sale type have a guide attached.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool hasGuide = thing.GetHasGuide();
+```
+
+## GetHasStakeholders()
+
+```crmscript
+Bool GetHasStakeholders()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this sale type have stakeholders.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool hasStakeholders = thing.GetHasStakeholders();
+```
+
+## GetIsAutoAdvance()
+
+```crmscript
+Bool GetIsAutoAdvance()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the sale stage advance automatically, when the last guided activity in a stage is completed?
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool isAutoAdvance = thing.GetIsAutoAdvance();
+```
+
+## GetMaxDiscountPercent()
+
+```crmscript
+Integer GetMaxDiscountPercent()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The maximum discount in percent of total, if set, on quotes linked to sales of this type.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer maxDiscountPercent = thing.GetMaxDiscountPercent();
+```
+
+## GetMaxDiscountPercentSet()
+
+```crmscript
+Bool GetMaxDiscountPercentSet()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is there a limit, in percent, to the total discount on quotes linked to sales of this type.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool maxDiscountPercentSet = thing.GetMaxDiscountPercentSet();
+```
+
+## GetMinEarningPercent()
+
+```crmscript
+Integer GetMinEarningPercent()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The minimum earning in percent of total, if set, on quotes linked to sales of this type.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer minEarningPercent = thing.GetMinEarningPercent();
+```
+
+## GetMinEarningPercentSet()
+
+```crmscript
+Bool GetMinEarningPercentSet()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is there a limit, in earning as percent of total, on quotes linked to sales of this type.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool minEarningPercentSet = thing.GetMinEarningPercentSet();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+String name = thing.GetName();
+```
+
+## GetQuoteLinesTemplate()
+
+```crmscript
+Integer GetQuoteLinesTemplate()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The template that this sale type should use when producing the product lines offer document; the template must have DocTmplQuoteType=QuoteLines.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer quoteLinesTemplate = thing.GetQuoteLinesTemplate();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetSaleDuration()
+
+```crmscript
+Integer GetSaleDuration()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Expected number of dales from initiation to close of sale.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer saleDuration = thing.GetSaleDuration();
+```
+
+## GetSaleTypeCatId()
+
+```crmscript
+Integer GetSaleTypeCatId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Category of sale type, copied to sale.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer saleTypeCatId = thing.GetSaleTypeCatId();
+```
+
+## GetSaleTypeId()
+
+```crmscript
+Integer GetSaleTypeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer saleTypeId = thing.GetSaleTypeId();
+```
+
+## GetSortGroupLinesBy()
+
+```crmscript
+Integer GetSortGroupLinesBy()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Sort group lines by this field.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer sortGroupLinesBy = thing.GetSortGroupLinesBy();
+```
+
+## GetStages()
+
+```crmscript
+NSSelectableMDOListItem[] GetStages()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - Stages, those associated with this NSSaleType are selected.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+NSSelectableMDOListItem[] stages = thing.GetStages();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetAllowQuoteAlternatives(Bool)
+
+```crmscript
+Void SetAllowQuoteAlternatives(Bool allowQuoteAlternatives)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool allowQuoteAlternatives;
+thing.SetAllowQuoteAlternatives(allowQuoteAlternatives);
+```
+
+## SetConfirmationLinesTemplate(Integer)
+
+```crmscript
+Void SetConfirmationLinesTemplate(Integer confirmationLinesTemplate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer confirmationLinesTemplate;
+thing.SetConfirmationLinesTemplate(confirmationLinesTemplate);
+```
+
+## SetDefaultQuoteValidity(Integer)
+
+```crmscript
+Void SetDefaultQuoteValidity(Integer defaultQuoteValidity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer defaultQuoteValidity;
+thing.SetDefaultQuoteValidity(defaultQuoteValidity);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDurationUnit(Integer)
+
+```crmscript
+Void SetDurationUnit(Integer durationUnit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer durationUnit;
+thing.SetDurationUnit(durationUnit);
+```
+
+## SetGroupQuoteLinesBy(Integer)
+
+```crmscript
+Void SetGroupQuoteLinesBy(Integer groupQuoteLinesBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer groupQuoteLinesBy;
+thing.SetGroupQuoteLinesBy(groupQuoteLinesBy);
+```
+
+## SetHasGuide(Bool)
+
+```crmscript
+Void SetHasGuide(Bool hasGuide)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool hasGuide;
+thing.SetHasGuide(hasGuide);
+```
+
+## SetHasStakeholders(Bool)
+
+```crmscript
+Void SetHasStakeholders(Bool hasStakeholders)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool hasStakeholders;
+thing.SetHasStakeholders(hasStakeholders);
+```
+
+## SetIsAutoAdvance(Bool)
+
+```crmscript
+Void SetIsAutoAdvance(Bool isAutoAdvance)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool isAutoAdvance;
+thing.SetIsAutoAdvance(isAutoAdvance);
+```
+
+## SetMaxDiscountPercent(Integer)
+
+```crmscript
+Void SetMaxDiscountPercent(Integer maxDiscountPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer maxDiscountPercent;
+thing.SetMaxDiscountPercent(maxDiscountPercent);
+```
+
+## SetMaxDiscountPercentSet(Bool)
+
+```crmscript
+Void SetMaxDiscountPercentSet(Bool maxDiscountPercentSet)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool maxDiscountPercentSet;
+thing.SetMaxDiscountPercentSet(maxDiscountPercentSet);
+```
+
+## SetMinEarningPercent(Integer)
+
+```crmscript
+Void SetMinEarningPercent(Integer minEarningPercent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer minEarningPercent;
+thing.SetMinEarningPercent(minEarningPercent);
+```
+
+## SetMinEarningPercentSet(Bool)
+
+```crmscript
+Void SetMinEarningPercentSet(Bool minEarningPercentSet)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Bool minEarningPercentSet;
+thing.SetMinEarningPercentSet(minEarningPercentSet);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetQuoteLinesTemplate(Integer)
+
+```crmscript
+Void SetQuoteLinesTemplate(Integer quoteLinesTemplate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer quoteLinesTemplate;
+thing.SetQuoteLinesTemplate(quoteLinesTemplate);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetSaleDuration(Integer)
+
+```crmscript
+Void SetSaleDuration(Integer saleDuration)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer saleDuration;
+thing.SetSaleDuration(saleDuration);
+```
+
+## SetSaleTypeCatId(Integer)
+
+```crmscript
+Void SetSaleTypeCatId(Integer saleTypeCatId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer saleTypeCatId;
+thing.SetSaleTypeCatId(saleTypeCatId);
+```
+
+## SetSaleTypeId(Integer)
+
+```crmscript
+Void SetSaleTypeId(Integer saleTypeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer saleTypeId;
+thing.SetSaleTypeId(saleTypeId);
+```
+
+## SetSortGroupLinesBy(Integer)
+
+```crmscript
+Void SetSortGroupLinesBy(Integer sortGroupLinesBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+Integer sortGroupLinesBy;
+thing.SetSortGroupLinesBy(sortGroupLinesBy);
+```
+
+## SetStages(NSSelectableMDOListItem[])
+
+```crmscript
+Void SetStages(NSSelectableMDOListItem[] stages)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+NSSelectableMDOListItem[] stages;
+thing.SetStages(stages);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSaleTypeEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

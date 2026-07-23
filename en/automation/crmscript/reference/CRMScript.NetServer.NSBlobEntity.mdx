@@ -1,0 +1,438 @@
+﻿---
+uid: crmscript.netserver.nsblobentity
+title: NSBlobEntity
+description: "Carrier object for BlobEntity."
+keywords: CRMScript, NSBlobEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSBlobEntity
+
+Carrier object for BlobEntity.
+
+## Constructors
+
+### NSBlobEntity()
+
+```crmscript
+NSBlobEntity
+```
+
+Initializes a new instance of the NSBlobEntity class.
+
+## Methods
+
+## GetBlobId()
+
+```crmscript
+Integer GetBlobId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Integer blobId = thing.GetBlobId();
+```
+
+## GetBlobSize()
+
+```crmscript
+Integer GetBlobSize()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The length, in bytes, of the binary data AS STORED after any encryption and/or zipping. Important to get right, since some databases will not tell us just based on the blob itself!
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Integer blobSize = thing.GetBlobSize();
+```
+
+## GetConceptualType()
+
+```crmscript
+String GetConceptualType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The type, for instance PHOTO, PERSONPHOTO, or whatever, that is descriptive of what kind of image or data this is.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String conceptualType = thing.GetConceptualType();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that first created the document. The property is read-only.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A description that is entered by the user, and visible to the user.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetExtraInfo()
+
+```crmscript
+String GetExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Extra information, spare field, can be used for anything that makes sense.
+
+<Note>
+Should not refer to any particular context, that is something for the BinaryObjectLInk
+</Note>
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String extraInfo = thing.GetExtraInfo();
+```
+
+## GetIsEncrypted()
+
+```crmscript
+Bool GetIsEncrypted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Has the data been encrypted?
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Bool isEncrypted = thing.GetIsEncrypted();
+```
+
+## GetIsZipped()
+
+```crmscript
+Bool GetIsZipped()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Has the data been zipped?
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Bool isZipped = thing.GetIsZipped();
+```
+
+## GetMimeType()
+
+```crmscript
+String GetMimeType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Mime type, describing the technical type (image/jpeg) of the data.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String mimeType = thing.GetMimeType();
+```
+
+## GetOriginalSize()
+
+```crmscript
+Integer GetOriginalSize()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Original size of the binary data, before encryption and/or zipping.
+
+<Note>
+This is what the ultimate client will get
+</Note>
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Integer originalSize = thing.GetOriginalSize();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the appointment.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## SetBlobId(Integer)
+
+```crmscript
+Void SetBlobId(Integer blobId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Integer blobId;
+thing.SetBlobId(blobId);
+```
+
+## SetBlobSize(Integer)
+
+```crmscript
+Void SetBlobSize(Integer blobSize)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Integer blobSize;
+thing.SetBlobSize(blobSize);
+```
+
+## SetConceptualType(String)
+
+```crmscript
+Void SetConceptualType(String conceptualType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String conceptualType;
+thing.SetConceptualType(conceptualType);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetExtraInfo(String)
+
+```crmscript
+Void SetExtraInfo(String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String extraInfo;
+thing.SetExtraInfo(extraInfo);
+```
+
+## SetIsEncrypted(Bool)
+
+```crmscript
+Void SetIsEncrypted(Bool isEncrypted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Bool isEncrypted;
+thing.SetIsEncrypted(isEncrypted);
+```
+
+## SetIsZipped(Bool)
+
+```crmscript
+Void SetIsZipped(Bool isZipped)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Bool isZipped;
+thing.SetIsZipped(isZipped);
+```
+
+## SetMimeType(String)
+
+```crmscript
+Void SetMimeType(String mimeType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+String mimeType;
+thing.SetMimeType(mimeType);
+```
+
+## SetOriginalSize(Integer)
+
+```crmscript
+Void SetOriginalSize(Integer originalSize)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+Integer originalSize;
+thing.SetOriginalSize(originalSize);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSBlobEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```

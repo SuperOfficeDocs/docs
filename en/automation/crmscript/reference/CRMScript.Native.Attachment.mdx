@@ -1,0 +1,161 @@
+﻿---
+uid: crmscript.native.attachment
+title: Attachment
+description: "Handles Service attachments."
+keywords: CRMScript, Attachment, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Attachment
+
+Handles Service attachments.
+
+## Constructors
+
+### Attachment()
+
+```crmscript
+Attachment
+```
+
+Initializes a new instance of the Attachment class.
+
+## Methods
+
+## dump()
+
+Dumps the attachment file to output.
+
+```crmscript
+Bool dump()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise false.
+
+<Note>
+Use dump(Bool) to signal the browser to download the file instead of display it.
+</Note>
+
+## dump(Bool)
+
+Dumps the attachment file to output. The optional parameter if true tells the browser to download the file, and not attempt to display it.
+
+```crmscript
+Bool dump(Bool download)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise false.
+
+## getBase64()
+
+Returns the attachment as base64 encoded string.
+
+```crmscript
+String getBase64()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The attachment as base64 encoded string.
+
+<Note>
+This can be used to load a binary attachment into a string, as base64 coded data is valid ASCII.
+</Note>
+
+## getDownloadUrl(Bool,Bool)
+
+Constructs a download URL for the attachment.
+
+```crmscript
+String getDownloadUrl(Bool external, Bool saveToDisk)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The download URL for the attachment.
+
+<Note>
+There are 2 kinds of URLs: external = used by customers; internal = used by Service users.
+</Note>
+
+## getRaw()
+
+Gets the whole attachment as a String without any special encoding.
+
+```crmscript
+String getRaw()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The raw attachment without any special encoding.
+
+## getValue(String)
+
+Gets a value from the attachment class.
+
+```crmscript
+String getValue(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the property given in name.
+
+<Note>
+The current implementation supports the following values as the name parameter.
+
+&lt;ul&gt;&lt;li&gt;id: the attachment ID&lt;/li&gt;&lt;li&gt;contentType: content descriptor&lt;/li&gt;&lt;li&gt;name: the filename&lt;/li&gt;&lt;li&gt;size: size in bytes&lt;/li&gt;&lt;li&gt;key: authentication key&lt;/li&gt;&lt;li&gt;charset&lt;/li&gt;&lt;li&gt;dbiAgentId&lt;/li&gt;&lt;li&gt;dbiKey&lt;/li&gt;&lt;li&gt;dbiLastModified&lt;/li&gt;&lt;li&gt;dbiLastSyncronized&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## load(Integer)
+
+Loads a Service attachment from disk.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the load was successful; otherwise false.
+
+## remove()
+
+Deletes the attachment record from the database and the attachment file from disk.
+
+```crmscript
+remove()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## save()
+
+Saves the attachment to disk.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The attachment ID.
+
+## saveBase64(String)
+
+Creates a filename and saves a base64-coded attachment to disk.
+
+```crmscript
+Integer saveBase64(String attachment)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The actual number of bytes written to disk.
+
+## setValue(String,String)
+
+Sets a value on the attachment object.
+
+```crmscript
+Void SetValue(String name, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The current implementation supports the following values as the name parameter.
+
+&lt;ul&gt;&lt;li&gt;id: the attachment ID&lt;/li&gt;&lt;li&gt;contentType: content descriptor&lt;/li&gt;&lt;li&gt;name: the filename&lt;/li&gt;&lt;li&gt;size: size in bytes&lt;/li&gt;&lt;li&gt;key: authentication key&lt;/li&gt;&lt;li&gt;charset&lt;/li&gt;&lt;li&gt;dbiAgentId&lt;/li&gt;&lt;li&gt;dbiKey&lt;/li&gt;&lt;li&gt;dbiLastModified&lt;/li&gt;&lt;li&gt;dbiLastSyncronized&lt;/li&gt;&lt;/ul&gt;
+</Note>

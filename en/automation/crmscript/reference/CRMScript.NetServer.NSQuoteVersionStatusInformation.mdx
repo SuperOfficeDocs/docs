@@ -1,0 +1,159 @@
+﻿---
+uid: crmscript.netserver.nsquoteversionstatusinformation
+title: NSQuoteVersionStatusInformation
+description: "Information about possible button actions for the quote version dialog."
+keywords: CRMScript, NSQuoteVersionStatusInformation, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteVersionStatusInformation
+
+Information about possible button actions for the quote version dialog.
+
+## Constructors
+
+### NSQuoteVersionStatusInformation()
+
+```crmscript
+NSQuoteVersionStatusInformation
+```
+
+Initializes a new instance of the NSQuoteVersionStatusInformation class.
+
+## Methods
+
+## GetDisplayMessage()
+
+Checks for errors on quote lines, alternatives and the version itself.
+
+```crmscript
+String GetDisplayMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Generated error message for the Quote Version.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+String displayMessage = thing.GetDisplayMessage();
+```
+
+## GetDisplayTooltip()
+
+Checks for errors on quote lines, alternatives and the version itself.
+
+```crmscript
+String GetDisplayTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Generated full tooltip for the Quote Version.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+String displayTooltip = thing.GetDisplayTooltip();
+```
+
+## GetIconHint()
+
+```crmscript
+String GetIconHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Icon hint for the associated message.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+String iconHint = thing.GetIconHint();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Status information for the quote version. See &lt;xref href=\"CRMScript.NetServer.QuoteStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+Integer status = thing.GetStatus();
+```
+
+## SetDisplayMessage(String)
+
+Checks for errors on quote lines, alternatives and the version itself.
+
+```crmscript
+Void SetDisplayMessage(String displayMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+String displayMessage;
+thing.SetDisplayMessage(displayMessage);
+```
+
+## SetDisplayTooltip(String)
+
+Checks for errors on quote lines, alternatives and the version itself.
+
+```crmscript
+Void SetDisplayTooltip(String displayTooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+String displayTooltip;
+thing.SetDisplayTooltip(displayTooltip);
+```
+
+## SetIconHint(String)
+
+```crmscript
+Void SetIconHint(String iconHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+String iconHint;
+thing.SetIconHint(iconHint);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionStatusInformation thing;
+Integer status;
+thing.SetStatus(status);
+```

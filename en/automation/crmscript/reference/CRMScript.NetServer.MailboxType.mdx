@@ -1,0 +1,36 @@
+﻿---
+uid: crmscript.netserver.mailboxtype
+title: Enum MailboxType
+description: "Service mailbox type"
+keywords: CRMScript, MailboxType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum MailboxType
+
+Service mailbox type
+
+## Syntax
+
+```crmscript
+MailboxType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown |
+| Pop | Pop |
+| Imap | Imap - without OAuth support. Use ImapOAuth instead if OAuth is needed |
+| Mapi | Mapi - Obsolete |
+| Facebook | TypeFacebook |
+| Pops | Pop SSL |
+| Imaps | Imap SSL |
+| SmsPlugin | Incoming SMS, using a plugin |
+| Mailgun | Used by mailboxes set up as a Mailgun route |
+| ImapOAuth | This is a Imap mailbox using OAuth authentication |

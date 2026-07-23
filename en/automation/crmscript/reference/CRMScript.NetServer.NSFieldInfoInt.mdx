@@ -1,0 +1,58 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfoint
+title: NSFieldInfoInt
+description: "Integer custom database field."
+keywords: CRMScript, NSFieldInfoInt, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoInt
+
+Integer custom database field.
+
+## Constructors
+
+### NSFieldInfoInt()
+
+```crmscript
+NSFieldInfoInt
+```
+
+Initializes a new instance of the NSFieldInfoInt class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Integer GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default integer value.
+
+**Example:**
+
+```crmscript
+NSFieldInfoInt thing;
+Integer defaultValue = thing.GetDefaultValue();
+```
+
+## SetDefaultValue(Integer)
+
+```crmscript
+Void SetDefaultValue(Integer defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoInt thing;
+Integer defaultValue;
+thing.SetDefaultValue(defaultValue);
+```

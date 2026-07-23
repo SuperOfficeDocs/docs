@@ -1,0 +1,172 @@
+﻿---
+uid: crmscript.datastructure.struct
+title: Struct
+description: "A struct defines the kinds of data and the functionality their objects will have. This data structure enables you to create your own custom types by grouping together variables of other types and methods."
+keywords: CRMScript, Struct, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Struct
+
+A struct defines the kinds of data and the functionality their objects will have. This data structure enables you to create your own custom types by grouping together variables of other types and methods.
+
+## Methods
+
+## compare
+
+If a struct has a function with this exact signature, then this method will be used to compare two instances of the struct when sorting an array of struct instances.
+
+```crmscript
+Bool {type}.compare({type} s)
+```
+
+**Example:**
+
+```crmscript
+struct Person {
+  String firstname;
+  String lastname;
+  Bool compare(Person p) {
+    return this.toString() > p.toString();
+  }
+};
+Person Person(String firstname, String lastname) {
+  Person p;
+  p.firstname = firstname;
+  p.lastname = lastname;
+  return p;
+}
+Person[] persons;
+persons.pushBack(Person(\"Jack\", \"Black\"));
+persons.pushBack(Person(\"Mark\", \"Wahlberg\"));
+persons.pushBack(Person(\"Anthony\", \"Hopkins\"));
+printLine(\"Before sort: \" + persons.buildString(\"|\"));
+persons.sort();
+printLine(\"After sort: \" + persons.buildString(\"|\"));
+```
+
+## fromJsonString
+
+Pass a boolean value to copy into a new object.
+
+```crmscript
+Void {type}.fromJsonString(String json)
+```
+
+**Example:**
+
+```crmscript
+struct Person {
+  String firstname;
+  String lastname;
+  Date dob;
+};
+Person p;
+p.fromJsonString('{\"firstname\": \"Jon\", \"lastname\": \"Doe\", \"dob\": \"1984-10-26\"}');
+printLine(p.toJsonString());
+```
+
+## fromXMLNode
+
+Populates a struct from an XMLNode.
+
+```crmscript
+Void {type}.fromXMLNode(XMLNode node)
+```
+
+**Example:**
+
+```crmscript
+struct Hello {
+  String who;
+  Void print() {
+    printLine(\"Hello \" + this.who);
+  }
+};
+XMLNode xml = parseXML(\"<root><who>World</who></root>\");
+Hello h;
+h.fromXMLNode(xml);
+h.print();
+//prints Hello World
+```
+
+## toJson
+
+Populates a JSONBuilder from a struct.
+
+```crmscript
+Void {type}.toJson(JSONBuilder builder)
+```
+
+**Example:**
+
+```crmscript
+struct Hello {
+  String who;
+  Void setWho(String who) {
+    this.who = who;
+  }
+  Void print() {
+    printLine(\"Hello \" + this.who);
+  }
+};
+JSONBuilder jsBuilder;
+Hello h;
+h.setWho(\"World\");
+h.toJson(jsBuilder);
+print(jsBuilder.getString());
+//prints {\"who\": \"World\"}
+```
+
+## toJsonString
+
+This function will return a JSON formatted string of the struct's contents. Same functionality as toJson(JSONBuilder), but it will return a string directly without having to instantiate a JSONbuilder.
+
+```crmscript
+String {type}.toJsonString()
+```
+
+**Example:**
+
+```crmscript
+struct Person {
+  String firstname;
+  String lastname;
+    Date dob;
+};
+Person p;
+p.firstname = \"Jack\";
+p.lastname = \"Black\";
+p.dob = Date(\"1975-11-28\");
+printLine(p.toJsonString());
+//prints {\"firstname\": \"Jack\",\"lastname\": \"Black\",\"dob\": \"1975-11-28\"}
+```
+
+## toString
+
+This function will return a JSON formatted string of the struct's contents. Same functionality as toJson(JSONBuilder), but it will return a string directly without having to instantiate a JSONbuilder.
+
+```crmscript
+String {type}.toString()
+```
+
+**Example:**
+
+```crmscript
+struct Person {
+  String firstname;
+  String lastname;
+  String toString() {
+    return this.firstname + \" \" + this.lastname;
+  }
+};
+Person p;
+p.firstname = \"Jack\";
+p.lastname = \"Black\";
+printLine(p.toString());
+//prints Jack Black
+```

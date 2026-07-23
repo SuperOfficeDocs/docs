@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nsquotepublishdocuments
+title: NSQuotePublishDocuments
+description: "Prepare the documents required to publish a quote - Email, main document as pdf, quoted products as pdf, attachments."
+keywords: CRMScript, NSQuotePublishDocuments, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuotePublishDocuments
+
+Prepare the documents required to publish a quote - Email, main document as pdf, quoted products as pdf, attachments.
+
+## Constructors
+
+### NSQuotePublishDocuments()
+
+```crmscript
+NSQuotePublishDocuments
+```
+
+Initializes a new instance of the NSQuotePublishDocuments class.
+
+## Methods
+
+## GetErrorMessage()
+
+```crmscript
+String GetErrorMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If something went wrong, show this message and do not continue.
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String errorMessage = thing.GetErrorMessage();
+```
+
+## GetMailBody()
+
+```crmscript
+String GetMailBody()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string that is the content of the mail body; this is the result of merging the mail body template with the current template variable values.
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String mailBody = thing.GetMailBody();
+```
+
+## GetMailSubject()
+
+```crmscript
+String GetMailSubject()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string that is the mail subject; done by merging the text resource SR_QUOTE_PUBLISH_MAILHEADING with the current template variable values.
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String mailSubject = thing.GetMailSubject();
+```
+
+## GetQuoteAttachmentIds()
+
+```crmscript
+Integer[] GetQuoteAttachmentIds()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Array of IDs of any attachments (standard + custom for this version).
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+Integer[] quoteAttachmentIds = thing.GetQuoteAttachmentIds();
+```
+
+## GetQuoteDocumentId()
+
+```crmscript
+Integer GetQuoteDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Quote document, as PDF; may be zero if there is no document specified for the version.
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+Integer quoteDocumentId = thing.GetQuoteDocumentId();
+```
+
+## GetQuotedProductsId()
+
+```crmscript
+Integer GetQuotedProductsId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Quoted products (quote lines or confirmation lines) document, as PDf.
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+Integer quotedProductsId = thing.GetQuotedProductsId();
+```
+
+## GetToEmail()
+
+```crmscript
+String GetToEmail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email address of the recipient, taken from the sale's person.
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String toEmail = thing.GetToEmail();
+```
+
+## GetToFullName()
+
+```crmscript
+String GetToFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The full name of the recipient, taken from the sale's person.
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String toFullName = thing.GetToFullName();
+```
+
+## SetErrorMessage(String)
+
+```crmscript
+Void SetErrorMessage(String errorMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String errorMessage;
+thing.SetErrorMessage(errorMessage);
+```
+
+## SetMailBody(String)
+
+```crmscript
+Void SetMailBody(String mailBody)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String mailBody;
+thing.SetMailBody(mailBody);
+```
+
+## SetMailSubject(String)
+
+```crmscript
+Void SetMailSubject(String mailSubject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String mailSubject;
+thing.SetMailSubject(mailSubject);
+```
+
+## SetQuoteAttachmentIds(Integer[])
+
+```crmscript
+Void SetQuoteAttachmentIds(Integer[] quoteAttachmentIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+Integer[] quoteAttachmentIds;
+thing.SetQuoteAttachmentIds(quoteAttachmentIds);
+```
+
+## SetQuoteDocumentId(Integer)
+
+```crmscript
+Void SetQuoteDocumentId(Integer quoteDocumentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+Integer quoteDocumentId;
+thing.SetQuoteDocumentId(quoteDocumentId);
+```
+
+## SetQuotedProductsId(Integer)
+
+```crmscript
+Void SetQuotedProductsId(Integer quotedProductsId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+Integer quotedProductsId;
+thing.SetQuotedProductsId(quotedProductsId);
+```
+
+## SetToEmail(String)
+
+```crmscript
+Void SetToEmail(String toEmail)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String toEmail;
+thing.SetToEmail(toEmail);
+```
+
+## SetToFullName(String)
+
+```crmscript
+Void SetToFullName(String toFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuotePublishDocuments thing;
+String toFullName;
+thing.SetToFullName(toFullName);
+```

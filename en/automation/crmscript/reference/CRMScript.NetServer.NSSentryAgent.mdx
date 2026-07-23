@@ -1,0 +1,156 @@
+﻿---
+uid: crmscript.netserver.nssentryagent
+title: NSSentryAgent
+description: "Data and function right queries."
+keywords: CRMScript, NSSentryAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSentryAgent
+
+Data and function right queries.
+
+## Constructors
+
+### NSSentryAgent()
+
+```crmscript
+NSSentryAgent
+```
+
+Data and function right queries.
+
+## Methods
+
+## CanCreateAppointmentInAllDiaries()
+
+Checks if the current associate can create appointments in diaries belonging all other associates. It checks only against associates that are diary owners.
+
+```crmscript
+Bool CanCreateAppointmentInAllDiaries()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSSentryAgent agent;
+Bool res = agent.CanCreateAppointmentInAllDiaries();
+```
+
+## CanCreateAppointmentInAssociateDiaries(Integer[])
+
+Checks if the current associate can create appointments in diaries belonging to the associates listed in associateIds. Checks only against associates that are diary owners.
+
+```crmscript
+Bool CanCreateAppointmentInAssociateDiaries(Integer[] associateIds)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
+
+**Example:**
+
+```crmscript
+NSSentryAgent agent;
+Integer[] associateIds;
+Bool res = agent.CanCreateAppointmentInAssociateDiaries(associateIds);
+```
+
+## CanCreateAppointmentInEachAssociatesDiary(Integer[])
+
+Checks if the current associate can create appointments in diaries belonging to the associates listed in associateIds. Checks only against associates who are diary owners.
+
+```crmscript
+Bool[] CanCreateAppointmentInEachAssociatesDiary(Integer[] associateIds)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)[] -
+
+## GetFunctionRights()
+
+Gets a string array of all functions rights for the role of the current associate.
+
+```crmscript
+String[] GetFunctionRights()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSSentryAgent agent;
+String[] res = agent.GetFunctionRights();
+```
+
+## GetNewTableRight(String)
+
+Returns an NSTableRight for a new row based on tableName parameter.
+
+```crmscript
+NSTableRight GetNewTableRight(String tableName)
+```
+
+**Returns:** [CRMScript.NetServer.NSTableRight](CRMScript.NetServer.NSTableRight)
+
+**Example:**
+
+```crmscript
+NSSentryAgent agent;
+String tableName;
+NSTableRight res = agent.GetNewTableRight(tableName);
+```
+
+## GetTableRightByContactOwnership(String,Integer)
+
+Return the NSTableRight from the relationship between the current user and the given user and group.
+
+```crmscript
+NSTableRight GetTableRightByContactOwnership(String tableName, Integer contactId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTableRight](CRMScript.NetServer.NSTableRight)
+
+**Example:**
+
+```crmscript
+NSSentryAgent agent;
+String tableName;
+Integer contactId;
+NSTableRight res = agent.GetTableRightByContactOwnership(tableName, contactId);
+```
+
+## GetTableRightByOwnership(String,Integer,Integer)
+
+Return the NSTableRight from the relationship between the current user and the given user and group.
+
+```crmscript
+NSTableRight GetTableRightByOwnership(String tableName, Integer contactGroupId, Integer contactAssociateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTableRight](CRMScript.NetServer.NSTableRight)
+
+**Example:**
+
+```crmscript
+NSSentryAgent agent;
+String tableName;
+Integer contactGroupId;
+Integer contactAssociateId;
+NSTableRight res = agent.GetTableRightByOwnership(tableName, contactGroupId, contactAssociateId);
+```
+
+## HasFunctionRight(String)
+
+Gets a boolean value indicating if the current user has the functional right.
+
+```crmscript
+Bool HasFunctionRight(String functionRight)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)

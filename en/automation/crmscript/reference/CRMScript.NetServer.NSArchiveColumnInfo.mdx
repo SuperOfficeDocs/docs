@@ -1,0 +1,453 @@
+﻿---
+uid: crmscript.netserver.nsarchivecolumninfo
+title: NSArchiveColumnInfo
+description: "Information about the definition and properties of an archive display column. It is used by the archive MDO providers to construct column lists for the configuration dialogs, and by the archive control to know what type (and other properties) each column has. The class is serializable and used on both the application and web server sides."
+keywords: CRMScript, NSArchiveColumnInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveColumnInfo
+
+Information about the definition and properties of an archive display column. It is used by the archive MDO providers to construct column lists for the configuration dialogs, and by the archive control to know what type (and other properties) each column has. The class is serializable and used on both the application and web server sides.
+
+## Constructors
+
+### NSArchiveColumnInfo()
+
+```crmscript
+NSArchiveColumnInfo
+```
+
+Initializes a new instance of the NSArchiveColumnInfo class.
+
+## Methods
+
+## GetCanOrderBy()
+
+```crmscript
+Bool GetCanOrderBy()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can this column be used for sorting?
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+Bool canOrderBy = thing.GetCanOrderBy();
+```
+
+## GetCanRestrictBy()
+
+```crmscript
+Bool GetCanRestrictBy()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can this column be used as a restriction?
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+Bool canRestrictBy = thing.GetCanRestrictBy();
+```
+
+## GetDisplayName()
+
+```crmscript
+String GetDisplayName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The column name to show, can be a resource identifier string.
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String displayName = thing.GetDisplayName();
+```
+
+## GetDisplayTooltip()
+
+```crmscript
+String GetDisplayTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The column tooltip, used in the column list and in the column headings.
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String displayTooltip = thing.GetDisplayTooltip();
+```
+
+## GetDisplayType()
+
+```crmscript
+String GetDisplayType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Type of column, so that the archive knows how to display it (actual display values are always strings, invariant-culture formatted). This name can contain resource tags.
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String displayType = thing.GetDisplayType();
+```
+
+## GetHeadingIconHint()
+
+```crmscript
+String GetHeadingIconHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Icon hint for the archive heading only. If this is a nonempty string, the archive header should use this icon and ignore the DisplayName. Otherwise, the DisplayName should be used as the heading.
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String headingIconHint = thing.GetHeadingIconHint();
+```
+
+## GetIconHint()
+
+```crmscript
+String GetIconHint()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Icon hint corresponding to the display name.
+
+<Note>
+The icon hint is used in the configuration dialog and other places where we talk about the columns of the archive. The actual heading of the archive may also contain icons in lieu of textual names, the icon hint for that is specified in HeadingIconHint and is a different one.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String iconHint = thing.GetIconHint();
+```
+
+## GetIsVisible()
+
+```crmscript
+Bool GetIsVisible()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this column visible to the user in configuration dialogs and similar?
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+Bool isVisible = thing.GetIsVisible();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Unique identity of this column (in this particular context).
+
+<Note>
+The name to be used when requesting the column from a provider, setting restrictions or order by criteria
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String name = thing.GetName();
+```
+
+## GetRestrictionListName()
+
+```crmscript
+String GetRestrictionListName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If the restriction data type is list, this property contains the name of the SoList so that choices can be shown.
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String restrictionListName = thing.GetRestrictionListName();
+```
+
+## GetRestrictionType()
+
+```crmscript
+String GetRestrictionType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The data type of the restriction; use this to retrieve the legal operators for the restriction.
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String restrictionType = thing.GetRestrictionType();
+```
+
+## GetSourceCode()
+
+```crmscript
+String GetSourceCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## GetWidth()
+
+```crmscript
+String GetWidth()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The width specification, if the column info has been extended with GUI-based information. It is either "n%" or "nc", where n is an integer.
+
+<Note>
+Percent-formatted fields grow and shrink; number-of-characters formatted fields have constant width when the whole archive width changes.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String width = thing.GetWidth();
+```
+
+## SetCanOrderBy(Bool)
+
+Sets the CanOrderBy property.
+
+```crmscript
+Void SetCanOrderBy(Bool canOrderBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+Bool canOrderBy;
+thing.SetCanOrderBy(canOrderBy);
+```
+
+## SetCanRestrictBy(Bool)
+
+Sets whether the column can be used as an restriction.
+
+```crmscript
+Void SetCanRestrictBy(Bool canRestrictBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+Bool canRestrictBy;
+thing.SetCanRestrictBy(canRestrictBy);
+```
+
+## SetDisplayName(String)
+
+```crmscript
+Void SetDisplayName(String displayName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String displayName;
+thing.SetDisplayName(displayName);
+```
+
+## SetDisplayTooltip(String)
+
+```crmscript
+Void SetDisplayTooltip(String displayTooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String displayTooltip;
+thing.SetDisplayTooltip(displayTooltip);
+```
+
+## SetDisplayType(String)
+
+```crmscript
+Void SetDisplayType(String displayType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String displayType;
+thing.SetDisplayType(displayType);
+```
+
+## SetHeadingIconHint(String)
+
+```crmscript
+Void SetHeadingIconHint(String headingIconHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If this is a nonempty string, the archive header should use this icon and ignore the DisplayName. Otherwise, the DisplayName should be used as the heading.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String headingIconHint;
+thing.SetHeadingIconHint(headingIconHint);
+```
+
+## SetIconHint(String)
+
+```crmscript
+Void SetIconHint(String iconHint)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This icon hint is used in the configuration dialog and other places where we talk about the columns of the archive. The actual heading of the archive may also contain icons in lieu of textual names, the icon hint for that is specified in HeadingIconHint and is a different one.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String iconHint;
+thing.SetIconHint(iconHint);
+```
+
+## SetIsVisible(Bool)
+
+Sets the visibility of the column.
+
+```crmscript
+Void SetIsVisible(Bool isVisible)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+Bool isVisible;
+thing.SetIsVisible(isVisible);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The name to be used when requesting the column from a provider, setting restrictions or order by criteria
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRestrictionListName(String)
+
+```crmscript
+Void SetRestrictionListName(String restrictionListName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String restrictionListName;
+thing.SetRestrictionListName(restrictionListName);
+```
+
+## SetRestrictionType(String)
+
+```crmscript
+Void SetRestrictionType(String restrictionType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Use this to retrieve the legal operators for the restriction.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String restrictionType;
+thing.SetRestrictionType(restrictionType);
+```
+
+## SetSourceCode(String)
+
+```crmscript
+Void SetSourceCode(String code)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetWidth(String)
+
+```crmscript
+Void SetWidth(String width)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Percent-formatted fields grow and shrink; number-of-characters formatted fields have constant width when the whole archive width changes.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveColumnInfo thing;
+String width;
+thing.SetWidth(width);
+```

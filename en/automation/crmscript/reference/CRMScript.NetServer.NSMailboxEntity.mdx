@@ -1,0 +1,242 @@
+﻿---
+uid: crmscript.netserver.nsmailboxentity
+title: NSMailboxEntity
+description: ""
+keywords: CRMScript, NSMailboxEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMailboxEntity
+
+## Constructors
+
+### NSMailboxEntity()
+
+```crmscript
+NSMailboxEntity
+```
+
+## Methods
+
+## GetAddress()
+
+```crmscript
+String GetAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The address associated with this mailbox (used as FROM address when sending emails).
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String address = thing.GetAddress();
+```
+
+## GetMailInFilterId()
+
+```crmscript
+Integer GetMailInFilterId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+Integer mailInFilterId = thing.GetMailInFilterId();
+```
+
+## GetPassword()
+
+```crmscript
+String GetPassword()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The password used to log into the mail account. This is hidden when reading.
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String password = thing.GetPassword();
+```
+
+## GetPort()
+
+```crmscript
+Integer GetPort()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The port used to connect to the server.
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+Integer port = thing.GetPort();
+```
+
+## GetServer()
+
+```crmscript
+String GetServer()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email server to connect to.
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String server = thing.GetServer();
+```
+
+## GetServerType()
+
+```crmscript
+Integer GetServerType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The protocol to use (POP/IMAP). See &lt;xref href=\"CRMScript.NetServer.MailboxType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+Integer serverType = thing.GetServerType();
+```
+
+## GetUsername()
+
+\
+
+```crmscript
+String GetUsername()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - nThe username used to log onto the mail account.
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String username = thing.GetUsername();
+```
+
+## SetAddress(String)
+
+```crmscript
+Void SetAddress(String address)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String address;
+thing.SetAddress(address);
+```
+
+## SetMailInFilterId(Integer)
+
+```crmscript
+Void SetMailInFilterId(Integer mailInFilterId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+Integer mailInFilterId;
+thing.SetMailInFilterId(mailInFilterId);
+```
+
+## SetPassword(String)
+
+```crmscript
+Void SetPassword(String password)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String password;
+thing.SetPassword(password);
+```
+
+## SetPort(Integer)
+
+```crmscript
+Void SetPort(Integer port)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+Integer port;
+thing.SetPort(port);
+```
+
+## SetServer(String)
+
+```crmscript
+Void SetServer(String server)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String server;
+thing.SetServer(server);
+```
+
+## SetServerType(Integer)
+
+```crmscript
+Void SetServerType(Integer serverType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+Integer serverType;
+thing.SetServerType(serverType);
+```
+
+## SetUsername(String)
+
+```crmscript
+Void SetUsername(String username)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailboxEntity thing;
+String username;
+thing.SetUsername(username);
+```

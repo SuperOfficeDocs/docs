@@ -1,0 +1,269 @@
+﻿---
+uid: crmscript.native.message
+title: Message
+description: "Represents a Service ticket message."
+keywords: CRMScript, Message, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Message
+
+Represents a Service ticket message.
+
+## Constructors
+
+### Message()
+
+```crmscript
+Message
+```
+
+Initializes a new instance of the Message class.
+
+## Methods
+
+## addHeader(String,String)
+
+Adds a header to the message. The headers will be shown at the view request page, listed at the message.
+
+```crmscript
+Void addHeader(String type, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This method will only add a header if the message has been loaded or saved first. You do not need to call save() after this method.
+</Note>
+
+## convertInlineImages()
+
+Convert any inline images in the message from (cid: to normal http).
+
+```crmscript
+Void convertInlineImages()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getAttachments()
+
+Returns an array of all the attachment IDs on the message.
+
+```crmscript
+Integer[] getAttachments()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Array of attachment IDs.
+
+## getValue(String)
+
+Returns the value a column.
+
+```crmscript
+String getValue(String colName)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string value of the column.
+
+<Note>
+Possible columns:&lt;ul&gt;&lt;li&gt;ticketId: Integer, The ticket this message is a child of.&lt;/li&gt;&lt;li&gt;customerId: If the message was created by email or from the customer center, this field will point to that customer. -1 if the message was created by an user&lt;/li&gt;&lt;li&gt;createdAt: Datetime when the message was created.&lt;/li&gt;&lt;li&gt;createdBy: Integer, The ID of the user who posted the message. The value 1 (system user) for externally posted messages.&lt;/li&gt;&lt;li&gt;type: String, The type of the message (plaintext/html).&lt;/li&gt;&lt;li&gt;searchTitle: A copy of the title of the ticket, for search optimisation and simpler reporting.&lt;/li&gt;&lt;li&gt;author: String, A string representing the author of the message. Could be a user's name, or a persons email address.&lt;/li&gt;&lt;li&gt;slevel: String, The securitylevel of the message (1 is internal, 2 is external).&lt;/li&gt;&lt;li&gt;messageId: String, The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.&lt;/li&gt;&lt;li&gt;timeSpent: Integer, The time spent (minutes) for this message.&lt;/li&gt;&lt;li&gt;emailHeader: The email header is saved in this field as raw text	&lt;/li&gt;&lt;li&gt;debugInfo: The debug info for the message.&lt;/li&gt;&lt;li&gt;important: True if this message is important.&lt;/li&gt;&lt;li&gt;mailSorter: The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id&apos;s change every time one changes the mail sorter.&lt;/li&gt;&lt;li&gt;inlineImages: True if message contains inline images.&lt;/li&gt;&lt;li&gt;htmlBodyInlineConverted: True if the html_body has converted inline image links.&lt;/li&gt;&lt;li&gt;inlineConverted: True if the html_body has converted inline image links.&lt;/li&gt;&lt;li&gt;body: String, The textbody for the message.&lt;/li&gt;&lt;li&gt;bodyHtml: String, The HTML body for the message (if any).&lt;/li&gt;&lt;li&gt;badge: String, defines the initial source of message. See &lt;xref href=\"CRMScript.NetServer.BadgeType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.&lt;/li&gt;&lt;li&gt;x_... : Extra fields&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## load(Integer)
+
+Loads the message with the given ID.
+
+```crmscript
+load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successful; otherwise, false.
+
+## save()
+
+Saves a message and returns the database ID.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The database Id.
+
+<Note>
+You can optionally add logging.
+</Note>
+
+## save(String)
+
+Saves a message and returns the database ID.
+
+```crmscript
+Integer save(String log)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The database Id.
+
+<Note>
+Use save() if you don't want to add logging.
+</Note>
+
+## save(String.Bool)
+
+Saves a message and returns the database ID.
+
+```crmscript
+Integer save(String log, Bool noNewInfo)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The database Id.
+
+<Note>
+Use save() if you don't want to add logging.
+</Note>
+
+## saveInvolved(String)
+
+Saves the email address of a single recipient of a message.
+
+```crmscript
+Void saveInvolved(String emailAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Use save(Vector) to save a collection of addresses.
+</Note>
+
+## saveInvolved(Vector)
+
+Saves the email address of a single recipient of a message
+
+```crmscript
+Void saveInvolved(Vector emailAddresses)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Use save(String) to save a single email address.
+</Note>
+
+## send(Vector,Vector,Vector)
+
+Sends an email version of the message to the main contacts on the parent ticket.
+
+```crmscript
+Bool send(Vector to, Vector cc, Vector bcc)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise, false.
+
+<Note>
+Use one of the other variants if you want to merge with reply template or set subject and a heading for the body part.
+</Note>
+
+## send(Vector,Vector,Vector,Integer)
+
+Sends an email version of the message to the main contacts on the parent ticket. Merges with reply template in the settings of the submitted category ID.
+
+```crmscript
+Bool send(Vector to, Vector cc, Vector bcc, Integer categoryId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise, false.
+
+## send(Vector,Vector,Vector,String)
+
+Sends an email version of the message to the main contacts on the parent ticket using the given subject
+
+```crmscript
+Bool send(Vector to, Vector cc, Vector bcc, String subject)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise, false.
+
+<Note>
+You can optionally provide a heading for the body part.
+</Note>
+
+## send(Vector,Vector,Vector,String,String)
+
+Sends an email version of the message to the main contacts on the parent ticket using the given subject, and a given heading for the body part.
+
+```crmscript
+Bool send(Vector to, Vector cc, Vector bcc, String subject, String bodyHeading)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise, false.
+
+<Note>
+The body heading may be empty for no heading, or null for default heading (same as not using this parameter).
+</Note>
+
+## sendFacebook()
+
+Posts message to Facebook
+
+```crmscript
+Void sendFacebook()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## sendSms(Vector)
+
+Sends an sms-version of the message to the numbers in the vector.
+
+```crmscript
+Bool sendSms(Vector to)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successful; otherwise, false.
+
+## setAttachments(Vector)
+
+Connects the attachments to the message.
+
+```crmscript
+Void setAttachments(Vector ids)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You must do a message.save before message.setAttachments.
+</Note>
+
+## setValue(String,String)
+
+Sets the value of column colName to the given value
+
+```crmscript
+Void setValue(String colName, String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Possible columns:&lt;ul&gt;&lt;li&gt;ticketId: Integer, The ticket this message is a child of.&lt;/li&gt;&lt;li&gt;customerId: If the message was created by email or from the customer center, this field will point to that customer. -1 if the message was created by an user&lt;/li&gt;&lt;li&gt;createdAt: Datetime when the message was created.&lt;/li&gt;&lt;li&gt;createdBy: Integer, The ID of the user who posted the message. The value 1 (system user) for externally posted messages.&lt;/li&gt;&lt;li&gt;type: String, The type of the message (plaintext/html).&lt;/li&gt;&lt;li&gt;author: String, A string representing the author of the message. Could be a user's name, or a persons email address.&lt;/li&gt;&lt;li&gt;slevel: String, The securitylevel of the message (1 is internal, 2 is external).&lt;/li&gt;&lt;li&gt;messageId: String, The X-Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.&lt;/li&gt;&lt;li&gt;timeSpent: Integer, The time spent (minutes) for this message.&lt;/li&gt;&lt;li&gt;emailHeader: The email header is saved in this field as raw text	&lt;/li&gt;&lt;li&gt;debugInfo: The debug info for the message.&lt;/li&gt;&lt;li&gt;important: True if this message is important.&lt;/li&gt;&lt;li&gt;mailSorter: The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id&apos;s change every time one changes the mail sorter.&lt;/li&gt;&lt;li&gt;inlineImages: True if message contains inline images.&lt;/li&gt;&lt;li&gt;body: String, The textbody for the message.&lt;/li&gt;&lt;li&gt;bodyHtml: String, The HTML body for the message (if any).&lt;/li&gt;&lt;li&gt;badge: String, defines the initial source of message. See &lt;xref href=\"CRMScript.NetServer.BadgeType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.&lt;/li&gt;&lt;li&gt;x_... : Extra fields&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## toParser(Parser)
+
+This function loads many fields of the message to the input parser.
+
+```crmscript
+Void toParser(Parser parser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+The fields will be loaded as message.value&lt;ul&gt;&lt;li&gt;message.id, The ID of the message&lt;/li&gt;&lt;li&gt;message.slevelInteger, The security level of the message. See &lt;xref href=\"CRMScript.NetServer.TicketSecurityLevel\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.&lt;/li&gt;&lt;li&gt;message.slevel, The security level of the message as a String, according to the active user's language.&lt;/li&gt;&lt;li&gt;message.createdAt, The datetime when the message is created in format 12. jan 1998, kl. 11:23.&lt;/li&gt;&lt;li&gt;message.createdAtRaw, The datetime when the message is created in format 1998-01-12 11:23:15&lt;/li&gt;&lt;li&gt;message.author,  The author of the message&lt;/li&gt;&lt;li&gt;message.bodyHtml, The HTML body of the message&lt;/li&gt;&lt;li&gt;message.messageCategory, The message category. See &lt;xref href=\"CRMScript.NetServer.TicketMessageCategory\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.&lt;/li&gt;&lt;li&gt;message.body, The body of the message, if this is a plaintext message, this text will be returned with activated links&lt;/li&gt;&lt;li&gt;message.bodyPlain, The body of the message exactly as saved in database.&lt;/li&gt;&lt;li&gt;message.header, The message header&lt;/li&gt;&lt;li&gt;message.mailSorter, If this message is a recieved mail, the this is the name of the mail filter that took it.&lt;/li&gt;&lt;li&gt;message.x_myextrafield, The value of the extrafield&lt;/li&gt;&lt;/ul&gt;
+</Note>

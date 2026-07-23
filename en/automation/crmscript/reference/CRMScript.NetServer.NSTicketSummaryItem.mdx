@@ -1,0 +1,151 @@
+﻿---
+uid: crmscript.netserver.nsticketsummaryitem
+title: NSTicketSummaryItem
+description: "The ticket summary with heading, created date."
+keywords: CRMScript, NSTicketSummaryItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketSummaryItem
+
+The ticket summary with heading, created date.
+
+## Constructors
+
+### NSTicketSummaryItem()
+
+```crmscript
+NSTicketSummaryItem
+```
+
+Initializes a new instance of the NSTicketSummaryItem class.
+
+## Methods
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the ticket was created.
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetTicketId()
+
+```crmscript
+Integer GetTicketId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+Integer ticketId = thing.GetTicketId();
+```
+
+## GetTicketStatus()
+
+```crmscript
+Integer GetTicketStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - User-defined ticket status.
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+Integer ticketStatus = thing.GetTicketStatus();
+```
+
+## GetTitle()
+
+```crmscript
+String GetTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The title of the ticket.
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+String title = thing.GetTitle();
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetTicketId(Integer)
+
+```crmscript
+Void SetTicketId(Integer ticketId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+Integer ticketId;
+thing.SetTicketId(ticketId);
+```
+
+## SetTicketStatus(Integer)
+
+```crmscript
+Void SetTicketStatus(Integer ticketStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+Integer ticketStatus;
+thing.SetTicketStatus(ticketStatus);
+```
+
+## SetTitle(String)
+
+```crmscript
+Void SetTitle(String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketSummaryItem thing;
+String title;
+thing.SetTitle(title);
+```

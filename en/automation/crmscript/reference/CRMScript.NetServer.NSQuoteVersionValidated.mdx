@@ -1,0 +1,275 @@
+﻿---
+uid: crmscript.netserver.nsquoteversionvalidated
+title: NSQuoteVersionValidated
+description: "The QuoteVersionValidated is returned after a call to ValidateQuoteAlternative. It contains flags indicating changes to quote, quoteversion/quotealternative and quotelines."
+keywords: CRMScript, NSQuoteVersionValidated, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteVersionValidated
+
+The QuoteVersionValidated is returned after a call to ValidateQuoteAlternative. It contains flags indicating changes to quote, quoteversion/quotealternative and quotelines.
+
+## Constructors
+
+### NSQuoteVersionValidated()
+
+```crmscript
+NSQuoteVersionValidated
+```
+
+Initializes a new instance of the NSQuoteVersionValidated class.
+
+## Methods
+
+## GetChangedQuote()
+
+```crmscript
+NSQuote GetChangedQuote()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuote](CRMScript.NetServer.NSQuote) - The validated version is a member of NSQuote.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSQuote changedQuote = thing.GetChangedQuote();
+```
+
+## GetChangedQuoteAlternatives()
+
+```crmscript
+NSQuoteAlternativeRecalculated[] GetChangedQuoteAlternatives()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternativeRecalculated](CRMScript.NetServer.NSQuoteAlternativeRecalculated)[] - The changed QuoteAlternatives.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSQuoteAlternativeRecalculated[] changedQuoteAlternatives = thing.GetChangedQuoteAlternatives();
+```
+
+## GetChangedQuoteVersion()
+
+```crmscript
+NSQuoteVersion GetChangedQuoteVersion()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion) - The validated NSQuoteVersion.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSQuoteVersion changedQuoteVersion = thing.GetChangedQuoteVersion();
+```
+
+## GetChangedSale()
+
+```crmscript
+NSSale GetChangedSale()
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale) - If the sale has been changed, the carrier will be added.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSSale changedSale = thing.GetChangedSale();
+```
+
+## GetErrorCode()
+
+```crmscript
+String GetErrorCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An error code, if available.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+String errorCode = thing.GetErrorCode();
+```
+
+## GetIsOk()
+
+```crmscript
+Bool GetIsOk()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Answer to the question / An indication if the operation went well.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+Bool isOk = thing.GetIsOk();
+```
+
+## GetTechExplanation()
+
+```crmscript
+String GetTechExplanation()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Always in English.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+String techExplanation = thing.GetTechExplanation();
+```
+
+## GetUserExplanation()
+
+```crmscript
+String GetUserExplanation()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A localized explanation to the answer.
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+String userExplanation = thing.GetUserExplanation();
+```
+
+## SetChangedQuote(NSQuote)
+
+```crmscript
+Void SetChangedQuote(NSQuote changedQuote)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSQuote changedQuote;
+thing.SetChangedQuote(changedQuote);
+```
+
+## SetChangedQuoteAlternatives(NSQuoteAlternativeRecalculated[])
+
+```crmscript
+Void SetChangedQuoteAlternatives(NSQuoteAlternativeRecalculated[] changedQuoteAlternatives)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSQuoteAlternativeRecalculated[] changedQuoteAlternatives;
+thing.SetChangedQuoteAlternatives(changedQuoteAlternatives);
+```
+
+## SetChangedQuoteVersion(NSQuoteVersion)
+
+```crmscript
+Void SetChangedQuoteVersion(NSQuoteVersion changedQuoteVersion)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSQuoteVersion changedQuoteVersion;
+thing.SetChangedQuoteVersion(changedQuoteVersion);
+```
+
+## SetChangedSale(NSSale)
+
+```crmscript
+Void SetChangedSale(NSSale changedSale)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+NSSale changedSale;
+thing.SetChangedSale(changedSale);
+```
+
+## SetErrorCode(String)
+
+```crmscript
+Void SetErrorCode(String errorCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+String errorCode;
+thing.SetErrorCode(errorCode);
+```
+
+## SetIsOk(Bool)
+
+```crmscript
+Void SetIsOk(Bool isOk)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+Bool isOk;
+thing.SetIsOk(isOk);
+```
+
+## SetTechExplanation(String)
+
+```crmscript
+Void SetTechExplanation(String techExplanation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+String techExplanation;
+thing.SetTechExplanation(techExplanation);
+```
+
+## SetUserExplanation(String)
+
+```crmscript
+Void SetUserExplanation(String userExplanation)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteVersionValidated thing;
+String userExplanation;
+thing.SetUserExplanation(userExplanation);
+```

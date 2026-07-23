@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nswebhookresult
+title: NSWebhookResult
+description: "Result of calling a webhook."
+keywords: CRMScript, NSWebhookResult, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWebhookResult
+
+Result of calling a webhook.
+
+## Constructors
+
+### NSWebhookResult()
+
+```crmscript
+NSWebhookResult
+```
+
+Initializes a new instance of the NSWebhookResult class.
+
+## Methods
+
+## GetMessage()
+
+```crmscript
+String GetMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Headers and body of response from webhook.
+
+**Example:**
+
+```crmscript
+NSWebhookResult thing;
+String message = thing.GetMessage();
+```
+
+## GetSuccess()
+
+```crmscript
+Bool GetSuccess()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Was call to webhook successful? (200 OK).
+
+**Example:**
+
+```crmscript
+NSWebhookResult thing;
+Bool success = thing.GetSuccess();
+```
+
+## SetMessage(String)
+
+```crmscript
+Void SetMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhookResult thing;
+String message;
+thing.SetMessage(message);
+```
+
+## SetSuccess(Bool)
+
+```crmscript
+Void SetSuccess(Bool success)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhookResult thing;
+Bool success;
+thing.SetSuccess(success);
+```

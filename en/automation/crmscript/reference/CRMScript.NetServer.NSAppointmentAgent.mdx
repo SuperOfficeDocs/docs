@@ -1,0 +1,1883 @@
+﻿---
+uid: crmscript.netserver.nsappointmentagent
+title: NSAppointmentAgent
+description: "Collection of all services that works with Appointment data."
+keywords: CRMScript, NSAppointmentAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAppointmentAgent
+
+Collection of all services that works with Appointment data.
+
+## Constructors
+
+### NSAppointmentAgent()
+
+```crmscript
+NSAppointmentAgent
+```
+
+Collection of all services that works with Appointment data.
+
+## Methods
+
+## Accept(Integer,Integer)
+
+Accepts an appointment invitation.
+
+```crmscript
+Void Accept(Integer appointmentId, Integer updateMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+Integer updateMode;
+agent.Accept(appointmentId, updateMode);
+```
+
+## AcceptRejected(Integer,Integer)
+
+Accepts that an invited participant has rejected your invitation or assignment.
+
+```crmscript
+NSAppointmentEntity AcceptRejected(Integer appointmentId, Integer updateMode)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+Integer updateMode;
+NSAppointmentEntity res = agent.AcceptRejected(appointmentId, updateMode);
+```
+
+## AcceptWithEmailConfirmation(Integer,Integer)
+
+Accepts an appointment invitation and sends an email confirmation to the meeting organizer.
+
+```crmscript
+Void AcceptWithEmailConfirmation(Integer appointmentId, Integer updateMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+Integer updateMode;
+agent.AcceptWithEmailConfirmation(appointmentId, updateMode);
+```
+
+## AcceptWithSmtpEmailConfirmation(Integer,Integer)
+
+Accepts an appointment invitation and sends an email confirmation to the meeting organizer.
+
+```crmscript
+Void AcceptWithSmtpEmailConfirmation(Integer appointmentId, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+Integer updateMode;
+NSEMailConnectionInfo smtpEMailConnectionInfo;
+agent.AcceptWithSmtpEmailConfirmation(appointmentId, updateMode, smtpEMailConnectionInfo);
+```
+
+## AssignTo(Integer,Integer)
+
+Assigns an appointment to another person.
+
+```crmscript
+NSAppointmentEntity AssignTo(Integer appointmentId, ParticipantInfo participant, Integer updateMode)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - Updated NSAppointmentEntity.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+ParticipantInfo participant;
+Integer updateMode;
+NSAppointmentEntity res = agent.AssignTo(appointmentId, participant, updateMode);
+```
+
+## CalculateDays()
+
+Calculates the set of dates that represents a recurrence pattern. Adds conflict information to each date.
+
+```crmscript
+NSRecurrenceInfo CalculateDays(NSAppointmentEntity appointmentEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](CRMScript.NetServer.NSRecurrenceInfo)
+
+## CanAssignToProjectMember(Integer,Integer)
+
+```crmscript
+Bool CanAssignToProjectMember(Integer projectId, Integer suggestedAppointmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## CleanUpBookingDeleted(Integer[])
+
+Deletes all appointments(within the appointmentIds array) with status BookingDeleted.
+
+```crmscript
+Integer CleanUpBookingDeleted(Integer[] appointmentIds)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## CleanUpRecurringBookingDeleted()
+
+Deletes all appointments with status BookingDeleted and for logged-in user.
+
+```crmscript
+Integer CleanUpRecurringBookingDeleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## CreateAndAccept(Integer,Integer)
+
+Creates an appointment from an emailItem invitation and accepting it.
+
+```crmscript
+Void CreateAndAccept(Integer emailItemId, Integer updateMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CreateAndAcceptWithEmailConfirmation(Integer,Integer)
+
+Creates an appointment from an emailItem invitation and accepting it with email confirmation to the meeting organizer.
+
+```crmscript
+Void CreateAndAcceptWithEmailConfirmation(Integer emailItemId, Integer updateMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## CreateAppointmentForUID(String)
+
+Creates an invitation record and an appointment with a given UID to reserve it if the UID is unused, otherwise null.
+
+```crmscript
+NSAppointmentEntity CreateAppointmentForUID(NSAppointmentEntity appointmentEntity, String uID)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - The newly created NSAppointmentEntity or null if the UID is in the DB already.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointmentEntity appointmentEntity;
+String uID;
+NSAppointmentEntity res = agent.CreateAppointmentForUID(appointmentEntity, uID);
+```
+
+## CreateDefaultAppointmentEntity()
+
+Sets default values into a new NSAppointmentEntity.
+
+```crmscript
+NSAppointmentEntity CreateDefaultAppointmentEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - A new NSAppointmentEntity with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointmentEntity thing = agent.CreateDefaultAppointmentEntity();
+thing = agent.SaveAppointmentEntity(thing);
+```
+
+## CreateDefaultAppointmentEntityByType(Integer)
+
+Creates an NSAppointmentEntity populated with the default values for the specific type.
+
+```crmscript
+NSAppointmentEntity CreateDefaultAppointmentEntityByType(Integer type)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer type;
+NSAppointmentEntity res = agent.CreateDefaultAppointmentEntityByType(type);
+```
+
+## CreateDefaultAppointmentEntityByTypeAndAssociate(Integer,Integer)
+
+Creates an NSAppointmentEntity populated with the default values for the specific type and owner.
+
+```crmscript
+NSAppointmentEntity CreateDefaultAppointmentEntityByTypeAndAssociate(Integer type, Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer type;
+Integer associateId;
+NSAppointmentEntity res = agent.CreateDefaultAppointmentEntityByTypeAndAssociate(type, associateId);
+```
+
+## CreateDefaultAppointmentEntityFromProjectSuggestion(Integer,Integer,Bool,Integer)
+
+```crmscript
+NSAppointmentEntity CreateDefaultAppointmentEntityFromProjectSuggestion(Integer suggestedAppointmentId, Integer projectId, Bool createNow, Integer ownerId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+## CreateDefaultAppointmentEntityFromSaleSuggestion(Integer,Integer,Bool,Integer)
+
+Creates an appointment based on a suggested appointment.
+
+```crmscript
+NSAppointmentEntity CreateDefaultAppointmentEntityFromSaleSuggestion(Integer suggestedAppointmentId, Integer saleId, Bool createNow, Integer ownerId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - The newly created appointment.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer suggestedAppointmentId;
+Integer saleId;
+Bool createNow;
+Integer ownerId;
+NSAppointmentEntity res = agent.CreateDefaultAppointmentEntityFromSaleSuggestion(suggestedAppointmentId, saleId, createNow, ownerId);
+```
+
+## CreateDefaultRecurrence()
+
+Creates an NSRecurrenceInfo object populated with the default values for the specific type.
+
+```crmscript
+NSRecurrenceInfo CreateDefaultRecurrence()
+```
+
+**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](CRMScript.NetServer.NSRecurrenceInfo)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSRecurrenceInfo res = agent.CreateDefaultRecurrence();
+```
+
+## CreateDefaultRecurrenceByDate()
+
+Creates an NSRecurrenceInfo object populated with the default values for the specific type.
+
+```crmscript
+NSRecurrenceInfo CreateDefaultRecurrenceByDate(DateTime startDate)
+```
+
+**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](CRMScript.NetServer.NSRecurrenceInfo)
+
+## CreateDefaultReOpenAppointment(Integer)
+
+A re-open appointment should be created as a reminder to re-open the sale at a certain date with information regarding the stalled sale.
+
+```crmscript
+NSAppointmentEntity CreateDefaultReOpenAppointment(Integer saleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer saleId;
+NSAppointmentEntity res = agent.CreateDefaultReOpenAppointment(saleId);
+```
+
+## CreateDefaultSuggestedAppointmentEntity()
+
+Sets default values into a new NSSuggestedAppointmentEntity.
+
+```crmscript
+NSSuggestedAppointmentEntity CreateDefaultSuggestedAppointmentEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](CRMScript.NetServer.NSSuggestedAppointmentEntity) - A new NSSuggestedAppointmentEntity with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();
+thing = agent.SaveSuggestedAppointmentEntity(thing);
+```
+
+## CreateDefaultTaskListItem()
+
+Sets default values into a new NSTaskListItem.
+
+```crmscript
+NSTaskListItem CreateDefaultTaskListItem()
+```
+
+**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem) - A new NSTaskListItem with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSTaskListItem thing = agent.CreateDefaultTaskListItem();
+thing = agent.SaveTaskListItem(thing);
+```
+
+## DeclineInvitationFromEmailItem(Integer,String)
+
+Declining an appointment invitation where no tentative appointments have been created.
+
+```crmscript
+Void DeclineInvitationFromEmailItem(Integer emailItemId, String rejectReason)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## Delete(Integer,Integer,Bool)
+
+Deletes a booking
+
+```crmscript
+Void Delete(Integer appointmentId, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteAppointmentEntity(Integer)
+
+Deletes the NSAppointmentEntity.
+
+```crmscript
+Void DeleteAppointmentEntity(Integer appointmentEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+agent.DeleteAppointmentEntity(123);
+```
+
+## GenerateLead(Integer,String,String,Integer,String,String,String,String,String,String,String,String)
+
+Adds a sales lead (task) to a contact in SuperOffice. If the contact or person is known, the sales lead is added to the current contact. If not, a new contact is created, with the associate with ownerIdForNewContact as responsible (Our Contact). A relation is created between the contact and the person submitting the lead. Based on wether the person the request is made for is found or not, the following happens: If the person is found, the person, person's contact and sales representative is returned. If neither the person nor the contact is found a new person and contact is created (if sufficient data is supplied), and the person, person's contact and sales representative is returned. If the contact and not the person is found a new person is created on this contact, and the contact, salesrep, and person is returned (if there was enough data to return the person).
+
+```crmscript
+NSSalesActivity GenerateLead(Integer associateIdForNewContact, String leadDescription, String relation, Integer relationId, String leadContact, String leadPersonFirstname, String leadPersonLastname, String leadPersonEmail, String leadPhoneNumber, String creatorsContact, String creatorsFirstname, String creatorsLastname)
+```
+
+**Returns:** [CRMScript.NetServer.NSSalesActivity](CRMScript.NetServer.NSSalesActivity)
+
+<Note>
+If more than one contact is found a list of contacts is returned.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer associateIdForNewContact;
+String leadDescription;
+String relation;
+Integer relationId;
+String leadContact;
+String leadPersonFirstname;
+String leadPersonLastname;
+String leadPersonEmail;
+String leadPhoneNumber;
+String creatorsContact;
+String creatorsFirstname;
+String creatorsLastname;
+NSSalesActivity res = agent.GenerateLead(associateIdForNewContact, leadDescription, relation, relationId, leadContact, leadPersonFirstname, leadPersonLastname, leadPersonEmail, leadPhoneNumber, creatorsContact, creatorsFirstname, creatorsLastname);
+```
+
+## GetActivityInformationListByDatesAndAssociate(Integer)
+
+Gets activity information for one or more days according to the given date interval.
+
+```crmscript
+NSActivityInformationListItem[] GetActivityInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSActivityInformationListItem](CRMScript.NetServer.NSActivityInformationListItem)[]
+
+<Note>
+The time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+DateTime startDate;
+DateTime endDate;
+Integer associateId;
+NSActivityInformationListItem[] res = agent.GetActivityInformationListByDatesAndAssociate(startDate, endDate, associateId);
+```
+
+## GetAlarms(Bool,Bool,Integer)
+
+```crmscript
+NSMultiAlarmData GetAlarms(Bool includeInvitations, Bool includeAllAppointments, Integer defaultAlarmLeadTimeInMinutes)
+```
+
+**Returns:** [CRMScript.NetServer.NSMultiAlarmData](CRMScript.NetServer.NSMultiAlarmData)
+
+## GetAppointment(Integer)
+
+Gets an NSAppointment object.
+
+```crmscript
+NSAppointment GetAppointment(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointment thing = agent.GetAppointment(123);
+```
+
+## GetAppointmentEntity(Integer)
+
+Gets an NSAppointmentEntity object.
+
+```crmscript
+NSAppointmentEntity GetAppointmentEntity(Integer appointmentEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointmentEntity thing = agent.GetAppointmentEntity(123);
+```
+
+## GetAppointmentFromUID(String)
+
+Gets the appointment that corresponds to the given UID.
+
+```crmscript
+NSAppointmentEntity GetAppointmentFromUID(String uID)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - Appointment corresponding to uId.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+String uID;
+NSAppointmentEntity res = agent.GetAppointmentFromUID(uID);
+```
+
+## GetAppointmentHaveParticipantsWithEmail(Integer)
+
+Checks if any of the participants is marked to receive emails on this appointment.
+
+```crmscript
+Bool GetAppointmentHaveParticipantsWithEmail(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if no participants are defined.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+Bool res = agent.GetAppointmentHaveParticipantsWithEmail(appointmentId);
+```
+
+## GetAppointmentList(Integer[])
+
+Retrieves an array of NSAppointment objects.
+
+```crmscript
+NSAppointment[] GetAppointmentList()
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSAppointmentAgent agent;
+agent.GetAppointmentList(ids);
+```
+
+## GetAppointmentRecords(Integer,Integer)
+
+Gets all records involved in a booking and/or recurring appointments.
+
+```crmscript
+NSAppointment[] GetAppointmentRecords(Integer motherId, Integer recurrenceRuleId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+## GetAppointmentsByTaskHeading(Integer)
+
+Returns appointments of a specific appointment task heading.
+
+```crmscript
+NSAppointment[] GetAppointmentsByTaskHeading(Integer taskHeadingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+Task represents the different types of activities, such as Phone call or Meeting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer taskHeadingId;
+NSAppointment[] res = agent.GetAppointmentsByTaskHeading(taskHeadingId);
+```
+
+## GetAssociateDiary(Integer,Integer)
+
+```crmscript
+NSAppointment[] GetAssociateDiary(Integer associateId, DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+## GetAssociatesDiary(Integer[])
+
+```crmscript
+NSAppointment[] GetAssociatesDiary(Integer[] associateIds, DateTime startTime, DateTime endTime)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+## GetCanInsertForAssociates(Integer[])
+
+Checks if the current associate can create appointments in the diary of other associates.
+
+```crmscript
+Bool[] GetCanInsertForAssociates(Integer[] associateIds)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)[] - An array of Bool corresponding to the associate array input parameter.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer[] associateIds;
+Bool[] res = agent.GetCanInsertForAssociates(associateIds);
+```
+
+## GetContactAppointments(Integer,Integer)
+
+Returns a specified number of appointments within a time range. The appointments belong to the contact specified.
+
+```crmscript
+NSAppointment[] GetContactAppointments(Integer contactId, DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+If the logged-in user is not allowed to view this persons appointments an exception is thrown.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer contactId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+NSAppointment[] res = agent.GetContactAppointments(contactId, startTime, endTime, count);
+```
+
+## GetContactAppointmentsByTask(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the contact specified.
+
+```crmscript
+NSAppointment[] GetContactAppointmentsByTask(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+Task represents the different types of activities, such as Phone call or Meeting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer contactId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskId;
+NSAppointment[] res = agent.GetContactAppointmentsByTask(contactId, startTime, endTime, count, taskId);
+```
+
+## GetContactAppointmentsByTaskHeading(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the contact specified.
+
+```crmscript
+NSAppointment[] GetContactAppointmentsByTaskHeading(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+Task represents the different types of activities, such as Phone call or Meeting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer contactId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskHeadingId;
+NSAppointment[] res = agent.GetContactAppointmentsByTaskHeading(contactId, startTime, endTime, count, taskHeadingId);
+```
+
+## GetContactAppointmentsByTasks(Integer,Integer,Integer[])
+
+Returns a specified number of appointments belonging to an array of appointment task types within a time range. The appointments belong to the contact specified.
+
+```crmscript
+NSAppointment[] GetContactAppointmentsByTasks(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+Task represents the different types of activities, such as Phone call or Meeting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer contactId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer[] taskIds;
+NSAppointment[] res = agent.GetContactAppointmentsByTasks(contactId, startTime, endTime, count, taskIds);
+```
+
+## GetContactAppointmentsByType(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the contact specified.
+
+```crmscript
+NSAppointment[] GetContactAppointmentsByType(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+If the logged-in user is not allowed to view this contacts appointments an exception is thrown.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer contactId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer appointmentType;
+NSAppointment[] res = agent.GetContactAppointmentsByType(contactId, startTime, endTime, count, appointmentType);
+```
+
+## GetDayInformationListByDatesAndAssociate(Integer)
+
+Gets combined day information (activity + red-letter summary) for one or more days according to the given date interval.
+
+```crmscript
+NSDayInformationListItem[] GetDayInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDayInformationListItem](CRMScript.NetServer.NSDayInformationListItem)[]
+
+<Note>
+The time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+DateTime startDate;
+DateTime endDate;
+Integer associateId;
+NSDayInformationListItem[] res = agent.GetDayInformationListByDatesAndAssociate(startDate, endDate, associateId);
+```
+
+## GetDiaryByGroup(Integer,Integer,Integer)
+
+```crmscript
+NSAppointment[] GetDiaryByGroup(Integer groupId, Integer groupType, DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+## GetMyAppointments(Integer)
+
+Returns a specified number of appointments within a time range. The appointments belong to the currently logged-on user.
+
+```crmscript
+NSAppointment[] GetMyAppointments(DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+NSAppointment[] res = agent.GetMyAppointments(startTime, endTime, count);
+```
+
+## GetMyDiary(Integer)
+
+Returns a specified number of appointments within a time range. The appointments belong to the currently logged-on user.
+
+```crmscript
+NSAppointment[] GetMyDiary(DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+It returns only appointments that would be displayed in the user's diary.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+NSAppointment[] res = agent.GetMyDiary(startTime, endTime, count);
+```
+
+## GetMyPublishedAppointments()
+
+Gets published appointments from the logged in user.
+
+```crmscript
+NSAppointment[] GetMyPublishedAppointments()
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointment[] res = agent.GetMyPublishedAppointments();
+```
+
+## GetMySyncAppointments()
+
+Returns a specified number of appointments within a time range. The appointments belong to the currently logged-on user.
+
+```crmscript
+NSAppointmentSyncData[] GetMySyncAppointments(DateTime startTime, DateTime endTime)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentSyncData](CRMScript.NetServer.NSAppointmentSyncData)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+DateTime startTime;
+DateTime endTime;
+NSAppointmentSyncData[] res = agent.GetMySyncAppointments(startTime, endTime);
+```
+
+## GetMyTasks(Integer)
+
+Returns a specified number of appointments within a time range. The appointments belong to the currently logged-on user.
+
+```crmscript
+NSAppointment[] GetMyTasks(Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+It returns only appointments that would be displayed in the user's task list.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer count;
+NSAppointment[] res = agent.GetMyTasks(count);
+```
+
+## GetNextSuggestedAppointmentBySale(Integer,Integer,Bool)
+
+Gets the next suggested appointment for a given sale (or rather a given sales guide).
+
+```crmscript
+NSSuggestedAppointment GetNextSuggestedAppointmentBySale(Integer saleId, Integer currentAppointmentId, Bool skipCompleteCheck)
+```
+
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointment](CRMScript.NetServer.NSSuggestedAppointment)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer saleId;
+Integer currentAppointmentId;
+Bool skipCompleteCheck;
+NSSuggestedAppointment res = agent.GetNextSuggestedAppointmentBySale(saleId, currentAppointmentId, skipCompleteCheck);
+```
+
+## GetOrganizerName(Integer)
+
+Looks up the name / email of an event-organizer
+
+```crmscript
+String GetOrganizerName(Integer motherAppointmentId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer motherAppointmentId;
+String res = agent.GetOrganizerName(motherAppointmentId);
+```
+
+## GetPersonAppointments(Integer,Bool,Integer)
+
+Returns a specified number of appointments within a time range. The appointments belong to the person specified.
+
+```crmscript
+NSAppointment[] GetPersonAppointments(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+If the person not is a SuperOffice user (associate) or the logged-on user is not allowed to view this persons appointments an exception is thrown.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+Bool includeProjectAppointments;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+NSAppointment[] res = agent.GetPersonAppointments(personId, includeProjectAppointments, startTime, endTime, count);
+```
+
+## GetPersonAppointmentsByTask(Integer,Bool,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the person specified.
+
+```crmscript
+NSAppointment[] GetPersonAppointmentsByTask(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+Task represents the different types of activities, such as Phone call or Meeting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+Bool includeProjectAppointments;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskId;
+NSAppointment[] res = agent.GetPersonAppointmentsByTask(personId, includeProjectAppointments, startTime, endTime, count, taskId);
+```
+
+## GetPersonAppointmentsByTaskHeading(Integer,Bool,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the person specified.
+
+```crmscript
+NSAppointment[] GetPersonAppointmentsByTaskHeading(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+Task represents the different types of activities, such as Phone call or Meeting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+Bool includeProjectAppointments;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskHeadingId;
+NSAppointment[] res = agent.GetPersonAppointmentsByTaskHeading(personId, includeProjectAppointments, startTime, endTime, count, taskHeadingId);
+```
+
+## GetPersonAppointmentsByTasks(Integer,Bool,Integer,Integer[])
+
+Returns a specified number of appointments from a list of appointment task types within a time range. The appointments belong to the person specified.
+
+```crmscript
+NSAppointment[] GetPersonAppointmentsByTasks(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+Task represents the different types of activities, such as Phone call or Meeting.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+Bool includeProjectAppointments;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer[] taskIds;
+NSAppointment[] res = agent.GetPersonAppointmentsByTasks(personId, includeProjectAppointments, startTime, endTime, count, taskIds);
+```
+
+## GetPersonAppointmentsByType(Integer,Bool,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the person specified.
+
+```crmscript
+NSAppointment[] GetPersonAppointmentsByType(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+Bool includeProjectAppointments;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer appointmentType;
+NSAppointment[] res = agent.GetPersonAppointmentsByType(personId, includeProjectAppointments, startTime, endTime, count, appointmentType);
+```
+
+## GetPersonDiary(Integer,Integer)
+
+Returns a specified number of appointments within a time range.
+
+```crmscript
+NSAppointment[] GetPersonDiary(Integer personId, DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+It only returns appointments that would be displayed in the user's diary. The appointments belong to the person specified. If the person not is a SuperOffice user (associate) or the logged-on user is not allowed to view this persons appointments an exception is thrown.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+NSAppointment[] res = agent.GetPersonDiary(personId, startTime, endTime, count);
+```
+
+## GetPersonTasks(Integer,Integer)
+
+Returns a specified number of appointments within a time range.
+
+```crmscript
+NSAppointment[] GetPersonTasks(Integer personId, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+It only returns appointments that would be displayed in the user's task list. The appointments belong to the person specified. If the person not is a SuperOffice user (associate) or the logged-on user is not allowed to view this persons appointments an exception is thrown.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+Integer count;
+NSAppointment[] res = agent.GetPersonTasks(personId, count);
+```
+
+## GetProjectAppointments(Integer,Integer)
+
+Returns a specified number of appointments within a time range. The appointments belong to the project specified.
+
+```crmscript
+NSAppointment[] GetProjectAppointments(Integer projectId, DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+<Note>
+If the logged-on user is not allowed to view this projects appointments an exception is thrown.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer projectId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+NSAppointment[] res = agent.GetProjectAppointments(projectId, startTime, endTime, count);
+```
+
+## GetProjectAppointmentsByTask(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the project specified.
+
+```crmscript
+NSAppointment[] GetProjectAppointmentsByTask(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer projectId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskId;
+NSAppointment[] res = agent.GetProjectAppointmentsByTask(projectId, startTime, endTime, count, taskId);
+```
+
+## GetProjectAppointmentsByTaskHeading(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the project specified.
+
+```crmscript
+NSAppointment[] GetProjectAppointmentsByTaskHeading(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer projectId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskHeadingId;
+NSAppointment[] res = agent.GetProjectAppointmentsByTaskHeading(projectId, startTime, endTime, count, taskHeadingId);
+```
+
+## GetProjectAppointmentsByTasks(Integer,Integer,Integer[])
+
+Returns a specified number of appointments matching the list of appointment task types within a time range. The appointments belong to the project specified.
+
+```crmscript
+NSAppointment[] GetProjectAppointmentsByTasks(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer projectId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer[] taskIds;
+NSAppointment[] res = agent.GetProjectAppointmentsByTasks(projectId, startTime, endTime, count, taskIds);
+```
+
+## GetProjectAppointmentsByType(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the project specified.
+
+```crmscript
+NSAppointment[] GetProjectAppointmentsByType(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer projectId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer appointmentType;
+NSAppointment[] res = agent.GetProjectAppointmentsByType(projectId, startTime, endTime, count, appointmentType);
+```
+
+## GetProjectMemberAppointments(Integer,Integer)
+
+Returns a specified number of appointments within a time range. The appointments belong to the projects where the person specified is member.
+
+```crmscript
+NSAppointment[] GetProjectMemberAppointments(Integer personId, DateTime startTime, DateTime endTime, Integer count)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+NSAppointment[] res = agent.GetProjectMemberAppointments(personId, startTime, endTime, count);
+```
+
+## GetProjectMemberAppointmentsByTask(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task type within a time range. The appointments belong to the projects where the person specified is member.
+
+```crmscript
+NSAppointment[] GetProjectMemberAppointmentsByTask(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskId;
+NSAppointment[] res = agent.GetProjectMemberAppointmentsByTask(personId, startTime, endTime, count, taskId);
+```
+
+## GetProjectMemberAppointmentsByTaskHeading(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment task heading within a time range. The appointments belong to the projects where the person specified is member.
+
+```crmscript
+NSAppointment[] GetProjectMemberAppointmentsByTaskHeading(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer taskHeadingId;
+NSAppointment[] res = agent.GetProjectMemberAppointmentsByTaskHeading(personId, startTime, endTime, count, taskHeadingId);
+```
+
+## GetProjectMemberAppointmentsByTasks(Integer,Integer,Integer[])
+
+Returns a specified number of appointments matching a set of appointment task types within a time range. The appointments belong to the projects where the person specified is member.
+
+```crmscript
+NSAppointment[] GetProjectMemberAppointmentsByTasks(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer[] taskIds;
+NSAppointment[] res = agent.GetProjectMemberAppointmentsByTasks(personId, startTime, endTime, count, taskIds);
+```
+
+## GetProjectMemberAppointmentsByType(Integer,Integer,Integer)
+
+Returns a specified number of appointments of a specific appointment type within a time range. The appointments belong to the projects where the person specified is member.
+
+```crmscript
+NSAppointment[] GetProjectMemberAppointmentsByType(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer personId;
+DateTime startTime;
+DateTime endTime;
+Integer count;
+Integer appointmentType;
+NSAppointment[] res = agent.GetProjectMemberAppointmentsByType(personId, startTime, endTime, count, appointmentType);
+```
+
+## GetPublishedAppointment(Integer)
+
+Gets published appointment by appointment ID.
+
+```crmscript
+NSAppointment GetPublishedAppointment(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+NSAppointment res = agent.GetPublishedAppointment(appointmentId);
+```
+
+## GetPublishedAppointments(Integer[])
+
+Gets published appointments by appointment IDs.
+
+```crmscript
+NSAppointment[] GetPublishedAppointments(Integer[] appointmentIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer[] appointmentIds;
+NSAppointment[] res = agent.GetPublishedAppointments(appointmentIds);
+```
+
+## GetPublishedProjectAppointments(Integer)
+
+Gets published appointments by project ID.
+
+```crmscript
+NSAppointment[] GetPublishedProjectAppointments(Integer projectId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer projectId;
+NSAppointment[] res = agent.GetPublishedProjectAppointments(projectId);
+```
+
+## GetRedLetterInformationListByDatesAndAssociate(Integer)
+
+Gets detailed red-letter day information (red-letter summary + individual day texts) for one or more days according to the given date interval.
+
+```crmscript
+NSRedLetterInformationListItem[] GetRedLetterInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSRedLetterInformationListItem](CRMScript.NetServer.NSRedLetterInformationListItem)[]
+
+<Note>
+The time portion of the dates is ignored.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+DateTime startDate;
+DateTime endDate;
+Integer associateId;
+NSRedLetterInformationListItem[] res = agent.GetRedLetterInformationListByDatesAndAssociate(startDate, endDate, associateId);
+```
+
+## GetSuggestedAppointment(Integer)
+
+Gets an NSSuggestedAppointment object.
+
+```crmscript
+NSSuggestedAppointment GetSuggestedAppointment(Integer suggestedAppointmentId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointment](CRMScript.NetServer.NSSuggestedAppointment)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSSuggestedAppointment thing = agent.GetSuggestedAppointment(123);
+```
+
+## GetSuggestedAppointmentEntity(Integer)
+
+Gets an NSSuggestedAppointmentEntity object.
+
+```crmscript
+NSSuggestedAppointmentEntity GetSuggestedAppointmentEntity(Integer suggestedAppointmentEntityId)
+```
+
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](CRMScript.NetServer.NSSuggestedAppointmentEntity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSSuggestedAppointmentEntity thing = agent.GetSuggestedAppointmentEntity(123);
+```
+
+## GetTaskListItem(Integer)
+
+Gets an NSTaskListItem object.
+
+```crmscript
+NSTaskListItem GetTaskListItem(Integer taskListItemId)
+```
+
+**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSTaskListItem thing = agent.GetTaskListItem(123);
+```
+
+## GetTaskListItems(Bool)
+
+Gets all takslist items
+
+```crmscript
+NSTaskListItem[] GetTaskListItems(Bool includeDeleted)
+```
+
+**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Bool includeDeleted;
+NSTaskListItem[] res = agent.GetTaskListItems(includeDeleted);
+```
+
+## GetUIDFromAppointmentId(Integer,Bool)
+
+Gets the UID associated with the appointment id in the Invitation table.
+
+```crmscript
+String GetUIDFromAppointmentId(Integer appointmentId, Bool useMotherId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The associated UID, or null if none exist.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+Bool useMotherId;
+String res = agent.GetUIDFromAppointmentId(appointmentId, useMotherId);
+```
+
+## Move(Integer,Integer)
+
+Moving a booking to another start time.
+
+```crmscript
+NSAppointmentEntity Move(Integer appointmentId, DateTime newStartTime, Integer updateMode)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+<Note>
+See &lt;xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+DateTime newStartTime;
+Integer updateMode;
+NSAppointmentEntity res = agent.Move(appointmentId, newStartTime, updateMode);
+```
+
+## Reject(Integer,String,Integer)
+
+Rejecting an appointment invitation
+
+```crmscript
+Void Reject(Integer appointmentId, String rejectReason, Integer updateMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+See &lt;xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+String rejectReason;
+Integer updateMode;
+agent.Reject(appointmentId, rejectReason, updateMode);
+```
+
+## RejectWithEmailConfirmation(Integer,String,Integer)
+
+Rejecting an appointment invitation and send an email confirmation to the meeting organizer.
+
+```crmscript
+Void RejectWithEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+See &lt;xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+String rejectReason;
+Integer updateMode;
+agent.RejectWithEmailConfirmation(appointmentId, rejectReason, updateMode);
+```
+
+## RejectWithSmtpEmailConfirmation(Integer,String,Integer)
+
+Rejecting an appointment invitation and send an email confirmation to the meeting organizer.
+
+```crmscript
+Void RejectWithSmtpEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+See &lt;xref href=\"CRMScript.NetServer.RecurrenceUpdateMode\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+String rejectReason;
+Integer updateMode;
+NSEMailConnectionInfo smtpEMailConnectionInfo;
+agent.RejectWithSmtpEmailConfirmation(appointmentId, rejectReason, updateMode, smtpEMailConnectionInfo);
+```
+
+## RequestForInfo(Integer,String,String,String,String,String,String,String)
+
+Submits a request for information. The request is added to the task list of the user that is responsible for this contact. Based on wether the person the request is made for is found or not, the following happens: If the person is found, the person, person's contact and sales representative is returned. If neither the person nor the contact is found a new person and contact is created (if sufficient data is supplied), and the person, person's contact and sales representative is returned. If the contact and not the person is found a new person is created on this contact, and the contact, salesrep, and person is returned (if there was enough data to return the person). If more than one contact is found a list of contacts is returned.
+
+```crmscript
+NSSalesActivity RequestForInfo(Integer associateIdForNewContact, String channel, String regarding, String contactName, String personFirstname, String personLastname, String emailAddress, String phoneNumber)
+```
+
+**Returns:** [CRMScript.NetServer.NSSalesActivity](CRMScript.NetServer.NSSalesActivity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer associateIdForNewContact;
+String channel;
+String regarding;
+String contactName;
+String personFirstname;
+String personLastname;
+String emailAddress;
+String phoneNumber;
+NSSalesActivity res = agent.RequestForInfo(associateIdForNewContact, channel, regarding, contactName, personFirstname, personLastname, emailAddress, phoneNumber);
+```
+
+## Save(Integer,Bool)
+
+Saving a booking.
+
+```crmscript
+NSAppointmentEntity Save(NSAppointmentEntity appointmentEntity, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointmentEntity appointmentEntity;
+Integer updateMode;
+Bool sendEmailToParticipants;
+NSEMailConnectionInfo smtpEMailConnectionInfo;
+NSEMailConnectionInfo imapEMailConnectionInfo;
+NSAppointmentEntity res = agent.Save(appointmentEntity, updateMode, sendEmailToParticipants, smtpEMailConnectionInfo, imapEMailConnectionInfo);
+```
+
+## SaveAppointmentEntity(NSAppointmentEntity)
+
+Saves an appointmentUpdates the existing NSAppointmentEntity or creates a new NSAppointmentEntity if the ID parameter is 0.
+
+```crmscript
+NSAppointmentEntity SaveAppointmentEntity(NSAppointmentEntity appointmentEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - The new or updated NSAppointmentEntity.
+
+**Example:**
+
+```crmscript
+NSAppointment  agent;
+NSAppointmentEntity thing = agent.CreateDefaultAppointmentEntity();
+thing = agent.SaveAppointmentEntity(thing);
+```
+
+## SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity)
+
+Updates the existing NSSuggestedAppointmentEntity or creates a new NSSuggestedAppointmentEntity if the id parameter is 0
+
+```crmscript
+NSSuggestedAppointmentEntity SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity suggestedAppointmentEntity)
+```
+
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](CRMScript.NetServer.NSSuggestedAppointmentEntity) - New or updated NSSuggestedAppointmentEntity.
+
+**Example:**
+
+```crmscript
+NSAppointment  agent;
+NSSuggestedAppointmentEntity thing = agent.CreateDefaultSuggestedAppointmentEntity();
+thing = agent.SaveSuggestedAppointmentEntity(thing);
+```
+
+## SaveTaskListItem(NSTaskListItem)
+
+Updates the existing NSTaskListItem or creates a new NSTaskListItem if the ID parameter is 0.
+
+```crmscript
+NSTaskListItem SaveTaskListItem(NSTaskListItem taskListItem)
+```
+
+**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem)
+
+**Example:**
+
+```crmscript
+NSAppointment  agent;
+NSTaskListItem thing = agent.CreateDefaultTaskListItem();
+thing = agent.SaveTaskListItem(thing);
+```
+
+## SetActivityStatus(String[],Integer)
+
+Sets the completed status for an array of activities. The changes are saved immediately.
+
+```crmscript
+Void SetActivityStatus(String[] activityIdentifier, Integer activityStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+If an invalid ID is passed in (nonexistent record), no changes will be made. If there is no write access to the record being changed, a Sentry exception will be thrown in the usual manner.
+</Note>
+
+## SetSeen(Integer,Integer)
+
+Sets an appointment invitation to seen.
+
+```crmscript
+Void SetSeen(Integer appointmentId, Integer updateMode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## ToggleActivities(String[])
+
+Toggles the completed status for an array of activities.
+
+```crmscript
+Integer ToggleActivities(String[] activityIdentifier)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+String[] activityIdentifier;
+Integer res = agent.ToggleActivities(activityIdentifier);
+```
+
+## ToggleActivity(String)
+
+Toggles the completed status for an activity. The changes are saved immediately.
+
+```crmscript
+Integer ToggleActivity(String activityIdentifier)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+String activityIdentifier;
+Integer res = agent.ToggleActivity(activityIdentifier);
+```
+
+## ToggleAndSetActivities(String[])
+
+Toggles the first activity and sets the rest of the activities to the result of the first toggle.
+
+```crmscript
+String[] ToggleAndSetActivities(String[] activityIdentifiers)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+<Note>
+There are some special rules for appointments that trigger a suggested appointment when they are completed. If more than one appointment in the set of identifiers triggers a suggestion, we will not toggle those appointments. This rule is only active when changing the status of an appointment to complete. There must be more than one appointment that triggers such an event for this rule to take effect.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+String[] activityIdentifiers;
+String[] res = agent.ToggleAndSetActivities(activityIdentifiers);
+```
+
+## ToggleAppointmentStatus(Integer)
+
+Sets an appointment's status to Completed if the appointment had a different status, or sets the status to started if already set to completed.
+
+```crmscript
+Integer ToggleAppointmentStatus(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+Integer appointmentId;
+Integer res = agent.ToggleAppointmentStatus(appointmentId);
+```
+
+## UpdateAppointment(Integer,Integer,Integer,Integer)
+
+Updates an appointment record.
+
+```crmscript
+NSAppointment UpdateAppointment(Integer id, DateTime startTime, DateTime endTime, Integer status, Integer type, Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+
+## UpdateAppointmentFromIcsResponse(String)
+
+Updates the attendance to an appointment based on incoming ICS RSVPs.
+
+```crmscript
+Bool UpdateAppointmentFromIcsResponse(String emailAddress, NSStream icsData)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+String emailAddress;
+NSStream icsData;
+Bool res = agent.UpdateAppointmentFromIcsResponse(emailAddress, icsData);
+```
+
+## ValidateAppointmentEntity()
+
+Checks that entity is ready for saving.
+
+```crmscript
+Map ValidateAppointmentEntity(NSAppointmentEntity appointmentEntity)
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointmentEntity appointmentEntity;
+Map res = agent.ValidateAppointmentEntity(appointmentEntity);
+```
+
+## ValidateDays()
+
+Validates the set of dates to calculate any conflicts.
+
+```crmscript
+NSRecurrenceDate[] ValidateDays(NSAppointmentEntity appointmentEntity, DateTime[] dates)
+```
+
+**Returns:** [CRMScript.NetServer.NSRecurrenceDate](CRMScript.NetServer.NSRecurrenceDate)[]
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointmentEntity appointmentEntity;
+DateTime[] dates;
+NSRecurrenceDate[] res = agent.ValidateDays(appointmentEntity, dates);
+```
+
+## WillSendEmail()
+
+Returns true if the changes will trigger email sending on Save, so you can inform the user.
+
+```crmscript
+Bool WillSendEmail(NSAppointmentEntity appointment)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if the changes will trigger email sending on Save.
+
+**Example:**
+
+```crmscript
+NSAppointmentAgent agent;
+NSAppointmentEntity appointment;
+Bool res = agent.WillSendEmail(appointment);
+```

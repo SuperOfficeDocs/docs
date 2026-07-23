@@ -69,9 +69,3 @@ en/api/web-services/endpoints/soap/reference/**
 
 # Ignore CRMScript reference
 en/customization/crmscript/reference/**
-
-# Ignore automation/trigger's raw CRMScript event reference YAML (DocFx ManagedReference
-# format, not plain markdown -- migrate-folder.ps1 can't convert it; reference/index.md
-# in the same folder converts and renders normally, see issue #20)
-en/automation/trigger/reference/CRMScript.Event.Trigger.yml
-en/automation/trigger/reference/CRMScript.Event.yml

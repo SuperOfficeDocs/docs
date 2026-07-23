@@ -1,0 +1,868 @@
+﻿---
+uid: crmscript.netserver.nsticketpriorityentity
+title: NSTicketPriorityEntity
+description: "Entity for a ticket priority. This entity describes the meta data for a ticket priority, and provides special operations on it."
+keywords: CRMScript, NSTicketPriorityEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSTicketPriorityEntity
+
+Entity for a ticket priority. This entity describes the meta data for a ticket priority, and provides special operations on it.
+
+## Constructors
+
+### NSTicketPriorityEntity()
+
+```crmscript
+NSTicketPriorityEntity
+```
+
+Initializes a new instance of the NSTicketPriorityEntity class.
+
+## Methods
+
+## GetChangedOwner()
+
+```crmscript
+Integer GetChangedOwner()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request changes owner (manually). See &lt;xref href=\"CRMScript.NetServer.TicketPriorityEscalateEvent\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer changedOwner = thing.GetChangedOwner();
+```
+
+## GetDeadline()
+
+```crmscript
+Integer GetDeadline()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Deadline to add if escalated (minutes).
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer deadline = thing.GetDeadline();
+```
+
+## GetFlags()
+
+```crmscript
+Integer GetFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A bit mask of flags. See &lt;xref href=\"CRMScript.NetServer.TicketPriorityFlags\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer flags = thing.GetFlags();
+```
+
+## GetFriStart()
+
+```crmscript
+DateTime GetFriStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Fridays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime friStart = thing.GetFriStart();
+```
+
+## GetFriStop()
+
+```crmscript
+DateTime GetFriStop()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Fridays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime friStop = thing.GetFriStop();
+```
+
+## GetMonStart()
+
+```crmscript
+DateTime GetMonStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Mondays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime monStart = thing.GetMonStart();
+```
+
+## GetMonStop()
+
+```crmscript
+DateTime GetMonStop()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Mondays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime monStop = thing.GetMonStop();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the priority.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+String name = thing.GetName();
+```
+
+## GetNonDates()
+
+```crmscript
+DateTime[] GetNonDates()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)[] - Dates which the escalation time should not be running.
+
+<Note>
+Note that only the day of the year (day and month) is used. So the year and time part is not used even if this is a DateTime
+</Note>
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime[] nonDates = thing.GetNonDates();
+```
+
+## GetSatStart()
+
+```crmscript
+DateTime GetSatStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Saturdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime satStart = thing.GetSatStart();
+```
+
+## GetSatStop()
+
+```crmscript
+DateTime GetSatStop()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Saturdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime satStop = thing.GetSatStop();
+```
+
+## GetSortOrder()
+
+```crmscript
+Integer GetSortOrder()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Indicates the sort order for this priority. 1 is first, 100 is last.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer sortOrder = thing.GetSortOrder();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status (normal/deleted) of the priority. See &lt;xref href=\"CRMScript.NetServer.TicketPriorityStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer status = thing.GetStatus();
+```
+
+## GetSunStart()
+
+```crmscript
+DateTime GetSunStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Sundays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime sunStart = thing.GetSunStart();
+```
+
+## GetSunStop()
+
+```crmscript
+DateTime GetSunStop()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Sundays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime sunStop = thing.GetSunStop();
+```
+
+## GetThuStart()
+
+```crmscript
+DateTime GetThuStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Thursdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime thuStart = thing.GetThuStart();
+```
+
+## GetThuStop()
+
+```crmscript
+DateTime GetThuStop()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Thursdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime thuStop = thing.GetThuStop();
+```
+
+## GetTicketChangedPriority()
+
+```crmscript
+Integer GetTicketChangedPriority()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request is changed into this priority. See &lt;xref href=\"CRMScript.NetServer.TicketPriorityEscalateEvent\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketChangedPriority = thing.GetTicketChangedPriority();
+```
+
+## GetTicketClosed()
+
+```crmscript
+Integer GetTicketClosed()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - indicates what to do with the escalation chain when the request is closed. See &lt;xref href=\"CRMScript.NetServer.TicketPriorityEscalateEvent\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketClosed = thing.GetTicketClosed();
+```
+
+## GetTicketNew()
+
+```crmscript
+Integer GetTicketNew()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when a new request is registered. See &lt;xref href=\"CRMScript.NetServer.TicketPriorityEscalateEvent\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketNew = thing.GetTicketNew();
+```
+
+## GetTicketNewinfo()
+
+```crmscript
+Integer GetTicketNewinfo()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request gets new info. See &lt;xref href=\"CRMScript.NetServer.TicketPriorityEscalateEvent\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketNewinfo = thing.GetTicketNewinfo();
+```
+
+## GetTicketPriorityId()
+
+```crmscript
+Integer GetTicketPriorityId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketPriorityId = thing.GetTicketPriorityId();
+```
+
+## GetTicketRead()
+
+```crmscript
+Integer GetTicketRead()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request is read. See &lt;xref href=\"CRMScript.NetServer.TicketPriorityEscalateEvent\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketRead = thing.GetTicketRead();
+```
+
+## GetTueStart()
+
+```crmscript
+DateTime GetTueStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Tuesdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime tueStart = thing.GetTueStart();
+```
+
+## GetTueStop()
+
+```crmscript
+DateTime GetTueStop()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Tuesdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime tueStop = thing.GetTueStop();
+```
+
+## GetWedStart()
+
+```crmscript
+DateTime GetWedStart()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Wednesdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime wedStart = thing.GetWedStart();
+```
+
+## GetWedStop()
+
+```crmscript
+DateTime GetWedStop()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Wednesdays. Note that only the time part of the DateTime is used.
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime wedStop = thing.GetWedStop();
+```
+
+## SetChangedOwner(Integer)
+
+```crmscript
+Void SetChangedOwner(Integer changedOwner)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer changedOwner;
+thing.SetChangedOwner(changedOwner);
+```
+
+## SetDeadline(Integer)
+
+```crmscript
+Void SetDeadline(Integer deadline)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer deadline;
+thing.SetDeadline(deadline);
+```
+
+## SetFlags(Integer)
+
+```crmscript
+Void SetFlags(Integer flags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer flags;
+thing.SetFlags(flags);
+```
+
+## SetFriStart(DateTime)
+
+```crmscript
+Void SetFriStart(DateTime friStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime friStart;
+thing.SetFriStart(friStart);
+```
+
+## SetFriStop(DateTime)
+
+```crmscript
+Void SetFriStop(DateTime friStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime friStop;
+thing.SetFriStop(friStop);
+```
+
+## SetMonStart(DateTime)
+
+```crmscript
+Void SetMonStart(DateTime monStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime monStart;
+thing.SetMonStart(monStart);
+```
+
+## SetMonStop(DateTime)
+
+```crmscript
+Void SetMonStop(DateTime monStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime monStop;
+thing.SetMonStop(monStop);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetNonDates(DateTime[])
+
+```crmscript
+Void SetNonDates(DateTime[] nonDates)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime[] nonDates;
+thing.SetNonDates(nonDates);
+```
+
+## SetSatStart(DateTime)
+
+```crmscript
+Void SetSatStart(DateTime satStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime satStart;
+thing.SetSatStart(satStart);
+```
+
+## SetSatStop(DateTime)
+
+```crmscript
+Void SetSatStop(DateTime satStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime satStop;
+thing.SetSatStop(satStop);
+```
+
+## SetSortOrder(Integer)
+
+```crmscript
+Void SetSortOrder(Integer sortOrder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer sortOrder;
+thing.SetSortOrder(sortOrder);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetSunStart(DateTime)
+
+```crmscript
+Void SetSunStart(DateTime sunStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime sunStart;
+thing.SetSunStart(sunStart);
+```
+
+## SetSunStop(DateTime)
+
+```crmscript
+Void SetSunStop(DateTime sunStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime sunStop;
+thing.SetSunStop(sunStop);
+```
+
+## SetThuStart(DateTime)
+
+```crmscript
+Void SetThuStart(DateTime thuStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime thuStart;
+thing.SetThuStart(thuStart);
+```
+
+## SetThuStop(DateTime)
+
+```crmscript
+Void SetThuStop(DateTime thuStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime thuStop;
+thing.SetThuStop(thuStop);
+```
+
+## SetTicketChangedPriority(Integer)
+
+```crmscript
+Void SetTicketChangedPriority(Integer ticketChangedPriority)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketChangedPriority;
+thing.SetTicketChangedPriority(ticketChangedPriority);
+```
+
+## SetTicketClosed(Integer)
+
+```crmscript
+Void SetTicketClosed(Integer ticketClosed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketClosed;
+thing.SetTicketClosed(ticketClosed);
+```
+
+## SetTicketNew(Integer)
+
+```crmscript
+Void SetTicketNew(Integer ticketNew)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketNew;
+thing.SetTicketNew(ticketNew);
+```
+
+## SetTicketNewinfo(Integer)
+
+```crmscript
+Void SetTicketNewinfo(Integer ticketNewinfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketNewinfo;
+thing.SetTicketNewinfo(ticketNewinfo);
+```
+
+## SetTicketPriorityId(Integer)
+
+```crmscript
+Void SetTicketPriorityId(Integer ticketPriorityId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketPriorityId;
+thing.SetTicketPriorityId(ticketPriorityId);
+```
+
+## SetTicketRead(Integer)
+
+```crmscript
+Void SetTicketRead(Integer ticketRead)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+Integer ticketRead;
+thing.SetTicketRead(ticketRead);
+```
+
+## SetTueStart(DateTime)
+
+```crmscript
+Void SetTueStart(DateTime tueStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime tueStart;
+thing.SetTueStart(tueStart);
+```
+
+## SetTueStop(DateTime)
+
+```crmscript
+Void SetTueStop(DateTime tueStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime tueStop;
+thing.SetTueStop(tueStop);
+```
+
+## SetWedStart(DateTime)
+
+```crmscript
+Void SetWedStart(DateTime wedStart)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime wedStart;
+thing.SetWedStart(wedStart);
+```
+
+## SetWedStop(DateTime)
+
+```crmscript
+Void SetWedStop(DateTime wedStop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSTicketPriorityEntity thing;
+DateTime wedStop;
+thing.SetWedStop(wedStop);
+```

@@ -1,0 +1,257 @@
+﻿---
+uid: crmscript.native.extrafieldsinfo
+title: ExtraFieldsInfo
+description: "With this class, you can retrieve meta-information about an extra field."
+keywords: CRMScript, ExtraFieldsInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# ExtraFieldsInfo
+
+With this class, you can retrieve meta-information about an extra field.
+
+The class will only retrieve information, thus it is not possible to change an extra field from this class.
+
+## Constructors
+
+### ExtraFieldsInfo()
+
+```crmscript
+ExtraFieldsInfo
+```
+
+Initializes a new instance of the ExtraFieldsInfo class.
+
+## Methods
+
+## eof()
+
+Checks if there are no more fields in the result.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+ExtraFieldsInfo efi;
+for (efi.getTicketChildrenFields(); !efi.eof(); efi.next())
+{
+  // do something with information from efi
+}
+```
+
+## getChildrenFields(Integer,Integer)
+
+Loads extra fields of the type given in the first parameter. If the type is an extra table relation, the second pointer is the ID of the extra table it points to.
+
+```crmscript
+Void getChildrenFields(Integer type, Integer extraTableTarget)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Unless type is 20 (extratable), the second parameter won't do anything.
+
+Types can be:Integer = 1, Text (long) = 2, Date = 3, DateTime = 4, Time = 5, Bool = 6, TimeSpan = 7, Text (short) = 10, Customer relation = 16, Company relation = 17, Ticket relation = 18, User relation = 19, Extra table relation = 20, Attachment relation = 22, Link = 23, Category relation = 24, Priority relation = 25, FAQ relation = 26
+</Note>
+
+## getCompanyChildrenFields()
+
+This is a helper function for getting company relation fields. It is equivalent to calling getChildrenFields(17, 0).
+
+```crmscript
+getCompanyChildrenFields()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getCustomerChildrenFields()
+
+This is a helper function for getting customer relation fields. It is equivalent to calling getChildrenFields(16, 0).
+
+```crmscript
+Void getCustomerChildrenFields()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getDisplayField()
+
+Returns the display field of the current field.
+
+```crmscript
+String getDisplayField()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+The display field is a format of the field that can be used to address the field in functions such as SearchEngine.
+</Note>
+
+**Example:**
+
+```crmscript
+ExtraFieldsInfo e;
+e.getExtraFields("person");
+print(e.getDisplayField());
+```
+
+## getExtraFields(String)
+
+Gets extra fields related to the given table. Using this method will make it possible to access the information in the extra fields by using the other functions in the class.
+
+```crmscript
+Void getExtraFields(String table)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+ExtraFieldsInfo e;
+e.getExtraFields("person");
+```
+
+## getFieldName()
+
+Returns the field name of the current field.
+
+```crmscript
+String getFieldName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The field name of the current field.
+
+**Example:**
+
+```crmscript
+ExtraFieldsInfo e;
+e.getExtraFields("person");
+while(!e.eof()){
+  print(e.getFieldName());
+  e.next();
+}
+```
+
+## getFlags()
+
+Returns the flags for the current extra field.
+
+The flags can be accessed by wrapping the returned Integer in a FHBitSet.
+
+```crmscript
+Integer getFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+<Note>
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;Flag&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;The field is searchable&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;The field is public (external)&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;The field is viewed in new-ticket form&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;The field is set (datetime) when clicked&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;The field cannot change after being set&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;The field is a dropdown (extra string fields)&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;The field is directly readable from database&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;Do not HTML-escape the value when displaying field&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;The field is deleted&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;The field is the ID&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;The field is a foreign ID&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;The field is not writeable&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;Use default value for field if no value is supplied&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;List relations&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;View this field when listing rows&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;Hide the header for this list if there are no entries&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;Hide the function buttons for this relation&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17&lt;/td&gt;&lt;td&gt;The field cannot be empty&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;The field is not shown anywhere&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19&lt;/td&gt;&lt;td&gt;The field is indexed&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;The field is viewed in relational searches&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21&lt;/td&gt;&lt;td&gt;The field listed with the other main properties for the entity (i.e. for 'Edit ticket' it is shown on the first pane)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22&lt;/td&gt;&lt;td&gt;The field is a FK, and in Archives this relation should be followed and columns in the target table should be available in the archive&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+FHBitSet flags;
+flags.set(extraField.getFlags());
+flags.getBitNo(17);  // returns true if the extra field cannot be empty
+```
+
+## getName()
+
+Returns the descriptive name (not the database name) of the current field.
+
+```crmscript
+String getName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+ExtraFieldsInfo e;
+e.getExtraFields("person");
+while(!e.eof()) {
+  print(e.getName());
+  e.next();
+}
+```
+
+## getParam(String,String)
+
+This function returns the value of the given parameter.
+
+```crmscript
+String getParam(String parameter)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Available values:&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Available to&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;defaultNow&lt;/td&gt;&lt;td&gt;all types&lt;/td&gt;&lt;td&gt;use current time and date as default value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;defaultActiveUser&lt;/td&gt;&lt;td&gt;all types&lt;/td&gt;&lt;td&gt;use active user as default value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;fields&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;number of fields&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;height&lt;/td&gt;&lt;td&gt;Text long&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;linkName&lt;/td&gt;&lt;td&gt;Dynamic link&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;linkValue&lt;/td&gt;&lt;td&gt;Dynamic link&lt;/td&gt;&lt;td&gt;url&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;onlyLeafNode&lt;/td&gt;&lt;td&gt;Extra table relation&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;precision&lt;/td&gt;&lt;td&gt;Float&lt;/td&gt;&lt;td&gt;number of decimals&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;option&lt;/td&gt;&lt;td&gt;Text long, Text short&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useDays&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useHours&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useMinutes&lt;/td&gt;&lt;td&gt;TimeSpan&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;useTextArea&lt;/td&gt;&lt;td&gt;Text long&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;targetLabel&lt;/td&gt;&lt;td&gt;Contact relation, Company relation, Request relation, Extra table relation&lt;/td&gt;&lt;td&gt;header&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+</Note>
+
+## getTableName()
+
+Returns the name of the table the current field belongs to.
+
+```crmscript
+String getTableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The table the current field belongs to.
+
+**Example:**
+
+```crmscript
+ExtraFieldsInfo e;
+e.getExtraFields("person");
+print(e.TableName());
+Will print "person".
+```
+
+## getTicketChildrenFields()
+
+This is a helper function for getting ticket relation fields. It is equivalent to calling getChildrenFields(18, 0).
+
+```crmscript
+Void getTicketChildrenFields()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## next()
+
+This function moves to the next field in the result.
+
+```crmscript
+Void next()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+A common usage is in the increment section in a for loop.
+</Note>
+
+**Example:**
+
+```crmscript
+ExtraFieldsInfo efi;
+for (efi.getTicketChildrenFields(); !efi.eof(); efi.next())
+{
+  // do something with information from efi
+}
+```

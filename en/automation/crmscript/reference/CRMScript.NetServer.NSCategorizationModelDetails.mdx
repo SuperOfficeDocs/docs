@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nscategorizationmodeldetails
+title: NSCategorizationModelDetails
+description: "Details about a categorization model in HugoAI. Carrier object for CategorizationModelDetails"
+keywords: CRMScript, NSCategorizationModelDetails, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCategorizationModelDetails
+
+Details about a categorization model in HugoAI. Carrier object for CategorizationModelDetails
+
+## Constructors
+
+### NSCategorizationModelDetails()
+
+```crmscript
+NSCategorizationModelDetails
+```
+
+Initializes a new instance of the NSCategorizationModelDetails class.
+
+## Methods
+
+## GetAccuracy()
+
+```crmscript
+Float GetAccuracy()
+```
+
+**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Accuracy of the trained model.
+
+**Example:**
+
+```crmscript
+NSCategorizationModelDetails thing;
+Float accuracy = thing.GetAccuracy();
+```
+
+## GetModelBuiltDateTime()
+
+```crmscript
+DateTime GetModelBuiltDateTime()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Time the training finished.
+
+**Example:**
+
+```crmscript
+NSCategorizationModelDetails thing;
+DateTime modelBuiltDateTime = thing.GetModelBuiltDateTime();
+```
+
+## GetTicketCountForTraining()
+
+```crmscript
+Integer GetTicketCountForTraining()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of tickets used to train the model.
+
+**Example:**
+
+```crmscript
+NSCategorizationModelDetails thing;
+Integer ticketCountForTraining = thing.GetTicketCountForTraining();
+```
+
+## SetAccuracy(Float)
+
+```crmscript
+Void SetAccuracy(Float accuracy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCategorizationModelDetails thing;
+Float accuracy;
+thing.SetAccuracy(accuracy);
+```
+
+## SetModelBuiltDateTime(DateTime)
+
+```crmscript
+Void SetModelBuiltDateTime(DateTime modelBuiltDateTime)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCategorizationModelDetails thing;
+DateTime modelBuiltDateTime;
+thing.SetModelBuiltDateTime(modelBuiltDateTime);
+```
+
+## SetTicketCountForTraining(Integer)
+
+```crmscript
+Void SetTicketCountForTraining(Integer ticketCountForTraining)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCategorizationModelDetails thing;
+Integer ticketCountForTraining;
+thing.SetTicketCountForTraining(ticketCountForTraining);
+```

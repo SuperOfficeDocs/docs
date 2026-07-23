@@ -1,0 +1,36 @@
+﻿---
+uid: crmscript.netserver.appointmenttype
+title: Enum AppointmentType
+description: "Value for field 'type' in table 'appointment'."
+keywords: CRMScript, AppointmentType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum AppointmentType
+
+Value for field 'type' in table 'appointment'.
+
+## Syntax
+
+```crmscript
+AppointmentType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown - used when initializing |
+| inDiary | Show in diary. If overdue or done today, show in checklist also |
+| inChecklist | Appointment is a followup with no specific starttime |
+| Note | Paper clip on diary, expands to “post-it” note when clicked |
+| Document | Document of any kind, including outgoing, incoming and email |
+| SavedReport | Saved Report (i.e., not a Report Definition but the result of an actual report run) |
+| BookingForDiary | Booking, made for diary. When accepted this will change type to inDiary |
+| BookingForChecklist | Booking, made for check list. When accepted this will change type to inChecklist |
+| MergeDraft | Document is a template for mailmerge operations |
+| MergeFinal | Document is a result of a mailmerge operations (there are probably many documents like this!) |

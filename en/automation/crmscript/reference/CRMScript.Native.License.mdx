@@ -1,0 +1,99 @@
+﻿---
+uid: crmscript.native.license
+title: License
+description: "Deprecated in 7.1."
+keywords: CRMScript, License, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# License
+
+Deprecated in 7.1.
+
+## Constructors
+
+### License()
+
+```crmscript
+License
+```
+
+Deprecated in 7.1.
+
+### License(String,String)
+
+```crmscript
+License(String host, String license)
+```
+
+Deprecated in 7.1.
+
+## Methods
+
+## getInfo()
+
+Deprecated in 7.1.
+
+Gets info about license key. Checks if its legal and print hostname and modules.
+
+```crmscript
+String getInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## getReasonInvalid()
+
+Deprecated in 7.1.
+
+Checks if the license key is valid and returns the reason as a string.
+
+```crmscript
+String getReasonInvalid()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Reason why not valid or null string if valid.
+
+## getValue(String)
+
+Deprecated in 7.1.
+
+Extracts a value from the license key.
+
+```crmscript
+String getValue(String name)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Available values:&lt;ul&gt;&lt;li&gt;users&lt;/li&gt;&lt;li&gt;The number of users&lt;/li&gt;&lt;li&gt;simUsers&lt;/li&gt;&lt;li&gt;The number of simultaneous users&lt;/li&gt;&lt;li&gt;readUsers&lt;/li&gt;&lt;li&gt;The number of read users&lt;/li&gt;&lt;li&gt;simReadUsers&lt;/li&gt;&lt;li&gt;The number of simultaneous read only users&lt;/li&gt;&lt;li&gt;companyId&lt;/li&gt;&lt;li&gt;ID of the company owning the key. (Only relevant internal use)&lt;/li&gt;&lt;li&gt;expire&lt;/li&gt;&lt;li&gt;Expire date&lt;/li&gt;&lt;li&gt;key&lt;/li&gt;&lt;li&gt;The license key as a text string&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## legalKey()
+
+Deprecated in 7.1.
+
+Determines if a license key is legal or not.
+
+```crmscript
+Bool legalKey()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the key is legal.
+
+## toParser(Parser)
+
+Deprecated in 7.1.
+
+Fills a Parser object with License values.
+
+```crmscript
+toParser(Parser parser)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

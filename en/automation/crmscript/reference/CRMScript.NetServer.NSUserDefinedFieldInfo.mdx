@@ -1,0 +1,1113 @@
+﻿---
+uid: crmscript.netserver.nsuserdefinedfieldinfo
+title: NSUserDefinedFieldInfo
+description: "Can be used to mirror the layout of the user-defined fields in the user interface."
+keywords: CRMScript, NSUserDefinedFieldInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSUserDefinedFieldInfo
+
+Can be used to mirror the layout of the user-defined fields in the user interface.
+
+## Constructors
+
+### NSUserDefinedFieldInfo()
+
+```crmscript
+NSUserDefinedFieldInfo
+```
+
+Initializes a new instance of the NSUserDefinedFieldInfo class.
+
+## Methods
+
+## GetColumnId()
+
+```crmscript
+Integer GetColumnId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the database column this field corresponds to.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer columnId = thing.GetColumnId();
+```
+
+## GetFieldDefault()
+
+```crmscript
+String GetFieldDefault()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional default value for String fields.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String fieldDefault = thing.GetFieldDefault();
+```
+
+## GetFieldHeight()
+
+```crmscript
+Integer GetFieldHeight()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - field height in pixels, 0 = 'enough' (from font).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldHeight = thing.GetFieldHeight();
+```
+
+## GetFieldLabel()
+
+```crmscript
+String GetFieldLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The label (lead text).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String fieldLabel = thing.GetFieldLabel();
+```
+
+## GetFieldLeft()
+
+```crmscript
+Integer GetFieldLeft()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - X pixel coordinate of field.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldLeft = thing.GetFieldLeft();
+```
+
+## GetFieldTop()
+
+```crmscript
+Integer GetFieldTop()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Y pixel coordinate of field.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldTop = thing.GetFieldTop();
+```
+
+## GetFieldType()
+
+```crmscript
+Integer GetFieldType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.UDefFieldType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldType = thing.GetFieldType();
+```
+
+## GetFieldWidth()
+
+```crmscript
+Integer GetFieldWidth()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - field width in pixels, 0 = 'enough' (from font).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldWidth = thing.GetFieldWidth();
+```
+
+## GetFormatMask()
+
+```crmscript
+String GetFormatMask()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Formatting mask, can be whatever the controls understand (currently nothing).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String formatMask = thing.GetFormatMask();
+```
+
+## GetHasBeenPublished()
+
+```crmscript
+Bool GetHasBeenPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Has the udef field been published?
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool hasBeenPublished = thing.GetHasBeenPublished();
+```
+
+## GetHideLabel()
+
+```crmscript
+Bool GetHideLabel()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Hide the label if 1
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool hideLabel = thing.GetHideLabel();
+```
+
+## GetIsIndexed()
+
+```crmscript
+Bool GetIsIndexed()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this field indexed? true if yes; false if no.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool isIndexed = thing.GetIsIndexed();
+```
+
+## GetIsMandatory()
+
+```crmscript
+Bool GetIsMandatory()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 = no, 1 = yes (field must be filled out).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool isMandatory = thing.GetIsMandatory();
+```
+
+## GetIsReadOnly()
+
+```crmscript
+Bool GetIsReadOnly()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 = read/write, 1 = readonly (don't combine with mandatory).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool isReadOnly = thing.GetIsReadOnly();
+```
+
+## GetJustification()
+
+```crmscript
+Integer GetJustification()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Justification. See &lt;xref href=\"CRMScript.NetServer.UdefJustification\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer justification = thing.GetJustification();
+```
+
+## GetLabelHeight()
+
+```crmscript
+Integer GetLabelHeight()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - label height in pixels, 0 = 'enough' (from font).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelHeight = thing.GetLabelHeight();
+```
+
+## GetLabelLeft()
+
+```crmscript
+Integer GetLabelLeft()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - X pixel coordinate of label.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelLeft = thing.GetLabelLeft();
+```
+
+## GetLabelTop()
+
+```crmscript
+Integer GetLabelTop()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Y pixel coordinate of label.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelTop = thing.GetLabelTop();
+```
+
+## GetLabelWidth()
+
+```crmscript
+Integer GetLabelWidth()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - label width in pixels, 0 = 'enough' (from font).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelWidth = thing.GetLabelWidth();
+```
+
+## GetLastVersionId()
+
+```crmscript
+Integer GetLastVersionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - UDefFieldId this field had in the previous version, 0 = field is new in this version.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer lastVersionId = thing.GetLastVersionId();
+```
+
+## GetListTableId()
+
+```crmscript
+Integer GetListTableId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The table ID of the source table for lists kTableAssoc, kTableContInt or whatever.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer listTableId = thing.GetListTableId();
+```
+
+## GetMdoListName()
+
+```crmscript
+String GetMdoListName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - MDO list name used to populate this list. Derived from UDListDefinitionId and ListTableId. (Read-only).
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String mdoListName = thing.GetMdoListName();
+```
+
+## GetOwnerTableId()
+
+```crmscript
+Integer GetOwnerTableId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of owning table (contact, person, project).
+
+## GetPage1LineNo()
+
+```crmscript
+Integer GetPage1LineNo()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Line no on View Page 1, used if MDO flags are OFF. 0 = this field is not visible on page 1
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer page1LineNo = thing.GetPage1LineNo();
+```
+
+## GetProgId()
+
+```crmscript
+String GetProgId()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Programmatic ID, for use by software that needs to find a particular field. Carried over like udefIdentity across generations.
+
+<Note>
+Use a Company.Product.Field format to avoid naming conflicts; the Company name SuperOffice is reserved.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String progId = thing.GetProgId();
+```
+
+## GetShortLabel()
+
+```crmscript
+String GetShortLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String shortLabel = thing.GetShortLabel();
+```
+
+## GetTabOrder()
+
+```crmscript
+Integer GetTabOrder()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Tab order value, sets the field processing sequence.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer tabOrder = thing.GetTabOrder();
+```
+
+## GetTemplateVariableName()
+
+```crmscript
+String GetTemplateVariableName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Template variable name.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String templateVariableName = thing.GetTemplateVariableName();
+```
+
+## GetTextLength()
+
+```crmscript
+Integer GetTextLength()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Length (in characters) of a text field, 0 for other types.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer textLength = thing.GetTextLength();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional tooltip text for this field.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of owning table (contact, person, project). See &lt;xref href=\"CRMScript.NetServer.UDefType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+<Note>
+This is not the actual tableNumber, rather it's an enum.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer type = thing.GetType();
+```
+
+## GetUDefFieldId()
+
+```crmscript
+Integer GetUDefFieldId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer uDefFieldId = thing.GetUDefFieldId();
+```
+
+## GetUdefIdentity()
+
+```crmscript
+Integer GetUdefIdentity()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Unique number used to track field identity across layout changes.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer udefIdentity = thing.GetUdefIdentity();
+```
+
+## GetUDListDefinitionId()
+
+```crmscript
+Integer GetUDListDefinitionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - List to use for populating dropdown or listbox.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer uDListDefinitionId = thing.GetUDListDefinitionId();
+```
+
+## GetVersion()
+
+```crmscript
+Integer GetVersion()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Definition version number; ALL fields get new version whenever layout is updated.
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer version = thing.GetVersion();
+```
+
+## SetColumnId(Integer)
+
+```crmscript
+Void SetColumnId(Integer columnId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer columnId;
+thing.SetColumnId(columnId);
+```
+
+## SetFieldDefault(String)
+
+```crmscript
+Void SetFieldDefault(String fieldDefault)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String fieldDefault;
+thing.SetFieldDefault(fieldDefault);
+```
+
+## SetFieldHeight(Integer)
+
+```crmscript
+Void SetFieldHeight(Integer fieldHeight)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldHeight;
+thing.SetFieldHeight(fieldHeight);
+```
+
+## SetFieldLabel(String)
+
+```crmscript
+Void SetFieldLabel(String fieldLabel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String fieldLabel;
+thing.SetFieldLabel(fieldLabel);
+```
+
+## SetFieldLeft(Integer)
+
+```crmscript
+Void SetFieldLeft(Integer fieldLeft)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldLeft;
+thing.SetFieldLeft(fieldLeft);
+```
+
+## SetFieldTop(Integer)
+
+```crmscript
+Void SetFieldTop(Integer fieldTop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldTop;
+thing.SetFieldTop(fieldTop);
+```
+
+## SetFieldType(Integer)
+
+```crmscript
+Void SetFieldType(Integer fieldType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldType;
+thing.SetFieldType(fieldType);
+```
+
+## SetFieldWidth(Integer)
+
+```crmscript
+Void SetFieldWidth(Integer fieldWidth)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer fieldWidth;
+thing.SetFieldWidth(fieldWidth);
+```
+
+## SetFormatMask(String)
+
+```crmscript
+Void SetFormatMask(String formatMask)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String formatMask;
+thing.SetFormatMask(formatMask);
+```
+
+## SetHasBeenPublished(Bool)
+
+```crmscript
+Void SetHasBeenPublished(Bool hasBeenPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool hasBeenPublished;
+thing.SetHasBeenPublished(hasBeenPublished);
+```
+
+## SetHideLabel(Bool)
+
+```crmscript
+Void SetHideLabel(Bool hideLabel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool hideLabel;
+thing.SetHideLabel(hideLabel);
+```
+
+## SetIsIndexed(Bool)
+
+```crmscript
+Void SetIsIndexed(Bool isIndexed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool isIndexed;
+thing.SetIsIndexed(isIndexed);
+```
+
+## SetIsMandatory(Bool)
+
+```crmscript
+Void SetIsMandatory(Bool isMandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool isMandatory;
+thing.SetIsMandatory(isMandatory);
+```
+
+## SetIsReadOnly(Bool)
+
+```crmscript
+Void SetIsReadOnly(Bool isReadOnly)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Bool isReadOnly;
+thing.SetIsReadOnly(isReadOnly);
+```
+
+## SetJustification(Integer)
+
+```crmscript
+Void SetJustification(Integer justification)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer justification;
+thing.SetJustification(justification);
+```
+
+## SetLabelHeight(Integer)
+
+```crmscript
+Void SetLabelHeight(Integer labelHeight)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelHeight;
+thing.SetLabelHeight(labelHeight);
+```
+
+## SetLabelLeft(Integer)
+
+```crmscript
+Void SetLabelLeft(Integer labelLeft)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelLeft;
+thing.SetLabelLeft(labelLeft);
+```
+
+## SetLabelTop(Integer)
+
+```crmscript
+Void SetLabelTop(Integer labelTop)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelTop;
+thing.SetLabelTop(labelTop);
+```
+
+## SetLabelWidth(Integer)
+
+```crmscript
+Void SetLabelWidth(Integer labelWidth)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer labelWidth;
+thing.SetLabelWidth(labelWidth);
+```
+
+## SetLastVersionId(Integer)
+
+```crmscript
+Void SetLastVersionId(Integer lastVersionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer lastVersionId;
+thing.SetLastVersionId(lastVersionId);
+```
+
+## SetListTableId(Integer)
+
+```crmscript
+Void SetListTableId(Integer listTableId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer listTableId;
+thing.SetListTableId(listTableId);
+```
+
+## SetMdoListName(String)
+
+```crmscript
+Void SetMdoListName(String mdoListName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String mdoListName;
+thing.SetMdoListName(mdoListName);
+```
+
+## SetOwnerTableId(Integer)
+
+```crmscript
+Void SetOwnerTableId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPage1LineNo(Integer)
+
+```crmscript
+Void SetPage1LineNo(Integer page1LineNo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer page1LineNo;
+thing.SetPage1LineNo(page1LineNo);
+```
+
+## SetProgId(String)
+
+```crmscript
+Void SetProgId(String progId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Use a Company.Product.Field format to avoid naming conflicts; the Company name SuperOffice is reserved.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String progId;
+thing.SetProgId(progId);
+```
+
+## SetShortLabel(String)
+
+```crmscript
+Void SetShortLabel(String shortLabel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String shortLabel;
+thing.SetShortLabel(shortLabel);
+```
+
+## SetTabOrder(Integer)
+
+```crmscript
+Void SetTabOrder(Integer tabOrder)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer tabOrder;
+thing.SetTabOrder(tabOrder);
+```
+
+## SetTemplateVariableName(String)
+
+```crmscript
+Void SetTemplateVariableName(String templateVariableName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String templateVariableName;
+thing.SetTemplateVariableName(templateVariableName);
+```
+
+## SetTextLength(Integer)
+
+```crmscript
+Void SetTextLength(Integer textLength)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer textLength;
+thing.SetTextLength(textLength);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This is not the actual tableNumber, rather it's an enum.
+</Note>
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetUDefFieldId(Integer)
+
+```crmscript
+Void SetUDefFieldId(Integer uDefFieldId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer uDefFieldId;
+thing.SetUDefFieldId(uDefFieldId);
+```
+
+## SetUdefIdentity(Integer)
+
+```crmscript
+Void SetUdefIdentity(Integer udefIdentity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer udefIdentity;
+thing.SetUdefIdentity(udefIdentity);
+```
+
+## SetUDListDefinitionId(Integer)
+
+```crmscript
+Void SetUDListDefinitionId(Integer uDListDefinitionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer uDListDefinitionId;
+thing.SetUDListDefinitionId(uDListDefinitionId);
+```
+
+## SetVersion(Integer)
+
+```crmscript
+Void SetVersion(Integer version)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSUserDefinedFieldInfo thing;
+Integer version;
+thing.SetVersion(version);
+```

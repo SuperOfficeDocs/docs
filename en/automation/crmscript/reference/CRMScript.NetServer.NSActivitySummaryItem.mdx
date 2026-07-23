@@ -1,0 +1,237 @@
+﻿---
+uid: crmscript.netserver.nsactivitysummaryitem
+title: NSActivitySummaryItem
+description: "Summary details about appointments and documents."
+keywords: CRMScript, NSActivitySummaryItem, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSActivitySummaryItem
+
+Summary details about appointments and documents.
+
+## Constructors
+
+### NSActivitySummaryItem()
+
+```crmscript
+NSActivitySummaryItem
+```
+
+Initializes a new instance of the NSActivitySummaryItem class.
+
+## Methods
+
+## GetAppointmentId()
+
+Returns the appointment ID (primary key).
+
+```crmscript
+Integer GetAppointmentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Appointment Id.
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+Integer appointmentId = thing.GetAppointmentId();
+```
+
+## GetCompleted()
+
+The Completed state. NotStarted(1) or Completed(3)
+
+```crmscript
+Integer GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+Integer completed = thing.GetCompleted();
+```
+
+## GetDate()
+
+Start/Document date.
+
+```crmscript
+DateTime GetDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+DateTime date = thing.GetDate();
+```
+
+## GetDescription()
+
+The appointment's textbox; document title.
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+String description = thing.GetDescription();
+```
+
+## GetDocumentId()
+
+Returns the document ID.
+
+```crmscript
+Integer GetDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Document ID - 0 if not a document.
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+Integer documentId = thing.GetDocumentId();
+```
+
+## GetRegistered()
+
+Returns the registered date.
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## SetAppointmentId(Integer)
+
+Primary key
+
+```crmscript
+Void SetAppointmentId(Integer appointmentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+Integer appointmentId;
+thing.SetAppointmentId(appointmentId);
+```
+
+## SetCompleted(Integer)
+
+Sets the Completed state. NotStarted(1) or Completed(3)
+
+```crmscript
+Void SetCompleted(Integer completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+Integer completed;
+thing.SetCompleted(completed);
+```
+
+## SetDate(DateTime)
+
+Start/Document date
+
+```crmscript
+Void SetDate(DateTime date)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+DateTime date;
+thing.SetDate(date);
+```
+
+## SetDescription(String)
+
+Sets the appointment's textbox; document title
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDocumentId(Integer)
+
+Sets the document ID
+
+```crmscript
+Void SetDocumentId(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+Integer documentId;
+thing.SetDocumentId(documentId);
+```
+
+## SetRegistered(DateTime)
+
+Sets the registered date.
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSActivitySummaryItem thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```

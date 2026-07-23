@@ -1,0 +1,337 @@
+﻿---
+uid: crmscript.netserver.nsformsubmissionentity
+title: NSFormSubmissionEntity
+description: "Content of a Form submission."
+keywords: CRMScript, NSFormSubmissionEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFormSubmissionEntity
+
+Content of a Form submission.
+
+## Constructors
+
+### NSFormSubmissionEntity()
+
+```crmscript
+NSFormSubmissionEntity
+```
+
+Initializes a new instance of the NSFormSubmissionEntity class.
+
+## Methods
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The optional ID of the contact of the person who submitted.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetEmailAddress()
+
+```crmscript
+String GetEmailAddress()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email address of the person who submitted.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+String emailAddress = thing.GetEmailAddress();
+```
+
+## GetFormId()
+
+```crmscript
+Integer GetFormId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the parent form.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer formId = thing.GetFormId();
+```
+
+## GetFormSubmissionId()
+
+```crmscript
+Integer GetFormSubmissionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer formSubmissionId = thing.GetFormSubmissionId();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The optional ID of the person who submitted.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetProcessingLog()
+
+```crmscript
+String GetProcessingLog()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A log of what happened during processing.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+String processingLog = thing.GetProcessingLog();
+```
+
+## GetResponse()
+
+```crmscript
+String GetResponse()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The JSON-formatted response from this form.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+String response = thing.GetResponse();
+```
+
+## GetResponseShipmentAddrId()
+
+```crmscript
+Integer GetResponseShipmentAddrId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the s_shipment_addr that is the response mail.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer responseShipmentAddrId = thing.GetResponseShipmentAddrId();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status of this submission. See &lt;xref href=\"CRMScript.NetServer.FormSubmissionStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer status = thing.GetStatus();
+```
+
+## GetWhenSubmitted()
+
+```crmscript
+DateTime GetWhenSubmitted()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The time of the submit.
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+DateTime whenSubmitted = thing.GetWhenSubmitted();
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetEmailAddress(String)
+
+```crmscript
+Void SetEmailAddress(String emailAddress)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+String emailAddress;
+thing.SetEmailAddress(emailAddress);
+```
+
+## SetFormId(Integer)
+
+```crmscript
+Void SetFormId(Integer formId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer formId;
+thing.SetFormId(formId);
+```
+
+## SetFormSubmissionId(Integer)
+
+```crmscript
+Void SetFormSubmissionId(Integer formSubmissionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer formSubmissionId;
+thing.SetFormSubmissionId(formSubmissionId);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetProcessingLog(String)
+
+```crmscript
+Void SetProcessingLog(String processingLog)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+String processingLog;
+thing.SetProcessingLog(processingLog);
+```
+
+## SetResponse(String)
+
+```crmscript
+Void SetResponse(String response)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+String response;
+thing.SetResponse(response);
+```
+
+## SetResponseShipmentAddrId(Integer)
+
+```crmscript
+Void SetResponseShipmentAddrId(Integer responseShipmentAddrId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer responseShipmentAddrId;
+thing.SetResponseShipmentAddrId(responseShipmentAddrId);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetUpdSetWhenSubmitted(DateTime)
+
+```crmscript
+Void SetWhenSubmitted(DateTime whenSubmitted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFormSubmissionEntity thing;
+DateTime whenSubmitted;
+thing.SetWhenSubmitted(whenSubmitted);
+```

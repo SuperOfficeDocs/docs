@@ -1,0 +1,957 @@
+﻿---
+uid: crmscript.netserver.nsprojectevententity
+title: NSProjectEventEntity
+description: "The ProjectEvent Service. The service implements all services working with the ProjectEvent object"
+keywords: CRMScript, NSProjectEventEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectEventEntity
+
+The ProjectEvent Service. The service implements all services working with the ProjectEvent object
+
+## Constructors
+
+### NSProjectEventEntity()
+
+```crmscript
+NSProjectEventEntity
+```
+
+Initializes a new instance of the NSProjectEventEntity class.
+
+## Methods
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that created the project event.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetEnabled()
+
+```crmscript
+Bool GetEnabled()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the event enabled.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool enabled = thing.GetEnabled();
+```
+
+## GetEventDate()
+
+```crmscript
+DateTime GetEventDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date of the event; publishing/visibility dates are in Publish, and restrictions are in AudienceVisibility.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime eventDate = thing.GetEventDate();
+```
+
+## GetId()
+
+```crmscript
+Integer GetId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the external event.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer id = thing.GetId();
+```
+
+## GetIsPublished()
+
+```crmscript
+Bool GetIsPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Publish to external users? When true, the event/project information is visible to external users through the Audience portal. You can control the publish duration using the PublishFrom/PublishTo properties.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isPublished = thing.GetIsPublished();
+```
+
+## GetIsVisibleForCategories()
+
+```crmscript
+Bool GetIsVisibleForCategories()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isVisibleForCategories = thing.GetIsVisibleForCategories();
+```
+
+## GetIsVisibleForMembers()
+
+```crmscript
+Bool GetIsVisibleForMembers()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isVisibleForMembers = thing.GetIsVisibleForMembers();
+```
+
+## GetIsVisibleForPersonInterests()
+
+```crmscript
+Bool GetIsVisibleForPersonInterests()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isVisibleForPersonInterests = thing.GetIsVisibleForPersonInterests();
+```
+
+## GetProjectEventId()
+
+```crmscript
+Integer GetProjectEventId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer projectEventId = thing.GetProjectEventId();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The projectId for the project this projectEvent belongs to.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetPublishFrom()
+
+```crmscript
+DateTime GetPublishFrom()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publication valid from (inclusive).
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime publishFrom = thing.GetPublishFrom();
+```
+
+## GetPublishTo()
+
+```crmscript
+DateTime GetPublishTo()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publication valid to (inclusive).
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime publishTo = thing.GetPublishTo();
+```
+
+## GetPublishType()
+
+```crmscript
+Integer GetPublishType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Type of publishing action. See &lt;xref href=\"CRMScript.NetServer.PublishType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer publishType = thing.GetPublishType();
+```
+
+## GetSignOff()
+
+```crmscript
+Bool GetSignOff()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is Sign Off functionality enabled?
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOff = thing.GetSignOff();
+```
+
+## GetSignOffConfirmationText()
+
+```crmscript
+String GetSignOffConfirmationText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text shown as confirmation text before accepting sign off.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOffConfirmationText = thing.GetSignOffConfirmationText();
+```
+
+## GetSignOffTaskEnable()
+
+```crmscript
+Bool GetSignOffTaskEnable()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If not 0, a task should be created when the external user Signs Off an event.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOffTaskEnable = thing.GetSignOffTaskEnable();
+```
+
+## GetSignOffTaskId()
+
+```crmscript
+Integer GetSignOffTaskId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If not 0, sign off should cause an Activity of this type to be registered.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer signOffTaskId = thing.GetSignOffTaskId();
+```
+
+## GetSignOffText()
+
+```crmscript
+String GetSignOffText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default text for the activity created when signing off.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOffText = thing.GetSignOffText();
+```
+
+## GetSignOffTriggersAssign()
+
+```crmscript
+Bool GetSignOffTriggersAssign()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If 1, the SignOff task should be created as an Assigned task, triggering the invitation dialog.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOffTriggersAssign = thing.GetSignOffTriggersAssign();
+```
+
+## GetSignOn()
+
+```crmscript
+Bool GetSignOn()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is Sign On functionality enabled.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOn = thing.GetSignOn();
+```
+
+## GetSignOnConfirmationText()
+
+```crmscript
+String GetSignOnConfirmationText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text shown as confirmation text before accepting sign on.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOnConfirmationText = thing.GetSignOnConfirmationText();
+```
+
+## GetSignOnTaskEnable()
+
+```crmscript
+Bool GetSignOnTaskEnable()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If not 0, a task should be created when the external user Signs On to an event.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOnTaskEnable = thing.GetSignOnTaskEnable();
+```
+
+## GetSignOnTaskId()
+
+```crmscript
+Integer GetSignOnTaskId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If not 0, sign on should cause an Activity of this type to be registered.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer signOnTaskId = thing.GetSignOnTaskId();
+```
+
+## GetSignOnText()
+
+```crmscript
+String GetSignOnText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default text for the activity created when signing on.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOnText = thing.GetSignOnText();
+```
+
+## GetSignOnTriggersAssign()
+
+```crmscript
+Bool GetSignOnTriggersAssign()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If 1, the SignOn task should be created as an Assigned task, triggering the invitation dialog.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOnTriggersAssign = thing.GetSignOnTriggersAssign();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the project event.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetVisibleForCategories()
+
+```crmscript
+NSMDOListItem[] GetVisibleForCategories()
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[] - Array of categories that the event is visible for. MDO Table category.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSMDOListItem[] visibleForCategories = thing.GetVisibleForCategories();
+```
+
+## GetVisibleForPersonInterests()
+
+```crmscript
+NSMDOListItem[] GetVisibleForPersonInterests()
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[] - Array of person interests (MDO table persint) that this event is visible for.
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSMDOListItem[] visibleForPersonInterests = thing.GetVisibleForPersonInterests();
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetEnabled(Bool)
+
+```crmscript
+Void SetEnabled(Bool enabled)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool enabled;
+thing.SetEnabled(enabled);
+```
+
+## SetEventDate(DateTime)
+
+```crmscript
+Void SetEventDate(DateTime eventDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime eventDate;
+thing.SetEventDate(eventDate);
+```
+
+## SetId(Integer)
+
+```crmscript
+Void SetId(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer id;
+thing.SetId(id);
+```
+
+## SetIsPublished(Bool)
+
+```crmscript
+Void SetIsPublished(Bool isPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isPublished;
+thing.SetIsPublished(isPublished);
+```
+
+## SetIsVisibleForCategories(Bool)
+
+```crmscript
+Void SetIsVisibleForCategories(Bool isVisibleForCategories)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isVisibleForCategories;
+thing.SetIsVisibleForCategories(isVisibleForCategories);
+```
+
+## SetIsVisibleForMembers(Bool)
+
+```crmscript
+Void SetIsVisibleForMembers(Bool isVisibleForMembers)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isVisibleForMembers;
+thing.SetIsVisibleForMembers(isVisibleForMembers);
+```
+
+## SetIsVisibleForPersonInterests(Bool)
+
+```crmscript
+Void SetIsVisibleForPersonInterests(Bool isVisibleForPersonInterests)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool isVisibleForPersonInterests;
+thing.SetIsVisibleForPersonInterests(isVisibleForPersonInterests);
+```
+
+## SetProjectEventId(Integer)
+
+```crmscript
+Void SetProjectEventId(Integer projectEventId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer projectEventId;
+thing.SetProjectEventId(projectEventId);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetPublishFrom(DateTime)
+
+```crmscript
+Void SetPublishFrom(DateTime publishFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime publishFrom;
+thing.SetPublishFrom(publishFrom);
+```
+
+## SetPublishTo(DateTime)
+
+```crmscript
+Void SetPublishTo(DateTime publishTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime publishTo;
+thing.SetPublishTo(publishTo);
+```
+
+## SetPublishType(Integer)
+
+```crmscript
+Void SetPublishType(Integer publishType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer publishType;
+thing.SetPublishType(publishType);
+```
+
+## SetSignOff(Bool)
+
+```crmscript
+Void SetSignOff(Bool signOff)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOff;
+thing.SetSignOff(signOff);
+```
+
+## SetSignOffConfirmationText(String)
+
+```crmscript
+Void SetSignOffConfirmationText(String signOffConfirmationText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOffConfirmationText;
+thing.SetSignOffConfirmationText(signOffConfirmationText);
+```
+
+## SetSignOffTaskEnable(Bool)
+
+```crmscript
+Void SetSignOffTaskEnable(Bool signOffTaskEnable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOffTaskEnable;
+thing.SetSignOffTaskEnable(signOffTaskEnable);
+```
+
+## SetSignOffTaskId(Integer)
+
+```crmscript
+Void SetSignOffTaskId(Integer signOffTaskId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer signOffTaskId;
+thing.SetSignOffTaskId(signOffTaskId);
+```
+
+## SetSignOffText(String)
+
+```crmscript
+Void SetSignOffText(String signOffText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOffText;
+thing.SetSignOffText(signOffText);
+```
+
+## SetSignOffTriggersAssign(Bool)
+
+```crmscript
+Void SetSignOffTriggersAssign(Bool signOffTriggersAssign)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOffTriggersAssign;
+thing.SetSignOffTriggersAssign(signOffTriggersAssign);
+```
+
+## SetSignOn(Bool)
+
+```crmscript
+Void SetSignOn(Bool signOn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOn;
+thing.SetSignOn(signOn);
+```
+
+## SetSignOnConfirmationText(String)
+
+```crmscript
+Void SetSignOnConfirmationText(String signOnConfirmationText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOnConfirmationText;
+thing.SetSignOnConfirmationText(signOnConfirmationText);
+```
+
+## SetSignOnTaskEnable(Bool)
+
+```crmscript
+Void SetSignOnTaskEnable(Bool signOnTaskEnable)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOnTaskEnable;
+thing.SetSignOnTaskEnable(signOnTaskEnable);
+```
+
+## SetSignOnTaskId(Integer)
+
+```crmscript
+Void SetSignOnTaskId(Integer signOnTaskId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Integer signOnTaskId;
+thing.SetSignOnTaskId(signOnTaskId);
+```
+
+## SetSignOnText(String)
+
+```crmscript
+Void SetSignOnText(String signOnText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+String signOnText;
+thing.SetSignOnText(signOnText);
+```
+
+## SetSignOnTriggersAssign(Bool)
+
+```crmscript
+Void SetSignOnTriggersAssign(Bool signOnTriggersAssign)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+Bool signOnTriggersAssign;
+thing.SetSignOnTriggersAssign(signOnTriggersAssign);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetVisibleForCategories(NSMDOListItem[])
+
+```crmscript
+Void SetVisibleForCategories(NSMDOListItem[] visibleForCategories)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSMDOListItem[] visibleForCategories;
+thing.SetVisibleForCategories(visibleForCategories);
+```
+
+## SetVisibleForPersonInterests(NSMDOListItem[])
+
+```crmscript
+Void SetVisibleForPersonInterests(NSMDOListItem[] visibleForPersonInterests)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectEventEntity thing;
+NSMDOListItem[] visibleForPersonInterests;
+thing.SetVisibleForPersonInterests(visibleForPersonInterests);
+```

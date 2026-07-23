@@ -1,0 +1,30 @@
+﻿---
+uid: crmscript.netserver.webhookstate
+title: Enum WebhookState
+description: "Webhook status: active, stopped, or tooManyErrors"
+keywords: CRMScript, WebhookState, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum WebhookState
+
+Webhook status: active, stopped, or tooManyErrors
+
+## Syntax
+
+```crmscript
+WebhookState
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | 0: Unknown state |
+| Active | 1: Active - webhook is posting events to receiver |
+| Stopped | 2: Stopped - webhook has been turned off. Not posting events to receiver. |
+| TooManyErrors | 3: Too many errors received - webhook has been turned off automatically. |

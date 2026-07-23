@@ -1,0 +1,337 @@
+﻿---
+uid: crmscript.netserver.nsprojecttypeentity
+title: NSProjectTypeEntity
+description: "Carrier object for ProjectTypeEntity."
+keywords: CRMScript, NSProjectTypeEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProjectTypeEntity
+
+Carrier object for ProjectTypeEntity.
+
+## Constructors
+
+### NSProjectTypeEntity()
+
+```crmscript
+NSProjectTypeEntity
+```
+
+Initializes a new instance of the NSProjectTypeEntity class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDurationUnit()
+
+```crmscript
+Integer GetDurationUnit()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Units for the duration. See &lt;xref href=\"CRMScript.NetServer.DurationUnit\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer durationUnit = thing.GetDurationUnit();
+```
+
+## GetHasGuide()
+
+```crmscript
+Bool GetHasGuide()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this project type have a guide attached.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Bool hasGuide = thing.GetHasGuide();
+```
+
+## GetIsAutoAdvance()
+
+```crmscript
+Bool GetIsAutoAdvance()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the project status advance automatically, when the last guided activity in a status is completed?
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Bool isAutoAdvance = thing.GetIsAutoAdvance();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+String name = thing.GetName();
+```
+
+## GetProjectDuration()
+
+```crmscript
+Integer GetProjectDuration()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Expected duration of project, in given units.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer projectDuration = thing.GetProjectDuration();
+```
+
+## GetProjTypeId()
+
+```crmscript
+Integer GetProjTypeId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer projTypeId = thing.GetProjTypeId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetStages()
+
+```crmscript
+NSSelectableMDOListItem[] GetStages()
+```
+
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - Stages (project statuses), those associated with this ProjType are selected.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+NSSelectableMDOListItem[] stages = thing.GetStages();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDurationUnit(Integer)
+
+```crmscript
+Void SetDurationUnit(Integer durationUnit)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer durationUnit;
+thing.SetDurationUnit(durationUnit);
+```
+
+## SetHasGuide(Bool)
+
+```crmscript
+Void SetHasGuide(Bool hasGuide)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Bool hasGuide;
+thing.SetHasGuide(hasGuide);
+```
+
+## SetIsAutoAdvance(Bool)
+
+```crmscript
+Void SetIsAutoAdvance(Bool isAutoAdvance)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Bool isAutoAdvance;
+thing.SetIsAutoAdvance(isAutoAdvance);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetProjectDuration(Integer)
+
+```crmscript
+Void SetProjectDuration(Integer projectDuration)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer projectDuration;
+thing.SetProjectDuration(projectDuration);
+```
+
+## SetProjTypeId(Integer)
+
+```crmscript
+Void SetProjTypeId(Integer projTypeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer projTypeId;
+thing.SetProjTypeId(projTypeId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetStages(NSSelectableMDOListItem[])
+
+```crmscript
+Void SetStages(NSSelectableMDOListItem[] stages)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+NSSelectableMDOListItem[] stages;
+thing.SetStages(stages);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProjectTypeEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```

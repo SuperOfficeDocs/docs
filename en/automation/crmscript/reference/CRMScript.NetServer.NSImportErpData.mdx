@@ -1,0 +1,89 @@
+﻿---
+uid: crmscript.netserver.nsimporterpdata
+title: NSImportErpData
+description: "Used to import data into the system. Representing one entity that will be imported."
+keywords: CRMScript, NSImportErpData, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSImportErpData
+
+Used to import data into the system. Representing one entity that will be imported.
+
+## Constructors
+
+### NSImportErpData()
+
+```crmscript
+NSImportErpData
+```
+
+Initializes a new instance of the NSImportErpData class.
+
+## Methods
+
+## GetColumnInfos()
+
+```crmscript
+NSImportColumnInfo[] GetColumnInfos()
+```
+
+**Returns:** [CRMScript.NetServer.NSImportColumnInfo](CRMScript.NetServer.NSImportColumnInfo)[] - Array of column definitions.
+
+**Example:**
+
+```crmscript
+NSImportErpData thing;
+NSImportColumnInfo[] columnInfos = thing.GetColumnInfos();
+```
+
+## GetImportLines()
+
+```crmscript
+NSImportLine[] GetImportLines()
+```
+
+**Returns:** [CRMScript.NetServer.NSImportLine](CRMScript.NetServer.NSImportLine)[] - An array of Import lines.
+
+**Example:**
+
+```crmscript
+NSImportErpData thing;
+NSImportLine[] importLines = thing.GetImportLines();
+```
+
+## SetColumnInfos(NSImportColumnInfo[])
+
+```crmscript
+Void SetColumnInfos(NSImportColumnInfo[] columnInfos)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportErpData thing;
+NSImportColumnInfo[] columnInfos;
+thing.SetColumnInfos(columnInfos);
+```
+
+## SetImportLines(NSImportLine[])
+
+```crmscript
+Void SetImportLines(NSImportLine[] importLines)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSImportErpData thing;
+NSImportLine[] importLines;
+thing.SetImportLines(importLines);
+```

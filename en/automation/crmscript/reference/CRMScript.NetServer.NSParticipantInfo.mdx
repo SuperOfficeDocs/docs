@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nsparticipantinfo
+title: NSParticipantInfo
+description: "Represents an appointment participant."
+keywords: CRMScript, NSParticipantInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSParticipantInfo
+
+Represents an appointment participant.
+
+## Constructors
+
+### NSParticipantInfo()
+
+```crmscript
+NSParticipantInfo
+```
+
+Initializes a new instance of the NSParticipantInfo class.
+
+## Methods
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Associate ID of the participant if the participant is an associate (or resource).
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Contact ID of the participant if the participant is an associate or person.
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetEmailId()
+
+```crmscript
+Integer GetEmailId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The email ID of the email belonging to the appointment record belonging to this person.
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer emailId = thing.GetEmailId();
+```
+
+## GetInvitationStatus()
+
+```crmscript
+Integer GetInvitationStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The participant status for the appointment.
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer invitationStatus = thing.GetInvitationStatus();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Person ID of the participant if the participant is a person.
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetSendEmail()
+
+```crmscript
+Bool GetSendEmail()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the participant has been sent an email or should be sent an email.
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Bool sendEmail = thing.GetSendEmail();
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetEmailId(Integer)
+
+```crmscript
+Void SetEmailId(Integer emailId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer emailId;
+thing.SetEmailId(emailId);
+```
+
+## SetInvitationStatus(Integer)
+
+```crmscript
+Void SetInvitationStatus(Integer invitationStatus)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer invitationStatus;
+thing.SetInvitationStatus(invitationStatus);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetSendEmail(Bool)
+
+```crmscript
+Void SetSendEmail(Bool sendEmail)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSParticipantInfo thing;
+Bool sendEmail;
+thing.SetSendEmail(sendEmail);
+```

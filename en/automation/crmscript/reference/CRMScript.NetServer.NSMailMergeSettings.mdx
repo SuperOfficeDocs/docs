@@ -1,0 +1,688 @@
+﻿---
+uid: crmscript.netserver.nsmailmergesettings
+title: NSMailMergeSettings
+description: "Settings specifying what selection to perform the mailmerge on, what merge document to use etc."
+keywords: CRMScript, NSMailMergeSettings, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSMailMergeSettings
+
+Settings specifying what selection to perform the mailmerge on, what merge document to use etc.
+
+## Constructors
+
+### NSMailMergeSettings()
+
+```crmscript
+NSMailMergeSettings
+```
+
+Initializes a new instance of the NSMailMergeSettings class.
+
+## Methods
+
+## GetAddCompanyInterest()
+
+Adds this company interest to each company recipient.
+
+```crmscript
+Integer GetAddCompanyInterest()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer addCompanyInterest = thing.GetAddCompanyInterest();
+```
+
+## GetAddPersonInterest()
+
+Adds this person interest to each person recipient.
+
+```crmscript
+Integer GetAddPersonInterest()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer addPersonInterest = thing.GetAddPersonInterest();
+```
+
+## GetAlwaysUseCustomAttention()
+
+```crmscript
+Bool GetAlwaysUseCustomAttention()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should custom attention always be used? If false, only use custom attention where there is no default.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool alwaysUseCustomAttention = thing.GetAlwaysUseCustomAttention();
+```
+
+## GetCustomAttention()
+
+```crmscript
+String GetCustomAttention()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Custom value for attention.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String customAttention = thing.GetCustomAttention();
+```
+
+## GetCustomMailBody()
+
+```crmscript
+String GetCustomMailBody()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If specified, use this value as default mail body.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String customMailBody = thing.GetCustomMailBody();
+```
+
+## GetCustomMailSubject()
+
+```crmscript
+String GetCustomMailSubject()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If specified, use this value as default mail subject.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String customMailSubject = thing.GetCustomMailSubject();
+```
+
+## GetDocumentId()
+
+```crmscript
+Integer GetDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identity of document to be used as merge draft.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer documentId = thing.GetDocumentId();
+```
+
+## GetExtraInfo()
+
+```crmscript
+String GetExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Used to store additional information for the delivery systems.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String extraInfo = thing.GetExtraInfo();
+```
+
+## GetIncludeNoMailingsRecipient()
+
+```crmscript
+Bool GetIncludeNoMailingsRecipient()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Include recipients that are marked with NoMailings.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool includeNoMailingsRecipient = thing.GetIncludeNoMailingsRecipient();
+```
+
+## GetIncludeRetiredRecipients()
+
+```crmscript
+Bool GetIncludeRetiredRecipients()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Include recipients that are marked as retired.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool includeRetiredRecipients = thing.GetIncludeRetiredRecipients();
+```
+
+## GetIncludeStoppedRecipients()
+
+Include recipients that are marked with stop
+
+```crmscript
+Bool GetIncludeStoppedRecipients()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool includeStoppedRecipients = thing.GetIncludeStoppedRecipients();
+```
+
+## GetIsTemporarySelection()
+
+```crmscript
+Bool GetIsTemporarySelection()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the selection is a temporary selection that can be deleted later.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool isTemporarySelection = thing.GetIsTemporarySelection();
+```
+
+## GetMailMergeDeliveryType()
+
+```crmscript
+Integer GetMailMergeDeliveryType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How the merged document is delivered to the recipients. See &lt;xref href=\"CRMScript.NetServer.EMailMergeTargetType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer mailMergeDeliveryType = thing.GetMailMergeDeliveryType();
+```
+
+## GetProjectId()
+
+```crmscript
+Integer GetProjectId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identity of project to use as source for recipients.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer projectId = thing.GetProjectId();
+```
+
+## GetRemoveCompanyInterest()
+
+```crmscript
+Integer GetRemoveCompanyInterest()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Remove this company interest on each company recipient.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer removeCompanyInterest = thing.GetRemoveCompanyInterest();
+```
+
+## GetRemovePersonInterest()
+
+```crmscript
+Integer GetRemovePersonInterest()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Remove this person interest on each person recipient.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer removePersonInterest = thing.GetRemovePersonInterest();
+```
+
+## GetSaveDocument()
+
+```crmscript
+Bool GetSaveDocument()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should we save a reference to the merge document on each recipient.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool saveDocument = thing.GetSaveDocument();
+```
+
+## GetSelectionId()
+
+```crmscript
+Integer GetSelectionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identity of selection to use as source for recipients.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer selectionId = thing.GetSelectionId();
+```
+
+## GetSynchronous()
+
+```crmscript
+Bool GetSynchronous()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool synchronous = thing.GetSynchronous();
+```
+
+## GetTaskEntity()
+
+```crmscript
+NSMailMergeTask GetTaskEntity()
+```
+
+**Returns:** [CRMScript.NetServer.NSMailMergeTask](CRMScript.NetServer.NSMailMergeTask) - If specified, register a task on recipients using properties from this object.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+NSMailMergeTask taskEntity = thing.GetTaskEntity();
+```
+
+## GetTestOnly()
+
+```crmscript
+Bool GetTestOnly()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, do the merge task, but use current user as target, instead of selection members.
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool testOnly = thing.GetTestOnly();
+```
+
+## SetAddCompanyInterest(Integer)
+
+Adds this company interest to each company recipient.
+
+```crmscript
+Void SetAddCompanyInterest(Integer addCompanyInterest)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer addCompanyInterest;
+thing.SetAddCompanyInterest(addCompanyInterest);
+```
+
+## SetAddPersonInterest(Integer)
+
+Adds this person interest to each person recipient.
+
+```crmscript
+Void SetAddPersonInterest(Integer addPersonInterest)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer addPersonInterest;
+thing.SetAddPersonInterest(addPersonInterest);
+```
+
+## SetAlwaysUseCustomAttention(Bool)
+
+```crmscript
+Void SetAlwaysUseCustomAttention(Bool alwaysUseCustomAttention)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool alwaysUseCustomAttention;
+thing.SetAlwaysUseCustomAttention(alwaysUseCustomAttention);
+```
+
+## SetCustomAttention(String)
+
+```crmscript
+Void SetCustomAttention(String customAttention)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String customAttention;
+thing.SetCustomAttention(customAttention);
+```
+
+## SetCustomMailBody(String)
+
+```crmscript
+Void SetCustomMailBody(String customMailBody)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String customMailBody;
+thing.SetCustomMailBody(customMailBody);
+```
+
+## SetCustomMailSubject(String)
+
+```crmscript
+Void SetCustomMailSubject(String customMailSubject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String customMailSubject;
+thing.SetCustomMailSubject(customMailSubject);
+```
+
+## SetDocumentId(Integer)
+
+```crmscript
+Void SetDocumentId(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer documentId;
+thing.SetDocumentId(documentId);
+```
+
+## SetExtraInfo(String)
+
+```crmscript
+Void SetExtraInfo(String extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+String extraInfo;
+thing.SetExtraInfo(extraInfo);
+```
+
+## SetIncludeNoMailingsRecipient(Bool)
+
+```crmscript
+Void SetIncludeNoMailingsRecipient(Bool includeNoMailingsRecipient)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool includeNoMailingsRecipient;
+thing.SetIncludeNoMailingsRecipient(includeNoMailingsRecipient);
+```
+
+## SetIncludeRetiredRecipients(Bool)
+
+```crmscript
+Void SetIncludeRetiredRecipients(Bool includeRetiredRecipients)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool includeRetiredRecipients;
+thing.SetIncludeRetiredRecipients(includeRetiredRecipients);
+```
+
+## SetIncludeStoppedRecipients(Bool)
+
+```crmscript
+Void SetIncludeStoppedRecipients(Bool includeStoppedRecipients)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool includeStoppedRecipients;
+thing.SetIncludeStoppedRecipients(includeStoppedRecipients);
+```
+
+## SetIsTemporarySelection(Bool)
+
+```crmscript
+Void SetIsTemporarySelection(Bool isTemporarySelection)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool isTemporarySelection;
+thing.SetIsTemporarySelection(isTemporarySelection);
+```
+
+## SetMailMergeDeliveryType(Integer)
+
+```crmscript
+Void SetMailMergeDeliveryType(Integer mailMergeDeliveryType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer mailMergeDeliveryType;
+thing.SetMailMergeDeliveryType(mailMergeDeliveryType);
+```
+
+## SetProjectId(Integer)
+
+```crmscript
+Void SetProjectId(Integer projectId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer projectId;
+thing.SetProjectId(projectId);
+```
+
+## SetRemoveCompanyInterest(Integer)
+
+```crmscript
+Void SetRemoveCompanyInterest(Integer removeCompanyInterest)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer removeCompanyInterest;
+thing.SetRemoveCompanyInterest(removeCompanyInterest);
+```
+
+## SetRemovePersonInterest(Integer)
+
+```crmscript
+Void SetRemovePersonInterest(Integer removePersonInterest)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer removePersonInterest;
+thing.SetRemovePersonInterest(removePersonInterest);
+```
+
+## SetSaveDocument(Bool)
+
+```crmscript
+Void SetSaveDocument(Bool saveDocument)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool saveDocument;
+thing.SetSaveDocument(saveDocument);
+```
+
+## SetSelectionId(Integer)
+
+```crmscript
+Void SetSelectionId(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Integer selectionId;
+thing.SetSelectionId(selectionId);
+```
+
+## SetSynchronous(Bool)
+
+```crmscript
+Void SetSynchronous(Bool synchronous)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool synchronous;
+thing.SetSynchronous(synchronous);
+```
+
+## SetTaskEntity(NSMailMergeSettings)
+
+```crmscript
+Void SetTaskEntity(NSMailMergeTask taskEntity)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+NSMailMergeTask taskEntity;
+thing.SetTaskEntity(taskEntity);
+```
+
+## SetTestOnly(Bool)
+
+```crmscript
+Void SetTestOnly(Bool testOnly)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSMailMergeSettings thing;
+Bool testOnly;
+thing.SetTestOnly(testOnly);
+```

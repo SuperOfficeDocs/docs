@@ -1,0 +1,31 @@
+﻿---
+uid: crmscript.netserver.upsertrowactionstatus
+title: Enum UpsertRowActionStatus
+description: "Upsert: Action status for each row"
+keywords: CRMScript, UpsertRowActionStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum UpsertRowActionStatus
+
+Upsert: Action status for each row
+
+## Syntax
+
+```crmscript
+UpsertRowActionStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Inserted | Row not found in target, inserted; primary key assigned as required |
+| Updated | Row found in target, update needed |
+| NoUpdateNeeded | Row found in target, no updated needed |
+| Deleted | Row not matched in incoming keys and DELETED |
+| ColumnsZeroed | Row not matched in incoming keys and COLUMNS ZEROED |

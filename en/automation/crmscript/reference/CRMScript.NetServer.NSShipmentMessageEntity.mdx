@@ -1,0 +1,676 @@
+﻿---
+uid: crmscript.netserver.nsshipmentmessageentity
+title: NSShipmentMessageEntity
+description: ""
+keywords: CRMScript, NSShipmentMessageEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSShipmentMessageEntity
+
+## Constructors
+
+### NSShipmentMessageEntity()
+
+```crmscript
+NSShipmentMessageEntity
+```
+
+Initializes a new instance of the NSShipmentMessageEntity class.
+
+## Methods
+
+## GetAccessKey()
+
+```crmscript
+String GetAccessKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key used for access verification.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String accessKey = thing.GetAccessKey();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Describes this message.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetDesign()
+
+```crmscript
+String GetDesign()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Will contain the design part of a message. The format will vary based on the type of designer used to create the message.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String design = thing.GetDesign();
+```
+
+## GetDesigntype()
+
+```crmscript
+Integer GetDesigntype()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of the design. See &lt;xref href=\"CRMScript.NetServer.DesignType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer designType = thing.GetDesigntype();
+```
+
+## GetDocumentMessage()
+
+```crmscript
+Integer GetDocumentMessage()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The SM document used as template for this mailing.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer documentMessage = thing.GetDocumentMessage();
+```
+
+## GetFlags()
+
+```crmscript
+Integer GetFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Identifies if HTML or plain message is included in message. See &lt;xref href=\"CRMScript.NetServer.ShipmentMessageType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer flags = thing.GetFlags();
+```
+
+## GetFolderId()
+
+```crmscript
+Integer GetFolderId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The folder which this message belongs to. -1 indicates that the message is on the root.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer folderId = thing.GetFolderId();
+```
+
+## GetHeaderField()
+
+```crmscript
+String GetHeaderField()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Extra header fields added to mail. Must be formatted correctly.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String headerField = thing.GetHeaderField();
+```
+
+## GetHtmlMessage()
+
+```crmscript
+String GetHtmlMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - HTML formatted text of this message.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String htmlMessage = thing.GetHtmlMessage();
+```
+
+## GetInlineImages()
+
+```crmscript
+Bool GetInlineImages()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should images be included inline?
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Bool inlineImages = thing.GetInlineImages();
+```
+
+## GetLongDescription()
+
+```crmscript
+String GetLongDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A field for a long description of this template.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String longDescription = thing.GetLongDescription();
+```
+
+## GetPlainMessage()
+
+```crmscript
+String GetPlainMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Plain message text of this message.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String plainMessage = thing.GetPlainMessage();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetRegisteredAssociateId()
+
+```crmscript
+Integer GetRegisteredAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Registered by whom.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer registeredAssociateId = thing.GetRegisteredAssociateId();
+```
+
+## GetRegisterViews()
+
+```crmscript
+Bool GetRegisterViews()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Register message views?
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Bool registerViews = thing.GetRegisterViews();
+```
+
+## GetShipmentMessageId()
+
+```crmscript
+Integer GetShipmentMessageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer shipmentMessageId = thing.GetShipmentMessageId();
+```
+
+## GetSmsMessage()
+
+```crmscript
+String GetSmsMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - SMS version of this message.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String smsMessage = thing.GetSmsMessage();
+```
+
+## GetSubject()
+
+```crmscript
+String GetSubject()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The mail subject field of the message.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String subject = thing.GetSubject();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedAssociateId()
+
+```crmscript
+Integer GetUpdatedAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Last updated by whom.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer updatedAssociateId = thing.GetUpdatedAssociateId();
+```
+
+## GetUpdatedCount()
+
+```crmscript
+Integer GetUpdatedCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of updates made to this record.
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer updatedCount = thing.GetUpdatedCount();
+```
+
+## SetAccessKey(String)
+
+```crmscript
+Void SetAccessKey(String accessKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String accessKey;
+thing.SetAccessKey(accessKey);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDesign(String)
+
+```crmscript
+Void SetDesign(String design)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String design;
+thing.SetDesign(design);
+```
+
+## SetDesigntype(Integer)
+
+```crmscript
+Void SetDesigntype(Integer designType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer designType;
+thing.SetDesigntype(designType);
+```
+
+## SetDocumentMessage(Integer)
+
+```crmscript
+Void SetDocumentMessage(Integer documentMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer documentMessage;
+thing.SetDocumentMessage(documentMessage);
+```
+
+## SetFlags(Integer)
+
+```crmscript
+Void SetFlags(Integer flags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer flags;
+thing.SetFlags(flags);
+```
+
+## SetFolderId(Integer)
+
+```crmscript
+Void SetFolderId(Integer folderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer folderId;
+thing.SetFolderId(folderId);
+```
+
+## SetHeaderField(String)
+
+```crmscript
+Void SetHeaderField(String headerField)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String headerField;
+thing.SetHeaderField(headerField);
+```
+
+## SetHtmlMessage(String)
+
+```crmscript
+Void SetHtmlMessage(String htmlMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String htmlMessage;
+thing.SetHtmlMessage(htmlMessage);
+```
+
+## SetInlineImages(Bool)
+
+```crmscript
+Void SetInlineImages(Bool inlineImages)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Bool inlineImages;
+thing.SetInlineImages(inlineImages);
+```
+
+## SetLongDescription(String)
+
+```crmscript
+Void SetLongDescription(String longDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String longDescription;
+thing.SetLongDescription(longDescription);
+```
+
+## SetPlainMessage(String)
+
+```crmscript
+Void SetPlainMessage(String plainMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String plainMessage;
+thing.SetPlainMessage(plainMessage);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetRegisteredAssociateId(Integer)
+
+```crmscript
+Void SetRegisteredAssociateId(Integer registeredAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer registeredAssociateId;
+thing.SetRegisteredAssociateId(registeredAssociateId);
+```
+
+## SetRegisterViews(Bool)
+
+```crmscript
+Void SetRegisterViews(Bool registerViews)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Bool registerViews;
+thing.SetRegisterViews(registerViews);
+```
+
+## SetShipmentMessageId(Integer)
+
+```crmscript
+Void SetShipmentMessageId(Integer shipmentMessageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer shipmentMessageId;
+thing.SetShipmentMessageId(shipmentMessageId);
+```
+
+## SetSmsMessage(String)
+
+```crmscript
+Void SetSmsMessage(String smsMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String smsMessage;
+thing.SetSmsMessage(smsMessage);
+```
+
+## SetSubject(String)
+
+```crmscript
+Void SetSubject(String subject)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+String subject;
+thing.SetSubject(subject);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedAssociateId(Integer)
+
+```crmscript
+Void SetUpdatedAssociateId(Integer updatedAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer updatedAssociateId;
+thing.SetUpdatedAssociateId(updatedAssociateId);
+```
+
+## SetUpdatedCount(Integer)
+
+```crmscript
+Void SetUpdatedCount(Integer updatedCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSShipmentMessageEntity thing;
+Integer updatedCount;
+thing.SetUpdatedCount(updatedCount);
+```

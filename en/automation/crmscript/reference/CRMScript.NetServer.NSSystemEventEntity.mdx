@@ -1,0 +1,339 @@
+﻿---
+uid: crmscript.netserver.nssystemevententity
+title: NSSystemEventEntity
+description: "Entity for system events."
+keywords: CRMScript, NSSystemEventEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSSystemEventEntity
+
+Entity for system events.
+
+## Constructors
+
+### NSSystemEventEntity()
+
+```crmscript
+NSSystemEventEntity
+```
+
+Initializes a new instance of the NSSystemEventEntity class.
+
+## Methods
+
+## GetActivatedBy()
+
+```crmscript
+NSAssociate GetActivatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate that first created the SystemEvent.
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+NSAssociate activatedBy = thing.GetActivatedBy();
+```
+
+## GetEta()
+
+```crmscript
+DateTime GetEta()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Estimated Time of Arrival, i.e., when will this event finish?
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+DateTime eta = thing.GetEta();
+```
+
+## GetEventkey()
+
+```crmscript
+String GetEventkey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Event key, predefined in code.
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+String eventkey = thing.GetEventkey();
+```
+
+## GetEventmess()
+
+```crmscript
+String GetEventmess()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Message to be shown, entered by administrator.
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+String eventmess = thing.GetEventmess();
+```
+
+## GetExtraInfo()
+
+```crmscript
+Integer GetExtraInfo()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Extra information (area ID for prototype rebuild, etc).
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer extraInfo = thing.GetExtraInfo();
+```
+
+## GetOwner()
+
+```crmscript
+Integer GetOwner()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 0, 0, group_id, assoc id (see over).
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer owner = thing.GetOwner();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetScope()
+
+```crmscript
+Integer GetScope()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.SystemEventScope\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer scope = thing.GetScope();
+```
+
+## GetSystemEventId()
+
+```crmscript
+Integer GetSystemEventId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer systemEventId = thing.GetSystemEventId();
+```
+
+## GetUpdatedCount()
+
+```crmscript
+Integer GetUpdatedCount()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of updates made to this record.
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer updatedCount = thing.GetUpdatedCount();
+```
+
+## SetActivatedBy(NSAssociate)
+
+```crmscript
+Void SetActivatedBy(NSAssociate activatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+NSAssociate activatedBy;
+thing.SetActivatedBy(activatedBy);
+```
+
+## SetEta(DateTime)
+
+```crmscript
+Void SetEta(DateTime eta)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+DateTime eta;
+thing.SetEta(eta);
+```
+
+## SetEventkey(String)
+
+Event key, predefined in code
+
+```crmscript
+Void SetEventkey(String eventkey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+String eventkey;
+thing.SetEventkey(eventkey);
+```
+
+## SetEventmess(String)
+
+```crmscript
+Void SetEventmess(String eventmess)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+String eventmess;
+thing.SetEventmess(eventmess);
+```
+
+## SetExtraInfo(Integer)
+
+```crmscript
+Void SetExtraInfo(Integer extraInfo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer extraInfo;
+thing.SetExtraInfo(extraInfo);
+```
+
+## SetOwner(Integer)
+
+```crmscript
+Void SetOwner(Integer owner)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer owner;
+thing.SetOwner(owner);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetScope(Integer)
+
+```crmscript
+Void SetScope(Integer scope)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer scope;
+thing.SetScope(scope);
+```
+
+## SetSystemEventId(Integer)
+
+```crmscript
+Void SetSystemEventId(Integer systemEventId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer systemEventId;
+thing.SetSystemEventId(systemEventId);
+```
+
+## SetUpdatedCount(Integer)
+
+```crmscript
+Void SetUpdatedCount(Integer updatedCount)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSSystemEventEntity thing;
+Integer updatedCount;
+thing.SetUpdatedCount(updatedCount);
+```

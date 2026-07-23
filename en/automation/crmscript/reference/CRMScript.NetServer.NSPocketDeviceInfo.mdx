@@ -1,0 +1,244 @@
+﻿---
+uid: crmscript.netserver.nspocketdeviceinfo
+title: NSPocketDeviceInfo
+description: "Describes a device running Pocket CRM."
+keywords: CRMScript, NSPocketDeviceInfo, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSPocketDeviceInfo
+
+Describes a device running Pocket CRM.
+
+## Constructors
+
+### NSPocketDeviceInfo()
+
+```crmscript
+NSPocketDeviceInfo
+```
+
+Initializes a new instance of the NSPocketDeviceInfo class.
+
+## Methods
+
+## GetDeviceIdentifier()
+
+```crmscript
+String GetDeviceIdentifier()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A unique identifier of this device. This value should always be the same for the same device.
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String deviceIdentifier = thing.GetDeviceIdentifier();
+```
+
+## GetDeviceName()
+
+```crmscript
+String GetDeviceName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A friendly display name for the device. For example, 'Bobbys iPhone 5S'.
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String deviceName = thing.GetDeviceName();
+```
+
+## GetLanguage()
+
+```crmscript
+String GetLanguage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The language which this device will receive notifications translated in.
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String language = thing.GetLanguage();
+```
+
+## GetOSVersion()
+
+```crmscript
+String GetOSVersion()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The operating system version. For example, 'iOS v10.2.
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String oSVersion = thing.GetOSVersion();
+```
+
+## GetPlatform()
+
+```crmscript
+Integer GetPlatform()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What platform does this device belong to. See &lt;xref href=\"CRMScript.NetServer.NotificationPlatform\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+Integer platform = thing.GetPlatform();
+```
+
+## GetPNSHandle()
+
+```crmscript
+String GetPNSHandle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The identifier associated with the device that will be used when talking with vendors push services.
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String pNSHandle = thing.GetPNSHandle();
+```
+
+## GetPocketVersion()
+
+```crmscript
+String GetPocketVersion()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - What version of Pocket CRM this device is running. For example, '8.0.37'
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String pocketVersion = thing.GetPocketVersion();
+```
+
+## SetDeviceIdentifier(String)
+
+```crmscript
+Void SetDeviceIdentifier(String deviceIdentifier)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String deviceIdentifier;
+thing.SetDeviceIdentifier(deviceIdentifier);
+```
+
+## SetDeviceName(String)
+
+```crmscript
+Void SetDeviceName(String deviceName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String deviceName;
+thing.SetDeviceName(deviceName);
+```
+
+## SetLanguage(String)
+
+```crmscript
+Void SetLanguage(String language)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String language;
+thing.SetLanguage(language);
+```
+
+## SetOSVersion(String)
+
+```crmscript
+Void SetOSVersion(String oSVersion)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String oSVersion;
+thing.SetOSVersion(oSVersion);
+```
+
+## SetPlatform(Integer)
+
+```crmscript
+Void SetPlatform(Integer platform)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+Integer platform;
+thing.SetPlatform(platform);
+```
+
+## SetPNSHandle(String)
+
+```crmscript
+Void SetPNSHandle(String pNSHandle)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String pNSHandle;
+thing.SetPNSHandle(pNSHandle);
+```
+
+## SetPocketVersion(String)
+
+```crmscript
+Void SetPocketVersion(String pocketVersion)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSPocketDeviceInfo thing;
+String pocketVersion;
+thing.SetPocketVersion(pocketVersion);
+```

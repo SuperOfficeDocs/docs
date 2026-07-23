@@ -1,0 +1,30 @@
+﻿---
+uid: crmscript.netserver.quotestatus
+title: Enum QuoteStatus
+description: "The state of a quote-alternative or line: Ok / OkWithInfo / Warn / Error"
+keywords: CRMScript, QuoteStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum QuoteStatus
+
+The state of a quote-alternative or line: Ok / OkWithInfo / Warn / Error
+
+## Syntax
+
+```crmscript
+QuoteStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Ok | OK, all is good |
+| OkWithInfo | All is good, but there is some additional information that the user should be made aware of. |
+| Warning | There is a problem that the user must be made aware of. |
+| Error | There is a problem that the system will not be able to get around. The user needs to do something. Example: The user has registered a quoteline that is discountinued and the amount the user has registered is not in stock. |

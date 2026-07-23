@@ -1,0 +1,387 @@
+﻿---
+uid: crmscript.netserver.nsdashagent
+title: NSDashAgent
+description: "Carrier object for managing various dashboard operations."
+keywords: CRMScript, NSDashAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDashAgent
+
+Carrier object for managing various dashboard operations.
+
+## Constructors
+
+### NSDashAgent()
+
+```crmscript
+NSDashAgent
+```
+
+Initializes a new instance of the NSDashAgent class.
+
+## Methods
+
+## AddNewTileToDashboard(Integer, NSDashTileDefinition)
+
+Adds a new tile to the specified dashboard.
+
+```crmscript
+NSDashTile AddNewTileToDashboard(Integer dashboardId, NSDashTileDefinition tileDefinition)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)
+
+## AddTileToDashboard(Integer, Integer)
+
+Adds an existing tile to a specified dashboard.
+
+```crmscript
+NSDashTile AddTileToDashboard(Integer dashboardId, Integer tileId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)
+
+## CopyTileSelection(Integer)
+
+Copies the specified tile selection.
+
+```crmscript
+Integer CopyTileSelection(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## CreateDashTileSelectionFromEntity(String)
+
+Creates a dash tile selection based on the specified entity.
+
+```crmscript
+Integer CreateDashTileSelectionFromEntity(String entity)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## CreateDefaultDash
+
+Generates a default dashboard.
+
+```crmscript
+NSDash CreateDefaultDash()
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)
+
+## CreateDefaultDashCollection
+
+Generates a default collection of dashboards.
+
+```crmscript
+NSDashCollection CreateDefaultDashCollection()
+```
+
+**Returns:** [CRMScript.NetServer.NSDashCollection](CRMScript.NetServer.NSDashCollection)
+
+## CreateDefaultDashTheme
+
+Creates a default theme for dashboards.
+
+```crmscript
+NSDashTheme CreateDefaultDashTheme()
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTheme](CRMScript.NetServer.NSDashTheme)
+
+## CreateDefaultDashTile
+
+Generates a default tile for dashboards.
+
+```crmscript
+NSDashTile CreateDefaultDashTile()
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)
+
+## CreateDefaultDashTileDefinition
+
+Creates a default definition for a dashboard tile.
+
+```crmscript
+NSDashTileDefinition CreateDefaultDashTileDefinition()
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTileDefinition](CRMScript.NetServer.NSDashTileDefinition)
+
+## CreateDefaultPreviewDash
+
+Generates a default preview dashboard.
+
+```crmscript
+NSPreviewDash CreateDefaultPreviewDash()
+```
+
+**Returns:** [CRMScript.NetServer.NSPreviewDash](CRMScript.NetServer.NSPreviewDash)
+
+## CreateDefaultPreviewDashTile
+
+Creates a default tile for preview dashboards.
+
+```crmscript
+NSPreviewDashTile CreateDefaultPreviewDashTile()
+```
+
+**Returns:** [CRMScript.NetServer.NSPreviewDashTile](CRMScript.NetServer.NSPreviewDashTile)
+
+## CreateDefaultTileForEntity(String)
+
+Creates a default tile for the specified entity.
+
+```crmscript
+NSDashTile CreateDefaultTileForEntity(String entity)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)
+
+## DeleteDash(Integer)
+
+Deletes a specified dashboard.
+
+```crmscript
+Void DeleteDash(Integer dashId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteDashTheme(Integer)
+
+Deletes the specified dashboard theme.
+
+```crmscript
+Void DeleteDashTheme(Integer themeId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteDashTile(Integer)
+
+Deletes a specified dashboard tile.
+
+```crmscript
+Void DeleteDashTile(Integer tileId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DeleteDashTileDefinition(Integer)
+
+Deletes the specified tile definition.
+
+```crmscript
+Void DeleteDashTileDefinition(Integer tileDefinitionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## DuplicateDashboard(Integer, String)
+
+Creates a copy of the specified dashboard with a new name.
+
+```crmscript
+NSDash DuplicateDashboard(Integer dashId, String newName)
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)
+
+## DuplicateTile(Integer, String)
+
+Duplicates a tile with a new name.
+
+```crmscript
+NSDashTile DuplicateTile(Integer tileId, String newName)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)
+
+## GetDash(Integer)
+
+Retrieves a specific dashboard by ID.
+
+```crmscript
+NSDash GetDash(Integer dashId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)
+
+## GetDashCollection
+
+Retrieves the current collection of dashboards.
+
+```crmscript
+NSDashCollection GetDashCollection()
+```
+
+**Returns:** [CRMScript.NetServer.NSDashCollection](CRMScript.NetServer.NSDashCollection)
+
+## GetDashList(Integer[])
+
+Retrieves a list of dashboards based on an array of IDs.
+
+```crmscript
+NSDash[] GetDashList(Integer[] dashIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)[]
+
+## GetDashTheme(Integer)
+
+Retrieves a specific dashboard theme by ID.
+
+```crmscript
+NSDashTheme GetDashTheme(Integer themeId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTheme](CRMScript.NetServer.NSDashTheme)
+
+## GetDashTile(Integer)
+
+Retrieves a specific tile from a dashboard by ID.
+
+```crmscript
+NSDashTile GetDashTile(Integer tileId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)
+
+## GetDashTileDefinition(Integer)
+
+Retrieves a tile definition by ID.
+
+```crmscript
+NSDashTileDefinition GetDashTileDefinition(Integer tileDefinitionId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTileDefinition](CRMScript.NetServer.NSDashTileDefinition)
+
+## GetDashTileHtml(Integer, String)
+
+Retrieves the HTML content for a specific dashboard tile.
+
+```crmscript
+NSDashTileHtml GetDashTileHtml(Integer tileId, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTileHtml](CRMScript.NetServer.NSDashTileHtml)
+
+## GetDashTileHtmlList(Integer)
+
+Retrieves a list of HTML content for all tiles in a dashboard.
+
+```crmscript
+NSDashTileHtml[] GetDashTileHtmlList(Integer dashId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTileHtml](CRMScript.NetServer.NSDashTileHtml)[]
+
+## GetDashTiles(Integer)
+
+Retrieves all tiles in the specified dashboard.
+
+```crmscript
+NSDashTile[] GetDashTiles(Integer dashId)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)[]
+
+## GetPreviewDash(Integer)
+
+Retrieves a preview version of a specific dashboard.
+
+```crmscript
+NSPreviewDash GetPreviewDash(Integer dashId)
+```
+
+**Returns:** [CRMScript.NetServer.NSPreviewDash](CRMScript.NetServer.NSPreviewDash)
+
+## GetSecondaryTempTileSelection(Integer)
+
+Retrieves the secondary temporary tile selection by ID.
+
+```crmscript
+Integer GetSecondaryTempTileSelection(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## GetTempTileSelection(Integer)
+
+Retrieves the temporary tile selection by ID.
+
+```crmscript
+Integer GetTempTileSelection(Integer selectionId)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## SaveDash(NSDash)
+
+Saves the specified dashboard with given data.
+
+```crmscript
+NSDash SaveDash(NSDash dashData)
+```
+
+**Returns:** [CRMScript.NetServer.NSDash](CRMScript.NetServer.NSDash)
+
+## SaveDashTheme(NSDashTheme)
+
+Saves the specified dashboard theme.
+
+```crmscript
+NSDashTheme SaveDashTheme(NSDashTheme theme)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTheme](CRMScript.NetServer.NSDashTheme)
+
+## SaveDashTile(NSDashTile)
+
+Saves the specified dashboard tile.
+
+```crmscript
+NSDashTile SaveDashTile(NSDashTile tile)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTile](CRMScript.NetServer.NSDashTile)
+
+## SaveDashTileDefinition(NSDashTileDefinition)
+
+Saves the specified dashboard tile definition.
+
+```crmscript
+NSDashTileDefinition SaveDashTileDefinition(NSDashTileDefinition tileDefinition)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTileDefinition](CRMScript.NetServer.NSDashTileDefinition)
+
+## SaveDashTileHtmlList(Integer, NSDashTileHtml[])
+
+Saves a list of HTML content for dashboard tiles.
+
+```crmscript
+NSDashTileHtml[] SaveDashTileHtmlList(Integer dashId, NSDashTileHtml[] tileHtmlList)
+```
+
+**Returns:** [CRMScript.NetServer.NSDashTileHtml](CRMScript.NetServer.NSDashTileHtml)[]
+
+## SaveDashTiles(Integer, NSDashTile[])
+
+Saves multiple tiles for the specified dashboard.
+
+```crmscript
+Void SaveDashTiles(Integer dashId, NSDashTile[] tiles)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

@@ -1,0 +1,593 @@
+﻿---
+uid: crmscript.netserver.nscountry
+title: NSCountry
+description: "Carrier object for Country."
+keywords: CRMScript, NSCountry, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSCountry
+
+Carrier object for Country.
+
+## Constructors
+
+### NSCountry()
+
+```crmscript
+NSCountry
+```
+
+Initializes a new instance of the NSCountry class.
+
+## Methods
+
+## GetAddressLayoutId()
+
+```crmscript
+Integer GetAddressLayoutId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Address layout of the country.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer addressLayoutId = thing.GetAddressLayoutId();
+```
+
+## GetCountryId()
+
+```crmscript
+Integer GetCountryId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer countryId = thing.GetCountryId();
+```
+
+## GetCurrencyId()
+
+```crmscript
+Integer GetCurrencyId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default currency for this country.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer currencyId = thing.GetCurrencyId();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if the country is deleted.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetDialInPrefix()
+
+```crmscript
+String GetDialInPrefix()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Dial in prefix.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String dialInPrefix = thing.GetDialInPrefix();
+```
+
+## GetDomainName()
+
+```crmscript
+String GetDomainName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Domain name of the country.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String domainName = thing.GetDomainName();
+```
+
+## GetDomesticAddressLayoutId()
+
+```crmscript
+Integer GetDomesticAddressLayoutId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Domestic address layout of the country.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer domesticAddressLayoutId = thing.GetDomesticAddressLayoutId();
+```
+
+## GetEnglishName()
+
+```crmscript
+String GetEnglishName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of country in English.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String englishName = thing.GetEnglishName();
+```
+
+## GetForeignAddressLayoutId()
+
+```crmscript
+Integer GetForeignAddressLayoutId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Foreign address layout of the country.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer foreignAddressLayoutId = thing.GetForeignAddressLayoutId();
+```
+
+## GetImageDescription()
+
+```crmscript
+String GetImageDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the country's flag image.
+
+<Note>
+This is the country flag that is displayed in the CRM client
+</Note>
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String imageDescription = thing.GetImageDescription();
+```
+
+## GetInterAreaPrefix()
+
+```crmscript
+String GetInterAreaPrefix()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - International prefix.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String interAreaPrefix = thing.GetInterAreaPrefix();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of country in installed language.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String name = thing.GetName();
+```
+
+## GetOrgNrText()
+
+```crmscript
+String GetOrgNrText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Lead text for organization field.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String orgNrText = thing.GetOrgNrText();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The rank of the country.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer rank = thing.GetRank();
+```
+
+## GetThreeLetterISOCountry()
+
+```crmscript
+String GetThreeLetterISOCountry()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Three-letter country-code according to ISO3166
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String threeLetterISOCountry = thing.GetThreeLetterISOCountry();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip of the country.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetTwoLetterISOCountry()
+
+```crmscript
+String GetTwoLetterISOCountry()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Two-letter country-code according to ISO3166
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String twoLetterISOCountry = thing.GetTwoLetterISOCountry();
+```
+
+## GetZipPrefix()
+
+```crmscript
+String GetZipPrefix()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Post prefix.
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String zipPrefix = thing.GetZipPrefix();
+```
+
+## SetAddressLayoutId(Integer)
+
+```crmscript
+Void SetAddressLayoutId(Integer addressLayoutId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer addressLayoutId;
+thing.SetAddressLayoutId(addressLayoutId);
+```
+
+## SetCountryId(Integer)
+
+```crmscript
+Void SetCountryId(Integer countryId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer countryId;
+thing.SetCountryId(countryId);
+```
+
+## SetCurrencyId(Integer)
+
+```crmscript
+Void SetCurrencyId(Integer currencyId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer currencyId;
+thing.SetCurrencyId(currencyId);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetDialInPrefix(String)
+
+```crmscript
+Void SetDialInPrefix(String dialInPrefix)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String dialInPrefix;
+thing.SetDialInPrefix(dialInPrefix);
+```
+
+## SetDomainName(String)
+
+```crmscript
+Void SetDomainName(String domainName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String domainName;
+thing.SetDomainName(domainName);
+```
+
+## SetDomesticAddressLayoutId(Integer)
+
+```crmscript
+Void SetDomesticAddressLayoutId(Integer domesticAddressLayoutId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer domesticAddressLayoutId;
+thing.SetDomesticAddressLayoutId(domesticAddressLayoutId);
+```
+
+## SetEnglishName(String)
+
+```crmscript
+Void SetEnglishName(String englishName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String englishName;
+thing.SetEnglishName(englishName);
+```
+
+## SetForeignAddressLayoutId(Integer)
+
+```crmscript
+Void SetForeignAddressLayoutId(Integer foreignAddressLayoutId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer foreignAddressLayoutId;
+thing.SetForeignAddressLayoutId(foreignAddressLayoutId);
+```
+
+## SetImageDescription(String)
+
+```crmscript
+Void SetImageDescription(String imageDescription)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This is the country flag that is displayed in the CRM client
+</Note>
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String imageDescription;
+thing.SetImageDescription(imageDescription);
+```
+
+## SetInterAreaPrefix(String)
+
+```crmscript
+Void SetInterAreaPrefix(String interAreaPrefix)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String interAreaPrefix;
+thing.SetInterAreaPrefix(interAreaPrefix);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOrgNrText(String)
+
+```crmscript
+Void SetOrgNrText(String orgNrText)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String orgNrText;
+thing.SetOrgNrText(orgNrText);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetThreeLetterISOCountry(String)
+
+```crmscript
+Void SetThreeLetterISOCountry(String threeLetterISOCountry)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String threeLetterISOCountry;
+thing.SetThreeLetterISOCountry(threeLetterISOCountry);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetTwoLetterISOCountry(String)
+
+```crmscript
+Void SetTwoLetterISOCountry(String twoLetterISOCountry)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String twoLetterISOCountry;
+thing.SetTwoLetterISOCountry(twoLetterISOCountry);
+```
+
+## SetZipPrefix(String)
+
+```crmscript
+Void SetZipPrefix(String zipPrefix)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSCountry thing;
+String zipPrefix;
+thing.SetZipPrefix(zipPrefix);
+```

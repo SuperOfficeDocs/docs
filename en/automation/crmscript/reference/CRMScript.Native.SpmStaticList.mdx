@@ -1,0 +1,119 @@
+﻿---
+uid: crmscript.native.spmstaticlist
+title: SpmStaticList
+description: "With this class you can create and edit static lists in the eMarketeer. A static list consist of one or more email addresses (and possible a matching name) which will be used when creating a shipment."
+keywords: CRMScript, SpmStaticList, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# SpmStaticList
+
+With this class you can create and edit static lists in the eMarketeer. A static list consist of one or more email addresses (and possible a matching name) which will be used when creating a shipment.
+
+## Constructors
+
+### SpmStaticList()
+
+```crmscript
+SpmStaticList
+```
+
+Initializes a new instance of the SpmStaticList class.
+
+## Methods
+
+## addRecipient(String,String)
+
+Adds a recipient to the static list.
+
+```crmscript
+Void addRecipient(String address, String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+You must specify the email address of the recipient (the first parameter) and optional you can specify the name of the recipient.
+</Note>
+
+## delete()
+
+Deletes a static list.
+
+```crmscript
+Bool delete()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If the list was actually deleted; otherwise, false.
+
+<Note>
+If the list is in use by a shipment, the list will not be deleted.
+</Note>
+
+## getRecipients()
+
+Gets a map of all the recipients in this list. The first element will be the email address and the second element the name of the recipient.
+
+```crmscript
+Map getRecipients()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A map containing all the recipients.
+
+## load(Integer)
+
+Loads an existing static list.
+
+```crmscript
+Bool load(Integer id)
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if the list was not found; otherwise, true.
+
+## removeRecipient(String)
+
+Removes a recipient from the list identified by the email address.
+
+```crmscript
+Void removeRecipient(String address)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## save()
+
+Saves the list and the recipients.
+
+```crmscript
+Integer save()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the SpmStaticList object.
+
+## setFolderId(Integer)
+
+Sets folder ID for a static list.
+
+```crmscript
+Void setFolderId(Integer folderId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## setName(String)
+
+Sets the name of this list.
+
+```crmscript
+Void setName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This is only a descriptive text that will be shown in Service.
+</Note>

@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nsoutgoingmessage
+title: NSOutgoingMessage
+description: "Details about a message to be sent."
+keywords: CRMScript, NSOutgoingMessage, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSOutgoingMessage
+
+Details about a message to be sent.
+
+## Constructors
+
+### NSOutgoingMessage()
+
+```crmscript
+NSOutgoingMessage
+```
+
+Initializes a new instance of the NSOutgoingMessage class.
+
+## Methods
+
+## GetContent()
+
+```crmscript
+String GetContent()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Content, or body, of the message.
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String content = thing.GetContent();
+```
+
+## GetFormat()
+
+```crmscript
+String GetFormat()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Format of content.
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String format = thing.GetFormat();
+```
+
+## GetFrom()
+
+```crmscript
+String GetFrom()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Who the message is from.  This can vary from provider to provider and can for SMS typically be a phone number or a string.  This is mail address on the form of an e-mail.
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String from = thing.GetFrom();
+```
+
+## GetParentMessagingId()
+
+```crmscript
+Integer GetParentMessagingId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID to the previous outgoing message related to this one. Used from message threading.
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+Integer parentMessagingId = thing.GetParentMessagingId();
+```
+
+## GetSuggestedSessionKey()
+
+```crmscript
+String GetSuggestedSessionKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String suggestedSessionKey = thing.GetSuggestedSessionKey();
+```
+
+## GetTo()
+
+```crmscript
+String GetTo()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Address of the recipient. This can be in the form of phone number or email.
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String to = thing.GetTo();
+```
+
+## SetContent(String)
+
+```crmscript
+Void SetContent(String content)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String content;
+thing.SetContent(content);
+```
+
+## SetFormat(String)
+
+```crmscript
+Void SetFormat(String format)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String format;
+thing.SetFormat(format);
+```
+
+## SetFrom(String)
+
+```crmscript
+Void SetFrom(String from)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String from;
+thing.SetFrom(from);
+```
+
+## SetParentMessagingId(Integer)
+
+```crmscript
+Void SetParentMessagingId(Integer parentMessagingId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+Integer parentMessagingId;
+thing.SetParentMessagingId(parentMessagingId);
+```
+
+## SetSuggestedSessionKey(String)
+
+```crmscript
+Void SetSuggestedSessionKey(String suggestedSessionKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String suggestedSessionKey;
+thing.SetSuggestedSessionKey(suggestedSessionKey);
+```
+
+## SetTo(String)
+
+```crmscript
+Void SetTo(String to)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSOutgoingMessage thing;
+String to;
+thing.SetTo(to);
+```

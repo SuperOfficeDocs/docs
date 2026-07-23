@@ -1,0 +1,111 @@
+﻿---
+uid: crmscript.native.appointmentslicer
+title: AppointmentSlicer
+description: "Slices appointments into single entities that are within a single day. This class is essential when having calender data (with entries possibly spanning several days), which you would like to display in the calender control (which only accepts data for single days)."
+keywords: CRMScript, AppointmentSlicer, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# AppointmentSlicer
+
+Slices appointments into single entities that are within a single day. This class is essential when having calender data (with entries possibly spanning several days), which you would like to display in the calender control (which only accepts data for single days).
+
+## Constructors
+
+### AppointmentSlicer()
+
+```crmscript
+AppointmentSlicer
+```
+
+Default constructor.
+
+## Methods
+
+## addAppointment(Integer,DateTime,DateTime,String)
+
+Adds an appointment to the class.
+
+```crmscript
+addAppointment(Integer id, DateTime start, DateTime end, String title)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## clear()
+
+Clears all the added appointments from the instance.
+
+```crmscript
+Void clear()
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## eof()
+
+Returns true if the internal iterator is past the appointments for the chosen day; otherwise, false.
+
+```crmscript
+Bool eof()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the internal iterator is past the appointments for the chosen day; otherwise, false.
+
+## getLoadForDay(Date,Time,Time,Integer)
+
+Returns the accumulated load for a given day.
+
+```crmscript
+Integer getLoadForDay(Date day, Time start, Time stop, Integer max)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The calculated load for the given day.
+
+<Note>
+The load is calculated by adding all the appointments for that day, cutting them at the start and stop times. Finally, the value returned is never more than max (unless max is -1, in which case there is no limit).
+
+The start and stop limits are useful because it can be used to eliminate private appointments in the evening.
+
+The max is good, because one normally never works more than 8 hours pr. day :)
+</Note>
+
+## getValue(String)
+
+Returns the value for the given field for the appointment pointed to by the internal iterator.
+
+```crmscript
+String getValue(String field)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given field for the appointment pointed to by the internal iterator.
+
+<Note>
+Available fields: id, date, start, stop, stop, title
+</Note>
+
+## next()
+
+Moves the internal iterator to next appointment in the same day.
+
+Returns false if &lt;code&gt;eof()&lt;/code&gt;; otherwise, true.
+
+```crmscript
+next()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if eof(); otherwise, true.
+
+## setActiveDate(Date)
+
+Sets the internal iterator to the given date.
+
+```crmscript
+Void SetActiveDate(Date date)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

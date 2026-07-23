@@ -1,0 +1,45 @@
+﻿---
+uid: crmscript.netserver.fielddatatype
+title: Enum FieldDataType
+description: "Datatype of the field in the database"
+keywords: CRMScript, FieldDataType, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum FieldDataType
+
+Datatype of the field in the database
+
+## Syntax
+
+```crmscript
+FieldDataType
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Undefined | Undefined data type (error) |
+| dbShortId | Short integer (e.g. System.Int16) id. |
+| dbDateTimeUTC | DateTime ( e.g. seconds since 01.01.1970) in UTC stored as an integer value in the database. |
+| dbDouble | Double precision real (e.g. System.Double) value. |
+| dbInt | Integer (e.g. System.Int32) value. |
+| dbIntId | Integer (e.g. System.Int32) id. |
+| dbDateTimeLocal | DateTime ( e.g. seconds since 01.01.1970) in Local time stored as an integer value in the database. |
+| dbUShort | Unsigned short integer (e.g. System.UInt16) value |
+| dbShort | Short integer (e.g. System.Int16) value |
+| dbNull | This is not a value |
+| dbUInt | Unsigned integer (e.g. System.UInt32) id |
+| dbBlob | Blob in hte database |
+| dbStringBlob | Long string (e.g. System.String) stored as a (text) blob in the database |
+| dbString | String (e.g. System.String) preferebly stored as a variable lenght string in the database.  The Length can be up to (e.g. not including) 256 characters long depending upon the datatype. |
+| dbExtendedDateTimeLocal | DateTime, stored as a real datetime in the database, with extended range. Local time zone |
+| dbExtendedDateTimeUTC | DateTime, stored as a real datetime in the database, with extended range. UTC  time |
+| dbTimeLocal | Time, stored as a datetime in the database, with date value that should be ignored. This time is not timezone converted/sensitive |
+| dbDateLocal | Date, stored as a datetime in the database, with time value that should be ignored. This time is not timezone converted/sensitive |
+| dbIntIdArr | Array if int's that represent ID's (foreign keys). Stored encoded as a long string, with each int becoming a word that can be fulltext indexed |

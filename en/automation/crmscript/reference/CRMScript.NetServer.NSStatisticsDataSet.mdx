@@ -1,0 +1,118 @@
+﻿---
+uid: crmscript.netserver.nsstatisticsdataset
+title: NSStatisticsDataSet
+description: ""
+keywords: CRMScript, NSStatisticsDataSet, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSStatisticsDataSet
+
+## Constructors
+
+### NSStatisticsDataSet()
+
+```crmscript
+NSStatisticsDataSet
+```
+
+Initializes a new instance of the NSStatisticsDataSet class.
+
+## Methods
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip for data value.
+
+**Example:**
+
+```crmscript
+NSStatisticsDataSet thing;
+String description = thing.GetDescription();
+```
+
+## GetLabel()
+
+```crmscript
+String GetLabel()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The label for the data set.
+
+**Example:**
+
+```crmscript
+NSStatisticsDataSet thing;
+String label = thing.GetLabel();
+```
+
+## GetValues()
+
+```crmscript
+NSStatisticsDataValue[] GetValues()
+```
+
+**Returns:** [CRMScript.NetServer.NSStatisticsDataValue](CRMScript.NetServer.NSStatisticsDataValue)[] - Values in this set.
+
+**Example:**
+
+```crmscript
+NSStatisticsDataSet thing;
+NSStatisticsDataValue[] values = thing.GetValues();
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatisticsDataSet thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetLabel(String)
+
+```crmscript
+Void SetLabel(String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatisticsDataSet thing;
+String label;
+thing.SetLabel(label);
+```
+
+## SetValues(NSStatisticsDataValue[])
+
+```crmscript
+Void SetValues(NSStatisticsDataValue[] values)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSStatisticsDataSet thing;
+NSStatisticsDataValue[] values;
+thing.SetValues(values);
+```

@@ -1,0 +1,407 @@
+﻿---
+uid: crmscript.netserver.nsassociate
+title: NSAssociate
+description: "Carrier object for Associate."
+keywords: CRMScript, NSAssociate, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAssociate
+
+Carrier object for Associate.
+
+## Constructors
+
+### NSAssociate()
+
+```crmscript
+NSAssociate
+```
+
+Initializes a new instance of the NSAssociate class.
+
+## Methods
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the user is retired and should have no rights, not appear in lists, and so on.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetEjUserId()
+
+```crmscript
+Integer GetEjUserId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the ej user record corresponding to this associate; 0 for associates that are not ej users.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer ejUserId = thing.GetEjUserId();
+```
+
+## GetFormalName()
+
+```crmscript
+String GetFormalName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs).
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String formalName = thing.GetFormalName();
+```
+
+## GetFullName()
+
+```crmscript
+String GetFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The associate's culture formatted fullname (firstname, middleName and lastname).
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String fullName = thing.GetFullName();
+```
+
+## GetGroupIdx()
+
+```crmscript
+Integer GetGroupIdx()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary group membership.
+
+<Note>
+See the UserGroupLink database table reference for secondary memberships.
+</Note>
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer groupIdx = thing.GetGroupIdx();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, also login name, possibly database user name.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String name = thing.GetName();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Owning person record.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer rank = thing.GetRank();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - User type. See &lt;xref href=\"CRMScript.NetServer.AssociateType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer type = thing.GetType();
+```
+
+## GetUserName()
+
+```crmscript
+String GetUserName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - User name.
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String userName = thing.GetUserName();
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetEjUserId(Integer)
+
+```crmscript
+Void SetEjUserId(Integer ejUserId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer ejUserId;
+thing.SetEjUserId(ejUserId);
+```
+
+## SetFormalName(String)
+
+```crmscript
+Void SetFormalName(String formalName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String formalName;
+thing.SetFormalName(formalName);
+```
+
+## SetFullName(String)
+
+```crmscript
+Void SetFullName(String fullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String fullName;
+thing.SetFullName(fullName);
+```
+
+## SetGroupIdx(Integer)
+
+```crmscript
+Void SetGroupIdx(Integer groupIdx)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+See the UserGroupLink database table reference for secondary memberships
+</Note>
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer groupIdx;
+thing.SetGroupIdx(groupIdx);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String name;
+thing.SetName(name);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetUserName(String)
+
+```crmscript
+Void SetUserName(String userName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociate thing;
+String userName;
+thing.SetUserName(userName);
+```

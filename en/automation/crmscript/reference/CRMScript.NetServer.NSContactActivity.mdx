@@ -1,0 +1,461 @@
+﻿---
+uid: crmscript.netserver.nscontactactivity
+title: NSContactActivity
+description: "Carrier object for ContactActivity."
+keywords: CRMScript, NSContactActivity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSContactActivity
+
+Carrier object for ContactActivity.
+
+## Constructors
+
+### NSContactActivity()
+
+```crmscript
+NSContactActivity
+```
+
+Initializes a new instance of the NSContactActivity class.
+
+## Methods
+
+## GetAction()
+
+```crmscript
+Integer GetAction()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The activity that has occurred on this contact. See &lt;xref href=\"CRMScript.NetServer.ContactAction\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer action = thing.GetAction();
+```
+
+## GetActionId()
+
+```crmscript
+Integer GetActionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the last element an activity was found on () AppointmentId, ContactId, or PersonId).
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer actionId = thing.GetActionId();
+```
+
+## GetActionTime()
+
+```crmscript
+DateTime GetActionTime()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The time of the activity. If more than one activity has occurred on the contact, the last activity time is shown.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+DateTime actionTime = thing.GetActionTime();
+```
+
+## GetActivityPersonId()
+
+```crmscript
+Integer GetActivityPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the person causing the activity.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer activityPersonId = thing.GetActivityPersonId();
+```
+
+## GetActivityPersonName()
+
+```crmscript
+String GetActivityPersonName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The person that carried out the activity on the contact.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String activityPersonName = thing.GetActivityPersonName();
+```
+
+## GetAssociateFullName()
+
+```crmscript
+String GetAssociateFullName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The contact's owner.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String associateFullName = thing.GetAssociateFullName();
+```
+
+## GetAssociateId()
+
+```crmscript
+Integer GetAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Our contact.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer associateId = thing.GetAssociateId();
+```
+
+## GetCategory()
+
+```crmscript
+String GetCategory()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The contact category.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String category = thing.GetCategory();
+```
+
+## GetContactId()
+
+```crmscript
+Integer GetContactId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer contactId = thing.GetContactId();
+```
+
+## GetDepartment()
+
+```crmscript
+String GetDepartment()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Department.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String department = thing.GetDepartment();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String name = thing.GetName();
+```
+
+## GetOrgNr()
+
+```crmscript
+String GetOrgNr()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - VAT number or similar.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String orgNr = thing.GetOrgNr();
+```
+
+## GetPersonId()
+
+```crmscript
+Integer GetPersonId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The person Id.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer personId = thing.GetPersonId();
+```
+
+## GetURL()
+
+```crmscript
+String GetURL()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URL address.
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String uRL = thing.GetURL();
+```
+
+## SetAction(Integer)
+
+```crmscript
+Void SetAction(Integer action)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer action;
+thing.SetAction(action);
+```
+
+## SetActionId(Integer)
+
+```crmscript
+Void SetActionId(Integer actionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer actionId;
+thing.SetActionId(actionId);
+```
+
+## SetActionTime(DateTime)
+
+```crmscript
+Void SetActionTime(DateTime actionTime)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+DateTime actionTime;
+thing.SetActionTime(actionTime);
+```
+
+## SetActivityPersonId(Integer)
+
+```crmscript
+Void SetActivityPersonId(Integer activityPersonId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer activityPersonId;
+thing.SetActivityPersonId(activityPersonId);
+```
+
+## SetActivityPersonName(String)
+
+```crmscript
+Void SetActivityPersonName(String activityPersonName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String activityPersonName;
+thing.SetActivityPersonName(activityPersonName);
+```
+
+## SetAssociateFullName(String)
+
+```crmscript
+Void SetAssociateFullName(String associateFullName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String associateFullName;
+thing.SetAssociateFullName(associateFullName);
+```
+
+## SetAssociateId(Integer)
+
+```crmscript
+Void SetAssociateId(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer associateId;
+thing.SetAssociateId(associateId);
+```
+
+## SetCategory(String)
+
+```crmscript
+Void SetCategory(String category)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String category;
+thing.SetCategory(category);
+```
+
+## SetContactId(Integer)
+
+```crmscript
+Void SetContactId(Integer contactId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer contactId;
+thing.SetContactId(contactId);
+```
+
+## SetDepartment(String)
+
+```crmscript
+Void SetDepartment(String department)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String department;
+thing.SetDepartment(department);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOrgNr(String)
+
+```crmscript
+Void SetOrgNr(String orgNr)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String orgNr;
+thing.SetOrgNr(orgNr);
+```
+
+## SetPersonId(Integer)
+
+```crmscript
+Void SetPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+Integer personId;
+thing.SetPersonId(personId);
+```
+
+## SetURL(String)
+
+```crmscript
+Void SetURL(String uRL)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactActivity thing;
+String uRL;
+thing.SetURL(uRL);
+```

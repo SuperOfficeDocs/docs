@@ -1,0 +1,593 @@
+﻿---
+uid: crmscript.netserver.nsarchiveagent
+title: NSArchiveAgent
+description: "ArchiveList functions of all kinds."
+keywords: CRMScript, NSArchiveAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSArchiveAgent
+
+ArchiveList functions of all kinds.
+
+## Constructors
+
+### NSArchiveAgent()
+
+```crmscript
+NSArchiveAgent
+```
+
+ArchiveList functions of all kinds.
+
+## Methods
+
+## CreateDefaultArchiveListResult()
+
+Sets default values into a new NSArchiveListResult.
+
+```crmscript
+NSArchiveListResult CreateDefaultArchiveListResult()
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - A new NSArchiveListResult with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
+</Note>
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+NSArchiveListResult thing = agent.CreateDefaultArchiveListResult();
+thing = agent.SaveArchiveListResult(thing);
+```
+
+## ExportArchive(String,String,String[],String[],String,String[],Integer)
+
+Exports the target archive to a downloadable format.
+
+```crmscript
+NSExportArchiveResult ExportArchive(String providerName, String context, String[] desiredEntities, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restrictions, String exportType, String[] selectedRowIds, Integer estimatedRowCount)
+```
+
+**Returns:** [CRMScript.NetServer.NSExportArchiveResult](CRMScript.NetServer.NSExportArchiveResult)
+
+## GetActivityFilter()
+
+Gets activity filter for the specified list.
+
+```crmscript
+NSActivityFilter GetActivityFilter()
+```
+
+**Returns:** [CRMScript.NetServer.NSActivityFilter](CRMScript.NetServer.NSActivityFilter) - The activity filter for the specified list.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+NSActivityFilter res = agent.GetActivityFilter();
+```
+
+## GetArchiveConfiguration(String,String)
+
+Gets the configuration for one archive. The configuration is keyed by a combination of archive provider name and gui name.
+
+```crmscript
+NSArchiveConfiguration GetArchiveConfiguration(String guiName, String providerName)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](CRMScript.NetServer.NSArchiveConfiguration)
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String guiName;
+String providerName;
+NSArchiveConfiguration res = agent.GetArchiveConfiguration(guiName, providerName);
+```
+
+## GetArchiveConfigurationV2(String,String,String,String)
+
+Gets the configuration for one archive. The configuration is keyed by a combination of archive provider name (plus optional context), gui name, and optional table binding.
+
+```crmscript
+NSArchiveConfiguration GetArchiveConfigurationV2(String guiName, String providerName, String context, String ownerKeys)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](CRMScript.NetServer.NSArchiveConfiguration)
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String guiName;
+String providerName;
+String context;
+String ownerKeys;
+NSArchiveConfiguration res = agent.GetArchiveConfigurationV2(guiName, providerName, context, ownerKeys);
+```
+
+## GetArchiveConfigurationWithContext(String,String,String)
+
+Gets the configuration for one archive, with context parameter. The configuration is keyed by a combination of archive provider name and gui name.
+
+```crmscript
+NSArchiveConfiguration GetArchiveConfigurationWithContext(String guiName, String providerName, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](CRMScript.NetServer.NSArchiveConfiguration)
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String guiName;
+String providerName;
+String context;
+NSArchiveConfiguration res = agent.GetArchiveConfigurationWithContext(guiName, providerName, context);
+```
+
+## GetArchiveList(String,String,String[],Integer,Integer)
+
+Gets a page of data for an archive.
+
+```crmscript
+NSArchiveListItem[] GetArchiveList(String guiName, String providerName, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String guiName;
+String providerName;
+NSArchiveOrderByInfo[] sortOrder;
+NSArchiveRestrictionInfo[] restriction;
+String[] entities;
+Integer page;
+Integer pageSize;
+NSArchiveListItem[] res = agent.GetArchiveList(guiName, providerName, sortOrder, restriction, entities, page, pageSize);
+```
+
+## GetArchiveList2(String,String,String,String,String,Integer,Integer)
+
+Gets a page of data for an archive using a restriction string.
+
+```crmscript
+NSArchiveListItem[] GetArchiveList2(String guiName, String providerName, String sortOrder, String restriction, String entities, Integer page, Integer pageSize)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String guiName;
+String providerName;
+String sortOrder;
+String restriction;
+String entities;
+Integer page;
+Integer pageSize;
+NSArchiveListItem[] res = agent.GetArchiveList2(guiName, providerName, sortOrder, restriction, entities, page, pageSize);
+```
+
+## GetArchiveListByColumns(String,String[],String[],Integer,Integer)
+
+Gets a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns.
+
+```crmscript
+NSArchiveListItem[] GetArchiveListByColumns(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String[] columns;
+NSArchiveOrderByInfo[] sortOrder;
+NSArchiveRestrictionInfo[] restriction;
+String[] entities;
+Integer page;
+Integer pageSize;
+NSArchiveListItem[] res = agent.GetArchiveListByColumns(providerName, columns, sortOrder, restriction, entities, page, pageSize);
+```
+
+## GetArchiveListByColumns2(String,String,String,String,String,Integer,Integer)
+
+Gets a page of results for an archive list, explicitly specifying the restrictions as a string, orderby and chosen columns.
+
+```crmscript
+NSArchiveListItem[] GetArchiveListByColumns2(String providerName, String columns, String sortOrder, String restrictions, String entities, Integer page, Integer pageSize)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String columns;
+String sortOrder;
+String restrictions;
+String entities;
+Integer page;
+Integer pageSize;
+NSArchiveListItem[] res = agent.GetArchiveListByColumns2(providerName, columns, sortOrder, restrictions, entities, page, pageSize);
+```
+
+## GetArchiveListByColumnsWithContext(String,String[],String[],Integer,Integer,String)
+
+Gets a page of results for an archive list with context parameter, explicitly specifying the restrictions, orderby and chosen columns.
+
+```crmscript
+NSArchiveListItem[] GetArchiveListByColumnsWithContext(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String[] columns;
+NSArchiveOrderByInfo[] sortOrder;
+NSArchiveRestrictionInfo[] restriction;
+String[] entities;
+Integer page;
+Integer pageSize;
+String context;
+NSArchiveListItem[] res = agent.GetArchiveListByColumnsWithContext(providerName, columns, sortOrder, restriction, entities, page, pageSize, context);
+```
+
+## GetArchiveListByColumnsWithContext2(String,String,String,String,String,Integer,Integer,String)
+
+Gets a page of results for an archive list with context parameter, explicitly specifying the restrictions as a string, orderby and chosen columns.
+
+```crmscript
+NSArchiveListItem[] GetArchiveListByColumnsWithContext2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String columns;
+String sortOrder;
+String restriction;
+String entities;
+Integer page;
+Integer pageSize;
+String context;
+NSArchiveListItem[] res = agent.GetArchiveListByColumnsWithContext2(providerName, columns, sortOrder, restriction, entities, page, pageSize, context);
+```
+
+## GetArchiveListByColumnsWithHeader(String,String[],String[],Integer,Integer,String)
+
+Gets a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.
+
+```crmscript
+NSArchiveListResult GetArchiveListByColumnsWithHeader(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String options)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult)
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String[] columns;
+NSArchiveOrderByInfo[] sortOrder;
+NSArchiveRestrictionInfo[] restriction;
+String[] entities;
+Integer page;
+Integer pageSize;
+String options;
+NSArchiveListResult res = agent.GetArchiveListByColumnsWithHeader(providerName, columns, sortOrder, restriction, entities, page, pageSize, options);
+```
+
+## GetArchiveListByColumnsWithHeader2(String,String,String,String,String,Integer,Integer,String)
+
+Gets a page of results for an archive list, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options.
+
+```crmscript
+NSArchiveListResult GetArchiveListByColumnsWithHeader2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String options)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String columns;
+String sortOrder;
+String restriction;
+String entities;
+Integer page;
+Integer pageSize;
+String options;
+NSArchiveListResult res = agent.GetArchiveListByColumnsWithHeader2(providerName, columns, sortOrder, restriction, entities, page, pageSize, options);
+```
+
+## GetArchiveListByColumnsWithHeaderWithContext(String,String[],String[],Integer,Integer,String,String)
+
+Gets a page of results for an archive list, with context parameter, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options.
+
+```crmscript
+NSArchiveListResult GetArchiveListByColumnsWithHeaderWithContext(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String options, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String[] columns;
+NSArchiveOrderByInfo[] sortOrder;
+NSArchiveRestrictionInfo[] restriction;
+String[] entities;
+Integer page;
+Integer pageSize;
+String options;
+String context;
+NSArchiveListResult res = agent.GetArchiveListByColumnsWithHeaderWithContext(providerName, columns, sortOrder, restriction, entities, page, pageSize, options, context);
+```
+
+## GetArchiveListByColumnsWithHeaderWithContext2(String,String,String,String,String,Integer,Integer,String,String)
+
+Gets a page of results for an archive list, with context parameter, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options.
+
+```crmscript
+NSArchiveListResult GetArchiveListByColumnsWithHeaderWithContext2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String options, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String columns;
+String sortOrder;
+String restriction;
+String entities;
+Integer page;
+Integer pageSize;
+String options;
+String context;
+NSArchiveListResult res = agent.GetArchiveListByColumnsWithHeaderWithContext2(providerName, columns, sortOrder, restriction, entities, page, pageSize, options, context);
+```
+
+## GetArchiveListWithContext(String,String,String[],Integer,Integer,String)
+
+Gets a page of data for an archive, with context parameter. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
+
+```crmscript
+NSArchiveListItem[] GetArchiveListWithContext(String guiName, String providerName, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String guiName;
+String providerName;
+NSArchiveOrderByInfo[] sortOrder;
+NSArchiveRestrictionInfo[] restriction;
+String[] entities;
+Integer page;
+Integer pageSize;
+String context;
+NSArchiveListItem[] res = agent.GetArchiveListWithContext(guiName, providerName, sortOrder, restriction, entities, page, pageSize, context);
+```
+
+## GetArchiveListWithContext2(String,String,String,String,String,Integer,Integer,String)
+
+Gets a page of data for an archive using restrictions as strings, with context parameter.
+
+```crmscript
+NSArchiveListItem[] GetArchiveListWithContext2(String guiName, String providerName, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String guiName;
+String providerName;
+String sortOrder;
+String restriction;
+String entities;
+Integer page;
+Integer pageSize;
+String context;
+NSArchiveListItem[] res = agent.GetArchiveListWithContext2(guiName, providerName, sortOrder, restriction, entities, page, pageSize, context);
+```
+
+## GetAvailableColumns(String,String)
+
+Returns list of all columns supported by an archive provider. See also &lt;xref href=\"CRMScript.NetServer.NSArchiveAgent.GetArchiveConfiguration(String,String)\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+```crmscript
+NSArchiveColumnInfo[] GetAvailableColumns(String providerName, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[]
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String context;
+NSArchiveColumnInfo[] res = agent.GetAvailableColumns(providerName, context);
+```
+
+## GetAvailableEntities(String,String)
+
+Returns list of all entities supported by an archive provider. See also &lt;xref href=\"CRMScript.NetServer.NSArchiveAgent.GetArchiveConfiguration(String,String)\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+```crmscript
+NSMDOListItem[] GetAvailableEntities(String providerName, String context)
+```
+
+**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String providerName;
+String context;
+NSMDOListItem[] res = agent.GetAvailableEntities(providerName, context);
+```
+
+## GetGroupAssociateIds(Integer[])
+
+Returns the associate IDs that belongs to the given groups.
+
+```crmscript
+Integer[] GetGroupAssociateIds(Integer[] groupIds)
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - The associate IDs.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+Integer[] groupIds;
+Integer[] res = agent.GetGroupAssociateIds(groupIds);
+```
+
+## GetProviderNames()
+
+Returns list of all archive provider names.
+
+```crmscript
+String[] GetProviderNames()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Array of all archive provider names.
+
+**Example:**
+
+```crmscript
+NSArchiveAgent agent;
+String[] res = agent.GetProviderNames();
+```
+
+## SetActivityFilter(NSActivityFilter)
+
+Sets activity filter for the specified list.
+
+```crmscript
+Void SetActivityFilter(NSActivityFilter activityFilter)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetChosenColumns(String,String,String[])
+
+Sets the currently chosen columns for the given gui name/provider name combination.
+
+```crmscript
+Void SetChosenColumns(String guiName, String providerName, String[] chosenColumns)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.
+</Note>
+
+## SetChosenColumnsV2(String,String,String,String,String[])
+
+Sets the currently chosen columns for the given gui name/provider name combination.
+
+```crmscript
+Void SetChosenColumnsV2(String guiName, String providerName, String context, String ownerKeys, String[] chosenColumns)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.
+</Note>
+
+## SetChosenEntities(String,String,String[])
+
+Sets the currently chosen entities for the given gui name/provider name combination.
+
+```crmscript
+Void SetChosenEntities(String guiName, String providerName, String[] entities)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.
+</Note>
+
+## SetChosenEntitiesV2(String,String,String,String,String[])
+
+Sets the currently chosen entities for the given gui name/provider name combination.
+
+```crmscript
+Void SetChosenEntitiesV2(String guiName, String providerName, String context, String ownerKeys, String[] entities)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.
+</Note>
+
+## SetColumnWidths(String,String[])
+
+Sets the column widths for the given set of columns and GUI name.
+
+```crmscript
+Void SetColumnWidths(String guiName, String[] columnWidths)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetColumnWidthsV2(String,String,String,String,String[])
+
+Sets the column widths for the given set of columns and GUI name.
+
+```crmscript
+Void SetColumnWidthsV2(String guiName, String providerName, String context, String ownerKeys, String[] columnWidths)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

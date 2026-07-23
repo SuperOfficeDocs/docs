@@ -1,0 +1,120 @@
+﻿---
+uid: crmscript.netserver.nsproductextradatafield
+title: NSProductExtraDataField
+description: "A way to show some simple extra data on a product, typically to hep the user to identify the correct product. Basically a bucket of additional info that the ERP system would like to store and show in the user interface. Information placed here is shown in the GUI if the provide-extra-data capability is true."
+keywords: CRMScript, NSProductExtraDataField, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSProductExtraDataField
+
+A way to show some simple extra data on a product, typically to hep the user to identify the correct product. Basically a bucket of additional info that the ERP system would like to store and show in the user interface. Information placed here is shown in the GUI if the provide-extra-data capability is true.
+
+## Constructors
+
+### NSProductExtraDataField()
+
+```crmscript
+NSProductExtraDataField
+```
+
+Initializes a new instance of the NSProductExtraDataField class.
+
+## Methods
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Label for the field.
+
+**Example:**
+
+```crmscript
+NSProductExtraDataField thing;
+String name = thing.GetName();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - String, URL, image. How the value should be interpreted. See &lt;xref href=\"CRMScript.NetServer.ExtraDataFieldType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSProductExtraDataField thing;
+Integer type = thing.GetType();
+```
+
+## GetValue()
+
+```crmscript
+String GetValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Value for the field. If type is string, it can contain format specifiers (use this for displaying numbers correctly as the user's computer is set up).
+
+**Example:**
+
+```crmscript
+NSProductExtraDataField thing;
+String value = thing.GetValue();
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductExtraDataField thing;
+String name;
+thing.SetName(name);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductExtraDataField thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetValue(String)
+
+```crmscript
+Void SetValue(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSProductExtraDataField thing;
+String value;
+thing.SetValue(value);
+```

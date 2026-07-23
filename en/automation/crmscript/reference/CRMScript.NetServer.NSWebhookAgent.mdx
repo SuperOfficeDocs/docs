@@ -1,0 +1,175 @@
+﻿---
+uid: crmscript.netserver.nswebhookagent
+title: NSWebhookAgent
+description: "Webhook definitions* webhooks signal other systems about events inside NetServer."
+keywords: CRMScript, NSWebhookAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSWebhookAgent
+
+Webhook definitions* webhooks signal other systems about events inside NetServer.
+
+## Constructors
+
+### NSWebhookAgent()
+
+```crmscript
+NSWebhookAgent
+```
+
+## Methods
+
+## CreateDefaultWebhook()
+
+Sets default values into a new NSWebhook.
+
+```crmscript
+NSWebhook CreateDefaultWebhook()
+```
+
+**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook) - A new NSWebhook with default values.
+
+<Note>
+NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
+</Note>
+
+**Example:**
+
+```crmscript
+NSWebhookAgent agent;
+NSWebhook thing = agent.CreateDefaultWebhook();
+thing = agent.SaveWebhook(thing);
+```
+
+## DeleteWebhook(Integer)
+
+Deletes the NSWebhook
+
+```crmscript
+DeleteWebhook(Integer webhook)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhookAgent agent;
+agent.DeleteWebhook(123);
+```
+
+## GetAllWebhooks(String,String,Integer)
+
+Returns all webhooks, according to filter criteria
+
+```crmscript
+NSWebhook[] GetAllWebhooks(String nameFilter, String eventFilter, Integer statusFilter)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook)[]
+
+**Example:**
+
+```crmscript
+NSWebhookAgent agent;
+String nameFilter;
+String eventFilter;
+Integer statusFilter;
+NSWebhook[] res = agent.GetAllWebhooks(nameFilter, eventFilter, statusFilter);
+```
+
+## GetLastError(Integer)
+
+Return the most recent error message received when calling this webhook.
+
+```crmscript
+String GetLastError(Integer webhookId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+**Example:**
+
+```crmscript
+NSWebhookAgent agent;
+Integer webhookId;
+String res = agent.GetLastError(webhookId);
+```
+
+## GetWebhook(Integer)
+
+Gets an NSWebhook object.
+
+```crmscript
+NSWebhook GetWebhook(Integer webhookId)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook)
+
+**Example:**
+
+```crmscript
+NSWebhookAgent agent;
+NSWebhook thing = agent.GetWebhook(123);
+```
+
+## SaveWebhook(NSWebhook)
+
+Updates the existing NSWebhook or creates a new NSWebhook if the id parameter is 0
+
+```crmscript
+NSWebhook SaveWebhook(NSWebhook webhook)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook)
+
+**Example:**
+
+```crmscript
+NSWebhook  agent;
+NSWebhook thing = agent.CreateDefaultWebhook();
+thing = agent.SaveWebhook(thing);
+```
+
+## SignalEvent(String,Integer,StringObjectDictionary)
+
+Signal webhooks that an event has occurred. All webhooks listening for the event will be notified.
+
+```crmscript
+Void SignalEvent(String eventName, Integer primaryKey, StringObjectDictionary data)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSWebhookAgent agent;
+String eventName;
+Integer primaryKey;
+StringObjectDictionary data;
+agent.SignalEvent(eventName, primaryKey, data);
+```
+
+## TestWebhook(NSWebhook)
+
+Pings a webhook with a 'test' event, returns SUCCESS(true) or FAILURE(false) + the response from the webhook target.
+
+```crmscript
+NSWebhookResult TestWebhook(NSWebhook webhook)
+```
+
+**Returns:** [CRMScript.NetServer.NSWebhookResult](CRMScript.NetServer.NSWebhookResult)
+
+**Example:**
+
+```crmscript
+NSWebhookAgent agent;
+NSWebhook webhook;
+NSWebhookResult res = agent.TestWebhook(webhook);
+```

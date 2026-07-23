@@ -1,0 +1,143 @@
+﻿---
+uid: crmscript.netserver.nsassociateagent
+title: NSAssociateAgent
+description: "Associate utilities, notes, not user administration."
+keywords: CRMScript, NSAssociateAgent, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSAssociateAgent
+
+Associate utilities, notes, not user administration.
+
+## Constructors
+
+### NSAssociateAgent()
+
+```crmscript
+NSAssociateAgent
+```
+
+## Methods
+
+## GetAssociate(Integer)
+
+Gets an NSAssociate object.
+
+```crmscript
+NSAssociate GetAssociate(Integer associateId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+
+**Example:**
+
+```crmscript
+NSAssociateAgent agent;
+NSAssociate thing = agent.GetAssociate(123);
+```
+
+## GetAssociateByPersonId(Integer)
+
+Returns the associate that belongs to this person if the person is an associate.
+
+```crmscript
+NSAssociate GetAssociateByPersonId(Integer personId)
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate that belongs to this person if the person is an associate.
+
+**Example:**
+
+```crmscript
+NSAssociateAgent agent;
+Integer personId;
+NSAssociate res = agent.GetAssociateByPersonId(personId);
+```
+
+## GetAssociateList(Integer[])
+
+Retrieves a list of associates.
+
+```crmscript
+NSAssociate[] GetAssociateList(Integer[] associateIds)
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)[]
+
+**Example:**
+
+```crmscript
+Integer[] ids;
+NSAssociateAgent agent;
+agent.GetAssociateList(ids);
+```
+
+## GetAssociatesByGroup(Integer,Integer)
+
+Returns a array of associate based on DiaryGroupType and groupId.
+
+```crmscript
+NSAssociate[] GetAssociatesByGroup(Integer groupId, Integer type)
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)[]
+
+**Example:**
+
+```crmscript
+NSAssociateAgent agent;
+Integer groupId;
+Integer type;
+NSAssociate[] res = agent.GetAssociatesByGroup(groupId, type);
+```
+
+## GetNote(Integer)
+
+Returns an array of strings(notepad pages).
+
+```crmscript
+String[] GetNote(Integer associateId)
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+
+**Example:**
+
+```crmscript
+NSAssociateAgent agent;
+Integer associateId;
+String[] res = agent.GetNote(associateId);
+```
+
+## LogOffWindowsUsers(Integer[])
+
+Logs off associates that are logged on to the Win client
+
+```crmscript
+Void LogOffWindowsUsers(Integer[] associateIds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSAssociateAgent agent;
+Integer[] associateIds;
+agent.LogOffWindowsUsers(associateIds);
+```
+
+## SaveNote(Integer,String[])
+
+Saves an array of strings(notepad pages).
+
+```crmscript
+Void SaveNote(Integer associateId, String[] note)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)

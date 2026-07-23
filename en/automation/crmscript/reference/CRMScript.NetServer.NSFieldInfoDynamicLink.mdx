@@ -1,0 +1,107 @@
+﻿---
+uid: crmscript.netserver.nsfieldinfodynamiclink
+title: NSFieldInfoDynamicLink
+description: "Dynamic Link custom database field."
+keywords: CRMScript, NSFieldInfoDynamicLink, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSFieldInfoDynamicLink
+
+Dynamic Link custom database field.
+
+## Constructors
+
+### NSFieldInfoDynamicLink()
+
+```crmscript
+NSFieldInfoDynamicLink
+```
+
+Initializes a new instance of the NSFieldInfoDynamicLink class.
+
+## Methods
+
+## GetDefaultValue()
+
+```crmscript
+Integer GetDefaultValue()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default attachment ID value.
+
+## GetLinkName()
+
+```crmscript
+String GetLinkName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display text for link.
+
+**Example:**
+
+```crmscript
+NSFieldInfoDynamicLink thing;
+String linkName = thing.GetLinkName();
+```
+
+## GetLinkValue()
+
+```crmscript
+String GetLinkValue()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - URL link value. May contain CS tags to be replaced.
+
+**Example:**
+
+```crmscript
+NSFieldInfoDynamicLink thing;
+String linkValue = thing.GetLinkValue();
+```
+
+## SetDefaultValue(Integer)
+
+Default attachment ID value
+
+```crmscript
+Void SetDefaultValue(Integer value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetLinkName(String)
+
+```crmscript
+Void SetLinkName(String linkName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoDynamicLink thing;
+String linkName;
+thing.SetLinkName(linkName);
+```
+
+## SetLinkValue(String)
+
+```crmscript
+Void SetLinkValue(String linkValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSFieldInfoDynamicLink thing;
+String linkValue;
+thing.SetLinkValue(linkValue);
+```

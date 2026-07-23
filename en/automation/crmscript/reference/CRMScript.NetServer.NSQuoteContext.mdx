@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nsquotecontext
+title: NSQuoteContext
+description: "The context a quote is created in."
+keywords: CRMScript, NSQuoteContext, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSQuoteContext
+
+The context a quote is created in.
+
+## Constructors
+
+### NSQuoteContext()
+
+```crmscript
+NSQuoteContext
+```
+
+Initializes a new instance of the NSQuoteContext class.
+
+## Methods
+
+## GetCRMAssociate()
+
+```crmscript
+NSAssociate GetCRMAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The associate (salesman) that is logged into the CRM system.
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSAssociate cRMAssociate = thing.GetCRMAssociate();
+```
+
+## GetCRMQuoteAlternative()
+
+```crmscript
+NSQuoteAlternative GetCRMQuoteAlternative()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative) - The relevant or current alternative of the quote in the CRM system, if applicable.
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSQuoteAlternative cRMQuoteAlternative = thing.GetCRMQuoteAlternative();
+```
+
+## GetCRMQuoteLine()
+
+```crmscript
+NSQuoteLine GetCRMQuoteLine()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine) - The relevant or current quote line of the quote in the CRM system, if applicable.
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSQuoteLine cRMQuoteLine = thing.GetCRMQuoteLine();
+```
+
+## GetCRMQuoteVersion()
+
+```crmscript
+NSQuoteVersion GetCRMQuoteVersion()
+```
+
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion) - The relevant or current revision of the quote in the CRM system, if applicable.
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSQuoteVersion cRMQuoteVersion = thing.GetCRMQuoteVersion();
+```
+
+## GetCRMSale()
+
+```crmscript
+NSSale GetCRMSale()
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale) - The sale the quote is registered in the CRM system.
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSSale cRMSale = thing.GetCRMSale();
+```
+
+## GetUserLanguageCode()
+
+```crmscript
+String GetUserLanguageCode()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The iso language code of the language the user is using in the crm system. Use this language when replying, if possible.
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+String userLanguageCode = thing.GetUserLanguageCode();
+```
+
+## SetCRMAssociate(NSAssociate)
+
+```crmscript
+Void SetCRMAssociate(NSAssociate cRMAssociate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSAssociate cRMAssociate;
+thing.SetCRMAssociate(cRMAssociate);
+```
+
+## SetCRMQuoteAlternative(NSQuoteAlternative)
+
+```crmscript
+Void SetCRMQuoteAlternative(NSQuoteAlternative cRMQuoteAlternative)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSQuoteAlternative cRMQuoteAlternative;
+thing.SetCRMQuoteAlternative(cRMQuoteAlternative);
+```
+
+## SetCRMQuoteLine(NSQuoteLine)
+
+```crmscript
+Void SetCRMQuoteLine(NSQuoteLine cRMQuoteLine)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSQuoteLine cRMQuoteLine;
+thing.SetCRMQuoteLine(cRMQuoteLine);
+```
+
+## SetCRMQuoteVersion(NSQuoteVersion)
+
+```crmscript
+Void SetCRMQuoteVersion(NSQuoteVersion cRMQuoteVersion)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSQuoteVersion cRMQuoteVersion;
+thing.SetCRMQuoteVersion(cRMQuoteVersion);
+```
+
+## SetCRMSale(NSSale)
+
+```crmscript
+Void SetCRMSale(NSSale cRMSale)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+NSSale cRMSale;
+thing.SetCRMSale(cRMSale);
+```
+
+## SetUserLanguageCode(String)
+
+```crmscript
+Void SetUserLanguageCode(String userLanguageCode)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSQuoteContext thing;
+String userLanguageCode;
+thing.SetUserLanguageCode(userLanguageCode);
+```

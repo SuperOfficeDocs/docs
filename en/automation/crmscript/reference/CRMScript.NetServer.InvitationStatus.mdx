@@ -1,0 +1,36 @@
+﻿---
+uid: crmscript.netserver.invitationstatus
+title: Enum InvitationStatus
+description: "Status if this appointment represents an invitation"
+keywords: CRMScript, InvitationStatus, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum InvitationStatus
+
+Status if this appointment represents an invitation
+
+## Syntax
+
+```crmscript
+InvitationStatus
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Unknown - used when initializing |
+| None | 1: Default value when the appointment is not a booking child |
+| Accepted | 2: The invitation has been accepted |
+| Hidden | 4: Hidden |
+| Invitation | 5: An invitation to a meeting not observed by the attending party |
+| Moved | 6: The meeting has been moved |
+| Seen | 7: An invitation to a meeting observed by the attending party. This can also be viewed upon as a tentative response to participate in the meeting. |
+| MovedSeen | 8: The meeting has been moved, and this is observed by the attending party |
+| Declined | 9: The invitation has been declined/rejected |
+| Cancelled | 10: The meeting has been cancelled. |

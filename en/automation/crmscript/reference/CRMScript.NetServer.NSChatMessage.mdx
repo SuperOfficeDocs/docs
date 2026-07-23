@@ -1,0 +1,306 @@
+﻿---
+uid: crmscript.netserver.nschatmessage
+title: NSChatMessage
+description: "A message in a chat session. Carrier object for ChatMessage."
+keywords: CRMScript, NSChatMessage, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatMessage
+
+A message in a chat session. Carrier object for ChatMessage.
+
+## Constructors
+
+### NSChatMessage()
+
+```crmscript
+NSChatMessage
+```
+
+Initializes a new instance of the NSChatMessage class.
+
+## Methods
+
+## GetAuthor()
+
+```crmscript
+String GetAuthor()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The author of the message.
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+String author = thing.GetAuthor();
+```
+
+## GetChatMessageId()
+
+```crmscript
+Integer GetChatMessageId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer chatMessageId = thing.GetChatMessageId();
+```
+
+## GetChatSessionId()
+
+```crmscript
+Integer GetChatSessionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the associated chat session.
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer chatSessionId = thing.GetChatSessionId();
+```
+
+## GetMessage()
+
+```crmscript
+String GetMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The message.
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+String message = thing.GetMessage();
+```
+
+## GetReadByCustomer()
+
+```crmscript
+Integer GetReadByCustomer()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Whether the message has been read by the customer or not.
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer readByCustomer = thing.GetReadByCustomer();
+```
+
+## GetSpecialParam()
+
+```crmscript
+String GetSpecialParam()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Special parameter for the special_type.
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+String specialParam = thing.GetSpecialParam();
+```
+
+## GetSpecialType()
+
+```crmscript
+Integer GetSpecialType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Indicates if it is a special message, such as a URL redirection. See &lt;xref href=\"CRMScript.NetServer.ChatMessageSpecialType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer specialType = thing.GetSpecialType();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of the message. See &lt;xref href=\"CRMScript.NetServer.ChatMessageType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer type = thing.GetType();
+```
+
+## GetWhenPosted()
+
+```crmscript
+DateTime GetWhenPosted()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the message was posted (UTC timestamp).
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+DateTime whenPosted = thing.GetWhenPosted();
+```
+
+## SetAuthor(String)
+
+```crmscript
+Void SetAuthor(String author)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+String author;
+thing.SetAuthor(author);
+```
+
+## SetChatMessageId(Integer)
+
+```crmscript
+Void SetChatMessageId(Integer chatMessageId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer chatMessageId;
+thing.SetChatMessageId(chatMessageId);
+```
+
+## SetChatSessionId(Integer)
+
+```crmscript
+Void SetChatSessionId(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer chatSessionId;
+thing.SetChatSessionId(chatSessionId);
+```
+
+## SetMessage(String)
+
+```crmscript
+Void SetMessage(String message)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+String message;
+thing.SetMessage(message);
+```
+
+## SetReadByCustomer(Integer)
+
+```crmscript
+Void SetReadByCustomer(Integer readByCustomer)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer readByCustomer;
+thing.SetReadByCustomer(readByCustomer);
+```
+
+## SetSpecialParam(String)
+
+```crmscript
+Void SetSpecialParam(String specialParam)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+String specialParam;
+thing.SetSpecialParam(specialParam);
+```
+
+## SetSpecialType(Integer)
+
+```crmscript
+Void SetSpecialType(Integer specialType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer specialType;
+thing.SetSpecialType(specialType);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetWhenPosted(DateTime)
+
+```crmscript
+Void SetWhenPosted(DateTime whenPosted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatMessage thing;
+DateTime whenPosted;
+thing.SetWhenPosted(whenPosted);
+```

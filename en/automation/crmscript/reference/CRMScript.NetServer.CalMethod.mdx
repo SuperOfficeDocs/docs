@@ -1,0 +1,35 @@
+﻿---
+uid: crmscript.netserver.calmethod
+title: Enum CalMethod
+description: "Valid iCal methods"
+keywords: CRMScript, CalMethod, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# Enum CalMethod
+
+Valid iCal methods
+
+## Syntax
+
+```crmscript
+CalMethod
+```
+
+## Fields
+
+| Name | Description |
+|---|---|
+| Unknown | Method is not known |
+| Add | Add one or more instances to an existing event. |
+| Cancel | Cancel one or more instances of an existing event. |
+| Counter | Counter a REQUEST with an alternative proposal, Sent by an 'Attendee' to the 'Organizer'. |
+| DeclineCounter | Decline a counter proposal. Sent to an 'Attendee' by the 'Organizer'. |
+| Publish | Post notification of an event. Used primarily as a method of advertising the existence of an event. |
+| Refresh | A request is sent to an 'Organizer' by an 'Attendee' asking for the latest version of an event to be resent to the requester. |
+| Reply | Reply to an event request. Clients may set their status ('partstat') to ACCEPTED, DECLINED, TENTATIVE, or DELEGATED. |
+| Request | Make a request for an event. This is an explicit invitation to one or more 'Attendees'. Event Requests are also used to update or change an existing event. Clients that cannot handle REQUEST may degrade the event to view it as an PUBLISH. |

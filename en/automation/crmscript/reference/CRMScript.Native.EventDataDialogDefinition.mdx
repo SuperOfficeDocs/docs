@@ -1,0 +1,908 @@
+﻿---
+uid: crmscript.native.eventdatadialogdefinition
+title: EventDataDialogDefinition
+description: "Utility class to generate a dialog to use in CRMScript triggers."
+keywords: CRMScript, EventDataDialogDefinition, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# EventDataDialogDefinition
+
+Utility class to generate a dialog to use in CRMScript triggers.
+
+## Constructors
+
+### EventDataDialogDefinition()
+
+```crmscript
+EventDataDialogDefinition
+```
+
+Initializes a new instance of the EventDataDialogDefinition class.
+
+## Methods
+
+## addCheckbox(String,String)
+
+Adds a checkbox field with given label.
+
+```crmscript
+Void addCheckbox(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addCheckbox("checkme", "My checkbox");
+```
+
+## addCheckbox(String,String,Bool)
+
+Adds a checkbox field with given label. Possible to set field as mandatory.
+
+```crmscript
+Void addCheckbox(String id, String label, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addCheckbox("checkme", "My checkbox",true);
+```
+
+## addDate(String,String)
+
+Adds a Date field with given label.
+
+```crmscript
+Void addDate(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addDate("date", "My date");
+```
+
+## addDate(String,String,Date)
+
+Adds a Date field with given label and a default value.
+
+```crmscript
+Void addDate(String id, String label, Date default)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Date date;
+def.addDate("date", "My date",date);
+```
+
+## addDate(String,String,Date,String,Bool)
+
+Adds a Date field with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addDate(String id, String label, Date default, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Date date;
+def.addDate("date", "My date",date, "Input date", true);
+```
+
+## addDateTime(String,String)
+
+Adds a DateTime field with given label.
+
+```crmscript
+Void addDateTime(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addDateTime("datetime", "My datetime");
+```
+
+## addDateTime(String,String,DateTime)
+
+Adds a DateTime field with given label and a default value.
+
+```crmscript
+Void addDateTime(String id, String label, DateTime default)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+DateTime now;
+def.addDateTime("datetime", "My datetime",now);
+```
+
+## addDateTime(String,String,DateTime,String,Bool)
+
+Adds a DateTime field with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addDateTime(String id, String label, DateTime default, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+DateTime now;
+def.addDateTime("datetime", "My datetime",now, "Input datetime", true);
+```
+
+## addField(EventDataDialogField)
+
+Adds a field to dialog.
+
+```crmscript
+Void addField(EventDataDialogField field)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+EventDataDialogField dField;
+dField.setId("field1");
+dField.setType("list");
+dField.setLabel("Label 1");
+dField.setPlaceholder("Ph field 1");
+dField.setListName("associate");
+dField.setShowFullPath(false);
+dField.setAllowRootSelection(false);
+dField.setShowAllChildrenInSearch(true);
+dField.setDefault("32");
+def.addField(dField);
+```
+
+## addFloat(String,String)
+
+Adds a Float field with given label.
+
+```crmscript
+Void addFloat(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addFloat("floatNumber", "My float");
+```
+
+## addFloat(String,String,Float)
+
+Adds a Float field with given label and a default value.
+
+```crmscript
+Void addFloat(String id, String label, Float defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addFloat("floatNumber", "My float", 3.14);
+```
+
+## addFloat(String,String,Float,String,Bool)
+
+Adds a Float field with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addFloat(String id, String label, Float defaultValue, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addFloat("floatNumber", "My float", 3.14, "Input decimal number", true);
+```
+
+## addInteger(String,String)
+
+Adds a Integer field with given label.
+
+```crmscript
+Void addInteger(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addInteger("integer", "My Integer");
+```
+
+## addInteger(String,String,Integer)
+
+Adds a Integer field with given label and a default value.
+
+```crmscript
+Void addInteger(String id, String label, Integer defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addInteger("integer", "My Integer", 3);
+```
+
+## addInteger(String,String,Integer,String,Bool)
+
+Adds a Integer field with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addInteger(String id, String label, Integer defaultValue, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addInteger("integer", "My Integer", 3, "Input number", true);
+```
+
+## addLabel(String,String)
+
+Adds a label field.
+
+```crmscript
+Void addLabel(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addLabel("label1", "My label");
+```
+
+## addList(String,String,String)
+
+Adds a list field from listName with the given label.
+
+```crmscript
+Void addList(String id, String label, String listName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addList("listAssociate", "Choose associate", "associate");
+```
+
+## addList(String,String,String,Integer)
+
+Adds a list field from listname with given label and default value.
+
+```crmscript
+Void addList(String id, String label, String listName, Integer defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addList("listAssociate", "Choose associate", "associate", 1);
+```
+
+## addList(String,String,String,Integer,String,Bool)
+
+Adds a list field from listname with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addList(String id, String label, String listName, Integer defaultValue, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addList("listAssociate", "Choose associate", "associate", 1, "Select from list", false);
+```
+
+## addList(String,String,String[],String,String,Bool)
+
+Adds a list field from manually created list with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addList(String id, String label, String[] listItems, String defaultValue, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+String[2] items;
+items[0] = "Value 1";
+items[1] = "Value 2";
+def.addList("listItems", "Choose item", items, "", "Select from list", false);
+```
+
+## addList(String,String,Map,String,String,Bool)
+
+Adds a list field from manually created list with key-value pair with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addList(String id, String label, Map listItems, String defaultValue, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Map items;
+items.insert("1""Value 1");
+items.insert("2","Value 2");
+def.addList("listItems", "Choose item", items, "", "Select from list", false);
+```
+
+## addList(String,String,String,Integer,String,Bool,String,Bool)
+
+Adds a list field from listname with given label, default value, placeholder text. Possible to set additionalInfo supported by list and force list to be flat. Possible to set field as mandatory.
+
+```crmscript
+Void addList(String id, String label, String listName, Integer defaultValue, String placeholder, Bool mandatory, String additionalInfo, Bool forceFlatList)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addList("listAssociate", "Choose associate", "associate", 1, "Select from list", false, "", false);
+```
+
+## addText(String,String)
+
+Adds a text field with given label.
+
+```crmscript
+Void addText(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addText("textinput", "My Input");
+```
+
+## addText(String,String,String)
+
+Adds a text field with given label and a default value.
+
+```crmscript
+Void addText(String id, String label, String defaultValue)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addText("textinput", "My Input", "Default");
+```
+
+## addText(String,String,String,String,Bool)
+
+Adds a text field with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addText(String id, String label, String defaultValue, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addText("textinput", "My Input", "Default", "Type something", false);
+```
+
+## addTextarea(String,String,String,String,Bool,Integer,Integer)
+
+Adds a textarea field with given label, default value, placeholder text, rows and columns. Possible to set field as mandatory.
+
+```crmscript
+Void addTextarea(String id, String label, String defaultValue, String placeholder, Bool mandatory, Integer rows, Integer cols)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addTextarea("textinput", "My Input", "Default", "Type something", false, 4, 5);
+```
+
+## addTime(String,String)
+
+Adds a Time field with given label.
+
+```crmscript
+Void addTime(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addTime("time", "My time");
+```
+
+## addTime(String,String,Time)
+
+Adds a Time field with given label and a default value.
+
+```crmscript
+Void addTime(String id, String label, Time default)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Time now;
+def.addTime("time", "My time",now);
+```
+
+## addTime(String,String,Time,String,Bool)
+
+Adds a Time field with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addTime(String id, String label, Time default, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Time now;
+def.addTime("time", "My time",now, "Input time", true);
+```
+
+## addTimeSpan(String,String)
+
+Adds a TimeSpan field with given label.
+
+```crmscript
+Void addTimeSpan(String id, String label)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addTimeSpan("timespane", "My timespan");
+```
+
+## addTimeSpan(String,String,Integer)
+
+Adds a TimeSpan field with given label and a default value.
+
+```crmscript
+Void addTimeSpan(String id, String label, Integer default)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Integer default = 100;
+def.addTimeSpan("timespan", "My timespan", default);
+```
+
+## addTimeSpan(String,String,Integer,String,Bool)
+
+Adds a TimeSpan field with given label, default value, placeholder text. Possible to set field as mandatory.
+
+```crmscript
+Void addTimeSpan(String id, String label, Integer default, String placeholder, Bool mandatory)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Integer default = 100;
+def.addTimeSpan("timespan", "My timespan",default, "Input timespan", true);
+```
+
+## addTimeSpan(String,String,Integer,String,Bool,Bool,Bool,Bool,Bool,Bool)
+
+Adds a TimeSpan field with given label, default value, placeholder text and which units to display. Possible to set field as mandatory.
+
+```crmscript
+Void addTimeSpan(String id, String label, Integer default, String placeholder, Bool mandatory, Bool allowBlank, Bool days, Bool hours, Bool minutes, Bool seconds)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+Integer default = 100;
+def.addTimeSpan("timespan", "My timespan",default, "Input timespan", true,true,false,true,true,false);
+```
+
+## removeField(String)
+
+Remove field with given name.
+
+```crmscript
+Void removeField(String id)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.removeField("checkme");
+```
+
+## getBlockExecutionOnCancel()
+
+Returns true if execution is blocked on cancel.
+
+```crmscript
+Bool getBlockExecutionOnCancel()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+
+## setBlockExecutionOnCancel(Bool)
+
+Set if execution should be blocked on cancel.
+
+```crmscript
+Void setBlockExecutionOnCancel(Bool value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## getHeight()
+
+Get height set on dialog.
+
+```crmscript
+Integer getHeight()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## setHeight(Integer)
+
+Set height of dialog.
+
+```crmscript
+Void setHeight(Integer height)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setHeight(200);
+```
+
+## getIcon()
+
+Returns type of icon on dialog
+
+```crmscript
+String getIcon()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Supports:&lt;ul&gt;&lt;li&gt;info&lt;/li&gt;&lt;li&gt;warn&lt;/li&gt;&lt;li&gt;error&lt;/li&gt;&lt;li&gt;question&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## setIcon(String)
+
+Sets icon type on dialog.
+
+```crmscript
+Void setIcon(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Supports:&lt;ul&gt;&lt;li&gt;info&lt;/li&gt;&lt;li&gt;warn&lt;/li&gt;&lt;li&gt;error&lt;/li&gt;&lt;li&gt;question&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setIcon("info");
+```
+
+## getMarkdown()
+
+Returns body text with Markdown syntax.
+
+```crmscript
+String getMarkdown()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## setMarkdown(String)
+
+Sets body text using Markdown syntax on dialog. If specified this will take precedence over setText().
+
+```crmscript
+Void setMarkdown(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+&lt;b&gt;NOTE:&lt;/b&gt; This is not full Markdown but a \"lite\" version.
+&lt;ul&gt;&lt;li&gt;# - Produces a &lt;h1&gt;&lt;/li&gt;&lt;li&gt;Newline in current paragraph - adds a &lt;br&gt;&lt;/li&gt;&lt;li&gt;Blank line - starts a new paragraph. Multiple blank lines in a row will create empty paragraphs.&lt;/li&gt;&lt;li&gt;Leading * - replaced with &bull;&lt;/li&gt;&lt;li&gt;Whitelisted tags are preserved (b, i, a, span, p).&lt;/li&gt;&lt;li&gt;Whitelisted attributes are preserved (class). To get a section styled differently, you may use a span element with a custom class name.&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setMarkdown("[Google it](https://www.google.com)");
+```
+
+## getPrefix()
+
+Returns prefix set for fields dialog
+
+```crmscript
+String getPrefix()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## setPrefix(String)
+
+Sets prefix for fields in dialog.
+
+```crmscript
+Void setPrefix(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setPrefix("info_");
+```
+
+## getText()
+
+Returns body text on dialog
+
+```crmscript
+String getText()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## setText(String)
+
+Sets body text on dialog.
+
+```crmscript
+Void setText(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setText("My dialog body");
+```
+
+## getTitle()
+
+Returns title on dialog
+
+```crmscript
+String getTitle()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+## setTitle(String)
+
+Sets title on dialog.
+
+```crmscript
+Void setTitle(String value)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setTitle("My dialog title");
+```
+
+## getType()
+
+Returns what type of dialog
+
+```crmscript
+String getType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+
+<Note>
+Supports:&lt;ul&gt;&lt;li&gt;yesno&lt;/li&gt;&lt;li&gt;okcancel&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+## setType(String)
+
+Sets type of dialog.
+
+```crmscript
+Void setType(String type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+Supports:&lt;ul&gt;&lt;li&gt;yesno&lt;/li&gt;&lt;li&gt;okcancel&lt;/li&gt;&lt;/ul&gt;
+</Note>
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setType("yesno");
+```
+
+## getWidth()
+
+Get width set on dialog.
+
+```crmscript
+Integer getWidth()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+
+## setWidth(Integer)
+
+Set width of dialog.
+
+```crmscript
+Void setWidth(Integer height)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.setWidth(200);
+```
+
+## toJSONString()
+
+Returns EventDataDialogDefinition as a JSON string.
+
+```crmscript
+String toJSONString()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Returns object as a JSON string.
+
+**Example:**
+
+```crmscript
+EventDataDialogDefinition def;
+def.addCheckbox("checkbox_1", "Checkbox 1");
+def.addCheckbox("checkbox_2", "Checkbox 2", true);
+def.addText("text_1", "Text 1", "Default", "Placeholder", true);
+def.addList("list_1", "List 1", "personList", 42);
+print(def.toJSONString());
+```

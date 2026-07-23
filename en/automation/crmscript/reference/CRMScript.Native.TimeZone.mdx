@@ -1,0 +1,47 @@
+﻿---
+uid: crmscript.native.timezone
+title: TimeZone
+description: "Gives access to timezone info. Call the global function getLocalTimeZone() to get the object."
+keywords: CRMScript, TimeZone, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# TimeZone
+
+Gives access to timezone info. Call the global function getLocalTimeZone() to get the object.
+
+## Constructors
+
+### TimeZone()
+
+```crmscript
+TimeZone
+```
+
+Initializes a new instance of the TimeZone class.
+
+## Methods
+
+## getTimeZone()
+
+This functions will give you the difference from GMT in hours and minutes.
+
+```crmscript
+String getTimeZone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The time zone string on the form "+0100", "-0545" etc.
+
+## getTimeZoneSecs()
+
+Difference from GMT in seconds.
+
+```crmscript
+Integer getTimeZoneSecs()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Difference from GMT in seconds.

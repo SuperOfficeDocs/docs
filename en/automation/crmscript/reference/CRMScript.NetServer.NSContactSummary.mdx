@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nscontactsummary
+title: NSContactSummary
+description: "Summary of contact with recent activities, chats, and requests included."
+keywords: CRMScript, NSContactSummary, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSContactSummary
+
+Summary of contact with recent activities, chats, and requests included.
+
+## Constructors
+
+### NSContactSummary()
+
+```crmscript
+NSContactSummary
+```
+
+Initializes a new instance of the NSContactSummary class.
+
+## Methods
+
+## GetChats()
+
+```crmscript
+NSChatSummaryItem[] GetChats()
+```
+
+**Returns:** [CRMScript.NetServer.NSChatSummaryItem](CRMScript.NetServer.NSChatSummaryItem)[] - Recent chats with contact.
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSChatSummaryItem[] chats = thing.GetChats();
+```
+
+## GetContact()
+
+```crmscript
+NSContact GetContact()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - Simple Contact data.
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSContact contact = thing.GetContact();
+```
+
+## GetDocuments()
+
+```crmscript
+NSActivitySummaryItem[] GetDocuments()
+```
+
+**Returns:** [CRMScript.NetServer.NSActivitySummaryItem](CRMScript.NetServer.NSActivitySummaryItem)[] - Recent documents on contact.
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSActivitySummaryItem[] documents = thing.GetDocuments();
+```
+
+## GetFollowups()
+
+```crmscript
+NSActivitySummaryItem[] GetFollowups()
+```
+
+**Returns:** [CRMScript.NetServer.NSActivitySummaryItem](CRMScript.NetServer.NSActivitySummaryItem)[] - Recent follow-ups on contact.
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSActivitySummaryItem[] followups = thing.GetFollowups();
+```
+
+## GetSales()
+
+```crmscript
+NSSaleSummaryItem[] GetSales()
+```
+
+**Returns:** [CRMScript.NetServer.NSSaleSummaryItem](CRMScript.NetServer.NSSaleSummaryItem)[] - Recent sales on contact.
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSSaleSummaryItem[] sales = thing.GetSales();
+```
+
+## GetTickets()
+
+```crmscript
+NSTicketSummaryItem[] GetTickets()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicketSummaryItem](CRMScript.NetServer.NSTicketSummaryItem)[] - Recent tickets on contact.
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSTicketSummaryItem[] tickets = thing.GetTickets();
+```
+
+## SetChats(NSChatSummaryItem[])
+
+```crmscript
+Void SetChats(NSChatSummaryItem[] chats)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSChatSummaryItem[] chats;
+thing.SetChats(chats);
+```
+
+## SetContact(NSContact)
+
+```crmscript
+Void SetContact(NSContact contact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSContact contact;
+thing.SetContact(contact);
+```
+
+## SetDocuments(NSActivitySummaryItem[])
+
+```crmscript
+Void SetDocuments(NSActivitySummaryItem[] documents)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSActivitySummaryItem[] documents;
+thing.SetDocuments(documents);
+```
+
+## SetFollowups(NSActivitySummaryItem[])
+
+```crmscript
+Void SetFollowups(NSActivitySummaryItem[] followups)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSActivitySummaryItem[] followups;
+thing.SetFollowups(followups);
+```
+
+## SetSales(NSSaleSummaryItem[])
+
+```crmscript
+Void SetSales(NSSaleSummaryItem[] sales)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSSaleSummaryItem[] sales;
+thing.SetSales(sales);
+```
+
+## SetTickets((NSTicketSummaryItem[])
+
+```crmscript
+Void SetTickets(NSTicketSummaryItem[] tickets)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSContactSummary thing;
+NSTicketSummaryItem[] tickets;
+thing.SetTickets(tickets);
+```

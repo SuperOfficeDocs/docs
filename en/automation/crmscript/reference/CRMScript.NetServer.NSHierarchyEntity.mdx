@@ -1,0 +1,335 @@
+﻿---
+uid: crmscript.netserver.nshierarchyentity
+title: NSHierarchyEntity
+description: ""
+keywords: CRMScript, NSHierarchyEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSHierarchyEntity
+
+## Constructors
+
+### NSHierarchyEntity()
+
+```crmscript
+NSHierarchyEntity
+```
+
+Initializes a new instance of the NSHierarchyEntity class.
+
+## Methods
+
+## GetChildren()
+
+```crmscript
+NSHierarchyEntity[] GetChildren()
+```
+
+**Returns:** [CRMScript.NetServer.NSHierarchyEntity](CRMScript.NetServer.NSHierarchyEntity)[] - Sub-items, if any.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+NSHierarchyEntity[] children = thing.GetChildren();
+```
+
+## GetDomain()
+
+```crmscript
+Integer GetDomain()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Domain separating the different hierarchy. See &lt;xref href=\"CRMScript.NetServer.Domain\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer domain = thing.GetDomain();
+```
+
+## GetFullname()
+
+```crmscript
+String GetFullname()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The full name of this category, i.e. Foo/bar/test.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+String fullname = thing.GetFullname();
+```
+
+## GetHierarchyId()
+
+```crmscript
+Integer GetHierarchyId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer hierarchyId = thing.GetHierarchyId();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of this hierarchy folder.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+String name = thing.GetName();
+```
+
+## GetParentId()
+
+```crmscript
+Integer GetParentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Parent table.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer parentId = thing.GetParentId();
+```
+
+## GetRegistered()
+
+```crmscript
+DateTime GetRegistered()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+DateTime registered = thing.GetRegistered();
+```
+
+## GetRegisteredAssociateId()
+
+```crmscript
+Integer GetRegisteredAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Registered by whom.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer registeredAssociateId = thing.GetRegisteredAssociateId();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedAssociateId()
+
+```crmscript
+Integer GetUpdatedAssociateId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Last updated by whom.
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer updatedAssociateId = thing.GetUpdatedAssociateId();
+```
+
+## SetChildren(NSHierarchyEntity[])
+
+```crmscript
+Void SetChildren(NSHierarchyEntity[] children)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+NSHierarchyEntity[] children;
+thing.SetChildren(children);
+```
+
+## SetDomain(Integer)
+
+```crmscript
+Void SetDomain(Integer domain)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer domain;
+thing.SetDomain(domain);
+```
+
+## SetFullname(String)
+
+```crmscript
+Void SetFullname(String fullname)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+String fullname;
+thing.SetFullname(fullname);
+```
+
+## SetHierarchyId(Integer)
+
+```crmscript
+Void SetHierarchyId(Integer hierarchyId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer hierarchyId;
+thing.SetHierarchyId(hierarchyId);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetParentId(Integer)
+
+```crmscript
+Void SetParentId(Integer parentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer parentId;
+thing.SetParentId(parentId);
+```
+
+## SetRegistered(DateTime)
+
+```crmscript
+Void SetRegistered(DateTime registered)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+DateTime registered;
+thing.SetRegistered(registered);
+```
+
+## SetRegisteredAssociateId(Integer)
+
+```crmscript
+Void SetRegisteredAssociateId(Integer registeredAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer registeredAssociateId;
+thing.SetRegisteredAssociateId(registeredAssociateId);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedAssociateId(Integer)
+
+```crmscript
+Void SetUpdatedAssociateId(Integer updatedAssociateId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSHierarchyEntity thing;
+Integer updatedAssociateId;
+thing.SetUpdatedAssociateId(updatedAssociateId);
+```

@@ -1,0 +1,1084 @@
+﻿---
+uid: crmscript.netserver.nsdocumententity
+title: NSDocumentEntity
+description: ""
+keywords: CRMScript, NSDocumentEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSDocumentEntity
+
+## Constructors
+
+### NSDocumentEntity()
+
+```crmscript
+NSDocumentEntity
+```
+
+Initializes a new instance of the NSDocumentEntity class.
+
+## Methods
+
+## GetActiveLinks()
+
+```crmscript
+Integer GetActiveLinks()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of active links to sale, document, appointment.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer activeLinks = thing.GetActiveLinks();
+```
+
+## GetAssociate()
+
+```crmscript
+NSAssociate GetAssociate()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The owner of the document* the associate whose checklist the document is in.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSAssociate associate = thing.GetAssociate();
+```
+
+## GetAttention()
+
+```crmscript
+String GetAttention()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Attention/salutation.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String attention = thing.GetAttention();
+```
+
+## GetCompleted()
+
+```crmscript
+Integer GetCompleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Document Completed state. This is the part of the Status property.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer completed = thing.GetCompleted();
+```
+
+## GetContact()
+
+```crmscript
+NSContact GetContact()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - The contact associated with the document. It may also be null if no contact is associated with the document.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSContact contact = thing.GetContact();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that first created the document. The property is read-only.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetCreatedDate()
+
+```crmscript
+DateTime GetCreatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+DateTime createdDate = thing.GetCreatedDate();
+```
+
+## GetCustomFields()
+
+Gets the user-defined + extra fields on an NSDocumentEntity as a map.
+
+```crmscript
+Map GetCustomFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Map fields = thing.GetCustomFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetDate()
+
+```crmscript
+DateTime GetDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - date + start time planned.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+DateTime date = thing.GetDate();
+```
+
+## GetDescription()
+
+```crmscript
+String GetDescription()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String description = thing.GetDescription();
+```
+
+## GetDocumentId()
+
+```crmscript
+Integer GetDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer documentId = thing.GetDocumentId();
+```
+
+## GetDocumentTemplate()
+
+```crmscript
+NSDocumentTemplate GetDocumentTemplate()
+```
+
+**Returns:** [CRMScript.NetServer.NSDocumentTemplate](CRMScript.NetServer.NSDocumentTemplate) - The template type of the document.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSDocumentTemplate documentTemplate = thing.GetDocumentTemplate();
+```
+
+## GetExternalRef()
+
+```crmscript
+String GetExternalRef()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - External reference for document plugin to resolve document identity (Notes ID, e-mail message ID, whatever).
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String externalRef = thing.GetExternalRef();
+```
+
+## GetExtraFields()
+
+Gets the extra fields on NSDocumentEntity as a map.
+
+```crmscript
+Map GetExtraFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Map fields = thing.GetExtraFields();
+String oldValue = fields.get("x_foobar");
+fields.insert("x_foobar", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetHeader()
+
+```crmscript
+String GetHeader()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Visible document name.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String header = thing.GetHeader();
+```
+
+## GetIsPublished()
+
+```crmscript
+Bool GetIsPublished()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this NSDocumentEntity be published and visible to strangers?
+
+## GetLinks()
+
+```crmscript
+NSLink[] GetLinks()
+```
+
+**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)[] - List of all elements linked to the document.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSLink[] links = thing.GetLinks();
+```
+
+## GetLockSemantics()
+
+```crmscript
+Integer GetLockSemantics()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href=\"CRMScript.NetServer.DocumentLockSemantics\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer lockSemantics = thing.GetLockSemantics();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - File name.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String name = thing.GetName();
+```
+
+## GetOurRef()
+
+```crmscript
+String GetOurRef()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Our reference, searchable field from free-text search.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String ourRef = thing.GetOurRef();
+```
+
+## GetPerson()
+
+```crmscript
+NSPerson GetPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - A document may also be connected to a person; this must be a contact person registered on the current company. This does not mean however that a person is required.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSPerson person = thing.GetPerson();
+```
+
+## GetProject()
+
+```crmscript
+NSProject GetProject()
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject) - A document may also be connected to a project, so you see the document both on the company card, and on the project card. This does not mean however that a project is required.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSProject project = thing.GetProject();
+```
+
+## GetPublishEventDate()
+
+```crmscript
+DateTime GetPublishEventDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish event date on NSDocumentEntity.
+
+## GetPublishFrom()
+
+```crmscript
+DateTime GetPublishFrom()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish from date on NSDocumentEntity.
+
+## GetPublishTo()
+
+```crmscript
+DateTime GetPublishTo()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish to date on NSDocumentEntity. After this date the event is no longer visible.
+
+## GetSale()
+
+```crmscript
+NSSale GetSale()
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale) - A document may also be connected to a sale, so you see the document on the company card, on the project card and on the sale card. This does not mean however that a sale is required. May be null.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSSale sale = thing.GetSale();
+```
+
+## GetSnum()
+
+```crmscript
+Integer GetSnum()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sequence number allocated from refcount on used template when creating the document.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer snum = thing.GetSnum();
+```
+
+## GetSuggestedDocumentId()
+
+```crmscript
+Integer GetSuggestedDocumentId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Suggested guide item that this document is an instance of.
+
+<Note>
+NOT valid for appointments, they have their own link
+</Note>
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer suggestedDocumentId = thing.GetSuggestedDocumentId();
+```
+
+## GetType()
+
+```crmscript
+Integer GetType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Is this a normal document or a mail-merge or report?
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer type = thing.GetType();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the appointment.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUpdatedDate()
+
+```crmscript
+DateTime GetUpdatedDate()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+DateTime updatedDate = thing.GetUpdatedDate();
+```
+
+## GetUserDefinedFields()
+
+Gets the user-defined fields on the NSDocumentEntity as a map.
+
+```crmscript
+Map GetUserDefinedFields()
+```
+
+**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Map fields = thing.GetUserDefinedFields();
+String oldValue = fields.get("SuperOffice:1");
+fields.insert("SuperOffice:1", "NewValue");
+for (fields.first(); !fields.eof(); fields.next())
+  printLine(fields.getKey() + ":  " + fields.getVal());
+```
+
+## GetVisibleFor()
+
+```crmscript
+NSVisibleFor[] GetVisibleFor()
+```
+
+**Returns:** [CRMScript.NetServer.NSVisibleFor](CRMScript.NetServer.NSVisibleFor)[] - Return the user groups and/or users the NSDocumentEntity item is visible for.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+```
+
+## GetYourRef()
+
+```crmscript
+String GetYourRef()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Your reference.
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String yourRef = thing.GetYourRef();
+```
+
+## SetActiveLinks(Integer)
+
+```crmscript
+Void SetActiveLinks(Integer activeLinks)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer activeLinks;
+thing.SetActiveLinks(activeLinks);
+```
+
+## SetAssociate(NSAssociate)
+
+```crmscript
+Void SetAssociate(NSAssociate associate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSAssociate associate;
+thing.SetAssociate(associate);
+```
+
+## SetAttention(String)
+
+```crmscript
+Void SetAttention(String attention)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String attention;
+thing.SetAttention(attention);
+```
+
+## SetCompleted(Integer)
+
+```crmscript
+Void SetCompleted(Integer completed)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer completed;
+thing.SetCompleted(completed);
+```
+
+## SetContact(NSContact)
+
+```crmscript
+Void SetContact(NSContact contact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSContact contact;
+thing.SetContact(contact);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetCreatedDate(DateTime)
+
+```crmscript
+Void SetCreatedDate(DateTime createdDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+DateTime createdDate;
+thing.SetCreatedDate(createdDate);
+```
+
+## SetCustomFields(Map)
+
+Sets the user-defined and extra fields on an NSDocumentEntity with a map.
+
+```crmscript
+Void SetCustomFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+udefs["x_foo"] = "foobar";
+udefs["x_bar"] = "456"; // List item id
+thing.SetCustomFields(udefs);
+```
+
+## SetDate(DateTime)
+
+```crmscript
+Void SetDate(DateTime date)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+DateTime date;
+thing.SetDate(date);
+```
+
+## SetDescription(String)
+
+```crmscript
+Void SetDescription(String description)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String description;
+thing.SetDescription(description);
+```
+
+## SetDocumentId(Integer)
+
+```crmscript
+Void SetDocumentId(Integer documentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer documentId;
+thing.SetDocumentId(documentId);
+```
+
+## SetDocumentTemplate(NSDocumentTemplate)
+
+```crmscript
+Void SetDocumentTemplate(NSDocumentTemplate documentTemplate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSDocumentTemplate documentTemplate;
+thing.SetDocumentTemplate(documentTemplate);
+```
+
+## SetExternalRef(String)
+
+```crmscript
+Void SetExternalRef(String externalRef)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String externalRef;
+thing.SetExternalRef(externalRef);
+```
+
+## SetExtraFields(Map)
+
+Sets the extra field values on NSDocumentEntity with a map.
+
+```crmscript
+Void SetExtraFields(Map extras)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Map extras;
+extras["SuperOffice:1"] = "[I:123]";
+extras["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+extras["custom.progid"] = "foobar";
+thing.SetExtraFields(extras);
+```
+
+## SetHeader(String)
+
+```crmscript
+Void SetHeader(String header)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String header;
+thing.SetHeader(header);
+```
+
+## SetIsPublished(Bool)
+
+Sets the IsPublished property
+
+```crmscript
+Void SetIsPublished(Bool isPublished)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetLinks(NSLink[])
+
+```crmscript
+Void SetLinks(NSLink[] links)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSLink[] links;
+thing.SetLinks(links);
+```
+
+## SetLockSemantics(Integer)
+
+```crmscript
+Void SetLockSemantics(Integer lockSemantics)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer lockSemantics;
+thing.SetLockSemantics(lockSemantics);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOurRef(String)
+
+```crmscript
+Void SetOurRef(String ourRef)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String ourRef;
+thing.SetOurRef(ourRef);
+```
+
+## SetPerson(NSPerson)
+
+```crmscript
+Void SetPerson(NSPerson person)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+A document may also be connected to a person; this must be a contact person registered on the current company. This does not mean however that a person is required.
+</Note>
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSPerson person;
+thing.SetPerson(person);
+```
+
+## SetProject(NSProject)
+
+```crmscript
+Void SetProject(NSProject project)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+A document may also be connected to a project, so you see the document both on the company card, and on the project card. This does not mean however that a project is required.
+</Note>
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSProject project;
+thing.SetProject(project);
+```
+
+## SetPublishEventDate(DateTime)
+
+```crmscript
+Void SetPublishEventDate(DateTime publishDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishFrom(DateTime)
+
+Sets the publish from date on an NSDocumentEntity.
+
+```crmscript
+Void SetPublishFrom(DateTime publishFrom)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetPublishTo(DateTime)
+
+Sets the publish to date on NSDocumentEntity. After this date the event is no longer visible.
+
+```crmscript
+Void SetPublishTo(DateTime publishTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+## SetSale(NSSale)
+
+```crmscript
+Void SetSale(NSSale sale)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+A document may also be connected to a sale, so you see the document on the company card, on the project card and on the sale card. This does not mean however that a sale is required. May be null.
+</Note>
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSSale sale;
+thing.SetSale(sale);
+```
+
+## SetSnum(Integer)
+
+```crmscript
+Void SetSnum(Integer snum)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer snum;
+thing.SetSnum(snum);
+```
+
+## SetSuggestedDocumentId(Integer)
+
+```crmscript
+Void SetSuggestedDocumentId(Integer suggestedDocumentId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+NOT valid for appointments, they have their own link
+</Note>
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer suggestedDocumentId;
+thing.SetSuggestedDocumentId(suggestedDocumentId);
+```
+
+## SetType(Integer)
+
+```crmscript
+Void SetType(Integer type)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Integer type;
+thing.SetType(type);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUpdatedDate(DateTime)
+
+```crmscript
+Void SetUpdatedDate(DateTime updatedDate)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+DateTime updatedDate;
+thing.SetUpdatedDate(updatedDate);
+```
+
+## SetUserDefinedFields(Map)
+
+Sets the user-defined fields on the NSDocumentEntity as a map.
+
+```crmscript
+Void SetUserDefinedFields(Map udefs)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+Map udefs;
+udefs["SuperOffice:1"] = "[I:123]";
+udefs["SuperOffice:1"] = "123"; // this will also work, but beware of decimal point variations in different languages
+udefs["custom.progid"] = "foobar";
+thing.SetUserDefinedFields(udefs);
+```
+
+## SetVisibleFor(NSVisibleFor[])
+
+Sets the user groups and/or users the NSDocumentEntity item is visible for.
+
+```crmscript
+Void SetVisibleFor(NSVisibleFor[] visibleFor)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+NSVisibleFor[] visibleFor = thing.GetVisibleFor();
+visibleFor[0].SetVisiblity(1);  // usergroup
+visibleFor[0].SetVisibleId(123); // usergroup id
+thing.SetVisibleFor(visibleFor);
+```
+
+## SetYourRef(String)
+
+```crmscript
+Void SetYourRef(String yourRef)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSDocumentEntity thing;
+String yourRef;
+thing.SetYourRef(yourRef);
+```

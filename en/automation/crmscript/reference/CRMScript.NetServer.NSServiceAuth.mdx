@@ -1,0 +1,213 @@
+﻿---
+uid: crmscript.netserver.nsserviceauth
+title: NSServiceAuth
+description: "Properties for service authentication."
+keywords: CRMScript, NSServiceAuth, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSServiceAuth
+
+Properties for service authentication.
+
+## Constructors
+
+### NSServiceAuth()
+
+```crmscript
+NSServiceAuth
+```
+
+Initializes a new instance of the NSServiceAuth class.
+
+## Methods
+
+## GetAuthType()
+
+```crmscript
+String GetAuthType()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The type of authentication, plain-text, OAuth...
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String authType = thing.GetAuthType();
+```
+
+## GetPassword()
+
+```crmscript
+String GetPassword()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The (decrypted) password or token.
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String password = thing.GetPassword();
+```
+
+## GetPort()
+
+```crmscript
+Integer GetPort()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The server port.
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+Integer port = thing.GetPort();
+```
+
+## GetServer()
+
+```crmscript
+String GetServer()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The mail server.
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String server = thing.GetServer();
+```
+
+## GetServiceAuthId()
+
+```crmscript
+Integer GetServiceAuthId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key.
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+Integer serviceAuthId = thing.GetServiceAuthId();
+```
+
+## GetUsername()
+
+```crmscript
+String GetUsername()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The username.
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String username = thing.GetUsername();
+```
+
+## SetAuthType(String)
+
+```crmscript
+Void SetAuthType(String authType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String authType;
+thing.SetAuthType(authType);
+```
+
+## SetPassword(String)
+
+```crmscript
+Void SetPassword(String password)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String password;
+thing.SetPassword(password);
+```
+
+## SetPort(Integer)
+
+```crmscript
+Void SetPort(Integer port)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+Integer port;
+thing.SetPort(port);
+```
+
+## SetServer(String)
+
+```crmscript
+Void SetServer(String server)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String server;
+thing.SetServer(server);
+```
+
+## SetServiceAuthId(Integer)
+
+```crmscript
+Void SetServiceAuthId(Integer serviceAuthId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+Integer serviceAuthId;
+thing.SetServiceAuthId(serviceAuthId);
+```
+
+## SetUsername(String)
+
+```crmscript
+Void SetUsername(String username)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSServiceAuth thing;
+String username;
+thing.SetUsername(username);
+```

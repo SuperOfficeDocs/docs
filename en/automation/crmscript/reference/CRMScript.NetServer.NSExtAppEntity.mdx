@@ -1,0 +1,709 @@
+﻿---
+uid: crmscript.netserver.nsextappentity
+title: NSExtAppEntity
+description: "Contains information on an external application."
+keywords: CRMScript, NSExtAppEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSExtAppEntity
+
+Contains information on an external application.
+
+## Constructors
+
+### NSExtAppEntity()
+
+```crmscript
+NSExtAppEntity
+```
+
+Initializes a new instance of the NSExtAppEntity class.
+
+## Methods
+
+## GetDeleted()
+
+```crmscript
+Bool GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the application is marked as deleted.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool deleted = thing.GetDeleted();
+```
+
+## GetExecuteOnEvent()
+
+```crmscript
+NSExecuteOnEvent GetExecuteOnEvent()
+```
+
+**Returns:** [CRMScript.NetServer.NSExecuteOnEvent](CRMScript.NetServer.NSExecuteOnEvent) - Events that cause automatic execution of this app. See &lt;xref href=\"CRMScript.NetServer.ExecuteOnEvent\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+NSExecuteOnEvent executeOnEvent = thing.GetExecuteOnEvent();
+```
+
+## GetExtAppId()
+
+```crmscript
+Integer GetExtAppId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The identity of the external app.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer extAppId = thing.GetExtAppId();
+```
+
+## GetFilename()
+
+```crmscript
+String GetFilename()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Filename of the programfile.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String filename = thing.GetFilename();
+```
+
+## GetIcon()
+
+```crmscript
+Integer GetIcon()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the icon of the external app.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer icon = thing.GetIcon();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the web panel.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String name = thing.GetName();
+```
+
+## GetOnCentral()
+
+```crmscript
+Bool GetOnCentral()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the application visible when user is on central database.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onCentral = thing.GetOnCentral();
+```
+
+## GetOnSalesMarketingPocket()
+
+```crmscript
+Bool GetOnSalesMarketingPocket()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the web panel visible when user is on pocket client.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onSalesMarketingPocket = thing.GetOnSalesMarketingPocket();
+```
+
+## GetOnSatellite()
+
+```crmscript
+Bool GetOnSatellite()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the application visible when user is on a satellite.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onSatellite = thing.GetOnSatellite();
+```
+
+## GetOnTravel()
+
+```crmscript
+Bool GetOnTravel()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the application visible when user is on travel.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onTravel = thing.GetOnTravel();
+```
+
+## GetParameters()
+
+```crmscript
+String GetParameters()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - &lt;template variable&gt;&lt;other template variable&gt;
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String parameters = thing.GetParameters();
+```
+
+## GetPath()
+
+```crmscript
+String GetPath()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Path where the programfile is located; if empty, PATH is used.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String path = thing.GetPath();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The rank of the application.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetShowInAddressBar()
+
+```crmscript
+Bool GetShowInAddressBar()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the web panel have an address bar.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInAddressBar = thing.GetShowInAddressBar();
+```
+
+## GetShowInMenuBar()
+
+```crmscript
+Bool GetShowInMenuBar()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the application have a menu bar.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInMenuBar = thing.GetShowInMenuBar();
+```
+
+## GetShowInStatusBar()
+
+```crmscript
+Bool GetShowInStatusBar()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the web panel have a status bar.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInStatusBar = thing.GetShowInStatusBar();
+```
+
+## GetShowInToolBar()
+
+```crmscript
+Bool GetShowInToolBar()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the web panel have a toolbar.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInToolBar = thing.GetShowInToolBar();
+```
+
+## GetShowState()
+
+```crmscript
+Integer GetShowState()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The application is shown in which state Minimized, Maximized or Restored. See &lt;xref href=\"CRMScript.NetServer.ShowState\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer showState = thing.GetShowState();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The tooltip of the web panel.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetVisibleIn()
+
+```crmscript
+Integer GetVisibleIn()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The application is visible in. See &lt;xref href=\"CRMScript.NetServer.Navigation\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer visibleIn = thing.GetVisibleIn();
+```
+
+## GetWaitToFinish()
+
+```crmscript
+Bool GetWaitToFinish()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the application shall wait for finish event.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool waitToFinish = thing.GetWaitToFinish();
+```
+
+## GetWorkdir()
+
+```crmscript
+String GetWorkdir()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Directory set to current when loading the application, if different from application's own.
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String workdir = thing.GetWorkdir();
+```
+
+## SetDeleted(Bool)
+
+```crmscript
+Void SetDeleted(Bool deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetExecuteOnEvent(NSExecuteOnEvent)
+
+```crmscript
+Void SetExecuteOnEvent(NSExecuteOnEvent executeOnEvent)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+NSExecuteOnEvent executeOnEvent;
+thing.SetExecuteOnEvent(executeOnEvent);
+```
+
+## SetExtAppId(Integer)
+
+```crmscript
+Void SetExtAppId(Integer extAppId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer extAppId;
+thing.SetExtAppId(extAppId);
+```
+
+## SetFilename(String)
+
+```crmscript
+Void SetFilename(String filename)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String filename;
+thing.SetFilename(filename);
+```
+
+## SetIcon(Integer)
+
+```crmscript
+Void SetIcon(Integer icon)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer icon;
+thing.SetIcon(icon);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetOnCentral(Bool)
+
+```crmscript
+Void SetOnCentral(Bool onCentral)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onCentral;
+thing.SetOnCentral(onCentral);
+```
+
+## SetOnSalesMarketingPocket(Bool)
+
+```crmscript
+Void SetOnSalesMarketingPocket(Bool onSalesMarketingPocket)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onSalesMarketingPocket;
+thing.SetOnSalesMarketingPocket(onSalesMarketingPocket);
+```
+
+## SetOnSatellite(Bool)
+
+```crmscript
+Void SetOnSatellite(Bool onSatellite)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onSatellite;
+thing.SetOnSatellite(onSatellite);
+```
+
+## SetOnTravel(Bool)
+
+```crmscript
+Void SetOnTravel(Bool onTravel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool onTravel;
+thing.SetOnTravel(onTravel);
+```
+
+## SetParameters(String)
+
+```crmscript
+Void SetParameters(String parameters)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String parameters;
+thing.SetParameters(parameters);
+```
+
+## SetPath(String)
+
+```crmscript
+Void SetPath(String path)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String path;
+thing.SetPath(path);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetShowInAddressBar(Bool)
+
+```crmscript
+Void SetShowInAddressBar(Bool showInAddressBar)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInAddressBar;
+thing.SetShowInAddressBar(showInAddressBar);
+```
+
+## SetShowInMenuBar(Bool)
+
+```crmscript
+Void SetShowInMenuBar(Bool showInMenuBar)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInMenuBar;
+thing.SetShowInMenuBar(showInMenuBar);
+```
+
+## SetShowInStatusBar(Bool)
+
+```crmscript
+Void SetShowInStatusBar(Bool showInStatusBar)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInStatusBar;
+thing.SetShowInStatusBar(showInStatusBar);
+```
+
+## SetShowInToolBar(Bool)
+
+```crmscript
+Void SetShowInToolBar(Bool showInToolBar)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool showInToolBar;
+thing.SetShowInToolBar(showInToolBar);
+```
+
+## SetShowState(Integer)
+
+```crmscript
+Void SetShowState(Integer showState)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer showState;
+thing.SetShowState(showState);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetVisibleIn(Integer)
+
+```crmscript
+Void SetVisibleIn(Integer visibleIn)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Integer visibleIn;
+thing.SetVisibleIn(visibleIn);
+```
+
+## SetWaitToFinish(Bool)
+
+```crmscript
+Void SetWaitToFinish(Bool waitToFinish)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+Bool waitToFinish;
+thing.SetWaitToFinish(waitToFinish);
+```
+
+## SetWorkdir(String)
+
+```crmscript
+Void SetWorkdir(String workdir)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSExtAppEntity thing;
+String workdir;
+thing.SetWorkdir(workdir);
+```

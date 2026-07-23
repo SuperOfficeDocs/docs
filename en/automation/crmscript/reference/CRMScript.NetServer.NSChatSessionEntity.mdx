@@ -1,0 +1,961 @@
+﻿---
+uid: crmscript.netserver.nschatsessionentity
+title: NSChatSessionEntity
+description: "Chat sessions belong to a chat topic, and contain messages to/from users. Carrier object for ChatSessionEntity."
+keywords: CRMScript, NSChatSessionEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSChatSessionEntity
+
+Chat sessions belong to a chat topic, and contain messages to/from users. Carrier object for ChatSessionEntity.
+
+## Constructors
+
+### NSChatSessionEntity()
+
+```crmscript
+NSChatSessionEntity
+```
+
+Initializes a new instance of the NSChatSessionEntity class.
+
+## Methods
+
+## GetAlertLevel()
+
+```crmscript
+Integer GetAlertLevel()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alert level for this chat session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer alertLevel = thing.GetAlertLevel();
+```
+
+## GetChatbotIsActive()
+
+```crmscript
+Bool GetChatbotIsActive()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates that a chatbot is active on the session. This will cause bot triggers to fire. Set to 0 when bot hands off to user.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Bool chatbotIsActive = thing.GetChatbotIsActive();
+```
+
+## GetChatSessionId()
+
+```crmscript
+Integer GetChatSessionId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer chatSessionId = thing.GetChatSessionId();
+```
+
+## GetContact()
+
+```crmscript
+NSContact GetContact()
+```
+
+**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - Contact this session is connected to. Could be empty if we don't know exactly.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSContact contact = thing.GetContact();
+```
+
+## GetCustomerAlias()
+
+```crmscript
+String GetCustomerAlias()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The alias for the customer.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerAlias = thing.GetCustomerAlias();
+```
+
+## GetCustomerCompanyName()
+
+```crmscript
+String GetCustomerCompanyName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the customers company, if provided.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerCompanyName = thing.GetCustomerCompanyName();
+```
+
+## GetCustomerConsented()
+
+```crmscript
+Bool GetCustomerConsented()
+```
+
+**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The customer consented when starting the session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Bool customerConsented = thing.GetCustomerConsented();
+```
+
+## GetCustomerEmail()
+
+```crmscript
+String GetCustomerEmail()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email address of the customer, if provided.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerEmail = thing.GetCustomerEmail();
+```
+
+## GetCustomerHost()
+
+```crmscript
+String GetCustomerHost()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The hostname or IP address for the customer.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerHost = thing.GetCustomerHost();
+```
+
+## GetCustomerName()
+
+```crmscript
+String GetCustomerName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of customer, if provided.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerName = thing.GetCustomerName();
+```
+
+## GetCustomerPhone()
+
+```crmscript
+String GetCustomerPhone()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The phone number of the customer, if provided.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerPhone = thing.GetCustomerPhone();
+```
+
+## GetFirstMessage()
+
+```crmscript
+String GetFirstMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A copy of the first message in the chat session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String firstMessage = thing.GetFirstMessage();
+```
+
+## GetFlags()
+
+```crmscript
+Integer GetFlags()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Various flags for the chat session. See &lt;xref href=\"CRMScript.NetServer.ChatSessionFlags\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer flags = thing.GetFlags();
+```
+
+## GetInitialQueuePos()
+
+```crmscript
+Integer GetInitialQueuePos()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The initial queue pos (the number of pending sessions + 1) when the session was requested.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer initialQueuePos = thing.GetInitialQueuePos();
+```
+
+## GetLastMessage()
+
+```crmscript
+String GetLastMessage()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A copy of the last message in the chat session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String lastMessage = thing.GetLastMessage();
+```
+
+## GetPerson()
+
+```crmscript
+NSPerson GetPerson()
+```
+
+**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - Customer person in this session. Could be empty if we don't know exactly.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSPerson person = thing.GetPerson();
+```
+
+## GetProject()
+
+```crmscript
+NSProject GetProject()
+```
+
+**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject) - Project the session is connected to. Could be empty if we don't know exactly.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSProject project = thing.GetProject();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Lowest possible unique number for active sessions for user. User for color index. Starting at 1.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetSale()
+
+```crmscript
+NSSale GetSale()
+```
+
+**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale) - Sale the session is connected to. Could be empty if we don't know exactly.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSSale sale = thing.GetSale();
+```
+
+## GetSessionKey()
+
+```crmscript
+String GetSessionKey()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key used to authenticate the session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String sessionKey = thing.GetSessionKey();
+```
+
+## GetStatus()
+
+```crmscript
+Integer GetStatus()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status for the session. See &lt;xref href=\"CRMScript.NetServer.ChatSessionStatus\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer status = thing.GetStatus();
+```
+
+## GetTicket()
+
+```crmscript
+NSTicket GetTicket()
+```
+
+**Returns:** [CRMScript.NetServer.NSTicket](CRMScript.NetServer.NSTicket) - Ticket the session is connected to. Could be empty if we don't know exactly.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSTicket ticket = thing.GetTicket();
+```
+
+## GetTopicId()
+
+```crmscript
+Integer GetTopicId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the associated chat topic.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer topicId = thing.GetTopicId();
+```
+
+## GetTransferTo()
+
+```crmscript
+NSAssociate GetTransferTo()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - User agent that has a pending transfer of the chat session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSAssociate transferTo = thing.GetTransferTo();
+```
+
+## GetUser()
+
+```crmscript
+NSAssociate GetUser()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - User agent handling this session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSAssociate user = thing.GetUser();
+```
+
+## GetWhenEnded()
+
+```crmscript
+DateTime GetWhenEnded()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was ended.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenEnded = thing.GetWhenEnded();
+```
+
+## GetWhenFetched()
+
+```crmscript
+DateTime GetWhenFetched()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last time the customer's client re-fetched the data. Used to detect dead session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenFetched = thing.GetWhenFetched();
+```
+
+## GetWhenIdle()
+
+```crmscript
+DateTime GetWhenIdle()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last time anyone sent a message for this session.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenIdle = thing.GetWhenIdle();
+```
+
+## GetWhenRequested()
+
+```crmscript
+DateTime GetWhenRequested()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was requested by the customer.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenRequested = thing.GetWhenRequested();
+```
+
+## GetWhenStarted()
+
+```crmscript
+DateTime GetWhenStarted()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was accepted by a user.
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenStarted = thing.GetWhenStarted();
+```
+
+## SetAlertLevel(Integer)
+
+```crmscript
+Void SetAlertLevel(Integer alertLevel)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer alertLevel;
+thing.SetAlertLevel(alertLevel);
+```
+
+## SetChatbotIsActive(Bool)
+
+```crmscript
+Void SetChatbotIsActive(Bool chatbotIsActive)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Bool chatbotIsActive;
+thing.SetChatbotIsActive(chatbotIsActive);
+```
+
+## SetChatSessionId(Integer)
+
+```crmscript
+Void SetChatSessionId(Integer chatSessionId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer chatSessionId;
+thing.SetChatSessionId(chatSessionId);
+```
+
+## SetContact(NSContact)
+
+```crmscript
+Void SetContact(NSContact contact)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSContact contact;
+thing.SetContact(contact);
+```
+
+## SetCustomerAlias(String)
+
+```crmscript
+Void SetCustomerAlias(String customerAlias)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerAlias;
+thing.SetCustomerAlias(customerAlias);
+```
+
+## SetCustomerCompanyName(String)
+
+```crmscript
+Void SetCustomerCompanyName(String customerCompanyName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerCompanyName;
+thing.SetCustomerCompanyName(customerCompanyName);
+```
+
+## SetCustomerConsented(Bool)
+
+```crmscript
+Void SetCustomerConsented(Bool customerConsented)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Bool customerConsented;
+thing.SetCustomerConsented(customerConsented);
+```
+
+## SetCustomerEmail(String)
+
+```crmscript
+Void SetCustomerEmail(String customerEmail)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerEmail;
+thing.SetCustomerEmail(customerEmail);
+```
+
+## SetCustomerHost(String)
+
+```crmscript
+Void SetCustomerHost(String customerHost)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerHost;
+thing.SetCustomerHost(customerHost);
+```
+
+## SetCustomerName(String)
+
+```crmscript
+Void SetCustomerName(String customerName)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerName;
+thing.SetCustomerName(customerName);
+```
+
+## SetCustomerPhone(String)
+
+```crmscript
+Void SetCustomerPhone(String customerPhone)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String customerPhone;
+thing.SetCustomerPhone(customerPhone);
+```
+
+## SetFirstMessage(String)
+
+```crmscript
+Void SetFirstMessage(String firstMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String firstMessage;
+thing.SetFirstMessage(firstMessage);
+```
+
+## SetFlags(Integer)
+
+```crmscript
+Void SetFlags(Integer flags)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+<Note>
+n
+</Note>
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer flags;
+thing.SetFlags(flags);
+```
+
+## SetInitialQueuePos(Integer)
+
+```crmscript
+Void SetInitialQueuePos(Integer initialQueuePos)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer initialQueuePos;
+thing.SetInitialQueuePos(initialQueuePos);
+```
+
+## SetLastMessage(String)
+
+```crmscript
+Void SetLastMessage(String lastMessage)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String lastMessage;
+thing.SetLastMessage(lastMessage);
+```
+
+## SetPerson(NSPerson)
+
+```crmscript
+Void SetPerson(NSPerson person)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSPerson person;
+thing.SetPerson(person);
+```
+
+## SetProject(NSProject)
+
+```crmscript
+Void SetProject(NSProject project)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSProject project;
+thing.SetProject(project);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetSale(NSSale)
+
+```crmscript
+Void SetSale(NSSale sale)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSSale sale;
+thing.SetSale(sale);
+```
+
+## SetSessionKey(String)
+
+```crmscript
+Void SetSessionKey(String sessionKey)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+String sessionKey;
+thing.SetSessionKey(sessionKey);
+```
+
+## SetStatus(Integer)
+
+```crmscript
+Void SetStatus(Integer status)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer status;
+thing.SetStatus(status);
+```
+
+## SetTicket(NSTicket)
+
+```crmscript
+Void SetTicket(NSTicket ticket)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSTicket ticket;
+thing.SetTicket(ticket);
+```
+
+## SetTopicId(Integer)
+
+```crmscript
+Void SetTopicId(Integer topicId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+Integer topicId;
+thing.SetTopicId(topicId);
+```
+
+## SetTransferTo(NSAssociate)
+
+```crmscript
+Void SetTransferTo(NSAssociate transferTo)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSAssociate transferTo;
+thing.SetTransferTo(transferTo);
+```
+
+## SetUser(NSAssociate)
+
+```crmscript
+Void SetUser(NSAssociate user)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+NSAssociate user;
+thing.SetUser(user);
+```
+
+## SetWhenEnded(DateTime)
+
+```crmscript
+Void SetWhenEnded(DateTime whenEnded)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenEnded;
+thing.SetWhenEnded(whenEnded);
+```
+
+## SetWhenFetched(DateTime)
+
+```crmscript
+Void SetWhenFetched(DateTime whenFetched)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenFetched;
+thing.SetWhenFetched(whenFetched);
+```
+
+## SetWhenIdle(DateTime)
+
+```crmscript
+Void SetWhenIdle(DateTime whenIdle)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenIdle;
+thing.SetWhenIdle(whenIdle);
+```
+
+## SetWhenRequested(DateTime)
+
+```crmscript
+Void SetWhenRequested(DateTime whenRequested)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenRequested;
+thing.SetWhenRequested(whenRequested);
+```
+
+## SetWhenStarted(DateTime)
+
+```crmscript
+Void SetWhenStarted(DateTime whenStarted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSChatSessionEntity thing;
+DateTime whenStarted;
+thing.SetWhenStarted(whenStarted);
+```

@@ -1,0 +1,401 @@
+﻿---
+uid: crmscript.netserver.nsroleentity
+title: NSRoleEntity
+description: ""
+keywords: CRMScript, NSRoleEntity, API reference
+author: SuperOffice Product and Engineering
+date: 01.08.2026
+version: 11.7
+content_type: reference
+language: en
+---
+
+# NSRoleEntity
+
+## Constructors
+
+### NSRoleEntity()
+
+```crmscript
+NSRoleEntity
+```
+
+Initializes a new instance of the NSRoleEntity class.
+
+## Methods
+
+## GetCreated()
+
+```crmscript
+DateTime GetCreated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+DateTime created = thing.GetCreated();
+```
+
+## GetCreatedBy()
+
+```crmscript
+NSAssociate GetCreatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Created by user.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+NSAssociate createdBy = thing.GetCreatedBy();
+```
+
+## GetDataRights()
+
+```crmscript
+NSDataRights GetDataRights()
+```
+
+**Returns:** [CRMScript.NetServer.NSDataRights](CRMScript.NetServer.NSDataRights) - Data rights matrix, defines role's access to data owned by current user, users in same group, and other users.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+NSDataRights dataRights = thing.GetDataRights();
+```
+
+## GetDeleted()
+
+```crmscript
+Integer GetDeleted()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 if role has been deleted (we do not actually delete).
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer deleted = thing.GetDeleted();
+```
+
+## GetName()
+
+```crmscript
+String GetName()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Visible role name.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+String name = thing.GetName();
+```
+
+## GetRank()
+
+```crmscript
+Integer GetRank()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Sorting rank of this role in lists.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer rank = thing.GetRank();
+```
+
+## GetRoleId()
+
+```crmscript
+Integer GetRoleId()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer roleId = thing.GetRoleId();
+```
+
+## GetRoleType()
+
+```crmscript
+Integer GetRoleType()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The role type. See &lt;xref href=\"CRMScript.NetServer.RoleType\" data-throw-if-not-resolved=\"false\"&gt;&lt;/xref&gt;.
+
+<Note>
+Changing this field has no effect, so treat this as a read-only field.
+</Note>
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer roleType = thing.GetRoleType();
+```
+
+## GetTooltip()
+
+```crmscript
+String GetTooltip()
+```
+
+**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the role.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+String tooltip = thing.GetTooltip();
+```
+
+## GetUpdated()
+
+```crmscript
+DateTime GetUpdated()
+```
+
+**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+DateTime updated = thing.GetUpdated();
+```
+
+## GetUpdatedBy()
+
+```crmscript
+NSAssociate GetUpdatedBy()
+```
+
+**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Last updated by user.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+NSAssociate updatedBy = thing.GetUpdatedBy();
+```
+
+## GetUseCategories()
+
+```crmscript
+Integer GetUseCategories()
+```
+
+**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Apply role category membership to users.
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer useCategories = thing.GetUseCategories();
+```
+
+## SetCreated(DateTime)
+
+```crmscript
+Void SetCreated(DateTime created)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+DateTime created;
+thing.SetCreated(created);
+```
+
+## SetCreatedBy(NSAssociate)
+
+```crmscript
+Void SetCreatedBy(NSAssociate createdBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+NSAssociate createdBy;
+thing.SetCreatedBy(createdBy);
+```
+
+## SetDataRights(NSDataRights)
+
+```crmscript
+Void SetDataRights(NSDataRights dataRights)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+NSDataRights dataRights;
+thing.SetDataRights(dataRights);
+```
+
+## SetDeleted(Integer)
+
+```crmscript
+Void SetDeleted(Integer deleted)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer deleted;
+thing.SetDeleted(deleted);
+```
+
+## SetName(String)
+
+```crmscript
+Void SetName(String name)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+String name;
+thing.SetName(name);
+```
+
+## SetRank(Integer)
+
+```crmscript
+Void SetRank(Integer rank)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer rank;
+thing.SetRank(rank);
+```
+
+## SetRoleId(Integer)
+
+```crmscript
+Void SetRoleId(Integer roleId)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer roleId;
+thing.SetRoleId(roleId);
+```
+
+## SetRoleType(Integer)
+
+```crmscript
+Void SetRoleType(Integer roleType)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer roleType;
+thing.SetRoleType(roleType);
+```
+
+## SetTooltip(String)
+
+```crmscript
+Void SetTooltip(String tooltip)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+String tooltip;
+thing.SetTooltip(tooltip);
+```
+
+## SetUpdated(DateTime)
+
+```crmscript
+Void SetUpdated(DateTime updated)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+DateTime updated;
+thing.SetUpdated(updated);
+```
+
+## SetUpdatedBy(NSAssociate)
+
+```crmscript
+Void SetUpdatedBy(NSAssociate updatedBy)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+NSAssociate updatedBy;
+thing.SetUpdatedBy(updatedBy);
+```
+
+## SetUseCategories(Integer)
+
+```crmscript
+Void SetUseCategories(Integer useCategories)
+```
+
+**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+
+**Example:**
+
+```crmscript
+NSRoleEntity thing;
+Integer useCategories;
+thing.SetUseCategories(useCategories);
+```
