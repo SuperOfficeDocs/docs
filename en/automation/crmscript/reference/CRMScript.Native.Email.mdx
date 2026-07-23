@@ -59,5 +59,20 @@ Void setValue(String name, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-Available fields:&lt;ul&gt;&lt;li&gt;from: The from address.&lt;/li&gt;&lt;li&gt;to: The recipient.&lt;/li&gt;&lt;li&gt;cc: The carbon copy recipient.&lt;/li&gt;&lt;li&gt;bcc: The bcc recipient.&lt;/li&gt;&lt;li&gt;sms: A cellphone number to send sms to.&lt;/li&gt;&lt;li&gt;smsFrom: The from address when sending sms.&lt;/li&gt;&lt;li&gt;subject: The subject of the email.&lt;/li&gt;&lt;li&gt;body: The plain text body of the email.&lt;/li&gt;&lt;li&gt;bodyHtml: The HTML formated body of the email.&lt;/li&gt;&lt;li&gt;ticketId: The ticketId, only used with sms.&lt;/p&lt;/li&gt;&lt;li&gt;envelopeFrom&lt;/li&gt;&lt;li&gt;Sets the envelope from mail address. "From" will also be set if not already set&lt;/li&gt;&lt;/ul&gt;&gt;&lt;p&gt;From version 8.1 any other header value may also be added, for example setValue("X-Foo", "42");
+Available fields:
+
+- from: The from address.
+- to: The recipient.
+- cc: The carbon copy recipient.
+- bcc: The bcc recipient.
+- sms: A cellphone number to send sms to.
+- smsFrom: The from address when sending sms.
+- subject: The subject of the email.
+- body: The plain text body of the email.
+- bodyHtml: The HTML formated body of the email.
+- ticketId: The ticketId, only used with sms.&lt;/p
+- envelopeFrom
+- Sets the envelope from mail address. "From" will also be set if not already set
+
+&gt;&lt;p&gt;From version 8.1 any other header value may also be added, for example setValue("X-Foo", "42");
 </Note>

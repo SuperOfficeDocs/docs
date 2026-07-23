@@ -558,7 +558,22 @@ Parser faqSearch(Integer root, Integer access, String message, Parser p, Integer
 
 <Note>
 Available parser variables (sorted, where the top most is the best hit):
-&lt;h3&gt;Category parser array&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;faq.categoryId - the id of the matching category&lt;/li&gt;&lt;li&gt;faq.categoryName - the name of the matching category&lt;/li&gt;&lt;li&gt;faq.categoryLink - a URL to the customer pages to the matching category&lt;/li&gt;&lt;li&gt;faq.categoryDescription - the description of the matching category&lt;/li&gt;&lt;li&gt;faq.categoryScore - the score of the matching category, given in percentage with 2 decimals precision&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Entry parser array&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;faq.entryId - the ID of the matching entry&lt;/li&gt;&lt;li&gt;faq.entryName - the name of the matching entry&lt;/li&gt;&lt;li&gt;faq.entryLink - a URL to the customer pages to the matching entry&lt;/li&gt;&lt;li&gt;faq.entryQuestion - the question part of the matching entry&lt;/li&gt;&lt;li&gt;faq.entryScore - the score of the matching entry, given in percentage with 2 decimals precision&lt;/li&gt;&lt;/ul&gt;
+
+### Category parser array
+
+- faq.categoryId - the id of the matching category
+- faq.categoryName - the name of the matching category
+- faq.categoryLink - a URL to the customer pages to the matching category
+- faq.categoryDescription - the description of the matching category
+- faq.categoryScore - the score of the matching category, given in percentage with 2 decimals precision
+
+### Entry parser array
+
+- faq.entryId - the ID of the matching entry
+- faq.entryName - the name of the matching entry
+- faq.entryLink - a URL to the customer pages to the matching entry
+- faq.entryQuestion - the question part of the matching entry
+- faq.entryScore - the score of the matching entry, given in percentage with 2 decimals precision
 </Note>
 
 ## findReplyTemplateToMerge(Integer)
@@ -854,7 +869,7 @@ String getExternalProgram(Integer progId)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
 
 <Note>
-&lt;h3&gt;progId&lt;/h3&gt;
+### progId
 
 | progId | Integer | Hex |
 |---|---|---|
@@ -1109,7 +1124,32 @@ String getHttpHeader(String headerName)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The header value.
 
 <Note>
-&lt;h3&gt;Header names&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;ACCEPT-*&lt;/li&gt;&lt;li&gt;ACCESS-CONTROL-REQUEST-METHOD&lt;/li&gt;&lt;li&gt;ACCESS-CONTROL-REQUEST-HEADERS&lt;/li&gt;&lt;li&gt;CACHE-CONTROL&lt;/li&gt;&lt;li&gt;CONTENT-LENGTH&lt;/li&gt;&lt;li&gt;CONTENT-TYPE&lt;/li&gt;&lt;li&gt;DATE&lt;/li&gt;&lt;li&gt;DNT&lt;/li&gt;&lt;li&gt;EXPECT&lt;/li&gt;&lt;li&gt;IF-*&lt;/li&gt;&lt;li&gt;ORIGIN&lt;/li&gt;&lt;li&gt;PRAGMA&lt;/li&gt;&lt;li&gt;RANGE&lt;/li&gt;&lt;li&gt;REFERER&lt;/li&gt;&lt;li&gt;REQUEST-METHOD&lt;/li&gt;&lt;li&gt;REQUEST-URI&lt;/li&gt;&lt;li&gt;TE&lt;/li&gt;&lt;li&gt;USER-AGENT&lt;/li&gt;&lt;li&gt;X-CRMSCRIPT-*&lt;/li&gt;&lt;li&gt;X-FORWARDED-FOR&lt;/li&gt;&lt;li&gt;X-REQUESTED-WITH&lt;/li&gt;&lt;li&gt;X-SUPEROFFICE-EVENT&lt;/li&gt;&lt;li&gt;X-SUPEROFFICE-EVENTID&lt;/li&gt;&lt;li&gt;X-SUPEROFFICE-RETRY&lt;/li&gt;&lt;/ul&gt;
+### Header names
+
+- ACCEPT-*
+- ACCESS-CONTROL-REQUEST-METHOD
+- ACCESS-CONTROL-REQUEST-HEADERS
+- CACHE-CONTROL
+- CONTENT-LENGTH
+- CONTENT-TYPE
+- DATE
+- DNT
+- EXPECT
+- IF-*
+- ORIGIN
+- PRAGMA
+- RANGE
+- REFERER
+- REQUEST-METHOD
+- REQUEST-URI
+- TE
+- USER-AGENT
+- X-CRMSCRIPT-*
+- X-FORWARDED-FOR
+- X-REQUESTED-WITH
+- X-SUPEROFFICE-EVENT
+- X-SUPEROFFICE-EVENTID
+- X-SUPEROFFICE-RETRY
 </Note>
 
 **Example:**
@@ -1315,7 +1355,7 @@ String getProgram(Integer progId)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String)
 
 <Note>
-&lt;h3&gt;progId&lt;/h3&gt;
+### progId
 
 | progId | Integer | Hex |
 |---|---|---|
@@ -1537,7 +1577,83 @@ Integer getScreenElementType(Integer index)
 
 <Note>
 Can only be called from a screen definition, it will fail if called from a regular script.
-&lt;h3&gt;Simple elements&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeAnchorLine = 1,&lt;/li&gt;&lt;li&gt;TypeInfoFields = 2,&lt;/li&gt;&lt;li&gt;TypeGrid = 3,&lt;/li&gt;&lt;li&gt;TypeHR = 4,&lt;/li&gt;&lt;li&gt;TypeBR = 5,&lt;/li&gt;&lt;li&gt;TypeSubHeader = 6,&lt;/li&gt;&lt;li&gt;TypeParserCode = 7,&lt;/li&gt;&lt;li&gt;TypeMessages = 8,&lt;/li&gt;&lt;li&gt;TypeEjScript = 9,&lt;/li&gt;&lt;li&gt;TypeHtmlGrid = 10,&lt;/li&gt;&lt;li&gt;TypePlanner = 11,&lt;/li&gt;&lt;li&gt;TypeStaticGrid = 12,&lt;/li&gt;&lt;li&gt;TypeDrillDown = 13,&lt;/li&gt;&lt;li&gt;TypeGenericGrid = 14,&lt;/li&gt;&lt;li&gt;TypeInfoFields2 = 15,&lt;/li&gt;&lt;li&gt;TypeExtraTableEntriesGrid = 16,&lt;/li&gt;&lt;li&gt;TypeDirectedAcyclicGraph = 17,&lt;/li&gt;&lt;/ul&gt;&lt;h&gt;Form elements&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeText = 101,&lt;/li&gt;&lt;li&gt;TypeTextarea = 102,&lt;/li&gt;&lt;li&gt;TypeSelectCategory = 103,&lt;/li&gt;&lt;li&gt;TypeSelectCustomer = 104,&lt;/li&gt;&lt;li&gt;TypeSelectCompany = 105,&lt;/li&gt;&lt;li&gt;TypeSelectDate = 106,&lt;/li&gt;&lt;li&gt;TypeSelectDateTime = 107,&lt;/li&gt;&lt;li&gt;TypeSelectTime = 108,&lt;/li&gt;&lt;li&gt;TypeButtonRow = 109,&lt;/li&gt;&lt;li&gt;TypeCheckbox = 110,&lt;/li&gt;&lt;li&gt;TypeEditor = 111,&lt;/li&gt;&lt;li&gt;TypeInvoice = 112,&lt;/li&gt;&lt;li&gt;TypeSelectUser = 113,&lt;/li&gt;&lt;li&gt;TypeSelectExtraField = 114,&lt;/li&gt;&lt;li&gt;TypeSelect = 115,&lt;/li&gt;&lt;li&gt;TypeSendTo = 116,&lt;/li&gt;&lt;li&gt;TypeSelectReplyTemplate = 117,&lt;/li&gt;&lt;li&gt;TypeSelectTimeSpan = 118,&lt;/li&gt;&lt;li&gt;TypeSelectRelation = 119,&lt;/li&gt;&lt;li&gt;TypeSelectPriority = 120,&lt;/li&gt;&lt;li&gt;TypeCc = 121,&lt;/li&gt;&lt;li&gt;TypeAttachment = 122,&lt;/li&gt;&lt;li&gt;TypeSelectSlevel = 123,&lt;/li&gt;&lt;li&gt;TypeCustomers = 124,&lt;/li&gt;&lt;li&gt;TypeSelectFaq = 125,&lt;/li&gt;&lt;li&gt;TypeSelectDictionaryLang = 126,&lt;/li&gt;&lt;li&gt;TypeButton = 127,&lt;/li&gt;&lt;li&gt;TypeSelectMultipleRelations = 128,&lt;/li&gt;&lt;li&gt;TypeTreeExplorer = 129,&lt;/li&gt;&lt;li&gt;TypePinEdit = 130,&lt;/li&gt;&lt;li&gt;TypeContactRecipients = 131,&lt;/li&gt;&lt;li&gt;TypeTicketStatus = 132,&lt;/li&gt;&lt;li&gt;TypeSelectMessage = 133,&lt;/li&gt;&lt;li&gt;TypeCategoryMembership = 134,&lt;/li&gt;&lt;li&gt;TypeAddressBook = 135,&lt;/li&gt;&lt;li&gt;TypeRelatedDropdowns = 136,&lt;/li&gt;&lt;li&gt;TypeSelectTicketStatus = 137,&lt;/li&gt;&lt;li&gt;TypeSelectTable = 138,&lt;/li&gt;&lt;li&gt;TypeFckEdit = 139,&lt;/li&gt;&lt;li&gt;TypeWhere = 140,&lt;/li&gt;&lt;li&gt;TypeSelectInsertText = 141,&lt;/li&gt;&lt;li&gt;TypeRadioButtons = 142,&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Groups&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeFieldset = 201,&lt;/li&gt;&lt;li&gt;TypeLayoutTable = 202,&lt;/li&gt;&lt;li&gt;TypePanes = 203,&lt;/li&gt;&lt;li&gt;TypePane = 204,&lt;/li&gt;&lt;li&gt;TypeVerticalTable = 205,&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Group end marker&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;TypeGroupEnd = 301&lt;/li&gt;&lt;/ul&gt;
+
+### Simple elements
+
+- TypeAnchorLine = 1,
+- TypeInfoFields = 2,
+- TypeGrid = 3,
+- TypeHR = 4,
+- TypeBR = 5,
+- TypeSubHeader = 6,
+- TypeParserCode = 7,
+- TypeMessages = 8,
+- TypeEjScript = 9,
+- TypeHtmlGrid = 10,
+- TypePlanner = 11,
+- TypeStaticGrid = 12,
+- TypeDrillDown = 13,
+- TypeGenericGrid = 14,
+- TypeInfoFields2 = 15,
+- TypeExtraTableEntriesGrid = 16,
+- TypeDirectedAcyclicGraph = 17,
+
+### Form elements
+
+- TypeText = 101,
+- TypeTextarea = 102,
+- TypeSelectCategory = 103,
+- TypeSelectCustomer = 104,
+- TypeSelectCompany = 105,
+- TypeSelectDate = 106,
+- TypeSelectDateTime = 107,
+- TypeSelectTime = 108,
+- TypeButtonRow = 109,
+- TypeCheckbox = 110,
+- TypeEditor = 111,
+- TypeInvoice = 112,
+- TypeSelectUser = 113,
+- TypeSelectExtraField = 114,
+- TypeSelect = 115,
+- TypeSendTo = 116,
+- TypeSelectReplyTemplate = 117,
+- TypeSelectTimeSpan = 118,
+- TypeSelectRelation = 119,
+- TypeSelectPriority = 120,
+- TypeCc = 121,
+- TypeAttachment = 122,
+- TypeSelectSlevel = 123,
+- TypeCustomers = 124,
+- TypeSelectFaq = 125,
+- TypeSelectDictionaryLang = 126,
+- TypeButton = 127,
+- TypeSelectMultipleRelations = 128,
+- TypeTreeExplorer = 129,
+- TypePinEdit = 130,
+- TypeContactRecipients = 131,
+- TypeTicketStatus = 132,
+- TypeSelectMessage = 133,
+- TypeCategoryMembership = 134,
+- TypeAddressBook = 135,
+- TypeRelatedDropdowns = 136,
+- TypeSelectTicketStatus = 137,
+- TypeSelectTable = 138,
+- TypeFckEdit = 139,
+- TypeWhere = 140,
+- TypeSelectInsertText = 141,
+- TypeRadioButtons = 142,
+
+### Groups
+
+- TypeFieldset = 201,
+- TypeLayoutTable = 202,
+- TypePanes = 203,
+- TypePane = 204,
+- TypeVerticalTable = 205,
+
+### Group end marker
+
+- TypeGroupEnd = 301
 </Note>
 
 ## getScriptId(String)
@@ -2088,7 +2204,17 @@ Void SetChatStatus(Integer sessionId, Integer status)
 <Note>
 The available statuses are:
 
-&lt;ul&gt;&lt;li&gt;StatusInvalid = 0,&lt;/li&gt;&lt;li&gt;StatusPreChatForm = 1,&lt;/li&gt;&lt;li&gt;StatusFaq = 2,&lt;/li&gt;&lt;li&gt;StatusOfflineForm = 3,&lt;/li&gt;&lt;li&gt;StatusInQueue = 4,&lt;/li&gt;&lt;li&gt;StatusCustomerLast = 5,&lt;/li&gt;&lt;li&gt;StatusUserLast = 6,&lt;/li&gt;&lt;li&gt;StatusFinished = 7,&lt;/li&gt;&lt;li&gt;StatusDeleted = 8,&lt;/li&gt;&lt;li&gt;StatusClosed = 9,&lt;/li&gt;&lt;li&gt;StatusRequestPosted = 10,&lt;/li&gt;&lt;/ul&gt;
+- StatusInvalid = 0,
+- StatusPreChatForm = 1,
+- StatusFaq = 2,
+- StatusOfflineForm = 3,
+- StatusInQueue = 4,
+- StatusCustomerLast = 5,
+- StatusUserLast = 6,
+- StatusFinished = 7,
+- StatusDeleted = 8,
+- StatusClosed = 9,
+- StatusRequestPosted = 10,
 </Note>
 
 ## setCookie(String,String,Bool)

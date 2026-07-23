@@ -181,7 +181,30 @@ String getValue(String colName)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of colName.
 
 <Note>
-Available fields:&lt;ul&gt;&lt;li&gt;id&lt;/li&gt;&lt;li&gt;name The name of the customer.&lt;/li&gt;&lt;li&gt;firstname&lt;/li&gt;&lt;li&gt;lastname&lt;/li&gt;&lt;li&gt;phone&lt;/li&gt;&lt;li&gt;cellphone&lt;/li&gt;&lt;li&gt;note&lt;/li&gt;&lt;li&gt;username: This is the username used for the external web.&lt;/li&gt;&lt;li&gt;password: This field is deprecated from v10.2.5. Empty string will be returned. Use authenticateCustomer() instead.&lt;/li&gt;&lt;li&gt;email: A list of all email addresses.&lt;/li&gt;&lt;li&gt;mainEmail: The main email address.&lt;/li&gt;&lt;li&gt;language: The name, languagecode or ID of the customers language.&lt;/li&gt;&lt;li&gt;deleted&lt;/li&gt;&lt;li&gt;company: The ID of the related company&lt;/li&gt;&lt;li&gt;display_company: The value showing the name of the related company.&lt;/li&gt;&lt;li&gt;dbi_agent_id&lt;/li&gt;&lt;li&gt;dbi_key&lt;/li&gt;&lt;li&gt;dbi_last_modified&lt;/li&gt;&lt;li&gt;dbi_last_syncronized These values are for database integration&lt;/li&gt;&lt;li&gt;priority: The id or name of the customers priority.&lt;/li&gt;&lt;li&gt;our_contact: The username, loginname or ID of the related contact (user).&lt;/li&gt;&lt;li&gt;x_*: The extrafield with the given database field name.[extra field] The extrafield with the given name (for example,  "Country").&lt;/li&gt;&lt;/ul&gt;
+Available fields:
+
+- id
+- name The name of the customer.
+- firstname
+- lastname
+- phone
+- cellphone
+- note
+- username: This is the username used for the external web.
+- password: This field is deprecated from v10.2.5. Empty string will be returned. Use authenticateCustomer() instead.
+- email: A list of all email addresses.
+- mainEmail: The main email address.
+- language: The name, languagecode or ID of the customers language.
+- deleted
+- company: The ID of the related company
+- display_company: The value showing the name of the related company.
+- dbi_agent_id
+- dbi_key
+- dbi_last_modified
+- dbi_last_syncronized These values are for database integration
+- priority: The id or name of the customers priority.
+- our_contact: The username, loginname or ID of the related contact (user).
+- x_*: The extrafield with the given database field name.[extra field] The extrafield with the given name (for example, "Country").
 </Note>
 
 **Example:**
@@ -341,7 +364,45 @@ Void setValue(String field, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-Available fields:&lt;ul&gt;&lt;li&gt;name or display_name: The name of the customer.&lt;/li&gt;&lt;li&gt;firstname&lt;/li&gt;&lt;li&gt;lastname&lt;/li&gt;&lt;li&gt;title (From 7.x)&lt;/li&gt;&lt;li&gt;mrmrs (From 7.x)&lt;/li&gt;&lt;li&gt;year_of_birth (From 7.x)&lt;/li&gt;&lt;li&gt;month_of_birth (From 7.x)&lt;/li&gt;&lt;li&gt;day_of_birth (From 7.x)&lt;/li&gt;&lt;li&gt;birth_date (From 7.x)&lt;/li&gt;&lt;li&gt;person_number (From 7.x)&lt;/li&gt;&lt;li&gt;post1 (From 7.x)&lt;/li&gt;&lt;li&gt;post2 (From 7.x)&lt;/li&gt;&lt;li&gt;post3 (From 7.x)&lt;/li&gt;&lt;li&gt;salutation (From 7.x)&lt;/li&gt;&lt;li&gt;middleName (From 7.x)&lt;/li&gt;&lt;li&gt;phone&lt;/li&gt;&lt;li&gt;direct/formattedNumber: Same as phone(From 7.x)&lt;/li&gt;&lt;li&gt;phone/formattedNumber:  Same as phone (From 7.x)&lt;/li&gt;&lt;li&gt;cellphone&lt;/li&gt;&lt;li&gt;mobile/formattedNumber: Same as cellphone (From 7.x)&lt;/li&gt;&lt;li&gt;note&lt;/li&gt;&lt;li&gt;infoText: Same as note. (From 7.x)&lt;/li&gt;&lt;li&gt;username: This is the usedname used for the external web.&lt;/li&gt;&lt;li&gt;password: This is the password used for the external web.&lt;/li&gt;&lt;li&gt;email or display_email: Adds an email to the customer (does not erase existing ones).&lt;/li&gt;&lt;li&gt;company: The ID of the related company&lt;/li&gt;&lt;li&gt;display_company: The value showing the name of the related company.&lt;/li&gt;&lt;li&gt;deleted&lt;/li&gt;&lt;li&gt;dbi_agent_id&lt;/li&gt;&lt;li&gt;dbi_key&lt;/li&gt;&lt;li&gt;dbi_last_modified&lt;/li&gt;&lt;li&gt;dbi_last_syncronized: These values are for database integration&lt;/li&gt;&lt;li&gt;priority or priority_id: The id or name of the customers priority.&lt;/li&gt;&lt;li&gt;language: The name, languagecode or ID of the customers language.&lt;/li&gt;&lt;li&gt;ourContact: The username, loginname or ID of the related contact (user).&lt;/li&gt;&lt;li&gt;x_* The extrafield with the given database field name.&lt;/li&gt;&lt;li&gt;[extra field] The extrafield with the given name (for example, "Country").&lt;/li&gt;&lt;/ul&gt;
+Available fields:
+
+- name or display_name: The name of the customer.
+- firstname
+- lastname
+- title (From 7.x)
+- mrmrs (From 7.x)
+- year_of_birth (From 7.x)
+- month_of_birth (From 7.x)
+- day_of_birth (From 7.x)
+- birth_date (From 7.x)
+- person_number (From 7.x)
+- post1 (From 7.x)
+- post2 (From 7.x)
+- post3 (From 7.x)
+- salutation (From 7.x)
+- middleName (From 7.x)
+- phone
+- direct/formattedNumber: Same as phone(From 7.x)
+- phone/formattedNumber: Same as phone (From 7.x)
+- cellphone
+- mobile/formattedNumber: Same as cellphone (From 7.x)
+- note
+- infoText: Same as note. (From 7.x)
+- username: This is the usedname used for the external web.
+- password: This is the password used for the external web.
+- email or display_email: Adds an email to the customer (does not erase existing ones).
+- company: The ID of the related company
+- display_company: The value showing the name of the related company.
+- deleted
+- dbi_agent_id
+- dbi_key
+- dbi_last_modified
+- dbi_last_syncronized: These values are for database integration
+- priority or priority_id: The id or name of the customers priority.
+- language: The name, languagecode or ID of the customers language.
+- ourContact: The username, loginname or ID of the related contact (user).
+- x_* The extrafield with the given database field name.
+- [extra field] The extrafield with the given name (for example, "Country").
 </Note>
 
 **Example:**

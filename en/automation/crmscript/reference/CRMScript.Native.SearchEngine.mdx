@@ -45,7 +45,7 @@ Void addComparison(String field1, String compOperator, String field2, String row
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Row operators&lt;/h3&gt;
+### Row operators
 
 | Value | Logical operator | Expression | Result |
 |---|---|---|---|
@@ -54,7 +54,7 @@ Void addComparison(String field1, String compOperator, String field2, String row
 | OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
 | OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
 
-&lt;h3&gt;Comparison operators&lt;/h3&gt;
+### Comparison operators
 
 | Value | Same as | Result |
 |---|---|---|
@@ -87,7 +87,7 @@ Void addComparison(String field1, String func1, String compOperator, String fiel
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;
+### Functions
 
 | Function | Other name | Applies to | bypassNetServer | Description |
 |---|---|---|---|---|
@@ -101,7 +101,7 @@ Void addComparison(String field1, String func1, String compOperator, String fiel
 | upper | FuncUpper | String |  |  |
 | lower | FuncLower | String |  |  |
 
-&lt;h3&gt;Row operators&lt;/h3&gt;
+### Row operators
 
 | Value | Logical operator | Expression | Result |
 |---|---|---|---|
@@ -110,7 +110,7 @@ Void addComparison(String field1, String func1, String compOperator, String fiel
 | OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
 | OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
 
-&lt;h3&gt;Comparison operators&lt;/h3&gt;
+### Comparison operators
 
 | Value | Same as | Result |
 |---|---|---|
@@ -145,7 +145,7 @@ Void addCriteria(String field, String compOperator, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Comparison operators&lt;/h3&gt;
+### Comparison operators
 
 | Value | Same as | Result |
 |---|---|---|
@@ -180,7 +180,7 @@ Void addCriteria(String field, String compOperator, String value, String rowOper
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Row operators&lt;/h3&gt;
+### Row operators
 
 | Value | Logical operator | Expression | Result |
 |---|---|---|---|
@@ -189,7 +189,7 @@ Void addCriteria(String field, String compOperator, String value, String rowOper
 | OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
 | OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
 
-&lt;h3&gt;Comparison operators&lt;/h3&gt;
+### Comparison operators
 
 | Value | Same as | Result |
 |---|---|---|
@@ -222,7 +222,7 @@ Void addCriteria(String field, String function, String compOperator, String valu
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;
+### Functions
 
 | Function | Other name | Applies to | bypassNetServer | Description |
 |---|---|---|---|---|
@@ -236,7 +236,7 @@ Void addCriteria(String field, String function, String compOperator, String valu
 | upper | FuncUpper | String |  |  |
 | lower | FuncLower | String |  |  |
 
-&lt;h3&gt;Row operators&lt;/h3&gt;
+### Row operators
 
 | Value | Logical operator | Expression | Result |
 |---|---|---|---|
@@ -245,7 +245,7 @@ Void addCriteria(String field, String function, String compOperator, String valu
 | OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
 | OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
 
-&lt;h3&gt;Comparison operators&lt;/h3&gt;
+### Comparison operators
 
 | Value | Same as | Result |
 |---|---|---|
@@ -312,7 +312,20 @@ Void addDataField(String field1, String field2, String function)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Available functions&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;count&lt;/li&gt;&lt;li&gt;avg&lt;/li&gt;&lt;li&gt;sum&lt;/li&gt;&lt;li&gt;max&lt;/li&gt;&lt;li&gt;min&lt;/li&gt;&lt;li&gt;hour&lt;/li&gt;&lt;li&gt;wday&lt;/li&gt;&lt;li&gt;upper&lt;/li&gt;&lt;li&gt;lower&lt;/li&gt;&lt;li&gt;castToVarchar&lt;/li&gt;&lt;li&gt;date&lt;/li&gt;&lt;li&gt;time&lt;/li&gt;&lt;/ul&gt;
+### Available functions
+
+- count
+- avg
+- sum
+- max
+- min
+- hour
+- wday
+- upper
+- lower
+- castToVarchar
+- date
+- time
 </Note>
 
 ## addField(String)
@@ -340,7 +353,16 @@ Void addField(String field, String function)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Available functions&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;count&lt;/li&gt;&lt;li&gt;avg&lt;/li&gt;&lt;li&gt;sum&lt;/li&gt;&lt;li&gt;max&lt;/li&gt;&lt;li&gt;min&lt;/li&gt;&lt;li&gt;hour&lt;/li&gt;&lt;li&gt;wday&lt;/li&gt;&lt;li&gt;upper&lt;/li&gt;&lt;/ul&gt;
+### Available functions
+
+- count
+- avg
+- sum
+- max
+- min
+- hour
+- wday
+- upper
 </Note>
 
 ## addFields(String,String)
@@ -384,7 +406,7 @@ Void addHaving(String field, String function, String compOperator, String value,
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;
+### Functions
 
 | Function | Other name | Applies to | bypassNetServer | Description |
 |---|---|---|---|---|
@@ -398,7 +420,7 @@ Void addHaving(String field, String function, String compOperator, String value,
 | upper | FuncUpper | String |  |  |
 | lower | FuncLower | String |  |  |
 
-&lt;h3&gt;Row operators&lt;/h3&gt;
+### Row operators
 
 | Value | Logical operator | Expression | Result |
 |---|---|---|---|
@@ -407,7 +429,7 @@ Void addHaving(String field, String function, String compOperator, String value,
 | OperatorOr | OR | A \|\| B | Rows matching either condition (or both) |
 | OperatorNotOr | NOR | !(A \|\| B) | Only rows matching no conditions |
 
-&lt;h3&gt;Comparison operators&lt;/h3&gt;
+### Comparison operators
 
 | Value | Same as | Result |
 |---|---|---|
@@ -464,7 +486,16 @@ Void addOrder(String field, String function, Bool ascending)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-&lt;h3&gt;Available functions&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Count&lt;/li&gt;&lt;li&gt;Avg&lt;/li&gt;&lt;li&gt;Sum&lt;/li&gt;&lt;li&gt;Max&lt;/li&gt;&lt;li&gt;Min&lt;/li&gt;&lt;li&gt;Hour&lt;/li&gt;&lt;li&gt;WDay&lt;/li&gt;&lt;li&gt;Upper&lt;/li&gt;&lt;/ul&gt;
+### Available functions
+
+- Count
+- Avg
+- Sum
+- Max
+- Min
+- Hour
+- WDay
+- Upper
 </Note>
 
 ## buildSql()
@@ -707,7 +738,7 @@ String getField(String name, String function)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
 
 <Note>
-&lt;h3&gt;Functions&lt;/h3&gt;
+### Functions
 
 | Function | Other name | Applies to | bypassNetServer | Description |
 |---|---|---|---|---|

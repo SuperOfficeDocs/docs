@@ -90,6 +90,35 @@ function Convert-HtmlTablesToMarkdown {
     })
 }
 
+# Helper to convert embedded <ul>/<ol><li> HTML lists into markdown lists
+function Convert-HtmlListsToMarkdown {
+    param([string]$Text)
+
+    $listPattern = '(?is)<(ul|ol)[^>]*>(.*?)</\1>'
+
+    return [regex]::Replace($Text, $listPattern, {
+        param($m)
+        $tag = $m.Groups[1].Value.ToLower()
+        $itemMatches = [regex]::Matches($m.Groups[2].Value, '(?is)<li[^>]*>(.*?)</li>')
+        if ($itemMatches.Count -eq 0) { return $m.Value }
+
+        $lines = New-Object System.Collections.ArrayList
+        $idx = 1
+        foreach ($itemMatch in $itemMatches) {
+            $itemText = ($itemMatch.Groups[1].Value.Trim() -replace '\s+', ' ')
+            if ($tag -eq 'ol') {
+                [void]$lines.Add("$idx. $itemText")
+                $idx++
+            }
+            else {
+                [void]$lines.Add("- $itemText")
+            }
+        }
+
+        return "`n`n" + ($lines -join "`n") + "`n`n"
+    })
+}
+
 # Helper to clean description text
 function Clean-Description {
     param([string]$Text)
@@ -124,6 +153,11 @@ function Clean-Description {
     $Text = [regex]::Replace($Text, '(?is)<a\s+href="([^"]+)"[^>]*>(.*?)</a>', '[$2]($1)')
     $Text = $Text -replace '(?i)</?strong>', '**'
     $Text = $Text -replace '(?i)</?em>', '*'
+
+    # Convert embedded headings (h1-h6, plus the occasional malformed bare <h>) to
+    # markdown headings, and <ul>/<ol><li> lists to markdown lists
+    $Text = [regex]::Replace($Text, '(?is)<h[1-6]?>(.*?)</h[1-6]?>', { param($m) "`n`n### " + $m.Groups[1].Value.Trim() + "`n`n" })
+    $Text = Convert-HtmlListsToMarkdown $Text
 
     # Convert embedded HTML tables to real markdown tables before the generic
     # <, > escaping below turns them into unreadable escaped tag soup

@@ -95,7 +95,24 @@ String getValue(String colName)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string value of the given column.
 
 <Note>
-Possible colNames:&lt;ul&gt;&lt;li&gt;id: Integer, The primary key (auto-incremented)&lt;/li&gt;&lt;li&gt;primContact: Integer, The ID of the customer who is the primary contact for this company customer.id&lt;/li&gt;&lt;li&gt;name: String, The name of the company&lt;/li&gt;&lt;li&gt;note: String, A freetext field for various notes about this company&lt;/li&gt;&lt;li&gt;phone: String, The company's phone number&lt;/li&gt;&lt;li&gt;fax: String, The company's faxnumber&lt;/li&gt;&lt;li&gt;adr: String, The company's address&lt;/li&gt;&lt;li&gt;priority: Integer, The reference to the default priority for this company. NULL or -1 if not set. ticket_priority.id&lt;/li&gt;&lt;li&gt;deleted: Bool, A boolean telling if the company is deleted&lt;/li&gt;&lt;li&gt;language: Integer, The reference to the default customer language for this company. NULL or -1 if not set. cust_lang.id&lt;/li&gt;&lt;li&gt;ourContact: Integer, The customer's primary contact ejuser.id&lt;/li&gt;&lt;li&gt;extTable: Integer, The reference to the external table if this is a cached entry. NULL or -1 if not. ext_table.id&lt;/li&gt;&lt;li&gt;extKey: String, The primary key for the cached entry in the external datasource.&lt;/li&gt;&lt;li&gt;extLastCached: DateTime, When the cached entry was last updated.&lt;/li&gt;&lt;li&gt;domain: String, A display version of the company_domain table for this company.&lt;/li&gt;&lt;li&gt;x_* The extrafield with the given database field name.&lt;/li&gt;&lt;/ul&gt;
+Possible colNames:
+
+- id: Integer, The primary key (auto-incremented)
+- primContact: Integer, The ID of the customer who is the primary contact for this company customer.id
+- name: String, The name of the company
+- note: String, A freetext field for various notes about this company
+- phone: String, The company's phone number
+- fax: String, The company's faxnumber
+- adr: String, The company's address
+- priority: Integer, The reference to the default priority for this company. NULL or -1 if not set. ticket_priority.id
+- deleted: Bool, A boolean telling if the company is deleted
+- language: Integer, The reference to the default customer language for this company. NULL or -1 if not set. cust_lang.id
+- ourContact: Integer, The customer's primary contact ejuser.id
+- extTable: Integer, The reference to the external table if this is a cached entry. NULL or -1 if not. ext_table.id
+- extKey: String, The primary key for the cached entry in the external datasource.
+- extLastCached: DateTime, When the cached entry was last updated.
+- domain: String, A display version of the company_domain table for this company.
+- x_* The extrafield with the given database field name.
 </Note>
 
 **Example:**
@@ -169,7 +186,29 @@ Void SetValue(String colName, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-Possible column names&lt;ul&gt;&lt;li&gt;id: Integer, The primary key (auto-incremented)&lt;/li&gt;&lt;li&gt;primContact: Integer, The ID of the customer who is the primary contact for this company customer.id&lt;/li&gt;&lt;li&gt;name: String, The name of the company&lt;/li&gt;&lt;li&gt;note: String, A freetext field for various notes about this company&lt;/li&gt;&lt;li&gt;infoText: the same as note (From 7.x)&lt;/li&gt;&lt;li&gt;phone: String, The company's phone number&lt;/li&gt;&lt;li&gt;phone/formattedNumber: String (From 7.x)&lt;/li&gt;&lt;li&gt;fax/formattedNumber: String (From 7.x)&lt;/li&gt;&lt;li&gt;fax: String, The company's faxnumber&lt;/li&gt;&lt;li&gt;adr: String, The company's address (From 7.x setting address with adr is no longer supported. Attempting to do so, will result in a GeneralException. Use NetServer instead)&lt;/li&gt;&lt;li&gt;priority: Integer, The reference to the default priority for this company. NULL or -1 if not set. ticket_priority.id&lt;/li&gt;&lt;li&gt;deleted: Bool, A boolean telling if the company is deleted&lt;/li&gt;&lt;li&gt;language: Integer, The reference to the default customer language for this company. NULL or -1 if not set. cust_lang.id&lt;/li&gt;&lt;li&gt;ourContact: Integer, The customer's primary contact ejuser.id&lt;/li&gt;&lt;li&gt;ourSalesContact: Integer, The sales contact for this company. (From 7.x)&lt;/li&gt;&lt;li&gt;supportAssociateId: String, Set the support associate id. Supports both integer and the username. (From 7.x)&lt;/li&gt;&lt;li&gt;primContact: Integer, The customer's primary contact customer.id&lt;/li&gt;&lt;li&gt;extTable: Integer, The reference to the external table if this is a cached entry. NULL or -1 if not. ext_table.id&lt;/li&gt;&lt;li&gt;extKey: String, The primary key for the cached entry in the external datasource.&lt;/li&gt;&lt;li&gt;extLastCached: DateTime, When the cached entry was last updated.&lt;/li&gt;&lt;li&gt;domain: String, A display version of the company_domain table for this company.&lt;/li&gt;&lt;/ul&gt;
+Possible column names
+
+- id: Integer, The primary key (auto-incremented)
+- primContact: Integer, The ID of the customer who is the primary contact for this company customer.id
+- name: String, The name of the company
+- note: String, A freetext field for various notes about this company
+- infoText: the same as note (From 7.x)
+- phone: String, The company's phone number
+- phone/formattedNumber: String (From 7.x)
+- fax/formattedNumber: String (From 7.x)
+- fax: String, The company's faxnumber
+- adr: String, The company's address (From 7.x setting address with adr is no longer supported. Attempting to do so, will result in a GeneralException. Use NetServer instead)
+- priority: Integer, The reference to the default priority for this company. NULL or -1 if not set. ticket_priority.id
+- deleted: Bool, A boolean telling if the company is deleted
+- language: Integer, The reference to the default customer language for this company. NULL or -1 if not set. cust_lang.id
+- ourContact: Integer, The customer's primary contact ejuser.id
+- ourSalesContact: Integer, The sales contact for this company. (From 7.x)
+- supportAssociateId: String, Set the support associate id. Supports both integer and the username. (From 7.x)
+- primContact: Integer, The customer's primary contact customer.id
+- extTable: Integer, The reference to the external table if this is a cached entry. NULL or -1 if not. ext_table.id
+- extKey: String, The primary key for the cached entry in the external datasource.
+- extLastCached: DateTime, When the cached entry was last updated.
+- domain: String, A display version of the company_domain table for this company.
 </Note>
 
 **Example:**
@@ -193,5 +232,17 @@ toParser(Parser parser)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-Fields that will be loaded:&lt;ul&gt;&lt;li&gt;company.id: The ID&lt;/li&gt;&lt;li&gt;company.name: The name&lt;/li&gt;&lt;li&gt;company.note: The note&lt;/li&gt;&lt;li&gt;company.domain: The domain&lt;/li&gt;&lt;li&gt;company.phone: Phone number&lt;/li&gt;&lt;li&gt;company.fax: Fax number&lt;/li&gt;&lt;li&gt;company.adr: The address&lt;/li&gt;&lt;li&gt;company.ourContact: The ID of the user that is this company's contact&lt;/li&gt;&lt;li&gt;company.primaryContact.id: The ID of the customer that is this company's primary contact&lt;/li&gt;&lt;li&gt;company.primaryContact.email: The email address of the customer that is this company's primary contact&lt;/li&gt;&lt;li&gt;company.extraFieldName: The name of the extrafield, (not x_fieldname)&lt;/li&gt;&lt;/ul&gt;
+Fields that will be loaded:
+
+- company.id: The ID
+- company.name: The name
+- company.note: The note
+- company.domain: The domain
+- company.phone: Phone number
+- company.fax: Fax number
+- company.adr: The address
+- company.ourContact: The ID of the user that is this company's contact
+- company.primaryContact.id: The ID of the customer that is this company's primary contact
+- company.primaryContact.email: The email address of the customer that is this company's primary contact
+- company.extraFieldName: The name of the extrafield, (not x_fieldname)
 </Note>

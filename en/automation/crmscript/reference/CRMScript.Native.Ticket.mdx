@@ -47,7 +47,14 @@ Void checkEscalating(Integer action)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-Possible values:&lt;ul&gt;&lt;li&gt;ActionRead = 0&lt;/li&gt;&lt;li&gt;ActionChangedOwner = 1&lt;/li&gt;&lt;li&gt;ActionNewInfo = 2&lt;/li&gt;&lt;li&gt;ActionClosed = 3&lt;/li&gt;&lt;li&gt;ActionChangedPriority = 4&lt;/li&gt;&lt;li&gt;ActionNew = 5&lt;/li&gt;&lt;/ul&gt;
+Possible values:
+
+- ActionRead = 0
+- ActionChangedOwner = 1
+- ActionNewInfo = 2
+- ActionClosed = 3
+- ActionChangedPriority = 4
+- ActionNew = 5
 </Note>
 
 ## delegate()
@@ -125,7 +132,37 @@ String getValue(String colName)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Returns a string representation of the wanted value.
 
 <Note>
-Possible values:&lt;ul&gt;&lt;li&gt;id&lt;/li&gt;&lt;li&gt;title&lt;/li&gt;&lt;li&gt;category: the ID&lt;/li&gt;&lt;li&gt;ownedBy: (owned_by), the ID of the user who owns the ticket&lt;/li&gt;&lt;li&gt;slevel: the security level of the ticket, 1 is internal, 2 is external&lt;/li&gt;&lt;li&gt;priority: the id&lt;/li&gt;&lt;li&gt;status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed&lt;/li&gt;&lt;li&gt;ticketStatus&lt;/li&gt;&lt;li&gt;custId: the ID of the primary customer&lt;/li&gt;&lt;li&gt;ticket_type/ticketType: the ID of the request type&lt;/li&gt;&lt;li&gt;createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system&lt;/li&gt;&lt;li&gt;author&lt;/li&gt;&lt;li&gt;activate: the datetime when the ticket was activated&lt;/li&gt;&lt;li&gt;createdAt: (created_at), the datetime when the ticket was created&lt;/li&gt;&lt;li&gt;closedAt: (closed_at), the datetime when the ticket was closed&lt;/li&gt;&lt;li&gt;repliedAt: (replied_at), the datetime when the ticket first was replied at&lt;/li&gt;&lt;li&gt;origCategory: the original category&lt;/li&gt;&lt;li&gt;origPriority: the original priority&lt;/li&gt;&lt;li&gt;isInEscalation&lt;/li&gt;&lt;li&gt;displayFilter&lt;/li&gt;&lt;li&gt;filterId&lt;/li&gt;&lt;li&gt;filterAddress&lt;/li&gt;&lt;li&gt;readStatus&lt;/li&gt;&lt;li&gt;deadline&lt;/li&gt;&lt;li&gt;readByOwner&lt;/li&gt;&lt;li&gt;firstReadByUser&lt;/li&gt;&lt;li&gt;firstReadByOwner&lt;/li&gt;&lt;li&gt;saleId: ID of connected Sale&lt;/li&gt;&lt;li&gt;projectId: ID of connected Project&lt;/li&gt;&lt;/ul&gt;
+Possible values:
+
+- id
+- title
+- category: the ID
+- ownedBy: (owned_by), the ID of the user who owns the ticket
+- slevel: the security level of the ticket, 1 is internal, 2 is external
+- priority: the id
+- status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed
+- ticketStatus
+- custId: the ID of the primary customer
+- ticket_type/ticketType: the ID of the request type
+- createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system
+- author
+- activate: the datetime when the ticket was activated
+- createdAt: (created_at), the datetime when the ticket was created
+- closedAt: (closed_at), the datetime when the ticket was closed
+- repliedAt: (replied_at), the datetime when the ticket first was replied at
+- origCategory: the original category
+- origPriority: the original priority
+- isInEscalation
+- displayFilter
+- filterId
+- filterAddress
+- readStatus
+- deadline
+- readByOwner
+- firstReadByUser
+- firstReadByOwner
+- saleId: ID of connected Sale
+- projectId: ID of connected Project
 </Note>
 
 ## load(Integer)
@@ -237,7 +274,33 @@ Void setValue(String colName, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-Possible values are the extrafields on the ticket and the following:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;category: the category ID&lt;/li&gt;&lt;li&gt;ownedBy: (owned_by), the ID of the user who owns the ticket&lt;/li&gt;&lt;li&gt;slevel: the security level of the ticket, See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.&lt;/li&gt;&lt;li&gt;priority: the id&lt;/li&gt;&lt;li&gt;status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed&lt;/li&gt;&lt;li&gt;ticketStatus: (ticket_status), the ID of the custom status field&lt;/li&gt;&lt;li&gt;ticket_type/ticketType: the ID of the request type&lt;/li&gt;&lt;li&gt;custId: the ID of the primary customer&lt;/li&gt;&lt;li&gt;customers: comma-separated list of customer ids&lt;/li&gt;&lt;li&gt;createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system&lt;/li&gt;&lt;li&gt;author: a string containing the name of the ticket author&lt;/li&gt;&lt;li&gt;activate: the datetime when the ticket was activated&lt;/li&gt;&lt;li&gt;createdAt: (created_at), the datetime when the ticket was created&lt;/li&gt;&lt;li&gt;repliedAt: (replied_at), the datetime when the ticket first was replied at&lt;/li&gt;&lt;li&gt;stopEscalation&lt;/li&gt;&lt;li&gt;readStatus (read_status)&lt;/li&gt;&lt;li&gt;deadline&lt;/li&gt;&lt;li&gt;filterAddress&lt;/li&gt;&lt;li&gt;timeToClose&lt;/li&gt;&lt;li&gt;realTimeToClose&lt;/li&gt;&lt;li&gt;dbiAgentId&lt;/li&gt;&lt;li&gt;dbiKey&lt;/li&gt;&lt;li&gt;dbiLastModified&lt;/li&gt;&lt;li&gt;saleId: ID of connected Sale&lt;/li&gt;&lt;li&gt;projectId: ID of connected Project&lt;/li&gt;&lt;/ul&gt;
+Possible values are the extrafields on the ticket and the following:&lt;/p&gt;
+
+- category: the category ID
+- ownedBy: (owned_by), the ID of the user who owns the ticket
+- slevel: the security level of the ticket, See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+- priority: the id
+- status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed
+- ticketStatus: (ticket_status), the ID of the custom status field
+- ticket_type/ticketType: the ID of the request type
+- custId: the ID of the primary customer
+- customers: comma-separated list of customer ids
+- createdBy: the ID of the user who posted the ticket, 1 if the ticket is posted into the system
+- author: a string containing the name of the ticket author
+- activate: the datetime when the ticket was activated
+- createdAt: (created_at), the datetime when the ticket was created
+- repliedAt: (replied_at), the datetime when the ticket first was replied at
+- stopEscalation
+- readStatus (read_status)
+- deadline
+- filterAddress
+- timeToClose
+- realTimeToClose
+- dbiAgentId
+- dbiKey
+- dbiLastModified
+- saleId: ID of connected Sale
+- projectId: ID of connected Project
 </Note>
 
 ## toParser(Parser)

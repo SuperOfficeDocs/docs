@@ -75,7 +75,16 @@ String getValue(String field)
 **Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
 
 <Note>
-Available fields:&lt;ul&gt;&lt;li&gt;messageId the id which this invoice entry is connected to&lt;/li&gt;&lt;li&gt;description the descriptive text of this invoice entry&lt;/li&gt;&lt;li&gt;type ID of the type for this invoice entry&lt;/li&gt;&lt;li&gt;quantity the number of units invoiced&lt;/li&gt;&lt;li&gt;pricePrUnit price per unit (precision 2)&lt;/li&gt;&lt;li&gt;discount discount in percentage for this invoice entry (precision 2)&lt;/li&gt;&lt;li&gt;discountMoney discount in money (precision 2)&lt;/li&gt;&lt;li&gt;date the date for this invoice entry&lt;/li&gt;&lt;/ul&gt;
+Available fields:
+
+- messageId the id which this invoice entry is connected to
+- description the descriptive text of this invoice entry
+- type ID of the type for this invoice entry
+- quantity the number of units invoiced
+- pricePrUnit price per unit (precision 2)
+- discount discount in percentage for this invoice entry (precision 2)
+- discountMoney discount in money (precision 2)
+- date the date for this invoice entry
 </Note>
 
 ## load(Integer)
@@ -147,5 +156,14 @@ Void setValue(String field, String value)
 **Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
 
 <Note>
-Available fields:&lt;ul&gt;&lt;li&gt;messageId the ID of the message which this invoice entry is connected to&lt;/li&gt;&lt;li&gt;description a description of the invoice entry&lt;/li&gt;&lt;li&gt;type the ID of the type which this invoice entry will be saved as&lt;/li&gt;&lt;li&gt;quantity number of invoiced unites (this can be a float value)&lt;/li&gt;&lt;li&gt;pricePrUnit price pr. unit (this can be a float value of precision 2)&lt;/li&gt;&lt;li&gt;discount discount given in percentage (float value of precision 2). If discountMoney is also specified, this field will be ignored&lt;/li&gt;&lt;li&gt;discountMoney discount in money&lt;/li&gt;&lt;li&gt;date the date of the invoice entry&lt;/li&gt;&lt;/ul&gt;
+Available fields:
+
+- messageId the ID of the message which this invoice entry is connected to
+- description a description of the invoice entry
+- type the ID of the type which this invoice entry will be saved as
+- quantity number of invoiced unites (this can be a float value)
+- pricePrUnit price pr. unit (this can be a float value of precision 2)
+- discount discount given in percentage (float value of precision 2). If discountMoney is also specified, this field will be ignored
+- discountMoney discount in money
+- date the date of the invoice entry
 </Note>
