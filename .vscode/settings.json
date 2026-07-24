@@ -29,5 +29,8 @@
     ],
     "markdown.styles": [
         "./.vscode/markdown.css"
-    ]
+    ],
+    "files.associations": {
+        "*.mdx": "markdown"
+    }
 }
