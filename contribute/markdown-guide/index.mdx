@@ -2,9 +2,9 @@
 uid: markdown-guide-to-mintlify
 title: Markdown guide for docs.superoffice.com
 description: This Markdown style guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
-keywords: markdown guide, callouts, headings, links, lists, tables, metadata, includes
+keywords: markdown guide, callouts, headings, links, lists, tables, metadata, includes, Phosphor
 author: digitaldiina
-date: 07.22.2026
+date: 07.24.2026
 content_type: reference
 language: en
 ---
@@ -144,6 +144,7 @@ Even though Markdown supports inline HTML, we (generally) don't use it on `docs.
 * Download links, for example, `<a href="/downloads/mirroredtables.docx" download>Mirrored Tables document</a>`.
 * Use `<details>` and `<summary>` to create drop-down content.
 * Use `<script>` to bring in SuperOffice forms.
+* Use `<i>` with Phosphor classes for icons. Always set `aria-label` or `aria-hidden="true"`.
 
 ## Images
 
@@ -197,7 +198,25 @@ To produce this effect, add the string " -screenshot" at the end of the alt tag:
 
 ### Icons
 
-We use Phosphor icons in the documentation.
+We use Phosphor icons in the documentation. Browse the available icons on [Phosphor Icons][11].
+
+Use the `<i>` tag with the `ph` base class and the icon name:
+
+```html
+<i class="ph ph-split-horizontal" aria-hidden="true"></i>
+<i class="ph ph-warning" aria-label="Warning"></i>
+```
+
+You can style icons with `i.ph`.
+
+The VS Code Markdown preview loads `.vscode/markdown.css`, which imports the Phosphor icon font so icons render while you edit.
+
+#### Accessibility
+
+Always set either `aria-label` or `aria-hidden="true"` on every icon.
+
+* Use `aria-label` when the icon replaces a visible UI label or carries meaning on its own.
+* Use `aria-hidden="true"` when the icon is decorative, or when nearby text already names the action.
 
 ### Videos
 
@@ -349,5 +368,6 @@ Here are a few resources to help with Markdown to help get you started:
 [8]: https://www.mintlify.com/docs/components/callouts
 [9]: https://www.mintlify.com/docs/create/image-embeds#youtube-embeds
 [10]: https://developer.mozilla.org/en-US/docs/Glossary/Identifier
+[11]: https://phosphoricons.com/
 
 [img1]: /media/loc/en/contribute/plain-action-buttons.png
