@@ -14,12 +14,9 @@ api-sources/
 
 # Exclude transformation scripts
 tools/
-transform-*.ps1
 
 # Exclude specific files
 private-notes.md
-bergfrid-tmp/
-redirects.json
 
 # Exclude selected content folders to keep mint dev below 5000 pages
 ### Do not commit changes to this section without approval ###
@@ -46,26 +43,16 @@ redirects.json
 #!sv/**/index.md
 #!sv/**/index.mdx
 
-# en folder 
+# EN folder
 #en/**
 #!en/**/
 #!en/**/index.md
 #!en/**/index.mdx
 
-# Ignore database except index files
-#en/database/**
-#!en/database/**/
-#!en/database/**/index.md
-#!en/database/**/index.mdx
-
-# Ignore all reference folders except index files (but not agents-webapi reference with OpenAPI specs)
-#**/reference/**
-#!**/reference/**/
-
-# Ignore SOAP reference
-en/api/web-services/endpoints/soap/reference/**
-!**/reference/**/index.md
-!**/reference/**/index.mdx
+# Ignore database tables except index files
+en/database/tables/**
+!en/database/tables/index.mdx
 
 # Ignore CRMScript reference
-en/customization/crmscript/reference/**
+en/automation/crmscript/reference/**
+!en/automation/crmscript/reference/index.mdx
