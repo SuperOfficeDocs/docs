@@ -4,7 +4,7 @@ title: How to include code in docs
 description: How to include inline code, fenced code blocks, tabbed content, and native source-code includes in a docs page.
 keywords: inline code, fenced code block, code snippet, tabbed content, source code include
 author: digitaldiina
-date: 07.16.2026
+date: 07.24.2026
 content_type: reference
 language: en
 ---
@@ -124,61 +124,167 @@ Use the `<Tabs>` and `<Tab>` components to organize content into switchable pane
 * Wrap the whole group in `<Tabs>`.
 * Each tab is a `<Tab title="...">` with any content inside — text, code blocks, images, or lists.
 
-### Example
+### Examples
 
-The following shows two tabs with code samples — one per language.
+#### Code samples
+
+Tabs are most commonly used to show the same task in multiple languages or protocols. This example is from the [get system user ticket][5] page.
 
 **Rendered:**
 
 <Tabs>
-  <Tab title="CRMScript">
-    ```crmscript
-    NSContactAgent agent;
-    NSContact contact = agent.GetContact(123);
-    printLine(contact.GetFullName());
-    ```
-  </Tab>
-  <Tab title="C#">
-    ```csharp
-    using SuperOffice.CRM.Services;
+<Tab title="REST">
 
-    using (var agent = new ContactAgent())
-    {
-        var contact = agent.GetContact(123);
-        Console.WriteLine(contact.FullName);
-    }
-    ```
-  </Tab>
+```http
+POST https://{environment}.superoffice.com/Login/api/PartnerSystemUser/Authenticate
+Content-Type: application/json
+Accept: application/json
+
+{
+    "SignedSystemToken": "{{signed_Token}}",
+    "ApplicationToken": "{{client_secret}}",
+    "ContextIdentifier": "{{context_Identifier}}",
+    "ReturnTokenType": "JWT"
+}
+```
+
+</Tab>
+
+<Tab title="SOAP">
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:ns1="http://www.superoffice.com/superid/partnersystemuser/0.1"
+                   xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <ns1:ApplicationToken>${appToken}</ns1:ApplicationToken>
+    <ns1:ContextIdentifier>${contextId}</ns1:ContextIdentifier>
+  </SOAP-ENV:Header>
+  <ns0:Body>
+    <ns1:AuthenticationRequest>
+      <ns1:SignedSystemToken>${signedToken}</ns1:SignedSystemToken>
+      <ns1:ReturnTokenType>Jwt</ns1:ReturnTokenType>
+    </ns1:AuthenticationRequest>
+  </ns0:Body>
+</SOAP-ENV:Envelope>
+```
+
+</Tab>
 </Tabs>
 
 **Markup:**
 
 ````mdx
 <Tabs>
-  <Tab title="CRMScript">
-    ```crmscript
-    NSContactAgent agent;
-    NSContact contact = agent.GetContact(123);
-    printLine(contact.GetFullName());
-    ```
-  </Tab>
-  <Tab title="C#">
-    ```csharp
-    using SuperOffice.CRM.Services;
+<Tab title="REST">
 
-    using (var agent = new ContactAgent())
-    {
-        var contact = agent.GetContact(123);
-        Console.WriteLine(contact.FullName);
-    }
-    ```
-  </Tab>
+```http
+POST https://{environment}.superoffice.com/Login/api/PartnerSystemUser/Authenticate
+Content-Type: application/json
+Accept: application/json
+
+{
+    "SignedSystemToken": "{{signed_Token}}",
+    "ApplicationToken": "{{client_secret}}",
+    "ContextIdentifier": "{{context_Identifier}}",
+    "ReturnTokenType": "JWT"
+}
+```
+
+</Tab>
+
+<Tab title="SOAP">
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:ns1="http://www.superoffice.com/superid/partnersystemuser/0.1"
+                   xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header>
+    <ns1:ApplicationToken>${appToken}</ns1:ApplicationToken>
+    <ns1:ContextIdentifier>${contextId}</ns1:ContextIdentifier>
+  </SOAP-ENV:Header>
+  <ns0:Body>
+    <ns1:AuthenticationRequest>
+      <ns1:SignedSystemToken>${signedToken}</ns1:SignedSystemToken>
+      <ns1:ReturnTokenType>Jwt</ns1:ReturnTokenType>
+    </ns1:AuthenticationRequest>
+  </ns0:Body>
+</SOAP-ENV:Envelope>
+```
+
+</Tab>
 </Tabs>
 ````
 
+#### Mirroring the UI
+
+When documenting a screen with named tabs, use tab titles that match the UI exactly. This example is from the [Create a request][6] page, which documents the **Messages tab**, **Details tab**, and **Properties panel** in the SuperOffice Request screen.
+
+**Rendered:**
+
+<Tabs>
+<Tab title="Messages tab">
+Compose and manage the request message.
+
+* Add recipients in the **To** field. Recipients are automatically added as request contacts.
+* Click **Cc/Bcc** to add additional recipients as a copy or blind copy.
+* Use **Internal/External** to set whether the contact can see the message in the Customer Centre.
+</Tab>
+
+<Tab title="Details tab">
+View and edit additional request information.
+
+* **Relation:** Link this request to another related request.
+* **Access level:** Adjust the visibility of the request.
+* **Sale/Project:** Connect the request to an existing sale or project.
+</Tab>
+
+<Tab title="Properties panel">
+Categorize and assign the request.
+
+* **Request type:** Determines default values and status options.
+* **Status:** Set to **Open**, **Closed**, or **Postponed**.
+* **Owner:** Assign to a user or leave unassigned.
+* **Priority:** Assign as **Low**, **Medium**, or **High**.
+</Tab>
+</Tabs>
+
+**Markup:**
+
+```mdx
+<Tabs>
+<Tab title="Messages tab">
+Compose and manage the request message.
+
+* Add recipients in the **To** field. Recipients are automatically added as request contacts.
+* Click **Cc/Bcc** to add additional recipients as a copy or blind copy.
+* Use **Internal/External** to set whether the contact can see the message in the Customer Centre.
+</Tab>
+
+<Tab title="Details tab">
+View and edit additional request information.
+
+* **Relation:** Link this request to another related request.
+* **Access level:** Adjust the visibility of the request.
+* **Sale/Project:** Connect the request to an existing sale or project.
+</Tab>
+
+<Tab title="Properties panel">
+Categorize and assign the request.
+
+* **Request type:** Determines default values and status options.
+* **Status:** Set to **Open**, **Closed**, or **Postponed**.
+* **Owner:** Assign to a user or leave unassigned.
+* **Priority:** Assign as **Low**, **Medium**, or **High**.
+</Tab>
+</Tabs>
+```
+
 ### Tab synchronization
 
-Tabs with matching titles stay in sync across the page. Selecting **C#** in one tab group automatically selects **C#** in all other tab groups and code groups on the same page that share that title.
+Tabs with matching titles stay in sync across the page. If a page has multiple tab groups that share titles — for example, **REST** and **SOAP** — selecting a tab in one group automatically selects it in the others. This also syncs with code groups.
 
 To opt out, set `sync={false}` on the `<Tabs>` wrapper:
 
@@ -206,3 +312,5 @@ For more options, including `defaultTabIndex` and `borderBottom`, see [Mintlify'
 [2]: https://www.mintlify.com/docs/components/tabs
 [3]: https://www.mintlify.com/docs/create/code
 [4]: ./index#included-markdown-files
+[5]: ../../en/api/authentication/online/auth-application/get-system-user-ticket
+[6]: ../../en/request/learn/create
