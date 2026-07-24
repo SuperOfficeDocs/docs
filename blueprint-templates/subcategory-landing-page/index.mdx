@@ -1,0 +1,79 @@
+---
+mode: "custom"
+uid: {{kebabCase name}}-landing
+title: {{name}}
+sidebarTitle: "Overview"
+description: Brief summary of what this subcategory covers.
+keywords: keyword1, keyword2
+author: # Your GitHub alias
+date: # MM.DD.YYYY
+version: 12.x
+content_type: concept
+language: en
+---
+
+<div id="subcategory">
+
+<h1>{{name}}</h1>
+
+<p className="description">Brief introductory sentence describing this subcategory.</p>
+
+<Columns cols={3}>
+<Card title="Card title">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>How-to guide</span>
+  </div>
+  <ul>
+    <li><a href="/en/section/learn/task">Do something</a></li>
+    <li><a href="/en/section/learn/task2">Do something else</a></li>
+  </ul>
+</div>
+
+</Card>
+
+<Card title="Card title">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>How-to guide</span>
+  </div>
+  <ul>
+    <li><a href="/en/section/learn/task">Do something</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Reference</span>
+  </div>
+  <ul>
+    <li><a href="/en/section/reference/index">Reference overview</a></li>
+  </ul>
+</div>
+
+</Card>
+
+<Card title="Card title">
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>How-to guide</span>
+  </div>
+  <ul>
+    <li><a href="/en/section/learn/task">Do something</a></li>
+  </ul>
+</div>
+
+</Card>
+
+</Columns>
+
+</div>

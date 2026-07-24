@@ -1,0 +1,74 @@
+---
+mode: "custom"
+uid: {{kebabCase name}}-landing
+title: {{name}}
+description: Brief summary of what this section covers.
+keywords: keyword1, keyword2
+author: # Your GitHub alias
+date: # MM.DD.YYYY
+version: 12.x
+content_type: concept
+language: en
+---
+
+import CustomFooter from '/components/custom-mode-footer.mdx'
+
+<div id="category-hero">
+  <h1>{{name}}</h1>
+  <p>Brief introductory sentence describing this section.</p>
+</div>
+
+<div id="category-landing">
+
+<div className="highlighted-content">
+
+<Columns cols={4}>
+<Card title="Section title" icon="icon-name" href="/en/section/learn/index">
+  <span className="card-label"></span>
+</Card>
+
+<Card title="Section title" icon="icon-name" href="/en/section/learn/index">
+  <span className="card-label"></span>
+</Card>
+
+<Card title="Section title" icon="icon-name" href="/en/section/learn/index">
+  <span className="card-label"></span>
+</Card>
+
+<Card title="Section title" icon="icon-name" href="/en/section/learn/index">
+  <span className="card-label"></span>
+</Card>
+
+</Columns>
+
+</div>
+
+<div className="conceptual-content">
+
+<Columns cols={4}>
+<Card title="Card title">
+
+<ul className="concept-links">
+  <li><Icon icon="graduation-cap" /> <a href="/en/section/learn/index">Introduction</a></li>
+  <li><Icon icon="list" /> <a href="/en/section/learn/task">Do something</a></li>
+  <li><Icon icon="book" /> <a href="/en/section/learn/reference">Reference</a></li>
+</ul>
+
+</Card>
+
+<Card title="Card title">
+
+<ul className="concept-links">
+  <li><Icon icon="graduation-cap" /> <a href="/en/section/learn/index">Introduction</a></li>
+  <li><Icon icon="list" /> <a href="/en/section/learn/task">Do something</a></li>
+</ul>
+
+</Card>
+
+</Columns>
+
+</div>
+
+</div>
+
+<CustomFooter />
