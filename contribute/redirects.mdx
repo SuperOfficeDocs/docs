@@ -17,6 +17,12 @@ Whenever a page moves, gets renamed, is merged into another page, or is deleted 
 This page is redirect-specific. For how `config/redirects.json` fits into `docs.json`'s broader modular `$ref` split (navigation, redirects, and where each piece lives), see [Configuring Mintlify][3].
 </Note>
 
+<Note>
+For retention windows and lifecycle decisions (when to keep 1:1 redirects, when to collapse to wildcard redirects, and when to retire content pages), see [Content and redirect retention policy][4].
+</Note>
+
+See [Content and redirect retention policy][4] for default retention windows.
+
 ## Why redirect_from exists
 
 `redirect_from` lives in the frontmatter of the file that **now** owns a piece of content, and lists every old URL that used to point to it.
@@ -121,9 +127,13 @@ Whether `*` also matches a **zero-length** value (so a bare folder path matches 
 Multiple redirects sharing a destination are tempting to collapse, but a wildcard is a routing rule, not a label - get the scope wrong and it silently hijacks something it shouldn't. Compact only when **all** of these hold:
 
 1. **The sources share a real literal prefix** - not just the same destination. Two paths that happen to end up on the same page but look nothing alike can't be expressed as a wildcard at all, no matter how many of them there are.
+
 2. **Nothing else in the whole array shares that prefix but points elsewhere.** Check the full file, not just the group you're looking at - a prefix that looks like it belongs to one topic can quietly fan out to several unrelated destinations (we found a real one: a single folder-level prefix that, unchecked, would have fanned out to 9 different pages).
+
 3. **The prefix doesn't shadow a page that's live today.** Check the actual file tree, not just the redirects array. A wildcard matches on URL shape alone - if real content sits under that path, the rule redirects requests to it too.
+
 4. **If using the capture-and-reuse form, confirm the filename genuinely carried over unchanged.** Don't assume it from the folder move alone - verify against the real files. We found one case where a prefix got dropped during a move (`sofo-6.0-update` became `6.0-update`), which would have silently sent that one visitor to a page that doesn't exist.
+
 5. **Check whether the content was actually merged into one page, or just relocated.** If several old pages' content now lives as sections on one consolidated page, a many-to-one collapse is correct. If each old page has its own matching new page, use the capture-and-reuse form instead - **unless the group has any exceptions (see the warning below), in which case capture-and-reuse is unsafe and you're choosing between leaving the group uncompacted or a full collapse.** (We found a real bug of exactly this shape - a set of dated pages that should each redirect to their own matching page were all funneling to one index instead.)
 
 **Don't** compact when the sources don't share a literal prefix at all - most "several old pages now land on one new page" groups are content consolidations with no structural relationship, and can't be expressed as a wildcard regardless of how many sources point at that destination.
@@ -132,16 +142,20 @@ Multiple redirects sharing a destination are tempting to collapse, but a wildcar
 **A wildcard with even one exception sharing its prefix doesn't just risk the wrong page winning - Mintlify silently drops the wildcard rule entirely.** Confirmed directly (curl against a live `mint dev` instance, not inferred): if any other redirect's `source` shares a wildcard's exact prefix, the wildcard never makes it into the compiled config. The literal exception still works; every URL the wildcard was supposed to cover 404s instead. This isn't a precedence question - the wildcard just isn't there.
 
 This means: a majority-pattern group with a handful of exceptions (say, 90% of sources rename cleanly, 10% don't) **cannot** be compacted with capture-and-reuse plus literal exceptions, no matter how tempting the high match rate looks. Your real options, in order of preference:
-- **Check whether a chained redirect avoids the problem entirely first.** The wildcard will mechanically send an exception's old URL wherever its transform says, even though that's the wrong final destination. If that mechanical (wrong) intermediate path has no real content and no existing entry, add one plain literal redirect *there*, forwarding to the exception's true destination. The exception's new source (the intermediate path) no longer shares the wildcard's prefix, so the drop-bug never triggers - visitors get one extra hop, but land on the exact same correct page, with zero precision lost. Verify the intermediate path is genuinely unused (filesystem + array check) and re-run the circular-chain check afterward - this introduces a real 2-hop chain, not a loop, but confirm that, don't assume it.
-- **Leave the whole group uncompacted** (fallback, safest choice when chaining isn't available - preserves every page's precision).
-- **A full many-to-one collapse** of the *entire* group (majority-fits entries and exceptions alike) to one fixed destination - safe (zero exceptions left, since nothing stays literal), but it sacrifices the precision of the entries that did have their own exact match. Only take this trade when it's justified (see below) and chaining genuinely doesn't apply - don't reach for it just because the array is big.
+
+* **Check whether a chained redirect avoids the problem entirely first.** The wildcard will mechanically send an exception's old URL wherever its transform says, even though that's the wrong final destination. If that mechanical (wrong) intermediate path has no real content and no existing entry, add one plain literal redirect *there*, forwarding to the exception's true destination. The exception's new source (the intermediate path) no longer shares the wildcard's prefix, so the drop-bug never triggers - visitors get one extra hop, but land on the exact same correct page, with zero precision lost. Verify the intermediate path is genuinely unused (filesystem + array check) and re-run the circular-chain check afterward - this introduces a real 2-hop chain, not a loop, but confirm that, don't assume it.
+
+* **Leave the whole group uncompacted** (fallback, safest choice when chaining isn't available - preserves every page's precision).
+
+* **A full many-to-one collapse** of the *entire* group (majority-fits entries and exceptions alike) to one fixed destination - safe (zero exceptions left, since nothing stays literal), but it sacrifices the precision of the entries that did have their own exact match. Only take this trade when it's justified (see below) and chaining genuinely doesn't apply - don't reach for it just because the array is big.
 
 ### When a full collapse is justified
 
 A full collapse trades real precision for array health, so it needs a real reason, not just convenience:
 
-- **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Caution>`/`<Warning>` block, a page titled "(LEGACY)", version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
-- **The content moved as part of a folder-level site restructuring** (e.g. into `integrations/`) - landing on the new folder's index is an acceptable trade when the destination is genuinely the right general topic area for the whole group, not a broad, unrelated hub.
+* **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Caution>`/`<Warning>` block, a page titled "(LEGACY)", version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
+
+* **The content moved as part of a folder-level site restructuring** (e.g. into `integrations/`) - landing on the new folder's index is an acceptable trade when the destination is genuinely the right general topic area for the whole group, not a broad, unrelated hub.
 
 Either way, this is fundamentally a "the needs of the many outweigh the needs of the few" call: a small number of visitors with an old bookmark lose exact precision so the array as a whole stays healthy and maintainable. State which justification applies in the commit message.
 </Warning>
@@ -152,8 +166,9 @@ A full collapse is a live-routing decision, not a content-history one - it doesn
 
 Two scripts in `tools/` support ongoing redirect hygiene - reusable, not one-off. Both take `config/redirects.json` as their positional argument:
 
-- **`tools/compact-redirects.py config/redirects.json`** - `--report [--min-size N] [--depth D]` groups `redirects` by source-prefix depth and ranks candidate wildcard clusters by match % against a majority transform, flagging live-content collisions. `--apply <prefix1,prefix2,...>` mechanically compacts named, gate-clear clusters. It refuses (unless `--force`) to apply any cluster with exceptions, per the confirmed drop-bug above - review its report output yourself before choosing which clusters to apply, and how (leave uncompacted vs. full collapse).
-- **`tools/sort-redirects.py config/redirects.json`** - stable-sorts the array alphabetically by `source`. Contributors should keep appending new redirects at the end (no need to insert in sorted position); run this periodically to restore order. `--check` for a dry-run/exit-code check, `--diff` to preview what would move without writing.
+* **`tools/compact-redirects.py config/redirects.json`** - `--report [--min-size N] [--depth D]` groups `redirects` by source-prefix depth and ranks candidate wildcard clusters by match % against a majority transform, flagging live-content collisions. `--apply <prefix1,prefix2,...>` mechanically compacts named, gate-clear clusters. It refuses (unless `--force`) to apply any cluster with exceptions, per the confirmed drop-bug above - review its report output yourself before choosing which clusters to apply, and how (leave uncompacted vs. full collapse).
+
+* **`tools/sort-redirects.py config/redirects.json`** - stable-sorts the array alphabetically by `source`. Contributors should keep appending new redirects at the end (no need to insert in sorted position); run this periodically to restore order. `--check` for a dry-run/exit-code check, `--diff` to preview what would move without writing.
 
 Neither is a commit hook - both are meant to be run by hand, periodically, as the array grows.
 
@@ -164,3 +179,4 @@ After editing `config/redirects.json`, spot-check in `mint dev`: visit the old U
 [1]: #external-destinations-need-html
 [2]: #wildcards
 [3]: ./configure-mintlify
+[4]: ./retention-policy

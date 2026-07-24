@@ -1,0 +1,123 @@
+---
+uid: retention-policy
+title: Content and redirect retention policy
+description: How we phase out content, when to use hidden pages, and how long to keep 1:1 versus many-to-one redirects.
+keywords: retention policy, content lifecycle, redirects, hidden pages, deprecation, wildcard redirects, archive
+author: digitaldiina
+date: 07.24.2026
+content_type: concept
+language: en
+---
+
+# Content and redirect retention policy
+
+This policy explains when we retire content, how we phase pages out safely, and how long we keep 1:1 versus many-to-one (M:1) redirects. It complements [Redirects and redirect_from][1], which covers redirect mechanics and syntax.
+
+## Why we need a retention policy
+
+Our content set changes over time because products evolve, APIs are versioned out, and site structure improves. Without a retention policy, the docs can keep growing while becoming harder to maintain.
+
+Deprecated but still-live content can also reduce signal quality for AI assistants and site search. As legacy content and redirect volume grow, it can add crawl, index, and routing overhead.
+
+The goal is to:
+
+* Keep the current docs focused and maintainable.
+* Protect incoming links and bookmarks during transitions.
+* Use predictable retention windows so contributors make consistent decisions.
+
+## Content lifecycle
+
+Use this lifecycle whenever content is moving toward retirement.
+
+1. **Active:** Page is current and fully supported.
+1. **Hidden (optional):** Page is no longer promoted in navigation, but still available by URL.
+1. **Retired:** Page is removed or archived, and the old URL is redirected.
+
+### Hidden as an intermediate state
+
+Hiding is useful when content still helps a small audience, but should no longer appear in normal navigation.
+
+Use frontmatter:
+
+```yaml
+hidden: true
+```
+
+`hidden: true` removes the page from sidebar navigation while keeping it reachable by URL. This state will be used more often for on-site-only API and technical content while that material is being moved to an archive site.
+
+## Redirect retention windows
+
+Use these default windows unless there is a clear exception.
+
+| Situation | Redirect strategy | Default retention |
+| --- | --- | --- |
+| Normal move/rename/restructure for active content | Keep 1:1 redirects from each old URL to its direct replacement | 12 months minimum |
+| Large restructure where many old URLs map cleanly to one new section | Start with 1:1, then collapse to wildcard many-to-one after review | Collapse at 12 months |
+| Phased-out or end-of-life area | Shorter 1:1 period, then collapse to many-to-one destination (index, EOL page, archive, or download) | 3-6 months, then collapse |
+| Niche legacy content kept outside this repo | Redirect old paths to approved external archive location | Keep as long as the external target remains available |
+
+## Retiring content pages
+
+When a page is retired, do not leave the URL unresolved. Always redirect to the best available destination:
+
+* Direct replacement page, when one exists.
+* Consolidated index page, when content has been grouped.
+* EOL or archive page, when the capability is deprecated.
+* External snapshot or repository, when content is intentionally moved out of this site.
+
+For implementation details, use [Redirects and redirect_from][1] and [Configuring Mintlify][2].
+
+## Policy examples from recent decisions
+
+### Reporter Studio and reports deprecation
+
+Large report areas were removed and consolidated with wildcard redirects to [Reports EOL][3].
+
+### SOAP services retirement
+
+For SOAP approaching EOL and on-site-only support:
+
+* Remove Services84-87 references (April 2026), reducing about 6100 pages.
+* Remove Services88 reference (August 2026), reducing more than 2000 pages.
+* Keep a wildcard redirect from Services88 to the WSDL bundle:
+
+```json
+{
+  "source": "/en/api/reference/soap/Services88/*",
+  "destination": "/downloads/api/wsdl.zip"
+}
+```
+
+### Online and on-site split
+
+As online and onsite docs were separated, onsite-only user content was removed from active user guides and redirected to `help.superoffice.com`.
+
+### Integration restructuring
+
+When integrations were co-located:
+
+* Start with 1:1 redirects.
+* After 12 months, collapse old-source groups with wildcards to each integration index where appropriate.
+* For integrations being phased out, use a shorter 1:1 retention window before collapsing.
+
+### Legacy tutorials for niche users
+
+Some old tutorial paths are intentionally redirected to the archived `superoffice-docs` repository on GitHub.
+
+## Review cadence
+
+Review retained redirects at least quarterly:
+
+* Identify redirect groups older than 12 months.
+* Decide whether to keep 1:1 precision or collapse to many-to-one.
+* Verify that external targets still resolve.
+* Remove or update redirects only when a stable destination remains.
+
+## Related content
+
+* [Redirects and redirect_from][1]
+* [Configuring Mintlify][2]
+
+[1]: ./redirects
+[2]: ./configure-mintlify
+[3]: ../release-notes/eol/reports
