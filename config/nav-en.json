@@ -2807,6 +2807,7 @@
           "contribute/getting-started",
           "contribute/files-and-folders",
           "contribute/how-to-edit-an-article",
+          "contribute/how-to-add-release-notes",
           "contribute/how-to-write-tutorials"
         ]
       },
@@ -2843,6 +2844,7 @@
         "pages": [
           "contribute/ia",
           "contribute/redirects",
+          "contribute/retention-policy",
           "contribute/configure-mintlify"
         ]
       },
