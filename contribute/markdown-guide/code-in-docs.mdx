@@ -108,32 +108,101 @@ If you only need to show a snippet once (not reuse it), just paste the code dire
 Whole-file includes only. If you need to highlight just part of a larger sample, paste that portion directly into a fenced code block instead.
 </Note>
 
-## Tabbed content
+## Tabbed content {#tabs}
 
-Use the `<Tabs>` and `<Tab>` components to create tabbed content.
+Use the `<Tabs>` and `<Tab>` components to organize content into switchable panels.
+
+### When to use tabs
+
+* Code samples in multiple languages or runtimes
+* Version-specific steps or configuration
+* With or without a feature (pilot or feature-toggle content)
+* Content that mirrors tabs in the SuperOffice UI
 
 ### Syntax
 
 * Wrap the whole group in `<Tabs>`.
-* Each tab is a `<Tab title="...">` with any content inside — text, code blocks, images, lists.
+* Each tab is a `<Tab title="...">` with any content inside — text, code blocks, images, or lists.
 
-#### Example
+### Example
+
+The following shows two tabs with code samples — one per language.
+
+**Rendered:**
+
+<Tabs>
+  <Tab title="CRMScript">
+    ```crmscript
+    NSContactAgent agent;
+    NSContact contact = agent.GetContact(123);
+    printLine(contact.GetFullName());
+    ```
+  </Tab>
+  <Tab title="C#">
+    ```csharp
+    using SuperOffice.CRM.Services;
+
+    using (var agent = new ContactAgent())
+    {
+        var contact = agent.GetContact(123);
+        Console.WriteLine(contact.FullName);
+    }
+    ```
+  </Tab>
+</Tabs>
+
+**Markup:**
+
+````mdx
+<Tabs>
+  <Tab title="CRMScript">
+    ```crmscript
+    NSContactAgent agent;
+    NSContact contact = agent.GetContact(123);
+    printLine(contact.GetFullName());
+    ```
+  </Tab>
+  <Tab title="C#">
+    ```csharp
+    using SuperOffice.CRM.Services;
+
+    using (var agent = new ContactAgent())
+    {
+        var contact = agent.GetContact(123);
+        Console.WriteLine(contact.FullName);
+    }
+    ```
+  </Tab>
+</Tabs>
+````
+
+### Tab synchronization
+
+Tabs with matching titles stay in sync across the page. Selecting **C#** in one tab group automatically selects **C#** in all other tab groups and code groups on the same page that share that title.
+
+To opt out, set `sync={false}` on the `<Tabs>` wrapper:
 
 ```mdx
-<Tabs>
-<Tab title="Tab Text 1">
-Tab content-1-1.
-</Tab>
-
-<Tab title="Tab Text 2">
-Tab content-2-1.
-</Tab>
+<Tabs sync={false}>
+  ...
 </Tabs>
 ```
 
-Read about it, and more advanced options, in [Mintlify's Tabs component docs][2].
+### Translated content
+
+When a tab title is translated, add an explicit `id` attribute to keep anchor links stable. Without it, the ID defaults to the title text. A translated title produces a different ID, which breaks any anchor links pointing to that tab.
+
+```mdx
+<!-- English source -->
+<Tab title="With the feature enabled" id="with-feature">
+
+<!-- Norwegian translation — title is translated, id stays the same -->
+<Tab title="Med funksjonen aktivert" id="with-feature">
+```
+
+For more options, including `defaultTabIndex` and `borderBottom`, see [Mintlify's Tabs component docs][2].
 
 [1]: ../style-guide/formatting
-[2]: https://www.mintlify.com/docs/create/content-components/tabs
+[2]: https://www.mintlify.com/docs/components/tabs
 [3]: https://www.mintlify.com/docs/create/code
 [4]: ./index#included-markdown-files
