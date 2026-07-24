@@ -89,29 +89,10 @@ Write-Host "Keep markdownlint directives: $KeepMarkdownlint" -ForegroundColor Cy
 
 $totalRemoved = 0
 $filesModified = 0
-$includesFoldersProcessed = @()
 
 foreach ($file in $files) {
     Write-Verbose "Processing: $($file.FullName)"
-    
-    # Check if file is in an includes folder and inject .markdownlint.yml if needed
-    $fileDir = Split-Path -Parent $file.FullName
-    if ($fileDir -match '\\includes$' -and -not $includesFoldersProcessed.Contains($fileDir)) {
-        $markdownlintPath = Join-Path $fileDir ".markdownlint.yml"
-        if (-not (Test-Path $markdownlintPath)) {
-            $markdownlintContent = @"
-{
-  "MD013": false,
-  "MD041": false
-}
-"@
-            $utf8NoBom = New-Object System.Text.UTF8Encoding `$false
-            [System.IO.File]::WriteAllText($markdownlintPath, $markdownlintContent, $utf8NoBom)
-            Write-Host "  Created .markdownlint.yml in: $fileDir" -ForegroundColor Yellow
-        }
-        $includesFoldersProcessed += $fileDir
-    }
-    
+
     # Read file preserving encoding
     $content = [System.IO.File]::ReadAllLines($file.FullName)
     $newContent = @()

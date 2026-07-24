@@ -2,11 +2,7 @@
 ai-agents/
 AGENTS.md
 .github/copilot-instructions.md
-
-# Temporary: per-folder markdownlint overrides showing up during the Mintlify
-# conversion pipeline (e.g. contribute/includes/.markdownlint.yml) - ignored
-# until there's a real decision on whether/how these should be committed.
-**/.markdownlint.yml
+.claude/launch.json
 
 # Python bytecode cache (tools/*.py scripts)
 __pycache__/

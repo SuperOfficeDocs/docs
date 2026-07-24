@@ -22,7 +22,7 @@
     - Uses UTF-8 without BOM encoding
     - Searches entire workspace for cross-references
     - Deletes include files after successful inlining
-    - Removes empty includes folders with .markdownlint.yml
+    - Removes empty includes folders
     - Extracts specific line ranges when specified
     - Uses ALT text as code block title
 #>
@@ -321,7 +321,7 @@ foreach ($includeFile in $includeFiles) {
 # Clean up empty includes folders
 $includesFolders = Get-ChildItem -Path $Path -Directory -Recurse | Where-Object { $_.Name -eq 'includes' }
 foreach ($folder in $includesFolders) {
-    $remainingFiles = Get-ChildItem -Path $folder.FullName -File | Where-Object { $_.Name -ne '.markdownlint.yml' }
+    $remainingFiles = Get-ChildItem -Path $folder.FullName -File
     if ($remainingFiles.Count -eq 0) {
         Remove-Item $folder.FullName -Recurse -Force
         Write-Host "`nRemoved empty includes folder: $($folder.FullName)" -ForegroundColor Yellow
