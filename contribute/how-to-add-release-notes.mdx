@@ -1,0 +1,101 @@
+---
+uid: how-to-add-release-notes
+title: Add or update release notes
+description: How to add and update release notes across major versions, mobile, EOL announcements, and generated API and database notes.
+keywords: release notes, update component, anchors, mobile CRM, eol
+author: digitaldiina
+date: 07.24.2026
+content_type: howto
+language: en
+---
+
+# Add or update release notes
+
+Use this guide when you add or update files in *release-notes/*.
+
+## Follow the format by version line
+
+* SuperOffice **12 and newer** use the Mintlify [Update component][2] in the major-version `index.mdx` page, such as *release-notes/12/index.mdx*.
+* SuperOffice **11 and earlier**, and **Pocket CRM**, should receive formatting updates only. Do not make content edits there.
+* **Mobile CRM** currently uses one update per file.
+* **Integrations** uses a mixed, older format.
+
+## Write SuperOffice 12 and newer release notes
+
+For each minor version:
+
+* Add **one `<Update>` block** per minor version, latest at the top.
+* Add **one H3 heading** per feature item inside that update.
+
+When stepping to a new major version:
+
+1. Create a new folder in *release-notes/*, for example `release-notes/13/`.
+1. Add `index.mdx` for the new major version.
+1. Add the new page to *config/nav-releases.json*.
+1. Continue using the same Update-based structure.
+
+<Tip>
+Use the release-notes-major-version [template][3].
+</Tip>
+
+### Badge map for feature headings
+
+|Badge text|Icon|Color|Example|
+|---|---|---|---|
+|Service|ticket|green|`<Badge icon="ticket" color="green">Service</Badge>`|
+|Marketing|bullseye|purple|`<Badge icon="bullseye" color="purple">Marketing</Badge>`|
+|Sales|dollar-sign|blue|`<Badge icon="dollar-sign" color="blue">Sales</Badge>`|
+|Core CRM|user|blue|`<Badge icon="user" color="blue">Core CRM</Badge>`|
+|Settings and maintenance|gear|orange|`<Badge icon="gear" color="orange">Settings and maintenance</Badge>`|
+
+### Use stable anchors
+
+Each minor update needs a persistent anchor:
+
+```mdx
+<Update label="12.1" description="MM.DD.YYYY" tags={["Settings and maintenance"]}>
+<a id="12.1"></a>
+```
+
+Each feature H3 can also define a [Mintlify anchor override][2] so you can deep-link to that specific feature:
+
+```mdx
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Feature title {#12.1-admin-1}
+```
+
+## Update mobile release notes
+
+For Mobile CRM:
+
+1. Add a new update file in *release-notes/mobile/*.
+1. Add `category: Mobile CRM` in frontmatter.
+1. Add screenshots with the `-app-screen` suffix, and place them in */media/loc/en/mobile/*.
+1. Link the new file from *release-notes/mobile/index.mdx* and update the date. Change the version only when stepping major.
+1. Add the new page to *config/nav-releases.json*.
+
+## Update EOL announcements
+
+EOL content is maintained independently of release-note updates.
+
+To update EOL:
+
+1. Edit *release-notes/eol/index.md*.
+1. Add a row to the current or upcoming table.
+1. Optionally link the first-column product or feature to a new dedicated page in `release-notes/eol/` if you need a detailed message.
+
+## Leave generated API and database notes alone
+
+API and database release notes are generated content, including `MAJOR/api/` such as *release-notes/12/api/*.
+
+Do not hand-edit generated release-note files.
+
+## Related content
+
+* [Using Blueprint templates][3]
+* [SuperOffice 12 release notes][6]
+* [Mintlify Update component][4]
+
+[2]: ./markdown-guide/links-in-docs#anchors
+[3]: ./markdown-guide/using-blueprint-templates
+[4]: https://www.mintlify.com/docs/components/update
+[6]: ../release-notes/12/index
