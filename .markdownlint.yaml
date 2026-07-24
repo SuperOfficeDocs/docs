@@ -57,8 +57,7 @@ MD030:
 MD031:
   list_items: false
 MD032: true
-MD033:
-  allowed_elements: ["details","summary","br","table","a","see","seealso","script", "i"]
+MD033: false
 MD034: true
 MD035:
   style: "consistent"
@@ -68,9 +67,7 @@ MD037: true
 MD038: true
 MD039: true
 MD040: true
-MD041:
-  level: 1
-  front_matter_title: ""
+MD041: false
 MD042: true
 MD043:
   headings: ["*"]

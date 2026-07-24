@@ -32,5 +32,6 @@
     ],
     "files.associations": {
         "*.mdx": "markdown"
-    }
+    },
+    "vale.valeCLI.config": ".vale.ini"
 }
