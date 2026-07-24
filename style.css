@@ -646,7 +646,7 @@ body {
 }
 
 /* Highlighted content cards with frames */
-.highlighted-content [class*="CardGroup"] > div > a {
+.highlighted-content [class*="Columns"] > div > a {
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
   background: white;
@@ -656,7 +656,7 @@ body {
   height: 100%;
 }
 
-.highlighted-content [class*="CardGroup"] > div > a:hover {
+.highlighted-content [class*="Columns"] > div > a:hover {
   border-color: var(--so-green);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -678,12 +678,12 @@ body {
   color: #9ca3af;
 }
 
-.dark .highlighted-content [class*="CardGroup"] > div > a {
+.dark .highlighted-content [class*="Columns"] > div > a {
   background: #2a2a2a;
   border-color: #3a3a3a;
 }
 
-.dark .highlighted-content [class*="CardGroup"] > div > a:hover {
+.dark .highlighted-content [class*="Columns"] > div > a:hover {
   border-color: var(--coast-blue);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
@@ -723,7 +723,7 @@ body {
   color: var(--so-green);
 }
 
-.conceptual-content [class*="CardGroup"] {
+.conceptual-content [class*="Columns"] {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
