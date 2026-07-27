@@ -3,7 +3,7 @@ uid: release-notes
 title: What's new in SuperOffice
 description: Release notes. Here you will find all the small and big changes that have been released for SuperOffice in the different versions.
 author: kirstiaa
-date: 07.09.2026
+date: 07.27.2026
 content_type: release-note
 audience: person
 audience_tooltip: SuperOffice CRM
@@ -81,21 +81,13 @@ We use **pilot programs** to assess how well the features and functions meet our
 
 ## How to navigate this content
 
-![What's new -screenshot][img4]
+* Choose a version from the list above. To change the version, return to this page and select a different one.
 
-* Choose a version from the above list. To change the version, return to this page and select a different version.
+* To browse all releases for a specific product or feature, expand the matching section in the left-hand navigation.
 
-* To view all releases for a specific product or feature, expand your area of interest in the left menu.
+* Each release page has an **On this page** panel on the right, linking to that page's own sections.
 
-    ![expand toc -screenshot][img1]
-
-* For an overview of all changes to a specific product or feature in a specific release, select the release and see the **In this article** list on the right side.
-
-    ![in this article -screenshot][img2]
-
-* To find all changes in all products and features related to a specific release, use the **filter** above the table of contents.
-
-    ![filter toc -screenshot][img3]
+* To search across all release notes, use the search bar at the top of the page (or press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>K</kbd>).
 
 [7]: ./mobile/index
 [9]: ./12/index
@@ -104,7 +96,7 @@ We use **pilot programs** to assess how well the features and functions meet our
 [12]: ./integrations/index
 [13]: ../integrations/superoffice-for-outlook/index
 [14]: ../en/mobile/index
-[15]: ../en/learn/index.yml
+[15]: ../en/learn/index
 [16]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [17]: https://community.superoffice.com/en/product-releases/pilot-programs/
 [18]: ../en/developer-portal/widgets/index#publish-status
@@ -113,8 +105,3 @@ We use **pilot programs** to assess how well the features and functions meet our
 [21]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/ai-lab/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [22]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/custom-objects/?utm_medium=docs&utm_source=release%20notes&utm_campaign=pilot
 [23]: https://www.superoffice.com/pricing/?utm_medium=docs&utm_source=release%20notes&utm_campaign=crmsuites
-
-[img1]: /media/loc/en/release-notes/expand-toc.png
-[img2]: /media/loc/en/release-notes/in-this-article.png
-[img3]: /media/loc/en/release-notes/filter-toc.png
-[img4]: /media/loc/en/release-notes/whats-new.png
