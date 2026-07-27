@@ -1,0 +1,4832 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "v1-Agents",
+    "title": "SuperOffice Agent API v1",
+    "description": "SuperOffice Agent API - CRMScriptAgent",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    }
+  },
+  "paths": {
+    "/api/v1/Agents/CRMScript/GetCRMScriptByUniqueIdentifier": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Get C R M Script By Unique Identifier",
+        "description": "Get information about a script from a unique identifier\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_GetCRMScriptByUniqueIdentifier",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest"
+              }
+            }
+          },
+          "description": "UniqueIdentifier",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/SaveCRMScriptByUniqueIdentifier": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Save C R M Script By Unique Identifier",
+        "description": "Create or Update the CRMScript information\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_SaveCRMScriptByUniqueIdentifier",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest"
+              }
+            }
+          },
+          "description": "UniqueIdentifier, Crmscript",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/DeleteCRMScriptByUniqueIdentifier": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Delete C R M Script By Unique Identifier",
+        "description": "Delete the CRMScript\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_DeleteCRMScriptByUniqueIdentifier",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest"
+              }
+            }
+          },
+          "description": "UniqueIdentifier",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/CreateDefaultCRMScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Create Default C R M Script Entity",
+        "description": "Loading default values into a new CRMScriptEntity.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_CreateDefaultCRMScriptEntity",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/SaveCRMScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Save C R M Script Entity",
+        "description": "Updates the existing CRMScriptEntity or creates a new CRMScriptEntity if the id\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_SaveCRMScriptEntity",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+              }
+            }
+          },
+          "description": "The CRMScriptEntity that is saved",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/DeleteCRMScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Delete C R M Script Entity",
+        "description": "Deletes the CRMScriptEntity\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_DeleteCRMScriptEntity",
+        "parameters": [
+          {
+            "name": "cRMScriptEntityId",
+            "in": "query",
+            "description": "The identity of the CRMScriptEntity",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/GetCRMScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Get C R M Script Entity",
+        "description": "Gets a CRMScriptEntity object.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_GetCRMScriptEntity",
+        "parameters": [
+          {
+            "name": "cRMScriptEntityId",
+            "in": "query",
+            "description": "The identifier of the CRMScriptEntity object",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/SaveCRMScriptEntityWithoutCompile": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Save C R M Script Entity Without Compile",
+        "description": "Save the script directly without compiling TypeScript\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_SaveCRMScriptEntityWithoutCompile",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest"
+              }
+            }
+          },
+          "description": "CrmScriptEntity",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ExecuteScript": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Execute Script",
+        "description": "Execute a CRMScript with parameters, returning printed output value.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ExecuteScript",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest"
+              }
+            }
+          },
+          "description": "CRMScriptId, Parameters",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ExecuteScriptByIncludeId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Execute Script By Include Id",
+        "description": "Execute a CRMScript with parameters, returning printed output value.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ExecuteScriptByIncludeId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest"
+              }
+            }
+          },
+          "description": "CRMScriptIncludeId, Parameters",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ExecuteScriptByUniqueId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Execute Script By Unique Id",
+        "description": "Execute a CRMScript with parameters, returning printed output value.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ExecuteScriptByUniqueId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest"
+              }
+            }
+          },
+          "description": "CRMScriptUniqueId, Parameters",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ExecuteScriptAsEvent": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Execute Script As Event",
+        "description": "Execute a CRMScript with event data as input.\n\nReturns event data with output variable values.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ExecuteScriptAsEvent",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest"
+              }
+            }
+          },
+          "description": "CRMScriptId, EventData",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ExecuteScriptAsEventByUniqueId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Execute Script As Event By Unique Id",
+        "description": "Execute a CRMScript with event data as input.\n\nReturns event data with output variable values.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ExecuteScriptAsEventByUniqueId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest"
+              }
+            }
+          },
+          "description": "CRMScriptUniqueId, EventData",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ValidateScript": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Validate Script",
+        "description": "Validate a CRMScript.\n\nThis will check that the syntax is correct\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ValidateScript",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest"
+              }
+            }
+          },
+          "description": "CRMScriptId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ValidateScriptByIncludeId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Validate Script By Include Id",
+        "description": "Validate a CRMScript.\n\nThis will check that the syntax is correct\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ValidateScriptByIncludeId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest"
+              }
+            }
+          },
+          "description": "CRMScriptIncludeId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ValidateScriptByUniqueId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Validate Script By Unique Id",
+        "description": "Validate a CRMScript.\n\nThis will check that the syntax is correct\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ValidateScriptByUniqueId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest"
+              }
+            }
+          },
+          "description": "CRMScriptUniqueId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ExecuteScriptByString": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Execute Script By String",
+        "description": "Execute a CRMScript 2 (JavaScript), returning the printed output value.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ExecuteScriptByString",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest"
+              }
+            }
+          },
+          "description": "Script, Parameters, EventData",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptRunResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptRunResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptRunResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptRunResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptRunResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptRunResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ValidateScriptByString": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Validate Script By String",
+        "description": "Validate a CRMScript 2 (JavaScript).\n\nThis will check that the syntax is correct\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ValidateScriptByString",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest"
+              }
+            }
+          },
+          "description": "Script",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ResolveIncludes": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Resolve Includes",
+        "description": "Will resolve all includes for a TypeScript and return an array of the IDs\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ResolveIncludes",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest"
+              }
+            }
+          },
+          "description": "Script, IgnoreErrors",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "format": "int32",
+                    "type": "integer"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "format": "int32",
+                    "type": "integer"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "format": "int32",
+                    "type": "integer"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "format": "int32",
+                    "type": "integer"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "format": "int32",
+                    "type": "integer"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "format": "int32",
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/CreateDefaultTriggerScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Create Default Trigger Script Entity",
+        "description": "Loading default values into a new TriggerScriptEntity.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_CreateDefaultTriggerScriptEntity",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/SaveTriggerScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Save Trigger Script Entity",
+        "description": "Updates the existing TriggerScriptEntity or creates a new TriggerScriptEntity\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_SaveTriggerScriptEntity",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+              }
+            }
+          },
+          "description": "The TriggerScriptEntity that is saved",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/DeleteTriggerScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Delete Trigger Script Entity",
+        "description": "Deletes the TriggerScriptEntity\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_DeleteTriggerScriptEntity",
+        "parameters": [
+          {
+            "name": "triggerScriptEntityId",
+            "in": "query",
+            "description": "The identity of the TriggerScriptEntity",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/GetTriggerScriptEntity": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Get Trigger Script Entity",
+        "description": "Gets a TriggerScriptEntity object.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_GetTriggerScriptEntity",
+        "parameters": [
+          {
+            "name": "triggerScriptEntityId",
+            "in": "query",
+            "description": "The identifier of the TriggerScriptEntity object",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/GetTriggerScriptByUniqueId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Get Trigger Script By Unique Id",
+        "description": "Get a trigger CRMScript.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_GetTriggerScriptByUniqueId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest"
+              }
+            }
+          },
+          "description": "TriggerScriptUniqueId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/SaveTriggerScriptByUniqueId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Save Trigger Script By Unique Id",
+        "description": "Validate a CRMScript.\n\nThis will check that the syntax is correct\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_SaveTriggerScriptByUniqueId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest"
+              }
+            }
+          },
+          "description": "TriggerScriptUniqueId, Entity",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/DeleteTriggerScriptByUniqueId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Delete Trigger Script By Unique Id",
+        "description": "Delete a trigger CRMScript.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_DeleteTriggerScriptByUniqueId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest"
+              }
+            }
+          },
+          "description": "TriggerScriptUniqueId",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ValidateTriggerScript": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Validate Trigger Script",
+        "description": "Validate a Trigger CRMScript.\n\nThis will check that the syntax is correct, but not execute the script.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ValidateTriggerScript",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest"
+              }
+            }
+          },
+          "description": "TriggerScriptId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/CRMScript/ValidateTriggerScriptByUniqueId": {
+      "post": {
+        "tags": [
+          "CRMScript_Agent"
+        ],
+        "summary": "Validate Trigger Script By Unique Id",
+        "description": "Validate a Trigger CRMScript.\n\nThis will check that the syntax is correct, but not execute the script.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The CRMScript agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "operationId": "v1CRMScriptAgent_ValidateTriggerScriptByUniqueId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest"
+              }
+            }
+          },
+          "description": "TriggerScriptUniqueId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:54464"
+    },
+    {
+      "url": "https://localhost:54464"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    },
+    "schemas": {
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetCRMScriptByUniqueIdentifierRequest": {
+        "description": "GetCRMScriptByUniqueIdentifier: Get information about a script from a unique identifier",
+        "type": "object",
+        "properties": {
+          "UniqueIdentifier": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.Script": {
+        "description": "The Script Service. The service implements all services working with the CRMScript object without reference to primary keys. Primarily used by VSCode integration.\r\n<para />\r\nCarrier object for Script.\r\nServices for the Script Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "UniqueIdentifier": {
+            "description": "Global unique identifier, accross customers/tenants",
+            "type": "string"
+          },
+          "Name": {
+            "description": "A description of this script",
+            "type": "string"
+          },
+          "Description": {
+            "description": "Optional description of what this script is used for.",
+            "type": "string"
+          },
+          "IncludeId": {
+            "description": "A unique name used for including this script in another",
+            "type": "string"
+          },
+          "Source": {
+            "description": "The script",
+            "type": "string"
+          },
+          "Registered": {
+            "format": "date-time",
+            "description": "Registered when  in UTC.",
+            "type": "string"
+          },
+          "RegisteredBy": {
+            "description": "Who created this script",
+            "type": "string"
+          },
+          "Updated": {
+            "format": "date-time",
+            "description": "Last updated when  in UTC.",
+            "type": "string"
+          },
+          "UpdatedBy": {
+            "description": "Who updated this script",
+            "type": "string"
+          },
+          "Path": {
+            "description": "Path to script in the hierarchy.",
+            "type": "string"
+          },
+          "BlockedVerbs": {
+            "description": "The verbs that are blocked when calling a ejscript over HTTP",
+            "enum": [
+              "BlockNone",
+              "BlockGET",
+              "BlockPOST",
+              "BlockPUT",
+              "BlockDELETE",
+              "BlockPATCH",
+              "BlockOPTIONS",
+              "BlockHEAD",
+              "BlockTRACE",
+              "BlockCONNECT",
+              "BlockOTHER",
+              "BlockAll"
+            ],
+            "type": "string"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "description": "Class holding properties like field length, field type about a field in the carrier.",
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "format": "int32",
+            "description": "",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptByUniqueIdentifierRequest": {
+        "description": "SaveCRMScriptByUniqueIdentifier: Create or Update the CRMScript information",
+        "type": "object",
+        "properties": {
+          "UniqueIdentifier": {
+            "type": "string"
+          },
+          "Crmscript": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.Script"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteCRMScriptByUniqueIdentifierRequest": {
+        "description": "DeleteCRMScriptByUniqueIdentifier: Delete the CRMScript",
+        "type": "object",
+        "properties": {
+          "UniqueIdentifier": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CRMScriptEntity": {
+        "description": "CRM Scripts - stored in the ejScript table, including source code.\r\n<para />\r\nCarrier object for CRMScriptEntity.\r\nServices for the CRMScriptEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "EjscriptId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "UniqueIdentifier": {
+            "description": "Global unique identifier, accross customers/tenants",
+            "type": "string"
+          },
+          "Name": {
+            "description": "A description of this script",
+            "type": "string"
+          },
+          "Description": {
+            "description": "Optional description of what this script is used for.",
+            "type": "string"
+          },
+          "IncludeId": {
+            "description": "A unique name used for including this script in another",
+            "type": "string"
+          },
+          "AccessKey": {
+            "description": "Access key used to run this script on the customer pages",
+            "type": "string"
+          },
+          "HierarchyId": {
+            "format": "int32",
+            "description": "The script is inside this hierarchy folder",
+            "type": "integer"
+          },
+          "Source": {
+            "description": "The script",
+            "type": "string"
+          },
+          "SourceCode": {
+            "description": "Contains the source code of the script",
+            "type": "string"
+          },
+          "ScriptType": {
+            "description": "The type/language of this script",
+            "enum": [
+              "Unknown",
+              "CRMScript",
+              "JavaScript"
+            ],
+            "type": "string"
+          },
+          "HtmlOutput": {
+            "format": "int32",
+            "description": "True if this script will return HTML output",
+            "type": "integer"
+          },
+          "Includes": {
+            "description": "The unique ids of all depencies of this script (all resolved includes)",
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          },
+          "SourceMaps": {
+            "description": "The source maps for this script",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptSourceMap"
+            }
+          },
+          "ValidationResult": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptResult"
+          },
+          "Registered": {
+            "format": "date-time",
+            "description": "Registered when  in UTC.",
+            "type": "string"
+          },
+          "RegisteredAssociateId": {
+            "format": "int32",
+            "description": "Registered by whom",
+            "type": "integer"
+          },
+          "Updated": {
+            "format": "date-time",
+            "description": "Last updated when  in UTC.",
+            "type": "string"
+          },
+          "UpdatedAssociateId": {
+            "format": "int32",
+            "description": "Last updated by whom",
+            "type": "integer"
+          },
+          "BlockedVerbs": {
+            "description": "The verbs that are blocked when calling a ejscript over HTTP",
+            "enum": [
+              "BlockNone",
+              "BlockGET",
+              "BlockPOST",
+              "BlockPUT",
+              "BlockDELETE",
+              "BlockPATCH",
+              "BlockOPTIONS",
+              "BlockHEAD",
+              "BlockTRACE",
+              "BlockCONNECT",
+              "BlockOTHER",
+              "BlockAll"
+            ],
+            "type": "string"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CRMScriptSourceMap": {
+        "description": "Object for returning source-map info when validating or executing a CRMScript\r\n<para />\r\nCarrier object for CRMScriptSourceMap.\r\nServices for the CRMScriptSourceMap Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "LineNumberFrom": {
+            "format": "int32",
+            "description": "The 1-based start line (inclusive) of this entry",
+            "type": "integer"
+          },
+          "LineNumberTo": {
+            "format": "int32",
+            "description": "The 1-based end line (inclusive) of this entry",
+            "type": "integer"
+          },
+          "Delta": {
+            "format": "int32",
+            "description": "The delta between global line number and a line number inside this range",
+            "type": "integer"
+          },
+          "IncludeId": {
+            "description": "The includeId for this entry",
+            "type": "string"
+          },
+          "IncludedFrom": {
+            "description": "The list of IncludeId:linenum that leads to this source",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CRMScriptResult": {
+        "description": "Object for returning information when validating a CRMScript\r\n<para />\r\nCarrier object for CRMScriptResult.\r\nServices for the CRMScriptResult Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Valid": {
+            "description": "True if the CRMScript was successfully validated. If false, see the error message for details",
+            "type": "boolean"
+          },
+          "ErrorMessage": {
+            "description": "Deprecated, see ErrorInformation instead. Contains the error message for a non-valide CRMScript",
+            "type": "string"
+          },
+          "LineNumber": {
+            "format": "int32",
+            "description": "Deprecated, see ErrorInformation instead. The line number containing the incorrect syntax, if available",
+            "type": "integer"
+          },
+          "ErrorInformation": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptErrorInfo"
+          },
+          "Transpiled": {
+            "description": "This will contain transpiled code. In case of Typescript, this will then contain the executable JavaScript",
+            "type": "string"
+          },
+          "Includes": {
+            "description": "The unique ids of all depencies of this script (all resolved includes)",
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          },
+          "SourceMaps": {
+            "description": "Array of source maps showing where in the original code a specific line originated from",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptSourceMap"
+            }
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CRMScriptErrorInfo": {
+        "description": "Object containing error information for a CRMScript\r\n<para />\r\nCarrier object for CRMScriptErrorInfo.\r\nServices for the CRMScriptErrorInfo Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "ErrorMessage": {
+            "description": "Descriptive message of the script failed",
+            "type": "string"
+          },
+          "IncludeId": {
+            "description": "The includeId of the source where the error occured",
+            "type": "string"
+          },
+          "LineNumber": {
+            "format": "int32",
+            "description": "The line number where the error occured",
+            "type": "integer"
+          },
+          "CharacterPosition": {
+            "format": "int32",
+            "description": "The character position on the ErrorLine, if available",
+            "type": "integer"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveCRMScriptEntityWithoutCompileRequest": {
+        "description": "SaveCRMScriptEntityWithoutCompile: Save the script directly without compiling TypeScript",
+        "type": "object",
+        "properties": {
+          "CrmScriptEntity": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptEntity"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptRequest": {
+        "description": "ExecuteScript: Execute a CRMScript with parameters, returning printed output value.",
+        "type": "object",
+        "properties": {
+          "CRMScriptId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Parameters": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByIncludeIdRequest": {
+        "description": "ExecuteScriptByIncludeId: Execute a CRMScript with parameters, returning printed output value.",
+        "type": "object",
+        "properties": {
+          "CRMScriptIncludeId": {
+            "type": "string"
+          },
+          "Parameters": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByUniqueIdRequest": {
+        "description": "ExecuteScriptByUniqueId: Execute a CRMScript with parameters, returning printed output value.",
+        "type": "object",
+        "properties": {
+          "CRMScriptUniqueId": {
+            "type": "string"
+          },
+          "Parameters": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventRequest": {
+        "description": "ExecuteScriptAsEvent: Execute a CRMScript with event data as input. Returns event data with output variable values.",
+        "type": "object",
+        "properties": {
+          "CRMScriptId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "EventData": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.EventData": {
+        "description": "EventData containing data related to event handlers\r\n<para />\r\nCarrier object for EventData.\r\nServices for the EventData Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICustomerServiceAgent\">CustomerService Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Type": {
+            "description": "The type of event we are triggered by",
+            "enum": [
+              "Unknown",
+              "NewTicket",
+              "NewTicketFromCustomerCenter",
+              "NewTicketFromEmail",
+              "NewTicketFromCustomerCenterBeforeSave",
+              "NewTicketFromSpmLink",
+              "NewNotifyTicketFromForm",
+              "NewTicketFromForm",
+              "TicketSave",
+              "TicketClosed",
+              "TicketPostponed",
+              "TicketDeleted",
+              "TicketActivated",
+              "TicketReopened",
+              "TicketReopenedFromCustomerCenter",
+              "TicketReopenedFromEmail",
+              "TicketChangedPriority",
+              "TicketChangedCategory",
+              "TicketChangedOwnedBy",
+              "TicketChangedPrimaryCustomer",
+              "TicketChangedTicketStatus",
+              "TicketChangedSlevel",
+              "TicketMessageAdded",
+              "TicketInternalMessageAdded",
+              "TicketExternalMessageAdded",
+              "TicketMessageSentimentCalculated",
+              "CompactModeInjection",
+              "CustomerCenterAuthentication",
+              "ScheduledTaskFailed",
+              "DbiTaskFailed",
+              "CustomerSetSubscriptions",
+              "ImportMailBeforeProcessing",
+              "ImportMailAfterProcessing",
+              "MainMenu",
+              "ChatNewSession",
+              "ChatSessionChangedStatus",
+              "ChatBeforeSaveNewMessage",
+              "ChatAfterSaveNewMessage",
+              "ServiceScreenNewTicketLoad",
+              "ServiceScreenNewQuickTicketLoad",
+              "ServiceScreenListTicketMessagesLoad",
+              "ServiceScreenAddMessageLoad",
+              "ServiceScreenEditTicketLoad",
+              "ServiceScreenViewCustomerLoad",
+              "ServiceScreenEditCustomerLoad",
+              "ServiceScreenViewCompanyLoad",
+              "ServiceScreenEditCompanyLoad",
+              "ServiceScreenForwardLoad",
+              "ServiceScreenEditExtraTableLoad",
+              "ServiceScreenNewTicketBeforeSubmit",
+              "ServiceScreenNewQuickTicketBeforeSubmit",
+              "ServiceScreenListTicketMessagesBeforeSubmit",
+              "ServiceScreenAddMessageBeforeSubmit",
+              "ServiceScreenEditTicketBeforeSubmit",
+              "ServiceScreenViewCustomerBeforeSubmit",
+              "ServiceScreenEditCustomerBeforeSubmit",
+              "ServiceScreenViewCompanyBeforeSubmit",
+              "ServiceScreenEditCompanyBeforeSubmit",
+              "ServiceScreenForwardBeforeSubmit",
+              "ServiceScreenEditExtraTableBeforeSubmit",
+              "ServiceScreenNewTicketAfterSubmit",
+              "ServiceScreenNewQuickTicketAfterSubmit",
+              "ServiceScreenListTicketMessagesAfterSubmit",
+              "ServiceScreenAddMessageAfterSubmit",
+              "ServiceScreenEditTicketAfterSubmit",
+              "ServiceScreenViewCustomerAfterSubmit",
+              "ServiceScreenEditCustomerAfterSubmit",
+              "ServiceScreenViewCompanyAfterSubmit",
+              "ServiceScreenEditCompanyAfterSubmit",
+              "ServiceScreenForwardAfterSubmit",
+              "ServiceScreenEditExtraTableAfterSubmit",
+              "SalesBeforeSaveAppointment",
+              "SalesBeforeSaveStakeholder",
+              "SalesBeforeSaveQuote",
+              "SalesBeforeSaveDocument",
+              "SalesBeforeSaveContact",
+              "SalesBeforeSavePerson",
+              "SalesBeforeSaveRelation",
+              "SalesBeforeSaveSale",
+              "SalesBeforeSaveProject",
+              "SalesBeforeSaveSelection",
+              "SalesBeforeSaveProjectMember",
+              "SalesBeforeSaveSelectionMember",
+              "SalesBeforeSaveQuoteLine",
+              "SalesBeforeSaveApproveQuote",
+              "SalesBeforeSaveRejectQuote",
+              "SalesBeforeSaveTicket",
+              "SalesLoadCustomObject",
+              "SalesBeforeSaveCustomObject",
+              "SalesAfterSaveAppointment",
+              "SalesAfterSaveStakeholder",
+              "SalesAfterSaveQuote",
+              "SalesAfterSaveDocument",
+              "SalesAfterSaveContact",
+              "SalesAfterSavePerson",
+              "SalesAfterSaveRelation",
+              "SalesAfterSaveSale",
+              "SalesAfterSaveProject",
+              "SalesAfterSaveSelection",
+              "SalesAfterSaveProjectMember",
+              "SalesAfterSaveSelectionMember",
+              "SalesAfterSaveQuoteLine",
+              "SalesAfterSaveApproveQuote",
+              "SalesAfterSaveRejectQuote",
+              "SalesAfterSaveTicket",
+              "SalesAfterSaveCustomObject",
+              "SalesSplitTicket",
+              "SalesLoadTicket",
+              "SalesLoadTicketMessage"
+            ],
+            "type": "string"
+          },
+          "InputValues": {
+            "description": "Environment values sent to the event handler",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "BlockExecution": {
+            "description": "Whether the context should stop what it is doing, e.g. saving a sale",
+            "type": "boolean"
+          },
+          "NavigateTo": {
+            "description": "Where the context should naviate afterwards",
+            "type": "string"
+          },
+          "Message": {
+            "description": "A message to be presented to the user",
+            "type": "string"
+          },
+          "ShowDialog": {
+            "description": "JSON structure of dialog to show",
+            "type": "string"
+          },
+          "OutputValues": {
+            "description": "Values sent back to the environment from the event handler",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "StateValues": {
+            "description": "Values kept between event handlers",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "Exception": {
+            "description": "String containing error message from handler system if it failed",
+            "type": "string"
+          },
+          "ParserValues": {
+            "description": "Parser values sent to the event handler",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "CgiVariables": {
+            "description": "Cgi variables sent by some events",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "CgiContent": {
+            "description": "The Cgi content/body, sent by some events",
+            "type": "string"
+          },
+          "Headers": {
+            "description": "Incoming headers if sent by the context which the script is executed from",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "TraceExecution": {
+            "description": "If true, then the execution will be traced",
+            "type": "boolean"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptAsEventByUniqueIdRequest": {
+        "description": "ExecuteScriptAsEventByUniqueId: Execute a CRMScript with event data as input. Returns event data with output variable values.",
+        "type": "object",
+        "properties": {
+          "CRMScriptUniqueId": {
+            "type": "string"
+          },
+          "EventData": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptRequest": {
+        "description": "ValidateScript: Validate a CRMScript. This will check that the syntax is correct",
+        "type": "object",
+        "properties": {
+          "CRMScriptId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByIncludeIdRequest": {
+        "description": "ValidateScriptByIncludeId: Validate a CRMScript. This will check that the syntax is correct",
+        "type": "object",
+        "properties": {
+          "CRMScriptIncludeId": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByUniqueIdRequest": {
+        "description": "ValidateScriptByUniqueId: Validate a CRMScript. This will check that the syntax is correct",
+        "type": "object",
+        "properties": {
+          "CRMScriptUniqueId": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ExecuteScriptByStringRequest": {
+        "description": "ExecuteScriptByString: Execute a CRMScript 2 (JavaScript), returning the printed output value.",
+        "type": "object",
+        "properties": {
+          "Script": {
+            "type": "string"
+          },
+          "Parameters": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "EventData": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CRMScriptRunResult": {
+        "description": "Object for returning result from a CRMScript\r\n<para />\r\nCarrier object for CRMScriptRunResult.\r\nServices for the CRMScriptRunResult Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Output": {
+            "description": "The output from the script, normally from a print or printLine statement",
+            "type": "string"
+          },
+          "Parameters": {
+            "description": "The parameters/variables that might have been modified by the script",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "TraceRun": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptTraceRun"
+          },
+          "Eventdata": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.EventData"
+          },
+          "Success": {
+            "description": "Indicates if the script was executed successfully, or if it failed. In case of failing, the error members will contain more information",
+            "type": "boolean"
+          },
+          "ErrorInformation": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.CRMScriptErrorInfo"
+          },
+          "StatusCode": {
+            "format": "int32",
+            "description": "The status code which is available to be returned from Typescript scripts",
+            "type": "integer"
+          },
+          "StatusMessage": {
+            "description": "An additional status message that can be sent along with the status code",
+            "type": "string"
+          },
+          "Headers": {
+            "description": "Optional result headers for context that supports it",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.CRMScriptTraceRun": {
+        "description": "Object for returning Trace run result from a CRMScript\r\n<para />\r\nCarrier object for CRMScriptTraceRun.\r\nServices for the CRMScriptTraceRun Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "StartedAt": {
+            "format": "date-time",
+            "description": "When the trace was started",
+            "type": "string"
+          },
+          "EndedAt": {
+            "format": "date-time",
+            "description": "When the trace was ended",
+            "type": "string"
+          },
+          "ExecutionTime": {
+            "format": "int32",
+            "description": "Real seconds spent executing",
+            "type": "integer"
+          },
+          "UserExecutionTime": {
+            "format": "int32",
+            "description": "CPU seconds spent executing",
+            "type": "integer"
+          },
+          "PeakMemory": {
+            "format": "int32",
+            "description": "The maximum amount of used memory during execution (in kB)",
+            "type": "integer"
+          },
+          "NumFrames": {
+            "format": "int32",
+            "description": "The number of frames saved",
+            "type": "integer"
+          },
+          "FileSize": {
+            "format": "int32",
+            "description": "The size of the trace file",
+            "type": "integer"
+          },
+          "AssociateId": {
+            "format": "int32",
+            "description": "Associate who the script was executed as",
+            "type": "integer"
+          },
+          "Status": {
+            "description": "The status of the script, or exception if it fails",
+            "type": "string"
+          },
+          "Frames": {
+            "description": "The frames of the the trace",
+            "type": "string"
+          },
+          "ForceSaveTrace": {
+            "description": "This trace should be saved even if script_trace.exception_only is true.",
+            "type": "boolean"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateScriptByStringRequest": {
+        "description": "ValidateScriptByString: Validate a CRMScript 2 (JavaScript). This will check that the syntax is correct",
+        "type": "object",
+        "properties": {
+          "Script": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ResolveIncludesRequest": {
+        "description": "ResolveIncludes: Will resolve all includes for a TypeScript and return an array of the IDs",
+        "type": "object",
+        "properties": {
+          "Script": {
+            "type": "string"
+          },
+          "IgnoreErrors": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.TriggerScriptEntity": {
+        "description": "CRM Trigger Script - The script runs when a given event fires.\r\n<para />\r\nCarrier object for TriggerScriptEntity.\r\nServices for the TriggerScriptEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ICRMScriptAgent\">CRMScript Agent</see>.",
+        "type": "object",
+        "properties": {
+          "ScreenChooserId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "Name": {
+            "description": "Optional description of what this script is used for.",
+            "type": "string"
+          },
+          "ScreenType": {
+            "description": "Event id that triggers script.  See EventHandlerType enum.",
+            "enum": [
+              "Unknown",
+              "NewTicket",
+              "NewTicketFromCustomerCenter",
+              "NewTicketFromEmail",
+              "NewTicketFromCustomerCenterBeforeSave",
+              "NewTicketFromSpmLink",
+              "NewNotifyTicketFromForm",
+              "NewTicketFromForm",
+              "TicketSave",
+              "TicketClosed",
+              "TicketPostponed",
+              "TicketDeleted",
+              "TicketActivated",
+              "TicketReopened",
+              "TicketReopenedFromCustomerCenter",
+              "TicketReopenedFromEmail",
+              "TicketChangedPriority",
+              "TicketChangedCategory",
+              "TicketChangedOwnedBy",
+              "TicketChangedPrimaryCustomer",
+              "TicketChangedTicketStatus",
+              "TicketChangedSlevel",
+              "TicketMessageAdded",
+              "TicketInternalMessageAdded",
+              "TicketExternalMessageAdded",
+              "TicketMessageSentimentCalculated",
+              "CompactModeInjection",
+              "CustomerCenterAuthentication",
+              "ScheduledTaskFailed",
+              "DbiTaskFailed",
+              "CustomerSetSubscriptions",
+              "ImportMailBeforeProcessing",
+              "ImportMailAfterProcessing",
+              "MainMenu",
+              "ChatNewSession",
+              "ChatSessionChangedStatus",
+              "ChatBeforeSaveNewMessage",
+              "ChatAfterSaveNewMessage",
+              "ServiceScreenNewTicketLoad",
+              "ServiceScreenNewQuickTicketLoad",
+              "ServiceScreenListTicketMessagesLoad",
+              "ServiceScreenAddMessageLoad",
+              "ServiceScreenEditTicketLoad",
+              "ServiceScreenViewCustomerLoad",
+              "ServiceScreenEditCustomerLoad",
+              "ServiceScreenViewCompanyLoad",
+              "ServiceScreenEditCompanyLoad",
+              "ServiceScreenForwardLoad",
+              "ServiceScreenEditExtraTableLoad",
+              "ServiceScreenNewTicketBeforeSubmit",
+              "ServiceScreenNewQuickTicketBeforeSubmit",
+              "ServiceScreenListTicketMessagesBeforeSubmit",
+              "ServiceScreenAddMessageBeforeSubmit",
+              "ServiceScreenEditTicketBeforeSubmit",
+              "ServiceScreenViewCustomerBeforeSubmit",
+              "ServiceScreenEditCustomerBeforeSubmit",
+              "ServiceScreenViewCompanyBeforeSubmit",
+              "ServiceScreenEditCompanyBeforeSubmit",
+              "ServiceScreenForwardBeforeSubmit",
+              "ServiceScreenEditExtraTableBeforeSubmit",
+              "ServiceScreenNewTicketAfterSubmit",
+              "ServiceScreenNewQuickTicketAfterSubmit",
+              "ServiceScreenListTicketMessagesAfterSubmit",
+              "ServiceScreenAddMessageAfterSubmit",
+              "ServiceScreenEditTicketAfterSubmit",
+              "ServiceScreenViewCustomerAfterSubmit",
+              "ServiceScreenEditCustomerAfterSubmit",
+              "ServiceScreenViewCompanyAfterSubmit",
+              "ServiceScreenEditCompanyAfterSubmit",
+              "ServiceScreenForwardAfterSubmit",
+              "ServiceScreenEditExtraTableAfterSubmit",
+              "SalesBeforeSaveAppointment",
+              "SalesBeforeSaveStakeholder",
+              "SalesBeforeSaveQuote",
+              "SalesBeforeSaveDocument",
+              "SalesBeforeSaveContact",
+              "SalesBeforeSavePerson",
+              "SalesBeforeSaveRelation",
+              "SalesBeforeSaveSale",
+              "SalesBeforeSaveProject",
+              "SalesBeforeSaveSelection",
+              "SalesBeforeSaveProjectMember",
+              "SalesBeforeSaveSelectionMember",
+              "SalesBeforeSaveQuoteLine",
+              "SalesBeforeSaveApproveQuote",
+              "SalesBeforeSaveRejectQuote",
+              "SalesBeforeSaveTicket",
+              "SalesLoadCustomObject",
+              "SalesBeforeSaveCustomObject",
+              "SalesAfterSaveAppointment",
+              "SalesAfterSaveStakeholder",
+              "SalesAfterSaveQuote",
+              "SalesAfterSaveDocument",
+              "SalesAfterSaveContact",
+              "SalesAfterSavePerson",
+              "SalesAfterSaveRelation",
+              "SalesAfterSaveSale",
+              "SalesAfterSaveProject",
+              "SalesAfterSaveSelection",
+              "SalesAfterSaveProjectMember",
+              "SalesAfterSaveSelectionMember",
+              "SalesAfterSaveQuoteLine",
+              "SalesAfterSaveApproveQuote",
+              "SalesAfterSaveRejectQuote",
+              "SalesAfterSaveTicket",
+              "SalesAfterSaveCustomObject",
+              "SalesSplitTicket",
+              "SalesLoadTicket",
+              "SalesLoadTicketMessage"
+            ],
+            "type": "string"
+          },
+          "Enabled": {
+            "description": "Whether this screen chooser is enabled or not",
+            "type": "boolean"
+          },
+          "UniqueIdentifier": {
+            "description": "Global unique identifier, accross customers/tenants",
+            "type": "string"
+          },
+          "Source": {
+            "description": "The CRMscript code for this event handler",
+            "type": "string"
+          },
+          "Registered": {
+            "format": "date-time",
+            "description": "Registered when  in UTC.",
+            "type": "string"
+          },
+          "RegisteredAssociateId": {
+            "format": "int32",
+            "description": "Registered by whom",
+            "type": "integer"
+          },
+          "Updated": {
+            "format": "date-time",
+            "description": "Last updated when  in UTC.",
+            "type": "string"
+          },
+          "UpdatedAssociateId": {
+            "format": "int32",
+            "description": "Last updated by whom",
+            "type": "integer"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.GetTriggerScriptByUniqueIdRequest": {
+        "description": "GetTriggerScriptByUniqueId: Get a trigger CRMScript.",
+        "type": "object",
+        "properties": {
+          "TriggerScriptUniqueId": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.SaveTriggerScriptByUniqueIdRequest": {
+        "description": "SaveTriggerScriptByUniqueId: Validate a CRMScript. This will check that the syntax is correct",
+        "type": "object",
+        "properties": {
+          "TriggerScriptUniqueId": {
+            "type": "string"
+          },
+          "Entity": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Services.TriggerScriptEntity"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.DeleteTriggerScriptByUniqueIdRequest": {
+        "description": "DeleteTriggerScriptByUniqueId: Delete a trigger CRMScript.",
+        "type": "object",
+        "properties": {
+          "TriggerScriptUniqueId": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptRequest": {
+        "description": "ValidateTriggerScript: Validate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.",
+        "type": "object",
+        "properties": {
+          "TriggerScriptId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.CRMScriptCarriers.ValidateTriggerScriptByUniqueIdRequest": {
+        "description": "ValidateTriggerScriptByUniqueId: Validate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.",
+        "type": "object",
+        "properties": {
+          "TriggerScriptUniqueId": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

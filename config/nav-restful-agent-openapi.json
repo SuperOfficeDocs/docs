@@ -1,0 +1,401 @@
+[
+  {
+    "group": "AIAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-AIAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "AppointmentAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-AppointmentAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ArchiveAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ArchiveAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "AssociateAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-AssociateAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "BatchAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-BatchAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "BLOBAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-BLOBAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "BulkUpdateAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-BulkUpdateAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ChatAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ChatAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ConfigurationAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ConfigurationAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ContactAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ContactAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "CRMScriptAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-CRMScriptAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "CustomerServiceAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-CustomerServiceAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "CustomObjectAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-CustomObjectAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "DashAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-DashAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "DatabaseAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-DatabaseAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "DatabaseTableAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-DatabaseTableAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "DiagnosticsAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-DiagnosticsAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "DocumentAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-DocumentAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "DocumentMigrationAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-DocumentMigrationAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "EMailAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-EMailAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ErpSyncAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ErpSyncAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "FavouriteAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-FavouriteAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "FindAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-FindAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ForeignSystemAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ForeignSystemAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "FreeTextAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-FreeTextAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ImportAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ImportAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "LicenseAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-LicenseAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ListAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ListAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "MarketingAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-MarketingAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "MDOAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-MDOAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "MessagingAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-MessagingAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "NavigatorAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-NavigatorAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "NewsFeedAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-NewsFeedAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "NumberAllocationAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-NumberAllocationAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "PersonAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-PersonAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "PhoneListAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-PhoneListAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "PocketAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-PocketAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "PreferenceAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-PreferenceAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "PreviewsAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-PreviewsAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ProjectAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ProjectAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "QuoteAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-QuoteAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "RelationAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-RelationAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ReportAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ReportAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ResourceAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ResourceAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "SaintAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-SaintAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "SaleAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-SaleAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "SelectionAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-SelectionAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "SentryAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-SentryAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "TargetsAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-TargetsAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "TicketAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-TicketAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "TimeZoneAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-TimeZoneAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "TooltipsAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-TooltipsAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "UserAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-UserAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "UserDefinedFieldInfoAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-UserDefinedFieldInfoAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "ViewStateAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-ViewStateAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "WebhookAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-WebhookAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  },
+  {
+    "group": "WorkflowAgent",
+    "openapi": {
+      "source": "openapi/agent/openapi-v3-WorkflowAgent.json",
+      "directory": "en/api/reference/restful/agent"
+    }
+  }
+]

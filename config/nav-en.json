@@ -2005,6 +2005,36 @@
                 ]
               },
               {
+                "group": "Reference",
+                "pages": [
+                  "en/api/reference/restful/index",
+                  {
+                    "group": "HTTP RPC Agent API",
+                    "pages": [
+                      "en/api/reference/restful/agent/index",
+                      {
+                        "group": "Operations",
+                        "pages": {
+                          "$ref": "./nav-restful-agent-openapi.json"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "group": "RESTful REST API",
+                    "pages": [
+                      "en/api/reference/restful/rest/index",
+                      {
+                        "group": "Operations",
+                        "pages": {
+                          "$ref": "./nav-restful-rest-openapi.json"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
                 "group": "Proxies",
                 "pages": [
                   {

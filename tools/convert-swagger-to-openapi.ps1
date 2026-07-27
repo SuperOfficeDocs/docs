@@ -42,6 +42,13 @@ try {
     exit 1
 }
 
+try {
+    $null = Get-Command node -ErrorAction Stop
+} catch {
+    Write-Error "node is required to normalize case-duplicate path keys in generated OpenAPI files."
+    exit 1
+}
+
 # Resolve paths
 $SourcePath = Resolve-Path $SourcePath -ErrorAction Stop
 $DestinationPath = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($DestinationPath)
@@ -67,51 +74,226 @@ $successCount = 0
 $failCount = 0
 $errors = @()
 
+function Normalize-OpenAPIPathKeys {
+    param([string]$FilePath)
+
+    $nodeScript = @'
+const fs = require("fs");
+
+const filePath = process.argv[2];
+const text = fs.readFileSync(filePath, "utf8");
+const doc = JSON.parse(text);
+
+if (!doc.paths || typeof doc.paths !== "object" || Array.isArray(doc.paths)) {
+  process.exit(0);
+}
+
+const seenCanonical = new Map();
+const normalizedPaths = {};
+let dedupeCount = 0;
+
+for (const [pathKey, pathItem] of Object.entries(doc.paths)) {
+  const canonicalPath = pathKey.toLowerCase();
+
+  if (!seenCanonical.has(canonicalPath)) {
+    seenCanonical.set(canonicalPath, pathKey);
+    normalizedPaths[pathKey] = pathItem;
+    continue;
+  }
+
+  dedupeCount += 1;
+  const keptPath = seenCanonical.get(canonicalPath);
+  const keptPathItem = normalizedPaths[keptPath];
+  const incomingPathItem = (pathItem && typeof pathItem === "object" && !Array.isArray(pathItem)) ? pathItem : {};
+
+  if (keptPathItem && typeof keptPathItem === "object" && !Array.isArray(keptPathItem)) {
+    for (const [methodName, methodValue] of Object.entries(incomingPathItem)) {
+      if (!Object.prototype.hasOwnProperty.call(keptPathItem, methodName)) {
+        keptPathItem[methodName] = methodValue;
+      }
+    }
+  }
+
+  console.log(`CASE_DUPLICATE:${keptPath}<=${pathKey}`);
+}
+
+if (dedupeCount > 0) {
+  doc.paths = normalizedPaths;
+  fs.writeFileSync(filePath, JSON.stringify(doc, null, 2));
+}
+'@
+
+    $tempNodeScriptPath = [System.IO.Path]::Combine(
+        [System.IO.Path]::GetTempPath(),
+        ("normalize-openapi-paths-{0}.js" -f ([System.Guid]::NewGuid().ToString("N")))
+    )
+    [System.IO.File]::WriteAllText($tempNodeScriptPath, $nodeScript)
+
+    try {
+        $output = & node $tempNodeScriptPath $FilePath 2>&1
+    } finally {
+        if (Test-Path $tempNodeScriptPath) {
+            try {
+                Remove-Item $tempNodeScriptPath -Force
+            } catch {
+                Write-Warning "Could not remove temp file ${tempNodeScriptPath}: $($_.Exception.Message)"
+            }
+        }
+    }
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "Path key normalization failed for ${FilePath}: $($output -join "`n")"
+    }
+
+    $dedupeLines = @($output | Where-Object { $_ -like "CASE_DUPLICATE:*" })
+    foreach ($line in $dedupeLines) {
+        Write-Host "  $line" -ForegroundColor DarkYellow
+    }
+
+    return $dedupeLines.Count -gt 0
+}
+
 # Sanitization function to clean up OpenAPI files
 function Sanitize-OpenAPIFile {
     param([string]$FilePath)
-    
-    try {
-        $content = [System.IO.File]::ReadAllText($FilePath)
-        $changed = $false
-        
-        # Remove escaped quotes from summary and description fields
-        $originalContent = $content
-        $content = $content -replace '("(?:summary|description)"\s*:\s*"[^"]*)\\"([^"]*)\\"([^"]*")', '$1$2$3'
-        if ($content -ne $originalContent) {
-            $changed = $true
-        }
-        
-        # Remove problematic characters that could cause Windows filename issues
-        # Characters not allowed in Windows filenames: < > : " / \ | ? *
-        # Apply to both summary and description fields with loops to handle multiple occurrences
-        $originalContent = $content
-        do {
-            $before = $content
-            $content = $content -replace '("(?:summary|description)"\s*:\s*"[^"]*)\?([^"]*")', '$1$2'
-            $content = $content -replace '("(?:summary|description)"\s*:\s*"[^"]*)\*([^"]*")', '$1$2'
-            $content = $content -replace '("(?:summary|description)"\s*:\s*"[^"]*)<([^"]*")', '$1$2'
-            $content = $content -replace '("(?:summary|description)"\s*:\s*"[^"]*)>([^"]*")', '$1$2'
-            $content = $content -replace '("(?:summary|description)"\s*:\s*"[^"]*)\|([^"]*")', '$1$2'
-        } while ($content -ne $before)
-        
-        if ($content -ne $originalContent) {
-            $changed = $true
-        }
-        $content = $content -replace '("summary"\s*:\s*"[^"]*)\|([^"]*")', '$1$2'
-        if ($content -ne $originalContent) {
-            $changed = $true
-        }
-        
-        if ($changed) {
-            [System.IO.File]::WriteAllText($FilePath, $content)
-            return $true
-        }
-        return $false
-    } catch {
-        Write-Warning "Failed to sanitize $FilePath: $($_.Exception.Message)"
-        return $false
+
+    $nodeScript = @'
+const fs = require("fs");
+
+const filePath = process.argv[2];
+const text = fs.readFileSync(filePath, "utf8");
+const doc = JSON.parse(text);
+
+let changed = false;
+
+function sanitizeText(value) {
+  if (typeof value !== "string") {
+    return value;
+  }
+
+  // Remove control characters (keep tab/newline/carriage return).
+  let next = value.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, "");
+
+  // Convert over-escaped quotes from source text to normal quotes.
+  next = next.replace(/\\"/g, '"');
+
+  if (next !== value) {
+    changed = true;
+  }
+
+  return next;
+}
+
+// Derive a short title from an operationId like "v1QuoteAgent_ApproveQuoteVersion"
+// -> "Approve Quote Version"
+function operationIdToTitle(operationId) {
+  if (!operationId) return null;
+  // Strip leading version+agent prefix: v1QuoteAgent_ApproveQuoteVersion -> ApproveQuoteVersion
+  const bare = operationId.replace(/^v\d+[A-Za-z]+_/, "");
+  // Split CamelCase into words
+  return bare.replace(/([A-Z])/g, " $1").trim();
+}
+
+function sanitizeText(value) {
+  if (typeof value !== "string") {
+    return value;
+  }
+
+  // Remove control characters (keep tab/newline/carriage return).
+  let next = value.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, "");
+
+  // Decode HTML entities that may have been encoded in the source Swagger.
+  next = next.replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
+
+  // Convert over-escaped quotes from source text to normal quotes.
+  next = next.replace(/\\"/g, '"');
+
+  if (next !== value) {
+    changed = true;
+  }
+
+  return next;
+}
+
+// Walk path items and rewrite each operation: derive summary from operationId,
+// move the original prose summary to the top of description.
+function processOperation(op) {
+  if (!op || typeof op !== "object") return;
+  const title = operationIdToTitle(op.operationId);
+  if (!title) return;
+
+  const oldSummary = op.summary ? sanitizeText(op.summary) : "";
+  const oldDescription = op.description ? sanitizeText(op.description) : "";
+
+  // Build new description: old summary (if it differs from the title) prepended to old description
+  let newDescription = oldDescription;
+  if (oldSummary && oldSummary !== title) {
+    newDescription = oldSummary + (oldDescription ? "\n\n" + oldDescription : "");
+  }
+
+  if (op.summary !== title) { op.summary = title; changed = true; }
+  if (op.description !== newDescription) { op.description = newDescription; changed = true; }
+}
+
+function walk(node) {
+  if (Array.isArray(node)) {
+    for (const item of node) walk(item);
+    return;
+  }
+
+  if (!node || typeof node !== "object") return;
+
+  // Detect an operation object: has operationId and summary at this level
+  if (node.operationId && "summary" in node) {
+    processOperation(node);
+    // Still walk children (parameters, responses, etc.) for text cleanup
+    for (const [key, value] of Object.entries(node)) {
+      if (key !== "summary" && key !== "description") walk(value);
     }
+    return;
+  }
+
+  for (const [key, value] of Object.entries(node)) {
+    if (key === "description") {
+      node[key] = sanitizeText(value);
+      continue;
+    }
+    walk(value);
+  }
+}
+
+walk(doc);
+
+if (changed) {
+  fs.writeFileSync(filePath, JSON.stringify(doc, null, 2));
+}
+
+console.log(changed ? "SANITIZED:true" : "SANITIZED:false");
+'@
+
+    $tempNodeScriptPath = [System.IO.Path]::Combine(
+        [System.IO.Path]::GetTempPath(),
+        ("sanitize-openapi-{0}.js" -f ([System.Guid]::NewGuid().ToString("N")))
+    )
+    [System.IO.File]::WriteAllText($tempNodeScriptPath, $nodeScript)
+
+    try {
+        $output = & node $tempNodeScriptPath $FilePath 2>&1
+    } finally {
+        if (Test-Path $tempNodeScriptPath) {
+            try {
+                Remove-Item $tempNodeScriptPath -Force
+            } catch {
+                Write-Warning "Could not remove temp file ${tempNodeScriptPath}: $($_.Exception.Message)"
+            }
+        }
+    }
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "Sanitization failed for ${FilePath}: $($output -join "`n")"
+    }
+
+    return ($output -contains "SANITIZED:true")
 }
 
 foreach ($file in $swaggerFiles) {
@@ -126,10 +308,16 @@ foreach ($file in $swaggerFiles) {
         $output = & swagger2openapi --patch $file.FullName -o $outputPath 2>&1
 
         if ($LASTEXITCODE -eq 0 -and (Test-Path $outputPath)) {
+            # Collapse case-duplicate path keys (for example /Foo/{id} and /Foo/{Id})
+            $normalizedPaths = Normalize-OpenAPIPathKeys -FilePath $outputPath
+
             # Sanitize the converted file
             $sanitized = Sanitize-OpenAPIFile -FilePath $outputPath
             
             $statusMessage = " -> $outputFileName"
+            if ($normalizedPaths) {
+                $statusMessage += " (path keys normalized)"
+            }
             if ($sanitized) {
                 $statusMessage += " (sanitized)"
             }
