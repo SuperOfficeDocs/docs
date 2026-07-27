@@ -29,7 +29,7 @@ $ErrorActionPreference = 'Stop'
 
 $repoRoot   = Split-Path -Parent $PSScriptRoot
 $docsFile   = Join-Path $repoRoot 'docs.json'
-$outputFile = Join-Path $repoRoot 'components' 'custom-mode-footer.mdx'
+$outputFile = Join-Path (Join-Path $repoRoot 'components') 'custom-mode-footer.mdx'
 
 # ── validate ─────────────────────────────────────────────────
 if (-not (Test-Path $docsFile)) {
