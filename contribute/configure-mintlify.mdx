@@ -4,7 +4,7 @@ title: Configuring Mintlify
 description: How docs.json's modular $ref-linked config works, what lives in each config/ file, and how to edit navigation without touching a monolithic file.
 keywords: docs.json, mintlify, config, $ref, navigation, modular configuration, split configuration
 author: digitaldiina
-date: 07.22.2026
+date: 07.27.2026
 content_type: concept
 language: en
 ---
@@ -65,7 +65,30 @@ Find the right file before editing:
 | Edit Mobile, Integrations, or Release Notes content | `config/nav-mobile.json`, `config/nav-integrations.json`, or `config/nav-releases.json` directly |
 | Regenerate the database-tables reference | whatever produces `config/nav-database-tables.json`'s `pages` array (DB schema pipeline) |
 | Regenerate the archive-provider or MDO-provider reference | whatever produces `config/nav-archive-providers.json` / `config/nav-mdo-providers.json`'s `pages` arrays |
-| Anything else in `docs.json` (theme, fonts, navbar, footer) | `docs.json` directly - only `navigation` and `redirects` are split out |
+| Edit the footer's links or socials | `docs.json` directly, then re-run `tools/generate-footer.ps1` - see [Footer](#footer) below |
+| Anything else in `docs.json` (theme, fonts, navbar) | `docs.json` directly - only `navigation` and `redirects` are split out |
+
+## Footer
+
+`docs.json`'s `footer.links` and `footer.socials` drive Mintlify's native footer, rendered automatically on every normal content page.
+
+Pages set to `mode: "custom"` opt out of Mintlify's built-in chrome entirely - no sidebar, no navbar, no footer - so they can control their own full-page layout. This repo uses that mode for most top-level category landing pages (`en/online/index.mdx`, `en/database/index.mdx`, and their language/section equivalents). 15 of those pages import `components/custom-mode-footer.mdx` directly to still show a matching footer.
+
+<Note>
+`components/custom-mode-footer.mdx` is generated, not hand-written - its own header comment says so. It's produced by `tools/generate-footer.ps1` from `docs.json`'s `footer` section, not maintained independently.
+</Note>
+
+**Whenever `docs.json`'s `footer.links` or `footer.socials` changes, re-run the generator:**
+
+```powershell
+.\tools\generate-footer.ps1
+```
+
+Skipping this step is how the native and custom-mode footers end up visually different from each other - icon order and wording can silently drift out of sync otherwise.
+
+<Note>
+The script needs a UTF-8-BOM'd `.ps1` file to correctly parse its own non-ASCII characters (em-dashes) under Windows PowerShell 5.1. If you're on Windows without `pwsh` installed and see mojibake in the regenerated output, that's this, not a `docs.json` problem - the BOM requirement doesn't conflict with this repo's usual no-BOM policy, since that policy only covers content Mintlify actually parses (`.json`/`.md`/`.mdx`), not developer tooling scripts.
+</Note>
 
 ## Editing redirects
 
