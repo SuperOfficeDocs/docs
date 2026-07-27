@@ -1,0 +1,1289 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "v1-Agents",
+    "title": "SuperOffice Agent API v1",
+    "description": "SuperOffice Agent API - SentryAgent",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    }
+  },
+  "paths": {
+    "/api/v1/Agents/Sentry/GetNewTableRight": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Get New Table Right",
+        "description": "Returns a TableRight for a new row based on tableName parameter.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_GetNewTableRight",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest"
+              }
+            }
+          },
+          "description": "TableName",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sentry/GetTableRightByOwnership": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Get Table Right By Ownership",
+        "description": "Return the TableRight from the relationship between the current user and the\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_GetTableRightByOwnership",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest"
+              }
+            }
+          },
+          "description": "TableName, ContactGroupId, ContactAssociateId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sentry/GetFunctionRights": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Get Function Rights",
+        "description": "Get a string array of all functions rights for the role of the current\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_GetFunctionRights",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sentry/HasFunctionRight": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Has Function Right",
+        "description": "Get a boolean value indicating if the current user has the functional right.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_HasFunctionRight",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest"
+              }
+            }
+          },
+          "description": "FunctionRight",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sentry/CanCreateAppointmentInAssociateDiaries": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Can Create Appointment In Associate Diaries",
+        "description": "CanCreateAppointmentInAssociateDiaries will check if the current associate can\n\nCanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_CanCreateAppointmentInAssociateDiaries",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest"
+              }
+            }
+          },
+          "description": "AssociateIds",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sentry/CanCreateAppointmentInEachAssociatesDiary": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Can Create Appointment In Each Associates Diary",
+        "description": "CanCreateAppointmentInEachAssociateDiary will check if the current associate\n\nCanCreateAppointmentInEachAssociateDiary will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_CanCreateAppointmentInEachAssociatesDiary",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest"
+              }
+            }
+          },
+          "description": "AssociateIds",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sentry/CanCreateAppointmentInAllDiaries": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Can Create Appointment In All Diaries",
+        "description": "CanCreateAppointmentInAllDiaries will check if the current associate can create\n\nCanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_CanCreateAppointmentInAllDiaries",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Sentry/GetTableRightByContactOwnership": {
+      "post": {
+        "tags": [
+          "Sentry_Agent"
+        ],
+        "summary": "Get Table Right By Contact Ownership",
+        "description": "Return the TableRight from the relationship between the current user and the\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1SentryAgent_GetTableRightByContactOwnership",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest"
+              }
+            }
+          },
+          "description": "TableName, ContactId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:54464"
+    },
+    {
+      "url": "https://localhost:54464"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    },
+    "schemas": {
+      "SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetNewTableRightRequest": {
+        "description": "GetNewTableRight: Returns a TableRight for a new row based on tableName parameter.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByOwnershipRequest": {
+        "description": "GetTableRightByOwnership: Return the TableRight from the relationship between the current user and the given user and group.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          },
+          "ContactGroupId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ContactAssociateId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SentryCarriers.HasFunctionRightRequest": {
+        "description": "HasFunctionRight: Get a boolean value indicating if the current user has the functional right.",
+        "type": "object",
+        "properties": {
+          "FunctionRight": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInAssociateDiariesRequest": {
+        "description": "CanCreateAppointmentInAssociateDiaries: CanCreateAppointmentInAssociateDiaries will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.",
+        "type": "object",
+        "properties": {
+          "AssociateIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SentryCarriers.CanCreateAppointmentInEachAssociatesDiaryRequest": {
+        "description": "CanCreateAppointmentInEachAssociatesDiary: CanCreateAppointmentInEachAssociateDiary will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInEachAssociateDiary will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.",
+        "type": "object",
+        "properties": {
+          "AssociateIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.SentryCarriers.GetTableRightByContactOwnershipRequest": {
+        "description": "GetTableRightByContactOwnership: Return the TableRight from the relationship between the current user and the given user and group.",
+        "type": "object",
+        "properties": {
+          "TableName": {
+            "type": "string"
+          },
+          "ContactId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

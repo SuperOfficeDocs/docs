@@ -1,0 +1,524 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "v1-REST",
+    "title": "SuperOffice REST API v1",
+    "description": "SuperOffice REST API - TimeZone",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    }
+  },
+  "paths": {
+    "/api/v1/TimeZone": {
+      "get": {
+        "tags": [
+          "TimeZone"
+        ],
+        "summary": "Get Time Zones Archive",
+        "description": "List of timezones\n\nUse with SO-TIMEZONE header to specify times.",
+        "operationId": "v1TimeZone_GetTimeZonesArchive",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$orderBy",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$entities",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$mode",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$options",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$context",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "$format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.Services.WebApi.OData.ODataSlimResponse"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TimeZone/base": {
+      "get": {
+        "tags": [
+          "TimeZone"
+        ],
+        "summary": "Get Base Time Zone",
+        "description": "Base Time Zone info.\n\nThis is the time zone used internally for storing data.",
+        "operationId": "v1TimeZone_GetBaseTimeZone",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/TimeZone/current": {
+      "get": {
+        "tags": [
+          "TimeZone"
+        ],
+        "summary": "Get Current Time Zone",
+        "description": "Base Time Zone info.\n\nThis is the time zone used internally for storing data.",
+        "operationId": "v1TimeZone_GetCurrentTimeZone",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneData"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:54464"
+    },
+    {
+      "url": "https://localhost:54464"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    },
+    "schemas": {
+      "SuperOffice.Services.WebApi.OData.ODataSlimResponse": {
+        "description": "Easy to use archive results - just a flat list of values.",
+        "type": "object",
+        "properties": {
+          "odata.metadata": {
+            "type": "string"
+          },
+          "odata.nextLink": {
+            "type": "string"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.TimeZoneData": {
+        "type": "object",
+        "properties": {
+          "TZLocationID": {
+            "format": "int32",
+            "description": "Timezone location ID - primary key.",
+            "type": "integer"
+          },
+          "Name": {
+            "description": "Name associated with the location: Country name + region name, Norway, United States - Alaska",
+            "type": "string"
+          },
+          "TZLocationCode": {
+            "description": "Code associated with location: UTC, AR-NQ, AU-QLD, PF2A\r\nNot the an ISO country code. Unique.",
+            "type": "string"
+          },
+          "TZLocationCities": {
+            "description": "Cities associated with location: Oslo, London, Rio de Janeiro",
+            "type": "string"
+          },
+          "IsoNumber": {
+            "format": "int32",
+            "description": "Country ISO code associated with location: 578",
+            "type": "integer"
+          },
+          "TimeZoneSTDRules": {
+            "description": "Dictionary of standard rules",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneRule"
+            }
+          },
+          "TimeZoneDSTRules": {
+            "description": "Dictionary of Daylight saving time rules",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.TimeZoneRule"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.TimeZoneRule": {
+        "type": "object",
+        "properties": {
+          "StartDay": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "StartMonth": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "EndDay": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "EndMonth": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "TZOffset": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "StartRulePattern": {
+            "type": "string"
+          },
+          "EndRulePattern": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

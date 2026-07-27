@@ -1,0 +1,782 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "v1-Agents",
+    "title": "SuperOffice Agent API v1",
+    "description": "SuperOffice Agent API - ResourceAgent",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    }
+  },
+  "paths": {
+    "/api/v1/Agents/Resource/SetResourceSubstitution": {
+      "post": {
+        "tags": [
+          "Resource_Agent"
+        ],
+        "summary": "Set Resource Substitution",
+        "description": "Create or update a resource substitution\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ResourceAgent_SetResourceSubstitution",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest"
+              }
+            }
+          },
+          "description": "ResourceName, ResourceValues, Culture, IsActive",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Resource/DeleteResourceSubstitution": {
+      "post": {
+        "tags": [
+          "Resource_Agent"
+        ],
+        "summary": "Delete Resource Substitution",
+        "description": "Permanentely delete a resource substitution for one or more cultures\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ResourceAgent_DeleteResourceSubstitution",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest"
+              }
+            }
+          },
+          "description": "ResourceName, Culture",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Resource/ActivateResourceSubstitution": {
+      "post": {
+        "tags": [
+          "Resource_Agent"
+        ],
+        "summary": "Activate Resource Substitution",
+        "description": "Activate or deactive a resource substitution for one or more cultures\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ResourceAgent_ActivateResourceSubstitution",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest"
+              }
+            }
+          },
+          "description": "ResourceName, Culture, IsActive",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Resource/GetResourceSubstitutions": {
+      "post": {
+        "tags": [
+          "Resource_Agent"
+        ],
+        "summary": "Get Resource Substitutions",
+        "description": "Get substitutions for some or all resources for one culture\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ResourceAgent_GetResourceSubstitutions",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest"
+              }
+            }
+          },
+          "description": "ResourceNames, Culture, ActiveOnly",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Resource/IsResourceSubstitutionActive": {
+      "post": {
+        "tags": [
+          "Resource_Agent"
+        ],
+        "summary": "Is Resource Substitution Active",
+        "description": "Determine if resource substitution/override is active, globally or for a subset\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ResourceAgent_IsResourceSubstitutionActive",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest"
+              }
+            }
+          },
+          "description": "ResourceNames, Culture",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ResourceOverride"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:54464"
+    },
+    {
+      "url": "https://localhost:54464"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    },
+    "schemas": {
+      "SuperOffice.WebApi.v1.Carriers.ResourceCarriers.SetResourceSubstitutionRequest": {
+        "description": "SetResourceSubstitution: Create or update a resource substitution",
+        "type": "object",
+        "properties": {
+          "ResourceName": {
+            "type": "string"
+          },
+          "ResourceValues": {
+            "type": "string"
+          },
+          "Culture": {
+            "type": "string"
+          },
+          "IsActive": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ResourceCarriers.DeleteResourceSubstitutionRequest": {
+        "description": "DeleteResourceSubstitution: Permanentely delete a resource substitution for one or more cultures",
+        "type": "object",
+        "properties": {
+          "ResourceName": {
+            "type": "string"
+          },
+          "Culture": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ResourceCarriers.ActivateResourceSubstitutionRequest": {
+        "description": "ActivateResourceSubstitution: Activate or deactive a resource substitution for one or more cultures",
+        "type": "object",
+        "properties": {
+          "ResourceName": {
+            "type": "string"
+          },
+          "Culture": {
+            "type": "string"
+          },
+          "IsActive": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ResourceCarriers.GetResourceSubstitutionsRequest": {
+        "description": "GetResourceSubstitutions: Get substitutions for some or all resources for one culture",
+        "type": "object",
+        "properties": {
+          "ResourceNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "Culture": {
+            "type": "string"
+          },
+          "ActiveOnly": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.ResourceOverride": {
+        "description": "Override specifications for resources/labels\r\n<para />\r\nCarrier object for ResourceOverride.\r\nServices for the ResourceOverride Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IResourceAgent\">Resource Agent</see>.",
+        "type": "object",
+        "properties": {
+          "ResourceName": {
+            "description": "The name of the resource, without any brackets or braces - example: SR_CONTACT",
+            "type": "string"
+          },
+          "ResourceValue": {
+            "description": "The value of the resource in the given culture",
+            "type": "string"
+          },
+          "Culture": {
+            "description": ".NET-style culture code, such as NB-NO or EN-UK",
+            "type": "string"
+          },
+          "IsActive": {
+            "description": "Is this override active",
+            "type": "boolean"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "description": "Class holding properties like field length, field type about a field in the carrier.",
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "format": "int32",
+            "description": "",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ResourceCarriers.IsResourceSubstitutionActiveRequest": {
+        "description": "IsResourceSubstitutionActive: Determine if resource substitution/override is active, globally or for a subset of resources/cultures",
+        "type": "object",
+        "properties": {
+          "ResourceNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "Culture": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

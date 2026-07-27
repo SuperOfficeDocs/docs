@@ -1,0 +1,380 @@
+[
+  {
+    "group": "Appointment",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Appointment.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Archive",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Archive.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Attachment",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Attachment.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "BatchTask",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-BatchTask.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "ChatSession",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-ChatSession.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "ChatTopic",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-ChatTopic.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Contact",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Contact.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Copilot",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Copilot.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "CopilotDataSource",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-CopilotDataSource.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "CRMScript",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-CRMScript.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "CustomObject",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-CustomObject.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "CustomObjectDefinition",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-CustomObjectDefinition.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Dash",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Dash.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "DashTheme",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-DashTheme.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "DashTile",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-DashTile.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "DashTileDefinition",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-DashTileDefinition.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Document",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Document.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "ForeignApp",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-ForeignApp.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Hierarchy",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Hierarchy.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "License",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-License.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "List",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-List.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "MDOList",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-MDOList.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "NewsFeed",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-NewsFeed.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Person",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Person.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Preference",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Preference.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "PreferenceDescription",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-PreferenceDescription.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "PreferenceDescriptionLine",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-PreferenceDescriptionLine.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Presence",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Presence.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Pricelist",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Pricelist.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Product",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Product.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Project",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Project.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "ProjectMember",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-ProjectMember.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Relation",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Relation.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "RelationDefinition",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-RelationDefinition.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Role",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Role.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Sale",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Sale.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "SaleStakeholder",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-SaleStakeholder.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Schema",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Schema.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Script",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Script.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Selection",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Selection.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "ShipmentMessage",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-ShipmentMessage.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "ShipmentMessageBlock",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-ShipmentMessageBlock.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "String",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-String.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "SystemEvent",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-SystemEvent.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Table",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Table.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Ticket",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Ticket.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "TicketMessage",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-TicketMessage.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "TicketRelation",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-TicketRelation.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "TicketRelationDefinition",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-TicketRelationDefinition.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "TicketType",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-TicketType.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "TimeZone",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-TimeZone.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "TriggerScript",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-TriggerScript.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "User",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-User.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "Webhook",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Webhook.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  }
+]

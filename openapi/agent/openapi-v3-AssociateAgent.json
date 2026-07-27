@@ -1,0 +1,1318 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "v1-Agents",
+    "title": "SuperOffice Agent API v1",
+    "description": "SuperOffice Agent API - AssociateAgent",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    }
+  },
+  "paths": {
+    "/api/v1/Agents/Associate/GetAssociate": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Get Associate",
+        "description": "Gets a Associate object.\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_GetAssociate",
+        "parameters": [
+          {
+            "name": "associateId",
+            "in": "query",
+            "description": "The identifier of the Associate object",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Associate/GetAssociateByPersonId": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Get Associate By Person Id",
+        "description": "Returns the associate that belongs to this person if the person is an associate.\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_GetAssociateByPersonId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest"
+              }
+            }
+          },
+          "description": "PersonId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Associate/GetNote": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Get Note",
+        "description": "Returns an array of strings(notepad pages).\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_GetNote",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest"
+              }
+            }
+          },
+          "description": "AssociateId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Associate/SaveNote": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Save Note",
+        "description": "Saves an array of strings(notepad pages).\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_SaveNote",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest"
+              }
+            }
+          },
+          "description": "AssociateId, Note",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Associate/GetEncryptionKey": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Get Encryption Key",
+        "description": "Get unique key made from AssociateId and dbTag used for local storage\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_GetEncryptionKey",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Associate/GetAssociateList": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Get Associate List",
+        "description": "Gets an array of Associate objects.\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_GetAssociateList",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "description": "The identifiers of the Associate object",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Associate/GetAssociatesByGroup": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Get Associates By Group",
+        "description": "Method that returns a array of associate , based on DiaryGroupType and groupId.\n\nThe differernt types are, Userdefined, Usergroup and ResourceHeadings\r\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_GetAssociatesByGroup",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest"
+              }
+            }
+          },
+          "description": "GroupId, Type",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Associate/LogOffWindowsUsers": {
+      "post": {
+        "tags": [
+          "Associate_Agent"
+        ],
+        "summary": "Log Off Windows Users",
+        "description": "Method that logs off associates that are logged on to the win client\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1AssociateAgent_LogOffWindowsUsers",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest"
+              }
+            }
+          },
+          "description": "AssociateIds",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:54464"
+    },
+    {
+      "url": "https://localhost:54464"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    },
+    "schemas": {
+      "SuperOffice.CRM.Services.Associate": {
+        "description": "Carrier object for Associate.\r\nServices for the Associate Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IAssociateAgent\">Associate Agent</see>.",
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "Name": {
+            "description": "Initials, also login name, possibly database user name",
+            "type": "string"
+          },
+          "PersonId": {
+            "format": "int32",
+            "description": "Owning person record \r\n<para>Use MDO List name \"person\" to get list items.</para>",
+            "type": "integer"
+          },
+          "Rank": {
+            "format": "int32",
+            "description": "Rank order",
+            "type": "integer"
+          },
+          "Tooltip": {
+            "description": "Tooltip or other description",
+            "type": "string"
+          },
+          "Type": {
+            "description": "User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system",
+            "enum": [
+              "Unknown",
+              "InternalAssociate",
+              "ResourceAssociate",
+              "ExternalAssociate",
+              "AnonymousAssociate",
+              "SystemAssociate"
+            ],
+            "type": "string"
+          },
+          "GroupIdx": {
+            "format": "int32",
+            "description": "Primary group membership, see UserGroupLink for secondary memberships",
+            "type": "integer"
+          },
+          "FullName": {
+            "description": "The associate's culture formatted fullname (firstname, middleName and lastname)",
+            "type": "string"
+          },
+          "FormalName": {
+            "description": "The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)",
+            "type": "string"
+          },
+          "Deleted": {
+            "description": "If true, the user is retired and should have no rights, not appear in lists, etc.",
+            "type": "boolean"
+          },
+          "EjUserId": {
+            "format": "int32",
+            "description": "ID of the ej user record corresponding to this associate; 0 for associates that are not ej users",
+            "type": "integer"
+          },
+          "UserName": {
+            "description": "User name",
+            "type": "string"
+          },
+          "ExtraFields": {
+            "description": "Deprecated: Use {SuperOffice.CRM.Services.Associate.CustomFields} instead.\r\nExtra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "CustomFields": {
+            "description": "Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.\r\nCustom fields combines user defined fields and extra fields into one bucket. \r\nThe individual {SuperOffice.CRM.Services.Associate.ExtraFields} and <see cref=\"!:UserDefinedFields\">UserDefinedFields</see> properties are deprecated in favor of this\r\ncombined collection.",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.TableRight": {
+        "description": "Wraps a table right together with an explanatory reason.\r\nCode can indicate why access is restricted.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldProperty": {
+        "description": "Class holding properties like field length, field type about a field in the carrier.",
+        "type": "object",
+        "properties": {
+          "FieldRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldRight"
+          },
+          "FieldType": {
+            "type": "string"
+          },
+          "FieldLength": {
+            "format": "int32",
+            "description": "",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Security.FieldRight": {
+        "description": "Wraps the field right together with an explanatory reason.\r\nAlso adds logical operators to the field rights so that they can be easily combined.",
+        "type": "object",
+        "properties": {
+          "Mask": {
+            "type": "string"
+          },
+          "Reason": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociateByPersonIdRequest": {
+        "description": "GetAssociateByPersonId: Returns the associate that belongs to this person if the person is an associate.",
+        "type": "object",
+        "properties": {
+          "PersonId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetNoteRequest": {
+        "description": "GetNote: Returns an array of strings(notepad pages).",
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.AssociateCarriers.SaveNoteRequest": {
+        "description": "SaveNote: Saves an array of strings(notepad pages).",
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Note": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.AssociateCarriers.GetAssociatesByGroupRequest": {
+        "description": "GetAssociatesByGroup: Method that returns a array of associate , based on DiaryGroupType and groupId. The differernt types are, Userdefined, Usergroup and ResourceHeadings",
+        "type": "object",
+        "properties": {
+          "GroupId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Type": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.AssociateCarriers.LogOffWindowsUsersRequest": {
+        "description": "LogOffWindowsUsers: Method that logs off associates that are logged on to the win client",
+        "type": "object",
+        "properties": {
+          "AssociateIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1449 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "v1-Agents",
+    "title": "SuperOffice Agent API v1",
+    "description": "SuperOffice Agent API - DocumentMigrationAgent",
+    "contact": {
+      "name": "SuperOffice DevNet",
+      "url": "https://docs.superoffice.com/en/api/index.html",
+      "email": "sdk@superoffice.com"
+    }
+  },
+  "paths": {
+    "/api/v1/Agents/DocumentMigration/CreateDefaultDocumentMigrationItemList": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Create Default Document Migration Item List",
+        "description": "Loading default values into a new DocumentMigrationItemList.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_CreateDefaultDocumentMigrationItemList",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/GetForAllDocuments": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Get For All Documents",
+        "description": "Gets a migration summary for all documents stored in CRM.\n\nWarning: Expensive!\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_GetForAllDocuments",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest"
+              }
+            }
+          },
+          "description": "DocumentPluginId, IncludeEmails",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/GetForDateRange": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Get For Date Range",
+        "description": "Gets a migration summary for documents in the provided date-rage\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_GetForDateRange",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest"
+              }
+            }
+          },
+          "description": "DocumentPluginId, MinDate, MaxDate, IncludeEmails",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/GetForSelection": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Get For Selection",
+        "description": "Gets a migration summary for documents in the provided selection\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_GetForSelection",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest"
+              }
+            }
+          },
+          "description": "DocumentPluginId, SelectionId, IncludeEmails",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItemList"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/MigrateDocumentToNewDocPlugin": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Migrate Document To New Doc Plugin",
+        "description": "Migrates the document with the provided id to the specified document-plugin.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_MigrateDocumentToNewDocPlugin",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest"
+              }
+            }
+          },
+          "description": "DocumentId, DocumentPluginId",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/HasDocumentsToMigrate": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Has Documents To Migrate",
+        "description": "Checks if there are any documents in the current database stored using a\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_HasDocumentsToMigrate",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/GetNumberOfConfidentialDocuments": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Get Number Of Confidential Documents",
+        "description": "Gets the total number of documents that is not visible to everyone\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_GetNumberOfConfidentialDocuments",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/CreateDefaultDocumentTemplateMigrationList": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Create Default Document Template Migration List",
+        "description": "Loading default values into a new DocumentTemplateMigrationList.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_CreateDefaultDocumentTemplateMigrationList",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/GetForTemplates": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Get For Templates",
+        "description": "Gets a migration summary for all templates stored in CRM.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_GetForTemplates",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest"
+              }
+            }
+          },
+          "description": "TargetDocumentPluginId, IncludeEmails",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentTemplateMigrationList"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/DocumentMigration/MigrateTemplateToNewDocPlugin": {
+      "post": {
+        "tags": [
+          "DocumentMigration_Agent"
+        ],
+        "summary": "Migrate Template To New Doc Plugin",
+        "description": "Migrates the template with the provided id to the specified document-plugin.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.",
+        "operationId": "v1DocumentMigrationAgent_MigrateTemplateToNewDocPlugin",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest"
+              }
+            }
+          },
+          "description": "DocumentTemplateId, TargetDocumentPluginId",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "externalDocs": {
+    "description": "The SuperOffice DevNet Community has more documentation, examples, and discussion forums.",
+    "url": "https://community.superoffice.com/en/developer/"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:54464"
+    },
+    {
+      "url": "https://localhost:54464"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Password": {
+        "type": "http",
+        "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
+        "scheme": "basic"
+      },
+      "SuperId": {
+        "type": "oauth2",
+        "description": "SuperOffice SuperId OAuth implicit flow. \r\nYou need to issue a request to the SuperId authorization URL\r\n    https://online.superoffice.com/login/common/oauth/authorize?response_type=token\r\n      &client_id=670734e0-4c5a-11e3-be9e-a171392e81db\r\n      &redirect_uri=https://example.com/spa/\r\n\r\npassing in the application id and redirect URL.\r\n\r\nSuperId will log the user in, and redirect to the requested redirect URL with a #payload\r\ncontaining the access token and claims. (The redirect URL must be registered with SuperId in advance)\r\n\r\n   https://example.com/spa#access_token=8A%3aCust12227.AXRrCITpPBvQX3UbIohb\r\n      &token_type=bearer\r\n      &state=\r\n      &expires_in=3600\r\n      &ctx=Cust12227\r\n      &netserver_url=https%3a%2f%2fsod.superoffice.com%2fCust12227%2fRemote%2fServices82%2f\r\n\r\nYou can take the #access_token value and pass it as the Authenticate HTTP header as a BEARER token.\r\n",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://online.superoffice.com/login/common/oauth/authorize",
+            "scopes": {}
+          }
+        }
+      }
+    },
+    "schemas": {
+      "SuperOffice.CRM.Services.DocumentMigrationItemList": {
+        "description": "Carrier object for DocumentMigrationItemList.\r\nServices for the DocumentMigrationItemList Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IDocumentMigrationAgent\">DocumentMigration Agent</see>.",
+        "type": "object",
+        "properties": {
+          "NumDocumentsOmitted": {
+            "format": "int32",
+            "description": "Total amount of documents within the selection criteria, which has been omitted from the migration.",
+            "type": "integer"
+          },
+          "NumDocumentsAlreadyMigrated": {
+            "format": "int32",
+            "description": "Documents already migrated to the requested documentplugin.",
+            "type": "integer"
+          },
+          "Documents": {
+            "description": "List of documents to be migrated.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationItem"
+            }
+          },
+          "Associates": {
+            "description": "List of associates whose documents will be migrated.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.DocumentMigrationAssociate"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.DocumentMigrationItem": {
+        "description": "Class used to summarize all document-properties relevant for migrating documents.\r\n<para />\r\nCarrier object for DocumentMigrationItem.\r\nServices for the DocumentMigrationItem Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IDocumentMigrationAgent\">DocumentMigration Agent</see>.",
+        "type": "object",
+        "properties": {
+          "DocumentId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "ContactId": {
+            "format": "int32",
+            "description": "Contact ID of owning contact, may be 0",
+            "type": "integer"
+          },
+          "PersonId": {
+            "format": "int32",
+            "description": "Person ID of person the appointment is with, may be 0",
+            "type": "integer"
+          },
+          "SaleId": {
+            "format": "int32",
+            "description": "Owning sale, if any (may be 0)",
+            "type": "integer"
+          },
+          "ProjectId": {
+            "format": "int32",
+            "description": "ID of project referred to, may be 0",
+            "type": "integer"
+          },
+          "DocTmplId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "AssociateId": {
+            "format": "int32",
+            "description": "ID of associate whose diary the appointment is in, REQUIRED",
+            "type": "integer"
+          },
+          "UserGroupId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "VisibleForId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.DocumentMigrationAssociate": {
+        "description": "Class used to map relationship between AssociateId and the user's email.\r\n<para />\r\nCarrier object for DocumentMigrationAssociate.\r\nServices for the DocumentMigrationAssociate Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IDocumentMigrationAgent\">DocumentMigration Agent</see>.",
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "EmailAddress": {
+            "description": "The address itself",
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForAllDocumentsRequest": {
+        "description": "GetForAllDocuments: Gets a migration summary for all documents stored in CRM. Warning: Expensive!",
+        "type": "object",
+        "properties": {
+          "DocumentPluginId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "IncludeEmails": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForDateRangeRequest": {
+        "description": "GetForDateRange: Gets a migration summary for documents in the provided date-rage",
+        "type": "object",
+        "properties": {
+          "DocumentPluginId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "MinDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "MaxDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "IncludeEmails": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForSelectionRequest": {
+        "description": "GetForSelection: Gets a migration summary for documents in the provided selection",
+        "type": "object",
+        "properties": {
+          "DocumentPluginId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "SelectionId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "IncludeEmails": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateDocumentToNewDocPluginRequest": {
+        "description": "MigrateDocumentToNewDocPlugin: Migrates the document with the provided id to the specified document-plugin.",
+        "type": "object",
+        "properties": {
+          "DocumentId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "DocumentPluginId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.DocumentTemplateMigrationList": {
+        "description": "Carrier object for DocumentTemplateMigrationList.\r\nServices for the DocumentTemplateMigrationList Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IDocumentMigrationAgent\">DocumentMigration Agent</see>.",
+        "type": "object",
+        "properties": {
+          "NumTemplatesOmitted": {
+            "format": "int32",
+            "description": "Total amount of templates which has been omitted from the migration.",
+            "type": "integer"
+          },
+          "NumTemplatesAlreadyMigrated": {
+            "format": "int32",
+            "description": "Total amount of templates already migrated to the requested documentplugin.",
+            "type": "integer"
+          },
+          "TemplateIds": {
+            "description": "List of IDs for templates to be migrated.",
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.GetForTemplatesRequest": {
+        "description": "GetForTemplates: Gets a migration summary for all templates stored in CRM.",
+        "type": "object",
+        "properties": {
+          "TargetDocumentPluginId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "IncludeEmails": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.DocumentMigrationCarriers.MigrateTemplateToNewDocPluginRequest": {
+        "description": "MigrateTemplateToNewDocPlugin: Migrates the template with the provided id to the specified document-plugin.",
+        "type": "object",
+        "properties": {
+          "DocumentTemplateId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "TargetDocumentPluginId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
