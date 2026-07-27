@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 <#
 .SYNOPSIS
     Generates components/custom-mode-footer.mdx from docs.json footer data.
@@ -106,7 +106,7 @@ $socialBlock
 
 # ── write ─────────────────────────────────────────────────────
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
-[System.IO.File]::WriteAllText($outputFile, $mdx, $utf8NoBom)
+[System.IO.File]::WriteAllText($outputFile, "$mdx`n", $utf8NoBom)
 
 Write-Host "  $outputFile" -ForegroundColor Yellow
 Write-Host "`nComplete!" -ForegroundColor Green
