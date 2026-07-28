@@ -327,6 +327,7 @@
           {
             "group": "Core CRM",
             "pages": [
+              "release-notes/10.3/core-crm/index",
               "release-notes/10.3/core-crm/10.3.12-update",
               "release-notes/10.3/core-crm/10.3.11-update",
               "release-notes/10.3/core-crm/10.3.10-update",
@@ -339,6 +340,7 @@
           {
             "group": "Settings and Maintenance",
             "pages": [
+              "release-notes/10.3/admin/index",
               "release-notes/10.3/admin/10.3.8-update",
               "release-notes/10.3/admin/10.3.7-update",
               "release-notes/10.3/admin/10.3.2-update",
@@ -348,6 +350,7 @@
           {
             "group": "Service",
             "pages": [
+              "release-notes/10.3/service/index",
               "release-notes/10.3/service/10.3.11-update",
               "release-notes/10.3/service/10.3.8-update",
               "release-notes/10.3/service/10.3.6-update",
@@ -360,6 +363,7 @@
           {
             "group": "Marketing",
             "pages": [
+              "release-notes/10.3/marketing/index",
               "release-notes/10.3/marketing/10.3.12-update",
               "release-notes/10.3/marketing/10.3.10-update",
               "release-notes/10.3/marketing/10.3.9-update"
@@ -406,6 +410,7 @@
           {
             "group": "Core CRM",
             "pages": [
+              "release-notes/10.2/core-crm/index",
               "release-notes/10.2/core-crm/10.2.11-update",
               "release-notes/10.2/core-crm/10.2.8-update",
               "release-notes/10.2/core-crm/10.2.4-update",
@@ -415,6 +420,7 @@
           {
             "group": "Settings and Maintenance",
             "pages": [
+              "release-notes/10.2/admin/index",
               "release-notes/10.2/admin/10.2.11-update",
               "release-notes/10.2/admin/10.2.10-update",
               "release-notes/10.2/admin/10.2.3-update",
@@ -425,6 +431,7 @@
           {
             "group": "Requests / Service",
             "pages": [
+              "release-notes/10.2/service/index",
               "release-notes/10.2/service/10.2.11-update",
               "release-notes/10.2/service/10.2.10-update",
               "release-notes/10.2/service/10.2.9-update",
@@ -436,6 +443,7 @@
           {
             "group": "Marketing",
             "pages": [
+              "release-notes/10.2/marketing/index",
               "release-notes/10.2/marketing/10.2.3-update",
               "release-notes/10.2/marketing/10.2.2-update"
             ]
@@ -477,6 +485,7 @@
           {
             "group": "Core CRM",
             "pages": [
+              "release-notes/10.1/core-crm/index",
               "release-notes/10.1/core-crm/10.1.3-update",
               "release-notes/10.1/core-crm/10.1.4-update",
               "release-notes/10.1/core-crm/10.1.5-update",
@@ -487,6 +496,7 @@
           {
             "group": "Settings and Maintenance",
             "pages": [
+              "release-notes/10.1/admin/index",
               "release-notes/10.1/admin/10.1.1-update",
               "release-notes/10.1/admin/10.1.3-update",
               "release-notes/10.1/admin/10.1.5-update",
@@ -497,12 +507,14 @@
           {
             "group": "Service",
             "pages": [
+              "release-notes/10.1/service/index",
               "release-notes/10.1/service/10.1.4-update"
             ]
           },
           {
             "group": "Marketing",
             "pages": [
+              "release-notes/10.1/marketing/index",
               "release-notes/10.1/marketing/10.1.6-update",
               "release-notes/10.1/marketing/10.1.3-update"
             ]
@@ -510,6 +522,7 @@
           {
             "group": "CEP",
             "pages": [
+              "release-notes/10.1/cep/index",
               "release-notes/10.1/cep/10.1.5-update",
               "release-notes/10.1/cep/10.1.3-update"
             ]
@@ -529,6 +542,7 @@
           {
             "group": "Development Products",
             "pages": [
+              "release-notes/10.1/development-products/index",
               "release-notes/10.1/development-products/10.1.2-update"
             ]
           }
@@ -541,6 +555,7 @@
           {
             "group": "Core CRM",
             "pages": [
+              "release-notes/10.0/core-crm/index",
               "release-notes/10.0/core-crm/10.0.7-update",
               "release-notes/10.0/core-crm/10.0.6-update",
               "release-notes/10.0/core-crm/10.0.4-update",
@@ -552,6 +567,7 @@
           {
             "group": "Settings and Maintenance",
             "pages": [
+              "release-notes/10.0/admin/index",
               "release-notes/10.0/admin/10.0.7-update",
               "release-notes/10.0/admin/10.0.6-update",
               "release-notes/10.0/admin/10.0.4-update",
@@ -560,17 +576,11 @@
               "release-notes/10.0/admin/10.0.1-update"
             ]
           },
-          {
-            "group": "Service",
-            "pages": [
-              "release-notes/10.0/service/10.0.6-update",
-              "release-notes/10.0/service/10.0.1-update"
-            ]
-          },
+          "release-notes/10.0/service/10.0.1-update",
           {
             "group": "Marketing",
             "pages": [
-              "release-notes/10.0/marketing/10.0.6-update",
+              "release-notes/10.0/marketing/index",
               "release-notes/10.0/marketing/10.0.5-update",
               "release-notes/10.0/marketing/10.0.4-update"
             ]
@@ -578,6 +588,7 @@
           {
             "group": "CEP",
             "pages": [
+              "release-notes/10.0/cep/index",
               "release-notes/10.0/cep/10.0.6-update",
               "release-notes/10.0/cep/10.0.5-update",
               "release-notes/10.0/cep/10.0.4-update",

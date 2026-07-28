@@ -20,4 +20,4 @@ language: en
 
 [4]: ./10.0.4-update
 [5]: ./10.0.5-update
-[6]: ./10.0.6-update
+[6]: ../core-crm/10.0.6-update#languages

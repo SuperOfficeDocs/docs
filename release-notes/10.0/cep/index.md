@@ -17,10 +17,11 @@ language: en
 * [Chat - When in queue keep writing a message (10.0.4)][4]
 * [Chat - Rating on a chat from the customer (10.0.5)][5]
 * [Chat - Better use of small screens like a mobile (10.0.6)][6]
-* [Languages - 5 new UI languages on all modules (10.0.6)][6]
+* [Languages - 5 new UI languages on all modules (10.0.6)][7]
 
 [2]: ./10.0.2-update
 [3]: ./10.0.3-update
 [4]: ./10.0.4-update
 [5]: ./10.0.5-update
 [6]: ./10.0.6-update
+[7]: ../core-crm/10.0.6-update#languages

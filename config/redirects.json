@@ -10698,5 +10698,33 @@
   {
     "source": "/release-notes/integrations/mail-link/*",
     "destination": "/release-notes/integrations/mail-link"
+  },
+  {
+    "source": "/release-notes/10.0/api/10.0.1-update",
+    "destination": "/release-notes/10.0/api/index"
+  },
+  {
+    "source": "/release-notes/10.0/api/10.0.5-update",
+    "destination": "/release-notes/10.0/api/index"
+  },
+  {
+    "source": "/release-notes/10.0/api/10.0.6-update",
+    "destination": "/release-notes/10.0/api/index"
+  },
+  {
+    "source": "/release-notes/10.0/api/10.0.7-update",
+    "destination": "/release-notes/10.0/api/index"
+  },
+  {
+    "source": "/release-notes/10.0/service/10.0.6-update",
+    "destination": "/release-notes/10.0/core-crm/10.0.6-update"
+  },
+  {
+    "source": "/release-notes/10.0/marketing/10.0.6-update",
+    "destination": "/release-notes/10.0/core-crm/10.0.6-update"
+  },
+  {
+    "source": "/release-notes/10.0/service/index",
+    "destination": "/release-notes/10.0/service/10.0.1-update"
   }
 ]

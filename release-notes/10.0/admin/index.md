@@ -25,7 +25,7 @@ language: en
 * [Import - Gmail import of contacts (10.0.6)][6]
 * [Screen designer - Address field in expanded or one line mode (10.0.6)][6]
 * [Security improvements - Credentials and checks (10.0.6)][6]
-* [Languages - 5 new UI languages on all modules (10.0.6)][6]
+* [Languages - 5 new UI languages on all modules (10.0.6)][8]
 * [Request administration - Re-organized screens (10.0.7)][7]
 * [Triggers - Quote approval triggers (10.0.7)][7]
 * [Subscription management - Subscription form page with Powered by SuperOffice (10.0.7)][7]
@@ -36,3 +36,4 @@ language: en
 [4]: ./10.0.4-update
 [6]: ./10.0.6-update
 [7]: ./10.0.7-update
+[8]: ../core-crm/10.0.6-update#languages
