@@ -895,6 +895,8 @@
       },
       {
         "group": "Pocket CRM",
+        "hidden": true,
+        "searchable": true,
         "pages": [
           "release-notes/pocket-crm/index",
           "release-notes/pocket-crm/9.1.6-update",
