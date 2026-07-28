@@ -10630,5 +10630,13 @@
   {
     "source": "/release-notes/database/index",
     "destination": "/release-notes/database/changes-81"
+  },
+  {
+    "source": "/release-notes/api/ns-70/*",
+    "destination": "/release-notes/api/ns-70"
+  },
+  {
+    "source": "/release-notes/api/index",
+    "destination": "/release-notes/api/ns-80"
   }
 ]

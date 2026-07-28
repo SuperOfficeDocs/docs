@@ -923,30 +923,12 @@
       },
       {
         "group": "API legacy",
+        "hidden": true,
         "pages": [
           "release-notes/api/ns-80",
           "release-notes/api/ns-75",
           "release-notes/api/ns-71",
-          {
-            "group": "SuperOffice 7.0",
-            "pages": [
-              "release-notes/api/ns-70/aliasing-on-argumentfunctions",
-              "release-notes/api/ns-70/archiverestrictions",
-              "release-notes/api/ns-70/collectionops",
-              "release-notes/api/ns-70/commenting-queries",
-              "release-notes/api/ns-70/culturedataformatter",
-              "release-notes/api/ns-70/datetime",
-              "release-notes/api/ns-70/dynamic-archive-provider",
-              "release-notes/api/ns-70/fieldinfo-comments",
-              "release-notes/api/ns-70/groupby-and-sentry",
-              "release-notes/api/ns-70/multithreading",
-              "release-notes/api/ns-70/osql-meets-sentry",
-              "release-notes/api/ns-70/queryexecutionhelper",
-              "release-notes/api/ns-70/real-dates",
-              "release-notes/api/ns-70/row-improvements",
-              "release-notes/api/ns-70/softtriggers"
-            ]
-          },
+          "release-notes/api/ns-70",
           "release-notes/api/ns-31",
           "release-notes/api/ns-30"
         ]
