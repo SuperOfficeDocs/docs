@@ -9,6 +9,7 @@ content_type: release-note
 category: core crm
 audience: person
 audience_tooltip: SuperOffice CRM
+language: en
 ---
 
 # New and improved Core CRM

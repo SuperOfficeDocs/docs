@@ -7,6 +7,7 @@ date: 03.07.2023
 version: 10.2
 content_type: release-note
 category: marketing
+language: en
 ---
 
 # New and improved Marketing

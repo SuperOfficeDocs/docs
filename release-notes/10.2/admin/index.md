@@ -7,6 +7,7 @@ date: 12.12.2023
 version: 10.2
 content_type: release-note
 category: Settings and maintenance
+language: en
 ---
 
 # New and improved Settings and maintenance

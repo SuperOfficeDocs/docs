@@ -8,6 +8,7 @@ date: 05.05.2025
 version: 10.5
 content_type: release-note
 category: crm
+language: en
 ---
 
 # What's new in SuperOffice 10.5

@@ -7,6 +7,7 @@ date: 12.12.2023
 version: 10.2
 content_type: release-note
 category: core crm
+language: en
 ---
 
 # New and improved Core CRM

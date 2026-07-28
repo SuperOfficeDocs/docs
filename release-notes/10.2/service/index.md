@@ -8,6 +8,7 @@ date: 12.12.2023
 version: 10.2
 content_type: release-note
 category: service
+language: en
 ---
 
 # New and improved Service
