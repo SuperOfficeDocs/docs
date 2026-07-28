@@ -1,6 +1,7 @@
 ---
 uid: release-notes-10.5
 title: What's new in SuperOffice CRM 10.5
+sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice CRM 10.5
 keywords: AI copilot, new user interface, updated diary
 author: SuperOffice AS - Product and Engineering

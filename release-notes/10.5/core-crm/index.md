@@ -1,6 +1,7 @@
 ---
 uid: news-core-crm-10.5
 title: What's new in SuperOffice Core CRM 10.5
+sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Core CRM 10.5
 keywords: new UI
 author: SuperOffice AS - Product and Engineering

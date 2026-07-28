@@ -1,6 +1,7 @@
 ---
 uid: news-admin-10.2
 title: What's new in SuperOffice 10.2
+sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.2
 author: SuperOffice AS - Product and Engineering
 date: 12.12.2023

@@ -1,6 +1,7 @@
 ---
 uid: news-cep-10.0
 title: Customer engagement platform
+sidebarTitle: "Overview"
 description: Overview of Customer Engagement Platform improvements released across the SuperOffice 10.0 update.
 author: SuperOffice AS - Product and Engineering
 date: 02.22.2022

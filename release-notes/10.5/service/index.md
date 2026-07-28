@@ -1,6 +1,7 @@
 ---
 uid: news-service-10.5
 title: What's new in SuperOffice 10.5
+sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Service 10.5
 author: SuperOffice AS - Product and Engineering
 date: 05.05.2025

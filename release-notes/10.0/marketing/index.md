@@ -1,6 +1,7 @@
 ---
 uid: news-marketing-10.0
 title: New and improved Marketing
+sidebarTitle: "Overview"
 description: Overview of Marketing improvements released across the SuperOffice 10.0 update.
 keywords: marketing, mailing
 author: SuperOffice AS - Product and Engineering
