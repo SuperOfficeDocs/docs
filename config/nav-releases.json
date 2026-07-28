@@ -504,13 +504,7 @@
               "release-notes/10.1/admin/10.1.9-update"
             ]
           },
-          {
-            "group": "Service",
-            "pages": [
-              "release-notes/10.1/service/index",
-              "release-notes/10.1/service/10.1.4-update"
-            ]
-          },
+          "release-notes/10.1/service/10.1.4-update",
           {
             "group": "Marketing",
             "pages": [
