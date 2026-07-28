@@ -827,6 +827,8 @@
       },
       {
         "group": "SuperOffice 8.5",
+        "hidden": true,
+        "searchable": true,
         "pages": [
           "release-notes/8.5/index",
           {
