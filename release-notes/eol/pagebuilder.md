@@ -1,6 +1,7 @@
 ---
 uid: eol-pagebuilder
 title: End of life - Pagebuilder customization
+sidebarTitle: "Pagebuilder customization"
 description: This is a reminder of end of life for SuperOffice Pagebuilder customizations.
 keywords: Pagebuilder, EOL
 author: Trude Lien Smedbråten
@@ -25,5 +26,5 @@ This message is a heads up for those who have used this possibility to keep Page
 
 You are recommended to switch to the [Screen Designer][1].
 
-[1]: ../../en/customization/screen-designer/admin/index
-[2]: ../../en/ui/web-app/pagebuilder/index
+[1]: /en/customization/screen-designer/admin/index
+[2]: /en/ui/web-app/pagebuilder/index

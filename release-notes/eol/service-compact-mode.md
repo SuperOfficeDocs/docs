@@ -1,21 +1,19 @@
 ---
 uid: eol-service-compact-mode
 title: End of life - SuperOffice Service CompactMode
+sidebarTitle: "SuperOffice Service CompactMode"
 description: This is a formal announcement of end of life for our SuperOffice Service CompactMode
 keywords: Service, request, mobile, compact mode, CompactMode, Mobile CRM
 author: kirstiaa
-date: # 01.13.2026
+date: 01.13.2026
 version: 11.8
 content_type: release-note
-category: request, mobile
-topic: # within the category
-platform: # web win mobile api integration
-deployment: # onsite or online
-license: serviceessentials, servicepremium
-functional_right:
+category: mobile
+platform: mobile
+deployment: onsite
 audience: person
 audience_tooltip: SuperOffice CRM
-lang: en
+language: en
 ---
 
 # End of life - SuperOffice Service CompactMode
@@ -24,7 +22,7 @@ This is a formal announcement of End of Life for our SuperOffice Service Compact
 
 ## What does this mean for you as a customer?
 
-You can access our **SuperOffice Mobile CRM** app in our [Appstore][1]. This app allows you to access your SuperOffice Service requests in a modern native application for iOS and Android. In the app you can read, edit and create your requests on the go and get push-notifications when your requests get updated.
+You can access our **SuperOffice Mobile CRM** app in our [App Store][1]. This app allows you to access your SuperOffice Service requests in a modern native application for iOS and Android. In the app you can read, edit and create your requests on the go and get push-notifications when your requests get updated.
 
 ## Reasons for announcing End of Life are as follows
 

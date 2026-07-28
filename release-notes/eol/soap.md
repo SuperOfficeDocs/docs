@@ -1,9 +1,10 @@
 ---
 uid: eol-soap
 title: End of life - Future of SuperOffice.NetServer.Services package and SOAP web services
+sidebarTitle: "Future of SuperOffice.NetServer.Services package and SOAP web services"
 description: An important update regarding our SOAP support (SuperOffice.NetServer.Services package and SOAP web services)
 keywords: SuperOffice.NetServer.Services, SOAP, EOL
-author: Tony Yates
+author: AntonyYates
 date: 05.05.2026
 content_type: release-note
 deployment: onsite
@@ -26,7 +27,7 @@ However, we have observed a significant decline in its usage since the introduct
 
 ## SOAP interface of SuperOffice Service
 
-The **Service** SOAP API with the [Customer][7], [Ticket][9], and [Admin][8] ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to [SuperOffice.WebApi][5] (REST).
+The **Service** SOAP API with the Customer, Ticket, and Admin ports is not supported in SuperOffice Online 10.x and newer. In onsite installations, at least for version 10, Service SOAP services are controlled by a license. We encourage you to switch to [SuperOffice.WebApi][5] (REST).
 
 ## Migration status
 
@@ -47,11 +48,8 @@ Should you have any questions or require further information, please do not hesi
 You can read and comment on the [original post][1] in the SuperOffice technical forum.
 
 [1]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/future-of-superoffice.netserver.services-package-and-soap-web-services/
-[2]: ../../en/api/web-services/index
-[3]: ../../en/api/web-services/proxies/built-in
-[4]: ../../en/api/web-services/endpoints/soap/index
-[5]: ../../en/api/web-services/endpoints/rest-webapi/index
+[2]: /en/api/web-services/index
+[3]: /en/api/web-services/proxies/built-in
+[4]: /en/api/web-services/endpoints/soap/index
+[5]: /en/api/web-services/endpoints/rest-webapi/index
 [6]: https://www.nuget.org/packages/SuperOffice.NetServer.Services
-[7]: ../../en/api/reference/soap/customer-service/ports/customer/index
-[8]: ../../en/api/reference/soap/customer-service/ports/admin/index
-[9]: ../../en/api/reference/soap/customer-service/ports/ticket/index
