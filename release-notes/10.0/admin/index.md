@@ -1,11 +1,13 @@
 ---
 uid: news-admin-10.0
 title: New and improved Settings and maintenance
+description: Overview of Settings and maintenance improvements released across the SuperOffice 10.0 update.
 author: SuperOffice AS - Product and Engineering
 date: 03.14.2022
 version: 10
 content_type: release-note
 category: Settings and maintenance
+language: en
 ---
 
 # New and improved Settings and maintenance

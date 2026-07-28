@@ -1,6 +1,7 @@
 ---
 uid: news-api-10.0
 title: API changes
+description: API changes released across the SuperOffice 10.0 update, including CRMScript triggers for quote approval, TicketAgent notifications, and a webhook fix for bulk updates.
 keywords: API changes
 author: SuperOffice AS - Product and Engineering
 date: 03.14.2022
