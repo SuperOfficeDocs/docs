@@ -596,22 +596,18 @@
               "release-notes/10.0/cep/10.0.2-update"
             ]
           },
-          {
-            "group": "API",
-            "pages": [
-              "release-notes/10.0/api/index"
-            ]
-          }
+          "release-notes/10.0/api/index"
         ]
       },
       {
         "group": "SuperOffice 9.2",
         "hidden": true,
         "searchable": true,
+        "root": "release-notes/9.2/index",
         "pages": [
-          "release-notes/9.2/index",
           {
             "group": "Standard CRM",
+            "root": "release-notes/9.2/standard-crm/index",
             "pages": [
               "release-notes/9.2/standard-crm/9.2-R09-update",
               "release-notes/9.2/standard-crm/9.2-R08-update",
@@ -632,6 +628,7 @@
           },
           {
             "group": "Marketing",
+            "root": "release-notes/9.2/marketing/index",
             "pages": [
               "release-notes/9.2/marketing/9.2-R11-update",
               "release-notes/9.2/marketing/9.2-R10-update",
@@ -647,6 +644,7 @@
           },
           {
             "group": "Service",
+            "root": "release-notes/9.2/service/index",
             "pages": [
               "release-notes/9.2/service/9.2-R12-update",
               "release-notes/9.2/service/9.2-R11-update",
@@ -655,7 +653,12 @@
               "release-notes/9.2/service/9.2-R01-update"
             ]
           },
-          "release-notes/9.2/api/index",
+          {
+            "group": "API",
+            "pages": [
+              "release-notes/9.2/api/index"
+            ]
+          },
           "release-notes/database/changes-9.2"
         ]
       },
@@ -663,8 +666,8 @@
         "group": "SuperOffice 9.1",
         "hidden": true,
         "searchable": true,
+        "root": "release-notes/9.1/index",
         "pages": [
-          "release-notes/9.1/index",
           {
             "group": "Standard crm",
             "pages": [
@@ -683,10 +686,11 @@
         "group": "SuperOffice 8.5",
         "hidden": true,
         "searchable": true,
+        "root": "release-notes/8.5/index",
         "pages": [
-          "release-notes/8.5/index",
           {
             "group": "Standard crm",
+            "root": "release-notes/8.5/standard-crm/index",
             "pages": [
               "release-notes/8.5/standard-crm/8.5-R01-update",
               "release-notes/8.5/standard-crm/8.5-R02-update",
@@ -702,6 +706,7 @@
           },
           {
             "group": "Windows client",
+            "root": "release-notes/8.5/win-client/index",
             "pages": [
               "release-notes/8.5/win-client/8.5-R01-update",
               "release-notes/8.5/win-client/8.5-R11-update",
@@ -711,6 +716,7 @@
           },
           {
             "group": "Settings and Maintenance",
+            "root": "release-notes/8.5/admin/index",
             "pages": [
               "release-notes/8.5/admin/8.5-R02-update",
               "release-notes/8.5/admin/8.5-R04-update",
@@ -722,6 +728,7 @@
           },
           {
             "group": "Marketing",
+            "root": "release-notes/8.5/marketing/index",
             "pages": [
               "release-notes/8.5/marketing/8.5-R02-update",
               "release-notes/8.5/marketing/8.5-R04-update",
@@ -732,6 +739,7 @@
           },
           {
             "group": "Service",
+            "root": "release-notes/8.5/service/index",
             "pages": [
               "release-notes/8.5/service/8.5-R01-update",
               "release-notes/8.5/service/8.5-R02-update",
