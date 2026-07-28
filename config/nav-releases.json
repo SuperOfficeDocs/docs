@@ -532,13 +532,6 @@
               "release-notes/database/changes-10.1.5",
               "release-notes/database/changes-10.1.2"
             ]
-          },
-          {
-            "group": "Development Products",
-            "pages": [
-              "release-notes/10.1/development-products/index",
-              "release-notes/10.1/development-products/10.1.2-update"
-            ]
           }
         ]
       },

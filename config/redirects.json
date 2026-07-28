@@ -10718,5 +10718,9 @@
   {
     "source": "/release-notes/10.1/service/index",
     "destination": "/release-notes/10.1/service/10.1.4-update"
+  },
+  {
+    "source": "/release-notes/10.1/development-products/*",
+    "destination": "/release-notes/10.1/index"
   }
 ]
