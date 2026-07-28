@@ -1,59 +1,69 @@
 ---
-uid: version_10.5.2.332_changes
-date: 10.02.2025
+uid: news-api-10.5.2
+title: What's new in SuperOffice 10.5.2
+sidebarTitle: "10.5.2 - API changelog"
+description: Release notes. What's new in SuperOffice 10.5.2
+keywords: API changes
+author: SuperOffice AS - Product and Engineering
+generated: true
+date: 01.20.2025
+version: 10.5.2
+content_type: release-note
+category: api
+language: en
 ---
 
-\<- [Back](../10.5.2-update)
+# API changes
 
-Changes from v10.5.1.871 and v10.5.2.332
+## Changes from v10.5.1.871 to v10.5.2.332 {#10-5-2-332}
 
-## Web Services
+### Web services
 
 These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
-### Assembly: SuperOffice.Services
+#### Assembly: SuperOffice.Services
 
-### Modified Types
+#### Modified types
 
-#### SuperOffice.CRM.Services.AppointmentInfo is Modified
+##### SuperOffice.CRM.Services.AppointmentInfo is Modified
 
 * New items
   * Property `IsPrivate`
 
-#### SuperOffice.CRM.Services.IQuoteAgent is Modified
+##### SuperOffice.CRM.Services.IQuoteAgent is Modified
 
 * New items
   * Method `CreateAndSaveQuoteLines(Int32, String[])`
 
-#### SuperOffice.CRM.Services.Person is Modified
+##### SuperOffice.CRM.Services.Person is Modified
 
 * New items
   * Property `PersonNumber`
 
-#### SuperOffice.CRM.Services.QuoteAgent is Modified
+##### SuperOffice.CRM.Services.QuoteAgent is Modified
 
 * New items
   * Method `CreateAndSaveQuoteLines(Int32, String[])`
 
-## NetServer Core
+### NetServer core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
 
-### Assembly: SoCore
+#### Assembly: SoCore
 
-### New Types
+#### New types
 
 * `SuperOffice.Configuration.VersionProperties`
 * `SuperOffice.Configuration.VersionPropertyNames`
 
-### Modified Types
+#### Modified types
 
-#### SuperOffice.Data.EventHandlerType is Modified
+##### SuperOffice.Data.EventHandlerType is Modified
 
 * New items
   * Field `SalesSplitTicket`
 
-#### SuperOffice.Data.Registry is Modified
+##### SuperOffice.Data.Registry is Modified
 
 * Modified items
   * Field `AccessLicensePageWithoutLogin`
@@ -409,7 +419,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `WeekStatRecipient`
   * Field `WwwPath`
 
-#### SuperOffice.Globalization.RC is Modified
+##### SuperOffice.Globalization.RC is Modified
 
 * New items
   * Field `SR_DIARY_SCHEDULING_TOOLTIP`
@@ -420,42 +430,42 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Field `SR_TABS_REACHED_LIMIT`
   * Field `SR_TABS_TOO_MANY`
 
-### Assembly: SoDatabase
+#### Assembly: SoDatabase
 
-### Modified Types
+#### Modified types
 
-#### SuperOffice.CRM.Archives.PersonListItem is Modified
+##### SuperOffice.CRM.Archives.PersonListItem is Modified
 
 * New items
   * Property `PersonNumber`
 
-#### SuperOffice.CRM.Lists.EmailAddressProvider is Modified
+##### SuperOffice.CRM.Lists.EmailAddressProvider is Modified
 
-#### SuperOffice.CRM.Lists.EmailPhoneProvider is Modified
+##### SuperOffice.CRM.Lists.EmailPhoneProvider is Modified
 
-#### SuperOffice.Data.ServicePreferenceMappings is Modified
+##### SuperOffice.Data.ServicePreferenceMappings is Modified
 
 * Modified items
 
-##### SuperOffice.Data.ServicePreferenceMappings.PreferenceMappingInfo is Modified
+###### SuperOffice.Data.ServicePreferenceMappings.PreferenceMappingInfo is Modified
 
 * New items
   * Field `.PreferenceMappingInfoDefaultValue`
 
-#### SuperOffice.Data.SQL.TargetedSelect\<MainTableInfo\> is Modified
+##### SuperOffice.Data.SQL.TargetedSelect\<MainTableInfo\> is Modified
 
 * New items
   * Method `SetOriginText(String)`
 
-## Continuous Database
+### Continuous database
 
 The following represent changes to SuperOffice database schema.
 
-### Assembly: SuperOffice.CD.DSL.Database
+#### Assembly: SuperOffice.CD.DSL.Database
 
-### Modified Types
+#### Modified types
 
-#### SuperOffice.CD.Database.ActivityStatus is Modified
+##### SuperOffice.CD.Database.ActivityStatus is Modified
 
 * Modified items
   * Field `Completed`
@@ -463,7 +473,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Started`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.AddressType is Modified
+##### SuperOffice.CD.Database.AddressType is Modified
 
 * Modified items
   * Field `ContactPostalAddress`
@@ -473,7 +483,7 @@ The following represent changes to SuperOffice database schema.
   * Field `QuoteShippingAddress`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.AiTextStyle is Modified
+##### SuperOffice.CD.Database.AiTextStyle is Modified
 
 * Modified items
   * Field `Casual`
@@ -482,13 +492,13 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Rephrase`
 
-#### SuperOffice.CD.Database.AllDayEvent is Modified
+##### SuperOffice.CD.Database.AllDayEvent is Modified
 
 * Modified items
   * Field `No`
   * Field `Yes`
 
-#### SuperOffice.CD.Database.AppAvailState is Modified
+##### SuperOffice.CD.Database.AppAvailState is Modified
 
 * Modified items
   * Field `Always`
@@ -498,7 +508,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SatelliteDb`
   * Field `TravelDb`
 
-#### SuperOffice.CD.Database.AppointmentCautionWarning is Modified
+##### SuperOffice.CD.Database.AppointmentCautionWarning is Modified
 
 * Modified items
   * Field `ExternalParticipantsDateTimeMismatch`
@@ -508,14 +518,14 @@ The following represent changes to SuperOffice database schema.
   * Field `OK`
   * Field `RecurrencePatternNotSupported`
 
-#### SuperOffice.CD.Database.AppointmentPrivate is Modified
+##### SuperOffice.CD.Database.AppointmentPrivate is Modified
 
 * Modified items
   * Field `PrivateGroup`
   * Field `PrivateUser`
   * Field `Public`
 
-#### SuperOffice.CD.Database.AppointmentStatus is Modified
+##### SuperOffice.CD.Database.AppointmentStatus is Modified
 
 * Modified items
   * Field `Assignment`
@@ -533,7 +543,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Started`
   * Field `UnknownOrPostIt`
 
-#### SuperOffice.CD.Database.AppointmentType is Modified
+##### SuperOffice.CD.Database.AppointmentType is Modified
 
 * Modified items
   * Field `BookingForChecklist`
@@ -547,14 +557,14 @@ The following represent changes to SuperOffice database schema.
   * Field `SavedReport`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ArchiveBehaviour is Modified
+##### SuperOffice.CD.Database.ArchiveBehaviour is Modified
 
 * Modified items
   * Field `InArchives`
   * Field `MultiSelectInArchives`
   * Field `None`
 
-#### SuperOffice.CD.Database.AssignmentStatus is Modified
+##### SuperOffice.CD.Database.AssignmentStatus is Modified
 
 * Modified items
   * Field `Assigning`
@@ -563,7 +573,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Seen`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.AssociateSourceType is Modified
+##### SuperOffice.CD.Database.AssociateSourceType is Modified
 
 * Modified items
   * Field `All`
@@ -572,7 +582,7 @@ The following represent changes to SuperOffice database schema.
   * Field `History`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.AssociateType is Modified
+##### SuperOffice.CD.Database.AssociateType is Modified
 
 * Modified items
   * Field `Anonymous`
@@ -585,14 +595,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Resource`
   * Field `System`
 
-#### SuperOffice.CD.Database.BatchTaskCancellationBehaviour is Modified
+##### SuperOffice.CD.Database.BatchTaskCancellationBehaviour is Modified
 
 * Modified items
   * Field `CanCancel`
   * Field `CancelWithWarning`
   * Field `CannotCancel`
 
-#### SuperOffice.CD.Database.BatchTaskState is Modified
+##### SuperOffice.CD.Database.BatchTaskState is Modified
 
 * Modified items
   * Field `All`
@@ -604,7 +614,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SucceededManualCleanup`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.BlobLinkType is Modified
+##### SuperOffice.CD.Database.BlobLinkType is Modified
 
 * Modified items
   * Field `AccessToken`
@@ -627,7 +637,7 @@ The following represent changes to SuperOffice database schema.
   * Field `StatusMonitorImage`
   * Field `Thumbnail`
 
-#### SuperOffice.CD.Database.BookingType is Modified
+##### SuperOffice.CD.Database.BookingType is Modified
 
 * Modified items
   * Field `None`
@@ -635,7 +645,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Participant`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.CalMethod is Modified
+##### SuperOffice.CD.Database.CalMethod is Modified
 
 * Modified items
   * Field `Add`
@@ -648,7 +658,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Request`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.CalReplyStatus is Modified
+##### SuperOffice.CD.Database.CalReplyStatus is Modified
 
 * Modified items
   * Field `Accepted`
@@ -656,13 +666,13 @@ The following represent changes to SuperOffice database schema.
   * Field `Tentative`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ChangePasswordType is Modified
+##### SuperOffice.CD.Database.ChangePasswordType is Modified
 
 * Modified items
   * Field `Email`
   * Field `Password`
 
-#### SuperOffice.CD.Database.CheckoutState is Modified
+##### SuperOffice.CD.Database.CheckoutState is Modified
 
 * Modified items
   * Field `CheckedOutOther`
@@ -670,7 +680,7 @@ The following represent changes to SuperOffice database schema.
   * Field `LockingNotSupported`
   * Field `NotCheckedOut`
 
-#### SuperOffice.CD.Database.ColorIndex is Modified
+##### SuperOffice.CD.Database.ColorIndex is Modified
 
 * Modified items
   * Field `BlueAlt1`
@@ -699,7 +709,7 @@ The following represent changes to SuperOffice database schema.
   * Field `YellowAlt2`
   * Field `YellowAlt3`
 
-#### SuperOffice.CD.Database.CommandAction is Modified
+##### SuperOffice.CD.Database.CommandAction is Modified
 
 * Modified items
   * Field `Implicit`
@@ -707,7 +717,7 @@ The following represent changes to SuperOffice database schema.
   * Field `OkCancel`
   * Field `YesNo`
 
-#### SuperOffice.CD.Database.CommandActionResult is Modified
+##### SuperOffice.CD.Database.CommandActionResult is Modified
 
 * Modified items
   * Field `Cancel`
@@ -716,7 +726,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Ok`
   * Field `Yes`
 
-#### SuperOffice.CD.Database.ConceptualImageType is Modified
+##### SuperOffice.CD.Database.ConceptualImageType is Modified
 
 * Modified items
   * Field `EventImage`
@@ -726,7 +736,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Thumbnail`
   * Field `UndefinedImage`
 
-#### SuperOffice.CD.Database.ContactAction is Modified
+##### SuperOffice.CD.Database.ContactAction is Modified
 
 * Modified items
   * Field `ActivityCompleted`
@@ -739,7 +749,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `Updated`
 
-#### SuperOffice.CD.Database.ContactSourceType is Modified
+##### SuperOffice.CD.Database.ContactSourceType is Modified
 
 * Modified items
   * Field `All`
@@ -748,7 +758,7 @@ The following represent changes to SuperOffice database schema.
   * Field `History`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.CredentialControlType is Modified
+##### SuperOffice.CD.Database.CredentialControlType is Modified
 
 * Modified items
   * Field `Edit`
@@ -757,14 +767,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Password`
   * Field `Static`
 
-#### SuperOffice.CD.Database.CredentialUsage is Modified
+##### SuperOffice.CD.Database.CredentialUsage is Modified
 
 * Modified items
   * Field `Inbound`
   * Field `Outbound`
   * Field `Session`
 
-#### SuperOffice.CD.Database.CrmActorType is Modified
+##### SuperOffice.CD.Database.CrmActorType is Modified
 
 * Modified items
   * Field `Contact`
@@ -773,7 +783,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Sale`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.CustomFieldType is Modified
+##### SuperOffice.CD.Database.CustomFieldType is Modified
 
 * Modified items
   * Field `Attachment`
@@ -793,7 +803,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TimeSpan`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.DashboardLayout is Modified
+##### SuperOffice.CD.Database.DashboardLayout is Modified
 
 * Modified items
   * Field `Four`
@@ -804,7 +814,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TwoHorizontalSplit`
   * Field `TwoVerticalSplit`
 
-#### SuperOffice.CD.Database.DashboardTileEntityType is Modified
+##### SuperOffice.CD.Database.DashboardTileEntityType is Modified
 
 * Modified items
   * Field `Activity`
@@ -817,7 +827,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Sale`
   * Field `WebPanel`
 
-#### SuperOffice.CD.Database.DashboardTileOptionType is Modified
+##### SuperOffice.CD.Database.DashboardTileOptionType is Modified
 
 * Modified items
   * Field `Boolean`
@@ -826,7 +836,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `String`
 
-#### SuperOffice.CD.Database.DashboardTileType is Modified
+##### SuperOffice.CD.Database.DashboardTileType is Modified
 
 * Modified items
   * Field `Bignum`
@@ -835,7 +845,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Web`
 
-#### SuperOffice.CD.Database.DashTileCurrencyMode is Modified
+##### SuperOffice.CD.Database.DashTileCurrencyMode is Modified
 
 * Modified items
   * Field `Base`
@@ -843,7 +853,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Own`
   * Field `Specified`
 
-#### SuperOffice.CD.Database.DashTileEntityType is Modified
+##### SuperOffice.CD.Database.DashTileEntityType is Modified
 
 * Modified items
   * Field `Appointment`
@@ -853,7 +863,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Project`
   * Field `Sale`
 
-#### SuperOffice.CD.Database.DashTileMeasure is Modified
+##### SuperOffice.CD.Database.DashTileMeasure is Modified
 
 * Modified items
   * Field `Average`
@@ -864,7 +874,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Sum`
 
-#### SuperOffice.CD.Database.DashTileType is Modified
+##### SuperOffice.CD.Database.DashTileType is Modified
 
 * Modified items
   * Field `Area`
@@ -881,21 +891,21 @@ The following represent changes to SuperOffice database schema.
   * Field `Pie`
   * Field `WebPanel`
 
-#### SuperOffice.CD.Database.DashTileUsage is Modified
+##### SuperOffice.CD.Database.DashTileUsage is Modified
 
 * Modified items
   * Field `Dashboard`
   * Field `None`
   * Field `Selection`
 
-#### SuperOffice.CD.Database.DeltaState is Modified
+##### SuperOffice.CD.Database.DeltaState is Modified
 
 * Modified items
   * Field `Draft`
   * Field `Published`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.DeltaType is Modified
+##### SuperOffice.CD.Database.DeltaType is Modified
 
 * Modified items
   * Field `CustomFields`
@@ -905,7 +915,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `WebPanel`
 
-#### SuperOffice.CD.Database.DocTmplDirection is Modified
+##### SuperOffice.CD.Database.DocTmplDirection is Modified
 
 * Modified items
   * Field `Incoming`
@@ -913,7 +923,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SaintAll`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.DocTmplInvitationType is Modified
+##### SuperOffice.CD.Database.DocTmplInvitationType is Modified
 
 * Modified items
   * Field `Cancelled`
@@ -921,13 +931,13 @@ The following represent changes to SuperOffice database schema.
   * Field `New`
   * Field `None`
 
-#### SuperOffice.CD.Database.DocTmplPrivacyType is Modified
+##### SuperOffice.CD.Database.DocTmplPrivacyType is Modified
 
 * Modified items
   * Field `None`
   * Field `PersonRegistered`
 
-#### SuperOffice.CD.Database.DocTmplQuoteType is Modified
+##### SuperOffice.CD.Database.DocTmplQuoteType is Modified
 
 * Modified items
   * Field `ConfirmationLines`
@@ -937,7 +947,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `QuoteLines`
 
-#### SuperOffice.CD.Database.DocTmplType is Modified
+##### SuperOffice.CD.Database.DocTmplType is Modified
 
 * Modified items
   * Field `Appointment`
@@ -951,20 +961,20 @@ The following represent changes to SuperOffice database schema.
   * Field `Todo`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.DocumentHandler is Modified
+##### SuperOffice.CD.Database.DocumentHandler is Modified
 
 * Modified items
   * Field `WebOnly`
   * Field `WebToolsAndOnline`
 
-#### SuperOffice.CD.Database.DocumentLockSemantics is Modified
+##### SuperOffice.CD.Database.DocumentLockSemantics is Modified
 
 * Modified items
   * Field `Locking`
   * Field `None`
   * Field `Versioning`
 
-#### SuperOffice.CD.Database.DurationUnit is Modified
+##### SuperOffice.CD.Database.DurationUnit is Modified
 
 * Modified items
   * Field `Century`
@@ -981,7 +991,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Week`
   * Field `Year`
 
-#### SuperOffice.CD.Database.EFieldRight is Modified
+##### SuperOffice.CD.Database.EFieldRight is Modified
 
 * Modified items
   * Field `FULL`
@@ -998,7 +1008,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Update`
   * Field `Write`
 
-#### SuperOffice.CD.Database.EjUserStatus is Modified
+##### SuperOffice.CD.Database.EjUserStatus is Modified
 
 * Modified items
   * Field `StatusDeleted`
@@ -1009,7 +1019,7 @@ The following represent changes to SuperOffice database schema.
   * Field `StatusSpm`
   * Field `StatusSystem`
 
-#### SuperOffice.CD.Database.EMailFlags is Modified
+##### SuperOffice.CD.Database.EMailFlags is Modified
 
 * Modified items
   * Field `Answered`
@@ -1020,14 +1030,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Recent`
   * Field `Seen`
 
-#### SuperOffice.CD.Database.EmailFromType is Modified
+##### SuperOffice.CD.Database.EmailFromType is Modified
 
 * Modified items
   * Field `FromOnlySpecified`
   * Field `FromSalesContact`
   * Field `FromSupportContact`
 
-#### SuperOffice.CD.Database.EMailMergeTargetType is Modified
+##### SuperOffice.CD.Database.EMailMergeTargetType is Modified
 
 * Modified items
   * Field `BestFit`
@@ -1038,7 +1048,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Xml`
   * Field `XmlFax`
 
-#### SuperOffice.CD.Database.EMailPriority is Modified
+##### SuperOffice.CD.Database.EMailPriority is Modified
 
 * Modified items
   * Field `High`
@@ -1048,7 +1058,7 @@ The following represent changes to SuperOffice database schema.
   * Field `NoPriority`
   * Field `Normal`
 
-#### SuperOffice.CD.Database.EmailReplyToType is Modified
+##### SuperOffice.CD.Database.EmailReplyToType is Modified
 
 * Modified items
   * Field `ReplyToEmpty`
@@ -1056,14 +1066,14 @@ The following represent changes to SuperOffice database schema.
   * Field `ReplyToSalesContact`
   * Field `ReplyToSupportContact`
 
-#### SuperOffice.CD.Database.EmailType is Modified
+##### SuperOffice.CD.Database.EmailType is Modified
 
 * Modified items
   * Field `Chat`
   * Field `Email`
   * Field `VoiP`
 
-#### SuperOffice.CD.Database.ErpActorType is Modified
+##### SuperOffice.CD.Database.ErpActorType is Modified
 
 * Modified items
   * Field `Customer`
@@ -1075,14 +1085,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Supplier`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ErpSyncResponseCode is Modified
+##### SuperOffice.CD.Database.ErpSyncResponseCode is Modified
 
 * Modified items
   * Field `ErrorConnectorHasConnections`
   * Field `ErrorNotFound`
   * Field `NoError`
 
-#### SuperOffice.CD.Database.ETableRight is Modified
+##### SuperOffice.CD.Database.ETableRight is Modified
 
 * Modified items
   * Field `Delete`
@@ -1106,7 +1116,7 @@ The following represent changes to SuperOffice database schema.
   * Field `URU`
   * Field `WRITE`
 
-#### SuperOffice.CD.Database.ExecuteOnEvent is Modified
+##### SuperOffice.CD.Database.ExecuteOnEvent is Modified
 
 * Modified items
   * Field `LocalUpdate`
@@ -1115,7 +1125,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Never`
   * Field `Wait`
 
-#### SuperOffice.CD.Database.ExternalUserInfoModification is Modified
+##### SuperOffice.CD.Database.ExternalUserInfoModification is Modified
 
 * Modified items
   * Field `Active`
@@ -1125,14 +1135,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `UserName`
 
-#### SuperOffice.CD.Database.ExtraDataFieldType is Modified
+##### SuperOffice.CD.Database.ExtraDataFieldType is Modified
 
 * Modified items
   * Field `Image`
   * Field `String`
   * Field `Url`
 
-#### SuperOffice.CD.Database.ExtraFieldFlags is Modified
+##### SuperOffice.CD.Database.ExtraFieldFlags is Modified
 
 * Modified items
   * Field `CannotChange`
@@ -1160,14 +1170,14 @@ The following represent changes to SuperOffice database schema.
   * Field `ViewInList`
   * Field `ViewInSearch`
 
-#### SuperOffice.CD.Database.FieldAccess is Modified
+##### SuperOffice.CD.Database.FieldAccess is Modified
 
 * Modified items
   * Field `Mandatory`
   * Field `Normal`
   * Field `ReadOnly`
 
-#### SuperOffice.CD.Database.FieldDataType is Modified
+##### SuperOffice.CD.Database.FieldDataType is Modified
 
 * Modified items
   * Field `dbBlob`
@@ -1190,7 +1200,7 @@ The following represent changes to SuperOffice database schema.
   * Field `dbUShort`
   * Field `Undefined`
 
-#### SuperOffice.CD.Database.FieldMetadataType is Modified
+##### SuperOffice.CD.Database.FieldMetadataType is Modified
 
 * Modified items
   * Field `Checkbox`
@@ -1202,27 +1212,27 @@ The following represent changes to SuperOffice database schema.
   * Field `Password`
   * Field `Text`
 
-#### SuperOffice.CD.Database.FormsRecaptchaMode is Modified
+##### SuperOffice.CD.Database.FormsRecaptchaMode is Modified
 
 * Modified items
   * Field `GlobalKeysExist`
   * Field `KeysNeeded`
   * Field `NotAvailable`
 
-#### SuperOffice.CD.Database.FreeBusy is Modified
+##### SuperOffice.CD.Database.FreeBusy is Modified
 
 * Modified items
   * Field `Busy`
   * Field `Free`
 
-#### SuperOffice.CD.Database.FreeTextOperator is Modified
+##### SuperOffice.CD.Database.FreeTextOperator is Modified
 
 * Modified items
   * Field `Contains`
   * Field `ExactMatch`
   * Field `StartsWith`
 
-#### SuperOffice.CD.Database.GeneratorEncoding is Modified
+##### SuperOffice.CD.Database.GeneratorEncoding is Modified
 
 * Modified items
   * Field `Html`
@@ -1241,19 +1251,19 @@ The following represent changes to SuperOffice database schema.
   * Field `UrlUnicode`
   * Field `Xml`
 
-#### SuperOffice.CD.Database.HtmlSanitizerOptions is Modified
+##### SuperOffice.CD.Database.HtmlSanitizerOptions is Modified
 
 * Modified items
   * Field `Default`
   * Field `RemoveComment`
 
-#### SuperOffice.CD.Database.ImageEmbedType is Modified
+##### SuperOffice.CD.Database.ImageEmbedType is Modified
 
 * Modified items
   * Field `Inline`
   * Field `Link`
 
-#### SuperOffice.CD.Database.ImportAction is Modified
+##### SuperOffice.CD.Database.ImportAction is Modified
 
 * Modified items
   * Field `ContactAdded`
@@ -1269,21 +1279,21 @@ The following represent changes to SuperOffice database schema.
   * Field `ProductUpdated`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ImportBlankAction is Modified
+##### SuperOffice.CD.Database.ImportBlankAction is Modified
 
 * Modified items
   * Field `ImportPersonWithoutContact`
   * Field `Skip`
   * Field `UsePersonName`
 
-#### SuperOffice.CD.Database.ImportCompanyDuplicateAction is Modified
+##### SuperOffice.CD.Database.ImportCompanyDuplicateAction is Modified
 
 * Modified items
   * Field `Skip`
   * Field `UseBlankName`
   * Field `UsePersonName`
 
-#### SuperOffice.CD.Database.ImportContactDuplicateMatch is Modified
+##### SuperOffice.CD.Database.ImportContactDuplicateMatch is Modified
 
 * Modified items
   * Field `Code`
@@ -1293,7 +1303,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Number`
   * Field `OrgNr`
 
-#### SuperOffice.CD.Database.ImportDuplicateAction is Modified
+##### SuperOffice.CD.Database.ImportDuplicateAction is Modified
 
 * Modified items
   * Field `Add`
@@ -1301,7 +1311,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Replace`
   * Field `Skip`
 
-#### SuperOffice.CD.Database.ImportEntityType is Modified
+##### SuperOffice.CD.Database.ImportEntityType is Modified
 
 * Modified items
   * Field `Contact`
@@ -1309,14 +1319,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Product`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ImportNewListItem is Modified
+##### SuperOffice.CD.Database.ImportNewListItem is Modified
 
 * Modified items
   * Field `AddItemToList`
   * Field `SetToBlank`
   * Field `SetToDefault`
 
-#### SuperOffice.CD.Database.ImportPersonDuplicateMatch is Modified
+##### SuperOffice.CD.Database.ImportPersonDuplicateMatch is Modified
 
 * Modified items
   * Field `EMailAddress`
@@ -1326,14 +1336,14 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Number`
 
-#### SuperOffice.CD.Database.ImportPhoneUrlsEmail is Modified
+##### SuperOffice.CD.Database.ImportPhoneUrlsEmail is Modified
 
 * Modified items
   * Field `AddToList`
   * Field `Replace`
   * Field `Skip`
 
-#### SuperOffice.CD.Database.ImportProductDuplicateMatch is Modified
+##### SuperOffice.CD.Database.ImportProductDuplicateMatch is Modified
 
 * Modified items
   * Field `Code`
@@ -1341,14 +1351,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Name`
   * Field `NameCode`
 
-#### SuperOffice.CD.Database.InterRestrictionOperator is Modified
+##### SuperOffice.CD.Database.InterRestrictionOperator is Modified
 
 * Modified items
   * Field `And`
   * Field `None`
   * Field `Or`
 
-#### SuperOffice.CD.Database.InvitationStatus is Modified
+##### SuperOffice.CD.Database.InvitationStatus is Modified
 
 * Modified items
   * Field `Accepted`
@@ -1362,7 +1372,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Seen`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.LicenseStatus is Modified
+##### SuperOffice.CD.Database.LicenseStatus is Modified
 
 * Modified items
   * Field `NewCompanyNameAvailable`
@@ -1374,7 +1384,7 @@ The following represent changes to SuperOffice database schema.
   * Field `UseCustomMessage`
   * Field `UseCustomMessageAndUrl`
 
-#### SuperOffice.CD.Database.LicenseType is Modified
+##### SuperOffice.CD.Database.LicenseType is Modified
 
 * Modified items
   * Field `SatelliteLicense`
@@ -1382,7 +1392,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `UserLicense`
 
-#### SuperOffice.CD.Database.LocalizedTextType is Modified
+##### SuperOffice.CD.Database.LocalizedTextType is Modified
 
 * Modified items
   * Field `Column`
@@ -1404,7 +1414,7 @@ The following represent changes to SuperOffice database schema.
   * Field `UdefSaleLabel`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.LogEvent is Modified
+##### SuperOffice.CD.Database.LogEvent is Modified
 
 * Modified items
   * Field `Create`
@@ -1414,7 +1424,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Unlock`
 
-#### SuperOffice.CD.Database.MailboxType is Modified
+##### SuperOffice.CD.Database.MailboxType is Modified
 
 * Modified items
   * Field `Facebook`
@@ -1428,7 +1438,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SmsPlugin`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.MailClient is Modified
+##### SuperOffice.CD.Database.MailClient is Modified
 
 * Modified items
   * Field `ClientDefault`
@@ -1436,7 +1446,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Outlook`
   * Field `SuperOffice`
 
-#### SuperOffice.CD.Database.MessageActionType is Modified
+##### SuperOffice.CD.Database.MessageActionType is Modified
 
 * Modified items
   * Field `Forward`
@@ -1445,7 +1455,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Reply`
   * Field `ReplyAll`
 
-#### SuperOffice.CD.Database.MessageHeaderStdItem is Modified
+##### SuperOffice.CD.Database.MessageHeaderStdItem is Modified
 
 * Modified items
   * Field `CustomerReadFAQ`
@@ -1457,14 +1467,14 @@ The following represent changes to SuperOffice database schema.
   * Field `SentAutoReplyToCustomersB`
   * Field `UnnamedAttachmentBlocked`
 
-#### SuperOffice.CD.Database.MessageHeaderStdItemCol is Modified
+##### SuperOffice.CD.Database.MessageHeaderStdItemCol is Modified
 
 * Modified items
   * Field `Name`
   * Field `None`
   * Field `Value`
 
-#### SuperOffice.CD.Database.Navigation is Modified
+##### SuperOffice.CD.Database.Navigation is Modified
 
 * Modified items
   * Field `ActivityDialog`
@@ -1541,7 +1551,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TopPanelNewMenu`
   * Field `ViewMenu`
 
-#### SuperOffice.CD.Database.NetServerBuildType is Modified
+##### SuperOffice.CD.Database.NetServerBuildType is Modified
 
 * Modified items
   * Field `Alpha`
@@ -1551,7 +1561,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ReleaseCandidate`
   * Field `Stable`
 
-#### SuperOffice.CD.Database.NotificationEventType is Modified
+##### SuperOffice.CD.Database.NotificationEventType is Modified
 
 * Modified items
   * Field `AppointmentCancelled`
@@ -1567,7 +1577,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TicketEscalated`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.NotificationMessageType is Modified
+##### SuperOffice.CD.Database.NotificationMessageType is Modified
 
 * Modified items
   * Field `ImportantMessage`
@@ -1576,7 +1586,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ShowWebPage`
   * Field `YesNoQuestion`
 
-#### SuperOffice.CD.Database.NotificationPlatform is Modified
+##### SuperOffice.CD.Database.NotificationPlatform is Modified
 
 * Modified items
   * Field `Apple`
@@ -1586,13 +1596,13 @@ The following represent changes to SuperOffice database schema.
   * Field `GoogleDeveloper`
   * Field `Microsoft`
 
-#### SuperOffice.CD.Database.OrderBySortType is Modified
+##### SuperOffice.CD.Database.OrderBySortType is Modified
 
 * Modified items
   * Field `ASC`
   * Field `DESC`
 
-#### SuperOffice.CD.Database.PhoneType is Modified
+##### SuperOffice.CD.Database.PhoneType is Modified
 
 * Modified items
   * Field `ContactFax`
@@ -1604,7 +1614,7 @@ The following represent changes to SuperOffice database schema.
   * Field `PersonPrivate`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.PrefDescAccessFlags is Modified
+##### SuperOffice.CD.Database.PrefDescAccessFlags is Modified
 
 * Modified items
   * Field `adminGUI`
@@ -1613,7 +1623,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `WizardMode`
 
-#### SuperOffice.CD.Database.PrefDescValueType is Modified
+##### SuperOffice.CD.Database.PrefDescValueType is Modified
 
 * Modified items
   * Field `Bool`
@@ -1633,7 +1643,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TimeZone`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.PreferenceLevel is Modified
+##### SuperOffice.CD.Database.PreferenceLevel is Modified
 
 * Modified items
   * Field `Database`
@@ -1644,13 +1654,13 @@ The following represent changes to SuperOffice database schema.
   * Field `SystemWide`
   * Field `Undefined`
 
-#### SuperOffice.CD.Database.PublishType is Modified
+##### SuperOffice.CD.Database.PublishType is Modified
 
 * Modified items
   * Field `External`
   * Field `Undefined`
 
-#### SuperOffice.CD.Database.QuoteStatus is Modified
+##### SuperOffice.CD.Database.QuoteStatus is Modified
 
 * Modified items
   * Field `Error`
@@ -1658,7 +1668,7 @@ The following represent changes to SuperOffice database schema.
   * Field `OkWithInfo`
   * Field `Warning`
 
-#### SuperOffice.CD.Database.QuoteVersionButtonAction is Modified
+##### SuperOffice.CD.Database.QuoteVersionButtonAction is Modified
 
 * Modified items
   * Field `Approve`
@@ -1674,7 +1684,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ValidateVersionAndPlaceOrderIfPossible`
   * Field `ValidateVersionAndSendIfPossible`
 
-#### SuperOffice.CD.Database.QuoteVersionState is Modified
+##### SuperOffice.CD.Database.QuoteVersionState is Modified
 
 * Modified items
   * Field `Archived`
@@ -1688,7 +1698,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Sold`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.RecipientType is Modified
+##### SuperOffice.CD.Database.RecipientType is Modified
 
 * Modified items
   * Field `BCC`
@@ -1696,7 +1706,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Sms`
   * Field `To`
 
-#### SuperOffice.CD.Database.RecurrenceDailyPattern is Modified
+##### SuperOffice.CD.Database.RecurrenceDailyPattern is Modified
 
 * Modified items
   * Field `EveryCyclicDay`
@@ -1704,21 +1714,21 @@ The following represent changes to SuperOffice database schema.
   * Field `EveryWorkday`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.RecurrenceEndType is Modified
+##### SuperOffice.CD.Database.RecurrenceEndType is Modified
 
 * Modified items
   * Field `Counter`
   * Field `EndDate`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.RecurrenceMonthlyPattern is Modified
+##### SuperOffice.CD.Database.RecurrenceMonthlyPattern is Modified
 
 * Modified items
   * Field `DayOfMonth`
   * Field `Unknown`
   * Field `WeekdayOfMonth`
 
-#### SuperOffice.CD.Database.RecurrencePattern is Modified
+##### SuperOffice.CD.Database.RecurrencePattern is Modified
 
 * Modified items
   * Field `Custom`
@@ -1728,7 +1738,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Weekly`
   * Field `Yearly`
 
-#### SuperOffice.CD.Database.RecurrenceUpdateMode is Modified
+##### SuperOffice.CD.Database.RecurrenceUpdateMode is Modified
 
 * Modified items
   * Field `OnlyThis`
@@ -1736,14 +1746,14 @@ The following represent changes to SuperOffice database schema.
   * Field `ThisAndForward`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.RecurrenceYearlyPattern is Modified
+##### SuperOffice.CD.Database.RecurrenceYearlyPattern is Modified
 
 * Modified items
   * Field `DayOfMonth`
   * Field `Unknown`
   * Field `WeekdayOfMonth`
 
-#### SuperOffice.CD.Database.RefcountFlags is Modified
+##### SuperOffice.CD.Database.RefcountFlags is Modified
 
 * Modified items
   * Field `Allocate`
@@ -1752,7 +1762,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unique`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.Registry is Modified
+##### SuperOffice.CD.Database.Registry is Modified
 
 * Modified items
   * Field `AccessLicensePageWithoutLogin`
@@ -2134,7 +2144,7 @@ The following represent changes to SuperOffice database schema.
   * Field `WeekStatRecipient`
   * Field `WwwPath`
 
-#### SuperOffice.CD.Database.RelationTarget is Modified
+##### SuperOffice.CD.Database.RelationTarget is Modified
 
 * Modified items
   * Field `Both`
@@ -2142,7 +2152,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Person`
 
-#### SuperOffice.CD.Database.ReportCategory is Modified
+##### SuperOffice.CD.Database.ReportCategory is Modified
 
 * Modified items
   * Field `All`
@@ -2156,7 +2166,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Sale`
   * Field `Selection`
 
-#### SuperOffice.CD.Database.ReportLayout is Modified
+##### SuperOffice.CD.Database.ReportLayout is Modified
 
 * Modified items
   * Field `CalendarMonth`
@@ -2169,14 +2179,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Text`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ReportPaperOrientation is Modified
+##### SuperOffice.CD.Database.ReportPaperOrientation is Modified
 
 * Modified items
   * Field `Landscape`
   * Field `None`
   * Field `Portrait`
 
-#### SuperOffice.CD.Database.ReturnType is Modified
+##### SuperOffice.CD.Database.ReturnType is Modified
 
 * Modified items
   * Field `CustomGui`
@@ -2186,7 +2196,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SoProtocol`
   * Field `URL`
 
-#### SuperOffice.CD.Database.RoleRelationToOwner is Modified
+##### SuperOffice.CD.Database.RoleRelationToOwner is Modified
 
 * Modified items
   * Field `Anonymous`
@@ -2198,7 +2208,7 @@ The following represent changes to SuperOffice database schema.
   * Field `PrimaryGroup`
   * Field `SameProject`
 
-#### SuperOffice.CD.Database.RoleType is Modified
+##### SuperOffice.CD.Database.RoleType is Modified
 
 * Modified items
   * Field `Anonymous`
@@ -2206,14 +2216,14 @@ The following represent changes to SuperOffice database schema.
   * Field `ExternalUser`
   * Field `System`
 
-#### SuperOffice.CD.Database.SaleDone is Modified
+##### SuperOffice.CD.Database.SaleDone is Modified
 
 * Modified items
   * Field `Done`
   * Field `NotDone`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.SaleStatus is Modified
+##### SuperOffice.CD.Database.SaleStatus is Modified
 
 * Modified items
   * Field `Lost`
@@ -2223,7 +2233,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Stalled`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ScreenChooserType is Modified
+##### SuperOffice.CD.Database.ScreenChooserType is Modified
 
 * Modified items
   * Field `CompactModeInjection`
@@ -2255,7 +2265,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TicketReopenedFromCustomerCenter`
   * Field `TicketReopenedFromEmail`
 
-#### SuperOffice.CD.Database.SelectionSystemType is Modified
+##### SuperOffice.CD.Database.SelectionSystemType is Modified
 
 * Modified items
   * Field `DashboardTileSelection`
@@ -2265,14 +2275,14 @@ The following represent changes to SuperOffice database schema.
   * Field `TemporaryShortTermStatic`
   * Field `User`
 
-#### SuperOffice.CD.Database.SelectionType is Modified
+##### SuperOffice.CD.Database.SelectionType is Modified
 
 * Modified items
   * Field `Combined`
   * Field `Dynamic`
   * Field `Static`
 
-#### SuperOffice.CD.Database.SelectionUnionType is Modified
+##### SuperOffice.CD.Database.SelectionUnionType is Modified
 
 * Modified items
   * Field `Intersect`
@@ -2282,7 +2292,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `XOR`
 
-#### SuperOffice.CD.Database.SenderMailMode is Modified
+##### SuperOffice.CD.Database.SenderMailMode is Modified
 
 * Modified items
   * Field `UseDefaultSender`
@@ -2290,7 +2300,7 @@ The following represent changes to SuperOffice database schema.
   * Field `UseOurContact`
   * Field `UseSupportContact`
 
-#### SuperOffice.CD.Database.ShipmentAddrStatus is Modified
+##### SuperOffice.CD.Database.ShipmentAddrStatus is Modified
 
 * Modified items
   * Field `Blocked`
@@ -2306,7 +2316,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TooManyBounces`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ShipmentFlags is Modified
+##### SuperOffice.CD.Database.ShipmentFlags is Modified
 
 * Modified items
   * Field `FromAlwaysForward`
@@ -2328,7 +2338,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ReplyToSalesContact`
   * Field `TrackRecipients`
 
-#### SuperOffice.CD.Database.ShipmentLinkAction is Modified
+##### SuperOffice.CD.Database.ShipmentLinkAction is Modified
 
 * Modified items
   * Field `AddRequest`
@@ -2346,14 +2356,14 @@ The following represent changes to SuperOffice database schema.
   * Field `SetContactInterest`
   * Field `SetPersonInterest`
 
-#### SuperOffice.CD.Database.ShipmentLinkRedirectKind is Modified
+##### SuperOffice.CD.Database.ShipmentLinkRedirectKind is Modified
 
 * Modified items
   * Field `RedirectToURL`
   * Field `ShowForm`
   * Field `ShowText`
 
-#### SuperOffice.CD.Database.ShipmentLinkTaskFlags is Modified
+##### SuperOffice.CD.Database.ShipmentLinkTaskFlags is Modified
 
 * Modified items
   * Field `AssignToOurContact`
@@ -2361,7 +2371,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `UseNextAvailableTime`
 
-#### SuperOffice.CD.Database.ShipmentLinkType is Modified
+##### SuperOffice.CD.Database.ShipmentLinkType is Modified
 
 * Modified items
   * Field `Consent`
@@ -2370,13 +2380,13 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `Unsubscribe`
 
-#### SuperOffice.CD.Database.ShipmentListStatus is Modified
+##### SuperOffice.CD.Database.ShipmentListStatus is Modified
 
 * Modified items
   * Field `NotSent`
   * Field `Sent`
 
-#### SuperOffice.CD.Database.ShipmentStatus is Modified
+##### SuperOffice.CD.Database.ShipmentStatus is Modified
 
 * Modified items
   * Field `AwaitPopulate`
@@ -2394,7 +2404,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TooManyRecipients`
   * Field `Waiting`
 
-#### SuperOffice.CD.Database.ShowState is Modified
+##### SuperOffice.CD.Database.ShowState is Modified
 
 * Modified items
   * Field `AddressBar`
@@ -2405,21 +2415,21 @@ The following represent changes to SuperOffice database schema.
   * Field `StatusBar`
   * Field `ToolBar`
 
-#### SuperOffice.CD.Database.ShowTaskItemInClient is Modified
+##### SuperOffice.CD.Database.ShowTaskItemInClient is Modified
 
 * Modified items
   * Field `Mobile`
   * Field `None`
   * Field `Web`
 
-#### SuperOffice.CD.Database.ShowWindowState is Modified
+##### SuperOffice.CD.Database.ShowWindowState is Modified
 
 * Modified items
   * Field `Maximized`
   * Field `Minimized`
   * Field `Normal`
 
-#### SuperOffice.CD.Database.StatusScreenPanelType is Modified
+##### SuperOffice.CD.Database.StatusScreenPanelType is Modified
 
 * Modified items
   * Field `Hotlist`
@@ -2441,7 +2451,7 @@ The following represent changes to SuperOffice database schema.
   * Field `UserResponseTimePerDay`
   * Field `UserResponseTimePerMonth`
 
-#### SuperOffice.CD.Database.StringSearchType is Modified
+##### SuperOffice.CD.Database.StringSearchType is Modified
 
 * Modified items
   * Field `BeginsWith`
@@ -2449,7 +2459,7 @@ The following represent changes to SuperOffice database schema.
   * Field `EndsWith`
   * Field `Exact`
 
-#### SuperOffice.CD.Database.SystemEventScope is Modified
+##### SuperOffice.CD.Database.SystemEventScope is Modified
 
 * Modified items
   * Field `Database`
@@ -2458,7 +2468,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Undefined`
   * Field `User`
 
-#### SuperOffice.CD.Database.SystemMessageType is Modified
+##### SuperOffice.CD.Database.SystemMessageType is Modified
 
 * Modified items
   * Field `Error`
@@ -2466,7 +2476,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unspecified`
   * Field `Warning`
 
-#### SuperOffice.CD.Database.TargetAssignementLevel is Modified
+##### SuperOffice.CD.Database.TargetAssignementLevel is Modified
 
 * Modified items
   * Field `Associate`
@@ -2474,13 +2484,13 @@ The following represent changes to SuperOffice database schema.
   * Field `Group`
   * Field `None`
 
-#### SuperOffice.CD.Database.TargetEntityType is Modified
+##### SuperOffice.CD.Database.TargetEntityType is Modified
 
 * Modified items
   * Field `None`
   * Field `Sale`
 
-#### SuperOffice.CD.Database.TargetLevel is Modified
+##### SuperOffice.CD.Database.TargetLevel is Modified
 
 * Modified items
   * Field `Associate`
@@ -2489,7 +2499,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `UserGroup`
 
-#### SuperOffice.CD.Database.TargetMeasurementUnit is Modified
+##### SuperOffice.CD.Database.TargetMeasurementUnit is Modified
 
 * Modified items
   * Field `Amount`
@@ -2497,7 +2507,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Profit`
 
-#### SuperOffice.CD.Database.TargetPeriodType is Modified
+##### SuperOffice.CD.Database.TargetPeriodType is Modified
 
 * Modified items
   * Field `HalfYear`
@@ -2506,7 +2516,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Quarter`
   * Field `Year`
 
-#### SuperOffice.CD.Database.TaskDirection is Modified
+##### SuperOffice.CD.Database.TaskDirection is Modified
 
 * Modified items
   * Field `Incoming`
@@ -2514,7 +2524,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SaintAll`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.TaskListItemType is Modified
+##### SuperOffice.CD.Database.TaskListItemType is Modified
 
 * Modified items
   * Field `CrmScript`
@@ -2522,7 +2532,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SoProtocol`
   * Field `Url`
 
-#### SuperOffice.CD.Database.TaskType is Modified
+##### SuperOffice.CD.Database.TaskType is Modified
 
 * Modified items
   * Field `Appointment`
@@ -2537,7 +2547,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ToDo`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.TemporaryKeyDomain is Modified
+##### SuperOffice.CD.Database.TemporaryKeyDomain is Modified
 
 * Modified items
   * Field `ChangePasswordCustomerCenter`
@@ -2549,7 +2559,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `ViewTicketInCustomerCenter`
 
-#### SuperOffice.CD.Database.TextType is Modified
+##### SuperOffice.CD.Database.TextType is Modified
 
 * Modified items
   * Field `AppointmentText`
@@ -2581,7 +2591,7 @@ The following represent changes to SuperOffice database schema.
   * Field `UdefListSQL`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.TicketBaseStatus is Modified
+##### SuperOffice.CD.Database.TicketBaseStatus is Modified
 
 * Modified items
   * Field `Active`
@@ -2599,7 +2609,7 @@ The following represent changes to SuperOffice database schema.
   * Field `PostponedWeek`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.TicketLogAction is Modified
+##### SuperOffice.CD.Database.TicketLogAction is Modified
 
 * Modified items
   * Field `Message_AddedDebugInfo`
@@ -2677,7 +2687,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Ticket_UserDeletedOwneraction`
   * Field `Ticket_UserTakesOwnership`
 
-#### SuperOffice.CD.Database.TicketLogFieldChange is Modified
+##### SuperOffice.CD.Database.TicketLogFieldChange is Modified
 
 * Modified items
   * Field `Activate`
@@ -2746,7 +2756,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TimeToReply`
   * Field `Title`
 
-#### SuperOffice.CD.Database.TicketOrigin is Modified
+##### SuperOffice.CD.Database.TicketOrigin is Modified
 
 * Modified items
   * Field `AutoGenerated`
@@ -2763,7 +2773,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Twitter`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.TicketStatusTimeCounter is Modified
+##### SuperOffice.CD.Database.TicketStatusTimeCounter is Modified
 
 * Modified items
   * Field `Externally`
@@ -2771,21 +2781,21 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Queue`
 
-#### SuperOffice.CD.Database.TravelEncryptionChild is Modified
+##### SuperOffice.CD.Database.TravelEncryptionChild is Modified
 
 * Modified items
   * Field `BF128`
   * Field `None`
   * Field `Serial`
 
-#### SuperOffice.CD.Database.TravelEncryptionOwn is Modified
+##### SuperOffice.CD.Database.TravelEncryptionOwn is Modified
 
 * Modified items
   * Field `BF128`
   * Field `None`
   * Field `Serial`
 
-#### SuperOffice.CD.Database.TrlogTransType is Modified
+##### SuperOffice.CD.Database.TrlogTransType is Modified
 
 * Modified items
   * Field `Delete`
@@ -2810,14 +2820,14 @@ The following represent changes to SuperOffice database schema.
   * Field `UpdateOwner`
   * Field `UpdateProject`
 
-#### SuperOffice.CD.Database.TtlFlags is Modified
+##### SuperOffice.CD.Database.TtlFlags is Modified
 
 * Modified items
   * Field `Imported`
   * Field `MassOperation`
   * Field `None`
 
-#### SuperOffice.CD.Database.UDefFieldType is Modified
+##### SuperOffice.CD.Database.UDefFieldType is Modified
 
 * Modified items
   * Field `Checkbox`
@@ -2829,7 +2839,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ShortText`
   * Field `UnlimitedDate`
 
-#### SuperOffice.CD.Database.UdefJustification is Modified
+##### SuperOffice.CD.Database.UdefJustification is Modified
 
 * Modified items
   * Field `Center`
@@ -2837,7 +2847,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Left`
   * Field `Right`
 
-#### SuperOffice.CD.Database.UDefType is Modified
+##### SuperOffice.CD.Database.UDefType is Modified
 
 * Modified items
   * Field `Appointment`
@@ -2850,14 +2860,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Sale`
   * Field `Temp`
 
-#### SuperOffice.CD.Database.UpsertNomatchAction is Modified
+##### SuperOffice.CD.Database.UpsertNomatchAction is Modified
 
 * Modified items
   * Field `DeleteRow`
   * Field `NoChange`
   * Field `ZeroColumns`
 
-#### SuperOffice.CD.Database.UpsertRowActionStatus is Modified
+##### SuperOffice.CD.Database.UpsertRowActionStatus is Modified
 
 * Modified items
   * Field `ColumnsZeroed`
@@ -2866,7 +2876,7 @@ The following represent changes to SuperOffice database schema.
   * Field `NoUpdateNeeded`
   * Field `Updated`
 
-#### SuperOffice.CD.Database.UrlEncoding is Modified
+##### SuperOffice.CD.Database.UrlEncoding is Modified
 
 * Modified items
   * Field `ANSI`
@@ -2874,7 +2884,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unicode`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.UserType is Modified
+##### SuperOffice.CD.Database.UserType is Modified
 
 * Modified items
   * Field `AnonymousAssociate`
@@ -2884,7 +2894,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SystemAssociate`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.ValueOverride is Modified
+##### SuperOffice.CD.Database.ValueOverride is Modified
 
 * Modified items
   * Field `DiscountAmount`
@@ -2894,21 +2904,21 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Total`
 
-#### SuperOffice.CD.Database.VideoMeetingStatus is Modified
+##### SuperOffice.CD.Database.VideoMeetingStatus is Modified
 
 * Modified items
   * Field `NoChange`
   * Field `VideoMeetingOff`
   * Field `VideoMeetingOn`
 
-#### SuperOffice.CD.Database.Visibility is Modified
+##### SuperOffice.CD.Database.Visibility is Modified
 
 * Modified items
   * Field `All`
   * Field `Associate`
   * Field `Group`
 
-#### SuperOffice.CD.Database.WebhookState is Modified
+##### SuperOffice.CD.Database.WebhookState is Modified
 
 * Modified items
   * Field `Active`
@@ -2916,7 +2926,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TooManyErrors`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.Weekday is Modified
+##### SuperOffice.CD.Database.Weekday is Modified
 
 * Modified items
   * Field `Friday`
@@ -2928,7 +2938,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `Wednesday`
 
-#### SuperOffice.CD.Database.WeekOfMonth is Modified
+##### SuperOffice.CD.Database.WeekOfMonth is Modified
 
 * Modified items
   * Field `First`
@@ -2938,7 +2948,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Third`
   * Field `Unknown`
 
-#### SuperOffice.CD.Database.WorkflowActionType is Modified
+##### SuperOffice.CD.Database.WorkflowActionType is Modified
 
 * Modified items
   * Field `After`
@@ -2948,7 +2958,7 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Today`
 
-#### SuperOffice.CD.Database.WorkflowContentType is Modified
+##### SuperOffice.CD.Database.WorkflowContentType is Modified
 
 * Modified items
   * Field `Form`
@@ -2956,7 +2966,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Message`
   * Field `None`
 
-#### SuperOffice.CD.Database.WorkflowDefinitionStatus is Modified
+##### SuperOffice.CD.Database.WorkflowDefinitionStatus is Modified
 
 * Modified items
   * Field `None`
@@ -2964,7 +2974,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Running`
   * Field `Stopped`
 
-#### SuperOffice.CD.Database.WorkflowEventType is Modified
+##### SuperOffice.CD.Database.WorkflowEventType is Modified
 
 * Modified items
   * Field `AddedMessage`
@@ -2983,7 +2993,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SaleSold`
   * Field `StartedChat`
 
-#### SuperOffice.CD.Database.WorkflowGoalType is Modified
+##### SuperOffice.CD.Database.WorkflowGoalType is Modified
 
 * Modified items
   * Field `AddedToProject`
@@ -2998,7 +3008,7 @@ The following represent changes to SuperOffice database schema.
   * Field `SaleCreatedOnCompany`
   * Field `SaleCreatedOnPerson`
 
-#### SuperOffice.CD.Database.WorkflowInstanceStatus is Modified
+##### SuperOffice.CD.Database.WorkflowInstanceStatus is Modified
 
 * Modified items
   * Field `Active`
@@ -3009,21 +3019,21 @@ The following represent changes to SuperOffice database schema.
   * Field `Idle`
   * Field `None`
 
-#### SuperOffice.CD.Database.WorkflowNotifyEmailType is Modified
+##### SuperOffice.CD.Database.WorkflowNotifyEmailType is Modified
 
 * Modified items
   * Field `OurContact`
   * Field `OurServiceContact`
   * Field `SpecificEmailAddress`
 
-#### SuperOffice.CD.Database.WorkflowNotifySMSType is Modified
+##### SuperOffice.CD.Database.WorkflowNotifySMSType is Modified
 
 * Modified items
   * Field `OurContact`
   * Field `OurServiceContact`
   * Field `SpecificPhoneNumbers`
 
-#### SuperOffice.CD.Database.WorkflowOwnerType is Modified
+##### SuperOffice.CD.Database.WorkflowOwnerType is Modified
 
 * Modified items
   * Field `None`
@@ -3031,7 +3041,7 @@ The following represent changes to SuperOffice database schema.
   * Field `OurSupportContact`
   * Field `Specified`
 
-#### SuperOffice.CD.Database.WorkflowSplitOptionType is Modified
+##### SuperOffice.CD.Database.WorkflowSplitOptionType is Modified
 
 * Modified items
   * Field `FormData`
@@ -3042,7 +3052,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ProjectMembership`
   * Field `SelectionMembership`
 
-#### SuperOffice.CD.Database.WorkflowStepType is Modified
+##### SuperOffice.CD.Database.WorkflowStepType is Modified
 
 * Modified items
   * Field `AddToList`
@@ -3061,7 +3071,7 @@ The following represent changes to SuperOffice database schema.
   * Field `WaitForAction`
   * Field `WaitForTime`
 
-#### SuperOffice.CD.Database.WorkflowTimeWaitAlgorithm is Modified
+##### SuperOffice.CD.Database.WorkflowTimeWaitAlgorithm is Modified
 
 * Modified items
   * Field `None`
@@ -3069,7 +3079,7 @@ The following represent changes to SuperOffice database schema.
   * Field `UntilDateField`
   * Field `UntilSpecified`
 
-#### SuperOffice.CD.Database.WorkflowTimeWaitIntervalType is Modified
+##### SuperOffice.CD.Database.WorkflowTimeWaitIntervalType is Modified
 
 * Modified items
   * Field `Days`
@@ -3080,7 +3090,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Weeks`
   * Field `WorkingDays`
 
-#### SuperOffice.CD.Database.WorkflowTriggerType is Modified
+##### SuperOffice.CD.Database.WorkflowTriggerType is Modified
 
 * Modified items
   * Field `AddedMessage`
@@ -3098,14 +3108,14 @@ The following represent changes to SuperOffice database schema.
   * Field `SaleSold`
   * Field `StartedChat`
 
-#### SuperOffice.CD.Database.WorkflowWaitForActionType is Modified
+##### SuperOffice.CD.Database.WorkflowWaitForActionType is Modified
 
 * Modified items
   * Field `FormSubmitted`
   * Field `LinkClicked`
   * Field `None`
 
-#### SuperOffice.CD.DSL.Database.BadgeType is Modified
+##### SuperOffice.CD.DSL.Database.BadgeType is Modified
 
 * Modified items
   * Field `Comment`
@@ -3115,38 +3125,38 @@ The following represent changes to SuperOffice database schema.
   * Field `Reply`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.CcTemplateType is Modified
+##### SuperOffice.CD.DSL.Database.CcTemplateType is Modified
 
 * Modified items
   * Field `FromDisk`
   * Field `FromReplyTemplate`
 
-#### SuperOffice.CD.DSL.Database.ChatSessionFlags is Modified
+##### SuperOffice.CD.DSL.Database.ChatSessionFlags is Modified
 
 * Modified items
   * Field `CustomerIsTyping`
   * Field `UserIsTyping`
 
-#### SuperOffice.CD.DSL.Database.ChatStatus is Modified
+##### SuperOffice.CD.DSL.Database.ChatStatus is Modified
 
 * Modified items
   * Field `NotPresent`
   * Field `Present`
 
-#### SuperOffice.CD.DSL.Database.ConfigType is Modified
+##### SuperOffice.CD.DSL.Database.ConfigType is Modified
 
 * Modified items
   * Field `Options`
   * Field `Style`
 
-#### SuperOffice.CD.DSL.Database.DesignType is Modified
+##### SuperOffice.CD.DSL.Database.DesignType is Modified
 
 * Modified items
   * Field `SOEditor`
   * Field `Unknown`
   * Field `Unlayer`
 
-#### SuperOffice.CD.DSL.Database.Domain is Modified
+##### SuperOffice.CD.DSL.Database.Domain is Modified
 
 * Modified items
   * Field `Dashboards`
@@ -3160,7 +3170,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `UserGroups`
 
-#### SuperOffice.CD.DSL.Database.EmailAccountStatus is Modified
+##### SuperOffice.CD.DSL.Database.EmailAccountStatus is Modified
 
 * Modified items
   * Field `Deleted`
@@ -3169,7 +3179,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Ok`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.EventHandlerType is Modified
+##### SuperOffice.CD.DSL.Database.EventHandlerType is Modified
 
 * Modified items
   * Field `ChatAfterSaveNewMessage`
@@ -3281,7 +3291,7 @@ The following represent changes to SuperOffice database schema.
 * New items
   * Field `SalesSplitTicket`
 
-#### SuperOffice.CD.DSL.Database.FormSubmissionStatus is Modified
+##### SuperOffice.CD.DSL.Database.FormSubmissionStatus is Modified
 
 * Modified items
   * Field `EmailVerification`
@@ -3291,18 +3301,18 @@ The following represent changes to SuperOffice database schema.
   * Field `Submitted`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.FormType is Modified
+##### SuperOffice.CD.DSL.Database.FormType is Modified
 
 * Modified items
   * Field `Normal`
   * Field `Template`
 
-#### SuperOffice.CD.DSL.Database.LoginFlags is Modified
+##### SuperOffice.CD.DSL.Database.LoginFlags is Modified
 
 * Modified items
   * Field `HideIEWarning`
 
-#### SuperOffice.CD.DSL.Database.NotifyType is Modified
+##### SuperOffice.CD.DSL.Database.NotifyType is Modified
 
 * Modified items
   * Field `ActiveTickets`
@@ -3318,7 +3328,7 @@ The following represent changes to SuperOffice database schema.
   * Field `TicketEscalated`
   * Field `TicketTakeOver`
 
-#### SuperOffice.CD.DSL.Database.RecipientSorting is Modified
+##### SuperOffice.CD.DSL.Database.RecipientSorting is Modified
 
 * Modified items
   * Field `CompanyName`
@@ -3327,14 +3337,14 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `PersonLastname`
 
-#### SuperOffice.CD.DSL.Database.ReplyTemplateAccessLevel is Modified
+##### SuperOffice.CD.DSL.Database.ReplyTemplateAccessLevel is Modified
 
 * Modified items
   * Field `Full`
   * Field `None`
   * Field `Read`
 
-#### SuperOffice.CD.DSL.Database.ReplyTemplateBodyFlags is Modified
+##### SuperOffice.CD.DSL.Database.ReplyTemplateBodyFlags is Modified
 
 * Modified items
   * Field `ReplyTemplateBodyDefault`
@@ -3342,7 +3352,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ReplyTemplateBodyIncludePlain`
   * Field `ReplyTemplateBodyNone`
 
-#### SuperOffice.CD.DSL.Database.ReplyTemplateFlags is Modified
+##### SuperOffice.CD.DSL.Database.ReplyTemplateFlags is Modified
 
 * Modified items
   * Field `ReplyTemplateAll`
@@ -3369,21 +3379,21 @@ The following represent changes to SuperOffice database schema.
   * Field `ReplyTemplateUserTicketTakenOver`
   * Field `ReplyTemplateWeekStat`
 
-#### SuperOffice.CD.DSL.Database.ScriptType is Modified
+##### SuperOffice.CD.DSL.Database.ScriptType is Modified
 
 * Modified items
   * Field `CRMScript`
   * Field `JavaScript`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.ServiceAuthStatus is Modified
+##### SuperOffice.CD.DSL.Database.ServiceAuthStatus is Modified
 
 * Modified items
   * Field `Error`
   * Field `Initialized`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.ShipmentMessageType is Modified
+##### SuperOffice.CD.DSL.Database.ShipmentMessageType is Modified
 
 * Modified items
   * Field `Document`
@@ -3392,7 +3402,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Sms`
   * Field `SourceView`
 
-#### SuperOffice.CD.DSL.Database.Steps_Chat.ChatSessionStatus is Modified
+##### SuperOffice.CD.DSL.Database.Steps_Chat.ChatSessionStatus is Modified
 
 * Modified items
   * Field `Closed`
@@ -3408,7 +3418,7 @@ The following represent changes to SuperOffice database schema.
   * Field `RequestPosted`
   * Field `UserLast`
 
-#### SuperOffice.CD.DSL.Database.Steps_Chat.ChatTopicFlag is Modified
+##### SuperOffice.CD.DSL.Database.Steps_Chat.ChatTopicFlag is Modified
 
 * Modified items
   * Field `CollectConsent`
@@ -3420,19 +3430,19 @@ The following represent changes to SuperOffice database schema.
   * Field `UseQueueOfflineForm`
   * Field `WidgetSizeLarge`
 
-#### SuperOffice.CD.DSL.Database.Steps_Chat.ChatWidgetSize is Modified
+##### SuperOffice.CD.DSL.Database.Steps_Chat.ChatWidgetSize is Modified
 
 * Modified items
   * Field `Large`
   * Field `Normal`
 
-#### SuperOffice.CD.DSL.Database.Steps_CS.ElementStatus is Modified
+##### SuperOffice.CD.DSL.Database.Steps_CS.ElementStatus is Modified
 
 * Modified items
   * Field `None`
   * Field `Skipped`
 
-#### SuperOffice.CD.DSL.Database.Steps_Notifications.ModifiedAppointmentFields is Modified
+##### SuperOffice.CD.DSL.Database.Steps_Notifications.ModifiedAppointmentFields is Modified
 
 * Modified items
   * Field `Date`
@@ -3440,13 +3450,13 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Time`
 
-#### SuperOffice.CD.DSL.Database.TagEntity is Modified
+##### SuperOffice.CD.DSL.Database.TagEntity is Modified
 
 * Modified items
   * Field `Global`
   * Field `Ticket`
 
-#### SuperOffice.CD.DSL.Database.TicketAlertAction is Modified
+##### SuperOffice.CD.DSL.Database.TicketAlertAction is Modified
 
 * Modified items
   * Field `ActionDelegate`
@@ -3460,7 +3470,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ActionSmsCustomer`
   * Field `ActionSmsUser`
 
-#### SuperOffice.CD.DSL.Database.TicketCategoryClosingStatus is Modified
+##### SuperOffice.CD.DSL.Database.TicketCategoryClosingStatus is Modified
 
 * Modified items
   * Field `Active`
@@ -3468,7 +3478,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Postponed`
   * Field `UserDefined`
 
-#### SuperOffice.CD.DSL.Database.TicketCategoryDelegateMethod is Modified
+##### SuperOffice.CD.DSL.Database.TicketCategoryDelegateMethod is Modified
 
 * Modified items
   * Field `Even`
@@ -3477,7 +3487,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `Weighted`
 
-#### SuperOffice.CD.DSL.Database.TicketCategoryFlags is Modified
+##### SuperOffice.CD.DSL.Database.TicketCategoryFlags is Modified
 
 * Modified items
   * Field `AcceptWhenReplying`
@@ -3492,21 +3502,21 @@ The following represent changes to SuperOffice database schema.
   * Field `RedelegateNewMsg`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.TicketMessageCategory is Modified
+##### SuperOffice.CD.DSL.Database.TicketMessageCategory is Modified
 
 * Modified items
   * Field `Bounce`
   * Field `Message`
   * Field `OutboxFailed`
 
-#### SuperOffice.CD.DSL.Database.TicketMessageType is Modified
+##### SuperOffice.CD.DSL.Database.TicketMessageType is Modified
 
 * Modified items
   * Field `Html`
   * Field `Plain`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.TicketPriorityEscalateAction is Modified
+##### SuperOffice.CD.DSL.Database.TicketPriorityEscalateAction is Modified
 
 * Modified items
   * Field `ActionChangedOwner`
@@ -3516,7 +3526,7 @@ The following represent changes to SuperOffice database schema.
   * Field `ActionNewInfo`
   * Field `ActionRead`
 
-#### SuperOffice.CD.DSL.Database.TicketPriorityEscalateEvent is Modified
+##### SuperOffice.CD.DSL.Database.TicketPriorityEscalateEvent is Modified
 
 * Modified items
   * Field `Continue`
@@ -3524,7 +3534,7 @@ The following represent changes to SuperOffice database schema.
   * Field `Restart`
   * Field `Stop`
 
-#### SuperOffice.CD.DSL.Database.TicketPriorityFlags is Modified
+##### SuperOffice.CD.DSL.Database.TicketPriorityFlags is Modified
 
 * Modified items
   * Field `AlertSchedule`
@@ -3532,14 +3542,14 @@ The following represent changes to SuperOffice database schema.
   * Field `External`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.TicketPriorityStatus is Modified
+##### SuperOffice.CD.DSL.Database.TicketPriorityStatus is Modified
 
 * Modified items
   * Field `Deleted`
   * Field `Normal`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.TicketReadStatus is Modified
+##### SuperOffice.CD.DSL.Database.TicketReadStatus is Modified
 
 * Modified items
   * Field `Green`
@@ -3547,14 +3557,14 @@ The following represent changes to SuperOffice database schema.
   * Field `Unknown`
   * Field `Yellow`
 
-#### SuperOffice.CD.DSL.Database.TicketSecurityLevel is Modified
+##### SuperOffice.CD.DSL.Database.TicketSecurityLevel is Modified
 
 * Modified items
   * Field `External`
   * Field `Internal`
   * Field `Unknown`
 
-#### SuperOffice.CD.DSL.Database.WidgetRequiredFields is Modified
+##### SuperOffice.CD.DSL.Database.WidgetRequiredFields is Modified
 
 * Modified items
   * Field `Company`
@@ -3564,8 +3574,77 @@ The following represent changes to SuperOffice database schema.
   * Field `None`
   * Field `Phone`
 
-#### SuperOffice.CD.DSL.Database.WidgetTheme is Modified
+##### SuperOffice.CD.DSL.Database.WidgetTheme is Modified
 
 * Modified items
   * Field `Classic`
   * Field `Modern`
+
+## Changes from v10.5.2.332 to v10.5.2.416 {#10-5-2-416}
+
+### Web services
+
+These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
+
+### NetServer core
+
+The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
+
+#### Assembly: SoCore
+
+#### Modified types
+
+##### SuperOffice.Util.ImageUtilities is Modified
+
+* New items
+  * Method `GetAspect(Int32, Int32)`
+  * Method `GetClearPixel(Size)`
+  * Method `GetIntersectionRectangle(Size, Size, VerticalAlignment)`
+  * Method `GetScaledImageOrDefaultImage(Image, ImageSize, FallbackStrategy, Func<Image>, Boolean, Color)`
+  * Method `GetSrNoPhoto(Size, Color, Color, Boolean, String)`
+  * Method `GetTextImage(Size, String, Font, Color, Color, Color, Boolean)`
+  * Method `Max(Size, Size)`
+  * Method `Min(Size, Size)`
+  * Method `ScaleImage(Image, ImageSize, VerticalAlignment)`
+  * Method `ScaleImage(Image, Double, Double, Size, Size, Color, VerticalAlignment)`
+
+###### SuperOffice.Util.ImageUtilities.FallbackStrategy is New
+
+###### SuperOffice.Util.ImageUtilities.ImageSize is New
+
+###### SuperOffice.Util.ImageUtilities.ScaleStrategy is New
+
+###### SuperOffice.Util.ImageUtilities.VerticalAlignment is New
+
+#### Assembly: SoDatabase
+
+#### Modified types
+
+##### SuperOffice.CRM.Cache.AssociateCache is Modified
+
+* New items
+  * Method `GetAssociateImage(Int32, Int32, Int32)`
+  * Method `GetPersonImage(Int32)`
+
+##### SuperOffice.CRM.Lists.AssociateMDOProviderBase is Modified
+
+* Deleted items
+  * Method `GetPersonImage(Int32)`
+
+### Continuous database
+
+The following represent changes to SuperOffice database schema.
+
+## Changes from v10.5.2.416 to v10.5.2.435 {#10-5-2-435}
+
+### Web services
+
+There are no changes observed in NetServer SOAP and WebAPI (REST) APIs between these versions.
+
+### NetServer core
+
+There are no changes observed in NetServer SOAP and WebAPI (REST) APIs between these versions.
+
+### Continuous database
+
+There are no changes observed in NetServer SOAP and WebAPI (REST) APIs between these versions.

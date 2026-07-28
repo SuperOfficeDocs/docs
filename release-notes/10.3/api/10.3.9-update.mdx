@@ -1,17 +1,17 @@
 ---
 uid: news-api-10.3.9
 title: What's new in SuperOffice 10.3.9
+sidebarTitle: "10.3.9 - API changelog"
 description: Release notes. What's new in SuperOffice 10.3.9
 keywords: API changes
 author: SuperOffice AS - Product and Engineering
+generated: true
 date: 09.15.2024
 version: 10.3.9
 content_type: release-note
 category: api
+language: en
 ---
-
-import Changes10_3_9_718 from "./includes/changes-10.3.9.718.md";
-import Changes10_3_9_734 from "./includes/changes-10.3.9.734.md";
 
 # API changes
 
@@ -19,10 +19,214 @@ import Changes10_3_9_734 from "./includes/changes-10.3.9.734.md";
 
 v10.3.9.718, published on 15th September 2024
 
-<Changes10_3_9_718 />
+Changes from v10.3.8.2017 and v10.3.9.718
+
+## Web services
+
+These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
+
+### Assembly: SuperOffice.Services
+
+### Modified types
+
+#### SuperOffice.CRM.Services.AIAgent is Modified
+
+* New items
+  * Method `CreateTextForAppointment(AppointmentEntity, String)`
+
+#### SuperOffice.CRM.Services.CRMScriptAgent is Modified
+
+* Deleted items
+  * Method `ResolveIncludes(String)`
+* New items
+  * Method `ResolveIncludes(String, Boolean)`
+
+#### SuperOffice.CRM.Services.IAIAgent is Modified
+
+* New items
+  * Method `CreateTextForAppointment(AppointmentEntity, String)`
+
+#### SuperOffice.CRM.Services.ICRMScriptAgent is Modified
+
+* Deleted items
+  * Method `ResolveIncludes(String)`
+* New items
+  * Method `ResolveIncludes(String, Boolean)`
+
+#### SuperOffice.CRM.Services.IWorkflowAgent is Modified
+
+* New items
+  * Method `CopyEmailFlow(Int32, String)`
+
+#### SuperOffice.CRM.Services.WorkflowAgent is Modified
+
+* New items
+  * Method `CopyEmailFlow(Int32, String)`
+
+## NetServer core
+
+The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
+
+### Assembly: SoCore
+
+### Modified types
+
+#### SuperOffice.Data.EventHandlerType is Modified
+
+* New items
+  * Field `SalesAfterSaveCustomObject`
+  * Field `SalesBeforeSaveCustomObject`
+
+#### SuperOffice.Globalization.RC is Modified
+
+* New items
+  * Field `NO_SYSTEM_NOTIFICATIONS`
+  * Field `SR_AI_MENU_CASUAL_STYLE`
+  * Field `SR_AI_MENU_CREATE_TEXT`
+  * Field `SR_AI_MENU_FIX_SPELLING`
+  * Field `SR_AI_MENU_FORMAL_STYLE`
+  * Field `SR_AI_MENU_LENGTHEN`
+  * Field `SR_AI_MENU_REWRITE_TEXT`
+  * Field `SR_AI_MENU_SUMMARIZE`
+  * Field `SR_AI_MENU_TRANSLATE`
+  * Field `SR_ARCHIVE_SHOW`
+  * Field `SR_PRINT_LABELS_INFO`
+  * Field `SR_PRINT_LABELS_INFO_TEXT`
+  * Field `SR_SYSTEM_EVENTS_CONFIRM_DELETE`
+  * Field `SR_WORKFLOW_ADDEDTOFLOW`
+  * Field `SR_WORKFLOWS_COPY_FLOW`
+
+#### SuperOffice.Util.ThreadedQueueProcessor\<T\> is Modified
+
+* New items
+  * Property `QueueLength`
+
+### Assembly: SoDatabase
+
+### New types
+
+* `SuperOffice.CRM.LspApiClient.ILspApi`
+* `SuperOffice.CRM.LspApiClient.OnsiteLspClient`
+
+### Modified types
+
+#### SuperOffice.CRM.ArchiveLists.SaleExtenderBase is Modified
+
+#### SuperOffice.CRM.Entities.EntityDetailsHelper\<TParent, TChild\> is Modified
+
+* New items
+  * Method `Edit(TChild)`
+  * Event `OnEntityDetailsHelperEdited`
+
+#### SuperOffice.CRM.Entities.LinksHelper is Modified
+
+* New items
+  * Method `EditSimilarLink(RelationsRow)`
+
+#### SuperOffice.CRM.Entities.RecurrenceManager is Modified
+
+* New items
+  * Method `OnLinksEdited(Appointment, ActivityLinksHelper, AppointmentRow, RelationsRow)`
+
+#### SuperOffice.CRM.Security.EjCategoryCache is Modified
+
+* New items
+  * Method `RestrictedCategories(Int32)`
+
+## Continuous database
+
+The following represent changes to SuperOffice database schema.
+
+### Assembly: SuperOffice.CD.DSL.Database
+
+### New types
+
+* `SuperOffice.CD.DSL.Database.Steps_SuperOffice.SuperOffice_114_FunctionalRights`
+
+### Modified types
+
+#### SuperOffice.CD.DSL.Database.EventHandlerType is Modified
+
+* New items
+  * Field `SalesAfterSaveCustomObject`
+  * Field `SalesBeforeSaveCustomObject`
 
 ## Onsite release
 
 v10.3.9.725, published on 25th September 2024
 
-<Changes10_3_9_734 />
+Changes from v10.3.9.718 and v10.3.9.734
+
+## Web services
+
+These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
+
+### Assembly: SuperOffice.Services
+
+### Modified types
+
+#### SuperOffice.CRM.Services.ActivitySummaryItem is Modified
+
+* Modified items
+  * Property `Date`
+
+#### SuperOffice.CRM.Services.AlarmData is Modified
+
+* Modified items
+  * Property `EndDate`
+  * Property `StartTime`
+
+#### SuperOffice.CRM.Services.Appointment is Modified
+
+* Modified items
+  * Property `ActiveDate`
+  * Property `EndDate`
+  * Property `StartDate`
+
+#### SuperOffice.CRM.Services.AppointmentEntity is Modified
+
+* Modified items
+  * Property `ActiveDate`
+  * Property `EndDate`
+  * Property `StartDate`
+
+#### SuperOffice.CRM.Services.AppointmentSyncData is Modified
+
+* Modified items
+  * Property `EndDate`
+  * Property `StartDate`
+
+#### SuperOffice.CRM.Services.DocumentEntity is Modified
+
+* Modified items
+  * Property `Date`
+
+## NetServer core
+
+The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
+
+### Assembly: SoCore
+
+### New types
+
+* `SoCore.Shared.CRM.Services.TimeZoneDiaryAdjustment`
+
+### Modified types
+
+#### SoCore.Shared.CRM.Services.TimeZoneHintAttribute is Modified
+
+* New items
+  * Property `DiaryAdjust`
+  * Method `TimeZoneHintAttribute(TimeZoneInterpretation, TimeZoneDiaryAdjustment)`
+
+### Assembly: SoDatabase
+
+No Changes.
+
+### Assembly: SoLicense
+
+No Changes.
+
+## Continuous database
+
+No Changes.

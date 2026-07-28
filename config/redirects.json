@@ -10672,6 +10672,18 @@
     "destination": "/release-notes/10.1/api/index"
   },
   {
+    "source": "/release-notes/10.5/api/10.5.2",
+    "destination": "/release-notes/10.5/api/10.5.2-update"
+  },
+  {
+    "source": "/release-notes/10.5/api/10.5.2-hotfix",
+    "destination": "/release-notes/10.5/api/10.5.2-update"
+  },
+  {
+    "source": "/release-notes/10.5/api/10.5.2.435-hotfix",
+    "destination": "/release-notes/10.5/api/10.5.2-update"
+  },
+  {
     "source": "/release-notes/integrations/sharepoint/*",
     "destination": "/release-notes/integrations/sharepoint"
   },
