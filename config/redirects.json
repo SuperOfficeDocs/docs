@@ -10626,5 +10626,9 @@
   {
     "source": "/sv/ui/web-panels/learn/index",
     "destination": "/sv/customization/web-panels/admin/index"
+  },
+  {
+    "source": "/release-notes/database/index",
+    "destination": "/release-notes/database/changes-81"
   }
 ]

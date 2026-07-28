@@ -911,6 +911,7 @@
       },
       {
         "group": "Database legacy",
+        "hidden": true,
         "pages": [
           "release-notes/database/changes-81",
           "release-notes/database/changes-75-80",

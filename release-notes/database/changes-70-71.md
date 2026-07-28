@@ -7,13 +7,14 @@ version: 7.1
 content_type: release-note
 deployment: onsite
 category: database
+hidden: true
 ---
 
 # Table changes from 7.0 to 7.1
 
 ## New tables
 
-### [outgoing_message][1] (407)
+### outgoing_message (407)
 
 Delivery of outgoing messages to message plugins, updated with status asynchronously
 
@@ -32,13 +33,13 @@ Delivery of outgoing messages to message plugins, updated with status asynchrono
 
 ## New fields on existing tables
 
-### [Appointment][2]
+### Appointment
 
 | Field | Type | Description |
 |---|---|---|
 | `isMilestone` | ushort | Is this appointment a project milestone? In 7.1 this can only be set via the Project Guide, and not changed later |
 
-### [Project][3]
+### Project
 
 | Field | Type | Description |
 |---|---|---|
@@ -46,7 +47,7 @@ Delivery of outgoing messages to message plugins, updated with status asynchrono
 | `nextMilestoneDate` | DateTime | Calculated date, reflects date of closest non-complete future milestone activity |
 | `nmdAppointmentId` | int | ID of appointment that "caused" the `nextMilestoneDate`, can be 0 |
 
-### [ProjType][4]
+### ProjType
 
 | Field | Type | Description |
 |---|---|---|
@@ -55,33 +56,33 @@ Delivery of outgoing messages to message plugins, updated with status asynchrono
 | `hasGuide` | short | Does this project type have a guide attached |
 | `isAutoAdvance` | short | Does the project status advance automatically, when the last guided activity in a status is completed? |
 
-### [SuggestedAppointment][5]
+### SuggestedAppointment
 
 | Field | Type | Description |
 |---|---|---|
 | `isMilestone` | ushort | Is this kind of appointment a milestone in a project |
 | `assignToMember` | short | Should generated appointment be assigned to a project member? |
 
-### [SaleType][6]
+### SaleType
 
 | Field | Type | Description |
 |---|---|---|
 | `hasStakeholders` | short | this sale type have stakeholders? |
 
-### [ticket][7]
+### ticket
 
 | Field | Type | Description |
 |---|---|---|
 | `origin` | short | What is the origin of this ticket |
 
-### [extra\_menus][8]
+### extra\_menus
 
 | Field | Type | Description |
 |---|---|---|
 | `base_program` | short | Base program used in URL (ticket, rms, ...) |
 | `extra_table` | int | ExtraTable that the menu is connected to |
 
-### [s\_link][9]
+### s\_link
 
 | Field | Type | Description |
 |---|---|---|
@@ -103,7 +104,7 @@ Delivery of outgoing messages to message plugins, updated with status asynchrono
 | `task_start` | DateTime | Start time of task, unless UseNextAvailableTime is specified |
 | `task_duration` | int | Task duration in minutes |
 
-### [s\_shipment\_addr][10]
+### s\_shipment\_addr
 
 | Field | Type | Description |
 |---|---|---|
@@ -112,36 +113,22 @@ Delivery of outgoing messages to message plugins, updated with status asynchrono
 | `contact_id` | int | Id of contact bound to shipment address |
 | `sending_time` | DateTime | Estimated or actual sent time (depends on status) |
 
-### [s\_list\_shipment][11]
+### s\_list\_shipment
 
 | Field | Type | Description |
 |---|---|---|
 | `status` | short | Status of shipment list |
 
-### [inbox][12]
+### inbox
 
 | Field | Type | Description |
 |---|---|---|
 | `plugin` | varchar(256) | Name of plugin that created this inbox |
 | `format` | varchar(256) | Format of the inbox entry |
 
-### [sms][13]
+### sms
 
 | Field | Type | Description |
 |---|---|---|
 | `session_key` | varchar(256) | The reference used for identifying a session, like in-reply-to and message ID |
 | `outgoing_message_id` | int | Reference to the outgoing message entry created by NetServer for sending and status update |
-
-[1]: /en/database/tables/outgoing-message
-[2]: /en/database/tables/appointment
-[3]: /en/database/tables/project
-[4]: /en/database/tables/projtype
-[5]: /en/database/tables/suggestedappointment
-[6]: /en/database/tables/saletype
-[7]: /en/database/tables/ticket
-[8]: /en/database/tables/extra-menus
-[9]: /en/database/tables/s-link
-[10]: /en/database/tables/s-shipment-addr
-[11]: /en/database/tables/s-list-shipment
-[12]: /en/database/tables/inbox
-[13]: /en/database/tables/sms
