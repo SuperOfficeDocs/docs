@@ -10652,6 +10652,26 @@
     "destination": "/release-notes/9.2/api/index"
   },
   {
+    "source": "/release-notes/10.0/api/10.0.*",
+    "destination": "/release-notes/10.0/api/index"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.1-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.2-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.3-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.4-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
     "source": "/release-notes/integrations/sharepoint/*",
     "destination": "/release-notes/integrations/sharepoint"
   },

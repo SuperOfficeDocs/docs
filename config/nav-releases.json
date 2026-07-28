@@ -624,24 +624,13 @@
           {
             "group": "API",
             "pages": [
+              "release-notes/10.1/api/index",
               "release-notes/10.1/api/10.1.9-update",
               "release-notes/10.1/api/10.1.8-update",
               "release-notes/10.1/api/10.1.6-update",
-              {
-                "group": "10.1.5 update",
-                "pages": [
-                  "release-notes/database/changes-10.1.5"
-                ]
-              },
-              "release-notes/10.1/api/10.1.4-update",
-              "release-notes/10.1/api/10.1.3-update",
-              {
-                "group": "10.1.2 update",
-                "pages": [
-                  "release-notes/database/changes-10.1.2"
-                ]
-              },
-              "release-notes/10.1/api/10.1.1-update"
+              "release-notes/10.1/api/10.1.5-update",
+              "release-notes/database/changes-10.1.5",
+              "release-notes/database/changes-10.1.2"
             ]
           },
           {
@@ -703,15 +692,7 @@
               "release-notes/10.0/cep/10.0.2-update"
             ]
           },
-          {
-            "group": "API",
-            "pages": [
-              "release-notes/10.0/api/10.0.7-update",
-              "release-notes/10.0/api/10.0.6-update",
-              "release-notes/10.0/api/10.0.5-update",
-              "release-notes/10.0/api/10.0.1-update"
-            ]
-          },
+          "release-notes/10.0/api/index",
           {
             "group": "Development Products",
             "pages": [
