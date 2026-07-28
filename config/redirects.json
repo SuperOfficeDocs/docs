@@ -10638,5 +10638,21 @@
   {
     "source": "/release-notes/api/index",
     "destination": "/release-notes/api/ns-80"
+  },
+  {
+    "source": "/release-notes/9.1/service/index",
+    "destination": "/release-notes/9.1/service/9.1-R01-update"
+  },
+  {
+    "source": "/release-notes/9.1/standard-crm/index",
+    "destination": "/release-notes/9.1/standard-crm/9.1-R01-update"
+  },
+  {
+    "source": "/release-notes/9.2/cep/index",
+    "destination": "/release-notes/9.2/cep/9.2-R01-update"
+  },
+  {
+    "source": "/release-notes/9.2/api/9.2-R*",
+    "destination": "/release-notes/9.2/api/index"
   }
 ]

@@ -746,6 +746,8 @@
       },
       {
         "group": "SuperOffice 9.2",
+        "hidden": true,
+        "searchable": true,
         "pages": [
           "release-notes/9.2/index",
           {
@@ -793,22 +795,14 @@
               "release-notes/9.2/service/9.2-R01-update"
             ]
           },
-          {
-            "group": "API",
-            "pages": [
-              "release-notes/9.2/api/9.2-R11-update",
-              "release-notes/9.2/api/9.2-R09-update",
-              "release-notes/9.2/api/9.2-R08-update",
-              "release-notes/9.2/api/9.2-R06-update",
-              "release-notes/9.2/api/9.2-R03-update",
-              "release-notes/9.2/api/9.2-R01-update"
-            ]
-          },
+          "release-notes/9.2/api/index",
           "release-notes/database/changes-9.2"
         ]
       },
       {
         "group": "SuperOffice 9.1",
+        "hidden": true,
+        "searchable": true,
         "pages": [
           "release-notes/9.1/index",
           {
