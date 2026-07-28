@@ -39,16 +39,12 @@ We've also made updates to help you work more efficiently. Now, it takes fewer c
 
 **A new Diary** to schedule all those customer-centric activities. With a new SuperOffice UI and Copilot helping you stay on top of your day; the next logical step is to get those customer meetings on your calendar. And you'll have a new way of using your SuperOffice Diary: a view dedicated to your calendar and other to your activities.
 
-* **Vertical/side-by-side view**: See your team's calendars organised in columns for a clear overview of each day.
+* **Vertical/side-by-side view**: See your team's calendars organized in columns for a clear overview of each day.
 * **Horizontal/scheduling grid view**: Plan across multiple days with a scrollable timeline.
 
 Stay on top of your activities and make time for what matters most.
 
-## Product - Details of new features
-
-Check out our **Product release** overview for more details in our [Community][10].
-
-### SuperOffice CRM
+## Details of new features - SuperOffice CRM
 
 * 10.5.5 (05.05.2025):
   * [Diary - Create all-day events more easily][23] in Core CRM
@@ -78,47 +74,11 @@ Check out our **Product release** overview for more details in our [Community][1
   * [Dashboard tiles and edit][2] in Core CRM
   * [Main cards - Edit and task moved to top][2] in Core CRM
   * [Diary - Move of Todo list and View tab with different previews][2] in Core CRM
-  * [Side panel favourites][2] in Core CRM
+  * [Side panel favorites][2] in Core CRM
   * [SuperOffice Copilot - Text editor with AI options][2] in Core CRM
   * [SuperOffice AI Lab - Easy to get started with SuperOffice Copilot][1] in Settings and maintenance
 
-### Mobile CRM
-
-* [Version 11.0.4][5] (31.01.2025)
-
-## Product integrations - Details of new features
-
-### Office integrations
-
-* [SuperOffice for Outlook update - Action required (6.0)][13]
-
-Latest released versions:
-
-* SuperOffice for Outlook 6.0 (24.02.2025)
-* SuperOffice Copilot 1.5 (23.01.2025)
-* SharePoint Documents 3.3 (05.11.2024)
-* Video Meetings 2.6 (20.06.2024)
-* WebTools for Mac 13.0 (10.04.2024)
-* SuperOffice for Gmail 2.10 (11.03.2024)
-* WebTools for Windows 13.0 (06.03.2024)
-* Zapier 3.4 (21.12.2023)
-
-### SuperOffice App Store
-
-See all the [new or updated apps][26]
-
-* [Activity folders for SuperOffice (02.10.2024)][6]
-
-### Developer Portal
-
-* 2.2 (07.05.2025):
-  * Introducing the [Publish Status widget][25], which shows all pending requests to publish app configurations, partner profiles, and App Store information.
-* 2.1 (26.03.2025):
-  * Unified profile picture.
-  * API call sampling is temporarily disabled in the Developer Portal.
-  * The **Uninstall** button in the App Store can no longer be clicked multiple times by the same user.
-* 1.3 (29.01.2025):
-  * [Logs - Event logs for partners][16]
+Check out our **Product release** overview for more details in our [Community][10].
 
 ## User guides
 
@@ -126,9 +86,7 @@ See all the [new or updated apps][26]
 * User guide for [SuperOffice for Outlook][11] in Docs - available in six languages
 * User guide for [SuperOffice Mobile CRM][12] in Docs - English only
 
-## Other highlights
-
-### Ongoing pilot programs
+## Pilot programs
 
 We use **pilot programs** to assess how well the features and functions meet our users' **needs and expectations**, to collect feedback, and identify potential problems. The feedback from the pilot phase is valuable for refining the features and functions in SuperOffice. It helps us address any issues or concerns before releasing them to all our users. For more details, see our [overview of pilot programs][7].
 
@@ -138,17 +96,13 @@ We use **pilot programs** to assess how well the features and functions meet our
 
 [1]: ./admin/10.5.1-update
 [2]: ./core-crm/10.5.1-update
-[5]: ../mobile/index
-[6]: https://appstore.superoffice.com/Category/new-and-updated
 [7]: https://community.superoffice.com/en/product-releases/pilot-programs/
 [8]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/
 [9]: https://community.superoffice.com/en/product-releases/whats-new/product/
 [10]: https://community.superoffice.com/en/product-releases/release-notes/
-[11]: ../../integrations/superoffice-for-outlook/index
-[12]: ../../en/mobile/index
-[13]: ../integrations/sofo
-[14]: ../../en/learn/index.yml
-[16]: ../../en/developer-portal/analytics/logs
+[11]: /integrations/superoffice-for-outlook/index
+[12]: /en/mobile/index
+[14]: /en/learn/index
 [17]: ./admin/10.5.2-update#split-request
 [18]: ./admin/10.5.2-update#close-request
 [19]: ./core-crm/10.5.2-update
@@ -157,5 +111,3 @@ We use **pilot programs** to assess how well the features and functions meet our
 [22]: ./admin/10.5.5-update
 [23]: ./core-crm/10.5.5-update
 [24]: ./service/10.5.5-update
-[25]: ../../en/developer-portal/widgets/index#publish-status
-[26]: https://appstore.superoffice.com/superoffice-as/activity-folders-for-superoffice

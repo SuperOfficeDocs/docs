@@ -263,8 +263,8 @@
   },
   {
     "group": "Integrations",
+    "root": "release-notes/integrations/index",
     "pages": [
-      "release-notes/integrations/index",
       "release-notes/integrations/mail-link",
       "release-notes/integrations/sharepoint",
       "release-notes/integrations/sofo",
@@ -272,7 +272,7 @@
     ]
   },
   {
-    "group": "Older",
+    "group": "SuperOffice 10",
     "pages": [
       {
         "group": "SuperOffice 10.5",
@@ -761,8 +761,8 @@
         "group": "Pocket CRM",
         "hidden": true,
         "searchable": true,
+        "root": "release-notes/pocket-crm/index",
         "pages": [
-          "release-notes/pocket-crm/index",
           "release-notes/pocket-crm/9.1.6-update",
           "release-notes/pocket-crm/9.1.5-update",
           "release-notes/pocket-crm/9.1.4-update",
@@ -801,8 +801,8 @@
   },
   {
     "group": "End of life",
+    "root": "release-notes/eol/index",
     "pages": [
-      "release-notes/eol/index",
       "release-notes/eol/lotus",
       "release-notes/eol/sharepoint-app",
       "release-notes/eol/pagebuilder",

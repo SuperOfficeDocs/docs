@@ -100,8 +100,8 @@ See all the [new or updated apps][2]
 [16]: https://appstore.superoffice.com/superoffice-as/connecterp-for-visma-net
 [17]: https://appstore.superoffice.com/superoffice-as/connecterp-for-businessnxt
 [19]: https://appstore.superoffice.com/superoffice-as/connecterp-for-tripletex
-[21]: ../../integrations/webtools/index
-[26]: ../../integrations/index.yml
+[21]: /integrations/webtools/index
+[26]: /integrations/index.mdx
 [33]: https://appstore.superoffice.com/oneflow-ab/oneflow-for-superoffice?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
 [34]: https://appstore.superoffice.com/salesscreen/salesscreen-integration?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
 [35]: https://appstore.superoffice.com/superoffice-as/panels-for-superoffice?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
@@ -112,7 +112,7 @@ See all the [new or updated apps][2]
 [40]: https://appstore.superoffice.com/syncify-ab/xledger-by-syncify
 [41]: https://appstore.superoffice.com/superoffice-as/supernotes
 [42]: https://appstore.superoffice.com/leadx/leadx-360
-[43]: ../../integrations/supernotes/index
+[43]: /integrations/supernotes/index
 [44]: https://appstore.superoffice.com/superoffice-as/connecterp-for-fortnox
 [45]: https://appstore.superoffice.com/superoffice-as/databridge-for-superoffice
 [46]: https://appstore.superoffice.com/superoffice-as/sharepoint-documents
