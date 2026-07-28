@@ -7,6 +7,7 @@ date: 04.04.2022
 version: 10.1
 content_type: release-note
 category: Settings and maintenance
+language: en
 ---
 
 # New and improved Settings and maintenance

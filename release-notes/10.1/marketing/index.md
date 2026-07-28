@@ -7,6 +7,7 @@ date: 06.15.2022
 version: 10.1
 content_type: release-note
 category: marketing
+language: en
 ---
 
 # New and improved marketing
