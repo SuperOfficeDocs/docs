@@ -596,13 +596,7 @@
               "release-notes/10.0/cep/10.0.2-update"
             ]
           },
-          "release-notes/10.0/api/index",
-          {
-            "group": "Development Products",
-            "pages": [
-              "release-notes/10.0/development-products/10.0.1-update"
-            ]
-          }
+          "release-notes/10.0/api/index"
         ]
       },
       {
