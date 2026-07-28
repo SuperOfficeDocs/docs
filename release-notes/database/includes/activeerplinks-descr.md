@@ -1,1 +1,0 @@
-The number of ERP Sync connections this record is synced with. Count of the ErpExternalKey+ErpInternalKey relations.
