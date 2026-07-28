@@ -265,34 +265,10 @@
     "group": "Integrations",
     "pages": [
       "release-notes/integrations/index",
-      {
-        "group": "Video Meetings",
-        "pages": [
-          "release-notes/integrations/video-meetings/2.9-update"
-        ]
-      },
-      {
-        "group": "SuperOffice for Outlook",
-        "pages": [
-          "release-notes/integrations/sofo/6.3-update",
-          "release-notes/integrations/sofo/6.0-update",
-          "release-notes/integrations/sofo/3.1-update"
-        ]
-      },
-      {
-        "group": "SharePoint integrations",
-        "pages": [
-          "release-notes/integrations/sharepoint/3.2-update",
-          "release-notes/integrations/sharepoint/10.1.4-update"
-        ]
-      },
-      {
-        "group": "Mail Link",
-        "pages": [
-          "release-notes/integrations/mail-link/8.5-R11-update",
-          "release-notes/integrations/mail-link/8.5-R14-update"
-        ]
-      }
+      "release-notes/integrations/mail-link",
+      "release-notes/integrations/sharepoint",
+      "release-notes/integrations/sofo",
+      "release-notes/integrations/video-meetings"
     ]
   },
   {
