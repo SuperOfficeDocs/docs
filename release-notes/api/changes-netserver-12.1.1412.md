@@ -5,13 +5,13 @@ date: 19.06.2026
 
 Changes from v12.0.342 to v12.1.1412
 
-## Web Services
+## Web services
 
 These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 ### Assembly: SuperOffice.Services
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Services.CustomObject`
 * `SuperOffice.CRM.Services.CustomObjectDefinition`
@@ -20,7 +20,7 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * `SuperOffice.CRM.Services.CustomObjectRelation`
 * `SuperOffice.CRM.Services.ICustomObjectAgent`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Services.IBLOBAgent is Modified
 
@@ -108,13 +108,13 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 ### Assembly: SuperOffice.Services.Implementation
 
-### Deleted Types
+### Deleted types
 
 * `SuperOffice.CRM.Services.Implementation.BL.CustomObjectEntityImplementation`
 * `SuperOffice.CRM.Services.Implementation.BL.CustomObjectMetadata`
 * `SuperOffice.CRM.Services.Implementation.BL.Relation`
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Services.CustomObjectAgent`
 * `SuperOffice.CRM.Services.Implementation.BL.Contracts.ICustomObjectDefinitionImplementation`
@@ -122,7 +122,7 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * `SuperOffice.CRM.Services.Implementation.BL.CustomObjectDefinitionImplementation`
 * `SuperOffice.CRM.Services.Implementation.BL.CustomObjectImplementation`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Services.AIAgent is Modified
 
@@ -652,25 +652,25 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Method `WorkflowAgent(IEmailFlowImplementation, IWorkflowEventImplementation, IWorkflowEventResultImplementation, IWorkflowFilterImplementation, IWorkflowGoalImplementation, IWorkflowStepBaseImplementation, IWorkflowStepOptionBaseImplementation, IWorkflowTriggerImplementation, IWorkflowWaitForActionImplementation, ISoRequestItemsAccessor, IDebugUser, IServiceCallsRepository)`
 
-## NetServer Core
+## NetServer core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
 
 ### Assembly: SoCore
 
-### Deleted Types
+### Deleted types
 
 * `SuperOffice.Events.SoEventManager`
 * `SuperOffice.Events.SoGlobalFlush`
 * `SuperOffice.Security.Principal.CurrentWindowsIdentitySupplier`
 
-### New Types
+### New types
 
 * `SuperOffice.Util.IStructurePatchingHelper`
 * `SuperOffice.Util.StructurePatchingTypeCache`
 * `SuperOffice.Util.TypeAction`
 
-### Modified Types
+### Modified types
 
 #### Microsoft.Extensions.DependencyInjection.NetServerCoreOptionsBuilder is Modified
 
@@ -825,21 +825,21 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SoDatabase
 
-### Deleted Types
+### Deleted types
 
 * `SuperOffice.CRM.Security.ISentryPlugin`
 * `SuperOffice.CRM.Security.ISentryPluginQueryTableUpdater`
 * `SuperOffice.CRM.Security.SentryPluginAttribute`
 * `SuperOffice.CRM.Security.SentryPluginQueryTableUpdaterAttribute`
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Webhooks.WebhookBannerNotification`
 * `SuperOffice.CRM.Webhooks.WebhookBannerQueue`
 * `SuperOffice.Data.SQL.ArgumentField`
 * `SuperOffice.Data.SQL.Concat`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Cache.AssociateCache is Modified
 
@@ -1011,7 +1011,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SoDatabase.BusinessLogic
 
-### Deleted Types
+### Deleted types
 
 * `SuperOffice.CRM.ArchiveLists.IRestrictionStorage`
 * `SuperOffice.CRM.ArchiveLists.IRestrictionStorageMappingConfiguration`
@@ -1022,7 +1022,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * `SuperOffice.Data.Dialect.OracleMassOperations`
 * `SuperOffice.Data.Dialect.OracleOperations`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.ArchiveLists.AppointmentExtenderBase is Modified
 
@@ -1181,19 +1181,19 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SuperOffice.Plugins
 
-### Deleted Types
+### Deleted types
 
 * `SuperOffice.Events.EventEnginePluginAttribute`
 * `SuperOffice.Events.IEventEngine`
 * `SuperOffice.Events.SendEventArguments`
 
-## Continuous Database
+## Continuous database
 
 The following represent changes to SuperOffice database schema.
 
 ### Assembly: SuperOffice.CD.DSL.Database
 
-### Modified Types
+### Modified types
 
 #### .Optimization_01_TtlForeignKeyIndexes is Modified
 

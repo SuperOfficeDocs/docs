@@ -11,7 +11,7 @@ The following represent changes to the core Web API assembly.
 
 ### Assembly: SuperOffice.WebApi
 
-### New Types
+### New types
 
 * `SuperOffice.WebApi.Agents.INewsFeedAgent`
 * `SuperOffice.WebApi.Agents.NewsFeedAgent`
@@ -28,7 +28,7 @@ The following represent changes to the core Web API assembly.
 * `SuperOffice.WebApi.Data.NewsFeedItem`
 * `SuperOffice.WebApi.Data.NewsFeedItemStatus`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.License.SoLicenseNames is Modified
 

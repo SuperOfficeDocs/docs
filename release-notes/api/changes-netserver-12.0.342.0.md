@@ -3,15 +3,15 @@ uid: version_12.0.342.0_changes
 date: 05.06.2026
 ---
 
-# Changes from v11.13.921.0 to v12.0.342.0
+Changes from v11.13.921.0 to v12.0.342.0
 
-## Web Services
+## Web services
 
 These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 ### Assembly: SuperOffice.Services
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Services.FencingInfo`
 * `SuperOffice.CRM.Services.TicketRelationAction`
@@ -19,7 +19,7 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * `SuperOffice.CRM.Services.TicketRelationItem`
 * `SuperOffice.CRM.Services.TicketRelationResult`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Services.EMailAccount is Modified
 
@@ -107,7 +107,7 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 ### Assembly: SuperOffice.Services.Implementation
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Services.DashAgent is Modified
 
@@ -242,13 +242,13 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Method `GetWorkflowFencingInfoAsync(CancellationToken)`
 
-## NetServer Core
+## NetServer core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
 
 ### Assembly: SoCore
 
-### New Types
+### New types
 
 * `SuperOffice.Data.MeteringEventType`
 * `SuperOffice.Data.MeteringStatus`
@@ -256,7 +256,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * `SuperOffice.Data.WebhookNotifyVia`
 * `SuperOffice.Data.WebhookNotifyWhen`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.UserPreferenceStrings is Modified
 
@@ -384,7 +384,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SoDatabase
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Data.LandingPagePinTableInfo`
 * `SuperOffice.CRM.Data.LandingPageTableInfo`
@@ -422,7 +422,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * `SuperOffice.Data.SQL.WebhookNotifyViaFieldInfo`
 * `SuperOffice.Data.SQL.WebhookNotifyWhenFieldInfo`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Data.AssociateTableInfo is Modified
 
@@ -571,14 +571,14 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SoDatabase.BusinessLogic
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Lists.LandingpageProvider`
 * `SuperOffice.CRM.Lists.WebhookEntityListProvider`
 * `SuperOffice.CRM.Lists.WebhookEventListProvider`
 * `SuperOffice.Security.Login.EmailConnectivityPostLoginPlugin`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.ArchiveLists.WebhookExtenderBase is Modified
 
@@ -649,13 +649,13 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
   * Method `QueueErrorEmailAsync(String, String, String, String, CancellationToken)`
   * Method `QueueInAppNotificationAsync(Int32, String, String, CancellationToken)`
 
-## Continuous Database
+## Continuous database
 
 The following represent changes to SuperOffice database schema.
 
 ### Assembly: SuperOffice.CD.DSL.Database
 
-### New Types
+### New types
 
 * `SuperOffice.CD.Database.WebhookNotifyVia`
 * `SuperOffice.CD.Database.WebhookNotifyWhen`
@@ -669,7 +669,7 @@ The following represent changes to SuperOffice database schema.
 * `SuperOffice.CD.DSL.Database.T_WebhookNotify`
 * `SuperOffice.CD.DSL.Database.TicketRelationError`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CD.DSL.Database.T_EmailAccount is Modified
 

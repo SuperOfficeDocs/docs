@@ -5,19 +5,19 @@ date: 07.07.2026
 
 Changes from v12.1.1412.0 to v12.2.2072.0
 
-## Web Services
+## Web services
 
 These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 ### Assembly: SuperOffice.Services
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Services.INewsFeedAgent`
 * `SuperOffice.CRM.Services.NewsFeedCTA`
 * `SuperOffice.CRM.Services.NewsFeedItem`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Services.IEMailAgent is Modified
 
@@ -26,13 +26,13 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 
 ### Assembly: SuperOffice.Services.Implementation
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Services.Implementation.BL.Contracts.INewsFeedItemImplementation`
 * `SuperOffice.CRM.Services.Implementation.BL.NewsFeedItemImplementation`
 * `SuperOffice.CRM.Services.NewsFeedAgent`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Services.EMailAgent is Modified
 
@@ -63,13 +63,13 @@ These changes are observed in both NetServer SOAP and WebAPI (REST) APIs.
 * New items
   * Method `PreferredTimeZoneImplementation()`
 
-## NetServer Core
+## NetServer core
 
 The following represent changes to assemblies SoCore, SoDatabase, SoLicense and SuperOffice.Plugins.
 
 ### Assembly: SoCore
 
-### Deleted Types
+### Deleted types
 
 * `SuperOffice.Diagnostics.DiagnoseException`
 * `SuperOffice.Diagnostics.DiagnoseMethod`
@@ -80,7 +80,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * `SuperOffice.Security.Util.WindowsIdentityHelper`
 * `SuperOffice.Threading.ThreadwiseKeyCache<Item>`
 
-### New Types
+### New types
 
 * `ExtensionMethods.ResourceManagerExt`
 * `SuperOffice.Data.CtaFlavor`
@@ -93,7 +93,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * `SuperOffice.Globalization.RmDiWrapper`
 * `SuperOffice.IO.Files.FileLookup`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.Configuration.ConfigFile is Modified
 
@@ -352,7 +352,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SoDatabase
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.Data.NewsFeedItemCtaTableInfo`
 * `SuperOffice.CRM.Data.NewsFeedItemHtmlTableInfo`
@@ -386,7 +386,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * `SuperOffice.Data.SQL.CtaTypeFieldInfo`
 * `SuperOffice.Data.SQL.NewsFeedItemStatusFieldInfo`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.Administration.UserPlugin is Modified
 
@@ -574,7 +574,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SoDatabase.BusinessLogic
 
-### New Types
+### New types
 
 * `SuperOffice.CRM.ArchiveLists.MailingFolderExtenderBase`
 * `SuperOffice.CRM.ArchiveLists.MailingFolderMailingFolderExtender`
@@ -595,7 +595,7 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 * `SuperOffice.CRM.Notification.AppointmentPushNotificationRecipient`
 * `SuperOffice.CRM.Notification.AppointmentPushNotificationTask`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CRM.ArchiveLists.MailingsExtenderBase is Modified
 
@@ -642,13 +642,13 @@ The following represent changes to assemblies SoCore, SoDatabase, SoLicense and 
 
 ### Assembly: SuperOffice.Plugins
 
-## Continuous Database
+## Continuous database
 
 The following represent changes to SuperOffice database schema.
 
 ### Assembly: SuperOffice.CD.DSL.Database
 
-### New Types
+### New types
 
 * `SuperOffice.CD.Database.CtaFlavor`
 * `SuperOffice.CD.Database.CtaType`
@@ -661,7 +661,7 @@ The following represent changes to SuperOffice database schema.
 * `SuperOffice.CD.DSL.Database.T_NewsFeedItemHtml`
 * `SuperOffice.CD.DSL.Database.T_NewsFeedItemRecipient`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.CD.DSL.Database.Steps_SuperOffice.SuperOffice_141_NewFontsSorted is Modified
 

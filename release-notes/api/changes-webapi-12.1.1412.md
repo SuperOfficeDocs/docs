@@ -11,7 +11,7 @@ The following represent changes to the core Web API assembly.
 
 ### Assembly: SuperOffice.WebApi
 
-### New Types
+### New types
 
 * `SuperOffice.WebApi.Agents.CustomObjectAgent`
 * `SuperOffice.WebApi.Agents.ICustomObjectAgent`
@@ -31,7 +31,7 @@ The following represent changes to the core Web API assembly.
 * `SuperOffice.WebApi.Data.KbAccessLevel`
 * `SuperOffice.WebApi.Data.List_GetAllTicketRelationDefinitionEntitiesRequest`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.WebApi.Agents.CustomerServiceAgent is Modified
 

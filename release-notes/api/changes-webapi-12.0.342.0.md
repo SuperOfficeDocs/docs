@@ -3,7 +3,7 @@ uid: version_12.0.342.0_changes_webapi
 date: 05.06.2026
 ---
 
-# Changes from v11.13.921.0 to v12.0.342.0
+Changes from v11.13.921.0 to v12.0.342.0
 
 ## Web API
 
@@ -11,7 +11,7 @@ The following represent changes to the core Web API assembly.
 
 ### Assembly: SuperOffice.WebApi
 
-### New Types
+### New types
 
 * `SuperOffice.WebApi.Data.Configuration_GetLandingPageRequest`
 * `SuperOffice.WebApi.Data.Configuration_SetLandingPagePinForAssociateRequest`
@@ -43,7 +43,7 @@ The following represent changes to the core Web API assembly.
 * `SuperOffice.WebApi.Data.WebhookNotifyWhen`
 * `SuperOffice.WebApi.Data.Workflow_GetWorkflowFencingInfoRequest`
 
-### Modified Types
+### Modified types
 
 #### SuperOffice.WebApi.Agents.ConfigurationAgent is Modified
 
