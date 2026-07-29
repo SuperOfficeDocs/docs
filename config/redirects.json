@@ -10680,6 +10680,58 @@
     "destination": "/release-notes/11"
   },
   {
+    "source": "/release-notes/11/api/11.13/*",
+    "destination": "/release-notes/11/api/11.13"
+  },
+  {
+    "source": "/release-notes/11/api/11.12/*",
+    "destination": "/release-notes/11/api/11.12"
+  },
+  {
+    "source": "/release-notes/11/api/11.11/*",
+    "destination": "/release-notes/11/api/11.11"
+  },
+  {
+    "source": "/release-notes/11/api/11.10/*",
+    "destination": "/release-notes/11/api/11.10"
+  },
+  {
+    "source": "/release-notes/11/api/11.9/*",
+    "destination": "/release-notes/11/api/11.9"
+  },
+  {
+    "source": "/release-notes/11/api/11.8/*",
+    "destination": "/release-notes/11/api/11.8"
+  },
+  {
+    "source": "/release-notes/11/api/11.7/*",
+    "destination": "/release-notes/11/api/11.7"
+  },
+  {
+    "source": "/release-notes/11/api/11.6/*",
+    "destination": "/release-notes/11/api/11.6"
+  },
+  {
+    "source": "/release-notes/11/api/11.5/*",
+    "destination": "/release-notes/11/api/11.5"
+  },
+  {
+    "source": "/release-notes/11/api/11.4/*",
+    "destination": "/release-notes/11/api/11.4"
+  },
+  {
+    "source": "/release-notes/11/api/11.3/*",
+    "destination": "/release-notes/11/api/11.3"
+  },
+  {
+    "source": "/release-notes/11/api/11.2/*",
+    "destination": "/release-notes/11/api/11.2"
+  },
+  {
+    "source": "/release-notes/11/api/11.1/*",
+    "destination": "/release-notes/11/api/11.1-update"
+  },
+  {
     "source": "/release-notes/10.1/api/10.1.1-update",
     "destination": "/release-notes/10.1/api/index"
   },
