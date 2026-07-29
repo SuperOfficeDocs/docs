@@ -1,0 +1,229 @@
+---
+uid: markdown-guide-docfx-to-mintlify-cheat-sheet
+title: DocFX to Mintlify cheat sheet
+description: Quick before-and-after examples for contributors updating content from DocFX-era formatting to Mintlify-compatible formatting.
+keywords: docfx, mintlify, markdown, mdx, migration, cheat sheet
+author: digitaldiina
+date: 07.29.2026
+content_type: reference
+language: en
+---
+
+# DocFX to Mintlify cheat sheet
+
+Use this page as a quick reference when updating older content to current SuperOfficeDocs conventions.
+
+For the full rules, see the [Markdown guide][1], [How to use links in docs][2], [How to include code in docs][3], and [Metadata (Yaml front-matter)][4].
+
+## Callouts
+
+**Before (DocFX):**
+
+```md
+> [!NOTE]
+> This is important.
+```
+
+**After (Mintlify):**
+
+```mdx
+<Note>
+This is important.
+</Note>
+```
+
+Also use `<Tip>`, `<Caution>`, and `<Warning>`.
+
+## Includes
+
+**Before (DocFX):**
+
+```md
+[!include[foo](./includes/foo.md)]
+```
+
+**After (Mintlify):**
+
+```mdx
+import Foo from "./includes/foo.md";
+
+<Foo />
+```
+
+## Code snippets
+
+**Before (DocFX range include):**
+
+```md
+[!code-csharp[CS](file.cs?range=1,3)]
+```
+
+**After (Mintlify):**
+
+Use a fenced code block directly, or include a whole `.md` or `.mdx` sample file.
+
+```csharp
+Console.WriteLine("Hello");
+```
+
+## Tabs
+
+**Before (DocFX):**
+
+```md
+## [REST](#tab/rest)
+content
+## [SOAP](#tab/soap)
+content
+***
+```
+
+**After (Mintlify):**
+
+```mdx
+<Tabs>
+<Tab title="REST">
+content
+</Tab>
+
+<Tab title="SOAP">
+content
+</Tab>
+</Tabs>
+```
+
+## Expand/collapse sections
+
+**Before:**
+
+```html
+<details><summary>Title</summary>
+Content
+</details>
+```
+
+**After:**
+
+```mdx
+<Accordion title="Title">
+Content
+</Accordion>
+```
+
+## Video embeds
+
+**Before:**
+
+```md
+[!Video https://www.youtube.com/embed/VIDEO_ID]
+```
+
+**After:**
+
+```mdx
+<Frame caption="Watch the walk-through">
+  <iframe
+    width="100%"
+    height="420"
+    src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+    title="Watch the walk-through"
+    allowfullscreen
+  ></iframe>
+</Frame>
+```
+
+## Links between docs pages
+
+* Use `/` in paths.
+* Remove `.md` and `.mdx` from link targets.
+* Use relative links inside the same topic.
+* Use root-relative links only when crossing topic or language boundaries.
+
+**Before:**
+
+```md
+[Metadata](./metadata.mdx)
+```
+
+**After:**
+
+```md
+[Metadata](./metadata)
+```
+
+## Anchors
+
+**Preferred on headings:**
+
+```md
+## My heading {#my-heading}
+```
+
+Link to it like this:
+
+```md
+[Jump](#my-heading)
+```
+
+Use `<a id="..."></a>` only when anchoring non-heading content.
+
+## Xref links
+
+**Before:**
+
+```md
+<xref:some.uid>
+```
+
+**After:**
+
+Use a normal markdown link instead.
+
+## Forms
+
+**Before:**
+
+```html
+<script src="...superoffice...form..."></script>
+```
+
+**After:**
+
+```mdx
+<SOForm scriptUrl="..." />
+```
+
+## .md vs .mdx
+
+Use `.mdx` whenever the page contains:
+
+* component tags such as `<Note>`, `<Tabs>`, or `<Accordion>`
+* `import ... from ...`
+
+Use `.md` for plain markdown-only content.
+
+## Frontmatter essentials
+
+Keep frontmatter complete and current:
+
+* `uid`
+* `title`
+* `description`
+* `keywords`
+* `author`
+* `date`
+* `content_type`
+* `language`
+
+## Stop doing this
+
+* Don't use DocFX callout, include, tab, or code-include syntax.
+* Don't link to `.md` or `.mdx` files directly.
+* Don't use `xref`.
+* Don't rely on HTML comments for lint suppression in MDX.
+* Don't use page-relative image paths; use root-relative `/media/loc/...` paths.
+
+[1]: ./index
+[2]: ./links-in-docs
+[3]: ./code-in-docs
+[4]: ./metadata
