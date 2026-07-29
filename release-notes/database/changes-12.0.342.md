@@ -1,6 +1,7 @@
 ---
 uid: database-whats-new-12.0.342.0
 title: What's new in version 12.0.342.0
+sidebarTitle: "12.0 - database changelog"
 description: What's new in database version 12.0.342.0.
 generated: true
 keywords: database
