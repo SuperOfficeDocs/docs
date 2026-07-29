@@ -1,6 +1,7 @@
 ---
 uid: database-whats-new-11.4.1157.0
 title: What's new in version 11.4.1157.0
+sidebarTitle: "11.4 - database changelog"
 description: What's new in database version 11.4.1157.0.
 generated: true
 keywords: database
