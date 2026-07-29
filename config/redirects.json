@@ -10656,6 +10656,134 @@
     "destination": "/release-notes/10.0/api/index"
   },
   {
+    "source": "/release-notes/mobile/11.0.3-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.0-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.2-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.3-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.5-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.7-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.9-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.10-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.11-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.12-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/11.1.13-update",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/10.0.1-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.0.2-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.0.3-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.0.4-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.0.6-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.0.7-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.0.9-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.1.4-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.1.5-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.1.7-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.1.8-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.1.9-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.2-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.7-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.8-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.10-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.11-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.12-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.16-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.18-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/mobile/10.2.19-update",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
     "source": "/release-notes/10.1/api/10.1.1-update",
     "destination": "/release-notes/10.1/api/index"
   },
