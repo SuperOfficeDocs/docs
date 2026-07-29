@@ -1,12 +1,14 @@
 ---
 uid: news-admin-10.1
 title: What's new in SuperOffice 10.1
+sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.1
 author: SuperOffice AS - Product and Engineering
 date: 04.04.2022
 version: 10.1
 content_type: release-note
 category: Settings and maintenance
+language: en
 ---
 
 # New and improved Settings and maintenance

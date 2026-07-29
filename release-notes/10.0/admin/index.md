@@ -1,11 +1,14 @@
 ---
 uid: news-admin-10.0
 title: New and improved Settings and maintenance
+sidebarTitle: "Overview"
+description: Overview of Settings and maintenance improvements released across the SuperOffice 10.0 update.
 author: SuperOffice AS - Product and Engineering
 date: 03.14.2022
 version: 10
 content_type: release-note
 category: Settings and maintenance
+language: en
 ---
 
 # New and improved Settings and maintenance
@@ -23,7 +26,7 @@ category: Settings and maintenance
 * [Import - Gmail import of contacts (10.0.6)][6]
 * [Screen designer - Address field in expanded or one line mode (10.0.6)][6]
 * [Security improvements - Credentials and checks (10.0.6)][6]
-* [Languages - 5 new UI languages on all modules (10.0.6)][6]
+* [Languages - 5 new UI languages on all modules (10.0.6)][8]
 * [Request administration - Re-organized screens (10.0.7)][7]
 * [Triggers - Quote approval triggers (10.0.7)][7]
 * [Subscription management - Subscription form page with Powered by SuperOffice (10.0.7)][7]
@@ -34,3 +37,4 @@ category: Settings and maintenance
 [4]: ./10.0.4-update
 [6]: ./10.0.6-update
 [7]: ./10.0.7-update
+[8]: ../core-crm/10.0.6-update#languages

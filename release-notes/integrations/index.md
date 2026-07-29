@@ -1,8 +1,9 @@
 ---
 uid: release-notes-integrations
 title: Product integration updates
+sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice Integrations
-keywords: integration, app, AppStore, product release
+keywords: integration, app, App Store, product release
 author: kirstiaa
 date: 07.09.2026
 content_type: release-note
@@ -29,26 +30,28 @@ Documentation for all SuperOffice integrations is available at [docs.superoffice
 
 Current version: For the latest version numbers and release details for all products, see [Product releases][6] on Community.
 
-* ConnectERP - 158.0 (28.05.2026)
-* DataBridge - 158.0 (28.05.2026)
-* Panels - 71.0 (20.05.2026)
-* SharePoint Documents - 3.9 (24.06.2026)
-* Slack Notify - 12.0 (27.05.2026)
-* SuperOffice Copilot - 1.11 (17.09.2025)
-* SuperOffice for Gmail - 3.0 (24.02.2026)
-* SuperOffice for Mailchimp - 12.0 (27.05.2026)
-* SuperOffice for Outlook - 6.3.6 (26.06.2026)
-* SuperOffice for Teams - 1.0.0 (01.06.2026)
-* SuperOffice for Trello - 11.0 (21.11.2025)
-* SuperOffice for Wordpress - 12.0 (27.05.2026)
-* SuperOffice MailLink - 13.1.61 (30.01.2026)
-* Synchronizer - 125.0 (05.06.2026)
-* Teams Notify - 12.0 (18.05.2026)
-* Video Meetings - 2.12 (26.05.2026)
-* Webex Notify - 12.0 (18.05.2026)
-* WebTools for Mac - 13.3.3 (06.06.2026)
-* WebTools for Windows - 13.2.3 (24.03.2026)
-* Zapier - 3.5.8 (25.05.2026)
+| Product | Version | Date |
+| --- | --- | --- |
+| ConnectERP | 158.0 | 28.05.2026 |
+| DataBridge | 158.0 | 28.05.2026 |
+| Panels | 71.0 | 20.05.2026 |
+| SharePoint Documents | 3.9 | 24.06.2026 |
+| Slack Notify | 12.0 | 27.05.2026 |
+| SuperOffice Copilot | 1.11 | 17.09.2025 |
+| SuperOffice for Gmail | 3.0 | 24.02.2026 |
+| SuperOffice for Mailchimp | 12.0 | 27.05.2026 |
+| SuperOffice for Outlook | 6.3.6 | 26.06.2026 |
+| SuperOffice for Teams | 1.0.0 | 01.06.2026 |
+| SuperOffice for Trello | 11.0 | 21.11.2025 |
+| SuperOffice for Wordpress | 12.0 | 27.05.2026 |
+| SuperOffice MailLink | 13.1.61 | 30.01.2026 |
+| Synchronizer | 125.0 | 05.06.2026 |
+| Teams Notify | 12.0 | 18.05.2026 |
+| Video Meetings | 2.12 | 26.05.2026 |
+| Webex Notify | 12.0 | 18.05.2026 |
+| WebTools for Mac | 13.3.3 | 06.06.2026 |
+| WebTools for Windows | 13.2.3 | 24.03.2026 |
+| Zapier | 3.5.8 | 25.05.2026 |
 
 ## SuperOffice App Store
 
@@ -90,15 +93,15 @@ See all the [new or updated apps][2]
 * [Activity folders for SuperOffice][39] from SuperOffice AS (01.12.2025)
 
 [2]: https://appstore.superoffice.com/Category/new-and-updated
-[3]: ./sofo/6.3-update
+[3]: ./sofo
 [6]: https://community.superoffice.com/en/product-releases/release-notes/
-[13]: ./video-meetings/2.9-update
+[13]: ./video-meetings
 [15]: https://community.superoffice.com/en/support-faqs/faq/zapier-integration-version-3.5-changes-in-request-properties?utm_medium=docs&utm_source=release%20notes&utm_campaign=integration
 [16]: https://appstore.superoffice.com/superoffice-as/connecterp-for-visma-net
 [17]: https://appstore.superoffice.com/superoffice-as/connecterp-for-businessnxt
 [19]: https://appstore.superoffice.com/superoffice-as/connecterp-for-tripletex
-[21]: ../../integrations/webtools/index
-[26]: ../../integrations/index.yml
+[21]: /integrations/webtools/index
+[26]: /integrations/index.mdx
 [33]: https://appstore.superoffice.com/oneflow-ab/oneflow-for-superoffice?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
 [34]: https://appstore.superoffice.com/salesscreen/salesscreen-integration?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
 [35]: https://appstore.superoffice.com/superoffice-as/panels-for-superoffice?utm_medium=docs&utm_source=release%20notes&utm_campaign=11.8
@@ -109,7 +112,7 @@ See all the [new or updated apps][2]
 [40]: https://appstore.superoffice.com/syncify-ab/xledger-by-syncify
 [41]: https://appstore.superoffice.com/superoffice-as/supernotes
 [42]: https://appstore.superoffice.com/leadx/leadx-360
-[43]: ../../integrations/supernotes/index
+[43]: /integrations/supernotes/index
 [44]: https://appstore.superoffice.com/superoffice-as/connecterp-for-fortnox
 [45]: https://appstore.superoffice.com/superoffice-as/databridge-for-superoffice
 [46]: https://appstore.superoffice.com/superoffice-as/sharepoint-documents

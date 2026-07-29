@@ -7,6 +7,8 @@ version: 8.1
 content_type: release-note
 deployment: onsite
 category: database
+hidden: true
+redirect_from: /release-notes/database/index
 ---
 
 # Database

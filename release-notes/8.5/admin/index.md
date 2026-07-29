@@ -8,6 +8,7 @@ version: 8.5
 platform: web
 deployment: onsite
 content_type: release-note
+language: en
 ---
 
 # Settings and maintenance

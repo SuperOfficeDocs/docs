@@ -1,12 +1,15 @@
 ---
 uid: news-marketing-10.0
 title: New and improved Marketing
+sidebarTitle: "Overview"
+description: Overview of Marketing improvements released across the SuperOffice 10.0 update.
 keywords: marketing, mailing
 author: SuperOffice AS - Product and Engineering
 date: 02.22.2022
 version: 10
 content_type: release-note
 category: marketing
+language: en
 ---
 
 # New and improved Marketing
@@ -18,4 +21,4 @@ category: marketing
 
 [4]: ./10.0.4-update
 [5]: ./10.0.5-update
-[6]: ./10.0.6-update
+[6]: ../core-crm/10.0.6-update#languages

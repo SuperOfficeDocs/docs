@@ -1,6 +1,7 @@
 ---
 uid: eol-lotus
 title: End of life - Lotus Notes Link
+sidebarTitle: "Lotus Notes Link"
 description: This is a formal announcement of end of life for our SuperOffice Lotus Notes Link.
 keywords: Lotus Notes Link, EOL
 author: Mikael Månsson
@@ -39,4 +40,4 @@ You are recommended to switch to [SuperOffice Inbox][1]. The inbox in SuperOffic
 
 * Security issues due to legacy libraries used in the software create a high business risk.
 
-[1]: ../../en/email/inbox/learn/index
+[1]: /en/email/inbox/learn/index

@@ -4,7 +4,7 @@ title: database
 description: SuperOffice database documentation
 keywords: database
 author: SuperOffice Product and Engineering
-date: 07.16.2026
+date: 07.28.2026
 content_type: concept
 language: en
 ---
@@ -27,7 +27,7 @@ It is also important to know basic SQL.
 
 ## Reading advice
 
-* To check for changes between versions, see [what's new][1].
+* To check for changes between versions, see the [release notes][1].
 
 * If you have never programmed against the SuperOffice database before, see the [Getting started][2] section.
 
@@ -35,15 +35,13 @@ It is also important to know basic SQL.
 
 * The info documents under database reference describe the magical values that go into certain tables.
 
-## Topics
+## Related content
 
 * [Data dictionary][3]
-* [Getting started][2]
 * [Security][4]
 * [Travel transaction log][5]
-* [What's new][1]
 
-[1]: ../../release-notes/database/index
+[1]: ../../release-notes/index
 [2]: ./getting-started/index
 [3]: ./dictionary/index
 [4]: ./security

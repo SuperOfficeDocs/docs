@@ -1,10 +1,13 @@
 ---
 uid: news-core-10.0
 title: New and improved Core CRM
+sidebarTitle: "Overview"
+description: Overview of Core CRM improvements released across the SuperOffice 10.0 update.
 author: SuperOffice AS - Product and Engineering
 date: 10.20.2021
 version: 10
 content_type: release-note
+language: en
 ---
 
 # New and improved Core CRM

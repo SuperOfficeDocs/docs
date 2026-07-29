@@ -1,6 +1,7 @@
 ---
 uid: release-notes-api-10.3
 title: What's new in SuperOffice 10.3
+sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.3
 keywords: API changes
 author: SuperOffice AS - Product and Engineering
@@ -8,6 +9,7 @@ date: 01.29.2024
 version: 10.3
 content_type: release-note
 category: api
+language: en
 ---
 
 # API changes
@@ -23,6 +25,10 @@ category: api
 * [Version 10.3.7][7]
 * [Version 10.3.8][8]
 * [Version 10.3.9][9]
+* [Version 10.3.10][10]
+* [Version 10.3.11][11]
+* [Version 10.3.12][12]
+* [Version 10.3.13][13]
 
 [1]: ./10.3.1-update
 [2]: ./10.3.2-update
@@ -33,3 +39,7 @@ category: api
 [7]: ./10.3.7-update
 [8]: ./10.3.8-update
 [9]: ./10.3.9-update
+[10]: ./10.3.10-update
+[11]: ./10.3.11-update
+[12]: ./10.3.12-update
+[13]: ./10.3.13-update

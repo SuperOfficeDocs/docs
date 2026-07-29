@@ -13,6 +13,7 @@ platform: pocket
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /release-notes/8.5/pocket-crm/
+noindex: true
 ---
 
 # Pocket CRM

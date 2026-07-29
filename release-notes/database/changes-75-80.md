@@ -7,6 +7,7 @@ version: 8.0
 content_type: release-note
 deployment: onsite
 category: database
+hidden: true
 ---
 
 # Table changes from 7.5 to 8.0

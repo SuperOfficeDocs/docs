@@ -5,7 +5,9 @@ description: What's new in the SuperOffice 7 database
 author: SuperOffice Product and Engineering
 version: 7
 content_type: release-note
+deployment: onsite
 category: database
+hidden: true
 ---
 
 # What's new in the SuperOffice 7 database
@@ -16,7 +18,7 @@ SuperOffice 7 introduced a lot of changes to the database as we merged CS and SM
 
 * Contact name & department are extended to 220 characters
 * Project.name, selection.name, document.header
-* Address fields  \[80\]
+* Address fields \[80\]
 * Phone number - The search algorithm has been changed to handle arbitrarily long numbers, with more-or-less the same results. There is no practical limit to the phone number length anymore.
 * Userpreference section, key, value -
   * preference values are now 2k, so the old hack that put long values into the text table is gone. Existing rows are converted during upgrade.

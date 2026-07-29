@@ -1,11 +1,13 @@
 ---
 uid: news-service-8.5
+title: Service 8.5 update
 author: SuperOffice AS - Product and Engineering
 date: 12.18.2020
 version: 8.5
 platform: web
 deployment: onsite
 content_type: release-note
+language: en
 ---
 
 # Service

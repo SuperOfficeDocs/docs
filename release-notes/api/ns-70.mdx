@@ -1,0 +1,663 @@
+---
+uid: whats-new-70
+title: NetServer 7 enhancements
+description: NetServer 7.0
+author: SuperOffice AS - Product and Engineering
+date: 11.05.2016
+version: 7.0
+content_type: release-note
+deployment: onsite
+category: api
+hidden: true
+---
+
+# NetServer 7 enhancements
+
+Lots of improvements to NetServer core functionality:
+
+## Real dates
+
+We changed our datetime format from seconds-since-1970 to a real datetime.
+
+So now we can search for dateparts, all the databases support it.
+
+```csharp
+Select query = S.NewSelect("DateParts");
+AppointmentTableInfo appntInfo = TablesInfo.GetAppointmentTableInfo();
+
+Day doByDay = S.ArgumentFunctions.Day(appntInfo.DoBy);
+doByDay.Alias.Name = "dbd";
+query.ReturnFields.Add(appntInfo.DoBy, doByDay);
+query.Restriction = S.ArgumentFunctions.Year(appntInfo.DoBy).Equal(S.Parameter(2010));
+
+using (QueryExecutionHelper qeh = new QueryExecutionHelper(query))
+{
+    while (qeh.Reader.Read())
+    {
+        DateTime doBy = qeh.Reader.GetDateTime(appntInfo.DoBy);
+        int day = qeh.Reader.GetInt32("dbd");
+
+        Console.WriteLine("DoBy {0} has day {1}", doBy, day);
+    }
+}
+```
+
+<Note>
+Using an `ArgumentFunction` means that the return field no longer has a name (it's enclosed by the function). Therefore we use the `Alias.Name` to give it a name that we can then use when calling `Reader.GetInt32()`. You could always use a position index instead, but that makes the code much more fragile in the face of changes.
+</Note>
+
+See the QueryExecutionHelper class for more help.
+
+## DateTime - new from SuperOffice v.7
+
+Up to version 7, we stored date as an integer, 1-1-1970 + n seconds, giving us the "end of the world" in 19.1.2038 at 03:14:07.
+
+Now use the built-in datetime datatype in the database which makes things a lot more legible, and makes it possible to search for things like dateparts (year). NetServer has new low-level functions to do this, not yet used in our own code.
+One problem: How do you say "unknown" without saying "NULL"?
+
+The one good thing about the old posix datetime was that there was an obvious "beginning of time" value: 0. Datetime has no such natural starting point; not least because the different databases do not agree. SQL Server says 1.1.1753; Sybase and DB/2 say 1.1.0001; Oracle says 1.1.4712BC
+
+1.1.1760 is a good compromise, and not likely to conflict with a real date, this corresponds to "0" from the date-as-int past
+31.12.9999 is DateTime.MaxValue and means "forever". Anything in between is a real date - but the Windows code still works with posix times internally so this means 1970 -\> 2038 still applies.
+
+In the code, we convert from 1.1.1760 to 1.1.1970 (c++) or DateTime.MinValue (C#) automatically. The code and applications dependent on it see no change from what things were like earlier.
+
+Since the C++ still works with posix `date_t` internally, we still have the same limitations. Overcoming these is a big project that relates to all our C++ and Windows GUI code; and it just was not worth the risk and effort in this round.
+
+User-defined fields are not being changed in 7.0 and here Datetime is still mapped to an int.
+UnlimitedDate also stays the same, as a string internally (YYYYMMDD).
+
+## Aliasing on ArgumentFunctions
+
+You can now set an alias name on an ArgumentFunction Such as Day, Count, ...
+
+* Earlier, you could say Count(fieldInfo) with an alias on the fieldInfo.
+
+* Now you can set the alias on the function itself, making it possible to use the same fieldInfo in multiple functions - such as dateparts
+
+You can then retrieve values by alias name, instead of ordinal number
+
+## QueryExecutionHelper
+
+A utility class that handles connections and commands.
+
+* Exception-safe cleanup through using clause
+
+* Nice clean code (saves 2 nesting levels and some try-catch noise)
+
+* Many overloads allow customized behavior
+
+* Can be used for executing non-query commands
+
+  `QueryExecutionHelper.ExecuteNonQuery(myInsert)`
+
+* Can be used for fetching scalar values
+
+  `int i = .ExecuteTypedScalar<int>(mySql)`
+
+## OSQL meets Sentry
+
+The SQL we generate may not be what you expected.
+
+The previous example code generated... what?
+
+```SQL
+SELECT do_by, DATEPART(day, do_by) AS "dbd"
+FROM crm7.appointment
+WHERE DATEPART(year, do_by) = 2010
+```
+
+...or...
+
+```SQL
+/* DateParts */ SELECT T0."do_by",
+DATEPART(day, T0."do_by") AS "dbd",
+T0."appointment_id", T0."type",
+T0."associate_id", T0."group_idx",
+T0."assignedBy", T0."registered",
+T0."registered_associate_id",
+T0."mother_id", T1."forAll",
+T1."forAssocId", T1."forGroupId"
+FROM CRM5."APPOINTMENT" T0
+INNER JOIN CRM5."VISIBLEFOR" T1
+ON (T0."appointment_id" = T1."appointmentId")
+WHERE DATEPART(year, T0."do_by") = 2010
+```
+
+**Sentry** needs multiple fields to calculate rights. It can also restrict the query to filter out rows outright, in the database. This is done through a query interception deep down in NetServer, which gives each Sentry instance a chance to amend the OSQL before it goes to generation.
+
+For example, `AppointmentSentry` adds join to `VisibleFor`, and fetches the fields it needs.
+
+## GroupBy and Sentry
+
+Remember that in a grouped query, all return fields must either be aggregates or GROUP BY. Your query adheres to this, but once the Sentry system modifies it, it may break. You can avoid this by adding the return fields and join yourself.
+
+* Sentry will pick up the fields; it only adds when it has to
+
+* But this may change the meaning of your query
+
+`IgnoreSentry` turns off Sentry, so your query is generated "untouched"
+
+```SQL
+/* DatePartsIgnoreSentry */
+SELECT T0."do_by",
+  DATEPART(day, T0."do_by") as "dbd"
+FROM  CRM5."APPOINTMENT" T0
+WHERE DATEPART(year, T0."do_by") = 2010
+```
+
+Now that the SQL is predictable, GROUP BY can be used
+
+**Conclusion:** GROUP BY and Sentry don't mix!
+
+<Tip>
+Any fields added by Sentry are always at the end.
+</Tip>
+
+Ordinal numbers of "your" fields are predictable but please use fieldInfo or alias name.
+
+## NewSelect
+
+The code says
+
+```SQL
+Select q = S.NewSelect("comment");
+```
+
+The generated SQL will start with
+
+```SQL
+/* comment */
+```
+
+This can be a powerful debugging/forensic tool. "Where is this query coming from" is suddenly easier to answer.
+
+Please use this feature!
+
+## SoftTriggers
+
+NetServer has its own OSQL interception system. Used by Sentry, travel transaction logging, free-text index, ... You can have one too - on insert/update/delete.
+
+**SoftTrigger** defines a way to set a pre- or post-execution callback, for a specific table.
+
+```csharp
+SoftTrigger.OnChange preCont =
+    delegate(SoTable table, SqlType sqlType, int primaryKey, PrivateSave save)
+    {
+        Console.WriteLine("SQL of type {0} coming through on table {1}",
+            sqlType, table.DbName);
+    };
+
+ContactTableInfo contInfo = TablesInfo.GetContactTableInfo();
+SoftTrigger.SubscribeOnPreChange(contInfo.Definition, preCont);
+
+ContactRow c = ContactRow.GetFromIdxContactId(2);
+c.CategoryIdx = c.CategoryIdx == 1 ? 2 : 1;
+c.Save();
+```
+
+```text
+SQL of type IsUpdate coming through on table contact
+```
+
+Your delegate is called before or after execution:
+
+* "Before" is after `TravelTransactionLogger`, `SoundexUpdater`, Sentry, Registered/LastUpdated, and TimeZone have been there. You can change the OSQL (very carefully)
+
+* "After" is, well, after. That would probably be just to log it.
+
+## FieldInfo comments
+
+```csharp
+/// <summary>
+/// Field 'name' in table 'contact': Dictionary type string[220], .NET type: string<para/>
+/// Contact name
+/// </summary>
+public SuperOffice.Data.SQL.FieldInfo Name
+```
+
+Now contains declared length (for strings), and the .NET type. Therefore you know which Reader.GetXXX method to use.
+
+Also includes the description of the field from the dictionary - feedback on these always accepted.
+
+## Row improvements
+
+### Get functions
+
+For each unique index, we generate a .GetFromIdx( ... ) method on the Row.
+
+For each non-unique index, we generate a .GetFromIdx( ... ) on the Rows collection.
+
+Use them if you can, the indexes guarantee a quick lookup.
+
+```csharp
+ContactRow c = ContactRow.GetFromIdxContactId(2);
+```
+
+Reflecting indexes from the database schema into code is done to encourage people to use them. However, if you only need one or two fields, then consider doing a custom SQL instead of fetching complete rows.
+
+### Row objects from reader
+
+```csharp
+Select s = S.NewSelect("Demo");
+PersonTableInfo personInfo = TablesInfo.GetPersonTableInfo();
+ContactTableInfo contactInfo = TablesInfo.GetContactTableInfo();
+
+s.ReturnFields.Add(personInfo, contactInfo);
+s.JoinRestriction.InnerJoin(personInfo.ContactId.Equal(contactInfo.ContactId));
+s.RestrictionAnd(contactInfo.CategoryIdx.Equal(S.Parameter(1)));
+
+using (QueryExecutionHelper qeh = new QueryExecutionHelper(s))
+{
+    while (qeh.Reader.Read())
+    {
+        PersonRow person = PersonRow.GetFromReader(qeh.Reader, personInfo);
+        ContactRow contact = ContactRow.GetFromReader(qeh.Reader, contactInfo);
+
+        // ...
+    }
+}
+```
+
+Points to note:
+
+* `ReturnFields.Add` has an overload that takes a `TableInfo[]`, so you can add all fields in a table by one parameter. You can of course add any other odd fields you want as well (in a separate .Add)
+
+* Select (and many other places that have restrictions) has a RestrictionAnd(r), which is short form for if( Restriction == null ) Restriction = r else Restriction = Restriction.And(r).  This again eases flow and makes the code easier to read
+
+* You can construct Row objects from a reader, just as long as you have all the fields available. This will also transfer all Sentry info
+
+* You can also GetXXX any fields at any time, of course
+
+### Row documentation
+
+We have improved the documentation on the Row/Rows objects
+
+```csharp
+/// <summary>
+/// .NET type: short. STOP flag
+/// </summary>
+/// <remarks>
+/// Original type in dictionary: ushort.
+/// <para>You need to have Read access to get the value of this field. If you do not have access, you will get</para>
+/// <para>You need to have write access to this field to set a new value (Sentry will throw an exception otherwise</para>
+/// <para>Setting this field to a new value will not affect the Sentry calculations and your rights</para>
+/// </remarks>
+/// <exception cref="SuperOffice.Exceptions.SoSentryException">Thrown if the set method is accessed without hav
+public virtual short Xstop
+```
+
+## CollectionOps
+
+A collection of static methods for manipulation of collections
+
+* To/from `Dictionary<>`
+
+* NamedValue strings
+
+* Compare and massage arrays
+
+Generally very null-tolerant, simplifying your code a lot
+
+### Arrays
+
+```csharp
+bool ArraysEquivalent<T> (T[] left, T[] right)
+```
+
+Checks for contents, irrespective of order
+
+`[2, 1, 4]` is equiv to `[1, 2, 4]`
+
+```csharp
+int[] allAssociates = SelectableListHelper.GetAllIds
+    ( SoListProviderFactory.Create( "FilterAssociates", true ) );
+int[] allGroups = SelectableListHelper.GetAllIds
+    ( SoListProviderFactory.Create( "FilterGroups", true ) );
+bool allSelected = CollectionOps.ArraysEquivalent( allGroups, groupIds )
+    && CollectionOps.ArraysEquivalent( allAssociates, associateIds );
+```
+
+* `ConvertArray` applies a converter delegate to each element. But nowadays you can use LINQ to do that
+* `AddToArray` makes a new, longer array
+* Consider using `List<>;` but sometimes you're stuck with arrays...
+
+```csharp
+if( isOurCountry )
+    item.OwnCountryDayTexts =
+        CollectionOps.AddToArray( item.OwnCountryDayTexts, text );
+else
+    item.OtherCountryDayTexts =
+        CollectionOps.AddToArray( item.OtherCountryDayTexts, text );
+```
+
+### Dictionary of Lists
+
+I quite often find myself using a dictionary, where the value is a list
+
+```csharp
+Dictionary<string, List<Item>>
+```
+
+This can be done quite smoothly:
+
+```csharp
+// fetch ALL participants and sort them into lists by entity name
+participants.SetPagingInfo(int.MaxValue, 0);
+Dictionary<string, List<ArchiveRow>> rows =
+    new Dictionary<string, List<ArchiveRow>>
+    (5, StringComparer.InvariantCultureIgnoreCase);
+foreach (ArchiveRow row in participants.GetRows(string.Empty))
+    CollectionOps.AddToDictionaryList(rows, row.RowType, row);
+Close();
+```
+
+### Dictionaries
+
+CreateDictionaryFromXXX( ... ) - many overloads
+
+* Take some kind of collection of items
+* Apply a delegate to each item, to extract/make a key
+* Add the key and the item to a dictionary
+
+Most are O(n) (linear speed)
+
+```csharp
+public static Dictionary<string, ArchiveColumnInfo>
+    ToNameDictionary(params ArchiveColumnInfo[] columnInfos)
+{
+    return CollectionOps.CreateDictionaryFromArray(columnInfos,
+        delegate(ArchiveColumnInfo item) { return item.Name; },
+        StringComparer.InvariantCultureIgnoreCase);
+}
+```
+
+LINQ has a completely corresponding `ToDictionary<>` extension method, but ours was first.
+
+### ParameterBuilder
+
+A class that will take n string items and concatenate them with front, middle, and end delimiters.
+
+* Eliminates all those pesky if( !first ) AddComma(); first = false; constructions
+* Has a static method that does everything at once
+* Use it to make useful error messages!
+
+MiddleDelimiter will be dropped when relevant (empty items).
+
+#### How to build an error message
+
+Restrictions is an `ArchiveRestrictionInfo[]`
+
+```csharp
+throw new SoIllegalOperationException("The " + ProviderName +
+    " provider should be used with either source or destination restrictions. \n\t" +
+    ParameterBuilder.FormatObjects("\n\t", restrictions));
+```
+
+The error message contains multiple, indented lines, each showing one restriction.
+
+Since `ArchiveRestrictionInfo` has an overridden `ToString` method, meant for debugging, this is easy and useful. So easy that you should really do it.
+
+#### Making a tooltip
+
+```csharp
+ParameterBuilder tip = new ParameterBuilder( Environment.NewLine );
+while( reader.Read() )
+{
+    PersonRow person = PersonRow.GetFromReader( reader, personInfo );
+    ContactRow contact = ContactRow.GetFromReader( reader, contactInfo );
+
+    if( contact.ContactId != lastContactId )
+        tip.Add( ContactNameFormatter.GetFullName(contact) );
+    lastContactId = contact.ContactId;
+
+    tip.Add( "\t" + PersonNameFormatter.GetFullName( person ) );
+}
+return tip.ToString();
+```
+
+## CultureDataFormatter
+
+What does "1,000" mean?
+
+* "one point zero zero zero"?
+
+* "one thousand"?
+
+Making everything into a string can be practical, but also disastrous. To avoid misunderstandings, we say  "\[I: 1000\]", which may not be the most elegant format, but it is human-readable and unambiguous.
+
+`CultureDataFormatter`, in *SoCore*, is your friend when faced with such a string
+
+The parsing methods are quite format-tolerant. In addition to strings like "\[I:1234\]", they will also accept simply "1234".
+
+LocalizeXXX methods return formatted strings, using the current culture.  You can selectively encode datetime, date, or time
+
+ArchiveProviders use this format for the DisplayText return value. If you make your own archive provider components, you should do so too
+
+```csharp
+string fromInt = CultureDataFormatter.EncodeInt(1234);
+
+string fromDate = CultureDataFormatter.EncodeDateTime(DateTime.Now);
+```
+
+fromInt = "\[I:1234\]"
+
+fromDate = "\[DT:11/12/2010 09:49:35.9227577\]"
+
+```csharp
+string localInt = CultureDataFormatter.LocalizeEncoded(fromInt);
+string localDate2 = CultureDataFormatter.LocalizeEncoded(fromDate);
+```
+
+localInt = 1234
+
+localDate2 = 12.11.2010 9:49 AM
+
+## Multi-threading
+
+In the general case, multi-threading/parallel programming is hard. Why?
+
+* Almost always because of synchronization issues
+
+* And because the syntax for working with threads tends to be complicated
+  NetServer uses multi-threading internally, and we have some useful infrastructure
+
+* .NET 4.0 and the Task Parallel Library are also very nice
+
+### Easy Multi-threading
+
+If your problem can be partitioned into independent parts, then you're home-free.
+
+* Put each part in a method
+* Call the methods in parallel using the ThreadManager
+* Use the results
+
+The real trick is to recognize these cases in your code!
+
+#### Reading two files
+
+```csharp
+string text1 = string.Empty, text2 = string.Empty;
+
+ThreadManager.Invoke(
+    () => text1 = File.ReadAllText(@"c:\file1.txt"),
+    () => text2 = File.ReadAllText(@"c:\file2.txt"));
+
+Console.WriteLine("Text 1: {0}\nText 2: {1}", text1, text2);
+```
+
+* The two lambdas (statements) are done simultaneously, each in its own thread
+* The main thread waits until both complete
+* ThreadManager.Invoke will then return
+
+Reading two files is - fairly obviously - something where the parts are independent of each other; so this is a case of easy multi-threading. Whether it actually **runs** any faster is a less obvious question to answer: it depends on where the files are, whether they are competing for channels.
+
+If one is on the net and the other on a local disk, it should definitely run faster. If they're on the same disk, and competing for the same disk head movement, then it might even be slower. Caching will make the picture less predictable. "Your mileage will vary".
+
+### Why use NetServer ThreadManager
+
+* SoContext, SoDatabase, and other variables that are in the environment are managed for you.
+
+* If you Impersonate inside a thread, we keep track of that.
+
+* If multi-threading is disabled in the config file, your code will be nicely executed in sequence.
+
+* We perform throttling to avoid killing the machine with a gazillion threads.
+
+### When to single-thread
+
+Starting and stopping threads is not free. You should expect significant savings before resorting to multi-threading.
+
+Synchronization is hard. If your problem is in any way dependent on who finishes first, or there are shared data structures... then you are in the sync world
+
+Do you have multiple cores, or are you waiting for external data? If not, then there is no point in multi-threading.
+
+Again, it all depends on your problem. Multi-threading is a powerful tool and you should know about it, and about what NetServer can do to help you. Beyond that, it's your call.
+
+### Multi-thread database reading
+
+```csharp
+PersonRow first = null, last = null;
+
+PersonRow.CustomSearch firstSearch = new PersonRow.CustomSearch();
+firstSearch.Restriction = firstSearch.PersonTableInfo.ContactId.
+    Equal(S.Parameter(2));
+firstSearch.OrderBy.Add(new OrderBy(firstSearch.PersonTableInfo.Rank,
+    OrderBySortType.DESC));
+
+PersonRow.CustomSearch lastSearch = new PersonRow.CustomSearch();
+lastSearch.Restriction = lastSearch.PersonTableInfo.ContactId.
+    Equal(S.Parameter(2));
+lastSearch.OrderBy.Add(new OrderBy(lastSearch.PersonTableInfo.Rank,
+    OrderBySortType.ASC));
+
+ThreadManager.Invoke(
+    () => first = PersonRow.GetFromCustomSearch(firstSearch),
+    () => last = PersonRow.GetFromCustomSearch(lastSearch));
+
+Console.WriteLine("First person: {0}\nLast person: {1}",
+    first.ToString(), last.ToString());
+```
+
+It's the `ThreadManager.Invoke` call that does the magic. Its parameter is an array of Actions, where an Action is a delegate that takes no parameters and returns void (a method that simply does something). Then we use the lamda syntax to eliminate the syntactical hassle of saying new Action( MyMethod ) and having to write the methods elsewhere: `() =>` simply means "I declare a parameterless block of code, which is as follows".
+
+<Note>
+The `firstSearch` and `lastSearch` local variables are "captured" into the lambda, and become part of the code that is sent off to the `Invoke` method for execution. This is a *very powerful* mechanism, called **scope capture**, which you can use to pass along all kinds of values. But beware of one thing: **Never, ever update such values from inside the parallel code, if they are shared between multiple methods**. That would break the initial assumption, that your parallel tasks are **independent**. As soon as they share any kind of variable, that is no longer true and YOU become responsible for synchronizing access.
+</Note>
+
+### Alternative approach
+
+```csharp
+public static void ReadFirstAndLastPersons_3()
+{
+    PersonRow first = null, last = null;
+    int contactId = 2;
+
+    ThreadManager.Invoke(
+        () => first = ReadPersonByRank(contactId, OrderBySortType.DESC),
+        () => last = ReadPersonByRank(contactId, OrderBySortType.ASC));
+
+    Console.WriteLine("First person: {0}\nLast person: {1}",
+        first.ToString(), last.ToString());
+}
+
+private static PersonRow ReadPersonByRank(int contactId,
+    OrderBySortType orderByType)
+{
+    PersonRow.CustomSearch search = new PersonRow.CustomSearch();
+    search.Restriction = search.PersonTableInfo.ContactId.
+        Equal(S.Parameter(contactId));
+    search.OrderBy.Add(new OrderBy(search.PersonTableInfo.Rank,
+        orderByType));
+
+    return search.ToPersonRow();
+}
+```
+
+Here we have moved the parallel code into a separate method and used scope capture in the lambdas to send different parameters to them in a very nice and clean way. Recommended, whenever your lambda would otherwise become large, or you see too many similarities.
+
+## ArchiveRestrictions
+
+There is an implicit "AND" between archive restrictions New in 7: It doesn't have to be.
+
+* You can say "OR"
+
+* You can add parentheses:
+
+(type = notDone AND activeDate before today)
+OR (type = done AND activeDate = today)
+
+This is almost universally supported. Some very special "restrictions", like those used to tell the Participants provider which associates to include (instead of the provider looking them up in the database) don't support this functionality, as it would be pretty meaningless. But most ordinary restrictions work this way.
+
+```csharp
+ArchiveRestrictionInfo t1 = new ArchiveRestrictionInfo("type", "=", "1");
+ArchiveRestrictionInfo t2 = new ArchiveRestrictionInfo("type", "=", "2");
+ArchiveRestrictionInfo d1 = new ArchiveRestrictionInfo("activeDate", "before", "today");
+ArchiveRestrictionInfo d2 = new ArchiveRestrictionInfo("activeDate", "=", "today");
+
+t1.InterParenthesis=1;
+t1.InterOperator = ArchiveRestrictionInfo.InterRestrictionOperator.And;
+t1.InterParenthesis=-1;
+t2.InterOperator = ArchiveRestrictionInfo.InterRestrictionOperator.Or;
+
+t2.InterParenthesis=1;
+d2.InterParenthesis=-1;
+
+myProvider.SetRestrictions( new ArchiveRestrictionInfo[] { t1, d1, t2, d2 } );
+```
+
+## Dynamic archive provider
+
+The **dynamic** archive provider supports searches across the relationships defined in the dictionary without having to do any programming. Each field name specifies the query - the table relationships to traverse to read the field.
+
+You can fetch the name and department properties on the contact table like this:
+
+```csharp
+string[] archiveColumns = new string[] {
+  "contact.name", "contact.department" };
+```
+
+Fetching the name of the contact's business (MDO List item) is done by traversing the `business_idx` field on contact:
+
+```csharp
+string[] archiveColumns = new string[] {
+  "contact.name", "contact.business_idx.name"
+};
+```
+
+Fetching the contact's associate's person's name:
+
+```csharp
+string[] archiveColumns = new string[] {
+  "contact.name",
+  "contact.associate_id.name",
+  "contact.associate_id.person_id.firstname" };
+```
+
+The dot uses left-outer-joins by default. To force an inner-join, use a colon instead of a dot:
+
+```csharp
+string[] archiveColumns = new string[] {
+   "contact.name", "contact:business_idx.name" };
+```
+
+This will inner-join contact and business - so contacts without a business value will be skipped.
+
+Right-outer joins can also be constructed:
+
+```csharp
+string[] archiveColumns = new string[] {
+  "contact.(url->contact_id).description" };
+```
+
+You can also use these dot-syntax fields in the restrictions:
+
+```csharp
+string[] archiveColumns = new string[] {
+  "contact.name",
+  "contact:associate_id:person_id.firstname",
+  "contact.(url->contact_id).url_address1" };
+ArchiveRestrictionInfo restriction =
+  new ArchiveRestrictionInfo(
+  "contact:associate_id:person_id.firstname", "begins", "A");
+```

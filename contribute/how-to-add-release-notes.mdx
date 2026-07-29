@@ -15,9 +15,9 @@ Use this guide when you add or update files in *release-notes/*.
 
 ## Follow the format by version line
 
-* SuperOffice **12 and newer** use the Mintlify [Update component][2] in the major-version `index.mdx` page, such as *release-notes/12/index.mdx*.
-* SuperOffice **11 and earlier**, and **Pocket CRM**, should receive formatting updates only. Do not make content edits there.
-* **Mobile CRM** currently uses one update per file.
+* SuperOffice **12 and newer** (the current major version) use the Mintlify [Update component][2] in the major-version `index.mdx` page, such as *release-notes/12/index.mdx*, and are the only version line that gets real content edits.
+* SuperOffice **11 and earlier**, and **Pocket CRM**, should receive formatting updates only — do not make content edits there. This applies regardless of which structural format a version happens to use: SuperOffice 11 now uses the same Update+Badge component as 12 (see `release-notes/11/index.mdx`), but it's a historical version once live on Mintlify, not the current one, so it stays formatting-only just like 10.x and earlier.
+* **Mobile CRM** uses the Update component too, split across *release-notes/mobile/v11.mdx* and *release-notes/mobile/v10.mdx*. See [Update mobile release notes](#update-mobile-release-notes) below.
 * **Integrations** uses a mixed, older format.
 
 ## Write SuperOffice 12 and newer release notes
@@ -67,11 +67,20 @@ Each feature H3 can also define a [Mintlify anchor override][2] so you can deep-
 
 For Mobile CRM:
 
-1. Add a new update file in *release-notes/mobile/*.
-1. Add `category: Mobile CRM` in frontmatter.
-1. Add screenshots with the `-app-screen` suffix, and place them in */media/loc/en/mobile/*.
-1. Link the new file from *release-notes/mobile/index.mdx* and update the date. Change the version only when stepping major.
-1. Add the new page to *config/nav-releases.json*.
+* Add **one `<Update>` block** to *release-notes/mobile/v11.mdx* (or *v10.mdx* for a v10.x backport), latest at the top. No new file and no new nav entry is needed for a routine update — both files are already wired into *config/nav-releases.json*.
+* Add **one H3 heading** per feature inside that update, matching the plain-heading style already used there (no `<Badge>` — Mobile CRM is one product line, not a multi-module system, so it doesn't need a module badge per feature the way SuperOffice 12 and newer do).
+* Use the file's existing `tags={[...]}` convention for filtering (for example `["Diary", "Follow-ups"]`), carried over from what used to be the file's `category`/`topic` frontmatter.
+* Add screenshots with the `-app-screen` suffix in the image alt text, and place the image files in */media/loc/en/mobile/*.
+* Give the update a stable anchor the same way as SuperOffice 12 and newer:
+
+  ```mdx
+  <Update label="11.2.0" description="MM.DD.YYYY" tags={["Diary"]}>
+  <a id="11.2.0"></a>
+  ```
+
+  When a version has more than one feature, add an explicit anchor to each feature H3 too, so it can be deep-linked individually: `### Feature title {#11.2.0-1}`.
+* Add a bullet for the new update to the changelog list in *release-notes/mobile/index.mdx*, linking to the update's anchor (for example `./v11#11.2.0`).
+* When mobile itself needs a fresh split (not simply because a new desktop major version ships), create the next file (for example *v12.mdx*), add it to *config/nav-releases.json*, and add a wildcard redirect in *config/redirects.json* for the version line it replaces.
 
 ## Update EOL announcements
 

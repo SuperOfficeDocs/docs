@@ -16,9 +16,7 @@ language: en
 Version 12 of the API reference includes changes from the v11.13 release, listed by major.minor version.
 
 * [(12.0)][1]
-
 * [(12.1)][2]
-
 * [(12.2)][3]
 
 [1]: ./12.0/12.0-update

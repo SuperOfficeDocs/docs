@@ -8985,11 +8985,11 @@
   },
   {
     "source": "/release-notes/10.0/office-integrations/*",
-    "destination": "/release-notes/integrations/sofo/index"
+    "destination": "/release-notes/integrations/sofo"
   },
   {
     "source": "/release-notes/10.1/office-integrations/*",
-    "destination": "/release-notes/integrations/sharepoint/*"
+    "destination": "/release-notes/integrations/sharepoint"
   },
   {
     "source": "/release-notes/10.2/office-integrations/",
@@ -8997,19 +8997,15 @@
   },
   {
     "source": "/release-notes/10.2/office-integrations/3.1-update",
-    "destination": "/release-notes/integrations/sofo/3.1-update"
+    "destination": "/release-notes/integrations/sofo"
   },
   {
     "source": "/release-notes/10.2/office-integrations/3.2-update",
-    "destination": "/release-notes/integrations/sharepoint/3.2-update"
+    "destination": "/release-notes/integrations/sharepoint"
   },
   {
-    "source": "/release-notes/10.5/office-integrations/",
-    "destination": "/release-notes/integrations/sofo/index"
-  },
-  {
-    "source": "/release-notes/10.5/office-integrations/sofo-6.0-update",
-    "destination": "/release-notes/integrations/sofo/6.0-update"
+    "source": "/release-notes/10.5/office-integrations/*",
+    "destination": "/release-notes/integrations/sofo"
   },
   {
     "source": "/release-notes/12/admin/12.1-update",
@@ -9037,7 +9033,7 @@
   },
   {
     "source": "/release-notes/8.5/office-integrations/*",
-    "destination": "/release-notes/integrations/mail-link/*"
+    "destination": "/release-notes/integrations/mail-link"
   },
   {
     "source": "/release-notes/8.5/pocket-crm/*",
@@ -9045,11 +9041,11 @@
   },
   {
     "source": "/release-notes/9.1/office-integrations/*",
-    "destination": "/release-notes/integrations/sofo/index"
+    "destination": "/release-notes/integrations/sofo"
   },
   {
     "source": "/release-notes/9.2/office-integrations/*",
-    "destination": "/release-notes/integrations/sofo/index"
+    "destination": "/release-notes/integrations/sofo"
   },
   {
     "source": "/sv/admin/erp/learn/erp-connect",
@@ -10626,5 +10622,181 @@
   {
     "source": "/sv/ui/web-panels/learn/index",
     "destination": "/sv/customization/web-panels/admin/index"
+  },
+  {
+    "source": "/release-notes/database/index",
+    "destination": "/release-notes/database/changes-81"
+  },
+  {
+    "source": "/release-notes/api/ns-70/*",
+    "destination": "/release-notes/api/ns-70"
+  },
+  {
+    "source": "/release-notes/api/index",
+    "destination": "/release-notes/api/ns-80"
+  },
+  {
+    "source": "/release-notes/9.1/service/index",
+    "destination": "/release-notes/9.1/service/9.1-R01-update"
+  },
+  {
+    "source": "/release-notes/9.1/standard-crm/index",
+    "destination": "/release-notes/9.1/standard-crm/9.1-R01-update"
+  },
+  {
+    "source": "/release-notes/9.2/cep/index",
+    "destination": "/release-notes/9.2/cep/9.2-R01-update"
+  },
+  {
+    "source": "/release-notes/9.2/api/9.2-R*",
+    "destination": "/release-notes/9.2/api/index"
+  },
+  {
+    "source": "/release-notes/10.0/api/10.0.*",
+    "destination": "/release-notes/10.0/api/index"
+  },
+  {
+    "source": "/release-notes/mobile/11.*",
+    "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/release-notes/mobile/10.*",
+    "destination": "/release-notes/mobile/v10"
+  },
+  {
+    "source": "/release-notes/11/admin/*",
+    "destination": "/release-notes/11"
+  },
+  {
+    "source": "/release-notes/11/core-crm/*",
+    "destination": "/release-notes/11"
+  },
+  {
+    "source": "/release-notes/11/marketing/*",
+    "destination": "/release-notes/11"
+  },
+  {
+    "source": "/release-notes/11/service/*",
+    "destination": "/release-notes/11"
+  },
+  {
+    "source": "/release-notes/11/api/11.13/*",
+    "destination": "/release-notes/11/api/11.13"
+  },
+  {
+    "source": "/release-notes/11/api/11.12/*",
+    "destination": "/release-notes/11/api/11.12"
+  },
+  {
+    "source": "/release-notes/11/api/11.11/*",
+    "destination": "/release-notes/11/api/11.11"
+  },
+  {
+    "source": "/release-notes/11/api/11.10/*",
+    "destination": "/release-notes/11/api/11.10"
+  },
+  {
+    "source": "/release-notes/11/api/11.9/*",
+    "destination": "/release-notes/11/api/11.9"
+  },
+  {
+    "source": "/release-notes/11/api/11.8/*",
+    "destination": "/release-notes/11/api/11.8"
+  },
+  {
+    "source": "/release-notes/11/api/11.7/*",
+    "destination": "/release-notes/11/api/11.7"
+  },
+  {
+    "source": "/release-notes/11/api/11.6/*",
+    "destination": "/release-notes/11/api/11.6"
+  },
+  {
+    "source": "/release-notes/11/api/11.5/*",
+    "destination": "/release-notes/11/api/11.5"
+  },
+  {
+    "source": "/release-notes/11/api/11.4/*",
+    "destination": "/release-notes/11/api/11.4"
+  },
+  {
+    "source": "/release-notes/11/api/11.3/*",
+    "destination": "/release-notes/11/api/11.3"
+  },
+  {
+    "source": "/release-notes/11/api/11.2/*",
+    "destination": "/release-notes/11/api/11.2"
+  },
+  {
+    "source": "/release-notes/11/api/11.1/*",
+    "destination": "/release-notes/11/api/11.1-update"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.1-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.2-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.3-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
+    "source": "/release-notes/10.1/api/10.1.4-update",
+    "destination": "/release-notes/10.1/api/index"
+  },
+  {
+    "source": "/release-notes/10.5/api/10.5.2",
+    "destination": "/release-notes/10.5/api/10.5.2-update"
+  },
+  {
+    "source": "/release-notes/10.5/api/10.5.2-hotfix",
+    "destination": "/release-notes/10.5/api/10.5.2-update"
+  },
+  {
+    "source": "/release-notes/10.5/api/10.5.2.435-hotfix",
+    "destination": "/release-notes/10.5/api/10.5.2-update"
+  },
+  {
+    "source": "/release-notes/integrations/sharepoint/*",
+    "destination": "/release-notes/integrations/sharepoint"
+  },
+  {
+    "source": "/release-notes/integrations/video-meetings/*",
+    "destination": "/release-notes/integrations/video-meetings"
+  },
+  {
+    "source": "/release-notes/integrations/sofo/*",
+    "destination": "/release-notes/integrations/sofo"
+  },
+  {
+    "source": "/release-notes/integrations/mail-link/*",
+    "destination": "/release-notes/integrations/mail-link"
+  },
+  {
+    "source": "/release-notes/10.0/service/10.0.6-update",
+    "destination": "/release-notes/10.0/core-crm/10.0.6-update"
+  },
+  {
+    "source": "/release-notes/10.0/marketing/10.0.6-update",
+    "destination": "/release-notes/10.0/core-crm/10.0.6-update"
+  },
+  {
+    "source": "/release-notes/10.0/service/index",
+    "destination": "/release-notes/10.0/service/10.0.1-update"
+  },
+  {
+    "source": "/release-notes/10.0/development-products/*",
+    "destination": "/release-notes/10.0/admin/10.0.1-update"
+  },
+  {
+    "source": "/release-notes/10.1/service/index",
+    "destination": "/release-notes/10.1/service/10.1.4-update"
+  },
+  {
+    "source": "/release-notes/10.1/development-products/*",
+    "destination": "/release-notes/10.1/index"
   }
 ]

@@ -1,6 +1,7 @@
 ---
 uid: news-marketing-10.3
 title: What's new in SuperOffice 10.3
+sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.3
 author: SuperOffice AS - Product and Engineering
 date: 11.19.2024
@@ -9,6 +10,7 @@ content_type: release-note
 category: marketing
 audience: person
 audience_tooltip: Marketing
+language: en
 ---
 
 # New and improved Marketing

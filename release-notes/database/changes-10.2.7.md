@@ -1,6 +1,7 @@
 ---
 uid: database-whats-new-10.2.7.5452
 title: What's new in version 10.2.7.5452
+sidebarTitle: "10.2.7 - database changelog"
 description: What's new in database version 10.2.7.5452.
 author: SuperOffice Product and Engineering
 generated: true
