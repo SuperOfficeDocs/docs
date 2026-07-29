@@ -45,57 +45,6 @@
     "pages": [
       "release-notes/11/index",
       {
-        "group": "Core CRM",
-        "pages": [
-          "release-notes/11/core-crm/11.11-update",
-          "release-notes/11/core-crm/11.10-update",
-          "release-notes/11/core-crm/11.7-update",
-          "release-notes/11/core-crm/11.6-update",
-          "release-notes/11/core-crm/11.4-update",
-          "release-notes/11/core-crm/11.3-update",
-          "release-notes/11/core-crm/11.2-update"
-        ]
-      },
-      {
-        "group": "Settings and Maintenance",
-        "pages": [
-          "release-notes/11/admin/11.13-update",
-          "release-notes/11/admin/11.12-update",
-          "release-notes/11/admin/11.11-update",
-          "release-notes/11/admin/11.10-update",
-          "release-notes/11/admin/11.9-update",
-          "release-notes/11/admin/11.8-update",
-          "release-notes/11/admin/11.6-update",
-          "release-notes/11/admin/11.3-update",
-          "release-notes/11/admin/11.1-update"
-        ]
-      },
-      {
-        "group": "Service",
-        "pages": [
-          "release-notes/11/service/11.12-update",
-          "release-notes/11/service/11.11-update",
-          "release-notes/11/service/11.8-update",
-          "release-notes/11/service/11.7-update",
-          "release-notes/11/service/11.5-update",
-          "release-notes/11/service/11.4-update",
-          "release-notes/11/service/11.3-update",
-          "release-notes/11/service/11.2-update",
-          "release-notes/11/service/11.1-update"
-        ]
-      },
-      {
-        "group": "Marketing",
-        "pages": [
-          "release-notes/11/marketing/11.13-update",
-          "release-notes/11/marketing/11.11-update",
-          "release-notes/11/marketing/11.9-update",
-          "release-notes/11/marketing/11.6-update",
-          "release-notes/11/marketing/11.5-update",
-          "release-notes/11/marketing/11.3-update"
-        ]
-      },
-      {
         "group": "API",
         "pages": [
           {

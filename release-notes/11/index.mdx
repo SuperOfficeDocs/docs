@@ -1,0 +1,1069 @@
+---
+uid: release-notes-11
+title: What's new in SuperOffice 11
+sidebarTitle: "Release overview"
+description: Release notes. What's new in SuperOffice CRM 11
+keywords: SuperOffice, CRM, Admin, Settings and maintenance, Service, requests, Marketing, flows, lead distribution, form fonts, google fonts, request relations, related requests, forms, restrictions, field, custom field
+author: kirstiaa
+date: 05.04.2026
+version: 11
+content_type: release-note
+audience: person
+audience_tooltip: SuperOffice CRM
+redirect_from:
+  - /release-notes/11/admin/index
+  - /release-notes/11/admin/11.1-update
+  - /release-notes/11/admin/11.3-update
+  - /release-notes/11/admin/11.6-update
+  - /release-notes/11/admin/11.8-update
+  - /release-notes/11/admin/11.9-update
+  - /release-notes/11/admin/11.10-update
+  - /release-notes/11/admin/11.11-update
+  - /release-notes/11/admin/11.12-update
+  - /release-notes/11/admin/11.13-update
+  - /release-notes/11/core-crm/index
+  - /release-notes/11/core-crm/11.2-update
+  - /release-notes/11/core-crm/11.3-update
+  - /release-notes/11/core-crm/11.4-update
+  - /release-notes/11/core-crm/11.6-update
+  - /release-notes/11/core-crm/11.7-update
+  - /release-notes/11/core-crm/11.10-update
+  - /release-notes/11/core-crm/11.11-update
+  - /release-notes/11/marketing/index
+  - /release-notes/11/marketing/11.3-update
+  - /release-notes/11/marketing/11.5-update
+  - /release-notes/11/marketing/11.6-update
+  - /release-notes/11/marketing/11.9-update
+  - /release-notes/11/marketing/11.11-update
+  - /release-notes/11/marketing/11.13-update
+  - /release-notes/11/service/index
+  - /release-notes/11/service/11.1-update
+  - /release-notes/11/service/11.2-update
+  - /release-notes/11/service/11.3-update
+  - /release-notes/11/service/11.4-update
+  - /release-notes/11/service/11.5-update
+  - /release-notes/11/service/11.7-update
+  - /release-notes/11/service/11.8-update
+  - /release-notes/11/service/11.11-update
+  - /release-notes/11/service/11.12-update
+language: en
+---
+
+# What's new in SuperOffice 11
+
+## Summary of highlights
+
+**SuperOffice 11** - a new version of SuperOffice CRM with major improvements under the hood.
+
+Much of the work in this release has focused on cleaning up outdated and unnecessary code, paving the way for a faster, more reliable, and future-ready solution.
+
+At SuperOffice, relationships are at the heart of everything we do - and strong relationships begin with open, honest communication. That's why we're excited to share this new experience with you as we prepare to roll it out to our cloud customers.
+
+See our [Product Roundup 2025][1]: Highlights across Marketing, Sales, Service, and Integrations.
+
+## Feature updates
+
+<Update label="11.13" description="28.04.2026" tags={["Marketing", "Settings and maintenance"]}>
+<a id="11.13"></a>
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Forms - Add custom contact and company fields {#11.13-marketing-1}
+
+**Custom contact and company fields** can now be added to forms, making it possible to collect and update more of the information your team works with every day.
+
+Previously, only a limited set of standard fields was available in the form builder.
+
+Open the form builder and add fields from the contact or company field list.
+
+Standard fields added for contacts include preferred language, birthday, business, and interests. For companies, department, business, and interests are available. Custom fields (user-defined extra fields - UDEFs - and extra fields) of all types are also available, with the exception of read-only fields and relation fields. When the field list is long, you can search by name to find the right field quickly.
+
+When adding a field that supports overwrite, selecting "Allow overwrite of existing data" (previously labeled "Replace") displays a warning, so you are aware of the risk before publishing the form.
+
+<Tip>
+When sending a mailing with a link to a form, you can pre-populate fields with data already known about the contact. Go to **Publish** and use the pre-populate variables for the fields included in your form.
+</Tip>
+
+![Marketing form - Add custom fields to forms -screenshot][img1]
+
+<Note>
+If you see that a field no longer offers the overwrite option, or is not available in the form builder at all, your CRM administrator may have restricted it. Contact your administrator if you need access.
+</Note>
+
+Read more about [managing form field restrictions in Settings and maintenance][2].
+Read more about [adding fields to a form][3].
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Marketing - Form field restrictions {#11.13-admin-1}
+
+**Form field restrictions** let you control which contact and company fields can be used in forms - and whether existing data in those fields can be overwritten by a form submission.
+
+Without this control, anyone building a form could allow overwrite on fields that should never be changed by an external submission.
+
+Go to the **Marketing** section in Settings and maintenance and open the **Form field restrictions** tab.
+
+For each field, you can set one of two restrictions:
+
+* **Do not allow overwrite:** the overwrite option is removed from the field in all forms, including existing published ones.
+* **Do not show in forms:** the field is removed from the form builder entirely and cannot be added to new forms.
+
+![Admin Marketing - Set restrictions on form fields visible in Marketing forms -screenshot][img2]
+
+<Note>
+Forms on a website can be filled out by anyone. Allowing changes to existing data means you risk unauthorized edits, which can lead to incorrect information and data loss. Handle sensitive fields with care.
+</Note>
+
+Learn more about [using fields in forms][4].
+Read more about [configuring form field restrictions][5].
+
+</Update>
+
+<Update label="11.12" description="07.04.2026" tags={["Service", "Settings and maintenance"]}>
+<a id="11.12"></a>
+
+### <Badge icon="ticket" color="green">Service</Badge> Related requests - better control and overview {#11.12-service-1}
+
+**Related requests** make it easy to link, organise, and manage connected requests in one place. With both visual and list-based views, you get a clear and structured overview of how requests relate to each other.
+
+You can create both hierarchical and side-by-side **relationships** (related, parent, or child), helping you understand dependencies, track progress and manage complex service scenarios with confidence. This gives you greater control, better visibility and a smoother way to work with interconnected requests.
+
+A simple way to confirm that you've selected the correct relation type is to review the summary text after adding the related requests. Example of summary: *Request 2 (only possible to select one) will be set as Child to Request(s) 1 (possible to multiselect).*
+
+![Request - Add relations between multiple requests -screenshot][img3]
+
+<Tip>
+There are several ways to **add related requests**: from the **section tab** on the request, via the **Task** menu, or using **context menus** on individual requests.
+</Tip>
+
+Read more about [request relation rules][6] in Settings and maintenance.
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Requests - Add relation rules {#11.12-admin-1}
+
+Relation rules let you control how linked requests behave when using request relations. They are used to guide parent-child handling in more complex workflows and ensure that related requests follow a consistent process.
+
+Relation rules apply when specific request types are linked (for example, when one request is set as the parent of another). These rules define automatic behaviour in the request UI, helping agents follow the intended workflow.
+
+When creating a rule, you define the **source request type**, **relation type** and **target request type**. You can then add conditions and choose which behaviours should be applied to that combination. Available behaviours include:
+
+* **Require parent on creation:** ensures a parent request must be selected when creating certain request types.
+* **Prevent parent closure:** blocks users from closing a parent request while child requests are still open.
+* **Offer to close parent:** prompts the user to close the parent when all child requests are resolved.
+* **Offer to close children and send message:** when closing a parent request, prompts the user to close all child requests and send a predefined message to each.
+
+![Admin Requests - Add a new request rule and add the correct condition and behavior -screenshot][img4]
+
+These behaviours trigger only in the request UI and help automate steps that would otherwise be manual.
+A typical use case is incident handling. For example, if "Incident" is the parent of multiple Support requests, you can configure the system to automatically close all child requests and send a message to each customer once the incident is resolved.
+
+Relation rules improve control, visibility and efficiency when working with interconnected requests, especially in structured or complex support environments.
+
+Read more about [how to use related requests][7] in SuperOffice Service.
+
+Learn more about [how to set up your relation rules][8] in Settings and maintenance.
+
+</Update>
+
+<Update label="11.11" description="17.03.2026" tags={["Core CRM", "Marketing", "Service", "Settings and maintenance"]}>
+<a id="11.11"></a>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> User setup to configure email and document management {#11.11-core-1}
+
+*Available for new SuperOffice Online customers from 11.11. Rolling out gradually to all SuperOffice Online customers from 11.13. Not available for onsite installations.*
+
+As a new user (or a user with a new computer), there are a few things you should set up to ensure a smooth interaction between SuperOffice CRM, your email account, and your document handler.
+
+Connecting your email account enables you to **send emails** and automatically archive outgoing messages in SuperOffice, making all communication available to your colleagues. You will also be able to send **meeting invitations** to external recipients, receive invitations from others, and be able to send/receive feedback for accepted or declined invitations.
+
+Setting up your document handler is equally important, as it provides an easy and efficient way to **create, edit, and open documents** in SuperOffice.
+
+![SuperOffice User setup - overview of first screen of wizard -screenshot][img5]
+
+With the **User setup** found under your **Personal settings** menu, a setup wizard will guide you through the process.
+
+The second step is to connect your email account: simply click the **Connect** button and follow the steps to validate your login credentials.
+
+![SuperOffice User setup - connect to your email account -app-screen][img6]
+
+The next step is to connect your document handler to SuperOffice. This is done by downloading **WebTools**, installing it, and then connecting it to the SuperOffice CRM tenant.
+
+![SuperOffice User setup - download WebTools for handling documents -app-screen][img7]
+
+<Note>
+We recommend installing [**SuperOffice for Outlook**][9] (or [**SuperOffice Gmail Link**][10]) to enable full email handling, including support for incoming messages from your mailbox.
+</Note>
+
+Read more about [Connect your accounts][11].
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Forms - Custom styling of your form {#11.11-marketing-1}
+
+Custom styling with CSS gives you full control over how your forms look and feel, beyond what standard editors can offer. While standard styling works well for quick setup, you can use custom styling when you need your forms to match your brand guidelines, visual identity, and website design more precisely.
+
+By making your forms look familiar and trustworthy, custom styling helps reduce end‑user confusion and supports a more frictionless customer journey, which can ultimately improve form completion and conversion rates.
+
+You need some understanding of CSS and how to write that code, but with some CSS help and AI it's not that difficult.
+
+* For experienced users: Type your code directly.
+* For less advanced users: If you want more guidance, select a CSS class and add your code there. This approach makes styling less overwhelming and gives you better control over what you're changing.
+
+Examples of styling elements you can add:
+
+* Fill frame
+* Framed checkbox
+* Gradient background and button
+* Hover effects
+
+Small changes can have a significant impact on user experience.
+
+![Marketing form - Style the form with custom styling and CSS code -screenshot][img8]
+
+### <Badge icon="ticket" color="green">Service</Badge> Requests - Created date to use in columns and criteria {#11.11-service-1}
+
+To get an overview of the number of requests per day - whether in selections or dashboards - it is recommended to use the **Created date** field. This field filters by date only, unlike the **Created** field, which includes both date and time.
+
+![Request criteria for Created date and Created -screenshot][img9]
+
+The **Created date** field can be used both as a column and as a criteria. When used as a criteria, you will notice a visual distinction between the two "created" options:
+
+* Created date displays only a calendar icon
+* Created displays both a calendar icon and a clock icon, indicating date and time filtering
+
+Also note the difference between the two fields when displaying them as columns in a request list view.
+
+![Request lists or selections shows column for Created date and Created -screenshot][img10]
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Subscription page styling - Edit Unsubscribe and Confirmation pages {#11.11-admin-1}
+
+In the Subscription page styling overview, you can also edit the text for several related pages from the **Options** tab, including the Unsubscribe, Confirmation saved, and Confirmation cancelled pages.
+
+When you select the page you want to update, a preview automatically appears on the right side of the screen. This preview makes it easy to review your changes and see how they appear across the different languages you support.
+
+![Admin Marketing - Subscription page styling and the Options tab -screenshot][img11]
+
+</Update>
+
+<Update label="11.10" description="17.02.2026" tags={["Core CRM", "Settings and maintenance"]}>
+<a id="11.10"></a>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboards - Visualize time spent in each sales stage {#11.10-core-1}
+
+The dashboards include **Days in stage** - a measurement option that makes it easier to analyze how long sales remain in each stage of the sales process.
+
+This update provides clearer **insight** into **stage duration**, helps identify bottlenecks, and supports more data‑driven pipeline management.
+
+![Dashboard tiles where you measure days in stage and stack by days in stage -screenshot][img12]
+
+* **Measure of**: Days in stage is available when selecting average, min, or max in the **Measure** drop‑down.
+* **Group by stage**: You can group results by sale stage to better understand pipeline flow.
+* **Stacked by** - Field: The visualization can be stacked by days in stage, owner, owner group, sale type, and more.
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Notifications for re-assigned follow-ups {#11.10-core-2}
+
+The system sends notifications for all re‑assigned follow‑ups, regardless of follow‑up type, ensuring better visibility and follow‑through when task ownership changes.
+
+* Notifications are sent for all re‑assigned follow‑ups, regardless of follow‑up type.
+* The system generates notifications for re‑assignments with dates up to 30 days back in time, ensuring no updates are missed.
+
+This approach makes follow‑up management more reliable, reduces the risk of overlooked tasks, and ensures users stay informed whenever ownership changes.
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Marketing - Subscription page styling {#11.10-admin-1}
+
+All contacts added to SuperOffice CRM receive a Privacy confirmation email that includes a link to their subscription settings. From here, they can easily manage which mailings they want to receive from your company.
+
+This subscription page link is also included in all mailings, allowing contacts to update their preferences at any time. The same subscription types are used when creating a mailing, ensuring consistency when selecting the mailing type you want to send.
+
+You can customise the look and feel of the subscription page from **Marketing** in the navigator, under the **Subscription page styling** tab, where you have a **Styling** and an **Options** section. Any changes you make are shown immediately in the preview on the right-hand side.
+
+![Admin Marketing - Styling the page for subscriptions -screenshot][img13]
+
+* **Styling** section: You can add your company logo and adjust its position, set the page width and background, and style the content, buttons, and subscription toggles.
+
+* **Options** section: You can customise the text for all supported languages. Simply select the desired language and update the **Header**, **Instructions**, and **Consent text** to match your tone of voice and branding. If you delete the text in any of the fields, it will automatically revert to the SuperOffice CRM default text.
+
+<Tip>
+You can **remove languages** you do not use in the **Options** section. This reduces the number of languages your contacts can select and simplifies your content maintenance. If your language setup changes later, you can easily add any language you previously removed.
+</Tip>
+
+</Update>
+
+<Update label="11.9" description="27.01.2026" tags={["Marketing", "Settings and maintenance"]}>
+<a id="11.9"></a>
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Form - Use Google fonts in your forms {#11.9-marketing-1}
+
+In **Settings and maintenance** you can add **Google fonts** and manage them to make them available across all your forms. This helps ensure a **consistent design and brand identity** for users who interact with your forms externally.
+
+Once the fonts are added and organised, the new fonts can be selected in the **Edit form** dialog, in the **Style** section of the form, as well as in the **Double opt-in**, **Thank you page**, and **Page for inactive form** sections.
+
+![Marketing form - Change the form font in Style -screenshot][img14]
+
+Read more about how to add Google fonts in [Settings and maintenance][12] and [how to style your forms][13].
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Marketing - Add new Google fonts to form fonts {#11.9-admin-1}
+
+Manage the fonts available for your forms in Marketing to maintain consistent design and branding. You can add fonts from our standard collection or choose from the **Google Fonts library**. Each font can be previewed before adding, and the order can be adjusted to suit your needs. Fonts already used in existing forms will remain in place even if they are later removed from the list.
+
+Go to **Marketing** in **Settings and maintenance**, then select the **Form fonts** tab. Click **Add** to select a font. A **preview** will show how the font appears before you add it to your collection.
+
+![Admin marketing - Add new fonts to be available in your forms -screenshot][img15]
+
+Newly added fonts appear at the **bottom** of the list. You can change the **rank** of a font by **dragging and dropping** it to the wanted rank in the list.
+
+![Admin marketing - Change the rank in the font overview -screenshot][img16]
+
+<Tip>
+**Reorder** the fonts to place your company's brand fonts at the top, making them easier for users to find.
+</Tip>
+
+Read more about [managing fonts for forms][14].
+
+</Update>
+
+<Update label="11.8" description="13.01.2026" tags={["Service", "Settings and maintenance"]}>
+<a id="11.8"></a>
+
+### <Badge icon="ticket" color="green">Service</Badge> Time zones - Agents with multiple time zones {#11.8-service-1}
+
+SuperOffice Service handles **time zones** in a way that ensures your data is always shown at the correct time, wherever you are in the world.
+
+What this means for you:
+
+* **Times** are displayed accurately across all time zones, so you can rely on the information in your requests and records.
+* A consistent experience for teams working across **multiple** time-zone locations.
+* A clearer and more reliable overview when **collaborating internationally**.
+
+You can trust that what you see reflects exactly when things happen, without confusion or the need for manual adjustments.
+
+![The request messages show the same time in preview and in the list -screenshot][img17]
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Workflow - Lead category automation {#11.8-admin-1}
+
+Automating company and contact categories helps **reduce manual work** and ensures your data stays accurate. When the status of a sale changes, the related company or contact can automatically be updated with the correct category - so you never forget to adjust it yourself. This can run fully automatically or ask the user to confirm the change.
+
+You can configure four types of category automation under **Settings and maintenance** > **Workflow** > **Lead categorisation**:
+
+* Update category when a sale is **sold**
+* Update category when a sale is **lost**
+* Update category when a sale is **registered** with the company
+* Update category when a **lead status** is set to: xx
+
+You decide which rules should run automatically and which should prompt the user. For example, it may not be ideal to automatically update categories when a sale is sold if you work with multiple customer tiers (VIP, A, B, C) within the same company. If the rule is configured with **Ask for user confirmation** = true, the user will be prompted and can choose whether to apply the suggested category update or select another category.
+
+For lead management, however, it's often useful to **automate the move** from lead to customer or lost opportunity, ensuring consistent categorisation with far less effort.
+
+![Admin workflow - Set the automation on the category when a sale changes status -screenshot][img18]
+
+Read more about [Automate lead categorisation][15].
+
+</Update>
+
+<Update label="11.7" description="25.11.2025" tags={["Core CRM", "Service"]}>
+<a id="11.7"></a>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Quick filter in dashboard {#11.7-core-1}
+
+[Quick filter][16] allows users to apply flexible filtering options across various data tiles. This minimizes the need to create separate dashboards for data that you would like to visualize, instead quickly adjust the views without navigating away from the current dashboard. All list and date fields are available to use as quick filters.
+
+The dashboard owner - as well as dashboard administrators - can add the desired quick filters. Individual users can then adjust these quick filters to tailor the tiles content to their own needs.
+
+![Dashboard quick filter dialog where text and date fields are available -screenshot][img19]
+
+<Note>
+You can add up to **five quick filters** in a dashboard. This limit ensures that all filters remain visible and it's less complex.
+</Note>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Load a tile again on time outs {#11.7-core-2}
+
+Loading a large dashboard with tiles based on complex datasets can put a strain on the system. Instead of making you wait for everything to load, the system introduces timeouts on the heaviest tiles-giving you less waiting time and more flexibility to review the rest of your dashboard.
+
+Tiles that contain a lot of data may time out if they take longer than 15 seconds to load. If you still want to view the content of a timed-out tile, simply click the reload button for that specific tile. If the tile has not loaded within 5 minutes, it will time out again.
+
+Timeouts may also occur in the Layout tab when editing a tile, as well as in the Chart tab in Selections. In these cases too, you can reload the tile whenever needed.
+
+<Note>
+If certain tiles consistently time out, consider adjusting the dataset to improve loading performance.
+</Note>
+
+![Dashboard where you can reload a timed out tile -screenshot][img20]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Show all or none of the legend {#11.7-core-3}
+
+A new **Show all** checkbox lets you check or uncheck all legend items at once. This saves time when filtering your chart using the legend.
+
+Simply uncheck **Show all**, then select the specific legend items you want to display. When you're done, click **Show all** again to restore the full view.
+
+![Dashboard where you can select all or none legend -screenshot][img21]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Administrator options for a dashboard {#11.7-core-4}
+
+As a dashboard administrator or general administrator, you have full access to manage, edit, or delete dashboards to support users more effectively.
+
+Under **Settings and maintenance** > **Roles**, you'll find both **Data rights (Dashboard)** and **Functional rights** for **Dashboards** (Dashboard Administrator and General Administrator). These rights allow you to:
+
+* Edit dashboards belonging to other associates
+* [Change dashboard owners][17]
+* Manage who can see the dashboard (Visible for)
+* Pin dashboards for user groups or specific users
+
+![Dashboard where an administrator can choose owner, visible for and pin to -screenshot][img22]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Tile details layout with chart type and dataset {#11.7-core-5}
+
+The Layout tab of a tile now provides a clearer overview, helping you understand how the tile is built.
+
+In view mode, click **Edit** on a tile and select **Show dataset** to inspect both the **Dataset** and **Layout** tabs. The Layout tab also displays the chart type as an icon, making it easier to understand the visual style at a glance.
+
+This is especially helpful when a tile times out, allowing you to review the criteria and adjust the dataset without loading the full chart.
+
+![Dashboard tile in view mode can see details of chart type in layout tab -screenshot][img23]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Funnel tile showing progression {#11.7-core-6}
+
+A funnel chart gives account managers a clear view of lead progression and status, helping them prioritise opportunities more effectively.
+
+You can add a funnel tile by selecting a default option such as **Contact - Lead qualification funnel** or **Sale - My forecast this quarter**. Alternatively, start with a blank tile and customise it to your needs.
+
+![Dashboard tile for funnel -screenshot][img24]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Show the Stage when closed {#11.7-core-7}
+
+For closed sales you have access to a field called **Stage when closed**. This field can be used as a criteria or a column, or shown in a tile in dashboard and graphs. The field shows which stage the sale was in when it was marked as sold or lost. This gives valuable insight into where deals typically succeed or fail.
+
+![Dashboard tile for the stage when sale are closed like lost or sold -screenshot][img25]
+
+Choose the field **Stage when closed** as a column or as a criteria in **Selection**.
+
+![Selections with the column for Stage when closed -screenshot][img26]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Selection - Board view grouped by Our contacts to prevent lost leads {#11.7-core-9}
+
+To ensure that no leads fall through the cracks, it's essential to quickly identify which marketing qualified leads have not yet been assigned to a sales representative. The **"No selection"** grouping in board view (when grouped by **Our contacts**) highlights companies that haven't been assigned an owner and are not currently being followed up by sales.
+
+Go to your selection of contacts/companies, select Board view and make sure you have grouped your board view by **Our contacts**, and you will see the No selection column. This allows you to quickly drag and drop unassigned contacts/companies to the appropriate owner.
+
+It's a simple and efficient way to distribute new leads and keep your pipeline moving smoothly.
+
+![Board view shows No selection as column when grouped by Our contacts -screenshot][img27]
+
+<Tip>
+Board view will only group on associates specified as **Our contact** within your selection data. If you cannot see the associate you want to drag-and-drop a company/contact to, open the card for **edit** and set the correct **Our contact** value. After saving, that associate will appear as its own group. If there are no unassigned companies/contacts in your selection, the No selection column will not be shown.
+</Tip>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Selection of sales - Board view Setting for displaying days in stage {#11.7-core-10}
+
+You can do a lot in the **Board view setting** to make the board work better for you.
+
+In the **Settings** for board view for sale selections, you can select two different options for the **sale date badge**, the number in the grey badge displayed behind the sale date on the card:
+
+* **Days in stage**: shows the total number of days the sale has been in this stage. This is prevent too slow moving forward.
+
+* **Days since registered** (default setting): shows number of days since the sale was first registered.
+
+![Board view showing request in a visual pipeline -screenshot][img28]
+
+<Tip>
+Use the checkbox **Save settings for all users viewing this board** to apply your fine-tuning to everyone. This ensures that all users of the selection see the same customised board settings.
+</Tip>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Find - Search for category group {#11.7-core-11}
+
+When you use many different categories for customers or leads, searching for them individually can become time-consuming. By assigning each **category** to a **category group** in **Settings and maintenance**, you can simplify your searches dramatically.
+
+With **Category group** available as a search criteria, you can quickly find all customers or leads belonging to a specific group - such as Customer, Potential customer, Partner, Lost, or Other - without needing to select every category one by one.
+
+![Search with the criteria category group to get all categories in one group -screenshot][img29]
+
+### <Badge icon="ticket" color="green">Service</Badge> Requests - Filter messages on comments or replies {#11.7-service-1}
+
+Working with requests often involves a mix of customer emails, user replies, and internal comments. To keep a clear overview, you can filter the message list to show either replies or internal comments.
+
+This makes it much easier to focus on the communication you need - whether you want to review everything sent to the customer or quickly scan internal discussions.
+
+* **Show replies** include all messages created using Reply or Reply all.
+* **Show comments** include all messages added by clicking the comment icon.
+
+![The request messages can be filtered on comments and replies -screenshot][img30]
+
+</Update>
+
+<Update label="11.6" description="06.11.2025" tags={["Core CRM", "Marketing", "Settings and maintenance"]}>
+<a id="11.6"></a>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Selection - Board view for company and contact {#11.6-core-1}
+
+Get a clear overview of your companies or contacts grouped by **Lead status**, **Category**, or **Our contact**. Create a company or contact selection and open it in [Board view][18] to visualise and manage your data more effectively.
+
+Use the board view for **company selections** to see your customer portfolio at a glance, or use **contact selections** to follow up on leads and track progress.
+
+![Board view for company and contact with group by settings -screenshot][img31]
+
+<Tip>
+Switch between company and contact boards in the **View entity** setting to find the overview that that suits your workflow best.
+</Tip>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Contact - Lead status list connected to the category {#11.6-core-2}
+
+When [working with leads][19], the **Lead status** field is a valuable tool for organising and tracking progress. It becomes especially useful in the **Board view** of a contact selection, where you can easily drag and drop contacts between columns to update their status.
+
+Make sure your Lead status list includes the correct values. You can edit the list items in **Settings and maintenance**.
+
+![Contact edit mode with Lead status list -screenshot][img32]
+
+Read more about using board view on a contact selection under Marketing's 11.6 update, above.
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Search criteria - Lead creation and first touch on companies and contacts {#11.6-core-3}
+
+You can access lead-related criteria under **Lead** in both the Company and Contact groupings. The **lead source** and **first touch** data help you analyse lead origins and are especially useful when creating **Dashboard tiles**.
+
+This data is stored under the **Legal basis** section on the contact card.
+
+<Note>
+First touch source, lead creation source, and company source are tracked only for **new contacts and companies** that do not already exist in your SuperOffice CRM.
+</Note>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Tiles for lead information {#11.6-core-4}
+
+To understand where your leads come from, use the dedicated **Lead** tiles available under **Contact**:
+
+* Funnel - Lead qualification funnel
+* Pie - New leads by campaign YTD
+* Pie - New leads by first touch source YTD
+* Pie - New leads by lead creation source YTD
+* Pie - New leads from chats YTD
+* Big number - New leads from chats YTD
+* Big number - New leads from forms YTD
+* List - Top 10 lead capturing forms YTD
+* List - Top 10 referring sites for new leads YTD
+
+![Dashboard with lead management tiles -screenshot][img33]
+
+Read more about using contact lead tiles under Marketing's 11.6 update, above.
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Settings and maintenance - Marketing screen with conversion tracking (UTM) {#11.6-marketing-1}
+
+[Lead source tracking][20] helps marketers understand exactly where leads originate, which channels perform best, and how to focus time and budget for maximum impact.
+
+Enable [UTM tracking][21] in Settings and Maintenance in the **Marketing** section's **Conversion tracking** tab.
+
+Turn on **Enable UTM data transfer on form submissions**, and add the UTM tracking script to your website and include UTM parameters in your campaign links.
+
+![Marketing screen in Settings and maintenance with Conversion tracking (UTM) -screenshot][img34]
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Marketing Form - Add UTM parameters to your campaign links {#11.6-marketing-2}
+
+To identify where leads are coming from, publish your forms using URLs that include UTM parameters. Extend a direct link or extend the links taking leads to your embedded forms. Ensure the UTM tracking script is added to your website(s) to capture source data correctly for embedded forms.
+
+![Marketing Forms view screen and Publish where you add UTM sources -screenshot][img35]
+
+Example on how the UTM tracking will be stored in your SuperOffice CRM solution. The lead status is stored on a contact under their legal basis.
+
+![The path on how lead source is captured -screenshot][img36]
+
+**The 5 standard UTM parameters:**
+
+There are five standard UTM parameters that you can add to the end of your campaign links:
+
+1. **utm_source**: Identifies the source of the traffic, such as a search engine like Google, newsletters, or social media platforms.
+1. **utm_medium**: Specifies the medium of the traffic, like e-mail, CPC (cost-per-click), or banner.
+1. **utm_campaign**: Indicates the specific campaign name, such as spring_sale or black_friday.
+1. **utm_term**: Used for paid search keywords to identify the keyword that triggered the ad.
+1. **utm_content**: Differentiates similar content or links within the same ad, such as different call-to-action buttons.
+
+Example: `https://yourcompany.com/signup?utm_source=linkedin&utm_medium=social&utm_campaign=webinar_sept`
+
+<Note>
+First touch source, lead creation source, and company source are tracked only for new contact persons and companies that do not already exist in your SuperOffice CRM.
+</Note>
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Dashboard - Lead management tiles {#11.6-marketing-3}
+
+Dashboards provide a clear overview of where leads come from, grouped by source, medium, campaign, term, or content.
+
+Use **lead tiles** available under contact to visualise performance, or add them to existing dashboards.
+
+You can further refine dashboards using **criteria** under **Contact - Lead** or **Company - Lead**, such as *First touch...* or *Lead creation...*, to analyse performance at different tiles.
+
+![Dashboard for Lead management and different tiles -screenshot][img37]
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Contact selections - Use board view to get overview of leads {#11.6-marketing-4}
+
+Create a **contact selection** and switch to **board view** to manage and track leads visually.
+
+Group the view by **lead status** and use drag-and-drop to move contacts between statuses as they progress through the qualification process.
+
+![Contact selection with board view for lead status -screenshot][img38]
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Company - Category list {#11.6-marketing-5}
+
+In the company screen, the category shows the **Lead stage**, which describes where in the buying journey a lead is. It is used to understand how close a company is to becoming a customer. Category is set at the company level, meaning it applies to the entire company, not just one contact person.
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Contact - Lead status list {#11.6-marketing-6}
+
+The list **Lead status** in the contact screen describes what is happening in the qualification process. It is used by BDR teams or sales reps to keep track on whether a lead has been contacted or not, and the result of the call. Lead status is set at the contact person level.
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Marketing - Conversion tracking with UTM data {#11.6-admin-1}
+
+In Settings and maintenance in the Marketing section, you can [enable conversion tracking][22] for all form submissions to SuperOffice CRM.
+
+Turn on **Enable UTM data transfer on form submissions**, and add the UTM tracking script to your website(s) and include UTM parameters to your campaign links.
+
+Read more about this feature under Marketing's 11.6 update, above.
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Lists - Company category with category group {#11.6-admin-2}
+
+In the [Company - Category list][23], set the appropriate **Category group** and define whether the list item should be included in **lead status** tracking.
+
+The **default category groups** are:
+
+* Customer
+* Potential Customer
+* Partner
+* Lost
+* Other
+
+To enable the option **Enable lead status for this category**, the category group must be set to **Potential customer**.
+
+![Admin Lists - Company Category with category group and enable lead status -screenshot][img39]
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Lists - Contact - Lead status {#11.6-admin-3}
+
+In the [**Contact - Lead status** list][24], add the lead status values you wish to use (for example, statuses that are useful when qualifying a lead). These statuses are visible and actionable in the board view for contact selections.
+
+Read more about contact selection with board view under Marketing's 11.6 update, above.
+
+![Admin Lists - Contact Lead status list overview -screenshot][img40]
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Lists - GUI Web panel - Reload content on tab navigation {#11.6-admin-4}
+
+Creating web panels in the UI is a great way to bring external information directly into SuperOffice CRM. You can also link the panel content to SuperOffice data by using **template variables**.
+
+To ensure the content stays up to date, enable the option **Always reload content on tab navigation**.
+
+![Admin Lists - GUI Web panel lists with option to reload content -screenshot][img41]
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> CRMScript - Trigger for Load request message {#11.6-admin-5}
+
+The **Load request message** trigger allows you to identify and filter events based on how a message was created, using the same actions available in the **After saving request MessageAction** trigger.
+
+The **MessageAction** value can include:
+
+* Forward
+* Internal Comment
+* Reply
+* Reply All
+
+By recognising which button was pressed, you can apply specific logic for each type of message event - for example, running a script only when the **Add comment** button is used.
+
+This provides great control and flexibility when working with the **Load request message** trigger.
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Preferences - Set Request preferences for system, group, or user {#11.6-admin-6}
+
+To ensure users have the most efficient experience in SuperOffice CRM, you can configure **Request preferences** with specific settings for different user groups, the entire system, or individual users.
+
+![Admin Preferences - Set a request preference to apply for a group, the whole system or a user -screenshot][img42]
+
+</Update>
+
+<Update label="11.5" description="16.10.2025" tags={["Marketing", "Service"]}>
+<a id="11.5"></a>
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Marketing Form - Pre-populate fields linked from a mailing {#11.5-marketing-1}
+
+With **pre-populate fields**, you can select the fields from the drop-down menu, and when contact data is already known from a mailing, those fields will be filled in **automatically**. This saves your recipients time, reduces friction, and increases the likelihood they'll complete the form.
+
+**Submissions** are also easier to process, as responses can be linked directly to existing contacts in your SuperOffice solution, ensuring better data quality with less duplicates.
+
+![Marketing Form shows the direct link for Publish -screenshot][img43]
+
+### <Badge icon="ticket" color="green">Service</Badge> Request - Differentiate request types with icons {#11.5-service-1}
+
+When you're working with multiple request types, it can be time-consuming to keep track of them all, especially when you have a lot of requests opened. To make the differential easier, the request type icon appears in front of the request ID in the tab, helping you quickly see what type of request it is. You also see the icon in front of the **request type** list menu in the Properties sidebar.
+
+![The request type drop-down shows an icon in front -screenshot][img44]
+
+To use this feature, remember to [select icons for your request types][25] in Settings and maintenance.
+
+### <Badge icon="ticket" color="green">Service</Badge> Reply Tools - Button for FAQ/Reply template in the editor {#11.5-service-2}
+
+Using pre-made FAQ and reply templates is a great way to work more efficiently when responding to incoming requests.
+
+You can access this content by clicking the button in the editor footer or the tab in the right and get the overview in the request properties sidebar.
+
+![Click the FAQ/Reply template to get the overview of content in the request properties side bar -screenshot][img45]
+
+</Update>
+
+<Update label="11.4" description="22.09.2025" tags={["Core CRM", "Service"]}>
+<a id="11.4"></a>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Selection - Board view for requests {#11.4-core-1}
+
+Using **Board view** for **requests** gives you a clear visual overview grouped by status, request type, priority, or owner. You can organise your work the way you prefer - **drag and drop** requests between columns and see progress at a glance, in a way a list view cannot provide.
+
+![Board view showing request in a visual pipeline -screenshot][img46]
+
+You can also **preview** and **edit requests** directly in the [Board view][26], making it easy to send an internal message or reply to the customer without leaving the view.
+
+![Edit request inside the board view -screenshot][img47]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Production sandbox badge (Test environment) {#11.4-core-2}
+
+Working in a **Production sandbox** (test environment) or in systems under construction can sometimes be confusing. Because they often look almost identical to your live environment, it's easy to lose track of where you are and accidentally start using the wrong system.
+
+When an environment is set up as a production sandbox, a **Test environment badge** and a highlighted **line** appear in the top bar. This makes it clear which environment you are working in - no more confusion.
+
+You'll also see a **Test environment** badge on the login page, making it easier to distinguish between the available tenants.
+
+![Test environment badge in CRM showing for production sandbox -screenshot][img48]
+
+![Test environment badge in Settings and maintenance -screenshot][img49]
+
+Read more about the [Production sandbox][27] in Docs.
+
+### <Badge icon="ticket" color="green">Service</Badge> Lists of contacts - Create request from a contact's context menu {#11.4-service-1}
+
+When working with customers and contacts, you often need to act quickly. For example, if a customer raises an issue during a conversation, you can create a request straight away.
+
+Simply right-click on the contact, choose **Create request** from the context menu, describe the issue, and save it. Your support team will then be notified and can follow up as soon as they are available.
+
+The **Create request** option is available in the context menu on all tabs that display a list of contacts, like Sale stakeholder, Project member and Company/contact section tab on Selection.
+
+![Right click on a contact on a company card to create a new request -screenshot][img50]
+
+</Update>
+
+<Update label="11.3" description="02.09.2025" tags={["Core CRM", "Marketing", "Service", "Settings and maintenance"]}>
+<a id="11.3"></a>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Selection - Board view for projects {#11.3-core-1}
+
+The board view is a **visual layout for selections** that gives you a clear, process overview. Available for both projects and sales, it lets you drag and drop cards between stages, quickly edit records, and track progress at a glance - whether you're working on your own or as part of a team.
+
+This view helps improve project visibility, saves time spent searching for information, and streamlines decision-making by keeping all the key details in one place.
+
+![Board view showing grouped project in a visual pipeline -screenshot][img51]
+
+Read more about [board view][28] in Learn | Docs.
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Selection - Preview card in board view {#11.3-core-2}
+
+When working with board view in a selection, you often need a bit more detail. The **Preview** in the side panel makes this quick and easy.
+
+Simply click on any card in your board view, and all information about that sale or project will be displayed in the side panel.
+
+![Selection preview in side panel shows information of the item in our board view -screenshot][img52]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Notification - New company/contact assigned {#11.3-core-3}
+
+Keeping track of new customers and contacts is easy with notifications for newly assigned companies or contacts. You'll be instantly alerted whenever ownership changes, so you can follow up without delay.
+
+![Notification settings for ownerships of assigned companies and contacts -screenshot][img53]
+
+Make sure your notification settings are up to date so you never miss an important update.
+
+![Notification settings for ownerships of assigned companies and contacts -screenshot][img54]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Company/Contact - Keep Our contact empty {#11.3-core-4}
+
+When working with new leads, it's not always obvious who to select as the "Our contact" user. You can create a new company or contact with this field left empty, while still being able to add all other relevant details. This makes lead management much easier.
+
+![Companies and contacts with No selection in the field for Our contact -screenshot][img55]
+
+You can also search for all companies and contacts where no **Our contact** has been selected.
+
+![Search for companies and contacts with No selection in the field for Our contact -screenshot][img56]
+
+<Note>
+When **Our contact** are empty the companies and contacts are shown as data owned by **Other associates**. Make sure the correct **data rights** are set for these sections/data objects in [Settings and maintenance > Roles][29].
+</Note>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Copy dashboard link {#11.3-core-5}
+
+When you find a dashboard that really works, you may want to share it with a colleague. To do this, simply open the **Task** menu, select **Copy dashboard link**, and send the link to your colleague.
+
+Just remember: your colleague must also have access to the dashboard. You can check the owner and visible for in the dashboard details.
+
+![Dashboard - Task button that includes the Copy dashboard link -screenshot][img57]
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Side panel - Preview email with attachments, recipients and reply/forward {#11.3-core-6}
+
+Working with emails is part of everyday work. With the Preview option in the side panel, you can quickly access attachments, see the recipients and perform key tasks such as reply and forward - all directly from the preview panel.
+
+To use it, simply select **Preview** in the side panel, click on an email, and choose the action you need.
+
+![Side panel preview of email with tasks like reply and forward -screenshot][img58]
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Marketing Flow - distribute to owner step {#11.3-marketing-1}
+
+When working with workflows that generate new companies and contacts, it's important to **automate** how these **leads** are assigned, to ensure that they are followed up by the appropriate person or team. The **Distribute to owner** step lets you do exactly that by setting the **Our contact** field to different colleagues in your company.
+
+![Marketing flow - Drag and drop the step for distribute to owner -screenshot][img59]
+
+Use the step **Distribute to owner** in the flow to select an evenly distribution of ownerships of the new companies and contacts to **specific users or user groups**. Each new lead will be assigned automatically, and users will receive **notifications** about their new ownerships.
+
+![Marketing flow - Settings on the step for distribute to owner -screenshot][img60]
+
+<Tip>
+To be included in lead distribution, make sure **your availability status** is set to **Normal** in your Personal settings.
+</Tip>
+
+#### Lead distribution
+
+Lead distribution is the process of automatically assigning new leads to the right sales reps or teams. Using **Flow**, you can route leads fairly or by rules such as region, industry, or product interest. This ensures faster follow-up, balanced workloads, and better customer experiences.
+
+Common use cases:
+
+* Assign leads to reps based on industry, customer segment, or expertise.
+* Distribute leads evenly across a team to balance workloads.
+* Match leads with reps by language or location.
+
+Read more in [Flow control - split][30] in Learn | Docs.
+
+### <Badge icon="ticket" color="green">Service</Badge> Request - Anonymise support agent on reply on requests {#11.3-service-1}
+
+Some customers work with sensitive information or for some other reasons need to hide the full name of the support agent from the customers they are supporting.
+
+In your global preferences, you can select the **Anonymise users on reply**. When enabled, the agent's actual name and email address is removed from the email details sent to the contact.
+
+![Request - The reply message depending on setting for global filter -screenshot][img61]
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> CRMScript - Trigger for Load request and message {#11.3-admin-1}
+
+Working with requests and CRMScript, you may want to add a trigger that runs when a request or message is loaded. This ensures all necessary information is in place before it is shown. For example:
+
+* **Load Request:** Validate request data on load to ensure all required fields are filled in before proceeding.
+* **Load Message:** Load predefined response templates based on the message content to streamline the response process.
+
+![Admin CRMScript - Trigger Load request and message -screenshot][img62]
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Preferences - Global preference to anonymise user on reply {#11.3-admin-2}
+
+**Anonymising a support agent's** identifying information is important when handling **sensitive data**. It protects both the agent and the customer by:
+
+* Preventing accidental or malicious data breaches
+* Supporting compliance with privacy regulations
+* Reducing the risk of identity theft and fraud
+
+If data is ever compromised, anonymisation ensures it **cannot be traced back** to a specific individual, thereby safeguarding privacy and maintaining trust.
+
+In **Global preferences** under Settings and maintenance, you'll find an option to **anonymise user on reply** in the section for **SuperOffice Service system settings**. When enabled, the agent's actual name and email address is removed from the email details sent to the contact.
+
+![Admin Preferences - Global preference for Anonymise user reply -screenshot][img63]
+
+For more details, see [Anonymise support agent on reply on requests][31] in the Service release.
+
+</Update>
+
+<Update label="11.2" description="17.06.2025" tags={["Core CRM", "Service"]}>
+<a id="11.2"></a>
+
+### <Badge icon="user" color="blue">Core CRM</Badge> Selection - Board view for sales {#11.2-core-1}
+
+![Board view showing grouped sales in a visual pipeline -screenshot][img64]
+
+Board view is a **visual layout for selections** that provides a pipeline-style overview. Currently available for sales, it lets you to drag and drop items between stages, quickly edit records, and track progress at a glance - whether you work individually or in a team.
+
+It helps improve sales visibility, reduce time spent searching for information, and streamline decision-making by keeping all relevant details in view.
+
+![Drag and drop interaction moving a sale between board columns -screenshot][img65]
+
+#### Filters and different settings
+
+You can set up the board view for sales to serve your needs the best. Here are some of the settings:
+
+* **Group by**: Select between Stage, Sale type and Owner.
+* **Subgroup by**: Select the subgroup for your board to be Sale type, Project and Owner.
+* **Sort by**: Amount, Sale date, Next activity.
+* **Summarize by**: Amount and Weighted amount.
+* **Filter toolbar**: Next activity, Owner, Owner group, Sale date, Stage, Sales type.
+
+![Settings panel showing board grouping and sorting options -screenshot][img66]
+
+![Filter toolbar options for refining the board view display -screenshot][img67]
+
+#### Edit sales directly from the board
+
+To update a sale directly from the board, such as when you notice incorrect details, hover over the card and select either the **Edit** or **Task** button. The **Task** menu includes actions such as marking the sale as **sold** or **lost**.
+
+![Hover menu with task and edit options for a sale card on the board -screenshot][img68]
+
+When you click the **Edit** button, you have access to the same content of fields as on the **main card of the sale**. Change the different fields, save and the sale is updated with new information.
+
+![Edit form showing sale details and fields directly from the board -screenshot][img69]
+
+Read more about [Board view in our Community][32].
+
+### <Badge icon="ticket" color="green">Service</Badge> Request - Reply tools in Request properties {#11.2-service-1}
+
+(*Available ca 01.07.2025.*)
+
+When replying to a request, you may have access to a selection of FAQs and reply templates. These can be found in the sidebar, alongside the request properties.
+
+By clicking the **Reply Templates and FAQs** button, you can preview the content before inserting it into your message. You'll also find buttons for **Messages** and **Attachments**, allowing you to include previous messages from the request, as well as any related attachments.
+
+These tools help you respond more efficiently when handling a request.
+
+![Reply tools in the properties sidebar showing templates, FAQs, messages, and attachments -screenshot][img70]
+
+### <Badge icon="ticket" color="green">Service</Badge> Request - Pin request lists to the tab bar {#11.2-service-2}
+
+When working with many different request lists and individual requests, you often end up with multiple open tabs. While the **Close all tabs** functions are helpful, you may want to keep certain request lists - default or request selections - easily accessible at all times.
+
+To do this, simply right-click on the tab and select **Pin tab**. The tab will then remain visible in the tab bar whenever you need it. To remove it, just **Unpin the tab** when you're ready to focus on other lists.
+
+![Context menu with pin tab option for request list in the tab bar -screenshot][img71]
+
+### <Badge icon="ticket" color="green">Service</Badge> Request - Show all linked contacts {#11.2-service-3}
+
+Working with a request gives you the option to add multiple contacts to a request. This request will then show on all the linked contacts and companies, so status and answers are available from "all corners" of SuperOffice.
+
+To view all linked contacts, click the **+2** (or similar) indicator to open the contact pop-out.
+
+![Linked contacts shown in a request with a +2 button to view all associated contacts -screenshot][img72]
+
+</Update>
+
+<Update label="11.1" description="09.06.2025" tags={["Service", "Settings and maintenance"]}>
+<a id="11.1"></a>
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> System design - Setting a field as read-only {#11.1-admin-1}
+
+To tailor your SuperOffice CRM solution to your needs, you may need to create several custom fields to store customer-related data. You might also want to integrate SuperOffice CRM with other key systems used within your organisation, such as an ERP system.
+
+To ensure seamless **synchroniation** between systems and to prevent duplicate records, it's important to have unique customer numbers in both. This **unique identifier** should be visible and searchable for users, but not editable.
+
+To achieve this, simply enable the **Show as read-only** option when creating the field. Once this setting is applied, the field will be visible but protected from user edits - and you're ready to go.
+
+![Admin System design - Field set as read-only -screenshot][img73]
+
+### <Badge icon="ticket" color="green">Service</Badge> Request - Search returns the same result as the navigator search {#11.1-service-1}
+
+When creating a **new request**, you'll likely want to link it to a contact, or when replying on a request, you might want to add multiple contacts. Use the search function to get the same results as you would when using the **contact navigator**.
+
+Only remember the company name? No problem - just search for the **company**, and you'll see **all contacts** associated with it. You can then preview the contact to view further details before making your selection.
+
+![Request - Search with preview same as navigator search -screenshot][img74]
+
+</Update>
+
+## Pilot programs
+
+Some features are available to selected customers as part of ongoing pilots. See the [pilot program overview][33] for more details.
+
+## Related content
+
+* [Mobile CRM version 11.1][34] (10.06.2025)
+* [Product integrations release overview][35]
+* [SuperOffice App Store][36]
+* [New or updated App Store apps][37]
+* [Release notes in the Community][38]
+
+[1]: https://community.superoffice.com/en/product-releases/whats-new/product/product-roundup---2025-highlights/?utm_medium=docs&utm_source=release%20notes&utm_campaign=11
+[2]: #11.13
+[3]: /en/marketing/forms/learn/create
+[4]: #11.13
+[5]: /en/marketing/forms/admin/form-field-restrictions
+[6]: #11.12
+[7]: #11.12
+[8]: /en/request/admin/relation-rules
+[9]: /integrations/superoffice-for-outlook/index
+[10]: /integrations/gmail-link/index
+[11]: /en/learn/getting-started/connect-your-accounts
+[12]: #11.9
+[13]: /en/marketing/forms/learn/create#style
+[14]: /en/marketing/forms/admin/manage-fonts
+[15]: /en/lead/admin/category-automation
+[16]: /en/dashboard/learn/index#filter
+[17]: /en/dashboard/learn/update#owner
+[18]: /en/search-options/selection/learn/board-view
+[19]: /en/lead/learn/work-with-leads
+[20]: /en/marketing/utm/learn/index
+[21]: /en/marketing/utm/admin/set-up
+[22]: /en/marketing/utm/admin/set-up
+[23]: /en/lead/admin/add-company-category
+[24]: /en/lead/admin/add-lead-status
+[25]: /en/request/admin/type/create
+[26]: /en/search-options/selection/learn/board-view
+[27]: /en/online/sandbox/index
+[28]: /en/search-options/selection/learn/board-view
+[29]: /en/admin/user-management/role/index
+[30]: /en/marketing/flows/learn/split
+[31]: #11.3
+[32]: https://community.superoffice.com/en/product-releases/whats-new/product/introducing-board-view/?utm_medium=docs&utm_source=release%20notes&utm_campaign=board-view&utm_content=11.2
+[33]: ../index#pilot
+[34]: ../mobile/index
+[35]: ../integrations/index
+[36]: https://appstore.superoffice.com/
+[37]: https://appstore.superoffice.com/Category/new-and-updated
+[38]: https://community.superoffice.com/en/product-releases/release-notes/
+
+[img1]: /media/loc/en/marketing/marketing-forms-fields-add-element.png
+[img2]: /media/loc/en/admin/admin-marketing-form-field-restrictions.png
+[img3]: /media/loc/en/request/request-add-relations.png
+[img4]: /media/loc/en/admin/admin-requests-relation-rules.png
+[img5]: /media/loc/en/learn/superoffice-user-setup-1.png
+[img6]: /media/loc/en/learn/superoffice-user-setup-2-connect-email.png
+[img7]: /media/loc/en/learn/superoffice-user-setup-3-webtools.png
+[img8]: /media/loc/en/marketing/marketing-form-style-custom-styling.png
+[img9]: /media/loc/en/search-options/find-criteria-request-created-date-created.png
+[img10]: /media/loc/en/search-options/selection-requests-columns-created-date-created.png
+[img11]: /media/loc/en/admin/admin-marketing-subscription-page-styling-options.png
+[img12]: /media/loc/en/dashboard/dashboard-tiles-column-chart-days-in-stage.png
+[img13]: /media/loc/en/admin/admin-marketing-subscription-page-styling.png
+[img14]: /media/loc/en/marketing/marketing-form-style-fonts.png
+[img15]: /media/loc/en/admin/admin-marketing-form-font-add.png
+[img16]: /media/loc/en/admin/admin-marketing-form-font-rank.png
+[img17]: /media/loc/en/request/requests-list-preview-timezone.png
+[img18]: /media/loc/en/admin/admin-workflow-lead-categorization.png
+[img19]: /media/loc/en/dashboard/dashboard-quick-filter-dialog.png
+[img20]: /media/loc/en/dashboard/dashboard-load-tile.png
+[img21]: /media/loc/en/dashboard/dashboard-tile-show-all-none-legend.png
+[img22]: /media/loc/en/dashboard/dashboard-edit-dashboard-details.png
+[img23]: /media/loc/en/dashboard/dashboard-show-dataset-layout-tab.png
+[img24]: /media/loc/en/dashboard/dashboard-funnel-edit-tile.png
+[img25]: /media/loc/en/dashboard/dashboard-tile-stage-when-closed.png
+[img26]: /media/loc/en/search-options/selection-sales-stage-when-closed.png
+[img27]: /media/loc/en/search-options/selection-board-view-no-selection-our-contact.png
+[img28]: /media/loc/en/search-options/board-view-settings-sale-date-badge.png
+[img29]: /media/loc/en/search-options/find-criteria-category-group.png
+[img30]: /media/loc/en/request/request-filter-show-replies-comments.png
+[img31]: /media/loc/en/search-options/board-view-company-contact-settings-group-by.png
+[img32]: /media/loc/en/contact/contact-edit-category-lead-status.png
+[img33]: /media/loc/en/dashboard/dashboard-lead-managment-tiles.png
+[img34]: /media/loc/en/admin/admin-marketing-conversion-tracking.png
+[img35]: /media/loc/en/marketing/marketing-form-publish-utm-tracking.png
+[img36]: /media/loc/en/marketing/marketing-how-lead-source-is-captured.png
+[img37]: /media/loc/en/dashboard/dashboard-lead-managment-tiles.png
+[img38]: /media/loc/en/search-options/selection-board-view-contact-lead-status-setting.png
+[img39]: /media/loc/en/admin/admin-list-category-category-group-enable-lead-status.png
+[img40]: /media/loc/en/admin/admin-lists-contact-lead-status.png
+[img41]: /media/loc/en/admin/admin-lists-gui-web-panel-reload.png
+[img42]: /media/loc/en/admin/admin-pref-request-group-setting.png
+[img43]: /media/loc/en/marketing/form-publish.png
+[img44]: /media/loc/en/request/requests-request-type-icon.png
+[img45]: /media/loc/en/request/request-message-button-faq-reply-templates-side-bar.png
+[img46]: /media/loc/en/search-options/selection-board-view-request.png
+[img47]: /media/loc/en/search-options/selection-board-view-request-edit.png
+[img48]: /media/loc/en/ui/test-environment-crm.png
+[img49]: /media/loc/en/ui/test-environment-admin.png
+[img50]: /media/loc/en/company/company-contact-context-menu-new-request.png
+[img51]: /media/loc/en/search-options/selection-board-view-project.png
+[img52]: /media/loc/en/search-options/selection-board-view-project-preview.png
+[img53]: /media/loc/en/diary/notifications-new-company-assigned.png
+[img54]: /media/loc/en/diary/notification-settings-ownership-assigned.png
+[img55]: /media/loc/en/contact/person-our-contact-no-selection.png
+[img56]: /media/loc/en/search-options/find-our-contact-no-selection.png
+[img57]: /media/loc/en/dashboard/dashboard-task-copy-dashboard-link.png
+[img58]: /media/loc/en/learn/side-panel-preview-email-tasks.png
+[img59]: /media/loc/en/marketing/marketing-flow-step-distribute-to-owner-drag-drop.png
+[img60]: /media/loc/en/marketing/marketing-flow-step-distribute-to-owner-settings.png
+[img61]: /media/loc/en/request/request-reply-anonymise-user.png
+[img62]: /media/loc/en/admin/admin-crmscript-trigger-load-request.png
+[img63]: /media/loc/en/admin/admin-pref-global-anonymise-user.png
+[img64]: /media/loc/en/search-options/selection-board-view-sales.png
+[img65]: /media/loc/en/search-options/selection-board-view-drag-drop.png
+[img66]: /media/loc/en/search-options/selection-board-view-settings.png
+[img67]: /media/loc/en/search-options/selection-board-view-filter-settings.png
+[img68]: /media/loc/en/search-options/selection-board-view-sale-quick-edit.png
+[img69]: /media/loc/en/search-options/selection-board-view-edit-sale.png
+[img70]: /media/loc/en/request/request-reply-tools.png
+[img71]: /media/loc/en/request/request-pin-list.png
+[img72]: /media/loc/en/request/request-show-linked-contacts.png
+[img73]: /media/loc/en/admin/admin-system-design-field-properties-read-only.png
+[img74]: /media/loc/en/request/requests-add-contact.png
