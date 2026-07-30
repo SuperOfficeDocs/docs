@@ -15,7 +15,7 @@ language: en
 redirect_from: /en/diary/recurring-appointments
 ---
 
-# Repeating follow-ups \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
+# Repeating follow-ups
 
 It may happen that you want to create a series of follow-ups to occur at regular intervals, for example, a weekly status meeting. Instead of recording these meetings one at a time, you can use the repeating follow-ups function.
 

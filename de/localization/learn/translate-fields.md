@@ -17,7 +17,7 @@ redirect_from: /de/globalization-and-localization/learn/translate-fields
 language: de
 ---
 
-# Übersetzung \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
+# Übersetzung
 
 Die Standardfelder und andere UI-Texte sind in allen SuperOffice-Sprachen verfügbar. Wenn Sie eigene Felder oder Texte erstellen (beispielsweise Namen von Dashboards und Kacheln), können Sie sie in die Sprachen übersetzen, die in Ihrer Organisation verwendet werden.
 

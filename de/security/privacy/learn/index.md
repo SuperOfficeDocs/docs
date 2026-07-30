@@ -14,7 +14,7 @@ tier: starter
 language: de
 ---
 
-# Datenschutz \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
+# Datenschutz
 
 Die Funktion **Datenschutz** in SuperOffice hilft Ihnen, die Daten Ihrer Kunden zu schützen und die Datenschutz-Grundverordnung (DSGVO) der EU einzuhalten.
 

@@ -14,7 +14,7 @@ tier: starter
 language: sv
 ---
 
-# Integritet \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
+# Integritet
 
 Med **Integritet**-funktionen i SuperOffice kan du skydda kundens personliga data och följa EU:s nya dataskyddsförordning (GDPR).
 

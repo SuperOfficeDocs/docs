@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Regelmäßige Folgeaufgaben \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
+# Regelmäßige Folgeaufgaben
 
 Es kann vorkommen, dass Sie eine Reihe von Terminen in regelmäßigen Abständen erstellen möchten, zum Beispiel ein wöchentlich stattfindendes Statusmeeting. Statt diese Besprechungen eine nach der anderen zu erstellen, können Sie die Funktion für regelmäßige Folgeaufgaben verwenden.
 

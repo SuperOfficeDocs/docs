@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Use board view in selections \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
+# Use board view in selections
 
 Board view presents your [selection][2] in a column-based layout using cards. You can group and filter the selection members (records shown on the board), and use drag-and-drop to move cards between groups.
 
@@ -61,7 +61,7 @@ The functionality is the same across supported entities: you can drag cards, ope
 
   ![Open task menu on a sale in board view showing available options -screenshot][img5]
 
-## Customize board layout \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
+## Customize board layout <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Group and subgroup
 

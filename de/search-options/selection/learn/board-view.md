@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Board-Ansicht in Selektionen verwenden \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
+# Board-Ansicht in Selektionen verwenden
 
 Die Board-Ansicht zeigt Ihre [Selektion][2] in einem spaltenbasierten Layout mit Karten an. Sie können die Selektionsmitglieder (Datensätze auf dem Board) gruppieren und filtern sowie Karten per Drag-and-Drop zwischen Gruppen verschieben.
 
@@ -61,7 +61,7 @@ Die Funktionalität ist für alle unterstützten Selektionstypen gleich: Sie kö
 
   ![Geöffnetes Aufgabenmenü für einen Verkauf in der Board-Ansicht mit verfügbaren Optionen -screenshot][img5]
 
-## Board-Layout anpassen \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
+## Board-Layout anpassen <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Gruppieren und untergruppieren
 

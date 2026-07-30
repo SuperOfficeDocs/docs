@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Privacy \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
+# Privacy
 
 The **Privacy** feature in SuperOffice will assist you in protecting the data privacy of your customers and complying with the EU's General Data Protection Regulation (GDPR).
 

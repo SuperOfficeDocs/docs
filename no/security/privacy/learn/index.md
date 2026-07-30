@@ -14,7 +14,7 @@ tier: starter
 language: no
 ---
 
-# Personvern \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
+# Personvern
 
 **Personvern**-funksjonen i SuperOffice hjelper deg å beskytte personvernet til kundene dine og overholde EUs personvernforordning (GDPR).
 

@@ -17,7 +17,7 @@ redirect_from: /nl/globalization-and-localization/learn/translate-fields
 language: nl
 ---
 
-# Vertaling \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
+# Vertaling
 
 De standaardvelden en andere UI-teksten zijn beschikbaar in alle SuperOffice-talen. Als u uw eigen velden of teksten maakt (zoals namen van dashboards en tegels), kunt u vertalingen toevoegen voor de relevante talen binnen uw organisatie.
 
