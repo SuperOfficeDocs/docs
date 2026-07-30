@@ -148,7 +148,7 @@ Q: My Enterprise Security team will not allow any software on mobile clients tha
 
 A: Enable IdP for all users, and enable 2FA for the IdP provider. No option to support VPN to CRM Online.
 
-[1]:https://www.apple.com/business/docs/iOS_Security_Guide.pdf
+[1]: https://www.apple.com/business/docs/iOS_Security_Guide.pdf
 [2]: https://source.android.com/security/encryption/full-disk
 [4]: ../api/authentication/online/index
 [5]: https://www.superoffice.com/trust-center/cloud-security/
@@ -159,5 +159,5 @@ A: Enable IdP for all users, and enable 2FA for the IdP provider. No option to s
 [10]: https://online2.superoffice.com/Cust1990/CS/scripts/customer.fcgi?_sf=0&custSessionKey=&customerLang=en&noCookies=true&action=viewKbEntry&id=112935#2
 
 [img1]: /media/loc/en/mobile/imagevq62n.png
-[img2]: ../../media/loc/en/mobile/global-preferences-mobile.png
-[img3]: ../../media/loc/en/mobile/log-in.png
+[img2]: /media/loc/en/mobile/global-preferences-mobile.png
+[img3]: /media/loc/en/mobile/log-in.png
