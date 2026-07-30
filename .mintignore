@@ -18,6 +18,7 @@ blueprint-templates/
 
 # Exclude specific files
 private-notes.md
+en/mobile/includes/icon-reference.md
 
 # Exclude selected content folders to keep mint dev below 5000 pages
 ### Do not commit changes to this section without approval ###
