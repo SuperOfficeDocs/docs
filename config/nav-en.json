@@ -1015,7 +1015,7 @@
   {
     "tab": "Mobile",
     "icon": "mobile-screen",
-    "groups": {
+    "pages": {
       "$ref": "./nav-mobile.json"
     }
   },

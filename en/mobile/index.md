@@ -1,6 +1,7 @@
 ---
 uid: help-en-mobile-crm-intro
 title: Mobile CRM - Access your CRM on the go
+sidebarTitle: "Introduction"
 description: Discover what's new in the refreshed Mobile CRM and how to get started on the go.
 keywords: mobile CRM app, SuperOffice mobile CRM, mobile, customer info, sales, on the go, refreshed interface
 author: digitaldiina
@@ -109,4 +110,4 @@ Already logged in? [Explore the interface][4] or [customize your settings][5].
 [16]: https://apps.apple.com/us/app/superoffice-mobile-crm/id1516435957
 [17]: https://play.google.com/store/apps/details?id=no.superoffice.mobile&hl=no&gl=US&pli=1
 
-[img1]: ../../media/loc/en/mobile/3-screens.png
+[img1]: /media/loc/en/mobile/3-screens.png

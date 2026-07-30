@@ -73,8 +73,8 @@ When available, you will be able to link a sale to an **incoming request** for b
 * [Update a request][4]
 
 [1]: ./create
-[2]: ../../../en/sale/learn/delete
-[3]: ../../../en/sale/learn/stages
+[2]: /en/sale/learn/delete
+[3]: /en/sale/learn/stages
 [4]: ../request/update
 
-[img2]: ../../../media/loc/en/mobile/sale-details.png
+[img2]: /media/loc/en/mobile/sale-details.png
