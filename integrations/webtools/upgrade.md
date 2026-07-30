@@ -15,8 +15,6 @@ index: true
 redirect_from: /en/document/webtools/upgrade
 ---
 
-# Upgrade WebTools
-
 When the user logs in to an updated Web installation, WebTools will detect there is an updated version available and prompt the user for an upgrade. Versioning in SuperOffice is defined as "MAJOR.MINOR.BUILD.REVISION". The user will be "forced" to upgrade if the MAJOR component is higher than the current major version of WebTools. Other changes are optional upgrades.
 
 ## Turn off upgrade prompt
@@ -70,7 +68,7 @@ Since SuperOffice 9 it is possible to suppress the WebTools installation and upg
 
 ![Install and upgrade dialog -screenshot][img5]
 
-[1]: ../../en/api/config/downloads
+[1]: /en/api/config/downloads
 
 [img4]: /media/loc/en/integrations/webtools/11035-21656.jpg
 [img5]: /media/loc/en/integrations/webtools/upgrade-preferences.jpg

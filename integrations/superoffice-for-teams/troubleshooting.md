@@ -1,6 +1,7 @@
 ---
 uid: teams-troubleshooting
 title: Troubleshooting SuperOffice for Teams
+sidebarTitle: "Troubleshooting"
 description: Solutions to common issues in SuperOffice for Teams.
 keywords: SuperOffice for Teams, Teams, troubleshooting, errors, sign-in, consent
 author: schildea
@@ -11,8 +12,6 @@ topic: SuperOffice for Teams
 pilot: yes
 language: en
 ---
-
-# Troubleshooting SuperOffice for Teams
 
 ## "Save files" button is disabled
 

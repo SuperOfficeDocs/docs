@@ -1,6 +1,6 @@
 ---
 uid: config-sharepoint-permissions-templates
-title: Permissions in SharePoint
+title: How to set up SharePoint permissions for templates
 description: How to set up the SharePoint permissions for templates
 keywords: SharePoint, permission, security, access control, Microsoft Entra, domain group, ME-ID, AAD
 author: Martin Pavlas
@@ -15,8 +15,6 @@ language: en
 redirect_from: /en/document/cloud/sharepoint-documents/configure-permissions-templates
 index: true
 ---
-
-# How to set up SharePoint permissions for templates
 
 We recommend that you create a separate SharePoint document library on your SuperOffice Document site for your templates.
 

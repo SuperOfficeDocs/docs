@@ -1,14 +1,9 @@
 [
-  {
-    "group": "Overview",
-    "pages": [
-      "integrations/index"
-    ]
-  },
+  "integrations/index",
   {
     "group": "Gmail Link",
+    "root": "integrations/gmail-link/index",
     "pages": [
-      "integrations/gmail-link/index",
       "integrations/gmail-link/install",
       "integrations/gmail-link/settings",
       "integrations/gmail-link/manage-senders",
@@ -21,8 +16,8 @@
   },
   {
     "group": "Google Workspace document integration",
+    "root": "integrations/g-suite/index",
     "pages": [
-      "integrations/g-suite/index",
       "integrations/g-suite/requirements",
       "integrations/g-suite/security",
       "integrations/g-suite/getting-started",
@@ -31,8 +26,8 @@
   },
   {
     "group": "Mail Link",
+    "root": "integrations/mail-link/index",
     "pages": [
-      "integrations/mail-link/index",
       "integrations/mail-link/install",
       "integrations/mail-link/archive",
       "integrations/mail-link/create-in-outlook",
@@ -50,8 +45,8 @@
   },
   {
     "group": "SharePoint documents",
+    "root": "integrations/sharepoint-documents/index",
     "pages": [
-      "integrations/sharepoint-documents/index",
       "integrations/sharepoint-documents/requirements",
       {
         "group": "Set up SharePoint",
@@ -78,8 +73,8 @@
   },
   {
     "group": "SuperNotes",
+    "root": "integrations/supernotes/index",
     "pages": [
-      "integrations/supernotes/index",
       "integrations/supernotes/getting-started",
       "integrations/supernotes/workspaces",
       "integrations/supernotes/teams",
@@ -91,8 +86,8 @@
   },
   {
     "group": "SuperOffice for Outlook",
+    "root": "integrations/superoffice-for-outlook/index",
     "pages": [
-      "integrations/superoffice-for-outlook/index",
       "integrations/superoffice-for-outlook/requirements",
       "integrations/superoffice-for-outlook/get",
       "integrations/superoffice-for-outlook/deploy",
@@ -117,8 +112,8 @@
   },
   {
     "group": "SuperOffice for Teams",
+    "root": "integrations/superoffice-for-teams/index",
     "pages": [
-      "integrations/superoffice-for-teams/index",
       "integrations/superoffice-for-teams/requirements",
       "integrations/superoffice-for-teams/deploy",
       "integrations/superoffice-for-teams/get",
@@ -133,8 +128,8 @@
   },
   {
     "group": "Video meetings",
+    "root": "integrations/video-meetings/index",
     "pages": [
-      "integrations/video-meetings/index",
       "integrations/video-meetings/google-meet/index",
       "integrations/video-meetings/jitsi/index",
       "integrations/video-meetings/ms-teams/index",
@@ -156,8 +151,8 @@
   },
   {
     "group": "WebTools",
+    "root": "integrations/webtools/index",
     "pages": [
-      "integrations/webtools/index",
       "integrations/webtools/technical-overview",
       "integrations/webtools/system-requirements",
       {
@@ -174,11 +169,12 @@
   },
   {
     "group": "Zapier",
+    "root": "integrations/zapier/index",
     "pages": [
-      "integrations/zapier/index",
       {
         "group": "Get started",
         "pages": [
+          "integrations/zapier/get-started/index",
           "integrations/zapier/get-started/set-up-account",
           "integrations/zapier/get-started/create-zap"
         ]

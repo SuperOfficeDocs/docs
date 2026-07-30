@@ -13,8 +13,6 @@ language: en
 redirect_from: /en/automation/zapier/howto/gdpr
 ---
 
-# How to maintain GDPR configuration
-
 When creating new contacts in SuperOffice CRM, the following [GDPR consent fields][1] can be configured:
 
 * Consent purpose name
@@ -26,6 +24,6 @@ If no value is provided for one or more of these fields, SuperOffice automatical
 
 ![Create new contact information -screenshot][img1]
 
-[1]: ../../../en/security/privacy/index
+[1]: /en/security/privacy/index
 
 [img1]: /media/loc/en/integrations/zapier/contact-consents-gdpr.png

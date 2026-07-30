@@ -3,7 +3,7 @@ uid: sofo-add-contact
 title: Add contact to SuperOffice
 description: Add contact to SuperOffice
 keywords: SuperOffice for Outlook, Outlook, email, add contact, SOFO
-author: Erik Lebiko, Bergfrid Dias
+author: Erik Lebiko, digitaldiina
 date: 10.29.2024
 version_sofo: 2024.8.12
 content_type: howto
@@ -21,8 +21,6 @@ redirect_from:
   - /no/email/superoffice-for-outlook/learn/add-contact-to-superoffice
   - /sv/email/superoffice-for-outlook/learn/add-contact-to-superoffice
 ---
-
-# Add contact to SuperOffice
 
 You can easily add new contacts to SuperOffice CRM if the email address is unknown to the system.
 

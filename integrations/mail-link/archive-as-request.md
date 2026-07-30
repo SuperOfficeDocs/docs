@@ -21,8 +21,6 @@ redirect_from:
 index: true
 ---
 
-# Create request from an email
-
 Most likely you receive the majority of customer inquiries through your info@ and support@ email addresses. But sometimes customers send you a personal email with a question or a problem you need to deal with.
 
 You can archive an email in your mail client inbox as a request in SuperOffice so you do not forget to follow up on the email. How this works, depends on if you are adding the email to a new or existing request.

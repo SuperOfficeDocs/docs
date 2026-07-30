@@ -2,4 +2,4 @@ Click the **Action** step to open a window for selecting the application to use.
 
 ![Zapier: Select your action -screenshot][img1]
 
-[img1]: ../../media/select-action.png
+[img1]: /media/loc/en/integrations/zapier/select-action.png

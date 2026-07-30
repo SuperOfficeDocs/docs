@@ -12,8 +12,6 @@ language: en
 index: true
 ---
 
-# Privacy and security
-
 Find answers to common questions about how SuperNotes handles your data.
 
 ## What data does SuperNotes access?

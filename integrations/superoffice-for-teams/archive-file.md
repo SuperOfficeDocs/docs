@@ -12,8 +12,6 @@ pilot: yes
 language: en
 ---
 
-# Save a file from a Teams channel
-
 When you're in a standard channel, you can also save a single file. How the file option becomes available depends on how you started the archive:
 
 * **Started from a message:** The Save File button is enabled if that specific message contains a file.

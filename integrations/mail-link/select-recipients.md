@@ -21,8 +21,6 @@ redirect_from:
 index: true
 ---
 
-# Select recipients
-
 When [creating an email from Microsoft Outlook][1], you can add recipients using the **Select recipients** dialog.
 
 1. In the new email window, click the **Add recipient** button (![icon][img1]).

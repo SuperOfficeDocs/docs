@@ -14,8 +14,6 @@ index: true
 redirect_from: /en/automation/zapier/get-started/index
 ---
 
-# Get started
-
 You can start with SuperOffice CRM by choosing an existing Zap template from our list, or you can create a new Zap from the start.
 
 1. [Set up a SuperOffice account to work with Zapier][2]

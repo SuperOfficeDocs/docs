@@ -12,8 +12,6 @@ language: en
 index: true
 ---
 
-# SuperNotes
-
 SuperNotes is an AI-powered meeting assistant that integrates with SuperOffice to help you capture, transcribe, and summarize your meetings automatically.
 
 ## Key features

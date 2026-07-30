@@ -21,8 +21,6 @@ redirect_from:
 index: true
 ---
 
-# Add SuperOffice document as attachment
-
 When [creating an email from Microsoft Outlook][1] you can add documents from SuperOffice CRM as attachments.
 
 1. In the email window, click the **Attach document** button (![icon][img1]).

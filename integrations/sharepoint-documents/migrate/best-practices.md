@@ -16,8 +16,6 @@ redirect_from: /en/document/cloud/sharepoint-documents/migrate/best-practices
 index: true
 ---
 
-# Best practices
-
 1. Preparations. Read the [requirements][1] carefully.
 2. Run a test migration of a few documents.
 3. Analyze the report (send it to SuperOffice R&D and receive guidance from us).

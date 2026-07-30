@@ -1,6 +1,6 @@
 ---
 uid: g-suite-document-integration
-title: Google Workspace
+title: Google Workspace document integration
 description: Google Workspace document integration
 keywords: Google Workspace, document integration
 author: SuperOffice Product and Engineering
@@ -19,8 +19,6 @@ redirect_from:
 language: en
 index: true
 ---
-
-# Google Workspace document integration
 
 The Google Workspace Integration app integrates the Google Workspace's document management features so that you can create, store, and find your documents within SuperOffice, and enjoy the benefits of both SuperOffice and Google Workspace services all in one place.
 
@@ -103,4 +101,4 @@ The **Forgot password** feature is now handled by Google - since Google is activ
 [4]: http://www.google.com/accounts/UpdateAccountRecoveryOptions
 [5]: https://toolbox.googleapps.com/apps/dig/
 [6]: https://online.superoffice.com/
-[7]: ../../en/document/library/it/index
+[7]: /en/document/library/it/index

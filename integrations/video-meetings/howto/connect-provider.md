@@ -1,6 +1,7 @@
 ---
 uid: connect-video-provider
-title: Connect provider
+title: How to connect to a video provider
+sidebarTitle: "Connect to a video provider"
 description: How to connect video provider
 keywords: video meeting
 author: SuperOffice Product and Engineering
@@ -21,8 +22,6 @@ redirect_from:
   - /de/admin/preferences/learn/video-meetings/configure-video-meetings
 index: true
 ---
-
-# How to connect to a video provider
 
 1. Open SuperOffice **Settings and maintenance** and go to the **Preferences** section.
 
