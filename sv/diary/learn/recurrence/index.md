@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Upprepa händelser \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
+# Upprepa händelser
 
 Det kan hända att du vill skapa en serie bokningar som återkommer med jämna mellanrum, till exempel ett veckomöte för statusuppdatering. Istället för att lägga in dessa möten ett i taget kan du använda funktionen för återkommande händelser.
 

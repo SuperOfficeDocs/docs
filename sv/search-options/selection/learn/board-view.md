@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Använd tavlevy i urval \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
+# Använd tavlevy i urval
 
 Tavlevy visar ditt [urval][2] i ett kolumnbaserat layout med kort. Du kan gruppera och filtrera urvalsmedlemmarna (posterna som visas i tavlan), samt använda dra-och-släpp för att flytta kort mellan grupper.
 
@@ -61,7 +61,7 @@ Funktionen är densamma för alla stödda urvalstyper: Du kan dra kort, öppna u
 
   ![Uppgiftsmeny i tavlevy för en försäljning med tillgängliga alternativ -screenshot][img5]
 
-## Anpassa tavlelayout \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
+## Anpassa tavlelayout <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Grupper och undergrupper
 

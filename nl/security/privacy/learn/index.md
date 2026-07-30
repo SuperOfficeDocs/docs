@@ -14,7 +14,7 @@ tier: starter
 language: nl
 ---
 
-# Privacy \<i class="ph ph-shield" aria-label="Shield icon"\>\</i\>
+# Privacy
 
 De functie **Privacy** in SuperOffice helpt u de gegevensprivacy van uw klanten te beschermen en te voldoen aan de General Data Protection Regulation (GDPR) (Algemene verordening gegevensbescherming, AVG) van de EU.
 

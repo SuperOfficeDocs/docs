@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Brug tavlevisning i udvalg \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
+# Brug tavlevisning i udvalg
 
 Tavlevisning viser dit [udvalg][2] i et kolonnebaseret layout med kort. Du kan gruppere og filtrere udvalgsmedlemmerne (de poster, der vises på tavlen), og bruge træk-og-slip til at flytte kort mellem grupper.
 
@@ -61,7 +61,7 @@ Funktionaliteten er den samme på tværs af understøttede poster: Du kan trækk
 
   ![Åben opgavemenu på salg i tavlevisning med tilgængelige handlinger -screenshot][img5]
 
-## Tilpas tavlelayout \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
+## Tilpas tavlelayout <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Gruppér og undergrupper
 

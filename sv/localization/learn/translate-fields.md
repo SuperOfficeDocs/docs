@@ -17,7 +17,7 @@ redirect_from: /sv/globalization-and-localization/learn/translate-fields
 language: sv
 ---
 
-# Översättning \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
+# Översättning
 
 Standardfälten och andra gränssnittstexter finns tillgängliga på alla SuperOffice-språk. Om du skapar egna fält eller texter (som namn på dashboards eller figurer) kan du lägga till översättningar för relevanta språk i din organisation.
 

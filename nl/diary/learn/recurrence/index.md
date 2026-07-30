@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Herhalende vervolgactiviteiten \<i class="ph ph-arrows-clockwise" aria-hidden="true"\>\</i\>
+# Herhalende vervolgactiviteiten
 
 Het kan gebeuren dat u een reeks afspraken wilt maken die met regelmatige tussenpozen moeten plaatsvinden, bijvoorbeeld een wekelijkse statusvergadering. In plaats van deze vergadering één voor één vast te leggen kunt u hiervoor de functie voor herhalende vervolgactiviteiten gebruiken.
 

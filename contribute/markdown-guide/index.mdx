@@ -211,6 +211,8 @@ You can style icons with `i.ph`.
 
 The VS Code Markdown preview loads `.vscode/markdown.css`, which imports the Phosphor icon font so icons render while you edit.
 
+Don't put an icon on an H1. The page H1 is hidden from view (the title already shows in the page header), but the heading text — icon markup included — still feeds the "On this page" sidebar, where it would show up as raw tag text instead of a rendered icon.
+
 #### Accessibility
 
 Always set either `aria-label` or `aria-hidden="true"` on every icon.

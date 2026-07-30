@@ -17,7 +17,7 @@ redirect_from: /da/globalization-and-localization/learn/translate-fields
 language: da
 ---
 
-# Oversættelse \<i class="ph ph-translate" aria-hidden="true"\>\</i\>
+# Oversættelse
 
 Standardfelterne og andre brugergrænsefladetekster er tilgængelige på alle SuperOffice-sprog. Hvis du opretter dine egne felter eller tekster (for eksempel navne på dashboards og ruder), kan du tilføje oversættelser for de relevante sprog i din organisation.
 

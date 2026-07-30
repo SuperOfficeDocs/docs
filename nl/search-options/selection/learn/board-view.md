@@ -14,7 +14,7 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Boardweergave gebruiken in selecties \<i class="ph ph-kanban" aria-hidden="true"\>\</i\>
+# Boardweergave gebruiken in selecties
 
 De boardweergave toont je [selectie][2] in een kolomindeling met kaarten. Je kunt de selectieleden (records op het board) groeperen en filteren en kaarten verplaatsen tussen groepen via drag-and-drop.
 
@@ -61,7 +61,7 @@ De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarte
 
   ![Geopend taakmenu op een verkoop in boardweergave met beschikbare acties -screenshot][img5]
 
-## Boardindeling aanpassen \<i class="ph ph-gear-six" aria-hidden="true"\>\</i\> \<i class="ph ph-sliders-horizontal" aria-hidden="true"\>\</i\>
+## Boardindeling aanpassen <i class="ph ph-gear-six" aria-hidden="true"></i> <i class="ph ph-sliders-horizontal" aria-hidden="true"></i>
 
 ### Groeperen en subgroeperen
 
