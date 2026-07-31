@@ -1,13 +1,15 @@
 ---
-title: Mapping SuperOffice users to AD
 uid: mapping_so_user_to_ad_v_7_1
+title: Mapping SuperOffice users to AD
 description: Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
+keywords:
 author: Jens M. Glattetre
 date: 03.30.2012
-keywords:
+version: 12
 content_type: howto
 deployment: onsite
 index: true
+language: en
 ---
 
 # Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
@@ -91,7 +93,7 @@ By specifying the full name of this Organization Unit in the SuperOffice.config 
 
 ![image][img10]
 
-[1]: ../../../api/config/security
+[1]: /en/api/config/security
 
 [img1]: /media/loc/en/online/1642-1987.jpg
 [img2]: /media/loc/en/online/1644-1989.jpg

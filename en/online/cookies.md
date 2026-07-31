@@ -1,12 +1,14 @@
 ---
-title: Cookies overview
 uid: cookies_overview
+title: Cookies overview
 description: Cookies overview
-author: SuperOffice Product and Engineering
 keywords: security, cookies
+author: SuperOffice Product and Engineering
+date: 07.31.2026
+version: 12
 content_type: reference
-date:
 index: true
+language: en
 ---
 
 # Cookies overview

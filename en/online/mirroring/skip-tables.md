@@ -1,13 +1,15 @@
 ---
-title: Add tables to skip mirroring
 uid: skip_tables
+title: Add tables to skip mirroring
 description: Add tables to skip mirroring
-author: SuperOffice Product and Engineering
 keywords:
+author: SuperOffice Product and Engineering
 date: 12.18.2025
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
+language: en
 ---
 
 # Add tables to skip mirroring OBSOLETE from 10.1.8

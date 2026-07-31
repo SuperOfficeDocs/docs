@@ -5,9 +5,10 @@ description: How Database Mirroring detects and streams changes from the source 
 keywords: database mirroring, change tracking, CDC, Debezium, Kafka, LSN
 author: SuperOffice Product and Engineering
 date: 05.27.2026
+version: 12
 content_type: concept
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
 
@@ -16,7 +17,7 @@ language: en
 The current Database Mirroring implementation uses **SQL Server Change Data Capture (CDC)** at the source database. Changes are read by a Debezium connector running in SuperOffice's infrastructure, published to per-tenant Kafka topics, and served to the client over a REST long-poll endpoint.
 
 <Note>
-The [legacy WCF-based service][1] used SQL Server **Change Tracking** (a different and lighter-weight feature) with the Log Sequence Number (LSN) as the position marker. The mechanism described below replaces that approach for new deployments.
+The [legacy WCF-based service](#legacy) used SQL Server **Change Tracking** (a different and lighter-weight feature) with the Log Sequence Number (LSN) as the position marker. The mechanism described below replaces that approach for new deployments.
 </Note>
 
 ## How it works
@@ -26,7 +27,7 @@ The [legacy WCF-based service][1] used SQL Server **Change Tracking** (a differe
 3. The **Replication Service** exposes a REST endpoint with **long-polling**. It tracks consumer offsets per session.
 4. The **Database Mirroring client** long-polls for new events, applies them to the replica, and commits its progress back to the service.
 
-The position marker is the Kafka `topic:partition:offset` &mdash; not a SQL Server LSN.
+The position marker is the Kafka `topic:partition:offset`, not a SQL Server LSN.
 
 ## Latency
 
@@ -46,12 +47,12 @@ New tables and altered tables are discovered by a periodic schema-check (default
 SuperOffice.Online.Replication.Client.exe update-schema
 ```
 
-## Legacy SQL Server change tracking
+## Legacy SQL Server change tracking {#legacy}
 
 > [!IMPORTANT]
 > This section describes the original mechanism used by the legacy WCF-based mirroring service. It is kept here for context and for customers still running the legacy service.
 
-The legacy implementation relied on the SQL Server **Change Tracking** feature (`CHANGETABLE`, `CHANGE_TRACKING_CURRENT_VERSION`), which is a lightweight mechanism implemented directly in the database engine. It uses an incremental 64-bit integer &mdash; the **Log Sequence Number (LSN)** &mdash; as the position marker.
+The legacy implementation relied on the SQL Server **Change Tracking** feature (`CHANGETABLE`, `CHANGE_TRACKING_CURRENT_VERSION`), which is a lightweight mechanism implemented directly in the database engine. It uses an incremental 64-bit integer, the **Log Sequence Number (LSN)**, as the position marker.
 
 Using this method, rather than the internal `TravelTransactionLog`, avoided complexity in situations such as:
 
@@ -69,5 +70,4 @@ Using this method, rather than the internal `TravelTransactionLog`, avoided comp
 
 Change tracking data in SQL Server was kept for 7 days. If a mirroring client service was down for more than a week, change data would be missing and the next synchronization would cause a complete, automatic repopulation of the mirror.
 
-[1]: #legacy-sql-server-change-tracking
 [2]: ./force-resync

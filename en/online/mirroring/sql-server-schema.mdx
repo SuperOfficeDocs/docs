@@ -5,15 +5,16 @@ description: SQL Server schema used by the Database Mirroring replica.
 keywords: database mirroring, schema, crm7, dbo, _ReplicationState, TablePrefix
 author: SuperOffice Product and Engineering
 date: 05.27.2026
+version: 12
 content_type: concept
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
 
 # SQL Server schema for Database Mirroring
 
-The replica database uses **Microsoft SQL Server** dialect end-to-end. Because the physical schema is what gets replicated, the client does not distinguish between *dictionary* and *normal* tables &mdash; or between tables belonging to Sales, Service, extra tables in Service, or partner-defined tables that might appear in the future.
+The replica database uses **Microsoft SQL Server** dialect end-to-end. Because the physical schema is what gets replicated, the client does not distinguish between *dictionary* and *normal* tables - or between tables belonging to Sales, Service, extra tables in Service, or partner-defined tables that might appear in the future.
 
 The schema is **simplified**: foreign key constraints, collating sequences, and indexes are **not** mirrored.
 
@@ -23,7 +24,7 @@ Row- and column-level filtering is not supported. Tables are either mirrored or 
 
 ## Destination schema (`crm7` vs `dbo`)
 
-The client preserves the **source schema** by default &mdash; typically `crm7`. Most replicated tables therefore end up as `crm7.contact`, `crm7.person`, `crm7.sale`, and so on.
+The client preserves the **source schema** by default, typically `crm7`. Most replicated tables therefore end up as `crm7.contact`, `crm7.person`, `crm7.sale`, and so on.
 
 If your downstream applications expect tables in `dbo` (or another schema), you can override the destination with the `TablePrefix` setting in `appsettings.json`:
 
@@ -37,7 +38,7 @@ If your downstream applications expect tables in `dbo` (or another schema), you 
 
 | `TablePrefix` value | Result |
 |---|---|
-| Empty or omitted (default) | Preserves source schema &mdash; typically `crm7` |
+| Empty or omitted (default) | Preserves source schema, typically `crm7` |
 | `"dbo"` (or any other name) | All replicated tables created in that schema |
 
 > [!IMPORTANT]
@@ -73,10 +74,10 @@ Good places to do this in your own deployment:
 
 The replica contains a useful subset of the source database, not an exact copy. Tables that fall into one of the following categories are excluded:
 
-* **Irrelevant** &mdash; for example `travelgeneratedtransaction`.
-* **Not useful** for analytics &mdash; for example `traveltransactionlog`, `countervalue`.
-* **Confidential** &mdash; for example `credentials`.
-* **Binary blobs and dictionary cache** &mdash; the `binaryobject` table and dictionary information tables are excluded to keep the replica cleaner and faster.
+* **Irrelevant** - for example `travelgeneratedtransaction`.
+* **Not useful** for analytics, for example `traveltransactionlog`, `countervalue`.
+* **Confidential** - for example `credentials`.
+* **Binary blobs and dictionary cache** - the `binaryobject` table and dictionary information tables are excluded to keep the replica cleaner and faster.
 
 See the full [list of blocked tables][3].
 
@@ -94,7 +95,7 @@ In that case the client reacts by dropping the affected table in the replica, re
 * [Force re-sync][4]
 
 [1]: ./setup-guide
-[2]: ./migrate#schema-alignment-dbo-vs-crm7
+[2]: ./migrate#schema-alignment
 [3]: ./blocked-tables
 [4]: ./force-resync
 [5]: ./setup-guide#command-reference

@@ -1,11 +1,14 @@
 ---
-title: Send welcome emails
 uid: send_welcome_emails
+title: Send welcome emails
 description: Send welcome emails to new users
-author: Bergfrid Dias
 keywords:
+author: digitaldiina
+date: 07.31.2026
+version: 12
 content_type: howto
 index: true
+language: en
 ---
 
 # Send welcome emails to new users

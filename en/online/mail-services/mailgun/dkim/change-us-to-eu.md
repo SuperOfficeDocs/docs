@@ -5,11 +5,12 @@ description: How to change DKIM from US to EU
 keywords: DKIM, mailgun, Schrems II, Privacy Shield
 author: SuperOffice Product and Engineering
 date: 01.07.2026
+version: 12
 content_type: howto
 category: email
 topic: mailgun
-index: true
 redirect_from: /en/email/mailgun/dkim/change-us-to-eu
+index: true
 language: en
 ---
 

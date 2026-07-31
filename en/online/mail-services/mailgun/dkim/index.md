@@ -5,10 +5,11 @@ description: DKIM record for Mailgun
 keywords: DKIM, email, authentication, domain, DNS, record, security
 author: SuperOffice Product and Engineering
 date: 01.07.2026
+version: 12
 category: email
 topic: mailgun
-index: true
 redirect_from: /en/email/mailgun/dkim/index
+index: true
 language: en
 ---
 

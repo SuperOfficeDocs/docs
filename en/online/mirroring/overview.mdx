@@ -1,26 +1,27 @@
 ---
 uid: mirroring_intro
 title: Introduction
-description: Database Mirroring service for SuperOffice CRM Online &mdash; outbound-only client architecture, near-real-time CDC, simplified security.
+description: Database Mirroring service for SuperOffice CRM Online - outbound-only client architecture, near-real-time CDC, simplified security.
 keywords: database mirroring, replication, CDC, Kafka, replica
 author: SuperOffice Product and Engineering
 date: 06.05.2026
+version: 12
 content_type: concept
-deployment: online
 platform: web
-language: en
+deployment: online
 redirect_from: /en/developer-portal/create-app/mirror-app
+language: en
 ---
 
 # Database mirroring
 
-**Database Mirroring** keeps a customer-managed SQL Server replica in sync with your SuperOffice Online tenant. It is an API feature that applications can use for local processing &mdash; reporting, analytics, pattern recognition &mdash; when real-time data is not the most important consideration.
+**Database Mirroring** keeps a customer-managed SQL Server replica in sync with your SuperOffice Online tenant. It is an API feature that applications can use for local processing (reporting, analytics, pattern recognition) when real-time data is not the most important consideration.
 
 <Note>
-Internally, the current implementation is sometimes called the *Replication* service &mdash; this is the same Database Mirroring feature. Literal product artefacts (the **Replication** tab in Operation Center, the `SuperOffice.Online.Replication.Client.exe` binary, the `_ReplicationState` table) keep that name and are shown as-is in the documentation.
+Internally, the current implementation is sometimes called the *Replication* service. This is the same Database Mirroring feature. Literal product artifacts (the **Replication** tab in Operation Center, the `SuperOffice.Online.Replication.Client.exe` binary, the `_ReplicationState` table) keep that name and are shown as-is in the documentation.
 </Note>
 
-Mirroring a customer's database gives partners a great deal of flexibility to perform deep analysis on customer data &mdash; all without having to rely on web services subject to latency or throughput issues.
+Mirroring a customer's database gives partners a great deal of flexibility to perform deep analysis on customer data - all without having to rely on web services subject to latency or throughput issues.
 
 <Caution>
 Database Mirroring is **NOT** for customers who lack the competence to set it up and maintain it themselves.
@@ -68,7 +69,7 @@ The new model uses **Change Data Capture (CDC)** at the source database, with ch
 
 | Concern | Legacy mirroring | New client |
 |---|---|---|
-| Inbound network exposure | Public HTTPS endpoint required | None &mdash; outbound only |
+| Inbound network exposure | Public HTTPS endpoint required | None - outbound only |
 | TLS certificates on customer side | Manually installed, environment-specific, manually renewed | Not required |
 | Authentication | RSA-signed tokens between fixed certificates | Short-lived JWT access token (~20 min) with rotating refresh token |
 | Local secret storage | Files on disk, customer-managed | Stored in the replica DB, encrypted with Windows DPAPI (LocalMachine scope) |
@@ -82,7 +83,7 @@ The new client ships as a single command-line executable that can be installed a
 
 ### Schema evolution and lifecycle handled transparently
 
-When new tables become available in the source CRM, the client picks them up automatically on its next schema-check cycle (default: hourly, configurable). When a customer database is moved between servers, restored from backup, suspended, or resumed, the SuperOffice provisioning sagas reset the offsets and trigger a fresh snapshot. The local client absorbs these events as upserts &mdash; in most cases no manual intervention is required.
+When new tables become available in the source CRM, the client picks them up automatically on its next schema-check cycle (default: hourly, configurable). When a customer database is moved between servers, restored from backup, suspended, or resumed, the SuperOffice provisioning sagas reset the offsets and trigger a fresh snapshot. The local client absorbs these events as upserts - in most cases no manual intervention is required.
 
 ## Primary components
 
@@ -98,7 +99,7 @@ A short tour of the moving parts:
 
 Microsoft SQL Server is the only supported target for the replica database.
 
-The schema is **Microsoft SQL Server dialect** end-to-end. Foreign key constraints, collating sequences, and indexes are **not mirrored** &mdash; the schema is intentionally simplified. If you need indexes on the replica, create and maintain them yourself.
+The schema is **Microsoft SQL Server dialect** end-to-end. Foreign key constraints, collating sequences, and indexes are **not mirrored**. The schema is intentionally simplified. If you need indexes on the replica, create and maintain them yourself.
 
 ## Is the mirror database an exact copy?
 
@@ -147,9 +148,9 @@ Whoever sets up Database Mirroring is responsible if it breaks or stops. If you 
 
 ## Next steps
 
-* [Requirements][7] &mdash; what you need on the host
-* [Set up the client][6] &mdash; step-by-step provisioning
-* [Migrate from legacy mirroring][2] &mdash; if you are already running the WCF service
+* [Requirements][7] - what you need on the host
+* [Set up the client][6] - step-by-step provisioning
+* [Migrate from legacy mirroring][2] - if you are already running the WCF service
 * [Troubleshooting][8]
 
 [1]: ./conceptual-overview-2016

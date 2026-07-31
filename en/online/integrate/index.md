@@ -1,14 +1,16 @@
 ---
-uid: api_scenarios_web_online
+uid: api-scenarios-web-online
 title: Integration in the online Web client
 description: Integration in the online Web client
-author: Tony Yates
-date: 11.25.2021
 keywords: API, integration point, online
+author: AtonyYates
+date: 11.25.2021
+version: 12
 content_type: concept
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
 
 # Integration scenarios: Web client (online)
@@ -33,4 +35,4 @@ The SuperOffice CRM Online environment hosts an app store with several partner i
 * [CRM Online SDK][9]
 
 [8]: ../identity/federated-auth
-[9]: ../../../api/reference/webapi/index
+[9]: /en/api/reference/webapi/index

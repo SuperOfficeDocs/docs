@@ -1,12 +1,13 @@
 ---
-title: Single sign-on
 uid: singel_sign_on
+title: Single sign-on
 description: Single sign-on
-author: SuperOffice Product and Engineering
-date:
 keywords: SSO
+author: SuperOffice Product and Engineering
+date: 07.31.2026
+version: 12
 content_type: concept
-# Optional fields. Don't forget to remove # if you need a field.
+language: en
 ---
 
 # Single sign-on

@@ -1,13 +1,14 @@
 ---
-title: Documents migration
 uid: document-migrate-to-online
+title: Documents migration
 description: Understanding document migration
+keywords: migrate, document
 author: Martin Pavlas
 date: 10.18.2023
-keywords: migrate, document
 content_type: tutorial
 deployment: online, onsite
 index: true
+language: en
 ---
 # Understanding document migration: reasons why some documents may not be migrated
 

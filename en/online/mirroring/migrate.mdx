@@ -5,9 +5,10 @@ description: How to migrate from the legacy WCF-based Database Mirroring service
 keywords: database mirroring, replication, migration, cutover, legacy
 author: Margrethe Romnes
 date: 05.27.2026
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
 
@@ -48,7 +49,7 @@ The two implementations are **independent**. They do not share state, and there 
 
 ### 1. Create a new replica database
 
-Create an empty database alongside the existing one, with a clearly distinct name. The convention used here is `<existing_name>_new` &mdash; for example, if the legacy replica is `SuperOfficeReplica`, create `SuperOfficeReplica_new`.
+Create an empty database alongside the existing one, with a clearly distinct name. The convention used here is `<existing_name>_new`, for example, if the legacy replica is `SuperOfficeReplica`, create `SuperOfficeReplica_new`.
 
 The database should be empty: the new client performs an initial CDC snapshot during provisioning.
 
@@ -102,15 +103,15 @@ When validation is complete:
 
 4. **Update `appsettings.json`** so `ReplicaDatabase.ConnectionString` points at `SuperOfficeReplica` again (the new name of the database that was previously `_new`).
 
-5. **Start the Windows Service.** The session state lives in the `_ReplicationState` table inside the database itself, so it follows the database through the rename &mdash; no re-provisioning is required.
+5. **Start the Windows Service.** The session state lives in the `_ReplicationState` table inside the database itself, so it follows the database through the rename - no re-provisioning is required.
 
 ### 6. Switch existing service connections
 
 Downstream services and applications that consume the replica typically reference the database by name in their connection strings. Because the renamed database now carries the original name, the connection strings themselves do not need to change. However, the consuming services do need to **reconnect** so that pooled connections and any cached schema metadata are refreshed:
 
-* **Windows Services and IIS application pools** should be restarted &mdash; the simplest and most reliable approach.
+* **Windows Services and IIS application pools** should be restarted - the simplest and most reliable approach.
 * **Long-lived processes** that hold prepared statements or schema handles must be cycled; a pool reset alone is not always sufficient.
-* **Confirm SQL Server logins, database users, and role memberships** on the renamed database are intact. A rename preserves principals, but it is worth a check &mdash; especially for service accounts that downstream applications depend on.
+* **Confirm SQL Server logins, database users, and role memberships** on the renamed database are intact. A rename preserves principals, but it is worth a check - especially for service accounts that downstream applications depend on.
 
 ### 7. Turn off the legacy mirroring on both sides
 
@@ -118,18 +119,18 @@ On the **customer side**, stop the legacy mirroring client (or stop and disable 
 
 On the **SuperOffice side**, the legacy mirroring is delivered as an app registered in the SuperOffice Developer Portal. You can turn it off in either of two ways:
 
-* Create a new version of the app with mirroring disabled and [request publishing][turn-off]. See also [How to turn off mirroring][turn-off].
+* Create a new version of the app with mirroring disabled and [request publishing][8]. See also [How to turn off mirroring][8].
 * Or contact SuperOffice Operations and ask for the app to be **revoked** if it is no longer needed.
 
 <Warning>
 Until SuperOffice has confirmed the change, the cloud continues to attempt outbound calls to the (now offline) legacy mirroring endpoint and sends failure notifications by email to the technical contact.
 </Warning>
 
-This step is intentionally last and is only carried out once the new setup has stabilised &mdash; it makes a fast [rollback][3] possible.
+This step is intentionally last and is only carried out once the new setup has stabilized - it makes a fast [rollback][3] possible.
 
-## Schema alignment: `dbo` vs `crm7` {#schema-alignment-dbo-vs-crm7}
+## Schema alignment: `dbo` vs `crm7` {#schema-alignment}
 
-Legacy customers chose the schema for their replica database: some standardised on `crm7`, others on `dbo`. The application code that consumes the replica is written against whichever was chosen, so the schema is part of the contract between the replica and its consumers.
+Legacy customers chose the schema for their replica database: some standardized on `crm7`, others on `dbo`. The application code that consumes the replica is written against whichever was chosen, so the schema is part of the contract between the replica and its consumers.
 
 The new client supports the same choice through a configuration setting in `appsettings.json`:
 
@@ -141,7 +142,7 @@ The new client supports the same choice through a configuration setting in `apps
 }
 ```
 
-When `TablePrefix` is empty or omitted (the default), the client preserves the source schema &mdash; typically `crm7`. When set to a value such as `"dbo"`, all replicated tables are created in that schema instead.
+When `TablePrefix` is empty or omitted (the default), the client preserves the source schema, typically `crm7`. When set to a value such as `"dbo"`, all replicated tables are created in that schema instead.
 
 > [!IMPORTANT]
 > **For a database rename swap, the schemas must be aligned.** The new replica needs to expose tables under the same schema as the existing replica; otherwise, downstream queries that reference `dbo.person` will break against a replica that exposes `crm7.person`, and vice versa.
@@ -156,15 +157,15 @@ Two practical points:
     SELECT DISTINCT TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES;
     ```
 
-If schema alignment is not desirable (for example, you want to consolidate to a different schema as part of the migration), the alternatives are to bridge with `CREATE SYNONYM` in the new database, or to update the application queries &mdash; but treat that as a separate decision from the cutover, not as the default path.
+If schema alignment is not desirable (for example, you want to consolidate to a different schema as part of the migration), the alternatives are to bridge with `CREATE SYNONYM` in the new database, or to update the application queries, but treat that as a separate decision from the cutover, not as the default path.
 
 ## What does not carry over
 
 * **Offsets.** Legacy mirroring tracks position by SQL Server Log Sequence Number (LSN); the new client uses Kafka `topic:partition:offset`. There is no automatic conversion. The new client always begins with a fresh snapshot.
 
-* **Local schema customisations** in the existing replica (indexes, views, triggers, synonyms) must be re-applied to the new replica before cutover. The replicated tables are managed by the client; auxiliary objects are not.
+* **Local schema customizations** in the existing replica (indexes, views, triggers, synonyms) must be re-applied to the new replica before cutover. The replicated tables are managed by the client; auxiliary objects are not.
 
-* **Excluded tables.** The new client uses the same base list of [blocked tables][4] as the legacy service, with a few additions to keep the replica cleaner and faster &mdash; notably the `binaryobject` table and dictionary information tables.
+* **Excluded tables.** The new client uses the same base list of [blocked tables][4] as the legacy service, with a few additions to keep the replica cleaner and faster, notably the `binaryobject` table and dictionary information tables.
 
 ## Rollback {#rollback}
 
@@ -187,7 +188,7 @@ If schema alignment is not desirable (for example, you want to consolidate to a 
 
 3. Restart the downstream services.
 
-The legacy service resumes populating the restored replica on its next cycle &mdash; which is precisely why turning off legacy mirroring on the SuperOffice side (step 7) is intentionally the last action, and only carried out once the new setup has stabilised.
+The legacy service resumes populating the restored replica on its next cycle, which is precisely why turning off legacy mirroring on the SuperOffice side (step 7) is intentionally the last action, and only carried out once the new setup has stabilized.
 
 ## Related
 
@@ -195,13 +196,13 @@ The legacy service resumes populating the restored replica on its next cycle &md
 * [Overview][5]
 * [SQL Server schema][6]
 * [Blocked tables][4]
-* [How to turn off mirroring for an app][turn-off]
+* [How to turn off mirroring for an app][8]
 
 [1]: ./setup-guide
-[2]: #schema-alignment-dbo-vs-crm7
+[2]: #schema-alignment
 [3]: #rollback
 [4]: ./blocked-tables
 [5]: ./overview
 [6]: ./sql-server-schema
 [7]: #what-does-not-carry-over
-[turn-off]: ../../developer-portal/faq/turn-off-mirroring
+[8]: /en/developer-portal/faq/8-mirroring

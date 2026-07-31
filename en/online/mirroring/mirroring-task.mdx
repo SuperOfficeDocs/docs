@@ -5,9 +5,10 @@ description: About the database Mirroring Task used by the legacy WCF-based mirr
 keywords: Mirroring Task, mirror, legacy
 author: SuperOffice Product and Engineering
 date: 06.05.2026
+version: 12
 content_type: concept
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
 
@@ -59,10 +60,10 @@ Mirroring does not run during server maintenance, such as SuperOffice CRM Online
 
 Customers can add custom user preferences to control database mirroring behaviors.
 
-| Preference Name   | Preference description                                      | Default value   |
-|:---               |:---                                                         |:---:             |
-|BatchSize          | Used to control how many bytes to send per request.         | 1000000         |
-|SkipTable          | Comma separated list of tables that should not be mirrored. |                 |
+| Preference Name | Preference description                                      | Default value |
+|:---             |:---                                                         |:---:          |
+|BatchSize        | Used to control how many bytes to send per request.         | 1000000       |
+|SkipTable        | Comma separated list of tables that should not be mirrored. |               |
 
 From version 10.1.8 these may be [edited directly in Settings and maintenance][5].
 
@@ -84,7 +85,7 @@ Batches can in principle be processed in parallel, but doing so would probably s
 [2]: ./change-tracking
 [3]: ./getting-started/i-mirror-client-service
 [4]: ./skip-tables
-[5]: ../../admin/preferences/update#edit
+[5]: /en/admin/preferences/update#edit
 [6]: ./setup-guide
 [7]: ./migrate
 

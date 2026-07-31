@@ -5,16 +5,17 @@ description: Getting started with the legacy WCF-based Database Mirroring servic
 keywords: legacy, WCF, mirroring
 author: Tony Yates
 date: 04.20.2016
+version: 12
 content_type: tutorial
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
 
 # Getting started with Database Mirroring (legacy)
 
 > [!IMPORTANT]
-> This page describes how to get started with the **legacy WCF-based** mirroring service &mdash; building a partner-hosted endpoint that implements `IMirrorClientService`, hosting it on IIS, and managing SuperOffice-issued certificates.
+> This page describes how to get started with the **legacy WCF-based** mirroring service - building a partner-hosted endpoint that implements `IMirrorClientService`, hosting it on IIS, and managing SuperOffice-issued certificates.
 >
 > New deployments should use the outbound-only client instead. See [Set up the Database Mirroring client][12]. If you are migrating an existing legacy deployment, see [Migrate from the legacy mirroring service][13].
 
@@ -36,7 +37,7 @@ Data Mirroring Service is a copy of your data stored at a location of your choic
 
 With application details registered, it's time to create a web service that implements the IMirrorClientService and IMirrorAdmin interfaces. There are three options:
 
-* Implement the service from <a href="../../../../downloads/dbmirroring-wsdl.zip" download>WSDL files</a>.
+* Implement the service from <a href="/downloads/dbmirroring-wsdl.zip" download>WSDL files</a>.
 * Add a [.NET nuget package][4] to a WCF Service application project.
 * Clone or download the [database mirror service repository from GitHub][11].
   * This is a 'ready-to-go' .NET solution that only needs to be compiled and deployed.
@@ -74,14 +75,14 @@ It does not make business sense to provide a complete database mirror to partner
 
 If you believe you have a great case for an application, navigate to the [application registration page][10] (for existing partners) and get started today! If you are not yet an online application partner, get started today by filling our [developer registration form][6].
 
-[1]: ../../../api/authentication/online/certificates/override-resolver
-[2]: ../../../api/authentication/online/certificates/index
+[1]: /en/api/authentication/online/certificates/override-resolver
+[2]: /en/api/authentication/online/certificates/index
 [3]: ../blocked-tables
 [4]: https://www.nuget.org/packages/SuperOffice.Online.Mirroring
 [7]: ../order-database-mirroring
-[6]: ../../../developer-portal/getting-started/get-access-to-sod
-[8]: ../../../developer-portal/faq/update-app
-[10]: ../../../developer-portal/create-app/index
+[6]: /en/developer-portal/getting-started/get-access-to-sod
+[8]: /en/developer-portal/faq/update-app
+[10]: /en/developer-portal/create-app/index
 [11]: https://github.com/SuperOffice/devnet-database-mirroring
 [12]: ../setup-guide
 [13]: ../migrate

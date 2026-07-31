@@ -1,14 +1,16 @@
 ---
-title: Create a Microsoft Entra enterprise application
 uid: create_azure_enterprise_app
+title: Create a Microsoft Entra enterprise application
 description: Create a Microsoft Entra enterprise application
+keywords: IdP, SCIM, Microsoft Entra, ME-ID, AAD
 author: SuperOffice Product and Engineering
 date: 09.04.2024
-keywords: IdP, SCIM, Microsoft Entra, ME-ID, AAD
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
 
 # Create a Microsoft Entra enterprise application

@@ -1,11 +1,14 @@
 ---
-title: Add a user
 uid: add_user_in_admin_client
+title: Add a user
 description: Add a user in the Admin client
-author: Bergfrid Dias
 keywords:
+author: digitaldiina
+date: 07.31.2026
+version: 12
 content_type: howto
 index: true
+language: en
 ---
 
 # Add a user in the Admin client

@@ -5,12 +5,13 @@ description: Migrate to SuperOffice CRM Online with Service mailboxes
 keywords: migration, mailbox, Service email address
 author: SuperOffice Product and Engineering
 date: 01.07.2026
+version: 12
 content_type: concept
 category: email
 topic: curl
 deployment: onsite
-index: true
 redirect_from: /en/email/service/migrate
+index: true
 language: en
 ---
 
@@ -49,7 +50,7 @@ To add the SPF record, forward this information to your domain provider and refe
 v=spf1 include:_spf.online.superoffice.com ~all
 ```
 
-[2]: ../../../email/admin/mailbox/create-mailbox
+[2]: /en/email/admin/mailbox/create-mailbox
 [3]: https://support.google.com/a/answer/33786?hl=en
 
 [img3]: /media/loc/en/online/email-address-conversion.jpg

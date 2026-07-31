@@ -1,14 +1,16 @@
 ---
-title: Preview what will be synced
 uid: preview_scim_sync
+title: Preview what will be synced
 description: Preview what will be synced
+keywords: SCIM, Microsoft Entra, ME-ID, AAD
 author: SuperOffice Product and Engineering
 date: 01.15.2024
-keywords: SCIM, Microsoft Entra, ME-ID, AAD
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
 
 # Preview what will be synced

@@ -1,14 +1,16 @@
 ---
-title: Enable automatic sync to SuperOffice
 uid: enable_auto_scim_sync
+title: Enable automatic sync to SuperOffice
 description: Enable automatic sync to SuperOffice
+keywords: SCIM, Microsoft Entra, ME-ID, AAD, enterprise app
 author: SuperOffice Product and Engineering
 date: 01.15.2024
-keywords: SCIM, Microsoft Entra, ME-ID, AAD, enterprise app
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
 
 # Enable automatic sync to SuperOffice

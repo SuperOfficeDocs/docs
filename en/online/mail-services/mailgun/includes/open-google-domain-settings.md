@@ -20,8 +20,8 @@
 
 5. Click **Sign in to DNS console** to open the DNS console window. You may have to sign into this DNS console with a separate DNS account.
 
-[img2]: ../media/image.png
-[img3]: ../media/open-domains.png
-[img4]: ../media/add-domain.png
-[img5]: ../media/advanced-dns.png
-[img6]: ../media/dns-sign-in.png
+[img2]: /media/loc/en/online/image.png
+[img3]: /media/loc/en/online/open-domains.png
+[img4]: /media/loc/en/online/add-domain.png
+[img5]: /media/loc/en/online/advanced-dns.png
+[img6]: /media/loc/en/online/dns-sign-in.png
