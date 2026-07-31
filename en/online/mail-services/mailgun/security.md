@@ -14,8 +14,6 @@ index: true
 language: en
 ---
 
-# Security and best practices
-
 Spam mail messages have been a plague since the Internet became popular and they kept growing more and more as the number of devices and people connected grew. Despite the numerous attempts of creation of anti-spam tools, there is still a high number of unwanted messages sent every day.
 
 Luckily, lately, it seems that something is changing with the adoption of three (relatively) new tools, which are starting to be widely used: SPF, DKIM, and DMARC.

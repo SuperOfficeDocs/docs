@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Guide to federated sign-in
-
 This guide will take you briefly through the identity management steps to let your users sign in to SuperOffice CRM Online with Microsoft or Google.
 
 ## Pre-requisites

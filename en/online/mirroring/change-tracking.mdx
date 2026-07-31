@@ -12,8 +12,6 @@ deployment: online
 language: en
 ---
 
-# Change tracking
-
 The current Database Mirroring implementation uses **SQL Server Change Data Capture (CDC)** at the source database. Changes are read by a Debezium connector running in SuperOffice's infrastructure, published to per-tenant Kafka topics, and served to the client over a REST long-poll endpoint.
 
 <Note>

@@ -1,6 +1,7 @@
 ---
 uid: mailgun-sub-processor-info
-title: Mailgun sub-processor information
+title: Mailgun sub-processor information (part of our DPA)
+sidebarTitle: "Sub-processor information"
 description: Mailgun sub-processor information
 keywords: email, mailgun, DPA, sub-processor, privacy, GDPR
 author: digitaldiina
@@ -13,8 +14,6 @@ redirect_from: /en/email/mailgun/sub-processor-info
 index: true
 language: en
 ---
-
-# Mailgun sub-processor information (part of our DPA)
 
 Revised in May, 2022
 

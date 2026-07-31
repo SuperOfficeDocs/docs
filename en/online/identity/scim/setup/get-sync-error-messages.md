@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Set up email notifications for errors
-
 You can sign up to get email notifications for critical SCIM synchronization errors.
 
 ## Pre-requisites

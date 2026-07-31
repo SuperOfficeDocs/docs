@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Guide to initial SCIM configuration
-
 This guide will take you briefly through the steps to set up automatic user provisioning from Microsoft Entra ID and map these users to accounts in SuperOffice CRM Online.
 
 ## Pre-requisites

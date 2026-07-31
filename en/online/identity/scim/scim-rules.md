@@ -15,8 +15,6 @@ index: true
 language: en
 ---
 
-# SCIM rules
-
 A SCIM rule describes users in their SuperOffice CRM Online tenant.
 
 The [SuperOffice Identity Manager][1] gives administrators access to a wizard where they can configure rules for how users shall be configured in our system.

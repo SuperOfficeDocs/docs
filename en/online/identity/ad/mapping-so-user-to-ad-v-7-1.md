@@ -1,6 +1,7 @@
 ---
 uid: mapping_so_user_to_ad_v_7_1
-title: Mapping SuperOffice users to AD
+title: Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
+sidebarTitle: "Map users to AD"
 description: Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
 keywords:
 author: Jens M. Glattetre
@@ -11,8 +12,6 @@ deployment: onsite
 index: true
 language: en
 ---
-
-# Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
 
 The new implementation is based on searching in the Active Directory - rather than first looking up all groups and then loading all users in the selected group. A set of additional configuration options has been added as well. This configuration is required when the user executing SoAdmin has limited rights to the domain or if there is a complex domain infrastructure in place. This will typically be the case in large organizations, organizations with multiple domain controllers, when using hosting providers or in Citrix environments.
 

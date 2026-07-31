@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Sync company to SuperOffice now
-
 You can manually synchronize all users that match the current SCIM rule set.
 
 ## Pre-requisites

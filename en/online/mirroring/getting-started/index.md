@@ -1,6 +1,7 @@
 ---
 uid: mirroring_getting_started
-title: Getting started (legacy)
+title: Getting started with Database Mirroring (legacy)
+sidebarTitle: "Getting started (legacy)"
 description: Getting started with the legacy WCF-based Database Mirroring service.
 keywords: legacy, WCF, mirroring
 author: Tony Yates
@@ -11,8 +12,6 @@ platform: web
 deployment: online
 language: en
 ---
-
-# Getting started with Database Mirroring (legacy)
 
 > [!IMPORTANT]
 > This page describes how to get started with the **legacy WCF-based** mirroring service - building a partner-hosted endpoint that implements `IMirrorClientService`, hosting it on IIS, and managing SuperOffice-issued certificates.

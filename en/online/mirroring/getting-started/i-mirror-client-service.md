@@ -1,6 +1,6 @@
 ---
 uid: i_mirror_client_service
-title: IMirrorClientService
+title: IMirrorClientService interface (legacy)
 description: IMirrorClientService interface
 keywords: IMirrorClientService, mirroring, WCF, legacy
 author: SuperOffice Product and Engineering
@@ -11,8 +11,6 @@ platform: web
 deployment: online
 language: en
 ---
-
-# IMirrorClientService interface (legacy)
 
 > [!IMPORTANT]
 > `IMirrorClientService` belongs to the **legacy WCF-based** mirroring service. It is the interface that a partner-hosted endpoint had to implement.

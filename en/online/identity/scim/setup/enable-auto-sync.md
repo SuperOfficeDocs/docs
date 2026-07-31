@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Enable automatic sync to SuperOffice
-
 Automatic sync is a powerful tool for when you have set up your mapping.
 
 ## Pre-requisites

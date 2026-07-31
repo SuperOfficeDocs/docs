@@ -14,8 +14,6 @@ index: true
 language: en
 ---
 
-# Mailgun - amount and speed
-
 What is the maximum amount of emails I can send to the customers from SuperOffice Mailing and how long would it take?
 
 It is worth mentioning that the SuperOffice Mailing function is primarily made as an integral part of a CRM system and is not a specialized mailing service for handling large email volumes. SuperOffice Mailing is tightly integrated with the CRM functions and can therefore be utilized in an efficient and user-friendly manner.

@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Sync user to SuperOffice now
-
 You can manually synchronize 1 selected user. This is useful when you update SCIM rules affecting a few already synchronized users and you don't want to trigger a full bulk-update.
 
 ## Pre-requisites

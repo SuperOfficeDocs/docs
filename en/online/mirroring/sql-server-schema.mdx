@@ -1,6 +1,7 @@
 ---
 uid: mirroring_sql_server_schema
-title: SQL Server schema
+title: SQL Server schema for Database Mirroring
+sidebarTitle: "SQL Server schema"
 description: SQL Server schema used by the Database Mirroring replica.
 keywords: database mirroring, schema, crm7, dbo, _ReplicationState, TablePrefix
 author: SuperOffice Product and Engineering
@@ -11,8 +12,6 @@ platform: web
 deployment: online
 language: en
 ---
-
-# SQL Server schema for Database Mirroring
 
 The replica database uses **Microsoft SQL Server** dialect end-to-end. Because the physical schema is what gets replicated, the client does not distinguish between *dictionary* and *normal* tables - or between tables belonging to Sales, Service, extra tables in Service, or partner-defined tables that might appear in the future.
 

@@ -1,6 +1,6 @@
 ---
 uid: add_user_in_admin_client
-title: Add a user
+title: Add a user in the Admin client
 description: Add a user in the Admin client
 keywords:
 author: digitaldiina
@@ -10,8 +10,6 @@ content_type: howto
 index: true
 language: en
 ---
-
-# Add a user in the Admin client
 
 Administrators can add users one by one in the Admin client.
 

@@ -12,8 +12,6 @@ deployment: online
 language: en
 ---
 
-# Force re-sync
-
 You have set up Database Mirroring and data was synchronizing as expected, but now you notice that some tables look out of date or missing rows. What do you do?
 
 There is no GUI to inspect the replica, you must use **SQL Server Management Studio**. Generally, `SELECT * FROM <some table>` should return the same data on the source and the replica.

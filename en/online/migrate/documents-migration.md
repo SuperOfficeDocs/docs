@@ -1,6 +1,7 @@
 ---
 uid: document-migrate-to-online
-title: Documents migration
+title: "Understanding document migration: reasons why some documents may not be migrated"
+sidebarTitle: "Document migration"
 description: Understanding document migration
 keywords: migrate, document
 author: Martin Pavlas
@@ -10,7 +11,6 @@ deployment: online, onsite
 index: true
 language: en
 ---
-# Understanding document migration: reasons why some documents may not be migrated
 
 ## Introduction
 

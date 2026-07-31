@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Preview what will be synced
-
 Use the **Preview** tab to review the result of the current SCIM rule set.
 
 Previewing synchronization is useful when you are defining your rules to explore the effect of a rule. It also gives you a clear view of how the provisioned users will appear in SuperOffice CRM Online.

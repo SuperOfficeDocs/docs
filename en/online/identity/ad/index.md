@@ -1,5 +1,5 @@
 ---
-title: netserver-authentication-ad
+title: Active Directory
 sidebarTitle: "Overview"
 description: Active Directory
 keywords: Active Directory, AD, identity
@@ -9,8 +9,6 @@ content_type: concept
 index: true
 language: en
 ---
-
-# Active Directory
 
 ![AD screen -screenshot][img1]
 

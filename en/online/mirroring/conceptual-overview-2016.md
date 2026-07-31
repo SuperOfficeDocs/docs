@@ -1,6 +1,6 @@
 ---
 uid: mirroring_conceptual_overview_2016
-title: Conceptual overview (legacy, 2016)
+title: Conceptual overview (legacy)
 description: Conceptual overview of the legacy WCF-based Database Mirroring service (2016 design).
 keywords: legacy, WCF, mirroring
 author: Tony Yates
@@ -11,8 +11,6 @@ platform: web
 deployment: online
 language: en
 ---
-
-# Conceptual overview (legacy)
 
 > [!IMPORTANT]
 > This page describes the original **2016 WCF-based** design of Database Mirroring, where SuperOffice pushed data to a partner-hosted endpoint that implemented `IMirrorClientService`. That design is now legacy.

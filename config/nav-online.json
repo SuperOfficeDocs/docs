@@ -8,6 +8,7 @@
   "en/online/system-requirements",
   "en/online/cookies",
   "en/online/security",
+    "en/online/integrate/index",
   {
     "group": "Migrate",
     "root": "en/online/migrate/index",
@@ -16,7 +17,6 @@
       "en/online/migrate/troubleshooting"
     ]
   },
-  "en/online/integrate/index",
   {
     "group": "Production sandbox",
     "root": "en/online/sandbox/index",
@@ -46,7 +46,6 @@
         "group": "SuperID",
         "root": "en/online/identity/superid/index",
         "pages": [
-          "en/online/identity/superid/overview",
           "en/online/identity/superid/sign-in-services",
           "en/online/identity/superid/user-accounts-and-passwords",
           "en/online/identity/superid/primary-tenant",

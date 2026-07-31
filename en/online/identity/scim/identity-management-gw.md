@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# The Identity Management Gateway
-
 A rules wizard where the administrator can configure rules for how Microsoft Entra (formerly AAD) users shall be configured in SuperOffice.
 
 The **Identity Manager Gateway** is a SCIM connector between Microsoft Entra ID and SuperOffice CRM Online. The user interface aka the SCIM configuration tool is simply called the **Identity Manager**.

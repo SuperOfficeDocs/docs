@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Sign-in services
-
 The sign-in service determines **how** you get access to SuperOffice CRM Online and **who** manages your credentials.
 
 We currently support 2 models:

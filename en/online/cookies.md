@@ -11,8 +11,6 @@ index: true
 language: en
 ---
 
-# Cookies overview
-
 Overview of cookies used in SuperOffice product offering both for Onsite and Online deployment.
 
 ## Online environment

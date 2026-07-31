@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Activate and deactivate SCIM rules
-
 You can turn SCIM rules on and off and also rearrange the order in which they are applied.
 
 ## Pre-requisites

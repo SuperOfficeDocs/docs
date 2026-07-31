@@ -10,8 +10,6 @@ content_type: concept
 language: en
 ---
 
-# Single sign-on
-
 Single sign-on (SSO) allows users to access multiple services with a single set of credentials. On the plus side, it facilitates a smoother user experience. On the flip side, you'll be more exposed if you lose "the keys to the castle".
 
 ## Cookies are a very basic form of SSO
@@ -48,4 +46,4 @@ Note that this is not the same as using the same username and password to sign i
 
 [1]: ../federated-id-and-identity-providers
 [2]: ./onsite-sso
-[3]: ../superid/overview
+[3]: ../superid/index

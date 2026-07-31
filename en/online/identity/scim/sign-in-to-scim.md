@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Sign in to SuperOffice Identity Manager
-
 You need to sign in to our Identity Manager to set up and to update the mapping of users synchronized from Microsoft Entra ID (formerly AAD) to SuperOffice.
 
 ## Pre-requisites

@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# Create a Microsoft Entra enterprise application
-
 Creating a Microsoft Entra (formerly Azure Active Directory) enterprise application is the first step to integrate the SuperOffice SCIM endpoint with the Microsoft Entra provisioning service.
 
 **Pre-requisites:**

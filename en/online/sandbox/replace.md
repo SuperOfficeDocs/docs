@@ -1,6 +1,7 @@
 ---
 uid: replace_prod_sandbox
-title: Replace sandbox
+title: SuperOffice Operation Center for customer administrators with a production sandbox
+sidebarTitle: "Replace sandbox"
 description: SuperOffice Operation Center for customer administrators with a production sandbox
 keywords: production sandbox, test environment, OC, clone
 author: digitaldiina
@@ -12,8 +13,6 @@ deployment: online
 index: true
 language: en
 ---
-
-# SuperOffice Operation Center for customer administrators with a production sandbox
 
 As a CRM Online customer with a registered [production sandbox][2], you can request to replace the current copy with a new fresh copy of the production database.
 

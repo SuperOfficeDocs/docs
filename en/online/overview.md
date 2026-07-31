@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# About CRM Online
-
 ## Overview
 
 SuperOffice CRM Online is our cloud offering. It gives you the freedom to access your CRM data - and be available - anywhere, everywhere, and always. You can work from your office, from home, from a customer's office, or from a hotel. In the cloud, you are always upgraded to the latest version.

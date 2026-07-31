@@ -13,8 +13,6 @@ index: true
 language: en
 ---
 
-# DKIM
-
 ## What is the purpose of DKIM record?
 
 A DKIM record is a type of [Domain Name Service][1] (DNS) record that the receiving email servers can if they like, look up your public key and verify that nothing has changed in the email, and confirm that a message came from you.
