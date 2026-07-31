@@ -3,7 +3,7 @@ uid: sharepoint-documents-migration-ui
 title: The SharePoint migration UI
 description: An explanation of the SharePoint document migration wizard and overview page.
 keywords: SharePoint, document
-author: Frode Berntsen, Bergfrid Dias
+author: Frode Berntsen, digitaldiina
 date: 11.02.2023
 version:
 content_type: reference
@@ -15,8 +15,6 @@ language: en
 redirect_from: /en/document/cloud/sharepoint-documents/migrate/reference
 index: true
 ---
-
-# The SharePoint migration UI
 
 ## Overview of jobs
 
@@ -91,7 +89,7 @@ The **Status** section shows a detailed status of ongoing and completed jobs. It
 
 [1]: ./steps
 
-[img1]: ../media/migration-completed-with-failures.png
-[img3]: ../media/migration-job-details.png
-[img4]: ../media/documents-omitted.png
-[img7]: ../media/migrate-step-2.png
+[img1]: /media/loc/en/integrations/sharepoint-documents/migration-completed-with-failures.png
+[img3]: /media/loc/en/integrations/sharepoint-documents/migration-job-details.png
+[img4]: /media/loc/en/integrations/sharepoint-documents/documents-omitted.png
+[img7]: /media/loc/en/integrations/sharepoint-documents/migrate-step-2.png

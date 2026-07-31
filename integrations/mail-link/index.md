@@ -21,8 +21,6 @@ redirect_from:
 index: true
 ---
 
-# Mail Link
-
 SuperOffice Mail Link is a plug-in that links the Microsoft Outlook mail client with SuperOffice CRM and/or SuperOffice Service. This means that among other things, you can:
 
 * Archive emails and attachments to SuperOffice CRM.

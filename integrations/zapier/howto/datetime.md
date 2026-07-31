@@ -13,8 +13,6 @@ language: en
 redirect_from: /en/automation/zapier/howto/datetime
 ---
 
-# Formatting date and time
-
 Dates and times in SuperOffice follow the ISO standard format: 'yyyy-mm-ddThh:mm:ssZ', where Z indicates the UTC time zone.
 
 A Zapier Formatter helper step can be used to convert this value into a different format.

@@ -15,8 +15,6 @@ redirect_from: /en/diary/video-meetings/howto/join
 index: true
 ---
 
-# Join a video meeting
-
 There are several ways you can join a video meeting in SuperOffice:
 
 * Click **Join meeting** in the **Follow-up** dialog.
@@ -26,6 +24,6 @@ There are several ways you can join a video meeting in SuperOffice:
 
     ![Join meeting -screenshot][img1]
 
-[1]: ../../../en/diary/learn/set-alarm
+[1]: /en/diary/learn/set-alarm
 
 [img1]: /media/loc/en/integrations/video-meetings/join-meeting-diary.png

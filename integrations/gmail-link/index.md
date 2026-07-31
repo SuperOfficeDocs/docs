@@ -21,8 +21,6 @@ redirect_from:
 index: true
 ---
 
-# SuperOffice Gmail Link
-
 SuperOffice Gmail Link is a plug-in that links the Google Gmail client with SuperOffice. This means that among other things, you can:
 
 * Archive incoming and outgoing emails and attachments from your Gmail account as documents in SuperOffice.

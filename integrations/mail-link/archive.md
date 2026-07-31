@@ -27,8 +27,6 @@ redirect_from:
 index: true
 ---
 
-# Archive email to SuperOffice
-
 When you click the **Archive email** button on the mail client toolbar, a menu with archiving options is displayed. This button also appears in the email window when you open an email you received.
 
 ## Options

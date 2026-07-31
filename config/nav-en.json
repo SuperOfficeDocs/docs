@@ -1022,7 +1022,7 @@
   {
     "tab": "Integrations",
     "icon": "plus",
-    "groups": {
+    "pages": {
       "$ref": "./nav-integrations.json"
     }
   },

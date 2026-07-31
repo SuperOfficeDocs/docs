@@ -1,9 +1,9 @@
 ---
 uid: g-suite-quick-start
-title: Getting started
+title: Getting started (self-service)
 description: Google Workspace document integration setup - Self-Service Quick-Guide
 keywords: Google Workspace, Google-account, Google Authentication
-author: Frode B, Martin Pavlas, Bergfrid Dias
+author: Frode B, Martin Pavlas, digitaldiina
 date: 07.12.2024
 content_type: howto
 category: integration
@@ -14,8 +14,6 @@ redirect_from: /en/document/cloud/g-suite/getting-started
 language: en
 index: true
 ---
-
-# Getting started (self-service)
 
 This guide explains in short terms how you can get Google Workspace document integration up and running in no-time, in a step-by-step walk-through. It is an alternative to the [full set-up guide][5].
 
@@ -59,7 +57,7 @@ This guide explains in short terms how you can get Google Workspace document int
 Now, you need to [link templates][6] in SuperOffice Settings and maintenance to start using the integration. Remember to set both **Store template in** and **Document stored in** to "Google".
 
 [2]: https://id.superoffice.com/identityprovider/register
-[3]: ../../en/online/identity/superid/howto/register-idp
+[3]: /en/online/identity/superid/howto/register-idp
 [4]: https://cloudintegration.superoffice.com/app
 [5]: ./set-up
-[6]: ../../en/document/templates/index
+[6]: /en/document/templates/index

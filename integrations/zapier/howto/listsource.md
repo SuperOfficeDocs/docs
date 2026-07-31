@@ -13,8 +13,6 @@ language: en
 redirect_from: /en/automation/zapier/howto/listsource
 ---
 
-# Look up lists between Source and SuperOffice CRM
-
 In SuperOffice, drop-down fields (for example, Currency) are linked to predefined lists. When defining an action in a Zap, the selected names must exactly match the corresponding SuperOffice list values.
 
 ## Example: Sale amount and currency

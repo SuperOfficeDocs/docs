@@ -13,8 +13,6 @@ language: en
 redirect_from: en/automation/zapier/howto/index
 ---
 
-# Working with Zaps
-
 ## Search actions
 
 There will always be a risk of creating duplicates of companies and contacts. To avoid duplicates, you can [create a step for Search][1] before you put in the Action to create/update an entity in SuperOffice CRM.
