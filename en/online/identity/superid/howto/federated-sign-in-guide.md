@@ -1,17 +1,17 @@
 ---
-title: Guide to federated sign-in
 uid: federated_sign_in_guide
+title: Guide to federated sign-in
 description: Guide to federated sign-in
-author: Bergfrid Dias
-date: 01.15.2024
 keywords: SuperID, Microsoft Entra ID
+author: digitaldiina
+date: 01.15.2024
+version: 12
 content_type: tutorial
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# Guide to federated sign-in
 
 This guide will take you briefly through the identity management steps to let your users sign in to SuperOffice CRM Online with Microsoft or Google.
 

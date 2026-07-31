@@ -1,18 +1,16 @@
 ---
 uid: mirroring_blocked_tables
-title: Database mirroring blocked tables
+title: Blocked tables list
 description: Lists the tables that are not mirrored.
 keywords: mirroring, blocked tables, database, schema
 author: AnthonyYates, Margrethe
 date: 06.10.2026
-version: 10.2
+version: 12
 content_type: reference
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
-
-# Blocked tables list
 
 All tables, **except** those explicitly listed as "blocked" below, are mirrored. New tables added in future versions of SuperOffice, as well as any customer-defined tables created in the Service product, are picked up automatically by the client on its next schema-check cycle.
 
@@ -21,7 +19,7 @@ Customer-defined tables that are deleted are propagated to the replica. If a tab
 The **reason** column explains why a table is not mirrored. If you believe a table on this list should be mirrored, contact us.
 
 <Note>
-The new client adds a few exclusions on top of the legacy list to keep the replica cleaner and faster &mdash; notably the `binaryobject` table (large binary content, not useful for analytics) and various dictionary information tables (internal metadata cache). These are listed below alongside the historical exclusions.
+The new client adds a few exclusions on top of the legacy list to keep the replica cleaner and faster - notably the `binaryobject` table (large binary content, not useful for analytics) and various dictionary information tables (internal metadata cache). These are listed below alongside the historical exclusions.
 </Note>
 
 | Table                          | Reason |

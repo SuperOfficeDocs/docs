@@ -5068,6 +5068,14 @@
     "destination": "/en/admin/user-management/role/index"
   },
   {
+    "source": "/en/online/identity/superid/overview",
+    "destination": "/en/online/identity/superid/index"
+  },
+  {
+    "source": "/en/online/identity/scim/overview",
+    "destination": "/en/online/identity/scim/index"
+  },
+  {
     "source": "/en/online/mail-services/mailgun/overview",
     "destination": "/en/online/mail-services/mailgun/index"
   },

@@ -1,15 +1,16 @@
 ---
 uid: superid-complete-user-transition
-title: Complete user account transition
+title: Complete user account transition from password to federated login
+sidebarTitle: "Complete user transition"
 description: Complete user account transition from password to federated login
 keywords: federated login
 author: digitaldiina
 date: 12.18.2025
+version: 12
 content_type: howto
 index: true
+language: en
 ---
-
-# Complete user account transition from password to federated login
 
 After registering the IdP, each existing password user has to sign in once to complete the transition for their account.
 

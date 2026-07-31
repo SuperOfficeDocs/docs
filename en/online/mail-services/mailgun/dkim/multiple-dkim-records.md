@@ -1,21 +1,21 @@
 ---
 uid: dkim-multiple-records
-title: Multiple DKIM records
+title: Multiple DKIM records in SuperOffice Online
+sidebarTitle: "Multiple DKIM records"
 description: Multiple DKIM records in Mailgun
 keywords: Mailgun, DKIM, DMARC, SMTP, bounce, consent
 author: Martin Pavlas
 date: 09.12.2023
+version: 12
 content_type: howto
 category: email
 topic: mailgun
-deployment: online
 platform: web
-index: true
+deployment: online
 redirect_from: /en/email/mailgun/dkim/multiple-dkim-records
+index: true
 language: en
 ---
-
-# Multiple DKIM records in SuperOffice Online
 
 In SuperOffice Online using Mailgun each tenant can have only one DKIM key. This key is used to sign every email that is sent from SuperOffice Online. If a customer decides to send emails from several domains, having one DKIM only means all of them will be signed with the domain the DKIM was set up for.
 

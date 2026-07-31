@@ -3,18 +3,17 @@ uid: scim-rules
 title: SCIM rules
 description: SCIM rules for how users shall be configured in SuperOffice CRM.
 keywords: SCIM, IdP, Microsoft Entra, ME-ID, AAD, Azure
-author: Bergfrid Dias, Oleg Deribas
+author: digitaldiina, Oleg Deribas
 date: 10.02.2025
-version: 10.5.2
+version: 12
 content_type: concepts
 category: identity management
 topic: scim
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# SCIM rules
 
 A SCIM rule describes users in their SuperOffice CRM Online tenant.
 

@@ -1,16 +1,17 @@
 ---
-title: Add tables to skip mirroring
 uid: skip_tables
+title: Add tables to skip mirroring OBSOLETE from 10.1.8
+sidebarTitle: "Skip tables (obsolete)"
 description: Add tables to skip mirroring
-author: SuperOffice Product and Engineering
 keywords:
+author: SuperOffice Product and Engineering
 date: 12.18.2025
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
+language: en
 ---
-
-# Add tables to skip mirroring OBSOLETE from 10.1.8
 
 Our database mirroring service has a pre-defined [list of tables][1] not replicated during the mirroring process. What if, however, you want to add more tables to the blocked list?
 

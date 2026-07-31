@@ -5,15 +5,14 @@ description: Security and best practices for Mailgun
 keywords: email security, spam, DKIM, SPF, DMARC, blocklist, email authentication, spoofing
 author: SuperOffice Product and Engineering
 date: 01.07.2026
+version: 12
 content_type: reference
 category: email
 topic: mailgun
-index: true
 redirect_from: /en/email/mailgun/security
+index: true
 language: en
 ---
-
-# Security and best practices
 
 Spam mail messages have been a plague since the Internet became popular and they kept growing more and more as the number of devices and people connected grew. Despite the numerous attempts of creation of anti-spam tools, there is still a high number of unwanted messages sent every day.
 

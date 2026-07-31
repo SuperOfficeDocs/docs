@@ -1,17 +1,16 @@
 ---
 uid: mirroring_troubleshooting
 title: Troubleshooting Database Mirroring
-description: Diagnostic guidance for the Database Mirroring client &mdash; logs, service state, schema, and recovery.
+description: Diagnostic guidance for the Database Mirroring client - logs, service state, schema, and recovery.
 keywords: database mirroring, replication, troubleshooting, diagnostics, event log
 author: SuperOffice Product and Engineering
 date: 05.27.2026
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
-
-# Troubleshooting Database Mirroring
 
 <Note>
 This page covers the **new outbound-only client** (`SuperOffice.Online.Replication.Client.exe`). For the [legacy WCF-based mirroring service][1], see the bottom of the page.
@@ -62,7 +61,7 @@ Possible causes and what to check:
 
 Symptoms in the Event Log: `401 Unauthorized`, `403 Forbidden`, repeated "token refresh failed", or "session not found".
 
-* The refresh token may have been revoked from the SuperOffice side &mdash; for example because the app was reset or the customer subscription changed. Run `reconnect` to re-authenticate. If that fails, run `provision` again.
+* The refresh token may have been revoked from the SuperOffice side - for example because the app was reset or the customer subscription changed. Run `reconnect` to re-authenticate. If that fails, run `provision` again.
 * The host clock may be skewed. The JWT tokens are short-lived (~20 min) and the cloud rejects tokens with a clock skew of more than a few minutes. Confirm the host time is synced.
 * Outbound HTTPS to the SuperOffice Replication endpoints may be blocked. Confirm with a quick `curl` or browser test from the host.
 
@@ -97,7 +96,7 @@ Test and Production clients can coexist on one host. If you see unexpected behav
 
 * Confirm each instance is unzipped into its **own folder** with its own `appsettings.json`.
 * Confirm each instance points at a **different replica database** in its connection string.
-* Confirm the Windows Service names are distinct &mdash; they are derived from the Replication ID, so two sessions with the same name on the same host will collide.
+* Confirm the Windows Service names are distinct. They are derived from the Replication ID, so two sessions with the same name on the same host will collide.
 
 ## "Out-of-date client" critical error
 
@@ -121,7 +120,7 @@ When opening a support case, include:
 * The output of `validate`.
 * Your `appsettings.json` with secrets redacted.
 
-## Legacy (WCF-based) mirroring
+## Legacy (WCF-based) mirroring {#legacy}
 
 > [!IMPORTANT]
 > The sections below apply **only** to the legacy WCF-based mirroring service. New deployments use the [outbound-only client][2].
@@ -277,9 +276,9 @@ The incoming authentication request from SuperOffice contains a signed JWT token
 
 The claims of interest are:
 
-* `iss` &mdash; issuer
-* `aud` &mdash; audience
-* `nonce` &mdash; needed for the signed response
+* `iss` - issuer
+* `aud` - audience
+* `nonce` - needed for the signed response
 
 ![JWT claims -screenshot][img4]
 
@@ -377,8 +376,8 @@ This indicates that the legacy SuperOffice mirroring service cannot validate the
 * The website uses a certificate issued by a CA that is not trusted by the SuperOffice mirroring server. Install the CA's root certificate in the same store.
 * The website's certificate has expired or is not yet valid. Renew or replace it.
 
-[0]: ../../api/authentication/online/certificates/index
-[1]: #legacy-wcf-based-mirroring
+[0]: /en/api/authentication/online/certificates/index
+[1]: #legacy
 [2]: ./setup-guide
 [3]: ./force-resync#recover-from-extended-downtime-longer-than-7-days
 [4]: ./setup-guide#logging-and-diagnostics

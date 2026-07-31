@@ -1,17 +1,16 @@
 ---
 uid: mirroring_requirements
-title: Requirements
+title: Database Mirroring requirements
 description: Prerequisites for running the Database Mirroring client on a customer-managed host.
 keywords: database mirroring, requirements, prerequisites, .NET 8, SQL Server
 author: SuperOffice Product and Engineering
 date: 05.27.2026
+version: 12
 content_type: reference
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
-
-# Database Mirroring requirements
 
 The Database Mirroring client runs on a customer-managed host and connects **outbound** to SuperOffice. There is no public endpoint to host, no IIS site, no SuperOffice-issued certificate to install, and no inbound firewall rule to maintain.
 
@@ -27,12 +26,12 @@ Sizing depends on the size of the source database and the throughput required:
 | Resource | Minimum | Recommended |
 |---|---|---|
 | RAM | 4 GB | 8 GB or more |
-| Disk space (replica DB excluded) | Modest &mdash; the client binary and logs only | &mdash; |
-| Disk space for the replica DB | Plan for it to grow to roughly the size of the source CRM data, plus headroom for indexes | &mdash; |
+| Disk space (replica DB excluded) | Modest - the client binary and logs only | |
+| Disk space for the replica DB | Plan for it to grow to roughly the size of the source CRM data, plus headroom for indexes | |
 
 ## Software
 
-* **.NET 8 runtime** &mdash; or use the self-contained build that ships with its own runtime.
+* **.NET 8 runtime**, or use the self-contained build that ships with its own runtime.
 * **Microsoft SQL Server** for the replica database. An empty database is recommended for the initial setup. SQL Server Express Edition is sufficient for small tenants; use Standard Edition (or higher) when you need SQL Agent, larger databases, or higher throughput.
 * The SQL login used by the client needs **`db_owner`** on the replica database, so it can create and alter tables and maintain the internal `_ReplicationState` table.
 
@@ -46,7 +45,7 @@ If you operate behind a strict outbound proxy, allow-list the SuperOffice replic
 
 ## Backup
 
-The replica database does not normally need its own backup strategy &mdash; the data is a copy of the SuperOffice cloud master and can always be re-synced. The exceptions are any **local additions** you make on top of the replica:
+The replica database does not normally need its own backup strategy. The data is a copy of the SuperOffice cloud master and can always be re-synced. The exceptions are any **local additions** you make on top of the replica:
 
 * Custom indexes, views, synonyms, triggers
 * Application-specific tables that share the database

@@ -2,16 +2,16 @@
 uid: crm_online
 title: About CRM Online
 description: "Introduction to CRM Online: requirements, access, sign-in services, and integrations."
-author: Bergfrid Skaara
-date: 02.02.2022
-keywords: online, app store
+keywords: online, App Store
+author: digitaldiina
+date: 07.31.2026
+version: 12
 content_type: concept
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# About CRM Online
 
 ## Overview
 
@@ -19,17 +19,15 @@ SuperOffice CRM Online is our cloud offering. It gives you the freedom to access
 
 We take care of the hosting, back-ups, upgrades, security, and everything necessary to keep your solution available in the cloud. This gives you more time to focus on your business and less time to worry about IT operations. Your data is stored in our data center with world-class reliability and security.
 
+From version 12, feature development is online-only. The Onsite version is essentially frozen, with occasional security fixes, and continues with minor version numbers (11.14 and onwards).
+
 ## SuperOffice App Store
 
 Our partners also deliver a growing number of apps, modules, and integrations to expand your SuperOffice CRM Online solution: [Go to App Store][1]
 
 ## Technology platform
 
-SuperOffice CRM Online is based on the standard core product SuperOffice CRM Web client. The user interface is similar to the one that comes out of the package when installing Sales & Marketing web and has minor features added, such as links to SOLO (standard for all users) and a web panel for support.
-
-From version 8, we introduce our new software in the online marked first.
-
-SuperOffice CRM Online is accessed through any [supported browser][2] and our [WebTools][3] may be installed on your computer to get your email and documents integrated with SuperOffice.
+SuperOffice CRM Online is accessed through any [supported browser][2] and our [WebTools][3] may be installed on your computer to get your documents integrated with SuperOffice.
 
 On the server-side, the system runs on Windows web servers with a Microsoft SQL database. Web servers are resilient; they are all set up in an active/passive cluster. Several servers handle other services, such as file storage and batch-task service.
 
@@ -43,6 +41,6 @@ We offer more than one way of signing in - and [the Identity Management section]
 
 [1]: http://online.superoffice.com/appstore/
 [2]: ./system-requirements
-[3]: ../../../integrations/webtools/install
-[4]: ../learn/getting-started/login
+[3]: /integrations/webtools/install
+[4]: /en/learn/getting-started/login
 [5]: ./identity/overview

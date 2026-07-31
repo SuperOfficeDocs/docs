@@ -5,13 +5,13 @@ description: Enforce password policy
 keywords: SuperID, password, password policy
 author: digitaldiina
 date: 04.28.2026
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# Enforce a password policy
 
 The password policy for SuperOffice CRM is enforced either by [SuperID][1] or - if you use federated identities - by your [identity provider][2].
 
@@ -19,6 +19,6 @@ With basic SuperID (unfederated), the password must be at least 6 characters and
 
 **It is not possible to set customer-specific policies in the Admin client**, because SuperOffice, unfortunately, has no way of telling the user what the current policy is, and we would like to avoid that users have to guess.
 
-[1]: ../superid/overview
+[1]: ../superid/index
 [2]: ../federated-id-and-identity-providers
 [4]: https://github.com/dropbox/zxcvbn

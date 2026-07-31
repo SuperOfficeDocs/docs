@@ -1,113 +1,65 @@
 ---
-mode: "custom"
+uid: superid
 title: SuperID
-sidebarTitle: "Overview"
-description: ""
-author: SuperOffice Product and Engineering
-date: 07.15.2026
+description: "Introduction to SuperID, identity providers, and federated sign-in."
+keywords: SuperID, federation gateway, identity provider
+author: digitaldiina
+date: 02.02.2022
+version: 12
+content_type: concept
+index: true
+redirect_from: /en/online/identity/superid/overview
 language: en
 ---
 
-<div id="subcategory">
+SuperID is a sign-in service and a federation gateway towards the identity providers.
 
-<h1>SuperID</h1>
+The [SuperID sign-in service][1] has 2 levels - basic and federated. Either with a SuperOffice password or delegated to an [identity provider (IdP)][2].
 
-<p className="description"></p>
+![Golden key -screenshot][img1]
 
-<Columns cols={3}>
-<Card title="Learn about SuperID">
+## How does SuperID change my daily tasks?
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="map" />
-    <span>Overview</span>
-  </div>
-  <ul>
-    <li><a href="/en/online/identity/superid/overview">What is SuperID?</a></li>
-    <li><a href="/en/online/identity/superid/sign-in-services">Sign-in services</a></li>
-    <li><a href="/en/online/identity/superid/user-accounts-and-passwords">User accounts and passwords</a></li>
-  </ul>
-</div>
+For a **standard user**, there is not much difference at all. You'll notice a small change in the sign-in dialog and you can't ask an administrator to [reset your password][3] for you.
 
-</Card>
+With SuperID, SuperOffice **administrators** can no longer set passwords manually in the Admin client. If an identity provider is set, they must also use the [domain-specific usernames (UPNs)][2] when adding new users.
 
-<Card title="Federated sign-in guide">
+## Can I turn off SuperID?
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="list" />
-    <span>How-to guide</span>
-  </div>
-  <ul>
-    <li><a href="/en/online/identity/superid/howto/federated-sign-in-guide">Overview</a></li>
-    <li><a href="/en/online/identity/superid/howto/check-idp-domain">Check IdP domain</a></li>
-    <li><a href="/en/online/identity/superid/howto/register-idp">Register IdP</a></li>
-    <li><a href="/en/online/identity/superid/howto/map-idp-usernames">Map IdP usernames</a></li>
-    <li><a href="/en/online/identity/superid/howto/complete-user-transition">Complete user transition</a></li>
-  </ul>
-</div>
+Moving to the new SuperID platform is a **one-way process**.
 
-</Card>
+What we *can* do, is to turn off federated sign-in for *new** users. If we **disconnect your IdP**:
 
-<Card title="Identity providers">
+* **New users** will not be asked to sign in with the IdP.
+* **Existing users** who already use IdP will continue to use IdP.
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="list" />
-    <span>How-to guide</span>
-  </div>
-  <ul>
-    <li><a href="/en/online/identity/superid/howto/check-idp-domain">Check IDP domain</a></li>
-    <li><a href="/en/online/identity/superid/howto/register-idp">Register IDP</a></li>
-    <li><a href="/en/online/identity/superid/howto/map-idp-usernames">Map IDP usernames</a></li>
-  </ul>
-</div>
+<Tip>
+Contact Support if you need to disconnect from an IdP.
+</Tip>
 
-</Card>
+## Can I swap between using IdP and SuperID password?
 
-<Card title="Reference">
+When you register an identity provider for a domain name, users of this domain will be asked to sign in with the IdP the 1st time they access SuperOffice.
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="book" />
-    <span>Reference</span>
-  </div>
-  <ul>
-    <li><a href="/en/online/identity/superid/terms-and-conditions">Terms and conditions</a></li>
-    <li><a href="/en/online/identity/superid/known-challenges">Known challenges</a></li>
-  </ul>
-</div>
+After the connection between a user and an IdP has been established, you need to disconnect from the IdP to revert to using SuperOffice passwords. **This will only affect new users!**
 
-***
+## In SCIM
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="compass" />
-    <span>Concept</span>
-  </div>
-  <ul>
-    <li><a href="/en/online/identity/superid/primary-tenant">Primary tenant</a></li>
-  </ul>
-</div>
+SuperID is used for authenticating both the administrator configuring the [Identity Manager Gateway][4] and users signing in to the system.
 
-</Card>
+The user [accounts provisioned via SCIM][5] are by definition [federated IDs][2] and use the [SuperID - federated sign-in service][1].
 
-<Card title="Integrations">
+## Continue reading
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="compass" />
-    <span>Concept</span>
-  </div>
-  <ul>
-    <li><a href="/en/online/identity/superid/superid-webtools-maillink-pocket">WebTools</a></li>
-    <li><a href="/en/online/identity/superid/superid-webtools-maillink-pocket">MailLink</a></li>
-    <li><a href="/en/online/identity/superid/superid-webtools-maillink-pocket">Pocket CRM</a></li>
-  </ul>
-</div>
+* [User accounts and passwords][6]
+* [Authentication with WebTools, MailLink, and Pocket][8]
 
-</Card>
+[1]: ./sign-in-services
+[2]: ../federated-id-and-identity-providers
+[3]: ../user/reset-password
+[4]: ../scim/identity-management-gw
+[5]: ../scim/user-provisioning
+[6]: ./user-accounts-and-passwords
+[8]: ./superid-webtools-maillink-pocket
 
-</Columns>
-
-</div>
+[img1]: /media/loc/en/online/imagenstf.png

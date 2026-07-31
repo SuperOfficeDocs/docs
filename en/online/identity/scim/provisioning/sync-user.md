@@ -1,16 +1,17 @@
 ---
-title: Sync user to SuperOffice now
 uid: sync_user
+title: Sync user to SuperOffice now
 description: Sync user to SuperOffice now
-author: SuperOffice Product and Engineering
 keywords:
+author: SuperOffice Product and Engineering
+date: 07.31.2026
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# Sync user to SuperOffice now
 
 You can manually synchronize 1 selected user. This is useful when you update SCIM rules affecting a few already synchronized users and you don't want to trigger a full bulk-update.
 

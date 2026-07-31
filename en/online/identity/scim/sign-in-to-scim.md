@@ -1,17 +1,17 @@
 ---
-title: Sign in to SuperOffice Identity Manager
 uid: sign_in_to_scim
+title: Sign in to SuperOffice Identity Manager
 description: Sign in to SuperOffice Identity Manager
+keywords: IdP, Microsoft Entra, ME-ID, AAD, SCIM
 author: SuperOffice Product and Engineering
 date: 01.15.2024
-keywords: IdP, Microsoft Entra, ME-ID, AAD, SCIM
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# Sign in to SuperOffice Identity Manager
 
 You need to sign in to our Identity Manager to set up and to update the mapping of users synchronized from Microsoft Entra ID (formerly AAD) to SuperOffice.
 

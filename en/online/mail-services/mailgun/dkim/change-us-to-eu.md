@@ -1,19 +1,19 @@
 ---
 uid: change-dkim-us-to-eu
-title: Change DKIM from the US to the EU
+title: How to change DKIM from the US to the EU
+sidebarTitle: "Change DKIM: US to EU"
 description: How to change DKIM from US to EU
 keywords: DKIM, mailgun, Schrems II, Privacy Shield
 author: SuperOffice Product and Engineering
 date: 01.07.2026
+version: 12
 content_type: howto
 category: email
 topic: mailgun
-index: true
 redirect_from: /en/email/mailgun/dkim/change-us-to-eu
+index: true
 language: en
 ---
-
-# How to change DKIM from the US to the EU
 
 In 2020 the European Court of Justice made a ruling that says the EU-US Privacy Shield (the agreement between the EU and the US that should ensure the safe transfer of personal data from the EU to the US), is now illegal. This is now known as the Schrems II ruling.
 

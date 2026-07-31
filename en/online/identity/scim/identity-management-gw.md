@@ -1,17 +1,17 @@
 ---
-title: The Identity Management Gateway
 uid: identity_management_gw
+title: The Identity Management Gateway
 description: The Identity Management Gateway Architecture, User interface, and Pre-requisites
+keywords: Identity, Management, Gateway, Architecture, SuperID, Microsoft Entra, ME-ID, AAD
 author:
 date: 01.15.2024
-keywords: Identity, Management, Gateway, Architecture, SuperID, Microsoft Entra, ME-ID, AAD
+version: 12
 content_type: reference
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# The Identity Management Gateway
 
 A rules wizard where the administrator can configure rules for how Microsoft Entra (formerly AAD) users shall be configured in SuperOffice.
 
@@ -54,7 +54,7 @@ To access the Identity Manager, you will need:
 * **Tenant** configured with **SuperID** - register to [get a developer account in SOD][1]
 * A SuperOffice admin account for that tenant linked to a Microsoft Entra account (Microsoft Entra admin not required)
 
-[1]: ../../../developer-portal/getting-started/get-access-to-sod
+[1]: /en/developer-portal/getting-started/get-access-to-sod
 
 [img1]: /media/loc/en/online/scim-flow-ui.png
 [img2]: /media/loc/en/online/scim-config-tab.png

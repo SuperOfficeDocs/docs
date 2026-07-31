@@ -5,22 +5,21 @@ description: How to force a re-synchronization of one or more tables in the Data
 keywords: database mirroring, replication, resync, snapshot, recovery
 author: SuperOffice Product and Engineering
 date: 05.27.2026
+version: 12
 content_type: howto
-deployment: online
 platform: web
+deployment: online
 language: en
 ---
 
-# Force re-sync
-
 You have set up Database Mirroring and data was synchronizing as expected, but now you notice that some tables look out of date or missing rows. What do you do?
 
-There is no GUI to inspect the replica &mdash; you must use **SQL Server Management Studio**. Generally, `SELECT * FROM <some table>` should return the same data on the source and the replica.
+There is no GUI to inspect the replica, you must use **SQL Server Management Studio**. Generally, `SELECT * FROM <some table>` should return the same data on the source and the replica.
 
 If a table is genuinely stale and the issue is not a transient connectivity problem, you can force a re-synchronization.
 
 <Note>
-This page covers the new outbound-only client. For the legacy WCF-based mirroring service, see [the legacy procedure][1] at the bottom of this page.
+This page covers the new outbound-only client. For the legacy WCF-based mirroring service, see [the legacy procedure](#legacy) at the bottom of this page.
 </Note>
 
 ## When you need a re-sync
@@ -33,11 +32,11 @@ Common reasons:
 
 ## Recover from extended downtime (longer than 7 days) {#recover-from-extended-downtime-longer-than-7-days}
 
-Change events are streamed through Kafka topics with a default retention of **7 days**. If the client is offline longer than that window, change events will have been purged from the topics. The client cannot fill the gap by replaying older events &mdash; it has to be re-snapshotted.
+Change events are streamed through Kafka topics with a default retention of **7 days**. If the client is offline longer than that window, change events will have been purged from the topics. The client cannot fill the gap by replaying older events, it has to be re-snapshotted.
 
 You have three options, from least to most disruptive:
 
-### Option A &mdash; Re-snapshot specific tables (recommended)
+### Option A - Re-snapshot specific tables (recommended)
 
 Use the `resync-tables` CLI command to trigger a Debezium signal-based snapshot of just the affected tables. The client truncates each table locally first, then receives a fresh snapshot from the cloud:
 
@@ -45,9 +44,9 @@ Use the `resync-tables` CLI command to trigger a Debezium signal-based snapshot 
 SuperOffice.Online.Replication.Client.exe resync-tables crm7.person crm7.project
 ```
 
-This is the **preferred** recovery path for most situations &mdash; it is targeted, fast, and does not disrupt other tables.
+This is the **preferred** recovery path for most situations: it is targeted, fast, and does not disrupt other tables.
 
-### Option B &mdash; Trigger via the Replication Service API
+### Option B - Trigger via the Replication Service API
 
 The same operation can be triggered from a backend or operations tool:
 
@@ -62,7 +61,7 @@ Content-Type: application/json
 
 This is useful when you cannot get a shell on the client host.
 
-### Option C &mdash; Full reset (operations only)
+### Option C - Full reset (operations only)
 
 If the entire replica needs to be rebuilt from scratch, SuperOffice Operations can reset all connector offsets, which triggers a complete re-snapshot of all tables:
 
@@ -80,7 +79,7 @@ Once the snapshot completes:
 * Spot-check a handful of recent changes from the source.
 * Check the Windows Event Log for any errors (source `SuperOfficeReplicationClient`).
 
-## Legacy (WCF-based) mirroring
+## Legacy (WCF-based) mirroring {#legacy}
 
 > [!IMPORTANT]
 > This section applies **only** to the legacy WCF-based mirroring service. New deployments use the [outbound-only client][2] and follow the procedure above.
@@ -116,7 +115,6 @@ Once the snapshot completes:
 * [Troubleshooting][4]
 * [Migrate from the legacy mirroring service][5]
 
-[1]: #legacy-wcf-based-mirroring
 [2]: ./setup-guide
 [3]: ./setup-guide#command-reference
 [4]: ./troubleshooting

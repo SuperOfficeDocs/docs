@@ -1,17 +1,17 @@
 ---
-title: User provisioning
 uid: user_provisioning
+title: User provisioning
 description: User provisioning
+keywords: IDP, SCIM, Microsoft Entra, ME-ID, AAD
 author: SuperOffice Product and Engineering
 date: 01.15.2024
-keywords: IDP, SCIM, Microsoft Entra, ME-ID, AAD
+version: 12
 content_type: concept
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# User provisioning
 
 User provisioning is an important identity management process for handling information about users in multiple applications and systems.
 
@@ -86,6 +86,6 @@ What happens when a user is being deleted by upstream source (Entra ID) or user 
 
 * After 30 days user is deleted in Entra ID and it sends DELETE command to SCIM API. When this happens SCIM API executes NetServer's `DeleteUser` API.
 
-[1]: ../../../developer-portal/provisioning/index
+[1]: /en/developer-portal/provisioning/index
 [2]: ../user/add-user-in-admin-client
 [3]: ./overview

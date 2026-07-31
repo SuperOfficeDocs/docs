@@ -1,14 +1,15 @@
 ---
-title: Send welcome emails
 uid: send_welcome_emails
+title: Send welcome emails to new users
 description: Send welcome emails to new users
-author: Bergfrid Dias
 keywords:
+author: digitaldiina
+date: 07.31.2026
+version: 12
 content_type: howto
 index: true
+language: en
 ---
-
-# Send welcome emails to new users
 
 The administrator can choose whether or not new users shall receive a welcome email with sign-in info when their account is created.
 

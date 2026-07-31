@@ -1,13 +1,14 @@
 ---
-title: netserver-authentication-ad
+title: Active Directory
+sidebarTitle: "Overview"
 description: Active Directory
-date: 05.08.2018
 keywords: Active Directory, AD, identity
+date: 05.08.2018
+version: 12
 content_type: concept
 index: true
+language: en
 ---
-
-# Active Directory
 
 ![AD screen -screenshot][img1]
 

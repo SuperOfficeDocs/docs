@@ -5,15 +5,14 @@ description: Mailgun - amount and speed
 keywords: Mailgun, email performance, email speed, email volume, mailing, throughput
 author: SuperOffice Product and Engineering
 date: 01.07.2026
+version: 12
 content_type: concept
 category: email
 topic: mailgun
-index: true
 redirect_from: /en/email/mailgun/amount-speed
+index: true
 language: en
 ---
-
-# Mailgun - amount and speed
 
 What is the maximum amount of emails I can send to the customers from SuperOffice Mailing and how long would it take?
 

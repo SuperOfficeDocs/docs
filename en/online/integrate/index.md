@@ -1,17 +1,18 @@
 ---
-uid: api_scenarios_web_online
-title: Integration in the online Web client
+uid: api-scenarios-web-online
+title: "Integration scenarios: Web client (online)"
+sidebarTitle: "Integration scenarios"
 description: Integration in the online Web client
-author: Tony Yates
-date: 11.25.2021
 keywords: API, integration point, online
+author: AtonyYates
+date: 11.25.2021
+version: 12
 content_type: concept
-deployment: online
 platform: web
+deployment: online
 index: true
+language: en
 ---
-
-# Integration scenarios: Web client (online)
 
 Both SuperOffice onsite installations and CRM Online applications use the same NetServer web service APIs. The only difference between the two environments is how integrations are authenticated. While on-site integrations have a more direct approach, supplying credentials, CRM Online integrations must use [federated authentication][8].
 
@@ -33,4 +34,4 @@ The SuperOffice CRM Online environment hosts an app store with several partner i
 * [CRM Online SDK][9]
 
 [8]: ../identity/federated-auth
-[9]: ../../../api/reference/webapi/index
+[9]: /en/api/reference/webapi/index

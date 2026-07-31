@@ -1,15 +1,14 @@
 ---
-title: Single sign-on
 uid: singel_sign_on
+title: Single sign-on
 description: Single sign-on
-author: SuperOffice Product and Engineering
-date:
 keywords: SSO
+author: SuperOffice Product and Engineering
+date: 07.31.2026
+version: 12
 content_type: concept
-# Optional fields. Don't forget to remove # if you need a field.
+language: en
 ---
-
-# Single sign-on
 
 Single sign-on (SSO) allows users to access multiple services with a single set of credentials. On the plus side, it facilitates a smoother user experience. On the flip side, you'll be more exposed if you lose "the keys to the castle".
 
@@ -47,4 +46,4 @@ Note that this is not the same as using the same username and password to sign i
 
 [1]: ../federated-id-and-identity-providers
 [2]: ./onsite-sso
-[3]: ../superid/overview
+[3]: ../superid/index
