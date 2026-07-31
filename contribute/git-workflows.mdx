@@ -1,6 +1,6 @@
 ---
 uid: git-workflows
-title: Common Git workflows
+title: A beginner's guide to Git
 description: A beginner's guide to Git - step-by-step instructions for daily tasks in different tools
 keywords: git workflows, clone, pull, branch, commit, push, pull request, git bash, vs code
 author: digitaldiina
@@ -10,8 +10,6 @@ language: en
 ---
 
 import StepsCreatePr from "./includes/steps-create-pr.md";
-
-# A beginner's guide to Git
 
 This tutorial walks you through the most common Git tasks on your **local computer**. We show the Git Bash command line and Visual Studio Code (VS Code) side-by-side.
 
@@ -103,7 +101,7 @@ At the beginning of the workday, it is good practice to always get the latest up
 </Tab>
 </Tabs>
 
-## Go to a branch to do work
+## Go to a branch to do work {#branch}
 
 If you are going to resume work where you left off the previous day, congratulations! You're already good-to-go with the latest updates.
 
@@ -180,7 +178,7 @@ Saving your changes is a three-step process:
 Adding the issue number (for example #256) somewhere in the commit message automatically links your changes to the issue and lets others see what has been done.
 </Tip>
 
-### Save the changes to your local Git repo
+### Save the changes to your local Git repo {#commit}
 
 <Tabs>
 <Tab title="Git Bash command line">
@@ -288,13 +286,13 @@ Sometimes you'll need to suspend your current work in progress to deal with some
 * Someone asked you to help them out on an urgent issue.
 * Someone requested your review on a pull request.
 
-1. [Stage and commit your changes](#save-the-changes-to-your-local-git-repo).
+1. [Stage and commit your changes](#commit).
 
     If this is inconvenient, use **Stash**.
 
 2. Switch to the main branch and pull.
 
-3. [Start a new issue](#go-to-a-branch-to-do-work) or switch to an existing branch (and pull).
+3. [Start a new issue](#branch) or switch to an existing branch (and pull).
 
 ### Switching between branches
 

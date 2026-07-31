@@ -1,6 +1,6 @@
 ---
 uid: using-blueprint-templates
-title: Using Blueprint templates
+title: Using Blueprint templates in Visual Studio Code
 description: How to use Blueprint templates in Visual Studio Code to create new Markdown and MDX files from predefined templates.
 keywords: template, Blueprint, VS Code, Visual Studio Code, authoring, tools, contribution
 author: digitaldiina
@@ -8,8 +8,6 @@ date: 07.24.2026
 content_type: reference
 language: en
 ---
-
-# Using Blueprint templates in Visual Studio Code
 
 ## Pre-requisites
 

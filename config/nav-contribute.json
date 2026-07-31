@@ -1,0 +1,59 @@
+[
+  {
+    "group": "Overview",
+    "root": "contribute/index",
+    "icon": "map"
+  },
+  "contribute/overview",
+  "contribute/getting-started",
+  "contribute/files-and-folders",
+  "contribute/how-to-edit-an-article",
+  "contribute/how-to-add-release-notes",
+  "contribute/how-to-write-tutorials",
+  {
+    "group": "Git",
+    "root": "contribute/git-cheat-sheet",
+    "pages": [
+      "contribute/branch-strategy",
+      "contribute/git-workflows"
+    ]
+  },
+  {
+    "group": "Review",
+    "root": "contribute/review/index",
+    "pages": [
+      "contribute/review/request-review",
+      "contribute/review/incorporate-feedback",
+      "contribute/review/check-changes"
+    ]
+  },
+  {
+    "group": "Markdown and MDX guide",
+    "root": "contribute/markdown-guide/index",
+    "pages": [
+      "contribute/markdown-guide/docfx-to-mintlify-cheat-sheet",
+      "contribute/markdown-guide/links-in-docs",
+      "contribute/markdown-guide/metadata",
+      "contribute/markdown-guide/code-in-docs",
+      "contribute/markdown-guide/markdownlint",
+      "contribute/markdown-guide/using-blueprint-templates"
+    ]
+  },
+    {
+    "group": "Style guide",
+    "root": "contribute/style-guide/index",
+    "pages": [
+      "contribute/style-guide/formatting"
+    ]
+  },
+  {
+    "group": "Information architecture",
+    "root": "contribute/ia",
+    "pages": [
+      "contribute/reuse",
+      "contribute/redirects",
+      "contribute/retention-policy"
+    ]
+  },
+  "contribute/configure-mintlify"
+]

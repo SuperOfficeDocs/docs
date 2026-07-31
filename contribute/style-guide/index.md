@@ -9,8 +9,6 @@ content_type: reference
 language: en
 ---
 
-# Documentation style guide
-
 This style guide is intended to ensure that SuperOffice documentation is clear, has a consistent style, and is easy to find, easy to use, and easy to understand.
 
 Adopting these guidelines also limits variation, thereby eliminating confusion, guesswork, and debates.
