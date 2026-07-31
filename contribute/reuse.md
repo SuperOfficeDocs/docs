@@ -9,8 +9,6 @@ content_type: concept
 language: en
 ---
 
-# Content reuse
-
 Content reuse is to use the same pieces of content in multiple places without copying. It works like this:
 
 1. Write a piece of content and save it in a common place.

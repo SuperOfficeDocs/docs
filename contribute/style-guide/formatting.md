@@ -9,8 +9,6 @@ content_type: reference
 language: en
 ---
 
-# Text formatting guidelines
-
 Using bold, italic, and code style for text elements consistently and appropriately improves the readability and helps to avoid misunderstandings.
 
 ## Bold

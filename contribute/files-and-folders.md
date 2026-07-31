@@ -9,8 +9,6 @@ content_type: reference
 language: en
 ---
 
-# Organization of repositories
-
 Git is an open-source version control system. The files are stored in repositories. GitHub is a web-based hosting service for Git repositories.
 
 ## File names and file extensions

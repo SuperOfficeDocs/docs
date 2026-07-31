@@ -9,13 +9,11 @@ content_type: concept
 language: en
 ---
 
-# Configuring Mintlify
-
 `docs.json` is the root of every Mintlify setting for this site - theme, fonts, navigation, redirects, and more. It used to be a single 21,000+ line file. Its two largest pieces, `navigation` and `redirects`, are now split out into their own files under `config/`, using Mintlify's [split-configuration `$ref` support][1]. This page covers how that split works and where to make a given change; for redirect-specific guidance see [Redirects and redirect_from][2].
 
 ## What lives where
 
-```
+```json
 docs.json                        # theme, fonts, navbar, footer, and $ref pointers for navigation + redirects
 config/
   navigation.json                # languages[] shell + global.anchors
@@ -42,8 +40,9 @@ Any key's value can be replaced with an object holding a `$ref`:
 
 Two rules matter once you're editing these files directly:
 
-- **Relative paths resolve against the file that contains them, not against `docs.json`.** `config/navigation.json`'s `"tabs": {"$ref": "./nav-en.json"}` means `./config/nav-en.json` relative to `docs.json`, because the ref lives inside `navigation.json`, not inside `docs.json` itself.
-- **Sibling keys next to a `$ref` merge on top of the resolved value, but only if it resolves to an object.** If it resolves to an array (every ref in this repo's nav/redirects split does), sibling keys are ignored - which is why `"language": "da"` stays outside the `$ref` as a sibling of `"tabs"`, not inside it.
+* **Relative paths resolve against the file that contains them, not against `docs.json`.** `config/navigation.json`'s `"tabs": {"$ref": "./nav-en.json"}` means `./config/nav-en.json` relative to `docs.json`, because the ref lives inside `navigation.json`, not inside `docs.json` itself.
+
+* **Sibling keys next to a `$ref` merge on top of the resolved value, but only if it resolves to an object.** If it resolves to an array (every ref in this repo's nav/redirects split does), sibling keys are ignored - which is why `"language": "da"` stays outside the `$ref` as a sibling of `"tabs"`, not inside it.
 
 <Note>
 Refs can chain - a file you land in after following one `$ref` can contain its own. Following `docs.json` -> `config/navigation.json` -> `config/nav-en.json` -> `config/nav-mobile.json` is four files, three hops.

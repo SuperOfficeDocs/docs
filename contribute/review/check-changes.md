@@ -9,8 +9,6 @@ content_type: howto
 language: en
 ---
 
-# Reviewing a PR
-
 Anyone with access can comment on a PR. The ability to request changes or submit reviews that approve a PR is limited to admins.
 
 ## Open the PR for viewing
@@ -69,7 +67,7 @@ Anyone with access can comment on a PR. The ability to request changes or submit
 * If you requested changes, follow up on those.
 * If you approved and all checks are green, you can merge the PR and delete the branch.
 
-[1]: https://github.com/SuperOfficeDocs/superoffice-docs
+[1]: https://github.com/SuperOfficeDocs/docs
 
 [img1]: /media/loc/en/contribute/comment.png
 [img2]: /media/loc/en/contribute/line-comment.png
