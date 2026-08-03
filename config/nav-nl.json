@@ -9,12 +9,8 @@
   {
     "tab": "Handleidingen",
     "icon": "book",
-    "groups": [
-      {
-        "group": "Overzicht",
-        "root": "nl/learn/index",
-        "icon": "map"
-      },
+    "root": "nl/learn/index",
+    "pages": [
       "nl/learn/intro",
       {
         "group": "Aan de slag",

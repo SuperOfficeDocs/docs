@@ -9,12 +9,8 @@
   {
     "tab": "Benutzerleitfaden",
     "icon": "book",
-    "groups": [
-      {
-        "group": "Übersicht",
-        "root": "de/learn/index",
-        "icon": "map"
-      },
+    "root": "de/learn/index",
+    "pages": [
       "de/learn/intro",
       {
         "group": "Erste Schritte",

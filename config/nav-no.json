@@ -9,12 +9,8 @@
   {
     "tab": "Brukerveiledning",
     "icon": "book",
-    "groups": [
-      {
-        "group": "Oversikt",
-        "root": "no/learn/index",
-        "icon": "map"
-      },
+    "root": "no/learn/index",
+    "pages": [
       "no/learn/intro",
       {
         "group": "Komme i gang",
