@@ -11,12 +11,10 @@ tier: core
 category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from: /en/admin/lists/learn/add-items-to-task-menu
+index: true
 language: en
 ---
-
-# Add items to the Task menu list
 
 ## Steps
 

@@ -710,8 +710,10 @@
   },
   {
     "group": "Privacy settings and GDPR",
-    "root": "en/security/privacy/learn/index",
+    "root": "en/security/privacy/index",
     "pages": [
+      "en/security/index",
+      "en/security/privacy/learn/index",
       "en/security/privacy/learn/edit-legal-base",
       "en/security/privacy/learn/send-privacy-confirmation-email",
       "en/security/privacy/learn/generate-personal-data-report",
@@ -831,6 +833,7 @@
           "en/customer-center/learn/send-credentials",
           "en/customer-center/learn/enable-chat",
           "en/customer-center/learn/link-form",
+          "en/customer-center/learn/publish-faq",
           {
             "group": "For administrators",
             "pages": [

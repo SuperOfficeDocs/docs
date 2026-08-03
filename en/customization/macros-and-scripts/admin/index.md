@@ -16,11 +16,9 @@ redirect_from:
   - /en/automation/crmscript/learn/macro-script
   - /en/automation/crmscript/learn/screen/index
   - /en/automation/crmscript/learn/index
-language: en
 index: true
+language: en
 ---
-
-# CRMScript
 
 CRMScript is a feature that allows you to automate tasks in or modify the behavior of SuperOffice. Automating tasks and processes will help you to save time and will make you and your colleague more productive.
 
@@ -92,10 +90,10 @@ When you click a script or macro in the **Macros and scripts** tab, the **Script
 
 [2]: ./trigger
 [3]: ./schedule-task
-[4]: ../../../../en/automation/crmscript/debugging/built-in-debugger
-[5]: ../../../../en/automation/crmscript/debugging/using-trace
-[6]: ../../../../en/automation/crmscript/overview/index
-[7]: ../../../../en/automation/crmscript/reference/index
+[4]: /en/automation/crmscript/debugging/built-in-debugger
+[5]: /en/automation/crmscript/debugging/using-trace
+[6]: /en/automation/crmscript/overview/index
+[7]: /en/automation/crmscript/reference/index
 [8]: ./create-script
 [9]: ./create-macro
 [10]: ./create-script#folder

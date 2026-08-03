@@ -1,23 +1,22 @@
 ---
 uid: help-en-privacy-add-purpose
 title: Set up privacy settings for GDPR - Add purpose
+sidebarTitle: "Add GDPR purpose"
 description: Learn how to set up the privacy settings for your company.
 keywords: privacy setting, add purpose, external privacy statement
 author: SuperOffice Product and Engineering
 date: 09.01.2025
 version: 10.5
 content_type: howto
-tier: starter
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from: /en/security/privacy/learn/admin/add-consent-purpose
+index: true
+language: en
 ---
-
-# Set up privacy settings for GDPR - Add purpose
 
 Find out how to add and edit purposes for processing personal data, activate default settings for the Legal Basis, and activate the E-marketing privacy settings in mailings.
 

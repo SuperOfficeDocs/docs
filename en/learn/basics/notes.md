@@ -13,8 +13,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Taking notes
-
 In SuperOffice CRM, you can attach notes to a company, contact, sale, project, or selection. These notes can be used to store any kind of information and are searchable via [Free-text search][1].
 
 ## Create a note

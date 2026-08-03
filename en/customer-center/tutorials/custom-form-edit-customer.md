@@ -2,14 +2,13 @@
 uid: custom-form-edit-customer
 title: Custom form - edit customer
 description: Custom form in Customer Centre to edit a customer
+keywords: CRMScript, Customer Center, form
 author: kronicz
 date: 09.15.2011
-keywords: CRMScript, Customer Center, form
 content_type: tutorial
 index: true
+language: en
 ---
-
-# Custom form - edit customer
 
 This tutorial shows you how to create a custom form in the Customer Centre to allow modifying a customer
 

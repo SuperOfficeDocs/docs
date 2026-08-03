@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Privacy
-
 The **Privacy** feature in SuperOffice will assist you in protecting the data privacy of your customers and complying with the EU's General Data Protection Regulation (GDPR).
 
 You must have the consent (permission) of a person to (among other things)

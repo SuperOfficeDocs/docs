@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/request/learn/howto/flag-message
+language: en
 ---
-
-# Keep track of messages
 
 Complex requests can take a lot of time to solve. This can involve a lot of communication between the customer and multiple request handlers.
 
@@ -46,4 +44,4 @@ To make it easier to find and sort multiple messages in a request, you can flag 
 [3]: ./reply
 [4]: ./edit-message
 
-[img1]: ../../../media/loc/en/request/filter-messages.png
+[img1]: /media/loc/en/request/filter-messages.png

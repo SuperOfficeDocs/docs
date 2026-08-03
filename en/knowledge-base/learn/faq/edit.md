@@ -1,26 +1,24 @@
 ---
 uid: help-en-faq-edit
-title: Edit or delete FAQ entries
+title: Edit or delete FAQ
 description: Edit or delete FAQ entries
 keywords: edit FAQ, delete FAQ
 author: SuperOffice Product and Engineering
 date: 04.15.2025
 version: 10.5
 content_type: howto
-category: service
-topic: faq
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
+category: service
+topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from:
   - /en/faq/learn/delete
   - /en/faq/learn/edit
+language: en
 ---
-
-# Edit or delete FAQ
 
 ## Edit FAQ entry
 

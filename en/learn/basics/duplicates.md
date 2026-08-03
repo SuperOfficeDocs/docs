@@ -2,15 +2,13 @@
 uid: help-en-duplicates
 title: Duplicates
 description: Duplicates
+keywords: duplicate
 author: SuperOffice RnD
 date: 06.29.2022
-keywords: duplicate
 content_type: concept
 tier: starter
 language: en
 ---
-
-# Duplicates
 
 When you create new companies, projects, and selections, a duplicate check is automatically performed. The duplicate check looks for identical and similar names in the SuperOffice database to avoid creating records that already exist in SuperOffice CRM (such as companies), in addition to preventing the creation of records with very similar names.
 

@@ -1,23 +1,22 @@
 ---
 uid: help-en-form-view-statistics
 title: Track form submissions and view statistics
+sidebarTitle: "Track form statistics"
 description: Track form submissions and view statistics
 keywords: form, submission, response
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: forms
 license: marketingessentials
 tier: growth
+category: marketing
+topic: forms
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /en/marketing/forms/learn/submissions/track
 language: en
 ---
-
-# Track form submissions and view statistics
 
 ## Steps
 
@@ -55,6 +54,6 @@ Having a [dashboard for form submissions][3] simplifies the process of measuring
 [2]: ../../mailing/learn/view-statistics
 [3]: ../../../dashboard/learn/show-marketing
 
-[img1]: ../../../../media/loc/en/marketing/form-submissions-filter.png
-[img3]: ../../../../media/loc/en/marketing/view-form-screen.png
-[img2]: ../../../../media/loc/en/marketing/form-report-dx.png
+[img1]: /media/loc/en/marketing/form-submissions-filter.png
+[img3]: /media/loc/en/marketing/view-form-screen.png
+[img2]: /media/loc/en/marketing/form-report-dx.png

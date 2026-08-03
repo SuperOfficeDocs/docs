@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Resend your mailing
 
 If, after looking at the results of your mailing, you notice that a lot of the email addresses have [bounced][1], this means these contacts did not receive your mailing. After you have handled the bounced emails, it is a good idea to resend your mailing.
 
@@ -54,6 +52,6 @@ SuperOffice Marketing will now send your mailing to all the selected recipients.
 
 [1]: ../../recipients/learn/manage-bounces
 
-[img1]: ../../../../media/loc/en/marketing/reload-resend.png
-[img2]: ../../../../media/loc/en/marketing/filter-recipients.png
-[img3]: ../../../../media/loc/en/marketing/resend-to-selected.png
+[img1]: /media/loc/en/marketing/reload-resend.png
+[img2]: /media/loc/en/marketing/filter-recipients.png
+[img3]: /media/loc/en/marketing/resend-to-selected.png

@@ -77,7 +77,7 @@ The trusted 3rd party is the identity provider (IdP).
 
 ## SuperID and sign-in
 
-SuperOffice identity provider [SuperID][7], handling federation with other systems on behalf of all clients in Online (TrayApp/WebTools/MailLink, Pocket/Mobile, Crm.web, AppStore apps, and so on), has very good support for [OpenID Connect][4].
+SuperOffice identity provider [SuperID][7], handling federation with other systems on behalf of all clients in Online (TrayApp/WebTools/MailLink, Pocket/Mobile, Crm.web, App Store apps, and so on), has very good support for [OpenID Connect][4].
 
 * We use industry-standard [OAuth 2.0][4] access tokens and refresh tokens representing a user signed in to an application.
 * The access token is valid for 1 hour. The refresh token is valid for several years.
@@ -96,7 +96,7 @@ Integration with Microsoft 365 and SharePoint requires that the user authenticat
 Customers who use Citrix and Microsoft 365 often have a set-up where Microsoft Entra authentication is delegated to ADFS or other systems. We support this.
 
 * SuperID will use a standard connector with Microsoft Entra ID.
-* All clients, including TrayApp/WebTools/MailLink, Pocket/Mobile, Crm.web, AppStore apps, etc. will delegate authentication to SuperID.
+* All clients, including TrayApp/WebTools/MailLink, Pocket/Mobile, Crm.web, App Store apps, etc. will delegate authentication to SuperID.
 * Login with Google will support the new Google security policy for mobile apps
 * Users using IdP (Google / Microsoft 365), the IdP admin can retract token authorization (expire)
 

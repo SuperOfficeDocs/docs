@@ -7,17 +7,15 @@ author: SuperOffice Product and Engineering
 date: 09.02.2025
 version: 10.3
 content_type: howto
-tier: starter
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from: /en/admin/lists/learn/privacy-source-add
+index: true
+language: en
 ---
-
-# Add items to the Privacy - Source list
 
 The **Privacy - Source** list contains options that users select to show how and where they obtained consent from a contact.
 

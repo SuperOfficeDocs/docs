@@ -10,11 +10,9 @@ content_type: concept
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-language: en
 redirect_from: /en/contact/learn/screen/index
+language: en
 ---
-
-# Contact
 
 The **Contact screen** provides an instant snapshot of all communication and interaction with a person. Here, you can manage contact details, track activities, and access GDPR-related documentation-all from a single screen.
 
@@ -78,4 +76,4 @@ Below the Contact card, [section tabs][16] provide quick access to information c
 [21]: ../../customization/web-panels/admin/index#www
 [22]: ../../erp/learn/index
 
-[img3]: ../../../media/loc/en/contact/contact-screen.png
+[img3]: /media/loc/en/contact/contact-screen.png

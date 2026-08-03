@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
 redirect_from: /en/request/learn/priority/index
 index: true
+language: en
 ---
-
-# Request priorities
 
 All requests registered in SuperOffice are assigned a priority that reflects the importance of the enquiry.
 

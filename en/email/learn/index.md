@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Email
-
 Email is the most popular form of communication between businesses. With SuperOffice CRM you can choose to save and share your emails in various ways that will make you and your team work more productively.
 
 When you have [integrated your preferred email client with SuperOffice][13], you can save email dialogues and attachments under any company, contact, sale or project in your CRM system. You can also save emails directly as follow-ups or activities - so you never forget to follow up and follow through.
@@ -73,18 +71,18 @@ Click an email in the [Activities section tab][14] to view its details in the [s
 ![Email preview with task menu options highlighted -screenshot][img1]
 
 [1]: ../inbox/learn/index
-[2]: ../../../../integrations/gmail-link/index
-[3]: ../../../../integrations/gmail-link/email-archive-incoming
-[4]: ../../../../integrations/gmail-link/archive-emails-as-activities
-[5]: ../../../../integrations/gmail-link/archive-attachments
-[6]: ../../../../integrations/mail-link/index
-[7]: ../../../../integrations/mail-link/archive-as-activity
-[8]: ../../../../integrations/mail-link/archive-on-contact
-[9]: ../../../../integrations/mail-link/archive-attachment
+[2]: /integrations/gmail-link/index
+[3]: /integrations/gmail-link/email-archive-incoming
+[4]: /integrations/gmail-link/archive-emails-as-activities
+[5]: /integrations/gmail-link/archive-attachments
+[6]: /integrations/mail-link/index
+[7]: /integrations/mail-link/archive-as-activity
+[8]: /integrations/mail-link/archive-on-contact
+[9]: /integrations/mail-link/archive-attachment
 [11]: ../../contact/learn/send-email
 [12]: ../../document/learn/send-as-email
 [13]: ../../learn/getting-started/connect-your-accounts
 [14]: ../../learn/section-tabs/activities-tab
 [15]: ../../learn/getting-started/main-screen/side-panel
 
-[img1]: ../../../media/loc/en/learn/side-panel-preview-email-tasks.png
+[img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png

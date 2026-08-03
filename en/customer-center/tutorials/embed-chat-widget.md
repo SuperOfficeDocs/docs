@@ -1,14 +1,14 @@
 ---
-title: Embed chat widget
 uid: embed_chat_widget_on_external_site
+title: Embed chat widget on external site
 description: Embed chat widget on external site
-author: Michel Krohn-Dale
 keywords: Customer Center, chat
+author: Michel Krohn-Dale
+date: 07.15.2026
 content_type: tutorial
 index: true
+language: en
 ---
-
-# Embed chat widget on external site
 
 To offer a more seamless and smooth experience for customers we introduced support for automatic authentication in the chat widget we use in our Customer Centre in SuperOffice version 8.5 R05.
 

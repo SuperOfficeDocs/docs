@@ -7,11 +7,9 @@ author: Bergfrid Dias
 date: 07.11.2024
 content_type: howto
 tier: starter
-language: en
 redirect_from: /en/document/templates/troubleshooting
+language: en
 ---
-
-# Troubleshooting
 
 ## Use of template variables in Microsoft 365 documents
 
@@ -143,8 +141,8 @@ Excel **.xlsx** (**sheet1.xml** is the actual Sheet 1):
 
 [1]: ../variables/index
 
-[img1]: ../../../../media/loc/en/document/troubleshoot-tempvar.png
-[img2]: ../../../../media/loc/en/document/troubleshoot-tempvar-1.png
-[img4]: ../../../../media/loc/en/document/troubleshoot-tempvar-2.png
-[img5]: ../../../../media/loc/en/document/troubleshoot-tempvar-3.png
-[img6]: ../../../../media/loc/en/document/troubleshoot-tempvar-4.png
+[img1]: /media/loc/en/document/troubleshoot-tempvar.png
+[img2]: /media/loc/en/document/troubleshoot-tempvar-1.png
+[img4]: /media/loc/en/document/troubleshoot-tempvar-2.png
+[img5]: /media/loc/en/document/troubleshoot-tempvar-3.png
+[img6]: /media/loc/en/document/troubleshoot-tempvar-4.png

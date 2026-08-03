@@ -532,6 +532,7 @@
                   },
                   {
                     "group": "For developers",
+                    "root": "en/automation/webhook/dev/index",
                     "pages": [
                       "en/automation/webhook/dev/event-details",
                       "en/automation/webhook/dev/subscription",

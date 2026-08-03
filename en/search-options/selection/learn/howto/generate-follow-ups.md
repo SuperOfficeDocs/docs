@@ -1,6 +1,6 @@
 ---
 uid: help-en-selection-generate-follow-ups
-title: Generating follow-ups
+title: Generate follow-ups
 description: Generating follow-ups
 keywords: selection
 author: Bergfrid Dias
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Generate follow-ups
 
 You can create a follow-up to appear, for example, on the activities list of all members of a selection. This is useful, for example, when launching a new product and reminding sales staff to invite customers to a product demonstration.
 
@@ -50,4 +48,4 @@ You can create a follow-up to appear, for example, on the activities list of all
 
 ![Selection task: Generate follow-ups -screenshot][img1]
 
-[img1]: ../../../../../media/loc/en/search-options/generate-follow-ups-from-selection.png
+[img1]: /media/loc/en/search-options/generate-follow-ups-from-selection.png

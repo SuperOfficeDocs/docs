@@ -1,6 +1,6 @@
 ---
 uid: help-en-template-variables-service
-title: Template variables
+title: Reply template variables (Service)
 description: Template variables
 keywords: reply template variable, template variable
 author: digitaldiina
@@ -12,11 +12,9 @@ category: service
 topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/request/reply-templates/learn/template-variables
+language: en
 ---
-
-# Reply template variables (Service)
 
 In the email message, you can use template variables to insert customer-specific information to give the message a more personal touch. In this way, you can customize the content for each individual customer.
 

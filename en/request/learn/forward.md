@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/request/learn/howto/forward
+language: en
 ---
-
-# Forward request to external contact
 
 As a request handler, you are not always able to answer a request, even with the help of your colleagues. Sometimes, you may need to ask for help from others, for example, by getting advice from a sub-supplier, a partner, or a business specialist.
 
@@ -60,6 +58,6 @@ You can forward a complex or problematic request to an external contact in an em
 [1]: ./index#open
 [2]: ./create#fields
 
-[img1]: ../../../media/loc/en/request/forward-multiple-requests.png
-[img2]: ../../../media/loc/en/request/forward-add-recipient.png
-[img3]: ../../../media/loc/en/request/forward-a-request.png
+[img1]: /media/loc/en/request/forward-multiple-requests.png
+[img2]: /media/loc/en/request/forward-add-recipient.png
+[img3]: /media/loc/en/request/forward-a-request.png

@@ -7,20 +7,18 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: starter
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from:
   - /en/request/reply-templates/learn/delete
   - /en/request/reply-templates/learn/edit
+language: en
 ---
-
-# Edit or delete reply templates
 
 Editing a reply template can mean one of two things:
 

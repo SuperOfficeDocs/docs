@@ -7,16 +7,14 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: forms
 license: marketingessentials
 tier: growth
+category: marketing
+topic: forms
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Work with form templates
 
 ## Use folders to keep things organized
 
@@ -53,4 +51,4 @@ language: en
 [1]: ./create
 [19]: ../../learn/create-folder
 
-[img3]: ../../../../media/loc/en/marketing/form-template-edit-overview.png
+[img3]: /media/loc/en/marketing/form-template-edit-overview.png

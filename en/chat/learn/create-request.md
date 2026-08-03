@@ -1,6 +1,6 @@
 ---
 uid: help-en-chat-create-request
-title: Create request in chat
+title: Create request in an active chat
 description: In this how-to guide, you will learn how to create a request in SuperOffice Chat.
 keywords: create request, cannot solve via chat
 author: SuperOffice Product and Engineering
@@ -15,8 +15,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Create request in an active chat
 
 If you cannot solve the issue via the chat, you can create a request to be handled by another specialist.
 

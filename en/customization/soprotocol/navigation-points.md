@@ -1,6 +1,6 @@
 ---
 uid: so-protocol-nav
-title: Navigation points (where)
+title: SoProtocol targets reference
 description: SoProtocol navigation targets, dialog targets, query parameters, and admin screens reference
 keywords: soprotocol, deeplinking, navigation, targets
 author: Michel Krohn-Dale, digitaldiina, MargretheR
@@ -13,8 +13,6 @@ platform: web
 redirect_from: /en/ui/soprotocol/navigation-points
 language: en
 ---
-
-# SoProtocol targets reference
 
 SoProtocol targets define the `{{WHERE}}` part of an SoProtocol URL - which screen to open and which tabs to activate. The `{{WHAT}}` query parameters are covered in the [Query parameters](#query-parameters) section below.
 

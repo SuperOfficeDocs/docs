@@ -16,8 +16,6 @@ redirect_from:
 language: en
 ---
 
-# Open company
-
 The soprotocol should be on the format: ```soprotocol:contact.main?contact_id={{id}}```
 
 ## Open company with ID = 2
@@ -56,6 +54,6 @@ Following is a screenshot of the web page that will be shown when the above URL 
 
 ![12][img3]
 
-[img1]: ../../../../media/loc/en/customization/soprotocol-contact-contact_id.png
-[img2]: ../../../../media/loc/en/customization/soprotocol-contact-edit-mode.png
-[img3]: ../../../../media/loc/en/customization/soprotocol-contact.png
+[img1]: /media/loc/en/customization/soprotocol-contact-contact_id.png
+[img2]: /media/loc/en/customization/soprotocol-contact-edit-mode.png
+[img3]: /media/loc/en/customization/soprotocol-contact.png

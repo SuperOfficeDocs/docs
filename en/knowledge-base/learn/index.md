@@ -7,18 +7,16 @@ author: Kirsti Aakerholt
 date: 07.05.2023
 version: 10.5
 content_type: reference
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: core
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/request/learn/screen/knowledge-base
+language: en
 ---
-
-# Knowledge Base
 
 The **Knowledge base** is accessible from the **Main menu** in the top bar and gives request handlers access to saved data in a single location, which makes it easier to find information and make it available to contacts. You can use the knowledge base both as a look-up tool and for extracting information to reuse in communications with contacts. The knowledge base comprises the following main sections:
 

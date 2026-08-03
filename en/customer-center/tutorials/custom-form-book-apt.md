@@ -1,15 +1,14 @@
 ---
-title: Custom form - book meeting
 uid: custom-form-book-meeting
+title: Custom form - book meeting
 description: Custom form in Customer Centre to book a meeting
+keywords: Customer Center, form
 author: SuperOffice Product and Engineering
 date: 09.15.2011
-keywords: Customer Center, form
 content_type: tutorial
 index: true
+language: en
 ---
-
-# Custom form - book meeting
 
 In this example, we will create a new web page/form in the Customer Centre that allows your customers to book a meeting in the CRM calendar. There are multiple ways of creating custom pages in the Customer Centre, however, the most efficient one is probably to write is as an inline CRMScript.
 

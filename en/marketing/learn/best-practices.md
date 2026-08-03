@@ -7,16 +7,14 @@ author: Bergfrid Dias, Jeanette Small Strøm
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /en/marketing/learn/customize-for-mobile
 language: en
 ---
-
-# Best practices
 
 * Use standard fonts for the best legibility with any email client or web browser.
 * To avoid empty variables in your mailings, make sure to [preview the mailing][4] first.
@@ -103,6 +101,6 @@ To adjust mobile-specific settings for a message, select a section in the messag
 [4]: ../mailing/learn/create/send-test-email
 [5]: ../../security/privacy/admin/add-legal-base
 [6]: ../mailing/admin/add-domain
-[7]: ../../../en/online/mail-services/mailgun/spf/index
+[7]: /en/online/mail-services/mailgun/spf/index
 [10]: https://mailtrap.io/
 [11]: https://putsmail.com/

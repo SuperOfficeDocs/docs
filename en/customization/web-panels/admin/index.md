@@ -8,19 +8,17 @@ date: 10.13.2025
 version: 11.5
 content_type: concept
 tier: core
-audience: settings
-audience_tooltip: Settings and maintenance
 category: customization
 topic: web panel
-language: en
-index: true
+audience: settings
+audience_tooltip: Settings and maintenance
 redirect_from:
   - /en/ui/web-panels/learn/index
   - /en/ui/web-panels/index
   - /en/admin/lists/learn/web-panel
+index: true
+language: en
 ---
-
-# Web panels
 
 A **web panel** is a configurable area inside SuperOffice CRM that displays content from a web page or internal resource, based on a URL. This lets you integrate external data sources or internal tools directly into the CRM interface.
 

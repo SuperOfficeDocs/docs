@@ -1,23 +1,21 @@
 ---
 uid: help-en-translate-fields
-title: Translate fields
+title: Translation
 description: Translate fields in SuperOffice
 keywords: translate, translation
 author: digitaldiina
 date: 10.09.2025
 version: 11.5
 content_type: howto
-category: localization
-topic: language
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
+category: localization
+topic: language
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/globalization-and-localization/learn/translate-fields
 language: en
 ---
-
-# Translation
 
 The default fields and other UI texts are available in all SuperOffice languages. If you create your own fields or texts (such as names of dashboards and tiles), you can add translations for the relevant languages in your organization.
 

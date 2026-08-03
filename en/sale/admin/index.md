@@ -10,11 +10,9 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
 index: true
+language: en
 ---
-
-# Managing sale types, stages, and guides
 
 SuperOffice CRM provides administrators with tools to standardize sales workflows through **sale types**, **stages**, and **guides**. These features ensure consistent sales tracking, task management, and document handling across your team.
 

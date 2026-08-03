@@ -16,8 +16,6 @@ index: true
 language: en
 ---
 
-# Hidden licenses
-
 The user sees a set of licenses in the admin panel, including [user-plans][1] and markers of purchased add-ons:
 
 ![Admin licenses page -screenshot][img1]
@@ -104,5 +102,5 @@ The ModuleNames can be referenced from [SoLicenseNames][2].
 [2]: <xref:SuperOffice.License.SoLicenseNames>
 [3]: ./module-licenses
 
-[img1]: ../../../../media/loc/en/admin/licenses-admin.png
-[img2]: ../../../../media/loc/en/admin/licenses-list.png
+[img1]: /media/loc/en/admin/licenses-admin.png
+[img2]: /media/loc/en/admin/licenses-list.png

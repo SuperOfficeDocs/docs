@@ -9,11 +9,9 @@ content_type: reference
 category: customization
 topic: soprotocol
 redirect_from: /en/ui/soprotocol/used-in-webpanels-web
-language: en
 index: true
+language: en
 ---
-
-# SOProtocol and web panels - web
 
 [dialog=stop]
 

@@ -80,7 +80,7 @@ Stay on top of tasks, updates, and approvals as they happen.
 
 ## Get started
 
-1. Download the SuperOffice Mobile CRM app from the [Apple AppStore][16] or [Google Play][17] depending on your device.
+1. Download the SuperOffice Mobile CRM app from the [Apple App Store][16] or [Google Play][17] depending on your device.
 1. Log in using your SuperOffice credentials.
 
 New to the app? Here are your first steps:

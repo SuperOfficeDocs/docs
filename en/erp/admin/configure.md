@@ -11,17 +11,15 @@ license: development-tools
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from:
   - /en/quote/learn/admin/sync/sync-configure-default-values
   - /en/quote/learn/admin/sync/sync-configure-field-allocation
   - /en/quote/learn/admin/sync/sync-configure-list-mapping
   - /en/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab
   - /en/quote/learn/admin/sync/sync-set-sync-priority
+index: true
+language: en
 ---
-
-# Configure ERP connection
 
 After adding an ERP connection, you must configure how data is synchronized between SuperOffice and the ERP system. You do this using the buttons at the bottom of the **Sync** tab in the Quote/Sync screen.
 
@@ -157,8 +155,8 @@ If the direction arrows remain dimmed even after selecting a SuperOffice field, 
 
 Hover over the arrow to see a tooltip explaining why it is unavailable.
 
-[img1]: ../../../media/loc/en/erp/erp-connection-settings.png
-[img2]: ../../../media/loc/en/erp/configure-field-mapping.png
-[img3]: ../../../media/loc/en/erp/list-of-default-values.png
-[img4]: ../../../media/loc/en/erp/add-sync-default-value.png
-[img5]: ../../../media/loc/en/erp/rank-fields.png
+[img1]: /media/loc/en/erp/erp-connection-settings.png
+[img2]: /media/loc/en/erp/configure-field-mapping.png
+[img3]: /media/loc/en/erp/list-of-default-values.png
+[img4]: /media/loc/en/erp/add-sync-default-value.png
+[img5]: /media/loc/en/erp/rank-fields.png

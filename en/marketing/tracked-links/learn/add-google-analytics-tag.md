@@ -1,22 +1,21 @@
 ---
 uid: help-en-mailing-add-google-analytics
 title: How to add your Google Analytics tag to a mailing
+sidebarTitle: "Add Google Analytics tag"
 description: In this how-to guide, you will learn how to track your visitors.
 keywords: Marketing, Google Analytics, mailing
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# How to add your Google Analytics tag to a mailing
 
 With Google Analytics enabled, you can track website visits from recipients who click on the links in your mailing. The Google Analytics tracking setting is set on a per-mailing basis, allowing you to selectively track specific mailings. It is not a blanket setting, giving you more control over your data tracking strategy.
 
@@ -46,4 +45,4 @@ As soon as your recipients click on the links to your website, you can track the
 [1]: ../../mailing/learn/create/tutorial-email-mailing
 [2]: ./index#google
 
-[img1]: ../../../../media/loc/en/marketing/google-analytics-tag.png
+[img1]: /media/loc/en/marketing/google-analytics-tag.png

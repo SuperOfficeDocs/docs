@@ -20,7 +20,7 @@ Git is an open-source version control system. The files are stored in repositori
 
 **Naming conventions:**
 
-* \<feature/context>-index.md (or index.yml for landing pages)
+* \<feature/context>-index.md (or index.mdx for landing pages)
 * \<feature/context>-overview.md (used when there is already an index file)
 * \<feature/context>-getting-started.md
 * \<feature/context>-\<crud>-\<item>.md

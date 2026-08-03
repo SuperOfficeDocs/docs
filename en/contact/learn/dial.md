@@ -1,6 +1,6 @@
 ---
 uid: help-en-contact-dial
-title: Dialling contacts
+title: Dial contacts
 description: Dialling contacts; Phone preferences
 keywords: diary, follow-up, phone, call, dial
 author: digitaldiina
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Dial contacts
 
 If your IP phone solution is correctly configured, you can call a contact directly from SuperOffice CRM in one of the following ways:
 

@@ -14,8 +14,6 @@ redirect_from:
 language: en
 ---
 
-# Create follow-up
-
 The soprotocol should be on the format: ```soprotocol:appointment.main[new=true]?appointment_id=0&...other args...```
 
 Refer to the [follow-up arguments](#follow-up-arguments) for full list of available properties/args.

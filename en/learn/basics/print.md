@@ -10,14 +10,12 @@ content_type: howto
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-language: en
 redirect_from:
   - /en/contact/learn/print
   - /en/company/learn/print
   - /en/diary/learn/print
+language: en
 ---
-
-# Printing records in SuperOffice CRM
 
 The print function in SuperOffice CRM allows you to easily generate printed versions of important records, such as companies, contacts, sales, projects, and follow-ups. This guide provides an overview of how to print these records, making it convenient to have hard copies for meetings, documentation, or further analysis.
 

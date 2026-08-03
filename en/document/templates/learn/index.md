@@ -8,11 +8,9 @@ date: 07.11.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: en
 redirect_from: /en/admin/lists/learn/document-template
+language: en
 ---
-
-# Document templates
 
 It is important for an organization's profile that letters, faxes and other documents have a distinctive and consistent appearance. This means that all documents sent out by the organization should use the same fonts, margins, logos and so on. By creating templates that are customized to your organization you ensure that your contacts can easily recognize your correspondence.
 

@@ -1,6 +1,6 @@
 ---
 uid: help-en-getting-started
-title: Getting started
+title: Getting started with SuperOffice CRM
 description: Learn how to activating your user account, connect your email and documents, and set your personal preferences.
 keywords: CRM
 author: Bergfrid Dias, Kirsti Aakerholt
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Getting started with SuperOffice CRM
 
 Welcome to SuperOffice CRM! Whether you are a new user or transitioning from a previous version, this guide will help you navigate the system and get the most out of its features.
 
@@ -67,11 +65,11 @@ Discover the full potential of SuperOffice CRM. Use our how-to guides to get sta
 [6]: ./login
 [7]: ./preferences
 [8]: ./connect-your-accounts
-[9]: ../../../en/mobile/index
+[9]: /en/mobile/index
 
 [11]: ../basics/fav
 [13]: ../basics/activity
 [14]: ../../search-options/learn/index
 [15]: ./change-language
 
-[img1]: ../../../media/loc/en/learn/contact-screen-with-week.png
+[img1]: /media/loc/en/learn/contact-screen-with-week.png

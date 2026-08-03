@@ -12,8 +12,6 @@ redirect_from: /en/ui/soprotocol/howto/open-project
 language: en
 ---
 
-# Open project
-
 The soprotocol should be on the format: ```soprotocol:project.main?project_id={{id}}```
 
 ## Open project with ID = 1000
@@ -38,5 +36,5 @@ This link opens the Project page displaying the Links tab above and the project 
 
 ![02 -screenshot][img2]
 
-[img1]: ../../../../media/loc/en/customization/soprotocol-project-udef.png
-[img2]: ../../../../media/loc/en/customization/soprotocol-project-note-projectmembersarchive.png
+[img1]: /media/loc/en/customization/soprotocol-project-udef.png
+[img2]: /media/loc/en/customization/soprotocol-project-note-projectmembersarchive.png

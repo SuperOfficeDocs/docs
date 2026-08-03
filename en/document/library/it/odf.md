@@ -6,11 +6,10 @@ keywords: Open Document Format, ODF
 author: SuperOffice Product and Engineering
 date: 09.12.2025
 content_type: concept
-index: true
 redirect_from: /en/document/odf
+index: true
+language: en
 ---
-
-# ODF Support
 
 Support of Open Document Format in SuperOffice.
 
@@ -26,4 +25,4 @@ In SuperOffice Web, you should also get the real ODF icons in the document dialo
 
 Please note this support has not been highly advertised and is not as tested as our general Microsoft Office file format support. If you encounter errors or issues, please let us know.
 
-[img1]: ../../../../media/loc/en/document/imageghtzm.png
+[img1]: /media/loc/en/document/imageghtzm.png

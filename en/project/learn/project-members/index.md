@@ -10,11 +10,9 @@ content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-language: en
 redirect_from: /en/project/learn/screen/project-members-tab
+language: en
 ---
-
-# Project members
 
 Project members are the participants in a project. For each member, you can access information about company, contact name, function in the project, any comments, email address, and telephone number is displayed.
 

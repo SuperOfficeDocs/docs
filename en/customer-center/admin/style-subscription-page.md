@@ -10,12 +10,10 @@ content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from: /en/customer-center/admin/index
+index: true
+language: en
 ---
-
-# Style the subscription page
 
 The subscription page allows contacts to manage which mailings they want to receive from your company. The page is linked from:
 
@@ -89,5 +87,5 @@ Changes are not applied until you click **Save**.
 [1]: ../learn/index
 [2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
-[img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
-[img2]: ../../../media/loc/en/customer-center/subscription-page-options.png
+[img1]: /media/loc/en/customer-center/subscription-page-styling.png
+[img2]: /media/loc/en/customer-center/subscription-page-options.png
