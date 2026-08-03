@@ -20,7 +20,7 @@ blueprint-templates/
 private-notes.md
 en/mobile/includes/icon-reference.md
 
-# Exclude selected content folders to keep mint dev below 5000 pages
+# Exclude selected content folders as a workaround for mint dev's EMFILE error at scale
 ### Do not commit changes to this section without approval ###
 
 # Ignore translations except index files
@@ -45,12 +45,6 @@ en/mobile/includes/icon-reference.md
 #!sv/**/index.md
 #!sv/**/index.mdx
 
-# EN folder
-#en/**
-#!en/**/
-#!en/**/index.md
-#!en/**/index.mdx
-
 # Ignore database tables except index files
 en/database/tables/**
 !en/database/tables/index.mdx
@@ -58,3 +52,9 @@ en/database/tables/**
 # Ignore CRMScript reference
 en/automation/crmscript/reference/**
 !en/automation/crmscript/reference/index.mdx
+
+# Ignore archive providers reference
+en/api/archive-providers/reference/**
+
+# Ignore MDO providers reference
+en/api/mdo-providers/reference/**
