@@ -1,7 +1,8 @@
 [
   {
     "group": "Overview",
-    "root": "en/learn/index"
+    "root": "en/learn/index",
+    "icon": "map"
   },
   "en/learn/intro",
   {
@@ -63,8 +64,10 @@
   },
   {
     "group": "Search options",
-    "root": "en/search-options/learn/index",
+    "root": "en/search-options/index",
+    "icon": "map",
     "pages": [
+      "en/search-options/learn/index",
       "en/search-options/learn/find-screen",
       "en/search-options/learn/search-criteria",
       "en/search-options/learn/freetext-search",
@@ -95,6 +98,7 @@
   {
     "group": "Company",
     "root": "en/company/index",
+    "icon": "map",
     "pages": [
       "en/company/learn/index",
       "en/company/learn/create",
@@ -109,6 +113,7 @@
   {
     "group": "Contact",
     "root": "en/contact/index",
+    "icon": "map",
     "pages": [
       "en/contact/learn/index",
       "en/contact/learn/create",
@@ -117,13 +122,14 @@
       "en/contact/learn/merge-contacts",
       "en/contact/learn/delete",
       "en/contact/learn/send-email",
-      "en/contact/  /dial",
+      "en/contact/learn/dial",
       "en/contact/dev/index"
     ]
   },
   {
     "group": "Diary",
     "root": "en/diary/index",
+    "icon": "map",
     "pages": [
       "en/diary/learn/index",
       "en/diary/learn/follow-ups",
@@ -166,6 +172,7 @@
   {
     "group": "Document",
     "root": "en/document/index",
+    "icon": "map",
     "pages": [
       "en/document/learn/index",
       "en/document/library/learn/index",
@@ -185,6 +192,7 @@
           "en/document/templates/learn/document-types",
           {
             "group": "Template variables",
+            "root": "en/document/templates/learn/template-variables",
             "pages": [
               {
                 "group": "Reference",
@@ -217,6 +225,7 @@
           },
           {
             "group": "Merge fields (quote templates)",
+            "root": "en/document/templates/learn/quote-templates",
             "pages": [
               {
                 "group": "Reference",
@@ -248,6 +257,7 @@
   {
     "group": "Email",
     "root": "en/email/index",
+    "icon": "map",
     "pages": [
       "en/email/learn/index",
       "en/email/learn/change-default-mail-client",
@@ -286,6 +296,7 @@
   {
     "group": "Sale",
     "root": "en/sale/index",
+    "icon": "map",
     "pages": [
       "en/sale/learn/index",
       "en/sale/learn/create",
@@ -294,6 +305,7 @@
       "en/sale/learn/tutorial",
       {
         "group": "Stakeholders",
+        "root": "en/sale/learn/stakeholders/index",
         "pages": [
           "en/sale/learn/stakeholders/create",
           "en/sale/learn/stakeholders/edit"
@@ -330,6 +342,7 @@
           "en/sale/admin/add-currency",
           {
             "group": "Quote",
+            "root": "en/sale/admin/quote/index",
             "pages": [
               "en/sale/admin/quote/price-list-and-products",
               "en/sale/admin/quote/configure-product-fields",
@@ -344,6 +357,7 @@
   {
     "group": "Project",
     "root": "en/project/index",
+    "icon": "map",
     "pages": [
       "en/project/learn/index",
       "en/project/learn/create",
@@ -380,6 +394,7 @@
   {
     "group": "Requests",
     "root": "en/request/index",
+    "icon": "map",
     "pages": [
       "en/request/learn/index",
       "en/request/learn/handle-request-ai",
@@ -448,8 +463,10 @@
   },
   {
     "group": "Custom objects",
-    "root": "en/custom-objects/learn/index",
+    "root": "en/custom-objects/index",
+    "icon": "map",
     "pages": [
+      "en/custom-objects/learn/index",
       "en/custom-objects/learn/more-tab",
       {
         "group": "User-defined fields",
@@ -763,6 +780,7 @@
   {
     "group": "Customization",
     "root": "en/customization/index",
+    "icon": "map",
     "pages": [
       {
         "group": "Screen designer",
@@ -804,8 +822,10 @@
       },
       {
         "group": "Customer center",
-        "root": "en/customer-center/learn/index",
+        "root": "en/customer-center/overview",
         "pages": [
+          "en/customer-center/index",
+          "en/customer-center/learn/index",
           "en/customer-center/learn/config",
           "en/customer-center/learn/edit",
           "en/customer-center/learn/send-credentials",
@@ -855,6 +875,7 @@
   {
     "group": "Settings and maintenance",
     "root": "en/admin/index",
+    "icon": "map",
     "pages": [
       "en/admin/getting-started",
       "en/admin/adjusting-views",
