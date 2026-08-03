@@ -1,5 +1,6 @@
 ---
 mode: "custom"
+uid: learn-landing-nl
 title: Welkom
 sidebarTitle: "Overview"
 description: "Klaar om de kracht van SuperOffice CRM te ontdekken en meer te leren? Begin helemaal aan het begin en laat ons u meenemen op een opwindende CRM-reis met how-to handleidingen, of spring gewoon meteen naar een specifiek onderwerp in het menu."
@@ -61,107 +62,331 @@ import CustomFooter from '/components/custom-mode-footer.mdx'
 <Columns cols={4}>
 <Card title="Aan de slag">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/nl/learn/getting-started/login">Inleiding</a></li>
-  <li><Icon icon="graduation-cap" /> <a href="/nl/learn/basics/index">De basis leren</a></li>
-  <li><Icon icon="video" /> <a href="https://www.youtube.com/embed/10VQCTgxODc">Demo</a></li>
-  <li><Icon icon="list" /> <a href="/nl/learn/getting-started/login">Aanmelden</a></li>
-  <li><Icon icon="list" /> <a href="/nl/learn/getting-started/preferences">Voorkeuren</a></li>
-  <li><Icon icon="list" /> <a href="/nl/learn/getting-started/connect-your-accounts">Accounts koppelen</a></li>
-  <li><Icon icon="list" /> <a href="/nl/learn/getting-started/edit-email-signature">E-mail-handtekening bewerken</a></li>
-  <li><Icon icon="book" /> <a href="/nl/learn/getting-started/main-screen/index">De opmaakelementen</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Inleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/learn/getting-started/login">Inleiding</a></li>
+    <li><a href="/nl/learn/basics/index">De basis leren</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="video" />
+    <span>Bekijken</span>
+  </div>
+  <ul>
+    <li><a href="https://www.youtube.com/embed/10VQCTgxODc">Demo</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Handleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/learn/getting-started/login">Aanmelden</a></li>
+    <li><a href="/nl/learn/getting-started/preferences">Voorkeuren</a></li>
+    <li><a href="/nl/learn/getting-started/connect-your-accounts">Accounts koppelen</a></li>
+    <li><a href="/nl/learn/getting-started/edit-email-signature">E-mail-handtekening bewerken</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referentie</span>
+  </div>
+  <ul>
+    <li><a href="/nl/learn/getting-started/main-screen/index">De opmaakelementen</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Laatste updates">
 
-<ul className="concept-links">
-  <li><Icon icon="bell" /> <a href="/release-notes/index">Versie-opmerkingen</a></li>
-  <li><Icon icon="compass" /> <a href="/nl/request/learn/index">Nieuw verzoekbeheer</a></li>
-  <li><Icon icon="compass" /> <a href="/nl/customization/screen-designer/admin/working-with-archives">Configureerbare schermen - archieven</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="bell" />
+    <span>Updates</span>
+  </div>
+  <ul>
+    <li><a href="/release-notes/index">Versie-opmerkingen</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="compass" />
+    <span>Gerelateerd</span>
+  </div>
+  <ul>
+    <li><a href="/nl/request/learn/index">Nieuw verzoekbeheer</a></li>
+    <li><a href="/nl/customization/screen-designer/admin/working-with-archives">Configureerbare schermen - archieven</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Zoekopties">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/nl/search-options/learn/index">Inleiding</a></li>
-  <li><Icon icon="compass" /> <a href="/nl/search-options/selection/learn/index">Selectie</a></li>
-  <li><Icon icon="list" /> <a href="/nl/search-options/learn/freetext-search">Vrije-tekst zoekbewerking</a></li>
-  <li><Icon icon="list" /> <a href="/nl/search-options/learn/in-navigator">Zoeken vanuit navigator</a></li>
-  <li><Icon icon="list" /> <a href="/nl/search-options/learn/in-dialogs">Zoeken in dialoogvensters</a></li>
-  <li><Icon icon="list" /> <a href="/nl/search-options/learn/find-screen">Scherm zoeken</a></li>
-  <li><Icon icon="list" /> <a href="/nl/search-options/learn/search-criteria">Zoekcriteria</a></li>
-  <li><Icon icon="list" /> <a href="/nl/search-options/selection/learn/create">Selectie maken</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Inleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/search-options/learn/index">Inleiding</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="compass" />
+    <span>Gerelateerd</span>
+  </div>
+  <ul>
+    <li><a href="/nl/search-options/selection/learn/index">Selectie</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Handleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/search-options/learn/freetext-search">Vrije-tekst zoekbewerking</a></li>
+    <li><a href="/nl/search-options/learn/in-navigator">Zoeken vanuit navigator</a></li>
+    <li><a href="/nl/search-options/learn/in-dialogs">Zoeken in dialoogvensters</a></li>
+    <li><a href="/nl/search-options/learn/find-screen">Scherm zoeken</a></li>
+    <li><a href="/nl/search-options/learn/search-criteria">Zoekcriteria</a></li>
+    <li><a href="/nl/search-options/selection/learn/create">Selectie maken</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Bedrijf en Persoon">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/nl/contact/learn/index">Inleiding</a></li>
-  <li><Icon icon="list" /> <a href="/nl/company/learn/create">Nieuw bedrijf maken</a></li>
-  <li><Icon icon="list" /> <a href="/nl/contact/learn/create">Nieuwe persoon maken</a></li>
-  <li><Icon icon="list" /> <a href="/nl/contact/learn/send-email">E-mail verzenden naar een contactpersoon</a></li>
-  <li><Icon icon="book" /> <a href="/nl/company/learn/index">Sectietabbladen op bedrijf</a></li>
-  <li><Icon icon="book" /> <a href="/nl/contact/learn/index">Sectietabbladen op persoon</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Inleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/contact/learn/index">Inleiding</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Handleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/company/learn/create">Nieuw bedrijf maken</a></li>
+    <li><a href="/nl/contact/learn/create">Nieuwe persoon maken</a></li>
+    <li><a href="/nl/contact/learn/send-email">E-mail verzenden naar een contactpersoon</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referentie</span>
+  </div>
+  <ul>
+    <li><a href="/nl/company/learn/index">Sectietabbladen op bedrijf</a></li>
+    <li><a href="/nl/contact/learn/index">Sectietabbladen op persoon</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="E-mail en agenda">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/nl/email/learn/index">Inleiding - e-mail</a></li>
-  <li><Icon icon="graduation-cap" /> <a href="/nl/diary/learn/index">Inleiding - agenda</a></li>
-  <li><Icon icon="list" /> <a href="/nl/email/learn/change-default-mail-client">Standaard-e-mailclient wijzigen in SuperOffice</a></li>
-  <li><Icon icon="list" /> <a href="/nl/email/inbox/learn/compose">E-mail opstellen</a></li>
-  <li><Icon icon="list" /> <a href="/nl/diary/learn/create-follow-up">Vervolgactiviteit toevoegen</a></li>
-  <li><Icon icon="list" /> <a href="/nl/diary/learn/video-meetings">Videovergaderingen</a></li>
-  <li><Icon icon="book" /> <a href="/nl/diary/learn/index">Navigeren in het scherm Agenda</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Inleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/email/learn/index">Inleiding - e-mail</a></li>
+    <li><a href="/nl/diary/learn/index">Inleiding - agenda</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Handleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/email/learn/change-default-mail-client">Standaard-e-mailclient wijzigen in SuperOffice</a></li>
+    <li><a href="/nl/email/inbox/learn/compose">E-mail opstellen</a></li>
+    <li><a href="/nl/diary/learn/create-follow-up">Vervolgactiviteit toevoegen</a></li>
+    <li><a href="/nl/diary/learn/video-meetings">Videovergaderingen</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referentie</span>
+  </div>
+  <ul>
+    <li><a href="/nl/diary/learn/index">Navigeren in het scherm Agenda</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Document">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/nl/document/learn/index">Inleiding</a></li>
-  <li><Icon icon="list" /> <a href="/nl/document/learn/create">Nieuw document maken</a></li>
-  <li><Icon icon="book" /> <a href="/nl/document/templates/variables/index">Sjabloonvariabelen</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Inleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/document/learn/index">Inleiding</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Handleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/document/learn/create">Nieuw document maken</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referentie</span>
+  </div>
+  <ul>
+    <li><a href="/nl/document/templates/variables/index">Sjabloonvariabelen</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Verzoeken">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/nl/request/learn/index">Inleiding</a></li>
-  <li><Icon icon="list" /> <a href="/nl/request/learn/create">Verzoek maken</a></li>
-  <li><Icon icon="list" /> <a href="/nl/request/learn/accept">jkheid voor verzoeken opeisen</a></li>
-  <li><Icon icon="list" /> <a href="/nl/request/learn/reply">Klant beantwoorden</a></li>
-  <li><Icon icon="list" /> <a href="/nl/knowledge-base/learn/reply-templates/create">Werken met antwoordsjablonen</a></li>
-  <li><Icon icon="book" /> <a href="/nl/request/learn/index">Verzoekscherm</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Inleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/request/learn/index">Inleiding</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Handleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/request/learn/create">Verzoek maken</a></li>
+    <li><a href="/nl/request/learn/accept">jkheid voor verzoeken opeisen</a></li>
+    <li><a href="/nl/request/learn/reply">Klant beantwoorden</a></li>
+    <li><a href="/nl/knowledge-base/learn/reply-templates/create">Werken met antwoordsjablonen</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referentie</span>
+  </div>
+  <ul>
+    <li><a href="/nl/request/learn/index">Verzoekscherm</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Verkoop en dashboard">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/nl/sale/learn/index">Inleiding</a></li>
-  <li><Icon icon="compass" /> <a href="/nl/sale/learn/forecasting">Prognoses</a></li>
-  <li><Icon icon="compass" /> <a href="/nl/sale/learn/sales-targets/index">Verkooptargets</a></li>
-  <li><Icon icon="compass" /> <a href="/nl/dashboard/learn/index">Dashboard</a></li>
-  <li><Icon icon="list" /> <a href="/nl/sale/learn/create">Verkoop maken</a></li>
-  <li><Icon icon="list" /> <a href="/nl/sale/learn/stakeholders/create">Belanghebbenden toevoegen</a></li>
-  <li><Icon icon="list" /> <a href="/nl/sale/learn/sales-guides">Verkoopgids</a></li>
-  <li><Icon icon="list" /> <a href="/nl/dashboard/learn/create">Een nieuw dashboard maken</a></li>
-  <li><Icon icon="list" /> <a href="/nl/dashboard/learn/working-with-tiles">Werken met tegels</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Inleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/sale/learn/index">Inleiding</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="compass" />
+    <span>Gerelateerd</span>
+  </div>
+  <ul>
+    <li><a href="/nl/sale/learn/forecasting">Prognoses</a></li>
+    <li><a href="/nl/sale/learn/sales-targets/index">Verkooptargets</a></li>
+    <li><a href="/nl/dashboard/learn/index">Dashboard</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Handleiding</span>
+  </div>
+  <ul>
+    <li><a href="/nl/sale/learn/create">Verkoop maken</a></li>
+    <li><a href="/nl/sale/learn/stakeholders/create">Belanghebbenden toevoegen</a></li>
+    <li><a href="/nl/sale/learn/sales-guides">Verkoopgids</a></li>
+    <li><a href="/nl/dashboard/learn/create">Een nieuw dashboard maken</a></li>
+    <li><a href="/nl/dashboard/learn/working-with-tiles">Werken met tegels</a></li>
+  </ul>
+</div>
 
 </Card>
 
