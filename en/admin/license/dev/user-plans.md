@@ -16,8 +16,6 @@ index: true
 language: en
 ---
 
-# How user plans are constructed
-
 ## User plans in version 10-11
 
 User plans come in two tiers: Essential and Premium
@@ -135,4 +133,4 @@ You should keep this flexibility in mind when integrating with specific features
 [2]: ./module-licenses
 [3]: ../crm-suite
 
-[img1]: ../../../../media/loc/en/admin/licenses-prereq.png
+[img1]: /media/loc/en/admin/licenses-prereq.png

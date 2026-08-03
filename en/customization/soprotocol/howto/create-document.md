@@ -12,8 +12,6 @@ redirect_from: /en/ui/soprotocol/howto/create-document
 language: en
 ---
 
-# Create document
-
 The soprotocol should be on the format: ```soprotocol:document.main[new=true]?appointment_id=0&...other args...```
 
 Refer to the [document arguments](#document-arguments) for full list of available properties/args.

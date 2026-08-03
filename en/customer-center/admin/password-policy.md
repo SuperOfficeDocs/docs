@@ -2,19 +2,17 @@
 uid: help-en-service-global-preferences-customer-centre-password
 title: Password policy for the Customer Centre
 description: Global preferences for Customer centre password policy
+keywords: Service, settings
 author: SuperOffice RnD
 date: 03.29.2023
-keywords: Service, settings
 content_type: concept
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from: /en/admin/preferences/learn/global-preferences/password
+index: true
+language: en
 ---
-
-# Password policy for the Customer Centre
 
 Go to <i class="ph ph-gear" aria-hidden="true"></i> **Preferences** in the navigator and select the tab **Global Preferences**. The section for **Customer Centre password policy** contains the following options:
 

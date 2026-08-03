@@ -1,6 +1,6 @@
 ---
 uid: contact-overview
-title: Working with persons
+title: Contact (person)
 description: SuperOffice view of the world and working with persons. The associate database table represents employees, resources, and other users - except for external persons.
 keywords: person, contact, associate, blob
 author: Bergfrid Skaara Dias
@@ -13,9 +13,8 @@ redirect_from:
   - /en/contact/overview
   - /en/contact/howto/index
   - /en/contact/reference/index
+language: en
 ---
-
-# Contact (person)
 
 ![Edit person dialog -screenshot][img1]
 
@@ -155,28 +154,28 @@ Without the link record, the picture will not appear.
 * [Raw SQL queries][29]
 * [Addresses][6]
 
-[1]: ../../document/index.yml
-[2]: ../../diary/index.yml
-[3]: ../../project/index.yml
-[4]: ../../sale/index.yml
-[5]: ../../company/index.yml
-[6]: ../../api/localization/address/index
+[1]: ../../document/index
+[2]: ../../diary/index
+[3]: ../../project/index
+[4]: ../../sale/index
+[5]: ../../company/index
+[6]: /en/api/localization/address/index
 
-[10]: ../../automation/crmscript/howto/contact/index
-[11]: ../../database/getting-started#the-main-tables
-[12]: ../../database/tables/associate
-[13]: ../../database/tables/binaryobject
-[14]: ../../database/tables/binaryobjectlink
+[10]: /en/automation/crmscript/howto/contact/index
+[11]: /en/database/getting-started#the-main-tables
+[12]: /en/database/tables/associate
+[13]: /en/database/tables/binaryobject
+[14]: /en/database/tables/binaryobjectlink
 
-[19]: ../../api/caching/associate-cache
-[21]: ../../api/web-services/howto/contact/get-person-image-rest
-[22]: ../../api/web-services/howto/contact/update-person-image-rest
-[23]: ../../api/web-services/howto/contact/display-person-image-ws
-[24]: ../../api/web-services/howto/contact/display-image-from-blob-table-services
-[25]: ../../api/web-services/howto/contact/index
-[26]: ../../api/entities/howto/contact/index
-[27]: ../../api/rows/howto/contact/index
-[28]: ../../api/osql/howto/contact/index
-[29]: ../../api/sql/howto/contact/index
+[19]: /en/api/caching/associate-cache
+[21]: /en/api/web-services/howto/contact/get-person-image-rest
+[22]: /en/api/web-services/howto/contact/update-person-image-rest
+[23]: /en/api/web-services/howto/contact/display-person-image-ws
+[24]: /en/api/web-services/howto/contact/display-image-from-blob-table-services
+[25]: /en/api/web-services/howto/contact/index
+[26]: /en/api/entities/howto/contact/index
+[27]: /en/api/rows/howto/contact/index
+[28]: /en/api/osql/howto/contact/index
+[29]: /en/api/sql/howto/contact/index
 
-[img1]: ../../../media/loc/en/contact/edit-person.png
+[img1]: /media/loc/en/contact/edit-person.png

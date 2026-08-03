@@ -1,16 +1,16 @@
 ---
-title: Accessing the script
 uid: access-crmscript
+title: Accessing the script from the Customer Centre
+sidebarTitle: "Accessing the script"
 description: Accessing the script from the Customer Centre
+keywords: Customer Center, CEP
 author: SuperOffice Product and Engineering
 date: 03.16.2023
-keywords: Customer Center, CEP
 content_type: howto
 audience: settings
 index: true
+language: en
 ---
-
-# Accessing the script from the Customer Centre
 
 When you create a script, 2 fields allow you to access the script from the Customer Centre: **Include name** and **Key**. They will allow you to identify and authenticate access to the script. The idea is that by knowing these two values, you are allowed to execute the script in the Customer Centre with this URL:
 

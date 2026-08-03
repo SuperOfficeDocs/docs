@@ -8,11 +8,9 @@ date: 12.10.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: en
 redirect_from: /en/document/learn/template-variables
+language: en
 ---
-
-# Template variables
 
 Template variables are used to insert data from SuperOffice into emails, quotes, meeting notifications, document templates, and so on. You can use template variables to personalize and automate the input of customer data (or data from contact, sale and other) into your content and set up complex quotes
 

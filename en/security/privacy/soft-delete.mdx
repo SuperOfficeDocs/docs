@@ -1,15 +1,14 @@
 ---
-title: Soft delete
 uid: soft_delete
+title: Soft delete
 description: Soft delete
+keywords:
 author: Marek Vokáč, Eivind Fasting
 date: 09.25.2024
-keywords:
 content_type: concept
 index: true
+language: en
 ---
-
-# Soft delete
 
 Soft delete means that instead of deleting a record physically from the database, it is marked as deleted instead. Rows that have NULL or our beginning-of-time value (which in SuperOffice is 1.1.1760) are considered active; rows that have a different date are considered deleted.
 
@@ -232,21 +231,21 @@ For users, it means that delete operations can be undone. For DBAs, the deep del
 
 [1]: ../../learn/basics/deleting-elements#restore
 [2]: ../../admin/preferences/service-settings
-[3]: ../../online/mirroring/overview
-[4]: ../../onsite/travel/index
-[5]: ../../database/tables/enums/ticketbasestatus
-[6]: ../../database/tables/ticket
-[7]: ../../database/tables/ej-message
-[8]: ../../database/tables/ticket-log
-[9]: ../../database/tables/ticket-log-action
-[10]: ../../database/tables/ticket-log-action
-[11]: ../../database/tables/ticket-customers
-[12]: ../../database/tables/favourite
-[13]: ../../database/tables/message-header
-[14]: ../../database/tables/ticket-attachment
-[15]: ../../database/tables/attachment
-[16]: ../../database/tables/invoice-entry
-[17]: ../../database/tables/message-customers
-[18]: ../../api/archive-providers/reference/recyclecontact
-[19]: ../../api/archive-providers/reference/recycleperson
-[20]: ../../api/archive-providers/reference/recycleticket
+[3]: /en/online/mirroring/overview
+[4]: /en/onsite/travel/index
+[5]: /en/database/tables/enums/ticketbasestatus
+[6]: /en/database/tables/ticket
+[7]: /en/database/tables/ej-message
+[8]: /en/database/tables/ticket-log
+[9]: /en/database/tables/ticket-log-action
+[10]: /en/database/tables/ticket-log-action
+[11]: /en/database/tables/ticket-customers
+[12]: /en/database/tables/favourite
+[13]: /en/database/tables/message-header
+[14]: /en/database/tables/ticket-attachment
+[15]: /en/database/tables/attachment
+[16]: /en/database/tables/invoice-entry
+[17]: /en/database/tables/message-customers
+[18]: /en/api/archive-providers/reference/recyclecontact
+[19]: /en/api/archive-providers/reference/recycleperson
+[20]: /en/api/archive-providers/reference/recycleticket

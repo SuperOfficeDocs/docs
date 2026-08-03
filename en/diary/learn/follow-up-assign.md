@@ -1,6 +1,6 @@
 ---
 uid: help-en-follow-up-assign
-title: Assign a follow-up
+title: Delegate
 description: Assign a follow-up to someone else
 keywords: assign follow-up, delegate follow-up, diary, follow-up, assign, delegate
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Delegate
 
 An assigned follow-up is one you have delegated to someone else.
 

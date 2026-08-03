@@ -12,8 +12,6 @@ redirect_from: /en/ui/soprotocol/howto/open-document
 language: en
 ---
 
-# Open document
-
 The soprotocol should be on the format: ```soprotocol:document.main?document_id={{id}}```
 
 ## Open document with ID = 1000

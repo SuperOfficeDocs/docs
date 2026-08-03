@@ -1,6 +1,7 @@
 ---
 uid: help-en-creating-shortcuts-to-entries-in-crm
-title: Creating shortcuts to entries in CRM
+title: Create shortcuts to entries in SuperOffice CRM
+sidebarTitle: "Create shortcuts"
 description: Creating shortcuts to entries in CRM
 keywords: copy shortcut
 author: SuperOffice Product and Engineering
@@ -10,11 +11,9 @@ content_type: concept
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-language: en
 redirect_from: /en/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm
+language: en
 ---
-
-# Create shortcuts to entries in SuperOffice CRM
 
 You can create shortcuts to an entry in SuperOffice CRM, for example, a contact, a follow-up, a sale, or a screen. Other internal users can click this shortcut to get quickly to the entry in question.
 

@@ -13,8 +13,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Add or change a project image
-
 The **Image** tab allows you to upload and manage images for a project.
 
 ![Project card with project image -screenshot][img1]
@@ -53,4 +51,4 @@ The **Image** tab allows you to upload and manage images for a project.
     * Click **OK** and **Save** to reset to the default image.
     * Or, upload/select a new image, then click **OK** and **Save** to apply the changes.
 
-[img1]: ../../../media/loc/en/project/project-image.png
+[img1]: /media/loc/en/project/project-image.png

@@ -14,8 +14,6 @@ redirect_from:
 language: en
 ---
 
-# Open follow-up
-
 The soprotocol should be on the format: ```soprotocol:appointment.main?appointment_id={{id}}```
 
 ## How to open the follow-up dialog
@@ -32,5 +30,5 @@ To view the follow-up in the context of the diary, use SoProtocol to navigate to
 
 ![diary-context-screenshot][img2]
 
-[img1]: ../../../../media/loc/en/customization/soprotocol-appointment-default.png
-[img2]: ../../../../media/loc/en/customization/soprotocol-appointment-diary.png
+[img1]: /media/loc/en/customization/soprotocol-appointment-default.png
+[img2]: /media/loc/en/customization/soprotocol-appointment-diary.png

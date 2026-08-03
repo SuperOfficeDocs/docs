@@ -49,8 +49,8 @@ When working with documents, data will often intersect with the following entiti
 [3]: ./services-configure-access
 [4]: ./rest-add-document-template
 [5]: ./rest-generate-document
-[10]: ../../../../sale/index.yml
-[11]: ../../../../project/index.yml
-[17]: ../../../../company/index.yml
-[18]: ../../../../contact/index.yml
-[19]: ../../../../diary/index.yml
+[10]: ../../../../sale/index
+[11]: ../../../../project/index
+[17]: ../../../../company/index
+[18]: ../../../../contact/index
+[19]: ../../../../diary/index

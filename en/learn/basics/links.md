@@ -10,13 +10,11 @@ content_type: howto
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-language: en
 redirect_from:
   - /en/project/learn/add-links
   - /en/diary/learn/linking-documents-to-follow-ups
+language: en
 ---
-
-# Links
 
 Use the **Links** tab to connect relevant activities, sales, projects, documents, or websites to a record. For example, if you are going to a meeting with a company you have previously communicated with, you can add links to documents and sales you have already created for this company.
 
@@ -92,4 +90,4 @@ When creating or editing a follow-up or document, you can add links as follows:
 [7]: ../section-tabs/contacts-tab
 [8]: ../../search-options/learn/find-screen
 
-[img1]: ../../../media/loc/en/diary/links.png
+[img1]: /media/loc/en/diary/links.png

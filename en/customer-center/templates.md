@@ -6,11 +6,10 @@ keywords: Customer Center, CEP
 author: SuperOffice Product and Engineering
 date: 07.10.2024
 content_type: howto
-audience: settings
 deployment: onsite
+audience: settings
+language: en
 ---
-
-# Customer center templates
 
 The templates are located inside the SuperOffice database. To edit one, you simply open it in a text editor. What the various templates do is described in the [Customer Center configuration][1].
 

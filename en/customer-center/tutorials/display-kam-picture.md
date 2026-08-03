@@ -1,15 +1,15 @@
 ---
-title: Display the KAM's picture
 uid: display_kam_picture
+title: How to display the key account manager's picture
+sidebarTitle: "Display KAM picture"
 description: Get person image and display in the customer center
+keywords: Customer Center
 author: SuperOffice Product and Engineering
 date: 06.24.2016
-keywords: Customer Center
 content_type: tutorial
 index: true
+language: en
 ---
-
-# How to display the key account manager's picture
 
 Encoding of binary data is normally behind the scenes. In CRMScript, it is represented as an array of Byte objects.
 

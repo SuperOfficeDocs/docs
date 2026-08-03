@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Use board view in selections
-
 Board view presents your [selection][2] in a column-based layout using cards. You can group and filter the selection members (records shown on the board), and use drag-and-drop to move cards between groups.
 
 The functionality is the same across supported entities: you can drag cards, open task menus, and adjust board settings. The available grouping and filtering fields vary depending on whether you are working with company, contact, sales, projects, or requests.
@@ -251,17 +249,17 @@ Use grouping creatively to organize and act on data efficiently.
 [18]: ../../../project/admin/project-status
 [19]: ../../../project/admin/project-type
 
-[img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
-[img2]: ../../../../media/loc/en/search-options/board-view.png
-[img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png
-[img4]: ../../../../media/loc/en/search-options/board-view-card-edit-icon.png
-[img5]: ../../../../media/loc/en/search-options/board-view-card-task-menu.png
-[img6]: ../../../../media/loc/en/search-options/board-view-settings.png
-[img7]: ../../../../media/loc/en/search-options/board-view-settings-group-by.png
-[img8]: ../../../../media/loc/en/search-options/board-view-settings-filter.png
-[img9]: ../../../../media/loc/en/search-options/board-view-filter-toolbar.png
-[img10]: ../../../../media/loc/en/search-options/board-view-filter-on-sale-type.png
-[img11]: ../../../../media/loc/en/search-options/board-view-summarized-sale-amount-per-column.png
-[img12]: ../../../../media/loc/en/search-options/selection-board-view-project-preview.png
-[img13]: ../../../../media/loc/en/search-options/board-view-settings-for-sales.png
-[img14]: ../../../../media/loc/en/search-options/sale-date-badge-setting.png
+[img1]: /media/loc/en/search-options/board-view-toggle.png
+[img2]: /media/loc/en/search-options/board-view.png
+[img3]: /media/loc/en/search-options/board-view-preview-contact-on-hover.png
+[img4]: /media/loc/en/search-options/board-view-card-edit-icon.png
+[img5]: /media/loc/en/search-options/board-view-card-task-menu.png
+[img6]: /media/loc/en/search-options/board-view-settings.png
+[img7]: /media/loc/en/search-options/board-view-settings-group-by.png
+[img8]: /media/loc/en/search-options/board-view-settings-filter.png
+[img9]: /media/loc/en/search-options/board-view-filter-toolbar.png
+[img10]: /media/loc/en/search-options/board-view-filter-on-sale-type.png
+[img11]: /media/loc/en/search-options/board-view-summarized-sale-amount-per-column.png
+[img12]: /media/loc/en/search-options/selection-board-view-project-preview.png
+[img13]: /media/loc/en/search-options/board-view-settings-for-sales.png
+[img14]: /media/loc/en/search-options/sale-date-badge-setting.png

@@ -16,8 +16,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# View chat statistics
-
 The chat statistics can be used to improve the overall communication and agents' performance, as well as shorten the response time. You can view them in the **Dashboard** tab in the **Chat** screen.
 
 ![In the Chat Dashboard tab, you have a section showing the statistics of incoming chats -screenshot][img1]
@@ -58,5 +56,5 @@ Double-click a row in the **Ongoing chat sessions** list to listen in on (watch)
 [1]: ./respond
 [2]: ../../dashboard/learn/create
 
-[img1]: ../../../media/loc/en/chat/chat-dashboard-statistics.png
-[img2]: ../../../media/loc/en/chat/chat-dashboard.png
+[img1]: /media/loc/en/chat/chat-dashboard-statistics.png
+[img2]: /media/loc/en/chat/chat-dashboard.png

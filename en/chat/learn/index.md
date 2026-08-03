@@ -13,11 +13,9 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
-language: en
 redirect_from: /en/chat/learn/screen/index
+language: en
 ---
-
-# Chat
 
 The **Chat** feature in SuperOffice allows your support agents and sales people to communicate with and help existing or potential customers and other people via the chat widget on your website. This feature can for instance be used for service/support and pre-sales. You can easily integrate[FAQ][1], documents/attachments, and [templates][3] with the chat, letting your agents save time by using pre-defined texts to speed up their answers.
 
@@ -97,4 +95,4 @@ If the customer is found in SuperOffice, you can show contact information, reque
 [11]: ./create-request
 [12]: ./transfer-to-agent
 
-[img1]: ../../../media/loc/en/chat/10-chat-mainpage.png
+[img1]: /media/loc/en/chat/10-chat-mainpage.png

@@ -1,6 +1,7 @@
 ---
 uid: help-en-email-change-default-client
 title: Change default email client in SuperOffice
+sidebarTitle: "Change default mail client"
 description: How to change default email client in SuperOffice
 keywords: email setup, preferred email client, default email client, mail client, e-mail client, email client settings
 author: Bergfrid Dias
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Change default email client in SuperOffice
 
 1. In the top bar, click <i class="ph ph-user-circle" aria-label="Personal settings"></i> and select **Local settings**.
 1. In the **Email client** field, select your preferred email client.
@@ -29,4 +28,4 @@ language: en
 
 [1]: ../inbox/learn/setup
 
-[img1]: ../../../media/loc/en/email/local-settings-email-client.png
+[img1]: /media/loc/en/email/local-settings-email-client.png

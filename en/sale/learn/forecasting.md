@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Monitor your pipeline and forecast sales
-
 To reach your sales goals, it is important to maintain a healthy pipeline. SuperOffice CRM provides two main ways to forecast sales and monitor progress: **dashboard tiles** and **selections (Find)**.
 
 These tools help you identify gaps, highlight stalled deals, and compare your actual sales to your targets-whether you work individually or in a group.
@@ -86,7 +84,7 @@ To demonstrate how you can use the Find feature for sales forecasting, here is a
 [6]: ../../search-options/selection/learn/howto/display-as-charts
 [7]: ../../dashboard/learn/show-sales-targets
 
-[img1]: ../../../media/loc/en/sale/forecasting.png
-[img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
-[img8]: ../../../media/loc/en/search-options/find-screen.png
-[img9]: ../../../media/loc/en/search-options/find-sale.png
+[img1]: /media/loc/en/sale/forecasting.png
+[img7]: /media/loc/en/search-options/typical-sale-searches.png
+[img8]: /media/loc/en/search-options/find-screen.png
+[img9]: /media/loc/en/search-options/find-sale.png

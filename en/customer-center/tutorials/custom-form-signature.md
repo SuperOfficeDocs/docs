@@ -1,15 +1,14 @@
 ---
 uid: custom-form-signature
-title: Custom form - Signature
+title: Custom form with signature
 description: Custom form in Customer Centre with Signature
+keywords: CRMScript, Customer Center
 author: kronicz
 date: 01.20.2012
-keywords: CRMScript, Customer Center
 content_type: tutorial
 index: true
+language: en
 ---
-
-# Custom form with signature
 
 A typical business scenario for this could be an order form, perhaps shown on a tablet, where the customer would sign to confirm the order.
 

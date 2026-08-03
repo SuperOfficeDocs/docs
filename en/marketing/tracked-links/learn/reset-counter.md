@@ -7,16 +7,14 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Reset counters for links
 
 Sometimes, you need to reset the number of clicks back to zero. This would be the case, for example, after you have [sent out a test message][6], so that your own and others' clicking of links during testing are not included in your results.
 

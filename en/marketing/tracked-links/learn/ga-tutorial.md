@@ -1,22 +1,21 @@
 ---
 uid: help-en-mailing-google-analytics-tutorial
 title: Tutorial - simple Google Analytics email tracking
+sidebarTitle: "Google Analytics tutorial"
 description: In this tutorial, you will learn how to set up a Google Analytics account, create Links and Tracked Links in SuperOffice that will post results to Google Analytics, and display these results in Google Analytics.
 keywords: Marketing, mailing, Google Analytics, track
 author: Alex Pelan
 date: 09.26.2025
 version: 10.5
 content_type: tutorial
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Tutorial - simple Google Analytics email tracking
 
 *Blog post by Alex Pelan*
 
@@ -88,11 +87,11 @@ Start exploring the possibilities!
 [1]: http://analytics.google.com
 [2]: https://support.google.com/analytics/answer/1033867
 
-[img2]: ../../../../media/loc/en/marketing/new-account.png
-[img3]: ../../../../media/loc/en/marketing/setting-up-property.png
-[img4]: ../../../../media/loc/en/marketing/tracking-id.png
-[img5]: ../../../../media/loc/en/marketing/overview-right-now.png
-[img6]: ../../../../media/loc/en/marketing/so-trackable-links.png
-[img7]: ../../../../media/loc/en/marketing/generated-link.png
-[img8]: ../../../../media/loc/en/marketing/insert-url.png
-[img9]: ../../../../media/loc/en/marketing/google-analytics.png
+[img2]: /media/loc/en/marketing/new-account.png
+[img3]: /media/loc/en/marketing/setting-up-property.png
+[img4]: /media/loc/en/marketing/tracking-id.png
+[img5]: /media/loc/en/marketing/overview-right-now.png
+[img6]: /media/loc/en/marketing/so-trackable-links.png
+[img7]: /media/loc/en/marketing/generated-link.png
+[img8]: /media/loc/en/marketing/insert-url.png
+[img9]: /media/loc/en/marketing/google-analytics.png

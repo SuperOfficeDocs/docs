@@ -15,8 +15,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Set up sales targets
-
 Keep track of your budgets by setting up sales targets. This will help you to set the right expectations, plan your growth, increase motivation and save time.
 
 ![The Targets dialog gives you an overview of your current and previous sales targets -screenshot][img1]
@@ -141,7 +139,7 @@ To view the revision history for a sales target (row), click <i class="ph ph-lis
 
 [2]: ../../../dashboard/learn/show-sales-targets
 
-[img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
-[img2]: ../../../../media/loc/en/sale/target-line-menu.png
-[img3]: ../../../../media/loc/en/sale/target-adjust-number.png
-[img4]: ../../../../media/loc/en/sale/filter-targets-by-dimension.png
+[img1]: /media/loc/en/sale/targets-dialog-group-expanded.png
+[img2]: /media/loc/en/sale/target-line-menu.png
+[img3]: /media/loc/en/sale/target-adjust-number.png
+[img4]: /media/loc/en/sale/filter-targets-by-dimension.png

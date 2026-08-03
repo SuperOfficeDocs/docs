@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
 redirect_from: /en/request/learn/status/index
 index: true
+language: en
 ---
-
-# Request status
 
 All requests that are registered in SuperOffice have a status, such as **Open**, **Closed** or **Postponed**. Select **Request** in the navigator and in the **Request status** tab, you can see the request statuses already defined in the system, and create additional request statuses. A request status must be linked to one of the system's internal statuses, such as **Open** or **Closed**. Each internal status must be linked to at least one request status.
 

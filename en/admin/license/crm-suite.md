@@ -16,8 +16,6 @@ index: true
 language: en
 ---
 
-# SuperOffice CRM Suite
-
 SuperOffice CRM Suite provides a single, integrated CRM platform that covers sales, marketing, and service. All users in your organization share one plan, and the plan determines which features are available across your entire organization.
 
 ## Plans {#plans}
@@ -107,4 +105,4 @@ Organizations migrating from **SuperOffice CRM Online** (the module-based subscr
 [2]: ./user-plans
 [3]: ./activate
 
-[img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png
+[img1]: /media/loc/en/admin/licenses-suite-core-with-upgrade.png

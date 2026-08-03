@@ -10,11 +10,9 @@ content_type: concept
 category: customization
 topic: soprotocol
 redirect_from: /en/ui/soprotocol/index
-language: en
 index: true
+language: en
 ---
-
-# SoProtocol
 
 **SOProtocol** is a standard for defining URL short-cuts to SuperOffice entities. It lets you control the user interface without scripting and send users directly to the desired screen.
 
@@ -90,7 +88,7 @@ To simplify executing `soprotocol` through a webpanel hosted inside of SuperOffi
 * [Open existing project][11]
 * [Create new project][12]
 
-[1]: ../../ui/web-app/pagebuilder/superstate/index
+[1]: /en/ui/web-app/pagebuilder/superstate/index
 [2]: ./navigation-points
 [4]: ./in-crmscript
 
@@ -108,4 +106,4 @@ To simplify executing `soprotocol` through a webpanel hosted inside of SuperOffi
 
 [13]: https://github.com/SuperOffice/DevNet/tree/master/CrossMessaging
 
-[img3]: ../../../media/loc/en/customization/soprotocol-copy-shortcut.png
+[img3]: /media/loc/en/customization/soprotocol-copy-shortcut.png

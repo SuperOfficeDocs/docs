@@ -7,16 +7,14 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /en/marketing/tracked-links/learn/add-tracked-link-to-msg
 language: en
 ---
-
-# Add tracked links to message
 
 By setting up links that direct readers to various content on your website you can collect registrations, responses and monitor what products, offers and news your customers are interested in.
 
@@ -58,4 +56,4 @@ If you later decide you want to track these links also, select the **Track all l
 [5]: ../../tracked-links/learn/create-links
 [6]: ../../tracked-links/learn/define-link-actions
 
-[img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png
+[img2]: /media/loc/en/marketing/tracked-links-in-editor.png

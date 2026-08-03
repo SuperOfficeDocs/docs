@@ -2,15 +2,14 @@
 uid: email-soinbox
 title: SuperOffice Inbox
 description: SuperOffice Inbox
+keywords: email
 author: Bergfrid Dias
 date: 03.21.2024
-keywords: email
 content_type: concept
 redirect_from: /en/email/inbox/index
 index: true
+language: en
 ---
-
-# SuperOffice Inbox
 
 SuperOffice Inbox (the integrated email client).
 [How to configure your email setup in SuperOffice Inbox][5]
@@ -157,10 +156,10 @@ Yet to be completed, please submit your experiences
 
 Read section [Mail logging][1].
 
-[1]: ../../../onsite/debug/web-client
+[1]: /en/onsite/debug/web-client
 [2]: https://cs.superoffice.com/scripts/customer.fcgi?_sf=0&custSessionKey=&customerLang=en&noCookies=true&action=viewKbEntry&id=166
 [3]: https://cs.superoffice.com/
-[4]: ../../../api/config/mail
+[4]: /en/api/config/mail
 [5]: ../learn/index
 [6]: https://www.codetwo.com/kb/upn/#exchange
 [7]: https://www.codetwo.com/kb/upn/#office-365

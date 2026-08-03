@@ -13,8 +13,6 @@ audience_tooltip: SuperOffice Service
 language: en
 ---
 
-# Using requests in tiles
-
 Dashboards provide an instant overview of requests and request statistics in SuperOffice. You can customize the tiles to show the information that is most relevant to you as a service agent. You can also [create your own dashboards][1] with the tiles/charts of your choice.
 
 It is common practice to start your day getting an overview of the current status of the open requests in your service system. For example, you can choose to show unassigned requests in one of the tiles. This way, you can get a quick overview of the requests that have not yet been processed. You might also like to get an overview of the requests you are handling at the moment, which can be presented to you in a table.
@@ -74,4 +72,4 @@ Lists requests that no-one is assigned responsibility for. To [take responsibili
 [6]: ../../request/learn/index#request-mgt
 [7]: ./working-with-tiles
 
-[img1]: ../../../media/loc/en/request/service-dashboard.png
+[img1]: /media/loc/en/request/service-dashboard.png

@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/request/learn/howto/split-message
+language: en
 ---
-
-# Split message
 
 If a message contains two issues that should be handled separately, you can split the message in two and create a new request with one of the messages. This can be relevant if a message contains both a technical question and an invoice question, because these two issues are handled by two different departments.
 

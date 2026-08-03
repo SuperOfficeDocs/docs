@@ -1,6 +1,7 @@
 ---
 uid: sop-custom-objects
 title: How to work with custom objects using SoProtocol
+sidebarTitle: "Custom objects via SoProtocol"
 description: How to show or create a custom object with or without prefilled values using SoProtocol.
 keywords: soprotocol, custom object
 author: Michel Krohn-Dale
@@ -17,8 +18,6 @@ redirect_from:
   - /en/ui/soprotocol/howto/custom-object
 language: en
 ---
-
-# How to work with custom objects using SoProtocol
 
 You can create a new [custom object][1] from for instance a button or link added in the Screen designer. Here are examples of how to accomplish this by using SoProtocol.
 

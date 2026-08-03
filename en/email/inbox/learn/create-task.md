@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Create task
-
 You can quickly create a follow-up task (todo) based on an email message in the SuperOffice inbox. The new task is automatically linked to the sender, and you can also connect it to a project, sale, or other context.
 
 ## Steps
@@ -51,4 +49,4 @@ You can quickly create a follow-up task (todo) based on an email message in the 
 [3]: ../../../diary/learn/create-follow-up#fields
 [4]: ../../../diary/learn/follow-ups
 
-[img1]: ../../../../media/loc/en/email/inbox-create-task.png
+[img1]: /media/loc/en/email/inbox-create-task.png

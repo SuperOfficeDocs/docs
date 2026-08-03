@@ -2,8 +2,8 @@
 uid: help-en-recurrence-stop
 title: Stop repeating follow-up
 description: Stop repeating follow-up
-author: Bergfrid Dias
 keywords: stop repeating, future instances, repeating follow-up, repeat, recur, frequency, schedule, pattern, diary, follow-up
+author: Bergfrid Dias
 date: 01.13.2025
 version: 10.5
 content_type: howto
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Stop repeating follow-up
 
 ## Stop repeating (keep this instance)
 
@@ -50,4 +48,4 @@ You can also stop a repeating follow-up by selecting it in the diary and deletin
 [1]: ./create
 [2]: ../edit-follow-up#repeat
 
-[img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png
+[img1]: /media/loc/en/diary/delete-repeating-fo.png

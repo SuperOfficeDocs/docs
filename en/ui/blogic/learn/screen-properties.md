@@ -2,14 +2,12 @@
 uid: help-en-service-screen-properties
 title: Screen properties
 description: Screen properties
+keywords: screen
 author: SuperOffice RnD
 date: 06.29.2022
-keywords: screen
 content_type: reference
 language: en
 ---
-
-# Screen properties
 
 Here you can edit the properties of a screen. You can create a script to precalculate variables, possibly based on CGI variables that the screen obtains via a URL, or on a form entry in the current screen or another screen.
 

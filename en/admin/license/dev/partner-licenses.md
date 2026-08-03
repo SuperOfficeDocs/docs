@@ -16,8 +16,6 @@ index: true
 language: en
 ---
 
-# Partner licenses
-
 Partners can host their own license server and install their own licenses alongside the SuperOffice licenses.
 
 This involves:

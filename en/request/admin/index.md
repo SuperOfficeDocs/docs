@@ -1,6 +1,6 @@
 ---
 uid: help-en-service-settings
-title: System settings
+title: Different settings for Service
 description: System settings
 keywords: Service
 author: digitaldiina
@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
 redirect_from: /en/request/learn/admin/index
 index: true
+language: en
 ---
-
-# Different settings for Service
 
 In this section, you can configure the settings for Service to tailor it to your organization's needs. Which options are displayed and what you can do depend on the rights assigned in your user profile. Rights are assigned under **Users**.
 

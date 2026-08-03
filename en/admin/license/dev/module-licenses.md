@@ -16,8 +16,6 @@ index: true
 language: en
 ---
 
-# Module licenses
-
 The license system uses three main database tables:
 
 * [ModuleOwner][4] - an issuer of licenses. Initially only one row (SuperOffice). Contains global expiration dates.
@@ -119,8 +117,8 @@ The sum of licenses assigned to any particular module is limited to the number i
 
 [2]: <xref:SuperOffice.License.SoLicenseNames>
 [3]: ./hidden-licenses
-[4]: ../../../database/tables/ModuleOwner
-[5]: ../../../database/tables/ModuleLicense
-[6]: ../../../database/tables/LicenseAssocLink
+[4]: /en/database/tables/ModuleOwner
+[5]: /en/database/tables/ModuleLicense
+[6]: /en/database/tables/LicenseAssocLink
 
-[img1]: ../../../../media/loc/en/admin/licenses-prereq.png
+[img1]: /media/loc/en/admin/licenses-prereq.png

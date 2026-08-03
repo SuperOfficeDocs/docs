@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/request/learn/howto/accept
+language: en
 ---
-
-# Accept (take responsibility for) request
 
 This is particularly relevant for unassigned requests (those without a defined owner). To take over a request, it is important to follow the procedures below to identify that you have claimed it. Otherwise there is a risk of others answering the request at the same time.
 
@@ -58,4 +56,4 @@ If you need more information before accepting, or use [Get next request in queue
 [5]: ./close
 [6]: ../admin/next-in-queue
 
-[img2]: ../../../media/loc/en/request/requests-accept.png
+[img2]: /media/loc/en/request/requests-accept.png

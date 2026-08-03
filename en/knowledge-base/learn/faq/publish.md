@@ -7,18 +7,16 @@ author: SuperOffice Product and Engineering
 date: 06.29.2022
 version: 10.5
 content_type: howto
-category: service
-topic: faq
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
+category: service
+topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/faq/learn/publish
+language: en
 ---
-
-# Publish FAQ entries
 
 When a request handler [creates a suggestion for an FAQ entry][1], it is unpublished and unavailable in SuperOffice Customer Centre. To make it available, a person with FAQ administration rights must publish it.
 

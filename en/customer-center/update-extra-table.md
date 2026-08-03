@@ -1,16 +1,16 @@
 ---
-title: Update an extra table
 uid: update-extra-table
+title: Update an extra table from the Customer Center
+sidebarTitle: "Update an extra table"
 description: Update an extra table from the Customer Center
+keywords: Customer Center, CEP
 author: SuperOffice Product and Engineering
 date: 03.16.2023
-keywords: Customer Center, CEP
 content_type: howto
-audience: settings
 deployment: onsite
+audience: settings
+language: en
 ---
-
-# Update an extra table from the Customer Center
 
 Writing to extra tables from the Customer center is done by using the parser functions extraTableUpdate and extraTableInsert. The functions take the table ID and the values to write as parameters. In addition `extraTableUpdate` takes the ID of the row that is to be updated.
 

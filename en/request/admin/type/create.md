@@ -11,12 +11,10 @@ license: servicepremium
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
 redirect_from: /en/request/learn/type/create
 index: true
+language: en
 ---
-
-# Create request type
 
 ## Steps
 
@@ -52,5 +50,5 @@ index: true
 [4]: ../status/index
 [5]: ../../../knowledge-base/learn/reply-templates/index
 
-[img1]: ../../../../media/loc/en/request/add-request-type.png
-[img3]: ../../../../media/loc/en/request/edit-request-type-values.png
+[img1]: /media/loc/en/request/add-request-type.png
+[img3]: /media/loc/en/request/edit-request-type-values.png

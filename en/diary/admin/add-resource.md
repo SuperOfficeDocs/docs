@@ -10,14 +10,12 @@ content_type: howto
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /en/admin/lists/learn/resource
   - /en/admin/lists/learn/adding-items-to-resource-list
+index: true
 language: en
 ---
-
-# Add resource
 
 Resources such as meeting rooms and projectors are defined in the **Lists** screen in Settings and maintenance. The types are displayed as items in the **General - Resource** list. Resources are displayed in the **Follow-up** dialog in SuperOffice CRM.
 

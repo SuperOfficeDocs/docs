@@ -1,6 +1,7 @@
 ---
 uid: sop-request-management
-title: How to work with Requests
+title: How to work with Requests using SoProtocol
+sidebarTitle: "Requests via SoProtocol"
 description: How to work with Requests with SoProtocol
 keywords: soprotocol, requests
 author: Tony Yates, Egidijus Mazeika
@@ -15,8 +16,6 @@ redirect_from:
   - /en/ui/soprotocol/howto/requests
 language: en
 ---
-
-# How to work with Requests using SoProtocol
 
 The soprotocol should be on the format: ```soprotocol:ticket.new?<optional list of arguments>```
 

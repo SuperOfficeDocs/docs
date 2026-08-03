@@ -11,12 +11,10 @@ category: Marketing
 topic: SMS
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from: /en/service/sms/index
+index: true
+language: en
 ---
-
-# SMS connectors
 
 You can use the Messaging agent with [CRMScript][3] to send SMS messages through a connector without configuring anything in SuperOffice.
 
@@ -45,7 +43,7 @@ Even if the plugin only supports sending SMS, you must still configure this mail
 * [About SMS mailboxes][5]
 
 [1]: ../../mailing/admin/define-settings-for-mailings#sms
-[3]: ../../../automation/crmscript/index
+[3]: /en/automation/crmscript/index
 [4]: ./set-up
 [5]: ../../../email/admin/mailbox/index#sms-in
 [6]: ../../../email/admin/mailbox/create-sms-mailbox

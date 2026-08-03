@@ -8,18 +8,16 @@ date: 07.10.2025
 version: 10.5
 content_type: reference
 tier: core
+category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
-category: customization
-index: true
-language: en
 redirect_from:
   - /en/admin/learn/screen/package-properties
   - /en/admin/learn/package-properties
   - /en/customization/admin/index
+index: true
+language: en
 ---
-
-# Package properties
 
 In <i class="ph ph-selection-all" aria-hidden="true"></i> **System design** and the **Packages** tab you can edit the properties and content of a package. If it is an unlocked installed package, you can also specify what should be installed. If the package was created in this system, you can add and remove items, depending on what you want to include in the package. If the package was created in another system but uploaded to this system, in this screen you can select which parts you want to be installed - assuming the package isn't locked.
 

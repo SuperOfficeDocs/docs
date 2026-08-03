@@ -12,14 +12,12 @@ category: Settings and maintenance
 topic: options
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /en/admin/options/learn/number-allocation/index
   - /en/admin/options/learn/number-allocation/configure
+index: true
 language: en
 ---
-
-# Specifying number allocation
 
 The way a counter works is to increase the value of the field by 1 each time a new instance of it is used. For example, if the first company you create in the database is allocated the value 10001 in the **Number** field, then the nineteenth company is allocated the value **10019**.
 

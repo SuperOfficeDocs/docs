@@ -7,15 +7,13 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Add subscription links
 
 When sending a newsletter, it is essential to provide recipients with the option to unsubscribe or modify their [subscription preferences][1]. This can be achieved by incorporating a clickable link.
 
@@ -52,4 +50,4 @@ You do, however, have the possibility to override "no consent / no subscription"
 [2]: ../../tracked-links/learn/index#ex
 [1]: ../../recipients/learn/manage-email-subscriptions
 
-[img4]: ../../../../media/loc/en/marketing/insert-edit-link-unsubscribe-mailing.png
+[img4]: /media/loc/en/marketing/insert-edit-link-unsubscribe-mailing.png

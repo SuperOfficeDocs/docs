@@ -13,8 +13,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# The More tab
-
 The **More** tab in SuperOffice CRM allows users to view and manage custom fields for various entities, including companies, contacts, sales, projects, follow-ups, and documents. This customization feature helps you capture specific information unique to your organization's needs, enhancing the flexibility of your CRM.
 
 Custom fields in the **More** tab make it easier for your organization to track additional details such as hardware owned by contacts, employee turnover, or any custom data that is not available by default in SuperOffice CRM.
@@ -68,5 +66,5 @@ Click <i class="ph ph-pencil-simple" aria-label="Edit"></i> to update the inform
 [3]: ../admin/create-extra-field
 [4]: ../../customization/screen-designer/admin/add-layout
 
-[img6]: ../../../media/loc/en/sale/sale-more.png
-[img4]: ../../../media/loc/en/project/project-more.png
+[img6]: /media/loc/en/sale/sale-more.png
+[img4]: /media/loc/en/project/project-more.png

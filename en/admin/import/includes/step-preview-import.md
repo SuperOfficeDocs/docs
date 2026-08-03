@@ -10,7 +10,7 @@
     | ![Icon - person changed][img4] | The contact already exists and will be updated. |
     | empty | No updating. |
 
-[img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
-[img2]: ../../../../media/icons/admin/import-preview-icon-company-changed.png
-[img3]: ../../../../media/icons/admin/import-preview-icon-person-new.png
-[img4]: ../../../../media/icons/admin/import-preview-icon-person-changed.png
+[img1]: /media/icons/admin/import-preview-icon-company-new.png
+[img2]: /media/icons/admin/import-preview-icon-company-changed.png
+[img3]: /media/icons/admin/import-preview-icon-person-new.png
+[img4]: /media/icons/admin/import-preview-icon-person-changed.png

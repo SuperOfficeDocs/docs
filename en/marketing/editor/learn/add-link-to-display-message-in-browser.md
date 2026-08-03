@@ -1,21 +1,20 @@
 ---
 uid: help-en-mailing-open-in-browser
 title: Add a link to display the message in a browser
+sidebarTitle: "Add view-in-browser link"
 description: Add a link to display the message in a browser
 keywords: Marketing, link, mailing
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Add a link to display the message in a browser
 
 If the recipient has problems displaying the message in their email program (maybe images aren't displayed, for example), or prefers to read the message in a browser, you can add a link to display the message as a web page. Links of this type are normally placed at the top of the message.
 

@@ -1,16 +1,14 @@
 ---
 uid: help-en-customer-center-faq
-title: Publish FAQs to the Customer Center
+title: Publish FAQs to the Customer centre
 description: In this how-to guide, you will learn how to publish FAQs in the Customer Center.
+keywords: FAQ, Customer Center
 author: Bergfrid Dias
 date: 06.10.2026
-keywords: FAQ, Customer Center
 content_type: howto
 tier: growth
 language: en
 ---
-
-# Publish FAQs to the Customer centre
 
 FAQs (frequently asked questions) published in the Customer centre is a very convenient way for your customers to get answers to their questions 24/7.
 
@@ -31,4 +29,4 @@ Your customers can even access these FAQs through the Customer centre (web porta
 [3]: ../../knowledge-base/learn/faq/publish
 [2]: ./config
 
-[img1]: ../../../media/loc/en/customer-center/set-up-a-faq.png
+[img1]: /media/loc/en/customer-center/set-up-a-faq.png

@@ -7,16 +7,14 @@ author: Bergfrid Dias, Trude Lien Smedbråten
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: flows
 license: marketingpremium
 tier: plus
+category: marketing
+topic: flows
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Flow participants
 
 ## Steps
 
@@ -82,5 +80,5 @@ In a split, participants follow the first (leftmost) branch where they meet the 
 * Add to flow: Indicates that this contact is proposed for enrollment in another flow.
 * Remove from flow: Removes all record of the contact's participation in the current flow.
 
-[img1]: ../../../../media/loc/en/marketing/flow-participants.png
-[img2]: ../../../../media/loc/en/marketing/flow-participant-columns.png
+[img1]: /media/loc/en/marketing/flow-participants.png
+[img2]: /media/loc/en/marketing/flow-participant-columns.png

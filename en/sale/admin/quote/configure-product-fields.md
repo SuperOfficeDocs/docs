@@ -1,6 +1,7 @@
 ---
 uid: help-en-product-fields-configure
 title: Configure fields in the Add/edit product dialog
+sidebarTitle: "Configure product fields"
 description: Learn how to control which fields appear in the Add/edit product dialog and how they behave.
 keywords: Configure product dialog, Add/edit product dialog, configure product, product dialog, product field, product, quote
 author: Bergfrid Dias
@@ -11,12 +12,10 @@ license: salespremium
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from: /en/quote/learn/admin/product/configure
+index: true
+language: en
 ---
-
-# Configure fields in the Add/edit product dialog
 
 Use the **Configure product** dialog to control which fields are shown when users add or edit a product in a quote. You can show or hide fields, change labels, define tooltips, and make fields editable and/or mandatory.
 
@@ -74,4 +73,4 @@ These settings apply globally to all quote connector ERP connections and affect 
 [1]: ./price-list-and-products
 [2]: ../../learn/quote/create#add-products
 
-[img1]: ../../../../media/loc/en/sale/configure-product-dialog.png
+[img1]: /media/loc/en/sale/configure-product-dialog.png

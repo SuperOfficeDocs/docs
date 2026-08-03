@@ -8,18 +8,16 @@ date: 06.11.2026
 version: 12.0
 content_type: reference
 tier: starter
-audience: settings
-audience_tooltip: Settings and maintenance
 category: identity management
 topic: role
-index: true
+audience: settings
+audience_tooltip: Settings and maintenance
 redirect_from:
   - /en/admin/user-preferences/reference/cripple
   - /en/admin/user-management/learn/role/functional-rights
+index: true
 language: en
 ---
-
-# Functional rights in SuperOffice
 
 Using [role-based security][3], we can [customize roles][2] to give access to different functions of SuperOffice CRM.
 

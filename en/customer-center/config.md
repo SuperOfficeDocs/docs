@@ -1,16 +1,15 @@
 ---
-title: Configuration
 uid: customer-senter-config
+title: Customer center configuration
 description: Customer center configuration
+keywords: Customer Center, CEP, parser variable
 author: SuperOffice Product and Engineering
 date: 03.16.2023
-keywords: Customer Center, CEP, parser variable
-audience: settings
 content_type: reference
+audience: settings
 index: true
+language: en
 ---
-
-# Customer center configuration
 
 The templates in the customer care center are also built up using the [parser variables][1]. Simple changes can be done using the parser variables, but if you are to do more advanced changes, you should consider using CRMScript, which is far more powerful and can coexist with parser variables.
 

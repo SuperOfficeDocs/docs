@@ -7,16 +7,14 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: en
 ---
-
-# Create tracked link
 
 You can create trackable URLs in the **Tracked links** tab. These links will then be available when you and other users edit the contents of your mailings. This allows for efficient tracking of user interaction with the emails.
 

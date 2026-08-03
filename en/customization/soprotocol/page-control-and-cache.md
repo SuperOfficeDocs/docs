@@ -12,8 +12,6 @@ redirect_from: /en/ui/soprotocol/page-control-and-cache
 language: en
 ---
 
-# Page control and cache
-
 ## Windows only
 
 | Mode     | Description                              |

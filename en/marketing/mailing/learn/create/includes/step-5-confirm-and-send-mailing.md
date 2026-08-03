@@ -32,4 +32,4 @@ To stop the mailing or start a planned mailing ahead of schedule, click the **St
 
 [1]: ../../view-statistics
 
-[img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png
+[img4]: /media/loc/en/marketing/send-or-schedule.png

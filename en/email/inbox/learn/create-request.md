@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Create request
-
 You can create a new request in SuperOffice Service based on the sender and contents of an email message. The request is automatically linked to the correct company and contact if recognized.
 
 ## Steps
@@ -47,4 +45,4 @@ You can create a new request in SuperOffice Service based on the sender and cont
 [3]: ../../../request/learn/index
 [4]: ../../../request/learn/create#fields
 
-[img1]: ../../../../media/loc/en/email/inbox-create-request.png
+[img1]: /media/loc/en/email/inbox-create-request.png

@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Follow-ups you are invited to
-
 Attendees who are invited to a follow-up will receive a notification.
 
 ![Receive invitations -screenshot][img2]
@@ -46,4 +44,4 @@ Attendees who are invited to a follow-up will receive a notification.
 
 [1]: ../../../learn/basics/notifications#activity
 
-[img2]: ../../../../media/loc/en/learn/core-notifications.png
+[img2]: /media/loc/en/learn/core-notifications.png

@@ -7,16 +7,14 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+functional_right: general administrator
 license: serviceessentials
 tier: starter
-functional_right: general administrator
 audience: person
 audience_tooltip: SuperOffice Service
-language: en
 redirect_from: /en/request/learn/howto/edit-message
+language: en
 ---
-
-# Edit message
 
 Only users with the *general administrator* functional right can edit the properties of a message in a request. However, it is not possible to edit the text of the message.
 

@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# Add stakeholders
-
 When adding stakeholders to a sale, you can either assign roles individually as you add contacts/companies, assign roles after adding all stakeholders, or use a combination of both methods.
 
 A company/contact can be added as a stakeholder multiple times, provided different roles are specified each time.
@@ -74,7 +72,7 @@ A company/contact can be added as a stakeholder multiple times, provided differe
 [4]: ../../admin/sale-type
 [5]: ../../../admin/lists/update-items
 
-[img5]: ../../../../media/loc/en/sale/add-stakeholders-from-history.png
-[img6]: ../../../../media/loc/en/sale/add-stakeholders-from-group.png
-[img7]: ../../../../media/loc/en/sale/add-stakeholders-from-company.png
-[img8]: ../../../../media/loc/en/sale/set-stakeholder-role.png
+[img5]: /media/loc/en/sale/add-stakeholders-from-history.png
+[img6]: /media/loc/en/sale/add-stakeholders-from-group.png
+[img7]: /media/loc/en/sale/add-stakeholders-from-company.png
+[img8]: /media/loc/en/sale/set-stakeholder-role.png

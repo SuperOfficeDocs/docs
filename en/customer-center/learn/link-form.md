@@ -1,18 +1,16 @@
 ---
 uid: help-en-customer-centre-form
-title: How to link a web form to the Customer centre
+title: Use web forms in your Customer centre
 description: In this how-to guide, you will learn how to use a web form.
+keywords: form, Customer Center
 author: Bergfrid Dias
 date: 03.20.2023
-keywords: form, Customer Center
 content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 language: en
 ---
-
-# Use web forms in your Customer centre
 
 You can use integrated web forms to capture information from the customers who visit your Customer centre and automatically save this information in SuperOffice.
 
@@ -53,7 +51,7 @@ When a customer completes this form, the information and details will automatica
 [3]: ../../marketing/forms/learn/create
 [2]: ./config
 
-[img1]: ../../../media/loc/en/customer-center/form-element.png
-[img2]: ../../../media/loc/en/customer-center/custom-form.png
-[img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png
-[img4]: ../../../media/loc/en/customer-center/web-form-on-the-contact-us-page.jpg
+[img1]: /media/loc/en/customer-center/form-element.png
+[img2]: /media/loc/en/customer-center/custom-form.png
+[img3]: /media/loc/en/customer-center/custcenter-choose-form.png
+[img4]: /media/loc/en/customer-center/web-form-on-the-contact-us-page.jpg

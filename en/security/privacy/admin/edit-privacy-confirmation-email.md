@@ -7,17 +7,15 @@ author: Bergfrid Dias
 date: 12.19.2024
 version: 10
 content_type: howto
-tier: starter
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
-index: true
 redirect_from: /en/security/privacy/learn/edit-privacy-confirmation-email
+index: true
+language: en
 ---
-
-# Edit privacy confirmation email
 
 According to the GDPR, individuals have the "right to be informed". This means that they are entitled to be notified either in advance or within 30 days after that their personal details have been collected. The GDPR stipulates that individuals are entitled to be informed (a) that an organization intends to store their personal data, and (b) what the organization intends to use their data for.
 

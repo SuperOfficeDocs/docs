@@ -1,6 +1,6 @@
 ---
 uid: help-en-fastsearcher-navigator
-title: FastSearcher in Navigator
+title: Using FastSearcher in the Navigator
 description: How to use FastSearcher in the Navigator in SuperOffice
 keywords: search, FastSearcher
 author: Bergfrid Dias
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# Using FastSearcher in the Navigator
 
 1. Click the word **Company**, **Contact**, **Sale**, **Project**, **Request**, or **Selection** in the Navigator on the left of the window. An empty field is displayed at the top. Below this is a [list of records you have previously worked with][1].
 
@@ -38,6 +36,6 @@ The Navigator FastSearcher runs two parallel searches:
 * You can search for a contact in the FastSearcher field for **Companies** in the Navigator.
 
 [1]: ../../learn/basics/history
-[2]: ../../../en/api/osql/soundx
+[2]: /en/api/osql/soundx
 
-[img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png
+[img1]: /media/loc/en/search-options/search-find-fastsearcher.png
