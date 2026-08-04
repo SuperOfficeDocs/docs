@@ -2,7 +2,7 @@
 uid: help-de-in-app-help
 title: In-App-Hilfe verwenden
 description: In-App-Hilfe in SuperOffice CRM for Web verwenden
-keywords: Hilfe, In-App, In-App
+keywords: ['Hilfe', 'In-App']
 author: SuperOffice RnD
 date: 01.25.2023
 content_type: concept

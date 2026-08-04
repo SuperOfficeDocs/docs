@@ -2,7 +2,7 @@
 uid: help-de-selection-generate-follow-ups
 title: Folgeaufgaben erstellen
 description: Folgeaufgaben erstellen
-keywords: Selektion
+keywords: ['Selektion']
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3

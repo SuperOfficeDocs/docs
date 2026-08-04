@@ -2,7 +2,7 @@
 uid: help-de-customer-center-faq
 title: FAQs im Kundenzentrum veröffentlichen
 description: "In dieser Anleitung lernen Sie, wie Sie FAQs im Kundenzentrum veröffentlichen können."
-keywords: FAQ, Kundenzentrum
+keywords: ['FAQ', 'Kundenzentrum']
 author: Bergfrid Dias
 date: 06.10.2026
 content_type: howto

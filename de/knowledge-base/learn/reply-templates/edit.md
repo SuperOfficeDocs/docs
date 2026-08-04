@@ -2,7 +2,7 @@
 uid: help-de-reply-template-edit
 title: Antwortvorlagen bearbeiten oder löschen
 description: Antwortvorlagen bearbeiten oder löschen
-keywords: Antwortvorlage bearbeiten, Antwortvorlage löschen, Antwortvorlage, Vorlage
+keywords: ['Antwortvorlage bearbeiten', 'Antwortvorlage löschen', 'Antwortvorlage', 'Vorlage']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

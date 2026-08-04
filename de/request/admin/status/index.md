@@ -2,7 +2,7 @@
 uid: help-de-request-status
 title: Anfragestatus
 description: Anfragestatus
-keywords: Anfragestatus, Anfragestatus-Registerkarte, Anfrage, Status
+keywords: ['Anfragestatus', 'Anfragestatus-Registerkarte', 'Anfrage', 'Status']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

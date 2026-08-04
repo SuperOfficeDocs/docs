@@ -2,7 +2,7 @@
 uid: help-de-knowledge-base
 title: Wissensdatenbank
 description: Wissensdatenbank
-keywords: Anfrage, Wissensdatenbank
+keywords: ['Anfrage', 'Wissensdatenbank']
 author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5

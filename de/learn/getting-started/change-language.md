@@ -2,7 +2,7 @@
 uid: help-de-language-change
 title: Aktive Sprache ändern
 description: Aktive Sprache ändern
-keywords: Sprache ändern, Aktive Sprache
+keywords: ['Sprache ändern', 'Aktive Sprache']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

@@ -2,7 +2,7 @@
 uid: help-de-notes
 title: Notizen machen
 description: Notizen machen
-keywords: Notiz-Registerkarte, Notiz machen, Notiz erstellen, Notiz, Notizblock
+keywords: ['Notiz-Registerkarte', 'Notiz machen', 'Notiz erstellen', 'Notiz', 'Notizblock']
 author: SuperOffice RnD
 date: 02.11.2025
 version: 10.5.2

@@ -2,7 +2,7 @@
 uid: help-de-chat-statistics
 title: Chat-Statistik anzeigen
 description: In dieser Anleitung erfahren Sie, wie Sie Chat-Statistiken sowohl in einem Dashboard als auch auf dem Chat-Bildschirm anzeigen können.
-keywords: Chat-Statistik, Chat-Dashboard
+keywords: ['Chat-Statistik', 'Chat-Dashboard']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

@@ -2,7 +2,7 @@
 uid: help-de-email-inbox-create-task
 title: Aufgabe erstellen
 description: Erfahren Sie, wie Sie in SuperOffice CRM basierend auf einer E-Mail-Nachricht eine Aufgabe erstellen
-keywords: Aufgabe, Folgeaufgabe, E-Mail archivieren, Posteingang, Aufgabe erstellen, Aufgabe aus E-Mail, E-Mail
+keywords: ['Aufgabe', 'Folgeaufgabe', 'E-Mail archivieren', 'Posteingang', 'Aufgabe erstellen', 'Aufgabe aus E-Mail', 'E-Mail']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

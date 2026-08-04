@@ -2,7 +2,7 @@
 uid: help-de-translate-fields
 title: Übersetzung
 description: Felder in SuperOffice übersetzen
-keywords: Übersetzung, übersetzen
+keywords: ['Übersetzung', 'übersetzen']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

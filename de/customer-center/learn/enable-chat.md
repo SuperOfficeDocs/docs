@@ -2,7 +2,7 @@
 uid: help-de-customer-center-chat
 title: Chat mit Ihrem Kundenzentrum verbinden
 description: "In dieser Anleitung lernen Sie, wie Sie einen Chat-Kanal mit Ihrem Kundenzentrum verbinden."
-keywords: Chat, Kundenzentrum
+keywords: ['Chat', 'Kundenzentrum']
 author: Bergfrid Dias
 date: 02.22.2023
 content_type: howto

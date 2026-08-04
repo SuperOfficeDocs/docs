@@ -2,7 +2,7 @@
 uid: help-de-utm-parameters
 title: UTM-Parameter
 description: UTM-Parameter
-keywords: UTM-Parameter, Link, Kampagne, Tracking, SuperOffice Marketing
+keywords: ['UTM-Parameter', 'Link', 'Kampagne', 'Tracking', 'SuperOffice Marketing']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

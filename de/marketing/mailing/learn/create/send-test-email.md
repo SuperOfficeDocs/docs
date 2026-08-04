@@ -3,7 +3,7 @@ uid: help-de-mailing-send-test
 title: Test-E-Mail für E-Mail-Kampagnen und Formularantworten senden
 sidebarTitle: "Test-E-Mail senden"
 description: In dieser Anleitung lernen Sie, wie Sie eine Testkampagne senden.
-keywords: Test-E-Mail
+keywords: ['Test-E-Mail']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

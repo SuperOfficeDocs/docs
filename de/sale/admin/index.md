@@ -3,7 +3,7 @@ uid: help-de-sale-configuration
 title: Verwaltung von Verkaufstypen, -stufen und -leitfäden
 sidebarTitle: "Verwaltung"
 description: Erfahren Sie, wie Sie Verkaufsprozesse in SuperOffice CRM mit Verkaufstypen, -stufen und -leitfäden verwalten. Konfigurieren Sie diese Werkzeuge in Einstellungen und Verwaltung, um Nachverfolgung, Aufgaben und Dokumentation zu standardisieren.
-keywords: Verkaufsleitfaden, Verkaufsstufe, Verkaufstyp, Workflow, Verkauf
+keywords: ['Verkaufsleitfaden', 'Verkaufsstufe', 'Verkaufstyp', 'Workflow', 'Verkauf']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

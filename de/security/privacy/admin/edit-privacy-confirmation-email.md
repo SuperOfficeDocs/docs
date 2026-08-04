@@ -3,7 +3,7 @@ uid: help-de-edit-privacy-confirmation-email
 title: E-Mail zur Datenschutzbestätigung bearbeiten
 sidebarTitle: "Bestätigungsmail"
 description: In dieser Anleitung lernen Sie, wie Sie die E-Mail für die Datenschutzbestätigung bearbeiten können.
-keywords: E-Mail zur Datenschutzbestätigung, E-Mail Vorlage
+keywords: ['E-Mail zur Datenschutzbestätigung', 'E-Mail Vorlage']
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10

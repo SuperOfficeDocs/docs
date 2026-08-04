@@ -2,7 +2,7 @@
 uid: help-de-fastsearcher-dialog
 title: Schnellsuche in Dialogfeldern verwenden
 description: Schnellsuche in Dialogfeldern verwenden im SuperOffice
-keywords: suche, Schnellsuche, dialog
+keywords: ['suche', 'Schnellsuche', 'dialog']
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2

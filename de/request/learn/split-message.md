@@ -2,7 +2,7 @@
 uid: help-de-request-message-split
 title: Nachricht aufteilen
 description: Nachricht aufteilen
-keywords: Anfrage, Nachricht aufteilen, neue Anfrage erstellen, Nachrichten trennen
+keywords: ['Anfrage', 'Nachricht aufteilen', 'neue Anfrage erstellen', 'Nachrichten trennen']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

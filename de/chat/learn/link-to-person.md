@@ -2,7 +2,7 @@
 uid: help-de-chat-link-to-person
 title: Chat mit bestehender Person verknüpfen
 description: Wenn ein Kunde eine Anfrage über das Chat-Widget auf der Website sendet, ist es nicht nur wichtig, darauf zu antworten, sondern sie auch auf seiner Personenkarte zu erfassen.
-keywords: chat mit person verknüpfen, vorgeschlagene person, neue person erstellen
+keywords: ['chat mit person verknüpfen', 'vorgeschlagene person', 'neue person erstellen']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

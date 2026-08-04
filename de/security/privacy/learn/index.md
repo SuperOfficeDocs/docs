@@ -2,7 +2,7 @@
 uid: help-de-privacy
 title: Datenschutz
 description: Die Funktion Datenschutz in SuperOffice hilft Ihnen, die Daten Ihrer Kunden zu schützen und die Datenschutz-Grundverordnung (DSGVO) der EU einzuhalten.
-keywords: Datenschutz, DSGVO, E-Marketing, Einwilligung, Rechtsgrundlage
+keywords: ['Datenschutz', 'DSGVO', 'E-Marketing', 'Einwilligung', 'Rechtsgrundlage']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

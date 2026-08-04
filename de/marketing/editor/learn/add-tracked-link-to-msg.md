@@ -3,7 +3,7 @@ uid: help-de-mailing-add-tracked-link
 title: Überwachte Links zu einer Mitteilung hinzufügen
 sidebarTitle: "Überwachte Links"
 description: Es gibt zwei Möglichkeiten, Ihre Links einzurichten. Sie können entweder einen voreingestellten nachverfolgten Link verwenden, um Klicks über mehrere Kampagnen nachzuverfolgen, oder einen neuen Link einrichten, der nur in dieser Kampagne verfügbar ist. In dieser Anleitung lernen Sie, wie Sie einen überwachten Link hinzufügen.
-keywords: Marketing
+keywords: ['Marketing']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

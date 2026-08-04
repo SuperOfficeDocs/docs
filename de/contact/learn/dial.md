@@ -2,7 +2,7 @@
 uid: help-de-contact-dial
 title: Personen anrufen
 description: Personen anrufen; Telefoneinstellungen
-keywords: Kalender, Folgeaufgabe, Telefon, Anruf, Anrufen
+keywords: ['Kalender', 'Folgeaufgabe', 'Telefon', 'Anruf', 'Anrufen']
 author: digitaldiina
 date: 12.05.2025
 version: 11

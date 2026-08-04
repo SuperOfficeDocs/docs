@@ -2,7 +2,7 @@
 uid: help-de-package-properties-service
 title: Eigenschaften des Pakets
 description: Eigenschaften des Pakets
-keywords: Paket, Eigenschaften
+keywords: ['Paket', 'Eigenschaften']
 author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5

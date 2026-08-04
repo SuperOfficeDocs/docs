@@ -2,7 +2,7 @@
 uid: help-de-document-template
 title: Dokumentvorlage
 description: Dokumentvorlage
-keywords: Dokumentvorlage, Dokument, Vorlage
+keywords: ['Dokumentvorlage', 'Dokument', 'Vorlage']
 author: Bergfrid Dias
 date: 07.11.2024
 version: 10.3

@@ -3,7 +3,7 @@ uid: help-de-service-settings
 title: Unterschiedliche Einstellungen für Service
 sidebarTitle: "Serviceeinstellungen"
 description: Systemeinstellungen
-keywords: Service
+keywords: ['Service']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

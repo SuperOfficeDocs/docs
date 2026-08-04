@@ -2,7 +2,7 @@
 uid: help-de-template-variables-service
 title: Vorlagenvariablen (Service)
 description: Vorlagenvariablen
-keywords: Vorlagenvariable
+keywords: ['Vorlagenvariable']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

@@ -2,7 +2,7 @@
 uid: help-de-document-faq-publish
 title: FAQ-Einträge veröffentlichen
 description: FAQ-Einträge veröffentlichen
-keywords: FAQ
+keywords: ['FAQ']
 author: SuperOffice RnD
 date: 07.15.2025
 version: 10.5

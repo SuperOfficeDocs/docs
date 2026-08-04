@@ -3,7 +3,7 @@ uid: help-de-customer-centre-form
 title: Web-Formulare in Ihrem Kundenzentrum verwenden
 sidebarTitle: "Web-Formulare"
 description: "In dieser Anleitung lernen Sie, wie Sie ein Web-Formular verwenden."
-keywords: Formular, Kundenzentrum
+keywords: ['Formular', 'Kundenzentrum']
 author: Bergfrid Dias
 date: 03.20.2023
 content_type: howto

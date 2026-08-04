@@ -2,7 +2,7 @@
 uid: help-de-customer-center-subscription-page-styling
 title: Design der Abonnement-Seite
 description: So passen Sie das Design und den Text der Abonnementseite an Ihre Markenidentität an.
-keywords: Abonnementseite, Abmelden, Bestätigungsseite
+keywords: ['Abonnementseite', 'Abmelden', 'Bestätigungsseite']
 author: digitaldiina
 date: 03.17.2026
 version: 11.11

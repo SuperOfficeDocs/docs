@@ -3,7 +3,7 @@ uid: help-de-task-menu-add
 title: Objekte zur Liste Menü Aufgabe hinzufügen
 sidebarTitle: "Menü Aufgabe"
 description: Objekte zur Liste Menü Aufgabe hinzufügen
-keywords: Aufgabenmenü
+keywords: ['Aufgabenmenü']
 author: digitaldiina
 date: 05.04.2026
 version: 11.13
