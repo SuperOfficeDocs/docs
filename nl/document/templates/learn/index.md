@@ -8,11 +8,9 @@ date: 07.16.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: nl
 redirect_from: /nl/admin/lists/learn/document-template
+language: nl
 ---
-
-# Documentsjabloon
 
 Het is belangrijk voor het profiel van een organisatie dat brieven, faxen en andere documenten een duidelijke en uniforme vormgeving hebben. Dit betekent dat alle uitgaande documenten dezelfde lettertypen, marges, logo's, enzovoort moeten hebben. Door sjablonen speciaal voor uw organisatie te maken, zorgt u ervoor dat de contactpersonen van uw organisatie eenvoudig de correspondentie van uw organisatie herkennen.
 

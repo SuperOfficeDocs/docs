@@ -1,22 +1,21 @@
 ---
 uid: help-nl-mailing-add-google-analytics
 title: Uw Google Analytics-tag toevoegen aan een mailing
+sidebarTitle: "Google Analytics-tag"
 description: In deze handleiding leert u hoe u uw bezoekers kunt volgen.
 keywords: Marketing, koppelingen, Google Analytics, mailing, volgen
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: nl
 ---
-
-# Uw Google Analytics-tag toevoegen aan een mailing
 
 Met Google Analytics ingeschakeld kunt u websitebezoeken volgen van ontvangers die op de links in uw mailing klikken. De instelling voor Google Analytics-tracking is ingesteld op basis van elke mailing, waardoor u selectief specifieke mailings kunt volgen. Het is geen algemene instelling, wat u meer controle geeft over uw gegevensvolgstrategie.
 

@@ -7,15 +7,13 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: nl
 redirect_from: /nl/request/learn/status/create
 index: true
+language: nl
 ---
-
-# Verzoekstatus maken
 
 ## Stappen
 

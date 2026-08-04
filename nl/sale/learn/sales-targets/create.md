@@ -15,8 +15,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Verkooptargets instellen
-
 Houd uw budgetten bij door verkooptargets in te stellen. Dit helpt u om de juiste verwachtingen te scheppen, uw groei te plannen, de motivatie te vergroten en tijd te besparen.
 
 ![Het dialoogvenster targets geeft een overzicht van uw huidige en vorige verkooptargets -screenshot][img1]

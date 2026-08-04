@@ -8,14 +8,12 @@ date: 06.10.2026
 version: 12.0
 content_type: howto
 functional_right: general administrator
+tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: nl
 redirect_from: /nl/request/learn/howto/edit-message
+language: nl
 ---
-
-# Bericht bewerken
 
 Alleen gebruikers met de functionele rechten *general administrator* kunnen de eigenschappen van een bericht in een verzoek bewerken. Het is echter niet mogelijk om de tekst van het bericht te bewerken.
 

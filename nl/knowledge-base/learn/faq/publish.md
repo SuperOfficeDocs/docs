@@ -6,16 +6,14 @@ keywords: Veelgestelde vragen
 author: Bergfrid Dias
 date: 03.14.2025
 content_type: howto
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
 audience: person
 audience_tooltip: SuperOffice Service
-language: nl
 redirect_from: /nl/faq/learn/publish
+language: nl
 ---
-
-# Items in Veelgestelde vragen publiceren
 
 Wanneer een verzoekbehandelaar [een suggestie maakt voor een item in veelgestelde vragen][1], wordt deze niet gepubliceerd en niet beschikbaar in het SuperOffice Customer Center. Om het beschikbaar te maken, moet een persoon met beheerrechten voor veelgestelde vragen het publiceren.
 

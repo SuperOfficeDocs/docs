@@ -1,6 +1,6 @@
 ---
 uid: help-nl-service-settings
-title: Systeeminstellingen
+title: Verschillende instellingen voor Service
 description: Systeeminstellingen
 keywords: Service
 author: digitaldiina
@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: nl
 redirect_from: /nl/request/learn/admin/index
 index: true
+language: nl
 ---
-
-# Verschillende instellingen voor Service
 
 In deze sectie kunt u de instellingen voor Service configureren en aanpassen aan de eisen van uw bedrijf. Welke opties worden weergegeven en wat u kunt doen, is afhankelijk van de rechten die u zijn toegewezen in uw gebruikersprofiel. Rechten worden toegekend onder **Gebruikers**.
 

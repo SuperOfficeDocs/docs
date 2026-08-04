@@ -7,14 +7,12 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: nl
 redirect_from: /nl/request/learn/howto/split-message
+language: nl
 ---
-
-# Bericht opsplitsen
 
 Als een bericht twee kwesties bevat die afzonderlijk moeten worden behandeld, kunt u het bericht in tweeën splitsen en een nieuw verzoek maken met een van de berichten. Dit kan van belang zijn als een bericht zowel een technische vraag als een factureringsvraag bevat, omdat deze twee zaken worden behandeld door twee verschillende afdelingen.
 

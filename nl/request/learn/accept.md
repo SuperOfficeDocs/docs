@@ -1,6 +1,7 @@
 ---
 uid: help-nl-request-accept
 title: Verantwoordelijkheid voor verzoeken opeisen
+sidebarTitle: "Verzoek opeisen"
 description: Hoe een verzoek accepteren om te voorkomen dat iemand anders het tegelijkertijd beantwoordt.
 keywords: verzoek accepteren, accept, verantwoordelijkheid, verzoek eigenaar, volgend in wachtrij, verzoek
 author: digitaldiina
@@ -11,11 +12,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: nl
 redirect_from: /nl/request/learn/howto/accept
+language: nl
 ---
-
-# Verantwoordelijkheid voor verzoeken opeisen
 
 Dit is met name relevant bij niet-toegewezen verzoeken (verzoeken zonder gedefinieerde eigenaar). Om een verzoek over te nemen, moet u de onderstaande procedure volgen om aan te geven dat u de eigenaar bent. Anders bestaat het risico dat anderen het verzoek tegelijkertijd beantwoorden.
 

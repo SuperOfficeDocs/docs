@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Verzoek maken
-
 U kunt een nieuw verzoek maken in SuperOffice Service op basis van de afzender en de inhoud van een e-mailbericht. Het verzoek wordt automatisch gekoppeld aan het juiste bedrijf en de juiste persoon als deze herkend worden.
 
 ## Stappen

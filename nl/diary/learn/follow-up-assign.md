@@ -1,6 +1,6 @@
 ---
 uid: help-nl-follow-up-assign
-title: Toegewezen vervolgactiviteit
+title: Een vervolgactiviteit delegeren
 description: Een vervolgactiviteit aan iemand toewijzen
 keywords: agenda, vervolgactiviteit, uitnodiging, toewijzen
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: nl
 ---
-
-# Een vervolgactiviteit delegeren
 
 Een toegewezen vervolgactiviteit is een vervolgactiviteit die u hebt gedelegeerd naar iemand anders.
 

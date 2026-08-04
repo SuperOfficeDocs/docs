@@ -1,22 +1,21 @@
 ---
 uid: help-nl-mailing-add-tracked-link
-title: Links opnemen die u wilt traceren
+title: Gevolgde koppelingen toevoegen aan een bericht
+sidebarTitle: "Gevolgde koppelingen"
 description: Er zijn twee manieren om uw links in te stellen. U kunt een vooraf ingestelde bijgehouden koppeling gebruiken om klikken in verschillende mailings bij te houden of een nieuwe koppeling instellen die alleen beschikbaar is in deze mailing. Meer informatie over het toevoegen van een bijgehouden koppeling vindt u in deze handleiding.
 keywords: Marketing, mailing, gevolgde koppelingen
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /nl/marketing/tracked-links/learn/add-tracked-link-to-msg
 language: nl
 ---
-
-# Gevolgde koppelingen toevoegen aan een bericht
 
 Door koppelingen in te stellen die lezers naar verschillende inhoud op uw website leiden, kunt u registraties, reacties verzamelen en controleren in welke producten, aanbiedingen en nieuws uw klanten geïnteresseerd zijn.
 

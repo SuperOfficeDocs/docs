@@ -7,15 +7,13 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: nl
 ---
-
-# Een map maken
 
 Het is raadzaam een goede mapstructuur te definiëren voor een beter overzicht van uw mailings, formulieren, flows, sjablonen, koppelingen en afbeeldingen in SuperOffice Marketing.
 

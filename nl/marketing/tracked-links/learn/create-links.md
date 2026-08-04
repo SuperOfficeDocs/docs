@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: nl
 ---
-
-# Gevolgde links maken
 
 Je kunt traceerbare URL's aanmaken in het tabblad **Gevolgde links**. Deze links zijn dan beschikbaar wanneer jij en andere gebruikers de inhoud van je mailings bewerken. Dit maakt een efficiënte bijhouden van de gebruikersinteractie met de e-mails mogelijk.
 

@@ -10,8 +10,6 @@ tier: starter
 language: nl
 ---
 
-# Probleemoplossing
-
 ## Gebruik van sjabloonvariabelen in Microsoft 365-documenten
 
 Wanneer we een document in SuperOffice maken, halen we alle inhoud van het document als platte tekst op, die ons sjabloonvervangingssysteem gebruikt om sjabloonvariabelen te identificeren en te vervangen.

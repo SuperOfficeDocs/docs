@@ -7,13 +7,11 @@ author: SuperOffice RnD
 date: 03.14.2025
 version: 10.5.2
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: nl
 ---
-
-# Duplicaten
 
 Als u nieuwe bedrijven, projecten en selecties maakt, wordt automatisch op duplicaten gecontroleerd. De duplicaatcontrole zoekt naar identieke en vergelijkbare namen in de SuperOffice-database om te voorkomen dat records worden gemaakt die al bestaan in SuperOffice CRM (zoals bedrijven), en om te voorkomen dat records met zeer vergelijkbare namen worden gemaakt.
 

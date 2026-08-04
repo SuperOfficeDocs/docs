@@ -7,14 +7,12 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: concept
+tier: starter
 category: privacy
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: nl
 ---
-
-# Privacy
 
 De functie **Privacy** in SuperOffice helpt u de gegevensprivacy van uw klanten te beschermen en te voldoen aan de General Data Protection Regulation (GDPR) (Algemene verordening gegevensbescherming, AVG) van de EU.
 

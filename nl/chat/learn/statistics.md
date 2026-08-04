@@ -16,8 +16,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Chatstatistieken weergeven
-
 De chatstatistieken kunnen worden gebruikt om de algehele communicatie en de prestaties van agents te verbeteren en de reactietijd te verkorten. U kunt ze bekijken op het tabblad **Dashboard** in het **chatscherm**.
 
 ![Op het tabblad Chatdashboard hebt u een sectie met de statistieken van binnenkomend chats -screenshot][img1]

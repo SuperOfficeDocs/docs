@@ -7,15 +7,13 @@ author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5
 content_type: concept
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: nl
 redirect_from: /nl/chat/learn/admin/
 index: true
+language: nl
 ---
-
-# Chatbeheer
 
 Met de functie **Chatten** in SuperOffice kunnen uw ondersteuningsagents en verkoopmedewerkers chatten met klanten, potentiële klanten en andere mensen via een chatwidget/-venster op uw website. Deze functie kan bijvoorbeeld worden gebruikt voor service/ondersteuning en pre-sales en is makkelijk te integreren met Veelgestelde vragen, documenten/bijlagen en sjablonen. De chatfunctie kan worden ingesteld met meerdere chatkanalen voor verschillende onderwerpen, zoals technische ondersteuning, vragen over het product en verkoopondersteuning.
 

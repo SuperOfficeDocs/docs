@@ -1,22 +1,21 @@
 ---
 uid: help-nl-privacy-add-purpose
 title: Privacy-instellingen instellen voor AVG - Doel toevoegen
+sidebarTitle: "Doel toevoegen"
 description: Meer informatie over het instellen van de privacyinstellingen voor uw bedrijf.
 keywords: privacyinstelling, doel toevoegen, externe privacyverklaring
 author: SuperOffice Product and Engineering
 date: 09.01.2025
 version: 10.5
 content_type: howto
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Instellingen en onderhoud
-tier: starter
-language: nl
-index: true
 redirect_from: /nl/security/privacy/learn/admin/add-consent-purpose
+index: true
+language: nl
 ---
-
-# Privacy-instellingen instellen voor AVG - Doel toevoegen
 
 Ontdek hoe u doeleinden voor het verwerken van persoonsgegevens kunt toevoegen en bewerken, standaardinstellingen voor de rechtsgrondslag kunt activeren en de privacy-instellingen voor e-marketing in mailings kunt activeren.
 

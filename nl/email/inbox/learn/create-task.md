@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Taak maken
-
 U kunt snel een vervolgactiviteit (taak) maken op basis van een e-mailbericht in het SuperOffice Postvak IN. De nieuwe taak wordt automatisch gekoppeld aan de afzender en u kunt deze eventueel ook koppelen aan een project, verkoop of andere context.
 
 ## Stappen

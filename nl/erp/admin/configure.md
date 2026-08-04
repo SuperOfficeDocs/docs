@@ -11,7 +11,6 @@ license: development-tools
 tier: growth
 audience: settings
 audience_tooltip: Instellingen en onderhoud
-language: nl
 redirect_from:
   - /nl/quote/learn/admin/sync/sync-configure-default-values
   - /nl/quote/learn/admin/sync/sync-configure-field-allocation
@@ -19,9 +18,8 @@ redirect_from:
   - /nl/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab
   - /nl/quote/learn/admin/sync/sync-set-sync-priority
 index: true
+language: nl
 ---
-
-# ERP-verbinding configureren
 
 Nadat u een ERP-verbinding hebt toegevoegd, moet u configureren hoe gegevens worden gesynchroniseerd tussen SuperOffice en het ERP-systeem. Dit doet u via de knoppen onderaan het tabblad **Synchroniseren** in het scherm Offerte/Synchroniseren.
 

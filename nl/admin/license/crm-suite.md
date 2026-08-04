@@ -16,8 +16,6 @@ index: true
 language: nl
 ---
 
-# SuperOffice CRM Suite
-
 SuperOffice CRM Suite biedt één geïntegreerd CRM-platform voor verkoop, marketing en service. Alle gebruikers in uw organisatie delen één plan, en het plan bepaalt welke functies beschikbaar zijn in uw gehele organisatie.
 
 ## Plannen {#plans}

@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Bewaak je pijplijn en voorspel verkoop
-
 Om je verkoopdoelen te bereiken is het belangrijk om een gezonde pijplijn te hebben. SuperOffice CRM biedt twee hoofd­methoden om verkoop te prognosticeren en voortgang te volgen: **dashboardtegels** en **selecties (Zoeken)**.
 
 Met deze hulpmiddelen kun je hiaten identificeren, vastgelopen deals benadrukken en je werkelijke verkoop vergelijken met je doelen - of je nu individueel werkt of in een groep.

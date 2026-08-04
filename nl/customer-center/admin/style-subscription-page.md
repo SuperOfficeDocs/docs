@@ -7,15 +7,13 @@ author: digitaldiina
 date: 03.17.2026
 version: 11.11
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Instellingen en onderhoud
-tier: growth
-language: nl
-index: true
 redirect_from: /nl/customer-center/admin/index
+index: true
+language: nl
 ---
-
-# Stijl van abonnementspagina
 
 Via de abonnementspagina kunnen personen beheren welke mailings ze van uw bedrijf willen ontvangen. De pagina is gelinkt vanuit:
 

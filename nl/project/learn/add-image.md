@@ -1,19 +1,18 @@
 ---
 uid: help-nl-project-image-add
 title: Een projectafbeelding toevoegen of wijzigen
+sidebarTitle: "Projectafbeelding"
 description: Een projectafbeelding toevoegen of wijzigen
 keywords: tabblad Afbeelding, projectafbeelding, project
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: nl
 ---
-
-# Een projectafbeelding toevoegen of wijzigen
 
 Op het tabblad **Afbeelding** kunt u een afbeelding voor een project uploaden en beheren.
 

@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: nl
 redirect_from: /nl/request/learn/howto/flag-message
+language: nl
 ---
-
-# Berichten bijhouden
 
 Complexe verzoeken kunnen veel tijd in beslag nemen om op te lossen. Dit kan leiden tot veel communicatie tussen de klant en meerdere verzoekbehandelaars.
 

@@ -7,13 +7,11 @@ author: Bergfrid Skaara Dias
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: nl
 ---
-
-# Het tabblad Meer
 
 Het **tabblad Meer** in SuperOffice CRM stelt gebruikers in staat om door de gebruiker gedefinieerde velden voor verschillende entiteiten te bekijken en te beheren, waaronder bedrijven, personen, verkopen, projecten, vervolgactiviteiten en documenten. Deze aanpassingsfunctie helpt u specifieke informatie vast te leggen die uniek is voor de behoeften van uw organisatie, waardoor de flexibiliteit van uw CRM wordt vergroot.
 

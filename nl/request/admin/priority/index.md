@@ -7,15 +7,13 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: concept
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: nl
 redirect_from: /nl/request/learn/priority/index
 index: true
+language: nl
 ---
-
-# Verzoekprioriteiten
 
 Alle verzoeken die in SuperOffice zijn geregistreerd, worden toegewezen aan een prioriteit die het belang van het verzoek weerspiegelt.
 

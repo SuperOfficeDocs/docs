@@ -1,6 +1,7 @@
 ---
 uid: help-nl-invitation
-title: Vervolgactiviteiten met andere medewerkers maken
+title: Uw medewerkers uitnodigen voor een vervolgactiviteit
+sidebarTitle: "Medewerkers uitnodigen"
 description: Vervolgactiviteiten met andere medewerkers maken
 keywords: agenda, vervolgactiviteit, uitnodiging, weergegeven
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: nl
 ---
-
-# Uw medewerkers uitnodigen voor een vervolgactiviteit
 
 Uitnodigingen worden aangemaakt wanneer er bijeenkomsten of andere vergadering worden georganiseerd tussen verschillende leden van een bedrijf. Je nodigt verschillende collega's of bronnen uit om deel te nemen. Wanneer een uitnodiging geaccepteerd wordt, wordt deze weergegeven in de agenda van de gebruiker.
 

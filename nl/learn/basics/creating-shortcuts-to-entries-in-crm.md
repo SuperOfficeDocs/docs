@@ -1,20 +1,19 @@
 ---
 uid: help-nl-creating-shortcuts-to-entries-in-crm
-title: Snelkoppelingen maken naar items in CRM
+title: Snelkoppelingen maken naar items in SuperOffice CRM
+sidebarTitle: "Snelkoppelingen maken"
 description: Snelkoppelingen maken naar items in CRM
 keywords: snelkoppeling kopiëren
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: nl
 redirect_from: /nl/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm
+language: nl
 ---
-
-# Snelkoppelingen maken naar items in SuperOffice CRM
 
 U kunt snelkoppelingen maken naar een vermelding in SuperOffice CRM, bijvoorbeeld een contactpersoon, een vervolgactiviteit, een verkoop of een scherm. Andere interne gebruikers kunnen op deze snelkoppeling klikken om snel naar het betreffende item te gaan.
 
