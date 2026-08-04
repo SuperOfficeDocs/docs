@@ -25,6 +25,17 @@ use ahead of the remaining #165 rollout:
     per file, same as #179/#180.
   - Still assumes `mode: custom` pages should be skipped entirely (they
     render their own <h1> and have no frontmatter/H1 duplication to fix).
+  - The H1 detection regex (`^#\s+`) is not code-fence-aware. A `#`-prefixed
+    CLI/HTTP/Python comment line inside a fenced code block reads as a
+    heading. Harmless on a file's first run (the real H1 always sorts
+    first, gets stripped, comments are left alone) - BUT DO NOT re-run
+    this tool a second time on a folder already converted: with the real
+    H1 gone, the first leftover code-fence comment becomes the new
+    "first H1 match" and the tool will rewrite `title` to match a code
+    comment and delete that line from the sample. Confirmed harmless
+    only because every group in this repo was run exactly once; verify
+    by hand (or by "more than one H1" warnings before the real H1 was
+    stripped) before ever re-running on already-converted content.
 
 Usage:
     python tools/sync-title-h1.py <folder> [--dry-run]
