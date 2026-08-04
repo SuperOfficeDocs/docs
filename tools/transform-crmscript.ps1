@@ -452,21 +452,19 @@ foreach ($yamlFile in $yamlFiles) {
     # Escape internal double quotes by converting to single quotes and wrap in double quotes
     $firstPara = $firstPara -replace '"', "'"
     Add-Line $mdx (Build-Line @('description: "', $firstPara, '"'))
-    Add-Line $mdx (Build-Line @('keywords: CRMScript, ', $className, ', API reference'))
+    Add-Line $mdx (Build-Line @("keywords: ['CRMScript', '", $className, "', 'API reference']"))
     Add-Line $mdx 'author: SuperOffice Product and Engineering'
     Add-Line $mdx (Build-Line @('date: ', $existDate))
     Add-Line $mdx (Build-Line @('version: ', $existVer))
+    Add-Line $mdx 'generated: true'
     Add-Line $mdx 'content_type: reference'
     Add-Line $mdx 'language: en'
     Add-Line $mdx '---'
     Add-Line $mdx
-    
+
     # Handle Namespace vs Enum vs Class differently
     if ($isNamespace) {
         # Namespace format: list of child classes
-        Add-Line $mdx (Build-Line @('# Namespace ', $className))
-        Add-Line $mdx
-        
         if ($mainItem.summary) {
             Add-Line $mdx (Clean-Description $mainItem.summary)
             Add-Line $mdx
@@ -502,9 +500,6 @@ foreach ($yamlFile in $yamlFiles) {
         }
     } elseif ($isEnum) {
         # Enum format: show syntax and fields table
-        Add-Line $mdx (Build-Line @('# Enum ', $className))
-        Add-Line $mdx
-        
         if ($mainItem.summary) {
             Add-Line $mdx (Clean-Description $mainItem.summary)
             Add-Line $mdx
@@ -536,10 +531,7 @@ foreach ($yamlFile in $yamlFiles) {
         }
     } else {
         # Regular Class format
-        # Title and description
-        Add-Line $mdx (Build-Line @('# ', $className))
-        Add-Line $mdx
-        
+        # Description (title comes from frontmatter only, no H1 - see #165)
         if ($mainItem.summary) {
             Add-Line $mdx (Clean-Description $mainItem.summary)
             Add-Line $mdx
