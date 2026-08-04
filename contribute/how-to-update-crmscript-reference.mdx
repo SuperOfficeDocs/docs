@@ -21,7 +21,7 @@ Two tools do the work:
 * `tools/generate-crmscript-nav.ps1` lists the generated `.mdx` files and writes `config/nav-crmscript-ref.json`, the flat page array that `nav-en.json`'s **CRMScript Reference** tab pulls in as `$ref`.
 
 <Note>
-`transform-crmscript.ps1` always reprocesses every file in `api-sources/crmscript/` — there's no option to target a single file. It preserves each output file's existing `date` and `version` frontmatter by reading the current `.mdx` before overwriting it, so a file you didn't mean to touch should come out byte-identical. Run `git diff --stat` after every regeneration, and treat any change outside the file(s) you intended to edit as something to investigate, not something to commit blindly.
+`transform-crmscript.ps1` always reprocesses every file in `api-sources/crmscript/` — there's no option to target a single file. It preserves each output file's existing `date` and `version` frontmatter by reading the current `.mdx` before overwriting it, so a file you didn't mean to touch should come out byte-identical. Run `git diff --stat` after every regeneration, and treat any change outside the files you intended to edit as something to investigate, not something to commit blindly.
 </Note>
 
 ## Edit an existing method, property, or class
