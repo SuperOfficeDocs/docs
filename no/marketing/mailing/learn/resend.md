@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: no
 ---
-
-# Sende utsendelsen på nytt
 
 Hvis du etter å ha sett på resultatene av utsendelsen oppdager at mange av e-postadressene har blitt [returnert][1], betyr det at disse personene ikke har mottatt utsendelsen din. Etter at du har håndtert de returnerte e-postene, er det lurt å sende utsendelsen på nytt.
 

@@ -1,22 +1,21 @@
 ---
 uid: help-de-task-menu-add
 title: Objekte zur Liste Menü Aufgabe hinzufügen
+sidebarTitle: "Menü Aufgabe"
 description: Objekte zur Liste Menü Aufgabe hinzufügen
 keywords: Aufgabenmenü
 author: digitaldiina
 date: 05.04.2026
 version: 11.13
 content_type: howto
+tier: core
 category: customization
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-index: true
 redirect_from: /de/admin/lists/learn/add-items-to-task-menu
-tier: core
+index: true
 language: de
 ---
-
-# Objekte zur Liste Menü Aufgabe hinzufügen
 
 ## Schritte
 

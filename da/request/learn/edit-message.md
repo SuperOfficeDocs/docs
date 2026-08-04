@@ -7,16 +7,14 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+functional_right: general administrator
 license: serviceessentials
 tier: starter
-functional_right: general administrator
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from: /da/request/learn/howto/edit-message
+language: da
 ---
-
-# Rediger meddelelse
 
 Kun brugere med den funktionelle rettighed *general administrator* kan redigere egenskaberne for en meddelelse i en sag. Det er dog ikke muligt at redigere selve teksten i meddelelsen.
 

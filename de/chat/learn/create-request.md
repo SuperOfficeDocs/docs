@@ -1,6 +1,6 @@
 ---
 uid: help-de-chat-create-request
-title: Anfrage in einem Chat erstellen
+title: Anfrage in einem aktiven Chat erstellen
 description: In dieser Anleitung erfahren Sie, wie Sie eine Anfrage in SuperOffice Chat erstellen.
 keywords: anfrage erstellen, nicht über chat lösen
 author: SuperOffice Product and Engineering
@@ -15,8 +15,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: de
 ---
-
-# Anfrage in einem aktiven Chat erstellen
 
 Wenn Sie das Problem nicht über den Chat lösen können, können Sie eine Anfrage erstellen, die von einem anderen Spezialisten bearbeitet wird.
 

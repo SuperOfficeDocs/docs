@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Delegere
-
 En tildelt oppfølging er en oppfølging du har delegert til en annen person.
 
 Eksempler: Kollegaen din er på ferie, men må ringe en klient når vedkommende kommer tilbake. Du har avtalt et møte med en kunde, men er nødt til å delegere det til noen andre.

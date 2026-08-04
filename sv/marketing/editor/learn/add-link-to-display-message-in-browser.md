@@ -1,21 +1,20 @@
 ---
 uid: help-sv-mailing-open-in-browser
 title: Lägga in en länk för att visa meddelandet i en webbläsare
+sidebarTitle: "Visa i webbläsare"
 description: Lägga in en länk för att visa meddelandet i en webbläsare
 keywords: Marknadsföring, länk, utskick
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
 ---
-
-# Lägga in en länk för att visa meddelandet i en webbläsare
 
 Om mottagaren har problem med att visa meddelandet i e-postprogrammet (t.ex. problem med bilder som inte visas), eller föredrar att läsa det i en webbläsare, kan du lägga in en länk som används för att visa meddelandet som en webbsida. Sådana länkar placeras vanligen överst i meddelandet.
 

@@ -7,16 +7,14 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+functional_right: general administrator
 license: serviceessentials
 tier: starter
-functional_right: general administrator
 audience: person
 audience_tooltip: SuperOffice Service
-language: no
 redirect_from: /no/request/learn/howto/edit-message
+language: no
 ---
-
-# Redigere melding
 
 Kun brukere med funksjonsrettigheten **general administrator** kan redigere egenskapene til en melding i en sak. Det er imidlertid ikke mulig å redigere selve teksten i meldingen.
 

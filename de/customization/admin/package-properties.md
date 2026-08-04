@@ -7,19 +7,17 @@ author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5
 content_type: reference
+tier: core
+category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
-category: customization
-index: true
-tier: core
-language: de
 redirect_from:
   - /de/admin/learn/screen/package-properties
   - /de/admin/learn/package-properties
   - /de/customization/admin/index
+index: true
+language: de
 ---
-
-# Eigenschaften des Pakets
 
 Im <i class="ph ph-selection-all" aria-hidden="true"></i> **Systemdesign** und auf der Registerkarte **Pakete** können Sie die Eigenschaften und den Inhalt eines Pakets bearbeiten. Wenn es sich um ein nicht gesperrtes, installiertes Paket handelt, können Sie außerdem festlegen, welche Elemente installiert werden sollen. Wurde das Paket in diesem System erstellt, können Sie die gewünschten Elemente hinzufügen und entfernen. Wenn das Paket in einem anderen System erstellt und zu diesem System hochgeladen wurde, können Sie hier die zu installierenden Elemente auswählen, sofern das Paket nicht gesperrt ist.
 

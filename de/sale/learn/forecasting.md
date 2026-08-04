@@ -1,6 +1,7 @@
 ---
 uid: help-de-sale-forecasting
 title: Pipeline überwachen und Umsatz prognostizieren
+sidebarTitle: "Pipeline und Prognose"
 description: Wie man seine Vertriebspipeline überwacht und Verkäufe mit Hilfe von Dashboards und Selektionen prognostiziert.
 keywords: Verkauf, Prognose, Pipeline
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: de
 ---
-
-# Pipeline überwachen und Umsatz prognostizieren
 
 Um Ihre Verkaufsziele zu erreichen, ist es wichtig, eine gesunde Pipeline aufrechtzuerhalten. SuperOffice CRM bietet zwei Hauptmöglichkeiten, Verkäufe zu prognostizieren und Fortschritte zu überwachen: **Dashboard-Kacheln** und **Selektionen (Suchen)**.
 

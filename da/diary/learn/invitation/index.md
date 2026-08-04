@@ -1,6 +1,7 @@
 ---
 uid: help-da-invitation
-title: Oprettelse af opfølgninger med dine medarbejdere
+title: Invitation af andre medarbejdere til en opfølgning
+sidebarTitle: "Invitation af medarbejdere"
 description: Oprettelse af opfølgninger med dine medarbejdere
 keywords: dagbog, opfølgning, invitation, møde
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: da
 ---
-
-# Invitation af andre medarbejdere til en opfølgning
 
 Invitationer bliver oprettet, når du indkalder til møder eller andre arrangementer mellem forskellige medlemmer af en virksomhed. Du inviterer adskillige kolleger eller ressourcer til at deltage. Når en invitation bliver accepteret, vil den blive vist i brugerens dagbog.
 

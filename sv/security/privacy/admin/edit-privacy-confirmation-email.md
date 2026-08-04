@@ -1,22 +1,21 @@
 ---
 uid: help-sv-edit-privacy-confirmation-email
 title: Redigera e-postbekräftelse om personskydd
+sidebarTitle: "Bekräftelsemejl"
 description: I den här guiden lär du dig hur du redigerar e-postbekräftelse om personskydd.
 keywords: e-postbekräftelse om personskydd, e-post mall
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10
 content_type: howto
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: sv
-index: true
 redirect_from: /sv/security/privacy/learn/edit-privacy-confirmation-email
+index: true
+language: sv
 ---
-
-# Redigera e-postbekräftelse om personskydd
 
 Enligt GDPR har individer "rätt att informeras". Det innebär att de har rätt att bli meddelade antingen i förväg eller inom 30 dagar efter att deras personuppgifter har samlats in. GDPR föreskriver att individer har rätt att bli informerade (a) om att en organisation avser att lagra deras personuppgifter och (b) vad organisationen avser att använda deras uppgifter till.
 

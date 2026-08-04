@@ -7,20 +7,18 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: starter
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from:
   - /de/request/reply-templates/learn/delete
   - /de/request/reply-templates/learn/edit
+language: de
 ---
-
-# Antwortvorlagen bearbeiten oder löschen
 
 Die Bearbeitung einer Antwortvorlage kann auf zwei Arten erfolgen:
 

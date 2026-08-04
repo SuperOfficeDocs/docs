@@ -7,14 +7,12 @@ author: SuperOffice RnD
 date: 02.11.2025
 version: 10.5.2
 content_type: concept
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
-language: de
 redirect_from: /de/project/learn/screen/project-members-tab
+language: de
 ---
-
-# Projektmitglieder
 
 Projektmitglieder sind die Teilnehmer in einem Projekt. Für jedes Projektmitglied können Sie auf Informationen zu Firma, Name der Person, Funktion im Projekt sowie Kommentare, E-Mail-Adresse und Telefonnummer zugreifen.
 

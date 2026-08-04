@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: no
 redirect_from: /no/request/learn/howto/flag-message
+language: no
 ---
-
-# Holde oversikt over meldinger
 
 Komplekse saker kan ta lang tid å løse. Dette kan innebære mye kommunikasjon mellom kunden og flere saksbehandlere.
 

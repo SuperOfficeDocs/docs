@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-language: no
 redirect_from: /no/request/learn/status/index
 index: true
+language: no
 ---
-
-# Saksstatus
 
 Alle saker som registreres i SuperOffice, har en status, for eksempel **Åpen**, **Avsluttet** eller **Utsatt**. I **Saker**-bildet i **Innstillinger og vedlikehold**, under **Saksstatus**, kan du se hvilke saksstatuser som allerede er definert i systemet, samt opprette nye statuser.
 

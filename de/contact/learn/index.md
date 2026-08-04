@@ -7,14 +7,12 @@ author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: de
 redirect_from: /de/contact/learn/screen/index
+language: de
 ---
-
-# Person
 
 Die **Person-Ansicht** bietet eine sofortige Übersicht über alle Kommunikations- und Interaktionsdaten einer Person. Hier können Sie Kontaktdaten verwalten, Aktivitäten nachverfolgen und DSGVO-bezogene Dokumentation abrufen - alles auf einer einzigen Anzeige.
 

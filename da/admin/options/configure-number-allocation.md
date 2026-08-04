@@ -7,19 +7,17 @@ author: digitaldiina
 date: 10.21.2025
 version: 11.5
 content_type: howto
+tier: starter
 category: Settings and maintenance
 topic: options
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /da/admin/options/learn/number-allocation/index
   - /da/admin/options/learn/number-allocation/configure
-tier: starter
+index: true
 language: da
 ---
-
-# Angivelse af nummertildeling
 
 Den måde, en tæller fungerer på, er at øge værdien af feltet med 1, hver gang der bruges en ny forekomst af det. Hvis det første firma, du opretter i databasen, f.eks. tildeles værdien 10001 i feltet **Nummer**, tildeles det nittende firma værdien **10019**.
 

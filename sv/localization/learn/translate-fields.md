@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.09.2025
 version: 11.5
 content_type: howto
-category: localization
-topic: language
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
+category: localization
+topic: language
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /sv/globalization-and-localization/learn/translate-fields
 language: sv
 ---
-
-# Översättning
 
 Standardfälten och andra gränssnittstexter finns tillgängliga på alla SuperOffice-språk. Om du skapar egna fält eller texter (som namn på dashboards eller figurer) kan du lägga till översättningar för relevanta språk i din organisation.
 

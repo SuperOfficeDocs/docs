@@ -1,21 +1,20 @@
 ---
 uid: help-nl-mailing-send-test
-title: Testmailing door het verzenden van een testmail
+title: Een test-e-mail verzenden voor e-mailmailings en formulierreacties
+sidebarTitle: "Test-e-mail verzenden"
 description: In deze handleiding leert u hoe u een testmailing verstuurt.
 keywords: test-e-mail
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: nl
 ---
-
-# Een test-e-mail verzenden voor e-mailmailings en formulierreacties
 
 Nadat u een scherpe onderwerpregel hebt gemaakt, uw tekst hebt toegevoegd, koppelingen en afbeeldingen in uw e-mailsjabloon hebt ingevoegd, kunt u een paar tests uitvoeren om te controleren of de mailing goed werkt en of de lay-out er goed uitziet. In de stap **Inhoud** kunt u een test-e-mail verzenden. Dit is niet relevant voor document en SMS.
 

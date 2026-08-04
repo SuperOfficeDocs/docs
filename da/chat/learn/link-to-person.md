@@ -1,6 +1,6 @@
 ---
 uid: help-da-chat-link-to-person
-title: Link chat til en eksisterende person
+title: Link chat til eksisterende person
 description: Når en kunde sender en forespørgsel via chatwidgetten på hjemmesiden, er det ikke kun vigtigt at svare på den, men også at registrere den på deres kontaktkort.
 keywords: link chat til person, foreslået person, opret ny person
 author: SuperOffice Product and Engineering
@@ -13,11 +13,9 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
-language: da
 redirect_from: /da/chat/learn/create-contact
+language: da
 ---
-
-# Link chat til eksisterende person
 
 Når du besvarer en chat, vil SuperOffice automatisk forsøge at finde kunden i SuperOffice baseret på de angivne oplysninger (e-mailadresse og navn). Hvis kunden allerede er registreret som en person i SuperOffice, kan du få vist relevante oplysninger om vedkommende i sidepanelet i højre side af **chatskærmen**. Dobbeltklik på en post for at få den vist.
 

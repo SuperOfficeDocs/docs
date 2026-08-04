@@ -7,13 +7,11 @@ author: digitaldiina
 date: 12.05.2025
 version: 11
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: nl
 ---
-
-# Contactpersonen bellen
 
 Als uw IP-telefoonoplossing correct is geconfigureerd, kunt u rechtstreeks vanuit SuperOffice CRM een contactpersoon bellen op een van de volgende manieren:
 

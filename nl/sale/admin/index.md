@@ -7,14 +7,12 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: howto
+tier: core
 audience: settings
 audience_tooltip: Instellingen en onderhoud
-tier: core
-language: nl
 index: true
+language: nl
 ---
-
-# Verkooptypen, fasen en gidsen beheren
 
 SuperOffice CRM biedt beheerders tools om verkoopprocessen te standaardiseren met **verkooptypen**, **fasen** en **gidsen**. Deze functies zorgen voor een consistente verkooptracking, taakbeheer en documentverwerking binnen teams.
 

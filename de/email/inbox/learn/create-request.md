@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Anfrage erstellen
-
 Sie können in SuperOffice Service eine neue Anfrage basierend auf dem Absender und Inhalt einer E-Mail-Nachricht erstellen. Wenn der Absender erkannt wird, wird die Anfrage automatisch mit der richtigen Firma und Person verknüpft.
 
 ## Schritte

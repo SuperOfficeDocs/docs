@@ -2,18 +2,16 @@
 uid: help-no-service-global-preferences-customer-centre-password
 title: Passordregler for Kundesenter
 description: Globale preferanser for passordregler for kundesenter
+keywords: Tjeneste, innstillinger
 author: SuperOffice RnD
 date: 03.29.2023
-keywords: Tjeneste, innstillinger
 content_type: concept
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: no
 redirect_from: /no/admin/preferences/learn/global-preferences/password
+language: no
 ---
-
-# Passordregler for Kundesenter
 
 Gå til <i class="ph ph-gear" aria-hidden="true"></i> **Preferanser** i navigatoren, og velg deretter fanen **Globale preferanser**. Seksjonen for **Passordregler for kundesenter** har følgende valg:
 

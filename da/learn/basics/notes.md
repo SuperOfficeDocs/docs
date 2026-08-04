@@ -7,13 +7,11 @@ author: SuperOffice RnD
 date: 03.07.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: da
 ---
-
-# Tage noter
 
 I SuperOffice CRM kan du knytte noter til firmaer, personer, salg, projekter og udvalg. Noter kan bruges til at gemme enhver form for information og kan søges frem ved hjælp af [Fritekst-søgning][1].
 

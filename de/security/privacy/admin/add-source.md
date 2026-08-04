@@ -1,6 +1,7 @@
 ---
 uid: help-de-privacy-add-source
 title: Objekte zur Liste Datenschutz - Nachweis hinzufügen
+sidebarTitle: "Nachweis hinzufügen"
 description: Lernen Sie, wie man die Datenschutzlisten in dieser Anleitung ändern kann.
 keywords: Datenschutz Nachweis Liste, Datenschutz Nachweis hinzufügen
 author: SuperOffice Product and Engineering
@@ -8,16 +9,14 @@ date: 09.02.2025
 version: 10.3
 content_type: howto
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: de
-index: true
 redirect_from: /de/admin/lists/learn/privacy-source-add
+index: true
+language: de
 ---
-
-# Objekte zur Liste Datenschutz - Nachweis hinzufügen
 
 Die Liste **Datenschutz - Nachweis** enthält Optionen, die Benutzer auswählen, um zu zeigen, wie und wo sie die Zustimmung von einem Person erhalten haben.
 

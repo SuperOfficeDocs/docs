@@ -7,18 +7,16 @@ author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5
 content_type: reference
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: core
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from: /de/request/learn/screen/knowledge-base
+language: de
 ---
-
-# Wissensdatenbank
 
 Die **Wissensdatenbank** ist vom **Hauptmenü** in der oberen Leiste zugreifbar und gibt auf Anfrage des Bearbeiters Zugriff auf gespeicherte Daten in einem Ort, wodurch die Information leichter gefunden und für Personen verfügbar wird. Sie können die Wissensdatenbank sowohl zum Nachschlagen als auch zur Entnahme von Informationen einsetzen, die bei Kommunikationen mit Personen wiederverwendet werden. Die Wissensdatenbank gliedert sich in folgende Hauptbereiche:
 

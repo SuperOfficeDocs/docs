@@ -7,19 +7,17 @@ author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5
 content_type: reference
+tier: core
+category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
-category: customization
-index: true
-tier: core
-language: nl
 redirect_from:
   - /nl/admin/learn/screen/package-properties
   - /nl/admin/learn/package-properties
   - /nl/customization/admin/index
+index: true
+language: nl
 ---
-
-# Pakketeigenschappen
 
 In <i class="ph ph-selection-all" aria-hidden="true"></i> **Systeemontwerp** en het tabblad **Pakketten** kunt u de eigenschappen en inhoud van een pakket bewerken. Als het een niet-vergrendeld en geïnstalleerd pakket betreft, kunt u ook aangeven wat er moet worden geïnstalleerd. Als het pakket in dit systeem is gemaakt, kunt u items toevoegen en verwijderen, afhankelijk van wat u in het pakket wilt opnemen. Als het pakket in een ander systeem is gemaakt en naar dit systeem is geüpload, kunt u in dit scherm de onderdelen selecteren die u wilt installeren, ervan uitgaand dat het pakket niet is vergrendeld.
 

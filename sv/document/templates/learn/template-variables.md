@@ -8,11 +8,9 @@ date: 12.10.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: sv
 redirect_from: /sv/document/learn/template-variables
+language: sv
 ---
-
-# Mallvariabler
 
 Mallvariabler används för att infoga data från SuperOffice i e-postmeddelanden, offerter, mötesaviseringar, dokumentmallar med mera. Du kan använda mallvariabler för att anpassa och automatisera inmatningen av kunddata (eller data från kontakter, försäljningar och annat) i ditt innehåll och skapa komplexa offerter.
 

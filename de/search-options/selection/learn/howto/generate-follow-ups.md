@@ -7,13 +7,11 @@ author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: de
 ---
-
-# Folgeaufgaben erstellen
 
 Sie können eine Folgeaufgabe erstellen, die beispielsweise in der Aktivitätenliste aller Mitglieder einer Selektion angezeigt wird. Dies ist nützlich, wenn Sie beispielsweise ein neues Produkt einführen und Vertriebsmitarbeiter daran erinnern möchten, Kunden zu einer Präsentation einzuladen.
 

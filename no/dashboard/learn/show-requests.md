@@ -7,13 +7,11 @@ author: digitaldiina
 date: 11.21.2025
 version: 11.6
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice Service
-tier: core
 language: no
 ---
-
-# Bruke saker i figurer
 
 Dashbord gir en umiddelbar oversikt over saker og statistikk for saker i SuperOffice. Du kan tilpasse figurene for å vise informasjonen som er mest relevant for deg som serviceagent. Du kan også [lage dine egne dashbord][1] med ønskede figurer/diagrammer.
 

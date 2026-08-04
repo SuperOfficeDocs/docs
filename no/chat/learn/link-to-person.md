@@ -1,6 +1,6 @@
 ---
 uid: help-no-chat-link-to-person
-title: Link chat til en eksisterende person
+title: Koble chat til eksisterende person
 description: Når en kunde sender en forespørsel via chatwidgetten på nettstedet, er det ikke bare viktig å svare på den, men også å registrere den på deres personkort.
 keywords: link chat til person, foreslått person, opprett ny person
 author: SuperOffice Product and Engineering
@@ -13,11 +13,9 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
-language: no
 redirect_from: /no/chat/learn/create-contact
+language: no
 ---
-
-# Koble chat til eksisterende person
 
 Når du svarer på en chat, prøver SuperOffice automatisk å finne kunden i SuperOffice basert på de oppgitte opplysningene (e-postadresse og navn). Hvis kunden allerede er registrert som person i SuperOffice, kan du vise relevant informasjon om hen i sidepanelet til høyre i **Chat**-bildet. Dobbeltklikk på en oppføring for å vise den.
 

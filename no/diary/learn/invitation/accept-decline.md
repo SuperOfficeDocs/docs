@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Oppfølginger du er invitert til
-
 Deltakere som er blitt invitert til en oppfølging, får et varsel.
 
 ![Motta invitasjoner -screenshot][img2]

@@ -87,6 +87,8 @@ Why the split: within one topic, the same relative link text is correct in every
 
 * **Watch the `index.mdx` resolution gotcha.** Raw `<a>`/`Card` hrefs show up most often on landing/index pages (built from HTML block elements rather than a markdown list). A relative href on an `index.mdx` file resolves against the folder *containing* that file — so `learn/create` written on `company/index.mdx` means `company/learn/create`, not `company/index/learn/create`. Same resolution rule as any other page, but easiest to get wrong here since landing pages so often link to their own child pages.
 
+* **`mode: "custom"` category-landing `index.mdx` pages always use root-relative hrefs, regardless of topic locality.** This overrides the relative-within-topic rule above for these specific files (`company/index.mdx`, `sale/index.mdx`, `learn/index.mdx`, and the rest of the Guides-tab hub pages, in every language). Don't convert their hrefs to relative even when linking within the same topic.
+
 ## Reference-style links
 
 We use reference-style links to make the source content easier to read and maintain. You move the (long) URLs — or paths — to the end of the file and reference them by labels in square brackets. This applies to internal links as well as external URLs.

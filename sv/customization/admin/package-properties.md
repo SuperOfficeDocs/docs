@@ -7,19 +7,17 @@ author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5
 content_type: reference
+tier: core
+category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
-category: customization
-index: true
-tier: core
-language: sv
 redirect_from:
   - /sv/admin/learn/screen/package-properties
   - /sv/admin/learn/package-properties
   - /sv/customization/admin/index
+index: true
+language: sv
 ---
-
-# Egenskaper för paket
 
 På fliken **Paket** under <i class="ph ph-selection-all" aria-hidden="true"></i> **Systemdesign** kan du redigera ett pakets egenskaper och innehåll. Om det är ett olåst installerat paket kan du även specificera vad som ska installeras. Om paketet har skapats i det aktuella systemet kan du lägga till och ta bort objekt beroende på vad du vill inkludera i paketet. Om paketet har skapats i ett annat system men laddats upp till det aktuella systemet kan du välja vilka delar som ska installeras på denna skärm - förutsatt att paketet inte är låst.
 

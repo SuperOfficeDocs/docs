@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Wiederkehrende Folgeaufgabe stoppen
-
 ## Wiederholung stoppen (diese Instanz behalten)
 
 Wenn Sie eine wiederkehrende Folgeaufgabe stoppen, werden alle Instanzen der Folgeaufgabe *nach* der von Ihnen bearbeiteten gelöscht. Wenn die Folgeaufgabe die erste in einer Serie ist, wird das Wiederholungsmuster entfernt, und die Folgeaufgabe wird zu einer "normalen" Aufgabe.

@@ -7,13 +7,11 @@ author: Bergfrid Dias
 date: 03.07.2025
 version: 10.5.2
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: da
 ---
-
-# Tilføj eller skift et projektbillede
 
 Fanen **Billede** giver dig mulighed for at uploade og administrere billeder for et projekt.
 

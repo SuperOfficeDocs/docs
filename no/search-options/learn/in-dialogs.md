@@ -1,19 +1,17 @@
 ---
 uid: help-no-fastsearcher-dialog
-title: Hurtigsøk i dialogbokser
+title: Bruke hurtigsøk i dialogbokser
 description: Hvordan bruke hurtigsøk i dialogbokser i SuperOffice
 keywords: søk hurtigsøk, dialog
 author: Bergfrid Dias
 date: 01.30.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: no
 ---
-
-# Bruke hurtigsøk i dialogbokser
 
 I dialogbokser er formålet ditt å finne å velge en spesifik post som verdien av et felt. Posttypen er allerede bestemt av konteksten. For eksempel, du ønsker å referere til et prosjekt når du booker et møte.
 

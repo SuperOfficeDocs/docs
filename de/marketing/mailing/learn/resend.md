@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# Kampagne erneut senden
 
 Wenn Sie in den Ergebnissen Ihrer Kampagnen feststellen, dass viele der E-Mail-Adressen [unzustellbar][1] sind, bedeutet dies, dass diese Personen Ihre Kampagne nicht erhalten haben. Nachdem Sie die unzustellbaren E-Mails bearbeitet haben, sollten Sie versuchen, die Kampagne erneut zu versenden.
 

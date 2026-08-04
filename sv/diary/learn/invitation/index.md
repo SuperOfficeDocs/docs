@@ -1,6 +1,7 @@
 ---
 uid: help-sv-invitation
-title: Skapa händelser med dina medarbetare
+title: Bjuda in andra medarbetare till en händelse
+sidebarTitle: "Bjuda in medarbetare"
 description: Skapa händelser med dina medarbetare
 keywords: kalender, händelse, inbjudan, möte
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
 ---
-
-# Bjuda in andra medarbetare till en händelse
 
 Inbjudningar skapas när du kallar till händelser eller andra arrangemang mellan olika medlemmar i ett företag. Du bjuder in flera kollegor eller resurser att delta. När en inbjudan accepteras kommer den att visas i användarens kalender.
 

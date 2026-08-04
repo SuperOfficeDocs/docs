@@ -11,12 +11,10 @@ license: servicepremium
 tier: growth
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-language: no
 redirect_from: /no/request/learn/type/create
 index: true
+language: no
 ---
-
-# Legg til sakstype
 
 1. I **Innstillinger og vedlikehold**, velg **Saker** i navigatoren.
 

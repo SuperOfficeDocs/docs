@@ -1,6 +1,7 @@
 ---
 uid: help-sv-product-fields-configure
 title: Konfigurera fält i dialogrutan Lägg till/redigera produkt
+sidebarTitle: "Konfigurera produktfält"
 description: Lär dig hur du styr vilka fält som visas i dialogrutan Lägg till/redigera produkt och hur de beter sig.
 keywords: Konfigurera produktdialog, Lägg till/redigera produktdialog, konfigurera produkt, produktdialog, produktfält, ledtext, produkt, offert
 author: Bergfrid Dias
@@ -11,12 +12,10 @@ license: salespremium
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: sv
 redirect_from: /sv/quote/learn/admin/product/configure
 index: true
+language: sv
 ---
-
-# Konfigurera fält i dialogrutan Lägg till/redigera produkt
 
 Använd dialogrutan **Konfigurera produkt** för att styra vilka fält som visas när användare lägger till eller redigerar en produkt i en offert. Du kan visa eller dölja fält, ändra ledtexter, definiera hjälptexter och göra fält redigerbara och/eller obligatoriska.
 

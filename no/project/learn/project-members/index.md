@@ -7,14 +7,12 @@ author: SuperOffice RnD
 date: 01.31.2025
 version: 10.5
 content_type: concept
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
-language: no
 redirect_from: /no/project/learn/screen/project-members-tab
+language: no
 ---
-
-# Prosjektdeltakere
 
 Prosjektdeltakere er deltakerne i et prosjekt. For hver deltaker kan du få tilgang til informasjon om firma, personnavn, funksjon i prosjektet, eventuell kommentar, e-postadresse og telefonnummer.
 

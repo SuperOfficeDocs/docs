@@ -7,16 +7,14 @@ author: digitaldiina
 date: 05.04.2026
 version: 11.13
 content_type: howto
+tier: core
 category: customization
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-index: true
 redirect_from: /no/admin/lists/learn/add-items-to-task-menu
-tier: core
+index: true
 language: no
 ---
-
-# Legge til elementer i Oppgave-menylisten
 
 ## Trinn
 

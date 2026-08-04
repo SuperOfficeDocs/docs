@@ -1,6 +1,6 @@
 ---
 uid: help-no-chat-create-request
-title: Opprette sak i chat
+title: Opprette sak i en aktiv chat
 description: I denne guiden lærer du hvordan du oppretter en sak i SuperOffice Chat.
 keywords: opprett sak, kan ikke løse via chat
 author: SuperOffice Product and Engineering
@@ -15,8 +15,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: no
 ---
-
-# Opprette sak i en aktiv chat
 
 Hvis du ikke kan løse spørsmålet via chatsamtalen, kan du opprette en sak som vil bli håndtert av en annen spesialist.
 

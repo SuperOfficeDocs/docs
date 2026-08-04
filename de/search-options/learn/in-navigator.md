@@ -2,15 +2,13 @@
 uid: help-de-fastsearcher-navigator
 title: Schnellsuche im Navigator verwenden
 description: Schnellsuche im Navigator verwenden im SuperOffice
+keywords: suche, Schnellsuche
 author: Bergfrid Dias
 date: 05.25.2023
-keywords: suche, Schnellsuche
 content_type: howto
 tier: starter
 language: de
 ---
-
-# Schnellsuche im Navigator verwenden
 
 1. Klicken Sie im links im Fenster angezeigten Navigator auf **Firma**, **Person**, **Verkauf**, **Projekt**, **Selektion**, oder **Anfrage**. Oben wird ein leeres Feld eingeblendet. Darunter befindet sich eine [Liste der Datensätze, mit denen Sie bereits gearbeitet haben][1].
 

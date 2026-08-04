@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# E-mail
-
 E-mail is de meest populaire vorm van communicatie tussen bedrijven. Met SuperOffice CRM kunt u ervoor kiezen om uw e-mails op verschillende manieren op te slaan en te delen, waardoor u en uw team productiever kunnen werken.
 
 Wanneer u uw favoriete e-mailclient hebt [geïntegreerd met SuperOffice][13], kunt u e-maildialogen en bijlagen opslaan onder elk bedrijf, persoon, verkoop of project in uw CRM-systeem. U kunt e-mails ook rechtstreeks opslaan als vervolgactiviteiten of activiteiten, zodat u nooit vergeet om op te volgen en door te gaan.

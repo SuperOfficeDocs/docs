@@ -8,11 +8,9 @@ date: 07.11.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: de
 redirect_from: /de/admin/lists/learn/document-template
+language: de
 ---
-
-# Dokumentvorlage
 
 Für das Profil eines Unternehmens ist es wichtig, dass Briefe, Faxe und andere Dokumente ein aussagekräftiges und einheitliches Erscheinungsbild haben. Das bedeutet, dass alle von dem Unternehmen gesendeten Dokumente dieselben Schriften, Ränder, Logos usw. aufweisen sollten. Durch das Erstellen von maßgeschneiderten Vorlagen für Ihr Unternehmen können Sie sicherstellen, dass die Personen, mit denen Sie Kontakte pflegen, Ihre Schriftstücke sofort erkennen.
 

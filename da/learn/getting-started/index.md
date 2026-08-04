@@ -1,19 +1,17 @@
 ---
 uid: help-da-getting-started
-title: Kom godt i gang
+title: Kom godt i gang med SuperOffice CRM
 description: Lær, hvordan du aktiverer din brugerkonto, forbinder din e-mail og dokumenter, samt angiver dine personlige præferencer.
 keywords: CRM
 author: Bergfrid Dias, Kirsti Aakerholt
 date: 05.04.2026
 version: 11.13
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: da
 ---
-
-# Kom godt i gang med SuperOffice CRM
 
 Velkommen til SuperOffice CRM! Uanset om du er ny bruger eller skifter fra en tidligere version, hjælper denne vejledning dig med at navigere i systemet og få mest muligt ud af funktionerne.
 

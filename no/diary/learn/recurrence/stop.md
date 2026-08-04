@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Stoppe repeterende oppfølging
-
 Når du stopper repeteringen, slettes alle forekomster av oppfølgingen *etter* forekomsten du redigerer. Hvis oppfølgingen er den første i en rekke med repeterende oppfølginger, slettes repeteringsmønsteret, og oppfølgingen blir til en "vanlig" oppfølging.
 
 ## Stopp gjentakelse (behold denne instansen)

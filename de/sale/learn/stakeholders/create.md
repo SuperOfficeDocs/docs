@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Beteiligte hinzufügen
-
 Beim Hinzufügen von Beteiligte zu einem Verkauf können Sie entweder Rollen einzeln zuweisen, wenn Sie Firmen/Personen hinzufügen, die Rollen nach dem Hinzufügen aller Beteiligte zuweisen oder eine Kombination beider Methoden verwenden.
 
 Eine Firma/Person kann mehrfach als Interessent hinzugefügt werden, vorausgesetzt, es werden jeweils unterschiedliche Rollen festgelegt.

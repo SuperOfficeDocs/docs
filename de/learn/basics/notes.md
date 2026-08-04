@@ -7,13 +7,11 @@ author: SuperOffice RnD
 date: 02.11.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: de
 ---
-
-# Notizen machen
 
 In SuperOffice CRM können Sie Notizen zu einer Firma, einer Person, einem Verkauf, einem Projekt oder einer Selektion hinzufügen. Diese Notizen können verwendet werden, um Informationen jeder Art zu speichern und sind über die [Volltextsuche][1] durchsuchbar.
 

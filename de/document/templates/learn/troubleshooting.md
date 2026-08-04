@@ -10,8 +10,6 @@ tier: starter
 language: de
 ---
 
-# Fehlerbehebung
-
 ## Verwendung von Vorlagenvariablen in Microsoft 365-Dokumenten
 
 Wenn wir ein Dokument in SuperOffice erstellen, extrahieren wir den gesamten Inhalt des Dokuments als Klartext, den unser Vorlagenersatzsystem verwendet, um Vorlagenvariablen zu identifizieren und zu ersetzen.

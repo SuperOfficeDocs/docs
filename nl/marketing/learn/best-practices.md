@@ -7,16 +7,14 @@ author: Bergfrid Dias, Jeanette Small Strøm
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /nl/marketing/learn/customize-for-mobile
 language: nl
 ---
-
-# Beste praktijken
 
 * Gebruik standaardlettertypen voor een betere leesbaarheid in verschillende e-mail-clients of webbrowsers.
 * Voordat u een mailing verzendt, moet u [testen of de klantgegevens correct zijn ingevoegd in het bericht][4].

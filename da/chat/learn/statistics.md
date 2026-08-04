@@ -16,8 +16,6 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Visning af chatstatistik
-
 Chatstatistikken kan bruges til at forbedre den overordnede kommunikation og agenternes præstationer samt forkorte svartiden. Du kan se dem på fanen **Dashboard** på **Chatskærmen**.
 
 ![På fanen Chatdashboard har du et afsnit, der viser statistikken over indgående chats -screenshot][img1]

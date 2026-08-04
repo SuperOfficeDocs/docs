@@ -1,19 +1,18 @@
 ---
 uid: help-sv-mailing-send-test
-title: Testa utskick genom att skicka ett testmejl
+title: Skicka ett testmejl för e-postutskick och formulärsvar
+sidebarTitle: "Skicka testmejl"
 description: I den här guiden förklarar vi hur du skickar ett testutskick.
 keywords: Marknadsföring
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 language: sv
 ---
-
-# Skicka ett testmejl för e-postutskick och formulärsvar
 
 När du har skapat en slagkraftig ämnesrad, lagt till din text, lagt in länkar och bilder i din e-postmall kan du göra några tester för att kontrollera att utskicket fungerar korrekt och att layouten ser OK ut. I steget **Innehåll** kan du skicka ett testmeddelande via e-post. Detta är inte relevant för dokument och SMS.
 

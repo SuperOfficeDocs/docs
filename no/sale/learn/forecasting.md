@@ -1,6 +1,7 @@
 ---
 uid: help-no-sale-forecasting
 title: Overvåk salgstrakten og prognostiser salg
+sidebarTitle: "Salgstrakt og prognose"
 description: Hvordan overvåke salgstrakten og prognostisere salget ditt ved hjelp av dashbord og utvalg.
 keywords: salg, prognose, pipeline
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: no
 ---
-
-# Overvåk salgstrakten og prognostiser salg
 
 For å nå salgs­målene dine er det viktig å ha en sunn salgstrakt. SuperOffice CRM gir deg to hovedmåter å prognostisere salg og overvåke fremdrift på: **dashbordfliser** og **utvalg (Finn)**.
 

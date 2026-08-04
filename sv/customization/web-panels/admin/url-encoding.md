@@ -7,16 +7,14 @@ author: digitaldiina
 date: 10.13.2025
 version: 11.5
 content_type: concept
-audience: settings
-audience_tooltip: Settings and maintenance
+tier: core
 category: customization
 topic: web panel
-tier: core
-language: sv
+audience: settings
+audience_tooltip: Settings and maintenance
 index: true
+language: sv
 ---
-
-# Url-kodning
 
 Webbläsare begär sidor från webbservrar med hjälp av en URL - **adressen till en webbsida**.
 

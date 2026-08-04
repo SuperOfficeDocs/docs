@@ -7,18 +7,16 @@ author: SuperOffice RnD
 date: 07.15.2025
 version: 10.5
 content_type: howto
-category: service
-topic: faq
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
+category: service
+topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from: /de/faq/learn/publish
+language: de
 ---
-
-# FAQ-Einträge veröffentlichen
 
 Wenn ein Bearbeiter die Funktion [Vorschlag für einen FAQ-Eintrag erstellen][1] ausführt, wird der Eintrag nicht veröffentlicht und ist im SuperOffice Kundenzentrum nicht verfügbar. Um den Eintrag verfügbar zu machen, muss es von einer Person mit FAQ-Administrationsrechten veröffentlicht werden.
 

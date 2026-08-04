@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-language: de
 redirect_from: /de/request/learn/status/create
 index: true
+language: de
 ---
-
-# Anfragestatus erstellen
 
 ## Schritte
 

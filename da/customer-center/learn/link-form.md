@@ -1,18 +1,16 @@
 ---
 uid: help-da-customer-centre-form
-title: Sådan linker du en webformular til kundecenteret
+title: Brug webformularer i dit kundecenter
 description: I denne vejledning lærer du, hvordan du bruger en webformular.
 keywords: formular, Kundecenter
 author: Bergfrid Dias
 date: 03.20.2023
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
 language: da
 ---
-
-# Brug webformularer i dit kundecenter
 
 Du kan bruge integrerede webformularer til at indhente oplysninger fra de kunder, der besøger dit kundecenter og automatisk gemme disse oplysninger i SuperOffice.
 

@@ -11,12 +11,10 @@ license: servicepremium
 tier: growth
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-language: de
 redirect_from: /de/request/learn/type/create
 index: true
+language: de
 ---
-
-# Anfragetyp erstellen
 
 ## Schritte
 

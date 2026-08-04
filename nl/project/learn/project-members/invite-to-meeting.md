@@ -1,19 +1,18 @@
 ---
 uid: help-nl-project-member-invite
-title: Projectleden uitnodigen voor een vergadering
+title: Projectleden uitnodigen voor een vergadering (vervolgactiviteit)
+sidebarTitle: "Uitnodigen voor vergadering"
 description: Zo nodigt u in SuperOffice een projectlid voor een vergadering
 keywords: Vergadering aanvragen, projectlid uitnodigen, uitnodiging, projectlid, project, vervolgactiviteit
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: nl
 ---
-
-# Projectleden uitnodigen voor een vergadering (vervolgactiviteit)
 
 1. Maak het project en ga naar het tabblad **Projectleden**.
 2. Selecteer de projectleden die u wilt uitnodigen.

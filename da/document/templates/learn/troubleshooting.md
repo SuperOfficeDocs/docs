@@ -10,8 +10,6 @@ tier: starter
 language: da
 ---
 
-# Fejlfinding
-
 ## Brug af skabelonvariabler i Microsoft 365 dokumenter
 
 Når vi opretter et dokument i SuperOffice, udtrækker vi alt indhold af dokumentet som almindelig tekst, som vores skabelon erstatningssystem bruger til at identificere og erstatte skabelonvariabler.

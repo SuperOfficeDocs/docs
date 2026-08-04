@@ -3,20 +3,18 @@ uid: help-nl-edit-privacy-confirmation-email
 title: E-mail met privacybevestiging bewerken
 description: In deze gids staat u hoe u de e-mail met de privacybevestiging kunt bewerken.
 keywords: E-mail met privacybevestiging, e-mail sjabloon
-content_type: howto
-category: privacy
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10
+content_type: howto
+tier: starter
+category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: nl
-index: true
 redirect_from: /nl/security/privacy/learn/edit-privacy-confirmation-email
+index: true
+language: nl
 ---
-
-# E-mail met privacybevestiging bewerken
 
 Volgens de AVG hebben individuen het "recht om geïnformeerd te worden". Dit betekent dat zij het recht hebben om vooraf of binnen 30 dagen nadat hun persoonsgegevens zijn verzameld op de hoogte te worden gesteld. De AVG bepaalt dat individuen het recht hebben om geïnformeerd te worden (a) dat een organisatie van plan is hun persoonsgegevens op te slaan, en (b) waarvoor de organisatie van plan is hun gegevens te gebruiken.
 

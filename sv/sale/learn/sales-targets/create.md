@@ -15,8 +15,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Ställ in försäljningsmål
-
 Håll koll på dina budgetar genom att ställa in försäljningsmål. Det hjälper dig att skapa rätt förväntningar, planera tillväxt, öka motivationen och spara tid.
 
 ![Dialogrutan Mål ger dig en översikt över dina aktuella och tidigare försäljningsmål -screenshot][img1]

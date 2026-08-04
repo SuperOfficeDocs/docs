@@ -1,18 +1,17 @@
 ---
 uid: help-nl-customer-centre-form
-title: Een webformulier koppelen aan het klantportaal
+title: Webformulieren gebruiken in uw Klantportaal
+sidebarTitle: "Webformulieren"
 description: In deze handleiding leert u hoe u een webformulier gebruikt.
+keywords: formulier, Klantportaal
 author: Bergfrid Dias
 date: 03.20.2023
-keywords: formulier, Klantportaal
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
 language: nl
 ---
-
-# Webformulieren gebruiken in uw Klantportaal
 
 U kunt geïntegreerde webformulieren gebruiken om informatie vast te leggen van de klanten die uw Klantportaal bezoeken en deze informatie automatisch opslaan in SuperOffice.
 

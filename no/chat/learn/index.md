@@ -6,15 +6,13 @@ keywords: chat, pågående chats
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5
-audience: person
 content_type: concept
-audience_tooltip: SuperOffice CRM
 tier: growth
-language: no
+audience: person
+audience_tooltip: SuperOffice CRM
 redirect_from: /no/chat/learn/screen/index
+language: no
 ---
-
-# Chat
 
 Med **Chat**-funksjonen i SuperOffice kan støtteagenter og selgere kommunisere med og hjelpe eksisterende eller potensielle kunder og andre via chat-widgeten på nettstedet ditt. Denne funksjonen kan for eksempel brukes til service/brukerstøtte og forhåndssalg. Du kan enkelt integrere[FAQ][1], dokumenter/vedlegg og [maler][3] i chatten,, slik at agentene dine kan spare tid ved å bruke forhåndsdefinerte tekster for å svare raskere.
 

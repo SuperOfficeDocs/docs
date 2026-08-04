@@ -1,21 +1,19 @@
 ---
 uid: help-sv-service-settings
-title: Systeminställningar
+title: Olika inställningar för Service
 description: Systeminställningar
 keywords: systeminställningar, service
 author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: reference
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: sv
 redirect_from: /sv/request/learn/admin/index
 index: true
+language: sv
 ---
-
-# Olika inställningar för Service
 
 I detta avsnitt kan du konfigurera inställningarna för Service så att de passar din organisations behov. Vilka alternativ som visas och vad du kan göra beror på de rättigheter som har tilldelats i din användarprofil. Rättigheter tilldelas under **Användare**.
 

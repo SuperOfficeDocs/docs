@@ -1,6 +1,6 @@
 ---
 uid: help-sv-chat-link-to-person
-title: Koppla chatt till en befintlig kontakt
+title: Koppla chatt till befintlig kontakt
 description: När en kund skickar en fråga via chattwidgeten på webbplatsen är det inte bara viktigt att svara på den, utan också att registrera den på kundens kontaktkort.
 keywords: koppla chatt till kontakt, föreslagen kontakt, skapa ny kontakt
 author: SuperOffice Product and Engineering
@@ -15,8 +15,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
 ---
-
-# Koppla chatt till befintlig kontakt
 
 När du svarar på en chatt försöker SuperOffice automatiskt hitta kunden i SuperOffice utifrån de uppgifter som angetts (e-postadress och namn). Om kunden redan är registrerad i SuperOffice kan du visa relevant information om honom/henne på sidopanelen på höger sida av **chattfönstret**. Dubbelklicka på en post för att visa den.
 

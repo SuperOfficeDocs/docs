@@ -7,13 +7,11 @@ author: Bergfrid Skaara Dias
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: sv
 ---
-
-# Mer-fliken
 
 **Mer-fliken** i SuperOffice CRM låter användare visa och hantera användardefinierade fält för olika enheter, inklusive företag, kontakter, försäljning, projekt, uppföljningar och dokument. Denna anpassningsfunktion hjälper dig att samla in specifik information unik för din organisations behov, vilket ökar flexibiliteten i din CRM.
 

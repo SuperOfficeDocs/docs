@@ -7,13 +7,11 @@ author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: nl
 ---
-
-# Vervolgactiviteiten genereren
 
 U kunt een vervolgactiviteit maken die bijvoorbeeld in de activiteitenlijst van alle selectieleden wordt weergegeven. Dit kan handig zijn als uw bedrijf een nieuw product introduceert en u de verkoopafdeling eraan wilt herinneren om klanten uit te nodigen voor een productpresentatie.
 

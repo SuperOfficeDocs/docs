@@ -1,6 +1,7 @@
 ---
 uid: help-no-project-configuration
 title: Administrere prosjekttyper, statuser og guider
+sidebarTitle: "Administrasjon"
 description: Lær hvordan du administrerer prosjektarbeidsflyt i SuperOffice CRM med prosjekttyper, statuser og guider. Konfigurer disse verktøyene i Innstillinger og vedlikehold for å standardisere oppfølging, oppgaver og dokumentasjon.
 keywords: prosjektguide, prosjektstatus, prosjekttype, arbeidsflyt, prosjekt
 author: Bergfrid Dias
@@ -13,8 +14,6 @@ audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 language: no
 ---
-
-# Administrere prosjekttyper, statuser og guider
 
 SuperOffice CRM gir administratorer verktøy for å standardisere prosjektarbeidsflyt gjennom **prosjekttyper**, **statuser** og **guider**. Disse funksjonene sørger for enhetlig prosjektoppfølging, oppgavehåndtering og dokumentasjon på tvers av team.
 

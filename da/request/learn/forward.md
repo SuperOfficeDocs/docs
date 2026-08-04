@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from: /da/request/learn/howto/forward
+language: da
 ---
-
-# Videresend sag til ekstern kontakt
 
 Som sagsbehandler kan du ikke altid selv besvare en sag - heller ikke med hjælp fra dine kolleger. Nogle gange har du måske brug for assistance fra eksterne personer, såsom en underleverandør, en partner eller en forretningsspecialist.
 

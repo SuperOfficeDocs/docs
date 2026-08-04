@@ -1,6 +1,6 @@
 ---
 uid: help-nl-stakeholder-create
-title: Een belanghebbende maken
+title: Belanghebbenden toevoegen
 description: Het koppelen in SuperOffice van een verkoop aan een belanghebbende (bedrijf of persoon).
 keywords: verkoop, belanghebbend, aandeelhouder, stakeholder, Belanghebbende toevoegen, nieuwe belanghebbende, Belanghebbenden toevoegen/bewerken dialoog, Belanghebbenden sectietabblad, belanghebbende
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: nl
 ---
-
-# Belanghebbenden toevoegen
 
 Bij het toevoegen van belanghebbenden aan een verkoop kunt u rollen individueel toewijzen terwijl u personen/bedrijven toevoegt, rollen toewijzen nadat alle belanghebbenden zijn toegevoegd, of een combinatie van beide methoden gebruiken.
 

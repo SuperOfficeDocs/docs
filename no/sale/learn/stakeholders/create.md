@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Legge til interessenter
-
 Når du legger til interessenter i et salg, kan du enten tildele roller individuelt når du legger til personer/firmaer, tildele roller etter at alle interessenter er lagt til, eller bruke en kombinasjon av begge metodene.
 
 Et firma/en person kan legges til som en interessent flere ganger, forutsatt at forskjellige roller er spesifisert hver gang.

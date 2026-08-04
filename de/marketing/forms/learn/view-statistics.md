@@ -1,23 +1,22 @@
 ---
 uid: help-de-form-view-statistics
 title: Formularübermittlungen überwachen und Statistiken anzeigen
+sidebarTitle: "Formularstatistik"
 description: Formularübermittlungen überwachen und Statistiken anzeigen
 keywords: Formular, Formularübermittlung, Formularstatistik
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: forms
 license: marketingessentials
 tier: growth
+category: marketing
+topic: forms
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /de/marketing/forms/learn/submissions/track
 language: de
 ---
-
-# Formularübermittlungen überwachen und Statistiken anzeigen
 
 ## Schritte
 

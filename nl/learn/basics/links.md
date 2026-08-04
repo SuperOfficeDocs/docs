@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: nl
 redirect_from:
   - /nl/diary/learn/linking-documents-to-follow-ups
   - /nl/project/learn/add-links
+language: nl
 ---
-
-# Koppelingen
 
 Gebruik het tabblad **Koppelingen** om relevante activiteiten, verkopen, projecten, documenten of websites aan een record te koppelen. Bijvoorbeeld: als u een vergadering heeft met een bedrijf waarmee u eerder hebt gecommuniceerd, kunt u links toevoegen naar documenten en verkopen die u al hebt aangemaakt.
 

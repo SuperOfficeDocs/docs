@@ -7,13 +7,11 @@ author: Bergfrid Skaara Dias
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: no
 ---
-
-# Mer-fanen
 
 **Mer-fanen** i SuperOffice CRM lar brukere se og administrere brukerdefinerte felt for ulike enheter, inkludert firma, personer, salg, prosjekter, oppfølginger og dokumenter. Denne tilpasningsfunksjonen hjelper deg med å fange spesifikk informasjon som er unik for din organisasjons behov, og forbedrer fleksibiliteten til din CRM.
 

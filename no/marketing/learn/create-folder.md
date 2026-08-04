@@ -1,21 +1,19 @@
 ---
 uid: help-no-marketing-create-folder
-title: Slik oppretter du en mappe i Markedsføring
+title: Hvordan opprette en mappe
 description: Slik oppretter du en mappe i Markedsføring
 keywords: legg til mappe
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: no
 ---
-
-# Hvordan opprette en mappe
 
 Det er alltid en god idé å definere en godt organisert mappestruktur for å få bedre oversikt over dine utsendelser, skjemaer, flyter, maler, koblinger og bilder i SuperOffice Marketing.
 

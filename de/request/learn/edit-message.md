@@ -7,16 +7,14 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+functional_right: general administrator
 license: serviceessentials
 tier: starter
-functional_right: general administrator
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from: /de/request/learn/howto/edit-message
+language: de
 ---
-
-# Nachricht bearbeiten
 
 Nur Benutzer mit dem Funktionsrecht *general administrator* können die Eigenschaften einer Nachricht in einer Anfrage bearbeiten. Es ist jedoch nicht möglich, den Nachrichtentext zu bearbeiten.
 

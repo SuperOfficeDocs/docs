@@ -13,12 +13,10 @@ category: Service
 topic: chat
 audience: settings
 audience_tooltip: Settings and maintenance
-language: de
 redirect_from: /de/chat/learn/admin/index
 index: true
+language: de
 ---
-
-# Chat-Administration
 
 Die **Chat**-Funktion in SuperOffice ermöglicht es Ihren Support-Mitarbeitern und Vertriebsmitarbeitern, mit Kunden, potenziellen Kunden und anderen Personen über das Chat-Widget/Fenster auf Ihrer Website zu chatten. Diese Funktion kann beispielsweise im Service/Support und in der Verkaufsanbahnung verwendet werden und lässt sich problemlos in die Arbeit mit FAQs, Dokumenten/Anhängen und Vorlagen integrieren. Die Chat-Funktion kann mit mehreren Chat-Kanälen für verschiedene Themen wie technischen Support, Fragen zu Produkten und Verkaufsunterstützung konfiguriert werden.
 

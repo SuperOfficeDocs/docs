@@ -7,18 +7,16 @@ author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5
 content_type: reference
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: core
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from: /da/request/learn/screen/knowledge-base
+language: da
 ---
-
-# Vidensbase
 
 **Vidensbase** er tilgængelig fra **Hovedmenu** på toplinjen og giver sagsbehandlere adgang til at gemme data på ét sted, hvilket gør det nemmere at finde information og gøre den tilgængelig for personer. Du kan bruge vidensbasen som opslagsværktøj og til at hente information, som du genbruge i kommunikation med personer. Vidensbasen består af følgende hoveddele:
 

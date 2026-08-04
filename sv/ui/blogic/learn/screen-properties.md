@@ -2,14 +2,12 @@
 uid: help-sv-service-screen-properties
 title: Egenskaper för skärmbild
 description: Egenskaper för skärmbild
+keywords: skärm
 author: SuperOffice RnD
 date: 06.29.2022
-keywords: skärm
 content_type: reference
 language: sv
 ---
-
-# Egenskaper för skärmbild
 
 Här kan du redigera egenskaperna för en skärm. Du kan skapa ett skript för förhandsberäkning av variabler, möjligen baserat på CGI-variabler som skärmen får via en webbadress eller på en formulärspost på den aktuella skärmen eller en annan skärm.
 

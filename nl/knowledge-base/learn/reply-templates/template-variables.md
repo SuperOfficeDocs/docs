@@ -1,22 +1,20 @@
 ---
 uid: help-nl-template-variables-service
-title: Sjabloonvariabelen
+title: Sjabloonvariabelen (Service)
 description: Sjabloonvariabelen
 keywords: sjabloonvariabelen
 author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: reference
+tier: starter
 category: service
 topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: nl
 redirect_from: /nl/request/reply-templates/learn/template-variables
+language: nl
 ---
-
-# Sjabloonvariabelen (Service)
 
 In het e-mailbericht kunt u sjabloonvariabelen gebruiken om klantspecifieke informatie in te voegen om het bericht een persoonlijke benadering te geven. Op deze manier kunt u de inhoud voor elke afzonderlijke klant aanpassen.
 

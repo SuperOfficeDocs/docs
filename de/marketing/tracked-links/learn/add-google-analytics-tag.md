@@ -1,22 +1,21 @@
 ---
 uid: help-de-mailing-add-google-analytics
 title: Wie man Ihr Google Analytics-Tag zu einer Kampagne hinzufügt
+sidebarTitle: "Google Analytics-Tag"
 description: In dieser Anleitung lernen Sie, wie Sie Ihre Besucher nachverfolgen können.
 keywords: Marketing, Google Analytics, verfolgen, Kampagne, Aussendung, Datenverfolgungsstrategie
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# Wie man Ihr Google Analytics-Tag zu einer Kampagne hinzufügt
 
 Mit Google Analytics aktiviert können Sie Website-Besuche von Empfängern verfolgen, die auf die Links in Ihrer Aussendung klicken. Die Einstellung für das Google Analytics-Tracking wird auf einer pro-Aussendung-Basis festgelegt, was es Ihnen ermöglicht, gezielt bestimmte Aussendungen zu verfolgen. Es handelt sich nicht um eine generelle Einstellung, was Ihnen mehr Kontrolle über Ihre Datenverfolgungsstrategie gibt.
 

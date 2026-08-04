@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.27.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /da/admin/lists/learn/resource
   - /da/admin/lists/learn/adding-items-to-resource-list
-tier: starter
+index: true
 language: da
 ---
-
-# Tilføj ressource
 
 Ressourcer som mødelokaler og projektorer er defineret på skærmbilledet **Lister** i Indstillinger og vedligeholdelse. Typerne vises som forekomster på listen **Generelt - Ressource**.
 

@@ -9,27 +9,17 @@
   {
     "tab": "Användarguide",
     "icon": "book",
-    "groups": [
-      {
-        "group": "Översikt",
-        "pages": [
-          "sv/learn/index"
-        ]
-      },
-      {
-        "group": "Introduktion",
-        "pages": [
-          "sv/learn/intro"
-        ]
-      },
+    "root": "sv/learn/index",
+    "pages": [
+      "sv/learn/intro",
       {
         "group": "Komma igång",
+        "root": "sv/learn/getting-started/index",
         "pages": [
-          "sv/learn/getting-started/index",
           {
             "group": "Layoutobjekten",
+            "root": "sv/learn/getting-started/main-screen/index",
             "pages": [
-              "sv/learn/getting-started/main-screen/index",
               "sv/learn/getting-started/main-screen/navigator",
               "sv/learn/getting-started/main-screen/buttons-in-menu-bar",
               "sv/learn/getting-started/main-screen/side-panel",
@@ -45,8 +35,8 @@
       },
       {
         "group": "Lär dig grunderna",
+        "root": "sv/learn/basics/index",
         "pages": [
-          "sv/learn/basics/index",
           "sv/learn/basics/notifications",
           "sv/learn/basics/fav",
           "sv/learn/basics/history",
@@ -58,8 +48,8 @@
           "sv/learn/basics/bulk-update",
           {
             "group": "Arbeta med detaljkort",
+            "root": "sv/learn/section-tabs/index",
             "pages": [
-              "sv/learn/section-tabs/index",
               "sv/learn/section-tabs/activities-tab",
               "sv/learn/section-tabs/contacts-tab",
               "sv/learn/section-tabs/relations-tab",
@@ -81,8 +71,8 @@
       },
       {
         "group": "Sökfunktioner",
+        "root": "sv/search-options/learn/index",
         "pages": [
-          "sv/search-options/learn/index",
           "sv/search-options/learn/find-screen",
           "sv/search-options/learn/search-criteria",
           "sv/search-options/learn/freetext-search",
@@ -99,8 +89,8 @@
       },
       {
         "group": "Dashboard",
+        "root": "sv/dashboard/learn/index",
         "pages": [
-          "sv/dashboard/learn/index",
           "sv/dashboard/learn/create",
           "sv/dashboard/learn/update",
           "sv/dashboard/learn/working-with-tiles",
@@ -112,8 +102,9 @@
       },
       {
         "group": "Företag",
+        "root": "sv/company/index",
+        "icon": "map",
         "pages": [
-          "sv/company/index",
           "sv/company/learn/index",
           "sv/company/learn/create",
           "sv/company/learn/edit",
@@ -125,8 +116,9 @@
       },
       {
         "group": "Kontakt",
+        "root": "sv/contact/index",
+        "icon": "map",
         "pages": [
-          "sv/contact/index",
           "sv/contact/learn/index",
           "sv/contact/learn/create",
           "sv/contact/learn/edit",
@@ -139,8 +131,9 @@
       },
       {
         "group": "Kalender",
+        "root": "sv/diary/index",
+        "icon": "map",
         "pages": [
-          "sv/diary/index",
           "sv/diary/learn/index",
           "sv/diary/learn/follow-ups",
           "sv/diary/learn/video-meetings",
@@ -155,16 +148,16 @@
           "sv/diary/learn/send-as-email",
           {
             "group": "Upprepning",
+            "root": "sv/diary/learn/recurrence/index",
             "pages": [
-              "sv/diary/learn/recurrence/index",
               "sv/diary/learn/recurrence/create",
               "sv/diary/learn/recurrence/stop"
             ]
           },
           {
             "group": "Inbjudningar",
+            "root": "sv/diary/learn/invitation/index",
             "pages": [
-              "sv/diary/learn/invitation/index",
               "sv/diary/learn/invitation/add-attendee",
               "sv/diary/learn/invitation/accept-decline"
             ]
@@ -180,8 +173,9 @@
       },
       {
         "group": "Dokument",
+        "root": "sv/document/index",
+        "icon": "map",
         "pages": [
-          "sv/document/index",
           "sv/document/learn/index",
           "sv/document/library/learn/index",
           {
@@ -195,11 +189,12 @@
           },
           {
             "group": "Dokumentmallar",
+            "root": "sv/document/templates/learn/index",
             "pages": [
-              "sv/document/templates/learn/index",
               "sv/document/templates/learn/document-types",
               {
                 "group": "Mallvariabler",
+                "root": "sv/document/templates/learn/template-variables",
                 "pages": [
                   {
                     "group": "Referens",
@@ -232,11 +227,12 @@
               },
               {
                 "group": "Merge fields (offertmallar)",
+                "root": "sv/document/templates/learn/quote-templates",
                 "pages": [
                   {
                     "group": "Referens",
+                    "root": "sv/document/templates/merge-fields/index",
                     "pages": [
-                      "sv/document/templates/merge-fields/index",
                       "sv/document/templates/merge-fields/quote",
                       "sv/document/templates/merge-fields/alternative",
                       "sv/document/templates/merge-fields/group",
@@ -256,14 +252,15 @@
       },
       {
         "group": "E-post",
+        "root": "sv/email/index",
+        "icon": "map",
         "pages": [
-          "sv/email/index",
           "sv/email/learn/index",
           "sv/email/learn/change-default-mail-client",
           {
             "group": "Inkorg",
+            "root": "sv/email/inbox/learn/index",
             "pages": [
-              "sv/email/inbox/learn/index",
               "sv/email/inbox/learn/setup",
               "sv/email/inbox/learn/preview",
               "sv/email/inbox/learn/compose",
@@ -280,8 +277,8 @@
               "sv/email/admin/add-email-template",
               {
                 "group": "Postlådeadministration",
+                "root": "sv/email/admin/mailbox/index",
                 "pages": [
-                  "sv/email/admin/mailbox/index",
                   "sv/email/admin/mailbox/create-mailbox",
                   "sv/email/admin/mailbox/create-sms-mailbox",
                   "sv/email/admin/mailbox/create-email-filter",
@@ -294,8 +291,9 @@
       },
       {
         "group": "Försäljning",
+        "root": "sv/sale/index",
+        "icon": "map",
         "pages": [
-          "sv/sale/index",
           "sv/sale/learn/index",
           "sv/sale/learn/create",
           "sv/sale/learn/update",
@@ -303,6 +301,7 @@
           "sv/sale/learn/tutorial",
           {
             "group": "Intressenter",
+            "root": "sv/sale/learn/stakeholders/index",
             "pages": [
               "sv/sale/learn/stakeholders/create",
               "sv/sale/learn/stakeholders/edit"
@@ -311,16 +310,16 @@
           "sv/sale/learn/forecasting",
           {
             "group": "Försäljningsmål",
+            "root": "sv/sale/learn/sales-targets/index",
             "pages": [
-              "sv/sale/learn/sales-targets/index",
               "sv/sale/learn/sales-targets/create",
               "sv/sale/learn/sales-targets/target-types"
             ]
           },
           {
             "group": "Offert",
+            "root": "sv/sale/learn/quote/index",
             "pages": [
-              "sv/sale/learn/quote/index",
               "sv/sale/learn/quote/create",
               "sv/sale/learn/quote/add-alternative",
               "sv/sale/learn/quote/create-quote-document",
@@ -330,8 +329,8 @@
           },
           {
             "group": "För administratörer",
+            "root": "sv/sale/admin/index",
             "pages": [
-              "sv/sale/admin/index",
               "sv/sale/admin/sale-stage",
               "sv/sale/admin/sale-type",
               "sv/sale/admin/create-sales-guide",
@@ -339,6 +338,7 @@
               "sv/sale/admin/add-currency",
               {
                 "group": "Offert",
+                "root": "sv/sale/admin/quote/index",
                 "pages": [
                   "sv/sale/admin/quote/price-list-and-products",
                   "sv/sale/admin/quote/configure-product-fields",
@@ -351,8 +351,9 @@
       },
       {
         "group": "Projekt",
+        "root": "sv/project/index",
+        "icon": "map",
         "pages": [
-          "sv/project/index",
           "sv/project/learn/index",
           "sv/project/learn/create",
           "sv/project/learn/add-image",
@@ -361,8 +362,8 @@
           "sv/project/learn/delete",
           {
             "group": "Projektmedlemmar",
+            "root": "sv/project/learn/project-members/index",
             "pages": [
-              "sv/project/learn/project-members/index",
               "sv/project/learn/project-members/add",
               "sv/project/learn/project-members/edit",
               "sv/project/learn/project-members/invite-to-meeting",
@@ -374,8 +375,8 @@
           "sv/project/learn/tutorial",
           {
             "group": "För administratörer",
+            "root": "sv/project/admin/index",
             "pages": [
-              "sv/project/admin/index",
               "sv/project/admin/project-status",
               "sv/project/admin/project-type",
               "sv/project/admin/create-project-guide",
@@ -386,8 +387,9 @@
       },
       {
         "group": "Ärenden",
+        "root": "sv/request/index",
+        "icon": "map",
         "pages": [
-          "sv/request/index",
           "sv/request/learn/index",
           "sv/request/learn/handle-request-ai",
           "sv/request/learn/find",
@@ -409,12 +411,12 @@
           "sv/request/learn/delete",
           {
             "group": "För administratörer",
+            "root": "sv/request/admin/index",
             "pages": [
-              "sv/request/admin/index",
               {
                 "group": "Ärendetyper",
+                "root": "sv/request/admin/type/index",
                 "pages": [
-                  "sv/request/admin/type/index",
                   "sv/request/admin/type/create",
                   "sv/request/admin/type/delete"
                 ]
@@ -422,8 +424,8 @@
               "sv/request/admin/relation-rules",
               {
                 "group": "Kategorier",
+                "root": "sv/request/admin/category/index",
                 "pages": [
-                  "sv/request/admin/category/index",
                   "sv/request/admin/category/create",
                   "sv/request/admin/category/delete",
                   "sv/request/admin/category/external-categories"
@@ -431,8 +433,8 @@
               },
               {
                 "group": "Prioriteter",
+                "root": "sv/request/admin/priority/index",
                 "pages": [
-                  "sv/request/admin/priority/index",
                   "sv/request/admin/priority/create",
                   "sv/request/admin/priority/delete",
                   "sv/request/admin/priority/escalation-levels"
@@ -440,8 +442,8 @@
               },
               {
                 "group": "Ärendestatus",
+                "root": "sv/request/admin/status/index",
                 "pages": [
-                  "sv/request/admin/status/index",
                   "sv/request/admin/status/create",
                   "sv/request/admin/status/delete"
                 ]
@@ -454,8 +456,8 @@
       },
       {
         "group": "Egendefinierade objekt",
+        "root": "sv/custom-objects/learn/index",
         "pages": [
-          "sv/custom-objects/learn/index",
           "sv/custom-objects/learn/more-tab",
           {
             "group": "Användardefinierade fält",
@@ -485,8 +487,8 @@
       },
       {
         "group": "Urval",
+        "root": "sv/search-options/selection/learn/index",
         "pages": [
-          "sv/search-options/selection/learn/index",
           "sv/search-options/selection/learn/create",
           "sv/search-options/selection/learn/update",
           "sv/search-options/selection/learn/combine",
@@ -495,8 +497,8 @@
           "sv/search-options/selection/learn/board-view",
           {
             "group": "Utföra uppgifter för urval",
+            "root": "sv/search-options/selection/learn/howto/index",
             "pages": [
-              "sv/search-options/selection/learn/howto/index",
               "sv/search-options/selection/learn/howto/create-mailings",
               "sv/search-options/selection/learn/howto/send-email",
               "sv/search-options/selection/learn/howto/generate-follow-ups",
@@ -510,8 +512,8 @@
       },
       {
         "group": "Chatt",
+        "root": "sv/chat/learn/index",
         "pages": [
-          "sv/chat/learn/index",
           "sv/chat/learn/statistics",
           "sv/chat/learn/respond",
           "sv/chat/learn/link-to-person",
@@ -520,8 +522,8 @@
           "sv/chat/learn/as-customer",
           {
             "group": "För administratörer",
+            "root": "sv/chat/admin/index",
             "pages": [
-              "sv/chat/admin/index",
               "sv/chat/admin/channel-create",
               "sv/chat/admin/add-javascript"
             ]
@@ -530,37 +532,37 @@
       },
       {
         "group": "Marknadsföring",
+        "root": "sv/marketing/learn/index",
         "pages": [
-          "sv/marketing/learn/index",
           "sv/marketing/learn/create-folder",
-          "sv/marketing/learn/message-templates",
           "sv/marketing/learn/add-images",
+          "sv/marketing/learn/message-templates",
           "sv/marketing/learn/best-practices",
           {
             "group": "Utskick",
+            "root": "sv/marketing/mailing/learn/index",
             "pages": [
-              "sv/marketing/mailing/learn/index",
               {
                 "group": "Skapa nytt utskick",
+                "root": "sv/marketing/mailing/learn/create/index",
                 "pages": [
-                  "sv/marketing/mailing/learn/create/index",
                   "sv/marketing/mailing/learn/create/tutorial-email-mailing",
                   "sv/marketing/mailing/learn/create/tutorial-sms-mailing",
                   "sv/marketing/mailing/learn/create/tutorial-document-mailing",
                   "sv/marketing/mailing/learn/create/tutorial-form-mailing",
-                  "sv/marketing/mailing/learn/create/send-test-email",
-                  "sv/marketing/mailing/learn/view-statistics",
-                  "sv/marketing/mailing/learn/resend"
+                  "sv/marketing/mailing/learn/create/send-test-email"
                 ]
               },
+              "sv/marketing/mailing/learn/view-statistics",
+              "sv/marketing/mailing/learn/resend",
               "sv/marketing/mailing/admin/define-settings-for-mailings",
               "sv/marketing/mailing/admin/add-domain"
             ]
           },
           {
             "group": "Dra och släpp-redigerare",
+            "root": "sv/marketing/editor/learn/index",
             "pages": [
-              "sv/marketing/editor/learn/index",
               "sv/marketing/editor/learn/add-content",
               "sv/marketing/editor/learn/edit-paragraph",
               "sv/marketing/editor/learn/insert-images-in-message",
@@ -572,8 +574,8 @@
           },
           {
             "group": "Mottagare (mållista)",
+            "root": "sv/marketing/recipients/learn/index",
             "pages": [
-              "sv/marketing/recipients/learn/index",
               "sv/marketing/recipients/learn/manage-email-subscriptions",
               "sv/marketing/recipients/learn/look-at-recipient-list",
               "sv/marketing/recipients/learn/manage-bounces",
@@ -582,8 +584,8 @@
           },
           {
             "group": "Spårade länkar",
+            "root": "sv/marketing/tracked-links/learn/index",
             "pages": [
-              "sv/marketing/tracked-links/learn/index",
               "sv/marketing/tracked-links/learn/create-links",
               "sv/marketing/tracked-links/learn/define-link-actions",
               "sv/marketing/tracked-links/learn/add-google-analytics-tag",
@@ -594,8 +596,8 @@
           },
           {
             "group": "Formulär",
+            "root": "sv/marketing/forms/learn/index",
             "pages": [
-              "sv/marketing/forms/learn/index",
               "sv/marketing/forms/learn/create",
               "sv/marketing/forms/learn/field-options",
               "sv/marketing/forms/learn/define-form-actions",
@@ -611,8 +613,8 @@
           },
           {
             "group": "Flöden",
+            "root": "sv/marketing/flows/learn/index",
             "pages": [
-              "sv/marketing/flows/learn/index",
               "sv/marketing/flows/learn/create",
               "sv/marketing/flows/learn/update",
               "sv/marketing/flows/learn/split",
@@ -626,8 +628,8 @@
           },
           {
             "group": "Konverteringsspårning",
+            "root": "sv/marketing/utm/learn/index",
             "pages": [
-              "sv/marketing/utm/learn/index",
               "sv/marketing/utm/learn/parameters",
               {
                 "group": "För administratörer",
@@ -641,13 +643,13 @@
       },
       {
         "group": "Lead-administration",
+        "root": "sv/lead/learn/index",
         "pages": [
-          "sv/lead/learn/index",
           "sv/lead/learn/work-with-leads",
           {
             "group": "För administratörer",
+            "root": "sv/lead/admin/index",
             "pages": [
-              "sv/lead/admin/index",
               "sv/lead/admin/add-company-category",
               "sv/lead/admin/add-lead-status",
               "sv/lead/admin/category-automation"
@@ -656,20 +658,14 @@
         ]
       },
       {
-        "group": "Mobile CRM",
-        "pages": [
-          "sv/mobile/index"
-        ]
-      },
-      {
         "group": "Kunskapsbas",
+        "root": "sv/knowledge-base/learn/index",
         "pages": [
-          "sv/knowledge-base/learn/index",
           "sv/knowledge-base/learn/manage-folders",
           {
             "group": "Svarsmallar",
+            "root": "sv/knowledge-base/learn/reply-templates/index",
             "pages": [
-              "sv/knowledge-base/learn/reply-templates/index",
               "sv/knowledge-base/learn/reply-templates/create",
               "sv/knowledge-base/learn/reply-templates/new-language",
               "sv/knowledge-base/learn/reply-templates/edit",
@@ -678,8 +674,8 @@
           },
           {
             "group": "FAQ",
+            "root": "sv/knowledge-base/learn/faq/index",
             "pages": [
-              "sv/knowledge-base/learn/faq/index",
               "sv/knowledge-base/learn/faq/create",
               "sv/knowledge-base/learn/faq/edit",
               "sv/knowledge-base/learn/faq/publish",
@@ -692,16 +688,16 @@
       },
       {
         "group": "Integritetsinställningar och GDPR",
+        "root": "sv/security/privacy/learn/index",
         "pages": [
-          "sv/security/privacy/learn/index",
           "sv/security/privacy/learn/edit-legal-base",
           "sv/security/privacy/learn/send-privacy-confirmation-email",
           "sv/security/privacy/learn/generate-personal-data-report",
           "sv/security/privacy/learn/mass-delete",
           {
             "group": "För administratorer",
+            "root": "sv/security/privacy/admin/index",
             "pages": [
-              "sv/security/privacy/admin/index",
               "sv/security/privacy/admin/add-purpose",
               "sv/security/privacy/admin/add-legal-base",
               "sv/security/privacy/admin/add-source",
@@ -712,8 +708,8 @@
       },
       {
         "group": "AI-tjänster",
+        "root": "sv/ai/learn/index",
         "pages": [
-          "sv/ai/learn/index",
           "sv/ai/learn/text-analysis",
           "sv/ai/learn/categorization",
           "sv/ai/learn/copilot",
@@ -727,12 +723,12 @@
       },
       {
         "group": "SAINT (försäljningsintelligens)",
+        "root": "sv/saint/learn/index",
         "pages": [
-          "sv/saint/learn/index",
           {
             "group": "För administratörer",
+            "root": "sv/saint/admin/index",
             "pages": [
-              "sv/saint/admin/index",
               "sv/saint/admin/set-up",
               "sv/saint/admin/update",
               "sv/saint/admin/counter-settings",
@@ -743,14 +739,14 @@
       },
       {
         "group": "ERP",
+        "root": "sv/erp/learn/index",
         "pages": [
-          "sv/erp/learn/index",
           "sv/erp/learn/connect",
           "sv/erp/learn/disconnect",
           {
             "group": "För administratörer",
+            "root": "sv/erp/admin/index",
             "pages": [
-              "sv/erp/admin/index",
               "sv/erp/admin/add-connection",
               "sv/erp/admin/configure",
               "sv/erp/admin/update-connection",
@@ -761,12 +757,13 @@
       },
       {
         "group": "Anpassning",
+        "root": "sv/customization/index",
+        "icon": "map",
         "pages": [
-          "sv/customization/index",
           {
             "group": "Skärmdesigner",
+            "root": "sv/customization/screen-designer/admin/index",
             "pages": [
-              "sv/customization/screen-designer/admin/index",
               "sv/customization/screen-designer/admin/add-layout",
               "sv/customization/screen-designer/admin/edit-layout",
               "sv/customization/screen-designer/admin/working-with-fields",
@@ -781,16 +778,16 @@
           },
           {
             "group": "Webbpaneler",
+            "root": "sv/customization/web-panels/admin/index",
             "pages": [
-              "sv/customization/web-panels/admin/index",
               "sv/customization/web-panels/admin/add-web-panel",
               "sv/customization/web-panels/admin/url-encoding"
             ]
           },
           {
             "group": "Makron och skript",
+            "root": "sv/customization/macros-and-scripts/admin/index",
             "pages": [
-              "sv/customization/macros-and-scripts/admin/index",
               "sv/customization/macros-and-scripts/admin/create-script",
               "sv/customization/macros-and-scripts/admin/create-macro",
               "sv/customization/macros-and-scripts/admin/trigger",
@@ -806,6 +803,7 @@
               "sv/customer-center/learn/send-credentials",
               "sv/customer-center/learn/enable-chat",
               "sv/customer-center/learn/link-form",
+              "sv/customer-center/learn/publish-faq",
               {
                 "group": "För administratörer",
                 "pages": [
@@ -817,12 +815,12 @@
           },
           {
             "group": "Systemdesign",
+            "root": "sv/ui/blogic/learn/index",
             "pages": [
-              "sv/ui/blogic/learn/index",
               {
                 "group": "Profiler",
+                "root": "sv/ui/blogic/learn/profiles/index",
                 "pages": [
-                  "sv/ui/blogic/learn/profiles/index",
                   "sv/ui/blogic/learn/profiles/personal",
                   "sv/ui/blogic/learn/profiles/common",
                   "sv/ui/blogic/learn/profiles/global"
@@ -833,8 +831,8 @@
               "sv/ui/blogic/learn/screen-properties",
               {
                 "group": "Extramenyer",
+                "root": "sv/ui/blogic/learn/extra-menus/index",
                 "pages": [
-                  "sv/ui/blogic/learn/extra-menus/index",
                   "sv/ui/blogic/learn/extra-menus/actions",
                   "sv/ui/blogic/learn/extra-menus/navigator",
                   "sv/ui/blogic/learn/extra-menus/properties"
@@ -856,14 +854,15 @@
       },
       {
         "group": "Inställningar och underhåll",
+        "root": "sv/admin/index",
+        "icon": "map",
         "pages": [
-          "sv/admin/index",
           "sv/admin/getting-started",
           "sv/admin/adjusting-views",
           {
             "group": "Licenser",
+            "root": "sv/admin/license/index",
             "pages": [
-              "sv/admin/license/index",
               "sv/admin/license/crm-suite",
               "sv/admin/license/user-plans",
               "sv/admin/license/activate",
@@ -872,8 +871,8 @@
           },
           {
             "group": "Inställningar",
+            "root": "sv/admin/preferences/index",
             "pages": [
-              "sv/admin/preferences/index",
               "sv/admin/preferences/update",
               "sv/admin/preferences/service-settings",
               "sv/admin/preferences/sms"
@@ -881,16 +880,16 @@
           },
           {
             "group": "Systemval",
+            "root": "sv/admin/options/index",
             "pages": [
-              "sv/admin/options/index",
               "sv/admin/options/configure-number-allocation",
               "sv/admin/options/change-ui-labels"
             ]
           },
           {
             "group": "Listor",
+            "root": "sv/admin/lists/index",
             "pages": [
-              "sv/admin/lists/index",
               "sv/admin/lists/add-items",
               "sv/admin/lists/update-items",
               "sv/admin/lists/restore",
@@ -902,16 +901,16 @@
           },
           {
             "group": "Administrering av användare",
+            "root": "sv/admin/user-management/index",
             "pages": [
-              "sv/admin/user-management/index",
               "sv/admin/user-management/add-associate",
               "sv/admin/user-management/update-user",
               "sv/admin/user-management/our-companies",
               "sv/admin/user-management/user-groups",
               {
                 "group": "Roll",
+                "root": "sv/admin/user-management/role/index",
                 "pages": [
-                  "sv/admin/user-management/role/index",
                   "sv/admin/user-management/role/create-role",
                   "sv/admin/user-management/role/update-role",
                   "sv/admin/user-management/role/set-data-rights-for-role",
@@ -922,8 +921,8 @@
           },
           {
             "group": "Import",
+            "root": "sv/admin/import/index",
             "pages": [
-              "sv/admin/import/index",
               "sv/admin/import/create-spreadsheet",
               "sv/admin/import/from-excel",
               "sv/admin/import/from-mac-address-book",
@@ -971,7 +970,14 @@
     "tab": "Versionshistorik",
     "icon": "bullhorn",
     "pages": [
-      "release-notes/11/index"
+      "release-notes/12/index"
+    ]
+  },
+  {
+    "tab": "Contribute",
+    "icon": "hand-holding-heart",
+    "pages": [
+      "contribute/index"
     ]
   }
 ]

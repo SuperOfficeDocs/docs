@@ -1,6 +1,7 @@
 ---
 uid: help-nl-privacy-add-source
 title: Items toevoegen aan de lijst Privacy - Bron
+sidebarTitle: "Bron toevoegen"
 description: Ontdek hoe u de privacylijsten in deze handleiding kunt wijzigen.
 keywords: Privacy bron lijst, Privacy bron toevoegen
 author: SuperOffice Product and Engineering
@@ -8,16 +9,14 @@ date: 09.02.2025
 version: 10.3
 content_type: howto
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: nl
-index: true
 redirect_from: /nl/admin/lists/learn/privacy-source-add
+index: true
+language: nl
 ---
-
-# Items toevoegen aan de lijst Privacy - Bron
 
 De lijst **Privacy - Bron** bevat opties die gebruikers selecteren om aan te tonen hoe en waar ze toestemming van een persoon hebben ontvangen.
 

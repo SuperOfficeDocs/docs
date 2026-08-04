@@ -6,18 +6,16 @@ keywords: chatten, lopende chats
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5
-audience: person
 content_type: concept
 license: cep
 tier: growth
 category: Service
 topic: chat
+audience: person
 audience_tooltip: SuperOffice CRM
-language: nl
 redirect_from: /nl/chat/learn/screen/
+language: nl
 ---
-
-# Chatten
 
 Met de functie **Chatten** in SuperOffice kunnen uw ondersteuningsmedewerkers en verkopers communiceren met en helpen van bestaande of potentiële klanten en andere mensen via de chatwidget op uw website. Deze functie kan bijvoorbeeld worden gebruikt voor service/support en pre-sales. U kunt eenvoudig [veelgestelde vragen][1], documenten/bijlagen en [sjablonen][3] integreren met de chat, zodat uw agenten tijd kunnen besparen door vooraf gedefinieerde teksten te gebruiken om hun antwoorden te versnellen.
 

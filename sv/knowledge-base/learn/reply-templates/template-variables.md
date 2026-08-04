@@ -1,22 +1,20 @@
 ---
 uid: help-sv-template-variables-service
-title: Mallvariabler
+title: Mallvariabler (Service)
 description: Mallvariabler
 keywords: mallvariabler
 author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: reference
+tier: starter
 category: service
 topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: sv
 redirect_from: /sv/request/reply-templates/learn/template-variables
+language: sv
 ---
-
-# Mallvariabler (Service)
 
 I e-postmeddelandet kan du använda mallvariabler för att infoga kundspecifika uppgifter och ge meddelandet en mer personlig prägel. På så sätt kan du anpassa innehållet efter varje enskild kund.
 

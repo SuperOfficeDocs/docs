@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from: /de/request/learn/howto/split-message
+language: de
 ---
-
-# Nachricht aufteilen
 
 Wenn eine Nachricht zwei verschiedene Anliegen enthält, die getrennt bearbeitet werden sollten, können Sie die Nachricht aufteilen und daraus eine neue Anfrage erstellen. Dies ist beispielsweise sinnvoll, wenn eine Nachricht sowohl eine technische Frage als auch eine Frage zur Rechnungsstellung enthält, da diese beiden Themen von unterschiedlichen Abteilungen bearbeitet werden.
 

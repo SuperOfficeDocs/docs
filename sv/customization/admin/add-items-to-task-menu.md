@@ -7,16 +7,14 @@ author: digitaldiina
 date: 05.04.2026
 version: 11.13
 content_type: howto
+tier: core
 category: customization
 audience: settings
 audience_tooltip: Inställningar och underhåll
-index: true
 redirect_from: /sv/admin/lists/learn/add-items-to-task-menu
-tier: core
+index: true
 language: sv
 ---
-
-# Lägg till poster i listan Uppgiftsmeny
 
 ## Steg
 

@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Opret sag
-
 Du kan oprette en ny sag i SuperOffice Service baseret på afsenderen og indholdet i en e-mailmeddelelse. Sagen knyttes automatisk til det rigtige firma og person, hvis de genkendes.
 
 ## Trin

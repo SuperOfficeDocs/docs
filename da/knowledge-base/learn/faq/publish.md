@@ -7,18 +7,16 @@ author: SuperOffice RnD
 date: 07.15.2025
 version: 10.5
 content_type: howto
-category: service
-topic: faq
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
+category: service
+topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from: /da/faq/learn/publish
+language: da
 ---
-
-# Udgivelse af FAQ-poster
 
 Når en sagsbehandler [opretter et forslag til en FAQ-post][1], vil det være ikke-udgivet og vil ikke være tilgængelig i SuperOffice Customer Centre. For at gøre det tilgængeligt skal en person med administratorrettigheder til ofte stillede spørgsmål offentliggøre den.
 

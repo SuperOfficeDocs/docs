@@ -1,22 +1,20 @@
 ---
 uid: help-da-template-variables-service
-title: Skabelonvariabler
+title: Skabelonvariabler (Service)
 description: Skabelonvariabler
 keywords: skabelonvariabler
 author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: reference
+tier: starter
 category: service
 topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: da
 redirect_from: /da/request/reply-templates/learn/template-variables
+language: da
 ---
-
-# Skabelonvariabler (Service)
 
 I e-mailmeddelelsen kan du bruge skabelonvariabler til at indsætte kundespecifikke oplysninger for at give meddelelsen et mere personligt præg. På denne måde kan du skræddersy indholdet til hver enkelt kunde.
 

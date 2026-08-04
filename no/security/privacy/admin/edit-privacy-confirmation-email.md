@@ -8,16 +8,14 @@ date: 12.19.2024
 version: 10
 content_type: howto
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: no
-index: true
 redirect_from: /no/security/privacy/learn/edit-privacy-confirmation-email
+index: true
+language: no
 ---
-
-# Rediger e-post med personvernbekreftelse
 
 Ifølge GDPR har enkeltpersoner "rett til å bli informert". Dette betyr at de har rett til å bli varslet enten på forhånd eller innen 30 dager etter at deres personopplysninger er samlet inn. GDPR stipulerer at enkeltpersoner har rett til å bli informert om (a) at en organisasjon har til hensikt å lagre personopplysningene deres og (b) hva organisasjonen har til hensikt å bruke dataene deres til.
 

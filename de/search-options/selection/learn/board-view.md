@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Board-Ansicht in Selektionen verwenden
-
 Die Board-Ansicht zeigt Ihre [Selektion][2] in einem spaltenbasierten Layout mit Karten an. Sie können die Selektionsmitglieder (Datensätze auf dem Board) gruppieren und filtern sowie Karten per Drag-and-Drop zwischen Gruppen verschieben.
 
 Die Funktionalität ist für alle unterstützten Selektionstypen gleich: Sie können Karten ziehen, Aufgabenmenüs öffnen und Board-Einstellungen anpassen. Die verfügbaren Gruppierungs- und Filterfelder unterscheiden sich je nachdem, ob Sie mit Firmen, Personen, Verkäufen, Projekten oder Anfragen arbeiten.

@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: nl
 ---
-
-# Uw mailing opnieuw verzenden
 
 Als u na het bekijken van de resultaten van uw mailing merkt dat veel van de e-mailadressen zijn [geretourneerd][1], betekent dit dat deze personen uw mailing niet hebben ontvangen. Nadat u de geretourneerde e-mails hebt afgehandeld, is het een goed idee om uw mailing opnieuw te verzenden.
 

@@ -1,18 +1,16 @@
 ---
 uid: help-sv-customer-centre-form
-title: Så kopplar du ett webbformulär till kundcentret
+title: Använd webbformulär i ditt Kundcenter
 description: I den här guiden förklarar vi hur du använder ett webbformulär.
+keywords: formulär, Kundcenter
 author: Bergfrid Dias
 date: 03.20.2023
-keywords: formulär, Kundcenter
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
 language: sv
 ---
-
-# Använd webbformulär i ditt Kundcenter
 
 Du kan använda integrerade webbformulär för att inhämta information från de kunder som besöker ditt Kundcenter och spara informationen automatiskt i SuperOffice.
 

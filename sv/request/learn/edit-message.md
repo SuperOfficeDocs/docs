@@ -7,16 +7,14 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+functional_right: general administrator
 license: serviceessentials
 tier: starter
-functional_right: general administrator
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from: /sv/request/learn/howto/edit-message
+language: sv
 ---
-
-# Redigera meddelande
 
 Endast användare med den funktionella rättigheten *general administrator* kan ändra egenskaperna för ett meddelande i ett ärende. Det går dock inte att redigera själva meddelandetexten.
 

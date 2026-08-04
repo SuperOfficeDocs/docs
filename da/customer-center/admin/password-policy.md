@@ -6,14 +6,12 @@ keywords: Tjeneste, indstillinger
 author: SuperOffice RnD
 date: 03.29.2023
 content_type: reference
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: da
 redirect_from: /da/admin/preferences/learn/global-preferences/password
+language: da
 ---
-
-# Adgangskodepolitik for Customer Centre
 
 Gå til <i class="ph ph-gear" aria-hidden="true"></i> **Præferencer** i navigatoren, og vælg fanen **Globale præferencer**. Afsnittet om **Adgangskodepolitik for Customer Centre** indeholder følgende indstillinger:
 

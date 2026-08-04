@@ -1,6 +1,7 @@
 ---
 uid: help-no-privacy-add-purpose
 title: Konfigurer personverninnstillinger for GDPR - Legg til formål
+sidebarTitle: "Legg til formål"
 description: Finn ut hvordan du konfigurerer personverninnstillingene for firmaet ditt.
 keywords: personverninnstilling, legg til formål, ekstern personvernerklæring
 author: SuperOffice Product and Engineering
@@ -8,16 +9,14 @@ date: 09.01.2025
 version: 10.5
 content_type: howto
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-tier: starter
-language: no
-index: true
 redirect_from: /no/security/privacy/learn/admin/add-consent-purpose
+index: true
+language: no
 ---
-
-# Konfigurer personverninnstillinger for GDPR - Legg til formål
 
 Finn ut hvordan du legger til og redigerer formål for behandling av personopplysninger, aktiverer standardinnstillinger for hjemmelen og aktiverer personverninnstillingene for e-markedsføring i utsendelser.
 

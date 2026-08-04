@@ -1,20 +1,19 @@
 ---
 uid: help-sv-creating-shortcuts-to-entries-in-crm
-title: Skapa genvägar till poster i CRM
+title: Skapa genvägar till poster i SuperOffice CRM
+sidebarTitle: "Skapa genvägar"
 description: Skapa genvägar till poster i CRM
 keywords: kopiera genväg
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: sv
 redirect_from: /sv/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm
+language: sv
 ---
-
-# Skapa genvägar till poster i SuperOffice CRM
 
 Du kan skapa genvägar till en post i SuperOffice CRM för exempelvis en kontakt, en händelse, en försäljning eller en bild. Då kan andra interna användare klicka på genvägen och komma direkt till den aktuella posten.
 

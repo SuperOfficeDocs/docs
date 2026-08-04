@@ -7,14 +7,12 @@ author: SuperOffice RnD
 date: 03.14.2025
 version: 10.5.2
 content_type: concept
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
-language: nl
 redirect_from: /nl/project/learn/screen/project-members-tab
+language: nl
 ---
-
-# Projectleden
 
 Projectleden zijn de deelnemers aan een project. Voor elk lid heeft u toegang tot de informatie over het bedrijf, de naam van de persoon, de functie in het project, commentaar, het e-mailadres en het telefoonnummer.
 

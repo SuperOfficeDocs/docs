@@ -7,18 +7,16 @@ author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5
 content_type: reference
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: core
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: nl
 redirect_from: /nl/request/learn/screen/knowledge-base
+language: nl
 ---
-
-# Kennisdatabase
 
 De **kennisdatabase** is toegankelijk vanuit het **Hoofdmenu** in de bovenste balk en geeft verzoekbehandelaars toegang tot opgeslagen gegevens op één locatie. Hierdoor kan informatie gemakkelijker worden gevonden en beschikbaar worden gesteld aan personen. U kunt de kennisdatabase gebruiken om informatie te zoeken en informatie op te halen voor hergebruik in communicatie met personen. De kennisdatabase bestaat uit de volgende hoofdonderdelen:
 

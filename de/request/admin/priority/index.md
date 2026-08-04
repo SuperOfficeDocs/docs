@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-language: de
 redirect_from: /de/request/learn/priority/index
 index: true
+language: de
 ---
-
-# Anfrageprioritäten
 
 Allen in SuperOffice erfassten Anfragen wird eine Priorität zugewiesen, die die Wichtigkeit der Anfrage widerspiegelt.
 

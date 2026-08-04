@@ -1,23 +1,22 @@
 ---
 uid: help-sv-form-view-statistics
 title: Spåra formulärinlämningar och visa statistik
+sidebarTitle: "Formulärstatistik"
 description: Spåra formulärinlämningar och visa statistik
 keywords: Formulär
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: forms
 license: marketingessentials
 tier: growth
+category: marketing
+topic: forms
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /sv/marketing/forms/learn/submissions/track
 language: sv
 ---
-
-# Spåra formulärinlämningar och visa statistik
 
 ## Steg
 

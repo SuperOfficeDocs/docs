@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Overvåg din pipeline, og forudsig salg
-
 For at nå dine salgsmål er det vigtigt at opretholde en sund pipeline. SuperOffice CRM giver to hovedmåder at forudsige salg og overvåge fremskridt på: **dashboard-ruder** og **udvalg (Find)**.
 
 Disse værktøjer hjælper dig med at identificere huller, fremhæve fastlåste handler og sammenligne dit faktiske salg med dine mål - uanset om du arbejder individuelt eller i en gruppe.

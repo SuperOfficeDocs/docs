@@ -13,11 +13,9 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
-language: da
 redirect_from: /da/chat/learn/screen/index
+language: da
 ---
-
-# Chat
 
 Med funktionen **Chat** i SuperOffice kan dine suppoertrepræsentanter og sælgere kommunikere med og hjælpe eksisterende kunder, kundeemner og andre personer via chatwidgetten på dit websted. Denne funktion kan f.eks. bruges til service/support og pre-sales. Du kan nemt integrere[ofte stillede spørgsmål][1], dokumenter/vedhæftede filer og [skabeloner][3] med chatten, så dine agenter sparer tid ved at bruge foruddefinerede tekster til at fremskynde deres svar.
 

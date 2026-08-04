@@ -7,13 +7,11 @@ author: Bergfrid Dias
 date: 10.08.2024
 version: 10.3.10
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: sv
 ---
-
-# Lägg till eller ändra en projektbild
 
 Fliken **Bild** gör det möjligt att ladda upp och hantera bilder för ett projekt.
 

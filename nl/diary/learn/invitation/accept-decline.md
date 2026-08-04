@@ -1,6 +1,7 @@
 ---
 uid: help-nl-invitation-accept
 title: Vervolgactiviteiten waarvoor u bent uitgenodigd
+sidebarTitle: "Uitgenodigde vervolgactiviteiten"
 description: Vervolgactiviteiten weergeven waarvoor u bent uitgenodigd
 keywords: agenda, vervolgactiviteit, uitnodiging
 author: Bergfrid Dias
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: nl
 ---
-
-# Vervolgactiviteiten waarvoor u bent uitgenodigd
 
 Deelnemers die worden uitgenodigd voor een vervolgactiviteit ontvangen een melding op de bovenste balk.
 

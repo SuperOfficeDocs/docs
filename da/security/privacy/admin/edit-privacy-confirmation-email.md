@@ -1,6 +1,7 @@
 ---
 uid: help-da-edit-privacy-confirmation-email
 title: Rediger e-mail med bekræftelse om personbeskyttelse
+sidebarTitle: "Bekræftelsesmail"
 description: I denne vejledning lærer du, hvordan du redigerer e-mailen med bekræftelse om personbeskyttelse.
 keywords: bekræftelse om personbeskyttelse, e-mail skabelon
 author: Bergfrid Dias
@@ -8,16 +9,14 @@ date: 12.19.2024
 version: 10
 content_type: howto
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: da
-index: true
 redirect_from: /da/security/privacy/learn/edit-privacy-confirmation-email
+index: true
+language: da
 ---
-
-# Rediger e-mail med bekræftelse om personbeskyttelse
 
 Ifølge GDPR har enkeltpersoner "ret til at blive informeret". Det betyder, at de har ret til at blive underrettet enten på forhånd eller inden for 30 dage efter, at deres personoplysninger er blevet indsamlet. GDPR fastsætter, at enkeltpersoner har ret til at blive informeret om (a), at en organisation har til hensigt at gemme deres personoplysninger, og (b) hvad organisationen har til hensigt at bruge deres oplysninger til.
 

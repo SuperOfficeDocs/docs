@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: no
 redirect_from: /no/request/learn/howto/split-message
+language: no
 ---
-
-# Dele melding
 
 Hvis en melding inneholder to spørsmål som må behandles separat, kan du dele meldingen og opprette en ny sak. Dette er nyttig hvis meldingen både inneholder et teknisk spørsmål og et fakturaspørsmål, siden disse håndteres av ulike avdelinger.
 

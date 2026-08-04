@@ -1,22 +1,21 @@
 ---
 uid: help-de-edit-privacy-confirmation-email
 title: E-Mail zur Datenschutzbestätigung bearbeiten
+sidebarTitle: "Bestätigungsmail"
 description: In dieser Anleitung lernen Sie, wie Sie die E-Mail für die Datenschutzbestätigung bearbeiten können.
 keywords: E-Mail zur Datenschutzbestätigung, E-Mail Vorlage
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10
 content_type: howto
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: de
-index: true
 redirect_from: /de/security/privacy/learn/edit-privacy-confirmation-email
+index: true
+language: de
 ---
-
-# E-Mail zur Datenschutzbestätigung bearbeiten
 
 Gemäß der DSGVO haben Einzelpersonen das "Recht auf Information". Das bedeutet, dass sie das Recht haben, entweder im Voraus oder innerhalb von 30 Tagen nach der Erhebung ihrer persönlichen Daten benachrichtigt zu werden. Die DSGVO sieht vor, dass Einzelpersonen das Recht haben, darüber informiert zu werden, (a) dass eine Organisation beabsichtigt, ihre personenbezogenen Daten zu speichern, und (b) wofür die Organisation ihre Daten verwenden möchte.
 

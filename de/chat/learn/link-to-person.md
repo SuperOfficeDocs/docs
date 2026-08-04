@@ -1,6 +1,6 @@
 ---
 uid: help-de-chat-link-to-person
-title: Chat mit einer bestehenden Person verknüpfen
+title: Chat mit bestehender Person verknüpfen
 description: Wenn ein Kunde eine Anfrage über das Chat-Widget auf der Website sendet, ist es nicht nur wichtig, darauf zu antworten, sondern sie auch auf seiner Personenkarte zu erfassen.
 keywords: chat mit person verknüpfen, vorgeschlagene person, neue person erstellen
 author: SuperOffice Product and Engineering
@@ -13,11 +13,9 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
-language: de
 redirect_from: /de/chat/learn/create-contact
+language: de
 ---
-
-# Chat mit bestehender Person verknüpfen
 
 Wenn Sie auf einen Chat antworten, versucht SuperOffice automatisch, den Kunden in SuperOffice anhand der angegebenen Informationen (E-Mail-Adresse und Name) zu finden. Wenn der Kunde bereits als Person in SuperOffice registriert ist, können Sie relevante Informationen in der Seitenleiste auf der rechten Seite der Ansicht **Chat** anzeigen. Doppelklicken Sie auf einen Datensatz, um ihn anzuzeigen.
 

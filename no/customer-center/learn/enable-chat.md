@@ -1,18 +1,16 @@
 ---
 uid: help-no-customer-center-chat
-title: Aktivere chat i kundesenteret
+title: Koble chatten til kundesenteret
 description: I denne guiden finner du ut hvordan du kobler en chatkanal til kundesenteret ditt.
+keywords: chat, kundesenter
 author: Bergfrid Dias
 date: 02.22.2023
-keywords: chat, kundesenter
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
 language: no
 ---
-
-# Koble chatten til kundesenteret
 
 Ved å legge til chatwidgeten i Kundesenter kan du gjøre det enklere for kundene dine å be om hjelp og umiddelbart få svaret de leter etter.
 

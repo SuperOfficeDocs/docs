@@ -1,6 +1,7 @@
 ---
 uid: help-de-service-settings
-title: Systemeinstellungen
+title: Unterschiedliche Einstellungen für Service
+sidebarTitle: "Serviceeinstellungen"
 description: Systemeinstellungen
 keywords: Service
 author: digitaldiina
@@ -11,12 +12,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-language: de
 redirect_from: /de/request/learn/admin/index
 index: true
+language: de
 ---
-
-# Unterschiedliche Einstellungen für Service
 
 In diesem Bereich können Sie die Einstellungen für **Service** konfigurieren, um sie individuell an die Anforderungen Ihres Unternehmens anzupassen. Welche Optionen angezeigt werden und welche Aktionen Sie durchführen können, hängt von den Rechten ab, die Ihrem Benutzerprofil zugewiesen sind. Diese Rechte werden unter **Benutzer** verwaltet.
 

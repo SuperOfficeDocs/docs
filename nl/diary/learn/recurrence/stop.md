@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Herhalende vervolgactiviteit stoppen
-
 Als u de herhalende vervolgactiviteit stopt, worden alle herhalingen van de vervolgactiviteit *na* de vervolgactiviteit die u hebt bewerkt, verwijderd. Wanneer de vervolgactiviteit de eerste is van een reeks herhalende vervolgactiviteiten, wordt het herhalende patroon verwijderd en wordt dit een "normale" vervolgactiviteit.
 
 ## Stop met herhalen (behoud deze instantie)

@@ -7,15 +7,13 @@ author: digitaldiina
 date: 03.17.2026
 version: 11.11
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Inställningar och underhåll
-tier: growth
-language: sv
-index: true
 redirect_from: /sv/customer-center/admin/index
+index: true
+language: sv
 ---
-
-# Styling av prenumerationssida
 
 Prenumerationssidan låter kontakter hantera vilka utskick de vill ta emot från ditt företag. Sidan är länkad från:
 

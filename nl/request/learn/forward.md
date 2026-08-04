@@ -1,20 +1,19 @@
 ---
 uid: help-nl-request-forward
 title: Verzoek doorsturen naar externe contactpersoon
+sidebarTitle: "Doorsturen"
 description: Leer hoe u een verzoek kunt doorsturen naar een externe contactpersoon in SuperOffice.
 keywords: verzoek, doorsturen, externe contactpersoon
 author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: nl
 redirect_from: /nl/request/learn/howto/forward
+language: nl
 ---
-
-# Verzoek doorsturen naar externe contactpersoon
 
 Als verzoekbehandelaar kunt u niet altijd een verzoek beantwoorden, zelfs niet met hulp van uw collega's. Soms moet u hulp van anderen inroepen, bijvoorbeeld door advies in te winnen bij een onderleverancier een partner of een bedrijfsspecialist.
 

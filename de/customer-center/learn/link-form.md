@@ -1,18 +1,17 @@
 ---
 uid: help-de-customer-centre-form
-title: Wie man ein Web-Formular mit dem Kundenzentrum verknüpft
+title: Web-Formulare in Ihrem Kundenzentrum verwenden
+sidebarTitle: "Web-Formulare"
 description: "In dieser Anleitung lernen Sie, wie Sie ein Web-Formular verwenden."
+keywords: Formular, Kundenzentrum
 author: Bergfrid Dias
 date: 03.20.2023
-keywords: Formular, Kundenzentrum
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
 language: de
 ---
-
-# Web-Formulare in Ihrem Kundenzentrum verwenden
 
 Sie können integrierte Web-Formulare verwenden, um Informationen von den Kunden bei deren Besuch in Ihrem Kundenzentrum zu erfassen und diese Informationen automatisch in SuperOffice zu speichern.
 

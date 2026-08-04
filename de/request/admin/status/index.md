@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-language: de
 redirect_from: /de/request/learn/status/index
 index: true
+language: de
 ---
-
-# Anfragestatus
 
 Alle in SuperOffice erfassten Anfragen haben einen Status wie **Offen**, **Bearbeitet** oder **Auf Termin gelegt**. Wenn Sie im Navigator und in der Registerkarte **Anfragestatus** **Anfrage**auswählen, können Sie die bereits im System festgelegten Anfragenstatus sehen und zusätzliche Status erstellen. Ein Anfragestatus muss mit einem internen Status des Systems wie **Offen** oder **Bearbeitet** verknüpft werden. Jeder interne Status muss mit mindestens einem Anfragestatus verknüpft sein.
 

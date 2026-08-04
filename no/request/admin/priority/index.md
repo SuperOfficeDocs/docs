@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-language: no
 redirect_from: /no/request/learn/priority/index
 index: true
+language: no
 ---
-
-# Saksprioriteter
 
 Alle saker som registreres i SuperOffice, tilordnes en prioritet som gjenspeiler hvor viktig henvendelsen er.
 

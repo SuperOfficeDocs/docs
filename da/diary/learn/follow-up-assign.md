@@ -1,6 +1,6 @@
 ---
 uid: help-da-follow-up-assign
-title: Tildele opfølgning
+title: Deleger en opfølgning
 description: Overførsel af en opfølgning til andre
 keywords: dagbog, opfølgning, medarbejder, deleger, tildele
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: da
 ---
-
-# Deleger en opfølgning
 
 En tildelt opfølgning er en opfølgning, du har delegeret til en anden person.
 

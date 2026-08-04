@@ -1,17 +1,15 @@
 ---
 uid: help-nl-fastsearcher-navigator
-title: De functie Snel zoeken gebruiken in de navigator
+title: Snel zoeken gebruiken in de navigator
 description: De functie Snel zoeken gebruiken
+keywords: zoeken, Snel zoeken, navigator
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2
-keywords: zoeken, Snel zoeken, navigator
 content_type: howto
 tier: starter
 language: nl
 ---
-
-# Snel zoeken gebruiken in de navigator
 
 1. Klik op het woord **Bedrijf**, **Persoon**, **Verkoop**, **Project** of **Selectie** in de navigator (links in het venster). Bovenin het venster wordt een leeg veld weergegeven. Onder het veld staat een [lijst met records waarmee u eerder hebt gewerkt][1].
 

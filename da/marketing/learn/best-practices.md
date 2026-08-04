@@ -7,16 +7,14 @@ author: Bergfrid Dias, Jeanette Small Strøm
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /da/marketing/learn/customize-for-mobile
 language: da
 ---
-
-# Bedste praksis
 
 * Brug standardskrifttyper for bedst mulig læsbarhed uanset e-mailklient og webbrowser.
 * Før du sender en udsendelse ud, bør du [teste, at kundedata sættes korrekt ind i meddelelsen][4].

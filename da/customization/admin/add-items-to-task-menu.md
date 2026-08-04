@@ -1,22 +1,21 @@
 ---
 uid: help-da-task-menu-add
 title: Tilføjelse af forekomster til listen for menuen Opgave
+sidebarTitle: "Menuen Opgave"
 description: Tilføjelse af forekomster til listen for menuen Opgave
 keywords: Opgavemenuen
 author: digitaldiina
 date: 05.04.2026
 version: 11.13
 content_type: howto
+tier: core
 category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from: /da/admin/lists/learn/add-items-to-task-menu
-tier: core
+index: true
 language: da
 ---
-
-# Tilføjelse af forekomster til listen for menuen Opgave
 
 ## Trin
 

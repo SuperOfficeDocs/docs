@@ -7,19 +7,17 @@ author: digitaldiina
 date: 10.21.2025
 version: 11.5
 content_type: howto
+tier: starter
 category: Settings and maintenance
 topic: options
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /nl/admin/options/learn/number-allocation/index
   - /nl/admin/options/learn/number-allocation/configure
-tier: starter
+index: true
 language: nl
 ---
-
-# Nummertoewijzing opgeven
 
 Tellers zorgen ervoor dat telkens wanneer een nieuw exemplaar van een veld wordt gebruikt, de waarde van het veld met 1 wordt verhoogd. Wanneer het eerste bedrijf in de database in het veld **Nummer** wordt geregistreerd met de waarde 10001, krijgt het negentiende bedrijf de waarde **10019**.
 

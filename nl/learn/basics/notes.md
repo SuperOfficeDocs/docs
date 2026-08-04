@@ -7,13 +7,11 @@ author: SuperOffice RnD
 date: 03.14.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: nl
 ---
-
-# Notities maken
 
 In SuperOffice CRM kunt u notities toevoegen aan een bedrijf, persoon, verkoop, project of selectie. Deze notities kunnen worden gebruikt om allerlei informatie op te slaan en zijn doorzoekbaar via [Zoeken in vrije tekst][1].
 

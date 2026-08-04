@@ -7,19 +7,17 @@ author: digitaldiina
 date: 10.21.2025
 version: 11.5
 content_type: howto
+tier: starter
 category: Settings and maintenance
 topic: options
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /no/admin/options/learn/number-allocation/index
   - /no/admin/options/learn/number-allocation/configure
-tier: starter
+index: true
 language: no
 ---
-
-# Angi nummertildeling
 
 En teller fungerer slik at verdien i feltet øker med 1 for hver gang det registreres noe i feltet. Det kan for eksempel bety at det første firmaet du registrerer i databasen, får verdien 10001 i feltet **Nummer**, mens det nittende firmaet får verdien **10019**.
 

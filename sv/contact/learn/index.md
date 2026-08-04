@@ -7,14 +7,12 @@ author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: sv
 redirect_from: /sv/contact/learn/screen/index
+language: sv
 ---
-
-# Kontaktperson
 
 Fönstret **Kontakt** ger en snabb överblick över all kommunikation och interaktion med en person. Här kan du hantera kontaktuppgifter, spåra aktiviteter och komma åt GDPR-relaterad dokumentation - allt från en och samma skärm.
 

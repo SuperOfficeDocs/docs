@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: da
 ---
-
-# Genudsende din mailing
 
 Hvis du efter at have set på resultaterne af din udsendelse, bemærker, at mange af e-mail-adresserne er blevet [afvist][1], betyder det, at de pågældende kontakter ikke modtog din udsendelse. Når du har håndteret de afviste e-mails, er det en god ide at genudsende din e-mailudsendelse.
 

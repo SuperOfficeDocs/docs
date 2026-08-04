@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from: /da/request/learn/howto/accept
+language: da
 ---
-
-# Overtag (tag ansvar for) sag
 
 Dette er særligt relevant for ikke fordelte sager (sager uden en defineret ejer). For at tage ansvar for en sag er det vigtigt at følge nedenstående procedurer for at markere, at du har overtaget den. Ellers er der risiko for, at andre svarer på sagen samtidigt.
 

@@ -8,11 +8,9 @@ date: 12.10.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: no
 redirect_from: /no/document/learn/template-variables
+language: no
 ---
-
-# Malvariabler
 
 Malvariabler brukes til å sette inn data fra SuperOffice i e-poster, tilbud, møtevarsler, dokumentmaler og så videre. Du kan bruke malvariabler til å tilpasse og automatisere innlegging av kundedata (eller data fra person, salg og annet) i innholdet ditt og sette opp komplekse tilbud.
 

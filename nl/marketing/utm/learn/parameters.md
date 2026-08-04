@@ -7,16 +7,14 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: concept
-category: marketing
-topic: conversion
 license: marketingpremium
 tier: plus
+category: marketing
+topic: conversion
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: nl
 ---
-
-# UTM-parameters
 
 Er zijn vijf standaard UTM-parameters die je aan het einde van je campagnekoppelingen kunt toevoegen:
 

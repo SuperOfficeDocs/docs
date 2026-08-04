@@ -9,27 +9,17 @@
   {
     "tab": "Brukerveiledning",
     "icon": "book",
-    "groups": [
-      {
-        "group": "Oversikt",
-        "pages": [
-          "no/learn/index"
-        ]
-      },
-      {
-        "group": "Introduksjon",
-        "pages": [
-          "no/learn/intro"
-        ]
-      },
+    "root": "no/learn/index",
+    "pages": [
+      "no/learn/intro",
       {
         "group": "Komme i gang",
+        "root": "no/learn/getting-started/index",
         "pages": [
-          "no/learn/getting-started/index",
           {
             "group": "Elementene i utseende",
+            "root": "no/learn/getting-started/main-screen/index",
             "pages": [
-              "no/learn/getting-started/main-screen/index",
               "no/learn/getting-started/main-screen/navigator",
               "no/learn/getting-started/main-screen/buttons-in-menu-bar",
               "no/learn/getting-started/main-screen/side-panel",
@@ -45,8 +35,8 @@
       },
       {
         "group": "Lær det grunnleggende",
+        "root": "no/learn/basics/index",
         "pages": [
-          "no/learn/basics/index",
           "no/learn/basics/notifications",
           "no/learn/basics/fav",
           "no/learn/basics/history",
@@ -58,8 +48,8 @@
           "no/learn/basics/bulk-update",
           {
             "group": "Arbeide med detaljkort",
+            "root": "no/learn/section-tabs/index",
             "pages": [
-              "no/learn/section-tabs/index",
               "no/learn/section-tabs/activities-tab",
               "no/learn/section-tabs/contacts-tab",
               "no/learn/section-tabs/relations-tab",
@@ -81,8 +71,8 @@
       },
       {
         "group": "Søkealternativer",
+        "root": "no/search-options/learn/index",
         "pages": [
-          "no/search-options/learn/index",
           "no/search-options/learn/find-screen",
           "no/search-options/learn/search-criteria",
           "no/search-options/learn/freetext-search",
@@ -99,8 +89,8 @@
       },
       {
         "group": "Dashbord",
+        "root": "no/dashboard/learn/index",
         "pages": [
-          "no/dashboard/learn/index",
           "no/dashboard/learn/create",
           "no/dashboard/learn/update",
           "no/dashboard/learn/working-with-tiles",
@@ -112,8 +102,9 @@
       },
       {
         "group": "Firma",
+        "root": "no/company/index",
+        "icon": "map",
         "pages": [
-          "no/company/index",
           "no/company/learn/index",
           "no/company/learn/create",
           "no/company/learn/edit",
@@ -125,8 +116,9 @@
       },
       {
         "group": "Person",
+        "root": "no/contact/index",
+        "icon": "map",
         "pages": [
-          "no/contact/index",
           "no/contact/learn/index",
           "no/contact/learn/create",
           "no/contact/learn/edit",
@@ -139,8 +131,9 @@
       },
       {
         "group": "Dagbok",
+        "root": "no/diary/index",
+        "icon": "map",
         "pages": [
-          "no/diary/index",
           "no/diary/learn/index",
           "no/diary/learn/follow-ups",
           "no/diary/learn/video-meetings",
@@ -155,16 +148,16 @@
           "no/diary/learn/send-as-email",
           {
             "group": "Gjentakelse",
+            "root": "no/diary/learn/recurrence/index",
             "pages": [
-              "no/diary/learn/recurrence/index",
               "no/diary/learn/recurrence/create",
               "no/diary/learn/recurrence/stop"
             ]
           },
           {
             "group": "Invitasjoner",
+            "root": "no/diary/learn/invitation/index",
             "pages": [
-              "no/diary/learn/invitation/index",
               "no/diary/learn/invitation/add-attendee",
               "no/diary/learn/invitation/accept-decline"
             ]
@@ -180,8 +173,9 @@
       },
       {
         "group": "Dokument",
+        "root": "no/document/index",
+        "icon": "map",
         "pages": [
-          "no/document/index",
           "no/document/learn/index",
           "no/document/library/learn/index",
           {
@@ -195,11 +189,12 @@
           },
           {
             "group": "Dokumentmaler",
+            "root": "no/document/templates/learn/index",
             "pages": [
-              "no/document/templates/learn/index",
               "no/document/templates/learn/document-types",
               {
                 "group": "Malvariabler",
+                "root": "no/document/templates/learn/template-variables",
                 "pages": [
                   {
                     "group": "Referanse",
@@ -232,11 +227,12 @@
               },
               {
                 "group": "Flettefelt (tilbudsmaler)",
+                "root": "no/document/templates/learn/quote-templates",
                 "pages": [
                   {
                     "group": "Referanse",
+                    "root": "no/document/templates/merge-fields/index",
                     "pages": [
-                      "no/document/templates/merge-fields/index",
                       "no/document/templates/merge-fields/quote",
                       "no/document/templates/merge-fields/alternative",
                       "no/document/templates/merge-fields/group",
@@ -256,14 +252,15 @@
       },
       {
         "group": "E-post",
+        "root": "no/email/index",
+        "icon": "map",
         "pages": [
-          "no/email/index",
           "no/email/learn/index",
           "no/email/learn/change-default-mail-client",
           {
             "group": "Innboks",
+            "root": "no/email/inbox/learn/index",
             "pages": [
-              "no/email/inbox/learn/index",
               "no/email/inbox/learn/setup",
               "no/email/inbox/learn/preview",
               "no/email/inbox/learn/compose",
@@ -280,8 +277,8 @@
               "no/email/admin/add-email-template",
               {
                 "group": "Postkasseadministrasjon",
+                "root": "no/email/admin/mailbox/index",
                 "pages": [
-                  "no/email/admin/mailbox/index",
                   "no/email/admin/mailbox/create-mailbox",
                   "no/email/admin/mailbox/create-sms-mailbox",
                   "no/email/admin/mailbox/create-email-filter",
@@ -294,8 +291,9 @@
       },
       {
         "group": "Salg",
+        "root": "no/sale/index",
+        "icon": "map",
         "pages": [
-          "no/sale/index",
           "no/sale/learn/index",
           "no/sale/learn/create",
           "no/sale/learn/update",
@@ -303,6 +301,7 @@
           "no/sale/learn/tutorial",
           {
             "group": "Interessenter",
+            "root": "no/sale/learn/stakeholders/index",
             "pages": [
               "no/sale/learn/stakeholders/create",
               "no/sale/learn/stakeholders/edit"
@@ -311,16 +310,16 @@
           "no/sale/learn/forecasting",
           {
             "group": "Salgsmål",
+            "root": "no/sale/learn/sales-targets/index",
             "pages": [
-              "no/sale/learn/sales-targets/index",
               "no/sale/learn/sales-targets/create",
               "no/sale/learn/sales-targets/target-types"
             ]
           },
           {
             "group": "Tilbud",
+            "root": "no/sale/learn/quote/index",
             "pages": [
-              "no/sale/learn/quote/index",
               "no/sale/learn/quote/create",
               "no/sale/learn/quote/add-alternative",
               "no/sale/learn/quote/create-quote-document",
@@ -330,8 +329,8 @@
           },
           {
             "group": "For administratorer",
+            "root": "no/sale/admin/index",
             "pages": [
-              "no/sale/admin/index",
               "no/sale/admin/sale-stage",
               "no/sale/admin/sale-type",
               "no/sale/admin/create-sales-guide",
@@ -339,6 +338,7 @@
               "no/sale/admin/add-currency",
               {
                 "group": "Tilbud",
+                "root": "no/sale/admin/quote/index",
                 "pages": [
                   "no/sale/admin/quote/price-list-and-products",
                   "no/sale/admin/quote/configure-product-fields",
@@ -351,8 +351,9 @@
       },
       {
         "group": "Prosjekt",
+        "root": "no/project/index",
+        "icon": "map",
         "pages": [
-          "no/project/index",
           "no/project/learn/index",
           "no/project/learn/create",
           "no/project/learn/add-image",
@@ -361,8 +362,8 @@
           "no/project/learn/delete",
           {
             "group": "Prosjektdeltakere",
+            "root": "no/project/learn/project-members/index",
             "pages": [
-              "no/project/learn/project-members/index",
               "no/project/learn/project-members/add",
               "no/project/learn/project-members/edit",
               "no/project/learn/project-members/invite-to-meeting",
@@ -374,8 +375,8 @@
           "no/project/learn/tutorial",
           {
             "group": "For administratorer",
+            "root": "no/project/admin/index",
             "pages": [
-              "no/project/admin/index",
               "no/project/admin/project-status",
               "no/project/admin/project-type",
               "no/project/admin/create-project-guide",
@@ -386,8 +387,9 @@
       },
       {
         "group": "Saksbehandling",
+        "root": "no/request/index",
+        "icon": "map",
         "pages": [
-          "no/request/index",
           "no/request/learn/index",
           "no/request/learn/handle-request-ai",
           "no/request/learn/find",
@@ -409,12 +411,12 @@
           "no/request/learn/delete",
           {
             "group": "For administratorer",
+            "root": "no/request/admin/index",
             "pages": [
-              "no/request/admin/index",
               {
                 "group": "Sakstyper",
+                "root": "no/request/admin/type/index",
                 "pages": [
-                  "no/request/admin/type/index",
                   "no/request/admin/type/create",
                   "no/request/admin/type/delete"
                 ]
@@ -422,8 +424,8 @@
               "no/request/admin/relation-rules",
               {
                 "group": "Kategorier",
+                "root": "no/request/admin/category/index",
                 "pages": [
-                  "no/request/admin/category/index",
                   "no/request/admin/category/create",
                   "no/request/admin/category/delete",
                   "no/request/admin/category/external-categories"
@@ -431,8 +433,8 @@
               },
               {
                 "group": "Prioriteter",
+                "root": "no/request/admin/priority/index",
                 "pages": [
-                  "no/request/admin/priority/index",
                   "no/request/admin/priority/create",
                   "no/request/admin/priority/delete",
                   "no/request/admin/priority/escalation-levels"
@@ -440,8 +442,8 @@
               },
               {
                 "group": "Saksstatus",
+                "root": "no/request/admin/status/index",
                 "pages": [
-                  "no/request/admin/status/index",
                   "no/request/admin/status/create",
                   "no/request/admin/status/delete"
                 ]
@@ -454,8 +456,8 @@
       },
       {
         "group": "Egendefinerte objekter",
+        "root": "no/custom-objects/learn/index",
         "pages": [
-          "no/custom-objects/learn/index",
           "no/custom-objects/learn/more-tab",
           {
             "group": "Brukerdefinerte felt",
@@ -485,8 +487,8 @@
       },
       {
         "group": "Utvalg",
+        "root": "no/search-options/selection/learn/index",
         "pages": [
-          "no/search-options/selection/learn/index",
           "no/search-options/selection/learn/create",
           "no/search-options/selection/learn/update",
           "no/search-options/selection/learn/combine",
@@ -495,8 +497,8 @@
           "no/search-options/selection/learn/board-view",
           {
             "group": "Utføre oppgaver ved hjelp av utvalg",
+            "root": "no/search-options/selection/learn/howto/index",
             "pages": [
-              "no/search-options/selection/learn/howto/index",
               "no/search-options/selection/learn/howto/create-mailings",
               "no/search-options/selection/learn/howto/send-email",
               "no/search-options/selection/learn/howto/generate-follow-ups",
@@ -510,8 +512,8 @@
       },
       {
         "group": "Chat",
+        "root": "no/chat/learn/index",
         "pages": [
-          "no/chat/learn/index",
           "no/chat/learn/statistics",
           "no/chat/learn/respond",
           "no/chat/learn/link-to-person",
@@ -520,8 +522,8 @@
           "no/chat/learn/as-customer",
           {
             "group": "For administratorer",
+            "root": "no/chat/admin/index",
             "pages": [
-              "no/chat/admin/index",
               "no/chat/admin/channel-create",
               "no/chat/admin/add-javascript"
             ]
@@ -530,20 +532,20 @@
       },
       {
         "group": "Markedsføring",
+        "root": "no/marketing/learn/index",
         "pages": [
-          "no/marketing/learn/index",
           "no/marketing/learn/create-folder",
-          "no/marketing/learn/message-templates",
           "no/marketing/learn/add-images",
+          "no/marketing/learn/message-templates",
           "no/marketing/learn/best-practices",
           {
             "group": "Utsendelser",
+            "root": "no/marketing/mailing/learn/index",
             "pages": [
-              "no/marketing/mailing/learn/index",
               {
                 "group": "Opprette ny utsendelse",
+                "root": "no/marketing/mailing/learn/create/index",
                 "pages": [
-                  "no/marketing/mailing/learn/create/index",
                   "no/marketing/mailing/learn/create/tutorial-email-mailing",
                   "no/marketing/mailing/learn/create/tutorial-sms-mailing",
                   "no/marketing/mailing/learn/create/tutorial-document-mailing",
@@ -559,8 +561,8 @@
           },
           {
             "group": "Dra og slipp editor",
+            "root": "no/marketing/editor/learn/index",
             "pages": [
-              "no/marketing/editor/learn/index",
               "no/marketing/editor/learn/add-content",
               "no/marketing/editor/learn/edit-paragraph",
               "no/marketing/editor/learn/insert-images-in-message",
@@ -572,8 +574,8 @@
           },
           {
             "group": "Mottakere (målliste)",
+            "root": "no/marketing/recipients/learn/index",
             "pages": [
-              "no/marketing/recipients/learn/index",
               "no/marketing/recipients/learn/manage-email-subscriptions",
               "no/marketing/recipients/learn/look-at-recipient-list",
               "no/marketing/recipients/learn/manage-bounces",
@@ -582,8 +584,8 @@
           },
           {
             "group": "Sporede lenker",
+            "root": "no/marketing/tracked-links/learn/index",
             "pages": [
-              "no/marketing/tracked-links/learn/index",
               "no/marketing/tracked-links/learn/create-links",
               "no/marketing/tracked-links/learn/define-link-actions",
               "no/marketing/tracked-links/learn/add-google-analytics-tag",
@@ -594,8 +596,8 @@
           },
           {
             "group": "Skjemaer",
+            "root": "no/marketing/forms/learn/index",
             "pages": [
-              "no/marketing/forms/learn/index",
               "no/marketing/forms/learn/create",
               "no/marketing/forms/learn/field-options",
               "no/marketing/forms/learn/define-form-actions",
@@ -611,8 +613,8 @@
           },
           {
             "group": "Flyter",
+            "root": "no/marketing/flows/learn/index",
             "pages": [
-              "no/marketing/flows/learn/index",
               "no/marketing/flows/learn/create",
               "no/marketing/flows/learn/update",
               "no/marketing/flows/learn/split",
@@ -626,8 +628,8 @@
           },
           {
             "group": "Konverteringssporing",
+            "root": "no/marketing/utm/learn/index",
             "pages": [
-              "no/marketing/utm/learn/index",
               "no/marketing/utm/learn/parameters",
               {
                 "group": "For administratorer",
@@ -641,13 +643,13 @@
       },
       {
         "group": "Lead-administrasjon",
+        "root": "no/lead/learn/index",
         "pages": [
-          "no/lead/learn/index",
           "no/lead/learn/work-with-leads",
           {
             "group": "For administratorer",
+            "root": "no/lead/admin/index",
             "pages": [
-              "no/lead/admin/index",
               "no/lead/admin/add-company-category",
               "no/lead/admin/add-lead-status",
               "no/lead/admin/category-automation"
@@ -656,20 +658,14 @@
         ]
       },
       {
-        "group": "Mobile CRM",
-        "pages": [
-          "no/mobile/index"
-        ]
-      },
-      {
         "group": "Kunnskapsbase",
+        "root": "no/knowledge-base/learn/index",
         "pages": [
-          "no/knowledge-base/learn/index",
           "no/knowledge-base/learn/manage-folders",
           {
             "group": "Svarmaler",
+            "root": "no/knowledge-base/learn/reply-templates/index",
             "pages": [
-              "no/knowledge-base/learn/reply-templates/index",
               "no/knowledge-base/learn/reply-templates/create",
               "no/knowledge-base/learn/reply-templates/new-language",
               "no/knowledge-base/learn/reply-templates/edit",
@@ -678,8 +674,8 @@
           },
           {
             "group": "FAQ",
+            "root": "no/knowledge-base/learn/faq/index",
             "pages": [
-              "no/knowledge-base/learn/faq/index",
               "no/knowledge-base/learn/faq/create",
               "no/knowledge-base/learn/faq/edit",
               "no/knowledge-base/learn/faq/publish",
@@ -692,16 +688,16 @@
       },
       {
         "group": "Personverninnstillinger og GDPR",
+        "root": "no/security/privacy/learn/index",
         "pages": [
-          "no/security/privacy/learn/index",
           "no/security/privacy/learn/edit-legal-base",
           "no/security/privacy/learn/send-privacy-confirmation-email",
           "no/security/privacy/learn/generate-personal-data-report",
           "no/security/privacy/learn/mass-delete",
           {
             "group": "For administratorer",
+            "root": "no/security/privacy/admin/index",
             "pages": [
-              "no/security/privacy/admin/index",
               "no/security/privacy/admin/add-purpose",
               "no/security/privacy/admin/add-legal-base",
               "no/security/privacy/admin/add-source",
@@ -712,8 +708,8 @@
       },
       {
         "group": "AI-tjenester",
+        "root": "no/ai/learn/index",
         "pages": [
-          "no/ai/learn/index",
           "no/ai/learn/text-analysis",
           "no/ai/learn/categorization",
           "no/ai/learn/copilot",
@@ -727,12 +723,12 @@
       },
       {
         "group": "SAINT (Sales intelligence)",
+        "root": "no/saint/learn/index",
         "pages": [
-          "no/saint/learn/index",
           {
             "group": "For administratorer",
+            "root": "no/saint/admin/index",
             "pages": [
-              "no/saint/admin/index",
               "no/saint/admin/set-up",
               "no/saint/admin/update",
               "no/saint/admin/counter-settings",
@@ -743,14 +739,14 @@
       },
       {
         "group": "ERP",
+        "root": "no/erp/learn/index",
         "pages": [
-          "no/erp/learn/index",
           "no/erp/learn/connect",
           "no/erp/learn/disconnect",
           {
             "group": "For administratorer",
+            "root": "no/erp/admin/index",
             "pages": [
-              "no/erp/admin/index",
               "no/erp/admin/add-connection",
               "no/erp/admin/configure",
               "no/erp/admin/update-connection",
@@ -761,12 +757,13 @@
       },
       {
         "group": "Tilpasning",
+        "root": "no/customization/index",
+        "icon": "map",
         "pages": [
-          "no/customization/index",
           {
             "group": "Skjermdesigner",
+            "root": "no/customization/screen-designer/admin/index",
             "pages": [
-              "no/customization/screen-designer/admin/index",
               "no/customization/screen-designer/admin/add-layout",
               "no/customization/screen-designer/admin/edit-layout",
               "no/customization/screen-designer/admin/working-with-fields",
@@ -781,16 +778,16 @@
           },
           {
             "group": "Webpaneler",
+            "root": "no/customization/web-panels/admin/index",
             "pages": [
-              "no/customization/web-panels/admin/index",
               "no/customization/web-panels/admin/add-web-panel",
               "no/customization/web-panels/admin/url-encoding"
             ]
           },
           {
             "group": "Makroer og skript",
+            "root": "no/customization/macros-and-scripts/admin/index",
             "pages": [
-              "no/customization/macros-and-scripts/admin/index",
               "no/customization/macros-and-scripts/admin/create-script",
               "no/customization/macros-and-scripts/admin/create-macro",
               "no/customization/macros-and-scripts/admin/trigger",
@@ -806,6 +803,7 @@
               "no/customer-center/learn/send-credentials",
               "no/customer-center/learn/enable-chat",
               "no/customer-center/learn/link-form",
+              "no/customer-center/learn/publish-faq",
               {
                 "group": "For administratorer",
                 "pages": [
@@ -817,12 +815,12 @@
           },
           {
             "group": "Systemdesign",
+            "root": "no/ui/blogic/learn/index",
             "pages": [
-              "no/ui/blogic/learn/index",
               {
                 "group": "Profiler",
+                "root": "no/ui/blogic/learn/profiles/index",
                 "pages": [
-                  "no/ui/blogic/learn/profiles/index",
                   "no/ui/blogic/learn/profiles/personal",
                   "no/ui/blogic/learn/profiles/common",
                   "no/ui/blogic/learn/profiles/global"
@@ -833,8 +831,8 @@
               "no/ui/blogic/learn/screen-properties",
               {
                 "group": "Ekstramenyer",
+                "root": "no/ui/blogic/learn/extra-menus/index",
                 "pages": [
-                  "no/ui/blogic/learn/extra-menus/index",
                   "no/ui/blogic/learn/extra-menus/actions",
                   "no/ui/blogic/learn/extra-menus/navigator",
                   "no/ui/blogic/learn/extra-menus/properties"
@@ -856,14 +854,15 @@
       },
       {
         "group": "Innstillinger og vedlikehold",
+        "root": "no/admin/index",
+        "icon": "map",
         "pages": [
-          "no/admin/index",
           "no/admin/getting-started",
           "no/admin/adjusting-views",
           {
             "group": "Lisenser",
+            "root": "no/admin/license/index",
             "pages": [
-              "no/admin/license/index",
               "no/admin/license/crm-suite",
               "no/admin/license/user-plans",
               "no/admin/license/activate",
@@ -872,8 +871,8 @@
           },
           {
             "group": "Preferanser",
+            "root": "no/admin/preferences/index",
             "pages": [
-              "no/admin/preferences/index",
               "no/admin/preferences/update",
               "no/admin/preferences/service-settings",
               "no/admin/preferences/sms"
@@ -881,16 +880,16 @@
           },
           {
             "group": "Systemvalg",
+            "root": "no/admin/options/index",
             "pages": [
-              "no/admin/options/index",
               "no/admin/options/configure-number-allocation",
               "no/admin/options/change-ui-labels"
             ]
           },
           {
             "group": "Lister",
+            "root": "no/admin/lists/index",
             "pages": [
-              "no/admin/lists/index",
               "no/admin/lists/add-items",
               "no/admin/lists/update-items",
               "no/admin/lists/restore",
@@ -902,16 +901,16 @@
           },
           {
             "group": "Brukeradministrasjon",
+            "root": "no/admin/user-management/index",
             "pages": [
-              "no/admin/user-management/index",
               "no/admin/user-management/add-associate",
               "no/admin/user-management/update-user",
               "no/admin/user-management/our-companies",
               "no/admin/user-management/user-groups",
               {
                 "group": "Rolle",
+                "root": "no/admin/user-management/role/index",
                 "pages": [
-                  "no/admin/user-management/role/index",
                   "no/admin/user-management/role/create-role",
                   "no/admin/user-management/role/update-role",
                   "no/admin/user-management/role/set-data-rights-for-role",
@@ -922,8 +921,8 @@
           },
           {
             "group": "Import",
+            "root": "no/admin/import/index",
             "pages": [
-              "no/admin/import/index",
               "no/admin/import/create-spreadsheet",
               "no/admin/import/from-excel",
               "no/admin/import/from-mac-address-book",
@@ -971,7 +970,14 @@
     "tab": "Utgivelsesnotater",
     "icon": "bullhorn",
     "pages": [
-      "release-notes/11/index"
+      "release-notes/12/index"
+    ]
+  },
+  {
+    "tab": "Contribute",
+    "icon": "hand-holding-heart",
+    "pages": [
+      "contribute/index"
     ]
   }
 ]

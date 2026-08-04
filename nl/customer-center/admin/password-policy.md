@@ -1,19 +1,18 @@
 ---
 uid: help-nl-service-global-preferences-customer-centre-password
 title: Wachtwoordbeleid voor het Customer Centre
+sidebarTitle: "Wachtwoordbeleid"
 description: Algemene voorkeuren voor het wachtwoordbeleid van het Customer Centre
 keywords: Service, instellingen
 author: SuperOffice RnD
 date: 03.14.2025
 content_type: reference
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: nl
 redirect_from: /nl/admin/preferences/learn/global-preferences/password
+language: nl
 ---
-
-# Wachtwoordbeleid voor het Customer Centre
 
 Ga naar <i class="ph ph-gear" aria-hidden="true"></i> **Voorkeuren** in de navigator en selecteer het tabblad **Algemene voorkeuren**. De sectie voor het **wachtwoordbeleid Customer Centre** bevat de volgende opties:
 

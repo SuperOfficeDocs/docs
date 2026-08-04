@@ -2,15 +2,13 @@
 uid: help-da-fastsearcher-navigator
 title: Brug af hurtigsøgning i navigatoren
 description: Brug af hurtigsøgning i navigatoren
+keywords: søge, FastSearcher, navigator
 author: Bergfrid Dias
 date: 06.29.2022
-keywords: søge, FastSearcher, navigator
 content_type: howto
 tier: starter
 language: da
 ---
-
-# Brug af hurtigsøgning i navigatoren
 
 1. Klik på ordet **Firma**, **Person**, **Salg**, **Projekt** eller **Udvalg** i navigatoren til venstre i vinduet. Der vises et tomt felt øverst. nedenunder dette er der en [liste over poster, du tidligere har arbejdet med][1].
 

@@ -1,19 +1,18 @@
 ---
 uid: help-da-project-member-invite
-title: Invitation af projektdeltagere til et møde
+title: Inviter projektdeltagere til et møde (opfølging)
+sidebarTitle: "Inviter til møde"
 description: Sådan inviterer du en projektdeltager til et møde i SuperOffice
 keywords: Anmod om et møde, inviter projektdeltager, invitation, projektdeltager, projekt
 author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: da
 ---
-
-# Inviter projektdeltagere til et møde (opfølging)
 
 1. Åbn projektet, og gå til fanen **Projektdeltagere**.
 2. Vælg de projektdeltagere, du vil invitere.

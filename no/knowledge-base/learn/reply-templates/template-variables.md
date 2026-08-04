@@ -1,22 +1,20 @@
 ---
 uid: help-no-template-variables-service
-title: Malvariabler
+title: Malvariabler (Service)
 description: Malvariabler
 keywords: malvariabler, malvariabel
 author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: reference
+tier: starter
 category: service
 topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: no
 redirect_from: /no/request/reply-templates/learn/template-variables
+language: no
 ---
-
-# Malvariabler (Service)
 
 I e-postmeldingen kan du bruke malvariabler til å sette inn informasjon som er lagret om kundene, slik at meldingen får et mer personlig preg. På denne måten kan du skreddersy innholdet til hver enkelt kunde.
 

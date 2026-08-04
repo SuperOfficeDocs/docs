@@ -11,12 +11,10 @@ license: servicepremium
 tier: growth
 audience: settings
 audience_tooltip: Inställningar och underhåll
-language: sv
 redirect_from: /sv/request/learn/type/create
 index: true
+language: sv
 ---
-
-# Skapa ärendetyp
 
 ## Steg
 

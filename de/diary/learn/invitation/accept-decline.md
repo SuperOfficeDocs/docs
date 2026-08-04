@@ -1,6 +1,7 @@
 ---
 uid: help-de-invitation-accept
 title: Folgeaufgaben zu denen Sie eingeladen sind
+sidebarTitle: "Eingeladene Folgeaufgaben"
 description: Folgeaufgaben anzeigen, zu denen Sie eingeladen sind; Einladungen annehmen oder ablehnen
 keywords: Kalender, Folgeaufgabe, Einladung, Teilnehmer, eingeladen, annehmen, ablehnen
 author: Bergfrid Dias
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: de
 ---
-
-# Folgeaufgaben zu denen Sie eingeladen sind
 
 Teilnehmer, die zu einer Folgeaufgabe eingeladen sind, werden eine Benachrichtigung in der oberen Leiste erhalten.
 

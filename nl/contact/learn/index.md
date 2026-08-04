@@ -7,14 +7,12 @@ author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: nl
 redirect_from: /nl/contact/learn/screen/index
+language: nl
 ---
-
-# Persoon
 
 Het **scherm Persoon** biedt een overzicht van alle communicatie en interactie met een persoon. Hier beheert u contactgegevens, volgt u activiteiten en hebt u toegang tot AVG-gerelateerde documentatie-alles vanuit één scherm.
 

@@ -7,15 +7,13 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: concept
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: nl
 redirect_from: /nl/request/learn/status/index
 index: true
+language: nl
 ---
-
-# Verzoekstatus
 
 Alle verzoeken die zijn geregistreerd in SuperOffice, hebben een status, zoals **Open**, **Gesloten** of **Uitgesteld**. Selecteer **Verzoek** in de Navigator en in het tabblad **Verzoekstatus**, u kunt u de verzoekstatussen zien die al in het systeem zijn gedefinieerd en extra verzoekstatussen maken. Een verzoekstatus moet zijn gekoppeld aan een van de interne statuswaarden van het systeem, zoals **Open** of **Gesloten**. Elke interne status moet zijn gekoppeld aan minimaal één verzoekstatus.
 

@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# E-post
-
 E-post er den mest populære formen for kommunikasjon mellom bedrifter. Med SuperOffice CRM kan du velge å lagre og dele e-postene dine på ulike måter som får deg og teamet ditt til å jobbe mer produktivt.
 
 Når du har [integrert din foretrukne e-postklient med SuperOffice][13], kan du lagre e-postdialoger og vedlegg under ethvert firma, person, salg eller prosjekt i CRM-systemet. Du kan også lagre e-post direkte som oppfølginger eller aktiviteter - slik at du aldri glemmer å følge opp.

@@ -7,20 +7,18 @@ author: SuperOffice Product and Engineering
 date: 07.15.2025
 version: 10.5
 content_type: howto
-category: service
-topic: faq
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
+category: service
+topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from:
   - /sv/faq/learn/delete
   - /sv/faq/learn/edit
+language: sv
 ---
-
-# Redigera eller ta bort FAQ-poster
 
 ## Redigera FAQ-poster
 

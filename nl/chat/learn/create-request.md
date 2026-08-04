@@ -1,6 +1,6 @@
 ---
 uid: help-nl-chat-create-request
-title: Verzoek maken in chat
+title: Een verzoek maken in een actieve chat
 description: In deze handleiding leert u hoe u een verzoek maakt in SuperOffice Chat.
 keywords: verzoek maken, niet oplossen via chat
 author: SuperOffice Product and Engineering
@@ -15,8 +15,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: nl
 ---
-
-# Een verzoek maken in een actieve chat
 
 Als u het probleem niet kunt oplossen via de chat, kunt u een verzoek maken dat door een andere specialist moet worden behandeld.
 

@@ -1,6 +1,6 @@
 ---
 uid: help-no-service-settings
-title: System settings
+title: Ulike innstillinger for Service
 description: System settings
 keywords: Service
 author: digitaldiina
@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: en
 redirect_from: /no/request/learn/admin/index
 index: true
+language: en
 ---
-
-# Ulike innstillinger for Service
 
 I denne delen kan du konfigurere innstillingene for Service for å skreddersy systemet til organisasjonens behov. Hvilke alternativer som vises, og hvor mye du har mulighet til å gjøre, avhenger av hvilke rettigheter som er tildelt din brukerprofil. Rettigheter tildeles under **Brukere**.
 

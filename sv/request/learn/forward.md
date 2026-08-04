@@ -1,6 +1,7 @@
 ---
 uid: help-sv-request-forward
 title: Vidarebefordra ärende till extern kontakt
+sidebarTitle: "Vidarebefordra"
 description: Lär dig hur du vidarebefordrar ett ärende i den här guiden.
 keywords: vidarebefordra ärende, ärende, extern kontakt
 author: digitaldiina
@@ -11,11 +12,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from: /sv/request/learn/howto/forward
+language: sv
 ---
-
-# Vidarebefordra ärende till extern kontakt
 
 Det är inte alltid som du som ärendehandläggare kan besvara ett ärende själv, även om du tar hjälp av kollegor. Ibland kanske du måste be någon annan om hjälp och rådfråga en underleverantör, en partner eller en affärsspecialist.
 

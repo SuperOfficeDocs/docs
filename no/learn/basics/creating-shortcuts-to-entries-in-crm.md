@@ -1,20 +1,19 @@
 ---
 uid: help-no-creating-shortcuts-to-entries-in-crm
-title: Lage snarveier til oppføringer i CRM
+title: Lage snarveier til oppføringer i SuperOffice CRM
+sidebarTitle: "Lage snarveier"
 description: Lage snarveier til oppføringer i CRM
 keywords: kopier snarvei
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: no
 redirect_from: /no/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm
+language: no
 ---
-
-# Lage snarveier til oppføringer i SuperOffice CRM
 
 Du kan lage snarveier til en oppføring i SuperOffice CRM, for eksempel en person, en oppfølging, et salg eller et bilde. Andre interne brukere kan klikke på denne snarveien for å komme raskt til den aktuelle oppføringen.
 

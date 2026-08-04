@@ -1,6 +1,6 @@
 ---
 uid: help-sv-recurrence
-title: Återkommande händelser
+title: Upprepa händelser
 description: Återkommande händelser
 keywords: återkommande händelse, återkommande möte, återkommande avtal, repetera, upprepa, mötesfrekvens, händelsesmönster, mötesserie, kalender, händelse, återkomma, förekomst
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
 ---
-
-# Upprepa händelser
 
 Det kan hända att du vill skapa en serie bokningar som återkommer med jämna mellanrum, till exempel ett veckomöte för statusuppdatering. Istället för att lägga in dessa möten ett i taget kan du använda funktionen för återkommande händelser.
 

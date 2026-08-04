@@ -1,22 +1,21 @@
 ---
 uid: help-sv-mailing-add-google-analytics
 title: Så här lägger du till din Google Analytics-tagg i ett utskick
+sidebarTitle: "Google Analytics-tagg"
 description: I den här guiden förklarar vi hur du spårar dina besökare.
 keywords: Marknadsföring
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
 ---
-
-# Så här lägger du till din Google Analytics-tagg i ett utskick
 
 Med Google Analytics aktiverat kan du spåra webbplatsbesök från mottagare som klickar på länkarna i din utskick. Inställningen för Google Analytics-spårning är inställd på en per-utskicksbasis, vilket ger dig möjlighet att selektivt spåra specifika utskick. Det är inte en generell inställning, vilket ger dig mer kontroll över din dataspårningsstrategi.
 

@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.09.2025
 version: 11.5
 content_type: howto
-category: localization
-topic: language
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
+category: localization
+topic: language
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /da/globalization-and-localization/learn/change-language
 language: da
 ---
-
-# Ændring af aktivt sprog
 
 Sådan bruger du SuperOffice på et andet sprog:
 

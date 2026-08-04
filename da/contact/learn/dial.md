@@ -7,13 +7,11 @@ author: digitaldiina
 date: 12.05.2025
 version: 11
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: da
 ---
-
-# Ring til personer
 
 Hvis din IP-telefoniløsning er konfigureret korrekt, kan du ringe til en person direkte fra SuperOffice CRM på en af følgende måder:
 

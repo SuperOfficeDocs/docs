@@ -7,15 +7,13 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: concept
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: da
 redirect_from: /da/request/learn/status/index
 index: true
+language: da
 ---
-
-# Sagsstatus
 
 Alle sager, der er registreret i SuperOffice, har en status, for eksempel **Åben**, **Lukket** eller **Udsat**. Vælg **Sag** i navigatoren. På fanen **Sagsstatus** kan du se de sagsstatusser, der allerede er defineret i systemet, og du kan oprette yderligere sagsstatusser. En sagsstatus skal være knyttet til en af systemets interne statusser som for eksempel **Åben** eller **Lukket**. Hver interne status skal knyttes til mindst én sagsstatus.
 

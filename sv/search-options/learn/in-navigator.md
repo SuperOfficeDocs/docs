@@ -2,15 +2,13 @@
 uid: help-sv-fastsearcher-navigator
 title: Använda snabbsökning i navigatorn
 description: Använda snabbsökning i navigatorn
+keywords: söka, Snabbsökning, navigatorn
 author: Bergfrid Dias
 date: 05.25.2023
-keywords: söka, Snabbsökning, navigatorn
 content_type: howto
 tier: starter
 language: sv
 ---
-
-# Använda snabbsökning i navigatorn
 
 1. Klicka på ordet **Företag**, **Kontakt**, **Försäljning** eller **Projekt** eller **Urval** i navigatorn till vänster i fönstret. Ett tomt fält visas högst upp. Nedan finns en [lista med poster du tidigare arbetat med][1].
 

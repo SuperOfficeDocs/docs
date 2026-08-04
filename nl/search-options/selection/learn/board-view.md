@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: nl
 ---
 
-# Boardweergave gebruiken in selecties
-
 De boardweergave toont je [selectie][2] in een kolomindeling met kaarten. Je kunt de selectieleden (records op het board) groeperen en filteren en kaarten verplaatsen tussen groepen via drag-and-drop.
 
 De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarten slepen, taakmenu's openen en boardinstellingen aanpassen. De beschikbare velden voor groepering en filtering verschillen afhankelijk van of je werkt met bedrijven, personen, verkopen, projecten of verzoeken.

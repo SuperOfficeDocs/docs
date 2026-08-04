@@ -7,13 +7,11 @@ author: digitaldiina
 date: 12.05.2025
 version: 11
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: sv
 ---
-
-# Ringa till kontakter
 
 Om IP-telefonin har konfigurerats korrekt kan du ringa en kontakt direkt från SuperOffice CRM på följande sätt:
 

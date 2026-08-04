@@ -7,19 +7,17 @@ author: digitaldiina
 date: 10.13.2025
 version: 11.5
 content_type: concept
-audience: settings
-audience_tooltip: Settings and maintenance
+tier: core
 category: customization
 topic: web panel
-tier: core
-language: sv
-index: true
+audience: settings
+audience_tooltip: Settings and maintenance
 redirect_from:
   - /sv/ui/web-panels/learn/index
   - /sv/admin/lists/learn/web-panel
+index: true
+language: sv
 ---
-
-# Webbpaneler
 
 En **webbpanel** är ett konfigurerbart område i SuperOffice CRM som visar innehåll från en webbsida eller intern resurs, baserat på en URL. Detta låter dig integrera externa datakällor eller interna verktyg direkt i SuperOffice.
 

@@ -7,13 +7,11 @@ author: digitaldiina
 date: 11.21.2025
 version: 11.6
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice Service
-tier: core
 language: de
 ---
-
-# Anfragen in Kacheln verwenden
 
 Die Dashboards erteilen einen augenblicklichen Überblick über Anfragen und Anfragenstatistiken in SuperOffice. Sie können die Kacheln personalisieren, um die relevanteste Information für Sie als Service-Mitarbeiter anzuzeigen. Zudem können Sie [eigene Dashboards erstellen][1] und die gewünschten Kacheln und Diagramme einfügen.
 

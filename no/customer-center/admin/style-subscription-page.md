@@ -7,15 +7,13 @@ author: digitaldiina
 date: 03.17.2026
 version: 11.11
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-tier: growth
-language: no
-index: true
 redirect_from: /no/customer-center/admin/index
+index: true
+language: no
 ---
-
-# Styling av abonnementssiden
 
 Abonnementssiden lar personer administrere hvilke utsendelser de vil motta fra selskapet ditt. Siden er lenket fra:
 

@@ -6,15 +6,13 @@ keywords: ärendeprioritet, prioritet, eskalering, ärende
 author: digitaldiina
 version: 12.0
 content_type: concept
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: sv
 redirect_from: /sv/request/learn/priority/index
 index: true
+language: sv
 ---
-
-# Ärendeprioriteter
 
 Alla ärenden som registreras i SuperOffice tilldelas en prioritet som återspeglar hur viktigt ärendet är.
 

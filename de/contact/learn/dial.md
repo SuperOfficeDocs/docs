@@ -7,13 +7,11 @@ author: digitaldiina
 date: 12.05.2025
 version: 11
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: de
 ---
-
-# Personen anrufen
 
 Wenn Ihre IP-Telefonlösung richtig konfiguriert ist, können Sie eine Person direkt aus SuperOffice CRM anrufen auf eine der folgenden Weisen:
 

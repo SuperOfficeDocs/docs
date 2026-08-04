@@ -2,20 +2,18 @@
 uid: help-no-chat-admin
 title: Chatadministrasjon
 description: Live Chat er en populær måte for kunder og potensielle kunder å komme i kontakt med deg når de besøker websiden din. Denne veiledningen viser hvordan du konfigurerer chatwidgeten og deretter legger den til på websiden din.
+keywords: chatbot, connector, AI
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5
-keywords: chatbot, connector, AI
 content_type: concept
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: no
 redirect_from: /no/chat/learn/admin/index
 index: true
+language: no
 ---
-
-# Chatadministrasjon
 
 Med **Chat**-funksjonen i SuperOffice kan brukerstøtteagentene og selgerne dine chatte med kunder, potensielle kunder og andre personer via chatvinduet på websiden din. Denne funksjonen kan for eksempel brukes til service/støtte og forhåndssalg, og den lar seg enkelt integrere med FAQ, dokumenter/vedlegg og maler. Chatfunksjonen kan settes opp med flere chatkanaler og være rettet mot ulike områder, som teknisk støtte, produktspørsmål og salgsstøtte.
 

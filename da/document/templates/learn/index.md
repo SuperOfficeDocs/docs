@@ -8,11 +8,9 @@ date: 07.16.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: da
 redirect_from: /da/admin/lists/learn/document-template
+language: da
 ---
-
-# Dokumentskabeloner
 
 Det er vigtigt for en organisations profil, at breve, faxer og andre dokumenter har et ensartet og helstøbt udseende. Det betyder, at alle dokumenter, der sendes ud af organisationen, skal bruge samme skrifttyper, margener, logoer osv. Ved at oprette skabeloner, der er tilpasset din organisation, sikrer du, at dine personer nemt kan genkende din korrespondance.
 

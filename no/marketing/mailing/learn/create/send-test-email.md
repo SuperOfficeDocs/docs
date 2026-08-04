@@ -1,19 +1,18 @@
 ---
 uid: help-no-mailing-send-test
-title: Teste utsendelsen ved å sende en test-e-post
+title: Sende en test-e-post for e-postutsendelser og skjemasvar
+sidebarTitle: "Sende test-e-post"
 description: I denne veiledningen lærer du hvordan du sender en testutsendelse.
 keywords: Markedsføring
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 language: no
 ---
-
-# Sende en test-e-post for e-postutsendelser og skjemasvar
 
 Når du har opprettet en fengende emnelinje, lagt til teksten og satt inn koblinger og bilder i e-postmalen din, kan du gjennomføre noen tester for å kontrollere at utsendelsen fungerer som den skal, og at utseendet ser OK ut. I trinnet **Innhold** kan du sende en test-e-post. Dette er ikke relevant for dokumenter og SMS.
 

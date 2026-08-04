@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from: /sv/request/learn/howto/accept
+language: sv
 ---
-
-# Ta över ansvaret för ett ärende
 
 Detta är särskilt relevant för otilldelade ärenden (ärenden utan en angiven ägare). För att ta över ett ärende är det viktigt att du följer proceduren nedan så att det tydligt framgår att du har tagit över ansvaret. Annars finns risken att någon annan besvarar samma ärende samtidigt.
 

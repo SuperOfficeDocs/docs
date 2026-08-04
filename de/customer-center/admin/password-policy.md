@@ -2,18 +2,16 @@
 uid: help-de-service-global-preferences-customer-centre-password
 title: Richtlinie für Kundenzentrum-Passwörter
 description: Globale Einstellungen für die Richtlinie für Kundenzentrum-Passwörter
+keywords: Service, Einstellungen
 author: SuperOffice RnD
 date: 03.29.2023
-keywords: Service, Einstellungen
 content_type: concept
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: de
 redirect_from: /de/admin/preferences/learn/global-preferences/password
+language: de
 ---
-
-# Richtlinie für Kundenzentrum-Passwörter
 
 Gehen Sie im Navigator zum <i class="ph ph-gear" aria-hidden="true"></i> **Einstellungen** und wählen Sie die Registerkarte **Globale Einstellungen** aus. Der Bereich für die **Richtlinie für Kundenzentrum-Passwörter** enthält folgende Optionen:
 

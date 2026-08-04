@@ -1,6 +1,7 @@
 ---
 uid: help-no-product-fields-configure
 title: Konfigurer felter i Legg til/rediger produkt-dialogen
+sidebarTitle: "Konfigurer produktfelter"
 description: Lær hvordan du kontrollerer hvilke felter som vises i Legg til/rediger produkt-dialogen, og hvordan de oppfører seg.
 keywords: Konfigurer produktdialog, Legg til/rediger produkt, konfigurer produkt, produktdialog, produktfelt, ledetekst, produkt, tilbud
 author: Bergfrid Dias
@@ -11,12 +12,10 @@ license: salespremium
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: no
 redirect_from: /no/quote/learn/admin/product/configure
 index: true
+language: no
 ---
-
-# Konfigurer felter i Legg til/rediger produkt-dialogen
 
 Bruk dialogboksen **Konfigurer produkt** for å kontrollere hvilke felter som vises når brukere legger til eller redigerer et produkt i et tilbud. Du kan vise eller skjule felter, endre ledetekster, definere hjelpetekster og gjøre felter redigerbare og/eller obligatoriske.
 

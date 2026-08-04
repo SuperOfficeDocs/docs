@@ -1,6 +1,6 @@
 ---
 uid: help-de-follow-up-assign
-title: Eine Folgeaufgabe zuweisen
+title: Folgeaufgabe delegieren
 description: Eine Folgeaufgabe einer anderen Person zuweisen
 keywords: Folgeaufgabe zuweisen, Folgeaufgabe delegieren, Mitarbeiter, Kalender, Folgeaufgabe, zuweisen, delegieren, Neu zuweisen
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: de
 ---
-
-# Folgeaufgabe delegieren
 
 Als zugeordnete Folgeaufgabe wird eine Folgeaufgabe bezeichnet, die Sie an eine andere Person delegiert haben.
 

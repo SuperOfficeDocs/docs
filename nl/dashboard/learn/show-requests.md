@@ -7,13 +7,11 @@ author: digitaldiina
 date: 11.21.2025
 version: 11.6
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice Service
-tier: core
 language: nl
 ---
-
-# Verzoeken in tegels gebruiken
 
 Dashboards bieden een direct overzicht van verzoeken en verzoekstatistieken in SuperOffice. U kunt de tegels aanpassen om de informatie weer te geven die het meest relevant is voor u als serviceagent. U kunt ook [uw eigen dashboards maken][1] met tegels/grafieken naar eigen keuze.
 

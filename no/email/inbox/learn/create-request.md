@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Opprett sak
-
 Du kan opprette en ny sak i SuperOffice Service basert på avsender og innhold i en e-postmelding. Saken kobles automatisk til riktig firma og person dersom disse gjenkjennes.
 
 ## Trinn

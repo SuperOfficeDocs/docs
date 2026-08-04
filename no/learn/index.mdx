@@ -1,4 +1,5 @@
 ---
+uid: learn-landing-no
 mode: "custom"
 title: Velkommen
 sidebarTitle: "Overview"
@@ -61,107 +62,331 @@ import CustomFooter from '/components/custom-mode-footer.mdx'
 <Columns cols={4}>
 <Card title="Komme i gang">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/no/learn/getting-started/login">Introduksjon</a></li>
-  <li><Icon icon="graduation-cap" /> <a href="/no/learn/basics/index">Lær det grunnleggende</a></li>
-  <li><Icon icon="video" /> <a href="https://www.youtube.com/embed/10VQCTgxODc">Demo</a></li>
-  <li><Icon icon="list" /> <a href="/no/learn/getting-started/login">Pålogging</a></li>
-  <li><Icon icon="list" /> <a href="/no/learn/getting-started/preferences">Preferanser</a></li>
-  <li><Icon icon="list" /> <a href="/no/learn/getting-started/connect-your-accounts">Koble til kontoene dine</a></li>
-  <li><Icon icon="list" /> <a href="/no/learn/getting-started/edit-email-signature">Redigere e-postsignatur</a></li>
-  <li><Icon icon="book" /> <a href="/no/learn/getting-started/main-screen/index">Elementene i utseende</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Introduksjon</span>
+  </div>
+  <ul>
+    <li><a href="/no/learn/getting-started/login">Introduksjon</a></li>
+    <li><a href="/no/learn/basics/index">Lær det grunnleggende</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="video" />
+    <span>Se</span>
+  </div>
+  <ul>
+    <li><a href="https://www.youtube.com/embed/10VQCTgxODc">Demo</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Bruksanvisning</span>
+  </div>
+  <ul>
+    <li><a href="/no/learn/getting-started/login">Pålogging</a></li>
+    <li><a href="/no/learn/getting-started/preferences">Preferanser</a></li>
+    <li><a href="/no/learn/getting-started/connect-your-accounts">Koble til kontoene dine</a></li>
+    <li><a href="/no/learn/getting-started/edit-email-signature">Redigere e-postsignatur</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referanse</span>
+  </div>
+  <ul>
+    <li><a href="/no/learn/getting-started/main-screen/index">Elementene i utseende</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Siste oppdateringer">
 
-<ul className="concept-links">
-  <li><Icon icon="bell" /> <a href="/release-notes/index">Utgivelsesnotater</a></li>
-  <li><Icon icon="compass" /> <a href="/no/request/learn/index">Nytt sakshåndtering</a></li>
-  <li><Icon icon="compass" /> <a href="/no/customization/screen-designer/admin/working-with-archives">Konfigurerbare skjermer - arkiver</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="bell" />
+    <span>Oppdateringer</span>
+  </div>
+  <ul>
+    <li><a href="/release-notes/index">Utgivelsesnotater</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="compass" />
+    <span>Relatert</span>
+  </div>
+  <ul>
+    <li><a href="/no/request/learn/index">Nytt sakshåndtering</a></li>
+    <li><a href="/no/customization/screen-designer/admin/working-with-archives">Konfigurerbare skjermer - arkiver</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Søkealternativer">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/no/search-options/learn/index">Introduksjon</a></li>
-  <li><Icon icon="compass" /> <a href="/no/search-options/selection/learn/index">Utvalg</a></li>
-  <li><Icon icon="list" /> <a href="/no/search-options/learn/freetext-search">Fritekstsøk</a></li>
-  <li><Icon icon="list" /> <a href="/no/search-options/learn/in-navigator">Søke fra navigator</a></li>
-  <li><Icon icon="list" /> <a href="/no/search-options/learn/in-dialogs">Søke i dialogbokser</a></li>
-  <li><Icon icon="list" /> <a href="/no/search-options/learn/find-screen">Søke-skjerm</a></li>
-  <li><Icon icon="list" /> <a href="/no/search-options/learn/search-criteria">Søkekriterier</a></li>
-  <li><Icon icon="list" /> <a href="/no/search-options/selection/learn/create">Nytt utvalg</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Introduksjon</span>
+  </div>
+  <ul>
+    <li><a href="/no/search-options/learn/index">Introduksjon</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="compass" />
+    <span>Relatert</span>
+  </div>
+  <ul>
+    <li><a href="/no/search-options/selection/learn/index">Utvalg</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Bruksanvisning</span>
+  </div>
+  <ul>
+    <li><a href="/no/search-options/learn/freetext-search">Fritekstsøk</a></li>
+    <li><a href="/no/search-options/learn/in-navigator">Søke fra navigator</a></li>
+    <li><a href="/no/search-options/learn/in-dialogs">Søke i dialogbokser</a></li>
+    <li><a href="/no/search-options/learn/find-screen">Søke-skjerm</a></li>
+    <li><a href="/no/search-options/learn/search-criteria">Søkekriterier</a></li>
+    <li><a href="/no/search-options/selection/learn/create">Nytt utvalg</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Firma og person">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/no/contact/learn/index">Introduksjon</a></li>
-  <li><Icon icon="list" /> <a href="/no/company/learn/create">Nytt firma</a></li>
-  <li><Icon icon="list" /> <a href="/no/contact/learn/create">Ny person</a></li>
-  <li><Icon icon="list" /> <a href="/no/contact/learn/send-email">Send epost til en person</a></li>
-  <li><Icon icon="book" /> <a href="/no/company/learn/index">Firma-skjermen</a></li>
-  <li><Icon icon="book" /> <a href="/no/contact/learn/index">Person-skjermen</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Introduksjon</span>
+  </div>
+  <ul>
+    <li><a href="/no/contact/learn/index">Introduksjon</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Bruksanvisning</span>
+  </div>
+  <ul>
+    <li><a href="/no/company/learn/create">Nytt firma</a></li>
+    <li><a href="/no/contact/learn/create">Ny person</a></li>
+    <li><a href="/no/contact/learn/send-email">Send epost til en person</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referanse</span>
+  </div>
+  <ul>
+    <li><a href="/no/company/learn/index">Firma-skjermen</a></li>
+    <li><a href="/no/contact/learn/index">Person-skjermen</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Epost og dagbok">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/no/email/learn/index">Introduksjon til epost</a></li>
-  <li><Icon icon="graduation-cap" /> <a href="/no/diary/learn/index">Introduksjon til dagboken</a></li>
-  <li><Icon icon="list" /> <a href="/no/email/learn/change-default-mail-client">Endre standard e-postklient i SuperOffice</a></li>
-  <li><Icon icon="list" /> <a href="/no/email/inbox/learn/compose">Skrive e-post</a></li>
-  <li><Icon icon="list" /> <a href="/no/diary/learn/create-follow-up">Legge til oppfølging</a></li>
-  <li><Icon icon="list" /> <a href="/no/diary/learn/video-meetings">Videomøter</a></li>
-  <li><Icon icon="book" /> <a href="/no/diary/learn/index">Navigere i Dagbok-bildet</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Introduksjon</span>
+  </div>
+  <ul>
+    <li><a href="/no/email/learn/index">Introduksjon til epost</a></li>
+    <li><a href="/no/diary/learn/index">Introduksjon til dagboken</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Bruksanvisning</span>
+  </div>
+  <ul>
+    <li><a href="/no/email/learn/change-default-mail-client">Endre standard e-postklient i SuperOffice</a></li>
+    <li><a href="/no/email/inbox/learn/compose">Skrive e-post</a></li>
+    <li><a href="/no/diary/learn/create-follow-up">Legge til oppfølging</a></li>
+    <li><a href="/no/diary/learn/video-meetings">Videomøter</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referanse</span>
+  </div>
+  <ul>
+    <li><a href="/no/diary/learn/index">Navigere i Dagbok-bildet</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Dokument">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/no/document/learn/index">Introduksjon</a></li>
-  <li><Icon icon="list" /> <a href="/no/document/learn/create">Opprett nytt dokument</a></li>
-  <li><Icon icon="book" /> <a href="/no/document/templates/variables/index">Malvariabler</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Introduksjon</span>
+  </div>
+  <ul>
+    <li><a href="/no/document/learn/index">Introduksjon</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Bruksanvisning</span>
+  </div>
+  <ul>
+    <li><a href="/no/document/learn/create">Opprett nytt dokument</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referanse</span>
+  </div>
+  <ul>
+    <li><a href="/no/document/templates/variables/index">Malvariabler</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Saksbehandling">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/no/request/learn/index">Introduksjon</a></li>
-  <li><Icon icon="list" /> <a href="/no/request/learn/create">Opprette sak</a></li>
-  <li><Icon icon="list" /> <a href="/no/request/learn/accept">Ta ansvar for sak</a></li>
-  <li><Icon icon="list" /> <a href="/no/request/learn/reply">Svare kunde</a></li>
-  <li><Icon icon="list" /> <a href="/no/knowledge-base/learn/reply-templates/create">Arbeide med svarmaler</a></li>
-  <li><Icon icon="book" /> <a href="/no/request/learn/index">Saksbilde</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Introduksjon</span>
+  </div>
+  <ul>
+    <li><a href="/no/request/learn/index">Introduksjon</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Bruksanvisning</span>
+  </div>
+  <ul>
+    <li><a href="/no/request/learn/create">Opprette sak</a></li>
+    <li><a href="/no/request/learn/accept">Ta ansvar for sak</a></li>
+    <li><a href="/no/request/learn/reply">Svare kunde</a></li>
+    <li><a href="/no/knowledge-base/learn/reply-templates/create">Arbeide med svarmaler</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="book" />
+    <span>Referanse</span>
+  </div>
+  <ul>
+    <li><a href="/no/request/learn/index">Saksbilde</a></li>
+  </ul>
+</div>
 
 </Card>
 
 <Card title="Salg og dashboard">
 
-<ul className="concept-links">
-  <li><Icon icon="graduation-cap" /> <a href="/no/sale/learn/index">Introduksjon</a></li>
-  <li><Icon icon="compass" /> <a href="/no/sale/learn/forecasting">Prognoser</a></li>
-  <li><Icon icon="compass" /> <a href="/no/sale/learn/sales-targets/index">Salgsmål</a></li>
-  <li><Icon icon="compass" /> <a href="/no/dashboard/learn/index">Dashboard</a></li>
-  <li><Icon icon="list" /> <a href="/no/sale/learn/create">Registrer salg</a></li>
-  <li><Icon icon="list" /> <a href="/no/sale/learn/stakeholders/create">Legge til interessenter</a></li>
-  <li><Icon icon="list" /> <a href="/no/sale/learn/sales-guides">Salgsguide</a></li>
-  <li><Icon icon="list" /> <a href="/no/dashboard/learn/create">Opprette et nytt dashbord</a></li>
-  <li><Icon icon="list" /> <a href="/no/dashboard/learn/working-with-tiles">Arbeide med figurer</a></li>
-</ul>
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="graduation-cap" />
+    <span>Introduksjon</span>
+  </div>
+  <ul>
+    <li><a href="/no/sale/learn/index">Introduksjon</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="compass" />
+    <span>Relatert</span>
+  </div>
+  <ul>
+    <li><a href="/no/sale/learn/forecasting">Prognoser</a></li>
+    <li><a href="/no/sale/learn/sales-targets/index">Salgsmål</a></li>
+    <li><a href="/no/dashboard/learn/index">Dashboard</a></li>
+  </ul>
+</div>
+
+***
+
+<div className="linklist">
+  <div className="linklist-header">
+    <Icon icon="list" />
+    <span>Bruksanvisning</span>
+  </div>
+  <ul>
+    <li><a href="/no/sale/learn/create">Registrer salg</a></li>
+    <li><a href="/no/sale/learn/stakeholders/create">Legge til interessenter</a></li>
+    <li><a href="/no/sale/learn/sales-guides">Salgsguide</a></li>
+    <li><a href="/no/dashboard/learn/create">Opprette et nytt dashbord</a></li>
+    <li><a href="/no/dashboard/learn/working-with-tiles">Arbeide med figurer</a></li>
+  </ul>
+</div>
 
 </Card>
 

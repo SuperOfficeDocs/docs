@@ -7,16 +7,14 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /da/marketing/tracked-links/learn/add-tracked-link-to-msg
 language: da
 ---
-
-# Indsætte sporede links i en meddelelse
 
 Ved at oprette links, der leder læserne til forskelligt indhold på dit websted, kan du indsamle registreringer, svar og overvåge, hvilke produkter, tilbud og nyheder dine kunder er interesserede i.
 

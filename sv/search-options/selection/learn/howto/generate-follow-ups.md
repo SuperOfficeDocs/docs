@@ -1,19 +1,17 @@
 ---
 uid: help-sv-selection-generate-follow-ups
-title: Skapa händelser
+title: Generera händelser
 description: Skapa händelser
 keywords: urval
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: sv
 ---
-
-# Generera händelser
 
 Du kan skapa en händelse som till exempel visas på aktivitetslistan för alla medlemmar i ett urval. Detta är användbart när ditt företag lanserar en ny produkt och du vill påminna säljarna om att bjuda in kunder till en produktpresentation.
 

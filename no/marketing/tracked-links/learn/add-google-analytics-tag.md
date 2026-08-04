@@ -1,22 +1,21 @@
 ---
 uid: help-no-mailing-add-google-analytics
 title: Slik legger du til emneknaggen Google Analytics i en utsendelse
+sidebarTitle: "Google Analytics-emneknagg"
 description: I denne veiledningen lærer du hvordan du sporer de besøkende.
 keywords: Markedsføring, Google Analytics, utsendelse
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: no
 ---
-
-# Slik legger du til emneknaggen Google Analytics i en utsendelse
 
 Med Google Analytics aktivert, kan du spore nettstedbesøk fra mottakere som klikker på lenkene i e-postene dine. Innstillingen for Google Analytics-sporing er satt på en per utsendelse, noe som lar deg selektivt spore bestemte e-poster. Det er ikke en generell innstilling, noe som gir deg mer kontroll over data-sporingsstrategien din.
 

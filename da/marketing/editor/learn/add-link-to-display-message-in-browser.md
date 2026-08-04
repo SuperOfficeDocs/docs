@@ -1,21 +1,20 @@
 ---
 uid: help-da-mailing-open-in-browser
 title: Tilføje et link til at vise meddelelsen i en browser
+sidebarTitle: "Vis i browser-link"
 description: Tilføje et link til at vise meddelelsen i en browser
 keywords: Marketing, Link, udsendelse
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: da
 ---
-
-# Tilføje et link til at vise meddelelsen i en browser
 
 Hvis modtageren har problemer med at vise hele meddelelsen i e-mailprogrammet (der kan for eksempel være problemer med billeder, der ikke vises) eller foretrækker at læse meddelelsen i en browser, kan du tilføje et link til at få vist meddelelsen som en webside. Sådanne links anbringes normalt øverst i en meddelelse.
 

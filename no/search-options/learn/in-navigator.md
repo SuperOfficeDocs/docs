@@ -1,16 +1,14 @@
 ---
 uid: help-no-fastsearcher-navigator
-title: Hurtigsøk i Navigator
+title: Bruke hurtigsøk i Navigator
 description: Hvordan bruke hurtigsøk i navigatoren in SuperOffice
+keywords: søk, hurtigsøk
 author: Bergfrid Dias
 date: 05.25.2023
-keywords: søk, hurtigsøk
 content_type: howto
 tier: starter
 language: no
 ---
-
-# Bruke hurtigsøk i Navigator
 
 1. Klikk på ordet **Firma**, **Person**, **Salg**, **Prosjekt**, **Sak**, eller **Utvalg** i navigatoren til venstre i vinduet. Et tomt felt vises øverst. Nedenfor dette finnes en [liste over poster du tidligere har jobbet med][1].
 
