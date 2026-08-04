@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: da
 redirect_from: /da/request/learn/status/create
 index: true
+language: da
 ---
-
-# Opret sagsstatus
 
 ## Trin
 

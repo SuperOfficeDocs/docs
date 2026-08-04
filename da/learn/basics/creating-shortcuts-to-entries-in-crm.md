@@ -1,20 +1,19 @@
 ---
 uid: help-da-creating-shortcuts-to-entries-in-crm
-title: Oprettelse af genveje til poster i CRM
+title: Oprettelse af genveje til poster i SuperOffice CRM
+sidebarTitle: "Opret genveje"
 description: Oprettelse af genveje til poster i CRM
 keywords: kopier genvej
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: da
 redirect_from: /da/onsite/win-client/learn/creating-shortcuts-to-entries-in-crm
+language: da
 ---
-
-# Oprettelse af genveje til poster i SuperOffice CRM
 
 Du kan oprette genveje til en post i SuperOffice CRM, f.eks. en kontakt, en opfølging, et salg eller et skærmbillede. Andre interne brugere kan klikke på denne genvej for hurtigt at åbne den pågældende post.
 

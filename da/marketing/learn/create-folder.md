@@ -1,21 +1,19 @@
 ---
 uid: help-da-marketing-create-folder
-title: Sådan oprettes en mappe i Markedsføring
+title: Sådan opretter du en mappe
 description: Sådan oprettes en mappe i Markedsføring
 keywords: tilføj mappe
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: da
 ---
-
-# Sådan opretter du en mappe
 
 Det er altid en god idé at definere en velorganiseret mappestruktur for at få et bedre overblik over dine udsendelser, formularer, flows, skabeloner, links og billeder i SuperOffice Marketing.
 

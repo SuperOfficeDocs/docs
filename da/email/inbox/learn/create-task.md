@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Opret opgave
-
 Du kan hurtigt oprette en opfølgningsopgave baseret på en e-mail i SuperOffice-indbakken. Den nye opgave knyttes automatisk til afsenderen og kan også forbindes med et projekt, salg eller en anden kontekst.
 
 ## Trin

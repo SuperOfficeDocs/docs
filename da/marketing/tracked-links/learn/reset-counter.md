@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: da
 ---
-
-# Nulstilling af tællere efter links
 
 Nogle gange er man nødt til at nulstille antallet af klik. Det kan f.eks. være efter, at man har  [sendt en testbesked ud][6], så ens egne og andres klik på links under testen ikke indgår i beregningerne.
 

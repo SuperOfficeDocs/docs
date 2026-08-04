@@ -7,13 +7,11 @@ author: SuperOffice RnD
 date: 02.25.2025
 version: 10.5.2
 content_type: concept
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: da
 ---
-
-# Projektdeltager
 
 Projektdeltagere er deltagerne i et projekt. For hver deltager kan du få adgang til informationer om firma, personnavn, rolle i projektet, eventuelle kommentarer, e-mail-adresse og telefonnummer.
 

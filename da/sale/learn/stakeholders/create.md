@@ -1,6 +1,6 @@
 ---
 uid: help-da-stakeholder-create
-title: Opret en interessent
+title: Tilføj interessenter
 description: Sådan knyttes et salg til en interessent (firma eller person) i SuperOffice.
 keywords: Tilføj interessent, ny interessent, Tilføj/rediger interessenter-dialog, Interessent fanen, interessent, salg
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: da
 ---
-
-# Tilføj interessenter
 
 Når du tilføjer interessenter til et salg, kan du enten tildele roller individuelt, mens du tilføjer personer/firma, tildele roller efter, at alle interessenter er tilføjet, eller bruge en kombination af begge metoder.
 

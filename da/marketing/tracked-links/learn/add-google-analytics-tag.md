@@ -1,22 +1,21 @@
 ---
 uid: help-da-mailing-add-google-analytics
 title: Sådan tilføjer du tags fra Google Analytics til en mailudsendelse
+sidebarTitle: "Google Analytics-tags"
 description: I denne vejledning lærer du, hvordan du sporer dine besøgende.
 keywords: Marketing
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: concept
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: da
 ---
-
-# Sådan tilføjer du tags fra Google Analytics til en mailudsendelse
 
 Med Google Analytics aktiveret kan du spore hjemmesidebesøg fra modtagere, der klikker på links i din udsendelse. Indstillingen for Google Analytics-sporing er sat på en per-udsendelsesbasis, hvilket giver dig mulighed for selektivt at spore specifikke udsendelser. Det er ikke en generel indstilling, hvilket giver dig mere kontrol over din datasporingstrategi.
 

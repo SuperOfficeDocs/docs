@@ -11,12 +11,10 @@ license: servicepremium
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-language: da
 redirect_from: /da/request/learn/type/create
 index: true
+language: da
 ---
-
-# Tilføj sagstype
 
 ## Trin
 

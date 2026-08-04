@@ -1,6 +1,6 @@
 ---
 uid: help-da-recurrence
-title: Gentagne opfølgninger
+title: Gentagelse af opfølgninger
 description: Gentagne opfølgninger
 keywords: gentagen opfølgning, repeterende opfølgning, repeterende møde, repeterende aftale, tilbagevendende, repeter, gentag, mødefrekvens, opfølgningsmønster, mødeserie, dagbog, opfølgning, frekvens
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: da
 ---
-
-# Gentagelse af opfølgninger
 
 Det kan ske, at du vil oprette en række aftaler, der skal forekomme med jævne mellemrum, for eksempel et ugentligt statusmøde. I stedet for at optage disse møder et ad gangen, kan du bruge den gentagne opfølgningsfunktion.
 

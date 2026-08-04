@@ -7,13 +7,11 @@ author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: da
 ---
-
-# Generering af opfølgninger
 
 Du kan oprette en opfølgning, som for eksempel vises på aktivitetslisten for alle medlemmerne af et udvalg. Dette er nyttigt, hvis du f.eks. lancerer et nyt produkt og vil minde sælgerne om at invitere kunder til en produktpræsentation.
 

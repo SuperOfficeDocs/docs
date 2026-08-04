@@ -8,11 +8,9 @@ date: 12.10.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: da
 redirect_from: /da/document/learn/template-variables
+language: da
 ---
-
-# Skabelonvariabler
 
 Skabelonvariabler bruges til at indsætte data fra SuperOffice i e-mails, tilbud, mødebeskeder, dokumentskabeloner osv. Du kan bruge skabelonvariabler til at tilpasse og automatisere indtastningen af kundedata (eller data fra kontakt, salg og andet) i dit indhold og oprette komplekse tilbud.
 

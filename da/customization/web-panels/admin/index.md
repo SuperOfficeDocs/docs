@@ -7,19 +7,17 @@ author: digitaldiina
 date: 10.13.2025
 version: 11.5
 content_type: concept
-audience: settings
-audience_tooltip: Settings and maintenance
+tier: core
 category: customization
 topic: web panel
-tier: core
-language: da
-index: true
+audience: settings
+audience_tooltip: Settings and maintenance
 redirect_from:
   - /da/ui/web-panels/learn/index
   - /da/admin/lists/learn/web-panel
+index: true
+language: da
 ---
-
-# Webpaneler
 
 Et **webpanel** er et konfigurerbart område inden for SuperOffice CRM, der viser indhold fra en webside eller intern ressource baseret på en URL. Dette giver dig mulighed for at integrere eksterne datakilder eller interne værktøjer direkte i SuperOffice.
 

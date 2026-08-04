@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.09.2025
 version: 11.5
 content_type: howto
-category: localization
-topic: language
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
+category: localization
+topic: language
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /da/globalization-and-localization/learn/translate-fields
 language: da
 ---
-
-# Oversættelse
 
 Standardfelterne og andre brugergrænsefladetekster er tilgængelige på alle SuperOffice-sprog. Hvis du opretter dine egne felter eller tekster (for eksempel navne på dashboards og ruder), kan du tilføje oversættelser for de relevante sprog i din organisation.
 

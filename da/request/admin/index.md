@@ -1,6 +1,6 @@
 ---
 uid: help-da-service-settings
-title: Systemindstillinger
+title: Forskellige indstillinger for Service
 description: Systemindstillinger
 keywords: Tjeneste
 author: digitaldiina
@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: da
 redirect_from: /da/request/learn/admin/index
 index: true
+language: da
 ---
-
-# Forskellige indstillinger for Service
 
 I denne del af SuperOffice Service kan du konfigurere indstillingerne for Service, så det bliver skræddersyet til organisationens behov. Hvilke valgmuligheder der vises, og hvor meget du kan foretage dig, afhænger af, hvilke rettigheder der er tildelt din brugerprofil. Rettigheder tildeles under **Bruger**.
 

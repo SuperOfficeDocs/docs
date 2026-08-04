@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from: /da/request/learn/howto/split-message
+language: da
 ---
-
-# Opdel meddelelse
 
 Hvis en meddelelse indeholder to problemer, som skal håndteres særskilt, kan du opdele meddelelsen i to og oprette en ny sag med én af meddelelserne. Dette kan være relevant, hvis en meddelelse indeholder både et teknisk spørgsmål og et fakturaspørgsmål, fordi disse to problemer håndteres af forskellige afdelinger.
 

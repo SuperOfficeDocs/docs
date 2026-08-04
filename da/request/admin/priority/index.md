@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: da
 redirect_from: /da/request/learn/priority/index
 index: true
+language: da
 ---
-
-# Sagsprioriteter
 
 Alle sager registreret i SuperOffice tildeles en prioritet, der afspejler sagens vigtighed.
 

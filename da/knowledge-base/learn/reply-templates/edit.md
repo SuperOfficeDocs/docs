@@ -7,20 +7,18 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: starter
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from:
   - /da/request/reply-templates/learn/delete
   - /da/request/reply-templates/learn/edit
+language: da
 ---
-
-# Rediger eller slet svarskabeloner
 
 Når du redigerer en svarskabelon, kan det enten betyde:
 

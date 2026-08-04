@@ -7,13 +7,11 @@ author: digitaldiina
 date: 11.21.2025
 version: 11.6
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice Service
-tier: core
 language: da
 ---
-
-# Brug af sager i ruder
 
 Dashboards giver dig et hurtigt overblik over sager og sagsstatistikker i SuperOffice. Du kan tilpasse ruderne, så de viser de oplysninger, der er mest relevante for dig som servicemedarbejder. Du kan også [oprette dine egne dashboard][1] med ønskede ruder/diagrammer.
 

@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: da
 ---
 
-# Stop gentagen opfølgning
-
 Når du stopper den gentagne opfølgning, slettes alle forekomster af opfølgningen *efter* den, du redigerede. Hvis opfølgningen er den første i en række gentagne opfølgninger, slettes det gentagne mønster, og det bliver en "almindelig" opfølgning.
 
 ## Stop gentagelse (behold denne instans)

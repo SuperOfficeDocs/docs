@@ -1,6 +1,7 @@
 ---
 uid: help-da-privacy-add-source
 title: Tilføjelse af forekomster på listen Personbeskyttelse - Kilde
+sidebarTitle: "Tilføj kilde"
 description: Få mere at vide om, hvordan du ændrer listerne over personbeskyttelse i denne vejledning.
 keywords: Personbeskyttelse kilde liste, Tilføj personbeskyttelse kilde
 author: SuperOffice Product and Engineering
@@ -8,16 +9,14 @@ date: 09.02.2025
 version: 10.3
 content_type: howto
 functional_right: list administrator, general administrator
+tier: starter
 category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: starter
-language: da
-index: true
 redirect_from: /da/admin/lists/learn/privacy-source-add
+index: true
+language: da
 ---
-
-# Tilføjelse af forekomster på listen Personbeskyttelse - Kilde
 
 Listen **Personbeskyttelse - Kilde** indeholder muligheder, som brugerne vælger for at vise, hvordan og hvor de opnåede samtykke fra en person.
 

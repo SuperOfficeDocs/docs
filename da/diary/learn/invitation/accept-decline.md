@@ -1,6 +1,6 @@
 ---
 uid: help-da-invitation-accept
-title: Opfølgninger, du er inviteret til
+title: Opfølgninger du er inviteret til
 description: Visning af opfølgninger, du er inviteret til; Accepter eller afvis invitationer
 keywords: dagbog, opfølgning, invitation
 author: Bergfrid Dias
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: da
 ---
-
-# Opfølgninger du er inviteret til
 
 Deltagere, der er blevet inviteret til en opfølgning, modtager en advarsel på toplinjen.
 

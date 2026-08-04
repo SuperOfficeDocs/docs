@@ -1,22 +1,21 @@
 ---
 uid: help-da-mailing-send-test
-title: Test mailudsendelsen ved at sende en test-e-mail
+title: Send en test-e-mail i forbindelse med e-mailudsendelser og formularbesvarelser
+sidebarTitle: "Send test-e-mail"
 description: I denne vejledning lærer du, hvordan du bruger en webformular.
 keywords: test-e-mail
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: da
 ---
-
-# Send en test-e-mail i forbindelse med e-mailudsendelser og formularbesvarelser
 
 Når du har skrevet en slagkraftig emnelinje, tilføjet din tekst, indsat links og billeder i din e-mailskabelon, kan du lave et par tests for at tjekke, at mailingen fungerer korrekt, og at layoutet ser OK ud. I trinnet **Indhold** kan du sende en test-e-mail. Det er ikke relevant for dokumenter og sms.
 

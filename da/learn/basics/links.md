@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: da
 redirect_from:
   - /da/diary/learn/linking-documents-to-follow-ups
   - /da/project/learn/add-links
+language: da
 ---
-
-# Links
 
 Brug fanen **Links** til at tilføje relevante aktiviteter, salg, projekter, dokumenter eller websteder til en post. For eksempel, hvis du skal til et møde med et firma, du tidligere har kommunikeret med, kan du tilføje links til dokumenter og salg, som du allerede har gemt for dette firma.
 

@@ -7,13 +7,11 @@ author: Bergfrid Skaara Dias
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: da
 ---
-
-# Mere-fanen
 
 **Mere-fanen** i SuperOffice CRM giver brugerne mulighed for at se og administrere brugerdefinerede felter for forskellige enheder, herunder firmaer, kontakter, salg, projekter, opfølgninger og dokumenter. Denne tilpasningsfunktion hjælper dig med at indfange specifik information, der er unik for din organisations behov, og øger fleksibiliteten af din CRM.
 

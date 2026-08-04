@@ -7,14 +7,12 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: concept
+tier: starter
 category: privacy
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: da
 ---
-
-# Beskyttelse af personlige oplysninger
 
 Funktionen **Privacy** i SuperOffice hjælper dig med at beskytte dine kunders data-privacy og overholde EU's generelle forordning om databeskyttelse (GDPR).
 

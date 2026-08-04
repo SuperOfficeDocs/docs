@@ -13,12 +13,10 @@ category: Service
 topic: chat
 audience: settings
 audience_tooltip: Settings and maintenance
-language: da
 redirect_from: /da/chat/learn/admin/index
 index: true
+language: da
 ---
-
-# Chatadministration
 
 Med funktionen **Chat** i SuperOffice kan dine repræsentanter og sælgere chatte med kunder, kundeemner og andre personer via chatvinduet på dit websted. Denne funktion kan for eksempel bruges til service/support og forhåndssalg, og den kan let integreres med FAQ, dokumenter/vedhæftede filer og skabeloner. Chatfunktionen kan sættes op med flere chatkanaler og være rettet mod forskellige områder, for eksempel teknisk support, produktspørgsmål og salgssupport.
 

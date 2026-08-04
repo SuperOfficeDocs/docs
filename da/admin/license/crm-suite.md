@@ -16,8 +16,6 @@ index: true
 language: da
 ---
 
-# SuperOffice CRM Suite
-
 SuperOffice CRM Suite er en samlet, integreret CRM-platform, der dækker salg, marketing og service. Alle brugere i din organisation deler én plan, og planen bestemmer, hvilke funktioner der er tilgængelige i hele organisationen.
 
 ## Planer {#plans}

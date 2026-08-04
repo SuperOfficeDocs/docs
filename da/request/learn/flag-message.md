@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: da
 redirect_from: /da/request/learn/howto/flag-message
+language: da
 ---
-
-# Hold styr på meddelelser
 
 Det kan tage lang tid at løse komplekse sager. Det kan indebære meget kommunikation mellem kunden og flere sagsbehandlere.
 

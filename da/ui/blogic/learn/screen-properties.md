@@ -2,14 +2,12 @@
 uid: help-da-service-screen-properties
 title: Egenskaber for skærmbillede
 description: Egenskaber for skærmbillede
+keywords: skærmbillede
 author: SuperOffice RnD
 date: 06.29.2022
-keywords: skærmbillede
 content_type: reference
 language: da
 ---
-
-# Egenskaber for skærmbillede
 
 Her kan du redigere egenskaberne for et skærmbillede. Du kan blandt andet oprette script til forudberegning af variabler, gerne baseret på Cgi-variabler, som skærmbilledet har fået via en webadresse, eller en post fra en formular i det aktuelle skærmbillede eller et andet skærmbillede.
 
