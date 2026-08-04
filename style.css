@@ -854,6 +854,17 @@ body {
   display: none !important;
 }
 
+/* On pages that still carry an H1 (the H1's text always duplicates the frontmatter
+ * title), Mintlify's "On this page" TOC still lists it as the first entry,
+ * even though the CSS above hides it from the content area (the TOC is built
+ * from the heading source, not from live DOM visibility). Its TOC entry is
+ * indistinguishable by depth from a real top-level H2 (#164), so gate on
+ * :has(#content > h1) — this only matches pages that still have that H1,
+ * leaving already-H1-less pages' genuine first TOC entry untouched. */
+body:has(#content > h1) #table-of-contents-content > li.toc-item:first-child {
+  display: none !important;
+}
+
 /* ─── PROSE CONTENT CARDS ─────────────────────────────────── */
 /* Scoped to cards inside prose (e.g. Related content sections).
  * Does NOT affect category/home/subcategory card areas. */
