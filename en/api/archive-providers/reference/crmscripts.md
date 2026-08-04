@@ -2,7 +2,7 @@
 uid: CRMScripts
 title: CRMScripts
 description:
-keywords: CRMScripts archive provider
+keywords: ['CRMScripts archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

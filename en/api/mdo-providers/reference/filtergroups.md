@@ -1,7 +1,7 @@
 ---
 uid: filtergroups
 title: filtergroups
-keywords: mdoprovider mdo provider filtergroups
+keywords: ['mdoprovider mdo provider filtergroups']
 description: User groups, filtered according to the usergroups selected in the filter dialog.
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: LinksAppointments
 title: LinksAppointments
 description: Link data provider for appointments, handles both addressing by source or by destination (not both at the same time!)
-keywords: LinksAppointments archive provider
+keywords: ['LinksAppointments archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

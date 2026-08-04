@@ -2,7 +2,7 @@
 uid: externaldocumentitems
 title: externaldocumentitems
 description: <b>External Documents</b> is the same as the Image Library in service - images (and maybe other things?) that
-keywords: externaldocumentitems archive provider
+keywords: ['externaldocumentitems archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -3,7 +3,7 @@ uid: help-en-project-member-invite
 title: Invite project members to a meeting (follow-up)
 sidebarTitle: "Invite members to meeting"
 description: How to invite a project member to a meeting in SuperOffice
-keywords: Request a meeting, invite project member, invitation, project member, project
+keywords: ['Request a meeting', 'invite project member', 'invitation', 'project member', 'project']
 author: SuperOffice RnD
 date: 01.06.2025
 version: 10

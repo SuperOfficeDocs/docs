@@ -1,7 +1,7 @@
 ---
 uid: importproductduplicatematch
 title: importproductduplicatematch
-keywords: mdoprovider mdo provider importproductduplicatematch
+keywords: ['mdoprovider mdo provider importproductduplicatematch']
 description: Import product detect duplicates based on field - Name, Code, Name+Code
 generated: true
 content_type: reference

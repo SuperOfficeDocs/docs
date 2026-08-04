@@ -4,7 +4,6 @@ uid: event_model_saving_a_request
 description: CRMScript event model - Saving a request
 author:
 date:
-keywords:
 content_type: reference
 ---
 

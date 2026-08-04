@@ -1,7 +1,7 @@
 ---
 uid: disconnectpersonactions
 title: disconnectpersonactions
-keywords: mdoprovider mdo provider disconnectpersonactions
+keywords: ['mdoprovider mdo provider disconnectpersonactions']
 description: List of actions to perform when disconnecting a contact from a company
 generated: true
 content_type: reference

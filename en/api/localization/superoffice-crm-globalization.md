@@ -2,7 +2,7 @@
 uid: superoffice-crm-globalization
 title: SuperOffice.CRM.Globalization namespace
 description: SuperOffice.CRM.Globalization namespace
-keywords: SuperOffice.CRM.Globalization
+keywords: ['SuperOffice.CRM.Globalization']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: reference

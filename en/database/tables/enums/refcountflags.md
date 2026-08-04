@@ -3,7 +3,7 @@ uid: enum-refcountflags
 title: Enum values for RefcountFlags
 description: Lists the enum values for RefcountFlags.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: mailingfavourites
 title: mailingfavourites
 description:
-keywords: mailingfavourites archive provider
+keywords: ['mailingfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

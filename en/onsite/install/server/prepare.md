@@ -2,7 +2,7 @@
 uid: prepare-crm-server
 title: Prepare CRM Server computer
 description: Prepare CRM Server computer
-keywords: install
+keywords: ['install']
 author: SuperOffice Product and Engineering
 date: 12.01.2025
 version: 11

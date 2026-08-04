@@ -2,7 +2,7 @@
 uid: SimpleTicket
 title: SimpleTicket
 description:
-keywords: SimpleTicket archive provider
+keywords: ['SimpleTicket archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

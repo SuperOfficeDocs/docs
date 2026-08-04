@@ -1,7 +1,7 @@
 ---
 uid: quoteconnectors
 title: quoteconnectors
-keywords: mdoprovider mdo provider quoteconnectors
+keywords: ['mdoprovider mdo provider quoteconnectors']
 description: Retrieve the list of all installed (i.e., loaded assemblies) Quote Connectors
 generated: true
 content_type: reference

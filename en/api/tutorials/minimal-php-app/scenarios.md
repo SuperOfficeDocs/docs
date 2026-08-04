@@ -3,7 +3,6 @@ title: Scenarios
 uid: minimal_php_app_scenarios
 description: Scenarios
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

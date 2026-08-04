@@ -1,7 +1,7 @@
 ---
 uid: visibleforassociate
 title: visibleforassociate
-keywords: mdoprovider mdo provider visibleforassociate
+keywords: ['mdoprovider mdo provider visibleforassociate']
 description: List provider that returns a list suitable for VisibleFor and PinTo (with groups and possibly some other special items like All).
 generated: true
 content_type: reference

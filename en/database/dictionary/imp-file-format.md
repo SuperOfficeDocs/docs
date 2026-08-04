@@ -2,7 +2,7 @@
 uid: imp_file_format
 title: IMP file format
 description: IMP file format
-keywords: database
+keywords: ['database']
 author: AnthonyYates
 date: 07.16.2026
 content_type: reference

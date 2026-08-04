@@ -2,7 +2,7 @@
 uid: enforce-password-policy
 title: Enforce a password policy
 description: Enforce password policy
-keywords: SuperID, password, password policy
+keywords: ['SuperID', 'password', 'password policy']
 author: digitaldiina
 date: 04.28.2026
 version: 12

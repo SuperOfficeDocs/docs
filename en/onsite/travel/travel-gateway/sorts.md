@@ -2,7 +2,6 @@
 title: SORTS
 description: SuperOffice Remote Travel Server (SORTS)
 author: SuperOffice Product and Engineering
-keywords:
 date:
 content_type: concept
 deployment: onsite

@@ -2,7 +2,7 @@
 uid: get-category-list-categoryrows
 title: Get the CategoryList via CategoryRows object
 description: Get the CategoryList via CategoryRows object'
-keywords: category, rows
+keywords: ['category', 'rows']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

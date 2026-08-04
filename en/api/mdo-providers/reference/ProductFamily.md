@@ -1,7 +1,7 @@
 ---
 uid: productfamily
 title: productfamily
-keywords: mdoprovider mdo provider productfamily
+keywords: ['mdoprovider mdo provider productfamily']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

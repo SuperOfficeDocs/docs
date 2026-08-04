@@ -2,7 +2,7 @@
 uid: TimeZones
 title: TimeZones
 description:
-keywords: TimeZones archive provider
+keywords: ['TimeZones archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

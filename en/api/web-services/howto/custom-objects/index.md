@@ -2,7 +2,7 @@
 uid: api-custom-objects
 title: Introduction to custom objects and fields
 description: Introduction to custom objects and fields
-keywords: custom object, custom field, extra table, extra field, udef, user-defined field
+keywords: ['custom object', 'custom field', 'extra table', 'extra field', 'udef', 'user-defined field']
 author: Eivind Fasting
 date: 12.18.2025
 version: 11

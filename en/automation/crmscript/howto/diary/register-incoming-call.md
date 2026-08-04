@@ -2,7 +2,7 @@
 uid: crmscript-call-incoming
 title: Register an incoming call
 description: How to register an incoming call with CRMScript
-keywords: CRMScript, calendar, diary, call, follow-up
+keywords: ['CRMScript', 'calendar', 'diary', 'call', 'follow-up']
 author: Bergfrid Skaara Dias
 date: 03.21.2022
 version: 10

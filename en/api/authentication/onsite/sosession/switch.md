@@ -4,7 +4,7 @@ uid: ns_switch_sessions
 description: Switching between sessions for NetServer Core & Service proxy
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords: authentication, SoSession
+keywords: ['authentication', 'SoSession']
 content_type: howto
 deployment: onsite
 redirect_from: /en/authentication/onsite/sosession/switch

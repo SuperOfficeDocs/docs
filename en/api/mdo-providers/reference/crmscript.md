@@ -1,7 +1,7 @@
 ---
 uid: crmscript
 title: crmscript
-keywords: mdoprovider mdo provider crmscript
+keywords: ['mdoprovider mdo provider crmscript']
 description: Archive of CRMScripts. Returns script id + name of script as hierarchy.
 generated: true
 content_type: reference

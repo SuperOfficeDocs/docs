@@ -2,7 +2,7 @@
 uid: InnerSelectionStaticContactProvider
 title: InnerSelectionStaticContactProvider
 description:
-keywords: InnerSelectionStaticContactProvider archive provider
+keywords: ['InnerSelectionStaticContactProvider archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

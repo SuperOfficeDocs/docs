@@ -2,7 +2,7 @@
 uid: ProjecthadowSelectionCombinedV2
 title: ProjecthadowSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ProjecthadowSelectionCombinedV2 archive provider
+keywords: ['ProjecthadowSelectionCombinedV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -1,7 +1,7 @@
 ---
 uid: dashboardentity
 title: dashboardentity
-keywords: mdoprovider mdo provider dashboardentity
+keywords: ['mdoprovider mdo provider dashboardentity']
 description:
 generated: true
 content_type: reference

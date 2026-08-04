@@ -2,7 +2,7 @@
 uid: ListItems
 title: ListItems
 description: Archive provider for the list of ListItems
-keywords: ListItems archive provider
+keywords: ['ListItems archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

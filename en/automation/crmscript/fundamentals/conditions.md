@@ -3,7 +3,6 @@ uid: crmscript_fundamentals_if_else
 title: Control - if else and else if
 author:
 date:
-keywords:
 content_type: concept
 ---
 

@@ -4,7 +4,6 @@ uid: blogic_select_table
 description: Select table
 author:
 date:
-keywords:
 topic: reference
 ---
 

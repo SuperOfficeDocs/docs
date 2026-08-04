@@ -1,7 +1,7 @@
 ---
 uid: importnewlistitem
 title: importnewlistitem
-keywords: mdoprovider mdo provider importnewlistitem
+keywords: ['mdoprovider mdo provider importnewlistitem']
 description: Import list items - Add item, use default, use blank
 generated: true
 content_type: reference

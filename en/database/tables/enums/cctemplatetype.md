@@ -3,7 +3,7 @@ uid: enum-cctemplatetype
 title: Enum values for CcTemplateType
 description: Lists the enum values for CcTemplateType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

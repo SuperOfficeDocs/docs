@@ -2,7 +2,7 @@
 uid: get-contact-services-layer
 title: Get a contact through the services layer
 description: How to get a Contact through Services layer.
-keywords: contact, company, services, API, api-services, ContactAgent
+keywords: ['contact', 'company', 'services', 'API', 'api-services', 'ContactAgent']
 author: Tony Yates
 date: 11.04.2021
 content_type: howto

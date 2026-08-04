@@ -1,7 +1,7 @@
 ---
 uid: projectmembereventparticipantstatus
 title: projectmembereventparticipantstatus
-keywords: mdoprovider mdo provider projectmembereventparticipantstatus
+keywords: ['mdoprovider mdo provider projectmembereventparticipantstatus']
 description: List of project member event status fields.
 generated: true
 content_type: reference

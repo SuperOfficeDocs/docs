@@ -1,7 +1,7 @@
 ---
 uid: stakeholderrole
 title: stakeholderrole
-keywords: mdoprovider mdo provider stakeholderrole
+keywords: ['mdoprovider mdo provider stakeholderrole']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

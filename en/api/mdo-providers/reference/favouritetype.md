@@ -1,7 +1,7 @@
 ---
 uid: favouritetype
 title: favouritetype
-keywords: mdoprovider mdo provider favouritetype
+keywords: ['mdoprovider mdo provider favouritetype']
 description: MDO list provider for Favourite types
 generated: true
 content_type: reference

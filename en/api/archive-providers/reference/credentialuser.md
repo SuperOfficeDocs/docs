@@ -2,7 +2,7 @@
 uid: CredentialUser
 title: CredentialUser
 description:
-keywords: CredentialUser archive provider
+keywords: ['CredentialUser archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -3,7 +3,7 @@ title: Encryption
 uid: changes_7_encryption
 description: Changes in SuperOffice 7 - Encryption
 author: SuperOffice Product and Engineering
-keywords: database
+keywords: ['database']
 content_type: reference
 deployment: onsite
 ---

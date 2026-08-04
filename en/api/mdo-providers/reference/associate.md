@@ -1,7 +1,7 @@
 ---
 uid: associate
 title: associate
-keywords: mdoprovider mdo provider associate
+keywords: ['mdoprovider mdo provider associate']
 description:
 generated: true
 content_type: reference

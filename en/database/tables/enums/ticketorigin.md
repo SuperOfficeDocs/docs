@@ -3,7 +3,7 @@ uid: enum-ticketorigin
 title: Enum values for TicketOrigin
 description: Lists the enum values for TicketOrigin.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

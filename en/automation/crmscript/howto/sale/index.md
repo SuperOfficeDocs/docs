@@ -2,7 +2,7 @@
 uid: crmscript-sale
 title: Sales
 description: Working with sales in CRMScript
-keywords: sale
+keywords: ['sale']
 author: Bergfrid Dias
 date: 06.09.2023
 version: 10

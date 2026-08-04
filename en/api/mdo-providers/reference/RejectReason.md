@@ -1,7 +1,7 @@
 ---
 uid: rejectreason
 title: rejectreason
-keywords: mdoprovider mdo provider rejectreason
+keywords: ['mdoprovider mdo provider rejectreason']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

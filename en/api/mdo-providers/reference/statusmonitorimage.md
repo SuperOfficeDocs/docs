@@ -1,7 +1,7 @@
 ---
 uid: statusmonitorimage
 title: statusmonitorimage
-keywords: mdoprovider mdo provider statusmonitorimage
+keywords: ['mdoprovider mdo provider statusmonitorimage']
 description: List of images for status monitors in the blob table.
 generated: true
 content_type: reference

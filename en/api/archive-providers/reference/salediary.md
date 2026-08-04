@@ -2,7 +2,7 @@
 uid: SaleDiary
 title: SaleDiary
 description: Sale archive provider for the Diary card
-keywords: SaleDiary archive provider
+keywords: ['SaleDiary archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

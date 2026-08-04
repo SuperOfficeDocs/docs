@@ -2,7 +2,7 @@
 uid: ExplicitInvitation
 title: ExplicitInvitation
 description:
-keywords: ExplicitInvitation archive provider
+keywords: ['ExplicitInvitation archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

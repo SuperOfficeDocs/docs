@@ -3,7 +3,7 @@ uid: enum-publishtype
 title: Enum values for PublishType
 description: Lists the enum values for PublishType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: sop-open-follow-up
 title: Open Follow-up
 description: How to create a Follow-up using the soprotocol
-keywords: soprotocol, follow-up, open
+keywords: ['soprotocol', 'follow-up', 'open']
 author: Eivind Fasting
 date: 11.26.2024
 content_type: howto

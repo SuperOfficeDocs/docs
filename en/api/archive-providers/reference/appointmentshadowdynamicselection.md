@@ -2,7 +2,7 @@
 uid: AppointmentShadowDynamicSelection
 title: AppointmentShadowDynamicSelection
 description: Shadow contact provider for the dynamic appointmnet provider.
-keywords: AppointmentShadowDynamicSelection archive provider
+keywords: ['AppointmentShadowDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

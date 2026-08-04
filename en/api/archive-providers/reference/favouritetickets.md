@@ -2,7 +2,7 @@
 uid: FavouriteTickets
 title: FavouriteTickets
 description:
-keywords: FavouriteTickets archive provider
+keywords: ['FavouriteTickets archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

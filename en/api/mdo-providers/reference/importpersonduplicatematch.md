@@ -1,7 +1,7 @@
 ---
 uid: importpersonduplicatematch
 title: importpersonduplicatematch
-keywords: mdoprovider mdo provider importpersonduplicatematch
+keywords: ['mdoprovider mdo provider importpersonduplicatematch']
 description: Import Person Fields to match on - Name, E-mail, phone, number, id, None
 generated: true
 content_type: reference

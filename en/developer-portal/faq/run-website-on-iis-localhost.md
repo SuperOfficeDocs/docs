@@ -3,7 +3,7 @@ title: Run website on IIS localhost
 uid: run_website_on_iis_localhost
 description: Run a website on your machine, IIS localhost
 author: SuperOffice Product and Engineering
-keywords: IIS, localhost, Visual Studio
+keywords: ['IIS', 'localhost', 'Visual Studio']
 content_type: howto
 deployment: online
 platform: web

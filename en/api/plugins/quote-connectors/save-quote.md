@@ -4,7 +4,7 @@ uid: quote_connectors_save_quote
 description: Saving the quote
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/save-quote
 ---

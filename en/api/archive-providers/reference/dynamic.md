@@ -2,7 +2,7 @@
 uid: Dynamic
 title: Dynamic
 description:
-keywords: Dynamic archive provider
+keywords: ['Dynamic archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: webhook_activity_event
 title: Activity events
 description: Activity events
-keywords: activity webhook
+keywords: ['activity webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

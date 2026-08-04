@@ -1,7 +1,7 @@
 ---
 uid: shipmenttype
 title: shipmenttype
-keywords: mdoprovider mdo provider shipmenttype
+keywords: ['mdoprovider mdo provider shipmenttype']
 description: MDO list provider for ConsentPurpose
 generated: true
 content_type: reference

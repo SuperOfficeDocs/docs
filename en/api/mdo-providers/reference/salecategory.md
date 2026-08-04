@@ -1,7 +1,7 @@
 ---
 uid: salecategory
 title: salecategory
-keywords: mdoprovider mdo provider salecategory
+keywords: ['mdoprovider mdo provider salecategory']
 description:
 generated: true
 content_type: reference

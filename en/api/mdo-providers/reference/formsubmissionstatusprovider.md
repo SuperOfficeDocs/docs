@@ -1,7 +1,7 @@
 ---
 uid: formsubmissionstatusprovider
 title: formsubmissionstatusprovider
-keywords: mdoprovider mdo provider formsubmissionstatusprovider
+keywords: ['mdoprovider mdo provider formsubmissionstatusprovider']
 description:
 generated: true
 content_type: reference

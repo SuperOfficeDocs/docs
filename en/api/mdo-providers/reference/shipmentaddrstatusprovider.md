@@ -1,7 +1,7 @@
 ---
 uid: shipmentaddrstatusprovider
 title: shipmentaddrstatusprovider
-keywords: mdoprovider mdo provider shipmentaddrstatusprovider
+keywords: ['mdoprovider mdo provider shipmentaddrstatusprovider']
 description:
 generated: true
 content_type: reference

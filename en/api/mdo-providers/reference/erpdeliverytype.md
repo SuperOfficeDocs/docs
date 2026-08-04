@@ -1,7 +1,7 @@
 ---
 uid: erpdeliverytype
 title: erpdeliverytype
-keywords: mdoprovider mdo provider erpdeliverytype
+keywords: ['mdoprovider mdo provider erpdeliverytype']
 description:
 generated: true
 content_type: reference

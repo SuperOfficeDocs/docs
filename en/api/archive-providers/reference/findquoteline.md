@@ -2,7 +2,7 @@
 uid: FindQuoteLine
 title: FindQuoteLine
 description: QuoteLine provider for Find
-keywords: FindQuoteLine archive provider
+keywords: ['FindQuoteLine archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

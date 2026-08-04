@@ -2,7 +2,7 @@
 uid: customobjectfavourites
 title: customobjectfavourites
 description:
-keywords: customobjectfavourites archive provider
+keywords: ['customobjectfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

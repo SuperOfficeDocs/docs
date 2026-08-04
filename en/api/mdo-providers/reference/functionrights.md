@@ -1,7 +1,7 @@
 ---
 uid: functionrights
 title: functionrights
-keywords: mdoprovider mdo provider functionrights
+keywords: ['mdoprovider mdo provider functionrights']
 description: FunctionRightsListProvider returns a MDO list of function rights in the database. Additional Info = "role=123;languageId=1024;roleType=1"
 generated: true
 content_type: reference

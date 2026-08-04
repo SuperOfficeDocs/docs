@@ -1,7 +1,7 @@
 ---
 uid: formratingnps
 title: formratingnps
-keywords: mdoprovider mdo provider formratingnps
+keywords: ['mdoprovider mdo provider formratingnps']
 description:
 generated: true
 content_type: reference

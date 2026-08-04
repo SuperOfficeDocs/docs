@@ -2,7 +2,7 @@
 uid: RejectedInvitation
 title: RejectedInvitation
 description: This is the query provider for invitations, of subtype 'Rejected'
-keywords: RejectedInvitation archive provider
+keywords: ['RejectedInvitation archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

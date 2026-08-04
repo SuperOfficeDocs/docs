@@ -2,7 +2,7 @@
 uid: Appointment
 title: Appointment
 description: Activity archive provider which handles appointments
-keywords: Appointment archive provider
+keywords: ['Appointment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

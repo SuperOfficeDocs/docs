@@ -2,7 +2,7 @@
 uid: help-en-stakeholder-create
 title: Add stakeholders
 description: How to link a sale to a stakeholder (company or contact) in SuperOffice.
-keywords: Add stakeholder, new stakeholder Add/edit stakeholders dialog, Stakeholders section tab, stakeholder, sale
+keywords: ['Add stakeholder', 'new stakeholder Add/edit stakeholders dialog', 'Stakeholders section tab', 'stakeholder', 'sale']
 author: Bergfrid Dias
 date: 01.08.2025
 version: 10.5

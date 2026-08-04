@@ -3,7 +3,7 @@ uid: help-en-mailing-send-test
 title: Send a test email for email mailings and form responses
 sidebarTitle: "Send a test email"
 description: In this how-to guide you will learn how to send a test mailing.
-keywords: Marketing
+keywords: ['Marketing']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

@@ -1,7 +1,7 @@
 ---
 uid: contactphone
 title: contactphone
-keywords: mdoprovider mdo provider contactphone
+keywords: ['mdoprovider mdo provider contactphone']
 description:
 generated: true
 content_type: reference

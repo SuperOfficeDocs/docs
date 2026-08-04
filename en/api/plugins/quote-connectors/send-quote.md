@@ -4,7 +4,7 @@ uid: quote_connectors_send_quote
 description: Sending the quote
 author: SuperOffice Product and Engineering
 date: 11.08.2021
-keywords: quote
+keywords: ['quote']
 content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/send-quote
 ---

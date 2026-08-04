@@ -2,7 +2,7 @@
 uid: get-preferences-ws
 title: Get preferences using services
 description: How to get preferences using services
-keywords: preference, PreferenceSpec, PreferenceAgent
+keywords: ['preference', 'PreferenceSpec', 'PreferenceAgent']
 author: digitaldiina
 date: 02.22.2022
 content_type: howto

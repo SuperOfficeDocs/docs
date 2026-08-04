@@ -2,7 +2,7 @@
 uid: DocumentSelectionCombined
 title: DocumentSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: DocumentSelectionCombined archive provider
+keywords: ['DocumentSelectionCombined archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

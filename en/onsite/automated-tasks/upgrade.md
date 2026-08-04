@@ -2,7 +2,7 @@
 uid: automated-task-upgrade
 title: Upgrade
 description: Automated tasks in Service - upgrade
-keywords: upgrade
+keywords: ['upgrade']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 content_type: reference

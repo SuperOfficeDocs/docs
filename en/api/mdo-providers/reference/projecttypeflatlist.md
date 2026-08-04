@@ -1,7 +1,7 @@
 ---
 uid: projecttypeflatlist
 title: projecttypeflatlist
-keywords: mdoprovider mdo provider projecttypeflatlist
+keywords: ['mdoprovider mdo provider projecttypeflatlist']
 description: Project type list. Encodes Default project duration in extra info.
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: Participants
 title: Participants
 description: Archive list provider for the participants list of a booking (multi-person appointment)
-keywords: Participants archive provider
+keywords: ['Participants archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

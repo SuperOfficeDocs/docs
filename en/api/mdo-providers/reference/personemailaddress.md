@@ -1,7 +1,7 @@
 ---
 uid: personemailaddress
 title: personemailaddress
-keywords: mdoprovider mdo provider personemailaddress
+keywords: ['mdoprovider mdo provider personemailaddress']
 description: List of e-mail addresses matching the search value, possibly restricted to a given company or person.
 generated: true
 content_type: reference

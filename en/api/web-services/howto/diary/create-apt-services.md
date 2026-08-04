@@ -2,7 +2,7 @@
 uid: create-appointment-services
 title: Create an appointment using services
 description: Create an appointment using NetServer services
-keywords: diary, calendar, appointment, API, web services
+keywords: ['diary', 'calendar', 'appointment', 'API', 'web services']
 author: Bergfrid Skaara Dias
 date: 03.18.2022
 content_type: howto

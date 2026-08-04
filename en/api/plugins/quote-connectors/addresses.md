@@ -4,7 +4,7 @@ uid: address_provider
 description: Address Provider
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/addresses
 ---

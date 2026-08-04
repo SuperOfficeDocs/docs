@@ -1,7 +1,7 @@
 ---
 uid: ticketstatustimecounter
 title: ticketstatustimecounter
-keywords: mdoprovider mdo provider ticketstatustimecounter
+keywords: ['mdoprovider mdo provider ticketstatustimecounter']
 description: Ticket status timer count values - None, Internall, Externally, Queue
 generated: true
 content_type: reference

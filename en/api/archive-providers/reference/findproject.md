@@ -2,7 +2,7 @@
 uid: FindProject
 title: FindProject
 description: Provider for searching in projects
-keywords: FindProject archive provider
+keywords: ['FindProject archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: RecyclePerson
 title: RecyclePerson
 description:
-keywords: RecyclePerson archive provider
+keywords: ['RecyclePerson archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

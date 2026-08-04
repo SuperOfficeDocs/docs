@@ -1,7 +1,7 @@
 ---
 uid: saintactivitytype
 title: saintactivitytype
-keywords: mdoprovider mdo provider saintactivitytype
+keywords: ['mdoprovider mdo provider saintactivitytype']
 description: This SoList provider generates the appointment/task type list for the Saint criteria. This is a simple, hard-coded list corresponding to the type field of the <see cref="!:SuperOffice.CRM.Rows.DocTmpl" /> and <see cref="!:SuperOffice.CRM.Rows.Task" /> tables. Tasks are both appointments and documents.
 generated: true
 content_type: reference

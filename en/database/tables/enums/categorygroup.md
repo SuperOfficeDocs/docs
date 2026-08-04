@@ -3,7 +3,7 @@ uid: enum-categorygroup
 title: Enum values for CategoryGroup
 description: Lists the enum values for CategoryGroup.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

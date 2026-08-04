@@ -1,7 +1,7 @@
 ---
 uid: selectiontype
 title: selectiontype
-keywords: mdoprovider mdo provider selectiontype
+keywords: ['mdoprovider mdo provider selectiontype']
 description: MDO provider for the hard-coded list of selection kinds - Static, Dynamic, Combined. Combined requires the Combined Selection CAL license.
 generated: true
 content_type: reference

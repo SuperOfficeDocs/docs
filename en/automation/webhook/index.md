@@ -2,7 +2,7 @@
 uid: webhook-overview
 title: Webhooks
 description: SuperOffice webhooks push event notifications to external systems in real time. Admins can manage them from Settings and maintenance; developers can register them via the REST API or CRMScript.
-keywords: automation, webhook, integration, event, notification
+keywords: ['automation', 'webhook', 'integration', 'event', 'notification']
 author: digitaldiina
 date: 06.15.2026
 version: 12.1

@@ -2,7 +2,7 @@
 uid: FreetextDocument
 title: FreetextDocument
 description: Archive provider for freetext search on the Document entity (any kind of document).
-keywords: FreetextDocument archive provider
+keywords: ['FreetextDocument archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: webhook_contact_event
 title: Contact webhook events
 description: Contact events
-keywords: contact webhook
+keywords: ['contact webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

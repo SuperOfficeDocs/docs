@@ -2,7 +2,7 @@
 uid: PersonActivity
 title: PersonActivity
 description: Activity archive provider for the Person card
-keywords: PersonActivity archive provider
+keywords: ['PersonActivity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

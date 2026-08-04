@@ -2,7 +2,7 @@
 uid: MailFolder
 title: MailFolder
 description: Provides list of subscribed and unsubscribed mail folders available for an account
-keywords: MailFolder archive provider
+keywords: ['MailFolder archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

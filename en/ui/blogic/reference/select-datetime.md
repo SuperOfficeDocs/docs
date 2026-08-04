@@ -4,7 +4,6 @@ uid: blogic_select_datetime
 description: Select DateTime
 author:
 date:
-keywords:
 topic: reference
 ---
 

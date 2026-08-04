@@ -2,7 +2,7 @@
 uid: help-en-chat-link-to-person
 title: Link chat to existing contact
 description: When a customer sends a query via the chat widget on the website, it is not only important to respond to it, but also to register it on their Contact card.
-keywords: link chat to contact, suggested contact
+keywords: ['link chat to contact', 'suggested contact']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

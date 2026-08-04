@@ -1,7 +1,7 @@
 ---
 uid: reasonsold
 title: reasonsold
-keywords: mdoprovider mdo provider reasonsold
+keywords: ['mdoprovider mdo provider reasonsold']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

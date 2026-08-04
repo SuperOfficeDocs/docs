@@ -2,7 +2,7 @@
 uid: crmscript-sale-samples
 title: Samples
 description: Sample code for working with projects in CRMScript.
-keywords: sale, SearchEngine
+keywords: ['sale', 'SearchEngine']
 author: Bergfrid Dias
 date: 06.09.2023
 version: 10

@@ -2,7 +2,7 @@
 uid: AssociateProjectDynamicSelection
 title: AssociateProjectDynamicSelection
 description:
-keywords: AssociateProjectDynamicSelection archive provider
+keywords: ['AssociateProjectDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -3,7 +3,7 @@ title: Numbers (integer, decimal, float)
 uid: rest_api_search_numbers
 description: REST Web API search numbers
 author: SuperOffice Product and Engineering
-keywords: search,odata
+keywords: ['search', 'odata']
 date:
 content_type: howto
 redirect_from: /en/api/netserver/search/odata/numbers

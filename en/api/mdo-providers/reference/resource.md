@@ -1,7 +1,7 @@
 ---
 uid: resource
 title: resource
-keywords: mdoprovider mdo provider resource
+keywords: ['mdoprovider mdo provider resource']
 description: MDO provider for resources (from the associate table)
 generated: true
 content_type: reference

@@ -3,7 +3,7 @@ uid: crmscript_based_selections
 title: Script-based selections
 author:
 date: 06.24.2016
-keywords: selection,crmscript
+keywords: ['selection', 'crmscript']
 content_type: tutorial
 ---
 

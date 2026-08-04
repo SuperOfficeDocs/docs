@@ -3,7 +3,6 @@ uid: crmscript_fundamentals_loops_for
 title: Loops - for
 author:
 date:
-keywords:
 content_type: concept
 ---
 

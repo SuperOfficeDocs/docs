@@ -1,7 +1,7 @@
 ---
 uid: ticketorigin
 title: ticketorigin
-keywords: mdoprovider mdo provider ticketorigin
+keywords: ['mdoprovider mdo provider ticketorigin']
 description: Ticket Origin
 generated: true
 content_type: reference

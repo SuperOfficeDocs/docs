@@ -2,7 +2,7 @@
 uid: help-en-win-client
 title: Windows Client settings
 description: Windows Client settings
-keywords: Windows Client settings
+keywords: ['Windows Client settings']
 author: SuperOffice Product and ENgineering
 date: 09.17.2025
 content_type: concept

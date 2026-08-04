@@ -2,7 +2,7 @@
 uid: Role
 title: Role
 description: Archive of Roles  - used by the web api.
-keywords: Role archive provider
+keywords: ['Role archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

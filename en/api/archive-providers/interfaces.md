@@ -3,7 +3,6 @@ title: Interface definition and composition
 uid: archive_provider_interface
 description: Interface definition and composition
 author: SuperOffice Product and Engineering
-keywords:
 content_type: concept
 category: api
 topic: archive providers

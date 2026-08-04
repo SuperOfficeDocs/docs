@@ -2,7 +2,7 @@
 uid: EmailFlowInstances
 title: EmailFlowInstances
 description: Archive of Email flow Instances.
-keywords: EmailFlowInstances archive provider
+keywords: ['EmailFlowInstances archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

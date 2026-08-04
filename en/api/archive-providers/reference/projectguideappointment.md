@@ -2,7 +2,7 @@
 uid: ProjectGuideAppointment
 title: ProjectGuideAppointment
 description: Specific provider for Project Guide Items of type Appointment
-keywords: ProjectGuideAppointment archive provider
+keywords: ['ProjectGuideAppointment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

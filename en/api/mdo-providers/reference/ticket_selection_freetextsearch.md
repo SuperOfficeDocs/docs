@@ -1,7 +1,7 @@
 ---
 uid: ticket_selection_freetextsearch
 title: ticket_selection_freetextsearch
-keywords: mdoprovider mdo provider ticket_selection_freetextsearch
+keywords: ['mdoprovider mdo provider ticket_selection_freetextsearch']
 description: Provider for selecting Ticket Selection or a Ticket. Does keyword matching and scoring. Searches selection table and ticket table.
 generated: true
 content_type: reference

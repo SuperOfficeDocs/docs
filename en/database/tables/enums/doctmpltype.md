@@ -3,7 +3,7 @@ uid: enum-doctmpltype
 title: Enum values for DocTmplType
 description: Lists the enum values for DocTmplType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

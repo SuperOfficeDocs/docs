@@ -1,7 +1,7 @@
 ---
 uid: genericperson
 title: genericperson
-keywords: mdoprovider mdo provider genericperson
+keywords: ['mdoprovider mdo provider genericperson']
 description: List of persons with mail. Supports Selection(any type), project and associate. Uses an inner provider <see cref="T:SuperOffice.CRM.Lists.PersonListGenericContactProjectProvider" />.
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: LastTickets
 title: LastTickets
 description:
-keywords: LastTickets archive provider
+keywords: ['LastTickets archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

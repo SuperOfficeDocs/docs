@@ -4,7 +4,6 @@ uid: blogic_contact_and_recipient
 description: Contact and recipient
 author:
 date:
-keywords:
 topic: reference
 ---
 

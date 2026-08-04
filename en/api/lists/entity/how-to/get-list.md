@@ -3,7 +3,6 @@ title: Retrieve a list
 uid: get_list
 description: Retrieve a list
 author: SuperOffice Product and Engineering
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/lists/entity/how-to/get-list
 hidden: true

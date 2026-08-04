@@ -3,7 +3,6 @@ uid: crmscript_debug_print_debug
 title: Print debug
 author:
 date:
-keywords:
 content_type: howto
 ---
 

@@ -2,7 +2,7 @@
 uid: ConfigurableArchive
 title: ConfigurableArchive
 description: Configurable archive with OR-able restriction groups.
-keywords: ConfigurableArchive archive provider
+keywords: ['ConfigurableArchive archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

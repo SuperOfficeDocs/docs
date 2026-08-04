@@ -1,7 +1,7 @@
 ---
 uid: ticketrelationdefinition
 title: ticketrelationdefinition
-keywords: mdoprovider mdo provider ticketrelationdefinition
+keywords: ['mdoprovider mdo provider ticketrelationdefinition']
 description: MDO list provider for ticket relation definitions.
 generated: true
 content_type: reference

@@ -4,7 +4,7 @@ uid: entity_events
 description: Events in Entity objects
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords: hook
+keywords: ['hook']
 content_type: concept
 redirect_from: /en/api/netserver/entities/events
 hidden: true

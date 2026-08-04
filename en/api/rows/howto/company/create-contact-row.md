@@ -2,7 +2,7 @@
 uid: create-contact-row
 title: Create a contact row
 description: Create a contact row
-keywords: company, contact, API, row, ContactRow
+keywords: ['company', 'contact', 'API', 'row', 'ContactRow']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

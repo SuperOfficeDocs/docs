@@ -2,7 +2,7 @@
 uid: api-diary-sql
 title: Diary - raw SQL
 description: Working with appointments in raw SQL.
-keywords: diary, calendar, appointment, API
+keywords: ['diary', 'calendar', 'appointment', 'API']
 author: Bergfrid Skaara Dias
 date: 03.02.2022
 content_type: reference

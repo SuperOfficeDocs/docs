@@ -3,7 +3,7 @@ uid: help-en-product-fields-configure
 title: Configure fields in the Add/edit product dialog
 sidebarTitle: "Configure product fields"
 description: Learn how to control which fields appear in the Add/edit product dialog and how they behave.
-keywords: Configure product dialog, Add/edit product dialog, configure product, product dialog, product field, product, quote
+keywords: ['Configure product dialog', 'Add/edit product dialog', 'configure product', 'product dialog', 'product field', 'product', 'quote']
 author: Bergfrid Dias
 date: 04.28.2025
 version: 10.5.4

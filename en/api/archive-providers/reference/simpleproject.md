@@ -2,7 +2,7 @@
 uid: SimpleProject
 title: SimpleProject
 description:
-keywords: SimpleProject archive provider
+keywords: ['SimpleProject archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

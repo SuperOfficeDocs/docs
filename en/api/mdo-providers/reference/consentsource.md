@@ -1,7 +1,7 @@
 ---
 uid: consentsource
 title: consentsource
-keywords: mdoprovider mdo provider consentsource
+keywords: ['mdoprovider mdo provider consentsource']
 description: MDO list provider for Consent source
 generated: true
 content_type: reference

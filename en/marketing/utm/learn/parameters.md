@@ -2,7 +2,7 @@
 uid: help-en-utm-parameters
 title: UTM parameters
 description: UTM parameters
-keywords: UTM parameters
+keywords: ['UTM parameters']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

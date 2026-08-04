@@ -2,7 +2,7 @@
 uid: SelectionStaticSelectionV2
 title: SelectionStaticSelectionV2
 description: Static archive Provider for a Selection of selection archive.
-keywords: SelectionStaticSelectionV2 archive provider
+keywords: ['SelectionStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: help-en-request-status
 title: Request status
 description: Request status
-keywords: request status, Request status tab, request, status
+keywords: ['request status', 'Request status tab', 'request', 'status']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

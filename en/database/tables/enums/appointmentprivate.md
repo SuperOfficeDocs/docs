@@ -3,7 +3,7 @@ uid: enum-appointmentprivate
 title: Enum values for AppointmentPrivate
 description: Lists the enum values for AppointmentPrivate.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

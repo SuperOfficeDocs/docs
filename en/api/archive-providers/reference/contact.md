@@ -2,7 +2,7 @@
 uid: Contact
 title: Contact
 description: Contact provider for general use
-keywords: Contact archive provider
+keywords: ['Contact archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

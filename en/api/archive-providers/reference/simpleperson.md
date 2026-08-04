@@ -2,7 +2,7 @@
 uid: SimplePerson
 title: SimplePerson
 description:
-keywords: SimplePerson archive provider
+keywords: ['SimplePerson archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

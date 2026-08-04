@@ -3,7 +3,7 @@ uid: enum-designtype
 title: Enum values for DesignType
 description: Lists the enum values for DesignType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

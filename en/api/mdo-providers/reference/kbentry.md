@@ -1,7 +1,7 @@
 ---
 uid: kbentry
 title: kbentry
-keywords: mdoprovider mdo provider kbentry
+keywords: ['mdoprovider mdo provider kbentry']
 description:
 generated: true
 content_type: reference

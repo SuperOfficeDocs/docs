@@ -3,7 +3,7 @@ uid: enum-appntrecordtype
 title: Enum values for AppntRecordType
 description: Lists the enum values for AppntRecordType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

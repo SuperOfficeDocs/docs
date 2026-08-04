@@ -2,7 +2,7 @@
 uid: TemplateLanguage
 title: TemplateLanguage
 description: Archive Provider for retriving the registered languages for a given document template.
-keywords: TemplateLanguage archive provider
+keywords: ['TemplateLanguage archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

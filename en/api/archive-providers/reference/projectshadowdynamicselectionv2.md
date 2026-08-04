@@ -2,7 +2,7 @@
 uid: ProjectShadowDynamicSelectionV2
 title: ProjectShadowDynamicSelectionV2
 description: Project shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: ProjectShadowDynamicSelectionV2 archive provider
+keywords: ['ProjectShadowDynamicSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

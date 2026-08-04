@@ -1,7 +1,7 @@
 ---
 uid: preferencekey
 title: preferencekey
-keywords: mdoprovider mdo provider preferencekey
+keywords: ['mdoprovider mdo provider preferencekey']
 description: MDO Provider that retrieves a list of preference keys corresponding to a given section
 generated: true
 content_type: reference

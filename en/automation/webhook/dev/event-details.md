@@ -2,7 +2,7 @@
 uid: webhook-event-details
 title: Event details
 description: Event details for SuperOffice webhooks - entity and event type combinations.
-keywords: automation, webhook, event, entity
+keywords: ['automation', 'webhook', 'event', 'entity']
 author: Tony Yates
 date: 04.06.2018
 content_type: reference

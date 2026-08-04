@@ -1,7 +1,7 @@
 ---
 uid: erppaymenttype
 title: erppaymenttype
-keywords: mdoprovider mdo provider erppaymenttype
+keywords: ['mdoprovider mdo provider erppaymenttype']
 description:
 generated: true
 content_type: reference

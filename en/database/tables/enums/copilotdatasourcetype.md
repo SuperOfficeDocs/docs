@@ -3,7 +3,7 @@ uid: enum-copilotdatasourcetype
 title: Enum values for CopilotDataSourceType
 description: Lists the enum values for CopilotDataSourceType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -1,7 +1,7 @@
 ---
 uid: documenttemplatesfiltered
 title: documenttemplatesfiltered
-keywords: mdoprovider mdo provider documenttemplatesfiltered
+keywords: ['mdoprovider mdo provider documenttemplatesfiltered']
 description: MDO Provider for Document Templates, excluding Document details and quote mail templates, which are for system use rather than end-user choosing.
 generated: true
 content_type: reference

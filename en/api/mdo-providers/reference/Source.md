@@ -1,7 +1,7 @@
 ---
 uid: source
 title: source
-keywords: mdoprovider mdo provider source
+keywords: ['mdoprovider mdo provider source']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

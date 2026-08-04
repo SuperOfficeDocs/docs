@@ -1,7 +1,7 @@
 ---
 uid: productimage
 title: productimage
-keywords: mdoprovider mdo provider productimage
+keywords: ['mdoprovider mdo provider productimage']
 description: Return product images from the blob table
 generated: true
 content_type: reference

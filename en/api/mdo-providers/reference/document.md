@@ -1,7 +1,7 @@
 ---
 uid: document
 title: document
-keywords: mdoprovider mdo provider document
+keywords: ['mdoprovider mdo provider document']
 description: MDO list provider for documents.
 generated: true
 content_type: reference

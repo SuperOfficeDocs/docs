@@ -2,7 +2,7 @@
 uid: DummySelectionContact
 title: DummySelectionContact
 description:
-keywords: DummySelectionContact archive provider
+keywords: ['DummySelectionContact archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

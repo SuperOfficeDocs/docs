@@ -1,7 +1,7 @@
 ---
 uid: importnewpositionitem
 title: importnewpositionitem
-keywords: mdoprovider mdo provider importnewpositionitem
+keywords: ['mdoprovider mdo provider importnewpositionitem']
 description: Import position items - Add to list, set to blank
 generated: true
 content_type: reference

@@ -4,7 +4,7 @@ uid: upgrade_to_81_new
 description: Upgrade to 8.1 when using new domains
 author: Martin Pavlas
 date: 12.08.2021
-keywords: upgrade
+keywords: ['upgrade']
 content_type: howto
 deployment: onsite
 version: 8.1

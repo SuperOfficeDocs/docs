@@ -4,7 +4,7 @@ uid: entity_collections
 description: Entity collections
 author: AnthonyYates
 date: 11.16.2021
-keywords: data access, entity, entities, RDB
+keywords: ['data access', 'entity', 'entities', 'RDB']
 content_type: concept
 deployment: online, onsite
 platform: web, win

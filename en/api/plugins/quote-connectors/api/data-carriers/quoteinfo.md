@@ -3,7 +3,7 @@ title: QuoteInfo
 uid: quote_connector_carrier_quoteinfo
 description:  ERP Quote Connector Interface data carrier -  QuoteInfo
 date:
-keywords: quote
+keywords: ['quote']
 content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteinfo
 ---

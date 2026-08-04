@@ -1,7 +1,7 @@
 ---
 uid: smsmailing
 title: smsmailing
-keywords: mdoprovider mdo provider smsmailing
+keywords: ['mdoprovider mdo provider smsmailing']
 description: SMS Shipment names
 generated: true
 content_type: reference

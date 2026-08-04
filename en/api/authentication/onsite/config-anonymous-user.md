@@ -3,7 +3,6 @@ title: How to configure the anonymous users
 uid: config_anonymous_user
 description: How to configure the anonymous users in the config file
 author: SuperOffice Product and Engineering
-keywords:
 content_type: howto
 redirect_from: /en/authentication/onsite/config-anonymous-user
 ---

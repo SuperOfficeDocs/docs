@@ -2,7 +2,7 @@
 uid: SaintPerson
 title: SaintPerson
 description: Archive provider for Contact Saint Status - same as Find Contact, but adds ability to call up stored definitions via a statusDefId column
-keywords: SaintPerson archive provider
+keywords: ['SaintPerson archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: SelectionStaticContactAddMembers
 title: SelectionStaticContactAddMembers
 description: This is the provider used when searching for potential new members of a static selection. It is actually
-keywords: SelectionStaticContactAddMembers archive provider
+keywords: ['SelectionStaticContactAddMembers archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -1,7 +1,7 @@
 ---
 uid: appointmenttype
 title: appointmenttype
-keywords: mdoprovider mdo provider appointmenttype
+keywords: ['mdoprovider mdo provider appointmenttype']
 description: List of AppointmentType values - inDiary, inChecklist, Note, Document, SavedReport, BookingForDiary, BookingForChecklist
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: UnassignedTickets
 title: UnassignedTickets
 description:
-keywords: UnassignedTickets archive provider
+keywords: ['UnassignedTickets archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

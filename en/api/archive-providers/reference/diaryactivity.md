@@ -2,7 +2,7 @@
 uid: DiaryActivity
 title: DiaryActivity
 description: Activity archive provider for the Diary (checklist)
-keywords: DiaryActivity archive provider
+keywords: ['DiaryActivity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

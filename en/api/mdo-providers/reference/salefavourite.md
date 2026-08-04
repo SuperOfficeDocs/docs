@@ -1,7 +1,7 @@
 ---
 uid: salefavourite
 title: salefavourite
-keywords: mdoprovider mdo provider salefavourite
+keywords: ['mdoprovider mdo provider salefavourite']
 description: MDO list provider for Favourites
 generated: true
 content_type: reference

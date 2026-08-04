@@ -2,7 +2,7 @@
 uid: get-localized-address
 title: Read the LocalizedAddress
 description: Read the LocalizedAddress
-keywords: globalization, address
+keywords: ['globalization', 'address']
 author: Tony Yates
 date: 05.15.2017
 version: 8

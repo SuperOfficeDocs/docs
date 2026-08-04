@@ -1,7 +1,7 @@
 ---
 uid: targettypes
 title: targettypes
-keywords: mdoprovider mdo provider targettypes
+keywords: ['mdoprovider mdo provider targettypes']
 description:
 generated: true
 content_type: reference

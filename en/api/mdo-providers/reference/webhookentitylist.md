@@ -1,7 +1,7 @@
 ---
 uid: webhookentitylist
 title: webhookentitylist
-keywords: mdoprovider mdo provider webhookentitylist
+keywords: ['mdoprovider mdo provider webhookentitylist']
 description:
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: FreetextAppointment
 title: FreetextAppointment
 description: Archive provider for freetext search on the Appointment entity (any kind of appointment, phone call, or task).
-keywords: FreetextAppointment archive provider
+keywords: ['FreetextAppointment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

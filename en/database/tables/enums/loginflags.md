@@ -3,7 +3,7 @@ uid: enum-loginflags
 title: Enum values for LoginFlags
 description: Lists the enum values for LoginFlags.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

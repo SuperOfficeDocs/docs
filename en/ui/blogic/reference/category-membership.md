@@ -4,7 +4,6 @@ uid: blogic_category_membership
 description: Category membership
 author:
 date:
-keywords:
 topic: reference
 ---
 

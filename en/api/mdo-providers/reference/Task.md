@@ -1,7 +1,7 @@
 ---
 uid: task
 title: task
-keywords: mdoprovider mdo provider task
+keywords: ['mdoprovider mdo provider task']
 description: Task table MDO list. Optional include "None" as first value.
 generated: true
 content_type: reference

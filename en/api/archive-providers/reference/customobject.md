@@ -2,7 +2,7 @@
 uid: CustomObject
 title: CustomObject
 description:
-keywords: CustomObject archive provider
+keywords: ['CustomObject archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

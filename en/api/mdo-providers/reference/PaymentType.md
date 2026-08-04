@@ -1,7 +1,7 @@
 ---
 uid: paymenttype
 title: paymenttype
-keywords: mdoprovider mdo provider paymenttype
+keywords: ['mdoprovider mdo provider paymenttype']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

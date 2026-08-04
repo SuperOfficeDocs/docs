@@ -1,7 +1,7 @@
 ---
 uid: suggestedappointment
 title: suggestedappointment
-keywords: mdoprovider mdo provider suggestedappointment
+keywords: ['mdoprovider mdo provider suggestedappointment']
 description: Suggested Appointment Provider creates a MDO list of suggested appointments for a given guide stage.
 generated: true
 content_type: reference

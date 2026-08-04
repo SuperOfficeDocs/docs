@@ -1,7 +1,7 @@
 ---
 uid: specifiedmailings
 title: specifiedmailings
-keywords: mdoprovider mdo provider specifiedmailings
+keywords: ['mdoprovider mdo provider specifiedmailings']
 description: Create a list of mailings (flow, form, regular mailing/shipment...), hierarchy optional
 generated: true
 content_type: reference

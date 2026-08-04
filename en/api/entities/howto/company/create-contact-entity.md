@@ -2,7 +2,7 @@
 uid: create-contact-entity
 title: Create a Contact entity
 description: Create a contact entity
-keywords: contact, company, entity, API, assert, SetDefaults
+keywords: ['contact', 'company', 'entity', 'API', 'assert', 'SetDefaults']
 author: Bergfrid Dias
 date: 02.22.2022
 content_type: howto

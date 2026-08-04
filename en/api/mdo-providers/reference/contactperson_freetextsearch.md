@@ -1,7 +1,7 @@
 ---
 uid: contactperson_freetextsearch
 title: contactperson_freetextsearch
-keywords: mdoprovider mdo provider contactperson_freetextsearch
+keywords: ['mdoprovider mdo provider contactperson_freetextsearch']
 description: Provider for selecting a Contact - with person search. Does keyword matching and scoring across multiple string fields. Checks name, department, soundex fields.
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: list-contact-interests-ws
 title: How to list all selected interests
 description: How to list all selected interests for a contact using services
-keywords: contact, company, services, API, interest, ContactAgent, SelectableMDOListItem
+keywords: ['contact', 'company', 'services', 'API', 'interest', 'ContactAgent', 'SelectableMDOListItem']
 author: Tony Yates
 date: 11.04.2021
 content_type: howto

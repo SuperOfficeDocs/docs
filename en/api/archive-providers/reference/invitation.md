@@ -2,7 +2,7 @@
 uid: Invitation
 title: Invitation
 description: Invitation provider multichannel combiner, consisting of simple, cancelled, rejected, repeating and response invitations. You can also
-keywords: Invitation archive provider
+keywords: ['Invitation archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

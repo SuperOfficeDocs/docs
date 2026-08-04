@@ -2,7 +2,7 @@
 uid: help-en-duplicates
 title: Duplicates
 description: Duplicates
-keywords: duplicate
+keywords: ['duplicate']
 author: SuperOffice RnD
 date: 06.29.2022
 content_type: concept

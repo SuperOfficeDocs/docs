@@ -3,7 +3,7 @@ uid: enum-showstate
 title: Enum values for ShowState
 description: Lists the enum values for ShowState.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

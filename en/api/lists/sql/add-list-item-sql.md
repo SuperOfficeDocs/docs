@@ -2,7 +2,7 @@
 uid: add-list-item-sql
 title: Adding a list item
 description: Adding a list item
-keywords: add list item, category list
+keywords: ['add list item', 'category list']
 author: SuperOffice Product and Engineering
 date: 11.08.2021
 content_type: howto

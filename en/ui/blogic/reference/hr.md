@@ -4,7 +4,6 @@ uid: blogic_hr
 description: Vertical space (hr)
 author:
 date:
-keywords:
 topic: reference
 ---
 

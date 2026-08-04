@@ -1,7 +1,7 @@
 ---
 uid: culture
 title: culture
-keywords: mdoprovider mdo provider culture
+keywords: ['mdoprovider mdo provider culture']
 description:
 generated: true
 content_type: reference

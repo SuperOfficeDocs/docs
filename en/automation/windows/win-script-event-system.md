@@ -4,7 +4,6 @@ uid: win_script_event_system
 description: Win Script and event system - aborting a save sequence
 author: Conrad Weyns
 date: 10.28.2019
-keywords:
 content_type: howto
 deployment: onsite
 platform: win

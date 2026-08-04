@@ -1,7 +1,7 @@
 ---
 uid: activelanguage
 title: activelanguage
-keywords: mdoprovider mdo provider activelanguage
+keywords: ['mdoprovider mdo provider activelanguage']
 description:
 generated: true
 content_type: reference

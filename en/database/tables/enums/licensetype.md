@@ -3,7 +3,7 @@ uid: enum-licensetype
 title: Enum values for LicenseType
 description: Lists the enum values for LicenseType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

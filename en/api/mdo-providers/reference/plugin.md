@@ -1,7 +1,7 @@
 ---
 uid: plugin
 title: plugin
-keywords: mdoprovider mdo provider plugin
+keywords: ['mdoprovider mdo provider plugin']
 description: List of installed and available Document plugins
 generated: true
 content_type: reference

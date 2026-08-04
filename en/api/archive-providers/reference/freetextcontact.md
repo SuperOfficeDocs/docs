@@ -2,7 +2,7 @@
 uid: FreetextContact
 title: FreetextContact
 description: Archive provider for freetext search on the Contact (company) entity.
-keywords: FreetextContact archive provider
+keywords: ['FreetextContact archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

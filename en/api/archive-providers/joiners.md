@@ -2,7 +2,7 @@
 title: joiners
 description: Joiners
 author: SuperOffice Product and Engineering
-keywords: Joiner class, joiners
+keywords: ['Joiner class', 'joiners']
 content_type: concept
 category: api
 topic: archive providers

@@ -1,7 +1,7 @@
 ---
 uid: quoteapprovers
 title: quoteapprovers
-keywords: mdoprovider mdo provider quoteapprovers
+keywords: ['mdoprovider mdo provider quoteapprovers']
 description: Retrieve the list of all users that can approve quotes
 generated: true
 content_type: reference

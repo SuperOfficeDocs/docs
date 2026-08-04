@@ -1,7 +1,7 @@
 ---
 uid: replytemplateaccesslevel
 title: replytemplateaccesslevel
-keywords: mdoprovider mdo provider replytemplateaccesslevel
+keywords: ['mdoprovider mdo provider replytemplateaccesslevel']
 description: MDO provider for the ReplyTemplateAccessLevel enum
 generated: true
 content_type: reference

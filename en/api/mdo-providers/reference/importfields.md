@@ -1,7 +1,7 @@
 ---
 uid: importfields
 title: importfields
-keywords: mdoprovider mdo provider importfields
+keywords: ['mdoprovider mdo provider importfields']
 description: MDO provider for column headers used in import
 generated: true
 content_type: reference

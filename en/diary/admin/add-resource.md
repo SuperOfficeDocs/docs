@@ -2,7 +2,7 @@
 uid: help-en-add-items-to-resource-list
 title: Add resource
 description: Adding items to the Resource list
-keywords: resource, General - Resource list
+keywords: ['resource', 'General - Resource list']
 author: digitaldiina
 date: 10.27.2025
 version: 10.5

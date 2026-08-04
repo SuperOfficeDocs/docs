@@ -3,7 +3,7 @@ uid: crmscript_udef_tutorial
 title: User-defined fields
 author:
 date:
-keywords: udefagent,crmscript
+keywords: ['udefagent', 'crmscript']
 content_type: tutorial
 ---
 

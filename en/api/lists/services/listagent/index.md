@@ -2,7 +2,7 @@
 uid: web-service-list-endpoint
 title: Lists
 description: Describes managing lists with web service APIs
-keywords: list, agent
+keywords: ['list', 'agent']
 author: AnthonyYates
 date: 12.02.2025
 content_type: concept

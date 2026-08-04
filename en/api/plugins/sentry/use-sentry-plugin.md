@@ -4,7 +4,7 @@ uid: use_sentry_plugin
 description: Use a Sentry plugin
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords: Sentry, plug-in, plugin, security, TableRight, N
+keywords: ['Sentry', 'plug-in', 'plugin', 'security', 'TableRight', 'N']
 content_type: howto
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/sentry/use-sentry-plugin

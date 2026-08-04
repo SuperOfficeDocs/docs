@@ -2,7 +2,7 @@
 uid: TicketShadowStaticSelection
 title: TicketShadowStaticSelection
 description: Shadow contact provider for the static ticket provider.
-keywords: TicketShadowStaticSelection archive provider
+keywords: ['TicketShadowStaticSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

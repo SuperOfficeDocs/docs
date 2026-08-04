@@ -2,7 +2,7 @@
 uid: help-en-template-variables
 title: Template variables
 description: With template variables you can personalize and automate the input of customer data.
-keywords: document, template, variable
+keywords: ['document', 'template', 'variable']
 author: Bergfrid Dias
 date: 12.10.2024
 version: 10.3

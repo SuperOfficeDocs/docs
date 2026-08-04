@@ -2,7 +2,7 @@
 uid: get-category-list-typed-provider
 title: Get a CategoryList through typed list providers
 description: Get a CategoryList through typed list providers
-keywords: category, list provider, CategoryList
+keywords: ['category', 'list provider', 'CategoryList']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

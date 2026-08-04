@@ -2,7 +2,7 @@
 uid: accept-invitation-sql
 title: Accept invitation
 description: How to accept an invitation to an appointment using raw SQL.
-keywords: diary, calendar, appointment, API, invitation
+keywords: ['diary', 'calendar', 'appointment', 'API', 'invitation']
 author: Bergfrid Skaara Dias
 date: 03.02.2022
 content_type: howto

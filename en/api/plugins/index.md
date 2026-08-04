@@ -4,7 +4,7 @@ uid: netserver_patterns
 description: SuperOffice NetServer patterns
 author: Bergfrid Dias
 date: 11.29.2016
-keywords: API, NetServer, plugin pattern, factory pattern
+keywords: ['API', 'NetServer', 'plugin pattern', 'factory pattern']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/index
 ---

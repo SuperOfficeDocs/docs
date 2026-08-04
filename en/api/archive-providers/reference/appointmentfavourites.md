@@ -2,7 +2,7 @@
 uid: appointmentfavourites
 title: appointmentfavourites
 description:
-keywords: appointmentfavourites archive provider
+keywords: ['appointmentfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

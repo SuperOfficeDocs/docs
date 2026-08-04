@@ -4,7 +4,6 @@ uid: blogic_select_ticket_status
 description: Select ticket status
 author:
 date:
-keywords:
 topic: reference
 ---
 

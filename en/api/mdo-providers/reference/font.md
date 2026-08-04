@@ -1,7 +1,7 @@
 ---
 uid: font
 title: font
-keywords: mdoprovider mdo provider font
+keywords: ['mdoprovider mdo provider font']
 description: List provider for availablefonts table.
 generated: true
 content_type: reference

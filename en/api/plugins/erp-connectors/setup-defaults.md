@@ -4,7 +4,6 @@ uid: erp_setup_defaults
 description: Setting up ERP Sync defaults
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/plugins/erp-connectors/setup-defaults
 ---

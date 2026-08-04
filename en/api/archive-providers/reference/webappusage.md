@@ -2,7 +2,7 @@
 uid: WebAppUsage
 title: WebAppUsage
 description:
-keywords: WebAppUsage archive provider
+keywords: ['WebAppUsage archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

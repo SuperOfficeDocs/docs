@@ -1,7 +1,7 @@
 ---
 uid: personphone
 title: personphone
-keywords: mdoprovider mdo provider personphone
+keywords: ['mdoprovider mdo provider personphone']
 description: Search phone numbers for matching values, restricted to a given company or person.
 generated: true
 content_type: reference

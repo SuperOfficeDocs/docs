@@ -1,7 +1,7 @@
 ---
 uid: findproduct
 title: findproduct
-keywords: mdoprovider mdo provider findproduct
+keywords: ['mdoprovider mdo provider findproduct']
 description: QuickSearch for the Add Quote Line dialog, where a single-line user input is passed to the correct QuoteConnection FindProduct method, and results are returned in a standard or specified format back. The format can be specified by setting a columnLayout part in the extrainfo. For example "columnLayout=Code\tName\tUnitListPrice\tQuantityUnit"
 generated: true
 content_type: reference

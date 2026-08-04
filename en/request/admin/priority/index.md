@@ -2,7 +2,7 @@
 uid: help-en-request-priority
 title: Request priorities
 description: Request priorities
-keywords: request priority, priority, escalation, request
+keywords: ['request priority', 'priority', 'escalation', 'request']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

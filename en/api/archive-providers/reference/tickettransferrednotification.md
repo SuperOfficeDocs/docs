@@ -2,7 +2,7 @@
 uid: TicketTransferredNotification
 title: TicketTransferredNotification
 description:
-keywords: TicketTransferredNotification archive provider
+keywords: ['TicketTransferredNotification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

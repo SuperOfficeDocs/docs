@@ -2,7 +2,7 @@
 uid: externaldocuments
 title: externaldocuments
 description:
-keywords: externaldocuments archive provider
+keywords: ['externaldocuments archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

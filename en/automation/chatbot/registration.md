@@ -3,7 +3,7 @@ uid: chatbot_registration
 title: Chatbot registration
 author: christianm
 date: 03.08.2021
-keywords: chatbot, ai
+keywords: ['chatbot', 'ai']
 content_type: concept
 index: true
 ---

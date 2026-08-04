@@ -3,7 +3,6 @@ title: idatahandler
 description: IDataHandler
 author: Tony Yates
 date: 06.24.2016
-keywords:
 content_type: concept
 platform: web
 deployment: onsite

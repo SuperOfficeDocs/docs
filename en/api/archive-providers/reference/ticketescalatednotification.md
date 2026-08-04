@@ -2,7 +2,7 @@
 uid: TicketEscalatedNotification
 title: TicketEscalatedNotification
 description:
-keywords: TicketEscalatedNotification archive provider
+keywords: ['TicketEscalatedNotification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: TicketShadowSelectionV2
 title: TicketShadowSelectionV2
 description: Shadow contact provider for the ticket provider.
-keywords: TicketShadowSelectionV2 archive provider
+keywords: ['TicketShadowSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -1,7 +1,7 @@
 ---
 uid: importcontactduplicatematch
 title: importcontactduplicatematch
-keywords: mdoprovider mdo provider importcontactduplicatematch
+keywords: ['mdoprovider mdo provider importcontactduplicatematch']
 description: List of fields to match contact imports.
 generated: true
 content_type: reference

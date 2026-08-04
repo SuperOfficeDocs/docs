@@ -1,7 +1,7 @@
 ---
 uid: selectionmembertypeclean
 title: selectionmembertypeclean
-keywords: mdoprovider mdo provider selectionmembertypeclean
+keywords: ['mdoprovider mdo provider selectionmembertypeclean']
 description:
 generated: true
 content_type: reference

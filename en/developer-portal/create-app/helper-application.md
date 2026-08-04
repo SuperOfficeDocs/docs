@@ -4,7 +4,6 @@ title: Helper for private applications
 description: Helper for private applications
 author: Tony Yates
 date: 09.07.2023
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

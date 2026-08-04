@@ -2,7 +2,7 @@
 uid: cookies_overview
 title: Cookies overview
 description: Cookies overview
-keywords: security, cookies
+keywords: ['security', 'cookies']
 author: SuperOffice Product and Engineering
 date: 07.31.2026
 version: 12

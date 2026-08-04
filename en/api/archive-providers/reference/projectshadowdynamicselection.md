@@ -2,7 +2,7 @@
 uid: ProjectShadowDynamicSelection
 title: ProjectShadowDynamicSelection
 description: Shadow contact provider for the dynamic Project provider.
-keywords: ProjectShadowDynamicSelection archive provider
+keywords: ['ProjectShadowDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

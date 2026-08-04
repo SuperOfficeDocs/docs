@@ -2,7 +2,7 @@
 uid: SaleGuide
 title: SaleGuide
 description: Provider for the Sale Guide, common to both Appointment and Document guide items and instances
-keywords: SaleGuide archive provider
+keywords: ['SaleGuide archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

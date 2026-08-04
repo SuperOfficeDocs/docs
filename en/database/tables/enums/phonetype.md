@@ -3,7 +3,7 @@ uid: enum-phonetype
 title: Enum values for PhoneType
 description: Lists the enum values for PhoneType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -1,7 +1,7 @@
 ---
 uid: chartselection
 title: chartselection
-keywords: mdoprovider mdo provider chartselection
+keywords: ['mdoprovider mdo provider chartselection']
 description:
 generated: true
 content_type: reference

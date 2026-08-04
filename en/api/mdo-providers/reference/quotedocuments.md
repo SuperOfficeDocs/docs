@@ -1,7 +1,7 @@
 ---
 uid: quotedocuments
 title: quotedocuments
-keywords: mdoprovider mdo provider quotedocuments
+keywords: ['mdoprovider mdo provider quotedocuments']
 description: MDO provider for the list of current / candidate "main document" for a given quote
 generated: true
 content_type: reference

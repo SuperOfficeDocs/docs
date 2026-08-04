@@ -2,7 +2,7 @@
 uid: SaleShadowSelectionCombined
 title: SaleShadowSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: SaleShadowSelectionCombined archive provider
+keywords: ['SaleShadowSelectionCombined archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

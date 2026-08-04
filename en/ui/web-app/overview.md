@@ -4,7 +4,6 @@ uid: web_application
 description: Web GUI .Net API
 author: SuperOffice Product and Engineering
 date:
-keywords:
 content_type: concept
 platform: web
 deployment: onsite

@@ -3,7 +3,7 @@ uid: enum-appointmentexternalowner
 title: Enum values for AppointmentExternalOwner
 description: Lists the enum values for AppointmentExternalOwner.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

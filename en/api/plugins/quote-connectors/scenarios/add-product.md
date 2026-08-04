@@ -4,7 +4,7 @@ uid: quote_scenario_add_product
 description: Quote connector scenario - adding a product
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: tutorial
 redirect_from:
   - /en/api/plugins/quote-connectors/scenarios/index

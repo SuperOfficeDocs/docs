@@ -2,7 +2,7 @@
 uid: LinksDocuments
 title: LinksDocuments
 description: Link data provider for documents, handles both addressing by source or by destination (not both at the same time!)
-keywords: LinksDocuments archive provider
+keywords: ['LinksDocuments archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

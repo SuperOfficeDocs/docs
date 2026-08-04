@@ -1,7 +1,7 @@
 ---
 uid: customerlanguage
 title: customerlanguage
-keywords: mdoprovider mdo provider customerlanguage
+keywords: ['mdoprovider mdo provider customerlanguage']
 description: Customer Languages list. From the CustLang table.
 generated: true
 content_type: reference

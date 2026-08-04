@@ -2,7 +2,7 @@
 uid: AppointmentDynamicSelection
 title: AppointmentDynamicSelection
 description: Appointment selection archive using the selectionId as criterionmapping.
-keywords: AppointmentDynamicSelection archive provider
+keywords: ['AppointmentDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

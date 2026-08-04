@@ -3,7 +3,7 @@ uid: enum-urlencoding
 title: Enum values for UrlEncoding
 description: Lists the enum values for UrlEncoding.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

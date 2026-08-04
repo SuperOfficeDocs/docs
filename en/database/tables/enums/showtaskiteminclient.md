@@ -3,7 +3,7 @@ uid: enum-showtaskiteminclient
 title: Enum values for ShowTaskItemInClient
 description: Lists the enum values for ShowTaskItemInClient.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

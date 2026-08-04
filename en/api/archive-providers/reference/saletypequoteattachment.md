@@ -2,7 +2,7 @@
 uid: SaleTypeQuoteAttachment
 title: SaleTypeQuoteAttachment
 description: This is the archive Provider for the Product Archive is SoAdmin.
-keywords: SaleTypeQuoteAttachment archive provider
+keywords: ['SaleTypeQuoteAttachment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

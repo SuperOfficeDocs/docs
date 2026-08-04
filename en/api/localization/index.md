@@ -2,7 +2,7 @@
 uid: globalization-and-localization
 title: SuperOffice Globalization
 description: Globalization and Localization
-keywords: globalization, localization
+keywords: ['globalization', 'localization']
 author: Bergfrid Dias
 date: 10.09.2025
 content_type: concept

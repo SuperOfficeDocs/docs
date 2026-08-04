@@ -2,7 +2,7 @@
 uid: ContactDynamicSelection
 title: ContactDynamicSelection
 description:
-keywords: ContactDynamicSelection archive provider
+keywords: ['ContactDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

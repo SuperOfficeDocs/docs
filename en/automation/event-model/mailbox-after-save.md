@@ -4,7 +4,6 @@ uid: event_model_mailbox_after_save
 description: CRMScript event model - Mailbox event, execute after message is saved
 author:
 date:
-keywords:
 content_type: reference
 ---
 

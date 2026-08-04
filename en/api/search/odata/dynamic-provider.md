@@ -3,7 +3,7 @@ title: The Dynamic Provider
 uid: rest_api_search_dynamic
 description: REST Web API dynamic dot-syntax search provider
 author: SuperOffice Product and Engineering
-keywords: search,odata
+keywords: ['search', 'odata']
 date: 2023-04-26
 content_type: howto
 redirect_from: /en/api/netserver/search/odata/dynamic-provider

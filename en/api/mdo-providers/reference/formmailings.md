@@ -1,7 +1,7 @@
 ---
 uid: formmailings
 title: formmailings
-keywords: mdoprovider mdo provider formmailings
+keywords: ['mdoprovider mdo provider formmailings']
 description:
 generated: true
 content_type: reference

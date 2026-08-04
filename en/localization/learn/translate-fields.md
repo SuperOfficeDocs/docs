@@ -2,7 +2,7 @@
 uid: help-en-translate-fields
 title: Translation
 description: Translate fields in SuperOffice
-keywords: translate, translation
+keywords: ['translate', 'translation']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

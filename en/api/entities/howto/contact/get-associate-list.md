@@ -2,7 +2,7 @@
 uid: get-associate-list-entity
 title: Get the associate list
 description: How to retrieve the associate list
-keywords: associate, list, GetAssociateList
+keywords: ['associate', 'list', 'GetAssociateList']
 author: Tony Yates
 date: 02.22.2022
 content_type: howto

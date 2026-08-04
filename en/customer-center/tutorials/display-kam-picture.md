@@ -3,7 +3,7 @@ uid: display_kam_picture
 title: How to display the key account manager's picture
 sidebarTitle: "Display KAM picture"
 description: Get person image and display in the customer center
-keywords: Customer Center
+keywords: ['Customer Center']
 author: SuperOffice Product and Engineering
 date: 06.24.2016
 content_type: tutorial

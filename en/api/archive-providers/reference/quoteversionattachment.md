@@ -2,7 +2,7 @@
 uid: QuoteVersionAttachment
 title: QuoteVersionAttachment
 description: This is the archive Provider for quote version attachments.
-keywords: QuoteVersionAttachment archive provider
+keywords: ['QuoteVersionAttachment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -4,7 +4,7 @@ title: Trigger for outbox
 description: How to use a trigger for the outbox
 author: hjelms
 date: 10.20.2023
-keywords: CRMScript
+keywords: ['CRMScript']
 content_type: tutorial
 ---
 

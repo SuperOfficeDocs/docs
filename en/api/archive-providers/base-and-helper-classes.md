@@ -3,7 +3,7 @@ title: Base and helper classes
 uid: base_and_helper_classes
 description: Base and helper classes
 author: SuperOffice Product and Engineering
-keywords: IArchiveProvider
+keywords: ['IArchiveProvider']
 content_type: concept
 category: api
 topic: archive providers

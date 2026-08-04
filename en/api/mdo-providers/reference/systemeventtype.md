@@ -1,7 +1,7 @@
 ---
 uid: systemeventtype
 title: systemeventtype
-keywords: mdoprovider mdo provider systemeventtype
+keywords: ['mdoprovider mdo provider systemeventtype']
 description: System event types - NoLogin, NoFreeText, NoTravel, Message-of-the-day
 generated: true
 content_type: reference

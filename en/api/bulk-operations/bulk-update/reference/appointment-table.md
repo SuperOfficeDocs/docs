@@ -4,7 +4,7 @@ uid: bulkupdate_appointment_table
 description: Bulk update appointment table
 author: Tony Yates
 date: 06.23.2017
-keywords: bulk update, appointment
+keywords: ['bulk update', 'appointment']
 content_type: reference
 envir: cloud
 client: online

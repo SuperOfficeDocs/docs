@@ -1,7 +1,7 @@
 ---
 uid: activitystatus
 title: activitystatus
-keywords: mdoprovider mdo provider activitystatus
+keywords: ['mdoprovider mdo provider activitystatus']
 description: MDO provider for the ActivityStatus enum - NotStarted, Started, Completed
 generated: true
 content_type: reference

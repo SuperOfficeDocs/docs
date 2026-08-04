@@ -4,7 +4,7 @@ uid: com_interop_dotnet
 description: COM interop and .net
 author: Tony Yates
 date: 06.24.2016
-keywords: COM
+keywords: ['COM']
 content_type: concept
 platform: web
 deployment: onsite

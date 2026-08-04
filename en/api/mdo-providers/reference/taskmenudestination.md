@@ -1,7 +1,7 @@
 ---
 uid: taskmenudestination
 title: taskmenudestination
-keywords: mdoprovider mdo provider taskmenudestination
+keywords: ['mdoprovider mdo provider taskmenudestination']
 description:
 generated: true
 content_type: reference

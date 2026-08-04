@@ -3,7 +3,6 @@ title: Debug
 uid: enable_debug_of_reporter
 description: Enable debug for Web Reporter
 author: SuperOffice Product and Engineering
-keywords:
 content_type: howto
 deployment: onsite
 platform: web

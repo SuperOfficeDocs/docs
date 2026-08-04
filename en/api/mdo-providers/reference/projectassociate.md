@@ -1,7 +1,7 @@
 ---
 uid: projectassociate
 title: projectassociate
-keywords: mdoprovider mdo provider projectassociate
+keywords: ['mdoprovider mdo provider projectassociate']
 description: MDO provider for associates that are members of a project
 generated: true
 content_type: reference

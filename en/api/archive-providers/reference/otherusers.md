@@ -2,7 +2,7 @@
 uid: OtherUsers
 title: OtherUsers
 description: Concrete provider for 'Other' Users - System and Anonymous user accounts. See <see cref="T -SuperOffice.CRM.ArchiveLists.UsersProviderBase" /> for
-keywords: OtherUsers archive provider
+keywords: ['OtherUsers archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

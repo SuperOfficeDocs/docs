@@ -2,7 +2,7 @@
 uid: create-resource-provider
 title: How to create a resource provider
 description: How to create a resource provider
-keywords: create resource provider
+keywords: ['create resource provider']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: howto

@@ -4,7 +4,6 @@ uid: blogic_panel
 description: Panel
 author:
 date:
-keywords:
 topic: reference
 ---
 

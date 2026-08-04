@@ -2,7 +2,7 @@
 uid: api-rest-flow-create
 title: Create an EmailFlow object
 description: Create an EmailFlow object
-keywords: flow, EmailFlow, CreateDefaultEmailFlow
+keywords: ['flow', 'EmailFlow', 'CreateDefaultEmailFlow']
 author: Eivind Fasting
 date: 06.12.2024
 version: 10.3.5

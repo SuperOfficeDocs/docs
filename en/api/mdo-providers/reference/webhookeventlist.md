@@ -1,7 +1,7 @@
 ---
 uid: webhookeventlist
 title: webhookeventlist
-keywords: mdoprovider mdo provider webhookeventlist
+keywords: ['mdoprovider mdo provider webhookeventlist']
 description:
 generated: true
 content_type: reference

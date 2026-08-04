@@ -1,7 +1,7 @@
 ---
 uid: dashtilemeasure
 title: dashtilemeasure
-keywords: mdoprovider mdo provider dashtilemeasure
+keywords: ['mdoprovider mdo provider dashtilemeasure']
 description:
 generated: true
 content_type: reference

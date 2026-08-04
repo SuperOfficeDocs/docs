@@ -1,7 +1,7 @@
 ---
 uid: associaterestrictions
 title: associaterestrictions
-keywords: mdoprovider mdo provider associaterestrictions
+keywords: ['mdoprovider mdo provider associaterestrictions']
 description: Public MDO provider based on the AssociateRestrictionsMDOProviderBase.
 generated: true
 content_type: reference

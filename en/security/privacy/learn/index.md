@@ -2,7 +2,7 @@
 uid: help-en-privacy
 title: Privacy
 description: The Privacy feature in SuperOffice will assist you in protecting the data privacy of your customers and complying with the EU's General Data Protection Regulation (GDPR).
-keywords: privacy, GDPR, e-marketing, consent, legal basis
+keywords: ['privacy', 'GDPR', 'e-marketing', 'consent', 'legal basis']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

@@ -2,7 +2,7 @@
 uid: QuoteLineConfiguration
 title: QuoteLineConfiguration
 description: Criteria search for ErpProduct. Potentially goes out to external quote connectors
-keywords: QuoteLineConfiguration archive provider
+keywords: ['QuoteLineConfiguration archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

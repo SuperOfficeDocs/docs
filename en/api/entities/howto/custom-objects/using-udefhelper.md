@@ -4,7 +4,7 @@ uid: using_udefhelper
 description: How to use the UDFHelper class
 author: Tony Yates
 date: 11.05.2021
-keywords: udef, user-defined field, custom field, API, UDFHelper, UDFSearch, GetUDFInfo, GetUDFData
+keywords: ['udef', 'user-defined field', 'custom field', 'API', 'UDFHelper', 'UDFSearch', 'GetUDFInfo', 'GetUDFData']
 content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database

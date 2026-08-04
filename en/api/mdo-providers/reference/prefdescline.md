@@ -1,7 +1,7 @@
 ---
 uid: prefdescline
 title: prefdescline
-keywords: mdoprovider mdo provider prefdescline
+keywords: ['mdoprovider mdo provider prefdescline']
 description: PrefDesc creates a MDO list of prefdesclines for a given prefdesc id.
 generated: true
 content_type: reference

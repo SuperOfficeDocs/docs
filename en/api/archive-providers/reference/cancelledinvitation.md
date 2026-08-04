@@ -2,7 +2,7 @@
 uid: CancelledInvitation
 title: CancelledInvitation
 description: This is the query provider for invitations, of subtype 'Cancelled'
-keywords: CancelledInvitation archive provider
+keywords: ['CancelledInvitation archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

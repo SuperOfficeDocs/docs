@@ -4,7 +4,6 @@ uid: blogic_select_timespan
 description: Select Time Span
 author:
 date:
-keywords:
 topic: reference
 ---
 

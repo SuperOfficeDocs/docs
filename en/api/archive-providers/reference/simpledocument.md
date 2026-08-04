@@ -2,7 +2,7 @@
 uid: SimpleDocument
 title: SimpleDocument
 description:
-keywords: SimpleDocument archive provider
+keywords: ['SimpleDocument archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: emailpersonaddress
 title: emailpersonaddress
 description: Person subchannel for special purpose archive provider used to search for email addresses.
-keywords: emailpersonaddress archive provider
+keywords: ['emailpersonaddress archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

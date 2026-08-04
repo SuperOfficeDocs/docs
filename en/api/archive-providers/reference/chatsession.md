@@ -2,7 +2,7 @@
 uid: ChatSession
 title: ChatSession
 description: Archive provider for listing chat session and related data to a chat
-keywords: ChatSession archive provider
+keywords: ['ChatSession archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

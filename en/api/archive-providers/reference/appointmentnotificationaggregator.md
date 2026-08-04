@@ -2,7 +2,7 @@
 uid: AppointmentNotificationAggregator
 title: AppointmentNotificationAggregator
 description:
-keywords: AppointmentNotificationAggregator archive provider
+keywords: ['AppointmentNotificationAggregator archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -4,7 +4,7 @@ uid: add_columns
 description: Add columns to archive providers
 author: Tony Yates
 date: 08.03.2017
-keywords: add columns to archive provider, extend archive provider
+keywords: ['add columns to archive provider', 'extend archive provider']
 content_type: howto
 category: api
 topic: archive providers

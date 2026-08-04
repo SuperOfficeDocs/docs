@@ -1,7 +1,7 @@
 ---
 uid: contact_and_person_freetextsearch_hierarchical
 title: contact_and_person_freetextsearch_hierarchical
-keywords: mdoprovider mdo provider contact_and_person_freetextsearch_hierarchical
+keywords: ['mdoprovider mdo provider contact_and_person_freetextsearch_hierarchical']
 description:
 generated: true
 content_type: reference

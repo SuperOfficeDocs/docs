@@ -2,7 +2,7 @@
 uid: migration-guide-mailboxes
 title: Customer service mailboxes
 description: Migrate to SuperOffice CRM Online with Service mailboxes
-keywords: migration, mailbox, Service email address
+keywords: ['migration', 'mailbox', 'Service email address']
 author: SuperOffice Product and Engineering
 date: 01.07.2026
 version: 12

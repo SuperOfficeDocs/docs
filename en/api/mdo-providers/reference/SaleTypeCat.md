@@ -1,7 +1,7 @@
 ---
 uid: saletypecat
 title: saletypecat
-keywords: mdoprovider mdo provider saletypecat
+keywords: ['mdoprovider mdo provider saletypecat']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

@@ -3,7 +3,7 @@ title: Full-text search
 uid: netserver_fulltext_search
 description: Changes in SuperOffice 7 - authentication
 author: SuperOffice Product and Engineering
-keywords: database
+keywords: ['database']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/search/full-text-search

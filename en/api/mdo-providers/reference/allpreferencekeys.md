@@ -1,7 +1,7 @@
 ---
 uid: allpreferencekeys
 title: allpreferencekeys
-keywords: mdoprovider mdo provider allpreferencekeys
+keywords: ['mdoprovider mdo provider allpreferencekeys']
 description: MDO Provider that retrieves all preference keys
 generated: true
 content_type: reference

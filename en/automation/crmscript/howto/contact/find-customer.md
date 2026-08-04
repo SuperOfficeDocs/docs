@@ -2,7 +2,7 @@
 uid: crmscript-find-customer
 title: Look up customers
 description: How to look up customers with CRMScript
-keywords: CRMScript, customer, person, contact
+keywords: ['CRMScript', 'customer', 'person', 'contact']
 author: Bergfrid Skaara Dias
 date: 15.02.2021
 version: 10

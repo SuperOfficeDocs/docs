@@ -3,7 +3,7 @@ uid: enum-newsfeeditemstatus
 title: Enum values for NewsFeedItemStatus
 description: Lists the enum values for NewsFeedItemStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: AppointmentShadowDynamicSelectionSingleCriteriaGroup
 title: AppointmentShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic appointmnet provider.
-keywords: AppointmentShadowDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['AppointmentShadowDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

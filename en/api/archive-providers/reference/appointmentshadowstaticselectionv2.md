@@ -2,7 +2,7 @@
 uid: AppointmentShadowStaticSelectionV2
 title: AppointmentShadowStaticSelectionV2
 description: Shadow contact provider for the static appointment provider.
-keywords: AppointmentShadowStaticSelectionV2 archive provider
+keywords: ['AppointmentShadowStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

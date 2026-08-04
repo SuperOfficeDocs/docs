@@ -4,7 +4,6 @@ uid: objectified_sql
 description: Evolution of NetServer Objectified SQL
 author: Tony Yates
 date: 09.06.2016
-keywords:
 content_type: concept
 redirect_from: /en/api/netserver/osql/osql-evolution
 hidden: true

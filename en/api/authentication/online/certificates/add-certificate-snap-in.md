@@ -3,7 +3,6 @@ title: How to install the Certificate snap-in
 uid: add_certificate_snap_in
 description: How to install the Certificate snap-in on Windows
 author: SuperOffice Product and Engineering
-keywords:
 content_type: howto
 category: api
 deployment: online

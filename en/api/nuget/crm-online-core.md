@@ -4,7 +4,7 @@ uid: so_nuget_crm_online_core
 description: SuperOffice NuGet CRM Online Core
 author: Tony Yates
 date: 02.29.2016
-keywords: authentication
+keywords: ['authentication']
 content_type: reference
 ---
 

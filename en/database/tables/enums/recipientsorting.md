@@ -3,7 +3,7 @@ uid: enum-recipientsorting
 title: Enum values for RecipientSorting
 description: Lists the enum values for RecipientSorting.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: simpleshipment
 title: simpleshipment
 description: Archive provider for the list of mailings
-keywords: simpleshipment archive provider
+keywords: ['simpleshipment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

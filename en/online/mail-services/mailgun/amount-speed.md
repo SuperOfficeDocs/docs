@@ -2,7 +2,7 @@
 uid: mailgun-amount-speed
 title: Mailgun - amount and speed
 description: Mailgun - amount and speed
-keywords: Mailgun, email performance, email speed, email volume, mailing, throughput
+keywords: ['Mailgun', 'email performance', 'email speed', 'email volume', 'mailing', 'throughput']
 author: SuperOffice Product and Engineering
 date: 01.07.2026
 version: 12

@@ -3,7 +3,6 @@ title: System user service console
 uid: system_user_service_console
 description: System user service console
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

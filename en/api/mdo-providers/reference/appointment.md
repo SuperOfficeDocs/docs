@@ -1,7 +1,7 @@
 ---
 uid: appointment
 title: appointment
-keywords: mdoprovider mdo provider appointment
+keywords: ['mdoprovider mdo provider appointment']
 description:
 generated: true
 content_type: reference

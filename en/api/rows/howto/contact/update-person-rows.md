@@ -2,7 +2,7 @@
 uid: update-person-rows
 title: Update a person with a new name, address, position using rows
 description: How to update a person with new name, address, position using rows.
-keywords: person, contact, API, rows, PersonRow, update, AddressRow
+keywords: ['person', 'contact', 'API', 'rows', 'PersonRow', 'update', 'AddressRow']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

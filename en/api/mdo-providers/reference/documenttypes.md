@@ -1,7 +1,7 @@
 ---
 uid: documenttypes
 title: documenttypes
-keywords: mdoprovider mdo provider documenttypes
+keywords: ['mdoprovider mdo provider documenttypes']
 description: List of document types for the given plugin. ExtraInfo = document plugin-id.
 generated: true
 content_type: reference

@@ -1,7 +1,7 @@
 ---
 uid: category
 title: category
-keywords: mdoprovider mdo provider category
+keywords: ['mdoprovider mdo provider category']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

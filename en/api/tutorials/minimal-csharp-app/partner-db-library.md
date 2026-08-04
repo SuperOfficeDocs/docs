@@ -3,7 +3,6 @@ title: Customer data source
 uid: partner_db_library
 description: Customer data source
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

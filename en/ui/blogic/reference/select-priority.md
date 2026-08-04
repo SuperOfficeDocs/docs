@@ -4,7 +4,6 @@ uid: blogic_select_priority
 description: Select priority
 author:
 date:
-keywords:
 topic: reference
 ---
 

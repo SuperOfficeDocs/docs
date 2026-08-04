@@ -1,7 +1,7 @@
 ---
 uid: projstatus
 title: projstatus
-keywords: mdoprovider mdo provider projstatus
+keywords: ['mdoprovider mdo provider projstatus']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

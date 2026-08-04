@@ -1,7 +1,7 @@
 ---
 uid: saleprobability
 title: saleprobability
-keywords: mdoprovider mdo provider saleprobability
+keywords: ['mdoprovider mdo provider saleprobability']
 description: MDO list provider for the probability list of the Sale dialog. This list extends the basic <see cref="!:ProbRow" /> list with a leading 'lost' and a trailing 'sold' item, and specialized icons. It also adds the probability as part of the text, and again in the extraInfo field.
 generated: true
 content_type: reference

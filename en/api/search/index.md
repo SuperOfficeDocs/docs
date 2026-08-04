@@ -5,7 +5,7 @@ description: "Introduction to API search capabilities and archive providers."
 author: SuperOfficeDevNet
 date: 02.02.2022
 updated: 02.12.2024
-keywords: search
+keywords: ['search']
 content_type: concept
 redirect_from: /en/api/netserver/search
 ---

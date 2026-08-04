@@ -3,7 +3,7 @@ uid: enum-dashtilemeasure
 title: Enum values for DashTileMeasure
 description: Lists the enum values for DashTileMeasure.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

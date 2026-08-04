@@ -1,7 +1,7 @@
 ---
 uid: crmfields
 title: crmfields
-keywords: mdoprovider mdo provider crmfields
+keywords: ['mdoprovider mdo provider crmfields']
 description:
 generated: true
 content_type: reference

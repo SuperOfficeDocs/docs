@@ -1,7 +1,7 @@
 ---
 uid: attachment
 title: attachment
-keywords: mdoprovider mdo provider attachment
+keywords: ['mdoprovider mdo provider attachment']
 description:
 generated: true
 content_type: reference

@@ -3,7 +3,6 @@ title: superoffice.devnet.online.login
 uid: super_office_devnet_online_login
 description: superoffice.devnet.online.login
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

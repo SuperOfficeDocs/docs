@@ -4,7 +4,7 @@ uid: blogic_elements
 description: Element reference
 author:
 date:
-keywords: bLogic
+keywords: ['bLogic']
 topic: reference
 ---
 

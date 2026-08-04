@@ -1,7 +1,7 @@
 ---
 uid: mergetags
 title: mergetags
-keywords: mdoprovider mdo provider mergetags
+keywords: ['mdoprovider mdo provider mergetags']
 description:
 generated: true
 content_type: reference

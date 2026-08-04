@@ -2,7 +2,7 @@
 uid: display-in-current-culture
 title: Display values in current culture
 description: How to display values in current culture
-keywords: CultureDataFormatter, localize, current culture
+keywords: ['CultureDataFormatter', 'localize', 'current culture']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: howto

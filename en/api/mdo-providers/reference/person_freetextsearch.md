@@ -1,7 +1,7 @@
 ---
 uid: person_freetextsearch
 title: person_freetextsearch
-keywords: mdoprovider mdo provider person_freetextsearch
+keywords: ['mdoprovider mdo provider person_freetextsearch']
 description: Provider for selecting a Person - without contact search. Does keyword matching and scoring across multiple tables using freetext index.
 generated: true
 content_type: reference

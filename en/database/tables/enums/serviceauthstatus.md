@@ -3,7 +3,7 @@ uid: enum-serviceauthstatus
 title: Enum values for ServiceAuthStatus
 description: Lists the enum values for ServiceAuthStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

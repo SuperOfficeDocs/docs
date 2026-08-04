@@ -2,7 +2,7 @@
 uid: localization-culturedataformatter
 title: CultureDataFormatter
 description: Localization, class CultureDataFormatter
-keywords: CultureDataFormatter, DisplayValue
+keywords: ['CultureDataFormatter', 'DisplayValue']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: reference

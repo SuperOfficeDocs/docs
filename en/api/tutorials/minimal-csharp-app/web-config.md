@@ -3,7 +3,6 @@ title: Web.Config configuration overview
 uid: minimal_csharp_app_web_config
 description: Web.Config configuration overview
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

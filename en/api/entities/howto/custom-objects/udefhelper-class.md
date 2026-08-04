@@ -4,7 +4,7 @@ uid: ns_class_udefhelper
 description: The definitive NetServer user-defined field lookup class.
 author: Tony Yates
 date: 11.05.2021
-keywords: udef, user-defined field, custom field, API, UDFHelper, SyncRoot, GetUDFInfo, SetUDFValue, UDFSearch, GetUDFColumnID, GetUDFData
+keywords: ['udef', 'user-defined field', 'custom field', 'API', 'UDFHelper', 'SyncRoot', 'GetUDFInfo', 'SetUDFValue', 'UDFSearch', 'GetUDFColumnID', 'GetUDFData']
 content_type: reference
 audience: api
 audience_tooltip: SuperOffice APIs and database

@@ -2,7 +2,7 @@
 uid: help-en-service-global-preferences-customer-centre-password
 title: Password policy for the Customer Centre
 description: Global preferences for Customer centre password policy
-keywords: Service, settings
+keywords: ['Service', 'settings']
 author: SuperOffice RnD
 date: 03.29.2023
 content_type: concept

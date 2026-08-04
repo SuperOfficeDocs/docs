@@ -2,7 +2,7 @@
 uid: SaleStaticSelectionV2
 title: SaleStaticSelectionV2
 description: Static archive Provider for the Selection sale archive.
-keywords: SaleStaticSelectionV2 archive provider
+keywords: ['SaleStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

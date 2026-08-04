@@ -4,7 +4,7 @@ uid: ns_config_soformsauthentication
 description: NetServer configuration settings used to control access and used by the web client FormsAuthentication.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, SoFormsAuthentication, FormsAuthentication, IgnoreList, Pages, LoginUrl, DefaultUrl, LogoutUrl, PocketCrmLoginPage
+keywords: ['config', 'NetServer', 'web.config', 'SoFormsAuthentication', 'FormsAuthentication', 'IgnoreList', 'Pages', 'LoginUrl', 'DefaultUrl', 'LogoutUrl', 'PocketCrmLoginPage']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/soformsauthentication

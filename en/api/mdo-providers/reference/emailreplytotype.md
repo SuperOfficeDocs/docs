@@ -1,7 +1,7 @@
 ---
 uid: emailreplytotype
 title: emailreplytotype
-keywords: mdoprovider mdo provider emailreplytotype
+keywords: ['mdoprovider mdo provider emailreplytotype']
 description: MDO provider for the EmailReplyToType enum
 generated: true
 content_type: reference

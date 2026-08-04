@@ -3,7 +3,7 @@ uid: enum-chattopicflag
 title: Enum values for ChatTopicFlag
 description: Lists the enum values for ChatTopicFlag.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

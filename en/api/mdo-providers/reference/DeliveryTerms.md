@@ -1,7 +1,7 @@
 ---
 uid: deliveryterms
 title: deliveryterms
-keywords: mdoprovider mdo provider deliveryterms
+keywords: ['mdoprovider mdo provider deliveryterms']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

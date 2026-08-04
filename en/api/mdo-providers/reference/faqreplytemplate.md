@@ -1,7 +1,7 @@
 ---
 uid: faqreplytemplate
 title: faqreplytemplate
-keywords: mdoprovider mdo provider faqreplytemplate
+keywords: ['mdoprovider mdo provider faqreplytemplate']
 description:
 generated: true
 content_type: reference

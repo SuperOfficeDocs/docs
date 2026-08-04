@@ -2,7 +2,7 @@
 uid: help-en-request-message-split
 title: Split message
 description: Split message
-keywords: split message, request, message
+keywords: ['split message', 'request', 'message']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

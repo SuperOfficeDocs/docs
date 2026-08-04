@@ -3,7 +3,7 @@ uid: enum-targetentitytype
 title: Enum values for TargetEntityType
 description: Lists the enum values for TargetEntityType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

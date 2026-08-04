@@ -1,7 +1,7 @@
 ---
 uid: dashboardcurrency
 title: dashboardcurrency
-keywords: mdoprovider mdo provider dashboardcurrency
+keywords: ['mdoprovider mdo provider dashboardcurrency']
 description:
 generated: true
 content_type: reference

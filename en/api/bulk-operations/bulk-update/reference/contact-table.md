@@ -4,7 +4,7 @@ uid: bulkupdate_contact_table
 description: Bulk update contact table
 author: Tony Yates
 date: 06.23.2017
-keywords: bulk update, contact
+keywords: ['bulk update', 'contact']
 content_type: reference
 envir: cloud
 client: online

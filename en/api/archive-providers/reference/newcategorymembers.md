@@ -2,7 +2,7 @@
 uid: NewCategoryMembers
 title: NewCategoryMembers
 description: Archive of NewCategoryMember - used by the web api.
-keywords: NewCategoryMembers archive provider
+keywords: ['NewCategoryMembers archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

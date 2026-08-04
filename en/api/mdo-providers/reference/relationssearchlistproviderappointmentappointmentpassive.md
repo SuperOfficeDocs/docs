@@ -1,7 +1,7 @@
 ---
 uid: relationssearchlistproviderappointmentappointmentpassive
 title: relationssearchlistproviderappointmentappointmentpassive
-keywords: mdoprovider mdo provider relationssearchlistproviderappointmentappointmentpassive
+keywords: ['mdoprovider mdo provider relationssearchlistproviderappointmentappointmentpassive']
 description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).
 generated: true
 content_type: reference

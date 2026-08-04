@@ -4,7 +4,7 @@ uid: quote_connectors_data_cariers
 description: Data carriers for quote
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/index
 ---

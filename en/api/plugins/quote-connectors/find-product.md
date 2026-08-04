@@ -4,7 +4,7 @@ uid: quote_connectors_find_product
 description: Product search provider
 author: SuperOffice Product and Engineering
 date:
-keywords: quote,search
+keywords: ['quote', 'search']
 content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/find-product
 ---

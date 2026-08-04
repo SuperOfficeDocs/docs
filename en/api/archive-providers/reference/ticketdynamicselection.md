@@ -2,7 +2,7 @@
 uid: TicketDynamicSelection
 title: TicketDynamicSelection
 description: Ticket selection archive using the selectionId as criterionmapping.
-keywords: TicketDynamicSelection archive provider
+keywords: ['TicketDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

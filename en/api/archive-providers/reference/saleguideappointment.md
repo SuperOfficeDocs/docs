@@ -2,7 +2,7 @@
 uid: SaleGuideAppointment
 title: SaleGuideAppointment
 description: Specific provider for Sale Guide Items of type Appointment
-keywords: SaleGuideAppointment archive provider
+keywords: ['SaleGuideAppointment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

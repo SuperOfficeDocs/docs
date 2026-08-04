@@ -1,7 +1,7 @@
 ---
 uid: addressformat
 title: addressformat
-keywords: mdoprovider mdo provider addressformat
+keywords: ['mdoprovider mdo provider addressformat']
 description: MDO list provider for AddressFormats Id returned is the layout_id, not the addressformat_id.
 generated: true
 content_type: reference

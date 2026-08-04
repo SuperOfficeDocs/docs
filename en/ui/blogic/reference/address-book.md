@@ -4,7 +4,6 @@ uid: blogic_address_book
 description: Address book
 author:
 date:
-keywords:
 topic: reference
 ---
 

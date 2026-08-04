@@ -2,7 +2,7 @@
 uid: help-en-chat
 title: Chat
 description: Communicate with and help existing or potential customers through a chat widget on your website.
-keywords: chat, ongoing chats
+keywords: ['chat', 'ongoing chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

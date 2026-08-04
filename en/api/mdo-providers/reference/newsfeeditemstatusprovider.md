@@ -1,7 +1,7 @@
 ---
 uid: newsfeeditemstatusprovider
 title: newsfeeditemstatusprovider
-keywords: mdoprovider mdo provider newsfeeditemstatusprovider
+keywords: ['mdoprovider mdo provider newsfeeditemstatusprovider']
 description: MDO List provider for news feed item status - Normal, Handling, Handled. Enum value in the extrainfo field.
 generated: true
 content_type: reference

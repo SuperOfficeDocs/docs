@@ -2,7 +2,7 @@
 uid: set-preferences-datalayer
 title: Set preferences
 description: How to set preferences using SoPreference at the data layer
-keywords: preference, SoPreference
+keywords: ['preference', 'SoPreference']
 author: digitaldiina
 date: 02.22.2022
 content_type: howto

@@ -2,7 +2,7 @@
 uid: QuoteApproval
 title: QuoteApproval
 description: Retrieves pending sale quotes for current associate with state approved, denied, approval needed or approval requested
-keywords: QuoteApproval archive provider
+keywords: ['QuoteApproval archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

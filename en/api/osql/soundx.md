@@ -3,7 +3,6 @@ title: soundx
 description: Soundex comes to NetServer
 author: Marek Vokáč
 date: 05.07.2012
-keywords:
 content_type: article
 deployment: online
 platform: web

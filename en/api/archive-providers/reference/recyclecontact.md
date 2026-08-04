@@ -2,7 +2,7 @@
 uid: RecycleContact
 title: RecycleContact
 description:
-keywords: RecycleContact archive provider
+keywords: ['RecycleContact archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

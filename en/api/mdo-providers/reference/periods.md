@@ -1,7 +1,7 @@
 ---
 uid: periods
 title: periods
-keywords: mdoprovider mdo provider periods
+keywords: ['mdoprovider mdo provider periods']
 description: Period values - Day, Week, Month, Quarter, Year
 generated: true
 content_type: reference

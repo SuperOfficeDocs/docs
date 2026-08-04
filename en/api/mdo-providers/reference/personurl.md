@@ -1,7 +1,7 @@
 ---
 uid: personurl
 title: personurl
-keywords: mdoprovider mdo provider personurl
+keywords: ['mdoprovider mdo provider personurl']
 description: List of urls (web pages) matching the search value, possibly restricted to a given company or person.
 generated: true
 content_type: reference

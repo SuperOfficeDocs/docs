@@ -2,7 +2,7 @@
 uid: MailingFolders
 title: MailingFolders
 description: Archive of mailing folders. Lists all rows of s_picture_folder where
-keywords: MailingFolders archive provider
+keywords: ['MailingFolders archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

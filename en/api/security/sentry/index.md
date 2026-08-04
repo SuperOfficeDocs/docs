@@ -3,7 +3,7 @@ title: Sentry
 uid: sentry_intro
 description: Sentry
 author: SuperOffice Product and Engineering
-keywords: sentry, security
+keywords: ['sentry', 'security']
 content_type: concept
 hidden: true
 ---

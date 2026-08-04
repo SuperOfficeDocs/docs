@@ -2,7 +2,7 @@
 uid: webhook-security
 title: Webhook secrets
 description: How to verify that the webhook has not been tampered with using shared secrets and HMAC SHA256.
-keywords: automation, webhook, security, secret, HMAC, signature
+keywords: ['automation', 'webhook', 'security', 'secret', 'HMAC', 'signature']
 author: Tony Yates
 date: 04.06.2018
 content_type: howto

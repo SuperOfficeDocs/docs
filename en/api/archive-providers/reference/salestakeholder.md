@@ -2,7 +2,7 @@
 uid: SaleStakeholder
 title: SaleStakeholder
 description:
-keywords: SaleStakeholder archive provider
+keywords: ['SaleStakeholder archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

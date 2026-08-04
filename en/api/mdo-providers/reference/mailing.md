@@ -1,7 +1,7 @@
 ---
 uid: mailing
 title: mailing
-keywords: mdoprovider mdo provider mailing
+keywords: ['mdoprovider mdo provider mailing']
 description: All mailings - history ids
 generated: true
 content_type: reference

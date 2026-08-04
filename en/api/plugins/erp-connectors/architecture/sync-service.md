@@ -4,7 +4,7 @@ uid: erp_arch_sync_service
 description: ERP connector Sync Service
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords: .net
+keywords: ['.net']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/architecture/sync-service
 ---

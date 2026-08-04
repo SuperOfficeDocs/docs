@@ -1,7 +1,7 @@
 ---
 uid: documenttemplatelanguage
 title: documenttemplatelanguage
-keywords: mdoprovider mdo provider documenttemplatelanguage
+keywords: ['mdoprovider mdo provider documenttemplatelanguage']
 description: MDO Provider for Document Template langauges.
 generated: true
 content_type: reference

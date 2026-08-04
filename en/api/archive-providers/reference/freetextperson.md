@@ -2,7 +2,7 @@
 uid: FreetextPerson
 title: FreetextPerson
 description: Archive provider for freetext search on the Person entity.
-keywords: FreetextPerson archive provider
+keywords: ['FreetextPerson archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

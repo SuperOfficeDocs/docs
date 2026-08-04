@@ -2,7 +2,7 @@
 uid: crmscript-code-quality
 title: Code quality
 description: A guide to creating high-quality CRMScripts. Understanding coding conventions, intellisense, and best practices.
-keywords: CRMScript, script, convention, best practice, intellisense
+keywords: ['CRMScript', 'script', 'convention', 'best practice', 'intellisense']
 author: Bergfrid Dias
 date: 04.15.2024
 content_type: concept

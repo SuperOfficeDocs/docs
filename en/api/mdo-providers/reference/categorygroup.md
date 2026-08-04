@@ -1,7 +1,7 @@
 ---
 uid: categorygroup
 title: categorygroup
-keywords: mdoprovider mdo provider categorygroup
+keywords: ['mdoprovider mdo provider categorygroup']
 description: MDO provider for the CategoryGroup enum.
 generated: true
 content_type: reference

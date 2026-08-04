@@ -2,7 +2,7 @@
 uid: FindDocument
 title: FindDocument
 description: Archive provider for finding documents
-keywords: FindDocument archive provider
+keywords: ['FindDocument archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -1,7 +1,7 @@
 ---
 uid: urlencoding
 title: urlencoding
-keywords: mdoprovider mdo provider urlencoding
+keywords: ['mdoprovider mdo provider urlencoding']
 description:
 generated: true
 content_type: reference

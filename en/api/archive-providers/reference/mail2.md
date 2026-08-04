@@ -2,7 +2,7 @@
 uid: Mail2
 title: Mail2
 description: Provides populated mail envelope rows as an archive
-keywords: Mail2 archive provider
+keywords: ['Mail2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

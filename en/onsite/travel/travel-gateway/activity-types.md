@@ -2,7 +2,6 @@
 uid: activity_types
 description: Activity types for scheduling
 author: SuperOffice Product and Engineering
-keywords:
 date:
 content_type: reference
 deployment: onsite

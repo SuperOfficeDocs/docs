@@ -1,7 +1,7 @@
 ---
 uid: weeknumber
 title: weeknumber
-keywords: mdoprovider mdo provider weeknumber
+keywords: ['mdoprovider mdo provider weeknumber']
 description: MDO provider for the hard-coded list of numbered weeks in the recurrence dialog.
 generated: true
 content_type: reference

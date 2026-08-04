@@ -3,7 +3,6 @@ uid: crmscript_debug_troubleshooting
 title: Basic troubleshooting
 author:
 date:
-keywords:
 content_type: concept
 index: true
 ---

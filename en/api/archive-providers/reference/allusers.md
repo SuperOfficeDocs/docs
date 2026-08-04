@@ -2,7 +2,7 @@
 uid: AllUsers
 title: AllUsers
 description: Concrete provider for all kinds of users, unfiltered. See <see cref="T -SuperOffice.CRM.ArchiveLists.UsersProviderBase" /> for
-keywords: AllUsers archive provider
+keywords: ['AllUsers archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: TargetValue
 title: TargetValue
 description:
-keywords: TargetValue archive provider
+keywords: ['TargetValue archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

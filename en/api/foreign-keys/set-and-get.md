@@ -4,7 +4,6 @@ uid: foreign_key_set_get
 description: How to set and get foreign keys
 author: SuperOffice Product and Engineering
 date:
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/foreign-keys/set-and-get
 hidden: true

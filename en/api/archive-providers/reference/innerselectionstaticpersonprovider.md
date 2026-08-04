@@ -2,7 +2,7 @@
 uid: InnerSelectionStaticPersonProvider
 title: InnerSelectionStaticPersonProvider
 description:
-keywords: InnerSelectionStaticPersonProvider archive provider
+keywords: ['InnerSelectionStaticPersonProvider archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

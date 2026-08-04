@@ -2,7 +2,7 @@
 uid: AssociateProjectStaticSelectionV2
 title: AssociateProjectStaticSelectionV2
 description:
-keywords: AssociateProjectStaticSelectionV2 archive provider
+keywords: ['AssociateProjectStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

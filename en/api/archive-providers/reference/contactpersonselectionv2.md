@@ -2,7 +2,7 @@
 uid: ContactPersonSelectionV2
 title: ContactPersonSelectionV2
 description: This is the archive Provider for the Selection contact/person archive.
-keywords: ContactPersonSelectionV2 archive provider
+keywords: ['ContactPersonSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

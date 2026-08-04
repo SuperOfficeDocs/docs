@@ -4,7 +4,7 @@ uid: app-design-requirements
 description: "Requirements for user UI and design"
 author: Margrethe Romnes
 date: 02.02.2022
-keywords: certification, apps
+keywords: ['certification', 'apps']
 content_type: reference
 deployment: online
 platform: web

@@ -2,7 +2,7 @@
 uid: ContactPersonSelectionCombinedV2
 title: ContactPersonSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ContactPersonSelectionCombinedV2 archive provider
+keywords: ['ContactPersonSelectionCombinedV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -3,7 +3,6 @@ title: Example PHP application
 uid: minimal_php_app_overview
 description: Example PHP application
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

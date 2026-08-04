@@ -3,7 +3,7 @@ title: discounts
 description: About discounts
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/quote-connectors/discounts
 ---

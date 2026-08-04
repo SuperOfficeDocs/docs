@@ -1,7 +1,7 @@
 ---
 uid: templatevariables
 title: templatevariables
-keywords: mdoprovider mdo provider templatevariables
+keywords: ['mdoprovider mdo provider templatevariables']
 description:
 generated: true
 content_type: reference

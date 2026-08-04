@@ -2,7 +2,7 @@
 uid: FreetextProject
 title: FreetextProject
 description: Archive provider for freetext search on the Project entity.
-keywords: FreetextProject archive provider
+keywords: ['FreetextProject archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

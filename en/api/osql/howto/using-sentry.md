@@ -4,7 +4,6 @@ uid: osql_sentry
 description: SuperOffice Objectified SQL - Sentry
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/osql/howto/using-sentry
 hidden: true

@@ -4,7 +4,7 @@ uid: ns_config_subclients
 description: NetServer configuration section defining any SuperOffice CRM sub-clients.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, SubClients
+keywords: ['config', 'NetServer', 'web.config', 'SubClients']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/subclients

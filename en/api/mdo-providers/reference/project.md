@@ -1,7 +1,7 @@
 ---
 uid: project
 title: project
-keywords: mdoprovider mdo provider project
+keywords: ['mdoprovider mdo provider project']
 description: Provider for selecting a project.
 generated: true
 content_type: reference

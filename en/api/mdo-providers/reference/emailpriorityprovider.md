@@ -1,7 +1,7 @@
 ---
 uid: emailpriorityprovider
 title: emailpriorityprovider
-keywords: mdoprovider mdo provider emailpriorityprovider
+keywords: ['mdoprovider mdo provider emailpriorityprovider']
 description: MDO List provider for email priority - Highest, High, Normal, Low, Lowest, No Priority. Enum value in the extrainfo field
 generated: true
 content_type: reference

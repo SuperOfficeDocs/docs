@@ -2,7 +2,7 @@
 uid: ErpEntity
 title: ErpEntity
 description:
-keywords: ErpEntity archive provider
+keywords: ['ErpEntity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

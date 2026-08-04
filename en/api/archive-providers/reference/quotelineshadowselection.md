@@ -2,7 +2,7 @@
 uid: QuoteLineShadowSelection
 title: QuoteLineShadowSelection
 description: Shadow contact provider for the quoteline provider.
-keywords: QuoteLineShadowSelection archive provider
+keywords: ['QuoteLineShadowSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

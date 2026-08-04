@@ -2,7 +2,7 @@
 uid: SaleFilteredWithStakeholder
 title: SaleFilteredWithStakeholder
 description:
-keywords: SaleFilteredWithStakeholder archive provider
+keywords: ['SaleFilteredWithStakeholder archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -4,7 +4,6 @@ uid: generic_list_providers
 description: Generic list providers
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords:
 content_type: concept
 redirect_from: /en/api/netserver/lists/entity/generic-list
 hidden: true

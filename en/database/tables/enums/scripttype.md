@@ -3,7 +3,7 @@ uid: enum-scripttype
 title: Enum values for ScriptType
 description: Lists the enum values for ScriptType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: OwnerContacts
 title: OwnerContacts
 description: Archive provider for the list of own contacts in SoAdmin
-keywords: OwnerContacts archive provider
+keywords: ['OwnerContacts archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

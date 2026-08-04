@@ -2,7 +2,7 @@
 uid: soprotocol-webpanel-web
 title: SOProtocol and web panels - web
 description: SoProtocol and web panels - web
-keywords: soprotocol, deeplinking, web panel, crossmessaging, window.postMessage
+keywords: ['soprotocol', 'deeplinking', 'web panel', 'crossmessaging', 'window.postMessage']
 author: Tony Yates
 date: 05.26.2023
 content_type: reference

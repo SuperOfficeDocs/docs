@@ -1,7 +1,7 @@
 ---
 uid: searchcat
 title: searchcat
-keywords: mdoprovider mdo provider searchcat
+keywords: ['mdoprovider mdo provider searchcat']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

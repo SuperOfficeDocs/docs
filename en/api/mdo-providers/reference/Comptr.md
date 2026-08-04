@@ -1,7 +1,7 @@
 ---
 uid: comptr
 title: comptr
-keywords: mdoprovider mdo provider comptr
+keywords: ['mdoprovider mdo provider comptr']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

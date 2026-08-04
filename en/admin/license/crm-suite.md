@@ -2,7 +2,7 @@
 uid: help-en-crm-suite
 title: SuperOffice CRM Suite
 description: Overview of the 5 SuperOffice CRM Suite plans, seat management, plan limits, and pricing model.
-keywords: CRM Suite, Starter, Core, Growth, Plus, Super, plan, license, fencing, scaling, seat, subscription, limit
+keywords: ['CRM Suite', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'plan', 'license', 'fencing', 'scaling', 'seat', 'subscription', 'limit']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

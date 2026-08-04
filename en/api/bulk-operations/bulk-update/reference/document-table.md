@@ -4,7 +4,7 @@ uid: bulkupdate_document_table
 description: Bulk update document table
 author: Tony Yates
 date: 06.23.2017
-keywords: bulk update, document
+keywords: ['bulk update', 'document']
 content_type: reference
 envir: cloud
 client: online

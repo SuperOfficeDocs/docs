@@ -1,7 +1,7 @@
 ---
 uid: relateddatafields
 title: relateddatafields
-keywords: mdoprovider mdo provider relateddatafields
+keywords: ['mdoprovider mdo provider relateddatafields']
 description:
 generated: true
 content_type: reference

@@ -2,7 +2,6 @@
 uid: get_scim_sync_error_messages
 title: Set up email notifications for errors
 description: Set up email notifications for SCIM errors
-keywords:
 author: SuperOffice Product and Engineering
 date: 07.31.2026
 version: 12

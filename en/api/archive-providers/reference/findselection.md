@@ -2,7 +2,7 @@
 uid: FindSelection
 title: FindSelection
 description:
-keywords: FindSelection archive provider
+keywords: ['FindSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

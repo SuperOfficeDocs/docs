@@ -4,7 +4,7 @@ uid: quote_connector_error_system
 description: ERP Quote Connector Interface error system
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/quote-connectors/error-system
 ---

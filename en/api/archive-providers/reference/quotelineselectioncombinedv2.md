@@ -2,7 +2,7 @@
 uid: QuoteLineSelectionCombinedV2
 title: QuoteLineSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: QuoteLineSelectionCombinedV2 archive provider
+keywords: ['QuoteLineSelectionCombinedV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

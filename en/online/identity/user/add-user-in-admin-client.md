@@ -2,7 +2,6 @@
 uid: add_user_in_admin_client
 title: Add a user in the Admin client
 description: Add a user in the Admin client
-keywords:
 author: digitaldiina
 date: 07.31.2026
 version: 12

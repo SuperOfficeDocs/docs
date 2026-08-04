@@ -1,7 +1,7 @@
 ---
 uid: workflowgoaltype
 title: workflowgoaltype
-keywords: mdoprovider mdo provider workflowgoaltype
+keywords: ['mdoprovider mdo provider workflowgoaltype']
 description: MDO provider for the WorkflowGoalType enum
 generated: true
 content_type: reference

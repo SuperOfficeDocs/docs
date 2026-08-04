@@ -3,7 +3,7 @@ title: DateTime
 uid: rest_api_search_datetime
 description: REST Web API search DateTime
 author: SuperOffice Product and Engineering
-keywords: search
+keywords: ['search']
 date:
 content_type: howto
 redirect_from: /en/api/netserver/search/odata/datetime

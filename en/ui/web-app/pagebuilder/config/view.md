@@ -4,7 +4,7 @@ uid: pagebuilder_config_view
 description: View config files
 author: Tony Yates
 date: 06.24.2016
-keywords: config
+keywords: ['config']
 content_type: concept
 platform: web
 deployment: onsite

@@ -3,7 +3,7 @@ uid: mirroring_getting_started
 title: Getting started with Database Mirroring (legacy)
 sidebarTitle: "Getting started (legacy)"
 description: Getting started with the legacy WCF-based Database Mirroring service.
-keywords: legacy, WCF, mirroring
+keywords: ['legacy', 'WCF', 'mirroring']
 author: Tony Yates
 date: 04.20.2016
 version: 12

@@ -1,7 +1,7 @@
 ---
 uid: saleguidestage
 title: saleguidestage
-keywords: mdoprovider mdo provider saleguidestage
+keywords: ['mdoprovider mdo provider saleguidestage']
 description: MDO provider for the stage list, customized for the sale guide stage button row
 generated: true
 content_type: reference

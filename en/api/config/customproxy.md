@@ -4,7 +4,7 @@ uid: ns_config_customproxy
 description: NetServer configuration values for custom proxy and communication with the internet.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, CustomProxy, CustomProxyHost, CustomProxyPort, CustomProxySSLPort, UseCustomProxyForIntegrationServer, UseCustomProxyForPublicAccess, UseCustomProxyForWebhooks
+keywords: ['config', 'NetServer', 'web.config', 'CustomProxy', 'CustomProxyHost', 'CustomProxyPort', 'CustomProxySSLPort', 'UseCustomProxyForIntegrationServer', 'UseCustomProxyForPublicAccess', 'UseCustomProxyForWebhooks']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/customproxy

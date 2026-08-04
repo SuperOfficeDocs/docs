@@ -2,7 +2,7 @@
 uid: automated-task-importmail
 title: importMail
 description: Automated tasks in Service - importMail
-keywords: importmail
+keywords: ['importmail']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 category: Service

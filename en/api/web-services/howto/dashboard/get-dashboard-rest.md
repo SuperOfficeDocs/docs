@@ -2,7 +2,7 @@
 uid: get-dashboard-rest
 title: Working with dashboards
 description: In this how-to guide, you will learn how to get all dashboards and all tiles for a dashboard.
-keywords: dashboard
+keywords: ['dashboard']
 author: AnthonyYates
 date: 02.09.2024
 content_type: howto

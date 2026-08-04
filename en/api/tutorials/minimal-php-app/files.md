@@ -2,7 +2,6 @@
 title: files
 description:
 author: SuperOffice Product and Engineering
-keywords:
 topic:
 deployment: online
 platform: web

@@ -1,7 +1,7 @@
 ---
 uid: personrestrictions
 title: personrestrictions
-keywords: mdoprovider mdo provider personrestrictions
+keywords: ['mdoprovider mdo provider personrestrictions']
 description: Implements a person mdolist provider that uses the conflicts detector to append information on conflicts
 generated: true
 content_type: reference

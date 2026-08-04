@@ -3,7 +3,7 @@ uid: enum-functionrighttype
 title: Enum values for FunctionRightType
 description: Lists the enum values for FunctionRightType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

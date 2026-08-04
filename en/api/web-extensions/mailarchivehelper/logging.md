@@ -4,7 +4,7 @@ uid: mah_logging
 description: MailArchiveHelper logging
 author: Tony Yates
 date: 06.24.2016
-keywords: log
+keywords: ['log']
 content_type: concept
 platform: web
 deployment: onsite

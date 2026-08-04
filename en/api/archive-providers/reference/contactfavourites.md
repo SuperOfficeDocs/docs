@@ -2,7 +2,7 @@
 uid: contactfavourites
 title: contactfavourites
 description:
-keywords: contactfavourites archive provider
+keywords: ['contactfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

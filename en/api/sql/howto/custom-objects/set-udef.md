@@ -4,7 +4,7 @@ uid: sql-set-udef
 description: Set a user-defined field using raw SQL.
 author: Bergfrid Skaara Dias
 date: 11.05.2021
-keywords: udef, user-defined field, custom field, API
+keywords: ['udef', 'user-defined field', 'custom field', 'API']
 content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database

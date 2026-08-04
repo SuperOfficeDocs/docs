@@ -4,7 +4,6 @@ uid: dump_result
 description: DumpResult helper method
 author: SuperOffice Product and Engineering
 date: 06.24.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/search/ifindagent/dump-result
 ---

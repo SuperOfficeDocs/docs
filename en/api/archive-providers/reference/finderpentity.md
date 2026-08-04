@@ -2,7 +2,7 @@
 uid: FindErpEntity
 title: FindErpEntity
 description:
-keywords: FindErpEntity archive provider
+keywords: ['FindErpEntity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

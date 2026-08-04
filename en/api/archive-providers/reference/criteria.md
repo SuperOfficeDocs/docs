@@ -2,7 +2,7 @@
 uid: Criteria
 title: Criteria
 description:
-keywords: Criteria archive provider
+keywords: ['Criteria archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

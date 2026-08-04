@@ -3,7 +3,7 @@ uid: enum-emailtype
 title: Enum values for EmailType
 description: Lists the enum values for EmailType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

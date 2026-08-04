@@ -2,7 +2,7 @@
 uid: TargetValueSub
 title: TargetValueSub
 description: Archive of TargetValue - used by .
-keywords: TargetValueSub archive provider
+keywords: ['TargetValueSub archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

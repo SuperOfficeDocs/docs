@@ -1,7 +1,7 @@
 ---
 uid: relationdefinition
 title: relationdefinition
-keywords: mdoprovider mdo provider relationdefinition
+keywords: ['mdoprovider mdo provider relationdefinition']
 description:
 generated: true
 content_type: reference

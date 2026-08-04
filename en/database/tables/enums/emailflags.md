@@ -3,7 +3,7 @@ uid: enum-emailflags
 title: Enum values for EMailFlags
 description: Lists the enum values for EMailFlags.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

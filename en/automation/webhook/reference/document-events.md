@@ -2,7 +2,7 @@
 uid: webhook_document_event
 title: Document events
 description: Document events
-keywords: document webhook
+keywords: ['document webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

@@ -2,7 +2,7 @@
 uid: ProjectShadowSelectionV2
 title: ProjectShadowSelectionV2
 description: Shadow contact provider for the Project provider.
-keywords: ProjectShadowSelectionV2 archive provider
+keywords: ['ProjectShadowSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

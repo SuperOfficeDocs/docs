@@ -2,7 +2,7 @@
 uid: QuoteLineStaticSelectionV2
 title: QuoteLineStaticSelectionV2
 description: Static archive Provider for the Selection quoteline archive.
-keywords: QuoteLineStaticSelectionV2 archive provider
+keywords: ['QuoteLineStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

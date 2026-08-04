@@ -1,7 +1,7 @@
 ---
 uid: projectmemberwithmail
 title: projectmemberwithmail
-keywords: mdoprovider mdo provider projectmemberwithmail
+keywords: ['mdoprovider mdo provider projectmemberwithmail']
 description:
 generated: true
 content_type: reference

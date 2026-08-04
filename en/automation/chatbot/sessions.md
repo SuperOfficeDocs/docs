@@ -3,7 +3,7 @@ uid: chatbot_sessions
 title: Chatbot Session Scripts
 author: christianm
 date: 03.08.2021
-keywords: chatbot, ai
+keywords: ['chatbot', 'ai']
 content_type: concept
 index: true
 ---

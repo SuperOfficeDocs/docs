@@ -2,7 +2,7 @@
 uid: help-en-service-screen-properties
 title: Screen properties
 description: Screen properties
-keywords: screen
+keywords: ['screen']
 author: SuperOffice RnD
 date: 06.29.2022
 content_type: reference

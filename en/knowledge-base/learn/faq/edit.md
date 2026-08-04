@@ -2,7 +2,7 @@
 uid: help-en-faq-edit
 title: Edit or delete FAQ
 description: Edit or delete FAQ entries
-keywords: edit FAQ, delete FAQ
+keywords: ['edit FAQ', 'delete FAQ']
 author: SuperOffice Product and Engineering
 date: 04.15.2025
 version: 10.5

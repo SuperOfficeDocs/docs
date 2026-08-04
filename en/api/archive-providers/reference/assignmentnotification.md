@@ -2,7 +2,7 @@
 uid: AssignmentNotification
 title: AssignmentNotification
 description:
-keywords: AssignmentNotification archive provider
+keywords: ['AssignmentNotification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: Mail
 title: Mail
 description: Provides populated mail envelope rows as an archive based on a query string
-keywords: Mail archive provider
+keywords: ['Mail archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

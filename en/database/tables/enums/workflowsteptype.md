@@ -3,7 +3,7 @@ uid: enum-workflowsteptype
 title: Enum values for WorkflowStepType
 description: Lists the enum values for WorkflowStepType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

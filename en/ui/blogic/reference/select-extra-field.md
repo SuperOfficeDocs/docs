@@ -4,7 +4,6 @@ uid: blogic_select_extra_field
 description: Select extra field
 author:
 date:
-keywords:
 topic: reference
 ---
 

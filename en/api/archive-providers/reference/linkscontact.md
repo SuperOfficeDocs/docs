@@ -2,7 +2,7 @@
 uid: LinksContact
 title: LinksContact
 description:
-keywords: LinksContact archive provider
+keywords: ['LinksContact archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -1,7 +1,7 @@
 ---
 uid: sentiment
 title: sentiment
-keywords: mdoprovider mdo provider sentiment
+keywords: ['mdoprovider mdo provider sentiment']
 description:
 generated: true
 content_type: reference

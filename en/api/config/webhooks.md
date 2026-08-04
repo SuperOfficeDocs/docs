@@ -4,7 +4,7 @@ uid: ns_config_webhooks
 description: NetServer configuration related to webhooks - events broadcast to remote servers.
 date: 12.17.2021
 author: Bergfrid Dias
-keywords: NetServer, web.config, Webhooks, NumThreads, RequireHttps
+keywords: ['NetServer', 'web.config', 'Webhooks', 'NumThreads', 'RequireHttps']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/webhooks

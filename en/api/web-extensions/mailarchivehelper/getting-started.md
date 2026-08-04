@@ -4,7 +4,6 @@ uid: mailarchivehelper_init
 description: Initializing the MailArchiveHelper
 author: Tony Yates
 date: 06.24.2016
-keywords:
 content_type: howto
 platform: web
 deployment: onsite

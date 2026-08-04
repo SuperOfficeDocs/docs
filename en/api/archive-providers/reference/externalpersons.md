@@ -2,7 +2,7 @@
 uid: ExternalPersons
 title: ExternalPersons
 description:
-keywords: ExternalPersons archive provider
+keywords: ['ExternalPersons archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

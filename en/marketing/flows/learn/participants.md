@@ -2,7 +2,7 @@
 uid: help-en-flow-participants
 title: Flow participants
 description: A complete view of all participants within the flow.
-keywords: Marketing, flow, participant, enroll, participant status
+keywords: ['Marketing', 'flow', 'participant', 'enroll', 'participant status']
 author: Bergfrid Dias, Trude Lien Smedbråten
 date: 09.26.2025
 version: 10.5

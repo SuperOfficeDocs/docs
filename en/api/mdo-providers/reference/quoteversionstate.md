@@ -1,7 +1,7 @@
 ---
 uid: quoteversionstate
 title: quoteversionstate
-keywords: mdoprovider mdo provider quoteversionstate
+keywords: ['mdoprovider mdo provider quoteversionstate']
 description: List provider for the <see cref="T:SuperOffice.Data.QuoteVersionState" /> enum
 generated: true
 content_type: reference

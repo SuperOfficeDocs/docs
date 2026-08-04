@@ -2,7 +2,7 @@
 uid: help-en-number-allocation-configure
 title: Specifying number allocation
 description: Specifying number allocation
-keywords: number allocation, counter, company number
+keywords: ['number allocation', 'counter', 'company number']
 author: digitaldiina
 date: 10.21.2025
 version: 11.5

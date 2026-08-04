@@ -2,7 +2,7 @@
 uid: CategoryMembers
 title: CategoryMembers
 description: Archive of CategoryMember - used by the web api.
-keywords: CategoryMembers archive provider
+keywords: ['CategoryMembers archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

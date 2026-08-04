@@ -1,7 +1,7 @@
 ---
 uid: faqreplytemplatefavourite
 title: faqreplytemplatefavourite
-keywords: mdoprovider mdo provider faqreplytemplatefavourite
+keywords: ['mdoprovider mdo provider faqreplytemplatefavourite']
 description: MDO list provider for Favourites
 generated: true
 content_type: reference

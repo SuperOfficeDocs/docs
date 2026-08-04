@@ -2,7 +2,7 @@
 uid: api-person-row
 title: Person - row
 description: Working with contacts (person) in API with rows
-keywords: person, contact, row, API
+keywords: ['person', 'contact', 'row', 'API']
 author: Bergfrid Skaara Dias
 date: 02.16.2022
 content_type: howto

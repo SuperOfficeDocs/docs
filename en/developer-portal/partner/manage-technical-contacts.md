@@ -2,7 +2,7 @@
 uid: dp-technical-contacts
 title: Manage technical contacts
 description: How to see who's technical contact of which app and update which apps a person is responsible for in the SuperOffice Developer Portal.
-keywords: Developer Portal, technical contact, contact person
+keywords: ['Developer Portal', 'technical contact', 'contact person']
 author: Bergfrid Dias
 date: 02.26.2025
 version: 2.0

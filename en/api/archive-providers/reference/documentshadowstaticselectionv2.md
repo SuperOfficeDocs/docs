@@ -2,7 +2,7 @@
 uid: DocumentShadowStaticSelectionV2
 title: DocumentShadowStaticSelectionV2
 description: Shadow contact provider for the static Document provider.
-keywords: DocumentShadowStaticSelectionV2 archive provider
+keywords: ['DocumentShadowStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -3,7 +3,7 @@ uid: enum-emailaccountstatus
 title: Enum values for EmailAccountStatus
 description: Lists the enum values for EmailAccountStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

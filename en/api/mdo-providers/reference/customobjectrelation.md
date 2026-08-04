@@ -1,7 +1,7 @@
 ---
 uid: customobjectrelation
 title: customobjectrelation
-keywords: mdoprovider mdo provider customobjectrelation
+keywords: ['mdoprovider mdo provider customobjectrelation']
 description: MDO list provider for custom object relations Custom object's name is passed as additionalInfo parameter
 generated: true
 content_type: reference

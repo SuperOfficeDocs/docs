@@ -2,7 +2,7 @@
 uid: licenses-hidden
 title: Hidden licenses
 description: Hiding module licenses, showing user plans.
-keywords: hidden license, license package
+keywords: ['hidden license', 'license package']
 author: xt1
 date: 06.10.2026
 version: 12.0

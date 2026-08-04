@@ -1,7 +1,7 @@
 ---
 uid: ticketread
 title: ticketread
-keywords: mdoprovider mdo provider ticketread
+keywords: ['mdoprovider mdo provider ticketread']
 description:
 generated: true
 content_type: reference

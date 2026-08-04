@@ -2,7 +2,7 @@
 uid: update-person-entity
 title: Update a person with a new name, address, position using entities
 description: Update a person with new name, address, position using entities
-keywords: person, contact, entity, API
+keywords: ['person', 'contact', 'entity', 'API']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

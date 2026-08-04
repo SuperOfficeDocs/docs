@@ -2,7 +2,7 @@
 uid: Numbers
 title: Numbers
 description: Archive provider for the list of numbers, for the number allocation system. Not be confused with table sequence numbers.
-keywords: Numbers archive provider
+keywords: ['Numbers archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

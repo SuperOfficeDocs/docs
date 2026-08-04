@@ -2,7 +2,7 @@
 uid: AssociateProjectSelectionV2
 title: AssociateProjectSelectionV2
 description: This is the archive Provider for the Selection Project archive.
-keywords: AssociateProjectSelectionV2 archive provider
+keywords: ['AssociateProjectSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

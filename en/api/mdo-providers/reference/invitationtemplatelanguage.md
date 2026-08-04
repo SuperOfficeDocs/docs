@@ -1,7 +1,7 @@
 ---
 uid: invitationtemplatelanguage
 title: invitationtemplatelanguage
-keywords: mdoprovider mdo provider invitationtemplatelanguage
+keywords: ['mdoprovider mdo provider invitationtemplatelanguage']
 description:
 generated: true
 content_type: reference

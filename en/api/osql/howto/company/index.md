@@ -2,7 +2,7 @@
 uid: api-contact-osql
 title: Contact - OSQL
 description: Working with companies (contact) in API with Objectified SQL.
-keywords: contact, company, OSQL, API
+keywords: ['contact', 'company', 'OSQL', 'API']
 author: Bergfrid Skaara Dias
 date: 02.22.2022
 content_type: concept

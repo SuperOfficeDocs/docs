@@ -1,7 +1,7 @@
 ---
 uid: doctmpl
 title: doctmpl
-keywords: mdoprovider mdo provider doctmpl
+keywords: ['mdoprovider mdo provider doctmpl']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

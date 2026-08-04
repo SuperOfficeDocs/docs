@@ -4,7 +4,6 @@ uid: tooltip_service
 description: Tooltip service
 author: SuperOffice Product and Engineering
 date:
-keywords:
 content_type: concept
 ---
 

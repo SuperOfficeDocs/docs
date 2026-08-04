@@ -2,7 +2,7 @@
 uid: ChatConversationStaticSelectionV2
 title: ChatConversationStaticSelectionV2
 description:
-keywords: ChatConversationStaticSelectionV2 archive provider
+keywords: ['ChatConversationStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

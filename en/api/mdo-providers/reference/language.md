@@ -1,7 +1,7 @@
 ---
 uid: language
 title: language
-keywords: mdoprovider mdo provider language
+keywords: ['mdoprovider mdo provider language']
 description:
 generated: true
 content_type: reference

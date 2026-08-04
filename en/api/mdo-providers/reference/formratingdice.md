@@ -1,7 +1,7 @@
 ---
 uid: formratingdice
 title: formratingdice
-keywords: mdoprovider mdo provider formratingdice
+keywords: ['mdoprovider mdo provider formratingdice']
 description:
 generated: true
 content_type: reference

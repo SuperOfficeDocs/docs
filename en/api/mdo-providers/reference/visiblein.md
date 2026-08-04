@@ -1,7 +1,7 @@
 ---
 uid: visiblein
 title: visiblein
-keywords: mdoprovider mdo provider visiblein
+keywords: ['mdoprovider mdo provider visiblein']
 description: Visible in list for web panels.
 generated: true
 content_type: reference

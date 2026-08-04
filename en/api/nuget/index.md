@@ -4,7 +4,6 @@ uid: so_nuget
 description: SuperOffice on NuGet
 author: Tony Yates
 date: 02.29.2016
-keywords:
 content_type: concept
 ---
 

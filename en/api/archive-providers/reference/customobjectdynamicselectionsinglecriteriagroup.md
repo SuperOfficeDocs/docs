@@ -2,7 +2,7 @@
 uid: CustomObjectDynamicSelectionSingleCriteriaGroup
 title: CustomObjectDynamicSelectionSingleCriteriaGroup
 description: CustomObject selection archive using the selectionId as criterionmapping.
-keywords: CustomObjectDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['CustomObjectDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

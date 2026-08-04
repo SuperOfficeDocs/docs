@@ -1,7 +1,7 @@
 ---
 uid: selectioncriteriamembertype
 title: selectioncriteriamembertype
-keywords: mdoprovider mdo provider selectioncriteriamembertype
+keywords: ['mdoprovider mdo provider selectioncriteriamembertype']
 description:
 generated: true
 content_type: reference

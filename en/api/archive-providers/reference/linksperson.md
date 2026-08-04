@@ -2,7 +2,7 @@
 uid: LinksPerson
 title: LinksPerson
 description:
-keywords: LinksPerson archive provider
+keywords: ['LinksPerson archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

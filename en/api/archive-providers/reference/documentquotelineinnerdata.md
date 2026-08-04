@@ -2,7 +2,7 @@
 uid: DocumentQuoteLineInnerData
 title: DocumentQuoteLineInnerData
 description:
-keywords: DocumentQuoteLineInnerData archive provider
+keywords: ['DocumentQuoteLineInnerData archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

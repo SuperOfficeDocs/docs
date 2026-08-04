@@ -2,7 +2,7 @@
 uid: add-catlist-item-rest
 title: Add a category list item using REST
 description: Add a category list item
-keywords: category, contact, rest
+keywords: ['category', 'contact', 'rest']
 author: Tony Yates
 content_type: howto
 date: 10.22.2024

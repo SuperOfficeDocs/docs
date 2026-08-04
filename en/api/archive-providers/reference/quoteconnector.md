@@ -2,7 +2,7 @@
 uid: QuoteConnector
 title: QuoteConnector
 description:
-keywords: QuoteConnector archive provider
+keywords: ['QuoteConnector archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

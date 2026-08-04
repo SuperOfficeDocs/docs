@@ -2,7 +2,7 @@
 uid: ChatConversationShadowDynamicSelectionV2
 title: ChatConversationShadowDynamicSelectionV2
 description: ChatConversation shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: ChatConversationShadowDynamicSelectionV2 archive provider
+keywords: ['ChatConversationShadowDynamicSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

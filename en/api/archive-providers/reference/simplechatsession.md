@@ -2,7 +2,7 @@
 uid: SimpleChatSession
 title: SimpleChatSession
 description:
-keywords: SimpleChatSession archive provider
+keywords: ['SimpleChatSession archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

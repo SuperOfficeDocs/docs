@@ -3,7 +3,7 @@ uid: enum-chatmessagespecialtype
 title: Enum values for ChatMessageSpecialType
 description: Lists the enum values for ChatMessageSpecialType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

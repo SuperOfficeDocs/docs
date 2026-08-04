@@ -4,7 +4,7 @@ uid: ns_config_timezone
 description: NetServer configuration values related to TimeZone.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, TimeZone, ServiceUrl
+keywords: ['config', 'NetServer', 'web.config', 'TimeZone', 'ServiceUrl']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/timezone

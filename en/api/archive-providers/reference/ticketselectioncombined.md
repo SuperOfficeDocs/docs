@@ -2,7 +2,7 @@
 uid: TicketSelectionCombined
 title: TicketSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: TicketSelectionCombined archive provider
+keywords: ['TicketSelectionCombined archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

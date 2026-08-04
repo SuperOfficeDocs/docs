@@ -1,7 +1,7 @@
 ---
 uid: workflowsteptype
 title: workflowsteptype
-keywords: mdoprovider mdo provider workflowsteptype
+keywords: ['mdoprovider mdo provider workflowsteptype']
 description: MDO provider for the WorkflowStepType enum
 generated: true
 content_type: reference

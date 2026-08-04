@@ -2,7 +2,7 @@
 uid: selectionfavourites
 title: selectionfavourites
 description:
-keywords: selectionfavourites archive provider
+keywords: ['selectionfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

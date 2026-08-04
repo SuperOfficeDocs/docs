@@ -2,7 +2,7 @@
 uid: LinksURL
 title: LinksURL
 description:
-keywords: LinksURL archive provider
+keywords: ['LinksURL archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

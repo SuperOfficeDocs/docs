@@ -2,7 +2,7 @@
 uid: help-en-invitation-accept
 title: Follow-ups you are invited to
 description: Show follow-ups you are invited to; accept or decline an invitation
-keywords: accept invitation, decline invitation, Notifications panel, diary, follow-up, invitation
+keywords: ['accept invitation', 'decline invitation', 'Notifications panel', 'diary', 'follow-up', 'invitation']
 author: Bergfrid Dias
 date: 01.13.2025
 version: 10.5

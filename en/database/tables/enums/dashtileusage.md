@@ -3,7 +3,7 @@ uid: enum-dashtileusage
 title: Enum values for DashTileUsage
 description: Lists the enum values for DashTileUsage.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -4,7 +4,6 @@ uid: osql_groupby
 description: SuperOffice Objectified SQL - GroupBy
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: concept
 redirect_from: /en/api/netserver/osql/groupby
 hidden: true

@@ -1,7 +1,7 @@
 ---
 uid: importphoneurlsemail
 title: importphoneurlsemail
-keywords: mdoprovider mdo provider importphoneurlsemail
+keywords: ['mdoprovider mdo provider importphoneurlsemail']
 description: Import phone/url/email values - Add, Replace, Skip
 generated: true
 content_type: reference

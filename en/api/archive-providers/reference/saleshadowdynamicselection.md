@@ -2,7 +2,7 @@
 uid: SaleShadowDynamicSelection
 title: SaleShadowDynamicSelection
 description: Shadow contact provider for the dynamic sale provider.
-keywords: SaleShadowDynamicSelection archive provider
+keywords: ['SaleShadowDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

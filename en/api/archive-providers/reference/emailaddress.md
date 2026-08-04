@@ -2,7 +2,7 @@
 uid: EmailAddress
 title: EmailAddress
 description: Special purpose archive provider used to search for email addresses.
-keywords: EmailAddress archive provider
+keywords: ['EmailAddress archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

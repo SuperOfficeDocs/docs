@@ -3,7 +3,7 @@ uid: document-migrate-to-online
 title: "Understanding document migration: reasons why some documents may not be migrated"
 sidebarTitle: "Document migration"
 description: Understanding document migration
-keywords: migrate, document
+keywords: ['migrate', 'document']
 author: Martin Pavlas
 date: 10.18.2023
 content_type: tutorial

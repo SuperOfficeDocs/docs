@@ -2,7 +2,7 @@
 uid: ContactProjects
 title: ContactProjects
 description:
-keywords: ContactProjects archive provider
+keywords: ['ContactProjects archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

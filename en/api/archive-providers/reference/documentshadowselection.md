@@ -2,7 +2,7 @@
 uid: DocumentShadowSelection
 title: DocumentShadowSelection
 description: Shadow contact provider for the Document provider.
-keywords: DocumentShadowSelection archive provider
+keywords: ['DocumentShadowSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -4,7 +4,7 @@ uid: app-technical-requirements
 description: "Technical requirements for certifying standard applications."
 author: Margrethe Romnes
 date: 02.02.2022
-keywords: certification, apps, availability, performance
+keywords: ['certification', 'apps', 'availability', 'performance']
 content_type: reference
 deployment: online
 platform: web

@@ -2,7 +2,7 @@
 uid: FindProductViaConnectorProvider
 title: FindProductViaConnectorProvider
 description:
-keywords: FindProductViaConnectorProvider archive provider
+keywords: ['FindProductViaConnectorProvider archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

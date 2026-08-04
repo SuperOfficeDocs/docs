@@ -1,7 +1,7 @@
 ---
 uid: chatsessionstatus
 title: chatsessionstatus
-keywords: mdoprovider mdo provider chatsessionstatus
+keywords: ['mdoprovider mdo provider chatsessionstatus']
 description: Chat session status values
 generated: true
 content_type: reference

@@ -4,7 +4,6 @@ uid: rows_get_row
 description: SuperOffice database get row with basic properties
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/rows/get-row
 hidden: true

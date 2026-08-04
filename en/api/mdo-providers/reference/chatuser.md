@@ -1,7 +1,7 @@
 ---
 uid: chatuser
 title: chatuser
-keywords: mdoprovider mdo provider chatuser
+keywords: ['mdoprovider mdo provider chatuser']
 description:
 generated: true
 content_type: reference

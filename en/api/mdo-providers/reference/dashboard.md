@@ -1,7 +1,7 @@
 ---
 uid: dashboard
 title: dashboard
-keywords: mdoprovider mdo provider dashboard
+keywords: ['mdoprovider mdo provider dashboard']
 description: MDO list provider for Dashboard, can be used by Navigator.
 generated: true
 content_type: reference

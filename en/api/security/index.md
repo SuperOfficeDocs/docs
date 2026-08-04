@@ -2,7 +2,7 @@
 title: NetServer security
 description: NetServer security
 date: 09.13.2021
-keywords: netserver, security
+keywords: ['netserver', 'security']
 content_type: concept
 ---
 

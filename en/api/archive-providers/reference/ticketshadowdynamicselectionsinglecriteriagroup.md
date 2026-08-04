@@ -2,7 +2,7 @@
 uid: TicketShadowDynamicSelectionSingleCriteriaGroup
 title: TicketShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic ticket provider.
-keywords: TicketShadowDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['TicketShadowDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

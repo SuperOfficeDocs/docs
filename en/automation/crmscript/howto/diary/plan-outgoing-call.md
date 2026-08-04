@@ -2,7 +2,7 @@
 uid: crmscript-call-outgoing
 title: Plan an outgoing call
 description: How to plan an outgoing call with CRMScript
-keywords: CRMScript, calendar, diary, call, follow-up, direction
+keywords: ['CRMScript', 'calendar', 'diary', 'call', 'follow-up', 'direction']
 author: Bergfrid Skaara Dias
 date: 03.21.2022
 version: 10

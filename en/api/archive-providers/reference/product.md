@@ -2,7 +2,7 @@
 uid: Product
 title: Product
 description: This is the archive Provider for the Product Archive is SoAdmin.
-keywords: Product archive provider
+keywords: ['Product archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

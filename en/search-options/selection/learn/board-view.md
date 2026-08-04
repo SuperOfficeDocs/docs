@@ -2,7 +2,7 @@
 uid: help-en-selection-board-view
 title: Use board view in selections
 description: Visualize selections using board view with grouping, filters, and drag-and-drop cards
-keywords: board view, selection view, selection, sales board, project board, request board, kanban, group by, filter toolbar, sale date badge, days in stage, days since registered
+keywords: ['board view', 'selection view', 'selection', 'sales board', 'project board', 'request board', 'kanban', 'group by', 'filter toolbar', 'sale date badge', 'days in stage', 'days since registered']
 author: digitaldiina
 date: 12.02.2025
 version: 11.7

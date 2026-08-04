@@ -2,7 +2,7 @@
 uid: help-en-task-menu-add
 title: Add items to the Task menu list
 description: Add items to the Task menu list
-keywords: Task menu
+keywords: ['Task menu']
 author: digitaldiina
 date: 05.04.2026
 version: 11.13

@@ -2,7 +2,7 @@
 uid: TicketSelectionV2
 title: TicketSelectionV2
 description: This is the archive Provider for the Selection ticket archive.
-keywords: TicketSelectionV2 archive provider
+keywords: ['TicketSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

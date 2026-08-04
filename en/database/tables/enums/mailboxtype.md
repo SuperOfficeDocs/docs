@@ -3,7 +3,7 @@ uid: enum-mailboxtype
 title: Enum values for MailboxType
 description: Lists the enum values for MailboxType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

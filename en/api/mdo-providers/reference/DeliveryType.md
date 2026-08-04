@@ -1,7 +1,7 @@
 ---
 uid: deliverytype
 title: deliverytype
-keywords: mdoprovider mdo provider deliverytype
+keywords: ['mdoprovider mdo provider deliverytype']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

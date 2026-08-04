@@ -3,7 +3,7 @@ title: Set up EMET
 uid: set_up_emet
 description: Installing Enhanced Mitigation Experience Toolkit (EMET)
 author: SuperOffice Product and Engineering
-keywords: security, emet
+keywords: ['security', 'emet']
 content_type: howto
 deployment: onsite
 platform: web

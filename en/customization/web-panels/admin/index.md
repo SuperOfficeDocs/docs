@@ -2,7 +2,7 @@
 uid: help-en-ui-web-panels
 title: Web panels
 description: Web panels
-keywords: web panel, www tab
+keywords: ['web panel', 'www tab']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

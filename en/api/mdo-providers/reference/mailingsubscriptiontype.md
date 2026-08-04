@@ -1,7 +1,7 @@
 ---
 uid: mailingsubscriptiontype
 title: mailingsubscriptiontype
-keywords: mdoprovider mdo provider mailingsubscriptiontype
+keywords: ['mdoprovider mdo provider mailingsubscriptiontype']
 description: Mailing subscription types; Invitations, news, etc
 generated: true
 content_type: reference

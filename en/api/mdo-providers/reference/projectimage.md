@@ -1,7 +1,7 @@
 ---
 uid: projectimage
 title: projectimage
-keywords: mdoprovider mdo provider projectimage
+keywords: ['mdoprovider mdo provider projectimage']
 description: Project images from the blob table
 generated: true
 content_type: reference

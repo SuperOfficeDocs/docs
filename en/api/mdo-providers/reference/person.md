@@ -1,7 +1,7 @@
 ---
 uid: person
 title: person
-keywords: mdoprovider mdo provider person
+keywords: ['mdoprovider mdo provider person']
 description: List of persons from the Archive provider
 generated: true
 content_type: reference

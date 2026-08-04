@@ -2,7 +2,7 @@
 uid: api-rest-and-ws-howto
 title: Working web services and REST
 description: How to work with the SuperOffice APIs - web services and REST
-keywords: API, web services, REST
+keywords: ['API', 'web services', 'REST']
 author: Bergfrid Dias
 date: 07.11.2024
 version: 10.3

@@ -3,7 +3,7 @@ title: ODATA lists
 uid: odata_lists
 description: REST Web API search - lists
 author: SuperOffice Product and Engineering
-keywords: search, list, odata
+keywords: ['search', 'list', 'odata']
 date:
 content_type: howto
 redirect_from: /en/api/netserver/search/odata/lists

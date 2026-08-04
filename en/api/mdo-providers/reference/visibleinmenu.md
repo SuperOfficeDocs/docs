@@ -1,7 +1,7 @@
 ---
 uid: visibleinmenu
 title: visibleinmenu
-keywords: mdoprovider mdo provider visibleinmenu
+keywords: ['mdoprovider mdo provider visibleinmenu']
 description: Visible in menu list - Toolbox menu, View menu
 generated: true
 content_type: reference

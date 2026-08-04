@@ -1,7 +1,7 @@
 ---
 uid: mailhtmltemplate
 title: mailhtmltemplate
-keywords: mdoprovider mdo provider mailhtmltemplate
+keywords: ['mdoprovider mdo provider mailhtmltemplate']
 description: List provider for the Mailtemplates.
 generated: true
 content_type: reference

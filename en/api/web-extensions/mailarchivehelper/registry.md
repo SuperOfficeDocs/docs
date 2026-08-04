@@ -4,7 +4,7 @@ uid: mah_registry
 description: MailArchiveHelper registry
 author: Tony Yates
 date: 06.24.2016
-keywords: maillink,preferences
+keywords: ['maillink', 'preferences']
 content_type: concept
 platform: web
 deployment: onsite

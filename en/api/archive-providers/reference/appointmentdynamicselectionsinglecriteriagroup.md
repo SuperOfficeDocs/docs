@@ -2,7 +2,7 @@
 uid: AppointmentDynamicSelectionSingleCriteriaGroup
 title: AppointmentDynamicSelectionSingleCriteriaGroup
 description: Appointment selection archive using the selectionId as criterionmapping.
-keywords: AppointmentDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['AppointmentDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -4,7 +4,6 @@ uid: blogic_listbox
 description: List box
 author:
 date:
-keywords:
 topic: reference
 ---
 

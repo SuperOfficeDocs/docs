@@ -4,7 +4,6 @@ uid: change_system_config
 description: How to alter system configuration files
 author: Tony Yates
 date: 06.24.2016
-keywords:
 content_type: howto
 deployment: onsite
 platform: web

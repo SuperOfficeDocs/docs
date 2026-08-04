@@ -1,7 +1,7 @@
 ---
 uid: tickettype
 title: tickettype
-keywords: mdoprovider mdo provider tickettype
+keywords: ['mdoprovider mdo provider tickettype']
 description: TicketTypeProvider creates a flat list based on the table - TICKET_TYPE
 generated: true
 content_type: reference

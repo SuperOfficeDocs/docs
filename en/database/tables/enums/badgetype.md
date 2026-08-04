@@ -3,7 +3,7 @@ uid: enum-badgetype
 title: Enum values for BadgeType
 description: Lists the enum values for BadgeType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -1,7 +1,7 @@
 ---
 uid: projecttype
 title: projecttype
-keywords: mdoprovider mdo provider projecttype
+keywords: ['mdoprovider mdo provider projecttype']
 description: Project type list. Encodes Default project duration in extra info.
 generated: true
 content_type: reference

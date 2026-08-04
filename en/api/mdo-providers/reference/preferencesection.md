@@ -1,7 +1,7 @@
 ---
 uid: preferencesection
 title: preferencesection
-keywords: mdoprovider mdo provider preferencesection
+keywords: ['mdoprovider mdo provider preferencesection']
 description: MDO Provider that retrieves a list of preference sections
 generated: true
 content_type: reference

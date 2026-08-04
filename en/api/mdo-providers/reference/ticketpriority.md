@@ -1,7 +1,7 @@
 ---
 uid: ticketpriority
 title: ticketpriority
-keywords: mdoprovider mdo provider ticketpriority
+keywords: ['mdoprovider mdo provider ticketpriority']
 description: MDO list provider for ticket priorities.
 generated: true
 content_type: reference

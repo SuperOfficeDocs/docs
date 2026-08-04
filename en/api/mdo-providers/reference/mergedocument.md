@@ -1,7 +1,7 @@
 ---
 uid: mergedocument
 title: mergedocument
-keywords: mdoprovider mdo provider mergedocument
+keywords: ['mdoprovider mdo provider mergedocument']
 description: MDO list provider for documents marked as type <see cref="F:SuperOffice.Data.TaskType.MailMergeDraft" />.
 generated: true
 content_type: reference

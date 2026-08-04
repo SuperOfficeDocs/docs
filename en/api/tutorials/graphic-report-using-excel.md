@@ -4,7 +4,6 @@ uid: graphic_report_excel
 description: Graphic report using Excel
 author: SuperOffice Product and Engineering
 date:
-keywords:
 content_type: tutorial
 ---
 

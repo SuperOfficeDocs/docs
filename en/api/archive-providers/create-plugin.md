@@ -3,7 +3,6 @@ title: Create your own archive provider
 uid: create_archiveprovider_plugin
 description: Create your own archive provider
 author: SuperOffice Product and Engineering
-keywords:
 content_type: howto
 category: api
 topic: archive providers

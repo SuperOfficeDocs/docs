@@ -3,7 +3,7 @@ uid: enum-targetmeasurementunit
 title: Enum values for TargetMeasurementUnit
 description: Lists the enum values for TargetMeasurementUnit.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -3,7 +3,7 @@ title: globalization
 description: "Learn about how the CRM.web application handles globalization."
 author: SuperOffice Product and Engineering
 date: 06.24.2016
-keywords: globalization, resources, culture
+keywords: ['globalization', 'resources', 'culture']
 content_type: concept
 deployment: onsite
 platform: web

@@ -3,7 +3,7 @@ uid: enum-criterionlinktype
 title: Enum values for CriterionLinkType
 description: Lists the enum values for CriterionLinkType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: ContactActivity
 title: ContactActivity
 description: Activity archive provider for the Company card
-keywords: ContactActivity archive provider
+keywords: ['ContactActivity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

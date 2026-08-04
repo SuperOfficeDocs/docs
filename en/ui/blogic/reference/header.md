@@ -4,7 +4,6 @@ uid: blogic_header
 description: Header
 author:
 date:
-keywords:
 topic: reference
 ---
 

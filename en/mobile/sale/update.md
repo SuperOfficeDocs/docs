@@ -2,7 +2,7 @@
 uid: mobile-crm-sale-update
 title: Update sale
 description: How to update a sale in SuperOffice Mobile CRM.
-keywords: open, sold, lost, stalled, stage, sale
+keywords: ['open', 'sold', 'lost', 'stalled', 'stage', 'sale']
 author: digitaldiina
 date: 06.10.2026
 version: 11.1

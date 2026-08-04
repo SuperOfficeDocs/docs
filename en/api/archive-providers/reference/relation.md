@@ -2,7 +2,7 @@
 uid: Relation
 title: Relation
 description: Data provider class for the 'Relation' archive under the company card. This class combines output from
-keywords: Relation archive provider
+keywords: ['Relation archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: get-category-list-generic-provider
 title: Get a CategoryList through generic list providers
 description: Get a CategoryList through generic list providers
-keywords: category, list provider, CategoryList
+keywords: ['category', 'list provider', 'CategoryList']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

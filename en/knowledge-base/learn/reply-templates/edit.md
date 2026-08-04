@@ -2,7 +2,7 @@
 uid: help-en-reply-template-edit
 title: Edit or delete reply templates
 description: Edit or delete reply templates
-keywords: reply template
+keywords: ['reply template']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

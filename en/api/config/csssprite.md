@@ -4,7 +4,7 @@ uid: ns_config_csssprite
 description: NetServer configuration for the Web client CssSprite generator.
 date: 12.17.2021
 author: Bergfrid Dias
-keywords: NetServer, web.config, CssSprite, paths, MaxHeight
+keywords: ['NetServer', 'web.config', 'CssSprite', 'paths', 'MaxHeight']
 content_type: reference
 deployment: onsite
 platform: web

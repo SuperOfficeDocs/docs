@@ -2,7 +2,7 @@
 uid: address-howto-rows
 title: Address localization
 description: Working with addresses as rows.
-keywords: address
+keywords: ['address']
 author: Bergfrid Dias
 date: 02.16.2022
 version: 9

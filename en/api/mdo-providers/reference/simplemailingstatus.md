@@ -1,7 +1,7 @@
 ---
 uid: simplemailingstatus
 title: simplemailingstatus
-keywords: mdoprovider mdo provider simplemailingstatus
+keywords: ['mdoprovider mdo provider simplemailingstatus']
 description:
 generated: true
 content_type: reference

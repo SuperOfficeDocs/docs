@@ -2,7 +2,7 @@
 uid: UserPreferences
 title: UserPreferences
 description: User (and system) preference settings, at all levels
-keywords: UserPreferences archive provider
+keywords: ['UserPreferences archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

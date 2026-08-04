@@ -1,7 +1,7 @@
 ---
 uid: quoteapprreason
 title: quoteapprreason
-keywords: mdoprovider mdo provider quoteapprreason
+keywords: ['mdoprovider mdo provider quoteapprreason']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

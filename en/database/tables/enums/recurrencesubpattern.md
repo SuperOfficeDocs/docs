@@ -3,7 +3,7 @@ uid: enum-recurrencesubpattern
 title: Enum values for RecurrenceSubPattern
 description: Lists the enum values for RecurrenceSubPattern.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

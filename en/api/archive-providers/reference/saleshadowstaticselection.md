@@ -2,7 +2,7 @@
 uid: SaleShadowStaticSelection
 title: SaleShadowStaticSelection
 description: Shadow contact provider for the static sale provider.
-keywords: SaleShadowStaticSelection archive provider
+keywords: ['SaleShadowStaticSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

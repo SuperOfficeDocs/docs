@@ -3,7 +3,7 @@ uid: enum-archivebehaviour
 title: Enum values for ArchiveBehaviour
 description: Lists the enum values for ArchiveBehaviour.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

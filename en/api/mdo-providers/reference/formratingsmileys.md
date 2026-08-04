@@ -1,7 +1,7 @@
 ---
 uid: formratingsmileys
 title: formratingsmileys
-keywords: mdoprovider mdo provider formratingsmileys
+keywords: ['mdoprovider mdo provider formratingsmileys']
 description:
 generated: true
 content_type: reference

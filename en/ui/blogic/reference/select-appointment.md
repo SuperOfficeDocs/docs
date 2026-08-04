@@ -4,7 +4,6 @@ uid: blogic_select_appointment
 description: Select appointment
 author:
 date:
-keywords:
 topic: reference
 ---
 

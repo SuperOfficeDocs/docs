@@ -4,7 +4,7 @@ uid: what-api-to-use
 description: "Our APIs have different authentication and data access techniques. This article aims to clarify which API you should use."
 author: Tony Yates
 date: 09.13.2018
-keywords: apps, API, authentication, proxy
+keywords: ['apps', 'API', 'authentication', 'proxy']
 content_type: concept
 deployment: online
 platform: web
