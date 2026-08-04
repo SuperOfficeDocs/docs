@@ -71,8 +71,8 @@
       },
       {
         "group": "Søgemuligheder",
+        "root": "da/search-options/learn/index",
         "pages": [
-          "da/search-options/learn/index",
           "da/search-options/learn/find-screen",
           "da/search-options/learn/search-criteria",
           "da/search-options/learn/freetext-search",
@@ -456,8 +456,8 @@
       },
       {
         "group": "Brugerdefinerede objekter",
+        "root": "da/custom-objects/learn/index",
         "pages": [
-          "da/custom-objects/learn/index",
           "da/custom-objects/learn/more-tab",
           {
             "group": "Brugerdefinerede felter",
@@ -658,10 +658,6 @@
         ]
       },
       {
-        "group": "Mobile CRM",
-        "pages": []
-      },
-      {
         "group": "Vidensbase",
         "root": "da/knowledge-base/learn/index",
         "pages": [
@@ -692,8 +688,8 @@
       },
       {
         "group": "Privacy-indstillinger og GDPR",
+        "root": "da/security/privacy/learn/index",
         "pages": [
-          "da/security/privacy/learn/index",
           "da/security/privacy/learn/edit-legal-base",
           "da/security/privacy/learn/send-privacy-confirmation-email",
           "da/security/privacy/learn/generate-personal-data-report",
