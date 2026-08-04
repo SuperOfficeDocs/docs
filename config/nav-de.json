@@ -71,8 +71,8 @@
       },
       {
         "group": "Suchoptionen",
+        "root": "de/search-options/learn/index",
         "pages": [
-          "de/search-options/learn/index",
           "de/search-options/learn/find-screen",
           "de/search-options/learn/search-criteria",
           "de/search-options/learn/freetext-search",
@@ -456,8 +456,8 @@
       },
       {
         "group": "Benutzerdefinierte Objekte",
+        "root": "de/custom-objects/learn/index",
         "pages": [
-          "de/custom-objects/learn/index",
           "de/custom-objects/learn/more-tab",
           {
             "group": "Benutzerdefinierte Felder",
@@ -658,10 +658,6 @@
         ]
       },
       {
-        "group": "Mobile CRM",
-        "pages": []
-      },
-      {
         "group": "Wissensdatenbank",
         "root": "de/knowledge-base/learn/index",
         "pages": [
@@ -692,8 +688,8 @@
       },
       {
         "group": "Datenschutzeinstellungen und DSGVO",
+        "root": "de/security/privacy/learn/index",
         "pages": [
-          "de/security/privacy/learn/index",
           "de/security/privacy/learn/edit-legal-base",
           "de/security/privacy/learn/send-privacy-confirmation-email",
           "de/security/privacy/learn/generate-personal-data-report",
