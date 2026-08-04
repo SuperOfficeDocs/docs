@@ -1,7 +1,7 @@
 ---
 uid: markdown-guide-docfx-to-mintlify-cheat-sheet
-title: DocFX to Mintlify cheat sheet
-description: Quick before-and-after examples for contributors updating content from DocFX-era formatting to Mintlify-compatible formatting.
+title: DocFx to Mintlify cheat sheet
+description: Quick before-and-after examples for contributors updating content from DocFx-era formatting to Mintlify-compatible formatting.
 keywords: ['docfx', 'mintlify', 'markdown', 'mdx', 'migration', 'cheat sheet']
 author: digitaldiina
 date: 07.29.2026
@@ -11,11 +11,11 @@ language: en
 
 Use this page as a quick reference when updating older content to current SuperOfficeDocs conventions.
 
-For the full rules, see the [Markdown guide][1], [How to use links in docs][2], [How to include code in docs][3], and [Metadata (Yaml front-matter)][4].
+For the full rules, see the [Markdown guide][1], [How to use links in docs][2], [How to include code in docs][3], and [Metadata (YAML front-matter)][4].
 
 ## Callouts
 
-**Before (DocFX):**
+**Before (DocFx):**
 
 ```md
 > [!NOTE]
@@ -34,7 +34,7 @@ Also use `<Tip>`, `<Caution>`, and `<Warning>`.
 
 ## Includes
 
-**Before (DocFX):**
+**Before (DocFx):**
 
 ```md
 [!include[foo](./includes/foo.md)]
@@ -50,7 +50,7 @@ import Foo from "./includes/foo.md";
 
 ## Code snippets
 
-**Before (DocFX range include):**
+**Before (DocFx range include):**
 
 ```md
 [!code-csharp[CS](file.cs?range=1,3)]
@@ -66,7 +66,7 @@ Console.WriteLine("Hello");
 
 ## Tabs
 
-**Before (DocFX):**
+**Before (DocFx):**
 
 ```md
 ## [REST](#tab/rest)
@@ -215,7 +215,7 @@ Keep frontmatter complete and current:
 
 ## Stop doing this
 
-* Don't use DocFX callout, include, tab, or code-include syntax.
+* Don't use DocFx callout, include, tab, or code-include syntax.
 * Don't link to `.md` or `.mdx` files directly.
 * Don't use `xref`.
 * Don't rely on HTML comments for lint suppression in MDX.
