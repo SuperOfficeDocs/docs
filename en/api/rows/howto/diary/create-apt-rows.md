@@ -1,6 +1,7 @@
 ---
 uid: create-appointment-rows
 title: Create an appointment through row collection (Rows)
+sidebarTitle: "Create an appointment (rows)"
 description: How to create an appointment through row collection (Rows).
 keywords: ['diary', 'calendar', 'appointment', 'API', 'rows', 'collection', 'AppointmentRows']
 author: Bergfrid Skaara Dias
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/rows/howto/diary/create-apt-rows
 hidden: true
 ---
-
-# Create an appointment through row collection (Rows)
 
 `Rows` type consists of a collection of rows such as `AppointmentRows` type consists of a collection of [AppointmentRow][3] types.
 

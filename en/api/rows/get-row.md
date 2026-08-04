@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/rows/get-row
 hidden: true
 ---
 
-# Retrieve a Row with basic properties
-
 ```csharp
 using SuperOffice;
 using SuperOffice.CRM.Rows;

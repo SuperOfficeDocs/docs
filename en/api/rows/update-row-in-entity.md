@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/rows/update-row-in-entity
 hidden: true
 ---
 
-# Update a Row through an Entity
-
 These examples show how to update the properties of a Row through an Entity. As in the case of creating or retrieving and assigning Entity properties to the Sale entity, there are two methods of doing this.
 
 ## Example 1

@@ -1,5 +1,5 @@
 ---
-title: # Joins
+title: Joins
 uid: osql_join
 description: SuperOffice Objectified SQL - JOIN
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ content_type: concept
 redirect_from: /en/api/netserver/osql/join
 hidden: true
 ---
-
-# Joins
 
 You may need to use **joins** in database queries very often. The example below shows how the following SQL query is converted to SuperOffice Objectified SQL.
 

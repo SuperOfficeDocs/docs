@@ -10,8 +10,6 @@ envir: cloud
 client: online
 ---
 
-# Document table
-
 Document fields. Key constants are in `BulkUpdateSystem.DocumentFieldValueKeys`.
 
 <table>

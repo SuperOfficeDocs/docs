@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# SuperOffice NuGet packages
-
 Reference for SuperOffice NuGet packages.
 
 ## SuperOffice.NetServer.Core

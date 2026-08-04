@@ -1,6 +1,6 @@
 ---
 uid: address-howto-ws
-title: Address localization
+title: Address - web services
 description: Working with addresses in web services.
 keywords: ['address']
 author: Bergfrid Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/globalization-and-localization/address/howto/services/index
   - /en/api/netserver/web-services/howto/address/index
 ---
-
-# Address - web services
 
 * [Get address][1]
 * [Set address][2]

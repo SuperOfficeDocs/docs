@@ -14,8 +14,6 @@ language: en
 index: true
 ---
 
-# SuperOffice Globalization
-
 SuperOffice has great support for globalization by providing a culture-neutral and language-neutral user interface that supports localized labels and regional data throughout the application, as well as exposing an API to augment string resources throughout the platform.
 
 ## Globalization

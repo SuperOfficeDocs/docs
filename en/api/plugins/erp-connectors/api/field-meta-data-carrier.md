@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/erp-connectors/api/field-meta-data-carrier
 ---
 
-# FieldMetadataInfo
-
 This carrier is a full description of a field as used and interpreted by the sync connector. `FieldMetadataInfo` objects are used in 2 areas of Erp Sync:
 
 * Populate a set of configuration controls for setting up a sync connection. The connector will supply a set of `FieldMetadataInfo` objects that describe the set of configuration data needed to set up a working sync connection.

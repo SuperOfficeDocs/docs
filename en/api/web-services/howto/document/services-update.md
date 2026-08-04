@@ -16,8 +16,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/document/services-update
 ---
 
-# How to update a document in SO_ARC
-
 To modify a document, we will first have to [download the document to a temporary folder][1] so that it is available locally for the user to make modifications. Once modified, the temporary file is uploaded to the document archive folder.
 
 In the example below, the original file extension is extracted and then appended to the end of the temporary file name.

@@ -12,8 +12,6 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/api/netserver/web-services/howto/flows/rest-save-flow
 ---
 
-# Save email flow
-
 The following example illustrates a [default email flow][1] featuring [triggers][2] and [steps][3], demonstrating the creation of a new flow with these components.
 
 This action creates a flow within SuperOffice, and the returned object includes the `EmailFlowId`, which uniquely identifies the flow. Additionally, you can retrieve an existing flow using the [GetEmailFlow Agent][4].

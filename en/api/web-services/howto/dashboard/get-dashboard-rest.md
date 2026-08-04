@@ -13,8 +13,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/dashboard
 ---
 
-# Working with dashboards
-
 In this how-to guide, you will learn how to get all dashboards, and all tiles for a given dashboard.
 
 The code in this guide represents HTTP requests to the SuperOffice REST API. You can use any programming language to make these requests. The examples in this guide use the `GET` method to retrieve data from the SuperOffice database.

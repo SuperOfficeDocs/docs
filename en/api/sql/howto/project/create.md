@@ -1,6 +1,6 @@
 ---
 uid: project-create-sql
-title: Add project
+title: Adding a project
 description: How to add and examine projects in API with raw SQL.
 keywords: ['project', 'SQL', 'API', 'project_number']
 author: Bergfrid Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/sql/howto/project/create
 hidden: true
 ---
-
-# Adding a project
 
 When you register a project in SuperOffice, quite a bit happens behind the scenes.
 

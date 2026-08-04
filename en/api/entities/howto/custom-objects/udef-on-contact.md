@@ -13,8 +13,6 @@ redirect_from:
 hidden: true
 ---
 
-# Udef on contact
-
 The `UdefHelper` uses the `ProgId` field to identify a user-defined field. If `UdefField.ProgId` is blank, then the `UdefField.Identity` field is used, along with a prefix ("SuperOffice:").
 
 The progid and the identity are both constant over the lifetime of a user-defined field, even field-name or type changes.

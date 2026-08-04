@@ -13,8 +13,6 @@ redirect_from:
 hidden: true
 ---
 
-# SAINT - row
-
 Sales are grouped into different statuses, like open, sold, lost or unknown. In the [countervalue][1] table, this is represented under the field `sale_status`. Sales are even grouped under different amount classes like small, medium, large, and extra-large.
 
 ## Available code samples

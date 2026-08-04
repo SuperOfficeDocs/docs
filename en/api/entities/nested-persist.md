@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/entities/nested-persist
 hidden: true
 ---
 
-# NetServer Nested Persist
-
 The Nested Persist concept is a concept that allows for multiple related objects to be saved within the same transaction. All objects participating in this coordinated save needs to implement the INestedPersist Interface.
 
 ## INestedPersist

@@ -1,5 +1,6 @@
 ---
-title: IntellisyncConnector element
+title: IntellisyncConnector element (Legacy - SuperOffice only)
+sidebarTitle: "IntellisyncConnector element"
 uid: ns_config_intellisyncconnector
 description: NetServer configuration settings used by SoIntellisyncConnector.
 date: 12.07.2021
@@ -10,8 +11,6 @@ deployment: onsite
 version: 6
 redirect_from: /en/api/netserver/config/intellisyncconnector
 ---
-
-# IntellisyncConnector element (Legacy - SuperOffice only)
 
 Not used in version 7 or higher.
 

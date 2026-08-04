@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Diary - OSQL
-
 ## Create appointments
 
 * [Create appointment][1]

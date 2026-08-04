@@ -1,5 +1,6 @@
 ---
-title: Sync element
+title: NetServer Sync element (legacy SuperOffice only)
+sidebarTitle: "Sync element"
 uid: ns_config_sync
 description: NetServer configuration values related to SuperOffice Sync (SoSync).
 date: 12.07.2021
@@ -9,8 +10,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/sync
 ---
-
-# NetServer Sync element (legacy SuperOffice only)
 
 Configuration values related to SuperOffice Sync (SoSync).
 

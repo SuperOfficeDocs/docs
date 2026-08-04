@@ -10,8 +10,6 @@ envir: cloud
 client: online
 ---
 
-# Contact Table
-
 Contact fields. Key constants are in `BulkUpdateSystem.ContactFieldValueKeys`.
 
 <table>

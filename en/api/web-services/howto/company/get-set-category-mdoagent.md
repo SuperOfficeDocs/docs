@@ -1,6 +1,7 @@
 ---
 uid: get-set-category-mdoagent
 title: How to get the category list and set category on a contact
+sidebarTitle: "Get/set category (MDOAgent)"
 description: How to get the category list and set Contact.Category from combo box
 keywords: ['MDOAgent']
 author: Bergfrid Dias
@@ -10,8 +11,6 @@ redirect_from:
   - /en/company/howto/services/get-set-category-mdoagent
   - /en/api/netserver/web-services/howto/company/get-set-category-mdoagent
 ---
-
-# How to get the category list and set category on a contact
 
 Here we have used 2 events to get the job done. We have used one event to populate the control with categories from the list that we have retrieved and the second one for setting the category of the contact and saving the entity.
 

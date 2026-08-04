@@ -10,8 +10,6 @@ platform: web
 redirect_from: /en/authentication/online/sign-in-user/native-apps
 ---
 
-# OpenID Connect native apps
-
 The main benefit of using OAuth2 Native App flow on Windows and mobile devices is having that single sign-on experience. When the browser is opened and the user navigates to SuperOffice, SuperID can access the client's SuperOffice cookie. When SuperID verifies the user is already authenticated, the user will bypass re-entering credentials and will simply be redirected back to the client and have a great single sign-on experience.
 
 With regards to the [OAuth2 native app flow][1], the application must establish a listener, preferably on the [redirection endpoint][2] IP address, and waits for the response in the default browser. While localhost can be used, it is NOT recommended. Here is a [quote from the specification:][3]

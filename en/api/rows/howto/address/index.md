@@ -1,6 +1,6 @@
 ---
 uid: address-howto-rows
-title: Address localization
+title: Address - rows
 description: Working with addresses as rows.
 keywords: ['address']
 author: Bergfrid Dias
@@ -12,8 +12,6 @@ redirect_from:
   - /en/api/netserver/rows/howto/address/index
 hidden: true
 ---
-
-# Address - rows
 
 * [Update address with sentry][1]
 

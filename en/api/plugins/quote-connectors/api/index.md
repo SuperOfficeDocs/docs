@@ -1,11 +1,9 @@
 ---
-title: Quote Connector API
+title: .net APIs
 description: Quote Connector API
 date: 09.02.2022
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/index
 ---
-
-# .net APIs
 
 For on-site installations.
 

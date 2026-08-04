@@ -8,8 +8,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/isaleinfo
 ---
 
-# ISaleInfo
-
 Read-only sale information.
 
 How sale and quote conceptually fit together:

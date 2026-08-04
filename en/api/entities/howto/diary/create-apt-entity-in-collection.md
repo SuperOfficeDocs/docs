@@ -1,6 +1,7 @@
 ---
 uid: create-appointment-entity-in-collection
 title: Create an Appointment entity through an entity collection
+sidebarTitle: "Create an appointment (entity collection)"
 description: How to create an Appointment entity through an entity collection at the NetServer data layer.
 keywords: ['diary', 'calendar', 'appointment', 'API', 'entity', 'collection', 'AppointmentCollection']
 author: Bergfrid Skaara Dias
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/diary/create-apt-entity-in-collection
 hidden: true
 ---
-
-# Create an Appointment entity through an entity collection
 
 The `SuperOffice.CRM.Entities` namespace exposes [entity collections][1] such as `AppointmentCollection` and `PersonCollection`. It is therefore possible to create an `Appointment` entity and assign it to the collection and thereby saving the collection the Appointment entity will be saved.
 

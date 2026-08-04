@@ -1,6 +1,6 @@
 ---
 uid: get-catlist-sql
-title: Get list of categories
+title: Get all categories
 description: How to get all categories with raw SQL.
 keywords: ['category', 'CategoryGroupLink', 'contact']
 author: Bergfrid Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/sql/howto/company/get-catlist-sql
 hidden: true
 ---
-
-# Get all categories
 
 ```SQL
 SELECT l.category_id, l.name, l.tooltip FROM Category l WHERE l.deleted = 0 ORDER BY l.rank

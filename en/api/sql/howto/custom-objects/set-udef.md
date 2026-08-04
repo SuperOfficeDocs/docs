@@ -14,8 +14,6 @@ redirect_from:
 hidden: true
 ---
 
-# Set a user-defined field
-
 ## Contact update
 
 ```SQL

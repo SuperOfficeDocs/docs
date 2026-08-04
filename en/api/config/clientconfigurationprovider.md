@@ -1,5 +1,6 @@
 ---
-title: ClientConfigurationProvider
+title: NetServer ClientConfigurationProvider element (SuperOffice only)
+sidebarTitle: "ClientConfigurationProvider element"
 uid: ns_config_client_configuration
 description: NetServer configuration for the Web client configuration data provider.
 date: 12.17.2021
@@ -10,8 +11,6 @@ deployment: onsite
 platform: web
 redirect_from: /en/api/netserver/config/clientconfigurationprovider
 ---
-
-# NetServer ClientConfigurationProvider element (SuperOffice only)
 
 Configuration for the Web client configuration data provider. The paths tell the client where additional configuration files are located.
 

@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/diary/index
 ---
 
-# Diary - services
-
 ## Create appointments
 
 * [Create appointment][1]

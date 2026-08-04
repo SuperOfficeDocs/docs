@@ -1,5 +1,5 @@
 ---
-title: REST Web API search
+title: REST WebAPI search
 uid: odata_rest_api_search
 description: REST Web API search using ODATA
 author: Bergfrid Dias
@@ -8,8 +8,6 @@ keywords: ['search', 'ODATA', 'REST', 'WebAPI', 'web services']
 content_type: concept
 redirect_from: /en/api/netserver/search/odata
 ---
-
-# REST WebAPI search
 
 SuperOffice REST APIs expose search endpoints that API consumers use to submit search queries.
 

@@ -1,5 +1,5 @@
 ---
-title: IAuthorization
+title: About IAuthorization
 uid: iauthorization-intro
 description: "Introduction to IAuthorization and its built-in implementations."
 author: Anthony Yates
@@ -8,8 +8,6 @@ keywords: ['API', 'web services', 'proxy', 'WebAPI', 'REST', 'IAuthorization', '
 content_type: concept
 redirect_from: /en/api/netserver/web-services/proxies/superoffice-webapi/iauthorization
 ---
-
-# About IAuthorization
 
 There are cases where a user's credentials will expire. It's probably easiest to say that the only case where credentials will not expire at runtime is using `AuthorizationUsernamePassword`. All other `IAuthorization` implementations contain **time-sensitive credentials**.
 

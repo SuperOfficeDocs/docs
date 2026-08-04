@@ -1,5 +1,6 @@
 ---
-title: SuspendedSite element
+title: NetServer SuspendedSite element (SuperOffice only)
+sidebarTitle: "SuspendedSite element"
 uid: ns_config_suspendedsite
 description: NetServer configuration values related to the suspended state.
 date: 12.07.2021
@@ -9,8 +10,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/suspendedsite
 ---
-
-# NetServer SuspendedSite element (SuperOffice only)
 
 Configuration values related to the suspended state.
 

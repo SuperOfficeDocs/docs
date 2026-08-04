@@ -8,8 +8,6 @@ content_type: reference
 deployment: onsite
 ---
 
-# Encryption
-
 We used to have license info in the company and associate tables; password in associate; and diverse and sundry hashes and checks
 The hashes remain, but with different contents
 

@@ -1,6 +1,6 @@
 ---
 uid: api-person-sql
-title: Person - SQL
+title: Contact - SQL
 description: Working with contacts (person) in API with raw SQL.
 keywords: ['person', 'contact', 'SQL', 'API']
 author: Bergfrid Skaara Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/sql/howto/contact/index
 hidden: true
 ---
-
-# Contact - SQL
 
 * [Get persons from contact][1]
 * [Update person][2]

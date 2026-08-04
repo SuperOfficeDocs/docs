@@ -10,8 +10,6 @@ envir: cloud
 client: online
 ---
 
-# Appointment table
-
 Appointment fields. Key constants are in `BulkUpdateSystem.AppointmentFieldValueKeys`.
 
 <table>

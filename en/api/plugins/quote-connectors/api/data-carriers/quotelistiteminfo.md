@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quotelistiteminfo
 ---
 
-# QuoteListItemInfo
-
 One line in a list, consisting of a key, a name, a tooltip, and an icon. Lists are "flat" with no headings.
 
 ## String ERPQuoteListItemKey

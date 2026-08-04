@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/plugins/sentry/create-sentry-plugin
 hidden: true
 ---
 
-# Create your own Sentry plugin
-
 In NetServer there are many [built-in sentry mechanisms][1] like contact sentry, person sentry, and project sentry. Our intention here is to develop our own sentry mechanisms on top of what already is in NetServer.
 
 ## Example objective and data

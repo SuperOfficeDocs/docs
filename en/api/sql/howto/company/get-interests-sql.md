@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Get interests for contact
-
 **To get a list of interests checked off for a contact:**
 
 ```SQL

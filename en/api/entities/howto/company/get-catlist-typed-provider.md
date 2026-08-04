@@ -1,6 +1,7 @@
 ---
 uid: get-category-list-typed-provider
 title: Get a CategoryList through typed list providers
+sidebarTitle: "CategoryList via typed providers"
 description: Get a CategoryList through typed list providers
 keywords: ['category', 'list provider', 'CategoryList']
 author: Tony Yates
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/company/get-catlist-typed-provider
 hidden: true
 ---
-
-# Get a CategoryList through typed list providers
 
 In the `SoList` class, there are specific methods to create different types of list providers. Hence there is a method specialized in creating `CategoryList` providers too.
 

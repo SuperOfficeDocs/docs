@@ -1,6 +1,6 @@
 ---
 uid: api-person-row
-title: Person - row
+title: Contact - row
 description: Working with contacts (person) in API with rows
 keywords: ['person', 'contact', 'row', 'API']
 author: Bergfrid Skaara Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/rows/howto/contact/index
 hidden: true
 ---
-
-# Contact - row
 
 * [Get persons from contact][1]
 * [Update person][2]

@@ -14,8 +14,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/company/index
 ---
 
-# Contact - services
-
 * [Create contact][1]
 * [Get contact][4]
 * [Get all contacts (REST)][5]

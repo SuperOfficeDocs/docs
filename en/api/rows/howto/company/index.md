@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Contact - row
-
 * [Create contact (Row)][1]
 * [Create contact (Rows)][2]
 * [Add new contact interest][3]

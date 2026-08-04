@@ -1,13 +1,12 @@
 ---
 title: Background computing and batch processing
+sidebarTitle: "Batch processing"
 uid: background_computing_and_batch_processing
 description: Background computing and batch processing
 author: SuperOffice Product and Engineering
 date: 04.15.2009
 content_type: tutorial
 ---
-
-# Background computing and batch processing
 
 This article will introduce you to the high-level aspects of SuperOffice web background computing, drill down into how built-in tasks get started and demonstrate how this extensibility point can be leveraged for other applications.
 

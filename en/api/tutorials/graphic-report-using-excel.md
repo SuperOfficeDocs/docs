@@ -7,8 +7,6 @@ date:
 content_type: tutorial
 ---
 
-# Graphic report using Excel
-
 This tutorial shows how we can make use of NetServer and retrieve data and generate an excel report based on such data.
 
 1. Use archive provider to read information

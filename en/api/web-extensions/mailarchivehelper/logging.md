@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 ---
 
-# Logging
-
 Logging is done using the `Util.LogDebugInfo` method.
 
 ```csharp

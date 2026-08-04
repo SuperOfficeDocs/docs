@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/alias
 hidden: true
 ---
 
-# Alias
-
 ```SQL
 SELECT COUNT(T0.associate_id) as Test
 FROM CRM5.associate T0

@@ -11,8 +11,6 @@ redirect_from: /en/api/netserver/plugins/sentry/use-sentry-plugin
 hidden: true
 ---
 
-# Using the basic Sentry plugin
-
 For us to use [the plugin that we have developed][1], first we have to tell NetServer that we have a Plugin that will add to the existing functionality. We have to do this through the config file of our application.
 
 Below is the section that we have to modify in the config file.

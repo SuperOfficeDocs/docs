@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/company/get-catlist-listagent
 ---
 
-# Get a CategoryList using the ListAgent
-
 ```csharp
 using SuperOffice;
 using SuperOffice.CRM.Services;

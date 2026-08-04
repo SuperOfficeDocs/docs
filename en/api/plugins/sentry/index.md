@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/plugins/sentry/index
 hidden: true
 ---
 
-# Sentry plugins
-
 Plugins are created using a `Factory` class based on the `IPlugin` interface and a plugin attribute. When creating a Sentry plugin, use the `ISentryPlugin` interface located in the `SuperOffice.CRM.Security` namespace.
 
 A sentry plugin works out what information a particular user is allowed to see, and what the user can do with the information. A sentry plugin may rewrite the [OSQL queries][1] to get more information so it can make its decision.

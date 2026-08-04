@@ -12,8 +12,6 @@ redirect_from: /en/api/netserver/entities/collections
 hidden: true
 ---
 
-# Collections
-
 Some Entities consist of a collection of Entities as one of its properties. The Entity layer exposes us to Entity collections as well.
 
 For example, the `Contact` Entity has a property called `Persons`, which is a **Collection of Person Entities**. In other words, the `Contact.Persons` property is of type `PersonCollection`

@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Create a Contact entity
-
 Using the `Contact` [entity][1] exposed in the `SuperOffice.CRM.Entities` namespace is one of the easiest ways to create a follow-up, as shown in the example below.
 
 ## Code

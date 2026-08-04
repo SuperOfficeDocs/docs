@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/count
 hidden: true
 ---
 
-# COUNT
-
 ```SQL
 SELECT Count(T0.associate_id), T0.Name FROM CRM.associate T0
 WHERE (T0.associate_id >= 20 AND T0.associate_id <= 30 )

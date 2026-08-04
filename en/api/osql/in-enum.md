@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/in-enum
 hidden: true
 ---
 
-# Enum values with IN
-
 The following example shows how to add enum-values with IN. The following SQL query is converted to SuperOffice Objectified SQL.
 
 ```SQL

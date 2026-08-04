@@ -8,8 +8,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/erp-connectors/api/ierpconnector
 ---
 
-# IErpConnector
-
 A sync connector (plugin to the connector web-service host) will need to implement the`IErpConnector` interface. This interface contains methods needed to both set up and save a sync connection and to retrieve and save ERP actors. The`IErpConnector` interface, along with all related classes and interfaces are contained in *SuperOffice.Plugins.DLL*.
 
 If you do not want to use the web-service host, you will need to implement the SOAP web service interface directly. The`IERpConnectorWS` interface is identical in functionality but uses SOAP definitions rather than .Net definitions.

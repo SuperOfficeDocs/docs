@@ -10,8 +10,6 @@ redirect_from: /en/api/security/sentry/osql/index
 hidden: true
 ---
 
-# Sentry and distinct
-
 The automatic manipulation of queries by automatically added sentries can cause unexpected side-effects, especially when the DISTINCT operator is involved.
 
 Here is an example that shows how a join with the `ProjectMember` table is used to make a restriction on which projects are to be returned. DISTINCT has been added to avoid returning the same project twice.

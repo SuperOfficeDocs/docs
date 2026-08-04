@@ -1,6 +1,6 @@
 ---
 uid: netserver-reference
-title: NetServer API reference
+title: NetServer API
 description: NetServer is a multi-tiered database access layer that bridges communication between clients and the SuperOffice database.
 author: AnthonyYates
 date: 02.02.2022
@@ -9,8 +9,6 @@ topic: reference
 envir: cloud, onsite
 client: win, web
 ---
-
-# NetServer API
 
 NetServer is a multi-tiered data access library for the SuperOffice database. Whether deploying a solution to a local SuperOffice database installation or operating in a distributed environment, NetServer exposes an array of application programming interface (API) approaches to facilitate a wide range of solution implementations. Although the terrain is vast and complex, and at first sight, be can somewhat intimidating, the NetServer API tailors to a wide variety of developers by layering the architecture in various intuitive abstractions.
 

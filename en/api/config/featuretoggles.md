@@ -1,5 +1,5 @@
 ---
-title: FeatureToggles element
+title: NetServer FeatureToggles element
 uid: ns_config_featuretoggles
 description: NetServer FeatureToggles element
 date: 12.07.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/featuretoggles
 ---
-
-# NetServer FeatureToggles element
 
 Configuration values for feature toggles.
 

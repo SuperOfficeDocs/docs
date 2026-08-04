@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# Preference dialog
-
 The preference dialog is an EXE file that is started by user action (like a menu item in the mail client). Your plugin should use the `MailArchiveHelper.ShowOptionsDialog` method to launch the dialog.
 
 ## Parameters

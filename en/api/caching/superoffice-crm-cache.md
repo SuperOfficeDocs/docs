@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/caching/superoffice-crm-cache
 ---
 
-# SuperOffice.CRM.Cache
-
 This is one of the namespaces related to the caching provided by the NetServer.
 
 The namespace exposes the following classes to the user:

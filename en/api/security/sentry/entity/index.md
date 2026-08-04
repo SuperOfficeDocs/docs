@@ -9,8 +9,6 @@ deployment: onsite
 hidden: true
 ---
 
-# NetServer scenarios
-
 In NetServer the results of improper data access can be different from scenario to scenario. Let's look at a few examples of sentry and discuss what will happen in a case of unauthorized data access and lets how we can avoid them.
 
 ## Scenario 1

@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/iquoteconnector2
 ---
 
-# IQuoteConnector2
-
 Enhanced Quote Connector abilities: modify state changes (approvals)
 
 ## QuoteVersionResponseInfo OnQuoteVersionRequestApproval(QuoteVersionContextInfo context)

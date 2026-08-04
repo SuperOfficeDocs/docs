@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/company/add-catlist-item-rest
 ---
 
-# Add a category list item using REST
-
 ```javascript
 var item = {}
 item.Name = "Created by unit test";

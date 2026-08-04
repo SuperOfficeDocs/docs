@@ -1,5 +1,5 @@
 ---
-title: UDEFHelper class
+title: How to use the UDFHelper class
 uid: using_udefhelper
 description: How to use the UDFHelper class
 author: Tony Yates
@@ -13,8 +13,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/custom-objects/using-udefhelper
 hidden: true
 ---
-
-# How to use the UDFHelper class
 
 This code demonstrates how to use the [UDFHelper][1] class to retrieve the value of all user-defined fields.
 

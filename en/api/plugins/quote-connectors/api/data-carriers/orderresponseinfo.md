@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/orderresponseinfo
 ---
 
-# OrderResponseInfo
-
 Specialized version of `PluginResponseInfo` for `GetOrderState`.
 
 Inherits `PluginResponseInfo`.

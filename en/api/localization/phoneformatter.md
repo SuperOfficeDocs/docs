@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/phoneformatter
 language: en
 ---
 
-# Phone formatter
-
 The `PhoneFormatter` class contains various methods used to format phone numbers.
 
 ## GetInternationalNumber

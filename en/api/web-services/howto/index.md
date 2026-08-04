@@ -12,8 +12,6 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/api/netserver/web-services/howto/index
 ---
 
-# Working web services and REST
-
 * [User-defined fields][1]
 * [Extra tables][2]
 * [Documents][4]

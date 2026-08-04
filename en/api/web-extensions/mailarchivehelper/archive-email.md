@@ -10,8 +10,6 @@ platform: web, win
 deployment: onsite
 ---
 
-# Archive email message
-
 ```vb
 Public Function GetMailArchiveHelper() As MailArchiveHelper
   Dim helper As New MailArchiveHelper()

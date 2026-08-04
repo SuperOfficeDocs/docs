@@ -1,5 +1,6 @@
 ---
-title: RIGHT OUTER JOIN
+title: SuperOffice Objectified SQL - RIGHT OUTER JOIN
+sidebarTitle: "OSQL: RIGHT OUTER JOIN"
 uid: osql_join_outer
 description: SuperOffice Objectified SQL - RIGHT OUTER JOIN
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ content_type: concept
 redirect_from: /en/api/netserver/osql/outerjoin
 hidden: true
 ---
-
-# SuperOffice Objectified SQL - RIGHT OUTER JOIN
 
 You may need to use **joins** in database queries very often. The examples below show how the following SQL query is converted to SuperOffice Objectified SQL.
 

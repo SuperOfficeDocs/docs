@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/foreign-keys/set-and-get
 hidden: true
 ---
 
-# How to set and get foreign keys
-
 The following example shows how to set a foreign key to a Contact and how to retrieve a Contact using its foreign key.
 
 ## Code

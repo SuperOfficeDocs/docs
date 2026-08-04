@@ -1,6 +1,7 @@
 ---
 uid: update-person-rows
 title: Update a person with a new name, address, position using rows
+sidebarTitle: "Update a person (rows)"
 description: How to update a person with new name, address, position using rows.
 keywords: ['person', 'contact', 'API', 'rows', 'PersonRow', 'update', 'AddressRow']
 author: Tony Yates
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/rows/howto/contact/update-person-rows
 hidden: true
 ---
-
-# Update a person with a new name, address, position using rows
 
 Now let's focus on how we can update the person's name, position, and address using rows.
 

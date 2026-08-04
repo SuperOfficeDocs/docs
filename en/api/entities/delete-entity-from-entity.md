@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/entities/delete-entity-from-entity
 hidden: true
 ---
 
-# Delete an Entity through an Entity
-
 Properties of Entities can themselves be Entities. Since we can access properties of such an entity, we can also delete the Entity.
 
 This example shows the use of the `Delete()` method to delete an Entity property of a `Sale` Entity.

@@ -1,5 +1,6 @@
 ---
 title: Retrieve an Entity property through an Entity
+sidebarTitle: "Get an entity property via entity"
 uid: get_entity_from_entity
 description: Retrieve an Entity property through an Entity
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/entities/get-entity-from-entity
 hidden: true
 ---
-
-# Retrieve an Entity property through an Entity
 
 The `Sale` Entity contains a property that in itself is an Entity. Examples of such include Contact and Person properties. These properties consist of different properties which could be of different data types such as String, Double, Integer, Row, and DateTime.
 

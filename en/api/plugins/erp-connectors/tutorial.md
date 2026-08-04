@@ -8,8 +8,6 @@ content_type: tutorial
 redirect_from: /en/api/netserver/plugins/erp-connectors/tutorial
 ---
 
-# Tutorial (company)
-
 This tutorial walks you through connecting, working with, and disconnecting SuperOffice entities (company, person, project).
 
 We'll use the following values throughout:

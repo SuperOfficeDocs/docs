@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/rows/update-row
 hidden: true
 ---
 
-# Update basic properties of a Row
-
 Before updating a Row, it must be retrieved by using the `Idx` class.
 
 This example shows how the properties of a Row are updated.

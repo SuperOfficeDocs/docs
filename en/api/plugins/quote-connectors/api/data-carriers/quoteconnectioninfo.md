@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteconnectioninfo
 ---
 
-# QuoteConnectionInfo
-
 A **quote connection** is set up in the SuperOffice Admin client. It collects the parameters needed to talk to a single ERP client and gives it a name and an ID.
 
 Quote connections will be stored in the table`QuoteConnection` in the CRM database.

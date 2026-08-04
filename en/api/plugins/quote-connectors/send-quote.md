@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/send-quote
 ---
 
-# Sending quotes
-
 ![Publish/send a quote dialog -screenshot][img1]
 
 Before the quote is sent, the quote connector validates the quote. The quote connector may reject the quote, or [ask that it be approved](./approve-quote) by an authorized user.

@@ -1,6 +1,6 @@
 ---
 uid: sale-howto-ws
-title: Sale - web service
+title: Sale - web services
 description: Working with sales in SuperOffice web services.
 keywords: ['sale', 'API', 'web services']
 author: Bergfrid Skaara Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/sale/howto/services/index
   - /en/api/netserver/web-services/howto/sale/index
 ---
-
-# Sale - web services
 
 * [Link sale to follow-up][1]
 

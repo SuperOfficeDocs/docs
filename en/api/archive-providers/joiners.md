@@ -9,8 +9,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/joiners
 ---
 
-# Joiners
-
 If one draws a graph that represents a query as a hierarchy, where tables (either as return fields or restrictions) are nodes and joins are edges, then an `ExtenderBase` class will represent a node, and a `Joiner` class will be an edge. Since joiners inherit from extender bases, an instance of a joiner is equivalent to a node plus its (single) upward-pointing edge.
 
 For example, suppose we wish to fetch information about sales plus connected contacts and persons. The SQL query might look like this:

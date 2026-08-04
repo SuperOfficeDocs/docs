@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Diary - entity
-
 ## Create appointments
 
 * [Create appointment][1]

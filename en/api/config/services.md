@@ -1,5 +1,5 @@
 ---
-title: Services element
+title: NetServer Services element
 uid: ns_config_services
 description: NetServer Services element
 date: 12.09.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/services
 ---
-
-# NetServer Services element
 
 Configuration settings used to manage SuperOffice web services. It specifies whether an application is working locally or remotely.
 

@@ -11,8 +11,6 @@ platform: web
 redirect_from: /en/authentication/online/sign-in-user/auth-code-flow
 ---
 
-# Authorization Code flow
-
 Authorization Code flow is the best flow to use for web applications. When it was first introduced Authorization code flow required the client_secret. However, on a windows or mobile application that causes security problems. Proof Key for Code Exchange (PKCE) ([rfc7636][5]) was introduced as extra layer of security on top of Authorization Code flow, and provides a way for native applications to use Authorization Code flow without exposing the client_secret in a vulnerable way.
 
 <Note>

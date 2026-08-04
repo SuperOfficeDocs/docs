@@ -1,5 +1,5 @@
 ---
-title: Messaging element
+title: NetServer Messaging element
 uid: ns_config_messaging
 description: NetServer configuration values for SuperOffice.CRM.Messaging and the SoMessaging.dll.
 date: 12.07.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/messaging
 ---
-
-# NetServer Messaging element
 
 Configuration values for `SuperOffice.CRM.Messaging` and the *SoMessaging.dll*.
 

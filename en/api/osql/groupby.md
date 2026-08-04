@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/groupby
 hidden: true
 ---
 
-# GroupBy
-
 When retrieving data, it is necessary to group and order the data.
 
 ```SQL

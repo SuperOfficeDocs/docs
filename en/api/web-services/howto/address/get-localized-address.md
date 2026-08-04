@@ -12,8 +12,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/address/get-localized-address
 ---
 
-# Read the LocalizedAddress
-
 Reading the `LocalizedAddress` data structure is very straightforward. Simply loop over the `LocalizedField` lines and print out each field on each line.
 
 The following code example demonstrates this using a `ContactAgent` to get a company and then looping over and printing out each address field.

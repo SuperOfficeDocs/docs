@@ -10,8 +10,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/base-and-helper-classes
 ---
 
-# Base and helper classes
-
 While it is quite possible to implement the `IArchiveProvider` interface *ab initio*, this is seldom optimal. There exists a lot of code applicable to almost any kind of provider or extender, either as a publicly available base class or as a helper:
 
 * Functionality that is applicable in many contexts, such as the collection and management of column definitions (feeding `GetAvailableColumns`, and keeping track of what was requested in `SetDesiredColumns`) is available as a helper class.

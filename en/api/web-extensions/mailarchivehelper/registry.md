@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 ---
 
-# Registry
-
 The registry is used for storing the MailLink preferences. Each mail link sets up its own section in the registry.
 
 Each plugin has its own registry key:

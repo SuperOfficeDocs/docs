@@ -1,5 +1,5 @@
 ---
-title: The Dynamic Provider
+title: The Dynamic Provider - the dot syntax
 uid: rest_api_search_dynamic
 description: REST Web API dynamic dot-syntax search provider
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ date: 2023-04-26
 content_type: howto
 redirect_from: /en/api/netserver/search/odata/dynamic-provider
 ---
-
-# The Dynamic Provider - the dot syntax
 
 This archive provider is as close to SQL queries as you can get. There is plenty of scope for shooting yourself in the foot. We provide all the built-in archive-providers so you don't have to deal with the
 complexity of the

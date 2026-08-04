@@ -8,8 +8,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/quote-connectors/discounts
 ---
 
-# Discounts
-
 ## ERP discounts and user discounts
 
 ![36][img2]

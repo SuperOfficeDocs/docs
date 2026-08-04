@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/web-services/endpoints/get-webapi-version
 ---
 
-# How to get the API version
-
 You can get the version number and build date from the **API endpoint**: `/api`
 
 This returns a block with the supported versions and the NetServer version number.

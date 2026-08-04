@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/enums/valueoverrideinfo
 ---
 
-# Enum ValueOverrideInfo
-
 Which field the user changed last. This helps the calculation to calculate the other fields correctly.
 
 | None | 0 |

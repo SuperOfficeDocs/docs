@@ -9,8 +9,6 @@ content_type: concept
 hidden: true
 ---
 
-# Sentry
-
 Sentry is automatically applied to rows as well as entities.
 
 * Attempting to modify a read-only object will throw an exception.

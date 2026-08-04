@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/create-quote
 ---
 
-# Creating a quote
-
 ![Create quote -screenshot][img1]
 
 1. When the user creates a quote by clicking the CREATE A NEW QUOTE link, the following happens.

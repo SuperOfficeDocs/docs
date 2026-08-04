@@ -1,5 +1,6 @@
 ---
-title: CssSprite element
+title: NetServer CssSprite element (SuperOffice only)
+sidebarTitle: "CssSprite element"
 uid: ns_config_csssprite
 description: NetServer configuration for the Web client CssSprite generator.
 date: 12.17.2021
@@ -10,8 +11,6 @@ deployment: onsite
 platform: web
 redirect_from: /en/api/netserver/config/csssprite
 ---
-
-# NetServer CssSprite element (SuperOffice only)
 
 Configuration for the Web client **CssSprite** generator. Used by SuperOffice only.
 

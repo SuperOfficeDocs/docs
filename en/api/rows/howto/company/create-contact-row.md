@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Create a contact row
-
 To create a `ContactRow` we use the `SuperOffice.CRM.Rows` namespace.
 
 The following example shows how we make create a contact using the `ContactRow` class.

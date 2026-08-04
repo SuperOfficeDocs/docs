@@ -7,4 +7,3 @@ content_type: concept
 redirect_from: /en/api/netserver/mdo-providers/index
 ---
 
-# MDO providers

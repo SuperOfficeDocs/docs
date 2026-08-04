@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/so-data-reader
 hidden: true
 ---
 
-# SoDataReader class
-
 The SO Data Reader class implements the `IDataReader` interface. Therefore, SO Reader has all the capabilities of a normal ADO.Net reader and it has more functions built into it by the NetServer.
 
 Let's take the SO Date Reader code snippet of the select example.

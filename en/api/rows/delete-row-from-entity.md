@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/rows/delete-row-from-entity
 hidden: true
 ---
 
-# Delete a Row through an Entity
-
 We are aware that some properties of an Entity are of Row type. Hence, by using the `Delete` method we can delete a Row as well. In this case, it will delete an entire row from the database.
 
 This example shows the use of the `Delete()` method to delete a Row property of a `Sale` Entity.

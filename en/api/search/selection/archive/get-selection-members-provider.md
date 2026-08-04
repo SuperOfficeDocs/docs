@@ -1,5 +1,6 @@
 ---
-title: Retrieve members of a specific selection
+title: How to retrieve members of a specific selection using archive provider
+sidebarTitle: "Selection members (archive provider)"
 uid: get_selection_members_provider
 description: How to retrieve members of a specific selection using archive provider
 author: SuperOffice Product and Engineering
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/search/selection/archive/get-selection-members-provider
   - /en/api/netserver/search/selection/archive
 ---
-
-# How to retrieve members of a specific selection using archive provider
 
 This method of retrieving all members of a Selection is with the use of the `SelectionProvider` that is shown in the example below.
 

@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# AppointmentMatrix
-
 The [AppointmentMatrix][1] is used to manage complex appointments: [invitations][2] and [recurrences][3].
 
 ```csharp

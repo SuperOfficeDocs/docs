@@ -9,8 +9,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/interfaces
 ---
 
-# Interface definition and composition
-
 The high-level interfaces for the archive provider system are shown in the following figure.
 
 ![archive provider system high-level interfaces][img1]

@@ -1,6 +1,7 @@
 ---
 uid: get-preferences-ws
-title: Get preferences using services
+title: Get the current value of a given preference
+sidebarTitle: "Get a preference (PreferenceAgent)"
 description: How to get preferences using services
 keywords: ['preference', 'PreferenceSpec', 'PreferenceAgent']
 author: digitaldiina
@@ -13,8 +14,6 @@ topic: user preferences
 language: en
 redirect_from: /en/admin/user-preferences/howto/get-preferences-preferenceagent
 ---
-
-# Get the current value of a given preference
 
 We may need to see what values are set to certain preferences like the first day of the week. The example below retrieves the value for `SundayFirstDay` for the logged-in user.
 

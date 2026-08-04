@@ -1,5 +1,6 @@
 ---
-title: foreignkey
+title: ForeignKeys - to fluent or not to fluent, that is the question
+sidebarTitle: "ForeignKeys: fluent or not"
 description: ForeignKeys - to fluent or not to fluent, that is the question
 author: Tony Yates
 date: 12.26.2009
@@ -9,8 +10,6 @@ platform: web
 redirect_from: /en/api/netserver/foreign-keys/foreignkey
 hidden: true
 ---
-
-# ForeignKeys - to fluent or not to fluent, that is the question
 
 So there I was, one week to Christmas, and thinking not about what shopping I needed to get done before Christmas, but how to make it easier to work with Foreign Keys.
 

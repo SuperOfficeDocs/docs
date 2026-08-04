@@ -1,5 +1,5 @@
 ---
-title: AccessGateway element
+title: NetServer AccessGateway element
 uid: ns_config_accessgateway
 description: NetServer configuration values related to Access Gateway.
 date: 12.08.2021
@@ -8,8 +8,6 @@ keywords: ['config', 'NetServer', 'web.config', 'AccessGateway', 'BaseUrl']
 content_type: reference
 redirect_from: /en/api/netserver/config/accessgateway
 ---
-
-# NetServer AccessGateway element
 
 Configuration values related to Access Gateway.
 

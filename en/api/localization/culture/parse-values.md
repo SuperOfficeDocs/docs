@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/culture/parse-values
 language: en
 ---
 
-# Parse values to NetServer format
-
 When a user enters a value, it needs to be converted into a formatted value before being sent back to the web service for processing. This conversion needs to happen on the client, where we know the localization settings (the current culture).
 
 If the user types in *1234,5* (a Norwegian floating-point value), we need to turn this into a floating-point value.

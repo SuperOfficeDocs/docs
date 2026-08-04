@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Retrieve a list of people using rows
-
 Let's explore how to retrieve a list of persons using rows.
 
 ```csharp

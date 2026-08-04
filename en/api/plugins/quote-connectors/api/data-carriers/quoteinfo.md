@@ -8,8 +8,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteinfo
 ---
 
-# QuoteInfo
-
 A sale can have a quote and has then a 1-1 relationship with the `QuoteInfo`.
 
 Read-write quote information.

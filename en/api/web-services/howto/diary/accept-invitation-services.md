@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/diary/accept-invitation-services
 ---
 
-# How to accept an invitation (services)
-
 This example shows how to accept an [invitation][2] through the [NetServer services][3] layer with just a few code statements.
 
 We use NetServer providers (plugins created with a Factory class) to retrieve information on invitations for a specific associate.

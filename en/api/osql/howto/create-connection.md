@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/howto/create-connection
 hidden: true
 ---
 
-# How to create a new connection
-
 Before you write queries, first you must create a new connection. This is the basics of SuperOffice Objectified SQL.
 
 The following example demonstrates how this is done. This is used in all other OSQL examples.

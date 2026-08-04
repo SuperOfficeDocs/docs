@@ -1,6 +1,6 @@
 ---
 uid: project-guide-sql
-title: Project guide
+title: Project guides
 description: How to work with project guides in SuperOffice APIs with raw SQL.
 keywords: ['project', 'project management', 'SQL', 'API', 'project guide', 'projtype', 'hasGuide', 'ProjectTypeStatusLink', 'SuggestedAppointment', 'SuggestedDocument']
 author: Bergfrid Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/sql/howto/project/project-guide
 hidden: true
 ---
-
-# Project guides
 
 ## Does my project have a guide?
 

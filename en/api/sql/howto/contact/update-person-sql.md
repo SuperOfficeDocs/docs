@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Update a person
-
 ## Phone numbers added
 
 ```SQL

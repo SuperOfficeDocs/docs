@@ -11,8 +11,6 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/api/netserver/search/odata/using-filters
 ---
 
-# Using filters
-
 ## Filter operators
 
 **ints:** eq =, ne, le, lt, gt, ge, set, equals, greater, less, unequals, between

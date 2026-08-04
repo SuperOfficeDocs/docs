@@ -9,8 +9,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/architecture/sync-service
 ---
 
-# Sync Service
-
 ![x][img1]
 
 SuperOffice clients will all talk to the ERP system via an **ERP Sync Connector** over SOAP. There can be many SuperOffice clients, spread over many different companies, all talking to the same SOAP endpoint.

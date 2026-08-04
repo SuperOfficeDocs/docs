@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteversionresponseinfo
 ---
 
-# QuoteVersionResponseInfo
-
 Is returned when a version with all alternatives and lines can be changed by the connector.
 
 ## QuoteInfo CRMQuote

@@ -1,5 +1,5 @@
 ---
-title: Threading element
+title: NetServer Threading element
 uid: ns_config_Threading
 description: NetServer configuration values related to threading.
 date: 12.07.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/threading
 ---
-
-# NetServer Threading element
 
 Configuration values related to threading.
 

@@ -1,9 +1,7 @@
 ---
 uid: web-application-api
-title: SuperOffice CRM Web Application API
+title: SuperOffice Web Application API
 ---
-
-# SuperOffice Web Application API
 
 The SuperOffice Sales & Marketing web-client can be customized in many different ways. The web-client is built using a reusable set of components. The web-client can be extended with new components and configured to use custom components. The SuperOffice Web Client [nuget package](https://www.nuget.org/packages/SuperOffice.Crm.Web/) adds the needed assemblies to extend the web client. This will also install the SuperOffice web services package and the SuperOffice Core package.
 

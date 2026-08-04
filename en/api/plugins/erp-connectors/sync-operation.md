@@ -8,8 +8,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/sync-operation
 ---
 
-# Erp Sync engine operation
-
 The main engine of Erp Sync has no user interface and is asynchronous, so it will not be triggered by user interaction directly.
 
 In its most common form, it will most likely run as a SuperOffice Travel Gateway task, running at regular intervals on the Travel Gateway server. It will rely on polling the different connections (including SuperOffice) at given intervals, querying the system about any changes that have occurred since the last polling operation.

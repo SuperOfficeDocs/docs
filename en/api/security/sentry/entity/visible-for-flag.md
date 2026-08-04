@@ -8,8 +8,6 @@ content_type: concept
 hidden: true
 ---
 
-# VisibleFor flag
-
 In SuperOffice, you can restrict access to a data item using the `VisibleFor` flag in addition to the user group's rights to data.
 
 The `VisibleFor` flag and role-based security go hand in hand. When the flag is set it is a combination of role-based access rights and access rights that was activated due to setting the flag.

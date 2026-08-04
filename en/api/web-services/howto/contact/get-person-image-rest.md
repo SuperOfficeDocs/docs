@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/contact/get-person-image-rest
 ---
 
-# Display a person's picture
-
 ```html
 <p>Person:
   <img src="/api/v1/Person/{{id}}/Image?ifBlank=SrNoPhoto">

@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Create appointment
-
 1. Insert an appointment record.
 2. Insert a text record for the appointment text.
 3. Insert a VisibleFor record that points to the appointment record.

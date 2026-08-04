@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/delete
 hidden: true
 ---
 
-# DELETE
-
 Deleting a particular row from a table is also an important action in database handling.
 
 The following example shows how a particular row in the `Associate` table is deleted. You can compare the SQL query with the SuperOffice Objectified SQL.

@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# Customer data source
-
 This project is a shared XML serialization data source that reads and writes customer data to an XML document.
 
 The SuperOffice.DevNet.Online.SystemUser.PartnerDBLibrary project contains one customer model and one customer data source class.

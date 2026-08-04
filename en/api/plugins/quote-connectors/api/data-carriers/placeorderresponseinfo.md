@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/placeorderresponseinfo
 ---
 
-# PlaceOrderResponseInfo
-
 Specialized version of `PluginResponseInfo` for `PlaceOrder`.
 
 Inherits `OrderResponseInfo`.

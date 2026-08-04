@@ -9,8 +9,6 @@ deployment: online
 platform: web
 ---
 
-# How to build your OAuth native app flow
-
 A native application is either a mobile application or application that runs on an operating system in a windowed frame, windowless service, or console application. This type of application is **not** the same as a browser-based web application.
 
 Let's look at how to use IdentityModel's OpenID Connect (OIDC) client library to authenticate towards SuperOffice SuperID using the native app workflow. It demonstrates how to set the required OpenID Connect options.

@@ -9,8 +9,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/architecture/soap-service
 ---
 
-# SOAP Sync Service
-
 ![x][img1]
 
 Implementing the SOAP service API directly removes any .Net dependencies. You can implement the `IErpConnectorWS` SOAP Service API directly from Java or PHP.

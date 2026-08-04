@@ -1,5 +1,6 @@
 ---
 title: How to retrieve members of a specific selection using services
+sidebarTitle: "Selection members (services)"
 uid: get_selection_members_services
 description: How to retrieve members of a specific selection using services
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ keywords: ['search']
 content_type: howto
 redirect_from: /en/api/netserver/search/selection/services/get-selection-members-services
 ---
-
-# How to retrieve members of a specific selection using services
 
 We can select contact and persons through the selection interface in NetServer. Each selection returns members that match the selection criteria. For a static selection, these members are stored in the `selectionmember` table. Each selection is recorded in the `selection` table.
 

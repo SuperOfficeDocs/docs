@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 ---
 
-# MailProtocol helper
-
 The MailProtocol is installed to handle the somail:xxx links that the SIX.web server generates.
 
 Normally SIX.web will handle a click on an email link by opening a web-based mail editor. When the tray-app and local mail client extensions are installed, then SIX.web will generate a link using the custom SOMAIL protocol.

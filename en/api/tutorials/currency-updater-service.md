@@ -7,8 +7,6 @@ date:
 content_type: tutorial
 ---
 
-# Currency updater service
-
 **Purpose:** To automatically update the currency exchange rates in the `currency` table in SuperOffice.
 
 ## Implementation details

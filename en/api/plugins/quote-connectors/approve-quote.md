@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/approve-quote
 ---
 
-# Approving the quote
-
 When a [quote is about to be sent][1], the quote connector can decide that the quote needs to be approved before being sent to the customer.
 
 ![Quote needs approval before sending][img1]

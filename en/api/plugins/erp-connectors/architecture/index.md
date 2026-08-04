@@ -8,8 +8,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/architecture/index
 ---
 
-# Architecture
-
 Outside of developer installations, there is no connector code hosted on the SuperOffice side.
 
 The connector URL will be stored in the SuperOffice database, and there will also be a copy of the connection details for each Sync Connection stored there, in case the connector needs to have it resent (see "Setting up a sync connection"). Other than that, SuperOffice will know nothing about the infrastructure on the ERP side, and all method calls will be through a web service interface ( `IErpConnector`).

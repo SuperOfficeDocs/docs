@@ -1,5 +1,6 @@
 ---
-title: SuperId element
+title: NetServer SuperId element (SuperOffice only)
+sidebarTitle: "SuperId element"
 uid: ns_config_superid
 description: NetServer configuration values for accessing SuperID.
 date: 12.09.2021
@@ -9,8 +10,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/superid
 ---
-
-# NetServer SuperId element (SuperOffice only)
 
 Configuration values for accessing [SuperID][2].
 

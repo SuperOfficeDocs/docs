@@ -9,8 +9,6 @@ deployment: online
 platform: web
 ---
 
-# How to import data into Excel
-
 A common question is "how do I import SuperOffice data into Microsoft Excel?", and the answer is using web API OData queries.
 
 Below is a walk-though of how to perform this task. The presented example is kept simple and only imports a list of company names and departments. You can of course make much more complex queries, but should first know more about [OData in general][1], and how SuperOffice exposes [OData with Archive providers][2].

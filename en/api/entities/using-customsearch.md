@@ -8,8 +8,6 @@ redirect_from: /en/api/netserver/entities/using-customsearch
 hidden: true
 ---
 
-# CustomSearch
-
 Another method of retrieving Entities or Entity Collections is using the `CustomSearch` class.
 
 To use `CustomSearch`, we need to use the following namespaces in addition to `SuperOffice.CRM.Entities`:

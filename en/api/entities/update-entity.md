@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/entities/update-entity
 hidden: true
 ---
 
-# Update a basic property of an Entity
-
 Before updating an Entity, it must be retrieved by using the `Idx` class.
 
 Updating a **basic property** of an Entity means changing the values that are stored in properties of basic data types, such as integer or string.

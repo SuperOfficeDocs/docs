@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/rows/get-row-from-entity
 hidden: true
 ---
 
-# Retrieve a row through an entity
-
 A property of Row type directly refers to a particular row of a table.
 
 For example, in the `Sale` Entity, the `Currency` property would refer to the `Currency` table and would contain the columns that are in the `Currency` table as its properties.

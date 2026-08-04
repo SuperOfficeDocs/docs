@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/personnameformatter
 language: en
 ---
 
-# Person name formatter
-
 The `PersonNameFormatter` class, located is designed to format the names of person that exists in the database or a name that we specify. This class contains the following methods.
 
 ## Primary methods

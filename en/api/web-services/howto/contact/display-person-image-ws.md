@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/contact/display-person-image-ws
 ---
 
-# Display person image
-
 Displaying a person's picture involves using the DCF `ImageUtility` to load the image via the web service, and then rendering the output in some way.
 
 Here is an example of a web page that renders a person's image to PNG.

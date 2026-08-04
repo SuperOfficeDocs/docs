@@ -1,6 +1,6 @@
 ---
 uid: filter_netserver_logs
-title: Logging in NetServer
+title: Filtering the logs
 description: How to filter NetServer logs.
 author: xt1
 date: 05.07.2021
@@ -8,8 +8,6 @@ keywords: ['logging']
 content_type: howto
 redirect_from: /en/api/netserver/logging/filter-logs
 ---
-
-# Filtering the logs
 
 The [NetServer config file][1] supports filtering logging to specific namespaces or classes.
 

@@ -1,5 +1,5 @@
 ---
-title: web-service-list-tutorials
+title: How-to work with lists
 description: List of tutorials how to work with list web service APIs
 author: AnthonyYates
 keywords: ['list', 'agent']
@@ -9,8 +9,6 @@ category: list
 area: api-services
 redirect_from: /en/api/netserver/lists/services/how-to/index
 ---
-
-# How-to work with lists
 
 As the name implies, the `List` endpoint provides access to **all lists**. The List API is used to manage lists and retrieve list items.
 

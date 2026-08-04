@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Retrieve a list of people using entities
-
 The below example demonstrates the use of entities in retrieving a list of persons for a given contact.
 
 ```csharp

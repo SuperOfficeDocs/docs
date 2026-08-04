@@ -7,8 +7,6 @@ keywords: ['data-access', 'bulk-update', 'mass-operations']
 redirect_from: /en/api/netserver/bulk-operations/index
 ---
 
-# Bulk Operations
-
 Bulk insert, update and delete operations are supported in all SuperOffice APIs. These capabilities exists as:
 
 * [Bulk-Updates][1]

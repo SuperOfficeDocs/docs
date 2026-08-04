@@ -1,5 +1,6 @@
 ---
 title: Creating a dynamic selection using entities
+sidebarTitle: "Create a dynamic selection (entities)"
 uid: create_dynamic_selection_entity
 description: Creating a dynamic selection using entities
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ keywords: ['search']
 content_type: howto
 redirect_from: /en/api/netserver/search/selection/entity/create-dynamic-entity
 ---
-
-# Creating a dynamic selection using entities
 
 As the word implies, a dynamic selection is **a selection that is bound to change dynamically** and it's **based on search criteria** and not just static members.
 

@@ -10,8 +10,6 @@ area: api-services
 redirect_from: /en/api/netserver/lists/services/listagent/show-countrylist-in-combobox
 ---
 
-# Show list data in UI combo box
-
 The below example demonstrates how we can show the data in a combo box using the NetServer provided lists.
 
 ```csharp

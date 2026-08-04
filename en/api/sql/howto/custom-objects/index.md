@@ -14,8 +14,6 @@ redirect_from:
 hidden: true
 ---
 
-# Udef - raw SQL
-
 * [Set udef][1]
 
 [1]: ./set-udef

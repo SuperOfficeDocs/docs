@@ -1,5 +1,6 @@
 ---
-title: SubClients element
+title: NetServer SubClients element (SuperOffice only)
+sidebarTitle: "SubClients element"
 uid: ns_config_subclients
 description: NetServer configuration section defining any SuperOffice CRM sub-clients.
 date: 12.07.2021
@@ -9,8 +10,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/subclients
 ---
-
-# NetServer SubClients element (SuperOffice only)
 
 Configuration section defining any SuperOffice CRM sub-clients.
 

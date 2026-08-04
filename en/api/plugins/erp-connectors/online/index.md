@@ -7,8 +7,6 @@ keywords: ['ERP', 'EIS', 'sync connector']
 redirect_from: /en/api/netserver/plugins/erp-connectors/online/index
 ---
 
-# ERP Sync Connectors
-
 The **SuperOffice ERP Integration Server** (EIS) was introduced in SuperOffice CRM in version 7.5 and provides partners an API to create Sync Connectors that handle the synchronization of data between SuperOffice and an ERP system.
 
 While this article is not an instruction on how to build an ERP Sync Connector, the [existing documentation does a great job of that][1], it is an instructional read that defines an additional requirement when building ERP Connectors for SuperOffice Online.

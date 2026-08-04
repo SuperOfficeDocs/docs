@@ -8,8 +8,6 @@ keywords: ['security', 'roles', 'DataRight', 'TableId', 'RelationshipToOwner', '
 content_type: concept
 ---
 
-# Role-based security
-
 This API corresponds to the Role panel in the Admin client:
 
 ![Admin Role panel -screenshot][img1]

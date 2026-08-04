@@ -1,5 +1,6 @@
 ---
 title: Structured aggregation output with GroupBy
+sidebarTitle: "Aggregation with GroupBy"
 uid: aggregate_groupby
 description: Structured aggregation output with groupby
 author: Tony Yates
@@ -10,8 +11,6 @@ category: api
 topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/aggregate-groupby
 ---
-
-# Structured aggregation output with GroupBy
 
 Probably the most powerful aggregate function, GroupBy provides the capability to band query results into rigid report-like structures. With capabilities that span aggregation-only to combined to detail only, it's a flexible tool that can be used in different ways.
 

@@ -1,5 +1,5 @@
 ---
-title: Terminology
+title: Common terms and concepts
 description: Common terms and concepts pertaining to selections
 author: AnthonyYates
 keywords: ['NewSelection', 'Selection', 'Find']
@@ -7,8 +7,6 @@ content_type: reference
 platform: web
 redirect_from: /en/api/netserver/search/find-selection/terminology
 ---
-
-# Common terms and concepts
 
 | Term | Description |
 |---|---|

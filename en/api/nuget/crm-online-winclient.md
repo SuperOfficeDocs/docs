@@ -8,8 +8,6 @@ keywords: ['authentication']
 content_type: reference
 ---
 
-# CRM Online WinClient
-
 SuperOffice Online WinClient is for WinForms or WPF applications that need support for SuperOffice online federated authentication.
 
 ## Get it

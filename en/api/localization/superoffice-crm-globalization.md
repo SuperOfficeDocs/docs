@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/superoffice-crm-globalization
 language: en
 ---
 
-# SuperOffice.CRM.Globalization namespace
-
 The classes in this namespace act as helper classes for formatting different types of data to localized standards.
 
 ## AddressData

@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/language/resource-providers
 language: en
 ---
 
-# Resource providers
-
 **Resource providers** are a single mechanism to ask for text and receive it in any supported culture. A text resource uses a unique key that accesses a language-specific value stored in a resources file, or satellite assembly.
 
 SuperOffice supports approximately 15 languages and it's important to optimize text resources for labels, tooltips, and error messages in all of those languages.

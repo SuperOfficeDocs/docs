@@ -1,6 +1,7 @@
 ---
 uid: get-category-list-categoryrows
 title: Get the CategoryList via CategoryRows object
+sidebarTitle: "CategoryList via CategoryRows"
 description: Get the CategoryList via CategoryRows object'
 keywords: ['category', 'rows']
 author: Tony Yates
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/rows/howto/company/get-catlist-categoryrows
 hidden: true
 ---
-
-# Get the CategoryList via CategoryRows object
 
 `CategoryRows` are defined under `SuperOffice.CRM.Rows` namespace. You can even get a category list via the `CategoryRows` object.
 

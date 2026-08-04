@@ -10,8 +10,6 @@ area: api-services
 hidden: true
 ---
 
-# Sentry in services
-
 In the following code, we are using the sentry mechanisms that are provided in NetServer services.
 
 ```csharp

@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/superoffice-globalization
 language: en
 ---
 
-# SuperOffice.Globalization namespace
-
 The classes in this namespace are mainly dedicated to the different providers that provide us the data within a page in the application.
 
 Listed below are important classes of the namespace and a brief description of them.

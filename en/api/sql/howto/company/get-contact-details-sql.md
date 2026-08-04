@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Get contact details
-
 At its most basic, we just search the contact table:
 
 ```SQL

@@ -9,8 +9,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/index
 ---
 
-# Data carriers
-
 The information the system exchanges between SuperOffice and the connectors is packed in what we like to call **carriers**. These are data-transfer-objects (DTOs). They have no methods/behavior.
 
 The database schema is very similar to these data carriers, but it is not identical. For example, a price list in the database has a `PricelistId` field, which is not in the carrier because the carrier shall carry data from other systems as well. So the `PricelistId` field is put into the `ERPPricelistKey` field as a string by the SuperOffice connector.

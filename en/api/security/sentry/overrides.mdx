@@ -10,8 +10,6 @@ deployment: onsite
 hidden: true
 ---
 
-# Sentry overrides
-
 The standard system consists of 6 user-levels and each level has a set of access rights, which decrease from all rights on level 0 down to read-only on level 5. These rights apply universally to all tables and all records.
 
 There are additional rules that restrict access to data, such as private appointments and contacts that own Satellites. All these rules are implemented by the **Sentry** system. The problem, then, comes down to the need to add an override function to the Sentry system so that external modules can in some way instruct the Sentry system to grant fewer rights than would otherwise be the case.

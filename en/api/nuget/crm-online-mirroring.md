@@ -8,8 +8,6 @@ keywords: ['mirroring']
 content_type: reference
 ---
 
-# CRM Online Database Mirroring
-
 SuperOffice Online Mirroring is used to replicate an online tenant's database for applications.
 
 ## Get it

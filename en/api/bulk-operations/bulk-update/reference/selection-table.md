@@ -10,8 +10,6 @@ envir: cloud
 client: online
 ---
 
-# Selection table
-
 Selection fields. Key constants are in `BulkUpdateSystem.SelectionFieldValueKeys`.
 
 <table>

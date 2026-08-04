@@ -9,8 +9,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/search/index
 ---
 
-# Search in ERP
-
 There are 2 ways to search for ERP actors:
 
 * A *simple search* that is driven by a search string and returns a set of fields

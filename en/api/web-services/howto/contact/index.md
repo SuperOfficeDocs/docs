@@ -1,6 +1,6 @@
 ---
 uid: api-person-services
-title: Person - services
+title: Contact - services
 description: Working with contacts (person) in API with services
 keywords: ['person', 'contact', 'services', 'API']
 author: Bergfrid Skaara Dias
@@ -10,8 +10,6 @@ redirect_from:
   - /en/contact/howto/services/index
   - /en/api/netserver/web-services/howto/contact/index
 ---
-
-# Contact - services
 
 * [Get persons ContactAgent][1]
 * [Get persons PersonAgent][2]

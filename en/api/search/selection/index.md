@@ -8,8 +8,6 @@ content_type: concept
 redirect_from: /en/api/netserver/search/selection
 ---
 
-# Selection
-
 Selections are a list of contacts and persons **grouped** based on certain criteria. The selections can be created using the GUI Selections in the SuperOffice CRM interface. In the GUI you can add one or more criteria that you want the selection made out of and the system will find the contacts and persons according to the criteria that you defined.
 
 ![Selection -screenshot][img1]

@@ -10,8 +10,6 @@ envir: cloud
 client: online
 ---
 
-# Person table
-
 Person fields. Key constants are in ``BulkUpdateSystem.PersonFieldValueKeys`.
 
 <table>

@@ -1,5 +1,5 @@
 ---
-title: Metadata - information about archives
+title: Archive Metadata
 uid: rest_api_search_metadata
 description: REST Web API search metadata
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ date: 2023-04-26
 content_type: howto
 redirect_from: /en/api/netserver/search/odata/metadata
 ---
-
-# Archive Metadata
 
 ## List of archives
 

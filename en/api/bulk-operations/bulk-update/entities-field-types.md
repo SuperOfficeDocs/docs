@@ -13,8 +13,6 @@ platform: web
 redirect_from: /en/api/netserver/bulk-operations/bulk-update/entities-field-types
 ---
 
-# Entities and field types
-
 With a general understanding of how [bulk update][1] works, the following table lists all available properties for each entity, details what [operations][2] are allowed one each property, and details what the expected values are for each operation.
 
 * [appointment table][3]

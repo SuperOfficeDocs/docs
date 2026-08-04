@@ -1,5 +1,5 @@
 ---
-title: Delete records
+title: Working with Delete
 description: How to delete large numbers of records in bulk.
 keywords: ['data-access', 'mass-operations', 'bulk-update']
 author: AnthonyYates
@@ -10,8 +10,6 @@ category: api
 topic: mass operations
 redirect_from: /en/api/netserver/bulk-operations/mass-operations/delete
 ---
-
-# Working with Delete
 
 Used to remove multiple records from a table, delete requires a table name and an array of primary key values. To avoid any unnecessary database server side-effects (long locks), NetServer internally processes the array of primary keys in batches of 1000.
 

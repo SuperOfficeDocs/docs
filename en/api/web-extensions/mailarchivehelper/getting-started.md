@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# Initializing
-
 Before you start using the helper, you need to tell it who you are by using the `Initialize` method:
 
 ```csharp

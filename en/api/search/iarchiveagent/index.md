@@ -10,8 +10,6 @@ area: api-services
 redirect_from: /en/api/netserver/search/iarchiveagent
 ---
 
-# Archive agents
-
 Archives are tables of rows and columns that contain de-normalized and processed data relating to Persons, Activities, Projects, and many more.
 
 ## Required namespaces

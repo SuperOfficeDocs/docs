@@ -8,8 +8,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/erp-connectors/setup-defaults
 ---
 
-# Setting up default values
-
 [Default values][1] are used when Erp Sync creates a new [actor][2] in the ERP system.
 
 ![x][img1]

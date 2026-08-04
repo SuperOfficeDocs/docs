@@ -8,8 +8,6 @@ keywords: ['authentication']
 content_type: reference
 ---
 
-# CRM Online Core
-
 SuperOffice Online Core assists apps with SuperOffice federated authentication.
 
 ## Get it

@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# SuperOffice.devnet.online.login
-
 This project has several helper classes that facilitate common operations such as hosting and providing models for user context and securing access.
 
 Key classes in the Login library and their purpose:

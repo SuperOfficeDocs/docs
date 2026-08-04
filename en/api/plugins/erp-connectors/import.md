@@ -8,8 +8,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/erp-connectors/import
 ---
 
-# Importing from ERP
-
 ![import -screenshot][img1]
 
 Importing allows an administrator to populate a SuperOffice database with companies/projects from the ERP system.
