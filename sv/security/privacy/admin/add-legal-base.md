@@ -3,7 +3,7 @@ uid: help-sv-privacy-add-legal-base
 title: Lägga till poster i listan Integritet - Rättslig grund
 sidebarTitle: "Lägg till rättslig grund"
 description: Den här guiden beskriver hur du ändrar integritetslistorna.
-keywords: Integritet rättslig grund lista, Lägg till rättslig grund
+keywords: ['Integritet rättslig grund lista', 'Lägg till rättslig grund']
 author: SuperOffice Product and Engineering
 date: 09.02.2025
 version: 10.3

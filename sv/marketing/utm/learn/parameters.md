@@ -2,7 +2,7 @@
 uid: help-sv-utm-parameters
 title: UTM-parametrar
 description: UTM-parametrar
-keywords: UTM-parametrar, länk, kampanj, spårning, SuperOffice Marketing
+keywords: ['UTM-parametrar', 'länk', 'kampanj', 'spårning', 'SuperOffice Marketing']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

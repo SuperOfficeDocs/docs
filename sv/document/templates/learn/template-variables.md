@@ -2,7 +2,7 @@
 uid: help-sv-template-variables
 title: Mallvariabler
 description: Med mallvariabler kan du anpassa och automatisera inmatningen av kunddata
-keywords: dokument, mall, variabel, mallvariabel
+keywords: ['dokument', 'mall', 'variabel', 'mallvariabel']
 author: Bergfrid Dias
 date: 12.10.2024
 version: 10.3

@@ -3,7 +3,7 @@ uid: help-sv-sale-configuration
 title: Hantering av försäljningstyper, faser och guider
 sidebarTitle: "Hantering"
 description: Lär dig hur du hanterar försäljningsarbetsflöden i SuperOffice CRM med försäljningstyper, faser och guider. Konfigurera dessa verktyg i Inställningar och underhåll för att standardisera spårning, uppgifter och dokumentation.
-keywords: säljguide, försäljningsfas, försäljningstyp, arbetsflöde, försäljning
+keywords: ['säljguide', 'försäljningsfas', 'försäljningstyp', 'arbetsflöde', 'försäljning']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

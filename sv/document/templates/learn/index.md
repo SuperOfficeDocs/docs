@@ -2,7 +2,7 @@
 uid: help-sv-document-template
 title: Dokumentmall
 description: Dokumentmall
-keywords: dokumentmall, dokument, mall
+keywords: ['dokumentmall', 'dokument', 'mall']
 author: Bergfrid Dias
 date: 07.16.2024
 version: 10.3

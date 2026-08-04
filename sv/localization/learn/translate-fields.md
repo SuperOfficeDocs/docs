@@ -2,7 +2,7 @@
 uid: help-sv-translate-fields
 title: Översättning
 description: Översättning av fält i SuperOffice
-keywords: översättning, översätta
+keywords: ['översättning', 'översätta']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

@@ -2,7 +2,7 @@
 uid: help-sv-request-status
 title: Ärendestatus
 description: Ärendestatus
-keywords: ärendestatus, fliken Ärendestatus, ärende, status
+keywords: ['ärendestatus', 'fliken Ärendestatus', 'ärende', 'status']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

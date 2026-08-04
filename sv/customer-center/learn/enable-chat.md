@@ -2,7 +2,7 @@
 uid: help-sv-customer-center-chat
 title: Anslut en chatt till ditt Kundcenter
 description: Den här guiden beskriver hur du ansluter en chattkanal till ditt Kundcenter.
-keywords: chatt, kundcenter
+keywords: ['chatt', 'kundcenter']
 author: Bergfrid Dias
 date: 02.22.2023
 content_type: howto

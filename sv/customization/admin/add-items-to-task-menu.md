@@ -2,7 +2,7 @@
 uid: help-sv-task-menu-add
 title: Lägg till poster i listan Uppgiftsmeny
 description: Lägg till poster i listan Uppgiftsmeny
-keywords: Uppgiftsmeny
+keywords: ['Uppgiftsmeny']
 author: digitaldiina
 date: 05.04.2026
 version: 11.13

@@ -2,7 +2,7 @@
 uid: help-sv-service-screen-properties
 title: Egenskaper för skärmbild
 description: Egenskaper för skärmbild
-keywords: skärm
+keywords: ['skärm']
 author: SuperOffice RnD
 date: 06.29.2022
 content_type: reference

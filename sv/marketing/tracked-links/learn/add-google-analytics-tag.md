@@ -3,7 +3,7 @@ uid: help-sv-mailing-add-google-analytics
 title: Så här lägger du till din Google Analytics-tagg i ett utskick
 sidebarTitle: "Google Analytics-tagg"
 description: I den här guiden förklarar vi hur du spårar dina besökare.
-keywords: Marknadsföring
+keywords: ['Marknadsföring']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

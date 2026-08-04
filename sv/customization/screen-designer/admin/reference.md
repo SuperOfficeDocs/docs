@@ -2,7 +2,7 @@
 uid: help-sv-screen-designer-field-reference
 title: Referens
 description: Referens över element som finns tillgängliga i Skärmdesignern i Inställningar och underhåll.
-keywords: Skärmdesigner fält, standardfält, standardflik
+keywords: ['Skärmdesigner fält', 'standardfält', 'standardflik']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

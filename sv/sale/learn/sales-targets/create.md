@@ -2,7 +2,7 @@
 uid: help-sv-sales-targets-create
 title: Ställ in försäljningsmål
 description: Håll koll på dina budgetar genom att ställa in försäljningsmål. Det hjälper dig att skapa rätt förväntningar, planera tillväxt, öka motivationen och spara tid.
-keywords: försäljningsmål
+keywords: ['försäljningsmål']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

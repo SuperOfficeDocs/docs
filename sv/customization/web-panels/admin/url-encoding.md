@@ -2,7 +2,7 @@
 uid: help-sv-url-encoding
 title: Url-kodning
 description: URL-kodning i webbpaneler
-keywords: webbpanel, URL-kodning
+keywords: ['webbpanel', 'URL-kodning']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

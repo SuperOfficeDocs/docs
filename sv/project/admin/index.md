@@ -3,7 +3,7 @@ uid: help-sv-project-configuration
 title: Hantering av projekttyper, statusar och guider
 sidebarTitle: "Hantering"
 description: Lär dig hur du hanterar projektarbetsflöden i SuperOffice CRM med projekttyper, statusar och guider. Konfigurera dessa verktyg i Inställningar och underhåll för att standardisera spårning, uppgifter och dokumentation.
-keywords: projektguide, projektstatus, projekttyp, arbetsflöde, projekt
+keywords: ['projektguide', 'projektstatus', 'projekttyp', 'arbetsflöde', 'projekt']
 author: Bergfrid Dias
 date: 02.25.2025
 version: 10

@@ -2,7 +2,7 @@
 uid: help-sv-faq-edit
 title: Redigera eller ta bort FAQ-poster
 description: Redigera eller ta bort FAQ-poster
-keywords: FAQ redigera, FAQ ta bort
+keywords: ['FAQ redigera', 'FAQ ta bort']
 author: SuperOffice Product and Engineering
 date: 07.15.2025
 version: 10.5

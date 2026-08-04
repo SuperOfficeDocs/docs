@@ -2,7 +2,7 @@
 uid: help-sv-package-properties-service
 title: Egenskaper för paket
 description: Egenskaper för paket
-keywords: paket egenskaper
+keywords: ['paket egenskaper']
 author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5

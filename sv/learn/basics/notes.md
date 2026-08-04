@@ -2,7 +2,7 @@
 uid: help-sv-notes
 title: Anteckna
 description: Anteckna
-keywords: Anteckning-flik, skriva anteckningar, skapa anteckning
+keywords: ['Anteckning-flik', 'skriva anteckningar', 'skapa anteckning']
 author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2

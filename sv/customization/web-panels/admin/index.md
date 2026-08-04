@@ -2,7 +2,7 @@
 uid: help-sv-ui-web-panels
 title: Webbpaneler
 description: Webbpaneler
-keywords: webbpanel, www flik
+keywords: ['webbpanel', 'www flik']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

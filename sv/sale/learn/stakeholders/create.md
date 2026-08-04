@@ -2,7 +2,7 @@
 uid: help-sv-stakeholder-create
 title: Lägg till intressenter
 description: Hur man kopplar en försäljning till en intressent (företag eller kontakt) i SuperOffice.
-keywords: Lägg till intressent, ny intressent, Lägg till/redigera intressenter-dialog, Intressent-detaljkort, intressent, försäljning
+keywords: ['Lägg till intressent', 'ny intressent', 'Lägg till/redigera intressenter-dialog', 'Intressent-detaljkort', 'intressent', 'försäljning']
 author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2

@@ -2,7 +2,7 @@
 uid: help-sv-chat-link-to-person
 title: Koppla chatt till befintlig kontakt
 description: När en kund skickar en fråga via chattwidgeten på webbplatsen är det inte bara viktigt att svara på den, utan också att registrera den på kundens kontaktkort.
-keywords: koppla chatt till kontakt, föreslagen kontakt, skapa ny kontakt
+keywords: ['koppla chatt till kontakt', 'föreslagen kontakt', 'skapa ny kontakt']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

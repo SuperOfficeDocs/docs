@@ -2,7 +2,7 @@
 uid: help-sv-links
 title: Länkar
 description: Länkar
-keywords: Lägg till länk, fliken Länkar, Länkar-fliken, länk
+keywords: ['Lägg till länk', 'fliken Länkar', 'Länkar-fliken', 'länk']
 author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2

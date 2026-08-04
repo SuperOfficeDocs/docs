@@ -2,7 +2,7 @@
 uid: help-sv-selection-generate-follow-ups
 title: Generera händelser
 description: Skapa händelser
-keywords: urval
+keywords: ['urval']
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3

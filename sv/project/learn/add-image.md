@@ -2,7 +2,7 @@
 uid: help-sv-project-image-add
 title: Lägg till eller ändra en projektbild
 description: Lägg till eller ändra en projektbild
-keywords: projekt
+keywords: ['projekt']
 author: Bergfrid Dias
 date: 10.08.2024
 version: 10.3.10

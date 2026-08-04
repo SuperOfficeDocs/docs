@@ -2,7 +2,7 @@
 uid: help-sv-fastsearcher-navigator
 title: Använda snabbsökning i navigatorn
 description: Använda snabbsökning i navigatorn
-keywords: söka, Snabbsökning, navigatorn
+keywords: ['söka', 'Snabbsökning', 'navigatorn']
 author: Bergfrid Dias
 date: 05.25.2023
 content_type: howto

@@ -2,7 +2,7 @@
 uid: help-sv-customer-centre-form
 title: Använd webbformulär i ditt Kundcenter
 description: I den här guiden förklarar vi hur du använder ett webbformulär.
-keywords: formulär, Kundcenter
+keywords: ['formulär', 'Kundcenter']
 author: Bergfrid Dias
 date: 03.20.2023
 content_type: howto

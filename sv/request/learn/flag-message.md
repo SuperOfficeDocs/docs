@@ -2,7 +2,7 @@
 uid: help-sv-request-message-flag
 title: Hålla koll på meddelanden
 description: Hålla koll på meddelanden
-keywords: filtrera meddelanden, flaggknappen, ärende, meddelande, flaggat, flagga
+keywords: ['filtrera meddelanden', 'flaggknappen', 'ärende', 'meddelande', 'flaggat', 'flagga']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

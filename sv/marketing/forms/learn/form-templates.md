@@ -2,7 +2,7 @@
 uid: help-sv-form-templates
 title: Arbeta med formulärmallar
 description: Arbeta med formulärmallar
-keywords: formulär, mall, formulärmall
+keywords: ['formulär', 'mall', 'formulärmall']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

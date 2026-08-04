@@ -2,7 +2,7 @@
 uid: help-sv-follow-up-assign
 title: Delegera händelse
 description: Överföra en händelse till någon annan
-keywords: kalender, händelse, tildela, möte, delegera
+keywords: ['kalender', 'händelse', 'tildela', 'möte', 'delegera']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

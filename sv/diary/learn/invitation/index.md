@@ -3,7 +3,7 @@ uid: help-sv-invitation
 title: Bjuda in andra medarbetare till en händelse
 sidebarTitle: "Bjuda in medarbetare"
 description: Skapa händelser med dina medarbetare
-keywords: kalender, händelse, inbjudan, möte
+keywords: ['kalender', 'händelse', 'inbjudan', 'möte']
 author: digitaldiina
 date: 03.27.2026
 version: 11.11

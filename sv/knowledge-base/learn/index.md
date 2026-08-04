@@ -2,7 +2,7 @@
 uid: help-sv-knowledge-base
 title: Kunskapsbas
 description: Kunskapsbas
-keywords: ärende, kunskapsbas
+keywords: ['ärende', 'kunskapsbas']
 author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5
