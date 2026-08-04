@@ -10,6 +10,7 @@
   "contribute/how-to-edit-an-article",
   "contribute/how-to-add-release-notes",
   "contribute/how-to-write-tutorials",
+  "contribute/how-to-update-crmscript-reference",
   {
     "group": "Git",
     "root": "contribute/git-cheat-sheet",
