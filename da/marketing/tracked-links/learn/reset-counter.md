@@ -2,7 +2,7 @@
 uid: help-da-tracked-links-reset
 title: Nulstilling af tællere efter links
 description: Nulstilling af tællere efter links
-keywords: Marketing
+keywords: ['Marketing']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

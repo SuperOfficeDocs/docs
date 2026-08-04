@@ -3,7 +3,7 @@ uid: help-da-invitation
 title: Invitation af andre medarbejdere til en opfølgning
 sidebarTitle: "Invitation af medarbejdere"
 description: Oprettelse af opfølgninger med dine medarbejdere
-keywords: dagbog, opfølgning, invitation, møde
+keywords: ['dagbog', 'opfølgning', 'invitation', 'møde']
 author: digitaldiina
 date: 03.27.2026
 version: 11.11

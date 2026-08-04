@@ -3,7 +3,7 @@ uid: help-da-task-menu-add
 title: Tilføjelse af forekomster til listen for menuen Opgave
 sidebarTitle: "Menuen Opgave"
 description: Tilføjelse af forekomster til listen for menuen Opgave
-keywords: Opgavemenuen
+keywords: ['Opgavemenuen']
 author: digitaldiina
 date: 05.04.2026
 version: 11.13

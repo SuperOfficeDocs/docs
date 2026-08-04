@@ -2,7 +2,7 @@
 uid: help-da-project-image-add
 title: Tilføj eller skift et projektbillede
 description: Sådan tilføjer eller ændrer du et projektbillede
-keywords: projekt
+keywords: ['projekt']
 author: Bergfrid Dias
 date: 03.07.2025
 version: 10.5.2

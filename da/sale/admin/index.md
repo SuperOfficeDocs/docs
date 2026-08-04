@@ -3,7 +3,7 @@ uid: help-da-sale-configuration
 title: Administration af salgstyper, faser og guider
 sidebarTitle: "Administration"
 description: Lær, hvordan du administrerer salgsarbejdsgange i SuperOffice CRM med salgstyper, faser og guider. Konfigurer disse værktøjer i Indstillinger og vedligeholdelse for at standardisere sporing, opgaver og dokumentation.
-keywords: salgsguide, salgsfase, salgstype, arbejdsgang, salg
+keywords: ['salgsguide', 'salgsfase', 'salgstype', 'arbejdsgang', 'salg']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

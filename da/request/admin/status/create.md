@@ -2,7 +2,7 @@
 uid: help-da-request-status-create
 title: Opret sagsstatus
 description: Lær, hvordan du opretter en ny sagsstatus i Indstillinger og vedligeholdelse.
-keywords: sagsstatus, status, opret sagsstatus
+keywords: ['sagsstatus', 'status', 'opret sagsstatus']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

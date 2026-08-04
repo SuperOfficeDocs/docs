@@ -2,7 +2,7 @@
 uid: help-da-customer-centre-form
 title: Brug webformularer i dit kundecenter
 description: I denne vejledning lærer du, hvordan du bruger en webformular.
-keywords: formular, Kundecenter
+keywords: ['formular', 'Kundecenter']
 author: Bergfrid Dias
 date: 03.20.2023
 content_type: howto

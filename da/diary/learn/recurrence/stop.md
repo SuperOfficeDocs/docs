@@ -2,7 +2,7 @@
 uid: help-da-recurrence-stop
 title: Stop gentagen opfølgning
 description: Stop gentagen opfølgning
-keywords: stop gentagelse, afbryd gentagelse, mødeserie, repeterende opfølgning, repeterende møde, dagbog, opfølgning, gentag, fremtidige forekomster, gentages
+keywords: ['stop gentagelse', 'afbryd gentagelse', 'mødeserie', 'repeterende opfølgning', 'repeterende møde', 'dagbog', 'opfølgning', 'gentag', 'fremtidige forekomster', 'gentages']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

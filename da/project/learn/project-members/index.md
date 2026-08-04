@@ -2,7 +2,7 @@
 uid: help-da-project-members
 title: Projektdeltager
 description: Projektdeltager
-keywords: Projektdeltagere-sektionsfane, projektdeltager, projekt
+keywords: ['Projektdeltagere-sektionsfane', 'projektdeltager', 'projekt']
 author: SuperOffice RnD
 date: 02.25.2025
 version: 10.5.2

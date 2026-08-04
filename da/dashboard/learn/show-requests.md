@@ -2,7 +2,7 @@
 uid: help-da-dashboard-requests
 title: Brug af sager i ruder
 description: I denne vejledning lærer du, hvordan du får et hurtigt overblik over alle åbne sager i SuperOffice-dashboards.
-keywords: dashboard, sag, rude
+keywords: ['dashboard', 'sag', 'rude']
 author: digitaldiina
 date: 11.21.2025
 version: 11.6

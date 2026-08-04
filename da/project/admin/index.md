@@ -3,7 +3,7 @@ uid: help-da-project-configuration
 title: Administrer projekttyper, statuser og guider
 sidebarTitle: "Administration"
 description: Lær, hvordan du administrerer projektarbejdsgange i SuperOffice CRM med projekttyper, statuser og guider. Konfigurer disse værktøjer i Indstillinger og vedligeholdelse for at standardisere sporing, opgaver og dokumentation.
-keywords: projektguide, projektstatus, projekttype, arbejdsgang, projekt
+keywords: ['projektguide', 'projektstatus', 'projekttype', 'arbejdsgang', 'projekt']
 author: Bergfrid Dias
 date: 03.07.2025
 version: 10.5.2

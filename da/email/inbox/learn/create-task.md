@@ -2,7 +2,7 @@
 uid: help-da-email-inbox-create-task
 title: Opret opgave
 description: Lær, hvordan du opretter en opgave i SuperOffice CRM baseret på en e-mailmeddelelse
-keywords: arkiver e-mail, indbakke, opret opgave, opfølgning fra e-mail, opgave, opfølgning, e-mail
+keywords: ['arkiver e-mail', 'indbakke', 'opret opgave', 'opfølgning fra e-mail', 'opgave', 'opfølgning', 'e-mail']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

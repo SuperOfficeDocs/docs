@@ -2,7 +2,7 @@
 uid: help-da-template-variables-service
 title: Skabelonvariabler (Service)
 description: Skabelonvariabler
-keywords: skabelonvariabler
+keywords: ['skabelonvariabler']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

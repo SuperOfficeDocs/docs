@@ -2,7 +2,7 @@
 uid: help-da-request-message-flag
 title: Hold styr på meddelelser
 description: Hold styr på meddelelser
-keywords: sag, meddelelse, flag
+keywords: ['sag', 'meddelelse', 'flag']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

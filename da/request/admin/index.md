@@ -2,7 +2,7 @@
 uid: help-da-service-settings
 title: Forskellige indstillinger for Service
 description: Systemindstillinger
-keywords: Tjeneste
+keywords: ['Tjeneste']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

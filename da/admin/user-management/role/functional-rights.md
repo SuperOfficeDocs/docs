@@ -2,7 +2,7 @@
 uid: help-da-functional-right
 title: Functional rights in SuperOffice
 description: What are all available functional rights in SuperOffice and what each of them mean?
-keywords: user management, role, access, rights
+keywords: ['user management', 'role', 'access', 'rights']
 author: PhilipYates, digitaldiina
 date: 06.11.2026
 version: 12.0

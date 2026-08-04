@@ -3,7 +3,7 @@ uid: help-da-mailing-add-google-analytics
 title: Sådan tilføjer du tags fra Google Analytics til en mailudsendelse
 sidebarTitle: "Google Analytics-tags"
 description: I denne vejledning lærer du, hvordan du sporer dine besøgende.
-keywords: Marketing
+keywords: ['Marketing']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

@@ -2,7 +2,7 @@
 uid: help-da-utm-parameters
 title: UTM-parametre
 description: UTM-parametre
-keywords: UTM-parametre, kobling, kampagne, sporing, SuperOffice Marketing
+keywords: ['UTM-parametre', 'kobling', 'kampagne', 'sporing', 'SuperOffice Marketing']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

@@ -2,7 +2,7 @@
 uid: help-da-add-items-to-resource-list
 title: Tilføj ressource
 description: Tilføjelse af forekomster på listen Ressource
-keywords: ressource, listen Generelt - Ressource
+keywords: ['ressource', 'listen Generelt - Ressource']
 author: digitaldiina
 date: 10.27.2025
 version: 10.5

@@ -3,7 +3,7 @@ uid: help-da-edit-privacy-confirmation-email
 title: Rediger e-mail med bekræftelse om personbeskyttelse
 sidebarTitle: "Bekræftelsesmail"
 description: I denne vejledning lærer du, hvordan du redigerer e-mailen med bekræftelse om personbeskyttelse.
-keywords: bekræftelse om personbeskyttelse, e-mail skabelon
+keywords: ['bekræftelse om personbeskyttelse', 'e-mail skabelon']
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10

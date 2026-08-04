@@ -2,7 +2,7 @@
 uid: help-da-email-inbox-create-request
 title: Opret sag
 description: Lær, hvordan du opretter en sag i SuperOffice Service baseret på en e-mailmeddelelse
-keywords: opret sag, indbakke, service, ticket, kundeservice, e-mail, sag
+keywords: ['opret sag', 'indbakke', 'service', 'ticket', 'kundeservice', 'e-mail', 'sag']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

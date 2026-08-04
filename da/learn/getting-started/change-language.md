@@ -2,7 +2,7 @@
 uid: help-da-language-change
 title: Ændring af aktivt sprog
 description: Ændring af aktivt sprog
-keywords: ændre sprog, Aktivt sprog
+keywords: ['ændre sprog', 'Aktivt sprog']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

@@ -2,7 +2,7 @@
 uid: help-da-ui-web-panels
 title: Webpaneler
 description: Webpaneler
-keywords: webpanel, www fane
+keywords: ['webpanel', 'www fane']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

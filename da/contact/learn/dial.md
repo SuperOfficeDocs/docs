@@ -2,7 +2,7 @@
 uid: help-da-contact-dial
 title: Ring til personer
 description: Sådan ringer du til personer i SuperOffice CRM.
-keywords: dagbog, opfølgning, telefon, ring til, ring op, telefonegenskaber
+keywords: ['dagbog', 'opfølgning', 'telefon', 'ring til', 'ring op', 'telefonegenskaber']
 author: digitaldiina
 date: 12.05.2025
 version: 11

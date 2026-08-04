@@ -3,7 +3,7 @@ uid: help-da-creating-shortcuts-to-entries-in-crm
 title: Oprettelse af genveje til poster i SuperOffice CRM
 sidebarTitle: "Opret genveje"
 description: Oprettelse af genveje til poster i CRM
-keywords: kopier genvej
+keywords: ['kopier genvej']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3

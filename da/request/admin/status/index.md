@@ -2,7 +2,7 @@
 uid: help-da-request-status
 title: Sagsstatus
 description: Alle sager i SuperOffice har en status, såsom Åben, Lukket eller Udsat. Lær, hvordan du administrerer sagsstatusser i Indstillinger og vedligeholdelse.
-keywords: sagsstatus, status, sager, statusindstillinger
+keywords: ['sagsstatus', 'status', 'sager', 'statusindstillinger']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

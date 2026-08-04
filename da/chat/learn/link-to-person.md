@@ -2,7 +2,7 @@
 uid: help-da-chat-link-to-person
 title: Link chat til eksisterende person
 description: Når en kunde sender en forespørgsel via chatwidgetten på hjemmesiden, er det ikke kun vigtigt at svare på den, men også at registrere den på deres kontaktkort.
-keywords: link chat til person, foreslået person, opret ny person
+keywords: ['link chat til person', 'foreslået person', 'opret ny person']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

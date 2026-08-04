@@ -2,7 +2,7 @@
 uid: help-da-print
 title: Udskrivning af poster i SuperOffice CRM
 description: Denne vejledning giver et overblik over, hvordan du udskriver poster, såsom firmaer, personer, salg, projekter og opfølgninger, så det bliver nemt at have papirversioner til møder, dokumentation eller yderligere analyse.
-keywords: udskriv
+keywords: ['udskriv']
 author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2

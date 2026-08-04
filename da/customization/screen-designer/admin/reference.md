@@ -2,7 +2,7 @@
 uid: help-da-screen-designer-field-reference
 title: Reference
 description: Reference over elementer, der er tilgængelige i Skærmdesigneren i Indstillinger og vedligeholdelse.
-keywords: Skærmdesigner-felter, standardfelt, standardfane
+keywords: ['Skærmdesigner-felter', 'standardfelt', 'standardfane']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

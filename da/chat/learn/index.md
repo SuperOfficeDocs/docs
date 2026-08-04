@@ -2,7 +2,7 @@
 uid: help-da-chat
 title: Chat
 description: Kommuniker med og hjælp eksisterende eller potentielle kunder via en chatwidget på dit websted.
-keywords: chat, ongoing chats
+keywords: ['chat', 'ongoing chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5
