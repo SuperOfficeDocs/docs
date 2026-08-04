@@ -13,8 +13,6 @@ redirect_from: /en/mobile/superoffice-mobile/sale/update
 language: en
 ---
 
-# Update sale
-
 You can update sales information, change its status, or link it to other records directly from SuperOffice Mobile CRM. To add or remove stakeholders, open the sale in SuperOffice CRM.
 
 ## Steps to update a sale

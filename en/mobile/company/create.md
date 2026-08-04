@@ -13,8 +13,6 @@ redirect_from: /en/mobile/superoffice-mobile/company/create
 language: en
 ---
 
-# Add company
-
 When you are out visiting, you can register companies directly from Mobile CRM.
 
 ## Steps to register a new company
