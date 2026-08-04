@@ -2,7 +2,7 @@
 uid: help-sv-service-settings
 title: Olika inställningar för Service
 description: Systeminställningar
-keywords: systeminställningar, service
+keywords: ['systeminställningar', 'service']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

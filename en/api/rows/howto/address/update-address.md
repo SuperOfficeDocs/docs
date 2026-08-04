@@ -2,7 +2,7 @@
 uid: row-sample-contactaddress
 title: ContactAddress
 description: SuperOffice database ContactAddress
-keywords: address, ContactRow, AddressRow
+keywords: ['address', 'ContactRow', 'AddressRow']
 author: Tony Yates
 date: 11.05.2016
 version: 8

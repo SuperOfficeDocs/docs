@@ -2,7 +2,7 @@
 uid: customer-senter-config
 title: Customer center configuration
 description: Customer center configuration
-keywords: Customer Center, CEP, parser variable
+keywords: ['Customer Center', 'CEP', 'parser variable']
 author: SuperOffice Product and Engineering
 date: 03.16.2023
 content_type: reference

@@ -2,7 +2,7 @@
 uid: webhook_extratable_event
 title: ExtraTable events
 description: ExtraTable events
-keywords: extratable webhook
+keywords: ['extratable webhook']
 author: Eivind Fasting
 date: 16.09.2025
 content_type: reference

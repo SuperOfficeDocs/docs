@@ -1,7 +1,7 @@
 ---
 uid: associatewithmail
 title: associatewithmail
-keywords: mdoprovider mdo provider associatewithmail
+keywords: ['mdoprovider mdo provider associatewithmail']
 description:
 generated: true
 content_type: reference

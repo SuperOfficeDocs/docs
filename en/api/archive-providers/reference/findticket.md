@@ -2,7 +2,7 @@
 uid: FindTicket
 title: FindTicket
 description: Ticket provider for Find
-keywords: FindTicket archive provider
+keywords: ['FindTicket archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

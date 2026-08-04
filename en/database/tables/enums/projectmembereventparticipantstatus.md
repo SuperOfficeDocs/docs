@@ -3,7 +3,7 @@ uid: enum-projectmembereventparticipantstatus
 title: Enum values for ProjectMemberEventParticipantStatus
 description: Lists the enum values for ProjectMemberEventParticipantStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

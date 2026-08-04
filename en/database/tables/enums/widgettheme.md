@@ -3,7 +3,7 @@ uid: enum-widgettheme
 title: Enum values for WidgetTheme
 description: Lists the enum values for WidgetTheme.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

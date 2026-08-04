@@ -2,7 +2,7 @@
 uid: help-da-webhook-panel
 title: Webhooks-panel
 description: Se, administrer og overvåg webhooks fra Indstillinger og vedligeholdelse.
-keywords: webhook-panel, webhook-status, deaktiveret webhook, genstart webhook, overvåg webhooks
+keywords: ['webhook-panel', 'webhook-status', 'deaktiveret webhook', 'genstart webhook', 'overvåg webhooks']
 author: digitaldiina
 date: 06.16.2026
 version: 12.1

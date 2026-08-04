@@ -2,7 +2,7 @@
 uid: ProjectGuide
 title: ProjectGuide
 description: Provider for the Project Guide, common to both Appointment and Document guide items and instances
-keywords: ProjectGuide archive provider
+keywords: ['ProjectGuide archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

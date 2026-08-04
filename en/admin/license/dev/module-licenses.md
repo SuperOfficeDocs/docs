@@ -2,7 +2,7 @@
 uid: module-licenses-technical-details
 title: Module licenses
 description: Module license fields and types.
-keywords: module license, license
+keywords: ['module license', 'license']
 author: xt1
 date: 06.10.2026
 version: 12.0

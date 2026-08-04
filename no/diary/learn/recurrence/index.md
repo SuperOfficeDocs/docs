@@ -2,7 +2,7 @@
 uid: help-no-recurrence
 title: Repeterende oppfølginger
 description: Repeterende oppfølginger
-keywords: repeterende oppfølging, repeterende møte, repeterende avtale, repeter, gjenta, møtefrekvens, oppfølgingsmønster, møteserie, dagbok, oppfølging, gjenta
+keywords: ['repeterende oppfølging', 'repeterende møte', 'repeterende avtale', 'repeter', 'gjenta', 'møtefrekvens', 'oppfølgingsmønster', 'møteserie', 'dagbok', 'oppfølging']
 author: Bergfrid Dias
 date: 02.05.2025
 version: 10.5.2

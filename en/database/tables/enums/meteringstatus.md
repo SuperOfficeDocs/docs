@@ -3,7 +3,7 @@ uid: enum-meteringstatus
 title: Enum values for MeteringStatus
 description: Lists the enum values for MeteringStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

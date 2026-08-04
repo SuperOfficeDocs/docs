@@ -2,7 +2,7 @@
 uid: help-sv-template-variables-service
 title: Mallvariabler (Service)
 description: Mallvariabler
-keywords: mallvariabler
+keywords: ['mallvariabler']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

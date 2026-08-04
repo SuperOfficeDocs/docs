@@ -4,7 +4,6 @@ uid: erp_api_ierpconnector
 description: Sync Connector API - IErpConnector
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords:
 content_type: reference
 redirect_from: /en/api/netserver/plugins/erp-connectors/api/ierpconnector
 ---

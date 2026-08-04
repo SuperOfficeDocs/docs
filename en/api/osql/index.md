@@ -4,7 +4,7 @@ title: SuperOffice Objectified SQL (OSQL)
 description: SuperOffice Objectified SQL provides low-level, high-performance, database-independent data access.
 author: SuperOffice Product and Engineering
 date: 11.16.2021
-keywords: data access, OSQL, objectified SQL, SuperOffice.CRM.Data, SuperOffice.Data, SuperOffice.Data.SQL, SODBIF
+keywords: ['data access', 'OSQL', 'objectified SQL', 'SuperOffice.CRM.Data', 'SuperOffice.Data', 'SuperOffice.Data.SQL', 'SODBIF']
 content_type: concept
 deployment: online, onsite
 platform: web, win

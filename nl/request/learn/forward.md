@@ -3,7 +3,7 @@ uid: help-nl-request-forward
 title: Verzoek doorsturen naar externe contactpersoon
 sidebarTitle: "Doorsturen"
 description: Leer hoe u een verzoek kunt doorsturen naar een externe contactpersoon in SuperOffice.
-keywords: verzoek, doorsturen, externe contactpersoon
+keywords: ['verzoek', 'doorsturen', 'externe contactpersoon']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

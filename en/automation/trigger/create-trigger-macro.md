@@ -4,7 +4,7 @@ uid: create_trigger_macro
 description: Creating a trigger - Macro
 author: Simen Mostuen Iversen
 date: 06.06.2019
-keywords: automation
+keywords: ['automation']
 content_type: howto
 index: true
 ---

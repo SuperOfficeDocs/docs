@@ -2,7 +2,7 @@
 uid: FormSubmissionSelectionV2
 title: FormSubmissionSelectionV2
 description: This is the archive Provider for the Selection FormSubmission archive.
-keywords: FormSubmissionSelectionV2 archive provider
+keywords: ['FormSubmissionSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: FormSubmissionShadowDynamicSelectionSingleCriteriaGroup
 title: FormSubmissionShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic appointmnet provider.
-keywords: FormSubmissionShadowDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['FormSubmissionShadowDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

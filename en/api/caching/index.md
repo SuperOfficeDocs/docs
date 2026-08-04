@@ -4,7 +4,7 @@ title: caching
 description: What is cached in SuperOffice and how to retrieve it.
 author: Bergfrid Dias
 date: 02.22.2022
-keywords: cache, performance
+keywords: ['cache', 'performance']
 content_type: concept
 redirect_from: /en/api/netserver/caching/index
 ---

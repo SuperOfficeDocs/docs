@@ -2,7 +2,7 @@
 uid: email-soinbox
 title: SuperOffice Inbox
 description: SuperOffice Inbox
-keywords: email
+keywords: ['email']
 author: Bergfrid Dias
 date: 03.21.2024
 content_type: concept

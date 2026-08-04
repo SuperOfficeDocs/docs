@@ -3,7 +3,7 @@ uid: update-extra-table
 title: Update an extra table from the Customer Center
 sidebarTitle: "Update an extra table"
 description: Update an extra table from the Customer Center
-keywords: Customer Center, CEP
+keywords: ['Customer Center', 'CEP']
 author: SuperOffice Product and Engineering
 date: 03.16.2023
 content_type: howto

@@ -2,7 +2,7 @@
 uid: FormSubmissionStaticSelectionV2
 title: FormSubmissionStaticSelectionV2
 description:
-keywords: FormSubmissionStaticSelectionV2 archive provider
+keywords: ['FormSubmissionStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

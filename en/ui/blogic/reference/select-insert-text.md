@@ -4,7 +4,6 @@ uid: blogic_select_insert_text
 description: Select insert text
 author:
 date:
-keywords:
 topic: reference
 ---
 

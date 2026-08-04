@@ -2,7 +2,7 @@
 uid: rest-api-search-contact
 title: Select all companies
 description: How to read all the companies in SuperOffice with REST Web API.
-keywords: contact, company, services, API, search, rest
+keywords: ['contact', 'company', 'services', 'API', 'search', 'rest']
 author: Tony Yates
 date: 11.04.2021
 content_type: howto

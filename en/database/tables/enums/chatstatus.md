@@ -3,7 +3,7 @@ uid: enum-chatstatus
 title: Enum values for ChatStatus
 description: Lists the enum values for ChatStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

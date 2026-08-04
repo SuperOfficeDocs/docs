@@ -2,7 +2,7 @@
 uid: sign_in_services
 title: Sign-in services
 description: "Learn about SuperOffice sign-in services."
-keywords: SuperID, sign-in, user account
+keywords: ['SuperID', 'sign-in', 'user account']
 author: digitaldiina
 date: 02.02.2022
 version: 12

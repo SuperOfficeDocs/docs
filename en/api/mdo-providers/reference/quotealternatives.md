@@ -1,7 +1,7 @@
 ---
 uid: quotealternatives
 title: quotealternatives
-keywords: mdoprovider mdo provider quotealternatives
+keywords: ['mdoprovider mdo provider quotealternatives']
 description: Quote alternative selector for one Quote Version. Send QuoteVersionId=&lt;id&gt; in ExtraInfo to specify quote version id
 generated: true
 content_type: reference

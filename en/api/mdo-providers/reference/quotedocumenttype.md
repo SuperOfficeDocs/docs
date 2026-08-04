@@ -1,7 +1,7 @@
 ---
 uid: quotedocumenttype
 title: quotedocumenttype
-keywords: mdoprovider mdo provider quotedocumenttype
+keywords: ['mdoprovider mdo provider quotedocumenttype']
 description: List of quote document types - assumes ExtraInfo is the name of RecordType enum value
 generated: true
 content_type: reference

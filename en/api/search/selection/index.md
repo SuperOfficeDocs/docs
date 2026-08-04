@@ -3,7 +3,7 @@ title: Selection
 description: Selection
 author: SuperOffice Product and Engineering
 date: 11.08.2021
-keywords: search, selection
+keywords: ['search', 'selection']
 content_type: concept
 redirect_from: /en/api/netserver/search/selection
 ---

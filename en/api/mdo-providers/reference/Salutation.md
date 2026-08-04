@@ -1,7 +1,7 @@
 ---
 uid: salutation
 title: salutation
-keywords: mdoprovider mdo provider salutation
+keywords: ['mdoprovider mdo provider salutation']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

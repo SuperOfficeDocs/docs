@@ -2,7 +2,7 @@
 uid: webhook_associate_event
 title: Associate events
 description: Associate events
-keywords: associate webhook
+keywords: ['associate webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

@@ -2,7 +2,7 @@
 uid: help-nl-contact-dial
 title: Contactpersonen bellen
 description: Contactpersonen bellen en telefoonvoorkeuren instellen
-keywords: agenda, vervolgactiviteit, telefoon, bellen, oproep, IP-telefoon
+keywords: ['agenda', 'vervolgactiviteit', 'telefoon', 'bellen', 'oproep', 'IP-telefoon']
 author: digitaldiina
 date: 12.05.2025
 version: 11

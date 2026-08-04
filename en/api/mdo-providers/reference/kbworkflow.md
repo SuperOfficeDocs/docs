@@ -1,7 +1,7 @@
 ---
 uid: kbworkflow
 title: kbworkflow
-keywords: mdoprovider mdo provider kbworkflow
+keywords: ['mdoprovider mdo provider kbworkflow']
 description: MDO list provider for KB Workflow.
 generated: true
 content_type: reference

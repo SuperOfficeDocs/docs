@@ -3,7 +3,7 @@ uid: enum-criterionoperator
 title: Enum values for CriterionOperator
 description: Lists the enum values for CriterionOperator.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

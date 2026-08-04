@@ -1,7 +1,7 @@
 ---
 uid: ownercontact
 title: ownercontact
-keywords: mdoprovider mdo provider ownercontact
+keywords: ['mdoprovider mdo provider ownercontact']
 description: MDO provider for listing owner contacts.
 generated: true
 content_type: reference

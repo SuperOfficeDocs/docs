@@ -4,7 +4,7 @@ uid: erp_search
 description: ERP connector search
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords: find
+keywords: ['find']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/search/index
 ---

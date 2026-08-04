@@ -4,7 +4,7 @@ uid: soapplicationconfiguration_config
 description: Application config file SoApplicationConfiguration.config
 author: Tony Yates
 date: 06.24.2016
-keywords: config
+keywords: ['config']
 content_type: concept
 platform: web
 deployment: onsite

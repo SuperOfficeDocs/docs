@@ -2,7 +2,7 @@
 uid: help-nl-document-template
 title: Documentsjabloon
 description: Documentsjabloon
-keywords: documentsjabloon, document, sjabloon
+keywords: ['documentsjabloon', 'document', 'sjabloon']
 author: Bergfrid Dias
 date: 07.16.2024
 version: 10.3

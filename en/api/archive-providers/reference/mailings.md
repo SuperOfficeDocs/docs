@@ -2,7 +2,7 @@
 uid: Mailings
 title: Mailings
 description: Archive provider for the list of mailings
-keywords: Mailings archive provider
+keywords: ['Mailings archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

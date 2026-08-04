@@ -2,7 +2,7 @@
 uid: help-sv-contact-dial
 title: Ringa till kontakter
 description: Ringa till kontakter; Telefoninställningar
-keywords: kalender, händelse, telefon, ringa upp, ringa
+keywords: ['kalender', 'händelse', 'telefon', 'ringa upp', 'ringa']
 author: digitaldiina
 date: 12.05.2025
 version: 11

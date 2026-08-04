@@ -2,7 +2,7 @@
 uid: help-nl-project-members
 title: Projectleden
 description: Projectleden
-keywords: Sectietabblad projectleden, projectlid, project
+keywords: ['Sectietabblad projectleden', 'projectlid', 'project']
 author: SuperOffice RnD
 date: 03.14.2025
 version: 10.5.2

@@ -1,7 +1,7 @@
 ---
 uid: shipmentlinks
 title: shipmentlinks
-keywords: mdoprovider mdo provider shipmentlinks
+keywords: ['mdoprovider mdo provider shipmentlinks']
 description: Create a list of specified mailings (flow, form, regular mailing/shipment...), hierarchy optional
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: help-de-project-members
 title: Projektmitglieder
 description: Projektmitglieder
-keywords: Projektteilnehmer, Bereichsregisterkarte Projektteilnehmer, Projekt, Teilnehmer, Mitglied
+keywords: ['Projektteilnehmer', 'Bereichsregisterkarte Projektteilnehmer', 'Projekt', 'Teilnehmer', 'Mitglied']
 author: SuperOffice RnD
 date: 02.11.2025
 version: 10.5.2

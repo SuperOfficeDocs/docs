@@ -2,7 +2,7 @@
 uid: supernotes-privacy-security
 title: Privacy and security
 description: Common questions about data privacy and security in SuperNotes
-keywords: SuperNotes, privacy, security, GDPR, data, storage
+keywords: ['SuperNotes', 'privacy', 'security', 'GDPR', 'data', 'storage']
 author: BredeYabo
 date: 02.04.2026
 content_type: reference

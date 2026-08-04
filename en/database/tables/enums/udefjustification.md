@@ -3,7 +3,7 @@ uid: enum-udefjustification
 title: Enum values for UdefJustification
 description: Lists the enum values for UdefJustification.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: help-no-dashboard-tile-leads
 title: Dashbord for leads
 description: Opprett dashbord for salgsleads for å spore og analysere ytelse, trender og produktivitet på tvers av alle leadaktiviteter.
-keywords: dashbord, leads, salg, UTM-data, leadfigur
+keywords: ['dashbord', 'leads', 'salg', 'UTM-data', 'leadfigur']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

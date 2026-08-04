@@ -2,7 +2,7 @@
 uid: help-nl-marketing-create-folder
 title: Een map maken
 description: Hoe maak je een map in Marketing
-keywords: map toevoegen, mapstructuur
+keywords: ['map toevoegen', 'mapstructuur']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

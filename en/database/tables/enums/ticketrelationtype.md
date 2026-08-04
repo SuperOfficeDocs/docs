@@ -3,7 +3,7 @@ uid: enum-ticketrelationtype
 title: Enum values for TicketRelationType
 description: Lists the enum values for TicketRelationType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: ContactStaticSelection
 title: ContactStaticSelection
 description:
-keywords: ContactStaticSelection archive provider
+keywords: ['ContactStaticSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

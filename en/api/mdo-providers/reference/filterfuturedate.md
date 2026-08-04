@@ -1,7 +1,7 @@
 ---
 uid: filterfuturedate
 title: filterfuturedate
-keywords: mdoprovider mdo provider filterfuturedate
+keywords: ['mdoprovider mdo provider filterfuturedate']
 description: MDO provider for the hard-coded list of future date alternatives in the Filter dialog. Each items' extraInfo contains the number of days into the future that this choice represents, slightly simplified (30 days per month and no leap years).
 generated: true
 content_type: reference

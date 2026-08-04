@@ -2,7 +2,7 @@
 uid: help-sv-add-items-to-resource-list
 title: Lägg till resurs
 description: Lägga till poster i listan Resurs
-keywords: resurs, listan Allmänt - Resurs
+keywords: ['resurs', 'listan Allmänt - Resurs']
 author: digitaldiina
 date: 10.27.2025
 version: 10.5

@@ -2,7 +2,7 @@
 uid: help-nl-template-variables-service
 title: Sjabloonvariabelen (Service)
 description: Sjabloonvariabelen
-keywords: sjabloonvariabelen
+keywords: ['sjabloonvariabelen']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

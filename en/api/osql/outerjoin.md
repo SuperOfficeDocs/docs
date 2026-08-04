@@ -4,7 +4,6 @@ uid: osql_join_outer
 description: SuperOffice Objectified SQL - RIGHT OUTER JOIN
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: concept
 redirect_from: /en/api/netserver/osql/outerjoin
 hidden: true

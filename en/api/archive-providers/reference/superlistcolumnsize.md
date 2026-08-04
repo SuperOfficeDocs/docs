@@ -2,7 +2,7 @@
 uid: SuperListColumnSize
 title: SuperListColumnSize
 description:
-keywords: SuperListColumnSize archive provider
+keywords: ['SuperListColumnSize archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

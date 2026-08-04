@@ -1,7 +1,7 @@
 ---
 uid: fonttype
 title: fonttype
-keywords: mdoprovider mdo provider fonttype
+keywords: ['mdoprovider mdo provider fonttype']
 description: List of font types
 generated: true
 content_type: reference

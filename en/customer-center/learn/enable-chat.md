@@ -2,7 +2,7 @@
 uid: help-en-customer-center-chat
 title: Connect chat to your Customer centre
 description: Learn how to connect a chat channel to your Customer centre in this how-to guide.
-keywords: chat, customer center
+keywords: ['chat', 'customer center']
 author: Bergfrid Dias
 date: 02.22.2023
 content_type: howto

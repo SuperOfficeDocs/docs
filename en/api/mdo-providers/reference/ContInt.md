@@ -1,7 +1,7 @@
 ---
 uid: contint
 title: contint
-keywords: mdoprovider mdo provider contint
+keywords: ['mdoprovider mdo provider contint']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

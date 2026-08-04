@@ -2,7 +2,7 @@
 uid: help-sv-chat
 title: Chatt
 description: Kommunicera med och hjälp befintliga eller potentiella kunder via en chattwidget på din webbplats.
-keywords: chatt, pågående chats
+keywords: ['chatt', 'pågående chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

@@ -3,7 +3,7 @@ uid: enum-logevent
 title: Enum values for LogEvent
 description: Lists the enum values for LogEvent.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -1,7 +1,7 @@
 ---
 uid: groupview
 title: groupview
-keywords: mdoprovider mdo provider groupview
+keywords: ['mdoprovider mdo provider groupview']
 description: GroupViewMDOProvider uses the AssociateMDOProvider + DiaryView to create the MDOlist for Groupview in Diary view.
 generated: true
 content_type: reference

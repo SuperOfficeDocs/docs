@@ -2,7 +2,7 @@
 uid: TicketNewNotification
 title: TicketNewNotification
 description:
-keywords: TicketNewNotification archive provider
+keywords: ['TicketNewNotification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

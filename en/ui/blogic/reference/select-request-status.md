@@ -4,7 +4,6 @@ uid: blogic_select_request_status
 description: Select request status
 author:
 date:
-keywords:
 topic: reference
 ---
 

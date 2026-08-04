@@ -4,7 +4,7 @@ uid: ns_config_superid
 description: NetServer configuration values for accessing SuperID.
 date: 12.09.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, SuperID, TenantKey, TenantId, Environment
+keywords: ['config', 'NetServer', 'web.config', 'SuperID', 'TenantKey', 'TenantId', 'Environment']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/superid

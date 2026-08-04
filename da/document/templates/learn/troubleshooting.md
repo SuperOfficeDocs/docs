@@ -2,7 +2,7 @@
 uid: help-da-document-template-troubleshooting
 title: Fejlfinding
 description: Sådan opdager og løser du problemer, når du bruger SuperOffice skabelonvariabler i Microsoft 365 dokumenter.
-keywords: dokumentskabelon, skabelonvariabel, dokument
+keywords: ['dokumentskabelon', 'skabelonvariabel', 'dokument']
 author: Bergfrid Dias
 date: 07.16.2024
 content_type: howto

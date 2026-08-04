@@ -1,7 +1,7 @@
 ---
 uid: ticketalert
 title: ticketalert
-keywords: mdoprovider mdo provider ticketalert
+keywords: ['mdoprovider mdo provider ticketalert']
 description:
 generated: true
 content_type: reference

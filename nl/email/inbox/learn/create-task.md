@@ -2,7 +2,7 @@
 uid: help-nl-email-inbox-create-task
 title: Taak maken
 description: Leer hoe u een taak maakt in SuperOffice CRM op basis van een e-mailbericht
-keywords: taak, vervolgactiviteit, e-mail archiveren, postvak in, taak maken, vervolgactiviteit van e-mail, e-mail
+keywords: ['taak', 'vervolgactiviteit', 'e-mail archiveren', 'postvak in', 'taak maken', 'vervolgactiviteit van e-mail', 'e-mail']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

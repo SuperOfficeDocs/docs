@@ -3,7 +3,7 @@ uid: enum-executeonevent
 title: Enum values for ExecuteOnEvent
 description: Lists the enum values for ExecuteOnEvent.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

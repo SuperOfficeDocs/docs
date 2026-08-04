@@ -4,7 +4,7 @@ uid: ns_config_client_configuration
 description: NetServer configuration for the Web client configuration data provider.
 date: 12.17.2021
 author: Bergfrid Dias
-keywords: web.config, ClientConfigurationProvider, FilePath, cache, CustomPath
+keywords: ['web.config', 'ClientConfigurationProvider', 'FilePath', 'cache', 'CustomPath']
 content_type: reference
 deployment: onsite
 platform: web

@@ -3,7 +3,7 @@ uid: help-da-privacy-add-purpose
 title: Angiv indstillinger for Privacy for GDPR - Tilføj formål
 sidebarTitle: "Tilføj formål"
 description: Få flere oplysninger om, hvordan du konfigurerer indstillingerne for Privacy for dit firma.
-keywords: personbeskyttelsesindstilling, tilføj formål, ekstern personbeskyttelseserklæring
+keywords: ['personbeskyttelsesindstilling', 'tilføj formål', 'ekstern personbeskyttelseserklæring']
 author: SuperOffice Product and Engineering
 date: 09.01.2025
 version: 10.5

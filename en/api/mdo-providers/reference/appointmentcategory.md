@@ -1,7 +1,7 @@
 ---
 uid: appointmentcategory
 title: appointmentcategory
-keywords: mdoprovider mdo provider appointmentcategory
+keywords: ['mdoprovider mdo provider appointmentcategory']
 description:
 generated: true
 content_type: reference

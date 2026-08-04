@@ -1,7 +1,7 @@
 ---
 uid: webpanel
 title: webpanel
-keywords: mdoprovider mdo provider webpanel
+keywords: ['mdoprovider mdo provider webpanel']
 description: List of WebPanels visible possible for use with groups and headings.
 generated: true
 content_type: reference

@@ -1,7 +1,7 @@
 ---
 uid: importblankaction
 title: importblankaction
-keywords: mdoprovider mdo provider importblankaction
+keywords: ['mdoprovider mdo provider importblankaction']
 description: Import actions for blank values - Use Person Name, Skip
 generated: true
 content_type: reference

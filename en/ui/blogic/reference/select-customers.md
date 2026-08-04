@@ -4,7 +4,6 @@ uid: blogic_select_contacts
 description: Select contacts
 author:
 date:
-keywords:
 topic: reference
 ---
 

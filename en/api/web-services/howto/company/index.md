@@ -2,7 +2,7 @@
 uid: api-contact-services
 title: Contact - services
 description: Working with companies (contact) in API with services.
-keywords: contact, company, services, API
+keywords: ['contact', 'company', 'services', 'API']
 author: Bergfrid Skaara Dias
 date: 05.23.2025
 version: 10

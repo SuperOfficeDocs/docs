@@ -2,7 +2,7 @@
 uid: help-no-customer-centre-form
 title: Bruke webskjemaer i kundesenteret
 description: I denne guiden lærer du hvordan du bruker et webskjema.
-keywords: skjema, Kundesenter
+keywords: ['skjema', 'Kundesenter']
 author: Bergfrid Dias
 date: 03.20.2023
 content_type: howto

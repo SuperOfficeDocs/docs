@@ -2,7 +2,7 @@
 uid: cdd
 title: Continuous Database (CD)
 description: Continuous Database (CD)
-keywords: database
+keywords: ['database']
 author: SuperOffice Product and Engineering
 date: 07.16.2026
 content_type: concept

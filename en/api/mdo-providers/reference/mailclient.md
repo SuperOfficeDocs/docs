@@ -1,7 +1,7 @@
 ---
 uid: mailclient
 title: mailclient
-keywords: mdoprovider mdo provider mailclient
+keywords: ['mdoprovider mdo provider mailclient']
 description:
 generated: true
 content_type: reference

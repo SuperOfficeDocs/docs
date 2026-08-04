@@ -2,7 +2,7 @@
 uid: help-no-email-inbox-create-task
 title: Opprett oppgave
 description: Lær hvordan du oppretter en oppgave i SuperOffice CRM basert på en e-postmelding
-keywords: oppgave, oppfølging, arkivere e-post, innboks, opprett oppgave, oppfølging fra e-post, e-post
+keywords: ['oppgave', 'oppfølging', 'arkivere e-post', 'innboks', 'opprett oppgave', 'oppfølging fra e-post', 'e-post']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

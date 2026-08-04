@@ -2,7 +2,7 @@
 uid: help-no-edit-privacy-confirmation-email
 title: Rediger e-post med personvernbekreftelse
 description: I denne veiledningen lærer du hvordan du redigerer e-postbekreftelsen for personvern.
-keywords: e-post med personvernbekreftelse, e-post mal
+keywords: ['e-post med personvernbekreftelse', 'e-post mal']
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10

@@ -3,7 +3,7 @@ title: Securing ERP Connectors for SuperOffice Online
 uid: erp_security
 description: Securing ERP Connectors for SuperOffice Online
 author: SuperOffice Product and Engineering
-keywords: sync
+keywords: ['sync']
 content_type: concept
 deployment: online
 platform: web

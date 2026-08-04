@@ -2,7 +2,7 @@
 uid: i_mirror_client_service
 title: IMirrorClientService interface (legacy)
 description: IMirrorClientService interface
-keywords: IMirrorClientService, mirroring, WCF, legacy
+keywords: ['IMirrorClientService', 'mirroring', 'WCF', 'legacy']
 author: SuperOffice Product and Engineering
 date: 06.05.2026
 version: 12

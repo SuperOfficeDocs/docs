@@ -4,7 +4,7 @@ uid: ns_config_oidclogin
 description: NetServer utility class to get access to values related to CRM OIDC login
 date: 12.08.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, OidcLogin, OIDC
+keywords: ['config', 'NetServer', 'web.config', 'OidcLogin', 'OIDC']
 content_type: reference
 deployment: online
 redirect_from: /en/api/netserver/config/oidclogin

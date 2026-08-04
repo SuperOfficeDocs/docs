@@ -2,7 +2,7 @@
 uid: ConfigurableArchiveAppointment
 title: ConfigurableArchiveAppointment
 description: This is the archive Provider for the Configurable appointment Archive.
-keywords: ConfigurableArchiveAppointment archive provider
+keywords: ['ConfigurableArchiveAppointment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

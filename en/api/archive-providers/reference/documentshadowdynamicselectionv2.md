@@ -2,7 +2,7 @@
 uid: DocumentShadowDynamicSelectionV2
 title: DocumentShadowDynamicSelectionV2
 description: Document shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: DocumentShadowDynamicSelectionV2 archive provider
+keywords: ['DocumentShadowDynamicSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

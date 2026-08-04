@@ -4,7 +4,7 @@ uid: standard-app-publish
 description: Publish standard app in CRM Online environment
 author: Margrethe Romnes
 date: 12.04.2025
-keywords: App Store
+keywords: ['App Store']
 content_type: howto
 deployment: online
 platform: web

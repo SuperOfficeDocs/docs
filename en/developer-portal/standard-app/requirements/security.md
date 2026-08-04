@@ -2,7 +2,7 @@
 uid: security-requirements
 title: Security requirements
 description: Security requirements
-keywords: certification
+keywords: ['certification']
 author: Margrethe Romnes, Tony Yates
 date: 12.04.2025
 content_type: reference

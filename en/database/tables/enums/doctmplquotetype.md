@@ -3,7 +3,7 @@ uid: enum-doctmplquotetype
 title: Enum values for DocTmplQuoteType
 description: Lists the enum values for DocTmplQuoteType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

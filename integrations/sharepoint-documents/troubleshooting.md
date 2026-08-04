@@ -2,7 +2,7 @@
 uid: sharepoint-troubleshooting
 title: Troubleshooting
 description: Troubleshooting SharePoint Documents
-keywords: SharePoint, document, Microsoft Entra, ME-ID, AAD
+keywords: ['SharePoint', 'document', 'Microsoft Entra', 'ME-ID', 'AAD']
 author: digitaldiina
 date: 01.15.2024
 content_type: howto

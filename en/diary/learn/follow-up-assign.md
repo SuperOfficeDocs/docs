@@ -2,7 +2,7 @@
 uid: help-en-follow-up-assign
 title: Delegate
 description: Assign a follow-up to someone else
-keywords: assign follow-up, delegate follow-up, diary, follow-up, assign, delegate
+keywords: ['assign follow-up', 'delegate follow-up', 'diary', 'follow-up', 'assign', 'delegate']
 author: Bergfrid Dias
 date: 01.10.2025
 version: 10.5

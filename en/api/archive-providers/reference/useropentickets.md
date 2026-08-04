@@ -2,7 +2,7 @@
 uid: UserOpenTickets
 title: UserOpenTickets
 description:
-keywords: UserOpenTickets archive provider
+keywords: ['UserOpenTickets archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

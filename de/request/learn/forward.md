@@ -2,7 +2,7 @@
 uid: help-de-request-forward
 title: Anfrage an externen Kontakt weiterleiten
 description: Erfahren Sie, wie Sie eine Anfrage in SuperOffice weiterleiten.
-keywords: Anfrage, weiterleiten, externe Person, externe Kontakte
+keywords: ['Anfrage', 'weiterleiten', 'externe Person', 'externe Kontakte']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

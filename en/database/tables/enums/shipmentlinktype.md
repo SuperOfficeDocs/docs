@@ -3,7 +3,7 @@ uid: enum-shipmentlinktype
 title: Enum values for ShipmentLinkType
 description: Lists the enum values for ShipmentLinkType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

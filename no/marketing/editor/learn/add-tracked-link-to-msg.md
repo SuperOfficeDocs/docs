@@ -2,7 +2,7 @@
 uid: help-no-mailing-add-tracked-link
 title: Legge til sporede koblinger i meldinger
 description: Finn ut hvordan du legger til en sporet kobling i denne veiledningen. Du kan enten bruke en forhåndsinnstilt sporet kobling til å spore klikk på tvers av flere utsendelser, eller konfigurere en ny kobling som bare er tilgjengelig i denne utsendelsen.
-keywords: Markedsføring, utsendelse, sporede koblinger,
+keywords: ['Markedsføring', 'utsendelse', 'sporede koblinger']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

@@ -1,7 +1,7 @@
 ---
 uid: workflowtimewaitalgorithm
 title: workflowtimewaitalgorithm
-keywords: mdoprovider mdo provider workflowtimewaitalgorithm
+keywords: ['mdoprovider mdo provider workflowtimewaitalgorithm']
 description: MDO provider for the WorkflowTimeWaitAlgorithm enum
 generated: true
 content_type: reference

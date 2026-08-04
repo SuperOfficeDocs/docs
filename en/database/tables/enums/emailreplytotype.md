@@ -3,7 +3,7 @@ uid: enum-emailreplytotype
 title: Enum values for EmailReplyToType
 description: Lists the enum values for EmailReplyToType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

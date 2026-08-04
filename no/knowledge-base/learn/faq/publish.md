@@ -2,7 +2,7 @@
 uid: help-no-document-faq-publish
 title: Publisere FAQ-oppføringer
 description: Publisere FAQ-oppføringer
-keywords: FAQ
+keywords: ['FAQ']
 author: SuperOffice Product and Engineering
 date: 07.15.2025
 version: 10.5

@@ -4,7 +4,7 @@ uid: ns_config_featuretoggles
 description: NetServer FeatureToggles element
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, FeatureToggles, State, feature toggles
+keywords: ['config', 'NetServer', 'web.config', 'FeatureToggles', 'State', 'feature toggles']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/featuretoggles

@@ -1,7 +1,7 @@
 ---
 uid: persint
 title: persint
-keywords: mdoprovider mdo provider persint
+keywords: ['mdoprovider mdo provider persint']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

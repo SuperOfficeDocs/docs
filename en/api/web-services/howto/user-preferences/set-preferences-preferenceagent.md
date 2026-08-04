@@ -2,7 +2,7 @@
 uid: set-preferences-ws
 title: Set preferences using services
 description: How to set preferences using services
-keywords: preference, PreferenceSpec, PreferenceAgent
+keywords: ['preference', 'PreferenceSpec', 'PreferenceAgent']
 author: digitaldiina
 date: 02.22.2022
 content_type: howto

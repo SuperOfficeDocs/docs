@@ -2,7 +2,7 @@
 uid: AppointmentSelectionV2
 title: AppointmentSelectionV2
 description: This is the archive Provider for the Selection appouintment archive.
-keywords: AppointmentSelectionV2 archive provider
+keywords: ['AppointmentSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

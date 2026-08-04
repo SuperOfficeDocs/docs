@@ -2,7 +2,7 @@
 uid: help-nl-links
 title: Koppelingen
 description: Koppelingen
-keywords: Koppeling toevoegen, tabblad Koppelingen, Koppeling
+keywords: ['Koppeling toevoegen', 'tabblad Koppelingen', 'Koppeling']
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2

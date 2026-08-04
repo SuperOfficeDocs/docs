@@ -3,7 +3,7 @@ title: Udef on contact
 uid: udef_on_contact
 description: Udef on contact
 author: SuperOffice Product and Engineering
-keywords: entity
+keywords: ['entity']
 content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database

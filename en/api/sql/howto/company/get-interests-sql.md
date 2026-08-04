@@ -2,7 +2,7 @@
 uid: get-interests-sql
 title: Get interests for contact
 description: How to get interests for a contact from the SuperOffice database using raw SQL.
-keywords: contact, company, interest, SQL, API
+keywords: ['contact', 'company', 'interest', 'SQL', 'API']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: howto

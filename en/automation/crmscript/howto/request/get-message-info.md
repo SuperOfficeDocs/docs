@@ -2,7 +2,7 @@
 uid: crmscript-message-load
 title: Get message info
 description: How to load and get info about a request message with CRMScript.
-keywords: CRMScript, Service, ticket, request, message, load, getValue, attachment
+keywords: ['CRMScript', 'Service', 'ticket', 'request', 'message', 'load', 'getValue', 'attachment']
 author: Bergfrid Skaara Dias
 date: 05.26.2023
 version: 10

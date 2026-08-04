@@ -1,7 +1,7 @@
 ---
 uid: timezone
 title: timezone
-keywords: mdoprovider mdo provider timezone
+keywords: ['mdoprovider mdo provider timezone']
 description:
 generated: true
 content_type: reference

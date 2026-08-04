@@ -2,7 +2,7 @@
 uid: mail-link-debug
 title: Debug Mail Link
 description: Learn how to enable debug logging for SuperOffice Mail Link and locate the log file.
-keywords: debug MailLink, log_settings.xml, EnableDebug
+keywords: ['debug MailLink', 'log_settings.xml', 'EnableDebug']
 author: digitaldiina
 date: 03.17.2026
 content_type: howto

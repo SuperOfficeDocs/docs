@@ -1,7 +1,7 @@
 ---
 uid: enrichcontact
 title: enrichcontact
-keywords: mdoprovider mdo provider enrichcontact
+keywords: ['mdoprovider mdo provider enrichcontact']
 description: List of possible contacts to import from outside sources.
 generated: true
 content_type: reference

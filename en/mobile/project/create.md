@@ -2,7 +2,7 @@
 uid: mobile-crm-project-create
 title: Create project
 description: How to create projects in SuperOffice Mobile CRM.
-keywords: create project, add project, new project, project
+keywords: ['create project', 'add project', 'new project', 'project']
 author: digitaldiina
 date: 06.10.2026
 version: 11.1

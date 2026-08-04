@@ -1,7 +1,7 @@
 ---
 uid: htmlmailing
 title: htmlmailing
-keywords: mdoprovider mdo provider htmlmailing
+keywords: ['mdoprovider mdo provider htmlmailing']
 description: MDO provider for the different types of Mailings
 generated: true
 content_type: reference

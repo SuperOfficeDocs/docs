@@ -3,7 +3,7 @@ uid: configure-email-invitations
 title: How to configure email invitations for video meetings
 sidebarTitle: "Configure email invitations for video meetings"
 description: How to configure video meetings in SuperOffice
-keywords: video meetings
+keywords: ['video meetings']
 author: SuperOffice Product and Engineering
 date: 10.16.2025
 content_type: howto

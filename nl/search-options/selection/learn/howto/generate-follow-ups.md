@@ -2,7 +2,7 @@
 uid: help-nl-selection-generate-follow-ups
 title: Vervolgactiviteiten genereren
 description: Vervolgactiviteiten genereren
-keywords: selectie
+keywords: ['selectie']
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3

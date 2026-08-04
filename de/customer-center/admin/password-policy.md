@@ -2,7 +2,7 @@
 uid: help-de-service-global-preferences-customer-centre-password
 title: Richtlinie für Kundenzentrum-Passwörter
 description: Globale Einstellungen für die Richtlinie für Kundenzentrum-Passwörter
-keywords: Service, Einstellungen
+keywords: ['Service', 'Einstellungen']
 author: SuperOffice RnD
 date: 03.29.2023
 content_type: concept

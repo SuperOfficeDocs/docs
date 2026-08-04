@@ -2,7 +2,7 @@
 uid: DocumentStaticSelection
 title: DocumentStaticSelection
 description:
-keywords: DocumentStaticSelection archive provider
+keywords: ['DocumentStaticSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

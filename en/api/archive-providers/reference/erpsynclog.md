@@ -2,7 +2,7 @@
 uid: ErpSyncLog
 title: ErpSyncLog
 description:
-keywords: ErpSyncLog archive provider
+keywords: ['ErpSyncLog archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

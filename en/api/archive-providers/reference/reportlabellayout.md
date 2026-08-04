@@ -2,7 +2,7 @@
 uid: ReportLabelLayout
 title: ReportLabelLayout
 description: This archive provider enables access to the information regarding report label layout.
-keywords: ReportLabelLayout archive provider
+keywords: ['ReportLabelLayout archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

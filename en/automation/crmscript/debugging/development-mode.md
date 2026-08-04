@@ -3,7 +3,6 @@ uid: crmscript_debug_development_mode
 title: Debugging CRMScript modules
 author:
 date:
-keywords:
 content_type: howto
 ---
 

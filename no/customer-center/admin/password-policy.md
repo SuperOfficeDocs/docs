@@ -2,7 +2,7 @@
 uid: help-no-service-global-preferences-customer-centre-password
 title: Passordregler for Kundesenter
 description: Globale preferanser for passordregler for kundesenter
-keywords: Tjeneste, innstillinger
+keywords: ['Tjeneste', 'innstillinger']
 author: SuperOffice RnD
 date: 03.29.2023
 content_type: concept

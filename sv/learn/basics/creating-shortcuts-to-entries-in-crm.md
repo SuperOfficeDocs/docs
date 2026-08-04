@@ -3,7 +3,7 @@ uid: help-sv-creating-shortcuts-to-entries-in-crm
 title: Skapa genvägar till poster i SuperOffice CRM
 sidebarTitle: "Skapa genvägar"
 description: Skapa genvägar till poster i CRM
-keywords: kopiera genväg
+keywords: ['kopiera genväg']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3

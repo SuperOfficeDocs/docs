@@ -3,7 +3,7 @@ uid: news-api-11
 title: What's new in SuperOffice 11
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 11
-keywords: API changes, database changes
+keywords: ['API changes', 'database changes']
 author: SuperOffice AS - Product and engineering
 date: 06.10.2025
 version: 11

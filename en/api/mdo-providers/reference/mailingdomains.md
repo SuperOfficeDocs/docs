@@ -1,7 +1,7 @@
 ---
 uid: mailingdomains
 title: mailingdomains
-keywords: mdoprovider mdo provider mailingdomains
+keywords: ['mdoprovider mdo provider mailingdomains']
 description: MDO list provider for Mailing domains, including leading @
 generated: true
 content_type: reference

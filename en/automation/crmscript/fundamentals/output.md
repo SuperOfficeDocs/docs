@@ -3,7 +3,6 @@ uid: crmscript_fundamentals_write_output
 title: Write output
 author:
 date:
-keywords:
 content_type: concept
 ---
 

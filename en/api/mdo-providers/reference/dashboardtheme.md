@@ -1,7 +1,7 @@
 ---
 uid: dashboardtheme
 title: dashboardtheme
-keywords: mdoprovider mdo provider dashboardtheme
+keywords: ['mdoprovider mdo provider dashboardtheme']
 description:
 generated: true
 content_type: reference

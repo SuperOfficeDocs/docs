@@ -2,7 +2,7 @@
 uid: help-nl-service-screen-properties
 title: Schermeigenschappen
 description: Schermeigenschappen
-keywords: scherm
+keywords: ['scherm']
 author: SuperOffice RnD
 date: 06.29.2022
 content_type: reference

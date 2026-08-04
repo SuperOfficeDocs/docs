@@ -2,7 +2,7 @@
 uid: api-services-document-access
 title: Configuring document access
 description: How to configure document access
-keywords: document, API, services, document agent, SO_ARC, ArchivePath, TemporaryPath, ImpersonateUser
+keywords: ['document', 'API', 'services', 'document agent', 'SO_ARC', 'ArchivePath', 'TemporaryPath', 'ImpersonateUser']
 author: Tony Yates
 date: 12.08.2021
 version: 10

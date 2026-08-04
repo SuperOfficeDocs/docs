@@ -4,7 +4,7 @@ uid: ns_config_intellisyncconnector
 description: NetServer configuration settings used by SoIntellisyncConnector.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, SoIntellisyncConnector
+keywords: ['config', 'NetServer', 'web.config', 'SoIntellisyncConnector']
 content_type: reference
 deployment: onsite
 version: 6

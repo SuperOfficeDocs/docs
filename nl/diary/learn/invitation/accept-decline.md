@@ -3,7 +3,7 @@ uid: help-nl-invitation-accept
 title: Vervolgactiviteiten waarvoor u bent uitgenodigd
 sidebarTitle: "Uitgenodigde vervolgactiviteiten"
 description: Vervolgactiviteiten weergeven waarvoor u bent uitgenodigd
-keywords: agenda, vervolgactiviteit, uitnodiging
+keywords: ['agenda', 'vervolgactiviteit', 'uitnodiging']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

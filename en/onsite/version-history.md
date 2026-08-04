@@ -4,7 +4,7 @@ uid: version_history
 description: SuperOffice version history overview
 author: Martin Pavlas
 date: 05.05.2025
-keywords: onsite, version, history, release
+keywords: ['onsite', 'version', 'history', 'release']
 content_type: reference
 deployment: onsite
 ---

@@ -2,7 +2,7 @@
 uid: crmscript-debug-using-trace
 title: Using trace
 description: How to trace a CRMScript.
-keywords: Trace script, trace CRMScript, debug CRMScript
+keywords: ['Trace script', 'trace CRMScript', 'debug CRMScript']
 author: digitaldiina
 date: 11.26.2025
 version: 11.6

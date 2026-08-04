@@ -2,7 +2,7 @@
 uid: ns_config_googlerecaptcha
 title: GoogleRecaptcha element
 description: NetServer configuration values for the Google reCAPTCHA validation service.
-keywords: config, NetServer, web.config, Google reCAPTCHA, GoogleRecaptcha, SecretKey, SiteKey, VerificationUrl
+keywords: ['config', 'NetServer', 'web.config', 'Google reCAPTCHA', 'GoogleRecaptcha', 'SecretKey', 'SiteKey', 'VerificationUrl']
 author: Bergfrid Dias
 date: 03.05.2024
 content_type: reference

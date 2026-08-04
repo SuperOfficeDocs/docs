@@ -2,7 +2,7 @@
 uid: Ticket
 title: Ticket
 description: This is the archive Provide for the Person Archive of the Contact Panel - or to use GUI terminology, the Contact archive of the Company panel.
-keywords: Ticket archive provider
+keywords: ['Ticket archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

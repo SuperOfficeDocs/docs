@@ -4,7 +4,7 @@ uid: netserver_setdefaults
 description: SetDefaults method best practices
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords: entity,row
+keywords: ['entity', 'row']
 content_type: concept
 deployment: onsite
 redirect_from: /en/api/netserver/entities/setdefaults

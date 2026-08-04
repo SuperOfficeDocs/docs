@@ -2,7 +2,7 @@
 uid: PersonProjects
 title: PersonProjects
 description:
-keywords: PersonProjects archive provider
+keywords: ['PersonProjects archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: help-de-selection-board-view
 title: Board-Ansicht in Selektionen verwenden
 description: Selektionen mit der Board-Ansicht visualisieren - mit Gruppierung, Filtern und Drag-and-Drop-Karten
-keywords: Board-Ansicht, Selektionsansicht, Selektion, Verkaufsboard, Projektboard, Anfrageboard, Kanban, gruppieren nach, Filterleiste, Verkaufsdatum-Badge, Tage in Phase, Tage seit Registrierung
+keywords: ['Board-Ansicht', 'Selektionsansicht', 'Selektion', 'Verkaufsboard', 'Projektboard', 'Anfrageboard', 'Kanban', 'gruppieren nach', 'Filterleiste', 'Verkaufsdatum-Badge', 'Tage in Phase', 'Tage seit Registrierung']
 author: digitaldiina
 date: 12.02.2025
 version: 11.7

@@ -2,7 +2,7 @@
 uid: FreetextSale
 title: FreetextSale
 description: Archive provider for freetext search on the Sale entity.
-keywords: FreetextSale archive provider
+keywords: ['FreetextSale archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

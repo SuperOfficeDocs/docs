@@ -2,7 +2,7 @@
 uid: TicketNotification
 title: TicketNotification
 description: Retrieves pending request notifications for current user
-keywords: TicketNotification archive provider
+keywords: ['TicketNotification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

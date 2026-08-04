@@ -4,7 +4,7 @@ uid: quote_connector_carrier_pluginresponseinfo
 description: ERP Quote Connector Interface data carrier - PluginResponseInfo
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/pluginresponseinfo
 ---

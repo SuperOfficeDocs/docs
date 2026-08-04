@@ -1,7 +1,7 @@
 ---
 uid: ticketstatuswithpostpone
 title: ticketstatuswithpostpone
-keywords: mdoprovider mdo provider ticketstatuswithpostpone
+keywords: ['mdoprovider mdo provider ticketstatuswithpostpone']
 description:
 generated: true
 content_type: reference

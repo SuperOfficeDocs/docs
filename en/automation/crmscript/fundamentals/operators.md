@@ -3,7 +3,6 @@ uid: crmscript_fundamentals_operators
 title: Operators
 author:
 date:
-keywords:
 content_type: concept
 ---
 

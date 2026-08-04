@@ -2,7 +2,7 @@
 uid: AppointmentDynamicSelectionV2
 title: AppointmentDynamicSelectionV2
 description: Appointment selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: AppointmentDynamicSelectionV2 archive provider
+keywords: ['AppointmentDynamicSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: get-person-from-contact-row
 title: Retrieve a list of people using rows
 description: How to retrieve a list of people using rows.
-keywords: person, contact, API, rows, PersonRows
+keywords: ['person', 'contact', 'API', 'rows', 'PersonRows']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

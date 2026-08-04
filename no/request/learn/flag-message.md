@@ -2,7 +2,7 @@
 uid: help-no-request-message-flag
 title: Holde oversikt over meldinger
 description: Holde oversikt over meldinger
-keywords: sak, melding, flagg
+keywords: ['sak', 'melding', 'flagg']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

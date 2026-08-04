@@ -3,7 +3,7 @@ uid: enum-salestatus
 title: Enum values for SaleStatus
 description: Lists the enum values for SaleStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

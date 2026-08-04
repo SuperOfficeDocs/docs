@@ -2,7 +2,7 @@
 uid: help-de-stakeholder-create
 title: Beteiligte hinzufügen
 description: Wie man einen Verkauf mit einem Beteiligten (Firma oder Person) in SuperOffice verknüpft.
-keywords: Beteiligten hinzufügen, neuer Beteiligter, Beteiligten bearbeiten, Beteiligte hinzufügen/bearbeiten, Rolle zuweisen, Bereichsregisterkarte Beteiligte, Beteiligter, Verkauf
+keywords: ['Beteiligten hinzufügen', 'neuer Beteiligter', 'Beteiligten bearbeiten', 'Beteiligte hinzufügen/bearbeiten', 'Rolle zuweisen', 'Bereichsregisterkarte Beteiligte', 'Beteiligter', 'Verkauf']
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2

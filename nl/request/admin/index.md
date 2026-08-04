@@ -2,7 +2,7 @@
 uid: help-nl-service-settings
 title: Verschillende instellingen voor Service
 description: Systeeminstellingen
-keywords: Service
+keywords: ['Service']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

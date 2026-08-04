@@ -2,7 +2,7 @@
 uid: QuoteLineSelectionV2
 title: QuoteLineSelectionV2
 description: This is the archive Provider for the Selection QuoteLine archive.
-keywords: QuoteLineSelectionV2 archive provider
+keywords: ['QuoteLineSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: help-sv-request-message-split
 title: Dela meddelande
 description: Dela meddelande i ett ärende i SuperOffice Service.
-keywords: dela meddelande, ärende, meddelanden, splittra meddelande
+keywords: ['dela meddelande', 'ärende', 'meddelanden', 'splittra meddelande']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

@@ -1,7 +1,7 @@
 ---
 uid: weekday
 title: weekday
-keywords: mdoprovider mdo provider weekday
+keywords: ['mdoprovider mdo provider weekday']
 description: MDO provider for the hard-coded list of week days.
 generated: true
 content_type: reference

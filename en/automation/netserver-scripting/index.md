@@ -5,7 +5,6 @@ description: Scripting in NetServer services
 author: Tony Yates
 date: 04.15.2009
 content_type: concept
-keywords:
 deployment: onsite
 platform: web
 ---

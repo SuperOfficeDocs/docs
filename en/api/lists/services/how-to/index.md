@@ -2,7 +2,7 @@
 title: web-service-list-tutorials
 description: List of tutorials how to work with list web service APIs
 author: AnthonyYates
-keywords: list,agent
+keywords: ['list', 'agent']
 content_type: howto
 date: 03.03.2022
 category: list

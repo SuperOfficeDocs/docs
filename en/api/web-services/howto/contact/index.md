@@ -2,7 +2,7 @@
 uid: api-person-services
 title: Person - services
 description: Working with contacts (person) in API with services
-keywords: person, contact, services, API
+keywords: ['person', 'contact', 'services', 'API']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: concept

@@ -2,7 +2,7 @@
 uid: LinksProject
 title: LinksProject
 description:
-keywords: LinksProject archive provider
+keywords: ['LinksProject archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

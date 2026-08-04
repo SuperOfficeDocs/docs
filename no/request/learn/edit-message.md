@@ -2,7 +2,7 @@
 uid: help-no-request-message-edit
 title: Redigere melding
 description: Slik redigerer du en melding i en sak i SuperOffice
-keywords: redigere melding, oppdatere melding, sak
+keywords: ['redigere melding', 'oppdatere melding', 'sak']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

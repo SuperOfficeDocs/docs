@@ -2,7 +2,7 @@
 uid: sop-create-document
 title: Create Document
 description: How to create a Document using the soprotocol
-keywords: soprotocol, document, create
+keywords: ['soprotocol', 'document', 'create']
 author: Eivind Fasting
 date: 11.26.2024
 content_type: howto

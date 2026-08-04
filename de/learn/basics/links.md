@@ -2,7 +2,7 @@
 uid: help-de-links
 title: Verknüpfungen
 description: Verknüpfungen
-keywords: Link hinzufügen, Registerkarte Verknüpfungen, Verknüpfung, Link
+keywords: ['Link hinzufügen', 'Registerkarte Verknüpfungen', 'Verknüpfung', 'Link']
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2

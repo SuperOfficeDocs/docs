@@ -2,7 +2,7 @@
 uid: help-da-customer-center-chat
 title: Knyt chat til dit kundecenter
 description: Få mere at vide om, hvordan du tilknytter en chatkanal til dit kundecenter, i denne vejledning.
-keywords: chat, kundecenter
+keywords: ['chat', 'kundecenter']
 author: Bergfrid Dias
 date: 02.22.2023
 content_type: howto

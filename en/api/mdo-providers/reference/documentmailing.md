@@ -1,7 +1,7 @@
 ---
 uid: documentmailing
 title: documentmailing
-keywords: mdoprovider mdo provider documentmailing
+keywords: ['mdoprovider mdo provider documentmailing']
 description: Document shipments (mail merges).
 generated: true
 content_type: reference

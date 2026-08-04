@@ -2,7 +2,7 @@
 uid: help-en-document-template-troubleshooting
 title: Troubleshooting
 description: How to spot and fix problems when using SuperOffice template variables in Microsoft 365 documents.
-keywords: document template, template variable, document
+keywords: ['document template', 'template variable', 'document']
 author: Bergfrid Dias
 date: 07.11.2024
 content_type: howto

@@ -3,7 +3,7 @@ title: Expanding quick search
 uid: expand-quick-search
 description: Expanding quick search functionality
 author: Hans Wilhelmsen
-keywords: Service, quicksearch, screen chooser
+keywords: ['Service', 'quicksearch', 'screen chooser']
 content_type: howto
 date: 09.30.2013
 ---

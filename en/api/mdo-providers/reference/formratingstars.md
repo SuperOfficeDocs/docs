@@ -1,7 +1,7 @@
 ---
 uid: formratingstars
 title: formratingstars
-keywords: mdoprovider mdo provider formratingstars
+keywords: ['mdoprovider mdo provider formratingstars']
 description: MDO provider for the Ratings as used in forms
 generated: true
 content_type: reference

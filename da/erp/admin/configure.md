@@ -2,7 +2,7 @@
 uid: help-da-erp-configure
 title: Konfigurere ERP-link
 description: Konfigurer synkronisering mellem SuperOffice CRM og dit ERP-system ved at tilknytte felter, angive standardværdier og prioritere ERP-links.
-keywords: ERP-link, konfigurere synk, felttilknytning, listetilknytning, standardværdier, ranger ERP-felter, angiv synkprioritet, rediger ERP-link, SuperOffice ERP-integration, ERP-fanen, sync connector
+keywords: ['ERP-link', 'konfigurere synk', 'felttilknytning', 'listetilknytning', 'standardværdier', 'ranger ERP-felter', 'angiv synkprioritet', 'rediger ERP-link', 'SuperOffice ERP-integration', 'ERP-fanen', 'sync connector']
 author: Bergfrid Dias
 date: 03.31.2025
 version: 10.5

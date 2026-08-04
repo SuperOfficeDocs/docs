@@ -2,7 +2,7 @@
 uid: update-person-sql
 title: Update a person
 description: How to update a person in the SuperOffice database with raw SQL.
-keywords: person, contact, update, API, SQL
+keywords: ['person', 'contact', 'update', 'API', 'SQL']
 author: Bergfrid Skaara Dias
 date: 11.02.2021
 content_type: howto

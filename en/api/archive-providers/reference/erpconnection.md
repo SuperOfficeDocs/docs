@@ -2,7 +2,7 @@
 uid: ErpConnection
 title: ErpConnection
 description: Archive of ERP Connections, used by the ERP Integration Server
-keywords: ErpConnection archive provider
+keywords: ['ErpConnection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

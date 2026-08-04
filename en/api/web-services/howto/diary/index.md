@@ -2,7 +2,7 @@
 uid: api-diary-services
 title: Diary - services
 description: Working with appointments via web services
-keywords: diary, calendar, appointment, invitation, API, web services
+keywords: ['diary', 'calendar', 'appointment', 'invitation', 'API', 'web services']
 author: Bergfrid Skaara Dias
 date: 03.18.2022
 content_type: concept

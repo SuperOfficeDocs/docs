@@ -2,7 +2,7 @@
 uid: help-en-project-members
 title: Project members
 description: Project members
-keywords: Project members section tab, project member, project
+keywords: ['Project members section tab', 'project member', 'project']
 author: SuperOffice RnD
 date: 02.25.2025
 version: 10.5.2

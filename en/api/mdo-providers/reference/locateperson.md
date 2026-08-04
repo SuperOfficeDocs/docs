@@ -1,7 +1,7 @@
 ---
 uid: locateperson
 title: locateperson
-keywords: mdoprovider mdo provider locateperson
+keywords: ['mdoprovider mdo provider locateperson']
 description: Person list with contact name.
 generated: true
 content_type: reference

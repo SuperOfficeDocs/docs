@@ -1,7 +1,7 @@
 ---
 uid: documenthandler
 title: documenthandler
-keywords: mdoprovider mdo provider documenthandler
+keywords: ['mdoprovider mdo provider documenthandler']
 description:
 generated: true
 content_type: reference

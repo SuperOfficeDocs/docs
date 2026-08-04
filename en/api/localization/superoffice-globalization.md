@@ -2,7 +2,7 @@
 uid: superoffice-globalization
 title: SuperOffice.Globalization namespace
 description: SuperOffice.Globalization namespace
-keywords: SuperOffice.Globalization
+keywords: ['SuperOffice.Globalization']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: reference

@@ -2,7 +2,7 @@
 uid: help-sv-invitation-accept
 title: Händelser du har inbjudits till
 description: Visa händelser du har inbjudits till; Acceptera eller tacka nej till inbjudningar
-keywords: kalender, händelse, förfrågning
+keywords: ['kalender', 'händelse', 'förfrågning']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

@@ -1,7 +1,7 @@
 ---
 uid: perspos
 title: perspos
-keywords: mdoprovider mdo provider perspos
+keywords: ['mdoprovider mdo provider perspos']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

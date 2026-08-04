@@ -2,7 +2,7 @@
 uid: ChatConversationShadowSelectionCombinedV2
 title: ChatConversationShadowSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ChatConversationShadowSelectionCombinedV2 archive provider
+keywords: ['ChatConversationShadowSelectionCombinedV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

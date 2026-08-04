@@ -3,7 +3,7 @@ uid: troubleshooting_satellite
 title: Troubleshoot satellite
 description: If you have problems with satellite management
 author: SuperOffice Product and Engineering
-keywords: travel satellite
+keywords: ['travel satellite']
 content_type: howto
 deployment: onsite
 platform: win

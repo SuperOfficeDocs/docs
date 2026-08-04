@@ -2,7 +2,7 @@
 uid: TicketStaticSelectionV2
 title: TicketStaticSelectionV2
 description: Static archive Provider for a Selection of tickets archive.
-keywords: TicketStaticSelectionV2 archive provider
+keywords: ['TicketStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

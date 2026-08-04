@@ -2,7 +2,7 @@
 uid: toggle-contact-interest-entity
 title: How to set an interest on or off
 description: How to set an interest on or off for a contact using entities
-keywords: contact, company, interest, entity, API, ContactInterestHelper, SetItemSelection
+keywords: ['contact', 'company', 'interest', 'entity', 'API', 'ContactInterestHelper', 'SetItemSelection']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

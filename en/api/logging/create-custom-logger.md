@@ -4,7 +4,7 @@ title: Building your own logger
 description: How to create a custom logger,
 author: xt1
 date: 05.07.2021
-keywords: logging
+keywords: ['logging']
 content_type: howto
 redirect_from: /en/api/netserver/logging/create-custom-logger
 ---

@@ -4,7 +4,7 @@ uid: ns_config_Threading
 description: NetServer configuration values related to threading.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, Threading, DisableMultithreading, ForceMultithreading, MaxParellalThreads, single-threaded, multi-threaded, parallel
+keywords: ['config', 'NetServer', 'web.config', 'Threading', 'DisableMultithreading', 'ForceMultithreading', 'MaxParellalThreads', 'single-threaded', 'multi-threaded', 'parallel']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/threading

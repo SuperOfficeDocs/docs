@@ -4,7 +4,6 @@ uid: crmscript_blogic_query_syntax
 description: Query syntax
 author:
 date:
-keywords:
 content_type: concept
 ---
 

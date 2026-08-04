@@ -3,7 +3,7 @@ uid: enum-criteriagroupdirection
 title: Enum values for CriteriaGroupDirection
 description: Lists the enum values for CriteriaGroupDirection.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

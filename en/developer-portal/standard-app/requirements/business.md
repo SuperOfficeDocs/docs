@@ -4,7 +4,7 @@ uid: app-business-requirements
 description: "Business requirements for certifying standard applications."
 author: Margrethe Romnes
 date: 02.02.2022
-keywords: certification, apps
+keywords: ['certification', 'apps']
 content_type: reference
 deployment: online
 platform: web

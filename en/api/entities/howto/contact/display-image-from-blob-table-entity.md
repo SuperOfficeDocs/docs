@@ -2,7 +2,7 @@
 uid: display-image-from-blob-entity
 title: How to display an image from the Blob table
 description: How to display an image from the Blob table
-keywords: person, contact, entity, API, BinaryObject, BLOB, image, BinaryObjectRow, GetFromIdxMimeType
+keywords: ['person', 'contact', 'entity', 'API', 'BinaryObject', 'BLOB', 'image', 'BinaryObjectRow', 'GetFromIdxMimeType']
 author: Bergfrid Skaara Dias
 date: 11.02.2021
 content_type: howto

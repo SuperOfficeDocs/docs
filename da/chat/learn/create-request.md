@@ -2,7 +2,7 @@
 uid: help-da-chat-create-request
 title: Opret sag i en aktiv chat
 description: I denne vejledning lærer du, hvordan du opretter en sag i SuperOffice Chat.
-keywords: opret sag, kan ikke løse via chat
+keywords: ['opret sag', 'kan ikke løse via chat']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

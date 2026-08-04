@@ -2,7 +2,7 @@
 uid: help-sv-tracked-links-reset
 title: Nollställa räknare för länkar
 description: Nollställa räknare för länkar
-keywords: Marknadsföring
+keywords: ['Marknadsföring']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

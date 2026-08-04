@@ -1,7 +1,7 @@
 ---
 uid: diaryowner
 title: diaryowner
-keywords: mdoprovider mdo provider diaryowner
+keywords: ['mdoprovider mdo provider diaryowner']
 description: List provider that returns diary owners, i.e., our own employees plus resources
 generated: true
 content_type: reference

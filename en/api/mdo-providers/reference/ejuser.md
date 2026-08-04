@@ -1,7 +1,7 @@
 ---
 uid: ejuser
 title: ejuser
-keywords: mdoprovider mdo provider ejuser
+keywords: ['mdoprovider mdo provider ejuser']
 description:
 generated: true
 content_type: reference

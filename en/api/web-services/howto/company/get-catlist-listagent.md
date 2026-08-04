@@ -2,7 +2,7 @@
 uid: get-category-list-listagent
 title: Get a CategoryList using the ListAgent
 description: Get a CategoryList through ListAgent
-keywords: category, list agent
+keywords: ['category', 'list agent']
 author: Tony Yates
 date: 02.21.2022
 content_type: howto

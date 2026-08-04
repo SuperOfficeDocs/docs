@@ -2,7 +2,7 @@
 uid: help-de-document-template-troubleshooting
 title: Fehlerbehebung
 description: So erkennen und beheben Sie Probleme bei der Verwendung von SuperOffice-Vorlagenvariablen in Microsoft 365-Dokumenten.
-keywords: Dokumentvorlage, Vorlagenvariable, Dokument
+keywords: ['Dokumentvorlage', 'Vorlagenvariable', 'Dokument']
 author: Bergfrid Dias
 date: 07.16.2024
 content_type: howto

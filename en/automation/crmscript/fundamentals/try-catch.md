@@ -3,7 +3,6 @@ uid: crmscript_fundamentals_try_catch
 title: Control - try...catch
 author:
 date:
-keywords:
 content_type: concept
 ---
 

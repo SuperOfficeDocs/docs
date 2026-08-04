@@ -2,7 +2,7 @@
 uid: NewsFeedItem
 title: NewsFeedItem
 description: Archive provider for the user's list of newsfeed items. Handled and expired items are filtered out of the list.
-keywords: NewsFeedItem archive provider
+keywords: ['NewsFeedItem archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

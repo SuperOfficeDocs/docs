@@ -2,7 +2,7 @@
 uid: SimpleSelection
 title: SimpleSelection
 description:
-keywords: SimpleSelection archive provider
+keywords: ['SimpleSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

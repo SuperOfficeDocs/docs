@@ -2,7 +2,7 @@
 uid: odata-filters
 title: Using filters
 description: Using ODATA filters
-keywords: search, odata, webapi, filter
+keywords: ['search', 'odata', 'webapi', 'filter']
 author: Tony Yates, Eivind Fasting
 date: 06.18.2024
 content_type: howto

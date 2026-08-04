@@ -1,7 +1,7 @@
 ---
 uid: salestatus
 title: salestatus
-keywords: mdoprovider mdo provider salestatus
+keywords: ['mdoprovider mdo provider salestatus']
 description: List for the Sale.Status field - Open, Lost, Sold, Stalled.
 generated: true
 content_type: reference

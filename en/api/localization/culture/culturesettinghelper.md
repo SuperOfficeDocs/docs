@@ -2,7 +2,7 @@
 uid: localization-culturesettinghelper
 title: Culture Helper
 description: CultureSettingHelper class
-keywords: CultureSettingHelper
+keywords: ['CultureSettingHelper']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: concept

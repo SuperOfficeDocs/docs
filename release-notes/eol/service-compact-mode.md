@@ -3,7 +3,7 @@ uid: eol-service-compact-mode
 title: End of life - SuperOffice Service CompactMode
 sidebarTitle: "SuperOffice Service CompactMode"
 description: This is a formal announcement of end of life for our SuperOffice Service CompactMode
-keywords: Service, request, mobile, compact mode, CompactMode, Mobile CRM
+keywords: ['Service', 'request', 'mobile', 'compact mode', 'CompactMode', 'Mobile CRM']
 author: kirstiaa
 date: 01.13.2026
 version: 11.8

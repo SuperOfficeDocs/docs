@@ -2,7 +2,7 @@
 uid: help-sv-in-app-help
 title: Använda hjälp i appen
 description: Använda hjälp i appen i SuperOffice CRM
-keywords: hjälp, i appen, i appen
+keywords: ['hjälp', 'i appen']
 author: SuperOffice RnD
 date: 01.25.2023
 content_type: concept

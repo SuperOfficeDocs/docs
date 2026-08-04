@@ -2,7 +2,7 @@
 uid: webhook_person_event
 title: Person webhook events
 description: Person events
-keywords: person webhook
+keywords: ['person webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

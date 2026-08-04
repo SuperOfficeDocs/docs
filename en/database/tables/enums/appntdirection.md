@@ -3,7 +3,7 @@ uid: enum-appntdirection
 title: Enum values for AppntDirection
 description: Lists the enum values for AppntDirection.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

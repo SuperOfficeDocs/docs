@@ -2,7 +2,7 @@
 uid: help-de-template-variables
 title: Vorlagenvariablen
 description: Mit Vorlagenvariablen können Sie die Eingabe von Kundendaten personalisieren und automatisieren.
-keywords: Vorlagenvariablen, Dokument, Vorlage, Variable
+keywords: ['Vorlagenvariablen', 'Dokument', 'Vorlage', 'Variable']
 author: Bergfrid Dias
 date: 12.10.2024
 version: 10.3

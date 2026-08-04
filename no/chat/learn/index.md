@@ -2,7 +2,7 @@
 uid: help-no-chat
 title: Chat
 description: Kommunisere med og hjelpe eksisterende eller potensielle kunder ved hjelp av en chat-widget på nettstedet ditt.
-keywords: chat, pågående chats
+keywords: ['chat', 'pågående chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

@@ -2,7 +2,7 @@
 uid: ChatConversationShadowDynamicSelectionSingleCriteriaGroup
 title: ChatConversationShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic appointmnet provider.
-keywords: ChatConversationShadowDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['ChatConversationShadowDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

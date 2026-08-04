@@ -2,7 +2,7 @@
 uid: help-da-contact
 title: Kontaktperson
 description: Skærmbilledet Person giver et øjebliksbillede af al kommunikation og interaktion med en person. Her kan du administrere personoplysninger, spore aktiviteter og få adgang til GDPR-relateret dokumentation.
-keywords: skærmbilledet Person, kontaktperson, person
+keywords: ['skærmbilledet Person', 'kontaktperson', 'person']
 author: Bergfrid Dias
 date: 03.07.2025
 version: 10.5.2

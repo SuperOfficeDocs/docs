@@ -2,7 +2,7 @@
 uid: help-sv-document-template-troubleshooting
 title: Felsökning
 description: Hur du upptäcker och åtgärdar problem när du använder SuperOffice mallvariabler i Microsoft 365-dokument.
-keywords: dokumentmall, mallvariabel, dokument
+keywords: ['dokumentmall', 'mallvariabel', 'dokument']
 author: Bergfrid Dias
 date: 07.16.2024
 content_type: howto

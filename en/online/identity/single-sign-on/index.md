@@ -2,7 +2,7 @@
 uid: singel_sign_on
 title: Single sign-on
 description: Single sign-on
-keywords: SSO
+keywords: ['SSO']
 author: SuperOffice Product and Engineering
 date: 07.31.2026
 version: 12

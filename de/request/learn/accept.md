@@ -3,7 +3,7 @@ uid: help-de-request-accept
 title: Anfrage annehmen (Verantwortung übernehmen)
 sidebarTitle: "Anfrage annehmen"
 description: So nehmen Sie eine Anfrage an, um zu vermeiden, dass mehrere Personen gleichzeitig auf dieselbe Anfrage antworten.
-keywords: Anfrage annehmen, übernehmen, Verantwortung, Anfrageeigentümer, nächste in Warteschlange, Anfrage, beantworten, annehmen, übernehment
+keywords: ['Anfrage annehmen', 'übernehmen', 'Verantwortung', 'Anfrageeigentümer', 'nächste in Warteschlange', 'Anfrage', 'beantworten', 'annehmen', 'übernehment']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

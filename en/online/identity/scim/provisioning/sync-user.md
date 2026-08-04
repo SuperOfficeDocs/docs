@@ -2,7 +2,6 @@
 uid: sync_user
 title: Sync user to SuperOffice now
 description: Sync user to SuperOffice now
-keywords:
 author: SuperOffice Product and Engineering
 date: 07.31.2026
 version: 12

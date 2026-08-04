@@ -4,7 +4,7 @@ uid: upgrade_to_81_sales
 description: Upgrade to 8.1 when using the old Sales domain
 author: Martin Pavlas
 date: 12.08.2021
-keywords: upgrade
+keywords: ['upgrade']
 content_type: howto
 deployment: onsite
 ---

@@ -2,7 +2,7 @@
 uid: service-log-files
 title: Log files
 description: Service log files
-keywords: log, debug
+keywords: ['log', 'debug']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 content_type: concept

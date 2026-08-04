@@ -1,7 +1,7 @@
 ---
 uid: personwithmail
 title: personwithmail
-keywords: mdoprovider mdo provider personwithmail
+keywords: ['mdoprovider mdo provider personwithmail']
 description: List of persons fetched based on provided criteria Output is in format - "Person Full Name &lt;person@mail.com&gt;" Optional - Get multiple emails pr. person. (getallemails)
 generated: true
 content_type: reference

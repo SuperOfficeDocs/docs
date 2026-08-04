@@ -2,7 +2,7 @@
 uid: help-sv-contact
 title: Kontaktperson
 description: Fönstret Kontakt ger en snabb överblick över all kommunikation och interaktion med en person. Här kan du hantera kontaktuppgifter, spåra aktiviteter och komma åt GDPR-relaterad dokumentation.
-keywords: kontaktkort, kontaktperson, kontakt, GDPR, aktivitet
+keywords: ['kontaktkort', 'kontaktperson', 'kontakt', 'GDPR', 'aktivitet']
 author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2

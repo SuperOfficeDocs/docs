@@ -2,7 +2,7 @@
 uid: SelectionMemberStatic
 title: SelectionMemberStatic
 description: Provider for the Selection Member table
-keywords: SelectionMemberStatic archive provider
+keywords: ['SelectionMemberStatic archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

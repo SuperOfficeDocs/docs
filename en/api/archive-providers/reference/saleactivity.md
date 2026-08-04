@@ -2,7 +2,7 @@
 uid: SaleActivity
 title: SaleActivity
 description: Activity archive provider for the Sale card
-keywords: SaleActivity archive provider
+keywords: ['SaleActivity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -1,7 +1,7 @@
 ---
 uid: locatecontact
 title: locatecontact
-keywords: mdoprovider mdo provider locatecontact
+keywords: ['mdoprovider mdo provider locatecontact']
 description: Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will return contact records.
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: help-da-follow-up-assign
 title: Deleger en opfølgning
 description: Overførsel af en opfølgning til andre
-keywords: dagbog, opfølgning, medarbejder, deleger, tildele
+keywords: ['dagbog', 'opfølgning', 'medarbejder', 'deleger', 'tildele']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

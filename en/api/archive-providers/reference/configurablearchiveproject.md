@@ -2,7 +2,7 @@
 uid: ConfigurableArchiveProject
 title: ConfigurableArchiveProject
 description: This is the archive Provider for the Configurable project Archive.
-keywords: ConfigurableArchiveProject archive provider
+keywords: ['ConfigurableArchiveProject archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

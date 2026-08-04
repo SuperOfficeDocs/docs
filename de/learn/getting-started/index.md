@@ -2,7 +2,7 @@
 uid: help-de-getting-started
 title: Erste Schritte mit SuperOffice CRM
 description: Erfahren Sie, wie Sie Ihr Benutzerkonto aktivieren, Ihre E-Mail und Dokumente verknüpfen und Ihre persönlichen Einstellungen anpassen.
-keywords: CRM
+keywords: ['CRM']
 author: Bergfrid Dias
 date: 05.04.2026
 version: 11.13

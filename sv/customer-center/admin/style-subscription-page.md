@@ -2,7 +2,7 @@
 uid: help-sv-customer-center-subscription-page-styling
 title: Styling av prenumerationssida
 description: Hur du anpassar design och text på prenumerationssidan så att den stämmer överens med din varumärkesidentitet.
-keywords: prenumerationssida, avregistrering, bekräftelsesida
+keywords: ['prenumerationssida', 'avregistrering', 'bekräftelsesida']
 author: digitaldiina
 date: 03.17.2026
 version: 11.11

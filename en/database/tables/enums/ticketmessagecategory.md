@@ -3,7 +3,7 @@ uid: enum-ticketmessagecategory
 title: Enum values for TicketMessageCategory
 description: Lists the enum values for TicketMessageCategory.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

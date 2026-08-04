@@ -3,7 +3,7 @@ title: Associate
 uid: rest_api_search_associate
 description: REST Web API search associate
 author: SuperOffice Product and Engineering
-keywords: search,odata
+keywords: ['search', 'odata']
 date:
 content_type: howto
 redirect_from: /en/api/netserver/search/odata/associate

@@ -1,7 +1,7 @@
 ---
 uid: onlinefontlibrary
 title: onlinefontlibrary
-keywords: mdoprovider mdo provider onlinefontlibrary
+keywords: ['mdoprovider mdo provider onlinefontlibrary']
 description: MDO provider for the available fonts from the Online Template Library.
 generated: true
 content_type: reference

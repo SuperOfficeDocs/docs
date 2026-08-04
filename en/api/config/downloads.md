@@ -4,7 +4,7 @@ uid: ns_config_Downloads
 description: NetServer configuration values related to Downloads.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, WebTools, Downloads, DownloadFolder, NewTrayAppUrl, ReportingInterval, WebSiteEndPoint, WebToolVersion
+keywords: ['config', 'NetServer', 'web.config', 'WebTools', 'Downloads', 'DownloadFolder', 'NewTrayAppUrl', 'ReportingInterval', 'WebSiteEndPoint', 'WebToolVersion']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/downloads

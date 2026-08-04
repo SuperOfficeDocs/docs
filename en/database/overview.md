@@ -2,7 +2,7 @@
 uid: database-documentation-overview
 title: database
 description: SuperOffice database documentation
-keywords: database
+keywords: ['database']
 author: SuperOffice Product and Engineering
 date: 07.28.2026
 content_type: concept

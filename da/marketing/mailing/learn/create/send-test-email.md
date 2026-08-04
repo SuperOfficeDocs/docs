@@ -3,7 +3,7 @@ uid: help-da-mailing-send-test
 title: Send en test-e-mail i forbindelse med e-mailudsendelser og formularbesvarelser
 sidebarTitle: "Send test-e-mail"
 description: I denne vejledning lærer du, hvordan du bruger en webformular.
-keywords: test-e-mail
+keywords: ['test-e-mail']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

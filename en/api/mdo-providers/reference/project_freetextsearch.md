@@ -1,7 +1,7 @@
 ---
 uid: project_freetextsearch
 title: project_freetextsearch
-keywords: mdoprovider mdo provider project_freetextsearch
+keywords: ['mdoprovider mdo provider project_freetextsearch']
 description: Provider for selecting a Project. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields.
 generated: true
 content_type: reference

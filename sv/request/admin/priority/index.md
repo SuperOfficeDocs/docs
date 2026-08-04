@@ -2,7 +2,7 @@
 uid: help-sv-request-priority
 title: Ärendeprioriteter
 description: Ärendeprioriteter
-keywords: ärendeprioritet, prioritet, eskalering, ärende
+keywords: ['ärendeprioritet', 'prioritet', 'eskalering', 'ärende']
 author: digitaldiina
 version: 12.0
 content_type: concept

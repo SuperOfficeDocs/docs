@@ -2,7 +2,7 @@
 uid: help-de-webhook-panel
 title: Webhooks-Panel
 description: Webhooks in Einstellungen und Verwaltung anzeigen, verwalten und überwachen.
-keywords: Webhook-Panel, Webhook-Status, deaktivierter Webhook, Webhook neu starten, Webhooks überwachen
+keywords: ['Webhook-Panel', 'Webhook-Status', 'deaktivierter Webhook', 'Webhook neu starten', 'Webhooks überwachen']
 author: digitaldiina
 date: 06.16.2026
 version: 12.1

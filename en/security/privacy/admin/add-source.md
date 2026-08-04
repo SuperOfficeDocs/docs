@@ -2,7 +2,7 @@
 uid: help-en-privacy-add-source
 title: Add items to the Privacy - Source list
 description: Learn how to change the privacy lists in this how-to guide.
-keywords: Privacy - Source list, add privacy source
+keywords: ['Privacy - Source list', 'add privacy source']
 author: SuperOffice Product and Engineering
 date: 09.02.2025
 version: 10.3

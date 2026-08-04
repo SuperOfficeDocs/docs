@@ -3,7 +3,7 @@ uid: help-de-invitation
 title: Mitarbeiter zu einer Folgeaufgabe einladen
 sidebarTitle: "Mitarbeiter einladen"
 description: Folgeaufgaben bei anderen Mitarbeitern eintragen
-keywords: Kalender, Folgeaufgabe, Einladung, Besprechung, Teilnehmer, einladen
+keywords: ['Kalender', 'Folgeaufgabe', 'Einladung', 'Besprechung', 'Teilnehmer', 'einladen']
 author: digitaldiina
 date: 03.27.2026
 version: 11.11

@@ -2,7 +2,7 @@
 uid: help-de-follow-up-assign
 title: Folgeaufgabe delegieren
 description: Eine Folgeaufgabe einer anderen Person zuweisen
-keywords: Folgeaufgabe zuweisen, Folgeaufgabe delegieren, Mitarbeiter, Kalender, Folgeaufgabe, zuweisen, delegieren, Neu zuweisen
+keywords: ['Folgeaufgabe zuweisen', 'Folgeaufgabe delegieren', 'Mitarbeiter', 'Kalender', 'Folgeaufgabe', 'zuweisen', 'delegieren', 'Neu zuweisen']
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2

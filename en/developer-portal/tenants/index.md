@@ -2,7 +2,7 @@
 uid: dp-tenants
 title: Tenant management
 description: Tenant management
-keywords: standard app, public app, App Store, custom app, tenant
+keywords: ['standard app', 'public app', 'App Store', 'custom app', 'tenant']
 author: Bergfrid Dias
 date: 12.10.2024
 version_devportal: 1.29

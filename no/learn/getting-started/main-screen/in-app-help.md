@@ -2,7 +2,7 @@
 uid: help-no-in-app-help
 title: Bruke hjelp i appen
 description: Bruke hjelp i appen i SuperOffice CRM
-keywords: hjelp, i appen, i appen
+keywords: ['hjelp', 'i appen']
 author: SuperOffice RnD
 date: 01.25.2023
 content_type: concept

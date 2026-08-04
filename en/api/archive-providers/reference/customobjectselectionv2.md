@@ -2,7 +2,7 @@
 uid: CustomObjectSelectionV2
 title: CustomObjectSelectionV2
 description: This is the archive Provider for the Selection CustomObject archive.
-keywords: CustomObjectSelectionV2 archive provider
+keywords: ['CustomObjectSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

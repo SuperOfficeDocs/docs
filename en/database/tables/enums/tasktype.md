@@ -3,7 +3,7 @@ uid: enum-tasktype
 title: Enum values for TaskType
 description: Lists the enum values for TaskType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

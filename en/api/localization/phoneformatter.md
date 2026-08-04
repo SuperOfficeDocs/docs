@@ -2,7 +2,7 @@
 uid: localization-phone-formatter
 title: Phone formatter
 description: Localization, class PhoneFormatter
-keywords: PhoneFormatter
+keywords: ['PhoneFormatter']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: reference

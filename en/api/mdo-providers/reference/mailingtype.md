@@ -1,7 +1,7 @@
 ---
 uid: mailingtype
 title: mailingtype
-keywords: mdoprovider mdo provider mailingtype
+keywords: ['mdoprovider mdo provider mailingtype']
 description: Mailing types - Html mail, SMS, Word Document
 generated: true
 content_type: reference

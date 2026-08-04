@@ -1,7 +1,7 @@
 ---
 uid: importduplicateaction
 title: importduplicateaction
-keywords: mdoprovider mdo provider importduplicateaction
+keywords: ['mdoprovider mdo provider importduplicateaction']
 description: Import Duplicate actions - Add, Merge, Replace, Skip
 generated: true
 content_type: reference

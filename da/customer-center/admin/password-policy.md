@@ -2,7 +2,7 @@
 uid: help-da-service-global-preferences-customer-centre-password
 title: Adgangskodepolitik for Customer Centre
 description: Globale præferencer for adgangskodepolitik for Customer Centre
-keywords: Tjeneste, indstillinger
+keywords: ['Tjeneste', 'indstillinger']
 author: SuperOffice RnD
 date: 03.29.2023
 content_type: reference

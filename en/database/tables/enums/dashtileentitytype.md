@@ -3,7 +3,7 @@ uid: enum-dashtileentitytype
 title: Enum values for DashTileEntityType
 description: Lists the enum values for DashTileEntityType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

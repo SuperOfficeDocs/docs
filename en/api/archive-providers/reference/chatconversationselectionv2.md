@@ -2,7 +2,7 @@
 uid: ChatConversationSelectionV2
 title: ChatConversationSelectionV2
 description: This is the archive Provider for the Selection archive.
-keywords: ChatConversationSelectionV2 archive provider
+keywords: ['ChatConversationSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

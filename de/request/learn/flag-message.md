@@ -2,7 +2,7 @@
 uid: help-de-request-message-flag
 title: Nachrichten nachverfolgen
 description: So behalten Sie den Überblick über Nachrichten in einer Anfrage
-keywords: Anfrage, Nachricht, Markierung, Kennzeichnung, Flagge
+keywords: ['Anfrage', 'Nachricht', 'Markierung', 'Kennzeichnung', 'Flagge']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

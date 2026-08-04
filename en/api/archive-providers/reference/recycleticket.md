@@ -2,7 +2,7 @@
 uid: RecycleTicket
 title: RecycleTicket
 description:
-keywords: RecycleTicket archive provider
+keywords: ['RecycleTicket archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

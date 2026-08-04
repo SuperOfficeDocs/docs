@@ -2,7 +2,7 @@
 uid: mirroring_conceptual_overview_2016
 title: Conceptual overview (legacy)
 description: Conceptual overview of the legacy WCF-based Database Mirroring service (2016 design).
-keywords: legacy, WCF, mirroring
+keywords: ['legacy', 'WCF', 'mirroring']
 author: Tony Yates
 date: 04.20.2016
 version: 11

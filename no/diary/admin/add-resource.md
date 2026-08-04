@@ -2,7 +2,7 @@
 uid: help-no-add-items-to-resource-list
 title: Legg til ressurs
 description: Legge til forekomster på listen Ressurs
-keywords: ressurs, listen Generelt - Ressurs
+keywords: ['ressurs', 'listen Generelt - Ressurs']
 author: digitaldiina
 date: 10.27.2025
 version: 10.5

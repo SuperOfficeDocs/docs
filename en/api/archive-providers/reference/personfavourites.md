@@ -2,7 +2,7 @@
 uid: personfavourites
 title: personfavourites
 description:
-keywords: personfavourites archive provider
+keywords: ['personfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

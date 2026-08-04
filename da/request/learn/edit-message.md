@@ -2,7 +2,7 @@
 uid: help-da-request-message-edit
 title: Rediger meddelelse
 description: Sådan redigerer du en meddelelse i en sag i SuperOffice
-keywords: rediger meddelelsesegenskaber, opdater meddelelsesegenskaber, ændr meddelelsesegenskaber, rediger meddelelse, opdater meddelelse, sag
+keywords: ['rediger meddelelsesegenskaber', 'opdater meddelelsesegenskaber', 'ændr meddelelsesegenskaber', 'rediger meddelelse', 'opdater meddelelse', 'sag']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

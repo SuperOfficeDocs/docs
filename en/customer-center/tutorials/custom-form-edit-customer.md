@@ -2,7 +2,7 @@
 uid: custom-form-edit-customer
 title: Custom form - edit customer
 description: Custom form in Customer Centre to edit a customer
-keywords: CRMScript, Customer Center, form
+keywords: ['CRMScript', 'Customer Center', 'form']
 author: kronicz
 date: 09.15.2011
 content_type: tutorial

@@ -4,7 +4,7 @@ uid: bulkupdate_selection_table
 description: Bulk update selection table
 author: Tony Yates
 date: 06.23.2017
-keywords: bulk update, selection
+keywords: ['bulk update', 'selection']
 content_type: reference
 envir: cloud
 client: online

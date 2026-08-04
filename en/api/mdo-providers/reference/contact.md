@@ -1,7 +1,7 @@
 ---
 uid: contact
 title: contact
-keywords: mdoprovider mdo provider contact
+keywords: ['mdoprovider mdo provider contact']
 description: Provider for selecting a Contact - without person search
 generated: true
 content_type: reference

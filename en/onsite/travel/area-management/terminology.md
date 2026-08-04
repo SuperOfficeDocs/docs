@@ -3,7 +3,6 @@ uid: area_management_terminology
 title: terminology
 description: Area Management definitions
 author: SuperOffice Product and Engineering
-keywords:
 date:
 content_type: concept
 deployment: onsite

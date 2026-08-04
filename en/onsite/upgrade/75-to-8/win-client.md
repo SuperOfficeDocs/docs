@@ -3,7 +3,6 @@ title: Upgrade Windows client
 uid: upgrade_win_client_to_8
 description: Upgrade Windows client
 author: SuperOffice Product and Engineering
-keywords:
 content_type: howto
 deployment: onsite
 platform: win

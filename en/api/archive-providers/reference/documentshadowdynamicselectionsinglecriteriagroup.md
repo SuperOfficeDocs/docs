@@ -2,7 +2,7 @@
 uid: DocumentShadowDynamicSelectionSingleCriteriaGroup
 title: DocumentShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic document provider.
-keywords: DocumentShadowDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['DocumentShadowDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

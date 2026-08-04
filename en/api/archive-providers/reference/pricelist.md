@@ -2,7 +2,7 @@
 uid: PriceList
 title: PriceList
 description: Archive of Pricelists - used by the web api.
-keywords: PriceList archive provider
+keywords: ['PriceList archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

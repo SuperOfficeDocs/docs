@@ -3,7 +3,7 @@ uid: help-sv-request-forward
 title: Vidarebefordra ärende till extern kontakt
 sidebarTitle: "Vidarebefordra"
 description: Lär dig hur du vidarebefordrar ett ärende i den här guiden.
-keywords: vidarebefordra ärende, ärende, extern kontakt
+keywords: ['vidarebefordra ärende', 'ärende', 'extern kontakt']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

@@ -1,7 +1,7 @@
 ---
 uid: everymonth
 title: everymonth
-keywords: mdoprovider mdo provider everymonth
+keywords: ['mdoprovider mdo provider everymonth']
 description: MDO provider for the hard-coded list of day month in the recurrence dialog.
 generated: true
 content_type: reference

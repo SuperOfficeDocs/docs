@@ -3,7 +3,7 @@ title: Network and firewall configuration
 uid: network_and_firewall_config
 description: Network and firewall configuration for SuperOffice onsite
 author: SuperOffice Product and Engineering
-keywords: security
+keywords: ['security']
 content_type: concept
 deployment: onsite
 platform: web

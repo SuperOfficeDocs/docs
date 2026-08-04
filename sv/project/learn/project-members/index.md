@@ -2,7 +2,7 @@
 uid: help-sv-project-members
 title: Projektdeltagare
 description: Projektdeltagare
-keywords: Fliken projektdeltagare, projektdeltagare, projekt
+keywords: ['Fliken projektdeltagare', 'projektdeltagare', 'projekt']
 author: SuperOffice RnD
 date: 02.25.2025
 version: 10.5.2

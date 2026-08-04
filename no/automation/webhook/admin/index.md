@@ -2,7 +2,7 @@
 uid: help-no-webhook-panel
 title: Webhooker
 description: Vis, administrer og overvåk webhooks fra Innstillinger og vedlikehold.
-keywords: webhook-panel, webhook-status, deaktivert webhook, genstart webhook, overvåk webhooks
+keywords: ['webhook-panel', 'webhook-status', 'deaktivert webhook', 'genstart webhook', 'overvåk webhooks']
 author: digitaldiina
 date: 06.16.2026
 version: 12.1

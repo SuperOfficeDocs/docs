@@ -3,7 +3,6 @@ title: foreignkey
 description: ForeignKeys - to fluent or not to fluent, that is the question
 author: Tony Yates
 date: 12.26.2009
-keywords:
 topic:
 deployment: online
 platform: web

@@ -2,7 +2,7 @@
 uid: help-da-sales-targets-create
 title: Opsæt salgsmål
 description: Hold styr på dine budgetter ved at opsætte salgsmål. Dette vil hjælpe dig med at sætte de rigtige forventninger, planlægge din vækst, øge motivationen og spare tid.
-keywords: salgsmål
+keywords: ['salgsmål']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

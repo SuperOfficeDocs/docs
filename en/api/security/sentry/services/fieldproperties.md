@@ -4,7 +4,7 @@ uid: sentry_fieldproperties
 description: Sentry in services - FieldProperties property
 author: SuperOffice Product and Engineering
 date:
-keywords: sentry
+keywords: ['sentry']
 content_type: concept
 area: api-services
 hidden: true

@@ -1,7 +1,7 @@
 ---
 uid: country
 title: country
-keywords: mdoprovider mdo provider country
+keywords: ['mdoprovider mdo provider country']
 description:
 generated: true
 content_type: reference

@@ -3,7 +3,6 @@ uid: skip_tables
 title: Add tables to skip mirroring OBSOLETE from 10.1.8
 sidebarTitle: "Skip tables (obsolete)"
 description: Add tables to skip mirroring
-keywords:
 author: SuperOffice Product and Engineering
 date: 12.18.2025
 version: 12

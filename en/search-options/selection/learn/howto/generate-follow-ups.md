@@ -2,7 +2,7 @@
 uid: help-en-selection-generate-follow-ups
 title: Generate follow-ups
 description: Generating follow-ups
-keywords: selection
+keywords: ['selection']
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3

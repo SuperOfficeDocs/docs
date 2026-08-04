@@ -1,7 +1,7 @@
 ---
 uid: statusdef
 title: statusdef
-keywords: mdoprovider mdo provider statusdef
+keywords: ['mdoprovider mdo provider statusdef']
 description: Return list of status monitors defined in the system. Additional info query parameter = "Contact" or "project".
 generated: true
 content_type: reference

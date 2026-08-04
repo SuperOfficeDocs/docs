@@ -1,7 +1,7 @@
 ---
 uid: country2
 title: country2
-keywords: mdoprovider mdo provider country2
+keywords: ['mdoprovider mdo provider country2']
 description: Same as CountryProvider, but with icon hints based on the countrys name.
 generated: true
 content_type: reference

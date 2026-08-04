@@ -2,7 +2,7 @@
 uid: help-da-selection-generate-follow-ups
 title: Generering af opfølgninger
 description: Generering af opfølgninger
-keywords: udvalg
+keywords: ['udvalg']
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3

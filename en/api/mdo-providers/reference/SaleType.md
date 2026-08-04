@@ -1,7 +1,7 @@
 ---
 uid: saletype
 title: saletype
-keywords: mdoprovider mdo provider saletype
+keywords: ['mdoprovider mdo provider saletype']
 description: List of sale types, with default sale duration in minutes in extra info.
 generated: true
 content_type: reference

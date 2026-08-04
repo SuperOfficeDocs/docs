@@ -3,7 +3,7 @@ uid: help-en-mailing-add-google-analytics
 title: How to add your Google Analytics tag to a mailing
 sidebarTitle: "Add Google Analytics tag"
 description: In this how-to guide, you will learn how to track your visitors.
-keywords: Marketing, Google Analytics, mailing
+keywords: ['Marketing', 'Google Analytics', 'mailing']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

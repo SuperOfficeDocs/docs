@@ -4,7 +4,6 @@ uid: sentry_plugins
 description: Sentry plugins
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: concept
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/sentry/index

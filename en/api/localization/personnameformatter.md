@@ -2,7 +2,7 @@
 uid: localization-personnameformatter
 title: Person name formatter
 description: Localization, class PersonNameFormatter
-keywords: PersonNameFormatter, NameFormatStylePreference
+keywords: ['PersonNameFormatter', 'NameFormatStylePreference']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: reference

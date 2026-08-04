@@ -2,7 +2,7 @@
 uid: ConfigurableArchiveQuoteLine
 title: ConfigurableArchiveQuoteLine
 description: This is the archive Provider for the QuoteLine Archive.
-keywords: ConfigurableArchiveQuoteLine archive provider
+keywords: ['ConfigurableArchiveQuoteLine archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

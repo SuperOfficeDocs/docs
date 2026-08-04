@@ -3,7 +3,7 @@ uid: enum-categoryupdatetrigger
 title: Enum values for CategoryUpdateTrigger
 description: Lists the enum values for CategoryUpdateTrigger.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

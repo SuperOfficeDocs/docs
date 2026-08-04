@@ -2,7 +2,7 @@
 uid: help-en-customer-center-subscription-page-styling
 title: Style the subscription page
 description: How to customize the design and text of the subscription page to align it with your brand identity.
-keywords: subscription page, unsubscribe, confirmation page
+keywords: ['subscription page', 'unsubscribe', 'confirmation page']
 author: digitaldiina
 date: 03.17.2026
 version: 11.11

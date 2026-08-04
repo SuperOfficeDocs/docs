@@ -3,7 +3,7 @@ uid: help-no-sale-forecasting
 title: Overvåk salgstrakten og prognostiser salg
 sidebarTitle: "Salgstrakt og prognose"
 description: Hvordan overvåke salgstrakten og prognostisere salget ditt ved hjelp av dashbord og utvalg.
-keywords: salg, prognose, pipeline
+keywords: ['salg', 'prognose', 'pipeline']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

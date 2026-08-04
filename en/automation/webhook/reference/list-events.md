@@ -2,7 +2,7 @@
 uid: webhook_list_event
 title: List events
 description: List events
-keywords: list webhook
+keywords: ['list webhook']
 author: Eivind Fasting
 date: 16.09.2025
 content_type: reference

@@ -3,7 +3,7 @@ uid: enum-roletype
 title: Enum values for RoleType
 description: Lists the enum values for RoleType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

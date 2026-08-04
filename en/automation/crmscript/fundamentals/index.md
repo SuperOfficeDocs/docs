@@ -2,7 +2,7 @@
 uid: crmscript-fundamentals
 title: Fundamentals of CRMScript
 description: A guide to CRMScript basics - code structure, variables, operators, data types, functions, structs, arrays, conditions, and loops.
-keywords: CRMScript, script, code structure, variable, operator, data type, function, struct, array, condition, loop
+keywords: ['CRMScript', 'script', 'code structure', 'variable', 'operator', 'data type', 'function', 'struct', 'array', 'condition', 'loop']
 author: Bergfrid Dias
 date: 04.15.2024
 content_type: concept

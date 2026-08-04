@@ -2,7 +2,7 @@
 uid: app-certification
 title: Certification
 description: About our certification process for standard apps
-keywords: certification
+keywords: ['certification']
 author: Margrethe Romnes
 date: 12.04.2025
 ---

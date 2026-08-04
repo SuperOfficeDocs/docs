@@ -2,7 +2,7 @@
 uid: RelatedTickets
 title: RelatedTickets
 description:
-keywords: RelatedTickets archive provider
+keywords: ['RelatedTickets archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

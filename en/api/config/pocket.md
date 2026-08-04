@@ -4,7 +4,7 @@ uid: ns_config_pocket
 description: NetServer configuration values for Pocket-specific features.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, Pocket, AzureNotificationHubConnectionString, AzureNotificationHubName
+keywords: ['config', 'NetServer', 'web.config', 'Pocket', 'AzureNotificationHubConnectionString', 'AzureNotificationHubName']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/pocket

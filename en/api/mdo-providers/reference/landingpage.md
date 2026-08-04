@@ -1,7 +1,7 @@
 ---
 uid: landingpage
 title: landingpage
-keywords: mdoprovider mdo provider landingpage
+keywords: ['mdoprovider mdo provider landingpage']
 description:
 generated: true
 content_type: reference

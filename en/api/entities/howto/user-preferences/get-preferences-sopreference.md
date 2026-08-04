@@ -2,7 +2,7 @@
 uid: get-preferences-datalayer
 title: Get preferences
 description: How to get preferences using SoPreferene at the data layer
-keywords: preference, SoPreference
+keywords: ['preference', 'SoPreference']
 author: digitaldiina
 date: 02.22.2022
 content_type: howto

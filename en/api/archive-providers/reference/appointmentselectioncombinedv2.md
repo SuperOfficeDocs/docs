@@ -2,7 +2,7 @@
 uid: AppointmentSelectionCombinedV2
 title: AppointmentSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: AppointmentSelectionCombinedV2 archive provider
+keywords: ['AppointmentSelectionCombinedV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

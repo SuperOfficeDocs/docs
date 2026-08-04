@@ -2,7 +2,7 @@
 uid: help-en-request-status-create
 title: Create request status
 description: Create request status
-keywords: create request status, add request status, new request status, request status, Internal status, Queue status, track time, request, status
+keywords: ['create request status', 'add request status', 'new request status', 'request status', 'Internal status', 'Queue status', 'track time', 'request', 'status']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

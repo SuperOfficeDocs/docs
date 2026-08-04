@@ -2,7 +2,7 @@
 uid: help-da-customer-center-subscription-page-styling
 title: Styling af abonnementssiden
 description: Sådan tilpasser du design og tekst på abonnementssiden, så den passer til dit brands identitet.
-keywords: abonnementsside, frameld, bekræftelsesside
+keywords: ['abonnementsside', 'frameld', 'bekræftelsesside']
 author: digitaldiina
 date: 03.17.2026
 version: 11.11

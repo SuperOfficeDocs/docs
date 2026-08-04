@@ -2,7 +2,7 @@
 uid: Document
 title: Document
 description: Archive provider for Document type activities. This provider can be used on its own, or can form part of the
-keywords: Document archive provider
+keywords: ['Document archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -3,7 +3,7 @@ uid: help-de-privacy-add-purpose
 title: Datenschutzeinstellungen für die DSGVO einrichten - Zweck hinzufügen
 sidebarTitle: "Zweck hinzufügen"
 description: Wie man die Datenschutzeinstellungen für Ihre Firma einrichtet.
-keywords: Datenschutzeinstellung, Zweck hinzufügen, externe Datenschutzerklärung
+keywords: ['Datenschutzeinstellung', 'Zweck hinzufügen', 'externe Datenschutzerklärung']
 author: SuperOffice Product and Engineering
 date: 09.01.2025
 version: 10.5

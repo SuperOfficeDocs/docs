@@ -3,7 +3,7 @@ uid: help-nl-creating-shortcuts-to-entries-in-crm
 title: Snelkoppelingen maken naar items in SuperOffice CRM
 sidebarTitle: "Snelkoppelingen maken"
 description: Snelkoppelingen maken naar items in CRM
-keywords: snelkoppeling kopiëren
+keywords: ['snelkoppeling kopiëren']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3

@@ -2,7 +2,7 @@
 uid: help-no-request-priority
 title: Saksprioriteter
 description: Saksprioriteter
-keywords: saksprioritet, prioritet, eskalering, sak
+keywords: ['saksprioritet', 'prioritet', 'eskalering', 'sak']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

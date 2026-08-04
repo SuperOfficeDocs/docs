@@ -2,7 +2,7 @@
 uid: webhook_projectmember_event
 title: Project member webhook events
 description: Project member events
-keywords: project member webhook, projectmember
+keywords: ['project member webhook', 'projectmember']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

@@ -3,7 +3,7 @@ uid: enum-ctaflavor
 title: Enum values for CtaFlavor
 description: Lists the enum values for CtaFlavor.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

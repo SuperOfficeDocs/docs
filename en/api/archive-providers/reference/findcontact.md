@@ -2,7 +2,7 @@
 uid: FindContact
 title: FindContact
 description:
-keywords: FindContact archive provider
+keywords: ['FindContact archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

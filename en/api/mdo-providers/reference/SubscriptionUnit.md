@@ -1,7 +1,7 @@
 ---
 uid: subscriptionunit
 title: subscriptionunit
-keywords: mdoprovider mdo provider subscriptionunit
+keywords: ['mdoprovider mdo provider subscriptionunit']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: sofo-add-contact
 title: Add contact to SuperOffice
 description: Add contact to SuperOffice
-keywords: SuperOffice for Outlook, Outlook, email, add contact, SOFO
+keywords: ['SuperOffice for Outlook', 'Outlook', 'email', 'add contact', 'SOFO']
 author: Erik Lebiko, digitaldiina
 date: 10.29.2024
 version_sofo: 2024.8.12

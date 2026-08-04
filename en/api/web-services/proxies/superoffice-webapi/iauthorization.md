@@ -4,7 +4,7 @@ uid: iauthorization-intro
 description: "Introduction to IAuthorization and its built-in implementations."
 author: Anthony Yates
 date: 11.24.2021
-keywords: API, web services, proxy, WebAPI, REST, IAuthorization, credentials, AuthorizationSystemUserTicket, AuthorizationAccessToken, AuthorizationUserToken, jwks_uri
+keywords: ['API', 'web services', 'proxy', 'WebAPI', 'REST', 'IAuthorization', 'credentials', 'AuthorizationSystemUserTicket', 'AuthorizationAccessToken', 'AuthorizationUserToken', 'jwks_uri']
 content_type: concept
 redirect_from: /en/api/netserver/web-services/proxies/superoffice-webapi/iauthorization
 ---

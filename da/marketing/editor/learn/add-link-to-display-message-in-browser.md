@@ -3,7 +3,7 @@ uid: help-da-mailing-open-in-browser
 title: Tilføje et link til at vise meddelelsen i en browser
 sidebarTitle: "Vis i browser-link"
 description: Tilføje et link til at vise meddelelsen i en browser
-keywords: Marketing, Link, udsendelse
+keywords: ['Marketing', 'Link', 'udsendelse']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

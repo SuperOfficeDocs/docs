@@ -1,7 +1,7 @@
 ---
 uid: currency
 title: currency
-keywords: mdoprovider mdo provider currency
+keywords: ['mdoprovider mdo provider currency']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: help-no-request-status
 title: Saksstatus
 description: Saksstatus
-keywords: saksstatus, Saksstatus-fanen, sak, status
+keywords: ['saksstatus', 'Saksstatus-fanen', 'sak', 'status']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

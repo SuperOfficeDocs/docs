@@ -3,7 +3,7 @@ title: NetServer scenarios
 uid: sentry_scenarios
 description: NetServer scenarios
 author: SuperOffice Product and Engineering
-keywords: access control
+keywords: ['access control']
 content_type: concept
 deployment: onsite
 hidden: true

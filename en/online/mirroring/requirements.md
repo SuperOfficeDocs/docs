@@ -2,7 +2,7 @@
 uid: mirroring_requirements
 title: Database Mirroring requirements
 description: Prerequisites for running the Database Mirroring client on a customer-managed host.
-keywords: database mirroring, requirements, prerequisites, .NET 8, SQL Server
+keywords: ['database mirroring', 'requirements', 'prerequisites', '.NET 8', 'SQL Server']
 author: SuperOffice Product and Engineering
 date: 05.27.2026
 version: 12

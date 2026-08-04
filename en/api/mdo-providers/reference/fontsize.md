@@ -1,7 +1,7 @@
 ---
 uid: fontsize
 title: fontsize
-keywords: mdoprovider mdo provider fontsize
+keywords: ['mdoprovider mdo provider fontsize']
 description: List of font types
 generated: true
 content_type: reference

@@ -3,7 +3,7 @@ uid: help-de-project-configuration
 title: Projektarten, Statuswerte und Leitfäden verwalten
 sidebarTitle: "Verwaltung"
 description: Erfahren Sie, wie Sie Projektabläufe in SuperOffice CRM mit Projektarten, Statuswerten und Leitfäden verwalten. Konfigurieren Sie diese Elemente in Einstellungen und Verwaltung, um Nachverfolgung, Aufgaben und Dokumentation zu standardisieren.
-keywords: Projektleitfaden, Projektstatus, Projekttyp, Workflow, Projekt
+keywords: ['Projektleitfaden', 'Projektstatus', 'Projekttyp', 'Workflow', 'Projekt']
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2

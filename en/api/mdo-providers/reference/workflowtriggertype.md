@@ -1,7 +1,7 @@
 ---
 uid: workflowtriggertype
 title: workflowtriggertype
-keywords: mdoprovider mdo provider workflowtriggertype
+keywords: ['mdoprovider mdo provider workflowtriggertype']
 description: MDO provider for the WorkflowTriggerType enum
 generated: true
 content_type: reference

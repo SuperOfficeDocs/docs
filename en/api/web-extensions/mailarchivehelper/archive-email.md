@@ -4,7 +4,7 @@ uid: mailarchivehelper_find_contact
 description: Find contact from email
 author: Tony Yates
 date: 06.24.2016
-keywords: vb
+keywords: ['vb']
 content_type: howto
 platform: web, win
 deployment: onsite

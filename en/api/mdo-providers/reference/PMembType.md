@@ -1,7 +1,7 @@
 ---
 uid: pmembtype
 title: pmembtype
-keywords: mdoprovider mdo provider pmembtype
+keywords: ['mdoprovider mdo provider pmembtype']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

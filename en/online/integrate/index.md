@@ -3,7 +3,7 @@ uid: api-scenarios-web-online
 title: "Integration scenarios: Web client (online)"
 sidebarTitle: "Integration scenarios"
 description: Integration in the online Web client
-keywords: API, integration point, online
+keywords: ['API', 'integration point', 'online']
 author: AtonyYates
 date: 11.25.2021
 version: 12

@@ -2,7 +2,7 @@
 uid: help-en-notes
 title: Taking notes
 description: Taking notes
-keywords: Note tab, taking notes, create note
+keywords: ['Note tab', 'taking notes', 'create note']
 author: SuperOffice RnD
 date: 01.20.2025
 version: 10.5

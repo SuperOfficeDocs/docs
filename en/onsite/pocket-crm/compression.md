@@ -2,7 +2,7 @@
 uid: zip-on-rest
 title: Compression
 description: ZIP compression on REST
-keywords: ZIP compression
+keywords: ['ZIP compression']
 author: SuperOffice Product and Engineering
 date: 06.10.2026
 content_type: howto

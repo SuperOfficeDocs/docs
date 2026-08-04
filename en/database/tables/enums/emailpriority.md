@@ -3,7 +3,7 @@ uid: enum-emailpriority
 title: Enum values for EMailPriority
 description: Lists the enum values for EMailPriority.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

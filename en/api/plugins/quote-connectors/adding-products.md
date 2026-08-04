@@ -2,7 +2,7 @@
 uid: quote-connector-add-products
 title: Adding products to a quote
 description: How to add products to a quote
-keywords: add product, ProductInfo, priceListKey, erpProductKey, QuoteConnectorExtender
+keywords: ['add product', 'ProductInfo', 'priceListKey', 'erpProductKey', 'QuoteConnectorExtender']
 author: SuperOffice Product and Engineering
 date: 09.09.2022
 content_type: howto

@@ -2,7 +2,7 @@
 uid: webhook-api-register
 title: Register a webhook
 description: How to register a webhook using the SuperOffice REST API.
-keywords: automation, webhook, register
+keywords: ['automation', 'webhook', 'register']
 author: SuperOffice Product and Engineering
 date: 06.15.2026
 content_type: howto

@@ -4,7 +4,7 @@ uid: ns_config_suspendedsite
 description: NetServer configuration values related to the suspended state.
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, SuspendedSite, download_baseurl, suspended
+keywords: ['config', 'NetServer', 'web.config', 'SuspendedSite', 'download_baseurl', 'suspended']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/suspendedsite

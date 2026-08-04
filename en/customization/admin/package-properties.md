@@ -2,7 +2,7 @@
 uid: help-en-package-properties-service
 title: Package properties
 description: Package properties
-keywords: Packages tab
+keywords: ['Packages tab']
 author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5

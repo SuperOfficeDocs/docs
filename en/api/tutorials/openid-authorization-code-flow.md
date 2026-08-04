@@ -3,7 +3,6 @@ title: OpenID Authorization Code flow
 uid: oidc_auth_code_flow
 description: OpenId Authorization Code flow
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 ---

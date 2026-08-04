@@ -2,7 +2,6 @@
 uid: sync_scim_company
 title: Sync company to SuperOffice now
 description: Sync company to SuperOffice now
-keywords:
 author: SuperOffice Product and Engineering
 date: 07.31.2026
 version: 12

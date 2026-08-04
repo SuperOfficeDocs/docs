@@ -2,7 +2,7 @@
 uid: freetext-search-and-travel
 title: Freetext search and Travel
 description: Freetext search and Travel
-keywords: Enable freetext for Travel areas
+keywords: ['Enable freetext for Travel areas']
 author: SuperOffice Product and Engineering
 date: 06.29.2022
 content_type: concept

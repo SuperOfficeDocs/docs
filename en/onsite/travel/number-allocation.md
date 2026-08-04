@@ -3,7 +3,6 @@ uid: travel_number_allocation
 title: Travel number allocation
 description: Travel number allocation
 author: SuperOffice Product and Engineering
-keywords:
 date:
 content_type: concept
 deployment: onsite

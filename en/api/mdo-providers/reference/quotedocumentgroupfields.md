@@ -1,7 +1,7 @@
 ---
 uid: quotedocumentgroupfields
 title: quotedocumentgroupfields
-keywords: mdoprovider mdo provider quotedocumentgroupfields
+keywords: ['mdoprovider mdo provider quotedocumentgroupfields']
 description: Possible choices for fields that you can GROUP BY in quote detail documents.
 generated: true
 content_type: reference

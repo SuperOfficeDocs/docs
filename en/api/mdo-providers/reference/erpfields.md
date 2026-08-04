@@ -1,7 +1,7 @@
 ---
 uid: erpfields
 title: erpfields
-keywords: mdoprovider mdo provider erpfields
+keywords: ['mdoprovider mdo provider erpfields']
 description:
 generated: true
 content_type: reference

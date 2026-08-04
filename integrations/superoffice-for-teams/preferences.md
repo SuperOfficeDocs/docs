@@ -3,7 +3,7 @@ uid: teams-preferences
 title: Preferences in SuperOffice for Teams
 sidebarTitle: "Preferences"
 description: How to set your default archiving options in SuperOffice for Teams.
-keywords: SuperOffice for Teams, Teams, preferences, defaults, settings
+keywords: ['SuperOffice for Teams', 'Teams', 'preferences', 'defaults', 'settings']
 author: schildea
 date: 02.06.2026
 content_type: reference

@@ -1,7 +1,7 @@
 ---
 uid: formfolder
 title: formfolder
-keywords: mdoprovider mdo provider formfolder
+keywords: ['mdoprovider mdo provider formfolder']
 description: FormFolderProvider creates a flat or tree list based on the table - s_picture_folder
 generated: true
 content_type: reference

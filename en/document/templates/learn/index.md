@@ -2,7 +2,7 @@
 uid: help-en-document-template
 title: Document templates
 description: Introduction to document templates
-keywords: document template, document, template
+keywords: ['document template', 'document', 'template']
 author: Bergfrid Dias
 date: 07.11.2024
 version: 10.3

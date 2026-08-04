@@ -3,7 +3,6 @@ title: Default values
 uid: erp_default_values
 description: Default values
 author: SuperOffice Product and Engineering
-keywords:
 content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/default-values
 ---

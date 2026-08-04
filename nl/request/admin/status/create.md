@@ -2,7 +2,7 @@
 uid: help-nl-request-status-create
 title: Verzoekstatus maken
 description: Verzoekstatus maken
-keywords: verzoek, status, interne status, wachtrijstatus, tijd traceren
+keywords: ['verzoek', 'status', 'interne status', 'wachtrijstatus', 'tijd traceren']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

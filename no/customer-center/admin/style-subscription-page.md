@@ -2,7 +2,7 @@
 uid: help-no-customer-center-subscription-page-styling
 title: Styling av abonnementssiden
 description: Hvordan tilpasse design og tekst på abonnementssiden slik at den samsvarer med din merkevareidentitet.
-keywords: abonnementsside, avmelding, bekreftelsesside
+keywords: ['abonnementsside', 'avmelding', 'bekreftelsesside']
 author: digitaldiina
 date: 03.17.2026
 version: 11.11

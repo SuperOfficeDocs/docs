@@ -2,7 +2,7 @@
 uid: help-en-request-message-flag
 title: Keep track of messages
 description: Keep track of messages
-keywords: request, message, flag
+keywords: ['request', 'message', 'flag']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

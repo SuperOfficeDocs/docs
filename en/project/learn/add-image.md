@@ -2,7 +2,7 @@
 uid: help-en-project-image-add
 title: Add or change a project image
 description: Add or change a project image
-keywords: project
+keywords: ['project']
 author: Bergfrid Dias
 date: 10.08.2024
 version: 10.3.10

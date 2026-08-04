@@ -1,7 +1,7 @@
 ---
 uid: mailingtemplate
 title: mailingtemplate
-keywords: mdoprovider mdo provider mailingtemplate
+keywords: ['mdoprovider mdo provider mailingtemplate']
 description: General mailing templates
 generated: true
 content_type: reference

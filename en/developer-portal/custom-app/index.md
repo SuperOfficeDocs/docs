@@ -4,7 +4,7 @@ uid: custom-app
 description: About custom apps for SuperOffice CRM Online
 author: Margrethe Romnes
 date: 06.10.2026
-keywords: private app, custom app
+keywords: ['private app', 'custom app']
 content_type: concept
 deployment: online
 platform: web

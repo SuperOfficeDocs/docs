@@ -3,7 +3,7 @@ uid: enum-apptype
 title: Enum values for AppType
 description: Lists the enum values for AppType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

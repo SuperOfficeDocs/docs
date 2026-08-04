@@ -2,7 +2,7 @@
 uid: AppointmentNotification
 title: AppointmentNotification
 description:
-keywords: AppointmentNotification archive provider
+keywords: ['AppointmentNotification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

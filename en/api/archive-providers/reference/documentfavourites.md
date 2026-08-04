@@ -2,7 +2,7 @@
 uid: documentfavourites
 title: documentfavourites
 description:
-keywords: documentfavourites archive provider
+keywords: ['documentfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

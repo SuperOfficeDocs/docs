@@ -2,7 +2,7 @@
 title: Active Directory
 sidebarTitle: "Overview"
 description: Active Directory
-keywords: Active Directory, AD, identity
+keywords: ['Active Directory', 'AD', 'identity']
 date: 05.08.2018
 version: 12
 content_type: concept

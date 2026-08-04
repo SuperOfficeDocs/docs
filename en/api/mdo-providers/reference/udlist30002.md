@@ -1,7 +1,7 @@
 ---
 uid: udlist30002
 title: udlist30002
-keywords: mdoprovider mdo provider udlist30002
+keywords: ['mdoprovider mdo provider udlist30002']
 description: MDO provider for the ChatService
 generated: true
 content_type: reference

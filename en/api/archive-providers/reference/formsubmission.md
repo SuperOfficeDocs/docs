@@ -2,7 +2,7 @@
 uid: FormSubmission
 title: FormSubmission
 description: Archive provider for listing form submissions
-keywords: FormSubmission archive provider
+keywords: ['FormSubmission archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: help-de-contact
 title: Person
 description: Die Person-Ansicht bietet eine sofortige Übersicht über alle Kommunikations- und Interaktionsdaten einer Person. Hier können Sie Kontaktdaten verwalten, Aktivitäten nachverfolgen und DSGVO-bezogene Dokumentation abrufen.
-keywords: Ansicht Person, Person-Ansicht, Person, Kontaktperson
+keywords: ['Ansicht Person', 'Person-Ansicht', 'Person', 'Kontaktperson']
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2

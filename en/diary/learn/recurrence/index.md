@@ -2,7 +2,7 @@
 uid: help-en-recurrence
 title: Repeating follow-ups
 description: Recurring follow-ups
-keywords: repeating follow-up, repeat, recur, frequency, pattern, every workday, monthly, daily, diary, follow-up
+keywords: ['repeating follow-up', 'repeat', 'recur', 'frequency', 'pattern', 'every workday', 'monthly', 'daily', 'diary', 'follow-up']
 author: Bergfrid Dias
 date: 01.13.2025
 version: 10.5

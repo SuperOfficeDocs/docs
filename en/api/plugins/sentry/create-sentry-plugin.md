@@ -4,7 +4,6 @@ uid: create_sentry_plugin
 description: Create a Sentry plugin
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: howto
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/sentry/create-sentry-plugin

@@ -3,7 +3,7 @@ uid: dkim-multiple-records
 title: Multiple DKIM records in SuperOffice Online
 sidebarTitle: "Multiple DKIM records"
 description: Multiple DKIM records in Mailgun
-keywords: Mailgun, DKIM, DMARC, SMTP, bounce, consent
+keywords: ['Mailgun', 'DKIM', 'DMARC', 'SMTP', 'bounce', 'consent']
 author: Martin Pavlas
 date: 09.12.2023
 version: 12

@@ -4,7 +4,7 @@ uid: quote_connector_enum_configfieldtype
 description: ERP Quote Connector Interface data carrier - Enum ConfigFieldType
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: reference
 redirect_from:
   - /en/api/plugins/quote-connectors/api/enums/index

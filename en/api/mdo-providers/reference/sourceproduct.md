@@ -1,7 +1,7 @@
 ---
 uid: sourceproduct
 title: sourceproduct
-keywords: mdoprovider mdo provider sourceproduct
+keywords: ['mdoprovider mdo provider sourceproduct']
 description: Products - Sales &amp; Marketing, Customer Service
 generated: true
 content_type: reference

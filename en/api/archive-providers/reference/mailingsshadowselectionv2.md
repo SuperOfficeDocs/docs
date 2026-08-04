@@ -2,7 +2,7 @@
 uid: MailingsShadowSelectionV2
 title: MailingsShadowSelectionV2
 description: Shadow contact provider for the Mailings provider.
-keywords: MailingsShadowSelectionV2 archive provider
+keywords: ['MailingsShadowSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

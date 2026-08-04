@@ -2,7 +2,7 @@
 uid: MailingsAndFolders
 title: MailingsAndFolders
 description: Combined archive of mailings (s_shipment) and mailing folders
-keywords: MailingsAndFolders archive provider
+keywords: ['MailingsAndFolders archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

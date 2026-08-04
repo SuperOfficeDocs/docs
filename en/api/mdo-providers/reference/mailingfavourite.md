@@ -1,7 +1,7 @@
 ---
 uid: mailingfavourite
 title: mailingfavourite
-keywords: mdoprovider mdo provider mailingfavourite
+keywords: ['mdoprovider mdo provider mailingfavourite']
 description: MDO list provider for Favourites
 generated: true
 content_type: reference

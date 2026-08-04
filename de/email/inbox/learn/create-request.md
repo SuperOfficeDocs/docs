@@ -2,7 +2,7 @@
 uid: help-de-create-request
 title: Anfrage erstellen
 description: Erfahren Sie, wie Sie in SuperOffice Service basierend auf einer E-Mail-Nachricht eine Anfrage erstellen
-keywords: Anfrage erstellen, Posteingang, Service, Ticket, Kundenservice, E-Mail, Anfrage
+keywords: ['Anfrage erstellen', 'Posteingang', 'Service', 'Ticket', 'Kundenservice', 'E-Mail', 'Anfrage']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

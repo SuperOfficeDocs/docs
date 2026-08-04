@@ -3,7 +3,7 @@ uid: enum-externalowner
 title: Enum values for ExternalOwner
 description: Lists the enum values for ExternalOwner.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

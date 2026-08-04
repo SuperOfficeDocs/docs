@@ -2,7 +2,7 @@
 uid: preview_scim_sync
 title: Preview what will be synced
 description: Preview what will be synced
-keywords: SCIM, Microsoft Entra, ME-ID, AAD
+keywords: ['SCIM', 'Microsoft Entra', 'ME-ID', 'AAD']
 author: SuperOffice Product and Engineering
 date: 01.15.2024
 version: 12

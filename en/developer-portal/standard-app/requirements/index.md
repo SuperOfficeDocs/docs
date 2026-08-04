@@ -4,7 +4,7 @@ uid: app-requirements
 description: Online application requirements and guidelines
 author: Margrethe Romnes
 date: 02.02.2022
-keywords: requirements
+keywords: ['requirements']
 ---
 
 # Online application requirements and guidelines

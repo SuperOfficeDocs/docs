@@ -2,7 +2,7 @@
 uid: g-suite-document-integration
 title: Google Workspace document integration
 description: Google Workspace document integration
-keywords: Google Workspace, document integration
+keywords: ['Google Workspace', 'document integration']
 author: SuperOffice Product and Engineering
 date: 07.12.2024
 content_type: concept

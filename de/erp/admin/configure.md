@@ -2,7 +2,7 @@
 uid: help-de-erp-configure
 title: ERP-Verbindung konfigurieren
 description: Synchronisation zwischen SuperOffice CRM und Ihrem ERP-System konfigurieren, indem Sie Felder zuordnen, Standardwerte festlegen und ERP-Verbindungen priorisieren.
-keywords: ERP-Verbindung, Synchronisation konfigurieren, Feldzuordnung, Listenzuordnung, Standardwerte, ERP-Felder sortieren, Sync-Priorität festlegen, ERP-Verbindung aktivieren, ERP-Verbindung bearbeiten, SuperOffice ERP-Integration, ERP-Registerkarte, Sync Connector
+keywords: ['ERP-Verbindung', 'Synchronisation konfigurieren', 'Feldzuordnung', 'Listenzuordnung', 'Standardwerte', 'ERP-Felder sortieren', 'Sync-Priorität festlegen', 'ERP-Verbindung aktivieren', 'ERP-Verbindung bearbeiten', 'SuperOffice ERP-Integration', 'ERP-Registerkarte', 'Sync Connector']
 author: Bergfrid Dias
 date: 03.31.2025
 version: 10.5

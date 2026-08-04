@@ -2,7 +2,7 @@
 uid: FreetextSelection
 title: FreetextSelection
 description: Archive provider for freetext search on the Selection entity.
-keywords: FreetextSelection archive provider
+keywords: ['FreetextSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

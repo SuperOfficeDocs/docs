@@ -2,7 +2,7 @@
 uid: help-no-duplicates
 title: Duplikater
 description: Duplikater
-keywords: duplikat
+keywords: ['duplikat']
 author: SuperOffice RnD
 date: 06.29.2022
 content_type: concept

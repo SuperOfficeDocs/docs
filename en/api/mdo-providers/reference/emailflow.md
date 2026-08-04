@@ -1,7 +1,7 @@
 ---
 uid: emailflow
 title: emailflow
-keywords: mdoprovider mdo provider emailflow
+keywords: ['mdoprovider mdo provider emailflow']
 description: List provider for EmailFlow
 generated: true
 content_type: reference

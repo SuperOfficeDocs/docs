@@ -1,7 +1,7 @@
 ---
 uid: kbaccesslevel
 title: kbaccesslevel
-keywords: mdoprovider mdo provider kbaccesslevel
+keywords: ['mdoprovider mdo provider kbaccesslevel']
 description: MDO provider for the KbAccessLevel enum
 generated: true
 content_type: reference

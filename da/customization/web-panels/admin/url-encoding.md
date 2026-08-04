@@ -2,7 +2,7 @@
 uid: help-da-url-encoding
 title: Url-kodning
 description: URL-kodning i webpaneler
-keywords: webpanel, URL-kodning
+keywords: ['webpanel', 'URL-kodning']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

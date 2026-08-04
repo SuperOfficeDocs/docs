@@ -3,7 +3,7 @@ uid: help-de-form-view-statistics
 title: Formularübermittlungen überwachen und Statistiken anzeigen
 sidebarTitle: "Formularstatistik"
 description: Formularübermittlungen überwachen und Statistiken anzeigen
-keywords: Formular, Formularübermittlung, Formularstatistik
+keywords: ['Formular', 'Formularübermittlung', 'Formularstatistik']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

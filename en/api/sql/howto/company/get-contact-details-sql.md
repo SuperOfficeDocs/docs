@@ -2,7 +2,7 @@
 uid: get-contact-details-sql
 title: Get contact details
 description: How to get contact details from the SuperOffice database using raw SQL.
-keywords: contact, company, SQL, API, phone
+keywords: ['contact', 'company', 'SQL', 'API', 'phone']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: howto

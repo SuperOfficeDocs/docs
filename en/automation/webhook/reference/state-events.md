@@ -2,7 +2,7 @@
 uid: webhook_error_event
 title: Error events
 description: Error webhook events
-keywords: webhook, state change
+keywords: ['webhook', 'state change']
 author: AnthonyYates
 date: 06.24.2023
 content_type: reference

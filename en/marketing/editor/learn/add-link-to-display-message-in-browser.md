@@ -3,7 +3,7 @@ uid: help-en-mailing-open-in-browser
 title: Add a link to display the message in a browser
 sidebarTitle: "Add view-in-browser link"
 description: Add a link to display the message in a browser
-keywords: Marketing, link, mailing
+keywords: ['Marketing', 'link', 'mailing']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

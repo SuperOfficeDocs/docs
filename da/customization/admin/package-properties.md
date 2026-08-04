@@ -2,7 +2,7 @@
 uid: help-da-package-properties-service
 title: Egenskaber for pakke
 description: Egenskaber for pakke
-keywords: fanen Pakker
+keywords: ['fanen Pakker']
 author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5

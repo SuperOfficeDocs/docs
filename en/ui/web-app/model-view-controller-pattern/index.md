@@ -2,7 +2,7 @@
 uid: model-view-controller-pattern
 title: Model-view-controller pattern
 description: Web client and the model-view-controller pattern
-keywords: model-view-controller, web client architecture, controlgroup element
+keywords: ['model-view-controller', 'web client architecture', 'controlgroup element']
 author: Tony Yates
 date: 02.16.2009
 content_type: article

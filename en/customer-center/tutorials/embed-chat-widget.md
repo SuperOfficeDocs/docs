@@ -2,7 +2,7 @@
 uid: embed_chat_widget_on_external_site
 title: Embed chat widget on external site
 description: Embed chat widget on external site
-keywords: Customer Center, chat
+keywords: ['Customer Center', 'chat']
 author: Michel Krohn-Dale
 date: 07.15.2026
 content_type: tutorial

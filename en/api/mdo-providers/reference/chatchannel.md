@@ -1,7 +1,7 @@
 ---
 uid: chatchannel
 title: chatchannel
-keywords: mdoprovider mdo provider chatchannel
+keywords: ['mdoprovider mdo provider chatchannel']
 description:
 generated: true
 content_type: reference

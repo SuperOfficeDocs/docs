@@ -2,7 +2,7 @@
 uid: SimpleSale
 title: SimpleSale
 description:
-keywords: SimpleSale archive provider
+keywords: ['SimpleSale archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

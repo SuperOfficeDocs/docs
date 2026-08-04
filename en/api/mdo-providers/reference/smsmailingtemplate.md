@@ -1,7 +1,7 @@
 ---
 uid: smsmailingtemplate
 title: smsmailingtemplate
-keywords: mdoprovider mdo provider smsmailingtemplate
+keywords: ['mdoprovider mdo provider smsmailingtemplate']
 description: SMS Mailing templates
 generated: true
 content_type: reference

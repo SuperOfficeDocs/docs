@@ -4,7 +4,7 @@ uid: entities_field_types
 description: Bulk update entities and field types
 author: Tony Yates
 date: 06.23.2017
-keywords: bulk update
+keywords: ['bulk update']
 content_type: concept
 category: api
 topic: bulk update

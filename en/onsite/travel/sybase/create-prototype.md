@@ -3,7 +3,6 @@ title: Create prototype for Sybase
 uid: create_prototype
 description: Create prototype for Sybase
 author: SuperOffice Product and Engineering
-keywords:
 date:
 content_type: howto
 deployment: onsite

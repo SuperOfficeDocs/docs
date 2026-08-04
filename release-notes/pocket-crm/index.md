@@ -2,7 +2,7 @@
 uid: news-pocket-crm
 title: What's new in Pocket CRM
 description: Release notes for the legacy Pocket CRM app, used with SuperOffice 9.2 and earlier.
-keywords: Pocket CRM
+keywords: ['Pocket CRM']
 author: SuperOffice AS - Product and engineering
 date: 12.18.2020
 version: 9.1.6

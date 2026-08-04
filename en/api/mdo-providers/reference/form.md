@@ -1,7 +1,7 @@
 ---
 uid: form
 title: form
-keywords: mdoprovider mdo provider form
+keywords: ['mdoprovider mdo provider form']
 description: Get all forms with folder hierarchy. Set ExtraInfo "onlyActive=true" if you only want to get active forms and "onlyNewTicket=true" if only forms that create tickets. Set extrainfo "onlyForms=true" if you do not want form templates.
 generated: true
 content_type: reference

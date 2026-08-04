@@ -1,7 +1,7 @@
 ---
 uid: extapp
 title: extapp
-keywords: mdoprovider mdo provider extapp
+keywords: ['mdoprovider mdo provider extapp']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

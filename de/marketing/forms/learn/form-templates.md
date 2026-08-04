@@ -2,7 +2,7 @@
 uid: help-de-form-templates
 title: Mit Formularvorlagen arbeiten
 description: Mit Formularvorlagen arbeiten
-keywords: Formular, Vorlage, Formularvorlage
+keywords: ['Formular', 'Vorlage', 'Formularvorlage']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

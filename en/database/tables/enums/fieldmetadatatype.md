@@ -3,7 +3,7 @@ uid: enum-fieldmetadatatype
 title: Enum values for FieldMetadataType
 description: Lists the enum values for FieldMetadataType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

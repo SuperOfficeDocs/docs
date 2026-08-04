@@ -4,7 +4,6 @@ uid: blogic_select_message
 description: Select Message
 author:
 date:
-keywords:
 topic: reference
 ---
 

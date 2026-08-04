@@ -4,7 +4,6 @@ uid: erp_tutorial_company
 description: ERP sync - tutorial company
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords:
 content_type: tutorial
 redirect_from: /en/api/netserver/plugins/erp-connectors/tutorial
 ---

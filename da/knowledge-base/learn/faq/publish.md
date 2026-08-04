@@ -2,7 +2,7 @@
 uid: help-da-document-faq-publish
 title: Udgivelse af FAQ-poster
 description: Udgivelse af FAQ-poster
-keywords: FAQ
+keywords: ['FAQ']
 author: SuperOffice RnD
 date: 07.15.2025
 version: 10.5

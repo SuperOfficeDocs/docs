@@ -2,7 +2,7 @@
 uid: help-de-flow-participants
 title: Flowteilnehmer
 description: Flowteilnehmer
-keywords: Marketing, Flow, Teilnehmer, Teilnehmerstatus, Mit Erfolg abgeschlossen, Abbruch, Einschreibung
+keywords: ['Marketing', 'Flow', 'Teilnehmer', 'Teilnehmerstatus', 'Mit Erfolg abgeschlossen', 'Abbruch', 'Einschreibung']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

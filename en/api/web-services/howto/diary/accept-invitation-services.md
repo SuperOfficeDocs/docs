@@ -2,7 +2,7 @@
 uid: accept-invitation-services
 title: How to accept an invitation (services)
 description: How to accept an invitation using NetServer services
-keywords: diary, calendar, appointment, invitation, API, web services
+keywords: ['diary', 'calendar', 'appointment', 'invitation', 'API', 'web services']
 author: Bergfrid Skaara Dias
 date: 03.18.2022
 content_type: howto

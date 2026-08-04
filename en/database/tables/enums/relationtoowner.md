@@ -3,7 +3,7 @@ uid: enum-relationtoowner
 title: Enum values for RelationToOwner
 description: Lists the enum values for RelationToOwner.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

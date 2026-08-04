@@ -1,7 +1,7 @@
 ---
 uid: priceunit
 title: priceunit
-keywords: mdoprovider mdo provider priceunit
+keywords: ['mdoprovider mdo provider priceunit']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

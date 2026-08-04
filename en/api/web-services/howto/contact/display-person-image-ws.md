@@ -2,7 +2,7 @@
 uid: display-person-image-ws
 title: Display person image
 description: How to display a person's image using web services.
-keywords: person, contact, web services, API, ImageUtility
+keywords: ['person', 'contact', 'web services', 'API', 'ImageUtility']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: howto

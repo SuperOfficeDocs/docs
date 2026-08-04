@@ -4,7 +4,6 @@ uid: blogic_ck_editor
 description: CK editor
 author:
 date:
-keywords:
 topic: reference
 ---
 

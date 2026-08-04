@@ -2,7 +2,7 @@
 uid: content-reuse
 title: Content reuse
 description: Introduction to content reuse and single-sourcing
-keywords: content reuse, single-sourcing, fragments, includes, duplicate content
+keywords: ['content reuse', 'single-sourcing', 'fragments', 'includes', 'duplicate content']
 author: digitaldiina
 date: 07.09.2026
 content_type: concept

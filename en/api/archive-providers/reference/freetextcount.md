@@ -2,7 +2,7 @@
 uid: FreetextCount
 title: FreetextCount
 description: Archive provider for counts of freetext matches
-keywords: FreetextCount archive provider
+keywords: ['FreetextCount archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

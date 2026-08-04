@@ -1,7 +1,7 @@
 ---
 uid: prob
 title: prob
-keywords: mdoprovider mdo provider prob
+keywords: ['mdoprovider mdo provider prob']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: create-invitation-entity
 title: How to create an invitation (data layer)
 description: How to create an invitation using entities at the NetServer data layer.
-keywords: diary, calendar, appointment, API, entity, ParticipantInfo, AddParticipant, AppointmentMatrix
+keywords: ['diary', 'calendar', 'appointment', 'API', 'entity', 'ParticipantInfo', 'AddParticipant', 'AppointmentMatrix']
 author: Bergfrid Skaara Dias
 date: 03.04.2022
 content_type: howto

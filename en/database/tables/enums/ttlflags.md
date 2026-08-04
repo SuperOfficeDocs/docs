@@ -3,7 +3,7 @@ uid: enum-ttlflags
 title: Enum values for TtlFlags
 description: Lists the enum values for TtlFlags.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

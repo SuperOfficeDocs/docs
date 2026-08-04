@@ -2,7 +2,7 @@
 uid: api-diary-rows
 title: Diary - rows
 description: Working with appointments via rows.
-keywords: diary, calendar, appointment, API, row
+keywords: ['diary', 'calendar', 'appointment', 'API', 'row']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: reference

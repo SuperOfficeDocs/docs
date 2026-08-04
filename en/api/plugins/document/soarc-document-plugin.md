@@ -4,7 +4,6 @@ uid: soarc_document_plugin
 description: How to create a managed document plugin
 author: Tony Yates
 date: 06.03.2006
-keywords:
 content_type: howto
 deployment: onsite
 redirect_from: /en/api/netserver/plugins/document/soarc-document-plugin

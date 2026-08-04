@@ -4,7 +4,6 @@ uid: osql_add_strings
 description: SuperOffice Objectified SQL - Add strings
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/osql/howto/add-strings
 hidden: true

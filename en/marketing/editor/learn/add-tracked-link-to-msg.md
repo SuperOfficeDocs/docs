@@ -2,7 +2,7 @@
 uid: help-en-mailing-add-tracked-link
 title: Add tracked links to message
 description: Learn how to add a tracked link to a mailing. Either use a preset tracked link to track clicks across several mailings or set up a new link only available in this mailing.
-keywords: Marketing, mailing, tracked link, special link
+keywords: ['Marketing', 'mailing', 'tracked link', 'special link']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

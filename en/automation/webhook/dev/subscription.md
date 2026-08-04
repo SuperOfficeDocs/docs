@@ -2,7 +2,7 @@
 uid: webhook-api-subscription
 title: Webhook subscription
 description: How to create a webhook using both NetServer core and web services.
-keywords: automation, webhook, subscription, NetServer
+keywords: ['automation', 'webhook', 'subscription', 'NetServer']
 author: AnthonyYates
 date: 04.06.2018
 content_type: howto

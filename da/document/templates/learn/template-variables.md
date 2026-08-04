@@ -2,7 +2,7 @@
 uid: help-da-template-variables
 title: Skabelonvariabler
 description: Med skabelonvariabler kan du tilpasse og automatisere indtastningen af kundedata
-keywords: dokument, skabelon, variable
+keywords: ['dokument', 'skabelon', 'variable']
 author: Bergfrid Dias
 date: 12.10.2024
 version: 10.3

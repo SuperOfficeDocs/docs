@@ -2,7 +2,7 @@
 uid: ProjectStaticSelection
 title: ProjectStaticSelection
 description:
-keywords: ProjectStaticSelection archive provider
+keywords: ['ProjectStaticSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -4,7 +4,7 @@ uid: api_udef_sql
 description: Working with custom fields in raw SQL.
 author: Bergfrid Skaara Dias
 date: 11.05.2021
-keywords: udef, user-defined field, custom field, API
+keywords: ['udef', 'user-defined field', 'custom field', 'API']
 content_type: concept
 audience: api
 audience_tooltip: SuperOffice APIs and database

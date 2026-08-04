@@ -2,7 +2,7 @@
 uid: help-sv-duplicates
 title: Dubbletter
 description: Dubbletter
-keywords: dubblett
+keywords: ['dubblett']
 author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2

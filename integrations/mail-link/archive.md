@@ -2,7 +2,7 @@
 uid: mail-link-archive
 title: Archive email to SuperOffice
 description: Learn how to archive emails to SuperOffice CRM using Mail Link.
-keywords: archive email, check for duplicates
+keywords: ['archive email', 'check for duplicates']
 author: digitaldiina
 date: 03.17.2026
 content_type: howto

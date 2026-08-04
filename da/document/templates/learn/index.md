@@ -2,7 +2,7 @@
 uid: help-da-document-template
 title: Dokumentskabeloner
 description: Dokumentskabeloner
-keywords: dokumentskabelon, dokument, skabelon
+keywords: ['dokumentskabelon', 'dokument', 'skabelon']
 author: Bergfrid Dias
 date: 07.16.2024
 version: 10.3

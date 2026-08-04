@@ -4,7 +4,6 @@ uid: osql_add_numbers
 description: SuperOffice Objectified SQL - Add numbers
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/osql/howto/add-numbers
 hidden: true

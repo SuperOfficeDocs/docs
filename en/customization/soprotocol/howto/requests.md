@@ -3,7 +3,7 @@ uid: sop-request-management
 title: How to work with Requests using SoProtocol
 sidebarTitle: "Requests via SoProtocol"
 description: How to work with Requests with SoProtocol
-keywords: soprotocol, requests
+keywords: ['soprotocol', 'requests']
 author: Tony Yates, Egidijus Mazeika
 date: 02.27.2026
 content_type: howto

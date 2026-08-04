@@ -2,7 +2,7 @@
 uid: help-en-contact
 title: Contact
 description: The Contact screen provides an instant snapshot of all communication and interaction with a person. Here, you can manage contact details, track activities, and access GDPR-related documentation.
-keywords: Contact screen, person, contact
+keywords: ['Contact screen', 'person', 'contact']
 author: Bergfrid Dias
 date: 12.17.2024
 version: 10

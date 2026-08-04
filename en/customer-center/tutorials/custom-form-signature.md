@@ -2,7 +2,7 @@
 uid: custom-form-signature
 title: Custom form with signature
 description: Custom form in Customer Centre with Signature
-keywords: CRMScript, Customer Center
+keywords: ['CRMScript', 'Customer Center']
 author: kronicz
 date: 01.20.2012
 content_type: tutorial

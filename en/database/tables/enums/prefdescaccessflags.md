@@ -3,7 +3,7 @@ uid: enum-prefdescaccessflags
 title: Enum values for PrefDescAccessFlags
 description: Lists the enum values for PrefDescAccessFlags.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

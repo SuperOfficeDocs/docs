@@ -3,7 +3,7 @@ uid: enum-texttype
 title: Enum values for TextType
 description: Lists the enum values for TextType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

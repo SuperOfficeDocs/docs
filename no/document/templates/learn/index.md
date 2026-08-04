@@ -2,7 +2,7 @@
 uid: help-no-document-template
 title: Dokumentmal
 description: Introduksjon til dokumentmaler
-keywords: dokumentmal, document, mal
+keywords: ['dokumentmal', 'document', 'mal']
 author: Bergfrid Dias
 date: 07.11.2024
 version: 10.3

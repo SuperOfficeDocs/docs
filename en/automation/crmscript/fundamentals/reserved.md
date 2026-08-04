@@ -3,7 +3,6 @@ uid: crmscript_fundamentals_reserved_words
 title: Reserved words
 author:
 date:
-keywords:
 content_type: howto
 ---
 

@@ -2,7 +2,7 @@
 uid: mirroring-stop-app
 title: How to turn off database mirroring
 description: How to turn off database mirroring for a running custom mirror app
-keywords: database, mirroring, custom app
+keywords: ['database', 'mirroring', 'custom app']
 author: Margrethe Romnes
 date: 08.21.2024
 version_devportal: 1.25

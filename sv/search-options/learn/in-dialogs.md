@@ -2,7 +2,7 @@
 uid: help-sv-fastsearcher-dialog
 title: Använda snabbsökning i dialogrutor
 description: Använda snabbsökning i dialogrutor
-keywords: söka, Snabbsökning, dialog
+keywords: ['söka', 'Snabbsökning', 'dialog']
 author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2

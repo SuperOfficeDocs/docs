@@ -4,7 +4,7 @@ uid: erp_sync_connector_api_fieldmetadatainfo
 description: Sync Connector API - FieldMetadataInfo
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords: dto
+keywords: ['dto']
 content_type: reference
 redirect_from: /en/api/netserver/plugins/erp-connectors/api/field-meta-data-carrier
 ---

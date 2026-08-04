@@ -1,7 +1,7 @@
 ---
 uid: workflowinstancestatus
 title: workflowinstancestatus
-keywords: mdoprovider mdo provider workflowinstancestatus
+keywords: ['mdoprovider mdo provider workflowinstancestatus']
 description: MDO provider for the WorkflowInstanceStatus enum
 generated: true
 content_type: reference

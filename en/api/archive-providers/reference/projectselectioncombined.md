@@ -2,7 +2,7 @@
 uid: ProjectSelectionCombined
 title: ProjectSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ProjectSelectionCombined archive provider
+keywords: ['ProjectSelectionCombined archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

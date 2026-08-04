@@ -1,7 +1,7 @@
 ---
 uid: direction
 title: direction
-keywords: mdoprovider mdo provider direction
+keywords: ['mdoprovider mdo provider direction']
 description: Document and Task directions - TaskDirection.Incoming, Outgoing
 generated: true
 content_type: reference

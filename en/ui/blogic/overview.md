@@ -4,7 +4,6 @@ title: Service UI
 description: UI interaction and customization for service
 author: Bergfrid Dias
 date:
-keywords:
 content_type: concept
 ---
 

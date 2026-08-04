@@ -2,7 +2,7 @@
 uid: help-nl-customer-center-chat
 title: Chat verbinden met uw klantencentrum
 description: Lees in deze handleiding hoe u een chatkanaal verbindt met uw klantportaal.
-keywords: chatten, klantencentrum
+keywords: ['chatten', 'klantencentrum']
 author: Bergfrid Dias
 date: 02.22.2023
 content_type: howto

@@ -2,7 +2,7 @@
 uid: LinksSales
 title: LinksSales
 description: Link data provider for sales, handles both addressing by source or by destination (not both at the same time!)
-keywords: LinksSales archive provider
+keywords: ['LinksSales archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

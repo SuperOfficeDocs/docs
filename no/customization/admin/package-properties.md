@@ -2,7 +2,7 @@
 uid: help-no-package-properties-service
 title: Egenskaper for pakke
 description: Egenskaper for pakke
-keywords: pakke egenskaper
+keywords: ['pakke egenskaper']
 author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5

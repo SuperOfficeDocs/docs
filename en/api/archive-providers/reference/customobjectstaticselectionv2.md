@@ -2,7 +2,7 @@
 uid: CustomObjectStaticSelectionV2
 title: CustomObjectStaticSelectionV2
 description: Static archive Provider for a Selection of CustomObject archive.
-keywords: CustomObjectStaticSelectionV2 archive provider
+keywords: ['CustomObjectStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

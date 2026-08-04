@@ -3,7 +3,7 @@ uid: enum-crmactortype
 title: Enum values for CrmActorType
 description: Lists the enum values for CrmActorType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

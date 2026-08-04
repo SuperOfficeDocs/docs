@@ -1,7 +1,7 @@
 ---
 uid: emailfromtype
 title: emailfromtype
-keywords: mdoprovider mdo provider emailfromtype
+keywords: ['mdoprovider mdo provider emailfromtype']
 description: MDO provider for the EmailFromType enum
 generated: true
 content_type: reference

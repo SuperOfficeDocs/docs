@@ -4,7 +4,7 @@ uid: so_nuget_crm_online_winclient
 description: SuperOffice NuGet CRM Online WinClient
 author: Tony Yates
 date: 02.29.2016
-keywords: authentication
+keywords: ['authentication']
 content_type: reference
 ---
 

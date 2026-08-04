@@ -2,7 +2,7 @@
 uid: Links
 title: Links
 description:
-keywords: Links archive provider
+keywords: ['Links archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

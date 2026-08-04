@@ -4,7 +4,6 @@ uid: blogic_select_sale
 description: Select sale
 author:
 date:
-keywords:
 topic: reference
 ---
 

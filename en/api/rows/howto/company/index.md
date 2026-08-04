@@ -2,7 +2,7 @@
 uid: api-contact-row
 title: Contact - row
 description: Working with companies (contact) in API with rows.
-keywords: contact, company, row, API
+keywords: ['contact', 'company', 'row', 'API']
 author: Bergfrid Skaara Dias
 date: 02.22.2022
 content_type: concept

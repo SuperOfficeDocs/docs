@@ -2,7 +2,7 @@
 uid: DocumenthadowSelectionCombined
 title: DocumenthadowSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: DocumenthadowSelectionCombined archive provider
+keywords: ['DocumenthadowSelectionCombined archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

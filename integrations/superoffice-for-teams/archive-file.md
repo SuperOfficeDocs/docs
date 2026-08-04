@@ -2,7 +2,7 @@
 uid: teams-archive-file
 title: Save a file from a Teams channel
 description: How to save a file from a standard Teams channel to SuperOffice.
-keywords: SuperOffice for Teams, Teams, archive, file, channel, save file
+keywords: ['SuperOffice for Teams', 'Teams', 'archive', 'file', 'channel', 'save file']
 author: schildea
 date: 02.06.2026
 content_type: howto

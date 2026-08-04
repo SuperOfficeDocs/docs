@@ -2,7 +2,7 @@
 uid: automated-tasks
 title: Automated tasks
 description: Automated tasks in Service
-keywords: automated tasks
+keywords: ['automated tasks']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 content_type: concept

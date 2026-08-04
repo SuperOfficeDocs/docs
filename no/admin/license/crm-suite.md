@@ -2,7 +2,7 @@
 uid: help-no-crm-suite
 title: SuperOffice CRM Suite
 description: Oversikt over de 5 SuperOffice CRM Suite-planene, administrasjon av plasser, plangrenser og prismodell.
-keywords: CRM Suite, plan, Starter, Core, Growth, Plus, Super, plangrenser, fencing, skalering, plass, abonnement
+keywords: ['CRM Suite', 'plan', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'plangrenser', 'fencing', 'skalering', 'plass', 'abonnement']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

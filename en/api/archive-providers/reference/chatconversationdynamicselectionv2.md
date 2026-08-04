@@ -2,7 +2,7 @@
 uid: ChatConversationDynamicSelectionV2
 title: ChatConversationDynamicSelectionV2
 description: ChatConversation selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: ChatConversationDynamicSelectionV2 archive provider
+keywords: ['ChatConversationDynamicSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

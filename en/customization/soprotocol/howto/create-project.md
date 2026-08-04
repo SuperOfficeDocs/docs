@@ -2,7 +2,7 @@
 uid: sop-create-project
 title: Create Project
 description: How to create a Project using the soprotocol
-keywords: soprotocol, project, create
+keywords: ['soprotocol', 'project', 'create']
 author: Eivind Fasting
 date: 11.26.2024
 content_type: howto

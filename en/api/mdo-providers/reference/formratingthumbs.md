@@ -1,7 +1,7 @@
 ---
 uid: formratingthumbs
 title: formratingthumbs
-keywords: mdoprovider mdo provider formratingthumbs
+keywords: ['mdoprovider mdo provider formratingthumbs']
 description:
 generated: true
 content_type: reference

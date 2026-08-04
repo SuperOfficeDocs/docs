@@ -2,7 +2,7 @@
 uid: SaleDynamicSelection
 title: SaleDynamicSelection
 description: Sale selection archive using the selectionId as criterionmapping.
-keywords: SaleDynamicSelection archive provider
+keywords: ['SaleDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: SystemEvents
 title: SystemEvents
 description: Provider base for system events.
-keywords: SystemEvents archive provider
+keywords: ['SystemEvents archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

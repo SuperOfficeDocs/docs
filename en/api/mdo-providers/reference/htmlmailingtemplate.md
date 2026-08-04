@@ -1,7 +1,7 @@
 ---
 uid: htmlmailingtemplate
 title: htmlmailingtemplate
-keywords: mdoprovider mdo provider htmlmailingtemplate
+keywords: ['mdoprovider mdo provider htmlmailingtemplate']
 description: MDO provider for the different types of Mailing templates
 generated: true
 content_type: reference

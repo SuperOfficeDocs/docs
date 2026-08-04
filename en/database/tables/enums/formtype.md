@@ -3,7 +3,7 @@ uid: enum-formtype
 title: Enum values for FormType
 description: Lists the enum values for FormType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

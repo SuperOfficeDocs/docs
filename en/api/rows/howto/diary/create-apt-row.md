@@ -2,7 +2,7 @@
 uid: create-appointment-row
 title: Create an appointment row
 description: How to create an appointment row.
-keywords: diary, calendar, appointment, API, row, AppointmentRow
+keywords: ['diary', 'calendar', 'appointment', 'API', 'row', 'AppointmentRow']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: howto

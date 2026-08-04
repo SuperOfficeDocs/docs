@@ -3,7 +3,7 @@ uid: teams-requirements
 title: Requirements for SuperOffice for Teams
 sidebarTitle: "Requirements"
 description: What you need before you can use SuperOffice for Teams.
-keywords: SuperOffice for Teams, Teams, requirements, prerequisites
+keywords: ['SuperOffice for Teams', 'Teams', 'requirements', 'prerequisites']
 author: schildea
 date: 02.06.2026
 content_type: reference

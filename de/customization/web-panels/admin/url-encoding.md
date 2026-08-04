@@ -2,7 +2,7 @@
 uid: help-de-url-encoding
 title: URL-Codierung
 description: URL-Codierung in Web-Bildschirmen
-keywords: Web-Bildschirm, URL-Codierung
+keywords: ['Web-Bildschirm', 'URL-Codierung']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

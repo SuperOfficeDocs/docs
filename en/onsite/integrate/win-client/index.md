@@ -4,7 +4,7 @@ title: Integration in the Windows client
 description: Integration in the Windows client
 author: Tony Yates
 date: 11.25.2021
-keywords: api, integration point, Windows
+keywords: ['api', 'integration point', 'Windows']
 content_type: reference
 deployment: onsite
 platform: win

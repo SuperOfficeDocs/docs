@@ -1,7 +1,7 @@
 ---
 uid: month
 title: month
-keywords: mdoprovider mdo provider month
+keywords: ['mdoprovider mdo provider month']
 description: MDO provider for the hard-coded list of "of" months in the recurrence dialog.
 generated: true
 content_type: reference

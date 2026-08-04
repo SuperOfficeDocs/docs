@@ -2,7 +2,7 @@
 uid: help-de-screen-designer-field-reference
 title: Referenz
 description: Referenz der im Ansichtsdesigner in Einstellungen und Verwaltung verfügbaren Elemente.
-keywords: Ansichtsdesigner Felder, Standardfeld, Standard-Registerkarte
+keywords: ['Ansichtsdesigner Felder', 'Standardfeld', 'Standard-Registerkarte']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

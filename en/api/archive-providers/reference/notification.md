@@ -2,7 +2,7 @@
 uid: Notification
 title: Notification
 description:
-keywords: Notification archive provider
+keywords: ['Notification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

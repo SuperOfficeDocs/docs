@@ -2,7 +2,7 @@
 uid: crmscript-get-recurrence-info
 title: View recurrence info
 description: How to get recurrence info with CRMScript
-keywords: CRMScript, calendar, diary, appointments, follow-up, recurrence
+keywords: ['CRMScript', 'calendar', 'diary', 'appointments', 'follow-up', 'recurrence']
 author: Bergfrid Skaara Dias
 date: 03.21.2022
 version: 10

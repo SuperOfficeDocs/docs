@@ -2,7 +2,7 @@
 uid: help-da-links
 title: Links
 description: Links
-keywords: Tilføj link, fanen Links, Links-fanen, link
+keywords: ['Tilføj link', 'fanen Links', 'Links-fanen', 'link']
 author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2

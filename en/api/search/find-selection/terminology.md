@@ -2,7 +2,7 @@
 title: Terminology
 description: Common terms and concepts pertaining to selections
 author: AnthonyYates
-keywords: NewSelection, Selection, Find
+keywords: ['NewSelection', 'Selection', 'Find']
 content_type: reference
 platform: web
 redirect_from: /en/api/netserver/search/find-selection/terminology

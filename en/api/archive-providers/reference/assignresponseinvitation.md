@@ -2,7 +2,7 @@
 uid: AssignResponseInvitation
 title: AssignResponseInvitation
 description: This is the query provider for invitations, of subtype 'Response'
-keywords: AssignResponseInvitation archive provider
+keywords: ['AssignResponseInvitation archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

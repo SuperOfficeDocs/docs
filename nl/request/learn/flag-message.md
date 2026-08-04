@@ -2,7 +2,7 @@
 uid: help-nl-request-message-flag
 title: Berichten bijhouden
 description: Hoe u berichten in een verzoek kunt markeren en filteren
-keywords: verzoek, bericht, markeren, vlag
+keywords: ['verzoek', 'bericht', 'markeren', 'vlag']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

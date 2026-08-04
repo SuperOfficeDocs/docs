@@ -2,7 +2,7 @@
 uid: FindAppointment
 title: FindAppointment
 description: Find appointment provider
-keywords: FindAppointment archive provider
+keywords: ['FindAppointment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

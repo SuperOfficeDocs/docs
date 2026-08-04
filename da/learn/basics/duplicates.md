@@ -2,7 +2,7 @@
 uid: help-da-duplicates
 title: Dubletter
 description: Dubletter
-keywords: dublet
+keywords: ['dublet']
 author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2

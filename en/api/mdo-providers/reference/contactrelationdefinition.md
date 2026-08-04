@@ -1,7 +1,7 @@
 ---
 uid: contactrelationdefinition
 title: contactrelationdefinition
-keywords: mdoprovider mdo provider contactrelationdefinition
+keywords: ['mdoprovider mdo provider contactrelationdefinition']
 description: MDO list provider for contact/person relation definitions. This provider is a takes a mandatory additionalInfo parameter, that specifies what kind of relation should be fetched.
 generated: true
 content_type: reference

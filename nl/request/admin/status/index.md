@@ -2,7 +2,7 @@
 uid: help-nl-request-status
 title: Verzoekstatus
 description: Verzoekstatus
-keywords: verzoek, status, verzoekstatus, tabblad Verzoekstatus
+keywords: ['verzoek', 'status', 'verzoekstatus', 'tabblad Verzoekstatus']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

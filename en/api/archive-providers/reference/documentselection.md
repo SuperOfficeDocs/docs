@@ -2,7 +2,7 @@
 uid: DocumentSelection
 title: DocumentSelection
 description: This is the archive Provider for the Selection document archive.
-keywords: DocumentSelection archive provider
+keywords: ['DocumentSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

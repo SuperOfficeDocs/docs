@@ -2,7 +2,7 @@
 uid: help-en-webhook-panel
 title: Webhooks panel
 description: View, manage, and monitor webhooks from Settings and maintenance.
-keywords: webhook panel, webhook status, deactivated webhook, restart webhook, monitor webhooks
+keywords: ['webhook panel', 'webhook status', 'deactivated webhook', 'restart webhook', 'monitor webhooks']
 author: digitaldiina
 date: 06.16.2026
 version: 12.1

@@ -3,7 +3,7 @@ uid: enum-webhooknotifyvia
 title: Enum values for WebhookNotifyVia
 description: Lists the enum values for WebhookNotifyVia.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

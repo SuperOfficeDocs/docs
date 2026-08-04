@@ -3,7 +3,7 @@ uid: enum-workflowdefinitionstatus
 title: Enum values for WorkflowDefinitionStatus
 description: Lists the enum values for WorkflowDefinitionStatus.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

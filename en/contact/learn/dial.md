@@ -2,7 +2,7 @@
 uid: help-en-contact-dial
 title: Dial contacts
 description: Dialling contacts; Phone preferences
-keywords: diary, follow-up, phone, call, dial
+keywords: ['diary', 'follow-up', 'phone', 'call', 'dial']
 author: digitaldiina
 date: 12.05.2025
 version: 11

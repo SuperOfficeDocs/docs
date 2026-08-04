@@ -2,7 +2,7 @@
 uid: dp-app-settings
 title: Application settings
 description: Reference of application settings in the SuperOffice Developer Portal.
-keywords: apps, Developer Portal
+keywords: ['apps', 'Developer Portal']
 author: Bergfrid Dias
 date: 07.07.2026
 version: 2.0

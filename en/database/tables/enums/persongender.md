@@ -3,7 +3,7 @@ uid: enum-persongender
 title: Enum values for PersonGender
 description: Lists the enum values for PersonGender.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

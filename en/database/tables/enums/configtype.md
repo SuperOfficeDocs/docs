@@ -3,7 +3,7 @@ uid: enum-configtype
 title: Enum values for ConfigType
 description: Lists the enum values for ConfigType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

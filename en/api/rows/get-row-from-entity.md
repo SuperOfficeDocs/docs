@@ -4,7 +4,6 @@ uid: get_row_from_entity
 description: Retrieve a row through an entity
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/rows/get-row-from-entity
 hidden: true

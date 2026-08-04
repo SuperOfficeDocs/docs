@@ -2,7 +2,7 @@
 uid: automated-tasks-ejoutbox
 title: Automated tasks - ejOutbox
 description: Automated tasks in Service - ejOutbox
-keywords: ejoutbox
+keywords: ['ejoutbox']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 category: service

@@ -2,7 +2,7 @@
 uid: AssociateProjects
 title: AssociateProjects
 description:
-keywords: AssociateProjects archive provider
+keywords: ['AssociateProjects archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

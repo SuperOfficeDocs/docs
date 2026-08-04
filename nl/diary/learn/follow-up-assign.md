@@ -2,7 +2,7 @@
 uid: help-nl-follow-up-assign
 title: Een vervolgactiviteit delegeren
 description: Een vervolgactiviteit aan iemand toewijzen
-keywords: agenda, vervolgactiviteit, uitnodiging, toewijzen
+keywords: ['agenda', 'vervolgactiviteit', 'uitnodiging', 'toewijzen']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

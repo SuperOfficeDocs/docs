@@ -2,7 +2,7 @@
 uid: help-da-in-app-help
 title: Brug af hjælp i app
 description: Brug af hjælp i app i SuperOffice CRM
-keywords: hjælp, inapp, in-app
+keywords: ['hjælp', 'inapp', 'in-app']
 author: SuperOffice RnD
 date: 01.25.2023
 content_type: concept

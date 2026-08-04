@@ -2,7 +2,7 @@
 uid: sop-open-project-more
 title: Open Project
 description: How to open a Project using the soprotocol
-keywords: soprotocol, project
+keywords: ['soprotocol', 'project']
 author: Eivind Fasting
 date: 11.26.2024
 content_type: howto

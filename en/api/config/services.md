@@ -4,7 +4,7 @@ uid: ns_config_services
 description: NetServer Services element
 date: 12.09.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, Services, web services, ApplicationToken, DefaultMode, RemoteBaseURL, SwitchDefault, SwitchFailover
+keywords: ['config', 'NetServer', 'web.config', 'Services', 'web services', 'ApplicationToken', 'DefaultMode', 'RemoteBaseURL', 'SwitchDefault', 'SwitchFailover']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/services

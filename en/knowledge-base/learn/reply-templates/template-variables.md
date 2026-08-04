@@ -2,7 +2,7 @@
 uid: help-en-template-variables-service
 title: Reply template variables (Service)
 description: Template variables
-keywords: reply template variable, template variable
+keywords: ['reply template variable', 'template variable']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

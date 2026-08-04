@@ -1,7 +1,7 @@
 ---
 uid: currentudeffields
 title: currentudeffields
-keywords: mdoprovider mdo provider currentudeffields
+keywords: ['mdoprovider mdo provider currentudeffields']
 description: Get a list of udef fields for a given type. Pass the type as AdditionalInfo. Optionally it is possible to exclude page one fields by adding extrainfo ( 'Contact,excludepageone' )
 generated: true
 content_type: reference

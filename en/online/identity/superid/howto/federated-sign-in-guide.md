@@ -2,7 +2,7 @@
 uid: federated_sign_in_guide
 title: Guide to federated sign-in
 description: Guide to federated sign-in
-keywords: SuperID, Microsoft Entra ID
+keywords: ['SuperID', 'Microsoft Entra ID']
 author: digitaldiina
 date: 01.15.2024
 version: 12

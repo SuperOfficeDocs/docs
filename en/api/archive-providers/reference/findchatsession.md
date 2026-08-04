@@ -2,7 +2,7 @@
 uid: FindChatSession
 title: FindChatSession
 description: ChatSession provider for Find
-keywords: FindChatSession archive provider
+keywords: ['FindChatSession archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

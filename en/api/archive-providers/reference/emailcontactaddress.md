@@ -2,7 +2,7 @@
 uid: emailcontactaddress
 title: emailcontactaddress
 description: Contact subchannel for special purpose archive provider used to search for email addresses.
-keywords: emailcontactaddress archive provider
+keywords: ['emailcontactaddress archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

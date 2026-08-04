@@ -2,7 +2,7 @@
 uid: mobile-security
 title: Security
 description: Mobile CRM security in CRM Online
-keywords: mobile, pocket
+keywords: ['mobile', 'pocket']
 author: Martin Pavlas
 date: 06.10.2026
 version: 11.1

@@ -2,7 +2,7 @@
 uid: help-da-request-message-split
 title: Opdel meddelelse
 description: Lær, hvordan du opdeler en meddelelse i en sag i SuperOffice.
-keywords: opdel meddelelse, sag, meddelelse
+keywords: ['opdel meddelelse', 'sag', 'meddelelse']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

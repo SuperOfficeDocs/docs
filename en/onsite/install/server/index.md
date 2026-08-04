@@ -2,7 +2,7 @@
 uid: install-crm-server
 title: Install SuperOffice Win Server
 description: Install SuperOffice Win Server
-keywords: install, server
+keywords: ['install', 'server']
 author: SuperOffice Product and Engineering
 date: 12.01.2025
 version: 11

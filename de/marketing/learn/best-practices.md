@@ -2,7 +2,7 @@
 uid: help-de-marketing-best-practices
 title: Beste Praktiken
 description: Beste Praktiken
-keywords: Marketing, E-Mail-Marketing, Nachricht, Publikum, Checkliste
+keywords: ['Marketing', 'E-Mail-Marketing', 'Nachricht', 'Publikum', 'Checkliste']
 author: Bergfrid Dias, Jeanette Small Strøm
 date: 09.26.2025
 version: 10.5

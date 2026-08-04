@@ -1,7 +1,7 @@
 ---
 uid: suggesteddocument
 title: suggesteddocument
-keywords: mdoprovider mdo provider suggesteddocument
+keywords: ['mdoprovider mdo provider suggesteddocument']
 description: SuggestedDocumentProvider creates a MDO list of suggested documents in the database.
 generated: true
 content_type: reference

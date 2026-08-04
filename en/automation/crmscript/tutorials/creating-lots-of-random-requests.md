@@ -4,7 +4,7 @@ title: Creating lots of random requests
 description: Creating lots of random requests in CRMScript
 author: kronicz
 date: 10.03.2022
-keywords: CRMScript
+keywords: ['CRMScript']
 content_type: tutorial
 ---
 

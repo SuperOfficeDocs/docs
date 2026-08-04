@@ -2,7 +2,7 @@
 uid: help-no-chat-link-to-person
 title: Koble chat til eksisterende person
 description: Når en kunde sender en forespørsel via chatwidgetten på nettstedet, er det ikke bare viktig å svare på den, men også å registrere den på deres personkort.
-keywords: link chat til person, foreslått person, opprett ny person
+keywords: ['link chat til person', 'foreslått person', 'opprett ny person']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

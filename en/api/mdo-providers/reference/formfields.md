@@ -1,7 +1,7 @@
 ---
 uid: formfields
 title: formfields
-keywords: mdoprovider mdo provider formfields
+keywords: ['mdoprovider mdo provider formfields']
 description: List of customizable fields for forms
 generated: true
 content_type: reference

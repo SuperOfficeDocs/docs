@@ -2,7 +2,7 @@
 uid: customer-center-template
 title: Customer center templates
 description: Customer center templates
-keywords: Customer Center, CEP
+keywords: ['Customer Center', 'CEP']
 author: SuperOffice Product and Engineering
 date: 07.10.2024
 content_type: howto

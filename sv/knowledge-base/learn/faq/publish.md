@@ -2,7 +2,7 @@
 uid: help-sv-document-faq-publish
 title: Publicera FAQ-poster
 description: Publicera FAQ-poster
-keywords: FAQ
+keywords: ['FAQ']
 author: SuperOffice RnD
 date: 07.15.2025
 version: 10.5

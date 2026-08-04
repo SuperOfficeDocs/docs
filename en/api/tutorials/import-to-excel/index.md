@@ -4,7 +4,6 @@ uid: import_to_excel
 description: How to import data into Excel
 author: Tony Yates
 date: 10.15.2020
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

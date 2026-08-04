@@ -5,7 +5,7 @@ description: How to revoke access given to a standard application.
 author: Bergfrid Dias
 date: 09.25.2024
 version_devportal: 1.26
-keywords: App Store, revoke, consent
+keywords: ['App Store', 'revoke', 'consent']
 content_type: howto
 deployment: online
 platform: web

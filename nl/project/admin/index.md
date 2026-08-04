@@ -3,7 +3,7 @@ uid: help-nl-project-configuration
 title: Projecttypen, statussen en gidsen beheren
 sidebarTitle: "Beheer"
 description: Leer hoe u projectworkflows in SuperOffice CRM beheert met projecttypen, statussen en gidsen. Configureer deze tools in Instellingen en onderhoud om tracking, taken en documentatie te standaardiseren.
-keywords: projectgids, projectstatus, projecttype, workflow, project
+keywords: ['projectgids', 'projectstatus', 'projecttype', 'workflow', 'project']
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2

@@ -2,7 +2,7 @@
 uid: projectfavourites
 title: projectfavourites
 description:
-keywords: projectfavourites archive provider
+keywords: ['projectfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

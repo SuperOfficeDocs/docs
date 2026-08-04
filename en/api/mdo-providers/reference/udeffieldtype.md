@@ -1,7 +1,7 @@
 ---
 uid: udeffieldtype
 title: udeffieldtype
-keywords: mdoprovider mdo provider udeffieldtype
+keywords: ['mdoprovider mdo provider udeffieldtype']
 description: List of UDef field types for a given owner table, and possibly restricted based on the current field type
 generated: true
 content_type: reference

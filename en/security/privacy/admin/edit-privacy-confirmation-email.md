@@ -2,7 +2,7 @@
 uid: help-en-edit-privacy-confirmation-email
 title: Edit privacy confirmation email
 description: In this how-to guide you will learn how to edit the privacy confirmation email.
-keywords: privacy confirmation email, email template, Confirmation - Contact added
+keywords: ['privacy confirmation email', 'email template', 'Confirmation - Contact added']
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10

@@ -3,7 +3,7 @@ uid: help-sv-form-view-statistics
 title: Spåra formulärinlämningar och visa statistik
 sidebarTitle: "Formulärstatistik"
 description: Spåra formulärinlämningar och visa statistik
-keywords: Formulär
+keywords: ['Formulär']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

@@ -1,7 +1,7 @@
 ---
 uid: colorindex
 title: colorindex
-keywords: mdoprovider mdo provider colorindex
+keywords: ['mdoprovider mdo provider colorindex']
 description: List of named colors from the "ColorIndex" enum. Steps to change the palette - 1. Add to the end of the ColorIndex enum (in Modelling) 2. Add to this provider. The color palette in SCIL uses the color code in the styleHint field 3. Update colors in fullcalendar.so.less so that css class colorX has the same color code returned by this list.
 generated: true
 content_type: reference

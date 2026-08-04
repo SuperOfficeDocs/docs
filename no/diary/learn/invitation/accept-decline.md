@@ -2,7 +2,7 @@
 uid: help-no-invitation-accept
 title: Oppfølginger du er invitert til
 description: Vise oppfølginger du er invitert til; Godta eller avslå invitasjoner
-keywords: dagbok, oppfølging, invitasjon
+keywords: ['dagbok', 'oppfølging', 'invitasjon']
 author: Bergfrid Dias
 date: 02.05.2025
 version: 10.5.2

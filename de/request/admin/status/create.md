@@ -2,7 +2,7 @@
 uid: help-de-request-status-create
 title: Anfragestatus erstellen
 description: Anfragestatus erstellen
-keywords: Anfragestatus erstellen, Anfragestatus hinzufügen, neuer Anfragestatus, Anfragestatus, interner Status, Warteschlangenstatus, Zeitnachverfolgung, Anfrage, Status
+keywords: ['Anfragestatus erstellen', 'Anfragestatus hinzufügen', 'neuer Anfragestatus', 'Anfragestatus', 'interner Status', 'Warteschlangenstatus', 'Zeitnachverfolgung', 'Anfrage', 'Status']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

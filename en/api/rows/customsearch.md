@@ -3,7 +3,7 @@ title: CustomSearch queries
 description: CustomSearch queries
 author: AnthonyYates
 date: 11.16.2021
-keywords: data access, rows, CustomSearch
+keywords: ['data access', 'rows', 'CustomSearch']
 content_type: concept
 deployment: online, onsite
 platform: web, win

@@ -2,7 +2,7 @@
 uid: help-en-email-inbox-create-task
 title: Create task
 description: Learn how to create a task in SuperOffice CRM based on an email message
-keywords: todo, follow-up, archive email, inbox, create task, task, follow-up from email, email
+keywords: ['todo', 'follow-up', 'archive email', 'inbox', 'create task', 'task', 'follow-up from email', 'email']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

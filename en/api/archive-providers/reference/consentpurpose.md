@@ -2,7 +2,7 @@
 uid: ConsentPurpose
 title: ConsentPurpose
 description: This is the archive Consent Purpose Provider for GDPR Admin
-keywords: ConsentPurpose archive provider
+keywords: ['ConsentPurpose archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

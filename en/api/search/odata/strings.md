@@ -2,7 +2,7 @@
 uid: rest-api-search-strings
 title: String
 description: REST Web API search strings
-keywords: search, odata, string
+keywords: ['search', 'odata', 'string']
 author: Tony Yates, Eivind Fasting
 date: 06.18.2024
 content_type: howto

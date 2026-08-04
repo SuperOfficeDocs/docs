@@ -1,7 +1,7 @@
 ---
 uid: ticketfavourite
 title: ticketfavourite
-keywords: mdoprovider mdo provider ticketfavourite
+keywords: ['mdoprovider mdo provider ticketfavourite']
 description:
 generated: true
 content_type: reference

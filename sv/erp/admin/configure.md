@@ -2,7 +2,7 @@
 uid: help-sv-erp-configure
 title: Konfigurera ERP-koppling
 description: Konfigurera synkronisering mellan SuperOffice CRM och ditt ERP-system genom att mappa fält, ställa in standardvärden och prioritera ERP-kopplingar.
-keywords: ERP-koppling, konfigurera synk, fältmappning, listmappning, standardvärden, ordna ERP-fält, ange synk-prioritet, redigera ERP-koppling, SuperOffice ERP-integration, ERP-flik, synk-connector
+keywords: ['ERP-koppling', 'konfigurera synk', 'fältmappning', 'listmappning', 'standardvärden', 'ordna ERP-fält', 'ange synk-prioritet', 'redigera ERP-koppling', 'SuperOffice ERP-integration', 'ERP-flik', 'synk-connector']
 author: Bergfrid Dias
 date: 03.31.2025
 version: 10.5

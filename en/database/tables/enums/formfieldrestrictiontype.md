@@ -3,7 +3,7 @@ uid: enum-formfieldrestrictiontype
 title: Enum values for FormFieldRestrictionType
 description: Lists the enum values for FormFieldRestrictionType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

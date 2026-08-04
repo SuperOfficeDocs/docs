@@ -2,7 +2,7 @@
 uid: archiveproviderslist
 title: Archive Provider List
 description: This is a list of all the valid provider names, and the associated column names and types.
-keywords: archive providers
+keywords: ['archive providers']
 generated: true
 content_type: reference
 envir: onsite, online

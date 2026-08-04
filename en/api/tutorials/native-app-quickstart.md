@@ -3,7 +3,6 @@ title: Native console application quick-start
 uid: native_app_quickstart
 description: Native console application quick-start
 author: SuperOffice Product and Engineering
-keywords:
 content_type: tutorial
 deployment: online
 platform: web

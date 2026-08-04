@@ -3,7 +3,7 @@ uid: enum-ownertype
 title: Enum values for OwnerType
 description: Lists the enum values for OwnerType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -2,7 +2,7 @@
 uid: DocumentDynamicSelection
 title: DocumentDynamicSelection
 description: Document selection archive using the selectionId as criterionmapping.
-keywords: DocumentDynamicSelection archive provider
+keywords: ['DocumentDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: help-da-request-type-create
 title: Tilføj sagstype
 description: Opret og administrer sagstyper i SuperOffice. Læs hvordan du tilføjer en ny sagstype, konfigurerer indstillinger og vælger standardindstillinger.
-keywords: opret sagstype, ny sagstype, tilføj sagstype, sagstype, Sagstyper-fanen, type, sag
+keywords: ['opret sagstype', 'ny sagstype', 'tilføj sagstype', 'sagstype', 'Sagstyper-fanen', 'type', 'sag']
 author: Bergfrid Dias
 date: 03.07.2025
 version: 10.5.2

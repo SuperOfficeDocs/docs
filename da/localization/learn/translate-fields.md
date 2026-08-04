@@ -2,7 +2,7 @@
 uid: help-da-translate-fields
 title: Oversættelse
 description: Oversættelse af felter i SuperOffice
-keywords: oversæt
+keywords: ['oversæt']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

@@ -2,7 +2,7 @@
 uid: EmailFlows
 title: EmailFlows
 description: Archive of Email flows.
-keywords: EmailFlows archive provider
+keywords: ['EmailFlows archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

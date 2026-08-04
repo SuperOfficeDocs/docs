@@ -2,7 +2,7 @@
 uid: help-da-invitation-accept
 title: Opfølgninger du er inviteret til
 description: Visning af opfølgninger, du er inviteret til; Accepter eller afvis invitationer
-keywords: dagbog, opfølgning, invitation
+keywords: ['dagbog', 'opfølgning', 'invitation']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

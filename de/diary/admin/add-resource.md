@@ -2,7 +2,7 @@
 uid: help-de-add-items-to-resource-list
 title: Ressourcen hinzufügung
 description: Hinzufügung von Objekten zur Liste Ressource
-keywords: Ressourcen, Liste Allgemein - Ressource
+keywords: ['Ressourcen', 'Liste Allgemein - Ressource']
 author: digitaldiina
 date: 10.27.2025
 version: 10.5

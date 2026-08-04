@@ -2,7 +2,7 @@
 uid: create_cdd_tables
 title: How to create tables
 description: How to create tables in the SuperOffice database for version 8.1 and higher
-keywords: database, dictionary step, CDD
+keywords: ['database', 'dictionary step', 'CDD']
 author: AnthonyYates
 date: 07.16.2026
 content_type: howto

@@ -3,7 +3,7 @@ uid: help-nl-request-accept
 title: Verantwoordelijkheid voor verzoeken opeisen
 sidebarTitle: "Verzoek opeisen"
 description: Hoe een verzoek accepteren om te voorkomen dat iemand anders het tegelijkertijd beantwoordt.
-keywords: verzoek accepteren, accept, verantwoordelijkheid, verzoek eigenaar, volgend in wachtrij, verzoek
+keywords: ['verzoek accepteren', 'accept', 'verantwoordelijkheid', 'verzoek eigenaar', 'volgend in wachtrij', 'verzoek']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

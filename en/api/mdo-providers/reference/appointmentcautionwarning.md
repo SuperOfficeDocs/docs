@@ -1,7 +1,7 @@
 ---
 uid: appointmentcautionwarning
 title: appointmentcautionwarning
-keywords: mdoprovider mdo provider appointmentcautionwarning
+keywords: ['mdoprovider mdo provider appointmentcautionwarning']
 description: Appointment.CautionWarning. Appointment and invitation synchronization info
 generated: true
 content_type: reference

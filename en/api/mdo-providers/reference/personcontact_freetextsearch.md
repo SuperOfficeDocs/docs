@@ -1,7 +1,7 @@
 ---
 uid: personcontact_freetextsearch
 title: personcontact_freetextsearch
-keywords: mdoprovider mdo provider personcontact_freetextsearch
+keywords: ['mdoprovider mdo provider personcontact_freetextsearch']
 description: Provider for selecting a Person - with contact search. Does keyword matching and scoring across multiple tables using freetext index. First does BEGINS and CONTAINS searches in parallel. If neither results in anything, then falls back to SOUNDEX search.
 generated: true
 content_type: reference

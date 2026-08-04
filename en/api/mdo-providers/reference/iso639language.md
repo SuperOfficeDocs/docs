@@ -1,7 +1,7 @@
 ---
 uid: iso639language
 title: iso639language
-keywords: mdoprovider mdo provider iso639language
+keywords: ['mdoprovider mdo provider iso639language']
 description:
 generated: true
 content_type: reference

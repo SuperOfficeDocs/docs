@@ -2,7 +2,7 @@
 uid: tutorial-itunes-like-activities
 title: Tutorial - iTunes-like client for activities
 description: In this tutorial, you will learn how to create a Windows application that retrieves a list of activities for the past 6 months of the logged-in user using the ActivityArchiveProvider.
-keywords: iTunes, ActivityArchiveProvider
+keywords: ['iTunes', 'ActivityArchiveProvider']
 date: 03.21.2022
 version: 10
 content_type: tutorial

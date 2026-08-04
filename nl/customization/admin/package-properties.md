@@ -2,7 +2,7 @@
 uid: help-nl-package-properties-service
 title: Pakketeigenschappen
 description: Pakketeigenschappen
-keywords: pakket eigenschappen
+keywords: ['pakket eigenschappen']
 author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5

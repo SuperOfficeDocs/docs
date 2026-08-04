@@ -2,7 +2,7 @@
 uid: help-en-customer-centre-form
 title: Use web forms in your Customer centre
 description: In this how-to guide, you will learn how to use a web form.
-keywords: form, Customer Center
+keywords: ['form', 'Customer Center']
 author: Bergfrid Dias
 date: 03.20.2023
 content_type: howto

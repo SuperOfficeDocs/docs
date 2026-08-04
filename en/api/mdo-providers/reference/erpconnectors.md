@@ -1,7 +1,7 @@
 ---
 uid: erpconnectors
 title: erpconnectors
-keywords: mdoprovider mdo provider erpconnectors
+keywords: ['mdoprovider mdo provider erpconnectors']
 description: Retrieve the list of all defined Erp Connectors (not Connections, that's another list)
 generated: true
 content_type: reference

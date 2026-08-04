@@ -2,7 +2,7 @@
 uid: help-no-customer-center-faq
 title: Publisere FAQ-er til kundesenteret
 description: I denne guiden lærer du hvordan du publiserer FAQ-er i kundesenteret.
-keywords: FAQ, Kundesenter
+keywords: ['FAQ', 'Kundesenter']
 author: Bergfrid Dias
 date: 06.10.2026
 content_type: howto

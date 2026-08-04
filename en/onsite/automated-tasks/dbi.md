@@ -2,7 +2,7 @@
 uid: automated-task-dbi
 title: dbi
 description: Automated tasks in Service - dbi
-keywords: dbi
+keywords: ['dbi']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 content_type: reference

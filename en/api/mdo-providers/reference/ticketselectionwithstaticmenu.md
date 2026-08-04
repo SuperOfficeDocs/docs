@@ -1,7 +1,7 @@
 ---
 uid: ticketselectionwithstaticmenu
 title: ticketselectionwithstaticmenu
-keywords: mdoprovider mdo provider ticketselectionwithstaticmenu
+keywords: ['mdoprovider mdo provider ticketselectionwithstaticmenu']
 description: Provider for selecting ticket selections
 generated: true
 content_type: reference

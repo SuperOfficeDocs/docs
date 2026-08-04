@@ -2,7 +2,7 @@
 uid: EmailFlowFormContent
 title: EmailFlowFormContent
 description: Email flow form content.
-keywords: EmailFlowFormContent archive provider
+keywords: ['EmailFlowFormContent archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

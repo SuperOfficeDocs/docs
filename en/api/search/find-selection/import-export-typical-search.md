@@ -2,7 +2,7 @@
 title: Typical search - export and import
 description: Details Find Selection Typical Seach feature set.
 author: AnthonyYates
-keywords: Typical search, Selection, Find
+keywords: ['Typical search', 'Selection', 'Find']
 content_type: article
 platform: web
 redirect_from: /en/api/netserver/search/find-selection/import-export-typical-search

@@ -2,7 +2,7 @@
 uid: help-sv-email-inbox-create-task
 title: Skapa uppgift
 description: Läs hur du skapar en uppgift i SuperOffice CRM baserat på ett e-postmeddelande
-keywords: att göra, händelse, arkivera e-post, inkorg, skapa uppgift, uppgift, uppföljning från e-post, e-post
+keywords: ['att göra', 'händelse', 'arkivera e-post', 'inkorg', 'skapa uppgift', 'uppgift', 'uppföljning från e-post', 'e-post']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

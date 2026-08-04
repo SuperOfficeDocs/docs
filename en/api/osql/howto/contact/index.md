@@ -2,7 +2,7 @@
 uid: api-person-osql
 title: Person - OSQL
 description: Working with contacts (person) in API with Objectified SQL.
-keywords: person, contact, OSQL, API
+keywords: ['person', 'contact', 'OSQL', 'API']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: reference

@@ -3,7 +3,7 @@ title: VisibleFor flag
 uid: visiblefor_flag
 description: VisibleFor flag
 author: SuperOffice Product and Engineering
-keywords: sentry
+keywords: ['sentry']
 content_type: concept
 hidden: true
 ---

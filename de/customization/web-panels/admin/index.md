@@ -2,7 +2,7 @@
 uid: help-de-ui-web-panels
 title: Web-Bildschirme
 description: Web-Bildschirme
-keywords: Web-Bildschirm, www Registerkarte
+keywords: ['Web-Bildschirm', 'www Registerkarte']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

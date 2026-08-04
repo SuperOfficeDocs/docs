@@ -2,7 +2,7 @@
 uid: help-en-mailings-resend
 title: Resend your mailing
 description: How to resend a mailing in SuperOffice Marketing.
-keywords: resend mailing, recipients
+keywords: ['resend mailing', 'recipients']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

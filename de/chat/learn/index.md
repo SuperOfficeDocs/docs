@@ -2,7 +2,7 @@
 uid: help-de-chat
 title: Chat
 description: Kommunizieren Sie mit bestehenden oder potenziellen Kunden und helfen Sie ihnen über ein Chat-Widget auf Ihrer Website.
-keywords: Chat, laufende Chats
+keywords: ['Chat', 'laufende Chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

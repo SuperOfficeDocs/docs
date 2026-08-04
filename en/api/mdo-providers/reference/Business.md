@@ -1,7 +1,7 @@
 ---
 uid: business
 title: business
-keywords: mdoprovider mdo provider business
+keywords: ['mdoprovider mdo provider business']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

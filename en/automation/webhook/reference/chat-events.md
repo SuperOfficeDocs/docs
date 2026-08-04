@@ -2,7 +2,7 @@
 uid: webhook_chat_event
 title: Chat events
 description: Chat events
-keywords: chat webhook
+keywords: ['chat webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

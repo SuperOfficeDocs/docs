@@ -1,7 +1,7 @@
 ---
 uid: saledone
 title: saledone
-keywords: mdoprovider mdo provider saledone
+keywords: ['mdoprovider mdo provider saledone']
 description: Sale Done status - SaleDone.Done or NotDone.
 generated: true
 content_type: reference

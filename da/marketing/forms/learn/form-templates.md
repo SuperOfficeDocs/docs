@@ -2,7 +2,7 @@
 uid: help-da-form-templates
 title: Arbejde med formularskabeloner
 description: Arbejde med formularskabeloner
-keywords: formular, skabelon, formularskabelon
+keywords: ['formular', 'skabelon', 'formularskabelon']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

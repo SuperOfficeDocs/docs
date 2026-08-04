@@ -2,7 +2,7 @@
 uid: help-da-mailings-resend
 title: Genudsende din mailing
 description: Når du har håndteret de afviste e-mails, er det en god ide at genudsende din e-mailudsendelse.
-keywords: resend mailing, recipients
+keywords: ['resend mailing', 'recipients']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

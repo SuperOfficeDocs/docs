@@ -2,7 +2,7 @@
 uid: crmscript-inline
 title: Inline CRMScript
 description: Inline CRMScript
-keywords: Customer Center, CEP, CRMScript
+keywords: ['Customer Center', 'CEP', 'CRMScript']
 author: SuperOffice Product and Engineering
 date: 12.04.2025
 version: 11.7

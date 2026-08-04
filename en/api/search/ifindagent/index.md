@@ -2,7 +2,7 @@
 title: ifindagent
 description: IFindAgent
 author: SuperOffice Product and Engineering
-keywords: search
+keywords: ['search']
 content_type: howto
 date:
 category: search

@@ -4,7 +4,6 @@ uid: blogic_select_slevel
 description: Select Slevel
 author:
 date:
-keywords:
 topic: reference
 ---
 

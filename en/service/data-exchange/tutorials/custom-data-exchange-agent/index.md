@@ -4,7 +4,7 @@ uid: custom_data_exchange_agent
 description: How to create a custom Data Exchange agent
 author: SuperOffice Product and Engineering
 date: 06.24.2016
-keywords: ede, dbi
+keywords: ['ede', 'dbi']
 content_type: tutorial
 ---
 

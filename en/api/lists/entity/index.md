@@ -4,7 +4,6 @@ uid: list_providers
 description: List providers
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords:
 content_type: concept
 area: api-core
 redirect_from: /en/api/netserver/lists/entity/index

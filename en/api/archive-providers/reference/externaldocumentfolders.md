@@ -2,7 +2,7 @@
 uid: externaldocumentfolders
 title: externaldocumentfolders
 description:
-keywords: externaldocumentfolders archive provider
+keywords: ['externaldocumentfolders archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

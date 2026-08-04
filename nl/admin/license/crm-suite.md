@@ -2,7 +2,7 @@
 uid: help-nl-crm-suite
 title: SuperOffice CRM Suite
 description: Overzicht van de 5 SuperOffice CRM Suite-plannen, seatbeheer, planlimieten en prijsmodel.
-keywords: CRM Suite, plan, Starter, Core, Growth, Plus, Super, planlimieten, fencing, schalen, seat, abonnement
+keywords: ['CRM Suite', 'plan', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'planlimieten', 'fencing', 'schalen', 'seat', 'abonnement']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

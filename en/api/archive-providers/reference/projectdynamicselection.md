@@ -2,7 +2,7 @@
 uid: ProjectDynamicSelection
 title: ProjectDynamicSelection
 description: Project selection archive using the selectionId as criterionmapping.
-keywords: ProjectDynamicSelection archive provider
+keywords: ['ProjectDynamicSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

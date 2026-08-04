@@ -4,7 +4,7 @@ uid: flush-cache
 description: Flush Cache
 author: Eivind Fasting
 date: 08.14.2024
-keywords: cache, flush
+keywords: ['cache', 'flush']
 content_type: concept
 redirect_from: /en/api/netserver/caching/flush-cache
 ---

@@ -4,7 +4,6 @@ uid: blogic_select_project
 description: Select project
 author:
 date:
-keywords:
 topic: reference
 ---
 

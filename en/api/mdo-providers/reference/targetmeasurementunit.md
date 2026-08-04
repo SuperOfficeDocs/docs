@@ -1,7 +1,7 @@
 ---
 uid: targetmeasurementunit
 title: targetmeasurementunit
-keywords: mdoprovider mdo provider targetmeasurementunit
+keywords: ['mdoprovider mdo provider targetmeasurementunit']
 description: MeasurementUnits
 generated: true
 content_type: reference

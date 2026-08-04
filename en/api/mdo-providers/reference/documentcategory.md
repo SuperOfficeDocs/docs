@@ -1,7 +1,7 @@
 ---
 uid: documentcategory
 title: documentcategory
-keywords: mdoprovider mdo provider documentcategory
+keywords: ['mdoprovider mdo provider documentcategory']
 description:
 generated: true
 content_type: reference

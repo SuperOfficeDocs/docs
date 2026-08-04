@@ -2,7 +2,7 @@
 uid: odf-support
 title: ODF Support
 description: ODF Support
-keywords: Open Document Format, ODF
+keywords: ['Open Document Format', 'ODF']
 author: SuperOffice Product and Engineering
 date: 09.12.2025
 content_type: concept

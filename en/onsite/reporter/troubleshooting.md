@@ -3,7 +3,6 @@ title: Troubleshooting
 uid: troubleshooting_web_reporter
 description: Troubleshoot Reporter
 author: SuperOffice Product and Engineering
-keywords:
 content_type: howto
 deployment: onsite
 platform: web

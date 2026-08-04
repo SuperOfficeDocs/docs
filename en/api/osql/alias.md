@@ -4,7 +4,6 @@ uid: osql_alias
 description: SuperOffice Objectified SQL - Alias
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: concept
 redirect_from: /en/api/netserver/osql/alias
 hidden: true

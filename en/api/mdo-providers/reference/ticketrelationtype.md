@@ -1,7 +1,7 @@
 ---
 uid: ticketrelationtype
 title: ticketrelationtype
-keywords: mdoprovider mdo provider ticketrelationtype
+keywords: ['mdoprovider mdo provider ticketrelationtype']
 description: Ticket Relation Type
 generated: true
 content_type: reference

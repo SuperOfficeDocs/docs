@@ -2,7 +2,7 @@
 uid: AppointmentStaticSelection
 title: AppointmentStaticSelection
 description:
-keywords: AppointmentStaticSelection archive provider
+keywords: ['AppointmentStaticSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

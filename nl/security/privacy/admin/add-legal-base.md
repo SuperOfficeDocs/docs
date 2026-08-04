@@ -3,7 +3,7 @@ uid: help-nl-privacy-add-legal-base
 title: Items toevoegen aan de lijst Privacy - Rechtsgrondslag
 sidebarTitle: "Rechtsgrondslag toevoegen"
 description: Ontdek hoe u de privacylijsten in deze handleiding kunt wijzigen.
-keywords: Privacy rechtsgrondslag lijst, Rechtsgrondslag toevoegen
+keywords: ['Privacy rechtsgrondslag lijst', 'Rechtsgrondslag toevoegen']
 author: SuperOffice Product and Engineering
 date: 09.02.2025
 version: 10.3

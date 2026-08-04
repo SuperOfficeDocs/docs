@@ -2,7 +2,6 @@
 uid: send_welcome_emails
 title: Send welcome emails to new users
 description: Send welcome emails to new users
-keywords:
 author: digitaldiina
 date: 07.31.2026
 version: 12

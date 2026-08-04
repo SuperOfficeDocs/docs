@@ -1,7 +1,7 @@
 ---
 uid: phonesearch
 title: phonesearch
-keywords: mdoprovider mdo provider phonesearch
+keywords: ['mdoprovider mdo provider phonesearch']
 description: Search phone numbers for matching stripped numbers, across person and contacts. Return company name + department, or person name. Use AdditionInfo to restrict search to just Person or Contact phone numbers using "P" or "C".
 generated: true
 content_type: reference

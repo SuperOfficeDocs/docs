@@ -4,7 +4,7 @@ uid: quote_connector_carrier_quoteversionstateinfo
 description: ERP Quote Connector Interface data carrier - QuoteVersionStateInfo
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteversionstateinfo
 ---

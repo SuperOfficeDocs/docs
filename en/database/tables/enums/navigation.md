@@ -3,7 +3,7 @@ uid: enum-navigation
 title: Enum values for Navigation
 description: Lists the enum values for Navigation.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

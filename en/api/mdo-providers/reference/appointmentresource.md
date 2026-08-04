@@ -1,7 +1,7 @@
 ---
 uid: appointmentresource
 title: appointmentresource
-keywords: mdoprovider mdo provider appointmentresource
+keywords: ['mdoprovider mdo provider appointmentresource']
 description:
 generated: true
 content_type: reference

@@ -1,7 +1,7 @@
 ---
 uid: appointmentgroup
 title: appointmentgroup
-keywords: mdoprovider mdo provider appointmentgroup
+keywords: ['mdoprovider mdo provider appointmentgroup']
 description: Appointment grouping types - TaskType.Appointment, Phone, ToDo
 generated: true
 content_type: reference

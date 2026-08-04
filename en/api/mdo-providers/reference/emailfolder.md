@@ -1,7 +1,7 @@
 ---
 uid: emailfolder
 title: emailfolder
-keywords: mdoprovider mdo provider emailfolder
+keywords: ['mdoprovider mdo provider emailfolder']
 description: EmailFolderProvider gives you the folder hierarchy of a given mail account
 generated: true
 content_type: reference

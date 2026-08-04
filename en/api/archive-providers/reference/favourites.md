@@ -2,7 +2,7 @@
 uid: Favourites
 title: Favourites
 description: Archive provider for the list of favourites
-keywords: Favourites archive provider
+keywords: ['Favourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

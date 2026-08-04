@@ -2,7 +2,7 @@
 uid: MailingsStaticSelectionV2
 title: MailingsStaticSelectionV2
 description: Static archive Provider for a Selection of Mailingss archive.
-keywords: MailingsStaticSelectionV2 archive provider
+keywords: ['MailingsStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: ContactPersonStaticSelectionV2
 title: ContactPersonStaticSelectionV2
 description:
-keywords: ContactPersonStaticSelectionV2 archive provider
+keywords: ['ContactPersonStaticSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

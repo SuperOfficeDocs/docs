@@ -2,7 +2,7 @@
 uid: ExistingCategoryMembers
 title: ExistingCategoryMembers
 description: Archive of ExistingCategoryMembers - used by the web api.
-keywords: ExistingCategoryMembers archive provider
+keywords: ['ExistingCategoryMembers archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

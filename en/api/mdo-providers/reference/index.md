@@ -3,7 +3,7 @@ uid: mdo-provider-listing
 title: MDO List Provider names
 description: Valid list of provider names
 generated: true
-keywords: mdoprovider mdo provider
+keywords: ['mdoprovider mdo provider']
 content_type: reference
 envir: onsite, online
 ---

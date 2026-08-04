@@ -2,7 +2,7 @@
 uid: help-en-screen-designer-field-reference
 title: Reference
 description: Reference of elements available in the Screen Designer in Settings and maintenance.
-keywords: Screen designer fields, standard field, standard tab
+keywords: ['Screen designer fields', 'standard field', 'standard tab']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

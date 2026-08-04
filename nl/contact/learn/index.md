@@ -2,7 +2,7 @@
 uid: help-nl-contact
 title: Persoon
 description: Het scherm Persoon biedt een overzicht van alle communicatie en interactie met een persoon. Hier beheert u contactgegevens, volgt u activiteiten en hebt u toegang tot AVG-gerelateerde documentatie.
-keywords: scherm Persoon, persoon, contactpersoon
+keywords: ['scherm Persoon', 'persoon', 'contactpersoon']
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2

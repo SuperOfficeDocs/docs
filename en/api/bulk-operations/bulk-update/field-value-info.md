@@ -4,7 +4,7 @@ uid: bulkupdate_field_value_info
 description: BulkUpdateSystem FieldValueInfo
 author: Tony Yates
 date: 06.23.2017
-keywords: FieldValueInfo
+keywords: ['FieldValueInfo']
 content_type: concept
 category: api
 topic: bulk update

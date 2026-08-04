@@ -2,7 +2,7 @@
 uid: help-sv-chat-create-request
 title: Skapa ärende i en aktiv chatt
 description: I den här guiden förklarar vi hur du skapar ett ärende i SuperOffice Chatt.
-keywords: skapa ärende, kan inte lösa via chatt
+keywords: ['skapa ärende', 'kan inte lösa via chatt']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

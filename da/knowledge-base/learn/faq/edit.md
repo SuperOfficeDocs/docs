@@ -2,7 +2,7 @@
 uid: help-da-faq-edit
 title: Rediger eller slet FAQ-poster
 description: Rediger eller slet FAQ-poster
-keywords: rediger FAQ, slet FAQ
+keywords: ['rediger FAQ', 'slet FAQ']
 author: SuperOffice Product and Engineering
 date: 07.15.2025
 version: 10.5

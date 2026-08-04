@@ -2,7 +2,7 @@
 uid: Webhook
 title: Webhook
 description: Archive provider for listing webhooks.
-keywords: Webhook archive provider
+keywords: ['Webhook archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

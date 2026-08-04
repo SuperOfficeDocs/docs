@@ -4,7 +4,7 @@ title: What is CRMScript?
 description: "Introduction to CRMScript, an interpreted scripting language specific to SuperOffice."
 author: Bergfrid Dias
 date: 02.02.2022
-keywords: CRMScript
+keywords: ['CRMScript']
 content_type: concept
 index: true
 ---

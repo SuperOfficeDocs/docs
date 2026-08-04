@@ -2,7 +2,7 @@
 uid: help-nl-privacy
 title: Privacy
 description: De functie Privacy in SuperOffice helpt u de gegevensprivacy van uw klanten te beschermen en te voldoen aan de General Data Protection Regulation (GDPR) (Algemene verordening gegevensbescherming, AVG) van de EU.
-keywords: privacy, GDPR, e-marketing, toestemming, rechtsgrondslag
+keywords: ['privacy', 'GDPR', 'e-marketing', 'toestemming', 'rechtsgrondslag']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

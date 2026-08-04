@@ -2,7 +2,7 @@
 uid: ProjectMember
 title: ProjectMember
 description: Provider for the Project Member archive under Project
-keywords: ProjectMember archive provider
+keywords: ['ProjectMember archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

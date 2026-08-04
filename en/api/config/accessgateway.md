@@ -4,7 +4,7 @@ uid: ns_config_accessgateway
 description: NetServer configuration values related to Access Gateway.
 date: 12.08.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, AccessGateway, BaseUrl
+keywords: ['config', 'NetServer', 'web.config', 'AccessGateway', 'BaseUrl']
 content_type: reference
 redirect_from: /en/api/netserver/config/accessgateway
 ---

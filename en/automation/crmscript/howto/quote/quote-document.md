@@ -2,7 +2,7 @@
 uid: crmscript-quote-document
 title: Quote document
 description: How to work with quote documents in CRMScript.
-keywords: quote, sale, document
+keywords: ['quote', 'sale', 'document']
 author: Bergfrid Dias
 date: 06.12.2023
 version: 10

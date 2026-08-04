@@ -2,7 +2,7 @@
 uid: help-en-recurrence-stop
 title: Stop repeating follow-up
 description: Stop repeating follow-up
-keywords: stop repeating, future instances, repeating follow-up, repeat, recur, frequency, schedule, pattern, diary, follow-up
+keywords: ['stop repeating', 'future instances', 'repeating follow-up', 'repeat', 'recur', 'frequency', 'schedule', 'pattern', 'diary', 'follow-up']
 author: Bergfrid Dias
 date: 01.13.2025
 version: 10.5

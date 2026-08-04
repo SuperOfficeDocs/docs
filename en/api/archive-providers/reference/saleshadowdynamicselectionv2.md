@@ -2,7 +2,7 @@
 uid: SaleShadowDynamicSelectionV2
 title: SaleShadowDynamicSelectionV2
 description: Sale shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.SaleShadowSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: SaleShadowDynamicSelectionV2 archive provider
+keywords: ['SaleShadowDynamicSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

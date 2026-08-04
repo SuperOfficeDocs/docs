@@ -2,7 +2,7 @@
 uid: help-nl-utm-parameters
 title: UTM-parameters
 description: UTM-parameters
-keywords: UTM-parameters, koppeling, campagne, tracking, SuperOffice Marketing
+keywords: ['UTM-parameters', 'koppeling', 'campagne', 'tracking', 'SuperOffice Marketing']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

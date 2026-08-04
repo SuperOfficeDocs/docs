@@ -2,7 +2,7 @@
 uid: help-no-contact-dial
 title: Ringe til personer
 description: Ringe personer; Telefonpreferanser
-keywords: dagbok, oppfølging, telefon, samtale, ringe
+keywords: ['dagbok', 'oppfølging', 'telefon', 'samtale', 'ringe']
 author: digitaldiina
 date: 12.05.2025
 version: 11

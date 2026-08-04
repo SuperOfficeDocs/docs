@@ -2,7 +2,7 @@
 uid: help-sv-selection-board-view
 title: Använd tavlevy i urval
 description: Visualisera urval med tavlevy med gruppering, filter och dra-och-släpp-kort
-keywords: tavlevy, urvalsvy,urval, säljtavla, projekttavla, ärendetavla, kanban, gruppera efter, filterverktygsfält, försäljningsdatum märke, dagar i fas, dagar sedan registrerad
+keywords: ['tavlevy', 'urvalsvy', 'urval', 'säljtavla', 'projekttavla', 'ärendetavla', 'kanban', 'gruppera efter', 'filterverktygsfält', 'försäljningsdatum märke', 'dagar i fas', 'dagar sedan registrerad']
 author: digitaldiina
 date: 12.02.2025
 version: 11.7

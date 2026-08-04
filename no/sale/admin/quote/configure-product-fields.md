@@ -3,7 +3,7 @@ uid: help-no-product-fields-configure
 title: Konfigurer felter i Legg til/rediger produkt-dialogen
 sidebarTitle: "Konfigurer produktfelter"
 description: Lær hvordan du kontrollerer hvilke felter som vises i Legg til/rediger produkt-dialogen, og hvordan de oppfører seg.
-keywords: Konfigurer produktdialog, Legg til/rediger produkt, konfigurer produkt, produktdialog, produktfelt, ledetekst, produkt, tilbud
+keywords: ['Konfigurer produktdialog', 'Legg til/rediger produkt', 'konfigurer produkt', 'produktdialog', 'produktfelt', 'ledetekst', 'produkt', 'tilbud']
 author: Bergfrid Dias
 date: 04.28.2025
 version: 10.5.4

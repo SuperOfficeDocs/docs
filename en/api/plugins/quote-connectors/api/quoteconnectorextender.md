@@ -3,7 +3,7 @@ title: quoteconnectorextender
 description: ERP Quote Connector Interface class QuoteConnectorExtender
 author: SuperOffice Product and Engineering
 date:
-keywords: quote
+keywords: ['quote']
 content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/quoteconnectorextender
 ---

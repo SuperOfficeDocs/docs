@@ -4,7 +4,7 @@ uid: sentry_distinct
 description: Sentry and distinct
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords: access control
+keywords: ['access control']
 content_type: concept
 redirect_from: /en/api/security/sentry/osql/index
 hidden: true

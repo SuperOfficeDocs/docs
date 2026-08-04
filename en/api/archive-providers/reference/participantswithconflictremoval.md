@@ -2,7 +2,7 @@
 uid: ParticipantsWithConflictRemoval
 title: ParticipantsWithConflictRemoval
 description: Archive provider that wraps the <see cref="T -SuperOffice.CRM.ArchiveLists.ParticipantsProvider" />, and adds a pseudo entity used to hide associates with conflicts.
-keywords: ParticipantsWithConflictRemoval archive provider
+keywords: ['ParticipantsWithConflictRemoval archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

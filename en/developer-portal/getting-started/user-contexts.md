@@ -4,7 +4,7 @@ uid: user-context
 description: "Learn the difference of and requirements for an interactive user session and non-interactive background services."
 author: Bergfrid Dias
 date: 09.14.2023
-keywords: user context, session, application user, system user
+keywords: ['user context', 'session', 'application user', 'system user']
 content_type: concept
 deployment: online
 platform: web

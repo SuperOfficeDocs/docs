@@ -1,7 +1,7 @@
 ---
 uid: leadstatus
 title: leadstatus
-keywords: mdoprovider mdo provider leadstatus
+keywords: ['mdoprovider mdo provider leadstatus']
 description: List provider for LeadStatus
 generated: true
 content_type: reference

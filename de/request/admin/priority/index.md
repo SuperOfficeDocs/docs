@@ -2,7 +2,7 @@
 uid: help-de-request-priority
 title: Anfrageprioritäten
 description: Anfrageprioritäten
-keywords: Anfragepriorität, Priorität, Eskalation, Anfrage
+keywords: ['Anfragepriorität', 'Priorität', 'Eskalation', 'Anfrage']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

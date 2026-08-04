@@ -2,7 +2,7 @@
 uid: SaleSelectionV2
 title: SaleSelectionV2
 description: This is the archive Provider for the Selection sale archive.
-keywords: SaleSelectionV2 archive provider
+keywords: ['SaleSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

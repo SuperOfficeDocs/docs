@@ -2,7 +2,7 @@
 uid: help-no-template-variables-service
 title: Malvariabler (Service)
 description: Malvariabler
-keywords: malvariabler, malvariabel
+keywords: ['malvariabler', 'malvariabel']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

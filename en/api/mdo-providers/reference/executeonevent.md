@@ -1,7 +1,7 @@
 ---
 uid: executeonevent
 title: executeonevent
-keywords: mdoprovider mdo provider executeonevent
+keywords: ['mdoprovider mdo provider executeonevent']
 description: List of windows client events to execute tasks on - Logon, Logoff, LocalUpdate
 generated: true
 content_type: reference

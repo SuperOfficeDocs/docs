@@ -2,7 +2,7 @@
 uid: SimpleContact
 title: SimpleContact
 description:
-keywords: SimpleContact archive provider
+keywords: ['SimpleContact archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

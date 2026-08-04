@@ -2,7 +2,7 @@
 uid: help-de-duplicates
 title: Duplikate
 description: Duplikate
-keywords: Duplikat
+keywords: ['Duplikat']
 author: SuperOffice RnD
 date: 02.11.2025
 version: 10.5.2

@@ -2,7 +2,7 @@
 uid: help-nl-url-encoding
 title: Url-codering
 description: URL-codering in webpanelen
-keywords: webpaneel, URL-codering
+keywords: ['webpaneel', 'URL-codering']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

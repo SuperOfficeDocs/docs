@@ -3,7 +3,7 @@ uid: help-de-product-fields-configure
 title: Felder im Dialogfeld Produkt hinzufügen/bearbeiten konfigurieren
 sidebarTitle: "Produktfelder konfigurieren"
 description: Erfahren Sie, wie Sie steuern, welche Felder im Dialogfeld Produkt hinzufügen/bearbeiten angezeigt werden und wie sie sich verhalten.
-keywords: Produktdialog konfigurieren, Dialog Produkt hinzufügen/bearbeiten, Produkt konfigurieren, Produktdialog, Produktfeld, Produkt, Angebot
+keywords: ['Produktdialog konfigurieren', 'Dialog Produkt hinzufügen/bearbeiten', 'Produkt konfigurieren', 'Produktdialog', 'Produktfeld', 'Produkt', 'Angebot']
 author: Bergfrid Dias
 date: 04.28.2025
 version: 10.5.4

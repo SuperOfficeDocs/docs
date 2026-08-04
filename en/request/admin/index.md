@@ -2,7 +2,7 @@
 uid: help-en-service-settings
 title: Different settings for Service
 description: System settings
-keywords: Service
+keywords: ['Service']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

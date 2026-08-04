@@ -2,7 +2,7 @@
 uid: help-no-fastsearcher-navigator
 title: Bruke hurtigsøk i Navigator
 description: Hvordan bruke hurtigsøk i navigatoren in SuperOffice
-keywords: søk, hurtigsøk
+keywords: ['søk', 'hurtigsøk']
 author: Bergfrid Dias
 date: 05.25.2023
 content_type: howto

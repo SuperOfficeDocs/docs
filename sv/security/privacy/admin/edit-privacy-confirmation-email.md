@@ -3,7 +3,7 @@ uid: help-sv-edit-privacy-confirmation-email
 title: Redigera e-postbekräftelse om personskydd
 sidebarTitle: "Bekräftelsemejl"
 description: I den här guiden lär du dig hur du redigerar e-postbekräftelse om personskydd.
-keywords: e-postbekräftelse om personskydd, e-post mall
+keywords: ['e-postbekräftelse om personskydd', 'e-post mall']
 author: Bergfrid Dias
 date: 12.19.2024
 version: 10

@@ -3,7 +3,7 @@ uid: enum-meteringeventtype
 title: Enum values for MeteringEventType
 description: Lists the enum values for MeteringEventType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -4,7 +4,7 @@ uid: ns_config_infrastructure
 description: NetServer configuration values related to Online Infrastructure.
 date: 12.08.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, Infrastructure
+keywords: ['config', 'NetServer', 'web.config', 'Infrastructure']
 content_type: reference
 deployment: online
 redirect_from: /en/api/netserver/config/infrastructure

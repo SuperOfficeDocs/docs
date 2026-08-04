@@ -2,7 +2,7 @@
 uid: TicketFavouriteUpdatedNotification
 title: TicketFavouriteUpdatedNotification
 description:
-keywords: TicketFavouriteUpdatedNotification archive provider
+keywords: ['TicketFavouriteUpdatedNotification archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

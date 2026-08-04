@@ -1,7 +1,7 @@
 ---
 uid: projtype
 title: projtype
-keywords: mdoprovider mdo provider projtype
+keywords: ['mdoprovider mdo provider projtype']
 description: GenericMDOProvider reads MDO lists with default settings
 generated: true
 content_type: reference

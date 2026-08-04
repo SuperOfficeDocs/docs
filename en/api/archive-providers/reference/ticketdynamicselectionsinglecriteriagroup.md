@@ -2,7 +2,7 @@
 uid: TicketDynamicSelectionSingleCriteriaGroup
 title: TicketDynamicSelectionSingleCriteriaGroup
 description: Ticket selection archive using the selectionId as criterionmapping.
-keywords: TicketDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['TicketDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -2,7 +2,7 @@
 uid: ProjectDynamicSelectionSingleCriteriaGroup
 title: ProjectDynamicSelectionSingleCriteriaGroup
 description: Project selection archive using the selectionId as criterionmapping.
-keywords: ProjectDynamicSelectionSingleCriteriaGroup archive provider
+keywords: ['ProjectDynamicSelectionSingleCriteriaGroup archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

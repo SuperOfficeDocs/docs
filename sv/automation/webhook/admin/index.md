@@ -2,7 +2,7 @@
 uid: help-sv-webhook-panel
 title: Webhooks-panel
 description: Visa, hantera och övervaka webhooks från Inställningar och underhåll.
-keywords: webhook-panel, webhook-status, inaktiverad webhook, starta om webhook, övervaka webhooks
+keywords: ['webhook-panel', 'webhook-status', 'inaktiverad webhook', 'starta om webhook', 'övervaka webhooks']
 author: digitaldiina
 date: 06.16.2026
 version: 12.1

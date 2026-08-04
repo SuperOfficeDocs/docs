@@ -2,7 +2,7 @@
 uid: crm_online
 title: About CRM Online
 description: "Introduction to CRM Online: requirements, access, sign-in services, and integrations."
-keywords: online, App Store
+keywords: ['online', 'App Store']
 author: digitaldiina
 date: 07.31.2026
 version: 12

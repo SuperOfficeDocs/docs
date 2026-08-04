@@ -2,7 +2,7 @@
 uid: help-nl-knowledge-base
 title: Kennisdatabase
 description: Kennisdatabase
-keywords: verzoek, kennisdatabase
+keywords: ['verzoek', 'kennisdatabase']
 author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5

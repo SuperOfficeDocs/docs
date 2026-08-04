@@ -3,7 +3,7 @@ uid: help-nl-mailing-send-test
 title: Een test-e-mail verzenden voor e-mailmailings en formulierreacties
 sidebarTitle: "Test-e-mail verzenden"
 description: In deze handleiding leert u hoe u een testmailing verstuurt.
-keywords: test-e-mail
+keywords: ['test-e-mail']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 content_type: howto

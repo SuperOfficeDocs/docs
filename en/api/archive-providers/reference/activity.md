@@ -2,7 +2,7 @@
 uid: Activity
 title: Activity
 description: Activity archive provider that performs no filtering. This archive is not present anywhere in the standard six.web GUI.
-keywords: Activity archive provider
+keywords: ['Activity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

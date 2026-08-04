@@ -1,7 +1,7 @@
 ---
 uid: customobjectfavourite
 title: customobjectfavourite
-keywords: mdoprovider mdo provider customobjectfavourite
+keywords: ['mdoprovider mdo provider customobjectfavourite']
 description:
 generated: true
 content_type: reference

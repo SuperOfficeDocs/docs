@@ -2,7 +2,7 @@
 uid: get-contact-entity-layer
 title: Get a contact through entities layer
 description: How to get a Contact through Entities layer.
-keywords: contact, company, entity, API, GetFromIdxContactId
+keywords: ['contact', 'company', 'entity', 'API', 'GetFromIdxContactId']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

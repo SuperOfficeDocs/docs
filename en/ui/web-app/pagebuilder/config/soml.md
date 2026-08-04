@@ -2,7 +2,7 @@
 uid: webapp-soml
 title: SuperOffice Markup Language (SOML)
 description: SuperOffice Markup Language (SOML)
-keywords: SuperOffice Markup Language, SOML
+keywords: ['SuperOffice Markup Language', 'SOML']
 author: Tony Yates
 date: 04.17.2018
 content_type: concept

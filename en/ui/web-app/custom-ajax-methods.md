@@ -4,7 +4,6 @@ uid: custom_ajax_methods
 description: Custom AJAX methods
 author: Steffan Alte
 date: 2007
-keywords:
 content_type: concept
 platform: web
 deployment: onsite

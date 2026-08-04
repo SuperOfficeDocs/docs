@@ -2,7 +2,7 @@
 uid: CustomObjectSelectionCombinedV2
 title: CustomObjectSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: CustomObjectSelectionCombinedV2 archive provider
+keywords: ['CustomObjectSelectionCombinedV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

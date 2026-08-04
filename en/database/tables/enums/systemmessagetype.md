@@ -3,7 +3,7 @@ uid: enum-systemmessagetype
 title: Enum values for SystemMessageType
 description: Lists the enum values for SystemMessageType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

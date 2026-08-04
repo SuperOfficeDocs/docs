@@ -4,7 +4,6 @@ uid: blogic_panes
 description: Panes
 author:
 date:
-keywords:
 topic: reference
 ---
 

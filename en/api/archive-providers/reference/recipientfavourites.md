@@ -2,7 +2,7 @@
 uid: recipientfavourites
 title: recipientfavourites
 description:
-keywords: recipientfavourites archive provider
+keywords: ['recipientfavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

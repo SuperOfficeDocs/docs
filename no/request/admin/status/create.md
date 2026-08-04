@@ -2,7 +2,7 @@
 uid: help-no-request-status-create
 title: Opprette saksstatus
 description: Opprette saksstatus
-keywords: opprett saksstatus, legg til saksstatus, ny saksstatus, saksstatus, intern status, køstatus, registrer tid, sak, status
+keywords: ['opprett saksstatus', 'legg til saksstatus', 'ny saksstatus', 'saksstatus', 'intern status', 'køstatus', 'registrer tid', 'sak', 'status']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

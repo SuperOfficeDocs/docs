@@ -1,7 +1,7 @@
 ---
 uid: appointmentcompleted
 title: appointmentcompleted
-keywords: mdoprovider mdo provider appointmentcompleted
+keywords: ['mdoprovider mdo provider appointmentcompleted']
 description: Appointment completed statuses - AppointmentStatus.NotStarted, AppointmentStatus.Completed
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: api-diary-entity
 title: Diary - entity
 description: Working with appointments via entities at the NetServer data layer.
-keywords: diary, calendar, appointment, API, entity
+keywords: ['diary', 'calendar', 'appointment', 'API', 'entity']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: reference

@@ -2,7 +2,7 @@
 uid: EmailFlowFolders
 title: EmailFlowFolders
 description: Archive of Email flow folders.
-keywords: EmailFlowFolders archive provider
+keywords: ['EmailFlowFolders archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

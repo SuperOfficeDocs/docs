@@ -2,7 +2,7 @@
 uid: sop-create-follow-up
 title: Create Follow-up
 description: How to create a Follow-up using the soprotocol
-keywords: soprotocol, follow-up, create
+keywords: ['soprotocol', 'follow-up', 'create']
 author: Eivind Fasting
 date: 11.26.2024
 content_type: howto

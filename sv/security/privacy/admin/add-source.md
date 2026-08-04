@@ -3,7 +3,7 @@ uid: help-sv-privacy-add-source
 title: Lägga till poster i listan Integritet - Källa
 sidebarTitle: "Lägg till källa"
 description: Den här guiden beskriver hur du ändrar integritetslistorna.
-keywords: Integritet källa lista, Lägg till integritet källa
+keywords: ['Integritet källa lista', 'Lägg till integritet källa']
 author: SuperOffice Product and Engineering
 date: 09.02.2025
 version: 10.3

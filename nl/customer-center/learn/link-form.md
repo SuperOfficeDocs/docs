@@ -3,7 +3,7 @@ uid: help-nl-customer-centre-form
 title: Webformulieren gebruiken in uw Klantportaal
 sidebarTitle: "Webformulieren"
 description: In deze handleiding leert u hoe u een webformulier gebruikt.
-keywords: formulier, Klantportaal
+keywords: ['formulier', 'Klantportaal']
 author: Bergfrid Dias
 date: 03.20.2023
 content_type: howto

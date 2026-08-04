@@ -2,7 +2,7 @@
 uid: automated-task-ejournalcron
 title: ejournalCron
 description: Automated tasks in Service - ejournalCron
-keywords: ejournalCron
+keywords: ['ejournalCron']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 content_type: reference

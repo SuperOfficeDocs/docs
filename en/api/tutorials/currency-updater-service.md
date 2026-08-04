@@ -4,7 +4,6 @@ uid: currency_updater_service
 description: Currency updater service
 author: SuperOffice Product and Engineering
 date:
-keywords:
 content_type: tutorial
 ---
 

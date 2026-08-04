@@ -2,7 +2,7 @@
 uid: identity_management_gw
 title: The Identity Management Gateway
 description: The Identity Management Gateway Architecture, User interface, and Pre-requisites
-keywords: Identity, Management, Gateway, Architecture, SuperID, Microsoft Entra, ME-ID, AAD
+keywords: ['Identity', 'Management', 'Gateway', 'Architecture', 'SuperID', 'Microsoft Entra', 'ME-ID', 'AAD']
 author:
 date: 01.15.2024
 version: 12

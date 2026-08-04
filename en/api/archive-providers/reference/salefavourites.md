@@ -2,7 +2,7 @@
 uid: salefavourites
 title: salefavourites
 description:
-keywords: salefavourites archive provider
+keywords: ['salefavourites archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

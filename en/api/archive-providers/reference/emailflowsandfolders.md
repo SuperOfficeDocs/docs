@@ -2,7 +2,7 @@
 uid: EmailFlowsAndFolders
 title: EmailFlowsAndFolders
 description: Archive of EmailFlows and Folders.
-keywords: EmailFlowsAndFolders archive provider
+keywords: ['EmailFlowsAndFolders archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

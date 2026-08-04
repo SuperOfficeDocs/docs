@@ -1,7 +1,7 @@
 ---
 uid: erpactortype
 title: erpactortype
-keywords: mdoprovider mdo provider erpactortype
+keywords: ['mdoprovider mdo provider erpactortype']
 description:
 generated: true
 content_type: reference

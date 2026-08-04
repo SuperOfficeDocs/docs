@@ -2,7 +2,7 @@
 uid: AppointmenthadowSelectionCombined
 title: AppointmenthadowSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: AppointmenthadowSelectionCombined archive provider
+keywords: ['AppointmenthadowSelectionCombined archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

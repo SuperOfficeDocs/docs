@@ -2,7 +2,7 @@
 uid: ContactSelection
 title: ContactSelection
 description:
-keywords: ContactSelection archive provider
+keywords: ['ContactSelection archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

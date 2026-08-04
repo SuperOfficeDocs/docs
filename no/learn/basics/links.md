@@ -2,7 +2,7 @@
 uid: help-no-links
 title: Koblinger
 description: Koblinger
-keywords: Legg til kobling, fanen Koblinger, kobling, lenke, link
+keywords: ['Legg til kobling', 'fanen Koblinger', 'kobling', 'lenke', 'link']
 author: Bergfrid Dias
 date: 01.29.2025
 version: 10.5

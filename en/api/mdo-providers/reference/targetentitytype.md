@@ -1,7 +1,7 @@
 ---
 uid: targetentitytype
 title: targetentitytype
-keywords: mdoprovider mdo provider targetentitytype
+keywords: ['mdoprovider mdo provider targetentitytype']
 description: TargetEntities
 generated: true
 content_type: reference

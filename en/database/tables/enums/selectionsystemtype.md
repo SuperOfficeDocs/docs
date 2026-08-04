@@ -3,7 +3,7 @@ uid: enum-selectionsystemtype
 title: Enum values for SelectionSystemType
 description: Lists the enum values for SelectionSystemType.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

@@ -1,7 +1,7 @@
 ---
 uid: preferencelineitem
 title: preferencelineitem
-keywords: mdoprovider mdo provider preferencelineitem
+keywords: ['mdoprovider mdo provider preferencelineitem']
 description: MDO Provider for preferences that have a list of possible values in the database
 generated: true
 content_type: reference

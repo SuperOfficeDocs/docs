@@ -2,7 +2,7 @@
 uid: FormSubmissionShadowSelectionV2
 title: FormSubmissionShadowSelectionV2
 description: Shadow contact provider for the FormSubmission provider.
-keywords: FormSubmissionShadowSelectionV2 archive provider
+keywords: ['FormSubmissionShadowSelectionV2 archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

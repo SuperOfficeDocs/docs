@@ -2,7 +2,7 @@
 uid: FindSale
 title: FindSale
 description:
-keywords: FindSale archive provider
+keywords: ['FindSale archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

@@ -1,7 +1,7 @@
 ---
 uid: ticketstatus
 title: ticketstatus
-keywords: mdoprovider mdo provider ticketstatus
+keywords: ['mdoprovider mdo provider ticketstatus']
 description: Ticket status values - Open, Closed, Inactive, Deleted, Connected and Spam (if enabled).
 generated: true
 content_type: reference

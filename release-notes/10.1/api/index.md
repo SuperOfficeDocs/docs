@@ -3,7 +3,7 @@ uid: news-api-10.1
 title: What's new in SuperOffice 10.1
 sidebarTitle: "10.1.1-10.1.4"
 description: Release notes. What's new in SuperOffice 10.1
-keywords: API changes
+keywords: ['API changes']
 author: SuperOffice AS - Product and Engineering
 date: 05.04.2022
 version: 10.1.5

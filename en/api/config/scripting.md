@@ -4,7 +4,7 @@ uid: ns_config_scripting
 description: NetServer configuration values related to NetServer Service Scripting.
 date: 12.09.2021
 author: Bergfrid Dias
-keywords: config, NetServer, web.config, Scripting, EnableScripting, ScriptPath, MaxTimeouts, TimeoutLimit
+keywords: ['config', 'NetServer', 'web.config', 'Scripting', 'EnableScripting', 'ScriptPath', 'MaxTimeouts', 'TimeoutLimit']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/scripting

@@ -3,7 +3,7 @@ uid: help-de-invitation-accept
 title: Folgeaufgaben zu denen Sie eingeladen sind
 sidebarTitle: "Eingeladene Folgeaufgaben"
 description: Folgeaufgaben anzeigen, zu denen Sie eingeladen sind; Einladungen annehmen oder ablehnen
-keywords: Kalender, Folgeaufgabe, Einladung, Teilnehmer, eingeladen, annehmen, ablehnen
+keywords: ['Kalender', 'Folgeaufgabe', 'Einladung', 'Teilnehmer', 'eingeladen', 'annehmen', 'ablehnen']
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2

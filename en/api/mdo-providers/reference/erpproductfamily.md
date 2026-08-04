@@ -1,7 +1,7 @@
 ---
 uid: erpproductfamily
 title: erpproductfamily
-keywords: mdoprovider mdo provider erpproductfamily
+keywords: ['mdoprovider mdo provider erpproductfamily']
 description:
 generated: true
 content_type: reference

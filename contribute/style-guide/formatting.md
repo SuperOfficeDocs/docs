@@ -2,7 +2,7 @@
 uid: formatting
 title: Text formatting guidelines
 description: Guidelines for using bold, italics, and code style consistently for text elements, headings, and keyboard shortcuts.
-keywords: bold, italics, code style, formatting, keyboard shortcuts
+keywords: ['bold', 'italics', 'code style', 'formatting', 'keyboard shortcuts']
 author: digitaldiina
 date: 07.09.2026
 content_type: reference

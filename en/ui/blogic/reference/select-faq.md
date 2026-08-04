@@ -4,7 +4,6 @@ uid: blogic_select_faq
 description: Select FAQ
 author:
 date:
-keywords:
 topic: reference
 ---
 

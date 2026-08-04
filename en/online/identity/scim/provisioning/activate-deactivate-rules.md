@@ -2,7 +2,6 @@
 uid: activate_deactivate_scim_rules
 title: Activate and deactivate SCIM rules
 description: Activate and deactivate SCIM rules
-keywords:
 author: SuperOffice Product and Engineering
 date: 07.31.2026
 version: 12

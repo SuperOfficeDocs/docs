@@ -3,7 +3,6 @@ uid: crmscript_fundamentals_variables
 title: Variables
 author:
 date:
-keywords:
 content_type: concept
 ---
 

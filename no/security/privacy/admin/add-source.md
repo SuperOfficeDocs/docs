@@ -3,7 +3,7 @@ uid: help-no-privacy-add-source
 title: Legge til forekomster i listen Personvern - Kilde
 sidebarTitle: "Legg til kilde"
 description: Bruk denne veiledningen til å finne ut hvordan du endrer personvernlistene.
-keywords: Personvern kilde liste, Legg til personvern kilde
+keywords: ['Personvern kilde liste', 'Legg til personvern kilde']
 author: SuperOffice Product and Engineering
 date: 09.02.2025
 version: 10.3

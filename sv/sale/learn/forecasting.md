@@ -3,7 +3,7 @@ uid: help-sv-sale-forecasting
 title: Övervaka din pipeline och prognostisera försäljning
 sidebarTitle: "Pipeline och prognos"
 description: Hur du övervakar din försäljningspipeline och prognostiserar din försäljning med hjälp av instrumentpaneler och urval.
-keywords: försäljning, prognos, pipeline
+keywords: ['försäljning', 'prognos', 'pipeline']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

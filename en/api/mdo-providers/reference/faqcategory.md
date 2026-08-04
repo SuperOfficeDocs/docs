@@ -1,7 +1,7 @@
 ---
 uid: faqcategory
 title: faqcategory
-keywords: mdoprovider mdo provider faqcategory
+keywords: ['mdoprovider mdo provider faqcategory']
 description:
 generated: true
 content_type: reference

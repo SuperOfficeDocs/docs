@@ -1,7 +1,7 @@
 ---
 uid: workflowsplitoptiontype
 title: workflowsplitoptiontype
-keywords: mdoprovider mdo provider workflowsplitoptiontype
+keywords: ['mdoprovider mdo provider workflowsplitoptiontype']
 description: MDO provider for the WorkflowTriggerType enum
 generated: true
 content_type: reference

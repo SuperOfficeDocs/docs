@@ -2,7 +2,7 @@
 uid: help-de-tracked-links-reset
 title: Zähler für Links zurückstellen
 description: Zähler für Links zurückstellen
-keywords: Marketing, Aussendung
+keywords: ['Marketing', 'Aussendung']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

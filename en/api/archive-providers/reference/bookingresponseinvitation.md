@@ -2,7 +2,7 @@
 uid: BookingResponseInvitation
 title: BookingResponseInvitation
 description: This is the query provider for invitations, of subtype 'Response'
-keywords: BookingResponseInvitation archive provider
+keywords: ['BookingResponseInvitation archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

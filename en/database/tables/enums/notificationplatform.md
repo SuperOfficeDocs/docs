@@ -3,7 +3,7 @@ uid: enum-notificationplatform
 title: Enum values for NotificationPlatform
 description: Lists the enum values for NotificationPlatform.
 generated: true
-keywords: database enum
+keywords: ['database enum']
 content_type: reference
 envir: onsite, online
 ---

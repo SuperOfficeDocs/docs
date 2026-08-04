@@ -3,7 +3,7 @@ uid: help-da-customer-center-faq
 title: Publicer ofte stillede spørgsmål i kundecenteret
 sidebarTitle: "Publicer FAQ"
 description: I denne vejledning lærer du, hvordan du publicerer ofte stillede spørgsmål i kundecenteret.
-keywords: FAQ, Kundecenter
+keywords: ['FAQ', 'Kundecenter']
 author: Bergfrid Dias
 date: 06.10.2026
 content_type: howto

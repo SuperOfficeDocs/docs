@@ -2,7 +2,7 @@
 uid: help-da-stakeholder-create
 title: Tilføj interessenter
 description: Sådan knyttes et salg til en interessent (firma eller person) i SuperOffice.
-keywords: Tilføj interessent, ny interessent, Tilføj/rediger interessenter-dialog, Interessent fanen, interessent, salg
+keywords: ['Tilføj interessent', 'ny interessent', 'Tilføj/rediger interessenter-dialog', 'Interessent fanen', 'interessent', 'salg']
 author: Bergfrid Dias
 date: 02.25.2025
 version: 10.5.2

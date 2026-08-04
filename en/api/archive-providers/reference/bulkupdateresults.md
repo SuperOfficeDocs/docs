@@ -2,7 +2,7 @@
 uid: BulkUpdateResults
 title: BulkUpdateResults
 description:
-keywords: BulkUpdateResults archive provider
+keywords: ['BulkUpdateResults archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

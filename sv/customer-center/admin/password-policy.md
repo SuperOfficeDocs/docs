@@ -2,7 +2,7 @@
 uid: help-sv-service-global-preferences-customer-centre-password
 title: Lösenordspolicy för Kundcenter
 description: Globala inställningar för Lösenordspolicy för Kundcenter
-keywords: Tjänst, inställningar
+keywords: ['Tjänst', 'inställningar']
 author: SuperOffice RnD
 date: 02.25.2025
 content_type: howto

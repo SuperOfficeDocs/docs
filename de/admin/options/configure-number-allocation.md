@@ -2,7 +2,7 @@
 uid: help-de-number-allocation-configure
 title: Nummernzuweisung festlegen
 description: Nummernzuweisung festlegen
-keywords: nummernzuweisung, zähler, firmennummer
+keywords: ['nummernzuweisung', 'zähler', 'firmennummer']
 author: digitaldiina
 date: 10.21.2025
 version: 11.5

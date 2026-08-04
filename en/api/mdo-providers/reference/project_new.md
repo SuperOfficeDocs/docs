@@ -1,7 +1,7 @@
 ---
 uid: project_new
 title: project_new
-keywords: mdoprovider mdo provider project_new
+keywords: ['mdoprovider mdo provider project_new']
 description: Provider for selecting a project. Returns search results in rank order Supports searching across project text fields. Respects the Project.SkipCompletedProjects user preference.
 generated: true
 content_type: reference

@@ -2,7 +2,7 @@
 uid: help-da-knowledge-base
 title: Vidensbase
 description: Vidensbase
-keywords: sag, vidensbase
+keywords: ['sag', 'vidensbase']
 author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5

@@ -2,7 +2,7 @@
 uid: SimpleAppointment
 title: SimpleAppointment
 description:
-keywords: SimpleAppointment archive provider
+keywords: ['SimpleAppointment archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

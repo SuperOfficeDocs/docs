@@ -2,7 +2,7 @@
 uid: localization-resource-providers
 title: Resource providers
 description: Resource providers
-keywords: resource provider, ResourceDllProvider, string resource
+keywords: ['resource provider', 'ResourceDllProvider', 'string resource']
 author: SuperOffice Product and Engineering
 date: 10.09.2025
 content_type: concept

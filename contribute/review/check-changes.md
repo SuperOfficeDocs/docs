@@ -2,7 +2,7 @@
 uid: review-check-changes
 title: Reviewing a PR
 description: How to check proposed changes in a PR
-keywords: review, PR, comment, suggestion
+keywords: ['review', 'PR', 'comment', 'suggestion']
 author: digitaldiina
 date: 07.22.2026
 content_type: howto

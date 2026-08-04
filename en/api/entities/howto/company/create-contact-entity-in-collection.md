@@ -2,7 +2,7 @@
 uid: create-contact-entity-in-collection
 title: Create a Contact entity through an entity collection
 description: How to create a Contact entity through an ContactCollection entity collection.
-keywords: contact, company, entity, API, collection, ContactCollection
+keywords: ['contact', 'company', 'entity', 'API', 'collection', 'ContactCollection']
 author: Tony Yates
 date: 05.11.2016
 content_type: howto

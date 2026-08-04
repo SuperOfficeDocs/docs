@@ -4,7 +4,6 @@ uid: blogic_text
 description: Text
 author:
 date:
-keywords:
 topic: reference
 ---
 

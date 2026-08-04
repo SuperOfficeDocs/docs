@@ -1,7 +1,7 @@
 ---
 uid: salestage
 title: salestage
-keywords: mdoprovider mdo provider salestage
+keywords: ['mdoprovider mdo provider salestage']
 description: Provider for selecting a stage. AdditionalInfo is used as criteria to filter stages based on SaleType.
 generated: true
 content_type: reference

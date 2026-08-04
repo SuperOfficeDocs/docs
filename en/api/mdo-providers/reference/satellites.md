@@ -1,7 +1,7 @@
 ---
 uid: satellites
 title: satellites
-keywords: mdoprovider mdo provider satellites
+keywords: ['mdoprovider mdo provider satellites']
 description: SatelliteProvider creates a MDO list of satellites.
 generated: true
 content_type: reference

@@ -4,7 +4,6 @@ uid: osql_create_connection
 description: SuperOffice Objectified SQL - create a connection to the database
 author: SuperOffice Product and Engineering
 date: 11.05.2016
-keywords:
 content_type: howto
 redirect_from: /en/api/netserver/osql/howto/create-connection
 hidden: true

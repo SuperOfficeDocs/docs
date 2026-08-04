@@ -2,7 +2,7 @@
 uid: webhook-reference
 title: Reference
 description: SuperOffice Webhooks reference
-keywords: webhook reference
+keywords: ['webhook reference']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

@@ -2,7 +2,7 @@
 uid: ProjectActivity
 title: ProjectActivity
 description: Activity archive provider for the Project card
-keywords: ProjectActivity archive provider
+keywords: ['ProjectActivity archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

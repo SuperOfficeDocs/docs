@@ -4,7 +4,6 @@ uid: blogic_anchor_line
 description: Anchor line (link row)
 author:
 date:
-keywords:
 topic: reference
 ---
 

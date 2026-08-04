@@ -3,7 +3,7 @@ uid: eol-sharepoint-1
 title: End of life - Microsoft 365 Document Integration (Sharepoint v1.0)
 sidebarTitle: "Microsoft 365 Document Integration (Sharepoint v1.0)"
 description: This is a formal announcement of end of life for our Microsoft 365 Document
-keywords: Microsoft 365 Document Integration (Sharepoint v1.0), EOLIntegration (Sharepoint v1.0).
+keywords: ['Microsoft 365 Document Integration (Sharepoint v1.0)', 'EOLIntegration (Sharepoint v1.0).']
 author: Mikael Månsson
 date: 03.12.2024
 version: 10.3

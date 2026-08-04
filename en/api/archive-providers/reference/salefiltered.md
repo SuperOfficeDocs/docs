@@ -2,7 +2,7 @@
 uid: SaleFiltered
 title: SaleFiltered
 description: Sale archive provider for the Contact/Project card
-keywords: SaleFiltered archive provider
+keywords: ['SaleFiltered archive provider']
 generated: true
 content_type: reference
 envir: onsite, online

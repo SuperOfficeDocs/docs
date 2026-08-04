@@ -3,7 +3,7 @@ uid: help-de-mailing-google-analytics-tutorial
 title: Anleitung - einfaches Google Analytics E-Mail-Tracking
 sidebarTitle: "Google Analytics-Tracking"
 description: Diese Anleitung wird erklären, wie Sie die Ergebnisse eines Mailings mit SuperOffice verfolgen und diese in Google Analytics zusammen mit all Ihren anderen Daten nachschlagen können.
-keywords: Marketing, Mailing, Google Analytics, verfolgen, Überwachte Links, Tracking-ID, UTM, Kampagne, Newsletter
+keywords: ['Marketing', 'Mailing', 'Google Analytics', 'verfolgen', 'Überwachte Links', 'Tracking-ID', 'UTM', 'Kampagne', 'Newsletter']
 author: Alex Pelan
 date: 09.26.2025
 version: 10.5

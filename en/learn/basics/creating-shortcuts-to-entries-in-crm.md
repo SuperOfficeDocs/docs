@@ -3,7 +3,7 @@ uid: help-en-creating-shortcuts-to-entries-in-crm
 title: Create shortcuts to entries in SuperOffice CRM
 sidebarTitle: "Create shortcuts"
 description: Creating shortcuts to entries in CRM
-keywords: copy shortcut
+keywords: ['copy shortcut']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3

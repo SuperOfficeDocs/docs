@@ -2,7 +2,7 @@
 uid: address-howto-ws
 title: Address localization
 description: Working with addresses in web services.
-keywords: address
+keywords: ['address']
 author: Bergfrid Dias
 date: 02.16.2022
 version: 9

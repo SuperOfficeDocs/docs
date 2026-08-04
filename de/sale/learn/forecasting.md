@@ -3,7 +3,7 @@ uid: help-de-sale-forecasting
 title: Pipeline überwachen und Umsatz prognostizieren
 sidebarTitle: "Pipeline und Prognose"
 description: Wie man seine Vertriebspipeline überwacht und Verkäufe mit Hilfe von Dashboards und Selektionen prognostiziert.
-keywords: Verkauf, Prognose, Pipeline
+keywords: ['Verkauf', 'Prognose', 'Pipeline']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

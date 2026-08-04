@@ -4,7 +4,7 @@ uid: aggregate_groupby
 description: Structured aggregation output with groupby
 author: Tony Yates
 date: 11.17.2017
-keywords: aggregate function, GroupBy
+keywords: ['aggregate function', 'GroupBy']
 content_type: howto
 category: api
 topic: archive providers
