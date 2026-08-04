@@ -9,8 +9,6 @@ deployment: online
 platform: web
 ---
 
-# Helper for private applications
-
 Most custom (private) applications struggle to get started due to the bare minimum requirements.
 
 The biggest hurdles most private applications have, include:

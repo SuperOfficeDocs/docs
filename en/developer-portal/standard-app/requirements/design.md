@@ -1,5 +1,5 @@
 ---
-title: Design requirements
+title: Requirements for user UI and design
 uid: app-design-requirements
 description: "Requirements for user UI and design"
 author: Margrethe Romnes
@@ -9,8 +9,6 @@ content_type: reference
 deployment: online
 platform: web
 ---
-
-# Requirements for user UI and design
 
 Following this style guide will ensure that the application integrates seamlessly with SuperOffice and other partner products. It will be experienced as a member of a product family.
 

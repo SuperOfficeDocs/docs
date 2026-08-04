@@ -1,5 +1,5 @@
 ---
-title: Developer Portal FAQ listing
+title: Developer Portal FAQ
 uid: dp-faq-listing
 description: List of SuperOffice Developer Portal frequently asked questions.
 author: AnthonyYates
@@ -9,8 +9,6 @@ content_type: howto
 version_devportal: 1.21
 deployment: online
 ---
-
-# Developer Portal FAQ
 
 1. [How to format text.][1]
 1. [How to update contact person.][2]

@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# Tenant status
-
 The state of the tenant indicates if a tenant is available to receive requests, and it is recommended you always know the state of the tenant before sending any requests to the API.
 There are two ways to know the tenant status, either by [checking its status through the API (Pull)][1] or [receive notifications when a tenant changes status (Push)][2].
 These options are fundamentally different, proactive vs reactive, and its up to the developer to decide which option(s) makes the most sense for the application.

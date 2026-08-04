@@ -1,13 +1,12 @@
 ---
 uid: app-certification
-title: Certification
+title: About our certification process for standard apps
+sidebarTitle: "Certification process"
 description: About our certification process for standard apps
 keywords: ['certification']
 author: Margrethe Romnes
 date: 12.04.2025
 ---
-
-# About our certification process for standard apps
 
 We require all standard applications to comply with our requirements before they are launched in the App Store.
 

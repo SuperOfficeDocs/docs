@@ -11,8 +11,6 @@ deployment: online
 platform: web
 ---
 
-# How to turn off database mirroring
-
 1. Sign in to the Developer Portal and go to your application page.
 
 1. Select **Configuration** from the left menu, [create a new version][2], and publish it to SOD.

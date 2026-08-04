@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# Unable to approve app
-
 You are unable to complete providing consent (Approve) to the application.
 
 ## Account does not have access error

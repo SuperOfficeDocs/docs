@@ -12,8 +12,6 @@ platform: web
 redirect_from: /en/developer-portal/analytics/customers
 ---
 
-# Tenant management
-
 The Tenant Manager is your dedicated area for managing tenants across [development, stage, and production environments][9]. Designed for organizational efficiency, this section of the Developer Portal helps streamline management tasks related to tenants, applications, and authorizations. It empowers organizations and employees to easily list tenants by partner and manage various aspects of their environments.
 
 ## Key features
