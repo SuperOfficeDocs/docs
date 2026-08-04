@@ -71,8 +71,8 @@
       },
       {
         "group": "Sökfunktioner",
+        "root": "sv/search-options/learn/index",
         "pages": [
-          "sv/search-options/learn/index",
           "sv/search-options/learn/find-screen",
           "sv/search-options/learn/search-criteria",
           "sv/search-options/learn/freetext-search",
@@ -456,8 +456,8 @@
       },
       {
         "group": "Egendefinierade objekt",
+        "root": "sv/custom-objects/learn/index",
         "pages": [
-          "sv/custom-objects/learn/index",
           "sv/custom-objects/learn/more-tab",
           {
             "group": "Användardefinierade fält",
@@ -658,10 +658,6 @@
         ]
       },
       {
-        "group": "Mobile CRM",
-        "pages": []
-      },
-      {
         "group": "Kunskapsbas",
         "root": "sv/knowledge-base/learn/index",
         "pages": [
@@ -692,8 +688,8 @@
       },
       {
         "group": "Integritetsinställningar och GDPR",
+        "root": "sv/security/privacy/learn/index",
         "pages": [
-          "sv/security/privacy/learn/index",
           "sv/security/privacy/learn/edit-legal-base",
           "sv/security/privacy/learn/send-privacy-confirmation-email",
           "sv/security/privacy/learn/generate-personal-data-report",
