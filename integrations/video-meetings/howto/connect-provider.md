@@ -3,7 +3,7 @@ uid: connect-video-provider
 title: How to connect to a video provider
 sidebarTitle: "Connect to a video provider"
 description: How to connect video provider
-keywords: video meeting
+keywords: ['video meeting']
 author: SuperOffice Product and Engineering
 date: 10.16.2025
 content_type: howto

@@ -4,7 +4,7 @@ title: What's new in version 12.2.2072.0
 sidebarTitle: "12.2 - database changelog"
 description: What's new in database version 12.2.2072.0.
 generated: true
-keywords: database
+keywords: ['database']
 content_type: reference
 envir: online
 ---

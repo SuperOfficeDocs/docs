@@ -4,7 +4,7 @@ title: What's new in version 11.7.727.0
 sidebarTitle: "11.7 - database changelog"
 description: What's new in database version 11.7.727.0.
 generated: true
-keywords: database
+keywords: ['database']
 content_type: reference
 envir: onsite, online
 ---

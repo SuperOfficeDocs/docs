@@ -2,7 +2,7 @@
 uid: g-suite-quick-start
 title: Getting started (self-service)
 description: Google Workspace document integration setup - Self-Service Quick-Guide
-keywords: Google Workspace, Google-account, Google Authentication
+keywords: ['Google Workspace', 'Google-account', 'Google Authentication']
 author: Frode B, Martin Pavlas, digitaldiina
 date: 07.12.2024
 content_type: howto

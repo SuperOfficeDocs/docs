@@ -2,7 +2,7 @@
 uid: sharepoint-documents-migration-advice
 title: Best practices
 description: Best practices for SharePoint document migration.
-keywords: SharePoint, document
+keywords: ['SharePoint', 'document']
 author: Frode Berntsen
 date: 08.18.2023
 version:

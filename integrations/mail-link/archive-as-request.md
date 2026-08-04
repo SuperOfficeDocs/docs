@@ -2,7 +2,7 @@
 uid: mail-link-archive-as-request
 title: Create request from an email
 description: Learn how to archive emails as requests in SuperOffice CRM using Mail Link.
-keywords: archive as request, create request from email
+keywords: ['archive as request', 'create request from email']
 author: digitaldiina
 date: 03.17.2026
 content_type: howto

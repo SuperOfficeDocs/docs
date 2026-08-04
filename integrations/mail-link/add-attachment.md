@@ -2,7 +2,7 @@
 uid: mail-link-add-attachment
 title: Add SuperOffice document as attachment
 description: Learn how to attach documents from SuperOffice CRM when creating an email in Microsoft Outlook.
-keywords: attach document, include attachments
+keywords: ['attach document', 'include attachments']
 author: digitaldiina
 date: 03.17.2026
 content_type: howto

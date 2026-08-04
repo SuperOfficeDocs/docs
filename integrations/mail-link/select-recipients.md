@@ -2,7 +2,7 @@
 uid: mail-link-select-recipients
 title: Select recipients
 description: When creating an email from Microsoft Outlook, you can add recipients using the Select recipients dialog.
-keywords: add recipient, select recipients
+keywords: ['add recipient', 'select recipients']
 author: digitaldiina
 date: 03.17.2026
 content_type: howto

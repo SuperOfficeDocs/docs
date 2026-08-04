@@ -2,7 +2,7 @@
 uid: webtools-upgrade
 title: Upgrade WebTools
 description: Upgrade WebTools, Hide download dialog
-keywords: upgrade WebTools
+keywords: ['upgrade WebTools']
 author: digitaldiina
 date: 03.24.2026
 content_type: howto

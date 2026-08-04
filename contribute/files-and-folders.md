@@ -2,7 +2,7 @@
 uid: files-and-folders
 title: Organization of repositories
 description: How SuperOfficeDocs repositories are organized into files and folders, including naming conventions and UID rules.
-keywords: file names, folder structure, naming conventions, UID, repository organization
+keywords: ['file names', 'folder structure', 'naming conventions', 'UID', 'repository organization']
 author: digitaldiina
 date: 07.16.2026
 content_type: reference

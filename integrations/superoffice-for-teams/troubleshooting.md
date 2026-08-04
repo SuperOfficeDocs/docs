@@ -3,7 +3,7 @@ uid: teams-troubleshooting
 title: Troubleshooting SuperOffice for Teams
 sidebarTitle: "Troubleshooting"
 description: Solutions to common issues in SuperOffice for Teams.
-keywords: SuperOffice for Teams, Teams, troubleshooting, errors, sign-in, consent
+keywords: ['SuperOffice for Teams', 'Teams', 'troubleshooting', 'errors', 'sign-in', 'consent']
 author: schildea
 date: 02.06.2026
 content_type: howto

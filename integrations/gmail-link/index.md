@@ -2,7 +2,7 @@
 uid: gmail-link
 title: SuperOffice Gmail Link
 description: SuperOffice Gmail Link app connects your Gmail account to SuperOffice CRM and helps you work more productively with emails.
-keywords: Gmail Link, Google Gmail, email plugin, email add-on, email extension
+keywords: ['Gmail Link', 'Google Gmail', 'email plugin', 'email add-on', 'email extension']
 author: SuperOffice Product and Engineering
 date: 02.14.2023
 content_type: concept

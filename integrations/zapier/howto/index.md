@@ -2,7 +2,6 @@
 uid: zapier-howto
 title: Working with Zaps
 description: Working with Zaps
-keywords:
 author: PhilipYates
 date: 08.09.2023
 content_type: howto

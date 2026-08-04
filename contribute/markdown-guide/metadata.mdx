@@ -2,7 +2,7 @@
 uid: markdown-metadata
 title: Metadata (Yaml front-matter)
 description: Introduction to the Yaml key-value front-matter metadata used at the top of SuperOfficeDocs markdown files.
-keywords: metadata, front matter, yaml, uid
+keywords: ['metadata', 'front matter', 'yaml', 'uid']
 author: digitaldiina
 date: 07.16|.2026
 content_type: concept
@@ -30,7 +30,7 @@ Content under `contribute/` (like this page) documents the contribution process 
 uid: contribute-review-checklist
 title: Review checklist
 description: What reviewers check before merging a contribution to SuperOfficeDocs.
-keywords: review, checklist, pull request
+keywords: ['review', 'checklist', 'pull request']
 author: digitaldiina
 date: 07.09.2026
 content_type: concept
@@ -47,7 +47,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 1 | `uid` | Always | Unique identifier, hyphenated lowercase |
 | 2 | `title` | Always | Same text as the H1 heading |
 | 3 | `description` | Always | Plain sentence, no quotes |
-| 4 | `keywords` | Always | Comma-separated search terms |
+| 4 | `keywords` | Always | YAML array of single-quoted search-term strings, e.g. `['term one', 'term two']` — Mintlify's internal-search format |
 | 5 | `author` | Always | GitHub alias — default `digitaldiina` |
 | 6 | `date` | Always | Last modified, format `MM.DD.YYYY` |
 | 7 | `version` | Handcrafted docs | Product version — see defaults below; omit in generated files |

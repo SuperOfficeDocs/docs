@@ -3,7 +3,6 @@ uid: news-service-10.2
 title: New and improved Service
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Service 10.2
-keywords:
 author: SuperOffice AS - Product and Engineering
 date: 12.12.2023
 version: 10.2

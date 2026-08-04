@@ -2,7 +2,7 @@
 uid: supernotes
 title: SuperNotes
 description: AI-powered meeting assistant for SuperOffice users
-keywords: SuperNotes, AI, meeting, transcript, summaries
+keywords: ['SuperNotes', 'AI', 'meeting', 'transcript', 'summaries']
 author: BredeYabo
 date: 02.04.2026
 content_type: concept

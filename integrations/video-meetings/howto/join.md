@@ -2,7 +2,7 @@
 uid: join-video-meeting
 title: Join a video meeting
 description: How to join a video meeting
-keywords: video meeting
+keywords: ['video meeting']
 author: SuperOffice Product and Engineering
 date: 08.12.2021
 content_type: howto

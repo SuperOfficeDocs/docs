@@ -2,7 +2,7 @@
 uid: config-sharepoint-permissions-templates
 title: How to set up SharePoint permissions for templates
 description: How to set up the SharePoint permissions for templates
-keywords: SharePoint, permission, security, access control, Microsoft Entra, domain group, ME-ID, AAD
+keywords: ['SharePoint', 'permission', 'security', 'access control', 'Microsoft Entra', 'domain group', 'ME-ID', 'AAD']
 author: Martin Pavlas
 date: 01.15.2024
 version:

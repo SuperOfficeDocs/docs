@@ -2,7 +2,7 @@
 uid: zapier-datetime
 title: Formatting date and time
 description: How to format date and time when working with Zapier.
-keywords: Zapier formatter, date format, time format
+keywords: ['Zapier formatter', 'date format', 'time format']
 author: miguellemos95
 date: 11.05.2025
 content_type: howto

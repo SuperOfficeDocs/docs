@@ -2,7 +2,7 @@
 uid: mail-link
 title: Mail Link
 description: SuperOffice Mail Link is a plug-in that links the Microsoft Outlook mail client with SuperOffice CRM.
-keywords: Mail Link, MailLink, email plugin, email add-on, email extension
+keywords: ['Mail Link', 'MailLink', 'email plugin', 'email add-on', 'email extension']
 author: digitaldiina
 date: 03.17.2026
 content_type: concept
