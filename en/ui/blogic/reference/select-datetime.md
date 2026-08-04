@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select DateTime
-
 This element is used to input a [DateTime][1].
 
 ## Configuration

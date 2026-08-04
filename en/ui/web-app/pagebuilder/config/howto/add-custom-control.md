@@ -1,5 +1,6 @@
 ---
-title: Adding a custom control
+title: Adding a custom control to an existing view
+sidebarTitle: "Add a custom control to a view"
 uid: webapp_add_custom_control
 description: How to add a custom control to an existing view
 author: Tony Yates
@@ -10,8 +11,6 @@ platform: web
 deployment: onsite
 redirect_from: /en/ui/web-app/pagebuilder/config/howto/index
 ---
-
-# Adding a custom control to an existing view
 
 **Custom controls** are controls that have been made using tools provided by Visual Studio, such as SoTextBox, SoLable, SoCheckBox, and SoRadioButton.
 

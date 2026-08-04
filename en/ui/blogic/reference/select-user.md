@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select User
-
 This element is used to select a user in the system.
 
 ## Configuration

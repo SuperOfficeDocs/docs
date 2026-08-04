@@ -1,13 +1,11 @@
 ---
 uid: service_ui
-title: Service UI
+title: UI interaction and customization
 description: UI interaction and customization for service
 author: Bergfrid Dias
 date:
 content_type: concept
 ---
-
-# UI interaction and customization
 
 A guide to interacting with and customizing the SuperOffice UI through CRMScript.
 

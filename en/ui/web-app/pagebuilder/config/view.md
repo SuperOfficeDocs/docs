@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 ---
 
-# View config files
-
 A view represents the many faces a card in SuperOffice can take. The different views of a card appear in a card of a [panel config file][1] or a [card config file][2]. If our card has many views, the config data will appear inside a `card` element. If we extract a view, put it in another config file, and refer to it, then it becomes a **view config file**, which can only contain one view.
 
 Looking at the view config file below, you can see that there is only one view defined.

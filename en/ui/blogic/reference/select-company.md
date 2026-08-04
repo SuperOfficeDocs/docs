@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select company
-
 This element adds the **Select company** field to your screen.
 
 ## Configuration

@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 ---
 
-# Card config files
-
 What appears inside the `card` element is the config data for the many views that a card can have. Let's take the below config section from the card config file that was referenced in [SoContactPanel][1], *MiniCard*.
 
 ```xml XML

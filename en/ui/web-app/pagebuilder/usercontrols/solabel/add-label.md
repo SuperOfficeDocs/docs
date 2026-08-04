@@ -1,5 +1,5 @@
 ---
-title: Adding a labelwebapp_add_label
+title: Adding a label
 uid: Adding a label
 description: How to add a label
 author: Tony Yates
@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 redirect_from: /en/ui/web-app/pagebuilder/usercontrols/solabel/index
 ---
-
-# Adding a label
 
 In this example, we will add a new label called **Quick Links** to the navigator panel. For this. we need to modify the *SoNavigatorPanel.config* file. We have used the control called SoLabel to add the label.
 

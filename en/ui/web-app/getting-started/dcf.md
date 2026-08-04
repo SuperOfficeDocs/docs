@@ -8,8 +8,6 @@ content_type: concept
 platform: web
 ---
 
-# Dynamic Client Foundation (DCF) for Web
-
 The Dynamic Client Foundation (DCF) lives in the *SuperOffice.DCF* assembly. This assembly contains general utilities for building your own client on top of the SuperOffice data services.
 
 | Utility | Description |

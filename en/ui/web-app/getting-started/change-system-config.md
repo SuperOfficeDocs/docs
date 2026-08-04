@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# How to alter system configuration files
-
 The configuration files considered system files are:
 
 * SoApplicationConfiguration

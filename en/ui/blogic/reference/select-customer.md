@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select contact
-
 This element adds the **Select contact** field to your screen.
 
 Previously called *Select customer*.

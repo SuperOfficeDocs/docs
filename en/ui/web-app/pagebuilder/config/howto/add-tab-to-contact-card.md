@@ -1,6 +1,6 @@
 ---
 uid: pb-add-tab-contact-card
-title: How to add a new tab
+title: How to add a new tab to the contact card
 description: How to add a new tab to the contact card
 author: Tony Yates
 date: 06.24.2016
@@ -10,8 +10,6 @@ topic: Pagebuilder
 platform: web
 deployment: onsite
 ---
-
-# How to add a new tab to the contact card
 
 We are going to add a new tab to the **Contact** page. We can add a new tab for any card on the contact page.
 

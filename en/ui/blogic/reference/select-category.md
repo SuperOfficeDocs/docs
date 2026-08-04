@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select category
-
 This element is a hierarchical drop-down menu that lets you select a ticket category.
 
 ## Configuration

@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# SoArchiveControlLinkInfoTypes
-
 Web client data-grid controls are called archive controls, and archive control data sources are called archive providers. Each row has a `LinkHints` property that is used to construct actual hyperlinks that control what happens when a user clicks a row in the archive control.
 
 The *SoArchiveLinkInfoTypes.config* file contains all definitions that resolve archive control click-actions to executable actions. It's where all custom archive control must add their own link-hint handlers, or `linkinfo` elements, as well.

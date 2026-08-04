@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# SoArchiveControl
-
 **SoArchiveControl** is the user control used by *.config* files to indicate that data should be retrieved from an archive. The controls are capable of loading items using AJAX callbacks and support dynamic-column features such as resizing columns and choosing which columns should be displayed in the archive.
 
 As with other SuperOffice pages, if we need to update a particular archive, we must update the panel, card, or view the particular archive is contained in. For example, if we need to modify the Person Archive, we are required to change the *SoCantactPanel.config* page.

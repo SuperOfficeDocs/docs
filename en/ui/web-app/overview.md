@@ -1,5 +1,5 @@
 ---
-title: Web GUI .Net API
+title: "Expander SDK: Web GUI .Net API"
 uid: web_application
 description: Web GUI .Net API
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ content_type: concept
 platform: web
 deployment: onsite
 ---
-
-# Expander SDK: Web GUI .Net API
 
 The client is built using the **NetServer Services API layer**, which enables the web server to be run on a separate server from the business logic implemented in the web services. It also uses the **Dynamic Client Foundation** (DCF) on top of the web services to handle globalization and to define the page builder infrastructure.
 

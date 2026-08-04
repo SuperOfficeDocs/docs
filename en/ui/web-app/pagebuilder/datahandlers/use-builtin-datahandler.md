@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# How to use an existing data handler
-
 You can use a data handler to display a certain set of results retrieved through the web service.
 
 ## Identify handler in page.config

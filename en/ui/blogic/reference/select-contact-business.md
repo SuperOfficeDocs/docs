@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select contact business
-
 This element is a drop-down menu that lets the user select which business a company is in.
 
 ## Configuration

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Ticket status
-
 This element shows the ticket status field.
 
 **Statuses:**

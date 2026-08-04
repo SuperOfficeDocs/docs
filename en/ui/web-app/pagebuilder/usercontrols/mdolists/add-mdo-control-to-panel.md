@@ -1,6 +1,7 @@
 ---
 uid: add-mod-control
-title: How to add an MDO control
+title: How to add an MDO control to an existing panel of a page
+sidebarTitle: "Add an MDO control to a panel"
 description: How to add an MDO control to an existing panel of a page
 keywords: ['usercontrol', 'MDO', 'list']
 author: Tony Yates
@@ -11,8 +12,6 @@ topic: Pagebuilder
 platform: web
 deployment: onsite
 ---
-
-# How to add an MDO control to an existing panel of a page
 
 We are going to add a new MDO control to the **Find** dialog.
 

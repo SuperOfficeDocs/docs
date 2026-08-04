@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Recipients
-
 This element is used to specify email recipients.
 
 ## Configuration

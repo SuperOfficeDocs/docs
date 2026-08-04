@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# Data handler
-
 DataHandler is the layer between the GUI and the web service. The handlers expose the web service results (the carriers) to the GUI and take care of sending the modified results back to the Web services when needed.
 
 For example, if we require contact details, the data handler gets a request from the PageBuilder for the Contact entity and has to call the web service to get the answer.

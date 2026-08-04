@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# Master and content pages
-
 ## MasterPage
 
 Defining a MasterPage is just like defining a normal page. **MasterPages** can contain markup, controls, or code, or any combination of these elements. However, they can contain a special type of control called a `ContentPlaceHolder` control. A **ContentPlaceHolder** defines a region of the master page rendering that can be substituted with content from a page that derives from the master.

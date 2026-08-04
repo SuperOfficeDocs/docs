@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Button
-
 The `button` element adds a clickable button to your screen. Used to submit forms and offer standard button functionality.
 
 ## Configuration

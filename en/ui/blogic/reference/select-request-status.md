@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select request status
-
 This element adds a **drop-down** menu with all statuses. It also adds a calendar field to pick the date and time for postponed requests.
 
 It is available in version 3.1.7.5

@@ -7,8 +7,6 @@ date:
 content_type: concept
 ---
 
-# PageBuilder
-
 PageBuilder's main functionality is rendering the page with the UI states and current changes in the page.
 
 The following diagram shows the components in a typical CRM.web webpage. The webpage consists of one or more panels. A panel should consist of at least one card. Each card has its own set of views.

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select insert text
-
 This element is used to select a predefined text to insert into a message.
 
 Text can be selected from FAQ entries, reply templates, and previous messages.

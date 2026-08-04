@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Horizontal separator (br)
-
 The `br` element prints an HTML line-break on the screen.
 
 ```html

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select contacts
-
 A variant of [select contact][1] that lets you select more than 1 contact person.
 
 Previously called *Select customer*.

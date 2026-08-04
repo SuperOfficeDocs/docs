@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Textarea
-
 This element creates an input field that can span several lines.
 
 ## Configuration

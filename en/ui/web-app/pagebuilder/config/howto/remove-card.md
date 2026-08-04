@@ -1,5 +1,6 @@
 ---
-title: How to remove an existing card
+title: How to remove an existing card from a page
+sidebarTitle: "Remove a card from a page"
 uid: pb_remove_card
 description: How to remove an existing card from a page
 author: Tony Yates
@@ -8,8 +9,6 @@ content_type: howto
 platform: web
 deployment: onsite
 ---
-
-# How to remove an existing card from a page
 
 The PageBuilder XML configuration makes it easy to add and remove parts of the SuperOffice GUI. Here, we will focus on removal.
 

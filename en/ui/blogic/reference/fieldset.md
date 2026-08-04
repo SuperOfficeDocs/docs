@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Fieldset
-
 This is a **group element**. It defines the beginning of a group of elements and requires a matching group end element.
 
 It places a `<fieldset>` tag around its children.

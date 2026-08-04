@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select Time
-
 This element is used to get [Time][1]. as input.
 
 ## Configuration

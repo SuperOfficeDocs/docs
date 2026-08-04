@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 ---
 
-# SoApplicationConfiguration.config file
-
 The application configuration file lists all the pages used in the system. It stores data like the preference section for a given page in the `UserPreference` table and what the key of the preference is. It holds the current information of a given page in the current section of the file.
 
 ## SoApplicationConfiguration

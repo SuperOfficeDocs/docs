@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# HtmlGrid
-
 This element is the oldest grid version that allows you to create an HTML grid.
 
 ## Configuration

@@ -7,6 +7,4 @@ date:
 topic: reference
 ---
 
-# Vertical space (hr)
-
 The `hr` element displays a horizontal line on the screen.
