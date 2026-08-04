@@ -71,8 +71,8 @@
       },
       {
         "group": "Zoekopties",
+        "root": "nl/search-options/learn/index",
         "pages": [
-          "nl/search-options/learn/index",
           "nl/search-options/learn/find-screen",
           "nl/search-options/learn/search-criteria",
           "nl/search-options/learn/freetext-search",
@@ -456,8 +456,8 @@
       },
       {
         "group": "Aangepaste objecten",
+        "root": "nl/custom-objects/learn/index",
         "pages": [
-          "nl/custom-objects/learn/index",
           "nl/custom-objects/learn/more-tab",
           {
             "group": "Door gebruiker gedefinieerde velden",
@@ -658,10 +658,6 @@
         ]
       },
       {
-        "group": "Mobile CRM",
-        "pages": []
-      },
-      {
         "group": "Kennisdatabase",
         "root": "nl/knowledge-base/learn/index",
         "pages": [
@@ -692,8 +688,8 @@
       },
       {
         "group": "Privacy-instellingen en AVG",
+        "root": "nl/security/privacy/learn/index",
         "pages": [
-          "nl/security/privacy/learn/index",
           "nl/security/privacy/learn/edit-legal-base",
           "nl/security/privacy/learn/send-privacy-confirmation-email",
           "nl/security/privacy/learn/generate-personal-data-report",
