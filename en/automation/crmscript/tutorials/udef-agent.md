@@ -1,13 +1,11 @@
 ---
 uid: crmscript_udef_tutorial
-title: User-defined fields
+title: NSUserDefinedFieldInfoAgent
 author:
 date:
 keywords: ['udefagent', 'crmscript']
 content_type: tutorial
 ---
-
-# NSUserDefinedFieldInfoAgent
 
 In this sample, we are looking up UDEF fields on a person, and we want to know metadata about those fields, such as the type and tooltip.
 

@@ -11,8 +11,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/howto/diary/invitation-archive
 ---
 
-# Invitation Archive
-
 ```csharp
 using SuperOffice.CRM.Services;
 using SuperOffice.CRM.ArchiveLists;

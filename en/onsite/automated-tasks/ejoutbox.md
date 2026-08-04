@@ -1,6 +1,6 @@
 ---
 uid: automated-tasks-ejoutbox
-title: Automated tasks - ejOutbox
+title: ejOutbox
 description: Automated tasks in Service - ejOutbox
 keywords: ['ejoutbox']
 author: SuperOffice Product and Engineering
@@ -10,8 +10,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/service/automated-tasks/ejoutbox
 ---
-
-# ejOutbox
 
 Responsible for connecting to the SMTP server and sending messages from Service.
 

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# CK editor
-
 This element allows you to create HTML-formatted messages. You can insert images, tables, paragraphs, and so on.
 
 Learn more:

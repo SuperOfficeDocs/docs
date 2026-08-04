@@ -1,5 +1,5 @@
 ---
-title: Expanding quick search
+title: Expanding quick search functionality
 uid: expand-quick-search
 description: Expanding quick search functionality
 author: Hans Wilhelmsen
@@ -7,8 +7,6 @@ keywords: ['Service', 'quicksearch', 'screen chooser']
 content_type: howto
 date: 09.30.2013
 ---
-
-# Expanding quick search functionality
 
 Customer Service out of the box offers quick searching through the field in the top right corner on most of the fields for contacts and persons in the database.
 

@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/globalization-and-localization/address/howto/crmscript/get-address
 ---
 
-# Get address info
-
 ## NSLocalizedField[][] getFormattedAddress()
 
 Fetches the formatted address of the company.

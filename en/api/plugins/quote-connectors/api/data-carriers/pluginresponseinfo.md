@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/pluginresponseinfo
 ---
 
-# PluginResponseInfo
-
 PluginResponseInfo exists to be able to respond with more than just a true/false, but also an explanation. Such an explanation can be displayed on for instance a disabled **Place Order** button.
 
 ## Bool IsOk

@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/lists/entity/group-view
 hidden: true
 ---
 
-# Group view providers
-
 GroupView Providers are another type of list providers. In the diary of SuperOffice, we have 4 tabs which are Day, Week, Month, and View. The Group View list defines the user groups and the user's own custom definitions of users as a list so that we can display it as a dropdown.
 
 The following example demonstrates how a group view list provider is created.

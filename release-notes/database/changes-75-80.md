@@ -10,8 +10,6 @@ category: database
 hidden: true
 ---
 
-# Table changes from 7.5 to 8.0
-
 ## New tables
 
 ### Favorites

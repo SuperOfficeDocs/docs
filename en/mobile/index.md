@@ -17,8 +17,6 @@ language: en
 index: true
 ---
 
-# Mobile CRM - Access your CRM on the go
-
 SuperOffice Mobile CRM has been redesigned to give you faster access, better navigation, and a cleaner interface-while still offering all the powerful tools you need to work from anywhere.
 
 Whether you're meeting a customer, following up on a sale, or responding to service requests, Mobile CRM puts the full power of SuperOffice in your pocket.

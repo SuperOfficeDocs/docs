@@ -1,6 +1,7 @@
 ---
 uid: model-view-controller-pattern
-title: Model-view-controller pattern
+title: Web client and the model-view-controller pattern
+sidebarTitle: "MVC pattern"
 description: Web client and the model-view-controller pattern
 keywords: ['model-view-controller', 'web client architecture', 'controlgroup element']
 author: Tony Yates
@@ -9,8 +10,6 @@ content_type: article
 deployment: onsite
 platform: web
 ---
-
-# Web client and the model-view-controller pattern
 
 Many enterprise software applications base their application design on solid patterns that have been tried and proven true in high-demand environments. SuperOffice is no exception. From inception, the intent for the SuperOffice web client was to incorporate the most sensible patterns needed to build a rock-solid enterprise CRM application, yet remain flexible enough to facilitate a great deal of customizability. As the title states, it has accomplished this by leveraging an architectural design loosely based on the Model-View-Controller pattern. In this article, I walk you through the main aspects of the architecture and demonstrate how the different pieces fit together.
 

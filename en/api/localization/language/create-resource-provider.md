@@ -16,8 +16,6 @@ redirect_from:
 language: en
 ---
 
-# How to create a resource provider
-
 All [resource providers][1] must be compiled in .Net assemblies. SuperOffice provider a base class in the *SuperOffice.Plugins.dll* called `ResourceDllProviderBase`, which makes it easy to get started.
 
 Implementations must decorate the class with the `ResourceProvider` attribute, which NetServer will use to discover and load at runtime. The first parameter must be a name that uniquely identifies your provider. The second parameter is a priority number that can force your provider to be called before others, and thus override already-existing stuff. This is not normally a recommended practice, however, the lowest priority value is used first. SuperOffice default priority values are `int.MaxValue` divided by 2. If another provider that includes the same resource names with a lower priority value, such as `int.MaxValue / 3`, it takes precedence and overrides default resources supplied by SuperOffice.

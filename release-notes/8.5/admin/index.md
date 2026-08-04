@@ -1,6 +1,6 @@
 ---
 uid: news-admin-8.5
-title: Settings and maintenance 8.5 update
+title: Settings and maintenance
 description: Release notes. What's new in SuperOffice Settings and maintenance 8.5
 author: SuperOffice AS - Product and Engineering
 date: 12.18.2020
@@ -10,8 +10,6 @@ deployment: onsite
 content_type: release-note
 language: en
 ---
-
-# Settings and maintenance
 
 * [Web Tools - Preference to control the appearance of Web tools install (8.5 R02)][2]
 * [Admin - New tab for Global Preferences (8.5 R04)][4]

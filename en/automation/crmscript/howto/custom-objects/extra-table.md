@@ -9,8 +9,6 @@ content_type: concept
 redirect_from: /en/custom-objects/extra-table/howto/crmscript/index
 ---
 
-# Third-party tables
-
 ## Add data to a new table
 
 Using [SearchEngine][2] and `addData()`, you set up the row and then do an insert.

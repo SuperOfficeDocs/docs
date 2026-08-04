@@ -10,8 +10,6 @@ deployment: onsite
 redirect_from: /en/ui/web-app/pagebuilder/usercontrols/solistbox/index
 ---
 
-# Databinding with SoListBox
-
 The HTML code segment below shows how we can configure a SoListBox. This code segment is taken from the *SoProjectMemberPickPage.config* file. The SoListBox ID is set as a *leftListBox*. AddMembersDataHandler is the datahandler, which has been bound to the control, to retrieve the data.
 
 ```XML

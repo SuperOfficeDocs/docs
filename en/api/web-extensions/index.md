@@ -1,5 +1,5 @@
 ---
-title: web-extensions
+title: Web Extensions
 description: Web Extensions
 author: Tony Yates
 date: 06.24.2016
@@ -7,8 +7,6 @@ content_type: concept
 platform: web
 deployment: onsite
 ---
-
-# Web Extensions
 
 The **SuperOffice Web Extensions** is a local client that can be installed on the user's machine (without admin rights). It registers a couple of protocol handlers:
 

@@ -1,6 +1,7 @@
 ---
 uid: list-contact-interests-entity
 title: How to list all selected interests for a contact
+sidebarTitle: "List interests for a contact"
 description: How to list all selected interests for a contact using entities
 keywords: ['contact', 'company', 'interest', 'entity', 'API', 'ContactInterestHelper', 'SelectHeadingItems', 'SelectRootItems']
 author: Tony Yates
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/company/get-interests-for-contact-entity
 hidden: true
 ---
-
-# How to list all selected interests for a contact
 
 You can list all selected [interests][1] for a specific contact using the `ContactInterestHelper` class.
 

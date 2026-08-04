@@ -1,6 +1,7 @@
 ---
 uid: create-recurring-appointment-ws
 title: How to create a recurring appointment (services)
+sidebarTitle: "Recurring appointment (services)"
 description: How to create a recurring appointment using services
 keywords: ['diary', 'calendar', 'appointment', 'API', 'web services', 'recurrence']
 author: Bergfrid Skaara Dias
@@ -10,8 +11,6 @@ redirect_from:
   - /en/diary/howto/services/create-recurring-appointment-services
   - /en/api/netserver/web-services/howto/diary/create-recurring-appointment-services
 ---
-
-# How to create a recurring appointment (services)
 
 This demonstrates how to create [recurring appointments][2] using [NetServer services][1].
 

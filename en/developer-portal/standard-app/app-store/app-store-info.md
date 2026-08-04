@@ -10,8 +10,6 @@ content_type: howto
 deployment: online
 ---
 
-# App Store information
-
 As a partner that offers one or more applications through the [SuperOffice App Store][1], you need to create and maintain two sets of public information:
 
 * Your company's profile page

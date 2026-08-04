@@ -1,6 +1,6 @@
 ---
 uid: api-ws-document
-title: Documents API options
+title: Document API options
 description: Working with documents via SuperOffice APIs.
 keywords: ['document', 'API']
 author: Bergfrid Skaara Dias
@@ -16,8 +16,6 @@ redirect_from:
   - /en/document/howto/services/index
   - /en/api/netserver/web-services/howto/document/index
 ---
-
-# Document API options
 
 In this section, the focus will be on how to create, as well as edit, and upload a modified document.
 

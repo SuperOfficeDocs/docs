@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select contact category
-
 This element is a drop-down menu that lets the user select which category a company is in.
 
 ## Configuration

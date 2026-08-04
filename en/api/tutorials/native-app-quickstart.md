@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# Native console application quick-start
-
 A quick-start guide for getting you up and running with a native console application.
 
 ## Before you begin

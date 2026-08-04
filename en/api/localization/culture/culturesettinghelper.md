@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/culture/culturesettinghelper
 language: en
 ---
 
-# Culture Helper
-
 The `CultureSettingHelper` class is used to perform tasks in a temporary culture context. It remembers the previous culture settings, executes the containing code in the set culture, then resets the culture to the previous culture when disposed.
 
 ```csharp

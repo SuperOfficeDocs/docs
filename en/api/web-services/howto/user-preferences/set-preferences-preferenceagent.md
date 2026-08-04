@@ -1,6 +1,6 @@
 ---
 uid: set-preferences-ws
-title: Set preferences using services
+title: Set preference
 description: How to set preferences using services
 keywords: ['preference', 'PreferenceSpec', 'PreferenceAgent']
 author: digitaldiina
@@ -13,8 +13,6 @@ topic: user preferences
 language: en
 redirect_from: /en/admin/user-preferences/howto/set-preferences-preferenceagent
 ---
-
-# Set preference
 
 The following example shows how to set preferences for the visual section of the diary.
 

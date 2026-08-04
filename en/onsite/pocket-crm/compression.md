@@ -1,6 +1,6 @@
 ---
 uid: zip-on-rest
-title: Compression
+title: ZIP compression on REST
 description: ZIP compression on REST
 keywords: ['ZIP compression']
 author: SuperOffice Product and Engineering
@@ -12,8 +12,6 @@ legacy: true
 redirect_from: /en/mobile/pocket-crm/compression
 language: en
 ---
-
-# ZIP compression on REST
 
 Since SuperOffice 8.5 R01 we added support for ZIP compression on REST API.
 

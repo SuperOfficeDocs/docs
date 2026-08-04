@@ -1,6 +1,7 @@
 ---
 uid: toggle-contact-interest-ws
-title: How to set an interest on or off
+title: How to set an interest on or off for a contact (services)
+sidebarTitle: "Set interest on/off (services)"
 description: How to set an interest on or off for a contact using services
 keywords: ['contact', 'company', 'services', 'API', 'interest', 'ContactAgent', 'electableMDOListItem']
 author: Tony Yates
@@ -10,8 +11,6 @@ redirect_from:
   - /en/company/howto/services/set-interest-on-off-services
   - /en/api/netserver/web-services/howto/company/set-interest-on-off-services
 ---
-
-# How to set an interest on or off for a contact (services)
 
 You can use web services to alter the selected status of an [interest][1] of a specific contact.
 

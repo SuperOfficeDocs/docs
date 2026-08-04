@@ -1,6 +1,7 @@
 ---
 uid: app-localization-requirements
-title: Localization requirements
+title: Requirements for localization and language support
+sidebarTitle: "Localization requirements"
 description: Localization and language support requirements for certifying standard applications.
 keywords: ['certification', 'apps']
 author: Margrethe Romnes
@@ -9,8 +10,6 @@ content_type: reference
 deployment: online
 platform: web
 ---
-
-# Requirements for localization and language support
 
 Building localization features into the basic architecture of your product is essential to effective distribution, deployment, and future maintenance.
 

@@ -1,6 +1,6 @@
 ---
 uid: webhook_error_event
-title: Error events
+title: Webhook State change events
 description: Error webhook events
 keywords: ['webhook', 'state change']
 author: AnthonyYates
@@ -9,8 +9,6 @@ content_type: reference
 category: automation
 topic: webhook
 ---
-
-# Webhook State change events
 
 In order to subscribe to webhook state change events, you must first create a webhook to get the `WebhookId`, then use that id in the webhook subscription `Event` property.
 

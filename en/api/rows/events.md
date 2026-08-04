@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/rows/events
 hidden: true
 ---
 
-# Events in Row objects
-
 Unlike Entity objects, Row objects have many events.
 
 Here we are using `ContactRow` to demonstrate how events are called back from Row objects. `ContactRow` has about 30 events. For each change in the properties of `ContactRow`, an event is triggered. Therefore there is an event for each field in the `contact` table.

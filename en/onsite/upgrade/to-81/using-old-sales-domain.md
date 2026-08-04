@@ -1,5 +1,6 @@
 ---
-title: Upgrade to 8.1 with old Sales domain
+title: Upgrade to 8.1 or newer when using the old Sales domain
+sidebarTitle: "Upgrade to 8.1: old Sales domain"
 uid: upgrade_to_81_sales
 description: Upgrade to 8.1 when using the old Sales domain
 author: Martin Pavlas
@@ -8,8 +9,6 @@ keywords: ['upgrade']
 content_type: howto
 deployment: onsite
 ---
-
-# Upgrade to 8.1 or newer when using the old Sales domain
 
 ![Move Service to Sales web client domain -screenshot][img6]
 

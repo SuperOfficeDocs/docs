@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select FAQ
-
 This element is used to select an entry from the FAQ database.
 
 ## Configuration

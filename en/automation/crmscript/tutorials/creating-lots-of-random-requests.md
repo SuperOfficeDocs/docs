@@ -8,8 +8,6 @@ keywords: ['CRMScript']
 content_type: tutorial
 ---
 
-# Creating lots of random requests
-
 Sometimes when you experiment with Service, it is convenient to have a lot of dummy requests in the database. Here is a small script that will create a given number of requests with a variable number of messages containing Lorem Ipsum content. The script will initially load all categories and customers so that the data will be randomly related to these entities.
 
 ![random request -screenshot][img1]

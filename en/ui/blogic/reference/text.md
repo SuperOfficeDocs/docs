@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Text
-
 This element is a single-line text input field.
 
 ## Configuration

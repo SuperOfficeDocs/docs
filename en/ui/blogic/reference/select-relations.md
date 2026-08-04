@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select multiple relations
-
 This element is used for selecting the primary ID from multiple tables.
 
 It is similar to [Select relation][1]. However, it is used when **more than 1 relation** is required, and displays these in a **grid**.

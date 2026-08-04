@@ -9,8 +9,6 @@ envir: cloud
 client: online
 ---
 
-# Bulk Update API reference
-
 Supported entities/tables:
 
 * [appointment][3]

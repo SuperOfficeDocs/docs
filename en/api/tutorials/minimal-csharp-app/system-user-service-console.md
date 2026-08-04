@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# System user service console
-
 A console application that simulates a service that periodically polls the database, demonstrates how to exchange the system user token for a system user ticket and call the tenant web services.
 
 The primary objective of the example Service Console is to demonstrate how to use a certificate to sign a [system user token][1] and use the signed system token, context identifier, and client secret to get a [SystemIdToken][2] - which contains the system user ticket.

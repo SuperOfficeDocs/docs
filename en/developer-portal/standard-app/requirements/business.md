@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# Business requirements
-
 Any application for SuperOffice CRM Online must indicate what it wants to achieve. Please adhere to these needs and expectations.
 
 [Applications][1] need to add value rather than compete with SuperOffice CRM Online. You need a place to host, maintain, and develop your applications directly or via a partner of yours. Similarly, you also need to be a business in the position to invoice, collect, and support your customers or have a partner who does.

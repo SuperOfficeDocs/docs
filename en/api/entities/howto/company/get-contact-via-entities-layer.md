@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Get a contact through entities layer
-
 Getting a contact through the **entities layer** is pretty straightforward. You need to import the `SuperOffice.CRM.Entities` namespace.
 
 The following example shows how it is done.

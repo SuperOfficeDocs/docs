@@ -1,6 +1,7 @@
 ---
 uid: create_cdd_tables
-title: How to create tables
+title: How to create tables in the SuperOffice database (CDD)
+sidebarTitle: "Create database tables (CDD)"
 description: How to create tables in the SuperOffice database for version 8.1 and higher
 keywords: ['database', 'dictionary step', 'CDD']
 author: AnthonyYates
@@ -8,8 +9,6 @@ date: 07.16.2026
 content_type: howto
 language: en
 ---
-
-# How to create tables in the SuperOffice database (CDD)
 
 Evolutionary database design is the way forward. The implementation development, tested and used by SuperOffice in its' own environment has proven to be very useful and a powerful tool for ensuring database integrity, flexibility, and longevity.
 

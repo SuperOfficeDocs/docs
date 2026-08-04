@@ -7,8 +7,6 @@ content_type: tutorial
 deployment: online
 ---
 
-# OpenID Authorization Code flow
-
 We will make a simple app that displays some information about recently added contacts in a web panel.
 
 We will use the **Authorization Code** flow with 3 URLs:

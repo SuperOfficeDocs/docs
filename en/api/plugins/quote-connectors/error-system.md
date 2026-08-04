@@ -9,8 +9,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/quote-connectors/error-system
 ---
 
-# Error system
-
 When something is wrong and the connector needs to make the user aware of the problem, there are a few ways to do this, based on what fails.
 
 If the connector throws an exception, SuperOffice will catch it and present the Message to the user. This should be avoided, it could leave the system in a bad state.

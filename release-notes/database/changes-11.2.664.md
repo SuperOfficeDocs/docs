@@ -1,6 +1,6 @@
 ---
 uid: database-whats-new-11.2.664.0
-title: What's new in version 11.2.664.0
+title: Released database changes in version 11.2.664.0
 sidebarTitle: "11.2 - database changelog"
 description: What's new in database version 11.2.664.0.
 so.generated: true
@@ -8,8 +8,6 @@ keywords: ['database']
 so.topic: reference
 so.envir: onsite, online
 ---
-
-# Released database changes in version 11.2.664.0
 
 ## SuperOffice
 

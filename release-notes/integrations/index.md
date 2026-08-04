@@ -1,6 +1,6 @@
 ---
 uid: release-notes-integrations
-title: Product integration updates
+title: What's new in Product integration
 sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice Integrations
 keywords: ['integration', 'app', 'App Store', 'product release']
@@ -12,8 +12,6 @@ audience_tooltip: SuperOffice CRM
 redirect_from: /release-notes/10.2/office-integrations/
 language: en
 ---
-
-# What's new in Product integration
 
 ## Product integrations updates
 

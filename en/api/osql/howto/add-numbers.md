@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/howto/add-numbers
 hidden: true
 ---
 
-# Adding numbers
-
 ```SQL
 SELECT s.Sale_id + s.Associate_id + s.Group_idx + s.contact_id + s.person_id
 FROM CRM.sale s

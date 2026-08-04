@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Create an appointment row
-
 An [AppointmentRow][2] refers to a row in the [appointment database table][1]. Therefore, it consists of basic data types supported by SQL. To create an `AppointmentRow` we use the `SuperOffice.CRM.Rows` namespace.
 
 The following example shows how we create an appointment using the `AppointmentRow` class.

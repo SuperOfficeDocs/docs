@@ -8,8 +8,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/client-gui
 ---
 
-# ERP sync client GUI
-
 Erp Sync will also require a GUI in the SuperOffice client, to allow the user to create and link SuperOffice entities to ERP actors, and to take advantage of the *Show In ERP Tab* functionality where an ERP field may be retrieved on demand and shown in its corresponding SuperOffice entity.
 
 GUI operations are beyond the scope here, but for understanding's sake, we have included a few figures.

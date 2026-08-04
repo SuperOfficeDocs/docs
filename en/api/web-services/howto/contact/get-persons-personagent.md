@@ -1,6 +1,7 @@
 ---
 uid: get-person-ipersonagent
 title: Retrieving list of persons with PersonAgent
+sidebarTitle: "List persons (PersonAgent)"
 description: How to retrieve a list of persons with PersonAgent.
 keywords: ['person', 'contact', 'services', 'API', 'api-services', 'PersonAgent', 'GetPersonList']
 author: Bergfrid Skaara Dias
@@ -10,8 +11,6 @@ redirect_from:
   - /en/contact/howto/services/get-persons-personagent
   - /en/api/netserver/web-services/howto/contact/get-persons-personagent
 ---
-
-# Retrieving list of persons with PersonAgent
 
 You can retrieve a `Person` list is with the `GetPersonList` method available through the `PersonAgent`. To use this service, we must know the IDs of the people we want before we can make the call. If we do not know the ID, we need to use a different service, for example, a method like `GetPersonsFromContact`.
 

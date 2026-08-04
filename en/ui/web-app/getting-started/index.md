@@ -1,5 +1,6 @@
 ---
-title: Getting started
+title: Getting started with customizing the web application
+sidebarTitle: "Getting started"
 uid: getting_started_webapp
 description: Getting started with customizing the web application
 author: Tony Yates
@@ -8,8 +9,6 @@ content_type: concept
 platform: web
 deployment: onsite
 ---
-
-# Getting started with customizing the web application
 
 SuperOffice CRM Web delivers a comprehensible and highly extensible platform that enables virtually unlimited integration capabilities.
 

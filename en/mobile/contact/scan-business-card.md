@@ -20,8 +20,6 @@ redirect_from:
 language: en
 ---
 
-# Scan a business card
-
 Do you receive many business cards from prospects and customers? The fastest way to save this information in SuperOffice CRM is the business card scan function in the Mobile CRM app.
 
 ## Steps

@@ -11,8 +11,6 @@ category: Settings and maintenance
 language: en
 ---
 
-# New and improved Settings and maintenance
-
 * [Screen designer - New functionality (10.0.1)][1]
 * [AI Services - New functionality (10.0.1)][1]
 * [User-defined fields - Remove of field placement (10.0.1)][1]

@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Accept invitation
-
 Accepting an invitation involves changing the type of an appointment.
 
 Here is Ingrid Istad about to accept an invitation to an appointment from Frode Freestad.

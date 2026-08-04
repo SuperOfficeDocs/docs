@@ -11,8 +11,6 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/api/netserver/search/odata/strings
 ---
 
-# String
-
 ## Begins with
 
 ```http

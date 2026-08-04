@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/howto/using-sentry
 hidden: true
 ---
 
-# Sentry
-
 A **Sentry** is automatically added when you query on entity tables such as `contact` or `project`. You can ask this sentry about your permission to access the various fields you get back.
 
 ```csharp

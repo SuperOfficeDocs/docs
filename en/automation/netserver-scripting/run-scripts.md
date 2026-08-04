@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# Three ways to deploy and run scripts
-
 ## Single function
 
 The simplest form of scripting is the single function script. This is accomplished by adding a text file that contains a single method declaration with the correct extension (.cs or .vb) into the scripting folder. The following code demonstrates this technique. The example demonstrates manipulating the name and department of the contact after it is retrieved from the database, but before it is returned to the client.

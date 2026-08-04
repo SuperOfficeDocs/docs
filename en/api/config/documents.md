@@ -12,8 +12,6 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/api/netserver/config/documents
 ---
 
-# NetServer Documents element
-
 This configuration is used to access the SuperOffice documents. It is used by NetServer to identify which document archive and temporary directory are used.
 
 To restrict access to the document archive, specify domain credentials with read and write access to the archive for NetServer to impersonate.

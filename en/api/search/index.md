@@ -10,8 +10,6 @@ content_type: concept
 redirect_from: /en/api/netserver/search
 ---
 
-# Search
-
 SuperOffice CRM offers a versatile and robust search framework to manage and retrieve data efficiently. Whether you're working with simple lists or complex selections, SuperOffice provides specialized tools and APIs to meet a wide range of business needs. Here's an overview of the key search capabilities, including **Archive Providers**, **MDO Providers**, **Selections / Find**, and **OData**, that enable you to harness your data effectively.
 
 ---

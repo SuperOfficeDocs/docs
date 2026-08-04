@@ -1,5 +1,6 @@
 ---
-title: UDFHelper class and UDFInfo struct source
+title: Complete UDFHelper class and UDFInfo struct source
+sidebarTitle: "UDFHelper class source"
 uid: ns_class_udefhelper
 description: The definitive NetServer user-defined field lookup class.
 author: Tony Yates
@@ -13,8 +14,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/custom-objects/udefhelper-class
 hidden: true
 ---
-
-# Complete UDFHelper class and UDFInfo struct source
 
 This class can be used to retrieve the value of all user-defined fields.
 

@@ -9,7 +9,6 @@ content_type: reference
 category: automation
 topic: webhook
 ---
-# ExtraTable events
 
 These events are fired when ExtraTable rows are changed:
 

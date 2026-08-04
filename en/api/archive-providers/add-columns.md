@@ -13,8 +13,6 @@ platform: web
 redirect_from: /en/api/netserver/archive-providers/add-columns
 ---
 
-# Add columns to archive providers
-
 How to extend an archive provider with an `ArchiveExtenderExtender`.
 
 This article demonstrates how easy it is to add columns of related data to existing archive extenders throughout SuperOffice without the complexity of creating multiple extenders and base extenders previously required before SuperOffice CRM version 8.

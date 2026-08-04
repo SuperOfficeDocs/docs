@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# Scripting in NetServer services
-
 Ever since SuperOffice CRM Web application was first released, people have been asking when the web client would have a scripting workflow experience like that in the SuperOffice Windows client. Scripting in the web world has proven challenging for many reasons, but it's nice now to say that, yes, the web client does have a similar scripting workflow experience.
 
 This article will introduce scripting workflows in the web client and provide insight into how to get scripting up and running on your web application installation. It's important to note that scripting web events are actually executing on the application server, in NetServer services. This means that NetServer scripting can be deployed to work for the SuperOffice web client, PocketCRM environments, and customer solutions that leverage a NetServer services code base.

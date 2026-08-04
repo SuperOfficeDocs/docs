@@ -12,8 +12,6 @@ redirect_from: /en/api/netserver/osql/index
 hidden: true
 ---
 
-# SuperOffice Objectified SQL (OSQL)
-
 [NetServer exposes many layers][2] of its API to do the same functionality. OSQL is the lowest layer of the NetServer API that provides a **programmatic query language** for reading and writing data to and from a SuperOffice database. It's the objectified equivalent to writing database Structured Query Language (SQL) and is the most performing of all NetServer API layers. You can think of it as the **SuperOffice Database Interface** (SODBIF).
 
 ![NetServer Core OSQL layer diagram][img1]

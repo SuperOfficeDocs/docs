@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Diary - raw SQL
-
 ## Create appointments
 
 * [Create appointment][1]

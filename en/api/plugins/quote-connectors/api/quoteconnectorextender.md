@@ -8,8 +8,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/quoteconnectorextender
 ---
 
-# QuoteConnectorExtender
-
 This class is made to make it easier to make some installation-specific changes to a connector without changing the connector itself.
 
 Just inherit `QuoteConnectorExtender`, override the function (-s) you need to change (or extend the functionality), and make SuperOffice connect to the new extender connector instead of the ERP connector (`dynamicload` section in the *SuperOffcie.config* file).

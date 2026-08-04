@@ -8,8 +8,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/erp-connectors/terminology
 ---
 
-# Terminology
-
 | Term | Description |
 |---|---|
 | Erp Sync | The synchronization application and a generic prefix for all of its components |

@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# User contexts
-
 An application can have three types of interaction with a tenant: interactive user sessions; non-interactive background services; or hybrid.
 
 SuperOffice CRM Online supports both types of interactions. The first as an **application user** context and the second as a **system user** context.

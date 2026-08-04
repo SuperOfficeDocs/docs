@@ -13,8 +13,6 @@ redirect_from: /en/mobile/superoffice-mobile/diary/join-video-meeting
 language: en
 ---
 
-# Join video meeting
-
 With the **Video meeting** option in SuperOffice CRM, you can easily join a meeting on the go, directly from your mobile device.
 
 ## Join from Diary

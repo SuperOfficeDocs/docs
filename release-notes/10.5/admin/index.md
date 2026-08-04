@@ -1,6 +1,6 @@
 ---
 uid: news-admin-10.5
-title: What's new in SuperOffice 10.5
+title: New and improved Settings and maintenance
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.5
 author: SuperOffice AS - Product and Engineering
@@ -12,8 +12,6 @@ audience: settings
 audience_tooltip: Settings and maintenance
 language: en
 ---
-
-# New and improved Settings and maintenance
 
 * [Screen designer - Quick action buttons on Request message (10.5.5)][5] in Settings and maintenance
 * [CRMScript - Use the Map class to define a list (10.5.5)][5] in Settings and maintenance

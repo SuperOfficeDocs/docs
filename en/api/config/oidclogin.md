@@ -1,5 +1,5 @@
 ---
-title: OidcLogin element
+title: NetServer OidcLogin element
 uid: ns_config_oidclogin
 description: NetServer utility class to get access to values related to CRM OIDC login
 date: 12.08.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: online
 redirect_from: /en/api/netserver/config/oidclogin
 ---
-
-# NetServer OidcLogin element
 
 Utility class to get access to values related to CRM OIDC login.
 

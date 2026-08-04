@@ -9,8 +9,6 @@ content_type: concept
 index: true
 ---
 
-# What is CRMScript?
-
 CRMScript is a lightweight, interpreted programming language with curly-bracket syntax. It is statically typed and supports object-oriented and imperative styles.
 
 The CRMScript language is similar to JavaScript, with some traits of Python.

@@ -1,6 +1,6 @@
 ---
 uid: crmscript-get-recurrence-info
-title: View recurrence info
+title: View recurrence info of a follow-up
 description: How to get recurrence info with CRMScript
 keywords: ['CRMScript', 'calendar', 'diary', 'appointments', 'follow-up', 'recurrence']
 author: Bergfrid Skaara Dias
@@ -9,8 +9,6 @@ version: 10
 content_type: howto
 redirect_from: /en/diary/howto/crmscript/get-recurrence-info
 ---
-
-# View recurrence info of a follow-up
 
 Depending on the level details you need, you can use either the [NSAppointment][1] or the [NSAppointmentEntity][2] class.
 

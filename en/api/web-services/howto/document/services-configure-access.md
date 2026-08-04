@@ -16,8 +16,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/document/services-configure-access
 ---
 
-# Configuring document access
-
 For the application to run properly, some modifications are required in the application configuration file.
 
 ```XML

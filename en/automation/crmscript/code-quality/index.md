@@ -8,8 +8,6 @@ date: 04.15.2024
 content_type: concept
 ---
 
-# Code quality
-
 A guide to creating high-quality scripts.
 
 * [Coding conventions][1]

@@ -16,8 +16,6 @@ redirect_from: /en/admin/user-preferences/add-prefdesc
 hidden: true
 ---
 
-# Add user preference
-
 It's possible to add your own preferences to the database so they appear as they were built in. See the [PrefDesc table][1] info for values needed.
 
 | ValueType | Description |

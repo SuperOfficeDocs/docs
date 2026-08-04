@@ -8,8 +8,6 @@ date: 04.15.2024
 content_type: howto
 ---
 
-# CRMScript tutorials
-
 * [Random requests][1]
 * [Script-based selections][2]
 * [Udef agent][3]

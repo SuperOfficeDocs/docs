@@ -9,8 +9,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/providers
 ---
 
-# Providers
-
 A provider is a class that implements the `IArchiveProvider` interface and is tagged with an `ArchiveProviderAttribute`.
 
 ## QueryProvider

@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/enums/quoteaction
 ---
 
-# QuoteAction
-
 An enumeration hinting about what the user has asked for.
 
 | Value | Description |

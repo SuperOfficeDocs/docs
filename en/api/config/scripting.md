@@ -1,5 +1,5 @@
 ---
-title: Scripting element
+title: NetServer Scripting element
 uid: ns_config_scripting
 description: NetServer configuration values related to NetServer Service Scripting.
 date: 12.09.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/scripting
 ---
-
-# NetServer Scripting element
 
 Configuration values related to NetServer Service Scripting.
 

@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Reference
-
 This section describes the events and how they appear when events are dispatched to your webhook receiver.
 
 ## Delete events

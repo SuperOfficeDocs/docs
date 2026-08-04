@@ -1,5 +1,6 @@
 ---
-title: Set validation rule
+title: What if I want to specify what to validate?
+sidebarTitle: "Specify what to validate"
 uid: set_validation_rules_in_trigger
 description: What if I want to specify what to validate?
 author: Simen Mostuen Iversen
@@ -8,8 +9,6 @@ keywords: ['automation', 'validate', 'contact']
 content_type: howto
 index: true
 ---
-
-# What if I want to specify what to validate?
 
 In this example, I will only write a script as a macro is falling a bit short when you need more specific validation.
 

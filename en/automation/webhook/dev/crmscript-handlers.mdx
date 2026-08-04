@@ -1,6 +1,6 @@
 ---
 uid: webhook-crmscript-handlers
-title: CRMScript event handlers
+title: CRMScript webhooks event handlers
 description: How to create CRMScript webhook event handlers that respond to SuperOffice events.
 keywords: ['automation', 'webhook', 'CRMScript', 'event handler']
 author: digitaldiina
@@ -12,8 +12,6 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/automation/webhook/crmscript-handlers
 language: en
 ---
-
-# CRMScript webhooks event handlers
 
 Webhooks can also target CRMScripts, not just URLs on the internet. The webhook will call your CRMScript directly, passing the ID and changed values to the script as parameters.
 
@@ -36,7 +34,7 @@ We then need to create a hook that will call this script:
 
 <Tabs>
 <Tab title="CRMScript API">
-# Create a webhook using CRMScript
+## Create a webhook using CRMScript
 
 This CRMScript will create a webhook that when triggered, calls a CRMScript with Include name `ScriptHook1`.
 
@@ -66,7 +64,7 @@ printLine("Webhook succeeded with ID: " + webhook.GetWebhookId().toString());
 </Tab>
 
 <Tab title="REST API">
-# Create a webhook using the REST API
+## Create a webhook using the REST API
 
 This CRMScript will create a webhook that when triggered, calls a CRMScript with Include name `ScriptHook1`.
 

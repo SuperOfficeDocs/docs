@@ -1,5 +1,6 @@
 ---
-title: How to authenticate an application user
+title: How to authenticate an application user (front-channel)
+sidebarTitle: "Authenticate a user (front-channel)"
 uid: auth_user_oidc
 description: How to authenticate an application user
 author: SuperOffice Product and Engineering
@@ -10,8 +11,6 @@ deployment: online
 platform: web
 redirect_from: /en/authentication/online/sign-in-user/index
 ---
-
-# How to authenticate an application user (front-channel)
 
 Front-channel authentication is a user-interactive experience facilitated by OAuth 2.0 or **OpenID Connect** (OIDC). In short, the result of an OIDC flow includes an access token, an ID token, and a refresh token. An access token is good for 20 minutes, and a new one is easily obtained using the refresh token. As a **best practice**, several frameworks including ASP.NET, continue to use access tokens until an HTTP 403 error occurs, at which time it uses the refresh token to obtain a new access token and then tries the request again. We have [one example][11] (ASP.NET Core 3.1) that demonstrates another routine using [middleware][12] that checks the expiration of the token before each request and updates it if necessary. We do not claim this to be *the way* to do it but share this as one option among several possible solutions.
 

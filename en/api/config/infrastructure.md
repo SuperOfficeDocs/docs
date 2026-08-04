@@ -1,5 +1,5 @@
 ---
-title: Infrastructure element
+title: NetServer Infrastructure element
 uid: ns_config_infrastructure
 description: NetServer configuration values related to Online Infrastructure.
 date: 12.08.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: online
 redirect_from: /en/api/netserver/config/infrastructure
 ---
-
-# NetServer Infrastructure element
 
 Configuration values related to Online Infrastructure.
 

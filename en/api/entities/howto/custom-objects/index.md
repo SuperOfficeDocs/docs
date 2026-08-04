@@ -1,5 +1,5 @@
 ---
-title: Udef - entity
+title: Udef - entity layer
 uid: api_udef_entity
 description: Working with custom fields and entities.
 author: Bergfrid Skaara Dias
@@ -13,8 +13,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/custom-objects/index
 hidden: true
 ---
-
-# Udef - entity layer
 
 * [Set udef list-item value][1]
 * [Get udef value][2]

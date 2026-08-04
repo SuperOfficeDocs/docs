@@ -1,5 +1,6 @@
 ---
-title: Publish app
+title: Publish standard app in CRM Online environment
+sidebarTitle: "Publish a standard app"
 uid: standard-app-publish
 description: Publish standard app in CRM Online environment
 author: Margrethe Romnes
@@ -9,8 +10,6 @@ content_type: howto
 deployment: online
 platform: web
 ---
-
-# Publish standard app in CRM Online environment
 
 Congratulations, your standard application is ready!
 

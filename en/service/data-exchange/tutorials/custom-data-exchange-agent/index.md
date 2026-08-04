@@ -8,8 +8,6 @@ keywords: ['ede', 'dbi']
 content_type: tutorial
 ---
 
-# Creating a custom Data Exchange agent
-
 This tutorial will demonstrate how to create your own custom [data exchange agent][1].
 
 ## Architecture

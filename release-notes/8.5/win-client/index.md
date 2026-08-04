@@ -1,6 +1,6 @@
 ---
 uid: news-windows-client-8.5
-title: Windows client 8.5 update
+title: Windows client
 author: SuperOffice AS - Product and Engineering
 date: 12.18.2020
 version: 8.5
@@ -8,8 +8,6 @@ content_type: release-note
 deployment: onsite
 language: en
 ---
-
-# Windows client
 
 There will always be some differences between the Windows client and Web client. Some features are to be found in Web and some only in the Windows client. These are the Windows changes:
 

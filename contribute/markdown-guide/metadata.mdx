@@ -1,7 +1,7 @@
 ---
 uid: markdown-metadata
-title: Metadata (Yaml front-matter)
-description: Introduction to the Yaml key-value front-matter metadata used at the top of SuperOfficeDocs markdown files.
+title: Metadata (YAML front-matter)
+description: Introduction to the YAML key-value front-matter metadata used at the top of SuperOfficeDocs markdown files.
 keywords: ['metadata', 'front matter', 'yaml', 'uid']
 author: digitaldiina
 date: 07.16|.2026
@@ -9,7 +9,7 @@ content_type: concept
 language: en
 ---
 
-While you're editing SuperOfficeDocs, you'll see some lines at the very top of the document with things such as `uid`, `title`, and `description`. These items are referred to as **metadata** and use Yaml key-value front-matter syntax. They help the system properly create cross-referenced hyperlinks, related content links, and they help with language filtering and sorting.
+While you're editing SuperOfficeDocs, you'll see some lines at the very top of the document with things such as `uid`, `title`, and `description`. These items are referred to as **metadata** and use YAML key-value front-matter syntax. They help the system properly create cross-referenced hyperlinks, related content links, and they help with language filtering and sorting.
 
 <Note>
 The section begins and ends with 3 dashes.
@@ -45,7 +45,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | # | Property | Required | Notes |
 |---|---|---|---|
 | 1 | `uid` | Always | Unique identifier, hyphenated lowercase |
-| 2 | `title` | Always | Same text as the H1 heading |
+| 2 | `title` | Always | The page's only title — rendered in the page header. No H1 in the body (see [Markdown guide][2]) |
 | 3 | `description` | Always | Plain sentence, no quotes |
 | 4 | `keywords` | Always | YAML array of single-quoted search-term strings, e.g. `['term one', 'term two']` — Mintlify's internal-search format |
 | 5 | `author` | Always | GitHub alias — default `digitaldiina` |
@@ -97,3 +97,4 @@ To get a prompt for what metadata to add, we recommend [Blueprint templates for 
 Before any updates get merged in the repo, the reviewers will check this section to make sure everything is good to go. One reason for reviewing this section is because the `uid` (unique identifier) must be, well… unique!
 
 [1]: ./using-blueprint-templates
+[2]: ./index

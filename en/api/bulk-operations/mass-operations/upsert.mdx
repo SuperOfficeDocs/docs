@@ -1,5 +1,5 @@
 ---
-title: Upsert records
+title: Working with Upsert
 description: How to insert/update large numbers of records in bulk.
 keywords: ['data-access', 'mass-operations', 'bulk-update']
 author: AnthonyYates
@@ -10,8 +10,6 @@ category: api
 topic: mass operations
 redirect_from: /en/api/netserver/bulk-operations/mass-operations/upsert
 ---
-
-# Working with Upsert
 
 Notably, the most complex mass operation method, `Upsert`, performs any combination of inserts, updates, and, in some cases, deletes. It requires the same parameters as the [Insert][1] method, but adds a string array of *keys*, and an `UpsertNomatchAction` enum.
 

@@ -7,8 +7,6 @@ keywords: ['selection', 'crmscript']
 content_type: tutorial
 ---
 
-# Script-based selections
-
 Script-based selections give you the possibilities above the standard selection functionality. You may for instance use a SearchEngine to populate your search results.
 
 ## The structure of a script-based selection

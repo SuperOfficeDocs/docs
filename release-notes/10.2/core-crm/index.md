@@ -1,6 +1,6 @@
 ---
 uid: news-core-10.2
-title: What's new in SuperOffice 10.2
+title: New and improved Core CRM
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.2
 author: SuperOffice AS - Product and Engineering
@@ -10,8 +10,6 @@ content_type: release-note
 category: core crm
 language: en
 ---
-
-# New and improved Core CRM
 
 * [Document editing in Local settings dialog (10.2.11)][11]
 * [Browser security question for opening files (10.2.11)][11]

@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# Data binding with SoLabel
-
 HTML code segment to illustrate the SoLabel from ContactMainView.ascx file.
 
 ```html

@@ -1,5 +1,6 @@
 ---
-title: retrieve members of a specific selection
+title: How to retrieve members of a specific selection using entities
+sidebarTitle: "Selection members (entities)"
 uid: get_selection_members_entity
 description: How to retrieve members of a specific selection using entities
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ keywords: ['search', 'selectionmembers']
 content_type: howto
 redirect_from: /en/api/netserver/search/selection/entity/get-selection-members-entity
 ---
-
-# How to retrieve members of a specific selection using entities
 
 This example shows how to retrieve a Members Collection using an instance of the `Selection` class.
 

@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/diary/howto/crmscript/track-responses
 ---
 
-# Track responses
-
 Before you can track responses, you need to fetch the main appointment and all its descendants. You can then explore the **invitation status** of each appointment.
 
 In this example, we check and print the response for each attendee using a `String` array. You can look up status codes on the [invitations page][1].

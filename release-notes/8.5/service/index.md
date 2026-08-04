@@ -1,6 +1,6 @@
 ---
 uid: news-service-8.5
-title: Service 8.5 update
+title: Service
 author: SuperOffice AS - Product and Engineering
 date: 12.18.2020
 version: 8.5
@@ -9,8 +9,6 @@ deployment: onsite
 content_type: release-note
 language: en
 ---
-
-# Service
 
 * [Service - Tag your requests (8.5 R01)][1]
 * [Service - Select language when using reply templates in a ticket (8.5 R02)][2]

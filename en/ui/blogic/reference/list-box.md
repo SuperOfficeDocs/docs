@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# List box
-
 This element adds a drop-down menu to your screen.
 
 ## Configuration

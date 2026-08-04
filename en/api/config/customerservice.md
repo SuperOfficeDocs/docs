@@ -1,5 +1,5 @@
 ---
-title: CustomerService element
+title: NetServer CustomerService element
 uid: ns_config_customerservice
 description: NetServer configuration values for accessing Customer Service
 date: 12.08.2021
@@ -8,8 +8,6 @@ keywords: ['config', 'NetServer', 'web.config', 'CustomerService', 'CsCgiUrl', '
 content_type: reference
 redirect_from: /en/api/netserver/config/customerservice
 ---
-
-# NetServer CustomerService element
 
 Configuration values for accessing Customer Service
 

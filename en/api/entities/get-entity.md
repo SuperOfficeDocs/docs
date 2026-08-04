@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/entities/get-entity
 hidden: true
 ---
 
-# How to retrieve an Entity
-
 We need to retrieve an Entity for several purposes, viewing the properties of an Entity is one such purpose.
 
 ## Syntax

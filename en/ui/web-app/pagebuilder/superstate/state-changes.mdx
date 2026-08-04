@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# What causes SuperState to change?
-
 All the user's GET requests and callbacks will lead to a change in the SuperState. A **GET request** is a request for a whole page in the SuperOffice application. For example, if the user is in the Company view and he changes his current view to the Selection view it will result in getting a whole page from the system. In a scenario like this, the SuperState will use the **ConfigurationManager** to get the page config data that describes the selection page and use the **SuperStateManager** to get the selection-data that is shown on the page, either from the cache or the database. The user's GET request resulted in a change in the SuperState, which will hold all the data that was changed in the cache for future reference.
 
 A **callback** is a request that is triggered within a page, for example when you click on the dog ears that appear in the main card.

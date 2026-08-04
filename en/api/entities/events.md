@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/entities/events
 hidden: true
 ---
 
-# Events in Entity objects
-
 Entities trigger two types of events:
 
 * Events triggered when an Entity is saved to the database

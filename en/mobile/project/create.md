@@ -13,8 +13,6 @@ redirect_from: /en/mobile/superoffice-mobile/project/create
 language: en
 ---
 
-# Create project
-
 When you're on the go, you can register new projects directly from Mobile CRM.
 
 ## Steps

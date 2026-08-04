@@ -9,8 +9,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/create-plugin
 ---
 
-# Create your own archive provider
-
 In terms of NetServer terminology, **providers** are plugins created with the use of a `Factory` class. The Factory class handles some of the necessary work related to calling the plugin. When creating an ArciveProvider plugin we make use of the `IPlugin`, which is located in the `SuperOffice.Factory` namespace.
 
 The individual properties of each provider are described in the sections of one or more of the following interfaces. Each interface contains one aspect of the provider. These are contained in the `SuperOffice.CRM.ArchiveLists` namespace and include:

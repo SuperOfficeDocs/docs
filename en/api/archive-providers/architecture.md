@@ -1,5 +1,5 @@
 ---
-title: architecture
+title: Archive providers - architecture
 description: Archive providers - architecture
 author: SuperOffice Product and Engineering
 content_type: concept
@@ -7,8 +7,6 @@ category: api
 topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/architecture
 ---
-
-# Archive providers - architecture
 
 ## Purpose
 

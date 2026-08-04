@@ -1,5 +1,5 @@
 ---
-title: Revoke app
+title: Revoke access given to standard app
 uid: revoke-app
 description: How to revoke access given to a standard application.
 author: Bergfrid Dias
@@ -10,8 +10,6 @@ content_type: howto
 deployment: online
 platform: web
 ---
-
-# Revoke access given to standard app
 
 Revoking access to an application is a manual procedure. It will sever the connection between the application and a database tenant. It will not remove any data from the database.
 

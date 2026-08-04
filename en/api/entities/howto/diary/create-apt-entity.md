@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Create an Appointment entity
-
 Using the `Appointment` [entity][1] exposed in the `SuperOffice.CRM.Entities` namespace is one of the easiest ways to create an appointment, as shown in the example below.
 
 ## Code

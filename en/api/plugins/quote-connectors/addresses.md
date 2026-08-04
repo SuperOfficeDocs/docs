@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/addresses
 ---
 
-# Address Provider
-
 ERP systems often have addresses, and when creating a quote, the CRM system calls these to functions to get the default addresses (the user can change the addresses later if they should happen to be wrong).
 
 ## AddressInfo[] GetAddresses (QuoteAlternativeContextInfo context )

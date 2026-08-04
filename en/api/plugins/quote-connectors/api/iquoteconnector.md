@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/iquoteconnector
 ---
 
-# IQuoteConnector
-
 This is the interface SuperOffice will call to integrate against an ERP system in the realm of quotes and orders.
 SuperOffice uses  capabilities to determine what the connector can and cannot do.
 

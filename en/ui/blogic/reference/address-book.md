@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Address book
-
 This element organizes the address book in a tree view.
 
 ## Functions

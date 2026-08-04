@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/place-order
 ---
 
-# Placing orders into ERP
-
 ![21][img1]
 
 ![22][img2]

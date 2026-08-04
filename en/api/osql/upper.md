@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/upper
 hidden: true
 ---
 
-# Upper
-
 A simple join on the `associate_id` field in the tables `associate` and `contact`:
 
 ```SQL

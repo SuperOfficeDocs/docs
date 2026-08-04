@@ -12,8 +12,6 @@ audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/api/netserver/web-services/howto/flows/rest-create-default-email-flow
 ---
 
-# Create an EmailFlow object
-
 The **CreateDefaultEmailFlow Agent** REST endpoint returns a pre-populated default EmailFlow object, providing both default system values and a comprehensive overview of the object structure.
 
 ## Request

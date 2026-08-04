@@ -7,8 +7,6 @@ keywords: ['quote']
 redirect_from: /en/api/netserver/plugins/quote-connectors/online-quote-connectors/rest-quote-connector-api
 ---
 
-# Online REST quote connector API
-
 **In Development, currently unavailable.**
 
 The REST API is similar to the [SOAP API](./soap-quote-connector-api) - it mostly mirrors the C# [IQuoteConnector interface](../api/iquoteconnector).

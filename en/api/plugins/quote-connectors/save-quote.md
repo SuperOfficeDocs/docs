@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/save-quote
 ---
 
-# Saving the quote
-
 ![18][img1]
 
 The sale is updated with the preferred alternative's total amount when the **Quote** dialog is closed.

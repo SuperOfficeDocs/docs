@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Introduction to data types
-
 A data type tells the computer what something **is** so that it can be processed properly.
 CRMScript has 4 primitive data types and a huge range of complex types defined by the built-in classes.
 

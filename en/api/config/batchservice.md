@@ -11,8 +11,6 @@ platform: win
 redirect_from: /en/api/netserver/config/batchservice
 ---
 
-# NetServer BatchService element
-
 Configuration values for the Windows batch task service (`SoBatchService`).
 
 ```XML

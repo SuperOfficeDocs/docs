@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Form page
-
 This element is a standard root frame used in a lot of screens.
 
 ## Configuration

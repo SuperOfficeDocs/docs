@@ -1,6 +1,7 @@
 ---
 uid: mobile-security
-title: Security
+title: Mobile CRM security in SuperOffice CRM Online
+sidebarTitle: "Mobile CRM security"
 description: Mobile CRM security in CRM Online
 keywords: ['mobile', 'pocket']
 author: Martin Pavlas
@@ -12,8 +13,6 @@ platform: mobile
 redirect_from: /en/mobile/superoffice-mobile/security
 language: en
 ---
-
-# Mobile CRM security in SuperOffice CRM Online
 
 This article describes the security and requirements in SuperOffice CRM Online for Mobile CRM.
 

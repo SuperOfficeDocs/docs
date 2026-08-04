@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Header
-
 This element displays a sub-header.
 
 ## Configuration

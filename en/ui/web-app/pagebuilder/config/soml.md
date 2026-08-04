@@ -12,8 +12,6 @@ platform: web
 deployment: onsite
 ---
 
-# SuperOffice Markup Language (SOML)
-
 The XML markup used is SuperOffice specific and is called **SuperOffice Markup Language** (SOML).
 
 The overall requirements are simple:

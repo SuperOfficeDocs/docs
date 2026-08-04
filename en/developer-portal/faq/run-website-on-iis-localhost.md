@@ -1,5 +1,6 @@
 ---
-title: Run website on IIS localhost
+title: Run a website on your machine, IIS localhost
+sidebarTitle: "Run a site on IIS localhost"
 uid: run_website_on_iis_localhost
 description: Run a website on your machine, IIS localhost
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ content_type: howto
 deployment: online
 platform: web
 ---
-
-# Run a website on your machine, IIS localhost
 
 Many web applications are configured to run a website on your machine, IIS localhost.
 

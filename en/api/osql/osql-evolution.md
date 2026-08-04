@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/osql-evolution
 hidden: true
 ---
 
-# Evolution of NetServer Objectified SQL
-
 Objectified SQL (OSQL) is the heart of NetServer, intercepting and processing all higher-level data layer APIs, and is responsible for interfacing with various versions of each supported SQL dialect.
 
 ## The early years

@@ -1,6 +1,6 @@
 ---
 uid: news-service-9.2
-title: Service 9.2 update
+title: Service
 author: SuperOffice AS - Product and Engineering
 date: 04.28.2021
 version: 9.2
@@ -8,8 +8,6 @@ content_type: release-note
 deployment: onsite
 language: en
 ---
-
-# Service
 
 * [Service - Customer Engagement Platform][1]
 * [Service - Chat widget fixes for 3rd-party cookies][1]

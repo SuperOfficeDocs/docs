@@ -7,8 +7,6 @@ date:
 content_type: reference
 ---
 
-# Saving a request
-
 Every time a ticket is saved, a system script called **Saving a request** will be executed.
 
 You can get the ticket ID by running `getVariable`

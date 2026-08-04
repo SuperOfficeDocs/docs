@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Diary - rows
-
 ## Creating appointments
 
 * [Create appointment (Row)][1]

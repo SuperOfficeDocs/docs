@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/diary/howto/crmscript/update-recurrence
 ---
 
-# Edit repeating follow-ups
-
 You can change either one or all future repetitions of a [recurring follow-up][1].
 
 ## Change one repetition

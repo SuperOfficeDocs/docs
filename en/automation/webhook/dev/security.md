@@ -12,8 +12,6 @@ redirect_from: /en/automation/webhook/security
 language: en
 ---
 
-# Webhook secrets
-
 How do you know that the notification was sent from SuperOffice, and not from some random hacker? A webhook secret is used as an additional layer of security to verify that the webhook sent to the receiver has not been tampered with.
 
 Only when a webhook definition contains a secret value will SuperOffice append an X-SuperOffice-Signature header to each event notification. It is then up to the receiver to verify the signature of the payload before processing the message.

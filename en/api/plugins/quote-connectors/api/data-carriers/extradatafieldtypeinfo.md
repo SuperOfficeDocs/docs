@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/extradatafieldtypeinfo
 ---
 
-# ExtraDataFieldTypeInfo
-
 How should the `ProductExtraDataFieldInfo` value be interpreted?
 
 * String

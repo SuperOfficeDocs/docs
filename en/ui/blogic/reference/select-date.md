@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select Date
-
 This element is used to input a [Date][1].
 
 ## Configuration

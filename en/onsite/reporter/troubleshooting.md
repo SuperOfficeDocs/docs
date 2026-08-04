@@ -8,8 +8,6 @@ deployment: onsite
 platform: web
 ---
 
-# Troubleshooting
-
 ## We get "Error code: 3, Error: System.ApplicationException: Failed to impersonate user 'xxx'. Error message:, Last error; 87 at SuperOffice.Security.Util.WindowsIdentityHelper.LogonUser(String userName, String domain, String password, LogonType logonType)"
 
 Reporter will use the Impersonate User from Archive domain, archive user, and archive password (web.config), and this user must have access to log on to the server where the web client is running. This user or the group they belong to must be a member of the list **Log on locally** in security policy. If this right is missing we will receive error 87 from Windows.

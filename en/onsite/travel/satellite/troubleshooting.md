@@ -1,6 +1,7 @@
 ---
 uid: troubleshooting_satellite
-title: Troubleshoot satellite
+title: Troubleshooting problems with satellite management
+sidebarTitle: "Satellite management issues"
 description: If you have problems with satellite management
 author: SuperOffice Product and Engineering
 keywords: ['travel satellite']
@@ -8,8 +9,6 @@ content_type: howto
 deployment: onsite
 platform: win
 ---
-
-# Troubleshooting problems with satellite management
 
 ## Problems with satellite generation
 

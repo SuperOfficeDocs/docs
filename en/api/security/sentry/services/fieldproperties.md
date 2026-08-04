@@ -10,8 +10,6 @@ area: api-services
 hidden: true
 ---
 
-# FieldProperties (services)
-
 The `FieldProperties` is the mechanism that is provided by NetServer to **check the individual field access rights** of the logged-in user. All the entities of the service layer will have this property.
 
 A typical use of this property is to check the data rights of the user before making a change or before reading a value. We can use this property for many other purposes like to check the data rights and disable a certain button or a read-only field.

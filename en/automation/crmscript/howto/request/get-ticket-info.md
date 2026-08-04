@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/request/howto/crmscript/get-ticket-info
 ---
 
-# Get ticket info
-
 ## Bool load(Integer id)
 
 Brings up the ticket with the given ID. This is always the first step when you want to do anything with an existing ticket.

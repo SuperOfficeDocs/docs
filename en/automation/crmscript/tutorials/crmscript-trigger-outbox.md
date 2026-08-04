@@ -1,14 +1,12 @@
 ---
 uid: crmscript-trigger-outbox-tutorial
-title: Trigger for outbox
+title: Creating a trigger for the outbox
 description: How to use a trigger for the outbox
 author: hjelms
 date: 10.20.2023
 keywords: ['CRMScript']
 content_type: tutorial
 ---
-
-# Creating a trigger for the outbox
 
 This event is called when an email or SMS outbox item is created. All emails or SMSes sent from SuperOffice Service will pass through the outbox. The event is named [Outbound email or SMS created][1]. The `EventData` instance will contain several input values relevant to the context.
 

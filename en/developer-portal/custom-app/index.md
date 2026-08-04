@@ -1,5 +1,5 @@
 ---
-title: Custom applications
+title: Custom apps for SuperOffice CRM Online
 uid: custom-app
 description: About custom apps for SuperOffice CRM Online
 author: Margrethe Romnes
@@ -9,8 +9,6 @@ content_type: concept
 deployment: online
 platform: web
 ---
-
-# Custom apps for SuperOffice CRM Online
 
 Custom applications are one-off customizations for your company or a customer's company only. These are not available in the SuperOffice App Store.
 

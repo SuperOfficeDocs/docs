@@ -1,5 +1,6 @@
 ---
-title: Set user-defined list item value
+title: How to set a user-defined list item on a Udef field
+sidebarTitle: "Set a Udef list item value"
 uid: set_udef_listitem_value_entity
 description: How to set a user-defined list item on a Udef field using entities.
 author: Tony Yates
@@ -13,8 +14,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/custom-objects/set-udef-listitem-value
 hidden: true
 ---
-
-# How to set a user-defined list item on a Udef field
 
 This example demonstrates how to set a user-defined list item value on a user-defined field on a given **contact**.
 

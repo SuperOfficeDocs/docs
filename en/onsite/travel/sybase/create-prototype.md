@@ -9,8 +9,6 @@ deployment: onsite
 platform: win
 ---
 
-# Create prototype for Sybase
-
 To set up an update prototype for Sybase, you need to set up an Area data source on the computer where the prototype is generated. This will in most cases be the same computer where the Travel Gateway is running.
 
 ![1 -screenshot][img1]

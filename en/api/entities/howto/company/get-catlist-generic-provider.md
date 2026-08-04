@@ -1,6 +1,7 @@
 ---
 uid: get-category-list-generic-provider
 title: Get a CategoryList through generic list providers
+sidebarTitle: "CategoryList via generic providers"
 description: Get a CategoryList through generic list providers
 keywords: ['category', 'list provider', 'CategoryList']
 author: Tony Yates
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/company/get-catlist-generic-provider
 hidden: true
 ---
-
-# Get a CategoryList through generic list providers
 
 ```csharp
 using SuperOffice;

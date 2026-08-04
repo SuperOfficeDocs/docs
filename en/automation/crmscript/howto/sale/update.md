@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/sale/howto/crmscript/update
 ---
 
-# Update a sale
-
 ```crmscript
 NSSaleAgent saleAgent;
 NSSaleEntity sale = saleAgent.GetSaleEntity(4);

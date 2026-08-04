@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select Message
-
 This element lets the user select a message from a ticket.
 
 ## Configuration

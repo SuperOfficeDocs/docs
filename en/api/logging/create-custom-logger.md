@@ -1,6 +1,6 @@
 ---
 uid: create_custom_logger
-title: Building your own logger
+title: Create a custom logger
 description: How to create a custom logger,
 author: xt1
 date: 05.07.2021
@@ -8,8 +8,6 @@ keywords: ['logging']
 content_type: howto
 redirect_from: /en/api/netserver/logging/create-custom-logger
 ---
-
-# Create a custom logger
 
 To build your own logger:
 

@@ -21,7 +21,7 @@ language: en
 
 ## Create a new Markdown file
 
-This creates a single `.md` file with a standard metadata header and placeholder H1 heading.
+This creates a single `.md` file with a standard metadata header. The frontmatter `title` is the page's only title — there's no H1 in the body (see [Metadata][6]).
 
 The name you enter becomes the file name in kebab case and the `uid` in kebab case.
 

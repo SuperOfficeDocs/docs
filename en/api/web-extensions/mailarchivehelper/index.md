@@ -8,8 +8,6 @@ platform: web
 deployment: onsite
 ---
 
-# MailArchiveHelper
-
 The `MailArchiveHelper` supports both web and Windows versions of SuperOffice. It is included with the Outlook mail link.
 
 ![diagram][img1]

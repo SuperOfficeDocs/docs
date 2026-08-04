@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Planner
-
 This element will display a planner (day schedule style).
 
 It can contain one or more columns, which may represent multiple days, multiple people, and so on.

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Radio buttons
-
 Adds radio buttons to your screen.
 
 ## Configuration

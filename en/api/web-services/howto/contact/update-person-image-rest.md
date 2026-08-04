@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/contact/update-person-image-rest
 ---
 
-# Update the person's picture
-
 ```javascript
 id = 123;
 content = ReadAllBytes("BillGates.jpg")

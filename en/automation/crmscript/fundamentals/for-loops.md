@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Loops - for
-
 A `for` loop is a control structure for repeating a block of code a number of times. It will run as long as the condition given is true.
 
 The definition has 5 parts:

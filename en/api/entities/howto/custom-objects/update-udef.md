@@ -1,5 +1,5 @@
 ---
-title: Update user-defined field
+title: How to update a Udef field
 uid: update_udef_entity
 description: How to update a user-defined field
 author: Tony Yates
@@ -13,8 +13,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/custom-objects/update-udef
 hidden: true
 ---
-
-# How to update a Udef field
 
 The contact has a property named `UdefHelper`, which lets you handle user-defined fields easily.
 

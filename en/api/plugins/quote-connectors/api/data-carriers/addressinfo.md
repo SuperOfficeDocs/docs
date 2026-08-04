@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/addressinfo
 ---
 
-# AddressInfo
-
 ## string AddressField1
 
 Address line 1

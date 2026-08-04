@@ -11,8 +11,6 @@ redirect_from: /en/api/netserver/rows/customsearch
 hidden: true
 ---
 
-# CustomSearch queries
-
 Both entity and row types contain an inner class called **CustomSearch**. CustomSearch queries allow you to go above and beyond that of index queries.
 
 ## Simple CustomSearch

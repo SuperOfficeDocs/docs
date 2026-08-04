@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select appointment
-
 This element can be used to select a CRM appointment.
 
 ## Configuration

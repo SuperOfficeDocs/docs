@@ -16,8 +16,6 @@ index: true
 language: en
 ---
 
-# Inline CRMScript
-
 Inline CRMScript is our parallel to ASPX or PHP, where CRMScript is inlined into an HTML document. This allows for large portions of the document to be pure HTML (without having to use print-statements), and then inlining CRMScript using a special tag to "switch mode" between HTML and CRMScript. Here is an example of a very simple inlined CRMScript:
 
 ![CRMScript -screenshot][img1]

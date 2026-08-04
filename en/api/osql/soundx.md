@@ -1,5 +1,5 @@
 ---
-title: soundx
+title: Soundex comes to NetServer
 description: Soundex comes to NetServer
 author: Marek Vokáč
 date: 05.07.2012
@@ -9,8 +9,6 @@ platform: web
 redirect_from: /en/api/netserver/osql/soundx
 hidden: true
 ---
-
-# Soundex comes to NetServer
 
 As you may or may not know, we have a "sounds-like" algorithm in the SuperOffice products. It's our adaptation of a fairly well-known algorithm called [Metaphone][1], which takes a string of arbitrary length and returns a transformed version of a fixed, shorter length. The transformation is such that strings that sound similar (are phonetically approximately equal) will result in identical transformed strings.
 

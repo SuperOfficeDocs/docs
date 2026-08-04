@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select ticket status
-
 This element adds **radio buttons** with all statuses. It also adds a calendar field to pick the date and time for postponed requests.
 
 ## Configuration

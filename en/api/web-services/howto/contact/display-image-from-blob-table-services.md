@@ -1,6 +1,7 @@
 ---
 uid: display-image-from-blob-ws
 title: How to display an image from the Blob table (services)
+sidebarTitle: "Display image from Blob table (services)"
 description: How to display an image from the Blob table using services
 author: Bergfrid Skaara Dias
 date: 11.04.2021
@@ -9,8 +10,6 @@ redirect_from:
   - /en/contact/howto/services/display-image-from-blob-table-services
   - /en/api/netserver/web-services/howto/contact/display-image-from-blob-table-services
 ---
-
-# How to display an image from the Blob table (services)
 
 All pictures are stored in the `BinaryObject` table in the database. You can retrieve such information using `SoCore` and `SoDatabase` DLLs.
 

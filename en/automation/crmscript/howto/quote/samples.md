@@ -1,6 +1,6 @@
 ---
 uid: crmscript-quote-samples
-title: Quotes
+title: Samples
 description: Working with quotes in CRMScript
 keywords: ['sale', 'quote', 'quoteconnection']
 author: Bergfrid Dias
@@ -9,8 +9,6 @@ version: 10
 content_type: howto
 redirect_from: /en/quote/howto/crmscript/samples
 ---
-
-# Samples
 
 ## Find available quote connections
 

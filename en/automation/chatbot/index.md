@@ -8,8 +8,6 @@ content_type: concept
 index: true
 ---
 
-# Chatbot overview
-
 ## Chatbot needs AI License
 
 Chatbot functionality in SuperOffice requires the AI Platform license and the Chatbot Connector license. This enables the **Chatbot** tab in chat administration.

@@ -9,8 +9,6 @@ deployment: onsite
 redirect_from: /en/api/netserver/search/full-text-search
 ---
 
-# Full-text search
-
 SQL Server 2005, 2008, 2012, and 2014 only. We plan to implement it on Oracle (no yet sure which versions).
 
 This is enabled for text.text and some Service fields. It requires that these [enable fulltext search][1] is turned on when database is created (or later, but before you run ServerSetup/DbSetup)

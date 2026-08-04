@@ -10,8 +10,6 @@ language: en
 redirect_from: /en/diary/tutorials/rss-feed-vb/index
 ---
 
-# Tutorial - generate RSS feed in VB.Net
-
 ## Step 1: Introduction
 
 The example handles user authentication with forms authentication mode using a custom login page. Based on the provided credentials, a link to the RSS feed is generated.

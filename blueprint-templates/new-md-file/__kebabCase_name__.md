@@ -10,4 +10,3 @@ content_type: concept # concept | howto | reference
 language: en
 ---
 
-# {{name}}

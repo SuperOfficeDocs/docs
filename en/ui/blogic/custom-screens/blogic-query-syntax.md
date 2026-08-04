@@ -7,8 +7,6 @@ date:
 content_type: concept
 ---
 
-# Query syntax
-
 Custom screens use a line-based query syntax that is specific to SuperOffice. You don't have to construct complicated SQL queries, which may vary from one database vendor to another.
 
 A query is defined by adding select-lines, where-lines, and order-lines. Joins are defined by the fields used in the query.

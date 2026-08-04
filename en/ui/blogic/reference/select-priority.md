@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select priority
-
 This element is used to select ticket priority.
 
 ## Configuration

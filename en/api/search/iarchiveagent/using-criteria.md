@@ -1,5 +1,6 @@
 ---
 title: How to use multiple criteria with the ArchiveAgent
+sidebarTitle: "Multiple criteria (ArchiveAgent)"
 uid: archiveagent_multi_criteria
 description: How to use multiple criteria with the ArchiveAgent
 author: SuperOffice Product and Engineering
@@ -9,8 +10,6 @@ category:
 area: api-services
 redirect_from: /en/api/netserver/search/iarchiveagent/using-criteria
 ---
-
-# How to use multiple criteria with the ArchiveAgent
 
 We have previously seen [how to set a single archive restriction][1] to limit the number of rows returned by the agent.
 

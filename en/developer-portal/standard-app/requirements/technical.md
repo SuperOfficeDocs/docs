@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# Technical requirements
-
 Many problems with applications are caused by incorrect configuration.
 
 User experience must not degrade on large sites.

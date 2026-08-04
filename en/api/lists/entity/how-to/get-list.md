@@ -8,8 +8,6 @@ redirect_from: /en/api/netserver/lists/entity/how-to/get-list
 hidden: true
 ---
 
-# Retrieve a list
-
 ## Example 1 - print
 
 The following example retrieves 2 typed lists and prints them using the `PrintMdoProvider` method (shown at the end).

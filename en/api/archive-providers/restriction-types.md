@@ -1,5 +1,5 @@
 ---
-title: Restriction Types
+title: Archive Provider Restriction Types
 description: Describes available archive provider column data types and lists their available operators.
 author: SuperOffice Product and Engineering
 keywords: ['RestrictionType', 'restrict archive provider', 'archive provider restriction']
@@ -8,8 +8,6 @@ category: api
 topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/restriction-types
 ---
-
-# Archive Provider Restriction Types
 
 The fields in an archive provider's restriction are constrained using operators.
 The restrictions used vary according to the ArchiveColumnInfo.RestrictionType specified by the archive provider in its available columns.

@@ -9,8 +9,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/extenders
 ---
 
-# Extenders
-
 If a provider has a more or less fixed query and fetches data from a table that no-one else is interested in, then it would make sense for it to declare columns, set up the query, and perform all the processing directly. However, this is a fairly rare situation for providers made by SuperOffice, since we usually work against general tables like contact, person, or appointment. Partners making single-use solutions are more likely to be in this situation.
 
 In any case, if there is reason to believe that the formatting, restriction, and query logic related to one table will be used in more than one provider, then it is important to write it in a reusable way. This is where the concept of **Extender** comes in, defined by the `IArchiveExtender` interface.

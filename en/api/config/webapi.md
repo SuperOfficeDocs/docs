@@ -1,5 +1,5 @@
 ---
-title: WebApi element
+title: NetServer WebApi element
 uid: ns_config_webapi
 description: NetServer WebApi element
 date: 12.09.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/webapi
 ---
-
-# NetServer WebApi element
 
 Configuration values related to the [WebAPI][2] web services.
 

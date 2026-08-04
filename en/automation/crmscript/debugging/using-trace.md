@@ -20,8 +20,6 @@ redirect_from:
   - /sv/automation/crmscript/learn/tracing
 ---
 
-# Using trace
-
 SuperOffice CRM Online has a built-in tracing feature. When enabled, each run of a script or macro is recorded and stored in a [log][1]. You can investigate the behavior of the script step by step by rewinding and fast-forwarding through the recording. You can also inspect the variables at any point in the run.
 
 ## Tracing tab

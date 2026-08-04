@@ -11,8 +11,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/encoded-values
 ---
 
-# Encoded values
-
 With core NetServer, the archive row column data contains a `RawValue` property of type `Object`, and can safely be cast to the appropriate type.
 
 Using NetServer web services, it depends on whether you are using SuperOffice proxies or not. If you are, the `RawValue` property contains the column value. If not, only the `DisplayValue` exists.

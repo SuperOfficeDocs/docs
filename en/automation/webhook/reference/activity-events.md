@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Activity events
-
 These events are fired when appointment/document rows are changed:
 
 * `activity.created`

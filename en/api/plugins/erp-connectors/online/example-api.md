@@ -9,8 +9,6 @@ platform: web
 redirect_from: /en/api/netserver/plugins/erp-connectors/online/example-api
 ---
 
-# ERP Connector API Changes
-
 When it comes to the ERP Connector web service, the latest API changes do not affect the existing ERP Connector APIs. Rather, the API has added a new interface, `IIntegrationServiceConnectorAuth` that has one method, `Authenticate`.
 
 ```csharp

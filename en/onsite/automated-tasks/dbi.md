@@ -11,8 +11,6 @@ category: service
 redirect_from: /en/service/automated-tasks/dbi
 ---
 
-# dbi
-
 Used for executing your dbi tasks. Can be executed with parameters to see more debug information.
 
 **Usage:** `dbi [OPTION] <domain>`

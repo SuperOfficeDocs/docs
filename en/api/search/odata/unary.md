@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/search/odata/unary
 ---
 
-# Unary time-periods
-
 ## Unary day
 
 ### Before today

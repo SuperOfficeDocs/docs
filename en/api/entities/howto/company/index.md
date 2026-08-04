@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Contact - entity
-
 * [Create contact][1]
 * [Create contact (in entity)][2]
 * [Create contact (in collection)][3]

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Tree explorer
-
 This element lists information in a tree view. You can expand and collapse the tree.
 
 ## Configuration

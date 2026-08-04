@@ -1,5 +1,5 @@
 ---
-title: Expander Data Exchange
+title: SuperOffice Expander Data Exchange
 uid: expander_data_exchange
 description: What is SuperOffice Expander Data Exchange
 author: SuperOffice Product and Engineering
@@ -7,8 +7,6 @@ date: 02.21.2022
 keywords: ['Expander Data Exchange', 'ODBCAgent', 'SuperOfficeAgent', 'LDAPAgent']
 content_type: concept
 ---
-
-# SuperOffice Expander Data Exchange
 
 The SuperOffice Expander Data Exchange (EDE, formerly DBI) module is essentially an asynchronous service for updating/copying data to/from SuperOffice Service and some other source. Thanks to the columns `dbi_key` and `dbi_agent_id` on several central tables in CS, we can keep track of an entry's primary key in another system, which allows us to synchronize entities (keep track of which local entities correspond to the ones in the other system).
 

@@ -10,8 +10,6 @@ deployment: onsite
 redirect_from: /en/authentication/onsite/sosession/switch
 ---
 
-# Switching between sessions
-
 Sometimes it is necessary to [suspend one session][1] and switch to another. The following example shows how this is done.
 
 ```csharp

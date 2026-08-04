@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/howto/add-strings
 hidden: true
 ---
 
-# Adding strings
-
 ```SQL
 SELECT p.Firstname + " " + p.Lastname FROM CRM.person p WHERE (p.person_id = 16)
 ```

@@ -1,6 +1,6 @@
 ---
 uid: news-marketing-8.5
-title: Marketing 8.5 update
+title: Marketing
 description: Release notes. What's new in SuperOffice Marketing 8.5
 author: SuperOffice AS - Product and Engineering
 date: 12.18.2020
@@ -10,8 +10,6 @@ deployment: onsite
 content_type: release-note
 language: en
 ---
-
-# Marketing
 
 * [Marketing - Additional form templates (8.5 R02)][2]
 * [Marketing - Use Google reCAPTCHA for web forms (8.5 R04)][4]

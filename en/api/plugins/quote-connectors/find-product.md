@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/find-product
 ---
 
-# Product search provider
-
 There are two ways a product can be searched for:
 
 * The simple, keyword-driven search, where the user simply types one or more words

@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# Globalization
-
 In this section, we will discuss how the CRM.web application handles globalization issues. The problem with globalization is to display the same page in different languages without a lot of extra work.
 
 ## The mechanism behind providing the resources for a page

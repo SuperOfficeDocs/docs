@@ -15,8 +15,6 @@ redirect_from:
 language: en
 ---
 
-# Update contact or company
-
 ## Steps
 
 1. Locate and open the company or contact.

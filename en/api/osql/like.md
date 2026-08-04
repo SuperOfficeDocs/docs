@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/like
 hidden: true
 ---
 
-# LIKE
-
 A simple like-clause:
 
 ```SQL

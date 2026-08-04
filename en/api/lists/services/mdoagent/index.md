@@ -1,5 +1,6 @@
 ---
-title: web-service-mdo-endpoint
+title: Multi-Departmental Organizational (MDO) API
+sidebarTitle: "MDO API"
 description: Describes Multi-departmental organization lists (MDO) APIs
 author: AnthonyYates
 keywords: ['list', 'MDO']
@@ -9,8 +10,6 @@ category: list
 area: api-services
 redirect_from: /en/api/netserver/lists/services/mdoagent/index
 ---
-
-# Multi-Departmental Organizational (MDO) API
 
 ## Available MDO API Endpoints
 

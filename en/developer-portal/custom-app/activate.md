@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# First-time activation
-
 Congratulations, your custom application is ready!
 
 By activating a custom application, the owner of the tenant agrees to [subscribe to Development Tools][2] (formerly Expander Services) or the CRM Suite Core plan.

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select Time Span
-
 This element adds a text input encoding the time-span in a string and a popup that lets you select time-spans with drop-down menus for hours, minutes, and so on.
 
 ## Configuration

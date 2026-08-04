@@ -13,8 +13,6 @@ redirect_from:
 hidden: true
 ---
 
-# Sale - entity
-
 * [Link sale to follow-up][1]
 
 [1]: ./link-sale-to-appointment

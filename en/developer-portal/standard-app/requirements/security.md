@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# Security requirements
-
 It is paramount that you keep data secure. Security is our topmost concern.
 
 If needed, we may go back in time to see when and by whom an operation was performed.

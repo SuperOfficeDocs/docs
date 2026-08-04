@@ -1,14 +1,13 @@
 ---
 uid: crmscript-status-reminder-notification-tutorial
-title: Automated reminder email
+title: Using a "Waiting for customer" status with automated reminder email
+sidebarTitle: "Automated reminder for a status"
 description: Using a "Waiting for customer" status with automated reminder email
 author: kronicz
 date: 10.03.2022
 keywords: ['CRMScript']
 content_type: tutorial
 ---
-
-# Using a "Waiting for customer" status with automated reminder email
 
 A frequently demanded feature is to have Service reminding the end customer when we are waiting for the response to a request. This is not out-of-the-box functionality, but quite simple to configure. The functionality will behave like this:
 

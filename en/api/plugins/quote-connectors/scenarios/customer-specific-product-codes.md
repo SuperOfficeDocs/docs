@@ -1,5 +1,6 @@
 ---
 title: Dealing with customer-specific product codes
+sidebarTitle: "Customer-specific product codes"
 uid: quote_scenario_cust_product_codes
 description: Quote connector scenario - dealing with customer-specific product codes
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ keywords: ['quote']
 content_type: tutorial
 redirect_from: /en/api/netserver/plugins/quote-connectors/scenarios/customer-specific-product-codes
 ---
-
-# Dealing with customer-specific product codes
 
 Some, typically large, customers demand that you send quotes to them using the customer's product codes. How should you go about solving this with SuperOffice?
 

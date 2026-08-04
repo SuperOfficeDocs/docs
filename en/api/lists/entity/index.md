@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/lists/entity/index
 hidden: true
 ---
 
-# SoListProviders
-
 This section will expose the **NetServer List layer** which can be used to access and use the various lists in NetServer in your own applications. It will give you an idea about different list providers and places where each of them becomes important.
 
 We have categorized lists according to the different providers present in the NetServer List layer since the output varies with the list provider.

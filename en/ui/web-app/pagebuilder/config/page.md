@@ -10,8 +10,6 @@ platform: web
 deployment: onsite
 ---
 
-# Page config files
-
 As the name implies, this is the config that will contain the elements of the page. A page configuration file defines the UI structure of a page or dialog, as well as declares what data handlers are loaded for data binding and processing. A page configuration defines the layout of panels on a page, which in turn contain cards, views, and controls.
 
 Below is a diagram that shows all the components of a page.

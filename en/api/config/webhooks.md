@@ -1,5 +1,5 @@
 ---
-title: Webhooks element
+title: NetServer Webhooks element
 uid: ns_config_webhooks
 description: NetServer configuration related to webhooks - events broadcast to remote servers.
 date: 12.17.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/webhooks
 ---
-
-# NetServer Webhooks element
 
 Configure values related to webhooks - events broadcast to remote servers. It is possible to configure custom proxy settings. See the [CustomProxy section][2] for details.
 

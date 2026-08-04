@@ -16,8 +16,6 @@ index: true
 language: de
 ---
 
-# Webhooks-Panel
-
 Das Webhooks-Panel ist der zentrale Ort für Administratoren und Berater, um Webhook-Abonnements in SuperOffice zu verwalten. Sie finden es unter **Einstellungen und Verwaltung** > **System design** > **Webhooks**.
 
 Von diesem Panel aus können Sie den Status aller Webhooks auf einen Blick sehen, neue Abonnements erstellen, vorhandene bearbeiten und Webhooks wiederherstellen, die aufgrund von Lieferfehlern automatisch deaktiviert wurden.

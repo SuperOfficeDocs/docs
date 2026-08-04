@@ -1,5 +1,6 @@
 ---
-title: How to install the Certificate snap-in
+title: How to install the Certificate snap-in on Windows
+sidebarTitle: "Install the Certificate snap-in"
 uid: add_certificate_snap_in
 description: How to install the Certificate snap-in on Windows
 author: SuperOffice Product and Engineering
@@ -9,8 +10,6 @@ deployment: online
 platform: web
 redirect_from: /en/authentication/online/certificates/add-certificate-snap-in
 ---
-
-# How to install the Certificate snap-in on Windows
 
 The **Certificate** snap-in is a useful tool when configuring certificates.
 

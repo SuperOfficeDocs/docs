@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# How to create an invitation (data layer)
-
 After creating an appointment you may need to [invite members][2]. The following example demonstrates how this is done.
 
 ```csharp

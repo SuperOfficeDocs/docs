@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# Web.Config configuration overview
-
 This section will present the technical details to understand what is required to get the example running on your machine. This section also explains how the example application works.
 
 **Key sections:**

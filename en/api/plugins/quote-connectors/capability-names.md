@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/capability-names
 ---
 
-# Capability names
-
 | Capability | Description |
 |---|---|
 | iproductprovider_provide_cost | Can the Product Provider fill in the Cost price value?<br />Determines if the Cost field is shown in the GUI. |

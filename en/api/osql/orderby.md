@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/orderby
 hidden: true
 ---
 
-# OrderBy
-
 When retrieving data, it is necessary to order the data.
 
 ```SQL

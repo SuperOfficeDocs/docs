@@ -1,6 +1,6 @@
 ---
 uid: news-api-10.2
-title: What's new in SuperOffice 10.2
+title: API changes
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.2
 keywords: ['API changes']
@@ -11,8 +11,6 @@ content_type: release-note
 category: api
 language: en
 ---
-
-# API changes
 
 ## New Archive providers
 

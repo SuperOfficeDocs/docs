@@ -11,8 +11,6 @@ content_type: reference
 deployment: online
 ---
 
-# Application settings
-
 ![Application settings in the SuperOffice Developer Portal -screenshot][img1]
 
 | Setting | Description | How-tos | Read more |

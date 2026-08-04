@@ -1,6 +1,6 @@
 ---
 uid: api-person-entity
-title: Person - entity
+title: Contact - entity
 description: Working with contacts (person) in API with entities.
 keywords: ['person', 'contact', 'entity', 'API']
 author: Bergfrid Skaara Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/contact/index
 hidden: true
 ---
-
-# Contact - entity
 
 * [Get persons from contact][1]
 * [Update person entity][2]

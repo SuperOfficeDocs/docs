@@ -1,6 +1,6 @@
 ---
 uid: set-preferences-datalayer
-title: Set preferences
+title: SetPreference
 description: How to set preferences using SoPreference at the data layer
 keywords: ['preference', 'SoPreference']
 author: digitaldiina
@@ -14,8 +14,6 @@ language: en
 redirect_from: /en/admin/user-preferences/howto/set-preferences-sopreference
 hidden: true
 ---
-
-# SetPreference
 
 To find an overview of the available references, we may use methods such as `GetSections()` and `GetKeys()` exposed in the `SoPreference` class.
 

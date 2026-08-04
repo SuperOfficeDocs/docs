@@ -8,8 +8,6 @@ date: 29.10.2024
 content_type: howto
 ---
 
-# Logging in CRMScript
-
 By default, CRMScript has its own [log][1] method, which takes a String message and saves it in [log_events][2].
 
 The table has a few more fields that can be utilized, but it requires a helper-method that inserts the data into the table, using the SearchEngine:

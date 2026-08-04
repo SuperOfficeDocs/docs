@@ -8,8 +8,6 @@ platform: web
 deployment: onsite
 ---
 
-# IDataHandler
-
 The IDataHandler interface is responsible for loading, saving, deleting, clearing, and creating new namespaces to the corresponding data source. A new `IDataHandler` instance will be created from the configuration values in the XML base file by the PluggableHandler, and necessary information will also be passed to it during the instantiation so that it knows which data source to connect to.
 
 All implementations of this interface must provide a constructor taking an `IDictionary` argument which contains pairs of string type key-value pair to provide necessary information about the data source. In theory, a single data handler could expose multiple objects, but in practice, each data handler tends to expose a single object via a single carrier name.

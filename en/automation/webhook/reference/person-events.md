@@ -9,7 +9,6 @@ content_type: reference
 category: automation
 topic: webhook
 ---
-# Person webhook events
 
 These webhook events are fired when person rows are changed:
 

@@ -10,8 +10,6 @@ platform: web, win
 deployment: onsite
 ---
 
-# Find contact from email
-
 ```vb
 Public Function GetMailArchiveHelper() As MailArchiveHelper
   Dim helper As New MailArchiveHelper()

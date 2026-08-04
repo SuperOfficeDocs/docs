@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/quote/howto/crmscript/products
 ---
 
-# Products
-
 ## Fetch products
 
 ### NSProduct GetProduct(Integer quoteConnectionId, String eRPProductKey)

@@ -7,6 +7,4 @@ date:
 topic: reference
 ---
 
-# Select sale
-
 This element can be used to select a Sale.

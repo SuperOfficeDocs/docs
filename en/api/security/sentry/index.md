@@ -8,8 +8,6 @@ content_type: concept
 hidden: true
 ---
 
-# Sentry
-
 What is sentry? As the name implies it acts as **the watchdog or traffic cop that keeps an eye on all the access to data in the SuperOffice database**.
 
 Each object in NetServer has an associated sentry that is responsible for enforcing rules such as "private appointments are visible only to its owner". Sentry rules focus on ownership, group membership, and user-level access.

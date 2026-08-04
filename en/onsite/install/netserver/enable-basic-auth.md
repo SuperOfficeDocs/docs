@@ -1,5 +1,5 @@
 ---
-title: SuperOffice username and password
+title: Configure Basic Authentication in IIS
 uid: webapi_auth_basic
 description: Web API authentication anon
 author: SuperOffice Product and Engineering
@@ -7,8 +7,6 @@ date:
 keywords: ['authentication', 'basic']
 content_type: concept
 ---
-
-# Configure Basic Authentication in IIS
 
 ## IIS Configuration
 

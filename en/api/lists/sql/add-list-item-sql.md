@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Adding a list item
-
 Adding a list item to a list requires 2, possibly 3, possibly 4 things:
 
 1. Insert the list-item into the item table (e.g. Category).

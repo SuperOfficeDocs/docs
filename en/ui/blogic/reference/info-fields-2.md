@@ -1,13 +1,11 @@
 ---
-title: nfo Fields v2
+title: Info Fields v2
 uid: blogic_info_fields_2
 description: Info Fields v2
 author:
 date:
 topic: reference
 ---
-
-# Info Fields v2
 
 This element will display a grid of information fields where the values can be ordered in groups. The information is based on a query to the database.
 

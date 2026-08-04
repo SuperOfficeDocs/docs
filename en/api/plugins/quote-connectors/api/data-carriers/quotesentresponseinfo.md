@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quotesentresponseinfo
 ---
 
-# QuoteSentResponseInfo
-
 Return value on Quote Sent.
 
 ## QuoteVersionResponseInfo QuoteData

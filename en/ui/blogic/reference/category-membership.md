@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Category membership
-
 This element is used to visualize (and change) which category a user belongs to.
 
 ## Configuration

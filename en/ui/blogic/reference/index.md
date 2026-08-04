@@ -1,5 +1,5 @@
 ---
-title: Reference
+title: Element reference
 uid: blogic_elements
 description: Element reference
 author:
@@ -7,8 +7,6 @@ date:
 keywords: ['bLogic']
 topic: reference
 ---
-
-# Element reference
 
 Screen elements are HTML-like elements that can be used in a bLogic screen.
 

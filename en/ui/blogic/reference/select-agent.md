@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select agent (associate)
-
 This element is a drop-down menu that lets the user select a company agent or an associate.
 
 ## Configuration

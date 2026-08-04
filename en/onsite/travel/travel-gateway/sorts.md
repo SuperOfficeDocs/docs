@@ -1,5 +1,5 @@
 ---
-title: SORTS
+title: SuperOffice Remote Travel Server (SORTS)
 description: SuperOffice Remote Travel Server (SORTS)
 author: SuperOffice Product and Engineering
 date:
@@ -7,8 +7,6 @@ content_type: concept
 deployment: onsite
 platform: win
 ---
-
-# SuperOffice Remote Travel Server (SORTS)
 
 This program will process received wishlists from Travel users. A wishlist contains requests for other people's documents.
 

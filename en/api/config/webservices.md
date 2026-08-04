@@ -1,5 +1,5 @@
 ---
-title: WebServices element
+title: NetServer WebServices element
 uid: ns_config_webservices
 description: NetServer WebServices element
 date: 12.17.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/webservices
 ---
-
-# NetServer WebServices element
 
 Configuration section used to define SuperOffice CRM web service settings.
 

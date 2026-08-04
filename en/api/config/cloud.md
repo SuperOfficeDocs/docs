@@ -1,5 +1,6 @@
 ---
-title: Cloud element
+title: NetServer Cloud element (SuperOffice only)
+sidebarTitle: "Cloud element"
 uid: ns_config_cloud
 description: NetServer configuration for SuperOffice CRM Online.
 date: 12.17.2021
@@ -10,8 +11,6 @@ deployment: online
 platform: web
 redirect_from: /en/api/netserver/config/cloud
 ---
-
-# NetServer Cloud element (SuperOffice only)
 
 Configuration for SuperOffice CRM Online. Used by SuperOffice only.
 

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select Slevel
-
 This element adds a drop-down menu containing the available security levels (internal and external).
 
 ## Configuration

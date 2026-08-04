@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Get the associate list
-
 This is the mechanism of retrieving the associates from the database.
 
 ## Example 1

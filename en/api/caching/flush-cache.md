@@ -9,8 +9,6 @@ content_type: concept
 redirect_from: /en/api/netserver/caching/flush-cache
 ---
 
-# Flush Cache
-
 When flush is appended to the browser's URL, it triggers a procedure that initially verifies if you hold the General Admin status.
 If confirmed as an [General Administrator][1], the system executes the DiagnosticsAgent FlushCaches, which purges the caches for:
 

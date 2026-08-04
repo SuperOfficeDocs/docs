@@ -3,26 +3,39 @@
 Syncs frontmatter `title` to a page's H1 (H1 as master), then removes the
 now-redundant H1 line from the body.
 
-PROTOTYPE for #165 (post-launch improvements milestone) - built and run
-once, by hand, for a single folder (en/online/) during the #178 nav-tuning
-pass. It has NOT been generalized or hardened for repo-wide use:
+Originally a PROTOTYPE for #165, built and run once, by hand, for a single
+folder (en/online/) during the #178 nav-tuning pass, then reused as-is
+across the 25-folder Guides-tab scope (#179/#180). Hardened for repo-wide
+use ahead of the remaining #165 rollout:
 
-  - No handling for redirect-only frontmatter (Variant B) - assumes every
-    file has a real title + H1.
-  - Titles containing a YAML-significant character (a colon followed by a
-    space) will break parsing unless manually quoted afterward - this
-    happened twice in the en/online/ run and was fixed by hand, not by
-    the script.
-  - Does not propose or apply a `sidebarTitle` for long resulting titles -
-    that was done by hand per file for en/online/, since picking a good
-    short label is a judgment call, not a mechanical one.
-  - Assumes `mode: custom` pages should be skipped entirely (they render
-    their own <h1> and have no frontmatter/H1 duplication to fix).
-  - Assumes exactly one H1 per file and removes only the first match.
-
-Before reusing this on another folder: re-verify all of the above against
-that folder's actual content, and expect to still do a manual sidebarTitle
-pass afterward for any title that gets long from the H1 swap.
+  - Skips files with `generated: true` in frontmatter (pipeline-managed
+    content - editing committed output here would drift from the
+    generator on the next regen; fix generators at the source instead).
+  - Reads/writes UTF-8 BOM-carrying files correctly (`utf-8-sig`,
+    preserving the BOM byte-for-byte on write) instead of silently
+    mismatching the frontmatter regex or corrupting the file - same fix
+    already applied in `reformat-keywords.py` for this exact corpus.
+  - Warns (does not silently skip) when a file has more than one H1 -
+    only the first is stripped; the rest need manual review.
+  - Still has no handling for redirect-only frontmatter (Variant B) -
+    such files simply have no `title`/H1 to match and are skipped as a
+    side effect of the existing regex checks, not by an explicit check.
+  - Still does not propose or apply a `sidebarTitle` for long resulting
+    titles - picking a good short label is a judgment call, done by hand
+    per file, same as #179/#180.
+  - Still assumes `mode: custom` pages should be skipped entirely (they
+    render their own <h1> and have no frontmatter/H1 duplication to fix).
+  - The H1 detection regex (`^#\s+`) is not code-fence-aware. A `#`-prefixed
+    CLI/HTTP/Python comment line inside a fenced code block reads as a
+    heading. Harmless on a file's first run (the real H1 always sorts
+    first, gets stripped, comments are left alone) - BUT DO NOT re-run
+    this tool a second time on a folder already converted: with the real
+    H1 gone, the first leftover code-fence comment becomes the new
+    "first H1 match" and the tool will rewrite `title` to match a code
+    comment and delete that line from the sample. Confirmed harmless
+    only because every group in this repo was run exactly once; verify
+    by hand (or by "more than one H1" warnings before the real H1 was
+    stripped) before ever re-running on already-converted content.
 
 Usage:
     python tools/sync-title-h1.py <folder> [--dry-run]
@@ -40,8 +53,16 @@ def norm(s):
 
 
 def process_file(path, dry_run):
-    with open(path, encoding="utf-8") as f:
-        text = f.read()
+    with open(path, "rb") as f:
+        raw = f.read()
+    has_bom = raw.startswith(b"\xef\xbb\xbf")
+    decoded = raw.decode("utf-8-sig")
+    # Binary read skips Python's text-mode universal-newline translation, and this
+    # repo's CRLF working-tree files (core.autocrlf=true) would otherwise break every
+    # \n-anchored regex below. Normalize to \n for processing, restore CRLF on write
+    # if that's what the file had - matches what git's autocrlf filter expects to see.
+    uses_crlf = "\r\n" in decoded
+    text = decoded.replace("\r\n", "\n")
 
     m = re.match(r"^(---\n)(.*?\n)(---\n?)(.*)$", text, re.DOTALL)
     if not m:
@@ -51,15 +72,19 @@ def process_file(path, dry_run):
     if re.search(r'^mode:\s*"?custom"?', fm, re.MULTILINE):
         return None
 
+    if re.search(r"^generated:\s*true\s*$", fm, re.MULTILINE):
+        return None
+
     title_m = re.search(r"^title:\s*(.+)$", fm, re.MULTILINE)
     if not title_m:
         return None
     title = title_m.group(1).strip().strip('"').strip("'")
 
-    h1_m = re.search(r"^#\s+(.+)$", rest, re.MULTILINE)
-    if not h1_m:
+    h1_matches = list(re.finditer(r"^#\s+(.+)$", rest, re.MULTILINE))
+    if not h1_matches:
         return None
-    h1 = h1_m.group(1).strip()
+    h1 = h1_matches[0].group(1).strip()
+    multiple_h1 = len(h1_matches) > 1
 
     changed = False
     if norm(title) != norm(h1):
@@ -87,11 +112,19 @@ def process_file(path, dry_run):
         return None
 
     new_text = open_marker + fm + close_marker + rest
+    if uses_crlf:
+        new_text = new_text.replace("\n", "\r\n")
     if not dry_run:
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(new_text)
+        with open(path, "wb") as f:
+            f.write((b"\xef\xbb\xbf" if has_bom else b"") + new_text.encode("utf-8"))
 
-    return {"path": path, "old_title": title, "new_title": h1, "new_title_len": len(h1)}
+    return {
+        "path": path,
+        "old_title": title,
+        "new_title": h1,
+        "new_title_len": len(h1),
+        "multiple_h1": multiple_h1,
+    }
 
 
 def main():
@@ -119,6 +152,13 @@ def main():
                 results.append(result)
 
     print(f"{'Would change' if args.dry_run else 'Changed'} {len(results)} file(s)")
+
+    multi_h1 = [r for r in results if r["multiple_h1"]]
+    if multi_h1:
+        print(f"\n{len(multi_h1)} file(s) had more than one H1 - only the first was stripped, review the rest manually:")
+        for r in multi_h1:
+            print(f"  {r['path']}")
+
     long_titles = [r for r in results if r["new_title_len"] > args.sidebar_threshold]
     if long_titles:
         print(f"\n{len(long_titles)} file(s) now have a long title - consider a manual sidebarTitle:")

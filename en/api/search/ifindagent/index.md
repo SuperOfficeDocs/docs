@@ -10,8 +10,6 @@ area: api-services
 redirect_from: /en/api/netserver/search/ifindagent
 ---
 
-# IFindAgent
-
 This is the common interface for the `FindAgent`. In the NetServer services layer, the searches are done using this [agent][2].
 
 This is very similar to the use of the `ArchiveAgent` in the data layer [Archive Services][1]. However, the `FindAgent` supports a larger set of restrictions.

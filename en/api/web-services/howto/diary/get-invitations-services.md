@@ -1,6 +1,7 @@
 ---
 uid: get-invitation-services
 title: How to get a list of invitations (services)
+sidebarTitle: "Get invitations (services)"
 description: How to get a list of invitations using NetServer services
 keywords: ['diary', 'calendar', 'appointment', 'API', 'web services', 'archiveprovider']
 author: Bergfrid Skaara Dias
@@ -10,8 +11,6 @@ redirect_from:
   - /en/diary/howto/services/get-invitations-services
   - /en/api/netserver/web-services/howto/diary/get-invitations-services
 ---
-
-# How to get a list of invitations (services)
 
 The code below is used to retrieve a list of [invitations][1] for a specific associate with [NetServer services][2].
 

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select extra field
-
 This element is used to get input for an [extra field][1]. The specifics of this element depend on the extra field's **type**.
 
 ## Configuration

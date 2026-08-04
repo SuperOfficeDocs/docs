@@ -13,8 +13,6 @@ redirect_from:
   - /en/api/netserver/archive-providers/howto/diary/index
 ---
 
-# Diary - archive
-
 * [Invitation Archive][1]
 
 [1]: ./invitation-archive

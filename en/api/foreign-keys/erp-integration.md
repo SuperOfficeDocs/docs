@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/foreign-keys/erp-integration
 hidden: true
 ---
 
-# System integration
-
 Often a system integration approach will use the **Number fields** (for example, `Contact.Number1` or `Project.Number`).
 
 If the identifier is too complex or if there are more systems than there are number fields, then the Foreign Key system is worth checking out.

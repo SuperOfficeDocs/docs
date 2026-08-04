@@ -1,6 +1,6 @@
 ---
 uid: crmscript-quote-create-alternative
-title: Create quote alternative
+title: Create alternatives
 description: How to create a quote alternative with CRMScript.
 keywords: ['CRMScript', 'quote', 'QuoteAgent', 'sale', 'alternative']
 author: Bergfrid Skaara Dias
@@ -9,8 +9,6 @@ version: 10
 content_type: howto
 redirect_from: /en/quote/howto/crmscript/add-alternative
 ---
-
-# Create alternatives
 
 ## NSQuoteAlternative CreateDefaultQuoteAlternative()
 

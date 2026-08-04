@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# Data binding
-
 Data Binding is **binding controls to data from databases**.
 
 With [ASP. Net data binding][1], we can bind a control to a particular column in a table from the database or we can bind the whole table to the data grid. Data binding provides a simple, convenient, and powerful way to create a read/write link between the controls on a form and the data in their application.

@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/company/get-all-contacts-rest
 ---
 
-# Select all companies
-
 Read all the companies in SuperOffice.
 
 ```http

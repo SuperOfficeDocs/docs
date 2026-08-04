@@ -9,8 +9,6 @@ platform: web
 deployment: onsite
 ---
 
-# Custom AJAX methods
-
 Taking a look at how to call server-side methods both asynchronously and synchronously from client-side JavaScript inside SuperOffice
 
 When doing development in a web environment, the whole point is doing operations on the web server without having to post the whole page and get back the whole page from the web server again. The key is to use JavaScript for calling business logic on server-side objects asynchronously using remote XML or AJAX.

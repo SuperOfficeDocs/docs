@@ -1,6 +1,7 @@
 ---
 uid: update-person-entity
 title: Update a person with a new name, address, position using entities
+sidebarTitle: "Update a person (entities)"
 description: Update a person with new name, address, position using entities
 keywords: ['person', 'contact', 'entity', 'API']
 author: Tony Yates
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/entities/howto/contact/update-person-entity
 hidden: true
 ---
-
-# Update a person with a new name, address, position using entities
 
 Let's discuss how we can update the name, address, and position of an existing person using entities.
 

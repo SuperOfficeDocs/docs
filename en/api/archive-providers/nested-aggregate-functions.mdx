@@ -11,8 +11,6 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/nested-aggregate-functions
 ---
 
-# Nested aggregate functions
-
 Functions can contain functions, so it's possible to pass the result of one aggregate function to another aggregate function for compound operations. For example, with regards to a sale amount, first weigh the amount and then converted to a specific currency using:
 
 `CurrencyConvert(Weighted(amount;probPercent);currencyId))`

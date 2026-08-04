@@ -10,8 +10,6 @@ deployment: online
 platform: web
 ---
 
-# What API to use?
-
 When partners build an online application or a one-off integration, the first question I usually get is "what APIs are available?".
 
 I generally respond with we support both SOAP and REST web services. And then their follow-up question is generally "which API should I use?". The answer is, well it depends.

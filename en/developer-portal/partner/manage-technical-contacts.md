@@ -12,8 +12,6 @@ deployment: online
 platform: web
 ---
 
-# Manage technical contacts
-
 Each partner and application has a designated technical contact who receives email alerts for issues.
 
 ## Identify which apps a user is technical contact of

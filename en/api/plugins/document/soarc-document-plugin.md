@@ -10,8 +10,6 @@ redirect_from: /en/api/netserver/plugins/document/soarc-document-plugin
 hidden: true
 ---
 
-# How to create a managed document plugin
-
 ## Introduction
 
 Recently a partner, experimenting with creating a managed document plug-in, discovered that it was not nearly as simple to create a .net document plugin for SuperOffice, as it is with the default VB6 sample application, **SoDocPluginSoArc**. In this article, I would like to describe and demonstrate the steps necessary to get a .NET SuperOffice document plugin assembly working. Essentially, the steps required are listed in the following ten-step process.

@@ -7,8 +7,6 @@ date:
 content_type: concept
 ---
 
-# Tooltip service
-
 The **Tooltip services** are used by JavaScripts on the web client to provide detailed tooltips at run-time. Using the tooltip agent, we can retrieve a constructed tooltip for various business objects of SuperOffice for example contact and person.
 
 The different tooltips given for each business object will be different depending on the business need of the object.

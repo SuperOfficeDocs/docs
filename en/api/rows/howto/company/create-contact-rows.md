@@ -1,6 +1,7 @@
 ---
 uid: create-contact-rows
 title: Create a contact through row collection (Rows)
+sidebarTitle: "Create a contact (rows)"
 description: How to create a contact through row collection (ContactRows).
 
 author: Tony Yates
@@ -11,8 +12,6 @@ redirect_from:
   - /en/api/netserver/rows/howto/company/create-contact-rows
 hidden: true
 ---
-
-# Create a contact through row collection (Rows)
 
 Because the `Rows` type consists of a collection of `Row` objects, it is possible to create a `ContactRow` with the `ContactRows` class.
 

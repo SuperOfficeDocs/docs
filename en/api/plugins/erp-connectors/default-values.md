@@ -7,8 +7,6 @@ content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/default-values
 ---
 
-# Default values
-
 **Default value** is the chosen term for values that are **sent to the ERP system** when Erp Sync creates a new actor in the ERP system. They are not mapped to a corresponding field in SuperOffice.
 
 See `DefaultValue` in [FieldMetadataInfo][1].

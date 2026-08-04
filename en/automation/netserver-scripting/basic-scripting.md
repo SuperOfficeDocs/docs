@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# Basic NetServer scripting
-
 ## Events
 
 There are Before, After, and AfterAsync events for each method on each web service agent. These are void methods, Sub-routines in Visual Basic.NET, where there is no return value. The naming standard of every available scripting event is the exact same as the web service method, prefixed with the `Before` or `After` keyword. Asynchronous scripting events are always prefixed with "After" and have an "Async" suffix.

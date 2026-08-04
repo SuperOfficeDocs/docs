@@ -1,5 +1,5 @@
 ---
-title: Set up EMET
+title: Installing EMET
 uid: set_up_emet
 description: Installing Enhanced Mitigation Experience Toolkit (EMET)
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ content_type: howto
 deployment: onsite
 platform: web
 ---
-
-# Installing EMET
 
 **E**nhanced **M**itigation **E**xperience **T**oolkit (EMET) can be downloaded from [technet.microsoft.com][1].
 

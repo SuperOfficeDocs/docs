@@ -1,6 +1,7 @@
 ---
 uid: api-custom-objects
 title: Introduction to custom objects and fields
+sidebarTitle: "Custom objects and fields"
 description: Introduction to custom objects and fields
 keywords: ['custom object', 'custom field', 'extra table', 'extra field', 'udef', 'user-defined field']
 author: Eivind Fasting
@@ -14,8 +15,6 @@ redirect_from:
   - /en/custom-objects/udef/howto/services/index
   - /en/api/netserver/web-services/howto/custom-objects/index
 ---
-
-# Introduction to custom objects and fields
 
 Custom objects are how a customer can either create new entities or extend existing entities inside SuperOffice, and are available in most search areas inside SuperOffice, including the API.
 

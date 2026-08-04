@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/enums/quotestatus
 ---
 
-# Enum QuoteStatus
-
 QuoteStatus shall be used to give indications in the user interface that there is more info or problems available.
 
 | Ok | OK, all is good |

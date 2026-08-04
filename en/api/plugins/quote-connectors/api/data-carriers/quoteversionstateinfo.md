@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/quoteversionstateinfo
 ---
 
-# QuoteVersionStateInfo
-
 The various states a `QuoteVersion` can be in.
 
 ## Unknown

@@ -8,8 +8,6 @@ date: 05.20.2024
 content_type: howto
 ---
 
-# Working with NS classes in CRMScript
-
 Use a CRMScript entity datatype when available; only use NetServer agents when a suitable CRMScript entity datatype does not exist. For example, when creating a new company, you should use the `Company` class instead of the `NSContactAgent` class. The `Company` class is a CRMScript datatype, and it is more efficient than NetServer when used directly. The same goes for the `Customer`, `Ticket` and `Message` classes.
 
 | Real World Object | CRMScript Entity | NetServer Entity   |

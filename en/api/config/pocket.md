@@ -1,5 +1,6 @@
 ---
-title: Pocket element
+title: NetServer Pocket element (SuperOffice only)
+sidebarTitle: "Pocket element"
 uid: ns_config_pocket
 description: NetServer configuration values for Pocket-specific features.
 date: 12.07.2021
@@ -9,8 +10,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/pocket
 ---
-
-# NetServer Pocket element (SuperOffice only)
 
 Configuration values for Pocket-specific features.
 

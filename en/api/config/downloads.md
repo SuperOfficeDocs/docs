@@ -1,5 +1,6 @@
 ---
-title: Downloads element
+title: NetServer Downloads element (SuperOffice only)
+sidebarTitle: "Downloads element"
 uid: ns_config_Downloads
 description: NetServer configuration values related to Downloads.
 date: 12.07.2021
@@ -9,8 +10,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/downloads
 ---
-
-# NetServer Downloads element (SuperOffice only)
 
 Configuration values related to Downloads.
 

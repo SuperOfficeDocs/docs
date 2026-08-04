@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Show recipients
-
 This is a control that lists all recipients.
 
 ## Functions

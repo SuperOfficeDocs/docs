@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/iproductregistercache
 ---
 
-# IProductRegisterCache
-
 This part is not in use yet.
 
 SuperOffice has its own simple Product table. This table can be used by the ERP connectors as a cache for ERP data.

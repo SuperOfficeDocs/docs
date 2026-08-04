@@ -8,8 +8,6 @@ content_type: concept
 index: true
 ---
 
-# Chatbot registration
-
 ![Chat channel admin: chatbot tab][img1]
 
 You pick a folder containing a CRMScript named `echobot register`.

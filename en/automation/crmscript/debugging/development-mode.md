@@ -6,8 +6,6 @@ date:
 content_type: howto
 ---
 
-# Debugging CRMScript modules
-
 CRMScript modules are scripts imported into other scripts files by using the `#included` directive.
 
 Historically, you couldn't run CRMScript modules. Now, scriptwriters **can use environment variables** to invoke and debug module scripts:

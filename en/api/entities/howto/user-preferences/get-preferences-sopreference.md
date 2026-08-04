@@ -1,6 +1,7 @@
 ---
 uid: get-preferences-datalayer
-title: Get preferences
+title: Get the current value of a given preference
+sidebarTitle: "Get a preference value (SoPreference)"
 description: How to get preferences using SoPreferene at the data layer
 keywords: ['preference', 'SoPreference']
 author: digitaldiina
@@ -14,8 +15,6 @@ language: en
 redirect_from: /en/admin/user-preferences/howto/get-preferences-sopreference
 hidden: true
 ---
-
-# Get the current value of a given preference
 
 The [SetPreference method][2] has four overloads depending on the value passed (string, int, bool, or DateTime). The `SoPreference` class provides four corresponding methods to retrieve the current value of a given preference.
 

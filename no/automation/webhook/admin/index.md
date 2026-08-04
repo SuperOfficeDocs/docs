@@ -16,8 +16,6 @@ index: true
 language: no
 ---
 
-# Webhooker
-
 Webhooker-panelet er det sentrale stedet for administratorer og konsulenter til å administrere webhook-abonnementer i SuperOffice. Du finner det under **Innstillinger og vedlikehold** > **System design** > **Webhooker**.
 
 Fra dette panelet kan du se tilstanden for alle webhooks på ett øyekast, opprette nye abonnementer, redigere eksisterende og gjenopprette webhooks som har blitt automatisk deaktivert på grunn av leveringsfeil.

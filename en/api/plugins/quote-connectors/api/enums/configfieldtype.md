@@ -12,8 +12,6 @@ redirect_from:
   - /en/api/netserver/plugins/quote-connectors/api/enums/index
 ---
 
-# Enum ConfigFieldType
-
 Describes the different types of controls that can appear in the Configure connection dialog
 
 | Control | Description |

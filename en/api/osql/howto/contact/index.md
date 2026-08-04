@@ -1,6 +1,6 @@
 ---
 uid: api-person-osql
-title: Person - OSQL
+title: Contact - OSQL
 description: Working with contacts (person) in API with Objectified SQL.
 keywords: ['person', 'contact', 'OSQL', 'API']
 author: Bergfrid Skaara Dias
@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/osql/howto/contact/index
 hidden: true
 ---
-
-# Contact - OSQL
 
 * [Get persons from contact (sodatareader)][1]
 * [Update person][2]

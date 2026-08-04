@@ -1,5 +1,5 @@
 ---
-title: Globalization element
+title: NetServer Globalization element
 uid: ns_config_globalization
 description: NetServer configuration used to access the Globalization section in the config file
 date: 12.09.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/globalization
 ---
-
-# NetServer Globalization element
 
 This configuration is used to access the Globalization section (user origin) in the config file.
 

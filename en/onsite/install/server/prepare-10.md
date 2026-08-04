@@ -1,6 +1,7 @@
 ---
 uid: prepare-crm-server-10
-title: Prepare CRM Server 8-10
+title: Prepare CRM Server computer for SuperOffice 8-10
+sidebarTitle: "Prepare server (SuperOffice 8-10)"
 description: Prepare CRM Server computer
 keywords: ['prepare CRM server']
 author: SuperOffice Product and Engineering
@@ -9,8 +10,6 @@ version: 10
 content_type: howto
 deployment: onsite
 ---
-
-# Prepare CRM Server computer for SuperOffice 8-10
 
 1. Prepare the program files folder:
 

@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Dependency graph
-
 This element displays the dependencies in a project graphically.
 
 Also known as **AcyclicGraph** element.

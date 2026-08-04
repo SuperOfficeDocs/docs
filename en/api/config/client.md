@@ -1,5 +1,6 @@
 ---
-title: NetServer Client element
+title: NetServer Client element (SuperOffice only)
+sidebarTitle: "Client element"
 uid: ns_config_client
 description: Configuration values related to NetServer client configuration, extension of ClientConfigurationProvider.
 date: 12.17.2021
@@ -10,8 +11,6 @@ deployment: onsite
 platform: web
 redirect_from: /en/api/netserver/config/client
 ---
-
-# NetServer Client element (SuperOffice only)
 
 Configuration values related to client configuration, extension of `ClientConfigurationProvider`.
 

@@ -13,8 +13,6 @@ redirect_from: /en/globalization-and-localization/culture/display-in-current-cul
 language: en
 ---
 
-# Display values in current culture
-
 The [CultureDataFormatter][1] handles conversion to and from the neutral format. This class is strictly not part of the DCF, since it lives in the `SoCore` assembly.
 
 ```csharp

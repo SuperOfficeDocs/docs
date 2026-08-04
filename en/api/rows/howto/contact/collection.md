@@ -12,8 +12,6 @@ redirect_from:
 hidden: true
 ---
 
-# Collection
-
 ## Example 1
 
 ```csharp

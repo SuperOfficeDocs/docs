@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Checkbox
-
 Adds a checkbox to your screen.
 
 ## Configuration

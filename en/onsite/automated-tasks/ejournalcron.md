@@ -11,8 +11,6 @@ category: service
 redirect_from: /en/service/automated-tasks/ejournalcron
 ---
 
-# ejournalCron
-
 Executed by the **ejSchedule** service every minute through the ejCrontab.txt file together with **importMail**.
 
 Apart from importing mail, this file executes most automated tasks in Service.

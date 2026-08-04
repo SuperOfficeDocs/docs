@@ -10,8 +10,6 @@ redirect_from:
   - /en/service/reports/parameters
 ---
 
-# Parameters for reports
-
 Parameters can be defined anywhere in the report, but they look nicer when put together at the beginning of the report.
 
 ## Parameter types

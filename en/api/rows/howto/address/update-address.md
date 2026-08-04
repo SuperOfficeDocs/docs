@@ -13,8 +13,6 @@ redirect_from:
 hidden: true
 ---
 
-# ContactAddress
-
 ```csharp
 using SuperOffice;
 using SuperOffice.CRM.Rows;

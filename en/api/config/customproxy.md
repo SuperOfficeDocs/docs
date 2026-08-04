@@ -1,5 +1,5 @@
 ---
-title: CustomProxy element
+title: NetServer CustomProxy element
 uid: ns_config_customproxy
 description: NetServer configuration values for custom proxy and communication with the internet.
 date: 12.07.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/customproxy
 ---
-
-# NetServer CustomProxy element
 
 Configuration values for **Custom Proxy** and communication with the internet.
 

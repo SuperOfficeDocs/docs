@@ -1,6 +1,7 @@
 ---
 uid: list-contact-interests-ws
-title: How to list all selected interests
+title: How to list all selected interests for a contact (services)
+sidebarTitle: "List interests for a contact (services)"
 description: How to list all selected interests for a contact using services
 keywords: ['contact', 'company', 'services', 'API', 'interest', 'ContactAgent', 'SelectableMDOListItem']
 author: Tony Yates
@@ -10,8 +11,6 @@ redirect_from:
   - /en/company/howto/services/get-interests-for-contact-services
   - /en/api/netserver/web-services/howto/company/get-interests-for-contact-services
 ---
-
-# How to list all selected interests for a contact (services)
 
 You can use  `SuperOffice.Services` and `SuperOffice.Services.Impl` DLLs to list all selected [interests][1] for a specific contact.
 

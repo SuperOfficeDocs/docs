@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/osql/insert
 hidden: true
 ---
 
-# INSERT
-
 Inserting data is a very important transaction in database handling. SuperOffice Objectified SQL has its own classes and methods written to handle this function so that you do not need to worry about the underlying database when inserting data into the database.
 
 The following example shows how to insert data into the database using SuperOffice Objectified SQL.

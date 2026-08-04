@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/company/get-catlist-mdoagent
 ---
 
-# Get a CategoryList using the MDO Agent
-
 ```csharp
 using SuperOffice;
 using SuperOffice.CRM.Services;

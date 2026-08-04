@@ -12,8 +12,6 @@ deployment: onsite
 language: en
 ---
 
-# End of life - Pagebuilder customization
-
 SuperOffice Onsite version 10.2.9 is the last version to support [PageBuilder][2] customizations.
 
 As we are gradually rewriting all UI using our new SCIL framework, Pagebuilder based customizations will stop working. (This is not new, Pagebuilder extensibility is deprecated, and no longer supported).

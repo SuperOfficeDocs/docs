@@ -1,13 +1,11 @@
 ---
-title: SuperOffice Reports
+title: Reports in SuperOffice Win and Web
 uid: reports
 description: Reports in SuperOffice
 author: SuperOffice Product and Engineering
 keywords: ['reports', 'printing', 'print']
 content_type: reference
 ---
-
-# Reports in SuperOffice Win and Web
 
 SuperOffice Win and Web use two different solutions for printing.
 

@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Project member webhook events
-
 These webhook events are fired when `projectmember` rows are changed:
 
 * `projectmember.created`

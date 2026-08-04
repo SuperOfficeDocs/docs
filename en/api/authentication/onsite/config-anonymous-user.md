@@ -1,13 +1,12 @@
 ---
-title: How to configure the anonymous users
+title: How to configure the anonymous users in the config file
+sidebarTitle: "Configure anonymous users"
 uid: config_anonymous_user
 description: How to configure the anonymous users in the config file
 author: SuperOffice Product and Engineering
 content_type: howto
 redirect_from: /en/authentication/onsite/config-anonymous-user
 ---
-
-# How to configure the anonymous users in the config file
 
 In the application config file if we allow the implicit anonymous user, then we can call [service agents][1] without authenticating. We can see how the implicit anonymous user is allowed in the config file from the sample given below.
 

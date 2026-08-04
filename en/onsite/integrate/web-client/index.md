@@ -1,6 +1,7 @@
 ---
 uid: api_scenarios_web_onsite
-title: Integration in the onsite Web client
+title: "Integration scenarios: Web client (onsite)"
+sidebarTitle: "Web client integration scenarios"
 description: Integration in the onsite Web client
 author: Tony Yates
 date: 11.25.2021
@@ -10,8 +11,6 @@ deployment: onsite
 platform: web
 redirect_from: /en/onsite/integrate/index
 ---
-
-# Integration scenarios: Web client (onsite)
 
 Available since 2007, the SuperOffice Web client has enjoyed a wide adoption by many on-site customer installations. The product has several advantages over the Windows client. For example, customers can install SuperOffice on a web server that is accessible both near and far without having to pay extra license fees for disconnected functionality such as Travel or incur the extra maintenance costs for maintaining Travel Gateway and the processing of *.up* and *.dwn* files.
 

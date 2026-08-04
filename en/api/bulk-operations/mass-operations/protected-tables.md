@@ -10,8 +10,6 @@ topic: mass operations
 redirect_from: /en/api/netserver/bulk-operations/mass-operations/protected-tables
 ---
 
-# Protected tables
-
 These tables are protected and therefore cannot be used by the mass operations API. An `SoDbAccessException` is thrown if any of these tables are targeted.
 
 ## Tables list

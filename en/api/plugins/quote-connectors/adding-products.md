@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/adding-products
 ---
 
-# Adding products to a quote
-
 The user searches for products in the Add Product dialog.
 
 ## ProductInfo[] FindProduct( QuoteContextInfo context, string isoCurrencyCode, string userinput, string priceListKey )

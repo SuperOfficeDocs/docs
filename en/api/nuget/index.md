@@ -7,8 +7,6 @@ date: 02.29.2016
 content_type: concept
 ---
 
-# Overview
-
 I am pleased to announce SuperOffice now has NuGet packages targeting common development and integration
 scenarios! The available packages are only for SuperOffice version 8 and newer. Older SuperOffice version integrations must download and use the assemblies provided in the SDK.
 

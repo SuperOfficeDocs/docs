@@ -1,5 +1,5 @@
 ---
-title: SoFormsAuthentication element
+title: NetServer SoFormsAuthentication element
 uid: ns_config_soformsauthentication
 description: NetServer configuration settings used to control access and used by the web client FormsAuthentication.
 date: 12.07.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/soformsauthentication
 ---
-
-# NetServer SoFormsAuthentication element
 
 The `SoFormsAuthentication` group contains configuration settings used to control access and used by the web client `FormsAuthentication`.
 

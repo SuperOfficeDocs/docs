@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Language menu
-
 This element is used as a dictionary to check the spelling in an input field.
 
 ## Functions

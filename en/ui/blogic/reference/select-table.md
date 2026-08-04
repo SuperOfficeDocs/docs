@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Select table
-
 This element lets you choose a table from a tree selector.
 
 ## Configuration

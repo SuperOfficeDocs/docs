@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# MDO list
-
 This element creates a drop-down menu for any of the available MDO lists in SuperOffice CRM.
 
 ## Configuration

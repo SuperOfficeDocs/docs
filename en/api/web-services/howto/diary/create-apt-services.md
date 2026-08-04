@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/diary/create-apt-services
 ---
 
-# Create an appointment using services
-
 This example shows you how to create an appointment using [NetServer services][1]. The new appointment will be added to the diary of associate 103 by the logged-in user is SAL0.
 
 ## Code

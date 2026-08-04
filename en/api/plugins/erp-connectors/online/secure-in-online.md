@@ -1,5 +1,6 @@
 ---
 title: Securing ERP Connectors for SuperOffice Online
+sidebarTitle: "Secure ERP Connectors in Online"
 uid: erp_security
 description: Securing ERP Connectors for SuperOffice Online
 author: SuperOffice Product and Engineering
@@ -9,8 +10,6 @@ deployment: online
 platform: web
 redirect_from: /en/api/netserver/plugins/erp-connectors/online/secure-in-online
 ---
-
-# Securing ERP Connectors for SuperOffice Online
 
 In 2017, SuperOffice expanded its online API offering and announced the availability of the [Database Mirroring API][1]. This new API performs database replication-like functionality - mirroring a subset of the online tenants' database through a web service to a remote database.
 

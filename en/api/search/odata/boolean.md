@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/search/odata/boolean
 ---
 
-# Boolean
-
 ```http
 GET /api/v1/contact?$select=name,associateId,contactAssociate/fullName&$filter=hasInterests set true HTTP/1.1
 Authorization: Bearer 8A:

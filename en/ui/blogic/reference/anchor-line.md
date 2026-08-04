@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Anchor line (link row)
-
 This element will display a horizontal line of clickable URLs.
 
 ## Configuration

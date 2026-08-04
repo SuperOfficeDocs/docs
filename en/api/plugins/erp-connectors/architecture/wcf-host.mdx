@@ -9,8 +9,6 @@ content_type: howto
 redirect_from: /en/api/netserver/plugins/erp-connectors/architecture/wcf-host
 ---
 
-# ERP Sync Service WCF host
-
 ![x][img1]
 
 To make life a little simpler for sync connector implementers, SuperOffice provides a WCF host called **Erp Sync Service** that takes plugins in the form of the .Net `IErpConnector` interface. The WCF host handles the translation between the WCF types used in `IERpConnectorWS` and the .net `IErpConnector` interface. The WCF host needs the *SuperOffice.Plugins.DLL* file since that defines the `IErpConnector` interface.

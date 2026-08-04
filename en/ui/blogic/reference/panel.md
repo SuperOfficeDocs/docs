@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Panel
-
 This is a **group element**. It defines the beginning of a group of elements and requires a matching group end element.
 
 This element will add a white background to the screen.

@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# Scenarios
-
 These scenarios walk you through the [nuSoapSample][1] code and what happens when you run the sample.
 
 These sequence diagrams were built using an online resource `www.websequencediagrams.com`. The text used to generate these diagrams is located at the end of this document.

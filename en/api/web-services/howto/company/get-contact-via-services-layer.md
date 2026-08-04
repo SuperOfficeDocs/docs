@@ -11,8 +11,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/company/get-contact-via-services-layer
 ---
 
-# Get a contact through the services layer
-
 This is an alternative to retrieving a `Contact` entity [through the entities layer][1].
 
 The following example shows how it is done.

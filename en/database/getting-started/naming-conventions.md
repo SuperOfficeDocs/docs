@@ -9,8 +9,6 @@ content_type: reference
 language: en
 ---
 
-# Naming conventions
-
 ## Database conventions and table descriptions
 
 This section describes all of the available tables and standard conventions used in the SuperOffice database.

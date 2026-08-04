@@ -11,8 +11,6 @@ area: api-services
 redirect_from: /en/api/netserver/lists/services/listagent/index
 ---
 
-# Lists
-
 ## Available list API Endpoints
 
 As the name implies, the `List` endpoint provides access to **all lists**. The List API is used to manage lists and retrieve list items.

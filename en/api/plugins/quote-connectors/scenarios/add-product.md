@@ -12,8 +12,6 @@ redirect_from:
   - /en/api/netserver/plugins/quote-connectors/scenarios/index
 ---
 
-# Scenario - adding a product
-
 1. The user will click the **ADD** button to open the QUOTE LINE DIALOG.
 
 2. The user enters a search value: "Glops"

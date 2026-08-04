@@ -16,8 +16,6 @@ redirect_from:
   - /en/api/netserver/web-services/howto/document/services-create
 ---
 
-# How to create a new document in SO_ARC
-
 To create a new document, create a `document` entity and set the document properties. In this example, we have used a specific document template on which the document is based. The owner of the document is set, followed by the associated person and project with which the document is connected.
 
 ```csharp

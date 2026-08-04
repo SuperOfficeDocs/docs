@@ -14,8 +14,6 @@ redirect_from:
 hidden: true
 ---
 
-# Contact - OSQL
-
 * [Create contact][1]
 * [Get category list][2]
 

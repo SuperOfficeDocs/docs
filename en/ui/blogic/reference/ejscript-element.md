@@ -7,8 +7,6 @@ date:
 topic: reference
 ---
 
-# Ejscript element
-
 This element is completely script-able.
 
 1. The system loads a script and executes the global code of the script at instantiation time.

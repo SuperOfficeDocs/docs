@@ -8,8 +8,6 @@ deployment: online
 platform: web
 ---
 
-# Example PHP application
-
 Building online PHP applications for SuperOffice CRM Online is not only possible: leveraging a useful library such as `nusoap` makes it simple and effective too.
 
 ## Objectives

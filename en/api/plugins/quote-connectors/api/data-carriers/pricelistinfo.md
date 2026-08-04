@@ -9,8 +9,6 @@ content_type: reference
 redirect_from: /en/api/netserver/plugins/quote-connectors/api/data-carriers/pricelistinfo
 ---
 
-# PriceListInfo
-
 ![39][img1]
 
 A pricelist is basically a collection of products. It can be valid in a time-period and outright deactivated. All prices in the product list are in a specific currency.

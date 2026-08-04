@@ -1,5 +1,5 @@
 ---
-title: Common patterns
+title: Plug-ins
 uid: netserver_patterns
 description: SuperOffice NetServer patterns
 author: Bergfrid Dias
@@ -8,8 +8,6 @@ keywords: ['API', 'NetServer', 'plugin pattern', 'factory pattern']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/index
 ---
-
-# Plug-ins
 
 ## What is a pattern?
 

@@ -12,8 +12,6 @@ deployment: onsite
 language: en
 ---
 
-# End of life - Lotus Notes Link
-
 This is a formal announcement of **End of Life** for our SuperOffice Lotus Notes Link. This feature has been available for Onsite customers only. We will end our support effectively from **01.01.2024**.
 
 ## What is Lotus Notes Link?

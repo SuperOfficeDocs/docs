@@ -9,8 +9,6 @@ redirect_from: /en/api/netserver/lists/entity/udef-list
 hidden: true
 ---
 
-# User-defined list providers
-
 Users can define their own fields and tables. If you need to create a list for a user-defined field or table, it is done via a user-defined list provider.
 
 The following example demonstrates how this is done.

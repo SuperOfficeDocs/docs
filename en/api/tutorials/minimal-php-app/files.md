@@ -1,13 +1,11 @@
 ---
-title: files
+title: nuSoapSample solution
 description:
 author: SuperOffice Product and Engineering
 topic:
 deployment: online
 platform: web
 ---
-
-# nuSoapSample solution
 
 The minimal PHP example application comes with a set of files and directories.
 

@@ -9,8 +9,6 @@ deployment: onsite
 platform: win
 ---
 
-# Troubleshooting
-
 ## Gateway service is running, but the gateway shows that it is not running?
 
 Check the Log on as the user set up on the service. If this user does not have sufficient rights to SO_Arc the gateway will show it as not running even though the services overview shows that it's running.
