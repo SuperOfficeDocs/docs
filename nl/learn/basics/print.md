@@ -3,7 +3,7 @@ uid: help-nl-print
 title: Het afdrukken van records in SuperOffice CRM
 sidebarTitle: "Afdrukken"
 description: This guide provides an overview of how to print records such as companies, contacts, sales, projects, and follow-ups, making it convenient to have hard copies for meetings, documentation, or further analysis.
-keywords: afdrukken
+keywords: ['afdrukken']
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2

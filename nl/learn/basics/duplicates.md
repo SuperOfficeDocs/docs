@@ -2,7 +2,7 @@
 uid: help-nl-duplicates
 title: Duplicaten
 description: Duplicaten
-keywords: duplicaat
+keywords: ['duplicaat']
 author: SuperOffice RnD
 date: 03.14.2025
 version: 10.5.2

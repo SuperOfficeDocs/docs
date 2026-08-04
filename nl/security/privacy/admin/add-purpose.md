@@ -3,7 +3,7 @@ uid: help-nl-privacy-add-purpose
 title: Privacy-instellingen instellen voor AVG - Doel toevoegen
 sidebarTitle: "Doel toevoegen"
 description: Meer informatie over het instellen van de privacyinstellingen voor uw bedrijf.
-keywords: privacyinstelling, doel toevoegen, externe privacyverklaring
+keywords: ['privacyinstelling', 'doel toevoegen', 'externe privacyverklaring']
 author: SuperOffice Product and Engineering
 date: 09.01.2025
 version: 10.5

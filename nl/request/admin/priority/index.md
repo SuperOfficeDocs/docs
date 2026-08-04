@@ -2,7 +2,7 @@
 uid: help-nl-request-priority
 title: Verzoekprioriteiten
 description: Verzoekprioriteiten
-keywords: verzoek, prioriteit, escaleren
+keywords: ['verzoek', 'prioriteit', 'escaleren']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

@@ -2,7 +2,7 @@
 uid: help-nl-screen-designer-field-reference
 title: Referentie
 description: Referentie van elementen beschikbaar in de Schermontwerper in Instellingen en onderhoud.
-keywords: Schermontwerper velden, standaardveld, standaardtabblad
+keywords: ['Schermontwerper velden', 'standaardveld', 'standaardtabblad']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

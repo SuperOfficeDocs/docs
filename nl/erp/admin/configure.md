@@ -2,7 +2,7 @@
 uid: help-nl-erp-configure
 title: ERP-verbinding configureren
 description: Configureer de synchronisatie tussen SuperOffice CRM en uw ERP-systeem door velden toe te wijzen, standaardwaarden in te stellen en ERP-verbindingen te prioriteren.
-keywords: ERP-verbinding, synchronisatie configureren, veldtoewijzing, lijsttoewijzing, standaardwaarden, ERP-velden rangschikken, synchronisatieprioriteit instellen, ERP-verbinding bewerken, SuperOffice ERP-integratie, ERP-tabblad, sync connector
+keywords: ['ERP-verbinding', 'synchronisatie configureren', 'veldtoewijzing', 'lijsttoewijzing', 'standaardwaarden', 'ERP-velden rangschikken', 'synchronisatieprioriteit instellen', 'ERP-verbinding bewerken', 'SuperOffice ERP-integratie', 'ERP-tabblad', 'sync connector']
 author: Bergfrid Dias
 date: 03.31.2025
 version: 10.5

@@ -2,7 +2,7 @@
 uid: help-nl-request-message-split
 title: Bericht opsplitsen
 description: Leer hoe u een bericht in een verzoek kunt opsplitsen in SuperOffice.
-keywords: verzoek, bericht, opsplitsen
+keywords: ['verzoek', 'bericht', 'opsplitsen']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

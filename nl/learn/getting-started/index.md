@@ -2,7 +2,7 @@
 uid: help-nl-getting-started
 title: Aan de slag met SuperOffice CRM
 description: Leer hoe u uw gebruikersaccount activeert, uw e-mail en documenten koppelt en uw persoonlijke voorkeuren instelt.
-keywords: CRM, aan de slag
+keywords: ['CRM', 'aan de slag']
 author: Bergfrid Dias, Kirsti Aakerholt
 date: 05.04.2026
 version: 11.13

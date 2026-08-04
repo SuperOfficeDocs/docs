@@ -3,7 +3,7 @@ uid: help-nl-product-fields-configure
 title: Velden configureren in het dialoogvenster Product toevoegen/bewerken
 sidebarTitle: "Productvelden configureren"
 description: Leer hoe u kunt bepalen welke velden worden weergegeven in het dialoogvenster Product toevoegen/bewerken en hoe ze zich gedragen.
-keywords: Dialoog Product configureren, Dialoog Product toevoegen/bewerken, Product configureren, Productdialoog, Productveld, Product, Offerte
+keywords: ['Dialoog Product configureren', 'Dialoog Product toevoegen/bewerken', 'Product configureren', 'Productdialoog', 'Productveld', 'Product', 'Offerte']
 author: Bergfrid Dias
 date: 04.28.2025
 version: 10.5.4

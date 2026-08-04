@@ -2,7 +2,7 @@
 uid: help-nl-document-faq-publish
 title: Items in Veelgestelde vragen publiceren
 description: Items in Veelgestelde vragen publiceren
-keywords: Veelgestelde vragen
+keywords: ['Veelgestelde vragen']
 author: Bergfrid Dias
 date: 03.14.2025
 content_type: howto

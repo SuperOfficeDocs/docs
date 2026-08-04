@@ -2,7 +2,7 @@
 uid: help-nl-sale-configuration
 title: Verkooptypen, fasen en gidsen beheren
 description: Leer hoe je verkoopprocessen beheert in SuperOffice CRM met verkooptypen, fasen en gidsen. Configureer deze tools in Instellingen en onderhoud om tracking, taken en documentatie te standaardiseren.
-keywords: verkoopgids, verkoopfase, verkooptype, workflow, verkoop
+keywords: ['verkoopgids', 'verkoopfase', 'verkooptype', 'workflow', 'verkoop']
 author: digitaldiina
 date: 11.06.2025
 version: 11.6

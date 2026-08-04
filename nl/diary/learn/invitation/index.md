@@ -3,7 +3,7 @@ uid: help-nl-invitation
 title: Uw medewerkers uitnodigen voor een vervolgactiviteit
 sidebarTitle: "Medewerkers uitnodigen"
 description: Vervolgactiviteiten met andere medewerkers maken
-keywords: agenda, vervolgactiviteit, uitnodiging, weergegeven
+keywords: ['agenda', 'vervolgactiviteit', 'uitnodiging', 'weergegeven']
 author: digitaldiina
 date: 03.27.2026
 version: 11.11

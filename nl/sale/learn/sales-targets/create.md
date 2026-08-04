@@ -2,7 +2,7 @@
 uid: help-nl-sales-targets-create
 title: Verkooptargets instellen
 description: Houd uw budgetten bij door verkooptargets in te stellen. Dit helpt u om de juiste verwachtingen te scheppen, uw groei te plannen, de motivatie te vergroten en tijd te besparen.
-keywords: verkooptargets
+keywords: ['verkooptargets']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

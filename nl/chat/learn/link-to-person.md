@@ -3,7 +3,7 @@ uid: help-nl-chat-link-to-person
 title: Chat koppelen aan bestaande contactpersoon
 sidebarTitle: "Koppelen aan contactpersoon"
 description: Wanneer een klant een vraag verstuurt via de chatwidget op de website, is het niet alleen belangrijk om hierop te reageren, maar ook om deze te registreren op hun Persoonskaart.
-keywords: chat koppelen aan contactpersoon, voorgestelde contactpersoon, nieuwe contactpersoon maken
+keywords: ['chat koppelen aan contactpersoon', 'voorgestelde contactpersoon', 'nieuwe contactpersoon maken']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

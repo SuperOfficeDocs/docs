@@ -2,7 +2,7 @@
 uid: help-nl-recurrence-stop
 title: Herhalende vervolgactiviteit stoppen
 description: Herhalende vervolgactiviteit stoppen
-keywords: stop herhaling, stop repetitie, onderbreek herhaling, vergaderreeks, terugkerende vervolgactiviteit, terugkerende vergadering, agenda, vervolgactiviteit, herhalen, toekomstige instances, terugkeren
+keywords: ['stop herhaling', 'stop repetitie', 'onderbreek herhaling', 'vergaderreeks', 'terugkerende vervolgactiviteit', 'terugkerende vergadering', 'agenda', 'vervolgactiviteit', 'herhalen', 'toekomstige instances', 'terugkeren']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2

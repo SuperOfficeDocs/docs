@@ -2,7 +2,7 @@
 uid: help-nl-customer-center-subscription-page-styling
 title: Stijl van abonnementspagina
 description: Hoe u het ontwerp en de tekst van de abonnementspagina kunt aanpassen om het af te stemmen op uw merkidentiteit.
-keywords: abonnementspagina, uitschrijven, bevestigingspagina
+keywords: ['abonnementspagina', 'uitschrijven', 'bevestigingspagina']
 author: digitaldiina
 date: 03.17.2026
 version: 11.11

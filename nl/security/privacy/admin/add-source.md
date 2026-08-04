@@ -3,7 +3,7 @@ uid: help-nl-privacy-add-source
 title: Items toevoegen aan de lijst Privacy - Bron
 sidebarTitle: "Bron toevoegen"
 description: Ontdek hoe u de privacylijsten in deze handleiding kunt wijzigen.
-keywords: Privacy bron lijst, Privacy bron toevoegen
+keywords: ['Privacy bron lijst', 'Privacy bron toevoegen']
 author: SuperOffice Product and Engineering
 date: 09.02.2025
 version: 10.3

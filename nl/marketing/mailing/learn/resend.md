@@ -2,7 +2,7 @@
 uid: help-nl-mailings-resend
 title: Uw mailing opnieuw verzenden
 description: Nadat u de geretourneerde e-mails hebt afgehandeld, is het een goed idee om uw mailing opnieuw te verzenden.
-keywords: resend mailing, recipients
+keywords: ['resend mailing', 'recipients']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

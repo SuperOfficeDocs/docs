@@ -3,7 +3,7 @@ uid: help-nl-service-global-preferences-customer-centre-password
 title: Wachtwoordbeleid voor het Customer Centre
 sidebarTitle: "Wachtwoordbeleid"
 description: Algemene voorkeuren voor het wachtwoordbeleid van het Customer Centre
-keywords: Service, instellingen
+keywords: ['Service', 'instellingen']
 author: SuperOffice RnD
 date: 03.14.2025
 content_type: reference

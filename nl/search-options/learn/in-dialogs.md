@@ -2,7 +2,7 @@
 uid: help-nl-fastsearcher-dialog
 title: Snel zoeken gebruiken in dialoogvensters
 description: De functie Snel zoeken gebruiken in dialoogvensters
-keywords: zoeken, Snel zoeken, dialoogvensters
+keywords: ['zoeken', 'Snel zoeken', 'dialoogvensters']
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2

@@ -3,7 +3,7 @@ uid: help-nl-project-image-add
 title: Een projectafbeelding toevoegen of wijzigen
 sidebarTitle: "Projectafbeelding"
 description: Een projectafbeelding toevoegen of wijzigen
-keywords: tabblad Afbeelding, projectafbeelding, project
+keywords: ['tabblad Afbeelding', 'projectafbeelding', 'project']
 author: Bergfrid Dias
 date: 03.14.2025
 version: 10.5.2

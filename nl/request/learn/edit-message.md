@@ -2,7 +2,7 @@
 uid: help-nl-request-message-edit
 title: Bericht bewerken
 description: Hoe u een bericht in een verzoek in SuperOffice kunt bewerken
-keywords: bericht bewerken, verzoek, bericht wijzigen, verzoek bijwerken
+keywords: ['bericht bewerken', 'verzoek', 'bericht wijzigen', 'verzoek bijwerken']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

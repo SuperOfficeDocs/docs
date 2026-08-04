@@ -3,7 +3,7 @@ uid: help-nl-mailing-add-tracked-link
 title: Gevolgde koppelingen toevoegen aan een bericht
 sidebarTitle: "Gevolgde koppelingen"
 description: Er zijn twee manieren om uw links in te stellen. U kunt een vooraf ingestelde bijgehouden koppeling gebruiken om klikken in verschillende mailings bij te houden of een nieuwe koppeling instellen die alleen beschikbaar is in deze mailing. Meer informatie over het toevoegen van een bijgehouden koppeling vindt u in deze handleiding.
-keywords: Marketing, mailing, gevolgde koppelingen
+keywords: ['Marketing', 'mailing', 'gevolgde koppelingen']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5

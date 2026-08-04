@@ -2,7 +2,7 @@
 uid: help-nl-add-items-to-resource-list
 title: Bronnen toevoegen
 description: Items toevoegen aan de lijst Bron
-keywords: bronnen, lijst Algemeen - Bron
+keywords: ['bronnen', 'lijst Algemeen - Bron']
 author: digitaldiina
 date: 10.27.2025
 version: 10.5

@@ -2,7 +2,7 @@
 uid: help-nl-ui-web-panels
 title: Webpanelen
 description: Webpanelen
-keywords: webpaneel, www tabblad
+keywords: ['webpaneel', 'www tabblad']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

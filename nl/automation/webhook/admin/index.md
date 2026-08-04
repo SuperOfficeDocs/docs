@@ -2,7 +2,7 @@
 uid: help-nl-webhook-panel
 title: Webhooks-paneel
 description: Webhooks weergeven, beheren en monitoren vanuit Instellingen en onderhoud.
-keywords: webhook-paneel, webhook-status, gedeactiveerde webhook, webhook herstarten, webhooks monitoren
+keywords: ['webhook-paneel', 'webhook-status', 'gedeactiveerde webhook', 'webhook herstarten', 'webhooks monitoren']
 author: digitaldiina
 date: 06.16.2026
 version: 12.1

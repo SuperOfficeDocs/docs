@@ -2,7 +2,7 @@
 uid: help-nl-task-menu-add
 title: Items toevoegen aan de lijst Taakmenu
 description: Items toevoegen aan de lijst Taakmenu
-keywords: Taakmenu
+keywords: ['Taakmenu']
 author: digitaldiina
 date: 05.04.2026
 version: 11.13

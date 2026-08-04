@@ -2,7 +2,7 @@
 uid: help-nl-language-change
 title: Actieve taal wijzigen
 description: Actieve taal wijzigen
-keywords: taal wijzigen, Actieve taal
+keywords: ['taal wijzigen', 'Actieve taal']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

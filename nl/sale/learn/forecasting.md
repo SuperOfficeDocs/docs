@@ -2,7 +2,7 @@
 uid: help-nl-sale-forecasting
 title: Bewaak je pijplijn en voorspel verkoop
 description: Hoe je je verkoop­pijplijn bewaakt en je verkoop prognosticeert met behulp van dashboards en selecties.
-keywords: verkoop, prognose, pipeline
+keywords: ['verkoop', 'prognose', 'pipeline']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

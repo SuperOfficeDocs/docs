@@ -2,7 +2,7 @@
 uid: help-nl-document-template-troubleshooting
 title: Probleemoplossing
 description: Hoe u problemen herkent en oplost bij het gebruik van SuperOffice-sjabloonvariabelen in Microsoft 365-documenten.
-keywords: documentsjabloon, sjabloonvariabele, document
+keywords: ['documentsjabloon', 'sjabloonvariabele', 'document']
 author: Bergfrid Dias
 date: 07.16.2024
 content_type: howto

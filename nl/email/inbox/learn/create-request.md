@@ -2,7 +2,7 @@
 uid: help-nl-create-request
 title: Verzoek maken
 description: Leer hoe u een verzoek maakt in SuperOffice Service op basis van een e-mailbericht
-keywords: verzoek maken, postvak in, klantenservice, e-mail, verzoek, service, ticket
+keywords: ['verzoek maken', 'postvak in', 'klantenservice', 'e-mail', 'verzoek', 'service', 'ticket']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5

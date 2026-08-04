@@ -2,7 +2,7 @@
 uid: help-nl-notes
 title: Notities maken
 description: Notities maken
-keywords: notitie maken, opmerking, kladblok
+keywords: ['notitie maken', 'opmerking', 'kladblok']
 author: SuperOffice RnD
 date: 03.14.2025
 version: 10.5.2

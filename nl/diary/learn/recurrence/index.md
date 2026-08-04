@@ -2,7 +2,7 @@
 uid: help-nl-recurrence
 title: Herhalende vervolgactiviteiten
 description: Terugkerende vervolgactiviteiten
-keywords: terugkerende vervolgactiviteit, terugkerende vergadering, terugkerende afspraak, herhaal, herhalen, vergaderfrequentie, vervolgpatroon, vergaderreeks, agenda, vervolgactiviteit, herhalen, terugkeren, plan, regelmatig, frequentie
+keywords: ['terugkerende vervolgactiviteit', 'terugkerende vergadering', 'terugkerende afspraak', 'herhaal', 'herhalen', 'vergaderfrequentie', 'vervolgpatroon', 'vergaderreeks', 'agenda', 'vervolgactiviteit', 'terugkeren', 'plan', 'regelmatig', 'frequentie']
 author: Bergfrid Dias
 date: 02.21.2025
 version: 10.5.2
