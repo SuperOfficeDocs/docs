@@ -7,13 +7,11 @@ author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: sv
 ---
-
-# Anteckna
 
 I SuperOffice CRM kan du koppla anteckningar till ett företag, en kontakt, en försäljning, ett projekt eller ett urval. Dessa anteckningar kan användas för att lagra valfri information och är sökbara via [fritextsökning][1].
 

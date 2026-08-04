@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-language: sv
 redirect_from: /sv/request/learn/status/index
 index: true
+language: sv
 ---
-
-# Ärendestatus
 
 Alla ärenden som registreras i SuperOffice har en status, såsom **Aktivt**, **Stängt** eller **Uppskjutet**. Välj **Ärenden** i navigatorn och gå till fliken **Ärendestatus** för att se de ärendestatusar som redan är definierade i systemet och skapa ytterligare ärendestatusar. En ärendestatus måste vara kopplad till någon av systemets interna statusar, såsom **Aktivt** eller **Avslutat**. Varje intern status måste länkas till minst en ärendestatus.
 

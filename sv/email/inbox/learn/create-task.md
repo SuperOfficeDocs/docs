@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Skapa uppgift
-
 Du kan snabbt skapa en uppföljning (att göra) baserat på ett e-postmeddelande i inkorgen i SuperOffice. Den nya uppgiften kopplas automatiskt till avsändaren, och du kan också koppla den till ett projekt, en försäljning eller ett annat sammanhang.
 
 ## Steg

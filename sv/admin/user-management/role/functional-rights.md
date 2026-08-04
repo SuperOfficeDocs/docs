@@ -7,17 +7,15 @@ author: PhilipYates, digitaldiina
 date: 06.11.2026
 version: 12.0
 content_type: reference
-audience: settings
-audience_tooltip: Settings and maintenance
+tier: starter
 category: identity management
 topic: role
-index: true
+audience: settings
+audience_tooltip: Settings and maintenance
 redirect_from: /sv/admin/user-management/learn/role/functional-rights
-tier: starter
+index: true
 language: sv
 ---
-
-# Functional rights in SuperOffice
 
 Using [role-based security][3], we can [customize roles][2] to give access to different functions of SuperOffice CRM.
 

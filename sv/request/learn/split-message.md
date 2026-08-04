@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from: /sv/request/learn/howto/split-message
+language: sv
 ---
-
-# Dela meddelande
 
 Om ett meddelande innehåller två frågor som bör hanteras separat, kan du dela meddelandet i två och skapa ett nytt ärende för en av frågorna. Detta är användbart om ett meddelande innehåller både en teknisk fråga och en fakturafråga, eftersom dessa hanteras av olika avdelningar.
 

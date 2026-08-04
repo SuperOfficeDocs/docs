@@ -7,14 +7,12 @@ author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5
 content_type: concept
+tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: growth
-language: sv
 redirect_from: /sv/chat/learn/screen/index
+language: sv
 ---
-
-# Chatt
 
 Med **chattfunktionen** i SuperOffice kan dina handläggare och säljare kommunicera med och hjälpa befintliga eller potentiella kunder och andra personer via chattwidgeten på företagets webbplats. Funktionen kan till exempel användas för service/support och informationssökning före köp. Du kan enkelt integrera [FAQ-artiklar][1], dokument/bilagor och [mallar][3] med chatten så att dina handläggare kan spara tid genom att använda fördefinierade texter som ger snabbare svar.
 

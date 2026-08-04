@@ -6,14 +6,12 @@ keywords: Tjänst, inställningar
 author: SuperOffice RnD
 date: 02.25.2025
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: sv
 redirect_from: /sv/admin/preferences/learn/global-preferences/password
+language: sv
 ---
-
-# Lösenordspolicy för Kundcenter
 
 Gå till <i class="ph ph-gear" aria-hidden="true"></i> **Inställningar** i navigatorn och välj fliken **Globala inställningar**. Sektionen **Lösenordspolicy för Kundcenter** innehåller följande alternativ:
 

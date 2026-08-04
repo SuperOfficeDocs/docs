@@ -7,13 +7,11 @@ author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: sv
 ---
-
-# Dubbletter
 
 När du skapar nya företag, projekt och urval utförs en dubblettkontroll automatiskt. Dubblettkontrollen söker efter identiska och liknande namn i SuperOffice-databasen för att undvika att skapa poster som redan finns i SuperOffice CRM (t.ex. företag), förutom att förhindra att poster med mycket liknande namn skapas.
 

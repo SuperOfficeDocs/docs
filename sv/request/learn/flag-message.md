@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from: /sv/request/learn/howto/flag-message
+language: sv
 ---
-
-# Hålla koll på meddelanden
 
 Komplexa ärenden kan ta lång tid att lösa. Detta kan innebära omfattande kommunikation mellan kunden och flera ärendehandläggare.
 

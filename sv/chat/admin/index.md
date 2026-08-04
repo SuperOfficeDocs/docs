@@ -7,15 +7,13 @@ author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5
 content_type: concept
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
-tier: growth
-language: sv
 redirect_from: /sv/chat/learn/admin/index
 index: true
+language: sv
 ---
-
-# Administrera chatt
 
 Med **chattfunktionen** i SuperOffice kan handläggarna och säljarna chatta med dina kunder, potentiella kunder och andra personer via chattfönstret på företagets webbplats. Den här funktionen kan till exempel användas till service/stöd och förskottsförsäljning och den är lätt att integrera med FAQ, dokument/bilagor och mallar. Chattfunktionen kan anges med flera chattkanaler och vara riktat mot olika områden som tekniskt stöd, produktfrågor och säljstöd.
 

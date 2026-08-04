@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Stoppa återkommande händelse
-
 När du stoppar den återkommande händelsen raderas alla förekomster av händelsen *efter* den du redigerade. Om händelsen är den första i en serie återkommande händelser raderas upprepningsmönstret och händelsen blir en "vanlig" händelse.
 
 ## Sluta upprepa (behåll denna instans)

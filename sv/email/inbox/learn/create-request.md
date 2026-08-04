@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Skapa ärende
-
 Du kan skapa ett nytt ärende i SuperOffice Service baserat på avsändaren och innehållet i ett e-postmeddelande. Ärendet kopplas automatiskt till rätt företag och kontakt om de känns igen.
 
 ## Steg

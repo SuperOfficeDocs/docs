@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Lägg till intressenter
-
 När du lägger till intressenter i en försäljning kan du antingen tilldela roller individuellt när du lägger till kontakter/företag, tilldela roller efter att alla intressenter har lagts till, eller använda en kombination av båda metoderna.
 
 Ett företag/en kontakt kan läggas till som en intressent flera gånger, förutsatt att olika roller specificeras varje gång.

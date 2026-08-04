@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
 ---
-
-# Skicka ditt utskick på nytt
 
 Om du, efter att ha tittat på resultatet av ditt utskick, märker att många e-postadresser har [returnerats][1] betyder det att dessa kontakter inte fick ditt utskick. När du har hanterat de returnerade e-postmeddelandena är det en bra idé att skicka ditt utskick på nytt.
 

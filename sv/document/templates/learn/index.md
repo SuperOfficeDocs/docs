@@ -8,11 +8,9 @@ date: 07.16.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: sv
 redirect_from: /sv/admin/lists/learn/document-template
+language: sv
 ---
-
-# Dokumentmall
 
 Det är viktigt för företagets profil att brev, fax och andra dokument har ett unikt och enhetligt utseende. Det betyder att alla dokument som skickas från företaget bör ha samma typsnitt, marginaler, logotyper och så vidare. Genom att skapa mallar som är anpassade för företaget kan du vara säker på att företagets kontakter lätt känner igen dokument från företaget.
 

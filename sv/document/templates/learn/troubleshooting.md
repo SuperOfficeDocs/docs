@@ -10,8 +10,6 @@ tier: starter
 language: sv
 ---
 
-# Felsökning
-
 ## Användning av mallvariabler i Microsoft 365-dokument
 
 När vi skapar ett dokument i SuperOffice extraherar vi allt innehåll i dokumentet som vanlig text som vårt mallutbytesystem använder för att identifiera och ersätta mallvariabler.

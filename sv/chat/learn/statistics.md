@@ -16,8 +16,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Visa chattstatistik
-
 The chat statistics can be used to improve the overall communication and agents' performance, as well as shorten the response time. You can view them in the **Dashboard** tab in the **Chat** screen.
 
 ![In the Chat Dashboard tab, you have a section showing the statistics of incoming chats -screenshot][img1]

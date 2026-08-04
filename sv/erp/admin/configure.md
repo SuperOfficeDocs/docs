@@ -11,7 +11,6 @@ license: development-tools
 tier: growth
 audience: settings
 audience_tooltip: Inställningar och underhåll
-language: sv
 redirect_from:
   - /sv/quote/learn/admin/sync/sync-configure-default-values
   - /sv/quote/learn/admin/sync/sync-configure-field-allocation
@@ -19,9 +18,8 @@ redirect_from:
   - /sv/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab
   - /sv/quote/learn/admin/sync/sync-set-sync-priority
 index: true
+language: sv
 ---
-
-# Konfigurera ERP-koppling
 
 När du har lagt till en ERP-koppling måste du konfigurera hur data ska synkroniseras mellan SuperOffice och ERP-systemet. Du gör detta med hjälp av knapparna längst ned på fliken **Synk** i fönstret Offert/Synk.
 

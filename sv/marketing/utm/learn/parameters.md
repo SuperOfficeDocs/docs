@@ -7,16 +7,14 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: concept
-category: marketing
-topic: conversion
 license: marketingpremium
 tier: plus
+category: marketing
+topic: conversion
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
 ---
-
-# UTM-parametrar
 
 Det finns fem standard UTM-parametrar som du kan lägga till i slutet av dina kampanjlänkar:
 

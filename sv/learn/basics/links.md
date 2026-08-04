@@ -7,16 +7,14 @@ author: Bergfrid Skaara Dias
 date: 02.25.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: sv
 redirect_from:
   - /sv/diary/learn/linking-documents-to-follow-ups
   - /sv/project/learn/add-links
+language: sv
 ---
-
-# Länkar
 
 Använd fliken **Länkar** för att koppla relevanta aktiviteter, försäljningar, projekt, dokument eller webbplatser till en post. Till exempel, om du ska på ett möte med ett företag du tidigare har haft kontakt med, kan du lägga till länkar till dokument och försäljningar som redan skapats för företaget.
 

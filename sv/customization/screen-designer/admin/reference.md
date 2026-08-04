@@ -9,16 +9,14 @@ version: 12.0
 content_type: reference
 license: development-tools
 tier: core
-audience: settings
-audience_tooltip: Settings and maintenance
 category: customization
 topic: screen designer
-language: sv
-index: true
+audience: settings
+audience_tooltip: Settings and maintenance
 redirect_from: /sv/customization/screen-designer/reference
+index: true
+language: sv
 ---
-
-# Referens
 
 ## Företag
 

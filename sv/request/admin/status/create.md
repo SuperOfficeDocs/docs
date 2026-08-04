@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Inställningar och underhåll
-language: sv
 redirect_from: /sv/request/learn/status/create
+language: sv
 ---
-
-# Skapa ärendestatus
 
 ## Steg
 

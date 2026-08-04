@@ -7,18 +7,16 @@ author: SuperOffice RnD
 date: 07.15.2025
 version: 10.5
 content_type: howto
-category: service
-topic: faq
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
+category: service
+topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from: /sv/faq/learn/publish
+language: sv
 ---
-
-# Publicera FAQ-poster
 
 När en ärendhandläggare [skapar ett förslag på en FAQ-post][1] avpubliceras den och är inte längre tillgänglig i SuperOffice Customer Centre. För att göra den tillgänglig måste en person med FAQ-administrationsrättigheter publicera den.
 

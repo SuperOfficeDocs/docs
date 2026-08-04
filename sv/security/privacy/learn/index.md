@@ -7,14 +7,12 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: concept
+tier: starter
 category: privacy
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: sv
 ---
-
-# Integritet
 
 Med **Integritet**-funktionen i SuperOffice kan du skydda kundens personliga data och följa EU:s nya dataskyddsförordning (GDPR).
 

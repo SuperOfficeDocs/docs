@@ -7,13 +7,11 @@ author: digitaldiina
 date: 11.21.2025
 version: 11.6
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice Service
-tier: core
 language: sv
 ---
-
-# Använda ärenden i paneler
 
 Med dashboards får du en snabb överblick över ärenden och ärendestatistik i SuperOffice. Du kan anpassa panelerna så att de visar den information som är mest relevant för dig som handläggare. Du kan även [skapa dina egna dashboards][1] med paneler/diagram som du valt själv.
 

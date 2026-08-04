@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.27.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: settings
 audience_tooltip: Inställningar och underhåll
-index: true
 redirect_from:
   - /sv/admin/lists/learn/resource
   - /sv/admin/lists/learn/adding-items-to-resource-list
-tier: starter
+index: true
 language: sv
 ---
-
-# Lägg till resurs
 
 Resurser som mötesrum och projektorer definieras i fönstret **Listor** under Inställningar och underhåll. Typerna visas som poster i listan **Allmänt - Resurs**.
 

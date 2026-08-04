@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Händelser du har inbjudits till
-
 Deltagare som har bjudits in till en händelse får ett varningsmeddelande på toppraden.
 
 ![Få inbjudningar -screenshot][img2]

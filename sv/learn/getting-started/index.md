@@ -1,19 +1,17 @@
 ---
 uid: help-sv-getting-started
-title: Komma igång
+title: Komma igång med SuperOffice CRM
 description: Lär dig hur du aktiverar ditt användarkonto, ansluter e-post och dokument och gör personliga inställningar.
 keywords: CRM, komma igång
 author: Bergfrid Skaara Dias
 date: 05.04.2026
 version: 11.13
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: sv
 ---
-
-# Komma igång med SuperOffice CRM
 
 Välkommen till SuperOffice CRM! Oavsett om du är en ny användare eller uppgraderar från en tidigare version, hjälper den här guiden dig att navigera i systemet och få ut det mesta av dess funktioner.
 

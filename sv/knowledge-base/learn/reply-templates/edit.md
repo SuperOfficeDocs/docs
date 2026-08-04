@@ -7,20 +7,18 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: starter
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: sv
 redirect_from:
   - /sv/request/reply-templates/learn/delete
   - /sv/request/reply-templates/learn/edit
+language: sv
 ---
-
-# Redigera eller ta bort svarsmallar
 
 Att redigera en svarsmall kan innebära två olika saker:
 

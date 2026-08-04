@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-# Delegera händelse
-
 En tilldelad händelse är en händelse som du har delegerat till en annan kontakt.
 
 Exempel: En kollega är på semester men behöver ringa en kund när de kommer tillbaka. Du har bokat möte med en kund, men måste delegera det till någon annan.

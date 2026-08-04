@@ -7,15 +7,13 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: sv
 ---
-
-# Så skapar du en mapp
 
 Det är alltid en bra idé att definiera en välorganiserad mappstruktur för att få bättre överblick över dina utskick, formulär, flöden, mallar, länkar och bilder i SuperOffice Marketing.
 

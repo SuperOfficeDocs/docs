@@ -1,6 +1,7 @@
 ---
 uid: help-sv-sale-forecasting
 title: Övervaka din pipeline och prognostisera försäljning
+sidebarTitle: "Pipeline och prognos"
 description: Hur du övervakar din försäljningspipeline och prognostiserar din försäljning med hjälp av instrumentpaneler och urval.
 keywords: försäljning, prognos, pipeline
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: sv
 ---
-
-# Övervaka din pipeline och prognostisera försäljning
 
 För att nå dina försäljningsmål är det viktigt att ha en hälsosam pipeline. SuperOffice CRM erbjuder två huvudmetoder för att prognostisera försäljning och följa upp resultat: **instrumentpanelsbrickor** och **urval (Sök)**.
 

@@ -7,19 +7,17 @@ author: digitaldiina
 date: 10.21.2025
 version: 11.5
 content_type: howto
+tier: starter
 category: Settings and maintenance
 topic: options
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /sv/admin/options/learn/number-allocation/index
   - /sv/admin/options/learn/number-allocation/configure
-tier: starter
+index: true
 language: sv
 ---
-
-# Ange nummertilldelning
 
 Räknaren ökar värdet i fältet med 1 varje gång en ny förekomst används. Exempel: om det första företag du skapar i databasen tilldelas värdet 10001 i fältet **Nummer** kommer det nittonde företaget att tilldelas värdet **10019**.
 

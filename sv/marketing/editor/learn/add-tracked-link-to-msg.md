@@ -1,22 +1,20 @@
 ---
 uid: help-sv-mailing-add-tracked-link
-title: Inkludera länkar som du vill kunna spåra
+title: Lägga till spårade länkar i meddelandet
 description: Det finns två sätt att konfigurera dina länkar. Du kan antingen använda en förinställd spårad länk för att spåra klick från flera utskick eller skapa en ny länk som bara är tillgänglig i detta utskick. Läs om hur du lägger till en spårad länk i den här guiden.
 keywords: Marknadsföring
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /sv/marketing/tracked-links/learn/add-tracked-link-to-msg
 language: sv
 ---
-
-# Lägga till spårade länkar i meddelandet
 
 Genom att konfigurera länkar som leder läsare till olika innehåll på din webbplats kan du samla registreringar, svar och bevaka vilka produkter, erbjudanden och nyheter dina kunder är intresserade av.
 
