@@ -1,5 +1,6 @@
 ---
-title: Set up ModSecurity
+title: Install and configure ModSecurity on proxy server
+sidebarTitle: "Configure ModSecurity"
 uid: set_up_modsecurity
 description: Install and configure ModSecurity on Proxy Server for SuperOffice onsite
 author: SuperOffice Product and Engineering
@@ -8,8 +9,6 @@ content_type: howto
 deployment: onsite
 platform: web
 ---
-
-# Install and configure ModSecurity on proxy server
 
 The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection rules for use with [ModSecurity][1] or compatible web application firewalls. The CRS aims to protect web applications from a wide range of attacks, including the OWASP Top Ten, with a minimum of false alerts.
 

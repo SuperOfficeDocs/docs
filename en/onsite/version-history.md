@@ -1,5 +1,5 @@
 ---
-title: Onsite version history
+title: SuperOffice Onsite version history
 uid: version_history
 description: SuperOffice version history overview
 author: Martin Pavlas
@@ -8,8 +8,6 @@ keywords: ['onsite', 'version', 'history', 'release']
 content_type: reference
 deployment: onsite
 ---
-
-# SuperOffice Onsite version history
 
 An overview of Release names, with Release number, Date, and Build number.
 

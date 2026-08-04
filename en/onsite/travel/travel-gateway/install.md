@@ -1,5 +1,5 @@
 ---
-title: install travel gateway
+title: Manual install of Travel gateway service
 description: Manual install of travel gateway service
 author: SuperOffice Product and Engineering
 date:
@@ -7,8 +7,6 @@ content_type: howto
 deployment: onsite
 platform: win
 ---
-
-# Manual install of Travel gateway service
 
 The **SoTraGateService.exe** file may be run manually from the command prompt to install the service.
 

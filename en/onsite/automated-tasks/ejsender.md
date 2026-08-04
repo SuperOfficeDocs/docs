@@ -1,6 +1,6 @@
 ---
 uid: automated-task-ejsender
-title: Automated tasks ejSender
+title: ejSender
 description: Automated tasks in Service - ejSender
 keywords: ['ejsender']
 author: SuperOffice Product and Engineering
@@ -10,8 +10,6 @@ deployment: onsite
 category: Service
 redirect_from: /en/service/automated-tasks/ejsender
 ---
-
-# ejSender
 
 Responsible for sending out Mailings.
 

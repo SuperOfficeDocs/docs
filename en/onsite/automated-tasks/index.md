@@ -1,6 +1,6 @@
 ---
 uid: automated-tasks
-title: Automated tasks
+title: Automated tasks in Service
 description: Automated tasks in Service
 keywords: ['automated tasks']
 author: SuperOffice Product and Engineering
@@ -10,8 +10,6 @@ deployment: onsite
 category: Service
 redirect_from: /en/service/automated-tasks/
 ---
-
-# Automated tasks in Service
 
 In Service, several tasks are automated and run on a set schedule on the server. These tasks are carried out by the executables located in the *bin* folder of your Service installation.
 

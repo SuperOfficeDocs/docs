@@ -9,8 +9,6 @@ deployment: onsite
 platform: win
 ---
 
-# Travel number allocation
-
 This article explains how number allocations increment when a user goes on travel.
 
 Let's assume we are using a new database where no one has been on travel.

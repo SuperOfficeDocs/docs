@@ -1,6 +1,6 @@
 ---
 uid: api_scenario_win
-title: Integration in the Windows client
+title: "Integration scenarios: Window client"
 description: Integration in the Windows client
 author: Tony Yates
 date: 11.25.2021
@@ -9,8 +9,6 @@ content_type: reference
 deployment: onsite
 platform: win
 ---
-
-# Integration scenarios: Window client
 
 A flagship CRM platform, the SuperOffice CRM client has been the leading SuperOffice CRM product since 1989. SuperOffice CRM was created to support the needs of the salesperson by making his everyday life easier - and make it so user-friendly and elegant that the user would want to use it.
 

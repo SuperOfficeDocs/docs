@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# Network and firewall configuration
-
 Most companies today employ firewalls to filter traffic, separate networks into logic sections, and as a deterrent to stop attackers from egressing network boundaries.
 
 No matter what deployment scenario your company is facing, there is some general advice on firewall configuration that holds true. Traditional network segmentation often splits a network into logically separated network blocks as follows:

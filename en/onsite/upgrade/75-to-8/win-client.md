@@ -1,5 +1,6 @@
 ---
-title: Upgrade Windows client
+title: How to upgrade SuperOffice 7 Windows clients to SuperOffice 8 Windows App
+sidebarTitle: "Upgrade Windows client 7 to 8"
 uid: upgrade_win_client_to_8
 description: Upgrade Windows client
 author: SuperOffice Product and Engineering
@@ -7,8 +8,6 @@ content_type: howto
 deployment: onsite
 platform: win
 ---
-
-# How to upgrade SuperOffice 7 Windows clients to SuperOffice 8 Windows App
 
 ## Before you begin
 

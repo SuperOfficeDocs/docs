@@ -11,8 +11,6 @@ deployment: onsite
 redirect_from: /en/service/automated-tasks/importmail
 ---
 
-# importMail
-
 Responsible for importing mail into Service.
 
 **Usage:** `importMail [OPTION] domain`

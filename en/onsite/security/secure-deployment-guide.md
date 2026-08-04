@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# Deploy SuperOffice securely onsite
-
 Here you will find articles to help you to securely deploy SuperOffice onsite for the Web client.
 
 ## Security features of SuperOffice

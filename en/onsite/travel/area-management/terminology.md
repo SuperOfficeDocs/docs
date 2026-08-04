@@ -9,8 +9,6 @@ deployment: onsite
 platform: win
 ---
 
-# Terminology
-
 To fully understand how Area Management works, you should read the definitions below. The fields can be found in the dialog boxes Area Management and Area Definition.
 
 * **Defined Areas:** Displays the name of the area that is defined.

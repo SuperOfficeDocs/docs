@@ -1,6 +1,6 @@
 ---
 uid: service-log-files
-title: Log files
+title: Service log files
 description: Service log files
 keywords: ['log', 'debug']
 author: SuperOffice Product and Engineering
@@ -9,8 +9,6 @@ content_type: concept
 deployment: onsite
 redirect_from: /en/service/log-files
 ---
-
-# Service log files
 
 Log files from Customer Service are stored in *C:\SuperOffice\Customer Service\log* unless you have installed it to a different path.
 

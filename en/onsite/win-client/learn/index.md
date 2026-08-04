@@ -133,8 +133,6 @@ redirect_from:
 hidden: true
 ---
 
-# Windows Client settings
-
 Windows Client settings is the legacy Windows-based administration client for SuperOffice CRM. Documentation is available on [help.superoffice.com][1].
 
 [1]: https://help.superoffice.com/docs/10.3/en/onsite/win-client/learn/index.html

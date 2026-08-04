@@ -10,8 +10,6 @@ content_type: concept
 deployment: onsite
 ---
 
-# CrmSetup and CrmTask utilities
-
 SuperOffice 11.6 Onsite has two tools to replace **ServerSetup** and **DBSetup**.
 
 **CrmSetup** is for installation and maintenance of database and document templates. It covers tasks like installation, upgrade, inspection, import, export, and transfer of the database.

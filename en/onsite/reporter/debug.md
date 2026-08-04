@@ -1,5 +1,5 @@
 ---
-title: Debug
+title: Enable debug for Web Reporter
 uid: enable_debug_of_reporter
 description: Enable debug for Web Reporter
 author: SuperOffice Product and Engineering
@@ -7,8 +7,6 @@ content_type: howto
 deployment: onsite
 platform: web
 ---
-
-# Enable debug for Web Reporter
 
 Debug logging for Reporter in Web can be enabled in *SoReporter.Executer.exe.config* file, which is located in *\<Web installation>\bin\Reporter* folder.
 
