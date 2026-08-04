@@ -2,7 +2,7 @@
 uid: help-no-request-forward
 title: Videresend sak til ekstern person
 description: Lær hvordan du videresender en sak i denne veiledningen.
-keywords: videresend sak, sak
+keywords: ['videresend sak', 'sak']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

@@ -2,7 +2,7 @@
 uid: help-no-chat-admin
 title: Chatadministrasjon
 description: Live Chat er en populær måte for kunder og potensielle kunder å komme i kontakt med deg når de besøker websiden din. Denne veiledningen viser hvordan du konfigurerer chatwidgeten og deretter legger den til på websiden din.
-keywords: chatbot, connector, AI
+keywords: ['chatbot', 'connector', 'AI']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
 version: 10.5

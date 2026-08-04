@@ -3,7 +3,7 @@ uid: help-no-mailing-send-test
 title: Sende en test-e-post for e-postutsendelser og skjemasvar
 sidebarTitle: "Sende test-e-post"
 description: I denne veiledningen lærer du hvordan du sender en testutsendelse.
-keywords: Markedsføring
+keywords: ['Markedsføring']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 content_type: howto

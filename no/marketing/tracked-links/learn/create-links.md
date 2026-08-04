@@ -2,7 +2,7 @@
 uid: help-no-mailing-create-tracked-link
 title: Opprette sporet kobling
 description: Hvordan opprette sporede koblinger i SuperOffice CRM. Disse lenkene vil da være tilgjengelige når du og andre brukere redigerer innholdet i utsendelsene dine. Dette muliggjør effektiv sporing av brukerinteraksjon med e-postene.
-keywords: Markedsføring, sporet kobling
+keywords: ['Markedsføring', 'sporet kobling']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

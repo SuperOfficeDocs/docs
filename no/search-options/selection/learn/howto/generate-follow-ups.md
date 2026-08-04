@@ -2,7 +2,7 @@
 uid: help-no-selection-generate-follow-ups
 title: Lag oppfølginger
 description: Genererer oppfølging
-keywords: utvalg
+keywords: ['utvalg']
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3

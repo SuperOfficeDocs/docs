@@ -3,7 +3,7 @@ uid: help-no-invitation
 title: Invitere andre medarbeidere til en oppfølging
 sidebarTitle: "Invitere medarbeidere"
 description: Opprette oppfølginger med medarbeiderne dine
-keywords: dagbok, oppfølging, invitasjon, møte, deltager, kalender
+keywords: ['dagbok', 'oppfølging', 'invitasjon', 'møte', 'deltager', 'kalender']
 author: digitaldiina
 date: 03.27.2026
 version: 11.11

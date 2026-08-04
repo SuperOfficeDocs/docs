@@ -2,7 +2,7 @@
 uid: help-no-language-change
 title: Endre aktivt språk
 description: Endre aktivt språk
-keywords: endre språk, Aktivt språk
+keywords: ['endre språk', 'Aktivt språk']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

@@ -2,7 +2,7 @@
 uid: help-no-knowledge-base
 title: Kunnskapsbase
 description: Kunnskapsbase
-keywords: sak, kunnskapsbase
+keywords: ['sak', 'kunnskapsbase']
 author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5

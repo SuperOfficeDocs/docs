@@ -2,7 +2,7 @@
 uid: help-no-translate-fields
 title: Oversettelse
 description: Oversettelse av felt i SuperOffice
-keywords: oversett
+keywords: ['oversett']
 author: digitaldiina
 date: 10.09.2025
 version: 11.5

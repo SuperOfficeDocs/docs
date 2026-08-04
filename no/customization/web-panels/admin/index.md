@@ -2,7 +2,7 @@
 uid: help-no-ui-web-panels
 title: Nettleserfaner
 description: Nettleserfaner
-keywords: nettleserfane, www fane
+keywords: ['nettleserfane', 'www fane']
 author: digitaldiina
 date: 10.13.2025
 version: 11.5

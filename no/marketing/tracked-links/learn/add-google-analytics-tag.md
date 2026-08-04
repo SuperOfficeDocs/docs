@@ -3,7 +3,7 @@ uid: help-no-mailing-add-google-analytics
 title: Slik legger du til emneknaggen Google Analytics i en utsendelse
 sidebarTitle: "Google Analytics-emneknagg"
 description: I denne veiledningen lærer du hvordan du sporer de besøkende.
-keywords: Markedsføring, Google Analytics, utsendelse
+keywords: ['Markedsføring', 'Google Analytics', 'utsendelse']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

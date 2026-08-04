@@ -2,7 +2,7 @@
 uid: help-no-request-type-create
 title: Legg til sakstype
 description: Legg til sakstype
-keywords: opprett sakstype, ny sakstype, legg til sakstype, sakstype, fanen Sakstyper, type, sak
+keywords: ['opprett sakstype', 'ny sakstype', 'legg til sakstype', 'sakstype', 'fanen Sakstyper', 'type', 'sak']
 author: Bergfrid Dias
 date: 02.05.2025
 version: 10.5.1

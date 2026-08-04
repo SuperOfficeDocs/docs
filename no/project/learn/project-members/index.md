@@ -2,7 +2,7 @@
 uid: help-no-project-members
 title: Prosjektdeltakere
 description: Prosjektdeltakere
-keywords: prosjektdeltake, detaljkortet Prosjektdeltakere, prosjekt, deltaker
+keywords: ['prosjektdeltake', 'detaljkortet Prosjektdeltakere', 'prosjekt', 'deltaker']
 author: SuperOffice RnD
 date: 01.31.2025
 version: 10.5

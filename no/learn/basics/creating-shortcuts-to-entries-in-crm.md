@@ -3,7 +3,7 @@ uid: help-no-creating-shortcuts-to-entries-in-crm
 title: Lage snarveier til oppføringer i SuperOffice CRM
 sidebarTitle: "Lage snarveier"
 description: Lage snarveier til oppføringer i CRM
-keywords: kopier snarvei
+keywords: ['kopier snarvei']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
 version: 11.3

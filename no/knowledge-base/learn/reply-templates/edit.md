@@ -2,7 +2,7 @@
 uid: help-no-reply-template-edit
 title: Rediger eller slett svarmaler
 description: Lær hvordan du redigerer eller sletter en svarmal.
-keywords: rediger svarmal, slett svarmal, svarmal, mal
+keywords: ['rediger svarmal', 'slett svarmal', 'svarmal', 'mal']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

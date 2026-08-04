@@ -2,7 +2,7 @@
 uid: help-no-more-tab
 title: Mer-fanen
 description: Lær hvordan du bruker Mer-fanen i SuperOffice CRM for å vise og administrere brukerdefinerte felt for firmaer, personer, salg, prosjekter, oppfølginger og dokumenter.
-keywords: Mer-fane, udef, brukerdefinert felt, ekstra felt, tilpasset felt
+keywords: ['Mer-fane', 'udef', 'brukerdefinert felt', 'ekstra felt', 'tilpasset felt']
 author: Bergfrid Skaara Dias
 date: 06.10.2026
 version: 12.0

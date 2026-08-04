@@ -2,7 +2,7 @@
 uid: help-no-tracked-links-reset
 title: Nullstille tellere for koblinger
 description: Nullstille tellere for koblinger
-keywords: Markedsføring, utsendelse, kobling, teller
+keywords: ['Markedsføring', 'utsendelse', 'kobling', 'teller']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

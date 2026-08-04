@@ -2,7 +2,7 @@
 uid: help-no-selection-board-view
 title: Bruk tavlevisning i utvalg
 description: Visualiser utvalg med tavlevisning med gruppering, filtre og dra-og-slipp-kort
-keywords: tavlevisning, utvalgsvisning, utvalg, salgstavle, prosjekttavle, sakstavle, kanban, gruppér etter, verktøylinje for filter, salgsdato-merke, dager i fase, dager siden registrert
+keywords: ['tavlevisning', 'utvalgsvisning', 'utvalg', 'salgstavle', 'prosjekttavle', 'sakstavle', 'kanban', 'gruppér etter', 'verktøylinje for filter', 'salgsdato-merke', 'dager i fase', 'dager siden registrert']
 author: digitaldiina
 date: 12.02.2025
 version: 11.7

@@ -2,7 +2,7 @@
 uid: help-no-request-message-split
 title: Dele melding
 description: Dele melding
-keywords: dele melding, sak, melding
+keywords: ['dele melding', 'sak', 'melding']
 author: digitaldiina
 date: 06.10.2026
 version: 12.0

@@ -2,7 +2,7 @@
 uid: help-no-flow-participants
 title: Flytdeltakere
 description: En fullstendig oversikt over alle flytdeltakere.
-keywords: flyt, markedsføring, deltaker, flytdeltaker, melde på, deltakerstatus
+keywords: ['flyt', 'markedsføring', 'deltaker', 'flytdeltaker', 'melde på', 'deltakerstatus']
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5

@@ -2,7 +2,7 @@
 uid: help-no-erp-configure
 title: Konfigurere ERP-kobling
 description: Konfigurer synkronisering mellom SuperOffice CRM og ERP-systemet ved å tilordne felter, angi standardverdier og prioritere ERP-koblinger.
-keywords: ERP-kobling, konfigurere synk, felttilordning, listetilordning, standardverdier, ranger ERP-felter, angi synkprioritet, redigere ERP-kobling, SuperOffice ERP-integrasjon, ERP-fane, sync connector
+keywords: ['ERP-kobling', 'konfigurere synk', 'felttilordning', 'listetilordning', 'standardverdier', 'ranger ERP-felter', 'angi synkprioritet', 'redigere ERP-kobling', 'SuperOffice ERP-integrasjon', 'ERP-fane', 'sync connector']
 author: Bergfrid Dias
 date: 03.31.2025
 version: 10.5

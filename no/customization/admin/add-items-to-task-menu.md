@@ -2,7 +2,7 @@
 uid: help-no-task-menu-add
 title: Legge til elementer i Oppgave-menylisten
 description: Legge til elementer i Oppgave-menylisten
-keywords: Oppgave-meny
+keywords: ['Oppgave-meny']
 author: digitaldiina
 date: 05.04.2026
 version: 11.13

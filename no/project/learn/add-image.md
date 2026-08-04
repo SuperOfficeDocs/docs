@@ -2,7 +2,7 @@
 uid: help-no-project-image-add
 title: Legg til eller endre et prosjektbilde
 description: Legg til eller endre et prosjektbilde
-keywords: legg til bilde, prosjektbilde, prosjekt, fanen Bilde
+keywords: ['legg til bilde', 'prosjektbilde', 'prosjekt', 'fanen Bilde']
 author: Bergfrid Dias
 date: 01.30.2025
 version: 10.5.1

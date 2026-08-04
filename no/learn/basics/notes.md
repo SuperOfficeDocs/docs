@@ -2,7 +2,7 @@
 uid: help-no-notes
 title: Ta notater
 description: Ta notater
-keywords: Notatfane, ta notater, opprette notat, notat, notatblokk
+keywords: ['Notatfane', 'ta notater', 'opprette notat', 'notat', 'notatblokk']
 author: SuperOffice RnD
 date: 01.29.2025
 version: 10.5

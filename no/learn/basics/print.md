@@ -2,7 +2,7 @@
 uid: help-no-print
 title: Utskrift av poster i SuperOffice CRM
 description: Denne veiledningen gir en oversikt over hvordan du skriver ut poster som firmaer, personer, salg, prosjekter og oppfølginger, noe som gjør det praktisk å ha papirversjoner for møter, dokumentasjon eller videre analyse.
-keywords: skriv ut, utskrift
+keywords: ['skriv ut', 'utskrift']
 author: Bergfrid Dias
 date: 01.29.2025
 version: 10.5

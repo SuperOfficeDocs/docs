@@ -2,7 +2,7 @@
 uid: help-no-recurrence-stop
 title: Stoppe repeterende oppfølging
 description: Stoppe repeterende oppfølging
-keywords: stopp gjentakelse, stopp repetisjon, avbryt repetisjon, møteserie, repeterende oppfølging, repeterende møte, dagbok, oppfølging, gjenta, fremtidige instanser
+keywords: ['stopp gjentakelse', 'stopp repetisjon', 'avbryt repetisjon', 'møteserie', 'repeterende oppfølging', 'repeterende møte', 'dagbok', 'oppfølging', 'gjenta', 'fremtidige instanser']
 author: Bergfrid Dias
 date: 02.05.2025
 version: 10.5.2

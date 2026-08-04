@@ -2,7 +2,7 @@
 uid: help-no-email-inbox-create-request
 title: Opprett sak
 description: Lær hvordan du oppretter en sak i SuperOffice Service basert på en e-postmelding
-keywords: opprett sak, innboks, service, sak, kundeservice, e-post, forespørsel
+keywords: ['opprett sak', 'innboks', 'service', 'sak', 'kundeservice', 'e-post', 'forespørsel']
 author: Bergfrid Dias
 date: 05.28.2025
 version: 10.5
