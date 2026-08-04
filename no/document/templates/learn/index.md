@@ -8,11 +8,9 @@ date: 07.11.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: no
 redirect_from: /no/admin/lists/learn/document-template
+language: no
 ---
-
-# Dokumentmal
 
 Det er viktig for en organisasjons profil at brev, fakser og andre dokumenter har et unikt og helhetlig utseende. Det betyr at alle dokumenter som sendes ut av organisasjonen, bør bruke samme skrifttyper, marger, logoer og så videre. Ved å lage maler som er tilpasset din organisasjon, sikrer du at organisasjonens personer lett gjenkjenner organisasjonens korrespondanse.
 

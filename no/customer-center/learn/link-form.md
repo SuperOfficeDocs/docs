@@ -1,19 +1,17 @@
 ---
 uid: help-no-customer-centre-form
-title: Slik knytter du et webskjema til kundesenteret
+title: Bruke webskjemaer i kundesenteret
 description: I denne guiden lærer du hvordan du bruker et webskjema.
+keywords: skjema, Kundesenter
 author: Bergfrid Dias
 date: 03.20.2023
-keywords: skjema, Kundesenter
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 
-tier: growth
 language: no
 ---
-
-# Bruke webskjemaer i kundesenteret
 
 Du kan bruke integrerte webskjemaer til å registrere informasjon fra kundene som besøker kundesenteret ditt, og automatisk lagre denne informasjonen i SuperOffice.
 

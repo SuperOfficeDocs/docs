@@ -10,8 +10,6 @@ tier: starter
 language: no
 ---
 
-# Feilsøking
-
 ## Bruk av malvariabler i Microsoft 365-dokumenter
 
 Når vi oppretter et dokument i SuperOffice, trekker vi ut alt innholdet i dokumentet som ren tekst, som vårt malutskiftingssystem bruker for å identifisere og erstatte malvariabler.

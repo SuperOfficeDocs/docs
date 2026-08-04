@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Bruk tavlevisning i utvalg
-
 Tavlevisning viser ditt [utvalg][2] i et kolonnebasert oppsett med kort. Du kan gruppere og filtrere utvalgsmedlemmene (postene som vises på tavlen), og bruke dra-og-slipp for å flytte kort mellom grupper.
 
 Funksjonaliteten er lik på tvers av støttede posttyper: Du kan dra kort, åpne oppgavemenyer og justere tavleinnstillinger. Tilgjengelige grupperings- og filterfelter varierer avhengig av om du jobber med firma, personm, salg, prosjekter eller saker.

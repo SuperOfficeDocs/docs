@@ -1,19 +1,17 @@
 ---
 uid: help-no-getting-started
-title: Komme i gang
+title: Komme i gang med SuperOffice CRM
 description: Finn ut hvordan du aktiverer brukerkontoen din, kobler til e-post og dokumenter og angir personlige preferanser.
 keywords: CRM
 author: Bergfrid Dias
 date: 05.04.2026
 version: 11.13
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: no
 ---
-
-# Komme i gang med SuperOffice CRM
 
 Velkommen til SuperOffice CRM! Enten du er en ny bruker eller går over fra en tidligere versjon, vil denne veiledningen hjelpe deg med å navigere i systemet og få mest mulig ut av funksjonene.
 

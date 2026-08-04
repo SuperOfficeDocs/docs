@@ -2,14 +2,12 @@
 uid: help-no-service-screen-properties
 title: Egenskaper for bilde
 description: Egenskaper for bilde
+keywords: bilde
 author: SuperOffice RnD
 date: 06.29.2022
-keywords: bilde
 content_type: reference
 language: no
 ---
-
-# Egenskaper for bilde
 
 Her kan du redigere egenskapene for et bilde. Du kan opprette et skript for å forhåndsberegne variabler, enten basert på CGI-variabler som bildet henter via en URL, eller på en skjemapost i gjeldende bilde eller et annet bilde.
 

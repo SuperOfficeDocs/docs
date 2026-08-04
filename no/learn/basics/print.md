@@ -7,17 +7,15 @@ author: Bergfrid Dias
 date: 01.29.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: no
 redirect_from:
   - /no/company/learn/print
   - /no/contact/learn/print
   - /no/diary/learn/print
+language: no
 ---
-
-# Utskrift av poster i SuperOffice CRM
 
 Utskriftsfunksjonen i SuperOffice CRM lar deg enkelt generere utskriftsversjoner av viktige poster, som firmaer, personer, salg, prosjekter og oppfølginger. Denne veiledningen gir en oversikt over hvordan du skriver ut disse postene, noe som gjør det praktisk å ha papirversjoner for møter, dokumentasjon eller videre analyse.
 

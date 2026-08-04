@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 01.29.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: no
 redirect_from:
   - /no/diary/learn/linking-documents-to-follow-ups
   - /no/project/learn/add-links
+language: no
 ---
-
-# Koblinger
 
 Bruk fanen **Koblinger** for å koble relevante aktiviteter, salg, prosjekter, dokumenter eller nettsteder til en post. For eksempel, hvis du skal i et møte med et firma du har kommunisert med tidligere, kan du legge til koblinger til dokumenter og salg du allerede har opprettet for dette firmaet.
 

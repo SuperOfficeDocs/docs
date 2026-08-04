@@ -15,8 +15,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Sett opp salgsmål
-
 Hold oversikt over budsjettene dine ved å sette opp salgsmål. Dette vil hjelpe deg med å fastsette de riktige forventningene, planlegge veksten din, øke motivasjonen og spare tid.
 
 ![Måldialogtabellen gir deg en oversikt over nåværende og tidligere salgsmål -screenshot][img1]

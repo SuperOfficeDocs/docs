@@ -7,19 +7,17 @@ author: SuperOffice Product and Engineering
 date: 07.10.2025
 version: 10.5
 content_type: reference
+tier: core
+category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
-category: customization
-index: true
-tier: core
-language: no
 redirect_from:
   - /no/admin/learn/screen/package-properties
   - /no/admin/learn/package-properties
   - /no/customization/admin/index
+index: true
+language: no
 ---
-
-# Egenskaper for pakke
 
 I <i class="ph ph-selection-all" aria-hidden="true"></i> **Systemdesign** og på fanen **Pakker** kan du redigere egenskapene til og innholdet i en pakke. Hvis det er en ulåst installert pakke, kan du også angi hva som skal installeres. Hvis pakken ble opprettet i dette systemet, kan du legge til og fjerne elementer, avhengig av hva du vil ta med i pakken. Hvis pakken ble opprettet i et annet system, men lastet opp til dette systemet, kan du i dette bildet velge hvilke deler du vil skal bli installert, forutsatt at pakken ikke er låst.
 

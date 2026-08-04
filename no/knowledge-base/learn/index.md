@@ -7,18 +7,16 @@ author: SuperOffice Product and Engineering
 date: 03.24.2023
 version: 10.5
 content_type: reference
-category: service
-topic: knowledge base
+functional_right: knowledge-base
 license: serviceessentials
 tier: core
-functional_right: knowledge-base
+category: service
+topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-language: no
 redirect_from: /no/request/learn/screen/knowledge-base
+language: no
 ---
-
-# Kunnskapsbase
 
 **Kunnskapsbasen** er tilgjengelig fra **Hovedmenyen** i toppraden og gir saksbehandlerne tilgang til lagrede data på ett sentralt sted, slik at det er enkelt å finne informasjon og gjøre den tilgjengelig for personer. Du kan bruke kunnskapsbasen både som et oppslagsverk og som en base hvor du kan hente ut informasjon du kan gjenbruke i kommunikasjon med personer. Kunnskapsbasen består av følgende hoveddeler:
 

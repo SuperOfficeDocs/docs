@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: no
 ---
-
-# Nullstille tellere for koblinger
 
 Noen ganger er det behov for å nullstille antall klikk. Dette kan f.eks. være aktuelt etter at du har [sendt en testmelding][6], slik at ikke din egen og andres klikking på koblinger i forbindelse med testingen kommer med på oversikten.
 

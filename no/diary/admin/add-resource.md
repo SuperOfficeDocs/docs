@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.27.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /no/admin/lists/learn/resource
   - /no/admin/lists/learn/adding-items-to-resource-list
-tier: starter
+index: true
 language: no
 ---
-
-# Legg til ressurs
 
 Ressurser som møterom og projektorer defineres i **Lister**-bildet i Innstillinger og vedlikehold. Typene vises som forekomster i listen **Generelt - Ressurs**.
 

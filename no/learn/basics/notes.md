@@ -7,13 +7,11 @@ author: SuperOffice RnD
 date: 01.29.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: no
 ---
-
-# Ta notater
 
 I SuperOffice CRM kan du legge til notater til et firma, en person, et salg, et prosjekt eller et utvalg. Disse notatene kan brukes til å lagre all slags informasjon og kan søkes opp via [Fritekstsøk][1].
 

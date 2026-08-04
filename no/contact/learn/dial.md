@@ -1,19 +1,17 @@
 ---
 uid: help-no-contact-dial
-title: Ringe personer
+title: Ringe til personer
 description: Ringe personer; Telefonpreferanser
 keywords: dagbok, oppfølging, telefon, samtale, ringe
 author: digitaldiina
 date: 12.05.2025
 version: 11
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: no
 ---
-
-# Ringe til personer
 
 Hvis IP-telefonløsningen er riktig konfigurert, kan du ringe til personer fra SuperOffice CRM på en av følgende måter:
 

@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: no
 ---
-
-# Opprette sporet kobling
 
 Du kan opprette sporbare URL-er i fanen **Sporede koblinger**. Disse lenkene vil da være tilgjengelige når du og andre brukere redigerer innholdet i utsendelsene dine. Dette muliggjør effektiv sporing av brukerinteraksjon med e-postene.
 

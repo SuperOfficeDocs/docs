@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: no
 ---
 
-# Opprett oppgave
-
 Du kan raskt opprette en oppgave basert på en e-postmelding i SuperOffice-innboksen. Den nye oppgaven kobles automatisk til avsenderen, og du kan også knytte den til et prosjekt, salg eller annen kontekst.
 
 ## Trinn

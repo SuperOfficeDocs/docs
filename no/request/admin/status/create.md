@@ -11,12 +11,10 @@ license: serviceessentials
 tier: starter
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-language: no
 redirect_from: /no/request/learn/status/create
 index: true
+language: no
 ---
-
-# Opprette saksstatus
 
 ## Trinn
 

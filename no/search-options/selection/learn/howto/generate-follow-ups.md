@@ -1,19 +1,17 @@
 ---
 uid: help-no-selection-generate-follow-ups
-title: Genererer oppfølging
+title: Lag oppfølginger
 description: Genererer oppfølging
 keywords: utvalg
 author: Bergfrid Dias
 date: 03.21.2025
 version: 10.5.3
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: no
 ---
-
-# Lag oppfølginger
 
 Du kan lage en oppfølging som for eksempel vises på aktivitetslisten til alle medlemmene av et utvalg. Dette er nyttig hvis firmaet ditt har lansert et nytt produkt, og du vil minne selgerne på å invitere kundene til en produktpresentasjon.
 

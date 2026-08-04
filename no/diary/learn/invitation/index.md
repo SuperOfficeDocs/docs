@@ -1,6 +1,7 @@
 ---
 uid: help-no-invitation
-title: Opprette oppfølginger med medarbeiderne dine
+title: Invitere andre medarbeidere til en oppfølging
+sidebarTitle: "Invitere medarbeidere"
 description: Opprette oppfølginger med medarbeiderne dine
 keywords: dagbok, oppfølging, invitasjon, møte, deltager, kalender
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: no
 ---
-
-# Invitere andre medarbeidere til en oppfølging
 
 Invitasjoner blir opprettet når du kaller inn til møter eller andre avtaler mellom ulike medlemmer av en bedrift. Du inviterer flere kolleger eller ressurser til å delta. Når en invitasjon blir akseptert, vil den vises i brukerens dagbok.
 

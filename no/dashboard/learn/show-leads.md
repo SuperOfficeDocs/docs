@@ -7,15 +7,13 @@ author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: howto
+tier: growth
 category: sale
 topic: lead
 audience: person
 audience_tooltip: SuperOffice Sales
-tier: growth
 language: no
 ---
-
-# Dashbord for leads
 
 Dashbord hjelper deg å overvåke leadvolum, kjøpsmodenhet, opprinnelse og konverteringstrender. Ved å kombinere figurer som viser hvor leads kommer fra, hvordan de utvikler seg, og hvordan de konverterer, kan du evaluere hvor effektive markedsførings- og salgsaktivitetene dine er.
 

@@ -7,14 +7,12 @@ author: Bergfrid Dias
 date: 01.28.2025
 version: 10.5
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: no
 redirect_from: /no/contact/learn/screen/index
+language: no
 ---
-
-# Person
 
 **Skjermbildet Person** gir et øyeblikksbilde av all kommunikasjon og samhandling med en person. Her kan du administrere kontaktopplysninger, spore aktiviteter og få tilgang til GDPR-relatert dokumentasjon - alt samlet på ett sted.
 

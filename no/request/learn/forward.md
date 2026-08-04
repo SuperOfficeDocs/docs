@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: no
 redirect_from: /no/request/learn/howto/forward
+language: no
 ---
-
-# Videresend sak til ekstern person
 
 Som saksbehandler er du ikke alltid i stand til å svare på en sak, selv med hjelp fra kollegene dine. Noen ganger kan du ha behov for å be andre om hjelp, for eksempel innhente råd fra en underleverandør, en partner eller en forretningsspesialist.
 

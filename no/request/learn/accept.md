@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: no
 redirect_from: /no/request/learn/howto/accept
+language: no
 ---
-
-# Overta (ta ansvar for) en sak
 
 Dette er spesielt aktuelt for ufordelte saker (saker som ikke har en definert eier). Hvis du vil overta en sak, er det viktig at du følger fremgangsmåten nedenfor for å markere at du har overtatt den. Ellers risikerer du at andre svarer på saken samtidig.
 

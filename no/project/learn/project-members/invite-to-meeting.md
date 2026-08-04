@@ -1,19 +1,18 @@
 ---
 uid: help-no-project-member-invite
-title: Invitere prosjektdeltakere til et møte
+title: Invitere prosjektdeltakere til et møte (oppfølging)
+sidebarTitle: "Invitere til møte"
 description: Slik inviterer du en prosjektdeltaker til et møte i SuperOffice
 keywords: be om møte, inviter prosjektdeltaker, prosjektdeltaker, prosjekt, deltaker, invitere, oppfølging
 author: SuperOffice RnD
 date: 01.31.2025
 version: 10.5
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: no
 ---
-
-# Invitere prosjektdeltakere til et møte (oppfølging)
 
 1. Åpne prosjektet, og gå til detaljkortet **Prosjektdeltakere**.
 2. Velg prosjektdeltakerne du vil invitere.

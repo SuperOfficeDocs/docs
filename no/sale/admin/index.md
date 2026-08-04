@@ -7,14 +7,12 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: howto
+tier: core
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-tier: core
-language: no
 index: true
+language: no
 ---
-
-# Administrere salgstyper, faser og guider
 
 SuperOffice CRM gir administratorer verktøy for å standardisere salgsprosesser ved hjelp av **salgstyper**, **faser** og **guider**. Disse funksjonene sikrer enhetlig oppfølging av salg, oppgavestyring og dokumenthåndtering i teamet ditt.
 

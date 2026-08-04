@@ -2,15 +2,13 @@
 uid: help-no-duplicates
 title: Duplikater
 description: Duplikater
+keywords: duplikat
 author: SuperOffice RnD
 date: 06.29.2022
-keywords: duplikat
 content_type: concept
 tier: starter
 language: no
 ---
-
-# Duplikater
 
 Når du oppretter nye firma, prosjekter og utvalg, utføres en duplikatkontroll automatisk. Duplikatkontrollen ser etter identiske og lignende navn i SuperOffice-databasen for å unngå å opprette oppføringer som allerede finnes i SuperOffice CRM (for eksempel firma), i tillegg til å hindre at det opprettes oppføringer med svært like navn.
 
