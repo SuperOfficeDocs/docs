@@ -74,7 +74,7 @@ MD043:
 MD044:
   names: ["SuperOffice", "NetServer", "JavaScript", "CRMScript"]
   code_blocks: false
-  html_elements: true
+  html_elements: false
 MD045: true
 MD046:
   style: "fenced"
