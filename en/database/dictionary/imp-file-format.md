@@ -9,8 +9,6 @@ content_type: reference
 language: en
 ---
 
-# IMP file format
-
 Imp files are **tab-delimited** data files used to populate tables with priming data. There are several configuration options that partners can leverage to control priming data in their applications. These files are conceptually broken into two components: a header section and a data section.
 
 ```text

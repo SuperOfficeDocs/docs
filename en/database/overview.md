@@ -1,6 +1,6 @@
 ---
 uid: database-documentation-overview
-title: database
+title: "Expander SDK: database documentation"
 description: SuperOffice database documentation
 keywords: ['database']
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ date: 07.28.2026
 content_type: concept
 language: en
 ---
-
-# Expander SDK: database documentation
 
 This documentation describes the internal SuperOffice database. It also explains the naming conventions and how the individual database tables are related to each other.
 

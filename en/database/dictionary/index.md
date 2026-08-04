@@ -1,6 +1,6 @@
 ---
 uid: cdd
-title: Continuous Database (CD)
+title: Data dictionary
 description: Continuous Database (CD)
 keywords: ['database']
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ date: 07.16.2026
 content_type: concept
 language: en
 ---
-
-# Data dictionary
 
 SuperOffice 8.1 changed the dictionary structure to allow more flexible evolution. We refer to this as CDD - **Continuous Database Development**.
 

@@ -1,6 +1,6 @@
 ---
 uid: ids_in_sequence
-title: Sequence
+title: Sequence - where do IDs come from
 description: Sequence - where do IDs come from
 keywords: ['database']
 author: SuperOffice Product and Engineering
@@ -8,8 +8,6 @@ date: 07.16.2026
 content_type: concept
 language: en
 ---
-
-# Sequence - where do IDs come from
 
 The ID numbers are stored in a table called `SEQUENCE`.
 
