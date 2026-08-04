@@ -15,8 +15,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Verkaufsziele festlegen
-
 Legen Sie Vertriebsziele fest, um den Überblick über Ihre Budgets zu behalten. Dies wird Ihnen helfen, die richtigen Erwartungen zu setzen, Ihr Wachstum zu planen, die Motivation zu steigern und Zeit zu sparen.
 
 ![Das Dialogfeld Ziele gibt Ihnen einen Überblick über Ihre aktuellen und früheren Verkaufsziele -screenshot][img1]

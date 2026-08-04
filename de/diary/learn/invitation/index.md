@@ -1,6 +1,7 @@
 ---
 uid: help-de-invitation
-title: Folgeaufgaben bei anderen Mitarbeitern eintragen
+title: Mitarbeiter zu einer Folgeaufgabe einladen
+sidebarTitle: "Mitarbeiter einladen"
 description: Folgeaufgaben bei anderen Mitarbeitern eintragen
 keywords: Kalender, Folgeaufgabe, Einladung, Besprechung, Teilnehmer, einladen
 author: digitaldiina
@@ -13,8 +14,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: de
 ---
-
-# Mitarbeiter zu einer Folgeaufgabe einladen
 
 Einladungen werden erstellt, wenn Besprechungen oder andere Vereinbarungen zwischen verschiedenen Mitgliedern eines Unternehmens abgehalten werden. Sie laden mehrere Kollegen oder Ressourcen ein, teilzunehmen. Wenn eine Einladung angenommen wird, wird sie im Benutzerkalender angezeigt.
 

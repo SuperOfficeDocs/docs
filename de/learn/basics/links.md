@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: de
 redirect_from:
   - /de/diary/learn/linking-documents-to-follow-ups
   - /de/project/learn/add-links
+language: de
 ---
-
-# Verknüpfungen
 
 Verwenden Sie die Registerkarte **Verknüpfungen**, um relevante Aktivitäten, Verkäufe, Projekte, Dokumente oder Websites mit einem Datensatz zu verknüpfen. Wenn Sie beispielsweise eine Besprechung mit einer Firma haben, mit der Sie bereits zuvor in Kontakt gestanden haben, können Sie Verknüpfungen zu den relevanten Dokumenten und Verkaufsvorgängen hinzufügen, die Sie bereits für diese Firma erstellt haben.
 

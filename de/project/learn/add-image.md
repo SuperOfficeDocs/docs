@@ -7,13 +7,11 @@ author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2
 content_type: howto
+tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: core
 language: de
 ---
-
-# Ein Projektbild hinzufügen oder ändern
 
 Die Registerkarte **Bild** ermöglicht das Hochladen und Verwalten von Bildern für ein Projekt.
 

@@ -7,19 +7,17 @@ author: digitaldiina
 date: 10.21.2025
 version: 11.5
 content_type: howto
+tier: starter
 category: Settings and maintenance
 topic: options
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /de/admin/options/learn/number-allocation/index
   - /de/admin/options/learn/number-allocation/configure
-tier: starter
+index: true
 language: de
 ---
-
-# Nummernzuweisung festlegen
 
 Mit einem Zähler wird der Wert des Felds bei jeder Registrierung um 1 erhöht. Zum Beispiel: Wenn die erste erstellte Firma in der Datenbank im Feld **Nummer** der Wert 10001 zugewiesen wird, erhält die neunzehnte Firma den Wert **10019**.
 

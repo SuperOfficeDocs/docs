@@ -1,23 +1,22 @@
 ---
 uid: help-de-print
-title: Drucken von Datensätzen
+title: Drucken von Datensätzen in SuperOffice CRM
+sidebarTitle: "Drucken"
 description: Diese Anleitung bietet einen Überblick darüber, wie Sie Datensätze wie Firmen, Persone, Verkäufe, Projekte und Folgeaufgaben drucken können, was es praktisch macht, Papierkopien für Meetings, Dokumentationen oder weiterführende Analysen zur Verfügung zu haben.
 keywords: Drucken
 author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2
 content_type: howto
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
-language: de
 redirect_from:
   - /de/company/learn/print
   - /de/contact/learn/print
   - /de/diary/learn/print
+language: de
 ---
-
-# Drucken von Datensätzen in SuperOffice CRM
 
 Die Druckfunktion in SuperOffice CRM ermöglicht es Ihnen, gedruckte Versionen wichtiger Datensätze wie Firmen, Persone, Verkäufe, Projekte und Folgeaufgaben zu erstellen. Diese Anleitung bietet einen Überblick darüber, wie Sie diese Datensätze drucken können, was es praktisch macht, Papierkopien für Meetings, Dokumentationen oder weiterführende Analysen zur Verfügung zu haben.
 

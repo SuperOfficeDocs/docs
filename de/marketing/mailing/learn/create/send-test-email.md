@@ -1,22 +1,21 @@
 ---
 uid: help-de-mailing-send-test
-title: Testkampagne durch Versenden einer Test-E-Mail
+title: Test-E-Mail für E-Mail-Kampagnen und Formularantworten senden
+sidebarTitle: "Test-E-Mail senden"
 description: In dieser Anleitung lernen Sie, wie Sie eine Testkampagne senden.
 keywords: Test-E-Mail
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# Test-E-Mail für E-Mail-Kampagnen und Formularantworten senden
 
 Nachdem Sie eine aussagekräftige Betreffzeile erstellt, Ihren Text hinzugefügt, Links und Bilder in Ihre E-Mail-Vorlage eingefügt haben, können Sie einige Tests durchführen, um zu überprüfen, ob die Kampagne ordnungsgemäß funktioniert und das Layout OK ist. Im Schritt **Inhalt** können Sie eine Test-E-Mail senden. Dies ist für Dokumente und SMS nicht relevant.
 

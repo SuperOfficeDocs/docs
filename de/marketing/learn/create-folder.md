@@ -1,21 +1,19 @@
 ---
 uid: help-de-marketing-create-folder
-title: Wie man einen Ordner in Marketing erstellt
+title: Wie man einen Ordner erstellt
 description: Wie man einen Ordner in Marketing erstellt
 keywords: Ordner, Unterordner, Ordner hinzufügen
 author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# Wie man einen Ordner erstellt
 
 Eine gut organisierte Ordnerhierarchie ist empfehlenswert, um Kampagnen, Formulare, Vorlagen, Links und Bilder in SuperOffice Marketing übersichtlich zu halten.
 

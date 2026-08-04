@@ -8,11 +8,9 @@ date: 12.10.2024
 version: 10.3
 content_type: concept
 tier: starter
-language: de
 redirect_from: /de/document/learn/template-variables
+language: de
 ---
-
-# Vorlagenvariablen
 
 Mit Vorlagenvariablen können Sie Daten aus SuperOffice in E-Mails, Angebote, Besprechungsbenachrichtigungen, Dokumentvorlagen usw. einfügen. Sie können Vorlagenvariablen verwenden, um die Eingabe von Kundendaten (oder Daten von Person, Verkauf und anderen) in Ihren Inhalt zu personalisieren und zu automatisieren und komplexe Angebote einzurichten.
 

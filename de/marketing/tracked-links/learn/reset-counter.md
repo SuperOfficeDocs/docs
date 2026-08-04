@@ -7,16 +7,14 @@ author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# Zähler für Links zurückstellen
 
 Manchmal ist es erforderlich, die Anzahl der Klicks auf null zurückzusetzen. Dieser Fall tritt zum Beispiel ein, nachdem Sie eine [Testnachricht gesendet][6] haben, damit Ihre eigenen Klicks und die Klicks der anderen während des Tests nicht in die Ergebnisse einfließen.
 

@@ -7,20 +7,18 @@ author: SuperOffice Product and Engineering
 date: 07.15.2025
 version: 10.5
 content_type: howto
-category: service
-topic: faq
+functional_right: knowledge-base
 license: servicepremium
 tier: growth
-functional_right: knowledge-base
+category: service
+topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from:
   - /de/faq/learn/delete
   - /de/faq/learn/edit
+language: de
 ---
-
-# FAQ-Einträge bearbeiten oder löschen
 
 ## FAQ-Einträge bearbeiten
 

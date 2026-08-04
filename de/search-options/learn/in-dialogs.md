@@ -7,13 +7,11 @@ author: Bergfrid Dias
 date: 02.11.2025
 version: 10.5.2
 content_type: concept
+tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
-tier: starter
 language: de
 ---
-
-# Schnellsuche in Dialogfeldern verwenden
 
 ![Schnellsuche -screenshot][img3]
 

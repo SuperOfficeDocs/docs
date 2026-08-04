@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.27.2025
 version: 10.5
 content_type: howto
+tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
 redirect_from:
   - /de/admin/lists/learn/resource
   - /de/admin/lists/learn/adding-items-to-resource-list
-tier: starter
+index: true
 language: de
 ---
-
-# Ressourcen hinzufügung
 
 Resourcen wie Besprechungsräume oder Projektoren werden in der Ansicht **Listen** in Einstellungen und Verwaltung definiert. Die Typen werden als Objekte in der Liste **Allgemein - Ressource** angezeigt.
 

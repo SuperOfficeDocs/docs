@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from: /de/request/learn/howto/forward
+language: de
 ---
-
-# Anfrage an externen Kontakt weiterleiten
 
 Als Bearbeiter einer Anfrage können Sie nicht immer selbst eine Antwort geben - selbst mit der Unterstützung Ihrer Kollegen. In manchen Fällen müssen Sie externe Hilfe einholen, z. B. von einem Lieferanten, Partner oder Branchenspezialisten.
 

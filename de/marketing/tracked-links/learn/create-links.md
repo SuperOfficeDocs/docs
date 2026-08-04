@@ -7,16 +7,14 @@ author: Bergfrid Dias
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
-topic: mailing
 license: marketingessentials
 tier: growth
+category: marketing
+topic: mailing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# Überwachte Links erstellen
 
 Sie können überwachbaren URLs im Tab **Überwachte Links** erstellen. Diese Links stehen dann zur Verfügung, wenn Sie und andere Benutzer des Inhalts der Kampagne bearbeiten. Dies ermöglicht eine effiziente Verfolgung der Benutzerinteraktion mit den E-Mails.
 

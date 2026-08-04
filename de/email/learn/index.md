@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# E-Mail
-
 E-Mail ist die beliebteste Form der Kommunikation zwischen Branchen. Mit SuperOffice CRM können Sie Ihre E-Mails auf verschiedene Arten speichern und teilen, damit Sie und Ihr Team produktiver arbeiten können.
 
 Wenn Sie Ihren [bevorzugten E-Mail-Client in SuperOffice integriert][13] haben, können Sie E-Mail-Dialoge und -Anhänge unter allen Optionen Firma, Person, Verkauf oder Projekt in Ihrem CRM-System speichern. Sie können E-Mails auch direkt als Folgeaufgabe oder Aktivitäten speichern - so vergessen Sie nie nachzufassen und nachzuverfolgen.

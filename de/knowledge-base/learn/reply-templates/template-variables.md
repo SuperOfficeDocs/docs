@@ -1,22 +1,20 @@
 ---
 uid: help-de-template-variables-service
-title: Vorlagenvariablen
+title: Vorlagenvariablen (Service)
 description: Vorlagenvariablen
 keywords: Vorlagenvariable
 author: digitaldiina
 date: 06.10.2026
 version: 12.0
 content_type: reference
+tier: starter
 category: service
 topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
-tier: starter
-language: de
 redirect_from: /de/request/reply-templates/learn/template-variables
+language: de
 ---
-
-# Vorlagenvariablen (Service)
 
 Sie können in der E-Mail-Nachricht Vorlagenvariablen verwenden, um kundenspezifische Informationen einzufügen, die der Mitteilung eine persönlichere Note verleihen. Dadurch können Sie den Inhalt an jeden Kunden individuell anpassen.
 

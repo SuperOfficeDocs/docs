@@ -14,8 +14,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Aufgabe erstellen
-
 Sie können basierend auf einer E-Mail im SuperOffice-Posteingang schnell eine Folgeaufgabe (Aufgabe) erstellen. Die neue Aufgabe wird automatisch mit dem Absender verknüpft und kann außerdem mit einem Projekt, Verkauf oder anderem Kontext verbunden werden.
 
 ## Schritte

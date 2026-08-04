@@ -11,11 +11,9 @@ license: serviceessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
-language: de
 redirect_from: /de/request/learn/howto/flag-message
+language: de
 ---
-
-# Nachrichten nachverfolgen
 
 Komplexe Anfragen können viel Zeit in Anspruch nehmen und erfordern oft eine umfangreiche Kommunikation zwischen dem Kunden und mehreren Bearbeitern.
 

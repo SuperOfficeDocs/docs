@@ -7,16 +7,14 @@ author: digitaldiina
 date: 11.06.2025
 version: 11.6
 content_type: concept
-category: marketing
-topic: conversion
 license: marketingpremium
 tier: plus
+category: marketing
+topic: conversion
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# UTM-Parameter
 
 Es gibt fünf Standard-UTM-Parameter, die Sie am Ende Ihrer Kampagnenlinks hinzufügen können:
 

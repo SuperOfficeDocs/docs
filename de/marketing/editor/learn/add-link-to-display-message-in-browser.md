@@ -1,21 +1,20 @@
 ---
 uid: help-de-mailing-open-in-browser
 title: Einen Link hinzufügen, um die Nachricht in einem Browser anzuzeigen
+sidebarTitle: "Link im Browser anzeigen"
 description: Einen Link hinzufügen, um die Nachricht in einem Browser anzuzeigen
 keywords: Marketing, Verknüpfen, Kampagne
 author: SuperOffice Product and Engineering
 date: 09.26.2025
 version: 10.5
 content_type: howto
-category: marketing
 license: marketingessentials
 tier: growth
+category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 language: de
 ---
-
-# Einen Link hinzufügen, um die Nachricht in einem Browser anzuzeigen
 
 Wenn der Empfänger Probleme mit der Anzeige der Mitteilung in seinem E-Mail-Programm hat (möglicherweise werden Bilder nicht angezeigt) oder die Mitteilung lieber in einem Browser lesen möchte, können Sie einen Link zur Anzeige der Mitteilung auf einer Webseite hinzufügen. Links dieser Art werden normalerweise zu Beginn der Nachricht eingefügt.
 

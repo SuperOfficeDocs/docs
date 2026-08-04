@@ -7,15 +7,13 @@ author: digitaldiina
 date: 03.17.2026
 version: 11.11
 content_type: howto
+tier: growth
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-tier: growth
-language: de
-index: true
 redirect_from: /de/customer-center/admin/index
+index: true
+language: de
 ---
-
-# Design der Abonnement-Seite
 
 Über die Abonnementseite können Personen verwalten, welche Mailings sie von Ihrem Unternehmen erhalten möchten. Die Seite ist verlinkt von:
 

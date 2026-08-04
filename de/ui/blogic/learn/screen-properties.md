@@ -2,14 +2,12 @@
 uid: help-de-service-screen-properties
 title: Eigenschaften der Ansichten
 description: Eigenschaften der Ansichten
+keywords: Ansicht
 author: SuperOffice RnD
 date: 06.29.2022
-keywords: Ansicht
 content_type: reference
 language: de
 ---
-
-# Eigenschaften der Ansichten
 
 Hier können Sie die Eigenschaften einer Ansicht bearbeiten. Sie können ein Skript zur Vorausberechnung von Variablen erstellen, z. B. basierend auf CGI-Variablen, die die Ansicht über eine URL erhält, oder basierend auf einem Formulareintrag in der aktuellen oder einer anderen Ansicht.
 

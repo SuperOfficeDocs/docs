@@ -2,15 +2,13 @@
 uid: help-de-customer-center-faq
 title: FAQs im Kundenzentrum veröffentlichen
 description: "In dieser Anleitung lernen Sie, wie Sie FAQs im Kundenzentrum veröffentlichen können."
+keywords: FAQ, Kundenzentrum
 author: Bergfrid Dias
 date: 06.10.2026
-keywords: FAQ, Kundenzentrum
 content_type: howto
 tier: growth
 language: de
 ---
-
-# FAQs im Kundenzentrum veröffentlichen
 
 FAQs (Frequently Asked Questions), die im Kundenzentrum veröffentlicht werden, sind eine sehr benutzerfreundliche Möglichkeit für Ihre Kunden, vom 24/7-Dienst Antworten auf ihre Fragen zu erhalten.
 

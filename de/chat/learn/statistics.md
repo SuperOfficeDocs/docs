@@ -16,8 +16,6 @@ audience_tooltip: SuperOffice CRM
 language: de
 ---
 
-# Chat-Statistik anzeigen
-
 Die Chat-Statistiken können verwendet werden, um die Gesamtkommunikation und die Leistung der Mitarbeiter zu verbessern sowie die Antwortzeit zu verkürzen. Sie können sie auf der Registerkarte **Dashboard** in der Ansicht **Chat** anzeigen.
 
 ![Auf der Registerkarte Chat-Dashboard haben Sie einen Bereich, in dem die Statistiken der eingehenden Chats angezeigt werden -screenshot][img1]

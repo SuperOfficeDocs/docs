@@ -11,7 +11,6 @@ license: development-tools
 tier: growth
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-language: de
 redirect_from:
   - /de/quote/learn/admin/sync/sync-configure-default-values
   - /de/quote/learn/admin/sync/sync-configure-field-allocation
@@ -19,9 +18,8 @@ redirect_from:
   - /de/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab
   - /de/quote/learn/admin/sync/sync-set-sync-priority
 index: true
+language: de
 ---
-
-# ERP-Verbindung konfigurieren
 
 Nachdem Sie eine ERP-Verbindung hinzugefügt haben, müssen Sie konfigurieren, wie Daten zwischen SuperOffice und dem ERP-System synchronisiert werden. Dies erfolgt über die Schaltflächen unten auf der Registerkarte **Sync** in der Ansicht Angebot/Sync.
 

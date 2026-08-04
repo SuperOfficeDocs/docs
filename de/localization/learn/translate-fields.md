@@ -7,17 +7,15 @@ author: digitaldiina
 date: 10.09.2025
 version: 11.5
 content_type: howto
-category: localization
-topic: language
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
+category: localization
+topic: language
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /de/globalization-and-localization/learn/translate-fields
 language: de
 ---
-
-# Übersetzung
 
 Die Standardfelder und andere UI-Texte sind in allen SuperOffice-Sprachen verfügbar. Wenn Sie eigene Felder oder Texte erstellen (beispielsweise Namen von Dashboards und Kacheln), können Sie sie in die Sprachen übersetzen, die in Ihrer Organisation verwendet werden.
 
