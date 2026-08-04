@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Control - try...catch
-
 CRMScript has a set of special statements to handle error-situations in your own scripts and react accordingly. This gives you the opportunity to recover, or fail gracefully instead of crashing.
 
 ## Try statement

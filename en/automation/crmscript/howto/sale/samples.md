@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/sale/howto/crmscript/samples
 ---
 
-# Samples
-
 ## List available sale types
 
 ```crmscript!

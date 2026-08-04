@@ -12,8 +12,6 @@ redirect_from: /en/automation/webhook/register
 language: en
 ---
 
-# Register a webhook
-
 Send the following request to register a webhook:
 
 ```json

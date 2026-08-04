@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Associate events
-
 These events are fired when associate rows are changed:
 
 * `associate.created`

@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Contact webhook events
-
 These webhook events are fired when contact rows are changed:
 
 * `contact.created`

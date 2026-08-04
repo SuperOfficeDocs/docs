@@ -6,8 +6,6 @@ author:
 date:
 ---
 
-# Email filter
-
 When you create an email filter you can add a script that should be executed.
 
 The script will be executed with the following variables set (accessible with `getVariable`):

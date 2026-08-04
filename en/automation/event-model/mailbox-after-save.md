@@ -1,13 +1,12 @@
 ---
-title: Mailbox after save
+title: Mailbox event, execute after message is saved
+sidebarTitle: "Mailbox: after save"
 uid: event_model_mailbox_after_save
 description: CRMScript event model - Mailbox event, execute after message is saved
 author:
 date:
 content_type: reference
 ---
-
-# Mailbox event, execute after message is saved
 
 This is a CRMScript you can add under the menu **System design** in the screen **System Script**.
 

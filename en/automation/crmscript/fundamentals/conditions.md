@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Control - if else and else if
-
 **Conditional statements** are one of the key control structures in CRMScript. They are used do different tasks based on whether the condition evaluates as true or false.
 
 For example, you are taking sign-ups for an event and start a waiting-list when all available seats are taken.

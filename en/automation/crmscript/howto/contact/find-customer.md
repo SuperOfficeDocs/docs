@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/contact/howto/crmscript/find-customer
 ---
 
-# Look up customers
-
 ## Bool findFromEmail(String email)
 
 Looks up a customer in the primary database based on an email address.

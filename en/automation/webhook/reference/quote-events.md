@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Quote webhook events
-
 These webhook events are fired when quotes are changed:
 
 * `quote.approved`

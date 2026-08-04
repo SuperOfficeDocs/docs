@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# List events
-
 Lists in SuperOffice can be both system-defined and user-defined.
 Most lists(both system-defined and user-defined) in SuperOffice are registered in the [UDListDefinition Table][1].
 

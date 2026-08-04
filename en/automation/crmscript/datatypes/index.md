@@ -8,8 +8,6 @@ date: 04.15.2024
 content_type: concept
 ---
 
-# Data types
-
 An in-depth guide to CRMScript data types.
 
 Let's recap the fundamentals:

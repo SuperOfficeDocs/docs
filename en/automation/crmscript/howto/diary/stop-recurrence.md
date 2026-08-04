@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/diary/howto/crmscript/stop-recurrence
 ---
 
-# Stop repeating follow-ups
-
 When you stop a [recurrence][1], all repetitions of the follow-up **after the occurrence you edit** are deleted.
 
 If you cancel the recurrence of the 1st in a series, the pattern is deleted and the follow-up becomes a single appointment/call/task.

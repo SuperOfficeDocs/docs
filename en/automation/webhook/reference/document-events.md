@@ -9,7 +9,6 @@ content_type: reference
 category: automation
 topic: webhook
 ---
-# Document events
 
 These events are fired when appointment/document rows are changed, or when document contents are changed:
 

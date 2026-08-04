@@ -1,5 +1,6 @@
 ---
-title: Win Script and event system
+title: "Win Script and event system: aborting a save sequence"
+sidebarTitle: "Abort a save sequence"
 uid: win_script_event_system
 description: Win Script and event system - aborting a save sequence
 author: Conrad Weyns
@@ -9,8 +10,6 @@ deployment: onsite
 platform: win
 redirect_from: /en/automation/windows/index
 ---
-
-# Win Script and event system: aborting a save sequence
 
 8.5 R07 should be out soon. You will then be able to abort a Save Model sequence on the Current system.
 

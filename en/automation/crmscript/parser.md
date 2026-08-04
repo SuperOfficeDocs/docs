@@ -8,8 +8,6 @@ keywords: ['parser', 'template', 'variable']
 content_type: concept
 ---
 
-# Parser
-
 The `Parser` class is a **template engine**. Use an instance to set template variable values, then parse a formatted string containing template variable placeholders to replace their values.
 
 ```crmscript!

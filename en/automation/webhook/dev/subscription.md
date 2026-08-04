@@ -12,8 +12,6 @@ redirect_from: /en/automation/webhook/subscription
 language: en
 ---
 
-# Webhook subscription
-
 Webhook subscriptions are created using SuperOffice NetServer core and NetServer web services - both SOAP and REST APIs.
 
 Below I will demonstrate how to create a webhook using both NetServer web services and core.

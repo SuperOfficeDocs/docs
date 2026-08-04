@@ -8,8 +8,6 @@ date: 04.15.2024
 content_type: concept
 ---
 
-# Debugging
-
 There are several ways to debug CRMScripts.
 
 * [Built in debugger][1]

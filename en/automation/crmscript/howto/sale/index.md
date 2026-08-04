@@ -12,8 +12,6 @@ redirect_from:
   - /en/sale/howto/crmscript/index
 ---
 
-# Sales
-
 ## CRMScript classes
 
 There are no native CRMScript classes pertaining to sales. Use the NetServer classes:

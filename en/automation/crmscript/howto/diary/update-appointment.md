@@ -1,6 +1,6 @@
 ---
 uid: crmscript-update-appointment
-title: How to update appointments
+title: Update appointment
 description: How to update, move, and delete appointments; mark an appointment as complete
 keywords: ['CRMScript', 'calendar', 'diary', 'appointments', 'follow-up']
 author: Bergfrid Skaara Dias
@@ -9,8 +9,6 @@ version: 10
 content_type: howto
 redirect_from: /en/diary/howto/crmscript/update-appointment
 ---
-
-# Update appointment
 
 ## NSAppointment UpdateAppointment(Integer p0, DateTime p1, DateTime p2, Integer p3, Integer p4, Integer associateId)
 

@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/diary/howto/crmscript/register-incoming-call
 ---
 
-# Register an incoming call
-
 The **activity type** for phone calls is 5. By default, the direction is *incoming*.
 
 This example code will register an incoming call with a description, starting now, and lasting 10 minutes.

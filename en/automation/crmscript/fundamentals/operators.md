@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Operators
-
 ## CRMScript assignment operators
 
 The assignment operators store a value in a variable (on the left side of the operator).

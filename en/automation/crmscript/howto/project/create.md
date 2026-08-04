@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/project/howto/crmscript/create
 ---
 
-# Register a project
-
 ```crmscript!
 NSProjectAgent agent;
 NSProjectEntity newProject = agent.CreateDefaultProjectEntity();

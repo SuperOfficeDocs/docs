@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Archive agent
-
 ## Get NSArchiveListItem
 
 These examples uses the **ContactActivity** archive provider to retrieve [appointments][1].

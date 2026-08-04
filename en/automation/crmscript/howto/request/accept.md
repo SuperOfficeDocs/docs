@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/request/howto/crmscript/accept
 ---
 
-# Accept ticket
-
 Accepting or assigning a ticket means to update `ownedBy`. You might also want to update the status and the last modified timestamps.
 
 ```crmscript

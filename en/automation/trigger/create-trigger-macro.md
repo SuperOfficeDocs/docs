@@ -1,5 +1,5 @@
 ---
-title: Creating a trigger - Macro
+title: "Creating a trigger :: Macro"
 uid: create_trigger_macro
 description: Creating a trigger - Macro
 author: Simen Mostuen Iversen
@@ -8,8 +8,6 @@ keywords: ['automation']
 content_type: howto
 index: true
 ---
-
-# Creating a trigger :: Macro
 
 We'll create the **Before saving company** trigger, by using a macro. You can also [create this trigger using script][1].
 

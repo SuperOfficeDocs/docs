@@ -12,8 +12,6 @@ redirect_from: /en/automation/webhook/event-details
 language: en
 ---
 
-# Event details
-
 Event name descriptors are a combination of the webhook entity and event type - `contact.created` is one such descriptor.
 
 ## Event entities

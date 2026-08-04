@@ -6,8 +6,6 @@ date:
 content_type: howto
 ---
 
-# Print debug
-
 ## printDebug()
 
 CRMScript has a global function for writing any string to a buffer.

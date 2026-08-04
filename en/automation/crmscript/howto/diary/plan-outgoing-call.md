@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/diary/howto/crmscript/plan-outgoing-call
 ---
 
-# Plan an outgoing call
-
 The type is 5 for outgoing calls (same as incoming). However, to control the direction, you need to use the [Task MDO list table][5].
 
 ## List available task types

@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/quote/howto/crmscript/get
 ---
 
-# Retrieve quote info
-
 * To view basic info, use `NSQuote`.
 * To view (and possibly update) complex info, use `NSQuoteEntity`.
 

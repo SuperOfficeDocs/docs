@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/quote/howto/crmscript/quote-document
 ---
 
-# Quote document
-
 ## Locate quote document
 
 ```crmscript!

@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Project events
-
 These events are fired when project rows are changed:
 
 * `project.created`

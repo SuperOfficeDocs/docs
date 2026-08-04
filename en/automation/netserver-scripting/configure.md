@@ -9,8 +9,6 @@ deployment: onsite
 platform: web
 ---
 
-# How to configure scripting
-
 When installing SuperOffice CRM Web, a new scripting section is added to the web applications *web.config* file. If upgrading from a previous version, optionally run the *SoAppConfig.exe* configuration utility.
 
 **SoAppConfig.exe utility with the Scripting section displayed:**

@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Write output
-
 CRMScript can display data in different ways:
 
 ## Print a string to the screen (standard output)

@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Relation events
-
 These events are fired when Relation rows are changed:
 
 * `relation.created`

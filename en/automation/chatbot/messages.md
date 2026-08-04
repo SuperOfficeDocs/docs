@@ -8,8 +8,6 @@ content_type: concept
 index: true
 ---
 
-# Chatbot messages
-
 ## Bot Message Received
 
 This script is called when a user sends a new message to the bot - not called when the bot posts messages. Called after the generic **ChatBeforeSaveNewMessage** and **ChatAfterSaveNewMessage** triggers have run.

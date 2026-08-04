@@ -7,8 +7,6 @@ content_type: concept
 index: true
 ---
 
-# Basic troubleshooting
-
 ## When an error occurs
 
 Here are some common mistakes to watch out for:

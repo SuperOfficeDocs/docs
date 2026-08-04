@@ -16,8 +16,6 @@ index: true
 language: en
 ---
 
-# Webhooks panel
-
 The Webhooks panel is the central place for administrators and consultants to manage webhook subscriptions in SuperOffice. You can access it at **Settings and maintenance** > **System design** > **Webhooks**.
 
 From this panel, you can view the health of every webhook at a glance, create new subscriptions, edit existing ones, and recover webhooks that have been automatically deactivated because of delivery failures.

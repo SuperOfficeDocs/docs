@@ -1,6 +1,6 @@
 ---
 uid: crmscript-accept-invitation
-title: Create invitation
+title: How to accept an invitation
 description: How to accept meeting invitations with CRMScript
 keywords: ['CRMScript', 'calendar', 'diary', 'appointments', 'follow-up', 'invitation']
 author: Bergfrid Skaara Dias
@@ -9,8 +9,6 @@ version: 10
 content_type: howto
 redirect_from: /en/diary/howto/crmscript/accept-invitation
 ---
-
-# How to accept an invitation
 
 ## Show follow-ups you are invited to
 

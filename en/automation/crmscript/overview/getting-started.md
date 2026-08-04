@@ -9,8 +9,6 @@ content_type: concept
 index: true
 ---
 
-# Getting started with CRMScript
-
 When you are ready to start learning CRMScript:
 
 * Explore the topics in the [Fundamentals][1] section. Try out the interactive script snippets for yourself. You can modify the code and run it to see the effects.

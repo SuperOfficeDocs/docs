@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/request/howto/crmscript/get-message-info
 ---
 
-# Get message info
-
 ## Bool load(Integer id)
 
 Brings up the message with the given ID. This is always the 1st step when you want to do anything with an existing message.

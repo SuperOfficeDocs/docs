@@ -10,8 +10,6 @@ content_type: howto
 redirect_from: /en/automation/crmscript/howto/marketing/index
 ---
 
-# Forms
-
 Forms can be processed automatically, manually, or a combination of both. This is specified as [form actions][1].
 
 A form can have multiple actions. One of them is **Execute CRMScript**. If selected, form fields are added as input data to the script set run when submissions of this form are processed (automatically or manually).

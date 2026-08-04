@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Sale webhook events
-
 These webhook events are fired when `sale` rows are changed:
 
 * `sale.created`

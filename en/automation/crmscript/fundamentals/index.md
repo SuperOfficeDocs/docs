@@ -8,8 +8,6 @@ date: 04.15.2024
 content_type: concept
 ---
 
-# Fundamentals of CRMScript
-
 A guide to CRMScript basics.
 
 * [Code structure][1]

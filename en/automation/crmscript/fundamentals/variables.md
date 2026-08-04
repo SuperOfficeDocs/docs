@@ -6,8 +6,6 @@ date:
 content_type: concept
 ---
 
-# Variables
-
 A variable is a box for storing data values. The label you put on that box represents the variable **name** and **type**. It identifies what is or can be put in there.
 
 ## Declaration

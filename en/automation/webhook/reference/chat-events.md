@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Chat events
-
 These events are fired when chat sessions and messages change:
 
 * `chatsession.created` - new session starts

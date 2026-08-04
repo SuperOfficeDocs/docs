@@ -10,8 +10,6 @@ category: automation
 topic: webhook
 ---
 
-# Sale stakeholder webhook events
-
 These webhook events are fired when `salestakeholder` rows are changed:
 
 * `salestakeholder.created`
