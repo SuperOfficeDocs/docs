@@ -16,8 +16,6 @@ index: true
 language: da
 ---
 
-# Webhooks-panel
-
 Webhooks-panelet er det centrale sted for administratorer og konsulenter til at administrere webhook-abonnementer i SuperOffice. Du finder det under **Indstillinger og vedligeholdelse** > **System design** > **Webhooks**.
 
 Fra dette panel kan du se tilstanden for alle webhooks på et øjeblik, oprette nye abonnementer, redigere eksisterende og gendanne webhooks, der er blevet automatisk deaktiveret på grund af leveringsfejl.
