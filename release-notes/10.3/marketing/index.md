@@ -1,6 +1,6 @@
 ---
 uid: news-marketing-10.3
-title: What's new in SuperOffice 10.3
+title: New and improved Marketing
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.3
 author: SuperOffice AS - Product and Engineering
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: Marketing
 language: en
 ---
-
-# New and improved Marketing
 
 * [Tracked links - Open form with variables (10.3.12)][12]
 * [Mailing - Audit check on email mailing (10.3.10)][10]

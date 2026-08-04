@@ -11,8 +11,6 @@ category: core crm
 language: en
 ---
 
-# New and improved Core CRM
-
 * [Settings and maintenance link from Sales opens new tab (10.1.3)][3]
 * [Dashboard - Chat, Form and Mailing as tile entities (10.1.4)][4]
 * [Find and selection - Chat, Form and Mailing as entities with typical searches (10.1.4)][4]

@@ -16,8 +16,6 @@ redirect_from:
 language: en
 ---
 
-# API changes
-
 <Update label="10.0.7" description="03.14.2022">
 
 ## API - CRMScript triggers for quote approval

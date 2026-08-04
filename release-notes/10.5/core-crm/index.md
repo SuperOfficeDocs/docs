@@ -1,6 +1,6 @@
 ---
 uid: news-core-crm-10.5
-title: What's new in SuperOffice Core CRM 10.5
+title: New and improved Core CRM
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Core CRM 10.5
 keywords: ['new UI']
@@ -13,8 +13,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# New and improved Core CRM
 
 * [Diary - Create all-day events more easily (10.5.5)][5]
 * [Dashboard - Export to Excel from tile drill down (10.5.3)][3]

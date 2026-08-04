@@ -1,6 +1,6 @@
 ---
 uid: news-api-10.1
-title: What's new in SuperOffice 10.1
+title: API changes
 sidebarTitle: "10.1.1-10.1.4"
 description: Release notes. What's new in SuperOffice 10.1
 keywords: ['API changes']
@@ -16,8 +16,6 @@ redirect_from:
   - /release-notes/10.1/api/10.1.4-update
 language: en
 ---
-
-# API changes
 
 <Update label="10.1.5" description="09.02.2022">
 

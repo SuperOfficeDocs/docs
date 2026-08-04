@@ -1,6 +1,6 @@
 ---
 uid: news-service-10.3
-title: What's new in SuperOffice 10.3
+title: New and improved Service
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.3
 author: SuperOffice AS - Product and Engineering
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: en
 ---
-
-# New and improved Service
 
 * [System preference - Unsafe file types (10.3.11)][11]
 * [Request type - Reply/forwarding settings (10.3.8)][8]

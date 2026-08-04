@@ -1,6 +1,6 @@
 ---
 uid: news-marketing-9.2
-title: Marketing 9.2 update
+title: New and improved Marketing
 author: SuperOffice AS - Product and Engineering
 date: 04.28.2021
 version: 9.2
@@ -8,8 +8,6 @@ content_type: release-note
 deployment: onsite
 language: en
 ---
-
-# New and improved Marketing
 
 * [Marketing - Forms available as a separate add-on (9.2 R01)][1]
 * [Marketing - Improved bounce management (9.2 R01)][1]

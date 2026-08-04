@@ -10,8 +10,6 @@ category: database
 hidden: true
 ---
 
-# Table changes from SuperOffice 6.3 to 7.0
-
 ## Renamed tables
 
 | Table no | v.6 | v.7 |

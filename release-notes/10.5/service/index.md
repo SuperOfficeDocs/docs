@@ -1,6 +1,6 @@
 ---
 uid: news-service-10.5
-title: What's new in SuperOffice 10.5
+title: New and improved Service
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Service 10.5
 author: SuperOffice AS - Product and Engineering
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: SuperOffice Service
 language: en
 ---
-
-# New and improved Service
 
 * [Request lists - Visual indicator in the Read column (10.5.5)][5]
 * [Requests - Quickly add a request from the section tab (10.5.3)][3]

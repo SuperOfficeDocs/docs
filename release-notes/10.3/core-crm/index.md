@@ -1,6 +1,6 @@
 ---
 uid: news-core-10.3
-title: What's new in SuperOffice Core CRM 10.3
+title: New and improved Core CRM
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Core CRM 10.3
 author: SuperOffice AS - Product and Engineering
@@ -12,8 +12,6 @@ audience: person
 audience_tooltip: SuperOffice CRM
 language: en
 ---
-
-# New and improved Core CRM
 
 * [User preferences - Search option (10.3.12)][12]
 * [Project and sale - Add members (10.3.12)][12]

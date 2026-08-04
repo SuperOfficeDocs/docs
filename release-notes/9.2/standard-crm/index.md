@@ -1,6 +1,6 @@
 ---
 uid: news-core-crm-9.2
-title: Core CRM 9.2 feature highlights
+title: New and improved standard CRM
 author: SuperOffice AS - Product and Engineering
 date: 04.28.2021
 version: 9.2
@@ -8,8 +8,6 @@ content_type: release-note
 deployment: onsite
 language: en
 ---
-
-# New and improved standard CRM
 
 * [A better way to search for information (9.2 R01)][1]
 * [Pre-defined searches (in Find) (9.2 R01)][1]

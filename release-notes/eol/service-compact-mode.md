@@ -16,8 +16,6 @@ audience_tooltip: SuperOffice CRM
 language: en
 ---
 
-# End of life - SuperOffice Service CompactMode
-
 This is a formal announcement of End of Life for our SuperOffice Service CompactMode. This is a feature that has allowed users to access requests through a mobile device with a URL to a CompactMode version of SuperOffice Service. We will end our support effectively from SuperOffice version 11.8. From this version you will not be able to access SuperOffice Service with the CompactMode URL.
 
 ## What does this mean for you as a customer?

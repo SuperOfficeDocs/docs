@@ -1,6 +1,6 @@
 ---
 uid: news-api-11
-title: What's new in SuperOffice 11
+title: API changes
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 11
 keywords: ['API changes', 'database changes']
@@ -11,8 +11,6 @@ content_type: release-note
 category: api
 language: en
 ---
-
-# API changes
 
 Version 11 of the API reference includes many changes from the v10.5.5 release, and the changes listed below are listed by major.minor version.
 

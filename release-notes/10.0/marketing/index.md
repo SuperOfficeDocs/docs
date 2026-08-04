@@ -12,8 +12,6 @@ category: marketing
 language: en
 ---
 
-# New and improved Marketing
-
 * [Mailing - Add video in content of the mailing (10.0.4)][4]
 * [Mailing - Social bar with Xing and other generic web pages (10.0.5)][5]
 * [Mailing - Recover unsaved changes (10.0.5)][5]

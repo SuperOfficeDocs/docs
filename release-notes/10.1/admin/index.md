@@ -1,6 +1,6 @@
 ---
 uid: news-admin-10.1
-title: What's new in SuperOffice 10.1
+title: New and improved Settings and maintenance
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.1
 author: SuperOffice AS - Product and Engineering
@@ -10,8 +10,6 @@ content_type: release-note
 category: Settings and maintenance
 language: en
 ---
-
-# New and improved Settings and maintenance
 
 * [Screen designer - Add Macro as a button in CRM (10.1.1)][1]
 * [Options - Add customer languages from Settings and maintenance (10.1.1)][1]

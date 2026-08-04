@@ -1,6 +1,6 @@
 ---
 uid: news-api-12
-title: What's new in SuperOffice 12
+title: API changes
 description: Release notes. What's new in SuperOffice 12
 keywords: ['API changes', 'database changes']
 author: SuperOffice AS - Product and Engineering
@@ -10,8 +10,6 @@ content_type: release-note
 category: api
 language: en
 ---
-
-# API changes
 
 Version 12 of the API reference includes changes from the v11.13 release, listed by major.minor version.
 

@@ -10,8 +10,6 @@ content_type: release-note
 language: en
 ---
 
-# End-of-life notifications
-
 Welcome to the end-of-life notifications section, an essential repository designed to keep you informed about the shifting landscape of our products, services, and features. End-of-life, or EOL, marks a crucial phase in the lifecycle of any technology, signaling transitions, and changes that impact your experience.
 
 In this dedicated space, we illuminate the status of our offerings, outlining the products, services, or features approaching their end-of-life stage, those currently undergoing this transition, and the archived ones that have completed this journey. This transparency allows you to anticipate and navigate these changes with clarity and readiness.

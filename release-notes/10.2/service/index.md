@@ -11,8 +11,6 @@ category: service
 language: en
 ---
 
-# New and improved Service
-
 * [Preview with quick edit (10.2.11)][11]
 * [Rearrange Request section tabs (10.2.11)][11]
 * [Contact automatically added to To field in new request (10.2.11)][11]

@@ -1,6 +1,6 @@
 ---
 uid: news-admin-10.2
-title: What's new in SuperOffice 10.2
+title: New and improved Settings and maintenance
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.2
 author: SuperOffice AS - Product and Engineering
@@ -10,8 +10,6 @@ content_type: release-note
 category: Settings and maintenance
 language: en
 ---
-
-# New and improved Settings and maintenance
 
 * [CRMScript tracing limits and notifications][11]
 * [Time zones and Daylight Saving Time (10.2.10)][10]

@@ -1,6 +1,6 @@
 ---
 uid: database-changes-80-to-81
-title: Changes in SuperOffice from 8.0 to 8.1
+title: Database
 description: Changes in SuperOffice from 8.0 to 8.1
 author: SuperOffice Product and Engineering
 version: 8.1
@@ -10,8 +10,6 @@ category: database
 hidden: true
 redirect_from: /release-notes/database/index
 ---
-
-# Database
 
 The new design is one of the major changes for SuperOffice 8.1.
 

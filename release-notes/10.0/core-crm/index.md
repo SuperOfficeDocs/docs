@@ -10,8 +10,6 @@ content_type: release-note
 language: en
 ---
 
-# New and improved Core CRM
-
 * [Dashboards - Improved functionality (10.0.1)][1]
 * [Dashboards - Duplicate tile within a dashboard (10.0.2)][2]
 * [Dashboards - Hide currency info (10.0.2)][2]

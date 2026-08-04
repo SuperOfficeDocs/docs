@@ -1,6 +1,6 @@
 ---
 uid: news-admin-10.3
-title: What's new in SuperOffice 10.3
+title: New and improved Settings and maintenance
 sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.3
 author: SuperOffice AS - Product and Engineering
@@ -12,8 +12,6 @@ audience: settings
 audience_tooltip: Settings and maintenance
 language: en
 ---
-
-# New and improved Settings and maintenance
 
 * [CRMScript with Monaco editor (10.3.8)][8]
 * [CRMScript - Trigger dialog with formatted text (10.3.7)][7]

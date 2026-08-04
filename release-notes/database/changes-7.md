@@ -1,6 +1,6 @@
 ---
 uid: database-changes-in-7
-title: What's new in v7
+title: What's new in the SuperOffice 7 database
 description: What's new in the SuperOffice 7 database
 author: SuperOffice Product and Engineering
 version: 7
@@ -9,8 +9,6 @@ deployment: onsite
 category: database
 hidden: true
 ---
-
-# What's new in the SuperOffice 7 database
 
 SuperOffice 7 introduced a lot of changes to the database as we merged CS and SM features.
 
