@@ -94,13 +94,13 @@ Information the user should notice even if skimming.
 Optional information to help a user be more successful.
 </Tip>
 
-<Caution>
-Negative potential consequences of an action.
-</Caution>
-
 <Warning>
-Dangerous certain consequences of an action.
+Negative potential consequences of an action.
 </Warning>
+
+<Danger>
+Dangerous certain consequences of an action.
+</Danger>
 
 ```
 
@@ -125,6 +125,10 @@ Paragraph 2.
 Don't use the HTML `<br />` tag to split call-outs.
 
 Don't stack multiple call-outs directly after each other.
+
+<Note>
+Markdownlint's link and image checks (MD034, MD045, MD051, MD052, MD053) don't look inside HTML/JSX tags like `<Note>`, `<Tip>`, `<Warning>`, or `<Danger>`. Links and images inside call-outs are still caught by `mint validate`, but not by markdownlint.
+</Note>
 
 ## Headings
 

@@ -35,9 +35,9 @@ The first link uses the current users' **SoSession** (Principal Context) to crea
 
 The second link uses a [system user token][3] to get a system user ticket, and then uses the system user ticket to authenticate and create a new company in the tenant database.
 
-<Caution>
+<Warning>
 This scenario is not the recommended way to leverage a system user in an application. Threading with a NetServer SoSession instance is a complex topic, and it is only here in this example as a demonstration of signing the token, sending the signed token to SuperID, and then validating the returned JWT token containing the system user ticket.
-</Caution>
+</Warning>
 
 The preferred way to use a system user token is demonstrated in the [System Console project][4].
 

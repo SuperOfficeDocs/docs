@@ -141,9 +141,9 @@ The refresh token is only used:
 * when the access (or ID) token has expired
 * when there is a need to update the claims in an ID token
 
-<Warning>
+<Danger>
 Refresh tokens must never be stored client-side in the browser!
-</Warning>
+</Danger>
 
 This is a long-lived token that is a contract between an application and tenant user. It can be re-used:
 
@@ -151,9 +151,9 @@ This is a long-lived token that is a contract between an application and tenant 
 * as long as the application authorization record (consent) exists, or
 * until it has been revoked - tenants can revoke authorizations
 
-<Caution>
+<Warning>
 Refresh tokens may be **revoked** if we suspect its security has been compromised, or a customer or application vendor requests it be revoked.
-</Caution>
+</Warning>
 
 ### Send a refresh_token request
 

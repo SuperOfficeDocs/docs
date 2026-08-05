@@ -12,9 +12,9 @@ redirect_from: /en/api/netserver/config/security
 
 The security section group contains three configuration sections related to domain- and operational security settings.
 
-<Warning>
+<Danger>
 Do not change these values unless you are absolutely sure!
-</Warning>
+</Danger>
 
 ```XML
 <Security>
@@ -53,17 +53,17 @@ Configuration settings related to Active Directory domain.
 | PriorityInternalAssociate | Priority of the plugin for internal associates. | |
 | User | The username used to connect to the store. It must be able to list and view users. If the username and password parameters are not configured, the default credentials of the current principal are used. Otherwise, both username and password must be configured, and the credentials they specify are used to connect to the store. | |
 
-<Caution>
+<Warning>
 To find and import Active Directory users, NetServer web services need to be in the Active Directory domain. This is why we recommend [onsite deployment scenario 2][3] with a reverse proxy so you do not expose it to the DMZ.
-</Caution>
+</Warning>
 
 ## Cryptography
 
 Cryptography is used for encrypting and decrypting the user credentials and sessions.
 
-<Caution>
+<Warning>
 Change any of these keys at your own peril.
-</Caution>
+</Warning>
 
 | Name | Description |
 |---|---|

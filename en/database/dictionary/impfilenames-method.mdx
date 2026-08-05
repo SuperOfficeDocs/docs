@@ -47,9 +47,9 @@ In a de-compiler, the embedded resource will appear in the assembly *Resources* 
 
 While embedded resource files are the preferred way to supply priming data, it's also possible to discover IMP files that exist in the current directory from which the application applying the step resides. The advantage of embedded resources is easy deployment: there is only one file, the compiled assembly, that is needed; and thus the chance of deployment failures due to missing IMP files is eliminated.
 
-<Warning>
+<Danger>
 If you are using Visual Basic, or some .NET language other than C#, know that the compiler might not embed resources the same as shown above. We know that the Visual Compiler ignores the folders when naming the embedded resource.
-</Warning>
+</Danger>
 
 Below is an image of a Visual Basic project with an embedded resource with the same folder structure as shown above.
 

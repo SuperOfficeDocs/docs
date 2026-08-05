@@ -82,9 +82,9 @@ Run SuperOffice Product configuration and update the information either for the 
 
 1. Download and run the **SuperOffice.CustomerService.exe** to install on the new server.
 
-    <Warning>
+    <Danger>
     Do NOT run ejTermSetup.exe since you already have Service installed.
-    </Warning>
+    </Danger>
 
 2. Download and install **SuperOffice Web services / NetServer**, which is the second option when installing SuperOffice Web client. This is used by Service to connect to the database.
 
@@ -134,9 +134,9 @@ You will need to manually change settings inside the database tables called **Co
 
 9. Inside the database there will be a lot of absolute URLs, pointing to attachments like pictures. To update the database you may run the following queries, replace oldUrl and newUrl with your paths.
 
-<Caution>
+<Warning>
 Remember to do a backup before you run queries directly on your database.
-</Caution>
+</Warning>
 
 ```text
 update crm7.s_message set html_message = replace(html_message,'://oldurl.no','://new.url.no') where html_message like '%://oldurl.no%'

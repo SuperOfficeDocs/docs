@@ -267,9 +267,9 @@ DateTime dt;
 print(dt.getWeekDay().toString());
 ```
 
-<Caution>
+<Warning>
 The 1st day of the week is Monday and has index 0!
-</Caution>
+</Warning>
 
 ### Integer getYear()
 
@@ -365,9 +365,9 @@ print(dt.isNull().toString());
 | YY2    | year                 | 2                   |
 | YY4    | year                 | 4                   |
 
-<Caution>
+<Warning>
 ISOWY2/4 will calculate and return the year corresponding to the ISO week number of the given date. This year may be different from the "date" year.
-</Caution>
+</Warning>
 
 ### Month and day
 
@@ -384,9 +384,9 @@ ISOWY2/4 will calculate and return the year corresponding to the ISO week number
 | MONTH    | name of month             |
 | WDAY     | name of weekday           |
 
-<Caution>
+<Warning>
 WEEKDAY differs from the `getWeekDay()` method of the Date object where Monday has index 0! WDAY and MONTH do start at index 0, thus construct your lists so that the indexes line up.
-</Caution>
+</Warning>
 
 ### Time
 
@@ -431,6 +431,6 @@ WEEKDAY differs from the `getWeekDay()` method of the Date object where Monday h
 * 12 is HTTP-date
 * 13 is SOAP standard formatting
 
-<Caution>
+<Warning>
 `toString()` **will not adjust to GMT**, so you will have to do it yourself!
-</Caution>
+</Warning>

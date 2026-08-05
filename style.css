@@ -1222,6 +1222,27 @@ html:not(.dark) .prose td {
   color: var(--coral-orange) !important;
 }
 
+/* ── Danger → Plum red (most severe: "will harm") ──
+ * LM icon/text: plum-red-darker (#491028) — 13.2:1 on dune-white, passes AA/AAA.
+ * DM icon: plum-red-lighter (#A4517A) — 3.27:1 on charcoal, passes AA for
+ * graphical objects (3:1) but NOT text (4.5:1); body text is left uncolored
+ * in DM (inherits default prose color) for that reason, matching Warning's pattern. */
+[class*="callout"]:has(svg[aria-label="Danger"]) {
+  background-color: rgba(73, 16, 40, 0.1) !important;
+  border-color: var(--plum-red-darker) !important;
+}
+[class*="callout"]:has(svg[aria-label="Danger"]) svg,
+[class*="callout"]:has(svg[aria-label="Danger"]) [data-component-part="callout-content"] {
+  color: var(--plum-red-darker) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Danger"]) {
+  background-color: rgba(113, 47, 74, 0.08) !important;
+  border-color: rgba(164, 81, 122, 0.3) !important;
+}
+.dark [class*="callout"]:has(svg[aria-label="Danger"]) svg {
+  color: var(--plum-red-lighter) !important;
+}
+
 /* ── Info → Heather lilac ── */
 [class*="callout"]:has(svg[aria-label="Info"]) {
   background-color: rgba(197, 186, 248, 0.18) !important;

@@ -15,9 +15,9 @@ If you want to migrate to SuperOffice CRM Online you should contact your SuperOf
 
 The migration process must be initiated by your SupeOffice sales representative since all migrations will involve SuperOffice Online Operations. The sales representative will enlist a responsible technical consultant (migrator) that will execute the migration.
 
-<Caution>
+<Warning>
 If you have customizations or integrations, these may not be working after the migration. Check with the customization or integration developer if they have this available for CRM Online too, or check if the [App Store][1] has an app you may use instead.
-</Caution>
+</Warning>
 
 If you have Customer Service and want to migrate your data to our cloud, you need to [adjust email service][3].
 
@@ -65,12 +65,12 @@ The SuperOffice CRM Online Migration Tool (OMT) is responsible for transferring 
 
  OMT needs access to SuperOffice installation - database, so_arc folder, Service folders.
 
-<Caution>
+<Warning>
 
 When the upload/migration is started, users are prevented from logging into SuperOffice Service and SuperOffice Windows App. This behavior is the result of OMT adding "Frozen" to Service config file and setting "no-login" System Event for SuperOffice Windows. However, it does not affect SuperOffice Web users, they can still log in. They should not update any info until the process is complete.
 
 **Do NOT change the license** (company name or serial number) after starting OMT - either a test or in production. Changing the license before the production migration process is complete will stop OMT (even between runs!), and you will be **unable to resume migration**. If this happens, you will see this message: "ApplicationException: Unable to resume migration session because company name or serialnumber has changed".
-</Caution>
+</Warning>
 
 The OMT can be executed in one of 2 modes: Initial upload or Recovery mode. It will automatically determine the mode when it starts.
 
@@ -101,11 +101,11 @@ Ticking the **Test Migration** checkbox will have the following consequences:
 * It will leave the tenant in a state that allows you to perform the test migration several times without involvement from Online Operations. With the sandbox you can verify that changes made Onsite are correctly transferred to Online.
 * Each test migration will completely delete the current migrated database, all SuperId users and any app authorizations on the tenant. This is why we do not allow users to log in to this tenant before it is actually a live migration.
 
-<Warning>
+<Danger>
 Once you run OMT with the **Test Migration** checkbox unticked (live migration), the tenant will be set to a *running* mode after a migration is completed and accepted.
 
 After live migration where users have been allowed to log in and the migration is marked as complete, you **cannot** run the OMT again on this tenant.
-</Warning>
+</Danger>
 
 ![4-checklist-start.png -screenshot][img9]
 

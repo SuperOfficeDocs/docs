@@ -29,9 +29,9 @@ Supported database servers are Microsoft SQL Server and Oracle Database Servers.
 | [Truncate](./truncate)  | Delete all rows in a table. | Unconditional, non-recoverable truncation of the table. Very fast, near-instant. Resets primary key value to 1. |
 | [Upsert](./upsert)    | Add or update rows by key | Key column(s) designate target rows. Rows that have *no* key match are treated as **insert** rows. **No support for Oracle**. |
 
-<Caution>
+<Warning>
 Mass operations do not work on these [protected-tables][4].
-</Caution>
+</Warning>
 
 ## Working with mass operations
 
