@@ -4,7 +4,7 @@ title: Markdown guide
 description: This Markdown style guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
 keywords: ['markdown guide', 'callouts', 'headings', 'links', 'lists', 'tables', 'metadata', 'includes', 'Phosphor']
 author: digitaldiina
-date: 07.24.2026
+date: 08.05.2026
 content_type: reference
 language: en
 ---
@@ -194,6 +194,20 @@ To produce this effect, add the string " -screenshot" at the end of the alt tag:
 ![Alt text -screenshot][img1]
 ```
 
+### App screens
+
+Mobile app screenshots use a height-constrained frame instead of the full-width screenshot frame, since phone screens are tall and narrow:
+
+![Allow call identification -app-screen][img2]
+
+To produce this effect, add the string " -app-screen" at the end of the alt tag:
+
+```markdown
+![Alt text -app-screen][img2]
+```
+
+Use `-app-screen` for screenshots of the Mobile CRM app. Use `-screenshot` for desktop or browser screenshots.
+
 ### Icons
 
 We use Phosphor icons in the documentation. Browse the available icons on [Phosphor Icons][11].
@@ -371,3 +385,4 @@ Here are a few resources to help with Markdown to help get you started:
 [11]: https://phosphoricons.com/
 
 [img1]: /media/loc/en/contribute/plain-action-buttons.png
+[img2]: /media/loc/en/mobile/allow-call-identification.png
