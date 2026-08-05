@@ -76,9 +76,9 @@ Get the current UDefFieldId value for the user-defined field to delete, then pas
 
 1. Publish to complete the delete operation for this user-defined field.
 
-    <Warning>
+    <Danger>
     A Publish request creates a new version of all user-defined fields for the entity. Therefore, all user-defined fields not deleted will have updated UdefFieldId values.
-    </Warning>
+    </Danger>
 
     Before published fields, make sure there is no active publish event happening at the same time. As long as the `IsAnyPublishEventActive` call returns false, it is safe to proceed.
 

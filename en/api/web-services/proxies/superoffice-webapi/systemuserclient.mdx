@@ -13,9 +13,9 @@ The WebAPI client library supports the System User flow. The client makes it ver
 
 The JWT contains a lot of information, however, it's usually just the Ticket credential that is interesting. Therefore, **SuperOffice.WebApi** simplifies calling the service, validating the response, and then returning the ticket in a single method call.
 
-<Warning>
+<Danger>
 Do **not** ask for a System User Ticket every single time you invoke an Agent method! This is a performance penalty. **Take advantage of the 6-hour window** and only ask for a new Ticket when absolutely necessary!
-</Warning>
+</Danger>
 
 ## SystemUserClient
 

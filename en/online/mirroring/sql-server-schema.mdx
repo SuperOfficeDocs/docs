@@ -56,9 +56,9 @@ The client maintains one internal table in the replica database: **`_Replication
 
 Because the session state lives **inside the replica database**, it follows the database through backups, restores, and renames. No re-provisioning is required as long as the database itself moves with the client.
 
-<Warning>
+<Danger>
 Do not edit, truncate, or drop `_ReplicationState` manually. If you need to start over, use [`resync-tables`][5] or, in extreme cases, re-`provision` against an empty database.
-</Warning>
+</Danger>
 
 ## Indexes and other auxiliary objects
 

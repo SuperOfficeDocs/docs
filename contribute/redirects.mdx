@@ -12,11 +12,7 @@ language: en
 Whenever a page moves, gets renamed, is merged into another page, or is deleted outright, its old URL still needs to go somewhere. Get this wrong and either a real visitor lands on a 404, or - just as bad - a wildcard silently swallows a page that's still supposed to be live. This page covers both sides: the `redirect_from` property you add to a content file, and how that turns into a live redirect through `config/redirects.json`.
 
 <Note>
-This page is redirect-specific. For how `config/redirects.json` fits into `docs.json`'s broader modular `$ref` split (navigation, redirects, and where each piece lives), see [Configuring Mintlify][3].
-</Note>
-
-<Note>
-For retention windows and lifecycle decisions (when to keep 1:1 redirects, when to collapse to wildcard redirects, and when to retire content pages), see [Content and redirect retention policy][4].
+This page is redirect-specific. For how `config/redirects.json` fits into `docs.json`'s broader modular `$ref` split (navigation, redirects, and where each piece lives), see [Configuring Mintlify][3]. For retention windows and lifecycle decisions (when to keep 1:1 redirects, when to collapse to wildcard redirects, and when to retire content pages), see [Content and redirect retention policy][4].
 </Note>
 
 See [Content and redirect retention policy][4] for default retention windows.
@@ -41,15 +37,13 @@ It's the second-to-last frontmatter property, only followed by `language`.
 
 During the Mintlify migration, `redirect_from` declarations across the repo are what generated the `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one. The array itself originally lived inline in `docs.json`; it now lives in `config/redirects.json`, which `docs.json` reaches via a `$ref` (see [Configuring Mintlify][3]).
 
-<Warning>
+<Note>
 **Going forward, `config/redirects.json` is the actual source of truth - `redirect_from` is informative only.** Adding it to a file's frontmatter does **not** by itself create a working redirect. To make a redirect happen, add the entry to `config/redirects.json` directly (see below).
 
 Still add `redirect_from` too - it costs little, documents the page's history for whoever reads the frontmatter later, and means nothing needs backfilling if a script ever gets built to keep the two in sync. Just don't rely on it alone.
-</Warning>
-
-<Note>
-If you've worked in the old `superoffice-docs` (DocFx) repo, you'll remember a second mechanism there: a `redirect_url` stub file left behind at the old path. This repo doesn't use that.
 </Note>
+
+If you've worked in the old `superoffice-docs` (DocFx) repo, you'll remember a second mechanism there: a `redirect_url` stub file left behind at the old path. This repo doesn't use that.
 
 ## Common scenarios
 
@@ -116,9 +110,9 @@ A `*` in the source matches one or more path segments, letting one rule stand in
 
 `/release-notes/8.5/pocket-crm/9.0.4-update` redirects to `/release-notes/pocket-crm/9.0.4-update` - same trailing segment, different folder.
 
-<Warning>
+<Danger>
 Whether `*` also matches a **zero-length** value (so a bare folder path matches too, not just paths with something after it) isn't documented anywhere by Mintlify - it's only inferred from `:slug*`'s resemblance to standard path-to-regexp convention, where `*` conventionally means "zero or more." We've relied on this once (merging `.../install` and `.../install-mac` into one `.../install*` rule) as an accepted, deliberate risk, not a confirmed fact. If you're relying on it too, spot-check the bare-path case in `mint dev`.
-</Warning>
+</Danger>
 
 ## When to compact a group into a wildcard
 
@@ -136,7 +130,7 @@ Multiple redirects sharing a destination are tempting to collapse, but a wildcar
 
 **Don't** compact when the sources don't share a literal prefix at all - most "several old pages now land on one new page" groups are content consolidations with no structural relationship, and can't be expressed as a wildcard regardless of how many sources point at that destination.
 
-<Warning>
+<Danger>
 **A wildcard with even one exception sharing its prefix doesn't just risk the wrong page winning - Mintlify silently drops the wildcard rule entirely.** Confirmed directly (curl against a live `mint dev` instance, not inferred): if any other redirect's `source` shares a wildcard's exact prefix, the wildcard never makes it into the compiled config. The literal exception still works; every URL the wildcard was supposed to cover 404s instead. This isn't a precedence question - the wildcard just isn't there.
 
 This means: a majority-pattern group with a handful of exceptions (say, 90% of sources rename cleanly, 10% don't) **cannot** be compacted with capture-and-reuse plus literal exceptions, no matter how tempting the high match rate looks. Your real options, in order of preference:
@@ -151,12 +145,12 @@ This means: a majority-pattern group with a handful of exceptions (say, 90% of s
 
 A full collapse trades real precision for array health, so it needs a real reason, not just convenience:
 
-* **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Caution>`/`<Warning>` block, a page titled "(LEGACY)", version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
+* **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Warning>`/`<Danger>` block, a page titled "(LEGACY)", version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
 
 * **The content moved as part of a folder-level site restructuring** (e.g. into `integrations/`) - landing on the new folder's index is an acceptable trade when the destination is genuinely the right general topic area for the whole group, not a broad, unrelated hub.
 
 Either way, this is fundamentally a "the needs of the many outweigh the needs of the few" call: a small number of visitors with an old bookmark lose exact precision so the array as a whole stays healthy and maintainable. State which justification applies in the commit message.
-</Warning>
+</Danger>
 
 A full collapse is a live-routing decision, not a content-history one - it doesn't mean the destination file's own `redirect_from` list is wrong. A page can correctly document `redirect_from: /old/specific/path` (that genuinely was its old URL) even while `config/redirects.json` deliberately routes that same old path to a different, more generic destination for array-health reasons. Don't edit a file's `redirect_from` to "match" a full-collapse decision - it's still telling the truth about the page's own history.
 

@@ -17,9 +17,9 @@ Do not invoke the system user flow before each and every call to a tenant's API,
 
 You must for security reasons [Validate every security token][3] sent from SuperOffice CRM Online.
 
-<Warning>
+<Danger>
 The ticket credential from the System User flow should be cached. It is valid for 6 hours, with a sliding expiration each time it is used. Therefore, only obtain a new one when necessary, for example when a request results in a 401 Unauthorized or the cache times out.
-</Warning>
+</Danger>
 
 To better grasp the process, check out our visual walk-through:
 

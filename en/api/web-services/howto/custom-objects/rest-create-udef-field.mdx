@@ -121,9 +121,9 @@ These examples demonstrate how to create a Number user-defined field. First, a r
 
 1. Publish the user-defined field.
 
-    <Warning>
+    <Danger>
     A Publish request creates a new version of all user-defined fields for the entity. Therefore, all user-defined fields will have updated UdefFieldId values.
-    </Warning>
+    </Danger>
 
     ```http
     POST https://\{\{env\}\}.superoffice.com/\{\{tenant\}\}/api/v1/Contact/UdefLayout/Publish HTTP/1.1
@@ -284,9 +284,9 @@ These examples demonstrate how to create a Number user-defined field. First, a r
 
 1. Publish the user-defined field.
 
-    <Warning>
+    <Danger>
     A Publish request creates a new version of all user-defined fields for the entity. Therefore, all user-defined fields will have updated UdefFieldId values.
-    </Warning>
+    </Danger>
 
     Before published fields, make sure there is no active publish event happening at the same time. As long as the `IsAnyPublishEventActive` call returns false, it is safe to proceed.
 

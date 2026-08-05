@@ -19,9 +19,9 @@ Dictionary tables are legacy tables that only exist in version 8.0 and earlier.
 
 Firstly, in a SuperOffice database, there are **dictionary information tables** which contain a description of the database itself.
 
-<Caution>
+<Warning>
 These tables are not shown in the table listing. Nothing must be inserted into or deleted from this table! Any changes will cause SuperOffice to crash or corrupt the database.
-</Caution>
+</Warning>
 
 ### Dictionary information tables
 
@@ -42,9 +42,9 @@ Use the **SODictionarySDK** in the client Data API to add new tables to the dict
 
 ### SuperOffice Reporter "dictionary"
 
-<Warning>
+<Danger>
 **Do not change layout!** Modifying these tables may break the print-out function in SuperOffice.
-</Warning>
+</Danger>
 
 Report definitions and layouts are stored in these tables.
 
@@ -66,9 +66,9 @@ Report definitions and layouts are stored in these tables.
 
 The following tables contain user-defined fields
 
-<Caution>
+<Warning>
 **Do not change the layout!** Doing so will result in a corrupt database. Updates to the tables may cause loss of data.
-</Caution>
+</Warning>
 
 * UDContactLarge
 * UDContactSmall
@@ -98,9 +98,9 @@ The following tables contain user-defined fields
 
 Containing information on users with the Travel option in SuperOffice.
 
-<Caution>
+<Warning>
 You should never change any of these tables!
-</Caution>
+</Warning>
 
 * [Traveltransactionlog][15]
 * [TravelCurrent][17]

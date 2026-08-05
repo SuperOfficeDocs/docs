@@ -16,9 +16,9 @@ redirect_from: /en/api/netserver/bulk-operations/bulk-update/using-bulk-update
 
 To use the [Bulk Update API][1], a user must be assigned a role that contains the functional right *Can bulk update*, or *allow-bulk-edit*. By default, only the roles *User level 0* and *User level 1* are assigned this functional right.
 
-<Caution>
+<Warning>
 This is a powerful tool that can cause a lot of damage if used improperly, and therefore should only be given to advanced users.
-</Caution>
+</Warning>
 
 When a role is assigned the *allow-bulk-update* functional right, any member of that role will see the bulk update functionality in the SuperOffice client. The same is true to use the API, specifically for adding interests, which requires the additional *allow-bulk-interest* functional right. If the principal executing the code is not a member of that role, the field will not be available.
 

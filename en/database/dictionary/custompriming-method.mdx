@@ -62,9 +62,9 @@ There are three representations of curly braces used to define the table, fields
 
 Continuous Database will look up the table and field names, do quoting and case conversion, and anything else that might be needed to make valid SQL, and then properly encode the parameters.
 
-<Warning>
+<Danger>
 **Please always use parameterized values**. Doing so avoids two major hazards: formatting problems (particularly dates!) and the possibility of SQL injection. As a rule, a dictionary step should never depend on externally supplied values, but even an update from one field to another that does not use parameterization could still expose us to SQL injection from values latent in the database. **There is no excuse for SQL injection caused by lack of parameterization**.
-</Warning>
+</Danger>
 
 ### GetNextId
 

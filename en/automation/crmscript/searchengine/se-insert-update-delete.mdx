@@ -32,9 +32,9 @@ Consider wrapping the insert query in a `try...catch` block.
 
 3. Call `update()`.
 
-<Caution>
+<Warning>
 Writing to the database this way doesn't log the change to the crm7.traveltransactionlog table. It should therefore be avoided in environments with satellites and travelusers.
-</Caution>
+</Warning>
 
 ### Void delete()
 

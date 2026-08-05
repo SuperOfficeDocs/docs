@@ -77,9 +77,9 @@ Inherits from `ITableBuilderBase` (below).
 | DeleteField | Delete a field. Be careful! |
 | DeleteIndex | Delete the index that spans the given fields, if it exists. Nothing bad happens if no such index exists. |
 
-<Caution>
+<Warning>
 Deleting a field is a drastic thing to do and breaks backwards compatibility, so you need to be sure no old code is going to run against this database. Any indexes that contain this field will be deleted automatically, both in the database model and in the physical database. Physical indexes will be detected and deleted even if they have been made outside of this product, for instance by DBAs and optimizers.
-</Caution>
+</Warning>
 
 ## ITableBuilderBase methods
 
