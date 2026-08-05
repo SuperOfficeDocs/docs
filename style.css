@@ -22,6 +22,7 @@
   --so-green:                #06423E;
   --coast-blue:              #B2C7EB;
   --dune-white:              #F2EFEA;
+  --dune-white-rgb:          242, 239, 234;
 
   /* Secondary */
   --so-green-hover:          #0F5C57;
@@ -151,11 +152,11 @@ body {
   background-color: var(--charcoal) !important;
 }
 
-/* All text/icons inside the navbar: white on green (LM) and charcoal (DM).
+/* All text/icons inside the navbar: Dune white on green (LM) and charcoal (DM).
  * Specificity (1,0,0) — intentionally lower than .nav-tabs-item rules
  * which follow. Covers language selector, search trigger, theme toggle. */
 #navbar * {
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(var(--dune-white-rgb), 0.85) !important;
 }
 
 /* Nav icons: bridge both fill-based (FontAwesome) and stroke-based (Lucide)
@@ -170,16 +171,16 @@ body {
 #navbar .nav-tabs-item svg,
 #navbar .nav-tabs-item svg path,
 #navbar .nav-tabs-item i {
-  color: rgba(255, 255, 255, 0.85) !important;
-  fill: rgba(255, 255, 255, 0.85) !important;
-  stroke: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(var(--dune-white-rgb), 0.85) !important;
+  fill: rgba(var(--dune-white-rgb), 0.85) !important;
+  stroke: rgba(var(--dune-white-rgb), 0.85) !important;
 }
 
 /* Mask-image icons: DOM inspection shows nav icons use CSS mask-image technique
  * (SVG has bg-gray-600 as ink color + mask-image in style attr for the shape).
  * fill/stroke/color are irrelevant here — background-color is the visible ink. */
 #navbar svg[style*="mask-image"] {
-  background-color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(var(--dune-white-rgb), 0.85) !important;
 }
 
 /* No bottom border or shadow — navbar and green hero/category header
@@ -198,10 +199,10 @@ body {
   gap: 2rem;
 }
 
-/* Nav item: 80% white at rest; position:relative + overflow:visible anchor
+/* Nav item: 80% Dune white at rest; position:relative + overflow:visible anchor
  * the ::after underline without it being clipped by the container. */
 #navbar .nav-tabs-item {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(var(--dune-white-rgb), 0.8) !important;
   cursor: pointer;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -209,14 +210,14 @@ body {
   overflow: visible !important;
 }
 
-/* Nav item hover: full white */
+/* Nav item hover: full Dune white */
 #navbar .nav-tabs-item:hover {
-  color: var(--white) !important;
+  color: var(--dune-white) !important;
 }
 
-/* Active nav item: full white */
+/* Active nav item: full Dune white */
 #navbar .nav-tabs-item[data-active="true"] {
-  color: var(--white) !important;
+  color: var(--dune-white) !important;
 }
 
 /* Active/hover underline via ::after — fully under our control, not reliant
@@ -385,7 +386,7 @@ body {
 }
 
 #home-content h2 {
-  color: var(--charcoal);
+  color: var(--so-green);
 }
 
 .dark #home-content h2 {
@@ -597,17 +598,22 @@ body {
 }
 
 /* Category landing pages with hero section */
+/* Full-bleed via calc(), not width:100vw + left:50%/-50vw — the latter mixes
+ * vw (full viewport, includes scrollbar) with % of the containing block
+ * (excludes scrollbar), leaving a permanent ~7.5px leftward offset against
+ * any sibling that isn't full-bleed (e.g. #category-landing below). The
+ * calc() terms below cancel algebraically regardless of scrollbar width,
+ * matching the technique already used by .conceptual-content. */
 #category-hero {
   background-color: var(--so-green);
-  color: white;
-  padding: 3rem 1.25rem;
+  color: var(--dune-white);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: calc(50vw - 50% + 1.25rem);
+  padding-right: calc(50vw - 50% + 1.25rem);
   margin-bottom: 3rem;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 #category-hero h1 {
@@ -1093,6 +1099,16 @@ html:not(.dark) .prose td {
 
 .dark .prose a:hover {
   opacity: 0.8;
+}
+
+/* Heading color consistency (#83, light backgrounds only): Tailwind Typography's
+ * default .prose heading color (a near-black gray, not our --charcoal) otherwise
+ * wins over inherited body color. !important needed to beat it. H3 and smaller
+ * are left alone — the brand ask only standardizes H1/H2. No dark-mode rule:
+ * out of scope, the ask is explicitly for light backgrounds. */
+.prose h1,
+.prose h2 {
+  color: var(--so-green) !important;
 }
 
 /* Heading anchor links — no underline at rest, reveal on hover.
