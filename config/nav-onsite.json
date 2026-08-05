@@ -1,0 +1,306 @@
+[
+  {
+    "group": "Overview",
+    "root": "en/onsite/index",
+    "icon": "map"
+  },
+  {
+    "group": "Install Onsite",
+    "root": "en/onsite/install/index",
+    "pages": [
+      {
+        "group": "Pre-requisites",
+        "root": "en/onsite/requirements/index",
+        "pages": [
+          "en/onsite/requirements/crm-server",
+          "en/onsite/requirements/iis",
+          "en/onsite/requirements/web-client",
+          {
+            "group": "Compatibility",
+            "root": "en/onsite/compatibility/index",
+            "pages": [
+              "en/onsite/compatibility/server-os",
+              "en/onsite/compatibility/client-os",
+              "en/onsite/compatibility/browser",
+              "en/onsite/compatibility/ms-office",
+              {
+                "group": "Database",
+                "root": "en/onsite/compatibility/database",
+                "pages": [
+                  "en/onsite/compatibility/ms-sql-server",
+                  "en/onsite/compatibility/oracle"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Security",
+            "root": "en/onsite/security/index",
+            "pages": [
+              "en/onsite/security/secure-deployment-guide",
+              "en/onsite/security/deployment-scenarios",
+              "en/onsite/security/network-firewall-config",
+              "en/onsite/security/set-up-emet",
+              "en/onsite/security/set-up-modsecurity",
+              "en/onsite/security/secure-https"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Setup guide",
+        "root": "en/onsite/install/guide",
+        "pages": [
+          {
+            "group": "Prepare CRM Server",
+            "root": "en/onsite/install/server/prepare",
+            "pages": [
+              "en/onsite/install/server/prepare-10"
+            ]
+          },
+          {
+            "group": "IIS web server",
+            "root": "en/onsite/install/iis/index",
+            "pages": [
+              "en/onsite/install/iis/reverse-proxy"
+            ]
+          },
+          {
+            "group": "Database",
+            "root": "en/onsite/install/database/index",
+            "pages": [
+              "en/onsite/install/database/create-ms-sql-server-db",
+              "en/onsite/install/database/create-oracle-db",
+              "en/onsite/install/database/sql-server-full-text-search"
+            ]
+          },
+          {
+            "group": "Install SuperOffice server",
+            "root": "en/onsite/install/server/index",
+            "pages": [
+              {
+                "group": "Install CRM Server 8-10",
+                "root": "en/onsite/install/server/install-10",
+                "pages": [
+                  "en/onsite/install/server/silent-serversetup"
+                ]
+              },
+              {
+                "group": "Install on Citrix or Terminal server",
+                "root": "en/onsite/install/server/install-on-citrix",
+                "pages": [
+                  "en/onsite/install/server/ml-on-citrix",
+                  "en/onsite/install/server/ribbons-on-citrix",
+                  "en/onsite/install/server/addins-language"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Install Win client",
+            "root": "en/onsite/install/win-client/index",
+            "pages": [
+              "en/onsite/install/win-client/prepare-client",
+              "en/onsite/install/win-client/win8-client"
+            ]
+          },
+          {
+            "group": "Install SuperOffice Service",
+            "root": "en/onsite/install/service/index",
+            "pages": [
+              "en/onsite/install/service/prepare",
+              "en/onsite/install/service/manual-steps"
+            ]
+          },
+          {
+            "group": "Install SuperOffice Web",
+            "root": "en/onsite/install/web-client/index",
+            "pages": [
+              "en/onsite/reporter/config",
+              {
+                "group": "Install NetServer web services",
+                "root": "en/onsite/install/netserver/index",
+                "pages": [
+                  "en/onsite/install/netserver/enable-basic-auth",
+                  "en/onsite/install/netserver/enable-iis-identity",
+                  "en/onsite/install/netserver/setup-rest",
+                  "en/onsite/install/netserver/wcf-primer"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Upgrade Onsite",
+    "root": "en/onsite/upgrade/to-11/index",
+    "pages": [
+      "en/onsite/upgrade/to-9/index",
+      {
+        "group": "To version 8.1 - 8.5",
+        "root": "en/onsite/upgrade/to-81/index",
+        "pages": [
+          "en/onsite/upgrade/to-81/using-old-service-domain",
+          "en/onsite/upgrade/to-81/using-old-sales-domain",
+          "en/onsite/upgrade/to-81/using-new-domains",
+          "en/onsite/upgrade/to-81/move-crm-server"
+        ]
+      },
+      {
+        "group": "To version 8.0",
+        "root": "en/onsite/upgrade/75-to-8/index",
+        "pages": [
+          "en/onsite/upgrade/75-to-8/crm-server",
+          "en/onsite/upgrade/75-to-8/web-client",
+          "en/onsite/upgrade/75-to-8/netserver",
+          "en/onsite/upgrade/75-to-8/win-client"
+        ]
+      },
+      {
+        "group": "Upgrade Customer Service to Service",
+        "root": "en/onsite/upgrade/service/index"
+      }
+    ]
+  },
+  {
+    "group": "Configuration",
+    "root": "en/onsite/config/index",
+    "pages": [
+      "en/onsite/feature-toggles",
+      "en/onsite/install/database/crmsetup-and-crmtask",
+      "en/onsite/install/database/dbsetup-exe",
+      "en/onsite/install/database/sotables-ini",
+      "en/onsite/batch-task-server",
+      "en/onsite/reports",
+      "en/onsite/command-line-switches",
+      "en/onsite/install/win-client/souser-ini",
+      "en/onsite/install/win-client/superoffice-config",
+      "en/onsite/install/win-client/superoffice-ini",
+      {
+        "group": "Service configuration",
+        "root": "en/onsite/config/service/index",
+        "pages": [
+          "en/onsite/config/service/attachment-location",
+          "en/onsite/config/service/report-parameters"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Integrate",
+    "pages": [
+      "en/onsite/integrate/web-client/index",
+      "en/onsite/integrate/win-client/index"
+    ]
+  },
+  {
+    "group": "Debug",
+    "root": "en/onsite/debug/index",
+    "pages": [
+      "en/onsite/debug/web-client",
+      "en/onsite/reporter/debug",
+      "en/onsite/reporter/troubleshooting",
+      "en/onsite/debug/win-client",
+      "en/onsite/debug/service-log-files"
+    ]
+  },
+  {
+    "group": "Automated tasks",
+    "root": "en/onsite/automated-tasks/index",
+    "pages": [
+      "en/onsite/automated-tasks/dbi",
+      "en/onsite/automated-tasks/ejournalcron",
+      "en/onsite/automated-tasks/ejoutbox",
+      "en/onsite/automated-tasks/ejsender",
+      "en/onsite/automated-tasks/ejtermsetup",
+      "en/onsite/automated-tasks/importmail",
+      "en/onsite/automated-tasks/upgrade"
+    ]
+  },
+  {
+    "group": "Pocket CRM",
+    "root": "en/onsite/pocket-crm/index",
+    "pages": [
+      "en/onsite/pocket-crm/install",
+      "en/onsite/pocket-crm/client-requirements",
+      "en/onsite/pocket-crm/system-requirements",
+      "en/onsite/pocket-crm/deploy",
+      "en/onsite/pocket-crm/configure",
+      "en/onsite/pocket-crm/upgrade-to-8",
+      "en/onsite/pocket-crm/compression"
+    ]
+  },
+  {
+    "group": "Travel",
+    "root": "en/onsite/travel/index",
+    "pages": [
+      "en/onsite/travel/activate",
+      "en/onsite/travel/update-prototype",
+      "en/onsite/travel/freetext-search-and-travel",
+      "en/onsite/travel/number-allocation",
+      {
+        "group": "Database options",
+        "pages": [
+          {
+            "group": "Built-in",
+            "pages": [
+              "en/onsite/travel/built-in/set-up",
+              "en/onsite/travel/built-in/create-prototype"
+            ]
+          },
+          {
+            "group": "MS SQL Express",
+            "pages": [
+              "en/onsite/travel/sql-express/set-up",
+              "en/onsite/travel/sql-express/create-prototype"
+            ]
+          },
+          {
+            "group": "Sybase",
+            "pages": [
+              "en/onsite/travel/sybase/set-up",
+              "en/onsite/travel/sybase/create-prototype"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Travel gateway",
+        "root": "en/onsite/travel/travel-gateway/index",
+        "pages": [
+          "en/onsite/travel/travel-gateway/sorts",
+          "en/onsite/travel/travel-gateway/install",
+          "en/onsite/travel/travel-gateway/schedule",
+          "en/onsite/travel/travel-gateway/activity-types",
+          "en/onsite/travel/travel-gateway/troubleshooting",
+          {
+            "group": "Configuration",
+            "pages": [
+              "en/onsite/travel/travel-gateway/remotetravel-ini",
+              "en/onsite/travel/travel-gateway/username-ini"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Area management",
+        "root": "en/onsite/travel/area-management/index",
+        "pages": [
+          "en/onsite/travel/area-management/terminology",
+          "en/onsite/travel/area-management/set-up"
+        ]
+      },
+      {
+        "group": "Satellite",
+        "root": "en/onsite/travel/satellite/index",
+        "pages": [
+          "en/onsite/travel/satellite/set-up",
+          "en/onsite/travel/satellite/troubleshooting"
+        ]
+      }
+    ]
+  },
+  "en/onsite/version-history"
+]

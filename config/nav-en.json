@@ -35,6 +35,15 @@
     }
   },
   {
+    "tab": "Onsite",
+    "icon": "server",
+    "hidden": true,
+    "searchable": true,
+    "pages": {
+      "$ref": "./nav-onsite.json"
+    }
+  },
+  {
     "tab": "Release Notes",
     "icon": "bullhorn",
     "groups": {
