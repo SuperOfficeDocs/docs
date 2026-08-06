@@ -56,5 +56,6 @@
       "contribute/retention-policy"
     ]
   },
-  "contribute/configure-mintlify"
+  "contribute/configure-mintlify",
+  "contribute/deployment"
 ]

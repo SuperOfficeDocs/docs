@@ -1,0 +1,60 @@
+---
+uid: deployment
+title: Mintlify deployment and CI/CD
+description: How this site connects to GitHub, what triggers a deploy, and where build-failure visibility lives - captured for the CI/CD pipeline milestone and for audit purposes.
+keywords: ['mintlify', 'deployment', 'auto-deploy', 'ci/cd', 'github app', 'webhook', 'deploy history']
+author: digitaldiina
+date: 08.06.2026
+content_type: concept
+language: en
+---
+
+This page replaces DocFx's manual, week-long release cycle with a git-triggered deploy: merge to `main`, the live site updates. It's the shared home for facts specific to *this* org/repo's deploy setup - generic Mintlify/GitHub App mechanics are linked out to Mintlify's own docs, not duplicated.
+
+## Connection state
+
+| Repo | Branch | Role | Connected | Notes |
+|---|---|---|---|---|
+| `SuperOfficeDocs/docs` | `main` | **"Base" / production, live** | 2026-08-06 | Added via Mintlify dashboard Git settings (required an org-owner-approved GitHub App repository-access grant - see Authority below), then promoted to "Base" the same day. First deploy triggered manually; live at `docs.superoffice.com`. |
+| `SuperOfficeDevNet/mintlify-docs` | `main` | Superseded | Prototype era (predates this repo's forklift) → superseded 2026-08-06 | Leftover from early Mintlify prototyping, in a different GitHub org (`SuperOfficeDevNet`) entirely. No longer production. |
+
+Connection history matters here as much as current state - an audit will ask what changed and when, not just what's true today.
+
+## Authority
+
+| Action | Who can do it |
+|---|---|
+| Change which repo/branch a Mintlify project deploys from, or promote a repo to "Base" | Mintlify dashboard access for this project |
+| Add a new repo to the Mintlify GitHub App's access on a GitHub org | **Org owner only.** Repo-level admin is not sufficient. |
+
+## GitHub App permissions
+
+Requested by the Mintlify GitHub App on `SuperOfficeDocs` (see [Mintlify's GitHub integration docs][1] for what each permission is for in general; this table only lists what's granted here):
+
+| Permission | Access |
+|---|---|
+| `metadata` | Read |
+| `checks` | Read/write - powers the PR build-status check |
+| `code` | Read/write - reads file changes on commit |
+| `deployments` | Read/write - powers PR preview deployments |
+| `pull requests` | Read/write - lets the web editor create branches/PRs |
+
+## Deploy trigger mechanics
+
+A push to the connected branch (`main`) triggers an automatic production deploy; a pull request against it gets its own preview deployment and check. A manual **Deploy** button in the dashboard exists as a fallback. See [Deployments][2] for the full mechanics - not duplicated here.
+
+## Where to look when something's wrong
+
+* **PR/preview build failures** surface directly on GitHub: a `Mintlify Deployment` check (red X, with a "Deployment Failed" detail line) plus a bot comment showing a per-project status table.
+
+* **Production deploy history** lives in the Mintlify dashboard's per-project Activity log (Live tab) - shows what triggered each update (a git push, or a manual update), status, and files changed.
+
+## Related content
+
+* [Configuring Mintlify][3] - editing `docs.json`'s split navigation/redirects config, a different concern from deployment.
+* [Deploy with GitHub][1]
+* [Deployments][2]
+
+[1]: https://www.mintlify.com/docs/deploy/github
+[2]: https://www.mintlify.com/docs/deploy/deployments
+[3]: ./configure-mintlify
