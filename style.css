@@ -134,6 +134,18 @@ body {
   background-color: rgba(178, 199, 235, 0.1) !important;
 }
 
+/* ── Tighten gap between top-level nav groups (#166): halve the divider's
+ * surrounding whitespace while keeping the divider line itself visible. ── */
+#sidebar-content .sidebar-group {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+#sidebar-content div:has(> .sidebar-nav-group-divider) {
+  padding-top: 0.375rem !important;
+  padding-bottom: 0.375rem !important;
+}
+
 /* ─── NAVBAR ──────────────────────────────────────────────── */
 
 /* Light mode: SO green background */
