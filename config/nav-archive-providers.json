@@ -146,6 +146,9 @@
   "en/api/archive-providers/reference/findselection",
   "en/api/archive-providers/reference/findticket",
   "en/api/archive-providers/reference/foreignkeys",
+  "en/api/archive-providers/reference/formfolders",
+  "en/api/archive-providers/reference/forms",
+  "en/api/archive-providers/reference/formsandfolders",
   "en/api/archive-providers/reference/formsubmission",
   "en/api/archive-providers/reference/formsubmissiondynamicselectionsinglecriteriagroup",
   "en/api/archive-providers/reference/formsubmissiondynamicselectionv2",
@@ -372,3 +375,4 @@
   "en/api/archive-providers/reference/webappusage",
   "en/api/archive-providers/reference/webhook"
 ]
+
