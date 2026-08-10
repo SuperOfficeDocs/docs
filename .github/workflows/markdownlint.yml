@@ -31,6 +31,14 @@ jobs:
           files: |
             **/*.md
             **/*.mdx
+          files_ignore: |
+            **/reference/**
+            en/database/tables/**
+            release-notes/api/**
+            release-notes/database/**
+            blueprint-templates/**
+            api-sources/**
+            downloads/**
 
       - name: Set up Node
         if: steps.changed.outputs.any_changed == 'true'
