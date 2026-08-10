@@ -13,10 +13,13 @@ This page replaces DocFx's manual, week-long release cycle with a git-triggered 
 
 ## Connection state
 
-| Repo | Branch | Role | Connected | Notes |
-|---|---|---|---|---|
-| `SuperOfficeDocs/docs` | `main` | **"Base" (Mintlify's production slot)** | 2026-08-06 | Added via Mintlify dashboard Git settings (required an org-owner-approved GitHub App repository-access grant - see Authority below), then promoted to "Base" the same day. First deploy triggered manually; reachable at the default `superofficeas.mintlify.site`/`.app` domain. No custom domain configured yet - an early soft-launch, not the final public `docs.superoffice.com` cutover. |
-| `SuperOfficeDevNet/mintlify-docs` | `main` | Superseded | Prototype era (predates this repo's forklift) → superseded 2026-08-06 | Leftover from early Mintlify prototyping, in a different GitHub org (`SuperOfficeDevNet`) entirely. No longer production. |
+| Repo | Branch | Role | Connected |
+|---|---|---|---|
+| `SuperOfficeDocs/docs` | `main` | **"Base"** (Mintlify's production slot) | 2026-08-06 |
+| `SuperOfficeDevNet/mintlify-docs` | `main` | Superseded | Prototype era (predates this repo's forklift) |
+
+* **`SuperOfficeDocs/docs`:** added via Mintlify dashboard Git settings (required an org-owner-approved GitHub App repository-access grant - see Authority below), then promoted to "Base" the same day. First deploy triggered manually; reachable at the default `superofficeas.mintlify.site`/`.app` domain. No custom domain configured yet - an early soft-launch, not the final public `docs.superoffice.com` cutover.
+* **`SuperOfficeDevNet/mintlify-docs`:** leftover from early Mintlify prototyping, in a different GitHub org (`SuperOfficeDevNet`) entirely, superseded 2026-08-06. No longer production.
 
 Connection history matters here as much as current state - an audit will ask what changed and when, not just what's true today.
 
@@ -52,14 +55,17 @@ The preview stays reachable while the PR is open, and after it merges or closes 
 
 PRs from a [fork][6] do not get an automatic preview. See [Manual (custom) previews][7] for the workaround, and [Reviewing a PR][4] for what a reviewer should do when no bot comment appears.
 
-A **Preview authentication** toggle (dashboard → Add-ons → Previews) can restrict preview access to signed-in Mintlify organization members instead of the public-by-default behavior. Not enabled for now. See [Preview deployments][5] for details.
+A **Preview authentication** toggle (dashboard > **Add-ons** > **Previews**) can restrict preview access to signed-in Mintlify organization members instead of the public-by-default behavior. Not enabled for now. See [Preview deployments][5] for details.
 
 ## Manual (custom) previews {#manual-previews}
 
 Use a manual preview when a PR came from a fork, or to preview a branch outside of any PR.
 
-1. Push the branch into `SuperOfficeDocs/docs` itself. Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first, for example `git fetch origin pull/<PR#>/head:tmp-branch && git push origin tmp-branch`.
-2. In the Mintlify dashboard, go to **Previews** → **Create custom preview**, enter the branch name, and create it.
+1. Push the branch into `SuperOfficeDocs/docs` itself, under the naming convention `preview/pr-<PR#>` to avoid collisions between concurrent manual previews - Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first: `git fetch origin pull/<PR#>/head:preview/pr-<PR#> && git push origin preview/pr-<PR#>`.
+2. In the Mintlify dashboard, go to **Previews** > **Create custom preview**, enter that branch name, and create it.
+
+    <!-- TODO: add a screenshot of the dashboard's Previews > Create custom preview panel here -->
+
 3. Share the resulting link on the PR.
 
 **Manual previews stay live until someone deletes them.** Unlike automatic previews, they do not expire on their own. Delete from the same dashboard **Previews** list once no longer needed.
