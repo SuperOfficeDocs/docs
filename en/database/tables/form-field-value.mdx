@@ -1,39 +1,38 @@
 ---
-uid: table-form_field_value
 title: form_field_value table
 description: Form field values saved in a searchable format
 generated: true
-keywords: ['database table form_field_value']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import FormFieldValue from "./includes/form-field-value.md";
+import FormFieldValue from "./includes/form-field-value.mdx";
 
-# form\_field\_value Table (537)
+## form\_field\_value Table (538)
 
 Form field values saved in a searchable format
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|form\_field\_value\_id|Primary key|PK| |
-|form\_submission\_id|The form submission this set of values belong to|FK [form_submission](./form-submission)|&#x25CF;|
-|rank|The rank of this form field within the form|Int|&#x25CF;|
-|label|The label of this form field|String(4000)|&#x25CF;|
-|type|The type of this form field|String(4000)|&#x25CF;|
-|sequence|The sequence of this form field|Int|&#x25CF;|
-|string\_value|The string value of this form field|String(4000)|&#x25CF;|
-|int\_value|The integer value of this form field|Int|&#x25CF;|
-|double\_value|The double value of this form field|Double|&#x25CF;|
-|bool\_value|The boolean value of this form field|Bool|&#x25CF;|
-|datetime\_value|The datetime value of this form field|DateTime|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|form\_field\_value\_id|Primary key|PK|No|
+|form\_submission\_id|The form submission this set of values belong to|FK [form_submission](./form-submission.mdx)|Yes|
+|rank|The rank of this form field within the form|Int|Yes|
+|label|The label of this form field|String(4000)|Yes|
+|type|The type of this form field|String(4000)|Yes|
+|sequence|The sequence of this form field|Int|Yes|
+|string\_value|The string value of this form field|String(4000)|Yes|
+|int\_value|The integer value of this form field|Int|Yes|
+|double\_value|The double value of this form field|Double|Yes|
+|bool\_value|The boolean value of this form field|Bool|Yes|
+|datetime\_value|The datetime value of this form field|DateTime|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![form_field_value table relationship diagram](/media/loc/en/database/tables/form_field_value.png)
 
@@ -60,6 +59,7 @@ Form field values saved in a searchable format
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[form\_submission](./form-submission)  |A form submission |
 
+
 ## Replication Flags
 
 * None
@@ -67,3 +67,4 @@ Form field values saved in a searchable format
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,31 +1,30 @@
 ---
-uid: table-PMembTypeHeadingLink
 title: PMembTypeHeadingLink table
 description: Heading link table for PMembType, for MDO headers
 generated: true
-keywords: ['database table PMembTypeHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Pmembtypeheadinglink from "./includes/pmembtypeheadinglink.md";
+import Pmembtypeheadinglink from "./includes/pmembtypeheadinglink.mdx";
 
-# PMembTypeHeadingLink Table (93)
+## PMembTypeHeadingLink Table (93)
 
 Heading link table for PMembType, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|pmembtypeheadinglink\_id|Primary key|PK| |
-|pmembtype\_id|Link to PMembType list table|FK [PMembType](./pmembtype)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|pmembtypeheadinglink\_id|Primary key|PK|No|
+|pmembtype\_id|Link to PMembType list table|FK [PMembType](./pmembtype.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![PMembTypeHeadingLink table relationship diagram](/media/loc/en/database/tables/PMembTypeHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for PMembType, for MDO headers
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 |[PMembType](./pmembtype)  |PMembType list table. List text of titles (member types) for project members. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for PMembType, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

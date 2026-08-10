@@ -1,31 +1,30 @@
 ---
-uid: table-SaleTypeGroupLink
 title: SaleTypeGroupLink table
 description: User group link table for SaleType, for MDO item hiding
 generated: true
-keywords: ['database table SaleTypeGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Saletypegrouplink from "./includes/saletypegrouplink.md";
+import Saletypegrouplink from "./includes/saletypegrouplink.mdx";
 
-# SaleTypeGroupLink Table (150)
+## SaleTypeGroupLink Table (150)
 
 User group link table for SaleType, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|saletypegrouplink\_id|Primary key|PK| |
-|saletype\_id|Link to SaleType list table|FK [SaleType](./saletype)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|saletypegrouplink\_id|Primary key|PK|No|
+|saletype\_id|Link to SaleType list table|FK [SaleType](./saletype.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SaleTypeGroupLink table relationship diagram](/media/loc/en/database/tables/SaleTypeGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for SaleType, for MDO item hiding
 |[SaleType](./saletype)  |Type of sale - large solution, incremental, whatever fits the organization |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for SaleType, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

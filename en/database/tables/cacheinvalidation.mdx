@@ -1,29 +1,28 @@
 ---
-uid: table-CacheInvalidation
 title: CacheInvalidation table
 description: Names and generation numbers for distributed invalidation of caches
 generated: true
-keywords: ['database table CacheInvalidation']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Cacheinvalidation from "./includes/cacheinvalidation.md";
+import Cacheinvalidation from "./includes/cacheinvalidation.mdx";
 
-# CacheInvalidation Table (539)
+## CacheInvalidation Table (540)
 
 Names and generation numbers for distributed invalidation of caches
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|cacheinvalidation\_id|Primary key|PK| |
-|Name|The (unique!) name of the cache, which is often, but not always, the same as a physical table name|String(255)|&#x25CF;|
-|Generation|The &apos;generation number&apos;, starts at 1 and goes up for every registered change|Int|&#x25CF;|
-|LastChange|The UTC datetime of the last change; for information only|UtcDateTime|&#x25CF;|
-|LastChangeMachine|The name of the machine where the last change occurred|String(255)|&#x25CF;|
-|FirstChange|When was the first flush registered for this table/cache|UtcDateTime|&#x25CF;|
+|cacheinvalidation\_id|Primary key|PK|No|
+|Name|The (unique!) name of the cache, which is often, but not always, the same as a physical table name|String(255)|Yes|
+|Generation|The &apos;generation number&apos;, starts at 1 and goes up for every registered change|Int|Yes|
+|LastChange|The UTC datetime of the last change; for information only|UtcDateTime|Yes|
+|LastChangeMachine|The name of the machine where the last change occurred|String(255)|Yes|
+|FirstChange|When was the first flush registered for this table/cache|UtcDateTime|Yes|
+
 
 ![CacheInvalidation table relationship diagram](/media/loc/en/database/tables/CacheInvalidation.png)
 
@@ -42,3 +41,4 @@ Names and generation numbers for distributed invalidation of caches
 ## Security Flags
 
 * No access control via user's Role.
+

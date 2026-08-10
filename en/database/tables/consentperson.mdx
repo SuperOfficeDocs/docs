@@ -1,34 +1,33 @@
 ---
-uid: table-ConsentPerson
 title: ConsentPerson table
 description: Link table that defines who has which consents
 generated: true
-keywords: ['database table ConsentPerson']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Consentperson from "./includes/consentperson.md";
+import Consentperson from "./includes/consentperson.mdx";
 
-# ConsentPerson Table (471)
+## ConsentPerson Table (471)
 
 Link table that defines who has which consents
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|consentperson\_id|Primary key|PK| |
-|person\_id|Person who gave consent|FK [person](./person)|&#x25CF;|
-|consentPurpose\_id|Consent purpose|FK [ConsentPurpose](./consentpurpose)|&#x25CF;|
-|legalBase\_id|Legal base|FK [LegalBase](./legalbase)|&#x25CF;|
-|consentSource\_id|Consent source|FK [ConsentSource](./consentsource)|&#x25CF;|
-|comment|A comment describing why this GDPR change was made|String(255)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|consentperson\_id|Primary key|PK|No|
+|person\_id|Person who gave consent|FK [person](./person.mdx)|Yes|
+|consentPurpose\_id|Consent purpose|FK [ConsentPurpose](./consentpurpose.mdx)|Yes|
+|legalBase\_id|Legal base|FK [LegalBase](./legalbase.mdx)|Yes|
+|consentSource\_id|Consent source|FK [ConsentSource](./consentsource.mdx)|Yes|
+|comment|A comment describing why this GDPR change was made|String(255)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ConsentPerson table relationship diagram](/media/loc/en/database/tables/ConsentPerson.png)
 
@@ -52,6 +51,7 @@ Link table that defines who has which consents
 |[LegalBase](./legalbase)  |Legal base for GDPR (Article 6) |
 |[person](./person)  |Persons |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -61,3 +61,4 @@ Link table that defines who has which consents
 ## Security Flags
 
 * No access control via user's Role.
+

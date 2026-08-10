@@ -1,31 +1,30 @@
 ---
-uid: table-quick_filter_info
 title: quick_filter_info table
 description: Connect quick filter info from a specific provider to a dashboard
 generated: true
-keywords: ['database table quick_filter_info']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import QuickFilterInfo from "./includes/quick-filter-info.md";
+import QuickFilterInfo from "./includes/quick-filter-info.mdx";
 
-# quick\_filter\_info Table (486)
+## quick\_filter\_info Table (486)
 
 Connect quick filter info from a specific provider to a dashboard
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|quick\_filter\_info\_id|Primary key|PK| |
-|dashboard\_id|What dashboard is this quickfilter for|FK [dashboard](./dashboard)|&#x25CF;|
-|provider\_name|The name of the provider|String(255)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|quick\_filter\_info\_id|Primary key|PK|No|
+|dashboard\_id|What dashboard is this quickfilter for|FK [dashboard](./dashboard.mdx)|Yes|
+|provider\_name|The name of the provider|String(255)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![quick_filter_info table relationship diagram](/media/loc/en/database/tables/quick_filter_info.png)
 
@@ -44,6 +43,7 @@ Connect quick filter info from a specific provider to a dashboard
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[dashboard](./dashboard)  |Describes a dashboard |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ Connect quick filter info from a specific provider to a dashboard
 ## Security Flags
 
 * No access control via user's Role.
+

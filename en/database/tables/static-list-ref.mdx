@@ -1,26 +1,25 @@
 ---
-uid: table-static_list_ref
 title: static_list_ref table
 description: This table stores id references for selections id lists
 generated: true
-keywords: ['database table static_list_ref']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import StaticListRef from "./includes/static-list-ref.md";
+import StaticListRef from "./includes/static-list-ref.mdx";
 
-# static\_list\_ref Table (396)
+## static\_list\_ref Table (396)
 
 This table stores id references for selections id lists
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|ref\_id|The id of the element which this item points to|Int| |
-|list\_id|The id of the list we link to|Int| |
+|id|Primary key|PK|No|
+|ref\_id|The id of the element which this item points to|Int|No|
+|list\_id|The id of the list we link to|Int|No|
+
 
 ![static_list_ref table relationship diagram](/media/loc/en/database/tables/static_list_ref.png)
 
@@ -40,3 +39,4 @@ This table stores id references for selections id lists
 ## Security Flags
 
 * No access control via user's Role.
+

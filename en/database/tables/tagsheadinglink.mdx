@@ -1,31 +1,30 @@
 ---
-uid: table-TagsHeadingLink
 title: TagsHeadingLink table
 description: Heading link table for Source, for MDO headers
 generated: true
-keywords: ['database table TagsHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Tagsheadinglink from "./includes/tagsheadinglink.md";
+import Tagsheadinglink from "./includes/tagsheadinglink.mdx";
 
-# TagsHeadingLink Table (460)
+## TagsHeadingLink Table (460)
 
 Heading link table for Source, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|tagsheadinglink\_id|Primary key|PK| |
-|tags\_id|Link to Tags list table|FK [Tags](./tags)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|tagsheadinglink\_id|Primary key|PK|No|
+|tags\_id|Link to Tags list table|FK [Tags](./tags.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![TagsHeadingLink table relationship diagram](/media/loc/en/database/tables/TagsHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for Source, for MDO headers
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 |[Tags](./tags)  |MDO List of tags for Service entities |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for Source, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

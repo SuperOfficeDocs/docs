@@ -1,35 +1,34 @@
 ---
-uid: table-SaleStakeholder
 title: SaleStakeholder table
 description: Stakeholders in the sale, very similar to project members
 generated: true
-keywords: ['database table SaleStakeholder']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Salestakeholder from "./includes/salestakeholder.md";
+import Salestakeholder from "./includes/salestakeholder.mdx";
 
-# SaleStakeholder Table (121)
+## SaleStakeholder Table (121)
 
 Stakeholders in the sale, very similar to project members
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|salestakeholder\_id|Primary key|PK| |
-|sale\_id|Parent sale|FK [sale](./sale)|&#x25CF;|
-|contact\_id|Contact ID of person or contact who is the sale stakeholder|FK [contact](./contact)|&#x25CF;|
-|person\_id|Person ID of person who is the sale stakeholder, or 0 if it&apos;s just a contact|FK [person](./person)|&#x25CF;|
-|rank|Rank in list|UShort|&#x25CF;|
-|stakeholderrole\_id|Member type link|FK [StakeholderRole](./stakeholderrole)|&#x25CF;|
-|comment|Optional comment|String(2047)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|salestakeholder\_id|Primary key|PK|No|
+|sale\_id|Parent sale|FK [sale](./sale.mdx)|Yes|
+|contact\_id|Contact ID of person or contact who is the sale stakeholder|FK [contact](./contact.mdx)|Yes|
+|person\_id|Person ID of person who is the sale stakeholder, or 0 if it&apos;s just a contact|FK [person](./person.mdx)|Yes|
+|rank|Rank in list|UShort|Yes|
+|stakeholderrole\_id|Member type link|FK [StakeholderRole](./stakeholderrole.mdx)|Yes|
+|comment|Optional comment|String(2047)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SaleStakeholder table relationship diagram](/media/loc/en/database/tables/SaleStakeholder.png)
 
@@ -52,6 +51,7 @@ Stakeholders in the sale, very similar to project members
 |[sale](./sale)  |Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.   |
 |[StakeholderRole](./stakeholderrole)  |Role a stakeholder has in a sale |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -62,3 +62,4 @@ Stakeholders in the sale, very similar to project members
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

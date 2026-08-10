@@ -1,27 +1,26 @@
 ---
-uid: table-kb_entry_words
 title: kb_entry_words table
 description: This table contains all the words and how many times the are refered                  to in the FAQ entires
 generated: true
-keywords: ['database table kb_entry_words']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import KbEntryWords from "./includes/kb-entry-words.md";
+import KbEntryWords from "./includes/kb-entry-words.mdx";
 
-# kb\_entry\_words Table (354)
+## kb\_entry\_words Table (354)
 
 This table contains all the words and how many times the are refered                  to in the FAQ entires
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|word|A word found in a kb_entry|String(63)| |
-|score|Indicates how many occurences of this word we have|Int|&#x25CF;|
-|origin|Indicates if it is an entry word (0) or a category word (1).|Short| |
+|id|Primary key|PK|No|
+|word|A word found in a kb_entry|String(63)|No|
+|score|Indicates how many occurences of this word we have|Int|Yes|
+|origin|Indicates if it is an entry word (0) or a category word (1).|Short|No|
+
 
 ![kb_entry_words table relationship diagram](/media/loc/en/database/tables/kb_entry_words.png)
 
@@ -39,6 +38,7 @@ This table contains all the words and how many times the are refered            
 |------|-------------|
 |[word\_relations](./word-relations)  |This table shows which word are used in which FAQ entry, and how many times            they are used in each |
 
+
 ## Replication Flags
 
 * None
@@ -46,3 +46,4 @@ This table contains all the words and how many times the are refered            
 ## Security Flags
 
 * No access control via user's Role.
+

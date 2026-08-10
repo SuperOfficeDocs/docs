@@ -1,28 +1,27 @@
 ---
-uid: table-leadstatus
 title: leadstatus table
 description: List items of lead status that is selectable for contacts and persons that have specific category
 generated: true
-keywords: ['database table leadstatus']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Leadstatus from "./includes/leadstatus.md";
+import Leadstatus from "./includes/leadstatus.mdx";
 
-# leadstatus Table (548)
+## leadstatus Table (549)
 
 List items of lead status that is selectable for contacts and persons that have specific category
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|leadstatus\_id|Primary key|PK| |
-|name|The list item|String(4000)| |
-|rank|Rank order|UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(4000)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
+|leadstatus\_id|Primary key|PK|No|
+|name|The list item|String(4000)|No|
+|rank|Rank order|UShort|Yes|
+|tooltip|Tooltip or other description|String(4000)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+
 
 ![leadstatus table relationship diagram](/media/loc/en/database/tables/leadstatus.png)
 
@@ -41,6 +40,7 @@ List items of lead status that is selectable for contacts and persons that have 
 |[AutomatedCategoryUpdate](./automatedcategoryupdate)  |Info on how to autoupdate category when changing sale or leadstatus on person |
 |[person](./person)  |Persons |
 
+
 ## Replication Flags
 
 * None
@@ -48,3 +48,4 @@ List items of lead status that is selectable for contacts and persons that have 
 ## Security Flags
 
 * No access control via user's Role.
+

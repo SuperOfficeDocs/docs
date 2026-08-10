@@ -1,45 +1,44 @@
 ---
-uid: table-document
 title: document table
-description: Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.
+description: Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.  
 generated: true
-keywords: ['database table document']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Document from "./includes/document.md";
+import Document from "./includes/document.mdx";
 
-# document Table (10)
+## document Table (10)
 
-Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.
+Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.  
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|document\_id|Primary key|PK| |
-|application\_id|Application this document was made with|FK [ExtApp](./extapp)| |
-|name|File name|String(511)| |
-|header|Visible document name|String(219)|&#x25CF;|
-|our\_ref|Our reference, searchable field from freetext search|String(99)|&#x25CF;|
-|your\_ref|Your reference|String(99)|&#x25CF;|
-|searchname|Searchable name (not used?)|String(99)|&#x25CF;|
-|attention|Attention/salutation|String(99)|&#x25CF;|
-|text\_id|Pointer to optional long description|FK [text](./text)|&#x25CF;|
-|archiveProvider|Document plugin id copied from the DocTmpl.autoevent_id - tells us where the document content is stored|Id|&#x25CF;|
-|appointment\_id|points back to owning appointment|FK [appointment](./appointment)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|extref|External reference (notes ID, email ID, URL, whatever) for use by document plugin in locating document content|String(511)|&#x25CF;|
-|userdef\_id|User-defined fields|FK [uddocsmall](./uddocsmall)|&#x25CF;|
-|userdef2\_id|User-defined fields|FK [uddoclarge](./uddoclarge)|&#x25CF;|
-|snum|The sequence number allocated from refcount on used template when creating the document|Int|&#x25CF;|
-|ExtUrl|For DocPlugin-internal use only. Used to optionally cache URL of external documents.|String(1023)|&#x25CF;|
-|contentSetCount|Number of times content has been set on this document.|Int| |
+|document\_id|Primary key|PK|No|
+|application\_id|Application this document was made with|FK [ExtApp](./extapp.mdx)|No|
+|name|File name|String(511)|No|
+|header|Visible document name|String(219)|Yes|
+|our\_ref|Our reference, searchable field from freetext search|String(99)|Yes|
+|your\_ref|Your reference|String(99)|Yes|
+|searchname|Searchable name (not used?)|String(99)|Yes|
+|attention|Attention/salutation|String(99)|Yes|
+|text\_id|Pointer to optional long description|FK [text](./text.mdx)|Yes|
+|archiveProvider|Document plugin id copied from the DocTmpl.autoevent_id - tells us where the document content is stored|Id|Yes|
+|appointment\_id|points back to owning appointment|FK [appointment](./appointment.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|extref|External reference (notes ID, email ID, URL, whatever) for use by document plugin in locating document content|String(511)|Yes|
+|userdef\_id|User-defined fields|FK [uddocsmall](./uddocsmall.mdx)|Yes|
+|userdef2\_id|User-defined fields|FK [uddoclarge](./uddoclarge.mdx)|Yes|
+|snum|The sequence number allocated from refcount on used template when creating the document|Int|Yes|
+|ExtUrl|For DocPlugin-internal use only. Used to optionally cache URL of external documents.|String(1023)|Yes|
+|contentSetCount|Number of times content has been set on this document.|Int|No|
+
 
 ![document table relationship diagram](/media/loc/en/database/tables/document.png)
 
@@ -74,6 +73,7 @@ Documents, this table is an extension of the Appointment table.  There is always
 |[uddoclarge](./uddoclarge)  |User-defined fields |
 |[uddocsmall](./uddocsmall)  |User-defined fields |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -84,3 +84,4 @@ Documents, this table is an extension of the Appointment table.  There is always
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

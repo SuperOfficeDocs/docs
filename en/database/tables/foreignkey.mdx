@@ -1,35 +1,34 @@
 ---
-uid: table-foreignkey
 title: foreignkey table
 description: Foreign Key - enables storage of arbitrary extra key information for every table/row in SuperOffice. You may use this table to store your extra information instead of using the dictionary SDK to create your own tables.
 generated: true
-keywords: ['database table foreignkey']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Foreignkey from "./includes/foreignkey.md";
+import Foreignkey from "./includes/foreignkey.mdx";
 
-# foreignkey Table (183)
+## foreignkey Table (183)
 
 Foreign Key - enables storage of arbitrary extra key information for every table/row in SuperOffice. You may use this table to store your extra information instead of using the dictionary SDK to create your own tables.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|foreignkey\_id|Primary key|PK| |
-|foreigndevice\_id|Reference to device definition|FK [foreigndevice](./foreigndevice)| |
-|table\_id|SuperOffice table reference|TableNumber| |
-|record\_id|Record in the referenced table|RecordId| |
-|seqno|Sequence number, order of subkeys within one key|Id| |
-|subkey|Subkey (optional)|String(239)|&#x25CF;|
-|subvalue|Key value|String(239)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|foreignkey\_id|Primary key|PK|No|
+|foreigndevice\_id|Reference to device definition|FK [foreigndevice](./foreigndevice.mdx)|No|
+|table\_id|SuperOffice table reference|TableNumber|No|
+|record\_id|Record in the referenced table|RecordId|No|
+|seqno|Sequence number, order of subkeys within one key|Id|No|
+|subkey|Subkey (optional)|String(239)|Yes|
+|subvalue|Key value|String(239)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![foreignkey table relationship diagram](/media/loc/en/database/tables/foreignkey.png)
 
@@ -52,6 +51,7 @@ Foreign Key - enables storage of arbitrary extra key information for every table
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[foreigndevice](./foreigndevice)  |Middle level of Foreign Key system |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -61,3 +61,4 @@ Foreign Key - enables storage of arbitrary extra key information for every table
 ## Security Flags
 
 * No access control via user's Role.
+

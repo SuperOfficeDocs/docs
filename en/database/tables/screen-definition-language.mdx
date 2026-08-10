@@ -1,28 +1,27 @@
 ---
-uid: table-screen_definition_language
 title: screen_definition_language table
 description: Custom language variables used for screens
 generated: true
-keywords: ['database table screen_definition_language']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ScreenDefinitionLanguage from "./includes/screen-definition-language.md";
+import ScreenDefinitionLanguage from "./includes/screen-definition-language.mdx";
 
-# screen\_definition\_language Table (374)
+## screen\_definition\_language Table (374)
 
 Custom language variables used for screens
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition)|&#x25CF;|
-|language|Language &amp;apos;no&amp;apos;, &amp;apos;en&amp;apos;, etc|String(5)|&#x25CF;|
-|variable\_name|Variable name|String(255)|&#x25CF;|
-|variable\_value|Variable value|Clob|&#x25CF;|
+|id|Primary key|PK|No|
+|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition.mdx)|Yes|
+|language|Language &amp;apos;no&amp;apos;, &amp;apos;en&amp;apos;, etc|String(5)|Yes|
+|variable\_name|Variable name|String(255)|Yes|
+|variable\_value|Variable value|Clob|Yes|
+
 
 ![screen_definition_language table relationship diagram](/media/loc/en/database/tables/screen_definition_language.png)
 
@@ -40,6 +39,7 @@ Custom language variables used for screens
 |------|-------------|
 |[screen\_definition](./screen-definition)  |A configurable screen |
 
+
 ## Replication Flags
 
 * None
@@ -47,3 +47,4 @@ Custom language variables used for screens
 ## Security Flags
 
 * No access control via user's Role.
+

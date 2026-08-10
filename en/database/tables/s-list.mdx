@@ -1,35 +1,34 @@
 ---
-uid: table-s_list
 title: s_list table
 description: A list, dynamic or static
 generated: true
-keywords: ['database table s_list']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SList from "./includes/s-list.md";
+import SList from "./includes/s-list.mdx";
 
-# s\_list Table (344)
+## s\_list Table (344)
 
 A list, dynamic or static
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|type|Dynamic/static|type| |
-|name|The name of the list|String(255)| |
-|washed|Date when this list was last washed(not used until v2)|DateTime|&#x25CF;|
-|washing\_percent|How far the washing has gotten (not used until v2)|Short|&#x25CF;|
-|flag|Not used|Short|&#x25CF;|
-|number\_of\_elements|How many elements this list contains|Int|&#x25CF;|
-|folder\_id|The folder which this link belongs to. -1 indicates that the link is on the root|Int| |
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)| |
-|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)| |
-|dbi\_last\_syncronized|Last external syncronization.|DateTime| |
-|dbi\_last\_modified|When the entry was last modified.|DateTime| |
+|id|Primary key|PK|No|
+|type|Dynamic/static|type|No|
+|name|The name of the list|String(255)|No|
+|washed|Date when this list was last washed(not used until v2)|DateTime|Yes|
+|washing\_percent|How far the washing has gotten (not used until v2)|Short|Yes|
+|flag|Not used|Short|Yes|
+|number\_of\_elements|How many elements this list contains|Int|Yes|
+|folder\_id|The folder which this link belongs to. -1 indicates that the link is on the root|Int|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
+|dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
+|dbi\_last\_modified|When the entry was last modified.|DateTime|No|
+
 
 ![s_list table relationship diagram](/media/loc/en/database/tables/s_list.png)
 
@@ -55,6 +54,7 @@ A list, dynamic or static
 |[s\_list\_shipment](./s-list-shipment)  |A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments |
 |[s\_washing\_list](./s-washing-list)  |Unused table that is ment to be used for active washing in spm v2 |
 
+
 ## Replication Flags
 
 * None
@@ -62,3 +62,4 @@ A list, dynamic or static
 ## Security Flags
 
 * No access control via user's Role.
+
