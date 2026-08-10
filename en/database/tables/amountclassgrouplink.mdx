@@ -1,31 +1,30 @@
 ---
-uid: table-AmountClassGroupLink
 title: AmountClassGroupLink table
 description: User group link table for AmountClass, for MDO item hiding
 generated: true
-keywords: ['database table AmountClassGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Amountclassgrouplink from "./includes/amountclassgrouplink.md";
+import Amountclassgrouplink from "./includes/amountclassgrouplink.mdx";
 
-# AmountClassGroupLink Table (226)
+## AmountClassGroupLink Table (226)
 
 User group link table for AmountClass, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|amountclassgrouplink\_id|Primary key|PK| |
-|amountclass\_id|Link to AmountClass list table|FK [AmountClass](./amountclass)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|amountclassgrouplink\_id|Primary key|PK|No|
+|amountclass\_id|Link to AmountClass list table|FK [AmountClass](./amountclass.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![AmountClassGroupLink table relationship diagram](/media/loc/en/database/tables/AmountClassGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for AmountClass, for MDO item hiding
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for AmountClass, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

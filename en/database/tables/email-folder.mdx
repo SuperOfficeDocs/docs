@@ -1,34 +1,33 @@
 ---
-uid: table-email_folder
 title: email_folder table
 description: Corresponds to an email folder on a mail server
 generated: true
-keywords: ['database table email_folder']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EmailFolder from "./includes/email-folder.md";
+import EmailFolder from "./includes/email-folder.mdx";
 
-# email\_folder Table (492)
+## email\_folder Table (492)
 
 Corresponds to an email folder on a mail server
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|email\_folder\_id|Primary key|PK| |
-|account\_id|Account id|FK [email_account](./email-account)|&#x25CF;|
-|parent\_folder\_id|Parent folder|FK [email_folder](./email-folder)|&#x25CF;|
-|name|Folder name|String(255)|&#x25CF;|
-|attributes|Folder attributes like Subscribed, HasChildren, Junk, Sent...|Int|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|folder\_separator|Character separating subfolders|String(255)|&#x25CF;|
+|email\_folder\_id|Primary key|PK|No|
+|account\_id|Account id|FK [email_account](./email-account.mdx)|Yes|
+|parent\_folder\_id|Parent folder|FK [email_folder](./email-folder.mdx)|Yes|
+|name|Folder name|String(255)|Yes|
+|attributes|Folder attributes like Subscribed, HasChildren, Junk, Sent...|Int|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|folder\_separator|Character separating subfolders|String(255)|Yes|
+
 
 ![email_folder table relationship diagram](/media/loc/en/database/tables/email_folder.png)
 
@@ -49,6 +48,7 @@ Corresponds to an email folder on a mail server
 |[email\_folder](./email-folder)  |Corresponds to an email folder on a mail server |
 |[email\_item](./email-item)  |Email data |
 
+
 ## Replication Flags
 
 * None
@@ -56,3 +56,4 @@ Corresponds to an email folder on a mail server
 ## Security Flags
 
 * No access control via user's Role.
+

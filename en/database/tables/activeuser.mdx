@@ -1,30 +1,29 @@
 ---
-uid: table-activeuser
 title: activeuser table
 description: Currently logged-on users. This table contains encrypted license information.  Changing it may disable login for all users and require intervention by SuperOffice support. Recommended use; for determining who is logged on, at what location, etc.
 generated: true
-keywords: ['database table activeuser']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Activeuser from "./includes/activeuser.md";
+import Activeuser from "./includes/activeuser.mdx";
 
-# activeuser Table (28)
+## activeuser Table (28)
 
 Currently logged-on users. This table contains encrypted license information.  Changing it may disable login for all users and require intervention by SuperOffice support. Recommended use; for determining who is logged on, at what location, etc.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|activeuser\_id|Note: This ID is not assigned from sequence, but instead corresponds to the Associate primary key|PK| |
-|lastlogin|Date of last login|DateTime|&#x25CF;|
-|netAddress|DNS and numeric IP address|String(127)|&#x25CF;|
-|clientType|1=CRM , 2=Admin, 3=SOQL, …|UShort|&#x25CF;|
-|computerName|Computer name|String(127)|&#x25CF;|
-|domainName|Domain name|String(127)|&#x25CF;|
-|osUserName|OS user name currently logged on|String(127)|&#x25CF;|
+|activeuser\_id|Note: This ID is not assigned from sequence, but instead corresponds to the Associate primary key|PK|No|
+|lastlogin|Date of last login|DateTime|Yes|
+|netAddress|DNS and numeric IP address|String(127)|Yes|
+|clientType|1=CRM , 2=Admin, 3=SOQL, …|UShort|Yes|
+|computerName|Computer name|String(127)|Yes|
+|domainName|Domain name|String(127)|Yes|
+|osUserName|OS user name currently logged on|String(127)|Yes|
+
 
 ![activeuser table relationship diagram](/media/loc/en/database/tables/activeuser.png)
 
@@ -41,6 +40,7 @@ Currently logged-on users. This table contains encrypted license information.  C
 |------|-------------|
 |[traveller](./traveller)  |Associates traveling out from this database |
 
+
 ## Replication Flags
 
 * None
@@ -48,3 +48,4 @@ Currently logged-on users. This table contains encrypted license information.  C
 ## Security Flags
 
 * No access control via user's Role.
+

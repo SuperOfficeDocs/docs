@@ -1,37 +1,36 @@
 ---
-uid: table-ErpConnection
 title: ErpConnection table
 description: One connection to an ERP connector, specifying Client and other required information
 generated: true
-keywords: ['database table ErpConnection']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Erpconnection from "./includes/erpconnection.md";
+import Erpconnection from "./includes/erpconnection.mdx";
 
-# ErpConnection Table (418)
+## ErpConnection Table (418)
 
 One connection to an ERP connector, specifying Client and other required information
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|erpconnection\_id|Primary key|PK| |
-|ErpConnectorId|The connector that this connection should call|FK [ErpConnector](./erpconnector)|&#x25CF;|
-|DisplayName|Connection name shown to user; multi-language support|String(254)|&#x25CF;|
-|DisplayDescription|Tooltip/description shown to user; multi-language support|String(254)|&#x25CF;|
-|Active|Is this connection currently active|Bool|&#x25CF;|
-|ConnectionId|The GUID that uniquely identifies this connection; passed to the Connector in every call|String(127)|&#x25CF;|
-|MostRecentTimestamp|Datetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system|String(254)|&#x25CF;|
-|AllAccess|Is this connection accessible to everyone?  If not, then the ErpConnectionAccess table tells us who can access it|Bool|&#x25CF;|
-|Deleted|If set, then this is a row that has been &apos;deleted&apos;; we do not physically delete rows to avoid disaster|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|erpconnection\_id|Primary key|PK|No|
+|ErpConnectorId|The connector that this connection should call|FK [ErpConnector](./erpconnector.mdx)|Yes|
+|DisplayName|Connection name shown to user; multi-language support|String(254)|Yes|
+|DisplayDescription|Tooltip/description shown to user; multi-language support|String(254)|Yes|
+|Active|Is this connection currently active|Bool|Yes|
+|ConnectionId|The GUID that uniquely identifies this connection; passed to the Connector in every call|String(127)|Yes|
+|MostRecentTimestamp|Datetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system|String(254)|Yes|
+|AllAccess|Is this connection accessible to everyone?  If not, then the ErpConnectionAccess table tells us who can access it|Bool|Yes|
+|Deleted|If set, then this is a row that has been &apos;deleted&apos;; we do not physically delete rows to avoid disaster|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ErpConnection table relationship diagram](/media/loc/en/database/tables/ErpConnection.png)
 
@@ -56,6 +55,7 @@ One connection to an ERP connector, specifying Client and other required informa
 |[ErpExternalKey](./erpexternalkey)  |The external (ERP-facing) key related to a synchronized record / connection |
 |[QuoteConnection](./quoteconnection)  |Primary key in the CRM database. Definition of a connection to an external system, for the Quote system. |
 
+
 ## Replication Flags
 
 * None
@@ -63,3 +63,4 @@ One connection to an ERP connector, specifying Client and other required informa
 ## Security Flags
 
 * No access control via user's Role.
+

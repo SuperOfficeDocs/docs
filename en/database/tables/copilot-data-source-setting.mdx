@@ -1,32 +1,31 @@
 ---
-uid: table-copilot_data_source_setting
 title: copilot_data_source_setting table
 description: Stores specific configuration values for each data source
 generated: true
-keywords: ['database table copilot_data_source_setting']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import CopilotDataSourceSetting from "./includes/copilot-data-source-setting.md";
+import CopilotDataSourceSetting from "./includes/copilot-data-source-setting.mdx";
 
-# copilot\_data\_source\_setting Table (475)
+## copilot\_data\_source\_setting Table (475)
 
 Stores specific configuration values for each data source
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|copilot\_data\_source\_setting\_id|Primary key|PK| |
-|key|The key of data source setting|String(100)| |
-|value|The value of data source setting|String(4000)| |
-|copilot\_data\_source\_id|The associated copilot data source|FK [copilot_data_source](./copilot-data-source)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|copilot\_data\_source\_setting\_id|Primary key|PK|No|
+|key|The key of data source setting|String(100)|No|
+|value|The value of data source setting|String(4000)|No|
+|copilot\_data\_source\_id|The associated copilot data source|FK [copilot_data_source](./copilot-data-source.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![copilot_data_source_setting table relationship diagram](/media/loc/en/database/tables/copilot_data_source_setting.png)
 
@@ -44,6 +43,7 @@ Stores specific configuration values for each data source
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[copilot\_data\_source](./copilot-data-source)  |Stores data sources for each copilot |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ Stores specific configuration values for each data source
 ## Security Flags
 
 * No access control via user's Role.
+

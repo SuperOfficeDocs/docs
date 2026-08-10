@@ -1,31 +1,30 @@
 ---
-uid: table-ProbGroupLink
 title: ProbGroupLink table
 description: User group link table for Prob, for MDO item hiding
 generated: true
-keywords: ['database table ProbGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Probgrouplink from "./includes/probgrouplink.md";
+import Probgrouplink from "./includes/probgrouplink.mdx";
 
-# ProbGroupLink Table (83)
+## ProbGroupLink Table (83)
 
 User group link table for Prob, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|probgrouplink\_id|Primary key|PK| |
-|prob\_id|Link to Prob list table|FK [Prob](./prob)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|probgrouplink\_id|Primary key|PK|No|
+|prob\_id|Link to Prob list table|FK [Prob](./prob.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ProbGroupLink table relationship diagram](/media/loc/en/database/tables/ProbGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for Prob, for MDO item hiding
 |[Prob](./prob)  |Prob list table. Probability, used in  sales . |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for Prob, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

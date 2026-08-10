@@ -1,54 +1,53 @@
 ---
-uid: table-country
 title: country table
 description: Country information
 generated: true
-keywords: ['database table country']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Country from "./includes/country.md";
+import Country from "./includes/country.mdx";
 
-# country Table (19)
+## country Table (19)
 
 country MDO list item table.
 Country information
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|country\_id|Primary key|PK| |
-|name|Name of country in installed language|String(239)| |
-|rank|Rank order |UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|english\_name|Name of country in english|String(39)|&#x25CF;|
-|zip\_prefix|N- DK- etc.|String(5)|&#x25CF;|
-|flagres\_id|Resource ID of flag graphic|UInt|&#x25CF;|
-|addressLayout|Points to address format used in the GUI|Id| |
-|addressLayoutDomestic|Points to address format used for labels to own country|Id| |
-|addressLayoutForeign|Points to address format used for labels to other countries than own country|Id| |
-|currency\_id|Default currency for this country|FK [Currency](./currency)|&#x25CF;|
-|orgNrText|Lead text for organisation field|String(254)|&#x25CF;|
-|domainName|Default Web domain identifier (.no, .uk, etc; but without the dot)|String(9)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|defaultLcid|LCID code in .NET, this should be the defaultLcid of the language that has the isDefault flag set in the LanguageInforCountry link table|UInt|&#x25CF;|
-|dialInPrefix|Prefix for dialing into the country from outside (country code)|String(31)|&#x25CF;|
-|dialOutPrefix|Prefix for dialling out of the country, voice call|String(31)|&#x25CF;|
-|interAreaPrefix|Prefix for inter-area dialling in the country|String(31)|&#x25CF;|
-|customPhoneDesc|Custom phone description, if any (comes from ISO/ITU documents)|String(254)|&#x25CF;|
-|phonePartOfNA|Is the phone system part of the North American system|Bool|&#x25CF;|
-|isBuiltIn|Is this record populated by SuperOffice priming data?|Bool|&#x25CF;|
-|isoNumber|The primary key used by ISO to identify countries when they have a revolution and change their name from Upper Volta to Burkina Faso :-)|UInt|&#x25CF;|
-|abbrev3|ISO 3-letter abbreviation|String(3)|&#x25CF;|
-|abbrev2|ISO 2-letter abbreviation|String(2)|&#x25CF;|
-|tzLocationId|Default timezone location for this country|FK [TZLocation](./tzlocation)|&#x25CF;|
+|country\_id|Primary key|PK|No|
+|name|Name of country in installed language|String(239)|No|
+|rank|Rank order |UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|english\_name|Name of country in english|String(39)|Yes|
+|zip\_prefix|N- DK- etc.|String(5)|Yes|
+|flagres\_id|Resource ID of flag graphic|UInt|Yes|
+|addressLayout|Points to address format used in the GUI|Id|No|
+|addressLayoutDomestic|Points to address format used for labels to own country|Id|No|
+|addressLayoutForeign|Points to address format used for labels to other countries than own country|Id|No|
+|currency\_id|Default currency for this country|FK [Currency](./currency.mdx)|Yes|
+|orgNrText|Lead text for organisation field|String(254)|Yes|
+|domainName|Default Web domain identifier (.no, .uk, etc; but without the dot)|String(9)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|defaultLcid|LCID code in .NET, this should be the defaultLcid of the language that has the isDefault flag set in the LanguageInforCountry link table|UInt|Yes|
+|dialInPrefix|Prefix for dialing into the country from outside (country code)|String(31)|Yes|
+|dialOutPrefix|Prefix for dialling out of the country, voice call|String(31)|Yes|
+|interAreaPrefix|Prefix for inter-area dialling in the country|String(31)|Yes|
+|customPhoneDesc|Custom phone description, if any (comes from ISO/ITU documents)|String(254)|Yes|
+|phonePartOfNA|Is the phone system part of the North American system|Bool|Yes|
+|isBuiltIn|Is this record populated by SuperOffice priming data?|Bool|Yes|
+|isoNumber|The primary key used by ISO to identify countries when they have a revolution and change their name from Upper Volta to Burkina Faso :-)|UInt|Yes|
+|abbrev3|ISO 3-letter abbreviation|String(3)|Yes|
+|abbrev2|ISO 2-letter abbreviation|String(2)|Yes|
+|tzLocationId|Default timezone location for this country|FK [TZLocation](./tzlocation.mdx)|Yes|
+
 
 ![country table relationship diagram](/media/loc/en/database/tables/country.png)
 
@@ -78,6 +77,7 @@ Country information
 |[TZLocation](./tzlocation)  |Time zone location |
 |[ziptocity](./ziptocity)  |Zip codes and city names. Zip codes used during address entry. You will find more information about addressformat on http://techdoc.superoffice.com  |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -86,3 +86,4 @@ Country information
 ## Security Flags
 
 * No access control via user's Role.
+

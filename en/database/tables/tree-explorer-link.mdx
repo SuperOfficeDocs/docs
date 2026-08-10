@@ -1,30 +1,29 @@
 ---
-uid: table-tree_explorer_link
 title: tree_explorer_link table
 description: This table stores the link of entries in a tree-explorer
 generated: true
-keywords: ['database table tree_explorer_link']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TreeExplorerLink from "./includes/tree-explorer-link.md";
+import TreeExplorerLink from "./includes/tree-explorer-link.mdx";
 
-# tree\_explorer\_link Table (400)
+## tree\_explorer\_link Table (400)
 
 This table stores the link of entries in a tree-explorer
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|entry\_id|The id of the entry|FK [tree_explorer_entry](./tree-explorer-entry)| |
-|icon|The icon of the entry|String(255)|&#x25CF;|
-|href|The href of the entry|String(255)|&#x25CF;|
-|target|The target of the href of the entry|String(255)|&#x25CF;|
-|tooltip|The tooltip of the entry|Clob|&#x25CF;|
-|session\_key|The session this link belong to|String(255)|&#x25CF;|
+|id|Primary key|PK|No|
+|entry\_id|The id of the entry|FK [tree_explorer_entry](./tree-explorer-entry.mdx)|No|
+|icon|The icon of the entry|String(255)|Yes|
+|href|The href of the entry|String(255)|Yes|
+|target|The target of the href of the entry|String(255)|Yes|
+|tooltip|The tooltip of the entry|Clob|Yes|
+|session\_key|The session this link belong to|String(255)|Yes|
+
 
 ![tree_explorer_link table relationship diagram](/media/loc/en/database/tables/tree_explorer_link.png)
 
@@ -43,6 +42,7 @@ This table stores the link of entries in a tree-explorer
 |------|-------------|
 |[tree\_explorer\_entry](./tree-explorer-entry)  |This table stores the entries in a tree-explorer |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ This table stores the link of entries in a tree-explorer
 ## Security Flags
 
 * No access control via user's Role.
+

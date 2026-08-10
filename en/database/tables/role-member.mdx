@@ -1,26 +1,25 @@
 ---
-uid: table-role_member
 title: role_member table
 description: Users linked to a role. Deprecated.
 generated: true
-keywords: ['database table role_member']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import RoleMember from "./includes/role-member.md";
+import RoleMember from "./includes/role-member.mdx";
 
-# role\_member Table (324)
+## role\_member Table (324)
 
 Users linked to a role. Deprecated.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|role|The id of the group.|FK [ej_role](./ej-role)| |
-|ejuser|The id of the user.|FK [ejuser](./ejuser)| |
+|id|The primary key (auto-incremented)|PK|No|
+|role|The id of the group.|FK [ej_role](./ej-role.mdx)|No|
+|ejuser|The id of the user.|FK [ejuser](./ejuser.mdx)|No|
+
 
 ![role_member table relationship diagram](/media/loc/en/database/tables/role_member.png)
 
@@ -40,6 +39,7 @@ Users linked to a role. Deprecated.
 |[ej\_role](./ej-role)  |Define access rights, memberships and other properties for role user members |
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
+
 ## Replication Flags
 
 * None
@@ -47,3 +47,4 @@ Users linked to a role. Deprecated.
 ## Security Flags
 
 * No access control via user's Role.
+

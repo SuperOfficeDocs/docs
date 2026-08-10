@@ -1,26 +1,25 @@
 ---
-uid: table-log_debug
 title: log_debug table
 description: A log used for debugging, especially useful for bLogic/ejscript
 generated: true
-keywords: ['database table log_debug']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import LogDebug from "./includes/log-debug.md";
+import LogDebug from "./includes/log-debug.mdx";
 
-# log\_debug Table (365)
+## log\_debug Table (365)
 
 A log used for debugging, especially useful for bLogic/ejscript
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|info|Debug info|Clob|&#x25CF;|
-|time\_of\_entry|When the event happened|DateTime|&#x25CF;|
+|id|Primary key|PK|No|
+|info|Debug info|Clob|Yes|
+|time\_of\_entry|When the event happened|DateTime|Yes|
+
 
 ![log_debug table relationship diagram](/media/loc/en/database/tables/log_debug.png)
 
@@ -38,3 +37,4 @@ A log used for debugging, especially useful for bLogic/ejscript
 ## Security Flags
 
 * No access control via user's Role.
+

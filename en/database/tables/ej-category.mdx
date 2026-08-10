@@ -1,37 +1,36 @@
 ---
-uid: table-ej_category
 title: ej_category table
 description: This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.
 generated: true
-keywords: ['database table ej_category']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EjCategory from "./includes/ej-category.md";
+import EjCategory from "./includes/ej-category.mdx";
 
-# ej\_category Table (257)
+## ej\_category Table (257)
 
 This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|parent\_id|The parent category for this category. -1 if this is a toplevel category.|FK [ej_category](./ej-category)| |
-|name|The (short) name of this category. E.g. &amp;apos;support&amp;apos;.|String(64)|&#x25CF;|
-|category\_master|The user associated with this category.|FK [ejuser](./ejuser)|&#x25CF;|
-|fullname|The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.|String(255)|&#x25CF;|
-|flags|A bitmask representing flags for this category.|Enum [TicketCategoryFlags](./enums/ticketcategoryflags)|&#x25CF;|
-|delegate\_method|An integer indicating the delegation method for this category.|Enum [TicketCategoryDelegateMethod](./enums/ticketcategorydelegatemethod)|&#x25CF;|
-|delegate\_counter|A delegate counter, incremented by 1 for every delegation|Int| |
-|external\_name|The external name for this category, used for the customer frontend.|String(255)|&#x25CF;|
-|assignment\_lag|Number of minutes we shall override the assignment if a customer sends consecutive messages to this category|Int|&#x25CF;|
-|reply\_template|Reply template to merge with messages posted in this category|FK [reply_template](./reply-template)|&#x25CF;|
-|notification\_email|Comma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.|String(2047)|&#x25CF;|
-|closing\_status|Default status for new tickets, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status)|&#x25CF;|
-|msg\_closing\_status|Default status for new messages, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|parent\_id|The parent category for this category. -1 if this is a toplevel category.|FK [ej_category](./ej-category.mdx)|No|
+|name|The (short) name of this category. E.g. &amp;apos;support&amp;apos;.|String(64)|Yes|
+|category\_master|The user associated with this category.|FK [ejuser](./ejuser.mdx)|Yes|
+|fullname|The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.|String(255)|Yes|
+|flags|A bitmask representing flags for this category.|Enum [TicketCategoryFlags](./enums/ticketcategoryflags.mdx)|Yes|
+|delegate\_method|An integer indicating the delegation method for this category.|Enum [TicketCategoryDelegateMethod](./enums/ticketcategorydelegatemethod.mdx)|Yes|
+|delegate\_counter|A delegate counter, incremented by 1 for every delegation|Int|No|
+|external\_name|The external name for this category, used for the customer frontend.|String(255)|Yes|
+|assignment\_lag|Number of minutes we shall override the assignment if a customer sends consecutive messages to this category|Int|Yes|
+|reply\_template|Reply template to merge with messages posted in this category|FK [reply_template](./reply-template.mdx)|Yes|
+|notification\_email|Comma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.|String(2047)|Yes|
+|closing\_status|Default status for new tickets, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status.mdx)|Yes|
+|msg\_closing\_status|Default status for new messages, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status.mdx)|Yes|
+
 
 ![ej_category table relationship diagram](/media/loc/en/database/tables/ej_category.png)
 
@@ -65,6 +64,7 @@ This table contains categories, in which tickets are categorized. The categories
 |[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 |[ticket\_status](./ticket-status)  |This table user defined ticket status values. |
 
+
 ## Replication Flags
 
 * None
@@ -72,3 +72,4 @@ This table contains categories, in which tickets are categorized. The categories
 ## Security Flags
 
 * No access control via user's Role.
+

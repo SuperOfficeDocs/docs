@@ -1,32 +1,31 @@
 ---
-uid: table-doc_folder
 title: doc_folder table
 description: A document folder.
 generated: true
-keywords: ['database table doc_folder']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import DocFolder from "./includes/doc-folder.md";
+import DocFolder from "./includes/doc-folder.mdx";
 
-# doc\_folder Table (281)
+## doc\_folder Table (281)
 
 A document folder.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary id (auto-incremented)|PK| |
-|folder\_id|The parent folder. -1 if this is a root folder.|FK [doc_folder](./doc-folder)| |
-|title|The title of the folder|String(255)| |
-|created\_at|When the folder was created.|DateTime|&#x25CF;|
-|created\_by|The used who created the folder.|FK [ejuser](./ejuser)|&#x25CF;|
-|status|The status of the folder.|status|&#x25CF;|
-|access\_level|The access level for the folder|access_level|&#x25CF;|
-|inherited\_access\_level|The lowest access level for this folder or any parent|inherited_access_level|&#x25CF;|
-|fullname|The full name of this category, i.e. Foo/bar/test.|Clob|&#x25CF;|
+|id|The primary id (auto-incremented)|PK|No|
+|folder\_id|The parent folder. -1 if this is a root folder.|FK [doc_folder](./doc-folder.mdx)|No|
+|title|The title of the folder|String(255)|No|
+|created\_at|When the folder was created.|DateTime|Yes|
+|created\_by|The used who created the folder.|FK [ejuser](./ejuser.mdx)|Yes|
+|status|The status of the folder.|status|Yes|
+|access\_level|The access level for the folder|access_level|Yes|
+|inherited\_access\_level|The lowest access level for this folder or any parent|inherited_access_level|Yes|
+|fullname|The full name of this category, i.e. Foo/bar/test.|Clob|Yes|
+
 
 ![doc_folder table relationship diagram](/media/loc/en/database/tables/doc_folder.png)
 
@@ -48,6 +47,7 @@ A document folder.
 |[doc\_folder](./doc-folder)  |A document folder. |
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ A document folder.
 ## Security Flags
 
 * No access control via user's Role.
+

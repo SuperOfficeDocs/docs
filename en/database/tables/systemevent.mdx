@@ -1,35 +1,34 @@
 ---
-uid: table-SystemEvent
 title: SystemEvent table
-description: System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcasts to keep its siblings and clients updated.
+description: System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcasts to keep its siblings and clients updated. 
 generated: true
-keywords: ['database table SystemEvent']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Systemevent from "./includes/systemevent.md";
+import Systemevent from "./includes/systemevent.mdx";
 
-# SystemEvent Table (153)
+## SystemEvent Table (153)
 
-System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcasts to keep its siblings and clients updated.
+System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcasts to keep its siblings and clients updated. 
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|SystemEvent\_id|Primary key|PK| |
-|scope|1 = system-wide, 2= database, 3 = group, 4 = user|Id| |
-|owner|0, 0, group_id, assoc id (see over)|Id| |
-|eventkey|Event key, predefined in code|String(254)|&#x25CF;|
-|eventmess|Message to be shown, entered by administrator|String(254)|&#x25CF;|
-|extraInfo|Extra information (area id for prototype rebuild, etc)|Id|&#x25CF;|
-|eta|Estimated Time of Arrival, i.e., when will this event finish?|DateTime|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|SystemEvent\_id|Primary key|PK|No|
+|scope|1 = system-wide, 2= database, 3 = group, 4 = user|Id|No|
+|owner|0, 0, group_id, assoc id (see over)|Id|No|
+|eventkey|Event key, predefined in code|String(254)|Yes|
+|eventmess|Message to be shown, entered by administrator|String(254)|Yes|
+|extraInfo|Extra information (area id for prototype rebuild, etc)|Id|Yes|
+|eta|Estimated Time of Arrival, i.e., when will this event finish?|DateTime|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SystemEvent table relationship diagram](/media/loc/en/database/tables/SystemEvent.png)
 
@@ -47,6 +46,7 @@ System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcast
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcast
 ## Security Flags
 
 * No access control via user's Role.
+

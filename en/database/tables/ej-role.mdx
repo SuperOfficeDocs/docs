@@ -1,30 +1,29 @@
 ---
-uid: table-ej_role
 title: ej_role table
 description: Define access rights, memberships and other properties for role user members
 generated: true
-keywords: ['database table ej_role']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EjRole from "./includes/ej-role.md";
+import EjRole from "./includes/ej-role.mdx";
 
-# ej\_role Table (323)
+## ej\_role Table (323)
 
 Define access rights, memberships and other properties for role user members
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|name|This is the name of the role|String(255)|&#x25CF;|
-|use\_user\_group|Override user user group with role|Bool|&#x25CF;|
-|user\_group|The group this user is member of |FK [hierarchy](./hierarchy)| |
-|access\_mask|Access mask for users using this role|Int|&#x25CF;|
-|access\_values|Access values for users using this role|Int|&#x25CF;|
-|use\_categories|Override user categories with role categories|Bool|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|name|This is the name of the role|String(255)|Yes|
+|use\_user\_group|Override user user group with role|Bool|Yes|
+|user\_group|The group this user is member of |FK [hierarchy](./hierarchy.mdx)|No|
+|access\_mask|Access mask for users using this role|Int|Yes|
+|access\_values|Access values for users using this role|Int|Yes|
+|use\_categories|Override user categories with role categories|Bool|Yes|
+
 
 ![ej_role table relationship diagram](/media/loc/en/database/tables/ej_role.png)
 
@@ -46,6 +45,7 @@ Define access rights, memberships and other properties for role user members
 |[role\_member](./role-member)  |Users linked to a role. Deprecated. |
 |[role\_workflow](./role-workflow)  |Knowledge base workflow access rights associated with a role |
 
+
 ## Replication Flags
 
 * None
@@ -53,3 +53,4 @@ Define access rights, memberships and other properties for role user members
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,31 +1,30 @@
 ---
-uid: table-ReasonSoldGroupLink
 title: ReasonSoldGroupLink table
 description: User group link table for ReasonSold, for MDO item hiding
 generated: true
-keywords: ['database table ReasonSoldGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Reasonsoldgrouplink from "./includes/reasonsoldgrouplink.md";
+import Reasonsoldgrouplink from "./includes/reasonsoldgrouplink.mdx";
 
-# ReasonSoldGroupLink Table (116)
+## ReasonSoldGroupLink Table (116)
 
 User group link table for ReasonSold, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|reasonsoldgrouplink\_id|Primary key|PK| |
-|reasonsold\_id|Link to ReasonSold list table|FK [ReasonSold](./reasonsold)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|reasonsoldgrouplink\_id|Primary key|PK|No|
+|reasonsold\_id|Link to ReasonSold list table|FK [ReasonSold](./reasonsold.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ReasonSoldGroupLink table relationship diagram](/media/loc/en/database/tables/ReasonSoldGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for ReasonSold, for MDO item hiding
 |[ReasonSold](./reasonsold)  |Why was the sale marked as sold (why did we succeed) |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for ReasonSold, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

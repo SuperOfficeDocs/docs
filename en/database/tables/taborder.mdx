@@ -1,32 +1,31 @@
 ---
-uid: table-TabOrder
 title: TabOrder table
 description: Order of tabs within a tab control, if configured by a user
 generated: true
-keywords: ['database table TabOrder']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Taborder from "./includes/taborder.md";
+import Taborder from "./includes/taborder.mdx";
 
-# TabOrder Table (152)
+## TabOrder Table (152)
 
 Order of tabs within a tab control, if configured by a user
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|TabOrder\_id|Primary key|PK| |
-|associateId|Associate who owns this tab order|FK [associate](./associate)| |
-|tabName|Name of tab control|String(239)| |
-|tabOrder|The actual tab order|String(2047)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|TabOrder\_id|Primary key|PK|No|
+|associateId|Associate who owns this tab order|FK [associate](./associate.mdx)|No|
+|tabName|Name of tab control|String(239)|No|
+|tabOrder|The actual tab order|String(2047)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![TabOrder table relationship diagram](/media/loc/en/database/tables/TabOrder.png)
 
@@ -44,6 +43,7 @@ Order of tabs within a tab control, if configured by a user
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -53,3 +53,4 @@ Order of tabs within a tab control, if configured by a user
 ## Security Flags
 
 * No access control via user's Role.
+

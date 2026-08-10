@@ -1,30 +1,29 @@
 ---
-uid: table-foreignapp
 title: foreignapp table
 description: Top level of Foreign Key system
 generated: true
-keywords: ['database table foreignapp']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Foreignapp from "./includes/foreignapp.md";
+import Foreignapp from "./includes/foreignapp.mdx";
 
-# foreignapp Table (181)
+## foreignapp Table (181)
 
 Top level of Foreign Key system
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|foreignapp\_id|Primary key|PK| |
-|name|Name of foreign application|String(254)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|foreignapp\_id|Primary key|PK|No|
+|name|Name of foreign application|String(254)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![foreignapp table relationship diagram](/media/loc/en/database/tables/foreignapp.png)
 
@@ -42,6 +41,7 @@ Top level of Foreign Key system
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[foreigndevice](./foreigndevice)  |Middle level of Foreign Key system |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -51,3 +51,4 @@ Top level of Foreign Key system
 ## Security Flags
 
 * No access control via user's Role.
+

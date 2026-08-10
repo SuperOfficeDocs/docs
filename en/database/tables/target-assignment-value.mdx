@@ -1,32 +1,31 @@
 ---
-uid: table-target_assignment_value
 title: target_assignment_value table
 description: A set of values linked to assignment info and a period in a target group.
 generated: true
-keywords: ['database table target_assignment_value']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TargetAssignmentValue from "./includes/target-assignment-value.md";
+import TargetAssignmentValue from "./includes/target-assignment-value.mdx";
 
-# target\_assignment\_value Table (517)
+## target\_assignment\_value Table (518)
 
 A set of values linked to assignment info and a period in a target group.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|target\_assignment\_value\_id|Primary key|PK| |
-|target\_assignment\_info\_id|Who or what this value is assigned to|FK [target_assignment_info](./target-assignment-info)|&#x25CF;|
-|target\_period\_id|The group this target belongs to|FK [target_period](./target-period)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|target\_value|Target value|Double|&#x25CF;|
+|target\_assignment\_value\_id|Primary key|PK|No|
+|target\_assignment\_info\_id|Who or what this value is assigned to|FK [target_assignment_info](./target-assignment-info.mdx)|Yes|
+|target\_period\_id|The group this target belongs to|FK [target_period](./target-period.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|target\_value|Target value|Double|Yes|
+
 
 ![target_assignment_value table relationship diagram](/media/loc/en/database/tables/target_assignment_value.png)
 
@@ -45,6 +44,7 @@ A set of values linked to assignment info and a period in a target group.
 |[target\_assignment\_info](./target-assignment-info)  |Linking associate, company or user group target and other information with target values |
 |[target\_period](./target-period)  |A set of periods linked with target amounts for users/usergroups and the target groups/years. |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ A set of values linked to assignment info and a period in a target group.
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

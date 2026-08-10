@@ -1,35 +1,34 @@
 ---
-uid: table-UserPreference
 title: UserPreference table
 description: Preference system. If deflevel is set to 5; the user may change the preferences
 generated: true
-keywords: ['database table UserPreference']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Userpreference from "./includes/userpreference.md";
+import Userpreference from "./includes/userpreference.mdx";
 
-# UserPreference Table (56)
+## UserPreference Table (56)
 
 Preference system. If deflevel is set to 5; the user may change the preferences
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|userpreference\_id|Primary key|PK| |
-|deflevel|The level: 0=hard default, 1=systemwide, 2=database, 3=group, 4=individual|Enum [PreferenceLevel](./enums/preferencelevel)| |
-|maxlevel|Highest override level allowed|Enum [PreferenceLevel](./enums/preferencelevel)| |
-|owner\_id|level=3: group; level=4: associate|Id| |
-|prefsection|Preference section name|String(199)| |
-|prefkey|Preference key name|String(199)| |
-|prefvalue|Preference value|String(2046)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|userpreference\_id|Primary key|PK|No|
+|deflevel|The level: 0=hard default, 1=systemwide, 2=database, 3=group, 4=individual|Enum [PreferenceLevel](./enums/preferencelevel.mdx)|No|
+|maxlevel|Highest override level allowed|Enum [PreferenceLevel](./enums/preferencelevel.mdx)|No|
+|owner\_id|level=3: group; level=4: associate|Id|No|
+|prefsection|Preference section name|String(199)|No|
+|prefkey|Preference key name|String(199)|No|
+|prefvalue|Preference value|String(2046)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![UserPreference table relationship diagram](/media/loc/en/database/tables/UserPreference.png)
 
@@ -52,6 +51,7 @@ Preference system. If deflevel is set to 5; the user may change the preferences
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[text](./text)  |Long text fields from all over the system |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -61,3 +61,4 @@ Preference system. If deflevel is set to 5; the user may change the preferences
 ## Security Flags
 
 * No access control via user's Role.
+

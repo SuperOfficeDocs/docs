@@ -1,27 +1,26 @@
 ---
-uid: table-NewsFeedItemHtml
 title: NewsFeedItemHtml table
 description: Detailed description of the news item, in a specific language.
 generated: true
-keywords: ['database table NewsFeedItemHtml']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Newsfeeditemhtml from "./includes/newsfeeditemhtml.md";
+import Newsfeeditemhtml from "./includes/newsfeeditemhtml.mdx";
 
-# NewsFeedItemHtml Table (506)
+## NewsFeedItemHtml Table (507)
 
 Detailed description of the news item, in a specific language.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|newsfeeditemhtml\_id|Primary key|PK| |
-|newsfeeditem\_id|Foreign key to NewsFeedItem that this description belongs to.|FK [NewsFeedItem](./newsfeeditem)| |
-|Iso2Lang|ISO 2 letter Language code for the content. &quot;en&quot;, &quot;us&quot;, &quot;no&quot;|String(10)| |
-|HtmlContent|The HTML content for the news feed item in the specified language. Styling through pre-defined CSS classes. No SCRIPT or STYLE tags allowed|Clob| |
+|newsfeeditemhtml\_id|Primary key|PK|No|
+|newsfeeditem\_id|Foreign key to NewsFeedItem that this description belongs to.|FK [NewsFeedItem](./newsfeeditem.mdx)|No|
+|Iso2Lang|ISO 2 letter Language code for the content. &quot;en&quot;, &quot;us&quot;, &quot;no&quot;|String(10)|No|
+|HtmlContent|The HTML content for the news feed item in the specified language. Styling through pre-defined CSS classes. No SCRIPT or STYLE tags allowed|Clob|No|
+
 
 ![NewsFeedItemHtml table relationship diagram](/media/loc/en/database/tables/NewsFeedItemHtml.png)
 
@@ -39,6 +38,7 @@ Detailed description of the news item, in a specific language.
 |------|-------------|
 |[NewsFeedItem](./newsfeeditem)  |Contains news feed items - published to one or more users, with one or more language descriptions |
 
+
 ## Replication Flags
 
 * None
@@ -46,3 +46,4 @@ Detailed description of the news item, in a specific language.
 ## Security Flags
 
 * No access control via user's Role.
+
