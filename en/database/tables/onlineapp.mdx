@@ -1,34 +1,33 @@
 ---
-uid: table-OnlineApp
 title: OnlineApp table
 description: Echo and track information about Online Apps and their usage
 generated: true
-keywords: ['database table OnlineApp']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Onlineapp from "./includes/onlineapp.md";
+import Onlineapp from "./includes/onlineapp.mdx";
 
-# OnlineApp Table (509)
+## OnlineApp Table (510)
 
 Echo and track information about Online Apps and their usage
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|onlineapp\_id|Primary key|PK| |
-|clientId|ID that uniquely identifies the app|String(255)| |
-|displayName|Name to be displayed in user interface|String(255)|&#x25CF;|
-|partnerName|Name of the partner who owns the app|String(255)|&#x25CF;|
-|authorizationRevoked|Has the authorization for this app been revoked|Bool|&#x25CF;|
-|lastUsed|Last app use date (not time, to reduce number of writes)|DateTime|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|onlineapp\_id|Primary key|PK|No|
+|clientId|ID that uniquely identifies the app|String(255)|No|
+|displayName|Name to be displayed in user interface|String(255)|Yes|
+|partnerName|Name of the partner who owns the app|String(255)|Yes|
+|authorizationRevoked|Has the authorization for this app been revoked|Bool|Yes|
+|lastUsed|Last app use date (not time, to reduce number of writes)|DateTime|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![OnlineApp table relationship diagram](/media/loc/en/database/tables/OnlineApp.png)
 
@@ -47,6 +46,7 @@ Echo and track information about Online Apps and their usage
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[Message](./message)  |Definition of a message, corresponding to the header of a protocol |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Echo and track information about Online Apps and their usage
 ## Security Flags
 
 * No access control via user's Role.
+

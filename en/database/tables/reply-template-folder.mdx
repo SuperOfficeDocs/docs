@@ -1,29 +1,28 @@
 ---
-uid: table-reply_template_folder
 title: reply_template_folder table
 description: This table contains entries for folders for reply templates.
 generated: true
-keywords: ['database table reply_template_folder']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ReplyTemplateFolder from "./includes/reply-template-folder.md";
+import ReplyTemplateFolder from "./includes/reply-template-folder.mdx";
 
-# reply\_template\_folder Table (276)
+## reply\_template\_folder Table (276)
 
 This table contains entries for folders for reply templates.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|parent\_id|The id of the parent folder of this folder. NULL or -1 of this is a toplevel folder.|FK [reply_template_folder](./reply-template-folder)| |
-|name|The name of this folder.|String(64)| |
-|description|The description of this folder.|String(255)|&#x25CF;|
-|flags|A bitmap for this folder.|Int|&#x25CF;|
-|fullname|The full name of this folder , i.e. Foo/bar/test.|Clob|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|parent\_id|The id of the parent folder of this folder. NULL or -1 of this is a toplevel folder.|FK [reply_template_folder](./reply-template-folder.mdx)|No|
+|name|The name of this folder.|String(64)|No|
+|description|The description of this folder.|String(255)|Yes|
+|flags|A bitmap for this folder.|Int|Yes|
+|fullname|The full name of this folder , i.e. Foo/bar/test.|Clob|Yes|
+
 
 ![reply_template_folder table relationship diagram](/media/loc/en/database/tables/reply_template_folder.png)
 
@@ -44,6 +43,7 @@ This table contains entries for folders for reply templates.
 |[reply\_template](./reply-template)  |Templates for automatic and manual replies to emails/sms organized hierachically |
 |[reply\_template\_folder](./reply-template-folder)  |This table contains entries for folders for reply templates. |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ This table contains entries for folders for reply templates.
 ## Security Flags
 
 * No access control via user's Role.
+

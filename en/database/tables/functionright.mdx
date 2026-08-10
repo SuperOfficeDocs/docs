@@ -1,34 +1,33 @@
 ---
-uid: table-FunctionRight
 title: FunctionRight table
 description: Functional right definition
 generated: true
-keywords: ['database table FunctionRight']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Functionright from "./includes/functionright.md";
+import Functionright from "./includes/functionright.mdx";
 
-# FunctionRight Table (193)
+## FunctionRight Table (193)
 
 Functional right definition
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|FunctionRight\_id|Primary key|PK| |
-|name|Readable, internal ID (not a GUI text)|String(254)| |
-|rightType|0 = functional right|Enum [FunctionRightType](./enums/functionrighttype)| |
-|isBuiltIn|0 = added by partner, 1 = supplied by SuperOffice|Bool| |
-|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
-|requiredModule|If non-blank, specifies a module license that is also needed, for this right to be granted|String(239)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|FunctionRight\_id|Primary key|PK|No|
+|name|Readable, internal ID (not a GUI text)|String(254)|No|
+|rightType|0 = functional right|Enum [FunctionRightType](./enums/functionrighttype.mdx)|No|
+|isBuiltIn|0 = added by partner, 1 = supplied by SuperOffice|Bool|No|
+|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
+|requiredModule|If non-blank, specifies a module license that is also needed, for this right to be granted|String(239)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![FunctionRight table relationship diagram](/media/loc/en/database/tables/FunctionRight.png)
 
@@ -46,6 +45,7 @@ Functional right definition
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[FunctionRightRoleLink](./functionrightrolelink)  |Functional right definition |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Functional right definition
 ## Security Flags
 
 * No access control via user's Role.
+

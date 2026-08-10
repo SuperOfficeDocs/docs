@@ -1,70 +1,69 @@
 ---
-uid: table-ejuser
 title: ejuser table
 description: This table contains entries for the users of the system.
 generated: true
-keywords: ['database table ejuser']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Ejuser from "./includes/ejuser.md";
+import Ejuser from "./includes/ejuser.mdx";
 
-# ejuser Table (299)
+## ejuser Table (299)
 
 This table contains entries for the users of the system.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|loginname|The unique loginname for this user.|String(63)| |
-|usergroup|The group this user is member of |FK [hierarchy](./hierarchy)| |
-|username|The unique username for this user.|String(63)| |
-|password|The encrypted password for this user.|String(127)|&#x25CF;|
-|firstname|The firstname for this user.|String(127)|&#x25CF;|
-|middlename|The middlename for this user.|String(127)|&#x25CF;|
-|lastname|The lastname for this user.|String(127)|&#x25CF;|
-|email|The email address for this user.|String(255)| |
-|access\_level|The access level for this user.|Int|&#x25CF;|
-|status|The status (enum) for this user.|status|&#x25CF;|
-|signature|The users signature.|Clob|&#x25CF;|
-|notify\_mask|A bitmask indicating to which extent the user should recieve pop-up warnings for various events.|Int|&#x25CF;|
-|email\_mask|A bitmask indicated to which extent the user should recieve email warnings for various events.|Int|&#x25CF;|
-|sms\_mask|A bitmask indicated to which extent the user should recieve sms warnings for various events.|Int|&#x25CF;|
-|language|A string indicating the user&amp;apos;s language (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|&#x25CF;|
-|dictionary|A string indicating the user&amp;apos;s prefered dictionary language (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|&#x25CF;|
-|default\_category|The default category for this user when posting tickets and use_last_category is false. |FK [ej_category](./ej-category)| |
-|textareasize|Size of textarea for each user, example &amp;apos;80x40&amp;apos;|String(31)|&#x25CF;|
-|flags|A bitmask indicating flags for this entry.|Int|&#x25CF;|
-|last\_category|The last chosen category for this user when posting tickets.|FK [ej_category](./ej-category)|&#x25CF;|
-|profile\_id|Reference to the profile connected to this ejuser|FK [profile](./profile)|&#x25CF;|
-|hidden\_bag\_bitset|Each character represent a bit to set a HtmlBagHideable to default open or closed (1=open 0=closed)|String(255)|&#x25CF;|
-|notify\_external\_lock|A datetime lock to make sure notifications are only displayed by one notifcation system (ejournal or external programs)|DateTime|&#x25CF;|
-|notify\_external\_source|A name (id) of the external notifications system (ejournal or external programs)|String(255)|&#x25CF;|
-|login\_attempts|The number of times the user has attempted to login with the wrong password|Int|&#x25CF;|
-|last\_login\_attempt|The last time the user tried to log in without success|DateTime|&#x25CF;|
-|idle\_time|Number of seconds the user has been idle. Updated by TrayIcon or simular external programs.|Int| |
-|default\_user|The default user to set on new tickets in this category (1=automatically, 2=unasigned, 3=the owner|Int|&#x25CF;|
-|sms|The SMS number for this user|String(64)|&#x25CF;|
-|new\_gui|Whether to use the new gui or not|Bool| |
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)| |
-|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)| |
-|dbi\_last\_syncronized|Last external syncronization.|DateTime| |
-|dbi\_last\_modified|When the entry was last modified.|DateTime| |
-|minute\_offset|Offset in hours between server and ejuser timezone.|Int| |
-|date\_format|The preferred format of dates and datetimes (enum) for this user.|date_format| |
-|simultaneous\_login|A boolean telling if the user is counted as one of the simultaneous ones, or one who alway may log in|Bool| |
-|picture\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment)|&#x25CF;|
-|not\_present|Comment to add for user when status is not present.|String(255)|&#x25CF;|
-|default\_status\_new\_ticket|Default status on new requests.|FK [ticket_status](./ticket-status)|&#x25CF;|
-|default\_status\_add\_message|Default status on add message.|FK [ticket_status](./ticket-status)|&#x25CF;|
-|num\_expanded\_messages|The number of expanded messages in show-ticket view.|Int| |
-|date\_format\_string|Chosen date format as a string for this user|String(64)|&#x25CF;|
-|time\_format\_string|Chosen time format as a string for this user|String(64)|&#x25CF;|
-|date\_format\_long\_string|Chosen date format for lists as a string for this user|String(64)|&#x25CF;|
-|chat\_status|Various chat statuses for an agent|Enum [ChatStatus](./enums/chatstatus)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|loginname|The unique loginname for this user.|String(63)|No|
+|usergroup|The group this user is member of |FK [hierarchy](./hierarchy.mdx)|No|
+|username|The unique username for this user.|String(63)|No|
+|password|The encrypted password for this user.|String(127)|Yes|
+|firstname|The firstname for this user.|String(127)|Yes|
+|middlename|The middlename for this user.|String(127)|Yes|
+|lastname|The lastname for this user.|String(127)|Yes|
+|email|The email address for this user.|String(255)|No|
+|access\_level|The access level for this user.|Int|Yes|
+|status|The status (enum) for this user.|status|Yes|
+|signature|The users signature.|Clob|Yes|
+|notify\_mask|A bitmask indicating to which extent the user should recieve pop-up warnings for various events.|Int|Yes|
+|email\_mask|A bitmask indicated to which extent the user should recieve email warnings for various events.|Int|Yes|
+|sms\_mask|A bitmask indicated to which extent the user should recieve sms warnings for various events.|Int|Yes|
+|language|A string indicating the user&amp;apos;s language (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|Yes|
+|dictionary|A string indicating the user&amp;apos;s prefered dictionary language (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|Yes|
+|default\_category|The default category for this user when posting tickets and use_last_category is false. |FK [ej_category](./ej-category.mdx)|No|
+|textareasize|Size of textarea for each user, example &amp;apos;80x40&amp;apos;|String(31)|Yes|
+|flags|A bitmask indicating flags for this entry.|Int|Yes|
+|last\_category|The last chosen category for this user when posting tickets.|FK [ej_category](./ej-category.mdx)|Yes|
+|profile\_id|Reference to the profile connected to this ejuser|FK [profile](./profile.mdx)|Yes|
+|hidden\_bag\_bitset|Each character represent a bit to set a HtmlBagHideable to default open or closed (1=open 0=closed)|String(255)|Yes|
+|notify\_external\_lock|A datetime lock to make sure notifications are only displayed by one notifcation system (ejournal or external programs)|DateTime|Yes|
+|notify\_external\_source|A name (id) of the external notifications system (ejournal or external programs)|String(255)|Yes|
+|login\_attempts|The number of times the user has attempted to login with the wrong password|Int|Yes|
+|last\_login\_attempt|The last time the user tried to log in without success|DateTime|Yes|
+|idle\_time|Number of seconds the user has been idle. Updated by TrayIcon or simular external programs.|Int|No|
+|default\_user|The default user to set on new tickets in this category (1=automatically, 2=unasigned, 3=the owner|Int|Yes|
+|sms|The SMS number for this user|String(64)|Yes|
+|new\_gui|Whether to use the new gui or not|Bool|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
+|dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
+|dbi\_last\_modified|When the entry was last modified.|DateTime|No|
+|minute\_offset|Offset in hours between server and ejuser timezone.|Int|No|
+|date\_format|The preferred format of dates and datetimes (enum) for this user.|date_format|No|
+|simultaneous\_login|A boolean telling if the user is counted as one of the simultaneous ones, or one who alway may log in|Bool|No|
+|picture\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment.mdx)|Yes|
+|not\_present|Comment to add for user when status is not present.|String(255)|Yes|
+|default\_status\_new\_ticket|Default status on new requests.|FK [ticket_status](./ticket-status.mdx)|Yes|
+|default\_status\_add\_message|Default status on add message.|FK [ticket_status](./ticket-status.mdx)|Yes|
+|num\_expanded\_messages|The number of expanded messages in show-ticket view.|Int|No|
+|date\_format\_string|Chosen date format as a string for this user|String(64)|Yes|
+|time\_format\_string|Chosen time format as a string for this user|String(64)|Yes|
+|date\_format\_long\_string|Chosen date format for lists as a string for this user|String(64)|Yes|
+|chat\_status|Various chat statuses for an agent|Enum [ChatStatus](./enums/chatstatus.mdx)|Yes|
+
 
 ![ejuser table relationship diagram](/media/loc/en/database/tables/ejuser.png)
 
@@ -130,6 +129,7 @@ This table contains entries for the users of the system.
 |[ticket\_status](./ticket-status)  |This table user defined ticket status values. |
 |[user\_attribute](./user-attribute)  |This table is used for storing various attributes for users. |
 
+
 ## Replication Flags
 
 * None
@@ -137,3 +137,4 @@ This table contains entries for the users of the system.
 ## Security Flags
 
 * No access control via user's Role.
+

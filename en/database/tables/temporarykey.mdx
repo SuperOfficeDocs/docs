@@ -1,35 +1,34 @@
 ---
-uid: table-TemporaryKey
 title: TemporaryKey table
 description: Temporary keys for lightweight authentications such as changing ones subscriptions
 generated: true
-keywords: ['database table TemporaryKey']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Temporarykey from "./includes/temporarykey.md";
+import Temporarykey from "./includes/temporarykey.mdx";
 
-# TemporaryKey Table (513)
+## TemporaryKey Table (514)
 
 Temporary keys for lightweight authentications such as changing ones subscriptions
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|temporarykey\_id|Primary key|PK| |
-|domain|The domain this is a key for|Enum [TemporaryKeyDomain](./enums/temporarykeydomain)| |
-|target\_id|The primary key in the table this is a key for|Int|&#x25CF;|
-|person\_id|The person this is a key for|FK [person](./person)|&#x25CF;|
-|authkey|The actual key|String(256)| |
-|expires|When this key expires (server localtime)|DateTime|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|payload|Optional field that may contain arbitrary data used when the key is verified, dependent on the domain|String(4000)|&#x25CF;|
+|temporarykey\_id|Primary key|PK|No|
+|domain|The domain this is a key for|Enum [TemporaryKeyDomain](./enums/temporarykeydomain.mdx)|No|
+|target\_id|The primary key in the table this is a key for|Int|Yes|
+|person\_id|The person this is a key for|FK [person](./person.mdx)|Yes|
+|authkey|The actual key|String(256)|No|
+|expires|When this key expires (server localtime)|DateTime|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|payload|Optional field that may contain arbitrary data used when the key is verified, dependent on the domain|String(4000)|Yes|
+
 
 ![TemporaryKey table relationship diagram](/media/loc/en/database/tables/TemporaryKey.png)
 
@@ -47,6 +46,7 @@ Temporary keys for lightweight authentications such as changing ones subscriptio
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[person](./person)  |Persons |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Temporary keys for lightweight authentications such as changing ones subscriptio
 ## Security Flags
 
 * No access control via user's Role.
+

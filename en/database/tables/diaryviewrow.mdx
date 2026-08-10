@@ -1,32 +1,31 @@
 ---
-uid: table-DiaryViewRow
 title: DiaryViewRow table
 description: Configuration of a multi-user diary view
 generated: true
-keywords: ['database table DiaryViewRow']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Diaryviewrow from "./includes/diaryviewrow.md";
+import Diaryviewrow from "./includes/diaryviewrow.mdx";
 
-# DiaryViewRow Table (215)
+## DiaryViewRow Table (215)
 
 Configuration of a multi-user diary view
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|DiaryViewRow\_id|Primary key|PK| |
-|diaryViewId|Owning view|FK [DiaryView](./diaryview)| |
-|assoc\_id|Associate to be displayed|FK [associate](./associate)| |
-|rank|Sorting rank|UShort| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|DiaryViewRow\_id|Primary key|PK|No|
+|diaryViewId|Owning view|FK [DiaryView](./diaryview.mdx)|No|
+|assoc\_id|Associate to be displayed|FK [associate](./associate.mdx)|No|
+|rank|Sorting rank|UShort|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![DiaryViewRow table relationship diagram](/media/loc/en/database/tables/DiaryViewRow.png)
 
@@ -45,6 +44,7 @@ Configuration of a multi-user diary view
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[DiaryView](./diaryview)  |Configuration of a multi-user diary view |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -54,3 +54,4 @@ Configuration of a multi-user diary view
 ## Security Flags
 
 * No access control via user's Role.
+

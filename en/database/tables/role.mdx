@@ -1,36 +1,35 @@
 ---
-uid: table-Role
 title: Role table
 description: User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http;//techdoc.superoffice.com
 generated: true
-keywords: ['database table Role']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Role from "./includes/role.md";
+import Role from "./includes/role.mdx";
 
-# Role Table (191)
+## Role Table (191)
 
 User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http;//techdoc.superoffice.com
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|Role\_id|Primary key|PK| |
-|name|Visible role name|String(239)|&#x25CF;|
-|rank|Sorting rank of this role in lists|UShort| |
-|tooltip|Visible tooltip|String(254)|&#x25CF;|
-|deleted|1 if role has been deleted (we do not actually delete)|UShort| |
-|roleType|0 = employee, 1 = external user, 2 = anonymous|Enum [RoleType](./enums/roletype)| |
-|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|use\_categories|Override user categories with role categories|Bool|&#x25CF;|
+|Role\_id|Primary key|PK|No|
+|name|Visible role name|String(239)|Yes|
+|rank|Sorting rank of this role in lists|UShort|No|
+|tooltip|Visible tooltip|String(254)|Yes|
+|deleted|1 if role has been deleted (we do not actually delete)|UShort|No|
+|roleType|0 = employee, 1 = external user, 2 = anonymous|Enum [RoleType](./enums/roletype.mdx)|No|
+|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|use\_categories|Override user categories with role categories|Bool|Yes|
+
 
 ![Role table relationship diagram](/media/loc/en/database/tables/Role.png)
 
@@ -54,6 +53,7 @@ User roles for role-based security, names and tooltips are in LocaleText. For mo
 |[text](./text)  |Long text fields from all over the system |
 |[UserRoleLink](./userrolelink)  |Link between user role and user |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -63,3 +63,4 @@ User roles for role-based security, names and tooltips are in LocaleText. For mo
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,28 +1,27 @@
 ---
-uid: table-EntityCounts
 title: EntityCounts table
 description: Number of different entities an associate has created for usage statistics
 generated: true
-keywords: ['database table EntityCounts']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Entitycounts from "./includes/entitycounts.md";
+import Entitycounts from "./includes/entitycounts.mdx";
 
-# EntityCounts Table (546)
+## EntityCounts Table (547)
 
 Number of different entities an associate has created for usage statistics
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|entitycounts\_id|Primary key|PK| |
-|associate\_id|Associate who created the entity|FK [associate](./associate)|&#x25CF;|
-|entity\_name|The entity measured by this tile|String(255)|&#x25CF;|
-|records|Number of related entities an associate has created|Int|&#x25CF;|
-|registered|Registered when|UtcDateTime|&#x25CF;|
+|entitycounts\_id|Primary key|PK|No|
+|associate\_id|Associate who created the entity|FK [associate](./associate.mdx)|Yes|
+|entity\_name|The entity measured by this tile|String(255)|Yes|
+|records|Number of related entities an associate has created|Int|Yes|
+|registered|Registered when|UtcDateTime|Yes|
+
 
 ![EntityCounts table relationship diagram](/media/loc/en/database/tables/EntityCounts.png)
 
@@ -40,6 +39,7 @@ Number of different entities an associate has created for usage statistics
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -47,3 +47,4 @@ Number of different entities an associate has created for usage statistics
 ## Security Flags
 
 * No access control via user's Role.
+

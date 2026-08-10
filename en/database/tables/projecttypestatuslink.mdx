@@ -1,33 +1,32 @@
 ---
-uid: table-ProjectTypeStatusLink
 title: ProjectTypeStatusLink table
 description: Many-many link table between project type and status, similar to sale type-stage link; and an anchor point for guide items
 generated: true
-keywords: ['database table ProjectTypeStatusLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Projecttypestatuslink from "./includes/projecttypestatuslink.md";
+import Projecttypestatuslink from "./includes/projecttypestatuslink.mdx";
 
-# ProjectTypeStatusLink Table (213)
+## ProjectTypeStatusLink Table (213)
 
 Many-many link table between project type and status, similar to sale type-stage link; and an anchor point for guide items
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ProjectTypeStatusLink\_id|Primary key|PK| |
-|projType\_id|Link to project type|FK [ProjType](./projtype)| |
-|projStatus\_id|Link to project status|FK [ProjStatus](./projstatus)| |
-|rank|Rank order |UShort|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|ProjectTypeStatusLink\_id|Primary key|PK|No|
+|projType\_id|Link to project type|FK [ProjType](./projtype.mdx)|No|
+|projStatus\_id|Link to project status|FK [ProjStatus](./projstatus.mdx)|No|
+|rank|Rank order |UShort|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ProjectTypeStatusLink table relationship diagram](/media/loc/en/database/tables/ProjectTypeStatusLink.png)
 
@@ -49,6 +48,7 @@ Many-many link table between project type and status, similar to sale type-stage
 |[SuggestedAppointment](./suggestedappointment)  |Defines a suggested appointment for use in a Sale Guide or Project Guide |
 |[SuggestedDocument](./suggesteddocument)  |Unique owner of a set of licensed modules |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ Many-many link table between project type and status, similar to sale type-stage
 ## Security Flags
 
 * No access control via user's Role.
+

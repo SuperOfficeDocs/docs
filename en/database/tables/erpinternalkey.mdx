@@ -1,32 +1,31 @@
 ---
-uid: table-ErpInternalKey
 title: ErpInternalKey table
 description: The internal (superoffice-facing) key related to a synchronized record
 generated: true
-keywords: ['database table ErpInternalKey']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Erpinternalkey from "./includes/erpinternalkey.md";
+import Erpinternalkey from "./includes/erpinternalkey.mdx";
 
-# ErpInternalKey Table (422)
+## ErpInternalKey Table (422)
 
 The internal (superoffice-facing) key related to a synchronized record
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|erpinternalkey\_id|Primary key|PK| |
-|tableId|ID of table this right is valid for|TableNumber| |
-|recordId|ID of row this right applies to|RecordId| |
-|MostRecentTimestamp|Datetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|erpinternalkey\_id|Primary key|PK|No|
+|tableId|ID of table this right is valid for|TableNumber|No|
+|recordId|ID of row this right applies to|RecordId|No|
+|MostRecentTimestamp|Datetime, transaction number or other identification of the point in time of the most-recently seen actor in the ERP system|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ErpInternalKey table relationship diagram](/media/loc/en/database/tables/ErpInternalKey.png)
 
@@ -45,6 +44,7 @@ The internal (superoffice-facing) key related to a synchronized record
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[ErpExternalKey](./erpexternalkey)  |The external (ERP-facing) key related to a synchronized record / connection |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ The internal (superoffice-facing) key related to a synchronized record
 ## Security Flags
 
 * No access control via user's Role.
+

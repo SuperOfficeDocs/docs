@@ -1,27 +1,26 @@
 ---
-uid: table-ejsel_meta_result
 title: ejsel_meta_result table
 description: This table stores result meta data
 generated: true
-keywords: ['database table ejsel_meta_result']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EjselMetaResult from "./includes/ejsel-meta-result.md";
+import EjselMetaResult from "./includes/ejsel-meta-result.mdx";
 
-# ejsel\_meta\_result Table (397)
+## ejsel\_meta\_result Table (397)
 
 This table stores result meta data
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|ejselection|The id of the selection for which this item is part of a result|FK [ejselection](./ejselection)| |
-|owner|The user who owns this selection result|FK [ejuser](./ejuser)| |
-|created\_at|When the result set was created.|DateTime| |
+|id|Primary key|PK|No|
+|ejselection|The id of the selection for which this item is part of a result|FK [ejselection](./ejselection.mdx)|No|
+|owner|The user who owns this selection result|FK [ejuser](./ejuser.mdx)|No|
+|created\_at|When the result set was created.|DateTime|No|
+
 
 ![ejsel_meta_result table relationship diagram](/media/loc/en/database/tables/ejsel_meta_result.png)
 
@@ -43,6 +42,7 @@ This table stores result meta data
 |[ejselection](./ejselection)  |This table stores selections, dynamic groups. |
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ This table stores result meta data
 ## Security Flags
 
 * No access control via user's Role.
+

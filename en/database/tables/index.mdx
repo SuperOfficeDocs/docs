@@ -1,17 +1,15 @@
 ---
-uid: database-table-listing-by-name
 title: Database table listing
 description: Lists all tables in the database.
 generated: true
-keywords: ['database']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-# Database tables by **name** | [table number](./index-by-id)
+## Database tables by **name** | [table number](./index-by-id)
 
 <Note>
-Table numbers could be different between databases - depends on whether there are custom 3rd party tables. You must reference the sequence table column `TableNumber` to be certain.
+  Table numbers could be different between databases - depends on whether there are custom 3rd party tables. You must reference the sequence table column `TableNumber` to be certain.
 </Note>
 
 | Name | Description | Number |
@@ -31,26 +29,26 @@ Table numbers could be different between databases - depends on whether there ar
 | [associate](./associate) |Employees, resources and other users - except for External persons| 2 |
 | [AssociateGroupLink](./associategrouplink) |User group link table for Associate, for MDO item hiding| 3 |
 | [AssociateHeadingLink](./associateheadinglink) |Heading link table for associate for display only. Supportive table, used for grouping and filtering on lists. | 4 |
-| [AssociateHistory](./associatehistory) |Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database| 538 |
+| [AssociateHistory](./associatehistory) |Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database| 539 |
 | [attachment](./attachment) |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table.| 296 |
 | [attachment\_location](./attachment-location) |A location for storing attachments| 478 |
 | [AudienceConfig](./audienceconfig) |Configuration data for Audience core and webparts| 236 |
 | [AudienceLayout](./audiencelayout) |One layout (of webparts and other stuff) for an audience instance| 234 |
 | [AudienceLayoutLink](./audiencelayoutlink) |Link between an audience layout and some target grouping table - might be Role or Category| 235 |
 | [AudienceVisibility](./audiencevisibility) |How projects (or whatever) should be made visible in audience| 232 |
-| [AutomatedCategoryUpdate](./automatedcategoryupdate) |Info on how to autoupdate category when changing sale or leadstatus on person| 549 |
+| [AutomatedCategoryUpdate](./automatedcategoryupdate) |Info on how to autoupdate category when changing sale or leadstatus on person| 550 |
 | [autosave](./autosave) |Autosaved text clobs from ejscript and emarketeer messages| 402 |
-| [available\_fonts](./available-fonts) |This table contains all fonts selected to be available for external usage| 550 |
+| [available\_fonts](./available-fonts) |This table contains all fonts selected to be available for external usage| 551 |
 | [BaseTZLocation](./basetzlocation) |Time zone location for the database (how tz-related datetimes should be stored in the database)| 248 |
 | [BatchTask](./batchtask) |Batch task request details, corresponding to the message body of a batch request message| 243 |
 | [BatchTaskDefinition](./batchtaskdefinition) |Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute| 244 |
 | [BinaryObject](./binaryobject) |Binary objects, i.e., blobs. Used for images, documents, SuperOffice inbox mail  and other large binary items| 205 |
 | [BinaryObjectLink](./binaryobjectlink) |Link table, connects a BinaryObject with one or more owners| 206 |
-| [board\_view\_settings](./board-view-settings) |Settings for selection board view| 503 |
+| [board\_view\_settings](./board-view-settings) |Settings for selection board view| 504 |
 | [Business](./business) |Business list table| 61 |
 | [BusinessGroupLink](./businessgrouplink) |User group link table for Business, for MDO item hiding| 62 |
 | [BusinessHeadingLink](./businessheadinglink) |Heading link table for Business, for MDO headers| 63 |
-| [CacheInvalidation](./cacheinvalidation) |Names and generation numbers for distributed invalidation of caches| 539 |
+| [CacheInvalidation](./cacheinvalidation) |Names and generation numbers for distributed invalidation of caches| 540 |
 | [CacheTables](./cachetables) |Specifies which tables should be cached to local files (or otherwise), generally these are the lists and other low-frequency-of-change tables. Contains the ID of any tables cached in SOCache. The files are binary and called &lt;tablename&gt;.bin.  &lt;Shift&gt;+&lt;F5&gt; throws all cache files. | 148 |
 | [Category](./category) |Category list table| 64 |
 | [category\_membership](./category-membership) |This table connects users to categories (many-to-many).| 270 |
@@ -144,11 +142,11 @@ Table numbers could be different between databases - depends on whether there ar
 | [Email](./email) |Email addresses for contacts, projects and persons| 55 |
 | [email\_account](./email-account) |Email account information| 491 |
 | [email\_attachment](./email-attachment) |Attachment info related to an email_item| 495 |
-| [email\_flow](./email-flow) |A set of properties related to the email workflow.| 526 |
-| [email\_flow\_content\_link](./email-flow-content-link) |Links content to an email workflow| 533 |
+| [email\_flow](./email-flow) |A set of properties related to the email workflow.| 527 |
+| [email\_flow\_content\_link](./email-flow-content-link) |Links content to an email workflow| 534 |
 | [email\_folder](./email-folder) |Corresponds to an email folder on a mail server| 492 |
 | [email\_item](./email-item) |Email data| 494 |
-| [EntityCounts](./entitycounts) |Number of different entities an associate has created for usage statistics| 546 |
+| [EntityCounts](./entitycounts) |Number of different entities an associate has created for usage statistics| 547 |
 | [ErpConfiguration](./erpconfiguration) |Global settings for the Erp Integration Server| 449 |
 | [ErpConnection](./erpconnection) |One connection to an ERP connector, specifying Client and other required information| 418 |
 | [ErpConnectionAccess](./erpconnectionaccess) |Access control for Erp Connections| 420 |
@@ -180,7 +178,7 @@ Table numbers could be different between databases - depends on whether there ar
 | [foreignkey](./foreignkey) |Foreign Key - enables storage of arbitrary extra key information for every table/row in SuperOffice. You may use this table to store your extra information instead of using the dictionary SDK to create your own tables.| 183 |
 | [form](./form) |A form which can be published on a webpage and submitted by visitors| 488 |
 | [form\_field\_restriction](./form-field-restriction) |This table contains all form fields restrictions| 490 |
-| [form\_field\_value](./form-field-value) |Form field values saved in a searchable format| 537 |
+| [form\_field\_value](./form-field-value) |Form field values saved in a searchable format| 538 |
 | [form\_keys](./form-keys) |Keys that makes sure a form is not posted twice| 366 |
 | [form\_submission](./form-submission) |A form submission| 489 |
 | [freetextindex](./freetextindex) |This is the index table for the free text search function. Each word in FreeTextWords can have multiple occurrences in this table. Each record in this table points to one occurrence of the word, and points to both the table in which the word occurs (which might be contact or text), and also a pointer to the owner table (which is one of contact, person, project, appointment or sale). | 46 |
@@ -223,10 +221,10 @@ Table numbers could be different between databases - depends on whether there ar
 | [kb\_workflow](./kb-workflow) |Knowledge base workflow steps| 292 |
 | [kb\_workflow\_access](./kb-workflow-access) |Control of who can do what in a knowledge base workflow step| 293 |
 | [landing\_page](./landing-page) |Per-associate landing page configuration for a given entity type| 497 |
-| [landing\_page\_pin](./landing-page-pin) |A pinned selection or entity record on a landing page| 498 |
+| [landing\_page\_tab](./landing-page-tab) |A tab (pinned selection or entity record) on a landing page| 498 |
 | [LanguageInfo](./languageinfo) |Information about languages, from ISO standards and related information| 210 |
 | [LanguageInfoCountry](./languageinfocountry) |Many-many link between countries and languages, to give intelligent choices for language| 211 |
-| [leadstatus](./leadstatus) |List items of lead status that is selectable for contacts and persons that have specific category| 548 |
+| [leadstatus](./leadstatus) |List items of lead status that is selectable for contacts and persons that have specific category| 549 |
 | [legal\_html\_tags](./legal-html-tags) |This table is used as a list of all legal HTML tags. HTML tags not in this list                  will be ignored when viewing html versions of messages| 353 |
 | [LegalBase](./legalbase) |Legal base for GDPR (Article 6)| 469 |
 | [LicenseAssocLink](./licenseassoclink) |Link between ModuleLicense and Associate, for per-assoc licenses; this is how licenses are assigned/consumed| 238 |
@@ -258,13 +256,14 @@ Table numbers could be different between databases - depends on whether there ar
 | [ms\_filter\_mail](./ms-filter-mail) |This table connects mail filters (ms_filter) to mailboxes (mail_in_filter).| 311 |
 | [ms\_substitute](./ms-substitute) |Regexp for extracting info from emails when they enter they system| 313 |
 | [ms\_trashbin](./ms-trashbin) |This table contains entries for emails which have been trashed by a filter, waiting for confirmation of deletion or import.| 312 |
-| [NewsFeedItem](./newsfeeditem) |Contains news feed items - published to one or more users, with one or more language descriptions| 505 |
-| [NewsFeedItemCta](./newsfeeditemcta) |List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).| 507 |
-| [NewsFeedItemHtml](./newsfeeditemhtml) |Detailed description of the news item, in a specific language.| 506 |
-| [NewsFeedItemRecipient](./newsfeeditemrecipient) |Recipients of the news feed item. One news feed item may be sent to multiple recipients (users).| 508 |
+| [navigation\_history](./navigation-history) |Per-associate navigation state: Current (persisted soprotocol) and Recent navigation entries, keyed by client and key| 502 |
+| [NewsFeedItem](./newsfeeditem) |Contains news feed items - published to one or more users, with one or more language descriptions| 506 |
+| [NewsFeedItemCta](./newsfeeditemcta) |List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).| 508 |
+| [NewsFeedItemHtml](./newsfeeditemhtml) |Detailed description of the news item, in a specific language.| 507 |
+| [NewsFeedItemRecipient](./newsfeeditemrecipient) |Recipients of the news feed item. One news feed item may be sent to multiple recipients (users).| 509 |
 | [notice\_frame](./notice-frame) |PID controller for automatic adjustment of pop up message check rate| 404 |
 | [notify](./notify) |This table contains the pop-up messages displayed for users for various events, such as &amp;apos;new ticket&amp;apos;, etc.| 301 |
-| [OnlineApp](./onlineapp) |Echo and track information about Online Apps and their usage| 509 |
+| [OnlineApp](./onlineapp) |Echo and track information about Online Apps and their usage| 510 |
 | [outbox](./outbox) |Outgoing emails with sending status and other info| 351 |
 | [outgoing\_message](./outgoing-message) |Delivery of outgoing messages to messageplugins, updated with status asynchroneously| 407 |
 | [OwnerContactLink](./ownercontactlink) |Table specifying which contacts can own associates.  All contacts that have rows in this table (i.e. rows with contact_id pointing to them) will be offered as associate owners in the maintenance client and as candidate Satellite owners. Such contacts have restrictions on editing and deletion to protect database consistency. | 167 |
@@ -323,19 +322,19 @@ Table numbers could be different between databases - depends on whether there ar
 | [ProjTypeGroupLink](./projtypegrouplink) |User group link table for ProjType, for MDO item hiding| 86 |
 | [ProjTypeHeadingLink](./projtypeheadinglink) |Heading link table for ProjType, for MDO headers| 87 |
 | [Publish](./publish) |Publishing system for external users| 200 |
-| [PushNotificationService](./pushnotificationservice) |Used for storing handles to user devices that should receive push notifications| 510 |
+| [PushNotificationService](./pushnotificationservice) |Used for storing handles to user devices that should receive push notifications| 511 |
 | [quick\_filter\_info](./quick-filter-info) |Connect quick filter info from a specific provider to a dashboard| 486 |
 | [quick\_reply](./quick-reply) |Personal quick reply text fragments| 462 |
 | [Quote](./quote) |Quote root level, at most one per Sale, always connected to one Sale| 34 |
-| [QuoteAlternative](./quotealternative) |Quote Version is made up of one or more Alternatives. One of 1..n possible alternatives in a Quote Version. The reason we have alternatives is that a quote can say to a customer, "we can solve you problem in two (or more) different ways, with different technology and sideeffects (and price)". An Alternative may have discounts on the total amount. The Alternative tracks whether the user on the order level entered the Discount , Earning amount or the TotalPrice fields so that the discount and earning and total can be re-calculated correctly when Quote Lines are added or changed.| 47 |
-| [QuoteApprReason](./quoteapprreason) |Predefined reasons for quote approval| 540 |
-| [QuoteApprReasonGroupLink](./quoteapprreasongrouplink) |User group link table for QuoteApprReason, for MDO item hiding| 541 |
-| [QuoteApprReasonHeadingLink](./quoteapprreasonheadinglink) |Heading link table for QuoteApprReason, for MDO headers| 542 |
+| [QuoteAlternative](./quotealternative) |Quote Version is made up of one or more Alternatives. One of 1..n possible alternatives in a Quote Version. The reason we have alternatives is that a quote can say to a customer, “we can solve you problem in two (or more) different ways, with different technology and sideeffects (and price)”. An Alternative may have discounts on the total amount. The Alternative tracks whether the user on the order level entered the Discount , Earning amount or the TotalPrice fields so that the discount and earning and total can be re-calculated correctly when Quote Lines are added or changed.| 47 |
+| [QuoteApprReason](./quoteapprreason) |Predefined reasons for quote approval| 541 |
+| [QuoteApprReasonGroupLink](./quoteapprreasongrouplink) |User group link table for QuoteApprReason, for MDO item hiding| 542 |
+| [QuoteApprReasonHeadingLink](./quoteapprreasonheadinglink) |Heading link table for QuoteApprReason, for MDO headers| 543 |
 | [QuoteConnection](./quoteconnection) |Primary key in the CRM database. Definition of a connection to an external system, for the Quote system.| 26 |
 | [QuoteConnectionAccess](./quoteconnectionaccess) |Access control for Quote Connections| 27 |
-| [QuoteDenyReason](./quotedenyreason) |Predefined reasons for quote denial| 543 |
-| [QuoteDenyReasonGroupLink](./quotedenyreasongrouplink) |User group link table for QuoteDenyReason, for MDO item hiding| 544 |
-| [QuoteDenyReasonHeadingLink](./quotedenyreasonheadinglink) |Heading link table for QuoteDenyReason, for MDO headers| 545 |
+| [QuoteDenyReason](./quotedenyreason) |Predefined reasons for quote denial| 544 |
+| [QuoteDenyReasonGroupLink](./quotedenyreasongrouplink) |User group link table for QuoteDenyReason, for MDO item hiding| 545 |
+| [QuoteDenyReasonHeadingLink](./quotedenyreasonheadinglink) |Heading link table for QuoteDenyReason, for MDO headers| 546 |
 | [QuoteLine](./quoteline) |One line in a QuoteAlternative. QuoteLines are mainly information copied from the Products provider. Products information is sometimes edited by the user before being included in the quote, so most information is duplicated from Product rather than referenced directly.| 127 |
 | [QuoteLineConfiguration](./quotelineconfiguration) |Configuration of quote lines - which fields are in use, rights, labels etc| 445 |
 | [QuoteVersion](./quoteversion) |There may be multiple Versions of a Quote, with one of them active| 39 |
@@ -430,8 +429,8 @@ Table numbers could be different between databases - depends on whether there ar
 | [sequence](./sequence) |next_id to be used for each table| 0 |
 | [service\_auth](./service-auth) |Authentication for a service (imap, smtp...)| 493 |
 | [session\_object](./session-object) |Generic session object, accessible from ejscript etc, typically xml or name=value syntax, may be stored over several rows if big| 254 |
-| [ShipmentType](./shipmenttype) |Shipment type list table. Classification of a mailing, allowing recipients to subscribe to lists| 511 |
-| [ShipmentTypeReservation](./shipmenttypereservation) |ShipmentTypes a person has reserved against. Note that the absense of a record here implies acceptance of a mailings of this type| 512 |
+| [ShipmentType](./shipmenttype) |Shipment type list table. Classification of a mailing, allowing recipients to subscribe to lists| 512 |
+| [ShipmentTypeReservation](./shipmenttypereservation) |ShipmentTypes a person has reserved against. Note that the absense of a record here implies acceptance of a mailings of this type| 513 |
 | [sms](./sms) |This table will hold outgoing sms messages when transmitted with WebServices| 388 |
 | [sms\_hysteria](./sms-hysteria) |Avoid sending too many sms messages in a short time interval to one person| 367 |
 | [snapshot](./snapshot) |Snapshots taken of the system database and attachments via soap| 369 |
@@ -458,23 +457,23 @@ Table numbers could be different between databases - depends on whether there ar
 | [Tags](./tags) |MDO List of tags for Service entities| 458 |
 | [TagsGroupLink](./tagsgrouplink) |User group link table for Tags, for MDO item hiding| 459 |
 | [TagsHeadingLink](./tagsheadinglink) |Heading link table for Source, for MDO headers| 460 |
-| [target\_assignment\_info](./target-assignment-info) |Linking associate, company or user group target and other information with target values| 516 |
-| [target\_assignment\_value](./target-assignment-value) |A set of values linked to assignment info and a period in a target group.| 517 |
-| [target\_change](./target-change) |A single field change.| 520 |
-| [target\_dimension](./target-dimension) |Defining target dimension| 521 |
-| [target\_group](./target-group) |Info about a set of (sales, project, selection...) targets| 514 |
-| [target\_period](./target-period) |A set of periods linked with target amounts for users/usergroups and the target groups/years.| 515 |
-| [target\_revision](./target-revision) |One batch of changes made to targets| 519 |
-| [target\_revision\_history](./target-revision-history) |Revision history info in case the original target group or assignment info was deleted| 518 |
+| [target\_assignment\_info](./target-assignment-info) |Linking associate, company or user group target and other information with target values| 517 |
+| [target\_assignment\_value](./target-assignment-value) |A set of values linked to assignment info and a period in a target group.| 518 |
+| [target\_change](./target-change) |A single field change.| 521 |
+| [target\_dimension](./target-dimension) |Defining target dimension| 522 |
+| [target\_group](./target-group) |Info about a set of (sales, project, selection...) targets| 515 |
+| [target\_period](./target-period) |A set of periods linked with target amounts for users/usergroups and the target groups/years.| 516 |
+| [target\_revision](./target-revision) |One batch of changes made to targets| 520 |
+| [target\_revision\_history](./target-revision-history) |Revision history info in case the original target group or assignment info was deleted| 519 |
 | [Task](./task) |Task list table, activity types, like Phone, Meeting| 67 |
 | [TaskGroupLink](./taskgrouplink) |User group link table for Task, for MDO item hiding| 68 |
 | [TaskHeadingLink](./taskheadinglink) |Heading link table for Task, for MDO headers| 69 |
 | [TaskMenu](./taskmenu) |List items to merge into menues| 465 |
 | [TaskMenuGroupLink](./taskmenugrouplink) |User group link table for TaskMenu, for MDO item hiding| 466 |
 | [TaskMenuHeadingLink](./taskmenuheadinglink) |Heading link table for TaskMenu, for MDO headers| 467 |
-| [temp\_db\_lock](./temp-db-lock) |Represents a temporary lock on a resource identified by table_id and key| 534 |
+| [temp\_db\_lock](./temp-db-lock) |Represents a temporary lock on a resource identified by table_id and key| 535 |
 | [temporary\_words](./temporary-words) |This table is used as a temporary table, containing the words we want                  to search for in the FAQs| 356 |
-| [TemporaryKey](./temporarykey) |Temporary keys for lightweight authentications such as changing ones subscriptions| 513 |
+| [TemporaryKey](./temporarykey) |Temporary keys for lightweight authentications such as changing ones subscriptions| 514 |
 | [text](./text) |Long text fields from all over the system| 18 |
 | [ticket](./ticket) |This table contains the tickets (requests) of the system. Its purpose should be evident.| 262 |
 | [ticket\_alert](./ticket-alert) |This table will contain ticket escalation levels. A ticket will be escalated along a &amp;apos;chain&amp;apos; of these levels.| 274 |
@@ -484,15 +483,15 @@ Table numbers could be different between databases - depends on whether there ar
 | [ticket\_log\_action](./ticket-log-action) |This table contains actions for the tickets.| 269 |
 | [ticket\_log\_change](./ticket-log-change) |This table contains log entries for the tickets.| 268 |
 | [ticket\_priority](./ticket-priority) |This table contains the ticket priorities.| 275 |
-| [ticket\_rel\_def\_ticket\_type](./ticket-rel-def-ticket-type) |Link table defining what Ticket types are involved in this relation. Will have M:N rows for a single relation definition| 555 |
-| [ticket\_relation](./ticket-relation) |A relation between 2 tickets| 556 |
-| [ticket\_relation\_def](./ticket-relation-def) |Ticket relation definition| 554 |
+| [ticket\_rel\_def\_ticket\_type](./ticket-rel-def-ticket-type) |Link table defining what Ticket types are involved in this relation. Will have M:N rows for a single relation definition| 556 |
+| [ticket\_relation](./ticket-relation) |A relation between 2 tickets| 557 |
+| [ticket\_relation\_def](./ticket-relation-def) |Ticket relation definition| 555 |
 | [ticket\_status](./ticket-status) |This table user defined ticket status values.| 263 |
 | [ticket\_status\_history](./ticket-status-history) |This table contains the history of a tickets statuses. Each time a ticket changes status a copy of the previous status of the record will be saved | 261 |
-| [ticket\_type](./ticket-type) |A ticket (request) type| 551 |
-| [ticket\_type\_priority](./ticket-type-priority) |Link table defining what Priorities are relevant to a particular Ticket type| 552 |
-| [ticket\_type\_status](./ticket-type-status) |Link table defining what Statuses are relevant to a particular Ticket type| 553 |
-| [time\_keeping](./time-keeping) |Time keeping for how much time a sale or project or other entity has spent in a given stage or other state| 504 |
+| [ticket\_type](./ticket-type) |A ticket (request) type| 552 |
+| [ticket\_type\_priority](./ticket-type-priority) |Link table defining what Priorities are relevant to a particular Ticket type| 553 |
+| [ticket\_type\_status](./ticket-type-status) |Link table defining what Statuses are relevant to a particular Ticket type| 554 |
+| [time\_keeping](./time-keeping) |Time keeping for how much time a sale or project or other entity has spent in a given stage or other state| 505 |
 | [timestamps](./timestamps) |Timestamp information| 300 |
 | [travelcurrent](./travelcurrent) |Information about this database and its place in the hierarchy| 32 |
 | [travelgenerateddatabase](./travelgenerateddatabase) |Information about all databases generated from this database| 33 |
@@ -503,7 +502,7 @@ Table numbers could be different between databases - depends on whether there ar
 | [TrayApp](./trayapp) |Tray application presence. SuperOffice CRM web extensions.| 252 |
 | [tree\_explorer\_entry](./tree-explorer-entry) |This table stores the entries in a tree-explorer| 399 |
 | [tree\_explorer\_link](./tree-explorer-link) |This table stores the link of entries in a tree-explorer| 400 |
-| [TypicalSearch](./typicalsearch) |Owner of a set of predefined selection criteria| 502 |
+| [TypicalSearch](./typicalsearch) |Owner of a set of predefined selection criteria| 503 |
 | [TZDstRule](./tzdstrule) |Time zone rule for daylight saving time| 247 |
 | [TZLocation](./tzlocation) |Time zone location| 245 |
 | [TZStdRule](./tzstdrule) |Time zone rule for standard time| 246 |
@@ -534,22 +533,23 @@ Table numbers could be different between databases - depends on whether there ar
 | [UserGroupLink](./usergrouplink) |Link table between associate and usergroup, specifies secondary group membership. From SIX an associate may belong to more than one usergroup. Http://techdoc.superoffice.com has more information about how roles are implemented.| 60 |
 | [UserPreference](./userpreference) |Preference system. If deflevel is set to 5; the user may change the preferences| 56 |
 | [UserRoleLink](./userrolelink) |Link between user role and user| 192 |
-| [utm\_parameters](./utm-parameters) |Table for utm parameters collected from visits and formsubmissions| 547 |
+| [utm\_parameters](./utm-parameters) |Table for utm parameters collected from visits and formsubmissions| 548 |
 | [VisibleFor](./visiblefor) |Visible for rights, who may see this appointment/document, sale,  salehist or selection| 196 |
 | [WebAppUsage](./webappusage) |Usage statistics for web applications| 249 |
-| [Webhook](./webhook) |Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.| 522 |
-| [Webhook\_notify](./webhook-notify) |Notification recipients for webhook failure events. Each row defines one recipient (associate or ad-hoc email) that should be notified when a webhook fails.| 524 |
-| [Webhook\_usage](./webhook-usage) |Webhook usage statistics - tracks call+error statistics. Same primary key as the webhook.| 523 |
+| [Webhook](./webhook) |Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.| 523 |
+| [Webhook\_notify](./webhook-notify) |Notification recipients for webhook failure events. Each row defines one recipient (associate or ad-hoc email) that should be notified when a webhook fails.| 525 |
+| [Webhook\_usage](./webhook-usage) |Webhook usage statistics - tracks call+error statistics. Same primary key as the webhook.| 524 |
 | [WinPosSize](./winpossize) |Stores the position and size of each window, so they can be shown in the same place again| 208 |
 | [word\_relations](./word-relations) |This table shows which word are used in which FAQ entry, and how many times            they are used in each| 355 |
-| [workflow](./workflow) |SuperOffice specific info about a workflow| 525 |
-| [workflow\_goal](./workflow-goal) |A set of goals related to a workflow. Some goals will have search criterias associated with it to determine if the goal has been reached.| 528 |
-| [workflow\_instance](./workflow-instance) |A set of properties related to the workflow instance of one participant going through the flow| 527 |
-| [workflow\_root\_step\_link](./workflow-root-step-link) |Link root steps to the workflow| 536 |
-| [workflow\_step](./workflow-step) |A set of steps related to a workflow.| 529 |
-| [workflow\_step\_option](./workflow-step-option) |Some steps can have optional child &apos;flows&apos;, a new series of steps| 531 |
-| [workflow\_step\_option\_link](./workflow-step-option-link) |Link steps to other steps through step options| 532 |
-| [workflow\_trigger](./workflow-trigger) |A set of triggers related to a workflow.| 530 |
-| [workflow\_wait\_for\_action](./workflow-wait-for-action) |Some steps wait for actions, this is info about those actions| 535 |
+| [workflow](./workflow) |SuperOffice specific info about a workflow| 526 |
+| [workflow\_goal](./workflow-goal) |A set of goals related to a workflow. Some goals will have search criterias associated with it to determine if the goal has been reached.| 529 |
+| [workflow\_instance](./workflow-instance) |A set of properties related to the workflow instance of one participant going through the flow| 528 |
+| [workflow\_root\_step\_link](./workflow-root-step-link) |Link root steps to the workflow| 537 |
+| [workflow\_step](./workflow-step) |A set of steps related to a workflow.| 530 |
+| [workflow\_step\_option](./workflow-step-option) |Some steps can have optional child &apos;flows&apos;, a new series of steps| 532 |
+| [workflow\_step\_option\_link](./workflow-step-option-link) |Link steps to other steps through step options| 533 |
+| [workflow\_trigger](./workflow-trigger) |A set of triggers related to a workflow.| 531 |
+| [workflow\_wait\_for\_action](./workflow-wait-for-action) |Some steps wait for actions, this is info about those actions| 536 |
 | [wsdl\_description](./wsdl-description) |Soap wsdl files| 357 |
 | [ziptocity](./ziptocity) |Zip codes and city names. Zip codes used during address entry. You will find more information about addressformat on http://techdoc.superoffice.com | 16 |
+

@@ -1,34 +1,33 @@
 ---
-uid: table-MergeMoveLog
 title: MergeMoveLog table
 description: Log of merge and move operations (person, contact, project)
 generated: true
-keywords: ['database table MergeMoveLog']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Mergemovelog from "./includes/mergemovelog.md";
+import Mergemovelog from "./includes/mergemovelog.mdx";
 
-# MergeMoveLog Table (37)
+## MergeMoveLog Table (37)
 
 Log of merge and move operations (person, contact, project)
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|MergeMoveLog\_id|Primary key|PK| |
-|tableNumber|Number of table where the move/merge happened|TableNumber| |
-|operation|Operation type enumerator|UShort| |
-|sourceRecord|Source record id|Id| |
-|destinationRecord|Destination record id|Id| |
-|options|Options relating to move of activities and other side effects|String(2047)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|MergeMoveLog\_id|Primary key|PK|No|
+|tableNumber|Number of table where the move/merge happened|TableNumber|No|
+|operation|Operation type enumerator|UShort|No|
+|sourceRecord|Source record id|Id|No|
+|destinationRecord|Destination record id|Id|No|
+|options|Options relating to move of activities and other side effects|String(2047)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![MergeMoveLog table relationship diagram](/media/loc/en/database/tables/MergeMoveLog.png)
 
@@ -47,6 +46,7 @@ Log of merge and move operations (person, contact, project)
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -56,3 +56,4 @@ Log of merge and move operations (person, contact, project)
 ## Security Flags
 
 * No access control via user's Role.
+

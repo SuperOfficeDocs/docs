@@ -1,34 +1,33 @@
 ---
-uid: table-ImportObject
 title: ImportObject table
 description: Import object types - see localetext for names.
 generated: true
-keywords: ['database table ImportObject']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Importobject from "./includes/importobject.md";
+import Importobject from "./includes/importobject.mdx";
 
-# ImportObject Table (186)
+## ImportObject Table (186)
 
 Import object types - see localetext for names.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ImportObject\_id|Primary key|PK| |
-|tableId|Table id of target table for this object|TableNumber| |
-|showInGui|If 1, this object is visible in the object property list in the GUI, otherwise insert anyway|UShort| |
-|tag|Name of object, not visible to the user|String(11)|&#x25CF;|
-|extensionOf|Id of parent object this object is an extension of, if any (may be included in keys of parent object)|Id|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|isBuiltin|1 = This row populated and maintained by SuperOffice|UShort|&#x25CF;|
+|ImportObject\_id|Primary key|PK|No|
+|tableId|Table id of target table for this object|TableNumber|No|
+|showInGui|If 1, this object is visible in the object property list in the GUI, otherwise insert anyway|UShort|No|
+|tag|Name of object, not visible to the user|String(11)|Yes|
+|extensionOf|Id of parent object this object is an extension of, if any (may be included in keys of parent object)|Id|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|isBuiltin|1 = This row populated and maintained by SuperOffice|UShort|Yes|
+
 
 ![ImportObject table relationship diagram](/media/loc/en/database/tables/ImportObject.png)
 
@@ -48,6 +47,7 @@ Import object types - see localetext for names.
 |[ImportField](./importfield)  |Import object types - see localetext for names |
 |[ImportRelation](./importrelation)  |Relations between import objects |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -57,3 +57,4 @@ Import object types - see localetext for names.
 ## Security Flags
 
 * No access control via user's Role.
+
