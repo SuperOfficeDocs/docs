@@ -4,7 +4,7 @@ title: Mintlify deployment and CI/CD
 description: How this site connects to GitHub, what triggers a deploy, and where build-failure visibility lives - captured for the CI/CD pipeline milestone and for audit purposes.
 keywords: ['mintlify', 'deployment', 'auto-deploy', 'ci/cd', 'github app', 'webhook', 'deploy history']
 author: digitaldiina
-date: 08.06.2026
+date: 08.10.2026
 content_type: concept
 language: en
 ---
@@ -13,10 +13,13 @@ This page replaces DocFx's manual, week-long release cycle with a git-triggered 
 
 ## Connection state
 
-| Repo | Branch | Role | Connected | Notes |
-|---|---|---|---|---|
-| `SuperOfficeDocs/docs` | `main` | **"Base" (Mintlify's production slot)** | 2026-08-06 | Added via Mintlify dashboard Git settings (required an org-owner-approved GitHub App repository-access grant - see Authority below), then promoted to "Base" the same day. First deploy triggered manually; reachable at the default `superofficeas.mintlify.site`/`.app` domain. No custom domain configured yet - an early soft-launch, not the final public `docs.superoffice.com` cutover. |
-| `SuperOfficeDevNet/mintlify-docs` | `main` | Superseded | Prototype era (predates this repo's forklift) → superseded 2026-08-06 | Leftover from early Mintlify prototyping, in a different GitHub org (`SuperOfficeDevNet`) entirely. No longer production. |
+| Repo | Branch | Role | Connected |
+|---|---|---|---|
+| `SuperOfficeDocs/docs` | `main` | **"Base"** (Mintlify's production slot) | 2026-08-06 |
+| `SuperOfficeDevNet/mintlify-docs` | `main` | Superseded | Prototype era (predates this repo's forklift) |
+
+* **`SuperOfficeDocs/docs`:** added via Mintlify dashboard Git settings (required an org-owner-approved GitHub App repository-access grant - see Authority below), then promoted to "Base" the same day. First deploy triggered manually; reachable at the default `superofficeas.mintlify.site`/`.app` domain. No custom domain configured yet - an early soft-launch, not the final public `docs.superoffice.com` cutover.
+* **`SuperOfficeDevNet/mintlify-docs`:** leftover from early Mintlify prototyping, in a different GitHub org (`SuperOfficeDevNet`) entirely, superseded 2026-08-06. No longer production.
 
 Connection history matters here as much as current state - an audit will ask what changed and when, not just what's true today.
 
@@ -26,6 +29,7 @@ Connection history matters here as much as current state - an audit will ask wha
 |---|---|
 | Change which repo/branch a Mintlify project deploys from, or promote a repo to "Base" | Mintlify dashboard access for this project |
 | Add a new repo to the Mintlify GitHub App's access on a GitHub org | **Org owner only.** Repo-level admin is not sufficient. |
+| Manually trigger or delete a custom preview | Mintlify dashboard access for this project - same as the row above |
 
 ## GitHub App permissions
 
@@ -43,18 +47,54 @@ Requested by the Mintlify GitHub App on `SuperOfficeDocs` (see [Mintlify's GitHu
 
 A push to the connected branch (`main`) triggers an automatic production deploy; a pull request against it gets its own preview deployment and check. A manual **Deploy** button in the dashboard exists as a fallback. See [Deployments][2] for the full mechanics - not duplicated here.
 
+## PR preview deployments {#previews}
+
+A PR opened against `main` from a branch in this repository gets an automatic preview deployment. The preview rebuilds on every new push. A `mintlify[bot]` comment posts a status table with a public **View Preview** link.
+
+The preview stays reachable while the PR is open, and after it merges or closes for as long as the source branch still exists.
+
+PRs from a [fork][6] do not get an automatic preview. See [Manual (custom) previews][7] for the workaround, and [Reviewing a PR][4] for what a reviewer should do when no bot comment appears.
+
+A **Preview authentication** toggle (dashboard > **Add-ons** > **Previews**) can restrict preview access to signed-in Mintlify organization members instead of the public-by-default behavior. Not enabled for now. See [Preview deployments][5] for details.
+
+## Manual (custom) previews {#manual-previews}
+
+Use a manual preview when a PR came from a fork, or to preview a branch outside of any PR.
+
+1. Push the branch into `SuperOfficeDocs/docs` itself, under the naming convention `preview/pr-<PR#>` to avoid collisions between concurrent manual previews - Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first: `git fetch origin pull/<PR#>/head:preview/pr-<PR#> && git push origin preview/pr-<PR#>`.
+2. In the Mintlify dashboard, go to **Previews** > **Create custom preview**, enter that branch name, and create it.
+
+    ![Mintlify dashboard Previews panel with Create custom preview -screenshot][img1]
+
+3. Share the resulting link on the PR.
+
+**Manual previews stay live until someone deletes them.** Unlike automatic previews, they do not expire on their own. Delete from the same dashboard **Previews** list once no longer needed.
+
+<Note>
+Requesting a manual preview costs the docs lead's time and is not instant - it depends on their availability. If you are iterating on a fork PR, mark it **draft**, make the full round of changes, then undraft and `@`-mention the docs lead to request **one** preview, not a fresh request after every small fix.
+</Note>
+
 ## Where to look when something's wrong
 
 * **PR/preview build failures** surface directly on GitHub: a `Mintlify Deployment` check (red X, with a "Deployment Failed" detail line) plus a bot comment showing a per-project status table.
+
+* **A PR with no bot comment** almost always means it came from a fork (see above), not a build failure.
 
 * **Production deploy history** lives in the Mintlify dashboard's per-project Activity log (Live tab) - shows what triggered each update (a git push, or a manual update), status, and files changed.
 
 ## Related content
 
 * [Configuring Mintlify][3] - editing `docs.json`'s split navigation/redirects config, a different concern from deployment.
-* [Deploy with GitHub][1]
+* [Reviewing a PR][4] - what a reviewer sees and does with a preview link.
 * [Deployments][2]
+* [Preview deployments][5]
 
 [1]: https://www.mintlify.com/docs/deploy/github
 [2]: https://www.mintlify.com/docs/deploy/deployments
 [3]: ./configure-mintlify
+[4]: ./review/check-changes
+[5]: https://www.mintlify.com/docs/deploy/preview-deployments
+[6]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
+[7]: #manual-previews
+
+[img1]: /media/loc/en/contribute/preview-widget.png
