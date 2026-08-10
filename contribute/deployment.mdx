@@ -4,7 +4,7 @@ title: Mintlify deployment and CI/CD
 description: How this site connects to GitHub, what triggers a deploy, and where build-failure visibility lives - captured for the CI/CD pipeline milestone and for audit purposes.
 keywords: ['mintlify', 'deployment', 'auto-deploy', 'ci/cd', 'github app', 'webhook', 'deploy history']
 author: digitaldiina
-date: 08.06.2026
+date: 08.10.2026
 content_type: concept
 language: en
 ---
@@ -26,6 +26,7 @@ Connection history matters here as much as current state - an audit will ask wha
 |---|---|
 | Change which repo/branch a Mintlify project deploys from, or promote a repo to "Base" | Mintlify dashboard access for this project |
 | Add a new repo to the Mintlify GitHub App's access on a GitHub org | **Org owner only.** Repo-level admin is not sufficient. |
+| Manually trigger or delete a custom preview | Mintlify dashboard access for this project - same as the row above |
 
 ## GitHub App permissions
 
@@ -43,18 +44,50 @@ Requested by the Mintlify GitHub App on `SuperOfficeDocs` (see [Mintlify's GitHu
 
 A push to the connected branch (`main`) triggers an automatic production deploy; a pull request against it gets its own preview deployment and check. A manual **Deploy** button in the dashboard exists as a fallback. See [Deployments][2] for the full mechanics - not duplicated here.
 
+## PR preview deployments
+
+Any pull request opened against `main` **from a branch in this repo** (not a fork) gets its own automatic preview deployment - no setup or per-PR action needed, this has worked since the GitHub App's `deployments` permission was granted (see above). The preview rebuilds on every new push to the PR branch, and a `mintlify[bot]` comment posts a status table with a public **View Preview** link - visible to anyone with the link, no sign-in required by default.
+
+Confirmed live, twice: [PR #203](https://github.com/SuperOfficeDocs/docs/pull/203) (an unrelated, automated API-files PR) got a Ready status and preview link within about a second of its push; this issue's own PR reconfirmed both the initial bot comment and the rebuild-on-push behavior directly.
+
+An automatic preview stays reachable while its PR is open, and after the PR merges or closes for as long as its source branch still exists.
+
+**Forked-repo PRs do not get an automatic preview at all** - Mintlify does not generate preview deployments for PRs opened from a fork. See [Manual (custom) previews](#manual-custom-previews) below for the workaround, and [Reviewing a PR][4] for what a reviewer should do when a PR has no bot comment.
+
+A **Preview authentication** toggle exists (dashboard → Add-ons → Previews) to restrict preview access to signed-in Mintlify org members instead of the public-by-default behavior above. Not enabled for now. See [Preview deployments][5] for the mechanics - not duplicated here.
+
+## Manual (custom) previews
+
+Use a manual preview when a PR came from a fork (no automatic preview exists for it), or to preview a branch on demand outside of any PR.
+
+1. The branch has to exist in `SuperOfficeDocs/docs` itself - Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first, e.g. `git fetch origin pull/<PR#>/head:tmp-branch && git push origin tmp-branch`.
+2. In the Mintlify dashboard, go to **Previews** → **Create custom preview**, enter that branch name, and create it.
+3. Share the resulting link on the PR.
+
+**Manual previews stay live until someone deletes them** - unlike automatic ones, they don't expire on their own. Delete from the same dashboard **Previews** list once it's no longer needed.
+
+<Note>
+Requesting one costs the docs lead's time and isn't instant - it depends on their availability. If you're iterating on a fork PR, mark it **draft**, make your full round of changes, then undraft and `@`-mention the docs lead to request **one** preview - not a fresh request after every small fix.
+</Note>
+
 ## Where to look when something's wrong
 
 * **PR/preview build failures** surface directly on GitHub: a `Mintlify Deployment` check (red X, with a "Deployment Failed" detail line) plus a bot comment showing a per-project status table.
+
+* **A PR with no bot comment at all** is usually not a failure - it's most likely a fork PR (see above), which never gets an automatic preview in the first place.
 
 * **Production deploy history** lives in the Mintlify dashboard's per-project Activity log (Live tab) - shows what triggered each update (a git push, or a manual update), status, and files changed.
 
 ## Related content
 
 * [Configuring Mintlify][3] - editing `docs.json`'s split navigation/redirects config, a different concern from deployment.
+* [Reviewing a PR][4] - what a reviewer sees and does with a preview link.
 * [Deploy with GitHub][1]
 * [Deployments][2]
+* [Preview deployments][5]
 
 [1]: https://www.mintlify.com/docs/deploy/github
 [2]: https://www.mintlify.com/docs/deploy/deployments
 [3]: ./configure-mintlify
+[4]: ./review/check-changes
+[5]: https://www.mintlify.com/docs/deploy/preview-deployments
