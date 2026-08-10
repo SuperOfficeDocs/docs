@@ -64,7 +64,7 @@ Use a manual preview when a PR came from a fork, or to preview a branch outside 
 1. Push the branch into `SuperOfficeDocs/docs` itself, under the naming convention `preview/pr-<PR#>` to avoid collisions between concurrent manual previews - Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first: `git fetch origin pull/<PR#>/head:preview/pr-<PR#> && git push origin preview/pr-<PR#>`.
 2. In the Mintlify dashboard, go to **Previews** > **Create custom preview**, enter that branch name, and create it.
 
-    <!-- TODO: add a screenshot of the dashboard's Previews > Create custom preview panel here -->
+    ![Mintlify dashboard Previews panel with Create custom preview -screenshot][img1]
 
 3. Share the resulting link on the PR.
 
@@ -86,7 +86,6 @@ Requesting a manual preview costs the docs lead's time and is not instant - it d
 
 * [Configuring Mintlify][3] - editing `docs.json`'s split navigation/redirects config, a different concern from deployment.
 * [Reviewing a PR][4] - what a reviewer sees and does with a preview link.
-* [Deploy with GitHub][1]
 * [Deployments][2]
 * [Preview deployments][5]
 
@@ -97,3 +96,5 @@ Requesting a manual preview costs the docs lead's time and is not instant - it d
 [5]: https://www.mintlify.com/docs/deploy/preview-deployments
 [6]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
 [7]: #manual-previews
+
+[img1]: /media/loc/en/contribute/preview-widget.png
