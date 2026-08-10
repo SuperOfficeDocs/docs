@@ -1,34 +1,33 @@
 ---
-uid: table-SearchCat
 title: SearchCat table
 description: SearchCat list table
 generated: true
-keywords: ['database table SearchCat']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Searchcat from "./includes/searchcat.md";
+import Searchcat from "./includes/searchcat.mdx";
 
-# SearchCat Table (106)
+## SearchCat Table (106)
 
 SearchCat MDO list item table.
 SearchCat list table
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|SearchCat\_id|Primary key|PK| |
-|name|The list item|String(239)| |
-|rank|Rank order|UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|SearchCat\_id|Primary key|PK|No|
+|name|The list item|String(239)|No|
+|rank|Rank order|UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SearchCat table relationship diagram](/media/loc/en/database/tables/SearchCat.png)
 
@@ -49,6 +48,7 @@ SearchCat list table
 |[SearchCatHeadingLink](./searchcatheadinglink)  |Heading link table for SearchCat, for MDO headers |
 |[selection](./selection)  |Selections |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ SearchCat list table
 ## Security Flags
 
 * No access control via user's Role.
+

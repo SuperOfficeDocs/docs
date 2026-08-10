@@ -1,31 +1,30 @@
 ---
-uid: table-target_period
 title: target_period table
 description: A set of periods linked with target amounts for users/usergroups and the target groups/years.
 generated: true
-keywords: ['database table target_period']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TargetPeriod from "./includes/target-period.md";
+import TargetPeriod from "./includes/target-period.mdx";
 
-# target\_period Table (515)
+## target\_period Table (516)
 
 A set of periods linked with target amounts for users/usergroups and the target groups/years.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|target\_period\_id|Primary key|PK| |
-|target\_group\_id|The group this target belongs to|FK [target_group](./target-group)|&#x25CF;|
-|period\_number|Month number, 1...12 (or maybe quarter number 1...4 or half year number...)|Int|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|target\_period\_id|Primary key|PK|No|
+|target\_group\_id|The group this target belongs to|FK [target_group](./target-group.mdx)|Yes|
+|period\_number|Month number, 1...12 (or maybe quarter number 1...4 or half year number...)|Int|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![target_period table relationship diagram](/media/loc/en/database/tables/target_period.png)
 
@@ -44,6 +43,7 @@ A set of periods linked with target amounts for users/usergroups and the target 
 |[target\_assignment\_value](./target-assignment-value)  |A set of values linked to assignment info and a period in a target group. |
 |[target\_group](./target-group)  |Info about a set of (sales, project, selection...) targets |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ A set of periods linked with target amounts for users/usergroups and the target 
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

@@ -1,31 +1,30 @@
 ---
-uid: table-SearchCatGroupLink
 title: SearchCatGroupLink table
 description: User group link table for SearchCat, for MDO item hiding
 generated: true
-keywords: ['database table SearchCatGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Searchcatgrouplink from "./includes/searchcatgrouplink.md";
+import Searchcatgrouplink from "./includes/searchcatgrouplink.mdx";
 
-# SearchCatGroupLink Table (107)
+## SearchCatGroupLink Table (107)
 
 User group link table for SearchCat, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|searchcatgrouplink\_id|Primary key|PK| |
-|searchcat\_id|Link to SearchCat list table|FK [SearchCat](./searchcat)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|searchcatgrouplink\_id|Primary key|PK|No|
+|searchcat\_id|Link to SearchCat list table|FK [SearchCat](./searchcat.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SearchCatGroupLink table relationship diagram](/media/loc/en/database/tables/SearchCatGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for SearchCat, for MDO item hiding
 |[SearchCat](./searchcat)  |SearchCat list table |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for SearchCat, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

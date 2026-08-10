@@ -1,32 +1,31 @@
 ---
-uid: table-FunctionRightRoleLink
 title: FunctionRightRoleLink table
 description: Functional right definition
 generated: true
-keywords: ['database table FunctionRightRoleLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Functionrightrolelink from "./includes/functionrightrolelink.md";
+import Functionrightrolelink from "./includes/functionrightrolelink.mdx";
 
-# FunctionRightRoleLink Table (194)
+## FunctionRightRoleLink Table (194)
 
 Functional right definition
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|FunctionRightRoleLink\_id|Primary key|PK| |
-|roleId|Role id|FK [Role](./role)| |
-|functionRightId|Functional right id|FK [FunctionRight](./functionright)| |
-|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|FunctionRightRoleLink\_id|Primary key|PK|No|
+|roleId|Role id|FK [Role](./role.mdx)|No|
+|functionRightId|Functional right id|FK [FunctionRight](./functionright.mdx)|No|
+|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![FunctionRightRoleLink table relationship diagram](/media/loc/en/database/tables/FunctionRightRoleLink.png)
 
@@ -48,6 +47,7 @@ Functional right definition
 |[FunctionRight](./functionright)  |Functional right definition |
 |[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -57,3 +57,4 @@ Functional right definition
 ## Security Flags
 
 * No access control via user's Role.
+

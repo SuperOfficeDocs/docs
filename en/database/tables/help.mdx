@@ -1,33 +1,32 @@
 ---
-uid: table-help
 title: help table
 description: This table contains the help pages.
 generated: true
-keywords: ['database table help']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Help from "./includes/help.md";
+import Help from "./includes/help.mdx";
 
-# help Table (302)
+## help Table (302)
 
 This table contains the help pages.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|name|The name for this help page.|String(64)|&#x25CF;|
-|title|The title for this help page.|String(255)|&#x25CF;|
-|parent\_id|The id of the parent help page. NULL or -1 if this is a toplevel helppage.|FK [help](./help)|&#x25CF;|
-|language|A string indicating the language for this helppage (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|&#x25CF;|
-|sort\_order|The sort-order for this helppage when listed among its siblings.|Int|&#x25CF;|
-|module\_id|The id of the module, if this page is the description for a module..|Int| |
-|application\_area\_id|The id of the application_area, if this page is the description for a application_area..|Int| |
-|screen\_id|The id of the screen, if this page is the description for a screen..|Int| |
-|body|The actual body for the helppage. HTML format.|Clob|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|name|The name for this help page.|String(64)|Yes|
+|title|The title for this help page.|String(255)|Yes|
+|parent\_id|The id of the parent help page. NULL or -1 if this is a toplevel helppage.|FK [help](./help.mdx)|Yes|
+|language|A string indicating the language for this helppage (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|Yes|
+|sort\_order|The sort-order for this helppage when listed among its siblings.|Int|Yes|
+|module\_id|The id of the module, if this page is the description for a module..|Int|No|
+|application\_area\_id|The id of the application_area, if this page is the description for a application_area..|Int|No|
+|screen\_id|The id of the screen, if this page is the description for a screen..|Int|No|
+|body|The actual body for the helppage. HTML format.|Clob|Yes|
+
 
 ![help table relationship diagram](/media/loc/en/database/tables/help.png)
 
@@ -48,6 +47,7 @@ This table contains the help pages.
 |------|-------------|
 |[help](./help)  |This table contains the help pages. |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ This table contains the help pages.
 ## Security Flags
 
 * No access control via user's Role.
+

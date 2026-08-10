@@ -1,48 +1,47 @@
 ---
-uid: table-associate
 title: associate table
 description: Employees, resources and other users - except for External persons
 generated: true
-keywords: ['database table associate']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Associate from "./includes/associate.md";
+import Associate from "./includes/associate.mdx";
 
-# associate Table (2)
+## associate Table (2)
 
 associate MDO list item table.
 Employees, resources and other users - except for External persons
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|associate\_id|Primary key|PK| |
-|name|Initials, also login name, possibly database user name|String(239)| |
-|rank|Rank order |UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|1 = the user is retired and should have no rights, not appear in lists, etc.|UShort|&#x25CF;|
-|group\_idx|Primary group membership, see UserGroupLink for secondary memberships|FK [UserGroup](./usergroup)| |
-|lastlogin|Last login date|DateTime| |
-|lastlogout|Last logout date|DateTime| |
-|person\_id|Owning person record|FK [person](./person)| |
-|checklistlimit|Diary checklist scan limit|DateTime| |
-|type|Associate type|Enum [AssociateType](./enums/associatetype)|&#x25CF;|
-|userFlags|user-specific GUI flags|String(127)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates|UShort| |
-|isLocation|For resources only: 1 if this resource represents a location|Bool|&#x25CF;|
-|tzLocationId|Default timezone location for this associate|FK [TZLocation](./tzlocation)|&#x25CF;|
-|locationAddress|Address of location, if this is a resource that is a location|String(239)|&#x25CF;|
-|ejuserId|ID of the ej user record corresponding to this associate; 0 for associates that are not ej users|FK [ejuser](./ejuser)|&#x25CF;|
-|encryptedCheck|Encrypted hash checksum|String(254)| |
-|userName|Associate user name|String(254)|&#x25CF;|
-|waiting\_for\_approval|0 = Approved (default). 1 = Associate/User must be approved by an administrator. User cannot log in while waiting, but can be assigned licenses. Used in Online.|Bool| |
+|associate\_id|Primary key|PK|No|
+|name|Initials, also login name, possibly database user name|String(239)|No|
+|rank|Rank order |UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|1 = the user is retired and should have no rights, not appear in lists, etc.|UShort|Yes|
+|group\_idx|Primary group membership, see UserGroupLink for secondary memberships|FK [UserGroup](./usergroup.mdx)|No|
+|lastlogin|Last login date|DateTime|No|
+|lastlogout|Last logout date|DateTime|No|
+|person\_id|Owning person record|FK [person](./person.mdx)|No|
+|checklistlimit|Diary checklist scan limit|DateTime|No|
+|type|Associate type|Enum [AssociateType](./enums/associatetype.mdx)|Yes|
+|userFlags|user-specific GUI flags|String(127)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates|UShort|No|
+|isLocation|For resources only: 1 if this resource represents a location|Bool|Yes|
+|tzLocationId|Default timezone location for this associate|FK [TZLocation](./tzlocation.mdx)|Yes|
+|locationAddress|Address of location, if this is a resource that is a location|String(239)|Yes|
+|ejuserId|ID of the ej user record corresponding to this associate; 0 for associates that are not ej users|FK [ejuser](./ejuser.mdx)|Yes|
+|encryptedCheck|Encrypted hash checksum|String(254)|No|
+|userName|Associate user name|String(254)|Yes|
+|waiting\_for\_approval|0 = Approved (default). 1 = Associate/User must be approved by an administrator. User cannot log in while waiting, but can be assigned licenses. Used in Online.|Bool|No|
+
 
 ![associate table relationship diagram](/media/loc/en/database/tables/associate.png)
 
@@ -190,7 +189,7 @@ Employees, resources and other users - except for External persons
 |[IntentHeadingLink](./intentheadinglink)  |Heading link table for Intent, for MDO headers |
 |[invitation](./invitation)  |Invitations to events |
 |[landing\_page](./landing-page)  |Per-associate landing page configuration for a given entity type |
-|[landing\_page\_pin](./landing-page-pin)  |A pinned selection or entity record on a landing page |
+|[landing\_page\_tab](./landing-page-tab)  |A tab (pinned selection or entity record) on a landing page |
 |[LanguageInfo](./languageinfo)  |Information about languages, from ISO standards and related information |
 |[LanguageInfoCountry](./languageinfocountry)  |Many-many link between countries and languages, to give intelligent choices for language |
 |[LegalBase](./legalbase)  |Legal base for GDPR (Article 6) |
@@ -207,6 +206,7 @@ Employees, resources and other users - except for External persons
 |[MrMrs](./mrmrs)  |MrMrs list table. List of salutations. |
 |[MrMrsGroupLink](./mrmrsgrouplink)  |User group link table for MrMrs, for MDO item hiding |
 |[MrMrsHeadingLink](./mrmrsheadinglink)  |Heading link table for MrMrs, for MDO headers |
+|[navigation\_history](./navigation-history)  |Per-associate navigation state: Current (persisted soprotocol) and Recent navigation entries, keyed by client and key |
 |[NewsFeedItem](./newsfeeditem)  |Contains news feed items - published to one or more users, with one or more language descriptions |
 |[NewsFeedItemRecipient](./newsfeeditemrecipient)  |Recipients of the news feed item. One news feed item may be sent to multiple recipients (users). |
 |[notify](./notify)  |This table contains the pop-up messages displayed for users for various events, such as &amp;apos;new ticket&amp;apos;, etc. |
@@ -270,7 +270,7 @@ Employees, resources and other users - except for External persons
 |[quick\_filter\_info](./quick-filter-info)  |Connect quick filter info from a specific provider to a dashboard |
 |[quick\_reply](./quick-reply)  |Personal quick reply text fragments |
 |[Quote](./quote)  |Quote root level, at most one per Sale, always connected to one Sale |
-|[QuoteAlternative](./quotealternative)  |Quote Version is made up of one or more Alternatives. One of 1..n possible alternatives in a Quote Version. The reason we have alternatives is that a quote can say to a customer, "we can solve you problem in two (or more) different ways, with different technology and sideeffects (and price)". An Alternative may have discounts on the total amount. The Alternative tracks whether the user on the order level entered the Discount , Earning amount or the TotalPrice fields so that the discount and earning and total can be re-calculated correctly when Quote Lines are added or changed. |
+|[QuoteAlternative](./quotealternative)  |Quote Version is made up of one or more Alternatives. One of 1..n possible alternatives in a Quote Version. The reason we have alternatives is that a quote can say to a customer, “we can solve you problem in two (or more) different ways, with different technology and sideeffects (and price)”. An Alternative may have discounts on the total amount. The Alternative tracks whether the user on the order level entered the Discount , Earning amount or the TotalPrice fields so that the discount and earning and total can be re-calculated correctly when Quote Lines are added or changed. |
 |[QuoteApprReason](./quoteapprreason)  |Predefined reasons for quote approval |
 |[QuoteApprReasonGroupLink](./quoteapprreasongrouplink)  |User group link table for QuoteApprReason, for MDO item hiding |
 |[QuoteApprReasonHeadingLink](./quoteapprreasonheadinglink)  |Heading link table for QuoteApprReason, for MDO headers |
@@ -423,6 +423,7 @@ Employees, resources and other users - except for External persons
 |[workflow\_trigger](./workflow-trigger)  |A set of triggers related to a workflow. |
 |[workflow\_wait\_for\_action](./workflow-wait-for-action)  |Some steps wait for actions, this is info about those actions |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -433,3 +434,4 @@ Employees, resources and other users - except for External persons
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

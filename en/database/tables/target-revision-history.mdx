@@ -1,36 +1,35 @@
 ---
-uid: table-target_revision_history
 title: target_revision_history table
 description: Revision history info in case the original target group or assignment info was deleted
 generated: true
-keywords: ['database table target_revision_history']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TargetRevisionHistory from "./includes/target-revision-history.md";
+import TargetRevisionHistory from "./includes/target-revision-history.mdx";
 
-# target\_revision\_history Table (518)
+## target\_revision\_history Table (519)
 
 Revision history info in case the original target group or assignment info was deleted
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|target\_revision\_history\_id|Primary key|PK| |
-|target\_group\_id|The group id - but it may not still exist|FK [target_group](./target-group)|&#x25CF;|
-|year|The year this set of targets are associated with (2020, 2021...)|Int|&#x25CF;|
-|entity\_type|Entity type for this set of targets (Sale, Project, Selection, Appointment...)|Enum [TargetEntityType](./enums/targetentitytype)|&#x25CF;|
-|associate\_id|Associate who owns this target|FK [associate](./associate)|&#x25CF;|
-|usergroup\_id|User group who owns this target|FK [UserGroup](./usergroup)|&#x25CF;|
-|contact\_id|Company who owns this target|FK [contact](./contact)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|target\_assignment\_info\_id|TargetAssignmentInfo associated with the logged info|FK [target_assignment_info](./target-assignment-info)|&#x25CF;|
+|target\_revision\_history\_id|Primary key|PK|No|
+|target\_group\_id|The group id - but it may not still exist|FK [target_group](./target-group.mdx)|Yes|
+|year|The year this set of targets are associated with (2020, 2021...)|Int|Yes|
+|entity\_type|Entity type for this set of targets (Sale, Project, Selection, Appointment...)|Enum [TargetEntityType](./enums/targetentitytype.mdx)|Yes|
+|associate\_id|Associate who owns this target|FK [associate](./associate.mdx)|Yes|
+|usergroup\_id|User group who owns this target|FK [UserGroup](./usergroup.mdx)|Yes|
+|contact\_id|Company who owns this target|FK [contact](./contact.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|target\_assignment\_info\_id|TargetAssignmentInfo associated with the logged info|FK [target_assignment_info](./target-assignment-info.mdx)|Yes|
+
 
 ![target_revision_history table relationship diagram](/media/loc/en/database/tables/target_revision_history.png)
 
@@ -54,6 +53,7 @@ Revision history info in case the original target group or assignment info was d
 |[target\_revision](./target-revision)  |One batch of changes made to targets |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * None
@@ -61,3 +61,4 @@ Revision history info in case the original target group or assignment info was d
 ## Security Flags
 
 * No access control via user's Role.
+

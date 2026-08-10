@@ -1,32 +1,31 @@
 ---
-uid: table-target_revision
 title: target_revision table
 description: One batch of changes made to targets
 generated: true
-keywords: ['database table target_revision']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TargetRevision from "./includes/target-revision.md";
+import TargetRevision from "./includes/target-revision.mdx";
 
-# target\_revision Table (519)
+## target\_revision Table (520)
 
 One batch of changes made to targets
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|target\_revision\_id|Primary key|PK| |
-|target\_revision\_history\_id|Info about the target group this history is for|FK [target_revision_history](./target-revision-history)|&#x25CF;|
-|assignment\_info\_id|The assignment info id - but it may have been deleted|FK [target_assignment_info](./target-assignment-info)|&#x25CF;|
-|log\_event|Log event class (create, edit, delete, lock, unlock...|Enum [LogEvent](./enums/logevent)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|target\_revision\_id|Primary key|PK|No|
+|target\_revision\_history\_id|Info about the target group this history is for|FK [target_revision_history](./target-revision-history.mdx)|Yes|
+|assignment\_info\_id|The assignment info id - but it may have been deleted|FK [target_assignment_info](./target-assignment-info.mdx)|Yes|
+|log\_event|Log event class (create, edit, delete, lock, unlock...|Enum [LogEvent](./enums/logevent.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![target_revision table relationship diagram](/media/loc/en/database/tables/target_revision.png)
 
@@ -47,6 +46,7 @@ One batch of changes made to targets
 |[target\_change](./target-change)  |A single field change. |
 |[target\_revision\_history](./target-revision-history)  |Revision history info in case the original target group or assignment info was deleted |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ One batch of changes made to targets
 ## Security Flags
 
 * No access control via user's Role.
+

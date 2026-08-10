@@ -1,50 +1,49 @@
 ---
-uid: table-project
 title: project table
 description: Projects
 generated: true
-keywords: ['database table project']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Project from "./includes/project.md";
+import Project from "./includes/project.mdx";
 
-# project Table (11)
+## project Table (11)
 
 Projects
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|project\_id|Primary key|PK| |
-|name|Project name|String(219)|&#x25CF;|
-|project\_number|Automatically generated number|String(49)|&#x25CF;|
-|type\_idx|Link to ProjType list|FK [ProjType](./projtype)| |
-|status\_idx|Link to ProjStatus list|FK [ProjStatus](./projstatus)|&#x25CF;|
-|associate\_id|Project manager/owner|FK [associate](./associate)| |
-|text\_id|Description field|FK [text](./text)|&#x25CF;|
-|registered|Registered date|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated date|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|userdef\_id|Pointer to userdef small table|FK [udprojectSmall](./udprojectsmall)|&#x25CF;|
-|soundEx|What the name sounds like, for duplicate detection|String(9)|&#x25CF;|
-|source|How did we get this project? For future integration needs|UShort|&#x25CF;|
-|userdef2\_id|User defined table record 2|FK [udprojectLarge](./udprojectlarge)|&#x25CF;|
-|postitText\_id|Paperclip text|FK [text](./text)|&#x25CF;|
-|updatedCount|Number of updates made to this record|UShort| |
-|group\_id|Group id of original owning associate, semantics like appnt.grp_id|FK [UserGroup](./usergroup)|&#x25CF;|
-|tzLocationId|Default timezone location for this project|FK [TZLocation](./tzlocation)|&#x25CF;|
-|activeLinks|Number of active links to documents, other appointments, and such|UInt|&#x25CF;|
-|done|Done (0=false, 1=true). Status implies changes in which fields are shown in GUI, as well as which fields can be updated|Bool|&#x25CF;|
-|endDate|Planned end date for project, inhertied from type and later editable|DateTime|&#x25CF;|
-|nextMilestoneDate|Calculated date, reflects date of closest non-complete future milestone activity|DateTime|&#x25CF;|
-|nmdAppointment\_id|ID of appointment that &quot;caused&quot; the nextMilestoneDate, can be 0|FK [appointment](./appointment)|&#x25CF;|
-|activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|&#x25CF;|
-|event\_id|Reserved field for Lyyti event when project is linked to an event.|Int|&#x25CF;|
-|startDate|Reserved field for Lyyti event when project is linked to an event, is the event start date.|DateTime|&#x25CF;|
+|project\_id|Primary key|PK|No|
+|name|Project name|String(219)|Yes|
+|project\_number|Automatically generated number|String(49)|Yes|
+|type\_idx|Link to ProjType list|FK [ProjType](./projtype.mdx)|No|
+|status\_idx|Link to ProjStatus list|FK [ProjStatus](./projstatus.mdx)|Yes|
+|associate\_id|Project manager/owner|FK [associate](./associate.mdx)|No|
+|text\_id|Description field|FK [text](./text.mdx)|Yes|
+|registered|Registered date|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated date|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|userdef\_id|Pointer to userdef small table|FK [udprojectSmall](./udprojectsmall.mdx)|Yes|
+|soundEx|What the name sounds like, for duplicate detection|String(9)|Yes|
+|source|How did we get this project? For future integration needs|UShort|Yes|
+|userdef2\_id|User defined table record 2|FK [udprojectLarge](./udprojectlarge.mdx)|Yes|
+|postitText\_id|Paperclip text|FK [text](./text.mdx)|Yes|
+|updatedCount|Number of updates made to this record|UShort|No|
+|group\_id|Group id of original owning associate, semantics like appnt.grp_id|FK [UserGroup](./usergroup.mdx)|Yes|
+|tzLocationId|Default timezone location for this project|FK [TZLocation](./tzlocation.mdx)|Yes|
+|activeLinks|Number of active links to documents, other appointments, and such|UInt|Yes|
+|done|Done (0=false, 1=true). Status implies changes in which fields are shown in GUI, as well as which fields can be updated|Bool|Yes|
+|endDate|Planned end date for project, inhertied from type and later editable|DateTime|Yes|
+|nextMilestoneDate|Calculated date, reflects date of closest non-complete future milestone activity|DateTime|Yes|
+|nmdAppointment\_id|ID of appointment that &quot;caused&quot; the nextMilestoneDate, can be 0|FK [appointment](./appointment.mdx)|Yes|
+|activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|Yes|
+|event\_id|Reserved field for Lyyti event when project is linked to an event.|Int|Yes|
+|startDate|Reserved field for Lyyti event when project is linked to an event, is the event start date.|DateTime|Yes|
+
 
 ![project table relationship diagram](/media/loc/en/database/tables/project.png)
 
@@ -87,6 +86,7 @@ Projects
 |[URL](./url)  |Unified Resource Locators, URL to contacts, persons or projects. |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -97,3 +97,4 @@ Projects
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

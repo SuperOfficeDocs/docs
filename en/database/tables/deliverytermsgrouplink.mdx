@@ -1,31 +1,30 @@
 ---
-uid: table-DeliveryTermsGroupLink
 title: DeliveryTermsGroupLink table
 description: User group link table for DeliveryTerms, for MDO item hiding
 generated: true
-keywords: ['database table DeliveryTermsGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Deliverytermsgrouplink from "./includes/deliverytermsgrouplink.md";
+import Deliverytermsgrouplink from "./includes/deliverytermsgrouplink.mdx";
 
-# DeliveryTermsGroupLink Table (434)
+## DeliveryTermsGroupLink Table (434)
 
 User group link table for DeliveryTerms, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|deliverytermsgrouplink\_id|Primary key|PK| |
-|deliveryterms\_id|Link to DeliveryTerms list table|FK [DeliveryTerms](./deliveryterms)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|deliverytermsgrouplink\_id|Primary key|PK|No|
+|deliveryterms\_id|Link to DeliveryTerms list table|FK [DeliveryTerms](./deliveryterms.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![DeliveryTermsGroupLink table relationship diagram](/media/loc/en/database/tables/DeliveryTermsGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for DeliveryTerms, for MDO item hiding
 |[DeliveryTerms](./deliveryterms)  |The list of Delivery terms, in the internal product register |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for DeliveryTerms, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

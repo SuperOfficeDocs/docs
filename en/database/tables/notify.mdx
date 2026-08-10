@@ -1,40 +1,39 @@
 ---
-uid: table-notify
 title: notify table
 description: This table contains the pop-up messages displayed for users for various events, such as &amp;apos;new ticket&amp;apos;, etc.
 generated: true
-keywords: ['database table notify']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Notify from "./includes/notify.md";
+import Notify from "./includes/notify.mdx";
 
-# notify Table (301)
+## notify Table (301)
 
 This table contains the pop-up messages displayed for users for various events, such as &amp;apos;new ticket&amp;apos;, etc.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|type|A number (enum) indicating the type of the notification.|Int|&#x25CF;|
-|expires|When the notification expires, if it has not yet been displayed.|DateTime|&#x25CF;|
-|user\_id|The id of the user who should be notified.|FK [ejuser](./ejuser)| |
-|owner\_id|The id of the user who is the original owner of this notification.|FK [ejuser](./ejuser)| |
-|ticket\_id|The id of the ticket this notification message affects.|FK [ticket](./ticket)| |
-|user2\_id|A second user involved in this notification|FK [ejuser](./ejuser)|&#x25CF;|
-|category\_id|The category involed in this notification|FK [ej_category](./ej-category)|&#x25CF;|
-|chat\_topic\_id|Chat topic involed in this notification|FK [chat_topic](./chat-topic)|&#x25CF;|
-|chat\_nick\_name|Chat customer nick name in this notification|String(255)|&#x25CF;|
-|ticket\_alert\_id|Ticket alert used when tickets are escalated|FK [ticket_alert](./ticket-alert)|&#x25CF;|
-|custom\_message|Text for custom notify messages|String(255)|&#x25CF;|
-|contact\_id|Id of the assigned contact|FK [contact](./contact)|&#x25CF;|
-|person\_id|Id of the assigned person|FK [person](./person)|&#x25CF;|
-|custom\_url|An URL which can be set with custom notification messages|String(2048)|&#x25CF;|
-|registered|Registered when|UtcDateTime|&#x25CF;|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|type|A number (enum) indicating the type of the notification.|Int|Yes|
+|expires|When the notification expires, if it has not yet been displayed.|DateTime|Yes|
+|user\_id|The id of the user who should be notified.|FK [ejuser](./ejuser.mdx)|No|
+|owner\_id|The id of the user who is the original owner of this notification.|FK [ejuser](./ejuser.mdx)|No|
+|ticket\_id|The id of the ticket this notification message affects.|FK [ticket](./ticket.mdx)|No|
+|user2\_id|A second user involved in this notification|FK [ejuser](./ejuser.mdx)|Yes|
+|category\_id|The category involed in this notification|FK [ej_category](./ej-category.mdx)|Yes|
+|chat\_topic\_id|Chat topic involed in this notification|FK [chat_topic](./chat-topic.mdx)|Yes|
+|chat\_nick\_name|Chat customer nick name in this notification|String(255)|Yes|
+|ticket\_alert\_id|Ticket alert used when tickets are escalated|FK [ticket_alert](./ticket-alert.mdx)|Yes|
+|custom\_message|Text for custom notify messages|String(255)|Yes|
+|contact\_id|Id of the assigned contact|FK [contact](./contact.mdx)|Yes|
+|person\_id|Id of the assigned person|FK [person](./person.mdx)|Yes|
+|custom\_url|An URL which can be set with custom notification messages|String(2048)|Yes|
+|registered|Registered when|UtcDateTime|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+
 
 ![notify table relationship diagram](/media/loc/en/database/tables/notify.png)
 
@@ -67,6 +66,7 @@ This table contains the pop-up messages displayed for users for various events, 
 |[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 |[ticket\_alert](./ticket-alert)  |This table will contain ticket escalation levels. A ticket will be escalated along a &amp;apos;chain&amp;apos; of these levels. |
 
+
 ## Replication Flags
 
 * None
@@ -74,3 +74,4 @@ This table contains the pop-up messages displayed for users for various events, 
 ## Security Flags
 
 * No access control via user's Role.
+

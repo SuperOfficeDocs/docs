@@ -1,31 +1,30 @@
 ---
-uid: table-PaymentTypeGroupLink
 title: PaymentTypeGroupLink table
 description: User group link table for PaymentType, for MDO item hiding
 generated: true
-keywords: ['database table PaymentTypeGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Paymenttypegrouplink from "./includes/paymenttypegrouplink.md";
+import Paymenttypegrouplink from "./includes/paymenttypegrouplink.mdx";
 
-# PaymentTypeGroupLink Table (431)
+## PaymentTypeGroupLink Table (431)
 
 User group link table for PaymentType, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|paymenttypegrouplink\_id|Primary key|PK| |
-|paymenttype\_id|Link to PaymentType list table|FK [PaymentType](./paymenttype)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|paymenttypegrouplink\_id|Primary key|PK|No|
+|paymenttype\_id|Link to PaymentType list table|FK [PaymentType](./paymenttype.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![PaymentTypeGroupLink table relationship diagram](/media/loc/en/database/tables/PaymentTypeGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for PaymentType, for MDO item hiding
 |[PaymentType](./paymenttype)  |The list of payment types, in the internal product register |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for PaymentType, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

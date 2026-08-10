@@ -1,33 +1,32 @@
 ---
-uid: table-redletterday
 title: redletterday table
 description: Red letter days for calendar (holidays, birthday of king etc)
 generated: true
-keywords: ['database table redletterday']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Redletterday from "./includes/redletterday.md";
+import Redletterday from "./includes/redletterday.mdx";
 
-# redletterday Table (17)
+## redletterday Table (17)
 
 Red letter days for calendar (holidays, birthday of king etc)
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|redletterday\_id|Primary key|PK| |
-|reddate|The date |DateTime| |
-|country\_id|Which country does this red letter day belong to. It will show up in the diary for associates with this country as homecountry.|FK [country](./country)| |
-|reds|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|&#x25CF;|
-|colored|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|&#x25CF;|
-|color|color can be one of the following: RLD_COLOR_BLACK, RLD_COLOR_RED, RLD_COLOR_SPES|UShort|&#x25CF;|
-|text|Text to show on the date|String(79)|&#x25CF;|
-|updatedCount|Number of updates made to this record|UShort| |
-|rgbColour|Actual RGB colour index|UInt|&#x25CF;|
-|extraFlags|Extra flags, spare field|UInt|&#x25CF;|
+|redletterday\_id|Primary key|PK|No|
+|reddate|The date |DateTime|No|
+|country\_id|Which country does this red letter day belong to. It will show up in the diary for associates with this country as homecountry.|FK [country](./country.mdx)|No|
+|reds|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|Yes|
+|colored|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|Yes|
+|color|color can be one of the following: RLD_COLOR_BLACK, RLD_COLOR_RED, RLD_COLOR_SPES|UShort|Yes|
+|text|Text to show on the date|String(79)|Yes|
+|updatedCount|Number of updates made to this record|UShort|No|
+|rgbColour|Actual RGB colour index|UInt|Yes|
+|extraFlags|Extra flags, spare field|UInt|Yes|
+
 
 ![redletterday table relationship diagram](/media/loc/en/database/tables/redletterday.png)
 
@@ -45,6 +44,7 @@ Red letter days for calendar (holidays, birthday of king etc)
 |------|-------------|
 |[country](./country)  |Country information |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -54,3 +54,4 @@ Red letter days for calendar (holidays, birthday of king etc)
 ## Security Flags
 
 * No access control via user's Role.
+

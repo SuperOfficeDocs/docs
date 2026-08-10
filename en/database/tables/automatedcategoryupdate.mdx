@@ -1,33 +1,32 @@
 ---
-uid: table-AutomatedCategoryUpdate
 title: AutomatedCategoryUpdate table
 description: Info on how to autoupdate category when changing sale or leadstatus on person
 generated: true
-keywords: ['database table AutomatedCategoryUpdate']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Automatedcategoryupdate from "./includes/automatedcategoryupdate.md";
+import Automatedcategoryupdate from "./includes/automatedcategoryupdate.mdx";
 
-# AutomatedCategoryUpdate Table (549)
+## AutomatedCategoryUpdate Table (550)
 
 Info on how to autoupdate category when changing sale or leadstatus on person
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|automatedcategoryupdate\_id|Primary key|PK| |
-|trigger\_type|The type of change to trigger the auto update|Enum [CategoryUpdateTrigger](./enums/categoryupdatetrigger)|&#x25CF;|
-|user\_confirmation|Whether to ask the user for confirmation before applying the autoupdate|Bool|&#x25CF;|
-|default\_category|The default category id to update to, and the actual new value if no user confirmation is needed|FK [Category](./category)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|leadstatus\_id|The leadstatus id to match on person, to trigger autoupdate of category|FK [leadstatus](./leadstatus)|&#x25CF;|
+|automatedcategoryupdate\_id|Primary key|PK|No|
+|trigger\_type|The type of change to trigger the auto update|Enum [CategoryUpdateTrigger](./enums/categoryupdatetrigger.mdx)|Yes|
+|user\_confirmation|Whether to ask the user for confirmation before applying the autoupdate|Bool|Yes|
+|default\_category|The default category id to update to, and the actual new value if no user confirmation is needed|FK [Category](./category.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|leadstatus\_id|The leadstatus id to match on person, to trigger autoupdate of category|FK [leadstatus](./leadstatus.mdx)|Yes|
+
 
 ![AutomatedCategoryUpdate table relationship diagram](/media/loc/en/database/tables/AutomatedCategoryUpdate.png)
 
@@ -47,6 +46,7 @@ Info on how to autoupdate category when changing sale or leadstatus on person
 |[Category](./category)  |Category list table |
 |[leadstatus](./leadstatus)  |List items of lead status that is selectable for contacts and persons that have specific category |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Info on how to autoupdate category when changing sale or leadstatus on person
 ## Security Flags
 
 * No access control via user's Role.
+

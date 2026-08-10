@@ -1,31 +1,30 @@
 ---
-uid: table-MrMrsHeadingLink
 title: MrMrsHeadingLink table
 description: Heading link table for MrMrs, for MDO headers
 generated: true
-keywords: ['database table MrMrsHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Mrmrsheadinglink from "./includes/mrmrsheadinglink.md";
+import Mrmrsheadinglink from "./includes/mrmrsheadinglink.mdx";
 
-# MrMrsHeadingLink Table (96)
+## MrMrsHeadingLink Table (96)
 
 Heading link table for MrMrs, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|mrmrsheadinglink\_id|Primary key|PK| |
-|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](./mrmrs)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|mrmrsheadinglink\_id|Primary key|PK|No|
+|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](./mrmrs.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![MrMrsHeadingLink table relationship diagram](/media/loc/en/database/tables/MrMrsHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for MrMrs, for MDO headers
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 |[MrMrs](./mrmrs)  |MrMrs list table. List of salutations. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for MrMrs, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

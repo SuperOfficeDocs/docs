@@ -1,42 +1,41 @@
 ---
-uid: table-SuggestedAppointment
 title: SuggestedAppointment table
 description: Defines a suggested appointment for use in a Sale Guide or Project Guide
 generated: true
-keywords: ['database table SuggestedAppointment']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Suggestedappointment from "./includes/suggestedappointment.md";
+import Suggestedappointment from "./includes/suggestedappointment.mdx";
 
-# SuggestedAppointment Table (125)
+## SuggestedAppointment Table (125)
 
 Defines a suggested appointment for use in a Sale Guide or Project Guide
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|SuggestedAppointment\_id|Primary key|PK| |
-|name|Item name, visible in Guide|String(239)| |
-|rank|Rank, controls rank of non-instantiated items in Guide|UShort|&#x25CF;|
-|tooltip|Tooltip / description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|saleTypeStageLinkId|Link to saleTypeStageLink, the anchor for sale guide items. Either this OR projectAnchorId should be set, not both at the same time.|FK [SaleTypeStageLink](./saletypestagelink)|&#x25CF;|
-|projectTypeStatusLinkId|Link to projectTypeStatusLink, the anchor for project guide items. Either this OR saleAnchorId should be set, not both at the same time.|FK [ProjectTypeStatusLink](./projecttypestatuslink)|&#x25CF;|
-|task\_id|Type of the suggested appointment|FK [Task](./task)|&#x25CF;|
-|daysFuture|How many days into the future the appointment should be scheduled|UShort|&#x25CF;|
-|duration|Duration in minutes of suggested appointment|UShort|&#x25CF;|
-|autoSuggest|Should this appointment be auto-suggested|Bool|&#x25CF;|
-|text|The suggested text of the new appointment|String(2047)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|isMilestone|Is this kind of appointment a milestone in a project|Bool|&#x25CF;|
-|assignToMember|Should generated appointment be assigned to a project member?|Bool|&#x25CF;|
+|SuggestedAppointment\_id|Primary key|PK|No|
+|name|Item name, visible in Guide|String(239)|No|
+|rank|Rank, controls rank of non-instantiated items in Guide|UShort|Yes|
+|tooltip|Tooltip / description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|saleTypeStageLinkId|Link to saleTypeStageLink, the anchor for sale guide items. Either this OR projectAnchorId should be set, not both at the same time.|FK [SaleTypeStageLink](./saletypestagelink.mdx)|Yes|
+|projectTypeStatusLinkId|Link to projectTypeStatusLink, the anchor for project guide items. Either this OR saleAnchorId should be set, not both at the same time.|FK [ProjectTypeStatusLink](./projecttypestatuslink.mdx)|Yes|
+|task\_id|Type of the suggested appointment|FK [Task](./task.mdx)|Yes|
+|daysFuture|How many days into the future the appointment should be scheduled|UShort|Yes|
+|duration|Duration in minutes of suggested appointment|UShort|Yes|
+|autoSuggest|Should this appointment be auto-suggested|Bool|Yes|
+|text|The suggested text of the new appointment|String(2047)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|isMilestone|Is this kind of appointment a milestone in a project|Bool|Yes|
+|assignToMember|Should generated appointment be assigned to a project member?|Bool|Yes|
+
 
 ![SuggestedAppointment table relationship diagram](/media/loc/en/database/tables/SuggestedAppointment.png)
 
@@ -60,6 +59,7 @@ Defines a suggested appointment for use in a Sale Guide or Project Guide
 |[SaleTypeStageLink](./saletypestagelink)  |Many-many link table between sale type and stage; and an anchor point for guide items |
 |[Task](./task)  |Task list table, activity types, like Phone, Meeting |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -69,3 +69,4 @@ Defines a suggested appointment for use in a Sale Guide or Project Guide
 ## Security Flags
 
 * No access control via user's Role.
+

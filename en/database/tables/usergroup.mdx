@@ -1,34 +1,33 @@
 ---
-uid: table-UserGroup
 title: UserGroup table
 description: Secondary user groups
 generated: true
-keywords: ['database table UserGroup']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Usergroup from "./includes/usergroup.md";
+import Usergroup from "./includes/usergroup.mdx";
 
-# UserGroup Table (59)
+## UserGroup Table (59)
 
 Secondary user groups
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|UserGroup\_id|Primary key|PK| |
-|name|UserGroup name|String(239)| |
-|rank|Rank order |UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|type|0 = department, other values = ? (workgroup, role, …)|UShort|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|UserGroup\_id|Primary key|PK|No|
+|name|UserGroup name|String(239)|No|
+|rank|Rank order |UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|type|0 = department, other values = ? (workgroup, role, …)|UShort|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![UserGroup table relationship diagram](/media/loc/en/database/tables/UserGroup.png)
 
@@ -112,6 +111,7 @@ Secondary user groups
 |[VisibleFor](./visiblefor)  |Visible for rights, who may see this appointment/document, sale,  salehist or selection |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -121,3 +121,4 @@ Secondary user groups
 ## Security Flags
 
 * No access control via user's Role.
+

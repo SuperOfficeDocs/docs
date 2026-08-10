@@ -1,27 +1,26 @@
 ---
-uid: table-message_customers
 title: message_customers table
 description: This table contains all cutomers who are involved in a message
 generated: true
-keywords: ['database table message_customers']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import MessageCustomers from "./includes/message-customers.md";
+import MessageCustomers from "./includes/message-customers.mdx";
 
-# message\_customers Table (260)
+## message\_customers Table (260)
 
 This table contains all cutomers who are involved in a message
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|message\_id|The id of the message the customer is involved in|FK [ej_message](./ej-message)| |
-|customer\_id|The id of the customer who has received this message, or another message in this ticket|FK [person](./person)| |
-|email|The email-adresse used in this message|String(255)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|message\_id|The id of the message the customer is involved in|FK [ej_message](./ej-message.mdx)|No|
+|customer\_id|The id of the customer who has received this message, or another message in this ticket|FK [person](./person.mdx)|No|
+|email|The email-adresse used in this message|String(255)|Yes|
+
 
 ![message_customers table relationship diagram](/media/loc/en/database/tables/message_customers.png)
 
@@ -41,6 +40,7 @@ This table contains all cutomers who are involved in a message
 |[ej\_message](./ej-message)  |This table contains the messages listed under tickets. |
 |[person](./person)  |Persons |
 
+
 ## Replication Flags
 
 * None
@@ -48,3 +48,4 @@ This table contains all cutomers who are involved in a message
 ## Security Flags
 
 * No access control via user's Role.
+
