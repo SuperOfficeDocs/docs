@@ -11,14 +11,14 @@ language: en
 
 Anyone with access can comment on a PR. The ability to request changes or submit reviews that approve a PR is limited to admins.
 
-## Preview the changes
+## Preview the changes {#preview}
 
-Check this before reviewing line by line. A `mintlify[bot]` comment normally appears on the PR within moments of the last push, with a status table and a **View Preview** link showing the changed pages actually rendered - it rebuilds automatically on every new push, so it always reflects the PR's current content.
+Check this before reviewing line by line. A `mintlify[bot]` comment normally appears on the PR within moments of the last push, with a status table and a **View Preview** link to the changed pages as rendered. It rebuilds on every new push, so it always reflects the PR's current content.
 
-<!-- TODO: add a screenshot of the mintlify[bot] preview comment table here, same convention as img1-img7 below -->
+![Mintlify preview deployment bot comment -screenshot][img8]
 
 <Note>
-If a PR has no bot comment at all, that's normally not a build failure - it's most likely a PR opened from a fork, which doesn't get an automatic preview. Ask the author, or see [Manual (custom) previews][8] for requesting one.
+A PR with no bot comment is usually not a build failure - it is most likely a PR opened from a [fork][9], which does not get an automatic preview. Ask the author, or see [Manual (custom) previews][8] for requesting one.
 </Note>
 
 ## Open the PR for viewing
@@ -78,7 +78,8 @@ If a PR has no bot comment at all, that's normally not a build failure - it's mo
 * If you approved and all checks are green, you can merge the PR and delete the branch.
 
 [1]: https://github.com/SuperOfficeDocs/docs
-[8]: ../deployment#manual-custom-previews
+[8]: ../deployment#manual-previews
+[9]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
 
 [img1]: /media/loc/en/contribute/comment.png
 [img2]: /media/loc/en/contribute/line-comment.png
@@ -87,3 +88,4 @@ If a PR has no bot comment at all, that's normally not a build failure - it's mo
 [img5]: /media/loc/en/contribute/add-suggestion-icon.png
 [img6]: /media/loc/en/contribute/review-changes.png
 [img7]: /media/loc/en/contribute/submit-review.png
+[img8]: /media/loc/en/contribute/preview-deployment.png

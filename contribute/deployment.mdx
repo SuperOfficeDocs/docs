@@ -44,37 +44,35 @@ Requested by the Mintlify GitHub App on `SuperOfficeDocs` (see [Mintlify's GitHu
 
 A push to the connected branch (`main`) triggers an automatic production deploy; a pull request against it gets its own preview deployment and check. A manual **Deploy** button in the dashboard exists as a fallback. See [Deployments][2] for the full mechanics - not duplicated here.
 
-## PR preview deployments
+## PR preview deployments {#previews}
 
-Any pull request opened against `main` **from a branch in this repo** (not a fork) gets its own automatic preview deployment - no setup or per-PR action needed, this has worked since the GitHub App's `deployments` permission was granted (see above). The preview rebuilds on every new push to the PR branch, and a `mintlify[bot]` comment posts a status table with a public **View Preview** link - visible to anyone with the link, no sign-in required by default.
+A PR opened against `main` from a branch in this repository gets an automatic preview deployment. The preview rebuilds on every new push. A `mintlify[bot]` comment posts a status table with a public **View Preview** link.
 
-Confirmed live, twice: [PR #203](https://github.com/SuperOfficeDocs/docs/pull/203) (an unrelated, automated API-files PR) got a Ready status and preview link within about a second of its push; this issue's own PR reconfirmed both the initial bot comment and the rebuild-on-push behavior directly.
+The preview stays reachable while the PR is open, and after it merges or closes for as long as the source branch still exists.
 
-An automatic preview stays reachable while its PR is open, and after the PR merges or closes for as long as its source branch still exists.
+PRs from a [fork][6] do not get an automatic preview. See [Manual (custom) previews][7] for the workaround, and [Reviewing a PR][4] for what a reviewer should do when no bot comment appears.
 
-**Forked-repo PRs do not get an automatic preview at all** - Mintlify does not generate preview deployments for PRs opened from a fork. See [Manual (custom) previews](#manual-custom-previews) below for the workaround, and [Reviewing a PR][4] for what a reviewer should do when a PR has no bot comment.
+A **Preview authentication** toggle (dashboard → Add-ons → Previews) can restrict preview access to signed-in Mintlify organization members instead of the public-by-default behavior. Not enabled for now. See [Preview deployments][5] for details.
 
-A **Preview authentication** toggle exists (dashboard → Add-ons → Previews) to restrict preview access to signed-in Mintlify org members instead of the public-by-default behavior above. Not enabled for now. See [Preview deployments][5] for the mechanics - not duplicated here.
+## Manual (custom) previews {#manual-previews}
 
-## Manual (custom) previews
+Use a manual preview when a PR came from a fork, or to preview a branch outside of any PR.
 
-Use a manual preview when a PR came from a fork (no automatic preview exists for it), or to preview a branch on demand outside of any PR.
-
-1. The branch has to exist in `SuperOfficeDocs/docs` itself - Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first, e.g. `git fetch origin pull/<PR#>/head:tmp-branch && git push origin tmp-branch`.
-2. In the Mintlify dashboard, go to **Previews** → **Create custom preview**, enter that branch name, and create it.
+1. Push the branch into `SuperOfficeDocs/docs` itself. Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first, for example `git fetch origin pull/<PR#>/head:tmp-branch && git push origin tmp-branch`.
+2. In the Mintlify dashboard, go to **Previews** → **Create custom preview**, enter the branch name, and create it.
 3. Share the resulting link on the PR.
 
-**Manual previews stay live until someone deletes them** - unlike automatic ones, they don't expire on their own. Delete from the same dashboard **Previews** list once it's no longer needed.
+**Manual previews stay live until someone deletes them.** Unlike automatic previews, they do not expire on their own. Delete from the same dashboard **Previews** list once no longer needed.
 
 <Note>
-Requesting one costs the docs lead's time and isn't instant - it depends on their availability. If you're iterating on a fork PR, mark it **draft**, make your full round of changes, then undraft and `@`-mention the docs lead to request **one** preview - not a fresh request after every small fix.
+Requesting a manual preview costs the docs lead's time and is not instant - it depends on their availability. If you are iterating on a fork PR, mark it **draft**, make the full round of changes, then undraft and `@`-mention the docs lead to request **one** preview, not a fresh request after every small fix.
 </Note>
 
 ## Where to look when something's wrong
 
 * **PR/preview build failures** surface directly on GitHub: a `Mintlify Deployment` check (red X, with a "Deployment Failed" detail line) plus a bot comment showing a per-project status table.
 
-* **A PR with no bot comment at all** is usually not a failure - it's most likely a fork PR (see above), which never gets an automatic preview in the first place.
+* **A PR with no bot comment** almost always means it came from a fork (see above), not a build failure.
 
 * **Production deploy history** lives in the Mintlify dashboard's per-project Activity log (Live tab) - shows what triggered each update (a git push, or a manual update), status, and files changed.
 
@@ -91,3 +89,5 @@ Requesting one costs the docs lead's time and isn't instant - it depends on thei
 [3]: ./configure-mintlify
 [4]: ./review/check-changes
 [5]: https://www.mintlify.com/docs/deploy/preview-deployments
+[6]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
+[7]: #manual-previews
