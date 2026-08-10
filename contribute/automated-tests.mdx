@@ -1,0 +1,73 @@
+---
+uid: automated-tests
+title: Automated tests
+description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, and broken-link checking - what each covers, whether it blocks a merge, and where to look when one flags something.
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations']
+author: digitaldiina
+date: 08.10.2026
+content_type: concept
+language: en
+---
+
+This page is the single reference for every automatic check that runs against this repo, whether it is triggered by a pull request or runs on its own schedule. It does not duplicate the general mechanics already covered in [Mintlify deployment and CI/CD][1] - only what each check covers and how to act on it.
+
+## Per-PR checks
+
+| Check | Runs via | Blocking? | Configured in |
+|---|---|---|---|
+| Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
+| Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
+| Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
+| Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
+
+### Markdownlint
+
+Lints only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) using this repo's own `.markdownlint.yaml` rules. Results appear in the workflow run's log in the GitHub Actions tab - a flagged line does not block the merge, but is worth fixing before requesting review. See [markdownlint][3] for how to interpret and fix a specific rule violation, and how to run the same linter locally.
+
+### Vale
+
+Prose-style linting (tone, terminology, formatting), configured entirely by this repo's `.vale.ini` - no separate setup needed once the add-on is toggled on in the Mintlify dashboard. Set to Warning level to match markdownlint's advisory-only posture; results show on the PR's checks list from Mintlify's own GitHub App.
+
+### Build validation - why there is no separate `mint validate` step
+
+`mint validate` is a build/schema validator (`docs.json` schema, MDX parse errors, OpenAPI spec validation) - it is unrelated to Vale and does not check broken links or accessibility; those are separate CLI commands (`mint broken-links`, `mint a11y`). It is not run as its own GitHub Action here because the PR preview deployment already performs the equivalent build validation on every PR, live, as part of generating the preview - adding a duplicate `mint validate` Action would just re-check what the preview build already checked. A failed build already surfaces as the red "Mintlify Deployment" check described in [Deployment][2].
+
+### Broken links (per-PR)
+
+Mintlify's Broken Links add-on scans the whole site's internal links (not external URLs) on every PR and reports results the same way as the Vale check above. It is set to Warning level for the same advisory-first reasoning as the other checks.
+
+<Note>
+A Mintlify community report (October 2025) describes a case where a page serving a 404 still returned an HTTP 200 status, which could make this check under-report a real broken link. Do not treat "no broken links flagged" here as a guarantee - see the scheduled check and fallback tool below for a second opinion.
+</Note>
+
+## Scheduled check: repo-wide broken-link detection
+
+A per-PR link check only catches breaks introduced by that PR. A separate, Mintlify-hosted automation periodically re-scans the *entire* site, catching drift from any source - including direct admin-bypass pushes that skip PR review entirely.
+
+* **Type**: `broken-link-detection` (`mint automations create --type broken-link-detection`)
+* **Cadence**: `0 6 1,15 * *` - the 1st and 15th of each month, run at 06:00. Standard cron has no native "every 2 weeks" field; this is the closest non-drifting approximation of a biweekly cadence (actual gaps land at 13-16 days depending on the month).
+* **Auto-merge**: off. When the automation finds and fixes a broken link, it opens a PR like any other change - it goes through the same manual review as everything else in this repo, it does not merge itself.
+* **What it does**: for each broken internal link, it checks whether the target page was renamed or moved and updates the link, or - if the target was removed entirely - edits the surrounding copy to remove or replace the reference.
+* **Cost**: billed in Mintlify credits per run (rough public estimate: ~285 credits/run) - a real operating cost, not a free background job.
+
+See [issue #81][4] for the setup record (creation command, confirmed `mint automations list` output).
+
+## Fallback: manual broken-link check
+
+`tools/triage-broken-links.py` (built during [#129][5]) plus the `mint broken-links` CLI remain the trusted manual method for a broken-link sweep, separating genuine breaks from known false positives. Reach for this:
+
+* Right after a large structural change (a folder move, a nav overhaul) rather than waiting for the next scheduled automation run.
+* As a second opinion if the scheduled automation or the per-PR add-on reports "no breaks found" but something looks off - see the HTTP-200-masking-a-404 caveat above.
+
+## Related content
+
+* [Mintlify deployment and CI/CD][1] - the deploy pipeline and PR preview mechanics these checks build on.
+* [markdownlint][3] - rule details and local usage.
+* [Reviewing a PR][6] - the review checklist that links back here.
+
+[1]: ./deployment
+[2]: ./deployment#deploy-trigger-mechanics
+[3]: ./markdown-guide/markdownlint
+[4]: https://github.com/SuperOfficeDocs/docs/issues/81
+[5]: https://github.com/SuperOfficeDocs/docs/issues/129
+[6]: ./review/index

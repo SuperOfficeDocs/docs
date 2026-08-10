@@ -61,35 +61,37 @@ Don't use HTML comments (`<!-- like this -->`) to turn off a rule for a single l
 
 `.markdownlint.yaml` is already tuned to avoid needing most per-file overrides (for example, `MD013`'s line-length limits are generous and `MD041` doesn't require a specific front-matter title). If you hit a rule that genuinely needs a one-off exception, check with the DX team first rather than reaching for an HTML comment — the current MDX-safe mechanism for disabling a rule inline hasn't been established yet.
 
+## Runs automatically on every pull request
+
+A GitHub Action lints every changed `.md`/`.mdx` file on each PR, using this repo's own `.markdownlint.yaml` and `.markdownlintignore`. It is advisory only for now - a lint issue shows up in the Action's log but does not block the PR from merging. See [Automated tests][8] for the full list of checks that run against this repo and how to read their results.
+
 ## Command-line linting
 
-You can optionally install [markdownlint-cli][6], a command-line interface that allows you to do bulk linting. This is useful for bulk editing but it can also be added to a build pipeline as automatic testing.
+You can optionally install [markdownlint-cli2][6], a command-line interface that allows you to do bulk linting - the same tool the pull request Action above uses. This is useful for bulk editing.
 
 **Install:**
 
 ```sh
-npm install -g markdownlint-cli
+npm install -g markdownlint-cli2
 ```
 
 **Use:**
 
 ```sh
-markdownlint -f -i *.cs *.xml --disable MD013 MD041 -c  .markdownlint.yaml PATH
+markdownlint-cli2 PATH
 ```
 
-* -f will automatically fix problems that have a defined fix, for example, whitespace
-* -i ignores whatever follows, in this case, all cs and XML files. To omit API from the run, add api/ to the path.
-* --disable turns off the listed rules
-* -c specifies the markdownlint config file. In this case, we use the one inside the `superoffice-docs` repo
+`markdownlint-cli2` auto-discovers `.markdownlint.yaml` (the rule configuration) and `.markdownlintignore` (excluded paths, such as generated reference content) from the repo root - no need to repeat them as flags. `PATH` can be a single file, a glob, or a space-separated list of files. Add `--fix` to automatically resolve issues that have a defined fix, such as whitespace.
 
-See [GitHub issue 373][7] regarding why we exclude rules MD013 and MD041.
+See [GitHub issue 373][7] regarding why we exclude rules MD013 and MD041 in `.markdownlint.yaml`.
 
 [2]: ./index
 [3]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 [4]: https://github.com/DavidAnson/markdownlint#rules--aliases
 [5]: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
-[6]: https://github.com/igorshubovych/markdownlint-cli
+[6]: https://github.com/DavidAnson/markdownlint-cli2
 [7]: https://github.com/SuperOfficeDocs/superoffice-docs/issues/373
+[8]: ../automated-tests
 
 [img1]: /media/loc/en/contribute/mdlint-list-warning.png
 [img2]: /media/loc/en/contribute/mdlint-list-hover.png
