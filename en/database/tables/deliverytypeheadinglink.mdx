@@ -1,31 +1,30 @@
 ---
-uid: table-DeliveryTypeHeadingLink
 title: DeliveryTypeHeadingLink table
 description: Heading link table for DeliveryType, for MDO item headings
 generated: true
-keywords: ['database table DeliveryTypeHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Deliverytypeheadinglink from "./includes/deliverytypeheadinglink.md";
+import Deliverytypeheadinglink from "./includes/deliverytypeheadinglink.mdx";
 
-# DeliveryTypeHeadingLink Table (438)
+## DeliveryTypeHeadingLink Table (438)
 
 Heading link table for DeliveryType, for MDO item headings
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|deliverytypeheadinglink\_id|Primary key|PK| |
-|deliverytype\_id|Link to DeliveryType list table|FK [DeliveryType](./deliverytype)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|deliverytypeheadinglink\_id|Primary key|PK|No|
+|deliverytype\_id|Link to DeliveryType list table|FK [DeliveryType](./deliverytype.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![DeliveryTypeHeadingLink table relationship diagram](/media/loc/en/database/tables/DeliveryTypeHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for DeliveryType, for MDO item headings
 |[DeliveryType](./deliverytype)  |The list of Delivery types, in the internal product register |
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for DeliveryType, for MDO item headings
 ## Security Flags
 
 * No access control via user's Role.
+

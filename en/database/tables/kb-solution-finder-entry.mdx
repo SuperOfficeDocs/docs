@@ -1,26 +1,25 @@
 ---
-uid: table-kb_solution_finder_entry
 title: kb_solution_finder_entry table
 description: Knowledge base problem solving wizard, items in a category linking to a knowledge base entry
 generated: true
-keywords: ['database table kb_solution_finder_entry']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import KbSolutionFinderEntry from "./includes/kb-solution-finder-entry.md";
+import KbSolutionFinderEntry from "./includes/kb-solution-finder-entry.mdx";
 
-# kb\_solution\_finder\_entry Table (295)
+## kb\_solution\_finder\_entry Table (295)
 
 Knowledge base problem solving wizard, items in a category linking to a knowledge base entry
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|solution\_finder||FK [kb_solution_finder](./kb-solution-finder)| |
-|kb\_entry||FK [kb_entry](./kb-entry)| |
+|id|The primary key (auto-incremented)|PK|No|
+|solution\_finder||FK [kb_solution_finder](./kb-solution-finder.mdx)|No|
+|kb\_entry||FK [kb_entry](./kb-entry.mdx)|No|
+
 
 ![kb_solution_finder_entry table relationship diagram](/media/loc/en/database/tables/kb_solution_finder_entry.png)
 
@@ -40,6 +39,7 @@ Knowledge base problem solving wizard, items in a category linking to a knowledg
 |[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
 |[kb\_solution\_finder](./kb-solution-finder)  |Knowledge base problem solving wizard, categories and subcategories for drilling down |
 
+
 ## Replication Flags
 
 * None
@@ -47,3 +47,4 @@ Knowledge base problem solving wizard, items in a category linking to a knowledg
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,31 +1,30 @@
 ---
-uid: table-CategoryGroupLink
 title: CategoryGroupLink table
 description: User group link table for Category, for MDO item hiding
 generated: true
-keywords: ['database table CategoryGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Categorygrouplink from "./includes/categorygrouplink.md";
+import Categorygrouplink from "./includes/categorygrouplink.mdx";
 
-# CategoryGroupLink Table (65)
+## CategoryGroupLink Table (65)
 
 User group link table for Category, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|categorygrouplink\_id|Primary key|PK| |
-|category\_id|Link to Category list table|FK [Category](./category)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|categorygrouplink\_id|Primary key|PK|No|
+|category\_id|Link to Category list table|FK [Category](./category.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![CategoryGroupLink table relationship diagram](/media/loc/en/database/tables/CategoryGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for Category, for MDO item hiding
 |[Category](./category)  |Category list table |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for Category, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

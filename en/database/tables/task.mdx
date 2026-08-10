@@ -1,42 +1,41 @@
 ---
-uid: table-Task
 title: Task table
 description: Task list table, activity types, like Phone, Meeting
 generated: true
-keywords: ['database table Task']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Task from "./includes/task.md";
+import Task from "./includes/task.mdx";
 
-# Task Table (67)
+## Task Table (67)
 
 Task MDO list item table.
 Task list table, activity types, like Phone, Meeting
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|Task\_id|Primary key|PK| |
-|name|The list item|String(239)| |
-|rank|Rank order|UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|record\_type|1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo - see EAppntRecordTypes|Enum [TaskType](./enums/tasktype)| |
-|direction|1 = incoming, 2 = outgoing, see EAppntDirection|Enum [TaskDirection](./enums/taskdirection)|&#x25CF;|
-|color\_index|JAP|UShort|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|defaultAlldayEvent|Default value for alldayEvent flag|Enum [AllDayEvent](./enums/alldayevent)|&#x25CF;|
-|defaultFreeBusy|Default value for Free/Busy indicator|Enum [FreeBusy](./enums/freebusy)|&#x25CF;|
-|defaultPublishType|Should this field be published by default?|Enum [PublishType](./enums/publishtype)|&#x25CF;|
-|intentId|Link to the intention of this kind of task (used by SAINT)|FK [Intent](./intent)|&#x25CF;|
-|default\_videomeeting\_status|Default video-meeting status for meetings created in SuperOffice CRM.|Enum [VideoMeetingStatus](./enums/videomeetingstatus)| |
+|Task\_id|Primary key|PK|No|
+|name|The list item|String(239)|No|
+|rank|Rank order|UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|record\_type|1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo - see EAppntRecordTypes|Enum [TaskType](./enums/tasktype.mdx)|No|
+|direction|1 = incoming, 2 = outgoing, see EAppntDirection|Enum [TaskDirection](./enums/taskdirection.mdx)|Yes|
+|color\_index|JAP|UShort|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|defaultAlldayEvent|Default value for alldayEvent flag|Enum [AllDayEvent](./enums/alldayevent.mdx)|Yes|
+|defaultFreeBusy|Default value for Free/Busy indicator|Enum [FreeBusy](./enums/freebusy.mdx)|Yes|
+|defaultPublishType|Should this field be published by default?|Enum [PublishType](./enums/publishtype.mdx)|Yes|
+|intentId|Link to the intention of this kind of task (used by SAINT)|FK [Intent](./intent.mdx)|Yes|
+|default\_videomeeting\_status|Default video-meeting status for meetings created in SuperOffice CRM.|Enum [VideoMeetingStatus](./enums/videomeetingstatus.mdx)|No|
+
 
 ![Task table relationship diagram](/media/loc/en/database/tables/Task.png)
 
@@ -62,6 +61,7 @@ Task list table, activity types, like Phone, Meeting
 |[TaskGroupLink](./taskgrouplink)  |User group link table for Task, for MDO item hiding |
 |[TaskHeadingLink](./taskheadinglink)  |Heading link table for Task, for MDO headers |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -71,3 +71,4 @@ Task list table, activity types, like Phone, Meeting
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,27 +1,26 @@
 ---
-uid: table-dictionary_base
 title: dictionary_base table
 description: Language catalog for the ejournal dictionaries (automatic proof reading of message text etc)
 generated: true
-keywords: ['database table dictionary_base']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import DictionaryBase from "./includes/dictionary-base.md";
+import DictionaryBase from "./includes/dictionary-base.mdx";
 
-# dictionary\_base Table (359)
+## dictionary\_base Table (359)
 
 Language catalog for the ejournal dictionaries (automatic proof reading of message text etc)
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|name|The name of the language|String(32)| |
-|code|Language code name (no, en)|String(8)| |
-|flags|A bitmask of dictionary flags|Int| |
+|id|Primary key|PK|No|
+|name|The name of the language|String(32)|No|
+|code|Language code name (no, en)|String(8)|No|
+|flags|A bitmask of dictionary flags|Int|No|
+
 
 ![dictionary_base table relationship diagram](/media/loc/en/database/tables/dictionary_base.png)
 
@@ -38,6 +37,7 @@ Language catalog for the ejournal dictionaries (automatic proof reading of messa
 |------|-------------|
 |[dictionary](./dictionary)  |User added dictionary words |
 
+
 ## Replication Flags
 
 * None
@@ -45,3 +45,4 @@ Language catalog for the ejournal dictionaries (automatic proof reading of messa
 ## Security Flags
 
 * No access control via user's Role.
+

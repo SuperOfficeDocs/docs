@@ -1,31 +1,30 @@
 ---
-uid: table-MrMrsGroupLink
 title: MrMrsGroupLink table
 description: User group link table for MrMrs, for MDO item hiding
 generated: true
-keywords: ['database table MrMrsGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Mrmrsgrouplink from "./includes/mrmrsgrouplink.md";
+import Mrmrsgrouplink from "./includes/mrmrsgrouplink.mdx";
 
-# MrMrsGroupLink Table (95)
+## MrMrsGroupLink Table (95)
 
 User group link table for MrMrs, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|mrmrsgrouplink\_id|Primary key|PK| |
-|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](./mrmrs)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|mrmrsgrouplink\_id|Primary key|PK|No|
+|mrmrs\_id|Link to MrMrs list table|FK [MrMrs](./mrmrs.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![MrMrsGroupLink table relationship diagram](/media/loc/en/database/tables/MrMrsGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for MrMrs, for MDO item hiding
 |[MrMrs](./mrmrs)  |MrMrs list table. List of salutations. |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for MrMrs, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

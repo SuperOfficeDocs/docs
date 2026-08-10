@@ -1,61 +1,60 @@
 ---
-uid: table-contact
 title: contact table
 description: Companies and Organizations.
 generated: true
-keywords: ['database table contact']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Contact from "./includes/contact.md";
+import Contact from "./includes/contact.mdx";
 
-# contact Table (5)
+## contact Table (5)
 
 Companies and Organizations.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|contact\_id|Primary key|PK| |
-|name|Contact name|String(219)| |
-|kananame|Contact kana name, used in Japanese versions only|String(219)|&#x25CF;|
-|department|Department|String(219)|&#x25CF;|
-|number1|Alphanumeric user field|String(49)|&#x25CF;|
-|number2|Alphanumeric user field|String(49)|&#x25CF;|
-|associate\_id|Our contact|FK [associate](./associate)|&#x25CF;|
-|country\_id|Country|FK [country](./country)| |
-|business\_idx|Link to Business|FK [Business](./business)| |
-|category\_idx|Link to Category|FK [Category](./category)| |
-|xstop|STOP flag|Bool|&#x25CF;|
-|nomailing|No mailings flags|Bool|&#x25CF;|
-|registered|Date registered|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Date last updated|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|text\_id|Paperclip note|FK [text](./text)|&#x25CF;|
-|mother\_id|Reserved|FK [contact](./contact)|&#x25CF;|
-|userdef\_id|User defined table record 1|FK [udcontactSmall](./udcontactsmall)|&#x25CF;|
-|orgNr|VAT number or similar|String(49)|&#x25CF;|
-|soundEx|What the name sounds like, for duplicate detection|String(9)|&#x25CF;|
-|source|How did we get this contact? For future integration needs|UShort|&#x25CF;|
-|userdef2\_id|User defined table record 2|FK [udcontactLarge](./udcontactlarge)|&#x25CF;|
-|activeInterests|Number of records in cintr table; select count(*) from cintr ci where ci.contact_id = this.contact_id == activeInterests is always true|UShort|&#x25CF;|
-|updatedCount|Number of times updated|UShort| |
-|group\_id|Group id of original owning associate, semantics like appnt.grp_id|FK [UserGroup](./usergroup)|&#x25CF;|
-|tzLocationId|Default timezone location for this contact|FK [TZLocation](./tzlocation)|&#x25CF;|
-|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority)|&#x25CF;|
-|deleted|If nonzero, then this contact is &apos;deleted&apos; and should generally not be shown|UShort|&#x25CF;|
-|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang)|&#x25CF;|
-|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate)|&#x25CF;|
-|supportPersonId|The person (at the customer) who support talks to (the counterpart of supportAssociateId)|FK [person](./person)|&#x25CF;|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|&#x25CF;|
-|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|&#x25CF;|
-|dbi\_last\_syncronized|Last external syncronization.|DateTime|&#x25CF;|
-|dbi\_last\_modified|When the entry was last modified.|DateTime|&#x25CF;|
-|activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|&#x25CF;|
-|DeletedDate|Datetime (utc) when this record was soft-deleted; if this value is set then the record should not be shown|UtcDateTime|&#x25CF;|
+|contact\_id|Primary key|PK|No|
+|name|Contact name|String(219)|No|
+|kananame|Contact kana name, used in Japanese versions only|String(219)|Yes|
+|department|Department|String(219)|Yes|
+|number1|Alphanumeric user field|String(49)|Yes|
+|number2|Alphanumeric user field|String(49)|Yes|
+|associate\_id|Our contact|FK [associate](./associate.mdx)|Yes|
+|country\_id|Country|FK [country](./country.mdx)|No|
+|business\_idx|Link to Business|FK [Business](./business.mdx)|No|
+|category\_idx|Link to Category|FK [Category](./category.mdx)|No|
+|xstop|STOP flag|Bool|Yes|
+|nomailing|No mailings flags|Bool|Yes|
+|registered|Date registered|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Date last updated|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|text\_id|Paperclip note|FK [text](./text.mdx)|Yes|
+|mother\_id|Reserved|FK [contact](./contact.mdx)|Yes|
+|userdef\_id|User defined table record 1|FK [udcontactSmall](./udcontactsmall.mdx)|Yes|
+|orgNr|VAT number or similar|String(49)|Yes|
+|soundEx|What the name sounds like, for duplicate detection|String(9)|Yes|
+|source|How did we get this contact? For future integration needs|UShort|Yes|
+|userdef2\_id|User defined table record 2|FK [udcontactLarge](./udcontactlarge.mdx)|Yes|
+|activeInterests|Number of records in cintr table; select count(*) from cintr ci where ci.contact_id = this.contact_id == activeInterests is always true|UShort|Yes|
+|updatedCount|Number of times updated|UShort|No|
+|group\_id|Group id of original owning associate, semantics like appnt.grp_id|FK [UserGroup](./usergroup.mdx)|Yes|
+|tzLocationId|Default timezone location for this contact|FK [TZLocation](./tzlocation.mdx)|Yes|
+|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority.mdx)|Yes|
+|deleted|If nonzero, then this contact is &apos;deleted&apos; and should generally not be shown|UShort|Yes|
+|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang.mdx)|Yes|
+|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate.mdx)|Yes|
+|supportPersonId|The person (at the customer) who support talks to (the counterpart of supportAssociateId)|FK [person](./person.mdx)|Yes|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|Yes|
+|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|Yes|
+|dbi\_last\_syncronized|Last external syncronization.|DateTime|Yes|
+|dbi\_last\_modified|When the entry was last modified.|DateTime|Yes|
+|activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|Yes|
+|DeletedDate|Datetime (utc) when this record was soft-deleted; if this value is set then the record should not be shown|UtcDateTime|Yes|
+
 
 ![contact table relationship diagram](/media/loc/en/database/tables/contact.png)
 
@@ -135,6 +134,7 @@ Companies and Organizations.
 |[utm\_parameters](./utm-parameters)  |Table for utm parameters collected from visits and formsubmissions |
 |[workflow\_instance](./workflow-instance)  |A set of properties related to the workflow instance of one participant going through the flow |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -145,3 +145,4 @@ Companies and Organizations.
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

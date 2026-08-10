@@ -1,43 +1,42 @@
 ---
-uid: table-form
 title: form table
 description: A form which can be published on a webpage and submitted by visitors
 generated: true
-keywords: ['database table form']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Form from "./includes/form.md";
+import Form from "./includes/form.mdx";
 
-# form Table (488)
+## form Table (488)
 
 A form which can be published on a webpage and submitted by visitors
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|form\_id|Primary key|PK| |
-|name|The name of this form|String(4000)|&#x25CF;|
-|description|Detailed description|String(4000)|&#x25CF;|
-|config|The JSON-formatted config of this form|Clob|&#x25CF;|
-|folder\_id|The folder which this form belongs to. -1 indicates that the shipment is on the root|FK [s_picture_folder](./s-picture-folder)| |
-|script\_id|The CRMScript Macro which will be run when the form is submitted.|FK [ejscript](./ejscript)| |
-|response\_shipment\_id|The id of the s_shipment that is used to send the response mails|FK [s_shipment](./s-shipment)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|active|Indicates if this form is active and available for customers|Bool|&#x25CF;|
-|expires|After this datetime, the form will become inactive|DateTime|&#x25CF;|
-|maxSubmits|After this number of submits, the form will become inactive|Int|&#x25CF;|
-|type|What kind of form is this? Indicates if this is a normal form or a template|Enum [FormType](./enums/formtype)| |
-|recipe|The JSON-formatted recipe of this form|Clob|&#x25CF;|
-|group\_id|The group which this form belongs to.|FK [UserGroup](./usergroup)| |
-|form\_key|A short string used as unique id to access this form|String(32)|&#x25CF;|
-|new\_ticket|True if this form creates a new ticket|Bool|&#x25CF;|
+|form\_id|Primary key|PK|No|
+|name|The name of this form|String(4000)|Yes|
+|description|Detailed description|String(4000)|Yes|
+|config|The JSON-formatted config of this form|Clob|Yes|
+|folder\_id|The folder which this form belongs to. -1 indicates that the shipment is on the root|FK [s_picture_folder](./s-picture-folder.mdx)|No|
+|script\_id|The CRMScript Macro which will be run when the form is submitted.|FK [ejscript](./ejscript.mdx)|No|
+|response\_shipment\_id|The id of the s_shipment that is used to send the response mails|FK [s_shipment](./s-shipment.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|active|Indicates if this form is active and available for customers|Bool|Yes|
+|expires|After this datetime, the form will become inactive|DateTime|Yes|
+|maxSubmits|After this number of submits, the form will become inactive|Int|Yes|
+|type|What kind of form is this? Indicates if this is a normal form or a template|Enum [FormType](./enums/formtype.mdx)|No|
+|recipe|The JSON-formatted recipe of this form|Clob|Yes|
+|group\_id|The group which this form belongs to.|FK [UserGroup](./usergroup.mdx)|No|
+|form\_key|A short string used as unique id to access this form|String(32)|Yes|
+|new\_ticket|True if this form creates a new ticket|Bool|Yes|
+
 
 ![form table relationship diagram](/media/loc/en/database/tables/form.png)
 
@@ -65,6 +64,7 @@ A form which can be published on a webpage and submitted by visitors
 |[s\_shipment](./s-shipment)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * None
@@ -72,3 +72,4 @@ A form which can be published on a webpage and submitted by visitors
 ## Security Flags
 
 * No access control via user's Role.
+

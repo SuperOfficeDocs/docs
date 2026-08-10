@@ -1,0 +1,98 @@
+---
+title: FormsAndFolders
+description: Combined archive of forms (the form table) and form folders
+keywords: FormsAndFolders archive provider
+generated: true
+content_type: reference
+envir: onsite, online
+---
+
+## "FormsAndFolders"
+
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FormsAndFoldersProvider">SuperOffice.CRM.ArchiveLists.FormsAndFoldersProvider</see> inside NetServer's SODatabase assembly.
+
+Combined archive of forms (the form table) and form folders
+(s_picture_folder, folder_type = formFolder) — analogous to
+<see cref="T:SuperOffice.CRM.ArchiveLists.MailingsAndFoldersProvider" />.
+
+Unified row schema (after the column-name overrides set up below):
+- PrimaryKey    — row's own id
+- formFolderId  — row's container folder id (for filtering)
+- name          — display label (form name on forms, folder name on
+folders), via overrides
+- formThumbnail — preview image / folder icon hint (native on both)
+
+Client filter `formFolderId = N` returns forms whose form.folder_id = N AND
+folders whose s_picture_folder.parent_id = N — i.e. everything contained in
+folder N.
+
+The name override is applied here (not by renaming the underlying extender
+column) so FormExtenderBase keeps its native `formName` column for every
+OTHER archive that uses it — including the Forms pane's own flat tabs, which
+query the plain Forms provider. Same approach as
+MailingsAndFoldersProvider (mailingDescription / folderName both → name).
+
+## Supported Entities
+| Name | Description |
+| ---- | ----- |
+|"formfolder"|formfolder|
+|"form"|Form|
+
+## Supported Columns
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
+|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
+|folderId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
+|formFolderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
+|name|string|Hierarchy name: The full name/path from table hierarchy| x |
+|formThumbnail| *None* |Thumbnail: Form thumbnail|  |
+|sortGroup| *None* ||  |
+|sortName| *None* || x |
+|type| *None* |Type: Displays the type of an activity|  |
+|formId| *None* |ID: Form ID|  |
+|formDescription| *None* |Description: Form description|  |
+|formActive| *None* |Active: Active|  |
+|formType| *None* |Form name: Form name|  |
+|formSubmissionCount| *None* |Form submissions: List of form submissions|  |
+|updatedBy| *None* |Updated by: The user who last updated the data|  |
+|updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
+|registeredBy| *None* |Registered by: The user who registered the data|  |
+|registeredDate| *None* |Registered date: The date/time the data was registered in UTC.|  |
+|registeredByFullName| *None* |Registered by - Full name: The user who registered the data|  |
+|emailFlow/emailFlowId| *None* |E-mail flow ID: The database ID of the e-mail flow|  |
+|emailFlow/emailFlowHierarchyId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
+|emailFlow/shipmentType| *None* |Mailing type: Mailing type this e-mail flow represents|  |
+|emailFlow/overrideConsentSubscription| *None* |Override consent: Should consent subscriptions be overridden for this flow?|  |
+|emailFlow/thumbnail| *None* |Thumbnail|  |
+|emailFlow/mediumThumbnail| *None* |Thumbnail|  |
+|emailFlow/workflowId| *None* |Flow id: Id of a flow definition|  |
+|emailFlow/workflowName| *None* |Name: Name of the flow definition|  |
+|emailFlow/workflowDescription| *None* |Description: Description of flow definition|  |
+|emailFlow/workflowDefinitionStatus| *None* |Status: Status of the flow definition|  |
+|emailFlow/workflowDefinitionStatusId| *None* |Status: Status of the flow definition|  |
+|emailFlow/jumpToFinish| *None* |Jump to finish: Should participant jump to finish when the goals are met?|  |
+|emailFlow/startOnlyOnce| *None* |Start only once: Should the participant enter the flow only once?|  |
+|emailFlow/workflowEnrolledCount| *None* |Enrolled: How many times has a participant entered this flow?|  |
+|emailFlow/workflowInProgressCount| *None* |In progress: How many participants are in progress|  |
+|emailFlow/workflowCompletedCount| *None* |Completed: How many participants are completed|  |
+|emailFlow/workflowSucceededCount| *None* |Succeeded: How many participants have successfully completed the flow (goal criteria met)?|  |
+|emailFlow/workflowSuccessRate| *None* |Success rate: Success rate, based on goals criteria met|  |
+|emailFlow/updatedBy| *None* |Updated by: The user who last updated the data|  |
+|emailFlow/updatedDate| *None* |Updated: The date/time the data was last updated in UTC.|  |
+|emailFlow/registeredBy| *None* |Registered by: The user who registered the data|  |
+|emailFlow/registeredDate| *None* |Registered date: The date/time the data was registered in UTC.|  |
+|historyRank| *None* |Rank: Rank of list item, if available|  |
+
+## Sample
+
+```http!
+GET /api/v1/archive/FormsAndFolders?$select=registeredDate,updatedBy,emailFlow/shipmentType
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: sv
+
+```
+
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+

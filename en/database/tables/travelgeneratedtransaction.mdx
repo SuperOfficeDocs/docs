@@ -1,35 +1,34 @@
 ---
-uid: table-travelgeneratedtransaction
 title: travelgeneratedtransaction table
 description: Record of all generated replication data files from this database (*.dwn files from mother database to child, *.up from child database to mother)
 generated: true
-keywords: ['database table travelgeneratedtransaction']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Travelgeneratedtransaction from "./includes/travelgeneratedtransaction.md";
+import Travelgeneratedtransaction from "./includes/travelgeneratedtransaction.mdx";
 
-# travelgeneratedtransaction Table (30)
+## travelgeneratedtransaction Table (30)
 
 Record of all generated replication data files from this database (*.dwn files from mother database to child, *.up from child database to mother)
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|travelgeneratedtransaction\_id|Primary key|PK| |
-|travel\_id|Central=0, Departm.=H01000000-H7F000000, Travel=assoc_id|Id|&#x25CF;|
-|tranlogfirst\_id|This up/dwnfile holds transaction from traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog)|&#x25CF;|
-|tranloglast\_id|This up/dwnfile holds transaction to traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog)|&#x25CF;|
-|recordstatus|gen, sent, ack.|UShort|&#x25CF;|
-|transmissionnumber|sequence pr. user|UInt|&#x25CF;|
-|transmissiontype|File or direct communication|UShort|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|travelgeneratedtransaction\_id|Primary key|PK|No|
+|travel\_id|Central=0, Departm.=H01000000-H7F000000, Travel=assoc_id|Id|Yes|
+|tranlogfirst\_id|This up/dwnfile holds transaction from traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog.mdx)|Yes|
+|tranloglast\_id|This up/dwnfile holds transaction to traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog.mdx)|Yes|
+|recordstatus|gen, sent, ack.|UShort|Yes|
+|transmissionnumber|sequence pr. user|UInt|Yes|
+|transmissiontype|File or direct communication|UShort|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![travelgeneratedtransaction table relationship diagram](/media/loc/en/database/tables/travelgeneratedtransaction.png)
 
@@ -49,6 +48,7 @@ Record of all generated replication data files from this database (*.dwn files f
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[traveltransactionlog](./traveltransactionlog)  |Log of all updates made to the database, that need to be replicated. |
 
+
 ## Replication Flags
 
 * None
@@ -56,3 +56,4 @@ Record of all generated replication data files from this database (*.dwn files f
 ## Security Flags
 
 * No access control via user's Role.
+

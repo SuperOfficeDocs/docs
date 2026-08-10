@@ -1,35 +1,34 @@
 ---
-uid: table-script_trace_run
 title: script_trace_run table
 description: Traces of executed scripts
 generated: true
-keywords: ['database table script_trace_run']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ScriptTraceRun from "./includes/script-trace-run.md";
+import ScriptTraceRun from "./includes/script-trace-run.mdx";
 
-# script\_trace\_run Table (477)
+## script\_trace\_run Table (477)
 
 Traces of executed scripts
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|script\_trace\_run\_id|Primary key|PK| |
-|script\_trace\_id|Id of parent script_trace record|FK [script_trace](./script-trace)|&#x25CF;|
-|started\_at|When the trace was started|DateTime|&#x25CF;|
-|ended\_at|When the trace was ended|DateTime|&#x25CF;|
-|execution\_time|Real seconds spent executing|Int|&#x25CF;|
-|user\_execution\_time|CPU seconds spent executing|Int|&#x25CF;|
-|peak\_memory|The maximum amount of used memory during execution (in kB)|Int|&#x25CF;|
-|num\_frames|The number of frames saved|Int|&#x25CF;|
-|file\_size|The size of the trace file|Int|&#x25CF;|
-|associate\_id|Associate who the script was executed as|FK [associate](./associate)|&#x25CF;|
-|status|The status of the script, or exception if it fails|String(2047)|&#x25CF;|
-|frames|The frames of the the trace|Clob|&#x25CF;|
+|script\_trace\_run\_id|Primary key|PK|No|
+|script\_trace\_id|Id of parent script_trace record|FK [script_trace](./script-trace.mdx)|Yes|
+|started\_at|When the trace was started|DateTime|Yes|
+|ended\_at|When the trace was ended|DateTime|Yes|
+|execution\_time|Real seconds spent executing|Int|Yes|
+|user\_execution\_time|CPU seconds spent executing|Int|Yes|
+|peak\_memory|The maximum amount of used memory during execution (in kB)|Int|Yes|
+|num\_frames|The number of frames saved|Int|Yes|
+|file\_size|The size of the trace file|Int|Yes|
+|associate\_id|Associate who the script was executed as|FK [associate](./associate.mdx)|Yes|
+|status|The status of the script, or exception if it fails|String(2047)|Yes|
+|frames|The frames of the the trace|Clob|Yes|
+
 
 ![script_trace_run table relationship diagram](/media/loc/en/database/tables/script_trace_run.png)
 
@@ -47,6 +46,7 @@ Traces of executed scripts
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[script\_trace](./script-trace)  |Scripts which should be traced |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Traces of executed scripts
 ## Security Flags
 
 * No access control via user's Role.
+

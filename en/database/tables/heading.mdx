@@ -1,35 +1,34 @@
 ---
-uid: table-Heading
 title: Heading table
 description: Heading items for all MDO lists, lists that are grouped and filtered.
 generated: true
-keywords: ['database table Heading']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Heading from "./includes/heading.md";
+import Heading from "./includes/heading.mdx";
 
-# Heading Table (58)
+## Heading Table (58)
 
 Heading items for all MDO lists, lists that are grouped and filtered.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|heading\_id|Primary key|PK| |
-|name|The visible heading|String(239)| |
-|rank|Rank order |UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is deleted and should not be shown in lists|UShort|&#x25CF;|
-|listTableId|Which List is this heading connected to? (table ID)|TableNumber| |
-|extraId|Extra ID for refining the list id|Id|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|heading\_id|Primary key|PK|No|
+|name|The visible heading|String(239)|No|
+|rank|Rank order |UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is deleted and should not be shown in lists|UShort|Yes|
+|listTableId|Which List is this heading connected to? (table ID)|TableNumber|No|
+|extraId|Extra ID for refining the list id|Id|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![Heading table relationship diagram](/media/loc/en/database/tables/Heading.png)
 
@@ -94,6 +93,7 @@ Heading items for all MDO lists, lists that are grouped and filtered.
 |[TaskMenuHeadingLink](./taskmenuheadinglink)  |Heading link table for TaskMenu, for MDO headers |
 |[UDListHeadingLink](./udlistheadinglink)  |Heading link table for UDList, for MDO headers. Note - MDO mode for userdefinede lists are either turned on or off, you may not have it on for one userdefined list and off for the others. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -103,3 +103,4 @@ Heading items for all MDO lists, lists that are grouped and filtered.
 ## Security Flags
 
 * No access control via user's Role.
+
