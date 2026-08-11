@@ -57,5 +57,6 @@
     ]
   },
   "contribute/configure-mintlify",
-  "contribute/deployment"
+  "contribute/deployment",
+  "contribute/automated-tests"
 ]

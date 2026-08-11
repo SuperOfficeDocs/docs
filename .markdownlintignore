@@ -1,12 +1,12 @@
 **/**/*.{cs,xml,yml}
 /downloads/
-/en/api/archive-providers/reference/
-/en/api/mdo-providers/reference/
-/en/api/reference/
-/en/automation/crmscript/reference/
+**/reference/
 /en/database/tables/
 /config/
+/release-notes/api/
 /release-notes/database/
+/blueprint-templates/
+/api-sources/
 /vale/
 .gitignore
 .mintignore
