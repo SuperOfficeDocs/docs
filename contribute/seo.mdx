@@ -1,0 +1,58 @@
+---
+uid: contribute-seo
+title: SEO and social previews
+description: How docs.json's seo settings control canonical URLs, social-preview thumbnails, and other search/discovery behavior for docs.superoffice.com.
+keywords: ['seo', 'opengraph', 'og:image', 'canonical', 'thumbnails', 'social preview']
+author: digitaldiina
+date: 08.11.2026
+content_type: concept
+language: en
+---
+
+`docs.json`'s `seo` key controls how this site behaves in search engines and in link previews on other platforms (Slack, LinkedIn, and so on). This page covers what's configured today; expect it to grow as more of Mintlify's `seo.*` options get used.
+
+## Automatic per-page social previews
+
+Every page automatically gets `og:title`, `og:description`, `og:image`, and matching `twitter:*` meta tags, with no per-page configuration required. Mintlify renders these directly from that page's own frontmatter `title` and `description` — see [Metadata][1] for how those fields are written. Improving a page's link-preview text is a metadata edit, not an `seo` setting.
+
+## Custom background
+
+The auto-generated preview image renders the title and description onto a background image, set once for the whole site:
+
+```json
+"seo": {
+  "thumbnails": {
+    "background": "/images/og-background.png"
+  }
+}
+```
+
+`images/og-background.png` is a brand-color gradient with the Hugo mascot placed in the bottom-right corner. Mintlify's title/description text always renders in the top-left, so Hugo stays clear of it regardless of how long a given page's title or description is.
+
+## Canonical URL
+
+```json
+"seo": {
+  "metatags": {
+    "canonical": "https://docs.superoffice.com"
+  }
+}
+```
+
+`canonical` is a base domain, not a fixed single URL — Mintlify appends each page's own path to it automatically.
+
+## Structured data and organization
+
+Not yet configured. Mintlify can publish a `seo.organization` block (name, logo, social profiles) that feeds the site's structured-data graph, separate from the social-preview thumbnails above.
+
+## Indexing controls
+
+Not yet configured. Mintlify supports both per-page (`noindex` frontmatter) and site-wide (`seo.indexing`, custom `robots.txt`/`sitemap.xml`) indexing controls.
+
+## Related content
+
+* [Metadata][1] — the frontmatter fields that feed every page's automatic social preview.
+* [Configuring Mintlify][2] — where `seo` sits inside `docs.json`'s overall layout.
+
+[1]: ./markdown-guide/metadata
+[2]: ./configure-mintlify
