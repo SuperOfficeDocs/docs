@@ -40,6 +40,11 @@
   "metadata": {
     "timestamp": false
   },
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.superoffice.com"
+    }
+  },
   "api": {
     "playground": {
       "display": "none"
