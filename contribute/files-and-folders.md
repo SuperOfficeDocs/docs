@@ -64,6 +64,10 @@ At the root of the repo, there is a folder named *docs*. In it, you can find gen
 
 Media files aren't split per-folder. They live in one centralized location at the repository root, */media/loc/en/\<topic>/*, shared across all languages (there's no per-language split). Reference an image with a root-absolute path, for example `/media/loc/en/diary/open-diary.png`, regardless of which language folder the page itself lives in.
 
+## Images folder
+
+`/images/` holds site-wide branding/config assets referenced directly by `docs.json` (currently `og-background.png`, the social-preview thumbnail background — see [SEO and social previews][4]). This is different from `/media/loc/en/<topic>/`, which holds per-topic content images, and from `/logo/`, which holds only the two required, fixed-filename logo files.
+
 ## Includes subfolder
 
 All major folders have an */includes* subfolder for reusable content in that section. See [Markdown reference][1] for how to use includes.
@@ -75,3 +79,4 @@ We use the [Blueprint extension][2] for Visual Studio Code. Available templates 
 [1]: ./markdown-guide/index
 [2]: ./markdown-guide/using-blueprint-templates
 [3]: https://mdxjs.com/docs/what-is-mdx/
+[4]: ./seo

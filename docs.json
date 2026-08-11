@@ -43,6 +43,9 @@
   "seo": {
     "metatags": {
       "canonical": "https://docs.superoffice.com"
+    },
+    "thumbnails": {
+      "background": "/images/og-background.png"
     }
   },
   "api": {
