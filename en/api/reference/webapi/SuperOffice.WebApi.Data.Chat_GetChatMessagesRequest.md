@@ -1,0 +1,54 @@
+# <a id="SuperOffice_WebApi_Data_Chat_GetChatMessagesRequest"></a> Class Chat\_GetChatMessagesRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class Chat_GetChatMessagesRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[Chat\_GetChatMessagesRequest](SuperOffice.WebApi.Data.Chat\_GetChatMessagesRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_Chat_GetChatMessagesRequest__ctor"></a> Chat\_GetChatMessagesRequest\(\)
+
+```csharp
+public Chat_GetChatMessagesRequest()
+```
+
+## Properties
+
+### <a id="SuperOffice_WebApi_Data_Chat_GetChatMessagesRequest_After"></a> After
+
+```csharp
+public int After { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="SuperOffice_WebApi_Data_Chat_GetChatMessagesRequest_ChatSessionId"></a> ChatSessionId
+
+```csharp
+public int ChatSessionId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+

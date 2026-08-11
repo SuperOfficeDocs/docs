@@ -1,0 +1,32 @@
+# <a id="SuperOffice_WebApi_Data_TimeZone_CheckNewTimeZoneDataAvailableRequest"></a> Class TimeZone\_CheckNewTimeZoneDataAvailableRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class TimeZone_CheckNewTimeZoneDataAvailableRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[TimeZone\_CheckNewTimeZoneDataAvailableRequest](SuperOffice.WebApi.Data.TimeZone\_CheckNewTimeZoneDataAvailableRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_TimeZone_CheckNewTimeZoneDataAvailableRequest__ctor"></a> TimeZone\_CheckNewTimeZoneDataAvailableRequest\(\)
+
+```csharp
+public TimeZone_CheckNewTimeZoneDataAvailableRequest()
+```
+

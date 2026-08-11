@@ -1,0 +1,44 @@
+# <a id="SuperOffice_WebApi_Data_Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest"></a> Class Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest](SuperOffice.WebApi.Data.Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest__ctor"></a> Selection\_CreateDefaultBoardViewSettingsFromEntityTypeRequest\(\)
+
+```csharp
+public Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest()
+```
+
+## Properties
+
+### <a id="SuperOffice_WebApi_Data_Selection_CreateDefaultBoardViewSettingsFromEntityTypeRequest_EntityType"></a> EntityType
+
+```csharp
+public BoardViewEntityType EntityType { get; set; }
+```
+
+#### Property Value
+
+ [BoardViewEntityType](SuperOffice.WebApi.Data.BoardViewEntityType.md)
+

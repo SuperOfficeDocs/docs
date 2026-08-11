@@ -1,0 +1,44 @@
+# <a id="SuperOffice_WebApi_Data_Contact_GetMyRecentContactsRequest"></a> Class Contact\_GetMyRecentContactsRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class Contact_GetMyRecentContactsRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[Contact\_GetMyRecentContactsRequest](SuperOffice.WebApi.Data.Contact\_GetMyRecentContactsRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_Contact_GetMyRecentContactsRequest__ctor"></a> Contact\_GetMyRecentContactsRequest\(\)
+
+```csharp
+public Contact_GetMyRecentContactsRequest()
+```
+
+## Properties
+
+### <a id="SuperOffice_WebApi_Data_Contact_GetMyRecentContactsRequest_SourceType"></a> SourceType
+
+```csharp
+public ContactSourceType SourceType { get; set; }
+```
+
+#### Property Value
+
+ [ContactSourceType](SuperOffice.WebApi.Data.ContactSourceType.md)
+
