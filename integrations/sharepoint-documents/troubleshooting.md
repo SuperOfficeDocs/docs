@@ -12,7 +12,7 @@ deployment: online
 platform: web
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/troubleshooting
-userflow-index: true
+userflow_index: true
 ---
 
 ## I get "Sorry, you don't have access" when I try to open a document from CRM

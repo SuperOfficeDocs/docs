@@ -13,7 +13,7 @@ category: privacy
 audience: settings
 audience_tooltip: Instellingen en onderhoud
 redirect_from: /nl/security/privacy/learn/admin/add-consent-purpose
-userflow-index: true
+userflow_index: true
 language: nl
 ---
 

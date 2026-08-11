@@ -11,7 +11,7 @@ tier: growth
 audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/customer-center/admin/index
-userflow-index: true
+userflow_index: true
 language: sv
 ---
 

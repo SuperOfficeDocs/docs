@@ -6,7 +6,7 @@ keywords: ['Active Directory', 'AD', 'identity']
 date: 05.08.2018
 version: 12
 content_type: concept
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

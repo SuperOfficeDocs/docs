@@ -6,7 +6,7 @@ author: Simen Mostuen Iversen
 date: 06.06.2019
 keywords: ['automation']
 content_type: howto
-userflow-index: true
+userflow_index: true
 ---
 
 We'll create the **Before saving company** trigger, by using a macro. You can also [create this trigger using script][1].

@@ -13,7 +13,7 @@ category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/security/privacy/learn/edit-privacy-confirmation-email
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

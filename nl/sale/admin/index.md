@@ -10,7 +10,7 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Instellingen en onderhoud
-userflow-index: true
+userflow_index: true
 language: nl
 ---
 

@@ -9,7 +9,7 @@ version: 12
 content_type: tutorial
 platform: web
 deployment: online
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

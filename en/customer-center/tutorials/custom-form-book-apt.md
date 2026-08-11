@@ -6,7 +6,7 @@ keywords: ['Customer Center', 'form']
 author: SuperOffice Product and Engineering
 date: 09.15.2011
 content_type: tutorial
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

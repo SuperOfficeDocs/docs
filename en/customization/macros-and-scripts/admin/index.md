@@ -16,7 +16,7 @@ redirect_from:
   - /en/automation/crmscript/learn/macro-script
   - /en/automation/crmscript/learn/screen/index
   - /en/automation/crmscript/learn/index
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

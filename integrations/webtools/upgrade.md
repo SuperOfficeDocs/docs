@@ -11,7 +11,7 @@ topic: WebTools
 deployment: onsite
 platform: web
 language: en
-userflow-index: true
+userflow_index: true
 redirect_from: /en/document/webtools/upgrade
 ---
 

@@ -6,7 +6,7 @@ keywords: ['Customer Center', 'chat']
 author: Michel Krohn-Dale
 date: 07.15.2026
 content_type: tutorial
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

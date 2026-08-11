@@ -12,7 +12,7 @@ category: automation
 topic: webhook
 audience: settings
 audience_tooltip: Settings and maintenance
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

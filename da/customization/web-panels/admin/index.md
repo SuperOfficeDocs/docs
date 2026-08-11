@@ -15,7 +15,7 @@ audience_tooltip: Settings and maintenance
 redirect_from:
   - /da/ui/web-panels/learn/index
   - /da/admin/lists/learn/web-panel
-userflow-index: true
+userflow_index: true
 language: da
 ---
 

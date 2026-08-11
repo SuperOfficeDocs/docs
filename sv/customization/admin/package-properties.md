@@ -15,7 +15,7 @@ redirect_from:
   - /sv/admin/learn/screen/package-properties
   - /sv/admin/learn/package-properties
   - /sv/customization/admin/index
-userflow-index: true
+userflow_index: true
 language: sv
 ---
 

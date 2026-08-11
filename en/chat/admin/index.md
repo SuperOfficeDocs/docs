@@ -14,7 +14,7 @@ topic: chat
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/chat/learn/admin/index
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

@@ -11,7 +11,7 @@ category: email
 topic: curl
 deployment: onsite
 redirect_from: /en/email/service/migrate
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

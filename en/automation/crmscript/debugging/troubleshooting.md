@@ -4,7 +4,7 @@ title: Basic troubleshooting
 author:
 date:
 content_type: concept
-userflow-index: true
+userflow_index: true
 ---
 
 ## When an error occurs

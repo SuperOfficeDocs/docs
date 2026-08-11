@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Rename the `index:` frontmatter property to `userflow-index:` repo-wide.
+"""Rename the `index:` frontmatter property to `userflow_index:` repo-wide.
 
 See issue #173: `index: true` is a hand-curated flag the Userflow team uses
 to pull extra pages (outside `*/learn/*` folders, e.g. `admin/` how-tos) into
 the per-language userhelp sitemap Userflow's Resource Center reads. The bare
 name `index` reads as related to Mintlify's own `noindex`/`seo.indexing`
-concepts, which it has nothing to do with -- renamed to `userflow-index` to
+concepts, which it has nothing to do with -- renamed to `userflow_index` to
 remove that ambiguity. Value is never touched, only the key (confirmed no
 `index: false` or other stray values exist at the time of writing).
 
@@ -71,7 +71,7 @@ def process_file(rel_path, apply_changes):
     if value.strip() != "true":
         return {"path": rel_path, "unexpected_value": value.strip()}
 
-    lines[idx] = "userflow-index:" + value
+    lines[idx] = "userflow_index:" + value
     if apply_changes:
         new_fm = "\n".join(lines)
         new_text = open_marker + new_fm + close_marker + rest
@@ -99,7 +99,7 @@ def main():
             renamed.append(result)
 
     mode = "Renamed" if args.apply else "Would rename"
-    print(f"{mode} {len(renamed)} file(s): index: true -> userflow-index: true")
+    print(f"{mode} {len(renamed)} file(s): index: true -> userflow_index: true")
     if unexpected:
         print(f"SKIPPED {len(unexpected)} file(s) with an unexpected index: value (not 'true'):")
         for r in unexpected:

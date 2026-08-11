@@ -12,7 +12,7 @@ category: Einstellungen und Verwaltung
 topic: licenses
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
-userflow-index: true
+userflow_index: true
 language: de
 ---
 

@@ -20,7 +20,7 @@ redirect_from:
   - /no/admin/preferences/learn/video-meetings/email-setup-in-superoffice
   - /nl/admin/preferences/learn/video-meetings/email-setup-in-superoffice
   - /de/admin/preferences/learn/video-meetings/email-setup-in-superoffice
-userflow-index: true
+userflow_index: true
 ---
 
 To be able to send and receive email invitations to video meetings (to/from attendees), you must have configured your email setup in SuperOffice CRM (user client) or use SuperOffice Mail Link.

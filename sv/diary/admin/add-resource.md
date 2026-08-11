@@ -13,7 +13,7 @@ audience_tooltip: Inställningar och underhåll
 redirect_from:
   - /sv/admin/lists/learn/resource
   - /sv/admin/lists/learn/adding-items-to-resource-list
-userflow-index: true
+userflow_index: true
 language: sv
 ---
 

@@ -8,7 +8,7 @@ date: 03.30.2012
 version: 12
 content_type: howto
 deployment: onsite
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

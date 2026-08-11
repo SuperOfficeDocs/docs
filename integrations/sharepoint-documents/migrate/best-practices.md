@@ -13,7 +13,7 @@ deployment: online
 platform: web
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/migrate/best-practices
-userflow-index: true
+userflow_index: true
 ---
 
 1. Preparations. Read the [requirements][1] carefully.

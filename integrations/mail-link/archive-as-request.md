@@ -18,7 +18,7 @@ redirect_from:
   - /nl/email/mail-link/learn/archive-as-request
   - /no/email/mail-link/learn/archive-as-request
   - /sv/email/mail-link/learn/archive-as-request
-userflow-index: true
+userflow_index: true
 ---
 
 Most likely you receive the majority of customer inquiries through your info@ and support@ email addresses. But sometimes customers send you a personal email with a question or a problem you need to deal with.

@@ -13,7 +13,7 @@ reproduces that page set for the Mintlify content tree.
 Selection logic per language <lang> (en, da, de, nl, no, sv):
   - Every page whose path starts with `<lang>/` and contains a `/learn/`
     segment anywhere after that.
-  - Every page anywhere in the repo with `userflow-index: true` frontmatter:
+  - Every page anywhere in the repo with `userflow_index: true` frontmatter:
       - if its path starts with a recognized language prefix, it belongs to
         that language only (a real per-language page, e.g. an `admin/`
         how-to)
@@ -38,16 +38,20 @@ attention.
 No dependency on a built site, Mintlify's own `sitemap.xml`, or any other
 build artifact -- this walks the checked-in source tree and nav config
 directly, so it is safe and correct to re-run any time a `learn/` or
-`userflow-index` page is added, moved, renamed, or deleted, independent of
+`userflow_index` page is added, moved, renamed, or deleted, independent of
 any scheduled regeneration.
 
 Output: `learn-<lang>.mdx` at the repo root, one per language, `hidden: true`
 (reachable by direct URL, excluded from the sidebar and from Mintlify's own
-`sitemap.xml`/search indexing -- see contribute/markdown-guide/metadata.mdx),
-body a flat markdown link list. The old DocFx-era `/learn-<lang>.html` URL
-Userflow's dashboard setting still points at is bridged via a `config/
-redirects.json` entry, not `redirect_from` frontmatter (which has no
-practical build-time effect on its own).
+`sitemap.xml`/search indexing -- see contribute/markdown-guide/metadata.mdx).
+Body is raw `<a href='URL'>URL</a><br />` lines, matching the legacy DocFx
+pipeline's own output format verbatim (confirmed against the live production
+`learn-en.html`) rather than a markdown list -- whatever reads this file may
+depend on that exact shape, not just on the links existing somewhere on the
+page. The old DocFx-era `/learn-<lang>.html` URL Userflow's dashboard
+setting still points at is bridged via a `config/redirects.json` entry, not
+`redirect_from` frontmatter (which has no practical build-time effect on its
+own).
 
 Usage:
     python tools/build-learn-sitemaps.py            # audit, no writes
@@ -66,7 +70,7 @@ CANONICAL_BASE = "https://docs.superoffice.com"
 LANGUAGES = ["en", "da", "de", "nl", "no", "sv"]
 
 FM_RE = re.compile(r"^(---\n)(.*?\n)(---\n?)(.*)$", re.DOTALL)
-USERFLOW_INDEX_RE = re.compile(r"^userflow-index:\s*true\s*$", re.MULTILINE)
+USERFLOW_INDEX_RE = re.compile(r"^userflow_index:\s*true\s*$", re.MULTILINE)
 
 
 def list_content_files():
@@ -201,7 +205,11 @@ def main():
             ]
             for rel_path in pages:
                 url = f"{CANONICAL_BASE}/{url_path_for(rel_path)}"
-                lines.append(f"* [{url}]({url})")
+                # The anchor text is a JSX expression (a quoted JS string), not literal
+                # MDX child text -- otherwise Mintlify's remark autolinker recognizes the
+                # bare URL in the text and wraps it in its own nested <a>, corrupting the
+                # markup (confirmed live: 720 links rendered as 1,440 nested anchors).
+                lines.append(f"<a href='{url}'>{{'{url}'}}</a><br />")
             out_path = REPO_ROOT / f"learn-{lang}.mdx"
             out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
             print(f"  wrote {out_path.relative_to(REPO_ROOT)}")

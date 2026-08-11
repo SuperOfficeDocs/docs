@@ -24,7 +24,7 @@ redirect_from:
   - /nl/email/mail-link/learn/settings/archive-by-default
   - /no/email/mail-link/learn/settings/archive-by-default
   - /sv/email/mail-link/learn/settings/archive-by-default
-userflow-index: true
+userflow_index: true
 ---
 
 When you click the **Archive email** button on the mail client toolbar, a menu with archiving options is displayed. This button also appears in the email window when you open an email you received.

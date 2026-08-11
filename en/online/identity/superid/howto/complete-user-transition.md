@@ -8,7 +8,7 @@ author: digitaldiina
 date: 12.18.2025
 version: 12
 content_type: howto
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

@@ -8,7 +8,7 @@ version: 12
 content_type: howto
 platform: web
 deployment: online
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

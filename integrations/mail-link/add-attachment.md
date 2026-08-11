@@ -18,7 +18,7 @@ redirect_from:
   - /nl/email/mail-link/learn/add-attachment
   - /no/email/mail-link/learn/add-attachment
   - /sv/email/mail-link/learn/add-attachment
-userflow-index: true
+userflow_index: true
 ---
 
 When [creating an email from Microsoft Outlook][1] you can add documents from SuperOffice CRM as attachments.

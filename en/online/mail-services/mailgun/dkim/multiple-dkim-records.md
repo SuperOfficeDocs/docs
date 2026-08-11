@@ -13,7 +13,7 @@ topic: mailgun
 platform: web
 deployment: online
 redirect_from: /en/email/mailgun/dkim/multiple-dkim-records
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

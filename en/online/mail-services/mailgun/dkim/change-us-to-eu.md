@@ -11,7 +11,7 @@ content_type: howto
 category: email
 topic: mailgun
 redirect_from: /en/email/mailgun/dkim/change-us-to-eu
-userflow-index: true
+userflow_index: true
 language: en
 ---
 

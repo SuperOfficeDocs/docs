@@ -18,7 +18,7 @@ redirect_from:
   - /nl/email/mail-link/learn/select-recipients
   - /no/email/mail-link/learn/select-recipients
   - /sv/email/mail-link/learn/select-recipients
-userflow-index: true
+userflow_index: true
 ---
 
 When [creating an email from Microsoft Outlook][1], you can add recipients using the **Select recipients** dialog.

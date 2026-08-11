@@ -14,7 +14,7 @@ category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/admin/lists/learn/privacy-source-add
-userflow-index: true
+userflow_index: true
 language: no
 ---
 

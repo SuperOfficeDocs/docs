@@ -10,7 +10,7 @@ content_type: howto
 audience: settings
 audience_tooltip: Settings and maintenance
 language: en
-userflow-index: true
+userflow_index: true
 redirect_from:
   - /en/automation/crmscript/learn/tracing
   - /da/automation/crmscript/learn/tracing

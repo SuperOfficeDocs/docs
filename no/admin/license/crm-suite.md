@@ -12,7 +12,7 @@ category: Innstillinger og vedlikehold
 topic: licenses
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-userflow-index: true
+userflow_index: true
 language: no
 ---
 

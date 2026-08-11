@@ -18,7 +18,7 @@ redirect_from:
   - /nl/email/mail-link/learn/index
   - /no/email/mail-link/learn/index
   - /sv/email/mail-link/learn/index
-userflow-index: true
+userflow_index: true
 ---
 
 SuperOffice Mail Link is a plug-in that links the Microsoft Outlook mail client with SuperOffice CRM and/or SuperOffice Service. This means that among other things, you can:

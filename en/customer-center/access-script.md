@@ -8,7 +8,7 @@ author: SuperOffice Product and Engineering
 date: 03.16.2023
 content_type: howto
 audience: settings
-userflow-index: true
+userflow_index: true
 language: en
 ---
 
