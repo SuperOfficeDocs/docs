@@ -1,28 +1,27 @@
 ---
-uid: table-extra_tables_result
 title: extra_tables_result table
 description: Result set of executed search in ejournal extra tables
 generated: true
-keywords: ['database table extra_tables_result']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ExtraTablesResult from "./includes/extra-tables-result.md";
+import ExtraTablesResult from "./includes/extra-tables-result.mdx";
 
-# extra\_tables\_result Table (308)
+## extra\_tables\_result Table (308)
 
 Result set of executed search in ejournal extra tables
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|login\_id|The id of the login session this result set belongs to.|FK [login](./login)| |
-|extra\_table|The id of the extra table.|FK [extra_tables](./extra-tables)| |
-|num\_entries|The number of results.|Int|&#x25CF;|
-|active\_page|The current active page.|Int|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|login\_id|The id of the login session this result set belongs to.|FK [login](./login.mdx)|No|
+|extra\_table|The id of the extra table.|FK [extra_tables](./extra-tables.mdx)|No|
+|num\_entries|The number of results.|Int|Yes|
+|active\_page|The current active page.|Int|Yes|
+
 
 ![extra_tables_result table relationship diagram](/media/loc/en/database/tables/extra_tables_result.png)
 
@@ -43,6 +42,7 @@ Result set of executed search in ejournal extra tables
 |[extra\_tables\_entry](./extra-tables-entry)  |Hits/entries in result set of executed search in ejournal extra tables |
 |[login](./login)  |This table contains entries for the user sessions.  |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ Result set of executed search in ejournal extra tables
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,37 +1,36 @@
 ---
-uid: table-StatusValue
 title: StatusValue table
 description: Values for statuses
 generated: true
-keywords: ['database table StatusValue']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Statusvalue from "./includes/statusvalue.md";
+import Statusvalue from "./includes/statusvalue.mdx";
 
-# StatusValue Table (199)
+## StatusValue Table (199)
 
 Values for statuses
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|StatusValue\_id|Primary key|PK| |
-|StatusDef\_id|Link to statusdefinition|FK [StatusDef](./statusdef)| |
-|contact\_id|Link to contact, 0 if this status is not for contacts|FK [contact](./contact)| |
-|person\_id|Link to person, 0 if this status is not for person (always 0 in 6.0)|FK [person](./person)| |
-|project\_id|Link to project, 0 if this status is not for project|FK [project](./project)| |
-|extra1\_id|Spare ID for future links|Id| |
-|extra2\_id|Spare ID for future links|Id| |
-|isSignalled|1 = this status is &apos;true&apos;, and the GUI should display it|Bool| |
-|needsUpdate|1 = the value is dirty and needs updating; set when the target (contact, project) is changed (or its activities and sales are changed)|Bool| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|StatusValue\_id|Primary key|PK|No|
+|StatusDef\_id|Link to statusdefinition|FK [StatusDef](./statusdef.mdx)|No|
+|contact\_id|Link to contact, 0 if this status is not for contacts|FK [contact](./contact.mdx)|No|
+|person\_id|Link to person, 0 if this status is not for person (always 0 in 6.0)|FK [person](./person.mdx)|No|
+|project\_id|Link to project, 0 if this status is not for project|FK [project](./project.mdx)|No|
+|extra1\_id|Spare ID for future links|Id|No|
+|extra2\_id|Spare ID for future links|Id|No|
+|isSignalled|1 = this status is &apos;true&apos;, and the GUI should display it|Bool|No|
+|needsUpdate|1 = the value is dirty and needs updating; set when the target (contact, project) is changed (or its activities and sales are changed)|Bool|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![StatusValue table relationship diagram](/media/loc/en/database/tables/StatusValue.png)
 
@@ -64,6 +63,7 @@ Values for statuses
 |[project](./project)  |Projects |
 |[StatusDef](./statusdef)  |Status definitions. Name and description are in LocaleText for internationalization |
 
+
 ## Replication Flags
 
 * None
@@ -71,3 +71,4 @@ Values for statuses
 ## Security Flags
 
 * No access control via user's Role.
+

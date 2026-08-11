@@ -1,29 +1,28 @@
 ---
-uid: table-s_list_element
 title: s_list_element table
 description: Elements in a static list.
 generated: true
-keywords: ['database table s_list_element']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SListElement from "./includes/s-list-element.md";
+import SListElement from "./includes/s-list-element.mdx";
 
-# s\_list\_element Table (345)
+## s\_list\_element Table (345)
 
 Elements in a static list.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|list\_id|Which list this element belongs to|FK [s_list](./s-list)| |
-|address|The email address of this element|String(255)| |
-|name|The name of the recipient|String(255)|&#x25CF;|
-|sms|The sms number for this element|String(255)| |
-|status|Status for the statical list element|Enum [ElementStatus](./enums/elementstatus)| |
+|id|Primary key|PK|No|
+|list\_id|Which list this element belongs to|FK [s_list](./s-list.mdx)|No|
+|address|The email address of this element|String(255)|No|
+|name|The name of the recipient|String(255)|Yes|
+|sms|The sms number for this element|String(255)|No|
+|status|Status for the statical list element|Enum [ElementStatus](./enums/elementstatus.mdx)|No|
+
 
 ![s_list_element table relationship diagram](/media/loc/en/database/tables/s_list_element.png)
 
@@ -43,6 +42,7 @@ Elements in a static list.
 |------|-------------|
 |[s\_list](./s-list)  |A list, dynamic or static |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ Elements in a static list.
 ## Security Flags
 
 * No access control via user's Role.
+

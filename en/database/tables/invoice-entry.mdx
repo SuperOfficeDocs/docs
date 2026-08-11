@@ -1,33 +1,32 @@
 ---
-uid: table-invoice_entry
 title: invoice_entry table
 description: This table contain all invoices, connected to a message
 generated: true
-keywords: ['database table invoice_entry']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import InvoiceEntry from "./includes/invoice-entry.md";
+import InvoiceEntry from "./includes/invoice-entry.mdx";
 
-# invoice\_entry Table (360)
+## invoice\_entry Table (360)
 
 This table contain all invoices, connected to a message
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|message\_id|The message.id this invoice entry is connected to.|FK [ej_message](./ej-message)| |
-|description|A description of the invoice entry|String(255)|&#x25CF;|
-|type|The type of this invoice entry|FK [invoice_type](./invoice-type)| |
-|quantity|Number of units|Double| |
-|price\_pr\_unit|Price per unit. This is copied from the invoice_type when created so that changes to the price in the future does not affect this one.|Int| |
-|discount|Discount for this invoice entry|Int| |
-|date\_invoiced|The date for the invoice entry|DateTime| |
-|discount\_money|Discount for this invoice entry in money|Int| |
-|ie\_sum|The sum of the invoice entry|Int| |
+|id|Primary key|PK|No|
+|message\_id|The message.id this invoice entry is connected to.|FK [ej_message](./ej-message.mdx)|No|
+|description|A description of the invoice entry|String(255)|Yes|
+|type|The type of this invoice entry|FK [invoice_type](./invoice-type.mdx)|No|
+|quantity|Number of units|Double|No|
+|price\_pr\_unit|Price per unit. This is copied from the invoice_type when created so that changes to the price in the future does not affect this one.|Int|No|
+|discount|Discount for this invoice entry|Int|No|
+|date\_invoiced|The date for the invoice entry|DateTime|No|
+|discount\_money|Discount for this invoice entry in money|Int|No|
+|ie\_sum|The sum of the invoice entry|Int|No|
+
 
 ![invoice_entry table relationship diagram](/media/loc/en/database/tables/invoice_entry.png)
 
@@ -48,6 +47,7 @@ This table contain all invoices, connected to a message
 |[ej\_message](./ej-message)  |This table contains the messages listed under tickets. |
 |[invoice\_type](./invoice-type)  |A invoiceable item category (a product or service) that provides default invoice line values |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ This table contain all invoices, connected to a message
 ## Security Flags
 
 * No access control via user's Role.
+

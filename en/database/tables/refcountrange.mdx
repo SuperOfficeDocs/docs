@@ -1,34 +1,33 @@
 ---
-uid: table-RefCountRange
 title: RefCountRange table
 description: Number allocation system, for keeping track of ranges of numbers loaned out to travel and satellite databases
 generated: true
-keywords: ['database table RefCountRange']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Refcountrange from "./includes/refcountrange.md";
+import Refcountrange from "./includes/refcountrange.mdx";
 
-# RefCountRange Table (172)
+## RefCountRange Table (172)
 
 Number allocation system, for keeping track of ranges of numbers loaned out to travel and satellite databases
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|RefCountRange\_id|Primary key|PK| |
-|rangeStart|Start of range that is in use|UInt| |
-|rangeSize|Size of in-use range|UInt| |
-|RefCounts\_id|ID of counter this range is reserved for|FK [RefCounts](./refcounts)| |
-|traveller\_id|ID of traveller (associate) who owns this range|UShort| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|highestInUse|The highest number (within the range) that is currently in use. This used to be the infamous preference!|UInt| |
+|RefCountRange\_id|Primary key|PK|No|
+|rangeStart|Start of range that is in use|UInt|No|
+|rangeSize|Size of in-use range|UInt|No|
+|RefCounts\_id|ID of counter this range is reserved for|FK [RefCounts](./refcounts.mdx)|No|
+|traveller\_id|ID of traveller (associate) who owns this range|UShort|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|highestInUse|The highest number (within the range) that is currently in use. This used to be the infamous preference!|UInt|No|
+
 
 ![RefCountRange table relationship diagram](/media/loc/en/database/tables/RefCountRange.png)
 
@@ -48,6 +47,7 @@ Number allocation system, for keeping track of ranges of numbers loaned out to t
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[RefCounts](./refcounts)  |Number counter for all tables that generate numbers, e.g. templates, contacts...   This table is used for the number allocation system and should not be confused with sequence, used for allocating internal ID&apos;s. This table is replicated during generation of satellites and during local update for travellers, using special logic. By default it contains rows for the SuperOffice standard counters, including one row for each DocTemplate record.  It is permissible to add new rows to this table, and such records are maintainable through the Maintenance client.  Changing the contents of the standard records is not recommended.  |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ Number allocation system, for keeping track of ranges of numbers loaned out to t
 ## Security Flags
 
 * No access control via user's Role.
+

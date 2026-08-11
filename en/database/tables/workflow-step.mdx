@@ -1,31 +1,30 @@
 ---
-uid: table-workflow_step
 title: workflow_step table
 description: A set of steps related to a workflow.
 generated: true
-keywords: ['database table workflow_step']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import WorkflowStep from "./includes/workflow-step.md";
+import WorkflowStep from "./includes/workflow-step.mdx";
 
-# workflow\_step Table (529)
+## workflow\_step Table (530)
 
 A set of steps related to a workflow.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|workflow\_step\_id|Primary key|PK| |
-|step\_type|Step type|Enum [WorkflowStepType](./enums/workflowsteptype)|&#x25CF;|
-|settings|Step settings/configuration/variables|Clob|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|workflow\_step\_id|Primary key|PK|No|
+|step\_type|Step type|Enum [WorkflowStepType](./enums/workflowsteptype.mdx)|Yes|
+|settings|Step settings/configuration/variables|Clob|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![workflow_step table relationship diagram](/media/loc/en/database/tables/workflow_step.png)
 
@@ -48,6 +47,7 @@ A set of steps related to a workflow.
 |[workflow\_step\_option\_link](./workflow-step-option-link)  |Link steps to other steps through step options |
 |[workflow\_wait\_for\_action](./workflow-wait-for-action)  |Some steps wait for actions, this is info about those actions |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ A set of steps related to a workflow.
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

@@ -1,33 +1,32 @@
 ---
-uid: table-udsalelarge
 title: udsalelarge table
 description: User-defined fields
 generated: true
-keywords: ['database table udsalelarge']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Udsalelarge from "./includes/udsalelarge.md";
+import Udsalelarge from "./includes/udsalelarge.mdx";
 
-# udsalelarge Table (159)
+## udsalelarge Table (159)
 
 User-defined fields
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|udsalelarge\_id|Primary key|PK| |
-|string41|string value 41, indexed|String(199)|&#x25CF;|
-|string42|string value 42,  indexed|String(199)|&#x25CF;|
-|string43|string value 43, indexed|String(199)|&#x25CF;|
-|string44|string value 44, indexed|String(199)|&#x25CF;|
-|string45|string value 45, not indexed|String(199)|&#x25CF;|
-|string46|string value 46, not indexed|String(199)|&#x25CF;|
-|string47|string value 47, not indexed|String(199)|&#x25CF;|
-|string48|string value 48, not indexed|String(199)|&#x25CF;|
-|string49|string value 49, not indexed|String(199)|&#x25CF;|
+|udsalelarge\_id|Primary key|PK|No|
+|string41|string value 41, indexed|String(199)|Yes|
+|string42|string value 42,  indexed|String(199)|Yes|
+|string43|string value 43, indexed|String(199)|Yes|
+|string44|string value 44, indexed|String(199)|Yes|
+|string45|string value 45, not indexed|String(199)|Yes|
+|string46|string value 46, not indexed|String(199)|Yes|
+|string47|string value 47, not indexed|String(199)|Yes|
+|string48|string value 48, not indexed|String(199)|Yes|
+|string49|string value 49, not indexed|String(199)|Yes|
+
 
 ![udsalelarge table relationship diagram](/media/loc/en/database/tables/udsalelarge.png)
 
@@ -49,6 +48,7 @@ User-defined fields
 |[sale](./sale)  |Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.   |
 |[SaleHist](./salehist)  |Mirror image of the Sale table, providing a full transaction history. Every time you edit a sale, the current record of the sale is also saved here.  |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -58,3 +58,4 @@ User-defined fields
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

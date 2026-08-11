@@ -1,33 +1,32 @@
 ---
-uid: table-metering_log
 title: metering_log table
 description: Metering log table
 generated: true
-keywords: ['database table metering_log']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import MeteringLog from "./includes/metering-log.md";
+import MeteringLog from "./includes/metering-log.mdx";
 
-# metering\_log Table (501)
+## metering\_log Table (501)
 
 Metering log table
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|metering\_log\_id|Primary key|PK| |
-|table\_id|Which table the event relates to|TableNumber|&#x25CF;|
-|record\_id|The record within that table|RecordId|&#x25CF;|
-|event\_type|Type of the metering event|Enum [MeteringEventType](./enums/meteringeventtype)| |
-|status|Status of the metering event|Enum [MeteringStatus](./enums/meteringstatus)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|metering\_log\_id|Primary key|PK|No|
+|table\_id|Which table the event relates to|TableNumber|Yes|
+|record\_id|The record within that table|RecordId|Yes|
+|event\_type|Type of the metering event|Enum [MeteringEventType](./enums/meteringeventtype.mdx)|No|
+|status|Status of the metering event|Enum [MeteringStatus](./enums/meteringstatus.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![metering_log table relationship diagram](/media/loc/en/database/tables/metering_log.png)
 
@@ -45,6 +44,7 @@ Metering log table
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ Metering log table
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,34 +1,33 @@
 ---
-uid: table-dashboard_tile
 title: dashboard_tile table
 description: Represents one tile in the dashboard
 generated: true
-keywords: ['database table dashboard_tile']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import DashboardTile from "./includes/dashboard-tile.md";
+import DashboardTile from "./includes/dashboard-tile.mdx";
 
-# dashboard\_tile Table (484)
+## dashboard\_tile Table (484)
 
 Represents one tile in the dashboard
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|dashboard\_tile\_id|Primary key|PK| |
-|width|Width used by this tile in the dashboard|Int|&#x25CF;|
-|height|Height used by this tile in the dashboard|Int|&#x25CF;|
-|dashboard\_id|The associated dashboard|FK [dashboard](./dashboard)|&#x25CF;|
-|dashboard\_tile\_definition\_id|The associated tile definition|FK [dashboard_tile_definition](./dashboard-tile-definition)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|rank|Rank order|UShort|&#x25CF;|
+|dashboard\_tile\_id|Primary key|PK|No|
+|width|Width used by this tile in the dashboard|Int|Yes|
+|height|Height used by this tile in the dashboard|Int|Yes|
+|dashboard\_id|The associated dashboard|FK [dashboard](./dashboard.mdx)|Yes|
+|dashboard\_tile\_definition\_id|The associated tile definition|FK [dashboard_tile_definition](./dashboard-tile-definition.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|rank|Rank order|UShort|Yes|
+
 
 ![dashboard_tile table relationship diagram](/media/loc/en/database/tables/dashboard_tile.png)
 
@@ -48,6 +47,7 @@ Represents one tile in the dashboard
 |[dashboard](./dashboard)  |Describes a dashboard |
 |[dashboard\_tile\_definition](./dashboard-tile-definition)  |Describes the contents of a tile |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ Represents one tile in the dashboard
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

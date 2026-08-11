@@ -1,32 +1,31 @@
 ---
-uid: table-ErpConfiguration
 title: ErpConfiguration table
 description: Global settings for the Erp Integration Server
 generated: true
-keywords: ['database table ErpConfiguration']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Erpconfiguration from "./includes/erpconfiguration.md";
+import Erpconfiguration from "./includes/erpconfiguration.mdx";
 
-# ErpConfiguration Table (449)
+## ErpConfiguration Table (449)
 
 Global settings for the Erp Integration Server
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|erpconfiguration\_id|Primary key|PK| |
-|ConnectionRank|Semicolon-separated primary keys of ErpConnection records, with &apos;0&apos; representing the SuperOffice &apos;connector&apos;, giving the replication order|String(254)|&#x25CF;|
-|SyncInterval|Interval between successive pollings for changes, in seconds|Int|&#x25CF;|
-|SyncRunning|Is the sync currently running or not; reflects state of [On] [Off] buttons in the Admin GUI|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|erpconfiguration\_id|Primary key|PK|No|
+|ConnectionRank|Semicolon-separated primary keys of ErpConnection records, with &apos;0&apos; representing the SuperOffice &apos;connector&apos;, giving the replication order|String(254)|Yes|
+|SyncInterval|Interval between successive pollings for changes, in seconds|Int|Yes|
+|SyncRunning|Is the sync currently running or not; reflects state of [On] [Off] buttons in the Admin GUI|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ErpConfiguration table relationship diagram](/media/loc/en/database/tables/ErpConfiguration.png)
 
@@ -43,6 +42,7 @@ Global settings for the Erp Integration Server
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ Global settings for the Erp Integration Server
 ## Security Flags
 
 * No access control via user's Role.
+

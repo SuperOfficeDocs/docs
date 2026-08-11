@@ -1,26 +1,25 @@
 ---
-uid: table-dbi_agent_field
 title: dbi_agent_field table
 description: DBI agent fields
 generated: true
-keywords: ['database table dbi_agent_field']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import DbiAgentField from "./includes/dbi-agent-field.md";
+import DbiAgentField from "./includes/dbi-agent-field.mdx";
 
-# dbi\_agent\_field Table (382)
+## dbi\_agent\_field Table (382)
 
 DBI agent fields
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|agent\_id|The agent owning this field|FK [dbi_agent](./dbi-agent)| |
-|field\_name|Field name|String(255)|&#x25CF;|
+|id|Primary key|PK|No|
+|agent\_id|The agent owning this field|FK [dbi_agent](./dbi-agent.mdx)|No|
+|field\_name|Field name|String(255)|Yes|
+
 
 ![dbi_agent_field table relationship diagram](/media/loc/en/database/tables/dbi_agent_field.png)
 
@@ -38,6 +37,7 @@ DBI agent fields
 |------|-------------|
 |[dbi\_agent](./dbi-agent)  |DBI agent settings |
 
+
 ## Replication Flags
 
 * None
@@ -45,3 +45,4 @@ DBI agent fields
 ## Security Flags
 
 * No access control via user's Role.
+

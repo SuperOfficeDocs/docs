@@ -1,35 +1,34 @@
 ---
-uid: table-doc_document
 title: doc_document table
 description: This table contains documents.
 generated: true
-keywords: ['database table doc_document']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import DocDocument from "./includes/doc-document.md";
+import DocDocument from "./includes/doc-document.mdx";
 
-# doc\_document Table (280)
+## doc\_document Table (280)
 
 This table contains documents.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|folder\_id|The id of the document folder this entry is located in.|FK [doc_folder](./doc-folder)| |
-|attachment\_id|The attachment.id for the attachment associated with this document.|FK [attachment](./attachment)| |
-|title|The title for the document|String(255)| |
-|created\_at|When the document was created|DateTime|&#x25CF;|
-|created\_by|Who created the document|FK [ejuser](./ejuser)| |
-|last\_changed|When the document last was changed|DateTime|&#x25CF;|
-|changed\_by|Who last changed the document|FK [ejuser](./ejuser)|&#x25CF;|
-|status|The status of the document|status|&#x25CF;|
-|access\_level|The access level of the document|access_level|&#x25CF;|
-|description|A descriptive text for the document|Clob|&#x25CF;|
-|id\_string|A field for an id_string which may be used to access the document|String(255)| |
+|id|The primary key (auto-incremented)|PK|No|
+|folder\_id|The id of the document folder this entry is located in.|FK [doc_folder](./doc-folder.mdx)|No|
+|attachment\_id|The attachment.id for the attachment associated with this document.|FK [attachment](./attachment.mdx)|No|
+|title|The title for the document|String(255)|No|
+|created\_at|When the document was created|DateTime|Yes|
+|created\_by|Who created the document|FK [ejuser](./ejuser.mdx)|No|
+|last\_changed|When the document last was changed|DateTime|Yes|
+|changed\_by|Who last changed the document|FK [ejuser](./ejuser.mdx)|Yes|
+|status|The status of the document|status|Yes|
+|access\_level|The access level of the document|access_level|Yes|
+|description|A descriptive text for the document|Clob|Yes|
+|id\_string|A field for an id_string which may be used to access the document|String(255)|No|
+
 
 ![doc_document table relationship diagram](/media/loc/en/database/tables/doc_document.png)
 
@@ -53,6 +52,7 @@ This table contains documents.
 |[doc\_folder](./doc-folder)  |A document folder. |
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
+
 ## Replication Flags
 
 * None
@@ -60,3 +60,4 @@ This table contains documents.
 ## Security Flags
 
 * No access control via user's Role.
+

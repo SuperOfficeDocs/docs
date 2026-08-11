@@ -1,35 +1,34 @@
 ---
-uid: table-DataRight
 title: DataRight table
 description: Data right definition
 generated: true
-keywords: ['database table DataRight']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Dataright from "./includes/dataright.md";
+import Dataright from "./includes/dataright.mdx";
 
-# DataRight Table (195)
+## DataRight Table (195)
 
 Data right definition
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|DataRight\_id|Primary key|PK| |
-|roleId|Role this dataright is valid for|FK [Role](./role)| |
-|tableId|ID of table this right is valid for|TableNumber| |
-|fieldId|ID of field this right is valid for. 0 = whole table. Must correspond to tableId!|FieldId| |
-|relationToOwner|How is the owner related to the target -  0 = Owner, 1 = Primary group, 2 = Other, 3 = Other group, 4 = External, 5 = Anonymous, 6 = My company, 7 = Same project, 8 = Other to external, 9 = Hide this relation (used with ShownOtherCompanyAssoc functional right)|Enum [RelationToOwner](./enums/relationtoowner)| |
-|CRUD|Allowed operations, composed of characters indicating operations.|String(39)| |
-|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|DataRight\_id|Primary key|PK|No|
+|roleId|Role this dataright is valid for|FK [Role](./role.mdx)|No|
+|tableId|ID of table this right is valid for|TableNumber|No|
+|fieldId|ID of field this right is valid for. 0 = whole table. Must correspond to tableId!|FieldId|No|
+|relationToOwner|How is the owner related to the target -  0 = Owner, 1 = Primary group, 2 = Other, 3 = Other group, 4 = External, 5 = Anonymous, 6 = My company, 7 = Same project, 8 = Other to external, 9 = Hide this relation (used with ShownOtherCompanyAssoc functional right)|Enum [RelationToOwner](./enums/relationtoowner.mdx)|No|
+|CRUD|Allowed operations, composed of characters indicating operations.|String(39)|No|
+|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![DataRight table relationship diagram](/media/loc/en/database/tables/DataRight.png)
 
@@ -49,6 +48,7 @@ Data right definition
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ Data right definition
 ## Security Flags
 
 * No access control via user's Role.
+

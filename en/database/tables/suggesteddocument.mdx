@@ -1,38 +1,37 @@
 ---
-uid: table-SuggestedDocument
 title: SuggestedDocument table
 description: Unique owner of a set of licensed modules
 generated: true
-keywords: ['database table SuggestedDocument']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Suggesteddocument from "./includes/suggesteddocument.md";
+import Suggesteddocument from "./includes/suggesteddocument.mdx";
 
-# SuggestedDocument Table (126)
+## SuggestedDocument Table (126)
 
 Unique owner of a set of licensed modules
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|SuggestedDocument\_id|Primary key|PK| |
-|name|Item name, visible in Guide|String(239)| |
-|rank|Rank, controls rank of non-instantiated items in Guide|UShort|&#x25CF;|
-|tooltip|Tooltip / description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|saleTypeStageLinkId|Link to saleTypeStageLink, the anchor for sale guide items. Either this OR projectAnchorId should be set, not both at the same time.|FK [SaleTypeStageLink](./saletypestagelink)|&#x25CF;|
-|projectTypeStatusLinkId|Link to projectTypeStatusLink, the anchor for project guide items. Either this OR saleAnchorId should be set, not both at the same time.|FK [ProjectTypeStatusLink](./projecttypestatuslink)|&#x25CF;|
-|doctmpl\_id|Type of the suggested document|FK [DocTmpl](./doctmpl)|&#x25CF;|
-|header|Suggested &apos;header&apos;|String(219)|&#x25CF;|
-|our\_ref|Suggested &apos;our reference&apos;|String(99)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|SuggestedDocument\_id|Primary key|PK|No|
+|name|Item name, visible in Guide|String(239)|No|
+|rank|Rank, controls rank of non-instantiated items in Guide|UShort|Yes|
+|tooltip|Tooltip / description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|saleTypeStageLinkId|Link to saleTypeStageLink, the anchor for sale guide items. Either this OR projectAnchorId should be set, not both at the same time.|FK [SaleTypeStageLink](./saletypestagelink.mdx)|Yes|
+|projectTypeStatusLinkId|Link to projectTypeStatusLink, the anchor for project guide items. Either this OR saleAnchorId should be set, not both at the same time.|FK [ProjectTypeStatusLink](./projecttypestatuslink.mdx)|Yes|
+|doctmpl\_id|Type of the suggested document|FK [DocTmpl](./doctmpl.mdx)|Yes|
+|header|Suggested &apos;header&apos;|String(219)|Yes|
+|our\_ref|Suggested &apos;our reference&apos;|String(99)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SuggestedDocument table relationship diagram](/media/loc/en/database/tables/SuggestedDocument.png)
 
@@ -56,6 +55,7 @@ Unique owner of a set of licensed modules
 |[ProjectTypeStatusLink](./projecttypestatuslink)  |Many-many link table between project type and status, similar to sale type-stage link; and an anchor point for guide items |
 |[SaleTypeStageLink](./saletypestagelink)  |Many-many link table between sale type and stage; and an anchor point for guide items |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -65,3 +65,4 @@ Unique owner of a set of licensed modules
 ## Security Flags
 
 * No access control via user's Role.
+

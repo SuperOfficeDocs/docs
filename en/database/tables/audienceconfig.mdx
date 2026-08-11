@@ -1,33 +1,32 @@
 ---
-uid: table-AudienceConfig
 title: AudienceConfig table
 description: Configuration data for Audience core and webparts
 generated: true
-keywords: ['database table AudienceConfig']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Audienceconfig from "./includes/audienceconfig.md";
+import Audienceconfig from "./includes/audienceconfig.mdx";
 
-# AudienceConfig Table (236)
+## AudienceConfig Table (236)
 
 Configuration data for Audience core and webparts
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|AudienceConfig\_id|Primary key|PK| |
-|audienceLayoutId|The name of the installed instance of Audience - must match the web.config file|FK [AudienceLayout](./audiencelayout)| |
-|configName|The name of the configuration parameter|String(239)| |
-|configValue|The value of the configuration parameter|String(239)| |
-|seqno|Sequence number, for chaining multiple records in case the value is too long|UShort| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|AudienceConfig\_id|Primary key|PK|No|
+|audienceLayoutId|The name of the installed instance of Audience - must match the web.config file|FK [AudienceLayout](./audiencelayout.mdx)|No|
+|configName|The name of the configuration parameter|String(239)|No|
+|configValue|The value of the configuration parameter|String(239)|No|
+|seqno|Sequence number, for chaining multiple records in case the value is too long|UShort|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![AudienceConfig table relationship diagram](/media/loc/en/database/tables/AudienceConfig.png)
 
@@ -46,6 +45,7 @@ Configuration data for Audience core and webparts
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[AudienceLayout](./audiencelayout)  |One layout (of webparts and other stuff) for an audience instance |
 
+
 ## Replication Flags
 
 * None
@@ -53,3 +53,4 @@ Configuration data for Audience core and webparts
 ## Security Flags
 
 * No access control via user's Role.
+

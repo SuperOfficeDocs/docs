@@ -1,32 +1,31 @@
 ---
-uid: table-ErpListItemMapping
 title: ErpListItemMapping table
 description: Defines a mapping of ERP to CRM fields, per connection and actor type
 generated: true
-keywords: ['database table ErpListItemMapping']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Erplistitemmapping from "./includes/erplistitemmapping.md";
+import Erplistitemmapping from "./includes/erplistitemmapping.mdx";
 
-# ErpListItemMapping Table (424)
+## ErpListItemMapping Table (424)
 
 Defines a mapping of ERP to CRM fields, per connection and actor type
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|erplistitemmapping\_id|Primary key|PK| |
-|ErpFieldId|Link to the Erp field (and implicitly to crm list and Erp Connection)|FK [ErpField](./erpfield)| |
-|ErpItemKey|The unique key in the ERP system for this list item|String(254)| |
-|CrmItemKey|The unique key in the CRM database for this list item (list/table is identified by the ListReference in ErpField)|Int|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|erplistitemmapping\_id|Primary key|PK|No|
+|ErpFieldId|Link to the Erp field (and implicitly to crm list and Erp Connection)|FK [ErpField](./erpfield.mdx)|No|
+|ErpItemKey|The unique key in the ERP system for this list item|String(254)|No|
+|CrmItemKey|The unique key in the CRM database for this list item (list/table is identified by the ListReference in ErpField)|Int|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ErpListItemMapping table relationship diagram](/media/loc/en/database/tables/ErpListItemMapping.png)
 
@@ -45,6 +44,7 @@ Defines a mapping of ERP to CRM fields, per connection and actor type
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[ErpField](./erpfield)  |Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ Defines a mapping of ERP to CRM fields, per connection and actor type
 ## Security Flags
 
 * No access control via user's Role.
+

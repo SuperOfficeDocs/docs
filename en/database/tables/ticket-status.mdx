@@ -1,30 +1,29 @@
 ---
-uid: table-ticket_status
 title: ticket_status table
 description: This table user defined ticket status values.
 generated: true
-keywords: ['database table ticket_status']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TicketStatus from "./includes/ticket-status.md";
+import TicketStatus from "./includes/ticket-status.mdx";
 
-# ticket\_status Table (263)
+## ticket\_status Table (263)
 
 This table user defined ticket status values.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|status|The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted|Enum [TicketBaseStatus](./enums/ticketbasestatus)| |
-|ts\_rank|Sort order|Int| |
-|name|Name of user defined ticket status|String(255)| |
-|time\_counter|Which field in ticket we count time spent on (queue, internal, external) |Enum [TicketStatusTimeCounter](./enums/ticketstatustimecounter)|&#x25CF;|
-|deleted|Whether the status is deleted (unavailable) or not|Bool|&#x25CF;|
-|no\_email\_reopen|Whether inbound emails can reopen requests with this status or not|Bool|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|status|The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted|Enum [TicketBaseStatus](./enums/ticketbasestatus.mdx)|No|
+|ts\_rank|Sort order|Int|No|
+|name|Name of user defined ticket status|String(255)|No|
+|time\_counter|Which field in ticket we count time spent on (queue, internal, external) |Enum [TicketStatusTimeCounter](./enums/ticketstatustimecounter.mdx)|Yes|
+|deleted|Whether the status is deleted (unavailable) or not|Bool|Yes|
+|no\_email\_reopen|Whether inbound emails can reopen requests with this status or not|Bool|Yes|
+
 
 ![ticket_status table relationship diagram](/media/loc/en/database/tables/ticket_status.png)
 
@@ -47,6 +46,7 @@ This table user defined ticket status values.
 |[ticket\_type](./ticket-type)  |A ticket (request) type |
 |[ticket\_type\_status](./ticket-type-status)  |Link table defining what Statuses are relevant to a particular Ticket type |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ This table user defined ticket status values.
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,87 +1,86 @@
 ---
-uid: table-ticket
 title: ticket table
 description: This table contains the tickets (requests) of the system. Its purpose should be evident.
 generated: true
-keywords: ['database table ticket']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Ticket from "./includes/ticket.md";
+import Ticket from "./includes/ticket.mdx";
 
-# ticket Table (262)
+## ticket Table (262)
 
 This table contains the tickets (requests) of the system. Its purpose should be evident.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|connect\_id|If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.|FK [ticket](./ticket)| |
-|title|The title of the ticket.|String(255)| |
-|created\_at|When the ticket was created.|DateTime| |
-|last\_changed|The last time the ticket was modified.|DateTime|&#x25CF;|
-|activate|When the ticket should be activated, if it is postponed.|DateTime|&#x25CF;|
-|closed\_at|When the ticket was closed.|DateTime|&#x25CF;|
-|created\_by|The id of the user who created the ticket. 1 (system user) if the ticket was created externally|FK [ejuser](./ejuser)| |
-|author|A string representing the author of the ticket (same as author of first message).|String(255)|&#x25CF;|
-|owned\_by|The id of the user who owns the ticket. 1 (system user) if the ticket is unassigned.|FK [ejuser](./ejuser)| |
-|category|The id of the category a ticket is in.|FK [ej_category](./ej-category)| |
-|orig\_category|The id of the category the ticket was posted to.|FK [ej_category](./ej-category)|&#x25CF;|
-|slevel|The securitylevel of the ticket.|Enum [TicketSecurityLevel](./enums/ticketsecuritylevel)|&#x25CF;|
-|status|The status of the ticket. I.e. active/closed/postponed/deleted|Enum [TicketBaseStatus](./enums/ticketbasestatus)| |
-|ticket\_status|User defined ticket status|FK [ticket_status](./ticket-status)| |
-|cust\_id|The reference to the customer. NULL or -1 if ticket is not connected to customer.|FK [person](./person)| |
-|priority|The reference to the ticket_priority table.|FK [ticket_priority](./ticket-priority)| |
-|orig\_priority|The reference to the initial priority for the ticket.|FK [ticket_priority](./ticket-priority)|&#x25CF;|
-|alert\_level|The alert level for the ticket. Matches the level value of the ticket_alert table.|Short|&#x25CF;|
-|alert\_timeout|The datetime for when the ticket should jump to the next alert_level.|DateTime|&#x25CF;|
-|alert\_stop|If the esclatation was stopped, this fields indicates how many seconds left before the next escalation level. -1 if escalation is running.|Int| |
-|read\_by\_owner|The datetime for when the ticket last was read by the owner.|DateTime|&#x25CF;|
-|first\_read\_by\_owner|The datetime for when the ticket first was read by the current owner.|DateTime|&#x25CF;|
-|first\_read\_by\_user|The datetime for when the ticket first was read by a user.|DateTime|&#x25CF;|
-|read\_by\_customer|The datetime for when the ticket was read by the customer.|DateTime|&#x25CF;|
-|filter\_id|The reference to the mailbox from which the ticket was created. NULL or -1 if the ticket was not created by a mailbox.|FK [mail_in_filter](./mail-in-filter)| |
-|display\_filter|The name of the mailbox from which the ticket was created. Only for displaypurposes|String(255)|&#x25CF;|
-|replied\_at|The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.|DateTime|&#x25CF;|
-|time\_to\_reply|The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.|Int|&#x25CF;|
-|time\_to\_close|The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.|Int|&#x25CF;|
-|real\_time\_to\_reply|Same as time_to_reply, but not calculated based on priority.|Int|&#x25CF;|
-|real\_time\_to\_close|Same as time_to_close, but not calculated based on priority.|Int|&#x25CF;|
-|read\_status|Whether the owner has read the ticket or not (red, yellow, green).|Enum [TicketReadStatus](./enums/ticketreadstatus)| |
-|has\_attachment|Boolean indicating if this ticket has one or more attachments.|Bool|&#x25CF;|
-|deadline|Deadline for ticket.|DateTime|&#x25CF;|
-|filter\_address|Address of receiving filter (mail box)|String(255)|&#x25CF;|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)| |
-|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)| |
-|dbi\_last\_syncronized|Last external synchronization.|DateTime| |
-|dbi\_last\_modified|When the entry was last modified.|DateTime| |
-|origin|What is the origin of this ticket|Enum [TicketOrigin](./enums/ticketorigin)|&#x25CF;|
-|time\_spent\_internally|The total time (seconds) within the priority&apos;s office hours the ticket has been in an open status (configurable), not including current state|Int|&#x25CF;|
-|time\_spent\_externally|The total time (seconds) within the priority&apos;s office hours the ticket has been in a external waiting status (configurable), not including current state|Int|&#x25CF;|
-|time\_spent\_queue|The total time (seconds) within the priority&apos;s office hours the ticket has been in a queue status, not including current state|Int|&#x25CF;|
-|real\_time\_spent\_internally|The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state|Int|&#x25CF;|
-|real\_time\_spent\_externally|The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state|Int|&#x25CF;|
-|real\_time\_spent\_queue|The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state|Int|&#x25CF;|
-|time\_spent\_calculated|When the time_spent value was last calculated.|DateTime|&#x25CF;|
-|num\_replies|The number of replies (messages) to the customer for this request.|Int|&#x25CF;|
-|num\_messages|The total number of messages for this request.|Int|&#x25CF;|
-|from\_address|The from-address used when this ticket got created, e.g. by email|String(4000)|&#x25CF;|
-|tags|Array of references to the Tags records|FKArray|&#x25CF;|
-|contact\_id|The company of the person in the cust_id field, if that person belongs to a company|FK [contact](./contact)|&#x25CF;|
-|language|The language of the first external message|String(10)|&#x25CF;|
-|sentiment|The sentiment index of the last external message|Int|&#x25CF;|
-|sentimentConfidence|The sentiment confidence of the last external message|Int|&#x25CF;|
-|form\_submission\_id|If this ticket was created from a form submission, this field will point to that record|FK [form_submission](./form-submission)|&#x25CF;|
-|created\_by\_workflow\_id|The workflow this request/ticket was created by|FK [workflow](./workflow)|&#x25CF;|
-|suggestedCategory\_id|Suggestion for categorization, based on the text of the message (AI)|FK [ej_category](./ej-category)| |
-|origHumanCategory\_id|Will contain the category id selected by the user, when having the choice of using the suggested category or manually selecting a category|FK [ej_category](./ej-category)| |
-|sale\_id|Reference to sale table|FK [sale](./sale)|&#x25CF;|
-|project\_id|Reference to project table|FK [project](./project)|&#x25CF;|
-|time\_spent|The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.|Int| |
-|ticket\_type|Tickettype of the ticket|FK [ticket_type](./ticket-type)| |
+|id|The primary key (auto-incremented)|PK|No|
+|connect\_id|If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.|FK [ticket](./ticket.mdx)|No|
+|title|The title of the ticket.|String(255)|No|
+|created\_at|When the ticket was created.|DateTime|No|
+|last\_changed|The last time the ticket was modified.|DateTime|Yes|
+|activate|When the ticket should be activated, if it is postponed.|DateTime|Yes|
+|closed\_at|When the ticket was closed.|DateTime|Yes|
+|created\_by|The id of the user who created the ticket. 1 (system user) if the ticket was created externally|FK [ejuser](./ejuser.mdx)|No|
+|author|A string representing the author of the ticket (same as author of first message).|String(255)|Yes|
+|owned\_by|The id of the user who owns the ticket. 1 (system user) if the ticket is unassigned.|FK [ejuser](./ejuser.mdx)|No|
+|category|The id of the category a ticket is in.|FK [ej_category](./ej-category.mdx)|No|
+|orig\_category|The id of the category the ticket was posted to.|FK [ej_category](./ej-category.mdx)|Yes|
+|slevel|The securitylevel of the ticket.|Enum [TicketSecurityLevel](./enums/ticketsecuritylevel.mdx)|Yes|
+|status|The status of the ticket. I.e. active/closed/postponed/deleted|Enum [TicketBaseStatus](./enums/ticketbasestatus.mdx)|No|
+|ticket\_status|User defined ticket status|FK [ticket_status](./ticket-status.mdx)|No|
+|cust\_id|The reference to the customer. NULL or -1 if ticket is not connected to customer.|FK [person](./person.mdx)|No|
+|priority|The reference to the ticket_priority table.|FK [ticket_priority](./ticket-priority.mdx)|No|
+|orig\_priority|The reference to the initial priority for the ticket.|FK [ticket_priority](./ticket-priority.mdx)|Yes|
+|alert\_level|The alert level for the ticket. Matches the level value of the ticket_alert table.|Short|Yes|
+|alert\_timeout|The datetime for when the ticket should jump to the next alert_level.|DateTime|Yes|
+|alert\_stop|If the esclatation was stopped, this fields indicates how many seconds left before the next escalation level. -1 if escalation is running.|Int|No|
+|read\_by\_owner|The datetime for when the ticket last was read by the owner.|DateTime|Yes|
+|first\_read\_by\_owner|The datetime for when the ticket first was read by the current owner.|DateTime|Yes|
+|first\_read\_by\_user|The datetime for when the ticket first was read by a user.|DateTime|Yes|
+|read\_by\_customer|The datetime for when the ticket was read by the customer.|DateTime|Yes|
+|filter\_id|The reference to the mailbox from which the ticket was created. NULL or -1 if the ticket was not created by a mailbox.|FK [mail_in_filter](./mail-in-filter.mdx)|No|
+|display\_filter|The name of the mailbox from which the ticket was created. Only for displaypurposes|String(255)|Yes|
+|replied\_at|The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.|DateTime|Yes|
+|time\_to\_reply|The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.|Int|Yes|
+|time\_to\_close|The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.|Int|Yes|
+|real\_time\_to\_reply|Same as time_to_reply, but not calculated based on priority.|Int|Yes|
+|real\_time\_to\_close|Same as time_to_close, but not calculated based on priority.|Int|Yes|
+|read\_status|Whether the owner has read the ticket or not (red, yellow, green).|Enum [TicketReadStatus](./enums/ticketreadstatus.mdx)|No|
+|has\_attachment|Boolean indicating if this ticket has one or more attachments.|Bool|Yes|
+|deadline|Deadline for ticket.|DateTime|Yes|
+|filter\_address|Address of receiving filter (mail box)|String(255)|Yes|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
+|dbi\_last\_syncronized|Last external synchronization.|DateTime|No|
+|dbi\_last\_modified|When the entry was last modified.|DateTime|No|
+|origin|What is the origin of this ticket|Enum [TicketOrigin](./enums/ticketorigin.mdx)|Yes|
+|time\_spent\_internally|The total time (seconds) within the priority&apos;s office hours the ticket has been in an open status (configurable), not including current state|Int|Yes|
+|time\_spent\_externally|The total time (seconds) within the priority&apos;s office hours the ticket has been in a external waiting status (configurable), not including current state|Int|Yes|
+|time\_spent\_queue|The total time (seconds) within the priority&apos;s office hours the ticket has been in a queue status, not including current state|Int|Yes|
+|real\_time\_spent\_internally|The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state|Int|Yes|
+|real\_time\_spent\_externally|The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state|Int|Yes|
+|real\_time\_spent\_queue|The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state|Int|Yes|
+|time\_spent\_calculated|When the time_spent value was last calculated.|DateTime|Yes|
+|num\_replies|The number of replies (messages) to the customer for this request.|Int|Yes|
+|num\_messages|The total number of messages for this request.|Int|Yes|
+|from\_address|The from-address used when this ticket got created, e.g. by email|String(4000)|Yes|
+|tags|Array of references to the Tags records|FKArray|Yes|
+|contact\_id|The company of the person in the cust_id field, if that person belongs to a company|FK [contact](./contact.mdx)|Yes|
+|language|The language of the first external message|String(10)|Yes|
+|sentiment|The sentiment index of the last external message|Int|Yes|
+|sentimentConfidence|The sentiment confidence of the last external message|Int|Yes|
+|form\_submission\_id|If this ticket was created from a form submission, this field will point to that record|FK [form_submission](./form-submission.mdx)|Yes|
+|created\_by\_workflow\_id|The workflow this request/ticket was created by|FK [workflow](./workflow.mdx)|Yes|
+|suggestedCategory\_id|Suggestion for categorization, based on the text of the message (AI)|FK [ej_category](./ej-category.mdx)|No|
+|origHumanCategory\_id|Will contain the category id selected by the user, when having the choice of using the suggested category or manually selecting a category|FK [ej_category](./ej-category.mdx)|No|
+|sale\_id|Reference to sale table|FK [sale](./sale.mdx)|Yes|
+|project\_id|Reference to project table|FK [project](./project.mdx)|Yes|
+|time\_spent|The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.|Int|No|
+|ticket\_type|Tickettype of the ticket|FK [ticket_type](./ticket-type.mdx)|No|
+
 
 ![ticket table relationship diagram](/media/loc/en/database/tables/ticket.png)
 
@@ -145,6 +144,7 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 |[ticket\_type](./ticket-type)  |A ticket (request) type |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
+
 ## Replication Flags
 
 * None
@@ -152,3 +152,4 @@ This table contains the tickets (requests) of the system. Its purpose should be 
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

@@ -1,35 +1,34 @@
 ---
-uid: table-BinaryObjectLink
 title: BinaryObjectLink table
 description: Link table, connects a BinaryObject with one or more owners
 generated: true
-keywords: ['database table BinaryObjectLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Binaryobjectlink from "./includes/binaryobjectlink.md";
+import Binaryobjectlink from "./includes/binaryobjectlink.mdx";
 
-# BinaryObjectLink Table (206)
+## BinaryObjectLink Table (206)
 
 Link table, connects a BinaryObject with one or more owners
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|BinaryObjectLink\_id|Primary key|PK| |
-|binaryObjectId|The binary object we link to|FK [BinaryObject](./binaryobject)| |
-|ownerTable|The owner table|TableNumber| |
-|ownerRecord|The owner record|RecordId| |
-|linkComment|Link comment, optional|String(254)|&#x25CF;|
-|linkType|The link type|Enum [BlobLinkType](./enums/bloblinktype)| |
-|rank|Link rank, in case there are more of one type to one owner|UShort| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|BinaryObjectLink\_id|Primary key|PK|No|
+|binaryObjectId|The binary object we link to|FK [BinaryObject](./binaryobject.mdx)|No|
+|ownerTable|The owner table|TableNumber|No|
+|ownerRecord|The owner record|RecordId|No|
+|linkComment|Link comment, optional|String(254)|Yes|
+|linkType|The link type|Enum [BlobLinkType](./enums/bloblinktype.mdx)|No|
+|rank|Link rank, in case there are more of one type to one owner|UShort|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![BinaryObjectLink table relationship diagram](/media/loc/en/database/tables/BinaryObjectLink.png)
 
@@ -48,6 +47,7 @@ Link table, connects a BinaryObject with one or more owners
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[BinaryObject](./binaryobject)  |Binary objects, i.e., blobs. Used for images, documents, SuperOffice inbox mail  and other large binary items |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -57,3 +57,4 @@ Link table, connects a BinaryObject with one or more owners
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,28 +1,27 @@
 ---
-uid: table-category_membership
 title: category_membership table
 description: This table connects users to categories (many-to-many).
 generated: true
-keywords: ['database table category_membership']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import CategoryMembership from "./includes/category-membership.md";
+import CategoryMembership from "./includes/category-membership.mdx";
 
-# category\_membership Table (270)
+## category\_membership Table (270)
 
 This table connects users to categories (many-to-many).
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|category\_id|The reference to the category.|FK [ej_category](./ej-category)| |
-|user\_id|The reference to the ej user.|FK [ejuser](./ejuser)| |
-|weight|The proportion used for weighted delegation within category if weighted assignment is active. 0 = no automatic assignment.|Short|&#x25CF;|
-|is\_defined\_by\_usergroup|Specifies if membership was defined by usergroup via ejCategoryGroup|Bool| |
+|id|The primary key (auto-incremented)|PK|No|
+|category\_id|The reference to the category.|FK [ej_category](./ej-category.mdx)|No|
+|user\_id|The reference to the ej user.|FK [ejuser](./ejuser.mdx)|No|
+|weight|The proportion used for weighted delegation within category if weighted assignment is active. 0 = no automatic assignment.|Short|Yes|
+|is\_defined\_by\_usergroup|Specifies if membership was defined by usergroup via ejCategoryGroup|Bool|No|
+
 
 ![category_membership table relationship diagram](/media/loc/en/database/tables/category_membership.png)
 
@@ -42,6 +41,7 @@ This table connects users to categories (many-to-many).
 |[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ This table connects users to categories (many-to-many).
 ## Security Flags
 
 * No access control via user's Role.
+

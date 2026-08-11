@@ -1,31 +1,30 @@
 ---
-uid: table-PriceUnitHeadingLink
 title: PriceUnitHeadingLink table
 description: Heading link table for PriceUnit, for MDO item headings
 generated: true
-keywords: ['database table PriceUnitHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Priceunitheadinglink from "./includes/priceunitheadinglink.md";
+import Priceunitheadinglink from "./includes/priceunitheadinglink.mdx";
 
-# PriceUnitHeadingLink Table (441)
+## PriceUnitHeadingLink Table (441)
 
 Heading link table for PriceUnit, for MDO item headings
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|priceunitheadinglink\_id|Primary key|PK| |
-|priceunit\_id|Link to PriceUnit list table|FK [PriceUnit](./priceunit)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|priceunitheadinglink\_id|Primary key|PK|No|
+|priceunit\_id|Link to PriceUnit list table|FK [PriceUnit](./priceunit.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![PriceUnitHeadingLink table relationship diagram](/media/loc/en/database/tables/PriceUnitHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for PriceUnit, for MDO item headings
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 |[PriceUnit](./priceunit)  |The list of price units, in the internal product register (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever) |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for PriceUnit, for MDO item headings
 ## Security Flags
 
 * No access control via user's Role.
+
