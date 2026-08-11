@@ -16,7 +16,7 @@ audience_tooltip: Settings and maintenance
 redirect_from:
   - /en/ui/screen-designer/element-reference
   - /en/customization/screen-designer/reference
-index: true
+userflow-index: true
 language: en
 ---
 

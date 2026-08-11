@@ -16,7 +16,7 @@ redirect_from:
   - /en/ui/web-panels/learn/index
   - /en/ui/web-panels/index
   - /en/admin/lists/learn/web-panel
-index: true
+userflow-index: true
 language: en
 ---
 

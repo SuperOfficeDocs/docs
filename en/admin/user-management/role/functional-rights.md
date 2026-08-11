@@ -15,7 +15,7 @@ audience_tooltip: Settings and maintenance
 redirect_from:
   - /en/admin/user-preferences/reference/cripple
   - /en/admin/user-management/learn/role/functional-rights
-index: true
+userflow-index: true
 language: en
 ---
 

@@ -10,7 +10,7 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
-index: true
+userflow-index: true
 language: no
 ---
 

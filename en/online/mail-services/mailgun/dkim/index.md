@@ -9,7 +9,7 @@ version: 12
 category: email
 topic: mailgun
 redirect_from: /en/email/mailgun/dkim/index
-index: true
+userflow-index: true
 language: en
 ---
 

@@ -13,7 +13,7 @@ tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/quote/learn/admin/product/configure
-index: true
+userflow-index: true
 language: sv
 ---
 

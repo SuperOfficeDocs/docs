@@ -10,7 +10,7 @@ content_type: concept
 category: email
 topic: mailgun
 redirect_from: /en/email/mailgun/amount-speed
-index: true
+userflow-index: true
 language: en
 ---
 

@@ -6,7 +6,7 @@ author: Bergfrid Dias
 date: 02.02.2022
 keywords: ['CRMScript']
 content_type: concept
-index: true
+userflow-index: true
 ---
 
 CRMScript is a lightweight, interpreted programming language with curly-bracket syntax. It is statically typed and supports object-oriented and imperative styles.

@@ -14,7 +14,7 @@ redirect_from:
  - /en/mobile/superoffice-mobile/index
  - /en/mobile/overview
 language: en
-index: true
+userflow-index: true
 ---
 
 SuperOffice Mobile CRM has been redesigned to give you faster access, better navigation, and a cleaner interface-while still offering all the powerful tools you need to work from anywhere.

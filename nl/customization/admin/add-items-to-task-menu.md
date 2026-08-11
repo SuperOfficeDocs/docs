@@ -12,7 +12,7 @@ category: customization
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/admin/lists/learn/add-items-to-task-menu
-index: true
+userflow-index: true
 language: nl
 ---
 

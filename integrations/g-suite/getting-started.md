@@ -12,7 +12,7 @@ deployment: online
 platform: web
 redirect_from: /en/document/cloud/g-suite/getting-started
 language: en
-index: true
+userflow-index: true
 ---
 
 This guide explains in short terms how you can get Google Workspace document integration up and running in no-time, in a step-by-step walk-through. It is an alternative to the [full set-up guide][5].

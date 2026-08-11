@@ -11,7 +11,7 @@ tier: growth
 audience: settings
 audience_tooltip: Instellingen en onderhoud
 redirect_from: /nl/customer-center/admin/index
-index: true
+userflow-index: true
 language: nl
 ---
 

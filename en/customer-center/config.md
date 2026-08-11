@@ -7,7 +7,7 @@ author: SuperOffice Product and Engineering
 date: 03.16.2023
 content_type: reference
 audience: settings
-index: true
+userflow-index: true
 language: en
 ---
 

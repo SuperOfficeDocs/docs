@@ -6,7 +6,7 @@ author: digitaldiina
 date: 07.31.2026
 version: 12
 content_type: howto
-index: true
+userflow-index: true
 language: en
 ---
 

@@ -7,7 +7,7 @@ author: Simen Mostuen Iversen
 date: 06.06.2019
 keywords: ['automation', 'validate', 'contact']
 content_type: howto
-index: true
+userflow-index: true
 ---
 
 In this example, I will only write a script as a macro is falling a bit short when you need more specific validation.

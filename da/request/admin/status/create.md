@@ -12,7 +12,7 @@ tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/request/learn/status/create
-index: true
+userflow-index: true
 language: da
 ---
 

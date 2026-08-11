@@ -12,7 +12,7 @@ deployment: online
 platform: web
 language: en
 redirect_from: /en/diary/video-meetings/howto/join
-index: true
+userflow-index: true
 ---
 
 There are several ways you can join a video meeting in SuperOffice:

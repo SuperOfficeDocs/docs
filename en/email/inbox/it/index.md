@@ -7,7 +7,7 @@ author: Bergfrid Dias
 date: 03.21.2024
 content_type: concept
 redirect_from: /en/email/inbox/index
-index: true
+userflow-index: true
 language: en
 ---
 

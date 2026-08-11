@@ -14,7 +14,7 @@ category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/security/privacy/learn/edit-privacy-confirmation-email
-index: true
+userflow-index: true
 language: da
 ---
 

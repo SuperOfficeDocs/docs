@@ -15,7 +15,7 @@ redirect_from:
   - /nl/admin/learn/screen/package-properties
   - /nl/admin/learn/package-properties
   - /nl/customization/admin/index
-index: true
+userflow-index: true
 language: nl
 ---
 

@@ -11,7 +11,7 @@ deployment: online
 platform: web
 language: en
 redirect_from: /en/diary/video-meetings/troubleshooting
-index: true
+userflow-index: true
 ---
 
 ## Something went wrong reserving your video meeting. Please try again later

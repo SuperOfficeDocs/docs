@@ -6,7 +6,7 @@ keywords: ['CRMScript', 'Customer Center', 'form']
 author: kronicz
 date: 09.15.2011
 content_type: tutorial
-index: true
+userflow-index: true
 language: en
 ---
 

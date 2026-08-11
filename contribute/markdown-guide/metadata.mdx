@@ -64,7 +64,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 18 | `audience_tooltip` | If present | Audience tooltip |
 | 19 | `redirect_from` | If present | Old URL(s) that should redirect here |
 | 20 | `hidden` | If present | `true` to remove the page from sidebar navigation (still reachable by URL, not search-indexed). Used when consolidating several pages into one — pair with `redirect_from` and a `docs.json` redirect. Never set to `false`. |
-| 21 | `index` | If present | `true` if the page is outside a *learn* folder and should be indexed |
+| 21 | `userflow-index` | If present | `true` if the page is outside a *learn* folder and should be included in the per-language userhelp sitemap Userflow's in-app Resource Center reads (see [SEO and social previews][3]) |
 | 22 | `language` | Always | Language code — always last |
 
 <Note>
@@ -98,3 +98,4 @@ Before any updates get merged in the repo, the reviewers will check this section
 
 [1]: ./using-blueprint-templates
 [2]: ./index
+[3]: ../seo

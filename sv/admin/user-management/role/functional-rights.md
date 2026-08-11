@@ -13,7 +13,7 @@ topic: role
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/admin/user-management/learn/role/functional-rights
-index: true
+userflow-index: true
 language: sv
 ---
 

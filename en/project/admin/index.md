@@ -12,7 +12,7 @@ license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
+userflow-index: true
 language: en
 ---
 

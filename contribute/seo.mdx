@@ -2,7 +2,7 @@
 uid: contribute-seo
 title: SEO and social previews
 description: How docs.json's seo settings control canonical URLs, social-preview thumbnails, and other search/discovery behavior for docs.superoffice.com.
-keywords: ['seo', 'opengraph', 'og:image', 'canonical', 'thumbnails', 'social preview']
+keywords: ['seo', 'opengraph', 'og:image', 'canonical', 'thumbnails', 'social preview', 'sitemap', 'robots.txt', 'indexing', 'userflow']
 author: digitaldiina
 date: 08.11.2026
 content_type: concept
@@ -47,12 +47,29 @@ Not yet configured. Mintlify can publish a `seo.organization` block (name, logo,
 
 ## Indexing controls
 
-Not yet configured. Mintlify supports both per-page (`noindex` frontmatter) and site-wide (`seo.indexing`, custom `robots.txt`/`sitemap.xml`) indexing controls.
+Mintlify generates a standard `sitemap.xml` and `robots.txt` automatically, listing only pages included in `docs.json`'s navigation. Either file can be overridden by placing a same-named file at the project root. There is no per-language variant and no filtering hook beyond that — a hidden page (`hidden: true` frontmatter) is excluded from both by default unless `seo.indexing` is added to `docs.json`.
+
+This native sitemap is unrelated to the userhelp sitemap below — one is for search-engine crawling, the other feeds a third-party in-app tool.
+
+## Userflow's userhelp sitemap
+
+Userflow — the in-app onboarding tool built into the CRM product (see `SuperOffice.Util.TrackEventDispatcher`, which also sends events to it) — has a Resource Center knowledge-base search block per language, each configured with a **Knowledge base URL** pointed at `docs.superoffice.com/learn-<lang>.html`. That URL has to keep resolving to a flat list of current help-article links for its language, independent of Mintlify's own sitemap.
+
+Six hidden pages, `learn-<lang>.mdx` at the repo root, serve this today. Each lists:
+
+* every page under that language's own `*/learn/*` folders
+* every page anywhere in the repo flagged `userflow-index: true` in frontmatter (see [Metadata][1]) — a hand-curated addition for pages outside a `learn` folder, such as `admin/` how-tos. A flagged page with no language prefix (for example `integrations/`) is treated as shared and appears in every language's list.
+
+[tools/build-learn-sitemaps.py][3] regenerates all six pages from the current content tree and nav config — no dependency on a built site, so it is safe to re-run any time a `learn` or `userflow-index` page changes. The old `/learn-<lang>.html` URLs redirect to the new pages via `config/redirects.json`, so nothing needs to change in Userflow's own settings.
+
+A scheduled `mint automations create --type custom` run was considered for keeping this current without a manual re-run, matching the broken-link-detection automation in [Automated tests][4]. Not set up yet: Mintlify's own docs do not confirm whether a custom automation's sandboxed agent can execute an already-checked-in script rather than only reading and reasoning over file contents, and its default update mode commits directly to the branch rather than opening a pull request. Re-run the tool by hand for now; revisit once that capability is confirmed.
 
 ## Related content
 
-* [Metadata][1] — the frontmatter fields that feed every page's automatic social preview.
+* [Metadata][1] — the frontmatter fields that feed every page's automatic social preview, and the `userflow-index`/`hidden` properties.
 * [Configuring Mintlify][2] — where `seo` sits inside `docs.json`'s overall layout.
 
 [1]: ./markdown-guide/metadata
 [2]: ./configure-mintlify
+[3]: https://github.com/SuperOfficeDocs/docs/blob/main/tools/build-learn-sitemaps.py
+[4]: ./automated-tests

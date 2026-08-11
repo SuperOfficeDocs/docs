@@ -10,7 +10,7 @@ version: 12
 content_type: concept
 platform: web
 deployment: online
-index: true
+userflow-index: true
 language: en
 ---
 

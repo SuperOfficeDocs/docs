@@ -5,7 +5,7 @@ author: christianm
 date: 03.08.2021
 keywords: ['chatbot', 'ai']
 content_type: concept
-index: true
+userflow-index: true
 ---
 
 Sessions are created when a customer connects to the chat service.

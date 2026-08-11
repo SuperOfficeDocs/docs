@@ -12,7 +12,7 @@ tier: growth
 audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/request/learn/type/create
-index: true
+userflow-index: true
 language: sv
 ---
 

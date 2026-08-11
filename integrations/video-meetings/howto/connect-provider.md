@@ -20,7 +20,7 @@ redirect_from:
   - /no/admin/preferences/learn/video-meetings/configure-video-meetings
   - /nl/admin/preferences/learn/video-meetings/configure-video-meetings
   - /de/admin/preferences/learn/video-meetings/configure-video-meetings
-index: true
+userflow-index: true
 ---
 
 1. Open SuperOffice **Settings and maintenance** and go to the **Preferences** section.

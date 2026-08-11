@@ -8,7 +8,7 @@ date: 06.15.2026
 version: 12.1
 content_type: concept
 tier: core
-index: true
+userflow-index: true
 language: en
 ---
 

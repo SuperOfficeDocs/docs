@@ -10,7 +10,7 @@ tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/admin/preferences/learn/global-preferences/password
-index: true
+userflow-index: true
 language: en
 ---
 

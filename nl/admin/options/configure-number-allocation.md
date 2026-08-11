@@ -15,7 +15,7 @@ audience_tooltip: Settings and maintenance
 redirect_from:
   - /nl/admin/options/learn/number-allocation/index
   - /nl/admin/options/learn/number-allocation/configure
-index: true
+userflow-index: true
 language: nl
 ---
 

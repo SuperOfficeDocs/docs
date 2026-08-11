@@ -12,7 +12,7 @@ tier: starter
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 redirect_from: /no/request/learn/status/index
-index: true
+userflow-index: true
 language: no
 ---
 

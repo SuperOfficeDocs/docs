@@ -12,7 +12,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 deployment: onsite
 redirect_from: /en/email/mail-link/debug
-index: true
+userflow-index: true
 ---
 
 If you need to enable debug logging for Mail Link, open SuperOffice CRM Options, go to **SuperOffice Account** tab, open **Advanced** settings and select **Enable debug logging**. You can also open the log file from the same place.

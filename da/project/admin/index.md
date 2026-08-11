@@ -12,7 +12,7 @@ license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: settings
 audience_tooltip: Indstillinger og vedligeholdelse
-index: true
+userflow-index: true
 language: da
 ---
 

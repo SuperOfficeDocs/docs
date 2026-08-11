@@ -9,7 +9,7 @@ content_type: reference
 category: customization
 topic: soprotocol
 redirect_from: /en/ui/soprotocol/used-in-webpanels-web
-index: true
+userflow-index: true
 language: en
 ---
 

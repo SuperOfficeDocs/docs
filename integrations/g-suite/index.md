@@ -17,7 +17,7 @@ redirect_from:
   - /en/document/cloud/g-suite/learn/index
   - /en/document/cloud/g-suite/index
 language: en
-index: true
+userflow-index: true
 ---
 
 The Google Workspace Integration app integrates the Google Workspace's document management features so that you can create, store, and find your documents within SuperOffice, and enjoy the benefits of both SuperOffice and Google Workspace services all in one place.

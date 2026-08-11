@@ -12,7 +12,7 @@ category: Instellingen en onderhoud
 topic: licenses
 audience: settings
 audience_tooltip: Instellingen en onderhoud
-index: true
+userflow-index: true
 language: nl
 ---
 

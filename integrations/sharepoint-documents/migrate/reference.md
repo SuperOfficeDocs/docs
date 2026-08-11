@@ -13,7 +13,7 @@ deployment: online
 platform: web
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/migrate/reference
-index: true
+userflow-index: true
 ---
 
 ## Overview of jobs

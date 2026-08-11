@@ -12,7 +12,7 @@ topic: SMS
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/service/sms/index
-index: true
+userflow-index: true
 language: en
 ---
 
