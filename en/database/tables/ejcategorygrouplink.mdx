@@ -1,31 +1,30 @@
 ---
-uid: table-EjCategoryGroupLink
 title: EjCategoryGroupLink table
 description: User group link table for EjCategory, for mass handling ej_category members
 generated: true
-keywords: ['database table EjCategoryGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Ejcategorygrouplink from "./includes/ejcategorygrouplink.md";
+import Ejcategorygrouplink from "./includes/ejcategorygrouplink.mdx";
 
-# EjCategoryGroupLink Table (450)
+## EjCategoryGroupLink Table (450)
 
 User group link table for EjCategory, for mass handling ej_category members
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ej\_categorygrouplink\_id|Primary key|PK| |
-|ej\_category\_id|Link to EjCategory list table|FK [ej_category](./ej-category)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|ej\_categorygrouplink\_id|Primary key|PK|No|
+|ej\_category\_id|Link to EjCategory list table|FK [ej_category](./ej-category.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![EjCategoryGroupLink table relationship diagram](/media/loc/en/database/tables/EjCategoryGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for EjCategory, for mass handling ej_category members
 |[ej\_category](./ej-category)  |This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner. |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * None
@@ -53,3 +53,4 @@ User group link table for EjCategory, for mass handling ej_category members
 ## Security Flags
 
 * No access control via user's Role.
+

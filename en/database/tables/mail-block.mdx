@@ -1,27 +1,26 @@
 ---
-uid: table-mail_block
 title: mail_block table
 description: This table controls the spam-protection system, ensuring that a single email recipient does not recieve too many emails during a certain period of time.
 generated: true
-keywords: ['database table mail_block']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import MailBlock from "./includes/mail-block.md";
+import MailBlock from "./includes/mail-block.mdx";
 
-# mail\_block Table (316)
+## mail\_block Table (316)
 
 This table controls the spam-protection system, ensuring that a single email recipient does not recieve too many emails during a certain period of time.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|mail\_addr|The email address|String(255)|&#x25CF;|
-|last\_update|Last time we adjusted the value for this email address.|Int|&#x25CF;|
-|time\_pool|The current value for this email address.|Int|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|mail\_addr|The email address|String(255)|Yes|
+|last\_update|Last time we adjusted the value for this email address.|Int|Yes|
+|time\_pool|The current value for this email address.|Int|Yes|
+
 
 ![mail_block table relationship diagram](/media/loc/en/database/tables/mail_block.png)
 
@@ -39,3 +38,4 @@ This table controls the spam-protection system, ensuring that a single email rec
 ## Security Flags
 
 * No access control via user's Role.
+

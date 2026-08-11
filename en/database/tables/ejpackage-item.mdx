@@ -1,30 +1,29 @@
 ---
-uid: table-ejpackage_item
 title: ejpackage_item table
 description: This table stores info on installed packages in the system
 generated: true
-keywords: ['database table ejpackage_item']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EjpackageItem from "./includes/ejpackage-item.md";
+import EjpackageItem from "./includes/ejpackage-item.mdx";
 
-# ejpackage\_item Table (385)
+## ejpackage\_item Table (385)
 
 This table stores info on installed packages in the system
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|ejpackage|The id of the package for which this item belongs|FK [ejpackage](./ejpackage)| |
-|idx|The index in the package|Int| |
-|domain|The domain for which this item belongs (domains are defined in PackageLib.h)|Int| |
-|item\_id|The id of the element for which this item belongs|Int| |
-|ref\_name|Used to reference the item in installscript|String(255)|&#x25CF;|
-|parent\_id|The parent for this package item link. -1 if this is a toplevel item link.|FK [ejpackage_item](./ejpackage-item)| |
+|id|Primary key|PK|No|
+|ejpackage|The id of the package for which this item belongs|FK [ejpackage](./ejpackage.mdx)|No|
+|idx|The index in the package|Int|No|
+|domain|The domain for which this item belongs (domains are defined in PackageLib.h)|Int|No|
+|item\_id|The id of the element for which this item belongs|Int|No|
+|ref\_name|Used to reference the item in installscript|String(255)|Yes|
+|parent\_id|The parent for this package item link. -1 if this is a toplevel item link.|FK [ejpackage_item](./ejpackage-item.mdx)|No|
+
 
 ![ejpackage_item table relationship diagram](/media/loc/en/database/tables/ejpackage_item.png)
 
@@ -46,6 +45,7 @@ This table stores info on installed packages in the system
 |[ejpackage](./ejpackage)  |This table stores packages on the system. |
 |[ejpackage\_item](./ejpackage-item)  |This table stores info on installed packages in the system |
 
+
 ## Replication Flags
 
 * None
@@ -53,3 +53,4 @@ This table stores info on installed packages in the system
 ## Security Flags
 
 * No access control via user's Role.
+

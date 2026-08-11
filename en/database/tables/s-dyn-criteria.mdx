@@ -1,30 +1,29 @@
 ---
-uid: table-s_dyn_criteria
 title: s_dyn_criteria table
 description: Contains criterias for a dynamic list.
 generated: true
-keywords: ['database table s_dyn_criteria']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SDynCriteria from "./includes/s-dyn-criteria.md";
+import SDynCriteria from "./includes/s-dyn-criteria.mdx";
 
-# s\_dyn\_criteria Table (350)
+## s\_dyn\_criteria Table (350)
 
 Contains criterias for a dynamic list.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|list\_id|Connects the criteria to a list.|FK [s_list](./s-list)| |
-|sort\_order|The order to sort the query. Not really relevant|Int| |
-|field|Which field to test in this criteria|String(64)| |
-|operator|Equals, gt, lt etc.|operator| |
-|value|The value|String(64)| |
-|log\_op|And/or|log_op|&#x25CF;|
+|id|Primary key|PK|No|
+|list\_id|Connects the criteria to a list.|FK [s_list](./s-list.mdx)|No|
+|sort\_order|The order to sort the query. Not really relevant|Int|No|
+|field|Which field to test in this criteria|String(64)|No|
+|operator|Equals, gt, lt etc.|operator|No|
+|value|The value|String(64)|No|
+|log\_op|And/or|log_op|Yes|
+
 
 ![s_dyn_criteria table relationship diagram](/media/loc/en/database/tables/s_dyn_criteria.png)
 
@@ -42,6 +41,7 @@ Contains criterias for a dynamic list.
 |------|-------------|
 |[s\_list](./s-list)  |A list, dynamic or static |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ Contains criterias for a dynamic list.
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,31 +1,30 @@
 ---
-uid: table-ConfigurableScreenAppliesTo
 title: ConfigurableScreenAppliesTo table
 description: Mapping between recipes in scil and chosen type of data (appliesToKey) to differ layouts on
 generated: true
-keywords: ['database table ConfigurableScreenAppliesTo']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Configurablescreenappliesto from "./includes/configurablescreenappliesto.md";
+import Configurablescreenappliesto from "./includes/configurablescreenappliesto.mdx";
 
-# ConfigurableScreenAppliesTo Table (464)
+## ConfigurableScreenAppliesTo Table (464)
 
 Mapping between recipes in scil and chosen type of data (appliesToKey) to differ layouts on
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|configurablescreenappliesto\_id|Primary key|PK| |
-|recipeId|The recipe in scil that might be modified|String(255)|&#x25CF;|
-|appliesToKey|Which data will be used to differ on layouts for this recipe|String(255)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|configurablescreenappliesto\_id|Primary key|PK|No|
+|recipeId|The recipe in scil that might be modified|String(255)|Yes|
+|appliesToKey|Which data will be used to differ on layouts for this recipe|String(255)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ConfigurableScreenAppliesTo table relationship diagram](/media/loc/en/database/tables/ConfigurableScreenAppliesTo.png)
 
@@ -42,6 +41,7 @@ Mapping between recipes in scil and chosen type of data (appliesToKey) to differ
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ Mapping between recipes in scil and chosen type of data (appliesToKey) to differ
 ## Security Flags
 
 * No access control via user's Role.
+

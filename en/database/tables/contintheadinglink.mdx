@@ -1,31 +1,30 @@
 ---
-uid: table-ContIntHeadingLink
 title: ContIntHeadingLink table
 description: Heading link table for ContInt, for MDO headers
 generated: true
-keywords: ['database table ContIntHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Contintheadinglink from "./includes/contintheadinglink.md";
+import Contintheadinglink from "./includes/contintheadinglink.mdx";
 
-# ContIntHeadingLink Table (72)
+## ContIntHeadingLink Table (72)
 
 Heading link table for ContInt, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|contintheadinglink\_id|Primary key|PK| |
-|contint\_id|Link to ContInt list table|FK [ContInt](./contint)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|contintheadinglink\_id|Primary key|PK|No|
+|contint\_id|Link to ContInt list table|FK [ContInt](./contint.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ContIntHeadingLink table relationship diagram](/media/loc/en/database/tables/ContIntHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for ContInt, for MDO headers
 |[ContInt](./contint)  |ContInt list table. List-text of all valid contact interest types. |
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for ContInt, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

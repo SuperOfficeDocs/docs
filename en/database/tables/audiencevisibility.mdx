@@ -1,36 +1,35 @@
 ---
-uid: table-AudienceVisibility
 title: AudienceVisibility table
 description: How projects (or whatever) should be made visible in audience
 generated: true
-keywords: ['database table AudienceVisibility']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Audiencevisibility from "./includes/audiencevisibility.md";
+import Audiencevisibility from "./includes/audiencevisibility.mdx";
 
-# AudienceVisibility Table (232)
+## AudienceVisibility Table (232)
 
 How projects (or whatever) should be made visible in audience
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|AudienceVisibility\_id|Primary key|PK| |
-|sourceTable|Source table, only table &apos;project&apos; valid in Audience for Six|TableNumber| |
-|sourceRecord|Record ID in source table. This is the record to be made visible|RecordId| |
-|controllingTable|The table that controls visibility of the source record|TableNumber| |
-|controllingRecord|The record in the controlling table that defines visibility of the source record|RecordId| |
-|constraintEnabled|If 1, this visibility constraint is enabled; otherwise it is there for the record, but not active|Bool| |
-|comment|A possible user comment|String(254)|&#x25CF;|
-|extraInfo|Extra info value|Id|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|AudienceVisibility\_id|Primary key|PK|No|
+|sourceTable|Source table, only table &apos;project&apos; valid in Audience for Six|TableNumber|No|
+|sourceRecord|Record ID in source table. This is the record to be made visible|RecordId|No|
+|controllingTable|The table that controls visibility of the source record|TableNumber|No|
+|controllingRecord|The record in the controlling table that defines visibility of the source record|RecordId|No|
+|constraintEnabled|If 1, this visibility constraint is enabled; otherwise it is there for the record, but not active|Bool|No|
+|comment|A possible user comment|String(254)|Yes|
+|extraInfo|Extra info value|Id|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![AudienceVisibility table relationship diagram](/media/loc/en/database/tables/AudienceVisibility.png)
 
@@ -49,6 +48,7 @@ How projects (or whatever) should be made visible in audience
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ How projects (or whatever) should be made visible in audience
 ## Security Flags
 
 * No access control via user's Role.
+

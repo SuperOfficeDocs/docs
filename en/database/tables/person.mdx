@@ -1,81 +1,80 @@
 ---
-uid: table-person
 title: person table
 description: Persons
 generated: true
-keywords: ['database table person']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Person from "./includes/person.md";
+import Person from "./includes/person.mdx";
 
-# person Table (6)
+## person Table (6)
 
 Persons
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|person\_id|Primary key|PK| |
-|contact\_id|Owning contact ID|FK [contact](./contact)| |
-|rank|Display sort sequence for default sort order|UShort| |
-|lastname|Last name|String(99)|&#x25CF;|
-|firstname|First name|String(99)| |
-|mrmrs|e.g. Mrs   sex_title|String(239)|&#x25CF;|
-|title|Title|String(239)|&#x25CF;|
-|text\_id|Info tab contents|FK [text](./text)|&#x25CF;|
-|position\_idx|Link to Position list|FK [PersPos](./perspos)|&#x25CF;|
-|year\_of\_birth|Birth year (4 digit), 0 if not specifed|UShort|&#x25CF;|
-|month\_of\_birth|Birth month (1-12), 0 if not specified|UShort|&#x25CF;|
-|day\_of\_birth|Birth date (day of month), 0 if not specified|UShort|&#x25CF;|
-|phone\_present|flag to show there are phone registrations |UShort|&#x25CF;|
-|userdef\_id|User defined table record 1|FK [udpersonSmall](./udpersonsmall)|&#x25CF;|
-|registered|Registered date|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated date|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|person\_number|Alphanumeric user field|String(49)|&#x25CF;|
-|kanalname|Kana last name, used in Japanese versions only|String(99)|&#x25CF;|
-|kanafname|Kana last name, used in Japanese versions only|String(99)|&#x25CF;|
-|post1|Postal address, used in Japanese versions only|String(99)|&#x25CF;|
-|post2|Postal address, used in Japanese versions only|String(99)|&#x25CF;|
-|post3|Postal address, used in Japanese versions only|String(99)|&#x25CF;|
-|usepersonaddress|If 1, use person&apos;s address for mailing instead of company address|UShort|&#x25CF;|
-|middleName|Middle name or &apos;van&apos; etc.|String(99)|&#x25CF;|
-|source|How did we get this person? For future integration needs|UShort|&#x25CF;|
-|nomailing|Do not send DM&apos;s to this person|Bool|&#x25CF;|
-|country\_id|Country|FK [country](./country)| |
-|userdef2\_id|User defined table record 2|FK [udpersonLarge](./udpersonlarge)|&#x25CF;|
-|retired|1 = the user is retired and should have no rights, not appear in lists, etc.|UShort|&#x25CF;|
-|activeInterests|Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true|UShort|&#x25CF;|
-|updatedCount|Number of times updated|UShort| |
-|associate\_id|Our contact, if this is a B2C person, otherwise mirror of contact.assoc_id|Id|&#x25CF;|
-|group\_id|Our contact&apos;s original group, if this is a B2C person, otherwise mirror of contact.group_id|Id|&#x25CF;|
-|salutation|Academic title, populated from Salutation list but can be overwritten with anything at all|String(239)|&#x25CF;|
-|department|Internal department address|String(254)|&#x25CF;|
-|initials|Where Pierre van Mever becomes P. van Mever.  Actually, initials to be used in formal addresses, mostly in the Ducth market|String(63)|&#x25CF;|
-|gender|Male/female. No jokes please.  To be used for selecting correct salutations &amp; grammar. 0 = unknown, 1 = female, 2 = male|Enum [PersonGender](./enums/persongender)|&#x25CF;|
-|business\_idx|Business if this is a B2C person, otherwise mirror of contact.business_idx|FK [Business](./business)| |
-|category\_idx|Category if this is a B2C person, otherwise mirror of contact.category_idx|FK [Category](./category)| |
-|tzLocationId|Default timezone location for this person|FK [TZLocation](./tzlocation)|&#x25CF;|
-|sentInfo|Has information on username/password been sent (ejournal)|UShort|&#x25CF;|
-|showContactTickets|Should tickets related to the company be shown to this person|UShort|&#x25CF;|
-|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority)|&#x25CF;|
-|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang)|&#x25CF;|
-|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate)|&#x25CF;|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|&#x25CF;|
-|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|&#x25CF;|
-|dbi\_last\_syncronized|Last external syncronization.|DateTime|&#x25CF;|
-|dbi\_last\_modified|When the entry was last modified.|DateTime|&#x25CF;|
-|blockEmarketing|Do not send E-marketing materials to this person|Bool|&#x25CF;|
-|activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|&#x25CF;|
-|DeletedDate|Datetime (utc) when this record was soft-deleted; if this value is set then the record should not be shown|UtcDateTime|&#x25CF;|
-|created\_by\_form\_id|The form this person was created by|FK [form](./form)|&#x25CF;|
-|modified\_by\_workflow\_id|The workflow this person last was modified by|FK [workflow](./workflow)|&#x25CF;|
-|modified\_by\_workflow\_when|When the workflow modified this person|UtcDateTime|&#x25CF;|
-|leadstatus\_id|Refinement of categories of lead type. Empty if the category is not a lead type. If this person has a contact, the leadstatus is from the contact and not editable on the person|FK [leadstatus](./leadstatus)|&#x25CF;|
+|person\_id|Primary key|PK|No|
+|contact\_id|Owning contact ID|FK [contact](./contact.mdx)|No|
+|rank|Display sort sequence for default sort order|UShort|No|
+|lastname|Last name|String(99)|Yes|
+|firstname|First name|String(99)|No|
+|mrmrs|e.g. Mrs   sex_title|String(239)|Yes|
+|title|Title|String(239)|Yes|
+|text\_id|Info tab contents|FK [text](./text.mdx)|Yes|
+|position\_idx|Link to Position list|FK [PersPos](./perspos.mdx)|Yes|
+|year\_of\_birth|Birth year (4 digit), 0 if not specifed|UShort|Yes|
+|month\_of\_birth|Birth month (1-12), 0 if not specified|UShort|Yes|
+|day\_of\_birth|Birth date (day of month), 0 if not specified|UShort|Yes|
+|phone\_present|flag to show there are phone registrations |UShort|Yes|
+|userdef\_id|User defined table record 1|FK [udpersonSmall](./udpersonsmall.mdx)|Yes|
+|registered|Registered date|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated date|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|person\_number|Alphanumeric user field|String(49)|Yes|
+|kanalname|Kana last name, used in Japanese versions only|String(99)|Yes|
+|kanafname|Kana last name, used in Japanese versions only|String(99)|Yes|
+|post1|Postal address, used in Japanese versions only|String(99)|Yes|
+|post2|Postal address, used in Japanese versions only|String(99)|Yes|
+|post3|Postal address, used in Japanese versions only|String(99)|Yes|
+|usepersonaddress|If 1, use person&apos;s address for mailing instead of company address|UShort|Yes|
+|middleName|Middle name or &apos;van&apos; etc.|String(99)|Yes|
+|source|How did we get this person? For future integration needs|UShort|Yes|
+|nomailing|Do not send DM&apos;s to this person|Bool|Yes|
+|country\_id|Country|FK [country](./country.mdx)|No|
+|userdef2\_id|User defined table record 2|FK [udpersonLarge](./udpersonlarge.mdx)|Yes|
+|retired|1 = the user is retired and should have no rights, not appear in lists, etc.|UShort|Yes|
+|activeInterests|Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true|UShort|Yes|
+|updatedCount|Number of times updated|UShort|No|
+|associate\_id|Our contact, if this is a B2C person, otherwise mirror of contact.assoc_id|Id|Yes|
+|group\_id|Our contact&apos;s original group, if this is a B2C person, otherwise mirror of contact.group_id|Id|Yes|
+|salutation|Academic title, populated from Salutation list but can be overwritten with anything at all|String(239)|Yes|
+|department|Internal department address|String(254)|Yes|
+|initials|Where Pierre van Mever becomes P. van Mever.  Actually, initials to be used in formal addresses, mostly in the Ducth market|String(63)|Yes|
+|gender|Male/female. No jokes please.  To be used for selecting correct salutations &amp; grammar. 0 = unknown, 1 = female, 2 = male|Enum [PersonGender](./enums/persongender.mdx)|Yes|
+|business\_idx|Business if this is a B2C person, otherwise mirror of contact.business_idx|FK [Business](./business.mdx)|No|
+|category\_idx|Category if this is a B2C person, otherwise mirror of contact.category_idx|FK [Category](./category.mdx)|No|
+|tzLocationId|Default timezone location for this person|FK [TZLocation](./tzlocation.mdx)|Yes|
+|sentInfo|Has information on username/password been sent (ejournal)|UShort|Yes|
+|showContactTickets|Should tickets related to the company be shown to this person|UShort|Yes|
+|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority.mdx)|Yes|
+|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang.mdx)|Yes|
+|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate.mdx)|Yes|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|Yes|
+|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|Yes|
+|dbi\_last\_syncronized|Last external syncronization.|DateTime|Yes|
+|dbi\_last\_modified|When the entry was last modified.|DateTime|Yes|
+|blockEmarketing|Do not send E-marketing materials to this person|Bool|Yes|
+|activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|Yes|
+|DeletedDate|Datetime (utc) when this record was soft-deleted; if this value is set then the record should not be shown|UtcDateTime|Yes|
+|created\_by\_form\_id|The form this person was created by|FK [form](./form.mdx)|Yes|
+|modified\_by\_workflow\_id|The workflow this person last was modified by|FK [workflow](./workflow.mdx)|Yes|
+|modified\_by\_workflow\_when|When the workflow modified this person|UtcDateTime|Yes|
+|leadstatus\_id|Refinement of categories of lead type. Empty if the category is not a lead type. If this person has a contact, the leadstatus is from the contact and not editable on the person|FK [leadstatus](./leadstatus.mdx)|Yes|
+
 
 ![person table relationship diagram](/media/loc/en/database/tables/person.png)
 
@@ -168,6 +167,7 @@ Persons
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 |[workflow\_instance](./workflow-instance)  |A set of properties related to the workflow instance of one participant going through the flow |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -178,3 +178,4 @@ Persons
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

@@ -1,34 +1,33 @@
 ---
-uid: table-ImportField
 title: ImportField table
 description: Import object types - see localetext for names
 generated: true
-keywords: ['database table ImportField']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Importfield from "./includes/importfield.md";
+import Importfield from "./includes/importfield.mdx";
 
-# ImportField Table (187)
+## ImportField Table (187)
 
 Import object types - see localetext for names
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ImportField\_id|Primary key|PK| |
-|ImportObject\_id|The primary object type for this import field|FK [ImportObject](./importobject)| |
-|dbFieldId|Database field id of target field (implies table)|FieldId| |
-|guiCategory|Used for grouping objects in GUI; see LocaleText for name|Id| |
-|tag|Name of field, not visible to the user|String(11)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|isBuiltin|1 = This row populated and maintained by SuperOffice|UShort|&#x25CF;|
+|ImportField\_id|Primary key|PK|No|
+|ImportObject\_id|The primary object type for this import field|FK [ImportObject](./importobject.mdx)|No|
+|dbFieldId|Database field id of target field (implies table)|FieldId|No|
+|guiCategory|Used for grouping objects in GUI; see LocaleText for name|Id|No|
+|tag|Name of field, not visible to the user|String(11)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|isBuiltin|1 = This row populated and maintained by SuperOffice|UShort|Yes|
+
 
 ![ImportField table relationship diagram](/media/loc/en/database/tables/ImportField.png)
 
@@ -47,6 +46,7 @@ Import object types - see localetext for names
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[ImportObject](./importobject)  |Import object types - see localetext for names. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -56,3 +56,4 @@ Import object types - see localetext for names
 ## Security Flags
 
 * No access control via user's Role.
+

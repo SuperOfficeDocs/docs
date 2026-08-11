@@ -1,30 +1,29 @@
 ---
-uid: table-extra_tables_entry
 title: extra_tables_entry table
 description: Hits/entries in result set of executed search in ejournal extra tables
 generated: true
-keywords: ['database table extra_tables_entry']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ExtraTablesEntry from "./includes/extra-tables-entry.md";
+import ExtraTablesEntry from "./includes/extra-tables-entry.mdx";
 
-# extra\_tables\_entry Table (309)
+## extra\_tables\_entry Table (309)
 
 Hits/entries in result set of executed search in ejournal extra tables
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|extra\_tables\_result|The id of the result.|FK [extra_tables_result](./extra-tables-result)| |
-|entry\_id|The id of the entry in the extra table.|Int|&#x25CF;|
-|prev\_id|The id of the entry in the extra table.|Int|&#x25CF;|
-|next\_id|The id of the entry in the extra table.|Int|&#x25CF;|
-|page\_num|The pagenum of this result entry in the table.|Int|&#x25CF;|
-|order\_pos|Used to order elements when listed.|Int|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|extra\_tables\_result|The id of the result.|FK [extra_tables_result](./extra-tables-result.mdx)|No|
+|entry\_id|The id of the entry in the extra table.|Int|Yes|
+|prev\_id|The id of the entry in the extra table.|Int|Yes|
+|next\_id|The id of the entry in the extra table.|Int|Yes|
+|page\_num|The pagenum of this result entry in the table.|Int|Yes|
+|order\_pos|Used to order elements when listed.|Int|Yes|
+
 
 ![extra_tables_entry table relationship diagram](/media/loc/en/database/tables/extra_tables_entry.png)
 
@@ -42,6 +41,7 @@ Hits/entries in result set of executed search in ejournal extra tables
 |------|-------------|
 |[extra\_tables\_result](./extra-tables-result)  |Result set of executed search in ejournal extra tables |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ Hits/entries in result set of executed search in ejournal extra tables
 ## Security Flags
 
 * No access control via user's Role.
+

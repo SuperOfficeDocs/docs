@@ -1,30 +1,29 @@
 ---
-uid: table-ticket_log
 title: ticket_log table
 description: This table contains log entries for the tickets.
 generated: true
-keywords: ['database table ticket_log']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TicketLog from "./includes/ticket-log.md";
+import TicketLog from "./includes/ticket-log.mdx";
 
-# ticket\_log Table (267)
+## ticket\_log Table (267)
 
 This table contains log entries for the tickets.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket)| |
-|log\_code|An enum indicating what kind of log-entry this is.|log_code|&#x25CF;|
-|log\_who|The username/alias of the user performing the action.|String(255)|&#x25CF;|
-|log\_when|When the action occured.|DateTime|&#x25CF;|
-|log\_description|A string describing the event (or part of such) to be logged.|Clob|&#x25CF;|
-|log\_what\_value2|A reference to various tables, depending on the log_code.|Int|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket.mdx)|No|
+|log\_code|An enum indicating what kind of log-entry this is.|log_code|Yes|
+|log\_who|The username/alias of the user performing the action.|String(255)|Yes|
+|log\_when|When the action occured.|DateTime|Yes|
+|log\_description|A string describing the event (or part of such) to be logged.|Clob|Yes|
+|log\_what\_value2|A reference to various tables, depending on the log_code.|Int|Yes|
+
 
 ![ticket_log table relationship diagram](/media/loc/en/database/tables/ticket_log.png)
 
@@ -45,6 +44,7 @@ This table contains log entries for the tickets.
 |------|-------------|
 |[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ This table contains log entries for the tickets.
 ## Security Flags
 
 * No access control via user's Role.
+

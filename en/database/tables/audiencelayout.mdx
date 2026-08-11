@@ -1,31 +1,30 @@
 ---
-uid: table-AudienceLayout
 title: AudienceLayout table
 description: One layout (of webparts and other stuff) for an audience instance
 generated: true
-keywords: ['database table AudienceLayout']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Audiencelayout from "./includes/audiencelayout.md";
+import Audiencelayout from "./includes/audiencelayout.mdx";
 
-# AudienceLayout Table (234)
+## AudienceLayout Table (234)
 
 One layout (of webparts and other stuff) for an audience instance
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|AudienceLayout\_id|Primary key|PK| |
-|instanceName|The name of the installed instance of Audience - must match the web.config file|String(239)| |
-|instanceLayout|The layout, as a serialized string via the Provider architecture|String(2047)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|AudienceLayout\_id|Primary key|PK|No|
+|instanceName|The name of the installed instance of Audience - must match the web.config file|String(239)|No|
+|instanceLayout|The layout, as a serialized string via the Provider architecture|String(2047)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![AudienceLayout table relationship diagram](/media/loc/en/database/tables/AudienceLayout.png)
 
@@ -45,6 +44,7 @@ One layout (of webparts and other stuff) for an audience instance
 |[AudienceConfig](./audienceconfig)  |Configuration data for Audience core and webparts |
 |[AudienceLayoutLink](./audiencelayoutlink)  |Link between an audience layout and some target grouping table - might be Role or Category |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ One layout (of webparts and other stuff) for an audience instance
 ## Security Flags
 
 * No access control via user's Role.
+

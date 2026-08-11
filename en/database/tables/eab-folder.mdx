@@ -1,28 +1,27 @@
 ---
-uid: table-eab_folder
 title: eab_folder table
 description: This table contains eab (email address book) folders, used for containing email addresses.
 generated: true
-keywords: ['database table eab_folder']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EabFolder from "./includes/eab-folder.md";
+import EabFolder from "./includes/eab-folder.mdx";
 
-# eab\_folder Table (314)
+## eab\_folder Table (314)
 
 This table contains eab (email address book) folders, used for containing email addresses.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|folder\_id|The id of the parent folder for this folder. NULL or -1 if this is a toplevel folder.|FK [eab_folder](./eab-folder)| |
-|name|The folder&amp;apos;s name.|String(64)| |
-|description|The folder&amp;apos;s description.|String(255)|&#x25CF;|
-|fullname|The full name of this category, i.e. Foo/bar/test.|Clob|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|folder\_id|The id of the parent folder for this folder. NULL or -1 if this is a toplevel folder.|FK [eab_folder](./eab-folder.mdx)|No|
+|name|The folder&amp;apos;s name.|String(64)|No|
+|description|The folder&amp;apos;s description.|String(255)|Yes|
+|fullname|The full name of this category, i.e. Foo/bar/test.|Clob|Yes|
+
 
 ![eab_folder table relationship diagram](/media/loc/en/database/tables/eab_folder.png)
 
@@ -42,6 +41,7 @@ This table contains eab (email address book) folders, used for containing email 
 |[eab\_entry](./eab-entry)  |This table contains eab (email address book) entries, i.e. an alias (&amp;apos;Ola Hansen&amp;apos;) and an address (&amp;apos;ola@hansen.as&amp;apos;). |
 |[eab\_folder](./eab-folder)  |This table contains eab (email address book) folders, used for containing email addresses. |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ This table contains eab (email address book) folders, used for containing email 
 ## Security Flags
 
 * No access control via user's Role.
+
