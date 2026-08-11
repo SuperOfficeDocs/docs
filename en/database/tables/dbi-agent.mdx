@@ -1,28 +1,27 @@
 ---
-uid: table-dbi_agent
 title: dbi_agent table
 description: DBI agent settings
 generated: true
-keywords: ['database table dbi_agent']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import DbiAgent from "./includes/dbi-agent.md";
+import DbiAgent from "./includes/dbi-agent.mdx";
 
-# dbi\_agent Table (381)
+## dbi\_agent Table (381)
 
 DBI agent settings
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|name|Agent name|String(255)|&#x25CF;|
-|id\_string|A field for an id_string which may be used to access the dbi agent|String(255)| |
-|protocol|Agent communcication protocol |protocol|&#x25CF;|
-|path|Path to agent URL or file path|String(255)|&#x25CF;|
+|id|Primary key|PK|No|
+|name|Agent name|String(255)|Yes|
+|id\_string|A field for an id_string which may be used to access the dbi agent|String(255)|No|
+|protocol|Agent communcication protocol |protocol|Yes|
+|path|Path to agent URL or file path|String(255)|Yes|
+
 
 ![dbi_agent table relationship diagram](/media/loc/en/database/tables/dbi_agent.png)
 
@@ -52,6 +51,7 @@ DBI agent settings
 |[s\_list](./s-list)  |A list, dynamic or static |
 |[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 
+
 ## Replication Flags
 
 * None
@@ -59,3 +59,4 @@ DBI agent settings
 ## Security Flags
 
 * No access control via user's Role.
+

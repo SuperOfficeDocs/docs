@@ -1,31 +1,30 @@
 ---
-uid: table-StakeholderRoleHeadingLink
 title: StakeholderRoleHeadingLink table
 description: Heading link table for StakeholderRole, for MDO headers
 generated: true
-keywords: ['database table StakeholderRoleHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Stakeholderroleheadinglink from "./includes/stakeholderroleheadinglink.md";
+import Stakeholderroleheadinglink from "./includes/stakeholderroleheadinglink.mdx";
 
-# StakeholderRoleHeadingLink Table (124)
+## StakeholderRoleHeadingLink Table (124)
 
 Heading link table for StakeholderRole, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|stakeholderroleheadinglink\_id|Primary key|PK| |
-|stakeholderrole\_id|Link to StakeholderRole list table|FK [StakeholderRole](./stakeholderrole)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|stakeholderroleheadinglink\_id|Primary key|PK|No|
+|stakeholderrole\_id|Link to StakeholderRole list table|FK [StakeholderRole](./stakeholderrole.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![StakeholderRoleHeadingLink table relationship diagram](/media/loc/en/database/tables/StakeholderRoleHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for StakeholderRole, for MDO headers
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 |[StakeholderRole](./stakeholderrole)  |Role a stakeholder has in a sale |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for StakeholderRole, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,35 +1,34 @@
 ---
-uid: table-foreigndevice
 title: foreigndevice table
 description: Middle level of Foreign Key system
 generated: true
-keywords: ['database table foreigndevice']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Foreigndevice from "./includes/foreigndevice.md";
+import Foreigndevice from "./includes/foreigndevice.mdx";
 
-# foreigndevice Table (182)
+## foreigndevice Table (182)
 
 Middle level of Foreign Key system
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|foreigndevice\_id|Primary key|PK| |
-|name|Name of device|String(31)| |
-|device\_id|Optional unique id of device (Palm pilot device ID, etc)|String(239)|&#x25CF;|
-|foreignapp\_id|Reference to foregin application (device type)|FK [foreignapp](./foreignapp)| |
-|owner\_id|Reference to SO user owning this device|FK [associate](./associate)| |
-|lastsynced|Last sync date|DateTime|&#x25CF;|
-|lastsynced\_trans|Last sync traveltransactionlog id number|DateTime|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|foreigndevice\_id|Primary key|PK|No|
+|name|Name of device|String(31)|No|
+|device\_id|Optional unique id of device (Palm pilot device ID, etc)|String(239)|Yes|
+|foreignapp\_id|Reference to foregin application (device type)|FK [foreignapp](./foreignapp.mdx)|No|
+|owner\_id|Reference to SO user owning this device|FK [associate](./associate.mdx)|No|
+|lastsynced|Last sync date|DateTime|Yes|
+|lastsynced\_trans|Last sync traveltransactionlog id number|DateTime|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![foreigndevice table relationship diagram](/media/loc/en/database/tables/foreigndevice.png)
 
@@ -52,6 +51,7 @@ Middle level of Foreign Key system
 |[foreignapp](./foreignapp)  |Top level of Foreign Key system |
 |[foreignkey](./foreignkey)  |Foreign Key - enables storage of arbitrary extra key information for every table/row in SuperOffice. You may use this table to store your extra information instead of using the dictionary SDK to create your own tables. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -61,3 +61,4 @@ Middle level of Foreign Key system
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,30 +1,29 @@
 ---
-uid: table-History
 title: History table
 description: History lists for lists and searchable controls. Maintains history for Navigator or other search (find dialogs). A single table may have more than one record here, as indicated by the extra_id field. The HistorySize (preference may be set in maintenance client) defines how many records you can have in a history list.
 generated: true
-keywords: ['database table History']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import History from "./includes/history.md";
+import History from "./includes/history.mdx";
 
-# History Table (53)
+## History Table (53)
 
 History lists for lists and searchable controls. Maintains history for Navigator or other search (find dialogs). A single table may have more than one record here, as indicated by the extra_id field. The HistorySize (preference may be set in maintenance client) defines how many records you can have in a history list.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|history\_id|Primary key|PK| |
-|associate\_id|Owner of history list|FK [associate](./associate)| |
-|table\_id|Table this is a history of|TableNumber| |
-|record\_id|Record within the table|RecordId| |
-|extra\_id|Extra ID, used to manage multiple histories per table|Id| |
-|rank|Sort order, indexed so it can used for sorting in the query|UShort| |
-|updatedCount|Number of updates made to this record|UShort| |
+|history\_id|Primary key|PK|No|
+|associate\_id|Owner of history list|FK [associate](./associate.mdx)|No|
+|table\_id|Table this is a history of|TableNumber|No|
+|record\_id|Record within the table|RecordId|No|
+|extra\_id|Extra ID, used to manage multiple histories per table|Id|No|
+|rank|Sort order, indexed so it can used for sorting in the query|UShort|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![History table relationship diagram](/media/loc/en/database/tables/History.png)
 
@@ -43,6 +42,7 @@ History lists for lists and searchable controls. Maintains history for Navigator
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Copy to satellite and travel prototypes.
@@ -50,3 +50,4 @@ History lists for lists and searchable controls. Maintains history for Navigator
 ## Security Flags
 
 * No access control via user's Role.
+

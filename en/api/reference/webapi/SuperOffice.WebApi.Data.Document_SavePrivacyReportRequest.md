@@ -1,0 +1,64 @@
+# <a id="SuperOffice_WebApi_Data_Document_SavePrivacyReportRequest"></a> Class Document\_SavePrivacyReportRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class Document_SavePrivacyReportRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[Document\_SavePrivacyReportRequest](SuperOffice.WebApi.Data.Document\_SavePrivacyReportRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_Document_SavePrivacyReportRequest__ctor"></a> Document\_SavePrivacyReportRequest\(\)
+
+```csharp
+public Document_SavePrivacyReportRequest()
+```
+
+## Properties
+
+### <a id="SuperOffice_WebApi_Data_Document_SavePrivacyReportRequest_HtmlReport"></a> HtmlReport
+
+```csharp
+public string HtmlReport { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_Document_SavePrivacyReportRequest_PersonId"></a> PersonId
+
+```csharp
+public int PersonId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="SuperOffice_WebApi_Data_Document_SavePrivacyReportRequest_Title"></a> Title
+
+```csharp
+public string Title { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+

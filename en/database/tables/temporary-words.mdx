@@ -1,27 +1,26 @@
 ---
-uid: table-temporary_words
 title: temporary_words table
 description: This table is used as a temporary table, containing the words we want                  to search for in the FAQs
 generated: true
-keywords: ['database table temporary_words']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TemporaryWords from "./includes/temporary-words.md";
+import TemporaryWords from "./includes/temporary-words.mdx";
 
-# temporary\_words Table (356)
+## temporary\_words Table (356)
 
 This table is used as a temporary table, containing the words we want                  to search for in the FAQs
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|magic\_number|A magic number, securing unique rows|Int| |
-|word|The temporary word|String(63)| |
-|word\_length|The length of the word|Int| |
+|id|Primary key|PK|No|
+|magic\_number|A magic number, securing unique rows|Int|No|
+|word|The temporary word|String(63)|No|
+|word\_length|The length of the word|Int|No|
+
 
 ![temporary_words table relationship diagram](/media/loc/en/database/tables/temporary_words.png)
 
@@ -41,3 +40,4 @@ This table is used as a temporary table, containing the words we want           
 ## Security Flags
 
 * No access control via user's Role.
+

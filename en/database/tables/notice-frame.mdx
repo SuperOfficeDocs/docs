@@ -1,30 +1,29 @@
 ---
-uid: table-notice_frame
 title: notice_frame table
 description: PID controller for automatic adjustment of pop up message check rate
 generated: true
-keywords: ['database table notice_frame']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import NoticeFrame from "./includes/notice-frame.md";
+import NoticeFrame from "./includes/notice-frame.mdx";
 
-# notice\_frame Table (404)
+## notice\_frame Table (404)
 
 PID controller for automatic adjustment of pop up message check rate
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|error\_p|PID error P|Double| |
-|error\_i|PID error I|Double| |
-|error\_d|PID error D|Double| |
-|t0|Last executing|Double| |
-|average\_dt|Average dt|Double| |
-|refresh\_rate|Notice frame refresh rate|Double| |
+|id|The primary key (auto-incremented)|PK|No|
+|error\_p|PID error P|Double|No|
+|error\_i|PID error I|Double|No|
+|error\_d|PID error D|Double|No|
+|t0|Last executing|Double|No|
+|average\_dt|Average dt|Double|No|
+|refresh\_rate|Notice frame refresh rate|Double|No|
+
 
 ![notice_frame table relationship diagram](/media/loc/en/database/tables/notice_frame.png)
 
@@ -42,3 +41,4 @@ PID controller for automatic adjustment of pop up message check rate
 ## Security Flags
 
 * No access control via user's Role.
+

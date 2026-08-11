@@ -1,27 +1,26 @@
 ---
-uid: table-kb_entry_log
 title: kb_entry_log table
 description: Who and when, if somebody edits a knowledge base entry
 generated: true
-keywords: ['database table kb_entry_log']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import KbEntryLog from "./includes/kb-entry-log.md";
+import KbEntryLog from "./includes/kb-entry-log.mdx";
 
-# kb\_entry\_log Table (290)
+## kb\_entry\_log Table (290)
 
 Who and when, if somebody edits a knowledge base entry
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|kb\_entry\_id|The id of the kb_entry that triggered this action.|FK [kb_entry](./kb-entry)| |
-|user\_id|The id of the user that created this comment.|FK [ejuser](./ejuser)| |
-|log\_when|When the action occured.|DateTime|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|kb\_entry\_id|The id of the kb_entry that triggered this action.|FK [kb_entry](./kb-entry.mdx)|No|
+|user\_id|The id of the user that created this comment.|FK [ejuser](./ejuser.mdx)|No|
+|log\_when|When the action occured.|DateTime|Yes|
+
 
 ![kb_entry_log table relationship diagram](/media/loc/en/database/tables/kb_entry_log.png)
 
@@ -41,6 +40,7 @@ Who and when, if somebody edits a knowledge base entry
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 |[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
 
+
 ## Replication Flags
 
 * None
@@ -48,3 +48,4 @@ Who and when, if somebody edits a knowledge base entry
 ## Security Flags
 
 * No access control via user's Role.
+

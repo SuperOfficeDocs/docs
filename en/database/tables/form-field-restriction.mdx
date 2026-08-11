@@ -1,31 +1,30 @@
 ---
-uid: table-form_field_restriction
 title: form_field_restriction table
 description: This table contains all form fields restrictions
 generated: true
-keywords: ['database table form_field_restriction']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import FormFieldRestriction from "./includes/form-field-restriction.md";
+import FormFieldRestriction from "./includes/form-field-restriction.mdx";
 
-# form\_field\_restriction Table (490)
+## form\_field\_restriction Table (490)
 
 This table contains all form fields restrictions
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|form\_field\_restriction\_id|Primary key|PK| |
-|field\_identifier|the identifier for the field|String(255)|&#x25CF;|
-|field\_restriction|The restriction set on the field|Enum [FormFieldRestrictionType](./enums/formfieldrestrictiontype)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|form\_field\_restriction\_id|Primary key|PK|No|
+|field\_identifier|the identifier for the field|String(255)|Yes|
+|field\_restriction|The restriction set on the field|Enum [FormFieldRestrictionType](./enums/formfieldrestrictiontype.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![form_field_restriction table relationship diagram](/media/loc/en/database/tables/form_field_restriction.png)
 
@@ -43,6 +42,7 @@ This table contains all form fields restrictions
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ This table contains all form fields restrictions
 ## Security Flags
 
 * No access control via user's Role.
+

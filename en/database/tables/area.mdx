@@ -1,36 +1,35 @@
 ---
-uid: table-area
 title: area table
 description: Definition of an Area (database subset for satellite and travel)
 generated: true
-keywords: ['database table area']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Area from "./includes/area.md";
+import Area from "./includes/area.mdx";
 
-# area Table (38)
+## area Table (38)
 
 Definition of an Area (database subset for satellite and travel)
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|area\_id|Primary key|PK| |
-|name|Area name|String(49)|&#x25CF;|
-|parent\_area\_id|Reserved/not implemented: for subareas, travel from satellite, maybe future multi-level satellites|FK [area](./area)|&#x25CF;|
-|allData|if set to 1, means &apos;no filtering&apos;|UShort|&#x25CF;|
-|dbType|0 = as in preferences, 1 = Sybase Anywhere, 2 = Ctree; used when generating prototypes|UShort|&#x25CF;|
-|filterType|Area filtering algorithm - reserved for future use|UShort|&#x25CF;|
-|encryptedComm|Use encryption for this Area?|UShort|&#x25CF;|
-|maxDataAge|Max age of data when generating db&apos;s based on this area|UShort|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|area\_id|Primary key|PK|No|
+|name|Area name|String(49)|Yes|
+|parent\_area\_id|Reserved/not implemented: for subareas, travel from satellite, maybe future multi-level satellites|FK [area](./area.mdx)|Yes|
+|allData|if set to 1, means &apos;no filtering&apos;|UShort|Yes|
+|dbType|0 = as in preferences, 1 = Sybase Anywhere, 2 = Ctree; used when generating prototypes|UShort|Yes|
+|filterType|Area filtering algorithm - reserved for future use|UShort|Yes|
+|encryptedComm|Use encryption for this Area?|UShort|Yes|
+|maxDataAge|Max age of data when generating db&apos;s based on this area|UShort|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![area table relationship diagram](/media/loc/en/database/tables/area.png)
 
@@ -52,6 +51,7 @@ Definition of an Area (database subset for satellite and travel)
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[satellite](./satellite)  |Definition of Satellites |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -61,3 +61,4 @@ Definition of an Area (database subset for satellite and travel)
 ## Security Flags
 
 * No access control via user's Role.
+

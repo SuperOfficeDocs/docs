@@ -1,35 +1,34 @@
 ---
-uid: table-SearchCriteriaGroup
 title: SearchCriteriaGroup table
 description: Criteria storage for Selection and other Find mechanisms
 generated: true
-keywords: ['database table SearchCriteriaGroup']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Searchcriteriagroup from "./includes/searchcriteriagroup.md";
+import Searchcriteriagroup from "./includes/searchcriteriagroup.mdx";
 
-# SearchCriteriaGroup Table (202)
+## SearchCriteriaGroup Table (202)
 
 Criteria storage for Selection and other Find mechanisms
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|SearchCriteriaGroup\_id|Primary key|PK| |
-|SearchCriteria\_id|Owning model|FK [SearchCriteria](./searchcriteria)| |
-|name|The name of this criteria group|String(254)| |
-|textId|Extra information (descriptive) for this Criteria Group|FK [text](./text)|&#x25CF;|
-|direction|0 = Add, 1 = Subtract this group from the total result|Enum [CriteriaGroupDirection](./enums/criteriagroupdirection)| |
-|rank|Rank order within this CriteriaModel|UShort| |
-|active|Should this group be executed|UShort| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|SearchCriteriaGroup\_id|Primary key|PK|No|
+|SearchCriteria\_id|Owning model|FK [SearchCriteria](./searchcriteria.mdx)|No|
+|name|The name of this criteria group|String(254)|No|
+|textId|Extra information (descriptive) for this Criteria Group|FK [text](./text.mdx)|Yes|
+|direction|0 = Add, 1 = Subtract this group from the total result|Enum [CriteriaGroupDirection](./enums/criteriagroupdirection.mdx)|No|
+|rank|Rank order within this CriteriaModel|UShort|No|
+|active|Should this group be executed|UShort|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SearchCriteriaGroup table relationship diagram](/media/loc/en/database/tables/SearchCriteriaGroup.png)
 
@@ -50,6 +49,7 @@ Criteria storage for Selection and other Find mechanisms
 |[SearchCriterion](./searchcriterion)  |Criteria storage for Selection and other Find mechanisms |
 |[text](./text)  |Long text fields from all over the system |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -59,3 +59,4 @@ Criteria storage for Selection and other Find mechanisms
 ## Security Flags
 
 * No access control via user's Role.
+

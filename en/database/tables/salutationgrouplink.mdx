@@ -1,31 +1,30 @@
 ---
-uid: table-SalutationGroupLink
 title: SalutationGroupLink table
 description: User group link table for Salutation, for MDO item hiding
 generated: true
-keywords: ['database table SalutationGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Salutationgrouplink from "./includes/salutationgrouplink.md";
+import Salutationgrouplink from "./includes/salutationgrouplink.mdx";
 
-# SalutationGroupLink Table (220)
+## SalutationGroupLink Table (220)
 
 User group link table for Salutation, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|salutationgrouplink\_id|Primary key|PK| |
-|salutation\_id|Link to Salutation list table|FK [Salutation](./salutation)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|salutationgrouplink\_id|Primary key|PK|No|
+|salutation\_id|Link to Salutation list table|FK [Salutation](./salutation.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SalutationGroupLink table relationship diagram](/media/loc/en/database/tables/SalutationGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for Salutation, for MDO item hiding
 |[Salutation](./salutation)  |Academic title for Person |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for Salutation, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

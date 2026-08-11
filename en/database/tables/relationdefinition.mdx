@@ -1,35 +1,34 @@
 ---
-uid: table-relationdefinition
 title: relationdefinition table
 description: Definition of a relation. This table defines the relations that can exist in the database. Each relation has an active text and a passive text. The table RelationTarget specifies which pairs of tables this relation can connect.  Use of the active and passive texts is dependent on which direction the relation is viewed in, e.g., active text = &quot;Owns&quot; and passive text = &quot;Is owned by&quot;.
 generated: true
-keywords: ['database table relationdefinition']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Relationdefinition from "./includes/relationdefinition.md";
+import Relationdefinition from "./includes/relationdefinition.mdx";
 
-# relationdefinition Table (48)
+## relationdefinition Table (48)
 
 Definition of a relation. This table defines the relations that can exist in the database. Each relation has an active text and a passive text. The table RelationTarget specifies which pairs of tables this relation can connect.  Use of the active and passive texts is dependent on which direction the relation is viewed in, e.g., active text = &quot;Owns&quot; and passive text = &quot;Is owned by&quot;.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|reldef\_id|Primary key|PK| |
-|name|Active text|String(239)|&#x25CF;|
-|rank|Rank order |UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|passive\_text|Text used in passive direction|String(254)|&#x25CF;|
-|defcomment|Comment|String(254)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|reldef\_id|Primary key|PK|No|
+|name|Active text|String(239)|Yes|
+|rank|Rank order |UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|passive\_text|Text used in passive direction|String(254)|Yes|
+|defcomment|Comment|String(254)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![relationdefinition table relationship diagram](/media/loc/en/database/tables/relationdefinition.png)
 
@@ -50,6 +49,7 @@ Definition of a relation. This table defines the relations that can exist in the
 |[RelDefGroupLink](./reldefgrouplink)  |User group link table for RelDef, for MDO item hiding |
 |[RelDefHeadingLink](./reldefheadinglink)  |Heading link table for RelDef, for MDO headers |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -59,3 +59,4 @@ Definition of a relation. This table defines the relations that can exist in the
 ## Security Flags
 
 * No access control via user's Role.
+

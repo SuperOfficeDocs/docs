@@ -1,34 +1,33 @@
 ---
-uid: table-external_document
 title: external_document table
 description: This table stores documents which can be viewed externaly, through the customer module
 generated: true
-keywords: ['database table external_document']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ExternalDocument from "./includes/external-document.md";
+import ExternalDocument from "./includes/external-document.mdx";
 
-# external\_document Table (401)
+## external\_document Table (401)
 
 This table stores documents which can be viewed externaly, through the customer module
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|hierarchy\_id|This document belongs to the following folder|FK [hierarchy](./hierarchy)| |
-|attachment\_id|The attachment.id for the attachment associated with this external document.|FK [attachment](./attachment)| |
-|title|The title for the document|String(255)| |
-|description|The description of the external document|Clob|&#x25CF;|
-|created\_at|When the document was created|DateTime|&#x25CF;|
-|created\_by|Who created the document|FK [ejuser](./ejuser)| |
-|last\_changed|When the document last was changed|DateTime|&#x25CF;|
-|changed\_by|Who last changed the document|FK [ejuser](./ejuser)|&#x25CF;|
-|deleted|A boolean telling if the external document is to be treated as deleted|Bool| |
-|s\_message|Relation to s_message if this document is an image in a newsletter|FK [s_message](./s-message)|&#x25CF;|
+|id|Primary key|PK|No|
+|hierarchy\_id|This document belongs to the following folder|FK [hierarchy](./hierarchy.mdx)|No|
+|attachment\_id|The attachment.id for the attachment associated with this external document.|FK [attachment](./attachment.mdx)|No|
+|title|The title for the document|String(255)|No|
+|description|The description of the external document|Clob|Yes|
+|created\_at|When the document was created|DateTime|Yes|
+|created\_by|Who created the document|FK [ejuser](./ejuser.mdx)|No|
+|last\_changed|When the document last was changed|DateTime|Yes|
+|changed\_by|Who last changed the document|FK [ejuser](./ejuser.mdx)|Yes|
+|deleted|A boolean telling if the external document is to be treated as deleted|Bool|No|
+|s\_message|Relation to s_message if this document is an image in a newsletter|FK [s_message](./s-message.mdx)|Yes|
+
 
 ![external_document table relationship diagram](/media/loc/en/database/tables/external_document.png)
 
@@ -54,6 +53,7 @@ This table stores documents which can be viewed externaly, through the customer 
 |[hierarchy](./hierarchy)  |This table contains folders used to group the extra tables in the system. |
 |[s\_message](./s-message)  |A message used in a shipment. Can be html and/or plain text |
 
+
 ## Replication Flags
 
 * None
@@ -61,3 +61,4 @@ This table stores documents which can be viewed externaly, through the customer 
 ## Security Flags
 
 * No access control via user's Role.
+

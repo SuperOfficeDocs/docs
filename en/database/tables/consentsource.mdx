@@ -1,35 +1,34 @@
 ---
-uid: table-ConsentSource
 title: ConsentSource table
 description: Consent source for GDPR
 generated: true
-keywords: ['database table ConsentSource']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Consentsource from "./includes/consentsource.md";
+import Consentsource from "./includes/consentsource.mdx";
 
-# ConsentSource Table (470)
+## ConsentSource Table (470)
 
 Consent source for GDPR
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|consentsource\_id|Primary key|PK| |
-|name|Name of consent source|String(4000)| |
-|rank|Rank of this consent source|UShort|&#x25CF;|
-|tooltip|Tooltip for this consent source|String(4000)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|key|The key used to uniquely identify this consent source|String(255)|&#x25CF;|
-|mailTemplate\_id|The document template to be used for sending &apos;You have been added to our system, is this ok&apos; emails when a new person is registered using this source|FK [DocTmpl](./doctmpl)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|consentsource\_id|Primary key|PK|No|
+|name|Name of consent source|String(4000)|No|
+|rank|Rank of this consent source|UShort|Yes|
+|tooltip|Tooltip for this consent source|String(4000)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|key|The key used to uniquely identify this consent source|String(255)|Yes|
+|mailTemplate\_id|The document template to be used for sending &apos;You have been added to our system, is this ok&apos; emails when a new person is registered using this source|FK [DocTmpl](./doctmpl.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ConsentSource table relationship diagram](/media/loc/en/database/tables/ConsentSource.png)
 
@@ -49,6 +48,7 @@ Consent source for GDPR
 |[ConsentPerson](./consentperson)  |Link table that defines who has which consents |
 |[DocTmpl](./doctmpl)  |DocTmpl list table. Describes templates available for writing new documents. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ Consent source for GDPR
 ## Security Flags
 
 * No access control via user's Role.
+

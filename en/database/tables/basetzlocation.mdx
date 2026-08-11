@@ -1,33 +1,32 @@
 ---
-uid: table-BaseTZLocation
 title: BaseTZLocation table
 description: Time zone location for the database (how tz-related datetimes should be stored in the database)
 generated: true
-keywords: ['database table BaseTZLocation']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Basetzlocation from "./includes/basetzlocation.md";
+import Basetzlocation from "./includes/basetzlocation.mdx";
 
-# BaseTZLocation Table (248)
+## BaseTZLocation Table (248)
 
 Time zone location for the database (how tz-related datetimes should be stored in the database)
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|BaseTZLocation\_id|Primary key|PK| |
-|TZLocation\_id|Country that this timezone location is defined for|FK [TZLocation](./tzlocation)| |
-|validFrom|When is this tzLocation valid from, as THE database timezonelocation|DateTime| |
-|databaseId|Actually travelcurrent.current_id, the id of the database this basetimezonelocation is meant for|Id| |
-|description|Descriptive text|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|BaseTZLocation\_id|Primary key|PK|No|
+|TZLocation\_id|Country that this timezone location is defined for|FK [TZLocation](./tzlocation.mdx)|No|
+|validFrom|When is this tzLocation valid from, as THE database timezonelocation|DateTime|No|
+|databaseId|Actually travelcurrent.current_id, the id of the database this basetimezonelocation is meant for|Id|No|
+|description|Descriptive text|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![BaseTZLocation table relationship diagram](/media/loc/en/database/tables/BaseTZLocation.png)
 
@@ -45,6 +44,7 @@ Time zone location for the database (how tz-related datetimes should be stored i
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[TZLocation](./tzlocation)  |Time zone location |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -54,3 +54,4 @@ Time zone location for the database (how tz-related datetimes should be stored i
 ## Security Flags
 
 * No access control via user's Role.
+

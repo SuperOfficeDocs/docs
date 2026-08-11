@@ -1,31 +1,30 @@
 ---
-uid: table-OwnerContactLink
 title: OwnerContactLink table
-description: Table specifying which contacts can own associates.  All contacts that have rows in this table (i.e. rows with contact_id pointing to them) will be offered as associate owners in the maintenance client and as candidate Satellite owners. Such contacts have restrictions on editing and deletion to protect database consistency.
+description: Table specifying which contacts can own associates.  All contacts that have rows in this table (i.e. rows with contact_id pointing to them) will be offered as associate owners in the maintenance client and as candidate Satellite owners. Such contacts have restrictions on editing and deletion to protect database consistency. 
 generated: true
-keywords: ['database table OwnerContactLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Ownercontactlink from "./includes/ownercontactlink.md";
+import Ownercontactlink from "./includes/ownercontactlink.mdx";
 
-# OwnerContactLink Table (167)
+## OwnerContactLink Table (167)
 
-Table specifying which contacts can own associates.  All contacts that have rows in this table (i.e. rows with contact_id pointing to them) will be offered as associate owners in the maintenance client and as candidate Satellite owners. Such contacts have restrictions on editing and deletion to protect database consistency.
+Table specifying which contacts can own associates.  All contacts that have rows in this table (i.e. rows with contact_id pointing to them) will be offered as associate owners in the maintenance client and as candidate Satellite owners. Such contacts have restrictions on editing and deletion to protect database consistency. 
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|OwnerContactLink\_id|Primary key|PK| |
-|contact\_id|Contact reference|FK [contact](./contact)| |
-|remark|Comment text|String(254)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|OwnerContactLink\_id|Primary key|PK|No|
+|contact\_id|Contact reference|FK [contact](./contact.mdx)|No|
+|remark|Comment text|String(254)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![OwnerContactLink table relationship diagram](/media/loc/en/database/tables/OwnerContactLink.png)
 
@@ -44,6 +43,7 @@ Table specifying which contacts can own associates.  All contacts that have rows
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[contact](./contact)  |Companies and Organizations. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -53,3 +53,4 @@ Table specifying which contacts can own associates.  All contacts that have rows
 ## Security Flags
 
 * No access control via user's Role.
+

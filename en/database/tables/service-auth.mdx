@@ -1,37 +1,36 @@
 ---
-uid: table-service_auth
 title: service_auth table
 description: Authentication for a service (imap, smtp...)
 generated: true
-keywords: ['database table service_auth']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ServiceAuth from "./includes/service-auth.md";
+import ServiceAuth from "./includes/service-auth.mdx";
 
-# service\_auth Table (493)
+## service\_auth Table (493)
 
 Authentication for a service (imap, smtp...)
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|service\_auth\_id|Primary key|PK| |
-|server|The mail server|String(255)|&#x25CF;|
-|port|The server port|Int|&#x25CF;|
-|auth\_type|The type of authentication, plain-text, OAuth...|String(255)|&#x25CF;|
-|username|The username|String(255)|&#x25CF;|
-|password|The (encrypted) password or token|String(255)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|associate\_id|Associate who owns this authentication entry|FK [associate](./associate)|&#x25CF;|
-|auth\_status|The status of this authentication entry|Enum [ServiceAuthStatus](./enums/serviceauthstatus)|&#x25CF;|
-|encryptedCheck|Encrypted hash checksum|String(254)| |
+|service\_auth\_id|Primary key|PK|No|
+|server|The mail server|String(255)|Yes|
+|port|The server port|Int|Yes|
+|auth\_type|The type of authentication, plain-text, OAuth...|String(255)|Yes|
+|username|The username|String(255)|Yes|
+|password|The (encrypted) password or token|String(255)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|associate\_id|Associate who owns this authentication entry|FK [associate](./associate.mdx)|Yes|
+|auth\_status|The status of this authentication entry|Enum [ServiceAuthStatus](./enums/serviceauthstatus.mdx)|Yes|
+|encryptedCheck|Encrypted hash checksum|String(254)|No|
+
 
 ![service_auth table relationship diagram](/media/loc/en/database/tables/service_auth.png)
 
@@ -49,6 +48,7 @@ Authentication for a service (imap, smtp...)
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[email\_account](./email-account)  |Email account information |
 
+
 ## Replication Flags
 
 * None
@@ -56,3 +56,4 @@ Authentication for a service (imap, smtp...)
 ## Security Flags
 
 * No access control via user's Role.
+

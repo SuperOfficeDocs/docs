@@ -1,31 +1,30 @@
 ---
-uid: table-PriceUnitGroupLink
 title: PriceUnitGroupLink table
 description: User group link table for PriceUnit, for MDO item hiding
 generated: true
-keywords: ['database table PriceUnitGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Priceunitgrouplink from "./includes/priceunitgrouplink.md";
+import Priceunitgrouplink from "./includes/priceunitgrouplink.mdx";
 
-# PriceUnitGroupLink Table (440)
+## PriceUnitGroupLink Table (440)
 
 User group link table for PriceUnit, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|priceunitgrouplink\_id|Primary key|PK| |
-|priceunit\_id|Link to PriceUnit list table|FK [PriceUnit](./priceunit)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|priceunitgrouplink\_id|Primary key|PK|No|
+|priceunit\_id|Link to PriceUnit list table|FK [PriceUnit](./priceunit.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![PriceUnitGroupLink table relationship diagram](/media/loc/en/database/tables/PriceUnitGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for PriceUnit, for MDO item hiding
 |[PriceUnit](./priceunit)  |The list of price units, in the internal product register (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever) |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for PriceUnit, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

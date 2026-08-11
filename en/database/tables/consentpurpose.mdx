@@ -1,39 +1,38 @@
 ---
-uid: table-ConsentPurpose
 title: ConsentPurpose table
 description: GDPR purpose alternatives
 generated: true
-keywords: ['database table ConsentPurpose']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Consentpurpose from "./includes/consentpurpose.md";
+import Consentpurpose from "./includes/consentpurpose.mdx";
 
-# ConsentPurpose Table (468)
+## ConsentPurpose Table (468)
 
 GDPR purpose alternatives
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|consentpurpose\_id|Primary key|PK| |
-|name|The name of this purpose|String(4000)|&#x25CF;|
-|rank|Rank order|UShort|&#x25CF;|
-|tooltip|List item tooltip|String(4000)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|key|The key used to refer to this purpose, like #Process, #Emarketing etc.|String(255)|&#x25CF;|
-|consentText|Form text used for the actual checkbox|String(4000)|&#x25CF;|
-|formText|Text for the consent form, the long text to be shown when asking the end-user for this kind of consent|Clob|&#x25CF;|
-|privacyStatementDesc|A heading or description of the privacy text|String(4000)|&#x25CF;|
-|privacyStatementUrl|Url referencing the actual privacy statement text; may have different urls for different languages|String(4000)|&#x25CF;|
-|active|True if this consent purpose is active|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|consentpurpose\_id|Primary key|PK|No|
+|name|The name of this purpose|String(4000)|Yes|
+|rank|Rank order|UShort|Yes|
+|tooltip|List item tooltip|String(4000)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|key|The key used to refer to this purpose, like #Process, #Emarketing etc.|String(255)|Yes|
+|consentText|Form text used for the actual checkbox|String(4000)|Yes|
+|formText|Text for the consent form, the long text to be shown when asking the end-user for this kind of consent|Clob|Yes|
+|privacyStatementDesc|A heading or description of the privacy text|String(4000)|Yes|
+|privacyStatementUrl|Url referencing the actual privacy statement text; may have different urls for different languages|String(4000)|Yes|
+|active|True if this consent purpose is active|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ConsentPurpose table relationship diagram](/media/loc/en/database/tables/ConsentPurpose.png)
 
@@ -53,6 +52,7 @@ GDPR purpose alternatives
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[ConsentPerson](./consentperson)  |Link table that defines who has which consents |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -62,3 +62,4 @@ GDPR purpose alternatives
 ## Security Flags
 
 * No access control via user's Role.
+

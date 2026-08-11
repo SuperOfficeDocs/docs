@@ -1,34 +1,33 @@
 ---
-uid: table-ErpConnectionAccess
 title: ErpConnectionAccess table
 description: Access control for Erp Connections
 generated: true
-keywords: ['database table ErpConnectionAccess']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Erpconnectionaccess from "./includes/erpconnectionaccess.md";
+import Erpconnectionaccess from "./includes/erpconnectionaccess.mdx";
 
-# ErpConnectionAccess Table (420)
+## ErpConnectionAccess Table (420)
 
 Access control for Erp Connections
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|erpconnectionaccess\_id|Primary key|PK| |
-|ErpConnectionId|Link to Erp connection we&apos;re granting access for|FK [ErpConnection](./erpconnection)| |
-|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate)|&#x25CF;|
-|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup)|&#x25CF;|
-|CanConnect|If set, then this user/group is allowed to create and break connections between EXISTING actors in ERP and CRM|Bool|&#x25CF;|
-|CanCreateERP|If set, then this user/group is allowed to create NEW actors in ERP and connect them to CRM|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|erpconnectionaccess\_id|Primary key|PK|No|
+|ErpConnectionId|Link to Erp connection we&apos;re granting access for|FK [ErpConnection](./erpconnection.mdx)|No|
+|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate.mdx)|Yes|
+|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup.mdx)|Yes|
+|CanConnect|If set, then this user/group is allowed to create and break connections between EXISTING actors in ERP and CRM|Bool|Yes|
+|CanCreateERP|If set, then this user/group is allowed to create NEW actors in ERP and connect them to CRM|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ErpConnectionAccess table relationship diagram](/media/loc/en/database/tables/ErpConnectionAccess.png)
 
@@ -47,6 +46,7 @@ Access control for Erp Connections
 |[ErpConnection](./erpconnection)  |One connection to an ERP connector, specifying Client and other required information |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Access control for Erp Connections
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,32 +1,31 @@
 ---
-uid: table-cc_template
 title: cc_template table
 description: This table contains templates for the customer center
 generated: true
-keywords: ['database table cc_template']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import CcTemplate from "./includes/cc-template.md";
+import CcTemplate from "./includes/cc-template.mdx";
 
-# cc\_template Table (480)
+## cc\_template Table (480)
 
 This table contains templates for the customer center
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|cc\_template\_id|Primary key|PK| |
-|key|The key to this template, normally the local path and filename|String(255)| |
-|body|The HTML body for this template|Clob|&#x25CF;|
-|type|What kind of template is in this row|Enum [CcTemplateType](./enums/cctemplatetype)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|cc\_template\_id|Primary key|PK|No|
+|key|The key to this template, normally the local path and filename|String(255)|No|
+|body|The HTML body for this template|Clob|Yes|
+|type|What kind of template is in this row|Enum [CcTemplateType](./enums/cctemplatetype.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![cc_template table relationship diagram](/media/loc/en/database/tables/cc_template.png)
 
@@ -44,6 +43,7 @@ This table contains templates for the customer center
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ This table contains templates for the customer center
 ## Security Flags
 
 * No access control via user's Role.
+

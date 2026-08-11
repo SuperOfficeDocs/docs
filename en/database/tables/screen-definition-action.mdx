@@ -1,29 +1,28 @@
 ---
-uid: table-screen_definition_action
 title: screen_definition_action table
 description: An action to perform for a certain button in an screen
 generated: true
-keywords: ['database table screen_definition_action']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ScreenDefinitionAction from "./includes/screen-definition-action.md";
+import ScreenDefinitionAction from "./includes/screen-definition-action.mdx";
 
-# screen\_definition\_action Table (371)
+## screen\_definition\_action Table (371)
 
 An action to perform for a certain button in an screen
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition)|&#x25CF;|
-|button|The name of the button triggering this action|String(255)|&#x25CF;|
-|ejscript|Deprecated. The ejscript to execute if this is a form which is posted|FK [ejscript](./ejscript)|&#x25CF;|
-|ejscript\_body|The script to execute for this button/action|Clob|&#x25CF;|
-|do\_check|If set, then run check() before executing button (making sure values in form fields are ok)|Bool|&#x25CF;|
+|id|Primary key|PK|No|
+|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition.mdx)|Yes|
+|button|The name of the button triggering this action|String(255)|Yes|
+|ejscript|Deprecated. The ejscript to execute if this is a form which is posted|FK [ejscript](./ejscript.mdx)|Yes|
+|ejscript\_body|The script to execute for this button/action|Clob|Yes|
+|do\_check|If set, then run check() before executing button (making sure values in form fields are ok)|Bool|Yes|
+
 
 ![screen_definition_action table relationship diagram](/media/loc/en/database/tables/screen_definition_action.png)
 
@@ -43,6 +42,7 @@ An action to perform for a certain button in an screen
 |[ejscript](./ejscript)  |ejscript |
 |[screen\_definition](./screen-definition)  |A configurable screen |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ An action to perform for a certain button in an screen
 ## Security Flags
 
 * No access control via user's Role.
+
