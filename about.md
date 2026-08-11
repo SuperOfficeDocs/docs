@@ -4,12 +4,10 @@ title: About docs.superoffice.com
 description: Overview of the SuperOfficeDocs GitHub organization and how to contribute to the SuperOffice documentation site.
 keywords: SuperOfficeDocs, GitHub, contribute, documentation, Mintlify
 author: digitaldiina
-date: 07.09.2026
+date: 08.11.2026
 content_type: concept
 language: en
 ---
-
-# About docs.superoffice.com
 
 ## SuperOffice Docs
 
@@ -19,13 +17,19 @@ The content comes from the `docs` repository and is built and hosted by Mintlify
 
 ## Interactive documentation
 
-You may click on the **Share** button to share interesting content with like-minded folk.
+Near the top of each article, the contextual menu offers quick actions: copy the page as Markdown, view it as plain Markdown, open it as context in ChatGPT, Claude, or Perplexity, or connect it to Cursor or VS Code.
 
-You may click on the **Feedback** button to provide relevant feedback on specific articles.
+![Contextual menu open on an article -screenshot][img1]
 
-You may click on the **Edit** button to suggest an improvement on the existing article content.
+At the bottom of each article, a feedback widget asks whether the page was helpful. A **Yes** or **No** rating goes to SuperOffice's Mintlify dashboard. The **Suggest edits** button opens a pull request against this repository with your proposed change, and the **Raise issue** button opens a new GitHub issue against this repository.
 
-In addition to contributing feedback, or suggesting edits, you can clone the repository and directly contribute to the improvements of `docs.superoffice.com`.
+![Feedback widget at the bottom of an article -screenshot][img2]
+
+You can also switch the site between light, dark, and system theme using the toggle in the header.
+
+![Theme toggle dropdown open -screenshot][img3]
+
+You can also use the **Site feedback** link in the site footer to raise an issue in the separate [SuperOfficeDocs/feedback][3] repository, distinct from the **Raise issue** button above, which targets this `docs` repository directly. In addition to contributing feedback, or suggesting edits, you can clone the repository and directly contribute to the improvements of `docs.superoffice.com`.
 
 ## Contributing to SuperOfficeDocs
 
@@ -33,3 +37,7 @@ To learn the basics of contributing to the SuperOffice Docs project on GitHub, s
 
 [1]: https://www.superoffice.com
 [2]: contribute/index
+[3]: https://github.com/SuperOfficeDocs/feedback
+[img1]: /media/loc/en/contribute/about-contextual-menu.png
+[img2]: /media/loc/en/contribute/about-feedback-widget.png
+[img3]: /media/loc/en/contribute/about-theme-toggle.png
