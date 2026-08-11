@@ -44,11 +44,11 @@ A Mintlify community report (October 2025) describes a case where a page serving
 
 A per-PR link check only catches breaks introduced by that PR. A separate, Mintlify-hosted automation periodically re-scans the *entire* site, catching drift from any source - including direct admin-bypass pushes that skip PR review entirely.
 
-* **Type**: `broken-link-detection` (`mint automations create --type broken-link-detection`)
-* **Cadence**: `0 6 1,15 * *` - the 1st and 15th of each month, run at 06:00. Standard cron has no native "every 2 weeks" field; this is the closest non-drifting approximation of a biweekly cadence (actual gaps land at 13-16 days depending on the month).
-* **Auto-merge**: off. When the automation finds and fixes a broken link, it opens a PR like any other change - it goes through the same manual review as everything else in this repo, it does not merge itself.
-* **What it does**: for each broken internal link, it checks whether the target page was renamed or moved and updates the link, or - if the target was removed entirely - edits the surrounding copy to remove or replace the reference.
-* **Cost**: billed in Mintlify credits per run (rough public estimate: ~285 credits/run) - a real operating cost, not a free background job.
+* **Type:** `broken-link-detection` (`mint automations create --type broken-link-detection`)
+* **Cadence:** `0 6 1,15 * *` - the 1st and 15th of each month, run at 06:00. Standard cron has no native "every 2 weeks" field; this is the closest non-drifting approximation of a biweekly cadence (actual gaps land at 13-16 days depending on the month).
+* **Auto-merge:** off. When the automation finds and fixes a broken link, it opens a PR like any other change - it goes through the same manual review as everything else in this repo, it does not merge itself.
+* **What it does:** for each broken internal link, it checks whether the target page was renamed or moved and updates the link, or - if the target was removed entirely - edits the surrounding copy to remove or replace the reference.
+* **Cost:** billed in Mintlify credits per run (rough public estimate: ~285 credits/run) - a real operating cost, not a free background job.
 
 See [issue #81][4] for the setup record (creation command, confirmed `mint automations list` output).
 
