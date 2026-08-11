@@ -31,13 +31,13 @@ their own language's nav, unprefixed/shared pages against the fully-resolved
 English nav tree (the only one that individually enumerates
 integrations/release-notes content; other languages only have a single
 shallow stub page for those tabs). A hand-flagged page missing from the
-relevant nav tree is logged, not dropped -- it's still a real page Userflow
+relevant nav tree is logged, not dropped -- it is still a real page Userflow
 should be able to link to, but nav-listing drift is worth a human's
 attention.
 
 No dependency on a built site, Mintlify's own `sitemap.xml`, or any other
 build artifact -- this walks the checked-in source tree and nav config
-directly, so it's safe and correct to re-run any time a `learn/` or
+directly, so it is safe and correct to re-run any time a `learn/` or
 `userflow-index` page is added, moved, renamed, or deleted, independent of
 any scheduled regeneration.
 
