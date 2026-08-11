@@ -10,7 +10,7 @@ content_type: concept
 category: customization
 topic: soprotocol
 redirect_from: /en/ui/soprotocol/index
-index: true
+userflow_index: true
 language: en
 ---
 

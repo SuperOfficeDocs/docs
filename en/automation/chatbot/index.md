@@ -5,7 +5,7 @@ author: christianm
 date: 03.08.2021
 keywords: ['chatbot', 'ai']
 content_type: concept
-index: true
+userflow_index: true
 ---
 
 ## Chatbot needs AI License

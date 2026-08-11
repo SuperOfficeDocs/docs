@@ -10,7 +10,7 @@ audience: api
 audience_tooltip: SuperOffice APIs and database
 category: settings
 topic: user preferences
-index: true
+userflow_index: true
 language: en
 redirect_from: /en/admin/user-preferences/add-prefdesc
 hidden: true

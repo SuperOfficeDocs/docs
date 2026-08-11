@@ -14,7 +14,7 @@ category: privacy
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/admin/lists/learn/privacy-legal-base-add
-index: true
+userflow_index: true
 language: nl
 ---
 

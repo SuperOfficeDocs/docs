@@ -11,7 +11,7 @@ audience: api
 audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/globalization-and-localization/index
 language: en
-index: true
+userflow_index: true
 ---
 
 SuperOffice has great support for globalization by providing a culture-neutral and language-neutral user interface that supports localized labels and regional data throughout the application, as well as exposing an API to augment string resources throughout the platform.

@@ -7,7 +7,7 @@ author: SuperOffice Product and Engineering
 date: 09.12.2025
 content_type: concept
 redirect_from: /en/document/odf
-index: true
+userflow_index: true
 language: en
 ---
 

@@ -18,7 +18,7 @@ redirect_from:
   - /nl/email/gmail-link/learn/index
   - /no/email/gmail-link/learn/index
   - /sv/email/gmail-link/learn/index
-index: true
+userflow_index: true
 ---
 
 SuperOffice Gmail Link is a plug-in that links the Google Gmail client with SuperOffice. This means that among other things, you can:

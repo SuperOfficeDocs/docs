@@ -14,7 +14,7 @@ category: privacy
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 redirect_from: /no/security/privacy/learn/admin/add-consent-purpose
-index: true
+userflow_index: true
 language: no
 ---
 

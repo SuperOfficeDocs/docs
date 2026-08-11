@@ -11,7 +11,7 @@ content_type: reference
 category: email
 topic: mailgun
 redirect_from: /en/email/mailgun/sub-processor-info
-index: true
+userflow_index: true
 language: en
 ---
 

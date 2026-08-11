@@ -10806,5 +10806,29 @@
   {
     "source": "/release-notes/10.1/development-products/*",
     "destination": "/release-notes/10.1/index"
+  },
+  {
+    "source": "/learn-en.html",
+    "destination": "/learn-en"
+  },
+  {
+    "source": "/learn-da.html",
+    "destination": "/learn-da"
+  },
+  {
+    "source": "/learn-de.html",
+    "destination": "/learn-de"
+  },
+  {
+    "source": "/learn-nl.html",
+    "destination": "/learn-nl"
+  },
+  {
+    "source": "/learn-no.html",
+    "destination": "/learn-no"
+  },
+  {
+    "source": "/learn-sv.html",
+    "destination": "/learn-sv"
   }
 ]

@@ -13,7 +13,7 @@ deployment: online
 platform: web
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/configure-permissions-templates
-index: true
+userflow_index: true
 ---
 
 We recommend that you create a separate SharePoint document library on your SuperOffice Document site for your templates.

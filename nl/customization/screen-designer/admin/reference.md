@@ -14,7 +14,7 @@ topic: screen designer
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/customization/screen-designer/reference
-index: true
+userflow_index: true
 language: nl
 ---
 

@@ -12,7 +12,7 @@ deployment: online
 platform: web
 language: en
 redirect_from: /en/diary/video-meetings/index
-index: true
+userflow_index: true
 ---
 
 ## Pre-requisites

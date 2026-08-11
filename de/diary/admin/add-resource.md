@@ -13,7 +13,7 @@ audience_tooltip: Settings and maintenance
 redirect_from:
   - /de/admin/lists/learn/resource
   - /de/admin/lists/learn/adding-items-to-resource-list
-index: true
+userflow_index: true
 language: de
 ---
 

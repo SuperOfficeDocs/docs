@@ -12,7 +12,7 @@ tier: starter
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
 redirect_from: /de/request/learn/priority/index
-index: true
+userflow_index: true
 language: de
 ---
 

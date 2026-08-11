@@ -12,7 +12,7 @@ category: customization
 topic: web panel
 audience: settings
 audience_tooltip: Settings and maintenance
-index: true
+userflow_index: true
 language: sv
 ---
 

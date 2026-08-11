@@ -10,7 +10,7 @@ version: 12
 content_type: howto
 platform: web
 deployment: online
-index: true
+userflow_index: true
 language: en
 ---
 

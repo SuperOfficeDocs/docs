@@ -10,7 +10,7 @@ content_type: reference
 category: email
 topic: mailgun
 redirect_from: /en/email/mailgun/security
-index: true
+userflow_index: true
 language: en
 ---
 

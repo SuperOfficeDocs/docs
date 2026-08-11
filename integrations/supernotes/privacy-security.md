@@ -9,7 +9,7 @@ content_type: reference
 category: integration
 topic: SuperNotes
 language: en
-index: true
+userflow_index: true
 ---
 
 Find answers to common questions about how SuperNotes handles your data.

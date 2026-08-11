@@ -13,7 +13,7 @@ topic: web panel
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/ui/web-panels/url-encoding.html
-index: true
+userflow_index: true
 language: en
 ---
 

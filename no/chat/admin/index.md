@@ -11,7 +11,7 @@ tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/chat/learn/admin/index
-index: true
+userflow_index: true
 language: no
 ---
 

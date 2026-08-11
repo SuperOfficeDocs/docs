@@ -15,7 +15,7 @@ audience_tooltip: Settings and maintenance
 redirect_from:
   - /sv/ui/web-panels/learn/index
   - /sv/admin/lists/learn/web-panel
-index: true
+userflow_index: true
 language: sv
 ---
 

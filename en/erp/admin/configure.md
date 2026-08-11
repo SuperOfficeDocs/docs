@@ -17,7 +17,7 @@ redirect_from:
   - /en/quote/learn/admin/sync/sync-configure-list-mapping
   - /en/quote/learn/admin/sync/sync-rank-fields-shown-in-erp-tab
   - /en/quote/learn/admin/sync/sync-set-sync-priority
-index: true
+userflow_index: true
 language: en
 ---
 

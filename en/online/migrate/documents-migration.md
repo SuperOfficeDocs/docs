@@ -8,7 +8,7 @@ author: Martin Pavlas
 date: 10.18.2023
 content_type: tutorial
 deployment: online, onsite
-index: true
+userflow_index: true
 language: en
 ---
 

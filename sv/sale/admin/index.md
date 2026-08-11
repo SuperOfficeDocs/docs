@@ -11,7 +11,7 @@ content_type: howto
 tier: core
 audience: settings
 audience_tooltip: Inställningar och underhåll
-index: true
+userflow_index: true
 language: sv
 ---
 

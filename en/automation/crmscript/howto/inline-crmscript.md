@@ -12,7 +12,7 @@ topic: howto
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/customer-center/inline-crmscript
-index: true
+userflow_index: true
 language: en
 ---
 

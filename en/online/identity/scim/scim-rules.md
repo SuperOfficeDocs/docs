@@ -11,7 +11,7 @@ category: identity management
 topic: scim
 platform: web
 deployment: online
-index: true
+userflow_index: true
 language: en
 ---
 
