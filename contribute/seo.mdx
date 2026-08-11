@@ -60,9 +60,9 @@ Six hidden pages, `learn-<lang>.mdx` at the repo root, serve this today. Each is
 * every page under that language's own `*/learn/*` folders
 * every page anywhere in the repo flagged `userflow_index: true` in frontmatter (see [Metadata][1]) — a hand-curated addition for pages outside a `learn` folder, such as `admin/` how-tos. A flagged page with no language prefix (for example `integrations/`) is treated as shared and appears in every language's list.
 
-[tools/build-learn-sitemaps.py][3] regenerates all six pages from the current content tree and nav config — no dependency on a built site, so it is safe to re-run any time a `learn` or `userflow_index` page changes. The old `/learn-<lang>.html` URLs redirect to the new pages via `config/redirects.json`, so nothing needs to change in Userflow's own settings.
+`tools/build-learn-sitemaps.py` regenerates all six pages from the current content tree and nav config — no dependency on a built site, so it is safe to re-run any time a `learn` or `userflow_index` page changes. The old `/learn-<lang>.html` URLs redirect to the new pages via `config/redirects.json`, so nothing needs to change in Userflow's own settings.
 
-No scheduled automation regenerates these pages yet, unlike the broken-link-detection automation in [Automated tests][4] — re-run the tool by hand for now.
+No scheduled automation regenerates these pages yet, unlike the broken-link-detection automation in [Automated tests][3] — re-run the tool by hand for now.
 
 ## Related content
 
@@ -71,5 +71,4 @@ No scheduled automation regenerates these pages yet, unlike the broken-link-dete
 
 [1]: ./markdown-guide/metadata
 [2]: ./configure-mintlify
-[3]: https://github.com/SuperOfficeDocs/docs/blob/main/tools/build-learn-sitemaps.py
-[4]: ./automated-tests
+[3]: ./automated-tests
