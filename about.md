@@ -1,8 +1,8 @@
 ---
-uid: getting-started-contribution
+uid: getting-started-contributing
 title: About docs.superoffice.com
 description: Overview of the SuperOfficeDocs GitHub organization and how to contribute to the SuperOffice documentation site.
-keywords: SuperOfficeDocs, GitHub, contribute, documentation, Mintlify
+keywords: ['SuperOfficeDocs', 'GitHub', 'contribute', 'documentation', 'Mintlify']
 author: digitaldiina
 date: 08.11.2026
 content_type: concept
@@ -27,7 +27,9 @@ At the bottom of each article, a feedback widget asks whether the page was helpf
 
 You can also switch the site between light, dark, and system theme using the toggle in the header.
 
-![Theme toggle dropdown open -screenshot][img3]
+![Theme toggle dropdown open in light mode -screenshot][img3]
+
+![Theme toggle dropdown open in dark mode -screenshot][img4]
 
 You can also use the **Site feedback** link in the site footer to raise an issue in the separate [SuperOfficeDocs/feedback][3] repository, distinct from the **Raise issue** button above, which targets this `docs` repository directly. In addition to contributing feedback, or suggesting edits, you can clone the repository and directly contribute to the improvements of `docs.superoffice.com`.
 
@@ -38,6 +40,8 @@ To learn the basics of contributing to the SuperOffice Docs project on GitHub, s
 [1]: https://www.superoffice.com
 [2]: contribute/index
 [3]: https://github.com/SuperOfficeDocs/feedback
+
 [img1]: /media/loc/en/contribute/about-contextual-menu.png
 [img2]: /media/loc/en/contribute/about-feedback-widget.png
-[img3]: /media/loc/en/contribute/about-theme-toggle.png
+[img3]: /media/loc/en/contribute/about-theme-toggle-light.png
+[img4]: /media/loc/en/contribute/about-theme-toggle-dark.png
