@@ -1,0 +1,54 @@
+# <a id="SuperOffice_WebApi_Data_Quote_GetOrderConfirmationRequest"></a> Class Quote\_GetOrderConfirmationRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class Quote_GetOrderConfirmationRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[Quote\_GetOrderConfirmationRequest](SuperOffice.WebApi.Data.Quote\_GetOrderConfirmationRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_Quote_GetOrderConfirmationRequest__ctor"></a> Quote\_GetOrderConfirmationRequest\(\)
+
+```csharp
+public Quote_GetOrderConfirmationRequest()
+```
+
+## Properties
+
+### <a id="SuperOffice_WebApi_Data_Quote_GetOrderConfirmationRequest_ConfirmationTemplateId"></a> ConfirmationTemplateId
+
+```csharp
+public int ConfirmationTemplateId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="SuperOffice_WebApi_Data_Quote_GetOrderConfirmationRequest_QuoteVersionId"></a> QuoteVersionId
+
+```csharp
+public int QuoteVersionId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
