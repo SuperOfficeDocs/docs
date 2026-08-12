@@ -40,6 +40,13 @@ try {
         exit 0
     }
 
+    # TEMP DEBUG -- diagnosing two specific files, remove before merge.
+    Write-Host "===DEBUG=== diff for nav-crmscript-ref.json (first 40 lines):"
+    git --no-pager diff --no-color -- config/nav-crmscript-ref.json | Select-Object -First 40
+    Write-Host "===DEBUG=== diff for CRMScript.NetServer.mdx (first 40 lines):"
+    git --no-pager diff --no-color -- en/automation/crmscript/reference/CRMScript.NetServer.mdx | Select-Object -First 40
+    Write-Host "===DEBUG=== end"
+
     Write-Host "::error::The CRMScript reference is out of sync with api-sources/crmscript."
     Write-Host ""
     Write-Host "Files that don't match a fresh regeneration:"
