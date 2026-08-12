@@ -11,3 +11,9 @@ __pycache__/
 # — third-party content, not ours to commit. Run `vale sync` after cloning.
 vale/Microsoft/
 vale/.vale-config/
+
+# tools/benchmarks/ (issue #90/#91 performance scripts) - npm deps and Lighthouse's own scratch
+# output; committed results live under tools/benchmarks/results/, not here.
+tools/benchmarks/node_modules/
+tools/benchmarks/.lighthouseci/
+tools/benchmarks/*.log

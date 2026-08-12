@@ -1,0 +1,16 @@
+{
+  "name": "docs-performance-benchmarks",
+  "private": true,
+  "type": "module",
+  "description": "Pre/post-cutover performance baseline scripts for issue #90 / #91 (Mintlify migration PVP comparison).",
+  "scripts": {
+    "pageload": "node run-pageload-benchmark.mjs",
+    "search:raw": "node search-latency-raw.mjs",
+    "search:e2e": "node search-latency.mjs",
+    "nav": "node nav-responsiveness.mjs"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0",
+    "playwright": "^1.48.0"
+  }
+}

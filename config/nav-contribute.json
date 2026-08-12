@@ -59,5 +59,6 @@
   "contribute/configure-mintlify",
   "contribute/seo",
   "contribute/deployment",
-  "contribute/automated-tests"
+  "contribute/automated-tests",
+  "contribute/performance-benchmarking"
 ]

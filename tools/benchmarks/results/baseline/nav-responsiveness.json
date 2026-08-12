@@ -1,0 +1,160 @@
+{
+  "generatedAt": "2026-08-12T09:59:14.302Z",
+  "runsPerPath": 15,
+  "results": {
+    "home-to-learn-article": [
+      {
+        "label": "Home -> Learn landing",
+        "n": 15,
+        "min": 88.75779999999986,
+        "p50": 102.91669999999976,
+        "p95": 191.69389999999999,
+        "max": 191.69389999999999
+      },
+      {
+        "label": "Learn landing -> Diary learn article",
+        "n": 15,
+        "min": 318.7035000000001,
+        "p50": 363.10239999999976,
+        "p95": 377.0787,
+        "max": 377.0787
+      }
+    ],
+    "home-to-online-subtopic": [
+      {
+        "label": "Home -> CRM Online landing",
+        "n": 15,
+        "min": 260.6460999999981,
+        "p50": 335.4251000000004,
+        "p95": 378.0074999999997,
+        "max": 378.0074999999997
+      },
+      {
+        "label": "CRM Online landing -> System requirements",
+        "n": 15,
+        "min": 287.27590000000055,
+        "p50": 327.03629999999976,
+        "p95": 396.0855999999985,
+        "max": 396.0855999999985
+      }
+    ],
+    "home-to-api-deep-leaf": [
+      {
+        "label": "Home -> API landing",
+        "n": 15,
+        "min": 269.97090000000026,
+        "p50": 294.9953999999998,
+        "p95": 375.5141999999978,
+        "max": 375.5141999999978
+      },
+      {
+        "label": "API landing -> Web Services",
+        "n": 15,
+        "min": 283.15209999999934,
+        "p50": 333.61479999999574,
+        "p95": 623.4749999999985,
+        "max": 623.4749999999985
+      }
+    ],
+    "home-to-release-notes-12": [
+      {
+        "label": "Home -> Release notes landing",
+        "n": 15,
+        "min": 265.98709999999846,
+        "p50": 294.2871000000014,
+        "p95": 326.00939999999537,
+        "max": 326.00939999999537
+      },
+      {
+        "label": "Release notes landing -> SuperOffice 12",
+        "n": 15,
+        "min": 288.2792999999947,
+        "p50": 330.8417000000045,
+        "p95": 402.8038000000015,
+        "max": 402.8038000000015
+      }
+    ],
+    "home-to-company-card-variable": [
+      {
+        "label": "Home -> Document landing",
+        "n": 15,
+        "min": 258.199099999998,
+        "p50": 296.92459999999846,
+        "p95": 400.12429999999586,
+        "max": 400.12429999999586
+      },
+      {
+        "label": "Document landing -> Document templates",
+        "n": 15,
+        "min": 114.17450000000827,
+        "p50": 154.9771000000037,
+        "p95": 201.93460000000778,
+        "max": 201.93460000000778
+      },
+      {
+        "label": "Document templates -> Template variables",
+        "n": 15,
+        "min": 970.4402000000118,
+        "p50": 1001.1101999999955,
+        "p95": 1017.0368999999919,
+        "max": 1017.0368999999919
+      },
+      {
+        "label": "Template variables -> Reference",
+        "n": 15,
+        "min": 955.7305999999953,
+        "p50": 985.2681000000011,
+        "p95": 1013.9994999999981,
+        "max": 1013.9994999999981
+      },
+      {
+        "label": "Reference -> Company (deep leaf, 5 hops from home)",
+        "n": 15,
+        "min": 465.00969999999506,
+        "p50": 488.3292999999976,
+        "p95": 1020.1919000000053,
+        "max": 1020.1919000000053
+      }
+    ],
+    "learn-toc-sibling": [
+      {
+        "label": "Learn: Introduction -> Get started (same left-side TOC)",
+        "n": 15,
+        "min": 138.15380000000005,
+        "p50": 158.79389999998966,
+        "p95": 196.63369999999122,
+        "max": 196.63369999999122
+      }
+    ],
+    "learn-to-integrations-cross-toc": [
+      {
+        "label": "Learn -> Integrations (top nav, different TOC)",
+        "n": 15,
+        "min": 288.14229999999225,
+        "p50": 318.3689999999915,
+        "p95": 386.5026999999973,
+        "max": 386.5026999999973
+      }
+    ],
+    "learn-to-api-cross-toc": [
+      {
+        "label": "Learn -> API Overview (Developer Guide dropdown, different TOC)",
+        "n": 15,
+        "min": 278.4856,
+        "p50": 343.015699999989,
+        "p95": 1614.464599999992,
+        "max": 1614.464599999992
+      }
+    ],
+    "switch-language": [
+      {
+        "label": "Learn (EN) -> Learn (Danish) via language switcher",
+        "n": 15,
+        "min": 238.680400000012,
+        "p50": 262.4181000000099,
+        "p95": 306.92800000001444,
+        "max": 306.92800000001444
+      }
+    ]
+  }
+}
