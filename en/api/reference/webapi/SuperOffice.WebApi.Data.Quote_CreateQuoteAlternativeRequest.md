@@ -1,0 +1,64 @@
+# <a id="SuperOffice_WebApi_Data_Quote_CreateQuoteAlternativeRequest"></a> Class Quote\_CreateQuoteAlternativeRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class Quote_CreateQuoteAlternativeRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[Quote\_CreateQuoteAlternativeRequest](SuperOffice.WebApi.Data.Quote\_CreateQuoteAlternativeRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_Quote_CreateQuoteAlternativeRequest__ctor"></a> Quote\_CreateQuoteAlternativeRequest\(\)
+
+```csharp
+public Quote_CreateQuoteAlternativeRequest()
+```
+
+## Properties
+
+### <a id="SuperOffice_WebApi_Data_Quote_CreateQuoteAlternativeRequest_QuoteAlternativeDescription"></a> QuoteAlternativeDescription
+
+```csharp
+public string QuoteAlternativeDescription { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_Quote_CreateQuoteAlternativeRequest_QuoteAlternativeName"></a> QuoteAlternativeName
+
+```csharp
+public string QuoteAlternativeName { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_Quote_CreateQuoteAlternativeRequest_QuoteVersionId"></a> QuoteVersionId
+
+```csharp
+public int QuoteVersionId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
