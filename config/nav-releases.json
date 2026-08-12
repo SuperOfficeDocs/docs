@@ -652,6 +652,10 @@
     ]
   },
   {
+    "group": "Database Changelog",
+    "root": "release-notes/database/changelog"
+  },
+  {
     "group": "End of life",
     "root": "release-notes/eol/index",
     "pages": [
