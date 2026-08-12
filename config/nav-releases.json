@@ -14,11 +14,8 @@
         "root": "release-notes/12/api/index",
         "pages": [
           "release-notes/12/api/changes-webapi-12.2.2072.0",
-          "release-notes/database/changes-12.2.2072",
           "release-notes/12/api/changes-webapi-12.1.1412",
-          "release-notes/database/changes-12.1.1412",
-          "release-notes/12/api/changes-webapi-12.0.342.0",
-          "release-notes/database/changes-12.0.342"
+          "release-notes/12/api/changes-webapi-12.0.342.0"
         ]
       }
     ]
@@ -32,29 +29,17 @@
         "root": "release-notes/11/api/index",
         "pages": [
           "release-notes/11/api/11.13",
-          "release-notes/database/changes-11.13.921",
           "release-notes/11/api/11.12",
-          "release-notes/database/changes-11.12.675",
           "release-notes/11/api/11.11",
-          "release-notes/database/changes-11.11.589",
           "release-notes/11/api/11.10",
-          "release-notes/database/changes-11.10.705",
           "release-notes/11/api/11.9",
-          "release-notes/database/changes-11.9.1204",
           "release-notes/11/api/11.8",
-          "release-notes/database/changes-11.8.788",
           "release-notes/11/api/11.7",
-          "release-notes/database/changes-11.7.727",
           "release-notes/11/api/11.6",
-          "release-notes/database/changes-11.6.943",
           "release-notes/11/api/11.5",
-          "release-notes/database/changes-11.5.755",
           "release-notes/11/api/11.4",
-          "release-notes/database/changes-11.4.1157",
           "release-notes/11/api/11.3",
-          "release-notes/database/changes-11.3.1348",
           "release-notes/11/api/11.2",
-          "release-notes/database/changes-11.2.664",
           {
             "group": "11.1",
             "root": "release-notes/11/api/11.1-update",
@@ -64,8 +49,7 @@
               "release-notes/11/api/11.1-services",
               "release-notes/11/api/11.1-webapi"
             ]
-          },
-          "release-notes/database/changes-11.1.447"
+          }
         ]
       }
     ]
@@ -127,15 +111,10 @@
             "root": "release-notes/10.5/api/index",
             "pages": [
               "release-notes/10.5/api/10.5.5",
-              "release-notes/database/changes-10.5.5",
               "release-notes/10.5/api/10.5.4",
-              "release-notes/database/changes-10.5.4",
               "release-notes/10.5/api/10.5.3",
-              "release-notes/database/changes-10.5.3",
               "release-notes/10.5/api/10.5.2-update",
-              "release-notes/database/changes-10.5.2",
-              "release-notes/10.5/api/10.5.1-update",
-              "release-notes/database/changes-10.5.1"
+              "release-notes/10.5/api/10.5.1-update"
             ]
           }
         ]
@@ -194,31 +173,18 @@
             "root": "release-notes/10.3/api/index",
             "pages": [
               "release-notes/10.3/api/10.3.13-update",
-              "release-notes/database/changes-10.3.13",
               "release-notes/10.3/api/10.3.12-update",
-              "release-notes/database/changes-10.3.12",
               "release-notes/10.3/api/10.3.11-update",
-              "release-notes/database/changes-10.3.11",
               "release-notes/10.3/api/10.3.10-update",
-              "release-notes/database/changes-10.3.10",
               "release-notes/10.3/api/10.3.9-update",
-              "release-notes/database/changes-10.3.9",
               "release-notes/10.3/api/10.3.8-update",
-              "release-notes/database/changes-10.3.8",
               "release-notes/10.3/api/10.3.7-update",
-              "release-notes/database/changes-10.3.7",
               "release-notes/10.3/api/10.3.6-update",
-              "release-notes/database/changes-10.3.6",
               "release-notes/10.3/api/10.3.5-update",
-              "release-notes/database/changes-10.3.5",
               "release-notes/10.3/api/10.3.4-update",
-              "release-notes/database/changes-10.3.4",
               "release-notes/10.3/api/10.3.3-update",
-              "release-notes/database/changes-10.3.3",
               "release-notes/10.3/api/10.3.2-update",
-              "release-notes/database/changes-10.3.2",
-              "release-notes/10.3/api/10.3.1-update",
-              "release-notes/database/changes-10.3.1"
+              "release-notes/10.3/api/10.3.1-update"
             ]
           }
         ]
@@ -273,27 +239,16 @@
             "root": "release-notes/10.2/api/index",
             "pages": [
               "release-notes/10.2/api/10.2.11-update",
-              "release-notes/database/changes-10.2.11",
               "release-notes/10.2/api/10.2.10-update",
-              "release-notes/database/changes-10.2.10",
               "release-notes/10.2/api/10.2.9-update",
-              "release-notes/database/changes-10.2.9",
               "release-notes/10.2/api/10.2.8-update",
-              "release-notes/database/changes-10.2.8",
               "release-notes/10.2/api/10.2.7-update",
-              "release-notes/database/changes-10.2.7",
               "release-notes/10.2/api/10.2.6-update",
-              "release-notes/database/changes-10.2.6",
               "release-notes/10.2/api/10.2.5-update",
-              "release-notes/database/changes-10.2.5",
               "release-notes/10.2/api/10.2.4-update",
-              "release-notes/database/changes-10.2.4",
               "release-notes/10.2/api/10.2.3-update",
-              "release-notes/database/changes-10.2.3",
               "release-notes/10.2/api/10.2.2-update",
-              "release-notes/database/changes-10.2.2",
-              "release-notes/10.2/api/10.2.1-update",
-              "release-notes/database/changes-10.2.1"
+              "release-notes/10.2/api/10.2.1-update"
             ]
           }
         ]
@@ -353,9 +308,7 @@
               "release-notes/10.1/api/10.1.9-update",
               "release-notes/10.1/api/10.1.8-update",
               "release-notes/10.1/api/10.1.6-update",
-              "release-notes/10.1/api/10.1.5-update",
-              "release-notes/database/changes-10.1.5",
-              "release-notes/database/changes-10.1.2"
+              "release-notes/10.1/api/10.1.5-update"
             ]
           }
         ]
@@ -612,6 +565,88 @@
           "release-notes/api/ns-70",
           "release-notes/api/ns-31",
           "release-notes/api/ns-30"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Database",
+    "pages": [
+      "release-notes/database/changes-12.2.2072",
+      "release-notes/database/changes-12.1.1412",
+      "release-notes/database/changes-12.0.342",
+      {
+        "group": "11",
+        "root": "release-notes/database/changes-11.13.921",
+        "pages": [
+          "release-notes/database/changes-11.13.921",
+          "release-notes/database/changes-11.12.675",
+          "release-notes/database/changes-11.11.589",
+          "release-notes/database/changes-11.10.705",
+          "release-notes/database/changes-11.9.1204",
+          "release-notes/database/changes-11.8.788",
+          "release-notes/database/changes-11.7.727",
+          "release-notes/database/changes-11.6.943",
+          "release-notes/database/changes-11.5.755",
+          "release-notes/database/changes-11.4.1157",
+          "release-notes/database/changes-11.3.1348",
+          "release-notes/database/changes-11.2.664",
+          "release-notes/database/changes-11.1.447"
+        ]
+      },
+      {
+        "group": "10.5",
+        "root": "release-notes/database/changes-10.5.5",
+        "pages": [
+          "release-notes/database/changes-10.5.5",
+          "release-notes/database/changes-10.5.4",
+          "release-notes/database/changes-10.5.3",
+          "release-notes/database/changes-10.5.2",
+          "release-notes/database/changes-10.5.1"
+        ]
+      },
+      {
+        "group": "10.3",
+        "root": "release-notes/database/changes-10.3.13",
+        "pages": [
+          "release-notes/database/changes-10.3.13",
+          "release-notes/database/changes-10.3.12",
+          "release-notes/database/changes-10.3.11",
+          "release-notes/database/changes-10.3.10",
+          "release-notes/database/changes-10.3.9",
+          "release-notes/database/changes-10.3.8",
+          "release-notes/database/changes-10.3.7",
+          "release-notes/database/changes-10.3.6",
+          "release-notes/database/changes-10.3.5",
+          "release-notes/database/changes-10.3.4",
+          "release-notes/database/changes-10.3.3",
+          "release-notes/database/changes-10.3.2",
+          "release-notes/database/changes-10.3.1"
+        ]
+      },
+      {
+        "group": "10.2",
+        "root": "release-notes/database/changes-10.2.11",
+        "pages": [
+          "release-notes/database/changes-10.2.11",
+          "release-notes/database/changes-10.2.10",
+          "release-notes/database/changes-10.2.9",
+          "release-notes/database/changes-10.2.8",
+          "release-notes/database/changes-10.2.7",
+          "release-notes/database/changes-10.2.6",
+          "release-notes/database/changes-10.2.5",
+          "release-notes/database/changes-10.2.4",
+          "release-notes/database/changes-10.2.3",
+          "release-notes/database/changes-10.2.2",
+          "release-notes/database/changes-10.2.1"
+        ]
+      },
+      {
+        "group": "10.1",
+        "root": "release-notes/database/changes-10.1.5",
+        "pages": [
+          "release-notes/database/changes-10.1.5",
+          "release-notes/database/changes-10.1.2"
         ]
       }
     ]
