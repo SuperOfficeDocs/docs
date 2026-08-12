@@ -9,19 +9,22 @@
     Detects if included files contain Mintlify components and uses .mdx extension
     in import statement if they do, otherwise uses .md.
     Skips code includes (e.g., [!code-csharp[...]]).
+    Any DocFx include path is rewritten to point at a folder named *snippets*
+    (topic-local or repo-root, per this repo's naming convention) — never *includes*,
+    regardless of what the DocFx source folder was called.
 
 .PARAMETER Path
     Path to the folder containing markdown files (relative to repo root or absolute).
     This is a positional parameter - can be used without the -Path flag.
 
 .EXAMPLE
-    .\convert-includes.ps1 en/developer-portal
+    .\convert-snippets.ps1 en/developer-portal
 
 .NOTES
     - Modifies files in place (no backup created - use git to revert if needed)
     - Uses UTF-8 without BOM encoding
     - Converts text includes only (skips code includes)
-    - Uses .mdx extension for includes with Mintlify components, .md otherwise
+    - Uses .mdx extension for snippets with Mintlify components, .md otherwise
     - Import names generated from filename in PascalCase
     - Import statements use double quotes (following Mintlify docs)
     - Preserves inline vs. block positioning
@@ -91,8 +94,8 @@ function Get-ImportName {
     return $pascalCase
 }
 
-# Check if include file needs .mdx extension (contains Mintlify components)
-function Get-IncludeExtension {
+# Check if snippet file needs .mdx extension (contains Mintlify components)
+function Get-SnippetExtension {
     param([string]$IncludePath)
 
     # Check if .mdx version exists (may have been converted already)
@@ -118,7 +121,7 @@ function Get-IncludeExtension {
     return ".md"
 }
 
-function Convert-IncludesInFile {
+function Convert-SnippetsInFile {
     param([string]$FilePath)
 
     $content = [System.IO.File]::ReadAllLines($FilePath)
@@ -157,12 +160,17 @@ function Convert-IncludesInFile {
             $fullIncludePath = Join-Path $fileDir $includePath
             $fullIncludePath = [System.IO.Path]::GetFullPath($fullIncludePath)
 
-            # Check if include needs .mdx extension
-            $extension = Get-IncludeExtension -IncludePath $fullIncludePath
+            # Check if snippet needs .mdx extension
+            $extension = Get-SnippetExtension -IncludePath $fullIncludePath
             $includePath = $includePath -replace '\.md$', $extension
 
-            # Replace ../common/includes with snippets
+            # The repo-root shared folder is named /snippets, not /includes
             $includePath = $includePath -replace '\.\./common/includes', 'snippets'
+
+            # Any other DocFx include folder (however it was named, usually "includes")
+            # becomes "snippets" — this repo names every reusable-content folder
+            # "snippets", whether topic-local or repo-root.
+            $includePath = $includePath -replace '(^|[/\\])includes([/\\])', '$1snippets$2'
 
             # Ensure relative paths start with ./ or ../
             if ($includePath -notmatch '^\.\.?[/\\]') {
@@ -254,7 +262,7 @@ else {
 $processed = 0
 
 foreach ($file in $files) {
-    if (Convert-IncludesInFile -FilePath $file.FullName) {
+    if (Convert-SnippetsInFile -FilePath $file.FullName) {
         $processed++
         Write-Host "  Converted: $($file.Name)" -ForegroundColor Green
     }
@@ -262,7 +270,7 @@ foreach ($file in $files) {
 
 Write-Host "`nComplete!" -ForegroundColor Green
 Write-Host "  Files scanned: $($files.Count)" -ForegroundColor Cyan
-Write-Host "  Files with includes converted: $processed" -ForegroundColor Cyan
+Write-Host "  Files with snippets converted: $processed" -ForegroundColor Cyan
 
 # Convert modified files to .mdx if needed
 if ($processed -gt 0) {

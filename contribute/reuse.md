@@ -2,7 +2,7 @@
 uid: content-reuse
 title: Content reuse
 description: Introduction to content reuse and single-sourcing
-keywords: ['content reuse', 'single-sourcing', 'fragments', 'includes', 'duplicate content']
+keywords: ['content reuse', 'single-sourcing', 'fragments', 'snippets', 'duplicate content']
 author: digitaldiina
 date: 07.09.2026
 content_type: concept
@@ -75,7 +75,7 @@ Without a strategy, content reuse can quickly become confusing and frustrating.
 
 If people can't find the reusable topics and fragments, they'll rewrite it from scratch.
 
-It is a good practice to sign-post reusable content. For SuperOfficeDocs we use folders named *includes*. Establishing a file naming convention doesn't hurt either.
+It is a good practice to sign-post reusable content. For SuperOfficeDocs we use folders named *snippets*. Establishing a file naming convention doesn't hurt either — see the [Markdown guide's snippets section][2] for the naming conventions and folder structure already in use.
 
 There is a compromise between usability for contributors and optimization for hard-core authors. Just because you can extract it, doesn't mean you should. What you want to avoid is making your source so complex and cryptic that it requires specialized training to do something as trivial as fixing a typo. If people are overwhelmed, they stop contributing.
 
@@ -113,3 +113,4 @@ Reusable content should be easy to find. Use **domain modelling**: have all topi
 **After** optimizing content for reuse, you can perform **targeted searches** to find content to reuse in a given topic. You probably need to comb through the results to decide what is suitable and what's not. Sorry, but there is no magic button. If you want to become efficient in reuse, learn how to search your source.
 
 [1]: https://developers.google.com/search/docs/advanced/guidelines/duplicate-content
+[2]: ./markdown-guide/index#snippets

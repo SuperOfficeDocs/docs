@@ -11,7 +11,7 @@
     4. Convert videos
     5. Convert tabs
     6. Convert details/summary to accordions
-    7. Convert includes
+    7. Convert snippets
     8. Inline code snippets
     9. Inline mermaid diagrams
     10. Convert links (strip .md/.mdx extensions)
@@ -69,7 +69,7 @@ $scripts = @(
     @{ Name = "convert-videos.ps1"; Description = "Converting video embeds" }
     @{ Name = "convert-tabs.ps1"; Description = "Converting tabs" }
     @{ Name = "convert-details.ps1"; Description = "Converting details to accordions" }
-    @{ Name = "convert-includes.ps1"; Description = "Converting includes" }
+    @{ Name = "convert-snippets.ps1"; Description = "Converting snippets" }
     @{ Name = "inline-code.ps1"; Description = "Inlining code snippets" }
     @{ Name = "inline-mermaid.ps1"; Description = "Inlining mermaid diagrams" }
     @{ Name = "convert-links.ps1"; Description = "Converting links" }

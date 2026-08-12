@@ -14,7 +14,7 @@ SuperOffice publishes [web service proxies][16] that can be used by clients to a
 
 An important aspect of NetServer web service development is its **deployment flexibility**. It's capable of being embedded in a domain-centric client, or used by a web application across the internet.
 
-[!INCLUDE [dependency-injection](../includes/dependency-injection)]
+[!INCLUDE [dependency-injection](../snippets/dependency-injection)]
 
 ```csharp CS
 ```csharp

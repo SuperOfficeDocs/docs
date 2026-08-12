@@ -1,2 +1,0 @@
-| Property Name | Tag | Description |
-|---------------|-----|-------------|

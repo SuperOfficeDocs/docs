@@ -48,7 +48,7 @@ We need to add 'crmscript' to the UID to make it unique. However, there is no ne
 
 ### Markdown (.md) vs MDX (.mdx)
 
-Most content pages use the `.mdx` extension, since they use Mintlify's JSX components (`<Note>`, `<Tabs>`, and so on — see the [Markdown guide][1]). Plain `.md` is reserved for files with no JSX/component syntax at all — mainly includes/snippets and a handful of pages that haven't needed a component yet.
+Most content pages use the `.mdx` extension, since they use Mintlify's JSX components (`<Note>`, `<Tabs>`, and so on — see the [Markdown guide][1]). Plain `.md` is reserved for files with no JSX/component syntax at all — mainly snippets and a handful of pages that haven't needed a component yet.
 
 If you add a component to a `.md` file, rename it to `.mdx` in the same change.
 
@@ -68,9 +68,9 @@ Media files aren't split per-folder. They live in one centralized location at th
 
 `/images/` holds site-wide branding/config assets referenced directly by `docs.json` — `og-background.png`, the social-preview thumbnail background (see [SEO and social previews][4]), and the `404-hugo-board.png`/`404-hugo-sad.png` light/dark mascot pair shown on the custom 404 page (see [Configuring Mintlify][5]). This is different from `/media/loc/en/<topic>/`, which holds per-topic content images, and from `/logo/`, which holds only the two required, fixed-filename logo files.
 
-## Includes subfolder
+## Snippets subfolder
 
-All major folders have an */includes* subfolder for reusable content in that section. See [Markdown reference][1] for how to use includes.
+All major folders have a */snippets* subfolder for reusable content in that section. See [Markdown reference][1] for how to use snippets.
 
 ## Markdown file template
 

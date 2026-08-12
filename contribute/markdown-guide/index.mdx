@@ -2,7 +2,7 @@
 uid: markdown-guide-to-mintlify
 title: Markdown guide
 description: This Markdown style guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
-keywords: ['markdown guide', 'callouts', 'headings', 'links', 'lists', 'tables', 'metadata', 'includes', 'Phosphor']
+keywords: ['markdown guide', 'callouts', 'headings', 'links', 'lists', 'tables', 'metadata', 'snippets', 'Phosphor']
 author: digitaldiina
 date: 08.05.2026
 content_type: reference
@@ -254,39 +254,76 @@ Embed a YouTube video by wrapping an `<iframe>` in a `<Frame>` component, using 
 
 See [Mintlify's video embed docs][9] for the full reference, including hosting your own video files instead of YouTube.
 
-## Included Markdown files
+## Snippets
 
-When the same content should be repeated on multiple pages, you can use includes.
+One of the core principles of software development is DRY (Don't Repeat Yourself). It applies to documentation too. If you find yourself repeating the same content in multiple places, create a snippet to keep it in sync.
 
-Reusable content snippets are placed in their own Markdown files in the */includes* subfolder (or in the repository-wide */snippets* folder for content shared across many pages) and imported as a component where they should be inserted.
+A snippet is a Markdown file placed in a folder named *snippets* — either next to the pages that use it, for content shared within one topic, or at the repository root, */snippets*, for content shared across many topics or languages. Both levels use the same folder name; what differs is *where* the folder sits, not what it's called.
 
-### Includes syntax
+### Snippets syntax
 
 Import the file at the top of the page, below the front matter, then reference it as a component wherever it should appear:
 
 ```mdx
-import Foo from "./includes/foo.md";
+import Foo from "./snippets/foo.md";
 
 Text before <Foo /> and after.
 ```
 
-* The import path (the string after `from`) is a JSX import, not a content link — it stays a literal relative path to the file (for example, `./includes/foo.md`), regardless of the root-relative rule for content links described below.
+* The import path (the string after `from`) is a JSX import, not a content link — it stays a literal relative path to the file (for example, `./snippets/foo.md`), regardless of the root-relative rule for content links described below.
 * The component name (`Foo` above) can be anything [valid as a JSX identifier][10] — pick something that describes the content.
 * You can import and use the same component more than once on a page.
 
-Here are requirements and considerations for include files:
+Here are requirements and considerations for snippet files.
 
 ### Guidelines
 
-* Write all the text in an include file as complete sentences or phrases. Avoid creating a dependency on preceding text or following text on the page that references the include.
+* Write all the text in a snippet as complete sentences or phrases. Avoid creating a dependency on preceding text or following text on the page that references it.
 
-* Don't nest includes.
+* Don't nest snippets.
 
-* Place images used by includes in the */media/includes* folder, and reference them with a root-relative path like any other image.
+* Place images used by a snippet in the shared [media folder][12] like any other image, and reference them with a root-relative path.
 
-* Don't add metadata or HTML comments at the top of include files.
+* Don't add metadata or HTML comments at the top of a snippet file.
 
-* A relative link inside an include resolves against the include file's own location, not the page that imports it — so a local *includes* folder used only within one topic can follow that topic's normal relative-link rule, but a repository-wide *snippets* file reused across different topics or languages should use root-relative links, since it has no single "close by" tree to be relative to. See [page links][6] for the general rule.
+* A relative link inside a snippet resolves against the snippet's own location, not the page that imports it — so a topic-local snippet can follow that topic's normal relative-link rule, but a repository-root snippet reused across different topics or languages should use root-relative links, since it has no single "close by" tree to be relative to. See [page links][6] for the general rule.
+
+### Local vs. repository-root snippets
+
+Reused only within one topic or section? Put it in that topic's own *snippets* folder. Reused across multiple topics, sections, or languages? Put it in the repository-root */snippets* folder instead.
+
+Because both levels share the same folder name, the way to tell them apart is the import path's relative depth: `./snippets/...` or `../snippets/...` points to a topic-local folder close by; a longer chain like `../../../snippets/...` reaching all the way to the repository root points to the shared one. When in doubt, check where the path actually resolves.
+
+### Naming conventions
+
+Name a snippet file for what it *is*, not for what page uses it — that's what keeps it reusable. Existing snippets follow a small set of prefixes:
+
+* `req-` — a plan or feature requirement (`req-cep.mdx`)
+* `note-` — a `<Note>` callout (`note-req-saint.mdx`)
+* `warn-` — a `<Warning>` callout (`warn-company-table.mdx`)
+* `lim-` — a limitation (`lim-starter.mdx`)
+* `table-` — a reference table (`table-misc.md`)
+* `tip-` — a `<Tip>` callout
+* `step-` / `goto-` — a UI navigation step
+
+See [Files and folders][13] for the `.md` vs. `.mdx` extension rule.
+
+### The /snippets subfolders
+
+The repository-root */snippets* folder has a few subfolders, each holding a group of related fragments reused the same way:
+
+* */snippets/license* — plan and license requirement blurbs. Sourced by English content directly; da, de, nl, no, and sv each have their own translated equivalents instead of importing this folder — see the next section for why.
+* */snippets/merge-field* and */snippets/variable* — merge-field reference tables, imported identically by all 6 languages. This is the repository-root pattern working as intended.
+
+There's no `/snippets/release-notes` folder today — release notes live at the top-level `/release-notes` folder, unrelated to `/snippets`.
+
+Create a new subfolder when you have multiple related fragments reused the same way (mirroring `license`, `merge-field`, or `variable`). A single one-off fragment goes directly at the `/snippets` root instead.
+
+### Why license snippets exist per language
+
+English's plan and license snippets live at `/snippets/license`. Each of da, de, nl, no, and sv has its own language-root *snippets* folder (for example `de/snippets`) holding translated equivalents of the same fragments — but not all of them exist in every language yet.
+
+This split is deliberate, not a bug: translated text can't live in one shared, root-relative file the way a language-agnostic reference table can — each language needs its own wording. But nothing enforces parity between the English source and the translated copies — that's exactly how [3 files ended up untranslated in all 5 languages][14]. When you add a new file to `/snippets/license`, also add (or file a translation task for) the matching file in each language's own `snippets` folder.
 
 ## Links
 
@@ -387,6 +424,9 @@ Here are a few resources to help with Markdown to help get you started:
 [9]: https://www.mintlify.com/docs/create/image-embeds#youtube-embeds
 [10]: https://developer.mozilla.org/en-US/docs/Glossary/Identifier
 [11]: https://phosphoricons.com/
+[12]: ../files-and-folders#media-folder
+[13]: ../files-and-folders#file-names-and-file-extensions
+[14]: https://github.com/SuperOfficeDocs/docs/issues/235
 
 [img1]: /media/loc/en/contribute/plain-action-buttons.png
 [img2]: /media/loc/en/mobile/allow-call-identification.png
