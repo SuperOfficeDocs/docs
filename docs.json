@@ -65,7 +65,6 @@
   "errors": {
     "404": {
       "redirect": false,
-      "title": "404!",
       "description": "<img src=\"/images/404-hugo.svg\" alt=\"Hugo the SuperOffice owl, looking surprised\" style={{width: \"200px\", display: \"block\", margin: \"0 auto\"}} noZoom />\n\nSorry, we could not find that page. Head back to the [homepage](/), or use search to find what you were looking for."
     }
   },
