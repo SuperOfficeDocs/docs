@@ -1,33 +1,32 @@
 ---
-uid: table-email_flow_content_link
 title: email_flow_content_link table
 description: Links content to an email workflow
 generated: true
-keywords: ['database table email_flow_content_link']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EmailFlowContentLink from "./includes/email-flow-content-link.md";
+import EmailFlowContentLink from "./includes/email-flow-content-link.mdx";
 
-# email\_flow\_content\_link Table (533)
+## email\_flow\_content\_link Table (534)
 
 Links content to an email workflow
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|email\_flow\_content\_link\_id|Primary key|PK| |
-|s\_message\_id|A shipment message available in the flow|FK [s_message](./s-message)|&#x25CF;|
-|email\_flow\_id|The email flow the content is connected to|FK [email_flow](./email-flow)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|form\_id|Web form used in the flow|FK [form](./form)|&#x25CF;|
-|s\_link\_id|Shipment link used in the flow|FK [s_link](./s-link)|&#x25CF;|
+|email\_flow\_content\_link\_id|Primary key|PK|No|
+|s\_message\_id|A shipment message available in the flow|FK [s_message](./s-message.mdx)|Yes|
+|email\_flow\_id|The email flow the content is connected to|FK [email_flow](./email-flow.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|form\_id|Web form used in the flow|FK [form](./form.mdx)|Yes|
+|s\_link\_id|Shipment link used in the flow|FK [s_link](./s-link.mdx)|Yes|
+
 
 ![email_flow_content_link table relationship diagram](/media/loc/en/database/tables/email_flow_content_link.png)
 
@@ -48,6 +47,7 @@ Links content to an email workflow
 |[s\_link](./s-link)  |Links in messages to measure success rate of a campaign. |
 |[s\_message](./s-message)  |A message used in a shipment. Can be html and/or plain text |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ Links content to an email workflow
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

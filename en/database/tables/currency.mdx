@@ -1,37 +1,36 @@
 ---
-uid: table-Currency
 title: Currency table
 description: Currency list table
 generated: true
-keywords: ['database table Currency']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Currency from "./includes/currency.md";
+import Currency from "./includes/currency.mdx";
 
-# Currency Table (112)
+## Currency Table (112)
 
 Currency MDO list item table.
 Currency list table
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|Currency\_id|Primary key|PK| |
-|name|The list item|String(239)| |
-|rank|Rank order|UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|rate|Exchange rate|Double| |
-|units|Exchange unit scale (0.01, 0.1, 1, 10, 100 etc)|Double| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|isoCode|ISO currency code, see http://www.xe.com/iso4217.php|String(9)|&#x25CF;|
+|Currency\_id|Primary key|PK|No|
+|name|The list item|String(239)|No|
+|rank|Rank order|UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|rate|Exchange rate|Double|No|
+|units|Exchange unit scale (0.01, 0.1, 1, 10, 100 etc)|Double|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|isoCode|ISO currency code, see http://www.xe.com/iso4217.php|String(9)|Yes|
+
 
 ![Currency table relationship diagram](/media/loc/en/database/tables/Currency.png)
 
@@ -57,6 +56,7 @@ Currency list table
 |[SaleHist](./salehist)  |Mirror image of the Sale table, providing a full transaction history. Every time you edit a sale, the current record of the sale is also saved here.  |
 |[target\_assignment\_info](./target-assignment-info)  |Linking associate, company or user group target and other information with target values |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -66,3 +66,4 @@ Currency list table
 ## Security Flags
 
 * No access control via user's Role.
+

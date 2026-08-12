@@ -1,31 +1,30 @@
 ---
-uid: table-CurrencyHeadingLink
 title: CurrencyHeadingLink table
 description: Heading link table for Currency, for MDO headers
 generated: true
-keywords: ['database table CurrencyHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Currencyheadinglink from "./includes/currencyheadinglink.md";
+import Currencyheadinglink from "./includes/currencyheadinglink.mdx";
 
-# CurrencyHeadingLink Table (114)
+## CurrencyHeadingLink Table (114)
 
 Heading link table for Currency, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|currencyheadinglink\_id|Primary key|PK| |
-|currency\_id|Link to Currency list table|FK [Currency](./currency)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|currencyheadinglink\_id|Primary key|PK|No|
+|currency\_id|Link to Currency list table|FK [Currency](./currency.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![CurrencyHeadingLink table relationship diagram](/media/loc/en/database/tables/CurrencyHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for Currency, for MDO headers
 |[Currency](./currency)  |Currency list table |
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for Currency, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

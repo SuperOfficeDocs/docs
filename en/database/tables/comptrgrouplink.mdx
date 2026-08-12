@@ -1,31 +1,30 @@
 ---
-uid: table-ComptrGroupLink
 title: ComptrGroupLink table
 description: User group link table for Comptr, for MDO item hiding
 generated: true
-keywords: ['database table ComptrGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Comptrgrouplink from "./includes/comptrgrouplink.md";
+import Comptrgrouplink from "./includes/comptrgrouplink.mdx";
 
-# ComptrGroupLink Table (110)
+## ComptrGroupLink Table (110)
 
 User group link table for Comptr, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|comptrgrouplink\_id|Primary key|PK| |
-|comptr\_id|Link to Comptr list table|FK [Comptr](./comptr)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|comptrgrouplink\_id|Primary key|PK|No|
+|comptr\_id|Link to Comptr list table|FK [Comptr](./comptr.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ComptrGroupLink table relationship diagram](/media/loc/en/database/tables/ComptrGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for Comptr, for MDO item hiding
 |[Comptr](./comptr)  |Comptr list table. List of all possible competitors (sale). |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for Comptr, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

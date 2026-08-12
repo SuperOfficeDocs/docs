@@ -1,30 +1,29 @@
 ---
-uid: table-copilot
 title: copilot table
 description: Contains all available copilots
 generated: true
-keywords: ['database table copilot']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Copilot from "./includes/copilot.md";
+import Copilot from "./includes/copilot.mdx";
 
-# copilot Table (473)
+## copilot Table (473)
 
 Contains all available copilots
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|copilot\_id|Primary key|PK| |
-|name|The name of copilot|String(4000)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|copilot\_id|Primary key|PK|No|
+|name|The name of copilot|String(4000)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![copilot table relationship diagram](/media/loc/en/database/tables/copilot.png)
 
@@ -42,6 +41,7 @@ Contains all available copilots
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[copilot\_data\_source](./copilot-data-source)  |Stores data sources for each copilot |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ Contains all available copilots
 ## Security Flags
 
 * No access control via user's Role.
+

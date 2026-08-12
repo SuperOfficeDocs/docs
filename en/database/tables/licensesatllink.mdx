@@ -1,36 +1,35 @@
 ---
-uid: table-LicenseSatlLink
 title: LicenseSatlLink table
 description: Link between License and Satellite, for per-database licenses
 generated: true
-keywords: ['database table LicenseSatlLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Licensesatllink from "./includes/licensesatllink.md";
+import Licensesatllink from "./includes/licensesatllink.mdx";
 
-# LicenseSatlLink Table (239)
+## LicenseSatlLink Table (239)
 
 Link between License and Satellite, for per-database licenses
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|LicenseSatlLink\_id|Primary key|PK| |
-|moduleLicenseId|The license being linked|FK [ModuleLicense](./modulelicense)| |
-|satelliteId|The Satellite who occupies one instance of this license|FK [satellite](./satellite)| |
-|validFrom|Reserved field: Valid from date|DateTime| |
-|validTo|Reserved field: Valid to date|DateTime| |
-|licenseNumber|Number of license items occupied by this satellite|UInt| |
-|comment|Optional comment field|String(254)| |
-|encryptedCheck|Encrypted checksum; tampering will block system usage|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|LicenseSatlLink\_id|Primary key|PK|No|
+|moduleLicenseId|The license being linked|FK [ModuleLicense](./modulelicense.mdx)|No|
+|satelliteId|The Satellite who occupies one instance of this license|FK [satellite](./satellite.mdx)|No|
+|validFrom|Reserved field: Valid from date|DateTime|No|
+|validTo|Reserved field: Valid to date|DateTime|No|
+|licenseNumber|Number of license items occupied by this satellite|UInt|No|
+|comment|Optional comment field|String(254)|No|
+|encryptedCheck|Encrypted checksum; tampering will block system usage|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![LicenseSatlLink table relationship diagram](/media/loc/en/database/tables/LicenseSatlLink.png)
 
@@ -50,6 +49,7 @@ Link between License and Satellite, for per-database licenses
 |[ModuleLicense](./modulelicense)  |Module licenses, belonging to one single owner |
 |[satellite](./satellite)  |Definition of Satellites |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ Link between License and Satellite, for per-database licenses
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

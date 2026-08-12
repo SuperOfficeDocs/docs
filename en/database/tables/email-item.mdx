@@ -1,55 +1,54 @@
 ---
-uid: table-email_item
 title: email_item table
 description: Email data
 generated: true
-keywords: ['database table email_item']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EmailItem from "./includes/email-item.md";
+import EmailItem from "./includes/email-item.mdx";
 
-# email\_item Table (494)
+## email\_item Table (494)
 
 Email data
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|email\_item\_id|Primary key|PK| |
-|account\_id|Account id|FK [email_account](./email-account)|&#x25CF;|
-|server\_id|Email server id of this email item|Int| |
-|flags|Email flags - answered, deleted, seen, flagged, draft, recent...|Enum [EMailFlags](./enums/emailflags)|&#x25CF;|
-|email\_folder\_id|Folder this email is in on the imap server|FK [email_folder](./email-folder)|&#x25CF;|
-|mime|Mime text|Clob|&#x25CF;|
-|messageId|Email MessageId|String(512)|&#x25CF;|
-|sent\_at|Sent datetime from mime|DateTime|&#x25CF;|
-|received\_at|Received by email server|DateTime|&#x25CF;|
-|subject|Email subject|String(255)|&#x25CF;|
-|plain\_body|Plain body text|Clob|&#x25CF;|
-|html\_body|Html body text|Clob|&#x25CF;|
-|priority|Email priority|Enum [EMailPriority](./enums/emailpriority)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|has\_attachment|Has attachment(s)|Bool|&#x25CF;|
-|from|From address|String(4000)|&#x25CF;|
-|to|To|String(4000)|&#x25CF;|
-|size|The size of the email|Int| |
-|person\_id|From person|FK [person](./person)|&#x25CF;|
-|contact\_id|From company|FK [contact](./contact)|&#x25CF;|
-|document\_id|Archived document|FK [document](./document)|&#x25CF;|
-|appointment\_id|Archived on appointment|FK [appointment](./appointment)|&#x25CF;|
-|sale\_id|Archived on sale|FK [sale](./sale)|&#x25CF;|
-|replied\_at|When this email was replied to|DateTime|&#x25CF;|
-|in\_reply\_to|In reply to, a message-id, used for threading|String(512)|&#x25CF;|
-|cc|Cc|String(4000)|&#x25CF;|
-|cal\_data|Calendar data|Clob|&#x25CF;|
-|server\_identifier|Server identifier of this email item (GraphApi uses string Id&apos;s)|String(1024)| |
+|email\_item\_id|Primary key|PK|No|
+|account\_id|Account id|FK [email_account](./email-account.mdx)|Yes|
+|server\_id|Email server id of this email item|Int|No|
+|flags|Email flags - answered, deleted, seen, flagged, draft, recent...|Enum [EMailFlags](./enums/emailflags.mdx)|Yes|
+|email\_folder\_id|Folder this email is in on the imap server|FK [email_folder](./email-folder.mdx)|Yes|
+|mime|Mime text|Clob|Yes|
+|messageId|Email MessageId|String(512)|Yes|
+|sent\_at|Sent datetime from mime|DateTime|Yes|
+|received\_at|Received by email server|DateTime|Yes|
+|subject|Email subject|String(255)|Yes|
+|plain\_body|Plain body text|Clob|Yes|
+|html\_body|Html body text|Clob|Yes|
+|priority|Email priority|Enum [EMailPriority](./enums/emailpriority.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|has\_attachment|Has attachment(s)|Bool|Yes|
+|from|From address|String(4000)|Yes|
+|to|To|String(4000)|Yes|
+|size|The size of the email|Int|No|
+|person\_id|From person|FK [person](./person.mdx)|Yes|
+|contact\_id|From company|FK [contact](./contact.mdx)|Yes|
+|document\_id|Archived document|FK [document](./document.mdx)|Yes|
+|appointment\_id|Archived on appointment|FK [appointment](./appointment.mdx)|Yes|
+|sale\_id|Archived on sale|FK [sale](./sale.mdx)|Yes|
+|replied\_at|When this email was replied to|DateTime|Yes|
+|in\_reply\_to|In reply to, a message-id, used for threading|String(512)|Yes|
+|cc|Cc|String(4000)|Yes|
+|cal\_data|Calendar data|Clob|Yes|
+|server\_identifier|Server identifier of this email item (GraphApi uses string Id&apos;s)|String(1024)|No|
+
 
 ![email_item table relationship diagram](/media/loc/en/database/tables/email_item.png)
 
@@ -80,6 +79,7 @@ Email data
 |[person](./person)  |Persons |
 |[sale](./sale)  |Sales  For every Sale record edited through the SuperOffice GUI, a copy of the current version of the record will be saved in the SaleHist table. This also applies to editing done through the SaleModel COM interface, but not to editing done through the OLE DB Provider or other channels.   |
 
+
 ## Replication Flags
 
 * None
@@ -87,3 +87,4 @@ Email data
 ## Security Flags
 
 * No access control via user's Role.
+

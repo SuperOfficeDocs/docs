@@ -1,39 +1,38 @@
 ---
-uid: table-VisibleFor
 title: VisibleFor table
 description: Visible for rights, who may see this appointment/document, sale,  salehist or selection
 generated: true
-keywords: ['database table VisibleFor']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Visiblefor from "./includes/visiblefor.md";
+import Visiblefor from "./includes/visiblefor.mdx";
 
-# VisibleFor Table (196)
+## VisibleFor Table (196)
 
 Visible for rights, who may see this appointment/document, sale,  salehist or selection
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|VisibleFor\_id|Primary key|PK| |
-|tableId|ID of table this right is valid for|TableNumber| |
-|recordId|ID of row this right applies to|RecordId| |
-|forAll|1 = visible to all, 0 = not visible to all|Id| |
-|forGroupId|0 = not visible to any particular group, or ID of group|FK [UserGroup](./usergroup)| |
-|forAssocId|0 = not visible to any particular associate, or ID of associate|FK [associate](./associate)| |
-|encryptedCheck|Encrypted checksum field, to prevent tampering|String(254)| |
-|appointmentId|Shortcut: appointment id, if tableId = appointment; to give faster joins|FK [appointment](./appointment)|&#x25CF;|
-|saleId|Shortcut: sale id, if tableId = sale to give faster joins|FK [sale](./sale)|&#x25CF;|
-|saleHistId|Shortcut: salehist id, if tableId = salehist to give faster joins|FK [SaleHist](./salehist)|&#x25CF;|
-|selectionId|Shortcut: selection id, if tableId = selection to give faster joins|FK [selection](./selection)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|VisibleFor\_id|Primary key|PK|No|
+|tableId|ID of table this right is valid for|TableNumber|No|
+|recordId|ID of row this right applies to|RecordId|No|
+|forAll|1 = visible to all, 0 = not visible to all|Id|No|
+|forGroupId|0 = not visible to any particular group, or ID of group|FK [UserGroup](./usergroup.mdx)|No|
+|forAssocId|0 = not visible to any particular associate, or ID of associate|FK [associate](./associate.mdx)|No|
+|encryptedCheck|Encrypted checksum field, to prevent tampering|String(254)|No|
+|appointmentId|Shortcut: appointment id, if tableId = appointment; to give faster joins|FK [appointment](./appointment.mdx)|Yes|
+|saleId|Shortcut: sale id, if tableId = sale to give faster joins|FK [sale](./sale.mdx)|Yes|
+|saleHistId|Shortcut: salehist id, if tableId = salehist to give faster joins|FK [SaleHist](./salehist.mdx)|Yes|
+|selectionId|Shortcut: selection id, if tableId = selection to give faster joins|FK [selection](./selection.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![VisibleFor table relationship diagram](/media/loc/en/database/tables/VisibleFor.png)
 
@@ -61,6 +60,7 @@ Visible for rights, who may see this appointment/document, sale,  salehist or se
 |[selection](./selection)  |Selections |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -70,3 +70,4 @@ Visible for rights, who may see this appointment/document, sale,  salehist or se
 ## Security Flags
 
 * No access control via user's Role.
+

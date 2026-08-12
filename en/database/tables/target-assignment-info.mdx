@@ -1,35 +1,34 @@
 ---
-uid: table-target_assignment_info
 title: target_assignment_info table
 description: Linking associate, company or user group target and other information with target values
 generated: true
-keywords: ['database table target_assignment_info']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TargetAssignmentInfo from "./includes/target-assignment-info.md";
+import TargetAssignmentInfo from "./includes/target-assignment-info.mdx";
 
-# target\_assignment\_info Table (516)
+## target\_assignment\_info Table (517)
 
 Linking associate, company or user group target and other information with target values
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|target\_assignment\_info\_id|Primary key|PK| |
-|associate\_id|Associate who owns this target|FK [associate](./associate)|&#x25CF;|
-|contact\_id|Company who owns this target|FK [contact](./contact)|&#x25CF;|
-|usergroup\_id|User group who owns this target|FK [UserGroup](./usergroup)|&#x25CF;|
-|currency\_id|Currency for value|FK [Currency](./currency)|&#x25CF;|
-|locked|Locked, should not be editable|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|target\_dimension\_item\_id|Dimension item this target assignment is in|Int|&#x25CF;|
+|target\_assignment\_info\_id|Primary key|PK|No|
+|associate\_id|Associate who owns this target|FK [associate](./associate.mdx)|Yes|
+|contact\_id|Company who owns this target|FK [contact](./contact.mdx)|Yes|
+|usergroup\_id|User group who owns this target|FK [UserGroup](./usergroup.mdx)|Yes|
+|currency\_id|Currency for value|FK [Currency](./currency.mdx)|Yes|
+|locked|Locked, should not be editable|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|target\_dimension\_item\_id|Dimension item this target assignment is in|Int|Yes|
+
 
 ![target_assignment_info table relationship diagram](/media/loc/en/database/tables/target_assignment_info.png)
 
@@ -55,6 +54,7 @@ Linking associate, company or user group target and other information with targe
 |[target\_revision\_history](./target-revision-history)  |Revision history info in case the original target group or assignment info was deleted |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * None
@@ -62,3 +62,4 @@ Linking associate, company or user group target and other information with targe
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

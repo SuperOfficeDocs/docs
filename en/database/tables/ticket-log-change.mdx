@@ -1,31 +1,30 @@
 ---
-uid: table-ticket_log_change
 title: ticket_log_change table
 description: This table contains log entries for the tickets.
 generated: true
-keywords: ['database table ticket_log_change']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TicketLogChange from "./includes/ticket-log-change.md";
+import TicketLogChange from "./includes/ticket-log-change.mdx";
 
-# ticket\_log\_change Table (268)
+## ticket\_log\_change Table (268)
 
 This table contains log entries for the tickets.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket)| |
-|message\_id|If this entry is connected to a message, then this is a message change log entry.|FK [ej_message](./ej-message)| |
-|action\_id|The id of ticket_log_action this entry is connected to.|FK [ticket_log_action](./ticket-log-action)| |
-|extra\_field\_id|The id of the extra_field this entry is connected to.|FK [extra_fields](./extra-fields)| |
-|log\_change|An enum indicating what kind of log-entry this is.|Int|&#x25CF;|
-|to\_value|A the &amp;apos;to&amp;apos; value|String(255)| |
-|from\_value|A the &amp;apos;from&amp;apos; value|String(255)| |
+|id|The primary key (auto-incremented)|PK|No|
+|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket.mdx)|No|
+|message\_id|If this entry is connected to a message, then this is a message change log entry.|FK [ej_message](./ej-message.mdx)|No|
+|action\_id|The id of ticket_log_action this entry is connected to.|FK [ticket_log_action](./ticket-log-action.mdx)|No|
+|extra\_field\_id|The id of the extra_field this entry is connected to.|FK [extra_fields](./extra-fields.mdx)|No|
+|log\_change|An enum indicating what kind of log-entry this is.|Int|Yes|
+|to\_value|A the &amp;apos;to&amp;apos; value|String(255)|No|
+|from\_value|A the &amp;apos;from&amp;apos; value|String(255)|No|
+
 
 ![ticket_log_change table relationship diagram](/media/loc/en/database/tables/ticket_log_change.png)
 
@@ -49,6 +48,7 @@ This table contains log entries for the tickets.
 |[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 |[ticket\_log\_action](./ticket-log-action)  |This table contains actions for the tickets. |
 
+
 ## Replication Flags
 
 * None
@@ -56,3 +56,4 @@ This table contains log entries for the tickets.
 ## Security Flags
 
 * No access control via user's Role.
+

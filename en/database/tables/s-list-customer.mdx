@@ -1,26 +1,25 @@
 ---
-uid: table-s_list_customer
 title: s_list_customer table
 description: Elements in a customer list.
 generated: true
-keywords: ['database table s_list_customer']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SListCustomer from "./includes/s-list-customer.md";
+import SListCustomer from "./includes/s-list-customer.mdx";
 
-# s\_list\_customer Table (346)
+## s\_list\_customer Table (346)
 
 Elements in a customer list.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|list\_id|Which list this element belongs to|FK [s_list](./s-list)| |
-|customer\_id||FK [person](./person)| |
+|id|Primary key|PK|No|
+|list\_id|Which list this element belongs to|FK [s_list](./s-list.mdx)|No|
+|customer\_id||FK [person](./person.mdx)|No|
+
 
 ![s_list_customer table relationship diagram](/media/loc/en/database/tables/s_list_customer.png)
 
@@ -40,6 +39,7 @@ Elements in a customer list.
 |[person](./person)  |Persons |
 |[s\_list](./s-list)  |A list, dynamic or static |
 
+
 ## Replication Flags
 
 * None
@@ -47,3 +47,4 @@ Elements in a customer list.
 ## Security Flags
 
 * No access control via user's Role.
+

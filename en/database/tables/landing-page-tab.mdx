@@ -1,0 +1,60 @@
+---
+title: landing_page_tab table
+description: A tab (pinned selection or entity record) on a landing page
+generated: true
+content_type: reference
+envir: online
+---
+
+import LandingPageTab from "./includes/landing-page-tab.mdx";
+
+## landing\_page\_tab Table (498)
+
+A tab (pinned selection or entity record) on a landing page
+
+## Fields
+
+| Name | Description | Type | Nullable |
+|------|-------------|------|:----:|
+|landing\_page\_tab\_id|Primary key|PK|No|
+|landing\_page\_id|The landing page this pin belongs to|FK [landing_page](./landing-page.mdx)|No|
+|table\_number|Table number of the pinned record (selection table number, or entity table number such as contact, person, sale)|TableNumber|No|
+|record\_id|The id of the pinned record in the referenced table|RecordId|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|pinned|Whether this tab is pinned by the associate|Bool|No|
+|rank|Display order of the tab within the landing page|Int|No|
+|tab\_type|What kind of content the tab shows (selection, entity record, or a hardcoded provider)|Enum [LandingPageTabType](./enums/landingpagetabtype.mdx)|No|
+|provider\_name|Provider key for a provider tab (e.g. LastTickets, FavouriteTickets); empty for selection and entity tabs|String(128)|No|
+
+
+![landing_page_tab table relationship diagram](/media/loc/en/database/tables/landing_page_tab.png)
+
+<LandingPageTab />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|landing\_page\_id |FK |Index |
+|landing\_page\_id, table\_number, record\_id, provider\_name |FK, TableNumber, RecordId, String(128) |Unique |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[landing\_page](./landing-page)  |Per-associate landing page configuration for a given entity type |
+
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.
+

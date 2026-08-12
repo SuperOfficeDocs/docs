@@ -1,33 +1,32 @@
 ---
-uid: table-outgoing_message
 title: outgoing_message table
 description: Delivery of outgoing messages to messageplugins, updated with status asynchroneously
 generated: true
-keywords: ['database table outgoing_message']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import OutgoingMessage from "./includes/outgoing-message.md";
+import OutgoingMessage from "./includes/outgoing-message.mdx";
 
-# outgoing\_message Table (407)
+## outgoing\_message Table (407)
 
 Delivery of outgoing messages to messageplugins, updated with status asynchroneously
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|session\_key|Session key used for threading.|String(255)| |
-|external\_message\_id|Session key used for threading.|String(255)| |
-|status|Current status of outgoing message|Int| |
-|status\_description|Description of current status|String(255)| |
-|plugin|Name of plugin|String(255)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
+|id|The primary key (auto-incremented)|PK|No|
+|session\_key|Session key used for threading.|String(255)|No|
+|external\_message\_id|Session key used for threading.|String(255)|No|
+|status|Current status of outgoing message|Int|No|
+|status\_description|Description of current status|String(255)|No|
+|plugin|Name of plugin|String(255)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+
 
 ![outgoing_message table relationship diagram](/media/loc/en/database/tables/outgoing_message.png)
 
@@ -49,6 +48,7 @@ Delivery of outgoing messages to messageplugins, updated with status asynchroneo
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[sms](./sms)  |This table will hold outgoing sms messages when transmitted with WebServices |
 
+
 ## Replication Flags
 
 * None
@@ -56,3 +56,4 @@ Delivery of outgoing messages to messageplugins, updated with status asynchroneo
 ## Security Flags
 
 * No access control via user's Role.
+

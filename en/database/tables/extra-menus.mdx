@@ -1,35 +1,34 @@
 ---
-uid: table-extra_menus
 title: extra_menus table
 description: This table contains entries for the extra menus in the system.
 generated: true
-keywords: ['database table extra_menus']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ExtraMenus from "./includes/extra-menus.md";
+import ExtraMenus from "./includes/extra-menus.mdx";
 
-# extra\_menus Table (307)
+## extra\_menus Table (307)
 
 This table contains entries for the extra menus in the system.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|screen|Enum indicating for what screen this is an extra menu (listTicket, listCustomer, main, etc).|screen|&#x25CF;|
-|label|The label for this menu.|String(128)|&#x25CF;|
-|url|The url for this menu.|String(255)|&#x25CF;|
-|target|The target for this url.|String(255)|&#x25CF;|
-|icon\_url|The icon url for this menu.|String(255)|&#x25CF;|
-|extra\_info|Field used for various extra information depending on menu type|String(255)|&#x25CF;|
-|order\_pos|Used to order elements when listed.|Int|&#x25CF;|
-|flags|Flags|UInt|&#x25CF;|
-|base\_program|Base program used in url (ticket, rms, ...)|base_program|&#x25CF;|
-|extra\_table|ExtraTable that the menu is connected to|FK [extra_tables](./extra-tables)|&#x25CF;|
-|group\_id|Link to extra_menus table if this menu item is to be shown in a custom menu group|FK [extra_menus](./extra-menus)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|screen|Enum indicating for what screen this is an extra menu (listTicket, listCustomer, main, etc).|screen|Yes|
+|label|The label for this menu.|String(128)|Yes|
+|url|The url for this menu.|String(255)|Yes|
+|target|The target for this url.|String(255)|Yes|
+|icon\_url|The icon url for this menu.|String(255)|Yes|
+|extra\_info|Field used for various extra information depending on menu type|String(255)|Yes|
+|order\_pos|Used to order elements when listed.|Int|Yes|
+|flags|Flags|UInt|Yes|
+|base\_program|Base program used in url (ticket, rms, ...)|base_program|Yes|
+|extra\_table|ExtraTable that the menu is connected to|FK [extra_tables](./extra-tables.mdx)|Yes|
+|group\_id|Link to extra_menus table if this menu item is to be shown in a custom menu group|FK [extra_menus](./extra-menus.mdx)|Yes|
+
 
 ![extra_menus table relationship diagram](/media/loc/en/database/tables/extra_menus.png)
 
@@ -49,6 +48,7 @@ This table contains entries for the extra menus in the system.
 |[extra\_menus](./extra-menus)  |This table contains entries for the extra menus in the system. |
 |[extra\_tables](./extra-tables)  |This table contains entries for the extra tables in the system. |
 
+
 ## Replication Flags
 
 * None
@@ -56,3 +56,4 @@ This table contains entries for the extra menus in the system.
 ## Security Flags
 
 * No access control via user's Role.
+

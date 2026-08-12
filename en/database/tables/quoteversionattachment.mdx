@@ -1,32 +1,31 @@
 ---
-uid: table-QuoteVersionAttachment
 title: QuoteVersionAttachment table
 description: Actual attachments to a quote
 generated: true
-keywords: ['database table QuoteVersionAttachment']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Quoteversionattachment from "./includes/quoteversionattachment.md";
+import Quoteversionattachment from "./includes/quoteversionattachment.mdx";
 
-# QuoteVersionAttachment Table (447)
+## QuoteVersionAttachment Table (447)
 
 Actual attachments to a quote
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|quoteversionattachment\_id|Primary key|PK| |
-|QuoteVersionId|Link to QuoteVersion|FK [QuoteVersion](./quoteversion)| |
-|DocumentId|Link to document|FK [document](./document)| |
-|Included|Will this attachment be included in the next &apos;Send Quote&apos; operation|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|quoteversionattachment\_id|Primary key|PK|No|
+|QuoteVersionId|Link to QuoteVersion|FK [QuoteVersion](./quoteversion.mdx)|No|
+|DocumentId|Link to document|FK [document](./document.mdx)|No|
+|Included|Will this attachment be included in the next &apos;Send Quote&apos; operation|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![QuoteVersionAttachment table relationship diagram](/media/loc/en/database/tables/QuoteVersionAttachment.png)
 
@@ -46,6 +45,7 @@ Actual attachments to a quote
 |[document](./document)  |Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.   |
 |[QuoteVersion](./quoteversion)  |There may be multiple Versions of a Quote, with one of them active |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -54,3 +54,4 @@ Actual attachments to a quote
 ## Security Flags
 
 * No access control via user's Role.
+

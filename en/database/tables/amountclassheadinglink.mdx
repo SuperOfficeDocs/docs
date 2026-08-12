@@ -1,31 +1,30 @@
 ---
-uid: table-AmountClassHeadingLink
 title: AmountClassHeadingLink table
 description: Heading link table for AmountClass, for MDO headers
 generated: true
-keywords: ['database table AmountClassHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Amountclassheadinglink from "./includes/amountclassheadinglink.md";
+import Amountclassheadinglink from "./includes/amountclassheadinglink.mdx";
 
-# AmountClassHeadingLink Table (227)
+## AmountClassHeadingLink Table (227)
 
 Heading link table for AmountClass, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|amountclassheadinglink\_id|Primary key|PK| |
-|amountclass\_id|Link to AmountClass list table|FK [AmountClass](./amountclass)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|amountclassheadinglink\_id|Primary key|PK|No|
+|amountclass\_id|Link to AmountClass list table|FK [AmountClass](./amountclass.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![AmountClassHeadingLink table relationship diagram](/media/loc/en/database/tables/AmountClassHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for AmountClass, for MDO headers
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for AmountClass, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,32 +1,31 @@
 ---
-uid: table-Webhook_notify
 title: Webhook_notify table
 description: Notification recipients for webhook failure events. Each row defines one recipient (associate or ad-hoc email) that should be notified when a webhook fails.
 generated: true
-keywords: ['database table Webhook_notify']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import WebhookNotify from "./includes/webhook-notify.md";
+import WebhookNotify from "./includes/webhook-notify.mdx";
 
-# Webhook\_notify Table (524)
+## Webhook\_notify Table (525)
 
 Notification recipients for webhook failure events. Each row defines one recipient (associate or ad-hoc email) that should be notified when a webhook fails.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|webhook\_notify\_id|Primary key|PK| |
-|webhook\_id|The webhook that this notification is for|FK [Webhook](./webhook)| |
-|associate\_id|Associate to notify. If set, email_recipient is ignored.|FK [associate](./associate)|&#x25CF;|
-|email\_recipient|Ad-hoc email address to notify. Used when associate_id is 0.|String(239)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|webhook\_notify\_id|Primary key|PK|No|
+|webhook\_id|The webhook that this notification is for|FK [Webhook](./webhook.mdx)|No|
+|associate\_id|Associate to notify. If set, email_recipient is ignored.|FK [associate](./associate.mdx)|Yes|
+|email\_recipient|Ad-hoc email address to notify. Used when associate_id is 0.|String(239)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![Webhook_notify table relationship diagram](/media/loc/en/database/tables/Webhook_notify.png)
 
@@ -46,6 +45,7 @@ Notification recipients for webhook failure events. Each row defines one recipie
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[Webhook](./webhook)  |Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics. |
 
+
 ## Replication Flags
 
 * None
@@ -53,3 +53,4 @@ Notification recipients for webhook failure events. Each row defines one recipie
 ## Security Flags
 
 * No access control via user's Role.
+
