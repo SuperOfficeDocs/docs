@@ -579,6 +579,7 @@
         "group": "11",
         "root": "release-notes/database/changes-11.13.921",
         "pages": [
+          "release-notes/database/changes-11.13.921",
           "release-notes/database/changes-11.12.675",
           "release-notes/database/changes-11.11.589",
           "release-notes/database/changes-11.10.705",
@@ -597,6 +598,7 @@
         "group": "10.5",
         "root": "release-notes/database/changes-10.5.5",
         "pages": [
+          "release-notes/database/changes-10.5.5",
           "release-notes/database/changes-10.5.4",
           "release-notes/database/changes-10.5.3",
           "release-notes/database/changes-10.5.2",
@@ -607,6 +609,7 @@
         "group": "10.3",
         "root": "release-notes/database/changes-10.3.13",
         "pages": [
+          "release-notes/database/changes-10.3.13",
           "release-notes/database/changes-10.3.12",
           "release-notes/database/changes-10.3.11",
           "release-notes/database/changes-10.3.10",
@@ -625,6 +628,7 @@
         "group": "10.2",
         "root": "release-notes/database/changes-10.2.11",
         "pages": [
+          "release-notes/database/changes-10.2.11",
           "release-notes/database/changes-10.2.10",
           "release-notes/database/changes-10.2.9",
           "release-notes/database/changes-10.2.8",
@@ -641,6 +645,7 @@
         "group": "10.1",
         "root": "release-notes/database/changes-10.1.5",
         "pages": [
+          "release-notes/database/changes-10.1.5",
           "release-notes/database/changes-10.1.2"
         ]
       }
