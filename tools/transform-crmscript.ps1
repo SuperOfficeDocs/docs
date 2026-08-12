@@ -86,7 +86,7 @@ function Convert-HtmlTablesToMarkdown {
             }
         }
 
-        return "`r`n`r`n" + ($lines -join "`r`n") + "`r`n`r`n"
+        return "`n`n" + ($lines -join "`n") + "`n`n"
     })
 }
 
@@ -115,7 +115,7 @@ function Convert-HtmlListsToMarkdown {
             }
         }
 
-        return "`r`n`r`n" + ($lines -join "`r`n") + "`r`n`r`n"
+        return "`n`n" + ($lines -join "`n") + "`n`n"
     })
 }
 
@@ -134,11 +134,11 @@ function Clean-Description {
     $Text = $Text -replace '\\n$', ''
 
     # Convert <p></p>\n to blank lines
-    $Text = $Text -replace '<p></p>\\n', "`r`n`r`n"
-    $Text = $Text -replace '<p></p>', "`r`n`r`n"
+    $Text = $Text -replace '<p></p>\\n', "`n`n"
+    $Text = $Text -replace '<p></p>', "`n`n"
 
     # Convert \n to actual newlines
-    $Text = $Text -replace '\\n', "`r`n"
+    $Text = $Text -replace '\\n', "`n"
 
     # Convert HTML entities (but keep &lt; and &gt; as they're needed in markdown)
     $Text = $Text -replace '&quot;', '"'
@@ -156,7 +156,7 @@ function Clean-Description {
 
     # Convert embedded headings (h1-h6, plus the occasional malformed bare <h>) to
     # markdown headings, and <ul>/<ol><li> lists to markdown lists
-    $Text = [regex]::Replace($Text, '(?is)<h[1-6]?>(.*?)</h[1-6]?>', { param($m) "`r`n`r`n### " + $m.Groups[1].Value.Trim() + "`r`n`r`n" })
+    $Text = [regex]::Replace($Text, '(?is)<h[1-6]?>(.*?)</h[1-6]?>', { param($m) "`n`n### " + $m.Groups[1].Value.Trim() + "`n`n" })
     $Text = Convert-HtmlListsToMarkdown $Text
 
     # Convert embedded HTML tables to real markdown tables before the generic
@@ -463,7 +463,7 @@ foreach ($yamlFile in $yamlFiles) {
     }
     $cleanDesc = Clean-Description $mainItem.summary
     # Take only the first paragraph for the description (split on double newline)
-    $firstPara = ($cleanDesc -split '\r\n\r\n')[0] -replace '\r\n', ' '
+    $firstPara = ($cleanDesc -split '\n\n')[0] -replace '\n', ' '
     # Escape internal double quotes by converting to single quotes and wrap in double quotes
     $firstPara = $firstPara -replace '"', "'"
     Add-Line $mdx (Build-Line @('description: "', $firstPara, '"'))
@@ -718,25 +718,27 @@ foreach ($yamlFile in $yamlFiles) {
     } # End if/else for Namespace vs Class
     
     # Write file. Line endings and BOM are hardcoded rather than left to
-    # [Environment]::NewLine / Out-File -Encoding UTF8 defaults, which differ between
-    # Windows PowerShell 5.1 (CRLF, BOM) and PowerShell Core/pwsh (LF, no BOM) --
-    # needed so CI (which runs this via pwsh on ubuntu-latest, see #189) regenerates
-    # byte-identical output to what's committed from this Windows environment.
-    $content = $mdx -join "`r`n"
-    # Remove lines with only whitespace. Matches only spaces/tabs (not `\s`, which
-    # also matches \r and \n) -- `\s+$` here previously ate the lone \r out of a
-    # blank "\r\n\r\n" line (regex $ anchors on bare \n, so \s+ backtracks to consume
-    # everything up to but not including it), corrupting CRLF into CRLF+LF. Silently
-    # masked for years by core.autocrlf normalizing it back to CRLF on every commit
-    # made from this Windows environment -- surfaced once CI (pwsh, no autocrlf) ran
-    # this script fresh, see #189.
+    # [Environment]::NewLine / Out-File -Encoding UTF8 defaults, which are both
+    # version- and platform-dependent (Windows PowerShell 5.1: CRLF, BOM;
+    # PowerShell Core/pwsh: LF, no BOM by default). The actual bytes this repo stores
+    # are LF with a BOM -- confirmed via `git cat-file -p HEAD:<path>`, which bypasses
+    # any checkout-time filter, since local `core.autocrlf=true` round-trips every
+    # commit's line endings to LF in the object database regardless of what the
+    # working tree (or this script) wrote, then converts back to CRLF on checkout on
+    # this Windows machine. That round-trip masked the generator's real output for
+    # years -- inspecting the working tree (or a plain file read) shows CRLF, but the
+    # stored blob, and what a checkout with no such conversion (e.g. CI's pwsh on
+    # ubuntu-latest, see #189) actually sees, is LF. Writing LF directly here matches
+    # that canonical stored form on every platform, with no filter to rely on.
+    $content = $mdx -join "`n"
+    # Remove lines with only whitespace. Matches only spaces/tabs, not newlines.
     $content = $content -replace '(?m)^[ \t]+$', ''
     # Collapse 3+ consecutive blank lines into 1. The HTML->markdown helpers above
     # (heading/list/table conversion) each pad their own blank-line margins; when two
     # converted blocks sit directly adjacent in the source with no prose between them
     # (e.g. `<h3>Row operators</h3><table>...`), their margins stack into 2-3 blank
     # lines instead of 1. See #189.
-    $content = $content -replace '(\r\n){3,}', "`r`n`r`n"
+    $content = $content -replace '\n{3,}', "`n`n"
     [System.IO.File]::WriteAllText($outputFilePath, $content, (New-Object System.Text.UTF8Encoding($true)))
     
     Write-Host ('  Generated: ' + $outputFileName) -ForegroundColor Green

@@ -32,34 +32,13 @@ $RepoRoot = Split-Path -Parent $ScriptRoot
 Push-Location $RepoRoot
 
 try {
-    # TEMP DEBUG -- diagnosing an unexpected cross-platform mismatch, remove before merge.
-    Copy-Item config/nav-crmscript-ref.json /tmp/before-nav.json -Force
-    Copy-Item en/automation/crmscript/reference/CRMScript.Global.Bool.mdx /tmp/before-bool.mdx -Force
-
     & "$ScriptRoot/regenerate-crmscript-reference.ps1"
-
-    Write-Host "===DEBUG=== nav-crmscript-ref.json BEFORE (first 40 bytes hex):"
-    Format-Hex /tmp/before-nav.json -Count 40
-    Write-Host "===DEBUG=== nav-crmscript-ref.json AFTER (first 40 bytes hex):"
-    Format-Hex config/nav-crmscript-ref.json -Count 40
-    Write-Host "===DEBUG=== Bool.mdx BEFORE (first 40 bytes hex):"
-    Format-Hex /tmp/before-bool.mdx -Count 40
-    Write-Host "===DEBUG=== Bool.mdx AFTER (first 40 bytes hex):"
-    Format-Hex en/automation/crmscript/reference/CRMScript.Global.Bool.mdx -Count 40
-    Write-Host "===DEBUG=== end hex dump"
 
     $dirty = git status --porcelain -- en/automation/crmscript/reference config/nav-crmscript-ref.json
     if (-not $dirty) {
         Write-Host "CRMScript reference matches api-sources/crmscript. No drift." -ForegroundColor Green
         exit 0
     }
-
-    # TEMP DEBUG -- diagnosing an unexpected cross-platform mismatch, remove before merge.
-    Write-Host "===DEBUG=== raw byte diff for first flagged file:"
-    $firstPath = (($dirty -split "`n")[0]).TrimEnd("`r").Substring(3).Trim('"')
-    Write-Host "===DEBUG=== file: $firstPath"
-    git --no-pager diff --no-color -- $firstPath | Select-Object -First 60
-    Write-Host "===DEBUG=== end"
 
     Write-Host "::error::The CRMScript reference is out of sync with api-sources/crmscript."
     Write-Host ""
