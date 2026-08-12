@@ -86,7 +86,7 @@ function Convert-HtmlTablesToMarkdown {
             }
         }
 
-        return "`n`n" + ($lines -join "`n") + "`n`n"
+        return "`r`n`r`n" + ($lines -join "`r`n") + "`r`n`r`n"
     })
 }
 
@@ -115,7 +115,7 @@ function Convert-HtmlListsToMarkdown {
             }
         }
 
-        return "`n`n" + ($lines -join "`n") + "`n`n"
+        return "`r`n`r`n" + ($lines -join "`r`n") + "`r`n`r`n"
     })
 }
 
@@ -134,11 +134,11 @@ function Clean-Description {
     $Text = $Text -replace '\\n$', ''
 
     # Convert <p></p>\n to blank lines
-    $Text = $Text -replace '<p></p>\\n', "`n`n"
-    $Text = $Text -replace '<p></p>', "`n`n"
+    $Text = $Text -replace '<p></p>\\n', "`r`n`r`n"
+    $Text = $Text -replace '<p></p>', "`r`n`r`n"
 
     # Convert \n to actual newlines
-    $Text = $Text -replace '\\n', "`n"
+    $Text = $Text -replace '\\n', "`r`n"
 
     # Convert HTML entities (but keep &lt; and &gt; as they're needed in markdown)
     $Text = $Text -replace '&quot;', '"'
@@ -156,7 +156,7 @@ function Clean-Description {
 
     # Convert embedded headings (h1-h6, plus the occasional malformed bare <h>) to
     # markdown headings, and <ul>/<ol><li> lists to markdown lists
-    $Text = [regex]::Replace($Text, '(?is)<h[1-6]?>(.*?)</h[1-6]?>', { param($m) "`n`n### " + $m.Groups[1].Value.Trim() + "`n`n" })
+    $Text = [regex]::Replace($Text, '(?is)<h[1-6]?>(.*?)</h[1-6]?>', { param($m) "`r`n`r`n### " + $m.Groups[1].Value.Trim() + "`r`n`r`n" })
     $Text = Convert-HtmlListsToMarkdown $Text
 
     # Convert embedded HTML tables to real markdown tables before the generic
@@ -228,6 +228,17 @@ function Build-Line {
     return $Parts -join ''
 }
 
+# The hand-rolled YAML parser captures raw text after a field's colon, which is
+# truthy in a later `if ($item.summary)` check even when the source YAML actually
+# means "empty" -- either an explicit `summary: ""`, or a bare `summary:` followed
+# only by a `# TODO` comment (which Clean-Description already treats as empty, but
+# only after the truthiness check has already let it through). Used at every raw
+# summary/remarks/description capture point so "empty" is decided once, see #189.
+function Test-EmptyRawField {
+    param([string]$Text)
+    return ($Text -eq '""') -or ($Text -match '^#?\s*TODO\s*$')
+}
+
 # Parse YAML manually (safe line-by-line parsing)
 function Get-YamlItems {
     param([string[]]$Lines)
@@ -269,6 +280,7 @@ function Get-YamlItems {
                 $sum += " " + $Matches[1].Trim()
                 $j++
             }
+            if (Test-EmptyRawField $sum) { $sum = '' }
             $currentItem.summary = $sum
         }
         elseif ($line -match '^\s{2}remarks:\s*(.*)$') {
@@ -278,6 +290,7 @@ function Get-YamlItems {
                 $rem += " " + $Matches[1].Trim()
                 $j++
             }
+            if (Test-EmptyRawField $rem) { $rem = '' }
             $currentItem.remarks = $rem
         }
         elseif ($line -match '^\s{2}children:\s*$') {
@@ -306,6 +319,7 @@ function Get-YamlItems {
                         $desc += " " + $Matches[1].Trim()
                         $m++
                     }
+                    if (Test-EmptyRawField $desc) { $desc = '' }
                     $param.description = $desc
                 }
                 $k++
@@ -326,6 +340,7 @@ function Get-YamlItems {
                         $desc += " " + $Matches[1].Trim()
                         $k++
                     }
+                    if (Test-EmptyRawField $desc) { $desc = '' }
                     $ret.description = $desc
                 }
                 $j++
@@ -448,7 +463,7 @@ foreach ($yamlFile in $yamlFiles) {
     }
     $cleanDesc = Clean-Description $mainItem.summary
     # Take only the first paragraph for the description (split on double newline)
-    $firstPara = ($cleanDesc -split '\n\n')[0] -replace '\n', ' '
+    $firstPara = ($cleanDesc -split '\r\n\r\n')[0] -replace '\r\n', ' '
     # Escape internal double quotes by converting to single quotes and wrap in double quotes
     $firstPara = $firstPara -replace '"', "'"
     Add-Line $mdx (Build-Line @('description: "', $firstPara, '"'))
@@ -702,11 +717,27 @@ foreach ($yamlFile in $yamlFiles) {
     
     } # End if/else for Namespace vs Class
     
-    # Write file
-    $content = $mdx -join [Environment]::NewLine
-    # Remove lines with only whitespace
-    $content = $content -replace '(?m)^\s+$', ''
-    $content | Out-File -FilePath $outputFilePath -Encoding UTF8 -NoNewline
+    # Write file. Line endings and BOM are hardcoded rather than left to
+    # [Environment]::NewLine / Out-File -Encoding UTF8 defaults, which differ between
+    # Windows PowerShell 5.1 (CRLF, BOM) and PowerShell Core/pwsh (LF, no BOM) --
+    # needed so CI (which runs this via pwsh on ubuntu-latest, see #189) regenerates
+    # byte-identical output to what's committed from this Windows environment.
+    $content = $mdx -join "`r`n"
+    # Remove lines with only whitespace. Matches only spaces/tabs (not `\s`, which
+    # also matches \r and \n) -- `\s+$` here previously ate the lone \r out of a
+    # blank "\r\n\r\n" line (regex $ anchors on bare \n, so \s+ backtracks to consume
+    # everything up to but not including it), corrupting CRLF into CRLF+LF. Silently
+    # masked for years by core.autocrlf normalizing it back to CRLF on every commit
+    # made from this Windows environment -- surfaced once CI (pwsh, no autocrlf) ran
+    # this script fresh, see #189.
+    $content = $content -replace '(?m)^[ \t]+$', ''
+    # Collapse 3+ consecutive blank lines into 1. The HTML->markdown helpers above
+    # (heading/list/table conversion) each pad their own blank-line margins; when two
+    # converted blocks sit directly adjacent in the source with no prose between them
+    # (e.g. `<h3>Row operators</h3><table>...`), their margins stack into 2-3 blank
+    # lines instead of 1. See #189.
+    $content = $content -replace '(\r\n){3,}', "`r`n`r`n"
+    [System.IO.File]::WriteAllText($outputFilePath, $content, (New-Object System.Text.UTF8Encoding($true)))
     
     Write-Host ('  Generated: ' + $outputFileName) -ForegroundColor Green
 }
